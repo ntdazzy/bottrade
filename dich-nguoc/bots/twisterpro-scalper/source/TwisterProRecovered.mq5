@@ -1,5 +1,8 @@
 #property strict
+#property copyright "Copyright 2026 - NTDazzy"
+#property link "https://github.com/ntdazzy/bottrade"
 #property version "1.00"
+#property description "Author: NTdazzy. Free to use, share, modify and reverse engineer."
 #property description "Recovered tester trading path; full UI/live behavior still under reconstruction."
 #include <Trade/Trade.mqh>
 #include "TwisterSettings.mqh"
