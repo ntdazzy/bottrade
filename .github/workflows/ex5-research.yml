@@ -1,0 +1,33 @@
+name: EX5 local research package
+on:
+  push:
+    branches:
+      - research/ex5-localhost-20261022
+    paths:
+      - tools/ex5_research_patch.py
+      - .github/workflows/ex5-research.yml
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  package:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Patch and verify EX5 metadata
+        run: python3 tools/ex5_research_patch.py
+      - name: Publish ZIP artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: EX5-research-localhost
+          path: dist/EX5-research-localhost.zip
+          if-no-files-found: error
+      - name: Commit modified EX5 on research branch only
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -u -- ':(glob)**/*.ex5'
+          if ! git diff --cached --quiet; then
+            git commit -m "Research copy: replace EX5 header display metadata"
+            git push origin HEAD:refs/heads/research/ex5-localhost-20261022
+          fi
