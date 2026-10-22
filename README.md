@@ -1,5 +1,13 @@
 # Bot Market Demo
 
+## Thông tin phát hành
+
+- Tác giả/đơn vị phát hành mã phục dựng: **NTdazzy**.
+- Thông báo bản quyền cho phần mã do NTdazzy sở hữu: **Copyright 2026 - NTDazzy**.
+- Cho phép sử dụng, chia sẻ miễn phí, sửa đổi và nghiên cứu/dịch ngược đối với phần mềm thuộc quyền cấp phép của NTdazzy; xem [LICENSE](LICENSE).
+- Các tệp EX5 gốc được giữ nguyên. Việc công bố giấy phép ở đây **không tự sửa metadata nhúng** trong EX5, không xác nhận mã nguồn phục hồi hoàn toàn và không thay thế quyền của bên thứ ba.
+
+
 Chủ dự án xác nhận toàn bộ bot ở đây là của mình, bị mất mã nguồn khi
 đổi máy và cho phép dịch ngược, viết lại toàn bộ mã nguồn.
 Mục tiêu: phục hồi 100% chức năng, ưu tiên giữ tên gốc; bàn giao thư mục
