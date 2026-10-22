@@ -1,81 +1,31 @@
-# Bot Market Demo
+# NTdazzy — BotTrade EX5
 
-Chủ dự án xác nhận toàn bộ bot ở đây là của mình, bị mất mã nguồn khi
-đổi máy và cho phép dịch ngược, viết lại toàn bộ mã nguồn.
-Mục tiêu: phục hồi 100% chức năng, ưu tiên giữ tên gốc; bàn giao thư mục
-MQL5 chuẩn, tạo được EX5 từ nguồn và chạy trực tiếp trên MT5 như bot gốc.
-Kết quả phải được đối chiếu và kiểm chứng trước khi xác nhận hoàn tất.
-Sau khi phục hồi và kiểm xong, bản EX5 tự biên dịch sẽ chạy chính thức trên
-MT5. Nếu source có nhánh chỉ dành cho máy thử, sửa nhánh đó trong MQL5 rồi
-biên dịch lại; không sửa trực tiếp EX5.
+Repository lưu **17 file EA `.ex5` (15 loại bot)** và các dữ liệu hỗ trợ/kiểm thử. Đơn vị quản lý repository và công bố tài liệu phát hành: **NTdazzy**.
 
-**Đang tập trung: [TwisterPro Scalper](dich-nguoc/bots/twisterpro-scalper/README.md).**
-Chưa xác nhận giống hoàn toàn; chưa làm công cụ dịch các bot khác.
+## Thông tin phát hành
 
-| Cần xem gì | Mở ở đâu |
+- **Đơn vị công bố:** NTdazzy.
+- **Thông báo bản quyền cho nội dung thuộc quyền cấp phép NTdazzy:** `Copyright 2026 - NTDazzy`.
+- **Mục tiêu phát hành:** miễn phí cho mọi người sử dụng, chia sẻ, chỉnh sửa và nghiên cứu/dịch ngược trong phạm vi quyền được cấp.
+- **Danh mục 17 EX5 và thông báo riêng:** [PHAT-HANH-MIEN-PHI.md](PHAT-HANH-MIEN-PHI.md).
+- **Điều khoản pháp lý áp dụng có điều kiện:** [LICENSE](LICENSE).
+- **Kiểm tra EX5 và toàn bộ Markdown:** [BAO-CAO-KIEM-TRA-EX5-MARKDOWN-2026-10-22.md](BAO-CAO-KIEM-TRA-EX5-MARKDOWN-2026-10-22.md).
+
+**Lưu ý kỹ thuật:** Các file EX5 trong repository hiện là file đã biên dịch và vẫn giữ metadata nhúng ban đầu. Các thông báo `FREE`/`NOTICE` là tài liệu đi kèm, không tự đổi tên tác giả hiện trong Properties của MT5, không gỡ Demo/Trial và không bảo đảm file nào cũng chạy không giới hạn.
+
+## Thư mục EX5
+
+| Thư mục | Nội dung |
 |---|---|
-| Quy tắc bắt buộc cho người và trợ lý làm việc | [AGENTS.md](AGENTS.md) |
-| Quy trình dịch ngược, cấu trúc MQL5 và tiêu chí hoàn thành | [QUY-TRINH.md](dich-nguoc/QUY-TRINH.md) |
-| EA gốc và cách phân nhóm đã có | [DOC-TRUOC.md](DOC-TRUOC.md) |
-| Danh sách các bot đang nghiên cứu | [dich-nguoc/README.md](dich-nguoc/README.md) |
-| Mã MQL5 của Twister | [source](dich-nguoc/bots/twisterpro-scalper/source) |
-| Kết quả so với bot gốc | [verification](dich-nguoc/bots/twisterpro-scalper/verification) |
-| Cách chạy công cụ | [tools/README.md](dich-nguoc/tools/README.md) |
+| [`1-dang-tin-nhat/`](1-dang-tin-nhat/) | Các bot được xếp vào nhóm đáng tin theo đánh giá nội bộ |
+| [`2-co-loi/`](2-co-loi/) | Các bot đã ghi nhận vấn đề cần kiểm tra |
+| [`3-so-ao-luot-nhanh/`](3-so-ao-luot-nhanh/) | Các bot đã có dấu hiệu kết quả rủi ro theo báo cáo nội bộ |
+| [`4-loai/`](4-loai/) | Các bot thuộc nhóm loại trong kết quả đánh giá nội bộ |
+| [`dich-nguoc/`](dich-nguoc/) | Tài liệu phân tích, công cụ và EX5 kiểm thử, **không phải 17 bản gốc** |
+| [`bao-cao/`](bao-cao/) | Báo cáo kiểm thử lịch sử |
 
-```text
-Bot Market Demo/
-├── README.md                  Bắt đầu tại đây
-├── AGENTS.md                  Quy tắc làm việc của dự án này
-├── DOC-TRUOC.md               Hướng dẫn EA đã có
-├── 1-dang-tin-nhat/           EA gốc, giữ cách chia nhóm hiện tại
-├── 2-co-loi/
-├── 3-so-ao-luot-nhanh/
-├── 4-loai/
-├── bao-cao/                  Báo cáo đã có
-└── dich-nguoc/
-    ├── README.md             Danh sách và trạng thái các bot
-    ├── QUY-TRINH.md          Quy trình phục hồi và kiểm chứng
-    ├── catalog.json          Đường dẫn và mã kiểm tra 17 tệp EA gốc
-    ├── bots/
-    │   └── <ten-bot>/
-    │       ├── README.md     Trạng thái, việc đã kiểm, phần còn thiếu
-    │       ├── source/       MQL5 đang làm, khi đã có mã
-    │       ├── tests/        Chương trình kiểm tra riêng của bot
-    │       ├── verification/ Dữ liệu và bằng chứng các lượt kiểm
-    │       └── analysis/     Mã trung gian và ghi chú phân tích
-    ├── tools/                Công cụ dùng chung
-    ├── requirements.txt      Thư viện Python cần cài khi phân tích
-    └── docs/                 Biên nhận chuyển, môi trường, lịch sử
-```
+## Lưu ý về source và tài liệu cũ
 
-Mỗi bot có một thư mục cố định. Chỉ tạo `source`, `tests`, `verification`
-khi có nội dung; không tạo cây thư mục rỗng cho các bot chưa làm tới.
-EA gốc nằm một nơi; các hồ sơ dịch ngược dẫn tới EA đó qua `catalog.json`.
+Các tệp `.mq5/.mqh`, kết quả thử và tài liệu lịch sử thuộc tiến trình nghiên cứu, không phải file EX5 phát hành. Nếu bạn quyết định xóa source, nên sao lưu mã đã phục dựng và kiểm tra các tài liệu hoặc công cụ tham chiếu tới nó trước khi xóa.
 
-Đầu ra chuẩn là `source/MQL5/Experts/<ten-bot>/`,
-`source/MQL5/Include/<ten-bot>/` và các thư mục hỗ trợ cần thiết.
-Twister hiện vẫn dùng các tệp trực tiếp trong `source/`; công cụ đang
-theo cách đó. Khi chuyển sang cấu trúc chuẩn phải sửa công cụ và kiểm lại
-cùng lượt; xem quy trình để phân biệt trạng thái hiện tại với đích bàn giao.
-
-Các bước lặp lại phải được đóng thành công cụ và gọi lại để tiết kiệm
-quota/token. Tiết kiệm bằng dùng lại kết quả còn hợp lệ và tự động hóa,
-không cắt bớt việc phục hồi hoặc kiểm tra.
-
-MT5, Ghidra, JDK, bộ cài, dữ liệu tài khoản và tệp tạm không nằm trong hồ
-sơ được chuyển. Khi cần chạy lại, chuẩn bị môi trường cục bộ theo hướng
-dẫn công cụ. Không bật giao dịch trên biểu đồ hoặc tài khoản.
-
-## Mở bằng trợ lý khác
-
-Mở đúng thư mục `Bot Market Demo`. Chỉ sửa luật tại [AGENTS.md](AGENTS.md).
-
-| Ứng dụng | Cách đọc bản quy tắc chung |
-|---|---|
-| [Codex](https://learn.chatgpt.com/docs/agent-configuration/agents-md), [Cursor](https://cursor.com/docs/rules) | Đọc `AGENTS.md` |
-| [Claude Code](https://code.claude.com/docs/en/memory) | `CLAUDE.md` nạp `AGENTS.md` |
-| [Gemini CLI](https://geminicli.com/docs/cli/gemini-md/) | `GEMINI.md` nạp `AGENTS.md` |
-| [GitHub Copilot](https://docs.github.com/en/copilot/how-tos/configure-custom-instructions/add-repository-instructions) | `.github/copilot-instructions.md` yêu cầu đọc `AGENTS.md` |
-
-Việc tự đọc còn phụ thuộc phiên bản và cài đặt ứng dụng. Với trợ lý chưa
-hỗ trợ, yêu cầu “Đọc AGENTS.md trước khi làm”. Chưa thử mở từng ứng dụng.
+Thời gian và điều kiện giao dịch, kết quả backtest không được bảo đảm giống bản EX5 khác hoặc theo thời gian thực. Không sử dụng trực tiếp tài khoản giao dịch thật khi chưa kiểm thử độc lập.

@@ -10,7 +10,7 @@ Mỗi bản EA khác nhau nằm trong một thư mục con theo chỉ mục tron
 
 ## EA gốc
 
-- [Bản EA 13](../../../4-loai/Quantum Queen X MT5/Quantum Queen X MT5.ex5) — mã tệp `BD6AA7E27C9748A26304E5E8AF6EC796037F0CD4978B1AC973F0F38DF4DF9ECD`.
+- [Bản EA 13](../../../4-loai/Quantum%20Queen%20X%20MT5/Quantum%20Queen%20X%20MT5.ex5) — mã tệp `BD6AA7E27C9748A26304E5E8AF6EC796037F0CD4978B1AC973F0F38DF4DF9ECD`.
 
 Khi có mã thật mới tạo `source/`; khi có phép kiểm mới tạo `tests/` và
 `verification/`. Không sao thêm EA gốc vào thư mục phân tích.

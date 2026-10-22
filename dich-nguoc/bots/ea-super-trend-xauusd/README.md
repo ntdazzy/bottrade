@@ -10,7 +10,7 @@ Mỗi bản EA khác nhau nằm trong một thư mục con theo chỉ mục tron
 
 ## EA gốc
 
-- [Bản EA 11](../../../2-co-loi/EA Super Trend XAUUSD/EA Super Trend XAUUSD.ex5) — mã tệp `F9A04943CACC50AD0FD4CD1CBF84AACCC3D6B294A438CBD2100AEA82E7EDEF39`.
+- [Bản EA 11](../../../2-co-loi/EA%20Super%20Trend%20XAUUSD/EA%20Super%20Trend%20XAUUSD.ex5) — mã tệp `F9A04943CACC50AD0FD4CD1CBF84AACCC3D6B294A438CBD2100AEA82E7EDEF39`.
 
 Khi có mã thật mới tạo `source/`; khi có phép kiểm mới tạo `tests/` và
 `verification/`. Không sao thêm EA gốc vào thư mục phân tích.

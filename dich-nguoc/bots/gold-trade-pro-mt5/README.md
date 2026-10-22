@@ -10,7 +10,7 @@ Mỗi bản EA khác nhau nằm trong một thư mục con theo chỉ mục tron
 
 ## EA gốc
 
-- [Bản EA 5](../../../1-dang-tin-nhat/Gold Trade Pro MT5/Gold Trade Pro MT5.ex5) — mã tệp `A3B0DE423A06E10EBEDC279307B93D7CB9188BA2BB5DE77131A913C865B0E922`.
+- [Bản EA 5](../../../1-dang-tin-nhat/Gold%20Trade%20Pro%20MT5/Gold%20Trade%20Pro%20MT5.ex5) — mã tệp `A3B0DE423A06E10EBEDC279307B93D7CB9188BA2BB5DE77131A913C865B0E922`.
 
 Khi có mã thật mới tạo `source/`; khi có phép kiểm mới tạo `tests/` và
 `verification/`. Không sao thêm EA gốc vào thư mục phân tích.

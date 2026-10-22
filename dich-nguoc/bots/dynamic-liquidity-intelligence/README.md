@@ -10,7 +10,7 @@ Mỗi bản EA khác nhau nằm trong một thư mục con theo chỉ mục tron
 
 ## EA gốc
 
-- [Bản EA 3](../../../2-co-loi/Dynamic Liquidity Intelligence/Dynamic Liquidity Intelligence.ex5) — mã tệp `E69FAB805E88ED5306D43748953873958294D97325555907312473086F611523`.
+- [Bản EA 3](../../../2-co-loi/Dynamic%20Liquidity%20Intelligence/Dynamic%20Liquidity%20Intelligence.ex5) — mã tệp `E69FAB805E88ED5306D43748953873958294D97325555907312473086F611523`.
 
 Khi có mã thật mới tạo `source/`; khi có phép kiểm mới tạo `tests/` và
 `verification/`. Không sao thêm EA gốc vào thư mục phân tích.

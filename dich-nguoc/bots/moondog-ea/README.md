@@ -10,7 +10,7 @@ Mỗi bản EA khác nhau nằm trong một thư mục con theo chỉ mục tron
 
 ## EA gốc
 
-- [Bản EA 7](../../../2-co-loi/MoonDog EA/MoonDog EA.ex5) — mã tệp `D019AE0232A15A121CBA3E857D66BFE1B1828EBB8205B6FB509249F00F9F4DF6`.
+- [Bản EA 7](../../../2-co-loi/MoonDog%20EA/MoonDog%20EA.ex5) — mã tệp `D019AE0232A15A121CBA3E857D66BFE1B1828EBB8205B6FB509249F00F9F4DF6`.
 
 Khi có mã thật mới tạo `source/`; khi có phép kiểm mới tạo `tests/` và
 `verification/`. Không sao thêm EA gốc vào thư mục phân tích.
