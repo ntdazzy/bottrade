@@ -1,0 +1,248 @@
+{
+  "purpose": "Research copies; neutral display metadata only.",
+  "note": "Original authorship, copyright and licensing remain with their respective holders. No ownership, free-use rights, license bypass, behavioral equivalence or MT5 compatibility is claimed.",
+  "replacement_author_field": "Research Copy - See PROVENANCE.json",
+  "replacement_url_field": "http://localhost/demo",
+  "files": [
+    {
+      "original_path": "1-dang-tin-nhat/Gold Trade Pro MT5/Gold Trade Pro MT5.ex5",
+      "research_copy": "1-dang-tin-nhat/Gold Trade Pro MT5/Gold Trade Pro MT5.ex5",
+      "original_author_or_copyright": "Copyright 2023 - Wim Schrynemakers",
+      "original_url": "",
+      "original_sha256": "a3b0de423a06e10ebedc279307b93d7cb9188ba2bb5de77131a913c865b0e922",
+      "research_copy_sha256": "3abdb5d432cad0a7e9a569d9c645bcde2508772cc1445c54f2d7c47914596124",
+      "size": 237660,
+      "changed_bytes": 55
+    },
+    {
+      "original_path": "1-dang-tin-nhat/Goldbot One MT5/Goldbot One MT5.ex5",
+      "research_copy": "1-dang-tin-nhat/Goldbot One MT5/Goldbot One MT5.ex5",
+      "original_author_or_copyright": "Copyright 2024 - Wim Schrynemakers",
+      "original_url": "",
+      "original_sha256": "390d8ab14fc213ff4b8cbe5084bec545526e62c6028516fe21219a59398ce795",
+      "research_copy_sha256": "0838d8bbe71ba5163e8e42fd0426a52cffb900475d03f814c772164b3b1b60f3",
+      "size": 226872,
+      "changed_bytes": 55
+    },
+    {
+      "original_path": "1-dang-tin-nhat/The Gold Reaper MT5/The Gold Reaper MT5.ex5",
+      "research_copy": "1-dang-tin-nhat/The Gold Reaper MT5/The Gold Reaper MT5.ex5",
+      "original_author_or_copyright": "Copyright 2024 - Wim Schrynemakers",
+      "original_url": "",
+      "original_sha256": "ee063d3d87490afe24e2f4ce85f6b05659320e297b102efd70207f71ca2feb83",
+      "research_copy_sha256": "872f71a623b4687fc12ad9566bf393779a5d0e54a840c54a73622351763d2451",
+      "size": 261524,
+      "changed_bytes": 55
+    },
+    {
+      "original_path": "2-co-loi/CryonX EA MT5/CryonX EA MT5.ex5",
+      "research_copy": "2-co-loi/CryonX EA MT5/CryonX EA MT5.ex5",
+      "original_author_or_copyright": "Copyright 2023, MetaQuotes Ltd.",
+      "original_url": "https://www.mql5.com",
+      "original_sha256": "0791d1a189dc1805e9764805a978a62fbb9f9b07db192c8cfb2d26b09818d3f9",
+      "research_copy_sha256": "137261dd03b2eb718e6e66f6cb67052d2722cfde94a227fa6f01f57498faa3a5",
+      "size": 775396,
+      "changed_bytes": 46
+    },
+    {
+      "original_path": "2-co-loi/Dynamic Liquidity Intelligence/Dynamic Liquidity Intelligence.ex5",
+      "research_copy": "2-co-loi/Dynamic Liquidity Intelligence/Dynamic Liquidity Intelligence.ex5",
+      "original_author_or_copyright": "Sathit Sukhirun",
+      "original_url": "https://www.mql5.com/en/users/nicedata",
+      "original_sha256": "e69fab805e88ed5306d43748953873958294d97325555907312473086f611523",
+      "research_copy_sha256": "de45ad0ce9c8cd8606de94f17aa6ae702951487e1b83f3a1ed2f557fbc8a76b9",
+      "size": 127938,
+      "changed_bytes": 67
+    },
+    {
+      "original_path": "2-co-loi/EA Super Trend XAUUSD/EA Super Trend XAUUSD.ex5",
+      "research_copy": "2-co-loi/EA Super Trend XAUUSD/EA Super Trend XAUUSD.ex5",
+      "original_author_or_copyright": "Copyright 2026,Trading Systems EA Quantum Lab | Algorithms, Indicators, Signals",
+      "original_url": "https://t.me/EAQuantumLab",
+      "original_sha256": "f9a04943cacc50ad0fd4cd1cbf84aaccc3d6b294a438cbd2100aea82e7edef39",
+      "research_copy_sha256": "eec8ba07e258469c862c1e7f9f0f4096a76cdfba9c308b33a75e76c304a17949",
+      "size": 267650,
+      "changed_bytes": 98
+    },
+    {
+      "original_path": "2-co-loi/Gold Beaver/Gold Beaver.ex5",
+      "research_copy": "2-co-loi/Gold Beaver/Gold Beaver.ex5",
+      "original_author_or_copyright": "2026, Arnold Bobrinskii",
+      "original_url": "",
+      "original_sha256": "ea5174fe310381af65984953f113d1b10e422acb95fea41b18491bc40c055885",
+      "research_copy_sha256": "8f75986bc1ccd342a2f8d66c4308923ef1bb425c4391a7349d04bded37b621b8",
+      "size": 762912,
+      "changed_bytes": 56
+    },
+    {
+      "original_path": "2-co-loi/MoonDog EA/MoonDog EA.ex5",
+      "research_copy": "2-co-loi/MoonDog EA/MoonDog EA.ex5",
+      "original_author_or_copyright": "",
+      "original_url": "",
+      "original_sha256": "d019ae0232a15a121cba3e857d66bfe1b1828ebb8205b6fb509249f00f9f4df6",
+      "research_copy_sha256": "3e5ec3fef7185225664d6935aea0cebeb2af43667403f4d2b1763e2e854ed50b",
+      "size": 11307865,
+      "changed_bytes": 56
+    },
+    {
+      "original_path": "2-co-loi/Quantum Titan MT5/Quantum Titan MT5.ex5",
+      "research_copy": "2-co-loi/Quantum Titan MT5/Quantum Titan MT5.ex5",
+      "original_author_or_copyright": "Click here to contact the author.",
+      "original_url": "https://www.mql5.com/en/users/weredeu",
+      "original_sha256": "0b4b0f32b37a8f66422e9b875ed90cd31d8bee6d74fcbc9a5e57752dab5e465b",
+      "research_copy_sha256": "fc850b7b0dc91247998ad8deffc2c32f60fe7507e70b620733e7d2d8f070de7c",
+      "size": 168726,
+      "changed_bytes": 65
+    },
+    {
+      "original_path": "2-co-loi/Quantum Titan MT5/ban-tai-lan-2/Quantum Titan MT5.ex5",
+      "research_copy": "2-co-loi/Quantum Titan MT5/ban-tai-lan-2/Quantum Titan MT5.ex5",
+      "original_author_or_copyright": "Click here to contact the author.",
+      "original_url": "https://www.mql5.com/en/users/weredeu",
+      "original_sha256": "74a780c9cf6e2c8283dfbbd61bd74d44ce8ea71459d9234245ce2240f02de049",
+      "research_copy_sha256": "947930a89d3c0da74536fa0406090f98120d62e3e6d29aa332d858ec80c99bbf",
+      "size": 168798,
+      "changed_bytes": 65
+    },
+    {
+      "original_path": "2-co-loi/Ultimate Breakout System/Ultimate Breakout System.ex5",
+      "research_copy": "2-co-loi/Ultimate Breakout System/Ultimate Breakout System.ex5",
+      "original_author_or_copyright": "Copyright 2026 - Profalgo LTD",
+      "original_url": "https://www.forexeasolutions.com",
+      "original_sha256": "7f7e7c0527b93523a4dcbb71da0afa35d23386cbffe68cf1f0092205c03dd4b7",
+      "research_copy_sha256": "4833efe6ebf0048a558171d48459508de4e7c8c24e9099861fae389db4d836fa",
+      "size": 422364,
+      "changed_bytes": 59
+    },
+    {
+      "original_path": "2-co-loi/Ultimate Breakout System/ban-tai-lan-2/Ultimate Breakout System.ex5",
+      "research_copy": "2-co-loi/Ultimate Breakout System/ban-tai-lan-2/Ultimate Breakout System.ex5",
+      "original_author_or_copyright": "Copyright 2026 - Profalgo LTD",
+      "original_url": "https://www.forexeasolutions.com",
+      "original_sha256": "6309cdfc78467dc7c9e5482bdb77f75d9d1061ebfd3a28dd89697db91317c920",
+      "research_copy_sha256": "79209972ea06d8ac7b1cd5f9459b180347e4fdb29117ca359a52d430bee3e806",
+      "size": 423012,
+      "changed_bytes": 59
+    },
+    {
+      "original_path": "3-so-ao-luot-nhanh/My AI Gold/My AI Gold.ex5",
+      "research_copy": "3-so-ao-luot-nhanh/My AI Gold/My AI Gold.ex5",
+      "original_author_or_copyright": "Vitalii Kosov",
+      "original_url": "",
+      "original_sha256": "e1f1bf70c8e2aecccc3a09555de57015a9955cf96f12609cce3a59fdb71fa306",
+      "research_copy_sha256": "dcab58745337955114e7c510cd51e87a8174f1e05d970c085c8c9c955e0d2461",
+      "size": 3680992,
+      "changed_bytes": 56
+    },
+    {
+      "original_path": "3-so-ao-luot-nhanh/Scalping Robot Pro MT5/Scalping Robot Pro MT5.ex5",
+      "research_copy": "3-so-ao-luot-nhanh/Scalping Robot Pro MT5/Scalping Robot Pro MT5.ex5",
+      "original_author_or_copyright": "MQL BLUE",
+      "original_url": "https://www.mqlblue.com",
+      "original_sha256": "75b8da04760b374d25734b441c6f2424f7e46608260185eaf1e6f8566649b24d",
+      "research_copy_sha256": "a1aed83044e4afd7bd9e598b47ab44f44f43f18d6b2800a47662d7fd865090af",
+      "size": 402498,
+      "changed_bytes": 52
+    },
+    {
+      "original_path": "3-so-ao-luot-nhanh/TwisterPro Scalper/TwisterPro Scalper.ex5",
+      "research_copy": "twisterpro-scalper/TwisterPro Scalper.ex5",
+      "original_author_or_copyright": "Copyright 2026, Twister Pro Systems",
+      "original_url": "https://www.mql5.com",
+      "original_sha256": "c705e2bbbb66d18e31e2a375625dfdef69243cb73e684af3a846d6ab33fabe73",
+      "research_copy_sha256": "53effc4827a9ba84ea6aca8d59d44a28ca1d6849ebc07f1c0f860ce90e70aad1",
+      "size": 109212,
+      "changed_bytes": 48
+    },
+    {
+      "original_path": "4-loai/AI Golden Life MT5/AI Golden Life MT5.ex5",
+      "research_copy": "4-loai/AI Golden Life MT5/AI Golden Life MT5.ex5",
+      "original_author_or_copyright": "MQL BLUE",
+      "original_url": "https://www.mqlblue.com",
+      "original_sha256": "7f162ecca001271c7359504a795d71b6ba7e6ae4c9930811930627d80c4ae949",
+      "research_copy_sha256": "adf63c5c096c5cc208d303e56fc62bb5c1dddf4b49482632976be117ee101e05",
+      "size": 600464,
+      "changed_bytes": 52
+    },
+    {
+      "original_path": "4-loai/Quantum Queen X MT5/Quantum Queen X MT5.ex5",
+      "research_copy": "4-loai/Quantum Queen X MT5/Quantum Queen X MT5.ex5",
+      "original_author_or_copyright": "Click here to contact the author.",
+      "original_url": "https://www.mql5.com/en/users/weredeu",
+      "original_sha256": "bd6aa7e27c9748a26304e5e8af6ec796037f0cd4978b1ac973f0f38df4df9ecd",
+      "research_copy_sha256": "004b50ccc2321fcf3ae94a7328bdd5a032f3568c4f214b39ddd7117993afdd52",
+      "size": 489074,
+      "changed_bytes": 65
+    },
+    {
+      "original_path": "dich-nguoc/bots/twisterpro-scalper/verification/builds/Ex5ApiProbeLibraryV6/Ex5ApiProbeLibraryV6.ex5",
+      "research_copy": "dich-nguoc/bots/twisterpro-scalper/verification/builds/Ex5ApiProbeLibraryV6/Ex5ApiProbeLibraryV6.ex5",
+      "original_author_or_copyright": "",
+      "original_url": "",
+      "original_sha256": "f65cf86957c79c20bf01eed4f92d1a247bb6cfe339c7c1ecb4bc71ad5f0a31dc",
+      "research_copy_sha256": "7684aee3747b9b8e4fdb4541fdc9b1c49c2ced5dd8d110d0460ca8cfa32f7a77",
+      "size": 59216,
+      "changed_bytes": 56
+    },
+    {
+      "original_path": "dich-nguoc/bots/twisterpro-scalper/verification/builds/Ex5ApiProbeV6/Ex5ApiProbeV6.ex5",
+      "research_copy": "dich-nguoc/bots/twisterpro-scalper/verification/builds/Ex5ApiProbeV6/Ex5ApiProbeV6.ex5",
+      "original_author_or_copyright": "",
+      "original_url": "",
+      "original_sha256": "76cee8226b82c71a03f33d0ed0ded4dfb70589413da0c0c179923fa5dc9139fc",
+      "research_copy_sha256": "d714acdc69f29c8b76d746151055bcf12ebb23324d62fc7dabadc04daceaa296",
+      "size": 6596,
+      "changed_bytes": 56
+    },
+    {
+      "original_path": "dich-nguoc/bots/twisterpro-scalper/verification/builds/Ex5EnumProbe/Ex5EnumProbe.ex5",
+      "research_copy": "dich-nguoc/bots/twisterpro-scalper/verification/builds/Ex5EnumProbe/Ex5EnumProbe.ex5",
+      "original_author_or_copyright": "",
+      "original_url": "",
+      "original_sha256": "c3cc00301ecf2a689b99004d239cf8838a1489cf02c3c1ad1e817605d3ab0631",
+      "research_copy_sha256": "20f1affd33cd339a2d608ab859b2a823ae2cefaecbc6d5f306f5fd0eeb31ae91",
+      "size": 28110,
+      "changed_bytes": 56
+    },
+    {
+      "original_path": "dich-nguoc/bots/twisterpro-scalper/verification/builds/Ex5ReadProbe/Ex5ReadProbe.ex5",
+      "research_copy": "dich-nguoc/bots/twisterpro-scalper/verification/builds/Ex5ReadProbe/Ex5ReadProbe.ex5",
+      "original_author_or_copyright": "",
+      "original_url": "",
+      "original_sha256": "a15d0b74fe8936d6a484f262b451a8b4711237830022dd280883499693260044",
+      "research_copy_sha256": "5260c39ac38d60f903cbae1beb6b82f7b3245d547137ecd8ed9f7e6464e917be",
+      "size": 7004,
+      "changed_bytes": 56
+    },
+    {
+      "original_path": "dich-nguoc/bots/twisterpro-scalper/verification/builds/TwisterFiltersCheck/TwisterFiltersCheck.ex5",
+      "research_copy": "dich-nguoc/bots/twisterpro-scalper/verification/builds/TwisterFiltersCheck/TwisterFiltersCheck.ex5",
+      "original_author_or_copyright": "",
+      "original_url": "",
+      "original_sha256": "5fbeb8e1c587c03a6158099bbde54e1af1098779429eff7897d53d8439812c09",
+      "research_copy_sha256": "7a298cc1d3b2ac00f6c18d55b5e004ab7944eeef289490556b79b127d5ee4582",
+      "size": 105796,
+      "changed_bytes": 56
+    },
+    {
+      "original_path": "dich-nguoc/bots/twisterpro-scalper/verification/builds/TwisterProRecovered/TwisterProRecovered.ex5",
+      "research_copy": "dich-nguoc/bots/twisterpro-scalper/verification/builds/TwisterProRecovered/TwisterProRecovered.ex5",
+      "original_author_or_copyright": "",
+      "original_url": "",
+      "original_sha256": "cc38dd3242e9ddbe34790693e6372664387fe4fb421578c765fbc3fb5632e26b",
+      "research_copy_sha256": "5c334fa717a5bee012b33a96cb4b178252c2e7833e15e69a98948b8d1332bb18",
+      "size": 52828,
+      "changed_bytes": 56
+    },
+    {
+      "original_path": "dich-nguoc/bots/twisterpro-scalper/verification/builds/TwisterSettingsCheck/TwisterSettingsCheck.ex5",
+      "research_copy": "dich-nguoc/bots/twisterpro-scalper/verification/builds/TwisterSettingsCheck/TwisterSettingsCheck.ex5",
+      "original_author_or_copyright": "",
+      "original_url": "",
+      "original_sha256": "0e41041c3e756859758b0099653a98b22cb7fd1cca7d509a359766585eba14ec",
+      "research_copy_sha256": "a58bd17164d56fd2a3ef9661e19227720a08cd15cb3daa87edd82bb4b4bb54f0",
+      "size": 14300,
+      "changed_bytes": 56
+    }
+  ]
+}
