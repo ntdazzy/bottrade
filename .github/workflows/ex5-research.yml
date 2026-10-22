@@ -1,10 +1,10 @@
-name: EX5 local research package
+name: Package EX5 localhost research copies
 on:
   push:
     branches:
       - research/ex5-localhost-20261022
     paths:
-      - tools/ex5_research_patch.py
+      - tools/ex5_research_url_only.py
       - .github/workflows/ex5-research.yml
   workflow_dispatch:
 permissions:
@@ -14,20 +14,19 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Patch and verify EX5 metadata
-        run: python3 tools/ex5_research_patch.py
-      - name: Publish ZIP artifact
-        uses: actions/upload-artifact@v4
+      - name: Make and validate EX5 research copies
+        run: python3 tools/ex5_research_url_only.py
+      - uses: actions/upload-artifact@v4
         with:
-          name: EX5-research-localhost
-          path: dist/EX5-research-localhost.zip
+          name: EX5-localhost-research
+          path: dist/EX5-localhost-research.zip
           if-no-files-found: error
-      - name: Commit modified EX5 on research branch only
+      - name: Push validated copies to research branch
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -u -- ':(glob)**/*.ex5'
+          git add -A research-copies/
           if ! git diff --cached --quiet; then
-            git commit -m "Research copy: replace EX5 header display metadata"
+            git commit -m "Add validated URL-only EX5 research copies"
             git push origin HEAD:refs/heads/research/ex5-localhost-20261022
           fi
