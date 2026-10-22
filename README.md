@@ -2,6 +2,9 @@
 
 ## Thông tin phát hành
 
+- [Danh sách EX5 phát hành miễn phí và NOTICE kèm theo](PHAT-HANH-MIEN-PHI.md).
+- [Báo cáo rà soát mã nguồn](BAO-CAO-RA-SOAT-SOURCE-2026-10-22.md).
+
 - Tác giả/đơn vị phát hành mã phục dựng: **NTdazzy**.
 - Thông báo bản quyền cho phần mã do NTdazzy sở hữu: **Copyright 2026 - NTDazzy**.
 - Cho phép sử dụng, chia sẻ miễn phí, sửa đổi và nghiên cứu/dịch ngược đối với phần mềm thuộc quyền cấp phép của NTdazzy; xem [LICENSE](LICENSE).
