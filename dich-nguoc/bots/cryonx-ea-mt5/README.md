@@ -10,7 +10,7 @@ Mỗi bản EA khác nhau nằm trong một thư mục con theo chỉ mục tron
 
 ## EA gốc
 
-- [Bản EA 2](../../../2-co-loi/CryonX EA MT5/CryonX EA MT5.ex5) — mã tệp `0791D1A189DC1805E9764805A978A62FBB9F9B07DB192C8CFB2D26B09818D3F9`.
+- [Bản EA 2](../../../2-co-loi/CryonX%20EA%20MT5/CryonX%20EA%20MT5.ex5) — mã tệp `0791D1A189DC1805E9764805A978A62FBB9F9B07DB192C8CFB2D26B09818D3F9`.
 
 Khi có mã thật mới tạo `source/`; khi có phép kiểm mới tạo `tests/` và
 `verification/`. Không sao thêm EA gốc vào thư mục phân tích.

@@ -1,4 +1,4 @@
-# Bot Market Demo — đọc trước khi làm
+# NTdazzy — BotTrade EX5 — đọc trước khi làm
 
 Đây là bản quy tắc chính duy nhất cho các trợ lý làm việc trong dự án.
 Các tệp dành riêng cho từng ứng dụng chỉ dẫn về đây, không chép lại luật.

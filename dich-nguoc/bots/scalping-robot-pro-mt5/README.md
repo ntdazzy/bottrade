@@ -10,7 +10,7 @@ Mỗi bản EA khác nhau nằm trong một thư mục con theo chỉ mục tron
 
 ## EA gốc
 
-- [Bản EA 15](../../../3-so-ao-luot-nhanh/Scalping Robot Pro MT5/Scalping Robot Pro MT5.ex5) — mã tệp `75B8DA04760B374D25734B441C6F2424F7E46608260185EAF1E6F8566649B24D`.
+- [Bản EA 15](../../../3-so-ao-luot-nhanh/Scalping%20Robot%20Pro%20MT5/Scalping%20Robot%20Pro%20MT5.ex5) — mã tệp `75B8DA04760B374D25734B441C6F2424F7E46608260185EAF1E6F8566649B24D`.
 
 Khi có mã thật mới tạo `source/`; khi có phép kiểm mới tạo `tests/` và
 `verification/`. Không sao thêm EA gốc vào thư mục phân tích.

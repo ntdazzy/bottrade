@@ -10,7 +10,7 @@ Mỗi bản EA khác nhau nằm trong một thư mục con theo chỉ mục tron
 
 ## EA gốc
 
-- [Bản EA 4](../../../2-co-loi/Gold Beaver/Gold Beaver.ex5) — mã tệp `EA5174FE310381AF65984953F113D1B10E422ACB95FEA41B18491BC40C055885`.
+- [Bản EA 4](../../../2-co-loi/Gold%20Beaver/Gold%20Beaver.ex5) — mã tệp `EA5174FE310381AF65984953F113D1B10E422ACB95FEA41B18491BC40C055885`.
 
 Khi có mã thật mới tạo `source/`; khi có phép kiểm mới tạo `tests/` và
 `verification/`. Không sao thêm EA gốc vào thư mục phân tích.

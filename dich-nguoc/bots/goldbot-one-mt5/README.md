@@ -10,7 +10,7 @@ Mỗi bản EA khác nhau nằm trong một thư mục con theo chỉ mục tron
 
 ## EA gốc
 
-- [Bản EA 6](../../../1-dang-tin-nhat/Goldbot One MT5/Goldbot One MT5.ex5) — mã tệp `390D8AB14FC213FF4B8CBE5084BEC545526E62C6028516FE21219A59398CE795`.
+- [Bản EA 6](../../../1-dang-tin-nhat/Goldbot%20One%20MT5/Goldbot%20One%20MT5.ex5) — mã tệp `390D8AB14FC213FF4B8CBE5084BEC545526E62C6028516FE21219A59398CE795`.
 
 Khi có mã thật mới tạo `source/`; khi có phép kiểm mới tạo `tests/` và
 `verification/`. Không sao thêm EA gốc vào thư mục phân tích.

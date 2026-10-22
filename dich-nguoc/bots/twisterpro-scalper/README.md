@@ -37,7 +37,7 @@ thử và kiểm các lỗi. Không bật giao dịch tài khoản từ bản n�
 
 ## EA gốc
 
-- [Bản EA 9](../../../3-so-ao-luot-nhanh/TwisterPro Scalper/TwisterPro Scalper.ex5) — mã tệp `C705E2BBBB66D18E31E2A375625DFDEF69243CB73E684AF3A846D6AB33FABE73`.
+- [Bản EA 9](../../../3-so-ao-luot-nhanh/TwisterPro%20Scalper/TwisterPro%20Scalper.ex5) — mã tệp `C705E2BBBB66D18E31E2A375625DFDEF69243CB73E684AF3A846D6AB33FABE73`.
 
 ## Vị trí
 

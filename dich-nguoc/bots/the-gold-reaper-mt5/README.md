@@ -10,7 +10,7 @@ Mỗi bản EA khác nhau nằm trong một thư mục con theo chỉ mục tron
 
 ## EA gốc
 
-- [Bản EA 16](../../../1-dang-tin-nhat/The Gold Reaper MT5/The Gold Reaper MT5.ex5) — mã tệp `EE063D3D87490AFE24E2F4CE85F6B05659320E297B102EFD70207F71CA2FEB83`.
+- [Bản EA 16](../../../1-dang-tin-nhat/The%20Gold%20Reaper%20MT5/The%20Gold%20Reaper%20MT5.ex5) — mã tệp `EE063D3D87490AFE24E2F4CE85F6B05659320E297B102EFD70207F71CA2FEB83`.
 
 Khi có mã thật mới tạo `source/`; khi có phép kiểm mới tạo `tests/` và
 `verification/`. Không sao thêm EA gốc vào thư mục phân tích.
