@@ -9,6 +9,10 @@ Các tệp dành riêng cho từng ứng dụng chỉ dẫn về đây, không c
 2. Đọc [README Twister](dich-nguoc/bots/twisterpro-scalper/README.md) để nắm việc đang dở và bằng chứng mới nhất. Twister chưa hoàn chỉnh; bản nguồn mới nhất còn cần kiểm lại.
 3. Trước sửa mã, đọc [quy trình](dich-nguoc/QUY-TRINH.md); trước chạy lệnh, đọc [công cụ](dich-nguoc/tools/README.md).
 
+`DOC-TRUOC.md`, `bao-cao/` và `dich-nguoc/docs/history/` là hồ sơ lịch sử,
+chỉ dùng để đối chiếu. Chúng không phải quy tắc hiện hành và không được sửa
+để làm thay đổi bằng chứng cũ.
+
 Tiếp tục từ bước đã ghi, không làm lại từ đầu. Nếu thiếu tệp cần thiết,
 báo rõ tệp thiếu; không tự đoán trạng thái dự án.
 

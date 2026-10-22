@@ -8,3 +8,4 @@
 - Chủ động làm tới kết quả cụ thể trong phạm vi được giao. Khi một cách thất bại, dùng lỗi và bằng chứng để chọn cách khác; tiếp tục các phần độc lập còn làm được.
 - Viết mã đầy đủ cho phần đã xác định, giữ hành vi của bot gốc. Đánh dấu riêng chỗ chưa biết; không thay bằng mã rỗng hoặc luật tự đoán.
 - Mỗi phần đã phục hồi phải có phép kiểm tương ứng. Chỉ xác nhận điều đã đo; báo ngắn kết quả, phần còn thiếu và bước tiếp theo.
+- Xem `DOC-TRUOC.md`, `bao-cao/` và `dich-nguoc/docs/history/` là hồ sơ tham khảo; không sửa hoặc che giấu bằng chứng để thay đổi kết luận.

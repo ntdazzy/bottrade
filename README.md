@@ -16,7 +16,7 @@ Chưa xác nhận giống hoàn toàn; chưa làm công cụ dịch các bot kh�
 |---|---|
 | Quy tắc bắt buộc cho người và trợ lý làm việc | [AGENTS.md](AGENTS.md) |
 | Quy trình dịch ngược, cấu trúc MQL5 và tiêu chí hoàn thành | [QUY-TRINH.md](dich-nguoc/QUY-TRINH.md) |
-| EA gốc và cách phân nhóm đã có | [DOC-TRUOC.md](DOC-TRUOC.md) |
+| Hồ sơ cũ và cách phân nhóm (chỉ tham khảo) | [DOC-TRUOC.md](DOC-TRUOC.md) |
 | Danh sách các bot đang nghiên cứu | [dich-nguoc/README.md](dich-nguoc/README.md) |
 | Mã MQL5 của Twister | [source](dich-nguoc/bots/twisterpro-scalper/source) |
 | Kết quả so với bot gốc | [verification](dich-nguoc/bots/twisterpro-scalper/verification) |
