@@ -1,10 +1,10 @@
-name: Package EX5 localhost research copies
+name: Package EX5 research metadata copies
 on:
   push:
     branches:
       - research/ex5-localhost-20261022
     paths:
-      - tools/ex5_research_url_only.py
+      - tools/ex5_research_metadata.py
       - .github/workflows/ex5-research.yml
   workflow_dispatch:
 permissions:
@@ -14,19 +14,19 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Make and validate EX5 research copies
-        run: python3 tools/ex5_research_url_only.py
+      - name: Prepare and verify research metadata EX5 copies
+        run: python3 tools/ex5_research_metadata.py
       - uses: actions/upload-artifact@v4
         with:
-          name: EX5-localhost-research
-          path: dist/EX5-localhost-research.zip
+          name: EX5-localhost-research-metadata
+          path: dist/EX5-localhost-research-metadata.zip
           if-no-files-found: error
-      - name: Push validated copies to research branch
+      - name: Commit validated copies and provenance on research branch
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add -A research-copies/
           if ! git diff --cached --quiet; then
-            git commit -m "Add validated URL-only EX5 research copies"
+            git commit -m "Normalize EX5 research display fields with provenance audit"
             git push origin HEAD:refs/heads/research/ex5-localhost-20261022
           fi
