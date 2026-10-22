@@ -1,0 +1,19 @@
+{
+  "correction": "MT5 host double-returning APIs write the per-program double result slot. Controlled MQL wrapper then loads XMM0 from that slot. Do not describe the host as directly returning XMM0.",
+  "controlled_evidence": [
+    "IdentityDouble",
+    "AccountInfoDouble",
+    "SymbolInfoDouble",
+    "MathPow"
+  ],
+  "double_result_rva": "0x24e48",
+  "corrected_native_signatures": [
+    "MT5_AccountInfoDouble",
+    "MT5_SymbolInfoDouble",
+    "MT5_PositionGetDouble",
+    "MT5_OrderGetDouble",
+    "MT5_HistoryDealGetDouble",
+    "MT5_HistoryOrderGetDouble",
+    "MT5_StringToDouble"
+  ]
+}

@@ -1,0 +1,1246 @@
+[
+  {
+    "rva": "0x468020",
+    "address": "0x7ff653448020",
+    "label": "MT5_ResourceCreate",
+    "probe_sources": [
+      "ResourceCreate"
+    ],
+    "kind": "observed_native_call_label"
+  },
+  {
+    "rva": "0x4682a0",
+    "address": "0x7ff6534482a0",
+    "label": "MT5_TextSetFont",
+    "probe_sources": [
+      "TextSetFont"
+    ],
+    "kind": "observed_native_call_label"
+  },
+  {
+    "rva": "0x468480",
+    "address": "0x7ff653448480",
+    "label": "MT5_TextGetSize",
+    "probe_sources": [
+      "TextGetSize"
+    ],
+    "kind": "observed_native_call_label"
+  },
+  {
+    "rva": "0x468540",
+    "address": "0x7ff653448540",
+    "label": "MT5_TextOut",
+    "probe_sources": [
+      "TextOut"
+    ],
+    "kind": "observed_native_call_label"
+  },
+  {
+    "rva": "0x46aa30",
+    "address": "0x7ff65344aa30",
+    "label": "MT5_ResourceFree",
+    "probe_sources": [
+      "ResourceFree"
+    ],
+    "kind": "observed_native_call_label"
+  },
+  {
+    "rva": "0x797370",
+    "address": "0x7ff653777370",
+    "label": "MT5_AccountInfoDouble",
+    "probe_sources": [
+      "AccountInfoDouble"
+    ],
+    "kind": "observed_native_call_label"
+  },
+  {
+    "rva": "0x7973c0",
+    "address": "0x7ff6537773c0",
+    "label": "MT5_AccountInfoInteger",
+    "probe_sources": [
+      "AccountInfoInteger"
+    ],
+    "kind": "observed_native_call_label"
+  },
+  {
+    "rva": "0x797410",
+    "address": "0x7ff653777410",
+    "label": "MT5_AccountInfoString",
+    "probe_sources": [
+      "AccountInfoString"
+    ],
+    "kind": "observed_native_call_label"
+  },
+  {
+    "rva": "0x7b2010",
+    "address": "0x7ff653792010",
+    "label": "MT5_PeriodSeconds",
+    "probe_sources": [
+      "PeriodSeconds"
+    ],
+    "kind": "observed_native_call_label"
+  },
+  {
+    "rva": "0x7b5a80",
+    "address": "0x7ff653795a80",
+    "label": "MT5_WebRequest",
+    "probe_sources": [
+      "WebRequest"
+    ],
+    "kind": "observed_native_call_label"
+  },
+  {
+    "rva": "0x7b5df0",
+    "address": "0x7ff653795df0",
+    "label": "MT5_WebRequestNine",
+    "probe_sources": [
+      "WebRequestNine"
+    ],
+    "kind": "observed_native_call_label"
+  },
+  {
+    "rva": "0x7b6780",
+    "address": "0x7ff653796780",
+    "label": "MT5_GetMicrosecondCount",
+    "probe_sources": [
+      "GetMicrosecondCount"
+    ],
+    "kind": "observed_native_call_label"
+  },
+  {
+    "rva": "0x7b7210",
+    "address": "0x7ff653797210",
+    "label": "MT5_EventSetTimer",
+    "probe_sources": [
+      "EventSetTimer"
+    ],
+    "kind": "observed_native_call_label"
+  },
+  {
+    "rva": "0x7bee30",
+    "address": "0x7ff65379ee30",
+    "label": "MT5_IndicatorRelease",
+    "probe_sources": [
+      "IndicatorRelease"
+    ],
+    "kind": "observed_native_call_label"
+  },
+  {
+    "rva": "0x7beec0",
+    "address": "0x7ff65379eec0",
+    "label": "MT5_CopyBuffer",
+    "probe_sources": [
+      "CopyBuffer"
+    ],
+    "kind": "observed_native_call_label"
+  },
+  {
+    "rva": "0x7c0590",
+    "address": "0x7ff6537a0590",
+    "label": "MT5_TerminalInfoString",
+    "probe_sources": [
+      "TerminalInfoString"
+    ],
+    "kind": "observed_native_call_label"
+  },
+  {
+    "rva": "0x7c0700",
+    "address": "0x7ff6537a0700",
+    "label": "MT5_TerminalInfoInteger",
+    "probe_sources": [
+      "TerminalInfoInteger"
+    ],
+    "kind": "observed_native_call_label"
+  },
+  {
+    "rva": "0x7c0cc0",
+    "address": "0x7ff6537a0cc0",
+    "label": "MT5_TerminalInfoDouble",
+    "probe_sources": [
+      "TerminalInfoDouble"
+    ],
+    "kind": "observed_native_call_label"
+  },
+  {
+    "rva": "0x7c0d20",
+    "address": "0x7ff6537a0d20",
+    "label": "MT5_MQLInfoString",
+    "probe_sources": [
+      "MQLInfoString"
+    ],
+    "kind": "observed_native_call_label"
+  },
+  {
+    "rva": "0x7c0fd0",
+    "address": "0x7ff6537a0fd0",
+    "label": "MT5_MQLInfoInteger",
+    "probe_sources": [
+      "MQLInfoInteger"
+    ],
+    "kind": "observed_native_call_label"
+  },
+  {
+    "rva": "0x7c2890",
+    "address": "0x7ff6537a2890",
+    "label": "MT5_SymbolInfoDouble",
+    "probe_sources": [
+      "SymbolInfoDouble"
+    ],
+    "kind": "observed_native_call_label"
+  },
+  {
+    "rva": "0x7c2900",
+    "address": "0x7ff6537a2900",
+    "label": "MT5_SymbolInfoDoubleRef",
+    "probe_sources": [
+      "SymbolInfoDoubleRef"
+    ],
+    "kind": "observed_native_call_label"
+  },
+  {
+    "rva": "0x7c2970",
+    "address": "0x7ff6537a2970",
+    "label": "MT5_SymbolInfoInteger",
+    "probe_sources": [
+      "SymbolInfoInteger"
+    ],
+    "kind": "observed_native_call_label"
+  },
+  {
+    "rva": "0x7c29d0",
+    "address": "0x7ff6537a29d0",
+    "label": "MT5_SymbolInfoIntegerRef",
+    "probe_sources": [
+      "SymbolInfoIntegerRef"
+    ],
+    "kind": "observed_native_call_label"
+  },
+  {
+    "rva": "0x7c2a30",
+    "address": "0x7ff6537a2a30",
+    "label": "MT5_SymbolInfoString",
+    "probe_sources": [
+      "SymbolInfoString"
+    ],
+    "kind": "observed_native_call_label"
+  },
+  {
+    "rva": "0x7c2aa0",
+    "address": "0x7ff6537a2aa0",
+    "label": "MT5_SymbolInfoStringRef",
+    "probe_sources": [
+      "SymbolInfoStringRef"
+    ],
+    "kind": "observed_native_call_label"
+  },
+  {
+    "rva": "0x7c2c10",
+    "address": "0x7ff6537a2c10",
+    "label": "MT5_SymbolInfoTick",
+    "probe_sources": [
+      "SymbolInfoTick"
+    ],
+    "kind": "observed_native_call_label"
+  },
+  {
+    "rva": "0x7c2cb0",
+    "address": "0x7ff6537a2cb0",
+    "label": "MT5_SymbolInfoSessionTrade",
+    "probe_sources": [
+      "SymbolInfoSessionTrade"
+    ],
+    "kind": "observed_native_call_label"
+  },
+  {
+    "rva": "0x7c35d0",
+    "address": "0x7ff6537a35d0",
+    "label": "MT5_ObjectsTotal",
+    "probe_sources": [
+      "ObjectsTotal"
+    ],
+    "kind": "observed_native_call_label"
+  },
+  {
+    "rva": "0x7c3a50",
+    "address": "0x7ff6537a3a50",
+    "label": "MT5_ObjectSetDouble",
+    "probe_sources": [
+      "ObjectSetDouble"
+    ],
+    "kind": "observed_native_call_label"
+  },
+  {
+    "rva": "0x7c3ac0",
+    "address": "0x7ff6537a3ac0",
+    "label": "MT5_ObjectSetDoubleModifier",
+    "probe_sources": [
+      "ObjectSetDoubleModifier"
+    ],
+    "kind": "observed_native_call_label"
+  },
+  {
+    "rva": "0x7c3b30",
+    "address": "0x7ff6537a3b30",
+    "label": "MT5_ObjectSetInteger",
+    "probe_sources": [
+      "ObjectSetInteger"
+    ],
+    "kind": "observed_native_call_label"
+  },
+  {
+    "rva": "0x7c3bd0",
+    "address": "0x7ff6537a3bd0",
+    "label": "MT5_ObjectSetIntegerModifier",
+    "probe_sources": [
+      "ObjectSetIntegerModifier"
+    ],
+    "kind": "observed_native_call_label"
+  },
+  {
+    "rva": "0x7c3c80",
+    "address": "0x7ff6537a3c80",
+    "label": "MT5_ObjectSetString",
+    "probe_sources": [
+      "ObjectSetString"
+    ],
+    "kind": "observed_native_call_label"
+  },
+  {
+    "rva": "0x7c47a0",
+    "address": "0x7ff6537a47a0",
+    "label": "MT5_ObjectSetStringModifier",
+    "probe_sources": [
+      "ObjectSetStringModifier"
+    ],
+    "kind": "observed_native_call_label"
+  },
+  {
+    "rva": "0x7c4840",
+    "address": "0x7ff6537a4840",
+    "label": "MT5_ObjectFind",
+    "probe_sources": [
+      "ObjectFind"
+    ],
+    "kind": "observed_native_call_label"
+  },
+  {
+    "rva": "0x7c48b0",
+    "address": "0x7ff6537a48b0",
+    "label": "MT5_ObjectGetDouble",
+    "probe_sources": [
+      "ObjectGetDouble"
+    ],
+    "kind": "observed_native_call_label"
+  },
+  {
+    "rva": "0x7c4930",
+    "address": "0x7ff6537a4930",
+    "label": "MT5_ObjectGetDoubleRef",
+    "probe_sources": [
+      "ObjectGetDoubleRef"
+    ],
+    "kind": "observed_native_call_label"
+  },
+  {
+    "rva": "0x7c49a0",
+    "address": "0x7ff6537a49a0",
+    "label": "MT5_ObjectGetInteger",
+    "probe_sources": [
+      "ObjectGetInteger"
+    ],
+    "kind": "observed_native_call_label"
+  },
+  {
+    "rva": "0x7c4a10",
+    "address": "0x7ff6537a4a10",
+    "label": "MT5_ObjectGetIntegerRef",
+    "probe_sources": [
+      "ObjectGetIntegerRef"
+    ],
+    "kind": "observed_native_call_label"
+  },
+  {
+    "rva": "0x7c4a80",
+    "address": "0x7ff6537a4a80",
+    "label": "MT5_ObjectGetString",
+    "probe_sources": [
+      "ObjectGetString"
+    ],
+    "kind": "observed_native_call_label"
+  },
+  {
+    "rva": "0x7c4b60",
+    "address": "0x7ff6537a4b60",
+    "label": "MT5_ObjectGetStringRef",
+    "probe_sources": [
+      "ObjectGetStringRef"
+    ],
+    "kind": "observed_native_call_label"
+  },
+  {
+    "rva": "0x7c4c00",
+    "address": "0x7ff6537a4c00",
+    "label": "MT5_ObjectName",
+    "probe_sources": [
+      "ObjectName"
+    ],
+    "kind": "observed_native_call_label"
+  },
+  {
+    "rva": "0x7c4ce0",
+    "address": "0x7ff6537a4ce0",
+    "label": "MT5_ObjectDelete",
+    "probe_sources": [
+      "ObjectDelete"
+    ],
+    "kind": "observed_native_call_label"
+  },
+  {
+    "rva": "0x7c4da0",
+    "address": "0x7ff6537a4da0",
+    "label": "MT5_ObjectsDeleteAllPrefix",
+    "probe_sources": [
+      "ObjectsDeleteAllPrefix"
+    ],
+    "kind": "observed_native_call_label"
+  },
+  {
+    "rva": "0x7c5240",
+    "address": "0x7ff6537a5240",
+    "label": "MT5_ChartSetInteger",
+    "probe_sources": [
+      "ChartSetInteger"
+    ],
+    "kind": "observed_native_call_label"
+  },
+  {
+    "rva": "0x7c5370",
+    "address": "0x7ff6537a5370",
+    "label": "MT5_ChartGetDouble",
+    "probe_sources": [
+      "ChartGetDouble"
+    ],
+    "kind": "observed_native_call_label"
+  },
+  {
+    "rva": "0x7c53d0",
+    "address": "0x7ff6537a53d0",
+    "label": "MT5_ChartGetInteger",
+    "probe_sources": [
+      "ChartGetInteger"
+    ],
+    "kind": "observed_native_call_label"
+  },
+  {
+    "rva": "0x7c5420",
+    "address": "0x7ff6537a5420",
+    "label": "MT5_ChartGetString",
+    "probe_sources": [
+      "ChartGetString"
+    ],
+    "kind": "observed_native_call_label"
+  },
+  {
+    "rva": "0x7c5690",
+    "address": "0x7ff6537a5690",
+    "label": "MT5_ChartGetIntegerRef",
+    "probe_sources": [
+      "ChartGetIntegerRef"
+    ],
+    "kind": "observed_native_call_label"
+  },
+  {
+    "rva": "0x7c5790",
+    "address": "0x7ff6537a5790",
+    "label": "MT5_ChartID",
+    "probe_sources": [
+      "ChartID"
+    ],
+    "kind": "observed_native_call_label"
+  },
+  {
+    "rva": "0x7ccc50",
+    "address": "0x7ff6537acc50",
+    "label": "MT5_TimeToString",
+    "probe_sources": [
+      "TimeToString"
+    ],
+    "kind": "observed_native_call_label"
+  },
+  {
+    "rva": "0x7cd370",
+    "address": "0x7ff6537ad370",
+    "label": "MT5_StringToTime",
+    "probe_sources": [
+      "StringToTime"
+    ],
+    "kind": "observed_native_call_label"
+  },
+  {
+    "rva": "0x7cd7c0",
+    "address": "0x7ff6537ad7c0",
+    "label": "MT5_DoubleToString",
+    "probe_sources": [
+      "DoubleToString"
+    ],
+    "kind": "observed_native_call_label"
+  },
+  {
+    "rva": "0x7cdfe0",
+    "address": "0x7ff6537adfe0",
+    "label": "MT5_IntegerToString",
+    "probe_sources": [
+      "IntegerToString"
+    ],
+    "kind": "observed_native_call_label"
+  },
+  {
+    "rva": "0x7ce4a0",
+    "address": "0x7ff6537ae4a0",
+    "label": "MT5_StringToDouble",
+    "probe_sources": [
+      "StringToDouble"
+    ],
+    "kind": "observed_native_call_label"
+  },
+  {
+    "rva": "0x7ce4f0",
+    "address": "0x7ff6537ae4f0",
+    "label": "MT5_StringToInteger",
+    "probe_sources": [
+      "StringToInteger"
+    ],
+    "kind": "observed_native_call_label"
+  },
+  {
+    "rva": "0x7ce8f0",
+    "address": "0x7ff6537ae8f0",
+    "label": "MT5_ShortToString",
+    "probe_sources": [
+      "ShortToString"
+    ],
+    "kind": "observed_native_call_label"
+  },
+  {
+    "rva": "0x7ce920",
+    "address": "0x7ff6537ae920",
+    "label": "MT5_CharArrayToString",
+    "probe_sources": [
+      "CharArrayToString"
+    ],
+    "kind": "observed_native_call_label"
+  },
+  {
+    "rva": "0x7ceed0",
+    "address": "0x7ff6537aeed0",
+    "label": "MT5_StringToCharArray",
+    "probe_sources": [
+      "StringToCharArray"
+    ],
+    "kind": "observed_native_call_label"
+  },
+  {
+    "rva": "0x7cf000",
+    "address": "0x7ff6537af000",
+    "label": "MT5_ShortArrayToString",
+    "probe_sources": [
+      "ShortArrayToString"
+    ],
+    "kind": "observed_native_call_label"
+  },
+  {
+    "rva": "0x7d1c40",
+    "address": "0x7ff6537b1c40",
+    "label": "MT5_TimeCurrent",
+    "probe_sources": [
+      "TimeCurrent"
+    ],
+    "kind": "observed_native_call_label"
+  },
+  {
+    "rva": "0x7d1ce0",
+    "address": "0x7ff6537b1ce0",
+    "label": "MT5_TimeTradeServer",
+    "probe_sources": [
+      "TimeTradeServer"
+    ],
+    "kind": "observed_native_call_label"
+  },
+  {
+    "rva": "0x7d1d80",
+    "address": "0x7ff6537b1d80",
+    "label": "MT5_TimeLocal",
+    "probe_sources": [
+      "TimeLocal"
+    ],
+    "kind": "observed_native_call_label"
+  },
+  {
+    "rva": "0x7d1e20",
+    "address": "0x7ff6537b1e20",
+    "label": "MT5_TimeGMT",
+    "probe_sources": [
+      "TimeGMT"
+    ],
+    "kind": "observed_native_call_label"
+  },
+  {
+    "rva": "0x7d1ec0",
+    "address": "0x7ff6537b1ec0",
+    "label": "MT5_TimeGMTOffset",
+    "probe_sources": [
+      "TimeGMTOffset"
+    ],
+    "kind": "observed_native_call_label"
+  },
+  {
+    "rva": "0x7d1f60",
+    "address": "0x7ff6537b1f60",
+    "label": "MT5_TimeToStruct",
+    "probe_sources": [
+      "TimeToStruct"
+    ],
+    "kind": "observed_native_call_label"
+  },
+  {
+    "rva": "0x7d21d0",
+    "address": "0x7ff6537b21d0",
+    "label": "MT5_CopyClose__CopyHigh__CopyLow__CopyOpen__CopyRates__CopyTime",
+    "probe_sources": [
+      "CopyClose",
+      "CopyHigh",
+      "CopyLow",
+      "CopyOpen",
+      "CopyRates",
+      "CopyTime"
+    ],
+    "kind": "observed_native_call_label"
+  },
+  {
+    "rva": "0x7d2a30",
+    "address": "0x7ff6537b2a30",
+    "label": "MT5_Bars",
+    "probe_sources": [
+      "Bars"
+    ],
+    "kind": "observed_native_call_label"
+  },
+  {
+    "rva": "0x7d2b40",
+    "address": "0x7ff6537b2b40",
+    "label": "MT5_SeriesInfoIntegerRef",
+    "probe_sources": [
+      "SeriesInfoIntegerRef"
+    ],
+    "kind": "observed_native_call_label"
+  },
+  {
+    "rva": "0x7d2bc0",
+    "address": "0x7ff6537b2bc0",
+    "label": "MT5_SeriesInfoInteger",
+    "probe_sources": [
+      "SeriesInfoInteger"
+    ],
+    "kind": "observed_native_call_label"
+  },
+  {
+    "rva": "0x7d7da0",
+    "address": "0x7ff6537b7da0",
+    "label": "MT5_PositionsTotal",
+    "probe_sources": [
+      "PositionsTotal"
+    ],
+    "kind": "observed_native_call_label"
+  },
+  {
+    "rva": "0x7d7df0",
+    "address": "0x7ff6537b7df0",
+    "label": "MT5_PositionGetTicket",
+    "probe_sources": [
+      "PositionGetTicket"
+    ],
+    "kind": "observed_native_call_label"
+  },
+  {
+    "rva": "0x7d7e40",
+    "address": "0x7ff6537b7e40",
+    "label": "MT5_PositionGetSymbol",
+    "probe_sources": [
+      "PositionGetSymbol"
+    ],
+    "kind": "observed_native_call_label"
+  },
+  {
+    "rva": "0x7d7ee0",
+    "address": "0x7ff6537b7ee0",
+    "label": "MT5_PositionSelectByTicket",
+    "probe_sources": [
+      "PositionSelectByTicket"
+    ],
+    "kind": "observed_native_call_label"
+  },
+  {
+    "rva": "0x7d7f20",
+    "address": "0x7ff6537b7f20",
+    "label": "MT5_PositionSelect",
+    "probe_sources": [
+      "PositionSelect"
+    ],
+    "kind": "observed_native_call_label"
+  },
+  {
+    "rva": "0x7d7f70",
+    "address": "0x7ff6537b7f70",
+    "label": "MT5_PositionGetDouble",
+    "probe_sources": [
+      "PositionGetDouble"
+    ],
+    "kind": "observed_native_call_label"
+  },
+  {
+    "rva": "0x7d7fc0",
+    "address": "0x7ff6537b7fc0",
+    "label": "MT5_PositionGetInteger",
+    "probe_sources": [
+      "PositionGetInteger"
+    ],
+    "kind": "observed_native_call_label"
+  },
+  {
+    "rva": "0x7d8010",
+    "address": "0x7ff6537b8010",
+    "label": "MT5_PositionGetString",
+    "probe_sources": [
+      "PositionGetString"
+    ],
+    "kind": "observed_native_call_label"
+  },
+  {
+    "rva": "0x7d80b0",
+    "address": "0x7ff6537b80b0",
+    "label": "MT5_PositionGetDoubleRef",
+    "probe_sources": [
+      "PositionGetDoubleRef"
+    ],
+    "kind": "observed_native_call_label"
+  },
+  {
+    "rva": "0x7d80f0",
+    "address": "0x7ff6537b80f0",
+    "label": "MT5_PositionGetIntegerRef",
+    "probe_sources": [
+      "PositionGetIntegerRef"
+    ],
+    "kind": "observed_native_call_label"
+  },
+  {
+    "rva": "0x7d8130",
+    "address": "0x7ff6537b8130",
+    "label": "MT5_PositionGetStringRef",
+    "probe_sources": [
+      "PositionGetStringRef"
+    ],
+    "kind": "observed_native_call_label"
+  },
+  {
+    "rva": "0x7d81a0",
+    "address": "0x7ff6537b81a0",
+    "label": "MT5_OrdersTotal",
+    "probe_sources": [
+      "OrdersTotal"
+    ],
+    "kind": "observed_native_call_label"
+  },
+  {
+    "rva": "0x7d81f0",
+    "address": "0x7ff6537b81f0",
+    "label": "MT5_OrderGetTicket",
+    "probe_sources": [
+      "OrderGetTicket"
+    ],
+    "kind": "observed_native_call_label"
+  },
+  {
+    "rva": "0x7d8240",
+    "address": "0x7ff6537b8240",
+    "label": "MT5_OrderSelect",
+    "probe_sources": [
+      "OrderSelect"
+    ],
+    "kind": "observed_native_call_label"
+  },
+  {
+    "rva": "0x7d8280",
+    "address": "0x7ff6537b8280",
+    "label": "MT5_OrderGetDouble",
+    "probe_sources": [
+      "OrderGetDouble"
+    ],
+    "kind": "observed_native_call_label"
+  },
+  {
+    "rva": "0x7d82d0",
+    "address": "0x7ff6537b82d0",
+    "label": "MT5_OrderGetDoubleRef",
+    "probe_sources": [
+      "OrderGetDoubleRef"
+    ],
+    "kind": "observed_native_call_label"
+  },
+  {
+    "rva": "0x7d8310",
+    "address": "0x7ff6537b8310",
+    "label": "MT5_OrderGetInteger",
+    "probe_sources": [
+      "OrderGetInteger"
+    ],
+    "kind": "observed_native_call_label"
+  },
+  {
+    "rva": "0x7d8360",
+    "address": "0x7ff6537b8360",
+    "label": "MT5_OrderGetIntegerRef",
+    "probe_sources": [
+      "OrderGetIntegerRef"
+    ],
+    "kind": "observed_native_call_label"
+  },
+  {
+    "rva": "0x7d83a0",
+    "address": "0x7ff6537b83a0",
+    "label": "MT5_OrderGetString",
+    "probe_sources": [
+      "OrderGetString"
+    ],
+    "kind": "observed_native_call_label"
+  },
+  {
+    "rva": "0x7d8440",
+    "address": "0x7ff6537b8440",
+    "label": "MT5_OrderGetStringRef",
+    "probe_sources": [
+      "OrderGetStringRef"
+    ],
+    "kind": "observed_native_call_label"
+  },
+  {
+    "rva": "0x7d84b0",
+    "address": "0x7ff6537b84b0",
+    "label": "MT5_HistorySelectByPosition",
+    "probe_sources": [
+      "HistorySelectByPosition"
+    ],
+    "kind": "observed_native_call_label"
+  },
+  {
+    "rva": "0x7d84f0",
+    "address": "0x7ff6537b84f0",
+    "label": "MT5_HistorySelect",
+    "probe_sources": [
+      "HistorySelect"
+    ],
+    "kind": "observed_native_call_label"
+  },
+  {
+    "rva": "0x7d8530",
+    "address": "0x7ff6537b8530",
+    "label": "MT5_HistoryOrdersTotal",
+    "probe_sources": [
+      "HistoryOrdersTotal"
+    ],
+    "kind": "observed_native_call_label"
+  },
+  {
+    "rva": "0x7d8580",
+    "address": "0x7ff6537b8580",
+    "label": "MT5_HistoryOrderGetTicket",
+    "probe_sources": [
+      "HistoryOrderGetTicket"
+    ],
+    "kind": "observed_native_call_label"
+  },
+  {
+    "rva": "0x7d85d0",
+    "address": "0x7ff6537b85d0",
+    "label": "MT5_HistoryOrderGetDouble",
+    "probe_sources": [
+      "HistoryOrderGetDouble"
+    ],
+    "kind": "observed_native_call_label"
+  },
+  {
+    "rva": "0x7d8620",
+    "address": "0x7ff6537b8620",
+    "label": "MT5_HistoryOrderGetInteger",
+    "probe_sources": [
+      "HistoryOrderGetInteger"
+    ],
+    "kind": "observed_native_call_label"
+  },
+  {
+    "rva": "0x7d8670",
+    "address": "0x7ff6537b8670",
+    "label": "MT5_HistoryOrderGetString",
+    "probe_sources": [
+      "HistoryOrderGetString"
+    ],
+    "kind": "observed_native_call_label"
+  },
+  {
+    "rva": "0x7d8810",
+    "address": "0x7ff6537b8810",
+    "label": "MT5_HistoryDealsTotal",
+    "probe_sources": [
+      "HistoryDealsTotal"
+    ],
+    "kind": "observed_native_call_label"
+  },
+  {
+    "rva": "0x7d8860",
+    "address": "0x7ff6537b8860",
+    "label": "MT5_HistoryDealGetTicket",
+    "probe_sources": [
+      "HistoryDealGetTicket"
+    ],
+    "kind": "observed_native_call_label"
+  },
+  {
+    "rva": "0x7d88b0",
+    "address": "0x7ff6537b88b0",
+    "label": "MT5_HistoryDealGetDouble",
+    "probe_sources": [
+      "HistoryDealGetDouble"
+    ],
+    "kind": "observed_native_call_label"
+  },
+  {
+    "rva": "0x7d8940",
+    "address": "0x7ff6537b8940",
+    "label": "MT5_HistoryDealGetInteger",
+    "probe_sources": [
+      "HistoryDealGetInteger"
+    ],
+    "kind": "observed_native_call_label"
+  },
+  {
+    "rva": "0x7d89d0",
+    "address": "0x7ff6537b89d0",
+    "label": "MT5_HistoryDealGetString",
+    "probe_sources": [
+      "HistoryDealGetString"
+    ],
+    "kind": "observed_native_call_label"
+  },
+  {
+    "rva": "0x7d8af0",
+    "address": "0x7ff6537b8af0",
+    "label": "MT5_HistoryDealSelect",
+    "probe_sources": [
+      "HistoryDealSelect"
+    ],
+    "kind": "observed_native_call_label"
+  },
+  {
+    "rva": "0x7d8b30",
+    "address": "0x7ff6537b8b30",
+    "label": "MT5_HistoryOrderSelect",
+    "probe_sources": [
+      "HistoryOrderSelect"
+    ],
+    "kind": "observed_native_call_label"
+  },
+  {
+    "rva": "0x7d8b70",
+    "address": "0x7ff6537b8b70",
+    "label": "MT5_OrderSend",
+    "probe_sources": [
+      "OrderSend"
+    ],
+    "kind": "observed_native_call_label"
+  },
+  {
+    "rva": "0x7d8be0",
+    "address": "0x7ff6537b8be0",
+    "label": "MT5_OrderSendAsync",
+    "probe_sources": [
+      "OrderSendAsync"
+    ],
+    "kind": "observed_native_call_label"
+  },
+  {
+    "rva": "0x7d8c50",
+    "address": "0x7ff6537b8c50",
+    "label": "MT5_OrderCheck",
+    "probe_sources": [
+      "OrderCheck"
+    ],
+    "kind": "observed_native_call_label"
+  },
+  {
+    "rva": "0x7d8cc0",
+    "address": "0x7ff6537b8cc0",
+    "label": "MT5_OrderCalcProfit",
+    "probe_sources": [
+      "OrderCalcProfit"
+    ],
+    "kind": "observed_native_call_label"
+  },
+  {
+    "rva": "0x7d8d40",
+    "address": "0x7ff6537b8d40",
+    "label": "MT5_OrderCalcMargin",
+    "probe_sources": [
+      "OrderCalcMargin"
+    ],
+    "kind": "observed_native_call_label"
+  },
+  {
+    "rva": "0xaa9970",
+    "address": "0x7ff653a89970",
+    "label": "MT5_MathMod",
+    "probe_sources": [
+      "MathMod"
+    ],
+    "kind": "observed_native_call_label"
+  },
+  {
+    "rva": "0xaaae50",
+    "address": "0x7ff653a8ae50",
+    "label": "MT5_MathLog",
+    "probe_sources": [
+      "MathLog"
+    ],
+    "kind": "observed_native_call_label"
+  },
+  {
+    "rva": "0xaab380",
+    "address": "0x7ff653a8b380",
+    "label": "MT5_MathLog10",
+    "probe_sources": [
+      "MathLog10"
+    ],
+    "kind": "observed_native_call_label"
+  },
+  {
+    "rva": "0xaac5e0",
+    "address": "0x7ff653a8c5e0",
+    "label": "MT5_MathPow",
+    "probe_sources": [
+      "MathPow"
+    ],
+    "kind": "observed_native_call_label"
+  },
+  {
+    "rva": "0xaca670",
+    "address": "0x7ff653aaa670",
+    "label": "MT5_StringSubstr",
+    "probe_sources": [
+      "StringSubstr"
+    ],
+    "kind": "observed_native_call_label"
+  },
+  {
+    "rva": "0xacbf90",
+    "address": "0x7ff653aabf90",
+    "label": "MT5_GetTickCount64",
+    "probe_sources": [
+      "GetTickCount64"
+    ],
+    "kind": "observed_native_call_label"
+  },
+  {
+    "rva": "0xacc070",
+    "address": "0x7ff653aac070",
+    "label": "MT5_StringCompare",
+    "probe_sources": [
+      "StringCompare"
+    ],
+    "kind": "observed_native_call_label"
+  },
+  {
+    "rva": "0xacc2a0",
+    "address": "0x7ff653aac2a0",
+    "label": "MT5_GetTickCount",
+    "probe_sources": [
+      "GetTickCount"
+    ],
+    "kind": "observed_native_call_label"
+  },
+  {
+    "rva": "0x7b49f0",
+    "address": "0x7ff6537949f0",
+    "label": "MT5_Dispatch",
+    "kind": "runtime_support_or_dispatch",
+    "original_source_function_name_known": false
+  },
+  {
+    "rva": "0x3959a0",
+    "address": "0x7ff6533759a0",
+    "label": "runtime_memory_helper_3959a0",
+    "kind": "runtime_support_or_dispatch",
+    "original_source_function_name_known": false
+  },
+  {
+    "rva": "0x7a9d20",
+    "address": "0x7ff653789d20",
+    "label": "runtime_array_helper_7a9d20",
+    "kind": "runtime_support_or_dispatch",
+    "original_source_function_name_known": false
+  },
+  {
+    "rva": "0x7aa0e0",
+    "address": "0x7ff65378a0e0",
+    "label": "runtime_array_helper_7aa0e0",
+    "kind": "runtime_support_or_dispatch",
+    "original_source_function_name_known": false
+  },
+  {
+    "rva": "0x7b6ef0",
+    "address": "0x7ff653796ef0",
+    "label": "runtime_array_helper_7b6ef0",
+    "kind": "runtime_support_or_dispatch",
+    "original_source_function_name_known": false
+  },
+  {
+    "rva": "0x7d1190",
+    "address": "0x7ff6537b1190",
+    "label": "runtime_string_helper_7d1190",
+    "kind": "runtime_support_or_dispatch",
+    "original_source_function_name_known": false
+  },
+  {
+    "rva": "0x7d1200",
+    "address": "0x7ff6537b1200",
+    "label": "runtime_string_helper_7d1200",
+    "kind": "runtime_support_or_dispatch",
+    "original_source_function_name_known": false
+  },
+  {
+    "rva": "0x7b4490",
+    "address": "0x7ff653794490",
+    "label": "runtime_object_register",
+    "kind": "runtime_support_or_dispatch",
+    "original_source_function_name_known": false
+  },
+  {
+    "rva": "0x7b62f0",
+    "address": "0x7ff6537962f0",
+    "label": "runtime_object_unregister",
+    "kind": "runtime_support_or_dispatch",
+    "original_source_function_name_known": false
+  },
+  {
+    "rva": "0x7b6470",
+    "address": "0x7ff653796470",
+    "label": "runtime_object_type_change",
+    "kind": "runtime_support_or_dispatch",
+    "original_source_function_name_known": false
+  },
+  {
+    "rva": "0x7cf6c0",
+    "address": "0x7ff6537af6c0",
+    "label": "runtime_cast_to_string",
+    "kind": "runtime_support_or_dispatch",
+    "original_source_function_name_known": false
+  },
+  {
+    "rva": "0xacad20",
+    "address": "0x7ff653aaad20",
+    "label": "memset",
+    "kind": "runtime_support_or_dispatch",
+    "original_source_function_name_known": false
+  },
+  {
+    "rva": "0xa1a430",
+    "address": "0x7ff6539fa430",
+    "label": "__chkstk",
+    "kind": "runtime_support_or_dispatch",
+    "original_source_function_name_known": false
+  },
+  {
+    "rva": "0x395990",
+    "address": "0x7ff653375990",
+    "label": "runtime_fault_395990",
+    "kind": "runtime_support_or_dispatch",
+    "original_source_function_name_known": false
+  },
+  {
+    "rva": "0x395c00",
+    "address": "0x7ff653375c00",
+    "label": "runtime_fault_395c00",
+    "kind": "runtime_support_or_dispatch",
+    "original_source_function_name_known": false
+  },
+  {
+    "rva": "0x7d3bc0",
+    "address": "0x7ff6537b3bc0",
+    "label": "MT5_iOpen",
+    "probe_sources": [
+      "iOpen"
+    ],
+    "kind": "observed_native_call_label"
+  },
+  {
+    "rva": "0x7d3c40",
+    "address": "0x7ff6537b3c40",
+    "label": "MT5_iHigh",
+    "probe_sources": [
+      "iHigh"
+    ],
+    "kind": "observed_native_call_label"
+  },
+  {
+    "rva": "0x7d3cc0",
+    "address": "0x7ff6537b3cc0",
+    "label": "MT5_iLow",
+    "probe_sources": [
+      "iLow"
+    ],
+    "kind": "observed_native_call_label"
+  },
+  {
+    "rva": "0x7d3d40",
+    "address": "0x7ff6537b3d40",
+    "label": "MT5_iClose",
+    "probe_sources": [
+      "iClose"
+    ],
+    "kind": "observed_native_call_label"
+  },
+  {
+    "rva": "0x7d3b50",
+    "address": "0x7ff6537b3b50",
+    "label": "MT5_iTime",
+    "probe_sources": [
+      "iTime"
+    ],
+    "kind": "observed_native_call_label"
+  },
+  {
+    "rva": "0x7d3f10",
+    "address": "0x7ff6537b3f10",
+    "label": "MT5_iBarShift",
+    "probe_sources": [
+      "iBarShift"
+    ],
+    "kind": "observed_native_call_label"
+  },
+  {
+    "rva": "0x7d4090",
+    "address": "0x7ff6537b4090",
+    "label": "MT5_iHighest",
+    "probe_sources": [
+      "iHighest"
+    ],
+    "kind": "observed_native_call_label"
+  },
+  {
+    "rva": "0x7d3fb0",
+    "address": "0x7ff6537b3fb0",
+    "label": "MT5_iLowest",
+    "probe_sources": [
+      "iLowest"
+    ],
+    "kind": "observed_native_call_label"
+  }
+]

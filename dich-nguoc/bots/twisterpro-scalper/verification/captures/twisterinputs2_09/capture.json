@@ -1,0 +1,88 @@
+{
+  "pid": 15028,
+  "process": "C:\\Users\\NTD\\Desktop\\BotTradeEA\\local\\market-demos-20261020\\dich-nguoc-luot2\\terminal\\metatester64.exe",
+  "regions": [
+    {
+      "base": 2296650072064,
+      "allocation_base": 2296650072064,
+      "bytes": 110592,
+      "protect": 32,
+      "file": "00000216bb030000.bin",
+      "kind": "executable",
+      "sha256": "4c12d5c0d222e6f7b0628344aa38e5d438c1f5524d82924663bc9381f7d10f67"
+    },
+    {
+      "base": 140712181563392,
+      "allocation_base": 140712181563392,
+      "bytes": 4096,
+      "protect": 32,
+      "file": "00007ffa1b990000.bin",
+      "kind": "executable",
+      "sha256": "31df8bc96e8269642f266567c0170815d4552850d23d0a13d73372e349a45034"
+    },
+    {
+      "base": 140712181567488,
+      "allocation_base": 140712181563392,
+      "bytes": 4096,
+      "protect": 64,
+      "file": "00007ffa1b991000.bin",
+      "kind": "executable",
+      "sha256": "ad7facb2586fc6e966c004d7d1d16b024f5805ff7cb47c7a85dabd8b48892ca7"
+    },
+    {
+      "base": 2296650182656,
+      "allocation_base": 2296650072064,
+      "bytes": 86016,
+      "protect": 4,
+      "kind": "mutable_program_data",
+      "file": "00000216bb04b000-program-data.bin",
+      "sha256": "412fb7db815c03c892c3fd82d03b529928e480c63daecd46e7305f503210539f"
+    }
+  ],
+  "errors": [],
+  "bytes": 204800,
+  "query_end": {
+    "address": 140737488289792,
+    "windows_error": 87
+  },
+  "allocation_layout": [
+    {
+      "base": 2296650072064,
+      "allocation_base": 2296650072064,
+      "bytes": 110592,
+      "protect": 32
+    },
+    {
+      "base": 2296650182656,
+      "allocation_base": 2296650072064,
+      "bytes": 86016,
+      "protect": 4
+    },
+    {
+      "base": 140712181563392,
+      "allocation_base": 140712181563392,
+      "bytes": 4096,
+      "protect": 32
+    },
+    {
+      "base": 140712181567488,
+      "allocation_base": 140712181563392,
+      "bytes": 4096,
+      "protect": 64
+    }
+  ],
+  "input_string_checks": [
+    {
+      "name": "TradeComment",
+      "rva": "0x24f20",
+      "matches_expected": true,
+      "windows_error": 0
+    },
+    {
+      "name": "NewsCurrencies",
+      "rva": "0x24ff0",
+      "matches_expected": true,
+      "windows_error": 0
+    }
+  ]
+}

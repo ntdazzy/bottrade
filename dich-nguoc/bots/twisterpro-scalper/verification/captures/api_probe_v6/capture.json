@@ -1,0 +1,75 @@
+{
+  "pid": 16756,
+  "process": "C:\\Users\\NTD\\Desktop\\BotTradeEA\\local\\market-demos-20261020\\dich-nguoc-luot2\\terminal\\metatester64.exe",
+  "regions": [
+    {
+      "base": 1845555167232,
+      "allocation_base": 1845555167232,
+      "bytes": 49152,
+      "protect": 32,
+      "file": "000001adb3a90000.bin",
+      "kind": "executable",
+      "sha256": "c8ca0b2e5cb43830226dbd89222d7164eb2eae102d3aff3b9e75d18cb92e9028"
+    },
+    {
+      "base": 140712181563392,
+      "allocation_base": 140712181563392,
+      "bytes": 4096,
+      "protect": 32,
+      "file": "00007ffa1b990000.bin",
+      "kind": "executable",
+      "sha256": "5db80083606e26bb965a6da27eda8e6594cae316ff780102ebbd3c92967faf4b"
+    },
+    {
+      "base": 140712181567488,
+      "allocation_base": 140712181563392,
+      "bytes": 4096,
+      "protect": 64,
+      "file": "00007ffa1b991000.bin",
+      "kind": "executable",
+      "sha256": "ad7facb2586fc6e966c004d7d1d16b024f5805ff7cb47c7a85dabd8b48892ca7"
+    },
+    {
+      "base": 1845555216384,
+      "allocation_base": 1845555167232,
+      "bytes": 81920,
+      "protect": 4,
+      "kind": "mutable_program_data",
+      "file": "000001adb3a9c000-program-data.bin",
+      "sha256": "dcfb79e243ca2abb0802b3cb95766974cda869fd242e28606f7b04b441f3ceff"
+    }
+  ],
+  "errors": [],
+  "bytes": 139264,
+  "query_end": {
+    "address": 140737488289792,
+    "windows_error": 87
+  },
+  "allocation_layout": [
+    {
+      "base": 1845555167232,
+      "allocation_base": 1845555167232,
+      "bytes": 49152,
+      "protect": 32
+    },
+    {
+      "base": 1845555216384,
+      "allocation_base": 1845555167232,
+      "bytes": 81920,
+      "protect": 4
+    },
+    {
+      "base": 140712181563392,
+      "allocation_base": 140712181563392,
+      "bytes": 4096,
+      "protect": 32
+    },
+    {
+      "base": 140712181567488,
+      "allocation_base": 140712181563392,
+      "bytes": 4096,
+      "protect": 64
+    }
+  ],
+  "input_string_checks": []
+}

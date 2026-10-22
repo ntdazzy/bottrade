@@ -1,0 +1,2308 @@
+{
+  "date_vietnam": "2026-10-20",
+  "root": "C:\\Users\\NTD\\Desktop\\BotTradeEA\\local\\market-demos-20261020",
+  "method": "Read-only file inventory, SHA-256, first 4096 bytes of EX5 as printable UTF-16LE text at both alignments, recursive ZIP directory listing; no execution or decompiler.",
+  "summary": {
+    "original_file_count": 398,
+    "extensions": {
+      ".ex5": 17,
+      ".html": 2,
+      ".md": 1,
+      ".pdf": 2,
+      ".set": 372,
+      ".zip": 4
+    },
+    "ex5_file_count": 17,
+    "distinct_bot_names": 15,
+    "distinct_binary_hashes": 17,
+    "all_ex5_signatures_match": true,
+    "source_files": [],
+    "archive_occurrences_checked_including_nested": 5,
+    "source_entries_in_archives": 0,
+    "recovered_source_count": 0
+  },
+  "binaries": [
+    {
+      "path": "mt5-btc-recovery/AI Golden Life MT5.ex5",
+      "name": "AI Golden Life MT5",
+      "bytes": 600464,
+      "sha256": "7F162ECCA001271C7359504A795D71B6BA7E6AE4C9930811930627D80C4AE949",
+      "signature_hex": "45583502",
+      "is_ex5_signature": true,
+      "readable_header_text": [
+        "MQL BLUE",
+        "https://www.mqlblue.com"
+      ],
+      "header_scan_bytes": 4096,
+      "source_recovered": false
+    },
+    {
+      "path": "mt5-btc-recovery/CryonX EA MT5.ex5",
+      "name": "CryonX EA MT5",
+      "bytes": 775396,
+      "sha256": "0791D1A189DC1805E9764805A978A62FBB9F9B07DB192C8CFB2D26B09818D3F9",
+      "signature_hex": "45583502",
+      "is_ex5_signature": true,
+      "readable_header_text": [
+        "Copyright 2023, MetaQuotes Ltd.",
+        "https://www.mql5.com"
+      ],
+      "header_scan_bytes": 4096,
+      "source_recovered": false
+    },
+    {
+      "path": "mt5-btc-recovery/Dynamic Liquidity Intelligence.ex5",
+      "name": "Dynamic Liquidity Intelligence",
+      "bytes": 127938,
+      "sha256": "E69FAB805E88ED5306D43748953873958294D97325555907312473086F611523",
+      "signature_hex": "45583502",
+      "is_ex5_signature": true,
+      "readable_header_text": [
+        "Sathit Sukhirun",
+        "https://www.mql5.com/en/users/nicedata"
+      ],
+      "header_scan_bytes": 4096,
+      "source_recovered": false
+    },
+    {
+      "path": "mt5-btc-recovery/Gold Beaver.ex5",
+      "name": "Gold Beaver",
+      "bytes": 762912,
+      "sha256": "EA5174FE310381AF65984953F113D1B10E422ACB95FEA41B18491BC40C055885",
+      "signature_hex": "45583502",
+      "is_ex5_signature": true,
+      "readable_header_text": [
+        "2026, Arnold Bobrinskii"
+      ],
+      "header_scan_bytes": 4096,
+      "source_recovered": false
+    },
+    {
+      "path": "mt5-btc-recovery/Gold Trade Pro MT5.ex5",
+      "name": "Gold Trade Pro MT5",
+      "bytes": 237660,
+      "sha256": "A3B0DE423A06E10EBEDC279307B93D7CB9188BA2BB5DE77131A913C865B0E922",
+      "signature_hex": "45583502",
+      "is_ex5_signature": true,
+      "readable_header_text": [
+        "Copyright 2023 - Wim Schrynemakers"
+      ],
+      "header_scan_bytes": 4096,
+      "source_recovered": false
+    },
+    {
+      "path": "mt5-btc-recovery/Goldbot One MT5.ex5",
+      "name": "Goldbot One MT5",
+      "bytes": 226872,
+      "sha256": "390D8AB14FC213FF4B8CBE5084BEC545526E62C6028516FE21219A59398CE795",
+      "signature_hex": "45583502",
+      "is_ex5_signature": true,
+      "readable_header_text": [
+        "Copyright 2024 - Wim Schrynemakers"
+      ],
+      "header_scan_bytes": 4096,
+      "source_recovered": false
+    },
+    {
+      "path": "mt5-btc-recovery/MoonDog EA.ex5",
+      "name": "MoonDog EA",
+      "bytes": 11307865,
+      "sha256": "D019AE0232A15A121CBA3E857D66BFE1B1828EBB8205B6FB509249F00F9F4DF6",
+      "signature_hex": "45583502",
+      "is_ex5_signature": true,
+      "readable_header_text": [],
+      "header_scan_bytes": 4096,
+      "source_recovered": false
+    },
+    {
+      "path": "mt5-btc-recovery/Quantum Titan MT5.ex5",
+      "name": "Quantum Titan MT5",
+      "bytes": 168798,
+      "sha256": "74A780C9CF6E2C8283DFBBD61BD74D44CE8EA71459D9234245CE2240F02DE049",
+      "signature_hex": "45583502",
+      "is_ex5_signature": true,
+      "readable_header_text": [
+        "Click here to contact the author.",
+        "https://www.mql5.com/en/users/weredeu"
+      ],
+      "header_scan_bytes": 4096,
+      "source_recovered": false
+    },
+    {
+      "path": "mt5-btc-recovery/TwisterPro Scalper.ex5",
+      "name": "TwisterPro Scalper",
+      "bytes": 109212,
+      "sha256": "C705E2BBBB66D18E31E2A375625DFDEF69243CB73E684AF3A846D6AB33FABE73",
+      "signature_hex": "45583502",
+      "is_ex5_signature": true,
+      "readable_header_text": [
+        "Copyright 2026, Twister Pro Systems",
+        "https://www.mql5.com"
+      ],
+      "header_scan_bytes": 4096,
+      "source_recovered": false
+    },
+    {
+      "path": "mt5-btc-recovery/Ultimate Breakout System.ex5",
+      "name": "Ultimate Breakout System",
+      "bytes": 423012,
+      "sha256": "6309CDFC78467DC7C9E5482BDB77F75D9D1061EBFD3A28DD89697DB91317C920",
+      "signature_hex": "45583502",
+      "is_ex5_signature": true,
+      "readable_header_text": [
+        "Copyright 2026 - Profalgo LTD",
+        "https://www.forexeasolutions.com"
+      ],
+      "header_scan_bytes": 4096,
+      "source_recovered": false
+    },
+    {
+      "path": "mt5-program-files/EA Super Trend XAUUSD.ex5",
+      "name": "EA Super Trend XAUUSD",
+      "bytes": 267650,
+      "sha256": "F9A04943CACC50AD0FD4CD1CBF84AACCC3D6B294A438CBD2100AEA82E7EDEF39",
+      "signature_hex": "45583502",
+      "is_ex5_signature": true,
+      "readable_header_text": [
+        "Copyright 2026,Trading Systems EA Quantum Lab | Algorithms, Indicators, Signals",
+        "https://t.me/EAQuantumLab"
+      ],
+      "header_scan_bytes": 4096,
+      "source_recovered": false
+    },
+    {
+      "path": "mt5-program-files/My AI Gold.ex5",
+      "name": "My AI Gold",
+      "bytes": 3680992,
+      "sha256": "E1F1BF70C8E2AECCCC3A09555DE57015A9955CF96F12609CCE3A59FDB71FA306",
+      "signature_hex": "45583502",
+      "is_ex5_signature": true,
+      "readable_header_text": [
+        "Vitalii Kosov"
+      ],
+      "header_scan_bytes": 4096,
+      "source_recovered": false
+    },
+    {
+      "path": "mt5-program-files/Quantum Queen X MT5.ex5",
+      "name": "Quantum Queen X MT5",
+      "bytes": 489074,
+      "sha256": "BD6AA7E27C9748A26304E5E8AF6EC796037F0CD4978B1AC973F0F38DF4DF9ECD",
+      "signature_hex": "45583502",
+      "is_ex5_signature": true,
+      "readable_header_text": [
+        "Click here to contact the author.",
+        "https://www.mql5.com/en/users/weredeu"
+      ],
+      "header_scan_bytes": 4096,
+      "source_recovered": false
+    },
+    {
+      "path": "mt5-program-files/Quantum Titan MT5.ex5",
+      "name": "Quantum Titan MT5",
+      "bytes": 168726,
+      "sha256": "0B4B0F32B37A8F66422E9B875ED90CD31D8BEE6D74FCBC9A5E57752DAB5E465B",
+      "signature_hex": "45583502",
+      "is_ex5_signature": true,
+      "readable_header_text": [
+        "Click here to contact the author.",
+        "https://www.mql5.com/en/users/weredeu"
+      ],
+      "header_scan_bytes": 4096,
+      "source_recovered": false
+    },
+    {
+      "path": "mt5-program-files/Scalping Robot Pro MT5.ex5",
+      "name": "Scalping Robot Pro MT5",
+      "bytes": 402498,
+      "sha256": "75B8DA04760B374D25734B441C6F2424F7E46608260185EAF1E6F8566649B24D",
+      "signature_hex": "45583502",
+      "is_ex5_signature": true,
+      "readable_header_text": [
+        "MQL BLUE",
+        "https://www.mqlblue.com"
+      ],
+      "header_scan_bytes": 4096,
+      "source_recovered": false
+    },
+    {
+      "path": "mt5-program-files/The Gold Reaper MT5.ex5",
+      "name": "The Gold Reaper MT5",
+      "bytes": 261524,
+      "sha256": "EE063D3D87490AFE24E2F4CE85F6B05659320E297B102EFD70207F71CA2FEB83",
+      "signature_hex": "45583502",
+      "is_ex5_signature": true,
+      "readable_header_text": [
+        "Copyright 2024 - Wim Schrynemakers"
+      ],
+      "header_scan_bytes": 4096,
+      "source_recovered": false
+    },
+    {
+      "path": "mt5-program-files/Ultimate Breakout System.ex5",
+      "name": "Ultimate Breakout System",
+      "bytes": 422364,
+      "sha256": "7F7E7C0527B93523A4DCBB71DA0AFA35D23386CBFFE68CF1F0092205C03DD4B7",
+      "signature_hex": "45583502",
+      "is_ex5_signature": true,
+      "readable_header_text": [
+        "Copyright 2026 - Profalgo LTD",
+        "https://www.forexeasolutions.com"
+      ],
+      "header_scan_bytes": 4096,
+      "source_recovered": false
+    }
+  ],
+  "archives": [
+    {
+      "location": "author-sets/UPDATED_SETS_UBS_V7_7/UBS live portfolio/LivePortfolioSets.zip",
+      "sha256": "7672A0940C67C3EB4A028AA6B028FB1945A02C0742BE5471AC7DE26969C9ACDE",
+      "file_count": 44,
+      "extensions": {
+        ".set": 44
+      },
+      "source_entries": []
+    },
+    {
+      "location": "author-sets/zips/Gold_Reaper_V5_1.zip",
+      "sha256": "DDC993EDA373F72AC49B82D98F51E3682ED6B0A64FB8288668D47FE6DFF68D81",
+      "file_count": 1,
+      "extensions": {
+        ".pdf": 1
+      },
+      "source_entries": []
+    },
+    {
+      "location": "author-sets/zips/Goldbot_One_set_files.zip",
+      "sha256": "57D8AACDE35FEC5B14ECC8065729A4332D85FFD1C0FAE817C97F8B74BB60DC91",
+      "file_count": 5,
+      "extensions": {
+        ".set": 5
+      },
+      "source_entries": []
+    },
+    {
+      "location": "author-sets/zips/UPDATED_SETS_UBS_V7_7.zip",
+      "sha256": "D77AB502E7B4BE3CB19B02524BBCF42E0AD71727C824ECD79671DEEE54CAB91B",
+      "file_count": 371,
+      "extensions": {
+        ".html": 2,
+        ".pdf": 1,
+        ".set": 367,
+        ".zip": 1
+      },
+      "source_entries": []
+    },
+    {
+      "location": "author-sets/zips/UPDATED_SETS_UBS_V7_7.zip!/UBS live portfolio/LivePortfolioSets.zip",
+      "sha256": "7672A0940C67C3EB4A028AA6B028FB1945A02C0742BE5471AC7DE26969C9ACDE",
+      "file_count": 44,
+      "extensions": {
+        ".set": 44
+      },
+      "source_entries": []
+    }
+  ],
+  "inventory": [
+    {
+      "path": "author-sets/Gold_Reaper_V5_1/Gold_Reaper_V5.1.pdf",
+      "bytes": 196324,
+      "sha256": "BC59BFF39EA7F3926043CD29C7B8D1CE02C068B469B009910AB99C7F49D1B4E1"
+    },
+    {
+      "path": "author-sets/Goldbot_One_set_files/Goldbot_HighRisk_Max50DD.set",
+      "bytes": 5165,
+      "sha256": "C649A4D1585989D566578B00E35BC1CAF2E73155246B5A3137C0E3D639E32E88"
+    },
+    {
+      "path": "author-sets/Goldbot_One_set_files/Goldbot_LowRisk_Max15DD.set",
+      "bytes": 5164,
+      "sha256": "07B43D3A17B76988FAD38B78572DE50A48C997DC15B8DE65A96FCF1AF3A482FF"
+    },
+    {
+      "path": "author-sets/Goldbot_One_set_files/Goldbot_MediumRisk_Max30DD.set",
+      "bytes": 5164,
+      "sha256": "004B36C706A805D33E2AA2196C218B470399418CAC330160804A2B45A2BA4DD4"
+    },
+    {
+      "path": "author-sets/Goldbot_One_set_files/Goldbot_PropFirm_10_5.set",
+      "bytes": 5164,
+      "sha256": "1BAE3D6932BE3C4F5B167486AC31FB94C4A8BA10985BF0F7F2FAB1F9485D3A2C"
+    },
+    {
+      "path": "author-sets/Goldbot_One_set_files/Goldbot_PropFirm_5_2.5.set",
+      "bytes": 5164,
+      "sha256": "DB99BBBD496FA6B6CD0271B8F60BF6A29E4891BADC95AAE6E5377868B5AA9B11"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Breakout_Support_Resistance/Advanced Scalper/eurusd_H1_SL14.set",
+      "bytes": 18652,
+      "sha256": "7D5CAB1E2C040013932D47F9061E762DBABD4BF4A1F3E4EF5478DFC189B2BEC3"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Breakout_Support_Resistance/Advanced Scalper/eurusd_H1_SL17.set",
+      "bytes": 18252,
+      "sha256": "EDB533F849793F172ADAA21663E84E4A8F1E6D09C44FF4E13B90D244A14418D6"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Breakout_Support_Resistance/Advanced Scalper/eurusd_H1_SL18.set",
+      "bytes": 18240,
+      "sha256": "28692F2A866ADC480CA66A5261525D22EC81C4627469409B5355AC039D2A75B3"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Breakout_Support_Resistance/Advanced Scalper/eurusd_H1_SL22.set",
+      "bytes": 18322,
+      "sha256": "28BD6371170DE73F870EAED8AEBFCCD07FFD01B05408CD88D0AA2BFABE4033E5"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Breakout_Support_Resistance/Advanced Scalper/gbpusd_H1.set",
+      "bytes": 17790,
+      "sha256": "28A21E1B1435FC566E7679ADE20DBF46DDD65CBC74962D735B3F6E49AA75832F"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Breakout_Support_Resistance/Advanced Scalper/Optimization_set.set",
+      "bytes": 13232,
+      "sha256": "772E434E465461924ECCA2F167577EA1BE6558ABF3E2A1B9F276255BF55D612F"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Breakout_Support_Resistance/Advanced Scalper/usdjpy_H1_SL22.set",
+      "bytes": 18322,
+      "sha256": "C445B73ED3EBE58D79AD14B41CDB6804F098985243D46411339B009B1184CB39"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Breakout_Support_Resistance/Advanced Scalper/usdjpy_H1_SL30.set",
+      "bytes": 18598,
+      "sha256": "4521AA0FC3B9112B5BC04109B94F67B8681DEF9F10A4E9FE6071CB34745B26F0"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Breakout_Support_Resistance/Advanced Scalper/usdjpy_H4_SL14.set",
+      "bytes": 18338,
+      "sha256": "EF3ED1113F865FBA38E5B8AE94733E9BA95DC987169EC91731CC92D8480A48AE"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Breakout_Support_Resistance/Advanced Scalper/usdjpy_H4_SL17.set",
+      "bytes": 18804,
+      "sha256": "DC064110FE19AC4B82D9752C5CA959F7693EE4AF20C4699E4CA8C31F6ADA06DB"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Breakout_Support_Resistance/Bitcoin Reaper/Aggressive SL/BTC_Reaper_Aggr_1.set",
+      "bytes": 17584,
+      "sha256": "8D6C06078F759A0936FC516C018DFDDDB6F9609AB9868686A6A86762B0963EA4"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Breakout_Support_Resistance/Bitcoin Reaper/Aggressive SL/BTC_Reaper_Aggr_2.set",
+      "bytes": 17540,
+      "sha256": "B02C7D4C7BB3C3149D5A4A54D6B21F1B83C4391FFB8E43F69EB5BA8DE562147E"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Breakout_Support_Resistance/Bitcoin Reaper/Aggressive SL/BTC_Reaper_Aggr_3.set",
+      "bytes": 17576,
+      "sha256": "EAB6DC7461AAFDF33CBEB13646767F3029BEA20283B0927D2EAFA9837BABEA53"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Breakout_Support_Resistance/Bitcoin Reaper/Aggressive SL/BTC_Reaper_Aggr_4.set",
+      "bytes": 17568,
+      "sha256": "26ABD350AA3CE2BD80F64B4DA14ADAEF4D7DB306DC51D0B374DD2A098567BDE2"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Breakout_Support_Resistance/Bitcoin Reaper/Aggressive SL/BTC_Reaper_Aggr_5.set",
+      "bytes": 17546,
+      "sha256": "FAD6F48270F9059289645B1E8B8C3AB3240784CD7C3F2DFE1E0BC69B5514385E"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Breakout_Support_Resistance/Bitcoin Reaper/Aggressive SL/BTC_Reaper_Aggr_6.set",
+      "bytes": 17610,
+      "sha256": "6F008A126E6DEC8F2692AF07C4B31D14380E83FCAE704D9A4DDEC04FD4B41899"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Breakout_Support_Resistance/Bitcoin Reaper/Aggressive SL/BTC_Reaper_Aggr_7.set",
+      "bytes": 17582,
+      "sha256": "EC3AA2A07B33F6296B93135E9AA719FE190DBDB0C7540B6DF0DD158DB84308F4"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Breakout_Support_Resistance/Bitcoin Reaper/Aggressive SL/BTC_Reaper_Aggr_8.set",
+      "bytes": 17558,
+      "sha256": "A3D12748E0EA475089D8EC5E27B5EC3ACC91F574A7943FCE665FD6EFC9FDDF01"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Breakout_Support_Resistance/Bitcoin Reaper/Aggressive SL/BTC_Reaper_Aggr_9.set",
+      "bytes": 17578,
+      "sha256": "9E9E3988F1CEBA141A2571DC4B581007D302D3DAED54C8126F2AB0578FFBE20C"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Breakout_Support_Resistance/Bitcoin Reaper/BitcoinReaper1.set",
+      "bytes": 17540,
+      "sha256": "FB6BF8018EFC0D9228022808248E01AFD5F215E72C5E1F58107C4B35CBDCDD81"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Breakout_Support_Resistance/Bitcoin Reaper/BitcoinReaper10.set",
+      "bytes": 18090,
+      "sha256": "F7479F363D1C59C9062366310C72A1A3985A60C946D32C54B9A430A020104439"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Breakout_Support_Resistance/Bitcoin Reaper/BitcoinReaper2.set",
+      "bytes": 17500,
+      "sha256": "E9991320926D23C4B37C7B797CC81305F8AA2007CF11B70D6955A1B39568B421"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Breakout_Support_Resistance/Bitcoin Reaper/BitcoinReaper3.set",
+      "bytes": 17536,
+      "sha256": "F66177CD9AEEA1C07D5042FF83126296AE152D5352B652EB3EBBCB87423B1FE1"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Breakout_Support_Resistance/Bitcoin Reaper/BitcoinReaper4.set",
+      "bytes": 17522,
+      "sha256": "0E449CD6D6C6BFB5485373FF77C10A49EEF292D07FE2DB9E99BC15A6CD1A02B0"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Breakout_Support_Resistance/Bitcoin Reaper/BitcoinReaper5.set",
+      "bytes": 17504,
+      "sha256": "B3DC9A3C70E7F4F18B9836FBE14C77C93574D020827260E706E78A74C785EBCE"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Breakout_Support_Resistance/Bitcoin Reaper/BitcoinReaper6.set",
+      "bytes": 17540,
+      "sha256": "B654606A1A6BA32F31169338E2519FB1CDED6C0D41695832737694486D96F322"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Breakout_Support_Resistance/Bitcoin Reaper/BitcoinReaper7.set",
+      "bytes": 17534,
+      "sha256": "027C4BCE335844CB03DED020247719773F585ACB244DF3253C7D3685F9E8174A"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Breakout_Support_Resistance/Bitcoin Reaper/BitcoinReaper8.set",
+      "bytes": 17508,
+      "sha256": "C0288438614407D3B63B169F54B74D364169CCB73839944F617AFEE13B029BFC"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Breakout_Support_Resistance/Bitcoin Reaper/BitcoinReaper9.set",
+      "bytes": 17536,
+      "sha256": "CE14070A386508CA10990D2A1A870B90E46CDBE8F1FF08400773A3D84B38176B"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Breakout_Support_Resistance/bitcoin Scalp Pro(H1)/BitcoinScalpPro.set",
+      "bytes": 18086,
+      "sha256": "2A265A0C7E14B064143F1271C07041D1A23231F5EDC7F79EB95249A95D23CC6E"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Breakout_Support_Resistance/bitcoin Scalp Pro(H1)/Optimization.set",
+      "bytes": 15334,
+      "sha256": "399FF0167183B6BD1C2E60C9AFB1A5A34B0A84863C353473D82A115845C60A18"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Breakout_Support_Resistance/Daytrade Pro/DaytradePro_AUDJPY.set",
+      "bytes": 17974,
+      "sha256": "47D12BE831556370B2D36B4CD27ECAE64510E4A4222B3B79DB162B67031A9EBB"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Breakout_Support_Resistance/Daytrade Pro/DaytradePro_AUDUSD.set",
+      "bytes": 17950,
+      "sha256": "58237776ED587E47189EB7A17A9ABABBD4490242F00DE7EAC6B1554519613948"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Breakout_Support_Resistance/Daytrade Pro/DaytradePro_CHFJPY.set",
+      "bytes": 17970,
+      "sha256": "33F308F4C17549FA6DD8B3A825EBC43C9DD69B67A6BD1B0046DEC0CC8E55D61C"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Breakout_Support_Resistance/Daytrade Pro/DaytradePro_EURAUD.set",
+      "bytes": 17880,
+      "sha256": "425F5A9C3A2B5C2A7625D1685AA3D0431AAC39E0C2B591C1DAC824E9A50687D5"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Breakout_Support_Resistance/Daytrade Pro/DaytradePro_EURJPY.set",
+      "bytes": 17972,
+      "sha256": "6F7D4D628583F8D9D125FD73DD880E6F0406426396EC713535FE026CAE81761E"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Breakout_Support_Resistance/Daytrade Pro/DaytradePro_EURNZD.set",
+      "bytes": 17958,
+      "sha256": "81F1311A46FEC88534748EE4B3F323FD85E891D2C4E71F8695B67DA0136929E3"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Breakout_Support_Resistance/Daytrade Pro/DaytradePro_EURUSD.set",
+      "bytes": 17976,
+      "sha256": "44788679B70D76ABFD0FFC169F50D43E9B53E835C31E3B8E8AA63A5966A151C4"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Breakout_Support_Resistance/Daytrade Pro/DaytradePro_GBPJPY.set",
+      "bytes": 17948,
+      "sha256": "6EACD528A54B9CBFBCDBBBF5BBFB69748F60FF814FC76E60B8D514DEF2724C0D"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Breakout_Support_Resistance/Daytrade Pro/DaytradePro_GBPUSD.set",
+      "bytes": 17942,
+      "sha256": "26FCBDF50B2C7F3AB452A8B392618F944A6007EC7F4433DE5CD09E768B063F26"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Breakout_Support_Resistance/Daytrade Pro/DaytradePro_NZDUSD.set",
+      "bytes": 17880,
+      "sha256": "1FF4463D9FEB8D5FEC12FC2235903ABDDF0C7BE2F53A5BBD7732CCC305804F80"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Breakout_Support_Resistance/Daytrade Pro/DaytradePro_USDCAD.set",
+      "bytes": 17916,
+      "sha256": "1802019E2A8070D8C21174169C52DC24C67DF181C7DDB76EA4F671B1F4D9EBC2"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Breakout_Support_Resistance/Daytrade Pro/DaytradePro_USDJPY.set",
+      "bytes": 17916,
+      "sha256": "7B4C70FE1E0B96C979BE19B45D2FB25DA18CD70A85BC66575EDE55EA39EA1D82"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Breakout_Support_Resistance/Daytrade Pro/DaytradePro_XAUUSD.set",
+      "bytes": 17898,
+      "sha256": "12C9359DECB5FA78B4FC051E0098A1C318F270B4695998CF74F04DDA85634154"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Breakout_Support_Resistance/Daytrade Pro/optimization.set",
+      "bytes": 12376,
+      "sha256": "2CC75107D9BE8A39490A846802363D09911F98A78184BE83A0D8697AF2D0CA67"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Breakout_Support_Resistance/GOLD/Gold Phantom/Gold_Phantom_strat1.set",
+      "bytes": 18598,
+      "sha256": "404971140010CFE5302B0B8694589DF0EC0121E76ED0CE28BF104DC5DD199E2B"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Breakout_Support_Resistance/GOLD/Gold Phantom/Gold_Phantom_strat2.set",
+      "bytes": 18560,
+      "sha256": "0C56B42FC273533259094947D0247B4162D5EA3E8545CB2E2772BA333A809E58"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Breakout_Support_Resistance/GOLD/Gold Phantom/Gold_Phantom_strat3.set",
+      "bytes": 18562,
+      "sha256": "BC04BF422DDCC1C4B4DCE7AAE1BCBC47A947C9245652C007B6CAE3E732FE0B7C"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Breakout_Support_Resistance/GOLD/Gold Phantom/Gold_Phantom_strat4.set",
+      "bytes": 18024,
+      "sha256": "8D022BDF04ED8FCF8A5DEDBCD22906DE6EE439ED677C15F6E20161CD2D109CEA"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Breakout_Support_Resistance/GOLD/Gold Phantom/Gold_Phantom_strat5.set",
+      "bytes": 17916,
+      "sha256": "019E4F1CBC5ADDC41527D0A83082778BF5FEEA743F9B592A4E07D250C302493C"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Breakout_Support_Resistance/GOLD/Gold Phantom/Gold_Phantom_strat6.set",
+      "bytes": 19902,
+      "sha256": "9DC99C81157AB51635B81B902CBBE8B613ED80F2EB0D891A08D7F351E99E0ED6"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Breakout_Support_Resistance/GOLD/Gold Phantom/Gold_Phantom_strat7.set",
+      "bytes": 19910,
+      "sha256": "4F0F13A6617065DAF7228677AC419549F6C44AE0FB1611DA998439DA4D1D56A2"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Breakout_Support_Resistance/GOLD/Gold Phantom/Gold_Phantom_strat8.set",
+      "bytes": 19896,
+      "sha256": "68592F77963D1DE3EE9B652B76005ED4A7587907DA936F613D3908DE3C2179A3"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Breakout_Support_Resistance/GOLD/Gold Phantom/Gold_Phantom_strat9.set",
+      "bytes": 19910,
+      "sha256": "1DA254983EC1E823C6EBD7344C361C260A006D429350343BB5041B0FA6C6D8EF"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Breakout_Support_Resistance/GOLD/Gold Reaper/optimization.set",
+      "bytes": 12428,
+      "sha256": "37022F9EFCD9AEA51FC3DB733B802EA94FF6291D8E3A4DB1E1FB5F9C0181D658"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Breakout_Support_Resistance/GOLD/Gold Reaper/strategy1_Daily.set",
+      "bytes": 18506,
+      "sha256": "56566E4587E2A2F74ABBC4A0215DCEAC311FC4B5E2BB2C76789ACA8F7A01E67F"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Breakout_Support_Resistance/GOLD/Gold Reaper/strategy2_Daily.set",
+      "bytes": 17996,
+      "sha256": "12C03ECEB4D5D4186C113A028FD1540802860D8F7C6B9850A456C11F9B8DA0A3"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Breakout_Support_Resistance/GOLD/Gold Reaper/strategy3_Daily.set",
+      "bytes": 17986,
+      "sha256": "73886285125D498CFFCB52ADC4ABCD5F60EE207476A0231FB2B294266BB52ACC"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Breakout_Support_Resistance/GOLD/Gold Reaper/strategy4_H4.set",
+      "bytes": 17998,
+      "sha256": "2E5A1A1DBA5731A4BFB64106EC041FD1280D1EEF0CCABF9B82EA984BBD021816"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Breakout_Support_Resistance/GOLD/Gold Reaper/strategy5_H1.set",
+      "bytes": 17856,
+      "sha256": "16AE47C9A1F1617F1F233203213ECD52BB9A559E8A3EE9AB634B1A2D45D6CED9"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Breakout_Support_Resistance/GOLD/Gold Reaper/strategy6_H1.set",
+      "bytes": 17970,
+      "sha256": "88D0F25A63AB05BE64C8A51EE58419B43DBC9B41A7A4EE32B88220F3FEA01E47"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Breakout_Support_Resistance/GOLD/Gold Reaper/strategy7_H1.set",
+      "bytes": 18916,
+      "sha256": "E73CA06BD2E7C264001D8F5551426D8A44B20A986A0CB3E834B57BA0AC633E09"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Breakout_Support_Resistance/GOLD/Gold Reaper/strategy8_H1.set",
+      "bytes": 17998,
+      "sha256": "60FD9056CDAABC397733F5210783ED7A08124FC194A2B393A3AD937049212207"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Breakout_Support_Resistance/GOLD/Gold Reaper/strategy9_H1.set",
+      "bytes": 17864,
+      "sha256": "4DA69EA08C265D6409A935C9447D37BC0D89B356DCA999842CB7F6EF9F058E7A"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Breakout_Support_Resistance/GOLD/GOLD_Scalp/ScalpH1_A.set",
+      "bytes": 18628,
+      "sha256": "C0AF6E87B1FA49689970B4F3915F9A8BF7380197F5CFE48FDF542492CC5D5CEF"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Breakout_Support_Resistance/GOLD/GOLD_Scalp/ScalpH1_B.set",
+      "bytes": 18634,
+      "sha256": "E50BD333FEC7F01AC6857CE6402F03F2B3029A894CD13A0676A4855112DE24CD"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Breakout_Support_Resistance/GOLD/GOLD_Scalp/ScalpH1_C.set",
+      "bytes": 18440,
+      "sha256": "961819C15AE076A77C43E066DA2EBE269416CE73032AA7F63BB52396211BA804"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Breakout_Support_Resistance/GOLD/GOLD_Scalp/scalph1_C_LiveSettings.set",
+      "bytes": 13146,
+      "sha256": "3D13B8B816CD451EBCE5DEA5D32335E1CC71BF7A4B047EBAB25660250E0F17EF"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Breakout_Support_Resistance/GOLD/GOLD_Various_Old/old optimizations Daily/dailyF.set",
+      "bytes": 17444,
+      "sha256": "F15850328039F1AEFEC5429D98007948BB0ED77E8FAD0057F50DA7BC805936DA"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Breakout_Support_Resistance/GOLD/GOLD_Various_Old/old optimizations Daily/dailyG.set",
+      "bytes": 17444,
+      "sha256": "E94F856B4795C602ABBCF91967AC9561E47BF15FF2E613FB924A4F7EFAD9E280"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Breakout_Support_Resistance/GOLD/GOLD_Various_Old/old optimizations Daily/dailyJ.set",
+      "bytes": 17546,
+      "sha256": "5038B84707FC0A31C7F5AE0D5ECC7D255FD458D0CC2DDF9995B2B4E6F2ADBC9C"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Breakout_Support_Resistance/GOLD/GOLD_Various_Old/old optimizations Daily/dailyL.set",
+      "bytes": 17546,
+      "sha256": "AC8A9F7DCD251B9BCAD204A4CCD16BEF43EA236D10D89F1908FF3D0EFFC003C7"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Breakout_Support_Resistance/GOLD/GOLD_Various_Old/old optimizations Daily/MT5_longterm_A.set",
+      "bytes": 17472,
+      "sha256": "3F67D7C9D3EBF5B6B69F8C3EF451228C1F2DE2B187A200E0FAB6DE1D46CE2412"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Breakout_Support_Resistance/GOLD/GOLD_Various_Old/old optimizations Daily/MT5_longterm_C.set",
+      "bytes": 17470,
+      "sha256": "727F07289701BCF62CA271FAD5E1CC99B30AB53201136C70D1C159A03D1AAA38"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Breakout_Support_Resistance/GOLD/GOLD_Various_Old/old optimizations H1/MT4_F.set",
+      "bytes": 17862,
+      "sha256": "9FC548DC07EB03FE76BB08428B287601EBDA9E8969AE7E339CD7D00C39B33D04"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Breakout_Support_Resistance/GOLD/GOLD_Various_Old/old optimizations H1/MT4A.set",
+      "bytes": 17864,
+      "sha256": "4BDBCBFB388DE2681A62A35ABCDFDB3B9BCE9D1637303C203F04274352A65CFD"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Breakout_Support_Resistance/GOLD/GOLD_Various_Old/old optimizations H1/MT5_A.set",
+      "bytes": 17416,
+      "sha256": "03B3B069BB9DB322A4D978CC32DBBF076E4EC4CF55ABCDCB03BC06011E3E47D1"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Breakout_Support_Resistance/GOLD/GOLD_Various_Old/old optimizations H1/MT5_B.set",
+      "bytes": 17428,
+      "sha256": "2E718D37B9EB38DFC4431EFA1E2F4C0A51ECE6B68B36596DF6F22D794109BF31"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Breakout_Support_Resistance/GOLD/GOLD_Various_Old/old optimizations H1/MT5_C.set",
+      "bytes": 17422,
+      "sha256": "FFA30684DDA5ED1C322C9A4079610C24D2D20B54953EDE964BFACFEBF2751B44"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Breakout_Support_Resistance/GOLD/GOLD_Various_Old/old optimizations H1/MT5_D.set",
+      "bytes": 17444,
+      "sha256": "F120C6704613FBB5377132CD476844AD2B10FE5D947AA7E209619F91F9633A60"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Breakout_Support_Resistance/GOLD/GOLD_Various_Old/old optimizations H1/MT5_E.set",
+      "bytes": 17446,
+      "sha256": "E4C194F1ECBAAE8ED36D2AA803D90CA3352C719FA3DCB02CD2C3E8E2BA98F295"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Breakout_Support_Resistance/GOLD/GOLD_Various_Old/old optimizations H1/MT5_F.set",
+      "bytes": 17442,
+      "sha256": "928C044D080D11B9ABD5B5446D2804D67F22E0626AF18979D244BEE21081548E"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Breakout_Support_Resistance/GOLD/GOLD_Various_Old/old optimizations H1/MT5_longterm_D.set",
+      "bytes": 17476,
+      "sha256": "250C8113B638253BF578A2E50911945832BFC978D98731400D1E81CE0863313C"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Breakout_Support_Resistance/GOLD/GOLD_Various_Old/old optimizations H1/MT5_longterm_E.set",
+      "bytes": 17474,
+      "sha256": "41D4D825A4E9FF60BC12D8459D48A2726EB184749B1571B9A2CD39BC12498F2F"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Breakout_Support_Resistance/GOLD/GOLD_Various_Old/old optimizations H1/MT5_longterm_F.set",
+      "bytes": 17468,
+      "sha256": "6C6D9BE509B99F11624F41EF0CAFD4052B89B2138351A8A27990387F30C5F3A9"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Breakout_Support_Resistance/GOLD/GOLD_Various_Old/old optimizations H1/MT5_longterm_H.set",
+      "bytes": 17478,
+      "sha256": "E960837162D53D9CDCC4F45452136C5EFDC8ABC2338DCEE0023965FCF102A1D9"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Breakout_Support_Resistance/GOLD/GOLD_Various_Old/old optimizations H1/MT5_longterm_I.set",
+      "bytes": 17588,
+      "sha256": "CEE259CBDDC5DCED36CA2DE87A80DB9F436770669DEB5274D20A2C5CE2F39880"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Breakout_Support_Resistance/GOLD/GOLD_Various_Old/old optimizations H1/MT5_longterm_J.set",
+      "bytes": 17588,
+      "sha256": "44039BB0024D62215D7A131F893CCAAF83FD99FF5F8D444770F41913156A2B5C"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Breakout_Support_Resistance/GOLD/GOLD_Various_Old/old optimizations H1/MT5_longterm_L.set",
+      "bytes": 17594,
+      "sha256": "E13A7234E4131A091DF4FD39DA18B81EE456B1724FFFBE39528E1C3E553F7831"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Breakout_Support_Resistance/GOLD/GOLD_Various_Old/old optimizations H1/MT5_longterm_M.set",
+      "bytes": 17564,
+      "sha256": "C70A2AC2E0367AFB90A9C3B60266D8008B0C9CD3C3BE09242CE3A3881329A8FD"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Breakout_Support_Resistance/GOLD/GOLD_Various_Old/old optimizations H1/MT5_longterm_O.set",
+      "bytes": 17564,
+      "sha256": "9892183317FF6B2582BBF703A24D5D74D26DC528E6D99CBF3BB91C2741F1B905"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Breakout_Support_Resistance/GOLD/GOLD_Various_Old/old optimizations H1/MT5_longterm_P.set",
+      "bytes": 17470,
+      "sha256": "B9483CA56E7AA303E88CB483FA1AB836DB917AF6168A4226D1B704C834D1A5F1"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Breakout_Support_Resistance/GOLD/GOLD_Various_Old/old optimizations H1/MT5_longterm_Q.set",
+      "bytes": 17610,
+      "sha256": "037CB9676609E93334ECCD65EAEC9B66FB2D556E74B10B75A951A16E182A2615"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Breakout_Support_Resistance/GOLD/GOLD_Various_Old/old optimizations H1/MT5_longterm_S.set",
+      "bytes": 17610,
+      "sha256": "3944AC9905009E960E6AA50E5A05D5D5E819184CE401300722B485CC12C3FD70"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Breakout_Support_Resistance/GOLD/GOLD_Various_Old/old optimizations H1/MT5_longterm_T.set",
+      "bytes": 17612,
+      "sha256": "702CB5DE1D7F6D6EE59ECFC57774DE0A48048EFEAF28DA32A9B113F7063795FF"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Breakout_Support_Resistance/GOLD/GOLD_Various_Old/old optimizations H1/MT5_longterm_U.set",
+      "bytes": 17598,
+      "sha256": "01E4E6907AA2924BF3800CF6B038677DFCEE9B78A4B0A32DB5430BA39565A4A1"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Breakout_Support_Resistance/GOLD/GOLD_Various_Old/old optimizations XAUUSD H4/A.set",
+      "bytes": 17442,
+      "sha256": "499316439846A36B526CFA14AFB2CFA6BE8E2373EEA9CC4929573EB085F9A79A"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Breakout_Support_Resistance/GOLD/GOLD_Various_Old/old optimizations XAUUSD H4/B.set",
+      "bytes": 17540,
+      "sha256": "61BE0CDF11211954C444BD564B3AB9E6746E32CA5A78E34CFEBEFE05E58B014B"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Breakout_Support_Resistance/GOLD/GOLD_Various_Old/old optimizations XAUUSD H4/C.set",
+      "bytes": 17538,
+      "sha256": "9E89537623D5BD3923E9342201572E96155E634BCA581A54F4A7A8DD851F1193"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Breakout_Support_Resistance/GOLD/GOLD_Various_Old/old optimizations XAUUSD H4/D.set",
+      "bytes": 17540,
+      "sha256": "2F420C0935CC663CD1C83E4B6B90F2496EB2E308D229283662A221B9A2FFCAD4"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Breakout_Support_Resistance/GOLD/GOLD_Various_Old/old optimizations XAUUSD H4/E.set",
+      "bytes": 17542,
+      "sha256": "68F5E26781FF16EC8E446EBE44DD834F41BA06753D68B76A794BA6CB1634BDA6"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Breakout_Support_Resistance/GOLD/GOLD_Various_Old/old optimizations XAUUSD H4/optimization.set",
+      "bytes": 12414,
+      "sha256": "ED1ACD9A52E5C0290DB0756EC915548469807B8C490E8DC308566BB45A4404F5"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Breakout_Support_Resistance/GOLD/GOLD_Various_Old/Variable paramaters (daily)/a.set",
+      "bytes": 17570,
+      "sha256": "C70DDC4A797227E430D5B9FB46FDFE7BB40D22207238537EFD1A275CA7F9A0DB"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Breakout_Support_Resistance/GOLD/GOLD_Various_Old/Variable paramaters (daily)/b.set",
+      "bytes": 17584,
+      "sha256": "23861E5F4D9DC1B226C256B50CA93BD56E60C03457CA352D7EE3CEE95393E91D"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Breakout_Support_Resistance/GOLD/GOLD_Various_Old/Variable paramaters (daily)/c.set",
+      "bytes": 17574,
+      "sha256": "D177C8AFC98BB21FF0FE7D76A2512FEDDCDFB67555DC8418403797457F83A7E3"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Breakout_Support_Resistance/GOLD/GOLD_Various_Old/Variable paramaters (daily)/d.set",
+      "bytes": 17586,
+      "sha256": "A6F674CD4DD5DE0ACF131F0F2E07A1CD75BAF9C9B9DE2B03ACB281611E73B6FF"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Breakout_Support_Resistance/GOLD/GOLD_Various_Old/Variable paramaters (daily)/e.set",
+      "bytes": 17586,
+      "sha256": "659042A9F8D76F42DAD9E02BC146180F6EF8621CF5737E93E3865ACD514930C8"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Breakout_Support_Resistance/GOLD/GOLD_Various_Old/Variable paramaters (daily)/f.set",
+      "bytes": 17588,
+      "sha256": "04C6D5448DC9D994F1C754CEC06496F20475B1204F6E5CA1BA29FF03C624ED5B"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Breakout_Support_Resistance/GOLD/GOLD_Various_Old/Variable paramaters (daily)/g.set",
+      "bytes": 17584,
+      "sha256": "2E55C1309F692E13FC954BB85DC7727913EB824C8444D5BA60659338458EAEDB"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Breakout_Support_Resistance/GOLD/GOLD_Various_Old/Variable paramaters (daily)/h.set",
+      "bytes": 17580,
+      "sha256": "0291DF86FE82042F6F25CF3781D037C334356D28613BCC6FE1C0F4A85A046099"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Breakout_Support_Resistance/GOLD/GOLD_Various_Old/Variable paramaters (daily)/optimization.set",
+      "bytes": 12448,
+      "sha256": "A0EA4D0DB59675A6F14023D8AEDE77D06462142990183E62938E48A054BF3740"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Breakout_Support_Resistance/GOLD/Goldbot One/dailyA.set",
+      "bytes": 17864,
+      "sha256": "BB5B4767587A18E19E22B1201517773DFD0F54F8E1E5F76127A4E2945250F50D"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Breakout_Support_Resistance/GOLD/Goldbot One/dailyB.set",
+      "bytes": 17868,
+      "sha256": "BEAB05126EC95BAA8543D6BB5B73CF6ECF3699F3B35CFE2EC84FFFD280FD8FB2"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Breakout_Support_Resistance/GOLD/Goldbot One/dailyC.set",
+      "bytes": 17862,
+      "sha256": "2047CC4580107FB3F221ACF24E2CC7362B7A3361E350A826DE17368C569852AF"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Breakout_Support_Resistance/GOLD/Goldbot One/dailyD.set",
+      "bytes": 17874,
+      "sha256": "928CE02C31E75BF0757AA7E1AECE26D183D823EA67F8247DEA757CFDBDA53A99"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Breakout_Support_Resistance/GOLD/Goldbot One/dailyE.set",
+      "bytes": 17860,
+      "sha256": "EF2B86CD8EA9304C0BDDA7E875FA5E6C4371B31386562FB56B41C4DE7C868942"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Breakout_Support_Resistance/GOLD/Goldbot One/dailyH.set",
+      "bytes": 17976,
+      "sha256": "2B4DB4A5F0F73E7EC565A67E46DBD0359CAA5617B92CC25342A319A9CD7066FF"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Breakout_Support_Resistance/GOLD/Goldbot One/dailyI.set",
+      "bytes": 17970,
+      "sha256": "618BB405F36682FE755EA879A0543C8FBFE5968EC518EA3E717BE8CC5C45BDE7"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Breakout_Support_Resistance/GOLD/Goldbot One/dailyK.set",
+      "bytes": 17970,
+      "sha256": "BF9F8F6FFB8D2BD27B4CC85CF8FFF73864BC6966D528C51709D295C777E5F45F"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Breakout_Support_Resistance/GOLD/Goldbot One/Optimization.set",
+      "bytes": 18248,
+      "sha256": "F665A0A42DA67732D451C5218F52D7E71DE68ABA8E96DE620787B52C6C04A9BE"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Breakout_Support_Resistance/GOLD/Goldtrade Pro/GOLDTRADEPRO_a.set",
+      "bytes": 17762,
+      "sha256": "7A714D8190A13373743C4B957CE7D747AC1CDB64AB48A4A9849E0A2EAE947487"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Breakout_Support_Resistance/GOLD/Goldtrade Pro/GOLDTRADEPRO_c.set",
+      "bytes": 17870,
+      "sha256": "28E2C76D3CE580FB8151E293CE0DB603FC6FB6DB62E99B379F2F53351D484CA8"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Breakout_Support_Resistance/GOLD/Goldtrade Pro/GOLDTRADEPRO_d.set",
+      "bytes": 17870,
+      "sha256": "797807CCC93956FFC1267262C4CB3E0B6BA12E32618DF18070A31CE33CAFAE44"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Breakout_Support_Resistance/GOLD/Goldtrade Pro/GOLDTRADEPRO_E.set",
+      "bytes": 17766,
+      "sha256": "B56985DAABF0A9FB0721C465CE5A4BB538B109229FAC11EE37F66A8C4E62A703"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Breakout_Support_Resistance/GOLD/Goldtrade Pro/GOLDTRADEPRO_F.set",
+      "bytes": 17766,
+      "sha256": "A4AE5A0B97A1BC1135FFFD1A9A4690D32C54964666DECF9A55A20D7D177203D6"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Breakout_Support_Resistance/GOLD/Goldtrade Pro/GOLDTRADEPRO_G.set",
+      "bytes": 17774,
+      "sha256": "1A6E604AAB5B90194CF7CF97C5EB0E523CBF1B24E75CCE2DDA8BCD2E7ED4AB17"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Breakout_Support_Resistance/GOLD/Goldtrade Pro/GOLDTRADEPRO_H.set",
+      "bytes": 17768,
+      "sha256": "770BF0EFD8AB8510947AC21EC4594149B1B573B1BEA371C382DB4EE5B8D8273A"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Breakout_Support_Resistance/GOLD/Goldtrade Pro/GOLDTRADEPROH4_b.set",
+      "bytes": 17882,
+      "sha256": "29C4B2FBEAD80F7C1A39DB68C43626FB642871786EE240ACFDFCFA78D727344C"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Breakout_Support_Resistance/GOLD/Goldtrade Pro/optimization_gold.set",
+      "bytes": 12410,
+      "sha256": "D7319F35D64151BBA27C2C003AAD3547A5C8EF7990458338B989AF572633B463"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Breakout_Support_Resistance/Indicement/US30/optimization.set",
+      "bytes": 12486,
+      "sha256": "75CD33FFFC0F76726B0436A7C4C5A7A2DC1E017406AD23B6F387A23828018826"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Breakout_Support_Resistance/Indicement/US30/US30_1.set",
+      "bytes": 17396,
+      "sha256": "6C5328389175E786203347B2783A8B06D0DEAFC197D140E86969F208473EEE6B"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Breakout_Support_Resistance/Indicement/US30/US30_2.set",
+      "bytes": 17384,
+      "sha256": "18AE4CA8CC409216784B70CD5D7B21321B76756CAC61EEEB9844C33A53BA4CA0"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Breakout_Support_Resistance/Indicement/US30/US30_3.set",
+      "bytes": 17382,
+      "sha256": "9D39329C47C4681654A670C29701B493AD5AF2774403FF5E75373208EAAA50D2"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Breakout_Support_Resistance/Indicement/US30/US30_4.set",
+      "bytes": 17380,
+      "sha256": "F6A2C06FF83D2BFB8C7D205ED36886C15B685779569FBD022E731C772C83DE9C"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Breakout_Support_Resistance/Indicement/US30/US30_Daily/IND_US30_1.set",
+      "bytes": 18048,
+      "sha256": "5EC54128D326F9F8B79F9F47CF2B2AFE390270375EAE87D1906E844535F32D75"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Breakout_Support_Resistance/Indicement/US30/US30_Daily/IND_US30_2.set",
+      "bytes": 18036,
+      "sha256": "BF725D608974F94F5744D87E3730639BB98B7EDAA37586F8D372D1A050E8F6AF"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Breakout_Support_Resistance/Indicement/US30/US30_Daily/IND_US30_3.set",
+      "bytes": 18034,
+      "sha256": "309C9EE989269DFFC2045C5B28103AC33AF989A50226910F4E3901F1CD7AA788"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Breakout_Support_Resistance/Indicement/US30/US30_Daily/IND_US30_4.set",
+      "bytes": 18032,
+      "sha256": "C4B3220AEB9EC19ED7537009857A10471DE57ADC4C8B166EB08476C1C9B1F0E9"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Breakout_Support_Resistance/Indicement/US500/optimization.set",
+      "bytes": 12404,
+      "sha256": "16CA1166871B3DCE457C83C7441956AF1CA8DDA7BD5A118E5AB566338C26CB28"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Breakout_Support_Resistance/Indicement/US500/US500a.set",
+      "bytes": 17814,
+      "sha256": "43279194BC1FCF483DA92800A9B41D99C0BC41AA48F34327F7A25F1891B64562"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Breakout_Support_Resistance/Indicement/US500/US500b.set",
+      "bytes": 17320,
+      "sha256": "057CF80329103356FB1BD9A7B266182BB6EF4888C47DA8A806CF2ECE645A3B04"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Breakout_Support_Resistance/Indicement/US500/US500c.set",
+      "bytes": 17332,
+      "sha256": "6270E9760E2339BFBC5AFF878F5D82DAE9EAD940B46AF5C65609D8AD6500888C"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Breakout_Support_Resistance/Indicement/US500/US500d.set",
+      "bytes": 17932,
+      "sha256": "846B8C622B9839D13E004A035199DEA0480C8A1DB9205BEBA271481D6784AE3A"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Breakout_Support_Resistance/Indicement/US500/US500e.set",
+      "bytes": 17284,
+      "sha256": "A5DEA43912F8A665965F37A67E4D581ED4DAFA1976C8C6B05267C9DAF01F4A6E"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Breakout_Support_Resistance/Indicement/US500/US500f.set",
+      "bytes": 17274,
+      "sha256": "09DA528D70EE118256DEA7D3B6A053A7E4402D40B9703D5976E8BD04C4678502"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Breakout_Support_Resistance/Indicement/USTEC(H1)/optimization.set",
+      "bytes": 12488,
+      "sha256": "CE3BC4ECFFD5C156C542E41431AE2A3059B11D8B1AA02460FF449E9F0F181E40"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Breakout_Support_Resistance/Indicement/USTEC(H1)/US100_1.set",
+      "bytes": 17708,
+      "sha256": "C186BA80E775758F131BC1D4C8EECB8A3F09FE5DAD357B4EACB9DF147DDEAB90"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Breakout_Support_Resistance/Indicement/USTEC(H1)/US100_2.set",
+      "bytes": 17468,
+      "sha256": "0E363B6A9A5BD23020FAEEA4885FEFD3620DB2CCB0406DCB0781D69A7FC2778B"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Breakout_Support_Resistance/Indicement/USTEC(H1)/US100_3.set",
+      "bytes": 17720,
+      "sha256": "C38A033B72FD45335071260AF9571AB8CE2ADB7391E0BA77D0A7584E86F0C308"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Breakout_Support_Resistance/Indicement/USTEC(H1)/US100_4.set",
+      "bytes": 17718,
+      "sha256": "008EA7468CC9AAF670D78B1443D84A3B27D345A6CD5F7C5073242C5B3C9517F3"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Breakout_Support_Resistance/ORB Master/DAX_M15_a.set",
+      "bytes": 17660,
+      "sha256": "3AB53D21DD501FD0BB0452338A06E8774811266BE1029320470CC8F2AEA5BDE5"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Breakout_Support_Resistance/ORB Master/DAX_M15_c.set",
+      "bytes": 17650,
+      "sha256": "0F8CC8DB1919799A5F729A2AE216E7954CB7CC8E6479315C2542F0653197827F"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Breakout_Support_Resistance/ORB Master/DAX_M15_f.set",
+      "bytes": 17630,
+      "sha256": "C75CE815464EA39255F9CCA811B26F3FCD3B0E5F71B40CFB74A519C7A6EE16AC"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Breakout_Support_Resistance/ORB Master/US30_M15_c.set",
+      "bytes": 17624,
+      "sha256": "C69097B3D31F4991670FEFFA176C8530B6A84FA8240F39B0DFF292DE007AC77C"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Breakout_Support_Resistance/ORB Master/US30_M15_f.set",
+      "bytes": 17620,
+      "sha256": "3BC8692A77AD4C8B420030FC2E47EB0C2EEF3771BCF78DB50A507486394400F5"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Breakout_Support_Resistance/ORB Master/US30_M15_h.set",
+      "bytes": 17584,
+      "sha256": "A8B6A2B83B27FA77171D48718CD41FDD05612D65D2E069FD78F510334300F0CC"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Breakout_Support_Resistance/ORB Master/US500_M15_a.set",
+      "bytes": 17596,
+      "sha256": "7E520EEE95FF84DD8AEF0D3FD2405D1DCA05AFFBF023FFA74A0AA7A6A8693D41"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Breakout_Support_Resistance/ORB Master/US500_M15_c.set",
+      "bytes": 17618,
+      "sha256": "D0A0A695CCFC1CF169709780F1268F62DA04AFE4D234D4B38E0928407854FC83"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Breakout_Support_Resistance/ORB Master/US500_M15_d.set",
+      "bytes": 17594,
+      "sha256": "2F64124F39DB358FC8A5F934A938A11737FDA288005866B9FF29A6EFFAEA8E48"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Breakout_Support_Resistance/ORB Master/USTEC_M15_a.set",
+      "bytes": 17628,
+      "sha256": "5914390606A6B983736E7FD5A16AC6405B9018B82EC68D304DDA99364268FCE7"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Breakout_Support_Resistance/ORB Master/USTEC_M15_e.set",
+      "bytes": 17630,
+      "sha256": "BB4FC2F7D5D26F7EBAB58A13301D65B774F457E8057455F60C20F82CE39E2601"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Breakout_Support_Resistance/ORB Master/USTEC_M15_g.set",
+      "bytes": 17632,
+      "sha256": "57CE1620F4ED1DA99B77FDD25F3D6AA6AD8D5E33988D68C068A24B055B586DE9"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Breakout_Support_Resistance/Other sets/daytrade 2(DAILY)/eurusd_a.set",
+      "bytes": 17390,
+      "sha256": "594E56AF9ED6B00B7A14835D9BAC508BBC05B50C87E12B011BC65ED7003DED56"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Breakout_Support_Resistance/Other sets/daytrade 2(DAILY)/eurusd_b.set",
+      "bytes": 17388,
+      "sha256": "3EE35EE7B75040802CB36ABDB71D03CE27BCBD080BC1A00DDE0C5748EBDE963D"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Breakout_Support_Resistance/Other sets/daytrade 2(DAILY)/eurusd_c.set",
+      "bytes": 17388,
+      "sha256": "125DC81E3A7F6724238785EDEDFD8F0C5306BFEB0C8CED3859D0BF40DD68D561"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Breakout_Support_Resistance/Other sets/daytrade 2(DAILY)/eurusd_d.set",
+      "bytes": 17388,
+      "sha256": "FF7CD2E4DB141859FF671AC50A8FE4DE17B1783BB3FAB54D6C0DFA7C8BA2E144"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Breakout_Support_Resistance/Other sets/daytrade 2(DAILY)/gbpusd_a.set",
+      "bytes": 17496,
+      "sha256": "2030B521160060CA479321DA2AD7104C409D21425C11A460CCE28AFF90FDF282"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Breakout_Support_Resistance/Other sets/daytrade 2(DAILY)/optimization.set",
+      "bytes": 12234,
+      "sha256": "C24A5593094663BB7CA53625B82FCC01D0903A44051E549E3E418D8071BDD66F"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Breakout_Support_Resistance/Other sets/Grid/XAUUSD/a.set",
+      "bytes": 17076,
+      "sha256": "6CE36BC7154F977173D860C6027DCCF4FE7E8C5D35B00D380E6C8DD6A431EC71"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Breakout_Support_Resistance/Other sets/NAS100/nas100_H1_A.set",
+      "bytes": 17652,
+      "sha256": "5C251EE7BBF34056800CAC0591D54140552C00B7C0F1FA55517679FD9CBC20FA"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Breakout_Support_Resistance/Other sets/NAS100/nas100_H1_C.set",
+      "bytes": 17636,
+      "sha256": "FA1ECC9741E047FA6ED9123661D836A1C17EEA4B29F6408D4CF77E760B1B2165"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Breakout_Support_Resistance/Other sets/NAS100/nas100_H1_E.set",
+      "bytes": 17648,
+      "sha256": "E3B02DE67295618AB59D183CACEF907C7D7722E3336319CBAB29534C170065C3"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Breakout_Support_Resistance/Other sets/NAS100/nas100_H1_G.set",
+      "bytes": 17642,
+      "sha256": "A2669B682748A33868343B6558525D7CB00FF824B568FDCAF46A52805CFE2C2E"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Breakout_Support_Resistance/Other sets/NAS100/nas100_H1_L.set",
+      "bytes": 17738,
+      "sha256": "0D83EC98A03D838D3760B3BD40B9458C1B3DA784F4D513EC3BD11E56B5A9146B"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Client sets/BaSa/9637045_basa_gold d1 - sr - 2008-2024 - 11.set",
+      "bytes": 19228,
+      "sha256": "6D8692EAAD9B74AA016165197C74F68FE070891A617808FBCF7D6D7C3631F6D0"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Client sets/BaSa/9637046_basa_gold d1 - sr - 2008-2024 - 14.set",
+      "bytes": 19262,
+      "sha256": "52223A0EE493EA644398C48E7DFF6CF4299634DDDD15E5258DD2D531B4866920"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Client sets/BaSa/9637047_basa_gold d1 - sr - 2008-2024 - 5.set",
+      "bytes": 19240,
+      "sha256": "B33FF829E54F77E9CC3915BA35547EB046DEBDBB151CEA6DFCCECE579B3A4948"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Client sets/BaSa/9637048_basa_gold d1 - sr - 2008-2024 - 9.set",
+      "bytes": 19248,
+      "sha256": "D74DEC1F17CBE08AB68DE2F7BC8F099E0EAC1A5469474129B296EF9F5757772E"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Client sets/BaSa/9637049_basa_xauusd h1 - sr - scalp - 2010-2020 - 1.set",
+      "bytes": 19464,
+      "sha256": "402C0F45F8B5E28BD8C060A6838C6F59829BDA0879B6874DF61544A4E7EEB32B"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Client sets/BaSa/9637050_basa_xauusd h1 - sr - scalp - 2010-2020 - 11.set",
+      "bytes": 19460,
+      "sha256": "F9FD9D1E8B43A475FCE68CFB8093B8F5C675CCAB180F78DD0DE48537E1758FF6"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Client sets/BaSa/9637051_basa_xauusd h1 - sr - scalp - 2010-2020 - 5.set",
+      "bytes": 19462,
+      "sha256": "0A21A3C5DBC49C0EC8ECFF4E787155F3BE1BAD141BFEFCDFF61827E0CE31C1AC"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Client sets/BaSa/9637052_basa_xauusd h1 - sr - scalp - 2010-2020 - 9.set",
+      "bytes": 19454,
+      "sha256": "4FDDA945F45D422273A30E04ABFDCD5812FEE405B69D003D397B2E19A7B81E71"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Client sets/BaSa/9637053_basa_xauusd-h1-2007-2023-1.set",
+      "bytes": 19298,
+      "sha256": "96EDE312592DD80AC3F1A17693D6C10045D53005908626463C6EB1DA54E47E81"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Client sets/BaSa/9637054_basa_xauusd-h1-2007-2023-2.set",
+      "bytes": 19378,
+      "sha256": "062AEB26282DB20F9A9F937D40E228A0979B85348B3D408E342FA66214251D47"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Client sets/BaSa/9637055_basa_xauusd-h1-2007-2023-3.set",
+      "bytes": 19378,
+      "sha256": "45A4DFA5D53C00FAEBE5662B4236563F7EE60EFE30E7FF5AD780E371D6B76AEC"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Client sets/BaSa/9637056_basa_xauusd-h1-2007-2023-4.set",
+      "bytes": 19380,
+      "sha256": "C8C08D2E5994697292ADC6FEEB3D267B6DB2A47F3632205249BD3D3B710B10FE"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Client sets/BaSa/xauusd-h1-rb-2008-2018-1-146002.set",
+      "bytes": 18422,
+      "sha256": "0EC45F87389D0381DB6FCD774FA7B324BD2B13B7D65190C2FA0BDE64AC8E6480"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Client sets/BK/9637003_TSLA_SC_A.set",
+      "bytes": 18358,
+      "sha256": "7FC70532F79FABBE325D457C36D331264E0EDAB8E97B09497E298BA65DFB587F"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Client sets/BK/9637004_TSLA_SC_C.set",
+      "bytes": 18358,
+      "sha256": "0DBFFF7ECAE5F526AAE6AF1D61B19BCB575104A2EA8E1B9DE0C526ACA7514317"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Client sets/BK/9637005_TSLA_SC_B.set",
+      "bytes": 18356,
+      "sha256": "98B1916F2285F099B869FDA1C897BBDD8E8C11883425D84A5D3CFC635672A747"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Client sets/BK/9637006_TSLA_SC_D.set",
+      "bytes": 18342,
+      "sha256": "A9E2FF089CA3586D32C9EAE1A522A030BC0E474C841E59FAA749D1684595DF29"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Client sets/BK/9637008_BK_TSLA_A_1H.set",
+      "bytes": 18348,
+      "sha256": "CB954621455C7F19DE32F05DEFFF9E5B0B300823D577CFDD7FCA663F97563E4A"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Client sets/BK/9637009_BK_TSLA_B_1H.set",
+      "bytes": 18348,
+      "sha256": "B18C20A60C8270E1B3D2C0C63ACB12B8189B093B7355221927571D423F1B6FEC"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Client sets/BK/9637010_BK_TSLA_C_1H.set",
+      "bytes": 18348,
+      "sha256": "47946E37F67C3E7988D855F9D23EF5DEAA71344426B704D08FBD8ED01981A0F1"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Client sets/BK/9637011_BK_TSLA_D_1H.set",
+      "bytes": 18346,
+      "sha256": "F65EFBB62B12E3CAB835965088DE972D20E36539376952BD859B2DBED1BC7754"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Client sets/BK/9637012_BK_TSLA_SR_H4.set",
+      "bytes": 18382,
+      "sha256": "21D17A1F51A9AC6BB29B50FE61C6CDB302BB6E5840669CD8662DB4B13E395C0A"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Client sets/BK/9637013_BK_TSLA_SR_D1.set",
+      "bytes": 18382,
+      "sha256": "98EED24FDF898B9065CB29FE5DBB3D3DABE2529AACF8093158A5B2527796874D"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Client sets/BK/9637014_BK_TSLA_VOL_D1ATR.set",
+      "bytes": 18354,
+      "sha256": "F2F21B3374A581FA0C172A597122B1974242B3F5E0DFC340C3260832D60B83AA"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Client sets/BK/9637015_BK_TSLA_VOL_M15.set",
+      "bytes": 18346,
+      "sha256": "7FD93087BD4B8B3D1A79FDC7FE2B82CBFC8C640661DFDFD319366DE73104DB2A"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Client sets/BK/9637019_BK_C__Users_basju_Documents_Projects_strategy_GER40_VT_GER40_S1.set",
+      "bytes": 21220,
+      "sha256": "F6EDCABC7894FBC46853BAEF309A0AC60B8578DA7D4E7042A199B044CC4A641E"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Client sets/BK/9637020_BK_C__Users_basju_Documents_Projects_strategy_GER40_VT_GER40_S5.set",
+      "bytes": 21220,
+      "sha256": "D23A9A82A9065E148C52D5F11CF6763B9339BF58606993E84F3EE28AD90F2B0B"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Client sets/BK/9637021_BK_US30_1H_Scalp_A.set",
+      "bytes": 19432,
+      "sha256": "BDEA57385EBA429DF786D281D6533314CF07CED3896EFA8483C0732356AF710E"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Client sets/BK/9637022_BK_US30_1H_Scalp_B.set",
+      "bytes": 19430,
+      "sha256": "AB1F2AFFD46319428060D72772FC139E3A7519D672C35FCE03E1D8B871ADAF46"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Client sets/BK/9637023_BK_US30_1H_Scalp_C.set",
+      "bytes": 19426,
+      "sha256": "179830F04ECAA54144DDDCBE524D8AB52DB5C4ADD9EE471E21AB16E080E31A95"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Client sets/BK/9637024_BK_US30_1H_Scalp_D.set",
+      "bytes": 19432,
+      "sha256": "145B3178C089709B5DA656D819B787BD862DD6E39B5C6FA54100E46DF5230862"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Client sets/BK/9637025_BK_US30_1H_Scalp_E.set",
+      "bytes": 19432,
+      "sha256": "672AB8CBD55B80320B956C658403E5CB4FC08B11557314F95E16D79FEF114022"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Client sets/hangsan/9637057_hangsan_1.set",
+      "bytes": 19222,
+      "sha256": "9163BF4973B0DF49D0347BD3F5D755FCE20648E349AEF919FA1ACD63EEAB3002"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Client sets/hangsan/9637058_hangsan_4.set",
+      "bytes": 20060,
+      "sha256": "03ACB1FA29DD553C1D6213248CBE68232EED700179571AE33AD0E4882A2EB480"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Client sets/hangsan/9637059_hangsan_JPYc.set",
+      "bytes": 20058,
+      "sha256": "21B6F292AF3C61A11B3AA7D4F0E53D5CA24DCCA999369469E7F8C9D2130AC829"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Client sets/hangsan/9637060_hangsan_R3.set",
+      "bytes": 20102,
+      "sha256": "44E6F897B2B9AA1C75BEB5AF7E83977D26B4173E81822EFE659C9202DEBCF9CF"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Client sets/hangsan/9637061_hangsan_b.set",
+      "bytes": 19298,
+      "sha256": "B32F41845357D15700CE37855714807B2C845DDD3349C6AEDDB41A4E09EE6D34"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Client sets/hangsan/9637062_hangsan_bojpy1.set",
+      "bytes": 19280,
+      "sha256": "43EA99750E5673A90874D11195B60261C2C48380C1E77385617E433219A32DB9"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Client sets/hangsan/9637063_hangsan_bojpy3.set",
+      "bytes": 19286,
+      "sha256": "EEBF3DFA619D370FD4580420C67F511C5512C5E242D18D59FD9FB857ED54C62B"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Client sets/hangsan/9637064_hangsan_bojpy4.set",
+      "bytes": 19278,
+      "sha256": "F1D2B2CC9CC8B7ED7F32E14B24B87CCDB6071D95A739F15EA5076F14F5981E0A"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Client sets/hangsan/9637065_hangsan_DS.set",
+      "bytes": 20084,
+      "sha256": "CAC9D10A993FB31B9764C1AE92FE39CA0E23F863BA42C0A1F6D4281C8714446A"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Client sets/hangsan/9637066_hangsan_Kg.set",
+      "bytes": 20092,
+      "sha256": "939FB0328618650CEAC111F135E7ECDA2825B1E8367E8AA002F47F68765EB897"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Client sets/hangsan/9637067_hangsan_SILVERR3.set",
+      "bytes": 20104,
+      "sha256": "A928356C1B1DB0A7457F20DA355F7EB09889087B16FE2BB505D287CAD8DDE0CB"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Client sets/MisterMember (Xmas)/9637014_BK_TSLA_VOL_D1ATR.set",
+      "bytes": 18398,
+      "sha256": "893CD450EC217B638994579D9DE7002EB870000338060FBB5D76E1D903919FA1"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Client sets/MisterMember (Xmas)/9637015_BK_TSLA_VOL_M15.set",
+      "bytes": 18394,
+      "sha256": "31A08038792CD048EB9CF3516AFACE174D59A649F2BE37F2FE9D8FFC7468909C"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Client sets/MisterMember (Xmas)/eurusd_f356_d1_storyg.set",
+      "bytes": 18700,
+      "sha256": "70C0D57422658C131C5DFEFDEF45ECD1DAD8E2917327290F424372E6284EB9DF"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Client sets/MisterMember (Xmas)/eurusd_h368_h4_storyg.set",
+      "bytes": 18694,
+      "sha256": "3723A08A115DFA7AE4D82800FC738FC444B665C7E4F715FB9A910B50AAA9B9A6"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Client sets/MisterMember (Xmas)/eurusd_p3516_d1_storyg.set",
+      "bytes": 18696,
+      "sha256": "B7424523EC0DECF95B35F8BC32D6B1F9C7C590CA57785237DC6B861FD29E5782"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Client sets/MisterMember (Xmas)/R3_148.set",
+      "bytes": 12308,
+      "sha256": "5EAF6407667BD903F981338B165CB891039E7EDECD9DD1F07931DAC6424D482F"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Client sets/MisterMember (Xmas)/TSLA_A_1H_129.set",
+      "bytes": 11666,
+      "sha256": "DB19D9E6DA4DAD203B93F183DA85448CF4C4C5E7A63E5445A418EFF472F786CA"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Client sets/MisterMember (Xmas)/TSLA_B_1H_130.set",
+      "bytes": 11664,
+      "sha256": "4379BD62FF159E4208BDF91EA35514C12B5AB6954068F7CE0C62F11115A49BBB"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Client sets/MisterMember (Xmas)/TSLA_D_1H_132.set",
+      "bytes": 11662,
+      "sha256": "B1FC2B690AA2823BCD2B2DA719B751D27CF63D1F75716121878B1056B971A344"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Client sets/MisterMember (Xmas)/UBS-TSLA.NAS-H1-TSV01.set",
+      "bytes": 17108,
+      "sha256": "12A372E69F70C69F13EEED5302CF484E65372C5EF59A3191447238396376BC9F"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Client sets/MisterMember (Xmas)/UBS-TSLA.NAS-H1-TSV02.set",
+      "bytes": 17114,
+      "sha256": "87E5050B7B69C888F3BD63B2DBA1DD5F6B1862D5CF44481FABC027D1A5666FED"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Client sets/MisterMember (Xmas)/UBS-TSLA.NAS-H1-TSV07.set",
+      "bytes": 17100,
+      "sha256": "E6C761A2563DD91FED7EE92FDA353059CB388E0B2BC54BD8F7DA16CB7497977B"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Client sets/MisterMember (Xmas)/UBS-TSLA.NAS-H1-TSV08.set",
+      "bytes": 17098,
+      "sha256": "A6F95D27E8AFFBD0BD28072CD70451F662E1F346C0F2B05C75DFEA9974328AD9"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Client sets/MisterMember (Xmas)/UBS-TSLA.NAS-H1-TSV09.set",
+      "bytes": 17106,
+      "sha256": "9B4E41642DDD21954CA1052227DE15656A74CC660840F74437AA2CD190CDFC38"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Client sets/MisterMember (Xmas)/UBS-TSLA.NAS-H1-TSV12.set",
+      "bytes": 17108,
+      "sha256": "E15236D4C5FAFBA8B56B4DBEA092BAF1660CF4AAC2202D80CA4BC1EBCF341CE0"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Client sets/MisterMember (Xmas)/UBS-US30-D1-IU03_Short-1.set",
+      "bytes": 17790,
+      "sha256": "231950B07091C36E41CD280CDC159BEFCE48D866A5238467F81CCB5496C2AD56"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Client sets/MisterMember (Xmas)/UBS-US30-M15-U3V12.set",
+      "bytes": 16962,
+      "sha256": "7845562B84DA90B026927072076FF43DB5353BF25392176FD18A2AC712F70452"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Client sets/MisterMember (Xmas)/UBS-XAGUSD-H2-AGA04.set",
+      "bytes": 17010,
+      "sha256": "0C1DBEAED40D90A6C3CC30128A01BBF3AC929EE47108C94C23DD76FB9CBA1BCF"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Client sets/MisterMember (Xmas)/UBS-XAUUSD-H1-H1E04.set",
+      "bytes": 17256,
+      "sha256": "446DCA28BA9B2519C35EB0C4C32F5413A662C0E47D21DEC6608DFE9052521189"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Client sets/MisterMember (Xmas)/UBS-XAUUSD-H2-H2A10.set",
+      "bytes": 17372,
+      "sha256": "28CF9384A124C7C30322FE01E91F775837D7F709536C49F9C56C42E7404FE168"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Client sets/MisterMember (Xmas)/UBS-XAUUSD-H3-H3V113.set",
+      "bytes": 17242,
+      "sha256": "A1B2F0A056E7693971D66817DD8F83B30F18D8A502618A9B97895ED428878582"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Client sets/MisterMember (Xmas)/UBS-XAUUSD-H4-H4A04.set",
+      "bytes": 17274,
+      "sha256": "90CEE2E92810B9625FAAECAC0FD94B767E449C26F63792A23FFBE80C9B9EB598"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Client sets/MisterMember (Xmas)/UBS-XTIUSD-H1-XTO06.set",
+      "bytes": 14362,
+      "sha256": "93BBDCACA043719C459D2BD8A0D3ED1C9ECEB8A32AD4DC994F3C0D9A77478789"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Client sets/MisterMember (Xmas)/UBS-XTIUSD-H4-XTW07.set",
+      "bytes": 14318,
+      "sha256": "AE2E3DDD65C923111ADD8948E9818CD0B51C1DF1E8DAE20010A5CA6BFB97D26E"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Client sets/MisterMember (Xmas)/UBS_NAS100_H1_A_P006.set",
+      "bytes": 17810,
+      "sha256": "FE23B4172BC69737A4A492349D646DC60A32611134643DE17ED5D514C9300D25"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Client sets/MisterMember (Xmas)/UBS_NAS100_H1_L_P006.set",
+      "bytes": 17924,
+      "sha256": "0CA9DCEBC217316EF87C7AA0A732BD425C661CA0309020A4674DB13E72D6ECC8"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Client sets/MisterMember (Xmas)/UBS_SpotCrude_Daily_A_P006.set",
+      "bytes": 17816,
+      "sha256": "5E7DB5270001EC436264CC95D19222F028A982A1EAB86B27B925B13E312EC29F"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Client sets/MisterMember (Xmas)/UBS_SpotCrude_Daily_G_P006.set",
+      "bytes": 17810,
+      "sha256": "33A2170290AD499EE7889ED4904AB20B2EBF894D04DD3ECEB955BD5A0DDE4CD1"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Client sets/MisterMember (Xmas)/UBS_US30_Daily_H_P006.set",
+      "bytes": 17742,
+      "sha256": "39A01AA8FC4B2F9EFC678417C5D53FE1C8DAA50DD91F7198BEA5254E466DA078"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Client sets/MisterMember (Xmas)/US30_1H_Scalp_B.set",
+      "bytes": 17838,
+      "sha256": "69F19AA9828970F5B3B3AE97BE8FD4B0557C263B4B6A1423E1FACB51BFFF5832"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Client sets/MisterMember (Xmas)/US30_1H_Scalp_C.set",
+      "bytes": 17834,
+      "sha256": "77ADF8FE2CEF94C3FC62D0530A11BFC64D51A99529C95D40C17499B039261F41"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Client sets/MisterMember (Xmas)/US30_1H_Scalp_D.set",
+      "bytes": 17840,
+      "sha256": "8EEDD036023C09F49250F1C237C9B14C7A5F02FE4D776C39104498E824A9C356"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Client sets/StoryG/9637068_storyG_eurusd f356 d1 storyg.set",
+      "bytes": 20110,
+      "sha256": "D4AE6FBE42D027208A3F5E1F275400E7D9483830F9B9FDC4CB375EE9AB2D510A"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Client sets/StoryG/9637069_storyG_eurusd g357 d1 storyg.set",
+      "bytes": 20110,
+      "sha256": "E0B1452761B0C6B06CAE8A7382B5FF4286A3128ED3645D67FB289203ABE507E5"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Client sets/StoryG/9637070_storyG_eurusd h368 h4 storyg.set",
+      "bytes": 20106,
+      "sha256": "CA521BB168D1BB925DCEF5282D82A66BD14F0E7851E4E63B98530EB3D0DB1C74"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Client sets/StoryG/9637071_storyG_eurusd o3515 d1 storyg.set",
+      "bytes": 20112,
+      "sha256": "690878F5776C4A95723EDD1371C52D23ADF3E6A4F60E376150911CE2B2AAC379"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Client sets/StoryG/9637072_storyG_eurusd p3516 d1 storyg.set",
+      "bytes": 20108,
+      "sha256": "BB7E8B5E3AA24F922ECE0CBB671FB0BDDF7A8AAACD0475559C9AB2A74653FE35"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Client sets/StoryG/9637073_storyG_usdjpy a341 d1 storyg.set",
+      "bytes": 20118,
+      "sha256": "371DE48DDEAFDE96FD053268C700EE16E245311DB977C3912B7B7B0EB8CA6499"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Client sets/StoryG/9637074_storyG_usdjpy d343 d1 storyg.set",
+      "bytes": 20106,
+      "sha256": "82794744B16C3DD7369063387CD437C87A3AA819DEC89E21A6F6B60A741B8B36"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Client sets/StoryG/9637075_storyG_usdjpy e345 d1 storyg.set",
+      "bytes": 20110,
+      "sha256": "EB221FA3DEFD23BB1F80AC8BCD7D3037931290ED6940FDC4F40E28B7A0C20F3D"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Client sets/StoryG/9637076_storyG_usdjpy g347 d1 storyg.set",
+      "bytes": 20112,
+      "sha256": "710DD6908036937CF91B36CFCC3DF314351E0AEE4F9D17BA730028C23E0B9362"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Client sets/Till/9637026_Till_UBS-TSLA.NAS-H1-TSV01.set",
+      "bytes": 18788,
+      "sha256": "788160BBBF9773DB29CCD35E262FA58A58666E6262FA3E832F2AD54A9F9AA3A4"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Client sets/Till/9637027_Till_UBS-TSLA.NAS-H1-TSV02.set",
+      "bytes": 18794,
+      "sha256": "D2A820C3EDFA9780CA6DC0B35EE63927760B44F8B2DDF0A397761D573AD273BE"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Client sets/Till/9637028_Till_UBS-TSLA.NAS-H1-TSV07.set",
+      "bytes": 18780,
+      "sha256": "12978DDEEBBFF41CF2887ECFB922BCC169306A703E3B2280C74EE1F65B411335"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Client sets/Till/9637029_Till_UBS-TSLA.NAS-H1-TSV08.set",
+      "bytes": 18778,
+      "sha256": "5A9AAD0926AE8BB272E3672821ADB8C346F49038B5B9F3740905D78222DBA314"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Client sets/Till/9637030_Till_UBS-TSLA.NAS-H1-TSV09.set",
+      "bytes": 18788,
+      "sha256": "AB41125DEA658E6F41277DA34342AEE7E2319CBE2F41D81EF8DB5D16DB822122"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Client sets/Till/9637031_Till_UBS-TSLA.NAS-H1-TSV12.set",
+      "bytes": 18788,
+      "sha256": "F50578B13C3AF24C10690A6DBCA91C18C74F6062A5A6A3B594EBC57B0139B59C"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Client sets/Till/9637032_Till_UBS-US30-D1-IU03_Short-1.set",
+      "bytes": 19410,
+      "sha256": "DFEDE3A0F8D210CB1A51D758DB9BC0896B230034928ED2CAA1DFDD9DE0C66A4A"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Client sets/Till/9637033_Till_UBS-US30-M15-U3V12.set",
+      "bytes": 18700,
+      "sha256": "6DFD58CB5EAFCE937546BA7216988804692FF3454CB9E8136808F8155DCEE0BC"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Client sets/Till/9637034_Till_UBS-USDJPY-D1-HJP09.set",
+      "bytes": 19066,
+      "sha256": "54D74751000E75E1527A2BF724E3BE26847F6028F956F07F49DAD5592E7BE46E"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Client sets/Till/9637035_Till_UBS-USDJPY-D1-HJP10.set",
+      "bytes": 19066,
+      "sha256": "CB1EAB6429F4FAAB608618914E38AE3DAC5F1696B76D8199B462C4C66F4A7199"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Client sets/Till/9637036_Till_UBS-XAGUSD-H2-AGA04.set",
+      "bytes": 18744,
+      "sha256": "CC56C78C8B05FEB7B1B3BB548A101BF65C109D047E448DFE6960F5EA35B9D972"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Client sets/Till/9637037_Till_UBS-XAGUSD-H2-AGA06.set",
+      "bytes": 18736,
+      "sha256": "CEE3EE46E8D3E11F2193F6D1D54FEBCD837658DF377E5AEF817E5BFB99393507"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Client sets/Till/9637038_Till_UBS-XAGUSD-H2-AGA09.set",
+      "bytes": 18734,
+      "sha256": "0F1883718C25C636379475115E61CDB2F47792F2576B5EA0FE3507483D6A9E26"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Client sets/Till/9637039_Till_UBS-XAUUSD-H1-H1E04.set",
+      "bytes": 19050,
+      "sha256": "6798815667EA787CF94400CECD9F6219FEE1563247B6F209F9CC6D1E947FED07"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Client sets/Till/9637040_Till_UBS-XAUUSD-H2-H2A10.set",
+      "bytes": 19160,
+      "sha256": "2CCF7CBBC76C63047499EF05758E567D98FDA49535518211354DAFBFC3BA2C5F"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Client sets/Till/9637041_Till_UBS-XAUUSD-H3-H3V113.set",
+      "bytes": 19066,
+      "sha256": "D46C0AD6244B12A6D640CA1687C813379F90FE91E6F1FD880A854374E7CC3A36"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Client sets/Till/9637042_Till_UBS-XAUUSD-H4-H4A05.set",
+      "bytes": 19068,
+      "sha256": "29DB9A2AB8B44FCBC73949D16F23FA2525153BE79171714FD34C3EEF905E1864"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Client sets/Till/9637043_Till_UBS-XTIUSD-H1-XTO06.set",
+      "bytes": 16992,
+      "sha256": "A77C5B0AEA71CC18B25EBD25B17519AAED8EBDD58DF998F6B0007FA1E40EF42D"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Client sets/Till/9637044_Till_UBS-XTIUSD-H4-XTW07.set",
+      "bytes": 16976,
+      "sha256": "F4583D8D83E372536AB859E21DCC4B297D3AC7F6D726716851C37740C12A12AA"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Client sets/Till/UBS-AAPL.NAS-H1-AAPP07.set",
+      "bytes": 17138,
+      "sha256": "64389C7C0A49E5C0EF3CE02732F0CF0BCD3B9A064813BBE3CCC301ABAB0B6769"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Client sets/Till/UBS-US30-M15-U3V08.set",
+      "bytes": 16900,
+      "sha256": "7AAB0608DA04267594D87BBB88F07D4BC9C6A6344F0F9BAAB28648D27922754B"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Client sets/Till/UBS-US500-M15-U5W10.set",
+      "bytes": 16882,
+      "sha256": "3AEED14A30F10BC6AE9B191D0A68000B8A5EF0C057BFA58121A6858FD9D66ACD"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Client sets/Till/UBS-XAGUSD-H2-AGA12.set",
+      "bytes": 16994,
+      "sha256": "B4D639D43DFE09C0BA1C252539F3727E3FD1B623BDFF29A59FD48AC3A5C7A6E7"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Client sets/Till/UBS-XAGUSD-H8-AGX09.set",
+      "bytes": 16676,
+      "sha256": "E949115D51B534D7C76A79160273C5BAC5C4F861C98B68AA768AAB1C0D8F11CF"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Client sets/Till/UBS-XAUUSD-H1-H1P01.set",
+      "bytes": 17174,
+      "sha256": "79C0AE3F44014F802BDD28966A236044B757C323C86CB768DD34C6A3B678843E"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Client sets/Till/UBS-XAUUSD-H2-H2T09.set",
+      "bytes": 17402,
+      "sha256": "9A7C2F42338340DF63ABC8D6FD2588A7ACE80D92034B3919E0CA3084D13C7796"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Client sets/Till/UBS-XAUUSD-H3-H3T03.set",
+      "bytes": 17232,
+      "sha256": "52301E94D4083B5AFB9A17E66B1315FD4B751EFF0C9FBA39D57E7CDEF1B17A63"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Client sets/Till/UBS-XAUUSD-H6-H6P08.set",
+      "bytes": 17410,
+      "sha256": "1D186B7409F95FD6E978C215155436A18EFC013EDC9F1E1ACFD2F7411CB5091E"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Client sets/Till/UBS-XTIUSD-H2-XT207.set",
+      "bytes": 14314,
+      "sha256": "19407A3EA6672E8B2B32932CA6D28B8B1DF8CCBD523ECE2939009499CC5CA91B"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Metatrader Set File Editor.html",
+      "bytes": 66549,
+      "sha256": "09570CD7E5A8FB13546F46729C5186FAEA69EA46DE0C61297B2C05845B0E1ABC"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/metatrader-setfile-editor v7.2.html",
+      "bytes": 129900,
+      "sha256": "BBAB9119B050E39303F9FC1D84B880C598FAE31E0CB48E9D732A186B340E9E77"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Range Breakout/RANGE_USDJPY.set",
+      "bytes": 18230,
+      "sha256": "717B3747E3809EBB982AE433AA3DF8F43AB7CB984F04E79EC880FD5052C45123"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Range Breakout/RANGE_XAUUSD.set",
+      "bytes": 21102,
+      "sha256": "6D1ED11E300901F0334702E377A6CFE4FCF5012F82F143BDADE431617ED1748E"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/UBS live portfolio/LivePortfolioSets.zip",
+      "bytes": 133637,
+      "sha256": "7672A0940C67C3EB4A028AA6B028FB1945A02C0742BE5471AC7DE26969C9ACDE"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/UBS live portfolio/Sets/BitcoinReaper1.set",
+      "bytes": 17540,
+      "sha256": "FB6BF8018EFC0D9228022808248E01AFD5F215E72C5E1F58107C4B35CBDCDD81"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/UBS live portfolio/Sets/BitcoinReaper8.set",
+      "bytes": 17508,
+      "sha256": "C0288438614407D3B63B169F54B74D364169CCB73839944F617AFEE13B029BFC"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/UBS live portfolio/Sets/BitcoinReaper9.set",
+      "bytes": 17536,
+      "sha256": "CE14070A386508CA10990D2A1A870B90E46CDBE8F1FF08400773A3D84B38176B"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/UBS live portfolio/Sets/dailyK.set",
+      "bytes": 17968,
+      "sha256": "8FD9C63C1B14C459DA2A910F3CD697722CD97DB276E0A7DDD8690BE82091B32E"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/UBS live portfolio/Sets/DaytradePro_CHFJPY.set",
+      "bytes": 17970,
+      "sha256": "33F308F4C17549FA6DD8B3A825EBC43C9DD69B67A6BD1B0046DEC0CC8E55D61C"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/UBS live portfolio/Sets/DaytradePro_EURUSD.set",
+      "bytes": 17976,
+      "sha256": "44788679B70D76ABFD0FFC169F50D43E9B53E835C31E3B8E8AA63A5966A151C4"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/UBS live portfolio/Sets/DaytradePro_GBPUSD.set",
+      "bytes": 17942,
+      "sha256": "26FCBDF50B2C7F3AB452A8B392618F944A6007EC7F4433DE5CD09E768B063F26"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/UBS live portfolio/Sets/DaytradePro_XAUUSD.set",
+      "bytes": 17898,
+      "sha256": "12C9359DECB5FA78B4FC051E0098A1C318F270B4695998CF74F04DDA85634154"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/UBS live portfolio/Sets/EURUSD_e.set",
+      "bytes": 18022,
+      "sha256": "637B639694C5E3CDE39810C6632F5CE5E8E9774993C2B59CAB3CCE141838CE81"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/UBS live portfolio/Sets/EURUSD_f.set",
+      "bytes": 18024,
+      "sha256": "DCA76DC130A995C7071450099E7D6E21C1D287769743F66EEF5936E3C8E0E04D"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/UBS live portfolio/Sets/EURUSD_i.set",
+      "bytes": 18040,
+      "sha256": "379381ECA5EA95F453B9EE88E343EBF6778BB54174F1FB71284CE393AF6995CB"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/UBS live portfolio/Sets/EURUSD_k.set",
+      "bytes": 18036,
+      "sha256": "E37136842D8858BE96F36392D4DA2CD775B3C1E92790E24B7C3BAAB67E8C7521"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/UBS live portfolio/Sets/EURUSD_l.set",
+      "bytes": 18036,
+      "sha256": "1ADAF1AE880B155B945BB51411F07F830208643148302C16CD3DCA5B8321F004"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/UBS live portfolio/Sets/EURUSD_m.set",
+      "bytes": 18036,
+      "sha256": "8F17F4CABB27D4D01022E6F0090B93F2B6E9E3C65594E6DA24132B4E5684ACBF"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/UBS live portfolio/Sets/EURUSD_o.set",
+      "bytes": 18034,
+      "sha256": "8C4CBFD9D1458473DA29B38DBF3C2AA7E8F349E954F7D8B8E9592655D9819F69"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/UBS live portfolio/Sets/Gold_a.set",
+      "bytes": 17228,
+      "sha256": "E5C1B1581F5D9917C54F79DC2D7426622ED28108A5A8A52A28CD5F22847F035E"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/UBS live portfolio/Sets/Gold_b.set",
+      "bytes": 17190,
+      "sha256": "8EC710CB81CD8DB9E370859104B425DD4C6344194B47CAA53EA52FFF8B6C7D5E"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/UBS live portfolio/Sets/Gold_c.set",
+      "bytes": 17192,
+      "sha256": "3938CBD6E7C8833FFDDE6E2E9CB83E68C2851883E8E1F2B4AEE71DBB155F9527"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/UBS live portfolio/Sets/GOLDTRADEPRO_d.set",
+      "bytes": 17868,
+      "sha256": "7A9E1431EC65CDEECD6F98BC7295FE66CDEEB2507318BF10ECDF2588656E0E77"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/UBS live portfolio/Sets/GOLDTRADEPRO_E.set",
+      "bytes": 17764,
+      "sha256": "9035AB4F1FDBD9D1A1255E4249B6C91A05EE1C13F293EC8EBD8334BD7E67D5FD"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/UBS live portfolio/Sets/GOLDTRADEPRO_H.set",
+      "bytes": 17766,
+      "sha256": "6E1C620AE85A86EDCBB4C9CB6B719AE5216F02D1DEF6D66E0FA8258A1FD6F4F2"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/UBS live portfolio/Sets/H1_F.set",
+      "bytes": 17884,
+      "sha256": "8A3AD4308F83FE69056CBA39550C63096A4756411A92B9B659A67B163D537ACF"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/UBS live portfolio/Sets/H1_H.set",
+      "bytes": 17836,
+      "sha256": "1A8F602743FCF9BF60DAE702EAE7A5AB63ABE744F2C82A8FF92AB2EF495A0A88"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/UBS live portfolio/Sets/H1_J.set",
+      "bytes": 17834,
+      "sha256": "504E6C7F91F2D3C56881A7C67CD5D1777E7250B18C4FD39D32FCB9821456E1DA"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/UBS live portfolio/Sets/H1_O.set",
+      "bytes": 17860,
+      "sha256": "8B0048AD54D9CFACF6DB9482DE93E8268217C2CEEF701FFA5891A416B6F7EA2F"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/UBS live portfolio/Sets/IND_US30_3.set",
+      "bytes": 18034,
+      "sha256": "309C9EE989269DFFC2045C5B28103AC33AF989A50226910F4E3901F1CD7AA788"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/UBS live portfolio/Sets/IND_US30_4.set",
+      "bytes": 18032,
+      "sha256": "C4B3220AEB9EC19ED7537009857A10471DE57ADC4C8B166EB08476C1C9B1F0E9"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/UBS live portfolio/Sets/M5_C.set",
+      "bytes": 17542,
+      "sha256": "AEB3DCE292014110F1928DEA49D7638663E2E2924E42786E206D0B1ED8072817"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/UBS live portfolio/Sets/M5_H.set",
+      "bytes": 17542,
+      "sha256": "D540BB00E5306B7B338EF894BF85B1013D832F06FD62C19D192B824F78F9175D"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/UBS live portfolio/Sets/NAS_VOL_M15_C.set",
+      "bytes": 17596,
+      "sha256": "3C15AB1F39C97EE498D93CD9E125E83F7355BBD269099C7316ADE460EEC9813A"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/UBS live portfolio/Sets/NAS_VOL_M15_D.set",
+      "bytes": 17596,
+      "sha256": "72E2EA84B5BF1CEA7486C9B9E6D29A67E250B3B3CE78A76434A4B4B89F24C413"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/UBS live portfolio/Sets/strategy4_H4.set",
+      "bytes": 17998,
+      "sha256": "2E5A1A1DBA5731A4BFB64106EC041FD1280D1EEF0CCABF9B82EA984BBD021816"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/UBS live portfolio/Sets/strategy5_H1.set",
+      "bytes": 17856,
+      "sha256": "16AE47C9A1F1617F1F233203213ECD52BB9A559E8A3EE9AB634B1A2D45D6CED9"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/UBS live portfolio/Sets/strategy6_H1.set",
+      "bytes": 17970,
+      "sha256": "88D0F25A63AB05BE64C8A51EE58419B43DBC9B41A7A4EE32B88220F3FEA01E47"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/UBS live portfolio/Sets/strategy7_H1.set",
+      "bytes": 17960,
+      "sha256": "AAB46B2A9E46E98818B082740B937D9B34FBDB80617B8F185F5B7806304377E1"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/UBS live portfolio/Sets/US100_1.set",
+      "bytes": 17706,
+      "sha256": "F71FF788C5F426658EC4624B5EF1D889C98DBF29234A715B259C7CE484AD6C77"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/UBS live portfolio/Sets/US100_4.set",
+      "bytes": 17716,
+      "sha256": "A636A3CA32F3018B38D526F7184BD1DA20D3AE6F0B6EA899D7969C75373C7726"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/UBS live portfolio/Sets/US30_VOL_M15_a.set",
+      "bytes": 17768,
+      "sha256": "9DF4ABD9454797F6BB3144E0BBE83C3F385C37FA20D6B74B368A01EDD16B8664"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/UBS live portfolio/Sets/US30_VOL_M15_b.set",
+      "bytes": 17856,
+      "sha256": "25C08EEDCFAE3CC8BD4615F7CB6C7388F59BA4B2239402EFC8523A1B78698BEF"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/UBS live portfolio/Sets/US30_VOL_M15_c.set",
+      "bytes": 17854,
+      "sha256": "C670E13DE66FB03502A458BBAB2894B7DACADDCB7FFB31CDDCBCBAA02E430B30"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/UBS live portfolio/Sets/US30_VOL_M15_g.set",
+      "bytes": 17860,
+      "sha256": "076729D47E0325CA17ADC0370D7D213F1C6202951529BE38CF30DF1964246E73"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/UBS live portfolio/Sets/VolUS500_a.set",
+      "bytes": 17826,
+      "sha256": "B1E4ED67E2B1DD08D65BA2390B62F367C8BD936248AB96A7CA94F9DDB42AC52F"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/UBS live portfolio/Sets/VolUS500_c.set",
+      "bytes": 17828,
+      "sha256": "F245376D1B482E5F79032BB86FB84887BA03C85FFC5A401C641AC5BACCB39F0F"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/UBS live portfolio/Sets/VolUS500_g.set",
+      "bytes": 17782,
+      "sha256": "99D105A3DE3431EA1468884413D1FE50F21F7B84BF3DB4004B7433DEE64F901A"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/UBS live portfolio/ubs_onechart_live_MainEA_Settings.set",
+      "bytes": 19166,
+      "sha256": "69CE86CCB05D63EAE193BCDCA9BCE04A2100D1364ABC263237B011FC06A225A6"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Ultimate_Breakout_System_Manual_V7_7.pdf",
+      "bytes": 1623728,
+      "sha256": "BD6ED57E37BB73F3924295D93FC93470999C708A171E97620CC2E713577E6E6E"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Volatility Breakout/BTCUSD/H1_B.set",
+      "bytes": 17892,
+      "sha256": "7699F3FA5310AED39A13BEB30DEAF2E850F625FF258207585DCD98453B8DE36A"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Volatility Breakout/BTCUSD/H1_C.set",
+      "bytes": 17884,
+      "sha256": "82D54F6F7DBB8615530D204509E81C86246610E39423F6ECAB0345198D455CF5"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Volatility Breakout/BTCUSD/H1_E.set",
+      "bytes": 17884,
+      "sha256": "D7BF779C9DEE1C51BA1CA2C357EA7D3B8C7839E6F7CB55017EBA17B353F18E99"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Volatility Breakout/BTCUSD/H1_F.set",
+      "bytes": 17884,
+      "sha256": "8A3AD4308F83FE69056CBA39550C63096A4756411A92B9B659A67B163D537ACF"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Volatility Breakout/BTCUSD/H1_H.set",
+      "bytes": 17836,
+      "sha256": "1A8F602743FCF9BF60DAE702EAE7A5AB63ABE744F2C82A8FF92AB2EF495A0A88"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Volatility Breakout/BTCUSD/H1_J.set",
+      "bytes": 17834,
+      "sha256": "504E6C7F91F2D3C56881A7C67CD5D1777E7250B18C4FD39D32FCB9821456E1DA"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Volatility Breakout/BTCUSD/H1_M.set",
+      "bytes": 17838,
+      "sha256": "F704FDDB153AAC7C1A7FB0BA8EDF572CDB9188EC8BA595AA317E5FBE8E908FDF"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Volatility Breakout/BTCUSD/H1_O.set",
+      "bytes": 17860,
+      "sha256": "8B0048AD54D9CFACF6DB9482DE93E8268217C2CEEF701FFA5891A416B6F7EA2F"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Volatility Breakout/ETH_Optimization_Set.set",
+      "bytes": 19832,
+      "sha256": "F1DA934A00725CC7E0547482147B14B6EA269AAF505A84D381FB54B3F1F30C77"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Volatility Breakout/EURUSD/EURUSD_e.set",
+      "bytes": 18022,
+      "sha256": "637B639694C5E3CDE39810C6632F5CE5E8E9774993C2B59CAB3CCE141838CE81"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Volatility Breakout/EURUSD/EURUSD_f.set",
+      "bytes": 18024,
+      "sha256": "DCA76DC130A995C7071450099E7D6E21C1D287769743F66EEF5936E3C8E0E04D"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Volatility Breakout/EURUSD/EURUSD_i.set",
+      "bytes": 18040,
+      "sha256": "379381ECA5EA95F453B9EE88E343EBF6778BB54174F1FB71284CE393AF6995CB"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Volatility Breakout/EURUSD/EURUSD_k.set",
+      "bytes": 18036,
+      "sha256": "E37136842D8858BE96F36392D4DA2CD775B3C1E92790E24B7C3BAAB67E8C7521"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Volatility Breakout/EURUSD/EURUSD_l.set",
+      "bytes": 18036,
+      "sha256": "1ADAF1AE880B155B945BB51411F07F830208643148302C16CD3DCA5B8321F004"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Volatility Breakout/EURUSD/EURUSD_m.set",
+      "bytes": 18036,
+      "sha256": "8F17F4CABB27D4D01022E6F0090B93F2B6E9E3C65594E6DA24132B4E5684ACBF"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Volatility Breakout/EURUSD/EURUSD_o.set",
+      "bytes": 18034,
+      "sha256": "8C4CBFD9D1458473DA29B38DBF3C2AA7E8F349E954F7D8B8E9592655D9819F69"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Volatility Breakout/indices_optimization_set.set",
+      "bytes": 17966,
+      "sha256": "342ED0E221ABF5930A7E56401C4EC26363D022FEEACFE8649333754BC928F22C"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Volatility Breakout/NAS100/NAS_VOL_M15_A.set",
+      "bytes": 17596,
+      "sha256": "628C223868EA25E7AF54868B08570683351BDC1E7C8D96E723A109309C9273CE"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Volatility Breakout/NAS100/NAS_VOL_M15_B.set",
+      "bytes": 17596,
+      "sha256": "B33F968DEA28E6E2D76C0AF3A4324E7AEDCA11B80AED5E0249E8C2DB1B3F1F09"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Volatility Breakout/NAS100/NAS_VOL_M15_C.set",
+      "bytes": 17596,
+      "sha256": "3C15AB1F39C97EE498D93CD9E125E83F7355BBD269099C7316ADE460EEC9813A"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Volatility Breakout/NAS100/NAS_VOL_M15_D.set",
+      "bytes": 17596,
+      "sha256": "72E2EA84B5BF1CEA7486C9B9E6D29A67E250B3B3CE78A76434A4B4B89F24C413"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Volatility Breakout/NAS100/NAS_VOL_M15_E.set",
+      "bytes": 17596,
+      "sha256": "4BDE1E7E3A6C501531C972DF7BA9E98861BCB620E3797EB6ADC2C0934F4F0A6B"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Volatility Breakout/US30/US30_VOL_M15_a.set",
+      "bytes": 17768,
+      "sha256": "9DF4ABD9454797F6BB3144E0BBE83C3F385C37FA20D6B74B368A01EDD16B8664"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Volatility Breakout/US30/US30_VOL_M15_b.set",
+      "bytes": 17856,
+      "sha256": "25C08EEDCFAE3CC8BD4615F7CB6C7388F59BA4B2239402EFC8523A1B78698BEF"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Volatility Breakout/US30/US30_VOL_M15_c.set",
+      "bytes": 17854,
+      "sha256": "C670E13DE66FB03502A458BBAB2894B7DACADDCB7FFB31CDDCBCBAA02E430B30"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Volatility Breakout/US30/US30_VOL_M15_g.set",
+      "bytes": 17860,
+      "sha256": "076729D47E0325CA17ADC0370D7D213F1C6202951529BE38CF30DF1964246E73"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Volatility Breakout/US500/VolUS500_a.set",
+      "bytes": 17826,
+      "sha256": "B1E4ED67E2B1DD08D65BA2390B62F367C8BD936248AB96A7CA94F9DDB42AC52F"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Volatility Breakout/US500/VolUS500_c.set",
+      "bytes": 17828,
+      "sha256": "F245376D1B482E5F79032BB86FB84887BA03C85FFC5A401C641AC5BACCB39F0F"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Volatility Breakout/US500/VolUS500_g.set",
+      "bytes": 17782,
+      "sha256": "99D105A3DE3431EA1468884413D1FE50F21F7B84BF3DB4004B7433DEE64F901A"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Volatility Breakout/xauusd/M5_C.set",
+      "bytes": 17542,
+      "sha256": "AEB3DCE292014110F1928DEA49D7638663E2E2924E42786E206D0B1ED8072817"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Volatility Breakout/xauusd/M5_E.set",
+      "bytes": 17542,
+      "sha256": "74B38A7DBD8A060CDEDD6E1115D2874D9DF2C104D11826761AE78F316FBFA01D"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Volatility Breakout/xauusd/M5_G.set",
+      "bytes": 17544,
+      "sha256": "6B37BB38B363ED3FD0616501A526FF112AC0DE3C69BC5710ADA64A73D6E200F8"
+    },
+    {
+      "path": "author-sets/UPDATED_SETS_UBS_V7_7/Volatility Breakout/xauusd/M5_H.set",
+      "bytes": 17542,
+      "sha256": "D540BB00E5306B7B338EF894BF85B1013D832F06FD62C19D192B824F78F9175D"
+    },
+    {
+      "path": "author-sets/zips/Gold_Reaper_V5_1.zip",
+      "bytes": 110884,
+      "sha256": "DDC993EDA373F72AC49B82D98F51E3682ED6B0A64FB8288668D47FE6DFF68D81"
+    },
+    {
+      "path": "author-sets/zips/Goldbot_One_set_files.zip",
+      "bytes": 6243,
+      "sha256": "57D8AACDE35FEC5B14ECC8065729A4332D85FFD1C0FAE817C97F8B74BB60DC91"
+    },
+    {
+      "path": "author-sets/zips/UPDATED_SETS_UBS_V7_7.zip",
+      "bytes": 2665150,
+      "sha256": "D77AB502E7B4BE3CB19B02524BBCF42E0AD71727C824ECD79671DEEE54CAB91B"
+    },
+    {
+      "path": "KET-QUA-3-TUAN.md",
+      "bytes": 2474,
+      "sha256": "7CF07852169D494D2E5C83B220AFB533EF38B352B5F97A490C16ACD96360D4EC"
+    },
+    {
+      "path": "mt5-btc-recovery/AI Golden Life MT5.ex5",
+      "bytes": 600464,
+      "sha256": "7F162ECCA001271C7359504A795D71B6BA7E6AE4C9930811930627D80C4AE949"
+    },
+    {
+      "path": "mt5-btc-recovery/CryonX EA MT5.ex5",
+      "bytes": 775396,
+      "sha256": "0791D1A189DC1805E9764805A978A62FBB9F9B07DB192C8CFB2D26B09818D3F9"
+    },
+    {
+      "path": "mt5-btc-recovery/Dynamic Liquidity Intelligence.ex5",
+      "bytes": 127938,
+      "sha256": "E69FAB805E88ED5306D43748953873958294D97325555907312473086F611523"
+    },
+    {
+      "path": "mt5-btc-recovery/Gold Beaver.ex5",
+      "bytes": 762912,
+      "sha256": "EA5174FE310381AF65984953F113D1B10E422ACB95FEA41B18491BC40C055885"
+    },
+    {
+      "path": "mt5-btc-recovery/Gold Trade Pro MT5.ex5",
+      "bytes": 237660,
+      "sha256": "A3B0DE423A06E10EBEDC279307B93D7CB9188BA2BB5DE77131A913C865B0E922"
+    },
+    {
+      "path": "mt5-btc-recovery/Goldbot One MT5.ex5",
+      "bytes": 226872,
+      "sha256": "390D8AB14FC213FF4B8CBE5084BEC545526E62C6028516FE21219A59398CE795"
+    },
+    {
+      "path": "mt5-btc-recovery/MoonDog EA.ex5",
+      "bytes": 11307865,
+      "sha256": "D019AE0232A15A121CBA3E857D66BFE1B1828EBB8205B6FB509249F00F9F4DF6"
+    },
+    {
+      "path": "mt5-btc-recovery/Quantum Titan MT5.ex5",
+      "bytes": 168798,
+      "sha256": "74A780C9CF6E2C8283DFBBD61BD74D44CE8EA71459D9234245CE2240F02DE049"
+    },
+    {
+      "path": "mt5-btc-recovery/TwisterPro Scalper.ex5",
+      "bytes": 109212,
+      "sha256": "C705E2BBBB66D18E31E2A375625DFDEF69243CB73E684AF3A846D6AB33FABE73"
+    },
+    {
+      "path": "mt5-btc-recovery/Ultimate Breakout System.ex5",
+      "bytes": 423012,
+      "sha256": "6309CDFC78467DC7C9E5482BDB77F75D9D1061EBFD3A28DD89697DB91317C920"
+    },
+    {
+      "path": "mt5-program-files/EA Super Trend XAUUSD.ex5",
+      "bytes": 267650,
+      "sha256": "F9A04943CACC50AD0FD4CD1CBF84AACCC3D6B294A438CBD2100AEA82E7EDEF39"
+    },
+    {
+      "path": "mt5-program-files/My AI Gold.ex5",
+      "bytes": 3680992,
+      "sha256": "E1F1BF70C8E2AECCCC3A09555DE57015A9955CF96F12609CCE3A59FDB71FA306"
+    },
+    {
+      "path": "mt5-program-files/Quantum Queen X MT5.ex5",
+      "bytes": 489074,
+      "sha256": "BD6AA7E27C9748A26304E5E8AF6EC796037F0CD4978B1AC973F0F38DF4DF9ECD"
+    },
+    {
+      "path": "mt5-program-files/Quantum Titan MT5.ex5",
+      "bytes": 168726,
+      "sha256": "0B4B0F32B37A8F66422E9B875ED90CD31D8BEE6D74FCBC9A5E57752DAB5E465B"
+    },
+    {
+      "path": "mt5-program-files/Scalping Robot Pro MT5.ex5",
+      "bytes": 402498,
+      "sha256": "75B8DA04760B374D25734B441C6F2424F7E46608260185EAF1E6F8566649B24D"
+    },
+    {
+      "path": "mt5-program-files/The Gold Reaper MT5.ex5",
+      "bytes": 261524,
+      "sha256": "EE063D3D87490AFE24E2F4CE85F6B05659320E297B102EFD70207F71CA2FEB83"
+    },
+    {
+      "path": "mt5-program-files/Ultimate Breakout System.ex5",
+      "bytes": 422364,
+      "sha256": "7F7E7C0527B93523A4DCBB71DA0AFA35D23386CBFFE68CF1F0092205C03DD4B7"
+    }
+  ],
+  "official_references": [
+    {
+      "title": "MetaEditor: Compilation",
+      "url": "https://www.metatrader5.com/en/metaeditor/help/development/compile"
+    },
+    {
+      "title": "MetaEditor: MQL5 Cloud Protector",
+      "url": "https://www.metatrader5.com/en/metaeditor/help/development/mql5_cloud_protector"
+    }
+  ]
+}

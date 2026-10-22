@@ -1,0 +1,125 @@
+[
+  {
+    "name": "default",
+    "inputs": {},
+    "capture": "twisterready1_09",
+    "input_file": "C:\\Users\\NTD\\Desktop\\BotTradeEA\\local\\market-demos-20261020\\dich-nguoc-luot2\\settings-check\\default.json"
+  },
+  {
+    "name": "mode2",
+    "inputs": {
+      "EAMode": 2
+    },
+    "capture": "twcfg01r1_09",
+    "input_file": "C:\\Users\\NTD\\Desktop\\BotTradeEA\\local\\market-demos-20261020\\dich-nguoc-luot2\\settings-check\\mode2.json",
+    "failed_capture": "twcfg01_09"
+  },
+  {
+    "name": "short",
+    "inputs": {
+      "Mode1Stop": 1
+    },
+    "capture": "twcfg02_09",
+    "input_file": "C:\\Users\\NTD\\Desktop\\BotTradeEA\\local\\market-demos-20261020\\dich-nguoc-luot2\\settings-check\\short.json"
+  },
+  {
+    "name": "broker1",
+    "inputs": {
+      "BrokerType": 1
+    },
+    "capture": "twcfg03_09",
+    "input_file": "C:\\Users\\NTD\\Desktop\\BotTradeEA\\local\\market-demos-20261020\\dich-nguoc-luot2\\settings-check\\broker1.json"
+  },
+  {
+    "name": "broker1_mode2",
+    "inputs": {
+      "BrokerType": 1,
+      "EAMode": 2
+    },
+    "capture": "twcfg04r1_09",
+    "input_file": "C:\\Users\\NTD\\Desktop\\BotTradeEA\\local\\market-demos-20261020\\dich-nguoc-luot2\\settings-check\\broker1_mode2.json",
+    "failed_capture": "twcfg04_09"
+  },
+  {
+    "name": "broker1_short",
+    "inputs": {
+      "BrokerType": 1,
+      "Mode1Stop": 1
+    },
+    "capture": "twcfg05_09",
+    "input_file": "C:\\Users\\NTD\\Desktop\\BotTradeEA\\local\\market-demos-20261020\\dich-nguoc-luot2\\settings-check\\broker1_short.json"
+  },
+  {
+    "name": "lower",
+    "inputs": {
+      "FixedLot": -2.0,
+      "RiskPercent": -3.0,
+      "MaxConsecLosses": -4,
+      "DD_LotMultiplier": -0.5,
+      "MaxDailyDD_Pct": -7.0,
+      "InpSL_Points": -8,
+      "InpTP_Points": -9,
+      "InpTSL_Start": -10,
+      "InpTSL_Step": -11,
+      "InpTSL_Distance": -12
+    },
+    "capture": "twcfg06r1_09",
+    "input_file": "C:\\Users\\NTD\\Desktop\\BotTradeEA\\local\\market-demos-20261020\\dich-nguoc-luot2\\settings-check\\lower.json",
+    "failed_capture": "twcfg06_09"
+  },
+  {
+    "name": "upper",
+    "inputs": {
+      "BrokerType": 1,
+      "EAMode": 2,
+      "FixedLot": 1234.0,
+      "RiskPercent": 234.0,
+      "MaxConsecLosses": 456,
+      "DD_LotMultiplier": 3.0,
+      "MaxDailyDD_Pct": 123.0,
+      "InpSL_Points": 1000001,
+      "InpTP_Points": 2147483647,
+      "InpTSL_Start": 1000002,
+      "InpTSL_Step": 1000003,
+      "InpTSL_Distance": 1000004
+    },
+    "capture": "twcfg07r1_09",
+    "input_file": "C:\\Users\\NTD\\Desktop\\BotTradeEA\\local\\market-demos-20261020\\dich-nguoc-luot2\\settings-check\\upper.json",
+    "failed_capture": "twcfg07_09"
+  },
+  {
+    "name": "custom",
+    "inputs": {
+      "InpMagic": -731,
+      "UseFixedLot": "true",
+      "UseDD_Protection": "true",
+      "FixedLot": 0.07,
+      "RiskPercent": 1.375,
+      "MaxConsecLosses": 7,
+      "DD_LotMultiplier": 0.625,
+      "MaxDailyDD_Pct": 7.125,
+      "InpSL_Points": 1301,
+      "InpTP_Points": 2303,
+      "InpTSL_Start": 401,
+      "InpTSL_Step": 101,
+      "InpTSL_Distance": 211
+    },
+    "capture": "twcfg08r1_09",
+    "input_file": "C:\\Users\\NTD\\Desktop\\BotTradeEA\\local\\market-demos-20261020\\dich-nguoc-luot2\\settings-check\\custom.json",
+    "failed_capture": "twcfg08_09"
+  },
+  {
+    "name": "broker1_custom",
+    "inputs": {
+      "BrokerType": 1,
+      "InpMagic": -731,
+      "InpSL_Points": 1301,
+      "InpTP_Points": 2303,
+      "InpTSL_Start": 401,
+      "InpTSL_Step": 101,
+      "InpTSL_Distance": 211
+    },
+    "capture": "twcfg09_09",
+    "input_file": "C:\\Users\\NTD\\Desktop\\BotTradeEA\\local\\market-demos-20261020\\dich-nguoc-luot2\\settings-check\\broker1_custom.json"
+  }
+]

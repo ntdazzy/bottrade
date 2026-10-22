@@ -1,0 +1,382 @@
+[
+  {
+    "begin": 0,
+    "end": 87,
+    "source": "unwind_table"
+  },
+  {
+    "begin": 96,
+    "end": 456,
+    "source": "unwind_table"
+  },
+  {
+    "begin": 464,
+    "end": 914,
+    "source": "unwind_table"
+  },
+  {
+    "begin": 928,
+    "end": 1222,
+    "source": "unwind_table"
+  },
+  {
+    "begin": 1232,
+    "end": 1517,
+    "source": "unwind_table"
+  },
+  {
+    "begin": 1520,
+    "end": 2056,
+    "source": "unwind_table"
+  },
+  {
+    "begin": 2064,
+    "end": 2608,
+    "source": "unwind_table"
+  },
+  {
+    "begin": 2608,
+    "end": 2611,
+    "source": "verified_leaf_xor_eax_ret"
+  },
+  {
+    "begin": 2624,
+    "end": 2655,
+    "source": "unwind_table"
+  },
+  {
+    "begin": 2656,
+    "end": 2687,
+    "source": "unwind_table"
+  },
+  {
+    "begin": 2688,
+    "end": 2689,
+    "source": "unwind_table"
+  },
+  {
+    "begin": 2704,
+    "end": 2767,
+    "source": "unwind_table"
+  },
+  {
+    "begin": 2768,
+    "end": 3294,
+    "source": "unwind_table"
+  },
+  {
+    "begin": 3296,
+    "end": 3404,
+    "source": "unwind_table"
+  },
+  {
+    "begin": 3408,
+    "end": 3617,
+    "source": "unwind_table"
+  },
+  {
+    "begin": 3632,
+    "end": 6251,
+    "source": "unwind_table"
+  },
+  {
+    "begin": 6256,
+    "end": 6332,
+    "source": "unwind_table"
+  },
+  {
+    "begin": 6336,
+    "end": 12015,
+    "source": "unwind_table"
+  },
+  {
+    "begin": 12016,
+    "end": 12285,
+    "source": "unwind_table"
+  },
+  {
+    "begin": 12288,
+    "end": 22204,
+    "source": "unwind_table"
+  },
+  {
+    "begin": 22208,
+    "end": 23478,
+    "source": "unwind_table"
+  },
+  {
+    "begin": 23488,
+    "end": 24807,
+    "source": "unwind_table"
+  },
+  {
+    "begin": 24816,
+    "end": 34819,
+    "source": "unwind_table"
+  },
+  {
+    "begin": 34832,
+    "end": 35175,
+    "source": "unwind_table"
+  },
+  {
+    "begin": 35184,
+    "end": 43110,
+    "source": "unwind_table"
+  },
+  {
+    "begin": 43120,
+    "end": 43298,
+    "source": "unwind_table"
+  },
+  {
+    "begin": 43312,
+    "end": 43902,
+    "source": "unwind_table"
+  },
+  {
+    "begin": 43904,
+    "end": 44465,
+    "source": "unwind_table"
+  },
+  {
+    "begin": 44480,
+    "end": 46926,
+    "source": "unwind_table"
+  },
+  {
+    "begin": 46928,
+    "end": 47246,
+    "source": "unwind_table"
+  },
+  {
+    "begin": 47248,
+    "end": 47668,
+    "source": "unwind_table"
+  },
+  {
+    "begin": 47680,
+    "end": 48133,
+    "source": "unwind_table"
+  },
+  {
+    "begin": 48144,
+    "end": 49280,
+    "source": "unwind_table"
+  },
+  {
+    "begin": 49280,
+    "end": 50062,
+    "source": "unwind_table"
+  },
+  {
+    "begin": 50064,
+    "end": 50828,
+    "source": "unwind_table"
+  },
+  {
+    "begin": 50832,
+    "end": 51319,
+    "source": "unwind_table"
+  },
+  {
+    "begin": 51328,
+    "end": 51800,
+    "source": "unwind_table"
+  },
+  {
+    "begin": 51808,
+    "end": 53107,
+    "source": "unwind_table"
+  },
+  {
+    "begin": 53120,
+    "end": 53880,
+    "source": "unwind_table"
+  },
+  {
+    "begin": 53888,
+    "end": 55192,
+    "source": "unwind_table"
+  },
+  {
+    "begin": 55200,
+    "end": 55228,
+    "source": "unwind_table"
+  },
+  {
+    "begin": 55232,
+    "end": 55439,
+    "source": "unwind_table"
+  },
+  {
+    "begin": 55440,
+    "end": 56642,
+    "source": "unwind_table"
+  },
+  {
+    "begin": 56656,
+    "end": 58293,
+    "source": "unwind_table"
+  },
+  {
+    "begin": 58304,
+    "end": 59437,
+    "source": "unwind_table"
+  },
+  {
+    "begin": 59440,
+    "end": 60048,
+    "source": "unwind_table"
+  },
+  {
+    "begin": 60048,
+    "end": 60525,
+    "source": "unwind_table"
+  },
+  {
+    "begin": 60528,
+    "end": 67262,
+    "source": "unwind_table"
+  },
+  {
+    "begin": 67264,
+    "end": 71903,
+    "source": "unwind_table"
+  },
+  {
+    "begin": 71904,
+    "end": 72598,
+    "source": "unwind_table"
+  },
+  {
+    "begin": 72608,
+    "end": 72788,
+    "source": "unwind_table"
+  },
+  {
+    "begin": 72800,
+    "end": 75327,
+    "source": "unwind_table"
+  },
+  {
+    "begin": 75328,
+    "end": 76550,
+    "source": "unwind_table"
+  },
+  {
+    "begin": 76560,
+    "end": 77574,
+    "source": "unwind_table"
+  },
+  {
+    "begin": 77584,
+    "end": 79844,
+    "source": "unwind_table"
+  },
+  {
+    "begin": 79856,
+    "end": 88235,
+    "source": "unwind_table"
+  },
+  {
+    "begin": 88240,
+    "end": 88998,
+    "source": "unwind_table"
+  },
+  {
+    "begin": 89008,
+    "end": 89576,
+    "source": "unwind_table"
+  },
+  {
+    "begin": 89584,
+    "end": 89838,
+    "source": "unwind_table"
+  },
+  {
+    "begin": 89840,
+    "end": 90166,
+    "source": "unwind_table"
+  },
+  {
+    "begin": 90176,
+    "end": 90730,
+    "source": "unwind_table"
+  },
+  {
+    "begin": 90736,
+    "end": 92650,
+    "source": "unwind_table"
+  },
+  {
+    "begin": 92656,
+    "end": 94837,
+    "source": "unwind_table"
+  },
+  {
+    "begin": 94848,
+    "end": 95680,
+    "source": "unwind_table"
+  },
+  {
+    "begin": 95680,
+    "end": 96097,
+    "source": "unwind_table"
+  },
+  {
+    "begin": 96112,
+    "end": 96492,
+    "source": "unwind_table"
+  },
+  {
+    "begin": 96496,
+    "end": 98015,
+    "source": "unwind_table"
+  },
+  {
+    "begin": 98016,
+    "end": 98628,
+    "source": "unwind_table"
+  },
+  {
+    "begin": 98640,
+    "end": 98984,
+    "source": "unwind_table"
+  },
+  {
+    "begin": 98992,
+    "end": 100121,
+    "source": "unwind_table"
+  },
+  {
+    "begin": 100128,
+    "end": 102025,
+    "source": "unwind_table"
+  },
+  {
+    "begin": 102032,
+    "end": 103138,
+    "source": "unwind_table"
+  },
+  {
+    "begin": 103152,
+    "end": 105125,
+    "source": "unwind_table"
+  },
+  {
+    "begin": 105136,
+    "end": 105586,
+    "source": "unwind_table"
+  },
+  {
+    "begin": 105600,
+    "end": 106981,
+    "source": "unwind_table"
+  },
+  {
+    "begin": 106992,
+    "end": 107005,
+    "source": "unwind_table"
+  }
+]

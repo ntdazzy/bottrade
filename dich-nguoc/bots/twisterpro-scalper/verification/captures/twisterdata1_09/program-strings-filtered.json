@@ -1,0 +1,730 @@
+[
+  {
+    "address": "0x25a0b0dc21c",
+    "text": "TWP10_NEWSWARN1"
+  },
+  {
+    "address": "0x25a0b0dc25c",
+    "text": "TWP10_NEWSWARN2"
+  },
+  {
+    "address": "0x25a0b0dc29c",
+    "text": "Arial Black"
+  },
+  {
+    "address": "0x25a0b0dc2dc",
+    "text": "invalid SYMBOL_POINT"
+  },
+  {
+    "address": "0x25a0b0dc32c",
+    "text": "invalid symbol trading properties"
+  },
+  {
+    "address": "0x25a0b0dc38c",
+    "text": "iATR"
+  },
+  {
+    "address": "0x25a0b0dc3ec",
+    "text": "MODE 2"
+  },
+  {
+    "address": "0x25a0b0dc41c",
+    "text": "MODE 1 SHORT SL"
+  },
+  {
+    "address": "0x25a0b0dc45c",
+    "text": "MODE 1 LONG SL"
+  },
+  {
+    "address": "0x25a0b0dc49c",
+    "text": "   TWISTER PRO v3.3 | v2.1 CORE | %s | %s | Magic=%d"
+  },
+  {
+    "address": "0x25a0b0dc52c",
+    "text": "Exness"
+  },
+  {
+    "address": "0x25a0b0dc55c",
+    "text": "Default"
+  },
+  {
+    "address": "0x25a0b0dc58c",
+    "text": "   Protections | Friday=ON | Holidays=%s | News=%s | SL Defense=%s | PropFirm=%s"
+  },
+  {
+    "address": "0x25a0b0dc6ac",
+    "text": "[%ds]"
+  },
+  {
+    "address": "0x25a0b0dc6dc",
+    "text": "   SL=%d%s | TP=%d%s | Trailing Start=%d Step=%d Dist=%d%s pts"
+  },
+  {
+    "address": "0x25a0b0dc77c",
+    "text": " (custom)"
+  },
+  {
+    "address": "0x25a0b0dc7ac",
+    "text": "   News guard: HIGH impact %s | window -%d/+%d min | feed=%s | %d event(s)"
+  },
+  {
+    "address": "0x25a0b0dc89c",
+    "text": "ONLINE"
+  },
+  {
+    "address": "0x25a0b0dc8fc",
+    "text": "New day - counters reset."
+  },
+  {
+    "address": "0x25a0b0dc94c",
+    "text": "HOLIDAY | EA paused and pending orders cancelled."
+  },
+  {
+    "address": "0x25a0b0dc9cc",
+    "text": "DAILY DD REACHED: %.2f%%"
+  },
+  {
+    "address": "0x25a0b0dca1c",
+    "text": "DD PROTECTION | %d losses -> lot x%.2f"
+  },
+  {
+    "address": "0x25a0b0dca8c",
+    "text": "SL HIT | P&L=%.2f | cooldown=%d | consecutive=%d"
+  },
+  {
+    "address": "0x25a0b0dcb0c",
+    "text": "WIN | P&L=%.2f"
+  },
+  {
+    "address": "0x25a0b0dcb7c",
+    "text": "sell"
+  },
+  {
+    "address": "0x25a0b0dcbac",
+    "text": "buy limit"
+  },
+  {
+    "address": "0x25a0b0dcbdc",
+    "text": "sell limit"
+  },
+  {
+    "address": "0x25a0b0dcc1c",
+    "text": "buy stop"
+  },
+  {
+    "address": "0x25a0b0dcc4c",
+    "text": "sell stop"
+  },
+  {
+    "address": "0x25a0b0dcc7c",
+    "text": "buy stop limit"
+  },
+  {
+    "address": "0x25a0b0dccbc",
+    "text": "sell stop limit"
+  },
+  {
+    "address": "0x25a0b0dccfc",
+    "text": "unknown order type "
+  },
+  {
+    "address": "0x25a0b0dcd4c",
+    "text": "placed"
+  },
+  {
+    "address": "0x25a0b0dcd7c",
+    "text": "canceled"
+  },
+  {
+    "address": "0x25a0b0dcdac",
+    "text": "rejected"
+  },
+  {
+    "address": "0x25a0b0dcddc",
+    "text": "%s (%s)"
+  },
+  {
+    "address": "0x25a0b0dce0c",
+    "text": " sl: %s"
+  },
+  {
+    "address": "0x25a0b0dce3c",
+    "text": " tp: %s"
+  },
+  {
+    "address": "0x25a0b0dce6c",
+    "text": "CTrade::PositionModify"
+  },
+  {
+    "address": "0x25a0b0dcebc",
+    "text": "CTrade::OrderOpen"
+  },
+  {
+    "address": "0x25a0b0dcefc",
+    "text": ": Error: Unable to place order without explicitly specified expiration time"
+  },
+  {
+    "address": "0x25a0b0dcfbc",
+    "text": "Invalid expiration type"
+  },
+  {
+    "address": "0x25a0b0dd00c",
+    "text": "CTrade::OrderOpen: Invalid filling type"
+  },
+  {
+    "address": "0x25a0b0dd07c",
+    "text": "CTrade::OrderOpen: Invalid expiration type"
+  },
+  {
+    "address": "0x25a0b0dd0fc",
+    "text": "CTrade::OrderDelete"
+  },
+  {
+    "address": "0x25a0b0dd14c",
+    "text": "CTrade::OrderSend: %s [%s]"
+  },
+  {
+    "address": "0x25a0b0dd1ac",
+    "text": "request %s %s position #%I64u %s at %s"
+  },
+  {
+    "address": "0x25a0b0dd21c",
+    "text": "request %s %s %s at %s"
+  },
+  {
+    "address": "0x25a0b0dd26c",
+    "text": "instant %s %s position #%I64u %s at %s"
+  },
+  {
+    "address": "0x25a0b0dd2dc",
+    "text": "instant %s %s %s at %s"
+  },
+  {
+    "address": "0x25a0b0dd32c",
+    "text": "market %s %s position #%I64u %s"
+  },
+  {
+    "address": "0x25a0b0dd38c",
+    "text": "market %s %s %s"
+  },
+  {
+    "address": "0x25a0b0dd3cc",
+    "text": "exchange %s %s position #%I64u %s"
+  },
+  {
+    "address": "0x25a0b0dd42c",
+    "text": "exchange %s %s %s"
+  },
+  {
+    "address": "0x25a0b0dd46c",
+    "text": "%s %s %s at %s"
+  },
+  {
+    "address": "0x25a0b0dd4ac",
+    "text": "modify position #%I64u %s (sl: %s, tp: %s)"
+  },
+  {
+    "address": "0x25a0b0dd52c",
+    "text": "modify %s (sl: %s, tp: %s)"
+  },
+  {
+    "address": "0x25a0b0dd58c",
+    "text": "modify #%I64u at %s (sl: %s tp: %s)"
+  },
+  {
+    "address": "0x25a0b0dd5fc",
+    "text": "cancel #%I64u"
+  },
+  {
+    "address": "0x25a0b0dd63c",
+    "text": "close position #%I64u by #%I64u"
+  },
+  {
+    "address": "0x25a0b0dd69c",
+    "text": "wrong action close by (#%I64u by #%I64u)"
+  },
+  {
+    "address": "0x25a0b0dd70c",
+    "text": "unknown action "
+  },
+  {
+    "address": "0x25a0b0dd74c",
+    "text": "requote (%s/%s)"
+  },
+  {
+    "address": "0x25a0b0dd78c",
+    "text": "done at %s"
+  },
+  {
+    "address": "0x25a0b0dd7cc",
+    "text": "done"
+  },
+  {
+    "address": "0x25a0b0dd7fc",
+    "text": "done partially %s at %s"
+  },
+  {
+    "address": "0x25a0b0dd84c",
+    "text": "done partially %s"
+  },
+  {
+    "address": "0x25a0b0dd88c",
+    "text": "common error"
+  },
+  {
+    "address": "0x25a0b0dd8cc",
+    "text": "timeout"
+  },
+  {
+    "address": "0x25a0b0dd8fc",
+    "text": "invalid request"
+  },
+  {
+    "address": "0x25a0b0dd93c",
+    "text": "invalid volume"
+  },
+  {
+    "address": "0x25a0b0dd97c",
+    "text": "invalid price"
+  },
+  {
+    "address": "0x25a0b0dd9bc",
+    "text": "invalid stops"
+  },
+  {
+    "address": "0x25a0b0dd9fc",
+    "text": "trade disabled"
+  },
+  {
+    "address": "0x25a0b0dda3c",
+    "text": "market closed"
+  },
+  {
+    "address": "0x25a0b0dda7c",
+    "text": "not enough money"
+  },
+  {
+    "address": "0x25a0b0ddabc",
+    "text": "price changed"
+  },
+  {
+    "address": "0x25a0b0ddafc",
+    "text": "off quotes"
+  },
+  {
+    "address": "0x25a0b0ddb3c",
+    "text": "invalid expiration"
+  },
+  {
+    "address": "0x25a0b0ddb8c",
+    "text": "order changed"
+  },
+  {
+    "address": "0x25a0b0ddbcc",
+    "text": "too many requests"
+  },
+  {
+    "address": "0x25a0b0ddc0c",
+    "text": "no changes"
+  },
+  {
+    "address": "0x25a0b0ddc4c",
+    "text": "auto trading disabled by server"
+  },
+  {
+    "address": "0x25a0b0ddcac",
+    "text": "auto trading disabled by client"
+  },
+  {
+    "address": "0x25a0b0ddd0c",
+    "text": "locked"
+  },
+  {
+    "address": "0x25a0b0ddd3c",
+    "text": "frozen"
+  },
+  {
+    "address": "0x25a0b0ddd6c",
+    "text": "invalid fill"
+  },
+  {
+    "address": "0x25a0b0dddac",
+    "text": "no connection"
+  },
+  {
+    "address": "0x25a0b0dddec",
+    "text": "only real"
+  },
+  {
+    "address": "0x25a0b0dde1c",
+    "text": "limit orders"
+  },
+  {
+    "address": "0x25a0b0dde5c",
+    "text": "limit volume"
+  },
+  {
+    "address": "0x25a0b0dde9c",
+    "text": "position closed"
+  },
+  {
+    "address": "0x25a0b0ddedc",
+    "text": "invalid order"
+  },
+  {
+    "address": "0x25a0b0ddf1c",
+    "text": "close order already exists"
+  },
+  {
+    "address": "0x25a0b0ddf7c",
+    "text": "limit positions"
+  },
+  {
+    "address": "0x25a0b0ddfbc",
+    "text": "unknown retcode "
+  },
+  {
+    "address": "0x25a0b0ddffc",
+    "text": "CTrade::ExpirationCheck: Unknown expiration type"
+  },
+  {
+    "address": "0x25a0b0de07c",
+    "text": "CTrade::OrderTypeCheck: Invalid order type"
+  },
+  {
+    "address": "0x25a0b0de0fc",
+    "text": "%s: MQL5 program is stopped. Trading is disabled"
+  },
+  {
+    "address": "0x25a0b0de17c",
+    "text": "arial"
+  },
+  {
+    "address": "0x25a0b0de1ec",
+    "text": "ERROR: "
+  },
+  {
+    "address": "0x25a0b0de21c",
+    "text": "ERROR cancelling order #%d | ret=%d | %s"
+  },
+  {
+    "address": "0x25a0b0de28c",
+    "text": "%s | %d order(s) cancelled | %d skipped"
+  },
+  {
+    "address": "0x25a0b0de2fc",
+    "text": "FORCED CANCEL"
+  },
+  {
+    "address": "0x25a0b0de33c",
+    "text": "PENDING CANCEL"
+  },
+  {
+    "address": "0x25a0b0de37c",
+    "text": "MONDAY OPEN | Friday cancel flag reset - EA resuming."
+  },
+  {
+    "address": "0x25a0b0de40c",
+    "text": "FRIDAY CLOSE | %d pending(s) cancelled at %02d:00 server | entries blocked until Monday."
+  },
+  {
+    "address": "0x25a0b0de4dc",
+    "text": "GTC FALLBACK | timed expiration rejected (ret=%d) - retrying as GTC"
+  },
+  {
+    "address": "0x25a0b0de58c",
+    "text": "GTC EXPIRE | #%d removed after %d bars"
+  },
+  {
+    "address": "0x25a0b0de5fc",
+    "text": "BUY STOP | entry=%.2f sl=%.2f tp=%.2f lots=%.2f"
+  },
+  {
+    "address": "0x25a0b0de67c",
+    "text": "ERROR BUY STOP | ret=%d | %s"
+  },
+  {
+    "address": "0x25a0b0de6dc",
+    "text": "SELL STOP | entry=%.2f sl=%.2f tp=%.2f lots=%.2f"
+  },
+  {
+    "address": "0x25a0b0de75c",
+    "text": "ERROR SELL STOP | ret=%d | %s"
+  },
+  {
+    "address": "0x25a0b0de7bc",
+    "text": "HOLIDAY PROTECTION | %d pending cancelled, %d position(s) closed"
+  },
+  {
+    "address": "0x25a0b0de8dc",
+    "text": "NEWS GUARD | WebRequest blocked. Enable it in:"
+  },
+  {
+    "address": "0x25a0b0de95c",
+    "text": "NEWS GUARD | Tools > Options > Expert Advisors > Allow WebRequest for listed URL"
+  },
+  {
+    "address": "0x25a0b0deaac",
+    "text": "NEWS GUARD | download failed (error %d) - retry in %d s"
+  },
+  {
+    "address": "0x25a0b0deb3c",
+    "text": "NEWS GUARD | HTTP %d - retry in %d s"
+  },
+  {
+    "address": "0x25a0b0debac",
+    "text": "<html"
+  },
+  {
+    "address": "0x25a0b0debcc",
+    "text": "DOCTYPE"
+  },
+  {
+    "address": "0x25a0b0debec",
+    "text": "NEWS GUARD | feed throttled by ForexFactory - retry in %d s"
+  },
+  {
+    "address": "0x25a0b0dec8c",
+    "text": "\"title\""
+  },
+  {
+    "address": "0x25a0b0decbc",
+    "text": "impact"
+  },
+  {
+    "address": "0x25a0b0decec",
+    "text": "HIGH"
+  },
+  {
+    "address": "0x25a0b0ded0c",
+    "text": "country"
+  },
+  {
+    "address": "0x25a0b0ded3c",
+    "text": "currency"
+  },
+  {
+    "address": "0x25a0b0ded6c",
+    "text": "date"
+  },
+  {
+    "address": "0x25a0b0ded9c",
+    "text": "title"
+  },
+  {
+    "address": "0x25a0b0dedcc",
+    "text": "NEWS GUARD | no HIGH impact event in the feed for the selected currencies"
+  },
+  {
+    "address": "0x25a0b0dee7c",
+    "text": "NEWS GUARD | feed OK | %d HIGH impact event(s) | GMT offset %+d h | next: %s"
+  },
+  {
+    "address": "0x25a0b0def3c",
+    "text": "none"
+  },
+  {
+    "address": "0x25a0b0def6c",
+    "text": "%s %s (%s)"
+  },
+  {
+    "address": "0x25a0b0defac",
+    "text": "Segoe UI Semibold"
+  },
+  {
+    "address": "0x25a0b0defec",
+    "text": "NEWS FILTER IS ON BUT INACTIVE - WEBREQUEST IS NOT ALLOWED"
+  },
+  {
+    "address": "0x25a0b0df17c",
+    "text": "high impact news"
+  },
+  {
+    "address": "0x25a0b0df1bc",
+    "text": "NEWS GUARD | %d pending order(s) cancelled around %s"
+  },
+  {
+    "address": "0x25a0b0df24c",
+    "text": "TRAIL | #%d %s newSL=%.2f"
+  },
+  {
+    "address": "0x25a0b0df2cc",
+    "text": "SELL"
+  },
+  {
+    "address": "0x25a0b0df35c",
+    "text": "TWPNL_"
+  },
+  {
+    "address": "0x25a0b0df38c",
+    "text": "_value"
+  },
+  {
+    "address": "0x25a0b0df3cc",
+    "text": "_link"
+  },
+  {
+    "address": "0x25a0b0df3ec",
+    "text": "SL ADJUSTED v2.1 | fill=%.2f origSL=%.2f newSL=%.2f"
+  },
+  {
+    "address": "0x25a0b0df47c",
+    "text": "SL ADJUST RETRY | ret=%d | %s"
+  },
+  {
+    "address": "0x25a0b0df4dc",
+    "text": "Segoe UI"
+  },
+  {
+    "address": "0x25a0b0df50c",
+    "text": "TWP31_PANEL3"
+  },
+  {
+    "address": "0x25a0b0df54c",
+    "text": "ERROR: unable to create TwisterPro 3.3 canvas panel."
+  },
+  {
+    "address": "0x25a0b0df5dc",
+    "text": "ALGO OFF"
+  },
+  {
+    "address": "0x25a0b0df60c",
+    "text": "MARKET CLOSED"
+  },
+  {
+    "address": "0x25a0b0df64c",
+    "text": "WEEKEND"
+  },
+  {
+    "address": "0x25a0b0df67c",
+    "text": "HOLIDAY PAUSE"
+  },
+  {
+    "address": "0x25a0b0df6bc",
+    "text": "NEWS PAUSE"
+  },
+  {
+    "address": "0x25a0b0df6fc",
+    "text": "DAILY LIMIT"
+  },
+  {
+    "address": "0x25a0b0df73c",
+    "text": "ACTIVE"
+  },
+  {
+    "address": "0x25a0b0df76c",
+    "text": "OFF  |  FIXED LOT"
+  },
+  {
+    "address": "0x25a0b0df7ac",
+    "text": "ON  |  "
+  },
+  {
+    "address": "0x25a0b0df81c",
+    "text": " pts"
+  },
+  {
+    "address": "0x25a0b0df83c",
+    "text": "MODE 2 - TWISTERPRO"
+  },
+  {
+    "address": "0x25a0b0df88c",
+    "text": "MODE 1 - LONG STOP"
+  },
+  {
+    "address": "0x25a0b0df8dc",
+    "text": "MODE 1 - SHORT STOP"
+  },
+  {
+    "address": "0x25a0b0df92c",
+    "text": "TWISTER"
+  },
+  {
+    "address": "0x25a0b0df98c",
+    "text": "ELITE TRADING EA  "
+  },
+  {
+    "address": "0x25a0b0df9b2",
+    "text": "  3.3"
+  },
+  {
+    "address": "0x25a0b0df9dc",
+    "text": "MODE 1"
+  },
+  {
+    "address": "0x25a0b0dfa0c",
+    "text": "Profit Day"
+  },
+  {
+    "address": "0x25a0b0dfa3c",
+    "text": "Profit Month"
+  },
+  {
+    "address": "0x25a0b0dfa6c",
+    "text": "Profit Total"
+  },
+  {
+    "address": "0x25a0b0dfa9c",
+    "text": "Lot Size"
+  },
+  {
+    "address": "0x25a0b0dfabc",
+    "text": "Spread"
+  },
+  {
+    "address": "0x25a0b0dfadc",
+    "text": "Last Slippage"
+  },
+  {
+    "address": "0x25a0b0dfb0c",
+    "text": "Risk"
+  },
+  {
+    "address": "0x25a0b0dfb2c",
+    "text": "Date"
+  },
+  {
+    "address": "0x25a0b0dfb4c",
+    "text": "Selected Mode"
+  },
+  {
+    "address": "0x25a0b0dfb7c",
+    "text": " lots"
+  },
+  {
+    "address": "0x25a0b0dfb9c",
+    "text": "EXNESS BROKER  "
+  },
+  {
+    "address": "0x25a0b0dfbbc",
+    "text": "  x10"
+  },
+  {
+    "address": "0x25a0b0dfbec",
+    "text": "DEFAULT BROKER"
+  },
+  {
+    "address": "0x25a0b0dfc2c",
+    "text": "TWP10_"
+  },
+  {
+    "address": "0x25a0b0dfc64",
+    "text": "Experts\\TwisterPro_v3_3.mq5"
+  },
+  {
+    "address": "0x25a0b0dfd54",
+    "text": "Include\\Trade\\OrderInfo.mqh"
+  },
+  {
+    "address": "0x25a0b0dfdd4",
+    "text": "Include\\Trade\\PositionInfo.mqh"
+  },
+  {
+    "address": "0x25a0b0dfe64",
+    "text": "Include\\Trade\\Trade.mqh"
+  },
+  {
+    "address": "0x25a0b0e0a54",
+    "text": "Include\\Canvas\\Canvas.mqh"
+  }
+]

@@ -1,0 +1,14 @@
+{
+  "original": "tworig_m1_a",
+  "recovered": "twreco_m1_a_v1",
+  "model": 1,
+  "from": "2026.09.29",
+  "to": "2026.10.03",
+  "original_events": 31,
+  "recovered_events": 31,
+  "all_simulated_time_messages_identical": true,
+  "first_differences": [],
+  "original_log_sha256": "5f737ab8376c609b75b884403d2205c9d10b9e1e3391c2295ed01ce8662cb651",
+  "recovered_log_sha256": "ac90ae40dcf34c24b12833cae60de108e856ec1751ee41846e14e0153608c25a",
+  "limit": "First four-day nonvisual tester run only; not complete UI/live equivalence."
+}

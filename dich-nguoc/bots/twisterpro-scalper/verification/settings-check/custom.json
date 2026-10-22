@@ -1,0 +1,15 @@
+{
+  "InpMagic": -731,
+  "UseFixedLot": "true",
+  "UseDD_Protection": "true",
+  "FixedLot": 0.07,
+  "RiskPercent": 1.375,
+  "MaxConsecLosses": 7,
+  "DD_LotMultiplier": 0.625,
+  "MaxDailyDD_Pct": 7.125,
+  "InpSL_Points": 1301,
+  "InpTP_Points": 2303,
+  "InpTSL_Start": 401,
+  "InpTSL_Step": 101,
+  "InpTSL_Distance": 211
+}

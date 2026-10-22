@@ -1,0 +1,9 @@
+{
+  "run": "re2batch1_14",
+  "source": "mt5-program-files/Quantum Titan MT5.ex5",
+  "source_sha256": "0B4B0F32B37A8F66422E9B875ED90CD31D8BEE6D74FCBC9A5E57752DAB5E465B",
+  "capture_exit": 0,
+  "tester_pid": 13888,
+  "runner_exit": 0,
+  "test_interrupted_after_capture": true
+}

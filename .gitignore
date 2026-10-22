@@ -1,0 +1,15 @@
+# Reproducible local tools and temporary runtime state.
+dich-nguoc/.local/
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+.env
+.env.*
+!.env.example
+*.tmp
+*.lock
+.DS_Store
+Thumbs.db
+
+# Deliberately keep original EA files, compiled evidence and recorded test logs.

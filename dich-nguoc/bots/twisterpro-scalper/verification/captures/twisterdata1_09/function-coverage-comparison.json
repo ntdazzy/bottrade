@@ -1,0 +1,18 @@
+{
+  "old_function_addresses": 70,
+  "verified_native_function_ranges": 76,
+  "missing_from_previous_export": [
+    "0xa30",
+    "0xa60",
+    "0xa80",
+    "0x18c0",
+    "0xd7c0",
+    "0xd890",
+    "0x106c0",
+    "0x1a1f0"
+  ],
+  "previous_addresses_outside_verified_starts": [
+    "0x12480",
+    "0x17740"
+  ]
+}

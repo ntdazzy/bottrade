@@ -1,0 +1,36 @@
+{
+  "pid": 17236,
+  "process": "C:\\Users\\NTD\\Desktop\\BotTradeEA\\local\\market-demos-20261020\\dich-nguoc-luot2\\terminal\\metatester64.exe",
+  "regions": [
+    {
+      "base": 1853900062720,
+      "allocation_base": 1853900062720,
+      "bytes": 4096,
+      "protect": 32,
+      "file": "000001afa50e0000.bin",
+      "sha256": "5fe7c18727401274db9c8dab9fcb9a880576615fc873c4c016deeb685eee8cb0"
+    },
+    {
+      "base": 140712181563392,
+      "allocation_base": 140712181563392,
+      "bytes": 4096,
+      "protect": 32,
+      "file": "00007ffa1b990000.bin",
+      "sha256": "d8f578cdc459833d5865b476469e5791bdaef4a420f7603fb744d521bf79a714"
+    },
+    {
+      "base": 140712181567488,
+      "allocation_base": 140712181563392,
+      "bytes": 4096,
+      "protect": 64,
+      "file": "00007ffa1b991000.bin",
+      "sha256": "ad7facb2586fc6e966c004d7d1d16b024f5805ff7cb47c7a85dabd8b48892ca7"
+    }
+  ],
+  "errors": [],
+  "bytes": 12288,
+  "query_end": {
+    "address": 140737488289792,
+    "windows_error": 87
+  }
+}

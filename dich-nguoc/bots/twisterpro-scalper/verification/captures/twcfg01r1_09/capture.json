@@ -1,0 +1,80 @@
+{
+  "pid": 31284,
+  "process": "C:\\Users\\NTD\\Desktop\\BotTradeEA\\local\\market-demos-20261020\\dich-nguoc-luot2\\terminal\\metatester64.exe",
+  "regions": [
+    {
+      "base": 2097462312960,
+      "allocation_base": 2097462312960,
+      "bytes": 110592,
+      "protect": 32,
+      "file": "000001e85a7f0000.bin",
+      "kind": "executable",
+      "sha256": "e8eb37683ba096162e603f17d7d5d53b62ab6e5bfa9e777c4b180c32d513419b"
+    },
+    {
+      "base": 140712181563392,
+      "allocation_base": 140712181563392,
+      "bytes": 4096,
+      "protect": 32,
+      "file": "00007ffa1b990000.bin",
+      "kind": "executable",
+      "sha256": "4feefc7b53f18a5aadf3be382b41507bf24f2668cea0e21ea5951fb6462bb39c"
+    },
+    {
+      "base": 140712181567488,
+      "allocation_base": 140712181563392,
+      "bytes": 4096,
+      "protect": 64,
+      "file": "00007ffa1b991000.bin",
+      "kind": "executable",
+      "sha256": "ad7facb2586fc6e966c004d7d1d16b024f5805ff7cb47c7a85dabd8b48892ca7"
+    },
+    {
+      "base": 2097462423552,
+      "allocation_base": 2097462312960,
+      "bytes": 86016,
+      "protect": 4,
+      "kind": "mutable_program_data",
+      "file": "000001e85a80b000-program-data.bin",
+      "sha256": "e07be1279d636acf8d81ccadb46f125a7bacf66ff227708050261569b8d1da0c"
+    }
+  ],
+  "errors": [],
+  "bytes": 204800,
+  "query_end": {
+    "address": 140737488289792,
+    "windows_error": 87
+  },
+  "allocation_layout": [
+    {
+      "base": 2097462312960,
+      "allocation_base": 2097462312960,
+      "bytes": 110592,
+      "protect": 32
+    },
+    {
+      "base": 2097462423552,
+      "allocation_base": 2097462312960,
+      "bytes": 86016,
+      "protect": 4
+    },
+    {
+      "base": 140712181563392,
+      "allocation_base": 140712181563392,
+      "bytes": 4096,
+      "protect": 32
+    },
+    {
+      "base": 140712181567488,
+      "allocation_base": 140712181563392,
+      "bytes": 4096,
+      "protect": 64
+    }
+  ],
+  "ready_byte": {
+    "rva": "0x22590",
+    "value": 1,
+    "wait_seconds": 0.063
+  },
+  "input_string_checks": []
+}

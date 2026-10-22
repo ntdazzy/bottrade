@@ -1,0 +1,42 @@
+[
+  {
+    "id": "twisterinputs1_09",
+    "ex5": "TwisterPro Scalper.ex5",
+    "period": "M15",
+    "from": "2026.09.29",
+    "to": "2026.10.20",
+    "timeout": 60,
+    "model": 0,
+    "symbol": "XAUUSD_NOCOST_V2",
+    "inputs": {
+      "InpMagic": 4500000001,
+      "TradeComment": "RE_PROBE_TC_20261020",
+      "BrokerType": 1,
+      "EAMode": 2,
+      "Mode1Stop": 1,
+      "UseFixedLot": "true",
+      "FixedLot": 0.07,
+      "RiskPercent": 1.375,
+      "UseDD_Protection": "true",
+      "MaxConsecLosses": 7,
+      "DD_LotMultiplier": 0.625,
+      "MaxDailyDD_Pct": 7.125,
+      "ShowPanel": "false",
+      "PanelX": 29,
+      "PanelY": 43,
+      "ShowPnLLabels": "false",
+      "UsePropFirmDelay": "true",
+      "PropFirmDelaySec": 17,
+      "InpSL_Points": 1301,
+      "InpTP_Points": 2303,
+      "InpTSL_Start": 401,
+      "InpTSL_Step": 101,
+      "InpTSL_Distance": 211,
+      "UseNewsFilter": "true",
+      "NewsStopBeforeMin": 19,
+      "NewsStopAfterMin": 23,
+      "NewsCurrencies": "EUR",
+      "UseHolidayFilter": "false"
+    }
+  }
+]

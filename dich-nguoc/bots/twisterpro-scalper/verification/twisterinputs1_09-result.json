@@ -1,0 +1,14 @@
+{
+  "run": "twisterinputs1_09",
+  "source": "mt5-btc-recovery/TwisterPro Scalper.ex5",
+  "source_sha256": "C705E2BBBB66D18E31E2A375625DFDEF69243CB73E684AF3A846D6AB33FABE73",
+  "capture_exit": 0,
+  "tester_pid": 24268,
+  "inputs_file": "C:\\Users\\NTD\\Desktop\\BotTradeEA\\local\\market-demos-20261020\\dich-nguoc-luot2\\input-probes\\changed-values-01.json",
+  "inputs_sha256": "4E7B22690F4E360E2A5F574B5E323E16EC86F7C8EA7A355B25C2FA729D9C60D7",
+  "engine_base": "0x7ff652fe0000",
+  "engine_sha256": "5033D9D45D669CEBD735E8A6BE20B54D74B75274F885C9A0E48E52D872104EFB",
+  "cleanup_errors": [],
+  "runner_exit": 0,
+  "test_interrupted_after_capture": true
+}

@@ -1,0 +1,20 @@
+{
+  "magic_requested": -731,
+  "magic_read_int32": -731,
+  "magic_slot_bytes": "25fdffff00000000",
+  "string_checks": [
+    {
+      "name": "TradeComment",
+      "rva": "0x24f20",
+      "matches_expected": true,
+      "windows_error": 0
+    },
+    {
+      "name": "NewsCurrencies",
+      "rva": "0x24ff0",
+      "matches_expected": true,
+      "windows_error": 0
+    }
+  ],
+  "capture_errors": []
+}

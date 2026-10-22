@@ -1,0 +1,1568 @@
+{
+  "date_vietnam": "2026-10-20",
+  "summary": {
+    "ex5_files_scanned": 17,
+    "bot_names": 15,
+    "compressed_candidates": 1182,
+    "decoded_streams": 6,
+    "decoded_streams_within_png": 6,
+    "valid_png_images": 7,
+    "valid_embedded_pe_count": 0,
+    "plain_source_token_hits": 0,
+    "recovered_mq5_files": 0
+  },
+  "method": "Offline byte scan: plain strings, specific source tokens, validated PE headers, ELF/ZIP signatures, common compression signatures with decoder checks, PNG CRC checks and complete IDAT decompression.",
+  "limits": [
+    "No EX5 instruction decoder, native-code decompiler or running-process analysis was used.",
+    "Entropy is a descriptive statistic, not proof of a specific encryption algorithm.",
+    "Signature-based scanning cannot rule out undocumented packing or encrypted embedded data.",
+    "Printable strings can include accidental matches and are not recovered source code."
+  ],
+  "files": [
+    {
+      "path": "mt5-btc-recovery/AI Golden Life MT5.ex5",
+      "sha256": "7F162ECCA001271C7359504A795D71B6BA7E6AE4C9930811930627D80C4AE949",
+      "bytes": 600464,
+      "raw_printable_strings": [
+        {
+          "offset": 168,
+          "encoding": "utf-16le",
+          "text": "MQL BLUE"
+        },
+        {
+          "offset": 424,
+          "encoding": "utf-16le",
+          "text": "https://www.mqlblue.com"
+        },
+        {
+          "offset": 142800,
+          "encoding": "utf-16le",
+          "text": "ai-golden-life.bmp"
+        }
+      ],
+      "plain_source_token_hits": [],
+      "valid_embedded_pe_offsets": [],
+      "elf_signature_offsets": [],
+      "zip_signature_offsets": [],
+      "byte_entropy_after4096": 7.999685942652736,
+      "png_images": [],
+      "invalid_png_candidates": [],
+      "compression_attempts": {
+        "candidate_count": 36,
+        "failures": {
+          "error: Error -3 while decompressing data: invalid code lengths set": 3,
+          "error: Error -3 while decompressing data: invalid block type": 12,
+          "error: Error -3 while decompressing data: invalid stored block lengths": 10,
+          "error: Error -3 while decompressing data: invalid distance too far back": 10,
+          "error: Error -3 while decompressing data: invalid distance code": 1
+        },
+        "decoded": [],
+        "output_limit_bytes": 33554432
+      },
+      "source_recovered": false
+    },
+    {
+      "path": "mt5-btc-recovery/CryonX EA MT5.ex5",
+      "sha256": "0791D1A189DC1805E9764805A978A62FBB9F9B07DB192C8CFB2D26B09818D3F9",
+      "bytes": 775396,
+      "raw_printable_strings": [
+        {
+          "offset": 168,
+          "encoding": "utf-16le",
+          "text": "Copyright 2023, MetaQuotes Ltd."
+        },
+        {
+          "offset": 424,
+          "encoding": "utf-16le",
+          "text": "https://www.mql5.com"
+        },
+        {
+          "offset": 301466,
+          "encoding": "utf-16le",
+          "text": "Images\\Animation_CryonxX\\CryonxX.bmp"
+        },
+        {
+          "offset": 301622,
+          "encoding": "utf-16le",
+          "text": "Images\\Animation_CryonxX\\CryonxX_2.bmp"
+        }
+      ],
+      "plain_source_token_hits": [],
+      "valid_embedded_pe_offsets": [],
+      "elf_signature_offsets": [],
+      "zip_signature_offsets": [],
+      "byte_entropy_after4096": 7.504506976118541,
+      "png_images": [],
+      "invalid_png_candidates": [],
+      "compression_attempts": {
+        "candidate_count": 28,
+        "failures": {
+          "error: Error -3 while decompressing data: invalid block type": 7,
+          "error: Error -3 while decompressing data: invalid code lengths set": 5,
+          "error: Error -3 while decompressing data: invalid distance code": 1,
+          "error: Error -3 while decompressing data: invalid stored block lengths": 8,
+          "error: Error -3 while decompressing data: invalid distance too far back": 6,
+          "error: Error -3 while decompressing data: invalid literal/length code": 1
+        },
+        "decoded": [],
+        "output_limit_bytes": 33554432
+      },
+      "source_recovered": false
+    },
+    {
+      "path": "mt5-btc-recovery/Dynamic Liquidity Intelligence.ex5",
+      "sha256": "E69FAB805E88ED5306D43748953873958294D97325555907312473086F611523",
+      "bytes": 127938,
+      "raw_printable_strings": [
+        {
+          "offset": 168,
+          "encoding": "utf-16le",
+          "text": "Sathit Sukhirun"
+        },
+        {
+          "offset": 424,
+          "encoding": "utf-16le",
+          "text": "https://www.mql5.com/en/users/nicedata"
+        },
+        {
+          "offset": 680,
+          "encoding": "utf-16le",
+          "text": "2.27"
+        }
+      ],
+      "plain_source_token_hits": [],
+      "valid_embedded_pe_offsets": [],
+      "elf_signature_offsets": [],
+      "zip_signature_offsets": [],
+      "byte_entropy_after4096": 7.998408771084786,
+      "png_images": [],
+      "invalid_png_candidates": [],
+      "compression_attempts": {
+        "candidate_count": 9,
+        "failures": {
+          "error: Error -3 while decompressing data: invalid code lengths set": 4,
+          "error: Error -3 while decompressing data: invalid stored block lengths": 1,
+          "error: Error -3 while decompressing data: invalid block type": 3,
+          "error: Error -3 while decompressing data: invalid distance too far back": 1
+        },
+        "decoded": [],
+        "output_limit_bytes": 33554432
+      },
+      "source_recovered": false
+    },
+    {
+      "path": "mt5-btc-recovery/Gold Beaver.ex5",
+      "sha256": "EA5174FE310381AF65984953F113D1B10E422ACB95FEA41B18491BC40C055885",
+      "bytes": 762912,
+      "raw_printable_strings": [
+        {
+          "offset": 168,
+          "encoding": "utf-16le",
+          "text": "2026, Arnold Bobrinskii"
+        },
+        {
+          "offset": 680,
+          "encoding": "utf-16le",
+          "text": "5.56"
+        },
+        {
+          "offset": 604068,
+          "encoding": "utf-16le",
+          "text": "Files\\WallPapers\\bober3.bmp"
+        },
+        {
+          "offset": 604224,
+          "encoding": "utf-16le",
+          "text": "Images\\fxBL\\gb_logo.bmp"
+        }
+      ],
+      "plain_source_token_hits": [],
+      "valid_embedded_pe_offsets": [],
+      "elf_signature_offsets": [],
+      "zip_signature_offsets": [],
+      "byte_entropy_after4096": 7.999768269826952,
+      "png_images": [],
+      "invalid_png_candidates": [],
+      "compression_attempts": {
+        "candidate_count": 42,
+        "failures": {
+          "error: Error -3 while decompressing data: invalid code lengths set": 9,
+          "error: Error -3 while decompressing data: invalid stored block lengths": 11,
+          "error: Error -3 while decompressing data: invalid block type": 11,
+          "error: Error -3 while decompressing data: invalid distance too far back": 8,
+          "error: Error -3 while decompressing data: invalid literal/length code": 2,
+          "error: Error -3 while decompressing data: invalid distance code": 1
+        },
+        "decoded": [],
+        "output_limit_bytes": 33554432
+      },
+      "source_recovered": false
+    },
+    {
+      "path": "mt5-btc-recovery/Gold Trade Pro MT5.ex5",
+      "sha256": "A3B0DE423A06E10EBEDC279307B93D7CB9188BA2BB5DE77131A913C865B0E922",
+      "bytes": 237660,
+      "raw_printable_strings": [
+        {
+          "offset": 168,
+          "encoding": "utf-16le",
+          "text": "Copyright 2023 - Wim Schrynemakers"
+        }
+      ],
+      "plain_source_token_hits": [],
+      "valid_embedded_pe_offsets": [],
+      "elf_signature_offsets": [],
+      "zip_signature_offsets": [],
+      "byte_entropy_after4096": 7.999176302937047,
+      "png_images": [],
+      "invalid_png_candidates": [],
+      "compression_attempts": {
+        "candidate_count": 13,
+        "failures": {
+          "error: Error -3 while decompressing data: invalid block type": 4,
+          "error: Error -3 while decompressing data: invalid code lengths set": 3,
+          "error: Error -3 while decompressing data: invalid stored block lengths": 3,
+          "error: Error -3 while decompressing data: invalid distance too far back": 2,
+          "error: Error -3 while decompressing data: invalid distance code": 1
+        },
+        "decoded": [],
+        "output_limit_bytes": 33554432
+      },
+      "source_recovered": false
+    },
+    {
+      "path": "mt5-btc-recovery/Goldbot One MT5.ex5",
+      "sha256": "390D8AB14FC213FF4B8CBE5084BEC545526E62C6028516FE21219A59398CE795",
+      "bytes": 226872,
+      "raw_printable_strings": [
+        {
+          "offset": 168,
+          "encoding": "utf-16le",
+          "text": "Copyright 2024 - Wim Schrynemakers"
+        }
+      ],
+      "plain_source_token_hits": [],
+      "valid_embedded_pe_offsets": [],
+      "elf_signature_offsets": [],
+      "zip_signature_offsets": [],
+      "byte_entropy_after4096": 7.9991984432284475,
+      "png_images": [],
+      "invalid_png_candidates": [],
+      "compression_attempts": {
+        "candidate_count": 15,
+        "failures": {
+          "error: Error -3 while decompressing data: invalid code lengths set": 2,
+          "error: Error -3 while decompressing data: invalid distance too far back": 4,
+          "error: Error -3 while decompressing data: invalid block type": 3,
+          "error: Error -3 while decompressing data: invalid stored block lengths": 5,
+          "error: Error -3 while decompressing data: invalid distance code": 1
+        },
+        "decoded": [],
+        "output_limit_bytes": 33554432
+      },
+      "source_recovered": false
+    },
+    {
+      "path": "mt5-btc-recovery/MoonDog EA.ex5",
+      "sha256": "D019AE0232A15A121CBA3E857D66BFE1B1828EBB8205B6FB509249F00F9F4DF6",
+      "bytes": 11307865,
+      "raw_printable_strings": [
+        {
+          "offset": 2300429,
+          "encoding": "ascii",
+          "text": "5D!m:D+p8UF)N?&T"
+        },
+        {
+          "offset": 3384136,
+          "encoding": "ascii",
+          "text": "o8@-erQf4-cnz.uGz"
+        },
+        {
+          "offset": 6263170,
+          "encoding": "ascii",
+          "text": "cF8C&tccZ wIbr'>"
+        },
+        {
+          "offset": 8087906,
+          "encoding": "ascii",
+          "text": "$R_[{eBFERgs*8Du~"
+        },
+        {
+          "offset": 680,
+          "encoding": "utf-16le",
+          "text": "4.21"
+        },
+        {
+          "offset": 554952,
+          "encoding": "utf-16le",
+          "text": "moon_dashboard_hero_r4_compact.bmp"
+        },
+        {
+          "offset": 555108,
+          "encoding": "utf-16le",
+          "text": "moon_dashboard_hero_r4_readable.bmp"
+        },
+        {
+          "offset": 555264,
+          "encoding": "utf-16le",
+          "text": "moon_hero_rich_v339.bmp"
+        },
+        {
+          "offset": 555420,
+          "encoding": "utf-16le",
+          "text": "moondog_execution_lab_bg_r4_compact.bmp"
+        },
+        {
+          "offset": 555576,
+          "encoding": "utf-16le",
+          "text": "moondog_execution_lab_bg_r4_readable.bmp"
+        },
+        {
+          "offset": 555732,
+          "encoding": "utf-16le",
+          "text": "moondog_launch_splash_v33.bmp"
+        }
+      ],
+      "plain_source_token_hits": [],
+      "valid_embedded_pe_offsets": [],
+      "elf_signature_offsets": [],
+      "zip_signature_offsets": [],
+      "byte_entropy_after4096": 7.999982334278252,
+      "png_images": [
+        {
+          "offset": 11110586,
+          "end": 11111522,
+          "bytes": 936,
+          "width": 16,
+          "height": 16,
+          "sha256": "DFC43E320DB2CBA2353930C12D5C3A04F8A035B4C5779AA60009361F49EE6D5D",
+          "file": "MoonDog-offset-11110586.png",
+          "chunks": [
+            "IHDR",
+            "IDAT",
+            "IEND"
+          ],
+          "pixel_bytes": 1040
+        },
+        {
+          "offset": 11111522,
+          "end": 11113362,
+          "bytes": 1840,
+          "width": 24,
+          "height": 24,
+          "sha256": "F2DCDD583B40587C6DECED6EF9D52AF3FF68FA81DC784DC6132952F96BE6DE88",
+          "file": "MoonDog-offset-11111522.png",
+          "chunks": [
+            "IHDR",
+            "IDAT",
+            "IEND"
+          ],
+          "pixel_bytes": 2328
+        },
+        {
+          "offset": 11113362,
+          "end": 11116383,
+          "bytes": 3021,
+          "width": 32,
+          "height": 32,
+          "sha256": "2394878149830A3D4DE36A469A064BA991263D4B7F26DF36BF02A8A2D32C35CF",
+          "file": "MoonDog-offset-11113362.png",
+          "chunks": [
+            "IHDR",
+            "IDAT",
+            "IEND"
+          ],
+          "pixel_bytes": 4128
+        },
+        {
+          "offset": 11116383,
+          "end": 11122544,
+          "bytes": 6161,
+          "width": 48,
+          "height": 48,
+          "sha256": "DAAB63411F07FC2DB33D03052A2DF2C8704B1FCADA25BF6A1A952E129EC39FF9",
+          "file": "MoonDog-offset-11116383.png",
+          "chunks": [
+            "IHDR",
+            "IDAT",
+            "IEND"
+          ],
+          "pixel_bytes": 9264
+        },
+        {
+          "offset": 11122544,
+          "end": 11132837,
+          "bytes": 10293,
+          "width": 64,
+          "height": 64,
+          "sha256": "6204585B370CBECFA44941F38804731C4296AC7694126DFAC2E2E44A566752DE",
+          "file": "MoonDog-offset-11122544.png",
+          "chunks": [
+            "IHDR",
+            "IDAT",
+            "IEND"
+          ],
+          "pixel_bytes": 16448
+        },
+        {
+          "offset": 11132837,
+          "end": 11170547,
+          "bytes": 37710,
+          "width": 128,
+          "height": 128,
+          "sha256": "FD8CC57660E9ED1F547673A33CFE82321EEDC3005FCDF361B4047D43C292137B",
+          "file": "MoonDog-offset-11132837.png",
+          "chunks": [
+            "IHDR",
+            "IDAT",
+            "IEND"
+          ],
+          "pixel_bytes": 65664
+        },
+        {
+          "offset": 11170547,
+          "end": 11307865,
+          "bytes": 137318,
+          "width": 256,
+          "height": 256,
+          "sha256": "D02926A95762C20DDD46B790C9A2DDCA58F0A0AB089440122E7E5CB5816E8D64",
+          "file": "MoonDog-offset-11170547.png",
+          "chunks": [
+            "IHDR",
+            "IDAT",
+            "IDAT",
+            "IDAT",
+            "IEND"
+          ],
+          "pixel_bytes": 262400
+        }
+      ],
+      "invalid_png_candidates": [],
+      "compression_attempts": {
+        "candidate_count": 663,
+        "failures": {
+          "error: Error -3 while decompressing data: invalid block type": 165,
+          "error: Error -3 while decompressing data: invalid stored block lengths": 173,
+          "error: Error -3 while decompressing data: invalid distance too far back": 145,
+          "error: Error -3 while decompressing data: invalid code lengths set": 133,
+          "error: Error -3 while decompressing data: incorrect data check": 6,
+          "error: Error -3 while decompressing data: invalid literal/length code": 12,
+          "error: Error -3 while decompressing data: invalid distance code": 8,
+          "error: Error -3 while decompressing data: too many length or distance symbols": 15
+        },
+        "decoded": [
+          {
+            "offset": 11110627,
+            "format": "zlib",
+            "decoded_bytes": 1040,
+            "sha256": "97A6F960CE024BD38B266A5BC8CA85255167911E90C3AE783A622FE6A4DD0F15",
+            "source_token_hits": [],
+            "within_png": "MoonDog-offset-11110586.png"
+          },
+          {
+            "offset": 11111563,
+            "format": "zlib",
+            "decoded_bytes": 2328,
+            "sha256": "35C811F45269A72835F8377D389EB40916C6D3484728E3B15807820A6B231E9E",
+            "source_token_hits": [],
+            "within_png": "MoonDog-offset-11111522.png"
+          },
+          {
+            "offset": 11113403,
+            "format": "zlib",
+            "decoded_bytes": 4128,
+            "sha256": "3F8487E843720BAB89EB96F81EFA8EEA5794AA2B4B0E71F6289CC73B7C0095FB",
+            "source_token_hits": [],
+            "within_png": "MoonDog-offset-11113362.png"
+          },
+          {
+            "offset": 11116424,
+            "format": "zlib",
+            "decoded_bytes": 9264,
+            "sha256": "B4E3314B93A1CFFA402183B0E79663ADE79041877CD3CCD73CEE45B9CDAC38D3",
+            "source_token_hits": [],
+            "within_png": "MoonDog-offset-11116383.png"
+          },
+          {
+            "offset": 11122585,
+            "format": "zlib",
+            "decoded_bytes": 16448,
+            "sha256": "AC57C1EC5157ACF144060187E0DF4994A3E4EE3FEB96ED8C965B5ADA464A0187",
+            "source_token_hits": [],
+            "within_png": "MoonDog-offset-11122544.png"
+          },
+          {
+            "offset": 11132878,
+            "format": "zlib",
+            "decoded_bytes": 65664,
+            "sha256": "C0054E55EE18D40E3B5A75344E1FE4ACA0DCDB592CE16B830092439C2B9651E1",
+            "source_token_hits": [],
+            "within_png": "MoonDog-offset-11132837.png"
+          }
+        ],
+        "output_limit_bytes": 33554432
+      },
+      "source_recovered": false
+    },
+    {
+      "path": "mt5-btc-recovery/Quantum Titan MT5.ex5",
+      "sha256": "74A780C9CF6E2C8283DFBBD61BD74D44CE8EA71459D9234245CE2240F02DE049",
+      "bytes": 168798,
+      "raw_printable_strings": [
+        {
+          "offset": 168,
+          "encoding": "utf-16le",
+          "text": "Click here to contact the author."
+        },
+        {
+          "offset": 424,
+          "encoding": "utf-16le",
+          "text": "https://www.mql5.com/en/users/weredeu"
+        }
+      ],
+      "plain_source_token_hits": [],
+      "valid_embedded_pe_offsets": [],
+      "elf_signature_offsets": [],
+      "zip_signature_offsets": [],
+      "byte_entropy_after4096": 7.998945246995384,
+      "png_images": [],
+      "invalid_png_candidates": [],
+      "compression_attempts": {
+        "candidate_count": 4,
+        "failures": {
+          "error: Error -3 while decompressing data: invalid distance code": 1,
+          "error: Error -3 while decompressing data: invalid distance too far back": 1,
+          "error: Error -3 while decompressing data: invalid block type": 2
+        },
+        "decoded": [],
+        "output_limit_bytes": 33554432
+      },
+      "source_recovered": false
+    },
+    {
+      "path": "mt5-btc-recovery/TwisterPro Scalper.ex5",
+      "sha256": "C705E2BBBB66D18E31E2A375625DFDEF69243CB73E684AF3A846D6AB33FABE73",
+      "bytes": 109212,
+      "raw_printable_strings": [
+        {
+          "offset": 168,
+          "encoding": "utf-16le",
+          "text": "Copyright 2026, Twister Pro Systems"
+        },
+        {
+          "offset": 424,
+          "encoding": "utf-16le",
+          "text": "https://www.mql5.com"
+        },
+        {
+          "offset": 680,
+          "encoding": "utf-16le",
+          "text": "3.30"
+        }
+      ],
+      "plain_source_token_hits": [],
+      "valid_embedded_pe_offsets": [],
+      "elf_signature_offsets": [],
+      "zip_signature_offsets": [],
+      "byte_entropy_after4096": 7.99807153322689,
+      "png_images": [],
+      "invalid_png_candidates": [],
+      "compression_attempts": {
+        "candidate_count": 10,
+        "failures": {
+          "error: Error -3 while decompressing data: invalid code lengths set": 2,
+          "error: Error -3 while decompressing data: invalid stored block lengths": 3,
+          "error: Error -3 while decompressing data: invalid distance too far back": 4,
+          "error: Error -3 while decompressing data: invalid block type": 1
+        },
+        "decoded": [],
+        "output_limit_bytes": 33554432
+      },
+      "source_recovered": false
+    },
+    {
+      "path": "mt5-btc-recovery/Ultimate Breakout System.ex5",
+      "sha256": "6309CDFC78467DC7C9E5482BDB77F75D9D1061EBFD3A28DD89697DB91317C920",
+      "bytes": 423012,
+      "raw_printable_strings": [
+        {
+          "offset": 168,
+          "encoding": "utf-16le",
+          "text": "Copyright 2026 - Profalgo LTD"
+        },
+        {
+          "offset": 424,
+          "encoding": "utf-16le",
+          "text": "https://www.forexeasolutions.com"
+        }
+      ],
+      "plain_source_token_hits": [],
+      "valid_embedded_pe_offsets": [],
+      "elf_signature_offsets": [],
+      "zip_signature_offsets": [],
+      "byte_entropy_after4096": 7.999549334376505,
+      "png_images": [],
+      "invalid_png_candidates": [],
+      "compression_attempts": {
+        "candidate_count": 16,
+        "failures": {
+          "error: Error -3 while decompressing data: invalid block type": 4,
+          "error: Error -3 while decompressing data: invalid stored block lengths": 4,
+          "error: Error -3 while decompressing data: invalid code lengths set": 4,
+          "error: Error -3 while decompressing data: invalid distance too far back": 4
+        },
+        "decoded": [],
+        "output_limit_bytes": 33554432
+      },
+      "source_recovered": false
+    },
+    {
+      "path": "mt5-program-files/EA Super Trend XAUUSD.ex5",
+      "sha256": "F9A04943CACC50AD0FD4CD1CBF84AACCC3D6B294A438CBD2100AEA82E7EDEF39",
+      "bytes": 267650,
+      "raw_printable_strings": [
+        {
+          "offset": 168,
+          "encoding": "utf-16le",
+          "text": "Copyright 2026,Trading Systems EA Quantum Lab | Algorithms, Indicators, Signals"
+        },
+        {
+          "offset": 424,
+          "encoding": "utf-16le",
+          "text": "https://t.me/EAQuantumLab"
+        }
+      ],
+      "plain_source_token_hits": [],
+      "valid_embedded_pe_offsets": [],
+      "elf_signature_offsets": [],
+      "zip_signature_offsets": [],
+      "byte_entropy_after4096": 7.99930223642036,
+      "png_images": [],
+      "invalid_png_candidates": [],
+      "compression_attempts": {
+        "candidate_count": 15,
+        "failures": {
+          "error: Error -3 while decompressing data: invalid stored block lengths": 2,
+          "error: Error -3 while decompressing data: invalid distance too far back": 2,
+          "error: Error -3 while decompressing data: invalid block type": 8,
+          "error: Error -3 while decompressing data: invalid code lengths set": 2,
+          "error: Error -3 while decompressing data: too many length or distance symbols": 1
+        },
+        "decoded": [],
+        "output_limit_bytes": 33554432
+      },
+      "source_recovered": false
+    },
+    {
+      "path": "mt5-program-files/My AI Gold.ex5",
+      "sha256": "E1F1BF70C8E2AECCCC3A09555DE57015A9955CF96F12609CCE3A59FDB71FA306",
+      "bytes": 3680992,
+      "raw_printable_strings": [
+        {
+          "offset": 168,
+          "encoding": "utf-16le",
+          "text": "Vitalii Kosov"
+        },
+        {
+          "offset": 680,
+          "encoding": "utf-16le",
+          "text": "1.75"
+        },
+        {
+          "offset": 124484,
+          "encoding": "utf-16le",
+          "text": "MyAIGoldHistory.ex5"
+        },
+        {
+          "offset": 124640,
+          "encoding": "utf-16le",
+          "text": "MyAIGoldSkin.bmp"
+        }
+      ],
+      "plain_source_token_hits": [],
+      "valid_embedded_pe_offsets": [],
+      "elf_signature_offsets": [],
+      "zip_signature_offsets": [],
+      "byte_entropy_after4096": 7.999946825447369,
+      "png_images": [],
+      "invalid_png_candidates": [],
+      "compression_attempts": {
+        "candidate_count": 234,
+        "failures": {
+          "error: Error -3 while decompressing data: invalid block type": 58,
+          "error: Error -3 while decompressing data: invalid stored block lengths": 58,
+          "error: Error -3 while decompressing data: invalid literal/length code": 2,
+          "error: Error -3 while decompressing data: invalid code lengths set": 51,
+          "error: Error -3 while decompressing data: invalid distance too far back": 49,
+          "error: Error -3 while decompressing data: invalid distance code": 6,
+          "error: Error -3 while decompressing data: too many length or distance symbols": 8,
+          "error: Error -3 while decompressing data: incorrect data check": 2
+        },
+        "decoded": [],
+        "output_limit_bytes": 33554432
+      },
+      "source_recovered": false
+    },
+    {
+      "path": "mt5-program-files/Quantum Queen X MT5.ex5",
+      "sha256": "BD6AA7E27C9748A26304E5E8AF6EC796037F0CD4978B1AC973F0F38DF4DF9ECD",
+      "bytes": 489074,
+      "raw_printable_strings": [
+        {
+          "offset": 371629,
+          "encoding": "ascii",
+          "text": "#>%A_6Tq=Zu@Ud4CS"
+        },
+        {
+          "offset": 382278,
+          "encoding": "ascii",
+          "text": "UktJSWJORLSVHTa$3>"
+        },
+        {
+          "offset": 384876,
+          "encoding": "ascii",
+          "text": "Vl}MQTqw|,;I@KSQco"
+        },
+        {
+          "offset": 399727,
+          "encoding": "ascii",
+          "text": "\"%>>?BCC??@011$%&"
+        },
+        {
+          "offset": 400330,
+          "encoding": "ascii",
+          "text": " $FGHXYYJKL9:;.00%(+"
+        },
+        {
+          "offset": 400933,
+          "encoding": "ascii",
+          "text": "8I*3;BDEQSSBEF146!09)+-%'(,./.00"
+        },
+        {
+          "offset": 401500,
+          "encoding": "ascii",
+          "text": "(1B?=ZWU6FP\\WT{vs"
+        },
+        {
+          "offset": 401521,
+          "encoding": "ascii",
+          "text": "q`TXY788@JQ!##/?IHZe+>I"
+        },
+        {
+          "offset": 401551,
+          "encoding": "ascii",
+          "text": "\"&%4A245')*ACD,./"
+        },
+        {
+          "offset": 401618,
+          "encoding": "ascii",
+          "text": "# (/!',865432.38G@=210"
+        },
+        {
+          "offset": 402215,
+          "encoding": "ascii",
+          "text": "*'+.0350>HDAA,:E?BDFCC<98('("
+        },
+        {
+          "offset": 402811,
+          "encoding": "ascii",
+          "text": ")5#1<8<@CFJPVY1@MIV`ALW$/<A=<%%("
+        },
+        {
+          "offset": 403406,
+          "encoding": "ascii",
+          "text": "/+6>7;@6@HIMRaeirw|E]r"
+        },
+        {
+          "offset": 403960,
+          "encoding": "ascii",
+          "text": "&327;(086AI?R_*-0"
+        },
+        {
+          "offset": 403999,
+          "encoding": "ascii",
+          "text": ")/(4=*:G>DHKPTOX`Zbl{"
+        },
+        {
+          "offset": 404538,
+          "encoding": "ascii",
+          "text": "~[?QA63DQBNX.CS?l"
+        },
+        {
+          "offset": 404593,
+          "encoding": "ascii",
+          "text": "%*$-516::>B@NZX]bflqht}p~"
+        },
+        {
+          "offset": 405144,
+          "encoding": "ascii",
+          "text": "(<MCKR&2= .<.I_@R]=`v%>O#/7(,0"
+        },
+        {
+          "offset": 405182,
+          "encoding": "ascii",
+          "text": "(-6>\"'+ 2A2CN8=@=BFGMRN]kx~"
+        },
+        {
+          "offset": 405688,
+          "encoding": "ascii",
+          "text": "!0CYi6BKFU^2I[#&'"
+        },
+        {
+          "offset": 405782,
+          "encoding": "ascii",
+          "text": " 6>E;@E6@GKPUEJOLRW_ekbo|"
+        },
+        {
+          "offset": 405834,
+          "encoding": "ascii",
+          "text": "8DL\"$%'3<G@=AOW9Pb"
+        },
+        {
+          "offset": 406383,
+          "encoding": "ascii",
+          "text": ";DKPU[fmuOTYV\\agntz"
+        },
+        {
+          "offset": 406905,
+          "encoding": "ascii",
+          "text": "8>=-FX\"7G-Lb1L[,@N&Qm!D_2Pf"
+        },
+        {
+          "offset": 406979,
+          "encoding": "ascii",
+          "text": "$!:QCKSX_fY^d]djry"
+        },
+        {
+          "offset": 407373,
+          "encoding": "ascii",
+          "text": "&Cg$>c5Qz%Cn+Gr5T"
+        },
+        {
+          "offset": 408104,
+          "encoding": "ascii",
+          "text": "*)=Q)>M'19.9B6:@Z\\b8;B"
+        },
+        {
+          "offset": 409404,
+          "encoding": "ascii",
+          "text": "):K4Pp%3DNk|1OaGbuW_g%(+"
+        },
+        {
+          "offset": 410005,
+          "encoding": "ascii",
+          "text": "%3 >d<Ncajq_ozKj}9a|"
+        },
+        {
+          "offset": 410513,
+          "encoding": "ascii",
+          "text": "-.=J,?P,7@;>?hlpVfx+Lz"
+        },
+        {
+          "offset": 410605,
+          "encoding": "ascii",
+          "text": "1P'Hq;SrYcjOV^(6B:KW4EP'8D!"
+        },
+        {
+          "offset": 413095,
+          "encoding": "ascii",
+          "text": "0A@HQLOUCIP.CW(E^,?R(:O 9M%;P"
+        },
+        {
+          "offset": 413686,
+          "encoding": "ascii",
+          "text": "*IAN\\LYg?P`'>S&Jh"
+        },
+        {
+          "offset": 413710,
+          "encoding": "ascii",
+          "text": "+E/E\\2I_anvlw~3EVG`u"
+        },
+        {
+          "offset": 414055,
+          "encoding": "ascii",
+          "text": "&?%7INU]RYaR[eAKX"
+        },
+        {
+          "offset": 414183,
+          "encoding": "ascii",
+          "text": "*N}9X{2R~/Lv.Ir.Jnv}"
+        },
+        {
+          "offset": 414271,
+          "encoding": "ascii",
+          "text": "'J*=WNXdR[fV_j?Pc"
+        },
+        {
+          "offset": 414289,
+          "encoding": "ascii",
+          "text": "6N,?S)=T6GWFVhWdshv"
+        },
+        {
+          "offset": 414733,
+          "encoding": "ascii",
+          "text": "%4c`bGRZdmy2Hl1Jr.Lw4T~6W~-P"
+        },
+        {
+          "offset": 414783,
+          "encoding": "ascii",
+          "text": "+N|7Vx3R~/Ku-Hp%AfgoyJZgNTY"
+        },
+        {
+          "offset": 414871,
+          "encoding": "ascii",
+          "text": "8`8Jc[bh^dkjrzjqz`u"
+        },
+        {
+          "offset": 415332,
+          "encoding": "ascii",
+          "text": "!(1XVW?MXFSj2Hl2Kr1Py<^"
+        },
+        {
+          "offset": 415383,
+          "encoding": "ascii",
+          "text": ",P}7Wz2P{1Nv-Ir'Bh1DZT]dJMQ"
+        },
+        {
+          "offset": 415524,
+          "encoding": "ascii",
+          "text": "Ae|>]t6K\\Qgxlnm-24"
+        },
+        {
+          "offset": 415932,
+          "encoding": "ascii",
+          "text": "$2AZ[\\hos!9\\1Gk3Mt4R|@`"
+        },
+        {
+          "offset": 415986,
+          "encoding": "ascii",
+          "text": "3Ty3Qz3Qw-Jr'Bh1Je]ae>EM"
+        },
+        {
+          "offset": 416542,
+          "encoding": "ascii",
+          "text": "3V4Jo3Nu6R{>]~,M{4W"
+        },
+        {
+          "offset": 416586,
+          "encoding": "ascii",
+          "text": ",Mw:Y~2Py/Ko'Dk-Mkcgj<EN'&("
+        },
+        {
+          "offset": 417102,
+          "encoding": "ascii",
+          "text": ",*)]Z[AACKMP\\]`&"
+        },
+        {
+          "offset": 417142,
+          "encoding": "ascii",
+          "text": "1T3Ko-Iq7T|=\\~1V"
+        },
+        {
+          "offset": 417699,
+          "encoding": "ascii",
+          "text": "# \"DABwvxLIKGIN889.,,"
+        },
+        {
+          "offset": 417819,
+          "encoding": "ascii",
+          "text": "&%&#!\"013SUY% !CDGX[^@@B* "
+        },
+        {
+          "offset": 417859,
+          "encoding": "ascii",
+          "text": "<h&Gx&Hz Cv Dw@i"
+        },
+        {
+          "offset": 418330,
+          "encoding": "ascii",
+          "text": "(83<Eijm5K`3Fb\"<Y$?e3R|Ab"
+        },
+        {
+          "offset": 418456,
+          "encoding": "ascii",
+          "text": "2[!Ap$Hz%Gy\"Dv\"Gz2Y"
+        },
+        {
+          "offset": 418863,
+          "encoding": "ascii",
+          "text": "&*19@Q<Qv'Ds)Hx1P"
+        },
+        {
+          "offset": 418929,
+          "encoding": "ascii",
+          "text": "%2>7EPyy|'<S'8Q1Ki"
+        },
+        {
+          "offset": 418962,
+          "encoding": "ascii",
+          "text": "6U|2`}(KmA\\o$A['Tu?b"
+        },
+        {
+          "offset": 420128,
+          "encoding": "ascii",
+          "text": "! ,8AJQET_Zbi*?V(Gb(S{"
+        },
+        {
+          "offset": 420727,
+          "encoding": "ascii",
+          "text": "#*&4A'3>PQTIS\\4Ql5Zx%C`8Zv"
+        },
+        {
+          "offset": 421308,
+          "encoding": "ascii",
+          "text": "434ruy`ej68:$'*%.6"
+        },
+        {
+          "offset": 421327,
+          "encoding": "ascii",
+          "text": "&0/47!+6/4:8DO4HT!0>/Sr"
+        },
+        {
+          "offset": 422526,
+          "encoding": "ascii",
+          "text": "-7B<DMBIOGT`2CS$-6"
+        },
+        {
+          "offset": 422600,
+          "encoding": "ascii",
+          "text": "%)>PDMW9DQ4@M(/5"
+        },
+        {
+          "offset": 423100,
+          "encoding": "ascii",
+          "text": "2T9AQdirbfjGKO`ej=?B"
+        },
+        {
+          "offset": 423221,
+          "encoding": "ascii",
+          "text": "$.02W\\a+/3UZ`[_ems|"
+        },
+        {
+          "offset": 423675,
+          "encoding": "ascii",
+          "text": "A>=KLKcXR}ja.EgHj"
+        },
+        {
+          "offset": 423699,
+          "encoding": "ascii",
+          "text": "LXp;CYagp?DI]af9<@#$&`YTaen||"
+        },
+        {
+          "offset": 423813,
+          "encoding": "ascii",
+          "text": "dltQ^n]YW)*,HKMDHM59?pv}HKRU\\kTe"
+        },
+        {
+          "offset": 424278,
+          "encoding": "ascii",
+          "text": "ZYYjlmGO]8DT*JqOm"
+        },
+        {
+          "offset": 424410,
+          "encoding": "ascii",
+          "text": "`o}fmtdhlkjkQIDEHKgkp15:}"
+        },
+        {
+          "offset": 425001,
+          "encoding": "ascii",
+          "text": "L`sirzkszQbragljggcaa"
+        },
+        {
+          "offset": 425052,
+          "encoding": "ascii",
+          "text": "/Pw?Pg4Fbhko>>@uuv9:9"
+        },
+        {
+          "offset": 425524,
+          "encoding": "ascii",
+          "text": "|nfhh^bebehbgkG_qbkqV`h1G[BLT%9M;a"
+        },
+        {
+          "offset": 425581,
+          "encoding": "ascii",
+          "text": "1?8K\\C\\u'C]2FZK]m`ho=Pa^cgbhmT_iSZa\\\\\\e_Zmb[QG>agk|"
+        },
+        {
+          "offset": 426062,
+          "encoding": "ascii",
+          "text": "!GHI=>?HJK500*('IFEOKIBAC"
+        },
+        {
+          "offset": 426124,
+          "encoding": "ascii",
+          "text": "{mQam__`\\]_[]`[djWcl2MfIKL(8B"
+        },
+        {
+          "offset": 426191,
+          "encoding": "ascii",
+          "text": "*GNU4DRN[eRalZ^aY]^W[]?N\\YZYkeaifeg[P^chpv{"
+        },
+        {
+          "offset": 426675,
+          "encoding": "ascii",
+          "text": ">=:ZUUvqpXUUI<2ZSK5H^DQf6<MWW["
+        },
+        {
+          "offset": 426724,
+          "encoding": "ascii",
+          "text": "tfhfeigfdfigjlhkmosuThvAHM"
+        },
+        {
+          "offset": 426790,
+          "encoding": "ascii",
+          "text": "+8-26P]iZ`e`cfafiaef]`bNZc^`bigeprssg]imr"
+        },
+        {
+          "offset": 426837,
+          "encoding": "ascii",
+          "text": "DJR]dr%:[-Kt*DeI`xOOR57;"
+        },
+        {
+          "offset": 426864,
+          "encoding": "ascii",
+          "text": "555;<=89:023LLMDEF<?@)-1jmndghMSWRUX"
+        },
+        {
+          "offset": 427246,
+          "encoding": "ascii",
+          "text": "%0VZZ^bfjnobgj6?G9=>UWX??@245XXX"
+        },
+        {
+          "offset": 427281,
+          "encoding": "ascii",
+          "text": "`\\Zlhg;40]L<-@Q\"0JSXdYY^"
+        },
+        {
+          "offset": 427381,
+          "encoding": "ascii",
+          "text": "*3 )--7=B[mTbk[``is{"
+        },
+        {
+          "offset": 427448,
+          "encoding": "ascii",
+          "text": "E3Fa.>RZOCegk[\\["
+        },
+        {
+          "offset": 427470,
+          "encoding": "ascii",
+          "text": "]`d346DEE]`a')*\\eox|~kpsZ_bHNR"
+        },
+        {
+          "offset": 427975,
+          "encoding": "ascii",
+          "text": "Z44Tm&AQ'-121/FIJ:ReYm"
+        },
+        {
+          "offset": 428067,
+          "encoding": "ascii",
+          "text": "789ADI023468GJK59=z"
+        },
+        {
+          "offset": 428433,
+          "encoding": "ascii",
+          "text": "FR^IWdZbhpw{OTWJNR"
+        },
+        {
+          "offset": 428470,
+          "encoding": "ascii",
+          "text": "\"$'*,+.0wwxc_^hca?>>"
+        },
+        {
+          "offset": 428580,
+          "encoding": "ascii",
+          "text": ")CS'@PBMS[cfWacW_a~"
+        },
+        {
+          "offset": 428653,
+          "encoding": "ascii",
+          "text": "\"$*4CsuxHII344_`a69<"
+        },
+        {
+          "offset": 428697,
+          "encoding": "ascii",
+          "text": "*-2et~kpuNYb@KT+AQ"
+        },
+        {
+          "offset": 430252,
+          "encoding": "ascii",
+          "text": "#(QTWgln=@A=@B/47"
+        },
+        {
+          "offset": 430478,
+          "encoding": "ascii",
+          "text": "&28<BEF@FJlqt@EHNZf"
+        },
+        {
+          "offset": 430851,
+          "encoding": "ascii",
+          "text": "L_i$'+DHK:>?035,02"
+        },
+        {
+          "offset": 431421,
+          "encoding": "ascii",
+          "text": "GNTOU[MYc`fjhqx *5(4>7GXEQ\\?DICLQ"
+        },
+        {
+          "offset": 431455,
+          "encoding": "ascii",
+          "text": "#5$(*/35\"%'&*,&7E"
+        },
+        {
+          "offset": 431689,
+          "encoding": "ascii",
+          "text": "(/-=MJPT<BF=O^>M]&,3=GN_hq`hnKZgRZa"
+        },
+        {
+          "offset": 432021,
+          "encoding": "ascii",
+          "text": "*;GJPTDR\\bionuy_s"
+        },
+        {
+          "offset": 432084,
+          "encoding": "ascii",
+          "text": "---;89@<7C=9/25VZ_"
+        },
+        {
+          "offset": 433884,
+          "encoding": "ascii",
+          "text": "GWh8@IL[e>Wh/BP,Ob"
+        },
+        {
+          "offset": 434409,
+          "encoding": "ascii",
+          "text": "?FHFNT?IRSZaGWb\"2="
+        },
+        {
+          "offset": 434449,
+          "encoding": "ascii",
+          "text": "',2:@DMX9?E@VfKl"
+        },
+        {
+          "offset": 434721,
+          "encoding": "ascii",
+          "text": "+:FbowPW]>KX;FO+29"
+        },
+        {
+          "offset": 435009,
+          "encoding": "ascii",
+          "text": "+25EIM<KVXagqx|{"
+        },
+        {
+          "offset": 435082,
+          "encoding": "ascii",
+          "text": "1O\"8P0KbCOZM[eb}"
+        },
+        {
+          "offset": 435145,
+          "encoding": "ascii",
+          "text": "/O!5F:\\y$>V5Sr1Lj;^"
+        },
+        {
+          "offset": 436875,
+          "encoding": "ascii",
+          "text": "4Up5GVPZa6?HVix*8CH`t"
+        },
+        {
+          "offset": 437052,
+          "encoding": "ascii",
+          "text": "/DU$4@Nfu=HOEXf;M^4X{'Gg"
+        },
+        {
+          "offset": 438000,
+          "encoding": "ascii",
+          "text": "KSW;GRMSY_hoQgy4GT"
+        },
+        {
+          "offset": 438330,
+          "encoding": "ascii",
+          "text": "&3CRgx[fpIRZ@IR,>N"
+        },
+        {
+          "offset": 439357,
+          "encoding": "ascii",
+          "text": "\",)8G!:SKS[+D\\\\v"
+        },
+        {
+          "offset": 439988,
+          "encoding": "ascii",
+          "text": "!%+4YaiOV^JR[_iq"
+        },
+        {
+          "offset": 443139,
+          "encoding": "ascii",
+          "text": "Qdu@Vj2J_3L`Bf~Oq"
+        },
+        {
+          "offset": 443631,
+          "encoding": "ascii",
+          "text": "?>?mln4..MGD_E:?"
+        },
+        {
+          "offset": 444522,
+          "encoding": "ascii",
+          "text": "[@3WA5MB5KA1P8%aI7oL1X("
+        },
+        {
+          "offset": 445005,
+          "encoding": "ascii",
+          "text": "]=(K:+WI;QH?MA8SD=XF=E)"
+        },
+        {
+          "offset": 449555,
+          "encoding": "ascii",
+          "text": "-58=@L<?LS(?d+L}c"
+        },
+        {
+          "offset": 459132,
+          "encoding": "ascii",
+          "text": "+6>GHETPLGR_CFH9Vn]ho"
+        },
+        {
+          "offset": 460332,
+          "encoding": "ascii",
+          "text": "I=8lhdMFB,BXQj}7>D"
+        },
+        {
+          "offset": 460953,
+          "encoding": "ascii",
+          "text": "FOX1[~_ny'WxSSRg"
+        },
+        {
+          "offset": 471765,
+          "encoding": "ascii",
+          "text": "-Pj5]xM?5?9;*V{-I`"
+        },
+        {
+          "offset": 168,
+          "encoding": "utf-16le",
+          "text": "Click here to contact the author."
+        },
+        {
+          "offset": 424,
+          "encoding": "utf-16le",
+          "text": "https://www.mql5.com/en/users/weredeu"
+        },
+        {
+          "offset": 360628,
+          "encoding": "utf-16le",
+          "text": "res\\Close.bmp"
+        },
+        {
+          "offset": 360784,
+          "encoding": "utf-16le",
+          "text": "res\\Down.bmp"
+        },
+        {
+          "offset": 360940,
+          "encoding": "utf-16le",
+          "text": "res\\Left.bmp"
+        },
+        {
+          "offset": 361096,
+          "encoding": "utf-16le",
+          "text": "res\\Restore.bmp"
+        },
+        {
+          "offset": 361252,
+          "encoding": "utf-16le",
+          "text": "res\\Right.bmp"
+        },
+        {
+          "offset": 361408,
+          "encoding": "utf-16le",
+          "text": "res\\ThumbHor.bmp"
+        },
+        {
+          "offset": 361564,
+          "encoding": "utf-16le",
+          "text": "res\\ThumbVert.bmp"
+        },
+        {
+          "offset": 361720,
+          "encoding": "utf-16le",
+          "text": "res\\Turn.bmp"
+        },
+        {
+          "offset": 361876,
+          "encoding": "utf-16le",
+          "text": "res\\Up.bmp"
+        }
+      ],
+      "plain_source_token_hits": [],
+      "valid_embedded_pe_offsets": [],
+      "elf_signature_offsets": [],
+      "zip_signature_offsets": [],
+      "byte_entropy_after4096": 7.417770750719143,
+      "png_images": [],
+      "invalid_png_candidates": [],
+      "compression_attempts": {
+        "candidate_count": 25,
+        "failures": {
+          "error: Error -3 while decompressing data: invalid distance too far back": 8,
+          "error: Error -3 while decompressing data: invalid stored block lengths": 7,
+          "error: Error -3 while decompressing data: invalid block type": 3,
+          "error: Error -3 while decompressing data: invalid code lengths set": 6,
+          "error: Error -3 while decompressing data: invalid distance code": 1
+        },
+        "decoded": [],
+        "output_limit_bytes": 33554432
+      },
+      "source_recovered": false
+    },
+    {
+      "path": "mt5-program-files/Quantum Titan MT5.ex5",
+      "sha256": "0B4B0F32B37A8F66422E9B875ED90CD31D8BEE6D74FCBC9A5E57752DAB5E465B",
+      "bytes": 168726,
+      "raw_printable_strings": [
+        {
+          "offset": 168,
+          "encoding": "utf-16le",
+          "text": "Click here to contact the author."
+        },
+        {
+          "offset": 424,
+          "encoding": "utf-16le",
+          "text": "https://www.mql5.com/en/users/weredeu"
+        }
+      ],
+      "plain_source_token_hits": [],
+      "valid_embedded_pe_offsets": [],
+      "elf_signature_offsets": [],
+      "zip_signature_offsets": [],
+      "byte_entropy_after4096": 7.998821237733427,
+      "png_images": [],
+      "invalid_png_candidates": [],
+      "compression_attempts": {
+        "candidate_count": 5,
+        "failures": {
+          "error: Error -3 while decompressing data: too many length or distance symbols": 1,
+          "error: Error -3 while decompressing data: invalid distance too far back": 2,
+          "error: Error -3 while decompressing data: invalid code lengths set": 1,
+          "error: Error -3 while decompressing data: invalid stored block lengths": 1
+        },
+        "decoded": [],
+        "output_limit_bytes": 33554432
+      },
+      "source_recovered": false
+    },
+    {
+      "path": "mt5-program-files/Scalping Robot Pro MT5.ex5",
+      "sha256": "75B8DA04760B374D25734B441C6F2424F7E46608260185EAF1E6F8566649B24D",
+      "bytes": 402498,
+      "raw_printable_strings": [
+        {
+          "offset": 168,
+          "encoding": "utf-16le",
+          "text": "MQL BLUE"
+        },
+        {
+          "offset": 424,
+          "encoding": "utf-16le",
+          "text": "https://www.mqlblue.com"
+        },
+        {
+          "offset": 145554,
+          "encoding": "utf-16le",
+          "text": "panel_scalp.bmp"
+        }
+      ],
+      "plain_source_token_hits": [],
+      "valid_embedded_pe_offsets": [],
+      "elf_signature_offsets": [],
+      "zip_signature_offsets": [],
+      "byte_entropy_after4096": 7.999577762327323,
+      "png_images": [],
+      "invalid_png_candidates": [],
+      "compression_attempts": {
+        "candidate_count": 23,
+        "failures": {
+          "error: Error -3 while decompressing data: invalid block type": 7,
+          "error: Error -3 while decompressing data: invalid code lengths set": 5,
+          "error: Error -3 while decompressing data: invalid stored block lengths": 6,
+          "error: Error -3 while decompressing data: invalid distance too far back": 4,
+          "error: Error -3 while decompressing data: too many length or distance symbols": 1
+        },
+        "decoded": [],
+        "output_limit_bytes": 33554432
+      },
+      "source_recovered": false
+    },
+    {
+      "path": "mt5-program-files/The Gold Reaper MT5.ex5",
+      "sha256": "EE063D3D87490AFE24E2F4CE85F6B05659320E297B102EFD70207F71CA2FEB83",
+      "bytes": 261524,
+      "raw_printable_strings": [
+        {
+          "offset": 168,
+          "encoding": "utf-16le",
+          "text": "Copyright 2024 - Wim Schrynemakers"
+        }
+      ],
+      "plain_source_token_hits": [],
+      "valid_embedded_pe_offsets": [],
+      "elf_signature_offsets": [],
+      "zip_signature_offsets": [],
+      "byte_entropy_after4096": 7.9992373119141655,
+      "png_images": [],
+      "invalid_png_candidates": [],
+      "compression_attempts": {
+        "candidate_count": 15,
+        "failures": {
+          "error: Error -3 while decompressing data: invalid block type": 1,
+          "error: Error -3 while decompressing data: invalid code lengths set": 3,
+          "error: Error -3 while decompressing data: invalid stored block lengths": 5,
+          "error: Error -3 while decompressing data: too many length or distance symbols": 1,
+          "error: Error -3 while decompressing data: invalid distance too far back": 5
+        },
+        "decoded": [],
+        "output_limit_bytes": 33554432
+      },
+      "source_recovered": false
+    },
+    {
+      "path": "mt5-program-files/Ultimate Breakout System.ex5",
+      "sha256": "7F7E7C0527B93523A4DCBB71DA0AFA35D23386CBFFE68CF1F0092205C03DD4B7",
+      "bytes": 422364,
+      "raw_printable_strings": [
+        {
+          "offset": 168,
+          "encoding": "utf-16le",
+          "text": "Copyright 2026 - Profalgo LTD"
+        },
+        {
+          "offset": 424,
+          "encoding": "utf-16le",
+          "text": "https://www.forexeasolutions.com"
+        }
+      ],
+      "plain_source_token_hits": [],
+      "valid_embedded_pe_offsets": [],
+      "elf_signature_offsets": [],
+      "zip_signature_offsets": [],
+      "byte_entropy_after4096": 7.999599489728923,
+      "png_images": [],
+      "invalid_png_candidates": [],
+      "compression_attempts": {
+        "candidate_count": 29,
+        "failures": {
+          "error: Error -3 while decompressing data: invalid distance too far back": 7,
+          "error: Error -3 while decompressing data: invalid stored block lengths": 7,
+          "error: Error -3 while decompressing data: invalid code lengths set": 6,
+          "error: Error -3 while decompressing data: invalid block type": 6,
+          "error: Error -3 while decompressing data: invalid literal/length code": 2,
+          "error: Error -3 while decompressing data: invalid distance code": 1
+        },
+        "decoded": [],
+        "output_limit_bytes": 33554432
+      },
+      "source_recovered": false
+    }
+  ],
+  "references": [
+    "https://www.metatrader5.com/en/metaeditor/help/development/mql5_cloud_protector",
+    "https://github.com/NationalSecurityAgency/ghidra/issues/1173",
+    "https://github.com/NationalSecurityAgency/ghidra/issues/9211",
+    "https://github.com/0xMastEB/0xMastEB.github.io/blob/main/posts/metatrader-analysis.md"
+  ]
+}

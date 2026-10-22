@@ -1,0 +1,9 @@
+{
+  "run": "re2batch1_16",
+  "source": "mt5-program-files/The Gold Reaper MT5.ex5",
+  "source_sha256": "EE063D3D87490AFE24E2F4CE85F6B05659320E297B102EFD70207F71CA2FEB83",
+  "capture_exit": 0,
+  "tester_pid": 25824,
+  "runner_exit": 0,
+  "test_interrupted_after_capture": true
+}

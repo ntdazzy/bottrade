@@ -1,0 +1,9 @@
+{
+  "run": "re2batch1_02",
+  "source": "mt5-btc-recovery/CryonX EA MT5.ex5",
+  "source_sha256": "0791D1A189DC1805E9764805A978A62FBB9F9B07DB192C8CFB2D26B09818D3F9",
+  "capture_exit": 0,
+  "tester_pid": 29500,
+  "runner_exit": 0,
+  "test_interrupted_after_capture": true
+}

@@ -1,0 +1,14 @@
+{
+  "run": "twcfg06r1_09",
+  "source": "mt5-btc-recovery/TwisterPro Scalper.ex5",
+  "source_sha256": "C705E2BBBB66D18E31E2A375625DFDEF69243CB73E684AF3A846D6AB33FABE73",
+  "capture_exit": 0,
+  "tester_pid": 10356,
+  "inputs_file": "C:\\Users\\NTD\\Desktop\\BotTradeEA\\local\\market-demos-20261020\\dich-nguoc-luot2\\settings-check\\lower.json",
+  "inputs_sha256": "74B33C65B0DE7AE90BF4D70347D6FB4D23FBC8DA6732994F2D8D31DB96CE1C9A",
+  "engine_base": "0x7ff70ab60000",
+  "engine_sha256": "5033D9D45D669CEBD735E8A6BE20B54D74B75274F885C9A0E48E52D872104EFB",
+  "cleanup_errors": [],
+  "runner_exit": 0,
+  "test_interrupted_after_capture": true
+}

@@ -1,0 +1,225 @@
+##### 20261021.log (Tester)
+GG	0	16:06:38.238	Tester	Local network farm switched off
+GL	0	16:06:38.238	Tester	Cloud servers switched off
+CM	0	16:06:40.601	Tester	"Market\TwisterPro Scalper.ex5" X64 demo version
+LR	0	16:06:40.657	Tester	XAUUSD_NOCOST_V2: history data begins from 2024.01.01 00:00
+HI	0	16:06:40.657	Tester	XAUUSD_NOCOST_V2: history data begins from 2024.01.01 00:00
+OP	0	16:06:40.677	Core 01	agent process started on 127.0.0.1:3000
+DG	0	16:06:40.677	Core 01	connecting to 127.0.0.1:3000
+GR	0	16:06:41.219	Core 01	connected
+JH	0	16:06:41.233	Core 01	authorized (agent build 6230)
+PP	0	16:06:41.234	Tester	XAUUSD_NOCOST_V2,M15 (Exness-MT5Trial14): testing of Experts\Market\TwisterPro Scalper.ex5 from 2026.09.29 00:00 to 2026.10.03 00:00
+IL	0	16:06:41.249	Core 01	common synchronization completed
+KE	0	16:06:41.293	Tester	quality of analyzed history is 100%
+JQ	0	16:06:41.377	Core 01	MetaTester 5 started on 127.0.0.1:3000
+LK	0	16:06:41.377	Core 01	cloud network mode is off
+OQ	0	16:06:41.377	Core 01	initialization finished
+FH	0	16:06:41.377	Core 01	login (build 6230)
+EG	0	16:06:41.377	Core 01	15288 bytes of account info loaded
+QS	0	16:06:41.377	Core 01	1478 bytes of tester parameters loaded
+QG	0	16:06:41.377	Core 01	19652 bytes of input parameters loaded
+PQ	0	16:06:41.377	Core 01	2261 bytes of symbols list loaded (358 symbols)
+IP	0	16:06:41.377	Core 01	expert file added: Experts\Market\TwisterPro Scalper.ex5. 109253 bytes loaded
+KG	0	16:06:41.377	Core 01	2292 Mb available, 28 blocks set for ticks generating
+GF	0	16:06:41.377	Core 01	initial deposit 10000.00 USD, leverage 1:500
+NM	0	16:06:41.377	Core 01	successfully initialized
+NP	0	16:06:41.377	Core 01	110 Kb of total initialization data received
+RR	0	16:06:41.377	Core 01	13th Gen Intel Core i7-13700H, 16000 MB
+IE	0	16:06:41.377	Core 01	XAUUSD_NOCOST_V2: symbol to be synchronized
+GR	0	16:06:41.377	Core 01	XAUUSD_NOCOST_V2: symbol synchronized, 4120 bytes of symbol info received
+HF	0	16:06:41.377	Core 01	XAUUSD_NOCOST_V2: load 47 bytes of history data to synchronize in 0:00:00.000
+JH	0	16:06:41.377	Core 01	XAUUSD_NOCOST_V2: history synchronized from 2025.01.01 to 2026.10.19
+FR	0	16:06:41.377	Core 01	XAUUSD_NOCOST_V2,M15: history cache allocated for 41402 bars and contains 41127 bars from 2025.01.01 23:00 to 2026.09.28 23:45
+NG	0	16:06:41.377	Core 01	XAUUSD_NOCOST_V2,M15: history begins from 2025.01.01 23:00
+GS	0	16:06:41.377	Core 01	XAUUSD_NOCOST_V2,M15 (Exness-MT5Trial14): 1 minutes OHLC ticks generating
+RR	0	16:06:41.377	Core 01	XAUUSD_NOCOST_V2,M15: testing of Experts\Market\TwisterPro Scalper.ex5 from 2026.09.29 00:00 to 2026.10.03 00:00 started with inputs:
+HM	0	16:06:41.377	Core 01	  --- IDENTIFICATION ---=
+JG	0	16:06:41.377	Core 01	  InpMagic=31250001
+HP	0	16:06:41.377	Core 01	  TradeComment=TwisterPro
+II	0	16:06:41.377	Core 01	  --- BROKER TYPE ---=
+EF	0	16:06:41.377	Core 01	  BrokerType=0
+EL	0	16:06:41.377	Core 01	  --- EA MODE ---=
+RH	0	16:06:41.377	Core 01	  EAMode=1
+JE	0	16:06:41.377	Core 01	  Mode1Stop=0
+NL	0	16:06:41.377	Core 01	  --- RISK MANAGEMENT ---=
+CK	0	16:06:41.377	Core 01	  UseFixedLot=false
+RS	0	16:06:41.377	Core 01	  FixedLot=0.01
+QP	0	16:06:41.377	Core 01	  RiskPercent=3.0
+FK	0	16:06:41.377	Core 01	  UseDD_Protection=false
+NO	0	16:06:41.377	Core 01	  MaxConsecLosses=4
+FK	0	16:06:41.377	Core 01	  DD_LotMultiplier=0.5
+OG	0	16:06:41.377	Core 01	  MaxDailyDD_Pct=0.0
+KL	0	16:06:41.377	Core 01	  --- HUD PANEL ---=
+GF	0	16:06:41.377	Core 01	  ShowPanel=true
+HS	0	16:06:41.377	Core 01	  PanelX=15
+MN	0	16:06:41.377	Core 01	  PanelY=15
+DE	0	16:06:41.377	Core 01	  --- P&L LABELS ON CHART ---=
+PM	0	16:06:41.377	Core 01	  ShowPnLLabels=true
+DL	0	16:06:41.377	Core 01	  --- PROP FIRM MODE ---=
+FK	0	16:06:41.377	Core 01	  UsePropFirmDelay=false
+FO	0	16:06:41.377	Core 01	  PropFirmDelaySec=30
+DF	0	16:06:41.377	Core 01	  --- SL / TP / TRAILING (0 = EA default) ---=
+RN	0	16:06:41.377	Core 01	  InpSL_Points=0
+OJ	0	16:06:41.377	Core 01	  InpTP_Points=0
+GG	0	16:06:41.377	Core 01	  InpTSL_Start=0
+QS	0	16:06:41.377	Core 01	  InpTSL_Step=0
+LG	0	16:06:41.377	Core 01	  InpTSL_Distance=0
+GF	0	16:06:41.377	Core 01	  --- NEWS FILTER ---=
+IN	0	16:06:41.377	Core 01	  UseNewsFilter=false
+EI	0	16:06:41.377	Core 01	  NewsStopBeforeMin=30
+NP	0	16:06:41.377	Core 01	  NewsStopAfterMin=30
+FG	0	16:06:41.377	Core 01	  NewsCurrencies=USD
+DJ	0	16:06:41.377	Core 01	  --- HOLIDAY FILTER ---=
+QL	0	16:06:41.377	Core 01	  UseHolidayFilter=true
+KE	0	16:06:41.377	Core 01	XAUUSD_NOCOST_V2,M5: history cache allocated for 124129 bars and contains 123306 bars from 2025.01.01 23:05 to 2026.09.28 23:55
+DI	0	16:06:41.377	Core 01	XAUUSD_NOCOST_V2,M5: history begins from 2025.01.01 23:05
+DE	0	16:06:41.377	Core 01	XAUUSD_NOCOST_V2,Daily: history cache allocated for 546 bars and contains 543 bars from 2025.01.01 00:00 to 2026.09.28 00:00
+EI	0	16:06:41.377	Core 01	XAUUSD_NOCOST_V2,Daily: history begins from 2025.01.01 00:00
+CP	0	16:06:41.377	Core 01	2026.09.29 04:15:00   sell stop 3.52 XAUUSD_NOCOST_V2 at 4111.176 sl: 4112.026 tp: 4108.012 (4131.054 / 4131.056 / 4131.054)
+CJ	0	16:06:41.377	Core 01	2026.09.29 04:15:00   CTrade::OrderSend: sell stop 3.52 XAUUSD_NOCOST_V2 at 4111.176 sl: 4112.026 tp: 4108.012 [done]
+KK	0	16:06:41.377	Core 01	2026.09.30 22:00:00   order expired [#2 sell stop 3.52 XAUUSD_NOCOST_V2 at 4111.176]
+LE	0	16:06:41.377	Core 01	2026.10.01 07:30:00   sell stop 3.52 XAUUSD_NOCOST_V2 at 4139.072 sl: 4139.922 tp: 4135.908 (4156.820 / 4156.822 / 4156.820)
+FE	0	16:06:41.377	Core 01	2026.10.01 07:30:00   CTrade::OrderSend: sell stop 3.52 XAUUSD_NOCOST_V2 at 4139.072 sl: 4139.922 tp: 4135.908 [done]
+NH	0	16:06:41.377	Core 01	2026.10.02 01:09:40   order [#3 sell stop 3.52 XAUUSD_NOCOST_V2 at 4139.072] triggered
+OK	0	16:06:41.377	Core 01	2026.10.02 01:09:40   deal #2 sell 3.52 XAUUSD_NOCOST_V2 at 4139.072 done (based on order #3)
+JG	0	16:06:41.377	Core 01	2026.10.02 01:09:40   deal performed [#2 sell 3.52 XAUUSD_NOCOST_V2 at 4139.072]
+LE	0	16:06:41.377	Core 01	2026.10.02 01:09:40   order performed sell 3.52 at 4139.072 [#3 sell stop 3.52 XAUUSD_NOCOST_V2 at 4139.072]
+QE	0	16:06:41.377	Core 01	2026.10.02 01:09:40   position modified [#3 sell 3.52 XAUUSD_NOCOST_V2 4139.072 sl: 4137.966 tp: 4135.908]
+NF	0	16:06:41.377	Core 01	2026.10.02 01:09:40   CTrade::OrderSend: modify position #3 XAUUSD_NOCOST_V2 (sl: 4137.966, tp: 4135.908) [done]
+GK	0	16:06:41.377	Core 01	2026.10.02 01:09:40   position modified [#3 sell 3.52 XAUUSD_NOCOST_V2 4139.072 sl: 4139.922 tp: 4135.908]
+LD	0	16:06:41.377	Core 01	2026.10.02 01:09:40   CTrade::OrderSend: modify position #3 XAUUSD_NOCOST_V2 (sl: 4139.922, tp: 4135.908) [done]
+GS	0	16:06:41.377	Core 01	2026.10.02 01:09:59   stop loss triggered #3 sell 3.52 XAUUSD_NOCOST_V2 4139.072 sl: 4139.922 tp: 4135.908 [#4 buy 3.52 XAUUSD_NOCOST_V2 at 4139.922]
+EL	0	16:06:41.377	Core 01	2026.10.02 01:09:59   deal #3 buy 3.52 XAUUSD_NOCOST_V2 at 4139.922 done (based on order #4)
+OP	0	16:06:41.377	Core 01	2026.10.02 01:09:59   deal performed [#3 buy 3.52 XAUUSD_NOCOST_V2 at 4139.922]
+QN	0	16:06:41.377	Core 01	2026.10.02 01:09:59   order performed buy 3.52 at 4139.922 [#4 buy 3.52 XAUUSD_NOCOST_V2 at 4139.922]
+LM	0	16:06:41.377	Core 01	2026.10.02 10:15:00   sell stop 3.42 XAUUSD_NOCOST_V2 at 4133.580 sl: 4134.430 tp: 4130.416 (4171.905 / 4171.907 / 4171.905)
+CM	0	16:06:41.377	Core 01	2026.10.02 10:15:00   CTrade::OrderSend: sell stop 3.42 XAUUSD_NOCOST_V2 at 4133.580 sl: 4134.430 tp: 4130.416 [done]
+DP	0	16:06:41.377	Core 01	2026.10.02 15:25:20   order [#5 sell stop 3.42 XAUUSD_NOCOST_V2 at 4133.580] triggered
+CS	0	16:06:41.377	Core 01	2026.10.02 15:25:20   deal #4 sell 3.42 XAUUSD_NOCOST_V2 at 4133.580 done (based on order #5)
+LO	0	16:06:41.377	Core 01	2026.10.02 15:25:20   deal performed [#4 sell 3.42 XAUUSD_NOCOST_V2 at 4133.580]
+GM	0	16:06:41.377	Core 01	2026.10.02 15:25:20   order performed sell 3.42 at 4133.580 [#5 sell stop 3.42 XAUUSD_NOCOST_V2 at 4133.580]
+NM	0	16:06:41.377	Core 01	2026.10.02 15:25:20   position modified [#5 sell 3.42 XAUUSD_NOCOST_V2 4133.580 sl: 4133.441 tp: 4130.416]
+HN	0	16:06:41.377	Core 01	2026.10.02 15:25:20   CTrade::OrderSend: modify position #5 XAUUSD_NOCOST_V2 (sl: 4133.441, tp: 4130.416) [done]
+IP	0	16:06:41.377	Core 01	2026.10.02 15:25:20   position modified [#5 sell 3.42 XAUUSD_NOCOST_V2 4133.580 sl: 4134.430 tp: 4130.416]
+CL	0	16:06:41.377	Core 01	2026.10.02 15:25:20   CTrade::OrderSend: modify position #5 XAUUSD_NOCOST_V2 (sl: 4134.430, tp: 4130.416) [done]
+CK	0	16:06:41.377	Core 01	2026.10.02 15:25:40   stop loss triggered #5 sell 3.42 XAUUSD_NOCOST_V2 4133.580 sl: 4134.430 tp: 4130.416 [#6 buy 3.42 XAUUSD_NOCOST_V2 at 4134.430]
+HD	0	16:06:41.377	Core 01	2026.10.02 15:25:40   deal #5 buy 3.42 XAUUSD_NOCOST_V2 at 4134.430 done (based on order #6)
+LH	0	16:06:41.377	Core 01	2026.10.02 15:25:40   deal performed [#5 buy 3.42 XAUUSD_NOCOST_V2 at 4134.430]
+LF	0	16:06:41.377	Core 01	2026.10.02 15:25:40   order performed buy 3.42 at 4134.430 [#6 buy 3.42 XAUUSD_NOCOST_V2 at 4134.430]
+RF	0	16:06:41.377	Core 01	final balance 9410.10 USD
+KO	0	16:06:41.377	Core 01	XAUUSD_NOCOST_V2,M15: 21568 ticks, 360 bars generated. Environment synchronized in 0:00:00.018. Test passed in 0:00:00.126.
+RP	0	16:06:41.377	Core 01	XAUUSD_NOCOST_V2,M15: total time from login to stop testing 0:00:00.144 (including 0:00:00.018 for history data synchronization)
+QO	0	16:06:41.377	Core 01	46 Mb memory used including 10 Mb of history data, 64 Mb of tick data
+GQ	0	16:06:41.377	Core 01	log file "C:\Users\NTD\Desktop\BotTradeEA\local\market-demos-20261020\dich-nguoc-luot2\terminal\Tester\Agent-127.0.0.1-3000\logs\20261021.log" written
+PH	0	16:06:41.453	Tester	automatic testing finished
+IR	0	16:06:41.454	Core 01	connection closed
+
+##### 20261021.log (Agent-127.0.0.1-3000)
+CS	0	16:06:40.916	Startup	MetaTester 5 build 6230, 25 Sep 2026
+CS	0	16:06:40.916	Startup	Windows 11 build 26200, 20 x 13th Gen Intel Core i7-13700H, AVX2, 2 / 15 Gb memory, 112 / 475 Gb disk, touchable, UAC, GMT+7
+CS	0	16:06:40.917	Server	MetaTester 5 started on 127.0.0.1:3000
+CS	0	16:06:40.918	Startup	cloud network mode is off
+CS	0	16:06:40.918	Startup	initialization finished
+CS	0	16:06:41.231	127.0.0.1	login (build 6230)
+CS	0	16:06:41.242	Network	15288 bytes of account info loaded
+CS	0	16:06:41.242	Network	1478 bytes of tester parameters loaded
+CS	0	16:06:41.242	Network	19652 bytes of input parameters loaded
+CS	0	16:06:41.243	Network	2261 bytes of symbols list loaded (358 symbols)
+CS	0	16:06:41.244	Tester	expert file added: Experts\Market\TwisterPro Scalper.ex5. 109253 bytes loaded
+CS	0	16:06:41.248	Tester	2292 Mb available, 28 blocks set for ticks generating
+CS	0	16:06:41.248	Tester	initial deposit 10000.00 USD, leverage 1:500
+CS	0	16:06:41.248	Tester	successfully initialized
+CS	0	16:06:41.248	Network	110 Kb of total initialization data received
+CS	0	16:06:41.248	Tester	13th Gen Intel Core i7-13700H, 16000 MB
+CS	0	16:06:41.254	Symbols	XAUUSD_NOCOST_V2: symbol to be synchronized
+CS	0	16:06:41.255	Symbols	XAUUSD_NOCOST_V2: symbol synchronized, 4120 bytes of symbol info received
+CS	0	16:06:41.256	History	XAUUSD_NOCOST_V2: load 47 bytes of history data to synchronize in 0:00:00.000
+CS	0	16:06:41.256	History	XAUUSD_NOCOST_V2: history synchronized from 2025.01.01 to 2026.10.19
+CS	0	16:06:41.290	History	XAUUSD_NOCOST_V2,M15: history cache allocated for 41402 bars and contains 41127 bars from 2025.01.01 23:00 to 2026.09.28 23:45
+CS	0	16:06:41.290	History	XAUUSD_NOCOST_V2,M15: history begins from 2025.01.01 23:00
+CS	0	16:06:41.290	Tester	XAUUSD_NOCOST_V2,M15 (Exness-MT5Trial14): 1 minutes OHLC ticks generating
+CS	0	16:06:41.290	Tester	XAUUSD_NOCOST_V2,M15: testing of Experts\Market\TwisterPro Scalper.ex5 from 2026.09.29 00:00 to 2026.10.03 00:00 started with inputs:
+CS	0	16:06:41.290	Tester	  --- IDENTIFICATION ---=
+CS	0	16:06:41.290	Tester	  InpMagic=31250001
+CS	0	16:06:41.290	Tester	  TradeComment=TwisterPro
+CS	0	16:06:41.290	Tester	  --- BROKER TYPE ---=
+CS	0	16:06:41.290	Tester	  BrokerType=0
+CS	0	16:06:41.290	Tester	  --- EA MODE ---=
+CS	0	16:06:41.290	Tester	  EAMode=1
+CS	0	16:06:41.290	Tester	  Mode1Stop=0
+CS	0	16:06:41.290	Tester	  --- RISK MANAGEMENT ---=
+CS	0	16:06:41.290	Tester	  UseFixedLot=false
+CS	0	16:06:41.290	Tester	  FixedLot=0.01
+CS	0	16:06:41.290	Tester	  RiskPercent=3.0
+CS	0	16:06:41.290	Tester	  UseDD_Protection=false
+CS	0	16:06:41.290	Tester	  MaxConsecLosses=4
+CS	0	16:06:41.290	Tester	  DD_LotMultiplier=0.5
+CS	0	16:06:41.290	Tester	  MaxDailyDD_Pct=0.0
+CS	0	16:06:41.290	Tester	  --- HUD PANEL ---=
+CS	0	16:06:41.290	Tester	  ShowPanel=true
+CS	0	16:06:41.290	Tester	  PanelX=15
+CS	0	16:06:41.290	Tester	  PanelY=15
+CS	0	16:06:41.290	Tester	  --- P&L LABELS ON CHART ---=
+CS	0	16:06:41.290	Tester	  ShowPnLLabels=true
+CS	0	16:06:41.290	Tester	  --- PROP FIRM MODE ---=
+CS	0	16:06:41.290	Tester	  UsePropFirmDelay=false
+CS	0	16:06:41.290	Tester	  PropFirmDelaySec=30
+CS	0	16:06:41.290	Tester	  --- SL / TP / TRAILING (0 = EA default) ---=
+CS	0	16:06:41.290	Tester	  InpSL_Points=0
+CS	0	16:06:41.290	Tester	  InpTP_Points=0
+CS	0	16:06:41.290	Tester	  InpTSL_Start=0
+CS	0	16:06:41.290	Tester	  InpTSL_Step=0
+CS	0	16:06:41.290	Tester	  InpTSL_Distance=0
+CS	0	16:06:41.290	Tester	  --- NEWS FILTER ---=
+CS	0	16:06:41.290	Tester	  UseNewsFilter=false
+CS	0	16:06:41.290	Tester	  NewsStopBeforeMin=30
+CS	0	16:06:41.290	Tester	  NewsStopAfterMin=30
+CS	0	16:06:41.290	Tester	  NewsCurrencies=USD
+CS	0	16:06:41.290	Tester	  --- HOLIDAY FILTER ---=
+CS	0	16:06:41.290	Tester	  UseHolidayFilter=true
+CS	0	16:06:41.335	History	XAUUSD_NOCOST_V2,M5: history cache allocated for 124129 bars and contains 123306 bars from 2025.01.01 23:05 to 2026.09.28 23:55
+CS	0	16:06:41.335	History	XAUUSD_NOCOST_V2,M5: history begins from 2025.01.01 23:05
+CS	0	16:06:41.365	History	XAUUSD_NOCOST_V2,Daily: history cache allocated for 546 bars and contains 543 bars from 2025.01.01 00:00 to 2026.09.28 00:00
+CS	0	16:06:41.365	History	XAUUSD_NOCOST_V2,Daily: history begins from 2025.01.01 00:00
+CS	0	16:06:41.367	Trade	2026.09.29 04:15:00   sell stop 3.52 XAUUSD_NOCOST_V2 at 4111.176 sl: 4112.026 tp: 4108.012 (4131.054 / 4131.056 / 4131.054)
+CS	0	16:06:41.367	TwisterPro Scalper (XAUUSD_NOCOST_V2,M15)	2026.09.29 04:15:00   CTrade::OrderSend: sell stop 3.52 XAUUSD_NOCOST_V2 at 4111.176 sl: 4112.026 tp: 4108.012 [done]
+CS	0	16:06:41.369	Trade	2026.09.30 22:00:00   order expired [#2 sell stop 3.52 XAUUSD_NOCOST_V2 at 4111.176]
+CS	0	16:06:41.369	Trade	2026.10.01 07:30:00   sell stop 3.52 XAUUSD_NOCOST_V2 at 4139.072 sl: 4139.922 tp: 4135.908 (4156.820 / 4156.822 / 4156.820)
+CS	0	16:06:41.369	TwisterPro Scalper (XAUUSD_NOCOST_V2,M15)	2026.10.01 07:30:00   CTrade::OrderSend: sell stop 3.52 XAUUSD_NOCOST_V2 at 4139.072 sl: 4139.922 tp: 4135.908 [done]
+CS	0	16:06:41.370	Trade	2026.10.02 01:09:40   order [#3 sell stop 3.52 XAUUSD_NOCOST_V2 at 4139.072] triggered
+CS	0	16:06:41.370	Trades	2026.10.02 01:09:40   deal #2 sell 3.52 XAUUSD_NOCOST_V2 at 4139.072 done (based on order #3)
+CS	0	16:06:41.370	Trade	2026.10.02 01:09:40   deal performed [#2 sell 3.52 XAUUSD_NOCOST_V2 at 4139.072]
+CS	0	16:06:41.370	Trade	2026.10.02 01:09:40   order performed sell 3.52 at 4139.072 [#3 sell stop 3.52 XAUUSD_NOCOST_V2 at 4139.072]
+CS	0	16:06:41.370	Trade	2026.10.02 01:09:40   position modified [#3 sell 3.52 XAUUSD_NOCOST_V2 4139.072 sl: 4137.966 tp: 4135.908]
+CS	0	16:06:41.370	TwisterPro Scalper (XAUUSD_NOCOST_V2,M15)	2026.10.02 01:09:40   CTrade::OrderSend: modify position #3 XAUUSD_NOCOST_V2 (sl: 4137.966, tp: 4135.908) [done]
+CS	0	16:06:41.370	Trade	2026.10.02 01:09:40   position modified [#3 sell 3.52 XAUUSD_NOCOST_V2 4139.072 sl: 4139.922 tp: 4135.908]
+CS	0	16:06:41.370	TwisterPro Scalper (XAUUSD_NOCOST_V2,M15)	2026.10.02 01:09:40   CTrade::OrderSend: modify position #3 XAUUSD_NOCOST_V2 (sl: 4139.922, tp: 4135.908) [done]
+CS	0	16:06:41.370	Trade	2026.10.02 01:09:59   stop loss triggered #3 sell 3.52 XAUUSD_NOCOST_V2 4139.072 sl: 4139.922 tp: 4135.908 [#4 buy 3.52 XAUUSD_NOCOST_V2 at 4139.922]
+CS	0	16:06:41.370	Trades	2026.10.02 01:09:59   deal #3 buy 3.52 XAUUSD_NOCOST_V2 at 4139.922 done (based on order #4)
+CS	0	16:06:41.370	Trade	2026.10.02 01:09:59   deal performed [#3 buy 3.52 XAUUSD_NOCOST_V2 at 4139.922]
+CS	0	16:06:41.370	Trade	2026.10.02 01:09:59   order performed buy 3.52 at 4139.922 [#4 buy 3.52 XAUUSD_NOCOST_V2 at 4139.922]
+CS	0	16:06:41.370	Trade	2026.10.02 10:15:00   sell stop 3.42 XAUUSD_NOCOST_V2 at 4133.580 sl: 4134.430 tp: 4130.416 (4171.905 / 4171.907 / 4171.905)
+CS	0	16:06:41.370	TwisterPro Scalper (XAUUSD_NOCOST_V2,M15)	2026.10.02 10:15:00   CTrade::OrderSend: sell stop 3.42 XAUUSD_NOCOST_V2 at 4133.580 sl: 4134.430 tp: 4130.416 [done]
+CS	0	16:06:41.370	Trade	2026.10.02 15:25:20   order [#5 sell stop 3.42 XAUUSD_NOCOST_V2 at 4133.580] triggered
+CS	0	16:06:41.370	Trades	2026.10.02 15:25:20   deal #4 sell 3.42 XAUUSD_NOCOST_V2 at 4133.580 done (based on order #5)
+CS	0	16:06:41.370	Trade	2026.10.02 15:25:20   deal performed [#4 sell 3.42 XAUUSD_NOCOST_V2 at 4133.580]
+CS	0	16:06:41.370	Trade	2026.10.02 15:25:20   order performed sell 3.42 at 4133.580 [#5 sell stop 3.42 XAUUSD_NOCOST_V2 at 4133.580]
+CS	0	16:06:41.370	Trade	2026.10.02 15:25:20   position modified [#5 sell 3.42 XAUUSD_NOCOST_V2 4133.580 sl: 4133.441 tp: 4130.416]
+CS	0	16:06:41.370	TwisterPro Scalper (XAUUSD_NOCOST_V2,M15)	2026.10.02 15:25:20   CTrade::OrderSend: modify position #5 XAUUSD_NOCOST_V2 (sl: 4133.441, tp: 4130.416) [done]
+CS	0	16:06:41.370	Trade	2026.10.02 15:25:20   position modified [#5 sell 3.42 XAUUSD_NOCOST_V2 4133.580 sl: 4134.430 tp: 4130.416]
+CS	0	16:06:41.370	TwisterPro Scalper (XAUUSD_NOCOST_V2,M15)	2026.10.02 15:25:20   CTrade::OrderSend: modify position #5 XAUUSD_NOCOST_V2 (sl: 4134.430, tp: 4130.416) [done]
+CS	0	16:06:41.370	Trade	2026.10.02 15:25:40   stop loss triggered #5 sell 3.42 XAUUSD_NOCOST_V2 4133.580 sl: 4134.430 tp: 4130.416 [#6 buy 3.42 XAUUSD_NOCOST_V2 at 4134.430]
+CS	0	16:06:41.370	Trades	2026.10.02 15:25:40   deal #5 buy 3.42 XAUUSD_NOCOST_V2 at 4134.430 done (based on order #6)
+CS	0	16:06:41.370	Trade	2026.10.02 15:25:40   deal performed [#5 buy 3.42 XAUUSD_NOCOST_V2 at 4134.430]
+CS	0	16:06:41.370	Trade	2026.10.02 15:25:40   order performed buy 3.42 at 4134.430 [#6 buy 3.42 XAUUSD_NOCOST_V2 at 4134.430]
+CS	0	16:06:41.370	Tester	final balance 9410.10 USD
+CS	0	16:06:41.376	Tester	XAUUSD_NOCOST_V2,M15: 21568 ticks, 360 bars generated. Environment synchronized in 0:00:00.018. Test passed in 0:00:00.126.
+CS	0	16:06:41.376	Tester	XAUUSD_NOCOST_V2,M15: total time from login to stop testing 0:00:00.144 (including 0:00:00.018 for history data synchronization)
+CS	0	16:06:41.376	Tester	46 Mb memory used including 10 Mb of history data, 64 Mb of tick data
+CS	0	16:06:41.376	Tester	log file "C:\Users\NTD\Desktop\BotTradeEA\local\market-demos-20261020\dich-nguoc-luot2\terminal\Tester\Agent-127.0.0.1-3000\logs\20261021.log" written
+CS	0	16:06:41.376	Tester	test Experts\Market\TwisterPro Scalper.ex5 on XAUUSD_NOCOST_V2,M15 thread finished
+CS	0	16:06:41.452	127.0.0.1	tester forced to close
+CS	0	16:06:41.453	127.0.0.1	prepare for shutdown
+CS	0	16:06:41.453	127.0.0.1	stop immediately
+CS	0	16:06:41.453	127.0.0.1	shutdown finished
+CS	0	16:06:41.720	Server	MetaTester 5 stopped

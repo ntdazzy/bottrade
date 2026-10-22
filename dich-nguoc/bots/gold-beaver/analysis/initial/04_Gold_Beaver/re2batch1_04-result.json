@@ -1,0 +1,9 @@
+{
+  "run": "re2batch1_04",
+  "source": "mt5-btc-recovery/Gold Beaver.ex5",
+  "source_sha256": "EA5174FE310381AF65984953F113D1B10E422ACB95FEA41B18491BC40C055885",
+  "capture_exit": 0,
+  "tester_pid": 31556,
+  "runner_exit": 0,
+  "test_interrupted_after_capture": true
+}

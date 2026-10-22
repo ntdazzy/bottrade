@@ -1,0 +1,12 @@
+[
+  {
+    "id": "enum_probe_v1",
+    "ex5": "Ex5EnumProbe.ex5",
+    "symbol": "XAUUSD_NOCOST_V2",
+    "period": "H1",
+    "model": 1,
+    "from": "2026.10.14",
+    "to": "2026.10.15",
+    "timeout": 90
+  }
+]

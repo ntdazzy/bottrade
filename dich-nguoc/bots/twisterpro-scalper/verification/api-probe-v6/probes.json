@@ -1,0 +1,1214 @@
+[
+  {
+    "name": "IdentityLong",
+    "return_type": "long",
+    "body": "return k;",
+    "index": 0
+  },
+  {
+    "name": "IdentityDouble",
+    "return_type": "double",
+    "body": "return x;",
+    "index": 1
+  },
+  {
+    "name": "IdentityString",
+    "return_type": "string",
+    "body": "return s;",
+    "index": 2
+  },
+  {
+    "name": "GetLastError",
+    "return_type": "long",
+    "body": "return GetLastError();",
+    "index": 3
+  },
+  {
+    "name": "GetTickCount",
+    "return_type": "long",
+    "body": "return (long)GetTickCount();",
+    "index": 4
+  },
+  {
+    "name": "GetTickCount64",
+    "return_type": "long",
+    "body": "return (long)GetTickCount64();",
+    "index": 5
+  },
+  {
+    "name": "GetMicrosecondCount",
+    "return_type": "long",
+    "body": "return (long)GetMicrosecondCount();",
+    "index": 6
+  },
+  {
+    "name": "MQLInfoInteger",
+    "return_type": "long",
+    "body": "return MQLInfoInteger((ENUM_MQL_INFO_INTEGER)k);",
+    "index": 7
+  },
+  {
+    "name": "TerminalInfoInteger",
+    "return_type": "long",
+    "body": "return TerminalInfoInteger((ENUM_TERMINAL_INFO_INTEGER)k);",
+    "index": 8
+  },
+  {
+    "name": "IsStopped",
+    "return_type": "bool",
+    "body": "return IsStopped();",
+    "index": 9
+  },
+  {
+    "name": "AccountInfoInteger",
+    "return_type": "long",
+    "body": "return AccountInfoInteger(ACCOUNT_LEVERAGE);",
+    "index": 10
+  },
+  {
+    "name": "AccountInfoDouble",
+    "return_type": "double",
+    "body": "return AccountInfoDouble(ACCOUNT_BALANCE);",
+    "index": 11
+  },
+  {
+    "name": "AccountInfoString",
+    "return_type": "string",
+    "body": "return AccountInfoString(ACCOUNT_CURRENCY);",
+    "index": 12
+  },
+  {
+    "name": "SymbolInfoInteger",
+    "return_type": "long",
+    "body": "return SymbolInfoInteger(s,(ENUM_SYMBOL_INFO_INTEGER)k);",
+    "index": 13
+  },
+  {
+    "name": "SymbolInfoDouble",
+    "return_type": "double",
+    "body": "return SymbolInfoDouble(s,(ENUM_SYMBOL_INFO_DOUBLE)k);",
+    "index": 14
+  },
+  {
+    "name": "SymbolInfoString",
+    "return_type": "string",
+    "body": "return SymbolInfoString(s,(ENUM_SYMBOL_INFO_STRING)k);",
+    "index": 15
+  },
+  {
+    "name": "Symbol",
+    "return_type": "string",
+    "body": "return Symbol();",
+    "index": 16
+  },
+  {
+    "name": "Period",
+    "return_type": "long",
+    "body": "return Period();",
+    "index": 17
+  },
+  {
+    "name": "Digits",
+    "return_type": "long",
+    "body": "return Digits();",
+    "index": 18
+  },
+  {
+    "name": "Point",
+    "return_type": "double",
+    "body": "return Point();",
+    "index": 19
+  },
+  {
+    "name": "TimeCurrent",
+    "return_type": "long",
+    "body": "return (long)TimeCurrent();",
+    "index": 20
+  },
+  {
+    "name": "TimeLocal",
+    "return_type": "long",
+    "body": "return (long)TimeLocal();",
+    "index": 21
+  },
+  {
+    "name": "TimeGMT",
+    "return_type": "long",
+    "body": "return (long)TimeGMT();",
+    "index": 22
+  },
+  {
+    "name": "TimeGMTOffset",
+    "return_type": "long",
+    "body": "return (long)TimeGMTOffset();",
+    "index": 23
+  },
+  {
+    "name": "TimeTradeServer",
+    "return_type": "long",
+    "body": "return (long)TimeTradeServer();",
+    "index": 24
+  },
+  {
+    "name": "TimeToString",
+    "return_type": "string",
+    "body": "return TimeToString((datetime)k,(int)x);",
+    "index": 25
+  },
+  {
+    "name": "StringToTime",
+    "return_type": "long",
+    "body": "return (long)StringToTime(s);",
+    "index": 26
+  },
+  {
+    "name": "IntegerToString",
+    "return_type": "string",
+    "body": "return IntegerToString(k);",
+    "index": 27
+  },
+  {
+    "name": "DoubleToString",
+    "return_type": "string",
+    "body": "return DoubleToString(x,(int)k);",
+    "index": 28
+  },
+  {
+    "name": "StringLen",
+    "return_type": "long",
+    "body": "return StringLen(s);",
+    "index": 29
+  },
+  {
+    "name": "StringFind",
+    "return_type": "long",
+    "body": "return StringFind(s,\"x\",(int)k);",
+    "index": 30
+  },
+  {
+    "name": "StringSubstr",
+    "return_type": "string",
+    "body": "return StringSubstr(s,(int)k,2);",
+    "index": 31
+  },
+  {
+    "name": "StringGetCharacter",
+    "return_type": "long",
+    "body": "return StringGetCharacter(s,(int)k);",
+    "index": 32
+  },
+  {
+    "name": "StringToInteger",
+    "return_type": "long",
+    "body": "return StringToInteger(s);",
+    "index": 33
+  },
+  {
+    "name": "StringToDouble",
+    "return_type": "double",
+    "body": "return StringToDouble(s);",
+    "index": 34
+  },
+  {
+    "name": "NormalizeDouble",
+    "return_type": "double",
+    "body": "return NormalizeDouble(x,(int)k);",
+    "index": 35
+  },
+  {
+    "name": "MathRound",
+    "return_type": "double",
+    "body": "return MathRound(x);",
+    "index": 36
+  },
+  {
+    "name": "MathFloor",
+    "return_type": "double",
+    "body": "return MathFloor(x);",
+    "index": 37
+  },
+  {
+    "name": "MathCeil",
+    "return_type": "double",
+    "body": "return MathCeil(x);",
+    "index": 38
+  },
+  {
+    "name": "MathAbs",
+    "return_type": "double",
+    "body": "return MathAbs(x);",
+    "index": 39
+  },
+  {
+    "name": "MathPow",
+    "return_type": "double",
+    "body": "return MathPow(x,(double)k);",
+    "index": 40
+  },
+  {
+    "name": "PositionsTotal",
+    "return_type": "long",
+    "body": "return PositionsTotal();",
+    "index": 41
+  },
+  {
+    "name": "PositionGetTicket",
+    "return_type": "long",
+    "body": "return (long)PositionGetTicket((int)k);",
+    "index": 42
+  },
+  {
+    "name": "PositionGetSymbol",
+    "return_type": "string",
+    "body": "return PositionGetSymbol((int)k);",
+    "index": 43
+  },
+  {
+    "name": "PositionSelect",
+    "return_type": "bool",
+    "body": "return PositionSelect(s);",
+    "index": 44
+  },
+  {
+    "name": "PositionSelectByTicket",
+    "return_type": "bool",
+    "body": "return PositionSelectByTicket((ulong)k);",
+    "index": 45
+  },
+  {
+    "name": "PositionGetInteger",
+    "return_type": "long",
+    "body": "return PositionGetInteger((ENUM_POSITION_PROPERTY_INTEGER)k);",
+    "index": 46
+  },
+  {
+    "name": "PositionGetDouble",
+    "return_type": "double",
+    "body": "return PositionGetDouble((ENUM_POSITION_PROPERTY_DOUBLE)k);",
+    "index": 47
+  },
+  {
+    "name": "PositionGetString",
+    "return_type": "string",
+    "body": "return PositionGetString((ENUM_POSITION_PROPERTY_STRING)k);",
+    "index": 48
+  },
+  {
+    "name": "OrdersTotal",
+    "return_type": "long",
+    "body": "return OrdersTotal();",
+    "index": 49
+  },
+  {
+    "name": "OrderGetTicket",
+    "return_type": "long",
+    "body": "return (long)OrderGetTicket((int)k);",
+    "index": 50
+  },
+  {
+    "name": "OrderSelect",
+    "return_type": "bool",
+    "body": "return OrderSelect((ulong)k);",
+    "index": 51
+  },
+  {
+    "name": "OrderGetInteger",
+    "return_type": "long",
+    "body": "return OrderGetInteger((ENUM_ORDER_PROPERTY_INTEGER)k);",
+    "index": 52
+  },
+  {
+    "name": "OrderGetDouble",
+    "return_type": "double",
+    "body": "return OrderGetDouble((ENUM_ORDER_PROPERTY_DOUBLE)k);",
+    "index": 53
+  },
+  {
+    "name": "OrderGetString",
+    "return_type": "string",
+    "body": "return OrderGetString((ENUM_ORDER_PROPERTY_STRING)k);",
+    "index": 54
+  },
+  {
+    "name": "HistorySelect",
+    "return_type": "bool",
+    "body": "return HistorySelect((datetime)k,(datetime)(k+60));",
+    "index": 55
+  },
+  {
+    "name": "HistoryDealSelect",
+    "return_type": "bool",
+    "body": "return HistoryDealSelect((ulong)k);",
+    "index": 56
+  },
+  {
+    "name": "HistoryDealsTotal",
+    "return_type": "long",
+    "body": "return HistoryDealsTotal();",
+    "index": 57
+  },
+  {
+    "name": "HistoryDealGetTicket",
+    "return_type": "long",
+    "body": "return (long)HistoryDealGetTicket((int)k);",
+    "index": 58
+  },
+  {
+    "name": "HistoryDealGetInteger",
+    "return_type": "long",
+    "body": "return HistoryDealGetInteger((ulong)k,(ENUM_DEAL_PROPERTY_INTEGER)(int)x);",
+    "index": 59
+  },
+  {
+    "name": "HistoryDealGetDouble",
+    "return_type": "double",
+    "body": "return HistoryDealGetDouble((ulong)k,(ENUM_DEAL_PROPERTY_DOUBLE)(int)x);",
+    "index": 60
+  },
+  {
+    "name": "HistoryDealGetString",
+    "return_type": "string",
+    "body": "return HistoryDealGetString((ulong)k,(ENUM_DEAL_PROPERTY_STRING)(int)x);",
+    "index": 61
+  },
+  {
+    "name": "iATR",
+    "return_type": "long",
+    "body": "return iATR(s,(ENUM_TIMEFRAMES)(int)k,(int)x);",
+    "index": 62
+  },
+  {
+    "name": "iOpen",
+    "return_type": "double",
+    "body": "return iOpen(s,(ENUM_TIMEFRAMES)(int)k,(int)x);",
+    "index": 63
+  },
+  {
+    "name": "iHigh",
+    "return_type": "double",
+    "body": "return iHigh(s,(ENUM_TIMEFRAMES)(int)k,(int)x);",
+    "index": 64
+  },
+  {
+    "name": "iLow",
+    "return_type": "double",
+    "body": "return iLow(s,(ENUM_TIMEFRAMES)(int)k,(int)x);",
+    "index": 65
+  },
+  {
+    "name": "iClose",
+    "return_type": "double",
+    "body": "return iClose(s,(ENUM_TIMEFRAMES)(int)k,(int)x);",
+    "index": 66
+  },
+  {
+    "name": "iTime",
+    "return_type": "long",
+    "body": "return (long)iTime(s,(ENUM_TIMEFRAMES)(int)k,(int)x);",
+    "index": 67
+  },
+  {
+    "name": "Bars",
+    "return_type": "long",
+    "body": "return Bars(s,(ENUM_TIMEFRAMES)(int)k);",
+    "index": 68
+  },
+  {
+    "name": "IndicatorRelease",
+    "return_type": "bool",
+    "body": "return IndicatorRelease((int)k);",
+    "index": 69
+  },
+  {
+    "name": "ChartID",
+    "return_type": "long",
+    "body": "return ChartID();",
+    "index": 70
+  },
+  {
+    "name": "ChartGetInteger",
+    "return_type": "long",
+    "body": "return ChartGetInteger(k,(ENUM_CHART_PROPERTY_INTEGER)(int)x,0);",
+    "index": 71
+  },
+  {
+    "name": "ObjectFind",
+    "return_type": "long",
+    "body": "return ObjectFind(k,s);",
+    "index": 72
+  },
+  {
+    "name": "ObjectDelete",
+    "return_type": "bool",
+    "body": "return ObjectDelete(k,s);",
+    "index": 73
+  },
+  {
+    "name": "ObjectsDeleteAllPrefix",
+    "return_type": "long",
+    "body": "return ObjectsDeleteAll(k,s,-1,-1);",
+    "index": 74
+  },
+  {
+    "name": "ObjectGetInteger",
+    "return_type": "long",
+    "body": "return ObjectGetInteger(k,s,(ENUM_OBJECT_PROPERTY_INTEGER)(int)x,0);",
+    "index": 75
+  },
+  {
+    "name": "ObjectGetDouble",
+    "return_type": "double",
+    "body": "return ObjectGetDouble(k,s,(ENUM_OBJECT_PROPERTY_DOUBLE)(int)x,0);",
+    "index": 76
+  },
+  {
+    "name": "ObjectGetString",
+    "return_type": "string",
+    "body": "return ObjectGetString(k,s,(ENUM_OBJECT_PROPERTY_STRING)(int)x,0);",
+    "index": 77
+  },
+  {
+    "name": "ObjectSetInteger",
+    "return_type": "bool",
+    "body": "return ObjectSetInteger(k,s,OBJPROP_XDISTANCE,(long)x);",
+    "index": 78
+  },
+  {
+    "name": "ObjectSetDouble",
+    "return_type": "bool",
+    "body": "return ObjectSetDouble(k,s,OBJPROP_PRICE,x);",
+    "index": 79
+  },
+  {
+    "name": "ObjectSetString",
+    "return_type": "bool",
+    "body": "return ObjectSetString(k,s,OBJPROP_TEXT,s);",
+    "index": 80
+  },
+  {
+    "name": "ResourceFree",
+    "return_type": "bool",
+    "body": "return ResourceFree(s);",
+    "index": 81
+  },
+  {
+    "name": "TextSetFont",
+    "return_type": "bool",
+    "body": "return TextSetFont(s,(int)k,0,0);",
+    "index": 82
+  },
+  {
+    "name": "ColorToARGB",
+    "return_type": "long",
+    "body": "return (long)ColorToARGB((color)k,(uchar)x);",
+    "index": 83
+  },
+  {
+    "name": "ResetLastError",
+    "return_type": "long",
+    "body": "ResetLastError(); return 0;",
+    "index": 84
+  },
+  {
+    "name": "ChartRedraw",
+    "return_type": "long",
+    "body": "ChartRedraw(k); return 0;",
+    "index": 85
+  },
+  {
+    "name": "EventSetTimer",
+    "return_type": "bool",
+    "body": "return EventSetTimer((int)k);",
+    "index": 86
+  },
+  {
+    "name": "EventKillTimer",
+    "return_type": "long",
+    "body": "EventKillTimer(); return 0;",
+    "index": 87
+  },
+  {
+    "name": "SymbolInfoIntegerRef",
+    "return_type": "bool",
+    "body": "long v; return SymbolInfoInteger(s,(ENUM_SYMBOL_INFO_INTEGER)k,v);",
+    "index": 88
+  },
+  {
+    "name": "SymbolInfoDoubleRef",
+    "return_type": "bool",
+    "body": "double v; return SymbolInfoDouble(s,(ENUM_SYMBOL_INFO_DOUBLE)k,v);",
+    "index": 89
+  },
+  {
+    "name": "SymbolInfoStringRef",
+    "return_type": "bool",
+    "body": "string v; return SymbolInfoString(s,(ENUM_SYMBOL_INFO_STRING)k,v);",
+    "index": 90
+  },
+  {
+    "name": "SymbolInfoTick",
+    "return_type": "bool",
+    "body": "MqlTick v; return SymbolInfoTick(s,v);",
+    "index": 91
+  },
+  {
+    "name": "SymbolInfoSessionTrade",
+    "return_type": "bool",
+    "body": "datetime a,b; return SymbolInfoSessionTrade(s,(ENUM_DAY_OF_WEEK)k,0,a,b);",
+    "index": 92
+  },
+  {
+    "name": "TimeToStruct",
+    "return_type": "bool",
+    "body": "MqlDateTime v; return TimeToStruct((datetime)k,v);",
+    "index": 93
+  },
+  {
+    "name": "StructToTime",
+    "return_type": "long",
+    "body": "MqlDateTime v; ZeroMemory(v); v.year=(int)k; return (long)StructToTime(v);",
+    "index": 94
+  },
+  {
+    "name": "StringToUpper",
+    "return_type": "string",
+    "body": "string v=s; StringToUpper(v); return v;",
+    "index": 95
+  },
+  {
+    "name": "StringToLower",
+    "return_type": "string",
+    "body": "string v=s; StringToLower(v); return v;",
+    "index": 96
+  },
+  {
+    "name": "StringTrimLeft",
+    "return_type": "string",
+    "body": "string v=s; StringTrimLeft(v); return v;",
+    "index": 97
+  },
+  {
+    "name": "StringTrimRight",
+    "return_type": "string",
+    "body": "string v=s; StringTrimRight(v); return v;",
+    "index": 98
+  },
+  {
+    "name": "StringReplace",
+    "return_type": "long",
+    "body": "string v=s; return StringReplace(v,\"a\",\"b\");",
+    "index": 99
+  },
+  {
+    "name": "StringSplit",
+    "return_type": "long",
+    "body": "string values[]; return StringSplit(s,ushort(k),values);",
+    "index": 100
+  },
+  {
+    "name": "StringFormat",
+    "return_type": "string",
+    "body": "return StringFormat(\"%I64d %.3f %s\",k,x,s);",
+    "index": 101
+  },
+  {
+    "name": "CopyBuffer",
+    "return_type": "long",
+    "body": "double values[]; return CopyBuffer((int)k,0,0,1,values);",
+    "index": 102
+  },
+  {
+    "name": "CopyRates",
+    "return_type": "long",
+    "body": "MqlRates values[]; return CopyRates(s,(ENUM_TIMEFRAMES)k,0,1,values);",
+    "index": 103
+  },
+  {
+    "name": "OrderCheck",
+    "return_type": "bool",
+    "body": "MqlTradeRequest q; MqlTradeCheckResult r; ZeroMemory(q); return OrderCheck(q,r);",
+    "index": 104
+  },
+  {
+    "name": "OrderSend",
+    "return_type": "bool",
+    "body": "MqlTradeRequest q; MqlTradeResult r; ZeroMemory(q); return OrderSend(q,r);",
+    "index": 105
+  },
+  {
+    "name": "OrderSendAsync",
+    "return_type": "bool",
+    "body": "MqlTradeRequest q; MqlTradeResult r; ZeroMemory(q); return OrderSendAsync(q,r);",
+    "index": 106
+  },
+  {
+    "name": "OrderCalcMargin",
+    "return_type": "bool",
+    "body": "double margin; return OrderCalcMargin(ORDER_TYPE_BUY,s,x,x,margin);",
+    "index": 107
+  },
+  {
+    "name": "OrderCalcProfit",
+    "return_type": "bool",
+    "body": "double profit; return OrderCalcProfit(ORDER_TYPE_BUY,s,x,x,x,profit);",
+    "index": 108
+  },
+  {
+    "name": "ObjectCreate",
+    "return_type": "bool",
+    "body": "return ObjectCreate(k,s,OBJ_LABEL,0,0,0);",
+    "index": 109
+  },
+  {
+    "name": "TextGetSize",
+    "return_type": "bool",
+    "body": "uint w,h; return TextGetSize(s,w,h);",
+    "index": 110
+  },
+  {
+    "name": "ResourceCreate",
+    "return_type": "bool",
+    "body": "uint pixels[]; ArrayResize(pixels,4); pixels[0]=(uint)k; return ResourceCreate(s,pixels,2,2,0,0,2,COLOR_FORMAT_ARGB_NORMALIZE);",
+    "index": 111
+  },
+  {
+    "name": "TextOut",
+    "return_type": "bool",
+    "body": "uint pixels[]; ArrayResize(pixels,16); return TextOut(s,(int)k,0,0,pixels,4,4,(uint)k,COLOR_FORMAT_ARGB_NORMALIZE);",
+    "index": 112
+  },
+  {
+    "name": "ArrayResizeDouble",
+    "return_type": "long",
+    "body": "double a[]; return ArrayResize(a,(int)k);",
+    "index": 113
+  },
+  {
+    "name": "ArrayInitializeDouble",
+    "return_type": "long",
+    "body": "double a[]; ArrayResize(a,4); return ArrayInitialize(a,x);",
+    "index": 114
+  },
+  {
+    "name": "ArrayFillUInt",
+    "return_type": "long",
+    "body": "uint a[]; ArrayResize(a,4); ArrayFill(a,0,4,(uint)k); return a[0];",
+    "index": 115
+  },
+  {
+    "name": "ArrayCopyUInt",
+    "return_type": "long",
+    "body": "uint a[],b[]; ArrayResize(a,4); a[0]=(uint)k; return ArrayCopy(b,a);",
+    "index": 116
+  },
+  {
+    "name": "ArrayFreeDouble",
+    "return_type": "long",
+    "body": "double a[]; ArrayResize(a,(int)k); ArrayFree(a); return ArraySize(a);",
+    "index": 117
+  },
+  {
+    "name": "ArraySetAsSeries",
+    "return_type": "bool",
+    "body": "double a[]; return ArraySetAsSeries(a,(bool)k);",
+    "index": 118
+  },
+  {
+    "name": "CharArrayToString",
+    "return_type": "string",
+    "body": "uchar a[]; ArrayResize(a,2); a[0]=(uchar)k; a[1]=0; return CharArrayToString(a,0,-1,CP_UTF8);",
+    "index": 119
+  },
+  {
+    "name": "StringToCharArray",
+    "return_type": "long",
+    "body": "uchar a[]; return StringToCharArray(s,a,0,-1,CP_UTF8);",
+    "index": 120
+  },
+  {
+    "name": "WebRequest",
+    "return_type": "long",
+    "body": "char request[],response[]; string headers; return WebRequest(\"GET\",s,\"\",(int)k,request,response,headers);",
+    "index": 121
+  },
+  {
+    "name": "PrintFormat",
+    "return_type": "long",
+    "body": "PrintFormat(\"%I64d %.3f %s\",k,x,s); return 0;",
+    "index": 122
+  },
+  {
+    "name": "Comment",
+    "return_type": "long",
+    "body": "Comment(s,k,x); return 0;",
+    "index": 123
+  },
+  {
+    "name": "StringConcatenate",
+    "return_type": "long",
+    "body": "string value; return StringConcatenate(value,s,k,x);",
+    "index": 124
+  },
+  {
+    "name": "iMA",
+    "return_type": "long",
+    "body": "return iMA(s,(ENUM_TIMEFRAMES)k,(int)x,0,MODE_EMA,PRICE_OPEN);",
+    "index": 125
+  },
+  {
+    "name": "ObjectSetIntegerModifier",
+    "return_type": "bool",
+    "body": "return ObjectSetInteger(k,s,OBJPROP_XDISTANCE,0,(long)x);",
+    "index": 126
+  },
+  {
+    "name": "ObjectSetDoubleModifier",
+    "return_type": "bool",
+    "body": "return ObjectSetDouble(k,s,OBJPROP_PRICE,0,x);",
+    "index": 127
+  },
+  {
+    "name": "ObjectSetStringModifier",
+    "return_type": "bool",
+    "body": "return ObjectSetString(k,s,OBJPROP_TEXT,0,s);",
+    "index": 128
+  },
+  {
+    "name": "ObjectGetIntegerRef",
+    "return_type": "bool",
+    "body": "long v; return ObjectGetInteger(k,s,OBJPROP_XDISTANCE,0,v);",
+    "index": 129
+  },
+  {
+    "name": "ObjectGetDoubleRef",
+    "return_type": "bool",
+    "body": "double v; return ObjectGetDouble(k,s,OBJPROP_PRICE,0,v);",
+    "index": 130
+  },
+  {
+    "name": "ObjectGetStringRef",
+    "return_type": "bool",
+    "body": "string v; return ObjectGetString(k,s,OBJPROP_TEXT,0,v);",
+    "index": 131
+  },
+  {
+    "name": "ChartGetIntegerRef",
+    "return_type": "bool",
+    "body": "long v; return ChartGetInteger(k,CHART_WIDTH_IN_PIXELS,0,v);",
+    "index": 132
+  },
+  {
+    "name": "ChartGetDouble",
+    "return_type": "double",
+    "body": "return ChartGetDouble(k,CHART_PRICE_MIN,0);",
+    "index": 133
+  },
+  {
+    "name": "ChartGetString",
+    "return_type": "string",
+    "body": "return ChartGetString(k,CHART_COMMENT);",
+    "index": 134
+  },
+  {
+    "name": "MQLInfoString",
+    "return_type": "string",
+    "body": "return MQLInfoString(MQL_PROGRAM_NAME);",
+    "index": 135
+  },
+  {
+    "name": "TerminalInfoString",
+    "return_type": "string",
+    "body": "return TerminalInfoString(TERMINAL_NAME);",
+    "index": 136
+  },
+  {
+    "name": "TerminalInfoDouble",
+    "return_type": "double",
+    "body": "return TerminalInfoDouble(TERMINAL_COMMUNITY_BALANCE);",
+    "index": 137
+  },
+  {
+    "name": "UninitializeReason",
+    "return_type": "long",
+    "body": "return UninitializeReason();",
+    "index": 138
+  },
+  {
+    "name": "PeriodSeconds",
+    "return_type": "long",
+    "body": "return PeriodSeconds((ENUM_TIMEFRAMES)k);",
+    "index": 139
+  },
+  {
+    "name": "Sleep",
+    "return_type": "long",
+    "body": "Sleep((int)k); return 0;",
+    "index": 140
+  },
+  {
+    "name": "HistoryOrdersTotal",
+    "return_type": "long",
+    "body": "return HistoryOrdersTotal();",
+    "index": 141
+  },
+  {
+    "name": "HistoryOrderSelect",
+    "return_type": "bool",
+    "body": "return HistoryOrderSelect((ulong)k);",
+    "index": 142
+  },
+  {
+    "name": "HistoryOrderGetTicket",
+    "return_type": "long",
+    "body": "return (long)HistoryOrderGetTicket((int)k);",
+    "index": 143
+  },
+  {
+    "name": "HistoryOrderGetInteger",
+    "return_type": "long",
+    "body": "return HistoryOrderGetInteger((ulong)k,(ENUM_ORDER_PROPERTY_INTEGER)(int)x);",
+    "index": 144
+  },
+  {
+    "name": "HistoryOrderGetDouble",
+    "return_type": "double",
+    "body": "return HistoryOrderGetDouble((ulong)k,(ENUM_ORDER_PROPERTY_DOUBLE)(int)x);",
+    "index": 145
+  },
+  {
+    "name": "HistoryOrderGetString",
+    "return_type": "string",
+    "body": "return HistoryOrderGetString((ulong)k,(ENUM_ORDER_PROPERTY_STRING)(int)x);",
+    "index": 146
+  },
+  {
+    "name": "HistorySelectByPosition",
+    "return_type": "bool",
+    "body": "return HistorySelectByPosition((ulong)k);",
+    "index": 147
+  },
+  {
+    "name": "PositionGetIntegerRef",
+    "return_type": "bool",
+    "body": "long v; return PositionGetInteger((ENUM_POSITION_PROPERTY_INTEGER)k,v);",
+    "index": 148
+  },
+  {
+    "name": "PositionGetDoubleRef",
+    "return_type": "bool",
+    "body": "double v; return PositionGetDouble((ENUM_POSITION_PROPERTY_DOUBLE)k,v);",
+    "index": 149
+  },
+  {
+    "name": "PositionGetStringRef",
+    "return_type": "bool",
+    "body": "string v; return PositionGetString((ENUM_POSITION_PROPERTY_STRING)k,v);",
+    "index": 150
+  },
+  {
+    "name": "OrderGetIntegerRef",
+    "return_type": "bool",
+    "body": "long v; return OrderGetInteger((ENUM_ORDER_PROPERTY_INTEGER)k,v);",
+    "index": 151
+  },
+  {
+    "name": "OrderGetDoubleRef",
+    "return_type": "bool",
+    "body": "double v; return OrderGetDouble((ENUM_ORDER_PROPERTY_DOUBLE)k,v);",
+    "index": 152
+  },
+  {
+    "name": "OrderGetStringRef",
+    "return_type": "bool",
+    "body": "string v; return OrderGetString((ENUM_ORDER_PROPERTY_STRING)k,v);",
+    "index": 153
+  },
+  {
+    "name": "StringCompare",
+    "return_type": "long",
+    "body": "return StringCompare(s,\"X\",true);",
+    "index": 154
+  },
+  {
+    "name": "StringEqual",
+    "return_type": "bool",
+    "body": "return s==\"X\";",
+    "index": 155
+  },
+  {
+    "name": "StringLess",
+    "return_type": "bool",
+    "body": "return s<\"X\";",
+    "index": 156
+  },
+  {
+    "name": "StringAdd",
+    "return_type": "string",
+    "body": "string v=s; StringAdd(v,s); return v;",
+    "index": 157
+  },
+  {
+    "name": "StringInit",
+    "return_type": "string",
+    "body": "string v; StringInit(v,(int)k,(ushort)x); return v;",
+    "index": 158
+  },
+  {
+    "name": "StringSetCharacter",
+    "return_type": "string",
+    "body": "string v=s; StringSetCharacter(v,(int)k,(ushort)x); return v;",
+    "index": 159
+  },
+  {
+    "name": "ShortToString",
+    "return_type": "string",
+    "body": "return ShortToString((ushort)k);",
+    "index": 160
+  },
+  {
+    "name": "ShortArrayToString",
+    "return_type": "string",
+    "body": "ushort v[]; ArrayResize(v,2);v[0]=(ushort)k;v[1]=0;return ShortArrayToString(v);",
+    "index": 161
+  },
+  {
+    "name": "MathLog",
+    "return_type": "double",
+    "body": "return MathLog(x);",
+    "index": 162
+  },
+  {
+    "name": "MathLog10",
+    "return_type": "double",
+    "body": "return MathLog10(x);",
+    "index": 163
+  },
+  {
+    "name": "MathSqrt",
+    "return_type": "double",
+    "body": "return MathSqrt(x);",
+    "index": 164
+  },
+  {
+    "name": "MathMod",
+    "return_type": "double",
+    "body": "return MathMod(x,(double)k);",
+    "index": 165
+  },
+  {
+    "name": "iHighest",
+    "return_type": "long",
+    "body": "return iHighest(s,(ENUM_TIMEFRAMES)k,MODE_HIGH,(int)x,1);",
+    "index": 166
+  },
+  {
+    "name": "iLowest",
+    "return_type": "long",
+    "body": "return iLowest(s,(ENUM_TIMEFRAMES)k,MODE_LOW,(int)x,1);",
+    "index": 167
+  },
+  {
+    "name": "iBars",
+    "return_type": "long",
+    "body": "return iBars(s,(ENUM_TIMEFRAMES)k);",
+    "index": 168
+  },
+  {
+    "name": "iBarShift",
+    "return_type": "long",
+    "body": "return iBarShift(s,(ENUM_TIMEFRAMES)k,(datetime)x,false);",
+    "index": 169
+  },
+  {
+    "name": "SeriesInfoInteger",
+    "return_type": "long",
+    "body": "return SeriesInfoInteger(s,(ENUM_TIMEFRAMES)k,SERIES_LASTBAR_DATE);",
+    "index": 170
+  },
+  {
+    "name": "SeriesInfoIntegerRef",
+    "return_type": "bool",
+    "body": "long v;return SeriesInfoInteger(s,(ENUM_TIMEFRAMES)k,SERIES_LASTBAR_DATE,v);",
+    "index": 171
+  },
+  {
+    "name": "CopyTime",
+    "return_type": "long",
+    "body": "datetime v[];return CopyTime(s,(ENUM_TIMEFRAMES)k,0,1,v);",
+    "index": 172
+  },
+  {
+    "name": "CopyHigh",
+    "return_type": "long",
+    "body": "double v[];return CopyHigh(s,(ENUM_TIMEFRAMES)k,0,1,v);",
+    "index": 173
+  },
+  {
+    "name": "CopyLow",
+    "return_type": "long",
+    "body": "double v[];return CopyLow(s,(ENUM_TIMEFRAMES)k,0,1,v);",
+    "index": 174
+  },
+  {
+    "name": "CopyOpen",
+    "return_type": "long",
+    "body": "double v[];return CopyOpen(s,(ENUM_TIMEFRAMES)k,0,1,v);",
+    "index": 175
+  },
+  {
+    "name": "CopyClose",
+    "return_type": "long",
+    "body": "double v[];return CopyClose(s,(ENUM_TIMEFRAMES)k,0,1,v);",
+    "index": 176
+  },
+  {
+    "name": "ArrayMaximum",
+    "return_type": "long",
+    "body": "double v[];ArrayResize(v,2);v[0]=x;v[1]=(double)k;return ArrayMaximum(v);",
+    "index": 177
+  },
+  {
+    "name": "ArrayMinimum",
+    "return_type": "long",
+    "body": "double v[];ArrayResize(v,2);v[0]=x;v[1]=(double)k;return ArrayMinimum(v);",
+    "index": 178
+  },
+  {
+    "name": "ArraySetAsSeriesUInt",
+    "return_type": "bool",
+    "body": "uint a[];return ArraySetAsSeries(a,(bool)k);",
+    "index": 179
+  },
+  {
+    "name": "StringReserve",
+    "return_type": "bool",
+    "body": "string v=s;return StringReserve(v,(int)k);",
+    "index": 180
+  },
+  {
+    "name": "StringBufferLen",
+    "return_type": "long",
+    "body": "return StringBufferLen(s);",
+    "index": 181
+  },
+  {
+    "name": "MathMin",
+    "return_type": "double",
+    "body": "return MathMin(x,(double)k);",
+    "index": 182
+  },
+  {
+    "name": "MathMax",
+    "return_type": "double",
+    "body": "return MathMax(x,(double)k);",
+    "index": 183
+  },
+  {
+    "name": "ZeroMemoryRequest",
+    "return_type": "long",
+    "body": "MqlTradeRequest v; ZeroMemory(v);v.magic=(ulong)k;return (long)v.magic;",
+    "index": 184
+  },
+  {
+    "name": "StructCopyRequest",
+    "return_type": "long",
+    "body": "MqlTradeRequest a,b;ZeroMemory(a);a.magic=(ulong)k;a.comment=s;b=a;return(long)b.magic;",
+    "index": 185
+  },
+  {
+    "name": "ChartSetInteger",
+    "return_type": "bool",
+    "body": "return ChartSetInteger(k,CHART_SHOW_GRID,(long)x);",
+    "index": 186
+  },
+  {
+    "name": "ObjectsTotal",
+    "return_type": "long",
+    "body": "return ObjectsTotal(k,-1,-1);",
+    "index": 187
+  },
+  {
+    "name": "ObjectName",
+    "return_type": "string",
+    "body": "return ObjectName(k,(int)x,-1,-1);",
+    "index": 188
+  },
+  {
+    "name": "WebRequestNine",
+    "return_type": "long",
+    "body": "char request[],response[]; string headers; return WebRequest(\"GET\",s,\"\",\"\",(int)k,request,0,response,headers);",
+    "index": 189
+  },
+  {
+    "name": "CastLongString",
+    "return_type": "string",
+    "body": "return (string)k;",
+    "index": 190
+  },
+  {
+    "name": "CastUIntString",
+    "return_type": "string",
+    "body": "return (string)(uint)k;",
+    "index": 191
+  },
+  {
+    "name": "CastDoubleString",
+    "return_type": "string",
+    "body": "return (string)x;",
+    "index": 192
+  },
+  {
+    "name": "LocalClass",
+    "return_type": "long",
+    "body": "CProbeBase object;object.value=(int)k;return (long)CheckPointer(GetPointer(object));",
+    "index": 193
+  },
+  {
+    "name": "DynamicClass",
+    "return_type": "long",
+    "body": "CProbeBase *object=new CProbeBase;object.value=(int)k;long result=object.value;delete object;return result;",
+    "index": 194
+  },
+  {
+    "name": "DerivedClass",
+    "return_type": "long",
+    "body": "CProbeDerived object;object.value=(int)k;return (long)CheckPointer(GetPointer(object));",
+    "index": 195
+  },
+  {
+    "name": "LargeStaticBuffer",
+    "return_type": "long",
+    "body": "uint a[2048];ArrayInitialize(a,0);a[(int)(k%2048)]=(uint)x;return (long)a[0];",
+    "index": 196
+  },
+  {
+    "name": "ArrayBounds",
+    "return_type": "double",
+    "body": "double a[2];a[0]=x;a[1]=x+1;return a[(int)k];",
+    "index": 197
+  },
+  {
+    "name": "Divide",
+    "return_type": "double",
+    "body": "return x/(double)k;",
+    "index": 198
+  },
+  {
+    "name": "NullObject",
+    "return_type": "long",
+    "body": "CProbeBase *object=NULL;return object.value;",
+    "index": 199
+  },
+  {
+    "name": "CopyTickVolume",
+    "return_type": "long",
+    "body": "long v[];return CopyTickVolume(s,(ENUM_TIMEFRAMES)k,0,1,v);",
+    "index": 200
+  },
+  {
+    "name": "CopyRealVolume",
+    "return_type": "long",
+    "body": "long v[];return CopyRealVolume(s,(ENUM_TIMEFRAMES)k,0,1,v);",
+    "index": 201
+  }
+]
