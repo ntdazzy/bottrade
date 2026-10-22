@@ -1,0 +1,30 @@
+name: EX5 thorough static binary audit
+on:
+  push:
+    branches:
+      - research/ex5-localhost-20261022
+    paths:
+      - tools/ex5_deep_audit.py
+      - .github/workflows/ex5-deep-audit.yml
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Build read-only worktree of original paths on main
+        run: |
+          git fetch origin main
+          git worktree add --detach scan-main origin/main
+      - name: Scan every byte and compare to previous baseline
+        run: python3 tools/ex5_deep_audit.py scan-main
+      - name: Archive static audit evidence
+        uses: actions/upload-artifact@v4
+        with:
+          name: EX5-deep-binary-audit
+          path: dist/ex5-deep-audit/
+          if-no-files-found: error
