@@ -1,0 +1,20 @@
+{
+  "bot": 3,
+  "cases": 2589,
+  "matched": 2589,
+  "failed": 0,
+  "first_failures": [],
+  "seconds": 6.92,
+  "source_comparison": "bot-cua-toi-3/bang-chung/kiem-dong-vi-the/close-20261025-r4",
+  "hashes": {
+    "cases.bin": "21a64074b9416a5c59adaae09c19b8d26f981eef8bdc5a467a5f15fd7df93468",
+    "original-results.bin": "44f6697f0ab5577b55b7bdd9ac3319a0a5cb92ecf8141d92f904386391b567a9",
+    "tester-mql5-results.bin": "44f6697f0ab5577b55b7bdd9ac3319a0a5cb92ecf8141d92f904386391b567a9",
+    "script-mql5-results.bin": "44f6697f0ab5577b55b7bdd9ac3319a0a5cb92ecf8141d92f904386391b567a9",
+    "api-fixtures.bin": "7a4066eea84953471883b42711d7e0bbbcdf290616c1318491c4a8b07d62c48b",
+    "script-status.bin": "41da09d316751d0ba06e28f4b6fb30545494eeb9ff7f673adacf7395c90db34d"
+  },
+  "whole_bot_complete": false,
+  "scope": "Same four position-close builder/guard functions through filling/send/messages.35 public fields,four strings/null flags,deviation,four shared doubles and public state at service boundaries compared. SDK replies supplied and input-bound; formatting measured. No actual account/broker/full EA/allocation-fault proof.",
+  "input_contract_checked_cases": 2589
+}

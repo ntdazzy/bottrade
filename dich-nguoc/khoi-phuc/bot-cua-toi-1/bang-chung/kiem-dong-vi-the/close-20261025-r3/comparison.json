@@ -1,0 +1,15 @@
+{
+  "cases": 2369,
+  "matched": 2369,
+  "failed": 0,
+  "first_failures": [],
+  "hashes": {
+    "cases.bin": "5e73b8008c901c99a8353f7ec8a999f87aed6a90ea771f2f6d1d3219f68504ea",
+    "original-results.bin": "7566fe564d729b84f897683c1c267d153ad1ff83f1db9272cc7211bc4123fe4a",
+    "mql5-results.bin": "7566fe564d729b84f897683c1c267d153ad1ff83f1db9272cc7211bc4123fe4a",
+    "api-fixtures.bin": "5e6c2f9e02c412e07e3c886c8349e0ad156031fe33a1cfaaaf27b4854f0e67d6",
+    "script-status.bin": "7daf763e5b3945612d4b5b408c9ab2a0997dbfc6bf46dc0732f5992d738afa73"
+  },
+  "whole_bot_complete": false,
+  "scope": "Compare full position-close builders/guards, filling, send and messages.\n\nUsage: kiem-dong-vi-the-bot-1-3.py prepare|mql5|original|compare BOT RUN [--build BUILD]\nSDK replies are input-bound; original instructions execute the algorithms. Public\nstate/null flags are compared before queries and after send, as well as on return.\nFinal state is captured before native destructors clean the four persistent strings\nfor this test case; memory balance is checked after that separate harness cleanup.\nNo real orders, broker/account-selection, full-EA or allocation-fault proof.\n"
+}

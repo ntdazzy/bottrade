@@ -1,0 +1,118 @@
+{
+  "constants": {
+    "TRADE_ACTION_DEAL": 1,
+    "POSITION_MAGIC": 12,
+    "POSITION_TYPE": 2,
+    "POSITION_VOLUME": 3,
+    "POSITION_SL": 6,
+    "POSITION_TP": 7,
+    "POSITION_PRICE_CURRENT": 5,
+    "POSITION_SYMBOL": 0,
+    "SYMBOL_BID": 1,
+    "SYMBOL_ASK": 4,
+    "POSITION_TYPE_BUY": 0,
+    "POSITION_TYPE_SELL": 1
+  },
+  "sdk_sites": {
+    "CloseSelect": {
+      "function_rva": "0x1370",
+      "sdk_rva": "0x7d7ee0",
+      "call_site": "0x13c8",
+      "property": null
+    },
+    "CloseMagic": {
+      "function_rva": "0x13d0",
+      "sdk_rva": "0x7d7fc0",
+      "call_site": "0x1425",
+      "property": 12
+    },
+    "CloseType": {
+      "function_rva": "0x1430",
+      "sdk_rva": "0x7d7fc0",
+      "call_site": "0x1485",
+      "property": 2
+    },
+    "CloseVolume": {
+      "function_rva": "0x1490",
+      "sdk_rva": "0x7d7f70",
+      "call_site": "0x14e0",
+      "property": 3
+    },
+    "CloseSL": {
+      "function_rva": "0x1500",
+      "sdk_rva": "0x7d7f70",
+      "call_site": "0x1550",
+      "property": 6
+    },
+    "CloseTP": {
+      "function_rva": "0x1570",
+      "sdk_rva": "0x7d7f70",
+      "call_site": "0x15c0",
+      "property": 7
+    },
+    "CloseCurrent": {
+      "function_rva": "0x15e0",
+      "sdk_rva": "0x7d7f70",
+      "call_site": "0x1630",
+      "property": 5
+    },
+    "CloseSymbol": {
+      "function_rva": "0x1650",
+      "sdk_rva": "0x7d8010",
+      "call_site": "0x16b1",
+      "property": null
+    },
+    "CloseBid": {
+      "function_rva": "0x1710",
+      "sdk_rva": "0x7c2890",
+      "call_site": "0x1768",
+      "property": 1
+    },
+    "CloseAsk": {
+      "function_rva": "0x1780",
+      "sdk_rva": "0x7c2890",
+      "call_site": "0x17d8",
+      "property": 4
+    }
+  },
+  "math_abs_mask_hex": "ffffffffffffff7fffffffffffffff7f",
+  "originals": [
+    {
+      "bot": 1,
+      "analysis_sha256": "6b4df876a33d02d294d006404baff5aeba7225af9af9b65ef5679792ee6abd43",
+      "original_ex5_sha256": "a3b0de423a06e10ebedc279307b93d7cb9188ba2bb5de77131a913c865b0e922",
+      "abs_mask_rva": "0x50f10",
+      "sdk_targets": [
+        "0x7b49f0",
+        "0x7c2890",
+        "0x7d7ee0",
+        "0x7d7f70",
+        "0x7d7fc0",
+        "0x7d8010"
+      ]
+    },
+    {
+      "bot": 3,
+      "analysis_sha256": "e7ceb7423fdbb83c92a720139c9a15d54600099c8e38196640c8fcd754af7dbe",
+      "original_ex5_sha256": "ee063d3d87490afe24e2f4ce85f6b05659320e297b102efd70207f71ca2feb83",
+      "abs_mask_rva": "0x59170",
+      "sdk_targets": [
+        "0x7b49f0",
+        "0x7c2890",
+        "0x7d7ee0",
+        "0x7d7f70",
+        "0x7d7fc0",
+        "0x7d8010"
+      ]
+    }
+  ],
+  "calibration_sha256": "3ac5bf6e659082e5ec8cdd035ba0ec16299eb822b9995326689cd7d1875bd191",
+  "build_sha256": "ce95d966304b83b87fb889c2fc8e23b7089fd172e6df8503444f5d87454be314",
+  "capture_sha256": "cde726ea9cb699c4c3315716c2ba9b1d68ba82c5c3ab8ddf2bb0d49c409f0a97",
+  "tool_sha256": "efac9eb0aa5316664bed7989f0931afaba609cf16740c9384109ec68d08e99b8",
+  "only_anchor_executed": true,
+  "runner_verified": true,
+  "limits": [
+    "SDK constants/call targets and MathAbs mask only; no original close algorithm or broker execution verified."
+  ]
+}

@@ -1,0 +1,332 @@
+0x22c40 push r15
+0x22c42 push r14
+0x22c44 push r13
+0x22c46 push r12
+0x22c48 push rsi
+0x22c49 push rdi
+0x22c4a push rbp
+0x22c4b push rbx
+0x22c4c sub rsp, 0x78
+0x22c50 movaps xmmword ptr [rsp + 0x60], xmm6
+0x22c55 mov dword ptr [rsp + 0x50], 0
+0x22c5d mov dword ptr [rsp + 0x40], 0
+0x22c65 mov qword ptr [rsp + 0x54], 0
+0x22c6e mov qword ptr [rsp + 0x44], 0
+0x22c77 movabs rax, 0x23e5aa7a414
+0x22c81 movabs r12, 0x23e5aa10000
+0x22c8b cmp dword ptr [rax], 0
+0x22c8e je 0x23e5aa32cf2
+0x22c90 movabs rax, 0x23e5aa62ef8
+0x22c9a movabs rcx, 0x23e5aa641c0
+0x22ca4 mov edx, 0xd
+0x22ca9 mov r8d, 2
+0x22caf mov r9d, 0x590008
+0x22cb5 mov dword ptr [rsp + 0x28], 0x590008
+0x22cbd mov qword ptr [rsp + 0x30], rax
+0x22cc2 mov qword ptr [rsp + 0x20], rcx
+0x22cc7 movabs rcx, 0x23e575eae78
+0x22cd1 movabs rax, 0x7ff6846d49f0
+0x22cdb call rax
+0x22cdd movabs rax, 0x23e5aa775a0
+0x22ce7 mov dword ptr [rax], 0x272b
+0x22ced jmp 0x23e5aa3319e
+0x22cf2 mov rsi, rcx
+0x22cf5 movabs rcx, 0x23e575eae78
+0x22cff movabs rax, 0x7ff6846f7ee0
+0x22d09 mov rdx, rsi
+0x22d0c call rax
+0x22d0e test al, al
+0x22d10 je 0x23e5aa3319e
+0x22d16 movabs rcx, 0x23e575eae78
+0x22d20 movabs rax, 0x7ff6846f8010
+0x22d2a xor edx, edx
+0x22d2c mov dword ptr [rsp + 0x40], 0
+0x22d34 mov qword ptr [rsp + 0x44], 0
+0x22d3d call rax
+0x22d3f lea rdi, [rsp + 0x50]
+0x22d44 movabs r9, 0x23e5aa6d978
+0x22d4e movabs r15, 0x23e5aa105c0
+0x22d58 movabs rdx, 0x23e5aa7a43c
+0x22d62 mov r8b, 1
+0x22d65 mov rcx, rdi
+0x22d68 call r15
+0x22d6b lea rbx, [rsp + 0x40]
+0x22d70 movabs r9, 0x23e5aa6d988
+0x22d7a mov rdx, rdi
+0x22d7d xor r8d, r8d
+0x22d80 mov rcx, rbx
+0x22d83 call r15
+0x22d86 movabs rax, 0x23e5aa774c0
+0x22d90 movabs rcx, 0x23e5aa774c4
+0x22d9a xorps xmm6, xmm6
+0x22d9d movabs r13, 0x23e5aa774b0
+0x22da7 movaps xmmword ptr [r13], xmm6
+0x22dac mov dword ptr [rax], 0
+0x22db2 call r12
+0x22db5 movabs rcx, 0x23e5aa77510
+0x22dbf movabs r14, 0x23e5aa77500
+0x22dc9 movabs rax, 0x23e5aa774f0
+0x22dd3 movabs rdx, 0x23e5aa774e0
+0x22ddd movabs rdi, 0x23e5aa774d0
+0x22de7 mov dword ptr [rcx], 0
+0x22ded movabs rcx, 0x23e5aa77514
+0x22df7 movaps xmmword ptr [r14], xmm6
+0x22dfb movaps xmmword ptr [rax], xmm6
+0x22dfe movaps xmmword ptr [rdx], xmm6
+0x22e01 movaps xmmword ptr [rdi], xmm6
+0x22e04 call r12
+0x22e07 movabs rcx, 0x23e5aa775a0
+0x22e11 movabs rdx, 0x23e5aa775b0
+0x22e1b movabs rax, 0x23e5aa775c0
+0x22e25 movabs rbp, 0x23e5aa77520
+0x22e2f movaps xmmword ptr [rcx], xmm6
+0x22e32 movabs rcx, 0x23e5aa77580
+0x22e3c movaps xmmword ptr [rdx], xmm6
+0x22e3f movabs rdx, 0x23e5aa77590
+0x22e49 movaps xmmword ptr [rax], xmm6
+0x22e4c movaps xmmword ptr [rbp], xmm6
+0x22e50 movaps xmmword ptr [rcx], xmm6
+0x22e53 movabs rcx, 0x23e5aa77560
+0x22e5d movaps xmmword ptr [rdx], xmm6
+0x22e60 movabs rdx, 0x23e5aa77570
+0x22e6a movaps xmmword ptr [rcx], xmm6
+0x22e6d movabs rcx, 0x23e5aa77540
+0x22e77 movaps xmmword ptr [rdx], xmm6
+0x22e7a movabs rdx, 0x23e5aa77550
+0x22e84 movaps xmmword ptr [rcx], xmm6
+0x22e87 movabs rcx, 0x23e5aa775d0
+0x22e91 movaps xmmword ptr [rdx], xmm6
+0x22e94 movabs rdx, 0x23e5aa77530
+0x22e9e mov dword ptr [rcx], 0
+0x22ea4 movabs rcx, 0x23e5aa775d4
+0x22eae movaps xmmword ptr [rdx], xmm6
+0x22eb1 call r12
+0x22eb4 movabs rcx, 0x23e5aa77670
+0x22ebe movabs rdx, 0x23e5aa77660
+0x22ec8 movabs rax, 0x23e5aa77680
+0x22ed2 movaps xmmword ptr [rcx], xmm6
+0x22ed5 movabs rcx, 0x23e5aa77650
+0x22edf movaps xmmword ptr [rdx], xmm6
+0x22ee2 movabs rdx, 0x23e5aa77640
+0x22eec movaps xmmword ptr [rax], xmm6
+0x22eef movaps xmmword ptr [rcx], xmm6
+0x22ef2 movabs rcx, 0x23e5aa77630
+0x22efc movaps xmmword ptr [rdx], xmm6
+0x22eff movabs rdx, 0x23e5aa77620
+0x22f09 movaps xmmword ptr [rcx], xmm6
+0x22f0c movabs rcx, 0x23e5aa77610
+0x22f16 movaps xmmword ptr [rdx], xmm6
+0x22f19 movabs rdx, 0x23e5aa77600
+0x22f23 movaps xmmword ptr [rcx], xmm6
+0x22f26 movabs rcx, 0x23e5aa775f0
+0x22f30 movaps xmmword ptr [rdx], xmm6
+0x22f33 movabs rdx, 0x23e5aa775e0
+0x22f3d movaps xmmword ptr [rcx], xmm6
+0x22f40 movabs rcx, 0x23e5aa77690
+0x22f4a movaps xmmword ptr [rdx], xmm6
+0x22f4d mov qword ptr [rcx], 0
+0x22f54 movabs rcx, 0x23e5aa77698
+0x22f5e call r12
+0x22f61 movabs rcx, 0x23e5aa77714
+0x22f6b movabs rdx, 0x23e5aa7770c
+0x22f75 movabs rax, 0x23e5aa7771c
+0x22f7f mov qword ptr [rcx], 0
+0x22f86 movabs rcx, 0x23e5aa77704
+0x22f90 mov qword ptr [rdx], 0
+0x22f97 movabs rdx, 0x23e5aa776fc
+0x22fa1 mov qword ptr [rax], 0
+0x22fa8 movabs rax, 0x23e5aa331c0
+0x22fb2 mov qword ptr [rcx], 0
+0x22fb9 movabs rcx, 0x23e5aa776f4
+0x22fc3 mov qword ptr [rdx], 0
+0x22fca movabs rdx, 0x23e5aa776ec
+0x22fd4 mov qword ptr [rcx], 0
+0x22fdb movabs rcx, 0x23e5aa776e4
+0x22fe5 mov qword ptr [rdx], 0
+0x22fec movabs rdx, 0x23e5aa776dc
+0x22ff6 mov qword ptr [rcx], 0
+0x22ffd movabs rcx, 0x23e5aa776d4
+0x23007 mov qword ptr [rdx], 0
+0x2300e movabs rdx, 0x23e5aa776cc
+0x23018 mov qword ptr [rcx], 0
+0x2301f movabs rcx, 0x23e5aa776c4
+0x23029 mov qword ptr [rdx], 0
+0x23030 movabs rdx, 0x23e5aa776bc
+0x2303a mov qword ptr [rcx], 0
+0x23041 movabs rcx, 0x23e5aa776b4
+0x2304b mov qword ptr [rdx], 0
+0x23052 movabs rdx, 0x23e5aa776ac
+0x2305c mov qword ptr [rcx], 0
+0x23063 movabs rcx, 0x23e5aa776a4
+0x2306d mov qword ptr [rdx], 0
+0x23074 mov qword ptr [rcx], 0
+0x2307b mov rcx, rbx
+0x2307e call rax
+0x23080 test al, al
+0x23082 je 0x23e5aa33196
+0x23088 movabs rbx, 0x23e575eae78
+0x23092 movabs rax, 0x7ff6846f7fc0
+0x2309c mov edx, 2
+0x230a1 mov rcx, rbx
+0x230a4 call rax
+0x230a6 xor ecx, ecx
+0x230a8 xor edx, edx
+0x230aa shl rax, 0x20
+0x230ae movabs rax, 0x7ff6846e2890
+0x230b8 sete dl
+0x230bb setne cl
+0x230be mov dword ptr [r14], edx
+0x230c1 lea r14, [rsp + 0x40]
+0x230c6 lea r8d, [rcx + rcx*2 + 1]
+0x230cb mov rcx, rbx
+0x230ce mov rdx, r14
+0x230d1 call rax
+0x230d3 mov rcx, rbp
+0x230d6 mov rbp, rdi
+0x230d9 movabs rdi, 0x23e5aa7a448
+0x230e3 movabs rax, 0x23e5aa774d8
+0x230ed movabs r9, 0x23e5aa6d998
+0x230f7 mov rdx, r14
+0x230fa xor r8d, r8d
+0x230fd movsd xmm0, qword ptr [rdi]
+0x23101 movsd qword ptr [rax], xmm0
+0x23105 mov dword ptr [r13], 1
+0x2310d mov qword ptr [rcx], rsi
+0x23110 movabs rcx, 0x23e5aa774c4
+0x2311a call r15
+0x2311d movabs rax, 0x7ff6846f7f70
+0x23127 mov rcx, rbx
+0x2312a mov edx, 3
+0x2312f call rax
+0x23131 movsd xmm0, qword ptr [rdi]
+0x23135 movabs rax, 0x23e5aa77725
+0x2313f movabs rcx, 0x23e5aa774b4
+0x23149 movabs r8, 0x23e5aa775a0
+0x23153 mov rdx, r13
+0x23156 movsd qword ptr [rbp], xmm0
+0x2315b mov rax, qword ptr [rax]
+0x2315e mov qword ptr [rcx], rax
+0x23161 movabs rcx, 0x23e5aa7772d
+0x2316b mov rax, qword ptr [rcx]
+0x2316e movabs rcx, 0x23e5aa774f8
+0x23178 mov qword ptr [rcx], rax
+0x2317b movabs rax, 0x23e5aa10950
+0x23185 movabs rcx, 0x23e5aa77490
+0x2318f call rax
+0x23191 mov rcx, r14
+0x23194 jmp 0x23e5aa3319b
+0x23196 lea rcx, [rsp + 0x40]
+0x2319b call r12
+0x2319e lea rcx, [rsp + 0x50]
+0x231a3 call r12
+0x231a6 movaps xmm6, xmmword ptr [rsp + 0x60]
+0x231ab add rsp, 0x78
+0x231af pop rbx
+0x231b0 pop rbp
+0x231b1 pop rdi
+0x231b2 pop rsi
+0x231b3 pop r12
+0x231b5 pop r13
+0x231b7 pop r14
+0x231b9 pop r15
+0x231bb ret 
+0x3d010 push r15
+0x3d012 push r14
+0x3d014 push r12
+0x3d016 push rsi
+0x3d017 push rdi
+0x3d018 push rbx
+0x3d019 sub rsp, 0x38
+0x3d01d mov rsi, rcx
+0x3d020 movabs rcx, 0x23e575eae78
+0x3d02a movabs rax, 0x7ff6846f7ee0
+0x3d034 movapd xmmword ptr [rsp + 0x20], xmm6
+0x3d03a mov rdx, rsi
+0x3d03d call rax
+0x3d03f test al, al
+0x3d041 je 0x23e5aa4d1e9
+0x3d047 movabs rdi, 0x23e575eae78
+0x3d051 movabs rbx, 0x7ff6846f7fc0
+0x3d05b mov edx, 0xc
+0x3d060 mov rcx, rdi
+0x3d063 call rbx
+0x3d065 movabs rcx, 0x23e5aa77725
+0x3d06f mov edx, 2
+0x3d074 mov qword ptr [rcx], rax
+0x3d077 mov rcx, rdi
+0x3d07a call rbx
+0x3d07c test rax, rax
+0x3d07f jne 0x23e5aa4d11e
+0x3d085 movabs r14, 0x23e5aa77758
+0x3d08f movabs rcx, 0x23e575eae78
+0x3d099 movabs rdi, 0x7ff6846f7f70
+0x3d0a3 mov edx, 6
+0x3d0a8 movsd xmm6, qword ptr [r14]
+0x3d0ad call rdi
+0x3d0af movabs r15, 0x23e5aa7a448
+0x3d0b9 movabs r12, 0x23e5aa60f10
+0x3d0c3 movabs rax, 0x23e5aa76a70
+0x3d0cd subsd xmm6, qword ptr [r15]
+0x3d0d2 andpd xmm6, xmmword ptr [r12]
+0x3d0d8 ucomisd xmm6, qword ptr [rax]
+0x3d0dc jbe 0x23e5aa4d11e
+0x3d0de movsd xmm6, qword ptr [r14]
+0x3d0e3 movabs rcx, 0x23e575eae78
+0x3d0ed mov edx, 6
+0x3d0f2 call rdi
+0x3d0f4 subsd xmm6, qword ptr [r15]
+0x3d0f9 movabs rax, 0x23e5aa77468
+0x3d103 andpd xmm6, xmmword ptr [r12]
+0x3d109 ucomisd xmm6, qword ptr [rax]
+0x3d10d jbe 0x23e5aa4d11e
+0x3d10f movabs rax, 0x23e5aa32c40
+0x3d119 mov rcx, rsi
+0x3d11c call rax
+0x3d11e movabs rcx, 0x23e575eae78
+0x3d128 mov edx, 2
+0x3d12d call rbx
+0x3d12f cmp rax, 1
+0x3d133 jne 0x23e5aa4d1e9
+0x3d139 movabs rax, 0x23e5aa77760
+0x3d143 movabs rcx, 0x23e575eae78
+0x3d14d movabs rdi, 0x7ff6846f7f70
+0x3d157 mov edx, 6
+0x3d15c movsd xmm6, qword ptr [rax]
+0x3d160 call rdi
+0x3d162 movabs rbx, 0x23e5aa7a448
+0x3d16c movabs r14, 0x23e5aa60f10
+0x3d176 movabs rax, 0x23e5aa76a70
+0x3d180 subsd xmm6, qword ptr [rbx]
+0x3d184 andpd xmm6, xmmword ptr [r14]
+0x3d189 ucomisd xmm6, qword ptr [rax]
+0x3d18d jbe 0x23e5aa4d1e9
+0x3d18f movabs rax, 0x23e5aa77758
+0x3d199 movabs rcx, 0x23e575eae78
+0x3d1a3 mov edx, 6
+0x3d1a8 movsd xmm6, qword ptr [rax]
+0x3d1ac call rdi
+0x3d1ae subsd xmm6, qword ptr [rbx]
+0x3d1b2 movabs rax, 0x23e5aa77468
+0x3d1bc andpd xmm6, xmmword ptr [r14]
+0x3d1c1 ucomisd xmm6, qword ptr [rax]
+0x3d1c5 jbe 0x23e5aa4d1e9
+0x3d1c7 movaps xmm6, xmmword ptr [rsp + 0x20]
+0x3d1cc movabs rax, 0x23e5aa32c40
+0x3d1d6 mov rcx, rsi
+0x3d1d9 add rsp, 0x38
+0x3d1dd pop rbx
+0x3d1de pop rdi
+0x3d1df pop rsi
+0x3d1e0 pop r12
+0x3d1e2 pop r14
+0x3d1e4 pop r15
+0x3d1e6 jmp rax
+0x3d1e9 movaps xmm6, xmmword ptr [rsp + 0x20]
+0x3d1ee add rsp, 0x38
+0x3d1f2 pop rbx
+0x3d1f3 pop rdi
+0x3d1f4 pop rsi
+0x3d1f5 pop r12
+0x3d1f7 pop r14
+0x3d1f9 pop r15
+0x3d1fb ret 

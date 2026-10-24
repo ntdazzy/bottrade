@@ -1,0 +1,21 @@
+{
+  "metaeditor_sha256": "cf2750bde55d98a1f3b4e56bcdd4f59300d0cff5caa6760985f7ef2c2cc12229",
+  "builds": [
+    {
+      "name": "RecoveryApiLibrary",
+      "exit_code": 1,
+      "source_sha256": "5c4a1c2b1da6803c53e3516f9b16176b5548b3799d3a235b606c495ba052b8f1",
+      "errors": 0,
+      "warnings": 0,
+      "binary_sha256": "ed93b3f147e715e5d253d0d6dbea5ac8493a221e947799aa0daa8e364f1b914f"
+    },
+    {
+      "name": "RecoveryApiDriver",
+      "exit_code": 1,
+      "source_sha256": "29e5e31f76870e85e3f5b8939449b44ffbd7bc1c2f4f278c41b2a69a3984d2df",
+      "errors": 0,
+      "warnings": 0,
+      "binary_sha256": "3c887b41ab70769e3505ffc7274e3569d795f0cd87042777edf45f5ee1b2b9ff"
+    }
+  ]
+}

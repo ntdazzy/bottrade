@@ -1,0 +1,8 @@
+{
+  "stage": "fixture input validation before original execution",
+  "case": 20,
+  "error": "FILLING_INPUT_DIFFERS",
+  "cause": "New input validator used property17/18; known-source filling component and actual fixtures use33/50.",
+  "original_execution_started": false,
+  "production_source_changed": false
+}

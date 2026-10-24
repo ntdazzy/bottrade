@@ -1,5 +1,10 @@
 # bot-cua-toi-3
 
+Đã dựng hai hàm kiểm điều kiện/đóng vị thế qua chọn cách khớp, gửi
+và thông báo: 2.589/2.589 ca khớp mã gốc/MQL5/máy đo quá khứ, gồm
+trạng thái và thứ tự đọc dữ liệu. Biên dịch 0 lỗi/cảnh báo. Còn nguồn
+giá trị dùng chung, nơi gọi và toàn EA; [phạm vi](../PHAN-TICH-DONG-VI-THE-BOT-1-3.md).
+
 Đã ghép chọn lệnh mua/bán cần hủy → hủy/gửi → dọn bảng → thông báo:
 2.522/2.522 ca khớp mã gốc/MQL5/máy đo quá khứ; biên dịch 0 lỗi/cảnh
 báo. Chưa ghép toàn EA hoặc kiểm tài khoản thực. [Phạm vi](../PHAN-TICH-HUY-LENH-CHO-BOT-1-3.md).

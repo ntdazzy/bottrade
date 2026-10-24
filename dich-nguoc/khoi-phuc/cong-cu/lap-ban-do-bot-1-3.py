@@ -54,7 +54,7 @@ ROLES=[
 (0x22750,0x2dd30,'Giải phóng toàn bộ cấu trúc/chuỗi/mảng dùng chung','Vòng đời'),
 (0x22bd0,0x2e300,'Xóa các trường số trong một cấu trúc','Bộ nhớ'),
 (0x22c00,0x2e330,'Hủy chuỗi trong một cấu trúc','Bộ nhớ'),
-(0x22c40,0x2e370,'Tạo yêu cầu sửa vị thế theo vé','Giao dịch'),
+(0x22c40,0x2e370,'Tạo/gửi yêu cầu đóng vị thế theo vé','Giao dịch'),
 (0x231c0,0x2e8f0,'Kiểm kiểu khớp lệnh theo thuộc tính mã giao dịch','Giao dịch'),
 (0x235c0,0x2ecf0,'Định dạng kết quả giao dịch','Thông báo'),
 (0x23fa0,0x2f6d0,'Định dạng chi tiết yêu cầu giao dịch','Thông báo'),
@@ -91,7 +91,7 @@ ROLES=[
 (0x3c670,0x47380,'Lọc lệnh chờ mua gần mức giá','Điểm vào'),
 (0x3c8d0,0x475e0,'Lọc lệnh chờ bán gần mức giá','Điểm vào'),
 (0x3cb30,0x47840,'Chặn theo vốn/khối lượng rồi kiểm ký quỹ','Ký quỹ'),
-(0x3d010,0x47d20,'Kiểm giá/vùng cấm sửa rồi yêu cầu đóng vị thế','Quản lý vị thế'),
+(0x3d010,0x47d20,'Kiểm hai ngưỡng khoảng cách tới dừng lỗ rồi gọi đóng vị thế','Quản lý vị thế'),
 (0x3d200,0x47f10,'Tính và lưu mức dừng theo vé; bảng dừng ảo','Dừng ảo'),
 (None,0x482b0,'Lưu/đọc mức chốt lời ảo theo vé trong bảng 500 hàng','Trạng thái lệnh'),
 (0x3d5a0,0x484c0,'Kiểm thời gian chờ theo vé trong bảng','Dừng ảo'),
@@ -241,8 +241,11 @@ def main():
             }
             scan_rvas={1:{0x31f40:'0',0x323e0:'1',0x32ce0:'2'},3:{0x3e490:'2',0x47330:'3'}}
             selection_rvas={1:[0x32110,0x325b0],3:[0x3da90,0x3dd60]}
+            close_rvas={1:[0x22c40,0x3d010],3:[0x2e370,0x47d20]}
             for selection_rva in selection_rvas[bot]:
                 new_parts[selection_rva]=('kiem-chon-lenh-huy/selection-20261024-r2','PendingSelection','Bộ 2.522 ca mua/bán mỗi bot: chọn vé qua hủy/gửi, dọn bảng và thông báo. Truy vấn/kết quả gửi cấp sẵn; còn tài khoản thực, lỗi cấp bộ nhớ, nơi gọi và toàn EA.')
+            for close_rva in close_rvas[bot]:
+                new_parts[close_rva]=('kiem-dong-vi-the/close-20261025-r4','PositionClose','Bộ 2.589 ca: kiểm điều kiện/đóng vị thế qua chọn cách khớp, gửi và thông báo. So trạng thái trước truy vấn và sau gửi. Truy vấn/kết quả gửi cấp sẵn; còn nguồn biến giá dùng chung, nơi gọi, tài khoản thực, lỗi cấp bộ nhớ và toàn EA.')
             for scan_rva in scan_rvas[bot]:
                 new_parts[scan_rva]=('kiem-quet-lenh/scan-20261024-r2','OrderScan','Quét/đếm/dọn bảng/giới hạn trong bộ ca; truy vấn và trạng thái chọn được cấp. Còn tài khoản thật, lỗi cấp bộ nhớ và ghép EA.')
             for send_rva in [0x950,*( [0x235c0,0x23fa0,0x26060,0x26360] if bot==1 else [0x2ecf0,0x2f6d0,0x31790,0x31a90])]:
@@ -265,6 +268,11 @@ def main():
                         engine=ROOT/f'doi-chung-mt5/chon-lenh-huy-20261024/engine-selection-b{bot}-r2/comparison.json'
                         tested=json.loads(engine.read_text());assert tested['cases']==tested['matched']==2522 and tested['failed']==0
                         proof.update(function_case_kind=selection_rvas[bot].index(rva),tester_comparison=engine.relative_to(ROOT).as_posix(),tester_comparison_sha256=sha(engine))
+                    if rva in close_rvas[bot]:
+                        engine=ROOT/f'doi-chung-mt5/dong-vi-the-20261024/engine-close-b{bot}-r2/comparison.json'
+                        tested=json.loads(engine.read_text());assert tested['cases']==tested['matched']==2589 and tested['failed']==0
+                        semantics=ROOT/f'bot-cua-toi-{bot}/phan-tich/dong-vi-the/close-20261024-r1/semantics.json'
+                        proof.update(function_case_kind=close_rvas[bot].index(rva),tester_comparison=engine.relative_to(ROOT).as_posix(),tester_comparison_sha256=sha(engine),semantics_source=semantics.relative_to(ROOT).as_posix(),semantics_sha256=sha(semantics))
             pipeline_rvas={1:{0x950,0x231c0,0x235c0,0x23fa0,0x26060,0x26360,0x2e6d0,0x32dd0,0x336d0},
                            3:{0x950,0x2e8f0,0x2ecf0,0x2f6d0,0x31790,0x31a90,0x3bb10,0x3e580,0x3ee80}}
             if proof and rva in pipeline_rvas[bot]:

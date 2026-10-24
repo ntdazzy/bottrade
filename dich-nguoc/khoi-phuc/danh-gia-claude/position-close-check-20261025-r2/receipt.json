@@ -1,0 +1,42 @@
+{
+  "session_id": "c41feeae-6ea4-445b-abb6-122e45d5c993",
+  "resumed_previous_session": true,
+  "requests": [
+    {
+      "timestamp": "2026-10-24T17:52:01.493Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-24T17:52:07.887Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-24T17:56:40.240Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-24T17:56:53.439Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-24T17:58:44.458Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    }
+  ],
+  "journal_prefix_bytes": 2563146,
+  "journal_prefix_sha256": "a210f57243d128fb6c6236d89c57edd2d3232a0e653ba3c2edad40b10faeb6b1",
+  "prior_prefix_unchanged": true,
+  "response_sha256": "4de822310d38253ccf2f7d458da5420606154202a6f1419a195f38b9dcd8a0e8",
+  "raw_response_sha256": "e92a8616f82f74468a983240324ce9917269dfbce60242a6dff71fc9f299763b",
+  "prompt_sha256": "3ee8236332118b9a4115a3bc29c98c10f44a04eb6a9efe7ece057e66bdd51b29",
+  "ultracode_requested": true,
+  "ultracode_workflow_completed": false,
+  "review_mode": "Completed read-only review of frozen r4 source in the main turn; no background workflow.",
+  "demonstrated_remaining_defects": [],
+  "whole_bot_complete": false
+}

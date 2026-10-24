@@ -1,0 +1,17 @@
+{
+  "case": 20,
+  "algorithm_returned": true,
+  "records_consumed": 26,
+  "expected_records": 26,
+  "allocs": 12,
+  "frees": 11,
+  "cause": "Request.symbol retains one owned XAUUSD string, capacity7, refs1, length6. It is live output state, not a leaked temporary.",
+  "measured_native_cleanup": {
+    "function_rva": "0x0",
+    "argument": "request.symbol descriptor",
+    "allocs_after": 12,
+    "frees_after": 12,
+    "returned": true
+  },
+  "production_source_changed": false
+}

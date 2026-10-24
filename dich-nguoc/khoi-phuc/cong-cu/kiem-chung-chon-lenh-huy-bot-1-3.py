@@ -136,7 +136,8 @@ def main():
         require(len(selection.read_results(engine/'mql5-results.bin',2522))==2522,'TESTER_RECORDS_DIFFER')
         checks.append(dict(bot=bot,cases=2522,rejected_corrupt_input_types=rejected,fixture_length_checks=fixture_length_checks(folder,len(rows)),comparison_sha256=sha(folder/'comparison.json'),tester_comparison_sha256=sha(engine/'comparison.json'),sources_sha256=mql['sources_sha256'],dependencies_sha256=native['dependencies_sha256'],result_sha256=sha(engine/'mql5-results.bin')))
     negative_path=ROOT/'danh-gia-doc-lap/chon-lenh-huy-20261024/negative-cli-r2.json';negative=read(negative_path)
-    require(negative['check_tool_sha256']==sha(Path(selection.__file__)) and negative['tester_tool_sha256']==sha(ROOT/'cong-cu/kiem-hang-doi-trong-may-thu.py'),'NEGATIVE_CLI_TOOL_CHANGED')
+    saved_runners=[ROOT/f'bot-cua-toi-{bot}/bang-chung/kiem-chon-lenh-huy/selection-20261024-r2/tested-sources/tester-check-tool.py' for bot in [1,3]]
+    require(negative['check_tool_sha256']==sha(Path(selection.__file__)) and all(negative['tester_tool_sha256']==sha(path) for path in saved_runners),'NEGATIVE_CLI_TOOL_CHANGED')
     require(len(negative['rejected'])==7 and all(r['returncode'] and r['expected_error'] in r['last_error'] for r in negative['rejected']),'NEGATIVE_CLI_CHECKS_FAILED')
     report=dict(status='four-pending-selector-functions-verified-with-stated-limits',checks=checks,message_arity_checks=message_arity_checks(),negative_cli_sha256=sha(negative_path),tool_sha256=sha(Path(__file__)),whole_bot_complete=False,
                 limits=['35 public fields,four full strings with null flags,all200 table doubles,last ticket,magic,symbol and typed records compared; MQL padding bytes not compared.',

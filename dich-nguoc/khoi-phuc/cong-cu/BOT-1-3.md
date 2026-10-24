@@ -2,6 +2,29 @@
 
 Chạy từ thư mục dự án. Mỗi lượt dùng tên mới để giữ bằng chứng cũ.
 
+## Đóng vị thế theo vé và điều kiện
+
+- `phan-tich-huy-lenh-cho-bot-1-3.py BOT NEW_RUN --positions`: tách
+  hai hàm đóng vào `phan-tich/dong-vi-the/NEW_RUN/`; chỉ phân tích,
+  không chạy bot. Lượt `close-20261024-r1` có danh sách nhánh trước khi dựng.
+- `kiem-api-dong-vi-the.py PROBE_RUN_DIRECTORY`: kiểm đối chứng đã
+  lưu nguồn/mã máy, 12 hằng và lời gọi MT5. Thêm `api-contract.json`
+  mới; không mở MT5. Lượt `dong-vi-the-20261024/close-api-r1`.
+- `kiem-dong-vi-the-bot-1-3.py MODE BOT RUN [--build BUILD]`: thứ tự
+  `prepare` → biên dịch `BotNPositionCloseCheck.mq5` → `mql5` →
+  `original` → `compare`. Lượt `close-20261025-r4`, bản
+  `bN-position-close-02`: 2.589 ca mỗi bot. Không gửi lệnh thật.
+- `kiem-hang-doi-trong-may-thu.py BOT NEW_RUN --component-run RUN
+  --build BUILD --close`: cùng thân kiểm trong máy đo quá khứ;
+  `engine-close-b1-r2` / `engine-close-b3-r2` đạt 2.589 ca mỗi bot.
+- `kiem-chung-dong-vi-the-bot-1-3.py NEW_JSON`: kiểm nguồn, dữ liệu
+  ba nơi chạy, phần phụ thuộc, 28 kiểu dữ liệu sai và chín tệp cắt cụt
+  mỗi bot. Không mở MT5; đầu ra mới phải ở trong `khoi-phuc`.
+
+So cả trạng thái trước truy vấn và sau gửi. Truy vấn/kết quả gửi
+được cấp; định dạng/đổi số thành chuỗi đo trong MT5. Còn nguồn biến
+dùng chung, nơi gọi và toàn EA. [Bằng chứng](../PHAN-TICH-DONG-VI-THE-BOT-1-3.md).
+
 ## Quét/đếm lệnh và phân tích hủy
 
 - `kiem-quet-lenh-bot-1-3.py MODE BOT RUN [--build BUILD]`: thứ tự

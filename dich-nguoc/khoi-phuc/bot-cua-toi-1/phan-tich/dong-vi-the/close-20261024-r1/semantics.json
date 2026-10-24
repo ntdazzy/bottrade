@@ -1,0 +1,60 @@
+{
+  "bot": 1,
+  "original_ex5_sha256": "a3b0de423a06e10ebedc279307b93d7cb9188ba2bb5de77131a913c865b0e922",
+  "analysis_sha256": "6b4df876a33d02d294d006404baff5aeba7225af9af9b65ef5679792ee6abd43",
+  "api_contract_sha256": "402e1fae9f01632ed75341f7eb4c81a7f989d5cc1a6bc96049efe0107aca2513",
+  "runtime_verified": false,
+  "direct": {
+    "rva": "0x22c40",
+    "return": "void; caller ignores send return and cleanup overwrites registers",
+    "stopped": "Before selecting; PrintFormat CTrade::PositionClose and set result.retcode low32 to10027 only",
+    "selection_failure": "Preserve request/result/check, magic, preferred and deviation",
+    "selection_success": "PositionGetString(0); zero request/result/check; call the existing FillingCheck while request.action is still0",
+    "filling_rva": "0x231c0",
+    "filling_failure": "Keep reset state and any filling mutations; no type/price/volume/send calls",
+    "type": "PositionGetInteger(2) low32==0 -> request.type1 and SymbolInfoDouble(symbol,1); otherwise type0 and property4",
+    "write_order": [
+      "type",
+      "SymbolInfoDouble",
+      "price",
+      "action1",
+      "position ticket full64",
+      "symbol",
+      "PositionGetDouble(3)",
+      "volume",
+      "stored magic64",
+      "stored deviation64",
+      "full send/messages0x950"
+    ],
+    "deviation_rva": "0x6772d"
+  },
+  "guard": {
+    "rva": "0x3d010",
+    "order": [
+      "PositionSelectByTicket",
+      "PositionGetInteger(12) -> stored magic64",
+      "PositionGetInteger(2) full64: test0",
+      "optional branch0",
+      "PositionGetInteger(2) again full64: test1",
+      "optional branch1, tail-call direct close"
+    ],
+    "branch0": "Read reference_a before first PositionGetDouble(POSITION_SL=6); compare abs(reference-SL)>threshold_a read after API. If true, read reference_a again before a second SL query; compare >threshold_b read after API; call direct close.",
+    "branch1": "Read reference_b before first SL query; compare >threshold_a. If true, read reference_a before second SL query; compare >threshold_b; tail-call direct close.",
+    "references": {
+      "a": "0x67758",
+      "b": "0x67760"
+    },
+    "thresholds": {
+      "a": "0x66a70",
+      "b": "0x67468"
+    },
+    "reference_meaning": "Names of these shared reference values and origins in management callers are not yet fully confirmed; do not label them current bid/ask without separate evidence.",
+    "comparisons": "Strict ordered >; equal/NaN skip. Absolute value clears the sign bit with the verified mask. Re-read shared references and thresholds in the observed order.",
+    "multiple_calls": "If type changes from0 on first read to1 on second and both branches pass, two direct-close calls are possible in control flow. This is not a claim that a live position can change type during a call."
+  },
+  "remaining": [
+    "Compile these four recovered functions and compare full paths including filling/send and all public state/null flags.",
+    "Check pre/post service boundary states, numeric boundaries and controlled changes to shared data.",
+    "Trace shared reference/threshold origins in management callers; full EA/account/broker/allocation faults remain open."
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "session_id": "c41feeae-6ea4-445b-abb6-122e45d5c993",
+  "requests": [
+    {
+      "timestamp": "2026-10-24T17:19:12.255Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-24T17:19:33.032Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-24T17:19:52.296Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-24T17:19:57.891Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-24T17:21:49.512Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-24T17:21:54.139Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-24T17:25:34.527Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-24T17:25:37.278Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-24T17:26:10.732Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-24T17:28:59.623Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-24T17:29:15.349Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-24T17:30:23.188Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-24T17:30:30.888Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-24T17:30:48.876Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-24T17:31:08.155Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-24T17:32:45.017Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-24T17:34:57.927Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-24T17:36:21.167Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    }
+  ],
+  "journal_prefix_bytes": 2067520,
+  "journal_prefix_sha256": "07616d0aba02fb2e65c7e2134e3e2eca29a992ab8263b06da6ef028d1146ac93",
+  "response_sha256": "edea6b9293d928210b8d4a7e295c579194e9edf8c338dc356f6cbfe09721dad6",
+  "raw_response_sha256": "3a154a1ec448eeb8ed3757c2c0391dacc5a0ad67db3e59ddc0eaac40f84fc306",
+  "prompt_sha256": "aece4abbd1a179787501532adaf15cf4caa52ba8e941a9e55edac1719cbdeab7",
+  "ultracode_requested": true,
+  "ultracode_workflow_completed": false,
+  "review_mode": "Completed read-only review in main Claude turn; no background workflow requested.",
+  "review_version_limit": "Response describes initial r1 checker. Saved source/tool hashes distinguish r1,r2,r3 and r4. See parent-review.md.",
+  "whole_bot_complete": false
+}
