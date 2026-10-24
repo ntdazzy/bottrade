@@ -65,3 +65,26 @@ không lấy giờ máy đang chạy để quyết định kết quả.
   chỉ kiểm cách hàm xử lý kết quả được cấp sẵn.
 - Chưa nối với giờ UTC, giờ nơi giao dịch, HTTP/phương án thay thế,
   cài đặt nhập tay, lọc tin và toàn bộ khởi tạo. P26 chưa hoàn tất.
+
+## Đánh giá bổ sung của Claude và việc phải làm tiếp
+
+[Lượt kiểm Max với Ultracode](danh-gia-claude/season-time-ultracode-20261024-r3/analysis.md)
+đã trả kết quả; [mình đã đọc và phân loại lại](danh-gia-claude/season-time-ultracode-20261024-r3/host-verdict.json).
+Các kết quả 4.737 ca ở trên giữ nguyên phạm vi, chưa đủ để đóng P26:
+
+- Các giờ sát biên hiện lấy theo Chủ nhật của lịch thường. Với năm
+  2100/2400/3000, ngày biên do bot tính khác lịch thường; mới kiểm
+  từng ngày lúc 12:00. Đã trích [mốc thật từ dấu vết hàm gốc](doi-chung-mt5/gio-mua-he-20261024/native-boundaries-from-r1.json)
+  để bổ sung giờ sát biên; các ca bổ sung chưa chạy.
+- Cần thêm năm âm được cấp sẵn, giờ 0, đổi ngày có ghi dữ liệu nhưng
+  trả thất bại và ghép chuỗi thất bại không ghi. Khi đó phải kiểm cả
+  0/1/2 lần hủy chuỗi; bộ hiện tại chỉ chấp nhận 0 hoặc 2.
+- Cần tách hai khai báo chuỗi để khớp thứ tự khởi tạo từng ô gốc,
+  rồi biên dịch và chạy lại. Đồng thời chụp bản biên dịch gọi MT5
+  trực tiếp, không thay lời gọi bằng hàm kiểm, để so cách trình biên
+  dịch nối các lời gọi và khởi tạo vùng ngày.
+
+Claude chưa tự đọc bằng chứng chuỗi rỗng mới; điểm đó đã được chốt
+bằng `string-literals.json`, không coi lại là giả thuyết. Công cụ tự
+chia việc của Claude bị từ chối trong phiên chỉ đọc; không có tác tử
+phụ kiểm độc lập. Các phiên Claude riêng do mình mở vẫn làm song song.

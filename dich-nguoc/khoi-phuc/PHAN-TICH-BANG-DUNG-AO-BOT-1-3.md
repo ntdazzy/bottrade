@@ -36,7 +36,9 @@ Thứ tự là ghi vé đã báo → đếm vị thế → báo thông tin. Số
 thông báo bằng 0 nếu byte cờ bằng 0, còn lại bằng 500; khác với điều
 kiện cho phép truy cập bảng là byte cờ đúng bằng 1.
 
+Đã nối [mã gọi thông báo 2 với `Print`](doi-chung-mt5/bang-dung-ao-20261024/print-opcode-proof.json)
+bằng chương trình có nguồn và bản chụp cũ, không đoán theo tên chuỗi.
 Đề xuất nguồn cũ còn bỏ thông báo và lần đếm vị thế khi đầy bảng nên
-chưa được đưa vào nguồn chính. Còn phải đối chứng mã gọi thông báo,
+chưa được đưa vào nguồn chính. Còn phải kiểm thông báo khi chạy,
 việc chọn vị thế/đổi kích thước mảng khi dọn bảng, các lỗi, vé lớn/trùng,
 trạng thái sau khởi động lại rồi mới dựng và so đầy đủ. P22 vẫn còn mở.

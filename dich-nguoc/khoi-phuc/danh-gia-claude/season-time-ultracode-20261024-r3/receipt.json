@@ -1,0 +1,43 @@
+{
+  "session": "378d8524-8430-4fc3-9ec6-5a3bde5c5f82",
+  "requested_model": "claude-opus-5-5",
+  "model": [
+    "claude-opus-5-5"
+  ],
+  "effort_observed": "max",
+  "ultracode_requested": true,
+  "configuration_receipt": "../cau-hinh-20261024/receipt.json",
+  "status": "success",
+  "is_error": false,
+  "subagents": {
+    "spawned": 0,
+    "requested": {
+      "background": 0,
+      "foreground": 0,
+      "unset": 0
+    },
+    "started_in_background": 0,
+    "max_depth": 0,
+    "spawned_by_subagents": 0,
+    "completed": 0,
+    "failed": 0,
+    "killed": {
+      "parent": 0,
+      "user": 0,
+      "system": 0
+    },
+    "refused": {
+      "depth_limit": 0,
+      "concurrency_limit": 0,
+      "budget": 0
+    },
+    "by_type": {}
+  },
+  "permission_denials": [
+    {
+      "tool_name": "Workflow",
+      "tool_use_id": "toolu_01QiEffN8hmf9th9MHpTPxWo"
+    }
+  ],
+  "scope": "Independent read-only source/API and test review. No runtime test was performed by Claude."
+}

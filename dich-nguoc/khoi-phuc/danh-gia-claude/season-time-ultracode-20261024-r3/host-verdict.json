@@ -1,0 +1,23 @@
+{
+  "status": "review-read-relevant-test-gaps-open",
+  "confirmed_by_host": [
+    "Original bytecode and current source were already compared for4737 stated cases; this review does not negate those observed results",
+    "The case generator uses calendar Sundays for targeted hours; native formulas differ in years2100,2400,3000, whose days are covered only at noon",
+    "Shared dt and ignored TimeToStruct result follow native code; first no-write failure remains undefined in the evidence"
+  ],
+  "already_resolved_by_host": [
+    {
+      "review_point": "U2 initial string may not be empty",
+      "proof": "doi-chung-mt5/gio-mua-he-20261024/string-literals.json",
+      "finding": "Both actual descriptors and lengths were directly read and are empty. Claude did not use this newer proof."
+    }
+  ],
+  "required_followup": [
+    "Use measured native boundary timestamps to add hour-level cases for2100,2400,3000",
+    "Add negative supplied years, zero clock, conversion writes with false return and concat no-write cases; track native string frees0/1/2",
+    "Separate start/end string declarations in source to follow original initialization order, then rebuild and rerun",
+    "Compile/capture the source without API macros to verify direct compiler/API mapping and dt initialization",
+    "Investigate actual platform conversion errors and allocation failures separately"
+  ],
+  "workflow_limit": "Claude reported workflow blocked; no child-agent review occurred. Independent host-launched Claude sessions were used instead."
+}

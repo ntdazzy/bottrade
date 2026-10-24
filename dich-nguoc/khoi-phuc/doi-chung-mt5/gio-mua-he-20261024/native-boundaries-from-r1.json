@@ -1,0 +1,103 @@
+{
+  "status": "measured-native-arguments-verified-in-r1-not-yet-used-for-added-tests",
+  "native_rvas": {
+    "1": "0x17840",
+    "3": "0x7e20"
+  },
+  "sources": {
+    "cases.json": "c4be2b098cb4a5904ca3d0d362653eb92ed33228d127e2aca236c4ed0f03d531",
+    "cases.bin": "5d8633de9b2b33caaef4106b46c3eb47effa5c544131e0a5059baad84967fdb7",
+    "original-trace.bin": "bd34b5f0132d9dd74ef99c4788d8561de8e7d40d41b6c3d47635669c0088abe8",
+    "original-results.bin": "4f4183b5d9c83141647bf3f12ef3a90158658b4b20a59e07b951b8c76573bdae"
+  },
+  "boundaries": [
+    {
+      "year": 1987,
+      "source_case": 534,
+      "start_timestamp": 544586400,
+      "end_timestamp": 562125600,
+      "start_midnight": 544579200,
+      "end_midnight": 562118400
+    },
+    {
+      "year": 1999,
+      "source_case": 917,
+      "start_timestamp": 923191200,
+      "end_timestamp": 941335200,
+      "start_midnight": 923184000,
+      "end_midnight": 941328000
+    },
+    {
+      "year": 2000,
+      "source_case": 1301,
+      "start_timestamp": 954640800,
+      "end_timestamp": 972784800,
+      "start_midnight": 954633600,
+      "end_midnight": 972777600
+    },
+    {
+      "year": 2006,
+      "source_case": 1684,
+      "start_timestamp": 1143943200,
+      "end_timestamp": 1162087200,
+      "start_midnight": 1143936000,
+      "end_midnight": 1162080000
+    },
+    {
+      "year": 2007,
+      "source_case": 2067,
+      "start_timestamp": 1173578400,
+      "end_timestamp": 1194141600,
+      "start_midnight": 1173571200,
+      "end_midnight": 1194134400
+    },
+    {
+      "year": 2024,
+      "source_case": 2451,
+      "start_timestamp": 1710036000,
+      "end_timestamp": 1730599200,
+      "start_midnight": 1710028800,
+      "end_midnight": 1730592000
+    },
+    {
+      "year": 2026,
+      "source_case": 2834,
+      "start_timestamp": 1772935200,
+      "end_timestamp": 1793498400,
+      "start_midnight": 1772928000,
+      "end_midnight": 1793491200
+    },
+    {
+      "year": 2099,
+      "source_case": 3217,
+      "start_timestamp": 4076618400,
+      "end_timestamp": 4097181600,
+      "start_midnight": 4076611200,
+      "end_midnight": 4097174400
+    },
+    {
+      "year": 2100,
+      "source_case": 3600,
+      "start_timestamp": 4108586400,
+      "end_timestamp": 4129149600,
+      "start_midnight": 4108579200,
+      "end_midnight": 4129142400
+    },
+    {
+      "year": 2400,
+      "source_case": 3984,
+      "start_timestamp": 13575348000,
+      "end_timestamp": 13595911200,
+      "start_midnight": 13575340800,
+      "end_midnight": 13595904000
+    },
+    {
+      "year": 3000,
+      "source_case": 4367,
+      "start_timestamp": 32509389600,
+      "end_timestamp": 32529952800,
+      "start_midnight": 32509382400,
+      "end_midnight": 32529945600
+    }
+  ]
+}

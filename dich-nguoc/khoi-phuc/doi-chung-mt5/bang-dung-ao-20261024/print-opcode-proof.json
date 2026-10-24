@@ -1,0 +1,30 @@
+{
+  "status": "reused-existing-source-calibration",
+  "source": "dich-nguoc/khoi-phuc/doi-chung-mt5/api-bo-sung-20261023/source/RecoveryApiLibrary.mq5",
+  "source_sha256": "00f77c7273cd74ad992f6d1941267c75685a4211f54517dc9685b22814bcb4bd",
+  "source_lines": [
+    6,
+    10
+  ],
+  "source_operation": "Print(\"EX5_API_PROBE:Anchor\")",
+  "calibration": "dich-nguoc/khoi-phuc/doi-chung-mt5/api-bo-sung-20261023/api-extra-r2/calibration.json",
+  "calibration_sha256": "bc533b885fbb3909a9f82b7609dfd27bb515e35b9b90bcf19b3d90386926a0e0",
+  "captured_wrapper": {
+    "rva": "0x3d0",
+    "end_rva": "0x417",
+    "markers": [
+      "Anchor"
+    ],
+    "calls": [
+      {
+        "site_rva": "0x40c",
+        "target_rva": "0x7b49f0",
+        "rdx_constant": 2,
+        "r8_constant": 1,
+        "transfer": "call"
+      }
+    ]
+  },
+  "conclusion": "Dispatcher opcode2 is Print on the recorded engine",
+  "limit": "This confirms opcode2, not the direct compiled seven-argument field layout or all compiler-generated AmericanDST API calls."
+}
