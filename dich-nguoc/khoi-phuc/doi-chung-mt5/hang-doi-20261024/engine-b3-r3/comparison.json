@@ -1,0 +1,17 @@
+{
+  "bot": 3,
+  "cases": 374,
+  "matched": 374,
+  "failed": 0,
+  "first_failures": [],
+  "seconds": 6.25,
+  "source_comparison": "bot-cua-toi-3/bang-chung/kiem-hang-doi/queue-20261024-r3",
+  "hashes": {
+    "cases.bin": "9dc57fbf24fc5d92718e521e6f2757e7c2b6aec67ebea6ebe367ca4be8342e7e",
+    "original-results.bin": "25e6e1ee21b359f58bcb3cb41a9afb79b24cdb44c961919f77a65ce1e280b6d6",
+    "tester-mql5-results.bin": "25e6e1ee21b359f58bcb3cb41a9afb79b24cdb44c961919f77a65ce1e280b6d6",
+    "script-mql5-results.bin": "25e6e1ee21b359f58bcb3cb41a9afb79b24cdb44c961919f77a65ce1e280b6d6"
+  },
+  "whole_bot_complete": false,
+  "scope": "Same queue source/check body inside identical tester engine, no orders. Test EA changes only event entry and input filename; supplied pending-builder and sleep/print boundaries remain. Exact queue records compared including NaN bits. Not a full EA/actual broker or queue+real-builder comparison."
+}

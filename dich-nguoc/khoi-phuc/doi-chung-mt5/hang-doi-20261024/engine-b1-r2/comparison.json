@@ -1,0 +1,42 @@
+{
+  "bot": 1,
+  "cases": 236,
+  "matched": 232,
+  "failed": 4,
+  "first_failures": [
+    {
+      "id": 66,
+      "first_different_byte": 105,
+      "original": "7f000000000080594000945665000000",
+      "mql5": "ff000000000080594000945665000000"
+    },
+    {
+      "id": 80,
+      "first_different_byte": 105,
+      "original": "7f000000000000f87f00945665000000",
+      "mql5": "ff000000000000f87f00945665000000"
+    },
+    {
+      "id": 185,
+      "first_different_byte": 115,
+      "original": "7f009456650000000006000000580041",
+      "mql5": "ff009456650000000006000000580041"
+    },
+    {
+      "id": 192,
+      "first_different_byte": 115,
+      "original": "7f009456650000000006000000580041",
+      "mql5": "ff009456650000000006000000580041"
+    }
+  ],
+  "seconds": 6.13,
+  "source_comparison": "bot-cua-toi-1/bang-chung/kiem-hang-doi/queue-20261024-r2",
+  "hashes": {
+    "cases.bin": "a2ea4702e4ee0e68246845fd4ea93dbb0e0dcacfdf979d3789d9ec2e9797daf0",
+    "original-results.bin": "789e3e2afb8fb35e889e5db1dac37c07dd455f4ac23c415af1091241d0899ce4",
+    "tester-mql5-results.bin": "b94066c1796a8d9f46649b48cbce4b05c6918dccf9a1d6c6e17e0103beeaa8d8",
+    "script-mql5-results.bin": "b94066c1796a8d9f46649b48cbce4b05c6918dccf9a1d6c6e17e0103beeaa8d8"
+  },
+  "whole_bot_complete": false,
+  "scope": "Same queue source/check body inside identical tester engine, no orders. Test EA changes only event entry and input filename; supplied pending-builder and sleep/print boundaries remain. Exact queue records compared including NaN bits. Not a full EA/actual broker or queue+real-builder comparison."
+}

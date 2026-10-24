@@ -1,0 +1,41 @@
+{
+  "session_id": "43394cd1-8fda-4e1f-91f6-edf6a7bd57da",
+  "completed": true,
+  "model_requested": "claude-opus-5-5",
+  "effort_requested": "max",
+  "ultracode_requested": true,
+  "observed_settings": {
+    "ultracode": true
+  },
+  "response_sha256": "876271fc0681919829105c50f62e09d73655907245b509762952d28807834afe",
+  "actual_request_effort_verified": true,
+  "limit": "Review returned; child workflow did not run. Requested/configured effort does not by itself verify request effort. Parent must verify conclusions against original evidence.",
+  "observed_requests": [
+    {
+      "timestamp": "2026-10-24T10:33:14.678Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-24T10:33:25.872Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-24T10:42:57.403Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-24T10:45:21.163Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-24T10:45:44.060Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    }
+  ],
+  "transcript_sha256": "a9d6802ca9085ca0a3775e2a1f29f766e6cad21d4b53b9047fbcb757cca48d66"
+}

@@ -1,0 +1,139 @@
+{
+  "instruction": "subsd xmm0,xmm1",
+  "instruction_hex": "f20f5cc1",
+  "values": {
+    "number": "0x4059400000000000",
+    "positive_qnan": "0x7ff8000000000123",
+    "negative_qnan": "0xfff8000000000456",
+    "positive_snan": "0x7ff0000000000789",
+    "negative_snan": "0xfff0000000000abc"
+  },
+  "results": [
+    {
+      "left": "number",
+      "right": "number",
+      "result": "0x0"
+    },
+    {
+      "left": "number",
+      "right": "positive_qnan",
+      "result": "0x7ff8000000000123"
+    },
+    {
+      "left": "number",
+      "right": "negative_qnan",
+      "result": "0xfff8000000000456"
+    },
+    {
+      "left": "number",
+      "right": "positive_snan",
+      "result": "0x7ff8000000000789"
+    },
+    {
+      "left": "number",
+      "right": "negative_snan",
+      "result": "0xfff8000000000abc"
+    },
+    {
+      "left": "positive_qnan",
+      "right": "number",
+      "result": "0x7ff8000000000123"
+    },
+    {
+      "left": "positive_qnan",
+      "right": "positive_qnan",
+      "result": "0x7ff8000000000123"
+    },
+    {
+      "left": "positive_qnan",
+      "right": "negative_qnan",
+      "result": "0xfff8000000000456"
+    },
+    {
+      "left": "positive_qnan",
+      "right": "positive_snan",
+      "result": "0x7ff8000000000123"
+    },
+    {
+      "left": "positive_qnan",
+      "right": "negative_snan",
+      "result": "0x7ff8000000000123"
+    },
+    {
+      "left": "negative_qnan",
+      "right": "number",
+      "result": "0xfff8000000000456"
+    },
+    {
+      "left": "negative_qnan",
+      "right": "positive_qnan",
+      "result": "0xfff8000000000456"
+    },
+    {
+      "left": "negative_qnan",
+      "right": "negative_qnan",
+      "result": "0xfff8000000000456"
+    },
+    {
+      "left": "negative_qnan",
+      "right": "positive_snan",
+      "result": "0xfff8000000000456"
+    },
+    {
+      "left": "negative_qnan",
+      "right": "negative_snan",
+      "result": "0xfff8000000000456"
+    },
+    {
+      "left": "positive_snan",
+      "right": "number",
+      "result": "0x7ff8000000000789"
+    },
+    {
+      "left": "positive_snan",
+      "right": "positive_qnan",
+      "result": "0x7ff8000000000123"
+    },
+    {
+      "left": "positive_snan",
+      "right": "negative_qnan",
+      "result": "0xfff8000000000456"
+    },
+    {
+      "left": "positive_snan",
+      "right": "positive_snan",
+      "result": "0x7ff8000000000789"
+    },
+    {
+      "left": "positive_snan",
+      "right": "negative_snan",
+      "result": "0xfff8000000000abc"
+    },
+    {
+      "left": "negative_snan",
+      "right": "number",
+      "result": "0xfff8000000000abc"
+    },
+    {
+      "left": "negative_snan",
+      "right": "positive_qnan",
+      "result": "0x7ff8000000000123"
+    },
+    {
+      "left": "negative_snan",
+      "right": "negative_qnan",
+      "result": "0xfff8000000000456"
+    },
+    {
+      "left": "negative_snan",
+      "right": "positive_snan",
+      "result": "0xfff8000000000abc"
+    },
+    {
+      "left": "negative_snan",
+      "right": "negative_snan",
+      "result": "0xfff8000000000abc"
+    }
+  ],
+  "scope": "CPU instruction semantics used by the original, not an additional original-bot run."
+}

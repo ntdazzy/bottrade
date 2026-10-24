@@ -2,6 +2,34 @@
 
 Chạy từ thư mục dự án. Mỗi lượt dùng tên mới để giữ bằng chứng cũ.
 
+## Hàng đợi và nội dung lỗi
+
+- `kiem-chuoi-loi-bot-1-3.py MODE BOT RUN [--build BUILD]`: dùng
+  `analyze` trước khi viết nguồn, rồi `prepare` → biên dịch
+  `BotNTradeErrorsCheck.mq5` → `mql5` → `original` → `compare`.
+  Lượt `errors-20261024-r3`, bản `bN-trade-errors-02`: 5.826 ca.
+  Kiểm cả miền mã -1..4207, kiểu số đã đối chứng, tăng đếm trước chép
+  và nối mã kiểm tra nguồn/biên dịch/chạy. Chuỗi cũ chỉ kiểm ở mã gốc.
+- `kiem-hang-doi-bot-1-3.py MODE BOT RUN [--build BUILD]`: theo thứ
+  tự `prepare` → biên dịch `BotNPendingQueueCheck.mq5` → `mql5` →
+  `original` → `compare`. Lượt `queue-20261024-r3`, bản
+  `bN-pending-queue-03`: 374 ca. So đủ hai bảng, dữ liệu và lời gọi;
+  kết quả tạo lệnh/chờ/in được cấp sẵn. Không giao dịch.
+- `kiem-hang-doi-trong-may-thu.py BOT NEW_RUN --queue-run RUN --build BUILD`:
+  chạy cùng nguồn và thân bộ kiểm trong máy đo quá khứ. Chỉ đổi sự
+  kiện chạy và tên tệp đầu vào; các lời gọi gửi/chờ vẫn được thay.
+  Lượt `engine-b1-r3`, `engine-b3-r3` đều khớp 374 ca, 0 lỗi/cảnh báo.
+- `do-phep-tru-mt5.py NEW_RUN [--probe queue-native-r2]`: đo 25 cặp
+  số bằng thư viện có nguồn đã chụp, gồm các dạng `NaN`; ghi từng bit
+  bằng số nguyên. Lượt `arithmetic-runtime-r2` đo thêm cộng/nhân.
+- `kiem-chung-hang-doi-bot-1-3.py NEW_JSON`: kiểm lại nguồn, bằng
+  chứng và bản biên dịch của hai phần; chạy lại mã máy hàng đợi với
+  các công cụ hiện hành để kiểm thêm sự phụ thuộc. Không mở MT5.
+
+Chạy lần lượt các lệnh cần MT5 riêng. Không ghi đè lượt cũ. Nguồn
+hàng đợi gọi hàm thật; phần thay lời gọi chỉ có trong chương trình
+kiểm. [Giới hạn](../PHAN-TICH-HANG-DOI-BOT-1-3.md).
+
 ## Gửi lệnh, thông báo và ghép tạo yêu cầu
 
 - `kiem-gui-lenh-bot-1-3.py MODE BOT RUN [--build BUILD]`: hàm gửi
@@ -182,7 +210,7 @@ liệt kê mọi hàm trong bảng đã chụp, toàn bộ dòng cài đặt đ�
 lời gọi, chuỗi, chỗ chưa rõ và liên kết bằng chứng. Thư mục đích phải
 mới và nằm trong `khoi-phuc`; không sửa EX5 hoặc mã trung gian.
 
-Lượt hiện hành: `ban-do-bot-1-3/luot-20261024-r7/`. Danh sách không tự
+Lượt hiện hành: `ban-do-bot-1-3/luot-20261024-r8/`. Danh sách không tự
 khẳng định toàn bộ EX5 đã được phân tích hoặc mọi cài đặt đã được nối.
 
 ## Hai bộ kiểm đã hoàn tất trước khi chuyển sang rà bản đồ

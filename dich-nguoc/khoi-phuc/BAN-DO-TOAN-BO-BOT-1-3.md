@@ -19,9 +19,9 @@ phải được phân tích tiếp trước khi viết luật tương ứng.
 
 Danh sách đầy đủ từng hàm và từng dòng cài đặt:
 
-- [Bot 1](ban-do-bot-1-3/luot-20261024-r7/bot-1.md), [dữ liệu chi tiết](ban-do-bot-1-3/luot-20261024-r7/bot-1.json).
-- [Bot 3](ban-do-bot-1-3/luot-20261024-r7/bot-3.md), [dữ liệu chi tiết](ban-do-bot-1-3/luot-20261024-r7/bot-3.json).
-- [Biên nhận lập danh sách](ban-do-bot-1-3/luot-20261024-r7/summary.json).
+- [Bot 1](ban-do-bot-1-3/luot-20261024-r8/bot-1.md), [dữ liệu chi tiết](ban-do-bot-1-3/luot-20261024-r8/bot-1.json).
+- [Bot 3](ban-do-bot-1-3/luot-20261024-r8/bot-3.md), [dữ liệu chi tiết](ban-do-bot-1-3/luot-20261024-r8/bot-3.json).
+- [Biên nhận lập danh sách](ban-do-bot-1-3/luot-20261024-r8/summary.json).
 
 Mỗi hàm có vị trí gốc, dòng C, các hàm gọi/được gọi, lời gọi MT5, mã
 điều phối, chuỗi liên quan, biến dùng chung, nguồn dựng lại và bằng
@@ -64,7 +64,7 @@ phép đối chiếu trong phạm vi cụ thể; không đánh dấu hoàn tất
 | P13 | Đổi tiền tài khoản và cặp giá | `0x36220`, `0x47d20` / `0x8300`, `0x41780` | Đã so hai chiều và ghép; còn nạp đuôi mã lúc khởi tạo |
 | P14 | Vốn cao nhất, rút tiền và lưu trạng thái | `0x173f0`, `0xc30` / `0x1fd00`, `0xc30` | Đã so cập nhật/ghi-đọc, tên mục và nạp lại trong đoạn khởi tạo; còn ghép toàn bộ, mã lỗi/thông báo và kiểm cùng tài khoản |
 | P15 | Kiểm khối lượng hợp lệ và ký quỹ | `0x3bfe0`, `0x3cb30`, `0x457d0` / `0x46ca0`, `0x47840`, `0x53670` | Đã so kiểm ký quỹ và dựng kiểm khối lượng hợp lệ: 1.834 ca mỗi bot, gồm 27 lần dừng vì chia 0 thật. Còn ghép EA, lỗi dữ liệu thực và đuôi số thông báo; [bằng chứng](PHAN-TICH-KHOI-LUONG-HOP-LE-BOT-1-3.md) |
-| P16 | Tạo/gửi yêu cầu giao dịch | `0x950`, `0x2e6d0`, `0x32dd0` / `0x950`, `0x3bb10`, `0x3e580` | Đã dựng chọn cách khớp (3.096 ca), chuẩn bị (1.607 ca), gửi/thông báo (1.201 ca) và ghép từ tạo yêu cầu qua gửi/thông báo (1.687 ca mỗi bot). Kết quả gửi cấp sẵn; còn hàng đợi 100 lệnh, thử lại, kết quả/lỗi thực và ghép EA; [bằng chứng](PHAN-TICH-GUI-LENH-BOT-1-3.md) |
+| P16 | Tạo/gửi yêu cầu giao dịch | `0x950`, `0x2e6d0`, `0x32dd0` / `0x950`, `0x3bb10`, `0x3e580` | Đã dựng chọn cách khớp (3.096 ca), chuẩn bị (1.607 ca), gửi/thông báo (1.201 ca), ghép tạo yêu cầu qua gửi/thông báo (1.687 ca), hàng đợi/thử lại (374 ca mỗi bot, cùng script và máy đo quá khứ). Còn so chung hàng đợi+tạo/gửi, kết quả/lỗi thực và ghép EA; [hàng đợi và giới hạn](PHAN-TICH-HANG-DOI-BOT-1-3.md) |
 | P17 | Quét, nhận dạng và đếm lệnh/vị thế | Các hàm nhóm `0x2f5c0..0x32ce0` / `0x3ca00..0x3e490` | Cần nhận dạng chiến lược/mã giao dịch, thứ tự, vé 0 và giới hạn số lệnh |
 | P18 | Sửa/hủy lệnh chờ và vùng cấm sửa | `0x30320`, `0x34150` / `0x32450`, `0x3d650` | Cần điều kiện giá, chọn lệnh, trường yêu cầu và xử lý thất bại |
 | P19 | Hết hạn thật và tự quản lý hết hạn | Tham số ở `0x7500` / `0xe0c0`, nơi dùng trong chiến lược | Đã so cách tính thời hạn; chưa toàn bộ việc hủy khi đến hạn |
@@ -79,7 +79,7 @@ phép đối chiếu trong phạm vi cụ thể; không đánh dấu hoàn tất
 | P28 | Lịch sử/tệp dữ liệu tin | Bot 3 có chuỗi `newshist.csv`, `news.csv` tại phần khởi tạo/hủy | Cần xác định đường đọc thật, nhánh có sử dụng và dữ liệu đi kèm; chưa khẳng định tính năng đang bật |
 | P29 | Bảng thông tin, nhãn và thao tác biểu đồ | `0x8320`, `0xe1b0`, `0xffb0`, `0x45b70`, `0x47740` / `0xef40`, `0x14fa0`, `0x16e80`, `0x53a10`, `0x555e0` | Cần từng đối tượng, nội dung, màu/cỡ chữ, vị trí và hành vi hiển thị khi đo lại quá khứ |
 | P30 | Điều kiện tài khoản/dùng chương trình và HTTP phụ | `0x5880`, `0x3d6c0`, `0x4d260` / `0x61a0`, `0x485e0`, `0x55bc0` | Cần phân biệt điều kiện giao dịch với kiểm quyền dùng; không sửa để vượt khóa/giới hạn |
-| P31 | Thông báo, mã lỗi, thử lại và bộ nhớ | Hàm gửi/định dạng, các hàm phụ trợ đầu bảng | Đã dựng/so thông báo yêu cầu và kết quả trong 1.201 ca mỗi bot; còn hàm đổi mã lỗi, thử lại, thông báo ở các phần khác, lỗi cấp bộ nhớ và dọn khi dừng; [bằng chứng](PHAN-TICH-GUI-LENH-BOT-1-3.md) |
+| P31 | Thông báo, mã lỗi, thử lại và bộ nhớ | Hàm gửi/định dạng, các hàm phụ trợ đầu bảng | Đã dựng/so thông báo gửi (1.201 ca), hàm đổi mã lỗi/tăng đếm (5.826 ca), thử lại của hàng đợi (374 ca mỗi bot). Còn thông báo/thử lại ở các phần khác, lỗi cấp bộ nhớ/CPU và dọn khi dừng; [mã lỗi và giới hạn](PHAN-TICH-CHUOI-LOI-BOT-1-3.md) |
 | P32 | Cài đặt và tài nguyên nguyên bản | EX5 gốc, 72/80 dòng đã nối và đọc trên cửa sổ, bảy menu đã mở | Còn kiểu khai báo/phạm vi nhập, ký tự nhãn bị ẩn, hình/tài nguyên và bảng thông tin khi bot chạy |
 | P33 | So toàn bộ và bàn giao | Các bằng chứng thành phần hiện có | Chưa có EA chính; cần nguồn hoàn chỉnh, EX5 đúng nguồn, cùng dữ liệu và so từng hoạt động/thiết lập |
 
@@ -133,7 +133,12 @@ tả `0x2e6d0/0x3bb10`: đó là xử lý hàng đợi 100 lệnh chờ, không 
 chỉ tạo trường yêu cầu. Mã thao tác 2 đã nối với `Print` bằng chương
 trình có nguồn. Các lượt cũ giữ nguyên, không sửa lại bằng chứng.
 
-Lượt hiện hành `luot-20261024-r7` nối thêm hàm gửi, bốn hàm thông báo
+Lượt `luot-20261024-r7` nối thêm hàm gửi, bốn hàm thông báo
 và chuỗi ghép tạo yêu cầu qua gửi. Đã sửa tên mô tả: bảng hàng đợi
 ghi kết quả 0/1 thay vì vé; hàm `0x26060/0x31790` đổi loại lệnh,
 `0x26360/0x31a90` định dạng giá, `0x336d0/0x3ee80` đổi mã lỗi.
+
+Lượt hiện hành `luot-20261024-r8` nối thêm nguồn/bằng chứng hàng đợi
+100 lệnh, thử lại và nội dung mã lỗi. Còn phép so chung toàn bộ chuỗi
+hàng đợi/tạo/gửi và các giới hạn CPU/bộ nhớ; không đánh dấu hai hàng
+P16/P31 hoặc toàn bộ bot là hoàn tất.

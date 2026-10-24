@@ -231,6 +231,8 @@ def main():
                     p=ROOT/f'bot-cua-toi-{bot}/source/MQL5/Include/bot-cua-toi-{bot}/Bot{bot}AccountInitialization.mqh'
                     reconstructed={'path':p.relative_to(ROOT).as_posix(),'sha256':sha(p),'partial_only':True}
             new_parts={
+                (0x2e6d0 if bot==1 else 0x3bb10):('kiem-hang-doi/queue-20261024-r3','PendingQueue','Hàng đợi và thử lại; kết quả tạo lệnh cấp sẵn, còn so chung với tạo/gửi và toàn EA.'),
+                (0x336d0 if bot==1 else 0x3ee80):('kiem-chuoi-loi/errors-20261024-r3','TradeErrors','Nội dung lỗi/tăng đếm; chuỗi cũ kiểm ở gốc, lỗi cấp bộ nhớ và toàn bộ nơi gọi còn mở.'),
                 (0x231c0 if bot==1 else 0x2e8f0):('kiem-kieu-khop-lenh/filling-20261024-r1','Filling','Hàm chọn cách khớp; dữ liệu thuộc tính cấp sẵn, chưa ghép giao dịch.'),
                 (0x32dd0 if bot==1 else 0x3e580):('kiem-ghep-dat-lenh-cho/open-pending-20261024-r1','TradeSend','Ghép tạo yêu cầu qua gửi/thông báo; kết quả gửi cấp sẵn, chưa có nơi giao dịch/hàng đợi/EA.'),
                 (0x3bfe0 if bot==1 else 0x46ca0):('kiem-khoi-luong-hop-le/volume-validation-20261024-r5','VolumeValidation','Hàm kiểm khối lượng; đuôi số trong thông báo và ghép EA còn mở.'),

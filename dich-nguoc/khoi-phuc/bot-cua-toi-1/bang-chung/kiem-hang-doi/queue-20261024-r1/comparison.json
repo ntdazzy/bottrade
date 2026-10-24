@@ -1,0 +1,37 @@
+{
+  "cases": 236,
+  "matched": 232,
+  "failed": 4,
+  "first_failures": [
+    {
+      "id": 66,
+      "first_different_byte": 105,
+      "original": "7f000000000080594000945665000000",
+      "mql5": "ff000000000080594000945665000000"
+    },
+    {
+      "id": 80,
+      "first_different_byte": 105,
+      "original": "7f000000000000f87f00945665000000",
+      "mql5": "ff000000000000f87f00945665000000"
+    },
+    {
+      "id": 185,
+      "first_different_byte": 115,
+      "original": "7f009456650000000006000000580041",
+      "mql5": "ff009456650000000006000000580041"
+    },
+    {
+      "id": 192,
+      "first_different_byte": 115,
+      "original": "7f009456650000000006000000580041",
+      "mql5": "ff009456650000000006000000580041"
+    }
+  ],
+  "hashes": {
+    "cases.bin": "a2ea4702e4ee0e68246845fd4ea93dbb0e0dcacfdf979d3789d9ec2e9797daf0",
+    "original-results.bin": "789e3e2afb8fb35e889e5db1dac37c07dd455f4ac23c415af1091241d0899ce4",
+    "mql5-results.bin": "b94066c1796a8d9f46649b48cbce4b05c6918dccf9a1d6c6e17e0103beeaa8d8"
+  },
+  "scope": "Complete100-row queue, ordered typed builder/Print/Sleep boundaries, all500 queue/result doubles, context, flag, error/count; finite132 retry sequences and controlled boundary changes. Builder results supplied; not full combined queue+builder/terminal/EA."
+}

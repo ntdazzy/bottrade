@@ -1,0 +1,152 @@
+[
+  {
+    "left_name": "number",
+    "right_name": "number",
+    "left": "0x4059400000000000",
+    "right": "0x4059400000000000"
+  },
+  {
+    "left_name": "number",
+    "right_name": "positive_qnan",
+    "left": "0x4059400000000000",
+    "right": "0x7ff8000000000123"
+  },
+  {
+    "left_name": "number",
+    "right_name": "negative_qnan",
+    "left": "0x4059400000000000",
+    "right": "0xfff8000000000456"
+  },
+  {
+    "left_name": "number",
+    "right_name": "positive_snan",
+    "left": "0x4059400000000000",
+    "right": "0x7ff0000000000789"
+  },
+  {
+    "left_name": "number",
+    "right_name": "negative_snan",
+    "left": "0x4059400000000000",
+    "right": "0xfff0000000000abc"
+  },
+  {
+    "left_name": "positive_qnan",
+    "right_name": "number",
+    "left": "0x7ff8000000000123",
+    "right": "0x4059400000000000"
+  },
+  {
+    "left_name": "positive_qnan",
+    "right_name": "positive_qnan",
+    "left": "0x7ff8000000000123",
+    "right": "0x7ff8000000000123"
+  },
+  {
+    "left_name": "positive_qnan",
+    "right_name": "negative_qnan",
+    "left": "0x7ff8000000000123",
+    "right": "0xfff8000000000456"
+  },
+  {
+    "left_name": "positive_qnan",
+    "right_name": "positive_snan",
+    "left": "0x7ff8000000000123",
+    "right": "0x7ff0000000000789"
+  },
+  {
+    "left_name": "positive_qnan",
+    "right_name": "negative_snan",
+    "left": "0x7ff8000000000123",
+    "right": "0xfff0000000000abc"
+  },
+  {
+    "left_name": "negative_qnan",
+    "right_name": "number",
+    "left": "0xfff8000000000456",
+    "right": "0x4059400000000000"
+  },
+  {
+    "left_name": "negative_qnan",
+    "right_name": "positive_qnan",
+    "left": "0xfff8000000000456",
+    "right": "0x7ff8000000000123"
+  },
+  {
+    "left_name": "negative_qnan",
+    "right_name": "negative_qnan",
+    "left": "0xfff8000000000456",
+    "right": "0xfff8000000000456"
+  },
+  {
+    "left_name": "negative_qnan",
+    "right_name": "positive_snan",
+    "left": "0xfff8000000000456",
+    "right": "0x7ff0000000000789"
+  },
+  {
+    "left_name": "negative_qnan",
+    "right_name": "negative_snan",
+    "left": "0xfff8000000000456",
+    "right": "0xfff0000000000abc"
+  },
+  {
+    "left_name": "positive_snan",
+    "right_name": "number",
+    "left": "0x7ff0000000000789",
+    "right": "0x4059400000000000"
+  },
+  {
+    "left_name": "positive_snan",
+    "right_name": "positive_qnan",
+    "left": "0x7ff0000000000789",
+    "right": "0x7ff8000000000123"
+  },
+  {
+    "left_name": "positive_snan",
+    "right_name": "negative_qnan",
+    "left": "0x7ff0000000000789",
+    "right": "0xfff8000000000456"
+  },
+  {
+    "left_name": "positive_snan",
+    "right_name": "positive_snan",
+    "left": "0x7ff0000000000789",
+    "right": "0x7ff0000000000789"
+  },
+  {
+    "left_name": "positive_snan",
+    "right_name": "negative_snan",
+    "left": "0x7ff0000000000789",
+    "right": "0xfff0000000000abc"
+  },
+  {
+    "left_name": "negative_snan",
+    "right_name": "number",
+    "left": "0xfff0000000000abc",
+    "right": "0x4059400000000000"
+  },
+  {
+    "left_name": "negative_snan",
+    "right_name": "positive_qnan",
+    "left": "0xfff0000000000abc",
+    "right": "0x7ff8000000000123"
+  },
+  {
+    "left_name": "negative_snan",
+    "right_name": "negative_qnan",
+    "left": "0xfff0000000000abc",
+    "right": "0xfff8000000000456"
+  },
+  {
+    "left_name": "negative_snan",
+    "right_name": "positive_snan",
+    "left": "0xfff0000000000abc",
+    "right": "0x7ff0000000000789"
+  },
+  {
+    "left_name": "negative_snan",
+    "right_name": "negative_snan",
+    "left": "0xfff0000000000abc",
+    "right": "0xfff0000000000abc"
+  }
+]

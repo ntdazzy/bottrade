@@ -1,0 +1,5 @@
+{
+  "status": "failed-analysis-not-used",
+  "reason": "Parser did not clear unmapped grouped cases before the next literal; observed239 instead of92. No source or test result accepted.",
+  "tool_sha256": "6ed54ba57a8ae2f192f013ef187ea2bb2839e9d10e9603df7c4dc53255e52a48"
+}

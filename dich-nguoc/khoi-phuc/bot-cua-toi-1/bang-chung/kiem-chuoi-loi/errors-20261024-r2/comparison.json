@@ -1,0 +1,14 @@
+{
+  "cases": 1725,
+  "matched": 1725,
+  "failed": 0,
+  "first_failures": [],
+  "hashes": {
+    "analysis.json": "b60cf93873c372245fee6dc8160cff5619acee295a6ca26e2f3a10c5f5986045",
+    "cases.bin": "114a34d6e6b7df7d912f7fe5fd1e64b7a5f758e82f09e9305ebb07bd723bf44e",
+    "original-results.bin": "2f5799c5d79fcd5f4d83f1c3935b2617880eaaf2909bf27283f6816fc93946bc",
+    "mql5-results.bin": "2f5799c5d79fcd5f4d83f1c3935b2617880eaaf2909bf27283f6816fc93946bc",
+    "cast-values.bin": "c64fadb4231e756d4dd22d3b10bf2c454bc74a375d671a939d70a2e2d13a208c"
+  },
+  "scope": "All92 explicit codes, adjacent unmapped codes, int32 extremes; u32 increment/wrap and old shared text replacement, including native owned old string. Cast text measured in MT5. No allocation failures or full EA claim."
+}

@@ -1,0 +1,22 @@
+{
+  "cases": 374,
+  "original_ex5_sha256": "ee063d3d87490afe24e2f4ce85f6b05659320e297b102efd70207f71ca2feb83",
+  "cases_sha256": "9dc57fbf24fc5d92718e521e6f2757e7c2b6aec67ebea6ebe367ca4be8342e7e",
+  "tool_sha256": "5846e7351e89c69697d7caa89aed1b3e0d199ac47f14c6e73624682ce390b73b",
+  "native_rvas": {
+    "fn": 244496,
+    "enabled": 472168,
+    "orders": 468144,
+    "results": 470544,
+    "ask": 477088,
+    "bid": 477080,
+    "gap": 473776,
+    "sl": 447880,
+    "tp": 447888,
+    "unit": 474584,
+    "anchor": 476304,
+    "symbol": 477528,
+    "comment": 447848,
+    "last_error": 1928720
+  }
+}

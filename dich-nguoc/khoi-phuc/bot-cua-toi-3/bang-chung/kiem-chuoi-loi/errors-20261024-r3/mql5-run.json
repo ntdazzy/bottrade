@@ -1,0 +1,16 @@
+{
+  "exit_code": 0,
+  "seconds": 3.33,
+  "script_sha256": "d56f38e46890ed9700078e30dbb46e360ffbca4bb2d07f105e59ac1122268bfb",
+  "build_receipt": "bot-cua-toi-3/bang-chung/bien-dich/b3-trade-errors-02/bien-nhan.json",
+  "build_receipt_sha256": "717354516e36de104a58ef66f8ede53231be62b303c0b657b1e6cc82b4eb349a",
+  "private_sources_sha256": {
+    "Scripts/bot-cua-toi-3/Bot3TradeErrorsCheck.mq5": "333d905ed8c2d32147543ac4d0b5212c9e4297b84495d62b710a7eb141464ca6",
+    "Include/bot-cua-toi-3/Bot3TradeErrors.mqh": "3fb7fe70d418da44d1a77f8e65e9cf71fae00c1d4b5fe3b941ff5ae7e7982a8e"
+  },
+  "hashes": {
+    "mql5-results.bin": "ec4eeb88777d7ff15a8ee43c2873d06490ea19ff24b51d89c7452a8e9a21eefc",
+    "cast-values.bin": "2a634599f88b5675b068e4f532d17ee22e6904762684351086fb0676c43bfaae",
+    "script-status.bin": "df4b2522b835d2f8d4403be53da8e34dce929c12f7d320dc8afaf5ea7a7107a0"
+  }
+}

@@ -1,5 +1,12 @@
 # Kết quả khôi phục mã — lượt 23/10/2026
 
+Cập nhật tiếp 24/10: hàng đợi 100 lệnh/thử lại khớp 374 ca mỗi bot,
+cả script và máy đo quá khứ; nội dung mã lỗi khớp 5.826 ca mỗi bot.
+Đã xử lý bốn khác biệt của số không xác định và bổ sung các điểm
+yếu trong bộ kiểm do Claude nêu. [Hàng đợi](PHAN-TICH-HANG-DOI-BOT-1-3.md),
+[mã lỗi](PHAN-TICH-CHUOI-LOI-BOT-1-3.md). Chưa so chung hàng đợi với
+tạo/gửi lệnh và chưa có EA đầy đủ; không xác nhận toàn bộ bot đạt 100%.
+
 Cập nhật tiếp 24/10: hàm gửi và thông báo khớp 1.201 ca mỗi bot;
 chuỗi ghép tạo yêu cầu → gửi → thông báo khớp 1.687 ca mỗi bot,
 biên dịch 0 lỗi/cảnh báo. Kết quả gửi được cấp trong bộ kiểm, chưa có

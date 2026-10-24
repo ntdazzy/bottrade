@@ -1,0 +1,9 @@
+{
+  "cases": 1725,
+  "seconds": 26.7,
+  "result_sha256": "2f5799c5d79fcd5f4d83f1c3935b2617880eaaf2909bf27283f6816fc93946bc",
+  "casts_sha256": "c64fadb4231e756d4dd22d3b10bf2c454bc74a375d671a939d70a2e2d13a208c",
+  "cast_calls": 345,
+  "tool_sha256": "803a413943fe1d5ffb71c11195a9d390c42808a79ec8b5a542ad000c64932be9",
+  "scope": "Analyze and compare the original error-text helper, including its u32 counter.\n\nUsage: kiem-chuoi-loi-bot-1-3.py analyze|prepare|mql5|original|compare BOT RUN [--build BUILD]\nAnalyze before writing source; prepare after analysis. Run MQL5 before original.\nNo orders are sent. Native string helpers run; only signed decimal casts and\nsuccessful allocation/free are supplied. Allocation failures are not tested.\n"
+}

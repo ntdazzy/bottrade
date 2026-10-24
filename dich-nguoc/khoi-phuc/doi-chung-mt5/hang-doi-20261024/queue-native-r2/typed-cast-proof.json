@@ -1,0 +1,42 @@
+{
+  "calibration_sha256": "f19378085ee41b17e54040785e78879ad4939b45195ef4871a4e35f87cb445cd",
+  "engine_sha256": "5033d9d45d669cebd735e8a6be20b54d74b75274f885c9a0e48e52d872104efb",
+  "runner_verified": true,
+  "only_anchor_executed": true,
+  "checks": [
+    {
+      "source_marker": "Int32Text",
+      "function_rva": "0x2e70",
+      "call": {
+        "site_rva": "0x2ef2",
+        "target_rva": "0x7cf6c0",
+        "rdx_constant": null,
+        "r8_constant": 82,
+        "transfer": "call"
+      }
+    },
+    {
+      "source_marker": "Uint32Text",
+      "function_rva": "0x2f60",
+      "call": {
+        "site_rva": "0x2fe1",
+        "target_rva": "0x7cf6c0",
+        "rdx_constant": null,
+        "r8_constant": 83,
+        "transfer": "call"
+      }
+    },
+    {
+      "source_marker": "Int64Text",
+      "function_rva": "0x3040",
+      "call": {
+        "site_rva": "0x30c3",
+        "target_rva": "0x7cf6c0",
+        "rdx_constant": null,
+        "r8_constant": 85,
+        "transfer": "call"
+      }
+    }
+  ],
+  "scope": "Known-source int32/uint32/int64 cast call signatures. Numeric runtime text is measured in MT5, not reimplemented from EX5."
+}

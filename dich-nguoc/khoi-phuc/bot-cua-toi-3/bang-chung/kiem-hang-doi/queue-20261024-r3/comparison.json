@@ -1,0 +1,12 @@
+{
+  "cases": 374,
+  "matched": 374,
+  "failed": 0,
+  "first_failures": [],
+  "hashes": {
+    "cases.bin": "9dc57fbf24fc5d92718e521e6f2757e7c2b6aec67ebea6ebe367ca4be8342e7e",
+    "original-results.bin": "25e6e1ee21b359f58bcb3cb41a9afb79b24cdb44c961919f77a65ce1e280b6d6",
+    "mql5-results.bin": "25e6e1ee21b359f58bcb3cb41a9afb79b24cdb44c961919f77a65ce1e280b6d6"
+  },
+  "scope": "Complete100-row queue, ordered typed builder/Print/Sleep boundaries, all500 queue/result doubles, context, flag, error/count; finite132 retry sequences and controlled boundary changes. Builder results supplied; not full combined queue+builder/terminal/EA."
+}

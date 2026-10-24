@@ -1,0 +1,15 @@
+{
+  "cases": 5826,
+  "matched": 5826,
+  "failed": 0,
+  "first_failures": [],
+  "hashes": {
+    "analysis.json": "559630400a062a111a08158b819765a369a39440403dbfdb3ebd38c195dd4e57",
+    "cases.bin": "821c9c701d73a9baa83b78cb13d283d0e5ffa64f987ebd4eedc1a75103b554e5",
+    "original-results.bin": "ec4eeb88777d7ff15a8ee43c2873d06490ea19ff24b51d89c7452a8e9a21eefc",
+    "mql5-results.bin": "ec4eeb88777d7ff15a8ee43c2873d06490ea19ff24b51d89c7452a8e9a21eefc",
+    "cast-values.bin": "2a634599f88b5675b068e4f532d17ee22e6904762684351086fb0676c43bfaae",
+    "script-status.bin": "df4b2522b835d2f8d4403be53da8e34dce929c12f7d320dc8afaf5ea7a7107a0"
+  },
+  "scope": "Every code -1..4207 plus int32 extremes and u32 increment/wrap. All92 explicit codes checked with multiple counters. Old shared text/owned storage replacement is native-only; MQL5 returns a string. Cast type verified by known-source int32/uint32/int64 wrappers; text measured in MT5. No allocation failures or full EA claim."
+}

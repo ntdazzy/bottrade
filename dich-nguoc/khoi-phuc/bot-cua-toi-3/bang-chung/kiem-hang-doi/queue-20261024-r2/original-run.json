@@ -1,0 +1,8 @@
+{
+  "cases": 236,
+  "seconds": 3.8,
+  "result_sha256": "789e3e2afb8fb35e889e5db1dac37c07dd455f4ac23c415af1091241d0899ce4",
+  "tool_sha256": "b5b962f89944897252c279443f3518681dce497f77de6862a8a5bde861cd4760",
+  "cast_source_comparison_sha256": "2b0c92031b8be03581aff78823c5bac6608040ab1fb991484836a3107ac0f9eb",
+  "scope": "Compare the complete100-row queue with supplied pending-builder outcomes.\n\nUsage: kiem-hang-doi-bot-1-3.py prepare|mql5|original|compare BOT RUN [--build BUILD]\nMQL5 first. No trading or actual sleep. Native queue/error/string helpers execute.\nPending-builder, Print and Sleep boundaries are recorded with exact typed arguments;\ncontrolled input changes test re-reads. This is not the full queue+broker/EA proof.\nNative memset is supplied only for its verified(queue-address,0,2400) contract.\n"
+}

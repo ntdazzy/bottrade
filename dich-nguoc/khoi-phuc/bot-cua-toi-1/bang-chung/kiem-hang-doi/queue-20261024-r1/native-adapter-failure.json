@@ -1,0 +1,164 @@
+{
+  "error": "Invalid memory fetch (UC_ERR_FETCH_UNMAPPED)",
+  "registers": {
+    "RIP": "0x7ff6849ead20",
+    "RSP": "0x5001fdc8",
+    "RAX": "0x7ff6849ead20",
+    "RCX": "0x23e5aa75470",
+    "RDX": "0x0",
+    "R8": "0x960",
+    "R9": "0x23e5aa6e800"
+  },
+  "last_instructions": [
+    {
+      "address": "0x23e5aa3e7a4",
+      "rva": "0x2e7a4",
+      "bytes": "48b87054a75a3e020000",
+      "asm": "movabs rax, 0x23e5aa75470"
+    },
+    {
+      "address": "0x23e5aa3e7ae",
+      "rva": "0x2e7ae",
+      "bytes": "f2420f1004f8",
+      "asm": "movsd xmm0, qword ptr [rax + r15*8]"
+    },
+    {
+      "address": "0x23e5aa3e7b4",
+      "rva": "0x2e7b4",
+      "bytes": "66410f2ec0",
+      "asm": "ucomisd xmm0, xmm8"
+    },
+    {
+      "address": "0x23e5aa3e7b9",
+      "rva": "0x2e7b9",
+      "bytes": "0f8621080000",
+      "asm": "jbe 0x23e5aa3efe0"
+    },
+    {
+      "address": "0x23e5aa3efe0",
+      "rva": "0x2efe0",
+      "bytes": "410fb606",
+      "asm": "movzx eax, byte ptr [r14]"
+    },
+    {
+      "address": "0x23e5aa3efe4",
+      "rva": "0x2efe4",
+      "bytes": "4883ff63",
+      "asm": "cmp rdi, 0x63"
+    },
+    {
+      "address": "0x23e5aa3efe8",
+      "rva": "0x2efe8",
+      "bytes": "0f84ba040000",
+      "asm": "je 0x23e5aa3f4a8"
+    },
+    {
+      "address": "0x23e5aa3efee",
+      "rva": "0x2efee",
+      "bytes": "48ffc7",
+      "asm": "inc rdi"
+    },
+    {
+      "address": "0x23e5aa3eff1",
+      "rva": "0x2eff1",
+      "bytes": "a801",
+      "asm": "test al, 1"
+    },
+    {
+      "address": "0x23e5aa3eff3",
+      "rva": "0x2eff3",
+      "bytes": "0f85a7f7ffff",
+      "asm": "jne 0x23e5aa3e7a0"
+    },
+    {
+      "address": "0x23e5aa3e7a0",
+      "rva": "0x2e7a0",
+      "bytes": "4c8d3c7f",
+      "asm": "lea r15, [rdi + rdi*2]"
+    },
+    {
+      "address": "0x23e5aa3e7a4",
+      "rva": "0x2e7a4",
+      "bytes": "48b87054a75a3e020000",
+      "asm": "movabs rax, 0x23e5aa75470"
+    },
+    {
+      "address": "0x23e5aa3e7ae",
+      "rva": "0x2e7ae",
+      "bytes": "f2420f1004f8",
+      "asm": "movsd xmm0, qword ptr [rax + r15*8]"
+    },
+    {
+      "address": "0x23e5aa3e7b4",
+      "rva": "0x2e7b4",
+      "bytes": "66410f2ec0",
+      "asm": "ucomisd xmm0, xmm8"
+    },
+    {
+      "address": "0x23e5aa3e7b9",
+      "rva": "0x2e7b9",
+      "bytes": "0f8621080000",
+      "asm": "jbe 0x23e5aa3efe0"
+    },
+    {
+      "address": "0x23e5aa3efe0",
+      "rva": "0x2efe0",
+      "bytes": "410fb606",
+      "asm": "movzx eax, byte ptr [r14]"
+    },
+    {
+      "address": "0x23e5aa3efe4",
+      "rva": "0x2efe4",
+      "bytes": "4883ff63",
+      "asm": "cmp rdi, 0x63"
+    },
+    {
+      "address": "0x23e5aa3efe8",
+      "rva": "0x2efe8",
+      "bytes": "0f84ba040000",
+      "asm": "je 0x23e5aa3f4a8"
+    },
+    {
+      "address": "0x23e5aa3f4a8",
+      "rva": "0x2f4a8",
+      "bytes": "a801",
+      "asm": "test al, 1"
+    },
+    {
+      "address": "0x23e5aa3f4aa",
+      "rva": "0x2f4aa",
+      "bytes": "741e",
+      "asm": "je 0x23e5aa3f4ca"
+    },
+    {
+      "address": "0x23e5aa3f4ac",
+      "rva": "0x2f4ac",
+      "bytes": "48b97054a75a3e020000",
+      "asm": "movabs rcx, 0x23e5aa75470"
+    },
+    {
+      "address": "0x23e5aa3f4b6",
+      "rva": "0x2f4b6",
+      "bytes": "48b820ad9e84f67f0000",
+      "asm": "movabs rax, 0x7ff6849ead20"
+    },
+    {
+      "address": "0x23e5aa3f4c0",
+      "rva": "0x2f4c0",
+      "bytes": "41b860090000",
+      "asm": "mov r8d, 0x960"
+    },
+    {
+      "address": "0x23e5aa3f4c6",
+      "rva": "0x2f4c6",
+      "bytes": "31d2",
+      "asm": "xor edx, edx"
+    },
+    {
+      "address": "0x23e5aa3f4c8",
+      "rva": "0x2f4c8",
+      "bytes": "ffd0",
+      "asm": "call rax"
+    }
+  ]
+}

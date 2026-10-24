@@ -1,0 +1,283 @@
+{
+  "cases": [
+    {
+      "left_name": "number",
+      "right_name": "number",
+      "left": "0x4059400000000000",
+      "right": "0x4059400000000000",
+      "result_bits": {
+        "library_subtract": "0x0",
+        "library_compound": "0x0",
+        "direct": "0x0"
+      }
+    },
+    {
+      "left_name": "number",
+      "right_name": "positive_qnan",
+      "left": "0x4059400000000000",
+      "right": "0x7ff8000000000123",
+      "result_bits": {
+        "library_subtract": "0x7ff8000000000123",
+        "library_compound": "0x7ff8000000000123",
+        "direct": "0x7ff8000000000123"
+      }
+    },
+    {
+      "left_name": "number",
+      "right_name": "negative_qnan",
+      "left": "0x4059400000000000",
+      "right": "0xfff8000000000456",
+      "result_bits": {
+        "library_subtract": "0xfff8000000000456",
+        "library_compound": "0xfff8000000000456",
+        "direct": "0xfff8000000000456"
+      }
+    },
+    {
+      "left_name": "number",
+      "right_name": "positive_snan",
+      "left": "0x4059400000000000",
+      "right": "0x7ff0000000000789",
+      "result_bits": {
+        "library_subtract": "0x7ff8000000000789",
+        "library_compound": "0x7ff8000000000789",
+        "direct": "0x7ff8000000000789"
+      }
+    },
+    {
+      "left_name": "number",
+      "right_name": "negative_snan",
+      "left": "0x4059400000000000",
+      "right": "0xfff0000000000abc",
+      "result_bits": {
+        "library_subtract": "0xfff8000000000abc",
+        "library_compound": "0xfff8000000000abc",
+        "direct": "0xfff8000000000abc"
+      }
+    },
+    {
+      "left_name": "positive_qnan",
+      "right_name": "number",
+      "left": "0x7ff8000000000123",
+      "right": "0x4059400000000000",
+      "result_bits": {
+        "library_subtract": "0x7ff8000000000123",
+        "library_compound": "0x7ff8000000000123",
+        "direct": "0x7ff8000000000123"
+      }
+    },
+    {
+      "left_name": "positive_qnan",
+      "right_name": "positive_qnan",
+      "left": "0x7ff8000000000123",
+      "right": "0x7ff8000000000123",
+      "result_bits": {
+        "library_subtract": "0x7ff8000000000123",
+        "library_compound": "0x7ff8000000000123",
+        "direct": "0x7ff8000000000123"
+      }
+    },
+    {
+      "left_name": "positive_qnan",
+      "right_name": "negative_qnan",
+      "left": "0x7ff8000000000123",
+      "right": "0xfff8000000000456",
+      "result_bits": {
+        "library_subtract": "0x7ff8000000000123",
+        "library_compound": "0x7ff8000000000123",
+        "direct": "0x7ff8000000000123"
+      }
+    },
+    {
+      "left_name": "positive_qnan",
+      "right_name": "positive_snan",
+      "left": "0x7ff8000000000123",
+      "right": "0x7ff0000000000789",
+      "result_bits": {
+        "library_subtract": "0x7ff8000000000123",
+        "library_compound": "0x7ff8000000000123",
+        "direct": "0x7ff8000000000123"
+      }
+    },
+    {
+      "left_name": "positive_qnan",
+      "right_name": "negative_snan",
+      "left": "0x7ff8000000000123",
+      "right": "0xfff0000000000abc",
+      "result_bits": {
+        "library_subtract": "0x7ff8000000000123",
+        "library_compound": "0x7ff8000000000123",
+        "direct": "0x7ff8000000000123"
+      }
+    },
+    {
+      "left_name": "negative_qnan",
+      "right_name": "number",
+      "left": "0xfff8000000000456",
+      "right": "0x4059400000000000",
+      "result_bits": {
+        "library_subtract": "0xfff8000000000456",
+        "library_compound": "0xfff8000000000456",
+        "direct": "0xfff8000000000456"
+      }
+    },
+    {
+      "left_name": "negative_qnan",
+      "right_name": "positive_qnan",
+      "left": "0xfff8000000000456",
+      "right": "0x7ff8000000000123",
+      "result_bits": {
+        "library_subtract": "0xfff8000000000456",
+        "library_compound": "0xfff8000000000456",
+        "direct": "0xfff8000000000456"
+      }
+    },
+    {
+      "left_name": "negative_qnan",
+      "right_name": "negative_qnan",
+      "left": "0xfff8000000000456",
+      "right": "0xfff8000000000456",
+      "result_bits": {
+        "library_subtract": "0xfff8000000000456",
+        "library_compound": "0xfff8000000000456",
+        "direct": "0xfff8000000000456"
+      }
+    },
+    {
+      "left_name": "negative_qnan",
+      "right_name": "positive_snan",
+      "left": "0xfff8000000000456",
+      "right": "0x7ff0000000000789",
+      "result_bits": {
+        "library_subtract": "0xfff8000000000456",
+        "library_compound": "0xfff8000000000456",
+        "direct": "0xfff8000000000456"
+      }
+    },
+    {
+      "left_name": "negative_qnan",
+      "right_name": "negative_snan",
+      "left": "0xfff8000000000456",
+      "right": "0xfff0000000000abc",
+      "result_bits": {
+        "library_subtract": "0xfff8000000000456",
+        "library_compound": "0xfff8000000000456",
+        "direct": "0xfff8000000000456"
+      }
+    },
+    {
+      "left_name": "positive_snan",
+      "right_name": "number",
+      "left": "0x7ff0000000000789",
+      "right": "0x4059400000000000",
+      "result_bits": {
+        "library_subtract": "0x7ff8000000000789",
+        "library_compound": "0x7ff8000000000789",
+        "direct": "0x7ff8000000000789"
+      }
+    },
+    {
+      "left_name": "positive_snan",
+      "right_name": "positive_qnan",
+      "left": "0x7ff0000000000789",
+      "right": "0x7ff8000000000123",
+      "result_bits": {
+        "library_subtract": "0x7ff8000000000789",
+        "library_compound": "0x7ff8000000000789",
+        "direct": "0x7ff8000000000789"
+      }
+    },
+    {
+      "left_name": "positive_snan",
+      "right_name": "negative_qnan",
+      "left": "0x7ff0000000000789",
+      "right": "0xfff8000000000456",
+      "result_bits": {
+        "library_subtract": "0x7ff8000000000789",
+        "library_compound": "0x7ff8000000000789",
+        "direct": "0x7ff8000000000789"
+      }
+    },
+    {
+      "left_name": "positive_snan",
+      "right_name": "positive_snan",
+      "left": "0x7ff0000000000789",
+      "right": "0x7ff0000000000789",
+      "result_bits": {
+        "library_subtract": "0x7ff8000000000789",
+        "library_compound": "0x7ff8000000000789",
+        "direct": "0x7ff8000000000789"
+      }
+    },
+    {
+      "left_name": "positive_snan",
+      "right_name": "negative_snan",
+      "left": "0x7ff0000000000789",
+      "right": "0xfff0000000000abc",
+      "result_bits": {
+        "library_subtract": "0x7ff8000000000789",
+        "library_compound": "0x7ff8000000000789",
+        "direct": "0x7ff8000000000789"
+      }
+    },
+    {
+      "left_name": "negative_snan",
+      "right_name": "number",
+      "left": "0xfff0000000000abc",
+      "right": "0x4059400000000000",
+      "result_bits": {
+        "library_subtract": "0xfff8000000000abc",
+        "library_compound": "0xfff8000000000abc",
+        "direct": "0xfff8000000000abc"
+      }
+    },
+    {
+      "left_name": "negative_snan",
+      "right_name": "positive_qnan",
+      "left": "0xfff0000000000abc",
+      "right": "0x7ff8000000000123",
+      "result_bits": {
+        "library_subtract": "0xfff8000000000abc",
+        "library_compound": "0xfff8000000000abc",
+        "direct": "0xfff8000000000abc"
+      }
+    },
+    {
+      "left_name": "negative_snan",
+      "right_name": "negative_qnan",
+      "left": "0xfff0000000000abc",
+      "right": "0xfff8000000000456",
+      "result_bits": {
+        "library_subtract": "0xfff8000000000abc",
+        "library_compound": "0xfff8000000000abc",
+        "direct": "0xfff8000000000abc"
+      }
+    },
+    {
+      "left_name": "negative_snan",
+      "right_name": "positive_snan",
+      "left": "0xfff0000000000abc",
+      "right": "0x7ff0000000000789",
+      "result_bits": {
+        "library_subtract": "0xfff8000000000abc",
+        "library_compound": "0xfff8000000000abc",
+        "direct": "0xfff8000000000abc"
+      }
+    },
+    {
+      "left_name": "negative_snan",
+      "right_name": "negative_snan",
+      "left": "0xfff0000000000abc",
+      "right": "0xfff0000000000abc",
+      "result_bits": {
+        "library_subtract": "0xfff8000000000abc",
+        "library_compound": "0xfff8000000000abc",
+        "direct": "0xfff8000000000abc"
+      }
+    }
+  ],
+  "results_sha256": "d10b6f1a090eaabe22126165254d94b1738bdcae2818070a75eb8bd605b2ab6b",
+  "build_sha256": "967d1b530739e69cd0cb7928d6095b57a62ce394b102f845e7d94811dec73e9f",
+  "runner_verified": true,
+  "scope": "Actual known-source SUBSD functions and direct MQL subtraction; bit-union output. Not an original EA run."
+}

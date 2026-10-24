@@ -1,5 +1,10 @@
 # bot-cua-toi-1
 
+Đã dựng hàng đợi/thử lại: 374 ca khớp trong script và máy đo quá khứ;
+nội dung mã lỗi: 5.826 ca khớp. Biên dịch 0 lỗi/cảnh báo.
+[Phạm vi](../PHAN-TICH-HANG-DOI-BOT-1-3.md). Chưa so chung hàng đợi
+với tạo/gửi lệnh và chưa có EA đầy đủ.
+
 Đã dựng hàm gửi/thông báo: 1.201 ca khớp; ghép với tạo yêu cầu:
 1.687 ca khớp. Biên dịch 0 lỗi/cảnh báo. Kết quả gửi được cấp trong
 bộ kiểm; chưa kiểm nơi giao dịch thật, hàng đợi/thử lại hoặc toàn EA.
