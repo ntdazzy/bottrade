@@ -1,0 +1,7 @@
+{
+  "status": "not-run",
+  "reason": "The first wrapper attempt reused the queue-only input filename, which already existed. The tool stopped before compilation or execution.",
+  "fix": "Use a pipeline-specific input filename and a new output run.",
+  "passing_run": "../engine-b1-r4",
+  "whole_bot_complete": false
+}

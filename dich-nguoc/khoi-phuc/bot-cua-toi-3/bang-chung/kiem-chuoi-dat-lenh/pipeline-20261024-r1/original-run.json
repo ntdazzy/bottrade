@@ -1,0 +1,9 @@
+{
+  "cases": 818,
+  "seconds": 25.5,
+  "result_sha256": "4ed7498583ae62dce3fe76fcb04572e9463442b50fc5ee8b3ab7d4002b43cac7",
+  "fixtures_sha256": "90762e71fce26732ade8e53336db4a099994ca9581299d8180bc31c77187bed5",
+  "tool_sha256": "814a49314502c3286affb49d330b93ee4f7ce68f5f21319fcaffd0b832684c0f",
+  "cpu_nan_reference_sha256": "25bb895e6dcf7fc28df7cf76ffe3ff1086de17ec26f341753881ce59407fdc74",
+  "scope": "Compare queue -> original pending builder -> filling -> send -> messages.\n\nUsage: kiem-chuoi-dat-lenh-bot-1-3.py prepare|mql5|original|compare BOT RUN [--build BUILD]\nRun MQL5 first. The builder's bool/state are never supplied. Only terminal services\nare supplied; number/string formatting is measured in MT5. No orders are sent.\n"
+}

@@ -1,0 +1,89 @@
+{
+  "session_id": "43de9f8b-1e57-4a98-b537-fbbe3ea87616",
+  "completed": false,
+  "actual_request_effort_verified": true,
+  "observed_requests": [
+    {
+      "timestamp": "2026-10-24T12:07:33.230Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-24T12:07:40.189Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-24T12:07:46.597Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-24T12:07:55.565Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-24T12:10:53.438Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-24T12:11:01.615Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-24T12:11:08.100Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-24T12:11:14.702Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-24T12:18:13.023Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-24T12:18:22.987Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-24T12:18:25.599Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-24T12:18:31.889Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-24T12:19:46.429Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-24T12:20:07.793Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-24T12:22:47.138Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    }
+  ],
+  "observed_settings": {
+    "ultracode": true
+  },
+  "ultracode_child_execution_verified": false,
+  "prompt_sha256": "99df35a6caf0395fa2c12409ea789dcf095bb9c5e2aad0e1763630c03e2ec49a",
+  "transcript_sha256_at_observation": "1e905f957ee86967b5f66be09f58e00c2ae1e46af901544a92c726b8cb20cbc9",
+  "limit": "Run still active; settings verified, no final review yet. Ultracode configured, child execution not established."
+}

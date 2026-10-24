@@ -1,0 +1,501 @@
+{
+  "bot": 3,
+  "original_ex5_sha256": "ee063d3d87490afe24e2f4ce85f6b05659320e297b102efd70207f71ca2feb83",
+  "metadata_sha256": "2b0f2cf309fb5055a53acb134f61d4e35d33db55454cf85f79e2081ef586bc88",
+  "source": "bot-cua-toi-3/phan-tich/luot-20261023-data/ma-trung-gian-day-du.c",
+  "source_sha256": "ef8e07ac21522a8a2ab7165db6e77f40885acfc5a044c502ba81e331b826f620",
+  "engine_sha256": "5033d9d45d669cebd735e8a6be20b54d74b75274f885c9a0e48e52d872104efb",
+  "capture_code_sha256": "7464a1dcb3a66d1438d510f365a08fbcdfa4aaa00f03afb49259225bc7d5cfbb",
+  "functions": [
+    {
+      "rva": "0x3e490",
+      "end_rva": "0x3e57b",
+      "native_bytes_sha256": "79c321969fc20d68ea05cee40661d1c62dc14d1c9946043606fdf38149e99c28",
+      "instructions": [
+        {
+          "rva": "0x3e490",
+          "bytes": "4157",
+          "instruction": "push r15"
+        },
+        {
+          "rva": "0x3e492",
+          "bytes": "4156",
+          "instruction": "push r14"
+        },
+        {
+          "rva": "0x3e494",
+          "bytes": "4155",
+          "instruction": "push r13"
+        },
+        {
+          "rva": "0x3e496",
+          "bytes": "4154",
+          "instruction": "push r12"
+        },
+        {
+          "rva": "0x3e498",
+          "bytes": "56",
+          "instruction": "push rsi"
+        },
+        {
+          "rva": "0x3e499",
+          "bytes": "57",
+          "instruction": "push rdi"
+        },
+        {
+          "rva": "0x3e49a",
+          "bytes": "55",
+          "instruction": "push rbp"
+        },
+        {
+          "rva": "0x3e49b",
+          "bytes": "53",
+          "instruction": "push rbx"
+        },
+        {
+          "rva": "0x3e49c",
+          "bytes": "4883ec28",
+          "instruction": "sub rsp, 0x28"
+        },
+        {
+          "rva": "0x3e4a0",
+          "bytes": "31db",
+          "instruction": "xor ebx, ebx"
+        },
+        {
+          "rva": "0x3e4a2",
+          "bytes": "49be102e2c5671010000",
+          "instruction": "movabs r14, 0x171562c2e10"
+        },
+        {
+          "rva": "0x3e4ac",
+          "bytes": "48be38a54c5171010000",
+          "instruction": "movabs rsi, 0x171514ca538"
+        },
+        {
+          "rva": "0x3e4b6",
+          "bytes": "49bcf07d6f84f67f0000",
+          "instruction": "movabs r12, 0x7ff6846f7df0"
+        },
+        {
+          "rva": "0x3e4c0",
+          "bytes": "49bd38482c5671010000",
+          "instruction": "movabs r13, 0x171562c4838"
+        },
+        {
+          "rva": "0x3e4ca",
+          "bytes": "bd01000000",
+          "instruction": "mov ebp, 1"
+        },
+        {
+          "rva": "0x3e4cf",
+          "bytes": "eb37",
+          "instruction": "jmp 0x1715628e508"
+        },
+        {
+          "rva": "0x3e4d1",
+          "bytes": "662e0f1f840000000000",
+          "instruction": "nop word ptr cs:[rax + rax]"
+        },
+        {
+          "rva": "0x3e4db",
+          "bytes": "0f1f440000",
+          "instruction": "nop dword ptr [rax + rax]"
+        },
+        {
+          "rva": "0x3e4e0",
+          "bytes": "488d041b",
+          "instruction": "lea rax, [rbx + rbx]"
+        },
+        {
+          "rva": "0x3e4e4",
+          "bytes": "48b9182e2c5671010000",
+          "instruction": "movabs rcx, 0x171562c2e18"
+        },
+        {
+          "rva": "0x3e4ee",
+          "bytes": "49c704c600000000",
+          "instruction": "mov qword ptr [r14 + rax*8], 0"
+        },
+        {
+          "rva": "0x3e4f6",
+          "bytes": "48c704c100000000",
+          "instruction": "mov qword ptr [rcx + rax*8], 0"
+        },
+        {
+          "rva": "0x3e4fe",
+          "bytes": "4883fb63",
+          "instruction": "cmp rbx, 0x63"
+        },
+        {
+          "rva": "0x3e502",
+          "bytes": "488d5b01",
+          "instruction": "lea rbx, [rbx + 1]"
+        },
+        {
+          "rva": "0x3e506",
+          "bytes": "7462",
+          "instruction": "je 0x1715628e56a"
+        },
+        {
+          "rva": "0x3e508",
+          "bytes": "4889d8",
+          "instruction": "mov rax, rbx"
+        },
+        {
+          "rva": "0x3e50b",
+          "bytes": "4889f1",
+          "instruction": "mov rcx, rsi"
+        },
+        {
+          "rva": "0x3e50e",
+          "bytes": "48c1e004",
+          "instruction": "shl rax, 4"
+        },
+        {
+          "rva": "0x3e512",
+          "bytes": "f24e0f2c3c30",
+          "instruction": "cvttsd2si r15, qword ptr [rax + r14]"
+        },
+        {
+          "rva": "0x3e518",
+          "bytes": "48b8a0816f84f67f0000",
+          "instruction": "movabs rax, 0x7ff6846f81a0"
+        },
+        {
+          "rva": "0x3e522",
+          "bytes": "ffd0",
+          "instruction": "call rax"
+        },
+        {
+          "rva": "0x3e524",
+          "bytes": "85c0",
+          "instruction": "test eax, eax"
+        },
+        {
+          "rva": "0x3e526",
+          "bytes": "78b8",
+          "instruction": "js 0x1715628e4e0"
+        },
+        {
+          "rva": "0x3e528",
+          "bytes": "89c7",
+          "instruction": "mov edi, eax"
+        },
+        {
+          "rva": "0x3e52a",
+          "bytes": "4531f6",
+          "instruction": "xor r14d, r14d"
+        },
+        {
+          "rva": "0x3e52d",
+          "bytes": "0f1f00",
+          "instruction": "nop dword ptr [rax]"
+        },
+        {
+          "rva": "0x3e530",
+          "bytes": "4889f1",
+          "instruction": "mov rcx, rsi"
+        },
+        {
+          "rva": "0x3e533",
+          "bytes": "89fa",
+          "instruction": "mov edx, edi"
+        },
+        {
+          "rva": "0x3e535",
+          "bytes": "41ffd4",
+          "instruction": "call r12"
+        },
+        {
+          "rva": "0x3e538",
+          "bytes": "410fb6ce",
+          "instruction": "movzx ecx, r14b"
+        },
+        {
+          "rva": "0x3e53c",
+          "bytes": "4c39f8",
+          "instruction": "cmp rax, r15"
+        },
+        {
+          "rva": "0x3e53f",
+          "bytes": "49894500",
+          "instruction": "mov qword ptr [r13], rax"
+        },
+        {
+          "rva": "0x3e543",
+          "bytes": "4189ce",
+          "instruction": "mov r14d, ecx"
+        },
+        {
+          "rva": "0x3e546",
+          "bytes": "440f44f5",
+          "instruction": "cmove r14d, ebp"
+        },
+        {
+          "rva": "0x3e54a",
+          "bytes": "4885c0",
+          "instruction": "test rax, rax"
+        },
+        {
+          "rva": "0x3e54d",
+          "bytes": "440f44f1",
+          "instruction": "cmove r14d, ecx"
+        },
+        {
+          "rva": "0x3e551",
+          "bytes": "83c7ff",
+          "instruction": "add edi, -1"
+        },
+        {
+          "rva": "0x3e554",
+          "bytes": "72da",
+          "instruction": "jb 0x1715628e530"
+        },
+        {
+          "rva": "0x3e556",
+          "bytes": "4584f6",
+          "instruction": "test r14b, r14b"
+        },
+        {
+          "rva": "0x3e559",
+          "bytes": "49be102e2c5671010000",
+          "instruction": "movabs r14, 0x171562c2e10"
+        },
+        {
+          "rva": "0x3e563",
+          "bytes": "7599",
+          "instruction": "jne 0x1715628e4fe"
+        },
+        {
+          "rva": "0x3e565",
+          "bytes": "e976ffffff",
+          "instruction": "jmp 0x1715628e4e0"
+        },
+        {
+          "rva": "0x3e56a",
+          "bytes": "4883c428",
+          "instruction": "add rsp, 0x28"
+        },
+        {
+          "rva": "0x3e56e",
+          "bytes": "5b",
+          "instruction": "pop rbx"
+        },
+        {
+          "rva": "0x3e56f",
+          "bytes": "5d",
+          "instruction": "pop rbp"
+        },
+        {
+          "rva": "0x3e570",
+          "bytes": "5f",
+          "instruction": "pop rdi"
+        },
+        {
+          "rva": "0x3e571",
+          "bytes": "5e",
+          "instruction": "pop rsi"
+        },
+        {
+          "rva": "0x3e572",
+          "bytes": "415c",
+          "instruction": "pop r12"
+        },
+        {
+          "rva": "0x3e574",
+          "bytes": "415d",
+          "instruction": "pop r13"
+        },
+        {
+          "rva": "0x3e576",
+          "bytes": "415e",
+          "instruction": "pop r14"
+        },
+        {
+          "rva": "0x3e578",
+          "bytes": "415f",
+          "instruction": "pop r15"
+        },
+        {
+          "rva": "0x3e57a",
+          "bytes": "c3",
+          "instruction": "ret "
+        }
+      ]
+    },
+    {
+      "rva": "0x47330",
+      "end_rva": "0x47380",
+      "native_bytes_sha256": "5b375c24a7e8788c225aca8a2d33965b0369742c4dcdc46315d4b50bcf1f67b7",
+      "instructions": [
+        {
+          "rva": "0x47330",
+          "bytes": "56",
+          "instruction": "push rsi"
+        },
+        {
+          "rva": "0x47331",
+          "bytes": "4883ec20",
+          "instruction": "sub rsp, 0x20"
+        },
+        {
+          "rva": "0x47335",
+          "bytes": "48b938a54c5171010000",
+          "instruction": "movabs rcx, 0x171514ca538"
+        },
+        {
+          "rva": "0x4733f",
+          "bytes": "48b8c0736b84f67f0000",
+          "instruction": "movabs rax, 0x7ff6846b73c0"
+        },
+        {
+          "rva": "0x47349",
+          "bytes": "ba2f000000",
+          "instruction": "mov edx, 0x2f"
+        },
+        {
+          "rva": "0x4734e",
+          "bytes": "ffd0",
+          "instruction": "call rax"
+        },
+        {
+          "rva": "0x47350",
+          "bytes": "4889c6",
+          "instruction": "mov rsi, rax"
+        },
+        {
+          "rva": "0x47353",
+          "bytes": "85f6",
+          "instruction": "test esi, esi"
+        },
+        {
+          "rva": "0x47355",
+          "bytes": "7421",
+          "instruction": "je 0x17156297378"
+        },
+        {
+          "rva": "0x47357",
+          "bytes": "48b938a54c5171010000",
+          "instruction": "movabs rcx, 0x171514ca538"
+        },
+        {
+          "rva": "0x47361",
+          "bytes": "48b8a0816f84f67f0000",
+          "instruction": "movabs rax, 0x7ff6846f81a0"
+        },
+        {
+          "rva": "0x4736b",
+          "bytes": "ffd0",
+          "instruction": "call rax"
+        },
+        {
+          "rva": "0x4736d",
+          "bytes": "39f0",
+          "instruction": "cmp eax, esi"
+        },
+        {
+          "rva": "0x4736f",
+          "bytes": "0f9cc0",
+          "instruction": "setl al"
+        },
+        {
+          "rva": "0x47372",
+          "bytes": "4883c420",
+          "instruction": "add rsp, 0x20"
+        },
+        {
+          "rva": "0x47376",
+          "bytes": "5e",
+          "instruction": "pop rsi"
+        },
+        {
+          "rva": "0x47377",
+          "bytes": "c3",
+          "instruction": "ret "
+        },
+        {
+          "rva": "0x47378",
+          "bytes": "b001",
+          "instruction": "mov al, 1"
+        },
+        {
+          "rva": "0x4737a",
+          "bytes": "4883c420",
+          "instruction": "add rsp, 0x20"
+        },
+        {
+          "rva": "0x4737e",
+          "bytes": "5e",
+          "instruction": "pop rsi"
+        },
+        {
+          "rva": "0x4737f",
+          "bytes": "c3",
+          "instruction": "ret "
+        }
+      ]
+    }
+  ],
+  "observed_api_labels": {
+    "path": "bot-cua-toi-13/phan-tich/ky-hieu-v4/native-labels.json",
+    "sha256": "4183bcbc3998bec15268737b25653fe97b137c628c77ab02cadea994c4b88fba",
+    "matches": [
+      {
+        "rva": "0x7973c0",
+        "address": "0x7ff6537773c0",
+        "label": "MT5_AccountInfoInteger",
+        "probe_sources": [
+          "AccountInfoInteger"
+        ],
+        "kind": "observed_native_call_label"
+      },
+      {
+        "rva": "0x7d7df0",
+        "address": "0x7ff6537b7df0",
+        "label": "MT5_PositionGetTicket",
+        "probe_sources": [
+          "PositionGetTicket"
+        ],
+        "kind": "observed_native_call_label"
+      },
+      {
+        "rva": "0x7d81a0",
+        "address": "0x7ff6537b81a0",
+        "label": "MT5_OrdersTotal",
+        "probe_sources": [
+          "OrdersTotal"
+        ],
+        "kind": "observed_native_call_label"
+      },
+      {
+        "rva": "0x7d81f0",
+        "address": "0x7ff6537b81f0",
+        "label": "MT5_OrderGetTicket",
+        "probe_sources": [
+          "OrderGetTicket"
+        ],
+        "kind": "observed_native_call_label"
+      },
+      {
+        "rva": "0x7d8310",
+        "address": "0x7ff6537b8310",
+        "label": "MT5_OrderGetInteger",
+        "probe_sources": [
+          "OrderGetInteger"
+        ],
+        "kind": "observed_native_call_label"
+      },
+      {
+        "rva": "0x7d83a0",
+        "address": "0x7ff6537b83a0",
+        "label": "MT5_OrderGetString",
+        "probe_sources": [
+          "OrderGetString"
+        ],
+        "kind": "observed_native_call_label"
+      }
+    ]
+  },
+  "scope": "Static analysis of the five scoped P17 functions only. No execution or MQL reconstruction claim; terminal implicit selection and floating-point conversion failures still require runtime checks."
+}

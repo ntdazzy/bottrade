@@ -360,6 +360,31 @@ Lượt trong lớp: `doi-chung-mt5/thu-tu-truong-lenh-class-20261024/layout-cla
 Các biến đứng riêng có khoảng đệm khác, không được dùng nhầm khoảng
 cách giữa chúng cho trường trong lớp.
 
+## So chung chuỗi đặt lệnh
+
+`kiem-chuoi-dat-lenh-bot-1-3.py MODE BOT RUN [--build BUILD]` chạy
+hàng đợi cùng thân tạo yêu cầu, chọn cách khớp, gửi và thông báo gốc.
+Thứ tự: `prepare` → biên dịch `BotNPendingPipelineCheck.mq5` →
+`mql5` → `original` → `compare`. Dùng tên lượt/bản biên dịch mới;
+hai lần chạy MQL5 thực hiện lần lượt trong MT5 riêng. Đầu ra ở
+`bot-cua-toi-N/bang-chung/kiem-chuoi-dat-lenh/RUN/`.
+
+`kiem-hang-doi-trong-may-thu.py BOT NEW_RUN --component-run RUN
+--build BUILD --pipeline` chạy lại đúng thân kiểm trong máy đo quá
+khứ. Bản thử chỉ đổi sự kiện, đường đầu vào và đường nạp tệp hỗ trợ.
+Không gửi lệnh thật. Đầu ra ở
+`doi-chung-mt5/chuoi-dat-lenh-20261024/NEW_RUN/`. Bỏ `--pipeline`
+thì giữ cách kiểm hàng đợi riêng trước đây với `--queue-run`.
+
+Lượt đạt `pipeline-20261024-r2`, bản biên dịch
+`b1-pending-pipeline-02`/`b3-pending-pipeline-02`, máy đo quá khứ
+`engine-b1-r4`/`engine-b3-r4`: 818 ca mỗi bot khớp từng byte.
+`kiem-chung-chuoi-dat-lenh-bot-1-3.py NEW_JSON` kiểm lại bằng chứng,
+nguồn hiện hành và sáu kiểu dữ liệu cấp sai phải bị từ chối; không
+chạy MT5. `NEW_JSON` phải mới và ở trong `khoi-phuc`.
+[Phạm vi](../PHAN-TICH-CHUOI-DAT-LENH-BOT-1-3.md): dữ liệu dịch vụ
+MT5 được cấp, chưa phải phép so nơi giao dịch hoặc toàn EA.
+
 ## Giao một phần phân tích cho Claude
 
 `chay-claude-phan-tich.ps1 -Prompt <tệp trong dự án> -Run <tên mới>`

@@ -1,0 +1,16 @@
+{
+  "cases": 818,
+  "matched": 818,
+  "failed": 0,
+  "fixture_input_contract_checked_cases": 818,
+  "first_failures": [],
+  "hashes": {
+    "cases.bin": "b6bd533411e42f6fe749321db921973eebf2fbbf82b26395e74672ead35050a0",
+    "original-results.bin": "4ed7498583ae62dce3fe76fcb04572e9463442b50fc5ee8b3ab7d4002b43cac7",
+    "mql5-results.bin": "4ed7498583ae62dce3fe76fcb04572e9463442b50fc5ee8b3ab7d4002b43cac7",
+    "api-fixtures.bin": "90762e71fce26732ade8e53336db4a099994ca9581299d8180bc31c77187bed5",
+    "script-status.bin": "6688a16d4e43f4676efcf06aed961283064abf098958ce3aa5568586f25689c1"
+  },
+  "whole_bot_complete": false,
+  "scope": "Original queue runs the actual pending builder, filling, send wrapper and message/error functions. Real builder bool and35-field+four-full-string state checked before/after every call; all500 table doubles and terminal call order/arguments compared. Terminal properties/send outcomes/errors are supplied, formatting measured. No actual broker/full EA or allocation/CPU-fault claim."
+}

@@ -1,0 +1,7 @@
+{
+  "status": "compile-failed",
+  "reason": "The copied API facade retained its Scripts-relative include path. From Experts it pointed at the nonexistent Experts/Include tree; MetaEditor reported one error and one warning.",
+  "fix": "Adapt only the facade include to the canonical Include path. Preserve all test macros and production source; compile and run in a new output run.",
+  "passing_run": "../engine-b1-r4",
+  "whole_bot_complete": false
+}

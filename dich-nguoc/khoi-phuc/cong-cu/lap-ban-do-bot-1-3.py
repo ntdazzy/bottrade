@@ -247,6 +247,17 @@ def main():
                     proof={'path':p.relative_to(ROOT).as_posix(),'sha256':sha(p),'comparison':comparison,'partial_only':limit}
                     p=ROOT/f'bot-cua-toi-{bot}/source/MQL5/Include/bot-cua-toi-{bot}/Bot{bot}{name}.mqh'
                     reconstructed={'path':p.relative_to(ROOT).as_posix(),'sha256':sha(p),'partial_only':True}
+            pipeline_rvas={1:{0x950,0x231c0,0x235c0,0x23fa0,0x26060,0x26360,0x2e6d0,0x32dd0,0x336d0},
+                           3:{0x950,0x2e8f0,0x2ecf0,0x2f6d0,0x31790,0x31a90,0x3bb10,0x3e580,0x3ee80}}
+            if proof and rva in pipeline_rvas[bot]:
+                p=ROOT/f'bot-cua-toi-{bot}/bang-chung/kiem-chuoi-dat-lenh/pipeline-20261024-r2/comparison.json'
+                if p.exists():
+                    comparison=json.loads(p.read_text());assert comparison['cases']==comparison['matched']==818 and comparison['failed']==0
+                    engine=ROOT/f'doi-chung-mt5/chuoi-dat-lenh-20261024/engine-b{bot}-r4/comparison.json'
+                    tested=json.loads(engine.read_text());assert tested['cases']==tested['matched']==818 and tested['failed']==0
+                    proof['combined_pipeline']={'path':p.relative_to(ROOT).as_posix(),'sha256':sha(p),'comparison':comparison,
+                        'tester_comparison':engine.relative_to(ROOT).as_posix(),'tester_comparison_sha256':sha(engine),
+                        'remaining':'Thuộc tính/kết quả gửi/lỗi được cấp; chưa nơi giao dịch, toàn EA, mọi cài đặt, hiển thị và khởi động lại.'}
             functions.append({'rva':hex(rva),'end_rva_exclusive':runtime[rva]['end_rva'],'role':role,'category':category,
                 'source':source.relative_to(ROOT).as_posix(),'line':line,'last_line':last,'c_sha256':hashlib.sha256(body.encode()).hexdigest(),
                 'native_apis':apis,'native_address_calls':[{'address':hex(a),'label':labels.get(a)} for a in raw_native],

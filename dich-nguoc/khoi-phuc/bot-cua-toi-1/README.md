@@ -1,13 +1,19 @@
 # bot-cua-toi-1
 
+Đã so chung hàng đợi → tạo yêu cầu → kiểm cách khớp → gửi → thông báo:
+818/818 ca khớp trong chương trình MQL5 và máy đo quá khứ. Biên dịch
+0 lỗi/cảnh báo. Thuộc tính/kết quả gửi/lỗi được cấp trong bộ kiểm;
+chưa có EA đầy đủ. [Bằng chứng](../PHAN-TICH-CHUOI-DAT-LENH-BOT-1-3.md).
+
 Đã dựng hàng đợi/thử lại: 374 ca khớp trong script và máy đo quá khứ;
 nội dung mã lỗi: 5.826 ca khớp. Biên dịch 0 lỗi/cảnh báo.
-[Phạm vi](../PHAN-TICH-HANG-DOI-BOT-1-3.md). Chưa so chung hàng đợi
-với tạo/gửi lệnh và chưa có EA đầy đủ.
+[Phạm vi](../PHAN-TICH-HANG-DOI-BOT-1-3.md). Phép so chung mới được
+nêu phía trên; chưa có EA đầy đủ.
 
 Đã dựng hàm gửi/thông báo: 1.201 ca khớp; ghép với tạo yêu cầu:
 1.687 ca khớp. Biên dịch 0 lỗi/cảnh báo. Kết quả gửi được cấp trong
-bộ kiểm; chưa kiểm nơi giao dịch thật, hàng đợi/thử lại hoặc toàn EA.
+bộ kiểm; phép so riêng này chưa ghép hàng đợi. Phép ghép mới đã nêu
+phía trên; nơi giao dịch thật và toàn EA vẫn chưa kiểm.
 [Bằng chứng](../PHAN-TICH-GUI-LENH-BOT-1-3.md).
 
 Đã dựng chọn cách khớp lệnh: 3.096 ca khớp; chuẩn bị yêu cầu lệnh chờ:

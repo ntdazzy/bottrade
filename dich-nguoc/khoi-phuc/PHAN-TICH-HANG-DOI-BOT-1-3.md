@@ -88,7 +88,9 @@ Dịch vụ xóa vùng nhớ gốc được cấp riêng sau khi kiểm đủ đ
 đợi, giá trị 0 và độ dài 2400; đã đối chứng `ZeroMemory` có nguồn tới
 đúng địa chỉ MT5 `0xacad20`. Chưa mô phỏng mọi lỗi của bộ nhớ/CPU.
 
-**Chưa ghép hàng đợi với hàm tạo/gửi gốc trong cùng một phép so**;
-kết quả tạo lệnh vẫn được cấp sẵn. Nguồn chính gọi các hàm MQL5 thật,
-nhưng chưa có EA đầy đủ, kết quả nơi giao dịch, toàn bộ cài đặt, hiển
-thị hoặc kiểm khởi động lại. Không đánh dấu toàn bộ P16/P31 hoàn tất.
+Phép kiểm riêng trên vẫn cấp kết quả tạo lệnh. Lượt mới đã
+[so chung hàng đợi → tạo yêu cầu → gửi → thông báo](PHAN-TICH-CHUOI-DAT-LENH-BOT-1-3.md),
+khớp 818 ca mỗi bot, cả chương trình MQL5 và máy đo quá khứ. Thân
+hàm tạo lệnh gốc chạy thật; kết quả ở ranh giới gửi/thuộc tính vẫn
+được cấp. Chưa có EA đầy đủ, kết quả nơi giao dịch, toàn bộ cài đặt,
+hiển thị hoặc kiểm khởi động lại. Không đánh dấu toàn bộ P16/P31 hoàn tất.

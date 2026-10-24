@@ -1,0 +1,112 @@
+{
+  "status": "pipeline-verified-with-stated-limits",
+  "checks": [
+    {
+      "bot": 1,
+      "cases": 818,
+      "comparison_sha256": "b10a26abf24660fc38041c9d8281551a9d20401e3385fde77ca4c24f271acc41",
+      "tester_comparison_sha256": "28f87b788087a03b272c2f238fa54360fe60cb729079cca103618d67b4155c81",
+      "sources_sha256": {
+        "Scripts/bot-cua-toi-1/Bot1PendingPipelineCheck.mq5": "c01912c9d8bbb9b76fdf42dbab85d179087d3a320872220f86eaa6b3e4a38db1",
+        "Scripts/bot-cua-toi-1/Bot1PipelineApi.mqh": "cc7c0e9d1199205e1f2b6ab178a55cb6e9fc838e991d3b40a176f90f4d110cee",
+        "Include/bot-cua-toi-1/Bot1PendingQueue.mqh": "80cc8d64096392a4e30924c6b41727dc40c69058c7523f814638b7391b8dd962",
+        "Include/bot-cua-toi-1/Bot1TradeErrors.mqh": "e82f3b2f47ce8bd998f775b2e87e5e94ebc66a93ffec6adc48d5c7b896366883",
+        "Include/bot-cua-toi-1/Bot1TradeSend.mqh": "dddd20fb58daa7cd60ce87f08c89be3a204ce170e89418c801b24175d4d12e8c",
+        "Include/bot-cua-toi-1/Bot1TradeMessages.mqh": "af36245e2dd03ec12d5808457530c4937bc354a9a68b5a1f70f8bc394f5ab5a3",
+        "Include/bot-cua-toi-1/Bot1PendingRequest.mqh": "46ffbb7da4d469533e1a665b5b666ccbfc755ff973ae5e5ebabf5cdd9051700d",
+        "Include/bot-cua-toi-1/Bot1Filling.mqh": "d01485811439d971833de028c791c5abb6cb64ba5b9c20228ca8785453a6615d"
+      },
+      "original_dependencies_sha256": {
+        "cong-cu/kiem-chuoi-dat-lenh-bot-1-3.py": "3aef5a46919832893318421ccd1d7145ee3717cf2d7ce3ee813bb5bdc903159a",
+        "cong-cu/kiem-hang-doi-bot-1-3.py": "a69a496527b18274b54ef341592d4be18a6a8bc04db06e9827a2f0aea9856bcc",
+        "cong-cu/kiem-chuoi-loi-bot-1-3.py": "1b5541b4d82f6fb9efa0d3121e473ab69d7f50f06feb95fb6919633348c3050c",
+        "cong-cu/kiem-gui-lenh-bot-1-3.py": "a110aafe8287b4907d73af26dcd59a5675a1c61adb307530f00d8b69574be763",
+        "cong-cu/kiem-tao-yeu-cau-cho-bot-1-3.py": "35b9b0f611a01e12d94b1015570511e0fd95fd617fcbd567a71a727ad6b04600",
+        "cong-cu/kiem-kieu-khop-lenh-bot-1-3.py": "7bc0022adbb2e5f3ffaf1bf2a5fd356258d1de0918137be33a0693bb5d579512",
+        "cong-cu/kiem-khoi-luong-hop-le-bot-1-3.py": "8251fb4423d6f5f2e1b79a1c53dbb25fb5a6c568bb61cddef23396dc982243f0",
+        "cong-cu/kiem-gia-vao-bot-1-3.py": "22394e48932feb7242b967aa58e327d2990402f12bfe52621916f64914c9dac2",
+        "cong-cu/kiem-muc-gia-bot-1-3.py": "a6c447ca80029fb63ced0c9d1673bb14222a7736b04df5c410f280f8471d6a35",
+        "doi-chung-mt5/thu-tu-truong-lenh-class-20261024/layout-class-r1/trade-layout.json": "01e11f8b969576faa9647a53efeaf6a2f7748baa7711a5bc2730981c8883def1",
+        "doi-chung-mt5/thu-tu-truong-lenh-class-20261024/layout-class-r1/RecoveryApiDriver.mq5": "87628bda5729a784a93b26e573da62b029c9218e0c7992550ba7fefe73947dce",
+        "doi-chung-mt5/thu-tu-truong-lenh-class-20261024/layout-class-r1/RecoveryApiLibrary.mq5": "c21c5ff475aaa2a5c0c07466140abe40bc8e583d924457cb3f881cc2f5d55cf8",
+        "doi-chung-mt5/thu-tu-truong-lenh-class-20261024/layout-class-r1/TradeLayoutSeed.mqh": "2a7f02aaae78f991d50aa07c19d4566fdad47cf6a52da4f3db0dbc656e076637",
+        "bot-cua-toi-1/phan-tich/luot-20261023-data-v2/metadata/import.json": "732905b62143980f94c360226bfb75120d52bfccb7e646a3a0cc9be9d3e21adb",
+        "bot-cua-toi-1/bang-chung/captures/luot-20261023-r1/capture.json": "81a7c83f595c9869d6ea278f155f10a17b97f5178d9c9c541a2ed41bcdcb956d",
+        "bot-cua-toi-1/bang-chung/luot-20261023-r1/engine-observed.json": "219c2a51597356c03c9470979a1f6e2058c8243e75669b4c9d36916856a62696",
+        "bot-cua-toi-1/bang-chung/captures/luot-20261023-r1/0000023e5aa10000.bin": "e099f124084093c3fdc8651d5f5326709b165248982e5d4eb7394afcbb8177a4",
+        "bot-cua-toi-1/bang-chung/captures/luot-20261023-r1/00007ffa1b990000.bin": "2233cd222526170e3ac45cca5e2acb4c4ad3070cd113da99f91f412f6c558438",
+        "bot-cua-toi-1/bang-chung/captures/luot-20261023-r1/00007ffa1b991000.bin": "ad7facb2586fc6e966c004d7d1d16b024f5805ff7cb47c7a85dabd8b48892ca7",
+        "bot-cua-toi-1/bang-chung/captures/luot-20261023-r1/0000023e5aa5f000-program-data.bin": "2ad9ad0ea90a8f8df88170348a71a070d475174122c9eae7df8deb1fb32c61f4",
+        "doi-chung-mt5/hang-doi-20261024/arithmetic-runtime-r2/results.json": "25bb895e6dcf7fc28df7cf76ffe3ff1086de17ec26f341753881ce59407fdc74",
+        "doi-chung-mt5/hang-doi-20261024/arithmetic-runtime-r2/results.bin": "d25c2ffeb8c451c1a0c8e15e2205eb0edcd6aee10fa2cd9f056bdbf517271b31"
+      },
+      "fixture_input_contract_checked_cases": 818,
+      "rejected_corrupt_input_types": [
+        "direct-property-value",
+        "reference-property-status",
+        "reference-property-value",
+        "send-mode",
+        "send-reply",
+        "send-result"
+      ],
+      "result_sha256": "4ed7498583ae62dce3fe76fcb04572e9463442b50fc5ee8b3ab7d4002b43cac7"
+    },
+    {
+      "bot": 3,
+      "cases": 818,
+      "comparison_sha256": "b10a26abf24660fc38041c9d8281551a9d20401e3385fde77ca4c24f271acc41",
+      "tester_comparison_sha256": "bae05a7557392bdd84dd3b5926bf93338073f8857561a2a5a13c369ad0b7b6be",
+      "sources_sha256": {
+        "Scripts/bot-cua-toi-3/Bot3PendingPipelineCheck.mq5": "d77d2c4c99d5f288be2532b0692698f5e52847196279c0ee0ba0e5cda63ef71d",
+        "Scripts/bot-cua-toi-3/Bot3PipelineApi.mqh": "c0d748484ddab7b8d6c4ecd606f12cb872c819e4a598cbe963629d2d95d291ab",
+        "Include/bot-cua-toi-3/Bot3PendingQueue.mqh": "3a938e68f8045b55c12602867c0638bc42f64da1386bf9eb2fbd9248bccd5699",
+        "Include/bot-cua-toi-3/Bot3TradeErrors.mqh": "3fb7fe70d418da44d1a77f8e65e9cf71fae00c1d4b5fe3b941ff5ae7e7982a8e",
+        "Include/bot-cua-toi-3/Bot3TradeSend.mqh": "6031d82d7db3cb5652b76c4583853e871ac1e7f1770834e8dcbd165fa3a60f1f",
+        "Include/bot-cua-toi-3/Bot3TradeMessages.mqh": "3bf211b2aa34980e0857f31e66a08e65136728fa7ef6e239d58cfc1c2bec5d16",
+        "Include/bot-cua-toi-3/Bot3PendingRequest.mqh": "54bc2c75ff9a2ee47f375f874908912da0cad56d2ecb586801d0274c2d025648",
+        "Include/bot-cua-toi-3/Bot3Filling.mqh": "c2806af2b1e00363652b7a09387065f1de289cf6e2bc644611f4d5f6d1c47599"
+      },
+      "original_dependencies_sha256": {
+        "cong-cu/kiem-chuoi-dat-lenh-bot-1-3.py": "3aef5a46919832893318421ccd1d7145ee3717cf2d7ce3ee813bb5bdc903159a",
+        "cong-cu/kiem-hang-doi-bot-1-3.py": "a69a496527b18274b54ef341592d4be18a6a8bc04db06e9827a2f0aea9856bcc",
+        "cong-cu/kiem-chuoi-loi-bot-1-3.py": "1b5541b4d82f6fb9efa0d3121e473ab69d7f50f06feb95fb6919633348c3050c",
+        "cong-cu/kiem-gui-lenh-bot-1-3.py": "a110aafe8287b4907d73af26dcd59a5675a1c61adb307530f00d8b69574be763",
+        "cong-cu/kiem-tao-yeu-cau-cho-bot-1-3.py": "35b9b0f611a01e12d94b1015570511e0fd95fd617fcbd567a71a727ad6b04600",
+        "cong-cu/kiem-kieu-khop-lenh-bot-1-3.py": "7bc0022adbb2e5f3ffaf1bf2a5fd356258d1de0918137be33a0693bb5d579512",
+        "cong-cu/kiem-khoi-luong-hop-le-bot-1-3.py": "8251fb4423d6f5f2e1b79a1c53dbb25fb5a6c568bb61cddef23396dc982243f0",
+        "cong-cu/kiem-gia-vao-bot-1-3.py": "22394e48932feb7242b967aa58e327d2990402f12bfe52621916f64914c9dac2",
+        "cong-cu/kiem-muc-gia-bot-1-3.py": "a6c447ca80029fb63ced0c9d1673bb14222a7736b04df5c410f280f8471d6a35",
+        "doi-chung-mt5/thu-tu-truong-lenh-class-20261024/layout-class-r1/trade-layout.json": "01e11f8b969576faa9647a53efeaf6a2f7748baa7711a5bc2730981c8883def1",
+        "doi-chung-mt5/thu-tu-truong-lenh-class-20261024/layout-class-r1/RecoveryApiDriver.mq5": "87628bda5729a784a93b26e573da62b029c9218e0c7992550ba7fefe73947dce",
+        "doi-chung-mt5/thu-tu-truong-lenh-class-20261024/layout-class-r1/RecoveryApiLibrary.mq5": "c21c5ff475aaa2a5c0c07466140abe40bc8e583d924457cb3f881cc2f5d55cf8",
+        "doi-chung-mt5/thu-tu-truong-lenh-class-20261024/layout-class-r1/TradeLayoutSeed.mqh": "2a7f02aaae78f991d50aa07c19d4566fdad47cf6a52da4f3db0dbc656e076637",
+        "bot-cua-toi-3/phan-tich/luot-20261023-data/metadata/import.json": "2b0f2cf309fb5055a53acb134f61d4e35d33db55454cf85f79e2081ef586bc88",
+        "bot-cua-toi-3/bang-chung/captures/luot-20261023-r1/capture.json": "c7060fa7349025372b5c0407efb760fbb9a084f0cf1c598f7c775321148443c3",
+        "bot-cua-toi-3/bang-chung/luot-20261023-r1/engine-observed.json": "dfb233134d30f0e595b0858267f987fbf345ff979d8fdef2c9f1df2457c84db6",
+        "bot-cua-toi-3/bang-chung/captures/luot-20261023-r1/0000017156250000.bin": "7464a1dcb3a66d1438d510f365a08fbcdfa4aaa00f03afb49259225bc7d5cfbb",
+        "bot-cua-toi-3/bang-chung/captures/luot-20261023-r1/00007ffa1b990000.bin": "2233cd222526170e3ac45cca5e2acb4c4ad3070cd113da99f91f412f6c558438",
+        "bot-cua-toi-3/bang-chung/captures/luot-20261023-r1/00007ffa1b991000.bin": "ad7facb2586fc6e966c004d7d1d16b024f5805ff7cb47c7a85dabd8b48892ca7",
+        "bot-cua-toi-3/bang-chung/captures/luot-20261023-r1/00000171562a7000-program-data.bin": "1d8c5ee1af972615461e71ede70b519d30bd876561cf96169606e4c9aeaab073",
+        "doi-chung-mt5/hang-doi-20261024/arithmetic-runtime-r2/results.json": "25bb895e6dcf7fc28df7cf76ffe3ff1086de17ec26f341753881ce59407fdc74",
+        "doi-chung-mt5/hang-doi-20261024/arithmetic-runtime-r2/results.bin": "d25c2ffeb8c451c1a0c8e15e2205eb0edcd6aee10fa2cd9f056bdbf517271b31"
+      },
+      "fixture_input_contract_checked_cases": 818,
+      "rejected_corrupt_input_types": [
+        "direct-property-value",
+        "reference-property-status",
+        "reference-property-value",
+        "send-mode",
+        "send-reply",
+        "send-result"
+      ],
+      "result_sha256": "4ed7498583ae62dce3fe76fcb04572e9463442b50fc5ee8b3ab7d4002b43cac7"
+    }
+  ],
+  "verification_tool_sha256": "ba5245c6ebe1808e5ca07cf6bf2f414956197fe888016f101ab18f49c0f77103",
+  "whole_bot_complete": false,
+  "limits": [
+    "Terminal properties/send outcomes/errors are supplied; formatting is measured in MT5.",
+    "No actual broker,full EA,all settings,display,restart or allocation/CPU-fault proof.",
+    "818 finite cases per bot are not a percentage of whole-bot completion."
+  ]
+}
