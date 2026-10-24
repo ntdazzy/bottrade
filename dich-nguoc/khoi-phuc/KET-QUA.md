@@ -5,8 +5,10 @@ Quy trình hiện hành: [AGENTS.md](../../AGENTS.md) và
 Đang rà phân tích toàn bộ trước khi viết thêm phần mới. Đã nối 152 dòng
 cài đặt với vị trí lưu/mặc định, khớp 648/648 và 720/720 lần so;
 [chi tiết](PHAN-TICH-CAI-DAT-BOT-1-3.md). Hai đoạn chọn chiến lược bot 3
-khớp 7.724 ca phân tích với mã gốc; [giới hạn](PHAN-TICH-CHON-CHIEN-LUOC-BOT-3.md).
-Chưa có MQL5 mới cho phần chọn và chưa có EA hoàn chỉnh.
+khớp 7.724 ca phân tích với mã gốc; nguồn MQL5 mới cũng khớp lại đủ ca;
+[giới hạn mã gốc](PHAN-TICH-CHON-CHIEN-LUOC-BOT-3.md) và
+[báo cáo nguồn mới](PHAN-TICH-CHON-CHIEN-LUOC-MQL5-BOT-1-3.md).
+Chưa có EA hoàn chỉnh.
 Bot 1 đã khớp đủ 256 tổ hợp bật/tắt, tổng cộng 2.048 lần kiểm nhánh;
 [phạm vi](PHAN-TICH-BAT-TAT-BOT-1.md).
 Lượt tiếp đã đọc trực tiếp 152 nhãn nhìn thấy, nối 28 lựa chọn/7 menu,
@@ -14,6 +16,12 @@ và dựng phần nạp vốn khớp 616 ca mỗi bot, biên dịch sạch.
 [Bằng chứng và giới hạn](PHAN-TICH-MENU-VA-KHOI-TAO-BOT-1-3.md).
 
 Trạng thái: **DONE_WITH_CONCERNS**. Không bot nào được xác nhận giống bản gốc 100%.
+
+Cập nhật 24/10/2026: đã dựng phần chọn chiến lược bằng MQL5. Bot 1 khớp
+256/256 ca bật/tắt; bot 3 khớp 7.724/7.724 ca cho hai đoạn chọn, gồm
+chế độ cố định, tự chọn và 512 tổ hợp thủ công. Phần này vẫn chưa là EA
+hoàn chỉnh và chưa chứng minh thân chiến lược, giao dịch hoặc giao diện.
+[Báo cáo](PHAN-TICH-CHON-CHIEN-LUOC-MQL5-BOT-1-3.md).
 
 Cập nhật tiếp theo: đã phân tích bot 1 và bot 3, xuất đủ các hàm trong bảng mã chụp mới, dựng mức giá, kiểm lệnh chờ gần và bảng tham số gốc. Phần mới khớp 1.096 ca mỗi bot và 102 giá trị tham số; xem [PHAN-TICH-VAO-LENH-BOT-1-3.md](PHAN-TICH-VAO-LENH-BOT-1-3.md). Chưa có EA hoàn chỉnh cho hai bot này.
 

@@ -17,7 +17,7 @@ chưa rõ vẫn đang được xử lý trước khi viết phần tương ứng
 |---|---|---|
 | Đúng bản gốc và đầu vào | 72/80 dòng đã nối, đọc nhãn trên cửa sổ và 28 lựa chọn/7 menu | Kiểu/phạm vi, ký tự nhãn ẩn, khai báo và ghép toàn bộ đầu vào của EA dựng lại |
 | Khởi tạo, các sự kiện và thoát | Mã trung gian 84/82 hàm; nạp vốn/tên lưu/mốc giờ dựng và so 616 ca mỗi bot | Ghép EA, nối đủ sự kiện, chỉ báo, xử lý thất bại và giải phóng |
-| Chọn chiến lược và tham số | Bảng 8/9 chiến lược; bot 1 đã so 256 tổ hợp bật/tắt, bot 3 đã so 7.724 ca riêng hai đoạn chọn | Ghép phần chọn, nguồn cờ/trạng thái, quản lý khi tắt, điều chỉnh thêm và ngẫu nhiên |
+| Chọn chiến lược và tham số | Bảng 8/9 chiến lược; nguồn chọn MQL5 bot 1 khớp 256 ca, bot 3 khớp 7.724 ca | Ghép vào EA, nguồn cờ/trạng thái thực tế, quản lý khi tắt, điều chỉnh thêm và ngẫu nhiên |
 | Điều kiện mua/bán | Mức giá, kiểm giá bị phá, lọc lệnh chờ gần đã so | Ghép đầy đủ các điều kiện vào lệnh |
 | Khối lượng và trạng thái vốn | Đổi tiền, tính khối lượng, rút tiền, luồng vốn/ký quỹ và nạp trạng thái đã so theo phần | Ghép EA chính, kiểm cùng tài khoản, bước/nhỏ nhất/lớn nhất khối lượng, mã lỗi/thông báo |
 | Đặt/sửa/hủy/đóng lệnh | Mã trung gian hiện có | Khôi phục cả hai chiều, lỗi, thử lại và hết hạn |

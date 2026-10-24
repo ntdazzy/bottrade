@@ -34,9 +34,10 @@ trong 18 lượt chạy riêng. Tên/thứ tự trong nhật ký, vị trí lưu
 định đã chốt. Lượt mới đã đọc trực tiếp 152 nhãn nhìn thấy và nối đủ
 28 lựa chọn của bảy menu; còn kiểu khai báo/phạm vi và tác dụng đầy đủ. Hai
 đoạn [chọn chiến lược bot 3](PHAN-TICH-CHON-CHIEN-LUOC-BOT-3.md) đã
-khớp 7.724 ca phân tích với mã gốc; chưa có MQL5 mới cho phần này.
-[Tám nhánh bật/tắt bot 1](PHAN-TICH-BAT-TAT-BOT-1.md) cũng đã khớp
-đủ 256 tổ hợp, qua 2.048 lần kiểm nhánh.
+khớp 7.724 ca phân tích với mã gốc; nguồn MQL5 mới cũng khớp đủ 7.724
+ca. [Tám nhánh bật/tắt bot 1](PHAN-TICH-BAT-TAT-BOT-1.md) đã khớp đủ
+256 tổ hợp, qua 2.048 lần kiểm nhánh; nguồn MQL5 mới khớp 256 ca.
+[Báo cáo nguồn mới](PHAN-TICH-CHON-CHIEN-LUOC-MQL5-BOT-1-3.md).
 Đã viết MQL5 nạp vốn/tên lưu/mốc thời gian, khớp 616 ca mỗi bot;
 [phạm vi menu và khởi động mới](PHAN-TICH-MENU-VA-KHOI-TAO-BOT-1-3.md).
 
@@ -51,7 +52,7 @@ phép đối chiếu trong phạm vi cụ thể; không đánh dấu hoàn tất
 | P01 | Đúng EX5, dữ liệu và cấu hình | Mã SHA-256, bản chụp, nhật ký gốc | Đã có; cần giữ đúng bản chuẩn ở mọi lượt kiểm |
 | P02 | Tất cả đầu vào và nhóm cài đặt | 72/80 dòng, 18 bản chụp và ảnh cửa sổ mới | Đã nối vị trí/mặc định, đọc nhãn nhìn thấy và 28 lựa chọn/7 menu; còn kiểu khai báo/phạm vi, ký tự nhãn ẩn và tác dụng toàn bộ |
 | P03 | Khởi tạo, sự kiện và dừng | `0xc30`, `0x20a00`, `0x1f5e0`, `0x22750` / `0xc30`, `0x2bb80`, `0x2a800`, `0x2dd30` | Đã dựng/so phần nạp vốn 616 ca mỗi bot; cần nối chắc chắn sự kiện MT5, chỉ báo, thứ tự còn lại và lỗi khởi tạo |
-| P04 | Chọn/bật/tắt chiến lược | `0x10f60` / `0xc30`, `0x17f00`; bảng 8/9 chiến lược | Đã so bảng cơ bản; bot 1 đã so tám nhánh qua đủ 256 tổ hợp, bot 3 đã so riêng hai đoạn chọn với 512 tổ hợp thủ công và các ngưỡng tự chọn. Còn ghép MQL5, nguồn trạng thái/cờ và quản lý vị thế khi chiến lược tắt |
+| P04 | Chọn/bật/tắt chiến lược | `0x10f60` / `0xc30`, `0x17f00`; bảng 8/9 chiến lược | Đã dựng nguồn chọn cờ/chế độ; bot 1 khớp 256 ca, bot 3 khớp 7.724 ca. Còn ghép vào EA, nguồn trạng thái/cờ thực tế và quản lý vị thế khi chiến lược tắt |
 | P05 | Tham số cơ bản và điều chỉnh theo giá | `0x7500` / `0xe0c0` | Đã so phần tính khoảng cách; đã nối lời tạo ATR, chưa phục hồi đủ việc đọc và xử lý lỗi chỉ báo |
 | P06 | Điều chỉnh thêm và tạo biến thiên | Các nhánh trong `0x10f60` / `0x17f00`, `Randomization`, `Adjust*` | Cần công thức, thứ tự sinh số và trạng thái qua các lần chạy |
 | P07 | Dữ liệu thị trường và nến mới | `0xc30`, `0x18aa0` / `0xc30`, `0x20ef0`; `iTime`, `Bars`, tick | Cần thiếu dữ liệu, đổi nến, đổi ngày và nhiều khung nến |

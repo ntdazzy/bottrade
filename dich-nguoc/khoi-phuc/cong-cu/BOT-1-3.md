@@ -211,6 +211,25 @@ ghi ngoài vùng trạng thái đã biết. Không phải phép so với MQL5.
 Lượt hiện hành: `select-20261023-r1`, 7.724/7.724 ca khớp; gồm đủ 512
 tổ hợp thủ công ở cả hai đoạn. [Phạm vi](../PHAN-TICH-CHON-CHIEN-LUOC-BOT-3.md).
 
+## Bộ kiểm nguồn chọn chiến lược MQL5
+
+`kiem-chon-chien-luoc-bot-1-3.py MODE BOT RUN` dùng lại đúng các ca gốc
+đã kiểm để so nguồn mới. `Bot1StrategySelection.mqh` khớp 256 ca; có thể
+chạy `Bot1StrategySelectionCheck.mq5`. `Bot3StrategySelection.mqh` khớp
+7.724 ca; có thể chạy `Bot3StrategySelectionCheck.mq5`.
+
+Ví dụ:
+
+```powershell
+python -I -B -X utf8 dich-nguoc/khoi-phuc/cong-cu/kiem-chon-chien-luoc-bot-1-3.py prepare 1 strategy-moi
+& dich-nguoc/khoi-phuc/cong-cu/bien-dich.ps1 -Bot 1 -Terminal 'dich-nguoc/.local/claude-recovery-20261023/mt5' -Run b1-strategy-moi -Source 'dich-nguoc/khoi-phuc/bot-cua-toi-1/source/MQL5/Scripts/bot-cua-toi-1/Bot1StrategySelectionCheck.mq5'
+python -I -B -X utf8 dich-nguoc/khoi-phuc/cong-cu/kiem-chon-chien-luoc-bot-1-3.py mql5 1 strategy-moi
+python -I -B -X utf8 dich-nguoc/khoi-phuc/cong-cu/kiem-chon-chien-luoc-bot-1-3.py compare 1 strategy-moi
+```
+
+Đổi `1` và tên nguồn tương ứng để kiểm bot 3. Bộ kiểm chỉ so cờ, chế độ
+và hệ số của phần chọn; không chứng minh toàn bộ EA.
+
 ## Phân tích tám nhánh bật/tắt bot 1
 
 `phan-tich-bat-tat-bot-1.py NEW_RUN` tìm các nhánh từ bảng tham số đã

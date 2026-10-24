@@ -10,8 +10,9 @@ thấy và bốn menu/17 lựa chọn. Còn kiểu/phạm vi, tác dụng đầy
 biên dịch 0 lỗi, 0 cảnh báo. [Menu và khởi động](../PHAN-TICH-MENU-VA-KHOI-TAO-BOT-1-3.md).
 
 Hai đoạn chọn chiến lược khớp 7.724 ca phân tích với mã gốc, gồm đủ 512
-tổ hợp bật/tắt thủ công; chưa viết MQL5 cho phần này.
-[Kết quả và giới hạn](../PHAN-TICH-CHON-CHIEN-LUOC-BOT-3.md).
+tổ hợp bật/tắt thủ công. Nguồn `Bot3StrategySelection.mqh` khớp lại
+7.724/7.724 ca; [báo cáo nguồn mới](../PHAN-TICH-CHON-CHIEN-LUOC-MQL5-BOT-1-3.md).
+[Kết quả mã gốc](../PHAN-TICH-CHON-CHIEN-LUOC-BOT-3.md).
 
 Phần vốn vừa ghép khớp 1.883/1.883 ca; kiểm ký quỹ khớp 1.141/1.141 ca.
 [Bằng chứng](../PHAN-TICH-LUONG-VON-VA-KY-QUY-BOT-1-3.md).

@@ -1,0 +1,34 @@
+{
+  "date": "2026-10-24",
+  "scope": "MQL5 strategy selector only; no EA, order, position or display comparison.",
+  "bots": [
+    {
+      "bot": 1,
+      "native_evidence": "bot-cua-toi-1/phan-tich/bat-tat-chien-luoc/enable-20261023-r3/results.json",
+      "source": "bot-cua-toi-1/source/MQL5/Include/bot-cua-toi-1/Bot1StrategySelection.mqh",
+      "check_script": "bot-cua-toi-1/source/MQL5/Scripts/bot-cua-toi-1/Bot1StrategySelectionCheck.mq5",
+      "run": "strategy-20261024-r1",
+      "build": "b1-strategy-selection-01",
+      "cases": 256,
+      "matched": 256,
+      "passed": true,
+      "comparison": "bot-cua-toi-1/bang-chung/kiem-chon-chien-luoc/strategy-20261024-r1/comparison.json",
+      "compile": "bot-cua-toi-1/bang-chung/bien-dich/b1-strategy-selection-01/bien-nhan.json"
+    },
+    {
+      "bot": 3,
+      "native_evidence": "bot-cua-toi-3/phan-tich/chon-chien-luoc/select-20261023-r1/results.jsonl",
+      "source": "bot-cua-toi-3/source/MQL5/Include/bot-cua-toi-3/Bot3StrategySelection.mqh",
+      "check_script": "bot-cua-toi-3/source/MQL5/Scripts/bot-cua-toi-3/Bot3StrategySelectionCheck.mq5",
+      "run": "strategy-20261024-r1",
+      "build": "b3-strategy-selection-01",
+      "cases": 7724,
+      "matched": 7724,
+      "passed": true,
+      "comparison": "bot-cua-toi-3/bang-chung/kiem-chon-chien-luoc/strategy-20261024-r1/comparison.json",
+      "compile": "bot-cua-toi-3/bang-chung/bien-dich/b3-strategy-selection-01/bien-nhan.json"
+    }
+  ],
+  "original_ex5_unchanged": true,
+  "live_orders_sent": false
+}
