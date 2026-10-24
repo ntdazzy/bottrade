@@ -137,6 +137,8 @@ def main():
         m.hook_add(uc.UC_HOOK_CODE, boundary, begin=address, end=address)
 
     def visit(machine, address, size, _):
+        if address in [account_api, base + 0x8300]:
+            return
         if not (base + state['cfg']['start'] <= address < base + state['cfg']['end']):
             raise ValueError('UNDECLARED_NATIVE_CALL_OR_JUMP ' + hex(address))
         state['visited'].add(address - base)
@@ -173,7 +175,7 @@ def main():
                 for rva in cfg['preloads']:
                     i = instructions[rva]
                     m.emu_start(i.address, i.address + i.size, count=1)
-                code_hook = m.hook_add(uc.UC_HOOK_CODE, visit, begin=base + cfg['start'], end=base + cfg['end'] - 1)
+                code_hook = m.hook_add(uc.UC_HOOK_CODE, visit)
                 write_hook = m.hook_add(uc.UC_HOOK_MEM_WRITE, write)
                 m.emu_start(base + cfg['start'], base + cfg['end'], timeout=1000000, count=2000)
                 m.hook_del(code_hook)

@@ -1,0 +1,12 @@
+{
+  "model": [
+    "claude-opus-5-5"
+  ],
+  "requested_model": "claude-opus-5-5",
+  "effort": "max",
+  "session": "378d8524-8430-4fc3-9ec6-5a3bde5c5f82",
+  "subtype": "success",
+  "is_error": false,
+  "duration_ms": 1044105,
+  "scope": "Read-only seasonal clock analysis; constants not directly read by Claude."
+}

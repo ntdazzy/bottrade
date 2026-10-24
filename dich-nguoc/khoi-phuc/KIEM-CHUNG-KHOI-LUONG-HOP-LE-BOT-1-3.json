@@ -1,0 +1,52 @@
+{
+  "date": "2026-10-24",
+  "bots": [
+    {
+      "bot": 1,
+      "native_rva": "0x3bfe0",
+      "run": "volume-validation-20261024-r5",
+      "build": "b1-volume-validation-04",
+      "cases": 1834,
+      "normal_cases": 1807,
+      "actual_division_fault_cases": 27,
+      "matched": 1834,
+      "passed": true,
+      "source": "bot-cua-toi-1/source/MQL5/Include/bot-cua-toi-1/Bot1VolumeValidation.mqh",
+      "source_sha256": "a8202431111b8cd744dc1ca2465441f1fea684526ebcec415f204a15ef383170",
+      "comparison": "bot-cua-toi-1/bang-chung/kiem-khoi-luong-hop-le/volume-validation-20261024-r5/comparison.json",
+      "build_receipt": "bot-cua-toi-1/bang-chung/bien-dich/b1-volume-validation-04/bien-nhan.json",
+      "hashes": {
+        "cases.bin": "989876d78726253cbbe047ae5f19f9a9aba2a2400770b920d358d074acd9c4a2",
+        "original-results.bin": "9f3ab5caefac70aa18666bb0ffc76e99b6cc10ea1974a52cce531e74e9cd7abf",
+        "mql5-results.bin": "146c47c8da18ace11ba51bee94ef433f5de3ec3086d2b3ba07d8aaffd3a3e220"
+      }
+    },
+    {
+      "bot": 3,
+      "native_rva": "0x46ca0",
+      "run": "volume-validation-20261024-r5",
+      "build": "b3-volume-validation-04",
+      "cases": 1834,
+      "normal_cases": 1807,
+      "actual_division_fault_cases": 27,
+      "matched": 1834,
+      "passed": true,
+      "source": "bot-cua-toi-3/source/MQL5/Include/bot-cua-toi-3/Bot3VolumeValidation.mqh",
+      "source_sha256": "76ddfc034aa36ce6aafc67d7fc0932f2dddaf5e40e2f81995bdc6778aef1749d",
+      "comparison": "bot-cua-toi-3/bang-chung/kiem-khoi-luong-hop-le/volume-validation-20261024-r5/comparison.json",
+      "build_receipt": "bot-cua-toi-3/bang-chung/bien-dich/b3-volume-validation-04/bien-nhan.json",
+      "hashes": {
+        "cases.bin": "989876d78726253cbbe047ae5f19f9a9aba2a2400770b920d358d074acd9c4a2",
+        "original-results.bin": "9f3ab5caefac70aa18666bb0ffc76e99b6cc10ea1974a52cce531e74e9cd7abf",
+        "mql5-results.bin": "146c47c8da18ace11ba51bee94ef433f5de3ec3086d2b3ba07d8aaffd3a3e220"
+      }
+    }
+  ],
+  "original_ex5_unchanged": true,
+  "live_orders_sent": false,
+  "limits": [
+    "Numeric suffix formatting is a supplied native boundary; prefix and numeric value bits checked.",
+    "Full EA integration, live symbol failures and complete trade behavior remain unverified."
+  ],
+  "zero_division_probe": "doi-chung-mt5/chia-khong-20261024"
+}

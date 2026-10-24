@@ -1,0 +1,9 @@
+{
+  "cases": 1834,
+  "faults": 27,
+  "seconds": 28.45,
+  "result_sha256": "9f3ab5caefac70aa18666bb0ffc76e99b6cc10ea1974a52cce531e74e9cd7abf",
+  "native_rva": "0x46ca0",
+  "tool_sha256": "2e03d0916a91eb9a555db9dbeabf8a3c308f6446cbdccaca6b5d95200d4782ba",
+  "formatting_boundary": "Native double-to-string supplied empty; original prefix and numeric source value checked."
+}

@@ -9,6 +9,7 @@ import argparse
 import hashlib
 import json
 from pathlib import Path
+import re
 import shutil
 import struct
 import subprocess
@@ -26,15 +27,27 @@ def sha(path):
 def bot1_rows():
     source = ROOT / 'bot-cua-toi-1/phan-tich/bat-tat-chien-luoc/enable-20261023-r3/results.json'
     rows = json.loads(source.read_text(encoding='utf-8'))
-    cases = [{'id': i, 'mask': int(row['mask'])} for i, row in enumerate(rows)]
+    summary = json.loads(source.with_name('summary.json').read_text(encoding='utf-8'))
+    if not summary['passed'] or summary['results_sha256'] != sha(source):
+        raise ValueError('NATIVE_EVIDENCE_NOT_VERIFIED')
+    if any(not row['matched'] for row in rows):
+        raise ValueError('NATIVE_EVIDENCE_CONTAINS_FAILURE')
+    cases = [{'id': i, 'mask': int(row['mask']),
+              'expected_mask': sum(1 << index for index in row['original_selected_profiles'])}
+             for i, row in enumerate(rows)]
     return source, cases
 
 
 def bot3_rows():
     source = ROOT / 'bot-cua-toi-3/phan-tich/chon-chien-luoc/select-20261023-r1/results.jsonl'
+    summary = json.loads(source.with_name('summary.json').read_text(encoding='utf-8'))
+    if not summary['passed'] or summary['results_sha256'] != sha(source):
+        raise ValueError('NATIVE_EVIDENCE_NOT_VERIFIED')
     cases = []
     for i, line in enumerate(source.read_text(encoding='utf-8').splitlines()):
         row = json.loads(line)
+        if not row['matched']:
+            raise ValueError('NATIVE_EVIDENCE_CONTAINS_FAILURE')
         item = row['inputs']
         cases.append({
             'id': i,
@@ -48,7 +61,7 @@ def bot3_rows():
             'initial_mode': -97,
             'initial_divisor': float(item['initial_divisor']),
             'threshold_flags': int(item['threshold_flags']),
-            'expected': row['hypothesis'],
+            'expected': row['original'],
             'path': row['path'],
             'case': int(row['case']),
         })
@@ -62,7 +75,7 @@ def encode(bot, cases):
             raw += struct.pack('<2i', row['id'], row['mask'])
     else:
         for row in cases:
-            raw += struct.pack('<3i2d4id i'.replace(' ', ''), row['id'], row['frequency'], row['risk'],
+            raw += struct.pack('<3i2d4idi', row['id'], row['frequency'], row['risk'],
                                row['max_dd'], row['converted_balance'], row['variable'], row['manual'],
                                row['initial'], row['initial_mode'], row['initial_divisor'], row['threshold_flags'])
     return bytes(raw)
@@ -101,13 +114,29 @@ def start_mt5(bot, run, files):
     return code, round(time.monotonic() - start, 2), result
 
 
+def verify_build(bot, build):
+    receipt_path = ROOT / f'bot-cua-toi-{bot}/bang-chung/bien-dich' / build / 'bien-nhan.json'
+    receipt = json.loads(receipt_path.read_text(encoding='utf-8-sig'))
+    target = f'Scripts/bot-cua-toi-{bot}/Bot{bot}StrategySelectionCheck.mq5'
+    script = MT / target.replace('.mq5', '.ex5').replace('Scripts/', 'MQL5/Scripts/', 1)
+    if receipt['target'] != target or receipt['errors'] != 0 or receipt['warnings'] != 0:
+        raise ValueError('BUILD_NOT_VERIFIED')
+    if sha(script) != receipt['binary_sha256']:
+        raise ValueError('COMPILED_SCRIPT_CHANGED')
+    for path, expected_hash in receipt['sources_sha256'].items():
+        if sha(ROOT / f'bot-cua-toi-{bot}/source/MQL5' / path) != expected_hash:
+            raise ValueError('SOURCE_CHANGED_AFTER_BUILD ' + path)
+    return receipt_path, receipt, script
+
+
 def main():
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument('mode', choices=['prepare', 'mql5', 'compare'])
     ap.add_argument('bot', type=int, choices=[1, 3])
     ap.add_argument('run')
+    ap.add_argument('--build')
     args = ap.parse_args()
-    if not args.run.isascii() or not args.run.replace('-', '').isalnum():
+    if not re.fullmatch('[a-z0-9-]+', args.run):
         raise ValueError('INVALID_RUN')
     out = ROOT / f'bot-cua-toi-{args.bot}/bang-chung/kiem-chon-chien-luoc' / args.run
     if args.mode == 'prepare':
@@ -118,7 +147,8 @@ def main():
         (out / 'cases.bin').write_bytes(encode(args.bot, cases))
         (out / 'baseline.json').write_text(json.dumps({
             'cases': len(cases), 'source': str(source.relative_to(ROOT)),
-            'source_sha256': sha(source), 'scope': 'MQL5 selector only; native evidence was already checked.'
+            'native_evidence_sha256': sha(source), 'cases_sha256': sha(out / 'cases.bin'),
+            'scope': 'MQL5 selector only; expected values come from native results, not the analysis hypothesis.'
         }, ensure_ascii=False, indent=2), encoding='utf-8')
         print(json.dumps({'bot': args.bot, 'cases': len(cases)}))
         return
@@ -128,6 +158,9 @@ def main():
     if args.mode == 'mql5':
         if target.exists():
             raise FileExistsError(target)
+        if not args.build or not re.fullmatch('[a-z0-9-]+', args.build):
+            raise ValueError('VERIFIED_BUILD_REQUIRED')
+        receipt_path, receipt, script = verify_build(args.bot, args.build)
         files = MT / f'MQL5/Files/bot{args.bot}-strategy-selection' / args.run
         if files.exists():
             raise FileExistsError(files)
@@ -135,16 +168,23 @@ def main():
         shutil.copyfile(out / 'cases.bin', files / 'cases.bin')
         code, seconds, source_result = start_mt5(args.bot, args.run, files)
         shutil.copyfile(source_result, target)
-        script = MT / f'MQL5/Scripts/bot-cua-toi-{args.bot}/Bot{args.bot}StrategySelectionCheck.ex5'
         (out / 'mql5-run.json').write_text(json.dumps({
             'exit_code': code, 'seconds': seconds,
-            'script_sha256': sha(script), 'results_sha256': sha(target)
+            'script_sha256': sha(script), 'results_sha256': sha(target),
+            'build_receipt': str(receipt_path.relative_to(ROOT)),
+            'build_receipt_sha256': sha(receipt_path),
+            'sources_sha256': receipt['sources_sha256']
         }, indent=2), encoding='utf-8')
         print('MQL5 results saved')
         return
     data = target.read_bytes()
     count = read_header(data)
     source, cases = bot1_rows() if args.bot == 1 else bot3_rows()
+    baseline = json.loads((out / 'baseline.json').read_text(encoding='utf-8'))
+    if baseline['native_evidence_sha256'] != sha(source) or baseline['cases_sha256'] != sha(out / 'cases.bin'):
+        raise ValueError('BASELINE_CHANGED')
+    if encode(args.bot, cases) != (out / 'cases.bin').read_bytes():
+        raise ValueError('INPUTS_DIFFER_FROM_NATIVE_CASES')
     if count != len(cases):
         raise ValueError('CASE_COUNT_DIFFERS_FROM_BASELINE')
     pos = 12
@@ -154,8 +194,8 @@ def main():
             raise ValueError('RESULT_SHAPE_MISMATCH')
         for row in cases:
             ident, mask = struct.unpack_from('<2i', data, pos); pos += 8
-            if (ident, mask) != (row['id'], row['mask']):
-                failures.append({'id': row['id'], 'expected': row['mask'], 'mql5': [ident, mask]})
+            if (ident, mask) != (row['id'], row['expected_mask']):
+                failures.append({'id': row['id'], 'original': row['expected_mask'], 'mql5': [ident, mask]})
     else:
         if len(data) != 12 + count * 20:
             raise ValueError('RESULT_SHAPE_MISMATCH')
@@ -175,7 +215,7 @@ def main():
         'cases': count, 'matched': count - len(failures), 'failed': len(failures),
         'first_failures': failures[:20],
         'hashes': {'cases.bin': sha(out / 'cases.bin'), 'mql5-results.bin': sha(target)},
-        'source_sha256': sha(source),
+        'native_evidence_sha256': sha(source),
         'scope': 'Selector source compared with previously captured native selector results; not an EA or trade comparison.'
     }
     (out / 'comparison.json').write_text(json.dumps(result, ensure_ascii=False, indent=2), encoding='utf-8')

@@ -1,0 +1,114 @@
+{
+  "cases": 1655,
+  "matched": 1603,
+  "failed": 52,
+  "first_failures": [
+    {
+      "id": 43,
+      "original": 1,
+      "mql5": 0
+    },
+    {
+      "id": 66,
+      "original": 1,
+      "mql5": 0
+    },
+    {
+      "id": 89,
+      "original": 1,
+      "mql5": 0
+    },
+    {
+      "id": 112,
+      "original": 1,
+      "mql5": 0
+    },
+    {
+      "id": 135,
+      "original": 1,
+      "mql5": 0
+    },
+    {
+      "id": 144,
+      "original": 1,
+      "mql5": 0
+    },
+    {
+      "id": 145,
+      "original": 1,
+      "mql5": 0
+    },
+    {
+      "id": 146,
+      "original": 1,
+      "mql5": 0
+    },
+    {
+      "id": 147,
+      "original": 1,
+      "mql5": 0
+    },
+    {
+      "id": 148,
+      "original": 1,
+      "mql5": 0
+    },
+    {
+      "id": 149,
+      "original": 1,
+      "mql5": 0
+    },
+    {
+      "id": 150,
+      "original": 1,
+      "mql5": 0
+    },
+    {
+      "id": 151,
+      "original": 1,
+      "mql5": 0
+    },
+    {
+      "id": 152,
+      "original": 1,
+      "mql5": 0
+    },
+    {
+      "id": 153,
+      "original": 1,
+      "mql5": 0
+    },
+    {
+      "id": 154,
+      "original": 1,
+      "mql5": 0
+    },
+    {
+      "id": 158,
+      "original": 1,
+      "mql5": 0
+    },
+    {
+      "id": 204,
+      "original": 1,
+      "mql5": 0
+    },
+    {
+      "id": 227,
+      "original": 1,
+      "mql5": 0
+    },
+    {
+      "id": 250,
+      "original": 1,
+      "mql5": 0
+    }
+  ],
+  "hashes": {
+    "cases.bin": "513d9c35b19efcd632f7451f9ac32957643e83aaa43acffb8aa68de7b97fa1dc",
+    "original-results.bin": "a8a62d78e9c512e3df94fd5e7685d88d68cb962442175d2de0ae131378382bcd",
+    "mql5-results.bin": "16705a9ac5ea41778d6b5187d639a91986d307ac86a2a66455654a00722776a0"
+  },
+  "native_rva": "0x3bfe0",
+  "scope": "Native volume min/max/step validator versus pure MQL5 validator; no order placement."
+}

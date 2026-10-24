@@ -1,0 +1,16 @@
+[
+  {
+    "bot": 1,
+    "previous": "bot-cua-toi-1/phan-tich/bat-tat-chien-luoc/enable-20261023-r3/results.json",
+    "new": "bot-cua-toi-1/phan-tich/bat-tat-chien-luoc/enable-20261024-r1/results.json",
+    "sha256": "148f528bed797201802f26e4eba026bd8ce9ddcc798e61a3cd085a8a665f9de3",
+    "byte_equal": true
+  },
+  {
+    "bot": 3,
+    "previous": "bot-cua-toi-3/phan-tich/chon-chien-luoc/select-20261023-r1/results.jsonl",
+    "new": "bot-cua-toi-3/phan-tich/chon-chien-luoc/select-20261024-r2/results.jsonl",
+    "sha256": "53028cbb17df9a639bdd62ea171f66005e5a3be672ad04f40183bddf5cdbd072",
+    "byte_equal": true
+  }
+]

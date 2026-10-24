@@ -1,0 +1,9 @@
+{
+  "mode": "integer",
+  "exit_code": 4294967295,
+  "bytes": 4,
+  "hex": "01000000",
+  "messages": [
+    "\ufeffHP\t2\t15:08:07.192\tZeroDivisionProbe (XAUUSD_NOCOST_V2,M15)\tZero divide, check divider for zero to avoid this error in 'C:\\Users\\NTD\\Desktop\\Bot Market Demo\\dich-nguoc\\.local\\claude-recovery-20261023\\mt5\\MQL5\\Scripts\\codex-probe-20261024\\ZeroDivisionProbe.ex5'"
+  ]
+}

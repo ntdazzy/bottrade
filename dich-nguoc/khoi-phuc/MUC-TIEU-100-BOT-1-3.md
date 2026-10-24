@@ -19,11 +19,11 @@ chưa rõ vẫn đang được xử lý trước khi viết phần tương ứng
 | Khởi tạo, các sự kiện và thoát | Mã trung gian 84/82 hàm; nạp vốn/tên lưu/mốc giờ dựng và so 616 ca mỗi bot | Ghép EA, nối đủ sự kiện, chỉ báo, xử lý thất bại và giải phóng |
 | Chọn chiến lược và tham số | Bảng 8/9 chiến lược; nguồn chọn MQL5 bot 1 khớp 256 ca, bot 3 khớp 7.724 ca | Ghép vào EA, nguồn cờ/trạng thái thực tế, quản lý khi tắt, điều chỉnh thêm và ngẫu nhiên |
 | Điều kiện mua/bán | Mức giá, kiểm giá bị phá, lọc lệnh chờ gần đã so | Ghép đầy đủ các điều kiện vào lệnh |
-| Khối lượng và trạng thái vốn | Đổi tiền, tính khối lượng, rút tiền, luồng vốn/ký quỹ và nạp trạng thái đã so theo phần | Ghép EA chính, kiểm cùng tài khoản, bước/nhỏ nhất/lớn nhất khối lượng, mã lỗi/thông báo |
+| Khối lượng và trạng thái vốn | Đổi tiền, tính khối lượng, rút tiền, luồng vốn/ký quỹ, nạp trạng thái và kiểm bước/min/max đã so; kiểm hợp lệ khớp 1.834 ca mỗi bot | Ghép EA chính, kiểm cùng tài khoản, lỗi dữ liệu thực và toàn bộ thông báo |
 | Đặt/sửa/hủy/đóng lệnh | Mã trung gian hiện có | Khôi phục cả hai chiều, lỗi, thử lại và hết hạn |
 | Dừng lỗ/chốt lời và dời lệnh | Tham số khoảng cách đã so | Toàn bộ luật sau khớp, dừng/chốt ảo và các chế độ đặc biệt |
 | Giới hạn lỗ và lịch sử giao dịch | Một phần lịch sử rút tiền đã so | Giới hạn ngày/tổng, cập nhật theo giao dịch, các trường hợp dữ liệu thiếu |
-| Thời gian và tin tức | Mã trung gian hiện có | Giờ mùa hè, giờ giao dịch, bộ lọc tin và lỗi dữ liệu |
+| Thời gian và tin tức | Đã so phần chọn thời điểm chặn 1.620 ca mỗi bot | Giờ mùa hè, giờ giao dịch, tìm sự kiện lịch, hủy/đóng trong cửa sổ tin và lỗi dữ liệu |
 | Hiển thị và thao tác | Bản EX5 gốc và mã trung gian | Trích tài nguyên, bảng hiển thị, đối tượng trên biểu đồ và các thao tác được hỗ trợ |
 | Đối chiếu toàn bộ và bàn giao | Các phần riêng có bằng chứng | EA chính, tài nguyên, biên dịch sạch, so từng lệnh cùng điều kiện, hướng dẫn sử dụng |
 

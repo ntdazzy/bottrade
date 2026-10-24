@@ -1,0 +1,14 @@
+{
+  "cases": 1834,
+  "matched": 1834,
+  "failed": 0,
+  "fault_cases": 27,
+  "missing_fault_cases": [],
+  "first_failures": [],
+  "hashes": {
+    "cases.bin": "989876d78726253cbbe047ae5f19f9a9aba2a2400770b920d358d074acd9c4a2",
+    "original-results.bin": "9f3ab5caefac70aa18666bb0ffc76e99b6cc10ea1974a52cce531e74e9cd7abf",
+    "mql5-results.bin": "146c47c8da18ace11ba51bee94ef433f5de3ec3086d2b3ba07d8aaffd3a3e220"
+  },
+  "scope": "Native complete validation function versus MQL5: ordered symbol reads, return result, message prefix/value bits; every division fault run separately. Exact numeric suffix formatting not compared to native runtime."
+}

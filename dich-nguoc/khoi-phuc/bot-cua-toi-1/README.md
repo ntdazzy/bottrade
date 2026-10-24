@@ -1,5 +1,8 @@
 # bot-cua-toi-1
 
+Đã dựng kiểm khối lượng hợp lệ: 1.834/1.834 ca khớp, gồm 27 ca dừng vì
+chia 0 chạy thật trong MT5 riêng. [Phạm vi](../PHAN-TICH-KHOI-LUONG-HOP-LE-BOT-1-3.md).
+
 Luồng mới bắt buộc: [phân tích toàn bộ trước khi viết tiếp](../BAN-DO-TOAN-BO-BOT-1-3.md).
 Bản đồ có đủ 84 hàm trong bản chụp. Đã nối 72 dòng cài đặt với vị trí
 lưu và mặc định: 648/648 lần đối chiếu khớp. Đã đọc trực tiếp nhãn nhìn

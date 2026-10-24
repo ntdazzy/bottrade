@@ -1,5 +1,12 @@
 # Kết quả khôi phục mã — lượt 23/10/2026
 
+Cập nhật 24/10: kiểm khối lượng hợp lệ đã có nguồn MQL5, khớp
+1.834/1.834 ca mỗi bot; gồm 27 ca dừng vì chia 0 thật cho mỗi bot.
+Đã sửa các điểm yếu của bộ kiểm chọn chiến lược do Claude Opus 5.5
+`max` nêu, rồi chạy lại: bot 1 256/256 và bot 3 7.724/7.724.
+[Khối lượng hợp lệ](PHAN-TICH-KHOI-LUONG-HOP-LE-BOT-1-3.md),
+[chọn chiến lược và đánh giá độc lập](PHAN-TICH-CHON-CHIEN-LUOC-MQL5-BOT-1-3.md).
+
 Quy trình hiện hành: [AGENTS.md](../../AGENTS.md) và
 [bản đồ 33 phần cùng toàn bộ hàm/cài đặt đã thấy](BAN-DO-TOAN-BO-BOT-1-3.md).
 Đang rà phân tích toàn bộ trước khi viết thêm phần mới. Đã nối 152 dòng

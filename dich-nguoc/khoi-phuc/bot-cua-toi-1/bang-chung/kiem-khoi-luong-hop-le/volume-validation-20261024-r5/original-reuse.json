@@ -1,0 +1,6 @@
+{
+  "source_run": "volume-validation-20261024-r3",
+  "cases_sha256": "989876d78726253cbbe047ae5f19f9a9aba2a2400770b920d358d074acd9c4a2",
+  "original_results_sha256": "9f3ab5caefac70aa18666bb0ffc76e99b6cc10ea1974a52cce531e74e9cd7abf",
+  "reason": "Identical case bytes and original EX5; new MQL5 preserves the native division fault."
+}

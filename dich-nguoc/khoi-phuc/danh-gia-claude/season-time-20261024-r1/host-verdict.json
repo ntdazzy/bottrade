@@ -1,0 +1,16 @@
+{
+  "status": "analysis-checked-not-runtime-verified",
+  "checked": [
+    "Read both named C function bodies",
+    "Confirmed year branches 1987 and 2007, repeated time reads and strict day-of-year comparisons",
+    "Read K0/K1/K2/K3 directly from both SHA-256 verified captured regions"
+  ],
+  "constants": "doi-chung-mt5/gio-mua-he-20261024/constants-proof.json",
+  "still_required": [
+    "Native execution at transition-day boundaries",
+    "MQL5 execution and ordered call comparison",
+    "Year changes between repeated time reads",
+    "Time conversion failure behavior",
+    "Integration with broker offsets and news filter"
+  ]
+}

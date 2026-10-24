@@ -1,0 +1,12 @@
+{
+  "cases": 256,
+  "matched": 256,
+  "failed": 0,
+  "first_failures": [],
+  "hashes": {
+    "cases.bin": "f3b217ff1c99527a6192ddac6bfd63682d7395f49b7122a29c4a6bb4a8033724",
+    "mql5-results.bin": "f3b217ff1c99527a6192ddac6bfd63682d7395f49b7122a29c4a6bb4a8033724"
+  },
+  "native_evidence_sha256": "148f528bed797201802f26e4eba026bd8ce9ddcc798e61a3cd085a8a665f9de3",
+  "scope": "Selector source compared with previously captured native selector results; not an EA or trade comparison."
+}

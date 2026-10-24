@@ -1,7 +1,8 @@
 # Phân tích bước chọn chiến lược bot 3 — 23/10/2026
 
 Hai đoạn chọn chiến lược trong mã gốc khớp **7.724/7.724 ca** với bảng
-luật phân tích dưới đây. Chưa viết thêm MQL5 cho phần này.
+luật phân tích dưới đây. Nguồn MQL5 riêng phần chọn cũng đã được so;
+[bằng chứng và giới hạn](PHAN-TICH-CHON-CHIEN-LUOC-MQL5-BOT-1-3.md).
 
 | Nơi chạy | Đoạn mã gốc, cuối không tính | Số ca khớp |
 |---|---|---|
@@ -42,7 +43,7 @@ Chưa coi thứ tự gọi này là bằng chứng đã phục hồi luật giao
 Các chế độ 0–4 chỉ ghi lại sáu cờ có chỉ số 3–8; **giữ nguyên ba cờ
 đầu**. Không được tự thêm thao tác đặt lại ba cờ đó vào bản dựng.
 
-| Giá trị `TradeFrequency` | Mục được bật thêm ngoài ba cờ đầu | Hệ số khi `UseVariableValues=true` / `false` |
+| Giá trị `TradeFrequency` | Số mục `RunStrat` được bật thêm ngoài ba cờ đầu (không phải chỉ số bên trong) | Hệ số khi `UseVariableValues=true` / `false` |
 |---|---|---|
 | 0 | không có | 3,0 / 2,4 |
 | 1 | 4, 5 | 4,0 / 3,4 |
@@ -83,7 +84,9 @@ khuyến nghị cho phép người dùng nhập các giá trị đó.
 ## Phạm vi đã kiểm và còn thiếu
 
 Mỗi đoạn có 248 ca chế độ cố định/ngoài bảng, 3.072 ca thủ công,
-512 ca ngưỡng tự chọn và 30 ca thứ tự tính phần trăm. Chạy đúng byte mã
+512 ca ngưỡng tự chọn và 30 ca thay số dư/phần trăm. Các ca phần trăm
+không đủ để phân biệt mọi cách đổi thứ tự phép tính; thứ tự chia rồi
+nhân được chốt từ danh sách lệnh gốc. Chạy đúng byte mã
 chụp; các giá trị nạp sẵn của thanh ghi lấy từ lệnh gốc, có vị trí trong
 biên nhận. Theo dõi nơi ghi để phát hiện tác dụng ngoài vùng dự kiến.
 

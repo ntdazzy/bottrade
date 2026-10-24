@@ -12,7 +12,8 @@ int OnStart()
    int h=FileOpen(folder+"cases.bin",FILE_READ|FILE_BIN);
    if(h==INVALID_HANDLE) return 1;
    int magic=FileReadInteger(h),version=FileReadInteger(h),count=FileReadInteger(h);
-   if(magic!=0x53454c31 || version!=1 || count<1) { FileClose(h);return 1; }
+   if(magic!=0x53454c31 || version!=1 || count<1 || FileSize(h)!=(ulong)12+(ulong)count*8)
+   { FileClose(h);return 1; }
    int out=FileOpen(folder+"mql5-results.bin",FILE_WRITE|FILE_BIN);
    if(out==INVALID_HANDLE) { FileClose(h);return 1; }
    FileWriteInteger(out,magic);FileWriteInteger(out,version);FileWriteInteger(out,count);

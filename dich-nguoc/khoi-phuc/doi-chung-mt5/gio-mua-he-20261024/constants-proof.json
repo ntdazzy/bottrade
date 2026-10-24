@@ -1,0 +1,79 @@
+{
+  "constants_json_sha256": "c0dd43e8f21d8dc6b2e29491a2de6b74c3905379dd0b3a4de44ded6f2ea0cce4",
+  "verified_regions": [
+    {
+      "bot": 1,
+      "constants": [
+        {
+          "rva": "0x4ffa0",
+          "bytes": "0000000000001c40",
+          "double": 7.0,
+          "capture_file": "bot-cua-toi-1/bang-chung/captures/luot-20261023-r1/0000023e5aa5f000-program-data.bin",
+          "offset": "0xfa0",
+          "region_sha256": "2ad9ad0ea90a8f8df88170348a71a070d475174122c9eae7df8deb1fb32c61f4"
+        },
+        {
+          "rva": "0x4ffa8",
+          "bytes": "0000000000002c40",
+          "double": 14.0,
+          "capture_file": "bot-cua-toi-1/bang-chung/captures/luot-20261023-r1/0000023e5aa5f000-program-data.bin",
+          "offset": "0xfa8",
+          "region_sha256": "2ad9ad0ea90a8f8df88170348a71a070d475174122c9eae7df8deb1fb32c61f4"
+        },
+        {
+          "rva": "0x4ffb0",
+          "bytes": "000000000000f03f",
+          "double": 1.0,
+          "capture_file": "bot-cua-toi-1/bang-chung/captures/luot-20261023-r1/0000023e5aa5f000-program-data.bin",
+          "offset": "0xfb0",
+          "region_sha256": "2ad9ad0ea90a8f8df88170348a71a070d475174122c9eae7df8deb1fb32c61f4"
+        },
+        {
+          "rva": "0x4ffb8",
+          "bytes": "0000000000003f40",
+          "double": 31.0,
+          "capture_file": "bot-cua-toi-1/bang-chung/captures/luot-20261023-r1/0000023e5aa5f000-program-data.bin",
+          "offset": "0xfb8",
+          "region_sha256": "2ad9ad0ea90a8f8df88170348a71a070d475174122c9eae7df8deb1fb32c61f4"
+        }
+      ]
+    },
+    {
+      "bot": 3,
+      "constants": [
+        {
+          "rva": "0x57d80",
+          "bytes": "0000000000001c40",
+          "double": 7.0,
+          "capture_file": "bot-cua-toi-3/bang-chung/captures/luot-20261023-r1/00000171562a7000-program-data.bin",
+          "offset": "0xd80",
+          "region_sha256": "1d8c5ee1af972615461e71ede70b519d30bd876561cf96169606e4c9aeaab073"
+        },
+        {
+          "rva": "0x57d88",
+          "bytes": "0000000000002c40",
+          "double": 14.0,
+          "capture_file": "bot-cua-toi-3/bang-chung/captures/luot-20261023-r1/00000171562a7000-program-data.bin",
+          "offset": "0xd88",
+          "region_sha256": "1d8c5ee1af972615461e71ede70b519d30bd876561cf96169606e4c9aeaab073"
+        },
+        {
+          "rva": "0x57d90",
+          "bytes": "000000000000f03f",
+          "double": 1.0,
+          "capture_file": "bot-cua-toi-3/bang-chung/captures/luot-20261023-r1/00000171562a7000-program-data.bin",
+          "offset": "0xd90",
+          "region_sha256": "1d8c5ee1af972615461e71ede70b519d30bd876561cf96169606e4c9aeaab073"
+        },
+        {
+          "rva": "0x57d98",
+          "bytes": "0000000000003f40",
+          "double": 31.0,
+          "capture_file": "bot-cua-toi-3/bang-chung/captures/luot-20261023-r1/00000171562a7000-program-data.bin",
+          "offset": "0xd98",
+          "region_sha256": "1d8c5ee1af972615461e71ede70b519d30bd876561cf96169606e4c9aeaab073"
+        }
+      ]
+    }
+  ]
+}

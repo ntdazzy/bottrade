@@ -89,6 +89,9 @@ def main():
     # block may include the next gate; changing emu_start's end address alone
     # did not reliably stop inside that block in the retained failed run.
     m.hook_add(original.uc.UC_HOOK_CODE, stop_at_destination)
+    def reject_write(machine, access, address, size, value, _):
+        raise ValueError('UNEXPECTED_WRITE_IN_ENABLE_GATE ' + hex(address))
+    m.hook_add(original.uc.UC_HOOK_MEM_WRITE, reject_write)
     rows = []
     for mask in range(256):
         actual = []

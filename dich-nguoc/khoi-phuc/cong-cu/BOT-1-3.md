@@ -223,12 +223,15 @@ Ví dụ:
 ```powershell
 python -I -B -X utf8 dich-nguoc/khoi-phuc/cong-cu/kiem-chon-chien-luoc-bot-1-3.py prepare 1 strategy-moi
 & dich-nguoc/khoi-phuc/cong-cu/bien-dich.ps1 -Bot 1 -Terminal 'dich-nguoc/.local/claude-recovery-20261023/mt5' -Run b1-strategy-moi -Source 'dich-nguoc/khoi-phuc/bot-cua-toi-1/source/MQL5/Scripts/bot-cua-toi-1/Bot1StrategySelectionCheck.mq5'
-python -I -B -X utf8 dich-nguoc/khoi-phuc/cong-cu/kiem-chon-chien-luoc-bot-1-3.py mql5 1 strategy-moi
+python -I -B -X utf8 dich-nguoc/khoi-phuc/cong-cu/kiem-chon-chien-luoc-bot-1-3.py mql5 1 strategy-moi --build b1-strategy-moi
 python -I -B -X utf8 dich-nguoc/khoi-phuc/cong-cu/kiem-chon-chien-luoc-bot-1-3.py compare 1 strategy-moi
 ```
 
 Đổi `1` và tên nguồn tương ứng để kiểm bot 3. Bộ kiểm chỉ so cờ, chế độ
-và hệ số của phần chọn; không chứng minh toàn bộ EA.
+và hệ số của phần chọn; không chứng minh toàn bộ EA. Lượt hiện hành là
+`strategy-20261024-r2`, bản dựng `b1-strategy-selection-02` và
+`b3-strategy-selection-02`. Kết quả mong đợi lấy thẳng từ kết quả mã gốc
+đã có mã băm và cờ kiểm đạt; không lấy từ bảng luật phân tích.
 
 ## Phân tích tám nhánh bật/tắt bot 1
 
@@ -241,6 +244,34 @@ sau; không mở MT5 hay gọi hàm giao dịch. Kết quả ở
 Lượt hiện hành: `enable-20261023-r3`, 2.048 lần kiểm nhánh khớp.
 Lượt r2 giữ bằng chứng lỗi điểm dừng, không dùng làm kết quả đạt.
 [Phạm vi](../PHAN-TICH-BAT-TAT-BOT-1.md).
+
+Kiểm lại ngày 24/10 sau đánh giá Claude: `enable-20261024-r1` thêm chặn
+mọi lần ghi bộ nhớ trong cổng; `select-20261024-r2` theo dõi cả lệnh
+nhảy ra ngoài đoạn, chỉ cho qua hai lời gọi được cấp sẵn. Cả hai cho
+tệp kết quả giống từng byte với lượt cũ: 2.048 nhánh và 7.724 ca khớp.
+
+## Bộ kiểm khối lượng hợp lệ
+
+`kiem-khoi-luong-hop-le-bot-1-3.py MODE BOT RUN [--build BUILD] [--case ID]`:
+
+- `prepare`: kiểm SHA-256 EX5 chuẩn, tạo đầu vào và tệp mô tả số dạng
+  hex để giữ đúng cả `NaN`/vô hạn trong JSON hợp lệ.
+- `original`: chạy nguyên hàm gốc, ghi kết quả, thứ tự đọc dữ liệu,
+  tiền tố/tham số thông báo; giữ riêng lỗi chia 0, không đổi lỗi thành
+  kết quả từ chối.
+- `mql5 --build BUILD`: kiểm nguồn/EX5 theo biên nhận, chạy các ca gốc
+  trả kết quả bình thường trong MT5 riêng.
+- `faults --build BUILD`: chạy từng ca gây chia 0 qua từng lần mở MT5.
+  Kiểm nhật ký lỗi, số byte kết quả còn dang dở và các lần đọc trước lỗi.
+  Dùng `--case ID` để chọn một ca. Lượt lỗi chưa đạt không được dùng lại.
+- `compare`: so cả ca bình thường và ca lỗi; thiếu một ca lỗi cũng
+  không cho kết luận đạt.
+
+Biên dịch `BotNVolumeValidationCheck.mq5` trước bước `mql5`/`faults`.
+Lượt hiện hành: `volume-validation-20261024-r5`, bản dựng
+`b1-volume-validation-04` và `b3-volume-validation-04`. Lượt r5 dùng lại
+đúng kết quả gốc r3 vì đầu vào giống từng byte; có biên nhận riêng.
+[Phạm vi và các lượt chưa đạt](../PHAN-TICH-KHOI-LUONG-HOP-LE-BOT-1-3.md).
 
 ## Đối chứng lời gọi MT5 và phân tích nạp vốn
 

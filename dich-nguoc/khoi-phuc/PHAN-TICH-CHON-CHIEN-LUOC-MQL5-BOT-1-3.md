@@ -37,10 +37,28 @@ thân chiến lược, quản lý vị thế hoặc điều kiện vào lệnh.
 
 ## Cách kiểm
 
-Lượt `strategy-20261024-r1` dùng đúng 256 ca đã kiểm của bot 1 và 7.724
+Lượt hiện hành `strategy-20261024-r2` dùng đúng 256 ca đã kiểm của bot 1 và 7.724
 ca của bot 3. Hai chương trình kiểm được biên dịch trong MT5 riêng, chạy
 với giao dịch bị tắt, rồi so mặt nạ, chế độ và bit hệ số với kết quả gốc.
+
+Claude Opus 5.5, mức `max`, đã [kiểm độc lập](danh-gia-claude/selector-20261024-r1/review.md).
+Mình đã đối chiếu các nhận xét và sửa bộ kiểm: lấy trực tiếp
+`original_selected_profiles`/`original`, kiểm mã băm kết quả gốc, từ chối
+ca gốc chưa khớp, nối đúng nguồn/EX5 với biên nhận biên dịch và kiểm độ
+dài tệp đầu vào. Kết quả vẫn là 256/256 và 7.724/7.724; không sửa công
+thức MQL5 vì chưa thấy sai trong phần này.
+
+7.724 là hai đoạn mã gốc × 3.862 đầu vào khác nhau, không phải 7.724 đầu
+vào độc lập. Bot 1 trả đúng mặt nạ đầu vào nên hai tệp nhị phân có thể
+cùng mã băm; kết quả mong đợi nay lấy từ đích nhánh mã gốc đã quan sát,
+không lấy trực tiếp mặt nạ đầu vào.
 
 Giới hạn vẫn còn: phần này chưa chứng minh thứ tự gọi toàn bộ EA, quản lý
 vị thế khi chiến lược tắt, điều kiện mua/bán, bảng hiển thị hay các lỗi
 ngoài đoạn chọn.
+
+Khi ghép bot 1 phải giữ thứ tự kiểm A→H và chạy khối tham số ngay sau
+cổng đang bật. Bot 3 chỉ được đọc số dư/đổi tiền trong nhánh tần suất 5,
+rủi ro 1234; ba cờ ngưỡng tương ứng byte 1–3 của mảng năm cờ dùng ở phần
+khối lượng, khác với mặt nạ chín chiến lược. `initial_mode` luôn bị ghi
+đè trong đoạn chọn; các giá trị cần giữ là mặt nạ đang lưu và hệ số.

@@ -1,0 +1,24 @@
+{
+  "id": 174,
+  "passed": true,
+  "original": [
+    174,
+    -1,
+    3,
+    8014542624500913617
+  ],
+  "mql5": [
+    174,
+    -1,
+    3,
+    8014542624500913617
+  ],
+  "exit_code": 4294967295,
+  "seconds": 3.26,
+  "messages": [
+    "RP\t2\t15:09:46.563\tBot1VolumeValidationCheck (XAUUSD_NOCOST_V2,M15)\tZero divide, check divider for zero to avoid this error in 'C:\\Users\\NTD\\Desktop\\Bot Market Demo\\dich-nguoc\\.local\\claude-recovery-20261023\\mt5\\MQL5\\Scripts\\bot-cua-toi-1\\Bot1VolumeValidationCheck.ex5'"
+  ],
+  "script_sha256": "c7029c0ef947a4fd185c39e90d39b7c64cf13dab6084d7ff99ea6919ed42a402",
+  "trace_sha256": "7ed21bb6f2e53cd46f247c52db0cd62029d4b142205b48e506720865674aaf33",
+  "partial_results_bytes": 16
+}

@@ -1,0 +1,26 @@
+{
+  "runs": [
+    {
+      "run": "volume-validation-20261024-r1",
+      "status": "invalid-oracle-setup",
+      "reason": "Initial harness did not set volume in XMM0."
+    },
+    {
+      "run": "volume-validation-20261024-r2",
+      "status": "mismatch",
+      "reason": "52 differences for NaN comparison behavior; native division faults were flattened to false."
+    },
+    {
+      "run": "volume-validation-20261024-r3",
+      "status": "normal-only",
+      "reason": "1807 normal outcomes matched per bot; first MQL5 zero-step case did not abort."
+    },
+    {
+      "run": "volume-validation-20261024-r4",
+      "status": "fault-test-failed",
+      "reason": "Constant integer numerator did not produce a fault in this build; log decoding also needed UTF-8 detection."
+    }
+  ],
+  "authoritative_run": "volume-validation-20261024-r5",
+  "preservation": "Previous files retained unchanged; no failed run is used as passing evidence."
+}

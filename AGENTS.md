@@ -22,7 +22,8 @@
 4. Sau bước phân tích, làm từng phần theo danh sách. Giữ công thức,
    thứ tự gọi, điều kiện so, làm tròn, đơn vị và tác dụng phụ như EX5.
    Không thay mục tiêu bằng một bot chỉ chạy gần giống.
-5. Có thể giao Claude một phần nhỏ để phân tích hoặc kiểm tra độc lập.
+5. Phối hợp Claude Opus 5.5, mức `max`, theo yêu cầu hiện tại; giao nhiều
+   phần độc lập, rõ đầu vào/đầu ra để làm song song khi phù hợp.
    Nêu đúng bối cảnh và phạm vi; không yêu cầu vượt biện pháp bảo vệ.
    Nhận xét của Claude phải được đối chiếu lại bằng chứng, không thay
    cho phép so với bot gốc. Không có phản hồi thì ghi là chưa có đánh giá.

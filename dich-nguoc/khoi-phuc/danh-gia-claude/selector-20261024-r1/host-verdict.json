@@ -1,0 +1,28 @@
+{
+  "reviewer_model": "claude-opus-5-5",
+  "effort": "max",
+  "reviewed_commit": "a0d15996f40602095256a70509eddf16d3ab27a7",
+  "algorithm_findings": "No selector arithmetic, flags, thresholds or mapping discrepancy found by independent review and instruction comparison.",
+  "accepted_findings": [
+    "Use original captured outputs rather than analysis hypothesis",
+    "Verify native result hashes and matched flags",
+    "Verify current compiled binary and source receipt before MQL5 check",
+    "Check exact case file length",
+    "State 3862 distinct bot-3 inputs repeated for two native paths",
+    "Preserve original interleaved strategy dispatch and conditional currency read when integrating",
+    "Broaden instruction visit hook and reject any write in bot-1 gates",
+    "Correct stale documentation and clarify menu numbering"
+  ],
+  "validation_runs": {
+    "bot1_mql5": "strategy-20261024-r2",
+    "bot3_mql5": "strategy-20261024-r2",
+    "bot1_native": "enable-20261024-r1",
+    "bot3_native": "select-20261024-r2"
+  },
+  "unresolved": [
+    "EA integration",
+    "Source of threshold state",
+    "Currency conversion side effects in selector path",
+    "Exact numeric suffix formatting across complete EA"
+  ]
+}

@@ -1,7 +1,8 @@
 # Phân tích bật/tắt chiến lược bot 1 — 23/10/2026
 
 Đã so đủ **256 cách bật/tắt tám chiến lược**, tổng cộng **2.048 lần
-kiểm nhánh gốc**. Tất cả khớp; chưa viết MQL5 mới cho phần này.
+kiểm nhánh gốc**. Tất cả khớp. Đã viết MQL5 cho riêng các cổng này;
+[bằng chứng và giới hạn](PHAN-TICH-CHON-CHIEN-LUOC-MQL5-BOT-1-3.md).
 
 | Cài đặt | Chỉ số chiến lược | Vị trí nhánh bật/tắt |
 |---|---|---|

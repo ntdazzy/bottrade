@@ -1,0 +1,54 @@
+[
+  {
+    "bot": 1,
+    "constants": [
+      {
+        "rva": "0x4ffa0",
+        "bytes": "0000000000001c40",
+        "double": 7.0
+      },
+      {
+        "rva": "0x4ffa8",
+        "bytes": "0000000000002c40",
+        "double": 14.0
+      },
+      {
+        "rva": "0x4ffb0",
+        "bytes": "000000000000f03f",
+        "double": 1.0
+      },
+      {
+        "rva": "0x4ffb8",
+        "bytes": "0000000000003f40",
+        "double": 31.0
+      }
+    ],
+    "capture_regions_verified_by": "kiem-muc-gia-bot-1-3.py Original hash checks"
+  },
+  {
+    "bot": 3,
+    "constants": [
+      {
+        "rva": "0x57d80",
+        "bytes": "0000000000001c40",
+        "double": 7.0
+      },
+      {
+        "rva": "0x57d88",
+        "bytes": "0000000000002c40",
+        "double": 14.0
+      },
+      {
+        "rva": "0x57d90",
+        "bytes": "000000000000f03f",
+        "double": 1.0
+      },
+      {
+        "rva": "0x57d98",
+        "bytes": "0000000000003f40",
+        "double": 31.0
+      }
+    ],
+    "capture_regions_verified_by": "kiem-muc-gia-bot-1-3.py Original hash checks"
+  }
+]

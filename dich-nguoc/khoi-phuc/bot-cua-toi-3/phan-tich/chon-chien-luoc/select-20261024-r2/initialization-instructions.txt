@@ -1,0 +1,177 @@
+0x3861 movabs rdi, 0x171562a7ca0
+0x3892 movabs rax, 0x17156426f90
+0x389c mov eax, dword ptr [rax]
+0x389e cmp eax, 5
+0x38a1 jne 0x1715625397d
+0x38a7 movabs rcx, 0x17156427130
+0x38b1 cmp dword ptr [rcx], 0x4d2
+0x38b7 jne 0x1715625397d
+0x38bd movabs rcx, 0x171514ca538
+0x38c7 mov edx, 0x25
+0x38cc movabs rax, 0x7ff6846b7370
+0x38d6 call rax
+0x38d8 movabs rax, 0x17156426e48
+0x38e2 movsd xmm0, qword ptr [rax]
+0x38e6 movabs rax, 0x17156258300
+0x38f0 call rax
+0x38f2 movabs rax, 0x17156427140
+0x38fc movsd xmm1, qword ptr [rax]
+0x3900 movabs rax, 0x171562c5353
+0x390a cmp byte ptr [rax], 0
+0x390d divsd xmm1, qword ptr [rdi]
+0x3911 mulsd xmm1, xmm0
+0x3915 jne 0x171562539ee
+0x391b xorpd xmm0, xmm0
+0x391f ucomisd xmm1, xmm0
+0x3923 ja 0x17156253a06
+0x3929 movabs rax, 0x171562c5352
+0x3933 cmp byte ptr [rax], 0
+0x3936 jne 0x17156253a63
+0x393c xorpd xmm0, xmm0
+0x3940 ucomisd xmm1, xmm0
+0x3944 ja 0x17156253a7b
+0x394a movabs rax, 0x171562c5351
+0x3954 cmp byte ptr [rax], 0
+0x3957 jne 0x17156253c3e
+0x395d xorpd xmm0, xmm0
+0x3961 movabs rax, 0x171562bd21c
+0x396b ucomisd xmm1, xmm0
+0x396f ja 0x17156253c60
+0x3975 mov dword ptr [rax], 0
+0x397b jmp 0x171562539a1
+0x397d movabs rcx, 0x171562bd21c
+0x3987 cmp eax, 6
+0x398a mov dword ptr [rcx], eax
+0x398c ja 0x17156253ce6
+0x3992 mov eax, eax
+0x3994 movabs rcx, 0x171562a7d48
+0x399e jmp qword ptr [rcx + rax*8]
+0x39a1 movabs rdx, 0x171562bd224
+0x39ab xor ecx, ecx
+0x39ad movabs r8, 0x171562bd225
+0x39b7 movabs rax, 0x171562bd223
+0x39c1 mov byte ptr [rdx], 0
+0x39c4 movabs rdx, 0x171562bd228
+0x39ce mov byte ptr [r8], 0
+0x39d2 movabs r8, 0x171562bd227
+0x39dc mov byte ptr [rax], 0
+0x39df movabs rax, 0x171562a7cc0
+0x39e9 jmp 0x17156253cae
+0x39ee movabs rax, 0x171562a7ca8
+0x39f8 movsd xmm0, qword ptr [rax]
+0x39fc ucomisd xmm1, xmm0
+0x3a00 jbe 0x17156253929
+0x3a06 movabs rax, 0x171562bd21c
+0x3a10 mov dword ptr [rax], 3
+0x3a16 movabs rdx, 0x171562bd224
+0x3a20 xor ecx, ecx
+0x3a22 movabs r8, 0x171562bd225
+0x3a2c movabs rax, 0x171562bd223
+0x3a36 mov byte ptr [rdx], 1
+0x3a39 movabs rdx, 0x171562bd228
+0x3a43 mov byte ptr [r8], 1
+0x3a47 movabs r8, 0x171562bd227
+0x3a51 mov byte ptr [rax], 1
+0x3a54 movabs rax, 0x171562a7cf0
+0x3a5e mov byte ptr [rdx], 1
+0x3a61 jmp 0x17156253ad6
+0x3a63 movabs rax, 0x171562a7cb0
+0x3a6d movsd xmm0, qword ptr [rax]
+0x3a71 ucomisd xmm1, xmm0
+0x3a75 jbe 0x1715625394a
+0x3a7b movabs rax, 0x171562bd21c
+0x3a85 mov dword ptr [rax], 2
+0x3a8b movabs rdx, 0x171562bd224
+0x3a95 xor ecx, ecx
+0x3a97 movabs r8, 0x171562bd225
+0x3aa1 movabs rax, 0x171562bd223
+0x3aab mov byte ptr [rdx], 1
+0x3aae movabs rdx, 0x171562bd228
+0x3ab8 mov byte ptr [r8], 1
+0x3abc movabs r8, 0x171562bd227
+0x3ac6 mov byte ptr [rax], 1
+0x3ac9 movabs rax, 0x171562a7ce0
+0x3ad3 mov byte ptr [rdx], 0
+0x3ad6 movabs rdx, 0x17156426f28
+0x3ae0 mov byte ptr [r8], 1
+0x3ae4 jmp 0x17156253cbf
+0x3ae9 movabs rax, 0x171564271a8
+0x3af3 movabs rcx, 0x171562bd220
+0x3afd movzx eax, byte ptr [rax]
+0x3b00 mov byte ptr [rcx], al
+0x3b02 movabs rax, 0x171564271b0
+0x3b0c movabs rcx, 0x171562bd221
+0x3b16 movzx eax, byte ptr [rax]
+0x3b19 mov byte ptr [rcx], al
+0x3b1b movabs rax, 0x171564271b8
+0x3b25 movabs rcx, 0x171562bd222
+0x3b2f movzx eax, byte ptr [rax]
+0x3b32 mov byte ptr [rcx], al
+0x3b34 movabs rax, 0x171564271c0
+0x3b3e movabs rcx, 0x171562bd223
+0x3b48 movzx eax, byte ptr [rax]
+0x3b4b mov byte ptr [rcx], al
+0x3b4d movabs rax, 0x171564271c8
+0x3b57 movabs rcx, 0x171562bd225
+0x3b61 movzx eax, byte ptr [rax]
+0x3b64 mov byte ptr [rcx], al
+0x3b66 movabs rax, 0x171564271d0
+0x3b70 movabs rcx, 0x171562bd224
+0x3b7a movzx eax, byte ptr [rax]
+0x3b7d mov byte ptr [rcx], al
+0x3b7f movabs rax, 0x171564271d8
+0x3b89 movabs rcx, 0x171562bd227
+0x3b93 movzx eax, byte ptr [rax]
+0x3b96 mov byte ptr [rcx], al
+0x3b98 movabs rax, 0x171564271e0
+0x3ba2 movabs rcx, 0x171562bd228
+0x3bac movzx eax, byte ptr [rax]
+0x3baf mov byte ptr [rcx], al
+0x3bb1 movabs rax, 0x171564271e8
+0x3bbb movabs rcx, 0x171562bd226
+0x3bc5 movzx eax, byte ptr [rax]
+0x3bc8 mov byte ptr [rcx], al
+0x3bca jmp 0x17156253ce6
+0x3bcf movabs rdx, 0x171562bd224
+0x3bd9 xor ecx, ecx
+0x3bdb movabs r8, 0x171562bd225
+0x3be5 movabs rax, 0x171562bd223
+0x3bef mov byte ptr [rdx], 1
+0x3bf2 movabs rdx, 0x171562bd228
+0x3bfc mov byte ptr [r8], 1
+0x3c00 movabs r8, 0x171562bd227
+0x3c0a mov byte ptr [rax], 1
+0x3c0d movabs rax, 0x171562a7c90
+0x3c17 mov byte ptr [rdx], 1
+0x3c1a movabs rdx, 0x17156426f28
+0x3c24 mov byte ptr [r8], 1
+0x3c28 movabs r8, 0x171562bd226
+0x3c32 cmp byte ptr [rdx], 0
+0x3c35 mov byte ptr [r8], 1
+0x3c39 jmp 0x17156253cd0
+0x3c3e movabs rax, 0x171562a7cb8
+0x3c48 movsd xmm0, qword ptr [rax]
+0x3c4c movabs rax, 0x171562bd21c
+0x3c56 ucomisd xmm1, xmm0
+0x3c5a jbe 0x17156253975
+0x3c60 mov dword ptr [rax], 1
+0x3c66 movabs rdx, 0x171562bd224
+0x3c70 xor ecx, ecx
+0x3c72 movabs r8, 0x171562bd225
+0x3c7c movabs rax, 0x171562bd223
+0x3c86 mov byte ptr [rdx], 0
+0x3c89 movabs rdx, 0x171562bd228
+0x3c93 mov byte ptr [r8], 1
+0x3c97 movabs r8, 0x171562bd227
+0x3ca1 mov byte ptr [rax], 1
+0x3ca4 movabs rax, 0x171562a7cd0
+0x3cae mov byte ptr [rdx], 0
+0x3cb1 movabs rdx, 0x17156426f28
+0x3cbb mov byte ptr [r8], 0
+0x3cbf movabs r8, 0x171562bd226
+0x3cc9 cmp byte ptr [rdx], 0
+0x3ccc mov byte ptr [r8], 0
+0x3cd0 sete cl
+0x3cd3 movsd xmm0, qword ptr [rax + rcx*8]
+0x3cd8 movabs rax, 0x171562c6fa8
+0x3ce2 movsd qword ptr [rax], xmm0

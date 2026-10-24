@@ -1,0 +1,140 @@
+{
+  "bot": 1,
+  "passed": true,
+  "combinations": 256,
+  "gates_per_combination": 8,
+  "branch_checks": 2048,
+  "failed_combinations": [],
+  "gates": [
+    {
+      "profile_index": 0,
+      "input": "RunStrategyA",
+      "input_rva": "0x6a580",
+      "start_rva": "0x12424",
+      "branch_rva": "0x12463",
+      "enabled_rva": "0x12469",
+      "disabled_rva": "0x12fb9",
+      "instructions": [
+        "0x12424 movabs rax, 0x23e5aa7a580",
+        "0x1242e movabs r9, 0x4034000000000000",
+        "0x12438 movabs rbx, 0x23e5aa57d20",
+        "0x12442 movabs r12, 0x23e5aa79f70",
+        "0x1244c movabs r13, 0x23e5aa17500",
+        "0x12456 movabs r15, 0x23e5aa28aa0",
+        "0x12460 cmp byte ptr [rax], 0",
+        "0x12463 je 0x23e5aa22fb9"
+      ]
+    },
+    {
+      "profile_index": 1,
+      "input": "RunStrategyB",
+      "input_rva": "0x6a588",
+      "start_rva": "0x12fb9",
+      "branch_rva": "0x12fcf",
+      "enabled_rva": "0x12fd5",
+      "disabled_rva": "0x138bc",
+      "instructions": [
+        "0x12fb9 movabs rax, 0x23e5aa7a588",
+        "0x12fc3 cmp byte ptr [rax], 0",
+        "0x12fc6 mov rax, rdi",
+        "0x12fc9 mov rdi, rsi",
+        "0x12fcc mov rsi, rax",
+        "0x12fcf je 0x23e5aa238bc"
+      ]
+    },
+    {
+      "profile_index": 2,
+      "input": "RunStrategyC",
+      "input_rva": "0x6a590",
+      "start_rva": "0x138bc",
+      "branch_rva": "0x138d3",
+      "enabled_rva": "0x138d9",
+      "disabled_rva": "0x140f1",
+      "instructions": [
+        "0x138bc movabs rax, 0x23e5aa7a590",
+        "0x138c6 movabs rcx, 0x408c200000000000",
+        "0x138d0 cmp byte ptr [rax], 0",
+        "0x138d3 je 0x23e5aa240f1"
+      ]
+    },
+    {
+      "profile_index": 3,
+      "input": "RunStrategyD",
+      "input_rva": "0x6a598",
+      "start_rva": "0x140f1",
+      "branch_rva": "0x140fe",
+      "enabled_rva": "0x14104",
+      "disabled_rva": "0x147e1",
+      "instructions": [
+        "0x140f1 movabs rax, 0x23e5aa7a598",
+        "0x140fb cmp byte ptr [rax], 0",
+        "0x140fe je 0x23e5aa247e1"
+      ]
+    },
+    {
+      "profile_index": 4,
+      "input": "RunStrategyE",
+      "input_rva": "0x6a5a0",
+      "start_rva": "0x147e1",
+      "branch_rva": "0x147f8",
+      "enabled_rva": "0x147fe",
+      "disabled_rva": "0x14f16",
+      "instructions": [
+        "0x147e1 movabs rax, 0x23e5aa7a5a0",
+        "0x147eb movabs r8, 0x23e5aa5ff00",
+        "0x147f5 cmp byte ptr [rax], 0",
+        "0x147f8 je 0x23e5aa24f16"
+      ]
+    },
+    {
+      "profile_index": 5,
+      "input": "RunStrategyF",
+      "input_rva": "0x6a5a8",
+      "start_rva": "0x14f16",
+      "branch_rva": "0x14f23",
+      "enabled_rva": "0x14f29",
+      "disabled_rva": "0x1580e",
+      "instructions": [
+        "0x14f16 movabs rax, 0x23e5aa7a5a8",
+        "0x14f20 cmp byte ptr [rax], 0",
+        "0x14f23 je 0x23e5aa2580e"
+      ]
+    },
+    {
+      "profile_index": 6,
+      "input": "RunStrategyG",
+      "input_rva": "0x6a5b0",
+      "start_rva": "0x1580e",
+      "branch_rva": "0x1581b",
+      "enabled_rva": "0x15821",
+      "disabled_rva": "0x15eee",
+      "instructions": [
+        "0x1580e movabs rax, 0x23e5aa7a5b0",
+        "0x15818 cmp byte ptr [rax], 0",
+        "0x1581b je 0x23e5aa25eee"
+      ]
+    },
+    {
+      "profile_index": 7,
+      "input": "RunStrategyH",
+      "input_rva": "0x6a5b8",
+      "start_rva": "0x15eee",
+      "branch_rva": "0x15efb",
+      "enabled_rva": "0x15f01",
+      "disabled_rva": "0x16730",
+      "instructions": [
+        "0x15eee movabs rax, 0x23e5aa7a5b8",
+        "0x15ef8 cmp byte ptr [rax], 0",
+        "0x15efb je 0x23e5aa26730"
+      ]
+    }
+  ],
+  "tool_sha256": "869b025e2adc6f16f58396c850481267b07eda17e46b1f09d08be8eefc2f3350",
+  "metadata_sha256": "732905b62143980f94c360226bfb75120d52bfccb7e646a3a0cc9be9d3e21adb",
+  "profile_evidence_sha256": "840d664cd82aca71535557f8f45fb1d948a749cccf3f04ef3251e5698972c294",
+  "binding_evidence_sha256": "2e45d5137667f3ba052ac380ab33c7fb9407de20b35f8f6f94f5143e97890bae",
+  "code_sha256": "e099f124084093c3fdc8651d5f5326709b165248982e5d4eb7394afcbb8177a4",
+  "data_sha256": "2ad9ad0ea90a8f8df88170348a71a070d475174122c9eae7df8deb1fb32c61f4",
+  "results_sha256": "148f528bed797201802f26e4eba026bd8ce9ddcc798e61a3cd085a8a665f9de3",
+  "scope": "Only eight original enable gates for all 256 input combinations. Does not execute or validate strategy bodies, order management, or reconstructed MQL5."
+}
