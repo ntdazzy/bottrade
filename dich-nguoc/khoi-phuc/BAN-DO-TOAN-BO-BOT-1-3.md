@@ -70,11 +70,11 @@ phép đối chiếu trong phạm vi cụ thể; không đánh dấu hoàn tất
 | P19 | Hết hạn thật và tự quản lý hết hạn | Tham số ở `0x7500` / `0xe0c0`, nơi dùng trong chiến lược | Đã so cách tính thời hạn; chưa toàn bộ việc hủy khi đến hạn |
 | P20 | Dừng lỗ/chốt lời sau khớp | `0x271f0`, `0x2abc0` / `0x32f60`, `0x37590` | Cần cả hai chiều, đặt sau khớp và kết quả sửa |
 | P21 | Dời dừng lỗ/chốt lời, hòa vốn, phục hồi theo thời gian | Cùng hai hàm quản lý vị thế và các `UseHL*`, `AdjustTrail*` | Cần từng chế độ, giá kích hoạt, giới hạn và thử lại |
-| P22 | Dừng/chốt ảo và chờ chuyển thành lệnh thật | `0x3d200`, `0x3d5a0`, `0x3d640` / `0x47f10`, `0x482b0`, `0x484c0`, `0x48560` | Cần các bảng theo vé, đầy bảng, vé đã đóng và khởi động lại |
+| P22 | Dừng/chốt ảo và chờ chuyển thành lệnh thật | `0x3d200`, `0x3d5a0`, `0x3d640` / `0x47f10`, `0x482b0`, `0x484c0`, `0x48560` | Đã phân tích bảng 500 hàng, xác nhận hằng làm tròn, hai nơi truyền vé, 7 đối số thông báo và sáu ca chốt lời gốc; chưa dựng/so MQL5. Còn kiểm nhánh đầy bảng, dọn bảng, lỗi và khởi động lại; [bằng chứng](PHAN-TICH-BANG-DUNG-AO-BOT-1-3.md) |
 | P23 | Đóng vị thế và xóa theo bộ lọc | `0x3d010`, các hàm quét / `0x47d20`, các hàm quét | Cần mã giá, khoảng cấm sửa/đóng, cả hai chiều và lỗi |
 | P24 | Giới hạn lỗ ngày/tổng và vốn | `0x10f60`, `0x18aa0`, `0x1efa0` / `0x17f00`, `0x20ef0`, `0x2a1c0` | Cần phép tổng hợp, thời điểm đặt lại và hành động khi chạm giới hạn |
 | P25 | Giờ giao dịch, thứ Sáu và phiên của nơi giao dịch | Hàm chiến lược, các hàm giờ, chuỗi `[SESSIONS]` | Cần các mốc, đổi ngày, lịch phiên và trường hợp không có phiên |
-| P26 | Giờ UTC và đổi giờ theo mùa | `0x17840`, `0x17d20` / `0x7e20`, `0x20150` | Đã có phân tích riêng và đọc 4 hằng số gốc cho giờ theo mùa; [bằng chứng và việc còn lại](PHAN-TICH-GIO-MUA-HE-BOT-1-3.md). Chưa dựng/so hàm này; UTC qua HTTP, phương án thay thế, nhập tay và lỗi vẫn còn |
+| P26 | Giờ UTC và đổi giờ theo mùa | `0x17840`, `0x17d20` / `0x7e20`, `0x20150` | Đã dựng/so giờ theo mùa: 4.737 ca mỗi bot khớp kết quả và thứ tự gọi; [bằng chứng và giới hạn](PHAN-TICH-GIO-MUA-HE-BOT-1-3.md). Còn lỗi đổi ngày đầu tiên, cấp bộ nhớ, ghép EA; UTC qua HTTP, phương án thay thế và nhập tay vẫn còn |
 | P27 | NFP, lãi suất và CPI | Nhóm `0x61b0..0x7310` / `0x6ad0..0x7c30`, chuỗi lỗi/lịch | Đã so chọn thời điểm chặn 1.620 ca mỗi bot; cần tìm sự kiện lịch, lịch thay thế, hủy/đóng và dữ liệu thiếu; [phạm vi](PHAN-TICH-CHAN-TIN-BOT-1-3.md) |
 | P28 | Lịch sử/tệp dữ liệu tin | Bot 3 có chuỗi `newshist.csv`, `news.csv` tại phần khởi tạo/hủy | Cần xác định đường đọc thật, nhánh có sử dụng và dữ liệu đi kèm; chưa khẳng định tính năng đang bật |
 | P29 | Bảng thông tin, nhãn và thao tác biểu đồ | `0x8320`, `0xe1b0`, `0xffb0`, `0x45b70`, `0x47740` / `0xef40`, `0x14fa0`, `0x16e80`, `0x53a10`, `0x555e0` | Cần từng đối tượng, nội dung, màu/cỡ chữ, vị trí và hành vi hiển thị khi đo lại quá khứ |
@@ -95,9 +95,11 @@ thứ tự, giá trị mặc định, các lựa chọn và tác dụng thật. 
 bảng hiển thị, trạng thái sau khởi động lại và lỗi; cùng tổng lời/lỗ
 không đủ. Mã trung gian C không được gọi là nguồn MQL5 gốc.
 
-Có thể nhờ Claude kiểm độc lập một phần của bảng. Chưa có đánh giá
-Claude thành công ở các lượt trước, nên không dùng làm dấu xác nhận.
-Các đánh giá mới, nếu có, phải lưu kèm và kiểm lại với chứng cứ gốc.
+Các lượt mới đã có Claude Opus 5.5 `max` kiểm phần chọn chiến lược,
+phân tích giờ theo mùa và bảng dừng ảo; kết quả và kết luận sau đối
+chiếu được lưu ở `danh-gia-claude/`. Không dùng lời nhận xét thay cho
+phép so với mã gốc. Lượt mới bật thêm `ultracode` cho phần khó;
+[biên nhận cấu hình](danh-gia-claude/cau-hinh-20261024/receipt.json).
 Lượt kiểm phương pháp cài đặt bị Claude từ chối với nhãn `[cyber]`;
 [biên nhận](../.local/bot1-3-inputs-20261023/claude-method-review/run.json).
 Không dùng phản hồi này làm xác nhận độc lập.

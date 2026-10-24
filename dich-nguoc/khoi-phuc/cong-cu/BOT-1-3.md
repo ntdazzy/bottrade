@@ -273,6 +273,32 @@ Lượt hiện hành: `volume-validation-20261024-r5`, bản dựng
 đúng kết quả gốc r3 vì đầu vào giống từng byte; có biên nhận riêng.
 [Phạm vi và các lượt chưa đạt](../PHAN-TICH-KHOI-LUONG-HOP-LE-BOT-1-3.md).
 
+## Bộ kiểm giờ theo mùa
+
+`kiem-gio-mua-he-bot-1-3.py MODE BOT RUN [--build BUILD]` kiểm nguyên
+hàm `AmericanDST` của hai bot. Thứ tự bắt buộc: tạo ca → biên dịch →
+chạy MQL5 → chạy mã gốc → so kết quả.
+
+```powershell
+python -I -B -X utf8 dich-nguoc/khoi-phuc/cong-cu/kiem-gio-mua-he-bot-1-3.py prepare 1 dst-moi
+& dich-nguoc/khoi-phuc/cong-cu/bien-dich.ps1 -Bot 1 -Terminal 'dich-nguoc/.local/claude-recovery-20261023/mt5' -Run b1-dst-moi -Source 'dich-nguoc/khoi-phuc/bot-cua-toi-1/source/MQL5/Scripts/bot-cua-toi-1/Bot1AmericanDSTCheck.mq5'
+python -I -B -X utf8 dich-nguoc/khoi-phuc/cong-cu/kiem-gio-mua-he-bot-1-3.py mql5 1 dst-moi --build b1-dst-moi
+python -I -B -X utf8 dich-nguoc/khoi-phuc/cong-cu/kiem-gio-mua-he-bot-1-3.py original 1 dst-moi
+python -I -B -X utf8 dich-nguoc/khoi-phuc/cong-cu/kiem-gio-mua-he-bot-1-3.py compare 1 dst-moi
+```
+
+Đổi `1` và tên nguồn để kiểm bot 3. Chỉ chạy MT5 riêng, tắt giao dịch.
+Đầu ra ở `bot-cua-toi-N/bang-chung/kiem-gio-mua-he/RUN/`.
+Đồng hồ và các lỗi giả định được cấp sẵn. Các kết quả phép chia dư,
+đổi ngày và ghép chuỗi được đo thật trên MT5 rồi cấp vào hàm gốc;
+mỗi lời gọi phải đúng đối số và thứ tự. Mã gốc chạy cả hai hàm sao
+chép/hủy chuỗi, dừng nếu nhảy ra ngoài các hàm/ranh giới đã xác định.
+
+Lượt `dst-20261024-r1`, bản dựng `b1-american-dst-01` và
+`b3-american-dst-01`: 4.737 ca mỗi bot khớp kết quả và toàn bộ dấu vết
+lời gọi. Không chứng minh lỗi đổi ngày đầu tiên với vùng chưa khởi
+tạo, lỗi cấp bộ nhớ hoặc toàn bộ P26. [Phạm vi](../PHAN-TICH-GIO-MUA-HE-BOT-1-3.md).
+
 ## Đối chứng lời gọi MT5 và phân tích nạp vốn
 
 - `doi-chung-loi-goi-bo-sung.py NEW_RUN`: biên dịch thư viện có nguồn

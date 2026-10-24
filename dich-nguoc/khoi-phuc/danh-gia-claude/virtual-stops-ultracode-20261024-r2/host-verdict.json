@@ -1,0 +1,15 @@
+{
+  "status": "analysis-reviewed-no-production-source-accepted",
+  "followed_up": [
+    "Read native warning setup for all three functions",
+    "Decoded all nine warning string descriptors from SHA-256 verified native regions",
+    "Resolved seven argument types, exact strings and the separate guard==0 capacity choice"
+  ],
+  "evidence": "doi-chung-mt5/bang-dung-ao-20261024/full-table-warning-schema.json",
+  "qualification": "The report claim that guard is always1 during EA execution is broader than captured evidence. Only observed startup writes were checked; preserve uchar and exact comparisons.",
+  "remaining": [
+    "Direct API opcode/property/array-helper calibration",
+    "Complete table state and error comparisons",
+    "Do not use incomplete Bot3 source snippet as canonical source"
+  ]
+}

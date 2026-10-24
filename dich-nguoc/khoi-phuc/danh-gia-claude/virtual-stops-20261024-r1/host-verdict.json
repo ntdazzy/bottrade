@@ -1,0 +1,25 @@
+{
+  "status": "analysis-partly-confirmed-source-not-accepted",
+  "confirmed": [
+    "500x3-double stop table per bot and additional 500x2-double take table in bot3; exact byte ==1 guard",
+    "Rounding constants read from verified memory: -0.5000001 and +0.5000001",
+    "Ticket register at both bot3 take-level call sites confirmed from native instructions",
+    "Six direct native take-level cases including insertion of quiet NaN with empty table and guard1"
+  ],
+  "evidence": [
+    "doi-chung-mt5/bang-dung-ao-20261024/rounding.json",
+    "doi-chung-mt5/bang-dung-ao-20261024/take-profit-call-sites.json",
+    "doi-chung-mt5/bang-dung-ao-20261024/native-take-nan.json"
+  ],
+  "not_accepted": [
+    "Proposed source omits full-table PositionsTotal and seven-argument diagnostic call",
+    "Proposed bool guard does not preserve explicit native byte ==1 tests for arbitrary component inputs",
+    "No compiled MQL5/native suite for all table functions and side effects"
+  ],
+  "still_required": [
+    "Exact full-table diagnostics and arguments",
+    "Cleanup and position selection side effects, failed reads/resizes",
+    "Duplicate/closed/large/negative/zero ticket cases, time conversions, restart state",
+    "Complete MQL5 and native comparison, then integration with both position-management branches"
+  ]
+}

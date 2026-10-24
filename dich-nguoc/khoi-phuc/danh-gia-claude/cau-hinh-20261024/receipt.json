@@ -1,0 +1,62 @@
+{
+  "cli_version": "2.1.308",
+  "cli_sha256": "c9796ba22a9221586b36371b36f5b66198d66eb4badf6a4cf4a5f7b07becea53",
+  "model_requested": "claude-opus-5-5",
+  "effort": "max",
+  "session_settings": {
+    "ultracode": true
+  },
+  "local_command": "/effort ultracode on",
+  "local_command_response": "Ultracode on (this session only): dynamic workflows on every task. Effort stays max.",
+  "response_sha256": "38057ed547eb27726668da4844ff8ae429a457502881cc8172c37fe16b572065",
+  "documentation": "https://code.claude.com/docs/en/model-config#adjust-effort-level",
+  "jobs": [
+    {
+      "name": "virtual-stops-ultracode-r2",
+      "pid_at_start": 3000,
+      "session": "68c8e8d3-885c-43a1-9503-826789519b69",
+      "ultracode_settings_sha256": "a18882b158a2f4d69e92279528846ae0af0087a8bc3edbf0c88d582817bea6c1",
+      "observed_requests": [
+        {
+          "timestamp": "2026-10-24T08:40:08.314Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-24T08:40:18.743Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-24T08:41:34.409Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        }
+      ]
+    },
+    {
+      "name": "season-time-ultracode-r3",
+      "pid_at_start": 2272,
+      "session": "378d8524-8430-4fc3-9ec6-5a3bde5c5f82",
+      "ultracode_settings_sha256": "a18882b158a2f4d69e92279528846ae0af0087a8bc3edbf0c88d582817bea6c1",
+      "observed_requests": [
+        {
+          "timestamp": "2026-10-24T08:47:30.928Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-24T08:47:36.973Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-24T08:47:40.461Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        }
+      ]
+    }
+  ],
+  "limit": "Ultracode enabled/configured; this receipt does not assert that workflow child agents were spawned. Consult tasks remain read-only."
+}

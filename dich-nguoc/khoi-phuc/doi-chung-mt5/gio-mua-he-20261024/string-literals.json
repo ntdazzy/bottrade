@@ -1,0 +1,134 @@
+[
+  {
+    "bot": 1,
+    "rva": "0x517e0",
+    "descriptor_hex": "00000000d817a65a3e020000",
+    "flag": 0,
+    "pointer": "0x23e5aa617d8",
+    "length": 0,
+    "text": "",
+    "capture_region": "0000023e5aa5f000-program-data.bin",
+    "capture_region_sha256": "2ad9ad0ea90a8f8df88170348a71a070d475174122c9eae7df8deb1fb32c61f4"
+  },
+  {
+    "bot": 1,
+    "rva": "0x5cbb8",
+    "descriptor_hex": "000000007ccba65a3e020000",
+    "flag": 0,
+    "pointer": "0x23e5aa6cb7c",
+    "length": 28,
+    "text": "AmericanDST(): Invalid year.",
+    "capture_region": "0000023e5aa5f000-program-data.bin",
+    "capture_region_sha256": "2ad9ad0ea90a8f8df88170348a71a070d475174122c9eae7df8deb1fb32c61f4"
+  },
+  {
+    "bot": 1,
+    "rva": "0x5cbf0",
+    "descriptor_hex": "00000000dccba65a3e020000",
+    "flag": 0,
+    "pointer": "0x23e5aa6cbdc",
+    "length": 6,
+    "text": ".04.01",
+    "capture_region": "0000023e5aa5f000-program-data.bin",
+    "capture_region_sha256": "2ad9ad0ea90a8f8df88170348a71a070d475174122c9eae7df8deb1fb32c61f4"
+  },
+  {
+    "bot": 1,
+    "rva": "0x5cc20",
+    "descriptor_hex": "000000000ccca65a3e020000",
+    "flag": 0,
+    "pointer": "0x23e5aa6cc0c",
+    "length": 6,
+    "text": ".10.01",
+    "capture_region": "0000023e5aa5f000-program-data.bin",
+    "capture_region_sha256": "2ad9ad0ea90a8f8df88170348a71a070d475174122c9eae7df8deb1fb32c61f4"
+  },
+  {
+    "bot": 1,
+    "rva": "0x5cc50",
+    "descriptor_hex": "000000003ccca65a3e020000",
+    "flag": 0,
+    "pointer": "0x23e5aa6cc3c",
+    "length": 6,
+    "text": ".03.01",
+    "capture_region": "0000023e5aa5f000-program-data.bin",
+    "capture_region_sha256": "2ad9ad0ea90a8f8df88170348a71a070d475174122c9eae7df8deb1fb32c61f4"
+  },
+  {
+    "bot": 1,
+    "rva": "0x5cc80",
+    "descriptor_hex": "000000006ccca65a3e020000",
+    "flag": 0,
+    "pointer": "0x23e5aa6cc6c",
+    "length": 6,
+    "text": ".11.01",
+    "capture_region": "0000023e5aa5f000-program-data.bin",
+    "capture_region_sha256": "2ad9ad0ea90a8f8df88170348a71a070d475174122c9eae7df8deb1fb32c61f4"
+  },
+  {
+    "bot": 3,
+    "rva": "0x59d20",
+    "descriptor_hex": "00000000189d2a5671010000",
+    "flag": 0,
+    "pointer": "0x171562a9d18",
+    "length": 0,
+    "text": "",
+    "capture_region": "00000171562a7000-program-data.bin",
+    "capture_region_sha256": "1d8c5ee1af972615461e71ede70b519d30bd876561cf96169606e4c9aeaab073"
+  },
+  {
+    "bot": 3,
+    "rva": "0x66e58",
+    "descriptor_hex": "000000001c6e2b5671010000",
+    "flag": 0,
+    "pointer": "0x171562b6e1c",
+    "length": 28,
+    "text": "AmericanDST(): Invalid year.",
+    "capture_region": "00000171562a7000-program-data.bin",
+    "capture_region_sha256": "1d8c5ee1af972615461e71ede70b519d30bd876561cf96169606e4c9aeaab073"
+  },
+  {
+    "bot": 3,
+    "rva": "0x66e90",
+    "descriptor_hex": "000000007c6e2b5671010000",
+    "flag": 0,
+    "pointer": "0x171562b6e7c",
+    "length": 6,
+    "text": ".04.01",
+    "capture_region": "00000171562a7000-program-data.bin",
+    "capture_region_sha256": "1d8c5ee1af972615461e71ede70b519d30bd876561cf96169606e4c9aeaab073"
+  },
+  {
+    "bot": 3,
+    "rva": "0x66ec0",
+    "descriptor_hex": "00000000ac6e2b5671010000",
+    "flag": 0,
+    "pointer": "0x171562b6eac",
+    "length": 6,
+    "text": ".10.01",
+    "capture_region": "00000171562a7000-program-data.bin",
+    "capture_region_sha256": "1d8c5ee1af972615461e71ede70b519d30bd876561cf96169606e4c9aeaab073"
+  },
+  {
+    "bot": 3,
+    "rva": "0x66ef0",
+    "descriptor_hex": "00000000dc6e2b5671010000",
+    "flag": 0,
+    "pointer": "0x171562b6edc",
+    "length": 6,
+    "text": ".03.01",
+    "capture_region": "00000171562a7000-program-data.bin",
+    "capture_region_sha256": "1d8c5ee1af972615461e71ede70b519d30bd876561cf96169606e4c9aeaab073"
+  },
+  {
+    "bot": 3,
+    "rva": "0x66f20",
+    "descriptor_hex": "000000000c6f2b5671010000",
+    "flag": 0,
+    "pointer": "0x171562b6f0c",
+    "length": 6,
+    "text": ".11.01",
+    "capture_region": "00000171562a7000-program-data.bin",
+    "capture_region_sha256": "1d8c5ee1af972615461e71ede70b519d30bd876561cf96169606e4c9aeaab073"
+  }
+]

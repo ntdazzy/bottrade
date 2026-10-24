@@ -1,0 +1,58 @@
+[
+  {
+    "caller": "0x32f60",
+    "load": "0x35da2",
+    "code_sha256": "477ca81c8dddbecf95369b7b496f1fdd2f8d7601b7d327d6c8d1f01a9461a044",
+    "instructions": [
+      "0x35d5f jne 0x17156286f5f",
+      "0x35d65 movabs rax, 0x171562bd588",
+      "0x35d6f mov rbp, qword ptr [rsp + 0x40]",
+      "0x35d74 mov ecx, 1",
+      "0x35d79 movapd xmm1, xmm6",
+      "0x35d7d movsd xmm2, qword ptr [rax]",
+      "0x35d81 movabs rax, 0x17156297f10",
+      "0x35d8b mov r9, rbp",
+      "0x35d8e call rax",
+      "0x35d90 movabs r15, 0x171562bd670",
+      "0x35d9a movapd xmm10, xmm0",
+      "0x35d9f mov rdx, rbp",
+      "0x35da2 movabs rax, 0x171562982b0",
+      "0x35dac movsd qword ptr [r15], xmm0",
+      "0x35db1 movapd xmm0, xmm7",
+      "0x35db5 call rax",
+      "0x35db7 movabs rax, 0x171562c24a0",
+      "0x35dc1 movabs rcx, 0x171562c4798",
+      "0x35dcb movapd xmm9, xmm0",
+      "0x35dd0 movsd xmm1, qword ptr [r15]",
+      "0x35dd5 movsd qword ptr [rax], xmm0"
+    ]
+  },
+  {
+    "caller": "0x37590",
+    "load": "0x3a032",
+    "code_sha256": "9f341e69c456278d9ad0a8af9726fd348ddb210ad69a92a454fb55297a0dc483",
+    "instructions": [
+      "0x39fef jne 0x1715628b14f",
+      "0x39ff5 movabs rax, 0x171562bd588",
+      "0x39fff mov rbp, qword ptr [rsp + 0x48]",
+      "0x3a004 mov ecx, 2",
+      "0x3a009 movapd xmm1, xmm6",
+      "0x3a00d movsd xmm2, qword ptr [rax]",
+      "0x3a011 movabs rax, 0x17156297f10",
+      "0x3a01b mov r9, rbp",
+      "0x3a01e call rax",
+      "0x3a020 movabs r15, 0x171562bd670",
+      "0x3a02a movapd xmm10, xmm0",
+      "0x3a02f mov rdx, rbp",
+      "0x3a032 movabs rax, 0x171562982b0",
+      "0x3a03c movsd qword ptr [r15], xmm0",
+      "0x3a041 movapd xmm0, xmm7",
+      "0x3a045 call rax",
+      "0x3a047 movabs rax, 0x171562c24a0",
+      "0x3a051 movabs rcx, 0x171562c47a0",
+      "0x3a05b movapd xmm9, xmm0",
+      "0x3a060 movsd qword ptr [rax], xmm0",
+      "0x3a064 movsd xmm0, qword ptr [rcx]"
+    ]
+  }
+]

@@ -1,5 +1,10 @@
 # Kết quả khôi phục mã — lượt 23/10/2026
 
+Cập nhật 24/10: phần đổi giờ theo mùa của bot 1 và 3 đã có nguồn MQL5,
+khớp 4.737/4.737 ca mỗi bot; kết quả và thứ tự gọi trùng từng byte,
+biên dịch 0 lỗi/cảnh báo. [Phạm vi](PHAN-TICH-GIO-MUA-HE-BOT-1-3.md).
+Toàn bộ hai bot vẫn chưa có EA chính; không đổi số ca này thành % hoàn thành.
+
 Cập nhật 24/10: kiểm khối lượng hợp lệ đã có nguồn MQL5, khớp
 1.834/1.834 ca mỗi bot; gồm 27 ca dừng vì chia 0 thật cho mỗi bot.
 Đã sửa các điểm yếu của bộ kiểm chọn chiến lược do Claude Opus 5.5
@@ -22,7 +27,7 @@ Lượt tiếp đã đọc trực tiếp 152 nhãn nhìn thấy, nối 28 lựa 
 và dựng phần nạp vốn khớp 616 ca mỗi bot, biên dịch sạch.
 [Bằng chứng và giới hạn](PHAN-TICH-MENU-VA-KHOI-TAO-BOT-1-3.md).
 
-Trạng thái: **DONE_WITH_CONCERNS**. Không bot nào được xác nhận giống bản gốc 100%.
+Trạng thái: **đang khôi phục**. Không bot nào được xác nhận giống bản gốc 100%.
 
 Cập nhật 24/10/2026: đã dựng phần chọn chiến lược bằng MQL5. Bot 1 khớp
 256/256 ca bật/tắt; bot 3 khớp 7.724/7.724 ca cho hai đoạn chọn, gồm

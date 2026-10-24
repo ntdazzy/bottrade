@@ -1,0 +1,38 @@
+{
+  "status": "component-verified-for-stated-cases",
+  "checks": [
+    {
+      "bot": 1,
+      "cases": 4737,
+      "matched": 4737,
+      "ordered_traces_byte_equal": true,
+      "comparison": "dich-nguoc/khoi-phuc/bot-cua-toi-1/bang-chung/kiem-gio-mua-he/dst-20261024-r1/comparison.json",
+      "build_receipt": "dich-nguoc/khoi-phuc/bot-cua-toi-1/bang-chung/bien-dich/b1-american-dst-01/bien-nhan.json",
+      "verified_source_sha256": {
+        "Include/bot-cua-toi-1/Bot1AmericanDST.mqh": "d688edbfb9c2829e1b1db46e6a80aeac9ae000053498192d8647668acebb9acc",
+        "Scripts/bot-cua-toi-1/Bot1AmericanDSTCheck.mq5": "5ecd361f23ea7f0c9512d524caa24b87bdf247ce261905189a100b9f21445a48"
+      },
+      "binary_sha256": "5fd8ffb37dd845e47fb708349d6bce8f6ea32b9c9fc8cbf9b6987737c9c154df"
+    },
+    {
+      "bot": 3,
+      "cases": 4737,
+      "matched": 4737,
+      "ordered_traces_byte_equal": true,
+      "comparison": "dich-nguoc/khoi-phuc/bot-cua-toi-3/bang-chung/kiem-gio-mua-he/dst-20261024-r1/comparison.json",
+      "build_receipt": "dich-nguoc/khoi-phuc/bot-cua-toi-3/bang-chung/bien-dich/b3-american-dst-01/bien-nhan.json",
+      "verified_source_sha256": {
+        "Include/bot-cua-toi-3/Bot3AmericanDST.mqh": "189b475cf848b3147ecbbf2e884cd339ee54769c465aa7bc48a5649cc7441ab8",
+        "Scripts/bot-cua-toi-3/Bot3AmericanDSTCheck.mq5": "f140a93e88b91691c45f3b7211ad073b5f5eada1df784a10fec1a8f5d2d1b61e"
+      },
+      "binary_sha256": "fd3d44995b8c2c0e404a02ce130c335843d4cc35fc92d515db55e85d298406d0"
+    }
+  ],
+  "remaining": [
+    "First TimeToStruct failure with no initialized output",
+    "Allocation failures and underlying platform error codes",
+    "Broker UTC/HTTP/manual offsets and news integration",
+    "Full EA integration and comparison"
+  ],
+  "not_a_whole_bot_completion_percentage": true
+}

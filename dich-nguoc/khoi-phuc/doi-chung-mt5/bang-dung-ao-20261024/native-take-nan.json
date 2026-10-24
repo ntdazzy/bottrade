@@ -1,0 +1,54 @@
+{
+  "native_rva": "0x482b0",
+  "scope": "Native complete small take-profit lookup/insertion function with guard=1 and initially empty table; no external calls reached. Not MQL5 comparison.",
+  "cases": [
+    {
+      "input_bits": "0000000000000000",
+      "return_bits": "0000000000000000",
+      "first_row_bytes": "00000000000000000000000000000000",
+      "stored_ticket": 0.0,
+      "ticket": 1,
+      "guard": 1
+    },
+    {
+      "input_bits": "0000000000000080",
+      "return_bits": "0000000000000000",
+      "first_row_bytes": "00000000000000000000000000000000",
+      "stored_ticket": 0.0,
+      "ticket": 1,
+      "guard": 1
+    },
+    {
+      "input_bits": "000000000000f0bf",
+      "return_bits": "0000000000000000",
+      "first_row_bytes": "00000000000000000000000000000000",
+      "stored_ticket": 0.0,
+      "ticket": 1,
+      "guard": 1
+    },
+    {
+      "input_bits": "000000000000f03f",
+      "return_bits": "000000000000f03f",
+      "first_row_bytes": "000000000000f03f000000000000f03f",
+      "stored_ticket": 1.0,
+      "ticket": 1,
+      "guard": 1
+    },
+    {
+      "input_bits": "000000000000f87f",
+      "return_bits": "000000000000f87f",
+      "first_row_bytes": "000000000000f03f000000000000f87f",
+      "stored_ticket": 1.0,
+      "ticket": 1,
+      "guard": 1
+    },
+    {
+      "input_bits": "000000000000f07f",
+      "return_bits": "000000000000f07f",
+      "first_row_bytes": "000000000000f03f000000000000f07f",
+      "stored_ticket": 1.0,
+      "ticket": 1,
+      "guard": 1
+    }
+  ]
+}

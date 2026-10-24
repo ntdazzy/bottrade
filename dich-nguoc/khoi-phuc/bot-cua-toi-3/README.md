@@ -1,5 +1,9 @@
 # bot-cua-toi-3
 
+Đã dựng giờ theo mùa: 4.737/4.737 ca khớp kết quả và thứ tự gọi;
+biên dịch 0 lỗi/cảnh báo. [Giới hạn](../PHAN-TICH-GIO-MUA-HE-BOT-1-3.md).
+Chưa có EA chính hoàn chỉnh.
+
 Đã dựng kiểm khối lượng hợp lệ: 1.834/1.834 ca khớp, gồm 27 ca dừng vì
 chia 0 chạy thật trong MT5 riêng. [Phạm vi](../PHAN-TICH-KHOI-LUONG-HOP-LE-BOT-1-3.md).
 

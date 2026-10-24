@@ -1,0 +1,78 @@
+{
+  "status": "native-instruction-and-string-analysis-not-runtime-comparison",
+  "instruction_evidence": "full-table-warning-instructions.json",
+  "literal_evidence": "full-table-warning-strings.json",
+  "common_tags": [
+    "0x590008",
+    "0x520004",
+    "0x590008",
+    "0x520004",
+    "0x590008",
+    "0x550005",
+    "0x590008"
+  ],
+  "arguments": [
+    {
+      "index": 0,
+      "type": "string",
+      "value": "Virtual SL table full (",
+      "take_table_variant": "Virtual TP table full ("
+    },
+    {
+      "index": 1,
+      "type": "signed-int32",
+      "value": "0 if raw guard byte == 0 else 500",
+      "difference": "Actual table access separately tests raw guard == 1"
+    },
+    {
+      "index": 2,
+      "type": "string",
+      "value": " slots, "
+    },
+    {
+      "index": 3,
+      "type": "signed-int32",
+      "value": "PositionsTotal() return, called after warning ticket update"
+    },
+    {
+      "index": 4,
+      "type": "string",
+      "value": " open positions) - ticket "
+    },
+    {
+      "index": 5,
+      "type": "signed-int64",
+      "value": "Unconverted input ticket kept in RSI for stop or RBX for take"
+    },
+    {
+      "index": 6,
+      "type": "string",
+      "value": " will not trail."
+    }
+  ],
+  "locations": [
+    {
+      "bot": 1,
+      "function": "0x3d200",
+      "dispatch_call": "0x3d53d",
+      "guard_byte": "0x66410"
+    },
+    {
+      "bot": 3,
+      "function": "0x47f10",
+      "dispatch_call": "0x4824d",
+      "guard_byte": "0x73450"
+    },
+    {
+      "bot": 3,
+      "function": "0x482b0",
+      "dispatch_call": "0x48470",
+      "guard_byte": "0x73450"
+    }
+  ],
+  "remaining": [
+    "Calibrate Dispatch opcode2 directly against a compiled Print call",
+    "Run the warning branches and compare complete ordered effects in native and MQL5",
+    "Array-resize/fault boundaries and all table functions remain open"
+  ]
+}

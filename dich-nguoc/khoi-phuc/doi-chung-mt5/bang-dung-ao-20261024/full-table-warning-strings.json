@@ -1,0 +1,74 @@
+[
+  {
+    "bot": 1,
+    "rva": "0x55d80",
+    "descriptor_hex": "000000004c5da65a3e020000",
+    "text": "Virtual SL table full (",
+    "region": "0000023e5aa5f000-program-data.bin",
+    "region_sha256": "2ad9ad0ea90a8f8df88170348a71a070d475174122c9eae7df8deb1fb32c61f4"
+  },
+  {
+    "bot": 1,
+    "rva": "0x55db0",
+    "descriptor_hex": "000000009c5da65a3e020000",
+    "text": " slots, ",
+    "region": "0000023e5aa5f000-program-data.bin",
+    "region_sha256": "2ad9ad0ea90a8f8df88170348a71a070d475174122c9eae7df8deb1fb32c61f4"
+  },
+  {
+    "bot": 1,
+    "rva": "0x55e08",
+    "descriptor_hex": "00000000cc5da65a3e020000",
+    "text": " open positions) - ticket ",
+    "region": "0000023e5aa5f000-program-data.bin",
+    "region_sha256": "2ad9ad0ea90a8f8df88170348a71a070d475174122c9eae7df8deb1fb32c61f4"
+  },
+  {
+    "bot": 1,
+    "rva": "0x55e50",
+    "descriptor_hex": "000000002c5ea65a3e020000",
+    "text": " will not trail.",
+    "region": "0000023e5aa5f000-program-data.bin",
+    "region_sha256": "2ad9ad0ea90a8f8df88170348a71a070d475174122c9eae7df8deb1fb32c61f4"
+  },
+  {
+    "bot": 3,
+    "rva": "0x5e410",
+    "descriptor_hex": "00000000dce32a5671010000",
+    "text": "Virtual SL table full (",
+    "region": "00000171562a7000-program-data.bin",
+    "region_sha256": "1d8c5ee1af972615461e71ede70b519d30bd876561cf96169606e4c9aeaab073"
+  },
+  {
+    "bot": 3,
+    "rva": "0x5e440",
+    "descriptor_hex": "000000002ce42a5671010000",
+    "text": " slots, ",
+    "region": "00000171562a7000-program-data.bin",
+    "region_sha256": "1d8c5ee1af972615461e71ede70b519d30bd876561cf96169606e4c9aeaab073"
+  },
+  {
+    "bot": 3,
+    "rva": "0x5e498",
+    "descriptor_hex": "000000005ce42a5671010000",
+    "text": " open positions) - ticket ",
+    "region": "00000171562a7000-program-data.bin",
+    "region_sha256": "1d8c5ee1af972615461e71ede70b519d30bd876561cf96169606e4c9aeaab073"
+  },
+  {
+    "bot": 3,
+    "rva": "0x5e4e0",
+    "descriptor_hex": "00000000bce42a5671010000",
+    "text": " will not trail.",
+    "region": "00000171562a7000-program-data.bin",
+    "region_sha256": "1d8c5ee1af972615461e71ede70b519d30bd876561cf96169606e4c9aeaab073"
+  },
+  {
+    "bot": 3,
+    "rva": "0x5e530",
+    "descriptor_hex": "00000000fce42a5671010000",
+    "text": "Virtual TP table full (",
+    "region": "00000171562a7000-program-data.bin",
+    "region_sha256": "1d8c5ee1af972615461e71ede70b519d30bd876561cf96169606e4c9aeaab073"
+  }
+]
