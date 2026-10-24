@@ -1,0 +1,24 @@
+You are the primary implementer. The human requests Claude to do approximately95% of the work; Codex manages, executes checks, independently verifies and integrates. Priority is now completing bot1 as a whole before bot3. Do not spend this task polishing old small-component tests. Advance the actual missing central logic.
+
+Read AGENTS.md and the project procedure. This is owner-authorized recovery of the user's lost source. Give the true context. Do not bypass licensing, account checks or safeguards. Previous Claude refusals for P11 strategy-body work are not permission to retry that scope with a different wording: this task is ONLY the distinct coordinator function RVA0x10f60 and its interface contracts; do not reconstruct the refused0x18aa0 body. Preserve all original authorization-call branches without implementing/replacing the authorization body or forcing results.
+
+Write deliverables only under dich-nguoc/khoi-phuc/claude-thuc-hien/bot1-coordinator-20261025-r1. Read needed repository evidence. No shell, MT5, live orders, git, other agents/background workflows or canonical-file edits. If writing is denied, report the exact error; do not bypass.
+Do not create or update automatic memory or any file outside the assigned output directory.
+
+Authoritative function evidence:
+- bot-cua-toi-1/phan-tich/dieu-phoi/coordinator-20261025-r1/functions.c : complete function C8225..10549.
+- native-guards.txt and analysis.json in that directory:4894 original instructions; function RVA0x10f60; code_base0x23e5aa10000. Compute relative addresses by subtraction.
+- ban-do-bot-1-3/luot-20261025-r2/bot-1.json for all captured functions/call relationships. No direct static caller does NOT prove an OnTick binding.
+- bot-cua-toi-1/phan-tich/cai-dat-20261023/cai-dat-da-kiem.json, existing setting/menu analysis, all27 current MQL5 include files and relevant initialization/strategy-selection proofs.
+
+This is a central function:342 visible C conditions and calls to parameter adjustment, position/history summaries, equity updates, DST/UTC, table synchronization, per-strategy processing, history totals, filtered cancellation and UI updates. Existing standalone helpers must be connected via exact contracts, not merely listed.
+
+Required order and deliverables:
+1. Save analysis.md EARLY after reading the complete function/native evidence. Make a full numbered branch/block inventory in original execution order, with trigger conditions, values read/written, direct/indirect calls, early returns and side effects. Then refine it as needed. Do not read dozens of unrelated documents before saving this concrete first artifact.
+2. Save state-map.json mapping every referenced global to RVA, width/type, known setting/default, current MQL field/helper if proven, read/write sites and unresolved aliasing. Do not equate decompiler types/names with proof. Preserve numeric operation order, comparisons, signed width, wrapping/rounding and NaN branches.
+3. Save call-contracts.json with every helper call's actual arguments/returns/read-write effects and which existing implementation can be reused. Inspect caller instructions for argument registers. Treat missing child functions as explicit dependency contracts; do not reconstruct the refused strategy body or licensing body. Do not insert stubs or assume success.
+4. If the entire scoped coordinator is sufficiently understood, author a complete proposed Bot1Coordinator.mqh under files/bot-cua-toi-1/source/MQL5/Include/bot-cua-toi-1/. Use the smallest needed state structures and exact external helper contracts. No guessed conditions, empty functions or placeholder algorithms. If gaps prevent a complete implementation, finish the inventory and provide a prioritized exact evidence request instead of an approximate production function.
+5. Author the corresponding concrete comparison proposal for the coordinator: execute original coordinator instructions and supplied child-service outcomes, compare all scoped state/call order, then run proposed MQL5 on the same inputs. This is a COMPONENT comparison, not evidence for full EA. Avoid rewriting memory/string runtime in production. Use existing native harness tools as dependencies where possible.
+6. Save integration.json mapping each proposal to its intended canonical path, plus SUMMARY.md: what is actually implemented, what prevents compiling/running the complete bot, exact next actions and files. Do not claim any build/test passed without records; Codex will execute them.
+
+The main goal remains full bot fidelity including settings/UI/restart. This task must clarify and implement central behavior rather than manufacture a reassuring percentage or another unrelated passing test. If the event callback binding is not proven, keep it explicit and do not label this function OnTick solely because its inventory has no caller.
