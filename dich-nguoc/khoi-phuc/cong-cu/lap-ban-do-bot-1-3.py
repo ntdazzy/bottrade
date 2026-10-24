@@ -240,6 +240,9 @@ def main():
                 (0x17840 if bot==1 else 0x7e20):('kiem-gio-mua-he/dst-20261024-r1','AmericanDST','Hàm giờ theo mùa trong bộ ca đã ghi; các lỗi và giờ sát biên năm xa còn mở.'),
             }
             scan_rvas={1:{0x31f40:'0',0x323e0:'1',0x32ce0:'2'},3:{0x3e490:'2',0x47330:'3'}}
+            selection_rvas={1:[0x32110,0x325b0],3:[0x3da90,0x3dd60]}
+            for selection_rva in selection_rvas[bot]:
+                new_parts[selection_rva]=('kiem-chon-lenh-huy/selection-20261024-r2','PendingSelection','Bộ 2.522 ca mua/bán mỗi bot: chọn vé qua hủy/gửi, dọn bảng và thông báo. Truy vấn/kết quả gửi cấp sẵn; còn tài khoản thực, lỗi cấp bộ nhớ, nơi gọi và toàn EA.')
             for scan_rva in scan_rvas[bot]:
                 new_parts[scan_rva]=('kiem-quet-lenh/scan-20261024-r2','OrderScan','Quét/đếm/dọn bảng/giới hạn trong bộ ca; truy vấn và trạng thái chọn được cấp. Còn tài khoản thật, lỗi cấp bộ nhớ và ghép EA.')
             for send_rva in [0x950,*( [0x235c0,0x23fa0,0x26060,0x26360] if bot==1 else [0x2ecf0,0x2f6d0,0x31790,0x31a90])]:
@@ -258,6 +261,10 @@ def main():
                         engine=ROOT/f'doi-chung-mt5/huy-lenh-cho-20261024/engine-cancel-b{bot}-r2/comparison.json'
                         tested=json.loads(engine.read_text());assert tested['cases']==tested['matched']==964 and tested['failed']==0
                         proof.update(tester_comparison=engine.relative_to(ROOT).as_posix(),tester_comparison_sha256=sha(engine))
+                    if rva in selection_rvas[bot]:
+                        engine=ROOT/f'doi-chung-mt5/chon-lenh-huy-20261024/engine-selection-b{bot}-r2/comparison.json'
+                        tested=json.loads(engine.read_text());assert tested['cases']==tested['matched']==2522 and tested['failed']==0
+                        proof.update(function_case_kind=selection_rvas[bot].index(rva),tester_comparison=engine.relative_to(ROOT).as_posix(),tester_comparison_sha256=sha(engine))
             pipeline_rvas={1:{0x950,0x231c0,0x235c0,0x23fa0,0x26060,0x26360,0x2e6d0,0x32dd0,0x336d0},
                            3:{0x950,0x2e8f0,0x2ecf0,0x2f6d0,0x31790,0x31a90,0x3bb10,0x3e580,0x3ee80}}
             if proof and rva in pipeline_rvas[bot]:

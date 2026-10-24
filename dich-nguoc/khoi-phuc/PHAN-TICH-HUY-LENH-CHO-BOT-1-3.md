@@ -3,13 +3,15 @@
 Đã dựng hàm hủy một vé của mỗi bot: 964/964 ca khớp mã gốc, chương
 trình MQL5 và máy đo quá khứ. Hai bản biên dịch đều 0 lỗi, 0 cảnh báo.
 Đã giữ mã C/lệnh máy của ba hàm mỗi bot và kiểm SHA-256 EX5 gốc.
-Hai hàm chọn vé và các hàm sửa lệnh vẫn chưa phục hồi đủ.
+Đã ghép thêm hai hàm chọn vé của mỗi bot với hủy/gửi và dọn bảng:
+2.522/2.522 ca mỗi bot khớp cả ba nơi chạy. Các hàm sửa lệnh và ghép
+toàn EA vẫn chưa phục hồi đủ.
 
 | Phần | Bot 1 | Bot 3 | Còn thiếu |
 |---|---|---|---|
 | Kiểm vùng cấm rồi tạo/gửi hủy | `0x34150` | `0x32450` | Đã nối dữ liệu giá bằng nguồn đối chứng, dựng và so 964 ca mỗi bot; còn ghép nơi gọi, dữ liệu nơi giao dịch và toàn EA |
-| Chọn vé nhánh mua rồi hủy, dọn bảng, in | `0x32110` | `0x3da90` | Chốt toàn bộ điều kiện chọn giá/vé, tác dụng phụ và ghép hàm hủy |
-| Chọn vé nhánh bán rồi hủy, dọn bảng, in | `0x325b0` | `0x3dd60` | Cùng các điểm trên |
+| Chọn vé nhánh mua rồi hủy, dọn bảng, in | `0x32110` | `0x3da90` | Đã dựng và ghép nguyên luồng; bộ 2.522 ca mua/bán mỗi bot khớp. Còn trạng thái chọn/dữ liệu tài khoản thực và ghép EA |
+| Chọn vé nhánh bán rồi hủy, dọn bảng, in | `0x325b0` | `0x3dd60` | Cùng bộ kiểm phía trên; còn các giới hạn tương tự |
 
 Hai hàm chọn vé gọi trực tiếp hàm hủy phía trên. Không thay khối này
 bằng lời hủy đơn giản: khối hủy còn chọn lại lệnh, đọc dữ liệu giá,
@@ -62,7 +64,8 @@ ask cho thấy con trỏ dữ liệu và lệnh đọc ở +8/+16, không dựa 
 Đã đọc lại đủ sáu địa chỉ trong bảng nhảy mỗi bot để nối loại 2..7.
 Đã so chọn vé thất bại, đọc giá thất bại, số âm/0/sát ngưỡng/không xác
 định/vô hạn, loại có phần 32 bit cao, dừng, trạng thái cũ và gửi thành
-công/thất bại. Còn ghép với hai hàm chọn vé và toàn EA.
+công/thất bại. Hai hàm chọn vé đã ghép trong lượt mới bên dưới;
+còn các hàm sửa lệnh, nơi gọi phía trên và toàn EA.
 
 ## Nguồn và kết quả kiểm
 
@@ -87,6 +90,68 @@ Lượt `cancel-20261024-r1` dừng ở kiểm thu hồi chuỗi tạm trong b�
 Đã đo đúng nguyên nhân: chuỗi kết quả còn trong ô trả về của dịch vụ.
 Lượt r2 thu hồi ô tạm sau khi hàm trả về rồi kiểm cân bằng bộ nhớ;
 không sửa thuật toán MQL5 để làm phép so đạt. Bằng chứng r1 được giữ.
+
+## Chọn lệnh cần hủy và dọn trạng thái
+
+Trước viết mã, đã đọc lại lệnh máy, kiểm mã tệp gốc và giá trị khởi
+đầu ở cả hai bot. [Phân tích bot 1](bot-cua-toi-1/phan-tich/huy-lenh-cho/selection-20261024-r1/analysis.json),
+[bot 3](bot-cua-toi-3/phan-tich/huy-lenh-cho/selection-20261024-r1/analysis.json).
+
+- Chỉ đọc tổng lệnh một lần; quét từ tổng xuống 0, đủ hai đầu.
+- Mã nhận diện chiến lược được đọc theo số nguyên có dấu 32 bit sau
+  lời gọi truy vấn; loại lệnh so đủ 64 bit. Mã giá so đúng từng ký tự.
+- Nhánh mua chọn giá lớn nhất trên 0; nhánh bán chọn giá nhỏ nhất dưới
+  **9999**, giữ đúng hằng của bản gốc. Bằng giá không đổi vé đã chọn.
+- Đọc giá lần đầu để so; khi chọn thì đọc lần hai để lưu mốc mới.
+  Hai lần đọc khác nhau, hoặc lần hai ra số không xác định, vẫn được giữ.
+- Gọi nguyên hàm hủy một vé rồi bỏ giá trị trả về. Dù bị chặn, dừng
+  hay gửi thất bại, vẫn tìm xóa hàng đầu trùng vé rồi in thông báo.
+- Vé được hiểu theo số nguyên có dấu 64 bit trước khi đổi sang số
+  thực để so với bảng. Chỉ xóa hai ô của hàng trùng đầu tiên, giữ các
+  hàng còn lại. Vé dùng chung vẫn là kết quả lần quét cuối, không bị
+  thay bằng vé đã chọn để hủy.
+
+Nguồn [Bot1PendingSelection.mqh](bot-cua-toi-1/source/MQL5/Include/bot-cua-toi-1/Bot1PendingSelection.mqh)
+và [Bot3PendingSelection.mqh](bot-cua-toi-3/source/MQL5/Include/bot-cua-toi-3/Bot3PendingSelection.mqh)
+đã biên dịch 0 lỗi/cảnh báo. Bộ 2.522 ca mỗi bot có 1.261 ca mỗi chiều,
+gồm đọc giá lần hai, bằng giá, vé sát các mốc lớn, hàng trùng/đầu/cuối,
+số không xác định/vô hạn, chuỗi rỗng/null/tiếng Việt và đổi trạng thái
+trong lúc truy vấn. Các ca hủy cũ được ghép chạy nguyên luồng.
+
+| Bot | Mã gốc và chương trình MQL5 | Máy đo quá khứ |
+|---|---|---|
+| 1 | [2.522/2.522](bot-cua-toi-1/bang-chung/kiem-chon-lenh-huy/selection-20261024-r2/comparison.json) | [2.522/2.522](doi-chung-mt5/chon-lenh-huy-20261024/engine-selection-b1-r2/comparison.json) |
+| 3 | [2.522/2.522](bot-cua-toi-3/bang-chung/kiem-chon-lenh-huy/selection-20261024-r2/comparison.json) | [2.522/2.522](doi-chung-mt5/chon-lenh-huy-20261024/engine-selection-b3-r2/comparison.json) |
+
+So đủ 200 số trong bảng, vé dùng chung, mã nhận diện/mã giá, 35 trường
+giao dịch, bốn chuỗi kèm cờ null và dấu vết truy vấn/gửi/thông báo theo thứ tự.
+[Tổng kiểm](KIEM-CHUNG-CHON-LENH-HUY-BOT-1-3-R2.json) còn kiểm 24 kiểu sửa
+dữ liệu cấp sai phải bị từ chối; lời in một đối số phải chặn số đối số
+0 và 2. Dữ liệu truy vấn/kết quả gửi vẫn được cấp trong bộ kiểm; chưa
+chứng minh trạng thái chọn trên tài khoản thực, mọi nơi gọi, lỗi cấp
+bộ nhớ hoặc toàn EA. 2.522 ca không phải tỷ lệ hoàn thành toàn bộ bot.
+
+Claude đã [chỉ ra hai thiếu sót ở bộ kiểm](danh-gia-claude/selector-check-ultracode-20261024-r2/response.md):
+biên nhận biên dịch thiếu kết quả vẫn có thể lọt, và bước MQL5 chưa
+ràng/ghi mã kiểm tra của chính công cụ. Đã sửa cả hai. Bảy phép thử
+bằng lệnh thật đều bị chặn đúng trước khi mở MT5: ba biên nhận thiếu
+kết quả ở MQL5, ba ở máy thử và một bản công cụ bị sửa.
+[Bằng chứng](danh-gia-doc-lap/chon-lenh-huy-20261024/negative-cli-r2.json).
+
+Lượt r1 có 2.474 ca được giữ nguyên. Lượt r2 thêm 48 ca phân biệt
+chuỗi rỗng/null, so cả cờ null của bốn chuỗi, chặn tệp ghi thiếu,
+ràng đủ tám nguồn và dựng lại văn bản kiểm trong máy thử để so.
+Mỗi lượt máy thử dùng thư mục kết quả mới riêng; không dùng tệp cũ.
+Không đổi thuật toán của bốn hàm giao dịch để làm phép so đạt.
+[Agent chính đã đối chiếu các nhận xét của Claude](danh-gia-claude/selector-check-ultracode-20261024-r2/parent-review.md).
+
+Đã kiểm nhật ký thực tế: phiên chính và ba luồng phụ dùng Opus 5.5
+`max`. Ultracode được bật trong cấu hình nhưng bước workflow báo
+`Review dynamic workflow before running`, nên **chưa chạy workflow
+Ultracode**. Ba luồng đọc riêng không gửi kết luận trước khi lượt đầu
+dừng; không dùng chúng làm xác nhận. Lượt nối lại của Claude có báo
+cáo trực tiếp nêu trên. [Cấu hình r1](danh-gia-claude/selector-check-ultracode-20261024-r1/receipt.json),
+[cấu hình r2](danh-gia-claude/selector-check-ultracode-20261024-r2/receipt.json).
 
 Claude đã từ chối đánh giá bảng điều kiện này ở lượt
 `cancel-guards-ultracode-20261024-r1`; [phản hồi](danh-gia-claude/cancel-guards-ultracode-20261024-r1/response.md).

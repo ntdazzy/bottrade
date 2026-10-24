@@ -46,6 +46,28 @@ Các tổng kiểm quét/chuỗi đặt lệnh đọc mã kiểm tra của runne
 trong `tested-sources/tester-check-tool.py`; thêm tùy chọn cho runner
 mới không được làm sai nguồn gốc của lượt kiểm cũ.
 
+## Chọn lệnh cần hủy và dọn bảng
+
+- `kiem-chon-lenh-huy-bot-1-3.py MODE BOT RUN [--build BUILD]`: chạy
+  `prepare` → biên dịch `BotNPendingSelectionCheck.mq5` → `mql5` →
+  `original` → `compare`. Lượt `selection-20261024-r2`, bản biên dịch
+  `bN-pending-selection-02`: 2.522 ca mỗi bot, cả hai chiều.
+- `kiem-hang-doi-trong-may-thu.py BOT NEW_RUN --component-run RUN
+  --build BUILD --selection`: cùng thân kiểm trong máy đo quá khứ;
+  `engine-selection-b1-r2`/`engine-selection-b3-r2` đạt 2.522 ca mỗi bot.
+- `kiem-chung-chon-lenh-huy-bot-1-3.py NEW_JSON`: không mở MT5;
+  kiểm nguồn/bản biên dịch/dữ liệu ba nơi chạy, phần phụ thuộc, 24
+  kiểu sửa dữ liệu sai và số đối số lời in. Đầu ra mới trong `khoi-phuc`.
+
+Không gửi lệnh thật. Truy vấn/kết quả gửi được cấp; so nguyên luồng
+chọn vé → hủy/gửi → dọn bảng → thông báo, gồm cả trạng thái sau hủy
+thất bại. Chưa chứng minh tài khoản thực hoặc toàn EA.
+
+Lượt r2 ghi mã kiểm tra công cụ ở cả chuẩn bị/chạy MQL5/chạy gốc/so;
+thiếu kết quả biên dịch bị chặn. So thêm bốn cờ null và chặn tệp thiếu
+cuối. Mỗi lượt máy thử có thư mục kết quả mới theo `NEW_RUN`. Bảy
+phép thử CLI hồ sơ sai được lưu trong báo cáo r2.
+
 ## Hàng đợi và nội dung lỗi
 
 - `kiem-chuoi-loi-bot-1-3.py MODE BOT RUN [--build BUILD]`: dùng

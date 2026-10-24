@@ -19,9 +19,9 @@ phải được phân tích tiếp trước khi viết luật tương ứng.
 
 Danh sách đầy đủ từng hàm và từng dòng cài đặt:
 
-- [Bot 1](ban-do-bot-1-3/luot-20261024-r11/bot-1.md), [dữ liệu chi tiết](ban-do-bot-1-3/luot-20261024-r11/bot-1.json).
-- [Bot 3](ban-do-bot-1-3/luot-20261024-r11/bot-3.md), [dữ liệu chi tiết](ban-do-bot-1-3/luot-20261024-r11/bot-3.json).
-- [Biên nhận lập danh sách](ban-do-bot-1-3/luot-20261024-r11/summary.json).
+- [Bot 1](ban-do-bot-1-3/luot-20261024-r13/bot-1.md), [dữ liệu chi tiết](ban-do-bot-1-3/luot-20261024-r13/bot-1.json).
+- [Bot 3](ban-do-bot-1-3/luot-20261024-r13/bot-3.md), [dữ liệu chi tiết](ban-do-bot-1-3/luot-20261024-r13/bot-3.json).
+- [Biên nhận lập danh sách](ban-do-bot-1-3/luot-20261024-r13/summary.json).
 
 Mỗi hàm có vị trí gốc, dòng C, các hàm gọi/được gọi, lời gọi MT5, mã
 điều phối, chuỗi liên quan, biến dùng chung, nguồn dựng lại và bằng
@@ -66,7 +66,7 @@ phép đối chiếu trong phạm vi cụ thể; không đánh dấu hoàn tất
 | P15 | Kiểm khối lượng hợp lệ và ký quỹ | `0x3bfe0`, `0x3cb30`, `0x457d0` / `0x46ca0`, `0x47840`, `0x53670` | Đã so kiểm ký quỹ và dựng kiểm khối lượng hợp lệ: 1.834 ca mỗi bot, gồm 27 lần dừng vì chia 0 thật. Còn ghép EA, lỗi dữ liệu thực và đuôi số thông báo; [bằng chứng](PHAN-TICH-KHOI-LUONG-HOP-LE-BOT-1-3.md) |
 | P16 | Tạo/gửi yêu cầu giao dịch | `0x950`, `0x2e6d0`, `0x32dd0` / `0x950`, `0x3bb10`, `0x3e580` | Đã dựng chọn cách khớp (3.096 ca), chuẩn bị (1.607 ca), gửi/thông báo (1.201 ca), ghép tạo yêu cầu qua gửi (1.687 ca), hàng đợi/thử lại (374 ca). Đã so chung hàng đợi→tạo→gửi→thông báo 818 ca mỗi bot, cả chương trình MQL5 và máy đo quá khứ. Thuộc tính/kết quả/lỗi gửi được cấp; còn nơi giao dịch và ghép EA; [phạm vi](PHAN-TICH-CHUOI-DAT-LENH-BOT-1-3.md) |
 | P17 | Quét, nhận dạng và đếm lệnh/vị thế | Các hàm nhóm `0x2f5c0..0x32ce0` / `0x3ca00..0x3e490`, bot 3 `0x47330` | Đã dựng năm hàm đếm/dọn bảng/giới hạn: bot 1 khớp 307 ca, bot 3 215 ca cả chương trình MQL5 và máy đo quá khứ. Còn trạng thái chọn/tài khoản thực, nơi gọi và các hàm còn lại; [phạm vi](PHAN-TICH-QUET-LENH-BOT-1-3.md) |
-| P18 | Sửa/hủy lệnh chờ và vùng cấm sửa | `0x30320`, `0x34150` / `0x32450`, `0x3d650`, các hàm chọn vé | Đã dựng hủy một vé qua kiểm vùng cấm, tạo yêu cầu và gửi/thông báo: 964 ca mỗi bot khớp mã gốc/MQL5/máy đo quá khứ; dữ liệu giá đã đối chứng bằng nguồn. Truy vấn/kết quả gửi được cấp. Còn các hàm chọn vé, sửa lệnh, dữ liệu nơi giao dịch, lỗi cấp bộ nhớ và toàn EA; [phạm vi](PHAN-TICH-HUY-LENH-CHO-BOT-1-3.md) |
+| P18 | Sửa/hủy lệnh chờ và vùng cấm sửa | `0x30320`, `0x34150`, `0x32110`, `0x325b0` / `0x32450`, `0x3d650`, `0x3da90`, `0x3dd60` | Đã dựng hủy một vé (964 ca), ghép hai hàm chọn vé mua/bán qua hủy/gửi và dọn bảng/thông báo (2.522 ca mỗi bot); khớp mã gốc/MQL5/máy đo quá khứ. Truy vấn/kết quả gửi được cấp. Còn sửa lệnh, dữ liệu/trạng thái chọn tài khoản thực, lỗi cấp bộ nhớ, nơi gọi và toàn EA; [phạm vi](PHAN-TICH-HUY-LENH-CHO-BOT-1-3.md) |
 | P19 | Hết hạn thật và tự quản lý hết hạn | Tham số ở `0x7500` / `0xe0c0`, nơi dùng trong chiến lược | Đã so cách tính thời hạn; chưa toàn bộ việc hủy khi đến hạn |
 | P20 | Dừng lỗ/chốt lời sau khớp | `0x271f0`, `0x2abc0` / `0x32f60`, `0x37590` | Cần cả hai chiều, đặt sau khớp và kết quả sửa |
 | P21 | Dời dừng lỗ/chốt lời, hòa vốn, phục hồi theo thời gian | Cùng hai hàm quản lý vị thế và các `UseHL*`, `AdjustTrail*` | Cần từng chế độ, giá kích hoạt, giới hạn và thử lại |

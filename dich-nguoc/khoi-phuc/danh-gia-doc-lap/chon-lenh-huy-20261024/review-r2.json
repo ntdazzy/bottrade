@@ -1,0 +1,37 @@
+{
+  "checked_at_utc": "2026-10-24T16:31:34.405182+00:00",
+  "scope": "Four pending selectors through complete cancellation/send, first-row cleanup and Print, with supplied terminal query/send services.",
+  "claude_findings": {
+    "L1": "Confirmed; null error/warning counts now rejected in MQL5 and tester CLI paths.",
+    "L2": "Confirmed; baseline/current/MQL5/native/tested checker SHA now bound.",
+    "actual_model": "claude-opus-5-5",
+    "actual_effort": "max",
+    "completed_child_reviews": 0,
+    "ultracode_workflow_completed": false,
+    "direct_parent_report": "danh-gia-claude/selector-check-ultracode-20261024-r2/response.md",
+    "parent_verification": "danh-gia-claude/selector-check-ultracode-20261024-r2/parent-review.md"
+  },
+  "independent_reviewer": "/root/trade_result_messages",
+  "actionable_remaining_findings": [],
+  "parent_verified": {
+    "aggregate": "KIEM-CHUNG-CHON-LENH-HUY-BOT-1-3-R2.json",
+    "aggregate_sha256": "53047bb27dab00605ef12e20f19921ef1b4e33f90280154fb926397083a0a654",
+    "cases_each": 2522,
+    "cases_each_direction": 1261,
+    "null_vs_empty_cases": 48,
+    "state_null_flags": 4,
+    "rejected_corrupt_input_types_each": 24,
+    "truncated_fixture_checks_each": 3,
+    "negative_cli_tests": 7,
+    "negative_cli_sha256": "ef6d2bd83ea73ed821cd53d586d806a68260b0f2f4749b066629dd5877e02772",
+    "build_errors": 0,
+    "build_warnings": 0
+  },
+  "limits": [
+    "Terminal query/send replies supplied and input-bound; formatting measured in MT5.",
+    "35 public fields,four full strings/null flags and all200 table doubles compared; private MQL padding not compared.",
+    "Supplied guard queries need not be one consistent account snapshot.",
+    "No full EA,all settings,display,restart,actual account/broker,allocation/CPU fault proof."
+  ],
+  "whole_bot_complete": false
+}

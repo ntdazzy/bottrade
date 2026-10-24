@@ -1,0 +1,70 @@
+{
+  "check_tool_sha256": "dc1ca38473abaf8721ab77fdede4df1ddcdf557c60b0b69bdd46f3ece7bc0e27",
+  "tester_tool_sha256": "465878939faf59bff6dfbd30ecd59c5d9dd2bfec64b98ed02f682226313b4e79",
+  "rejected": [
+    {
+      "test": "mql5-both-null",
+      "returncode": 1,
+      "expected_error": "BUILD_NOT_VERIFIED",
+      "last_error": "ValueError: BUILD_NOT_VERIFIED",
+      "errors": null,
+      "warnings": null,
+      "receipt_sha256": "39e115d6b5992b50fd3ccfb6ad7e28fe71f5d9ab4bc2385372351f3b99617c53"
+    },
+    {
+      "test": "tester-both-null",
+      "returncode": 1,
+      "expected_error": "SOURCE_BUILD_NOT_VERIFIED",
+      "last_error": "ValueError: SOURCE_BUILD_NOT_VERIFIED",
+      "errors": null,
+      "warnings": null,
+      "receipt_sha256": "39e115d6b5992b50fd3ccfb6ad7e28fe71f5d9ab4bc2385372351f3b99617c53"
+    },
+    {
+      "test": "mql5-errors-null",
+      "returncode": 1,
+      "expected_error": "BUILD_NOT_VERIFIED",
+      "last_error": "ValueError: BUILD_NOT_VERIFIED",
+      "errors": null,
+      "warnings": 0,
+      "receipt_sha256": "c069f5593694e9144d8f58c7c09427befc46344dddacaa88192f170f742ad383"
+    },
+    {
+      "test": "tester-errors-null",
+      "returncode": 1,
+      "expected_error": "SOURCE_BUILD_NOT_VERIFIED",
+      "last_error": "ValueError: SOURCE_BUILD_NOT_VERIFIED",
+      "errors": null,
+      "warnings": 0,
+      "receipt_sha256": "c069f5593694e9144d8f58c7c09427befc46344dddacaa88192f170f742ad383"
+    },
+    {
+      "test": "mql5-warnings-null",
+      "returncode": 1,
+      "expected_error": "BUILD_NOT_VERIFIED",
+      "last_error": "ValueError: BUILD_NOT_VERIFIED",
+      "errors": 0,
+      "warnings": null,
+      "receipt_sha256": "68d93ea8d0186eb86a50add51c7aecb653a8065f29b84553b8b071ae07bc59db"
+    },
+    {
+      "test": "tester-warnings-null",
+      "returncode": 1,
+      "expected_error": "SOURCE_BUILD_NOT_VERIFIED",
+      "last_error": "ValueError: SOURCE_BUILD_NOT_VERIFIED",
+      "errors": 0,
+      "warnings": null,
+      "receipt_sha256": "68d93ea8d0186eb86a50add51c7aecb653a8065f29b84553b8b071ae07bc59db"
+    },
+    {
+      "test": "modified-tool",
+      "returncode": 1,
+      "expected_error": "CHECK_TOOL_CHANGED",
+      "last_error": "ValueError: CHECK_TOOL_CHANGED",
+      "modified_tool_sha256": "0d3bb80b4526ba0fbcbb830902b4ab82d509ee7612ae71c31354c790f0caa94c",
+      "baseline_tool_sha256": "dc1ca38473abaf8721ab77fdede4df1ddcdf557c60b0b69bdd46f3ece7bc0e27"
+    }
+  ],
+  "temporary_files_removed": true,
+  "scope": "Actual CLI paths rejected invalid build counts and a modified checker before launching MT5."
+}

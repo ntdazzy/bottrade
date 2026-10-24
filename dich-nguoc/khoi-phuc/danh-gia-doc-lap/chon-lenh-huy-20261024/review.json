@@ -1,0 +1,41 @@
+{
+  "checked_at_utc": "2026-10-24T16:07:49.187910+00:00",
+  "scope": "Four pending selectors through complete cancellation/send, first-row cleanup and Print; finite supplied-service cases.",
+  "reviewers": [
+    {
+      "agent": "/root/trade_result_messages",
+      "scope": "Production selection sources, MQL test drivers, input encoding/validation and native comparison callbacks",
+      "actionable_findings": []
+    },
+    {
+      "agent": "/root/trade_request_messages",
+      "scope": "Aggregate verifier, --selection tester runner and saved artifacts/provenance",
+      "actionable_findings": []
+    }
+  ],
+  "parent_verified": {
+    "aggregate": "KIEM-CHUNG-CHON-LENH-HUY-BOT-1-3.json",
+    "aggregate_sha256": "9e17e64ca8fe1086a273ee786429d79bdb9f124225c9281e216076a9eb8db529",
+    "cases_each": 2474,
+    "cases_each_direction": 1237,
+    "rejected_corrupt_input_types_each": 24,
+    "selector_Print_arity": "0 and 2 rejected; 1 accepted",
+    "source_builds": [
+      "b1-pending-selection-01",
+      "b3-pending-selection-01"
+    ],
+    "build_errors": 0,
+    "build_warnings": 0
+  },
+  "claude": {
+    "r1": "Preliminary report only; no completed child reviews received; actual Opus5.5/max requests observed in parent and three child journals.",
+    "r2": "Same session resumed after confirming the old process ended; final review not received when this record was written.",
+    "approval": false
+  },
+  "limits": [
+    "35 public trade fields,four strings and all200 table doubles compared; private MQL padding not compared.",
+    "Terminal query/send results supplied; formatting measured in MT5.",
+    "No actual account selection,broker,full EA,all settings,display,restart or allocation-failure proof."
+  ],
+  "whole_bot_complete": false
+}

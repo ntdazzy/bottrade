@@ -1,0 +1,20 @@
+{
+  "bot": 1,
+  "cases": 2474,
+  "matched": 2474,
+  "failed": 0,
+  "first_failures": [],
+  "seconds": 7.54,
+  "source_comparison": "bot-cua-toi-1/bang-chung/kiem-chon-lenh-huy/selection-20261024-r1",
+  "hashes": {
+    "cases.bin": "89afa6c7b9282db6866672aa6e8f1096b52bf3cec88f714fed8203f91f212320",
+    "original-results.bin": "2b30c8afb5183675b7f6d49ca3f414a5fdefb4e95cf2793f74f527b86b6686b0",
+    "tester-mql5-results.bin": "2b30c8afb5183675b7f6d49ca3f414a5fdefb4e95cf2793f74f527b86b6686b0",
+    "script-mql5-results.bin": "2b30c8afb5183675b7f6d49ca3f414a5fdefb4e95cf2793f74f527b86b6686b0",
+    "api-fixtures.bin": "7bfbf4ec6633017a1f9b3274c80513b27bafa47927cad067b9097a7063d80c52",
+    "script-status.bin": "6cc795eab24fa6020b2f811363e61ee5f7f23f2b495a7162eccc8af471d833f9"
+  },
+  "whole_bot_complete": false,
+  "scope": "Same four pending selector functions through full cancel/send/messages and first-row table cleanup.35fields,four strings,all200 table doubles,last ticket,magic,symbol and ordered typed records compared. Query/send replies supplied; formatting measured. No actual account/broker/full EA/allocation-failure proof.",
+  "input_contract_checked_cases": 2474
+}

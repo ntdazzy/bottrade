@@ -1,0 +1,15 @@
+[
+  {
+    "id": "q-engine-engine-selection-b1-r1",
+    "expert": "RecoveryPendingSelection20261024\\engine-selection-b1-r1\\PendingSelectionEngineCheck.ex5",
+    "symbol": "XAUUSD_NOCOST_V2",
+    "period": "M15",
+    "model": 0,
+    "from": "2026.09.29",
+    "to": "2026.09.30",
+    "timeout": 120,
+    "inputs": {
+      "CheckRun": "selection-20261024-r1"
+    }
+  }
+]

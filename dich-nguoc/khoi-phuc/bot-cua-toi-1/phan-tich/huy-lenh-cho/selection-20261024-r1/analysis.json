@@ -1,0 +1,52 @@
+{
+  "bot": 1,
+  "original_ex5_sha256": "a3b0de423a06e10ebedc279307b93d7cb9188ba2bb5de77131a913c865b0e922",
+  "source_analysis": "bot-cua-toi-1/phan-tich/huy-lenh-cho/cancel-20261024-r1/analysis.json",
+  "source_analysis_sha256": "10ba1cca10f827baf970d1a92c428fafbec1bf3a70c9f89c79cefaf0a997d4ea",
+  "source_c": "bot-cua-toi-1/phan-tich/luot-20261023-data-v2/ma-trung-gian.c",
+  "source_c_sha256": "c6389dfe5bd1ef95ed7616eaf5c16b7d041fbd279e650753d239b28e3ea65a8d",
+  "functions": [
+    {
+      "rva": "0x32110",
+      "end_rva": "0x323dc",
+      "native_bytes_sha256": "4dacb9f9645c65f84deec25197da9f4415d8da4ea10809060d1b318a3769ce68",
+      "c_line": 21304,
+      "initial_price": 0.0,
+      "constant_rva": "xorpd xmm6,xmm6",
+      "order_type_full_signed64": 4,
+      "comparison": "price>candidate, ordered",
+      "message": "Max number of pending buy orders reached... deleting highest buystop order!",
+      "price_reads": "Read price once for comparison; read again only when accepted. Store the second reading even when different/NaN.",
+      "ties": "Do not replace; total..0 keeps the higher visited index.",
+      "post_scan": "If local candidate ticket is nonzero, call full cancellation, ignore its return, clear first matching row, then Print unconditionally.",
+      "table_ticket_conversion": "cvtsi2sd from signed64 interpretation of the selected ulong.",
+      "global_last_ticket": "Last OrderGetTicket result; not replaced with local candidate before deletion."
+    },
+    {
+      "rva": "0x325b0",
+      "end_rva": "0x3288c",
+      "native_bytes_sha256": "fbd8ac00ad8cbbcdcf3a060795bdb39d1832e1618f568950a0b53aae5d09c3a4",
+      "c_line": 21472,
+      "initial_price": 9999.0,
+      "constant_rva": "0x50288",
+      "order_type_full_signed64": 5,
+      "comparison": "price<candidate, ordered",
+      "message": "Max number of pending sell orders reached... deleting lowest sellstop order!",
+      "price_reads": "Read price once for comparison; read again only when accepted. Store the second reading even when different/NaN.",
+      "ties": "Do not replace; total..0 keeps the higher visited index.",
+      "post_scan": "If local candidate ticket is nonzero, call full cancellation, ignore its return, clear first matching row, then Print unconditionally.",
+      "table_ticket_conversion": "cvtsi2sd from signed64 interpretation of the selected ulong.",
+      "global_last_ticket": "Last OrderGetTicket result; not replaced with local candidate before deletion."
+    }
+  ],
+  "scan": "One OrdersTotal; total<0 does nothing; total>=0 visits total through zero inclusive.",
+  "magic": "OrderGetInteger(15) signed64 must equal sign-extended signed32 strategy magic; read strategy magic after query.",
+  "symbol": "Read OrderGetString(0), then exact UTF-16 comparison. Same pointer is equal; one null pointer differs; non-null compares length/characters.",
+  "table": "100 rows, two doubles, stride16; clear both fields of first ordered-equal ticket only.",
+  "runtime_verified": false,
+  "remaining": [
+    "Implement clean MQL5 and compare full functions through cancellation/send with queries supplied.",
+    "Cover second price read, tie/NaN/Inf, signed64 ticket conversion, duplicate table rows, nullable strings and query-time state changes.",
+    "Actual account selection and full EA remain open."
+  ]
+}

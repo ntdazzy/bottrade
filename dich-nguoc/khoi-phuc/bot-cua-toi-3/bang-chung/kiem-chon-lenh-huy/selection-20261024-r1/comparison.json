@@ -1,0 +1,15 @@
+{
+  "cases": 2474,
+  "matched": 2474,
+  "failed": 0,
+  "first_failures": [],
+  "hashes": {
+    "cases.bin": "89afa6c7b9282db6866672aa6e8f1096b52bf3cec88f714fed8203f91f212320",
+    "original-results.bin": "2b30c8afb5183675b7f6d49ca3f414a5fdefb4e95cf2793f74f527b86b6686b0",
+    "mql5-results.bin": "2b30c8afb5183675b7f6d49ca3f414a5fdefb4e95cf2793f74f527b86b6686b0",
+    "api-fixtures.bin": "7bfbf4ec6633017a1f9b3274c80513b27bafa47927cad067b9097a7063d80c52",
+    "script-status.bin": "6cc795eab24fa6020b2f811363e61ee5f7f23f2b495a7162eccc8af471d833f9"
+  },
+  "whole_bot_complete": false,
+  "scope": "Compare complete pending selectors through cancel/send and table cleanup.\n\nUsage: kiem-chon-lenh-huy-bot-1-3.py prepare|mql5|original|compare BOT RUN [--build BUILD]\nNative selectors and cancellation execute to return. Query/send replies are supplied\nand bound to inputs; formatting is measured in MT5. No actual orders or full EA.\n"
+}

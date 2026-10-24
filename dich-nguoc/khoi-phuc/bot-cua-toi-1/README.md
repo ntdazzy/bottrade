@@ -1,8 +1,12 @@
 # bot-cua-toi-1
 
+Đã ghép chọn lệnh mua/bán cần hủy → hủy/gửi → dọn bảng → thông báo:
+2.522/2.522 ca khớp mã gốc/MQL5/máy đo quá khứ; biên dịch 0 lỗi/cảnh
+báo. Chưa ghép toàn EA hoặc kiểm tài khoản thực. [Phạm vi](../PHAN-TICH-HUY-LENH-CHO-BOT-1-3.md).
+
 Đã dựng hủy một lệnh chờ: 964/964 ca khớp mã gốc, chương trình MQL5
-và máy đo quá khứ; biên dịch 0 lỗi/cảnh báo. Chưa ghép các hàm chọn
-lệnh cần hủy hoặc toàn EA. [Bằng chứng](../PHAN-TICH-HUY-LENH-CHO-BOT-1-3.md).
+và máy đo quá khứ; biên dịch 0 lỗi/cảnh báo. Phép ghép chọn lệnh mới
+được nêu phía trên; còn toàn EA. [Bằng chứng](../PHAN-TICH-HUY-LENH-CHO-BOT-1-3.md).
 
 Đã dựng hai hàm đếm lệnh và dọn bảng 100 hàng: 307/307 ca khớp cả
 chương trình MQL5 và máy đo quá khứ; biên dịch 0 lỗi/cảnh báo.
