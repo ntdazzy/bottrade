@@ -57,3 +57,10 @@ kiểm lại các nhánh loại lệnh bằng bảng nhảy; lập đủ đầu 
 Sau đó phải so chọn vé thất bại, dữ liệu giá thiếu, số âm/0/sát ngưỡng/
 không xác định/vô hạn, loại có phần 32 bit cao, dừng, trạng thái cũ và
 gửi thành công/thất bại. Cuối cùng ghép với hai hàm chọn vé và toàn EA.
+
+Claude đã từ chối đánh giá bảng điều kiện này ở lượt
+`cancel-guards-ultracode-20261024-r1`; [phản hồi](danh-gia-claude/cancel-guards-ultracode-20261024-r1/response.md).
+Đã kiểm thực tế Opus 5.5 `max`, Ultracode bật nhưng không có luồng
+phụ chạy. Không dùng phản hồi từ chối làm xác nhận, không đổi cách
+hỏi để vượt chặn. Phân tích trên do agent chính và hai agent đọc
+mã trực tiếp; vẫn phải có đối chứng có nguồn và kiểm chạy trước bàn giao.

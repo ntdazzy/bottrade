@@ -1,0 +1,30 @@
+{
+  "session_id": "1177b58c-dab1-4762-a98b-b2358e8c1ca9",
+  "process_returned": true,
+  "review_received": false,
+  "declined": true,
+  "actual_request_effort_verified": true,
+  "observed_requests": [
+    {
+      "timestamp": "2026-10-24T13:25:13.408Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-24T13:25:22.632Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-24T13:29:50.237Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    }
+  ],
+  "observed_settings": {
+    "ultracode": true
+  },
+  "response_sha256": "b1fc523532025e959b2e8e09d92682ce501e858cd31fd48f7e71c8cd93bc986e",
+  "transcript_sha256_at_completion": "112064e5020971326e2d3b04c8729b69dbd921be853d064757e40bf8afe8a2c5",
+  "limit": "Claude explicitly declined EX5 guard analysis. No review, no correctness confirmation, and no bypass or rephrased retry for this scope."
+}
