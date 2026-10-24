@@ -74,5 +74,10 @@ lỗi cấp bộ nhớ/CPU. **Không xác nhận toàn bộ P16/P31 hoặc bot �
 Hai agent đã rà chỉ đọc: một kiểm cách chạy thân hàm gốc và an toàn
 của bản máy đo quá khứ; một chỉ ra chỗ cần ràng dữ liệu cấp vào. Đã
 sửa và kiểm lại các điểm trên. Claude được giao đánh giá độc lập
-qua `pipeline-check-ultracode-20261024-r1`; khi chưa có phản hồi thì
-chưa coi là đã được Claude xác nhận.
+qua `pipeline-check-ultracode-20261024-r1`. Phản hồi lần đầu chỉ
+thông báo đã giao năm tác tử; nhật ký phụ kết thúc bằng dòng bị
+ngắt, chưa có nhận xét thực tế. Đã kiểm được Opus 5.5 `max` ở cả
+phiên chính và năm tác tử, nhưng **chưa có xác nhận của Claude**.
+Đã nối lại phiên bằng yêu cầu nhỏ hơn ở
+`pipeline-check-ultracode-20261024-r2`, bắt buộc trả đánh giá cụ thể;
+[biên nhận lần đầu](danh-gia-claude/pipeline-check-ultracode-20261024-r1/receipt.json).
