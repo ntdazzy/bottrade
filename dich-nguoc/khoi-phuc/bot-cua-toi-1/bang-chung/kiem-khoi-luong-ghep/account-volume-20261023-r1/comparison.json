@@ -1,0 +1,23 @@
+{
+  "cases": 783,
+  "matched": 783,
+  "failed": 0,
+  "passed": true,
+  "groups": {
+    "combined-mixed": {
+      "cases": 600,
+      "matched": 600
+    },
+    "currency-to-volume": {
+      "cases": 183,
+      "matched": 183
+    }
+  },
+  "first_failures": [],
+  "hashes": {
+    "cases.bin": "3f8f5dd97527b1fa643385965017a0efd494d4e37edf9f096c70a40bbf0169ea",
+    "original-results.bin": "b9a5e26f1d9fe892281bea94776f535cd2bafc8b496080075135a6192d365e61",
+    "mql5-results.bin": "b9a5e26f1d9fe892281bea94776f535cd2bafc8b496080075135a6192d365e61"
+  },
+  "scope": "Check original volume calculation with both original currency helpers executed.\n\nNo converted-balance stubs. Terminal reads and successful string allocation supplied.\nWithdrawal-history adjustment remains disabled. No margin/order-placement code.\n"
+}

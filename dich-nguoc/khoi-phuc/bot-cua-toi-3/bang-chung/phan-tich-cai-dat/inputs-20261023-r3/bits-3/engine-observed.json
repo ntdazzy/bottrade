@@ -1,0 +1,23 @@
+{
+  "bot": 3,
+  "pid": 28964,
+  "process": "C:\\Users\\NTD\\Desktop\\Bot Market Demo\\dich-nguoc\\.local\\claude-recovery-20261023\\mt5\\metatester64.exe",
+  "engine_base": "0x7ff61fc30000",
+  "engine_sha256": "5033d9d45d669cebd735e8a6be20b54d74b75274f885c9a0e48e52d872104efb",
+  "original_ex5_sha256": "ee063d3d87490afe24e2f4ce85f6b05659320e297b102efd70207f71ca2feb83",
+  "observed_processes": [
+    {
+      "id": 28964,
+      "path": "C:\\Users\\NTD\\Desktop\\Bot Market Demo\\dich-nguoc\\.local\\claude-recovery-20261023\\mt5\\metatester64.exe",
+      "base": 140695071555584,
+      "started": 639283742374182758
+    },
+    {
+      "id": 22612,
+      "path": "C:\\Users\\NTD\\Desktop\\Bot Market Demo\\dich-nguoc\\.local\\claude-recovery-20261023\\mt5\\terminal64.exe",
+      "base": 140698314145792,
+      "started": 639283742337564361
+    }
+  ],
+  "purpose": "Input storage analysis; intentional stop after capture, not a completed trading run."
+}

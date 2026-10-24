@@ -1,0 +1,393 @@
+{
+  "cases": 1700,
+  "division_errors": [
+    {
+      "id": 16,
+      "error": "0x300ed7000001f7"
+    },
+    {
+      "id": 62,
+      "error": "0x300ed5000001f7"
+    },
+    {
+      "id": 64,
+      "error": "0x300ed3000001f7"
+    },
+    {
+      "id": 68,
+      "error": "0x300ed3000001f7"
+    },
+    {
+      "id": 71,
+      "error": "0x242f26000001f7"
+    },
+    {
+      "id": 77,
+      "error": "0x242f46000001f7"
+    },
+    {
+      "id": 113,
+      "error": "0x242f35000001f7"
+    },
+    {
+      "id": 132,
+      "error": "0x360eb4000001f7"
+    },
+    {
+      "id": 200,
+      "error": "0x242f46000001f7"
+    },
+    {
+      "id": 203,
+      "error": "0x350edd000001f7"
+    },
+    {
+      "id": 305,
+      "error": "0x300ed5000001f7"
+    },
+    {
+      "id": 369,
+      "error": "0x350edf000001f7"
+    },
+    {
+      "id": 392,
+      "error": "0x300ed5000001f7"
+    },
+    {
+      "id": 494,
+      "error": "0x360eb6000001f7"
+    },
+    {
+      "id": 538,
+      "error": "0x360eb6000001f7"
+    },
+    {
+      "id": 550,
+      "error": "0x360eb2000001f7"
+    },
+    {
+      "id": 596,
+      "error": "0x350ee1000001f7"
+    },
+    {
+      "id": 626,
+      "error": "0x242f26000001f7"
+    },
+    {
+      "id": 629,
+      "error": "0x242f26000001f7"
+    },
+    {
+      "id": 632,
+      "error": "0x242f26000001f7"
+    },
+    {
+      "id": 635,
+      "error": "0x242f26000001f7"
+    },
+    {
+      "id": 638,
+      "error": "0x242f2c000001f7"
+    },
+    {
+      "id": 641,
+      "error": "0x242f2c000001f7"
+    },
+    {
+      "id": 644,
+      "error": "0x242f3d000001f7"
+    },
+    {
+      "id": 647,
+      "error": "0x242f3d000001f7"
+    },
+    {
+      "id": 650,
+      "error": "0x242f46000001f7"
+    },
+    {
+      "id": 653,
+      "error": "0x242f46000001f7"
+    },
+    {
+      "id": 656,
+      "error": "0x242f67000001f7"
+    },
+    {
+      "id": 659,
+      "error": "0x242f67000001f7"
+    },
+    {
+      "id": 758,
+      "error": "0x242f35000001f7"
+    },
+    {
+      "id": 761,
+      "error": "0x242f35000001f7"
+    },
+    {
+      "id": 764,
+      "error": "0x242f4d000001f7"
+    },
+    {
+      "id": 767,
+      "error": "0x242f4d000001f7"
+    },
+    {
+      "id": 770,
+      "error": "0x242f5a000001f7"
+    },
+    {
+      "id": 773,
+      "error": "0x242f5a000001f7"
+    },
+    {
+      "id": 795,
+      "error": "0x242f2c000001f7"
+    },
+    {
+      "id": 810,
+      "error": "0x242f2c000001f7"
+    },
+    {
+      "id": 825,
+      "error": "0x242f2c000001f7"
+    },
+    {
+      "id": 840,
+      "error": "0x242f2c000001f7"
+    },
+    {
+      "id": 855,
+      "error": "0x242f2c000001f7"
+    },
+    {
+      "id": 870,
+      "error": "0x242f2c000001f7"
+    },
+    {
+      "id": 885,
+      "error": "0x242f2c000001f7"
+    },
+    {
+      "id": 900,
+      "error": "0x242f2c000001f7"
+    },
+    {
+      "id": 915,
+      "error": "0x242f2c000001f7"
+    },
+    {
+      "id": 930,
+      "error": "0x242f2c000001f7"
+    },
+    {
+      "id": 945,
+      "error": "0x242f2c000001f7"
+    },
+    {
+      "id": 960,
+      "error": "0x242f2c000001f7"
+    },
+    {
+      "id": 975,
+      "error": "0x242f2c000001f7"
+    },
+    {
+      "id": 990,
+      "error": "0x242f2c000001f7"
+    },
+    {
+      "id": 1005,
+      "error": "0x242f2c000001f7"
+    },
+    {
+      "id": 1020,
+      "error": "0x242f2c000001f7"
+    },
+    {
+      "id": 1035,
+      "error": "0x242f2c000001f7"
+    },
+    {
+      "id": 1050,
+      "error": "0x242f2c000001f7"
+    },
+    {
+      "id": 1065,
+      "error": "0x242f2c000001f7"
+    },
+    {
+      "id": 1080,
+      "error": "0x242f2c000001f7"
+    },
+    {
+      "id": 1095,
+      "error": "0x242f2c000001f7"
+    },
+    {
+      "id": 1110,
+      "error": "0x242f2c000001f7"
+    },
+    {
+      "id": 1125,
+      "error": "0x242f2c000001f7"
+    },
+    {
+      "id": 1140,
+      "error": "0x242f2c000001f7"
+    },
+    {
+      "id": 1155,
+      "error": "0x242f2c000001f7"
+    },
+    {
+      "id": 1170,
+      "error": "0x242f2c000001f7"
+    },
+    {
+      "id": 1185,
+      "error": "0x242f2c000001f7"
+    },
+    {
+      "id": 1200,
+      "error": "0x242f2c000001f7"
+    },
+    {
+      "id": 1215,
+      "error": "0x242f2c000001f7"
+    },
+    {
+      "id": 1230,
+      "error": "0x242f2c000001f7"
+    },
+    {
+      "id": 1245,
+      "error": "0x242f2c000001f7"
+    },
+    {
+      "id": 1260,
+      "error": "0x242f2c000001f7"
+    },
+    {
+      "id": 1275,
+      "error": "0x242f2c000001f7"
+    },
+    {
+      "id": 1290,
+      "error": "0x242f2c000001f7"
+    },
+    {
+      "id": 1305,
+      "error": "0x242f2c000001f7"
+    },
+    {
+      "id": 1320,
+      "error": "0x242f2c000001f7"
+    },
+    {
+      "id": 1335,
+      "error": "0x242f2c000001f7"
+    },
+    {
+      "id": 1350,
+      "error": "0x242f2c000001f7"
+    },
+    {
+      "id": 1365,
+      "error": "0x242f2c000001f7"
+    },
+    {
+      "id": 1380,
+      "error": "0x242f2c000001f7"
+    },
+    {
+      "id": 1395,
+      "error": "0x242f2c000001f7"
+    },
+    {
+      "id": 1410,
+      "error": "0x242f2c000001f7"
+    },
+    {
+      "id": 1425,
+      "error": "0x242f2c000001f7"
+    },
+    {
+      "id": 1440,
+      "error": "0x242f2c000001f7"
+    },
+    {
+      "id": 1455,
+      "error": "0x242f2c000001f7"
+    },
+    {
+      "id": 1470,
+      "error": "0x242f2c000001f7"
+    },
+    {
+      "id": 1485,
+      "error": "0x242f2c000001f7"
+    },
+    {
+      "id": 1500,
+      "error": "0x242f2c000001f7"
+    },
+    {
+      "id": 1515,
+      "error": "0x242f2c000001f7"
+    },
+    {
+      "id": 1530,
+      "error": "0x242f2c000001f7"
+    },
+    {
+      "id": 1545,
+      "error": "0x242f2c000001f7"
+    },
+    {
+      "id": 1560,
+      "error": "0x242f2c000001f7"
+    },
+    {
+      "id": 1575,
+      "error": "0x242f2c000001f7"
+    },
+    {
+      "id": 1590,
+      "error": "0x242f2c000001f7"
+    },
+    {
+      "id": 1605,
+      "error": "0x242f2c000001f7"
+    },
+    {
+      "id": 1620,
+      "error": "0x242f2c000001f7"
+    },
+    {
+      "id": 1635,
+      "error": "0x242f2c000001f7"
+    },
+    {
+      "id": 1650,
+      "error": "0x242f2c000001f7"
+    },
+    {
+      "id": 1665,
+      "error": "0x242f2c000001f7"
+    },
+    {
+      "id": 1680,
+      "error": "0x242f2c000001f7"
+    },
+    {
+      "id": 1695,
+      "error": "0x242f2c000001f7"
+    }
+  ],
+  "seconds": 17.27,
+  "tool_sha256": "b7d88c21f6748aedd4ad30c368acf77ae71e6d281aa43567a90be175bd12c672",
+  "result_sha256": "25a7a6ca114f972424670738cda4fb498a4b7dca0184203a607746e51e14413f",
+  "scope": "Execute original volume preparation with original withdrawal and currency helpers.\n\nCompare numeric state even on division faults, completed withdrawal timestamps,\nhistory/persistence call hashes and currency-price call hashes. Terminal data mocked;\nformatting and message content excluded. Not the full EA or startup restoration.\n"
+}

@@ -1,0 +1,29 @@
+{
+  "run": "b1-withdrawal-02",
+  "target": "Scripts/bot-cua-toi-1/Bot1WithdrawalCheck.mq5",
+  "metaeditor_sha256": "cf2750bde55d98a1f3b4e56bcdd4f59300d0cff5caa6760985f7ef2c2cc12229",
+  "exit_code": 1,
+  "errors": 0,
+  "warnings": 0,
+  "result_line": "Result: 0 errors, 0 warnings, 456 ms elapsed, cpu='X64 Regular'",
+  "sources_sha256": {
+    "Include/bot-cua-toi-1/Bot1AccountVolume.mqh": "4d7c9ef9ed7f184ca4741c5bdbe2c2c745016e99a89ffdde3ef2592ad6ea34b3",
+    "Include/bot-cua-toi-1/Bot1BaseDistances.mqh": "64eb353e1f253feb1aa6bc404f9d2047c31b28c565afd5b1ab82949b4d03577d",
+    "Include/bot-cua-toi-1/Bot1Currency.mqh": "7d1b3bffabff6e9e51cd1a2d141cfef884754d6115ff8e6cba44f169311c9109",
+    "Include/bot-cua-toi-1/Bot1DistanceSettings.mqh": "8cf7296b4301274d2f044362ffa211610fff5237e9daa9fa6d08680a53daa518",
+    "Include/bot-cua-toi-1/Bot1EntryLevels.mqh": "ff7d35310297af7c1e38fe7c83655f69380ca9fee682b840d87a89377672d82b",
+    "Include/bot-cua-toi-1/Bot1EntryProfiles.mqh": "263568e3883564270a6911dafebed8a2350bc37c8ea1530e4e6c670a14a33d60",
+    "Include/bot-cua-toi-1/Bot1PriceLevels.mqh": "601bdd551e24e3ac9a7742cc00e057d881b069ab672843bec31b3f32a43316b1",
+    "Include/bot-cua-toi-1/Bot1Volume.mqh": "7a10296861bc1ed3e3bed89b5625c26eff04df29a859a9f72d221857796c5a9d",
+    "Include/bot-cua-toi-1/Bot1Withdrawal.mqh": "c6300736871f6e84e4885e3d97ea56dc36487e9e924c12c4effb7d9b2a15a5c6",
+    "Scripts/bot-cua-toi-1/Bot1AccountVolumeCheck.mq5": "8997d2b9427496d81219c44da1d50bfd223db662f7690cedfa719c8d37b22bac",
+    "Scripts/bot-cua-toi-1/Bot1CurrencyCheck.mq5": "b04fa531179ba5d6e34f7f94b9bf50c056e009de7d26956833e917eb1d380c9d",
+    "Scripts/bot-cua-toi-1/Bot1DistanceSettingsCheck.mq5": "4e147f6cdb4575b5ae85d95b5e047d5b685f0e4d91db3745434a3c69ffd54069",
+    "Scripts/bot-cua-toi-1/Bot1EntryLevelsCheck.mq5": "50c60d8b261ab89fb9cf58f47b5d2271800b4fa20beeba485ec1b05aace106d7",
+    "Scripts/bot-cua-toi-1/Bot1PriceLevelsCheck.mq5": "8d10d63113e76ada8e9cdda7bcb8e24170a1813520cfda1744130c9f58984e0e",
+    "Scripts/bot-cua-toi-1/Bot1VolumeCheck.mq5": "4c4797044dee3c82cd726d545a6915e139b3fee7eb799f916deeab41bd112c9d",
+    "Scripts/bot-cua-toi-1/Bot1WithdrawalCheck.mq5": "309c07b687e21a9011eb33f50a146bf75c1d3c704575b2f52e23b38fd56acea6"
+  },
+  "trade_mqh_sha256": "96e6781624534377fe7971cba52cca3d62d1b030bc10d5e4ebf3ed8c541399ed",
+  "binary_sha256": "80182376657ff50de8c5f7fd7def9bd48feb7b1d0b1b3c9a4969e0c9287a8dcc"
+}

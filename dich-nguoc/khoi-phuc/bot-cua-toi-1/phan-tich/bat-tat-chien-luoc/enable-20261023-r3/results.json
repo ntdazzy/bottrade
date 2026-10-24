@@ -1,0 +1,4096 @@
+[
+  {
+    "mask": 0,
+    "original_selected_profiles": [],
+    "expected_selected_profiles": [],
+    "matched": true
+  },
+  {
+    "mask": 1,
+    "original_selected_profiles": [
+      0
+    ],
+    "expected_selected_profiles": [
+      0
+    ],
+    "matched": true
+  },
+  {
+    "mask": 2,
+    "original_selected_profiles": [
+      1
+    ],
+    "expected_selected_profiles": [
+      1
+    ],
+    "matched": true
+  },
+  {
+    "mask": 3,
+    "original_selected_profiles": [
+      0,
+      1
+    ],
+    "expected_selected_profiles": [
+      0,
+      1
+    ],
+    "matched": true
+  },
+  {
+    "mask": 4,
+    "original_selected_profiles": [
+      2
+    ],
+    "expected_selected_profiles": [
+      2
+    ],
+    "matched": true
+  },
+  {
+    "mask": 5,
+    "original_selected_profiles": [
+      0,
+      2
+    ],
+    "expected_selected_profiles": [
+      0,
+      2
+    ],
+    "matched": true
+  },
+  {
+    "mask": 6,
+    "original_selected_profiles": [
+      1,
+      2
+    ],
+    "expected_selected_profiles": [
+      1,
+      2
+    ],
+    "matched": true
+  },
+  {
+    "mask": 7,
+    "original_selected_profiles": [
+      0,
+      1,
+      2
+    ],
+    "expected_selected_profiles": [
+      0,
+      1,
+      2
+    ],
+    "matched": true
+  },
+  {
+    "mask": 8,
+    "original_selected_profiles": [
+      3
+    ],
+    "expected_selected_profiles": [
+      3
+    ],
+    "matched": true
+  },
+  {
+    "mask": 9,
+    "original_selected_profiles": [
+      0,
+      3
+    ],
+    "expected_selected_profiles": [
+      0,
+      3
+    ],
+    "matched": true
+  },
+  {
+    "mask": 10,
+    "original_selected_profiles": [
+      1,
+      3
+    ],
+    "expected_selected_profiles": [
+      1,
+      3
+    ],
+    "matched": true
+  },
+  {
+    "mask": 11,
+    "original_selected_profiles": [
+      0,
+      1,
+      3
+    ],
+    "expected_selected_profiles": [
+      0,
+      1,
+      3
+    ],
+    "matched": true
+  },
+  {
+    "mask": 12,
+    "original_selected_profiles": [
+      2,
+      3
+    ],
+    "expected_selected_profiles": [
+      2,
+      3
+    ],
+    "matched": true
+  },
+  {
+    "mask": 13,
+    "original_selected_profiles": [
+      0,
+      2,
+      3
+    ],
+    "expected_selected_profiles": [
+      0,
+      2,
+      3
+    ],
+    "matched": true
+  },
+  {
+    "mask": 14,
+    "original_selected_profiles": [
+      1,
+      2,
+      3
+    ],
+    "expected_selected_profiles": [
+      1,
+      2,
+      3
+    ],
+    "matched": true
+  },
+  {
+    "mask": 15,
+    "original_selected_profiles": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "expected_selected_profiles": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "matched": true
+  },
+  {
+    "mask": 16,
+    "original_selected_profiles": [
+      4
+    ],
+    "expected_selected_profiles": [
+      4
+    ],
+    "matched": true
+  },
+  {
+    "mask": 17,
+    "original_selected_profiles": [
+      0,
+      4
+    ],
+    "expected_selected_profiles": [
+      0,
+      4
+    ],
+    "matched": true
+  },
+  {
+    "mask": 18,
+    "original_selected_profiles": [
+      1,
+      4
+    ],
+    "expected_selected_profiles": [
+      1,
+      4
+    ],
+    "matched": true
+  },
+  {
+    "mask": 19,
+    "original_selected_profiles": [
+      0,
+      1,
+      4
+    ],
+    "expected_selected_profiles": [
+      0,
+      1,
+      4
+    ],
+    "matched": true
+  },
+  {
+    "mask": 20,
+    "original_selected_profiles": [
+      2,
+      4
+    ],
+    "expected_selected_profiles": [
+      2,
+      4
+    ],
+    "matched": true
+  },
+  {
+    "mask": 21,
+    "original_selected_profiles": [
+      0,
+      2,
+      4
+    ],
+    "expected_selected_profiles": [
+      0,
+      2,
+      4
+    ],
+    "matched": true
+  },
+  {
+    "mask": 22,
+    "original_selected_profiles": [
+      1,
+      2,
+      4
+    ],
+    "expected_selected_profiles": [
+      1,
+      2,
+      4
+    ],
+    "matched": true
+  },
+  {
+    "mask": 23,
+    "original_selected_profiles": [
+      0,
+      1,
+      2,
+      4
+    ],
+    "expected_selected_profiles": [
+      0,
+      1,
+      2,
+      4
+    ],
+    "matched": true
+  },
+  {
+    "mask": 24,
+    "original_selected_profiles": [
+      3,
+      4
+    ],
+    "expected_selected_profiles": [
+      3,
+      4
+    ],
+    "matched": true
+  },
+  {
+    "mask": 25,
+    "original_selected_profiles": [
+      0,
+      3,
+      4
+    ],
+    "expected_selected_profiles": [
+      0,
+      3,
+      4
+    ],
+    "matched": true
+  },
+  {
+    "mask": 26,
+    "original_selected_profiles": [
+      1,
+      3,
+      4
+    ],
+    "expected_selected_profiles": [
+      1,
+      3,
+      4
+    ],
+    "matched": true
+  },
+  {
+    "mask": 27,
+    "original_selected_profiles": [
+      0,
+      1,
+      3,
+      4
+    ],
+    "expected_selected_profiles": [
+      0,
+      1,
+      3,
+      4
+    ],
+    "matched": true
+  },
+  {
+    "mask": 28,
+    "original_selected_profiles": [
+      2,
+      3,
+      4
+    ],
+    "expected_selected_profiles": [
+      2,
+      3,
+      4
+    ],
+    "matched": true
+  },
+  {
+    "mask": 29,
+    "original_selected_profiles": [
+      0,
+      2,
+      3,
+      4
+    ],
+    "expected_selected_profiles": [
+      0,
+      2,
+      3,
+      4
+    ],
+    "matched": true
+  },
+  {
+    "mask": 30,
+    "original_selected_profiles": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "expected_selected_profiles": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "matched": true
+  },
+  {
+    "mask": 31,
+    "original_selected_profiles": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "expected_selected_profiles": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "matched": true
+  },
+  {
+    "mask": 32,
+    "original_selected_profiles": [
+      5
+    ],
+    "expected_selected_profiles": [
+      5
+    ],
+    "matched": true
+  },
+  {
+    "mask": 33,
+    "original_selected_profiles": [
+      0,
+      5
+    ],
+    "expected_selected_profiles": [
+      0,
+      5
+    ],
+    "matched": true
+  },
+  {
+    "mask": 34,
+    "original_selected_profiles": [
+      1,
+      5
+    ],
+    "expected_selected_profiles": [
+      1,
+      5
+    ],
+    "matched": true
+  },
+  {
+    "mask": 35,
+    "original_selected_profiles": [
+      0,
+      1,
+      5
+    ],
+    "expected_selected_profiles": [
+      0,
+      1,
+      5
+    ],
+    "matched": true
+  },
+  {
+    "mask": 36,
+    "original_selected_profiles": [
+      2,
+      5
+    ],
+    "expected_selected_profiles": [
+      2,
+      5
+    ],
+    "matched": true
+  },
+  {
+    "mask": 37,
+    "original_selected_profiles": [
+      0,
+      2,
+      5
+    ],
+    "expected_selected_profiles": [
+      0,
+      2,
+      5
+    ],
+    "matched": true
+  },
+  {
+    "mask": 38,
+    "original_selected_profiles": [
+      1,
+      2,
+      5
+    ],
+    "expected_selected_profiles": [
+      1,
+      2,
+      5
+    ],
+    "matched": true
+  },
+  {
+    "mask": 39,
+    "original_selected_profiles": [
+      0,
+      1,
+      2,
+      5
+    ],
+    "expected_selected_profiles": [
+      0,
+      1,
+      2,
+      5
+    ],
+    "matched": true
+  },
+  {
+    "mask": 40,
+    "original_selected_profiles": [
+      3,
+      5
+    ],
+    "expected_selected_profiles": [
+      3,
+      5
+    ],
+    "matched": true
+  },
+  {
+    "mask": 41,
+    "original_selected_profiles": [
+      0,
+      3,
+      5
+    ],
+    "expected_selected_profiles": [
+      0,
+      3,
+      5
+    ],
+    "matched": true
+  },
+  {
+    "mask": 42,
+    "original_selected_profiles": [
+      1,
+      3,
+      5
+    ],
+    "expected_selected_profiles": [
+      1,
+      3,
+      5
+    ],
+    "matched": true
+  },
+  {
+    "mask": 43,
+    "original_selected_profiles": [
+      0,
+      1,
+      3,
+      5
+    ],
+    "expected_selected_profiles": [
+      0,
+      1,
+      3,
+      5
+    ],
+    "matched": true
+  },
+  {
+    "mask": 44,
+    "original_selected_profiles": [
+      2,
+      3,
+      5
+    ],
+    "expected_selected_profiles": [
+      2,
+      3,
+      5
+    ],
+    "matched": true
+  },
+  {
+    "mask": 45,
+    "original_selected_profiles": [
+      0,
+      2,
+      3,
+      5
+    ],
+    "expected_selected_profiles": [
+      0,
+      2,
+      3,
+      5
+    ],
+    "matched": true
+  },
+  {
+    "mask": 46,
+    "original_selected_profiles": [
+      1,
+      2,
+      3,
+      5
+    ],
+    "expected_selected_profiles": [
+      1,
+      2,
+      3,
+      5
+    ],
+    "matched": true
+  },
+  {
+    "mask": 47,
+    "original_selected_profiles": [
+      0,
+      1,
+      2,
+      3,
+      5
+    ],
+    "expected_selected_profiles": [
+      0,
+      1,
+      2,
+      3,
+      5
+    ],
+    "matched": true
+  },
+  {
+    "mask": 48,
+    "original_selected_profiles": [
+      4,
+      5
+    ],
+    "expected_selected_profiles": [
+      4,
+      5
+    ],
+    "matched": true
+  },
+  {
+    "mask": 49,
+    "original_selected_profiles": [
+      0,
+      4,
+      5
+    ],
+    "expected_selected_profiles": [
+      0,
+      4,
+      5
+    ],
+    "matched": true
+  },
+  {
+    "mask": 50,
+    "original_selected_profiles": [
+      1,
+      4,
+      5
+    ],
+    "expected_selected_profiles": [
+      1,
+      4,
+      5
+    ],
+    "matched": true
+  },
+  {
+    "mask": 51,
+    "original_selected_profiles": [
+      0,
+      1,
+      4,
+      5
+    ],
+    "expected_selected_profiles": [
+      0,
+      1,
+      4,
+      5
+    ],
+    "matched": true
+  },
+  {
+    "mask": 52,
+    "original_selected_profiles": [
+      2,
+      4,
+      5
+    ],
+    "expected_selected_profiles": [
+      2,
+      4,
+      5
+    ],
+    "matched": true
+  },
+  {
+    "mask": 53,
+    "original_selected_profiles": [
+      0,
+      2,
+      4,
+      5
+    ],
+    "expected_selected_profiles": [
+      0,
+      2,
+      4,
+      5
+    ],
+    "matched": true
+  },
+  {
+    "mask": 54,
+    "original_selected_profiles": [
+      1,
+      2,
+      4,
+      5
+    ],
+    "expected_selected_profiles": [
+      1,
+      2,
+      4,
+      5
+    ],
+    "matched": true
+  },
+  {
+    "mask": 55,
+    "original_selected_profiles": [
+      0,
+      1,
+      2,
+      4,
+      5
+    ],
+    "expected_selected_profiles": [
+      0,
+      1,
+      2,
+      4,
+      5
+    ],
+    "matched": true
+  },
+  {
+    "mask": 56,
+    "original_selected_profiles": [
+      3,
+      4,
+      5
+    ],
+    "expected_selected_profiles": [
+      3,
+      4,
+      5
+    ],
+    "matched": true
+  },
+  {
+    "mask": 57,
+    "original_selected_profiles": [
+      0,
+      3,
+      4,
+      5
+    ],
+    "expected_selected_profiles": [
+      0,
+      3,
+      4,
+      5
+    ],
+    "matched": true
+  },
+  {
+    "mask": 58,
+    "original_selected_profiles": [
+      1,
+      3,
+      4,
+      5
+    ],
+    "expected_selected_profiles": [
+      1,
+      3,
+      4,
+      5
+    ],
+    "matched": true
+  },
+  {
+    "mask": 59,
+    "original_selected_profiles": [
+      0,
+      1,
+      3,
+      4,
+      5
+    ],
+    "expected_selected_profiles": [
+      0,
+      1,
+      3,
+      4,
+      5
+    ],
+    "matched": true
+  },
+  {
+    "mask": 60,
+    "original_selected_profiles": [
+      2,
+      3,
+      4,
+      5
+    ],
+    "expected_selected_profiles": [
+      2,
+      3,
+      4,
+      5
+    ],
+    "matched": true
+  },
+  {
+    "mask": 61,
+    "original_selected_profiles": [
+      0,
+      2,
+      3,
+      4,
+      5
+    ],
+    "expected_selected_profiles": [
+      0,
+      2,
+      3,
+      4,
+      5
+    ],
+    "matched": true
+  },
+  {
+    "mask": 62,
+    "original_selected_profiles": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "expected_selected_profiles": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "matched": true
+  },
+  {
+    "mask": 63,
+    "original_selected_profiles": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "expected_selected_profiles": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "matched": true
+  },
+  {
+    "mask": 64,
+    "original_selected_profiles": [
+      6
+    ],
+    "expected_selected_profiles": [
+      6
+    ],
+    "matched": true
+  },
+  {
+    "mask": 65,
+    "original_selected_profiles": [
+      0,
+      6
+    ],
+    "expected_selected_profiles": [
+      0,
+      6
+    ],
+    "matched": true
+  },
+  {
+    "mask": 66,
+    "original_selected_profiles": [
+      1,
+      6
+    ],
+    "expected_selected_profiles": [
+      1,
+      6
+    ],
+    "matched": true
+  },
+  {
+    "mask": 67,
+    "original_selected_profiles": [
+      0,
+      1,
+      6
+    ],
+    "expected_selected_profiles": [
+      0,
+      1,
+      6
+    ],
+    "matched": true
+  },
+  {
+    "mask": 68,
+    "original_selected_profiles": [
+      2,
+      6
+    ],
+    "expected_selected_profiles": [
+      2,
+      6
+    ],
+    "matched": true
+  },
+  {
+    "mask": 69,
+    "original_selected_profiles": [
+      0,
+      2,
+      6
+    ],
+    "expected_selected_profiles": [
+      0,
+      2,
+      6
+    ],
+    "matched": true
+  },
+  {
+    "mask": 70,
+    "original_selected_profiles": [
+      1,
+      2,
+      6
+    ],
+    "expected_selected_profiles": [
+      1,
+      2,
+      6
+    ],
+    "matched": true
+  },
+  {
+    "mask": 71,
+    "original_selected_profiles": [
+      0,
+      1,
+      2,
+      6
+    ],
+    "expected_selected_profiles": [
+      0,
+      1,
+      2,
+      6
+    ],
+    "matched": true
+  },
+  {
+    "mask": 72,
+    "original_selected_profiles": [
+      3,
+      6
+    ],
+    "expected_selected_profiles": [
+      3,
+      6
+    ],
+    "matched": true
+  },
+  {
+    "mask": 73,
+    "original_selected_profiles": [
+      0,
+      3,
+      6
+    ],
+    "expected_selected_profiles": [
+      0,
+      3,
+      6
+    ],
+    "matched": true
+  },
+  {
+    "mask": 74,
+    "original_selected_profiles": [
+      1,
+      3,
+      6
+    ],
+    "expected_selected_profiles": [
+      1,
+      3,
+      6
+    ],
+    "matched": true
+  },
+  {
+    "mask": 75,
+    "original_selected_profiles": [
+      0,
+      1,
+      3,
+      6
+    ],
+    "expected_selected_profiles": [
+      0,
+      1,
+      3,
+      6
+    ],
+    "matched": true
+  },
+  {
+    "mask": 76,
+    "original_selected_profiles": [
+      2,
+      3,
+      6
+    ],
+    "expected_selected_profiles": [
+      2,
+      3,
+      6
+    ],
+    "matched": true
+  },
+  {
+    "mask": 77,
+    "original_selected_profiles": [
+      0,
+      2,
+      3,
+      6
+    ],
+    "expected_selected_profiles": [
+      0,
+      2,
+      3,
+      6
+    ],
+    "matched": true
+  },
+  {
+    "mask": 78,
+    "original_selected_profiles": [
+      1,
+      2,
+      3,
+      6
+    ],
+    "expected_selected_profiles": [
+      1,
+      2,
+      3,
+      6
+    ],
+    "matched": true
+  },
+  {
+    "mask": 79,
+    "original_selected_profiles": [
+      0,
+      1,
+      2,
+      3,
+      6
+    ],
+    "expected_selected_profiles": [
+      0,
+      1,
+      2,
+      3,
+      6
+    ],
+    "matched": true
+  },
+  {
+    "mask": 80,
+    "original_selected_profiles": [
+      4,
+      6
+    ],
+    "expected_selected_profiles": [
+      4,
+      6
+    ],
+    "matched": true
+  },
+  {
+    "mask": 81,
+    "original_selected_profiles": [
+      0,
+      4,
+      6
+    ],
+    "expected_selected_profiles": [
+      0,
+      4,
+      6
+    ],
+    "matched": true
+  },
+  {
+    "mask": 82,
+    "original_selected_profiles": [
+      1,
+      4,
+      6
+    ],
+    "expected_selected_profiles": [
+      1,
+      4,
+      6
+    ],
+    "matched": true
+  },
+  {
+    "mask": 83,
+    "original_selected_profiles": [
+      0,
+      1,
+      4,
+      6
+    ],
+    "expected_selected_profiles": [
+      0,
+      1,
+      4,
+      6
+    ],
+    "matched": true
+  },
+  {
+    "mask": 84,
+    "original_selected_profiles": [
+      2,
+      4,
+      6
+    ],
+    "expected_selected_profiles": [
+      2,
+      4,
+      6
+    ],
+    "matched": true
+  },
+  {
+    "mask": 85,
+    "original_selected_profiles": [
+      0,
+      2,
+      4,
+      6
+    ],
+    "expected_selected_profiles": [
+      0,
+      2,
+      4,
+      6
+    ],
+    "matched": true
+  },
+  {
+    "mask": 86,
+    "original_selected_profiles": [
+      1,
+      2,
+      4,
+      6
+    ],
+    "expected_selected_profiles": [
+      1,
+      2,
+      4,
+      6
+    ],
+    "matched": true
+  },
+  {
+    "mask": 87,
+    "original_selected_profiles": [
+      0,
+      1,
+      2,
+      4,
+      6
+    ],
+    "expected_selected_profiles": [
+      0,
+      1,
+      2,
+      4,
+      6
+    ],
+    "matched": true
+  },
+  {
+    "mask": 88,
+    "original_selected_profiles": [
+      3,
+      4,
+      6
+    ],
+    "expected_selected_profiles": [
+      3,
+      4,
+      6
+    ],
+    "matched": true
+  },
+  {
+    "mask": 89,
+    "original_selected_profiles": [
+      0,
+      3,
+      4,
+      6
+    ],
+    "expected_selected_profiles": [
+      0,
+      3,
+      4,
+      6
+    ],
+    "matched": true
+  },
+  {
+    "mask": 90,
+    "original_selected_profiles": [
+      1,
+      3,
+      4,
+      6
+    ],
+    "expected_selected_profiles": [
+      1,
+      3,
+      4,
+      6
+    ],
+    "matched": true
+  },
+  {
+    "mask": 91,
+    "original_selected_profiles": [
+      0,
+      1,
+      3,
+      4,
+      6
+    ],
+    "expected_selected_profiles": [
+      0,
+      1,
+      3,
+      4,
+      6
+    ],
+    "matched": true
+  },
+  {
+    "mask": 92,
+    "original_selected_profiles": [
+      2,
+      3,
+      4,
+      6
+    ],
+    "expected_selected_profiles": [
+      2,
+      3,
+      4,
+      6
+    ],
+    "matched": true
+  },
+  {
+    "mask": 93,
+    "original_selected_profiles": [
+      0,
+      2,
+      3,
+      4,
+      6
+    ],
+    "expected_selected_profiles": [
+      0,
+      2,
+      3,
+      4,
+      6
+    ],
+    "matched": true
+  },
+  {
+    "mask": 94,
+    "original_selected_profiles": [
+      1,
+      2,
+      3,
+      4,
+      6
+    ],
+    "expected_selected_profiles": [
+      1,
+      2,
+      3,
+      4,
+      6
+    ],
+    "matched": true
+  },
+  {
+    "mask": 95,
+    "original_selected_profiles": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      6
+    ],
+    "expected_selected_profiles": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      6
+    ],
+    "matched": true
+  },
+  {
+    "mask": 96,
+    "original_selected_profiles": [
+      5,
+      6
+    ],
+    "expected_selected_profiles": [
+      5,
+      6
+    ],
+    "matched": true
+  },
+  {
+    "mask": 97,
+    "original_selected_profiles": [
+      0,
+      5,
+      6
+    ],
+    "expected_selected_profiles": [
+      0,
+      5,
+      6
+    ],
+    "matched": true
+  },
+  {
+    "mask": 98,
+    "original_selected_profiles": [
+      1,
+      5,
+      6
+    ],
+    "expected_selected_profiles": [
+      1,
+      5,
+      6
+    ],
+    "matched": true
+  },
+  {
+    "mask": 99,
+    "original_selected_profiles": [
+      0,
+      1,
+      5,
+      6
+    ],
+    "expected_selected_profiles": [
+      0,
+      1,
+      5,
+      6
+    ],
+    "matched": true
+  },
+  {
+    "mask": 100,
+    "original_selected_profiles": [
+      2,
+      5,
+      6
+    ],
+    "expected_selected_profiles": [
+      2,
+      5,
+      6
+    ],
+    "matched": true
+  },
+  {
+    "mask": 101,
+    "original_selected_profiles": [
+      0,
+      2,
+      5,
+      6
+    ],
+    "expected_selected_profiles": [
+      0,
+      2,
+      5,
+      6
+    ],
+    "matched": true
+  },
+  {
+    "mask": 102,
+    "original_selected_profiles": [
+      1,
+      2,
+      5,
+      6
+    ],
+    "expected_selected_profiles": [
+      1,
+      2,
+      5,
+      6
+    ],
+    "matched": true
+  },
+  {
+    "mask": 103,
+    "original_selected_profiles": [
+      0,
+      1,
+      2,
+      5,
+      6
+    ],
+    "expected_selected_profiles": [
+      0,
+      1,
+      2,
+      5,
+      6
+    ],
+    "matched": true
+  },
+  {
+    "mask": 104,
+    "original_selected_profiles": [
+      3,
+      5,
+      6
+    ],
+    "expected_selected_profiles": [
+      3,
+      5,
+      6
+    ],
+    "matched": true
+  },
+  {
+    "mask": 105,
+    "original_selected_profiles": [
+      0,
+      3,
+      5,
+      6
+    ],
+    "expected_selected_profiles": [
+      0,
+      3,
+      5,
+      6
+    ],
+    "matched": true
+  },
+  {
+    "mask": 106,
+    "original_selected_profiles": [
+      1,
+      3,
+      5,
+      6
+    ],
+    "expected_selected_profiles": [
+      1,
+      3,
+      5,
+      6
+    ],
+    "matched": true
+  },
+  {
+    "mask": 107,
+    "original_selected_profiles": [
+      0,
+      1,
+      3,
+      5,
+      6
+    ],
+    "expected_selected_profiles": [
+      0,
+      1,
+      3,
+      5,
+      6
+    ],
+    "matched": true
+  },
+  {
+    "mask": 108,
+    "original_selected_profiles": [
+      2,
+      3,
+      5,
+      6
+    ],
+    "expected_selected_profiles": [
+      2,
+      3,
+      5,
+      6
+    ],
+    "matched": true
+  },
+  {
+    "mask": 109,
+    "original_selected_profiles": [
+      0,
+      2,
+      3,
+      5,
+      6
+    ],
+    "expected_selected_profiles": [
+      0,
+      2,
+      3,
+      5,
+      6
+    ],
+    "matched": true
+  },
+  {
+    "mask": 110,
+    "original_selected_profiles": [
+      1,
+      2,
+      3,
+      5,
+      6
+    ],
+    "expected_selected_profiles": [
+      1,
+      2,
+      3,
+      5,
+      6
+    ],
+    "matched": true
+  },
+  {
+    "mask": 111,
+    "original_selected_profiles": [
+      0,
+      1,
+      2,
+      3,
+      5,
+      6
+    ],
+    "expected_selected_profiles": [
+      0,
+      1,
+      2,
+      3,
+      5,
+      6
+    ],
+    "matched": true
+  },
+  {
+    "mask": 112,
+    "original_selected_profiles": [
+      4,
+      5,
+      6
+    ],
+    "expected_selected_profiles": [
+      4,
+      5,
+      6
+    ],
+    "matched": true
+  },
+  {
+    "mask": 113,
+    "original_selected_profiles": [
+      0,
+      4,
+      5,
+      6
+    ],
+    "expected_selected_profiles": [
+      0,
+      4,
+      5,
+      6
+    ],
+    "matched": true
+  },
+  {
+    "mask": 114,
+    "original_selected_profiles": [
+      1,
+      4,
+      5,
+      6
+    ],
+    "expected_selected_profiles": [
+      1,
+      4,
+      5,
+      6
+    ],
+    "matched": true
+  },
+  {
+    "mask": 115,
+    "original_selected_profiles": [
+      0,
+      1,
+      4,
+      5,
+      6
+    ],
+    "expected_selected_profiles": [
+      0,
+      1,
+      4,
+      5,
+      6
+    ],
+    "matched": true
+  },
+  {
+    "mask": 116,
+    "original_selected_profiles": [
+      2,
+      4,
+      5,
+      6
+    ],
+    "expected_selected_profiles": [
+      2,
+      4,
+      5,
+      6
+    ],
+    "matched": true
+  },
+  {
+    "mask": 117,
+    "original_selected_profiles": [
+      0,
+      2,
+      4,
+      5,
+      6
+    ],
+    "expected_selected_profiles": [
+      0,
+      2,
+      4,
+      5,
+      6
+    ],
+    "matched": true
+  },
+  {
+    "mask": 118,
+    "original_selected_profiles": [
+      1,
+      2,
+      4,
+      5,
+      6
+    ],
+    "expected_selected_profiles": [
+      1,
+      2,
+      4,
+      5,
+      6
+    ],
+    "matched": true
+  },
+  {
+    "mask": 119,
+    "original_selected_profiles": [
+      0,
+      1,
+      2,
+      4,
+      5,
+      6
+    ],
+    "expected_selected_profiles": [
+      0,
+      1,
+      2,
+      4,
+      5,
+      6
+    ],
+    "matched": true
+  },
+  {
+    "mask": 120,
+    "original_selected_profiles": [
+      3,
+      4,
+      5,
+      6
+    ],
+    "expected_selected_profiles": [
+      3,
+      4,
+      5,
+      6
+    ],
+    "matched": true
+  },
+  {
+    "mask": 121,
+    "original_selected_profiles": [
+      0,
+      3,
+      4,
+      5,
+      6
+    ],
+    "expected_selected_profiles": [
+      0,
+      3,
+      4,
+      5,
+      6
+    ],
+    "matched": true
+  },
+  {
+    "mask": 122,
+    "original_selected_profiles": [
+      1,
+      3,
+      4,
+      5,
+      6
+    ],
+    "expected_selected_profiles": [
+      1,
+      3,
+      4,
+      5,
+      6
+    ],
+    "matched": true
+  },
+  {
+    "mask": 123,
+    "original_selected_profiles": [
+      0,
+      1,
+      3,
+      4,
+      5,
+      6
+    ],
+    "expected_selected_profiles": [
+      0,
+      1,
+      3,
+      4,
+      5,
+      6
+    ],
+    "matched": true
+  },
+  {
+    "mask": 124,
+    "original_selected_profiles": [
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "expected_selected_profiles": [
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "matched": true
+  },
+  {
+    "mask": 125,
+    "original_selected_profiles": [
+      0,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "expected_selected_profiles": [
+      0,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "matched": true
+  },
+  {
+    "mask": 126,
+    "original_selected_profiles": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "expected_selected_profiles": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "matched": true
+  },
+  {
+    "mask": 127,
+    "original_selected_profiles": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "expected_selected_profiles": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "matched": true
+  },
+  {
+    "mask": 128,
+    "original_selected_profiles": [
+      7
+    ],
+    "expected_selected_profiles": [
+      7
+    ],
+    "matched": true
+  },
+  {
+    "mask": 129,
+    "original_selected_profiles": [
+      0,
+      7
+    ],
+    "expected_selected_profiles": [
+      0,
+      7
+    ],
+    "matched": true
+  },
+  {
+    "mask": 130,
+    "original_selected_profiles": [
+      1,
+      7
+    ],
+    "expected_selected_profiles": [
+      1,
+      7
+    ],
+    "matched": true
+  },
+  {
+    "mask": 131,
+    "original_selected_profiles": [
+      0,
+      1,
+      7
+    ],
+    "expected_selected_profiles": [
+      0,
+      1,
+      7
+    ],
+    "matched": true
+  },
+  {
+    "mask": 132,
+    "original_selected_profiles": [
+      2,
+      7
+    ],
+    "expected_selected_profiles": [
+      2,
+      7
+    ],
+    "matched": true
+  },
+  {
+    "mask": 133,
+    "original_selected_profiles": [
+      0,
+      2,
+      7
+    ],
+    "expected_selected_profiles": [
+      0,
+      2,
+      7
+    ],
+    "matched": true
+  },
+  {
+    "mask": 134,
+    "original_selected_profiles": [
+      1,
+      2,
+      7
+    ],
+    "expected_selected_profiles": [
+      1,
+      2,
+      7
+    ],
+    "matched": true
+  },
+  {
+    "mask": 135,
+    "original_selected_profiles": [
+      0,
+      1,
+      2,
+      7
+    ],
+    "expected_selected_profiles": [
+      0,
+      1,
+      2,
+      7
+    ],
+    "matched": true
+  },
+  {
+    "mask": 136,
+    "original_selected_profiles": [
+      3,
+      7
+    ],
+    "expected_selected_profiles": [
+      3,
+      7
+    ],
+    "matched": true
+  },
+  {
+    "mask": 137,
+    "original_selected_profiles": [
+      0,
+      3,
+      7
+    ],
+    "expected_selected_profiles": [
+      0,
+      3,
+      7
+    ],
+    "matched": true
+  },
+  {
+    "mask": 138,
+    "original_selected_profiles": [
+      1,
+      3,
+      7
+    ],
+    "expected_selected_profiles": [
+      1,
+      3,
+      7
+    ],
+    "matched": true
+  },
+  {
+    "mask": 139,
+    "original_selected_profiles": [
+      0,
+      1,
+      3,
+      7
+    ],
+    "expected_selected_profiles": [
+      0,
+      1,
+      3,
+      7
+    ],
+    "matched": true
+  },
+  {
+    "mask": 140,
+    "original_selected_profiles": [
+      2,
+      3,
+      7
+    ],
+    "expected_selected_profiles": [
+      2,
+      3,
+      7
+    ],
+    "matched": true
+  },
+  {
+    "mask": 141,
+    "original_selected_profiles": [
+      0,
+      2,
+      3,
+      7
+    ],
+    "expected_selected_profiles": [
+      0,
+      2,
+      3,
+      7
+    ],
+    "matched": true
+  },
+  {
+    "mask": 142,
+    "original_selected_profiles": [
+      1,
+      2,
+      3,
+      7
+    ],
+    "expected_selected_profiles": [
+      1,
+      2,
+      3,
+      7
+    ],
+    "matched": true
+  },
+  {
+    "mask": 143,
+    "original_selected_profiles": [
+      0,
+      1,
+      2,
+      3,
+      7
+    ],
+    "expected_selected_profiles": [
+      0,
+      1,
+      2,
+      3,
+      7
+    ],
+    "matched": true
+  },
+  {
+    "mask": 144,
+    "original_selected_profiles": [
+      4,
+      7
+    ],
+    "expected_selected_profiles": [
+      4,
+      7
+    ],
+    "matched": true
+  },
+  {
+    "mask": 145,
+    "original_selected_profiles": [
+      0,
+      4,
+      7
+    ],
+    "expected_selected_profiles": [
+      0,
+      4,
+      7
+    ],
+    "matched": true
+  },
+  {
+    "mask": 146,
+    "original_selected_profiles": [
+      1,
+      4,
+      7
+    ],
+    "expected_selected_profiles": [
+      1,
+      4,
+      7
+    ],
+    "matched": true
+  },
+  {
+    "mask": 147,
+    "original_selected_profiles": [
+      0,
+      1,
+      4,
+      7
+    ],
+    "expected_selected_profiles": [
+      0,
+      1,
+      4,
+      7
+    ],
+    "matched": true
+  },
+  {
+    "mask": 148,
+    "original_selected_profiles": [
+      2,
+      4,
+      7
+    ],
+    "expected_selected_profiles": [
+      2,
+      4,
+      7
+    ],
+    "matched": true
+  },
+  {
+    "mask": 149,
+    "original_selected_profiles": [
+      0,
+      2,
+      4,
+      7
+    ],
+    "expected_selected_profiles": [
+      0,
+      2,
+      4,
+      7
+    ],
+    "matched": true
+  },
+  {
+    "mask": 150,
+    "original_selected_profiles": [
+      1,
+      2,
+      4,
+      7
+    ],
+    "expected_selected_profiles": [
+      1,
+      2,
+      4,
+      7
+    ],
+    "matched": true
+  },
+  {
+    "mask": 151,
+    "original_selected_profiles": [
+      0,
+      1,
+      2,
+      4,
+      7
+    ],
+    "expected_selected_profiles": [
+      0,
+      1,
+      2,
+      4,
+      7
+    ],
+    "matched": true
+  },
+  {
+    "mask": 152,
+    "original_selected_profiles": [
+      3,
+      4,
+      7
+    ],
+    "expected_selected_profiles": [
+      3,
+      4,
+      7
+    ],
+    "matched": true
+  },
+  {
+    "mask": 153,
+    "original_selected_profiles": [
+      0,
+      3,
+      4,
+      7
+    ],
+    "expected_selected_profiles": [
+      0,
+      3,
+      4,
+      7
+    ],
+    "matched": true
+  },
+  {
+    "mask": 154,
+    "original_selected_profiles": [
+      1,
+      3,
+      4,
+      7
+    ],
+    "expected_selected_profiles": [
+      1,
+      3,
+      4,
+      7
+    ],
+    "matched": true
+  },
+  {
+    "mask": 155,
+    "original_selected_profiles": [
+      0,
+      1,
+      3,
+      4,
+      7
+    ],
+    "expected_selected_profiles": [
+      0,
+      1,
+      3,
+      4,
+      7
+    ],
+    "matched": true
+  },
+  {
+    "mask": 156,
+    "original_selected_profiles": [
+      2,
+      3,
+      4,
+      7
+    ],
+    "expected_selected_profiles": [
+      2,
+      3,
+      4,
+      7
+    ],
+    "matched": true
+  },
+  {
+    "mask": 157,
+    "original_selected_profiles": [
+      0,
+      2,
+      3,
+      4,
+      7
+    ],
+    "expected_selected_profiles": [
+      0,
+      2,
+      3,
+      4,
+      7
+    ],
+    "matched": true
+  },
+  {
+    "mask": 158,
+    "original_selected_profiles": [
+      1,
+      2,
+      3,
+      4,
+      7
+    ],
+    "expected_selected_profiles": [
+      1,
+      2,
+      3,
+      4,
+      7
+    ],
+    "matched": true
+  },
+  {
+    "mask": 159,
+    "original_selected_profiles": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      7
+    ],
+    "expected_selected_profiles": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      7
+    ],
+    "matched": true
+  },
+  {
+    "mask": 160,
+    "original_selected_profiles": [
+      5,
+      7
+    ],
+    "expected_selected_profiles": [
+      5,
+      7
+    ],
+    "matched": true
+  },
+  {
+    "mask": 161,
+    "original_selected_profiles": [
+      0,
+      5,
+      7
+    ],
+    "expected_selected_profiles": [
+      0,
+      5,
+      7
+    ],
+    "matched": true
+  },
+  {
+    "mask": 162,
+    "original_selected_profiles": [
+      1,
+      5,
+      7
+    ],
+    "expected_selected_profiles": [
+      1,
+      5,
+      7
+    ],
+    "matched": true
+  },
+  {
+    "mask": 163,
+    "original_selected_profiles": [
+      0,
+      1,
+      5,
+      7
+    ],
+    "expected_selected_profiles": [
+      0,
+      1,
+      5,
+      7
+    ],
+    "matched": true
+  },
+  {
+    "mask": 164,
+    "original_selected_profiles": [
+      2,
+      5,
+      7
+    ],
+    "expected_selected_profiles": [
+      2,
+      5,
+      7
+    ],
+    "matched": true
+  },
+  {
+    "mask": 165,
+    "original_selected_profiles": [
+      0,
+      2,
+      5,
+      7
+    ],
+    "expected_selected_profiles": [
+      0,
+      2,
+      5,
+      7
+    ],
+    "matched": true
+  },
+  {
+    "mask": 166,
+    "original_selected_profiles": [
+      1,
+      2,
+      5,
+      7
+    ],
+    "expected_selected_profiles": [
+      1,
+      2,
+      5,
+      7
+    ],
+    "matched": true
+  },
+  {
+    "mask": 167,
+    "original_selected_profiles": [
+      0,
+      1,
+      2,
+      5,
+      7
+    ],
+    "expected_selected_profiles": [
+      0,
+      1,
+      2,
+      5,
+      7
+    ],
+    "matched": true
+  },
+  {
+    "mask": 168,
+    "original_selected_profiles": [
+      3,
+      5,
+      7
+    ],
+    "expected_selected_profiles": [
+      3,
+      5,
+      7
+    ],
+    "matched": true
+  },
+  {
+    "mask": 169,
+    "original_selected_profiles": [
+      0,
+      3,
+      5,
+      7
+    ],
+    "expected_selected_profiles": [
+      0,
+      3,
+      5,
+      7
+    ],
+    "matched": true
+  },
+  {
+    "mask": 170,
+    "original_selected_profiles": [
+      1,
+      3,
+      5,
+      7
+    ],
+    "expected_selected_profiles": [
+      1,
+      3,
+      5,
+      7
+    ],
+    "matched": true
+  },
+  {
+    "mask": 171,
+    "original_selected_profiles": [
+      0,
+      1,
+      3,
+      5,
+      7
+    ],
+    "expected_selected_profiles": [
+      0,
+      1,
+      3,
+      5,
+      7
+    ],
+    "matched": true
+  },
+  {
+    "mask": 172,
+    "original_selected_profiles": [
+      2,
+      3,
+      5,
+      7
+    ],
+    "expected_selected_profiles": [
+      2,
+      3,
+      5,
+      7
+    ],
+    "matched": true
+  },
+  {
+    "mask": 173,
+    "original_selected_profiles": [
+      0,
+      2,
+      3,
+      5,
+      7
+    ],
+    "expected_selected_profiles": [
+      0,
+      2,
+      3,
+      5,
+      7
+    ],
+    "matched": true
+  },
+  {
+    "mask": 174,
+    "original_selected_profiles": [
+      1,
+      2,
+      3,
+      5,
+      7
+    ],
+    "expected_selected_profiles": [
+      1,
+      2,
+      3,
+      5,
+      7
+    ],
+    "matched": true
+  },
+  {
+    "mask": 175,
+    "original_selected_profiles": [
+      0,
+      1,
+      2,
+      3,
+      5,
+      7
+    ],
+    "expected_selected_profiles": [
+      0,
+      1,
+      2,
+      3,
+      5,
+      7
+    ],
+    "matched": true
+  },
+  {
+    "mask": 176,
+    "original_selected_profiles": [
+      4,
+      5,
+      7
+    ],
+    "expected_selected_profiles": [
+      4,
+      5,
+      7
+    ],
+    "matched": true
+  },
+  {
+    "mask": 177,
+    "original_selected_profiles": [
+      0,
+      4,
+      5,
+      7
+    ],
+    "expected_selected_profiles": [
+      0,
+      4,
+      5,
+      7
+    ],
+    "matched": true
+  },
+  {
+    "mask": 178,
+    "original_selected_profiles": [
+      1,
+      4,
+      5,
+      7
+    ],
+    "expected_selected_profiles": [
+      1,
+      4,
+      5,
+      7
+    ],
+    "matched": true
+  },
+  {
+    "mask": 179,
+    "original_selected_profiles": [
+      0,
+      1,
+      4,
+      5,
+      7
+    ],
+    "expected_selected_profiles": [
+      0,
+      1,
+      4,
+      5,
+      7
+    ],
+    "matched": true
+  },
+  {
+    "mask": 180,
+    "original_selected_profiles": [
+      2,
+      4,
+      5,
+      7
+    ],
+    "expected_selected_profiles": [
+      2,
+      4,
+      5,
+      7
+    ],
+    "matched": true
+  },
+  {
+    "mask": 181,
+    "original_selected_profiles": [
+      0,
+      2,
+      4,
+      5,
+      7
+    ],
+    "expected_selected_profiles": [
+      0,
+      2,
+      4,
+      5,
+      7
+    ],
+    "matched": true
+  },
+  {
+    "mask": 182,
+    "original_selected_profiles": [
+      1,
+      2,
+      4,
+      5,
+      7
+    ],
+    "expected_selected_profiles": [
+      1,
+      2,
+      4,
+      5,
+      7
+    ],
+    "matched": true
+  },
+  {
+    "mask": 183,
+    "original_selected_profiles": [
+      0,
+      1,
+      2,
+      4,
+      5,
+      7
+    ],
+    "expected_selected_profiles": [
+      0,
+      1,
+      2,
+      4,
+      5,
+      7
+    ],
+    "matched": true
+  },
+  {
+    "mask": 184,
+    "original_selected_profiles": [
+      3,
+      4,
+      5,
+      7
+    ],
+    "expected_selected_profiles": [
+      3,
+      4,
+      5,
+      7
+    ],
+    "matched": true
+  },
+  {
+    "mask": 185,
+    "original_selected_profiles": [
+      0,
+      3,
+      4,
+      5,
+      7
+    ],
+    "expected_selected_profiles": [
+      0,
+      3,
+      4,
+      5,
+      7
+    ],
+    "matched": true
+  },
+  {
+    "mask": 186,
+    "original_selected_profiles": [
+      1,
+      3,
+      4,
+      5,
+      7
+    ],
+    "expected_selected_profiles": [
+      1,
+      3,
+      4,
+      5,
+      7
+    ],
+    "matched": true
+  },
+  {
+    "mask": 187,
+    "original_selected_profiles": [
+      0,
+      1,
+      3,
+      4,
+      5,
+      7
+    ],
+    "expected_selected_profiles": [
+      0,
+      1,
+      3,
+      4,
+      5,
+      7
+    ],
+    "matched": true
+  },
+  {
+    "mask": 188,
+    "original_selected_profiles": [
+      2,
+      3,
+      4,
+      5,
+      7
+    ],
+    "expected_selected_profiles": [
+      2,
+      3,
+      4,
+      5,
+      7
+    ],
+    "matched": true
+  },
+  {
+    "mask": 189,
+    "original_selected_profiles": [
+      0,
+      2,
+      3,
+      4,
+      5,
+      7
+    ],
+    "expected_selected_profiles": [
+      0,
+      2,
+      3,
+      4,
+      5,
+      7
+    ],
+    "matched": true
+  },
+  {
+    "mask": 190,
+    "original_selected_profiles": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      7
+    ],
+    "expected_selected_profiles": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      7
+    ],
+    "matched": true
+  },
+  {
+    "mask": 191,
+    "original_selected_profiles": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      7
+    ],
+    "expected_selected_profiles": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      7
+    ],
+    "matched": true
+  },
+  {
+    "mask": 192,
+    "original_selected_profiles": [
+      6,
+      7
+    ],
+    "expected_selected_profiles": [
+      6,
+      7
+    ],
+    "matched": true
+  },
+  {
+    "mask": 193,
+    "original_selected_profiles": [
+      0,
+      6,
+      7
+    ],
+    "expected_selected_profiles": [
+      0,
+      6,
+      7
+    ],
+    "matched": true
+  },
+  {
+    "mask": 194,
+    "original_selected_profiles": [
+      1,
+      6,
+      7
+    ],
+    "expected_selected_profiles": [
+      1,
+      6,
+      7
+    ],
+    "matched": true
+  },
+  {
+    "mask": 195,
+    "original_selected_profiles": [
+      0,
+      1,
+      6,
+      7
+    ],
+    "expected_selected_profiles": [
+      0,
+      1,
+      6,
+      7
+    ],
+    "matched": true
+  },
+  {
+    "mask": 196,
+    "original_selected_profiles": [
+      2,
+      6,
+      7
+    ],
+    "expected_selected_profiles": [
+      2,
+      6,
+      7
+    ],
+    "matched": true
+  },
+  {
+    "mask": 197,
+    "original_selected_profiles": [
+      0,
+      2,
+      6,
+      7
+    ],
+    "expected_selected_profiles": [
+      0,
+      2,
+      6,
+      7
+    ],
+    "matched": true
+  },
+  {
+    "mask": 198,
+    "original_selected_profiles": [
+      1,
+      2,
+      6,
+      7
+    ],
+    "expected_selected_profiles": [
+      1,
+      2,
+      6,
+      7
+    ],
+    "matched": true
+  },
+  {
+    "mask": 199,
+    "original_selected_profiles": [
+      0,
+      1,
+      2,
+      6,
+      7
+    ],
+    "expected_selected_profiles": [
+      0,
+      1,
+      2,
+      6,
+      7
+    ],
+    "matched": true
+  },
+  {
+    "mask": 200,
+    "original_selected_profiles": [
+      3,
+      6,
+      7
+    ],
+    "expected_selected_profiles": [
+      3,
+      6,
+      7
+    ],
+    "matched": true
+  },
+  {
+    "mask": 201,
+    "original_selected_profiles": [
+      0,
+      3,
+      6,
+      7
+    ],
+    "expected_selected_profiles": [
+      0,
+      3,
+      6,
+      7
+    ],
+    "matched": true
+  },
+  {
+    "mask": 202,
+    "original_selected_profiles": [
+      1,
+      3,
+      6,
+      7
+    ],
+    "expected_selected_profiles": [
+      1,
+      3,
+      6,
+      7
+    ],
+    "matched": true
+  },
+  {
+    "mask": 203,
+    "original_selected_profiles": [
+      0,
+      1,
+      3,
+      6,
+      7
+    ],
+    "expected_selected_profiles": [
+      0,
+      1,
+      3,
+      6,
+      7
+    ],
+    "matched": true
+  },
+  {
+    "mask": 204,
+    "original_selected_profiles": [
+      2,
+      3,
+      6,
+      7
+    ],
+    "expected_selected_profiles": [
+      2,
+      3,
+      6,
+      7
+    ],
+    "matched": true
+  },
+  {
+    "mask": 205,
+    "original_selected_profiles": [
+      0,
+      2,
+      3,
+      6,
+      7
+    ],
+    "expected_selected_profiles": [
+      0,
+      2,
+      3,
+      6,
+      7
+    ],
+    "matched": true
+  },
+  {
+    "mask": 206,
+    "original_selected_profiles": [
+      1,
+      2,
+      3,
+      6,
+      7
+    ],
+    "expected_selected_profiles": [
+      1,
+      2,
+      3,
+      6,
+      7
+    ],
+    "matched": true
+  },
+  {
+    "mask": 207,
+    "original_selected_profiles": [
+      0,
+      1,
+      2,
+      3,
+      6,
+      7
+    ],
+    "expected_selected_profiles": [
+      0,
+      1,
+      2,
+      3,
+      6,
+      7
+    ],
+    "matched": true
+  },
+  {
+    "mask": 208,
+    "original_selected_profiles": [
+      4,
+      6,
+      7
+    ],
+    "expected_selected_profiles": [
+      4,
+      6,
+      7
+    ],
+    "matched": true
+  },
+  {
+    "mask": 209,
+    "original_selected_profiles": [
+      0,
+      4,
+      6,
+      7
+    ],
+    "expected_selected_profiles": [
+      0,
+      4,
+      6,
+      7
+    ],
+    "matched": true
+  },
+  {
+    "mask": 210,
+    "original_selected_profiles": [
+      1,
+      4,
+      6,
+      7
+    ],
+    "expected_selected_profiles": [
+      1,
+      4,
+      6,
+      7
+    ],
+    "matched": true
+  },
+  {
+    "mask": 211,
+    "original_selected_profiles": [
+      0,
+      1,
+      4,
+      6,
+      7
+    ],
+    "expected_selected_profiles": [
+      0,
+      1,
+      4,
+      6,
+      7
+    ],
+    "matched": true
+  },
+  {
+    "mask": 212,
+    "original_selected_profiles": [
+      2,
+      4,
+      6,
+      7
+    ],
+    "expected_selected_profiles": [
+      2,
+      4,
+      6,
+      7
+    ],
+    "matched": true
+  },
+  {
+    "mask": 213,
+    "original_selected_profiles": [
+      0,
+      2,
+      4,
+      6,
+      7
+    ],
+    "expected_selected_profiles": [
+      0,
+      2,
+      4,
+      6,
+      7
+    ],
+    "matched": true
+  },
+  {
+    "mask": 214,
+    "original_selected_profiles": [
+      1,
+      2,
+      4,
+      6,
+      7
+    ],
+    "expected_selected_profiles": [
+      1,
+      2,
+      4,
+      6,
+      7
+    ],
+    "matched": true
+  },
+  {
+    "mask": 215,
+    "original_selected_profiles": [
+      0,
+      1,
+      2,
+      4,
+      6,
+      7
+    ],
+    "expected_selected_profiles": [
+      0,
+      1,
+      2,
+      4,
+      6,
+      7
+    ],
+    "matched": true
+  },
+  {
+    "mask": 216,
+    "original_selected_profiles": [
+      3,
+      4,
+      6,
+      7
+    ],
+    "expected_selected_profiles": [
+      3,
+      4,
+      6,
+      7
+    ],
+    "matched": true
+  },
+  {
+    "mask": 217,
+    "original_selected_profiles": [
+      0,
+      3,
+      4,
+      6,
+      7
+    ],
+    "expected_selected_profiles": [
+      0,
+      3,
+      4,
+      6,
+      7
+    ],
+    "matched": true
+  },
+  {
+    "mask": 218,
+    "original_selected_profiles": [
+      1,
+      3,
+      4,
+      6,
+      7
+    ],
+    "expected_selected_profiles": [
+      1,
+      3,
+      4,
+      6,
+      7
+    ],
+    "matched": true
+  },
+  {
+    "mask": 219,
+    "original_selected_profiles": [
+      0,
+      1,
+      3,
+      4,
+      6,
+      7
+    ],
+    "expected_selected_profiles": [
+      0,
+      1,
+      3,
+      4,
+      6,
+      7
+    ],
+    "matched": true
+  },
+  {
+    "mask": 220,
+    "original_selected_profiles": [
+      2,
+      3,
+      4,
+      6,
+      7
+    ],
+    "expected_selected_profiles": [
+      2,
+      3,
+      4,
+      6,
+      7
+    ],
+    "matched": true
+  },
+  {
+    "mask": 221,
+    "original_selected_profiles": [
+      0,
+      2,
+      3,
+      4,
+      6,
+      7
+    ],
+    "expected_selected_profiles": [
+      0,
+      2,
+      3,
+      4,
+      6,
+      7
+    ],
+    "matched": true
+  },
+  {
+    "mask": 222,
+    "original_selected_profiles": [
+      1,
+      2,
+      3,
+      4,
+      6,
+      7
+    ],
+    "expected_selected_profiles": [
+      1,
+      2,
+      3,
+      4,
+      6,
+      7
+    ],
+    "matched": true
+  },
+  {
+    "mask": 223,
+    "original_selected_profiles": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      6,
+      7
+    ],
+    "expected_selected_profiles": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      6,
+      7
+    ],
+    "matched": true
+  },
+  {
+    "mask": 224,
+    "original_selected_profiles": [
+      5,
+      6,
+      7
+    ],
+    "expected_selected_profiles": [
+      5,
+      6,
+      7
+    ],
+    "matched": true
+  },
+  {
+    "mask": 225,
+    "original_selected_profiles": [
+      0,
+      5,
+      6,
+      7
+    ],
+    "expected_selected_profiles": [
+      0,
+      5,
+      6,
+      7
+    ],
+    "matched": true
+  },
+  {
+    "mask": 226,
+    "original_selected_profiles": [
+      1,
+      5,
+      6,
+      7
+    ],
+    "expected_selected_profiles": [
+      1,
+      5,
+      6,
+      7
+    ],
+    "matched": true
+  },
+  {
+    "mask": 227,
+    "original_selected_profiles": [
+      0,
+      1,
+      5,
+      6,
+      7
+    ],
+    "expected_selected_profiles": [
+      0,
+      1,
+      5,
+      6,
+      7
+    ],
+    "matched": true
+  },
+  {
+    "mask": 228,
+    "original_selected_profiles": [
+      2,
+      5,
+      6,
+      7
+    ],
+    "expected_selected_profiles": [
+      2,
+      5,
+      6,
+      7
+    ],
+    "matched": true
+  },
+  {
+    "mask": 229,
+    "original_selected_profiles": [
+      0,
+      2,
+      5,
+      6,
+      7
+    ],
+    "expected_selected_profiles": [
+      0,
+      2,
+      5,
+      6,
+      7
+    ],
+    "matched": true
+  },
+  {
+    "mask": 230,
+    "original_selected_profiles": [
+      1,
+      2,
+      5,
+      6,
+      7
+    ],
+    "expected_selected_profiles": [
+      1,
+      2,
+      5,
+      6,
+      7
+    ],
+    "matched": true
+  },
+  {
+    "mask": 231,
+    "original_selected_profiles": [
+      0,
+      1,
+      2,
+      5,
+      6,
+      7
+    ],
+    "expected_selected_profiles": [
+      0,
+      1,
+      2,
+      5,
+      6,
+      7
+    ],
+    "matched": true
+  },
+  {
+    "mask": 232,
+    "original_selected_profiles": [
+      3,
+      5,
+      6,
+      7
+    ],
+    "expected_selected_profiles": [
+      3,
+      5,
+      6,
+      7
+    ],
+    "matched": true
+  },
+  {
+    "mask": 233,
+    "original_selected_profiles": [
+      0,
+      3,
+      5,
+      6,
+      7
+    ],
+    "expected_selected_profiles": [
+      0,
+      3,
+      5,
+      6,
+      7
+    ],
+    "matched": true
+  },
+  {
+    "mask": 234,
+    "original_selected_profiles": [
+      1,
+      3,
+      5,
+      6,
+      7
+    ],
+    "expected_selected_profiles": [
+      1,
+      3,
+      5,
+      6,
+      7
+    ],
+    "matched": true
+  },
+  {
+    "mask": 235,
+    "original_selected_profiles": [
+      0,
+      1,
+      3,
+      5,
+      6,
+      7
+    ],
+    "expected_selected_profiles": [
+      0,
+      1,
+      3,
+      5,
+      6,
+      7
+    ],
+    "matched": true
+  },
+  {
+    "mask": 236,
+    "original_selected_profiles": [
+      2,
+      3,
+      5,
+      6,
+      7
+    ],
+    "expected_selected_profiles": [
+      2,
+      3,
+      5,
+      6,
+      7
+    ],
+    "matched": true
+  },
+  {
+    "mask": 237,
+    "original_selected_profiles": [
+      0,
+      2,
+      3,
+      5,
+      6,
+      7
+    ],
+    "expected_selected_profiles": [
+      0,
+      2,
+      3,
+      5,
+      6,
+      7
+    ],
+    "matched": true
+  },
+  {
+    "mask": 238,
+    "original_selected_profiles": [
+      1,
+      2,
+      3,
+      5,
+      6,
+      7
+    ],
+    "expected_selected_profiles": [
+      1,
+      2,
+      3,
+      5,
+      6,
+      7
+    ],
+    "matched": true
+  },
+  {
+    "mask": 239,
+    "original_selected_profiles": [
+      0,
+      1,
+      2,
+      3,
+      5,
+      6,
+      7
+    ],
+    "expected_selected_profiles": [
+      0,
+      1,
+      2,
+      3,
+      5,
+      6,
+      7
+    ],
+    "matched": true
+  },
+  {
+    "mask": 240,
+    "original_selected_profiles": [
+      4,
+      5,
+      6,
+      7
+    ],
+    "expected_selected_profiles": [
+      4,
+      5,
+      6,
+      7
+    ],
+    "matched": true
+  },
+  {
+    "mask": 241,
+    "original_selected_profiles": [
+      0,
+      4,
+      5,
+      6,
+      7
+    ],
+    "expected_selected_profiles": [
+      0,
+      4,
+      5,
+      6,
+      7
+    ],
+    "matched": true
+  },
+  {
+    "mask": 242,
+    "original_selected_profiles": [
+      1,
+      4,
+      5,
+      6,
+      7
+    ],
+    "expected_selected_profiles": [
+      1,
+      4,
+      5,
+      6,
+      7
+    ],
+    "matched": true
+  },
+  {
+    "mask": 243,
+    "original_selected_profiles": [
+      0,
+      1,
+      4,
+      5,
+      6,
+      7
+    ],
+    "expected_selected_profiles": [
+      0,
+      1,
+      4,
+      5,
+      6,
+      7
+    ],
+    "matched": true
+  },
+  {
+    "mask": 244,
+    "original_selected_profiles": [
+      2,
+      4,
+      5,
+      6,
+      7
+    ],
+    "expected_selected_profiles": [
+      2,
+      4,
+      5,
+      6,
+      7
+    ],
+    "matched": true
+  },
+  {
+    "mask": 245,
+    "original_selected_profiles": [
+      0,
+      2,
+      4,
+      5,
+      6,
+      7
+    ],
+    "expected_selected_profiles": [
+      0,
+      2,
+      4,
+      5,
+      6,
+      7
+    ],
+    "matched": true
+  },
+  {
+    "mask": 246,
+    "original_selected_profiles": [
+      1,
+      2,
+      4,
+      5,
+      6,
+      7
+    ],
+    "expected_selected_profiles": [
+      1,
+      2,
+      4,
+      5,
+      6,
+      7
+    ],
+    "matched": true
+  },
+  {
+    "mask": 247,
+    "original_selected_profiles": [
+      0,
+      1,
+      2,
+      4,
+      5,
+      6,
+      7
+    ],
+    "expected_selected_profiles": [
+      0,
+      1,
+      2,
+      4,
+      5,
+      6,
+      7
+    ],
+    "matched": true
+  },
+  {
+    "mask": 248,
+    "original_selected_profiles": [
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "expected_selected_profiles": [
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "matched": true
+  },
+  {
+    "mask": 249,
+    "original_selected_profiles": [
+      0,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "expected_selected_profiles": [
+      0,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "matched": true
+  },
+  {
+    "mask": 250,
+    "original_selected_profiles": [
+      1,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "expected_selected_profiles": [
+      1,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "matched": true
+  },
+  {
+    "mask": 251,
+    "original_selected_profiles": [
+      0,
+      1,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "expected_selected_profiles": [
+      0,
+      1,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "matched": true
+  },
+  {
+    "mask": 252,
+    "original_selected_profiles": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "expected_selected_profiles": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "matched": true
+  },
+  {
+    "mask": 253,
+    "original_selected_profiles": [
+      0,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "expected_selected_profiles": [
+      0,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "matched": true
+  },
+  {
+    "mask": 254,
+    "original_selected_profiles": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "expected_selected_profiles": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "matched": true
+  },
+  {
+    "mask": 255,
+    "original_selected_profiles": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "expected_selected_profiles": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "matched": true
+  }
+]

@@ -1,0 +1,49 @@
+{
+  "date": "2026-10-23",
+  "proofs": [
+    {
+      "bot": 1,
+      "summary": "bot-cua-toi-1/phan-tich/bat-tat-chien-luoc/enable-20261023-r3/summary.json",
+      "summary_sha256": "8c06874bbf36e0aacbfcc82ae5148c60a000bf015a5757b664c4247721f25cd0",
+      "combinations": 256,
+      "native_branch_checks": 2048,
+      "matched": 2048,
+      "all_input_combinations_present": true
+    },
+    {
+      "bot": 3,
+      "summary": "bot-cua-toi-3/phan-tich/chon-chien-luoc/select-20261023-r1/summary.json",
+      "summary_sha256": "b4465e562880ea8e73181d0797e224c54596aeb7d733b660c72fb2ffb9c24f92",
+      "native_selection_checks": 7724,
+      "matched": 7724,
+      "paths": [
+        {
+          "path": "initialization",
+          "cases": 3862,
+          "manual_combinations": 512,
+          "native_instructions_seen": 176,
+          "all_segment_instructions_seen": true
+        },
+        {
+          "path": "controller",
+          "cases": 3862,
+          "manual_combinations": 512,
+          "native_instructions_seen": 172,
+          "all_segment_instructions_seen": true
+        }
+      ],
+      "account_and_conversion_supplied_boundaries": true
+    }
+  ],
+  "new_document_links_valid": true,
+  "links_checked": 88,
+  "legacy_missing_links_in_old_process_doc": [
+    [
+      "C:\\Users\\NTD\\Desktop\\Bot Market Demo\\dich-nguoc\\khoi-phuc\\tai-lieu-cu\\QUY-TRINH.md",
+      "tools/README.md"
+    ]
+  ],
+  "analysis_complete": false,
+  "complete_ea_restored": false,
+  "scope": "Fresh artifact/hash and coverage verification of the bounded original enable/selection probes. Native code versus an explicit hypothesis; no reconstructed MQL5 or whole EA validation."
+}

@@ -1,0 +1,15 @@
+{
+  "cases": 1104,
+  "seconds": 11.69,
+  "result_sha256": "495901757415d39f24b4ed181e669be9593ae74e2cf877ed0d838098897458f9",
+  "inputs_sha256": "09a8adbb283d13ae6d03fe0bf388adbfdb6c6b2e6c71f77cced51a23f5a3da2b",
+  "native_rvas": {
+    "high": 254016,
+    "low": 254576,
+    "scan": 447952,
+    "gap": 473776,
+    "bid": 477080,
+    "ask": 477088,
+    "slot": 1928776
+  }
+}

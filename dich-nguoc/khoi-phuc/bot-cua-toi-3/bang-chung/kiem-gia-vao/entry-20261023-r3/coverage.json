@@ -1,0 +1,138 @@
+{
+  "groups": {
+    "pending-sell": {
+      "cases": 299,
+      "nonzero_results": 33,
+      "max_api_calls": 17
+    },
+    "entry-sell": {
+      "cases": 249,
+      "nonzero_results": 99,
+      "max_api_calls": 188
+    },
+    "pending-buy": {
+      "cases": 299,
+      "nonzero_results": 34,
+      "max_api_calls": 19
+    },
+    "entry-buy": {
+      "cases": 249,
+      "nonzero_results": 116,
+      "max_api_calls": 220
+    }
+  },
+  "targeted_scenarios": [
+    {
+      "id": 535,
+      "buy": 0,
+      "blocked_orders": 0,
+      "confirmation": 100.0,
+      "result": 98.0
+    },
+    {
+      "id": 536,
+      "buy": 0,
+      "blocked_orders": 1,
+      "confirmation": 100.0,
+      "result": 97.0
+    },
+    {
+      "id": 537,
+      "buy": 0,
+      "blocked_orders": 2,
+      "confirmation": 100.0,
+      "result": 96.0
+    },
+    {
+      "id": 538,
+      "buy": 0,
+      "blocked_orders": 3,
+      "confirmation": 100.0,
+      "result": 0.0
+    },
+    {
+      "id": 539,
+      "buy": 0,
+      "blocked_orders": 0,
+      "confirmation": 95.0,
+      "result": 0.0
+    },
+    {
+      "id": 540,
+      "buy": 0,
+      "blocked_orders": 1,
+      "confirmation": 95.0,
+      "result": 0.0
+    },
+    {
+      "id": 541,
+      "buy": 0,
+      "blocked_orders": 2,
+      "confirmation": 95.0,
+      "result": 0.0
+    },
+    {
+      "id": 542,
+      "buy": 0,
+      "blocked_orders": 3,
+      "confirmation": 95.0,
+      "result": 0.0
+    },
+    {
+      "id": 1083,
+      "buy": 1,
+      "blocked_orders": 0,
+      "confirmation": 100.0,
+      "result": 102.0
+    },
+    {
+      "id": 1084,
+      "buy": 1,
+      "blocked_orders": 1,
+      "confirmation": 100.0,
+      "result": 103.0
+    },
+    {
+      "id": 1085,
+      "buy": 1,
+      "blocked_orders": 2,
+      "confirmation": 100.0,
+      "result": 104.0
+    },
+    {
+      "id": 1086,
+      "buy": 1,
+      "blocked_orders": 3,
+      "confirmation": 100.0,
+      "result": 0.0
+    },
+    {
+      "id": 1087,
+      "buy": 1,
+      "blocked_orders": 0,
+      "confirmation": 105.0,
+      "result": 0.0
+    },
+    {
+      "id": 1088,
+      "buy": 1,
+      "blocked_orders": 1,
+      "confirmation": 105.0,
+      "result": 0.0
+    },
+    {
+      "id": 1089,
+      "buy": 1,
+      "blocked_orders": 2,
+      "confirmation": 105.0,
+      "result": 0.0
+    },
+    {
+      "id": 1090,
+      "buy": 1,
+      "blocked_orders": 3,
+      "confirmation": 105.0,
+      "result": 0.0
+    }
+  ]
+}

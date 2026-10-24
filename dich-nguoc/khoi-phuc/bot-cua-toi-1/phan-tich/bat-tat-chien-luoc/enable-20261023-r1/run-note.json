@@ -1,0 +1,7 @@
+{
+  "observed_exit_code": 1,
+  "observed_error": "UC_ERR_FETCH_UNMAPPED at the prefix emu_start call",
+  "passing_result": false,
+  "tool_source_version_saved": false,
+  "note": "The initial failed command had no diagnostic file. The next run r2 retains the failing gate and instruction pointer. Do not treat this note as a passing native result."
+}

@@ -1,0 +1,7 @@
+{
+  "cases": 1530,
+  "seconds": 23.74,
+  "tool_sha256": "203fd243f93ad01d9229151335fc76850aa4a51ec1005f96c3b3f0de79cac8a9",
+  "result_sha256": "5426849f911efb0386b5787de70b32b044b08859a1b9e9db4f07c6f02e8a30aa",
+  "scope": "Verify both currency-conversion functions against captured native code.\n\nOnly account currency, successful string allocation and iClose reads are supplied.\nCompare result bits and the exact sequence of price symbols/timeframes/shifts/values.\n"
+}

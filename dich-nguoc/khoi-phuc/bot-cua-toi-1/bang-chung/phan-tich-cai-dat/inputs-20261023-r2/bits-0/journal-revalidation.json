@@ -1,0 +1,8 @@
+{
+  "rows_recovered_from_saved_journal": 72,
+  "journal_sha256": "77a15fdbc6dca296762627e46545a443f671751235dc27bfd8c9c04fad93a8d6",
+  "numeric_mismatches": [],
+  "previous_live_reader_failed": true,
+  "reason": "The tester recreated/truncated its journal; the live reader did not reset its old byte offset. The saved runner journal contains the complete named input list.",
+  "requested_format_differences": []
+}

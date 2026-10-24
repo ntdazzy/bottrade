@@ -1,0 +1,80 @@
+{
+  "cases": 1464,
+  "division_errors": [
+    {
+      "id": 16,
+      "native_error": "0x300ed7000001f7"
+    },
+    {
+      "id": 62,
+      "native_error": "0x300ed5000001f7"
+    },
+    {
+      "id": 64,
+      "native_error": "0x300ed3000001f7"
+    },
+    {
+      "id": 68,
+      "native_error": "0x300ed3000001f7"
+    },
+    {
+      "id": 71,
+      "native_error": "0x360eb6000001f7"
+    },
+    {
+      "id": 132,
+      "native_error": "0x360eb4000001f7"
+    },
+    {
+      "id": 203,
+      "native_error": "0x350edd000001f7"
+    },
+    {
+      "id": 305,
+      "native_error": "0x300ed5000001f7"
+    },
+    {
+      "id": 369,
+      "native_error": "0x350edf000001f7"
+    },
+    {
+      "id": 392,
+      "native_error": "0x300ed5000001f7"
+    },
+    {
+      "id": 494,
+      "native_error": "0x360eb6000001f7"
+    },
+    {
+      "id": 538,
+      "native_error": "0x360eb6000001f7"
+    },
+    {
+      "id": 550,
+      "native_error": "0x360eb2000001f7"
+    },
+    {
+      "id": 596,
+      "native_error": "0x350ee1000001f7"
+    },
+    {
+      "id": 1450,
+      "native_error": "0x350edf000001f7"
+    },
+    {
+      "id": 1453,
+      "native_error": "0x360eb4000001f7"
+    },
+    {
+      "id": 1459,
+      "native_error": "0x300ed5000001f7"
+    }
+  ],
+  "conversions_supplied": {
+    "converted_balance": 183
+  },
+  "seconds": 22.83,
+  "tool_sha256": "32539c090422ab6bc2ce94a9fdacfd33e53c394aca58bd3827c2232d817d7f77",
+  "result_sha256": "45a5fed9fe2f7cc2b31c0f786764c8ca5bc44414d75cbac081a127adf149b5c2",
+  "scope": "Compare volume preparation with captured native arithmetic and branches.\n\nUsage: python -I -B -X utf8 kiem-khoi-luong-bot-1-3.py prepare|original|mql5|compare BOT RUN\nCurrency-converted balances are supplied at the two conversion boundaries.\nWithdrawal-history adjustment is disabled; highest-balance selection still executes.\nThis checks volume preparation, not margin checks, order placement or the whole EA.\n"
+}

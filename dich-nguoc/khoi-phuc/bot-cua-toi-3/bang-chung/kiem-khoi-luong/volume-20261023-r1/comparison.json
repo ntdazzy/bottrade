@@ -1,0 +1,39 @@
+{
+  "cases": 1576,
+  "matched": 1576,
+  "failed": 0,
+  "passed": true,
+  "groups": {
+    "mixed": {
+      "cases": 600,
+      "matched": 600
+    },
+    "modes-and-steps": {
+      "cases": 234,
+      "matched": 234
+    },
+    "balance-selection": {
+      "cases": 360,
+      "matched": 360
+    },
+    "volume-boundary": {
+      "cases": 250,
+      "matched": 250
+    },
+    "zero-divisor": {
+      "cases": 20,
+      "matched": 20
+    },
+    "adaptive-weighting": {
+      "cases": 112,
+      "matched": 112
+    }
+  },
+  "first_failures": [],
+  "hashes": {
+    "cases.bin": "94bbfea8bc5fd04b064e756222227ae25eaa57c21395d84082287f00e8be2b44",
+    "original-results.bin": "627dec009790c1c81daf31420b53b1c56a49c851a2967f12ca22ca7cb720d402",
+    "mql5-results.bin": "627dec009790c1c81daf31420b53b1c56a49c851a2967f12ca22ca7cb720d402"
+  },
+  "scope": "Compare volume preparation with captured native arithmetic and branches.\n\nUsage: python -I -B -X utf8 kiem-khoi-luong-bot-1-3.py prepare|original|mql5|compare BOT RUN\nCurrency-converted balances are supplied at the two conversion boundaries.\nWithdrawal-history adjustment is disabled; highest-balance selection still executes.\nThis checks volume preparation, not margin checks, order placement or the whole EA.\n"
+}

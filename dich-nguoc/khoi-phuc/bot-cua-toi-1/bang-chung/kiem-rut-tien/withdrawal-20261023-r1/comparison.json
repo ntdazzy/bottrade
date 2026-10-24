@@ -1,0 +1,39 @@
+{
+  "cases": 915,
+  "matched": 915,
+  "failed": 0,
+  "passed": true,
+  "groups": {
+    "mixed": {
+      "cases": 600,
+      "matched": 600
+    },
+    "timing-and-gates": {
+      "cases": 60,
+      "matched": 60
+    },
+    "deal-classification": {
+      "cases": 240,
+      "matched": 240
+    },
+    "order-and-duplicates": {
+      "cases": 6,
+      "matched": 6
+    },
+    "reported-count": {
+      "cases": 6,
+      "matched": 6
+    },
+    "stored-key": {
+      "cases": 3,
+      "matched": 3
+    }
+  },
+  "first_failures": [],
+  "hashes": {
+    "cases.bin": "55e470888584414c3c37bad54e330ec707acafc8710e2c0d311b57acad86f7d8",
+    "original-results.bin": "3f44cdc56102f7725de494bdc34bd8456eb8e1f35b80f23a8c63e93eaac21035",
+    "mql5-results.bin": "3f44cdc56102f7725de494bdc34bd8456eb8e1f35b80f23a8c63e93eaac21035"
+  },
+  "scope": "Compare withdrawal-state updates and ordered terminal calls with native code.\n\npython -I -B -X utf8 kiem-rut-tien-bot-1-3.py prepare|original|mql5|compare BOT RUN\nHistory, clock and variable writes are isolated test data; no real MT5 variables written.\nDiagnostic formatting/content excluded; native string-copy instructions still execute.\n"
+}

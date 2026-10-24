@@ -1,0 +1,499 @@
+{
+  "source": "ma-trung-gian.c",
+  "method": "Last visible assignment before each setup call; constants decoded only. Static evidence, not a complete strategy validation.",
+  "rows": [
+    {
+      "index": 0,
+      "call_line": 1696,
+      "fields": {}
+    },
+    {
+      "index": 0,
+      "call_line": 9377,
+      "fields": {
+        "confirm_tf": {
+          "expression": "0x4018",
+          "value": 16408,
+          "line": 9233
+        },
+        "entry_h1": {
+          "expression": "1",
+          "value": 1,
+          "line": 9231
+        },
+        "older": {
+          "expression": "4",
+          "value": 4,
+          "line": 9232
+        },
+        "recent": {
+          "expression": "2",
+          "value": 2,
+          "line": 9234
+        },
+        "scan": {
+          "expression": "0xa0",
+          "value": 160,
+          "line": 9235
+        },
+        "gap": {
+          "expression": "0x4062c00000000000",
+          "value": 150.0,
+          "line": 9236
+        },
+        "aux_h1": {
+          "expression": "1",
+          "value": 1,
+          "line": 9313
+        },
+        "aux_scan50": {
+          "expression": "1",
+          "value": 1,
+          "line": 9314
+        },
+        "aux_older": {
+          "expression": "2",
+          "value": 2,
+          "line": 9315
+        },
+        "aux_recent": {
+          "expression": "3",
+          "value": 3,
+          "line": 9316
+        },
+        "aux_offset": {
+          "expression": "0x4034000000000000",
+          "value": 20.0,
+          "line": 9318
+        }
+      }
+    },
+    {
+      "index": 1,
+      "call_line": 9536,
+      "fields": {
+        "confirm_tf": {
+          "expression": "0x4004",
+          "value": 16388,
+          "line": 9392
+        },
+        "entry_h1": {
+          "expression": "1",
+          "value": 1,
+          "line": 9390
+        },
+        "older": {
+          "expression": "8",
+          "value": 8,
+          "line": 9391
+        },
+        "recent": {
+          "expression": "10",
+          "value": 10,
+          "line": 9393
+        },
+        "scan": {
+          "expression": "0x96",
+          "value": 150,
+          "line": 9394
+        },
+        "gap": {
+          "expression": "0x4082c00000000000",
+          "value": 600.0,
+          "line": 9395
+        },
+        "aux_h1": {
+          "expression": "1",
+          "value": 1,
+          "line": 9472
+        },
+        "aux_scan50": {
+          "expression": "1",
+          "value": 1,
+          "line": 9473
+        },
+        "aux_older": {
+          "expression": "3",
+          "value": 3,
+          "line": 9474
+        },
+        "aux_recent": {
+          "expression": "3",
+          "value": 3,
+          "line": 9475
+        },
+        "aux_offset": {
+          "expression": "0x4034000000000000",
+          "value": 20.0,
+          "line": 9477
+        }
+      }
+    },
+    {
+      "index": 2,
+      "call_line": 9684,
+      "fields": {
+        "confirm_tf": {
+          "expression": "0x4018",
+          "value": 16408,
+          "line": 9551
+        },
+        "entry_h1": {
+          "expression": "1",
+          "value": 1,
+          "line": 9549
+        },
+        "older": {
+          "expression": "0x12",
+          "value": 18,
+          "line": 9550
+        },
+        "recent": {
+          "expression": "3",
+          "value": 3,
+          "line": 9552
+        },
+        "scan": {
+          "expression": "0xb4",
+          "value": 180,
+          "line": 9553
+        },
+        "gap": {
+          "expression": "0x408c200000000000",
+          "value": 900.0,
+          "line": 9554
+        },
+        "aux_h1": {
+          "expression": "1",
+          "value": 1,
+          "line": 9620
+        },
+        "aux_scan50": {
+          "expression": "1",
+          "value": 1,
+          "line": 9621
+        },
+        "aux_older": {
+          "expression": "1",
+          "value": 1,
+          "line": 9622
+        },
+        "aux_recent": {
+          "expression": "6",
+          "value": 6,
+          "line": 9623
+        },
+        "aux_offset": {
+          "expression": "0x4014000000000000",
+          "value": 5.0,
+          "line": 9625
+        }
+      }
+    },
+    {
+      "index": 3,
+      "call_line": 9819,
+      "fields": {
+        "confirm_tf": {
+          "expression": "0x4018",
+          "value": 16408,
+          "line": 9699
+        },
+        "entry_h1": {
+          "expression": "1",
+          "value": 1,
+          "line": 9697
+        },
+        "older": {
+          "expression": "4",
+          "value": 4,
+          "line": 9698
+        },
+        "recent": {
+          "expression": "2",
+          "value": 2,
+          "line": 9700
+        },
+        "scan": {
+          "expression": "0xf0",
+          "value": 240,
+          "line": 9701
+        },
+        "gap": {
+          "expression": "0x408c200000000000",
+          "value": 900.0,
+          "line": 9702
+        },
+        "aux_h1": {
+          "expression": "1",
+          "value": 1,
+          "line": 9755
+        },
+        "aux_scan50": {
+          "expression": "1",
+          "value": 1,
+          "line": 9756
+        },
+        "aux_older": {
+          "expression": "5",
+          "value": 5,
+          "line": 9757
+        },
+        "aux_recent": {
+          "expression": "6",
+          "value": 6,
+          "line": 9758
+        },
+        "aux_offset": {
+          "expression": "0",
+          "value": 0,
+          "line": 9760
+        }
+      }
+    },
+    {
+      "index": 4,
+      "call_line": 9958,
+      "fields": {
+        "confirm_tf": {
+          "expression": "0x4018",
+          "value": 16408,
+          "line": 9834
+        },
+        "entry_h1": {
+          "expression": "1",
+          "value": 1,
+          "line": 9832
+        },
+        "older": {
+          "expression": "0xf",
+          "value": 15,
+          "line": 9833
+        },
+        "recent": {
+          "expression": "3",
+          "value": 3,
+          "line": 9835
+        },
+        "scan": {
+          "expression": "0xe6",
+          "value": 230,
+          "line": 9836
+        },
+        "gap": {
+          "expression": "0x4081300000000000",
+          "value": 550.0,
+          "line": 9837
+        },
+        "aux_h1": {
+          "expression": "1",
+          "value": 1,
+          "line": 9890
+        },
+        "aux_scan50": {
+          "expression": "1",
+          "value": 1,
+          "line": 9891
+        },
+        "aux_older": {
+          "expression": "1",
+          "value": 1,
+          "line": 9892
+        },
+        "aux_recent": {
+          "expression": "4",
+          "value": 4,
+          "line": 9893
+        },
+        "aux_offset": {
+          "expression": "0x4018000000000000",
+          "value": 6.0,
+          "line": 9895
+        }
+      }
+    },
+    {
+      "index": 5,
+      "call_line": 10117,
+      "fields": {
+        "confirm_tf": {
+          "expression": "0x4018",
+          "value": 16408,
+          "line": 9973
+        },
+        "entry_h1": {
+          "expression": "1",
+          "value": 1,
+          "line": 9971
+        },
+        "older": {
+          "expression": "0xc",
+          "value": 12,
+          "line": 9972
+        },
+        "recent": {
+          "expression": "2",
+          "value": 2,
+          "line": 9974
+        },
+        "scan": {
+          "expression": "0x32",
+          "value": 50,
+          "line": 9975
+        },
+        "gap": {
+          "expression": "0x4085e00000000000",
+          "value": 700.0,
+          "line": 9976
+        },
+        "aux_h1": {
+          "expression": "1",
+          "value": 1,
+          "line": 10053
+        },
+        "aux_scan50": {
+          "expression": "1",
+          "value": 1,
+          "line": 10054
+        },
+        "aux_older": {
+          "expression": "1",
+          "value": 1,
+          "line": 10055
+        },
+        "aux_recent": {
+          "expression": "2",
+          "value": 2,
+          "line": 10056
+        },
+        "aux_offset": {
+          "expression": "0",
+          "value": 0,
+          "line": 10058
+        }
+      }
+    },
+    {
+      "index": 6,
+      "call_line": 10247,
+      "fields": {
+        "confirm_tf": {
+          "expression": "0x4018",
+          "value": 16408,
+          "line": 10132
+        },
+        "entry_h1": {
+          "expression": "1",
+          "value": 1,
+          "line": 10130
+        },
+        "older": {
+          "expression": "0x11",
+          "value": 17,
+          "line": 10131
+        },
+        "recent": {
+          "expression": "2",
+          "value": 2,
+          "line": 10133
+        },
+        "scan": {
+          "expression": "0x6e",
+          "value": 110,
+          "line": 10134
+        },
+        "gap": {
+          "expression": "0x4062c00000000000",
+          "value": 150.0,
+          "line": 10135
+        },
+        "aux_h1": {
+          "expression": "1",
+          "value": 1,
+          "line": 10183
+        },
+        "aux_scan50": {
+          "expression": "1",
+          "value": 1,
+          "line": 10184
+        },
+        "aux_older": {
+          "expression": "5",
+          "value": 5,
+          "line": 10185
+        },
+        "aux_recent": {
+          "expression": "2",
+          "value": 2,
+          "line": 10186
+        },
+        "aux_offset": {
+          "expression": "0x402c000000000000",
+          "value": 14.0,
+          "line": 10188
+        }
+      }
+    },
+    {
+      "index": 7,
+      "call_line": 10401,
+      "fields": {
+        "confirm_tf": {
+          "expression": "0x4018",
+          "value": 16408,
+          "line": 10262
+        },
+        "entry_h1": {
+          "expression": "1",
+          "value": 1,
+          "line": 10260
+        },
+        "older": {
+          "expression": "7",
+          "value": 7,
+          "line": 10261
+        },
+        "recent": {
+          "expression": "2",
+          "value": 2,
+          "line": 10263
+        },
+        "scan": {
+          "expression": "0x14",
+          "value": 20,
+          "line": 10264
+        },
+        "gap": {
+          "expression": "0x406f400000000000",
+          "value": 250.0,
+          "line": 10265
+        },
+        "aux_h1": {
+          "expression": "1",
+          "value": 1,
+          "line": 10331
+        },
+        "aux_scan50": {
+          "expression": "1",
+          "value": 1,
+          "line": 10332
+        },
+        "aux_older": {
+          "expression": "0x11",
+          "value": 17,
+          "line": 10333
+        },
+        "aux_recent": {
+          "expression": "1",
+          "value": 1,
+          "line": 10334
+        },
+        "aux_offset": {
+          "expression": "0x4043000000000000",
+          "value": 38.0,
+          "line": 10336
+        }
+      }
+    }
+  ]
+}

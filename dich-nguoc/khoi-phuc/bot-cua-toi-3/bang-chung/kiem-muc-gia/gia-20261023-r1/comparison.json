@@ -1,0 +1,12 @@
+{
+  "cases": 1104,
+  "matched": 1104,
+  "failed": 0,
+  "first_failures": [],
+  "hashes": {
+    "cases.bin": "09a8adbb283d13ae6d03fe0bf388adbfdb6c6b2e6c71f77cced51a23f5a3da2b",
+    "original-results.bin": "495901757415d39f24b4ed181e669be9593ae74e2cf877ed0d838098897458f9",
+    "mql5-results.bin": "495901757415d39f24b4ed181e669be9593ae74e2cf877ed0d838098897458f9"
+  },
+  "scope": "Two price-level functions; supplied price-series/digits; return bits and ordered call hashes. Not a complete EA comparison."
+}

@@ -1,0 +1,100 @@
+{
+  "cases": 1034,
+  "errors": [
+    {
+      "id": 503,
+      "tag": "scale",
+      "native_error": "0x1d0886000001f7"
+    },
+    {
+      "id": 507,
+      "tag": "scale",
+      "native_error": "0x1d0886000001f7"
+    },
+    {
+      "id": 527,
+      "tag": "scale",
+      "native_error": "0x1d0886000001f7"
+    },
+    {
+      "id": 531,
+      "tag": "scale",
+      "native_error": "0x1d0886000001f7"
+    },
+    {
+      "id": 551,
+      "tag": "scale",
+      "native_error": "0x1d0886000001f7"
+    },
+    {
+      "id": 555,
+      "tag": "scale",
+      "native_error": "0x1d0886000001f7"
+    },
+    {
+      "id": 569,
+      "tag": "price-unit",
+      "native_error": "0x23095a000001f7"
+    },
+    {
+      "id": 576,
+      "tag": "price-unit",
+      "native_error": "0x23095a000001f7"
+    },
+    {
+      "id": 583,
+      "tag": "price-unit",
+      "native_error": "0x23095a000001f7"
+    },
+    {
+      "id": 590,
+      "tag": "price-unit",
+      "native_error": "0x23095a000001f7"
+    },
+    {
+      "id": 597,
+      "tag": "price-unit",
+      "native_error": "0x23095a000001f7"
+    },
+    {
+      "id": 604,
+      "tag": "price-unit",
+      "native_error": "0x23095a000001f7"
+    },
+    {
+      "id": 611,
+      "tag": "price-unit",
+      "native_error": "0x23095a000001f7"
+    },
+    {
+      "id": 618,
+      "tag": "price-unit",
+      "native_error": "0x23095a000001f7"
+    },
+    {
+      "id": 625,
+      "tag": "price-unit",
+      "native_error": "0x23095a000001f7"
+    },
+    {
+      "id": 632,
+      "tag": "price-unit",
+      "native_error": "0x23095a000001f7"
+    },
+    {
+      "id": 927,
+      "tag": "buffer-flag",
+      "native_error": "0x1d0886000001f7"
+    },
+    {
+      "id": 933,
+      "tag": "buffer-flag",
+      "native_error": "0x1d0886000001f7"
+    }
+  ],
+  "seconds": 10.36,
+  "sha256": "c103310e06497ba4db2364965d861f54bfdf62b1f7d460dd35c6254b4013dc54",
+  "tool_sha256": "6c450fe3381f3145b08478e97f80dee54a60144ab43c5f69bef8b8fe6f525cc1",
+  "native_function_rva": "0xe0c0",
+  "scope": "Complete native setup executed with successful mocked indicator/tick reads; only listed numeric outputs compared. Runtime division errors map to false; partial writes on errors excluded."
+}

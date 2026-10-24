@@ -1,0 +1,221 @@
+{
+  "cases": 1576,
+  "division_errors": [
+    {
+      "id": 2,
+      "native_error": "0x2a10fc000001f7"
+    },
+    {
+      "id": 17,
+      "native_error": "0x2c110e000001f7"
+    },
+    {
+      "id": 24,
+      "native_error": "0x361123000001f7"
+    },
+    {
+      "id": 37,
+      "native_error": "0x3610cf000001f7"
+    },
+    {
+      "id": 44,
+      "native_error": "0x3010f5000001f7"
+    },
+    {
+      "id": 60,
+      "native_error": "0x3010f5000001f7"
+    },
+    {
+      "id": 86,
+      "native_error": "0x2c110e000001f7"
+    },
+    {
+      "id": 184,
+      "native_error": "0x39111a000001f7"
+    },
+    {
+      "id": 197,
+      "native_error": "0x361123000001f7"
+    },
+    {
+      "id": 237,
+      "native_error": "0x3010f3000001f7"
+    },
+    {
+      "id": 260,
+      "native_error": "0x2a10fc000001f7"
+    },
+    {
+      "id": 262,
+      "native_error": "0x3010f5000001f7"
+    },
+    {
+      "id": 278,
+      "native_error": "0x30110a000001f7"
+    },
+    {
+      "id": 408,
+      "native_error": "0x3010f3000001f7"
+    },
+    {
+      "id": 411,
+      "native_error": "0x391118000001f7"
+    },
+    {
+      "id": 443,
+      "native_error": "0x3010f3000001f7"
+    },
+    {
+      "id": 444,
+      "native_error": "0x2c1110000001f7"
+    },
+    {
+      "id": 482,
+      "native_error": "0x2a10fc000001f7"
+    },
+    {
+      "id": 487,
+      "native_error": "0x3010f1000001f7"
+    },
+    {
+      "id": 512,
+      "native_error": "0x3610cf000001f7"
+    },
+    {
+      "id": 555,
+      "native_error": "0x361125000001f7"
+    },
+    {
+      "id": 575,
+      "native_error": "0x2d110c000001f7"
+    },
+    {
+      "id": 581,
+      "native_error": "0x3610cf000001f7"
+    },
+    {
+      "id": 598,
+      "native_error": "0x3010f5000001f7"
+    },
+    {
+      "id": 1450,
+      "native_error": "0x361123000001f7"
+    },
+    {
+      "id": 1453,
+      "native_error": "0x3610d1000001f7"
+    },
+    {
+      "id": 1459,
+      "native_error": "0x3010f3000001f7"
+    },
+    {
+      "id": 1478,
+      "native_error": "0x391118000001f7"
+    },
+    {
+      "id": 1482,
+      "native_error": "0x391118000001f7"
+    },
+    {
+      "id": 1484,
+      "native_error": "0x391118000001f7"
+    },
+    {
+      "id": 1486,
+      "native_error": "0x391118000001f7"
+    },
+    {
+      "id": 1488,
+      "native_error": "0x391118000001f7"
+    },
+    {
+      "id": 1492,
+      "native_error": "0x391118000001f7"
+    },
+    {
+      "id": 1494,
+      "native_error": "0x391118000001f7"
+    },
+    {
+      "id": 1498,
+      "native_error": "0x391118000001f7"
+    },
+    {
+      "id": 1500,
+      "native_error": "0x391118000001f7"
+    },
+    {
+      "id": 1502,
+      "native_error": "0x391118000001f7"
+    },
+    {
+      "id": 1506,
+      "native_error": "0x391118000001f7"
+    },
+    {
+      "id": 1508,
+      "native_error": "0x391118000001f7"
+    },
+    {
+      "id": 1510,
+      "native_error": "0x391118000001f7"
+    },
+    {
+      "id": 1514,
+      "native_error": "0x391118000001f7"
+    },
+    {
+      "id": 1516,
+      "native_error": "0x391118000001f7"
+    },
+    {
+      "id": 1520,
+      "native_error": "0x391118000001f7"
+    },
+    {
+      "id": 1522,
+      "native_error": "0x391118000001f7"
+    },
+    {
+      "id": 1524,
+      "native_error": "0x391118000001f7"
+    },
+    {
+      "id": 1526,
+      "native_error": "0x391118000001f7"
+    },
+    {
+      "id": 1530,
+      "native_error": "0x391118000001f7"
+    },
+    {
+      "id": 1534,
+      "native_error": "0x391118000001f7"
+    },
+    {
+      "id": 1536,
+      "native_error": "0x391118000001f7"
+    },
+    {
+      "id": 1538,
+      "native_error": "0x391118000001f7"
+    },
+    {
+      "id": 1540,
+      "native_error": "0x391118000001f7"
+    },
+    {
+      "id": 1542,
+      "native_error": "0x391118000001f7"
+    }
+  ],
+  "conversions_supplied": {
+    "converted_dd_balance": 81,
+    "converted_balance": 171
+  },
+  "seconds": 24.58,
+  "tool_sha256": "32539c090422ab6bc2ce94a9fdacfd33e53c394aca58bd3827c2232d817d7f77",
+  "result_sha256": "627dec009790c1c81daf31420b53b1c56a49c851a2967f12ca22ca7cb720d402",
+  "scope": "Compare volume preparation with captured native arithmetic and branches.\n\nUsage: python -I -B -X utf8 kiem-khoi-luong-bot-1-3.py prepare|original|mql5|compare BOT RUN\nCurrency-converted balances are supplied at the two conversion boundaries.\nWithdrawal-history adjustment is disabled; highest-balance selection still executes.\nThis checks volume preparation, not margin checks, order placement or the whole EA.\n"
+}

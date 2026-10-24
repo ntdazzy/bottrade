@@ -1,0 +1,17 @@
+{
+  "run": "b3-entry-levels-01",
+  "target": "Scripts/bot-cua-toi-3/Bot3EntryLevelsCheck.mq5",
+  "metaeditor_sha256": "cf2750bde55d98a1f3b4e56bcdd4f59300d0cff5caa6760985f7ef2c2cc12229",
+  "exit_code": 1,
+  "errors": 0,
+  "warnings": 4,
+  "result_line": "Result: 0 errors, 4 warnings, 478 ms elapsed, cpu='X64 Regular'",
+  "sources_sha256": {
+    "Include/bot-cua-toi-3/Bot3EntryLevels.mqh": "a5b5e7ad4db5960682dc409c1e7d498479dad843e281e48c95a4745ad0cb5ad1",
+    "Include/bot-cua-toi-3/Bot3PriceLevels.mqh": "1cfecf5f324056b64f72a8fb21f446b7ca35f377ae40d4ab0c6859bfe736c413",
+    "Scripts/bot-cua-toi-3/Bot3EntryLevelsCheck.mq5": "a2ec2b05f57d0effcd407cefab0fb80b2bceecc8f7fa5093abc29df9c98e8227",
+    "Scripts/bot-cua-toi-3/Bot3PriceLevelsCheck.mq5": "a7b9c0e7912f9ed1a8df92ec1778d136383e09ca81816174bd0e2761ad4ddc5d"
+  },
+  "trade_mqh_sha256": "96e6781624534377fe7971cba52cca3d62d1b030bc10d5e4ebf3ed8c541399ed",
+  "binary_sha256": "e7ecfeae804a9f4aed07586312e99e1e615b474acbb18792ccf4c0a3bbf76426"
+}

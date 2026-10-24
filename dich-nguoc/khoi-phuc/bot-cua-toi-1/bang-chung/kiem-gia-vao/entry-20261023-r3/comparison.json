@@ -1,0 +1,37 @@
+{
+  "cases": 1096,
+  "matched": 1096,
+  "failed": 0,
+  "groups": {
+    "pending-sell": {
+      "cases": 299,
+      "matched": 299
+    },
+    "entry-sell": {
+      "cases": 249,
+      "matched": 249
+    },
+    "pending-buy": {
+      "cases": 299,
+      "matched": 299
+    },
+    "entry-buy": {
+      "cases": 249,
+      "matched": 249
+    }
+  },
+  "first_failures": [],
+  "hashes": {
+    "cases.bin": "1422f48359da179556e02cd2a236a539dfaab97cc4839978a1f7c41f1c026cdc",
+    "original-results.bin": "7ec90943fb8e87e505b1a943ba03eb57a687d9a756afec53016a0b31df59672d",
+    "mql5-results.bin": "7ec90943fb8e87e505b1a943ba03eb57a687d9a756afec53016a0b31df59672d"
+  },
+  "scope": "Four native functions per bot; result bits, last ticket, call count and ordered API trace hashes; mocked terminal data and successful allocations. Not a full EA check.",
+  "raw_profiles": {
+    "matched": 8,
+    "total": 8,
+    "identical": true,
+    "sha256": "1308b5b7ebfc7199ae0eb2ffd06800f367412d638e4623c4826b0677ee2ef5ea"
+  },
+  "passed": true
+}

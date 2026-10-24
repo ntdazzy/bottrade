@@ -1,0 +1,108 @@
+{
+  "date": "2026-10-23",
+  "bots": [
+    {
+      "bot": 1,
+      "matched": 1050,
+      "total": 1050,
+      "outputs_per_success": 33,
+      "successful_numeric_cases": 1040,
+      "division_error_cases": 10,
+      "profiles": {
+        "rows": 16,
+        "fields_per_row": 22,
+        "matched": 16,
+        "identical": true,
+        "sha256": "bd48e66d3aa20dbea81a5524d5b06d12ce9e82f12009c4a64fb66b16dedda2a2"
+      },
+      "compile_errors": 0,
+      "compile_warnings": 0,
+      "all_8_sources_match_build": true,
+      "original_ex5_path": "C:\\Users\\NTD\\AppData\\Roaming\\MetaQuotes\\Terminal\\820755052E4765D7D56E6DAAFBB28091\\MQL5\\Experts\\Market\\Gold Trade Pro MT5.ex5",
+      "original_ex5_sha256": "a3b0de423a06e10ebedc279307b93d7cb9188ba2bb5de77131a913c865b0e922",
+      "sources_sha256": {
+        "Include/bot-cua-toi-1/Bot1BaseDistances.mqh": "64eb353e1f253feb1aa6bc404f9d2047c31b28c565afd5b1ab82949b4d03577d",
+        "Include/bot-cua-toi-1/Bot1DistanceSettings.mqh": "8cf7296b4301274d2f044362ffa211610fff5237e9daa9fa6d08680a53daa518",
+        "Include/bot-cua-toi-1/Bot1EntryLevels.mqh": "ff7d35310297af7c1e38fe7c83655f69380ca9fee682b840d87a89377672d82b",
+        "Include/bot-cua-toi-1/Bot1EntryProfiles.mqh": "263568e3883564270a6911dafebed8a2350bc37c8ea1530e4e6c670a14a33d60",
+        "Include/bot-cua-toi-1/Bot1PriceLevels.mqh": "601bdd551e24e3ac9a7742cc00e057d881b069ab672843bec31b3f32a43316b1",
+        "Scripts/bot-cua-toi-1/Bot1DistanceSettingsCheck.mq5": "4e147f6cdb4575b5ae85d95b5e047d5b685f0e4d91db3745434a3c69ffd54069",
+        "Scripts/bot-cua-toi-1/Bot1EntryLevelsCheck.mq5": "50c60d8b261ab89fb9cf58f47b5d2271800b4fa20beeba485ec1b05aace106d7",
+        "Scripts/bot-cua-toi-1/Bot1PriceLevelsCheck.mq5": "8d10d63113e76ada8e9cdda7bcb8e24170a1813520cfda1744130c9f58984e0e"
+      },
+      "input_rejection_check": {
+        "bot": 1,
+        "case": "bad_header",
+        "tool_exit": 1,
+        "terminal_exit": 1,
+        "rejected": true,
+        "input_sha256": "1caaf5340cfe8832b812a9858fff453f716adda04648a89caa7ee272678f7d85"
+      },
+      "comparison": "bot-cua-toi-1/bang-chung/kiem-dieu-chinh/settings-20261023-r2/comparison.json"
+    },
+    {
+      "bot": 3,
+      "matched": 1034,
+      "total": 1034,
+      "outputs_per_success": 35,
+      "successful_numeric_cases": 1016,
+      "division_error_cases": 18,
+      "profiles": {
+        "rows": 9,
+        "fields_per_row": 25,
+        "matched": 9,
+        "identical": true,
+        "sha256": "bc5555cd00fe78e2335f87cbfec839c62e6800b2955146d44bff9a77aa85b8c7"
+      },
+      "compile_errors": 0,
+      "compile_warnings": 0,
+      "all_8_sources_match_build": true,
+      "original_ex5_path": "C:\\Users\\NTD\\AppData\\Roaming\\MetaQuotes\\Terminal\\D0E8209F77C8CF37AD8BF550E51FF075\\MQL5\\Experts\\Market\\The Gold Reaper MT5.ex5",
+      "original_ex5_sha256": "ee063d3d87490afe24e2f4ce85f6b05659320e297b102efd70207f71ca2feb83",
+      "sources_sha256": {
+        "Include/bot-cua-toi-3/Bot3BaseDistances.mqh": "5c7dca0d0d1692cf304d5053fa6d87b939a37479a62c6e335073d802ff1634b5",
+        "Include/bot-cua-toi-3/Bot3DistanceSettings.mqh": "680240f519115a0ea3ce87f20d428462f581a39773d87e65c769d37c88ff1d30",
+        "Include/bot-cua-toi-3/Bot3EntryLevels.mqh": "a5b5e7ad4db5960682dc409c1e7d498479dad843e281e48c95a4745ad0cb5ad1",
+        "Include/bot-cua-toi-3/Bot3EntryProfiles.mqh": "f14b566f8ce4be30adfad19f2269691b069e13eee1d7bcf3ee642866251062a5",
+        "Include/bot-cua-toi-3/Bot3PriceLevels.mqh": "1cfecf5f324056b64f72a8fb21f446b7ca35f377ae40d4ab0c6859bfe736c413",
+        "Scripts/bot-cua-toi-3/Bot3DistanceSettingsCheck.mq5": "eafdee2a183914d5da00e3631af8c42c398e87638f26aa3fdf80e12d82160439",
+        "Scripts/bot-cua-toi-3/Bot3EntryLevelsCheck.mq5": "57cb5168621662beedfde2925c4c87bfbd2215022198af73cd410e10c97f7498",
+        "Scripts/bot-cua-toi-3/Bot3PriceLevelsCheck.mq5": "a7b9c0e7912f9ed1a8df92ec1778d136383e09ca81816174bd0e2761ad4ddc5d"
+      },
+      "input_rejection_check": {
+        "bot": 3,
+        "case": "truncated_input",
+        "tool_exit": 1,
+        "terminal_exit": 1,
+        "rejected": true,
+        "input_sha256": "360c87c84926950368bd6b1b683167d983db391a8ad33bd0b13957257f67415a"
+      },
+      "comparison": "bot-cua-toi-3/bang-chung/kiem-dieu-chinh/settings-20261023-r2/comparison.json"
+    }
+  ],
+  "modified_preexisting_files": [
+    "KET-QUA.md",
+    "PHAN-TICH-VAO-LENH-BOT-1-3.md",
+    "bot-cua-toi-1/README.md",
+    "bot-cua-toi-3/README.md",
+    "cong-cu/BOT-1-3.md"
+  ],
+  "deleted_preexisting_files": [],
+  "prior_files_unchanged": 586,
+  "baseline_sha256": "4789da4f6940f54c91deba37d4c95d51c5891d2cdb42a99f89495d74afbba0c5",
+  "scope": "Distance calculation and base profiles only. Full EA restoration remains incomplete.",
+  "limitations": [
+    "Mocked successful terminal/indicator reads; indicator creation not reconstructed.",
+    "Finite doubles in this run.",
+    "Native division faults mapped to false; partial output memory on faults excluded.",
+    "Base profiles require zero additional adjustments and zero randomization.",
+    "Bot 3 reference and two native field roles remain outside the profile reconstruction."
+  ],
+  "local_evidence": [
+    "baseline.json",
+    "b1-setup.asm",
+    "b3-setup.asm",
+    "kiem-dieu-chinh-r1.py"
+  ],
+  "cleanup": "Three exact task-created probe files removed after replacing them with final tool/evidence; previous temporary files left unchanged."
+}

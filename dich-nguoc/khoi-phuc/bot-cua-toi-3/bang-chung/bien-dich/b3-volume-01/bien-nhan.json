@@ -1,0 +1,23 @@
+{
+  "run": "b3-volume-01",
+  "target": "Scripts/bot-cua-toi-3/Bot3VolumeCheck.mq5",
+  "metaeditor_sha256": "cf2750bde55d98a1f3b4e56bcdd4f59300d0cff5caa6760985f7ef2c2cc12229",
+  "exit_code": 1,
+  "errors": 0,
+  "warnings": 0,
+  "result_line": "Result: 0 errors, 0 warnings, 422 ms elapsed, cpu='X64 Regular'",
+  "sources_sha256": {
+    "Include/bot-cua-toi-3/Bot3BaseDistances.mqh": "5c7dca0d0d1692cf304d5053fa6d87b939a37479a62c6e335073d802ff1634b5",
+    "Include/bot-cua-toi-3/Bot3DistanceSettings.mqh": "680240f519115a0ea3ce87f20d428462f581a39773d87e65c769d37c88ff1d30",
+    "Include/bot-cua-toi-3/Bot3EntryLevels.mqh": "a5b5e7ad4db5960682dc409c1e7d498479dad843e281e48c95a4745ad0cb5ad1",
+    "Include/bot-cua-toi-3/Bot3EntryProfiles.mqh": "f14b566f8ce4be30adfad19f2269691b069e13eee1d7bcf3ee642866251062a5",
+    "Include/bot-cua-toi-3/Bot3PriceLevels.mqh": "1cfecf5f324056b64f72a8fb21f446b7ca35f377ae40d4ab0c6859bfe736c413",
+    "Include/bot-cua-toi-3/Bot3Volume.mqh": "d24c1e6438038f7fbaacf804fe764647f0ff8bbbeac6a39cbfdf019793f7455f",
+    "Scripts/bot-cua-toi-3/Bot3DistanceSettingsCheck.mq5": "eafdee2a183914d5da00e3631af8c42c398e87638f26aa3fdf80e12d82160439",
+    "Scripts/bot-cua-toi-3/Bot3EntryLevelsCheck.mq5": "57cb5168621662beedfde2925c4c87bfbd2215022198af73cd410e10c97f7498",
+    "Scripts/bot-cua-toi-3/Bot3PriceLevelsCheck.mq5": "a7b9c0e7912f9ed1a8df92ec1778d136383e09ca81816174bd0e2761ad4ddc5d",
+    "Scripts/bot-cua-toi-3/Bot3VolumeCheck.mq5": "191095c049a29b533fbac032b7a06f4e80d31282a737556a0b6dfbffea49dba6"
+  },
+  "trade_mqh_sha256": "96e6781624534377fe7971cba52cca3d62d1b030bc10d5e4ebf3ed8c541399ed",
+  "binary_sha256": "143839779867f7d164c993c6ca3f47f77dee0f3547903bc09d50edd2faa7955f"
+}

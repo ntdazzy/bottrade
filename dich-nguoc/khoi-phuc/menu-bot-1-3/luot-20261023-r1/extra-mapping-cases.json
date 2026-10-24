@@ -1,0 +1,20 @@
+{
+  "bot3-options-a.set": {
+    "TradeFrequency": 5,
+    "BacktestSpeed": 2,
+    "FakeOutFilter": 0,
+    "Risk": 0
+  },
+  "bot3-options-b.set": {
+    "TradeFrequency": 5,
+    "BacktestSpeed": 3,
+    "FakeOutFilter": 1,
+    "Risk": 3
+  },
+  "bot3-options-c.set": {
+    "TradeFrequency": 5,
+    "BacktestSpeed": 1,
+    "FakeOutFilter": 3,
+    "Risk": 1234
+  }
+}

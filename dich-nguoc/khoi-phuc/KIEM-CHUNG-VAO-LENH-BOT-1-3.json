@@ -1,0 +1,59 @@
+{
+  "checked_at_utc": "2026-10-23T05:01:17.653171+00:00",
+  "bots": {
+    "1": {
+      "new_cases_matched": 1096,
+      "raw_profiles_matched": 8,
+      "raw_values_matched": 48,
+      "compile_errors": 0,
+      "compile_warnings": 0,
+      "terminal_exit_code": 0,
+      "source_files_sha256": {
+        "Include/bot-cua-toi-1/Bot1EntryLevels.mqh": "ff7d35310297af7c1e38fe7c83655f69380ca9fee682b840d87a89377672d82b",
+        "Include/bot-cua-toi-1/Bot1EntryProfiles.mqh": "263568e3883564270a6911dafebed8a2350bc37c8ea1530e4e6c670a14a33d60",
+        "Include/bot-cua-toi-1/Bot1PriceLevels.mqh": "601bdd551e24e3ac9a7742cc00e057d881b069ab672843bec31b3f32a43316b1",
+        "Scripts/bot-cua-toi-1/Bot1EntryLevelsCheck.mq5": "50c60d8b261ab89fb9cf58f47b5d2271800b4fa20beeba485ec1b05aace106d7",
+        "Scripts/bot-cua-toi-1/Bot1PriceLevelsCheck.mq5": "8d10d63113e76ada8e9cdda7bcb8e24170a1813520cfda1744130c9f58984e0e"
+      },
+      "script_ex5_sha256": "a618ba6394ef6487ae4c9377f4919213fca632c1a0870dbec1cad591aacf6bb1",
+      "component_results_sha256": "7ec90943fb8e87e505b1a943ba03eb57a687d9a756afec53016a0b31df59672d",
+      "profiles_sha256": "1308b5b7ebfc7199ae0eb2ffd06800f367412d638e4623c4826b0677ee2ef5ea",
+      "native_reference_reused_from_r1": true,
+      "previous_price_results_unchanged": true
+    },
+    "3": {
+      "new_cases_matched": 1096,
+      "raw_profiles_matched": 9,
+      "raw_values_matched": 54,
+      "compile_errors": 0,
+      "compile_warnings": 0,
+      "terminal_exit_code": 0,
+      "source_files_sha256": {
+        "Include/bot-cua-toi-3/Bot3EntryLevels.mqh": "a5b5e7ad4db5960682dc409c1e7d498479dad843e281e48c95a4745ad0cb5ad1",
+        "Include/bot-cua-toi-3/Bot3EntryProfiles.mqh": "f14b566f8ce4be30adfad19f2269691b069e13eee1d7bcf3ee642866251062a5",
+        "Include/bot-cua-toi-3/Bot3PriceLevels.mqh": "1cfecf5f324056b64f72a8fb21f446b7ca35f377ae40d4ab0c6859bfe736c413",
+        "Scripts/bot-cua-toi-3/Bot3EntryLevelsCheck.mq5": "57cb5168621662beedfde2925c4c87bfbd2215022198af73cd410e10c97f7498",
+        "Scripts/bot-cua-toi-3/Bot3PriceLevelsCheck.mq5": "a7b9c0e7912f9ed1a8df92ec1778d136383e09ca81816174bd0e2761ad4ddc5d"
+      },
+      "script_ex5_sha256": "6a6511f5d9ee8286fa2393db559899dbd4c2d645e378812e3ec1a01756f386db",
+      "component_results_sha256": "7ec90943fb8e87e505b1a943ba03eb57a687d9a756afec53016a0b31df59672d",
+      "profiles_sha256": "cd8588b0f22327abe207ea29d37834d55a889ff6ed22ba7f3bd90fcea06aff47",
+      "native_reference_reused_from_r1": true,
+      "previous_price_results_unchanged": true
+    }
+  },
+  "scope": "New nearby-pending and confirmed-entry components plus raw strategy parameter tables; not a complete EA.",
+  "negative_checks": {
+    "missing_run_rejected": true,
+    "bad_case_header_rejected": true
+  },
+  "existing_files_modified": [
+    "dich-nguoc\\khoi-phuc\\KET-QUA.md",
+    "dich-nguoc\\khoi-phuc\\PHAN-TICH-BOT-1-3.md",
+    "dich-nguoc\\khoi-phuc\\bot-cua-toi-1\\README.md",
+    "dich-nguoc\\khoi-phuc\\bot-cua-toi-3\\README.md",
+    "dich-nguoc\\khoi-phuc\\cong-cu\\BOT-1-3.md"
+  ],
+  "existing_files_deleted": [],
+  "previous_sources_unchanged": true
+}

@@ -1,0 +1,17 @@
+[
+  {
+    "id": "b3-luot-20261023-r1",
+    "expert": "Market\\The Gold Reaper MT5.ex5",
+    "symbol": "XAUUSD_NOCOST_V2",
+    "period": "H1",
+    "model": 0,
+    "from": "2026.09.29",
+    "to": "2026.10.20",
+    "timeout": 300,
+    "inputs": {
+      "AutoGMT": "false",
+      "Broker_GMT_OFFSET_Winter": "0",
+      "Broker_GMT_OFFSET_Summer": "0"
+    }
+  }
+]

@@ -1,0 +1,154 @@
+{
+  "bot": 3,
+  "profiles_matched": 9,
+  "fields_per_profile": 6,
+  "profiles": [
+    {
+      "index": 0,
+      "immediate_load_rvas": [],
+      "reaching_constant_definition_rvas": [],
+      "start_rva": "0x1a80a",
+      "end_rva_exclusive": "0x1a8b8",
+      "values": {
+        "confirm_tf": 16408,
+        "entry_tf": 15,
+        "older": 24,
+        "recent": 3,
+        "scan": 105,
+        "gap": 45.0
+      },
+      "matched": true
+    },
+    {
+      "index": 3,
+      "immediate_load_rvas": [],
+      "reaching_constant_definition_rvas": [],
+      "start_rva": "0x1b087",
+      "end_rva_exclusive": "0x1b135",
+      "values": {
+        "confirm_tf": 16388,
+        "entry_tf": 16385,
+        "older": 12,
+        "recent": 8,
+        "scan": 90,
+        "gap": 1050.0
+      },
+      "matched": true
+    },
+    {
+      "index": 1,
+      "immediate_load_rvas": [],
+      "reaching_constant_definition_rvas": [],
+      "start_rva": "0x1b93b",
+      "end_rva_exclusive": "0x1b9e9",
+      "values": {
+        "confirm_tf": 16408,
+        "entry_tf": 16385,
+        "older": 15,
+        "recent": 3,
+        "scan": 230,
+        "gap": 550.0
+      },
+      "matched": true
+    },
+    {
+      "index": 2,
+      "immediate_load_rvas": [],
+      "reaching_constant_definition_rvas": [],
+      "start_rva": "0x1c1d1",
+      "end_rva_exclusive": "0x1c27f",
+      "values": {
+        "confirm_tf": 16408,
+        "entry_tf": 16385,
+        "older": 7,
+        "recent": 2,
+        "scan": 20,
+        "gap": 250.0
+      },
+      "matched": true
+    },
+    {
+      "index": 5,
+      "immediate_load_rvas": [],
+      "reaching_constant_definition_rvas": [],
+      "start_rva": "0x1ca75",
+      "end_rva_exclusive": "0x1cb2b",
+      "values": {
+        "confirm_tf": 16385,
+        "entry_tf": 5,
+        "older": 26,
+        "recent": 24,
+        "scan": 140,
+        "gap": 120.0
+      },
+      "matched": true
+    },
+    {
+      "index": 4,
+      "immediate_load_rvas": [],
+      "reaching_constant_definition_rvas": [],
+      "start_rva": "0x1d2f6",
+      "end_rva_exclusive": "0x1d3ac",
+      "values": {
+        "confirm_tf": 16385,
+        "entry_tf": 15,
+        "older": 30,
+        "recent": 19,
+        "scan": 110,
+        "gap": 160.0
+      },
+      "matched": true
+    },
+    {
+      "index": 8,
+      "immediate_load_rvas": [],
+      "reaching_constant_definition_rvas": [],
+      "start_rva": "0x1db6a",
+      "end_rva_exclusive": "0x1dc20",
+      "values": {
+        "confirm_tf": 16385,
+        "entry_tf": 15,
+        "older": 7,
+        "recent": 5,
+        "scan": 200,
+        "gap": 40.0
+      },
+      "matched": true
+    },
+    {
+      "index": 6,
+      "immediate_load_rvas": [],
+      "reaching_constant_definition_rvas": [],
+      "start_rva": "0x1e3e8",
+      "end_rva_exclusive": "0x1e49e",
+      "values": {
+        "confirm_tf": 16385,
+        "entry_tf": 15,
+        "older": 25,
+        "recent": 23,
+        "scan": 145,
+        "gap": 10.0
+      },
+      "matched": true
+    },
+    {
+      "index": 7,
+      "immediate_load_rvas": [],
+      "reaching_constant_definition_rvas": [],
+      "start_rva": "0x1ec8b",
+      "end_rva_exclusive": "0x1ed39",
+      "values": {
+        "confirm_tf": 16385,
+        "entry_tf": 15,
+        "older": 26,
+        "recent": 20,
+        "scan": 235,
+        "gap": 80.0
+      },
+      "matched": true
+    }
+  ],
+  "code_sha256": "7464a1dcb3a66d1438d510f365a08fbcdfa4aaa00f03afb49259225bc7d5cfbb",
+  "data_sha256": "1d8c5ee1af972615461e71ede70b519d30bd876561cf96169606e4c9aeaab073",
+  "scope": "Straight-line native parameter assignments only; no terminal API calls; not strategy enable/frequency/scaling or complete entry behavior."
+}

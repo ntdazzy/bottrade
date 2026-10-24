@@ -1,0 +1,147 @@
+{
+  "cases": 1050,
+  "matched": 1050,
+  "failed": 0,
+  "outputs_per_success": 33,
+  "groups": {
+    "mixed": {
+      "cases": 400,
+      "matched": 400
+    },
+    "scale": {
+      "cases": 168,
+      "matched": 168
+    },
+    "price-unit": {
+      "cases": 70,
+      "matched": 70
+    },
+    "distance-boundary": {
+      "cases": 240,
+      "matched": 240
+    },
+    "expiration-wrap": {
+      "cases": 18,
+      "matched": 18
+    },
+    "integer-boundary": {
+      "cases": 30,
+      "matched": 30
+    },
+    "buffer-flag": {
+      "cases": 12,
+      "matched": 12
+    },
+    "entry-profile-0": {
+      "cases": 2,
+      "matched": 2
+    },
+    "entry-profile-1": {
+      "cases": 2,
+      "matched": 2
+    },
+    "entry-profile-2": {
+      "cases": 2,
+      "matched": 2
+    },
+    "entry-profile-3": {
+      "cases": 2,
+      "matched": 2
+    },
+    "entry-profile-4": {
+      "cases": 2,
+      "matched": 2
+    },
+    "entry-profile-5": {
+      "cases": 2,
+      "matched": 2
+    },
+    "entry-profile-6": {
+      "cases": 2,
+      "matched": 2
+    },
+    "entry-profile-7": {
+      "cases": 2,
+      "matched": 2
+    },
+    "full-base-profile-0-hl0": {
+      "cases": 6,
+      "matched": 6
+    },
+    "full-base-profile-0-hl1": {
+      "cases": 6,
+      "matched": 6
+    },
+    "full-base-profile-1-hl0": {
+      "cases": 6,
+      "matched": 6
+    },
+    "full-base-profile-1-hl1": {
+      "cases": 6,
+      "matched": 6
+    },
+    "full-base-profile-2-hl0": {
+      "cases": 6,
+      "matched": 6
+    },
+    "full-base-profile-2-hl1": {
+      "cases": 6,
+      "matched": 6
+    },
+    "full-base-profile-3-hl0": {
+      "cases": 6,
+      "matched": 6
+    },
+    "full-base-profile-3-hl1": {
+      "cases": 6,
+      "matched": 6
+    },
+    "full-base-profile-4-hl0": {
+      "cases": 6,
+      "matched": 6
+    },
+    "full-base-profile-4-hl1": {
+      "cases": 6,
+      "matched": 6
+    },
+    "full-base-profile-5-hl0": {
+      "cases": 6,
+      "matched": 6
+    },
+    "full-base-profile-5-hl1": {
+      "cases": 6,
+      "matched": 6
+    },
+    "full-base-profile-6-hl0": {
+      "cases": 6,
+      "matched": 6
+    },
+    "full-base-profile-6-hl1": {
+      "cases": 6,
+      "matched": 6
+    },
+    "full-base-profile-7-hl0": {
+      "cases": 6,
+      "matched": 6
+    },
+    "full-base-profile-7-hl1": {
+      "cases": 6,
+      "matched": 6
+    }
+  },
+  "first_failures": [],
+  "hashes": {
+    "cases.bin": "dc6799cf7d86deef7ff1088e6c20258fa72b89cb2cf7505f3f5c730207c7dd8c",
+    "original-results.bin": "3d6037d44f0de2d1a3c96695a3bbb00d7f271954354320592e3f49685d3efcc1",
+    "mql5-results.bin": "3d6037d44f0de2d1a3c96695a3bbb00d7f271954354320592e3f49685d3efcc1"
+  },
+  "passed": true,
+  "scope": "Numeric distance settings with supplied terminal data. Not full setup, indicator implementation, complete strategy profiles or complete EA.",
+  "base_profiles": {
+    "rows": 16,
+    "fields_per_row": 22,
+    "matched": 16,
+    "identical": true,
+    "sha256": "bd48e66d3aa20dbea81a5524d5b06d12ce9e82f12009c4a64fb66b16dedda2a2"
+  }
+}

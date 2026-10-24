@@ -1,0 +1,25 @@
+{
+  "bot": 3,
+  "source": "C:\\Users\\NTD\\AppData\\Roaming\\MetaQuotes\\Terminal\\D0E8209F77C8CF37AD8BF550E51FF075\\MQL5\\Experts\\Market\\The Gold Reaper MT5.ex5",
+  "source_sha256": "ee063d3d87490afe24e2f4ce85f6b05659320e297b102efd70207f71ca2feb83",
+  "tester_sha256": "5033d9d45d669cebd735e8a6be20b54d74b75274f885c9a0e48e52d872104efb",
+  "job": {
+    "id": "b3-luot-20261023-r1",
+    "expert": "Market\\The Gold Reaper MT5.ex5",
+    "symbol": "XAUUSD_NOCOST_V2",
+    "period": "H1",
+    "model": 0,
+    "from": "2026.09.29",
+    "to": "2026.10.20",
+    "timeout": 300,
+    "inputs": {
+      "AutoGMT": "false",
+      "Broker_GMT_OFFSET_Winter": "0",
+      "Broker_GMT_OFFSET_Summer": "0"
+    }
+  },
+  "tester_pid": 17788,
+  "engine_base": "0x7ff683f20000",
+  "capture_exit": 0,
+  "runner_exit": 0
+}

@@ -1,0 +1,1608 @@
+[
+  {
+    "rva": "0x0",
+    "address": "23e5aa10000",
+    "c_file": "ma-trung-gian.c",
+    "c_line": 7,
+    "decompiled": true,
+    "native_calls": [],
+    "internal_calls": [
+      "23e5aa10000"
+    ],
+    "chars": 463
+  },
+  {
+    "rva": "0x60",
+    "address": "23e5aa10060",
+    "c_file": "ma-trung-gian.c",
+    "c_line": 31,
+    "decompiled": true,
+    "native_calls": [],
+    "internal_calls": [
+      "23e5aa10060"
+    ],
+    "chars": 2924
+  },
+  {
+    "rva": "0x1e0",
+    "address": "23e5aa101e0",
+    "c_file": "ma-trung-gian.c",
+    "c_line": 130,
+    "decompiled": true,
+    "native_calls": [],
+    "internal_calls": [
+      "23e5aa101e0"
+    ],
+    "chars": 2795
+  },
+  {
+    "rva": "0x3c0",
+    "address": "23e5aa103c0",
+    "c_file": "ma-trung-gian.c",
+    "c_line": 238,
+    "decompiled": true,
+    "native_calls": [],
+    "internal_calls": [
+      "23e5aa103c0"
+    ],
+    "chars": 1771
+  },
+  {
+    "rva": "0x4a0",
+    "address": "23e5aa104a0",
+    "c_file": "ma-trung-gian.c",
+    "c_line": 314,
+    "decompiled": true,
+    "native_calls": [],
+    "internal_calls": [
+      "23e5aa10060",
+      "23e5aa104a0"
+    ],
+    "chars": 1889
+  },
+  {
+    "rva": "0x5c0",
+    "address": "23e5aa105c0",
+    "c_file": "ma-trung-gian.c",
+    "c_line": 390,
+    "decompiled": true,
+    "native_calls": [],
+    "internal_calls": [
+      "23e5aa105c0"
+    ],
+    "chars": 3391
+  },
+  {
+    "rva": "0x7e0",
+    "address": "23e5aa107e0",
+    "c_file": "ma-trung-gian.c",
+    "c_line": 514,
+    "decompiled": true,
+    "native_calls": [],
+    "internal_calls": [
+      "23e5aa107e0"
+    ],
+    "chars": 1028
+  },
+  {
+    "rva": "0x8c0",
+    "address": "23e5aa108c0",
+    "c_file": "ma-trung-gian.c",
+    "c_line": 557,
+    "decompiled": true,
+    "native_calls": [],
+    "internal_calls": [
+      "23e5aa108c0"
+    ],
+    "chars": 226
+  },
+  {
+    "rva": "0x8e0",
+    "address": "23e5aa108e0",
+    "c_file": "ma-trung-gian.c",
+    "c_line": 568,
+    "decompiled": true,
+    "native_calls": [],
+    "internal_calls": [
+      "23e5aa108e0"
+    ],
+    "chars": 226
+  },
+  {
+    "rva": "0x900",
+    "address": "23e5aa10900",
+    "c_file": "ma-trung-gian.c",
+    "c_line": 579,
+    "decompiled": true,
+    "native_calls": [],
+    "internal_calls": [
+      "23e5aa10900"
+    ],
+    "chars": 47
+  },
+  {
+    "rva": "0x910",
+    "address": "23e5aa10910",
+    "c_file": "ma-trung-gian.c",
+    "c_line": 589,
+    "decompiled": true,
+    "native_calls": [],
+    "internal_calls": [
+      "23e5aa10910"
+    ],
+    "chars": 175
+  },
+  {
+    "rva": "0x950",
+    "address": "23e5aa10950",
+    "c_file": "ma-trung-gian.c",
+    "c_line": 601,
+    "decompiled": true,
+    "native_calls": [
+      "MT5_Dispatch"
+    ],
+    "internal_calls": [
+      "23e5aa10000",
+      "23e5aa105c0",
+      "23e5aa10950",
+      "23e5aa335c0",
+      "23e5aa33fa0"
+    ],
+    "chars": 1619
+  },
+  {
+    "rva": "0xb60",
+    "address": "23e5aa10b60",
+    "c_file": "ma-trung-gian.c",
+    "c_line": 663,
+    "decompiled": true,
+    "native_calls": [],
+    "internal_calls": [
+      "23e5aa10000",
+      "23e5aa10b60"
+    ],
+    "chars": 346
+  },
+  {
+    "rva": "0xbd0",
+    "address": "23e5aa10bd0",
+    "c_file": "ma-trung-gian.c",
+    "c_line": 679,
+    "decompiled": true,
+    "native_calls": [],
+    "internal_calls": [
+      "23e5aa10000",
+      "23e5aa10bd0"
+    ],
+    "chars": 750
+  },
+  {
+    "rva": "0xc30",
+    "address": "23e5aa10c30",
+    "c_file": "ma-trung-gian.c",
+    "c_line": 709,
+    "decompiled": true,
+    "native_calls": [
+      "MT5_AccountInfoDouble",
+      "MT5_AccountInfoInteger",
+      "MT5_Dispatch",
+      "MT5_HistoryDealGetDouble",
+      "MT5_HistoryDealGetInteger",
+      "MT5_HistoryDealGetTicket",
+      "MT5_HistoryDealsTotal",
+      "MT5_HistorySelect",
+      "MT5_IntegerToString",
+      "MT5_MQLInfoInteger",
+      "MT5_StringToInteger",
+      "MT5_SymbolInfoDouble",
+      "MT5_SymbolInfoInteger",
+      "MT5_TimeCurrent",
+      "MT5_iTime"
+    ],
+    "internal_calls": [
+      "23e5aa10000",
+      "23e5aa10060",
+      "23e5aa101e0",
+      "23e5aa105c0",
+      "23e5aa10c30",
+      "23e5aa15880",
+      "23e5aa161b0",
+      "23e5aa16600",
+      "23e5aa16a90",
+      "23e5aa17310",
+      "23e5aa17500",
+      "23e5aa18320",
+      "23e5aa1e1b0",
+      "23e5aa1ffb0",
+      "23e5aa365a0",
+      "23e5aa36960"
+    ],
+    "chars": 63725
+  },
+  {
+    "rva": "0x5880",
+    "address": "23e5aa15880",
+    "c_file": "ma-trung-gian.c",
+    "c_line": 2467,
+    "decompiled": true,
+    "native_calls": [
+      "MT5_AccountInfoInteger",
+      "MT5_Dispatch"
+    ],
+    "internal_calls": [
+      "23e5aa10000",
+      "23e5aa10060",
+      "23e5aa105c0",
+      "23e5aa15880",
+      "23e5aa4d6c0",
+      "23e5aa5d260"
+    ],
+    "chars": 8694
+  },
+  {
+    "rva": "0x61b0",
+    "address": "23e5aa161b0",
+    "c_file": "ma-trung-gian.c",
+    "c_line": 2751,
+    "decompiled": true,
+    "native_calls": [
+      "MT5_TimeTradeServer"
+    ],
+    "internal_calls": [
+      "23e5aa107e0",
+      "23e5aa161b0"
+    ],
+    "chars": 5944
+  },
+  {
+    "rva": "0x6600",
+    "address": "23e5aa16600",
+    "c_file": "ma-trung-gian.c",
+    "c_line": 2963,
+    "decompiled": true,
+    "native_calls": [
+      "MT5_Dispatch",
+      "MT5_TimeTradeServer"
+    ],
+    "internal_calls": [
+      "23e5aa107e0",
+      "23e5aa16600"
+    ],
+    "chars": 6119
+  },
+  {
+    "rva": "0x6a90",
+    "address": "23e5aa16a90",
+    "c_file": "ma-trung-gian.c",
+    "c_line": 3180,
+    "decompiled": true,
+    "native_calls": [
+      "MT5_TimeTradeServer"
+    ],
+    "internal_calls": [
+      "23e5aa10000",
+      "23e5aa105c0",
+      "23e5aa107e0",
+      "23e5aa16a90"
+    ],
+    "chars": 11129
+  },
+  {
+    "rva": "0x7310",
+    "address": "23e5aa17310",
+    "c_file": "ma-trung-gian.c",
+    "c_line": 3554,
+    "decompiled": true,
+    "native_calls": [
+      "MT5_TimeTradeServer"
+    ],
+    "internal_calls": [
+      "23e5aa105c0",
+      "23e5aa17310"
+    ],
+    "chars": 3990
+  },
+  {
+    "rva": "0x7500",
+    "address": "23e5aa17500",
+    "c_file": "ma-trung-gian.c",
+    "c_line": 3644,
+    "decompiled": true,
+    "native_calls": [
+      "MT5_CopyBuffer",
+      "MT5_Dispatch",
+      "MT5_SymbolInfoDouble",
+      "MT5_SymbolInfoInteger",
+      "MT5_SymbolInfoTick",
+      "MT5_TimeCurrent"
+    ],
+    "internal_calls": [
+      "23e5aa105c0",
+      "23e5aa17500"
+    ],
+    "chars": 9032
+  },
+  {
+    "rva": "0x8320",
+    "address": "23e5aa18320",
+    "c_file": "ma-trung-gian.c",
+    "c_line": 3887,
+    "decompiled": true,
+    "native_calls": [
+      "MT5_Dispatch",
+      "MT5_DoubleToString",
+      "MT5_IntegerToString",
+      "MT5_ObjectFind",
+      "MT5_ObjectSetInteger",
+      "MT5_ObjectSetString"
+    ],
+    "internal_calls": [
+      "23e5aa10000",
+      "23e5aa10060",
+      "23e5aa105c0",
+      "23e5aa17310",
+      "23e5aa18320",
+      "23e5aa55b70"
+    ],
+    "chars": 106933
+  },
+  {
+    "rva": "0xe1b0",
+    "address": "23e5aa1e1b0",
+    "c_file": "ma-trung-gian.c",
+    "c_line": 6615,
+    "decompiled": true,
+    "native_calls": [
+      "MT5_DoubleToString",
+      "MT5_IntegerToString",
+      "MT5_MQLInfoInteger",
+      "MT5_ObjectSetString",
+      "MT5_PositionGetDouble",
+      "MT5_PositionGetInteger",
+      "MT5_PositionGetString",
+      "MT5_PositionGetTicket",
+      "MT5_PositionSelectByTicket",
+      "MT5_PositionsTotal"
+    ],
+    "internal_calls": [
+      "23e5aa10000",
+      "23e5aa10060",
+      "23e5aa105c0",
+      "23e5aa17310",
+      "23e5aa1e1b0"
+    ],
+    "chars": 37933
+  },
+  {
+    "rva": "0xffb0",
+    "address": "23e5aa1ffb0",
+    "c_file": "ma-trung-gian.c",
+    "c_line": 7675,
+    "decompiled": true,
+    "native_calls": [
+      "MT5_DoubleToString",
+      "MT5_HistoryDealGetDouble",
+      "MT5_HistoryDealGetInteger",
+      "MT5_HistoryDealGetString",
+      "MT5_HistoryDealGetTicket",
+      "MT5_HistoryDealsTotal",
+      "MT5_HistorySelect",
+      "MT5_IntegerToString",
+      "MT5_MQLInfoInteger",
+      "MT5_ObjectSetString"
+    ],
+    "internal_calls": [
+      "23e5aa10000",
+      "23e5aa10060",
+      "23e5aa105c0",
+      "23e5aa1ffb0"
+    ],
+    "chars": 18790
+  },
+  {
+    "rva": "0x10f60",
+    "address": "23e5aa20f60",
+    "c_file": "ma-trung-gian.c",
+    "c_line": 8225,
+    "decompiled": true,
+    "native_calls": [
+      "MT5_AccountInfoDouble",
+      "MT5_AccountInfoInteger",
+      "MT5_Dispatch",
+      "MT5_DoubleToString",
+      "MT5_HistoryDealGetDouble",
+      "MT5_HistoryDealGetInteger",
+      "MT5_HistoryDealGetTicket",
+      "MT5_HistoryDealsTotal",
+      "MT5_HistorySelect",
+      "MT5_IntegerToString",
+      "MT5_MQLInfoInteger",
+      "MT5_StringToTime",
+      "MT5_TimeCurrent",
+      "MT5_TimeGMT",
+      "MT5_TimeToStruct",
+      "MT5_iTime"
+    ],
+    "internal_calls": [
+      "23e5aa10000",
+      "23e5aa10060",
+      "23e5aa105c0",
+      "23e5aa15880",
+      "23e5aa17500",
+      "23e5aa1e1b0",
+      "23e5aa1ffb0",
+      "23e5aa20f60",
+      "23e5aa273f0",
+      "23e5aa27840",
+      "23e5aa27d20",
+      "23e5aa28790",
+      "23e5aa28aa0",
+      "23e5aa2efa0",
+      "23e5aa40010",
+      "23e5aa57740",
+      "23e5aa57d20"
+    ],
+    "chars": 88662
+  },
+  {
+    "rva": "0x173f0",
+    "address": "23e5aa273f0",
+    "c_file": "ma-trung-gian.c",
+    "c_line": 10550,
+    "decompiled": true,
+    "native_calls": [
+      "MT5_Dispatch",
+      "MT5_DoubleToString",
+      "MT5_HistoryDealGetDouble",
+      "MT5_HistoryDealGetInteger",
+      "MT5_HistoryDealGetTicket",
+      "MT5_HistoryDealsTotal",
+      "MT5_HistorySelect",
+      "MT5_MQLInfoInteger",
+      "MT5_TimeCurrent"
+    ],
+    "internal_calls": [
+      "23e5aa10000",
+      "23e5aa105c0",
+      "23e5aa273f0"
+    ],
+    "chars": 3380
+  },
+  {
+    "rva": "0x17840",
+    "address": "23e5aa27840",
+    "c_file": "ma-trung-gian.c",
+    "c_line": 10649,
+    "decompiled": true,
+    "native_calls": [
+      "MT5_Dispatch",
+      "MT5_StringToTime",
+      "MT5_TimeCurrent",
+      "MT5_TimeToStruct"
+    ],
+    "internal_calls": [
+      "23e5aa10000",
+      "23e5aa105c0",
+      "23e5aa27840"
+    ],
+    "chars": 3261
+  },
+  {
+    "rva": "0x17d20",
+    "address": "23e5aa27d20",
+    "c_file": "ma-trung-gian.c",
+    "c_line": 10754,
+    "decompiled": true,
+    "native_calls": [
+      "MT5_Dispatch",
+      "MT5_StringToInteger",
+      "MT5_TimeCurrent",
+      "MT5_TimeToStruct"
+    ],
+    "internal_calls": [
+      "23e5aa10000",
+      "23e5aa10060",
+      "23e5aa101e0",
+      "23e5aa105c0",
+      "23e5aa27d20"
+    ],
+    "chars": 10037
+  },
+  {
+    "rva": "0x18790",
+    "address": "23e5aa28790",
+    "c_file": "ma-trung-gian.c",
+    "c_line": 11091,
+    "decompiled": true,
+    "native_calls": [
+      "MT5_PositionGetInteger",
+      "MT5_PositionGetTicket",
+      "MT5_PositionsTotal"
+    ],
+    "internal_calls": [
+      "23e5aa28790"
+    ],
+    "chars": 3564
+  },
+  {
+    "rva": "0x18aa0",
+    "address": "23e5aa28aa0",
+    "c_file": "ma-trung-gian.c",
+    "c_line": 11210,
+    "decompiled": true,
+    "native_calls": [
+      "MT5_AccountInfoInteger",
+      "MT5_Dispatch",
+      "MT5_IntegerToString",
+      "MT5_MQLInfoInteger",
+      "MT5_OrderGetDouble",
+      "MT5_OrderGetInteger",
+      "MT5_OrderGetString",
+      "MT5_OrderGetTicket",
+      "MT5_OrdersTotal",
+      "MT5_PositionGetDouble",
+      "MT5_PositionGetInteger",
+      "MT5_PositionGetString",
+      "MT5_PositionGetTicket",
+      "MT5_PositionsTotal",
+      "MT5_StringToTime",
+      "MT5_SymbolInfoInteger",
+      "MT5_SymbolInfoTick",
+      "MT5_TimeCurrent",
+      "MT5_TimeToString",
+      "MT5_TimeToStruct",
+      "MT5_TimeTradeServer",
+      "MT5_iTime"
+    ],
+    "internal_calls": [
+      "23e5aa10000",
+      "23e5aa10060",
+      "23e5aa104a0",
+      "23e5aa105c0",
+      "23e5aa161b0",
+      "23e5aa16600",
+      "23e5aa16a90",
+      "23e5aa17310",
+      "23e5aa1e1b0",
+      "23e5aa1ffb0",
+      "23e5aa27840",
+      "23e5aa28aa0",
+      "23e5aa365a0",
+      "23e5aa36960",
+      "23e5aa36d20",
+      "23e5aa371f0",
+      "23e5aa3abc0",
+      "23e5aa3e6d0",
+      "23e5aa3f5c0",
+      "23e5aa3f7e0",
+      "23e5aa3fa00",
+      "23e5aa3fce0",
+      "23e5aa3ffb0",
+      "23e5aa3ffe0",
+      "23e5aa40010",
+      "23e5aa41f40",
+      "23e5aa42110",
+      "23e5aa423e0",
+      "23e5aa425b0",
+      "23e5aa42890",
+      "23e5aa42ac0",
+      "23e5aa42dd0",
+      "23e5aa436d0",
+      "23e5aa44150",
+      "23e5aa44780",
+      "23e5aa4bfe0",
+      "23e5aa4c670",
+      "23e5aa4c8d0",
+      "23e5aa4cb30"
+    ],
+    "chars": 112306
+  },
+  {
+    "rva": "0x1efa0",
+    "address": "23e5aa2efa0",
+    "c_file": "ma-trung-gian.c",
+    "c_line": 13825,
+    "decompiled": true,
+    "native_calls": [
+      "MT5_HistoryDealGetDouble",
+      "MT5_HistoryDealGetInteger",
+      "MT5_HistoryDealGetString",
+      "MT5_HistoryDealGetTicket",
+      "MT5_HistoryDealsTotal",
+      "MT5_HistorySelect",
+      "MT5_MQLInfoInteger"
+    ],
+    "internal_calls": [
+      "23e5aa10000",
+      "23e5aa105c0",
+      "23e5aa2efa0",
+      "23e5aa57950"
+    ],
+    "chars": 7462
+  },
+  {
+    "rva": "0x1f5e0",
+    "address": "23e5aa2f5e0",
+    "c_file": "ma-trung-gian.c",
+    "c_line": 14032,
+    "decompiled": true,
+    "native_calls": [
+      "MT5_IndicatorRelease",
+      "MT5_IntegerToString",
+      "MT5_ObjectDelete"
+    ],
+    "internal_calls": [
+      "23e5aa10000",
+      "23e5aa10060",
+      "23e5aa105c0",
+      "23e5aa2f5e0"
+    ],
+    "chars": 25868
+  },
+  {
+    "rva": "0x20950",
+    "address": "23e5aa30950",
+    "c_file": "ma-trung-gian.c",
+    "c_line": 14758,
+    "decompiled": true,
+    "native_calls": [],
+    "internal_calls": [
+      "23e5aa30950"
+    ],
+    "chars": 493
+  },
+  {
+    "rva": "0x20a00",
+    "address": "23e5aa30a00",
+    "c_file": "ma-trung-gian.c",
+    "c_line": 14782,
+    "decompiled": true,
+    "native_calls": [
+      "MT5_AccountInfoInteger",
+      "MT5_MQLInfoInteger"
+    ],
+    "internal_calls": [
+      "23e5aa10000",
+      "23e5aa105c0",
+      "23e5aa30a00"
+    ],
+    "chars": 16587
+  },
+  {
+    "rva": "0x22750",
+    "address": "23e5aa32750",
+    "c_file": "ma-trung-gian.c",
+    "c_line": 15271,
+    "decompiled": true,
+    "native_calls": [],
+    "internal_calls": [
+      "23e5aa10000",
+      "23e5aa32750"
+    ],
+    "chars": 4199
+  },
+  {
+    "rva": "0x22bd0",
+    "address": "23e5aa32bd0",
+    "c_file": "ma-trung-gian.c",
+    "c_line": 15376,
+    "decompiled": true,
+    "native_calls": [],
+    "internal_calls": [
+      "23e5aa32bd0"
+    ],
+    "chars": 254
+  },
+  {
+    "rva": "0x22c00",
+    "address": "23e5aa32c00",
+    "c_file": "ma-trung-gian.c",
+    "c_line": 15391,
+    "decompiled": true,
+    "native_calls": [],
+    "internal_calls": [
+      "23e5aa10000",
+      "23e5aa32c00"
+    ],
+    "chars": 164
+  },
+  {
+    "rva": "0x22c40",
+    "address": "23e5aa32c40",
+    "c_file": "ma-trung-gian.c",
+    "c_line": 15404,
+    "decompiled": true,
+    "native_calls": [
+      "MT5_Dispatch",
+      "MT5_PositionGetDouble",
+      "MT5_PositionGetInteger",
+      "MT5_PositionGetString",
+      "MT5_PositionSelectByTicket",
+      "MT5_SymbolInfoDouble"
+    ],
+    "internal_calls": [
+      "23e5aa10000",
+      "23e5aa105c0",
+      "23e5aa10950",
+      "23e5aa32c40",
+      "23e5aa331c0"
+    ],
+    "chars": 4241
+  },
+  {
+    "rva": "0x231c0",
+    "address": "23e5aa331c0",
+    "c_file": "ma-trung-gian.c",
+    "c_line": 15542,
+    "decompiled": true,
+    "native_calls": [
+      "MT5_Dispatch",
+      "MT5_SymbolInfoInteger",
+      "MT5_SymbolInfoIntegerRef"
+    ],
+    "internal_calls": [
+      "23e5aa10000",
+      "23e5aa105c0",
+      "23e5aa331c0"
+    ],
+    "chars": 3927
+  },
+  {
+    "rva": "0x235c0",
+    "address": "23e5aa335c0",
+    "c_file": "ma-trung-gian.c",
+    "c_line": 15694,
+    "decompiled": true,
+    "native_calls": [
+      "MT5_Dispatch",
+      "MT5_DoubleToString",
+      "MT5_SymbolInfoIntegerRef"
+    ],
+    "internal_calls": [
+      "23e5aa10000",
+      "23e5aa10060",
+      "23e5aa105c0",
+      "23e5aa335c0"
+    ],
+    "chars": 10121
+  },
+  {
+    "rva": "0x23fa0",
+    "address": "23e5aa33fa0",
+    "c_file": "ma-trung-gian.c",
+    "c_line": 16001,
+    "decompiled": true,
+    "native_calls": [
+      "MT5_Dispatch",
+      "MT5_DoubleToString",
+      "MT5_SymbolInfoIntegerRef"
+    ],
+    "internal_calls": [
+      "23e5aa10000",
+      "23e5aa10060",
+      "23e5aa104a0",
+      "23e5aa105c0",
+      "23e5aa33fa0",
+      "23e5aa36060",
+      "23e5aa36360"
+    ],
+    "chars": 23767
+  },
+  {
+    "rva": "0x26060",
+    "address": "23e5aa36060",
+    "c_file": "ma-trung-gian.c",
+    "c_line": 16581,
+    "decompiled": true,
+    "native_calls": [],
+    "internal_calls": [
+      "23e5aa10000",
+      "23e5aa10060",
+      "23e5aa105c0",
+      "23e5aa36060"
+    ],
+    "chars": 3690
+  },
+  {
+    "rva": "0x26360",
+    "address": "23e5aa36360",
+    "c_file": "ma-trung-gian.c",
+    "c_line": 16715,
+    "decompiled": true,
+    "native_calls": [
+      "MT5_Dispatch",
+      "MT5_DoubleToString"
+    ],
+    "internal_calls": [
+      "23e5aa10000",
+      "23e5aa105c0",
+      "23e5aa36360"
+    ],
+    "chars": 1563
+  },
+  {
+    "rva": "0x265a0",
+    "address": "23e5aa365a0",
+    "c_file": "ma-trung-gian.c",
+    "c_line": 16769,
+    "decompiled": true,
+    "native_calls": [
+      "MT5_SymbolInfoInteger",
+      "MT5_iHigh"
+    ],
+    "internal_calls": [
+      "23e5aa365a0",
+      "23e5aa4c670"
+    ],
+    "chars": 3822
+  },
+  {
+    "rva": "0x26960",
+    "address": "23e5aa36960",
+    "c_file": "ma-trung-gian.c",
+    "c_line": 16873,
+    "decompiled": true,
+    "native_calls": [
+      "MT5_SymbolInfoInteger",
+      "MT5_iLow"
+    ],
+    "internal_calls": [
+      "23e5aa36960",
+      "23e5aa4c8d0"
+    ],
+    "chars": 3811
+  },
+  {
+    "rva": "0x26d20",
+    "address": "23e5aa36d20",
+    "c_file": "ma-trung-gian.c",
+    "c_line": 16977,
+    "decompiled": true,
+    "native_calls": [
+      "MT5_Dispatch",
+      "MT5_PositionGetString",
+      "MT5_PositionSelectByTicket"
+    ],
+    "internal_calls": [
+      "23e5aa10000",
+      "23e5aa105c0",
+      "23e5aa10950",
+      "23e5aa36d20"
+    ],
+    "chars": 3650
+  },
+  {
+    "rva": "0x271f0",
+    "address": "23e5aa371f0",
+    "c_file": "ma-trung-gian.c",
+    "c_line": 17101,
+    "decompiled": true,
+    "native_calls": [
+      "MT5_Dispatch",
+      "MT5_PositionGetDouble",
+      "MT5_PositionGetInteger",
+      "MT5_PositionGetString",
+      "MT5_PositionGetTicket",
+      "MT5_PositionsTotal",
+      "MT5_SymbolInfoDouble",
+      "MT5_SymbolInfoInteger",
+      "MT5_SymbolInfoTick",
+      "MT5_TimeCurrent",
+      "MT5_iClose",
+      "MT5_iOpen",
+      "MT5_iTime"
+    ],
+    "internal_calls": [
+      "23e5aa10000",
+      "23e5aa104a0",
+      "23e5aa105c0",
+      "23e5aa36d20",
+      "23e5aa371f0",
+      "23e5aa436d0",
+      "23e5aa4d010",
+      "23e5aa4d200",
+      "23e5aa4d5a0",
+      "23e5aa4d640"
+    ],
+    "chars": 56285
+  },
+  {
+    "rva": "0x2abc0",
+    "address": "23e5aa3abc0",
+    "c_file": "ma-trung-gian.c",
+    "c_line": 18201,
+    "decompiled": true,
+    "native_calls": [
+      "MT5_Dispatch",
+      "MT5_PositionGetDouble",
+      "MT5_PositionGetInteger",
+      "MT5_PositionGetString",
+      "MT5_PositionGetTicket",
+      "MT5_PositionsTotal",
+      "MT5_SymbolInfoDouble",
+      "MT5_SymbolInfoInteger",
+      "MT5_SymbolInfoTick",
+      "MT5_TimeCurrent",
+      "MT5_iClose",
+      "MT5_iOpen",
+      "MT5_iTime"
+    ],
+    "internal_calls": [
+      "23e5aa10000",
+      "23e5aa10060",
+      "23e5aa104a0",
+      "23e5aa105c0",
+      "23e5aa36d20",
+      "23e5aa3abc0",
+      "23e5aa436d0",
+      "23e5aa4d010",
+      "23e5aa4d200",
+      "23e5aa4d5a0",
+      "23e5aa4d640"
+    ],
+    "chars": 54688
+  },
+  {
+    "rva": "0x2e6d0",
+    "address": "23e5aa3e6d0",
+    "c_file": "ma-trung-gian.c",
+    "c_line": 19415,
+    "decompiled": true,
+    "native_calls": [
+      "MT5_Dispatch"
+    ],
+    "internal_calls": [
+      "23e5aa10000",
+      "23e5aa10060",
+      "23e5aa105c0",
+      "23e5aa3e6d0",
+      "23e5aa42dd0",
+      "23e5aa436d0"
+    ],
+    "chars": 14318
+  },
+  {
+    "rva": "0x2f5c0",
+    "address": "23e5aa3f5c0",
+    "c_file": "ma-trung-gian.c",
+    "c_line": 19773,
+    "decompiled": true,
+    "native_calls": [
+      "MT5_OrderGetDouble",
+      "MT5_OrderGetInteger",
+      "MT5_OrderGetString",
+      "MT5_OrderGetTicket",
+      "MT5_OrdersTotal"
+    ],
+    "internal_calls": [
+      "23e5aa10000",
+      "23e5aa105c0",
+      "23e5aa3f5c0",
+      "23e5aa44150"
+    ],
+    "chars": 1990
+  },
+  {
+    "rva": "0x2f7e0",
+    "address": "23e5aa3f7e0",
+    "c_file": "ma-trung-gian.c",
+    "c_line": 19844,
+    "decompiled": true,
+    "native_calls": [
+      "MT5_OrderGetDouble",
+      "MT5_OrderGetInteger",
+      "MT5_OrderGetString",
+      "MT5_OrderGetTicket",
+      "MT5_OrdersTotal"
+    ],
+    "internal_calls": [
+      "23e5aa10000",
+      "23e5aa105c0",
+      "23e5aa3f7e0",
+      "23e5aa44150"
+    ],
+    "chars": 1990
+  },
+  {
+    "rva": "0x2fa00",
+    "address": "23e5aa3fa00",
+    "c_file": "ma-trung-gian.c",
+    "c_line": 19915,
+    "decompiled": true,
+    "native_calls": [
+      "MT5_PositionGetDouble",
+      "MT5_PositionGetInteger",
+      "MT5_PositionGetString",
+      "MT5_PositionGetTicket",
+      "MT5_PositionsTotal"
+    ],
+    "internal_calls": [
+      "23e5aa10000",
+      "23e5aa105c0",
+      "23e5aa3fa00",
+      "23e5aa4d010"
+    ],
+    "chars": 3034
+  },
+  {
+    "rva": "0x2fce0",
+    "address": "23e5aa3fce0",
+    "c_file": "ma-trung-gian.c",
+    "c_line": 20007,
+    "decompiled": true,
+    "native_calls": [
+      "MT5_PositionGetDouble",
+      "MT5_PositionGetInteger",
+      "MT5_PositionGetString",
+      "MT5_PositionGetTicket",
+      "MT5_PositionsTotal"
+    ],
+    "internal_calls": [
+      "23e5aa10000",
+      "23e5aa105c0",
+      "23e5aa3fce0",
+      "23e5aa4d010"
+    ],
+    "chars": 3333
+  },
+  {
+    "rva": "0x2ffb0",
+    "address": "23e5aa3ffb0",
+    "c_file": "ma-trung-gian.c",
+    "c_line": 20115,
+    "decompiled": true,
+    "native_calls": [
+      "MT5_TimeCurrent"
+    ],
+    "internal_calls": [
+      "23e5aa3ffb0"
+    ],
+    "chars": 146
+  },
+  {
+    "rva": "0x2ffe0",
+    "address": "23e5aa3ffe0",
+    "c_file": "ma-trung-gian.c",
+    "c_line": 20128,
+    "decompiled": true,
+    "native_calls": [
+      "MT5_TimeCurrent"
+    ],
+    "internal_calls": [
+      "23e5aa3ffe0"
+    ],
+    "chars": 166
+  },
+  {
+    "rva": "0x30010",
+    "address": "23e5aa40010",
+    "c_file": "ma-trung-gian.c",
+    "c_line": 20142,
+    "decompiled": true,
+    "native_calls": [
+      "MT5_Dispatch",
+      "MT5_OrderGetInteger",
+      "MT5_OrderGetString",
+      "MT5_OrderGetTicket",
+      "MT5_OrdersTotal"
+    ],
+    "internal_calls": [
+      "23e5aa10000",
+      "23e5aa105c0",
+      "23e5aa3fa00",
+      "23e5aa3fce0",
+      "23e5aa40010",
+      "23e5aa44150"
+    ],
+    "chars": 3281
+  },
+  {
+    "rva": "0x30320",
+    "address": "23e5aa40320",
+    "c_file": "ma-trung-gian.c",
+    "c_line": 20241,
+    "decompiled": true,
+    "native_calls": [
+      "MT5_Dispatch",
+      "MT5_OrderGetDouble",
+      "MT5_OrderGetInteger",
+      "MT5_OrderGetString",
+      "MT5_OrderGetTicket",
+      "MT5_OrdersTotal"
+    ],
+    "internal_calls": [
+      "23e5aa10000",
+      "23e5aa10060",
+      "23e5aa105c0",
+      "23e5aa40320",
+      "23e5aa44150"
+    ],
+    "chars": 35210
+  },
+  {
+    "rva": "0x31f40",
+    "address": "23e5aa41f40",
+    "c_file": "ma-trung-gian.c",
+    "c_line": 21233,
+    "decompiled": true,
+    "native_calls": [
+      "MT5_OrderGetInteger",
+      "MT5_OrderGetString",
+      "MT5_OrderGetTicket",
+      "MT5_OrdersTotal"
+    ],
+    "internal_calls": [
+      "23e5aa10000",
+      "23e5aa105c0",
+      "23e5aa41f40"
+    ],
+    "chars": 1813
+  },
+  {
+    "rva": "0x32110",
+    "address": "23e5aa42110",
+    "c_file": "ma-trung-gian.c",
+    "c_line": 21304,
+    "decompiled": true,
+    "native_calls": [
+      "MT5_Dispatch",
+      "MT5_OrderGetDouble",
+      "MT5_OrderGetInteger",
+      "MT5_OrderGetString",
+      "MT5_OrderGetTicket",
+      "MT5_OrdersTotal"
+    ],
+    "internal_calls": [
+      "23e5aa10000",
+      "23e5aa105c0",
+      "23e5aa42110",
+      "23e5aa44150"
+    ],
+    "chars": 2902
+  },
+  {
+    "rva": "0x323e0",
+    "address": "23e5aa423e0",
+    "c_file": "ma-trung-gian.c",
+    "c_line": 21401,
+    "decompiled": true,
+    "native_calls": [
+      "MT5_OrderGetInteger",
+      "MT5_OrderGetString",
+      "MT5_OrderGetTicket",
+      "MT5_OrdersTotal"
+    ],
+    "internal_calls": [
+      "23e5aa10000",
+      "23e5aa105c0",
+      "23e5aa423e0"
+    ],
+    "chars": 1813
+  },
+  {
+    "rva": "0x325b0",
+    "address": "23e5aa425b0",
+    "c_file": "ma-trung-gian.c",
+    "c_line": 21472,
+    "decompiled": true,
+    "native_calls": [
+      "MT5_Dispatch",
+      "MT5_OrderGetDouble",
+      "MT5_OrderGetInteger",
+      "MT5_OrderGetString",
+      "MT5_OrderGetTicket",
+      "MT5_OrdersTotal"
+    ],
+    "internal_calls": [
+      "23e5aa10000",
+      "23e5aa105c0",
+      "23e5aa425b0",
+      "23e5aa44150"
+    ],
+    "chars": 2975
+  },
+  {
+    "rva": "0x32890",
+    "address": "23e5aa42890",
+    "c_file": "ma-trung-gian.c",
+    "c_line": 21569,
+    "decompiled": true,
+    "native_calls": [
+      "MT5_SymbolInfoInteger",
+      "MT5_iHigh"
+    ],
+    "internal_calls": [
+      "23e5aa42890"
+    ],
+    "chars": 1782
+  },
+  {
+    "rva": "0x32ac0",
+    "address": "23e5aa42ac0",
+    "c_file": "ma-trung-gian.c",
+    "c_line": 21623,
+    "decompiled": true,
+    "native_calls": [
+      "MT5_SymbolInfoInteger",
+      "MT5_iLow"
+    ],
+    "internal_calls": [
+      "23e5aa42ac0"
+    ],
+    "chars": 1731
+  },
+  {
+    "rva": "0x32ce0",
+    "address": "23e5aa42ce0",
+    "c_file": "ma-trung-gian.c",
+    "c_line": 21675,
+    "decompiled": true,
+    "native_calls": [
+      "MT5_OrdersTotal",
+      "MT5_PositionGetTicket"
+    ],
+    "internal_calls": [
+      "23e5aa42ce0"
+    ],
+    "chars": 915
+  },
+  {
+    "rva": "0x32dd0",
+    "address": "23e5aa42dd0",
+    "c_file": "ma-trung-gian.c",
+    "c_line": 21722,
+    "decompiled": true,
+    "native_calls": [
+      "MT5_Dispatch",
+      "MT5_SymbolInfoInteger",
+      "MT5_SymbolInfoIntegerRef"
+    ],
+    "internal_calls": [
+      "23e5aa10000",
+      "23e5aa105c0",
+      "23e5aa10950",
+      "23e5aa331c0",
+      "23e5aa42dd0"
+    ],
+    "chars": 6646
+  },
+  {
+    "rva": "0x336d0",
+    "address": "23e5aa436d0",
+    "c_file": "ma-trung-gian.c",
+    "c_line": 21960,
+    "decompiled": true,
+    "native_calls": [],
+    "internal_calls": [
+      "23e5aa10000",
+      "23e5aa104a0",
+      "23e5aa105c0",
+      "23e5aa436d0"
+    ],
+    "chars": 12782
+  },
+  {
+    "rva": "0x34150",
+    "address": "23e5aa44150",
+    "c_file": "ma-trung-gian.c",
+    "c_line": 22529,
+    "decompiled": true,
+    "native_calls": [
+      "MT5_Dispatch",
+      "MT5_OrderGetDouble",
+      "MT5_OrderGetInteger",
+      "MT5_OrderGetString",
+      "MT5_OrderSelect",
+      "MT5_SymbolInfoDouble",
+      "MT5_SymbolInfoInteger",
+      "MT5_SymbolInfoTick"
+    ],
+    "internal_calls": [
+      "23e5aa10000",
+      "23e5aa105c0",
+      "23e5aa10950",
+      "23e5aa44150"
+    ],
+    "chars": 4617
+  },
+  {
+    "rva": "0x34780",
+    "address": "23e5aa44780",
+    "c_file": "ma-trung-gian.c",
+    "c_line": 22680,
+    "decompiled": true,
+    "native_calls": [
+      "MT5_AccountInfoDouble",
+      "MT5_Dispatch",
+      "MT5_SymbolInfoDouble"
+    ],
+    "internal_calls": [
+      "23e5aa10000",
+      "23e5aa10060",
+      "23e5aa105c0",
+      "23e5aa273f0",
+      "23e5aa44780",
+      "23e5aa46220"
+    ],
+    "chars": 25084
+  },
+  {
+    "rva": "0x36220",
+    "address": "23e5aa46220",
+    "c_file": "ma-trung-gian.c",
+    "c_line": 23292,
+    "decompiled": true,
+    "native_calls": [
+      "MT5_AccountInfoString",
+      "MT5_iClose"
+    ],
+    "internal_calls": [
+      "23e5aa10000",
+      "23e5aa10060",
+      "23e5aa105c0",
+      "23e5aa46220"
+    ],
+    "chars": 117813
+  },
+  {
+    "rva": "0x3bfe0",
+    "address": "23e5aa4bfe0",
+    "c_file": "ma-trung-gian.c",
+    "c_line": 26513,
+    "decompiled": true,
+    "native_calls": [
+      "MT5_Dispatch",
+      "MT5_SymbolInfoDouble"
+    ],
+    "internal_calls": [
+      "23e5aa10000",
+      "23e5aa10060",
+      "23e5aa105c0",
+      "23e5aa4bfe0"
+    ],
+    "chars": 7535
+  },
+  {
+    "rva": "0x3c670",
+    "address": "23e5aa4c670",
+    "c_file": "ma-trung-gian.c",
+    "c_line": 26734,
+    "decompiled": true,
+    "native_calls": [
+      "MT5_OrderGetDouble",
+      "MT5_OrderGetInteger",
+      "MT5_OrderGetString",
+      "MT5_OrderGetTicket",
+      "MT5_OrdersTotal"
+    ],
+    "internal_calls": [
+      "23e5aa10000",
+      "23e5aa105c0",
+      "23e5aa4c670"
+    ],
+    "chars": 2286
+  },
+  {
+    "rva": "0x3c8d0",
+    "address": "23e5aa4c8d0",
+    "c_file": "ma-trung-gian.c",
+    "c_line": 26813,
+    "decompiled": true,
+    "native_calls": [
+      "MT5_OrderGetDouble",
+      "MT5_OrderGetInteger",
+      "MT5_OrderGetString",
+      "MT5_OrderGetTicket",
+      "MT5_OrdersTotal"
+    ],
+    "internal_calls": [
+      "23e5aa10000",
+      "23e5aa105c0",
+      "23e5aa4c8d0"
+    ],
+    "chars": 2286
+  },
+  {
+    "rva": "0x3cb30",
+    "address": "23e5aa4cb30",
+    "c_file": "ma-trung-gian.c",
+    "c_line": 26892,
+    "decompiled": true,
+    "native_calls": [
+      "MT5_AccountInfoDouble",
+      "MT5_AccountInfoString",
+      "MT5_Dispatch"
+    ],
+    "internal_calls": [
+      "23e5aa10000",
+      "23e5aa105c0",
+      "23e5aa4cb30",
+      "23e5aa557d0"
+    ],
+    "chars": 4977
+  },
+  {
+    "rva": "0x3d010",
+    "address": "23e5aa4d010",
+    "c_file": "ma-trung-gian.c",
+    "c_line": 27063,
+    "decompiled": true,
+    "native_calls": [
+      "MT5_PositionGetDouble",
+      "MT5_PositionGetInteger",
+      "MT5_PositionSelectByTicket"
+    ],
+    "internal_calls": [
+      "23e5aa32c40",
+      "23e5aa4d010"
+    ],
+    "chars": 1410
+  },
+  {
+    "rva": "0x3d200",
+    "address": "23e5aa4d200",
+    "c_file": "ma-trung-gian.c",
+    "c_line": 27109,
+    "decompiled": true,
+    "native_calls": [
+      "MT5_Dispatch",
+      "MT5_PositionsTotal",
+      "MT5_SymbolInfoInteger"
+    ],
+    "internal_calls": [
+      "23e5aa28790",
+      "23e5aa4d200"
+    ],
+    "chars": 2768
+  },
+  {
+    "rva": "0x3d5a0",
+    "address": "23e5aa4d5a0",
+    "c_file": "ma-trung-gian.c",
+    "c_line": 27194,
+    "decompiled": true,
+    "native_calls": [
+      "MT5_TimeCurrent"
+    ],
+    "internal_calls": [
+      "23e5aa4d5a0"
+    ],
+    "chars": 801
+  },
+  {
+    "rva": "0x3d640",
+    "address": "23e5aa4d640",
+    "c_file": "ma-trung-gian.c",
+    "c_line": 27223,
+    "decompiled": true,
+    "native_calls": [
+      "MT5_TimeCurrent"
+    ],
+    "internal_calls": [
+      "23e5aa4d640"
+    ],
+    "chars": 560
+  },
+  {
+    "rva": "0x3d6c0",
+    "address": "23e5aa4d6c0",
+    "c_file": "ma-trung-gian.c",
+    "c_line": 27248,
+    "decompiled": true,
+    "native_calls": [
+      "MT5_AccountInfoInteger",
+      "MT5_AccountInfoString",
+      "MT5_MQLInfoInteger"
+    ],
+    "internal_calls": [
+      "23e5aa10000",
+      "23e5aa103c0",
+      "23e5aa105c0",
+      "23e5aa4d6c0"
+    ],
+    "chars": 131173
+  },
+  {
+    "rva": "0x457d0",
+    "address": "23e5aa557d0",
+    "c_file": "ma-trung-gian.c",
+    "c_line": 30104,
+    "decompiled": true,
+    "native_calls": [
+      "MT5_AccountInfoDouble",
+      "MT5_Dispatch",
+      "MT5_SymbolInfoTick"
+    ],
+    "internal_calls": [
+      "23e5aa10000",
+      "23e5aa101e0",
+      "23e5aa557d0"
+    ],
+    "chars": 3434
+  },
+  {
+    "rva": "0x45b70",
+    "address": "23e5aa55b70",
+    "c_file": "ma-trung-gian.c",
+    "c_line": 30220,
+    "decompiled": true,
+    "native_calls": [
+      "MT5_Dispatch",
+      "MT5_IntegerToString",
+      "MT5_ObjectSetInteger",
+      "MT5_ObjectSetString"
+    ],
+    "internal_calls": [
+      "23e5aa10000",
+      "23e5aa10060",
+      "23e5aa105c0",
+      "23e5aa55b70"
+    ],
+    "chars": 31379
+  },
+  {
+    "rva": "0x47740",
+    "address": "23e5aa57740",
+    "c_file": "ma-trung-gian.c",
+    "c_line": 31165,
+    "decompiled": true,
+    "native_calls": [
+      "MT5_IntegerToString",
+      "MT5_ObjectSetString"
+    ],
+    "internal_calls": [
+      "23e5aa10000",
+      "23e5aa10060",
+      "23e5aa105c0",
+      "23e5aa57740"
+    ],
+    "chars": 2465
+  },
+  {
+    "rva": "0x47950",
+    "address": "23e5aa57950",
+    "c_file": "ma-trung-gian.c",
+    "c_line": 31260,
+    "decompiled": true,
+    "native_calls": [],
+    "internal_calls": [
+      "23e5aa57950"
+    ],
+    "chars": 4967
+  },
+  {
+    "rva": "0x47d20",
+    "address": "23e5aa57d20",
+    "c_file": "ma-trung-gian.c",
+    "c_line": 31414,
+    "decompiled": true,
+    "native_calls": [
+      "MT5_AccountInfoString",
+      "MT5_iClose"
+    ],
+    "internal_calls": [
+      "23e5aa10000",
+      "23e5aa10060",
+      "23e5aa105c0",
+      "23e5aa57d20"
+    ],
+    "chars": 99919
+  },
+  {
+    "rva": "0x4d260",
+    "address": "23e5aa5d260",
+    "c_file": "ma-trung-gian.c",
+    "c_line": 34311,
+    "decompiled": true,
+    "native_calls": [
+      "MT5_Dispatch"
+    ],
+    "internal_calls": [
+      "23e5aa10000",
+      "23e5aa10060",
+      "23e5aa105c0",
+      "23e5aa5d260"
+    ],
+    "chars": 15115
+  }
+]

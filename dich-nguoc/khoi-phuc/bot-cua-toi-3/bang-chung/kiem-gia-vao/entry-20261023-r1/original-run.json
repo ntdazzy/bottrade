@@ -1,0 +1,28 @@
+{
+  "cases": 1096,
+  "seconds": 10.95,
+  "result_sha256": "7ec90943fb8e87e505b1a943ba03eb57a687d9a756afec53016a0b31df59672d",
+  "inputs_sha256": "1422f48359da179556e02cd2a236a539dfaab97cc4839978a1f7c41f1c026cdc",
+  "native_rvas": {
+    "entry_buy": 203984,
+    "entry_sell": 204944,
+    "guard_buy": 291712,
+    "guard_sell": 292320,
+    "older": 447784,
+    "recent": 447788,
+    "last": 447792,
+    "gap_points": 447800,
+    "confirm_tf": 447156,
+    "buy_offset": 447808,
+    "sell_offset": 447816,
+    "radius": 447832,
+    "magic": 447844,
+    "unit": 474584,
+    "result_buy": 476288,
+    "result_sell": 476280,
+    "ticket": 477240,
+    "symbol": 477528,
+    "string_result": 1928764
+  },
+  "string_allocator": "successful local allocations; native string copy/free callers executed unchanged"
+}

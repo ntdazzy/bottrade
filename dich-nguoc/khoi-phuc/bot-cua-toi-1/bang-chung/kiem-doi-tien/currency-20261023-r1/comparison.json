@@ -1,0 +1,27 @@
+{
+  "cases": 1530,
+  "matched": 1530,
+  "failed": 0,
+  "passed": true,
+  "groups": {
+    "currency-route": {
+      "cases": 1220,
+      "matched": 1220
+    },
+    "rounding": {
+      "cases": 110,
+      "matched": 110
+    },
+    "mixed": {
+      "cases": 200,
+      "matched": 200
+    }
+  },
+  "first_failures": [],
+  "hashes": {
+    "cases.bin": "29b3048cbd481c7db0affc6182a0d3fb63ea90960d01aac1695661fb50170556",
+    "original-results.bin": "5426849f911efb0386b5787de70b32b044b08859a1b9e9db4f07c6f02e8a30aa",
+    "mql5-results.bin": "5426849f911efb0386b5787de70b32b044b08859a1b9e9db4f07c6f02e8a30aa"
+  },
+  "scope": "Verify both currency-conversion functions against captured native code.\n\nOnly account currency, successful string allocation and iClose reads are supplied.\nCompare result bits and the exact sequence of price symbols/timeframes/shifts/values.\n"
+}

@@ -1,0 +1,27 @@
+{
+  "cases": 1700,
+  "matched": 1700,
+  "failed": 0,
+  "passed": true,
+  "groups": {
+    "previous-account-flow": {
+      "cases": 783,
+      "matched": 783
+    },
+    "withdrawal-to-volume": {
+      "cases": 915,
+      "matched": 915
+    },
+    "partial-state-on-fault": {
+      "cases": 2,
+      "matched": 2
+    }
+  },
+  "first_failures": [],
+  "hashes": {
+    "cases.bin": "2f807d36d8fc3ba6491040c443f5b931e68ea696456eaf4f079141c16d75d2c6",
+    "original-results.bin": "25a7a6ca114f972424670738cda4fb498a4b7dca0184203a607746e51e14413f",
+    "mql5-results.bin": "25a7a6ca114f972424670738cda4fb498a4b7dca0184203a607746e51e14413f"
+  },
+  "scope": "Execute original volume preparation with original withdrawal and currency helpers.\n\nCompare numeric state even on division faults, completed withdrawal timestamps,\nhistory/persistence call hashes and currency-price call hashes. Terminal data mocked;\nformatting and message content excluded. Not the full EA or startup restoration.\n"
+}

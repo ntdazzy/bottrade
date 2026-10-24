@@ -1,0 +1,708 @@
+{
+ "ghi_chu": "Tệp tạo mới hoặc sửa trong lượt 23/10/2026. Không gồm NGUON-GOC.json, KET-QUA.md và chính tệp này.",
+ "tep_khoi_phuc_con_nguyen": 249,
+ "tep": [
+  {
+   "path": "bot-cua-toi-13/bang-chung/bien-dich/b13-build-01/bien-nhan.json",
+   "sha256": "ec2da802ba47cd19958df1493e027085d3512b16ffb0b00e3125af3bbc29e7aa",
+   "bytes": 992,
+   "trang_thai": "moi"
+  },
+  {
+   "path": "bot-cua-toi-13/bang-chung/bien-dich/b13-build-01/bot-cua-toi-13.ex5",
+   "sha256": "3a2b6a051f0d51a69e768bc6154a571aeaaccfe0ab3a0f8d95413ddde3d5636b",
+   "bytes": 52426,
+   "trang_thai": "moi"
+  },
+  {
+   "path": "bot-cua-toi-13/bang-chung/bien-dich/b13-build-01/metaeditor.log",
+   "sha256": "323060234e1789dd1b2cacc8aa9cffc0b0fbec4a0950d9ef616b976c88242314",
+   "bytes": 8588,
+   "trang_thai": "moi"
+  },
+  {
+   "path": "bot-cua-toi-13/bang-chung/bien-dich/b13-build-02/bien-nhan.json",
+   "sha256": "40718889cbd4813302519e3ab8ce2c24dfdf6353f8ffd4268e63f9363f4c91ff",
+   "bytes": 1235,
+   "trang_thai": "moi"
+  },
+  {
+   "path": "bot-cua-toi-13/bang-chung/bien-dich/b13-build-02/bot-cua-toi-13.ex5",
+   "sha256": "f8f219ef2ccc75c756af20f26d508b4814abeebf06dc8e2e56edb482d1204879",
+   "bytes": 57176,
+   "trang_thai": "moi"
+  },
+  {
+   "path": "bot-cua-toi-13/bang-chung/bien-dich/b13-build-02/metaeditor.log",
+   "sha256": "371b520c5c3f90ef360418238ee5b94d1966382aa6c362264851a18b34345fac",
+   "bytes": 9166,
+   "trang_thai": "moi"
+  },
+  {
+   "path": "bot-cua-toi-13/bang-chung/bien-dich/b13-build-03/bien-nhan.json",
+   "sha256": "7240477b2a148bb6f6f929f0287702b19f90ee82b27b2eb62d061cab676cacfe",
+   "bytes": 1235,
+   "trang_thai": "moi"
+  },
+  {
+   "path": "bot-cua-toi-13/bang-chung/bien-dich/b13-build-03/bot-cua-toi-13.ex5",
+   "sha256": "d6b4fd2dc2d4c794143cd3888cb20fa492a9e08b22496d54348bf728debde5aa",
+   "bytes": 59540,
+   "trang_thai": "moi"
+  },
+  {
+   "path": "bot-cua-toi-13/bang-chung/bien-dich/b13-build-03/metaeditor.log",
+   "sha256": "40f1d67718f20117586f3779e5b8ae96c4847bf1d0475ec263de7949df361653",
+   "bytes": 9166,
+   "trang_thai": "moi"
+  },
+  {
+   "path": "bot-cua-toi-13/bang-chung/bien-dich/b13-check-lv-01/bien-nhan.json",
+   "sha256": "405555a51c7caaccfe0b76c7d429c7e6a673e44ef5d8fa2f88682406dab730df",
+   "bytes": 1244,
+   "trang_thai": "moi"
+  },
+  {
+   "path": "bot-cua-toi-13/bang-chung/bien-dich/b13-check-lv-01/Bot13LiveVolumeCheck.ex5",
+   "sha256": "b47a7364005dd923f998352fda858db085b38829edfe2bb540fcdb673a2b9f04",
+   "bytes": 17282,
+   "trang_thai": "moi"
+  },
+  {
+   "path": "bot-cua-toi-13/bang-chung/bien-dich/b13-check-lv-01/metaeditor.log",
+   "sha256": "23549d0aecec3927f23c524fb96983c32e07af8f5867ec64095bdb1245b5479e",
+   "bytes": 3898,
+   "trang_thai": "moi"
+  },
+  {
+   "path": "bot-cua-toi-13/bang-chung/kiem-khoi-luong-ngoai-may-thu/lv-20261023-01/cases.bin",
+   "sha256": "390a1c27ba400e27150664f3d1c034f7993e2c81490a585137dd96cc0224f944",
+   "bytes": 900200,
+   "trang_thai": "moi"
+  },
+  {
+   "path": "bot-cua-toi-13/bang-chung/kiem-khoi-luong-ngoai-may-thu/lv-20261023-01/cases.json",
+   "sha256": "b7c06e119abd2460c1a2c74d67063b462d85b14e8c55c18249e9f5073b1892bd",
+   "bytes": 122,
+   "trang_thai": "moi"
+  },
+  {
+   "path": "bot-cua-toi-13/bang-chung/kiem-khoi-luong-ngoai-may-thu/lv-20261023-01/comparison.json",
+   "sha256": "51e39daa54905d1d3a58ba5d54d47da16d3420cd628e94c6c2eff8e7a4f1e889",
+   "bytes": 930,
+   "trang_thai": "moi"
+  },
+  {
+   "path": "bot-cua-toi-13/bang-chung/kiem-khoi-luong-ngoai-may-thu/lv-20261023-01/mql5-results.bin",
+   "sha256": "d9b751b947662865d2af1b4b0a64ba51a65d17dd8af042f0254cb989859d743b",
+   "bytes": 5285280,
+   "trang_thai": "moi"
+  },
+  {
+   "path": "bot-cua-toi-13/bang-chung/kiem-khoi-luong-ngoai-may-thu/lv-20261023-01/mql5-run.json",
+   "sha256": "a10c83de063a34082f7ea1fcb784c85749f9b608371590a145668a114ba3c9af",
+   "bytes": 309,
+   "trang_thai": "moi"
+  },
+  {
+   "path": "bot-cua-toi-13/bang-chung/kiem-khoi-luong-ngoai-may-thu/lv-20261023-01/original-results.bin",
+   "sha256": "d9b751b947662865d2af1b4b0a64ba51a65d17dd8af042f0254cb989859d743b",
+   "bytes": 5285280,
+   "trang_thai": "moi"
+  },
+  {
+   "path": "bot-cua-toi-13/bang-chung/kiem-khoi-luong-ngoai-may-thu/lv-20261023-01/original-run.json",
+   "sha256": "78ca790ad7d798bbc72bbbc4b901f944ce3686996d8df62c98f34cb8445baa4d",
+   "bytes": 377,
+   "trang_thai": "moi"
+  },
+  {
+   "path": "bot-cua-toi-13/bang-chung/so-hanh-vi/luot-20261023/b13-broker1-r1.htm",
+   "sha256": "eedb6b72ccdb161f892ef38ac423ca459efecda007b08906a3f25e9c5b5c42d5",
+   "bytes": 48794,
+   "trang_thai": "moi"
+  },
+  {
+   "path": "bot-cua-toi-13/bang-chung/so-hanh-vi/luot-20261023/b13-broker1-r1.log",
+   "sha256": "becaf77c09327dea77cf84453b92dbd2d71a076683e6d5a8862a049bd5bda1f7",
+   "bytes": 43843,
+   "trang_thai": "moi"
+  },
+  {
+   "path": "bot-cua-toi-13/bang-chung/so-hanh-vi/luot-20261023/b13-broker1-r1.terminal.log",
+   "sha256": "f2c0e1e72cb7a80a7371b77da36759552eeba98b698a41bbec6e80f7419232af",
+   "bytes": 1769,
+   "trang_thai": "moi"
+  },
+  {
+   "path": "bot-cua-toi-13/bang-chung/so-hanh-vi/luot-20261023/b13-broker1-r2.htm",
+   "sha256": "7cf9b31047de75d427892861c8b35eac03813e990d085516d4af9bd098053cee",
+   "bytes": 51792,
+   "trang_thai": "moi"
+  },
+  {
+   "path": "bot-cua-toi-13/bang-chung/so-hanh-vi/luot-20261023/b13-broker1-r2.log",
+   "sha256": "e91ffad7ab64cdbe51252fc3f6847afaee6d46cc33fbe600234a76e5af98fe1c",
+   "bytes": 44931,
+   "trang_thai": "moi"
+  },
+  {
+   "path": "bot-cua-toi-13/bang-chung/so-hanh-vi/luot-20261023/b13-broker1-r2.terminal.log",
+   "sha256": "3fb99a44108d0868bff24a292249266c481532290e5ee1f4143c6450e11f0b82",
+   "bytes": 1769,
+   "trang_thai": "moi"
+  },
+  {
+   "path": "bot-cua-toi-13/bang-chung/so-hanh-vi/luot-20261023/b13-dai1-r1.htm",
+   "sha256": "5a0f4eee1b1296d3b4283b8a18b4427c4fd69120d87aa807264acbe6cfc762e6",
+   "bytes": 681080,
+   "trang_thai": "moi"
+  },
+  {
+   "path": "bot-cua-toi-13/bang-chung/so-hanh-vi/luot-20261023/b13-dai1-r1.log",
+   "sha256": "669286cc5e4cc6d5d2f7967fd9ff945e6329dee2fa793f292770993b6f9553c8",
+   "bytes": 1223297,
+   "trang_thai": "moi"
+  },
+  {
+   "path": "bot-cua-toi-13/bang-chung/so-hanh-vi/luot-20261023/b13-dai1-r1.terminal.log",
+   "sha256": "f4a0c95ec3db0d822bf49399d93db3f243e0b0a9cfed22c27ebe5e60f4826384",
+   "bytes": 1763,
+   "trang_thai": "moi"
+  },
+  {
+   "path": "bot-cua-toi-13/bang-chung/so-hanh-vi/luot-20261023/b13-dai2-r1.htm",
+   "sha256": "b890f4a604fe764f1b0737baaa70b74f28c1b3308e34ea3c4cec73cdc8c2eac1",
+   "bytes": 940322,
+   "trang_thai": "moi"
+  },
+  {
+   "path": "bot-cua-toi-13/bang-chung/so-hanh-vi/luot-20261023/b13-dai2-r1.log",
+   "sha256": "ffd7389cd9c64e0c228397a4467da4d2d3a5e947f1ff8f69dfdd9cb9c344fb92",
+   "bytes": 1630164,
+   "trang_thai": "moi"
+  },
+  {
+   "path": "bot-cua-toi-13/bang-chung/so-hanh-vi/luot-20261023/b13-dai2-r1.terminal.log",
+   "sha256": "07ebc4db6755e05bd0c20081ee0408799e42d22b7718af4d8e8f8cf395cda1a6",
+   "bytes": 1763,
+   "trang_thai": "moi"
+  },
+  {
+   "path": "bot-cua-toi-13/bang-chung/so-hanh-vi/luot-20261023/b13-dai3-r1.htm",
+   "sha256": "9062384d0cdd19507792b4b4d3de97b7a675b3aeed8aaf3a3cfc4f613860f3f9",
+   "bytes": 574136,
+   "trang_thai": "moi"
+  },
+  {
+   "path": "bot-cua-toi-13/bang-chung/so-hanh-vi/luot-20261023/b13-dai3-r1.log",
+   "sha256": "1b8f5a4e8e69d30d0cee14b25bfb89ab010389d69c1d06a43bbabb34c3d5ba23",
+   "bytes": 902525,
+   "trang_thai": "moi"
+  },
+  {
+   "path": "bot-cua-toi-13/bang-chung/so-hanh-vi/luot-20261023/b13-dai3-r1.terminal.log",
+   "sha256": "863c1a3224a76e08c8faff1a8d8d1b2ca8831f713edeb9c2a53d9e66248f35bc",
+   "bytes": 1763,
+   "trang_thai": "moi"
+  },
+  {
+   "path": "bot-cua-toi-13/bang-chung/so-hanh-vi/luot-20261023/b13-delay-r1.htm",
+   "sha256": "de322d46b1aa6136b0cb6a404e78d0129f56dcc3ddc03118a42c7fa9c8588b3e",
+   "bytes": 67790,
+   "trang_thai": "moi"
+  },
+  {
+   "path": "bot-cua-toi-13/bang-chung/so-hanh-vi/luot-20261023/b13-delay-r1.log",
+   "sha256": "17a7687d3f8d914318b31f85dbe83db749047019a6f61986f760df9987b0a66e",
+   "bytes": 59167,
+   "trang_thai": "moi"
+  },
+  {
+   "path": "bot-cua-toi-13/bang-chung/so-hanh-vi/luot-20261023/b13-delay-r1.terminal.log",
+   "sha256": "ca79ec269cfa106f431f1ac49ce97c3f11ef5cd9629ae0bea6b09dde354404ed",
+   "bytes": 1765,
+   "trang_thai": "moi"
+  },
+  {
+   "path": "bot-cua-toi-13/bang-chung/so-hanh-vi/luot-20261023/b13-delay-r2.htm",
+   "sha256": "308e6957b44dadd987b03f323cefb787692739fab19a4389d14531fd2bdac88e",
+   "bytes": 70788,
+   "trang_thai": "moi"
+  },
+  {
+   "path": "bot-cua-toi-13/bang-chung/so-hanh-vi/luot-20261023/b13-delay-r2.log",
+   "sha256": "9eb716a556dab22269ea3ecee5bb94179ee29c870526dc2d0d5945194d1cc4b8",
+   "bytes": 60255,
+   "trang_thai": "moi"
+  },
+  {
+   "path": "bot-cua-toi-13/bang-chung/so-hanh-vi/luot-20261023/b13-delay-r2.terminal.log",
+   "sha256": "35af839a03cfafa4d69be7009ecbea2d7b6138ca0c6b69173f450e015694652b",
+   "bytes": 1765,
+   "trang_thai": "moi"
+  },
+  {
+   "path": "bot-cua-toi-13/bang-chung/so-hanh-vi/luot-20261023/b13-ticks1-r1.htm",
+   "sha256": "dae867f5849c3f685f3b7839c7876f8b9c9d34081c60f63f1a05cb7f035c1adb",
+   "bytes": 50806,
+   "trang_thai": "moi"
+  },
+  {
+   "path": "bot-cua-toi-13/bang-chung/so-hanh-vi/luot-20261023/b13-ticks1-r1.log",
+   "sha256": "cbd4f19cfe03d74aaa3013e848245a65f852bfcc785148bbadf914c23bb5d8d9",
+   "bytes": 163119,
+   "trang_thai": "moi"
+  },
+  {
+   "path": "bot-cua-toi-13/bang-chung/so-hanh-vi/luot-20261023/b13-ticks1-r1.terminal.log",
+   "sha256": "47cf29f4f1fcb1f6093b6908a6ac12191756be48fe6546d36ea6719426349f06",
+   "bytes": 1767,
+   "trang_thai": "moi"
+  },
+  {
+   "path": "bot-cua-toi-13/bang-chung/so-hanh-vi/luot-20261023/b13-ticks1-r2.htm",
+   "sha256": "af17c96c6a548029bd08d0ca334b9175e2a38ba1264b9ea359ea54ec166b339f",
+   "bytes": 53804,
+   "trang_thai": "moi"
+  },
+  {
+   "path": "bot-cua-toi-13/bang-chung/so-hanh-vi/luot-20261023/b13-ticks1-r2.log",
+   "sha256": "0781190ac05f202057172b9de80e9407c9fbc63c0c89c515f3553c26590d9a67",
+   "bytes": 164602,
+   "trang_thai": "moi"
+  },
+  {
+   "path": "bot-cua-toi-13/bang-chung/so-hanh-vi/luot-20261023/b13-ticks1-r2.terminal.log",
+   "sha256": "3f92176edaed68f2a5fefc481c86f58545d905d9775ba44b75beebeaa7bfeda3",
+   "bytes": 2096,
+   "trang_thai": "moi"
+  },
+  {
+   "path": "bot-cua-toi-13/bang-chung/so-hanh-vi/luot-20261023/b13-ticks2-r1.htm",
+   "sha256": "5e0d3568bc27aa159c6b5e5504703f03425a2521c14885bedbfbc85830b3a73c",
+   "bytes": 39640,
+   "trang_thai": "moi"
+  },
+  {
+   "path": "bot-cua-toi-13/bang-chung/so-hanh-vi/luot-20261023/b13-ticks2-r1.log",
+   "sha256": "8b008e7618019657a5cb79759e5f8eb82b1be032d8d1a68de713464b32454004",
+   "bytes": 58280,
+   "trang_thai": "moi"
+  },
+  {
+   "path": "bot-cua-toi-13/bang-chung/so-hanh-vi/luot-20261023/b13-ticks2-r1.terminal.log",
+   "sha256": "b171857a382f07e3a072d370f148fa96ff75c2b6b8fb6cf2f48ba55d9eee7e34",
+   "bytes": 1767,
+   "trang_thai": "moi"
+  },
+  {
+   "path": "bot-cua-toi-13/bang-chung/so-hanh-vi/luot-20261023/b13-ticks2-r2.htm",
+   "sha256": "254b26937bdbe58eb69e95d08a4ad1cc4429a5b179c40929bb19c82f646ed10e",
+   "bytes": 42638,
+   "trang_thai": "moi"
+  },
+  {
+   "path": "bot-cua-toi-13/bang-chung/so-hanh-vi/luot-20261023/b13-ticks2-r2.log",
+   "sha256": "b4a8273dfd21875359a87566d29ac5d2991dd1dd5de30106f06eb3ac448dea80",
+   "bytes": 59368,
+   "trang_thai": "moi"
+  },
+  {
+   "path": "bot-cua-toi-13/bang-chung/so-hanh-vi/luot-20261023/b13-ticks2-r2.terminal.log",
+   "sha256": "7dd653b37e521ffee8df4d3ed2cdfd0f25188f8fabdd5b445db884f8e2652e44",
+   "bytes": 1767,
+   "trang_thai": "moi"
+  },
+  {
+   "path": "bot-cua-toi-13/bang-chung/so-hanh-vi/luot-20261023/goc-broker1-r1.htm",
+   "sha256": "2fc019987d1300e5dba594d5ceb621d5a89d29ff16f212f5fa3e507b55f76381",
+   "bytes": 51800,
+   "trang_thai": "moi"
+  },
+  {
+   "path": "bot-cua-toi-13/bang-chung/so-hanh-vi/luot-20261023/goc-broker1-r1.log",
+   "sha256": "235309b8c8a3313d696d1ad153e78a45d20e105eb491d0dad43ae88fadca8166",
+   "bytes": 45439,
+   "trang_thai": "moi"
+  },
+  {
+   "path": "bot-cua-toi-13/bang-chung/so-hanh-vi/luot-20261023/goc-broker1-r1.terminal.log",
+   "sha256": "a99c98a351a41923307c3286d04b9e4dad9c8e9fc04b5ee5bb9c5f950f3c19ad",
+   "bytes": 1769,
+   "trang_thai": "moi"
+  },
+  {
+   "path": "bot-cua-toi-13/bang-chung/so-hanh-vi/luot-20261023/goc-dai1-r1.htm",
+   "sha256": "f4120e33c3e38f19e044b15c52a7322b994a0ec42d3806282cb490ebf5853779",
+   "bytes": 681088,
+   "trang_thai": "moi"
+  },
+  {
+   "path": "bot-cua-toi-13/bang-chung/so-hanh-vi/luot-20261023/goc-dai1-r1.log",
+   "sha256": "be77c8c90ed9288b7603697774658966a0b8bc48442f397cd31b91cacbdd4bcb",
+   "bytes": 1227757,
+   "trang_thai": "moi"
+  },
+  {
+   "path": "bot-cua-toi-13/bang-chung/so-hanh-vi/luot-20261023/goc-dai1-r1.terminal.log",
+   "sha256": "82d658c1380baaebdd33e33a26e835297a4fd8479cc611be0a71185c5d51a03f",
+   "bytes": 1763,
+   "trang_thai": "moi"
+  },
+  {
+   "path": "bot-cua-toi-13/bang-chung/so-hanh-vi/luot-20261023/goc-dai2-r1.htm",
+   "sha256": "4c1cd9841394c9d2fd5f108f1cc6fb8779679a30a8afc39b8915ec76f2d05322",
+   "bytes": 940330,
+   "trang_thai": "moi"
+  },
+  {
+   "path": "bot-cua-toi-13/bang-chung/so-hanh-vi/luot-20261023/goc-dai2-r1.log",
+   "sha256": "7c02de2dee71067a6c13ef634bf0a62cade29003c74fdda95e164c79befdfb44",
+   "bytes": 1635900,
+   "trang_thai": "moi"
+  },
+  {
+   "path": "bot-cua-toi-13/bang-chung/so-hanh-vi/luot-20261023/goc-dai2-r1.terminal.log",
+   "sha256": "a58882940f9e11afadc53d3aa902efd4b832a1d1ba981703a14e018fbd24b18c",
+   "bytes": 1763,
+   "trang_thai": "moi"
+  },
+  {
+   "path": "bot-cua-toi-13/bang-chung/so-hanh-vi/luot-20261023/goc-dai3-r1.htm",
+   "sha256": "357d2f6de318ba1992a70482afb751f5d06b37a62605b7ce1254e2ac977b5419",
+   "bytes": 574144,
+   "trang_thai": "moi"
+  },
+  {
+   "path": "bot-cua-toi-13/bang-chung/so-hanh-vi/luot-20261023/goc-dai3-r1.log",
+   "sha256": "3a4a3077398b69e49fe8cf76cbc90d6b412d9268ecb8fc69168afc0dac63c626",
+   "bytes": 904863,
+   "trang_thai": "moi"
+  },
+  {
+   "path": "bot-cua-toi-13/bang-chung/so-hanh-vi/luot-20261023/goc-dai3-r1.terminal.log",
+   "sha256": "f94fb69419a1efe0cc33413983441daa20763bdb849da4775925c1f77ccb3087",
+   "bytes": 1763,
+   "trang_thai": "moi"
+  },
+  {
+   "path": "bot-cua-toi-13/bang-chung/so-hanh-vi/luot-20261023/goc-delay-r1.htm",
+   "sha256": "06087bc3ad6df109123341d6d559d0025e1a546d24196a9509aad36186554b35",
+   "bytes": 70796,
+   "trang_thai": "moi"
+  },
+  {
+   "path": "bot-cua-toi-13/bang-chung/so-hanh-vi/luot-20261023/goc-delay-r1.log",
+   "sha256": "5bf003beea566f12d146f56de79613093529c1af6c44032c93af2d427390b800",
+   "bytes": 60651,
+   "trang_thai": "moi"
+  },
+  {
+   "path": "bot-cua-toi-13/bang-chung/so-hanh-vi/luot-20261023/goc-delay-r1.terminal.log",
+   "sha256": "984513541ab96ef6e0e2da22db1121c1410c620d3552a6ddba6726ec5c5e920b",
+   "bytes": 1765,
+   "trang_thai": "moi"
+  },
+  {
+   "path": "bot-cua-toi-13/bang-chung/so-hanh-vi/luot-20261023/goc-ticks1-r1.htm",
+   "sha256": "1993fa33688cce1953d47b9023ed21e9f6b27ebf808cacfca57b896d4eca7dc8",
+   "bytes": 53812,
+   "trang_thai": "moi"
+  },
+  {
+   "path": "bot-cua-toi-13/bang-chung/so-hanh-vi/luot-20261023/goc-ticks1-r1.log",
+   "sha256": "109bceb813f5806a60b988b8f6e834538e67eb56b64c85e974a0a6bd23bd3124",
+   "bytes": 165517,
+   "trang_thai": "moi"
+  },
+  {
+   "path": "bot-cua-toi-13/bang-chung/so-hanh-vi/luot-20261023/goc-ticks1-r1.terminal.log",
+   "sha256": "ff136d642341e9bc9222e721a6a747890b6ce50a82313a23cab5dd6c3a264ca1",
+   "bytes": 1767,
+   "trang_thai": "moi"
+  },
+  {
+   "path": "bot-cua-toi-13/bang-chung/so-hanh-vi/luot-20261023/goc-ticks2-r1.htm",
+   "sha256": "64737068502a21f03890d9e330a6a9a5a4e1c808d3285ce858abc2a17aa9ab80",
+   "bytes": 42646,
+   "trang_thai": "moi"
+  },
+  {
+   "path": "bot-cua-toi-13/bang-chung/so-hanh-vi/luot-20261023/goc-ticks2-r1.log",
+   "sha256": "a74aa96be459bdd03d3c65608f82721b2da535985bc457d5d5be441f90bc6daa",
+   "bytes": 59972,
+   "trang_thai": "moi"
+  },
+  {
+   "path": "bot-cua-toi-13/bang-chung/so-hanh-vi/luot-20261023/goc-ticks2-r1.terminal.log",
+   "sha256": "84acc1747d7ade1505a6d4c974446447bf6ffa78555954741411caa96b8fcb83",
+   "bytes": 1767,
+   "trang_thai": "moi"
+  },
+  {
+   "path": "bot-cua-toi-13/bang-chung/so-hanh-vi/luot-20261023/jobs-mo-rong.json",
+   "sha256": "7469021580f5acde26131627808c669fe8d9c09ae921b58c63090208d66162d2",
+   "bytes": 5971,
+   "trang_thai": "moi"
+  },
+  {
+   "path": "bot-cua-toi-13/bang-chung/so-hanh-vi/luot-20261023/jobs-r2.json",
+   "sha256": "a3bd1117228ff230d7ba487cb441bdf55dd80c3137313e9b23629929896cbee0",
+   "bytes": 4385,
+   "trang_thai": "moi"
+  },
+  {
+   "path": "bot-cua-toi-13/bang-chung/so-hanh-vi/luot-20261023/jobs.json",
+   "sha256": "d708dc6e852bffffb90f978371de1e40febe0e051d44ad7884fa19d588dad24d",
+   "bytes": 8269,
+   "trang_thai": "moi"
+  },
+  {
+   "path": "bot-cua-toi-13/bang-chung/so-hanh-vi/luot-20261023/ket-qua-chay.jsonl",
+   "sha256": "4cd3b762e42a52a76259e6b5e85641640037868b70b68ca80ab10086ae11d614",
+   "bytes": 41004,
+   "trang_thai": "moi"
+  },
+  {
+   "path": "bot-cua-toi-13/bang-chung/so-hanh-vi/luot-20261023/lan-thu-loi-tai-khoan/goc-ticks2-r1.log",
+   "sha256": "591a6808797d3436abf3909386e6e5afce181ca1a1ab7c1e1d891e3022a3cc99",
+   "bytes": 225,
+   "trang_thai": "moi"
+  },
+  {
+   "path": "bot-cua-toi-13/bang-chung/so-hanh-vi/luot-20261023/lan-thu-loi-tai-khoan/ket-qua-chay.jsonl",
+   "sha256": "74c2d8b393084c33a37178aa8f89dc2bf0de421efcd7aea725672df0a29c3d5c",
+   "bytes": 1809,
+   "trang_thai": "moi"
+  },
+  {
+   "path": "bot-cua-toi-13/bang-chung/so-hanh-vi/luot-20261023/so-sanh/broker1-bao-cao-r2.json",
+   "sha256": "dfe4300d78346869e293bfe1bbfeadab2fc664708a9ca95dc6efafdc9bd699ba",
+   "bytes": 1935,
+   "trang_thai": "moi"
+  },
+  {
+   "path": "bot-cua-toi-13/bang-chung/so-hanh-vi/luot-20261023/so-sanh/broker1-bao-cao.json",
+   "sha256": "5e0309e3be8f16de8f1f06c34bae79c2e070a9ccc4287d5d7ad57a8d9d0ac614",
+   "bytes": 1532,
+   "trang_thai": "moi"
+  },
+  {
+   "path": "bot-cua-toi-13/bang-chung/so-hanh-vi/luot-20261023/so-sanh/broker1-goc-cu-vs-goc-moi.json",
+   "sha256": "6f8c4f3fe3cd301ca56ac56e060dc498831950a2dd7b51c43fe66e6d24bea9b4",
+   "bytes": 839,
+   "trang_thai": "moi"
+  },
+  {
+   "path": "bot-cua-toi-13/bang-chung/so-hanh-vi/luot-20261023/so-sanh/broker1-goc-vs-dung-lai-r2.json",
+   "sha256": "824d81ef62910905d2a50cfe582f69bf5b4b34f295fae3ee36be0cc7bf74c809",
+   "bytes": 912,
+   "trang_thai": "moi"
+  },
+  {
+   "path": "bot-cua-toi-13/bang-chung/so-hanh-vi/luot-20261023/so-sanh/broker1-goc-vs-dung-lai.json",
+   "sha256": "da6513be33ddfb8b85417f668875b4b536d79a9e2313b410a680b582123d294c",
+   "bytes": 843,
+   "trang_thai": "moi"
+  },
+  {
+   "path": "bot-cua-toi-13/bang-chung/so-hanh-vi/luot-20261023/so-sanh/dai1-bao-cao.json",
+   "sha256": "ce246dc15223fb9b56602ebe9ad93914783ac65b20d5bf1222d61b84f5dd14f2",
+   "bytes": 1933,
+   "trang_thai": "moi"
+  },
+  {
+   "path": "bot-cua-toi-13/bang-chung/so-hanh-vi/luot-20261023/so-sanh/dai1-goc-vs-dung-lai.json",
+   "sha256": "7d6c6f173e29d9c99888bb67250e25e848f19e8b6e28b3e3a7fe1fe5e06ec1e2",
+   "bytes": 1022,
+   "trang_thai": "moi"
+  },
+  {
+   "path": "bot-cua-toi-13/bang-chung/so-hanh-vi/luot-20261023/so-sanh/dai2-bao-cao.json",
+   "sha256": "e8abde7bdde34aaffd0fa9f8e3d1a1ba0910176815420b2739ff0210801113a8",
+   "bytes": 1933,
+   "trang_thai": "moi"
+  },
+  {
+   "path": "bot-cua-toi-13/bang-chung/so-hanh-vi/luot-20261023/so-sanh/dai2-goc-vs-dung-lai.json",
+   "sha256": "d5e7510f172e9607d3fe2f06c2a94adffa707766e7232d41c0f9e4833180604a",
+   "bytes": 990,
+   "trang_thai": "moi"
+  },
+  {
+   "path": "bot-cua-toi-13/bang-chung/so-hanh-vi/luot-20261023/so-sanh/dai3-bao-cao.json",
+   "sha256": "4187b0404a2425d3f34e509dd94bc7fad8187c5cc3b0d954fa7f37ab337b2ec9",
+   "bytes": 1933,
+   "trang_thai": "moi"
+  },
+  {
+   "path": "bot-cua-toi-13/bang-chung/so-hanh-vi/luot-20261023/so-sanh/dai3-goc-vs-dung-lai.json",
+   "sha256": "6cf0672131618e54d2005bc856bae7dafca152cf28a8f1cf124d48a66a36e21c",
+   "bytes": 982,
+   "trang_thai": "moi"
+  },
+  {
+   "path": "bot-cua-toi-13/bang-chung/so-hanh-vi/luot-20261023/so-sanh/delay-bao-cao-r2.json",
+   "sha256": "ed8e0e4db58ff333e46dc1108d568b9fb2274f56f444e190afa8325d44ced2c1",
+   "bytes": 1933,
+   "trang_thai": "moi"
+  },
+  {
+   "path": "bot-cua-toi-13/bang-chung/so-hanh-vi/luot-20261023/so-sanh/delay-bao-cao.json",
+   "sha256": "677dbf21c23a765392ba73609830d744a8984c08806aa8828a8022f34919543c",
+   "bytes": 1538,
+   "trang_thai": "moi"
+  },
+  {
+   "path": "bot-cua-toi-13/bang-chung/so-hanh-vi/luot-20261023/so-sanh/delay-goc-cu-vs-goc-moi.json",
+   "sha256": "7d5d97ca079b11b2651d654859bf890a73986a6a921761a820e083a7ecdacb1b",
+   "bytes": 861,
+   "trang_thai": "moi"
+  },
+  {
+   "path": "bot-cua-toi-13/bang-chung/so-hanh-vi/luot-20261023/so-sanh/delay-goc-vs-dung-lai-r2.json",
+   "sha256": "d35667efda0296c2a3938e1cb9eef1db37dd1c4f11e1afaf07117f1e199ecd48",
+   "bytes": 939,
+   "trang_thai": "moi"
+  },
+  {
+   "path": "bot-cua-toi-13/bang-chung/so-hanh-vi/luot-20261023/so-sanh/delay-goc-vs-dung-lai.json",
+   "sha256": "6355fd50c899696537b7e3a69d7c2e4c5950047ae39b7154b54f4028c49b41d7",
+   "bytes": 870,
+   "trang_thai": "moi"
+  },
+  {
+   "path": "bot-cua-toi-13/bang-chung/so-hanh-vi/luot-20261023/so-sanh/ticks1-bao-cao-r2.json",
+   "sha256": "16655ffbd504bb266628675a8ae788513028c9907e55a4ea086fef6083f94f4d",
+   "bytes": 1934,
+   "trang_thai": "moi"
+  },
+  {
+   "path": "bot-cua-toi-13/bang-chung/so-hanh-vi/luot-20261023/so-sanh/ticks1-bao-cao.json",
+   "sha256": "01958e7e779af41e347a19cfa247984a96fe7920952b3dc0b2174922feba8cfd",
+   "bytes": 1539,
+   "trang_thai": "moi"
+  },
+  {
+   "path": "bot-cua-toi-13/bang-chung/so-hanh-vi/luot-20261023/so-sanh/ticks1-goc-cu-vs-goc-moi.json",
+   "sha256": "97c3ee1eccc36df3a637071cb32692c4c11426ecb3d3fad6453ad356c8fc67ab",
+   "bytes": 946,
+   "trang_thai": "moi"
+  },
+  {
+   "path": "bot-cua-toi-13/bang-chung/so-hanh-vi/luot-20261023/so-sanh/ticks1-goc-vs-dung-lai-r2.json",
+   "sha256": "56a071a2fe068f347dbc4d54cadfd3e1d96f580961c3249fe06fb18ed3679d71",
+   "bytes": 1019,
+   "trang_thai": "moi"
+  },
+  {
+   "path": "bot-cua-toi-13/bang-chung/so-hanh-vi/luot-20261023/so-sanh/ticks1-goc-vs-dung-lai.json",
+   "sha256": "ed95be44807dfec9c658867d053c14ef72a117356484ba75057f173fef3b64f5",
+   "bytes": 918,
+   "trang_thai": "moi"
+  },
+  {
+   "path": "bot-cua-toi-13/bang-chung/so-hanh-vi/luot-20261023/so-sanh/ticks2-bao-cao-r2.json",
+   "sha256": "3b19e552d13fbe862968d3b362117c2a5a8a2e9feaf95ddbaf2b4630368d459a",
+   "bytes": 1934,
+   "trang_thai": "moi"
+  },
+  {
+   "path": "bot-cua-toi-13/bang-chung/so-hanh-vi/luot-20261023/so-sanh/ticks2-bao-cao.json",
+   "sha256": "0b63a0b03273b4448df99fdc1bc281459da2d90dec8e8c3b14df406843efdfd1",
+   "bytes": 1539,
+   "trang_thai": "moi"
+  },
+  {
+   "path": "bot-cua-toi-13/bang-chung/so-hanh-vi/luot-20261023/so-sanh/ticks2-goc-cu-vs-goc-moi.json",
+   "sha256": "8a9e81294eb0ef1c8cf2bcbb37796b1fdedd5f695b016e2a56ac80763503fd3f",
+   "bytes": 942,
+   "trang_thai": "moi"
+  },
+  {
+   "path": "bot-cua-toi-13/bang-chung/so-hanh-vi/luot-20261023/so-sanh/ticks2-goc-vs-dung-lai-r2.json",
+   "sha256": "688ec9140ec79d005fdbfbc3f4b953ddbf1c7180f6314d819abe30876fccd62f",
+   "bytes": 1015,
+   "trang_thai": "moi"
+  },
+  {
+   "path": "bot-cua-toi-13/bang-chung/so-hanh-vi/luot-20261023/so-sanh/ticks2-goc-vs-dung-lai.json",
+   "sha256": "11c7e0594fc63d73c7e7d84fce73f64f68f34a9a5bd3d7520d8cc3172757aef0",
+   "bytes": 946,
+   "trang_thai": "moi"
+  },
+  {
+   "path": "bot-cua-toi-13/bang-chung/so-hanh-vi/luot-20261023/tong-hop.json",
+   "sha256": "493bdd5e1b7775687afe0f195e8b5aa64ce1876caa8d4ae15736eb9ca32ced45",
+   "bytes": 10309,
+   "trang_thai": "moi"
+  },
+  {
+   "path": "bot-cua-toi-13/bang-chung/thay-doi-nguon-sau-khoi-phuc.diff",
+   "sha256": "31491ec619dcb8bd3789922addd3fd339f364359529d5307dfdc7104800d273f",
+   "bytes": 3547,
+   "trang_thai": "moi"
+  },
+  {
+   "path": "bot-cua-toi-13/kiem-tra/kiem-khoi-luong-ngoai-may-thu.py",
+   "sha256": "0f0e3c9616570738df9866984280e71786cacbd6d5b597c5ade11b5dee79103e",
+   "bytes": 27943,
+   "trang_thai": "moi"
+  },
+  {
+   "path": "bot-cua-toi-13/README.md",
+   "sha256": "a2671d9ec62e3e3370146546d22388e67604339a6fd64f2da88cbaf652de602c",
+   "bytes": 2790,
+   "trang_thai": "moi"
+  },
+  {
+   "path": "bot-cua-toi-13/source/MQL5/Experts/bot-cua-toi-13/bot-cua-toi-13.mq5",
+   "sha256": "aa6df7a2066ebf3a7eec18fa4ed463326537e9d236a9659f059e968ecde1c41a",
+   "bytes": 25493,
+   "trang_thai": "da-sua-sau-khoi-phuc"
+  },
+  {
+   "path": "bot-cua-toi-13/source/MQL5/Include/bot-cua-toi-13/Bot13LiveVolume.mqh",
+   "sha256": "35f32de02be2775a6bbae58023e07daf66a9719cfd1dfdf110b9ab51e8b78310",
+   "bytes": 4963,
+   "trang_thai": "moi"
+  },
+  {
+   "path": "bot-cua-toi-13/source/MQL5/Scripts/bot-cua-toi-13/Bot13LiveVolumeCheck.mq5",
+   "sha256": "6ccf2b0e93c4cf6cb6143929e8ca85b6023a7186480615d1c200709364b7ff46",
+   "bytes": 6598,
+   "trang_thai": "moi"
+  },
+  {
+   "path": "cong-cu/bien-dich.ps1",
+   "sha256": "33827454ece241516ed947e9bdb094c739ee40159fcf40f86a41914c3879db73",
+   "bytes": 4971,
+   "trang_thai": "moi"
+  },
+  {
+   "path": "cong-cu/chay-may-thu.py",
+   "sha256": "0cdf2fc5070e4f406a2f42c3e3eac972a0f00dca6777d0f042a0a0dffba6ac2d",
+   "bytes": 8313,
+   "trang_thai": "moi"
+  },
+  {
+   "path": "cong-cu/khoi-phuc-tu-git.py",
+   "sha256": "15ca671c005907132f610cc91c8f3d04806da38a9310668ec568e13dd770898e",
+   "bytes": 12824,
+   "trang_thai": "moi"
+  },
+  {
+   "path": "cong-cu/so-bao-cao-mt5.py",
+   "sha256": "cc909cd4d599a19cfcd3f52bcd7b2030e49650f97959d883ecde50a6f782dbad",
+   "bytes": 3996,
+   "trang_thai": "moi"
+  },
+  {
+   "path": "cong-cu/so-nhat-ky-may-thu.py",
+   "sha256": "e33b93becab93f691bdb8e0171d0a46a70cd15f8f3c95cc9e17e04d6514db087",
+   "bytes": 5052,
+   "trang_thai": "moi"
+  }
+ ]
+}

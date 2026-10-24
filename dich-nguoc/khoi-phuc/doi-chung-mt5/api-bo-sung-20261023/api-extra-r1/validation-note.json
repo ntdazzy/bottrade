@@ -1,0 +1,10 @@
+{
+  "verification_passed": false,
+  "error": "UNEXPECTED_PROBE_FUNCTION_EXECUTED",
+  "observed_markers": [
+    "Anchor",
+    "Anchor"
+  ],
+  "cause": "The same tester journal is retained from the agent and terminal forwarding; exact list length was an invalid assertion. No other wrapper was executed.",
+  "next_check": "Allow repeated Anchor records; reject any other marker."
+}

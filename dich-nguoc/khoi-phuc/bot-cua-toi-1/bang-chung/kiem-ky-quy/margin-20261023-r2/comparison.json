@@ -1,0 +1,31 @@
+{
+  "cases": 1141,
+  "matched": 1141,
+  "failed": 0,
+  "passed": true,
+  "groups": {
+    "mixed": {
+      "cases": 500,
+      "matched": 500
+    },
+    "funds-boundary": {
+      "cases": 405,
+      "matched": 405
+    },
+    "margin-boundary": {
+      "cases": 200,
+      "matched": 200
+    },
+    "non-finite": {
+      "cases": 36,
+      "matched": 36
+    }
+  },
+  "first_failures": [],
+  "hashes": {
+    "cases.bin": "fd9382f17cf3792ad679c08c4329617e4c7e953de67c3fe967c69f7c9067c5f2",
+    "original-results.bin": "39806aaec759663d6bef2170df4f9e522b513e6190f7f50e6d1d355113754811",
+    "mql5-results.bin": "39806aaec759663d6bef2170df4f9e522b513e6190f7f50e6d1d355113754811"
+  },
+  "scope": "Compare guarded/direct margin checks, supplied terminal data, no orders sent.\n\npython -I -B -X utf8 kiem-ky-quy-bot-1-3.py prepare|original|mql5|compare BOT RUN\nCompare return bool and ordered account/tick/margin call arguments. Message text\nexcluded; runtime division faults map to false. Tick bytes supplied even on failed read.\n"
+}

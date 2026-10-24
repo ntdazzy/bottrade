@@ -1,0 +1,163 @@
+{
+  "bot": 1,
+  "profiles_matched": 8,
+  "fields_per_profile": 6,
+  "profiles": [
+    {
+      "index": 0,
+      "immediate_load_rvas": [
+        "0x12424",
+        "0x1242e",
+        "0x12438",
+        "0x12442",
+        "0x1244c",
+        "0x12456"
+      ],
+      "reaching_constant_definition_rvas": [],
+      "start_rva": "0x12469",
+      "end_rva_exclusive": "0x12514",
+      "values": {
+        "confirm_tf": 16408,
+        "entry_h1": 1,
+        "older": 4,
+        "recent": 2,
+        "scan": 160,
+        "gap": 150.0
+      },
+      "matched": true
+    },
+    {
+      "index": 1,
+      "immediate_load_rvas": [],
+      "reaching_constant_definition_rvas": [],
+      "start_rva": "0x12fd5",
+      "end_rva_exclusive": "0x13080",
+      "values": {
+        "confirm_tf": 16388,
+        "entry_h1": 1,
+        "older": 8,
+        "recent": 10,
+        "scan": 150,
+        "gap": 600.0
+      },
+      "matched": true
+    },
+    {
+      "index": 2,
+      "immediate_load_rvas": [
+        "0x138bc",
+        "0x138c6"
+      ],
+      "reaching_constant_definition_rvas": [],
+      "start_rva": "0x138d9",
+      "end_rva_exclusive": "0x1397c",
+      "values": {
+        "confirm_tf": 16408,
+        "entry_h1": 1,
+        "older": 18,
+        "recent": 3,
+        "scan": 180,
+        "gap": 900.0
+      },
+      "matched": true
+    },
+    {
+      "index": 3,
+      "immediate_load_rvas": [
+        "0x140f1"
+      ],
+      "reaching_constant_definition_rvas": [
+        "0x138c6",
+        "0x1408c",
+        "0x140b2"
+      ],
+      "start_rva": "0x14104",
+      "end_rva_exclusive": "0x141a7",
+      "values": {
+        "confirm_tf": 16408,
+        "entry_h1": 1,
+        "older": 4,
+        "recent": 2,
+        "scan": 240,
+        "gap": 900.0
+      },
+      "matched": true
+    },
+    {
+      "index": 4,
+      "immediate_load_rvas": [
+        "0x147e1",
+        "0x147eb"
+      ],
+      "reaching_constant_definition_rvas": [],
+      "start_rva": "0x147fe",
+      "end_rva_exclusive": "0x148a9",
+      "values": {
+        "confirm_tf": 16408,
+        "entry_h1": 1,
+        "older": 15,
+        "recent": 3,
+        "scan": 230,
+        "gap": 550.0
+      },
+      "matched": true
+    },
+    {
+      "index": 5,
+      "immediate_load_rvas": [
+        "0x14f16"
+      ],
+      "reaching_constant_definition_rvas": [],
+      "start_rva": "0x14f29",
+      "end_rva_exclusive": "0x14fd4",
+      "values": {
+        "confirm_tf": 16408,
+        "entry_h1": 1,
+        "older": 12,
+        "recent": 2,
+        "scan": 50,
+        "gap": 700.0
+      },
+      "matched": true
+    },
+    {
+      "index": 6,
+      "immediate_load_rvas": [
+        "0x1580e"
+      ],
+      "reaching_constant_definition_rvas": [],
+      "start_rva": "0x15821",
+      "end_rva_exclusive": "0x158cc",
+      "values": {
+        "confirm_tf": 16408,
+        "entry_h1": 1,
+        "older": 17,
+        "recent": 2,
+        "scan": 110,
+        "gap": 150.0
+      },
+      "matched": true
+    },
+    {
+      "index": 7,
+      "immediate_load_rvas": [
+        "0x15eee"
+      ],
+      "reaching_constant_definition_rvas": [],
+      "start_rva": "0x15f01",
+      "end_rva_exclusive": "0x15fac",
+      "values": {
+        "confirm_tf": 16408,
+        "entry_h1": 1,
+        "older": 7,
+        "recent": 2,
+        "scan": 20,
+        "gap": 250.0
+      },
+      "matched": true
+    }
+  ],
+  "code_sha256": "e099f124084093c3fdc8651d5f5326709b165248982e5d4eb7394afcbb8177a4",
+  "data_sha256": "2ad9ad0ea90a8f8df88170348a71a070d475174122c9eae7df8deb1fb32c61f4",
+  "scope": "Straight-line native parameter assignments only; no terminal API calls; not strategy enable/frequency/scaling or complete entry behavior."
+}

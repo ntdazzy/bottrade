@@ -1,0 +1,487 @@
+{
+  "modified": [
+    {
+      "path": "dich-nguoc\\khoi-phuc\\KET-QUA.md",
+      "sha256": "6b512d8d58f58a1d5cc7638c7814d387af1cd8189b7c2998bb1dcf32fd548fbc"
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\PHAN-TICH-BOT-1-3.md",
+      "sha256": "9d399cc060eff1b3cba0d6188ae049da863d91a0db90e4c8c2c6b01924a21114"
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-1\\README.md",
+      "sha256": "768d1577ff4ced8bb66a07c1fe51653a85fe308479c4d8fa16f7a395680d4165"
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-3\\README.md",
+      "sha256": "f1ee76c6116b767d1e47a4510ba8bff8d99a75445a583bfbd735e6d2ca810892"
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\cong-cu\\BOT-1-3.md",
+      "sha256": "1fc9376bbf792a0c119392320a789913669336b41ef77fecf3162ac9f84f62c0"
+    }
+  ],
+  "added": [
+    {
+      "path": "dich-nguoc\\khoi-phuc\\KIEM-CHUNG-VAO-LENH-BOT-1-3.json",
+      "sha256": "01baad4ef98477798b387ad6bb9bab62db87139bc24ebe25d51b2edaf8a2a2b1",
+      "bytes": 3193
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\PHAN-TICH-VAO-LENH-BOT-1-3.md",
+      "sha256": "90ff65b1e74370f1b2acc7d53e833e26ebd177d3e70111b83c17146a53cf1093",
+      "bytes": 7980
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\cong-cu\\kiem-gia-vao-bot-1-3.py",
+      "sha256": "22394e48932feb7242b967aa58e327d2990402f12bfe52621916f64914c9dac2",
+      "bytes": 18604
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\cong-cu\\kiem-tham-so-goc-bot-1-3.py",
+      "sha256": "629747fc262f654415205efefe776c398a33822a2c4d6997e31ccba0f0ed8326",
+      "bytes": 10731
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-3\\source\\MQL5\\Scripts\\bot-cua-toi-3\\Bot3EntryLevelsCheck.mq5",
+      "sha256": "57cb5168621662beedfde2925c4c87bfbd2215022198af73cd410e10c97f7498",
+      "bytes": 6831
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-3\\source\\MQL5\\Include\\bot-cua-toi-3\\Bot3EntryLevels.mqh",
+      "sha256": "a5b5e7ad4db5960682dc409c1e7d498479dad843e281e48c95a4745ad0cb5ad1",
+      "bytes": 3918
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-3\\source\\MQL5\\Include\\bot-cua-toi-3\\Bot3EntryProfiles.mqh",
+      "sha256": "f14b566f8ce4be30adfad19f2269691b069e13eee1d7bcf3ee642866251062a5",
+      "bytes": 1185
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-3\\phan-tich\\luot-20261023-data\\kiem-tham-so-goc.json",
+      "sha256": "87c3eb428d1315576479e3d2dedb1e5a2af36e854496c93331e5099342249317",
+      "bytes": 3851
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-3\\phan-tich\\luot-20261023-data\\noi-tham-so-muc-gia.json",
+      "sha256": "a8852f84690298f42d16822999aa380d2875323c4321267b6253193543f91c7b",
+      "bytes": 12729
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-3\\bang-chung\\kiem-gia-vao\\entry-20261023-r1\\cases.bin",
+      "sha256": "1422f48359da179556e02cd2a236a539dfaab97cc4839978a1f7c41f1c026cdc",
+      "bytes": 764202
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-3\\bang-chung\\kiem-gia-vao\\entry-20261023-r1\\cases.json",
+      "sha256": "241898ab6ecf2cc66fcb7f4de166c39de0eae985c14f0ec49e7da08d6b599555",
+      "bytes": 1646038
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-3\\bang-chung\\kiem-gia-vao\\entry-20261023-r1\\comparison.json",
+      "sha256": "06658aaae918f5cc5a151a65f7e70ca858e62d31d46170256dac36908f4b3f64",
+      "bytes": 871
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-3\\bang-chung\\kiem-gia-vao\\entry-20261023-r1\\mql5-results.bin",
+      "sha256": "7ec90943fb8e87e505b1a943ba03eb57a687d9a756afec53016a0b31df59672d",
+      "bytes": 35116
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-3\\bang-chung\\kiem-gia-vao\\entry-20261023-r1\\mql5-run.json",
+      "sha256": "140a5e91e0ae07cc58d5e5249d5de47bfce6309b80f3a05170b5cf5035e69fe4",
+      "bytes": 311
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-3\\bang-chung\\kiem-gia-vao\\entry-20261023-r1\\original-results.bin",
+      "sha256": "7ec90943fb8e87e505b1a943ba03eb57a687d9a756afec53016a0b31df59672d",
+      "bytes": 35116
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-3\\bang-chung\\kiem-gia-vao\\entry-20261023-r1\\original-run.json",
+      "sha256": "0d7480dfc7e2e3085ca23edc33b659eca4f9f988bf1f2104450cadb80f4c232d",
+      "bytes": 829
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-3\\bang-chung\\kiem-gia-vao\\entry-20261023-r2\\cases.bin",
+      "sha256": "1422f48359da179556e02cd2a236a539dfaab97cc4839978a1f7c41f1c026cdc",
+      "bytes": 764202
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-3\\bang-chung\\kiem-gia-vao\\entry-20261023-r2\\cases.json",
+      "sha256": "241898ab6ecf2cc66fcb7f4de166c39de0eae985c14f0ec49e7da08d6b599555",
+      "bytes": 1646038
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-3\\bang-chung\\kiem-gia-vao\\entry-20261023-r2\\comparison.json",
+      "sha256": "aafd448e1b2bae3480939a305e181ae11e0d825482bf15d2b4471d613ed4dec4",
+      "bytes": 1059
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-3\\bang-chung\\kiem-gia-vao\\entry-20261023-r2\\coverage.json",
+      "sha256": "8cc658f22b587d26c5387d9e188be78d0633694c9427083962d1687778730f74",
+      "bytes": 2565
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-3\\bang-chung\\kiem-gia-vao\\entry-20261023-r2\\mql5-results.bin",
+      "sha256": "7ec90943fb8e87e505b1a943ba03eb57a687d9a756afec53016a0b31df59672d",
+      "bytes": 35116
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-3\\bang-chung\\kiem-gia-vao\\entry-20261023-r2\\mql5-run.json",
+      "sha256": "58a73a64e7be064745fa4ba6c2490a25c183eecedbd9f0343660550a58c4ed30",
+      "bytes": 311
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-3\\bang-chung\\kiem-gia-vao\\entry-20261023-r2\\original-results.bin",
+      "sha256": "7ec90943fb8e87e505b1a943ba03eb57a687d9a756afec53016a0b31df59672d",
+      "bytes": 35116
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-3\\bang-chung\\kiem-gia-vao\\entry-20261023-r2\\original-reuse.json",
+      "sha256": "274654a0a06daa57feb4e83a8017dec49c5c838b2ccf9e86459bd761b14c639d",
+      "bytes": 414
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-3\\bang-chung\\kiem-gia-vao\\entry-20261023-r2\\profiles.bin",
+      "sha256": "cd8588b0f22327abe207ea29d37834d55a889ff6ed22ba7f3bd90fcea06aff47",
+      "bytes": 300
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-3\\bang-chung\\kiem-gia-vao\\entry-20261023-r3\\cases.bin",
+      "sha256": "1422f48359da179556e02cd2a236a539dfaab97cc4839978a1f7c41f1c026cdc",
+      "bytes": 764202
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-3\\bang-chung\\kiem-gia-vao\\entry-20261023-r3\\cases.json",
+      "sha256": "241898ab6ecf2cc66fcb7f4de166c39de0eae985c14f0ec49e7da08d6b599555",
+      "bytes": 1646038
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-3\\bang-chung\\kiem-gia-vao\\entry-20261023-r3\\comparison.json",
+      "sha256": "aafd448e1b2bae3480939a305e181ae11e0d825482bf15d2b4471d613ed4dec4",
+      "bytes": 1059
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-3\\bang-chung\\kiem-gia-vao\\entry-20261023-r3\\coverage.json",
+      "sha256": "8cc658f22b587d26c5387d9e188be78d0633694c9427083962d1687778730f74",
+      "bytes": 2565
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-3\\bang-chung\\kiem-gia-vao\\entry-20261023-r3\\mql5-results.bin",
+      "sha256": "7ec90943fb8e87e505b1a943ba03eb57a687d9a756afec53016a0b31df59672d",
+      "bytes": 35116
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-3\\bang-chung\\kiem-gia-vao\\entry-20261023-r3\\mql5-run.json",
+      "sha256": "9023c5caf2032dd60e607916821aed8d99ca5142291d8281794c1e9dfa3f95bd",
+      "bytes": 311
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-3\\bang-chung\\kiem-gia-vao\\entry-20261023-r3\\original-results.bin",
+      "sha256": "7ec90943fb8e87e505b1a943ba03eb57a687d9a756afec53016a0b31df59672d",
+      "bytes": 35116
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-3\\bang-chung\\kiem-gia-vao\\entry-20261023-r3\\original-reuse.json",
+      "sha256": "a6ad303022b28d7614e1fafa31c068457d38d1dddc9f3f195552ae3eed4d06e2",
+      "bytes": 410
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-3\\bang-chung\\kiem-gia-vao\\entry-20261023-r3\\profiles.bin",
+      "sha256": "cd8588b0f22327abe207ea29d37834d55a889ff6ed22ba7f3bd90fcea06aff47",
+      "bytes": 300
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-3\\bang-chung\\bien-dich\\b3-entry-levels-01\\bien-nhan.json",
+      "sha256": "645bf37a5d51d5d5c5c4138f24381b8126c354ec691835011262bc3c0b4bc72c",
+      "bytes": 1019
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-3\\bang-chung\\bien-dich\\b3-entry-levels-01\\Bot3EntryLevelsCheck.ex5",
+      "sha256": "e7ecfeae804a9f4aed07586312e99e1e615b474acbb18792ccf4c0a3bbf76426",
+      "bytes": 17484
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-3\\bang-chung\\bien-dich\\b3-entry-levels-01\\metaeditor.log",
+      "sha256": "09642f97379b5f7d19fc3f835e4e0e3590ade89fcc25516864570d1467e78a16",
+      "bytes": 7632
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-3\\bang-chung\\bien-dich\\b3-entry-levels-02\\bien-nhan.json",
+      "sha256": "e9a749625e150cec3cda392bc9d28730d60301767e978d8c8565a8a367b32458",
+      "bytes": 1019
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-3\\bang-chung\\bien-dich\\b3-entry-levels-02\\Bot3EntryLevelsCheck.ex5",
+      "sha256": "c5594e7092f7e25de860e7fe86c70ec6a012750254c8cc52222994007d89102a",
+      "bytes": 17480
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-3\\bang-chung\\bien-dich\\b3-entry-levels-02\\metaeditor.log",
+      "sha256": "3078f7716a3c325cd5154a4e46d8076b6e119cac1938f347197684c9ec23474a",
+      "bytes": 4466
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-3\\bang-chung\\bien-dich\\b3-entry-levels-03\\bien-nhan.json",
+      "sha256": "b989133bdf6cd02fa3221ad31c8d203b624daa461188f5ab2d0a2ffcdc64e4ea",
+      "bytes": 1139
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-3\\bang-chung\\bien-dich\\b3-entry-levels-03\\Bot3EntryLevelsCheck.ex5",
+      "sha256": "7d48fe20eb867e71146d9171f231ca2843a971c8d3a63651e52e744fe3c65b01",
+      "bytes": 17876
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-3\\bang-chung\\bien-dich\\b3-entry-levels-03\\metaeditor.log",
+      "sha256": "390af657cf2805288729a1f44a682e7c060d1b3c79e373dab6870cbfba8a0664",
+      "bytes": 5056
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-3\\bang-chung\\bien-dich\\b3-entry-levels-04\\bien-nhan.json",
+      "sha256": "4a1ea3e3dd00c47434fd0c8dd1e13117a4967cbdcd585c92f4345a486e6918df",
+      "bytes": 1139
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-3\\bang-chung\\bien-dich\\b3-entry-levels-04\\Bot3EntryLevelsCheck.ex5",
+      "sha256": "6a6511f5d9ee8286fa2393db559899dbd4c2d645e378812e3ec1a01756f386db",
+      "bytes": 17908
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-3\\bang-chung\\bien-dich\\b3-entry-levels-04\\metaeditor.log",
+      "sha256": "f66a2e4cb39535413fe258f6a23e6d7c9e1587b6b4bee0a8e930c3cc3d62e951",
+      "bytes": 5056
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-1\\source\\MQL5\\Scripts\\bot-cua-toi-1\\Bot1EntryLevelsCheck.mq5",
+      "sha256": "50c60d8b261ab89fb9cf58f47b5d2271800b4fa20beeba485ec1b05aace106d7",
+      "bytes": 6830
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-1\\source\\MQL5\\Include\\bot-cua-toi-1\\Bot1EntryLevels.mqh",
+      "sha256": "ff7d35310297af7c1e38fe7c83655f69380ca9fee682b840d87a89377672d82b",
+      "bytes": 3832
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-1\\source\\MQL5\\Include\\bot-cua-toi-1\\Bot1EntryProfiles.mqh",
+      "sha256": "263568e3883564270a6911dafebed8a2350bc37c8ea1530e4e6c670a14a33d60",
+      "bytes": 1139
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-1\\phan-tich\\luot-20261023-data-v2\\kiem-tham-so-goc.json",
+      "sha256": "840d664cd82aca71535557f8f45fb1d948a749cccf3f04ef3251e5698972c294",
+      "bytes": 3848
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-1\\phan-tich\\luot-20261023-data-v2\\noi-tham-so-muc-gia.json",
+      "sha256": "75294de8d9b9f9688af418876b5640288a71f7e34dc1aa05a33801b3014bb50a",
+      "bytes": 11216
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-1\\bang-chung\\kiem-gia-vao\\entry-20261023-r1\\cases.bin",
+      "sha256": "1422f48359da179556e02cd2a236a539dfaab97cc4839978a1f7c41f1c026cdc",
+      "bytes": 764202
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-1\\bang-chung\\kiem-gia-vao\\entry-20261023-r1\\cases.json",
+      "sha256": "241898ab6ecf2cc66fcb7f4de166c39de0eae985c14f0ec49e7da08d6b599555",
+      "bytes": 1646038
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-1\\bang-chung\\kiem-gia-vao\\entry-20261023-r1\\comparison.json",
+      "sha256": "06658aaae918f5cc5a151a65f7e70ca858e62d31d46170256dac36908f4b3f64",
+      "bytes": 871
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-1\\bang-chung\\kiem-gia-vao\\entry-20261023-r1\\mql5-results.bin",
+      "sha256": "7ec90943fb8e87e505b1a943ba03eb57a687d9a756afec53016a0b31df59672d",
+      "bytes": 35116
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-1\\bang-chung\\kiem-gia-vao\\entry-20261023-r1\\mql5-run.json",
+      "sha256": "c460a13eab27bbfbc3851aa735967435d582927ca93cce57b3d52ef3c6a5373e",
+      "bytes": 311
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-1\\bang-chung\\kiem-gia-vao\\entry-20261023-r1\\original-results.bin",
+      "sha256": "7ec90943fb8e87e505b1a943ba03eb57a687d9a756afec53016a0b31df59672d",
+      "bytes": 35116
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-1\\bang-chung\\kiem-gia-vao\\entry-20261023-r1\\original-run.json",
+      "sha256": "ff16bc9f7d1e5a810b98d48d8e3444aa4a31d01c4b35048b08c3a4a0fba4fc44",
+      "bytes": 828
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-1\\bang-chung\\kiem-gia-vao\\entry-20261023-r2\\cases.bin",
+      "sha256": "1422f48359da179556e02cd2a236a539dfaab97cc4839978a1f7c41f1c026cdc",
+      "bytes": 764202
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-1\\bang-chung\\kiem-gia-vao\\entry-20261023-r2\\cases.json",
+      "sha256": "241898ab6ecf2cc66fcb7f4de166c39de0eae985c14f0ec49e7da08d6b599555",
+      "bytes": 1646038
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-1\\bang-chung\\kiem-gia-vao\\entry-20261023-r2\\comparison.json",
+      "sha256": "30597924fa000ae2ea0caa951244623b238370ccad40952f1e57f53790bdf49e",
+      "bytes": 1059
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-1\\bang-chung\\kiem-gia-vao\\entry-20261023-r2\\coverage.json",
+      "sha256": "8cc658f22b587d26c5387d9e188be78d0633694c9427083962d1687778730f74",
+      "bytes": 2565
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-1\\bang-chung\\kiem-gia-vao\\entry-20261023-r2\\mql5-results.bin",
+      "sha256": "7ec90943fb8e87e505b1a943ba03eb57a687d9a756afec53016a0b31df59672d",
+      "bytes": 35116
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-1\\bang-chung\\kiem-gia-vao\\entry-20261023-r2\\mql5-run.json",
+      "sha256": "03ed7831a627086b798d1ebb171830b6f594892ffa74c151e8d8ae0a562beaa7",
+      "bytes": 311
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-1\\bang-chung\\kiem-gia-vao\\entry-20261023-r2\\original-results.bin",
+      "sha256": "7ec90943fb8e87e505b1a943ba03eb57a687d9a756afec53016a0b31df59672d",
+      "bytes": 35116
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-1\\bang-chung\\kiem-gia-vao\\entry-20261023-r2\\original-reuse.json",
+      "sha256": "472871d405d30ff667ac24d43150ec5fda094aa22afde68aae859e1878f70427",
+      "bytes": 414
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-1\\bang-chung\\kiem-gia-vao\\entry-20261023-r2\\profiles.bin",
+      "sha256": "1308b5b7ebfc7199ae0eb2ffd06800f367412d638e4623c4826b0677ee2ef5ea",
+      "bytes": 268
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-1\\bang-chung\\kiem-gia-vao\\entry-20261023-r3\\cases.bin",
+      "sha256": "1422f48359da179556e02cd2a236a539dfaab97cc4839978a1f7c41f1c026cdc",
+      "bytes": 764202
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-1\\bang-chung\\kiem-gia-vao\\entry-20261023-r3\\cases.json",
+      "sha256": "241898ab6ecf2cc66fcb7f4de166c39de0eae985c14f0ec49e7da08d6b599555",
+      "bytes": 1646038
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-1\\bang-chung\\kiem-gia-vao\\entry-20261023-r3\\comparison.json",
+      "sha256": "30597924fa000ae2ea0caa951244623b238370ccad40952f1e57f53790bdf49e",
+      "bytes": 1059
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-1\\bang-chung\\kiem-gia-vao\\entry-20261023-r3\\coverage.json",
+      "sha256": "8cc658f22b587d26c5387d9e188be78d0633694c9427083962d1687778730f74",
+      "bytes": 2565
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-1\\bang-chung\\kiem-gia-vao\\entry-20261023-r3\\mql5-results.bin",
+      "sha256": "7ec90943fb8e87e505b1a943ba03eb57a687d9a756afec53016a0b31df59672d",
+      "bytes": 35116
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-1\\bang-chung\\kiem-gia-vao\\entry-20261023-r3\\mql5-run.json",
+      "sha256": "86a0886312c4cecb0f74dc1816f5ef8995467a2daa5149ff65cbfa10cef7f463",
+      "bytes": 311
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-1\\bang-chung\\kiem-gia-vao\\entry-20261023-r3\\negative-startup.json",
+      "sha256": "2b279bee0b0c83e7174750279ea091201da5979caba1c69f1eb62655d9f817f1",
+      "bytes": 114
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-1\\bang-chung\\kiem-gia-vao\\entry-20261023-r3\\original-results.bin",
+      "sha256": "7ec90943fb8e87e505b1a943ba03eb57a687d9a756afec53016a0b31df59672d",
+      "bytes": 35116
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-1\\bang-chung\\kiem-gia-vao\\entry-20261023-r3\\original-reuse.json",
+      "sha256": "17f2bea25b61647cfbd74d731afcae6905a0d8352d60ef05ab733e37aefc24b7",
+      "bytes": 410
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-1\\bang-chung\\kiem-gia-vao\\entry-20261023-r3\\profiles.bin",
+      "sha256": "1308b5b7ebfc7199ae0eb2ffd06800f367412d638e4623c4826b0677ee2ef5ea",
+      "bytes": 268
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-1\\bang-chung\\kiem-gia-vao\\entry-invalid-header-20261023\\cases.bin",
+      "sha256": "31190090408f837aa1dc44bf75404af354a0e5d5c965f1d407a97dd627554da5",
+      "bytes": 12
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-1\\bang-chung\\kiem-gia-vao\\entry-invalid-header-20261023\\expected-failure.json",
+      "sha256": "5c736d7117624bde70e2beb28724f6360d7376776f877793b916118b56a65198",
+      "bytes": 160
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-1\\bang-chung\\kiem-gia-vao\\entry-invalid-header-20261023\\mql5-failure.json",
+      "sha256": "251e7989881818a1f4cb942b2999226ced46b60b5d44d9576bcb3e3cbf933be3",
+      "bytes": 42
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-1\\bang-chung\\bien-dich\\b1-entry-levels-01\\bien-nhan.json",
+      "sha256": "4045418661f50c8fa5a762fa8287612bc5c07248c5f287aba55759eb7c35ae02",
+      "bytes": 1019
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-1\\bang-chung\\bien-dich\\b1-entry-levels-01\\Bot1EntryLevelsCheck.ex5",
+      "sha256": "4f61e49caec30776ac2f8214740f28fdd9ab2803ef6645c0a019285a731b6afb",
+      "bytes": 17100
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-1\\bang-chung\\bien-dich\\b1-entry-levels-01\\metaeditor.log",
+      "sha256": "c2331ca5ead846265aea587ba62a105fff3890f0157f5bbb4adbecdd6bd4bf4e",
+      "bytes": 7632
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-1\\bang-chung\\bien-dich\\b1-entry-levels-02\\bien-nhan.json",
+      "sha256": "69971e2e10bdf36dddbc70cf3c71d2cb3a6c1538ff5740206681f8964074557c",
+      "bytes": 1019
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-1\\bang-chung\\bien-dich\\b1-entry-levels-02\\Bot1EntryLevelsCheck.ex5",
+      "sha256": "49a86e4dda8e1f708ad7e4a89da217e12e2f9495541c6d17695a106cde54af71",
+      "bytes": 16874
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-1\\bang-chung\\bien-dich\\b1-entry-levels-02\\metaeditor.log",
+      "sha256": "c5acb23d7219e9282d94aadde5501c3cdc2d4f9a198687895c4af30675aea1f8",
+      "bytes": 4466
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-1\\bang-chung\\bien-dich\\b1-entry-levels-03\\bien-nhan.json",
+      "sha256": "2fc82f07ebb2f22a0630f44aaa2ff0980fd86e85a505b84e041ea128e68cba51",
+      "bytes": 1139
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-1\\bang-chung\\bien-dich\\b1-entry-levels-03\\Bot1EntryLevelsCheck.ex5",
+      "sha256": "71754dc85419df8470d7edb5bdc6c43dae35ade30339ff2e808578f1d40f337f",
+      "bytes": 17062
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-1\\bang-chung\\bien-dich\\b1-entry-levels-03\\metaeditor.log",
+      "sha256": "0a13dbb224963a2b3582b53a7b5ca898f89e08db7c44bcd728923ffe18d1292c",
+      "bytes": 5056
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-1\\bang-chung\\bien-dich\\b1-entry-levels-04\\bien-nhan.json",
+      "sha256": "01a5290879c2f25387a8975539ad7bd342ac47d7fd5beb51902ee98ebe87efa6",
+      "bytes": 1139
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-1\\bang-chung\\bien-dich\\b1-entry-levels-04\\Bot1EntryLevelsCheck.ex5",
+      "sha256": "a618ba6394ef6487ae4c9377f4919213fca632c1a0870dbec1cad591aacf6bb1",
+      "bytes": 17498
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-1\\bang-chung\\bien-dich\\b1-entry-levels-04\\metaeditor.log",
+      "sha256": "885b12d62543bcbcd24ce1be3ed77d64b485355709a8f7824906b7998393fada",
+      "bytes": 5056
+    }
+  ],
+  "runtime_copies": "Retained in private MT5 and .local/bot1-3-entry-20261023 for reproduction; no old evidence deleted."
+}

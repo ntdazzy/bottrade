@@ -1,0 +1,93 @@
+{
+  "date": "2026-10-23",
+  "rules": {
+    "AGENTS.md": "3a4e6cca30fbe78d11d64f26f66c2d5ed7652313ed75960c781471d03fed06ae",
+    "tai-lieu-cu/QUY-TRINH.md": "2b3e67531dd99694d06e67a275675341dfe0eb7a4b3b06b4770f3c3a0ad7f7ce"
+  },
+  "feature_groups": 33,
+  "bots": [
+    {
+      "bot": 1,
+      "captured_functions_inventoried": 84,
+      "observed_input_rows": 72,
+      "settings_excluding_headers": 64,
+      "unlabelled_native_addresses": 10,
+      "original_ex5_sha256": "a3b0de423a06e10ebedc279307b93d7cb9188ba2bb5de77131a913c865b0e922",
+      "checks_completed_before_inventory_rule": [
+        {
+          "phase": "kiem-luong-von-day-du",
+          "run": "state-volume-20261023-r1",
+          "cases": 1700,
+          "matched": 1700,
+          "division_errors": 96,
+          "build": "b1-state-volume-01",
+          "compile_errors": 0,
+          "compile_warnings": 0,
+          "included_sources_match": true,
+          "native_reference_reused": false
+        },
+        {
+          "phase": "kiem-ky-quy",
+          "run": "margin-20261023-r2",
+          "cases": 1141,
+          "matched": 1141,
+          "division_errors": 0,
+          "build": "b1-margin-02",
+          "compile_errors": 0,
+          "compile_warnings": 0,
+          "included_sources_match": true,
+          "native_reference_reused": true
+        }
+      ]
+    },
+    {
+      "bot": 3,
+      "captured_functions_inventoried": 82,
+      "observed_input_rows": 80,
+      "settings_excluding_headers": 71,
+      "unlabelled_native_addresses": 9,
+      "original_ex5_sha256": "ee063d3d87490afe24e2f4ce85f6b05659320e297b102efd70207f71ca2feb83",
+      "checks_completed_before_inventory_rule": [
+        {
+          "phase": "kiem-luong-von-day-du",
+          "run": "state-volume-20261023-r1",
+          "cases": 1883,
+          "matched": 1883,
+          "division_errors": 115,
+          "build": "b3-state-volume-01",
+          "compile_errors": 0,
+          "compile_warnings": 0,
+          "included_sources_match": true,
+          "native_reference_reused": false
+        },
+        {
+          "phase": "kiem-ky-quy",
+          "run": "margin-20261023-r2",
+          "cases": 1141,
+          "matched": 1141,
+          "division_errors": 0,
+          "build": "b3-margin-02",
+          "compile_errors": 0,
+          "compile_warnings": 0,
+          "included_sources_match": true,
+          "native_reference_reused": true
+        }
+      ]
+    }
+  ],
+  "inventory_summary_sha256": "15ed961f115244e5e30b5046ed009a1ceb0a38781192f6d57f585825ec29d9da",
+  "analysis_complete": false,
+  "complete_ea_restored": false,
+  "scope": "User rule update, full inventory of captured functions/observed inputs, and verification of already implemented state/margin components. Not proof of complete EX5 coverage.",
+  "modified_preexisting_files": [
+    "KET-QUA.md",
+    "bot-cua-toi-1/README.md",
+    "bot-cua-toi-3/README.md",
+    "cong-cu/BOT-1-3.md",
+    "tai-lieu-cu/QUY-TRINH.md"
+  ],
+  "deleted_preexisting_files": [],
+  "unchanged_prior_files": 793,
+  "baseline_sha256": "0521e7089c9374bf5863a068506e6f43acdc974fbd879e255b72a5062498141b",
+  "cleanup": "All new files are source, analysis, checks, evidence or rules; no pre-existing files removed. No live orders sent."
+}

@@ -1,0 +1,28 @@
+{
+  "date": "2026-10-24",
+  "bots": [
+    {
+      "bot": 1,
+      "native_function_rva": "0x7310",
+      "native_end_rva": "0x74f8",
+      "cases": 1620,
+      "matched": 1620,
+      "passed": true,
+      "build": "b1-news-block-01",
+      "comparison": "bot-cua-toi-1/bang-chung/kiem-chan-tin/news-20261024-r1/comparison.json"
+    },
+    {
+      "bot": 3,
+      "native_function_rva": "0x7c30",
+      "native_end_rva": "0x7e18",
+      "cases": 1620,
+      "matched": 1620,
+      "passed": true,
+      "build": "b3-news-block-01",
+      "comparison": "bot-cua-toi-3/bang-chung/kiem-chan-tin/news-20261024-r1/comparison.json"
+    }
+  ],
+  "scope": "Exact event timestamp selector only. Calendar discovery, UTC HTTP fallback, displayed labels, closing/cancelling actions, and full EA integration remain open.",
+  "original_ex5_unchanged": true,
+  "live_orders_sent": false
+}

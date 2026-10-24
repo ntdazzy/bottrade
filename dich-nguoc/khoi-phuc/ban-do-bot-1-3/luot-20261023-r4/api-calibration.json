@@ -1,0 +1,44 @@
+{
+  "probe_analysis": "C:\\Users\\NTD\\Desktop\\BotTradeEA\\local\\market-demos-20261020\\dich-nguoc-luot2\\captures\\api_probe_v4\\probe-analysis.json",
+  "probe_analysis_sha256": "611aaa401d869aaa7494d5133471bc024f984842249c4101c49901087f559a35",
+  "source": "C:\\Users\\NTD\\Desktop\\BotTradeEA\\local\\market-demos-20261020\\dich-nguoc-luot2\\api-probe-v4\\Ex5ApiProbeLibraryV4.mq5",
+  "source_sha256": "83fb498fe4fc50d8fb3cf2ba6e6f61c5321d80444bbc1e7226dccbf87e64df17",
+  "engine_sha256": "5033d9d45d669cebd735e8a6be20b54d74b75274f885c9a0e48e52d872104efb",
+  "dispatcher_rva": "0x7b49f0",
+  "observed_operations": {
+    "83": "iATR",
+    "216": "StringFormat",
+    "274": "ObjectCreate",
+    "13": "PrintFormat",
+    "4": "Comment",
+    "372": "StringConcatenate",
+    "88": "iMA"
+  },
+  "sleep_call_sites": [
+    {
+      "site_rva": "0x6ef1",
+      "target_rva": "0x7b17c0",
+      "rdx_constant": null,
+      "r8_constant": null,
+      "transfer": "call"
+    }
+  ],
+  "scope": "Known-source call-site calibration on identical engine; not business-logic verification.",
+  "additional": {
+    "path": "doi-chung-mt5/api-bo-sung-20261023/api-extra-r2/calibration.json",
+    "sha256": "bc533b885fbb3909a9f82b7609dfd27bb515e35b9b90bcf19b3d90386926a0e0",
+    "engine_rva_labels": {
+      "0x380260": "MT5_CalendarEventByCountry",
+      "0x3802f0": "MT5_CalendarEventByCurrency",
+      "0x380440": "MT5_CalendarValueHistoryByEvent",
+      "0x7b16a0": "MT5_MessageBox",
+      "0x7b2230": "MT5_TesterStatistics",
+      "0x7bdbe0": "MT5_GlobalVariableGet",
+      "0x7bdc90": "MT5_GlobalVariableSet",
+      "0x7bdda0": "MT5_GlobalVariableCheck",
+      "0x7c4d40": "MT5_ObjectsDeleteAll",
+      "0xacc3a0": "runtime_string_to_lower"
+    },
+    "scope": "Direct call-site matches to exported known-source wrappers; StringToLower match is an internal helper, not the public string descriptor interface."
+  }
+}

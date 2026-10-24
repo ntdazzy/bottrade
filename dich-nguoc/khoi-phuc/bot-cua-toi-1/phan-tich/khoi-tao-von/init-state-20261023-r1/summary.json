@@ -1,0 +1,34 @@
+{
+  "bot": 1,
+  "passed": true,
+  "cases": 616,
+  "matched": 616,
+  "failed": 0,
+  "first_failures": [],
+  "segment": {
+    "start": 4716,
+    "end": 6465,
+    "preloads": [
+      3159,
+      3444,
+      3454
+    ],
+    "current": 434976,
+    "peak": 434984,
+    "peak_key": 434992,
+    "time_key": 435008,
+    "last_time": 435024
+  },
+  "preload_instructions": [
+    "0xc57 movabs r13, 0x7ff6846b73c0",
+    "0xd74 movabs r15, 0x23e5aa105c0",
+    "0xd7e movabs r12, 0x7ff6846d49f0"
+  ],
+  "tool_sha256": "3d1c57def56449962238465333a557a84d729c737cb9933dedb5a6fd1ea0d3ef",
+  "binding_evidence_sha256": "2e45d5137667f3ba052ac380ab33c7fb9407de20b35f8f6f94f5143e97890bae",
+  "metadata_sha256": "732905b62143980f94c360226bfb75120d52bfccb7e646a3a0cc9be9d3e21adb",
+  "code_sha256": "e099f124084093c3fdc8651d5f5326709b165248982e5d4eb7394afcbb8177a4",
+  "data_sha256": "2ad9ad0ea90a8f8df88170348a71a070d475174122c9eae7df8deb1fb32c61f4",
+  "results_sha256": "52b9fd57faae65dd5667dce61496b3685c36a41ea7bec22a12f4736b087b4612",
+  "scope": "Bounded native initialization segment against an explicit hypothesis. Native string concatenation and state updates; account/clock/storage/format APIs supplied. Original immediate loads supply caller register preconditions. No license checks modified or exercised, no entire OnInit verification, diagnostic text/last-error codes/allocation failures excluded; not MQL5 or complete EA comparison."
+}

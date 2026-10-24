@@ -1,0 +1,5 @@
+{
+  "line": 80,
+  "cause": "The check-script file handle was named input, which is an MQL5 keyword. Rename the handle only. The initialization function is unchanged.",
+  "fixed_handle": "input_file"
+}

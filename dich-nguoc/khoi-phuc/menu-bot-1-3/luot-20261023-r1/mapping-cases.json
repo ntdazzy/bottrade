@@ -1,0 +1,35 @@
+{
+  "bot3-frequency-0.set": {
+    "TradeFrequency": 0
+  },
+  "bot3-frequency-1.set": {
+    "TradeFrequency": 1
+  },
+  "bot3-frequency-2.set": {
+    "TradeFrequency": 2
+  },
+  "bot3-frequency-3.set": {
+    "TradeFrequency": 3
+  },
+  "bot3-frequency-4.set": {
+    "TradeFrequency": 4
+  },
+  "bot3-frequency-6.set": {
+    "TradeFrequency": 6
+  },
+  "bot1-options-a.set": {
+    "BacktestSpeed": 2,
+    "FakeOutFilter": 0,
+    "Risk": 9999
+  },
+  "bot1-options-b.set": {
+    "BacktestSpeed": 3,
+    "FakeOutFilter": 2,
+    "Risk": 999
+  },
+  "bot1-options-c.set": {
+    "BacktestSpeed": 1,
+    "FakeOutFilter": 3,
+    "Risk": 3
+  }
+}

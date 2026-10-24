@@ -1,0 +1,14 @@
+{
+  "case": "bits-5",
+  "capture_exit": null,
+  "runner_exit": null,
+  "capture_validated": true,
+  "tester_run_exit": 0,
+  "capture": "bot-cua-toi-1/bang-chung/captures/inputs-inputs-20261023-r2-bits-5",
+  "login_confirmed": true,
+  "demo_confirmed": true,
+  "input_rows_logged": 72,
+  "audit_reason": "Captured files and final journal revalidated after cleanup reported an already exited tester. No historical wrapper exit code inferred.",
+  "capture_json_sha256": "e308185fbd3708969010fe6141012c845f28aee86bbd22943556f58e11a6b522",
+  "journal_sha256": "f59a8efe9f33c64334e10194f03e93b12cd2b99eb6b2d54dacf0d556912c65f7"
+}

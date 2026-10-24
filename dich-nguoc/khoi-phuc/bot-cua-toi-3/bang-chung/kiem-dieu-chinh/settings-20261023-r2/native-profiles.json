@@ -1,0 +1,443 @@
+{
+  "bot": 3,
+  "rows": [
+    {
+      "index": 0,
+      "hl": 0,
+      "first_call_rva": "0x1af93",
+      "live_in_definitions": {},
+      "extra_definitions": [],
+      "values": {
+        "entry.confirmation_frame": 16408,
+        "entry.entry_frame": 15,
+        "entry.older_width": 24,
+        "entry.recent_width": 3,
+        "entry.last_shift": 105,
+        "entry.gap_points": 45.0,
+        "buy_offset": -275.0,
+        "sell_offset": -160.0,
+        "nearby_radius": 30.0,
+        "expiration_hours": 35,
+        "stop_distance": 6100.0,
+        "target_distance": 1450.0,
+        "trail_distance": 1800.0,
+        "trail_start": 1800.0,
+        "trail_limit": 5000.0,
+        "trail_step": 0.1,
+        "native_6d368": 700.0,
+        "native_6d370": 1600.0,
+        "trigger_distance": 930.0,
+        "locked_distance": 120.0,
+        "aux_hour1": 1,
+        "aux_scan50": 1,
+        "aux_older": 14,
+        "aux_recent": 12,
+        "aux_offset": 22.0
+      }
+    },
+    {
+      "index": 3,
+      "hl": 0,
+      "first_call_rva": "0x1b84b",
+      "live_in_definitions": {},
+      "extra_definitions": [],
+      "values": {
+        "entry.confirmation_frame": 16388,
+        "entry.entry_frame": 16385,
+        "entry.older_width": 12,
+        "entry.recent_width": 8,
+        "entry.last_shift": 90,
+        "entry.gap_points": 1050.0,
+        "buy_offset": -40.0,
+        "sell_offset": -100.0,
+        "nearby_radius": 130.0,
+        "expiration_hours": 192,
+        "stop_distance": 800.0,
+        "target_distance": 4900.0,
+        "trail_distance": 1300.0,
+        "trail_start": 1450.0,
+        "trail_limit": 2000.0,
+        "trail_step": 0.1,
+        "native_6d368": 200.0,
+        "native_6d370": 1400.0,
+        "trigger_distance": 500.0,
+        "locked_distance": 200.0,
+        "aux_hour1": 1,
+        "aux_scan50": 1,
+        "aux_older": 14,
+        "aux_recent": 6,
+        "aux_offset": 32.0
+      }
+    },
+    {
+      "index": 1,
+      "hl": 0,
+      "first_call_rva": "0x1c0e1",
+      "live_in_definitions": {},
+      "extra_definitions": [],
+      "values": {
+        "entry.confirmation_frame": 16408,
+        "entry.entry_frame": 16385,
+        "entry.older_width": 15,
+        "entry.recent_width": 3,
+        "entry.last_shift": 230,
+        "entry.gap_points": 550.0,
+        "buy_offset": -170.0,
+        "sell_offset": -70.0,
+        "nearby_radius": 480.0,
+        "expiration_hours": 480,
+        "stop_distance": 1000.0,
+        "target_distance": 4100.0,
+        "trail_distance": 450.0,
+        "trail_start": 1400.0,
+        "trail_limit": 5000.0,
+        "trail_step": 0.1,
+        "native_6d368": 400.0,
+        "native_6d370": 1600.0,
+        "trigger_distance": 500.0,
+        "locked_distance": 100.0,
+        "aux_hour1": 1,
+        "aux_scan50": 1,
+        "aux_older": 1,
+        "aux_recent": 5,
+        "aux_offset": 22.0
+      }
+    },
+    {
+      "index": 2,
+      "hl": 0,
+      "first_call_rva": "0x1c985",
+      "live_in_definitions": {},
+      "extra_definitions": [],
+      "values": {
+        "entry.confirmation_frame": 16408,
+        "entry.entry_frame": 16385,
+        "entry.older_width": 7,
+        "entry.recent_width": 2,
+        "entry.last_shift": 20,
+        "entry.gap_points": 250.0,
+        "buy_offset": -130.0,
+        "sell_offset": -120.0,
+        "nearby_radius": 980.0,
+        "expiration_hours": 432,
+        "stop_distance": 700.0,
+        "target_distance": 3300.0,
+        "trail_distance": 500.0,
+        "trail_start": 400.0,
+        "trail_limit": 5000.0,
+        "trail_step": 0.1,
+        "native_6d368": 2000.0,
+        "native_6d370": 1000.0,
+        "trigger_distance": 400.0,
+        "locked_distance": 0.0,
+        "aux_hour1": 1,
+        "aux_scan50": 1,
+        "aux_older": 7,
+        "aux_recent": 4,
+        "aux_offset": 0.0
+      }
+    },
+    {
+      "index": 5,
+      "hl": 0,
+      "first_call_rva": "0x1d1fc",
+      "live_in_definitions": {},
+      "extra_definitions": [],
+      "values": {
+        "entry.confirmation_frame": 16385,
+        "entry.entry_frame": 5,
+        "entry.older_width": 26,
+        "entry.recent_width": 24,
+        "entry.last_shift": 140,
+        "entry.gap_points": 120.0,
+        "buy_offset": -115.0,
+        "sell_offset": -145.0,
+        "nearby_radius": 55.0,
+        "expiration_hours": 20,
+        "stop_distance": 10100.0,
+        "target_distance": 800.0,
+        "trail_distance": 500.0,
+        "trail_start": 1200.0,
+        "trail_limit": 5000.0,
+        "trail_step": 0.1,
+        "native_6d368": 350.0,
+        "native_6d370": 1950.0,
+        "trigger_distance": 330.0,
+        "locked_distance": 80.0,
+        "aux_hour1": 1,
+        "aux_scan50": 1,
+        "aux_older": 0,
+        "aux_recent": 0,
+        "aux_offset": 0.0
+      }
+    },
+    {
+      "index": 4,
+      "hl": 0,
+      "first_call_rva": "0x1da70",
+      "live_in_definitions": {},
+      "extra_definitions": [],
+      "values": {
+        "entry.confirmation_frame": 16385,
+        "entry.entry_frame": 15,
+        "entry.older_width": 30,
+        "entry.recent_width": 19,
+        "entry.last_shift": 110,
+        "entry.gap_points": 160.0,
+        "buy_offset": -120.0,
+        "sell_offset": -110.0,
+        "nearby_radius": 55.0,
+        "expiration_hours": 30,
+        "stop_distance": 5300.0,
+        "target_distance": 900.0,
+        "trail_distance": 495.0,
+        "trail_start": 400.0,
+        "trail_limit": 5000.0,
+        "trail_step": 0.1,
+        "native_6d368": 250.0,
+        "native_6d370": 1900.0,
+        "trigger_distance": 260.0,
+        "locked_distance": 80.0,
+        "aux_hour1": 1,
+        "aux_scan50": 1,
+        "aux_older": 0,
+        "aux_recent": 0,
+        "aux_offset": 0.0
+      }
+    },
+    {
+      "index": 8,
+      "hl": 0,
+      "first_call_rva": "0x1e2ee",
+      "live_in_definitions": {},
+      "extra_definitions": [],
+      "values": {
+        "entry.confirmation_frame": 16385,
+        "entry.entry_frame": 15,
+        "entry.older_width": 7,
+        "entry.recent_width": 5,
+        "entry.last_shift": 200,
+        "entry.gap_points": 40.0,
+        "buy_offset": -150.0,
+        "sell_offset": -145.0,
+        "nearby_radius": 5.0,
+        "expiration_hours": 15,
+        "stop_distance": 3900.0,
+        "target_distance": 1350.0,
+        "trail_distance": 445.0,
+        "trail_start": 355.0,
+        "trail_limit": 5000.0,
+        "trail_step": 0.1,
+        "native_6d368": 250.0,
+        "native_6d370": 1850.0,
+        "trigger_distance": 160.0,
+        "locked_distance": 50.0,
+        "aux_hour1": 1,
+        "aux_scan50": 1,
+        "aux_older": 1,
+        "aux_recent": 9,
+        "aux_offset": 46.0
+      }
+    },
+    {
+      "index": 6,
+      "hl": 0,
+      "first_call_rva": "0x1eb91",
+      "live_in_definitions": {},
+      "extra_definitions": [],
+      "values": {
+        "entry.confirmation_frame": 16385,
+        "entry.entry_frame": 15,
+        "entry.older_width": 25,
+        "entry.recent_width": 23,
+        "entry.last_shift": 145,
+        "entry.gap_points": 10.0,
+        "buy_offset": -10.0,
+        "sell_offset": -145.0,
+        "nearby_radius": 90.0,
+        "expiration_hours": 60,
+        "stop_distance": 2250.0,
+        "target_distance": 1450.0,
+        "trail_distance": 450.0,
+        "trail_start": 900.0,
+        "trail_limit": 5000.0,
+        "trail_step": 0.1,
+        "native_6d368": 350.0,
+        "native_6d370": 2800.0,
+        "trigger_distance": 340.0,
+        "locked_distance": 30.0,
+        "aux_hour1": 1,
+        "aux_scan50": 1,
+        "aux_older": 12,
+        "aux_recent": 17,
+        "aux_offset": 45.0
+      }
+    },
+    {
+      "index": 7,
+      "hl": 0,
+      "first_call_rva": "0x1f426",
+      "live_in_definitions": {},
+      "extra_definitions": [],
+      "values": {
+        "entry.confirmation_frame": 16385,
+        "entry.entry_frame": 15,
+        "entry.older_width": 26,
+        "entry.recent_width": 20,
+        "entry.last_shift": 235,
+        "entry.gap_points": 80.0,
+        "buy_offset": -140.0,
+        "sell_offset": -170.0,
+        "nearby_radius": 5.0,
+        "expiration_hours": 55,
+        "stop_distance": 1900.0,
+        "target_distance": 1200.0,
+        "trail_distance": 1250.0,
+        "trail_start": 650.0,
+        "trail_limit": 5000.0,
+        "trail_step": 0.1,
+        "native_6d368": 250.0,
+        "native_6d370": 1950.0,
+        "trigger_distance": 270.0,
+        "locked_distance": 0.0,
+        "aux_hour1": 1,
+        "aux_scan50": 1,
+        "aux_older": 15,
+        "aux_recent": 3,
+        "aux_offset": 16.0
+      }
+    }
+  ],
+  "fields": [
+    [
+      "entry.confirmation_frame",
+      "i",
+      447156
+    ],
+    [
+      "entry.entry_frame",
+      "i",
+      447160
+    ],
+    [
+      "entry.older_width",
+      "i",
+      447164
+    ],
+    [
+      "entry.recent_width",
+      "i",
+      447168
+    ],
+    [
+      "entry.last_shift",
+      "i",
+      447172
+    ],
+    [
+      "entry.gap_points",
+      "d",
+      447176
+    ],
+    [
+      "buy_offset",
+      "d",
+      447184
+    ],
+    [
+      "sell_offset",
+      "d",
+      447192
+    ],
+    [
+      "nearby_radius",
+      "d",
+      447208
+    ],
+    [
+      "expiration_hours",
+      "i",
+      447216
+    ],
+    [
+      "stop_distance",
+      "d",
+      447272
+    ],
+    [
+      "target_distance",
+      "d",
+      447280
+    ],
+    [
+      "trail_distance",
+      "d",
+      447304
+    ],
+    [
+      "trail_start",
+      "d",
+      447312
+    ],
+    [
+      "trail_limit",
+      "d",
+      447320
+    ],
+    [
+      "trail_step",
+      "d",
+      447328
+    ],
+    [
+      "native_6d368",
+      "d",
+      447336
+    ],
+    [
+      "native_6d370",
+      "d",
+      447344
+    ],
+    [
+      "trigger_distance",
+      "d",
+      447384
+    ],
+    [
+      "locked_distance",
+      "d",
+      447392
+    ],
+    [
+      "aux_hour1",
+      "B",
+      447412
+    ],
+    [
+      "aux_scan50",
+      "B",
+      447413
+    ],
+    [
+      "aux_older",
+      "i",
+      447416
+    ],
+    [
+      "aux_recent",
+      "i",
+      447420
+    ],
+    [
+      "aux_offset",
+      "d",
+      447432
+    ]
+  ],
+  "code_sha256": "7464a1dcb3a66d1438d510f365a08fbcdfa4aaa00f03afb49259225bc7d5cfbb",
+  "data_sha256": "1d8c5ee1af972615461e71ede70b519d30bd876561cf96169606e4c9aeaab073",
+  "previous_proof_sha256": "87c3eb428d1315576479e3d2dedb1e5a2af36e854496c93331e5099342249317",
+  "tool_sha256": "7869620655d011ca40479aa074b1e15686951cd3566d7a89944964e7a84031e1",
+  "scope": "Native parameter assignment blocks up to first call, zero adjustments/randomization, both HL branches for bot 1. All compared fields were written; all read registers initialized within block or proven by constant reaching definitions. Bot 3 reference is set later and excluded."
+}

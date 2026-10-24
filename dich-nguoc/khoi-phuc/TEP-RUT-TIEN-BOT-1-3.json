@@ -1,0 +1,74 @@
+{
+  "new_files": {
+    "KIEM-CHUNG-RUT-TIEN-BOT-1-3.json": "d3b2f073965f830ad8f2f7a61eeb191d83ad3c30eeb4a869308d51118fca9f5b",
+    "PHAN-TICH-RUT-TIEN-BOT-1-3.md": "caf5e044a269d9d0cbee6b7c5d36c38f35e3f5708f147ca7da1a433f75d61e11",
+    "bot-cua-toi-1/bang-chung/bien-dich/b1-withdrawal-01/Bot1WithdrawalCheck.ex5": "a73757cb04524d5db4226a4f421ea3bb2bbabd83b7774c46cc7a8ea918b7b80b",
+    "bot-cua-toi-1/bang-chung/bien-dich/b1-withdrawal-01/bien-nhan.json": "57f3cff1d85947509f589da6ec142daa2d90d908f45d8d8ef9e2bd762a7922e6",
+    "bot-cua-toi-1/bang-chung/bien-dich/b1-withdrawal-01/metaeditor.log": "e598d134a6de71ee09539f5f8c3758b83e19be2178fc7e2b80ab8ec214bbd32a",
+    "bot-cua-toi-1/bang-chung/bien-dich/b1-withdrawal-02/Bot1WithdrawalCheck.ex5": "80182376657ff50de8c5f7fd7def9bd48feb7b1d0b1b3c9a4969e0c9287a8dcc",
+    "bot-cua-toi-1/bang-chung/bien-dich/b1-withdrawal-02/bien-nhan.json": "eeea7634c6d94a7b76a4fd91543434fbe3c96daa15ff7f70c793dcab5467939d",
+    "bot-cua-toi-1/bang-chung/bien-dich/b1-withdrawal-02/metaeditor.log": "294074142b9145ab4142246de854f9dbc476d2888a20c7e49b95542298021e96",
+    "bot-cua-toi-1/bang-chung/bien-dich/b1-withdrawal-storage-01/Bot1WithdrawalStorageCheck.ex5": "a01355f5ff8e4e584ad4d56a29bf27acfe1cdf8ad1496f68180b9d24fae15394",
+    "bot-cua-toi-1/bang-chung/bien-dich/b1-withdrawal-storage-01/bien-nhan.json": "37845ba4be0b95e4b94b4fe081e2ec68a3223fee9e356c46df6462e1867cc3c9",
+    "bot-cua-toi-1/bang-chung/bien-dich/b1-withdrawal-storage-01/metaeditor.log": "8d3fe5896d9b5b5a18035701f94971959b9689f4cc539011b652416fe18f9788",
+    "bot-cua-toi-1/bang-chung/kiem-luu-trang-thai/storage-20261023-r1/comparison.json": "90613f40b0309f10a3f7439650d799ed15b5c7ceb57fbd17a24de6fb0cecc3c5",
+    "bot-cua-toi-1/bang-chung/kiem-luu-trang-thai/storage-20261023-r1/read.bin": "10a7d47a488f8b9eb7849783dbec2e1a41f55a73c3e49abb2dae5d729bfbf367",
+    "bot-cua-toi-1/bang-chung/kiem-luu-trang-thai/storage-20261023-r1/write.bin": "0e8ee4aff987141cd8b791ddf8cfe01a8c208e712b92866f4ed9fcd1577a641b",
+    "bot-cua-toi-1/bang-chung/kiem-rut-tien/withdrawal-20261023-r1/cases.bin": "55e470888584414c3c37bad54e330ec707acafc8710e2c0d311b57acad86f7d8",
+    "bot-cua-toi-1/bang-chung/kiem-rut-tien/withdrawal-20261023-r1/cases.json": "30151dec3e52c2800f439233ab9aded90cb307d3ad7befe9c0425c33be58da19",
+    "bot-cua-toi-1/bang-chung/kiem-rut-tien/withdrawal-20261023-r1/comparison.json": "def0319a3cd0e72f8012efa4257b85cc72a35d10f3b7172b5a2ff1065dce62f8",
+    "bot-cua-toi-1/bang-chung/kiem-rut-tien/withdrawal-20261023-r1/mql5-results.bin": "3f44cdc56102f7725de494bdc34bd8456eb8e1f35b80f23a8c63e93eaac21035",
+    "bot-cua-toi-1/bang-chung/kiem-rut-tien/withdrawal-20261023-r1/mql5-run.json": "185c710b440faa3bdc109bf8e1b82d56802b12100882b9f9cf0517158e227ff9",
+    "bot-cua-toi-1/bang-chung/kiem-rut-tien/withdrawal-20261023-r1/native-traces.json": "87bb50859d3b90c0523696c148f3b66bac25a397a27053ca33c0620e56e2f3ab",
+    "bot-cua-toi-1/bang-chung/kiem-rut-tien/withdrawal-20261023-r1/original-results.bin": "3f44cdc56102f7725de494bdc34bd8456eb8e1f35b80f23a8c63e93eaac21035",
+    "bot-cua-toi-1/bang-chung/kiem-rut-tien/withdrawal-20261023-r1/original-run.json": "b7050a7300a6d30e0026d833e1ad4ec0d5338620a3a249d7bff711182c75f955",
+    "bot-cua-toi-1/source/MQL5/Include/bot-cua-toi-1/Bot1Withdrawal.mqh": "c6300736871f6e84e4885e3d97ea56dc36487e9e924c12c4effb7d9b2a15a5c6",
+    "bot-cua-toi-1/source/MQL5/Scripts/bot-cua-toi-1/Bot1WithdrawalCheck.mq5": "309c07b687e21a9011eb33f50a146bf75c1d3c704575b2f52e23b38fd56acea6",
+    "bot-cua-toi-1/source/MQL5/Scripts/bot-cua-toi-1/Bot1WithdrawalStorageCheck.mq5": "6d50749e782d5ab74ae04fd91ae2c5bd92c0db196aa4bc443b6ff0e04753e56e",
+    "bot-cua-toi-3/bang-chung/bien-dich/b3-withdrawal-01/Bot3WithdrawalCheck.ex5": "dd78e1e9a87d97e20735f310e5299ac34e2240d708dfc9cac33b758b724a2f1b",
+    "bot-cua-toi-3/bang-chung/bien-dich/b3-withdrawal-01/bien-nhan.json": "d0574018fb453b7f319226fca9d79f16edc41e820099f6e198736bcc1585127b",
+    "bot-cua-toi-3/bang-chung/bien-dich/b3-withdrawal-01/metaeditor.log": "acdc51457c1fbb66d28a2c188490e2f87ac8ae0cf2cd3f5ce4e2a2a9e61e1c68",
+    "bot-cua-toi-3/bang-chung/bien-dich/b3-withdrawal-storage-01/Bot3WithdrawalStorageCheck.ex5": "b997e85581ac5db07238364f690c51bf965af1e334ca9c1921031d0e23f52119",
+    "bot-cua-toi-3/bang-chung/bien-dich/b3-withdrawal-storage-01/bien-nhan.json": "6d80a8b2ea83a7f079298636fe8143ac18f34919f29d98e381b7bb84da054f03",
+    "bot-cua-toi-3/bang-chung/bien-dich/b3-withdrawal-storage-01/metaeditor.log": "e0004062a139e7dece086a672c1516b2b6ebeafe23ed38b50bf3951eec679879",
+    "bot-cua-toi-3/bang-chung/kiem-luu-trang-thai/storage-20261023-r1/comparison.json": "e173373dabab7263c6c40ae0808ca36c837875d80dcc4478af05a0c1558cb935",
+    "bot-cua-toi-3/bang-chung/kiem-luu-trang-thai/storage-20261023-r1/read.bin": "10a7d47a488f8b9eb7849783dbec2e1a41f55a73c3e49abb2dae5d729bfbf367",
+    "bot-cua-toi-3/bang-chung/kiem-luu-trang-thai/storage-20261023-r1/write.bin": "0e8ee4aff987141cd8b791ddf8cfe01a8c208e712b92866f4ed9fcd1577a641b",
+    "bot-cua-toi-3/bang-chung/kiem-rut-tien/withdrawal-20261023-r1/cases.bin": "55e470888584414c3c37bad54e330ec707acafc8710e2c0d311b57acad86f7d8",
+    "bot-cua-toi-3/bang-chung/kiem-rut-tien/withdrawal-20261023-r1/cases.json": "30151dec3e52c2800f439233ab9aded90cb307d3ad7befe9c0425c33be58da19",
+    "bot-cua-toi-3/bang-chung/kiem-rut-tien/withdrawal-20261023-r1/comparison.json": "def0319a3cd0e72f8012efa4257b85cc72a35d10f3b7172b5a2ff1065dce62f8",
+    "bot-cua-toi-3/bang-chung/kiem-rut-tien/withdrawal-20261023-r1/mql5-results.bin": "3f44cdc56102f7725de494bdc34bd8456eb8e1f35b80f23a8c63e93eaac21035",
+    "bot-cua-toi-3/bang-chung/kiem-rut-tien/withdrawal-20261023-r1/mql5-run.json": "66a34302ffbbd9352771817fc0277ec19d048dd5368e73876de052aa455919aa",
+    "bot-cua-toi-3/bang-chung/kiem-rut-tien/withdrawal-20261023-r1/native-traces.json": "87bb50859d3b90c0523696c148f3b66bac25a397a27053ca33c0620e56e2f3ab",
+    "bot-cua-toi-3/bang-chung/kiem-rut-tien/withdrawal-20261023-r1/original-results.bin": "3f44cdc56102f7725de494bdc34bd8456eb8e1f35b80f23a8c63e93eaac21035",
+    "bot-cua-toi-3/bang-chung/kiem-rut-tien/withdrawal-20261023-r1/original-run.json": "68d826825fed1fbac03ff2cb9d0af369a358c2567e627fd0636aeb3922fc8987",
+    "bot-cua-toi-3/source/MQL5/Include/bot-cua-toi-3/Bot3Withdrawal.mqh": "7a002e35ee6694d499b5cc466f0040d430e3f8112345afb3ec2618cbc5b1de10",
+    "bot-cua-toi-3/source/MQL5/Scripts/bot-cua-toi-3/Bot3WithdrawalCheck.mq5": "8994feffeca54d7bbc1918875136d6e6f85311b021201d794d2bf28371c02c6d",
+    "bot-cua-toi-3/source/MQL5/Scripts/bot-cua-toi-3/Bot3WithdrawalStorageCheck.mq5": "b839803d9da11bd10b8e51d41480bb507a49da2b55fc19ee1dc595e692ea5c9e",
+    "cong-cu/kiem-luu-trang-thai-bot-1-3.py": "cc0fe48ef3f6c76fd1abd89130d452aa8114d71dcc3d9b132915dee02f56cd05",
+    "cong-cu/kiem-rut-tien-bot-1-3.py": "dd02f9b093b9a8ac68b6e689985c0993b7e63cabc84deb7b838835ded34db9ce"
+  },
+  "modified_files": {
+    "KET-QUA.md": {
+      "before": "c434a0c566d5787add59735a6b264781b3655a94b69fc642800881e31a906fb5",
+      "after": "3699f4bb7eee891283b88236cb0c64e3b9ed733131d54a941c0e5d5f2aae4406"
+    },
+    "PHAN-TICH-KHOI-LUONG-BOT-1-3.md": {
+      "before": "775b30e0b32f9c0a7fb38d9a76937a7beb00fce49c637107a84df5e8fe329613",
+      "after": "752983ed6fe0102e2169f4526695ca680b90e14a19f9620b59f57d5211442d05"
+    },
+    "bot-cua-toi-1/README.md": {
+      "before": "e33a4971bf069cbe8ddbad6987d889b2be37c82f42d29ce728e6514e64af22aa",
+      "after": "8cec35dc92ea0084842bf5c315bcb3bf1cef2cb210e0bab01cadcadcca1fb3db"
+    },
+    "bot-cua-toi-3/README.md": {
+      "before": "2085c2bdaae043239b812595c6b999b1e611c160171ff86fa178925121614a59",
+      "after": "12b282d8fad67daec373e9e30a15e42dbaf3698fe017b36654034eba9cbee5f2"
+    },
+    "cong-cu/BOT-1-3.md": {
+      "before": "ddfc7bfd0b02c5241768df6bdc2d639aa4d383cddc61bc7d49ec2abe4988abe2",
+      "after": "691655f74c4e1b84ac17752ca797fcaa26dc435561bfdf3a4a9c99c144a6d6ef"
+    }
+  },
+  "manifest_self_excluded": true
+}

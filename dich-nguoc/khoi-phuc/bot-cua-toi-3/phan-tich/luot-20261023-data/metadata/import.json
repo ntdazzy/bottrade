@@ -1,0 +1,440 @@
+{
+  "bot": 3,
+  "capture": "C:\\Users\\NTD\\Desktop\\Bot Market Demo\\dich-nguoc\\khoi-phuc\\bot-cua-toi-3\\bang-chung\\captures\\luot-20261023-r1",
+  "engine": {
+    "pid": 17788,
+    "process": "C:\\Users\\NTD\\Desktop\\Bot Market Demo\\dich-nguoc\\.local\\claude-recovery-20261023\\mt5\\metatester64.exe",
+    "engine_base": "0x7ff683f20000",
+    "engine_sha256": "5033d9d45d669cebd735e8a6be20b54d74b75274f885c9a0e48e52d872104efb",
+    "observed_utc": "2026-10-23T03:28:17.0703531Z"
+  },
+  "code_file": "C:\\Users\\NTD\\Desktop\\Bot Market Demo\\dich-nguoc\\khoi-phuc\\bot-cua-toi-3\\bang-chung\\captures\\luot-20261023-r1\\0000017156250000.bin",
+  "code_base": "0x17156250000",
+  "code_sha256": "7464a1dcb3a66d1438d510f365a08fbcdfa4aaa00f03afb49259225bc7d5cfbb",
+  "data_sha256": "1d8c5ee1af972615461e71ede70b519d30bd876561cf96169606e4c9aeaab073",
+  "function_table_address": "0x171562bbfcc",
+  "functions": [
+    {
+      "begin_rva": "0x0",
+      "end_rva": "0x57",
+      "unwind_rva": "0x57000"
+    },
+    {
+      "begin_rva": "0x60",
+      "end_rva": "0x1d8",
+      "unwind_rva": "0x57008"
+    },
+    {
+      "begin_rva": "0x1e0",
+      "end_rva": "0x3bd",
+      "unwind_rva": "0x57018"
+    },
+    {
+      "begin_rva": "0x3c0",
+      "end_rva": "0x49d",
+      "unwind_rva": "0x57028"
+    },
+    {
+      "begin_rva": "0x4a0",
+      "end_rva": "0x5bd",
+      "unwind_rva": "0x57030"
+    },
+    {
+      "begin_rva": "0x5c0",
+      "end_rva": "0x7d8",
+      "unwind_rva": "0x57044"
+    },
+    {
+      "begin_rva": "0x7e0",
+      "end_rva": "0x8a5",
+      "unwind_rva": "0x57054"
+    },
+    {
+      "begin_rva": "0x8c0",
+      "end_rva": "0x8df",
+      "unwind_rva": "0x57068"
+    },
+    {
+      "begin_rva": "0x8e0",
+      "end_rva": "0x8ff",
+      "unwind_rva": "0x57070"
+    },
+    {
+      "begin_rva": "0x900",
+      "end_rva": "0x901",
+      "unwind_rva": "0x57078"
+    },
+    {
+      "begin_rva": "0x910",
+      "end_rva": "0x94f",
+      "unwind_rva": "0x57084"
+    },
+    {
+      "begin_rva": "0x950",
+      "end_rva": "0xb5e",
+      "unwind_rva": "0x57098"
+    },
+    {
+      "begin_rva": "0xb60",
+      "end_rva": "0xbcc",
+      "unwind_rva": "0x570c0"
+    },
+    {
+      "begin_rva": "0xbd0",
+      "end_rva": "0xc23",
+      "unwind_rva": "0x570d8"
+    },
+    {
+      "begin_rva": "0xc30",
+      "end_rva": "0x6196",
+      "unwind_rva": "0x570f0"
+    },
+    {
+      "begin_rva": "0x61a0",
+      "end_rva": "0x6ac9",
+      "unwind_rva": "0x5711c"
+    },
+    {
+      "begin_rva": "0x6ad0",
+      "end_rva": "0x6f13",
+      "unwind_rva": "0x57144"
+    },
+    {
+      "begin_rva": "0x6f20",
+      "end_rva": "0x73a3",
+      "unwind_rva": "0x5716c"
+    },
+    {
+      "begin_rva": "0x73b0",
+      "end_rva": "0x7c26",
+      "unwind_rva": "0x57194"
+    },
+    {
+      "begin_rva": "0x7c30",
+      "end_rva": "0x7e18",
+      "unwind_rva": "0x571bc"
+    },
+    {
+      "begin_rva": "0x7e20",
+      "end_rva": "0x82f7",
+      "unwind_rva": "0x571dc"
+    },
+    {
+      "begin_rva": "0x8300",
+      "end_rva": "0xe0b5",
+      "unwind_rva": "0x57210"
+    },
+    {
+      "begin_rva": "0xe0c0",
+      "end_rva": "0xef3f",
+      "unwind_rva": "0x57244"
+    },
+    {
+      "begin_rva": "0xef40",
+      "end_rva": "0x14f98",
+      "unwind_rva": "0x57270"
+    },
+    {
+      "begin_rva": "0x14fa0",
+      "end_rva": "0x16e79",
+      "unwind_rva": "0x572a8"
+    },
+    {
+      "begin_rva": "0x16e80",
+      "end_rva": "0x17ef2",
+      "unwind_rva": "0x572dc"
+    },
+    {
+      "begin_rva": "0x17f00",
+      "end_rva": "0x1fcf9",
+      "unwind_rva": "0x5731c"
+    },
+    {
+      "begin_rva": "0x1fd00",
+      "end_rva": "0x20149",
+      "unwind_rva": "0x57360"
+    },
+    {
+      "begin_rva": "0x20150",
+      "end_rva": "0x20bb9",
+      "unwind_rva": "0x57394"
+    },
+    {
+      "begin_rva": "0x20bc0",
+      "end_rva": "0x20ef0",
+      "unwind_rva": "0x573bc"
+    },
+    {
+      "begin_rva": "0x20ef0",
+      "end_rva": "0x2a1bc",
+      "unwind_rva": "0x573e4"
+    },
+    {
+      "begin_rva": "0x2a1c0",
+      "end_rva": "0x2a7ff",
+      "unwind_rva": "0x57428"
+    },
+    {
+      "begin_rva": "0x2a800",
+      "end_rva": "0x2bb7e",
+      "unwind_rva": "0x57454"
+    },
+    {
+      "begin_rva": "0x2bb80",
+      "end_rva": "0x2dd24",
+      "unwind_rva": "0x5747c"
+    },
+    {
+      "begin_rva": "0x2dd30",
+      "end_rva": "0x2e2fd",
+      "unwind_rva": "0x574a8"
+    },
+    {
+      "begin_rva": "0x2e300",
+      "end_rva": "0x2e328",
+      "unwind_rva": "0x574d0"
+    },
+    {
+      "begin_rva": "0x2e330",
+      "end_rva": "0x2e362",
+      "unwind_rva": "0x574dc"
+    },
+    {
+      "begin_rva": "0x2e370",
+      "end_rva": "0x2e8ec",
+      "unwind_rva": "0x574f4"
+    },
+    {
+      "begin_rva": "0x2e8f0",
+      "end_rva": "0x2ece6",
+      "unwind_rva": "0x57520"
+    },
+    {
+      "begin_rva": "0x2ecf0",
+      "end_rva": "0x2f6cf",
+      "unwind_rva": "0x57540"
+    },
+    {
+      "begin_rva": "0x2f6d0",
+      "end_rva": "0x3178b",
+      "unwind_rva": "0x57568"
+    },
+    {
+      "begin_rva": "0x31790",
+      "end_rva": "0x31a86",
+      "unwind_rva": "0x57594"
+    },
+    {
+      "begin_rva": "0x31a90",
+      "end_rva": "0x31cc8",
+      "unwind_rva": "0x575b8"
+    },
+    {
+      "begin_rva": "0x31cd0",
+      "end_rva": "0x3208b",
+      "unwind_rva": "0x575e4"
+    },
+    {
+      "begin_rva": "0x32090",
+      "end_rva": "0x3244b",
+      "unwind_rva": "0x57618"
+    },
+    {
+      "begin_rva": "0x32450",
+      "end_rva": "0x32a84",
+      "unwind_rva": "0x5764c"
+    },
+    {
+      "begin_rva": "0x32a90",
+      "end_rva": "0x32f57",
+      "unwind_rva": "0x57678"
+    },
+    {
+      "begin_rva": "0x32f60",
+      "end_rva": "0x3758e",
+      "unwind_rva": "0x576ac"
+    },
+    {
+      "begin_rva": "0x37590",
+      "end_rva": "0x3bb0f",
+      "unwind_rva": "0x576fc"
+    },
+    {
+      "begin_rva": "0x3bb10",
+      "end_rva": "0x3c9f8",
+      "unwind_rva": "0x5774c"
+    },
+    {
+      "begin_rva": "0x3ca00",
+      "end_rva": "0x3cc1d",
+      "unwind_rva": "0x57790"
+    },
+    {
+      "begin_rva": "0x3cc20",
+      "end_rva": "0x3ce3d",
+      "unwind_rva": "0x577bc"
+    },
+    {
+      "begin_rva": "0x3ce40",
+      "end_rva": "0x3d21a",
+      "unwind_rva": "0x577e8"
+    },
+    {
+      "begin_rva": "0x3d220",
+      "end_rva": "0x3d5e9",
+      "unwind_rva": "0x57810"
+    },
+    {
+      "begin_rva": "0x3d5f0",
+      "end_rva": "0x3d618",
+      "unwind_rva": "0x57838"
+    },
+    {
+      "begin_rva": "0x3d620",
+      "end_rva": "0x3d648",
+      "unwind_rva": "0x5784c"
+    },
+    {
+      "begin_rva": "0x3d650",
+      "end_rva": "0x3da89",
+      "unwind_rva": "0x57860"
+    },
+    {
+      "begin_rva": "0x3da90",
+      "end_rva": "0x3dd5c",
+      "unwind_rva": "0x57888"
+    },
+    {
+      "begin_rva": "0x3dd60",
+      "end_rva": "0x3e03c",
+      "unwind_rva": "0x578b4"
+    },
+    {
+      "begin_rva": "0x3e040",
+      "end_rva": "0x3e26d",
+      "unwind_rva": "0x578e0"
+    },
+    {
+      "begin_rva": "0x3e270",
+      "end_rva": "0x3e48b",
+      "unwind_rva": "0x57910"
+    },
+    {
+      "begin_rva": "0x3e490",
+      "end_rva": "0x3e57b",
+      "unwind_rva": "0x5793c"
+    },
+    {
+      "begin_rva": "0x3e580",
+      "end_rva": "0x3ee78",
+      "unwind_rva": "0x57964"
+    },
+    {
+      "begin_rva": "0x3ee80",
+      "end_rva": "0x3f8f8",
+      "unwind_rva": "0x5799c"
+    },
+    {
+      "begin_rva": "0x3f900",
+      "end_rva": "0x41771",
+      "unwind_rva": "0x579bc"
+    },
+    {
+      "begin_rva": "0x41780",
+      "end_rva": "0x46c92",
+      "unwind_rva": "0x579f0"
+    },
+    {
+      "begin_rva": "0x46ca0",
+      "end_rva": "0x4732a",
+      "unwind_rva": "0x57a24"
+    },
+    {
+      "begin_rva": "0x47330",
+      "end_rva": "0x47380",
+      "unwind_rva": "0x57a48"
+    },
+    {
+      "begin_rva": "0x47380",
+      "end_rva": "0x475d7",
+      "unwind_rva": "0x57a5c"
+    },
+    {
+      "begin_rva": "0x475e0",
+      "end_rva": "0x4783b",
+      "unwind_rva": "0x57a8c"
+    },
+    {
+      "begin_rva": "0x47840",
+      "end_rva": "0x47d13",
+      "unwind_rva": "0x57abc"
+    },
+    {
+      "begin_rva": "0x47d20",
+      "end_rva": "0x47f0c",
+      "unwind_rva": "0x57aec"
+    },
+    {
+      "begin_rva": "0x47f10",
+      "end_rva": "0x482a7",
+      "unwind_rva": "0x57b14"
+    },
+    {
+      "begin_rva": "0x482b0",
+      "end_rva": "0x484bf",
+      "unwind_rva": "0x57b40"
+    },
+    {
+      "begin_rva": "0x484c0",
+      "end_rva": "0x4855b",
+      "unwind_rva": "0x57b64"
+    },
+    {
+      "begin_rva": "0x48560",
+      "end_rva": "0x485de",
+      "unwind_rva": "0x57b80"
+    },
+    {
+      "begin_rva": "0x485e0",
+      "end_rva": "0x5366e",
+      "unwind_rva": "0x57b94"
+    },
+    {
+      "begin_rva": "0x53670",
+      "end_rva": "0x53a04",
+      "unwind_rva": "0x57bbc"
+    },
+    {
+      "begin_rva": "0x53a10",
+      "end_rva": "0x555db",
+      "unwind_rva": "0x57bf0"
+    },
+    {
+      "begin_rva": "0x555e0",
+      "end_rva": "0x557eb",
+      "unwind_rva": "0x57c1c"
+    },
+    {
+      "begin_rva": "0x557f0",
+      "end_rva": "0x55bbc",
+      "unwind_rva": "0x57c3c"
+    },
+    {
+      "begin_rva": "0x55bc0",
+      "end_rva": "0x569bb",
+      "unwind_rva": "0x57c64"
+    }
+  ],
+  "strings": 1050,
+  "string_refs": 404,
+  "native_labels": 141,
+  "native_signatures": 81,
+  "format_reference": "https://learn.microsoft.com/en-us/cpp/build/exception-handling-x64",
+  "limitations": [
+    "Snapshot is not atomic and does not establish completion of OnInit.",
+    "Only literal strings with observed header (0, 2, UTF-16 length) are annotated.",
+    "ASCII UTF-16 strings only; other text and heap buffers are not reconstructed.",
+    "Function table entries are ranges; names and complete trading behavior remain unverified.",
+    "No call-site dispatch overrides from bot 13 are reused."
+  ]
+}

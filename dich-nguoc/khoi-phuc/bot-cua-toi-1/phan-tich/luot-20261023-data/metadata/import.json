@@ -1,0 +1,449 @@
+{
+  "bot": 1,
+  "capture": "C:\\Users\\NTD\\Desktop\\Bot Market Demo\\dich-nguoc\\khoi-phuc\\bot-cua-toi-1\\bang-chung\\captures\\luot-20261023-r1",
+  "engine": {
+    "pid": 14712,
+    "process": "C:\\Users\\NTD\\Desktop\\Bot Market Demo\\dich-nguoc\\.local\\claude-recovery-20261023\\mt5\\metatester64.exe",
+    "engine_base": "0x7ff683f20000",
+    "engine_sha256": "5033d9d45d669cebd735e8a6be20b54d74b75274f885c9a0e48e52d872104efb",
+    "observed_utc": "2026-10-23T03:16:14.9183497Z"
+  },
+  "code_file": "C:\\Users\\NTD\\Desktop\\Bot Market Demo\\dich-nguoc\\khoi-phuc\\bot-cua-toi-1\\bang-chung\\captures\\luot-20261023-r1\\0000023e5aa10000.bin",
+  "code_base": "0x23e5aa10000",
+  "code_sha256": "e099f124084093c3fdc8651d5f5326709b165248982e5d4eb7394afcbb8177a4",
+  "data_sha256": "2ad9ad0ea90a8f8df88170348a71a070d475174122c9eae7df8deb1fb32c61f4",
+  "function_table_address": "0x23e5aa71aec",
+  "functions": [
+    {
+      "begin_rva": "0x0",
+      "end_rva": "0x57",
+      "unwind_rva": "0x4f000"
+    },
+    {
+      "begin_rva": "0x60",
+      "end_rva": "0x1d8",
+      "unwind_rva": "0x4f008"
+    },
+    {
+      "begin_rva": "0x1e0",
+      "end_rva": "0x3bd",
+      "unwind_rva": "0x4f018"
+    },
+    {
+      "begin_rva": "0x3c0",
+      "end_rva": "0x49d",
+      "unwind_rva": "0x4f028"
+    },
+    {
+      "begin_rva": "0x4a0",
+      "end_rva": "0x5bd",
+      "unwind_rva": "0x4f030"
+    },
+    {
+      "begin_rva": "0x5c0",
+      "end_rva": "0x7d8",
+      "unwind_rva": "0x4f044"
+    },
+    {
+      "begin_rva": "0x7e0",
+      "end_rva": "0x8a5",
+      "unwind_rva": "0x4f054"
+    },
+    {
+      "begin_rva": "0x8c0",
+      "end_rva": "0x8df",
+      "unwind_rva": "0x4f068"
+    },
+    {
+      "begin_rva": "0x8e0",
+      "end_rva": "0x8ff",
+      "unwind_rva": "0x4f070"
+    },
+    {
+      "begin_rva": "0x900",
+      "end_rva": "0x901",
+      "unwind_rva": "0x4f078"
+    },
+    {
+      "begin_rva": "0x910",
+      "end_rva": "0x94f",
+      "unwind_rva": "0x4f084"
+    },
+    {
+      "begin_rva": "0x950",
+      "end_rva": "0xb5e",
+      "unwind_rva": "0x4f098"
+    },
+    {
+      "begin_rva": "0xb60",
+      "end_rva": "0xbcc",
+      "unwind_rva": "0x4f0c0"
+    },
+    {
+      "begin_rva": "0xbd0",
+      "end_rva": "0xc23",
+      "unwind_rva": "0x4f0d8"
+    },
+    {
+      "begin_rva": "0xc30",
+      "end_rva": "0x587a",
+      "unwind_rva": "0x4f0f0"
+    },
+    {
+      "begin_rva": "0x5880",
+      "end_rva": "0x61a9",
+      "unwind_rva": "0x4f11c"
+    },
+    {
+      "begin_rva": "0x61b0",
+      "end_rva": "0x65f3",
+      "unwind_rva": "0x4f144"
+    },
+    {
+      "begin_rva": "0x6600",
+      "end_rva": "0x6a83",
+      "unwind_rva": "0x4f16c"
+    },
+    {
+      "begin_rva": "0x6a90",
+      "end_rva": "0x7306",
+      "unwind_rva": "0x4f194"
+    },
+    {
+      "begin_rva": "0x7310",
+      "end_rva": "0x74f8",
+      "unwind_rva": "0x4f1bc"
+    },
+    {
+      "begin_rva": "0x7500",
+      "end_rva": "0x831d",
+      "unwind_rva": "0x4f1dc"
+    },
+    {
+      "begin_rva": "0x8320",
+      "end_rva": "0xe1ae",
+      "unwind_rva": "0x4f208"
+    },
+    {
+      "begin_rva": "0xe1b0",
+      "end_rva": "0xffac",
+      "unwind_rva": "0x4f240"
+    },
+    {
+      "begin_rva": "0xffb0",
+      "end_rva": "0x10f5f",
+      "unwind_rva": "0x4f274"
+    },
+    {
+      "begin_rva": "0x10f60",
+      "end_rva": "0x173e4",
+      "unwind_rva": "0x4f2b4"
+    },
+    {
+      "begin_rva": "0x173f0",
+      "end_rva": "0x17839",
+      "unwind_rva": "0x4f2e8"
+    },
+    {
+      "begin_rva": "0x17840",
+      "end_rva": "0x17d17",
+      "unwind_rva": "0x4f31c"
+    },
+    {
+      "begin_rva": "0x17d20",
+      "end_rva": "0x18789",
+      "unwind_rva": "0x4f350"
+    },
+    {
+      "begin_rva": "0x18790",
+      "end_rva": "0x18a9f",
+      "unwind_rva": "0x4f378"
+    },
+    {
+      "begin_rva": "0x18aa0",
+      "end_rva": "0x1ef9c",
+      "unwind_rva": "0x4f3a0"
+    },
+    {
+      "begin_rva": "0x1efa0",
+      "end_rva": "0x1f5df",
+      "unwind_rva": "0x4f3e4"
+    },
+    {
+      "begin_rva": "0x1f5e0",
+      "end_rva": "0x2094e",
+      "unwind_rva": "0x4f410"
+    },
+    {
+      "begin_rva": "0x20950",
+      "end_rva": "0x209fe",
+      "unwind_rva": "0x4f438"
+    },
+    {
+      "begin_rva": "0x20a00",
+      "end_rva": "0x2274f",
+      "unwind_rva": "0x4f45c"
+    },
+    {
+      "begin_rva": "0x22750",
+      "end_rva": "0x22bc8",
+      "unwind_rva": "0x4f488"
+    },
+    {
+      "begin_rva": "0x22bd0",
+      "end_rva": "0x22bf8",
+      "unwind_rva": "0x4f4b0"
+    },
+    {
+      "begin_rva": "0x22c00",
+      "end_rva": "0x22c32",
+      "unwind_rva": "0x4f4bc"
+    },
+    {
+      "begin_rva": "0x22c40",
+      "end_rva": "0x231bc",
+      "unwind_rva": "0x4f4d4"
+    },
+    {
+      "begin_rva": "0x231c0",
+      "end_rva": "0x235b6",
+      "unwind_rva": "0x4f500"
+    },
+    {
+      "begin_rva": "0x235c0",
+      "end_rva": "0x23f9f",
+      "unwind_rva": "0x4f520"
+    },
+    {
+      "begin_rva": "0x23fa0",
+      "end_rva": "0x2605b",
+      "unwind_rva": "0x4f548"
+    },
+    {
+      "begin_rva": "0x26060",
+      "end_rva": "0x26356",
+      "unwind_rva": "0x4f574"
+    },
+    {
+      "begin_rva": "0x26360",
+      "end_rva": "0x26598",
+      "unwind_rva": "0x4f598"
+    },
+    {
+      "begin_rva": "0x265a0",
+      "end_rva": "0x2695b",
+      "unwind_rva": "0x4f5c4"
+    },
+    {
+      "begin_rva": "0x26960",
+      "end_rva": "0x26d1b",
+      "unwind_rva": "0x4f5f8"
+    },
+    {
+      "begin_rva": "0x26d20",
+      "end_rva": "0x271e7",
+      "unwind_rva": "0x4f62c"
+    },
+    {
+      "begin_rva": "0x271f0",
+      "end_rva": "0x2abbd",
+      "unwind_rva": "0x4f660"
+    },
+    {
+      "begin_rva": "0x2abc0",
+      "end_rva": "0x2e6c1",
+      "unwind_rva": "0x4f6b0"
+    },
+    {
+      "begin_rva": "0x2e6d0",
+      "end_rva": "0x2f5b8",
+      "unwind_rva": "0x4f700"
+    },
+    {
+      "begin_rva": "0x2f5c0",
+      "end_rva": "0x2f7dd",
+      "unwind_rva": "0x4f744"
+    },
+    {
+      "begin_rva": "0x2f7e0",
+      "end_rva": "0x2f9fd",
+      "unwind_rva": "0x4f770"
+    },
+    {
+      "begin_rva": "0x2fa00",
+      "end_rva": "0x2fcd9",
+      "unwind_rva": "0x4f79c"
+    },
+    {
+      "begin_rva": "0x2fce0",
+      "end_rva": "0x2ffa8",
+      "unwind_rva": "0x4f7c4"
+    },
+    {
+      "begin_rva": "0x2ffb0",
+      "end_rva": "0x2ffd8",
+      "unwind_rva": "0x4f7ec"
+    },
+    {
+      "begin_rva": "0x2ffe0",
+      "end_rva": "0x30008",
+      "unwind_rva": "0x4f800"
+    },
+    {
+      "begin_rva": "0x30010",
+      "end_rva": "0x30313",
+      "unwind_rva": "0x4f814"
+    },
+    {
+      "begin_rva": "0x30320",
+      "end_rva": "0x31f35",
+      "unwind_rva": "0x4f83c"
+    },
+    {
+      "begin_rva": "0x31f40",
+      "end_rva": "0x3210a",
+      "unwind_rva": "0x4f86c"
+    },
+    {
+      "begin_rva": "0x32110",
+      "end_rva": "0x323dc",
+      "unwind_rva": "0x4f894"
+    },
+    {
+      "begin_rva": "0x323e0",
+      "end_rva": "0x325aa",
+      "unwind_rva": "0x4f8c0"
+    },
+    {
+      "begin_rva": "0x325b0",
+      "end_rva": "0x3288c",
+      "unwind_rva": "0x4f8e8"
+    },
+    {
+      "begin_rva": "0x32890",
+      "end_rva": "0x32abd",
+      "unwind_rva": "0x4f914"
+    },
+    {
+      "begin_rva": "0x32ac0",
+      "end_rva": "0x32cdb",
+      "unwind_rva": "0x4f944"
+    },
+    {
+      "begin_rva": "0x32ce0",
+      "end_rva": "0x32dcb",
+      "unwind_rva": "0x4f970"
+    },
+    {
+      "begin_rva": "0x32dd0",
+      "end_rva": "0x336c8",
+      "unwind_rva": "0x4f998"
+    },
+    {
+      "begin_rva": "0x336d0",
+      "end_rva": "0x34148",
+      "unwind_rva": "0x4f9d0"
+    },
+    {
+      "begin_rva": "0x34150",
+      "end_rva": "0x3477d",
+      "unwind_rva": "0x4f9f0"
+    },
+    {
+      "begin_rva": "0x34780",
+      "end_rva": "0x3621b",
+      "unwind_rva": "0x4fa1c"
+    },
+    {
+      "begin_rva": "0x36220",
+      "end_rva": "0x3bfd5",
+      "unwind_rva": "0x4fa54"
+    },
+    {
+      "begin_rva": "0x3bfe0",
+      "end_rva": "0x3c66a",
+      "unwind_rva": "0x4fa88"
+    },
+    {
+      "begin_rva": "0x3c670",
+      "end_rva": "0x3c8c7",
+      "unwind_rva": "0x4faac"
+    },
+    {
+      "begin_rva": "0x3c8d0",
+      "end_rva": "0x3cb2b",
+      "unwind_rva": "0x4fadc"
+    },
+    {
+      "begin_rva": "0x3cb30",
+      "end_rva": "0x3d003",
+      "unwind_rva": "0x4fb0c"
+    },
+    {
+      "begin_rva": "0x3d010",
+      "end_rva": "0x3d1fc",
+      "unwind_rva": "0x4fb3c"
+    },
+    {
+      "begin_rva": "0x3d200",
+      "end_rva": "0x3d597",
+      "unwind_rva": "0x4fb64"
+    },
+    {
+      "begin_rva": "0x3d5a0",
+      "end_rva": "0x3d63b",
+      "unwind_rva": "0x4fb90"
+    },
+    {
+      "begin_rva": "0x3d640",
+      "end_rva": "0x3d6be",
+      "unwind_rva": "0x4fbac"
+    },
+    {
+      "begin_rva": "0x3d6c0",
+      "end_rva": "0x457cb",
+      "unwind_rva": "0x4fbc0"
+    },
+    {
+      "begin_rva": "0x457d0",
+      "end_rva": "0x45b64",
+      "unwind_rva": "0x4fbe8"
+    },
+    {
+      "begin_rva": "0x45b70",
+      "end_rva": "0x4773b",
+      "unwind_rva": "0x4fc1c"
+    },
+    {
+      "begin_rva": "0x47740",
+      "end_rva": "0x4794b",
+      "unwind_rva": "0x4fc48"
+    },
+    {
+      "begin_rva": "0x47950",
+      "end_rva": "0x47d1c",
+      "unwind_rva": "0x4fc68"
+    },
+    {
+      "begin_rva": "0x47d20",
+      "end_rva": "0x4d256",
+      "unwind_rva": "0x4fc90"
+    },
+    {
+      "begin_rva": "0x4d260",
+      "end_rva": "0x4e05b",
+      "unwind_rva": "0x4fcc4"
+    }
+  ],
+  "strings": 1311,
+  "string_refs": 397,
+  "native_labels": 141,
+  "native_signatures": 81,
+  "format_reference": "https://learn.microsoft.com/en-us/cpp/build/exception-handling-x64",
+  "limitations": [
+    "Snapshot is not atomic and does not establish completion of OnInit.",
+    "ASCII UTF-16 strings only; other text and heap buffers are not reconstructed.",
+    "Function table entries are ranges; names and complete trading behavior remain unverified.",
+    "No call-site dispatch overrides from bot 13 are reused."
+  ]
+}

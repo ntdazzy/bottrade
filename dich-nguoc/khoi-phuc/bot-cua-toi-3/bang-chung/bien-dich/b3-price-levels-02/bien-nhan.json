@@ -1,0 +1,15 @@
+{
+  "run": "b3-price-levels-02",
+  "target": "Scripts/bot-cua-toi-3/Bot3PriceLevelsCheck.mq5",
+  "metaeditor_sha256": "cf2750bde55d98a1f3b4e56bcdd4f59300d0cff5caa6760985f7ef2c2cc12229",
+  "exit_code": 1,
+  "errors": 0,
+  "warnings": 0,
+  "result_line": "Result: 0 errors, 0 warnings, 410 ms elapsed, cpu='X64 Regular'",
+  "sources_sha256": {
+    "Include/bot-cua-toi-3/Bot3PriceLevels.mqh": "1cfecf5f324056b64f72a8fb21f446b7ca35f377ae40d4ab0c6859bfe736c413",
+    "Scripts/bot-cua-toi-3/Bot3PriceLevelsCheck.mq5": "a7b9c0e7912f9ed1a8df92ec1778d136383e09ca81816174bd0e2761ad4ddc5d"
+  },
+  "trade_mqh_sha256": "96e6781624534377fe7971cba52cca3d62d1b030bc10d5e4ebf3ed8c541399ed",
+  "binary_sha256": "63acd791240480613cbefbbafdaae448d5a5ec289e1946f07b37bc7a2dd9fdff"
+}

@@ -1,0 +1,2615 @@
+{
+ "git_dir": "C:/Users/NTD/AppData/Local/Temp/Bot-Market-Demo-git-backup-20261022",
+ "commit": "d2c42927f218146f581b8ccf00b355f9840648e2",
+ "commit_tree": "ddf12f6e4bfd00427b9628823f20f9a29027d32b",
+ "so_bot": {
+  "gold-trade-pro-mt5": 1,
+  "goldbot-one-mt5": 2,
+  "the-gold-reaper-mt5": 3,
+  "cryonx-ea-mt5": 4,
+  "dynamic-liquidity-intelligence": 5,
+  "ea-super-trend-xauusd": 6,
+  "gold-beaver": 7,
+  "moondog-ea": 8,
+  "quantum-titan-mt5": 9,
+  "ultimate-breakout-system": 10,
+  "my-ai-gold": 11,
+  "scalping-robot-pro-mt5": 12,
+  "twisterpro-scalper": 13,
+  "ai-golden-life-mt5": 14,
+  "quantum-queen-x-mt5": 15
+ },
+ "ex5_goc_theo_catalog": [
+  {
+   "index": 1,
+   "bot": 14,
+   "sha256": "7f162ecca001271c7359504a795d71b6ba7e6ae4c9930811930627d80c4ae949"
+  },
+  {
+   "index": 2,
+   "bot": 4,
+   "sha256": "0791d1a189dc1805e9764805a978a62fbb9f9b07db192c8cfb2d26b09818d3f9"
+  },
+  {
+   "index": 3,
+   "bot": 5,
+   "sha256": "e69fab805e88ed5306d43748953873958294d97325555907312473086f611523"
+  },
+  {
+   "index": 4,
+   "bot": 7,
+   "sha256": "ea5174fe310381af65984953f113d1b10e422acb95fea41b18491bc40c055885"
+  },
+  {
+   "index": 5,
+   "bot": 1,
+   "sha256": "a3b0de423a06e10ebedc279307b93d7cb9188ba2bb5de77131a913c865b0e922"
+  },
+  {
+   "index": 6,
+   "bot": 2,
+   "sha256": "390d8ab14fc213ff4b8cbe5084bec545526e62c6028516fe21219a59398ce795"
+  },
+  {
+   "index": 7,
+   "bot": 8,
+   "sha256": "d019ae0232a15a121cba3e857d66bfe1b1828ebb8205b6fb509249f00f9f4df6"
+  },
+  {
+   "index": 8,
+   "bot": 9,
+   "sha256": "74a780c9cf6e2c8283dfbbd61bd74d44ce8ea71459d9234245ce2240f02de049"
+  },
+  {
+   "index": 9,
+   "bot": 13,
+   "sha256": "c705e2bbbb66d18e31e2a375625dfdef69243cb73e684af3a846d6ab33fabe73"
+  },
+  {
+   "index": 10,
+   "bot": 10,
+   "sha256": "6309cdfc78467dc7c9e5482bdb77f75d9d1061ebfd3a28dd89697db91317c920"
+  },
+  {
+   "index": 11,
+   "bot": 6,
+   "sha256": "f9a04943cacc50ad0fd4cd1cbf84aaccc3d6b294a438cbd2100aea82e7edef39"
+  },
+  {
+   "index": 12,
+   "bot": 11,
+   "sha256": "e1f1bf70c8e2aecccc3a09555de57015a9955cf96f12609cce3a59fdb71fa306"
+  },
+  {
+   "index": 13,
+   "bot": 15,
+   "sha256": "bd6aa7e27c9748a26304e5e8af6ec796037f0cd4978b1ac973f0f38df4df9ecd"
+  },
+  {
+   "index": 14,
+   "bot": 9,
+   "sha256": "0b4b0f32b37a8f66422e9b875ed90cd31d8bee6d74fcbc9a5e57752dab5e465b"
+  },
+  {
+   "index": 15,
+   "bot": 12,
+   "sha256": "75b8da04760b374d25734b441c6f2424f7e46608260185eaf1e6f8566649b24d"
+  },
+  {
+   "index": 16,
+   "bot": 3,
+   "sha256": "ee063d3d87490afe24e2f4ce85f6b05659320e297b102efd70207f71ca2feb83"
+  },
+  {
+   "index": 17,
+   "bot": 10,
+   "sha256": "7f7e7c0527b93523a4dcbb71da0afa35d23386cbffe68cf1f0092205c03dd4b7"
+  }
+ ],
+ "files": [
+  {
+   "old_path": "dich-nguoc/README.md",
+   "git_blob": "f32be93937536de5afb29b93b5b278d2d478a5a1",
+   "old_sha256": "a6fb633fb80205c48eae0484bb3a8ccab1aeee6bc249fbfd37515b491d69d566",
+   "new_path": "tai-lieu-cu/README-dich-nguoc.md",
+   "sha256": "a6fb633fb80205c48eae0484bb3a8ccab1aeee6bc249fbfd37515b491d69d566",
+   "bytes": 2344,
+   "loai": "cong-cu-hoac-tai-lieu-cu",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/QUY-TRINH.md",
+   "git_blob": "ca74531470ecf0e75907942c90106b92f6cbb539",
+   "old_sha256": "c6bf568699965bfb6804bb1df43c84f6049beedffb7ee983d97450362abc2cec",
+   "new_path": "tai-lieu-cu/QUY-TRINH.md",
+   "sha256": "c6bf568699965bfb6804bb1df43c84f6049beedffb7ee983d97450362abc2cec",
+   "bytes": 7238,
+   "loai": "cong-cu-hoac-tai-lieu-cu",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/catalog.json",
+   "git_blob": "4b622496c2d82fb27b924583ab4e4e7741f852b3",
+   "old_sha256": "72ce036bda446b91a040b45f1754c156908bffb16b98e2f47cac831e31a08e3e",
+   "new_path": "tai-lieu-cu/catalog.json",
+   "sha256": "72ce036bda446b91a040b45f1754c156908bffb16b98e2f47cac831e31a08e3e",
+   "bytes": 9320,
+   "loai": "cong-cu-hoac-tai-lieu-cu",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/requirements.txt",
+   "git_blob": "3202df0ee82e031243b3ff56cebb99cefa10e145",
+   "old_sha256": "40ba8069b2c2bb723e399b119ce94a0806acf19849bb6040897c3adb4a6947f2",
+   "new_path": "cong-cu-cu/requirements.txt",
+   "sha256": "40ba8069b2c2bb723e399b119ce94a0806acf19849bb6040897c3adb4a6947f2",
+   "bytes": 31,
+   "loai": "cong-cu-hoac-tai-lieu-cu",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/tools/README.md",
+   "git_blob": "295b6474c128a2315b06624496874d742238acbf",
+   "old_sha256": "0e7cdf2517cd53226ca2fc48398dd82f822e5bf182685127c927df5908a5161b",
+   "new_path": "cong-cu-cu/README.md",
+   "sha256": "0e7cdf2517cd53226ca2fc48398dd82f822e5bf182685127c927df5908a5161b",
+   "bytes": 5275,
+   "loai": "cong-cu-hoac-tai-lieu-cu",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/tools/inspect-ex5-running-code.py",
+   "git_blob": "bee403f9d8a53bff5b4bd69193e863849f02495e",
+   "old_sha256": "1fe88e82434722a6c9c58d7b200ef4a0b36c8cde2106e5d41f6ccc7a300391d0",
+   "new_path": "cong-cu-cu/inspect-ex5-running-code.py",
+   "sha256": "1fe88e82434722a6c9c58d7b200ef4a0b36c8cde2106e5d41f6ccc7a300391d0",
+   "bytes": 13132,
+   "loai": "cong-cu-hoac-tai-lieu-cu",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/tools/run-market-ex5-capture.ps1",
+   "git_blob": "72635f22193820b5e1ff5395e9d081106e1a3401",
+   "old_sha256": "e8026c61255e3b61ed30a4f5e6f973738fe1d3bd12edef359fd7795779b2fbc0",
+   "new_path": "cong-cu-cu/run-market-ex5-capture.ps1",
+   "sha256": "e8026c61255e3b61ed30a4f5e6f973738fe1d3bd12edef359fd7795779b2fbc0",
+   "bytes": 6103,
+   "loai": "cong-cu-hoac-tai-lieu-cu",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/tools/run_market.py",
+   "git_blob": "d8e2d56aa3bac2c6878c76ee65650a39202de632",
+   "old_sha256": "068bb7ef1c623a625c2838cfac538958d3d8b38212cb142acdaed9b76682b040",
+   "new_path": "cong-cu-cu/run_market.py",
+   "sha256": "068bb7ef1c623a625c2838cfac538958d3d8b38212cb142acdaed9b76682b040",
+   "bytes": 4105,
+   "loai": "cong-cu-hoac-tai-lieu-cu",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/tools/build.ps1",
+   "git_blob": "539677e2d8aa54416cf81c2c4f51553fdfb708d9",
+   "old_sha256": "13351722eb6c7e5bcfadc45ddd0eca43a1fc4bee7f8894e02f8da5a0f15c811d",
+   "new_path": "cong-cu-cu/build.ps1",
+   "sha256": "13351722eb6c7e5bcfadc45ddd0eca43a1fc4bee7f8894e02f8da5a0f15c811d",
+   "bytes": 3881,
+   "loai": "cong-cu-hoac-tai-lieu-cu",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/tools/project_paths.py",
+   "git_blob": "0383e8726012947414d702d119bb61a8a9a5676a",
+   "old_sha256": "bdf4f81dcf4dcc2238be7062c94684e7ca851c8cf9f846311362c3fde61932cb",
+   "new_path": "cong-cu-cu/project_paths.py",
+   "sha256": "bdf4f81dcf4dcc2238be7062c94684e7ca851c8cf9f846311362c3fde61932cb",
+   "bytes": 1830,
+   "loai": "cong-cu-hoac-tai-lieu-cu",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/tools/analyze-api-probes.py",
+   "git_blob": "0921401efdea4517513e71631d76517285d0792e",
+   "old_sha256": "bcd198b74db415f26f327ee2f6367a74d30d708df2fb289200447cd9bbadf7ce",
+   "new_path": "cong-cu-cu/analyze-api-probes.py",
+   "sha256": "bcd198b74db415f26f327ee2f6367a74d30d708df2fb289200447cd9bbadf7ce",
+   "bytes": 6236,
+   "loai": "cong-cu-hoac-tai-lieu-cu",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/tools/verify-project.py",
+   "git_blob": "d6ee0474bc1be16d65f7d3b7a4623f7dba499caf",
+   "old_sha256": "a67fc2d2e352b20d395b7f7edeae9f407be3940c5b06be9bb734d26b5c967941",
+   "new_path": "cong-cu-cu/verify-project.py",
+   "sha256": "a67fc2d2e352b20d395b7f7edeae9f407be3940c5b06be9bb734d26b5c967941",
+   "bytes": 4206,
+   "loai": "cong-cu-hoac-tai-lieu-cu",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/docs/environment/ghidra-receipt.json",
+   "git_blob": "d63fcd0c2edbe6909625fb67db50180e59d50b99",
+   "old_sha256": "1d4833b6b52fcf0db792225d0fba3118b9dffc230258ace0e7b7427823fc0475",
+   "new_path": "cong-cu-cu/moi-truong/ghidra-receipt.json",
+   "sha256": "1d4833b6b52fcf0db792225d0fba3118b9dffc230258ace0e7b7427823fc0475",
+   "bytes": 275,
+   "loai": "cong-cu-hoac-tai-lieu-cu",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/docs/environment/jdk-receipt.json",
+   "git_blob": "1a2800887587f30de1924ddc6bd4b18dd92a0bfc",
+   "old_sha256": "397fb39bf7c70361039689331ce50d1cb823fa82a4dbc5bff386264ee06ce8d3",
+   "new_path": "cong-cu-cu/moi-truong/jdk-receipt.json",
+   "sha256": "397fb39bf7c70361039689331ce50d1cb823fa82a4dbc5bff386264ee06ce8d3",
+   "bytes": 222,
+   "loai": "cong-cu-hoac-tai-lieu-cu",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/tools/ghidra/AnnotateTwister.java",
+   "git_blob": "414c7f769ede5e439ef4ab7bc50e337abb4c4202",
+   "old_sha256": "969400d00a5435c08d74b2b40cc0067e12f8cad6c684e33a892c4b70e70dca69",
+   "new_path": "cong-cu-cu/ghidra/AnnotateTwister.java",
+   "sha256": "969400d00a5435c08d74b2b40cc0067e12f8cad6c684e33a892c4b70e70dca69",
+   "bytes": 5403,
+   "loai": "cong-cu-hoac-tai-lieu-cu",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/tools/ghidra/ExportEx5Code.java",
+   "git_blob": "675217fe97686b351fbc4ac1e38b3f5190ab1b91",
+   "old_sha256": "84d08ec85a13e4527b5171dd21c2ab142cec2b27f07195f1bc3c7be66d5b8280",
+   "new_path": "cong-cu-cu/ghidra/ExportEx5Code.java",
+   "sha256": "84d08ec85a13e4527b5171dd21c2ab142cec2b27f07195f1bc3c7be66d5b8280",
+   "bytes": 3858,
+   "loai": "cong-cu-hoac-tai-lieu-cu",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/tools/ghidra/LoadEx5ProgramData.java",
+   "git_blob": "ff8d67aefec61b869a09c394604f7babf78f91ca",
+   "old_sha256": "1792c66dc9408870d40d8da4778f678e3c56a00f20069d16a63b68f1c3bd7828",
+   "new_path": "cong-cu-cu/ghidra/LoadEx5ProgramData.java",
+   "sha256": "1792c66dc9408870d40d8da4778f678e3c56a00f20069d16a63b68f1c3bd7828",
+   "bytes": 3763,
+   "loai": "cong-cu-hoac-tai-lieu-cu",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/tools/ghidra/OverrideMqlDispatchCalls.java",
+   "git_blob": "25d16279f1e1bc0ade00c8d802a910d5ee549422",
+   "old_sha256": "954506023ba7eef31c866ca9a4c3350f947d29ee3ecec083a0e9e753d2d6ebf9",
+   "new_path": "cong-cu-cu/ghidra/OverrideMqlDispatchCalls.java",
+   "sha256": "954506023ba7eef31c866ca9a4c3350f947d29ee3ecec083a0e9e753d2d6ebf9",
+   "bytes": 2899,
+   "loai": "cong-cu-hoac-tai-lieu-cu",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/tools/ghidra/SetEx5CaptureBase.java",
+   "git_blob": "07ba8329d8fc990d606dbc068d7ff121a134140a",
+   "old_sha256": "fe3ea247272639b01aac36961048a68c9681db75eec7476747524e59c4371f80",
+   "new_path": "cong-cu-cu/ghidra/SetEx5CaptureBase.java",
+   "sha256": "fe3ea247272639b01aac36961048a68c9681db75eec7476747524e59c4371f80",
+   "bytes": 618,
+   "loai": "cong-cu-hoac-tai-lieu-cu",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/twisterpro-scalper/analysis/TwisterPro-Scalper-annotated-v5.c",
+   "git_blob": "3d0ca51bfd5fc64a75fbeae27568a68a36ba52b2",
+   "old_sha256": "8c88285201ae2b6fafdc27463002e111f74b3a4d3f2b2ce2f1a5a66cba573f21",
+   "new_path": "bot-cua-toi-13/phan-tich/ma-trung-gian-v5.c",
+   "sha256": "8c88285201ae2b6fafdc27463002e111f74b3a4d3f2b2ce2f1a5a66cba573f21",
+   "bytes": 418118,
+   "loai": "ma-trung-gian",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/twisterpro-scalper/analysis/TwisterPro-Scalper-annotated-v5.c.summary.json",
+   "git_blob": "ffafca05503dc984454dac16dcfecd3c4c678a4f",
+   "old_sha256": "17e1ade9c8aee81b9a57cb9bb7356229b680f7db13a15d6ecb805332fb335d77",
+   "new_path": "bot-cua-toi-13/phan-tich/ma-trung-gian-v5.c.summary.json",
+   "sha256": "17e1ade9c8aee81b9a57cb9bb7356229b680f7db13a15d6ecb805332fb335d77",
+   "bytes": 39,
+   "loai": "bang-chung-hoac-ghi-chu",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/twisterpro-scalper/analysis/reconstruction-notes/core-map.md",
+   "git_blob": "bd13e3ca3477c134ec10500e187989317f324818",
+   "old_sha256": "541628c2f0e4660a6997e039bab56a68cbabcef29ba6f17c5629b7a065d023ff",
+   "new_path": "bot-cua-toi-13/phan-tich/ghi-chu-cu/core-map.md",
+   "sha256": "541628c2f0e4660a6997e039bab56a68cbabcef29ba6f17c5629b7a065d023ff",
+   "bytes": 1871,
+   "loai": "bang-chung-hoac-ghi-chu",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/twisterpro-scalper/analysis/reconstruction-notes/trade-map.md",
+   "git_blob": "3c259459e957598d08206a71325fa1ff3d1d2700",
+   "old_sha256": "a98a8baa96200ca0146a33cf0ceba206b4a7228f4b177bf11b42e086e4d9dced",
+   "new_path": "bot-cua-toi-13/phan-tich/ghi-chu-cu/trade-map.md",
+   "sha256": "a98a8baa96200ca0146a33cf0ceba206b4a7228f4b177bf11b42e086e4d9dced",
+   "bytes": 1208,
+   "loai": "bang-chung-hoac-ghi-chu",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/twisterpro-scalper/analysis/reconstruction-notes/dispatch-override-review.md",
+   "git_blob": "665d73ded8ac4df65aa3ea3162176165fa69643a",
+   "old_sha256": "84a453c840ef73d7ad8458eaaafb290e7dc02b552894b3f6ecec215b38980521",
+   "new_path": "bot-cua-toi-13/phan-tich/ghi-chu-cu/dispatch-override-review.md",
+   "sha256": "84a453c840ef73d7ad8458eaaafb290e7dc02b552894b3f6ecec215b38980521",
+   "bytes": 4038,
+   "loai": "bang-chung-hoac-ghi-chu",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/twisterpro-scalper/tests/check-twister-filters.py",
+   "git_blob": "599ab97eb52990ed39da7767de255f9c9f62957e",
+   "old_sha256": "178e3e4e17fbea183bc6d44364426517b5b08ad32404204e0d09736b91748cbf",
+   "new_path": "bot-cua-toi-13/kiem-tra/cu/check-filters.py",
+   "sha256": "178e3e4e17fbea183bc6d44364426517b5b08ad32404204e0d09736b91748cbf",
+   "bytes": 13659,
+   "loai": "bang-chung-hoac-ghi-chu",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/twisterpro-scalper/tests/check-twister-settings.py",
+   "git_blob": "bb0bee2675fd70e0249283dd2f432a652ef1a68a",
+   "old_sha256": "9debb98da89f5f8d83db52c8a9e898d367293db0c20845351eb777f5dc5a6fbe",
+   "new_path": "bot-cua-toi-13/kiem-tra/cu/check-settings.py",
+   "sha256": "9debb98da89f5f8d83db52c8a9e898d367293db0c20845351eb777f5dc5a6fbe",
+   "bytes": 9222,
+   "loai": "bang-chung-hoac-ghi-chu",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/twisterpro-scalper/verification/setup.json",
+   "git_blob": "b2e617b9182d4c408d0d6a53550b02c0459639f4",
+   "old_sha256": "7bbe634ca05211f1f0ff7fa4f159c9c59c3c82ab0b99514dbc5176a22485df0a",
+   "new_path": "bot-cua-toi-13/bang-chung/may-thu-cu-setup.json",
+   "sha256": "7bbe634ca05211f1f0ff7fa4f159c9c59c3c82ab0b99514dbc5176a22485df0a",
+   "bytes": 1830,
+   "loai": "bang-chung-hoac-ghi-chu",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/twisterpro-scalper/verification/native-code-manifest.json",
+   "git_blob": "4728face1b1b89ef20fed9e0e51df779e7087a6d",
+   "old_sha256": "6acc20ed62f3735df21bbd93129225c9f3a1c47c2b0b06cf15ff882148fde2a0",
+   "new_path": "bot-cua-toi-13/bang-chung/native-code-manifest.json",
+   "sha256": "6acc20ed62f3735df21bbd93129225c9f3a1c47c2b0b06cf15ff882148fde2a0",
+   "bytes": 10517,
+   "loai": "bang-chung-hoac-ghi-chu",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/twisterpro-scalper/verification/twister-function-call-graph-v2.json",
+   "git_blob": "0d965b0cc5541a37bc130a9f8a3fa45b5834880e",
+   "old_sha256": "c4bf7908568dae8b584c6f30c3d097e4ca342e61e0c3e7ec2ea345a777aeb76f",
+   "new_path": "bot-cua-toi-13/bang-chung/call-graph-v2.json",
+   "sha256": "c4bf7908568dae8b584c6f30c3d097e4ca342e61e0c3e7ec2ea345a777aeb76f",
+   "bytes": 23012,
+   "loai": "bang-chung-hoac-ghi-chu",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/twisterpro-scalper/verification/twister-dispatch-callsite-types.json",
+   "git_blob": "6406058824bbf5f1ab4d9c59fe6a96fe73e5b939",
+   "old_sha256": "a559598654e00697c3d51b4613a10ae4538408d7471a9cbb71e910adb43630ef",
+   "new_path": "bot-cua-toi-13/bang-chung/dispatch-callsite-types.json",
+   "sha256": "a559598654e00697c3d51b4613a10ae4538408d7471a9cbb71e910adb43630ef",
+   "bytes": 14116,
+   "loai": "bang-chung-hoac-ghi-chu",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/twisterpro-scalper/verification/dispatch-additional-four.json",
+   "git_blob": "fb0d064930ff74214554144ed8093b60579d32c8",
+   "old_sha256": "b0c9383e7d84f97fc3776256786031c61cda971d71f1cf9d94f483d76cb4ed5e",
+   "new_path": "bot-cua-toi-13/bang-chung/dispatch-additional-four.json",
+   "sha256": "b0c9383e7d84f97fc3776256786031c61cda971d71f1cf9d94f483d76cb4ed5e",
+   "bytes": 1842,
+   "loai": "bang-chung-hoac-ghi-chu",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/twisterpro-scalper/verification/dispatch-v5-init-verification.json",
+   "git_blob": "808f8b5e4abb9437d93965c3627d19de6d388d00",
+   "old_sha256": "6c203a31216bb424ba33d97419b7550824470bf45509ecec056f25c0f2666032",
+   "new_path": "bot-cua-toi-13/bang-chung/dispatch-v5-init-verification.json",
+   "sha256": "6c203a31216bb424ba33d97419b7550824470bf45509ecec056f25c0f2666032",
+   "bytes": 462,
+   "loai": "bang-chung-hoac-ghi-chu",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/twisterpro-scalper/verification/twister-inputs-from-log.json",
+   "git_blob": "2e20a95e010771ab6c0b5428ad7d74e08ec2d15a",
+   "old_sha256": "7cab4e18710647048ade618f203001a0dfbe20e36bcc58ba865e943137c0ead5",
+   "new_path": "bot-cua-toi-13/bang-chung/tham-so-tu-nhat-ky.json",
+   "sha256": "7cab4e18710647048ade618f203001a0dfbe20e36bcc58ba865e943137c0ead5",
+   "bytes": 624,
+   "loai": "bang-chung-hoac-ghi-chu",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/twisterpro-scalper/verification/twisterdata1_09-job.json",
+   "git_blob": "80d20d3320ad4576e93e9af326b3a00f5b3bc9b2",
+   "old_sha256": "e87e16428e8cc2960463410b4ba97e395ac02129bb3853f8db6b7df2054285d1",
+   "new_path": "bot-cua-toi-13/bang-chung/ban-chup-ma-may/lenh-chup.json",
+   "sha256": "e87e16428e8cc2960463410b4ba97e395ac02129bb3853f8db6b7df2054285d1",
+   "bytes": 217,
+   "loai": "bang-chung-hoac-ghi-chu",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/twisterpro-scalper/verification/twisterdata1_09-result.json",
+   "git_blob": "67fcba115574f43cecc54c884a03257574063cf0",
+   "old_sha256": "0eb35074945923dd3d11421ff2a26f1a55c73623c1ee0ee5ed61e06010213dec",
+   "new_path": "bot-cua-toi-13/bang-chung/ban-chup-ma-may/ket-qua-chup.json",
+   "sha256": "0eb35074945923dd3d11421ff2a26f1a55c73623c1ee0ee5ed61e06010213dec",
+   "bytes": 424,
+   "loai": "bang-chung-hoac-ghi-chu",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/twisterpro-scalper/verification/behavior-check/matrix-v2.json",
+   "git_blob": "51e9ada846300001508a5bd43857698eb20ea76f",
+   "old_sha256": "67754b13dbf8d1af3f0a65770ac0e315ee28154b60e9762327722982c912e135",
+   "new_path": "bot-cua-toi-13/bang-chung/so-hanh-vi/matrix-v2.json",
+   "sha256": "67754b13dbf8d1af3f0a65770ac0e315ee28154b60e9762327722982c912e135",
+   "bytes": 8462,
+   "loai": "bang-chung-hoac-ghi-chu",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/twisterpro-scalper/verification/behavior-check/version1/comparison.json",
+   "git_blob": "5ed6da0ce2c91cc9bbb4c46a6d975e00a88338b3",
+   "old_sha256": "1363a636c92281d411859b740c5b45c8e56d9c06b510745cc1737953b3de927d",
+   "new_path": "bot-cua-toi-13/bang-chung/so-hanh-vi/version1-comparison.json",
+   "sha256": "1363a636c92281d411859b740c5b45c8e56d9c06b510745cc1737953b3de927d",
+   "bytes": 529,
+   "loai": "bang-chung-hoac-ghi-chu",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/twisterpro-scalper/verification/behavior-check/version2/comparison.json",
+   "git_blob": "24c9c9b766400db102afc670cb04de671ce7ec5b",
+   "old_sha256": "84849475a00dc47c694d7e4e6c5176c88eff469ae994953eb413203d05937107",
+   "new_path": "bot-cua-toi-13/bang-chung/so-hanh-vi/version2-comparison.json",
+   "sha256": "84849475a00dc47c694d7e4e6c5176c88eff469ae994953eb413203d05937107",
+   "bytes": 3243,
+   "loai": "bang-chung-hoac-ghi-chu",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/twisterpro-scalper/verification/behavior-check/version2/TwisterProRecovered.mq5",
+   "git_blob": "01160c442145d4b5f68d0e8015aae32956c4891c",
+   "old_sha256": "393bcc185bbb658913b4dcf4047392997d6f00a823c380aa09797a1614bdd0fd",
+   "new_path": "bot-cua-toi-13/bang-chung/so-hanh-vi/version2-nguon-da-chay.mq5.txt",
+   "sha256": "393bcc185bbb658913b4dcf4047392997d6f00a823c380aa09797a1614bdd0fd",
+   "bytes": 24545,
+   "loai": "bang-chung-hoac-ghi-chu",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/twisterpro-scalper/verification/behavior-check/version2/TwisterProRecovered.build.json",
+   "git_blob": "bfd553c5246f4009c47a564ff01bf8430e053675",
+   "old_sha256": "6affd5dbaf71937a472f82f88f6059fff82640fdb04ba3fd676a6dc95cfd8124",
+   "new_path": "bot-cua-toi-13/bang-chung/so-hanh-vi/version2-build.json",
+   "sha256": "6affd5dbaf71937a472f82f88f6059fff82640fdb04ba3fd676a6dc95cfd8124",
+   "bytes": 2571,
+   "loai": "bang-chung-hoac-ghi-chu",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/twisterpro-scalper/verification/settings-check/cases.json",
+   "git_blob": "47f724ff3895e7ca57690caadc9b18375874d10a",
+   "old_sha256": "03a8cd39e2c22b4748dc31fee7880f8794cb428be47e24ccce900cdd703c1818",
+   "new_path": "bot-cua-toi-13/bang-chung/kiem-khoi-tao/cases.json",
+   "sha256": "03a8cd39e2c22b4748dc31fee7880f8794cb428be47e24ccce900cdd703c1818",
+   "bytes": 3717,
+   "loai": "bang-chung-hoac-ghi-chu",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/twisterpro-scalper/verification/settings-check/twsettings_v1/comparison.json",
+   "git_blob": "2147cb4d0b71e4829a0e5d14c9f5cd852a73dd1f",
+   "old_sha256": "b3ac6483ad878b54d408031168ac506937cea1e92839e277fe9029319cdf6237",
+   "new_path": "bot-cua-toi-13/bang-chung/kiem-khoi-tao/comparison.json",
+   "sha256": "b3ac6483ad878b54d408031168ac506937cea1e92839e277fe9029319cdf6237",
+   "bytes": 578,
+   "loai": "bang-chung-hoac-ghi-chu",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/twisterpro-scalper/verification/settings-check/twsettings_v1/receipt.json",
+   "git_blob": "87a865995fef761b09714755bc6e79d563784e29",
+   "old_sha256": "4a8edacc40cb047082b0a74ba8caf1018ddbff99f6cd163ddde90d1833d006bb",
+   "new_path": "bot-cua-toi-13/bang-chung/kiem-khoi-tao/receipt.json",
+   "sha256": "4a8edacc40cb047082b0a74ba8caf1018ddbff99f6cd163ddde90d1833d006bb",
+   "bytes": 26066,
+   "loai": "bang-chung-hoac-ghi-chu",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/twisterpro-scalper/verification/filter-check/twfilters_v3/comparison.json",
+   "git_blob": "6afd6d087d2f22a4acfac51ad229285403c486a5",
+   "old_sha256": "75ea45710ac8c8b9a1c8a22b24df3261bef2de4f802b9cc9093e803db6882259",
+   "new_path": "bot-cua-toi-13/bang-chung/kiem-bo-loc/comparison.json",
+   "sha256": "75ea45710ac8c8b9a1c8a22b24df3261bef2de4f802b9cc9093e803db6882259",
+   "bytes": 436,
+   "loai": "bang-chung-hoac-ghi-chu",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/twisterpro-scalper/verification/filter-check/twfilters_v3/receipt.json",
+   "git_blob": "d4e964313f69ea65375d287346d2e31e0ca9981e",
+   "old_sha256": "0378de9957cba6af4591e80b81e7622ca0909ea8d1b81922427759ca3b110039",
+   "new_path": "bot-cua-toi-13/bang-chung/kiem-bo-loc/receipt.json",
+   "sha256": "0378de9957cba6af4591e80b81e7622ca0909ea8d1b81922427759ca3b110039",
+   "bytes": 217470,
+   "loai": "bang-chung-hoac-ghi-chu",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/twisterpro-scalper/verification/api-probe-v6/copy-volume-operation-evidence.json",
+   "git_blob": "220a1e5c76daba68f5a0d8a68fe13992e636aa85",
+   "old_sha256": "431ec06616ed8c041241f9f32476df7489f4106641bf49d053f6afd5f31bc9d1",
+   "new_path": "bot-cua-toi-13/bang-chung/doi-chung-api/copy-volume-operation-evidence.json",
+   "sha256": "431ec06616ed8c041241f9f32476df7489f4106641bf49d053f6afd5f31bc9d1",
+   "bytes": 740,
+   "loai": "bang-chung-hoac-ghi-chu",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/twisterpro-scalper/verification/api-probe-v6/probes.json",
+   "git_blob": "7668382d1bb2d4ee53d8805020f486e183767ec6",
+   "old_sha256": "0b6361c4a9c09df9e28c17c99f3ed012a6fc6fec83246058e560873b500dae05",
+   "new_path": "bot-cua-toi-13/bang-chung/doi-chung-api/probes.json",
+   "sha256": "0b6361c4a9c09df9e28c17c99f3ed012a6fc6fec83246058e560873b500dae05",
+   "bytes": 29327,
+   "loai": "bang-chung-hoac-ghi-chu",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/twisterpro-scalper/verification/enum-probe-v1/enum-values.json",
+   "git_blob": "277666c541e61da43fd935c5b6421134d07b881b",
+   "old_sha256": "2691201db0abacfe0ea73bfc6212e3aa08fb9de4aa2472ace9f7bf3f86677f43",
+   "new_path": "bot-cua-toi-13/bang-chung/doi-chung-api/enum-values.json",
+   "sha256": "2691201db0abacfe0ea73bfc6212e3aa08fb9de4aa2472ace9f7bf3f86677f43",
+   "bytes": 21244,
+   "loai": "bang-chung-hoac-ghi-chu",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/twisterpro-scalper/verification/enum-probe-v1/types.json",
+   "git_blob": "ad502e73a36e6b3c98dbe41f34db4223ac4029c7",
+   "old_sha256": "cd512f8c32f02b246c778488888af1123d2f6772417aa1a451460f8ebdb7a952",
+   "new_path": "bot-cua-toi-13/bang-chung/doi-chung-api/enum-types.json",
+   "sha256": "cd512f8c32f02b246c778488888af1123d2f6772417aa1a451460f8ebdb7a952",
+   "bytes": 1176,
+   "loai": "bang-chung-hoac-ghi-chu",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/twisterpro-scalper/analysis/twister-meta-v2/data.tsv",
+   "git_blob": "e2a292f3105f83b89fed6a28ed5d230999ba606a",
+   "old_sha256": "39976a59f3968831a7ad0e796687a02d5048ac9a0ed51cefe5199a43539623f7",
+   "new_path": "bot-cua-toi-13/phan-tich/ghidra-nhap/data.tsv",
+   "sha256": "39976a59f3968831a7ad0e796687a02d5048ac9a0ed51cefe5199a43539623f7",
+   "bytes": 90,
+   "loai": "bang-chung-hoac-ghi-chu",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/twisterpro-scalper/analysis/twister-meta-v2/functions.tsv",
+   "git_blob": "27afd5f6e2aea3213f28db53bd2230f07b7eee1b",
+   "old_sha256": "a9901a6dbccaeae6c1e4e6dbad50fd8f2216e618d5360fbcb4e3333dc9c65a6e",
+   "new_path": "bot-cua-toi-13/phan-tich/ghidra-nhap/functions.tsv",
+   "sha256": "a9901a6dbccaeae6c1e4e6dbad50fd8f2216e618d5360fbcb4e3333dc9c65a6e",
+   "bytes": 1824,
+   "loai": "bang-chung-hoac-ghi-chu",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/twisterpro-scalper/analysis/twister-meta-v2/import.json",
+   "git_blob": "20ee4faa4f88e1c4f1e837ac37877107450d7469",
+   "old_sha256": "c9911477f67a09fc810797bc0d1a41d3eba7d16947a9861d42bf08e689135e19",
+   "new_path": "bot-cua-toi-13/phan-tich/ghidra-nhap/import.json",
+   "sha256": "c9911477f67a09fc810797bc0d1a41d3eba7d16947a9861d42bf08e689135e19",
+   "bytes": 223,
+   "loai": "bang-chung-hoac-ghi-chu",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/twisterpro-scalper/analysis/twister-meta-v2/refs.tsv",
+   "git_blob": "9461d0d22d3c251ddc57b17ce8758e3ae5b98bce",
+   "old_sha256": "01041776185dbdcd6ef4c91c443849e2298fb3f6da12803283f9b99f090fe549",
+   "new_path": "bot-cua-toi-13/phan-tich/ghidra-nhap/refs.tsv",
+   "sha256": "01041776185dbdcd6ef4c91c443849e2298fb3f6da12803283f9b99f090fe549",
+   "bytes": 4344,
+   "loai": "bang-chung-hoac-ghi-chu",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/twisterpro-scalper/analysis/twister-meta-v2/seeds.txt",
+   "git_blob": "38ec8e3102106068bafb22ac8febc058dc71565e",
+   "old_sha256": "b3961fa38908fcad47b719b3aab3740e57ce93b73a47a626f95429a9fac7db1c",
+   "new_path": "bot-cua-toi-13/phan-tich/ghidra-nhap/seeds.txt",
+   "sha256": "b3961fa38908fcad47b719b3aab3740e57ce93b73a47a626f95429a9fac7db1c",
+   "bytes": 912,
+   "loai": "bang-chung-hoac-ghi-chu",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/twisterpro-scalper/analysis/twister-meta-v2/strings.tsv",
+   "git_blob": "5d009d4b8a148527d4c8e7ad87790bdf5578ea1c",
+   "old_sha256": "8fe2ccb8d109517ca48b8067b3f8d3c0a0a09635f254a237fadaee793f623998",
+   "new_path": "bot-cua-toi-13/phan-tich/ghidra-nhap/strings.tsv",
+   "sha256": "8fe2ccb8d109517ca48b8067b3f8d3c0a0a09635f254a237fadaee793f623998",
+   "bytes": 8277,
+   "loai": "bang-chung-hoac-ghi-chu",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/twisterpro-scalper/analysis/twister-symbols-v4/dispatch-calls.tsv",
+   "git_blob": "292796797f5161c4af2b4c352423b35c5d3895bb",
+   "old_sha256": "14c10a8b7632dc02917d4b5fa0bcb8b4843cf7e7bc4d3dd25ccb3440d245c18f",
+   "new_path": "bot-cua-toi-13/phan-tich/ky-hieu-v4/dispatch-calls.tsv",
+   "sha256": "14c10a8b7632dc02917d4b5fa0bcb8b4843cf7e7bc4d3dd25ccb3440d245c18f",
+   "bytes": 3628,
+   "loai": "bang-chung-hoac-ghi-chu",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/twisterpro-scalper/analysis/twister-symbols-v4/inputs.json",
+   "git_blob": "349d11418ae902d21c18a351a864e092107cb104",
+   "old_sha256": "4a29a47b47ac611690909f5fc662e65c354c878eb50fdfad59419fd1df10af40",
+   "new_path": "bot-cua-toi-13/phan-tich/ky-hieu-v4/inputs.json",
+   "sha256": "4a29a47b47ac611690909f5fc662e65c354c878eb50fdfad59419fd1df10af40",
+   "bytes": 6302,
+   "loai": "bang-chung-hoac-ghi-chu",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/twisterpro-scalper/analysis/twister-symbols-v4/inputs.tsv",
+   "git_blob": "50f22c891bf568841b60b740a557acb420582c1a",
+   "old_sha256": "0c36226f9176d84051633bc69a921b6f4b86180171f38e52a4c4223c900d3232",
+   "new_path": "bot-cua-toi-13/phan-tich/ky-hieu-v4/inputs.tsv",
+   "sha256": "0c36226f9176d84051633bc69a921b6f4b86180171f38e52a4c4223c900d3232",
+   "bytes": 841,
+   "loai": "bang-chung-hoac-ghi-chu",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/twisterpro-scalper/analysis/twister-symbols-v4/native-labels.json",
+   "git_blob": "402a8d2e98268b9f8a20b33d5844cf3ddecc5b98",
+   "old_sha256": "4183bcbc3998bec15268737b25653fe97b137c628c77ab02cadea994c4b88fba",
+   "new_path": "bot-cua-toi-13/phan-tich/ky-hieu-v4/native-labels.json",
+   "sha256": "4183bcbc3998bec15268737b25653fe97b137c628c77ab02cadea994c4b88fba",
+   "bytes": 27696,
+   "loai": "bang-chung-hoac-ghi-chu",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/twisterpro-scalper/analysis/twister-symbols-v4/native-labels.tsv",
+   "git_blob": "d45480043e02802d79b519abb8a301be44763e21",
+   "old_sha256": "88b853b7ecbb6853a50b6d7cfef91641ee8dfab205422e86c1faf7bb84ebdff0",
+   "new_path": "bot-cua-toi-13/phan-tich/ky-hieu-v4/native-labels.tsv",
+   "sha256": "88b853b7ecbb6853a50b6d7cfef91641ee8dfab205422e86c1faf7bb84ebdff0",
+   "bytes": 4705,
+   "loai": "bang-chung-hoac-ghi-chu",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/twisterpro-scalper/analysis/twister-symbols-v4/native-signatures.tsv",
+   "git_blob": "f7793adb6dc09adb27dc5ec73c37416571a2d7c3",
+   "old_sha256": "feb881b445034ec43d49f79b38c727bb81677e7fb78d360d4da73732e0c189bb",
+   "new_path": "bot-cua-toi-13/phan-tich/ky-hieu-v4/native-signatures.tsv",
+   "sha256": "feb881b445034ec43d49f79b38c727bb81677e7fb78d360d4da73732e0c189bb",
+   "bytes": 4196,
+   "loai": "bang-chung-hoac-ghi-chu",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/twisterpro-scalper/analysis/twister-symbols-v4/predefined.tsv",
+   "git_blob": "319015523f43a594219e3b22caed9bb60d2e1db2",
+   "old_sha256": "d5c28dbda82b92dce77e37af8f5f08b796b1d40cada94c61e8465aac2775b023",
+   "new_path": "bot-cua-toi-13/phan-tich/ky-hieu-v4/predefined.tsv",
+   "sha256": "d5c28dbda82b92dce77e37af8f5f08b796b1d40cada94c61e8465aac2775b023",
+   "bytes": 245,
+   "loai": "bang-chung-hoac-ghi-chu",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/twisterpro-scalper/analysis/twister-symbols-v4/return-channel-correction.json",
+   "git_blob": "fbf1a3757effb3d565c943b56800f12bace8d5b0",
+   "old_sha256": "2eb56fc1f292ea4132bd8f3d48237a1f2132ba433bc6133f28e3ca9cfe460645",
+   "new_path": "bot-cua-toi-13/phan-tich/ky-hieu-v4/return-channel-correction.json",
+   "sha256": "2eb56fc1f292ea4132bd8f3d48237a1f2132ba433bc6133f28e3ca9cfe460645",
+   "bytes": 596,
+   "loai": "bang-chung-hoac-ghi-chu",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/twisterpro-scalper/analysis/twister-symbols-v4/state.tsv",
+   "git_blob": "e6c40cb0ec6ea13105960aa1bc73dd9fce7e4fac",
+   "old_sha256": "5db7b66e423c813aba4313b7acc70a0b3d78da2cd1ba1945c6ec4d5e7bd87e31",
+   "new_path": "bot-cua-toi-13/phan-tich/ky-hieu-v4/state.tsv",
+   "sha256": "5db7b66e423c813aba4313b7acc70a0b3d78da2cd1ba1945c6ec4d5e7bd87e31",
+   "bytes": 1258,
+   "loai": "bang-chung-hoac-ghi-chu",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/twisterpro-scalper/verification/market-logs/tw_orig_ticks1_v2.log",
+   "git_blob": "19c8498c940545f938baf31950299b8edede3a33",
+   "old_sha256": "aedf165441de6c8fad6d9fab4b6c34fd562a85cdea70f51dbff2b3f6326fa16b",
+   "new_path": "bot-cua-toi-13/bang-chung/so-hanh-vi/nhat-ky-v2/goc-ticks1.log",
+   "sha256": "aedf165441de6c8fad6d9fab4b6c34fd562a85cdea70f51dbff2b3f6326fa16b",
+   "bytes": 165534,
+   "loai": "bang-chung-hoac-ghi-chu",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/twisterpro-scalper/verification/market-logs/tw_reco_ticks1_v2.log",
+   "git_blob": "aeff82940e88e3bc07f48bd317695e4c77bb73c8",
+   "old_sha256": "59be06ec40d4b430eec2935f9695c738818d76161063aaa59f90293435462892",
+   "new_path": "bot-cua-toi-13/bang-chung/so-hanh-vi/nhat-ky-v2/dung-lai-ticks1.log",
+   "sha256": "59be06ec40d4b430eec2935f9695c738818d76161063aaa59f90293435462892",
+   "bytes": 164773,
+   "loai": "bang-chung-hoac-ghi-chu",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/twisterpro-scalper/verification/market-logs/tw_orig_ticks2_v2.log",
+   "git_blob": "bc13802c72af2253694554a79f3bc730419288c8",
+   "old_sha256": "54c237ec86df76a9f77d5b7449bd06870fecb8c3e1bdcc13e69ce08870386dc5",
+   "new_path": "bot-cua-toi-13/bang-chung/so-hanh-vi/nhat-ky-v2/goc-ticks2.log",
+   "sha256": "54c237ec86df76a9f77d5b7449bd06870fecb8c3e1bdcc13e69ce08870386dc5",
+   "bytes": 59644,
+   "loai": "bang-chung-hoac-ghi-chu",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/twisterpro-scalper/verification/market-logs/tw_reco_ticks2_v2.log",
+   "git_blob": "41457878eb2abb39bb5d251ae8cf7b695acdca5a",
+   "old_sha256": "5aea87445ef197c19d2ed64d04d75151fa412e004d32a68538e7c0aa8accd7dc",
+   "new_path": "bot-cua-toi-13/bang-chung/so-hanh-vi/nhat-ky-v2/dung-lai-ticks2.log",
+   "sha256": "5aea87445ef197c19d2ed64d04d75151fa412e004d32a68538e7c0aa8accd7dc",
+   "bytes": 58719,
+   "loai": "bang-chung-hoac-ghi-chu",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/twisterpro-scalper/verification/market-logs/tw_orig_delay_v2.log",
+   "git_blob": "820d6ab1119007ad386c42e6b602fd75ee6ce239",
+   "old_sha256": "ef7478f3029156fba8c6371704cbf382c17f91cd0f35a175479ff7a65618a43c",
+   "new_path": "bot-cua-toi-13/bang-chung/so-hanh-vi/nhat-ky-v2/goc-delay.log",
+   "sha256": "ef7478f3029156fba8c6371704cbf382c17f91cd0f35a175479ff7a65618a43c",
+   "bytes": 60666,
+   "loai": "bang-chung-hoac-ghi-chu",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/twisterpro-scalper/verification/market-logs/tw_reco_delay_v2.log",
+   "git_blob": "03dacb6bb7dc3de1e5a422c0344fc7a3f982927c",
+   "old_sha256": "d030641740b78d379fa9a9e6ebfa4699b598a0edce30cc85ed8929d2f7387b4f",
+   "new_path": "bot-cua-toi-13/bang-chung/so-hanh-vi/nhat-ky-v2/dung-lai-delay.log",
+   "sha256": "d030641740b78d379fa9a9e6ebfa4699b598a0edce30cc85ed8929d2f7387b4f",
+   "bytes": 59784,
+   "loai": "bang-chung-hoac-ghi-chu",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/twisterpro-scalper/verification/market-logs/tw_orig_broker1_v2.log",
+   "git_blob": "be8f78585d5e69605d83d1c7d2369fe042153c4d",
+   "old_sha256": "e959561675bc62d876b6a92534b213e11ddbfa6880f6ccb216805cf883f946ac",
+   "new_path": "bot-cua-toi-13/bang-chung/so-hanh-vi/nhat-ky-v2/goc-broker1.log",
+   "sha256": "e959561675bc62d876b6a92534b213e11ddbfa6880f6ccb216805cf883f946ac",
+   "bytes": 45059,
+   "loai": "bang-chung-hoac-ghi-chu",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/twisterpro-scalper/verification/market-logs/tw_reco_broker1_v2.log",
+   "git_blob": "a16c19ee231be776d1c69f778121df0de09aa2d5",
+   "old_sha256": "36fd76e316b29852ce4bc1e0d2217788b45562b668118bdc83803b08c1de7d0b",
+   "new_path": "bot-cua-toi-13/bang-chung/so-hanh-vi/nhat-ky-v2/dung-lai-broker1.log",
+   "sha256": "36fd76e316b29852ce4bc1e0d2217788b45562b668118bdc83803b08c1de7d0b",
+   "bytes": 44492,
+   "loai": "bang-chung-hoac-ghi-chu",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/twisterpro-scalper/verification/market-logs/tworig_m1_a.log",
+   "git_blob": "118f68ab13df4a9f7a71ad7792f8354e26dc5405",
+   "old_sha256": "5f737ab8376c609b75b884403d2205c9d10b9e1e3391c2295ed01ce8662cb651",
+   "new_path": "bot-cua-toi-13/bang-chung/so-hanh-vi/nhat-ky-v1/goc_m1_a.log",
+   "sha256": "5f737ab8376c609b75b884403d2205c9d10b9e1e3391c2295ed01ce8662cb651",
+   "bytes": 19720,
+   "loai": "bang-chung-hoac-ghi-chu",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/twisterpro-scalper/verification/market-logs/twreco_m1_a_v1.log",
+   "git_blob": "e6fab933b13643eb4724fe2ac8356d04e83a32d0",
+   "old_sha256": "ac90ae40dcf34c24b12833cae60de108e856ec1751ee41846e14e0153608c25a",
+   "new_path": "bot-cua-toi-13/bang-chung/so-hanh-vi/nhat-ky-v1/dung-lai_m1_a_v1.log",
+   "sha256": "ac90ae40dcf34c24b12833cae60de108e856ec1751ee41846e14e0153608c25a",
+   "bytes": 18730,
+   "loai": "bang-chung-hoac-ghi-chu",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/twisterpro-scalper/verification/captures/twisterdata1_09/0000025a0b0c0000.bin",
+   "git_blob": "cb567858d3dc5120f22d92294ea24ce02432f540",
+   "old_sha256": "daf9c801d74baf53ea00d48c57dd3fb7ca41ccddc68a40e2cd70b0bffe36c3a2",
+   "new_path": "bot-cua-toi-13/bang-chung/ban-chup-ma-may/0000025a0b0c0000.bin",
+   "sha256": "daf9c801d74baf53ea00d48c57dd3fb7ca41ccddc68a40e2cd70b0bffe36c3a2",
+   "bytes": 110592,
+   "loai": "du-lieu-chup-ma-may",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/twisterpro-scalper/verification/captures/twisterdata1_09/0000025a0b0db000-program-data.bin",
+   "git_blob": "65cbfbb79ce0c8105dc1acc16cbba10592c664ec",
+   "old_sha256": "69d51847d3e92c92a57d6ba443ee29b594284c8462536d167d2329b7eec3eb72",
+   "new_path": "bot-cua-toi-13/bang-chung/ban-chup-ma-may/0000025a0b0db000-program-data.bin",
+   "sha256": "69d51847d3e92c92a57d6ba443ee29b594284c8462536d167d2329b7eec3eb72",
+   "bytes": 86016,
+   "loai": "du-lieu-chup-ma-may",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/twisterpro-scalper/verification/captures/twisterdata1_09/00007ffa1b990000.bin",
+   "git_blob": "e7f1d78f8220828cce1c5c454d82b18d0df2c485",
+   "old_sha256": "31df8bc96e8269642f266567c0170815d4552850d23d0a13d73372e349a45034",
+   "new_path": "bot-cua-toi-13/bang-chung/ban-chup-ma-may/00007ffa1b990000.bin",
+   "sha256": "31df8bc96e8269642f266567c0170815d4552850d23d0a13d73372e349a45034",
+   "bytes": 4096,
+   "loai": "du-lieu-chup-ma-may",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/twisterpro-scalper/verification/captures/twisterdata1_09/00007ffa1b991000.bin",
+   "git_blob": "08e7df176454f3ee5eeda13efa0adaa54828dfd8",
+   "old_sha256": "ad7facb2586fc6e966c004d7d1d16b024f5805ff7cb47c7a85dabd8b48892ca7",
+   "new_path": "bot-cua-toi-13/bang-chung/ban-chup-ma-may/00007ffa1b991000.bin",
+   "sha256": "ad7facb2586fc6e966c004d7d1d16b024f5805ff7cb47c7a85dabd8b48892ca7",
+   "bytes": 4096,
+   "loai": "du-lieu-chup-ma-may",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/twisterpro-scalper/verification/captures/twisterdata1_09/capture.json",
+   "git_blob": "16ff663e7fa738904853f659ec4e7183093cdb28",
+   "old_sha256": "14d2873c740b559daaf952d0360c657a71f9e1f193ca17b7d0db98d563b0e2c4",
+   "new_path": "bot-cua-toi-13/bang-chung/ban-chup-ma-may/capture.json",
+   "sha256": "14d2873c740b559daaf952d0360c657a71f9e1f193ca17b7d0db98d563b0e2c4",
+   "bytes": 1934,
+   "loai": "du-lieu-chup-ma-may",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/twisterpro-scalper/verification/captures/twisterdata1_09/function-coverage-comparison.json",
+   "git_blob": "2a37b6e7ddfc055482090ba55aad52ee7ff6989e",
+   "old_sha256": "129d29de1ce13d278b9b4a6c61843626e2834d92cc680fb8f775cc6a2f810e84",
+   "new_path": "bot-cua-toi-13/bang-chung/ban-chup-ma-may/function-coverage-comparison.json",
+   "sha256": "129d29de1ce13d278b9b4a6c61843626e2834d92cc680fb8f775cc6a2f810e84",
+   "bytes": 311,
+   "loai": "du-lieu-chup-ma-may",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/twisterpro-scalper/verification/captures/twisterdata1_09/functions-verified.json",
+   "git_blob": "ebc64f9865d67e220f884cab9375e6a9e08cbba8",
+   "old_sha256": "4ecbd00efc36759e418f4cf8fcc1c1c667089e0d7a7d27cb43dde7578626656c",
+   "new_path": "bot-cua-toi-13/bang-chung/ban-chup-ma-may/functions-verified.json",
+   "sha256": "4ecbd00efc36759e418f4cf8fcc1c1c667089e0d7a7d27cb43dde7578626656c",
+   "bytes": 5759,
+   "loai": "du-lieu-chup-ma-may",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/twisterpro-scalper/verification/captures/twisterdata1_09/global-layout-observation.json",
+   "git_blob": "de259bfe07922b14064bf89d85bfd8fed0927ef5",
+   "old_sha256": "32e6e60500029c684262cb09b95be56cf64b650267433057b0a1de387b3dc2eb",
+   "new_path": "bot-cua-toi-13/bang-chung/ban-chup-ma-may/global-layout-observation.json",
+   "sha256": "32e6e60500029c684262cb09b95be56cf64b650267433057b0a1de387b3dc2eb",
+   "bytes": 6478,
+   "loai": "du-lieu-chup-ma-may",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/twisterpro-scalper/verification/captures/twisterdata1_09/program-strings-filtered.json",
+   "git_blob": "88af2f4d08c12ec8e292fc077f05375839148635",
+   "old_sha256": "be3ff6ed1dd1e8088da159b1a3995ec6827c5fb8635a8e930d1568756b5bb668",
+   "new_path": "bot-cua-toi-13/bang-chung/ban-chup-ma-may/program-strings-filtered.json",
+   "sha256": "be3ff6ed1dd1e8088da159b1a3995ec6827c5fb8635a8e930d1568756b5bb668",
+   "bytes": 14146,
+   "loai": "du-lieu-chup-ma-may",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/twisterpro-scalper/verification/captures/twisterdata1_09/string-reference-candidates.json",
+   "git_blob": "9ae1372193509a68b27cef23dea44583bc9f9455",
+   "old_sha256": "3ed2e81a26dee28d99036e5ea866cbb922b1d7da43c0d1c454c581531ca20e17",
+   "new_path": "bot-cua-toi-13/bang-chung/ban-chup-ma-may/string-reference-candidates.json",
+   "sha256": "3ed2e81a26dee28d99036e5ea866cbb922b1d7da43c0d1c454c581531ca20e17",
+   "bytes": 25752,
+   "loai": "du-lieu-chup-ma-may",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/twisterpro-scalper/verification/captures/twisterdata1_09/string-refs-validated.json",
+   "git_blob": "7f011aab29f1834b42b295bb97f2febe35ddd495",
+   "old_sha256": "d3adab43207f1e5d07c52c3b45b6457d4573a84fabf0d37378fd90f689d76778",
+   "new_path": "bot-cua-toi-13/bang-chung/ban-chup-ma-may/string-refs-validated.json",
+   "sha256": "d3adab43207f1e5d07c52c3b45b6457d4573a84fabf0d37378fd90f689d76778",
+   "bytes": 20505,
+   "loai": "du-lieu-chup-ma-may",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/twisterpro-scalper/verification/captures/twisterdata1_09/string-wrappers.json",
+   "git_blob": "fe51488c7066f6687ef680d6bfaa4f7768ef205c",
+   "old_sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+   "new_path": "bot-cua-toi-13/bang-chung/ban-chup-ma-may/string-wrappers.json",
+   "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+   "bytes": 3,
+   "loai": "du-lieu-chup-ma-may",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/twisterpro-scalper/verification/captures/twisterdata1_09/strings-with-headers.json",
+   "git_blob": "8fbab8135054aba60d8266e94fd6efbed9c39b2f",
+   "old_sha256": "c1adae66d97787e0caea3435c0ce6b296fada1dfcbff06a03e1d426cf525aa41",
+   "new_path": "bot-cua-toi-13/bang-chung/ban-chup-ma-may/strings-with-headers.json",
+   "sha256": "c1adae66d97787e0caea3435c0ce6b296fada1dfcbff06a03e1d426cf525aa41",
+   "bytes": 16456,
+   "loai": "du-lieu-chup-ma-may",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/twisterpro-scalper/verification/captures/twisterdata1_09/unwind-table-candidates.json",
+   "git_blob": "504b7b77ae53a7960e78e58f7d19c73679078c4c",
+   "old_sha256": "93501ee9b70ba38a691b5c0b3ffd2d0619add07e0cdfa09b067ecccb2000232a",
+   "new_path": "bot-cua-toi-13/bang-chung/ban-chup-ma-may/unwind-table-candidates.json",
+   "sha256": "93501ee9b70ba38a691b5c0b3ffd2d0619add07e0cdfa09b067ecccb2000232a",
+   "bytes": 7555,
+   "loai": "du-lieu-chup-ma-may",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/twisterpro-scalper/verification/captures/twisterdata1_09/unwind-verification-v2.json",
+   "git_blob": "b9a9f3661900e358bf9e0bafc3c51d9860a14235",
+   "old_sha256": "3374c4082e196b3a6c64769728e8ff436ea7b74f3046969c0d6c65434440d46a",
+   "new_path": "bot-cua-toi-13/bang-chung/ban-chup-ma-may/unwind-verification-v2.json",
+   "sha256": "3374c4082e196b3a6c64769728e8ff436ea7b74f3046969c0d6c65434440d46a",
+   "bytes": 208,
+   "loai": "du-lieu-chup-ma-may",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/twisterpro-scalper/verification/captures/twisterdata1_09/unwind-verification.json",
+   "git_blob": "ad2aa578a629cbdc0528a801b41d30ee27baee2d",
+   "old_sha256": "c91909ff2927048e4783110abcbd80a909783590d818e4defd906d78061c37f6",
+   "new_path": "bot-cua-toi-13/bang-chung/ban-chup-ma-may/unwind-verification.json",
+   "sha256": "c91909ff2927048e4783110abcbd80a909783590d818e4defd906d78061c37f6",
+   "bytes": 25364,
+   "loai": "du-lieu-chup-ma-may",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/twisterpro-scalper/source/TwisterProRecovered.mq5",
+   "git_blob": "535eba5630259e9b2f3a82b51d20d8697f607f6e",
+   "old_sha256": "619841d2d341d920f34180854c6990ef18fb02d8de1e01f6e2c6a07e93a5a333",
+   "new_path": "bot-cua-toi-13/source/MQL5/Experts/bot-cua-toi-13/bot-cua-toi-13.mq5",
+   "sha256": "c9954ba29a20449db8d2edff897b7a17e34aacec0e07413a9e9a0e7062ff98a7",
+   "bytes": 24444,
+   "loai": "nguon-dung-lai",
+   "nguyen_ban": false,
+   "ghi_chu": "Chỉ đổi tên theo DOI_TEN trong công cụ; logic và thông số số học giữ nguyên."
+  },
+  {
+   "old_path": "dich-nguoc/bots/twisterpro-scalper/source/TwisterInputs.mqh",
+   "git_blob": "0a4218af70a9683cebf8f960e9932745f22da18b",
+   "old_sha256": "52d61648dd265bebf180812e27f79eca65751d7389da6cd44ea13fd41378eee6",
+   "new_path": "bot-cua-toi-13/source/MQL5/Include/bot-cua-toi-13/Bot13Inputs.mqh",
+   "sha256": "2294955a4800d86811df6ff9923cf1ae06962f8c6f5d191767e1d48e276341d4",
+   "bytes": 1592,
+   "loai": "nguon-dung-lai",
+   "nguyen_ban": false,
+   "ghi_chu": "Chỉ đổi tên theo DOI_TEN trong công cụ; logic và thông số số học giữ nguyên."
+  },
+  {
+   "old_path": "dich-nguoc/bots/twisterpro-scalper/source/TwisterSettings.mqh",
+   "git_blob": "36cd3428e84df3e5cf360377543aeba3bec90e73",
+   "old_sha256": "fdd7c358870844c605cd90bfb243ee108b7be8e94959f6520e12557efbaa2087",
+   "new_path": "bot-cua-toi-13/source/MQL5/Include/bot-cua-toi-13/Bot13Settings.mqh",
+   "sha256": "aeef3db57864a29d290f26e30eccb74b3bccd49c3e2d1a09422212c9e02d5f28",
+   "bytes": 3989,
+   "loai": "nguon-dung-lai",
+   "nguyen_ban": false,
+   "ghi_chu": "Chỉ đổi tên theo DOI_TEN trong công cụ; logic và thông số số học giữ nguyên."
+  },
+  {
+   "old_path": "dich-nguoc/bots/twisterpro-scalper/source/TwisterFilters.mqh",
+   "git_blob": "0d178904d82d87f57e077d3a43bf82f33f3e3f03",
+   "old_sha256": "408de78f8b57ac6a879ef91a3a5f155c9fbfa5bfd7a3c63e3793dc40a6abb4f3",
+   "new_path": "bot-cua-toi-13/source/MQL5/Include/bot-cua-toi-13/Bot13Filters.mqh",
+   "sha256": "f41adc99621031ac919acb02a4977ebcb2e52551e7eb688c62b29ecb39ca41c2",
+   "bytes": 2364,
+   "loai": "nguon-dung-lai",
+   "nguyen_ban": false,
+   "ghi_chu": "Chỉ đổi tên theo DOI_TEN trong công cụ; logic và thông số số học giữ nguyên."
+  },
+  {
+   "old_path": "dich-nguoc/bots/ai-golden-life-mt5/analysis/initial/01_AI_Golden_Life_MT5/01_AI_Golden_Life_MT5.bin.base.txt",
+   "git_blob": "d86af3043a28096ab37bebc5e40bf01889f11e21",
+   "old_sha256": "95522ee857c077338ff6595da9c2d0de0bbd1058da059e8419f770f57ec14ed6",
+   "new_path": "bot-cua-toi-14/phan-tich/ban-ex5-01/dia-chi-nen.txt",
+   "sha256": "95522ee857c077338ff6595da9c2d0de0bbd1058da059e8419f770f57ec14ed6",
+   "bytes": 12,
+   "loai": "du-lieu-chup-ma-may",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/ai-golden-life-mt5/analysis/initial/01_AI_Golden_Life_MT5/01_AI_Golden_Life_MT5.bin.seeds.txt",
+   "git_blob": "10dbaf389fa80b97d6c072af0fdd6f707489a427",
+   "old_sha256": "14bade8d553b13bea5100bbbbe9a0680b7b42edaf01ccbcd39a5cfb2666d38c5",
+   "new_path": "bot-cua-toi-14/phan-tich/ban-ex5-01/diem-bat-dau-ham.txt",
+   "sha256": "14bade8d553b13bea5100bbbbe9a0680b7b42edaf01ccbcd39a5cfb2666d38c5",
+   "bytes": 600,
+   "loai": "du-lieu-chup-ma-may",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/ai-golden-life-mt5/analysis/initial/01_AI_Golden_Life_MT5/01_AI_Golden_Life_MT5.c",
+   "git_blob": "51c1037aa239e5f3a2b2fd11e121b5103bd5bcb6",
+   "old_sha256": "306898e193f5355afd0f017a8cbd15f17973ccc921fad96cca3018a641c25dcb",
+   "new_path": "bot-cua-toi-14/phan-tich/ban-ex5-01/ma-trung-gian.c",
+   "sha256": "306898e193f5355afd0f017a8cbd15f17973ccc921fad96cca3018a641c25dcb",
+   "bytes": 558065,
+   "loai": "ma-trung-gian",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/ai-golden-life-mt5/analysis/initial/01_AI_Golden_Life_MT5/01_AI_Golden_Life_MT5.c.summary.json",
+   "git_blob": "4403a8f1de888068071dcc018490e5ecf8840fb7",
+   "old_sha256": "cf31c251f750333225c74f2b172448a87c85358285a2470e862c8ce893a9f668",
+   "new_path": "bot-cua-toi-14/phan-tich/ban-ex5-01/ma-trung-gian.c.summary.json",
+   "sha256": "cf31c251f750333225c74f2b172448a87c85358285a2470e862c8ce893a9f668",
+   "bytes": 40,
+   "loai": "du-lieu-chup-ma-may",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/ai-golden-life-mt5/analysis/initial/01_AI_Golden_Life_MT5/capture/000002ad99140000.bin",
+   "git_blob": "057dc91da1e21ea845fdf9505138bb7382a6bb4c",
+   "old_sha256": "3561950121057fab1f41f1809c8bf564a8bd4b4dba32b48cd92dec75a040afed",
+   "new_path": "bot-cua-toi-14/phan-tich/ban-ex5-01/capture/000002ad99140000.bin",
+   "sha256": "3561950121057fab1f41f1809c8bf564a8bd4b4dba32b48cd92dec75a040afed",
+   "bytes": 131072,
+   "loai": "du-lieu-chup-ma-may",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/ai-golden-life-mt5/analysis/initial/01_AI_Golden_Life_MT5/capture/00007ffa1b990000.bin",
+   "git_blob": "00113d9a4172d1a3a816b5fd798f25adaeb51967",
+   "old_sha256": "e9907a53566f44352c6c3dda295ba38e34396c8776a20c12d90172080fe06bc0",
+   "new_path": "bot-cua-toi-14/phan-tich/ban-ex5-01/capture/00007ffa1b990000.bin",
+   "sha256": "e9907a53566f44352c6c3dda295ba38e34396c8776a20c12d90172080fe06bc0",
+   "bytes": 4096,
+   "loai": "du-lieu-chup-ma-may",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/ai-golden-life-mt5/analysis/initial/01_AI_Golden_Life_MT5/capture/00007ffa1b991000.bin",
+   "git_blob": "08e7df176454f3ee5eeda13efa0adaa54828dfd8",
+   "old_sha256": "ad7facb2586fc6e966c004d7d1d16b024f5805ff7cb47c7a85dabd8b48892ca7",
+   "new_path": "bot-cua-toi-14/phan-tich/ban-ex5-01/capture/00007ffa1b991000.bin",
+   "sha256": "ad7facb2586fc6e966c004d7d1d16b024f5805ff7cb47c7a85dabd8b48892ca7",
+   "bytes": 4096,
+   "loai": "du-lieu-chup-ma-may",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/ai-golden-life-mt5/analysis/initial/01_AI_Golden_Life_MT5/capture/capture.json",
+   "git_blob": "600246f231efa705a66146700f5327f08ce85e2f",
+   "old_sha256": "6b093ff114cd7a2f759d30411f637b9c8d597e03d68e18201edbfa6df7e82724",
+   "new_path": "bot-cua-toi-14/phan-tich/ban-ex5-01/capture/capture.json",
+   "sha256": "6b093ff114cd7a2f759d30411f637b9c8d597e03d68e18201edbfa6df7e82724",
+   "bytes": 1024,
+   "loai": "du-lieu-chup-ma-may",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/ai-golden-life-mt5/analysis/initial/01_AI_Golden_Life_MT5/re2batch1_01-job.json",
+   "git_blob": "97ec52f3dad18cd4dee81d3d6fe6afe16b5136d4",
+   "old_sha256": "fd335afbf05b3ff8c6c558b679cc126626b4a389c7ef8604be8a4e07c23a1898",
+   "new_path": "bot-cua-toi-14/phan-tich/ban-ex5-01/lenh-chup.json",
+   "sha256": "fd335afbf05b3ff8c6c558b679cc126626b4a389c7ef8604be8a4e07c23a1898",
+   "bytes": 213,
+   "loai": "du-lieu-chup-ma-may",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/ai-golden-life-mt5/analysis/initial/01_AI_Golden_Life_MT5/re2batch1_01-result.json",
+   "git_blob": "ec4977d22be1ef5433e2c745f86261a604012e28",
+   "old_sha256": "e0d264650237bd08cb83f9e632d5902bfb59c0816d026f0b8ef88edff5bd80e3",
+   "new_path": "bot-cua-toi-14/phan-tich/ban-ex5-01/ket-qua-chup.json",
+   "sha256": "e0d264650237bd08cb83f9e632d5902bfb59c0816d026f0b8ef88edff5bd80e3",
+   "bytes": 276,
+   "loai": "du-lieu-chup-ma-may",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/cryonx-ea-mt5/analysis/initial/02_CryonX_EA_MT5/02_CryonX_EA_MT5.bin.base.txt",
+   "git_blob": "7b506459b416a0cb6a9102402a1cbf188d7627e1",
+   "old_sha256": "40b30fa027929955aa6205a4bf44fdb93742bb602f8bb6113592ab1915be578c",
+   "new_path": "bot-cua-toi-4/phan-tich/ban-ex5-02/dia-chi-nen.txt",
+   "sha256": "40b30fa027929955aa6205a4bf44fdb93742bb602f8bb6113592ab1915be578c",
+   "bytes": 12,
+   "loai": "du-lieu-chup-ma-may",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/cryonx-ea-mt5/analysis/initial/02_CryonX_EA_MT5/02_CryonX_EA_MT5.bin.seeds.txt",
+   "git_blob": "74d72a85db1ca499f0c73b6f5c16f41c6dad9efd",
+   "old_sha256": "2e23e448b14fe39357cdb2f2b4a0cbf7e663fd6ade6c2ac10e8d3525073bc6ba",
+   "new_path": "bot-cua-toi-4/phan-tich/ban-ex5-02/diem-bat-dau-ham.txt",
+   "sha256": "2e23e448b14fe39357cdb2f2b4a0cbf7e663fd6ade6c2ac10e8d3525073bc6ba",
+   "bytes": 588,
+   "loai": "du-lieu-chup-ma-may",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/cryonx-ea-mt5/analysis/initial/02_CryonX_EA_MT5/02_CryonX_EA_MT5.c",
+   "git_blob": "ec3f550976f27f6df10ea4b140bfacd6f3b36360",
+   "old_sha256": "de1a9fe5ce9c9d02f23442b4a2ad56686797201a600c5f483a0259f67868b49a",
+   "new_path": "bot-cua-toi-4/phan-tich/ban-ex5-02/ma-trung-gian.c",
+   "sha256": "de1a9fe5ce9c9d02f23442b4a2ad56686797201a600c5f483a0259f67868b49a",
+   "bytes": 314121,
+   "loai": "ma-trung-gian",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/cryonx-ea-mt5/analysis/initial/02_CryonX_EA_MT5/02_CryonX_EA_MT5.c.summary.json",
+   "git_blob": "a7b932287c3c2c59f795b841644dd7f827220590",
+   "old_sha256": "51fb723378c2d3623a4fdf0105c79175031da3a1cf13e1e005e7bc5c1f2e68c6",
+   "new_path": "bot-cua-toi-4/phan-tich/ban-ex5-02/ma-trung-gian.c.summary.json",
+   "sha256": "51fb723378c2d3623a4fdf0105c79175031da3a1cf13e1e005e7bc5c1f2e68c6",
+   "bytes": 40,
+   "loai": "du-lieu-chup-ma-may",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/cryonx-ea-mt5/analysis/initial/02_CryonX_EA_MT5/capture/000002b6e6c90000.bin",
+   "git_blob": "445a494796b777f06a4767730347bf3af6a9e19a",
+   "old_sha256": "0b0a05acb3758ba04feb5aed7991583c04cb6f4de0cc0becb93e4de46813a776",
+   "new_path": "bot-cua-toi-4/phan-tich/ban-ex5-02/capture/000002b6e6c90000.bin",
+   "sha256": "0b0a05acb3758ba04feb5aed7991583c04cb6f4de0cc0becb93e4de46813a776",
+   "bytes": 98304,
+   "loai": "du-lieu-chup-ma-may",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/cryonx-ea-mt5/analysis/initial/02_CryonX_EA_MT5/capture/00007ffa1b990000.bin",
+   "git_blob": "00113d9a4172d1a3a816b5fd798f25adaeb51967",
+   "old_sha256": "e9907a53566f44352c6c3dda295ba38e34396c8776a20c12d90172080fe06bc0",
+   "new_path": "bot-cua-toi-4/phan-tich/ban-ex5-02/capture/00007ffa1b990000.bin",
+   "sha256": "e9907a53566f44352c6c3dda295ba38e34396c8776a20c12d90172080fe06bc0",
+   "bytes": 4096,
+   "loai": "du-lieu-chup-ma-may",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/cryonx-ea-mt5/analysis/initial/02_CryonX_EA_MT5/capture/00007ffa1b991000.bin",
+   "git_blob": "08e7df176454f3ee5eeda13efa0adaa54828dfd8",
+   "old_sha256": "ad7facb2586fc6e966c004d7d1d16b024f5805ff7cb47c7a85dabd8b48892ca7",
+   "new_path": "bot-cua-toi-4/phan-tich/ban-ex5-02/capture/00007ffa1b991000.bin",
+   "sha256": "ad7facb2586fc6e966c004d7d1d16b024f5805ff7cb47c7a85dabd8b48892ca7",
+   "bytes": 4096,
+   "loai": "du-lieu-chup-ma-may",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/cryonx-ea-mt5/analysis/initial/02_CryonX_EA_MT5/capture/capture.json",
+   "git_blob": "5b32e081fa9f5aa3a6eb8cd530ef354df21a0284",
+   "old_sha256": "0c307f44740d28839adbd2577a8f67e88e3b42193e53c39e6d4682ce6124ada9",
+   "new_path": "bot-cua-toi-4/phan-tich/ban-ex5-02/capture/capture.json",
+   "sha256": "0c307f44740d28839adbd2577a8f67e88e3b42193e53c39e6d4682ce6124ada9",
+   "bytes": 1023,
+   "loai": "du-lieu-chup-ma-may",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/cryonx-ea-mt5/analysis/initial/02_CryonX_EA_MT5/re2batch1_02-job.json",
+   "git_blob": "73e54cc6d5f235951833e39362a2ed65fb490f50",
+   "old_sha256": "5e87e205012d911c3e865735e453f8b8f2779679f0c408af2bf3dd19bad35007",
+   "new_path": "bot-cua-toi-4/phan-tich/ban-ex5-02/lenh-chup.json",
+   "sha256": "5e87e205012d911c3e865735e453f8b8f2779679f0c408af2bf3dd19bad35007",
+   "bytes": 208,
+   "loai": "du-lieu-chup-ma-may",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/cryonx-ea-mt5/analysis/initial/02_CryonX_EA_MT5/re2batch1_02-result.json",
+   "git_blob": "e2f2ed8e79bc0affc81cc124dad4d75c020aa163",
+   "old_sha256": "511cd4f28ce0f37d3333d3aff90192ea2324dc8f7cfd4658ce32a7c6e8893a25",
+   "new_path": "bot-cua-toi-4/phan-tich/ban-ex5-02/ket-qua-chup.json",
+   "sha256": "511cd4f28ce0f37d3333d3aff90192ea2324dc8f7cfd4658ce32a7c6e8893a25",
+   "bytes": 271,
+   "loai": "du-lieu-chup-ma-may",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/dynamic-liquidity-intelligence/analysis/initial/03_Dynamic_Liquidity_Intelligence/03_Dynamic_Liquidity_Intelligence.bin.base.txt",
+   "git_blob": "23e3e8a1461bb69ac0133b922fdd6c17c1816474",
+   "old_sha256": "c451767dead84b09a1bab1b92b38a88b76c0b352339b9ca3584f93e011e575c3",
+   "new_path": "bot-cua-toi-5/phan-tich/ban-ex5-03/dia-chi-nen.txt",
+   "sha256": "c451767dead84b09a1bab1b92b38a88b76c0b352339b9ca3584f93e011e575c3",
+   "bytes": 12,
+   "loai": "du-lieu-chup-ma-may",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/dynamic-liquidity-intelligence/analysis/initial/03_Dynamic_Liquidity_Intelligence/03_Dynamic_Liquidity_Intelligence.bin.seeds.txt",
+   "git_blob": "6bb3f3800baabb0428c035bbf74abdc5eec92974",
+   "old_sha256": "b4c4c16b71924fd1149ec9beb86071d2fec9f37b38524cb503d7029bbc8d41ae",
+   "new_path": "bot-cua-toi-5/phan-tich/ban-ex5-03/diem-bat-dau-ham.txt",
+   "sha256": "b4c4c16b71924fd1149ec9beb86071d2fec9f37b38524cb503d7029bbc8d41ae",
+   "bytes": 972,
+   "loai": "du-lieu-chup-ma-may",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/dynamic-liquidity-intelligence/analysis/initial/03_Dynamic_Liquidity_Intelligence/03_Dynamic_Liquidity_Intelligence.c",
+   "git_blob": "6a034c41452a5d2bbf80f8a01b86eaeaa88ffa26",
+   "old_sha256": "ce8a8e21acab931bbf022e51e1517d8ee0202f36ad1d169655999e0c0b5e9f9a",
+   "new_path": "bot-cua-toi-5/phan-tich/ban-ex5-03/ma-trung-gian.c",
+   "sha256": "ce8a8e21acab931bbf022e51e1517d8ee0202f36ad1d169655999e0c0b5e9f9a",
+   "bytes": 389686,
+   "loai": "ma-trung-gian",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/dynamic-liquidity-intelligence/analysis/initial/03_Dynamic_Liquidity_Intelligence/03_Dynamic_Liquidity_Intelligence.c.summary.json",
+   "git_blob": "1906de8370b5cd247f7744f7634a79c39bc4ea8d",
+   "old_sha256": "f19d58ac8828febf38b12f781026b0a5ea3691d3e9e4fe0d1cab826272b3b44c",
+   "new_path": "bot-cua-toi-5/phan-tich/ban-ex5-03/ma-trung-gian.c.summary.json",
+   "sha256": "f19d58ac8828febf38b12f781026b0a5ea3691d3e9e4fe0d1cab826272b3b44c",
+   "bytes": 40,
+   "loai": "du-lieu-chup-ma-may",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/dynamic-liquidity-intelligence/analysis/initial/03_Dynamic_Liquidity_Intelligence/capture/00000146d4e40000.bin",
+   "git_blob": "9df6e5a189c6d9fc6291c55bd4d91ca077417e18",
+   "old_sha256": "a8f0f16452fced60d231c8afb89543ffddc77c150cca890e1ea98612184ddff5",
+   "new_path": "bot-cua-toi-5/phan-tich/ban-ex5-03/capture/00000146d4e40000.bin",
+   "sha256": "a8f0f16452fced60d231c8afb89543ffddc77c150cca890e1ea98612184ddff5",
+   "bytes": 122880,
+   "loai": "du-lieu-chup-ma-may",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/dynamic-liquidity-intelligence/analysis/initial/03_Dynamic_Liquidity_Intelligence/capture/00007ffa1b990000.bin",
+   "git_blob": "00113d9a4172d1a3a816b5fd798f25adaeb51967",
+   "old_sha256": "e9907a53566f44352c6c3dda295ba38e34396c8776a20c12d90172080fe06bc0",
+   "new_path": "bot-cua-toi-5/phan-tich/ban-ex5-03/capture/00007ffa1b990000.bin",
+   "sha256": "e9907a53566f44352c6c3dda295ba38e34396c8776a20c12d90172080fe06bc0",
+   "bytes": 4096,
+   "loai": "du-lieu-chup-ma-may",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/dynamic-liquidity-intelligence/analysis/initial/03_Dynamic_Liquidity_Intelligence/capture/00007ffa1b991000.bin",
+   "git_blob": "08e7df176454f3ee5eeda13efa0adaa54828dfd8",
+   "old_sha256": "ad7facb2586fc6e966c004d7d1d16b024f5805ff7cb47c7a85dabd8b48892ca7",
+   "new_path": "bot-cua-toi-5/phan-tich/ban-ex5-03/capture/00007ffa1b991000.bin",
+   "sha256": "ad7facb2586fc6e966c004d7d1d16b024f5805ff7cb47c7a85dabd8b48892ca7",
+   "bytes": 4096,
+   "loai": "du-lieu-chup-ma-may",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/dynamic-liquidity-intelligence/analysis/initial/03_Dynamic_Liquidity_Intelligence/capture/capture.json",
+   "git_blob": "ab0a16aa0c441ea38281009500be671cfe9de7f0",
+   "old_sha256": "8133560493ed21ac561ca8d09618d861ced7b267bd33855ce12e104a9eb977a3",
+   "new_path": "bot-cua-toi-5/phan-tich/ban-ex5-03/capture/capture.json",
+   "sha256": "8133560493ed21ac561ca8d09618d861ced7b267bd33855ce12e104a9eb977a3",
+   "bytes": 1024,
+   "loai": "du-lieu-chup-ma-may",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/dynamic-liquidity-intelligence/analysis/initial/03_Dynamic_Liquidity_Intelligence/re2batch1_03-job.json",
+   "git_blob": "dfeba306def5d1bd931c6bbd35d0b0fdbca95eef",
+   "old_sha256": "8e6ca7ea21cb5a9772780e385df1431fbece2ebbb097cc770d0cf477c3c90ee2",
+   "new_path": "bot-cua-toi-5/phan-tich/ban-ex5-03/lenh-chup.json",
+   "sha256": "8e6ca7ea21cb5a9772780e385df1431fbece2ebbb097cc770d0cf477c3c90ee2",
+   "bytes": 226,
+   "loai": "du-lieu-chup-ma-may",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/dynamic-liquidity-intelligence/analysis/initial/03_Dynamic_Liquidity_Intelligence/re2batch1_03-result.json",
+   "git_blob": "5c24a6be2dee4556940b7782ea8d2cdac67b5bd3",
+   "old_sha256": "468b9e6e8e05a83b68b0016d93c68bc0ed4c05f5c94327a0f8504e66da8f3e80",
+   "new_path": "bot-cua-toi-5/phan-tich/ban-ex5-03/ket-qua-chup.json",
+   "sha256": "468b9e6e8e05a83b68b0016d93c68bc0ed4c05f5c94327a0f8504e66da8f3e80",
+   "bytes": 288,
+   "loai": "du-lieu-chup-ma-may",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/ea-super-trend-xauusd/analysis/initial/11_EA_Super_Trend_XAUUSD/11_EA_Super_Trend_XAUUSD.bin.base.txt",
+   "git_blob": "990dfebe3f96a0e7c4fb222c76b1633e4abb03b7",
+   "old_sha256": "7d24869d2dc19ca058c9a3361a8256c6430c134ab20556bd9ac203b31e086451",
+   "new_path": "bot-cua-toi-6/phan-tich/ban-ex5-11/dia-chi-nen.txt",
+   "sha256": "7d24869d2dc19ca058c9a3361a8256c6430c134ab20556bd9ac203b31e086451",
+   "bytes": 12,
+   "loai": "du-lieu-chup-ma-may",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/ea-super-trend-xauusd/analysis/initial/11_EA_Super_Trend_XAUUSD/11_EA_Super_Trend_XAUUSD.bin.seeds.txt",
+   "git_blob": "26446cfdfb96b601feccfed820c942eb8e887dde",
+   "old_sha256": "7bfbfad7e9f5a6e3e91278a4555ffb192fcfb66ea11a84c1df356ef4866b7f24",
+   "new_path": "bot-cua-toi-6/phan-tich/ban-ex5-11/diem-bat-dau-ham.txt",
+   "sha256": "7bfbfad7e9f5a6e3e91278a4555ffb192fcfb66ea11a84c1df356ef4866b7f24",
+   "bytes": 732,
+   "loai": "du-lieu-chup-ma-may",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/ea-super-trend-xauusd/analysis/initial/11_EA_Super_Trend_XAUUSD/11_EA_Super_Trend_XAUUSD.c",
+   "git_blob": "5fec04612a216718798f50f4b2223707c8df12d4",
+   "old_sha256": "bd85e54e30dc69fc026ce488749121de44e53f98df60f586b6990c6a66fae690",
+   "new_path": "bot-cua-toi-6/phan-tich/ban-ex5-11/ma-trung-gian.c",
+   "sha256": "bd85e54e30dc69fc026ce488749121de44e53f98df60f586b6990c6a66fae690",
+   "bytes": 229744,
+   "loai": "ma-trung-gian",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/ea-super-trend-xauusd/analysis/initial/11_EA_Super_Trend_XAUUSD/11_EA_Super_Trend_XAUUSD.c.summary.json",
+   "git_blob": "225c9cdca55b55f41c0a66aee565618f86615ef3",
+   "old_sha256": "5ab19f5e36e5ff64507b0c4e0cfaf8f131b9e5f8429e4bba026fbb276d00b51e",
+   "new_path": "bot-cua-toi-6/phan-tich/ban-ex5-11/ma-trung-gian.c.summary.json",
+   "sha256": "5ab19f5e36e5ff64507b0c4e0cfaf8f131b9e5f8429e4bba026fbb276d00b51e",
+   "bytes": 40,
+   "loai": "du-lieu-chup-ma-may",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/ea-super-trend-xauusd/analysis/initial/11_EA_Super_Trend_XAUUSD/capture/000002cc08fc0000.bin",
+   "git_blob": "87d3630f7cf375826d8d71f6ee5655c22a978852",
+   "old_sha256": "4c76f333dccf06354a6278245fe19b96d3ffc70d723abec28677bae06931a451",
+   "new_path": "bot-cua-toi-6/phan-tich/ban-ex5-11/capture/000002cc08fc0000.bin",
+   "sha256": "4c76f333dccf06354a6278245fe19b96d3ffc70d723abec28677bae06931a451",
+   "bytes": 122880,
+   "loai": "du-lieu-chup-ma-may",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/ea-super-trend-xauusd/analysis/initial/11_EA_Super_Trend_XAUUSD/capture/00007ffa1b990000.bin",
+   "git_blob": "00113d9a4172d1a3a816b5fd798f25adaeb51967",
+   "old_sha256": "e9907a53566f44352c6c3dda295ba38e34396c8776a20c12d90172080fe06bc0",
+   "new_path": "bot-cua-toi-6/phan-tich/ban-ex5-11/capture/00007ffa1b990000.bin",
+   "sha256": "e9907a53566f44352c6c3dda295ba38e34396c8776a20c12d90172080fe06bc0",
+   "bytes": 4096,
+   "loai": "du-lieu-chup-ma-may",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/ea-super-trend-xauusd/analysis/initial/11_EA_Super_Trend_XAUUSD/capture/00007ffa1b991000.bin",
+   "git_blob": "08e7df176454f3ee5eeda13efa0adaa54828dfd8",
+   "old_sha256": "ad7facb2586fc6e966c004d7d1d16b024f5805ff7cb47c7a85dabd8b48892ca7",
+   "new_path": "bot-cua-toi-6/phan-tich/ban-ex5-11/capture/00007ffa1b991000.bin",
+   "sha256": "ad7facb2586fc6e966c004d7d1d16b024f5805ff7cb47c7a85dabd8b48892ca7",
+   "bytes": 4096,
+   "loai": "du-lieu-chup-ma-may",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/ea-super-trend-xauusd/analysis/initial/11_EA_Super_Trend_XAUUSD/capture/capture.json",
+   "git_blob": "2a7f1f57c16206ebe177255fce2d623a9722fd4a",
+   "old_sha256": "84d31fb885ca72fa6dbebccf0399775ae90954f0c549dd673b11043d018d15c1",
+   "new_path": "bot-cua-toi-6/phan-tich/ban-ex5-11/capture/capture.json",
+   "sha256": "84d31fb885ca72fa6dbebccf0399775ae90954f0c549dd673b11043d018d15c1",
+   "bytes": 1024,
+   "loai": "du-lieu-chup-ma-may",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/ea-super-trend-xauusd/analysis/initial/11_EA_Super_Trend_XAUUSD/re2batch1_11-job.json",
+   "git_blob": "1121faea2d66b5da841caab0ed15862e20aff6c0",
+   "old_sha256": "c46d3f049415765fbbd8e58425a465bd286541af79d3f583a46c8e2e6ad9cd26",
+   "new_path": "bot-cua-toi-6/phan-tich/ban-ex5-11/lenh-chup.json",
+   "sha256": "c46d3f049415765fbbd8e58425a465bd286541af79d3f583a46c8e2e6ad9cd26",
+   "bytes": 216,
+   "loai": "du-lieu-chup-ma-may",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/ea-super-trend-xauusd/analysis/initial/11_EA_Super_Trend_XAUUSD/re2batch1_11-result.json",
+   "git_blob": "e55d8f9f5b0ed3596ea3bd96aee6535a96848e62",
+   "old_sha256": "e8a0f590de8b82b13714d6f7ba304ede7a65a3f2195c337b49d09a1ebdf5b76b",
+   "new_path": "bot-cua-toi-6/phan-tich/ban-ex5-11/ket-qua-chup.json",
+   "sha256": "e8a0f590de8b82b13714d6f7ba304ede7a65a3f2195c337b49d09a1ebdf5b76b",
+   "bytes": 280,
+   "loai": "du-lieu-chup-ma-may",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/gold-beaver/analysis/initial/04_Gold_Beaver/04_Gold_Beaver.bin.base.txt",
+   "git_blob": "04b970e7db96cc9e9a91774365049469079493a7",
+   "old_sha256": "2f72e8d076609faeb86ab949b4e80f03b6d679324f16faaaf53db67adadecf30",
+   "new_path": "bot-cua-toi-7/phan-tich/ban-ex5-04/dia-chi-nen.txt",
+   "sha256": "2f72e8d076609faeb86ab949b4e80f03b6d679324f16faaaf53db67adadecf30",
+   "bytes": 12,
+   "loai": "du-lieu-chup-ma-may",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/gold-beaver/analysis/initial/04_Gold_Beaver/04_Gold_Beaver.bin.seeds.txt",
+   "git_blob": "654654c3c11fb5dbe87a4034f6c6ca7bbaf54160",
+   "old_sha256": "0eb96b6f08c6ed5afdaf4ea9a587059e0c8cd9ce359ff76f637dabcd682a5676",
+   "new_path": "bot-cua-toi-7/phan-tich/ban-ex5-04/diem-bat-dau-ham.txt",
+   "sha256": "0eb96b6f08c6ed5afdaf4ea9a587059e0c8cd9ce359ff76f637dabcd682a5676",
+   "bytes": 3300,
+   "loai": "du-lieu-chup-ma-may",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/gold-beaver/analysis/initial/04_Gold_Beaver/04_Gold_Beaver.c",
+   "git_blob": "3566e31f372ffeaa160df4e1c3de7b09d4615eae",
+   "old_sha256": "35f4a9ad4bc4d5eb7775180e0dee12c3a77397ee85d847c1994028e256659719",
+   "new_path": "bot-cua-toi-7/phan-tich/ban-ex5-04/ma-trung-gian.c",
+   "sha256": "35f4a9ad4bc4d5eb7775180e0dee12c3a77397ee85d847c1994028e256659719",
+   "bytes": 2396918,
+   "loai": "ma-trung-gian",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/gold-beaver/analysis/initial/04_Gold_Beaver/04_Gold_Beaver.c.summary.json",
+   "git_blob": "fe2f200158c29a5019a14045b5f4b9efbb227c42",
+   "old_sha256": "d43fba420748238e107f56ad3a13415653df8ec4c6e5d58c2d7b5b2bad042b08",
+   "new_path": "bot-cua-toi-7/phan-tich/ban-ex5-04/ma-trung-gian.c.summary.json",
+   "sha256": "d43fba420748238e107f56ad3a13415653df8ec4c6e5d58c2d7b5b2bad042b08",
+   "bytes": 42,
+   "loai": "du-lieu-chup-ma-may",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/gold-beaver/analysis/initial/04_Gold_Beaver/capture/0000026cdf510000.bin",
+   "git_blob": "4fe0015f99bdf72d77c3522c704e50019f3c5ace",
+   "old_sha256": "057a9068e48fa4f315e7c7aaa3a84db6f157aaa19a2994f14d03aeec930c8938",
+   "new_path": "bot-cua-toi-7/phan-tich/ban-ex5-04/capture/0000026cdf510000.bin",
+   "sha256": "057a9068e48fa4f315e7c7aaa3a84db6f157aaa19a2994f14d03aeec930c8938",
+   "bytes": 860160,
+   "loai": "du-lieu-chup-ma-may",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/gold-beaver/analysis/initial/04_Gold_Beaver/capture/00007ffa1b990000.bin",
+   "git_blob": "00113d9a4172d1a3a816b5fd798f25adaeb51967",
+   "old_sha256": "e9907a53566f44352c6c3dda295ba38e34396c8776a20c12d90172080fe06bc0",
+   "new_path": "bot-cua-toi-7/phan-tich/ban-ex5-04/capture/00007ffa1b990000.bin",
+   "sha256": "e9907a53566f44352c6c3dda295ba38e34396c8776a20c12d90172080fe06bc0",
+   "bytes": 4096,
+   "loai": "du-lieu-chup-ma-may",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/gold-beaver/analysis/initial/04_Gold_Beaver/capture/00007ffa1b991000.bin",
+   "git_blob": "08e7df176454f3ee5eeda13efa0adaa54828dfd8",
+   "old_sha256": "ad7facb2586fc6e966c004d7d1d16b024f5805ff7cb47c7a85dabd8b48892ca7",
+   "new_path": "bot-cua-toi-7/phan-tich/ban-ex5-04/capture/00007ffa1b991000.bin",
+   "sha256": "ad7facb2586fc6e966c004d7d1d16b024f5805ff7cb47c7a85dabd8b48892ca7",
+   "bytes": 4096,
+   "loai": "du-lieu-chup-ma-may",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/gold-beaver/analysis/initial/04_Gold_Beaver/capture/capture.json",
+   "git_blob": "ac85c4fcf0b2514d666199f89829c5b2b4079841",
+   "old_sha256": "1aafdea37c2b51017b128d011cd879dce33d8c52496a2a7486267300b8d3fea2",
+   "new_path": "bot-cua-toi-7/phan-tich/ban-ex5-04/capture/capture.json",
+   "sha256": "1aafdea37c2b51017b128d011cd879dce33d8c52496a2a7486267300b8d3fea2",
+   "bytes": 1024,
+   "loai": "du-lieu-chup-ma-may",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/gold-beaver/analysis/initial/04_Gold_Beaver/re2batch1_04-job.json",
+   "git_blob": "c8a5687b45bf2ea6396bbf978a7e2abb10db1c82",
+   "old_sha256": "9faa43bf0ba91b6e646ae9d89984c6007cf337160a09de79d223c2d0b8633d51",
+   "new_path": "bot-cua-toi-7/phan-tich/ban-ex5-04/lenh-chup.json",
+   "sha256": "9faa43bf0ba91b6e646ae9d89984c6007cf337160a09de79d223c2d0b8633d51",
+   "bytes": 207,
+   "loai": "du-lieu-chup-ma-may",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/gold-beaver/analysis/initial/04_Gold_Beaver/re2batch1_04-result.json",
+   "git_blob": "933ce7ea1eb72b0ff660357a0e1cf089de238028",
+   "old_sha256": "ef942b7ac61f4918be900eb67fcf8473ebc93f411164c414c13bc4fd856de14b",
+   "new_path": "bot-cua-toi-7/phan-tich/ban-ex5-04/ket-qua-chup.json",
+   "sha256": "ef942b7ac61f4918be900eb67fcf8473ebc93f411164c414c13bc4fd856de14b",
+   "bytes": 269,
+   "loai": "du-lieu-chup-ma-may",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/gold-trade-pro-mt5/analysis/initial/05_Gold_Trade_Pro_MT5/05_Gold_Trade_Pro_MT5.bin.base.txt",
+   "git_blob": "59e8cd10475ad1b7051e12da9073479d3e17f51a",
+   "old_sha256": "c2c679bfd5eeab540bfc023d9cb6790f2983d43685bb7fa30c23860bd786745d",
+   "new_path": "bot-cua-toi-1/phan-tich/ban-ex5-05/dia-chi-nen.txt",
+   "sha256": "c2c679bfd5eeab540bfc023d9cb6790f2983d43685bb7fa30c23860bd786745d",
+   "bytes": 12,
+   "loai": "du-lieu-chup-ma-may",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/gold-trade-pro-mt5/analysis/initial/05_Gold_Trade_Pro_MT5/05_Gold_Trade_Pro_MT5.bin.seeds.txt",
+   "git_blob": "2b224747e66082dc39f9175031b7e349976d68fe",
+   "old_sha256": "090e7e3e4c6222adea86893c4384424bf0ebad3f748aa300b9c2445f45eb93d9",
+   "new_path": "bot-cua-toi-1/phan-tich/ban-ex5-05/diem-bat-dau-ham.txt",
+   "sha256": "090e7e3e4c6222adea86893c4384424bf0ebad3f748aa300b9c2445f45eb93d9",
+   "bytes": 984,
+   "loai": "du-lieu-chup-ma-may",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/gold-trade-pro-mt5/analysis/initial/05_Gold_Trade_Pro_MT5/05_Gold_Trade_Pro_MT5.c",
+   "git_blob": "2f375a80fc980a1c752d41f6bdfea678ddfe84a1",
+   "old_sha256": "9048c2c1c84b4607dfad326687968df8231495f6447e4202e83b653ebbf8a19a",
+   "new_path": "bot-cua-toi-1/phan-tich/ban-ex5-05/ma-trung-gian.c",
+   "sha256": "9048c2c1c84b4607dfad326687968df8231495f6447e4202e83b653ebbf8a19a",
+   "bytes": 1059007,
+   "loai": "ma-trung-gian",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/gold-trade-pro-mt5/analysis/initial/05_Gold_Trade_Pro_MT5/05_Gold_Trade_Pro_MT5.c.summary.json",
+   "git_blob": "4aef601b939e79f6e850c4c5f11ec3aa6c49cd0d",
+   "old_sha256": "bdd4e5457e14b70c0393bb8daad94d21d723e22b043e2f2187889475f946b658",
+   "new_path": "bot-cua-toi-1/phan-tich/ban-ex5-05/ma-trung-gian.c.summary.json",
+   "sha256": "bdd4e5457e14b70c0393bb8daad94d21d723e22b043e2f2187889475f946b658",
+   "bytes": 40,
+   "loai": "du-lieu-chup-ma-may",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/gold-trade-pro-mt5/analysis/initial/05_Gold_Trade_Pro_MT5/capture/0000019ce09b0000.bin",
+   "git_blob": "b6833f0891e00ef1a6998019c35aa6887e7a4e95",
+   "old_sha256": "9e57df5f87bb21bfc37c4d7ba23d5832faf0aebacaf62af7f582ac2163369c8c",
+   "new_path": "bot-cua-toi-1/phan-tich/ban-ex5-05/capture/0000019ce09b0000.bin",
+   "sha256": "9e57df5f87bb21bfc37c4d7ba23d5832faf0aebacaf62af7f582ac2163369c8c",
+   "bytes": 323584,
+   "loai": "du-lieu-chup-ma-may",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/gold-trade-pro-mt5/analysis/initial/05_Gold_Trade_Pro_MT5/capture/00007ffa1b990000.bin",
+   "git_blob": "00113d9a4172d1a3a816b5fd798f25adaeb51967",
+   "old_sha256": "e9907a53566f44352c6c3dda295ba38e34396c8776a20c12d90172080fe06bc0",
+   "new_path": "bot-cua-toi-1/phan-tich/ban-ex5-05/capture/00007ffa1b990000.bin",
+   "sha256": "e9907a53566f44352c6c3dda295ba38e34396c8776a20c12d90172080fe06bc0",
+   "bytes": 4096,
+   "loai": "du-lieu-chup-ma-may",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/gold-trade-pro-mt5/analysis/initial/05_Gold_Trade_Pro_MT5/capture/00007ffa1b991000.bin",
+   "git_blob": "08e7df176454f3ee5eeda13efa0adaa54828dfd8",
+   "old_sha256": "ad7facb2586fc6e966c004d7d1d16b024f5805ff7cb47c7a85dabd8b48892ca7",
+   "new_path": "bot-cua-toi-1/phan-tich/ban-ex5-05/capture/00007ffa1b991000.bin",
+   "sha256": "ad7facb2586fc6e966c004d7d1d16b024f5805ff7cb47c7a85dabd8b48892ca7",
+   "bytes": 4096,
+   "loai": "du-lieu-chup-ma-may",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/gold-trade-pro-mt5/analysis/initial/05_Gold_Trade_Pro_MT5/capture/capture.json",
+   "git_blob": "92180b4380459dc871f02690745c9043a1ced6f2",
+   "old_sha256": "c85e102bf5f66a27627930c52bef1e3de6fee413d92484130bf88f67f90cbf19",
+   "new_path": "bot-cua-toi-1/phan-tich/ban-ex5-05/capture/capture.json",
+   "sha256": "c85e102bf5f66a27627930c52bef1e3de6fee413d92484130bf88f67f90cbf19",
+   "bytes": 1023,
+   "loai": "du-lieu-chup-ma-may",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/gold-trade-pro-mt5/analysis/initial/05_Gold_Trade_Pro_MT5/re2batch1_05-job.json",
+   "git_blob": "e81d764a6321959ec4f4402e4632ca8a0e8e4330",
+   "old_sha256": "1d3710121dc6c2df913da7aacb15bc895371a7de18b1316ab0d5ad53f0e20df4",
+   "new_path": "bot-cua-toi-1/phan-tich/ban-ex5-05/lenh-chup.json",
+   "sha256": "1d3710121dc6c2df913da7aacb15bc895371a7de18b1316ab0d5ad53f0e20df4",
+   "bytes": 339,
+   "loai": "du-lieu-chup-ma-may",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/gold-trade-pro-mt5/analysis/initial/05_Gold_Trade_Pro_MT5/re2batch1_05-result.json",
+   "git_blob": "07b768ac4411bae5fc8b642a20a1947b7d8a0c16",
+   "old_sha256": "4bd02a0adc8c53b09a2a7ccd4c39175f80649568d0540ace7daa79d298a35529",
+   "new_path": "bot-cua-toi-1/phan-tich/ban-ex5-05/ket-qua-chup.json",
+   "sha256": "4bd02a0adc8c53b09a2a7ccd4c39175f80649568d0540ace7daa79d298a35529",
+   "bytes": 275,
+   "loai": "du-lieu-chup-ma-may",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/goldbot-one-mt5/analysis/initial/06_Goldbot_One_MT5/06_Goldbot_One_MT5.bin.base.txt",
+   "git_blob": "21b0d40adfe874e30c493071a542c4e7fb04d831",
+   "old_sha256": "b78d9aa41d1ee17dd5ad349a0ccdf2cadd9f4a6507005d6bd841217a9d0ff70a",
+   "new_path": "bot-cua-toi-2/phan-tich/ban-ex5-06/dia-chi-nen.txt",
+   "sha256": "b78d9aa41d1ee17dd5ad349a0ccdf2cadd9f4a6507005d6bd841217a9d0ff70a",
+   "bytes": 12,
+   "loai": "du-lieu-chup-ma-may",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/goldbot-one-mt5/analysis/initial/06_Goldbot_One_MT5/06_Goldbot_One_MT5.bin.seeds.txt",
+   "git_blob": "7a5a757231d818762ac09cabb8fec30b304066e7",
+   "old_sha256": "570776f1627ff06b0df42e677ee979c6b0810dd038e5b48ecb322d5004c2bf96",
+   "new_path": "bot-cua-toi-2/phan-tich/ban-ex5-06/diem-bat-dau-ham.txt",
+   "sha256": "570776f1627ff06b0df42e677ee979c6b0810dd038e5b48ecb322d5004c2bf96",
+   "bytes": 996,
+   "loai": "du-lieu-chup-ma-may",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/goldbot-one-mt5/analysis/initial/06_Goldbot_One_MT5/06_Goldbot_One_MT5.c",
+   "git_blob": "f19d479753173448ec147c9ba42aaaf3bac1ac92",
+   "old_sha256": "00942e3bc004dbf6a12a2df4530556c13807b957a7baeb48e196e42814d9f902",
+   "new_path": "bot-cua-toi-2/phan-tich/ban-ex5-06/ma-trung-gian.c",
+   "sha256": "00942e3bc004dbf6a12a2df4530556c13807b957a7baeb48e196e42814d9f902",
+   "bytes": 1028020,
+   "loai": "ma-trung-gian",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/goldbot-one-mt5/analysis/initial/06_Goldbot_One_MT5/06_Goldbot_One_MT5.c.summary.json",
+   "git_blob": "59324df35f82718684c2e0d6648dde5792e3b5da",
+   "old_sha256": "b5089d9c3630be52a2c49f8aa3def5912b26d2829114be1d8b4278470f8c0287",
+   "new_path": "bot-cua-toi-2/phan-tich/ban-ex5-06/ma-trung-gian.c.summary.json",
+   "sha256": "b5089d9c3630be52a2c49f8aa3def5912b26d2829114be1d8b4278470f8c0287",
+   "bytes": 40,
+   "loai": "du-lieu-chup-ma-may",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/goldbot-one-mt5/analysis/initial/06_Goldbot_One_MT5/capture/0000024fc8630000.bin",
+   "git_blob": "ef658585cc0b154cfa27c4f54e4038b6cd27f377",
+   "old_sha256": "c549d8a7ce64156e32c0dde4268ab1a791f424b33c5287d83fd9278e25b4d2b3",
+   "new_path": "bot-cua-toi-2/phan-tich/ban-ex5-06/capture/0000024fc8630000.bin",
+   "sha256": "c549d8a7ce64156e32c0dde4268ab1a791f424b33c5287d83fd9278e25b4d2b3",
+   "bytes": 311296,
+   "loai": "du-lieu-chup-ma-may",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/goldbot-one-mt5/analysis/initial/06_Goldbot_One_MT5/capture/00007ffa1b990000.bin",
+   "git_blob": "00113d9a4172d1a3a816b5fd798f25adaeb51967",
+   "old_sha256": "e9907a53566f44352c6c3dda295ba38e34396c8776a20c12d90172080fe06bc0",
+   "new_path": "bot-cua-toi-2/phan-tich/ban-ex5-06/capture/00007ffa1b990000.bin",
+   "sha256": "e9907a53566f44352c6c3dda295ba38e34396c8776a20c12d90172080fe06bc0",
+   "bytes": 4096,
+   "loai": "du-lieu-chup-ma-may",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/goldbot-one-mt5/analysis/initial/06_Goldbot_One_MT5/capture/00007ffa1b991000.bin",
+   "git_blob": "08e7df176454f3ee5eeda13efa0adaa54828dfd8",
+   "old_sha256": "ad7facb2586fc6e966c004d7d1d16b024f5805ff7cb47c7a85dabd8b48892ca7",
+   "new_path": "bot-cua-toi-2/phan-tich/ban-ex5-06/capture/00007ffa1b991000.bin",
+   "sha256": "ad7facb2586fc6e966c004d7d1d16b024f5805ff7cb47c7a85dabd8b48892ca7",
+   "bytes": 4096,
+   "loai": "du-lieu-chup-ma-may",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/goldbot-one-mt5/analysis/initial/06_Goldbot_One_MT5/capture/capture.json",
+   "git_blob": "5e8b9fb3d7fd9d9ab5e130c2272af565ff5354a1",
+   "old_sha256": "428d3de27c3c9e785b5c0ae7635e19585a0d36417011ac5e47f5bc6df40dcf91",
+   "new_path": "bot-cua-toi-2/phan-tich/ban-ex5-06/capture/capture.json",
+   "sha256": "428d3de27c3c9e785b5c0ae7635e19585a0d36417011ac5e47f5bc6df40dcf91",
+   "bytes": 1024,
+   "loai": "du-lieu-chup-ma-may",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/goldbot-one-mt5/analysis/initial/06_Goldbot_One_MT5/re2batch1_06-job.json",
+   "git_blob": "fa968041da9b08ef42e4265efe34c2a604f36191",
+   "old_sha256": "154401a0cc6e3d7a37d14a15cdce976d39de2307af4f20a6e2984190e58690fd",
+   "new_path": "bot-cua-toi-2/phan-tich/ban-ex5-06/lenh-chup.json",
+   "sha256": "154401a0cc6e3d7a37d14a15cdce976d39de2307af4f20a6e2984190e58690fd",
+   "bytes": 336,
+   "loai": "du-lieu-chup-ma-may",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/goldbot-one-mt5/analysis/initial/06_Goldbot_One_MT5/re2batch1_06-result.json",
+   "git_blob": "07612362eb1f1971c5dde98c1061c175ada04e93",
+   "old_sha256": "6bebd313fe8333ccd5a04709b1c3129637fbd86198f48f659b32d2852d08d221",
+   "new_path": "bot-cua-toi-2/phan-tich/ban-ex5-06/ket-qua-chup.json",
+   "sha256": "6bebd313fe8333ccd5a04709b1c3129637fbd86198f48f659b32d2852d08d221",
+   "bytes": 273,
+   "loai": "du-lieu-chup-ma-may",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/moondog-ea/analysis/initial/07_MoonDog_EA/07_MoonDog_EA.bin.base.txt",
+   "git_blob": "4da700a2e3c1d8ab1bf30bf81f866669c0a98e71",
+   "old_sha256": "b8a9aeb10c79e29a3785f12f84602d563c06195c081f71da5312cbf2f3c2466d",
+   "new_path": "bot-cua-toi-8/phan-tich/ban-ex5-07/dia-chi-nen.txt",
+   "sha256": "b8a9aeb10c79e29a3785f12f84602d563c06195c081f71da5312cbf2f3c2466d",
+   "bytes": 12,
+   "loai": "du-lieu-chup-ma-may",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/moondog-ea/analysis/initial/07_MoonDog_EA/07_MoonDog_EA.bin.seeds.txt",
+   "git_blob": "d3dc021db730a6a72bf07d39f87e560929728c68",
+   "old_sha256": "b35ce51e68e61e66d21dca66544cfcab9dc7a7c5289486cbfc6f87401973f9ed",
+   "new_path": "bot-cua-toi-8/phan-tich/ban-ex5-07/diem-bat-dau-ham.txt",
+   "sha256": "b35ce51e68e61e66d21dca66544cfcab9dc7a7c5289486cbfc6f87401973f9ed",
+   "bytes": 4356,
+   "loai": "du-lieu-chup-ma-may",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/moondog-ea/analysis/initial/07_MoonDog_EA/07_MoonDog_EA.c",
+   "git_blob": "058762d0ca49eb9bc9a65da05e6b0482eee9b16a",
+   "old_sha256": "bc0b0837b06e8d375238a80af39faf49bf5544c2d5ad235a5bb4595c3eac0f9f",
+   "new_path": "bot-cua-toi-8/phan-tich/ban-ex5-07/ma-trung-gian.c",
+   "sha256": "bc0b0837b06e8d375238a80af39faf49bf5544c2d5ad235a5bb4595c3eac0f9f",
+   "bytes": 2234159,
+   "loai": "ma-trung-gian",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/moondog-ea/analysis/initial/07_MoonDog_EA/07_MoonDog_EA.c.summary.json",
+   "git_blob": "177b7d06234e7ef99215f518a3a60fea33e73bae",
+   "old_sha256": "c5f0108cb41690abbe5ac2881c7970f09dfbeb445e3ccd1cc4a18b867f0e23f1",
+   "new_path": "bot-cua-toi-8/phan-tich/ban-ex5-07/ma-trung-gian.c.summary.json",
+   "sha256": "c5f0108cb41690abbe5ac2881c7970f09dfbeb445e3ccd1cc4a18b867f0e23f1",
+   "bytes": 42,
+   "loai": "du-lieu-chup-ma-may",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/moondog-ea/analysis/initial/07_MoonDog_EA/capture/000001e86dcd0000.bin",
+   "git_blob": "58af846605ed0798731fa09787e405d6b224d25a",
+   "old_sha256": "cac32682da3802d66b3194762a10471e616c8214307ffb6d07289d92c4db6af2",
+   "new_path": "bot-cua-toi-8/phan-tich/ban-ex5-07/capture/000001e86dcd0000.bin",
+   "sha256": "cac32682da3802d66b3194762a10471e616c8214307ffb6d07289d92c4db6af2",
+   "bytes": 602112,
+   "loai": "du-lieu-chup-ma-may",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/moondog-ea/analysis/initial/07_MoonDog_EA/capture/00007ffa1b990000.bin",
+   "git_blob": "00113d9a4172d1a3a816b5fd798f25adaeb51967",
+   "old_sha256": "e9907a53566f44352c6c3dda295ba38e34396c8776a20c12d90172080fe06bc0",
+   "new_path": "bot-cua-toi-8/phan-tich/ban-ex5-07/capture/00007ffa1b990000.bin",
+   "sha256": "e9907a53566f44352c6c3dda295ba38e34396c8776a20c12d90172080fe06bc0",
+   "bytes": 4096,
+   "loai": "du-lieu-chup-ma-may",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/moondog-ea/analysis/initial/07_MoonDog_EA/capture/00007ffa1b991000.bin",
+   "git_blob": "08e7df176454f3ee5eeda13efa0adaa54828dfd8",
+   "old_sha256": "ad7facb2586fc6e966c004d7d1d16b024f5805ff7cb47c7a85dabd8b48892ca7",
+   "new_path": "bot-cua-toi-8/phan-tich/ban-ex5-07/capture/00007ffa1b991000.bin",
+   "sha256": "ad7facb2586fc6e966c004d7d1d16b024f5805ff7cb47c7a85dabd8b48892ca7",
+   "bytes": 4096,
+   "loai": "du-lieu-chup-ma-may",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/moondog-ea/analysis/initial/07_MoonDog_EA/capture/capture.json",
+   "git_blob": "dfd2565b96c8a53565244e8941b28aa1a969ec03",
+   "old_sha256": "e3cab44980818a54f630a88d9fa52cda62b10dbe22d9cad28409ba7888152da5",
+   "new_path": "bot-cua-toi-8/phan-tich/ban-ex5-07/capture/capture.json",
+   "sha256": "e3cab44980818a54f630a88d9fa52cda62b10dbe22d9cad28409ba7888152da5",
+   "bytes": 1024,
+   "loai": "du-lieu-chup-ma-may",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/moondog-ea/analysis/initial/07_MoonDog_EA/re2batch1_07-job.json",
+   "git_blob": "8ee8fd8762b2981fbf0a9e9084a02ba2d9fb3cc7",
+   "old_sha256": "660c68c9bde8e586f0d88a5072f5b80bf82f016f892a7536040803781641d213",
+   "new_path": "bot-cua-toi-8/phan-tich/ban-ex5-07/lenh-chup.json",
+   "sha256": "660c68c9bde8e586f0d88a5072f5b80bf82f016f892a7536040803781641d213",
+   "bytes": 538,
+   "loai": "du-lieu-chup-ma-may",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/moondog-ea/analysis/initial/07_MoonDog_EA/re2batch1_07-result.json",
+   "git_blob": "400b55045e0c8fc43d43f30a20ed0881285dacd7",
+   "old_sha256": "cd4a46bea959bd38ef3c557837d0894fbe222a69c2c6ba1f431c189bcd7b39a5",
+   "new_path": "bot-cua-toi-8/phan-tich/ban-ex5-07/ket-qua-chup.json",
+   "sha256": "cd4a46bea959bd38ef3c557837d0894fbe222a69c2c6ba1f431c189bcd7b39a5",
+   "bytes": 268,
+   "loai": "du-lieu-chup-ma-may",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/my-ai-gold/analysis/initial/12_My_AI_Gold/12_My_AI_Gold.bin.base.txt",
+   "git_blob": "4010965e751dedf1d3247a82a00604ca4dc84b2d",
+   "old_sha256": "0e476bd27867134f4497ca7addd062df7edf6aa937edca909ea85e18651e755b",
+   "new_path": "bot-cua-toi-11/phan-tich/ban-ex5-12/dia-chi-nen.txt",
+   "sha256": "0e476bd27867134f4497ca7addd062df7edf6aa937edca909ea85e18651e755b",
+   "bytes": 12,
+   "loai": "du-lieu-chup-ma-may",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/my-ai-gold/analysis/initial/12_My_AI_Gold/12_My_AI_Gold.bin.seeds.txt",
+   "git_blob": "f82fe8bfcc62843bdf04a2656337152a399ceb49",
+   "old_sha256": "043b5b7a0cdb911a18e5a75204947d9ff40719560f433aa7791f8fc1ea3bf758",
+   "new_path": "bot-cua-toi-11/phan-tich/ban-ex5-12/diem-bat-dau-ham.txt",
+   "sha256": "043b5b7a0cdb911a18e5a75204947d9ff40719560f433aa7791f8fc1ea3bf758",
+   "bytes": 696,
+   "loai": "du-lieu-chup-ma-may",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/my-ai-gold/analysis/initial/12_My_AI_Gold/12_My_AI_Gold.c",
+   "git_blob": "189e07a331ca612ce27e24cc52ffb3dcad827fd5",
+   "old_sha256": "9c5a1bf6bfdcb39833924117ab236f8fa3fde40d23b38e73f933d66bc70d9b90",
+   "new_path": "bot-cua-toi-11/phan-tich/ban-ex5-12/ma-trung-gian.c",
+   "sha256": "9c5a1bf6bfdcb39833924117ab236f8fa3fde40d23b38e73f933d66bc70d9b90",
+   "bytes": 380147,
+   "loai": "ma-trung-gian",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/my-ai-gold/analysis/initial/12_My_AI_Gold/12_My_AI_Gold.c.summary.json",
+   "git_blob": "e8d74ccd9da4828bac2539f0f84bd3dba32b6c21",
+   "old_sha256": "9d840bd2741e36a11880481d1528de1c98e0c19604abd42086254b2876eca820",
+   "new_path": "bot-cua-toi-11/phan-tich/ban-ex5-12/ma-trung-gian.c.summary.json",
+   "sha256": "9d840bd2741e36a11880481d1528de1c98e0c19604abd42086254b2876eca820",
+   "bytes": 40,
+   "loai": "du-lieu-chup-ma-may",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/my-ai-gold/analysis/initial/12_My_AI_Gold/capture/000002b1a6a60000.bin",
+   "git_blob": "296659825e429d13e9fb7fae7b14a5a84baab960",
+   "old_sha256": "460c6a2716cb94d4d5b60d71f451989c6249404b29d7735ae3310a6119fbda95",
+   "new_path": "bot-cua-toi-11/phan-tich/ban-ex5-12/capture/000002b1a6a60000.bin",
+   "sha256": "460c6a2716cb94d4d5b60d71f451989c6249404b29d7735ae3310a6119fbda95",
+   "bytes": 94208,
+   "loai": "du-lieu-chup-ma-may",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/my-ai-gold/analysis/initial/12_My_AI_Gold/capture/00007ffa1b990000.bin",
+   "git_blob": "00113d9a4172d1a3a816b5fd798f25adaeb51967",
+   "old_sha256": "e9907a53566f44352c6c3dda295ba38e34396c8776a20c12d90172080fe06bc0",
+   "new_path": "bot-cua-toi-11/phan-tich/ban-ex5-12/capture/00007ffa1b990000.bin",
+   "sha256": "e9907a53566f44352c6c3dda295ba38e34396c8776a20c12d90172080fe06bc0",
+   "bytes": 4096,
+   "loai": "du-lieu-chup-ma-may",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/my-ai-gold/analysis/initial/12_My_AI_Gold/capture/00007ffa1b991000.bin",
+   "git_blob": "08e7df176454f3ee5eeda13efa0adaa54828dfd8",
+   "old_sha256": "ad7facb2586fc6e966c004d7d1d16b024f5805ff7cb47c7a85dabd8b48892ca7",
+   "new_path": "bot-cua-toi-11/phan-tich/ban-ex5-12/capture/00007ffa1b991000.bin",
+   "sha256": "ad7facb2586fc6e966c004d7d1d16b024f5805ff7cb47c7a85dabd8b48892ca7",
+   "bytes": 4096,
+   "loai": "du-lieu-chup-ma-may",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/my-ai-gold/analysis/initial/12_My_AI_Gold/capture/capture.json",
+   "git_blob": "1da353f3a35b5912e17cd52293ba45fd7c7f20df",
+   "old_sha256": "b0967099b37da7bc514a7ddec72bf4ef7390f2e255286047848bc2f60f92d5bb",
+   "new_path": "bot-cua-toi-11/phan-tich/ban-ex5-12/capture/capture.json",
+   "sha256": "b0967099b37da7bc514a7ddec72bf4ef7390f2e255286047848bc2f60f92d5bb",
+   "bytes": 1023,
+   "loai": "du-lieu-chup-ma-may",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/my-ai-gold/analysis/initial/12_My_AI_Gold/re2batch1_12-job.json",
+   "git_blob": "47c2c2bb8544f687b8883632b6e36008a3960fab",
+   "old_sha256": "a4c4cfc3e4facc23bb1d906f77c2cbb26df6a90c88e6c226ef1e9e5d1b20f6d8",
+   "new_path": "bot-cua-toi-11/phan-tich/ban-ex5-12/lenh-chup.json",
+   "sha256": "a4c4cfc3e4facc23bb1d906f77c2cbb26df6a90c88e6c226ef1e9e5d1b20f6d8",
+   "bytes": 205,
+   "loai": "du-lieu-chup-ma-may",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/my-ai-gold/analysis/initial/12_My_AI_Gold/re2batch1_12-result.json",
+   "git_blob": "58abe2b2e70eb80387c641deab8d5366123b3bff",
+   "old_sha256": "6bf3ac93c524c0fa6aa635291abb216dfaf3f1882235e8e8364a231105650e91",
+   "new_path": "bot-cua-toi-11/phan-tich/ban-ex5-12/ket-qua-chup.json",
+   "sha256": "6bf3ac93c524c0fa6aa635291abb216dfaf3f1882235e8e8364a231105650e91",
+   "bytes": 269,
+   "loai": "du-lieu-chup-ma-may",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/quantum-queen-x-mt5/analysis/initial/13_Quantum_Queen_X_MT5/13_Quantum_Queen_X_MT5.bin.base.txt",
+   "git_blob": "a6910ccb3c4b8b534abc276311f9e9ebbf803990",
+   "old_sha256": "2277024ca96abcd1257b3ca09f679ae3c451b8cd10018789006c4190c92715b9",
+   "new_path": "bot-cua-toi-15/phan-tich/ban-ex5-13/dia-chi-nen.txt",
+   "sha256": "2277024ca96abcd1257b3ca09f679ae3c451b8cd10018789006c4190c92715b9",
+   "bytes": 12,
+   "loai": "du-lieu-chup-ma-may",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/quantum-queen-x-mt5/analysis/initial/13_Quantum_Queen_X_MT5/13_Quantum_Queen_X_MT5.bin.seeds.txt",
+   "git_blob": "f040e89696bb91ec22fd8f8fb20d3ca4cccc6916",
+   "old_sha256": "81ec6c36985f4b5f103db5180913c3115404df987fbb500025869bdb3a550591",
+   "new_path": "bot-cua-toi-15/phan-tich/ban-ex5-13/diem-bat-dau-ham.txt",
+   "sha256": "81ec6c36985f4b5f103db5180913c3115404df987fbb500025869bdb3a550591",
+   "bytes": 3768,
+   "loai": "du-lieu-chup-ma-may",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/quantum-queen-x-mt5/analysis/initial/13_Quantum_Queen_X_MT5/13_Quantum_Queen_X_MT5.c",
+   "git_blob": "ec1108bd07628e99edb6dd753e4020b01474aef6",
+   "old_sha256": "a8296a1360ae45d1e89870ca8483f0de33de1408ec3463a602a1a3ea6f5ebd8e",
+   "new_path": "bot-cua-toi-15/phan-tich/ban-ex5-13/ma-trung-gian.c",
+   "sha256": "a8296a1360ae45d1e89870ca8483f0de33de1408ec3463a602a1a3ea6f5ebd8e",
+   "bytes": 1517638,
+   "loai": "ma-trung-gian",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/quantum-queen-x-mt5/analysis/initial/13_Quantum_Queen_X_MT5/13_Quantum_Queen_X_MT5.c.summary.json",
+   "git_blob": "6544454cc3e7beb9bb4515be9bbf6c940146c8eb",
+   "old_sha256": "6871f6d190f5bbfe20f089b62de59c8a9488bb4c8fe5df4aefbc42cb0aefec57",
+   "new_path": "bot-cua-toi-15/phan-tich/ban-ex5-13/ma-trung-gian.c.summary.json",
+   "sha256": "6871f6d190f5bbfe20f089b62de59c8a9488bb4c8fe5df4aefbc42cb0aefec57",
+   "bytes": 42,
+   "loai": "du-lieu-chup-ma-may",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/quantum-queen-x-mt5/analysis/initial/13_Quantum_Queen_X_MT5/capture/0000014c63810000.bin",
+   "git_blob": "cff81f4bd8d8a79e07507630cafec1f3e79af13b",
+   "old_sha256": "ce3d057ad87ef2b453b498c09ad18e1cdfba52667b9a5a7eaa66377c065cfce5",
+   "new_path": "bot-cua-toi-15/phan-tich/ban-ex5-13/capture/0000014c63810000.bin",
+   "sha256": "ce3d057ad87ef2b453b498c09ad18e1cdfba52667b9a5a7eaa66377c065cfce5",
+   "bytes": 630784,
+   "loai": "du-lieu-chup-ma-may",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/quantum-queen-x-mt5/analysis/initial/13_Quantum_Queen_X_MT5/capture/00007ffa1b990000.bin",
+   "git_blob": "00113d9a4172d1a3a816b5fd798f25adaeb51967",
+   "old_sha256": "e9907a53566f44352c6c3dda295ba38e34396c8776a20c12d90172080fe06bc0",
+   "new_path": "bot-cua-toi-15/phan-tich/ban-ex5-13/capture/00007ffa1b990000.bin",
+   "sha256": "e9907a53566f44352c6c3dda295ba38e34396c8776a20c12d90172080fe06bc0",
+   "bytes": 4096,
+   "loai": "du-lieu-chup-ma-may",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/quantum-queen-x-mt5/analysis/initial/13_Quantum_Queen_X_MT5/capture/00007ffa1b991000.bin",
+   "git_blob": "08e7df176454f3ee5eeda13efa0adaa54828dfd8",
+   "old_sha256": "ad7facb2586fc6e966c004d7d1d16b024f5805ff7cb47c7a85dabd8b48892ca7",
+   "new_path": "bot-cua-toi-15/phan-tich/ban-ex5-13/capture/00007ffa1b991000.bin",
+   "sha256": "ad7facb2586fc6e966c004d7d1d16b024f5805ff7cb47c7a85dabd8b48892ca7",
+   "bytes": 4096,
+   "loai": "du-lieu-chup-ma-may",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/quantum-queen-x-mt5/analysis/initial/13_Quantum_Queen_X_MT5/capture/capture.json",
+   "git_blob": "2c4d81a655f5032249e265e4c6fb67f723e05814",
+   "old_sha256": "b338f2a1fc00a3069facfa453fccd445b9a4fbbe66774abf9fddc1308dcccf73",
+   "new_path": "bot-cua-toi-15/phan-tich/ban-ex5-13/capture/capture.json",
+   "sha256": "b338f2a1fc00a3069facfa453fccd445b9a4fbbe66774abf9fddc1308dcccf73",
+   "bytes": 1024,
+   "loai": "du-lieu-chup-ma-may",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/quantum-queen-x-mt5/analysis/initial/13_Quantum_Queen_X_MT5/re2batch1_13-job.json",
+   "git_blob": "4c3ee52c4d1ce16c10db7f547a2fb1769b31bd8f",
+   "old_sha256": "86af33cec03c21495b9945fe1c99c2debcd6057990c884b8f7ae69feb7b1ad11",
+   "new_path": "bot-cua-toi-15/phan-tich/ban-ex5-13/lenh-chup.json",
+   "sha256": "86af33cec03c21495b9945fe1c99c2debcd6057990c884b8f7ae69feb7b1ad11",
+   "bytes": 214,
+   "loai": "du-lieu-chup-ma-may",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/quantum-queen-x-mt5/analysis/initial/13_Quantum_Queen_X_MT5/re2batch1_13-result.json",
+   "git_blob": "b02c53b2cbf7bbc21416b09a83eb5b14800c505c",
+   "old_sha256": "9c3e172c4c87dbf6cfdb5ca39aa0f8257080c6a23d6030f817fd9f091c49bca4",
+   "new_path": "bot-cua-toi-15/phan-tich/ban-ex5-13/ket-qua-chup.json",
+   "sha256": "9c3e172c4c87dbf6cfdb5ca39aa0f8257080c6a23d6030f817fd9f091c49bca4",
+   "bytes": 278,
+   "loai": "du-lieu-chup-ma-may",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/quantum-titan-mt5/analysis/initial/08_Quantum_Titan_MT5/08_Quantum_Titan_MT5.bin.base.txt",
+   "git_blob": "34967be9aca513889515e5c7d3875c1750a40fbb",
+   "old_sha256": "caa173611f67984cf3db0e71ac34085bda01ec5efe0fff7ae56f1e7abed86118",
+   "new_path": "bot-cua-toi-9/phan-tich/ban-ex5-08/dia-chi-nen.txt",
+   "sha256": "caa173611f67984cf3db0e71ac34085bda01ec5efe0fff7ae56f1e7abed86118",
+   "bytes": 12,
+   "loai": "du-lieu-chup-ma-may",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/quantum-titan-mt5/analysis/initial/08_Quantum_Titan_MT5/08_Quantum_Titan_MT5.bin.seeds.txt",
+   "git_blob": "a4cdd933263e6c66645db934d513969a199dd340",
+   "old_sha256": "a97b97d7ca2036f30aeb23eb6e55309820879acaf5ce2b5c7a5981317918be5d",
+   "new_path": "bot-cua-toi-9/phan-tich/ban-ex5-08/diem-bat-dau-ham.txt",
+   "sha256": "a97b97d7ca2036f30aeb23eb6e55309820879acaf5ce2b5c7a5981317918be5d",
+   "bytes": 1356,
+   "loai": "du-lieu-chup-ma-may",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/quantum-titan-mt5/analysis/initial/08_Quantum_Titan_MT5/08_Quantum_Titan_MT5.c",
+   "git_blob": "b363103c769430c23035812a9ff18d51709a1666",
+   "old_sha256": "72cbb4e4c73858ea85e77650ec77851bb0e2a7ff454ef66825baba26b195144a",
+   "new_path": "bot-cua-toi-9/phan-tich/ban-ex5-08/ma-trung-gian.c",
+   "sha256": "72cbb4e4c73858ea85e77650ec77851bb0e2a7ff454ef66825baba26b195144a",
+   "bytes": 814682,
+   "loai": "ma-trung-gian",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/quantum-titan-mt5/analysis/initial/08_Quantum_Titan_MT5/08_Quantum_Titan_MT5.c.summary.json",
+   "git_blob": "04d7bb1540a9bc574ecd363659910ab23d56c5d9",
+   "old_sha256": "ac9a5519671d6297e5136c5d055ed3550d7caa1213826c213a9d1510c3b35550",
+   "new_path": "bot-cua-toi-9/phan-tich/ban-ex5-08/ma-trung-gian.c.summary.json",
+   "sha256": "ac9a5519671d6297e5136c5d055ed3550d7caa1213826c213a9d1510c3b35550",
+   "bytes": 42,
+   "loai": "du-lieu-chup-ma-may",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/quantum-titan-mt5/analysis/initial/08_Quantum_Titan_MT5/capture/00000130b71d0000.bin",
+   "git_blob": "fcf65a9bf4a43a708035b75dc2837d81876771bc",
+   "old_sha256": "023c44816bcb8c00d161b1b30b6bf9ee20d79d6a0c95bc7128bc80072349d92a",
+   "new_path": "bot-cua-toi-9/phan-tich/ban-ex5-08/capture/00000130b71d0000.bin",
+   "sha256": "023c44816bcb8c00d161b1b30b6bf9ee20d79d6a0c95bc7128bc80072349d92a",
+   "bytes": 196608,
+   "loai": "du-lieu-chup-ma-may",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/quantum-titan-mt5/analysis/initial/08_Quantum_Titan_MT5/capture/00007ffa1b990000.bin",
+   "git_blob": "00113d9a4172d1a3a816b5fd798f25adaeb51967",
+   "old_sha256": "e9907a53566f44352c6c3dda295ba38e34396c8776a20c12d90172080fe06bc0",
+   "new_path": "bot-cua-toi-9/phan-tich/ban-ex5-08/capture/00007ffa1b990000.bin",
+   "sha256": "e9907a53566f44352c6c3dda295ba38e34396c8776a20c12d90172080fe06bc0",
+   "bytes": 4096,
+   "loai": "du-lieu-chup-ma-may",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/quantum-titan-mt5/analysis/initial/08_Quantum_Titan_MT5/capture/00007ffa1b991000.bin",
+   "git_blob": "08e7df176454f3ee5eeda13efa0adaa54828dfd8",
+   "old_sha256": "ad7facb2586fc6e966c004d7d1d16b024f5805ff7cb47c7a85dabd8b48892ca7",
+   "new_path": "bot-cua-toi-9/phan-tich/ban-ex5-08/capture/00007ffa1b991000.bin",
+   "sha256": "ad7facb2586fc6e966c004d7d1d16b024f5805ff7cb47c7a85dabd8b48892ca7",
+   "bytes": 4096,
+   "loai": "du-lieu-chup-ma-may",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/quantum-titan-mt5/analysis/initial/08_Quantum_Titan_MT5/capture/capture.json",
+   "git_blob": "98e0b24b5d0778acc8140275dc6b372f9bf623c6",
+   "old_sha256": "da5d8ab872ffee260c512d6dc238ff0eac134f498f4698d1780cc7bd42fd3c12",
+   "new_path": "bot-cua-toi-9/phan-tich/ban-ex5-08/capture/capture.json",
+   "sha256": "da5d8ab872ffee260c512d6dc238ff0eac134f498f4698d1780cc7bd42fd3c12",
+   "bytes": 1024,
+   "loai": "du-lieu-chup-ma-may",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/quantum-titan-mt5/analysis/initial/08_Quantum_Titan_MT5/re2batch1_08-job.json",
+   "git_blob": "9198ec1dbd60632a04cce3bd34bb0a261e38bb58",
+   "old_sha256": "cd436267e9140ba1cd10ba66d364e320fd51738a0226b2bf6c9880d0200109cd",
+   "new_path": "bot-cua-toi-9/phan-tich/ban-ex5-08/lenh-chup.json",
+   "sha256": "cd436267e9140ba1cd10ba66d364e320fd51738a0226b2bf6c9880d0200109cd",
+   "bytes": 212,
+   "loai": "du-lieu-chup-ma-may",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/quantum-titan-mt5/analysis/initial/08_Quantum_Titan_MT5/re2batch1_08-result.json",
+   "git_blob": "78cd564663dbe5a5552e1ff7aa4414ae793d8f26",
+   "old_sha256": "b0261b41741db7d3da236366a5de754d43ec097b73a88cc0a9ad6de6124265f5",
+   "new_path": "bot-cua-toi-9/phan-tich/ban-ex5-08/ket-qua-chup.json",
+   "sha256": "b0261b41741db7d3da236366a5de754d43ec097b73a88cc0a9ad6de6124265f5",
+   "bytes": 275,
+   "loai": "du-lieu-chup-ma-may",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/quantum-titan-mt5/analysis/initial/14_Quantum_Titan_MT5/14_Quantum_Titan_MT5.bin.base.txt",
+   "git_blob": "be5c078fc6e8f5d0c273ce7b95e4013f9c835390",
+   "old_sha256": "f7add6adaea2a1979fbe787b0033ea2e755da3335771d19616f5636f78262d20",
+   "new_path": "bot-cua-toi-9/phan-tich/ban-ex5-14/dia-chi-nen.txt",
+   "sha256": "f7add6adaea2a1979fbe787b0033ea2e755da3335771d19616f5636f78262d20",
+   "bytes": 12,
+   "loai": "du-lieu-chup-ma-may",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/quantum-titan-mt5/analysis/initial/14_Quantum_Titan_MT5/14_Quantum_Titan_MT5.bin.seeds.txt",
+   "git_blob": "1883172b3f9cdab046037e8323db192ec779c5be",
+   "old_sha256": "bde11fe2b9712ae6d01bd7902b75d80b20813cf57aaec37720dc038f18b37951",
+   "new_path": "bot-cua-toi-9/phan-tich/ban-ex5-14/diem-bat-dau-ham.txt",
+   "sha256": "bde11fe2b9712ae6d01bd7902b75d80b20813cf57aaec37720dc038f18b37951",
+   "bytes": 1356,
+   "loai": "du-lieu-chup-ma-may",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/quantum-titan-mt5/analysis/initial/14_Quantum_Titan_MT5/14_Quantum_Titan_MT5.c",
+   "git_blob": "2f8d846b4c112c842f55c63c6af548718876331b",
+   "old_sha256": "f27df00dad9919ea75edd78b3fc12163ba351dacb8c1a7e9ecda7c6f54524060",
+   "new_path": "bot-cua-toi-9/phan-tich/ban-ex5-14/ma-trung-gian.c",
+   "sha256": "f27df00dad9919ea75edd78b3fc12163ba351dacb8c1a7e9ecda7c6f54524060",
+   "bytes": 814682,
+   "loai": "ma-trung-gian",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/quantum-titan-mt5/analysis/initial/14_Quantum_Titan_MT5/14_Quantum_Titan_MT5.c.summary.json",
+   "git_blob": "04d7bb1540a9bc574ecd363659910ab23d56c5d9",
+   "old_sha256": "ac9a5519671d6297e5136c5d055ed3550d7caa1213826c213a9d1510c3b35550",
+   "new_path": "bot-cua-toi-9/phan-tich/ban-ex5-14/ma-trung-gian.c.summary.json",
+   "sha256": "ac9a5519671d6297e5136c5d055ed3550d7caa1213826c213a9d1510c3b35550",
+   "bytes": 42,
+   "loai": "du-lieu-chup-ma-may",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/quantum-titan-mt5/analysis/initial/14_Quantum_Titan_MT5/capture/000002dc653d0000.bin",
+   "git_blob": "884ef80fcd3f664dbda1c1e2a1191db4c4ddfd4b",
+   "old_sha256": "6f63d64daf35a7f029772b1981e4eb833311efc7fc0a245dfc15f14f107168d7",
+   "new_path": "bot-cua-toi-9/phan-tich/ban-ex5-14/capture/000002dc653d0000.bin",
+   "sha256": "6f63d64daf35a7f029772b1981e4eb833311efc7fc0a245dfc15f14f107168d7",
+   "bytes": 196608,
+   "loai": "du-lieu-chup-ma-may",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/quantum-titan-mt5/analysis/initial/14_Quantum_Titan_MT5/capture/00007ffa1b990000.bin",
+   "git_blob": "00113d9a4172d1a3a816b5fd798f25adaeb51967",
+   "old_sha256": "e9907a53566f44352c6c3dda295ba38e34396c8776a20c12d90172080fe06bc0",
+   "new_path": "bot-cua-toi-9/phan-tich/ban-ex5-14/capture/00007ffa1b990000.bin",
+   "sha256": "e9907a53566f44352c6c3dda295ba38e34396c8776a20c12d90172080fe06bc0",
+   "bytes": 4096,
+   "loai": "du-lieu-chup-ma-may",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/quantum-titan-mt5/analysis/initial/14_Quantum_Titan_MT5/capture/00007ffa1b991000.bin",
+   "git_blob": "08e7df176454f3ee5eeda13efa0adaa54828dfd8",
+   "old_sha256": "ad7facb2586fc6e966c004d7d1d16b024f5805ff7cb47c7a85dabd8b48892ca7",
+   "new_path": "bot-cua-toi-9/phan-tich/ban-ex5-14/capture/00007ffa1b991000.bin",
+   "sha256": "ad7facb2586fc6e966c004d7d1d16b024f5805ff7cb47c7a85dabd8b48892ca7",
+   "bytes": 4096,
+   "loai": "du-lieu-chup-ma-may",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/quantum-titan-mt5/analysis/initial/14_Quantum_Titan_MT5/capture/capture.json",
+   "git_blob": "5692e41d18ec82fba72e785991001c691221139d",
+   "old_sha256": "f749c67ee0fad1dffa9015c67f2efda9c523d05e8fc5c831f0c85028093b739d",
+   "new_path": "bot-cua-toi-9/phan-tich/ban-ex5-14/capture/capture.json",
+   "sha256": "f749c67ee0fad1dffa9015c67f2efda9c523d05e8fc5c831f0c85028093b739d",
+   "bytes": 1024,
+   "loai": "du-lieu-chup-ma-may",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/quantum-titan-mt5/analysis/initial/14_Quantum_Titan_MT5/re2batch1_14-job.json",
+   "git_blob": "77a3c8f87d74924f2aaf3cbd871ab3d331df6a69",
+   "old_sha256": "d564ec9608d2f618352f5635a3b0c5cef88c5a8ef3e867ce12e5f4521562e606",
+   "new_path": "bot-cua-toi-9/phan-tich/ban-ex5-14/lenh-chup.json",
+   "sha256": "d564ec9608d2f618352f5635a3b0c5cef88c5a8ef3e867ce12e5f4521562e606",
+   "bytes": 212,
+   "loai": "du-lieu-chup-ma-may",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/quantum-titan-mt5/analysis/initial/14_Quantum_Titan_MT5/re2batch1_14-result.json",
+   "git_blob": "8afaa558482f39ef8b8f8531298cb171a8facdd8",
+   "old_sha256": "802a8a42183e130a86c75db4c5bccc5759223b1cdd6f12667027a18509b3d699",
+   "new_path": "bot-cua-toi-9/phan-tich/ban-ex5-14/ket-qua-chup.json",
+   "sha256": "802a8a42183e130a86c75db4c5bccc5759223b1cdd6f12667027a18509b3d699",
+   "bytes": 276,
+   "loai": "du-lieu-chup-ma-may",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/scalping-robot-pro-mt5/analysis/initial/15_Scalping_Robot_Pro_MT5/15_Scalping_Robot_Pro_MT5.bin.base.txt",
+   "git_blob": "a5156fd65dd4266087fab56f7e57e092be78675b",
+   "old_sha256": "245a33ee76f9f162a6fa45eefc72f0645379997f1a32522c572e018b28725f1c",
+   "new_path": "bot-cua-toi-12/phan-tich/ban-ex5-15/dia-chi-nen.txt",
+   "sha256": "245a33ee76f9f162a6fa45eefc72f0645379997f1a32522c572e018b28725f1c",
+   "bytes": 12,
+   "loai": "du-lieu-chup-ma-may",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/scalping-robot-pro-mt5/analysis/initial/15_Scalping_Robot_Pro_MT5/15_Scalping_Robot_Pro_MT5.bin.seeds.txt",
+   "git_blob": "b84c0bf639b51b6fc8d13411eba72059ed63bbce",
+   "old_sha256": "63490b70a8ebe2f765f188c41644b35c5074d8514ad7802b5951bfb01ea18fc6",
+   "new_path": "bot-cua-toi-12/phan-tich/ban-ex5-15/diem-bat-dau-ham.txt",
+   "sha256": "63490b70a8ebe2f765f188c41644b35c5074d8514ad7802b5951bfb01ea18fc6",
+   "bytes": 876,
+   "loai": "du-lieu-chup-ma-may",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/scalping-robot-pro-mt5/analysis/initial/15_Scalping_Robot_Pro_MT5/15_Scalping_Robot_Pro_MT5.c",
+   "git_blob": "457a2ed3befe875a5148c7f7bf76bdd09dcfea22",
+   "old_sha256": "0b1ee69271de8c989c97d9f1a19de250e01068bca36f8b31f47f023601fcc608",
+   "new_path": "bot-cua-toi-12/phan-tich/ban-ex5-15/ma-trung-gian.c",
+   "sha256": "0b1ee69271de8c989c97d9f1a19de250e01068bca36f8b31f47f023601fcc608",
+   "bytes": 545604,
+   "loai": "ma-trung-gian",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/scalping-robot-pro-mt5/analysis/initial/15_Scalping_Robot_Pro_MT5/15_Scalping_Robot_Pro_MT5.c.summary.json",
+   "git_blob": "98afd789b0d4e0e45c614016c0c0487ea88962e6",
+   "old_sha256": "0617315bffe1df82434a20d0b51ed1b17c062d5f195c2c55dfaf37581be0be55",
+   "new_path": "bot-cua-toi-12/phan-tich/ban-ex5-15/ma-trung-gian.c.summary.json",
+   "sha256": "0617315bffe1df82434a20d0b51ed1b17c062d5f195c2c55dfaf37581be0be55",
+   "bytes": 40,
+   "loai": "du-lieu-chup-ma-may",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/scalping-robot-pro-mt5/analysis/initial/15_Scalping_Robot_Pro_MT5/capture/000002ac334d0000.bin",
+   "git_blob": "7feb1cc231d7881a02cf3b51c915df11b33d0d20",
+   "old_sha256": "3059fc2989b07cd7351b279fbc0325bc76ca73b76da7f571868e35a7c5009c6c",
+   "new_path": "bot-cua-toi-12/phan-tich/ban-ex5-15/capture/000002ac334d0000.bin",
+   "sha256": "3059fc2989b07cd7351b279fbc0325bc76ca73b76da7f571868e35a7c5009c6c",
+   "bytes": 163840,
+   "loai": "du-lieu-chup-ma-may",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/scalping-robot-pro-mt5/analysis/initial/15_Scalping_Robot_Pro_MT5/capture/00007ffa1b990000.bin",
+   "git_blob": "00113d9a4172d1a3a816b5fd798f25adaeb51967",
+   "old_sha256": "e9907a53566f44352c6c3dda295ba38e34396c8776a20c12d90172080fe06bc0",
+   "new_path": "bot-cua-toi-12/phan-tich/ban-ex5-15/capture/00007ffa1b990000.bin",
+   "sha256": "e9907a53566f44352c6c3dda295ba38e34396c8776a20c12d90172080fe06bc0",
+   "bytes": 4096,
+   "loai": "du-lieu-chup-ma-may",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/scalping-robot-pro-mt5/analysis/initial/15_Scalping_Robot_Pro_MT5/capture/00007ffa1b991000.bin",
+   "git_blob": "08e7df176454f3ee5eeda13efa0adaa54828dfd8",
+   "old_sha256": "ad7facb2586fc6e966c004d7d1d16b024f5805ff7cb47c7a85dabd8b48892ca7",
+   "new_path": "bot-cua-toi-12/phan-tich/ban-ex5-15/capture/00007ffa1b991000.bin",
+   "sha256": "ad7facb2586fc6e966c004d7d1d16b024f5805ff7cb47c7a85dabd8b48892ca7",
+   "bytes": 4096,
+   "loai": "du-lieu-chup-ma-may",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/scalping-robot-pro-mt5/analysis/initial/15_Scalping_Robot_Pro_MT5/capture/capture.json",
+   "git_blob": "81e7ead9a1167785ac10c86442737c41a0d90c89",
+   "old_sha256": "136f992702a03dd70fe05649f666b504cad3b805ea453c940bba353c6f84f691",
+   "new_path": "bot-cua-toi-12/phan-tich/ban-ex5-15/capture/capture.json",
+   "sha256": "136f992702a03dd70fe05649f666b504cad3b805ea453c940bba353c6f84f691",
+   "bytes": 1024,
+   "loai": "du-lieu-chup-ma-may",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/scalping-robot-pro-mt5/analysis/initial/15_Scalping_Robot_Pro_MT5/re2batch1_15-job.json",
+   "git_blob": "05f6b1e10c58972bd500b1623881e197421a9f41",
+   "old_sha256": "9566ad891df221748ad7d19b6c054a430c6364399294e4622a4bf41a97c7d9ee",
+   "new_path": "bot-cua-toi-12/phan-tich/ban-ex5-15/lenh-chup.json",
+   "sha256": "9566ad891df221748ad7d19b6c054a430c6364399294e4622a4bf41a97c7d9ee",
+   "bytes": 217,
+   "loai": "du-lieu-chup-ma-may",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/scalping-robot-pro-mt5/analysis/initial/15_Scalping_Robot_Pro_MT5/re2batch1_15-result.json",
+   "git_blob": "f373ac64b17ad4f27d558cce6d08c28095baa597",
+   "old_sha256": "9b5bfe3141dd2339e0f128a2baad5f663dc1d6f9de528e18b110c73d1c4e03d7",
+   "new_path": "bot-cua-toi-12/phan-tich/ban-ex5-15/ket-qua-chup.json",
+   "sha256": "9b5bfe3141dd2339e0f128a2baad5f663dc1d6f9de528e18b110c73d1c4e03d7",
+   "bytes": 281,
+   "loai": "du-lieu-chup-ma-may",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/the-gold-reaper-mt5/analysis/initial/16_The_Gold_Reaper_MT5/16_The_Gold_Reaper_MT5.bin.base.txt",
+   "git_blob": "5bf993b813fd1dd4b0fe47801c83590a69993535",
+   "old_sha256": "e55612cfb58a061d0e44efbb78d769b277eb80a0998dd5757d7cba794747337c",
+   "new_path": "bot-cua-toi-3/phan-tich/ban-ex5-16/dia-chi-nen.txt",
+   "sha256": "e55612cfb58a061d0e44efbb78d769b277eb80a0998dd5757d7cba794747337c",
+   "bytes": 12,
+   "loai": "du-lieu-chup-ma-may",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/the-gold-reaper-mt5/analysis/initial/16_The_Gold_Reaper_MT5/16_The_Gold_Reaper_MT5.bin.seeds.txt",
+   "git_blob": "3c6dfcf98228c4164dc0b292e6d26bb8cd0e8df2",
+   "old_sha256": "aeb247d89276ebb8082fc8d6e03582f198262b10e9501bbbc03a5145590cddee",
+   "new_path": "bot-cua-toi-3/phan-tich/ban-ex5-16/diem-bat-dau-ham.txt",
+   "sha256": "aeb247d89276ebb8082fc8d6e03582f198262b10e9501bbbc03a5145590cddee",
+   "bytes": 972,
+   "loai": "du-lieu-chup-ma-may",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/the-gold-reaper-mt5/analysis/initial/16_The_Gold_Reaper_MT5/capture/00000224bbb20000.bin",
+   "git_blob": "956e87de0fc365c9d2fb9b31eb63b1776ab6fa81",
+   "old_sha256": "8a4deda5765f0e18fe1c4d4de09e1ed15f80614056ba883035cd7ad5fee4cc70",
+   "new_path": "bot-cua-toi-3/phan-tich/ban-ex5-16/capture/00000224bbb20000.bin",
+   "sha256": "8a4deda5765f0e18fe1c4d4de09e1ed15f80614056ba883035cd7ad5fee4cc70",
+   "bytes": 356352,
+   "loai": "du-lieu-chup-ma-may",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/the-gold-reaper-mt5/analysis/initial/16_The_Gold_Reaper_MT5/capture/00007ffa1b990000.bin",
+   "git_blob": "00113d9a4172d1a3a816b5fd798f25adaeb51967",
+   "old_sha256": "e9907a53566f44352c6c3dda295ba38e34396c8776a20c12d90172080fe06bc0",
+   "new_path": "bot-cua-toi-3/phan-tich/ban-ex5-16/capture/00007ffa1b990000.bin",
+   "sha256": "e9907a53566f44352c6c3dda295ba38e34396c8776a20c12d90172080fe06bc0",
+   "bytes": 4096,
+   "loai": "du-lieu-chup-ma-may",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/the-gold-reaper-mt5/analysis/initial/16_The_Gold_Reaper_MT5/capture/00007ffa1b991000.bin",
+   "git_blob": "08e7df176454f3ee5eeda13efa0adaa54828dfd8",
+   "old_sha256": "ad7facb2586fc6e966c004d7d1d16b024f5805ff7cb47c7a85dabd8b48892ca7",
+   "new_path": "bot-cua-toi-3/phan-tich/ban-ex5-16/capture/00007ffa1b991000.bin",
+   "sha256": "ad7facb2586fc6e966c004d7d1d16b024f5805ff7cb47c7a85dabd8b48892ca7",
+   "bytes": 4096,
+   "loai": "du-lieu-chup-ma-may",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/the-gold-reaper-mt5/analysis/initial/16_The_Gold_Reaper_MT5/capture/capture.json",
+   "git_blob": "4bba280942234753196a4799b05b56995d4570b6",
+   "old_sha256": "a296ba0835cdf5dd044d6579fad4b20460b0bf2c14b37ce0bf34bb1afb97f24e",
+   "new_path": "bot-cua-toi-3/phan-tich/ban-ex5-16/capture/capture.json",
+   "sha256": "a296ba0835cdf5dd044d6579fad4b20460b0bf2c14b37ce0bf34bb1afb97f24e",
+   "bytes": 1024,
+   "loai": "du-lieu-chup-ma-may",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/the-gold-reaper-mt5/analysis/initial/16_The_Gold_Reaper_MT5/re2batch1_16-job.json",
+   "git_blob": "3072c305c695ae87cbcd363af1bac761acf787a9",
+   "old_sha256": "bbb2ac2a23cb2e1487d932e6283d10d435e01e657805e9921ebf2897c85119e6",
+   "new_path": "bot-cua-toi-3/phan-tich/ban-ex5-16/lenh-chup.json",
+   "sha256": "bbb2ac2a23cb2e1487d932e6283d10d435e01e657805e9921ebf2897c85119e6",
+   "bytes": 340,
+   "loai": "du-lieu-chup-ma-may",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/the-gold-reaper-mt5/analysis/initial/16_The_Gold_Reaper_MT5/re2batch1_16-result.json",
+   "git_blob": "ee07a58df4a89ecf46f24f2fa8eb561996058a0c",
+   "old_sha256": "4fcd5567b42badb732f60592a3ab7e74b000f205d60e597b0d7ba12b531aa7ae",
+   "new_path": "bot-cua-toi-3/phan-tich/ban-ex5-16/ket-qua-chup.json",
+   "sha256": "4fcd5567b42badb732f60592a3ab7e74b000f205d60e597b0d7ba12b531aa7ae",
+   "bytes": 278,
+   "loai": "du-lieu-chup-ma-may",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/ultimate-breakout-system/analysis/initial/10_Ultimate_Breakout_System/10_Ultimate_Breakout_System.bin.base.txt",
+   "git_blob": "0577a851f2a11b24a5ca89788444f63ba9880a0d",
+   "old_sha256": "883a80dfd4eee4e4da3649e3a2d2bd833ccc54e281020b81db935b54b166f619",
+   "new_path": "bot-cua-toi-10/phan-tich/ban-ex5-10/dia-chi-nen.txt",
+   "sha256": "883a80dfd4eee4e4da3649e3a2d2bd833ccc54e281020b81db935b54b166f619",
+   "bytes": 12,
+   "loai": "du-lieu-chup-ma-may",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/ultimate-breakout-system/analysis/initial/10_Ultimate_Breakout_System/10_Ultimate_Breakout_System.bin.seeds.txt",
+   "git_blob": "5a987828958492c9ae7dd84136ba4491fe9e78f8",
+   "old_sha256": "90ac890f3cf14acd3d1221245f9a6f636a93de9593915623afbaaf286f659b98",
+   "new_path": "bot-cua-toi-10/phan-tich/ban-ex5-10/diem-bat-dau-ham.txt",
+   "sha256": "90ac890f3cf14acd3d1221245f9a6f636a93de9593915623afbaaf286f659b98",
+   "bytes": 1572,
+   "loai": "du-lieu-chup-ma-may",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/ultimate-breakout-system/analysis/initial/10_Ultimate_Breakout_System/10_Ultimate_Breakout_System.c",
+   "git_blob": "33e0e0256198f953f9640d0f4f2303017bc009b3",
+   "old_sha256": "b5acc25f462319c06d932a1066a6f2f437515a971d6b05ad7d2557067c3edc2f",
+   "new_path": "bot-cua-toi-10/phan-tich/ban-ex5-10/ma-trung-gian.c",
+   "sha256": "b5acc25f462319c06d932a1066a6f2f437515a971d6b05ad7d2557067c3edc2f",
+   "bytes": 1994210,
+   "loai": "ma-trung-gian",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/ultimate-breakout-system/analysis/initial/10_Ultimate_Breakout_System/10_Ultimate_Breakout_System.c.summary.json",
+   "git_blob": "02f527bd97e69e9f9e79c65ff15021ebf79265a8",
+   "old_sha256": "75b1d59a263b8a06f12dba28e3e925933f66f222a2815cca5ec8e8b012ee026b",
+   "new_path": "bot-cua-toi-10/phan-tich/ban-ex5-10/ma-trung-gian.c.summary.json",
+   "sha256": "75b1d59a263b8a06f12dba28e3e925933f66f222a2815cca5ec8e8b012ee026b",
+   "bytes": 42,
+   "loai": "du-lieu-chup-ma-may",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/ultimate-breakout-system/analysis/initial/10_Ultimate_Breakout_System/capture/0000017d2ac70000.bin",
+   "git_blob": "08a0dfcdf3b3cabbe969416c13c4ba7329d2ee10",
+   "old_sha256": "539288668abce6b50b4de808e310d2a8eea5f5f100b0c62d643ba516b877f27c",
+   "new_path": "bot-cua-toi-10/phan-tich/ban-ex5-10/capture/0000017d2ac70000.bin",
+   "sha256": "539288668abce6b50b4de808e310d2a8eea5f5f100b0c62d643ba516b877f27c",
+   "bytes": 544768,
+   "loai": "du-lieu-chup-ma-may",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/ultimate-breakout-system/analysis/initial/10_Ultimate_Breakout_System/capture/00007ffa1b990000.bin",
+   "git_blob": "00113d9a4172d1a3a816b5fd798f25adaeb51967",
+   "old_sha256": "e9907a53566f44352c6c3dda295ba38e34396c8776a20c12d90172080fe06bc0",
+   "new_path": "bot-cua-toi-10/phan-tich/ban-ex5-10/capture/00007ffa1b990000.bin",
+   "sha256": "e9907a53566f44352c6c3dda295ba38e34396c8776a20c12d90172080fe06bc0",
+   "bytes": 4096,
+   "loai": "du-lieu-chup-ma-may",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/ultimate-breakout-system/analysis/initial/10_Ultimate_Breakout_System/capture/00007ffa1b991000.bin",
+   "git_blob": "08e7df176454f3ee5eeda13efa0adaa54828dfd8",
+   "old_sha256": "ad7facb2586fc6e966c004d7d1d16b024f5805ff7cb47c7a85dabd8b48892ca7",
+   "new_path": "bot-cua-toi-10/phan-tich/ban-ex5-10/capture/00007ffa1b991000.bin",
+   "sha256": "ad7facb2586fc6e966c004d7d1d16b024f5805ff7cb47c7a85dabd8b48892ca7",
+   "bytes": 4096,
+   "loai": "du-lieu-chup-ma-may",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/ultimate-breakout-system/analysis/initial/10_Ultimate_Breakout_System/capture/capture.json",
+   "git_blob": "1b7bfd4ec2f1d47b795e3a85d67980982e6717ab",
+   "old_sha256": "b147f865084b5ac748f32aca87c8873be5aa0ff676cd931fd0f63528822b02b9",
+   "new_path": "bot-cua-toi-10/phan-tich/ban-ex5-10/capture/capture.json",
+   "sha256": "b147f865084b5ac748f32aca87c8873be5aa0ff676cd931fd0f63528822b02b9",
+   "bytes": 1024,
+   "loai": "du-lieu-chup-ma-may",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/ultimate-breakout-system/analysis/initial/10_Ultimate_Breakout_System/re2batch1_10-job.json",
+   "git_blob": "0c27aebceb1f3dbd9581878f7be548d912466f3e",
+   "old_sha256": "fb2e2b6c87843f51eb08492a2c89a755d3d852dce852db1699d1c9367e039f6c",
+   "new_path": "bot-cua-toi-10/phan-tich/ban-ex5-10/lenh-chup.json",
+   "sha256": "fb2e2b6c87843f51eb08492a2c89a755d3d852dce852db1699d1c9367e039f6c",
+   "bytes": 345,
+   "loai": "du-lieu-chup-ma-may",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/ultimate-breakout-system/analysis/initial/10_Ultimate_Breakout_System/re2batch1_10-result.json",
+   "git_blob": "814f67d3c0140e786147f18543c35c5bc550d22b",
+   "old_sha256": "15e47986ae1e2173535191ae66f2697b9bb1bd74165894a0c849306c731c43fb",
+   "new_path": "bot-cua-toi-10/phan-tich/ban-ex5-10/ket-qua-chup.json",
+   "sha256": "15e47986ae1e2173535191ae66f2697b9bb1bd74165894a0c849306c731c43fb",
+   "bytes": 282,
+   "loai": "du-lieu-chup-ma-may",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/ultimate-breakout-system/analysis/initial/17_Ultimate_Breakout_System/17_Ultimate_Breakout_System.bin.base.txt",
+   "git_blob": "55e88c074c8b66ada3f89d92b3e652a688ad276c",
+   "old_sha256": "25239196ae3db6bd29f7861f5ad55c563647bfd961dde6ad732f1f9059a20fbb",
+   "new_path": "bot-cua-toi-10/phan-tich/ban-ex5-17/dia-chi-nen.txt",
+   "sha256": "25239196ae3db6bd29f7861f5ad55c563647bfd961dde6ad732f1f9059a20fbb",
+   "bytes": 12,
+   "loai": "du-lieu-chup-ma-may",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/ultimate-breakout-system/analysis/initial/17_Ultimate_Breakout_System/17_Ultimate_Breakout_System.bin.seeds.txt",
+   "git_blob": "eb1ef1588762e26cb04f449873d277ad89c45b6d",
+   "old_sha256": "d65039b947d4fa41c7eec6734e358b38e7dd606c5764dadc6cde946667b1a828",
+   "new_path": "bot-cua-toi-10/phan-tich/ban-ex5-17/diem-bat-dau-ham.txt",
+   "sha256": "d65039b947d4fa41c7eec6734e358b38e7dd606c5764dadc6cde946667b1a828",
+   "bytes": 1572,
+   "loai": "du-lieu-chup-ma-may",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/ultimate-breakout-system/analysis/initial/17_Ultimate_Breakout_System/capture/000001a617060000.bin",
+   "git_blob": "3115b7cc68d3d528485595c4c9006461c1e71cb9",
+   "old_sha256": "45aa327cd144402b4ec6773ae741f59c8b4cc9c1ed2aa22c59fe1c0dbe534e57",
+   "new_path": "bot-cua-toi-10/phan-tich/ban-ex5-17/capture/000001a617060000.bin",
+   "sha256": "45aa327cd144402b4ec6773ae741f59c8b4cc9c1ed2aa22c59fe1c0dbe534e57",
+   "bytes": 544768,
+   "loai": "du-lieu-chup-ma-may",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/ultimate-breakout-system/analysis/initial/17_Ultimate_Breakout_System/capture/00007ffa1b990000.bin",
+   "git_blob": "00113d9a4172d1a3a816b5fd798f25adaeb51967",
+   "old_sha256": "e9907a53566f44352c6c3dda295ba38e34396c8776a20c12d90172080fe06bc0",
+   "new_path": "bot-cua-toi-10/phan-tich/ban-ex5-17/capture/00007ffa1b990000.bin",
+   "sha256": "e9907a53566f44352c6c3dda295ba38e34396c8776a20c12d90172080fe06bc0",
+   "bytes": 4096,
+   "loai": "du-lieu-chup-ma-may",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/ultimate-breakout-system/analysis/initial/17_Ultimate_Breakout_System/capture/00007ffa1b991000.bin",
+   "git_blob": "08e7df176454f3ee5eeda13efa0adaa54828dfd8",
+   "old_sha256": "ad7facb2586fc6e966c004d7d1d16b024f5805ff7cb47c7a85dabd8b48892ca7",
+   "new_path": "bot-cua-toi-10/phan-tich/ban-ex5-17/capture/00007ffa1b991000.bin",
+   "sha256": "ad7facb2586fc6e966c004d7d1d16b024f5805ff7cb47c7a85dabd8b48892ca7",
+   "bytes": 4096,
+   "loai": "du-lieu-chup-ma-may",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/ultimate-breakout-system/analysis/initial/17_Ultimate_Breakout_System/capture/capture.json",
+   "git_blob": "2a76b296a78631f8b2f4ee63b61c0edacb274c5b",
+   "old_sha256": "1ac4cdbd7af3034fa57ddb24d118968a96ea2f40e4aa0be97e2feed5fec14baf",
+   "new_path": "bot-cua-toi-10/phan-tich/ban-ex5-17/capture/capture.json",
+   "sha256": "1ac4cdbd7af3034fa57ddb24d118968a96ea2f40e4aa0be97e2feed5fec14baf",
+   "bytes": 1024,
+   "loai": "du-lieu-chup-ma-may",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/ultimate-breakout-system/analysis/initial/17_Ultimate_Breakout_System/re2batch1_17-job.json",
+   "git_blob": "ddc3dfe0d0328fdb4cf3cf850f228abfaf01c90b",
+   "old_sha256": "b002a279a7f9c688832e5a77d19577d63bd7bad0e55370b23fbe259bde7f4a87",
+   "new_path": "bot-cua-toi-10/phan-tich/ban-ex5-17/lenh-chup.json",
+   "sha256": "b002a279a7f9c688832e5a77d19577d63bd7bad0e55370b23fbe259bde7f4a87",
+   "bytes": 345,
+   "loai": "du-lieu-chup-ma-may",
+   "nguyen_ban": true
+  },
+  {
+   "old_path": "dich-nguoc/bots/ultimate-breakout-system/analysis/initial/17_Ultimate_Breakout_System/re2batch1_17-result.json",
+   "git_blob": "1befa21d5a7b1e2e080415b437652c6ba4892145",
+   "old_sha256": "0bbee0de4ba3fd2acab23a982a585921815f2a04bf8402a12ff2ee5fc245490b",
+   "new_path": "bot-cua-toi-10/phan-tich/ban-ex5-17/ket-qua-chup.json",
+   "sha256": "0bbee0de4ba3fd2acab23a982a585921815f2a04bf8402a12ff2ee5fc245490b",
+   "bytes": 283,
+   "loai": "du-lieu-chup-ma-may",
+   "nguyen_ban": true
+  }
+ ]
+}

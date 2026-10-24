@@ -1,0 +1,74 @@
+{
+  "date": "2026-10-23",
+  "bots": [
+    {
+      "bot": 1,
+      "fields": 72,
+      "headers": 8,
+      "settings": 64,
+      "checks": 648,
+      "c_referenced_fields": 64,
+      "boolean_signatures_unique": true,
+      "capture_count": 9,
+      "original_ex5_unchanged": true,
+      "all_region_hashes_valid": true,
+      "all_runs_private_demo": true,
+      "defaults_changed_from_previous_observation": [
+        {
+          "name": "AutoGMT",
+          "observed": "false",
+          "default_from_fresh_log": "true"
+        },
+        {
+          "name": "Broker_GMT_OFFSET_Winter",
+          "observed": "0",
+          "default_from_fresh_log": "2"
+        },
+        {
+          "name": "Broker_GMT_OFFSET_Summer",
+          "observed": "0",
+          "default_from_fresh_log": "3"
+        }
+      ]
+    },
+    {
+      "bot": 3,
+      "fields": 80,
+      "headers": 9,
+      "settings": 71,
+      "checks": 720,
+      "c_referenced_fields": 70,
+      "boolean_signatures_unique": true,
+      "capture_count": 9,
+      "original_ex5_unchanged": true,
+      "all_region_hashes_valid": true,
+      "all_runs_private_demo": true,
+      "defaults_changed_from_previous_observation": [
+        {
+          "name": "AutoGMT",
+          "observed": "false",
+          "default_from_fresh_log": "true"
+        },
+        {
+          "name": "Broker_GMT_OFFSET_Winter",
+          "observed": "0",
+          "default_from_fresh_log": "2"
+        },
+        {
+          "name": "Broker_GMT_OFFSET_Summer",
+          "observed": "0",
+          "default_from_fresh_log": "3"
+        }
+      ]
+    }
+  ],
+  "analysis_complete": false,
+  "complete_ea_restored": false,
+  "claude_review": {
+    "received": false,
+    "exit_code": 1,
+    "response": "Opus safeguards flagged the session [cyber]",
+    "record": "../.local/bot1-3-inputs-20261023/claude-method-review/run.json"
+  },
+  "scope": "Fresh verification of 18 controlled input captures, all region hashes, saved named journals, requested values, process identities, demo records and originals. No complete trading comparison."
+}

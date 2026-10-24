@@ -1,0 +1,2304 @@
+{
+  "date": "2026-10-23",
+  "bots": [
+    {
+      "bot": 1,
+      "defaults_set": "bot1-defaults.set",
+      "defaults_set_sha256": "b53870bd700b6580bbab055f82a113e8027bf1670597c38709bc76b57270bc60",
+      "default_count": 72,
+      "all_defaults_match_prior_native_capture": true,
+      "binding_evidence": "bot-cua-toi-1/phan-tich/cai-dat-20261023/cai-dat-da-kiem.json",
+      "binding_evidence_sha256": "2e45d5137667f3ba052ac380ab33c7fb9407de20b35f8f6f94f5143e97890bae",
+      "settings": [
+        {
+          "order": 1,
+          "name": "lijntje",
+          "visible_label": "- - -",
+          "default": "=============================================================",
+          "native_input_rva": "0x6a518",
+          "representation": "string",
+          "label_screenshots": [
+            "bot1-defaults-page1-0.png"
+          ],
+          "exact_hidden_or_trailing_label_text_verified": null,
+          "behavior_fully_verified": false
+        },
+        {
+          "order": 2,
+          "name": "ShowInfoPanel",
+          "visible_label": "ShowInfoPanel",
+          "default": "true",
+          "native_input_rva": "0x6a528",
+          "representation": "bool",
+          "label_screenshots": [
+            "bot1-defaults-page1-0.png"
+          ],
+          "exact_hidden_or_trailing_label_text_verified": null,
+          "behavior_fully_verified": false
+        },
+        {
+          "order": 3,
+          "name": "UpdateInfoTesting",
+          "visible_label": "update infopanel during testing",
+          "default": "false",
+          "native_input_rva": "0x6a530",
+          "representation": "bool",
+          "label_screenshots": [
+            "bot1-defaults-page1-0.png"
+          ],
+          "exact_hidden_or_trailing_label_text_verified": null,
+          "behavior_fully_verified": false
+        },
+        {
+          "order": 4,
+          "name": "InfoPanelSizeAdjust",
+          "visible_label": "Adjustment for Infopanel size",
+          "default": "1.0",
+          "native_input_rva": "0x6a538",
+          "representation": "double",
+          "label_screenshots": [
+            "bot1-defaults-page1-0.png"
+          ],
+          "exact_hidden_or_trailing_label_text_verified": null,
+          "behavior_fully_verified": false
+        },
+        {
+          "order": 5,
+          "name": "SetFontSize",
+          "visible_label": "Force Font Size (0=disabled)",
+          "default": "0",
+          "native_input_rva": "0x6a540",
+          "representation": "integer_or_enum",
+          "label_screenshots": [
+            "bot1-defaults-page1-0.png"
+          ],
+          "exact_hidden_or_trailing_label_text_verified": null,
+          "behavior_fully_verified": false
+        },
+        {
+          "order": 6,
+          "name": "BacktestSpeed_string",
+          "visible_label": "- - -",
+          "default": "------------------------------ Backtest Speed settings ------------------------------",
+          "native_input_rva": "0x6a548",
+          "representation": "string",
+          "label_screenshots": [
+            "bot1-defaults-page1-0.png"
+          ],
+          "exact_hidden_or_trailing_label_text_verified": null,
+          "behavior_fully_verified": false
+        },
+        {
+          "order": 7,
+          "name": "BacktestSpeed",
+          "visible_label": "Backtest Speed",
+          "default": "1",
+          "native_input_rva": "0x6a558",
+          "representation": "integer_or_enum",
+          "label_screenshots": [
+            "bot1-defaults-page1-0.png"
+          ],
+          "exact_hidden_or_trailing_label_text_verified": null,
+          "behavior_fully_verified": false
+        },
+        {
+          "order": 8,
+          "name": "spreadfilter",
+          "visible_label": "- - -",
+          "default": "------------------------------ settings ------------------------------",
+          "native_input_rva": "0x6a560",
+          "representation": "string",
+          "label_screenshots": [
+            "bot1-defaults-page1-0.png"
+          ],
+          "exact_hidden_or_trailing_label_text_verified": null,
+          "behavior_fully_verified": false
+        },
+        {
+          "order": 9,
+          "name": "AllowBuyTrades",
+          "visible_label": "Allow Buy Trades",
+          "default": "true",
+          "native_input_rva": "0x6a570",
+          "representation": "bool",
+          "label_screenshots": [
+            "bot1-defaults-page1-0.png"
+          ],
+          "exact_hidden_or_trailing_label_text_verified": null,
+          "behavior_fully_verified": false
+        },
+        {
+          "order": 10,
+          "name": "AllowSellTrades",
+          "visible_label": "Allow Sell Trades",
+          "default": "true",
+          "native_input_rva": "0x6a578",
+          "representation": "bool",
+          "label_screenshots": [
+            "bot1-defaults-page1-0.png"
+          ],
+          "exact_hidden_or_trailing_label_text_verified": null,
+          "behavior_fully_verified": false
+        },
+        {
+          "order": 11,
+          "name": "RunStrategyA",
+          "visible_label": "run strategy 1",
+          "default": "true",
+          "native_input_rva": "0x6a580",
+          "representation": "bool",
+          "label_screenshots": [
+            "bot1-defaults-page1-0.png"
+          ],
+          "exact_hidden_or_trailing_label_text_verified": null,
+          "behavior_fully_verified": false
+        },
+        {
+          "order": 12,
+          "name": "RunStrategyB",
+          "visible_label": "run strategy 2",
+          "default": "true",
+          "native_input_rva": "0x6a588",
+          "representation": "bool",
+          "label_screenshots": [
+            "bot1-defaults-page1-0.png"
+          ],
+          "exact_hidden_or_trailing_label_text_verified": null,
+          "behavior_fully_verified": false
+        },
+        {
+          "order": 13,
+          "name": "RunStrategyC",
+          "visible_label": "run strategy 3",
+          "default": "true",
+          "native_input_rva": "0x6a590",
+          "representation": "bool",
+          "label_screenshots": [
+            "bot1-defaults-page1-0.png"
+          ],
+          "exact_hidden_or_trailing_label_text_verified": null,
+          "behavior_fully_verified": false
+        },
+        {
+          "order": 14,
+          "name": "RunStrategyD",
+          "visible_label": "run strategy 4",
+          "default": "true",
+          "native_input_rva": "0x6a598",
+          "representation": "bool",
+          "label_screenshots": [
+            "bot1-defaults-page1-0.png"
+          ],
+          "exact_hidden_or_trailing_label_text_verified": null,
+          "behavior_fully_verified": false
+        },
+        {
+          "order": 15,
+          "name": "RunStrategyE",
+          "visible_label": "run strategy 5",
+          "default": "true",
+          "native_input_rva": "0x6a5a0",
+          "representation": "bool",
+          "label_screenshots": [
+            "bot1-defaults-page1-0.png"
+          ],
+          "exact_hidden_or_trailing_label_text_verified": null,
+          "behavior_fully_verified": false
+        },
+        {
+          "order": 16,
+          "name": "RunStrategyF",
+          "visible_label": "run strategy 6",
+          "default": "true",
+          "native_input_rva": "0x6a5a8",
+          "representation": "bool",
+          "label_screenshots": [
+            "bot1-defaults-page1-0.png"
+          ],
+          "exact_hidden_or_trailing_label_text_verified": null,
+          "behavior_fully_verified": false
+        },
+        {
+          "order": 17,
+          "name": "RunStrategyG",
+          "visible_label": "run strategy 7",
+          "default": "true",
+          "native_input_rva": "0x6a5b0",
+          "representation": "bool",
+          "label_screenshots": [
+            "bot1-defaults-page1-0.png"
+          ],
+          "exact_hidden_or_trailing_label_text_verified": null,
+          "behavior_fully_verified": false
+        },
+        {
+          "order": 18,
+          "name": "RunStrategyH",
+          "visible_label": "run strategy 8",
+          "default": "true",
+          "native_input_rva": "0x6a5b8",
+          "representation": "bool",
+          "label_screenshots": [
+            "bot1-defaults-page1-0.png"
+          ],
+          "exact_hidden_or_trailing_label_text_verified": null,
+          "behavior_fully_verified": false
+        },
+        {
+          "order": 19,
+          "name": "MaxSpread",
+          "visible_label": "Max Allowed Spread",
+          "default": "500.0",
+          "native_input_rva": "0x6a5c0",
+          "representation": "double",
+          "label_screenshots": [
+            "bot1-defaults-page1-0.png"
+          ],
+          "exact_hidden_or_trailing_label_text_verified": null,
+          "behavior_fully_verified": false
+        },
+        {
+          "order": 20,
+          "name": "UseVariableValues",
+          "visible_label": "UseVariableValues",
+          "default": "true",
+          "native_input_rva": "0x6a5c8",
+          "representation": "bool",
+          "label_screenshots": [
+            "bot1-defaults-page1-0.png"
+          ],
+          "exact_hidden_or_trailing_label_text_verified": null,
+          "behavior_fully_verified": false
+        },
+        {
+          "order": 21,
+          "name": "UseHL_TrailingSL",
+          "visible_label": "UseHL_TrailingSL",
+          "default": "true",
+          "native_input_rva": "0x6a5d0",
+          "representation": "bool",
+          "label_screenshots": [
+            "bot1-defaults-page1-0.png"
+          ],
+          "exact_hidden_or_trailing_label_text_verified": null,
+          "behavior_fully_verified": false
+        },
+        {
+          "order": 22,
+          "name": "FridayStopHour",
+          "visible_label": "Friday stop hour (brokertime; close all trades)",
+          "default": "25",
+          "native_input_rva": "0x6a5d8",
+          "representation": "integer_or_enum",
+          "label_screenshots": [
+            "bot1-defaults-page1-0.png"
+          ],
+          "exact_hidden_or_trailing_label_text_verified": null,
+          "behavior_fully_verified": false
+        },
+        {
+          "order": 23,
+          "name": "setSL_TP_After_Entry",
+          "visible_label": "setSL_TP_After_Entry",
+          "default": "false",
+          "native_input_rva": "0x6a5e0",
+          "representation": "bool",
+          "label_screenshots": [
+            "bot1-defaults-page1-0.png"
+          ],
+          "exact_hidden_or_trailing_label_text_verified": null,
+          "behavior_fully_verified": false
+        },
+        {
+          "order": 24,
+          "name": "Virtual_expiration",
+          "visible_label": "Use Virtual Expiration",
+          "default": "true",
+          "native_input_rva": "0x6a5e8",
+          "representation": "bool",
+          "label_screenshots": [
+            "bot1-defaults-page1-0.png",
+            "bot1-defaults-page3-0.png"
+          ],
+          "exact_hidden_or_trailing_label_text_verified": null,
+          "behavior_fully_verified": false
+        },
+        {
+          "order": 25,
+          "name": "Randomization",
+          "visible_label": "Randomization (entries and exit) in pips",
+          "default": "0.0",
+          "native_input_rva": "0x6a5f0",
+          "representation": "double",
+          "label_screenshots": [
+            "bot1-defaults-page3-0.png"
+          ],
+          "exact_hidden_or_trailing_label_text_verified": null,
+          "behavior_fully_verified": false
+        },
+        {
+          "order": 26,
+          "name": "FakeOutFilter",
+          "visible_label": "Fake Breakout Filter",
+          "default": "1",
+          "native_input_rva": "0x6a5f8",
+          "representation": "integer_or_enum",
+          "label_screenshots": [
+            "bot1-defaults-page3-0.png"
+          ],
+          "exact_hidden_or_trailing_label_text_verified": null,
+          "behavior_fully_verified": false
+        },
+        {
+          "order": 27,
+          "name": "EnableVirtualSLTP",
+          "visible_label": "Enable Virtual SL/TP (trailing by market close)",
+          "default": "false",
+          "native_input_rva": "0x6a600",
+          "representation": "bool",
+          "label_screenshots": [
+            "bot1-defaults-page3-0.png"
+          ],
+          "exact_hidden_or_trailing_label_text_verified": null,
+          "behavior_fully_verified": false
+        },
+        {
+          "order": 28,
+          "name": "SetVSL_to_hardSL_sec_delay",
+          "visible_label": "Seconds before the real SL is pulled up to the virtual SL (0 =",
+          "default": "99",
+          "native_input_rva": "0x6a608",
+          "representation": "integer_or_enum",
+          "label_screenshots": [
+            "bot1-defaults-page3-0.png"
+          ],
+          "exact_hidden_or_trailing_label_text_verified": false,
+          "behavior_fully_verified": false
+        },
+        {
+          "order": 29,
+          "name": "ST1_MagicNumber",
+          "visible_label": "Base Magicnumber",
+          "default": "9000",
+          "native_input_rva": "0x6a610",
+          "representation": "integer_or_enum",
+          "label_screenshots": [
+            "bot1-defaults-page3-0.png"
+          ],
+          "exact_hidden_or_trailing_label_text_verified": null,
+          "behavior_fully_verified": false
+        },
+        {
+          "order": 30,
+          "name": "ST1_Comment",
+          "visible_label": "Comment for trades",
+          "default": "Gold Trade Pro",
+          "native_input_rva": "0x6a618",
+          "representation": "string",
+          "label_screenshots": [
+            "bot1-defaults-page3-0.png"
+          ],
+          "exact_hidden_or_trailing_label_text_verified": null,
+          "behavior_fully_verified": false
+        },
+        {
+          "order": 31,
+          "name": "RemoveCommentSuffix",
+          "visible_label": "RemoveCommentSuffix",
+          "default": "false",
+          "native_input_rva": "0x6a628",
+          "representation": "bool",
+          "label_screenshots": [
+            "bot1-defaults-page3-0.png"
+          ],
+          "exact_hidden_or_trailing_label_text_verified": null,
+          "behavior_fully_verified": false
+        },
+        {
+          "order": 32,
+          "name": "NFP_FILTER",
+          "visible_label": "NFP_FILTER",
+          "default": "----------------------- NFP Filter -----------------------",
+          "native_input_rva": "0x6a630",
+          "representation": "string",
+          "label_screenshots": [
+            "bot1-defaults-page3-0.png"
+          ],
+          "exact_hidden_or_trailing_label_text_verified": null,
+          "behavior_fully_verified": false
+        },
+        {
+          "order": 33,
+          "name": "EnableNFP_Filter",
+          "visible_label": "EnableNFP_Filter",
+          "default": "true",
+          "native_input_rva": "0x6a640",
+          "representation": "bool",
+          "label_screenshots": [
+            "bot1-defaults-page3-0.png"
+          ],
+          "exact_hidden_or_trailing_label_text_verified": null,
+          "behavior_fully_verified": false
+        },
+        {
+          "order": 34,
+          "name": "UseMQL5Calendar",
+          "visible_label": "UseMQL5Calendar",
+          "default": "true",
+          "native_input_rva": "0x6a648",
+          "representation": "bool",
+          "label_screenshots": [
+            "bot1-defaults-page3-0.png"
+          ],
+          "exact_hidden_or_trailing_label_text_verified": null,
+          "behavior_fully_verified": false
+        },
+        {
+          "order": 35,
+          "name": "AutoGMT",
+          "visible_label": "AutoGMT",
+          "default": "true",
+          "native_input_rva": "0x6a650",
+          "representation": "bool",
+          "label_screenshots": [
+            "bot1-defaults-page3-0.png"
+          ],
+          "exact_hidden_or_trailing_label_text_verified": null,
+          "behavior_fully_verified": false
+        },
+        {
+          "order": 36,
+          "name": "Broker_GMT_OFFSET_Winter",
+          "visible_label": "GMT_OFFSET_Winter (AutoGMT=false or backtesting)",
+          "default": "2",
+          "native_input_rva": "0x6a658",
+          "representation": "integer_or_enum",
+          "label_screenshots": [
+            "bot1-defaults-page3-0.png"
+          ],
+          "exact_hidden_or_trailing_label_text_verified": null,
+          "behavior_fully_verified": false
+        },
+        {
+          "order": 37,
+          "name": "Broker_GMT_OFFSET_Summer",
+          "visible_label": "MT_OFFSET_Summer (AutoGMT=false or backtesting)",
+          "default": "3",
+          "native_input_rva": "0x6a660",
+          "representation": "integer_or_enum",
+          "label_screenshots": [
+            "bot1-defaults-page3-0.png"
+          ],
+          "exact_hidden_or_trailing_label_text_verified": null,
+          "behavior_fully_verified": false
+        },
+        {
+          "order": 38,
+          "name": "NFP_CloseOpenTrades",
+          "visible_label": "NFP_CloseOpenTrades",
+          "default": "true",
+          "native_input_rva": "0x6a668",
+          "representation": "bool",
+          "label_screenshots": [
+            "bot1-defaults-page3-0.png"
+          ],
+          "exact_hidden_or_trailing_label_text_verified": null,
+          "behavior_fully_verified": false
+        },
+        {
+          "order": 39,
+          "name": "NFP_ClosePendingOrders",
+          "visible_label": "NFP_ClosePendingOrders",
+          "default": "true",
+          "native_input_rva": "0x6a670",
+          "representation": "bool",
+          "label_screenshots": [
+            "bot1-defaults-page3-0.png"
+          ],
+          "exact_hidden_or_trailing_label_text_verified": null,
+          "behavior_fully_verified": false
+        },
+        {
+          "order": 40,
+          "name": "NFP_MinutesBefore",
+          "visible_label": "NFP_MinutesBefore",
+          "default": "10",
+          "native_input_rva": "0x6a678",
+          "representation": "integer_or_enum",
+          "label_screenshots": [
+            "bot1-defaults-page3-0.png"
+          ],
+          "exact_hidden_or_trailing_label_text_verified": null,
+          "behavior_fully_verified": false
+        },
+        {
+          "order": 41,
+          "name": "NFP_MinutesAfter",
+          "visible_label": "NFP_MinutesAfter",
+          "default": "240",
+          "native_input_rva": "0x6a680",
+          "representation": "integer_or_enum",
+          "label_screenshots": [
+            "bot1-defaults-page3-0.png"
+          ],
+          "exact_hidden_or_trailing_label_text_verified": null,
+          "behavior_fully_verified": false
+        },
+        {
+          "order": 42,
+          "name": "IR_FILTER",
+          "visible_label": "- - -",
+          "default": "----------------------- Interest Rate Filter -----------------------",
+          "native_input_rva": "0x6a688",
+          "representation": "string",
+          "label_screenshots": [
+            "bot1-defaults-page3-0.png"
+          ],
+          "exact_hidden_or_trailing_label_text_verified": null,
+          "behavior_fully_verified": false
+        },
+        {
+          "order": 43,
+          "name": "EnableIR_Filter",
+          "visible_label": "EnableIR_Filter",
+          "default": "false",
+          "native_input_rva": "0x6a698",
+          "representation": "bool",
+          "label_screenshots": [
+            "bot1-defaults-page3-0.png"
+          ],
+          "exact_hidden_or_trailing_label_text_verified": null,
+          "behavior_fully_verified": false
+        },
+        {
+          "order": 44,
+          "name": "IR_CloseOpenTrades",
+          "visible_label": "IR_CloseOpenTrades",
+          "default": "true",
+          "native_input_rva": "0x6a6a0",
+          "representation": "bool",
+          "label_screenshots": [
+            "bot1-defaults-page3-0.png"
+          ],
+          "exact_hidden_or_trailing_label_text_verified": null,
+          "behavior_fully_verified": false
+        },
+        {
+          "order": 45,
+          "name": "IR_ClosePendingOrders",
+          "visible_label": "IR_ClosePendingOrders",
+          "default": "true",
+          "native_input_rva": "0x6a6a8",
+          "representation": "bool",
+          "label_screenshots": [
+            "bot1-defaults-page3-0.png"
+          ],
+          "exact_hidden_or_trailing_label_text_verified": null,
+          "behavior_fully_verified": false
+        },
+        {
+          "order": 46,
+          "name": "IR_MinutesBefore",
+          "visible_label": "IR_MinutesBefore",
+          "default": "100",
+          "native_input_rva": "0x6a6b0",
+          "representation": "integer_or_enum",
+          "label_screenshots": [
+            "bot1-defaults-page3-0.png"
+          ],
+          "exact_hidden_or_trailing_label_text_verified": null,
+          "behavior_fully_verified": false
+        },
+        {
+          "order": 47,
+          "name": "IR_MinutesAfter",
+          "visible_label": "IR_MinutesAfter",
+          "default": "60",
+          "native_input_rva": "0x6a6b8",
+          "representation": "integer_or_enum",
+          "label_screenshots": [
+            "bot1-defaults-page3-0.png",
+            "bot1-defaults-page5-0.png"
+          ],
+          "exact_hidden_or_trailing_label_text_verified": null,
+          "behavior_fully_verified": false
+        },
+        {
+          "order": 48,
+          "name": "CPI_FILTER",
+          "visible_label": "- - -",
+          "default": "----------------------- CPI Filter -----------------------",
+          "native_input_rva": "0x6a6c0",
+          "representation": "string",
+          "label_screenshots": [
+            "bot1-defaults-page5-0.png"
+          ],
+          "exact_hidden_or_trailing_label_text_verified": null,
+          "behavior_fully_verified": false
+        },
+        {
+          "order": 49,
+          "name": "EnableCPI_Filter",
+          "visible_label": "EnableCPI_Filter",
+          "default": "false",
+          "native_input_rva": "0x6a6d0",
+          "representation": "bool",
+          "label_screenshots": [
+            "bot1-defaults-page5-0.png"
+          ],
+          "exact_hidden_or_trailing_label_text_verified": null,
+          "behavior_fully_verified": false
+        },
+        {
+          "order": 50,
+          "name": "CPI_CloseOpenTrades",
+          "visible_label": "CPI_CloseOpenTrades",
+          "default": "true",
+          "native_input_rva": "0x6a6d8",
+          "representation": "bool",
+          "label_screenshots": [
+            "bot1-defaults-page5-0.png",
+            "bot1-defaults-bottom-0.png"
+          ],
+          "exact_hidden_or_trailing_label_text_verified": null,
+          "behavior_fully_verified": false
+        },
+        {
+          "order": 51,
+          "name": "CPI_ClosePendingOrders",
+          "visible_label": "CPI_ClosePendingOrders",
+          "default": "true",
+          "native_input_rva": "0x6a6e0",
+          "representation": "bool",
+          "label_screenshots": [
+            "bot1-defaults-page5-0.png",
+            "bot1-defaults-bottom-0.png"
+          ],
+          "exact_hidden_or_trailing_label_text_verified": null,
+          "behavior_fully_verified": false
+        },
+        {
+          "order": 52,
+          "name": "CPI_MinutesBefore",
+          "visible_label": "CPI_MinutesBefore",
+          "default": "100",
+          "native_input_rva": "0x6a6e8",
+          "representation": "integer_or_enum",
+          "label_screenshots": [
+            "bot1-defaults-page5-0.png",
+            "bot1-defaults-bottom-0.png"
+          ],
+          "exact_hidden_or_trailing_label_text_verified": null,
+          "behavior_fully_verified": false
+        },
+        {
+          "order": 53,
+          "name": "CPI_MinutesAfter",
+          "visible_label": "CPI_MinutesAfter",
+          "default": "60",
+          "native_input_rva": "0x6a6f0",
+          "representation": "integer_or_enum",
+          "label_screenshots": [
+            "bot1-defaults-page5-0.png",
+            "bot1-defaults-bottom-0.png"
+          ],
+          "exact_hidden_or_trailing_label_text_verified": null,
+          "behavior_fully_verified": false
+        },
+        {
+          "order": 54,
+          "name": "propfirmsettings",
+          "visible_label": "- - -",
+          "default": "----------------------- Propfirm unique trades settings -----------------------",
+          "native_input_rva": "0x6a6f8",
+          "representation": "string",
+          "label_screenshots": [
+            "bot1-defaults-page5-0.png",
+            "bot1-defaults-bottom-0.png"
+          ],
+          "exact_hidden_or_trailing_label_text_verified": null,
+          "behavior_fully_verified": false
+        },
+        {
+          "order": 55,
+          "name": "AdjustEntry",
+          "visible_label": "AdjustEntry",
+          "default": "0.0",
+          "native_input_rva": "0x6a708",
+          "representation": "double",
+          "label_screenshots": [
+            "bot1-defaults-page5-0.png",
+            "bot1-defaults-bottom-0.png"
+          ],
+          "exact_hidden_or_trailing_label_text_verified": null,
+          "behavior_fully_verified": false
+        },
+        {
+          "order": 56,
+          "name": "AdjustSL",
+          "visible_label": "AdjustSL",
+          "default": "0.0",
+          "native_input_rva": "0x6a710",
+          "representation": "double",
+          "label_screenshots": [
+            "bot1-defaults-page5-0.png",
+            "bot1-defaults-bottom-0.png"
+          ],
+          "exact_hidden_or_trailing_label_text_verified": null,
+          "behavior_fully_verified": false
+        },
+        {
+          "order": 57,
+          "name": "AdjustTP",
+          "visible_label": "AdjustTP",
+          "default": "0.0",
+          "native_input_rva": "0x6a718",
+          "representation": "double",
+          "label_screenshots": [
+            "bot1-defaults-page5-0.png",
+            "bot1-defaults-bottom-0.png"
+          ],
+          "exact_hidden_or_trailing_label_text_verified": null,
+          "behavior_fully_verified": false
+        },
+        {
+          "order": 58,
+          "name": "AdjustTrailSL",
+          "visible_label": "AdjustTrailSL",
+          "default": "0.0",
+          "native_input_rva": "0x6a720",
+          "representation": "double",
+          "label_screenshots": [
+            "bot1-defaults-page5-0.png",
+            "bot1-defaults-bottom-0.png"
+          ],
+          "exact_hidden_or_trailing_label_text_verified": null,
+          "behavior_fully_verified": false
+        },
+        {
+          "order": 59,
+          "name": "LotSizeSettings",
+          "visible_label": "- - -",
+          "default": "----------------------- LotSize Settings -----------------------",
+          "native_input_rva": "0x6a728",
+          "representation": "string",
+          "label_screenshots": [
+            "bot1-defaults-page5-0.png",
+            "bot1-defaults-bottom-0.png"
+          ],
+          "exact_hidden_or_trailing_label_text_verified": null,
+          "behavior_fully_verified": false
+        },
+        {
+          "order": 60,
+          "name": "ManualBalance",
+          "visible_label": "Set Balance To Use manually",
+          "default": "0.0",
+          "native_input_rva": "0x6a738",
+          "representation": "double",
+          "label_screenshots": [
+            "bot1-defaults-page5-0.png",
+            "bot1-defaults-bottom-0.png"
+          ],
+          "exact_hidden_or_trailing_label_text_verified": null,
+          "behavior_fully_verified": false
+        },
+        {
+          "order": 61,
+          "name": "StartLots",
+          "visible_label": "StartLots",
+          "default": "0.01",
+          "native_input_rva": "0x6a740",
+          "representation": "double",
+          "label_screenshots": [
+            "bot1-defaults-page5-0.png",
+            "bot1-defaults-bottom-0.png"
+          ],
+          "exact_hidden_or_trailing_label_text_verified": null,
+          "behavior_fully_verified": false
+        },
+        {
+          "order": 62,
+          "name": "Risk",
+          "visible_label": "Lotsize calculation method",
+          "default": "0",
+          "native_input_rva": "0x6a748",
+          "representation": "integer_or_enum",
+          "label_screenshots": [
+            "bot1-defaults-page5-0.png",
+            "bot1-defaults-bottom-0.png"
+          ],
+          "exact_hidden_or_trailing_label_text_verified": null,
+          "behavior_fully_verified": false
+        },
+        {
+          "order": 63,
+          "name": "Manual_RiskPerTrade",
+          "visible_label": "Max risk per trade",
+          "default": "1.2",
+          "native_input_rva": "0x6a750",
+          "representation": "double",
+          "label_screenshots": [
+            "bot1-defaults-page5-0.png",
+            "bot1-defaults-bottom-0.png"
+          ],
+          "exact_hidden_or_trailing_label_text_verified": null,
+          "behavior_fully_verified": false
+        },
+        {
+          "order": 64,
+          "name": "MaxRiskPerStrategy",
+          "visible_label": "Max Risk Per Strategy",
+          "default": "3.0",
+          "native_input_rva": "0x6a758",
+          "representation": "double",
+          "label_screenshots": [
+            "bot1-defaults-page5-0.png",
+            "bot1-defaults-bottom-0.png"
+          ],
+          "exact_hidden_or_trailing_label_text_verified": null,
+          "behavior_fully_verified": false
+        },
+        {
+          "order": 65,
+          "name": "PropFirmMaxDailyDD",
+          "visible_label": "Set Max Daily Drawdown (Prop Firms)",
+          "default": "0.0",
+          "native_input_rva": "0x6a760",
+          "representation": "double",
+          "label_screenshots": [
+            "bot1-defaults-page5-0.png",
+            "bot1-defaults-bottom-0.png"
+          ],
+          "exact_hidden_or_trailing_label_text_verified": null,
+          "behavior_fully_verified": false
+        },
+        {
+          "order": 66,
+          "name": "LotPerBalance_step",
+          "visible_label": "LotsizeStep",
+          "default": "600",
+          "native_input_rva": "0x6a768",
+          "representation": "integer_or_enum",
+          "label_screenshots": [
+            "bot1-defaults-page5-0.png",
+            "bot1-defaults-bottom-0.png"
+          ],
+          "exact_hidden_or_trailing_label_text_verified": null,
+          "behavior_fully_verified": false
+        },
+        {
+          "order": 67,
+          "name": "OnlyUp",
+          "visible_label": "OnlyUp",
+          "default": "true",
+          "native_input_rva": "0x6a770",
+          "representation": "bool",
+          "label_screenshots": [
+            "bot1-defaults-page5-0.png",
+            "bot1-defaults-bottom-0.png"
+          ],
+          "exact_hidden_or_trailing_label_text_verified": null,
+          "behavior_fully_verified": false
+        },
+        {
+          "order": 68,
+          "name": "ResetHighestBalance",
+          "visible_label": "Reset Highest Balance for OnlyUp",
+          "default": "false",
+          "native_input_rva": "0x6a778",
+          "representation": "bool",
+          "label_screenshots": [
+            "bot1-defaults-page5-0.png",
+            "bot1-defaults-bottom-0.png"
+          ],
+          "exact_hidden_or_trailing_label_text_verified": null,
+          "behavior_fully_verified": false
+        },
+        {
+          "order": 69,
+          "name": "ResetHighestBalanceOnWithdrawal",
+          "visible_label": "Reset Highest Balance on a withdrawal",
+          "default": "true",
+          "native_input_rva": "0x6a780",
+          "representation": "bool",
+          "label_screenshots": [
+            "bot1-defaults-page5-0.png",
+            "bot1-defaults-bottom-0.png"
+          ],
+          "exact_hidden_or_trailing_label_text_verified": null,
+          "behavior_fully_verified": false
+        },
+        {
+          "order": 70,
+          "name": "CheckMargin",
+          "visible_label": "CheckMargin",
+          "default": "true",
+          "native_input_rva": "0x6a788",
+          "representation": "bool",
+          "label_screenshots": [
+            "bot1-defaults-page5-0.png",
+            "bot1-defaults-bottom-0.png"
+          ],
+          "exact_hidden_or_trailing_label_text_verified": null,
+          "behavior_fully_verified": false
+        },
+        {
+          "order": 71,
+          "name": "UseEquity",
+          "visible_label": "Use Equity Instead of Balance",
+          "default": "false",
+          "native_input_rva": "0x6a790",
+          "representation": "bool",
+          "label_screenshots": [
+            "bot1-defaults-bottom-0.png"
+          ],
+          "exact_hidden_or_trailing_label_text_verified": null,
+          "behavior_fully_verified": false
+        },
+        {
+          "order": 72,
+          "name": "AdjustLotsizeToVariableValues",
+          "visible_label": "AdjustLotsizeToVariableValues",
+          "default": "true",
+          "native_input_rva": "0x6a798",
+          "representation": "bool",
+          "label_screenshots": [
+            "bot1-defaults-bottom-0.png"
+          ],
+          "exact_hidden_or_trailing_label_text_verified": null,
+          "behavior_fully_verified": false
+        }
+      ],
+      "menus": [
+        {
+          "name": "BacktestSpeed",
+          "dropdown_observation": "bot1-speed-options.json",
+          "dropdown_observation_sha256": "3e9310d3b65523a1a9602bd38ae71efe3be0b03429fc8840fa13757e8d259b0d",
+          "choices": [
+            {
+              "value": 1,
+              "label": "normal",
+              "value_preset": "bot1-defaults.set",
+              "label_screenshot": "bot1-defaults-page1-0.png",
+              "observed": true
+            },
+            {
+              "value": 2,
+              "label": "fast",
+              "value_preset": "bot1-options-a.set",
+              "label_screenshot": "bot1-options-a-top-0.png",
+              "observed": true
+            },
+            {
+              "value": 3,
+              "label": "ultra fast",
+              "value_preset": "bot1-options-b.set",
+              "label_screenshot": "bot1-options-b-top-0.png",
+              "observed": true
+            }
+          ],
+          "declared_enum_type_name_recovered": false
+        },
+        {
+          "name": "FakeOutFilter",
+          "dropdown_observation": "bot1-fakeout-options.json",
+          "dropdown_observation_sha256": "6fc3b44701438f1098051a62db415aa9f4bbe4f76b11567b6943f26bb1cb77e8",
+          "choices": [
+            {
+              "value": 0,
+              "label": "OFF",
+              "value_preset": "bot1-options-a.set",
+              "label_screenshot": "bot1-options-a-filter-0.png",
+              "observed": true
+            },
+            {
+              "value": 1,
+              "label": "Low",
+              "value_preset": "bot1-defaults.set",
+              "label_screenshot": "bot1-defaults-page3-0.png",
+              "observed": true
+            },
+            {
+              "value": 2,
+              "label": "Medium",
+              "value_preset": "bot1-options-b.set",
+              "label_screenshot": "bot1-options-b-filter-0.png",
+              "observed": true
+            },
+            {
+              "value": 3,
+              "label": "High",
+              "value_preset": "bot1-options-c.set",
+              "label_screenshot": "bot1-options-c-filter-0.png",
+              "observed": true
+            }
+          ],
+          "declared_enum_type_name_recovered": false
+        },
+        {
+          "name": "Risk",
+          "dropdown_observation": "bot1-volume-options.json",
+          "dropdown_observation_sha256": "74470021395be86627c881e289d69d6d3408273950ecf7247950edbef5f42ace",
+          "choices": [
+            {
+              "value": 0,
+              "label": "use StartLots",
+              "value_preset": "bot1-defaults.set",
+              "label_screenshot": "bot1-defaults-bottom-0.png",
+              "observed": true
+            },
+            {
+              "value": 9999,
+              "label": "use lotsizeStep",
+              "value_preset": "bot1-options-a.set",
+              "label_screenshot": "bot1-options-a-bottom-0.png",
+              "observed": true
+            },
+            {
+              "value": 999,
+              "label": "use Manual RiskPerTrade",
+              "value_preset": "bot1-options-b.set",
+              "label_screenshot": "bot1-options-b-bottom-0.png",
+              "observed": true
+            },
+            {
+              "value": 3,
+              "label": "use Max Risk Per Strategy",
+              "value_preset": "bot1-options-c.set",
+              "label_screenshot": "bot1-options-c-bottom-0.png",
+              "observed": true
+            }
+          ],
+          "declared_enum_type_name_recovered": false
+        }
+      ]
+    },
+    {
+      "bot": 3,
+      "defaults_set": "bot3-defaults.set",
+      "defaults_set_sha256": "1420aa90a3505b052df42b6f048e287113cac6415aff4d2a5fe9fa3d6175db28",
+      "default_count": 80,
+      "all_defaults_match_prior_native_capture": true,
+      "binding_evidence": "bot-cua-toi-3/phan-tich/cai-dat-20261023/cai-dat-da-kiem.json",
+      "binding_evidence_sha256": "88c3bd053a29e1cc41878eb8a67e54739ec54129ea88457c2e67a112eaa1118a",
+      "settings": [
+        {
+          "order": 1,
+          "name": "lijntje",
+          "visible_label": "- - -",
+          "default": "=============================================================",
+          "native_input_rva": "0x1d6f18",
+          "representation": "string",
+          "label_screenshots": [
+            "bot3-defaults-page1-0.png"
+          ],
+          "exact_hidden_or_trailing_label_text_verified": null,
+          "behavior_fully_verified": false
+        },
+        {
+          "order": 2,
+          "name": "UseVariableValues",
+          "visible_label": "UseVariableValues",
+          "default": "true",
+          "native_input_rva": "0x1d6f28",
+          "representation": "bool",
+          "label_screenshots": [
+            "bot3-defaults-page1-0.png"
+          ],
+          "exact_hidden_or_trailing_label_text_verified": null,
+          "behavior_fully_verified": false
+        },
+        {
+          "order": 3,
+          "name": "AdjustLotsizeToVariableValues",
+          "visible_label": "AdjustLotsizeToVariableValues",
+          "default": "true",
+          "native_input_rva": "0x1d6f30",
+          "representation": "bool",
+          "label_screenshots": [
+            "bot3-defaults-page1-0.png"
+          ],
+          "exact_hidden_or_trailing_label_text_verified": null,
+          "behavior_fully_verified": false
+        },
+        {
+          "order": 4,
+          "name": "ShowInfoPanel",
+          "visible_label": "ShowInfoPanel",
+          "default": "true",
+          "native_input_rva": "0x1d6f38",
+          "representation": "bool",
+          "label_screenshots": [
+            "bot3-defaults-page1-0.png"
+          ],
+          "exact_hidden_or_trailing_label_text_verified": null,
+          "behavior_fully_verified": false
+        },
+        {
+          "order": 5,
+          "name": "UpdateInfoTesting",
+          "visible_label": "update infopanel during testing",
+          "default": "false",
+          "native_input_rva": "0x1d6f40",
+          "representation": "bool",
+          "label_screenshots": [
+            "bot3-defaults-page1-0.png"
+          ],
+          "exact_hidden_or_trailing_label_text_verified": null,
+          "behavior_fully_verified": false
+        },
+        {
+          "order": 6,
+          "name": "InfoPanelSizeAdjust",
+          "visible_label": "Adjustment for Infopanel size",
+          "default": "1.0",
+          "native_input_rva": "0x1d6f48",
+          "representation": "double",
+          "label_screenshots": [
+            "bot3-defaults-page1-0.png"
+          ],
+          "exact_hidden_or_trailing_label_text_verified": null,
+          "behavior_fully_verified": false
+        },
+        {
+          "order": 7,
+          "name": "SetFontSize",
+          "visible_label": "Force Font Size (0=disabled)",
+          "default": "0",
+          "native_input_rva": "0x1d6f50",
+          "representation": "integer_or_enum",
+          "label_screenshots": [
+            "bot3-defaults-page1-0.png"
+          ],
+          "exact_hidden_or_trailing_label_text_verified": null,
+          "behavior_fully_verified": false
+        },
+        {
+          "order": 8,
+          "name": "BacktestSpeed_string",
+          "visible_label": "- - -",
+          "default": "------------------------------ Backtest Speed settings ------------------------------",
+          "native_input_rva": "0x1d6f58",
+          "representation": "string",
+          "label_screenshots": [
+            "bot3-defaults-page1-0.png"
+          ],
+          "exact_hidden_or_trailing_label_text_verified": null,
+          "behavior_fully_verified": false
+        },
+        {
+          "order": 9,
+          "name": "BacktestSpeed",
+          "visible_label": "Backtest Speed",
+          "default": "1",
+          "native_input_rva": "0x1d6f68",
+          "representation": "integer_or_enum",
+          "label_screenshots": [
+            "bot3-defaults-page1-0.png"
+          ],
+          "exact_hidden_or_trailing_label_text_verified": null,
+          "behavior_fully_verified": false
+        },
+        {
+          "order": 10,
+          "name": "spreadfilter",
+          "visible_label": "- - -",
+          "default": "------------------------------ settings ------------------------------",
+          "native_input_rva": "0x1d6f70",
+          "representation": "string",
+          "label_screenshots": [
+            "bot3-defaults-page1-0.png"
+          ],
+          "exact_hidden_or_trailing_label_text_verified": null,
+          "behavior_fully_verified": false
+        },
+        {
+          "order": 11,
+          "name": "AllowBuyTrades",
+          "visible_label": "Allow Buy Trades",
+          "default": "true",
+          "native_input_rva": "0x1d6f80",
+          "representation": "bool",
+          "label_screenshots": [
+            "bot3-defaults-page1-0.png"
+          ],
+          "exact_hidden_or_trailing_label_text_verified": null,
+          "behavior_fully_verified": false
+        },
+        {
+          "order": 12,
+          "name": "AllowSellTrades",
+          "visible_label": "Allow Sell Trades",
+          "default": "true",
+          "native_input_rva": "0x1d6f88",
+          "representation": "bool",
+          "label_screenshots": [
+            "bot3-defaults-page1-0.png"
+          ],
+          "exact_hidden_or_trailing_label_text_verified": null,
+          "behavior_fully_verified": false
+        },
+        {
+          "order": 13,
+          "name": "TradeFrequency",
+          "visible_label": "TradeFrequency",
+          "default": "5",
+          "native_input_rva": "0x1d6f90",
+          "representation": "integer_or_enum",
+          "label_screenshots": [
+            "bot3-defaults-page1-0.png"
+          ],
+          "exact_hidden_or_trailing_label_text_verified": null,
+          "behavior_fully_verified": false
+        },
+        {
+          "order": 14,
+          "name": "MaxSpread",
+          "visible_label": "Max Allowed Spread",
+          "default": "500.0",
+          "native_input_rva": "0x1d6f98",
+          "representation": "double",
+          "label_screenshots": [
+            "bot3-defaults-page1-0.png"
+          ],
+          "exact_hidden_or_trailing_label_text_verified": null,
+          "behavior_fully_verified": false
+        },
+        {
+          "order": 15,
+          "name": "UseHL_TrailingSL",
+          "visible_label": "UseHL_TrailingSL",
+          "default": "true",
+          "native_input_rva": "0x1d6fa0",
+          "representation": "bool",
+          "label_screenshots": [
+            "bot3-defaults-page1-0.png"
+          ],
+          "exact_hidden_or_trailing_label_text_verified": null,
+          "behavior_fully_verified": false
+        },
+        {
+          "order": 16,
+          "name": "FridayStopHour",
+          "visible_label": "Friday stop hour (brokertime; close all trades+pending)",
+          "default": "25",
+          "native_input_rva": "0x1d6fa8",
+          "representation": "integer_or_enum",
+          "label_screenshots": [
+            "bot3-defaults-page1-0.png"
+          ],
+          "exact_hidden_or_trailing_label_text_verified": null,
+          "behavior_fully_verified": false
+        },
+        {
+          "order": 17,
+          "name": "FridayClosePending",
+          "visible_label": "delete pending orders",
+          "default": "true",
+          "native_input_rva": "0x1d6fb0",
+          "representation": "bool",
+          "label_screenshots": [
+            "bot3-defaults-page1-0.png"
+          ],
+          "exact_hidden_or_trailing_label_text_verified": null,
+          "behavior_fully_verified": false
+        },
+        {
+          "order": 18,
+          "name": "FridayCloseOpen",
+          "visible_label": "close open trades",
+          "default": "true",
+          "native_input_rva": "0x1d6fb8",
+          "representation": "bool",
+          "label_screenshots": [
+            "bot3-defaults-page1-0.png"
+          ],
+          "exact_hidden_or_trailing_label_text_verified": null,
+          "behavior_fully_verified": false
+        },
+        {
+          "order": 19,
+          "name": "setSL_TP_After_Entry",
+          "visible_label": "setSL_TP_After_Entry",
+          "default": "false",
+          "native_input_rva": "0x1d6fc0",
+          "representation": "bool",
+          "label_screenshots": [
+            "bot3-defaults-page1-0.png"
+          ],
+          "exact_hidden_or_trailing_label_text_verified": null,
+          "behavior_fully_verified": false
+        },
+        {
+          "order": 20,
+          "name": "Virtual_expiration",
+          "visible_label": "Use Virtual Expiration",
+          "default": "true",
+          "native_input_rva": "0x1d6fc8",
+          "representation": "bool",
+          "label_screenshots": [
+            "bot3-defaults-page1-0.png"
+          ],
+          "exact_hidden_or_trailing_label_text_verified": null,
+          "behavior_fully_verified": false
+        },
+        {
+          "order": 21,
+          "name": "Randomization",
+          "visible_label": "Randomization (entries and exit) in pips",
+          "default": "0.0",
+          "native_input_rva": "0x1d6fd0",
+          "representation": "double",
+          "label_screenshots": [
+            "bot3-defaults-page1-0.png"
+          ],
+          "exact_hidden_or_trailing_label_text_verified": null,
+          "behavior_fully_verified": false
+        },
+        {
+          "order": 22,
+          "name": "FakeOutFilter",
+          "visible_label": "Fake Breakout Filter",
+          "default": "2",
+          "native_input_rva": "0x1d6fd8",
+          "representation": "integer_or_enum",
+          "label_screenshots": [
+            "bot3-defaults-page1-0.png"
+          ],
+          "exact_hidden_or_trailing_label_text_verified": null,
+          "behavior_fully_verified": false
+        },
+        {
+          "order": 23,
+          "name": "EnableVirtualSLTP",
+          "visible_label": "Enable Virtual SL/TP (trailing by market close)",
+          "default": "false",
+          "native_input_rva": "0x1d6fe0",
+          "representation": "bool",
+          "label_screenshots": [
+            "bot3-defaults-page1-0.png"
+          ],
+          "exact_hidden_or_trailing_label_text_verified": null,
+          "behavior_fully_verified": false
+        },
+        {
+          "order": 24,
+          "name": "SetVSL_to_hardSL_sec_delay",
+          "visible_label": "Seconds before the real SL is pulled up to the virtual SL (0 =",
+          "default": "99",
+          "native_input_rva": "0x1d6fe8",
+          "representation": "integer_or_enum",
+          "label_screenshots": [
+            "bot3-defaults-page1-0.png",
+            "bot3-defaults-page3-0.png"
+          ],
+          "exact_hidden_or_trailing_label_text_verified": false,
+          "behavior_fully_verified": false
+        },
+        {
+          "order": 25,
+          "name": "ST1_MagicNumber",
+          "visible_label": "Base Magicnumber",
+          "default": "8000",
+          "native_input_rva": "0x1d6ff0",
+          "representation": "integer_or_enum",
+          "label_screenshots": [
+            "bot3-defaults-page3-0.png"
+          ],
+          "exact_hidden_or_trailing_label_text_verified": null,
+          "behavior_fully_verified": false
+        },
+        {
+          "order": 26,
+          "name": "ST1_Comment",
+          "visible_label": "Comment for trades",
+          "default": "The Gold Reaper",
+          "native_input_rva": "0x1d6ff8",
+          "representation": "string",
+          "label_screenshots": [
+            "bot3-defaults-page3-0.png"
+          ],
+          "exact_hidden_or_trailing_label_text_verified": null,
+          "behavior_fully_verified": false
+        },
+        {
+          "order": 27,
+          "name": "RemoveCommentSuffix",
+          "visible_label": "RemoveCommentSuffix",
+          "default": "false",
+          "native_input_rva": "0x1d7008",
+          "representation": "bool",
+          "label_screenshots": [
+            "bot3-defaults-page3-0.png"
+          ],
+          "exact_hidden_or_trailing_label_text_verified": null,
+          "behavior_fully_verified": false
+        },
+        {
+          "order": 28,
+          "name": "NFP_FILTER",
+          "visible_label": "NFP_FILTER",
+          "default": "----------------------- NFP Filter -----------------------",
+          "native_input_rva": "0x1d7010",
+          "representation": "string",
+          "label_screenshots": [
+            "bot3-defaults-page3-0.png"
+          ],
+          "exact_hidden_or_trailing_label_text_verified": null,
+          "behavior_fully_verified": false
+        },
+        {
+          "order": 29,
+          "name": "EnableNFP_Filter",
+          "visible_label": "EnableNFP_Filter",
+          "default": "true",
+          "native_input_rva": "0x1d7020",
+          "representation": "bool",
+          "label_screenshots": [
+            "bot3-defaults-page3-0.png"
+          ],
+          "exact_hidden_or_trailing_label_text_verified": null,
+          "behavior_fully_verified": false
+        },
+        {
+          "order": 30,
+          "name": "UseMQL5Calendar",
+          "visible_label": "UseMQL5Calendar",
+          "default": "true",
+          "native_input_rva": "0x1d7028",
+          "representation": "bool",
+          "label_screenshots": [
+            "bot3-defaults-page3-0.png"
+          ],
+          "exact_hidden_or_trailing_label_text_verified": null,
+          "behavior_fully_verified": false
+        },
+        {
+          "order": 31,
+          "name": "AutoGMT",
+          "visible_label": "AutoGMT",
+          "default": "true",
+          "native_input_rva": "0x1d7030",
+          "representation": "bool",
+          "label_screenshots": [
+            "bot3-defaults-page3-0.png"
+          ],
+          "exact_hidden_or_trailing_label_text_verified": null,
+          "behavior_fully_verified": false
+        },
+        {
+          "order": 32,
+          "name": "Broker_GMT_OFFSET_Winter",
+          "visible_label": "GMT_OFFSET_Winter (AutoGMT=false or backtesting)",
+          "default": "2",
+          "native_input_rva": "0x1d7038",
+          "representation": "integer_or_enum",
+          "label_screenshots": [
+            "bot3-defaults-page3-0.png"
+          ],
+          "exact_hidden_or_trailing_label_text_verified": null,
+          "behavior_fully_verified": false
+        },
+        {
+          "order": 33,
+          "name": "Broker_GMT_OFFSET_Summer",
+          "visible_label": "MT_OFFSET_Summer (AutoGMT=false or backtesting)",
+          "default": "3",
+          "native_input_rva": "0x1d7040",
+          "representation": "integer_or_enum",
+          "label_screenshots": [
+            "bot3-defaults-page3-0.png"
+          ],
+          "exact_hidden_or_trailing_label_text_verified": null,
+          "behavior_fully_verified": false
+        },
+        {
+          "order": 34,
+          "name": "NFP_CloseOpenTrades",
+          "visible_label": "NFP_CloseOpenTrades",
+          "default": "true",
+          "native_input_rva": "0x1d7048",
+          "representation": "bool",
+          "label_screenshots": [
+            "bot3-defaults-page3-0.png"
+          ],
+          "exact_hidden_or_trailing_label_text_verified": null,
+          "behavior_fully_verified": false
+        },
+        {
+          "order": 35,
+          "name": "NFP_ClosePendingOrders",
+          "visible_label": "NFP_ClosePendingOrders",
+          "default": "true",
+          "native_input_rva": "0x1d7050",
+          "representation": "bool",
+          "label_screenshots": [
+            "bot3-defaults-page3-0.png"
+          ],
+          "exact_hidden_or_trailing_label_text_verified": null,
+          "behavior_fully_verified": false
+        },
+        {
+          "order": 36,
+          "name": "NFP_MinutesBefore",
+          "visible_label": "NFP_MinutesBefore",
+          "default": "100",
+          "native_input_rva": "0x1d7058",
+          "representation": "integer_or_enum",
+          "label_screenshots": [
+            "bot3-defaults-page3-0.png"
+          ],
+          "exact_hidden_or_trailing_label_text_verified": null,
+          "behavior_fully_verified": false
+        },
+        {
+          "order": 37,
+          "name": "NFP_MinutesAfter",
+          "visible_label": "NFP_MinutesAfter",
+          "default": "60",
+          "native_input_rva": "0x1d7060",
+          "representation": "integer_or_enum",
+          "label_screenshots": [
+            "bot3-defaults-page3-0.png"
+          ],
+          "exact_hidden_or_trailing_label_text_verified": null,
+          "behavior_fully_verified": false
+        },
+        {
+          "order": 38,
+          "name": "IR_FILTER",
+          "visible_label": "- - -",
+          "default": "----------------------- Interest Rate Filter -----------------------",
+          "native_input_rva": "0x1d7068",
+          "representation": "string",
+          "label_screenshots": [
+            "bot3-defaults-page3-0.png"
+          ],
+          "exact_hidden_or_trailing_label_text_verified": null,
+          "behavior_fully_verified": false
+        },
+        {
+          "order": 39,
+          "name": "EnableIR_Filter",
+          "visible_label": "EnableIR_Filter",
+          "default": "false",
+          "native_input_rva": "0x1d7078",
+          "representation": "bool",
+          "label_screenshots": [
+            "bot3-defaults-page3-0.png"
+          ],
+          "exact_hidden_or_trailing_label_text_verified": null,
+          "behavior_fully_verified": false
+        },
+        {
+          "order": 40,
+          "name": "IR_CloseOpenTrades",
+          "visible_label": "IR_CloseOpenTrades",
+          "default": "true",
+          "native_input_rva": "0x1d7080",
+          "representation": "bool",
+          "label_screenshots": [
+            "bot3-defaults-page3-0.png"
+          ],
+          "exact_hidden_or_trailing_label_text_verified": null,
+          "behavior_fully_verified": false
+        },
+        {
+          "order": 41,
+          "name": "IR_ClosePendingOrders",
+          "visible_label": "IR_ClosePendingOrders",
+          "default": "true",
+          "native_input_rva": "0x1d7088",
+          "representation": "bool",
+          "label_screenshots": [
+            "bot3-defaults-page3-0.png"
+          ],
+          "exact_hidden_or_trailing_label_text_verified": null,
+          "behavior_fully_verified": false
+        },
+        {
+          "order": 42,
+          "name": "IR_MinutesBefore",
+          "visible_label": "IR_MinutesBefore",
+          "default": "100",
+          "native_input_rva": "0x1d7090",
+          "representation": "integer_or_enum",
+          "label_screenshots": [
+            "bot3-defaults-page3-0.png"
+          ],
+          "exact_hidden_or_trailing_label_text_verified": null,
+          "behavior_fully_verified": false
+        },
+        {
+          "order": 43,
+          "name": "IR_MinutesAfter",
+          "visible_label": "IR_MinutesAfter",
+          "default": "60",
+          "native_input_rva": "0x1d7098",
+          "representation": "integer_or_enum",
+          "label_screenshots": [
+            "bot3-defaults-page3-0.png"
+          ],
+          "exact_hidden_or_trailing_label_text_verified": null,
+          "behavior_fully_verified": false
+        },
+        {
+          "order": 44,
+          "name": "CPI_FILTER",
+          "visible_label": "- - -",
+          "default": "----------------------- CPI Filter -----------------------",
+          "native_input_rva": "0x1d70a0",
+          "representation": "string",
+          "label_screenshots": [
+            "bot3-defaults-page3-0.png"
+          ],
+          "exact_hidden_or_trailing_label_text_verified": null,
+          "behavior_fully_verified": false
+        },
+        {
+          "order": 45,
+          "name": "EnableCPI_Filter",
+          "visible_label": "EnableCPI_Filter",
+          "default": "false",
+          "native_input_rva": "0x1d70b0",
+          "representation": "bool",
+          "label_screenshots": [
+            "bot3-defaults-page3-0.png"
+          ],
+          "exact_hidden_or_trailing_label_text_verified": null,
+          "behavior_fully_verified": false
+        },
+        {
+          "order": 46,
+          "name": "CPI_CloseOpenTrades",
+          "visible_label": "CPI_CloseOpenTrades",
+          "default": "true",
+          "native_input_rva": "0x1d70b8",
+          "representation": "bool",
+          "label_screenshots": [
+            "bot3-defaults-page3-0.png"
+          ],
+          "exact_hidden_or_trailing_label_text_verified": null,
+          "behavior_fully_verified": false
+        },
+        {
+          "order": 47,
+          "name": "CPI_ClosePendingOrders",
+          "visible_label": "CPI_ClosePendingOrders",
+          "default": "true",
+          "native_input_rva": "0x1d70c0",
+          "representation": "bool",
+          "label_screenshots": [
+            "bot3-defaults-page3-0.png",
+            "bot3-defaults-page4-0.png"
+          ],
+          "exact_hidden_or_trailing_label_text_verified": null,
+          "behavior_fully_verified": false
+        },
+        {
+          "order": 48,
+          "name": "CPI_MinutesBefore",
+          "visible_label": "CPI_MinutesBefore",
+          "default": "100",
+          "native_input_rva": "0x1d70c8",
+          "representation": "integer_or_enum",
+          "label_screenshots": [
+            "bot3-defaults-page4-0.png"
+          ],
+          "exact_hidden_or_trailing_label_text_verified": null,
+          "behavior_fully_verified": false
+        },
+        {
+          "order": 49,
+          "name": "CPI_MinutesAfter",
+          "visible_label": "CPI_MinutesAfter",
+          "default": "60",
+          "native_input_rva": "0x1d70d0",
+          "representation": "integer_or_enum",
+          "label_screenshots": [
+            "bot3-defaults-page4-0.png"
+          ],
+          "exact_hidden_or_trailing_label_text_verified": null,
+          "behavior_fully_verified": false
+        },
+        {
+          "order": 50,
+          "name": "propfirmsettings",
+          "visible_label": "- - -",
+          "default": "----------------------- Propfirm unique trades settings -----------------------",
+          "native_input_rva": "0x1d70d8",
+          "representation": "string",
+          "label_screenshots": [
+            "bot3-defaults-page4-0.png"
+          ],
+          "exact_hidden_or_trailing_label_text_verified": null,
+          "behavior_fully_verified": false
+        },
+        {
+          "order": 51,
+          "name": "AdjustEntry",
+          "visible_label": "AdjustEntry",
+          "default": "0.0",
+          "native_input_rva": "0x1d70e8",
+          "representation": "double",
+          "label_screenshots": [
+            "bot3-defaults-page4-0.png"
+          ],
+          "exact_hidden_or_trailing_label_text_verified": null,
+          "behavior_fully_verified": false
+        },
+        {
+          "order": 52,
+          "name": "AdjustSL",
+          "visible_label": "AdjustSL",
+          "default": "0.0",
+          "native_input_rva": "0x1d70f0",
+          "representation": "double",
+          "label_screenshots": [
+            "bot3-defaults-page4-0.png"
+          ],
+          "exact_hidden_or_trailing_label_text_verified": null,
+          "behavior_fully_verified": false
+        },
+        {
+          "order": 53,
+          "name": "AdjustTP",
+          "visible_label": "AdjustTP",
+          "default": "0.0",
+          "native_input_rva": "0x1d70f8",
+          "representation": "double",
+          "label_screenshots": [
+            "bot3-defaults-page4-0.png"
+          ],
+          "exact_hidden_or_trailing_label_text_verified": null,
+          "behavior_fully_verified": false
+        },
+        {
+          "order": 54,
+          "name": "AdjustTrailSL",
+          "visible_label": "AdjustTrailSL",
+          "default": "0.0",
+          "native_input_rva": "0x1d7100",
+          "representation": "double",
+          "label_screenshots": [
+            "bot3-defaults-page4-0.png"
+          ],
+          "exact_hidden_or_trailing_label_text_verified": null,
+          "behavior_fully_verified": false
+        },
+        {
+          "order": 55,
+          "name": "AdjustTrailTP",
+          "visible_label": "AdjustTrailTP",
+          "default": "0.0",
+          "native_input_rva": "0x1d7108",
+          "representation": "double",
+          "label_screenshots": [
+            "bot3-defaults-page4-0.png"
+          ],
+          "exact_hidden_or_trailing_label_text_verified": null,
+          "behavior_fully_verified": false
+        },
+        {
+          "order": 56,
+          "name": "AdjustBreakEven",
+          "visible_label": "AdjustBreakEven",
+          "default": "0.0",
+          "native_input_rva": "0x1d7110",
+          "representation": "double",
+          "label_screenshots": [
+            "bot3-defaults-page4-0.png"
+          ],
+          "exact_hidden_or_trailing_label_text_verified": null,
+          "behavior_fully_verified": false
+        },
+        {
+          "order": 57,
+          "name": "LotSizeSettings",
+          "visible_label": "- - -",
+          "default": "----------------------- LotSize Settings -----------------------",
+          "native_input_rva": "0x1d7118",
+          "representation": "string",
+          "label_screenshots": [
+            "bot3-defaults-page4-0.png"
+          ],
+          "exact_hidden_or_trailing_label_text_verified": null,
+          "behavior_fully_verified": false
+        },
+        {
+          "order": 58,
+          "name": "ManualBalance",
+          "visible_label": "manually set balance to use (if > 0)",
+          "default": "0.0",
+          "native_input_rva": "0x1d7128",
+          "representation": "double",
+          "label_screenshots": [
+            "bot3-defaults-page4-0.png",
+            "bot3-defaults-bottom-0.png"
+          ],
+          "exact_hidden_or_trailing_label_text_verified": null,
+          "behavior_fully_verified": false
+        },
+        {
+          "order": 59,
+          "name": "Risk",
+          "visible_label": "Lotsize calculation method",
+          "default": "1234",
+          "native_input_rva": "0x1d7130",
+          "representation": "integer_or_enum",
+          "label_screenshots": [
+            "bot3-defaults-page4-0.png",
+            "bot3-defaults-bottom-0.png"
+          ],
+          "exact_hidden_or_trailing_label_text_verified": null,
+          "behavior_fully_verified": false
+        },
+        {
+          "order": 60,
+          "name": "StartLots",
+          "visible_label": "StartLots",
+          "default": "0.01",
+          "native_input_rva": "0x1d7138",
+          "representation": "double",
+          "label_screenshots": [
+            "bot3-defaults-page4-0.png",
+            "bot3-defaults-bottom-0.png"
+          ],
+          "exact_hidden_or_trailing_label_text_verified": null,
+          "behavior_fully_verified": false
+        },
+        {
+          "order": 61,
+          "name": "MaxAllowedDD",
+          "visible_label": "Max Allowed TOTAL Drawdown",
+          "default": "30.0",
+          "native_input_rva": "0x1d7140",
+          "representation": "double",
+          "label_screenshots": [
+            "bot3-defaults-page4-0.png",
+            "bot3-defaults-bottom-0.png"
+          ],
+          "exact_hidden_or_trailing_label_text_verified": null,
+          "behavior_fully_verified": false
+        },
+        {
+          "order": 62,
+          "name": "UseWeightedLots",
+          "visible_label": "Weighted Lotsize",
+          "default": "true",
+          "native_input_rva": "0x1d7148",
+          "representation": "bool",
+          "label_screenshots": [
+            "bot3-defaults-page4-0.png",
+            "bot3-defaults-bottom-0.png"
+          ],
+          "exact_hidden_or_trailing_label_text_verified": null,
+          "behavior_fully_verified": false
+        },
+        {
+          "order": 63,
+          "name": "MaxRiskPerStrategy_",
+          "visible_label": "Max Risk Per Strat",
+          "default": "1.0",
+          "native_input_rva": "0x1d7150",
+          "representation": "double",
+          "label_screenshots": [
+            "bot3-defaults-page4-0.png",
+            "bot3-defaults-bottom-0.png"
+          ],
+          "exact_hidden_or_trailing_label_text_verified": null,
+          "behavior_fully_verified": false
+        },
+        {
+          "order": 64,
+          "name": "PropFirmMaxDailyDD",
+          "visible_label": "Set Max DAILY Drawdown (Prop Firms)",
+          "default": "0.0",
+          "native_input_rva": "0x1d7158",
+          "representation": "double",
+          "label_screenshots": [
+            "bot3-defaults-page4-0.png",
+            "bot3-defaults-bottom-0.png"
+          ],
+          "exact_hidden_or_trailing_label_text_verified": null,
+          "behavior_fully_verified": false
+        },
+        {
+          "order": 65,
+          "name": "OnlyUp",
+          "visible_label": "OnlyUp",
+          "default": "true",
+          "native_input_rva": "0x1d7160",
+          "representation": "bool",
+          "label_screenshots": [
+            "bot3-defaults-page4-0.png",
+            "bot3-defaults-bottom-0.png"
+          ],
+          "exact_hidden_or_trailing_label_text_verified": null,
+          "behavior_fully_verified": false
+        },
+        {
+          "order": 66,
+          "name": "ResetHighestBalance",
+          "visible_label": "Reset Highest Balance for OnlyUp",
+          "default": "false",
+          "native_input_rva": "0x1d7168",
+          "representation": "bool",
+          "label_screenshots": [
+            "bot3-defaults-page4-0.png",
+            "bot3-defaults-bottom-0.png"
+          ],
+          "exact_hidden_or_trailing_label_text_verified": null,
+          "behavior_fully_verified": false
+        },
+        {
+          "order": 67,
+          "name": "ResetHighestBalanceOnWithdrawal",
+          "visible_label": "Reset Highest Balance on a withdrawal",
+          "default": "true",
+          "native_input_rva": "0x1d7170",
+          "representation": "bool",
+          "label_screenshots": [
+            "bot3-defaults-page4-0.png",
+            "bot3-defaults-bottom-0.png"
+          ],
+          "exact_hidden_or_trailing_label_text_verified": null,
+          "behavior_fully_verified": false
+        },
+        {
+          "order": 68,
+          "name": "CheckMargin",
+          "visible_label": "CheckMargin",
+          "default": "true",
+          "native_input_rva": "0x1d7178",
+          "representation": "bool",
+          "label_screenshots": [
+            "bot3-defaults-page4-0.png",
+            "bot3-defaults-bottom-0.png"
+          ],
+          "exact_hidden_or_trailing_label_text_verified": null,
+          "behavior_fully_verified": false
+        },
+        {
+          "order": 69,
+          "name": "UseEquity",
+          "visible_label": "Use Equity Instead of Balance",
+          "default": "false",
+          "native_input_rva": "0x1d7180",
+          "representation": "bool",
+          "label_screenshots": [
+            "bot3-defaults-page4-0.png",
+            "bot3-defaults-bottom-0.png"
+          ],
+          "exact_hidden_or_trailing_label_text_verified": null,
+          "behavior_fully_verified": false
+        },
+        {
+          "order": 70,
+          "name": "ManualStratSelect",
+          "visible_label": "- - -",
+          "default": "------------------------- Manual Strategy Selection -------------------------",
+          "native_input_rva": "0x1d7188",
+          "representation": "string",
+          "label_screenshots": [
+            "bot3-defaults-page4-0.png",
+            "bot3-defaults-bottom-0.png"
+          ],
+          "exact_hidden_or_trailing_label_text_verified": null,
+          "behavior_fully_verified": false
+        },
+        {
+          "order": 71,
+          "name": "ManStratWarn",
+          "visible_label": "- - -",
+          "default": "!! DO NOT RUN MANUAL STRATEGIES WHILE USING 'MAX ALLOWED TOTAL DD' OPTION !! ",
+          "native_input_rva": "0x1d7198",
+          "representation": "string",
+          "label_screenshots": [
+            "bot3-defaults-bottom-0.png"
+          ],
+          "exact_hidden_or_trailing_label_text_verified": null,
+          "behavior_fully_verified": false
+        },
+        {
+          "order": 72,
+          "name": "RunStrat1",
+          "visible_label": "Run Strategy 1 (low risk)",
+          "default": "true",
+          "native_input_rva": "0x1d71a8",
+          "representation": "bool",
+          "label_screenshots": [
+            "bot3-defaults-bottom-0.png"
+          ],
+          "exact_hidden_or_trailing_label_text_verified": null,
+          "behavior_fully_verified": false
+        },
+        {
+          "order": 73,
+          "name": "RunStrat2",
+          "visible_label": "Run Strategy 2 (low risk)",
+          "default": "true",
+          "native_input_rva": "0x1d71b0",
+          "representation": "bool",
+          "label_screenshots": [
+            "bot3-defaults-bottom-0.png"
+          ],
+          "exact_hidden_or_trailing_label_text_verified": null,
+          "behavior_fully_verified": false
+        },
+        {
+          "order": 74,
+          "name": "RunStrat3",
+          "visible_label": "Run Strategy 3 (low risk)",
+          "default": "true",
+          "native_input_rva": "0x1d71b8",
+          "representation": "bool",
+          "label_screenshots": [
+            "bot3-defaults-bottom-0.png"
+          ],
+          "exact_hidden_or_trailing_label_text_verified": null,
+          "behavior_fully_verified": false
+        },
+        {
+          "order": 75,
+          "name": "RunStrat4",
+          "visible_label": "Run Strategy 4 (med risk)",
+          "default": "true",
+          "native_input_rva": "0x1d71c0",
+          "representation": "bool",
+          "label_screenshots": [
+            "bot3-defaults-bottom-0.png"
+          ],
+          "exact_hidden_or_trailing_label_text_verified": null,
+          "behavior_fully_verified": false
+        },
+        {
+          "order": 76,
+          "name": "RunStrat5",
+          "visible_label": "Run Strategy 5 (med risk)",
+          "default": "true",
+          "native_input_rva": "0x1d71c8",
+          "representation": "bool",
+          "label_screenshots": [
+            "bot3-defaults-bottom-0.png"
+          ],
+          "exact_hidden_or_trailing_label_text_verified": null,
+          "behavior_fully_verified": false
+        },
+        {
+          "order": 77,
+          "name": "RunStrat6",
+          "visible_label": "Run Strategy 6 (med risk)",
+          "default": "true",
+          "native_input_rva": "0x1d71d0",
+          "representation": "bool",
+          "label_screenshots": [
+            "bot3-defaults-bottom-0.png"
+          ],
+          "exact_hidden_or_trailing_label_text_verified": null,
+          "behavior_fully_verified": false
+        },
+        {
+          "order": 78,
+          "name": "RunStrat7",
+          "visible_label": "Run Strategy 7 (med risk)",
+          "default": "true",
+          "native_input_rva": "0x1d71d8",
+          "representation": "bool",
+          "label_screenshots": [
+            "bot3-defaults-bottom-0.png"
+          ],
+          "exact_hidden_or_trailing_label_text_verified": null,
+          "behavior_fully_verified": false
+        },
+        {
+          "order": 79,
+          "name": "RunStrat8",
+          "visible_label": "Run Strategy 8 (high risk)",
+          "default": "true",
+          "native_input_rva": "0x1d71e0",
+          "representation": "bool",
+          "label_screenshots": [
+            "bot3-defaults-bottom-0.png"
+          ],
+          "exact_hidden_or_trailing_label_text_verified": null,
+          "behavior_fully_verified": false
+        },
+        {
+          "order": 80,
+          "name": "RunStrat9",
+          "visible_label": "Run Strategy 9 (high risk)",
+          "default": "true",
+          "native_input_rva": "0x1d71e8",
+          "representation": "bool",
+          "label_screenshots": [
+            "bot3-defaults-bottom-0.png"
+          ],
+          "exact_hidden_or_trailing_label_text_verified": null,
+          "behavior_fully_verified": false
+        }
+      ],
+      "menus": [
+        {
+          "name": "BacktestSpeed",
+          "dropdown_observation": "bot3-speed-options.json",
+          "dropdown_observation_sha256": "9395c3eb53dfc2f64099b4d75486fd4d31d26b79b066fd7ea7fa847c2409f66b",
+          "choices": [
+            {
+              "value": 1,
+              "label": "normal",
+              "value_preset": "bot3-defaults.set",
+              "label_screenshot": "bot3-defaults-page1-0.png",
+              "observed": true
+            },
+            {
+              "value": 2,
+              "label": "fast",
+              "value_preset": "bot3-options-a.set",
+              "label_screenshot": "bot3-options-a-top-0.png",
+              "observed": true
+            },
+            {
+              "value": 3,
+              "label": "ultra fast",
+              "value_preset": "bot3-options-b.set",
+              "label_screenshot": "bot3-options-b-top-0.png",
+              "observed": true
+            }
+          ],
+          "declared_enum_type_name_recovered": false
+        },
+        {
+          "name": "FakeOutFilter",
+          "dropdown_observation": "bot3-fakeout-options.json",
+          "dropdown_observation_sha256": "c7310707aab29cb6532de6792c81a078642c77be5f851277725661cd43d4b0b2",
+          "choices": [
+            {
+              "value": 0,
+              "label": "OFF",
+              "value_preset": "bot3-options-a.set",
+              "label_screenshot": "bot3-options-a-top-0.png",
+              "observed": true
+            },
+            {
+              "value": 1,
+              "label": "Low",
+              "value_preset": "bot3-options-b.set",
+              "label_screenshot": "bot3-options-b-top-0.png",
+              "observed": true
+            },
+            {
+              "value": 2,
+              "label": "Medium",
+              "value_preset": "bot3-defaults.set",
+              "label_screenshot": "bot3-defaults-page1-0.png",
+              "observed": true
+            },
+            {
+              "value": 3,
+              "label": "High",
+              "value_preset": "bot3-options-c.set",
+              "label_screenshot": "bot3-options-c-top-0.png",
+              "observed": true
+            }
+          ],
+          "declared_enum_type_name_recovered": false
+        },
+        {
+          "name": "Risk",
+          "dropdown_observation": "bot3-volume-options.json",
+          "dropdown_observation_sha256": "868f7380d9a78e91a86a59ec7f23b5f468e38ed8df7071d3091651281029ae6e",
+          "choices": [
+            {
+              "value": 0,
+              "label": "use StartLots",
+              "value_preset": "bot3-options-a.set",
+              "label_screenshot": "bot3-options-a-bottom-0.png",
+              "observed": true
+            },
+            {
+              "value": 1234,
+              "label": "Max Allowed Total Drawdown",
+              "value_preset": "bot3-defaults.set",
+              "label_screenshot": "bot3-defaults-bottom-0.png",
+              "observed": true
+            },
+            {
+              "value": 3,
+              "label": "Max Risk Per Strategy",
+              "value_preset": "bot3-options-b.set",
+              "label_screenshot": "bot3-options-b-bottom-0.png",
+              "observed": true
+            }
+          ],
+          "declared_enum_type_name_recovered": false
+        },
+        {
+          "name": "TradeFrequency",
+          "dropdown_observation": "bot3-frequency-options.json",
+          "dropdown_observation_sha256": "ae963d596eabfbb4954f103d44c3067603aa3c9c918240d6125fffb32eac9988",
+          "choices": [
+            {
+              "value": 0,
+              "label": "extreme conservative",
+              "value_preset": "bot3-frequency-0.set",
+              "label_screenshot": "bot3-frequency-0-label-0.png",
+              "observed": true
+            },
+            {
+              "value": 1,
+              "label": "conservative",
+              "value_preset": "bot3-frequency-1.set",
+              "label_screenshot": "bot3-frequency-1-label-0.png",
+              "observed": true
+            },
+            {
+              "value": 2,
+              "label": "moderate",
+              "value_preset": "bot3-frequency-2.set",
+              "label_screenshot": "bot3-frequency-2-label-0.png",
+              "observed": true
+            },
+            {
+              "value": 3,
+              "label": "Intense",
+              "value_preset": "bot3-frequency-3.set",
+              "label_screenshot": "bot3-frequency-3-label-0.png",
+              "observed": true
+            },
+            {
+              "value": 4,
+              "label": "Extreme (high risk!)",
+              "value_preset": "bot3-frequency-4.set",
+              "label_screenshot": "bot3-frequency-4-label-0.png",
+              "observed": true
+            },
+            {
+              "value": 5,
+              "label": "Auto (based on balance and risk)",
+              "value_preset": "bot3-defaults.set",
+              "label_screenshot": "bot3-defaults-page1-0.png",
+              "observed": true
+            },
+            {
+              "value": 6,
+              "label": "Manual strategy selection",
+              "value_preset": "bot3-frequency-6.set",
+              "label_screenshot": "bot3-frequency-6-label-0.png",
+              "observed": true
+            }
+          ],
+          "declared_enum_type_name_recovered": false
+        }
+      ]
+    }
+  ],
+  "labels_observed": 152,
+  "menus_observed": 7,
+  "enum_choices_mapped": 28,
+  "terminal_window_id": 11076968,
+  "terminal_process_path": "C:\\Users\\NTD\\Desktop\\Bot Market Demo\\dich-nguoc\\.local\\claude-recovery-20261023\\mt5\\terminal64.exe",
+  "no_tester_run_started": true,
+  "scope": "Direct visual reading in isolated MT5 Tester Inputs plus exported Defaults sets and controlled numeric presets. Covers observed visible labels/order, defaults and 28 enum value/label mappings. Original enum identifier names, hidden/trailing label characters, exact integer declarations, all numeric ranges and trading effects remain unverified. Screenshot rows were transcribed after inspection; hashes are integrity evidence, not independent visual validation."
+}

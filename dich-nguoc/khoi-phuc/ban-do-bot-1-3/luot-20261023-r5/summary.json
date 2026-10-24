@@ -1,0 +1,25 @@
+{
+  "bots": [
+    {
+      "bot": 1,
+      "functions": 84,
+      "observed_input_rows": 72,
+      "unlabelled_native_addresses": 0
+    },
+    {
+      "bot": 3,
+      "functions": 82,
+      "observed_input_rows": 80,
+      "unlabelled_native_addresses": 0
+    }
+  ],
+  "tool_sha256": "88c798d9ea07d3efead4b16fc80ffc6fd904827a44bdb3cd287280622d02f026",
+  "analysis_complete": false,
+  "outputs": {
+    "api-calibration.json": "20848d69ecfa9e2a7a0d474cd092d684577b83edb9d396e29d69f36459d186ae",
+    "bot-1.json": "1b1d88f9784450b01c0d2233b907fd46dd45b1c9fafb0daa3ac2d9b4707d196c",
+    "bot-1.md": "bed3dec071fc8f6582ea45b3ef8eedcb84b2464eb102fdd3694675cff1ba505e",
+    "bot-3.json": "74c924e4e3f15620e74f65ee4ffbe7b7b87ee90b1a9eb9ebb581681edffe1b89",
+    "bot-3.md": "67e9cf41f3b5192b4f6f25f954ee88576db83299ab32c3b787026e748c38d2b6"
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "cases": 954,
+  "matched": 954,
+  "failed": 0,
+  "outputs_per_success": 33,
+  "groups": {
+    "mixed": {
+      "cases": 400,
+      "matched": 400
+    },
+    "scale": {
+      "cases": 168,
+      "matched": 168
+    },
+    "price-unit": {
+      "cases": 70,
+      "matched": 70
+    },
+    "distance-boundary": {
+      "cases": 240,
+      "matched": 240
+    },
+    "expiration-wrap": {
+      "cases": 18,
+      "matched": 18
+    },
+    "integer-boundary": {
+      "cases": 30,
+      "matched": 30
+    },
+    "buffer-flag": {
+      "cases": 12,
+      "matched": 12
+    },
+    "entry-profile-0": {
+      "cases": 2,
+      "matched": 2
+    },
+    "entry-profile-1": {
+      "cases": 2,
+      "matched": 2
+    },
+    "entry-profile-2": {
+      "cases": 2,
+      "matched": 2
+    },
+    "entry-profile-3": {
+      "cases": 2,
+      "matched": 2
+    },
+    "entry-profile-4": {
+      "cases": 2,
+      "matched": 2
+    },
+    "entry-profile-5": {
+      "cases": 2,
+      "matched": 2
+    },
+    "entry-profile-6": {
+      "cases": 2,
+      "matched": 2
+    },
+    "entry-profile-7": {
+      "cases": 2,
+      "matched": 2
+    }
+  },
+  "first_failures": [],
+  "hashes": {
+    "cases.bin": "9a41ef6d49e951d37d9f27e2b9c4fbedb5b29e6e07ab8922abb8c18c94f064da",
+    "original-results.bin": "1718b18857835ca6f10bae04707d89f300020a7fc2efcf7a964dc5e72dfed7a6",
+    "mql5-results.bin": "1718b18857835ca6f10bae04707d89f300020a7fc2efcf7a964dc5e72dfed7a6"
+  },
+  "passed": true,
+  "scope": "Numeric distance settings with supplied terminal data. Not full setup, indicator implementation, complete strategy profiles or complete EA."
+}

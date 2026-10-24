@@ -1,0 +1,636 @@
+{
+  "modified": [
+    "dich-nguoc\\khoi-phuc\\KET-QUA.md",
+    "dich-nguoc\\khoi-phuc\\cong-cu-cu\\ghidra\\ExportEx5Code.java"
+  ],
+  "added": [
+    {
+      "path": "dich-nguoc\\khoi-phuc\\KIEM-CHUNG-BOT-1-3.json",
+      "bytes": 2477,
+      "sha256": "910c7f209310dbf6d9fa78ec6808b6c28408c0003e394746750632074b187020"
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\PHAN-TICH-BOT-1-3.md",
+      "bytes": 8992,
+      "sha256": "d017dc0bf4b1abba0ae7d6ff4cbf0d81cf88aab0abbe3efe2c00371d383767a4"
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-1\\README.md",
+      "bytes": 729,
+      "sha256": "2b8f236f183f2cb758825d4c170b4fc6fe67a0a32ba5856a96afa85e583287f1"
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-3\\README.md",
+      "bytes": 848,
+      "sha256": "83209cd34a9687369c12102d5fcd1f7a307c78691cc20406dea60e4d9488b84a"
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\cong-cu\\BOT-1-3.md",
+      "bytes": 3284,
+      "sha256": "d143c9e8c30a80afe061f9bbf1ecb47debd57161a863257a9d4548c058042694"
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\cong-cu\\chay-chup-bot-1-3.py",
+      "bytes": 5728,
+      "sha256": "07e475c5f2db88b00013d0ad48b739d7106687caf979d3c8b624d50acf0d915e"
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\cong-cu\\chup-bot-1-3.py",
+      "bytes": 1105,
+      "sha256": "c4c42633a1710c40647d38e95bab6f7fad17bdbe2917eab0ba12282dcd4a855b"
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\cong-cu\\kiem-muc-gia-bot-1-3.py",
+      "bytes": 10439,
+      "sha256": "a6c447ca80029fb63ced0c9d1673bb14222a7736b04df5c410f280f8471d6a35"
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\cong-cu\\tao-ho-so-ma-chup.py",
+      "bytes": 5971,
+      "sha256": "b45b0b6396f8d0340877200fc05da30d5bea0f4543f8a5d605a05216ca1929b5"
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\cong-cu\\xuat-ma-chup.ps1",
+      "bytes": 2371,
+      "sha256": "6337c1b7b9f4cb0d5bf316327d57c6076c34694b912537cac10a7d5571f740d5"
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\cong-cu\\xuat-ma-day-du.ps1",
+      "bytes": 1953,
+      "sha256": "ab2617f218492280c30dd2fed819c29744c3f7276eb89d1dd542bf1abb5a8c01"
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\cong-cu\\ghidra\\ExportOneFunction.java",
+      "bytes": 1604,
+      "sha256": "bfdde78b7f18351ab4a2ffcbfa98a81db9d53f1ebae008962f94e45d3d026939"
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-3\\source\\MQL5\\Scripts\\bot-cua-toi-3\\Bot3PriceLevelsCheck.mq5",
+      "bytes": 3024,
+      "sha256": "a7b9c0e7912f9ed1a8df92ec1778d136383e09ca81816174bd0e2761ad4ddc5d"
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-3\\source\\MQL5\\Include\\bot-cua-toi-3\\Bot3PriceLevels.mqh",
+      "bytes": 3178,
+      "sha256": "1cfecf5f324056b64f72a8fb21f446b7ca35f377ae40d4ab0c6859bfe736c413"
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-3\\phan-tich\\luot-20261023-c1\\ghidra.log",
+      "bytes": 6068,
+      "sha256": "a5e31971a87c78e3243bbe6102ffa7b7e294ae4a9808d6b724a483ba1b985119"
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-3\\phan-tich\\luot-20261023-c1\\scripts.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-3\\phan-tich\\luot-20261023-c2\\ghidra.log",
+      "bytes": 14842,
+      "sha256": "be764678caaadb6b449216939a342e32392c663eb6cffd047e12d9c926b2d6a5"
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-3\\phan-tich\\luot-20261023-c2\\lenh-chay.json",
+      "bytes": 1872,
+      "sha256": "a5c3e127e89febf4f9b2cf2626c7d88954d290d8e53337a3f0d2d908af7d78d5"
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-3\\phan-tich\\luot-20261023-c2\\ma-trung-gian.c",
+      "bytes": 972023,
+      "sha256": "9b4e05a1639e8e3e0dcdf9d570cca93a871c25a957d45f7724baacaf91bb5421"
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-3\\phan-tich\\luot-20261023-c2\\ma-trung-gian.c.summary.json",
+      "bytes": 40,
+      "sha256": "a9613f546d542199e3a04496f0a260f54c3b11d7896e0874c43db241d7a353fb"
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-3\\phan-tich\\luot-20261023-c2\\scripts.log",
+      "bytes": 187,
+      "sha256": "b87403c0f9a677cf1473801753283ae62b9545cbedfe2cf824c967113cfc0178"
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-3\\phan-tich\\luot-20261023-data\\danh-sach-ham.json",
+      "bytes": 34516,
+      "sha256": "8a20e24e6f247469341d9875b39c469b4e6ea2fe8aa6c21a4464832f36445832"
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-3\\phan-tich\\luot-20261023-data\\ghidra.log",
+      "bytes": 11307,
+      "sha256": "f211fe1e9fa8d250eaa756cfdee2587b6b796887cb3aa4febdfdb63a52d48001"
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-3\\phan-tich\\luot-20261023-data\\ham-0c30.c",
+      "bytes": 74728,
+      "sha256": "57b34fc2633fdb2b912c69493bb351e0082a527ad285f50c774596eff2336772"
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-3\\phan-tich\\luot-20261023-data\\ham-0c30.log",
+      "bytes": 6009,
+      "sha256": "d439017b5de3f7018fd25a7e24f390c8e1f1792d48fe1e7e1648af148599224d"
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-3\\phan-tich\\luot-20261023-data\\lenh-chay.json",
+      "bytes": 2171,
+      "sha256": "180079791579ee42623ff1bec95d65f473032f302e23c26d3fa742a3fb91b3d4"
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-3\\phan-tich\\luot-20261023-data\\ma-trung-gian-day-du.c",
+      "bytes": 1455202,
+      "sha256": "ef8e07ac21522a8a2ab7165db6e77f40885acfc5a044c502ba81e331b826f620"
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-3\\phan-tich\\luot-20261023-data\\ma-trung-gian.c",
+      "bytes": 1380308,
+      "sha256": "aad0f1bc2cca93d7b4e4020ab7cee0f44d6fe604c51a186954763b40906751c3"
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-3\\phan-tich\\luot-20261023-data\\ma-trung-gian.c.summary.json",
+      "bytes": 39,
+      "sha256": "c4e36bfe014a1313c95a85d4123b2fb4c172ad68f429aba42093eeddd61da3bb"
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-3\\phan-tich\\luot-20261023-data\\scripts.log",
+      "bytes": 495,
+      "sha256": "84677a21f244203ccdda3741cabb1337599d84a8dba434f1f42ad5c8d01c71d3"
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-3\\phan-tich\\luot-20261023-data\\tham-so-quan-sat.json",
+      "bytes": 3380,
+      "sha256": "fefcc21cb96c23ab9a40c70b87b369c21613ccbb7993eea70351404789fba413"
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-3\\phan-tich\\luot-20261023-data\\tong-hop-xuat-ma.json",
+      "bytes": 447,
+      "sha256": "a7311ed05040c1c9f6b4a06f0a23b5fcf3052d7467a553eac10a98cee4f1b0ff"
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-3\\phan-tich\\luot-20261023-data\\metadata\\0000017156250000.bin.base.txt",
+      "bytes": 13,
+      "sha256": "e9adfe82375b85fe01c7f084ffd01080787df7f810dd0c56ddf65cec14d88790"
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-3\\phan-tich\\luot-20261023-data\\metadata\\data.tsv",
+      "bytes": 156,
+      "sha256": "55df6166023c75b12adb259a24c613b66cd66d6bd24cb0e2aa5cff14d329126c"
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-3\\phan-tich\\luot-20261023-data\\metadata\\functions.tsv",
+      "bytes": 2050,
+      "sha256": "a0d68fe70417d0a63ec6c1e082f4a024ed3079d0acb0e1743093bbe172f93e65"
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-3\\phan-tich\\luot-20261023-data\\metadata\\import.json",
+      "bytes": 10172,
+      "sha256": "2b0f2cf309fb5055a53acb134f61d4e35d33db55454cf85f79e2081ef586bc88"
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-3\\phan-tich\\luot-20261023-data\\metadata\\inputs.tsv",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-3\\phan-tich\\luot-20261023-data\\metadata\\native-labels.tsv",
+      "bytes": 4846,
+      "sha256": "668137c363515fc88a6f5072327645b8f7c00094e5e1abdb5a9bbf7f5bf605e1"
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-3\\phan-tich\\luot-20261023-data\\metadata\\native-signatures.tsv",
+      "bytes": 4277,
+      "sha256": "15911f523144a99e2f3fc91855e5bff7e3982aecfbeeee3edcf42711c2540438"
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-3\\phan-tich\\luot-20261023-data\\metadata\\predefined.tsv",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-3\\phan-tich\\luot-20261023-data\\metadata\\refs.tsv",
+      "bytes": 5252,
+      "sha256": "b12aa3fd384560ab44709376b9e2648ee5c519a44de48c6c623e6b134e5c247e"
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-3\\phan-tich\\luot-20261023-data\\metadata\\seeds.txt",
+      "bytes": 1066,
+      "sha256": "8bd9952ced345059b48231239ae46cea8c4ccb1ad4910ff0af9d19d6f76e5af2"
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-3\\phan-tich\\luot-20261023-data\\metadata\\strings.tsv",
+      "bytes": 36482,
+      "sha256": "d15a232406366b8d4ef93584e08b6f1bd4031d333b0752958d2c9390d678ee39"
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-3\\bang-chung\\luot-20261023-r1\\b3-luot-20261023-r1.log",
+      "bytes": 154692,
+      "sha256": "048fef9deed9f5ab1cc2d9d2d46496d4217f2ee07ba1ca4ee4fa92675e984b8b"
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-3\\bang-chung\\luot-20261023-r1\\b3-luot-20261023-r1.terminal.log",
+      "bytes": 1473,
+      "sha256": "0f0b8248c2877107ae0d8c2628ec22a4dcfed5d873bfd78112dfed56442ccd56"
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-3\\bang-chung\\luot-20261023-r1\\capture-run.json",
+      "bytes": 826,
+      "sha256": "97f02b5206b54178d3ee224eb85e4e82afda4ecfd35fe0ef399d6db7e2b2026e"
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-3\\bang-chung\\luot-20261023-r1\\capture.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-3\\bang-chung\\luot-20261023-r1\\capture.stdout.txt",
+      "bytes": 191,
+      "sha256": "0ab4a834e784ea6dc627996ea4018ff425326dcf38bbd3424c50d9239d5c48ff"
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-3\\bang-chung\\luot-20261023-r1\\engine-observed.json",
+      "bytes": 324,
+      "sha256": "dfb233134d30f0e595b0858267f987fbf345ff979d8fdef2c9f1df2457c84db6"
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-3\\bang-chung\\luot-20261023-r1\\jobs.json",
+      "bytes": 374,
+      "sha256": "6d23a1aa85839ad05a19cb6d96f7eb8638d0714e6f08c0eb32fa6f8903d1c2c7"
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-3\\bang-chung\\luot-20261023-r1\\ket-qua-chay.jsonl",
+      "bytes": 1634,
+      "sha256": "6ffba281ffe1440273131001bc0100aafe64b429cc3d2e22b9b947f37032d088"
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-3\\bang-chung\\luot-20261023-r1\\runner.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-3\\bang-chung\\luot-20261023-r1\\runner.stdout.txt",
+      "bytes": 167,
+      "sha256": "92b4835e9c4ebf5131dc4352e94c4b818b237f09f6d1af482ea498d9a057d4d9"
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-3\\bang-chung\\kiem-muc-gia\\gia-20261023-r1\\cases.bin",
+      "bytes": 379436,
+      "sha256": "09a8adbb283d13ae6d03fe0bf388adbfdb6c6b2e6c71f77cced51a23f5a3da2b"
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-3\\bang-chung\\kiem-muc-gia\\gia-20261023-r1\\comparison.json",
+      "bytes": 517,
+      "sha256": "fb542f5858dd23b7b04c84ea354ce84c7da487a6d8307a5cd66d2c439acc3e44"
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-3\\bang-chung\\kiem-muc-gia\\gia-20261023-r1\\mql5-results.bin",
+      "bytes": 26508,
+      "sha256": "495901757415d39f24b4ed181e669be9593ae74e2cf877ed0d838098897458f9"
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-3\\bang-chung\\kiem-muc-gia\\gia-20261023-r1\\mql5-run.json",
+      "bytes": 219,
+      "sha256": "beffa7a7e0c13f822c0f55511e8a529758c676482bab025c6215f60b00dd3fb5"
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-3\\bang-chung\\kiem-muc-gia\\gia-20261023-r1\\original-results.bin",
+      "bytes": 26508,
+      "sha256": "495901757415d39f24b4ed181e669be9593ae74e2cf877ed0d838098897458f9"
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-3\\bang-chung\\kiem-muc-gia\\gia-20261023-r1\\original-run.json",
+      "bytes": 387,
+      "sha256": "1c7824f85de692712e29cd0bbbf283ffcbad905367af739e157f4df194489ab7"
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-3\\bang-chung\\captures\\luot-20261023-r1\\0000017156250000.bin",
+      "bytes": 356352,
+      "sha256": "7464a1dcb3a66d1438d510f365a08fbcdfa4aaa00f03afb49259225bc7d5cfbb"
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-3\\bang-chung\\captures\\luot-20261023-r1\\00000171562a7000-program-data.bin",
+      "bytes": 1609728,
+      "sha256": "1d8c5ee1af972615461e71ede70b519d30bd876561cf96169606e4c9aeaab073"
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-3\\bang-chung\\captures\\luot-20261023-r1\\00007ffa1b990000.bin",
+      "bytes": 4096,
+      "sha256": "2233cd222526170e3ac45cca5e2acb4c4ad3070cd113da99f91f412f6c558438"
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-3\\bang-chung\\captures\\luot-20261023-r1\\00007ffa1b991000.bin",
+      "bytes": 4096,
+      "sha256": "ad7facb2586fc6e966c004d7d1d16b024f5805ff7cb47c7a85dabd8b48892ca7"
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-3\\bang-chung\\captures\\luot-20261023-r1\\capture.json",
+      "bytes": 2042,
+      "sha256": "c7060fa7349025372b5c0407efb760fbb9a084f0cf1c598f7c775321148443c3"
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-3\\bang-chung\\bien-dich\\b3-price-levels-02\\bien-nhan.json",
+      "bytes": 778,
+      "sha256": "8d612624c3951b85ca96fc8f2e225115f252c1b53c3d54feddf6b87984f0a769"
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-3\\bang-chung\\bien-dich\\b3-price-levels-02\\Bot3PriceLevelsCheck.ex5",
+      "bytes": 10080,
+      "sha256": "63acd791240480613cbefbbafdaae448d5a5ec289e1946f07b37bc7a2dd9fdff"
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-3\\bang-chung\\bien-dich\\b3-price-levels-02\\metaeditor.log",
+      "bytes": 3890,
+      "sha256": "2746344ab57c6d3a14a183812b08f91b2fe07032601cce99e4faca6ee8a794f1"
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-1\\source\\MQL5\\Scripts\\bot-cua-toi-1\\Bot1PriceLevelsCheck.mq5",
+      "bytes": 3024,
+      "sha256": "8d10d63113e76ada8e9cdda7bcb8e24170a1813520cfda1744130c9f58984e0e"
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-1\\source\\MQL5\\Include\\bot-cua-toi-1\\Bot1PriceLevels.mqh",
+      "bytes": 3089,
+      "sha256": "601bdd551e24e3ac9a7742cc00e057d881b069ab672843bec31b3f32a43316b1"
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-1\\phan-tich\\luot-20261023-data-v2\\danh-sach-ham.json",
+      "bytes": 34500,
+      "sha256": "51ebca3649d3223ff3a0a9318bc9ecbca0d85506506d2eeb798a94f99ca16f92"
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-1\\phan-tich\\luot-20261023-data-v2\\ghidra.log",
+      "bytes": 11333,
+      "sha256": "cd4e6980426542a7788d5a5f1d8abdb847b53f3c01649239dbd8e9fe1120659e"
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-1\\phan-tich\\luot-20261023-data-v2\\lenh-chay.json",
+      "bytes": 2195,
+      "sha256": "4c1ec960a706567d351976f58367f5ee209c7392029b16429761232642e9d9db"
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-1\\phan-tich\\luot-20261023-data-v2\\ma-trung-gian.c",
+      "bytes": 1328059,
+      "sha256": "c6389dfe5bd1ef95ed7616eaf5c16b7d041fbd279e650753d239b28e3ea65a8d"
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-1\\phan-tich\\luot-20261023-data-v2\\ma-trung-gian.c.summary.json",
+      "bytes": 39,
+      "sha256": "24e875a3a361bc73bd5269b8080d51a08a749fbaf98ce465de62a98e1fcd8a21"
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-1\\phan-tich\\luot-20261023-data-v2\\scripts.log",
+      "bytes": 494,
+      "sha256": "d5947dcb8abd7cba3ba53f415c9778b54b16064e21e9956a9bd482189dbcc33c"
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-1\\phan-tich\\luot-20261023-data-v2\\tham-so-quan-sat.json",
+      "bytes": 3042,
+      "sha256": "7260ba6dd84a4490d46e3b64573e14611ff2eb5b06ae5c49b84563762aa54dfe"
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-1\\phan-tich\\luot-20261023-data-v2\\metadata\\0000023e5aa10000.bin.base.txt",
+      "bytes": 13,
+      "sha256": "a7df83b9cbb5254a99c361ffc75de7a0f158a698d4501536d35798c035942294"
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-1\\phan-tich\\luot-20261023-data-v2\\metadata\\data.tsv",
+      "bytes": 156,
+      "sha256": "b63cc2002892f1119d86c9860a1b3a0433c9e2467470f3f3ceaa71896a812e14"
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-1\\phan-tich\\luot-20261023-data-v2\\metadata\\functions.tsv",
+      "bytes": 2100,
+      "sha256": "bb9d75bf19f6d29821f95f7f585106cd734fbd919c558a0a19c1ad2c723c341b"
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-1\\phan-tich\\luot-20261023-data-v2\\metadata\\import.json",
+      "bytes": 10383,
+      "sha256": "732905b62143980f94c360226bfb75120d52bfccb7e646a3a0cc9be9d3e21adb"
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-1\\phan-tich\\luot-20261023-data-v2\\metadata\\inputs.tsv",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-1\\phan-tich\\luot-20261023-data-v2\\metadata\\native-labels.tsv",
+      "bytes": 4846,
+      "sha256": "668137c363515fc88a6f5072327645b8f7c00094e5e1abdb5a9bbf7f5bf605e1"
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-1\\phan-tich\\luot-20261023-data-v2\\metadata\\native-signatures.tsv",
+      "bytes": 4277,
+      "sha256": "15911f523144a99e2f3fc91855e5bff7e3982aecfbeeee3edcf42711c2540438"
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-1\\phan-tich\\luot-20261023-data-v2\\metadata\\predefined.tsv",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-1\\phan-tich\\luot-20261023-data-v2\\metadata\\refs.tsv",
+      "bytes": 5031,
+      "sha256": "094698e3f3f8b62a0fe8ad6860bd3387a9e85d81906fcaedcbe03bf99e7ccc30"
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-1\\phan-tich\\luot-20261023-data-v2\\metadata\\seeds.txt",
+      "bytes": 1092,
+      "sha256": "50746513fc222e9bdbace8bc230b54271a77452a28ab6d80c17374607968687b"
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-1\\phan-tich\\luot-20261023-data-v2\\metadata\\strings.tsv",
+      "bytes": 30726,
+      "sha256": "d2726e8cf08f720165e1816159dc47492548448dca9973f85e46972bc3cb758c"
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-1\\phan-tich\\luot-20261023-data\\metadata\\0000023e5aa10000.bin.base.txt",
+      "bytes": 13,
+      "sha256": "a7df83b9cbb5254a99c361ffc75de7a0f158a698d4501536d35798c035942294"
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-1\\phan-tich\\luot-20261023-data\\metadata\\data.tsv",
+      "bytes": 156,
+      "sha256": "b63cc2002892f1119d86c9860a1b3a0433c9e2467470f3f3ceaa71896a812e14"
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-1\\phan-tich\\luot-20261023-data\\metadata\\functions.tsv",
+      "bytes": 2100,
+      "sha256": "bb9d75bf19f6d29821f95f7f585106cd734fbd919c558a0a19c1ad2c723c341b"
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-1\\phan-tich\\luot-20261023-data\\metadata\\import.json",
+      "bytes": 10297,
+      "sha256": "234782a0cdb9b659b4e2ba14ebd28517fb5785e0ae3057cfcf895830e9f55c42"
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-1\\phan-tich\\luot-20261023-data\\metadata\\inputs.tsv",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-1\\phan-tich\\luot-20261023-data\\metadata\\native-labels.tsv",
+      "bytes": 4846,
+      "sha256": "668137c363515fc88a6f5072327645b8f7c00094e5e1abdb5a9bbf7f5bf605e1"
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-1\\phan-tich\\luot-20261023-data\\metadata\\native-signatures.tsv",
+      "bytes": 4277,
+      "sha256": "15911f523144a99e2f3fc91855e5bff7e3982aecfbeeee3edcf42711c2540438"
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-1\\phan-tich\\luot-20261023-data\\metadata\\predefined.tsv",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-1\\phan-tich\\luot-20261023-data\\metadata\\refs.tsv",
+      "bytes": 5161,
+      "sha256": "41f9dca69073ee1acb0fcb7a6e7627180b88d04faca5d3458a5f6b511e2d2dea"
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-1\\phan-tich\\luot-20261023-data\\metadata\\seeds.txt",
+      "bytes": 1092,
+      "sha256": "50746513fc222e9bdbace8bc230b54271a77452a28ab6d80c17374607968687b"
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-1\\phan-tich\\luot-20261023-data\\metadata\\strings.tsv",
+      "bytes": 40813,
+      "sha256": "6dd0e0948de58ff50b9b5ac25968d8d472275d299338547c3cbb8ec59e8baba7"
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-1\\bang-chung\\luot-20261023-r1\\b1-luot-20261023-r1.log",
+      "bytes": 531935,
+      "sha256": "9540a7461b9d0248c5e89e9600e6cf014015c93ae886d36781f2e236e7082319"
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-1\\bang-chung\\luot-20261023-r1\\b1-luot-20261023-r1.terminal.log",
+      "bytes": 1567,
+      "sha256": "a08638e19883d3796711e2d087f897ac8499162acd91305f043f0b0c5f9cdc92"
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-1\\bang-chung\\luot-20261023-r1\\capture-run.json",
+      "bytes": 824,
+      "sha256": "2ebaea8452b94b5ce923289d4c2c2fc28b899fa036b9371b3a0b2a3d658e8088"
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-1\\bang-chung\\luot-20261023-r1\\capture.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-1\\bang-chung\\luot-20261023-r1\\capture.stdout.txt",
+      "bytes": 190,
+      "sha256": "b20083901785dd3ff122e1e5533ef25b535344f1c6d8d8ed9117cc0a6a281ff2"
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-1\\bang-chung\\luot-20261023-r1\\engine-observed.json",
+      "bytes": 324,
+      "sha256": "219c2a51597356c03c9470979a1f6e2058c8243e75669b4c9d36916856a62696"
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-1\\bang-chung\\luot-20261023-r1\\jobs.json",
+      "bytes": 373,
+      "sha256": "ec9e86be330c88b3d1521b178afccf9164512ea7164de5231048cd2962635901"
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-1\\bang-chung\\luot-20261023-r1\\ket-qua-chay.jsonl",
+      "bytes": 1640,
+      "sha256": "fee192e3df6a0ce43d148e4d1b9a80cc955e0c839efe57f154787bb3a25903bc"
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-1\\bang-chung\\luot-20261023-r1\\runner.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-1\\bang-chung\\luot-20261023-r1\\runner.stdout.txt",
+      "bytes": 175,
+      "sha256": "cfcfee37841e4e5dcf012cf4fd18533cfe40ec19bb6065334d20f6720360099b"
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-1\\bang-chung\\luot-20261023-r1\\test-interrupted.json",
+      "bytes": 204,
+      "sha256": "7c1efce3803337842ca280fdaad763aee4339291036c081ce13576653a800afc"
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-1\\bang-chung\\kiem-muc-gia\\gia-20261023-r1\\cases.bin",
+      "bytes": 379436,
+      "sha256": "09a8adbb283d13ae6d03fe0bf388adbfdb6c6b2e6c71f77cced51a23f5a3da2b"
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-1\\bang-chung\\kiem-muc-gia\\gia-20261023-r1\\comparison.json",
+      "bytes": 517,
+      "sha256": "fb542f5858dd23b7b04c84ea354ce84c7da487a6d8307a5cd66d2c439acc3e44"
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-1\\bang-chung\\kiem-muc-gia\\gia-20261023-r1\\mql5-results.bin",
+      "bytes": 26508,
+      "sha256": "495901757415d39f24b4ed181e669be9593ae74e2cf877ed0d838098897458f9"
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-1\\bang-chung\\kiem-muc-gia\\gia-20261023-r1\\mql5-run.json",
+      "bytes": 219,
+      "sha256": "02b7c53b56fe5a8572edd4028244b57063a6e3ecc687afd9f119f6e16308c8e6"
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-1\\bang-chung\\kiem-muc-gia\\gia-20261023-r1\\original-results.bin",
+      "bytes": 26508,
+      "sha256": "495901757415d39f24b4ed181e669be9593ae74e2cf877ed0d838098897458f9"
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-1\\bang-chung\\kiem-muc-gia\\gia-20261023-r1\\original-run.json",
+      "bytes": 386,
+      "sha256": "a517be5e1a35a18f2da8edb7fe15439c8c5b3bbecf8a003bd356137220eb5306"
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-1\\bang-chung\\captures\\luot-20261023-r1\\0000023e5aa10000.bin",
+      "bytes": 323584,
+      "sha256": "e099f124084093c3fdc8651d5f5326709b165248982e5d4eb7394afcbb8177a4"
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-1\\bang-chung\\captures\\luot-20261023-r1\\0000023e5aa5f000-program-data.bin",
+      "bytes": 135168,
+      "sha256": "2ad9ad0ea90a8f8df88170348a71a070d475174122c9eae7df8deb1fb32c61f4"
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-1\\bang-chung\\captures\\luot-20261023-r1\\00007ffa1b990000.bin",
+      "bytes": 4096,
+      "sha256": "2233cd222526170e3ac45cca5e2acb4c4ad3070cd113da99f91f412f6c558438"
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-1\\bang-chung\\captures\\luot-20261023-r1\\00007ffa1b991000.bin",
+      "bytes": 4096,
+      "sha256": "ad7facb2586fc6e966c004d7d1d16b024f5805ff7cb47c7a85dabd8b48892ca7"
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-1\\bang-chung\\captures\\luot-20261023-r1\\capture.json",
+      "bytes": 2039,
+      "sha256": "81a7c83f595c9869d6ea278f155f10a17b97f5178d9c9c541a2ed41bcdcb956d"
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-1\\bang-chung\\bien-dich\\b1-price-levels-01\\bien-nhan.json",
+      "bytes": 683,
+      "sha256": "74cc38f5b95e6b24275f841beee5f8af3efd4572808a18a1cd4358d6e72e30a7"
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-1\\bang-chung\\bien-dich\\b1-price-levels-01\\metaeditor.log",
+      "bytes": 25438,
+      "sha256": "3deb8661f9cf81336f4dfc3b19c9ccb2f36e0b51d331ea9d966b3be97088c7be"
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-1\\bang-chung\\bien-dich\\b1-price-levels-02\\bien-nhan.json",
+      "bytes": 778,
+      "sha256": "f7703ed61b8e6b79f5257c8a57e8eabc548b3453cd289a72860c403affe1b8fa"
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-1\\bang-chung\\bien-dich\\b1-price-levels-02\\Bot1PriceLevelsCheck.ex5",
+      "bytes": 10356,
+      "sha256": "f5886c907a9a6e9e6e3c419125d278f1b8258c1f8b7b6c08e572db589804f1b9"
+    },
+    {
+      "path": "dich-nguoc\\khoi-phuc\\bot-cua-toi-1\\bang-chung\\bien-dich\\b1-price-levels-02\\metaeditor.log",
+      "bytes": 3890,
+      "sha256": "2c0184f45ea0fe866aa2c74cee37d5518e6124c57402471e3621ead1d1cf30b9"
+    }
+  ],
+  "retained_working_directory": "dich-nguoc/khoi-phuc/tam-bot1-3-20261023",
+  "purpose": "Ghidra projects retained for continued analysis; not MQL5 source.",
+  "superseded_metadata_retained": "bot-cua-toi-1/phan-tich/luot-20261023-data; unused, deletion blocked by automatic review."
+}

@@ -1,0 +1,1581 @@
+[
+  {
+    "rva": "0x0",
+    "address": "17156250000",
+    "c_file": "ma-trung-gian-day-du.c",
+    "c_line": 7,
+    "decompiled": true,
+    "native_calls": [],
+    "internal_calls": [
+      "17156250000"
+    ],
+    "chars": 463
+  },
+  {
+    "rva": "0x60",
+    "address": "17156250060",
+    "c_file": "ma-trung-gian-day-du.c",
+    "c_line": 31,
+    "decompiled": true,
+    "native_calls": [],
+    "internal_calls": [
+      "17156250060"
+    ],
+    "chars": 2924
+  },
+  {
+    "rva": "0x1e0",
+    "address": "171562501e0",
+    "c_file": "ma-trung-gian-day-du.c",
+    "c_line": 130,
+    "decompiled": true,
+    "native_calls": [],
+    "internal_calls": [
+      "171562501e0"
+    ],
+    "chars": 2795
+  },
+  {
+    "rva": "0x3c0",
+    "address": "171562503c0",
+    "c_file": "ma-trung-gian-day-du.c",
+    "c_line": 238,
+    "decompiled": true,
+    "native_calls": [],
+    "internal_calls": [
+      "171562503c0"
+    ],
+    "chars": 1771
+  },
+  {
+    "rva": "0x4a0",
+    "address": "171562504a0",
+    "c_file": "ma-trung-gian-day-du.c",
+    "c_line": 314,
+    "decompiled": true,
+    "native_calls": [],
+    "internal_calls": [
+      "17156250060",
+      "171562504a0"
+    ],
+    "chars": 1889
+  },
+  {
+    "rva": "0x5c0",
+    "address": "171562505c0",
+    "c_file": "ma-trung-gian-day-du.c",
+    "c_line": 390,
+    "decompiled": true,
+    "native_calls": [],
+    "internal_calls": [
+      "171562505c0"
+    ],
+    "chars": 3391
+  },
+  {
+    "rva": "0x7e0",
+    "address": "171562507e0",
+    "c_file": "ma-trung-gian-day-du.c",
+    "c_line": 514,
+    "decompiled": true,
+    "native_calls": [],
+    "internal_calls": [
+      "171562507e0"
+    ],
+    "chars": 1028
+  },
+  {
+    "rva": "0x8c0",
+    "address": "171562508c0",
+    "c_file": "ma-trung-gian-day-du.c",
+    "c_line": 557,
+    "decompiled": true,
+    "native_calls": [],
+    "internal_calls": [
+      "171562508c0"
+    ],
+    "chars": 226
+  },
+  {
+    "rva": "0x8e0",
+    "address": "171562508e0",
+    "c_file": "ma-trung-gian-day-du.c",
+    "c_line": 568,
+    "decompiled": true,
+    "native_calls": [],
+    "internal_calls": [
+      "171562508e0"
+    ],
+    "chars": 226
+  },
+  {
+    "rva": "0x900",
+    "address": "17156250900",
+    "c_file": "ma-trung-gian-day-du.c",
+    "c_line": 579,
+    "decompiled": true,
+    "native_calls": [],
+    "internal_calls": [
+      "17156250900"
+    ],
+    "chars": 47
+  },
+  {
+    "rva": "0x910",
+    "address": "17156250910",
+    "c_file": "ma-trung-gian-day-du.c",
+    "c_line": 589,
+    "decompiled": true,
+    "native_calls": [],
+    "internal_calls": [
+      "17156250910"
+    ],
+    "chars": 175
+  },
+  {
+    "rva": "0x950",
+    "address": "17156250950",
+    "c_file": "ma-trung-gian-day-du.c",
+    "c_line": 601,
+    "decompiled": true,
+    "native_calls": [
+      "MT5_Dispatch"
+    ],
+    "internal_calls": [
+      "17156250000",
+      "171562505c0",
+      "17156250950",
+      "1715627ecf0",
+      "1715627f6d0"
+    ],
+    "chars": 1619
+  },
+  {
+    "rva": "0xb60",
+    "address": "17156250b60",
+    "c_file": "ma-trung-gian-day-du.c",
+    "c_line": 663,
+    "decompiled": true,
+    "native_calls": [],
+    "internal_calls": [
+      "17156250000",
+      "17156250b60"
+    ],
+    "chars": 346
+  },
+  {
+    "rva": "0xbd0",
+    "address": "17156250bd0",
+    "c_file": "ma-trung-gian-day-du.c",
+    "c_line": 679,
+    "decompiled": true,
+    "native_calls": [],
+    "internal_calls": [
+      "17156250000",
+      "17156250bd0"
+    ],
+    "chars": 750
+  },
+  {
+    "rva": "0xc30",
+    "address": "17156250c30",
+    "c_file": "ma-trung-gian-day-du.c",
+    "c_line": 709,
+    "decompiled": true,
+    "native_calls": [
+      "MT5_AccountInfoDouble",
+      "MT5_AccountInfoInteger",
+      "MT5_Dispatch",
+      "MT5_HistoryDealGetDouble",
+      "MT5_HistoryDealGetInteger",
+      "MT5_HistoryDealGetTicket",
+      "MT5_HistoryDealsTotal",
+      "MT5_HistorySelect",
+      "MT5_IntegerToString",
+      "MT5_MQLInfoInteger",
+      "MT5_StringToInteger",
+      "MT5_SymbolInfoDouble",
+      "MT5_SymbolInfoInteger",
+      "MT5_TimeCurrent",
+      "MT5_iTime"
+    ],
+    "internal_calls": [
+      "17156250000",
+      "17156250060",
+      "171562501e0",
+      "171562505c0",
+      "17156250c30",
+      "171562561a0",
+      "17156256ad0",
+      "17156256f20",
+      "171562573b0",
+      "17156257c30",
+      "17156257e20",
+      "17156258300",
+      "1715625e0c0",
+      "1715625ef40",
+      "17156264fa0",
+      "17156266e80",
+      "17156281cd0",
+      "17156282090"
+    ],
+    "chars": 72709
+  },
+  {
+    "rva": "0x61a0",
+    "address": "171562561a0",
+    "c_file": "ma-trung-gian-day-du.c",
+    "c_line": 2735,
+    "decompiled": true,
+    "native_calls": [
+      "MT5_AccountInfoInteger",
+      "MT5_Dispatch"
+    ],
+    "internal_calls": [
+      "17156250000",
+      "17156250060",
+      "171562505c0",
+      "171562561a0",
+      "171562985e0",
+      "171562a5bc0"
+    ],
+    "chars": 8694
+  },
+  {
+    "rva": "0x6ad0",
+    "address": "17156256ad0",
+    "c_file": "ma-trung-gian-day-du.c",
+    "c_line": 3019,
+    "decompiled": true,
+    "native_calls": [
+      "MT5_TimeTradeServer"
+    ],
+    "internal_calls": [
+      "171562507e0",
+      "17156256ad0"
+    ],
+    "chars": 5944
+  },
+  {
+    "rva": "0x6f20",
+    "address": "17156256f20",
+    "c_file": "ma-trung-gian-day-du.c",
+    "c_line": 3231,
+    "decompiled": true,
+    "native_calls": [
+      "MT5_Dispatch",
+      "MT5_TimeTradeServer"
+    ],
+    "internal_calls": [
+      "171562507e0",
+      "17156256f20"
+    ],
+    "chars": 6119
+  },
+  {
+    "rva": "0x73b0",
+    "address": "171562573b0",
+    "c_file": "ma-trung-gian-day-du.c",
+    "c_line": 3448,
+    "decompiled": true,
+    "native_calls": [
+      "MT5_TimeTradeServer"
+    ],
+    "internal_calls": [
+      "17156250000",
+      "171562505c0",
+      "171562507e0",
+      "171562573b0"
+    ],
+    "chars": 11129
+  },
+  {
+    "rva": "0x7c30",
+    "address": "17156257c30",
+    "c_file": "ma-trung-gian-day-du.c",
+    "c_line": 3822,
+    "decompiled": true,
+    "native_calls": [
+      "MT5_TimeTradeServer"
+    ],
+    "internal_calls": [
+      "171562505c0",
+      "17156257c30"
+    ],
+    "chars": 3990
+  },
+  {
+    "rva": "0x7e20",
+    "address": "17156257e20",
+    "c_file": "ma-trung-gian-day-du.c",
+    "c_line": 3912,
+    "decompiled": true,
+    "native_calls": [
+      "MT5_Dispatch",
+      "MT5_StringToTime",
+      "MT5_TimeCurrent",
+      "MT5_TimeToStruct"
+    ],
+    "internal_calls": [
+      "17156250000",
+      "171562505c0",
+      "17156257e20"
+    ],
+    "chars": 3261
+  },
+  {
+    "rva": "0x8300",
+    "address": "17156258300",
+    "c_file": "ma-trung-gian-day-du.c",
+    "c_line": 4017,
+    "decompiled": true,
+    "native_calls": [
+      "MT5_AccountInfoString",
+      "MT5_iClose"
+    ],
+    "internal_calls": [
+      "17156250000",
+      "17156250060",
+      "171562505c0",
+      "17156258300"
+    ],
+    "chars": 117813
+  },
+  {
+    "rva": "0xe0c0",
+    "address": "1715625e0c0",
+    "c_file": "ma-trung-gian-day-du.c",
+    "c_line": 7238,
+    "decompiled": true,
+    "native_calls": [
+      "MT5_CopyBuffer",
+      "MT5_Dispatch",
+      "MT5_SymbolInfoDouble",
+      "MT5_SymbolInfoInteger",
+      "MT5_SymbolInfoTick",
+      "MT5_TimeCurrent",
+      "MT5_iOpen"
+    ],
+    "internal_calls": [
+      "171562505c0",
+      "1715625e0c0"
+    ],
+    "chars": 9397
+  },
+  {
+    "rva": "0xef40",
+    "address": "1715625ef40",
+    "c_file": "ma-trung-gian-day-du.c",
+    "c_line": 7483,
+    "decompiled": true,
+    "native_calls": [
+      "MT5_Dispatch",
+      "MT5_DoubleToString",
+      "MT5_IntegerToString",
+      "MT5_ObjectFind",
+      "MT5_ObjectSetInteger",
+      "MT5_ObjectSetString"
+    ],
+    "internal_calls": [
+      "17156250000",
+      "17156250060",
+      "171562505c0",
+      "17156257c30",
+      "1715625ef40",
+      "171562a3a10"
+    ],
+    "chars": 103346
+  },
+  {
+    "rva": "0x14fa0",
+    "address": "17156264fa0",
+    "c_file": "ma-trung-gian-day-du.c",
+    "c_line": 10227,
+    "decompiled": true,
+    "native_calls": [
+      "MT5_DoubleToString",
+      "MT5_IntegerToString",
+      "MT5_MQLInfoInteger",
+      "MT5_ObjectSetString",
+      "MT5_PositionGetDouble",
+      "MT5_PositionGetInteger",
+      "MT5_PositionGetString",
+      "MT5_PositionGetTicket",
+      "MT5_PositionSelectByTicket",
+      "MT5_PositionsTotal"
+    ],
+    "internal_calls": [
+      "17156250000",
+      "17156250060",
+      "171562505c0",
+      "17156257c30",
+      "17156264fa0"
+    ],
+    "chars": 39777
+  },
+  {
+    "rva": "0x16e80",
+    "address": "17156266e80",
+    "c_file": "ma-trung-gian-day-du.c",
+    "c_line": 11331,
+    "decompiled": true,
+    "native_calls": [
+      "MT5_DoubleToString",
+      "MT5_HistoryDealGetDouble",
+      "MT5_HistoryDealGetInteger",
+      "MT5_HistoryDealGetString",
+      "MT5_HistoryDealGetTicket",
+      "MT5_HistoryDealsTotal",
+      "MT5_HistorySelect",
+      "MT5_IntegerToString",
+      "MT5_MQLInfoInteger",
+      "MT5_ObjectSetString"
+    ],
+    "internal_calls": [
+      "17156250000",
+      "17156250060",
+      "171562505c0",
+      "17156266e80"
+    ],
+    "chars": 19764
+  },
+  {
+    "rva": "0x17f00",
+    "address": "17156267f00",
+    "c_file": "ma-trung-gian-day-du.c",
+    "c_line": 11905,
+    "decompiled": true,
+    "native_calls": [
+      "MT5_AccountInfoDouble",
+      "MT5_AccountInfoInteger",
+      "MT5_Dispatch",
+      "MT5_DoubleToString",
+      "MT5_HistoryDealGetDouble",
+      "MT5_HistoryDealGetInteger",
+      "MT5_HistoryDealGetTicket",
+      "MT5_HistoryDealsTotal",
+      "MT5_HistorySelect",
+      "MT5_IntegerToString",
+      "MT5_MQLInfoInteger",
+      "MT5_OrderGetInteger",
+      "MT5_OrderGetString",
+      "MT5_OrderGetTicket",
+      "MT5_OrdersTotal",
+      "MT5_PositionGetInteger",
+      "MT5_PositionGetTicket",
+      "MT5_PositionsTotal",
+      "MT5_StringToTime",
+      "MT5_TimeCurrent",
+      "MT5_TimeGMT",
+      "MT5_TimeToStruct",
+      "MT5_iTime"
+    ],
+    "internal_calls": [
+      "17156250000",
+      "17156250060",
+      "171562505c0",
+      "171562561a0",
+      "17156257e20",
+      "17156258300",
+      "1715625e0c0",
+      "17156264fa0",
+      "17156266e80",
+      "17156267f00",
+      "1715626fd00",
+      "17156270150",
+      "17156270bc0",
+      "17156270ef0",
+      "1715627a1c0",
+      "17156282450",
+      "1715628ce40",
+      "1715628d220",
+      "17156291780",
+      "171562a55e0"
+    ],
+    "chars": 117238
+  },
+  {
+    "rva": "0x1fd00",
+    "address": "1715626fd00",
+    "c_file": "ma-trung-gian-day-du.c",
+    "c_line": 14827,
+    "decompiled": true,
+    "native_calls": [
+      "MT5_Dispatch",
+      "MT5_DoubleToString",
+      "MT5_HistoryDealGetDouble",
+      "MT5_HistoryDealGetInteger",
+      "MT5_HistoryDealGetTicket",
+      "MT5_HistoryDealsTotal",
+      "MT5_HistorySelect",
+      "MT5_MQLInfoInteger",
+      "MT5_TimeCurrent"
+    ],
+    "internal_calls": [
+      "17156250000",
+      "171562505c0",
+      "1715626fd00"
+    ],
+    "chars": 3380
+  },
+  {
+    "rva": "0x20150",
+    "address": "17156270150",
+    "c_file": "ma-trung-gian-day-du.c",
+    "c_line": 14926,
+    "decompiled": true,
+    "native_calls": [
+      "MT5_Dispatch",
+      "MT5_StringToInteger",
+      "MT5_TimeCurrent",
+      "MT5_TimeToStruct"
+    ],
+    "internal_calls": [
+      "17156250000",
+      "17156250060",
+      "171562501e0",
+      "171562505c0",
+      "17156270150"
+    ],
+    "chars": 10037
+  },
+  {
+    "rva": "0x20bc0",
+    "address": "17156270bc0",
+    "c_file": "ma-trung-gian-day-du.c",
+    "c_line": 15263,
+    "decompiled": true,
+    "native_calls": [
+      "MT5_PositionGetInteger",
+      "MT5_PositionGetTicket",
+      "MT5_PositionsTotal"
+    ],
+    "internal_calls": [
+      "17156270bc0"
+    ],
+    "chars": 3893
+  },
+  {
+    "rva": "0x20ef0",
+    "address": "17156270ef0",
+    "c_file": "ma-trung-gian-day-du.c",
+    "c_line": 15390,
+    "decompiled": true,
+    "native_calls": [
+      "MT5_Dispatch",
+      "MT5_IntegerToString",
+      "MT5_MQLInfoInteger",
+      "MT5_OrderGetDouble",
+      "MT5_OrderGetInteger",
+      "MT5_OrderGetString",
+      "MT5_OrderGetTicket",
+      "MT5_OrdersTotal",
+      "MT5_PositionGetDouble",
+      "MT5_PositionGetInteger",
+      "MT5_PositionGetString",
+      "MT5_PositionGetTicket",
+      "MT5_PositionsTotal",
+      "MT5_StringToTime",
+      "MT5_SymbolInfoInteger",
+      "MT5_SymbolInfoTick",
+      "MT5_TimeCurrent",
+      "MT5_TimeToString",
+      "MT5_TimeToStruct",
+      "MT5_TimeTradeServer",
+      "MT5_iTime"
+    ],
+    "internal_calls": [
+      "17156250000",
+      "17156250060",
+      "171562504a0",
+      "171562505c0",
+      "17156256ad0",
+      "17156256f20",
+      "171562573b0",
+      "17156257c30",
+      "17156257e20",
+      "17156264fa0",
+      "17156266e80",
+      "17156270ef0",
+      "17156281cd0",
+      "17156282090",
+      "17156282450",
+      "17156282a90",
+      "17156282f60",
+      "17156287590",
+      "1715628bb10",
+      "1715628ca00",
+      "1715628cc20",
+      "1715628ce40",
+      "1715628d220",
+      "1715628d5f0",
+      "1715628d620",
+      "1715628d650",
+      "1715628da90",
+      "1715628dd60",
+      "1715628e040",
+      "1715628e270",
+      "1715628e490",
+      "1715628e580",
+      "1715628ee80",
+      "1715628f900",
+      "17156296ca0",
+      "17156297330",
+      "17156297380",
+      "171562975e0",
+      "17156297840"
+    ],
+    "chars": 164364
+  },
+  {
+    "rva": "0x2a1c0",
+    "address": "1715627a1c0",
+    "c_file": "ma-trung-gian-day-du.c",
+    "c_line": 19431,
+    "decompiled": true,
+    "native_calls": [
+      "MT5_HistoryDealGetDouble",
+      "MT5_HistoryDealGetInteger",
+      "MT5_HistoryDealGetString",
+      "MT5_HistoryDealGetTicket",
+      "MT5_HistoryDealsTotal",
+      "MT5_HistorySelect",
+      "MT5_MQLInfoInteger"
+    ],
+    "internal_calls": [
+      "17156250000",
+      "171562505c0",
+      "1715627a1c0",
+      "171562a57f0"
+    ],
+    "chars": 7504
+  },
+  {
+    "rva": "0x2a800",
+    "address": "1715627a800",
+    "c_file": "ma-trung-gian-day-du.c",
+    "c_line": 19638,
+    "decompiled": true,
+    "native_calls": [
+      "MT5_IndicatorRelease",
+      "MT5_IntegerToString",
+      "MT5_ObjectDelete"
+    ],
+    "internal_calls": [
+      "17156250000",
+      "17156250060",
+      "171562505c0",
+      "1715627a800"
+    ],
+    "chars": 25937
+  },
+  {
+    "rva": "0x2bb80",
+    "address": "1715627bb80",
+    "c_file": "ma-trung-gian-day-du.c",
+    "c_line": 20365,
+    "decompiled": true,
+    "native_calls": [
+      "MT5_AccountInfoInteger",
+      "MT5_MQLInfoInteger"
+    ],
+    "internal_calls": [
+      "17156250000",
+      "171562505c0",
+      "1715627bb80"
+    ],
+    "chars": 18959
+  },
+  {
+    "rva": "0x2dd30",
+    "address": "1715627dd30",
+    "c_file": "ma-trung-gian-day-du.c",
+    "c_line": 20921,
+    "decompiled": true,
+    "native_calls": [],
+    "internal_calls": [
+      "17156250000",
+      "1715627dd30"
+    ],
+    "chars": 5783
+  },
+  {
+    "rva": "0x2e300",
+    "address": "1715627e300",
+    "c_file": "ma-trung-gian-day-du.c",
+    "c_line": 21065,
+    "decompiled": true,
+    "native_calls": [],
+    "internal_calls": [
+      "1715627e300"
+    ],
+    "chars": 254
+  },
+  {
+    "rva": "0x2e330",
+    "address": "1715627e330",
+    "c_file": "ma-trung-gian-day-du.c",
+    "c_line": 21080,
+    "decompiled": true,
+    "native_calls": [],
+    "internal_calls": [
+      "17156250000",
+      "1715627e330"
+    ],
+    "chars": 164
+  },
+  {
+    "rva": "0x2e370",
+    "address": "1715627e370",
+    "c_file": "ma-trung-gian-day-du.c",
+    "c_line": 21093,
+    "decompiled": true,
+    "native_calls": [
+      "MT5_Dispatch",
+      "MT5_PositionGetDouble",
+      "MT5_PositionGetInteger",
+      "MT5_PositionGetString",
+      "MT5_PositionSelectByTicket",
+      "MT5_SymbolInfoDouble"
+    ],
+    "internal_calls": [
+      "17156250000",
+      "171562505c0",
+      "17156250950",
+      "1715627e370",
+      "1715627e8f0"
+    ],
+    "chars": 4241
+  },
+  {
+    "rva": "0x2e8f0",
+    "address": "1715627e8f0",
+    "c_file": "ma-trung-gian-day-du.c",
+    "c_line": 21231,
+    "decompiled": true,
+    "native_calls": [
+      "MT5_Dispatch",
+      "MT5_SymbolInfoInteger",
+      "MT5_SymbolInfoIntegerRef"
+    ],
+    "internal_calls": [
+      "17156250000",
+      "171562505c0",
+      "1715627e8f0"
+    ],
+    "chars": 3927
+  },
+  {
+    "rva": "0x2ecf0",
+    "address": "1715627ecf0",
+    "c_file": "ma-trung-gian-day-du.c",
+    "c_line": 21383,
+    "decompiled": true,
+    "native_calls": [
+      "MT5_Dispatch",
+      "MT5_DoubleToString",
+      "MT5_SymbolInfoIntegerRef"
+    ],
+    "internal_calls": [
+      "17156250000",
+      "17156250060",
+      "171562505c0",
+      "1715627ecf0"
+    ],
+    "chars": 10121
+  },
+  {
+    "rva": "0x2f6d0",
+    "address": "1715627f6d0",
+    "c_file": "ma-trung-gian-day-du.c",
+    "c_line": 21690,
+    "decompiled": true,
+    "native_calls": [
+      "MT5_Dispatch",
+      "MT5_DoubleToString",
+      "MT5_SymbolInfoIntegerRef"
+    ],
+    "internal_calls": [
+      "17156250000",
+      "17156250060",
+      "171562504a0",
+      "171562505c0",
+      "1715627f6d0",
+      "17156281790",
+      "17156281a90"
+    ],
+    "chars": 23767
+  },
+  {
+    "rva": "0x31790",
+    "address": "17156281790",
+    "c_file": "ma-trung-gian-day-du.c",
+    "c_line": 22270,
+    "decompiled": true,
+    "native_calls": [],
+    "internal_calls": [
+      "17156250000",
+      "17156250060",
+      "171562505c0",
+      "17156281790"
+    ],
+    "chars": 3690
+  },
+  {
+    "rva": "0x31a90",
+    "address": "17156281a90",
+    "c_file": "ma-trung-gian-day-du.c",
+    "c_line": 22404,
+    "decompiled": true,
+    "native_calls": [
+      "MT5_Dispatch",
+      "MT5_DoubleToString"
+    ],
+    "internal_calls": [
+      "17156250000",
+      "171562505c0",
+      "17156281a90"
+    ],
+    "chars": 1563
+  },
+  {
+    "rva": "0x31cd0",
+    "address": "17156281cd0",
+    "c_file": "ma-trung-gian-day-du.c",
+    "c_line": 22458,
+    "decompiled": true,
+    "native_calls": [
+      "MT5_SymbolInfoInteger",
+      "MT5_iHigh"
+    ],
+    "internal_calls": [
+      "17156281cd0",
+      "17156297380"
+    ],
+    "chars": 3822
+  },
+  {
+    "rva": "0x32090",
+    "address": "17156282090",
+    "c_file": "ma-trung-gian-day-du.c",
+    "c_line": 22562,
+    "decompiled": true,
+    "native_calls": [
+      "MT5_SymbolInfoInteger",
+      "MT5_iLow"
+    ],
+    "internal_calls": [
+      "17156282090",
+      "171562975e0"
+    ],
+    "chars": 3811
+  },
+  {
+    "rva": "0x32450",
+    "address": "17156282450",
+    "c_file": "ma-trung-gian-day-du.c",
+    "c_line": 22666,
+    "decompiled": true,
+    "native_calls": [
+      "MT5_Dispatch",
+      "MT5_OrderGetDouble",
+      "MT5_OrderGetInteger",
+      "MT5_OrderGetString",
+      "MT5_OrderSelect",
+      "MT5_SymbolInfoDouble",
+      "MT5_SymbolInfoInteger",
+      "MT5_SymbolInfoTick"
+    ],
+    "internal_calls": [
+      "17156250000",
+      "171562505c0",
+      "17156250950",
+      "17156282450"
+    ],
+    "chars": 4679
+  },
+  {
+    "rva": "0x32a90",
+    "address": "17156282a90",
+    "c_file": "ma-trung-gian-day-du.c",
+    "c_line": 22819,
+    "decompiled": true,
+    "native_calls": [
+      "MT5_Dispatch",
+      "MT5_PositionGetString",
+      "MT5_PositionSelectByTicket"
+    ],
+    "internal_calls": [
+      "17156250000",
+      "171562505c0",
+      "17156250950",
+      "17156282a90"
+    ],
+    "chars": 3650
+  },
+  {
+    "rva": "0x32f60",
+    "address": "17156282f60",
+    "c_file": "ma-trung-gian-day-du.c",
+    "c_line": 22943,
+    "decompiled": true,
+    "native_calls": [
+      "MT5_Dispatch",
+      "MT5_PositionGetDouble",
+      "MT5_PositionGetInteger",
+      "MT5_PositionGetString",
+      "MT5_PositionGetTicket",
+      "MT5_PositionsTotal",
+      "MT5_SymbolInfoDouble",
+      "MT5_SymbolInfoInteger",
+      "MT5_SymbolInfoTick",
+      "MT5_TimeCurrent",
+      "MT5_iClose",
+      "MT5_iOpen",
+      "MT5_iTime"
+    ],
+    "internal_calls": [
+      "17156250000",
+      "171562504a0",
+      "171562505c0",
+      "17156282a90",
+      "17156282f60",
+      "1715628ee80",
+      "17156297d20",
+      "17156297f10",
+      "171562982b0",
+      "171562984c0",
+      "17156298560"
+    ],
+    "chars": 70201
+  },
+  {
+    "rva": "0x37590",
+    "address": "17156287590",
+    "c_file": "ma-trung-gian-day-du.c",
+    "c_line": 24295,
+    "decompiled": true,
+    "native_calls": [
+      "MT5_Dispatch",
+      "MT5_PositionGetDouble",
+      "MT5_PositionGetInteger",
+      "MT5_PositionGetString",
+      "MT5_PositionGetTicket",
+      "MT5_PositionsTotal",
+      "MT5_SymbolInfoDouble",
+      "MT5_SymbolInfoInteger",
+      "MT5_SymbolInfoTick",
+      "MT5_TimeCurrent",
+      "MT5_iClose",
+      "MT5_iOpen",
+      "MT5_iTime"
+    ],
+    "internal_calls": [
+      "17156250000",
+      "17156250060",
+      "171562504a0",
+      "171562505c0",
+      "17156282a90",
+      "17156287590",
+      "1715628ee80",
+      "17156297d20",
+      "17156297f10",
+      "171562982b0",
+      "171562984c0",
+      "17156298560"
+    ],
+    "chars": 66288
+  },
+  {
+    "rva": "0x3bb10",
+    "address": "1715628bb10",
+    "c_file": "ma-trung-gian-day-du.c",
+    "c_line": 25736,
+    "decompiled": true,
+    "native_calls": [
+      "MT5_Dispatch"
+    ],
+    "internal_calls": [
+      "17156250000",
+      "17156250060",
+      "171562505c0",
+      "1715628bb10",
+      "1715628e580",
+      "1715628ee80"
+    ],
+    "chars": 14318
+  },
+  {
+    "rva": "0x3ca00",
+    "address": "1715628ca00",
+    "c_file": "ma-trung-gian-day-du.c",
+    "c_line": 26094,
+    "decompiled": true,
+    "native_calls": [
+      "MT5_OrderGetDouble",
+      "MT5_OrderGetInteger",
+      "MT5_OrderGetString",
+      "MT5_OrderGetTicket",
+      "MT5_OrdersTotal"
+    ],
+    "internal_calls": [
+      "17156250000",
+      "171562505c0",
+      "17156282450",
+      "1715628ca00"
+    ],
+    "chars": 1990
+  },
+  {
+    "rva": "0x3cc20",
+    "address": "1715628cc20",
+    "c_file": "ma-trung-gian-day-du.c",
+    "c_line": 26165,
+    "decompiled": true,
+    "native_calls": [
+      "MT5_OrderGetDouble",
+      "MT5_OrderGetInteger",
+      "MT5_OrderGetString",
+      "MT5_OrderGetTicket",
+      "MT5_OrdersTotal"
+    ],
+    "internal_calls": [
+      "17156250000",
+      "171562505c0",
+      "17156282450",
+      "1715628cc20"
+    ],
+    "chars": 1990
+  },
+  {
+    "rva": "0x3ce40",
+    "address": "1715628ce40",
+    "c_file": "ma-trung-gian-day-du.c",
+    "c_line": 26236,
+    "decompiled": true,
+    "native_calls": [
+      "MT5_PositionGetDouble",
+      "MT5_PositionGetInteger",
+      "MT5_PositionGetString",
+      "MT5_PositionGetTicket",
+      "MT5_PositionsTotal"
+    ],
+    "internal_calls": [
+      "17156250000",
+      "171562505c0",
+      "1715628ce40",
+      "17156297d20"
+    ],
+    "chars": 4303
+  },
+  {
+    "rva": "0x3d220",
+    "address": "1715628d220",
+    "c_file": "ma-trung-gian-day-du.c",
+    "c_line": 26352,
+    "decompiled": true,
+    "native_calls": [
+      "MT5_PositionGetDouble",
+      "MT5_PositionGetInteger",
+      "MT5_PositionGetString",
+      "MT5_PositionGetTicket",
+      "MT5_PositionsTotal"
+    ],
+    "internal_calls": [
+      "17156250000",
+      "171562505c0",
+      "1715628d220",
+      "17156297d20"
+    ],
+    "chars": 4303
+  },
+  {
+    "rva": "0x3d5f0",
+    "address": "1715628d5f0",
+    "c_file": "ma-trung-gian-day-du.c",
+    "c_line": 26468,
+    "decompiled": true,
+    "native_calls": [
+      "MT5_TimeCurrent"
+    ],
+    "internal_calls": [
+      "1715628d5f0"
+    ],
+    "chars": 146
+  },
+  {
+    "rva": "0x3d620",
+    "address": "1715628d620",
+    "c_file": "ma-trung-gian-day-du.c",
+    "c_line": 26481,
+    "decompiled": true,
+    "native_calls": [
+      "MT5_TimeCurrent"
+    ],
+    "internal_calls": [
+      "1715628d620"
+    ],
+    "chars": 166
+  },
+  {
+    "rva": "0x3d650",
+    "address": "1715628d650",
+    "c_file": "ma-trung-gian-day-du.c",
+    "c_line": 26495,
+    "decompiled": true,
+    "native_calls": [
+      "MT5_Dispatch",
+      "MT5_OrderGetInteger",
+      "MT5_OrderGetString",
+      "MT5_OrderGetTicket",
+      "MT5_OrdersTotal"
+    ],
+    "internal_calls": [
+      "17156250000",
+      "171562505c0",
+      "17156282450",
+      "1715628ce40",
+      "1715628d220",
+      "1715628d650"
+    ],
+    "chars": 4504
+  },
+  {
+    "rva": "0x3da90",
+    "address": "1715628da90",
+    "c_file": "ma-trung-gian-day-du.c",
+    "c_line": 26616,
+    "decompiled": true,
+    "native_calls": [
+      "MT5_Dispatch",
+      "MT5_OrderGetDouble",
+      "MT5_OrderGetInteger",
+      "MT5_OrderGetString",
+      "MT5_OrderGetTicket",
+      "MT5_OrdersTotal"
+    ],
+    "internal_calls": [
+      "17156250000",
+      "171562505c0",
+      "17156282450",
+      "1715628da90"
+    ],
+    "chars": 2902
+  },
+  {
+    "rva": "0x3dd60",
+    "address": "1715628dd60",
+    "c_file": "ma-trung-gian-day-du.c",
+    "c_line": 26713,
+    "decompiled": true,
+    "native_calls": [
+      "MT5_Dispatch",
+      "MT5_OrderGetDouble",
+      "MT5_OrderGetInteger",
+      "MT5_OrderGetString",
+      "MT5_OrderGetTicket",
+      "MT5_OrdersTotal"
+    ],
+    "internal_calls": [
+      "17156250000",
+      "171562505c0",
+      "17156282450",
+      "1715628dd60"
+    ],
+    "chars": 2975
+  },
+  {
+    "rva": "0x3e040",
+    "address": "1715628e040",
+    "c_file": "ma-trung-gian-day-du.c",
+    "c_line": 26810,
+    "decompiled": true,
+    "native_calls": [
+      "MT5_SymbolInfoInteger",
+      "MT5_iHigh"
+    ],
+    "internal_calls": [
+      "1715628e040"
+    ],
+    "chars": 1782
+  },
+  {
+    "rva": "0x3e270",
+    "address": "1715628e270",
+    "c_file": "ma-trung-gian-day-du.c",
+    "c_line": 26864,
+    "decompiled": true,
+    "native_calls": [
+      "MT5_SymbolInfoInteger",
+      "MT5_iLow"
+    ],
+    "internal_calls": [
+      "1715628e270"
+    ],
+    "chars": 1731
+  },
+  {
+    "rva": "0x3e490",
+    "address": "1715628e490",
+    "c_file": "ma-trung-gian-day-du.c",
+    "c_line": 26916,
+    "decompiled": true,
+    "native_calls": [
+      "MT5_OrdersTotal",
+      "MT5_PositionGetTicket"
+    ],
+    "internal_calls": [
+      "1715628e490"
+    ],
+    "chars": 915
+  },
+  {
+    "rva": "0x3e580",
+    "address": "1715628e580",
+    "c_file": "ma-trung-gian-day-du.c",
+    "c_line": 26963,
+    "decompiled": true,
+    "native_calls": [
+      "MT5_Dispatch",
+      "MT5_SymbolInfoInteger",
+      "MT5_SymbolInfoIntegerRef"
+    ],
+    "internal_calls": [
+      "17156250000",
+      "171562505c0",
+      "17156250950",
+      "1715627e8f0",
+      "1715628e580"
+    ],
+    "chars": 6646
+  },
+  {
+    "rva": "0x3ee80",
+    "address": "1715628ee80",
+    "c_file": "ma-trung-gian-day-du.c",
+    "c_line": 27201,
+    "decompiled": true,
+    "native_calls": [],
+    "internal_calls": [
+      "17156250000",
+      "171562504a0",
+      "171562505c0",
+      "1715628ee80"
+    ],
+    "chars": 12782
+  },
+  {
+    "rva": "0x3f900",
+    "address": "1715628f900",
+    "c_file": "ma-trung-gian-day-du.c",
+    "c_line": 27770,
+    "decompiled": true,
+    "native_calls": [
+      "MT5_AccountInfoDouble",
+      "MT5_Dispatch",
+      "MT5_SymbolInfoDouble"
+    ],
+    "internal_calls": [
+      "17156250000",
+      "17156250060",
+      "171562505c0",
+      "17156258300",
+      "1715626fd00",
+      "1715628f900",
+      "17156291780"
+    ],
+    "chars": 28037
+  },
+  {
+    "rva": "0x41780",
+    "address": "17156291780",
+    "c_file": "ma-trung-gian-day-du.c",
+    "c_line": 28458,
+    "decompiled": true,
+    "native_calls": [
+      "MT5_AccountInfoString",
+      "MT5_iClose"
+    ],
+    "internal_calls": [
+      "17156250000",
+      "17156250060",
+      "171562505c0",
+      "17156291780"
+    ],
+    "chars": 99759
+  },
+  {
+    "rva": "0x46ca0",
+    "address": "17156296ca0",
+    "c_file": "ma-trung-gian-day-du.c",
+    "c_line": 31354,
+    "decompiled": true,
+    "native_calls": [
+      "MT5_Dispatch",
+      "MT5_SymbolInfoDouble"
+    ],
+    "internal_calls": [
+      "17156250000",
+      "17156250060",
+      "171562505c0",
+      "17156296ca0"
+    ],
+    "chars": 7535
+  },
+  {
+    "rva": "0x47330",
+    "address": "17156297330",
+    "c_file": "ma-trung-gian-day-du.c",
+    "c_line": 31575,
+    "decompiled": true,
+    "native_calls": [
+      "MT5_AccountInfoInteger",
+      "MT5_OrdersTotal"
+    ],
+    "internal_calls": [
+      "17156297330"
+    ],
+    "chars": 260
+  },
+  {
+    "rva": "0x47380",
+    "address": "17156297380",
+    "c_file": "ma-trung-gian-day-du.c",
+    "c_line": 31593,
+    "decompiled": true,
+    "native_calls": [
+      "MT5_OrderGetDouble",
+      "MT5_OrderGetInteger",
+      "MT5_OrderGetString",
+      "MT5_OrderGetTicket",
+      "MT5_OrdersTotal"
+    ],
+    "internal_calls": [
+      "17156250000",
+      "171562505c0",
+      "17156297380"
+    ],
+    "chars": 2286
+  },
+  {
+    "rva": "0x475e0",
+    "address": "171562975e0",
+    "c_file": "ma-trung-gian-day-du.c",
+    "c_line": 31672,
+    "decompiled": true,
+    "native_calls": [
+      "MT5_OrderGetDouble",
+      "MT5_OrderGetInteger",
+      "MT5_OrderGetString",
+      "MT5_OrderGetTicket",
+      "MT5_OrdersTotal"
+    ],
+    "internal_calls": [
+      "17156250000",
+      "171562505c0",
+      "171562975e0"
+    ],
+    "chars": 2286
+  },
+  {
+    "rva": "0x47840",
+    "address": "17156297840",
+    "c_file": "ma-trung-gian-day-du.c",
+    "c_line": 31751,
+    "decompiled": true,
+    "native_calls": [
+      "MT5_AccountInfoDouble",
+      "MT5_AccountInfoString",
+      "MT5_Dispatch"
+    ],
+    "internal_calls": [
+      "17156250000",
+      "171562505c0",
+      "17156297840",
+      "171562a3670"
+    ],
+    "chars": 4977
+  },
+  {
+    "rva": "0x47d20",
+    "address": "17156297d20",
+    "c_file": "ma-trung-gian-day-du.c",
+    "c_line": 31922,
+    "decompiled": true,
+    "native_calls": [
+      "MT5_PositionGetDouble",
+      "MT5_PositionGetInteger",
+      "MT5_PositionSelectByTicket"
+    ],
+    "internal_calls": [
+      "1715627e370",
+      "17156297d20"
+    ],
+    "chars": 1410
+  },
+  {
+    "rva": "0x47f10",
+    "address": "17156297f10",
+    "c_file": "ma-trung-gian-day-du.c",
+    "c_line": 31968,
+    "decompiled": true,
+    "native_calls": [
+      "MT5_Dispatch",
+      "MT5_PositionsTotal",
+      "MT5_SymbolInfoInteger"
+    ],
+    "internal_calls": [
+      "17156270bc0",
+      "17156297f10"
+    ],
+    "chars": 2768
+  },
+  {
+    "rva": "0x482b0",
+    "address": "171562982b0",
+    "c_file": "ma-trung-gian-day-du.c",
+    "c_line": 32053,
+    "decompiled": true,
+    "native_calls": [
+      "MT5_Dispatch",
+      "MT5_PositionsTotal"
+    ],
+    "internal_calls": [
+      "17156270bc0",
+      "171562982b0"
+    ],
+    "chars": 1619
+  },
+  {
+    "rva": "0x484c0",
+    "address": "171562984c0",
+    "c_file": "ma-trung-gian-day-du.c",
+    "c_line": 32113,
+    "decompiled": true,
+    "native_calls": [
+      "MT5_TimeCurrent"
+    ],
+    "internal_calls": [
+      "171562984c0"
+    ],
+    "chars": 801
+  },
+  {
+    "rva": "0x48560",
+    "address": "17156298560",
+    "c_file": "ma-trung-gian-day-du.c",
+    "c_line": 32142,
+    "decompiled": true,
+    "native_calls": [
+      "MT5_TimeCurrent"
+    ],
+    "internal_calls": [
+      "17156298560"
+    ],
+    "chars": 560
+  },
+  {
+    "rva": "0x485e0",
+    "address": "171562985e0",
+    "c_file": "ma-trung-gian-day-du.c",
+    "c_line": 32167,
+    "decompiled": true,
+    "native_calls": [
+      "MT5_AccountInfoInteger",
+      "MT5_AccountInfoString",
+      "MT5_MQLInfoInteger"
+    ],
+    "internal_calls": [
+      "17156250000",
+      "171562503c0",
+      "171562505c0",
+      "171562985e0"
+    ],
+    "chars": 167272
+  },
+  {
+    "rva": "0x53670",
+    "address": "171562a3670",
+    "c_file": "ma-trung-gian-day-du.c",
+    "c_line": 35799,
+    "decompiled": true,
+    "native_calls": [
+      "MT5_AccountInfoDouble",
+      "MT5_Dispatch",
+      "MT5_SymbolInfoTick"
+    ],
+    "internal_calls": [
+      "17156250000",
+      "171562501e0",
+      "171562a3670"
+    ],
+    "chars": 3434
+  },
+  {
+    "rva": "0x53a10",
+    "address": "171562a3a10",
+    "c_file": "ma-trung-gian-day-du.c",
+    "c_line": 35915,
+    "decompiled": true,
+    "native_calls": [
+      "MT5_Dispatch",
+      "MT5_IntegerToString",
+      "MT5_ObjectSetInteger",
+      "MT5_ObjectSetString"
+    ],
+    "internal_calls": [
+      "17156250000",
+      "17156250060",
+      "171562505c0",
+      "171562a3a10"
+    ],
+    "chars": 31379
+  },
+  {
+    "rva": "0x555e0",
+    "address": "171562a55e0",
+    "c_file": "ma-trung-gian-day-du.c",
+    "c_line": 36860,
+    "decompiled": true,
+    "native_calls": [
+      "MT5_IntegerToString",
+      "MT5_ObjectSetString"
+    ],
+    "internal_calls": [
+      "17156250000",
+      "17156250060",
+      "171562505c0",
+      "171562a55e0"
+    ],
+    "chars": 2465
+  },
+  {
+    "rva": "0x557f0",
+    "address": "171562a57f0",
+    "c_file": "ma-trung-gian-day-du.c",
+    "c_line": 36955,
+    "decompiled": true,
+    "native_calls": [],
+    "internal_calls": [
+      "171562a57f0"
+    ],
+    "chars": 5015
+  },
+  {
+    "rva": "0x55bc0",
+    "address": "171562a5bc0",
+    "c_file": "ma-trung-gian-day-du.c",
+    "c_line": 37109,
+    "decompiled": true,
+    "native_calls": [
+      "MT5_Dispatch"
+    ],
+    "internal_calls": [
+      "17156250000",
+      "17156250060",
+      "171562505c0",
+      "171562a5bc0"
+    ],
+    "chars": 15115
+  }
+]

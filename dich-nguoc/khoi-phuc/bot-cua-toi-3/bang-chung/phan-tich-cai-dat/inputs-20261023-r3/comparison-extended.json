@@ -1,0 +1,6575 @@
+{
+  "bot": 3,
+  "cases": 9,
+  "fields": 80,
+  "checks": 720,
+  "matched": 720,
+  "passed": true,
+  "failures": [],
+  "rows": [
+    {
+      "case": "defaults",
+      "name": "lijntje",
+      "rva": "0x1d6f18",
+      "logged": "=============================================================",
+      "actual": true,
+      "matched": true
+    },
+    {
+      "case": "defaults",
+      "name": "UseVariableValues",
+      "rva": "0x1d6f28",
+      "logged": "true",
+      "actual": 1,
+      "matched": true
+    },
+    {
+      "case": "defaults",
+      "name": "AdjustLotsizeToVariableValues",
+      "rva": "0x1d6f30",
+      "logged": "true",
+      "actual": 1,
+      "matched": true
+    },
+    {
+      "case": "defaults",
+      "name": "ShowInfoPanel",
+      "rva": "0x1d6f38",
+      "logged": "true",
+      "actual": 1,
+      "matched": true
+    },
+    {
+      "case": "defaults",
+      "name": "UpdateInfoTesting",
+      "rva": "0x1d6f40",
+      "logged": "false",
+      "actual": 0,
+      "matched": true
+    },
+    {
+      "case": "defaults",
+      "name": "InfoPanelSizeAdjust",
+      "rva": "0x1d6f48",
+      "logged": "1.0",
+      "actual": 1.0,
+      "matched": true
+    },
+    {
+      "case": "defaults",
+      "name": "SetFontSize",
+      "rva": "0x1d6f50",
+      "logged": "0",
+      "actual": 0,
+      "matched": true
+    },
+    {
+      "case": "defaults",
+      "name": "BacktestSpeed_string",
+      "rva": "0x1d6f58",
+      "logged": "------------------------------ Backtest Speed settings ------------------------------",
+      "actual": true,
+      "matched": true
+    },
+    {
+      "case": "defaults",
+      "name": "BacktestSpeed",
+      "rva": "0x1d6f68",
+      "logged": "1",
+      "actual": 1,
+      "matched": true
+    },
+    {
+      "case": "defaults",
+      "name": "spreadfilter",
+      "rva": "0x1d6f70",
+      "logged": "------------------------------ settings ------------------------------",
+      "actual": true,
+      "matched": true
+    },
+    {
+      "case": "defaults",
+      "name": "AllowBuyTrades",
+      "rva": "0x1d6f80",
+      "logged": "true",
+      "actual": 1,
+      "matched": true
+    },
+    {
+      "case": "defaults",
+      "name": "AllowSellTrades",
+      "rva": "0x1d6f88",
+      "logged": "true",
+      "actual": 1,
+      "matched": true
+    },
+    {
+      "case": "defaults",
+      "name": "TradeFrequency",
+      "rva": "0x1d6f90",
+      "logged": "5",
+      "actual": 5,
+      "matched": true
+    },
+    {
+      "case": "defaults",
+      "name": "MaxSpread",
+      "rva": "0x1d6f98",
+      "logged": "500.0",
+      "actual": 500.0,
+      "matched": true
+    },
+    {
+      "case": "defaults",
+      "name": "UseHL_TrailingSL",
+      "rva": "0x1d6fa0",
+      "logged": "true",
+      "actual": 1,
+      "matched": true
+    },
+    {
+      "case": "defaults",
+      "name": "FridayStopHour",
+      "rva": "0x1d6fa8",
+      "logged": "25",
+      "actual": 25,
+      "matched": true
+    },
+    {
+      "case": "defaults",
+      "name": "FridayClosePending",
+      "rva": "0x1d6fb0",
+      "logged": "true",
+      "actual": 1,
+      "matched": true
+    },
+    {
+      "case": "defaults",
+      "name": "FridayCloseOpen",
+      "rva": "0x1d6fb8",
+      "logged": "true",
+      "actual": 1,
+      "matched": true
+    },
+    {
+      "case": "defaults",
+      "name": "setSL_TP_After_Entry",
+      "rva": "0x1d6fc0",
+      "logged": "false",
+      "actual": 0,
+      "matched": true
+    },
+    {
+      "case": "defaults",
+      "name": "Virtual_expiration",
+      "rva": "0x1d6fc8",
+      "logged": "true",
+      "actual": 1,
+      "matched": true
+    },
+    {
+      "case": "defaults",
+      "name": "Randomization",
+      "rva": "0x1d6fd0",
+      "logged": "0.0",
+      "actual": 0.0,
+      "matched": true
+    },
+    {
+      "case": "defaults",
+      "name": "FakeOutFilter",
+      "rva": "0x1d6fd8",
+      "logged": "2",
+      "actual": 2,
+      "matched": true
+    },
+    {
+      "case": "defaults",
+      "name": "EnableVirtualSLTP",
+      "rva": "0x1d6fe0",
+      "logged": "false",
+      "actual": 0,
+      "matched": true
+    },
+    {
+      "case": "defaults",
+      "name": "SetVSL_to_hardSL_sec_delay",
+      "rva": "0x1d6fe8",
+      "logged": "99",
+      "actual": 99,
+      "matched": true
+    },
+    {
+      "case": "defaults",
+      "name": "ST1_MagicNumber",
+      "rva": "0x1d6ff0",
+      "logged": "8000",
+      "actual": 8000,
+      "matched": true
+    },
+    {
+      "case": "defaults",
+      "name": "ST1_Comment",
+      "rva": "0x1d6ff8",
+      "logged": "The Gold Reaper",
+      "actual": true,
+      "matched": true
+    },
+    {
+      "case": "defaults",
+      "name": "RemoveCommentSuffix",
+      "rva": "0x1d7008",
+      "logged": "false",
+      "actual": 0,
+      "matched": true
+    },
+    {
+      "case": "defaults",
+      "name": "NFP_FILTER",
+      "rva": "0x1d7010",
+      "logged": "----------------------- NFP Filter -----------------------",
+      "actual": true,
+      "matched": true
+    },
+    {
+      "case": "defaults",
+      "name": "EnableNFP_Filter",
+      "rva": "0x1d7020",
+      "logged": "true",
+      "actual": 1,
+      "matched": true
+    },
+    {
+      "case": "defaults",
+      "name": "UseMQL5Calendar",
+      "rva": "0x1d7028",
+      "logged": "true",
+      "actual": 1,
+      "matched": true
+    },
+    {
+      "case": "defaults",
+      "name": "AutoGMT",
+      "rva": "0x1d7030",
+      "logged": "true",
+      "actual": 1,
+      "matched": true
+    },
+    {
+      "case": "defaults",
+      "name": "Broker_GMT_OFFSET_Winter",
+      "rva": "0x1d7038",
+      "logged": "2",
+      "actual": 2,
+      "matched": true
+    },
+    {
+      "case": "defaults",
+      "name": "Broker_GMT_OFFSET_Summer",
+      "rva": "0x1d7040",
+      "logged": "3",
+      "actual": 3,
+      "matched": true
+    },
+    {
+      "case": "defaults",
+      "name": "NFP_CloseOpenTrades",
+      "rva": "0x1d7048",
+      "logged": "true",
+      "actual": 1,
+      "matched": true
+    },
+    {
+      "case": "defaults",
+      "name": "NFP_ClosePendingOrders",
+      "rva": "0x1d7050",
+      "logged": "true",
+      "actual": 1,
+      "matched": true
+    },
+    {
+      "case": "defaults",
+      "name": "NFP_MinutesBefore",
+      "rva": "0x1d7058",
+      "logged": "100",
+      "actual": 100,
+      "matched": true
+    },
+    {
+      "case": "defaults",
+      "name": "NFP_MinutesAfter",
+      "rva": "0x1d7060",
+      "logged": "60",
+      "actual": 60,
+      "matched": true
+    },
+    {
+      "case": "defaults",
+      "name": "IR_FILTER",
+      "rva": "0x1d7068",
+      "logged": "----------------------- Interest Rate Filter -----------------------",
+      "actual": true,
+      "matched": true
+    },
+    {
+      "case": "defaults",
+      "name": "EnableIR_Filter",
+      "rva": "0x1d7078",
+      "logged": "false",
+      "actual": 0,
+      "matched": true
+    },
+    {
+      "case": "defaults",
+      "name": "IR_CloseOpenTrades",
+      "rva": "0x1d7080",
+      "logged": "true",
+      "actual": 1,
+      "matched": true
+    },
+    {
+      "case": "defaults",
+      "name": "IR_ClosePendingOrders",
+      "rva": "0x1d7088",
+      "logged": "true",
+      "actual": 1,
+      "matched": true
+    },
+    {
+      "case": "defaults",
+      "name": "IR_MinutesBefore",
+      "rva": "0x1d7090",
+      "logged": "100",
+      "actual": 100,
+      "matched": true
+    },
+    {
+      "case": "defaults",
+      "name": "IR_MinutesAfter",
+      "rva": "0x1d7098",
+      "logged": "60",
+      "actual": 60,
+      "matched": true
+    },
+    {
+      "case": "defaults",
+      "name": "CPI_FILTER",
+      "rva": "0x1d70a0",
+      "logged": "----------------------- CPI Filter -----------------------",
+      "actual": true,
+      "matched": true
+    },
+    {
+      "case": "defaults",
+      "name": "EnableCPI_Filter",
+      "rva": "0x1d70b0",
+      "logged": "false",
+      "actual": 0,
+      "matched": true
+    },
+    {
+      "case": "defaults",
+      "name": "CPI_CloseOpenTrades",
+      "rva": "0x1d70b8",
+      "logged": "true",
+      "actual": 1,
+      "matched": true
+    },
+    {
+      "case": "defaults",
+      "name": "CPI_ClosePendingOrders",
+      "rva": "0x1d70c0",
+      "logged": "true",
+      "actual": 1,
+      "matched": true
+    },
+    {
+      "case": "defaults",
+      "name": "CPI_MinutesBefore",
+      "rva": "0x1d70c8",
+      "logged": "100",
+      "actual": 100,
+      "matched": true
+    },
+    {
+      "case": "defaults",
+      "name": "CPI_MinutesAfter",
+      "rva": "0x1d70d0",
+      "logged": "60",
+      "actual": 60,
+      "matched": true
+    },
+    {
+      "case": "defaults",
+      "name": "propfirmsettings",
+      "rva": "0x1d70d8",
+      "logged": "----------------------- Propfirm unique trades settings -----------------------",
+      "actual": true,
+      "matched": true
+    },
+    {
+      "case": "defaults",
+      "name": "AdjustEntry",
+      "rva": "0x1d70e8",
+      "logged": "0.0",
+      "actual": 0.0,
+      "matched": true
+    },
+    {
+      "case": "defaults",
+      "name": "AdjustSL",
+      "rva": "0x1d70f0",
+      "logged": "0.0",
+      "actual": 0.0,
+      "matched": true
+    },
+    {
+      "case": "defaults",
+      "name": "AdjustTP",
+      "rva": "0x1d70f8",
+      "logged": "0.0",
+      "actual": 0.0,
+      "matched": true
+    },
+    {
+      "case": "defaults",
+      "name": "AdjustTrailSL",
+      "rva": "0x1d7100",
+      "logged": "0.0",
+      "actual": 0.0,
+      "matched": true
+    },
+    {
+      "case": "defaults",
+      "name": "AdjustTrailTP",
+      "rva": "0x1d7108",
+      "logged": "0.0",
+      "actual": 0.0,
+      "matched": true
+    },
+    {
+      "case": "defaults",
+      "name": "AdjustBreakEven",
+      "rva": "0x1d7110",
+      "logged": "0.0",
+      "actual": 0.0,
+      "matched": true
+    },
+    {
+      "case": "defaults",
+      "name": "LotSizeSettings",
+      "rva": "0x1d7118",
+      "logged": "----------------------- LotSize Settings -----------------------",
+      "actual": true,
+      "matched": true
+    },
+    {
+      "case": "defaults",
+      "name": "ManualBalance",
+      "rva": "0x1d7128",
+      "logged": "0.0",
+      "actual": 0.0,
+      "matched": true
+    },
+    {
+      "case": "defaults",
+      "name": "Risk",
+      "rva": "0x1d7130",
+      "logged": "1234",
+      "actual": 1234,
+      "matched": true
+    },
+    {
+      "case": "defaults",
+      "name": "StartLots",
+      "rva": "0x1d7138",
+      "logged": "0.01",
+      "actual": 0.01,
+      "matched": true
+    },
+    {
+      "case": "defaults",
+      "name": "MaxAllowedDD",
+      "rva": "0x1d7140",
+      "logged": "30.0",
+      "actual": 30.0,
+      "matched": true
+    },
+    {
+      "case": "defaults",
+      "name": "UseWeightedLots",
+      "rva": "0x1d7148",
+      "logged": "true",
+      "actual": 1,
+      "matched": true
+    },
+    {
+      "case": "defaults",
+      "name": "MaxRiskPerStrategy_",
+      "rva": "0x1d7150",
+      "logged": "1.0",
+      "actual": 1.0,
+      "matched": true
+    },
+    {
+      "case": "defaults",
+      "name": "PropFirmMaxDailyDD",
+      "rva": "0x1d7158",
+      "logged": "0.0",
+      "actual": 0.0,
+      "matched": true
+    },
+    {
+      "case": "defaults",
+      "name": "OnlyUp",
+      "rva": "0x1d7160",
+      "logged": "true",
+      "actual": 1,
+      "matched": true
+    },
+    {
+      "case": "defaults",
+      "name": "ResetHighestBalance",
+      "rva": "0x1d7168",
+      "logged": "false",
+      "actual": 0,
+      "matched": true
+    },
+    {
+      "case": "defaults",
+      "name": "ResetHighestBalanceOnWithdrawal",
+      "rva": "0x1d7170",
+      "logged": "true",
+      "actual": 1,
+      "matched": true
+    },
+    {
+      "case": "defaults",
+      "name": "CheckMargin",
+      "rva": "0x1d7178",
+      "logged": "true",
+      "actual": 1,
+      "matched": true
+    },
+    {
+      "case": "defaults",
+      "name": "UseEquity",
+      "rva": "0x1d7180",
+      "logged": "false",
+      "actual": 0,
+      "matched": true
+    },
+    {
+      "case": "defaults",
+      "name": "ManualStratSelect",
+      "rva": "0x1d7188",
+      "logged": "------------------------- Manual Strategy Selection -------------------------",
+      "actual": true,
+      "matched": true
+    },
+    {
+      "case": "defaults",
+      "name": "ManStratWarn",
+      "rva": "0x1d7198",
+      "logged": "!! DO NOT RUN MANUAL STRATEGIES WHILE USING 'MAX ALLOWED TOTAL DD' OPTION !! ",
+      "actual": true,
+      "matched": true
+    },
+    {
+      "case": "defaults",
+      "name": "RunStrat1",
+      "rva": "0x1d71a8",
+      "logged": "true",
+      "actual": 1,
+      "matched": true
+    },
+    {
+      "case": "defaults",
+      "name": "RunStrat2",
+      "rva": "0x1d71b0",
+      "logged": "true",
+      "actual": 1,
+      "matched": true
+    },
+    {
+      "case": "defaults",
+      "name": "RunStrat3",
+      "rva": "0x1d71b8",
+      "logged": "true",
+      "actual": 1,
+      "matched": true
+    },
+    {
+      "case": "defaults",
+      "name": "RunStrat4",
+      "rva": "0x1d71c0",
+      "logged": "true",
+      "actual": 1,
+      "matched": true
+    },
+    {
+      "case": "defaults",
+      "name": "RunStrat5",
+      "rva": "0x1d71c8",
+      "logged": "true",
+      "actual": 1,
+      "matched": true
+    },
+    {
+      "case": "defaults",
+      "name": "RunStrat6",
+      "rva": "0x1d71d0",
+      "logged": "true",
+      "actual": 1,
+      "matched": true
+    },
+    {
+      "case": "defaults",
+      "name": "RunStrat7",
+      "rva": "0x1d71d8",
+      "logged": "true",
+      "actual": 1,
+      "matched": true
+    },
+    {
+      "case": "defaults",
+      "name": "RunStrat8",
+      "rva": "0x1d71e0",
+      "logged": "true",
+      "actual": 1,
+      "matched": true
+    },
+    {
+      "case": "defaults",
+      "name": "RunStrat9",
+      "rva": "0x1d71e8",
+      "logged": "true",
+      "actual": 1,
+      "matched": true
+    },
+    {
+      "case": "bits-0",
+      "name": "lijntje",
+      "rva": "0x1d6f18",
+      "logged": "CHECK_B3_lijntje",
+      "actual": true,
+      "matched": true
+    },
+    {
+      "case": "bits-0",
+      "name": "UseVariableValues",
+      "rva": "0x1d6f28",
+      "logged": "true",
+      "actual": 1,
+      "matched": true
+    },
+    {
+      "case": "bits-0",
+      "name": "AdjustLotsizeToVariableValues",
+      "rva": "0x1d6f30",
+      "logged": "false",
+      "actual": 0,
+      "matched": true
+    },
+    {
+      "case": "bits-0",
+      "name": "ShowInfoPanel",
+      "rva": "0x1d6f38",
+      "logged": "true",
+      "actual": 1,
+      "matched": true
+    },
+    {
+      "case": "bits-0",
+      "name": "UpdateInfoTesting",
+      "rva": "0x1d6f40",
+      "logged": "false",
+      "actual": 0,
+      "matched": true
+    },
+    {
+      "case": "bits-0",
+      "name": "InfoPanelSizeAdjust",
+      "rva": "0x1d6f48",
+      "logged": "1.125",
+      "actual": 1.125,
+      "matched": true
+    },
+    {
+      "case": "bits-0",
+      "name": "SetFontSize",
+      "rva": "0x1d6f50",
+      "logged": "11",
+      "actual": 11,
+      "matched": true
+    },
+    {
+      "case": "bits-0",
+      "name": "BacktestSpeed_string",
+      "rva": "0x1d6f58",
+      "logged": "CHECK_B3_BacktestSpeed_string",
+      "actual": true,
+      "matched": true
+    },
+    {
+      "case": "bits-0",
+      "name": "BacktestSpeed",
+      "rva": "0x1d6f68",
+      "logged": "1",
+      "actual": 1,
+      "matched": true
+    },
+    {
+      "case": "bits-0",
+      "name": "spreadfilter",
+      "rva": "0x1d6f70",
+      "logged": "CHECK_B3_spreadfilter",
+      "actual": true,
+      "matched": true
+    },
+    {
+      "case": "bits-0",
+      "name": "AllowBuyTrades",
+      "rva": "0x1d6f80",
+      "logged": "true",
+      "actual": 1,
+      "matched": true
+    },
+    {
+      "case": "bits-0",
+      "name": "AllowSellTrades",
+      "rva": "0x1d6f88",
+      "logged": "false",
+      "actual": 0,
+      "matched": true
+    },
+    {
+      "case": "bits-0",
+      "name": "TradeFrequency",
+      "rva": "0x1d6f90",
+      "logged": "5",
+      "actual": 5,
+      "matched": true
+    },
+    {
+      "case": "bits-0",
+      "name": "MaxSpread",
+      "rva": "0x1d6f98",
+      "logged": "617.125",
+      "actual": 617.125,
+      "matched": true
+    },
+    {
+      "case": "bits-0",
+      "name": "UseHL_TrailingSL",
+      "rva": "0x1d6fa0",
+      "logged": "true",
+      "actual": 1,
+      "matched": true
+    },
+    {
+      "case": "bits-0",
+      "name": "FridayStopHour",
+      "rva": "0x1d6fa8",
+      "logged": "23",
+      "actual": 23,
+      "matched": true
+    },
+    {
+      "case": "bits-0",
+      "name": "FridayClosePending",
+      "rva": "0x1d6fb0",
+      "logged": "false",
+      "actual": 0,
+      "matched": true
+    },
+    {
+      "case": "bits-0",
+      "name": "FridayCloseOpen",
+      "rva": "0x1d6fb8",
+      "logged": "true",
+      "actual": 1,
+      "matched": true
+    },
+    {
+      "case": "bits-0",
+      "name": "setSL_TP_After_Entry",
+      "rva": "0x1d6fc0",
+      "logged": "false",
+      "actual": 0,
+      "matched": true
+    },
+    {
+      "case": "bits-0",
+      "name": "Virtual_expiration",
+      "rva": "0x1d6fc8",
+      "logged": "true",
+      "actual": 1,
+      "matched": true
+    },
+    {
+      "case": "bits-0",
+      "name": "Randomization",
+      "rva": "0x1d6fd0",
+      "logged": "0.125",
+      "actual": 0.125,
+      "matched": true
+    },
+    {
+      "case": "bits-0",
+      "name": "FakeOutFilter",
+      "rva": "0x1d6fd8",
+      "logged": "2",
+      "actual": 2,
+      "matched": true
+    },
+    {
+      "case": "bits-0",
+      "name": "EnableVirtualSLTP",
+      "rva": "0x1d6fe0",
+      "logged": "false",
+      "actual": 0,
+      "matched": true
+    },
+    {
+      "case": "bits-0",
+      "name": "SetVSL_to_hardSL_sec_delay",
+      "rva": "0x1d6fe8",
+      "logged": "97",
+      "actual": 97,
+      "matched": true
+    },
+    {
+      "case": "bits-0",
+      "name": "ST1_MagicNumber",
+      "rva": "0x1d6ff0",
+      "logged": "53294",
+      "actual": 53294,
+      "matched": true
+    },
+    {
+      "case": "bits-0",
+      "name": "ST1_Comment",
+      "rva": "0x1d6ff8",
+      "logged": "CHECK_B3_ST1_Comment",
+      "actual": true,
+      "matched": true
+    },
+    {
+      "case": "bits-0",
+      "name": "RemoveCommentSuffix",
+      "rva": "0x1d7008",
+      "logged": "true",
+      "actual": 1,
+      "matched": true
+    },
+    {
+      "case": "bits-0",
+      "name": "NFP_FILTER",
+      "rva": "0x1d7010",
+      "logged": "CHECK_B3_NFP_FILTER",
+      "actual": true,
+      "matched": true
+    },
+    {
+      "case": "bits-0",
+      "name": "EnableNFP_Filter",
+      "rva": "0x1d7020",
+      "logged": "false",
+      "actual": 0,
+      "matched": true
+    },
+    {
+      "case": "bits-0",
+      "name": "UseMQL5Calendar",
+      "rva": "0x1d7028",
+      "logged": "true",
+      "actual": 1,
+      "matched": true
+    },
+    {
+      "case": "bits-0",
+      "name": "AutoGMT",
+      "rva": "0x1d7030",
+      "logged": "false",
+      "actual": 0,
+      "matched": true
+    },
+    {
+      "case": "bits-0",
+      "name": "Broker_GMT_OFFSET_Winter",
+      "rva": "0x1d7038",
+      "logged": "2",
+      "actual": 2,
+      "matched": true
+    },
+    {
+      "case": "bits-0",
+      "name": "Broker_GMT_OFFSET_Summer",
+      "rva": "0x1d7040",
+      "logged": "3",
+      "actual": 3,
+      "matched": true
+    },
+    {
+      "case": "bits-0",
+      "name": "NFP_CloseOpenTrades",
+      "rva": "0x1d7048",
+      "logged": "true",
+      "actual": 1,
+      "matched": true
+    },
+    {
+      "case": "bits-0",
+      "name": "NFP_ClosePendingOrders",
+      "rva": "0x1d7050",
+      "logged": "false",
+      "actual": 0,
+      "matched": true
+    },
+    {
+      "case": "bits-0",
+      "name": "NFP_MinutesBefore",
+      "rva": "0x1d7058",
+      "logged": "13",
+      "actual": 13,
+      "matched": true
+    },
+    {
+      "case": "bits-0",
+      "name": "NFP_MinutesAfter",
+      "rva": "0x1d7060",
+      "logged": "47",
+      "actual": 47,
+      "matched": true
+    },
+    {
+      "case": "bits-0",
+      "name": "IR_FILTER",
+      "rva": "0x1d7068",
+      "logged": "CHECK_B3_IR_FILTER",
+      "actual": true,
+      "matched": true
+    },
+    {
+      "case": "bits-0",
+      "name": "EnableIR_Filter",
+      "rva": "0x1d7078",
+      "logged": "true",
+      "actual": 1,
+      "matched": true
+    },
+    {
+      "case": "bits-0",
+      "name": "IR_CloseOpenTrades",
+      "rva": "0x1d7080",
+      "logged": "false",
+      "actual": 0,
+      "matched": true
+    },
+    {
+      "case": "bits-0",
+      "name": "IR_ClosePendingOrders",
+      "rva": "0x1d7088",
+      "logged": "true",
+      "actual": 1,
+      "matched": true
+    },
+    {
+      "case": "bits-0",
+      "name": "IR_MinutesBefore",
+      "rva": "0x1d7090",
+      "logged": "17",
+      "actual": 17,
+      "matched": true
+    },
+    {
+      "case": "bits-0",
+      "name": "IR_MinutesAfter",
+      "rva": "0x1d7098",
+      "logged": "43",
+      "actual": 43,
+      "matched": true
+    },
+    {
+      "case": "bits-0",
+      "name": "CPI_FILTER",
+      "rva": "0x1d70a0",
+      "logged": "CHECK_B3_CPI_FILTER",
+      "actual": true,
+      "matched": true
+    },
+    {
+      "case": "bits-0",
+      "name": "EnableCPI_Filter",
+      "rva": "0x1d70b0",
+      "logged": "false",
+      "actual": 0,
+      "matched": true
+    },
+    {
+      "case": "bits-0",
+      "name": "CPI_CloseOpenTrades",
+      "rva": "0x1d70b8",
+      "logged": "true",
+      "actual": 1,
+      "matched": true
+    },
+    {
+      "case": "bits-0",
+      "name": "CPI_ClosePendingOrders",
+      "rva": "0x1d70c0",
+      "logged": "false",
+      "actual": 0,
+      "matched": true
+    },
+    {
+      "case": "bits-0",
+      "name": "CPI_MinutesBefore",
+      "rva": "0x1d70c8",
+      "logged": "19",
+      "actual": 19,
+      "matched": true
+    },
+    {
+      "case": "bits-0",
+      "name": "CPI_MinutesAfter",
+      "rva": "0x1d70d0",
+      "logged": "41",
+      "actual": 41,
+      "matched": true
+    },
+    {
+      "case": "bits-0",
+      "name": "propfirmsettings",
+      "rva": "0x1d70d8",
+      "logged": "CHECK_B3_propfirmsettings",
+      "actual": true,
+      "matched": true
+    },
+    {
+      "case": "bits-0",
+      "name": "AdjustEntry",
+      "rva": "0x1d70e8",
+      "logged": "6.125",
+      "actual": 6.125,
+      "matched": true
+    },
+    {
+      "case": "bits-0",
+      "name": "AdjustSL",
+      "rva": "0x1d70f0",
+      "logged": "7.125",
+      "actual": 7.125,
+      "matched": true
+    },
+    {
+      "case": "bits-0",
+      "name": "AdjustTP",
+      "rva": "0x1d70f8",
+      "logged": "8.125",
+      "actual": 8.125,
+      "matched": true
+    },
+    {
+      "case": "bits-0",
+      "name": "AdjustTrailSL",
+      "rva": "0x1d7100",
+      "logged": "9.125",
+      "actual": 9.125,
+      "matched": true
+    },
+    {
+      "case": "bits-0",
+      "name": "AdjustTrailTP",
+      "rva": "0x1d7108",
+      "logged": "10.125",
+      "actual": 10.125,
+      "matched": true
+    },
+    {
+      "case": "bits-0",
+      "name": "AdjustBreakEven",
+      "rva": "0x1d7110",
+      "logged": "11.125",
+      "actual": 11.125,
+      "matched": true
+    },
+    {
+      "case": "bits-0",
+      "name": "LotSizeSettings",
+      "rva": "0x1d7118",
+      "logged": "CHECK_B3_LotSizeSettings",
+      "actual": true,
+      "matched": true
+    },
+    {
+      "case": "bits-0",
+      "name": "ManualBalance",
+      "rva": "0x1d7128",
+      "logged": "10417.125",
+      "actual": 10417.125,
+      "matched": true
+    },
+    {
+      "case": "bits-0",
+      "name": "Risk",
+      "rva": "0x1d7130",
+      "logged": "1234",
+      "actual": 1234,
+      "matched": true
+    },
+    {
+      "case": "bits-0",
+      "name": "StartLots",
+      "rva": "0x1d7138",
+      "logged": "0.023125",
+      "actual": 0.023125,
+      "matched": true
+    },
+    {
+      "case": "bits-0",
+      "name": "MaxAllowedDD",
+      "rva": "0x1d7140",
+      "logged": "27.125",
+      "actual": 27.125,
+      "matched": true
+    },
+    {
+      "case": "bits-0",
+      "name": "UseWeightedLots",
+      "rva": "0x1d7148",
+      "logged": "true",
+      "actual": 1,
+      "matched": true
+    },
+    {
+      "case": "bits-0",
+      "name": "MaxRiskPerStrategy_",
+      "rva": "0x1d7150",
+      "logged": "1.375",
+      "actual": 1.375,
+      "matched": true
+    },
+    {
+      "case": "bits-0",
+      "name": "PropFirmMaxDailyDD",
+      "rva": "0x1d7158",
+      "logged": "2.125",
+      "actual": 2.125,
+      "matched": true
+    },
+    {
+      "case": "bits-0",
+      "name": "OnlyUp",
+      "rva": "0x1d7160",
+      "logged": "false",
+      "actual": 0,
+      "matched": true
+    },
+    {
+      "case": "bits-0",
+      "name": "ResetHighestBalance",
+      "rva": "0x1d7168",
+      "logged": "true",
+      "actual": 1,
+      "matched": true
+    },
+    {
+      "case": "bits-0",
+      "name": "ResetHighestBalanceOnWithdrawal",
+      "rva": "0x1d7170",
+      "logged": "false",
+      "actual": 0,
+      "matched": true
+    },
+    {
+      "case": "bits-0",
+      "name": "CheckMargin",
+      "rva": "0x1d7178",
+      "logged": "true",
+      "actual": 1,
+      "matched": true
+    },
+    {
+      "case": "bits-0",
+      "name": "UseEquity",
+      "rva": "0x1d7180",
+      "logged": "false",
+      "actual": 0,
+      "matched": true
+    },
+    {
+      "case": "bits-0",
+      "name": "ManualStratSelect",
+      "rva": "0x1d7188",
+      "logged": "CHECK_B3_ManualStratSelect",
+      "actual": true,
+      "matched": true
+    },
+    {
+      "case": "bits-0",
+      "name": "ManStratWarn",
+      "rva": "0x1d7198",
+      "logged": "CHECK_B3_ManStratWarn",
+      "actual": true,
+      "matched": true
+    },
+    {
+      "case": "bits-0",
+      "name": "RunStrat1",
+      "rva": "0x1d71a8",
+      "logged": "true",
+      "actual": 1,
+      "matched": true
+    },
+    {
+      "case": "bits-0",
+      "name": "RunStrat2",
+      "rva": "0x1d71b0",
+      "logged": "false",
+      "actual": 0,
+      "matched": true
+    },
+    {
+      "case": "bits-0",
+      "name": "RunStrat3",
+      "rva": "0x1d71b8",
+      "logged": "true",
+      "actual": 1,
+      "matched": true
+    },
+    {
+      "case": "bits-0",
+      "name": "RunStrat4",
+      "rva": "0x1d71c0",
+      "logged": "false",
+      "actual": 0,
+      "matched": true
+    },
+    {
+      "case": "bits-0",
+      "name": "RunStrat5",
+      "rva": "0x1d71c8",
+      "logged": "true",
+      "actual": 1,
+      "matched": true
+    },
+    {
+      "case": "bits-0",
+      "name": "RunStrat6",
+      "rva": "0x1d71d0",
+      "logged": "false",
+      "actual": 0,
+      "matched": true
+    },
+    {
+      "case": "bits-0",
+      "name": "RunStrat7",
+      "rva": "0x1d71d8",
+      "logged": "true",
+      "actual": 1,
+      "matched": true
+    },
+    {
+      "case": "bits-0",
+      "name": "RunStrat8",
+      "rva": "0x1d71e0",
+      "logged": "false",
+      "actual": 0,
+      "matched": true
+    },
+    {
+      "case": "bits-0",
+      "name": "RunStrat9",
+      "rva": "0x1d71e8",
+      "logged": "true",
+      "actual": 1,
+      "matched": true
+    },
+    {
+      "case": "bits-1",
+      "name": "lijntje",
+      "rva": "0x1d6f18",
+      "logged": "CHECK_B3_lijntje",
+      "actual": true,
+      "matched": true
+    },
+    {
+      "case": "bits-1",
+      "name": "UseVariableValues",
+      "rva": "0x1d6f28",
+      "logged": "false",
+      "actual": 0,
+      "matched": true
+    },
+    {
+      "case": "bits-1",
+      "name": "AdjustLotsizeToVariableValues",
+      "rva": "0x1d6f30",
+      "logged": "true",
+      "actual": 1,
+      "matched": true
+    },
+    {
+      "case": "bits-1",
+      "name": "ShowInfoPanel",
+      "rva": "0x1d6f38",
+      "logged": "true",
+      "actual": 1,
+      "matched": true
+    },
+    {
+      "case": "bits-1",
+      "name": "UpdateInfoTesting",
+      "rva": "0x1d6f40",
+      "logged": "false",
+      "actual": 0,
+      "matched": true
+    },
+    {
+      "case": "bits-1",
+      "name": "InfoPanelSizeAdjust",
+      "rva": "0x1d6f48",
+      "logged": "1.125",
+      "actual": 1.125,
+      "matched": true
+    },
+    {
+      "case": "bits-1",
+      "name": "SetFontSize",
+      "rva": "0x1d6f50",
+      "logged": "11",
+      "actual": 11,
+      "matched": true
+    },
+    {
+      "case": "bits-1",
+      "name": "BacktestSpeed_string",
+      "rva": "0x1d6f58",
+      "logged": "CHECK_B3_BacktestSpeed_string",
+      "actual": true,
+      "matched": true
+    },
+    {
+      "case": "bits-1",
+      "name": "BacktestSpeed",
+      "rva": "0x1d6f68",
+      "logged": "1",
+      "actual": 1,
+      "matched": true
+    },
+    {
+      "case": "bits-1",
+      "name": "spreadfilter",
+      "rva": "0x1d6f70",
+      "logged": "CHECK_B3_spreadfilter",
+      "actual": true,
+      "matched": true
+    },
+    {
+      "case": "bits-1",
+      "name": "AllowBuyTrades",
+      "rva": "0x1d6f80",
+      "logged": "false",
+      "actual": 0,
+      "matched": true
+    },
+    {
+      "case": "bits-1",
+      "name": "AllowSellTrades",
+      "rva": "0x1d6f88",
+      "logged": "true",
+      "actual": 1,
+      "matched": true
+    },
+    {
+      "case": "bits-1",
+      "name": "TradeFrequency",
+      "rva": "0x1d6f90",
+      "logged": "5",
+      "actual": 5,
+      "matched": true
+    },
+    {
+      "case": "bits-1",
+      "name": "MaxSpread",
+      "rva": "0x1d6f98",
+      "logged": "617.125",
+      "actual": 617.125,
+      "matched": true
+    },
+    {
+      "case": "bits-1",
+      "name": "UseHL_TrailingSL",
+      "rva": "0x1d6fa0",
+      "logged": "true",
+      "actual": 1,
+      "matched": true
+    },
+    {
+      "case": "bits-1",
+      "name": "FridayStopHour",
+      "rva": "0x1d6fa8",
+      "logged": "23",
+      "actual": 23,
+      "matched": true
+    },
+    {
+      "case": "bits-1",
+      "name": "FridayClosePending",
+      "rva": "0x1d6fb0",
+      "logged": "false",
+      "actual": 0,
+      "matched": true
+    },
+    {
+      "case": "bits-1",
+      "name": "FridayCloseOpen",
+      "rva": "0x1d6fb8",
+      "logged": "false",
+      "actual": 0,
+      "matched": true
+    },
+    {
+      "case": "bits-1",
+      "name": "setSL_TP_After_Entry",
+      "rva": "0x1d6fc0",
+      "logged": "true",
+      "actual": 1,
+      "matched": true
+    },
+    {
+      "case": "bits-1",
+      "name": "Virtual_expiration",
+      "rva": "0x1d6fc8",
+      "logged": "true",
+      "actual": 1,
+      "matched": true
+    },
+    {
+      "case": "bits-1",
+      "name": "Randomization",
+      "rva": "0x1d6fd0",
+      "logged": "0.125",
+      "actual": 0.125,
+      "matched": true
+    },
+    {
+      "case": "bits-1",
+      "name": "FakeOutFilter",
+      "rva": "0x1d6fd8",
+      "logged": "2",
+      "actual": 2,
+      "matched": true
+    },
+    {
+      "case": "bits-1",
+      "name": "EnableVirtualSLTP",
+      "rva": "0x1d6fe0",
+      "logged": "false",
+      "actual": 0,
+      "matched": true
+    },
+    {
+      "case": "bits-1",
+      "name": "SetVSL_to_hardSL_sec_delay",
+      "rva": "0x1d6fe8",
+      "logged": "97",
+      "actual": 97,
+      "matched": true
+    },
+    {
+      "case": "bits-1",
+      "name": "ST1_MagicNumber",
+      "rva": "0x1d6ff0",
+      "logged": "53294",
+      "actual": 53294,
+      "matched": true
+    },
+    {
+      "case": "bits-1",
+      "name": "ST1_Comment",
+      "rva": "0x1d6ff8",
+      "logged": "CHECK_B3_ST1_Comment",
+      "actual": true,
+      "matched": true
+    },
+    {
+      "case": "bits-1",
+      "name": "RemoveCommentSuffix",
+      "rva": "0x1d7008",
+      "logged": "false",
+      "actual": 0,
+      "matched": true
+    },
+    {
+      "case": "bits-1",
+      "name": "NFP_FILTER",
+      "rva": "0x1d7010",
+      "logged": "CHECK_B3_NFP_FILTER",
+      "actual": true,
+      "matched": true
+    },
+    {
+      "case": "bits-1",
+      "name": "EnableNFP_Filter",
+      "rva": "0x1d7020",
+      "logged": "true",
+      "actual": 1,
+      "matched": true
+    },
+    {
+      "case": "bits-1",
+      "name": "UseMQL5Calendar",
+      "rva": "0x1d7028",
+      "logged": "true",
+      "actual": 1,
+      "matched": true
+    },
+    {
+      "case": "bits-1",
+      "name": "AutoGMT",
+      "rva": "0x1d7030",
+      "logged": "false",
+      "actual": 0,
+      "matched": true
+    },
+    {
+      "case": "bits-1",
+      "name": "Broker_GMT_OFFSET_Winter",
+      "rva": "0x1d7038",
+      "logged": "2",
+      "actual": 2,
+      "matched": true
+    },
+    {
+      "case": "bits-1",
+      "name": "Broker_GMT_OFFSET_Summer",
+      "rva": "0x1d7040",
+      "logged": "3",
+      "actual": 3,
+      "matched": true
+    },
+    {
+      "case": "bits-1",
+      "name": "NFP_CloseOpenTrades",
+      "rva": "0x1d7048",
+      "logged": "false",
+      "actual": 0,
+      "matched": true
+    },
+    {
+      "case": "bits-1",
+      "name": "NFP_ClosePendingOrders",
+      "rva": "0x1d7050",
+      "logged": "true",
+      "actual": 1,
+      "matched": true
+    },
+    {
+      "case": "bits-1",
+      "name": "NFP_MinutesBefore",
+      "rva": "0x1d7058",
+      "logged": "13",
+      "actual": 13,
+      "matched": true
+    },
+    {
+      "case": "bits-1",
+      "name": "NFP_MinutesAfter",
+      "rva": "0x1d7060",
+      "logged": "47",
+      "actual": 47,
+      "matched": true
+    },
+    {
+      "case": "bits-1",
+      "name": "IR_FILTER",
+      "rva": "0x1d7068",
+      "logged": "CHECK_B3_IR_FILTER",
+      "actual": true,
+      "matched": true
+    },
+    {
+      "case": "bits-1",
+      "name": "EnableIR_Filter",
+      "rva": "0x1d7078",
+      "logged": "true",
+      "actual": 1,
+      "matched": true
+    },
+    {
+      "case": "bits-1",
+      "name": "IR_CloseOpenTrades",
+      "rva": "0x1d7080",
+      "logged": "false",
+      "actual": 0,
+      "matched": true
+    },
+    {
+      "case": "bits-1",
+      "name": "IR_ClosePendingOrders",
+      "rva": "0x1d7088",
+      "logged": "false",
+      "actual": 0,
+      "matched": true
+    },
+    {
+      "case": "bits-1",
+      "name": "IR_MinutesBefore",
+      "rva": "0x1d7090",
+      "logged": "17",
+      "actual": 17,
+      "matched": true
+    },
+    {
+      "case": "bits-1",
+      "name": "IR_MinutesAfter",
+      "rva": "0x1d7098",
+      "logged": "43",
+      "actual": 43,
+      "matched": true
+    },
+    {
+      "case": "bits-1",
+      "name": "CPI_FILTER",
+      "rva": "0x1d70a0",
+      "logged": "CHECK_B3_CPI_FILTER",
+      "actual": true,
+      "matched": true
+    },
+    {
+      "case": "bits-1",
+      "name": "EnableCPI_Filter",
+      "rva": "0x1d70b0",
+      "logged": "true",
+      "actual": 1,
+      "matched": true
+    },
+    {
+      "case": "bits-1",
+      "name": "CPI_CloseOpenTrades",
+      "rva": "0x1d70b8",
+      "logged": "true",
+      "actual": 1,
+      "matched": true
+    },
+    {
+      "case": "bits-1",
+      "name": "CPI_ClosePendingOrders",
+      "rva": "0x1d70c0",
+      "logged": "false",
+      "actual": 0,
+      "matched": true
+    },
+    {
+      "case": "bits-1",
+      "name": "CPI_MinutesBefore",
+      "rva": "0x1d70c8",
+      "logged": "19",
+      "actual": 19,
+      "matched": true
+    },
+    {
+      "case": "bits-1",
+      "name": "CPI_MinutesAfter",
+      "rva": "0x1d70d0",
+      "logged": "41",
+      "actual": 41,
+      "matched": true
+    },
+    {
+      "case": "bits-1",
+      "name": "propfirmsettings",
+      "rva": "0x1d70d8",
+      "logged": "CHECK_B3_propfirmsettings",
+      "actual": true,
+      "matched": true
+    },
+    {
+      "case": "bits-1",
+      "name": "AdjustEntry",
+      "rva": "0x1d70e8",
+      "logged": "6.125",
+      "actual": 6.125,
+      "matched": true
+    },
+    {
+      "case": "bits-1",
+      "name": "AdjustSL",
+      "rva": "0x1d70f0",
+      "logged": "7.125",
+      "actual": 7.125,
+      "matched": true
+    },
+    {
+      "case": "bits-1",
+      "name": "AdjustTP",
+      "rva": "0x1d70f8",
+      "logged": "8.125",
+      "actual": 8.125,
+      "matched": true
+    },
+    {
+      "case": "bits-1",
+      "name": "AdjustTrailSL",
+      "rva": "0x1d7100",
+      "logged": "9.125",
+      "actual": 9.125,
+      "matched": true
+    },
+    {
+      "case": "bits-1",
+      "name": "AdjustTrailTP",
+      "rva": "0x1d7108",
+      "logged": "10.125",
+      "actual": 10.125,
+      "matched": true
+    },
+    {
+      "case": "bits-1",
+      "name": "AdjustBreakEven",
+      "rva": "0x1d7110",
+      "logged": "11.125",
+      "actual": 11.125,
+      "matched": true
+    },
+    {
+      "case": "bits-1",
+      "name": "LotSizeSettings",
+      "rva": "0x1d7118",
+      "logged": "CHECK_B3_LotSizeSettings",
+      "actual": true,
+      "matched": true
+    },
+    {
+      "case": "bits-1",
+      "name": "ManualBalance",
+      "rva": "0x1d7128",
+      "logged": "10417.125",
+      "actual": 10417.125,
+      "matched": true
+    },
+    {
+      "case": "bits-1",
+      "name": "Risk",
+      "rva": "0x1d7130",
+      "logged": "1234",
+      "actual": 1234,
+      "matched": true
+    },
+    {
+      "case": "bits-1",
+      "name": "StartLots",
+      "rva": "0x1d7138",
+      "logged": "0.023125",
+      "actual": 0.023125,
+      "matched": true
+    },
+    {
+      "case": "bits-1",
+      "name": "MaxAllowedDD",
+      "rva": "0x1d7140",
+      "logged": "27.125",
+      "actual": 27.125,
+      "matched": true
+    },
+    {
+      "case": "bits-1",
+      "name": "UseWeightedLots",
+      "rva": "0x1d7148",
+      "logged": "false",
+      "actual": 0,
+      "matched": true
+    },
+    {
+      "case": "bits-1",
+      "name": "MaxRiskPerStrategy_",
+      "rva": "0x1d7150",
+      "logged": "1.375",
+      "actual": 1.375,
+      "matched": true
+    },
+    {
+      "case": "bits-1",
+      "name": "PropFirmMaxDailyDD",
+      "rva": "0x1d7158",
+      "logged": "2.125",
+      "actual": 2.125,
+      "matched": true
+    },
+    {
+      "case": "bits-1",
+      "name": "OnlyUp",
+      "rva": "0x1d7160",
+      "logged": "true",
+      "actual": 1,
+      "matched": true
+    },
+    {
+      "case": "bits-1",
+      "name": "ResetHighestBalance",
+      "rva": "0x1d7168",
+      "logged": "true",
+      "actual": 1,
+      "matched": true
+    },
+    {
+      "case": "bits-1",
+      "name": "ResetHighestBalanceOnWithdrawal",
+      "rva": "0x1d7170",
+      "logged": "false",
+      "actual": 0,
+      "matched": true
+    },
+    {
+      "case": "bits-1",
+      "name": "CheckMargin",
+      "rva": "0x1d7178",
+      "logged": "false",
+      "actual": 0,
+      "matched": true
+    },
+    {
+      "case": "bits-1",
+      "name": "UseEquity",
+      "rva": "0x1d7180",
+      "logged": "true",
+      "actual": 1,
+      "matched": true
+    },
+    {
+      "case": "bits-1",
+      "name": "ManualStratSelect",
+      "rva": "0x1d7188",
+      "logged": "CHECK_B3_ManualStratSelect",
+      "actual": true,
+      "matched": true
+    },
+    {
+      "case": "bits-1",
+      "name": "ManStratWarn",
+      "rva": "0x1d7198",
+      "logged": "CHECK_B3_ManStratWarn",
+      "actual": true,
+      "matched": true
+    },
+    {
+      "case": "bits-1",
+      "name": "RunStrat1",
+      "rva": "0x1d71a8",
+      "logged": "true",
+      "actual": 1,
+      "matched": true
+    },
+    {
+      "case": "bits-1",
+      "name": "RunStrat2",
+      "rva": "0x1d71b0",
+      "logged": "false",
+      "actual": 0,
+      "matched": true
+    },
+    {
+      "case": "bits-1",
+      "name": "RunStrat3",
+      "rva": "0x1d71b8",
+      "logged": "false",
+      "actual": 0,
+      "matched": true
+    },
+    {
+      "case": "bits-1",
+      "name": "RunStrat4",
+      "rva": "0x1d71c0",
+      "logged": "true",
+      "actual": 1,
+      "matched": true
+    },
+    {
+      "case": "bits-1",
+      "name": "RunStrat5",
+      "rva": "0x1d71c8",
+      "logged": "true",
+      "actual": 1,
+      "matched": true
+    },
+    {
+      "case": "bits-1",
+      "name": "RunStrat6",
+      "rva": "0x1d71d0",
+      "logged": "false",
+      "actual": 0,
+      "matched": true
+    },
+    {
+      "case": "bits-1",
+      "name": "RunStrat7",
+      "rva": "0x1d71d8",
+      "logged": "false",
+      "actual": 0,
+      "matched": true
+    },
+    {
+      "case": "bits-1",
+      "name": "RunStrat8",
+      "rva": "0x1d71e0",
+      "logged": "true",
+      "actual": 1,
+      "matched": true
+    },
+    {
+      "case": "bits-1",
+      "name": "RunStrat9",
+      "rva": "0x1d71e8",
+      "logged": "true",
+      "actual": 1,
+      "matched": true
+    },
+    {
+      "case": "bits-2",
+      "name": "lijntje",
+      "rva": "0x1d6f18",
+      "logged": "CHECK_B3_lijntje",
+      "actual": true,
+      "matched": true
+    },
+    {
+      "case": "bits-2",
+      "name": "UseVariableValues",
+      "rva": "0x1d6f28",
+      "logged": "false",
+      "actual": 0,
+      "matched": true
+    },
+    {
+      "case": "bits-2",
+      "name": "AdjustLotsizeToVariableValues",
+      "rva": "0x1d6f30",
+      "logged": "false",
+      "actual": 0,
+      "matched": true
+    },
+    {
+      "case": "bits-2",
+      "name": "ShowInfoPanel",
+      "rva": "0x1d6f38",
+      "logged": "false",
+      "actual": 0,
+      "matched": true
+    },
+    {
+      "case": "bits-2",
+      "name": "UpdateInfoTesting",
+      "rva": "0x1d6f40",
+      "logged": "true",
+      "actual": 1,
+      "matched": true
+    },
+    {
+      "case": "bits-2",
+      "name": "InfoPanelSizeAdjust",
+      "rva": "0x1d6f48",
+      "logged": "1.125",
+      "actual": 1.125,
+      "matched": true
+    },
+    {
+      "case": "bits-2",
+      "name": "SetFontSize",
+      "rva": "0x1d6f50",
+      "logged": "11",
+      "actual": 11,
+      "matched": true
+    },
+    {
+      "case": "bits-2",
+      "name": "BacktestSpeed_string",
+      "rva": "0x1d6f58",
+      "logged": "CHECK_B3_BacktestSpeed_string",
+      "actual": true,
+      "matched": true
+    },
+    {
+      "case": "bits-2",
+      "name": "BacktestSpeed",
+      "rva": "0x1d6f68",
+      "logged": "1",
+      "actual": 1,
+      "matched": true
+    },
+    {
+      "case": "bits-2",
+      "name": "spreadfilter",
+      "rva": "0x1d6f70",
+      "logged": "CHECK_B3_spreadfilter",
+      "actual": true,
+      "matched": true
+    },
+    {
+      "case": "bits-2",
+      "name": "AllowBuyTrades",
+      "rva": "0x1d6f80",
+      "logged": "true",
+      "actual": 1,
+      "matched": true
+    },
+    {
+      "case": "bits-2",
+      "name": "AllowSellTrades",
+      "rva": "0x1d6f88",
+      "logged": "true",
+      "actual": 1,
+      "matched": true
+    },
+    {
+      "case": "bits-2",
+      "name": "TradeFrequency",
+      "rva": "0x1d6f90",
+      "logged": "5",
+      "actual": 5,
+      "matched": true
+    },
+    {
+      "case": "bits-2",
+      "name": "MaxSpread",
+      "rva": "0x1d6f98",
+      "logged": "617.125",
+      "actual": 617.125,
+      "matched": true
+    },
+    {
+      "case": "bits-2",
+      "name": "UseHL_TrailingSL",
+      "rva": "0x1d6fa0",
+      "logged": "true",
+      "actual": 1,
+      "matched": true
+    },
+    {
+      "case": "bits-2",
+      "name": "FridayStopHour",
+      "rva": "0x1d6fa8",
+      "logged": "23",
+      "actual": 23,
+      "matched": true
+    },
+    {
+      "case": "bits-2",
+      "name": "FridayClosePending",
+      "rva": "0x1d6fb0",
+      "logged": "false",
+      "actual": 0,
+      "matched": true
+    },
+    {
+      "case": "bits-2",
+      "name": "FridayCloseOpen",
+      "rva": "0x1d6fb8",
+      "logged": "false",
+      "actual": 0,
+      "matched": true
+    },
+    {
+      "case": "bits-2",
+      "name": "setSL_TP_After_Entry",
+      "rva": "0x1d6fc0",
+      "logged": "false",
+      "actual": 0,
+      "matched": true
+    },
+    {
+      "case": "bits-2",
+      "name": "Virtual_expiration",
+      "rva": "0x1d6fc8",
+      "logged": "false",
+      "actual": 0,
+      "matched": true
+    },
+    {
+      "case": "bits-2",
+      "name": "Randomization",
+      "rva": "0x1d6fd0",
+      "logged": "0.125",
+      "actual": 0.125,
+      "matched": true
+    },
+    {
+      "case": "bits-2",
+      "name": "FakeOutFilter",
+      "rva": "0x1d6fd8",
+      "logged": "2",
+      "actual": 2,
+      "matched": true
+    },
+    {
+      "case": "bits-2",
+      "name": "EnableVirtualSLTP",
+      "rva": "0x1d6fe0",
+      "logged": "true",
+      "actual": 1,
+      "matched": true
+    },
+    {
+      "case": "bits-2",
+      "name": "SetVSL_to_hardSL_sec_delay",
+      "rva": "0x1d6fe8",
+      "logged": "97",
+      "actual": 97,
+      "matched": true
+    },
+    {
+      "case": "bits-2",
+      "name": "ST1_MagicNumber",
+      "rva": "0x1d6ff0",
+      "logged": "53294",
+      "actual": 53294,
+      "matched": true
+    },
+    {
+      "case": "bits-2",
+      "name": "ST1_Comment",
+      "rva": "0x1d6ff8",
+      "logged": "CHECK_B3_ST1_Comment",
+      "actual": true,
+      "matched": true
+    },
+    {
+      "case": "bits-2",
+      "name": "RemoveCommentSuffix",
+      "rva": "0x1d7008",
+      "logged": "true",
+      "actual": 1,
+      "matched": true
+    },
+    {
+      "case": "bits-2",
+      "name": "NFP_FILTER",
+      "rva": "0x1d7010",
+      "logged": "CHECK_B3_NFP_FILTER",
+      "actual": true,
+      "matched": true
+    },
+    {
+      "case": "bits-2",
+      "name": "EnableNFP_Filter",
+      "rva": "0x1d7020",
+      "logged": "true",
+      "actual": 1,
+      "matched": true
+    },
+    {
+      "case": "bits-2",
+      "name": "UseMQL5Calendar",
+      "rva": "0x1d7028",
+      "logged": "true",
+      "actual": 1,
+      "matched": true
+    },
+    {
+      "case": "bits-2",
+      "name": "AutoGMT",
+      "rva": "0x1d7030",
+      "logged": "false",
+      "actual": 0,
+      "matched": true
+    },
+    {
+      "case": "bits-2",
+      "name": "Broker_GMT_OFFSET_Winter",
+      "rva": "0x1d7038",
+      "logged": "2",
+      "actual": 2,
+      "matched": true
+    },
+    {
+      "case": "bits-2",
+      "name": "Broker_GMT_OFFSET_Summer",
+      "rva": "0x1d7040",
+      "logged": "3",
+      "actual": 3,
+      "matched": true
+    },
+    {
+      "case": "bits-2",
+      "name": "NFP_CloseOpenTrades",
+      "rva": "0x1d7048",
+      "logged": "false",
+      "actual": 0,
+      "matched": true
+    },
+    {
+      "case": "bits-2",
+      "name": "NFP_ClosePendingOrders",
+      "rva": "0x1d7050",
+      "logged": "false",
+      "actual": 0,
+      "matched": true
+    },
+    {
+      "case": "bits-2",
+      "name": "NFP_MinutesBefore",
+      "rva": "0x1d7058",
+      "logged": "13",
+      "actual": 13,
+      "matched": true
+    },
+    {
+      "case": "bits-2",
+      "name": "NFP_MinutesAfter",
+      "rva": "0x1d7060",
+      "logged": "47",
+      "actual": 47,
+      "matched": true
+    },
+    {
+      "case": "bits-2",
+      "name": "IR_FILTER",
+      "rva": "0x1d7068",
+      "logged": "CHECK_B3_IR_FILTER",
+      "actual": true,
+      "matched": true
+    },
+    {
+      "case": "bits-2",
+      "name": "EnableIR_Filter",
+      "rva": "0x1d7078",
+      "logged": "false",
+      "actual": 0,
+      "matched": true
+    },
+    {
+      "case": "bits-2",
+      "name": "IR_CloseOpenTrades",
+      "rva": "0x1d7080",
+      "logged": "true",
+      "actual": 1,
+      "matched": true
+    },
+    {
+      "case": "bits-2",
+      "name": "IR_ClosePendingOrders",
+      "rva": "0x1d7088",
+      "logged": "true",
+      "actual": 1,
+      "matched": true
+    },
+    {
+      "case": "bits-2",
+      "name": "IR_MinutesBefore",
+      "rva": "0x1d7090",
+      "logged": "17",
+      "actual": 17,
+      "matched": true
+    },
+    {
+      "case": "bits-2",
+      "name": "IR_MinutesAfter",
+      "rva": "0x1d7098",
+      "logged": "43",
+      "actual": 43,
+      "matched": true
+    },
+    {
+      "case": "bits-2",
+      "name": "CPI_FILTER",
+      "rva": "0x1d70a0",
+      "logged": "CHECK_B3_CPI_FILTER",
+      "actual": true,
+      "matched": true
+    },
+    {
+      "case": "bits-2",
+      "name": "EnableCPI_Filter",
+      "rva": "0x1d70b0",
+      "logged": "true",
+      "actual": 1,
+      "matched": true
+    },
+    {
+      "case": "bits-2",
+      "name": "CPI_CloseOpenTrades",
+      "rva": "0x1d70b8",
+      "logged": "true",
+      "actual": 1,
+      "matched": true
+    },
+    {
+      "case": "bits-2",
+      "name": "CPI_ClosePendingOrders",
+      "rva": "0x1d70c0",
+      "logged": "false",
+      "actual": 0,
+      "matched": true
+    },
+    {
+      "case": "bits-2",
+      "name": "CPI_MinutesBefore",
+      "rva": "0x1d70c8",
+      "logged": "19",
+      "actual": 19,
+      "matched": true
+    },
+    {
+      "case": "bits-2",
+      "name": "CPI_MinutesAfter",
+      "rva": "0x1d70d0",
+      "logged": "41",
+      "actual": 41,
+      "matched": true
+    },
+    {
+      "case": "bits-2",
+      "name": "propfirmsettings",
+      "rva": "0x1d70d8",
+      "logged": "CHECK_B3_propfirmsettings",
+      "actual": true,
+      "matched": true
+    },
+    {
+      "case": "bits-2",
+      "name": "AdjustEntry",
+      "rva": "0x1d70e8",
+      "logged": "6.125",
+      "actual": 6.125,
+      "matched": true
+    },
+    {
+      "case": "bits-2",
+      "name": "AdjustSL",
+      "rva": "0x1d70f0",
+      "logged": "7.125",
+      "actual": 7.125,
+      "matched": true
+    },
+    {
+      "case": "bits-2",
+      "name": "AdjustTP",
+      "rva": "0x1d70f8",
+      "logged": "8.125",
+      "actual": 8.125,
+      "matched": true
+    },
+    {
+      "case": "bits-2",
+      "name": "AdjustTrailSL",
+      "rva": "0x1d7100",
+      "logged": "9.125",
+      "actual": 9.125,
+      "matched": true
+    },
+    {
+      "case": "bits-2",
+      "name": "AdjustTrailTP",
+      "rva": "0x1d7108",
+      "logged": "10.125",
+      "actual": 10.125,
+      "matched": true
+    },
+    {
+      "case": "bits-2",
+      "name": "AdjustBreakEven",
+      "rva": "0x1d7110",
+      "logged": "11.125",
+      "actual": 11.125,
+      "matched": true
+    },
+    {
+      "case": "bits-2",
+      "name": "LotSizeSettings",
+      "rva": "0x1d7118",
+      "logged": "CHECK_B3_LotSizeSettings",
+      "actual": true,
+      "matched": true
+    },
+    {
+      "case": "bits-2",
+      "name": "ManualBalance",
+      "rva": "0x1d7128",
+      "logged": "10417.125",
+      "actual": 10417.125,
+      "matched": true
+    },
+    {
+      "case": "bits-2",
+      "name": "Risk",
+      "rva": "0x1d7130",
+      "logged": "1234",
+      "actual": 1234,
+      "matched": true
+    },
+    {
+      "case": "bits-2",
+      "name": "StartLots",
+      "rva": "0x1d7138",
+      "logged": "0.023125",
+      "actual": 0.023125,
+      "matched": true
+    },
+    {
+      "case": "bits-2",
+      "name": "MaxAllowedDD",
+      "rva": "0x1d7140",
+      "logged": "27.125",
+      "actual": 27.125,
+      "matched": true
+    },
+    {
+      "case": "bits-2",
+      "name": "UseWeightedLots",
+      "rva": "0x1d7148",
+      "logged": "false",
+      "actual": 0,
+      "matched": true
+    },
+    {
+      "case": "bits-2",
+      "name": "MaxRiskPerStrategy_",
+      "rva": "0x1d7150",
+      "logged": "1.375",
+      "actual": 1.375,
+      "matched": true
+    },
+    {
+      "case": "bits-2",
+      "name": "PropFirmMaxDailyDD",
+      "rva": "0x1d7158",
+      "logged": "2.125",
+      "actual": 2.125,
+      "matched": true
+    },
+    {
+      "case": "bits-2",
+      "name": "OnlyUp",
+      "rva": "0x1d7160",
+      "logged": "false",
+      "actual": 0,
+      "matched": true
+    },
+    {
+      "case": "bits-2",
+      "name": "ResetHighestBalance",
+      "rva": "0x1d7168",
+      "logged": "false",
+      "actual": 0,
+      "matched": true
+    },
+    {
+      "case": "bits-2",
+      "name": "ResetHighestBalanceOnWithdrawal",
+      "rva": "0x1d7170",
+      "logged": "true",
+      "actual": 1,
+      "matched": true
+    },
+    {
+      "case": "bits-2",
+      "name": "CheckMargin",
+      "rva": "0x1d7178",
+      "logged": "true",
+      "actual": 1,
+      "matched": true
+    },
+    {
+      "case": "bits-2",
+      "name": "UseEquity",
+      "rva": "0x1d7180",
+      "logged": "true",
+      "actual": 1,
+      "matched": true
+    },
+    {
+      "case": "bits-2",
+      "name": "ManualStratSelect",
+      "rva": "0x1d7188",
+      "logged": "CHECK_B3_ManualStratSelect",
+      "actual": true,
+      "matched": true
+    },
+    {
+      "case": "bits-2",
+      "name": "ManStratWarn",
+      "rva": "0x1d7198",
+      "logged": "CHECK_B3_ManStratWarn",
+      "actual": true,
+      "matched": true
+    },
+    {
+      "case": "bits-2",
+      "name": "RunStrat1",
+      "rva": "0x1d71a8",
+      "logged": "true",
+      "actual": 1,
+      "matched": true
+    },
+    {
+      "case": "bits-2",
+      "name": "RunStrat2",
+      "rva": "0x1d71b0",
+      "logged": "false",
+      "actual": 0,
+      "matched": true
+    },
+    {
+      "case": "bits-2",
+      "name": "RunStrat3",
+      "rva": "0x1d71b8",
+      "logged": "false",
+      "actual": 0,
+      "matched": true
+    },
+    {
+      "case": "bits-2",
+      "name": "RunStrat4",
+      "rva": "0x1d71c0",
+      "logged": "false",
+      "actual": 0,
+      "matched": true
+    },
+    {
+      "case": "bits-2",
+      "name": "RunStrat5",
+      "rva": "0x1d71c8",
+      "logged": "false",
+      "actual": 0,
+      "matched": true
+    },
+    {
+      "case": "bits-2",
+      "name": "RunStrat6",
+      "rva": "0x1d71d0",
+      "logged": "true",
+      "actual": 1,
+      "matched": true
+    },
+    {
+      "case": "bits-2",
+      "name": "RunStrat7",
+      "rva": "0x1d71d8",
+      "logged": "true",
+      "actual": 1,
+      "matched": true
+    },
+    {
+      "case": "bits-2",
+      "name": "RunStrat8",
+      "rva": "0x1d71e0",
+      "logged": "true",
+      "actual": 1,
+      "matched": true
+    },
+    {
+      "case": "bits-2",
+      "name": "RunStrat9",
+      "rva": "0x1d71e8",
+      "logged": "true",
+      "actual": 1,
+      "matched": true
+    },
+    {
+      "case": "bits-3",
+      "name": "lijntje",
+      "rva": "0x1d6f18",
+      "logged": "CHECK_B3_lijntje",
+      "actual": true,
+      "matched": true
+    },
+    {
+      "case": "bits-3",
+      "name": "UseVariableValues",
+      "rva": "0x1d6f28",
+      "logged": "false",
+      "actual": 0,
+      "matched": true
+    },
+    {
+      "case": "bits-3",
+      "name": "AdjustLotsizeToVariableValues",
+      "rva": "0x1d6f30",
+      "logged": "false",
+      "actual": 0,
+      "matched": true
+    },
+    {
+      "case": "bits-3",
+      "name": "ShowInfoPanel",
+      "rva": "0x1d6f38",
+      "logged": "false",
+      "actual": 0,
+      "matched": true
+    },
+    {
+      "case": "bits-3",
+      "name": "UpdateInfoTesting",
+      "rva": "0x1d6f40",
+      "logged": "false",
+      "actual": 0,
+      "matched": true
+    },
+    {
+      "case": "bits-3",
+      "name": "InfoPanelSizeAdjust",
+      "rva": "0x1d6f48",
+      "logged": "1.125",
+      "actual": 1.125,
+      "matched": true
+    },
+    {
+      "case": "bits-3",
+      "name": "SetFontSize",
+      "rva": "0x1d6f50",
+      "logged": "11",
+      "actual": 11,
+      "matched": true
+    },
+    {
+      "case": "bits-3",
+      "name": "BacktestSpeed_string",
+      "rva": "0x1d6f58",
+      "logged": "CHECK_B3_BacktestSpeed_string",
+      "actual": true,
+      "matched": true
+    },
+    {
+      "case": "bits-3",
+      "name": "BacktestSpeed",
+      "rva": "0x1d6f68",
+      "logged": "1",
+      "actual": 1,
+      "matched": true
+    },
+    {
+      "case": "bits-3",
+      "name": "spreadfilter",
+      "rva": "0x1d6f70",
+      "logged": "CHECK_B3_spreadfilter",
+      "actual": true,
+      "matched": true
+    },
+    {
+      "case": "bits-3",
+      "name": "AllowBuyTrades",
+      "rva": "0x1d6f80",
+      "logged": "false",
+      "actual": 0,
+      "matched": true
+    },
+    {
+      "case": "bits-3",
+      "name": "AllowSellTrades",
+      "rva": "0x1d6f88",
+      "logged": "false",
+      "actual": 0,
+      "matched": true
+    },
+    {
+      "case": "bits-3",
+      "name": "TradeFrequency",
+      "rva": "0x1d6f90",
+      "logged": "5",
+      "actual": 5,
+      "matched": true
+    },
+    {
+      "case": "bits-3",
+      "name": "MaxSpread",
+      "rva": "0x1d6f98",
+      "logged": "617.125",
+      "actual": 617.125,
+      "matched": true
+    },
+    {
+      "case": "bits-3",
+      "name": "UseHL_TrailingSL",
+      "rva": "0x1d6fa0",
+      "logged": "false",
+      "actual": 0,
+      "matched": true
+    },
+    {
+      "case": "bits-3",
+      "name": "FridayStopHour",
+      "rva": "0x1d6fa8",
+      "logged": "23",
+      "actual": 23,
+      "matched": true
+    },
+    {
+      "case": "bits-3",
+      "name": "FridayClosePending",
+      "rva": "0x1d6fb0",
+      "logged": "true",
+      "actual": 1,
+      "matched": true
+    },
+    {
+      "case": "bits-3",
+      "name": "FridayCloseOpen",
+      "rva": "0x1d6fb8",
+      "logged": "true",
+      "actual": 1,
+      "matched": true
+    },
+    {
+      "case": "bits-3",
+      "name": "setSL_TP_After_Entry",
+      "rva": "0x1d6fc0",
+      "logged": "true",
+      "actual": 1,
+      "matched": true
+    },
+    {
+      "case": "bits-3",
+      "name": "Virtual_expiration",
+      "rva": "0x1d6fc8",
+      "logged": "true",
+      "actual": 1,
+      "matched": true
+    },
+    {
+      "case": "bits-3",
+      "name": "Randomization",
+      "rva": "0x1d6fd0",
+      "logged": "0.125",
+      "actual": 0.125,
+      "matched": true
+    },
+    {
+      "case": "bits-3",
+      "name": "FakeOutFilter",
+      "rva": "0x1d6fd8",
+      "logged": "2",
+      "actual": 2,
+      "matched": true
+    },
+    {
+      "case": "bits-3",
+      "name": "EnableVirtualSLTP",
+      "rva": "0x1d6fe0",
+      "logged": "true",
+      "actual": 1,
+      "matched": true
+    },
+    {
+      "case": "bits-3",
+      "name": "SetVSL_to_hardSL_sec_delay",
+      "rva": "0x1d6fe8",
+      "logged": "97",
+      "actual": 97,
+      "matched": true
+    },
+    {
+      "case": "bits-3",
+      "name": "ST1_MagicNumber",
+      "rva": "0x1d6ff0",
+      "logged": "53294",
+      "actual": 53294,
+      "matched": true
+    },
+    {
+      "case": "bits-3",
+      "name": "ST1_Comment",
+      "rva": "0x1d6ff8",
+      "logged": "CHECK_B3_ST1_Comment",
+      "actual": true,
+      "matched": true
+    },
+    {
+      "case": "bits-3",
+      "name": "RemoveCommentSuffix",
+      "rva": "0x1d7008",
+      "logged": "true",
+      "actual": 1,
+      "matched": true
+    },
+    {
+      "case": "bits-3",
+      "name": "NFP_FILTER",
+      "rva": "0x1d7010",
+      "logged": "CHECK_B3_NFP_FILTER",
+      "actual": true,
+      "matched": true
+    },
+    {
+      "case": "bits-3",
+      "name": "EnableNFP_Filter",
+      "rva": "0x1d7020",
+      "logged": "true",
+      "actual": 1,
+      "matched": true
+    },
+    {
+      "case": "bits-3",
+      "name": "UseMQL5Calendar",
+      "rva": "0x1d7028",
+      "logged": "true",
+      "actual": 1,
+      "matched": true
+    },
+    {
+      "case": "bits-3",
+      "name": "AutoGMT",
+      "rva": "0x1d7030",
+      "logged": "false",
+      "actual": 0,
+      "matched": true
+    },
+    {
+      "case": "bits-3",
+      "name": "Broker_GMT_OFFSET_Winter",
+      "rva": "0x1d7038",
+      "logged": "2",
+      "actual": 2,
+      "matched": true
+    },
+    {
+      "case": "bits-3",
+      "name": "Broker_GMT_OFFSET_Summer",
+      "rva": "0x1d7040",
+      "logged": "3",
+      "actual": 3,
+      "matched": true
+    },
+    {
+      "case": "bits-3",
+      "name": "NFP_CloseOpenTrades",
+      "rva": "0x1d7048",
+      "logged": "false",
+      "actual": 0,
+      "matched": true
+    },
+    {
+      "case": "bits-3",
+      "name": "NFP_ClosePendingOrders",
+      "rva": "0x1d7050",
+      "logged": "false",
+      "actual": 0,
+      "matched": true
+    },
+    {
+      "case": "bits-3",
+      "name": "NFP_MinutesBefore",
+      "rva": "0x1d7058",
+      "logged": "13",
+      "actual": 13,
+      "matched": true
+    },
+    {
+      "case": "bits-3",
+      "name": "NFP_MinutesAfter",
+      "rva": "0x1d7060",
+      "logged": "47",
+      "actual": 47,
+      "matched": true
+    },
+    {
+      "case": "bits-3",
+      "name": "IR_FILTER",
+      "rva": "0x1d7068",
+      "logged": "CHECK_B3_IR_FILTER",
+      "actual": true,
+      "matched": true
+    },
+    {
+      "case": "bits-3",
+      "name": "EnableIR_Filter",
+      "rva": "0x1d7078",
+      "logged": "false",
+      "actual": 0,
+      "matched": true
+    },
+    {
+      "case": "bits-3",
+      "name": "IR_CloseOpenTrades",
+      "rva": "0x1d7080",
+      "logged": "false",
+      "actual": 0,
+      "matched": true
+    },
+    {
+      "case": "bits-3",
+      "name": "IR_ClosePendingOrders",
+      "rva": "0x1d7088",
+      "logged": "false",
+      "actual": 0,
+      "matched": true
+    },
+    {
+      "case": "bits-3",
+      "name": "IR_MinutesBefore",
+      "rva": "0x1d7090",
+      "logged": "17",
+      "actual": 17,
+      "matched": true
+    },
+    {
+      "case": "bits-3",
+      "name": "IR_MinutesAfter",
+      "rva": "0x1d7098",
+      "logged": "43",
+      "actual": 43,
+      "matched": true
+    },
+    {
+      "case": "bits-3",
+      "name": "CPI_FILTER",
+      "rva": "0x1d70a0",
+      "logged": "CHECK_B3_CPI_FILTER",
+      "actual": true,
+      "matched": true
+    },
+    {
+      "case": "bits-3",
+      "name": "EnableCPI_Filter",
+      "rva": "0x1d70b0",
+      "logged": "false",
+      "actual": 0,
+      "matched": true
+    },
+    {
+      "case": "bits-3",
+      "name": "CPI_CloseOpenTrades",
+      "rva": "0x1d70b8",
+      "logged": "false",
+      "actual": 0,
+      "matched": true
+    },
+    {
+      "case": "bits-3",
+      "name": "CPI_ClosePendingOrders",
+      "rva": "0x1d70c0",
+      "logged": "true",
+      "actual": 1,
+      "matched": true
+    },
+    {
+      "case": "bits-3",
+      "name": "CPI_MinutesBefore",
+      "rva": "0x1d70c8",
+      "logged": "19",
+      "actual": 19,
+      "matched": true
+    },
+    {
+      "case": "bits-3",
+      "name": "CPI_MinutesAfter",
+      "rva": "0x1d70d0",
+      "logged": "41",
+      "actual": 41,
+      "matched": true
+    },
+    {
+      "case": "bits-3",
+      "name": "propfirmsettings",
+      "rva": "0x1d70d8",
+      "logged": "CHECK_B3_propfirmsettings",
+      "actual": true,
+      "matched": true
+    },
+    {
+      "case": "bits-3",
+      "name": "AdjustEntry",
+      "rva": "0x1d70e8",
+      "logged": "6.125",
+      "actual": 6.125,
+      "matched": true
+    },
+    {
+      "case": "bits-3",
+      "name": "AdjustSL",
+      "rva": "0x1d70f0",
+      "logged": "7.125",
+      "actual": 7.125,
+      "matched": true
+    },
+    {
+      "case": "bits-3",
+      "name": "AdjustTP",
+      "rva": "0x1d70f8",
+      "logged": "8.125",
+      "actual": 8.125,
+      "matched": true
+    },
+    {
+      "case": "bits-3",
+      "name": "AdjustTrailSL",
+      "rva": "0x1d7100",
+      "logged": "9.125",
+      "actual": 9.125,
+      "matched": true
+    },
+    {
+      "case": "bits-3",
+      "name": "AdjustTrailTP",
+      "rva": "0x1d7108",
+      "logged": "10.125",
+      "actual": 10.125,
+      "matched": true
+    },
+    {
+      "case": "bits-3",
+      "name": "AdjustBreakEven",
+      "rva": "0x1d7110",
+      "logged": "11.125",
+      "actual": 11.125,
+      "matched": true
+    },
+    {
+      "case": "bits-3",
+      "name": "LotSizeSettings",
+      "rva": "0x1d7118",
+      "logged": "CHECK_B3_LotSizeSettings",
+      "actual": true,
+      "matched": true
+    },
+    {
+      "case": "bits-3",
+      "name": "ManualBalance",
+      "rva": "0x1d7128",
+      "logged": "10417.125",
+      "actual": 10417.125,
+      "matched": true
+    },
+    {
+      "case": "bits-3",
+      "name": "Risk",
+      "rva": "0x1d7130",
+      "logged": "1234",
+      "actual": 1234,
+      "matched": true
+    },
+    {
+      "case": "bits-3",
+      "name": "StartLots",
+      "rva": "0x1d7138",
+      "logged": "0.023125",
+      "actual": 0.023125,
+      "matched": true
+    },
+    {
+      "case": "bits-3",
+      "name": "MaxAllowedDD",
+      "rva": "0x1d7140",
+      "logged": "27.125",
+      "actual": 27.125,
+      "matched": true
+    },
+    {
+      "case": "bits-3",
+      "name": "UseWeightedLots",
+      "rva": "0x1d7148",
+      "logged": "true",
+      "actual": 1,
+      "matched": true
+    },
+    {
+      "case": "bits-3",
+      "name": "MaxRiskPerStrategy_",
+      "rva": "0x1d7150",
+      "logged": "1.375",
+      "actual": 1.375,
+      "matched": true
+    },
+    {
+      "case": "bits-3",
+      "name": "PropFirmMaxDailyDD",
+      "rva": "0x1d7158",
+      "logged": "2.125",
+      "actual": 2.125,
+      "matched": true
+    },
+    {
+      "case": "bits-3",
+      "name": "OnlyUp",
+      "rva": "0x1d7160",
+      "logged": "true",
+      "actual": 1,
+      "matched": true
+    },
+    {
+      "case": "bits-3",
+      "name": "ResetHighestBalance",
+      "rva": "0x1d7168",
+      "logged": "true",
+      "actual": 1,
+      "matched": true
+    },
+    {
+      "case": "bits-3",
+      "name": "ResetHighestBalanceOnWithdrawal",
+      "rva": "0x1d7170",
+      "logged": "true",
+      "actual": 1,
+      "matched": true
+    },
+    {
+      "case": "bits-3",
+      "name": "CheckMargin",
+      "rva": "0x1d7178",
+      "logged": "true",
+      "actual": 1,
+      "matched": true
+    },
+    {
+      "case": "bits-3",
+      "name": "UseEquity",
+      "rva": "0x1d7180",
+      "logged": "true",
+      "actual": 1,
+      "matched": true
+    },
+    {
+      "case": "bits-3",
+      "name": "ManualStratSelect",
+      "rva": "0x1d7188",
+      "logged": "CHECK_B3_ManualStratSelect",
+      "actual": true,
+      "matched": true
+    },
+    {
+      "case": "bits-3",
+      "name": "ManStratWarn",
+      "rva": "0x1d7198",
+      "logged": "CHECK_B3_ManStratWarn",
+      "actual": true,
+      "matched": true
+    },
+    {
+      "case": "bits-3",
+      "name": "RunStrat1",
+      "rva": "0x1d71a8",
+      "logged": "true",
+      "actual": 1,
+      "matched": true
+    },
+    {
+      "case": "bits-3",
+      "name": "RunStrat2",
+      "rva": "0x1d71b0",
+      "logged": "false",
+      "actual": 0,
+      "matched": true
+    },
+    {
+      "case": "bits-3",
+      "name": "RunStrat3",
+      "rva": "0x1d71b8",
+      "logged": "false",
+      "actual": 0,
+      "matched": true
+    },
+    {
+      "case": "bits-3",
+      "name": "RunStrat4",
+      "rva": "0x1d71c0",
+      "logged": "false",
+      "actual": 0,
+      "matched": true
+    },
+    {
+      "case": "bits-3",
+      "name": "RunStrat5",
+      "rva": "0x1d71c8",
+      "logged": "false",
+      "actual": 0,
+      "matched": true
+    },
+    {
+      "case": "bits-3",
+      "name": "RunStrat6",
+      "rva": "0x1d71d0",
+      "logged": "false",
+      "actual": 0,
+      "matched": true
+    },
+    {
+      "case": "bits-3",
+      "name": "RunStrat7",
+      "rva": "0x1d71d8",
+      "logged": "false",
+      "actual": 0,
+      "matched": true
+    },
+    {
+      "case": "bits-3",
+      "name": "RunStrat8",
+      "rva": "0x1d71e0",
+      "logged": "false",
+      "actual": 0,
+      "matched": true
+    },
+    {
+      "case": "bits-3",
+      "name": "RunStrat9",
+      "rva": "0x1d71e8",
+      "logged": "false",
+      "actual": 0,
+      "matched": true
+    },
+    {
+      "case": "bits-4",
+      "name": "lijntje",
+      "rva": "0x1d6f18",
+      "logged": "CHECK_B3_lijntje",
+      "actual": true,
+      "matched": true
+    },
+    {
+      "case": "bits-4",
+      "name": "UseVariableValues",
+      "rva": "0x1d6f28",
+      "logged": "false",
+      "actual": 0,
+      "matched": true
+    },
+    {
+      "case": "bits-4",
+      "name": "AdjustLotsizeToVariableValues",
+      "rva": "0x1d6f30",
+      "logged": "false",
+      "actual": 0,
+      "matched": true
+    },
+    {
+      "case": "bits-4",
+      "name": "ShowInfoPanel",
+      "rva": "0x1d6f38",
+      "logged": "false",
+      "actual": 0,
+      "matched": true
+    },
+    {
+      "case": "bits-4",
+      "name": "UpdateInfoTesting",
+      "rva": "0x1d6f40",
+      "logged": "false",
+      "actual": 0,
+      "matched": true
+    },
+    {
+      "case": "bits-4",
+      "name": "InfoPanelSizeAdjust",
+      "rva": "0x1d6f48",
+      "logged": "1.125",
+      "actual": 1.125,
+      "matched": true
+    },
+    {
+      "case": "bits-4",
+      "name": "SetFontSize",
+      "rva": "0x1d6f50",
+      "logged": "11",
+      "actual": 11,
+      "matched": true
+    },
+    {
+      "case": "bits-4",
+      "name": "BacktestSpeed_string",
+      "rva": "0x1d6f58",
+      "logged": "CHECK_B3_BacktestSpeed_string",
+      "actual": true,
+      "matched": true
+    },
+    {
+      "case": "bits-4",
+      "name": "BacktestSpeed",
+      "rva": "0x1d6f68",
+      "logged": "1",
+      "actual": 1,
+      "matched": true
+    },
+    {
+      "case": "bits-4",
+      "name": "spreadfilter",
+      "rva": "0x1d6f70",
+      "logged": "CHECK_B3_spreadfilter",
+      "actual": true,
+      "matched": true
+    },
+    {
+      "case": "bits-4",
+      "name": "AllowBuyTrades",
+      "rva": "0x1d6f80",
+      "logged": "false",
+      "actual": 0,
+      "matched": true
+    },
+    {
+      "case": "bits-4",
+      "name": "AllowSellTrades",
+      "rva": "0x1d6f88",
+      "logged": "false",
+      "actual": 0,
+      "matched": true
+    },
+    {
+      "case": "bits-4",
+      "name": "TradeFrequency",
+      "rva": "0x1d6f90",
+      "logged": "5",
+      "actual": 5,
+      "matched": true
+    },
+    {
+      "case": "bits-4",
+      "name": "MaxSpread",
+      "rva": "0x1d6f98",
+      "logged": "617.125",
+      "actual": 617.125,
+      "matched": true
+    },
+    {
+      "case": "bits-4",
+      "name": "UseHL_TrailingSL",
+      "rva": "0x1d6fa0",
+      "logged": "false",
+      "actual": 0,
+      "matched": true
+    },
+    {
+      "case": "bits-4",
+      "name": "FridayStopHour",
+      "rva": "0x1d6fa8",
+      "logged": "23",
+      "actual": 23,
+      "matched": true
+    },
+    {
+      "case": "bits-4",
+      "name": "FridayClosePending",
+      "rva": "0x1d6fb0",
+      "logged": "false",
+      "actual": 0,
+      "matched": true
+    },
+    {
+      "case": "bits-4",
+      "name": "FridayCloseOpen",
+      "rva": "0x1d6fb8",
+      "logged": "false",
+      "actual": 0,
+      "matched": true
+    },
+    {
+      "case": "bits-4",
+      "name": "setSL_TP_After_Entry",
+      "rva": "0x1d6fc0",
+      "logged": "false",
+      "actual": 0,
+      "matched": true
+    },
+    {
+      "case": "bits-4",
+      "name": "Virtual_expiration",
+      "rva": "0x1d6fc8",
+      "logged": "false",
+      "actual": 0,
+      "matched": true
+    },
+    {
+      "case": "bits-4",
+      "name": "Randomization",
+      "rva": "0x1d6fd0",
+      "logged": "0.125",
+      "actual": 0.125,
+      "matched": true
+    },
+    {
+      "case": "bits-4",
+      "name": "FakeOutFilter",
+      "rva": "0x1d6fd8",
+      "logged": "2",
+      "actual": 2,
+      "matched": true
+    },
+    {
+      "case": "bits-4",
+      "name": "EnableVirtualSLTP",
+      "rva": "0x1d6fe0",
+      "logged": "false",
+      "actual": 0,
+      "matched": true
+    },
+    {
+      "case": "bits-4",
+      "name": "SetVSL_to_hardSL_sec_delay",
+      "rva": "0x1d6fe8",
+      "logged": "97",
+      "actual": 97,
+      "matched": true
+    },
+    {
+      "case": "bits-4",
+      "name": "ST1_MagicNumber",
+      "rva": "0x1d6ff0",
+      "logged": "53294",
+      "actual": 53294,
+      "matched": true
+    },
+    {
+      "case": "bits-4",
+      "name": "ST1_Comment",
+      "rva": "0x1d6ff8",
+      "logged": "CHECK_B3_ST1_Comment",
+      "actual": true,
+      "matched": true
+    },
+    {
+      "case": "bits-4",
+      "name": "RemoveCommentSuffix",
+      "rva": "0x1d7008",
+      "logged": "false",
+      "actual": 0,
+      "matched": true
+    },
+    {
+      "case": "bits-4",
+      "name": "NFP_FILTER",
+      "rva": "0x1d7010",
+      "logged": "CHECK_B3_NFP_FILTER",
+      "actual": true,
+      "matched": true
+    },
+    {
+      "case": "bits-4",
+      "name": "EnableNFP_Filter",
+      "rva": "0x1d7020",
+      "logged": "false",
+      "actual": 0,
+      "matched": true
+    },
+    {
+      "case": "bits-4",
+      "name": "UseMQL5Calendar",
+      "rva": "0x1d7028",
+      "logged": "false",
+      "actual": 0,
+      "matched": true
+    },
+    {
+      "case": "bits-4",
+      "name": "AutoGMT",
+      "rva": "0x1d7030",
+      "logged": "true",
+      "actual": 1,
+      "matched": true
+    },
+    {
+      "case": "bits-4",
+      "name": "Broker_GMT_OFFSET_Winter",
+      "rva": "0x1d7038",
+      "logged": "2",
+      "actual": 2,
+      "matched": true
+    },
+    {
+      "case": "bits-4",
+      "name": "Broker_GMT_OFFSET_Summer",
+      "rva": "0x1d7040",
+      "logged": "3",
+      "actual": 3,
+      "matched": true
+    },
+    {
+      "case": "bits-4",
+      "name": "NFP_CloseOpenTrades",
+      "rva": "0x1d7048",
+      "logged": "true",
+      "actual": 1,
+      "matched": true
+    },
+    {
+      "case": "bits-4",
+      "name": "NFP_ClosePendingOrders",
+      "rva": "0x1d7050",
+      "logged": "true",
+      "actual": 1,
+      "matched": true
+    },
+    {
+      "case": "bits-4",
+      "name": "NFP_MinutesBefore",
+      "rva": "0x1d7058",
+      "logged": "13",
+      "actual": 13,
+      "matched": true
+    },
+    {
+      "case": "bits-4",
+      "name": "NFP_MinutesAfter",
+      "rva": "0x1d7060",
+      "logged": "47",
+      "actual": 47,
+      "matched": true
+    },
+    {
+      "case": "bits-4",
+      "name": "IR_FILTER",
+      "rva": "0x1d7068",
+      "logged": "CHECK_B3_IR_FILTER",
+      "actual": true,
+      "matched": true
+    },
+    {
+      "case": "bits-4",
+      "name": "EnableIR_Filter",
+      "rva": "0x1d7078",
+      "logged": "true",
+      "actual": 1,
+      "matched": true
+    },
+    {
+      "case": "bits-4",
+      "name": "IR_CloseOpenTrades",
+      "rva": "0x1d7080",
+      "logged": "true",
+      "actual": 1,
+      "matched": true
+    },
+    {
+      "case": "bits-4",
+      "name": "IR_ClosePendingOrders",
+      "rva": "0x1d7088",
+      "logged": "true",
+      "actual": 1,
+      "matched": true
+    },
+    {
+      "case": "bits-4",
+      "name": "IR_MinutesBefore",
+      "rva": "0x1d7090",
+      "logged": "17",
+      "actual": 17,
+      "matched": true
+    },
+    {
+      "case": "bits-4",
+      "name": "IR_MinutesAfter",
+      "rva": "0x1d7098",
+      "logged": "43",
+      "actual": 43,
+      "matched": true
+    },
+    {
+      "case": "bits-4",
+      "name": "CPI_FILTER",
+      "rva": "0x1d70a0",
+      "logged": "CHECK_B3_CPI_FILTER",
+      "actual": true,
+      "matched": true
+    },
+    {
+      "case": "bits-4",
+      "name": "EnableCPI_Filter",
+      "rva": "0x1d70b0",
+      "logged": "true",
+      "actual": 1,
+      "matched": true
+    },
+    {
+      "case": "bits-4",
+      "name": "CPI_CloseOpenTrades",
+      "rva": "0x1d70b8",
+      "logged": "true",
+      "actual": 1,
+      "matched": true
+    },
+    {
+      "case": "bits-4",
+      "name": "CPI_ClosePendingOrders",
+      "rva": "0x1d70c0",
+      "logged": "true",
+      "actual": 1,
+      "matched": true
+    },
+    {
+      "case": "bits-4",
+      "name": "CPI_MinutesBefore",
+      "rva": "0x1d70c8",
+      "logged": "19",
+      "actual": 19,
+      "matched": true
+    },
+    {
+      "case": "bits-4",
+      "name": "CPI_MinutesAfter",
+      "rva": "0x1d70d0",
+      "logged": "41",
+      "actual": 41,
+      "matched": true
+    },
+    {
+      "case": "bits-4",
+      "name": "propfirmsettings",
+      "rva": "0x1d70d8",
+      "logged": "CHECK_B3_propfirmsettings",
+      "actual": true,
+      "matched": true
+    },
+    {
+      "case": "bits-4",
+      "name": "AdjustEntry",
+      "rva": "0x1d70e8",
+      "logged": "6.125",
+      "actual": 6.125,
+      "matched": true
+    },
+    {
+      "case": "bits-4",
+      "name": "AdjustSL",
+      "rva": "0x1d70f0",
+      "logged": "7.125",
+      "actual": 7.125,
+      "matched": true
+    },
+    {
+      "case": "bits-4",
+      "name": "AdjustTP",
+      "rva": "0x1d70f8",
+      "logged": "8.125",
+      "actual": 8.125,
+      "matched": true
+    },
+    {
+      "case": "bits-4",
+      "name": "AdjustTrailSL",
+      "rva": "0x1d7100",
+      "logged": "9.125",
+      "actual": 9.125,
+      "matched": true
+    },
+    {
+      "case": "bits-4",
+      "name": "AdjustTrailTP",
+      "rva": "0x1d7108",
+      "logged": "10.125",
+      "actual": 10.125,
+      "matched": true
+    },
+    {
+      "case": "bits-4",
+      "name": "AdjustBreakEven",
+      "rva": "0x1d7110",
+      "logged": "11.125",
+      "actual": 11.125,
+      "matched": true
+    },
+    {
+      "case": "bits-4",
+      "name": "LotSizeSettings",
+      "rva": "0x1d7118",
+      "logged": "CHECK_B3_LotSizeSettings",
+      "actual": true,
+      "matched": true
+    },
+    {
+      "case": "bits-4",
+      "name": "ManualBalance",
+      "rva": "0x1d7128",
+      "logged": "10417.125",
+      "actual": 10417.125,
+      "matched": true
+    },
+    {
+      "case": "bits-4",
+      "name": "Risk",
+      "rva": "0x1d7130",
+      "logged": "1234",
+      "actual": 1234,
+      "matched": true
+    },
+    {
+      "case": "bits-4",
+      "name": "StartLots",
+      "rva": "0x1d7138",
+      "logged": "0.023125",
+      "actual": 0.023125,
+      "matched": true
+    },
+    {
+      "case": "bits-4",
+      "name": "MaxAllowedDD",
+      "rva": "0x1d7140",
+      "logged": "27.125",
+      "actual": 27.125,
+      "matched": true
+    },
+    {
+      "case": "bits-4",
+      "name": "UseWeightedLots",
+      "rva": "0x1d7148",
+      "logged": "true",
+      "actual": 1,
+      "matched": true
+    },
+    {
+      "case": "bits-4",
+      "name": "MaxRiskPerStrategy_",
+      "rva": "0x1d7150",
+      "logged": "1.375",
+      "actual": 1.375,
+      "matched": true
+    },
+    {
+      "case": "bits-4",
+      "name": "PropFirmMaxDailyDD",
+      "rva": "0x1d7158",
+      "logged": "2.125",
+      "actual": 2.125,
+      "matched": true
+    },
+    {
+      "case": "bits-4",
+      "name": "OnlyUp",
+      "rva": "0x1d7160",
+      "logged": "true",
+      "actual": 1,
+      "matched": true
+    },
+    {
+      "case": "bits-4",
+      "name": "ResetHighestBalance",
+      "rva": "0x1d7168",
+      "logged": "true",
+      "actual": 1,
+      "matched": true
+    },
+    {
+      "case": "bits-4",
+      "name": "ResetHighestBalanceOnWithdrawal",
+      "rva": "0x1d7170",
+      "logged": "true",
+      "actual": 1,
+      "matched": true
+    },
+    {
+      "case": "bits-4",
+      "name": "CheckMargin",
+      "rva": "0x1d7178",
+      "logged": "true",
+      "actual": 1,
+      "matched": true
+    },
+    {
+      "case": "bits-4",
+      "name": "UseEquity",
+      "rva": "0x1d7180",
+      "logged": "true",
+      "actual": 1,
+      "matched": true
+    },
+    {
+      "case": "bits-4",
+      "name": "ManualStratSelect",
+      "rva": "0x1d7188",
+      "logged": "CHECK_B3_ManualStratSelect",
+      "actual": true,
+      "matched": true
+    },
+    {
+      "case": "bits-4",
+      "name": "ManStratWarn",
+      "rva": "0x1d7198",
+      "logged": "CHECK_B3_ManStratWarn",
+      "actual": true,
+      "matched": true
+    },
+    {
+      "case": "bits-4",
+      "name": "RunStrat1",
+      "rva": "0x1d71a8",
+      "logged": "true",
+      "actual": 1,
+      "matched": true
+    },
+    {
+      "case": "bits-4",
+      "name": "RunStrat2",
+      "rva": "0x1d71b0",
+      "logged": "false",
+      "actual": 0,
+      "matched": true
+    },
+    {
+      "case": "bits-4",
+      "name": "RunStrat3",
+      "rva": "0x1d71b8",
+      "logged": "false",
+      "actual": 0,
+      "matched": true
+    },
+    {
+      "case": "bits-4",
+      "name": "RunStrat4",
+      "rva": "0x1d71c0",
+      "logged": "false",
+      "actual": 0,
+      "matched": true
+    },
+    {
+      "case": "bits-4",
+      "name": "RunStrat5",
+      "rva": "0x1d71c8",
+      "logged": "false",
+      "actual": 0,
+      "matched": true
+    },
+    {
+      "case": "bits-4",
+      "name": "RunStrat6",
+      "rva": "0x1d71d0",
+      "logged": "false",
+      "actual": 0,
+      "matched": true
+    },
+    {
+      "case": "bits-4",
+      "name": "RunStrat7",
+      "rva": "0x1d71d8",
+      "logged": "false",
+      "actual": 0,
+      "matched": true
+    },
+    {
+      "case": "bits-4",
+      "name": "RunStrat8",
+      "rva": "0x1d71e0",
+      "logged": "false",
+      "actual": 0,
+      "matched": true
+    },
+    {
+      "case": "bits-4",
+      "name": "RunStrat9",
+      "rva": "0x1d71e8",
+      "logged": "false",
+      "actual": 0,
+      "matched": true
+    },
+    {
+      "case": "bits-5",
+      "name": "lijntje",
+      "rva": "0x1d6f18",
+      "logged": "CHECK_B3_lijntje",
+      "actual": true,
+      "matched": true
+    },
+    {
+      "case": "bits-5",
+      "name": "UseVariableValues",
+      "rva": "0x1d6f28",
+      "logged": "false",
+      "actual": 0,
+      "matched": true
+    },
+    {
+      "case": "bits-5",
+      "name": "AdjustLotsizeToVariableValues",
+      "rva": "0x1d6f30",
+      "logged": "false",
+      "actual": 0,
+      "matched": true
+    },
+    {
+      "case": "bits-5",
+      "name": "ShowInfoPanel",
+      "rva": "0x1d6f38",
+      "logged": "false",
+      "actual": 0,
+      "matched": true
+    },
+    {
+      "case": "bits-5",
+      "name": "UpdateInfoTesting",
+      "rva": "0x1d6f40",
+      "logged": "false",
+      "actual": 0,
+      "matched": true
+    },
+    {
+      "case": "bits-5",
+      "name": "InfoPanelSizeAdjust",
+      "rva": "0x1d6f48",
+      "logged": "1.125",
+      "actual": 1.125,
+      "matched": true
+    },
+    {
+      "case": "bits-5",
+      "name": "SetFontSize",
+      "rva": "0x1d6f50",
+      "logged": "11",
+      "actual": 11,
+      "matched": true
+    },
+    {
+      "case": "bits-5",
+      "name": "BacktestSpeed_string",
+      "rva": "0x1d6f58",
+      "logged": "CHECK_B3_BacktestSpeed_string",
+      "actual": true,
+      "matched": true
+    },
+    {
+      "case": "bits-5",
+      "name": "BacktestSpeed",
+      "rva": "0x1d6f68",
+      "logged": "1",
+      "actual": 1,
+      "matched": true
+    },
+    {
+      "case": "bits-5",
+      "name": "spreadfilter",
+      "rva": "0x1d6f70",
+      "logged": "CHECK_B3_spreadfilter",
+      "actual": true,
+      "matched": true
+    },
+    {
+      "case": "bits-5",
+      "name": "AllowBuyTrades",
+      "rva": "0x1d6f80",
+      "logged": "false",
+      "actual": 0,
+      "matched": true
+    },
+    {
+      "case": "bits-5",
+      "name": "AllowSellTrades",
+      "rva": "0x1d6f88",
+      "logged": "false",
+      "actual": 0,
+      "matched": true
+    },
+    {
+      "case": "bits-5",
+      "name": "TradeFrequency",
+      "rva": "0x1d6f90",
+      "logged": "5",
+      "actual": 5,
+      "matched": true
+    },
+    {
+      "case": "bits-5",
+      "name": "MaxSpread",
+      "rva": "0x1d6f98",
+      "logged": "617.125",
+      "actual": 617.125,
+      "matched": true
+    },
+    {
+      "case": "bits-5",
+      "name": "UseHL_TrailingSL",
+      "rva": "0x1d6fa0",
+      "logged": "false",
+      "actual": 0,
+      "matched": true
+    },
+    {
+      "case": "bits-5",
+      "name": "FridayStopHour",
+      "rva": "0x1d6fa8",
+      "logged": "23",
+      "actual": 23,
+      "matched": true
+    },
+    {
+      "case": "bits-5",
+      "name": "FridayClosePending",
+      "rva": "0x1d6fb0",
+      "logged": "false",
+      "actual": 0,
+      "matched": true
+    },
+    {
+      "case": "bits-5",
+      "name": "FridayCloseOpen",
+      "rva": "0x1d6fb8",
+      "logged": "false",
+      "actual": 0,
+      "matched": true
+    },
+    {
+      "case": "bits-5",
+      "name": "setSL_TP_After_Entry",
+      "rva": "0x1d6fc0",
+      "logged": "false",
+      "actual": 0,
+      "matched": true
+    },
+    {
+      "case": "bits-5",
+      "name": "Virtual_expiration",
+      "rva": "0x1d6fc8",
+      "logged": "false",
+      "actual": 0,
+      "matched": true
+    },
+    {
+      "case": "bits-5",
+      "name": "Randomization",
+      "rva": "0x1d6fd0",
+      "logged": "0.125",
+      "actual": 0.125,
+      "matched": true
+    },
+    {
+      "case": "bits-5",
+      "name": "FakeOutFilter",
+      "rva": "0x1d6fd8",
+      "logged": "2",
+      "actual": 2,
+      "matched": true
+    },
+    {
+      "case": "bits-5",
+      "name": "EnableVirtualSLTP",
+      "rva": "0x1d6fe0",
+      "logged": "false",
+      "actual": 0,
+      "matched": true
+    },
+    {
+      "case": "bits-5",
+      "name": "SetVSL_to_hardSL_sec_delay",
+      "rva": "0x1d6fe8",
+      "logged": "97",
+      "actual": 97,
+      "matched": true
+    },
+    {
+      "case": "bits-5",
+      "name": "ST1_MagicNumber",
+      "rva": "0x1d6ff0",
+      "logged": "53294",
+      "actual": 53294,
+      "matched": true
+    },
+    {
+      "case": "bits-5",
+      "name": "ST1_Comment",
+      "rva": "0x1d6ff8",
+      "logged": "CHECK_B3_ST1_Comment",
+      "actual": true,
+      "matched": true
+    },
+    {
+      "case": "bits-5",
+      "name": "RemoveCommentSuffix",
+      "rva": "0x1d7008",
+      "logged": "false",
+      "actual": 0,
+      "matched": true
+    },
+    {
+      "case": "bits-5",
+      "name": "NFP_FILTER",
+      "rva": "0x1d7010",
+      "logged": "CHECK_B3_NFP_FILTER",
+      "actual": true,
+      "matched": true
+    },
+    {
+      "case": "bits-5",
+      "name": "EnableNFP_Filter",
+      "rva": "0x1d7020",
+      "logged": "false",
+      "actual": 0,
+      "matched": true
+    },
+    {
+      "case": "bits-5",
+      "name": "UseMQL5Calendar",
+      "rva": "0x1d7028",
+      "logged": "false",
+      "actual": 0,
+      "matched": true
+    },
+    {
+      "case": "bits-5",
+      "name": "AutoGMT",
+      "rva": "0x1d7030",
+      "logged": "false",
+      "actual": 0,
+      "matched": true
+    },
+    {
+      "case": "bits-5",
+      "name": "Broker_GMT_OFFSET_Winter",
+      "rva": "0x1d7038",
+      "logged": "2",
+      "actual": 2,
+      "matched": true
+    },
+    {
+      "case": "bits-5",
+      "name": "Broker_GMT_OFFSET_Summer",
+      "rva": "0x1d7040",
+      "logged": "3",
+      "actual": 3,
+      "matched": true
+    },
+    {
+      "case": "bits-5",
+      "name": "NFP_CloseOpenTrades",
+      "rva": "0x1d7048",
+      "logged": "false",
+      "actual": 0,
+      "matched": true
+    },
+    {
+      "case": "bits-5",
+      "name": "NFP_ClosePendingOrders",
+      "rva": "0x1d7050",
+      "logged": "false",
+      "actual": 0,
+      "matched": true
+    },
+    {
+      "case": "bits-5",
+      "name": "NFP_MinutesBefore",
+      "rva": "0x1d7058",
+      "logged": "13",
+      "actual": 13,
+      "matched": true
+    },
+    {
+      "case": "bits-5",
+      "name": "NFP_MinutesAfter",
+      "rva": "0x1d7060",
+      "logged": "47",
+      "actual": 47,
+      "matched": true
+    },
+    {
+      "case": "bits-5",
+      "name": "IR_FILTER",
+      "rva": "0x1d7068",
+      "logged": "CHECK_B3_IR_FILTER",
+      "actual": true,
+      "matched": true
+    },
+    {
+      "case": "bits-5",
+      "name": "EnableIR_Filter",
+      "rva": "0x1d7078",
+      "logged": "false",
+      "actual": 0,
+      "matched": true
+    },
+    {
+      "case": "bits-5",
+      "name": "IR_CloseOpenTrades",
+      "rva": "0x1d7080",
+      "logged": "false",
+      "actual": 0,
+      "matched": true
+    },
+    {
+      "case": "bits-5",
+      "name": "IR_ClosePendingOrders",
+      "rva": "0x1d7088",
+      "logged": "false",
+      "actual": 0,
+      "matched": true
+    },
+    {
+      "case": "bits-5",
+      "name": "IR_MinutesBefore",
+      "rva": "0x1d7090",
+      "logged": "17",
+      "actual": 17,
+      "matched": true
+    },
+    {
+      "case": "bits-5",
+      "name": "IR_MinutesAfter",
+      "rva": "0x1d7098",
+      "logged": "43",
+      "actual": 43,
+      "matched": true
+    },
+    {
+      "case": "bits-5",
+      "name": "CPI_FILTER",
+      "rva": "0x1d70a0",
+      "logged": "CHECK_B3_CPI_FILTER",
+      "actual": true,
+      "matched": true
+    },
+    {
+      "case": "bits-5",
+      "name": "EnableCPI_Filter",
+      "rva": "0x1d70b0",
+      "logged": "false",
+      "actual": 0,
+      "matched": true
+    },
+    {
+      "case": "bits-5",
+      "name": "CPI_CloseOpenTrades",
+      "rva": "0x1d70b8",
+      "logged": "false",
+      "actual": 0,
+      "matched": true
+    },
+    {
+      "case": "bits-5",
+      "name": "CPI_ClosePendingOrders",
+      "rva": "0x1d70c0",
+      "logged": "false",
+      "actual": 0,
+      "matched": true
+    },
+    {
+      "case": "bits-5",
+      "name": "CPI_MinutesBefore",
+      "rva": "0x1d70c8",
+      "logged": "19",
+      "actual": 19,
+      "matched": true
+    },
+    {
+      "case": "bits-5",
+      "name": "CPI_MinutesAfter",
+      "rva": "0x1d70d0",
+      "logged": "41",
+      "actual": 41,
+      "matched": true
+    },
+    {
+      "case": "bits-5",
+      "name": "propfirmsettings",
+      "rva": "0x1d70d8",
+      "logged": "CHECK_B3_propfirmsettings",
+      "actual": true,
+      "matched": true
+    },
+    {
+      "case": "bits-5",
+      "name": "AdjustEntry",
+      "rva": "0x1d70e8",
+      "logged": "6.125",
+      "actual": 6.125,
+      "matched": true
+    },
+    {
+      "case": "bits-5",
+      "name": "AdjustSL",
+      "rva": "0x1d70f0",
+      "logged": "7.125",
+      "actual": 7.125,
+      "matched": true
+    },
+    {
+      "case": "bits-5",
+      "name": "AdjustTP",
+      "rva": "0x1d70f8",
+      "logged": "8.125",
+      "actual": 8.125,
+      "matched": true
+    },
+    {
+      "case": "bits-5",
+      "name": "AdjustTrailSL",
+      "rva": "0x1d7100",
+      "logged": "9.125",
+      "actual": 9.125,
+      "matched": true
+    },
+    {
+      "case": "bits-5",
+      "name": "AdjustTrailTP",
+      "rva": "0x1d7108",
+      "logged": "10.125",
+      "actual": 10.125,
+      "matched": true
+    },
+    {
+      "case": "bits-5",
+      "name": "AdjustBreakEven",
+      "rva": "0x1d7110",
+      "logged": "11.125",
+      "actual": 11.125,
+      "matched": true
+    },
+    {
+      "case": "bits-5",
+      "name": "LotSizeSettings",
+      "rva": "0x1d7118",
+      "logged": "CHECK_B3_LotSizeSettings",
+      "actual": true,
+      "matched": true
+    },
+    {
+      "case": "bits-5",
+      "name": "ManualBalance",
+      "rva": "0x1d7128",
+      "logged": "10417.125",
+      "actual": 10417.125,
+      "matched": true
+    },
+    {
+      "case": "bits-5",
+      "name": "Risk",
+      "rva": "0x1d7130",
+      "logged": "1234",
+      "actual": 1234,
+      "matched": true
+    },
+    {
+      "case": "bits-5",
+      "name": "StartLots",
+      "rva": "0x1d7138",
+      "logged": "0.023125",
+      "actual": 0.023125,
+      "matched": true
+    },
+    {
+      "case": "bits-5",
+      "name": "MaxAllowedDD",
+      "rva": "0x1d7140",
+      "logged": "27.125",
+      "actual": 27.125,
+      "matched": true
+    },
+    {
+      "case": "bits-5",
+      "name": "UseWeightedLots",
+      "rva": "0x1d7148",
+      "logged": "false",
+      "actual": 0,
+      "matched": true
+    },
+    {
+      "case": "bits-5",
+      "name": "MaxRiskPerStrategy_",
+      "rva": "0x1d7150",
+      "logged": "1.375",
+      "actual": 1.375,
+      "matched": true
+    },
+    {
+      "case": "bits-5",
+      "name": "PropFirmMaxDailyDD",
+      "rva": "0x1d7158",
+      "logged": "2.125",
+      "actual": 2.125,
+      "matched": true
+    },
+    {
+      "case": "bits-5",
+      "name": "OnlyUp",
+      "rva": "0x1d7160",
+      "logged": "false",
+      "actual": 0,
+      "matched": true
+    },
+    {
+      "case": "bits-5",
+      "name": "ResetHighestBalance",
+      "rva": "0x1d7168",
+      "logged": "false",
+      "actual": 0,
+      "matched": true
+    },
+    {
+      "case": "bits-5",
+      "name": "ResetHighestBalanceOnWithdrawal",
+      "rva": "0x1d7170",
+      "logged": "false",
+      "actual": 0,
+      "matched": true
+    },
+    {
+      "case": "bits-5",
+      "name": "CheckMargin",
+      "rva": "0x1d7178",
+      "logged": "false",
+      "actual": 0,
+      "matched": true
+    },
+    {
+      "case": "bits-5",
+      "name": "UseEquity",
+      "rva": "0x1d7180",
+      "logged": "false",
+      "actual": 0,
+      "matched": true
+    },
+    {
+      "case": "bits-5",
+      "name": "ManualStratSelect",
+      "rva": "0x1d7188",
+      "logged": "CHECK_B3_ManualStratSelect",
+      "actual": true,
+      "matched": true
+    },
+    {
+      "case": "bits-5",
+      "name": "ManStratWarn",
+      "rva": "0x1d7198",
+      "logged": "CHECK_B3_ManStratWarn",
+      "actual": true,
+      "matched": true
+    },
+    {
+      "case": "bits-5",
+      "name": "RunStrat1",
+      "rva": "0x1d71a8",
+      "logged": "false",
+      "actual": 0,
+      "matched": true
+    },
+    {
+      "case": "bits-5",
+      "name": "RunStrat2",
+      "rva": "0x1d71b0",
+      "logged": "true",
+      "actual": 1,
+      "matched": true
+    },
+    {
+      "case": "bits-5",
+      "name": "RunStrat3",
+      "rva": "0x1d71b8",
+      "logged": "true",
+      "actual": 1,
+      "matched": true
+    },
+    {
+      "case": "bits-5",
+      "name": "RunStrat4",
+      "rva": "0x1d71c0",
+      "logged": "true",
+      "actual": 1,
+      "matched": true
+    },
+    {
+      "case": "bits-5",
+      "name": "RunStrat5",
+      "rva": "0x1d71c8",
+      "logged": "true",
+      "actual": 1,
+      "matched": true
+    },
+    {
+      "case": "bits-5",
+      "name": "RunStrat6",
+      "rva": "0x1d71d0",
+      "logged": "true",
+      "actual": 1,
+      "matched": true
+    },
+    {
+      "case": "bits-5",
+      "name": "RunStrat7",
+      "rva": "0x1d71d8",
+      "logged": "true",
+      "actual": 1,
+      "matched": true
+    },
+    {
+      "case": "bits-5",
+      "name": "RunStrat8",
+      "rva": "0x1d71e0",
+      "logged": "true",
+      "actual": 1,
+      "matched": true
+    },
+    {
+      "case": "bits-5",
+      "name": "RunStrat9",
+      "rva": "0x1d71e8",
+      "logged": "true",
+      "actual": 1,
+      "matched": true
+    },
+    {
+      "case": "options-low",
+      "name": "lijntje",
+      "rva": "0x1d6f18",
+      "logged": "CHECK_B3_lijntje",
+      "actual": true,
+      "matched": true
+    },
+    {
+      "case": "options-low",
+      "name": "UseVariableValues",
+      "rva": "0x1d6f28",
+      "logged": "true",
+      "actual": 1,
+      "matched": true
+    },
+    {
+      "case": "options-low",
+      "name": "AdjustLotsizeToVariableValues",
+      "rva": "0x1d6f30",
+      "logged": "true",
+      "actual": 1,
+      "matched": true
+    },
+    {
+      "case": "options-low",
+      "name": "ShowInfoPanel",
+      "rva": "0x1d6f38",
+      "logged": "true",
+      "actual": 1,
+      "matched": true
+    },
+    {
+      "case": "options-low",
+      "name": "UpdateInfoTesting",
+      "rva": "0x1d6f40",
+      "logged": "false",
+      "actual": 0,
+      "matched": true
+    },
+    {
+      "case": "options-low",
+      "name": "InfoPanelSizeAdjust",
+      "rva": "0x1d6f48",
+      "logged": "1.125",
+      "actual": 1.125,
+      "matched": true
+    },
+    {
+      "case": "options-low",
+      "name": "SetFontSize",
+      "rva": "0x1d6f50",
+      "logged": "11",
+      "actual": 11,
+      "matched": true
+    },
+    {
+      "case": "options-low",
+      "name": "BacktestSpeed_string",
+      "rva": "0x1d6f58",
+      "logged": "CHECK_B3_BacktestSpeed_string",
+      "actual": true,
+      "matched": true
+    },
+    {
+      "case": "options-low",
+      "name": "BacktestSpeed",
+      "rva": "0x1d6f68",
+      "logged": "2",
+      "actual": 2,
+      "matched": true
+    },
+    {
+      "case": "options-low",
+      "name": "spreadfilter",
+      "rva": "0x1d6f70",
+      "logged": "CHECK_B3_spreadfilter",
+      "actual": true,
+      "matched": true
+    },
+    {
+      "case": "options-low",
+      "name": "AllowBuyTrades",
+      "rva": "0x1d6f80",
+      "logged": "true",
+      "actual": 1,
+      "matched": true
+    },
+    {
+      "case": "options-low",
+      "name": "AllowSellTrades",
+      "rva": "0x1d6f88",
+      "logged": "true",
+      "actual": 1,
+      "matched": true
+    },
+    {
+      "case": "options-low",
+      "name": "TradeFrequency",
+      "rva": "0x1d6f90",
+      "logged": "0",
+      "actual": 0,
+      "matched": true
+    },
+    {
+      "case": "options-low",
+      "name": "MaxSpread",
+      "rva": "0x1d6f98",
+      "logged": "617.125",
+      "actual": 617.125,
+      "matched": true
+    },
+    {
+      "case": "options-low",
+      "name": "UseHL_TrailingSL",
+      "rva": "0x1d6fa0",
+      "logged": "true",
+      "actual": 1,
+      "matched": true
+    },
+    {
+      "case": "options-low",
+      "name": "FridayStopHour",
+      "rva": "0x1d6fa8",
+      "logged": "23",
+      "actual": 23,
+      "matched": true
+    },
+    {
+      "case": "options-low",
+      "name": "FridayClosePending",
+      "rva": "0x1d6fb0",
+      "logged": "true",
+      "actual": 1,
+      "matched": true
+    },
+    {
+      "case": "options-low",
+      "name": "FridayCloseOpen",
+      "rva": "0x1d6fb8",
+      "logged": "true",
+      "actual": 1,
+      "matched": true
+    },
+    {
+      "case": "options-low",
+      "name": "setSL_TP_After_Entry",
+      "rva": "0x1d6fc0",
+      "logged": "false",
+      "actual": 0,
+      "matched": true
+    },
+    {
+      "case": "options-low",
+      "name": "Virtual_expiration",
+      "rva": "0x1d6fc8",
+      "logged": "true",
+      "actual": 1,
+      "matched": true
+    },
+    {
+      "case": "options-low",
+      "name": "Randomization",
+      "rva": "0x1d6fd0",
+      "logged": "0.125",
+      "actual": 0.125,
+      "matched": true
+    },
+    {
+      "case": "options-low",
+      "name": "FakeOutFilter",
+      "rva": "0x1d6fd8",
+      "logged": "0",
+      "actual": 0,
+      "matched": true
+    },
+    {
+      "case": "options-low",
+      "name": "EnableVirtualSLTP",
+      "rva": "0x1d6fe0",
+      "logged": "false",
+      "actual": 0,
+      "matched": true
+    },
+    {
+      "case": "options-low",
+      "name": "SetVSL_to_hardSL_sec_delay",
+      "rva": "0x1d6fe8",
+      "logged": "97",
+      "actual": 97,
+      "matched": true
+    },
+    {
+      "case": "options-low",
+      "name": "ST1_MagicNumber",
+      "rva": "0x1d6ff0",
+      "logged": "53294",
+      "actual": 53294,
+      "matched": true
+    },
+    {
+      "case": "options-low",
+      "name": "ST1_Comment",
+      "rva": "0x1d6ff8",
+      "logged": "CHECK_B3_ST1_Comment",
+      "actual": true,
+      "matched": true
+    },
+    {
+      "case": "options-low",
+      "name": "RemoveCommentSuffix",
+      "rva": "0x1d7008",
+      "logged": "false",
+      "actual": 0,
+      "matched": true
+    },
+    {
+      "case": "options-low",
+      "name": "NFP_FILTER",
+      "rva": "0x1d7010",
+      "logged": "CHECK_B3_NFP_FILTER",
+      "actual": true,
+      "matched": true
+    },
+    {
+      "case": "options-low",
+      "name": "EnableNFP_Filter",
+      "rva": "0x1d7020",
+      "logged": "true",
+      "actual": 1,
+      "matched": true
+    },
+    {
+      "case": "options-low",
+      "name": "UseMQL5Calendar",
+      "rva": "0x1d7028",
+      "logged": "true",
+      "actual": 1,
+      "matched": true
+    },
+    {
+      "case": "options-low",
+      "name": "AutoGMT",
+      "rva": "0x1d7030",
+      "logged": "false",
+      "actual": 0,
+      "matched": true
+    },
+    {
+      "case": "options-low",
+      "name": "Broker_GMT_OFFSET_Winter",
+      "rva": "0x1d7038",
+      "logged": "2",
+      "actual": 2,
+      "matched": true
+    },
+    {
+      "case": "options-low",
+      "name": "Broker_GMT_OFFSET_Summer",
+      "rva": "0x1d7040",
+      "logged": "3",
+      "actual": 3,
+      "matched": true
+    },
+    {
+      "case": "options-low",
+      "name": "NFP_CloseOpenTrades",
+      "rva": "0x1d7048",
+      "logged": "true",
+      "actual": 1,
+      "matched": true
+    },
+    {
+      "case": "options-low",
+      "name": "NFP_ClosePendingOrders",
+      "rva": "0x1d7050",
+      "logged": "true",
+      "actual": 1,
+      "matched": true
+    },
+    {
+      "case": "options-low",
+      "name": "NFP_MinutesBefore",
+      "rva": "0x1d7058",
+      "logged": "13",
+      "actual": 13,
+      "matched": true
+    },
+    {
+      "case": "options-low",
+      "name": "NFP_MinutesAfter",
+      "rva": "0x1d7060",
+      "logged": "47",
+      "actual": 47,
+      "matched": true
+    },
+    {
+      "case": "options-low",
+      "name": "IR_FILTER",
+      "rva": "0x1d7068",
+      "logged": "CHECK_B3_IR_FILTER",
+      "actual": true,
+      "matched": true
+    },
+    {
+      "case": "options-low",
+      "name": "EnableIR_Filter",
+      "rva": "0x1d7078",
+      "logged": "false",
+      "actual": 0,
+      "matched": true
+    },
+    {
+      "case": "options-low",
+      "name": "IR_CloseOpenTrades",
+      "rva": "0x1d7080",
+      "logged": "true",
+      "actual": 1,
+      "matched": true
+    },
+    {
+      "case": "options-low",
+      "name": "IR_ClosePendingOrders",
+      "rva": "0x1d7088",
+      "logged": "true",
+      "actual": 1,
+      "matched": true
+    },
+    {
+      "case": "options-low",
+      "name": "IR_MinutesBefore",
+      "rva": "0x1d7090",
+      "logged": "17",
+      "actual": 17,
+      "matched": true
+    },
+    {
+      "case": "options-low",
+      "name": "IR_MinutesAfter",
+      "rva": "0x1d7098",
+      "logged": "43",
+      "actual": 43,
+      "matched": true
+    },
+    {
+      "case": "options-low",
+      "name": "CPI_FILTER",
+      "rva": "0x1d70a0",
+      "logged": "CHECK_B3_CPI_FILTER",
+      "actual": true,
+      "matched": true
+    },
+    {
+      "case": "options-low",
+      "name": "EnableCPI_Filter",
+      "rva": "0x1d70b0",
+      "logged": "false",
+      "actual": 0,
+      "matched": true
+    },
+    {
+      "case": "options-low",
+      "name": "CPI_CloseOpenTrades",
+      "rva": "0x1d70b8",
+      "logged": "true",
+      "actual": 1,
+      "matched": true
+    },
+    {
+      "case": "options-low",
+      "name": "CPI_ClosePendingOrders",
+      "rva": "0x1d70c0",
+      "logged": "true",
+      "actual": 1,
+      "matched": true
+    },
+    {
+      "case": "options-low",
+      "name": "CPI_MinutesBefore",
+      "rva": "0x1d70c8",
+      "logged": "19",
+      "actual": 19,
+      "matched": true
+    },
+    {
+      "case": "options-low",
+      "name": "CPI_MinutesAfter",
+      "rva": "0x1d70d0",
+      "logged": "41",
+      "actual": 41,
+      "matched": true
+    },
+    {
+      "case": "options-low",
+      "name": "propfirmsettings",
+      "rva": "0x1d70d8",
+      "logged": "CHECK_B3_propfirmsettings",
+      "actual": true,
+      "matched": true
+    },
+    {
+      "case": "options-low",
+      "name": "AdjustEntry",
+      "rva": "0x1d70e8",
+      "logged": "6.125",
+      "actual": 6.125,
+      "matched": true
+    },
+    {
+      "case": "options-low",
+      "name": "AdjustSL",
+      "rva": "0x1d70f0",
+      "logged": "7.125",
+      "actual": 7.125,
+      "matched": true
+    },
+    {
+      "case": "options-low",
+      "name": "AdjustTP",
+      "rva": "0x1d70f8",
+      "logged": "8.125",
+      "actual": 8.125,
+      "matched": true
+    },
+    {
+      "case": "options-low",
+      "name": "AdjustTrailSL",
+      "rva": "0x1d7100",
+      "logged": "9.125",
+      "actual": 9.125,
+      "matched": true
+    },
+    {
+      "case": "options-low",
+      "name": "AdjustTrailTP",
+      "rva": "0x1d7108",
+      "logged": "10.125",
+      "actual": 10.125,
+      "matched": true
+    },
+    {
+      "case": "options-low",
+      "name": "AdjustBreakEven",
+      "rva": "0x1d7110",
+      "logged": "11.125",
+      "actual": 11.125,
+      "matched": true
+    },
+    {
+      "case": "options-low",
+      "name": "LotSizeSettings",
+      "rva": "0x1d7118",
+      "logged": "CHECK_B3_LotSizeSettings",
+      "actual": true,
+      "matched": true
+    },
+    {
+      "case": "options-low",
+      "name": "ManualBalance",
+      "rva": "0x1d7128",
+      "logged": "10417.125",
+      "actual": 10417.125,
+      "matched": true
+    },
+    {
+      "case": "options-low",
+      "name": "Risk",
+      "rva": "0x1d7130",
+      "logged": "3",
+      "actual": 3,
+      "matched": true
+    },
+    {
+      "case": "options-low",
+      "name": "StartLots",
+      "rva": "0x1d7138",
+      "logged": "0.023125",
+      "actual": 0.023125,
+      "matched": true
+    },
+    {
+      "case": "options-low",
+      "name": "MaxAllowedDD",
+      "rva": "0x1d7140",
+      "logged": "27.125",
+      "actual": 27.125,
+      "matched": true
+    },
+    {
+      "case": "options-low",
+      "name": "UseWeightedLots",
+      "rva": "0x1d7148",
+      "logged": "true",
+      "actual": 1,
+      "matched": true
+    },
+    {
+      "case": "options-low",
+      "name": "MaxRiskPerStrategy_",
+      "rva": "0x1d7150",
+      "logged": "1.375",
+      "actual": 1.375,
+      "matched": true
+    },
+    {
+      "case": "options-low",
+      "name": "PropFirmMaxDailyDD",
+      "rva": "0x1d7158",
+      "logged": "2.125",
+      "actual": 2.125,
+      "matched": true
+    },
+    {
+      "case": "options-low",
+      "name": "OnlyUp",
+      "rva": "0x1d7160",
+      "logged": "true",
+      "actual": 1,
+      "matched": true
+    },
+    {
+      "case": "options-low",
+      "name": "ResetHighestBalance",
+      "rva": "0x1d7168",
+      "logged": "false",
+      "actual": 0,
+      "matched": true
+    },
+    {
+      "case": "options-low",
+      "name": "ResetHighestBalanceOnWithdrawal",
+      "rva": "0x1d7170",
+      "logged": "true",
+      "actual": 1,
+      "matched": true
+    },
+    {
+      "case": "options-low",
+      "name": "CheckMargin",
+      "rva": "0x1d7178",
+      "logged": "true",
+      "actual": 1,
+      "matched": true
+    },
+    {
+      "case": "options-low",
+      "name": "UseEquity",
+      "rva": "0x1d7180",
+      "logged": "false",
+      "actual": 0,
+      "matched": true
+    },
+    {
+      "case": "options-low",
+      "name": "ManualStratSelect",
+      "rva": "0x1d7188",
+      "logged": "CHECK_B3_ManualStratSelect",
+      "actual": true,
+      "matched": true
+    },
+    {
+      "case": "options-low",
+      "name": "ManStratWarn",
+      "rva": "0x1d7198",
+      "logged": "CHECK_B3_ManStratWarn",
+      "actual": true,
+      "matched": true
+    },
+    {
+      "case": "options-low",
+      "name": "RunStrat1",
+      "rva": "0x1d71a8",
+      "logged": "true",
+      "actual": 1,
+      "matched": true
+    },
+    {
+      "case": "options-low",
+      "name": "RunStrat2",
+      "rva": "0x1d71b0",
+      "logged": "true",
+      "actual": 1,
+      "matched": true
+    },
+    {
+      "case": "options-low",
+      "name": "RunStrat3",
+      "rva": "0x1d71b8",
+      "logged": "true",
+      "actual": 1,
+      "matched": true
+    },
+    {
+      "case": "options-low",
+      "name": "RunStrat4",
+      "rva": "0x1d71c0",
+      "logged": "true",
+      "actual": 1,
+      "matched": true
+    },
+    {
+      "case": "options-low",
+      "name": "RunStrat5",
+      "rva": "0x1d71c8",
+      "logged": "true",
+      "actual": 1,
+      "matched": true
+    },
+    {
+      "case": "options-low",
+      "name": "RunStrat6",
+      "rva": "0x1d71d0",
+      "logged": "true",
+      "actual": 1,
+      "matched": true
+    },
+    {
+      "case": "options-low",
+      "name": "RunStrat7",
+      "rva": "0x1d71d8",
+      "logged": "true",
+      "actual": 1,
+      "matched": true
+    },
+    {
+      "case": "options-low",
+      "name": "RunStrat8",
+      "rva": "0x1d71e0",
+      "logged": "true",
+      "actual": 1,
+      "matched": true
+    },
+    {
+      "case": "options-low",
+      "name": "RunStrat9",
+      "rva": "0x1d71e8",
+      "logged": "true",
+      "actual": 1,
+      "matched": true
+    },
+    {
+      "case": "options-high",
+      "name": "lijntje",
+      "rva": "0x1d6f18",
+      "logged": "CHECK_B3_lijntje",
+      "actual": true,
+      "matched": true
+    },
+    {
+      "case": "options-high",
+      "name": "UseVariableValues",
+      "rva": "0x1d6f28",
+      "logged": "true",
+      "actual": 1,
+      "matched": true
+    },
+    {
+      "case": "options-high",
+      "name": "AdjustLotsizeToVariableValues",
+      "rva": "0x1d6f30",
+      "logged": "true",
+      "actual": 1,
+      "matched": true
+    },
+    {
+      "case": "options-high",
+      "name": "ShowInfoPanel",
+      "rva": "0x1d6f38",
+      "logged": "true",
+      "actual": 1,
+      "matched": true
+    },
+    {
+      "case": "options-high",
+      "name": "UpdateInfoTesting",
+      "rva": "0x1d6f40",
+      "logged": "false",
+      "actual": 0,
+      "matched": true
+    },
+    {
+      "case": "options-high",
+      "name": "InfoPanelSizeAdjust",
+      "rva": "0x1d6f48",
+      "logged": "1.125",
+      "actual": 1.125,
+      "matched": true
+    },
+    {
+      "case": "options-high",
+      "name": "SetFontSize",
+      "rva": "0x1d6f50",
+      "logged": "11",
+      "actual": 11,
+      "matched": true
+    },
+    {
+      "case": "options-high",
+      "name": "BacktestSpeed_string",
+      "rva": "0x1d6f58",
+      "logged": "CHECK_B3_BacktestSpeed_string",
+      "actual": true,
+      "matched": true
+    },
+    {
+      "case": "options-high",
+      "name": "BacktestSpeed",
+      "rva": "0x1d6f68",
+      "logged": "3",
+      "actual": 3,
+      "matched": true
+    },
+    {
+      "case": "options-high",
+      "name": "spreadfilter",
+      "rva": "0x1d6f70",
+      "logged": "CHECK_B3_spreadfilter",
+      "actual": true,
+      "matched": true
+    },
+    {
+      "case": "options-high",
+      "name": "AllowBuyTrades",
+      "rva": "0x1d6f80",
+      "logged": "true",
+      "actual": 1,
+      "matched": true
+    },
+    {
+      "case": "options-high",
+      "name": "AllowSellTrades",
+      "rva": "0x1d6f88",
+      "logged": "true",
+      "actual": 1,
+      "matched": true
+    },
+    {
+      "case": "options-high",
+      "name": "TradeFrequency",
+      "rva": "0x1d6f90",
+      "logged": "6",
+      "actual": 6,
+      "matched": true
+    },
+    {
+      "case": "options-high",
+      "name": "MaxSpread",
+      "rva": "0x1d6f98",
+      "logged": "617.125",
+      "actual": 617.125,
+      "matched": true
+    },
+    {
+      "case": "options-high",
+      "name": "UseHL_TrailingSL",
+      "rva": "0x1d6fa0",
+      "logged": "true",
+      "actual": 1,
+      "matched": true
+    },
+    {
+      "case": "options-high",
+      "name": "FridayStopHour",
+      "rva": "0x1d6fa8",
+      "logged": "23",
+      "actual": 23,
+      "matched": true
+    },
+    {
+      "case": "options-high",
+      "name": "FridayClosePending",
+      "rva": "0x1d6fb0",
+      "logged": "true",
+      "actual": 1,
+      "matched": true
+    },
+    {
+      "case": "options-high",
+      "name": "FridayCloseOpen",
+      "rva": "0x1d6fb8",
+      "logged": "true",
+      "actual": 1,
+      "matched": true
+    },
+    {
+      "case": "options-high",
+      "name": "setSL_TP_After_Entry",
+      "rva": "0x1d6fc0",
+      "logged": "false",
+      "actual": 0,
+      "matched": true
+    },
+    {
+      "case": "options-high",
+      "name": "Virtual_expiration",
+      "rva": "0x1d6fc8",
+      "logged": "true",
+      "actual": 1,
+      "matched": true
+    },
+    {
+      "case": "options-high",
+      "name": "Randomization",
+      "rva": "0x1d6fd0",
+      "logged": "0.125",
+      "actual": 0.125,
+      "matched": true
+    },
+    {
+      "case": "options-high",
+      "name": "FakeOutFilter",
+      "rva": "0x1d6fd8",
+      "logged": "3",
+      "actual": 3,
+      "matched": true
+    },
+    {
+      "case": "options-high",
+      "name": "EnableVirtualSLTP",
+      "rva": "0x1d6fe0",
+      "logged": "false",
+      "actual": 0,
+      "matched": true
+    },
+    {
+      "case": "options-high",
+      "name": "SetVSL_to_hardSL_sec_delay",
+      "rva": "0x1d6fe8",
+      "logged": "97",
+      "actual": 97,
+      "matched": true
+    },
+    {
+      "case": "options-high",
+      "name": "ST1_MagicNumber",
+      "rva": "0x1d6ff0",
+      "logged": "53294",
+      "actual": 53294,
+      "matched": true
+    },
+    {
+      "case": "options-high",
+      "name": "ST1_Comment",
+      "rva": "0x1d6ff8",
+      "logged": "CHECK_B3_ST1_Comment",
+      "actual": true,
+      "matched": true
+    },
+    {
+      "case": "options-high",
+      "name": "RemoveCommentSuffix",
+      "rva": "0x1d7008",
+      "logged": "false",
+      "actual": 0,
+      "matched": true
+    },
+    {
+      "case": "options-high",
+      "name": "NFP_FILTER",
+      "rva": "0x1d7010",
+      "logged": "CHECK_B3_NFP_FILTER",
+      "actual": true,
+      "matched": true
+    },
+    {
+      "case": "options-high",
+      "name": "EnableNFP_Filter",
+      "rva": "0x1d7020",
+      "logged": "true",
+      "actual": 1,
+      "matched": true
+    },
+    {
+      "case": "options-high",
+      "name": "UseMQL5Calendar",
+      "rva": "0x1d7028",
+      "logged": "true",
+      "actual": 1,
+      "matched": true
+    },
+    {
+      "case": "options-high",
+      "name": "AutoGMT",
+      "rva": "0x1d7030",
+      "logged": "false",
+      "actual": 0,
+      "matched": true
+    },
+    {
+      "case": "options-high",
+      "name": "Broker_GMT_OFFSET_Winter",
+      "rva": "0x1d7038",
+      "logged": "2",
+      "actual": 2,
+      "matched": true
+    },
+    {
+      "case": "options-high",
+      "name": "Broker_GMT_OFFSET_Summer",
+      "rva": "0x1d7040",
+      "logged": "3",
+      "actual": 3,
+      "matched": true
+    },
+    {
+      "case": "options-high",
+      "name": "NFP_CloseOpenTrades",
+      "rva": "0x1d7048",
+      "logged": "true",
+      "actual": 1,
+      "matched": true
+    },
+    {
+      "case": "options-high",
+      "name": "NFP_ClosePendingOrders",
+      "rva": "0x1d7050",
+      "logged": "true",
+      "actual": 1,
+      "matched": true
+    },
+    {
+      "case": "options-high",
+      "name": "NFP_MinutesBefore",
+      "rva": "0x1d7058",
+      "logged": "13",
+      "actual": 13,
+      "matched": true
+    },
+    {
+      "case": "options-high",
+      "name": "NFP_MinutesAfter",
+      "rva": "0x1d7060",
+      "logged": "47",
+      "actual": 47,
+      "matched": true
+    },
+    {
+      "case": "options-high",
+      "name": "IR_FILTER",
+      "rva": "0x1d7068",
+      "logged": "CHECK_B3_IR_FILTER",
+      "actual": true,
+      "matched": true
+    },
+    {
+      "case": "options-high",
+      "name": "EnableIR_Filter",
+      "rva": "0x1d7078",
+      "logged": "false",
+      "actual": 0,
+      "matched": true
+    },
+    {
+      "case": "options-high",
+      "name": "IR_CloseOpenTrades",
+      "rva": "0x1d7080",
+      "logged": "true",
+      "actual": 1,
+      "matched": true
+    },
+    {
+      "case": "options-high",
+      "name": "IR_ClosePendingOrders",
+      "rva": "0x1d7088",
+      "logged": "true",
+      "actual": 1,
+      "matched": true
+    },
+    {
+      "case": "options-high",
+      "name": "IR_MinutesBefore",
+      "rva": "0x1d7090",
+      "logged": "17",
+      "actual": 17,
+      "matched": true
+    },
+    {
+      "case": "options-high",
+      "name": "IR_MinutesAfter",
+      "rva": "0x1d7098",
+      "logged": "43",
+      "actual": 43,
+      "matched": true
+    },
+    {
+      "case": "options-high",
+      "name": "CPI_FILTER",
+      "rva": "0x1d70a0",
+      "logged": "CHECK_B3_CPI_FILTER",
+      "actual": true,
+      "matched": true
+    },
+    {
+      "case": "options-high",
+      "name": "EnableCPI_Filter",
+      "rva": "0x1d70b0",
+      "logged": "false",
+      "actual": 0,
+      "matched": true
+    },
+    {
+      "case": "options-high",
+      "name": "CPI_CloseOpenTrades",
+      "rva": "0x1d70b8",
+      "logged": "true",
+      "actual": 1,
+      "matched": true
+    },
+    {
+      "case": "options-high",
+      "name": "CPI_ClosePendingOrders",
+      "rva": "0x1d70c0",
+      "logged": "true",
+      "actual": 1,
+      "matched": true
+    },
+    {
+      "case": "options-high",
+      "name": "CPI_MinutesBefore",
+      "rva": "0x1d70c8",
+      "logged": "19",
+      "actual": 19,
+      "matched": true
+    },
+    {
+      "case": "options-high",
+      "name": "CPI_MinutesAfter",
+      "rva": "0x1d70d0",
+      "logged": "41",
+      "actual": 41,
+      "matched": true
+    },
+    {
+      "case": "options-high",
+      "name": "propfirmsettings",
+      "rva": "0x1d70d8",
+      "logged": "CHECK_B3_propfirmsettings",
+      "actual": true,
+      "matched": true
+    },
+    {
+      "case": "options-high",
+      "name": "AdjustEntry",
+      "rva": "0x1d70e8",
+      "logged": "6.125",
+      "actual": 6.125,
+      "matched": true
+    },
+    {
+      "case": "options-high",
+      "name": "AdjustSL",
+      "rva": "0x1d70f0",
+      "logged": "7.125",
+      "actual": 7.125,
+      "matched": true
+    },
+    {
+      "case": "options-high",
+      "name": "AdjustTP",
+      "rva": "0x1d70f8",
+      "logged": "8.125",
+      "actual": 8.125,
+      "matched": true
+    },
+    {
+      "case": "options-high",
+      "name": "AdjustTrailSL",
+      "rva": "0x1d7100",
+      "logged": "9.125",
+      "actual": 9.125,
+      "matched": true
+    },
+    {
+      "case": "options-high",
+      "name": "AdjustTrailTP",
+      "rva": "0x1d7108",
+      "logged": "10.125",
+      "actual": 10.125,
+      "matched": true
+    },
+    {
+      "case": "options-high",
+      "name": "AdjustBreakEven",
+      "rva": "0x1d7110",
+      "logged": "11.125",
+      "actual": 11.125,
+      "matched": true
+    },
+    {
+      "case": "options-high",
+      "name": "LotSizeSettings",
+      "rva": "0x1d7118",
+      "logged": "CHECK_B3_LotSizeSettings",
+      "actual": true,
+      "matched": true
+    },
+    {
+      "case": "options-high",
+      "name": "ManualBalance",
+      "rva": "0x1d7128",
+      "logged": "10417.125",
+      "actual": 10417.125,
+      "matched": true
+    },
+    {
+      "case": "options-high",
+      "name": "Risk",
+      "rva": "0x1d7130",
+      "logged": "0",
+      "actual": 0,
+      "matched": true
+    },
+    {
+      "case": "options-high",
+      "name": "StartLots",
+      "rva": "0x1d7138",
+      "logged": "0.023125",
+      "actual": 0.023125,
+      "matched": true
+    },
+    {
+      "case": "options-high",
+      "name": "MaxAllowedDD",
+      "rva": "0x1d7140",
+      "logged": "27.125",
+      "actual": 27.125,
+      "matched": true
+    },
+    {
+      "case": "options-high",
+      "name": "UseWeightedLots",
+      "rva": "0x1d7148",
+      "logged": "true",
+      "actual": 1,
+      "matched": true
+    },
+    {
+      "case": "options-high",
+      "name": "MaxRiskPerStrategy_",
+      "rva": "0x1d7150",
+      "logged": "1.375",
+      "actual": 1.375,
+      "matched": true
+    },
+    {
+      "case": "options-high",
+      "name": "PropFirmMaxDailyDD",
+      "rva": "0x1d7158",
+      "logged": "2.125",
+      "actual": 2.125,
+      "matched": true
+    },
+    {
+      "case": "options-high",
+      "name": "OnlyUp",
+      "rva": "0x1d7160",
+      "logged": "true",
+      "actual": 1,
+      "matched": true
+    },
+    {
+      "case": "options-high",
+      "name": "ResetHighestBalance",
+      "rva": "0x1d7168",
+      "logged": "false",
+      "actual": 0,
+      "matched": true
+    },
+    {
+      "case": "options-high",
+      "name": "ResetHighestBalanceOnWithdrawal",
+      "rva": "0x1d7170",
+      "logged": "true",
+      "actual": 1,
+      "matched": true
+    },
+    {
+      "case": "options-high",
+      "name": "CheckMargin",
+      "rva": "0x1d7178",
+      "logged": "true",
+      "actual": 1,
+      "matched": true
+    },
+    {
+      "case": "options-high",
+      "name": "UseEquity",
+      "rva": "0x1d7180",
+      "logged": "false",
+      "actual": 0,
+      "matched": true
+    },
+    {
+      "case": "options-high",
+      "name": "ManualStratSelect",
+      "rva": "0x1d7188",
+      "logged": "CHECK_B3_ManualStratSelect",
+      "actual": true,
+      "matched": true
+    },
+    {
+      "case": "options-high",
+      "name": "ManStratWarn",
+      "rva": "0x1d7198",
+      "logged": "CHECK_B3_ManStratWarn",
+      "actual": true,
+      "matched": true
+    },
+    {
+      "case": "options-high",
+      "name": "RunStrat1",
+      "rva": "0x1d71a8",
+      "logged": "true",
+      "actual": 1,
+      "matched": true
+    },
+    {
+      "case": "options-high",
+      "name": "RunStrat2",
+      "rva": "0x1d71b0",
+      "logged": "true",
+      "actual": 1,
+      "matched": true
+    },
+    {
+      "case": "options-high",
+      "name": "RunStrat3",
+      "rva": "0x1d71b8",
+      "logged": "true",
+      "actual": 1,
+      "matched": true
+    },
+    {
+      "case": "options-high",
+      "name": "RunStrat4",
+      "rva": "0x1d71c0",
+      "logged": "true",
+      "actual": 1,
+      "matched": true
+    },
+    {
+      "case": "options-high",
+      "name": "RunStrat5",
+      "rva": "0x1d71c8",
+      "logged": "true",
+      "actual": 1,
+      "matched": true
+    },
+    {
+      "case": "options-high",
+      "name": "RunStrat6",
+      "rva": "0x1d71d0",
+      "logged": "true",
+      "actual": 1,
+      "matched": true
+    },
+    {
+      "case": "options-high",
+      "name": "RunStrat7",
+      "rva": "0x1d71d8",
+      "logged": "true",
+      "actual": 1,
+      "matched": true
+    },
+    {
+      "case": "options-high",
+      "name": "RunStrat8",
+      "rva": "0x1d71e0",
+      "logged": "true",
+      "actual": 1,
+      "matched": true
+    },
+    {
+      "case": "options-high",
+      "name": "RunStrat9",
+      "rva": "0x1d71e8",
+      "logged": "true",
+      "actual": 1,
+      "matched": true
+    }
+  ],
+  "bindings": [
+    {
+      "name": "lijntje",
+      "observed": "=============================================================",
+      "representation": "string",
+      "candidate_rva": "0x1d6f18",
+      "slot_bytes": 16,
+      "marker": "CHECK_B3_lijntje",
+      "default_from_fresh_log": "=============================================================",
+      "status": "verified storage and logged value across prepared cases"
+    },
+    {
+      "name": "UseVariableValues",
+      "observed": "true",
+      "representation": "bool",
+      "candidate_rva": "0x1d6f28",
+      "slot_bytes": 8,
+      "boolean_id": 1,
+      "default_from_fresh_log": "true",
+      "status": "verified storage and logged value across prepared cases"
+    },
+    {
+      "name": "AdjustLotsizeToVariableValues",
+      "observed": "true",
+      "representation": "bool",
+      "candidate_rva": "0x1d6f30",
+      "slot_bytes": 8,
+      "boolean_id": 2,
+      "default_from_fresh_log": "true",
+      "status": "verified storage and logged value across prepared cases"
+    },
+    {
+      "name": "ShowInfoPanel",
+      "observed": "true",
+      "representation": "bool",
+      "candidate_rva": "0x1d6f38",
+      "slot_bytes": 8,
+      "boolean_id": 3,
+      "default_from_fresh_log": "true",
+      "status": "verified storage and logged value across prepared cases"
+    },
+    {
+      "name": "UpdateInfoTesting",
+      "observed": "false",
+      "representation": "bool",
+      "candidate_rva": "0x1d6f40",
+      "slot_bytes": 8,
+      "boolean_id": 4,
+      "default_from_fresh_log": "false",
+      "status": "verified storage and logged value across prepared cases"
+    },
+    {
+      "name": "InfoPanelSizeAdjust",
+      "observed": "1.0",
+      "representation": "double",
+      "candidate_rva": "0x1d6f48",
+      "slot_bytes": 8,
+      "marker": "1.125",
+      "default_from_fresh_log": "1.0",
+      "status": "verified storage and logged value across prepared cases"
+    },
+    {
+      "name": "SetFontSize",
+      "observed": "0",
+      "representation": "integer_or_enum",
+      "candidate_rva": "0x1d6f50",
+      "slot_bytes": 8,
+      "marker": "11",
+      "default_from_fresh_log": "0",
+      "status": "verified storage and logged value across prepared cases"
+    },
+    {
+      "name": "BacktestSpeed_string",
+      "observed": "------------------------------ Backtest Speed settings ------------------------------",
+      "representation": "string",
+      "candidate_rva": "0x1d6f58",
+      "slot_bytes": 16,
+      "marker": "CHECK_B3_BacktestSpeed_string",
+      "default_from_fresh_log": "------------------------------ Backtest Speed settings ------------------------------",
+      "status": "verified storage and logged value across prepared cases"
+    },
+    {
+      "name": "BacktestSpeed",
+      "observed": "1",
+      "representation": "integer_or_enum",
+      "candidate_rva": "0x1d6f68",
+      "slot_bytes": 8,
+      "marker": "1",
+      "default_from_fresh_log": "1",
+      "status": "verified storage and logged value across prepared cases"
+    },
+    {
+      "name": "spreadfilter",
+      "observed": "------------------------------ settings ------------------------------",
+      "representation": "string",
+      "candidate_rva": "0x1d6f70",
+      "slot_bytes": 16,
+      "marker": "CHECK_B3_spreadfilter",
+      "default_from_fresh_log": "------------------------------ settings ------------------------------",
+      "status": "verified storage and logged value across prepared cases"
+    },
+    {
+      "name": "AllowBuyTrades",
+      "observed": "true",
+      "representation": "bool",
+      "candidate_rva": "0x1d6f80",
+      "slot_bytes": 8,
+      "boolean_id": 5,
+      "default_from_fresh_log": "true",
+      "status": "verified storage and logged value across prepared cases"
+    },
+    {
+      "name": "AllowSellTrades",
+      "observed": "true",
+      "representation": "bool",
+      "candidate_rva": "0x1d6f88",
+      "slot_bytes": 8,
+      "boolean_id": 6,
+      "default_from_fresh_log": "true",
+      "status": "verified storage and logged value across prepared cases"
+    },
+    {
+      "name": "TradeFrequency",
+      "observed": "5",
+      "representation": "integer_or_enum",
+      "candidate_rva": "0x1d6f90",
+      "slot_bytes": 8,
+      "marker": "5",
+      "default_from_fresh_log": "5",
+      "status": "verified storage and logged value across prepared cases"
+    },
+    {
+      "name": "MaxSpread",
+      "observed": "500.0",
+      "representation": "double",
+      "candidate_rva": "0x1d6f98",
+      "slot_bytes": 8,
+      "marker": "617.125",
+      "default_from_fresh_log": "500.0",
+      "status": "verified storage and logged value across prepared cases"
+    },
+    {
+      "name": "UseHL_TrailingSL",
+      "observed": "true",
+      "representation": "bool",
+      "candidate_rva": "0x1d6fa0",
+      "slot_bytes": 8,
+      "boolean_id": 7,
+      "default_from_fresh_log": "true",
+      "status": "verified storage and logged value across prepared cases"
+    },
+    {
+      "name": "FridayStopHour",
+      "observed": "25",
+      "representation": "integer_or_enum",
+      "candidate_rva": "0x1d6fa8",
+      "slot_bytes": 8,
+      "marker": "23",
+      "default_from_fresh_log": "25",
+      "status": "verified storage and logged value across prepared cases"
+    },
+    {
+      "name": "FridayClosePending",
+      "observed": "true",
+      "representation": "bool",
+      "candidate_rva": "0x1d6fb0",
+      "slot_bytes": 8,
+      "boolean_id": 8,
+      "default_from_fresh_log": "true",
+      "status": "verified storage and logged value across prepared cases"
+    },
+    {
+      "name": "FridayCloseOpen",
+      "observed": "true",
+      "representation": "bool",
+      "candidate_rva": "0x1d6fb8",
+      "slot_bytes": 8,
+      "boolean_id": 9,
+      "default_from_fresh_log": "true",
+      "status": "verified storage and logged value across prepared cases"
+    },
+    {
+      "name": "setSL_TP_After_Entry",
+      "observed": "false",
+      "representation": "bool",
+      "candidate_rva": "0x1d6fc0",
+      "slot_bytes": 8,
+      "boolean_id": 10,
+      "default_from_fresh_log": "false",
+      "status": "verified storage and logged value across prepared cases"
+    },
+    {
+      "name": "Virtual_expiration",
+      "observed": "true",
+      "representation": "bool",
+      "candidate_rva": "0x1d6fc8",
+      "slot_bytes": 8,
+      "boolean_id": 11,
+      "default_from_fresh_log": "true",
+      "status": "verified storage and logged value across prepared cases"
+    },
+    {
+      "name": "Randomization",
+      "observed": "0.0",
+      "representation": "double",
+      "candidate_rva": "0x1d6fd0",
+      "slot_bytes": 8,
+      "marker": "0.125",
+      "default_from_fresh_log": "0.0",
+      "status": "verified storage and logged value across prepared cases"
+    },
+    {
+      "name": "FakeOutFilter",
+      "observed": "2",
+      "representation": "integer_or_enum",
+      "candidate_rva": "0x1d6fd8",
+      "slot_bytes": 8,
+      "marker": "2",
+      "default_from_fresh_log": "2",
+      "status": "verified storage and logged value across prepared cases"
+    },
+    {
+      "name": "EnableVirtualSLTP",
+      "observed": "false",
+      "representation": "bool",
+      "candidate_rva": "0x1d6fe0",
+      "slot_bytes": 8,
+      "boolean_id": 12,
+      "default_from_fresh_log": "false",
+      "status": "verified storage and logged value across prepared cases"
+    },
+    {
+      "name": "SetVSL_to_hardSL_sec_delay",
+      "observed": "99",
+      "representation": "integer_or_enum",
+      "candidate_rva": "0x1d6fe8",
+      "slot_bytes": 8,
+      "marker": "97",
+      "default_from_fresh_log": "99",
+      "status": "verified storage and logged value across prepared cases"
+    },
+    {
+      "name": "ST1_MagicNumber",
+      "observed": "8000",
+      "representation": "integer_or_enum",
+      "candidate_rva": "0x1d6ff0",
+      "slot_bytes": 8,
+      "marker": "53294",
+      "default_from_fresh_log": "8000",
+      "status": "verified storage and logged value across prepared cases"
+    },
+    {
+      "name": "ST1_Comment",
+      "observed": "The Gold Reaper",
+      "representation": "string",
+      "candidate_rva": "0x1d6ff8",
+      "slot_bytes": 16,
+      "marker": "CHECK_B3_ST1_Comment",
+      "default_from_fresh_log": "The Gold Reaper",
+      "status": "verified storage and logged value across prepared cases"
+    },
+    {
+      "name": "RemoveCommentSuffix",
+      "observed": "false",
+      "representation": "bool",
+      "candidate_rva": "0x1d7008",
+      "slot_bytes": 8,
+      "boolean_id": 13,
+      "default_from_fresh_log": "false",
+      "status": "verified storage and logged value across prepared cases"
+    },
+    {
+      "name": "NFP_FILTER",
+      "observed": "----------------------- NFP Filter -----------------------",
+      "representation": "string",
+      "candidate_rva": "0x1d7010",
+      "slot_bytes": 16,
+      "marker": "CHECK_B3_NFP_FILTER",
+      "default_from_fresh_log": "----------------------- NFP Filter -----------------------",
+      "status": "verified storage and logged value across prepared cases"
+    },
+    {
+      "name": "EnableNFP_Filter",
+      "observed": "true",
+      "representation": "bool",
+      "candidate_rva": "0x1d7020",
+      "slot_bytes": 8,
+      "boolean_id": 14,
+      "default_from_fresh_log": "true",
+      "status": "verified storage and logged value across prepared cases"
+    },
+    {
+      "name": "UseMQL5Calendar",
+      "observed": "true",
+      "representation": "bool",
+      "candidate_rva": "0x1d7028",
+      "slot_bytes": 8,
+      "boolean_id": 15,
+      "default_from_fresh_log": "true",
+      "status": "verified storage and logged value across prepared cases"
+    },
+    {
+      "name": "AutoGMT",
+      "observed": "false",
+      "representation": "bool",
+      "candidate_rva": "0x1d7030",
+      "slot_bytes": 8,
+      "boolean_id": 16,
+      "default_from_fresh_log": "true",
+      "status": "verified storage and logged value across prepared cases"
+    },
+    {
+      "name": "Broker_GMT_OFFSET_Winter",
+      "observed": "0",
+      "representation": "integer_or_enum",
+      "candidate_rva": "0x1d7038",
+      "slot_bytes": 8,
+      "marker": "2",
+      "default_from_fresh_log": "2",
+      "status": "verified storage and logged value across prepared cases"
+    },
+    {
+      "name": "Broker_GMT_OFFSET_Summer",
+      "observed": "0",
+      "representation": "integer_or_enum",
+      "candidate_rva": "0x1d7040",
+      "slot_bytes": 8,
+      "marker": "3",
+      "default_from_fresh_log": "3",
+      "status": "verified storage and logged value across prepared cases"
+    },
+    {
+      "name": "NFP_CloseOpenTrades",
+      "observed": "true",
+      "representation": "bool",
+      "candidate_rva": "0x1d7048",
+      "slot_bytes": 8,
+      "boolean_id": 17,
+      "default_from_fresh_log": "true",
+      "status": "verified storage and logged value across prepared cases"
+    },
+    {
+      "name": "NFP_ClosePendingOrders",
+      "observed": "true",
+      "representation": "bool",
+      "candidate_rva": "0x1d7050",
+      "slot_bytes": 8,
+      "boolean_id": 18,
+      "default_from_fresh_log": "true",
+      "status": "verified storage and logged value across prepared cases"
+    },
+    {
+      "name": "NFP_MinutesBefore",
+      "observed": "100",
+      "representation": "integer_or_enum",
+      "candidate_rva": "0x1d7058",
+      "slot_bytes": 8,
+      "marker": "13",
+      "default_from_fresh_log": "100",
+      "status": "verified storage and logged value across prepared cases"
+    },
+    {
+      "name": "NFP_MinutesAfter",
+      "observed": "60",
+      "representation": "integer_or_enum",
+      "candidate_rva": "0x1d7060",
+      "slot_bytes": 8,
+      "marker": "47",
+      "default_from_fresh_log": "60",
+      "status": "verified storage and logged value across prepared cases"
+    },
+    {
+      "name": "IR_FILTER",
+      "observed": "----------------------- Interest Rate Filter -----------------------",
+      "representation": "string",
+      "candidate_rva": "0x1d7068",
+      "slot_bytes": 16,
+      "marker": "CHECK_B3_IR_FILTER",
+      "default_from_fresh_log": "----------------------- Interest Rate Filter -----------------------",
+      "status": "verified storage and logged value across prepared cases"
+    },
+    {
+      "name": "EnableIR_Filter",
+      "observed": "false",
+      "representation": "bool",
+      "candidate_rva": "0x1d7078",
+      "slot_bytes": 8,
+      "boolean_id": 19,
+      "default_from_fresh_log": "false",
+      "status": "verified storage and logged value across prepared cases"
+    },
+    {
+      "name": "IR_CloseOpenTrades",
+      "observed": "true",
+      "representation": "bool",
+      "candidate_rva": "0x1d7080",
+      "slot_bytes": 8,
+      "boolean_id": 20,
+      "default_from_fresh_log": "true",
+      "status": "verified storage and logged value across prepared cases"
+    },
+    {
+      "name": "IR_ClosePendingOrders",
+      "observed": "true",
+      "representation": "bool",
+      "candidate_rva": "0x1d7088",
+      "slot_bytes": 8,
+      "boolean_id": 21,
+      "default_from_fresh_log": "true",
+      "status": "verified storage and logged value across prepared cases"
+    },
+    {
+      "name": "IR_MinutesBefore",
+      "observed": "100",
+      "representation": "integer_or_enum",
+      "candidate_rva": "0x1d7090",
+      "slot_bytes": 8,
+      "marker": "17",
+      "default_from_fresh_log": "100",
+      "status": "verified storage and logged value across prepared cases"
+    },
+    {
+      "name": "IR_MinutesAfter",
+      "observed": "60",
+      "representation": "integer_or_enum",
+      "candidate_rva": "0x1d7098",
+      "slot_bytes": 8,
+      "marker": "43",
+      "default_from_fresh_log": "60",
+      "status": "verified storage and logged value across prepared cases"
+    },
+    {
+      "name": "CPI_FILTER",
+      "observed": "----------------------- CPI Filter -----------------------",
+      "representation": "string",
+      "candidate_rva": "0x1d70a0",
+      "slot_bytes": 16,
+      "marker": "CHECK_B3_CPI_FILTER",
+      "default_from_fresh_log": "----------------------- CPI Filter -----------------------",
+      "status": "verified storage and logged value across prepared cases"
+    },
+    {
+      "name": "EnableCPI_Filter",
+      "observed": "false",
+      "representation": "bool",
+      "candidate_rva": "0x1d70b0",
+      "slot_bytes": 8,
+      "boolean_id": 22,
+      "default_from_fresh_log": "false",
+      "status": "verified storage and logged value across prepared cases"
+    },
+    {
+      "name": "CPI_CloseOpenTrades",
+      "observed": "true",
+      "representation": "bool",
+      "candidate_rva": "0x1d70b8",
+      "slot_bytes": 8,
+      "boolean_id": 23,
+      "default_from_fresh_log": "true",
+      "status": "verified storage and logged value across prepared cases"
+    },
+    {
+      "name": "CPI_ClosePendingOrders",
+      "observed": "true",
+      "representation": "bool",
+      "candidate_rva": "0x1d70c0",
+      "slot_bytes": 8,
+      "boolean_id": 24,
+      "default_from_fresh_log": "true",
+      "status": "verified storage and logged value across prepared cases"
+    },
+    {
+      "name": "CPI_MinutesBefore",
+      "observed": "100",
+      "representation": "integer_or_enum",
+      "candidate_rva": "0x1d70c8",
+      "slot_bytes": 8,
+      "marker": "19",
+      "default_from_fresh_log": "100",
+      "status": "verified storage and logged value across prepared cases"
+    },
+    {
+      "name": "CPI_MinutesAfter",
+      "observed": "60",
+      "representation": "integer_or_enum",
+      "candidate_rva": "0x1d70d0",
+      "slot_bytes": 8,
+      "marker": "41",
+      "default_from_fresh_log": "60",
+      "status": "verified storage and logged value across prepared cases"
+    },
+    {
+      "name": "propfirmsettings",
+      "observed": "----------------------- Propfirm unique trades settings -----------------------",
+      "representation": "string",
+      "candidate_rva": "0x1d70d8",
+      "slot_bytes": 16,
+      "marker": "CHECK_B3_propfirmsettings",
+      "default_from_fresh_log": "----------------------- Propfirm unique trades settings -----------------------",
+      "status": "verified storage and logged value across prepared cases"
+    },
+    {
+      "name": "AdjustEntry",
+      "observed": "0.0",
+      "representation": "double",
+      "candidate_rva": "0x1d70e8",
+      "slot_bytes": 8,
+      "marker": "6.125",
+      "default_from_fresh_log": "0.0",
+      "status": "verified storage and logged value across prepared cases"
+    },
+    {
+      "name": "AdjustSL",
+      "observed": "0.0",
+      "representation": "double",
+      "candidate_rva": "0x1d70f0",
+      "slot_bytes": 8,
+      "marker": "7.125",
+      "default_from_fresh_log": "0.0",
+      "status": "verified storage and logged value across prepared cases"
+    },
+    {
+      "name": "AdjustTP",
+      "observed": "0.0",
+      "representation": "double",
+      "candidate_rva": "0x1d70f8",
+      "slot_bytes": 8,
+      "marker": "8.125",
+      "default_from_fresh_log": "0.0",
+      "status": "verified storage and logged value across prepared cases"
+    },
+    {
+      "name": "AdjustTrailSL",
+      "observed": "0.0",
+      "representation": "double",
+      "candidate_rva": "0x1d7100",
+      "slot_bytes": 8,
+      "marker": "9.125",
+      "default_from_fresh_log": "0.0",
+      "status": "verified storage and logged value across prepared cases"
+    },
+    {
+      "name": "AdjustTrailTP",
+      "observed": "0.0",
+      "representation": "double",
+      "candidate_rva": "0x1d7108",
+      "slot_bytes": 8,
+      "marker": "10.125",
+      "default_from_fresh_log": "0.0",
+      "status": "verified storage and logged value across prepared cases"
+    },
+    {
+      "name": "AdjustBreakEven",
+      "observed": "0.0",
+      "representation": "double",
+      "candidate_rva": "0x1d7110",
+      "slot_bytes": 8,
+      "marker": "11.125",
+      "default_from_fresh_log": "0.0",
+      "status": "verified storage and logged value across prepared cases"
+    },
+    {
+      "name": "LotSizeSettings",
+      "observed": "----------------------- LotSize Settings -----------------------",
+      "representation": "string",
+      "candidate_rva": "0x1d7118",
+      "slot_bytes": 16,
+      "marker": "CHECK_B3_LotSizeSettings",
+      "default_from_fresh_log": "----------------------- LotSize Settings -----------------------",
+      "status": "verified storage and logged value across prepared cases"
+    },
+    {
+      "name": "ManualBalance",
+      "observed": "0.0",
+      "representation": "double",
+      "candidate_rva": "0x1d7128",
+      "slot_bytes": 8,
+      "marker": "10417.125",
+      "default_from_fresh_log": "0.0",
+      "status": "verified storage and logged value across prepared cases"
+    },
+    {
+      "name": "Risk",
+      "observed": "1234",
+      "representation": "integer_or_enum",
+      "candidate_rva": "0x1d7130",
+      "slot_bytes": 8,
+      "marker": "1234",
+      "default_from_fresh_log": "1234",
+      "status": "verified storage and logged value across prepared cases"
+    },
+    {
+      "name": "StartLots",
+      "observed": "0.01",
+      "representation": "double",
+      "candidate_rva": "0x1d7138",
+      "slot_bytes": 8,
+      "marker": "0.023125",
+      "default_from_fresh_log": "0.01",
+      "status": "verified storage and logged value across prepared cases"
+    },
+    {
+      "name": "MaxAllowedDD",
+      "observed": "30.0",
+      "representation": "double",
+      "candidate_rva": "0x1d7140",
+      "slot_bytes": 8,
+      "marker": "27.125",
+      "default_from_fresh_log": "30.0",
+      "status": "verified storage and logged value across prepared cases"
+    },
+    {
+      "name": "UseWeightedLots",
+      "observed": "true",
+      "representation": "bool",
+      "candidate_rva": "0x1d7148",
+      "slot_bytes": 8,
+      "boolean_id": 25,
+      "default_from_fresh_log": "true",
+      "status": "verified storage and logged value across prepared cases"
+    },
+    {
+      "name": "MaxRiskPerStrategy_",
+      "observed": "1.0",
+      "representation": "double",
+      "candidate_rva": "0x1d7150",
+      "slot_bytes": 8,
+      "marker": "1.375",
+      "default_from_fresh_log": "1.0",
+      "status": "verified storage and logged value across prepared cases"
+    },
+    {
+      "name": "PropFirmMaxDailyDD",
+      "observed": "0.0",
+      "representation": "double",
+      "candidate_rva": "0x1d7158",
+      "slot_bytes": 8,
+      "marker": "2.125",
+      "default_from_fresh_log": "0.0",
+      "status": "verified storage and logged value across prepared cases"
+    },
+    {
+      "name": "OnlyUp",
+      "observed": "true",
+      "representation": "bool",
+      "candidate_rva": "0x1d7160",
+      "slot_bytes": 8,
+      "boolean_id": 26,
+      "default_from_fresh_log": "true",
+      "status": "verified storage and logged value across prepared cases"
+    },
+    {
+      "name": "ResetHighestBalance",
+      "observed": "false",
+      "representation": "bool",
+      "candidate_rva": "0x1d7168",
+      "slot_bytes": 8,
+      "boolean_id": 27,
+      "default_from_fresh_log": "false",
+      "status": "verified storage and logged value across prepared cases"
+    },
+    {
+      "name": "ResetHighestBalanceOnWithdrawal",
+      "observed": "true",
+      "representation": "bool",
+      "candidate_rva": "0x1d7170",
+      "slot_bytes": 8,
+      "boolean_id": 28,
+      "default_from_fresh_log": "true",
+      "status": "verified storage and logged value across prepared cases"
+    },
+    {
+      "name": "CheckMargin",
+      "observed": "true",
+      "representation": "bool",
+      "candidate_rva": "0x1d7178",
+      "slot_bytes": 8,
+      "boolean_id": 29,
+      "default_from_fresh_log": "true",
+      "status": "verified storage and logged value across prepared cases"
+    },
+    {
+      "name": "UseEquity",
+      "observed": "false",
+      "representation": "bool",
+      "candidate_rva": "0x1d7180",
+      "slot_bytes": 8,
+      "boolean_id": 30,
+      "default_from_fresh_log": "false",
+      "status": "verified storage and logged value across prepared cases"
+    },
+    {
+      "name": "ManualStratSelect",
+      "observed": "------------------------- Manual Strategy Selection -------------------------",
+      "representation": "string",
+      "candidate_rva": "0x1d7188",
+      "slot_bytes": 16,
+      "marker": "CHECK_B3_ManualStratSelect",
+      "default_from_fresh_log": "------------------------- Manual Strategy Selection -------------------------",
+      "status": "verified storage and logged value across prepared cases"
+    },
+    {
+      "name": "ManStratWarn",
+      "observed": "!! DO NOT RUN MANUAL STRATEGIES WHILE USING 'MAX ALLOWED TOTAL DD' OPTION !! ",
+      "representation": "string",
+      "candidate_rva": "0x1d7198",
+      "slot_bytes": 16,
+      "marker": "CHECK_B3_ManStratWarn",
+      "default_from_fresh_log": "!! DO NOT RUN MANUAL STRATEGIES WHILE USING 'MAX ALLOWED TOTAL DD' OPTION !! ",
+      "status": "verified storage and logged value across prepared cases"
+    },
+    {
+      "name": "RunStrat1",
+      "observed": "true",
+      "representation": "bool",
+      "candidate_rva": "0x1d71a8",
+      "slot_bytes": 8,
+      "boolean_id": 31,
+      "default_from_fresh_log": "true",
+      "status": "verified storage and logged value across prepared cases"
+    },
+    {
+      "name": "RunStrat2",
+      "observed": "true",
+      "representation": "bool",
+      "candidate_rva": "0x1d71b0",
+      "slot_bytes": 8,
+      "boolean_id": 32,
+      "default_from_fresh_log": "true",
+      "status": "verified storage and logged value across prepared cases"
+    },
+    {
+      "name": "RunStrat3",
+      "observed": "true",
+      "representation": "bool",
+      "candidate_rva": "0x1d71b8",
+      "slot_bytes": 8,
+      "boolean_id": 33,
+      "default_from_fresh_log": "true",
+      "status": "verified storage and logged value across prepared cases"
+    },
+    {
+      "name": "RunStrat4",
+      "observed": "true",
+      "representation": "bool",
+      "candidate_rva": "0x1d71c0",
+      "slot_bytes": 8,
+      "boolean_id": 34,
+      "default_from_fresh_log": "true",
+      "status": "verified storage and logged value across prepared cases"
+    },
+    {
+      "name": "RunStrat5",
+      "observed": "true",
+      "representation": "bool",
+      "candidate_rva": "0x1d71c8",
+      "slot_bytes": 8,
+      "boolean_id": 35,
+      "default_from_fresh_log": "true",
+      "status": "verified storage and logged value across prepared cases"
+    },
+    {
+      "name": "RunStrat6",
+      "observed": "true",
+      "representation": "bool",
+      "candidate_rva": "0x1d71d0",
+      "slot_bytes": 8,
+      "boolean_id": 36,
+      "default_from_fresh_log": "true",
+      "status": "verified storage and logged value across prepared cases"
+    },
+    {
+      "name": "RunStrat7",
+      "observed": "true",
+      "representation": "bool",
+      "candidate_rva": "0x1d71d8",
+      "slot_bytes": 8,
+      "boolean_id": 37,
+      "default_from_fresh_log": "true",
+      "status": "verified storage and logged value across prepared cases"
+    },
+    {
+      "name": "RunStrat8",
+      "observed": "true",
+      "representation": "bool",
+      "candidate_rva": "0x1d71e0",
+      "slot_bytes": 8,
+      "boolean_id": 38,
+      "default_from_fresh_log": "true",
+      "status": "verified storage and logged value across prepared cases"
+    },
+    {
+      "name": "RunStrat9",
+      "observed": "true",
+      "representation": "bool",
+      "candidate_rva": "0x1d71e8",
+      "slot_bytes": 8,
+      "boolean_id": 39,
+      "default_from_fresh_log": "true",
+      "status": "verified storage and logged value across prepared cases"
+    }
+  ],
+  "tool_sha256": "2dac346544d4bbe52dc4c31d41abc05789a24a791a57419f7a33b3266eeb8358",
+  "scope": "Input storage/value/order only; integer versus enum menu, labels and enum choices still need direct inspection. Controlled captures intentionally stopped."
+}

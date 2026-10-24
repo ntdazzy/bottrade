@@ -1,0 +1,22 @@
+{
+  "mask": 0,
+  "gate": {
+    "profile_index": 1,
+    "input": "RunStrategyB",
+    "input_rva": "0x6a588",
+    "start_rva": "0x12fb9",
+    "branch_rva": "0x12fcf",
+    "enabled_rva": "0x12fd5",
+    "disabled_rva": "0x138bc",
+    "instructions": [
+      "0x12fb9 movabs rax, 0x23e5aa7a588",
+      "0x12fc3 cmp byte ptr [rax], 0",
+      "0x12fc6 mov rax, rdi",
+      "0x12fc9 mov rdi, rsi",
+      "0x12fcc mov rsi, rax",
+      "0x12fcf je 0x23e5aa238bc"
+    ]
+  },
+  "rip": "0x7ff6846e0fd0",
+  "rax": "0x23e5aa7a528"
+}

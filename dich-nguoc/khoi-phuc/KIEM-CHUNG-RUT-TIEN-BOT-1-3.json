@@ -1,0 +1,132 @@
+{
+  "date": "2026-10-23",
+  "bots": [
+    {
+      "bot": 1,
+      "cases": 915,
+      "matched": 915,
+      "comparison": "bot-cua-toi-1/bang-chung/kiem-rut-tien/withdrawal-20261023-r1/comparison.json",
+      "storage": {
+        "bot": 1,
+        "passed": true,
+        "distinct_processes": true,
+        "phases": [
+          {
+            "phase": "write",
+            "pid": 27336,
+            "exit_code": 0,
+            "seconds": 3.99,
+            "peak": 9000.0,
+            "last_deal": 700.0,
+            "result_sha256": "0e8ee4aff987141cd8b791ddf8cfe01a8c208e712b92866f4ed9fcd1577a641b",
+            "parameters_sha256": "7b069d6620f8fe8b17e25c074248a8885ea5a288338b6739b74e5f4fe6596d07"
+          },
+          {
+            "phase": "read",
+            "pid": 31080,
+            "exit_code": 0,
+            "seconds": 3.78,
+            "peak": 9000.0,
+            "last_deal": 700.0,
+            "result_sha256": "10a7d47a488f8b9eb7849783dbec2e1a41f55a73c3e49abb2dae5d729bfbf367",
+            "parameters_sha256": "b174e65f9de403fbb5c5d65eef580b77bfedc640feada9eb6ade2cd159e853e9"
+          }
+        ],
+        "script_sha256": "a01355f5ff8e4e584ad4d56a29bf27acfe1cdf8ad1496f68180b9d24fae15394",
+        "tool_sha256": "cc0fe48ef3f6c76fd1abd89130d452aa8114d71dcc3d9b132915dee02f56cd05",
+        "test_keys_cleaned": true,
+        "scope": "Write two scoped values through the withdrawal component; restart MT5 and read them.\n\npython -I -B -X utf8 kiem-luu-trang-thai-bot-1-3.py BOT RUN\nUses only the private portable terminal. History is supplied; actual terminal variable\nwrites/reads are used. The read phase deletes exactly the two newly created test keys.\n"
+      },
+      "builds": [
+        {
+          "run": "b1-withdrawal-02",
+          "source_count": 16,
+          "sources_match": true,
+          "errors": 0,
+          "warnings": 0
+        },
+        {
+          "run": "b1-withdrawal-storage-01",
+          "source_count": 17,
+          "sources_match": true,
+          "errors": 0,
+          "warnings": 0
+        }
+      ],
+      "original_ex5_sha256": "a3b0de423a06e10ebedc279307b93d7cb9188ba2bb5de77131a913c865b0e922"
+    },
+    {
+      "bot": 3,
+      "cases": 915,
+      "matched": 915,
+      "comparison": "bot-cua-toi-3/bang-chung/kiem-rut-tien/withdrawal-20261023-r1/comparison.json",
+      "storage": {
+        "bot": 3,
+        "passed": true,
+        "distinct_processes": true,
+        "phases": [
+          {
+            "phase": "write",
+            "pid": 23012,
+            "exit_code": 0,
+            "seconds": 3.57,
+            "peak": 9000.0,
+            "last_deal": 700.0,
+            "result_sha256": "0e8ee4aff987141cd8b791ddf8cfe01a8c208e712b92866f4ed9fcd1577a641b",
+            "parameters_sha256": "7b069d6620f8fe8b17e25c074248a8885ea5a288338b6739b74e5f4fe6596d07"
+          },
+          {
+            "phase": "read",
+            "pid": 13720,
+            "exit_code": 0,
+            "seconds": 3.93,
+            "peak": 9000.0,
+            "last_deal": 700.0,
+            "result_sha256": "10a7d47a488f8b9eb7849783dbec2e1a41f55a73c3e49abb2dae5d729bfbf367",
+            "parameters_sha256": "b174e65f9de403fbb5c5d65eef580b77bfedc640feada9eb6ade2cd159e853e9"
+          }
+        ],
+        "script_sha256": "b997e85581ac5db07238364f690c51bf965af1e334ca9c1921031d0e23f52119",
+        "tool_sha256": "cc0fe48ef3f6c76fd1abd89130d452aa8114d71dcc3d9b132915dee02f56cd05",
+        "test_keys_cleaned": true,
+        "scope": "Write two scoped values through the withdrawal component; restart MT5 and read them.\n\npython -I -B -X utf8 kiem-luu-trang-thai-bot-1-3.py BOT RUN\nUses only the private portable terminal. History is supplied; actual terminal variable\nwrites/reads are used. The read phase deletes exactly the two newly created test keys.\n"
+      },
+      "builds": [
+        {
+          "run": "b3-withdrawal-01",
+          "source_count": 16,
+          "sources_match": true,
+          "errors": 0,
+          "warnings": 0
+        },
+        {
+          "run": "b3-withdrawal-storage-01",
+          "source_count": 17,
+          "sources_match": true,
+          "errors": 0,
+          "warnings": 0
+        }
+      ],
+      "original_ex5_sha256": "ee063d3d87490afe24e2f4ce85f6b05659320e297b102efd70207f71ca2feb83"
+    }
+  ],
+  "scope": "Withdrawal update component and real variable persistence across normal isolated MT5 restart; not complete EA integration.",
+  "limits": [
+    "Original startup key generation/loading not reconstructed.",
+    "No abrupt shutdown/power loss or storage-failure check.",
+    "Finite doubles; successful string allocations.",
+    "Diagnostic message content/formatting excluded.",
+    "Standalone helper not yet connected to the recovered account-volume wrapper."
+  ],
+  "modified_preexisting_files": [
+    "KET-QUA.md",
+    "PHAN-TICH-KHOI-LUONG-BOT-1-3.md",
+    "bot-cua-toi-1/README.md",
+    "bot-cua-toi-3/README.md",
+    "cong-cu/BOT-1-3.md"
+  ],
+  "deleted_preexisting_files": [],
+  "unchanged_prior_files": 745,
+  "baseline_sha256": "e649e7c937f589eadeb7114b3a114f4eecea9071b58a50fcdec82cf0bee41018",
+  "cleanup": "Only two newly created terminal test keys per bot deleted and absence verified by the read-stage script. No pre-existing files removed."
+}

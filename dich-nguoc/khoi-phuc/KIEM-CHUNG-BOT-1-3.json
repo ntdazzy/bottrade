@@ -1,0 +1,51 @@
+{
+  "checked_at_utc": "2026-10-23T04:03:17.297545+00:00",
+  "bots": {
+    "1": {
+      "native_functions_exported": 84,
+      "c_file": "dich-nguoc\\khoi-phuc\\bot-cua-toi-1\\phan-tich\\luot-20261023-data-v2\\ma-trung-gian.c",
+      "c_sha256": "c6389dfe5bd1ef95ed7616eaf5c16b7d041fbd279e650753d239b28e3ea65a8d",
+      "verified_capture_regions": 4,
+      "mql5_components": 2,
+      "cases_matched": 1104,
+      "result_bits_and_trace_hashes_identical": true,
+      "compile_errors": 0,
+      "compile_warnings": 0,
+      "source_files": {
+        "Include/bot-cua-toi-1/Bot1PriceLevels.mqh": "601bdd551e24e3ac9a7742cc00e057d881b069ab672843bec31b3f32a43316b1",
+        "Scripts/bot-cua-toi-1/Bot1PriceLevelsCheck.mq5": "8d10d63113e76ada8e9cdda7bcb8e24170a1813520cfda1744130c9f58984e0e"
+      },
+      "check_ex5_sha256": "f5886c907a9a6e9e6e3c419125d278f1b8258c1f8b7b6c08e572db589804f1b9",
+      "original_ex5_unchanged": true
+    },
+    "3": {
+      "native_functions_exported": 82,
+      "c_file": "dich-nguoc\\khoi-phuc\\bot-cua-toi-3\\phan-tich\\luot-20261023-data\\ma-trung-gian-day-du.c",
+      "c_sha256": "ef8e07ac21522a8a2ab7165db6e77f40885acfc5a044c502ba81e331b826f620",
+      "verified_capture_regions": 4,
+      "mql5_components": 2,
+      "cases_matched": 1104,
+      "result_bits_and_trace_hashes_identical": true,
+      "compile_errors": 0,
+      "compile_warnings": 0,
+      "source_files": {
+        "Include/bot-cua-toi-3/Bot3PriceLevels.mqh": "1cfecf5f324056b64f72a8fb21f446b7ca35f377ae40d4ab0c6859bfe736c413",
+        "Scripts/bot-cua-toi-3/Bot3PriceLevelsCheck.mq5": "a7b9c0e7912f9ed1a8df92ec1778d136383e09ca81816174bd0e2761ad4ddc5d"
+      },
+      "check_ex5_sha256": "63acd791240480613cbefbbafdaae448d5a5ec289e1946f07b37bc7a2dd9fdff",
+      "original_ex5_unchanged": true
+    }
+  },
+  "limitations": [
+    "Native code export is not original MQL5 source.",
+    "Only two price-level functions per bot were rebuilt and compared.",
+    "Original whole-EA test runs did not complete."
+  ],
+  "cleanup": "Automatic review rejected dynamic deletion paths, then recursive deletion of the superseded metadata folder. All temporary files were retained; no alternative deletion tool was used.",
+  "preexisting_files_modified": [
+    "dich-nguoc\\khoi-phuc\\KET-QUA.md",
+    "dich-nguoc\\khoi-phuc\\cong-cu-cu\\ghidra\\ExportEx5Code.java"
+  ],
+  "preexisting_files_deleted": [],
+  "bot13_sources_unchanged": true
+}

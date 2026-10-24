@@ -1,0 +1,9 @@
+{
+  "run": "re2batch1_05",
+  "source": "mt5-btc-recovery/Gold Trade Pro MT5.ex5",
+  "source_sha256": "A3B0DE423A06E10EBEDC279307B93D7CB9188BA2BB5DE77131A913C865B0E922",
+  "capture_exit": 0,
+  "tester_pid": 3360,
+  "runner_exit": 0,
+  "test_interrupted_after_capture": true
+}

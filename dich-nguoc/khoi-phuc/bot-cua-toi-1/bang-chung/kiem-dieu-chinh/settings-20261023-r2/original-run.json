@@ -1,0 +1,60 @@
+{
+  "cases": 1050,
+  "errors": [
+    {
+      "id": 569,
+      "tag": "price-unit",
+      "native_error": "0x230862000001f7"
+    },
+    {
+      "id": 576,
+      "tag": "price-unit",
+      "native_error": "0x230862000001f7"
+    },
+    {
+      "id": 583,
+      "tag": "price-unit",
+      "native_error": "0x230862000001f7"
+    },
+    {
+      "id": 590,
+      "tag": "price-unit",
+      "native_error": "0x230862000001f7"
+    },
+    {
+      "id": 597,
+      "tag": "price-unit",
+      "native_error": "0x230862000001f7"
+    },
+    {
+      "id": 604,
+      "tag": "price-unit",
+      "native_error": "0x230862000001f7"
+    },
+    {
+      "id": 611,
+      "tag": "price-unit",
+      "native_error": "0x230862000001f7"
+    },
+    {
+      "id": 618,
+      "tag": "price-unit",
+      "native_error": "0x230862000001f7"
+    },
+    {
+      "id": 625,
+      "tag": "price-unit",
+      "native_error": "0x230862000001f7"
+    },
+    {
+      "id": 632,
+      "tag": "price-unit",
+      "native_error": "0x230862000001f7"
+    }
+  ],
+  "seconds": 10.37,
+  "sha256": "3d6037d44f0de2d1a3c96695a3bbb00d7f271954354320592e3f49685d3efcc1",
+  "tool_sha256": "6c450fe3381f3145b08478e97f80dee54a60144ab43c5f69bef8b8fe6f525cc1",
+  "native_function_rva": "0x7500",
+  "scope": "Complete native setup executed with successful mocked indicator/tick reads; only listed numeric outputs compared. Runtime division errors map to false; partial writes on errors excluded."
+}
