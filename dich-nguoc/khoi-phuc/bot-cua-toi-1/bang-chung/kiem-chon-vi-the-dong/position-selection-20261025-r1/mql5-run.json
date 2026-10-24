@@ -1,0 +1,25 @@
+{
+  "cases": 4598,
+  "exit_code": 0,
+  "seconds": 3.5,
+  "script_sha256": "28336b3017e88da409449ed5fe269e6b6e49ce1917ea8fdbd1e25998788d2992",
+  "terminal_sha256": "d92c969e0c141cad6f4f9083234b841e2da21862e66b3bbc9b70cbfe5a8e7a47",
+  "tool_sha256": "afe48e2d343c27423ab0124197f6270929d013d82731b2fa600b70eedd83b5b0",
+  "build_receipt": "bot-cua-toi-1/bang-chung/bien-dich/b1-position-selection-01/bien-nhan.json",
+  "build_receipt_sha256": "48654fc74d7edad515a5b878a5c38a21020684de9757988127eb653f956bccdf",
+  "sources_sha256": {
+    "Scripts/bot-cua-toi-1/Bot1PositionSelectionCheck.mq5": "d9dcc5a10b36d620e838f2e3ebc928db2f7477e94d1c9e211e55152c9adb004c",
+    "Scripts/bot-cua-toi-1/Bot1PipelineApi.mqh": "cc7c0e9d1199205e1f2b6ab178a55cb6e9fc838e991d3b40a176f90f4d110cee",
+    "Include/bot-cua-toi-1/Bot1PositionSelection.mqh": "56a15c3e66d7597834b04594647298143658c5c213cc54e8091cf09b481ef15f",
+    "Include/bot-cua-toi-1/Bot1PositionClose.mqh": "03c79f46a202b8a06ddab6fdae88291d4dbf30a0c2d6f99c0ff30fe24ffc21d5",
+    "Include/bot-cua-toi-1/Bot1TradeSend.mqh": "dddd20fb58daa7cd60ce87f08c89be3a204ce170e89418c801b24175d4d12e8c",
+    "Include/bot-cua-toi-1/Bot1TradeMessages.mqh": "af36245e2dd03ec12d5808457530c4937bc354a9a68b5a1f70f8bc394f5ab5a3",
+    "Include/bot-cua-toi-1/Bot1PendingRequest.mqh": "46ffbb7da4d469533e1a665b5b666ccbfc755ff973ae5e5ebabf5cdd9051700d",
+    "Include/bot-cua-toi-1/Bot1Filling.mqh": "d01485811439d971833de028c791c5abb6cb64ba5b9c20228ca8785453a6615d"
+  },
+  "hashes": {
+    "mql5-results.bin": "d4899d2c735980c1ceb4b1e4828bdb914c44f6fe9e908dca18c527e7a41ee900",
+    "api-fixtures.bin": "69a163a5921018f737740f150f4484dc2c486a0b68af64cd4ead5ff80d25fcfb",
+    "script-status.bin": "d19ae11225ae91994a11a5af2bdf25238bbc62698b3b8aef227cb33db4e3bafd"
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "constants": {
+    "SYMBOL_TRADE_STOPS_LEVEL": 31,
+    "SYMBOL_TRADE_FREEZE_LEVEL": 32,
+    "SYMBOL_POINT": 16
+  },
+  "sdk_sites": {
+    "ScanTotal": {
+      "function_rva": "0x18a0",
+      "sdk_rva": "0x7d7da0",
+      "call_site": "0x18f0",
+      "property": null
+    },
+    "ScanTicket": {
+      "function_rva": "0x1900",
+      "sdk_rva": "0x7d7df0",
+      "call_site": "0x1957",
+      "property": null
+    },
+    "ScanStops": {
+      "function_rva": "0x1960",
+      "sdk_rva": "0x7c2970",
+      "call_site": "0x19be",
+      "property": 31
+    },
+    "CloseMagic": {
+      "function_rva": "0x1420",
+      "sdk_rva": "0x7d7fc0",
+      "call_site": "0x1475",
+      "property": 12
+    },
+    "CloseType": {
+      "function_rva": "0x1480",
+      "sdk_rva": "0x7d7fc0",
+      "call_site": "0x14d5",
+      "property": 2
+    },
+    "CloseVolume": {
+      "function_rva": "0x14e0",
+      "sdk_rva": "0x7d7f70",
+      "call_site": "0x1530",
+      "property": 3
+    },
+    "CloseSymbol": {
+      "function_rva": "0x16a0",
+      "sdk_rva": "0x7d8010",
+      "call_site": "0x1701",
+      "property": null
+    }
+  },
+  "originals": [
+    {
+      "bot": 1,
+      "analysis_sha256": "208e48e9e971c4782bf18d2f955479d3ff219e7ce803859755c35b7b80796934",
+      "original_ex5_sha256": "a3b0de423a06e10ebedc279307b93d7cb9188ba2bb5de77131a913c865b0e922",
+      "sdk_targets": [
+        "0x7d7da0",
+        "0x7d7df0",
+        "0x7d7f70",
+        "0x7d7fc0",
+        "0x7d8010"
+      ]
+    },
+    {
+      "bot": 3,
+      "analysis_sha256": "4750650e5fe870aac99ac2d835f1b7cbe6336f380b8bc61f1dd694989036f463",
+      "original_ex5_sha256": "ee063d3d87490afe24e2f4ce85f6b05659320e297b102efd70207f71ca2feb83",
+      "sdk_targets": [
+        "0x7d7da0",
+        "0x7d7df0",
+        "0x7d7f70",
+        "0x7d7fc0",
+        "0x7d8010"
+      ]
+    }
+  ],
+  "calibration_sha256": "0f5bd8ce58dd6b62aa67eb0fd163b2bb7fdb31c562ce074a61b862ed1639e7be",
+  "build_sha256": "335964af9eaa6f4af29e760cdaa1adbd646a930dd9f6ca4ded07c70c8ad3ac07",
+  "capture_sha256": "4a01e462808d8ed26ecf7d75819e890e8993f7a0744b10a0b0335abee06265b4",
+  "tool_sha256": "a755433996f227b936038e6dcdb3a6bb666236be17e8352cdbe7fd54b8db5098",
+  "only_anchor_executed": true,
+  "runner_verified": true,
+  "limits": [
+    "SDK call addresses/constants only; original selector behavior and real account selection still require separate verification."
+  ]
+}

@@ -20,8 +20,11 @@ phép kiểm và việc còn thiếu. Sau đó mới làm lần lượt; không 
 viết xong một phần che mất các phần khác. Giữ mã sạch, rõ và đúng hành
 vi EX5, gồm kiểu số, thứ tự, làm tròn và tác dụng phụ.
 
-Có thể giao Claude phân tích/kiểm một phần nhỏ, đúng bối cảnh. Không
-yêu cầu vượt biện pháp bảo vệ; kết luận vẫn cần tự đối chiếu với bot.
+Theo yêu cầu hiện tại, Claude là người làm chính, nhận khoảng 95%
+phần việc phân tích, viết mã và bộ kiểm. Codex quản lý, chia phần,
+theo dõi, tự đối chiếu với bot gốc và kiểm kết quả trước khi ghép.
+Giao từng phần rõ đầu vào/đầu ra và nêu đúng bối cảnh; không yêu cầu
+vượt biện pháp bảo vệ. Bản đề xuất của Claude chưa phải kết quả đã đạt.
 Khi đã ghép đủ, phải so toàn bộ bot và toàn bộ cài đặt/hiển thị, kể cả
 khởi động lại, lưu trạng thái và lỗi. Chỉ hoàn thành khi không còn mục
 bắt buộc bị bỏ hoặc sai khác chưa giải quyết. Số hàm đã chụp và số ca

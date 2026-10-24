@@ -1,0 +1,29 @@
+{
+  "bot": 1,
+  "mutation": "refresh-identities",
+  "cases": 2,
+  "rejected": [
+    {
+      "id": 0,
+      "error": "API_ORDER_DIFFERS (21, 23)",
+      "native_rva": "0x7db829ce8010"
+    },
+    {
+      "id": 1,
+      "error": "API_ORDER_DIFFERS (21, 23)",
+      "native_rva": "0x7db829ce8010"
+    }
+  ],
+  "compile_exit_code": 1,
+  "errors": 0,
+  "warnings": 0,
+  "terminal_exit_code": 0,
+  "terminal_sha256": "d92c969e0c141cad6f4f9083234b841e2da21862e66b3bbc9b70cbfe5a8e7a47",
+  "source_sha256": "72e9c173bb0288b174118cf1debd256522371afa32f0a1484821b6d14cda44bd",
+  "incorrect_header_sha256": "5b6ccf90c9530e59f08e33890ef751d57595a7384cc6ef9ccf8463f48a45758b",
+  "binary_sha256": "4cc4db0d7323e368281a99a12985f9f4ef76e402c53dbbc09824219396e8e072",
+  "original_header_sha256": "56a15c3e66d7597834b04594647298143658c5c213cc54e8091cf09b481ef15f",
+  "cases_sha256": "dbbd189c1c03452d35765d4dd1cdab3e09da9ceba105acb7e7fa56fefc7655e6",
+  "fixture_sha256": "d2b91865277c00de0657132383e8f83c24e6451f8b25610994d76ae88e76ea08",
+  "seconds": 5.82
+}

@@ -1,0 +1,29 @@
+{
+  "bot": 1,
+  "mutation": "cache-symbol",
+  "cases": 2,
+  "rejected": [
+    {
+      "id": 0,
+      "error": "EXTRA_NATIVE_API 18",
+      "native_rva": "0x7db829ce7fc0"
+    },
+    {
+      "id": 1,
+      "error": "EXTRA_NATIVE_API 18",
+      "native_rva": "0x7db829ce7fc0"
+    }
+  ],
+  "compile_exit_code": 1,
+  "errors": 0,
+  "warnings": 0,
+  "terminal_exit_code": 0,
+  "terminal_sha256": "d92c969e0c141cad6f4f9083234b841e2da21862e66b3bbc9b70cbfe5a8e7a47",
+  "source_sha256": "72e9c173bb0288b174118cf1debd256522371afa32f0a1484821b6d14cda44bd",
+  "incorrect_header_sha256": "73fcf23bbd2b50fead6b56d8f1d38284a9c7c41301ff74d5396744788e4ac2a8",
+  "binary_sha256": "dc6c80dd73501e0146f7104804cf6558ce70b943525d48f62d943056cca8713c",
+  "original_header_sha256": "56a15c3e66d7597834b04594647298143658c5c213cc54e8091cf09b481ef15f",
+  "cases_sha256": "dbbd189c1c03452d35765d4dd1cdab3e09da9ceba105acb7e7fa56fefc7655e6",
+  "fixture_sha256": "310aedfbad6b3d1ea8e9fa66b136a65f25a30723f7a985fbd26781ecf676e0e8",
+  "seconds": 7.81
+}

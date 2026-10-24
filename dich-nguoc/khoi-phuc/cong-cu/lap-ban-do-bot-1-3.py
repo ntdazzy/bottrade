@@ -242,10 +242,13 @@ def main():
             scan_rvas={1:{0x31f40:'0',0x323e0:'1',0x32ce0:'2'},3:{0x3e490:'2',0x47330:'3'}}
             selection_rvas={1:[0x32110,0x325b0],3:[0x3da90,0x3dd60]}
             close_rvas={1:[0x22c40,0x3d010],3:[0x2e370,0x47d20]}
+            position_scan_rvas={1:[0x2fa00,0x2fce0],3:[0x3ce40,0x3d220]}
             for selection_rva in selection_rvas[bot]:
                 new_parts[selection_rva]=('kiem-chon-lenh-huy/selection-20261024-r2','PendingSelection','Bộ 2.522 ca mua/bán mỗi bot: chọn vé qua hủy/gửi, dọn bảng và thông báo. Truy vấn/kết quả gửi cấp sẵn; còn tài khoản thực, lỗi cấp bộ nhớ, nơi gọi và toàn EA.')
             for close_rva in close_rvas[bot]:
                 new_parts[close_rva]=('kiem-dong-vi-the/close-20261025-r4','PositionClose','Bộ 2.589 ca: kiểm điều kiện/đóng vị thế qua chọn cách khớp, gửi và thông báo. So trạng thái trước truy vấn và sau gửi. Truy vấn/kết quả gửi cấp sẵn; còn nguồn biến giá dùng chung, nơi gọi, tài khoản thực, lỗi cấp bộ nhớ và toàn EA.')
+            for scan_rva in position_scan_rvas[bot]:
+                new_parts[scan_rva]=('kiem-chon-vi-the-dong/position-selection-20261025-r3','PositionSelection','Bộ 4.600 ca mỗi bot: quét mua/bán qua nguyên phần kiểm đóng, đóng, chọn cách khớp, gửi và thông báo. So trạng thái trước/sau dịch vụ; truy vấn/kết quả gửi/trạng thái chọn cấp sẵn. Còn nơi gọi, thứ tự nạp giá mọi nhánh, tài khoản/mã lỗi thật, lỗi cấp bộ nhớ và toàn EA.')
             for scan_rva in scan_rvas[bot]:
                 new_parts[scan_rva]=('kiem-quet-lenh/scan-20261024-r2','OrderScan','Quét/đếm/dọn bảng/giới hạn trong bộ ca; truy vấn và trạng thái chọn được cấp. Còn tài khoản thật, lỗi cấp bộ nhớ và ghép EA.')
             for send_rva in [0x950,*( [0x235c0,0x23fa0,0x26060,0x26360] if bot==1 else [0x2ecf0,0x2f6d0,0x31790,0x31a90])]:
@@ -273,6 +276,11 @@ def main():
                         tested=json.loads(engine.read_text());assert tested['cases']==tested['matched']==2589 and tested['failed']==0
                         semantics=ROOT/f'bot-cua-toi-{bot}/phan-tich/dong-vi-the/close-20261024-r1/semantics.json'
                         proof.update(function_case_kind=close_rvas[bot].index(rva),tester_comparison=engine.relative_to(ROOT).as_posix(),tester_comparison_sha256=sha(engine),semantics_source=semantics.relative_to(ROOT).as_posix(),semantics_sha256=sha(semantics))
+                    if rva in position_scan_rvas[bot]:
+                        engine=ROOT/f'doi-chung-mt5/chon-vi-the-dong-20261025/engine-position-selection-b{bot}-r3/comparison.json'
+                        tested=json.loads(engine.read_text());assert tested['cases']==tested['matched']==4600 and tested['failed']==0
+                        semantics=ROOT/f'bot-cua-toi-{bot}/phan-tich/dong-vi-the/scan-20261025-r1/semantics.json'
+                        proof.update(function_case_kind=position_scan_rvas[bot].index(rva),tester_comparison=engine.relative_to(ROOT).as_posix(),tester_comparison_sha256=sha(engine),semantics_source=semantics.relative_to(ROOT).as_posix(),semantics_sha256=sha(semantics))
             pipeline_rvas={1:{0x950,0x231c0,0x235c0,0x23fa0,0x26060,0x26360,0x2e6d0,0x32dd0,0x336d0},
                            3:{0x950,0x2e8f0,0x2ecf0,0x2f6d0,0x31790,0x31a90,0x3bb10,0x3e580,0x3ee80}}
             if proof and rva in pipeline_rvas[bot]:

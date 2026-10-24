@@ -1,0 +1,15 @@
+{
+  "cases": 4598,
+  "matched": 4598,
+  "failed": 0,
+  "first_failures": [],
+  "hashes": {
+    "cases.bin": "f27c4c517194c435b1c5b26792e2036587c77a70ba4d6e0400af3ad4a9b8f9e6",
+    "original-results.bin": "d4899d2c735980c1ceb4b1e4828bdb914c44f6fe9e908dca18c527e7a41ee900",
+    "mql5-results.bin": "d4899d2c735980c1ceb4b1e4828bdb914c44f6fe9e908dca18c527e7a41ee900",
+    "api-fixtures.bin": "69a163a5921018f737740f150f4484dc2c486a0b68af64cd4ead5ff80d25fcfb",
+    "script-status.bin": "d19ae11225ae91994a11a5af2bdf25238bbc62698b3b8aef227cb33db4e3bafd"
+  },
+  "whole_bot_complete": false,
+  "scope": "Compare position scanners through the complete guard/close/filling/send path.\n\nUsage: kiem-chon-vi-the-dong-bot-1-3.py prepare|mql5|original|compare BOT RUN [--build BUILD]\nSDK replies are supplied and input-bound; formatting is measured in MT5.\nHelper-entry instrumentation resets only test reply counters, not bot state.\nNo real orders, actual account selection, allocation faults or full-EA proof.\n"
+}

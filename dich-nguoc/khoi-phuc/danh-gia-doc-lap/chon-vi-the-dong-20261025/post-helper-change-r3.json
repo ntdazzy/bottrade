@@ -1,0 +1,39 @@
+{
+  "check_tool_sha256": "eadc074c9748343fbf7865a12c2291cc1e3802c05b3eeb058929c51a0ee698d2",
+  "checks": [
+    {
+      "bot": 1,
+      "id": 4598,
+      "helpers": 2,
+      "close_calls": 2,
+      "sends": 2,
+      "matched": true
+    },
+    {
+      "bot": 1,
+      "id": 4599,
+      "helpers": 2,
+      "close_calls": 2,
+      "sends": 2,
+      "matched": true
+    },
+    {
+      "bot": 3,
+      "id": 4598,
+      "helpers": 2,
+      "close_calls": 2,
+      "sends": 2,
+      "matched": true
+    },
+    {
+      "bot": 3,
+      "id": 4599,
+      "helpers": 2,
+      "close_calls": 2,
+      "sends": 2,
+      "matched": true
+    }
+  ],
+  "scope": "Only the two new post-helper mutation cases per bot. Full r3 is separate.",
+  "whole_bot_complete": false
+}

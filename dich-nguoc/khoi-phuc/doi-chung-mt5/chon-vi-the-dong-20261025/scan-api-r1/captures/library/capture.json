@@ -1,0 +1,75 @@
+{
+  "pid": 19892,
+  "process": "C:\\Users\\NTD\\Desktop\\Bot Market Demo\\dich-nguoc\\.local\\claude-recovery-20261023\\mt5\\metatester64.exe",
+  "regions": [
+    {
+      "base": 2963567083520,
+      "allocation_base": 2963567083520,
+      "bytes": 8192,
+      "protect": 32,
+      "file": "000002b2025d0000.bin",
+      "kind": "executable",
+      "sha256": "1f7e2579b112cbe4816c2eaafc11ee627cdeadbd6eed0d86d676ce6566468d22"
+    },
+    {
+      "base": 140725860892672,
+      "allocation_base": 140725860892672,
+      "bytes": 4096,
+      "protect": 32,
+      "file": "00007ffd4af30000.bin",
+      "kind": "executable",
+      "sha256": "b5326cf17fcd7722476542b31c15215b3a6cdb10810a16019292a9540a4198eb"
+    },
+    {
+      "base": 140725860896768,
+      "allocation_base": 140725860892672,
+      "bytes": 4096,
+      "protect": 64,
+      "file": "00007ffd4af31000.bin",
+      "kind": "executable",
+      "sha256": "ad7facb2586fc6e966c004d7d1d16b024f5805ff7cb47c7a85dabd8b48892ca7"
+    },
+    {
+      "base": 2963567091712,
+      "allocation_base": 2963567083520,
+      "bytes": 57344,
+      "protect": 4,
+      "kind": "mutable_program_data",
+      "file": "000002b2025d2000-program-data.bin",
+      "sha256": "d3aa494187604b88d1fc8fb8dc1cc6c9c212c42c1a1f77116b5639a462eacc38"
+    }
+  ],
+  "errors": [],
+  "bytes": 73728,
+  "query_end": {
+    "address": 140737488289792,
+    "windows_error": 87
+  },
+  "allocation_layout": [
+    {
+      "base": 2963567083520,
+      "allocation_base": 2963567083520,
+      "bytes": 8192,
+      "protect": 32
+    },
+    {
+      "base": 2963567091712,
+      "allocation_base": 2963567083520,
+      "bytes": 57344,
+      "protect": 4
+    },
+    {
+      "base": 140725860892672,
+      "allocation_base": 140725860892672,
+      "bytes": 4096,
+      "protect": 32
+    },
+    {
+      "base": 140725860896768,
+      "allocation_base": 140725860892672,
+      "bytes": 4096,
+      "protect": 64
+    }
+  ],
+  "input_string_checks": []
+}

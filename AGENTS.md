@@ -29,6 +29,10 @@
    Nêu đúng bối cảnh và phạm vi; không yêu cầu vượt biện pháp bảo vệ.
    Nhận xét của Claude phải được đối chiếu lại bằng chứng, không thay
    cho phép so với bot gốc. Không có phản hồi thì ghi là chưa có đánh giá.
+   Theo yêu cầu mới: giao khoảng 95% phần việc tiếp theo cho Claude,
+   gồm phân tích, viết mã và bộ kiểm. Claude là người làm chính;
+   Codex quản lý, chia phần, theo dõi, kiểm chứng độc lập và ghép kết
+   quả; không chỉ giao Claude đọc/rà mã.
 6. So từng phần rồi so toàn bộ nguồn MQL5 đã biên dịch với EX5 gốc trên
    cùng dữ liệu và điều kiện. Kiểm cả giao dịch, toàn bộ cài đặt, bảng
    hiển thị, khởi động lại, trạng thái lưu và lỗi; cùng lợi nhuận chưa đủ.

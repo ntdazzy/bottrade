@@ -8,7 +8,7 @@ thành toàn bộ bot; dữ liệu truy vấn và kết quả gửi trong bộ k
 | Phần | Bot 1 | Bot 3 | Bằng chứng và phần còn thiếu |
 |---|---|---|---|
 | Tạo/gửi đóng theo vé | `0x22c40`, C 15404–15541 | `0x2e370`, C 21093–21230 | Đã dựng `BotNClosePosition`; còn ghép nơi gọi và kiểm nơi giao dịch |
-| Kiểm hai ngưỡng rồi gọi đóng | `0x3d010`, C 27063–27108 | `0x47d20`, C 31922–31967 | Đã dựng `BotNTryClosePosition`; tên/nguồn hai giá trị tham chiếu trong hàm quản lý còn phải phân tích |
+| Kiểm hai ngưỡng rồi gọi đóng | `0x3d010`, C 27063–27108 | `0x47d20`, C 31922–31967 | Đã dựng `BotNTryClosePosition`; lượt sau đã nối hai ô giá với vùng dữ liệu giá gần nhất, còn thứ tự nạp/ghi ở mọi nhánh quản lý |
 | Chọn cách khớp, gửi và thông báo | `0x231c0`, `0x950` và các hàm định dạng | `0x2e8f0`, `0x950` và các hàm định dạng | Dùng nguồn đã dựng, so cả trạng thái và thứ tự gọi; chưa có toàn EA |
 
 Phân tích và danh sách nhánh được lưu trước khi viết nguồn:
@@ -87,7 +87,11 @@ Năm yêu cầu mới được xác nhận dùng đúng Opus 5.5 `max`. Báo cá
 đọc tệp; cha đã tự kiểm băm và chạy so. Còn phép ghép mọi cặp cờ cách
 khớp khác nhau và ưu tiên 1 trong nhóm hai lần đóng; không bỏ các mục này.
 
-Còn nguồn giá trị tham chiếu/ngưỡng từ hàm quản lý, quét/chọn vị thế
-để đóng, toàn EA, mọi cài đặt, bảng hiển thị, khởi động lại/trạng thái
-lưu, tài khoản/nơi khớp thật và lỗi cấp bộ nhớ. Chưa chứng minh toàn
-bộ byte đệm riêng của cấu trúc MQL5. Không gửi lệnh thật trong bộ kiểm.
+[Lượt quét/chọn mới](PHAN-TICH-CHON-VI-THE-DONG-BOT-1-3.md) đã ghép
+bốn hàm quét qua phần đóng này; lượt r3 khớp 4.600 ca mỗi bot (2.300
+mỗi chiều). Đã bổ sung bằng chứng hai ô giá thuộc vùng dữ liệu giá gần
+nhất và ba hằng khoảng cách. Còn thứ tự nạp/ghi giá/ngưỡng trong mọi
+nhánh quản lý, nơi/thời điểm gọi, toàn EA, mọi cài đặt, bảng hiển thị,
+khởi động lại/trạng thái lưu, tài khoản/nơi khớp/mã lỗi MT5 thật và
+lỗi cấp bộ nhớ. Chưa chứng minh toàn bộ byte đệm riêng của MQL5. Không
+gửi lệnh thật trong bộ kiểm.

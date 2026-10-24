@@ -1,0 +1,34 @@
+{
+  "bot": 3,
+  "original_ex5_sha256": "ee063d3d87490afe24e2f4ce85f6b05659320e297b102efd70207f71ca2feb83",
+  "analysis_sha256": "4750650e5fe870aac99ac2d835f1b7cbe6336f380b8bc61f1dd694989036f463",
+  "api_contract_sha256": "d3b1061b07b520ffdcac3d23694b4a652cfac878b18afdf4a3f63158f67f4dec",
+  "runtime_verified": false,
+  "functions": [
+    {
+      "rva": "0x3ce40",
+      "position_type": 0,
+      "returns": "void"
+    },
+    {
+      "rva": "0x3d220",
+      "position_type": 1,
+      "returns": "void"
+    }
+  ],
+  "globals": {
+    "magic_base": "0x1d6ff0",
+    "last_ticket": "0x74838",
+    "symbol_descriptor": "0x74958"
+  },
+  "identity_count": 15,
+  "loop": "Call PositionsTotal once. If signed low32 total is negative, keep last_ticket and return after local-string cleanup. Otherwise cache seed from signed32 magic_base, compute accepted identities before looping, and visit total,total-1,...,0 inclusive.",
+  "identities": "For offsets 1..identity_count, add modulo2^32 then sign-extend to64. Repeatedly call PositionGetInteger(12) in offset order, short-circuit on the first full64 match. Zero tickets skip all property reads.",
+  "symbol": "Assign PositionGetString(0) to one persistent local string. Compare exact nullable UTF16 text against the current shared symbol; two null pointers match, only one null does not. No case folding.",
+  "accepted": "Read PositionGetInteger(2) full64; accept0 in first function or1 in second. Read and discard PositionGetDouble(3), then read current global last_ticket and call the full existing close guard (including reselect/filling/send/messages). Continue scanning afterwards.",
+  "read_timing": "Last ticket is assigned after every PositionGetTicket. Cached identity list survives later seed changes. Symbol is re-read for each comparison. The helper argument is loaded after the ignored volume query; callbacks may change last_ticket before it is read.",
+  "remaining": [
+    "Compile/compare all four selectors including the complete close path and observable state at query boundaries.",
+    "Shared-reference/threshold producer ordering,actual account selection,full EA and allocation faults remain open."
+  ]
+}

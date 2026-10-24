@@ -1,0 +1,94 @@
+{
+  "session_id": "81a7b595-b02d-44c6-a218-f595a6b74954",
+  "requests": [
+    {
+      "timestamp": "2026-10-24T18:11:07.274Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-24T18:11:19.786Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-24T18:11:25.650Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-24T18:11:31.676Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-24T18:11:38.476Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-24T18:11:42.415Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-24T18:11:48.291Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-24T18:17:30.330Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-24T18:17:57.252Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-24T18:18:20.654Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-24T18:18:25.196Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-24T18:18:41.508Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-24T18:19:09.139Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-24T18:19:48.768Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-24T18:20:10.190Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-24T18:23:21.522Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    }
+  ],
+  "journal_prefix_bytes": 1340380,
+  "journal_prefix_sha256": "5e9dccaaa794df138cedcd4bcabd3a0492e590f8aa35729d1af886a4dc02c20c",
+  "response_sha256": "5f8ff6c745a8e79540110a040f10187f910740fa748057eb2e31e180b1449986",
+  "raw_response_sha256": "33a4a6ab7dd78916987cec23d0022960a03f989b93207a7f28475d3324fac316",
+  "prompt_sha256": "9fe890a19de0a09ea0a6a6092dfada0a8f285cd02480451caaa73d2d9dd24529",
+  "ultracode_requested": true,
+  "ultracode_workflow_completed": false,
+  "review_scope": "Frozen C/native scan excerpts and existing close semantics; did not review new MQL source or run tests.",
+  "whole_bot_complete": false
+}

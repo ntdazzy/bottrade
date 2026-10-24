@@ -1,0 +1,20 @@
+{
+  "bot": 3,
+  "cases": 4598,
+  "matched": 4598,
+  "failed": 0,
+  "first_failures": [],
+  "seconds": 8.92,
+  "source_comparison": "bot-cua-toi-3/bang-chung/kiem-chon-vi-the-dong/position-selection-20261025-r1",
+  "hashes": {
+    "cases.bin": "f27c4c517194c435b1c5b26792e2036587c77a70ba4d6e0400af3ad4a9b8f9e6",
+    "original-results.bin": "0748029d8bc2a62292e3d24de3c5dbd57a2f26ce2139d08fd08b517cc92d2ddc",
+    "tester-mql5-results.bin": "0748029d8bc2a62292e3d24de3c5dbd57a2f26ce2139d08fd08b517cc92d2ddc",
+    "script-mql5-results.bin": "0748029d8bc2a62292e3d24de3c5dbd57a2f26ce2139d08fd08b517cc92d2ddc",
+    "api-fixtures.bin": "3c526d2c30a88ae9ed75a9d1db43197232fa7395425a54dc725930e03ad94a69",
+    "script-status.bin": "d19ae11225ae91994a11a5af2bdf25238bbc62698b3b8aef227cb33db4e3bafd"
+  },
+  "whole_bot_complete": false,
+  "scope": "Same four position scanners through actual close guard,close builder,filling,send and messages.35 public fields,four strings/null flags,deviation,four shared doubles,last ticket,signed32 identity seed,nullable symbol,selection model,helper count and state at service boundaries compared. Helper instrumentation resets reply counters only. SDK replies supplied/input-bound; formatting measured. No real account/broker/full EA/allocation-fault proof.",
+  "input_contract_checked_cases": 4598
+}

@@ -2,6 +2,62 @@
 
 Chạy từ thư mục dự án. Mỗi lượt dùng tên mới để giữ bằng chứng cũ.
 
+## Phân công Claude và kiểm kết quả
+
+- `giao-claude-phan-viec.ps1 -Prompt TASK.md -Run NEW_RUN -OutputDirectory DIRECTORY`:
+  giao Claude phân tích/viết mã trong thư mục riêng dưới
+  `claude-thuc-hien/`. Chỉ đọc/tìm/ghi tệp; không có công cụ chạy lệnh.
+  Có thể dùng `-Resume SESSION_ID` sau khi lượt trước kết thúc.
+  Codex kiểm và ghép các tệp đã đạt. Không dùng cờ bỏ kiểm quyền.
+- Yêu cầu Opus 5.5 `max`, bật cài đặt Ultracode; mức thực tế phải lấy
+  từ nhật ký yêu cầu. Cài đặt bộ nhớ tự động được tắt cho các lượt
+  giao việc mới, theo [tài liệu Claude](https://code.claude.com/docs/en/memory).
+  Biên nhận phải ghi riêng nếu có tệp bị ghi ngoài phạm vi được giao.
+- `phan-tich-huy-lenh-cho-bot-1-3.py BOT NEW_RUN --position-modify`:
+  tách hàm sửa vị thế vào `phan-tich/dong-vi-the/NEW_RUN/`. Lượt
+  `modify-20261025-r1`: 196 lệnh máy mỗi bot; chỉ phân tích tĩnh.
+- Cùng công cụ, `--coordinator`: tách khối điều phối vào
+  `phan-tich/dieu-phoi/NEW_RUN/`. Bot 1 lượt
+  `coordinator-20261025-r1`: 4.894 lệnh máy; chưa xác nhận là sự kiện
+  MT5 nào và chưa có kết quả chạy.
+
+## Quét/chọn vị thế qua toàn bộ phần đóng
+
+- `phan-tich-huy-lenh-cho-bot-1-3.py BOT NEW_RUN --position-scan`:
+  tách hai hàm quét vào `phan-tich/dong-vi-the/NEW_RUN/`. Lượt
+  `scan-20261025-r1`; không chạy mã bot.
+- Cùng công cụ, `--position-references`: tìm vị trí nạp vùng dữ liệu
+  giá, nối hai trường giá đã đối chứng, liệt kê phép gán C trực tiếp;
+  chỉ phân tích quan sát được, chưa toàn bộ đường ghi. Lượt `refs-20261025-r1`.
+- `kiem-api-chon-vi-the.py PROBE_RUN_DIRECTORY`: chốt hai lời gọi
+  quét và ba hằng khoảng cách từ đối chứng chỉ gọi `Anchor`. Đầu ra
+  mới `api-contract.json`; không mở MT5. Lượt `scan-api-r1` trong
+  `doi-chung-mt5/chon-vi-the-dong-20261025/`.
+- `tao-kiem-chon-vi-the-dong.py`: tạo đúng hai chương trình kiểm mới
+  từ bản nguồn kiểm đóng r4 đã lưu. Không sửa bản kiểm đóng cũ và từ
+  chối nếu tệp đầu ra đã có.
+- `kiem-chon-vi-the-dong-bot-1-3.py MODE BOT RUN [--build BUILD]`:
+  `prepare` → biên dịch `BotNPositionSelectionCheck.mq5` → `mql5`
+  → `original` → `compare`. Mỗi bot 4.600 ca, 2.300 mỗi chiều.
+  Lượt hiện hành `position-selection-20261025-r3`, bản
+  `bN-position-selection-01`. Lượt r1/r2 (4.598 ca) giữ nguyên.
+- `kiem-hang-doi-trong-may-thu.py BOT NEW_RUN --component-run RUN
+  --build BUILD --position-selection`: cùng thân kiểm trong máy đo
+  quá khứ. Chỉ dùng một cờ chọn phần kiểm mỗi lần.
+  Lượt `engine-position-selection-bN-r3`: 4.600 ca mỗi bot khớp.
+- `kiem-doc-lai-sau-dong.py NEW_RUN`: đọc nguồn r3 đã lưu, tạo riêng
+  hai bản sai mỗi bot, biên dịch và chạy trong MT5 riêng (tắt giao
+  dịch/DLL), rồi kiểm mã gốc phải từ chối cả hai ca mới. Không sửa
+  nguồn chính. Lượt `post-helper-r2`: 4 bản sai, 8/8 ca bị từ chối;
+  `post-helper-r1` dừng trước khi mở MT5.
+- `kiem-chung-chon-vi-the-dong-bot-1-3.py NEW_JSON`: kiểm nguồn/bản
+  dựng/dữ liệu ba nơi chạy, phần phụ thuộc, 36 kiểu dữ liệu hoặc dấu
+  gọi sai, chín trường hợp tệp cắt cụt mỗi bot, hai ca mới và bốn bản
+  sai (chạy lại phép từ chối bằng mã gốc). Không mở MT5. Đầu ra hiện
+  hành `KIEM-CHUNG-CHON-VI-THE-DONG-BOT-1-3-R2.json`.
+
+[Phạm vi và phần còn thiếu](../PHAN-TICH-CHON-VI-THE-DONG-BOT-1-3.md).
+
 ## Đóng vị thế theo vé và điều kiện
 
 - `phan-tich-huy-lenh-cho-bot-1-3.py BOT NEW_RUN --positions`: tách
@@ -299,7 +355,7 @@ liệt kê mọi hàm trong bảng đã chụp, toàn bộ dòng cài đặt đ�
 lời gọi, chuỗi, chỗ chưa rõ và liên kết bằng chứng. Thư mục đích phải
 mới và nằm trong `khoi-phuc`; không sửa EX5 hoặc mã trung gian.
 
-Lượt hiện hành: `ban-do-bot-1-3/luot-20261024-r8/`. Danh sách không tự
+Lượt hiện hành: `ban-do-bot-1-3/luot-20261025-r3/`. Danh sách không tự
 khẳng định toàn bộ EX5 đã được phân tích hoặc mọi cài đặt đã được nối.
 
 ## Hai bộ kiểm đã hoàn tất trước khi chuyển sang rà bản đồ

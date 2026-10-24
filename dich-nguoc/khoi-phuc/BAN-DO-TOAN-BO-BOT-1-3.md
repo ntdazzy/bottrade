@@ -19,9 +19,9 @@ phải được phân tích tiếp trước khi viết luật tương ứng.
 
 Danh sách đầy đủ từng hàm và từng dòng cài đặt:
 
-- [Bot 1](ban-do-bot-1-3/luot-20261025-r1/bot-1.md), [dữ liệu chi tiết](ban-do-bot-1-3/luot-20261025-r1/bot-1.json).
-- [Bot 3](ban-do-bot-1-3/luot-20261025-r1/bot-3.md), [dữ liệu chi tiết](ban-do-bot-1-3/luot-20261025-r1/bot-3.json).
-- [Biên nhận lập danh sách](ban-do-bot-1-3/luot-20261025-r1/summary.json).
+- [Bot 1](ban-do-bot-1-3/luot-20261025-r3/bot-1.md), [dữ liệu chi tiết](ban-do-bot-1-3/luot-20261025-r3/bot-1.json).
+- [Bot 3](ban-do-bot-1-3/luot-20261025-r3/bot-3.md), [dữ liệu chi tiết](ban-do-bot-1-3/luot-20261025-r3/bot-3.json).
+- [Biên nhận lập danh sách](ban-do-bot-1-3/luot-20261025-r3/summary.json).
 
 Mỗi hàm có vị trí gốc, dòng C, các hàm gọi/được gọi, lời gọi MT5, mã
 điều phối, chuỗi liên quan, biến dùng chung, nguồn dựng lại và bằng
@@ -71,7 +71,7 @@ phép đối chiếu trong phạm vi cụ thể; không đánh dấu hoàn tất
 | P20 | Dừng lỗ/chốt lời sau khớp | `0x271f0`, `0x2abc0` / `0x32f60`, `0x37590` | Cần cả hai chiều, đặt sau khớp và kết quả sửa |
 | P21 | Dời dừng lỗ/chốt lời, hòa vốn, phục hồi theo thời gian | Cùng hai hàm quản lý vị thế và các `UseHL*`, `AdjustTrail*` | Cần từng chế độ, giá kích hoạt, giới hạn và thử lại |
 | P22 | Dừng/chốt ảo và chờ chuyển thành lệnh thật | `0x3d200`, `0x3d5a0`, `0x3d640` / `0x47f10`, `0x482b0`, `0x484c0`, `0x48560` | Đã phân tích bảng 500 hàng, xác nhận hằng làm tròn, hai nơi truyền vé, 7 đối số thông báo và sáu ca chốt lời gốc; chưa dựng/so MQL5. Còn kiểm nhánh đầy bảng, dọn bảng, lỗi và khởi động lại; [bằng chứng](PHAN-TICH-BANG-DUNG-AO-BOT-1-3.md) |
-| P23 | Đóng vị thế và xóa theo bộ lọc | `0x22c40`, `0x3d010`, các hàm quét / `0x2e370`, `0x47d20`, các hàm quét | Đã dựng hai hàm đóng/kiểm điều kiện mỗi bot qua chọn cách khớp, gửi và thông báo: 2.589 ca mỗi bot khớp mã gốc/MQL5/máy đo quá khứ, gồm trạng thái trước truy vấn/sau gửi. Còn nguồn hai giá trị tham chiếu/ngưỡng, các cặp cờ cách khớp đổi giá trị/ưu tiên 1 trong hai lần đóng, hàm quét/chọn để đóng, nơi giao dịch, lỗi cấp bộ nhớ và toàn EA; [phạm vi](PHAN-TICH-DONG-VI-THE-BOT-1-3.md) |
+| P23 | Đóng vị thế và xóa theo bộ lọc | `0x2fa00`, `0x2fce0`, `0x3d010`, `0x22c40` / `0x3ce40`, `0x3d220`, `0x47d20`, `0x2e370` | Đã ghép quét mua/bán qua kiểm điều kiện, đóng, chọn cách khớp, gửi và thông báo: lượt r3 khớp 4.600 ca mỗi bot (2.300 mỗi chiều) ở mã gốc/MQL5/máy đo quá khứ, gồm trạng thái trước/sau dịch vụ và hai ca đổi dữ liệu sau lần kiểm đóng đầu; bốn bản sai cố ý bị từ chối. Đã nối hai ô giá với vùng dữ liệu giá gần nhất. Còn nơi/thời điểm gọi, mọi đường nạp/ghi giá/ngưỡng, mọi tổ hợp cách khớp, trạng thái chọn/mã lỗi tài khoản thật, lỗi cấp bộ nhớ và toàn EA; [phạm vi](PHAN-TICH-CHON-VI-THE-DONG-BOT-1-3.md) |
 | P24 | Giới hạn lỗ ngày/tổng và vốn | `0x10f60`, `0x18aa0`, `0x1efa0` / `0x17f00`, `0x20ef0`, `0x2a1c0` | Cần phép tổng hợp, thời điểm đặt lại và hành động khi chạm giới hạn |
 | P25 | Giờ giao dịch, thứ Sáu và phiên của nơi giao dịch | Hàm chiến lược, các hàm giờ, chuỗi `[SESSIONS]` | Cần các mốc, đổi ngày, lịch phiên và trường hợp không có phiên |
 | P26 | Giờ UTC và đổi giờ theo mùa | `0x17840`, `0x17d20` / `0x7e20`, `0x20150` | Đã so cả nguồn có hàm kiểm và bản biên dịch gọi MT5 trực tiếp, 4.737 ca mỗi bot khớp kết quả/thứ tự gọi; [bằng chứng và giới hạn](PHAN-TICH-GIO-MUA-HE-BOT-1-3.md). Còn giờ sát biên năm xa, các kiểu lỗi, thứ tự khởi tạo và ghép EA; UTC/HTTP/nhập tay vẫn còn |
@@ -144,6 +144,11 @@ phép so chung hàng đợi→tạo→gửi→thông báo cho chín hàm của m
 Còn kết quả nơi giao dịch, toàn EA và các giới hạn CPU/bộ nhớ;
 không đánh dấu hai hàng P16/P31 hoặc toàn bộ bot là hoàn tất.
 
-Lượt hiện hành `luot-20261024-r10` nối thêm năm hàm quét/đếm/dọn bảng/
+Lượt `luot-20261024-r10` nối thêm năm hàm quét/đếm/dọn bảng/
 giới hạn và phép so chuỗi đặt lệnh r3 đã sửa kiểm số đối số thông báo
 theo nhận xét Claude. Phần hủy đang ở bước phân tích; chưa có EA đầy đủ.
+
+Lượt hiện hành `luot-20261025-r3`: công cụ chỉ đổi bằng chứng của bốn
+hàm quét/chọn vị thế sang lượt `position-selection-20261025-r3` (4.600
+ca mỗi bot) và máy đo quá khứ `engine-position-selection-bN-r3`. Các
+lượt cũ, gồm `luot-20261025-r1/r2`, giữ nguyên.

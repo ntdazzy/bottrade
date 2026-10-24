@@ -1,0 +1,11 @@
+{
+  "post_integration_changes": [
+    {
+      "path": "cong-cu/BOT-1-3.md",
+      "before_sha256": "f1166e0d282f9ac8d58f54e552945facbb2e94fde6fb2a5e57db26d25143cec7",
+      "after_sha256": "bb6deccad8a56cc3737c837e78c53fb449f0f5e1d28866d513911c17c3a5367c",
+      "reason": "Codex registered the new task dispatcher and static position-modify/coordinator extraction modes."
+    }
+  ],
+  "whole_bot_complete": false
+}

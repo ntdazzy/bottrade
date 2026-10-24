@@ -1,0 +1,120 @@
+{
+  "session_id": "81a7b595-b02d-44c6-a218-f595a6b74954",
+  "resumed_previous_session": true,
+  "requests": [
+    {
+      "timestamp": "2026-10-24T18:30:22.011Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-24T18:30:35.095Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-24T18:30:46.082Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-24T18:30:55.274Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-24T18:31:06.325Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-24T18:31:16.839Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-24T18:31:26.624Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-24T18:31:47.063Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-24T18:31:53.538Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-24T18:32:00.155Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-24T18:32:09.087Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-24T18:32:18.464Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-24T18:38:41.380Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-24T18:39:04.822Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-24T18:39:10.495Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-24T18:40:53.031Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-24T18:41:09.922Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-24T18:41:32.951Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-24T18:41:50.512Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-24T18:42:11.145Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    }
+  ],
+  "journal_prefix_bytes": 2849460,
+  "journal_prefix_sha256": "bc204605ecb2d006b4ebfe95e25fb7d0ffc47fdcd7fcf8979790bab6d99cfa3c",
+  "prior_prefix_unchanged": true,
+  "response_sha256": "775d74cdd38f6654363cf39c00e957b63b2ab13e380b6139b39940ad1de60900",
+  "raw_response_sha256": "d3b1023c9f0ec0512b89d13279c27780b4dc7d9388c02356bfe06204be6ac3c5",
+  "prompt_sha256": "ac41fea2014471b60db87aea94fa8290c23e489e77bd746b149eb01854464560",
+  "ultracode_requested": true,
+  "ultracode_workflow_completed": false,
+  "review_scope": "Read-only frozen r1 MQL/native harness review; source changed during review. See parent-review.md for r2/r3.",
+  "findings": [
+    "L1: scenario5 changes globals after the final eligible candidate; add a later candidate.",
+    "L2: frozen r1 fixture parser lacks exact end-of-file check."
+  ],
+  "whole_bot_complete": false
+}

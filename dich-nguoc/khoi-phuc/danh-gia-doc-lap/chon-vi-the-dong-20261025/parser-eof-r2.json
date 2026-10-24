@@ -1,0 +1,184 @@
+{
+  "check_tool_sha256": "ed172e7c31ac276fc9ed54644efea942fd0531316081fa409fe92e9b18c84652",
+  "aggregate_tool_sha256": "b8bb5b61162ebb67aed696098aa3aa5600a739fd46a7ab617c4af5836b19b693",
+  "checks": [
+    {
+      "bot": 1,
+      "rejected_corrupt_input_types": [
+        "cast-metadata",
+        "double-property",
+        "duplicate-helper-entry",
+        "execution-value",
+        "filling-property",
+        "flags-value",
+        "format-property",
+        "format-status",
+        "format-value",
+        "helper-ticket",
+        "integer-property",
+        "magic-value",
+        "missing-helper-entry",
+        "missing-helper-return",
+        "price-index",
+        "price-property",
+        "price-value",
+        "scan-index",
+        "scan-selection",
+        "scan-ticket",
+        "select-index",
+        "select-reply",
+        "select-ticket",
+        "send-mode",
+        "send-reply",
+        "send-result",
+        "sl-index",
+        "sl-value",
+        "symbol-index",
+        "symbol-null",
+        "symbol-property",
+        "symbol-text",
+        "total",
+        "type-value",
+        "volume-index",
+        "volume-value"
+      ],
+      "length_checks": [
+        {
+          "file": "cases.bin",
+          "removed_tail_bytes": 1,
+          "rejected": true
+        },
+        {
+          "file": "cases.bin",
+          "removed_tail_bytes": 2,
+          "rejected": true
+        },
+        {
+          "file": "cases.bin",
+          "removed_tail_bytes": 4,
+          "rejected": true
+        },
+        {
+          "file": "api-fixtures.bin",
+          "removed_tail_bytes": 1,
+          "rejected": true
+        },
+        {
+          "file": "api-fixtures.bin",
+          "removed_tail_bytes": 2,
+          "rejected": true
+        },
+        {
+          "file": "api-fixtures.bin",
+          "removed_tail_bytes": 4,
+          "rejected": true
+        },
+        {
+          "file": "original-results.bin",
+          "removed_tail_bytes": 1,
+          "rejected": true
+        },
+        {
+          "file": "original-results.bin",
+          "removed_tail_bytes": 2,
+          "rejected": true
+        },
+        {
+          "file": "original-results.bin",
+          "removed_tail_bytes": 4,
+          "rejected": true
+        }
+      ]
+    },
+    {
+      "bot": 3,
+      "rejected_corrupt_input_types": [
+        "cast-metadata",
+        "double-property",
+        "duplicate-helper-entry",
+        "execution-value",
+        "filling-property",
+        "flags-value",
+        "format-property",
+        "format-status",
+        "format-value",
+        "helper-ticket",
+        "integer-property",
+        "magic-value",
+        "missing-helper-entry",
+        "missing-helper-return",
+        "price-index",
+        "price-property",
+        "price-value",
+        "scan-index",
+        "scan-selection",
+        "scan-ticket",
+        "select-index",
+        "select-reply",
+        "select-ticket",
+        "send-mode",
+        "send-reply",
+        "send-result",
+        "sl-index",
+        "sl-value",
+        "symbol-index",
+        "symbol-null",
+        "symbol-property",
+        "symbol-text",
+        "total",
+        "type-value",
+        "volume-index",
+        "volume-value"
+      ],
+      "length_checks": [
+        {
+          "file": "cases.bin",
+          "removed_tail_bytes": 1,
+          "rejected": true
+        },
+        {
+          "file": "cases.bin",
+          "removed_tail_bytes": 2,
+          "rejected": true
+        },
+        {
+          "file": "cases.bin",
+          "removed_tail_bytes": 4,
+          "rejected": true
+        },
+        {
+          "file": "api-fixtures.bin",
+          "removed_tail_bytes": 1,
+          "rejected": true
+        },
+        {
+          "file": "api-fixtures.bin",
+          "removed_tail_bytes": 2,
+          "rejected": true
+        },
+        {
+          "file": "api-fixtures.bin",
+          "removed_tail_bytes": 4,
+          "rejected": true
+        },
+        {
+          "file": "original-results.bin",
+          "removed_tail_bytes": 1,
+          "rejected": true
+        },
+        {
+          "file": "original-results.bin",
+          "removed_tail_bytes": 2,
+          "rejected": true
+        },
+        {
+          "file": "original-results.bin",
+          "removed_tail_bytes": 4,
+          "rejected": true
+        }
+      ]
+    }
+  ],
+  "reused_input_scope": "r1 complete fixture bytes; parser rejection tests only. Full native r2 is running separately.",
+  "whole_bot_complete": false
+}

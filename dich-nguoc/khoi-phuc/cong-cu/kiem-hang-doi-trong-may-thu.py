@@ -6,6 +6,7 @@ Usage: kiem-hang-doi-trong-may-thu.py BOT NEW_RUN --queue-run RUN --build BUILD
        kiem-hang-doi-trong-may-thu.py BOT NEW_RUN --component-run RUN --build BUILD --cancel
        kiem-hang-doi-trong-may-thu.py BOT NEW_RUN --component-run RUN --build BUILD --selection
        kiem-hang-doi-trong-may-thu.py BOT NEW_RUN --component-run RUN --build BUILD --close
+       kiem-hang-doi-trong-may-thu.py BOT NEW_RUN --component-run RUN --build BUILD --position-selection
 Creates a test EA from the checked script, changing only the file input path and
 event entry. Queue source remains unchanged. All sends/sleeps remain test doubles.
 """
@@ -26,7 +27,7 @@ MT=queue.MT;sha=queue.sha;save=queue.save
 
 def main():
     parser=argparse.ArgumentParser(description=__doc__);parser.add_argument('bot',type=int,choices=[1,3]);parser.add_argument('new_run');parser.add_argument('--queue-run','--component-run',dest='queue_run',required=True);parser.add_argument('--build',required=True)
-    modes=parser.add_mutually_exclusive_group();modes.add_argument('--pipeline',action='store_true');modes.add_argument('--scan',action='store_true');modes.add_argument('--cancel',action='store_true');modes.add_argument('--selection',action='store_true');modes.add_argument('--close',action='store_true');a=parser.parse_args()
+    modes=parser.add_mutually_exclusive_group();modes.add_argument('--pipeline',action='store_true');modes.add_argument('--scan',action='store_true');modes.add_argument('--cancel',action='store_true');modes.add_argument('--selection',action='store_true');modes.add_argument('--close',action='store_true');modes.add_argument('--position-selection',action='store_true');a=parser.parse_args()
     for name in [a.new_run,a.queue_run,a.build]:
         if not re.fullmatch('[a-z0-9-]{1,40}',name):raise ValueError('INVALID_RUN_OR_BUILD')
     component=queue
@@ -40,11 +41,14 @@ def main():
         spec=importlib.util.spec_from_file_location('selection_check',Path(__file__).with_name('kiem-chon-lenh-huy-bot-1-3.py'));component=importlib.util.module_from_spec(spec);spec.loader.exec_module(component)
     if a.close:
         spec=importlib.util.spec_from_file_location('close_check',Path(__file__).with_name('kiem-dong-vi-the-bot-1-3.py'));component=importlib.util.module_from_spec(spec);spec.loader.exec_module(component)
+    if a.position_selection:
+        spec=importlib.util.spec_from_file_location('position_selection_check',Path(__file__).with_name('kiem-chon-vi-the-dong-bot-1-3.py'));component=importlib.util.module_from_spec(spec);spec.loader.exec_module(component)
     label='Pipeline' if a.pipeline else 'Queue';part='kiem-chuoi-dat-lenh' if a.pipeline else 'kiem-hang-doi'
     if a.scan:label='OrderScan';part='kiem-quet-lenh'
     if a.cancel:label='OrderCancel';part='kiem-huy-lenh-cho'
     if a.selection:label='PendingSelection';part='kiem-chon-lenh-huy'
     if a.close:label='PositionClose';part='kiem-dong-vi-the'
+    if a.position_selection:label='PositionSelection';part='kiem-chon-vi-the-dong'
     home=ROOT/f'bot-cua-toi-{a.bot}';prior=home/'bang-chung'/part/a.queue_run;baseline=json.loads((prior/'baseline.json').read_text());rows=component.read_cases(prior/'cases.bin')
     if sha(prior/'cases.bin')!=baseline['cases_sha256'] or queue.send.pending.fill.validation.original_hash(a.bot)!=baseline['original_ex5_sha256']:raise ValueError('INPUTS_CHANGED')
     receipt_path=home/'bang-chung/bien-dich'/a.build/'bien-nhan.json';receipt=json.loads(receipt_path.read_text(encoding='utf-8-sig'))
@@ -58,7 +62,9 @@ def main():
         script_name=f'Scripts/bot-cua-toi-{a.bot}/Bot{a.bot}PendingSelectionCheck.mq5';names=[script_name]+[f'Include/bot-cua-toi-{a.bot}/Bot{a.bot}{name}.mqh' for name in ['PendingSelection','OrderCancel','TradeSend','TradeMessages','PendingRequest','Filling']]
     if a.close:
         script_name=f'Scripts/bot-cua-toi-{a.bot}/Bot{a.bot}PositionCloseCheck.mq5';names=[script_name]+[f'Include/bot-cua-toi-{a.bot}/Bot{a.bot}{name}.mqh' for name in ['PositionClose','TradeSend','TradeMessages','PendingRequest','Filling']]
-    if a.pipeline or a.cancel or a.selection or a.close:names.append(f'Scripts/bot-cua-toi-{a.bot}/Bot{a.bot}PipelineApi.mqh')
+    if a.position_selection:
+        script_name=f'Scripts/bot-cua-toi-{a.bot}/Bot{a.bot}PositionSelectionCheck.mq5';names=[script_name]+[f'Include/bot-cua-toi-{a.bot}/Bot{a.bot}{name}.mqh' for name in ['PositionSelection','PositionClose','TradeSend','TradeMessages','PendingRequest','Filling']]
+    if a.pipeline or a.cancel or a.selection or a.close or a.position_selection:names.append(f'Scripts/bot-cua-toi-{a.bot}/Bot{a.bot}PipelineApi.mqh')
     if receipt['target']!=script_name or receipt['errors']!=0 or receipt['warnings']!=0:raise ValueError('SOURCE_BUILD_NOT_VERIFIED')
     for name in names:
         expected=receipt['sources_sha256'][name]
@@ -69,6 +75,7 @@ def main():
     if a.cancel:folder='huy-lenh-cho-20261024'
     if a.selection:folder='chon-lenh-huy-20261024'
     if a.close:folder='dong-vi-the-20261024'
+    if a.position_selection:folder='chon-vi-the-dong-20261025'
     out=ROOT/'doi-chung-mt5'/folder/a.new_run;out.mkdir(parents=True,exist_ok=False)
     filename=f'b{a.bot}-{label.lower()}-{a.new_run}.bin';destination=MT/'MQL5/Files'/filename
     if destination.exists():raise FileExistsError('TESTER_INPUT_ALREADY_EXISTS')
@@ -82,7 +89,7 @@ def main():
     source+='\nint OnInit()\n{\n   int result=RunQueueCheck();\n   Print("'+marker+'",result);\n   return result==0 ? INIT_SUCCEEDED : INIT_FAILED;\n}\nvoid OnTick() { ExpertRemove(); }\n'
     target=MT/f'MQL5/Experts/Recovery{label}20261024/{a.new_run}';target.mkdir(parents=True,exist_ok=False)
     saved=out/(label+'EngineCheck.mq5');saved.write_text(source,encoding='utf-8',newline='');copied=target/saved.name;shutil.copyfile(saved,copied)
-    if a.pipeline or a.cancel or a.selection or a.close:
+    if a.pipeline or a.cancel or a.selection or a.close or a.position_selection:
         facade=home/f'source/MQL5/Scripts/bot-cua-toi-{a.bot}/Bot{a.bot}PipelineApi.mqh'
         facade_text=facade.read_text(encoding='utf-8-sig');old=f'#include "../../Include/bot-cua-toi-{a.bot}/Bot{a.bot}TradeSend.mqh"'
         if facade_text.count(old)!=1:raise ValueError('PIPELINE_TESTER_INCLUDE_NOT_UNIQUE')
@@ -94,13 +101,14 @@ def main():
     binary=copied.with_suffix('.ex5')
     build=dict(exit_code=result.returncode,errors=int(match[1]) if match else None,warnings=int(match[2]) if match else None,source_sha256=sha(saved),binary_sha256=sha(binary) if binary.exists() else None,
                component_build_receipt_sha256=sha(receipt_path),component_sources_sha256={name:receipt['sources_sha256'][name] for name in names},test_input_sha256=sha(destination),tester_sha256=sha(MT/'metatester64.exe'),tool_sha256=sha(Path(__file__)))
-    if a.pipeline or a.cancel or a.selection or a.close:build['adapted_api_include_sha256']=sha(out/facade.name)
+    if a.pipeline or a.cancel or a.selection or a.close or a.position_selection:build['adapted_api_include_sha256']=sha(out/facade.name)
     save(out/'build.json',build)
     if not match or match[1]!='0' or match[2]!='0' or not binary.is_file():raise ValueError('QUEUE_TESTER_EA_BUILD_FAILED')
     shutil.copyfile(binary,out/binary.name)
-    output_run=a.new_run if a.selection or a.close else a.queue_run
+    output_run=a.new_run if a.selection or a.close or a.position_selection else a.queue_run
     if a.selection and (MT/f'Tester/Agent-127.0.0.1-3000/MQL5/Files/bot{a.bot}-pending-selection'/output_run).exists():raise FileExistsError('TESTER_OUTPUT_ALREADY_EXISTS')
     if a.close and (MT/f'Tester/Agent-127.0.0.1-3000/MQL5/Files/bot{a.bot}-position-close'/output_run).exists():raise FileExistsError('TESTER_OUTPUT_ALREADY_EXISTS')
+    if a.position_selection and (MT/f'Tester/Agent-127.0.0.1-3000/MQL5/Files/bot{a.bot}-position-selection'/output_run).exists():raise FileExistsError('TESTER_OUTPUT_ALREADY_EXISTS')
     job=dict(id='q-engine-'+a.new_run,expert=f'Recovery{label}20261024\\{a.new_run}\\{label}EngineCheck.ex5',symbol='XAUUSD_NOCOST_V2',period='M15',model=0,**{'from':'2026.09.29','to':'2026.09.30'},timeout=120,inputs={'CheckRun':output_run})
     save(out/'jobs.json',[job]);runner=out/'runner';runner.mkdir();start=time.monotonic()
     with (out/'runner.stdout.txt').open('x',encoding='utf-8') as stdout,(out/'runner.stderr.txt').open('x',encoding='utf-8') as stderr:
@@ -114,11 +122,13 @@ def main():
     if a.cancel:files=MT/f'Tester/Agent-127.0.0.1-3000/MQL5/Files/bot{a.bot}-order-cancel'/a.queue_run
     if a.selection:files=MT/f'Tester/Agent-127.0.0.1-3000/MQL5/Files/bot{a.bot}-pending-selection'/output_run
     if a.close:files=MT/f'Tester/Agent-127.0.0.1-3000/MQL5/Files/bot{a.bot}-position-close'/output_run
+    if a.position_selection:files=MT/f'Tester/Agent-127.0.0.1-3000/MQL5/Files/bot{a.bot}-position-selection'/output_run
     output_names=['mql5-results.bin','api-fixtures.bin','script-status.bin'] if a.pipeline else ['mql5-results.bin','last-error-calibration.bin']
     if a.scan:output_names=['mql5-results.bin','script-status.bin']
     if a.cancel:output_names=['mql5-results.bin','api-fixtures.bin','script-status.bin']
     if a.selection:output_names=['mql5-results.bin','api-fixtures.bin','script-status.bin']
     if a.close:output_names=['mql5-results.bin','api-fixtures.bin','script-status.bin']
+    if a.position_selection:output_names=['mql5-results.bin','api-fixtures.bin','script-status.bin']
     for name in output_names:
         source_file=files/name
         if not source_file.resolve().is_relative_to(MT.resolve()):raise ValueError('AGENT_FILE_OUTSIDE_PRIVATE_MT5')
@@ -129,7 +139,7 @@ def main():
         records,chart,digits=component.fixtures(out/'api-fixtures.bin',len(rows))
         for row in rows:component.validate_fixture_inputs(row,records[row['id']])
         if (out/'api-fixtures.bin').read_bytes()!=(prior/'api-fixtures.bin').read_bytes():raise ValueError('PIPELINE_TESTER_API_RECORDS_DIFFER_FROM_SCRIPT')
-    if a.cancel or a.selection or a.close:
+    if a.cancel or a.selection or a.close or a.position_selection:
         import struct
         if struct.unpack('<2i',(out/'script-status.bin').read_bytes())!=(0,len(rows)):raise ValueError('CANCEL_TESTER_STATUS_DIFFERS')
         records,chart,digits=component.fixtures(out/'api-fixtures.bin',len(rows))
@@ -159,6 +169,9 @@ def main():
         comparison['input_contract_checked_cases']=len(rows);comparison['hashes'].update({name:sha(out/name) for name in output_names if name!='mql5-results.bin'})
     if a.close:
         comparison['scope']='Same four position-close builder/guard functions through filling/send/messages.35 public fields,four strings/null flags,deviation,four shared doubles and public state at service boundaries compared. SDK replies supplied and input-bound; formatting measured. No actual account/broker/full EA/allocation-fault proof.'
+        comparison['input_contract_checked_cases']=len(rows);comparison['hashes'].update({name:sha(out/name) for name in output_names if name!='mql5-results.bin'})
+    if a.position_selection:
+        comparison['scope']='Same four position scanners through actual close guard,close builder,filling,send and messages.35 public fields,four strings/null flags,deviation,four shared doubles,last ticket,signed32 identity seed,nullable symbol,selection model,helper count and state at service boundaries compared. Helper instrumentation resets reply counters only. SDK replies supplied/input-bound; formatting measured. No real account/broker/full EA/allocation-fault proof.'
         comparison['input_contract_checked_cases']=len(rows);comparison['hashes'].update({name:sha(out/name) for name in output_names if name!='mql5-results.bin'})
     save(out/'comparison.json',comparison);print(json.dumps(comparison));raise SystemExit(bool(failures))
 

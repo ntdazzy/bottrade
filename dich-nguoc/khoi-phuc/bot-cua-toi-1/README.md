@@ -1,5 +1,13 @@
 # bot-cua-toi-1
 
+Đã ghép quét/chọn vị thế mua/bán qua toàn bộ phần đóng/gửi/thông báo:
+lượt r3 khớp 4.600/4.600 ca mã gốc/MQL5/máy đo quá khứ (2.300 ca mỗi
+chiều), gồm số 32/64 bit, chuỗi trống, trạng thái tại các lần đọc dữ
+liệu và hai ca đổi dữ liệu sau lần kiểm đóng đầu. Biên dịch 0 lỗi/cảnh
+báo. Còn nơi gọi, trạng thái tài khoản/mã lỗi thật, cài đặt, hiển thị,
+khởi động lại, lỗi cấp bộ nhớ và toàn EA;
+[phạm vi](../PHAN-TICH-CHON-VI-THE-DONG-BOT-1-3.md).
+
 Đã dựng hai hàm kiểm điều kiện/đóng vị thế qua chọn cách khớp, gửi
 và thông báo: 2.589/2.589 ca khớp mã gốc/MQL5/máy đo quá khứ, gồm
 trạng thái và thứ tự đọc dữ liệu. Biên dịch 0 lỗi/cảnh báo. Còn nguồn

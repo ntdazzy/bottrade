@@ -1,0 +1,43 @@
+{
+  "check_tool_sha256": "afe48e2d343c27423ab0124197f6270929d013d82731b2fa600b70eedd83b5b0",
+  "checks": [
+    {
+      "bot": 1,
+      "removed_tail_bytes": 1,
+      "accepted": false,
+      "error": "UnicodeDecodeError"
+    },
+    {
+      "bot": 1,
+      "removed_tail_bytes": 2,
+      "accepted": true,
+      "error": null
+    },
+    {
+      "bot": 1,
+      "removed_tail_bytes": 4,
+      "accepted": true,
+      "error": null
+    },
+    {
+      "bot": 3,
+      "removed_tail_bytes": 1,
+      "accepted": false,
+      "error": "UnicodeDecodeError"
+    },
+    {
+      "bot": 3,
+      "removed_tail_bytes": 2,
+      "accepted": true,
+      "error": null
+    },
+    {
+      "bot": 3,
+      "removed_tail_bytes": 4,
+      "accepted": true,
+      "error": null
+    }
+  ],
+  "problem": "fixtures parser lacks final pos==len(raw) check; truncated final text can be accepted. Original r1 complete-file native/MQL/tester comparisons passed, but standalone malformed-file rejection is incomplete.",
+  "whole_bot_complete": false
+}

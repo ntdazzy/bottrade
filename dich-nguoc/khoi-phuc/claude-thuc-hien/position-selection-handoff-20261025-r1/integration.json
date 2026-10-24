@@ -1,0 +1,160 @@
+{
+  "handoff": "claude-thuc-hien/position-selection-handoff-20261025-r1",
+  "paths_relative_to": "dich-nguoc/khoi-phuc",
+  "status": "proposed-not-applied",
+  "claude_ran_commands": false,
+  "claude_edited_canonical_files": false,
+  "whole_bot_complete": false,
+  "evidence_read": {
+    "native_and_mql5_r3": [
+      "bot-cua-toi-1/bang-chung/kiem-chon-vi-the-dong/position-selection-20261025-r3/comparison.json: cases 4600, matched 4600, failed 0",
+      "bot-cua-toi-3/bang-chung/kiem-chon-vi-the-dong/position-selection-20261025-r3/comparison.json: cases 4600, matched 4600, failed 0"
+    ],
+    "tester_r3": [
+      "doi-chung-mt5/chon-vi-the-dong-20261025/engine-position-selection-b1-r3/comparison.json: cases 4600, matched 4600, failed 0",
+      "doi-chung-mt5/chon-vi-the-dong-20261025/engine-position-selection-b3-r3/comparison.json: cases 4600, matched 4600, failed 0",
+      "both runner logs contain POSITIONSELECTION_NATIVE_CHECK_EXIT:0; both ket-qua-chay.jsonl lines: exit_code 0, demo/login confirmed, report created"
+    ],
+    "history": [
+      "position-selection-20261025-r1 and -r2 comparison.json: 4598/4598, failed 0 (both bots)",
+      "engine-position-selection-bN-r1 and -r2 comparison.json: 4598/4598, failed 0 (both bots)",
+      "MQL5 build receipts and script hashes are identical in r1, r2 and r3; only native-check tool hashes differ"
+    ],
+    "independent_checks": [
+      "danh-gia-doc-lap/chon-vi-the-dong-20261025/parser-eof-r1.json: 2/4-byte truncated fixtures accepted",
+      "danh-gia-doc-lap/chon-vi-the-dong-20261025/parser-eof-r2.json: 9 truncations and 36 corrupt types rejected per bot",
+      "danh-gia-doc-lap/chon-vi-the-dong-20261025/post-helper-change-r3.json: ids 4598/4599 helpers 2, close_calls 2, sends 2, matched true",
+      "danh-gia-doc-lap/chon-vi-the-dong-20261025/post-helper-r2/summary.json: 4 mutants, 2 rejected each (EXTRA_NATIVE_API 18 / API_ORDER_DIFFERS (21, 23)); original header hashes equal r3 verified sources"
+    ]
+  },
+  "targets": [
+    {
+      "target": "cong-cu/kiem-chung-chon-vi-the-dong-bot-1-3.py",
+      "deliverable": "claude-thuc-hien/position-selection-handoff-20261025-r1/files/cong-cu/kiem-chung-chon-vi-the-dong-bot-1-3.py",
+      "change": "Keeps every existing r3 provenance/EOF/rejection/tester check. Adds: post-helper case shape and order; final target symbol Renamed for ids 4598/4599; post-helper-change-r3.json recomputed from results; mutation summary/result exact schema, tool hashes, 4 mutants, documented private sources re-derived from frozen r3 sources, production header hash = r3 verified source = current source, compile log 0/0 and include set without the production header, cases/fixture/status hashes, mutant MQL5 results show one helper call, and replay of original rejections with only the expected trace-divergence code.",
+      "untested": "Written without running Python; must pass on canonical location before use."
+    },
+    {
+      "target": "cong-cu/lap-ban-do-bot-1-3.py",
+      "deliverable": "claude-thuc-hien/position-selection-handoff-20261025-r1/files/cong-cu/lap-ban-do-bot-1-3.py",
+      "change": "Only lines 251, 280 and 281 differ: position_scan_rvas proof switched to position-selection-20261025-r3, engine-position-selection-bN-r3 and 4600 cases. All other proofs/paths unchanged."
+    },
+    {
+      "target": "PHAN-TICH-CHON-VI-THE-DONG-BOT-1-3.md",
+      "deliverable": "claude-thuc-hien/position-selection-handoff-20261025-r1/files/PHAN-TICH-CHON-VI-THE-DONG-BOT-1-3.md",
+      "change": "r3 4600/2300 per direction; run table r1/r2/r3; corrected scenario-5 ordering; mutation evidence; new aggregate link; Claude r1 review link; limits kept."
+    },
+    {
+      "target": "PHAN-TICH-DONG-VI-THE-BOT-1-3.md",
+      "deliverable": "claude-thuc-hien/position-selection-handoff-20261025-r1/files/PHAN-TICH-DONG-VI-THE-BOT-1-3.md",
+      "change": "Last paragraph only: r3 4600 cases per bot and MT5 LastError in remaining limits."
+    },
+    {
+      "target": "BAN-DO-TOAN-BO-BOT-1-3.md",
+      "deliverable": "claude-thuc-hien/position-selection-handoff-20261025-r1/files/BAN-DO-TOAN-BO-BOT-1-3.md",
+      "change": "Inventory links to ban-do-bot-1-3/luot-20261025-r3; P23 row r3 4600 cases and mutants; r10 paragraph no longer called current; new current-run paragraph.",
+      "apply_only_after": "ban-do-bot-1-3/luot-20261025-r3 exists and passes the map checks below."
+    },
+    {
+      "target": "bot-cua-toi-1/README.md",
+      "deliverable": "claude-thuc-hien/position-selection-handoff-20261025-r1/files/bot-cua-toi-1/README.md",
+      "change": "First paragraph only: r3 4600/4600, 2300 per direction, limits."
+    },
+    {
+      "target": "bot-cua-toi-3/README.md",
+      "deliverable": "claude-thuc-hien/position-selection-handoff-20261025-r1/files/bot-cua-toi-3/README.md",
+      "change": "First paragraph only: r3 4600/4600, 2300 per direction, limits."
+    },
+    {
+      "target": "cong-cu/BOT-1-3.md",
+      "deliverable": "claude-thuc-hien/position-selection-handoff-20261025-r1/files/cong-cu/BOT-1-3.md",
+      "change": "Position-selection section: r3/engine r3/4600, registers kiem-doc-lai-sau-dong.py (post-helper-r1/r2), new aggregate output. Map current run line changed from luot-20261024-r8 to luot-20261025-r3."
+    },
+    {
+      "target": "danh-gia-claude/position-selection-check-20261025-r1/parent-review.md",
+      "deliverable": "claude-thuc-hien/position-selection-handoff-20261025-r1/files/danh-gia-claude/position-selection-check-20261025-r1/parent-review.md",
+      "change": "New file. Parent cross-check of Claude L1/L2 against frozen r1, r2 and r3 evidence; keeps limits and other observations."
+    }
+  ],
+  "generated_by_codex": [
+    "KIEM-CHUNG-CHON-VI-THE-DONG-BOT-1-3-R2.json",
+    "ban-do-bot-1-3/luot-20261025-r3/api-calibration.json",
+    "ban-do-bot-1-3/luot-20261025-r3/bot-1.json",
+    "ban-do-bot-1-3/luot-20261025-r3/bot-1.md",
+    "ban-do-bot-1-3/luot-20261025-r3/bot-3.json",
+    "ban-do-bot-1-3/luot-20261025-r3/bot-3.md",
+    "ban-do-bot-1-3/luot-20261025-r3/summary.json"
+  ],
+  "kept_unchanged": [
+    "KIEM-CHUNG-CHON-VI-THE-DONG-BOT-1-3.json",
+    "ban-do-bot-1-3/luot-20261025-r1/",
+    "ban-do-bot-1-3/luot-20261025-r2/",
+    "bot-cua-toi-*/bang-chung/kiem-chon-vi-the-dong/position-selection-20261025-r1/ r2/ r3/",
+    "doi-chung-mt5/chon-vi-the-dong-20261025/",
+    "danh-gia-doc-lap/chon-vi-the-dong-20261025/",
+    "danh-gia-claude/position-selection-check-20261025-r1/response.md, receipt.json, prompt.md",
+    "cong-cu/kiem-chon-vi-the-dong-bot-1-3.py",
+    "cong-cu/kiem-doc-lai-sau-dong.py"
+  ],
+  "line_endings": "Deliverables are UTF-8 with LF. Check canonical EOL before copying; keep the canonical style.",
+  "commands": [
+    "Set-Location 'C:\\Users\\NTD\\Desktop\\Bot Market Demo'",
+    "git ls-files --eol -- dich-nguoc/khoi-phuc/PHAN-TICH-CHON-VI-THE-DONG-BOT-1-3.md dich-nguoc/khoi-phuc/PHAN-TICH-DONG-VI-THE-BOT-1-3.md dich-nguoc/khoi-phuc/BAN-DO-TOAN-BO-BOT-1-3.md dich-nguoc/khoi-phuc/bot-cua-toi-1/README.md dich-nguoc/khoi-phuc/bot-cua-toi-3/README.md dich-nguoc/khoi-phuc/cong-cu/BOT-1-3.md dich-nguoc/khoi-phuc/cong-cu/lap-ban-do-bot-1-3.py dich-nguoc/khoi-phuc/cong-cu/kiem-chung-chon-vi-the-dong-bot-1-3.py",
+    "git diff --no-index -- dich-nguoc/khoi-phuc/cong-cu/lap-ban-do-bot-1-3.py dich-nguoc/khoi-phuc/claude-thuc-hien/position-selection-handoff-20261025-r1/files/cong-cu/lap-ban-do-bot-1-3.py",
+    "git diff --no-index -- dich-nguoc/khoi-phuc/cong-cu/kiem-chung-chon-vi-the-dong-bot-1-3.py dich-nguoc/khoi-phuc/claude-thuc-hien/position-selection-handoff-20261025-r1/files/cong-cu/kiem-chung-chon-vi-the-dong-bot-1-3.py",
+    "Copy-Item -LiteralPath 'dich-nguoc/khoi-phuc/claude-thuc-hien/position-selection-handoff-20261025-r1/files/cong-cu/kiem-chung-chon-vi-the-dong-bot-1-3.py' -Destination 'dich-nguoc/khoi-phuc/cong-cu/kiem-chung-chon-vi-the-dong-bot-1-3.py'",
+    "Copy-Item -LiteralPath 'dich-nguoc/khoi-phuc/claude-thuc-hien/position-selection-handoff-20261025-r1/files/cong-cu/lap-ban-do-bot-1-3.py' -Destination 'dich-nguoc/khoi-phuc/cong-cu/lap-ban-do-bot-1-3.py'",
+    "python -I -B -X utf8 dich-nguoc/khoi-phuc/cong-cu/kiem-chung-chon-vi-the-dong-bot-1-3.py dich-nguoc/khoi-phuc/KIEM-CHUNG-CHON-VI-THE-DONG-BOT-1-3-R2.json",
+    "python -I -B -X utf8 dich-nguoc/khoi-phuc/cong-cu/lap-ban-do-bot-1-3.py dich-nguoc/khoi-phuc/ban-do-bot-1-3/luot-20261025-r3 --extra-calibration dich-nguoc/khoi-phuc/doi-chung-mt5/api-bo-sung-20261023/api-extra-r2/calibration.json --menu-evidence dich-nguoc/khoi-phuc/menu-bot-1-3/luot-20261023-r1/verified-menu.json",
+    "Select-String -LiteralPath 'dich-nguoc/khoi-phuc/ban-do-bot-1-3/luot-20261025-r3/bot-1.json','dich-nguoc/khoi-phuc/ban-do-bot-1-3/luot-20261025-r3/bot-3.json' -Pattern 'position-selection-20261025-r3|engine-position-selection-b[13]-r3'",
+    "Select-String -LiteralPath 'dich-nguoc/khoi-phuc/ban-do-bot-1-3/luot-20261025-r3/bot-1.json','dich-nguoc/khoi-phuc/ban-do-bot-1-3/luot-20261025-r3/bot-3.json' -Pattern 'position-selection-20261025-r2|engine-position-selection-b[13]-r2'",
+    "git diff --no-index --stat -- dich-nguoc/khoi-phuc/ban-do-bot-1-3/luot-20261025-r2 dich-nguoc/khoi-phuc/ban-do-bot-1-3/luot-20261025-r3",
+    "git diff --no-index --ignore-cr-at-eol -- dich-nguoc/khoi-phuc/PHAN-TICH-CHON-VI-THE-DONG-BOT-1-3.md dich-nguoc/khoi-phuc/claude-thuc-hien/position-selection-handoff-20261025-r1/files/PHAN-TICH-CHON-VI-THE-DONG-BOT-1-3.md",
+    "git diff --no-index --ignore-cr-at-eol -- dich-nguoc/khoi-phuc/PHAN-TICH-DONG-VI-THE-BOT-1-3.md dich-nguoc/khoi-phuc/claude-thuc-hien/position-selection-handoff-20261025-r1/files/PHAN-TICH-DONG-VI-THE-BOT-1-3.md",
+    "git diff --no-index --ignore-cr-at-eol -- dich-nguoc/khoi-phuc/BAN-DO-TOAN-BO-BOT-1-3.md dich-nguoc/khoi-phuc/claude-thuc-hien/position-selection-handoff-20261025-r1/files/BAN-DO-TOAN-BO-BOT-1-3.md",
+    "git diff --no-index --ignore-cr-at-eol -- dich-nguoc/khoi-phuc/bot-cua-toi-1/README.md dich-nguoc/khoi-phuc/claude-thuc-hien/position-selection-handoff-20261025-r1/files/bot-cua-toi-1/README.md",
+    "git diff --no-index --ignore-cr-at-eol -- dich-nguoc/khoi-phuc/bot-cua-toi-3/README.md dich-nguoc/khoi-phuc/claude-thuc-hien/position-selection-handoff-20261025-r1/files/bot-cua-toi-3/README.md",
+    "git diff --no-index --ignore-cr-at-eol -- dich-nguoc/khoi-phuc/cong-cu/BOT-1-3.md dich-nguoc/khoi-phuc/claude-thuc-hien/position-selection-handoff-20261025-r1/files/cong-cu/BOT-1-3.md",
+    "Copy-Item -LiteralPath 'dich-nguoc/khoi-phuc/claude-thuc-hien/position-selection-handoff-20261025-r1/files/PHAN-TICH-CHON-VI-THE-DONG-BOT-1-3.md' -Destination 'dich-nguoc/khoi-phuc/PHAN-TICH-CHON-VI-THE-DONG-BOT-1-3.md'",
+    "Copy-Item -LiteralPath 'dich-nguoc/khoi-phuc/claude-thuc-hien/position-selection-handoff-20261025-r1/files/PHAN-TICH-DONG-VI-THE-BOT-1-3.md' -Destination 'dich-nguoc/khoi-phuc/PHAN-TICH-DONG-VI-THE-BOT-1-3.md'",
+    "Copy-Item -LiteralPath 'dich-nguoc/khoi-phuc/claude-thuc-hien/position-selection-handoff-20261025-r1/files/BAN-DO-TOAN-BO-BOT-1-3.md' -Destination 'dich-nguoc/khoi-phuc/BAN-DO-TOAN-BO-BOT-1-3.md'",
+    "Copy-Item -LiteralPath 'dich-nguoc/khoi-phuc/claude-thuc-hien/position-selection-handoff-20261025-r1/files/bot-cua-toi-1/README.md' -Destination 'dich-nguoc/khoi-phuc/bot-cua-toi-1/README.md'",
+    "Copy-Item -LiteralPath 'dich-nguoc/khoi-phuc/claude-thuc-hien/position-selection-handoff-20261025-r1/files/bot-cua-toi-3/README.md' -Destination 'dich-nguoc/khoi-phuc/bot-cua-toi-3/README.md'",
+    "Copy-Item -LiteralPath 'dich-nguoc/khoi-phuc/claude-thuc-hien/position-selection-handoff-20261025-r1/files/cong-cu/BOT-1-3.md' -Destination 'dich-nguoc/khoi-phuc/cong-cu/BOT-1-3.md'",
+    "Copy-Item -LiteralPath 'dich-nguoc/khoi-phuc/claude-thuc-hien/position-selection-handoff-20261025-r1/files/danh-gia-claude/position-selection-check-20261025-r1/parent-review.md' -Destination 'dich-nguoc/khoi-phuc/danh-gia-claude/position-selection-check-20261025-r1/parent-review.md'",
+    "git status --short -- dich-nguoc/khoi-phuc",
+    "git diff --stat -- dich-nguoc/khoi-phuc"
+  ],
+  "command_order_notes": [
+    "Run from the repository root; both Python tools resolve siblings from the canonical cong-cu folder, so never run them from files/.",
+    "Copy the two tools, then run the aggregate. Stop if it fails; do not relax checks to pass.",
+    "Generate the map only into the new folder luot-20261025-r3; the tool refuses an existing folder.",
+    "Apply the documentation only after the aggregate and the map checks pass."
+  ],
+  "acceptance": {
+    "aggregate_stdout": {"bots": 2, "cases_each": 4600, "rejected_corrupt_types_each": 36, "mutants": 4, "rejected_mutant_cases": 8, "whole_bot_complete": false},
+    "map_summary_bots": [
+      {"bot": 1, "functions": 84, "observed_input_rows": 72, "unlabelled_native_addresses": 0},
+      {"bot": 3, "functions": 82, "observed_input_rows": 80, "unlabelled_native_addresses": 0}
+    ],
+    "map_r3_reference_search": "First Select-String finds the r3 comparison and tester paths for both scanners of both bots; second Select-String finds nothing.",
+    "map_r2_to_r3_diff": "Expected differences: the four position-scan component_proof entries, summary tool/output hashes, and any source hash that changed after luot-20261025-r2. Investigate anything else.",
+    "lap_ban_do_diff": "Only lines 251, 280 and 281."
+  },
+  "possible_new_check_failures": {
+    "MUTATION_TOOL_CHANGED": "cong-cu/kiem-doc-lai-sau-dong.py no longer matches post-helper-r2 tool_sha256; inspect history before any rerun.",
+    "MUTANT_IS_NOT_DOCUMENTED_PRIVATE_VARIANT": "Saved private mutant bytes differ from frozen r3 sources plus the documented edits (re-derived with UTF-8 and universal newlines).",
+    "MUTANT_INCLUDE_SET_CHANGED": "compile.log includes differ from the expected private mutant set.",
+    "MUTANT_DID_NOT_SKIP_SECOND_CANDIDATE": "Mutant MQL5 results do not show one helper/close/send, seed -1 and last ticket 12.",
+    "UNSUPPORTED_MUTANT_REJECTION or MUTANT_REJECTION_NOT_REPRODUCED": "Original replay rejected for another reason or with another message/RIP than recorded.",
+    "POST_HELPER_CHANGE_NOT_EXERCISED": "New stricter check also requires final target Renamed and not null for ids 4598/4599.",
+    "POST_HELPER_RECEIPT_DIFFERS": "post-helper-change-r3.json differs from values recomputed from r3 results."
+  },
+  "limits": [
+    "SDK query/send replies and selection model are supplied; formatting is measured in MT5.",
+    "No real account, broker, MT5 LastError, full EA, all settings, display, restart/saved state or allocation-fault proof.",
+    "Four private mutants prove sensitivity to two specific errors only.",
+    "Mutant EX5 files are not frozen in the evidence folder.",
+    "4600 cases per bot are a finite set, not a completion percentage; no overall 100% claim."
+  ]
+}
