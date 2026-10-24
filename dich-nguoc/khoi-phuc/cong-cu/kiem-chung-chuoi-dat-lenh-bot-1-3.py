@@ -86,7 +86,7 @@ def main():
         engine=ROOT/f'doi-chung-mt5/chuoi-dat-lenh-20261024/engine-b{bot}-r5';ec=read(engine/'comparison.json');build=read(engine/'build.json');job=read(engine/'jobs.json')[0]
         runner=[json.loads(line) for line in (engine/'runner/ket-qua-chay.jsonl').read_text().splitlines()][-1]
         require(ec['cases']==ec['matched']==818 and ec['failed']==0 and build['errors']==build['warnings']==0,'TESTER_COMPARISON_OR_BUILD_FAILED')
-        require(build['component_build_receipt_sha256']==sha(receipt_path) and build['tool_sha256']==sha(Path(__file__).with_name('kiem-hang-doi-trong-may-thu.py')),'TESTER_BUILD_PROVENANCE_CHANGED')
+        require(build['component_build_receipt_sha256']==sha(receipt_path) and build['tool_sha256']==sha(folder/'tested-sources/tester-check-tool.py'),'TESTER_BUILD_PROVENANCE_CHANGED')
         for name,digest in mql['sources_sha256'].items():require(build['component_sources_sha256'][name]==digest,'TESTER_COMPONENT_SOURCE_CHANGED')
         require(sha(engine/'PipelineEngineCheck.mq5')==build['source_sha256'] and sha(engine/f'Bot{bot}PipelineApi.mqh')==build['adapted_api_include_sha256'],'TESTER_WRAPPER_CHANGED')
         require(sha(engine/'PipelineEngineCheck.ex5')==build['binary_sha256']==runner['expert_sha256'],'TESTER_BINARY_CHANGED')

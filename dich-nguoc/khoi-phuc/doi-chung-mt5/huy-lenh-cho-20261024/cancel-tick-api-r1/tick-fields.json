@@ -1,0 +1,68 @@
+{
+  "fields": {
+    "bid": 8,
+    "ask": 16
+  },
+  "details": {
+    "TickBid": {
+      "function_rva": "0x1070",
+      "call_site": "0x10d2",
+      "api_target_rva": "0x7c2c10",
+      "tick_stack_offset": 48,
+      "field_stack_offset": 56,
+      "field_offset": 8
+    },
+    "TickAsk": {
+      "function_rva": "0x10f0",
+      "call_site": "0x1152",
+      "api_target_rva": "0x7c2c10",
+      "tick_stack_offset": 48,
+      "field_stack_offset": 64,
+      "field_offset": 16
+    },
+    "CancelPoint": {
+      "function_rva": "0x1170",
+      "call_site": "0x11c8",
+      "api_target_rva": "0x7c2890",
+      "property": 16
+    },
+    "CancelFreeze": {
+      "function_rva": "0x11e0",
+      "call_site": "0x123e",
+      "api_target_rva": "0x7c2970",
+      "property": 32
+    }
+  },
+  "originals": [
+    {
+      "bot": 1,
+      "native_rva": "0x34150",
+      "analysis_sha256": "10ba1cca10f827baf970d1a92c428fafbec1bf3a70c9f89c79cefaf0a997d4ea",
+      "tick_output_stack_offset": 96,
+      "bid_stack_offset": 104,
+      "ask_stack_offset": 112,
+      "relative_offsets": {
+        "bid": 8,
+        "ask": 16
+      }
+    },
+    {
+      "bot": 3,
+      "native_rva": "0x32450",
+      "analysis_sha256": "7eafce3a843c2813e6597e7c3c974e5fe6a66aad8248865a483232755e7c0e69",
+      "tick_output_stack_offset": 96,
+      "bid_stack_offset": 104,
+      "ask_stack_offset": 112,
+      "relative_offsets": {
+        "bid": 8,
+        "ask": 16
+      }
+    }
+  ],
+  "calibration_sha256": "c8093d820d3bccee9bebd59cc2dac7dfa45e8e03d8fb8439e7697b52ee6f4016",
+  "tool_sha256": "37dc98f76f00f40fa680d5958f11c8e492598a2599439efab7ce55a26c269ee5",
+  "native_listing_sha256": "10e51deea2bb1b3119941e34a4b494736eba2decc6479312b53611d6104d865c",
+  "runner_verified": true,
+  "only_anchor_executed": true,
+  "scope": "Known-source compiled wrappers establish MqlTick bid/ask offsets and enum constants 16/32. Original stack reads match these offsets. No original cancel runtime or broker behavior proof."
+}

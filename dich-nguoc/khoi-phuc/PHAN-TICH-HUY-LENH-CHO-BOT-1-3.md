@@ -1,12 +1,13 @@
 # Hủy lệnh chờ — phân tích trước khi viết mã
 
-Chưa có MQL5 hoặc phép so chạy cho nhóm này. Đã giữ riêng toàn bộ
-mã C và lệnh máy của ba hàm mỗi bot bằng công cụ
-`phan-tich-huy-lenh-cho-bot-1-3.py`; đã kiểm lại SHA-256 EX5 gốc.
+Đã dựng hàm hủy một vé của mỗi bot: 964/964 ca khớp mã gốc, chương
+trình MQL5 và máy đo quá khứ. Hai bản biên dịch đều 0 lỗi, 0 cảnh báo.
+Đã giữ mã C/lệnh máy của ba hàm mỗi bot và kiểm SHA-256 EX5 gốc.
+Hai hàm chọn vé và các hàm sửa lệnh vẫn chưa phục hồi đủ.
 
 | Phần | Bot 1 | Bot 3 | Còn thiếu |
 |---|---|---|---|
-| Kiểm vùng cấm rồi tạo/gửi hủy | `0x34150` | `0x32450` | Nối tên/trường dữ liệu giá từ MT5 bằng nguồn đối chứng; dựng và so mọi nhánh |
+| Kiểm vùng cấm rồi tạo/gửi hủy | `0x34150` | `0x32450` | Đã nối dữ liệu giá bằng nguồn đối chứng, dựng và so 964 ca mỗi bot; còn ghép nơi gọi, dữ liệu nơi giao dịch và toàn EA |
 | Chọn vé nhánh mua rồi hủy, dọn bảng, in | `0x32110` | `0x3da90` | Chốt toàn bộ điều kiện chọn giá/vé, tác dụng phụ và ghép hàm hủy |
 | Chọn vé nhánh bán rồi hủy, dọn bảng, in | `0x325b0` | `0x3dd60` | Cùng các điểm trên |
 
@@ -19,8 +20,9 @@ Trong hàm hủy, thứ tự quan sát được:
 
 1. Chọn vé. Nếu chọn được: đọc mã giá, thuộc tính số 16 (`P`), dữ
    liệu giá gần nhất, thuộc tính nguyên số 32 (`L`). Các bước sau phụ
-   thuộc kết quả bước trước; chưa đo tên/trường của dữ liệu giá nên
-   tạm gọi hai số lấy ở đó là `A` và `B`.
+   thuộc kết quả bước trước. Đối chứng có nguồn mới đã chốt `A` là
+   giá mua vào của nơi giao dịch (`bid`, lệch +8), `B` là giá bán ra
+   (`ask`, lệch +16) trong dữ liệu `MqlTick`.
 2. Tính `F=P*(double)L`. Mã máy chọn `F` nếu `F>0` **hoặc F không xác
    định**; trường hợp còn lại chọn `B-A`, gọi kết quả là `D`.
 3. Với `D` thích hợp, đọc giá lệnh (`Q`, thuộc tính 9) và loại lệnh
@@ -46,21 +48,50 @@ móc điều kiện từ mã C trung gian:
 Nhận định ban đầu của agent đã đảo hai nhánh chọn ngưỡng. Đã đọc
 lại phép ghép bit trong C và lệnh máy, sửa thành bảng trên. Bot 1
 không có giá trị trả về dùng được; bot 3 có byte trả về, nhánh không
-gửi/dừng trả 0, nhánh gửi dùng kết quả của hàm gửi. Chưa gọi đây là
-kết quả kiểm chạy.
+gửi/dừng trả 0, nhánh gửi dùng kết quả của hàm gửi. Phép so chạy mới
+đã kiểm khác biệt này; bot 1 không bị gán thêm giá trị trả về.
 
 - [Mã C/lệnh máy bot 1](bot-cua-toi-1/phan-tich/huy-lenh-cho/cancel-20261024-r1/analysis.json).
 - [Mã C/lệnh máy bot 3](bot-cua-toi-3/phan-tich/huy-lenh-cho/cancel-20261024-r1/analysis.json).
 
-Trước viết mã: đối chứng bố cục dữ liệu giá và tên thuộc tính 16/32;
-kiểm lại các nhánh loại lệnh bằng bảng nhảy; lập đủ đầu vào/đầu ra.
-Sau đó phải so chọn vé thất bại, dữ liệu giá thiếu, số âm/0/sát ngưỡng/
-không xác định/vô hạn, loại có phần 32 bit cao, dừng, trạng thái cũ và
-gửi thành công/thất bại. Cuối cùng ghép với hai hàm chọn vé và toàn EA.
+Trước viết mã, đã đối chứng hai trường giá và hằng thuộc tính:
+`SYMBOL_POINT=16`, `SYMBOL_TRADE_FREEZE_LEVEL=32`, trên đúng máy
+MT5 có SHA-256 đã chốt. Bản có nguồn chỉ gọi `Anchor`; hàm mẫu bid/
+ask cho thấy con trỏ dữ liệu và lệnh đọc ở +8/+16, không dựa tên biến.
+[Bằng chứng](doi-chung-mt5/huy-lenh-cho-20261024/cancel-tick-api-r1/tick-fields.json).
+Đã đọc lại đủ sáu địa chỉ trong bảng nhảy mỗi bot để nối loại 2..7.
+Đã so chọn vé thất bại, đọc giá thất bại, số âm/0/sát ngưỡng/không xác
+định/vô hạn, loại có phần 32 bit cao, dừng, trạng thái cũ và gửi thành
+công/thất bại. Còn ghép với hai hàm chọn vé và toàn EA.
+
+## Nguồn và kết quả kiểm
+
+| Bot | Nguồn hủy một vé | Lượt so mã gốc/MQL5 | Lượt máy đo quá khứ |
+|---|---|---|---|
+| 1 | [Bot1OrderCancel.mqh](bot-cua-toi-1/source/MQL5/Include/bot-cua-toi-1/Bot1OrderCancel.mqh) | [964/964](bot-cua-toi-1/bang-chung/kiem-huy-lenh-cho/cancel-20261024-r2/comparison.json) | [964/964](doi-chung-mt5/huy-lenh-cho-20261024/engine-cancel-b1-r2/comparison.json) |
+| 3 | [Bot3OrderCancel.mqh](bot-cua-toi-3/source/MQL5/Include/bot-cua-toi-3/Bot3OrderCancel.mqh) | [964/964](bot-cua-toi-3/bang-chung/kiem-huy-lenh-cho/cancel-20261024-r2/comparison.json) | [964/964](doi-chung-mt5/huy-lenh-cho-20261024/engine-cancel-b3-r2/comparison.json) |
+
+So giá trị trả về, 35 trường giao dịch, đủ bốn chuỗi, thứ tự/đối số
+truy vấn, số lần gửi và thông báo. Mã gốc chạy hết hàm hủy và khối gửi,
+không thay kết quả của thuật toán. Nguồn giao dịch chạy trực tiếp bằng
+MQL5; chỉ chương trình kiểm mới thay lời gọi truy vấn/gửi bằng dữ liệu
+cấp sẵn. Định dạng thông báo được đo trong MT5.
+
+[Tổng kiểm](KIEM-CHUNG-HUY-LENH-CHO-BOT-1-3.json) xác nhận lại mã tệp,
+bản biên dịch, nguồn đã lưu, dữ liệu ba lượt chạy và 12 kiểu sửa đầu
+vào sai phải bị từ chối. Không so các byte đệm riêng của cấu trúc MQL5.
+964 ca không chứng minh mọi đầu vào, lỗi cấp bộ nhớ, trạng thái chọn
+trên tài khoản thực, các hàm gọi, mọi cài đặt hoặc toàn bot.
+
+Lượt `cancel-20261024-r1` dừng ở kiểm thu hồi chuỗi tạm trong bộ kiểm.
+Đã đo đúng nguyên nhân: chuỗi kết quả còn trong ô trả về của dịch vụ.
+Lượt r2 thu hồi ô tạm sau khi hàm trả về rồi kiểm cân bằng bộ nhớ;
+không sửa thuật toán MQL5 để làm phép so đạt. Bằng chứng r1 được giữ.
 
 Claude đã từ chối đánh giá bảng điều kiện này ở lượt
 `cancel-guards-ultracode-20261024-r1`; [phản hồi](danh-gia-claude/cancel-guards-ultracode-20261024-r1/response.md).
 Đã kiểm thực tế Opus 5.5 `max`, Ultracode bật nhưng không có luồng
 phụ chạy. Không dùng phản hồi từ chối làm xác nhận, không đổi cách
 hỏi để vượt chặn. Phân tích trên do agent chính và hai agent đọc
-mã trực tiếp; vẫn phải có đối chứng có nguồn và kiểm chạy trước bàn giao.
+mã trực tiếp. Kiểm chạy và đối chứng có nguồn nêu trên là bằng chứng
+của lượt này; chưa có xác nhận từ Claude cho phần hủy.

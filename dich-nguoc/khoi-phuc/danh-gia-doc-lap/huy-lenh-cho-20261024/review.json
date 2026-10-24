@@ -1,0 +1,30 @@
+{
+  "checked_at_utc": "2026-10-24T15:00:54.736621+00:00",
+  "scope": "Two single-ticket cancel functions only; not selectors or whole EA.",
+  "reviewers": [
+    {
+      "agent": "/root/trade_request_messages",
+      "scope": "--cancel tester runner and saved-runner provenance for prior scan/pipeline results",
+      "actionable_findings": []
+    },
+    {
+      "agent": "/root/trade_result_messages",
+      "scope": "Cancel r2 source/checker and independent read-only result/input mutation audit",
+      "actionable_findings": [],
+      "limits": [
+        "Public fields/full strings compared; MQL padding not compared.",
+        "Query/send returns supplied; broker and whole EA not proven."
+      ]
+    }
+  ],
+  "parent_verified": {
+    "cancel_aggregate": "KIEM-CHUNG-HUY-LENH-CHO-BOT-1-3.json",
+    "cancel_aggregate_sha256": "86b01392f1787f1b6a0f9038c95fb469313722c93701eca9560ed652afc1f459",
+    "cases_each": 964,
+    "rejected_corrupt_input_types_each": 12,
+    "prior_scan_aggregate": "KIEM-CHUNG-QUET-LENH-BOT-1-3-R2.json",
+    "prior_pipeline_aggregate": "KIEM-CHUNG-CHUOI-DAT-LENH-BOT-1-3-R4.json"
+  },
+  "claude_review": "Explicit refusal in cancel-guards-ultracode-20261024-r1; no findings or approval. No rephrased bypass request.",
+  "whole_bot_complete": false
+}

@@ -1,0 +1,15 @@
+{
+  "cases": 964,
+  "matched": 964,
+  "failed": 0,
+  "first_failures": [],
+  "hashes": {
+    "cases.bin": "2a87a75680c1e8264ef74a89a5aea496c026dd3aa282d5f8eab6f41973271a49",
+    "original-results.bin": "8a07906a25a3882eaca1672d4978be0139aae52c92c7a0ffbaecc6839db28e09",
+    "mql5-results.bin": "8a07906a25a3882eaca1672d4978be0139aae52c92c7a0ffbaecc6839db28e09",
+    "api-fixtures.bin": "fbfd46611e4154e640f83d3c251106776d53433ca1c74cdb530f76a445ac000d",
+    "script-status.bin": "2c0fc528f5dc92b1d5188623be6596a13ef6780a3de3c3dc06daf0c13c900bec"
+  },
+  "whole_bot_complete": false,
+  "scope": "Compare the complete cancel guard -> request reset -> original send/messages.\n\nUsage: kiem-huy-lenh-cho-bot-1-3.py prepare|mql5|original|compare BOT RUN [--build BUILD]\nOriginal functions 0x34150/0x32450 execute to return, including 0x950. Only terminal\nservices are supplied; every supplied return is bound to serialized inputs.\nNo orders are sent. Bid/ask offsets and properties16/32 have known-source proof.\n"
+}

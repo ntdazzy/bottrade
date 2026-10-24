@@ -20,7 +20,31 @@ Chạy từ thư mục dự án. Mỗi lượt dùng tên mới để giữ bằ
   Chỉ phân tích, không chạy mã bot hoặc MT5. Lượt `cancel-20261024-r1`.
 
 [Quét và giới hạn](../PHAN-TICH-QUET-LENH-BOT-1-3.md),
-[phần hủy chưa phục hồi](../PHAN-TICH-HUY-LENH-CHO-BOT-1-3.md).
+[phần hủy và giới hạn](../PHAN-TICH-HUY-LENH-CHO-BOT-1-3.md).
+
+## Hủy một lệnh chờ
+
+- `kiem-truong-gia-tick.py PROBE_RUN_DIRECTORY`: sau đối chứng chỉ
+  gọi `Anchor`, kiểm nguồn/lệnh máy để chốt hai trường giá +8/+16 và
+  thuộc tính 16/32. Thêm `tick-fields.json` mới; không mở MT5. Lượt
+  `doi-chung-mt5/huy-lenh-cho-20261024/cancel-tick-api-r1`.
+- `kiem-huy-lenh-cho-bot-1-3.py MODE BOT RUN [--build BUILD]`: chạy
+  `prepare` → biên dịch `BotNOrderCancelCheck.mq5` → `mql5` →
+  `original` → `compare`. Lượt đạt `cancel-20261024-r2`, bản biên dịch
+  `bN-order-cancel-01`: 964 ca mỗi bot. Truy vấn/kết quả gửi được cấp;
+  mã gốc chạy hết kiểm vùng cấm, dựng yêu cầu, gửi và thông báo.
+- `kiem-hang-doi-trong-may-thu.py BOT NEW_RUN --component-run RUN
+  --build BUILD --cancel`: cùng thân kiểm trong máy đo quá khứ;
+  lượt `engine-cancel-b1-r2`/`engine-cancel-b3-r2` đạt 964 ca mỗi bot.
+  Không gửi lệnh thật. Không dùng chung `--cancel`, `--scan`, `--pipeline`.
+- `kiem-chung-huy-lenh-cho-bot-1-3.py NEW_JSON`: không mở MT5; so
+  nguồn hiện hành/bản đã kiểm, dữ liệu mã gốc/MQL5/máy đo quá khứ,
+  phần phụ thuộc và 12 kiểu sửa đầu vào sai phải bị từ chối. Đầu ra
+  mới ở trong `khoi-phuc`. Chưa chứng minh toàn bộ bot hoặc nơi giao dịch.
+
+Các tổng kiểm quét/chuỗi đặt lệnh đọc mã kiểm tra của runner đã lưu
+trong `tested-sources/tester-check-tool.py`; thêm tùy chọn cho runner
+mới không được làm sai nguồn gốc của lượt kiểm cũ.
 
 ## Hàng đợi và nội dung lỗi
 

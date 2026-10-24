@@ -1,0 +1,22 @@
+{
+  "cases": 964,
+  "exit_code": 0,
+  "seconds": 3.34,
+  "script_sha256": "08ee8dcb4f896ac092e74f134a26898d522f877dd6aeaf8a2c2a7e634a914bcb",
+  "build_receipt": "bot-cua-toi-1/bang-chung/bien-dich/b1-order-cancel-01/bien-nhan.json",
+  "build_receipt_sha256": "5a135a3ea7d11f83bf73f0a289f0f86cd0e3dc236cf4c185d4520a1c57e73079",
+  "sources_sha256": {
+    "Scripts/bot-cua-toi-1/Bot1OrderCancelCheck.mq5": "da46dd8c5c76cf8d61be7db8bfc0fbbfd0baeca83b5180134a59a62db5e07ff9",
+    "Scripts/bot-cua-toi-1/Bot1PipelineApi.mqh": "cc7c0e9d1199205e1f2b6ab178a55cb6e9fc838e991d3b40a176f90f4d110cee",
+    "Include/bot-cua-toi-1/Bot1OrderCancel.mqh": "261f1731c6331cdb2d56d858770627ad4c88319e708df3e360a6a6e5934e8789",
+    "Include/bot-cua-toi-1/Bot1TradeSend.mqh": "dddd20fb58daa7cd60ce87f08c89be3a204ce170e89418c801b24175d4d12e8c",
+    "Include/bot-cua-toi-1/Bot1TradeMessages.mqh": "af36245e2dd03ec12d5808457530c4937bc354a9a68b5a1f70f8bc394f5ab5a3",
+    "Include/bot-cua-toi-1/Bot1PendingRequest.mqh": "46ffbb7da4d469533e1a665b5b666ccbfc755ff973ae5e5ebabf5cdd9051700d",
+    "Include/bot-cua-toi-1/Bot1Filling.mqh": "d01485811439d971833de028c791c5abb6cb64ba5b9c20228ca8785453a6615d"
+  },
+  "hashes": {
+    "mql5-results.bin": "8a07906a25a3882eaca1672d4978be0139aae52c92c7a0ffbaecc6839db28e09",
+    "api-fixtures.bin": "fbfd46611e4154e640f83d3c251106776d53433ca1c74cdb530f76a445ac000d",
+    "script-status.bin": "2c0fc528f5dc92b1d5188623be6596a13ef6780a3de3c3dc06daf0c13c900bec"
+  }
+}

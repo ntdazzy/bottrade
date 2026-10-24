@@ -61,3 +61,16 @@
 /danh-gia-claude/cancel-guards-ultracode-20261024-r1/** -text
 /ban-do-bot-1-3/luot-20261024-r10/** -text
 /KIEM-CHUNG-QUET-LENH-BOT-1-3*.json -text
+/bot-cua-toi-[13]/source/MQL5/Include/bot-cua-toi-[13]/Bot[13]OrderCancel.mqh -text
+/bot-cua-toi-[13]/source/MQL5/Scripts/bot-cua-toi-[13]/Bot[13]OrderCancelCheck.mq5 -text
+/bot-cua-toi-[13]/bang-chung/kiem-huy-lenh-cho/** -text
+/bot-cua-toi-[13]/bang-chung/bien-dich/b[13]-order-cancel-*/** -text
+/cong-cu/kiem-huy-lenh-cho-bot-1-3.py -text
+/cong-cu/kiem-chung-huy-lenh-cho-bot-1-3.py -text
+/cong-cu/kiem-truong-gia-tick.py -text
+/doi-chung-mt5/huy-lenh-cho-20261024/** -text
+# Preserve the exact disassembly bytes already referenced by proof hashes.
+/doi-chung-mt5/huy-lenh-cho-20261024/cancel-tick-api-r1/tick-fields-native.txt whitespace=-blank-at-eol,cr-at-eol
+/danh-gia-doc-lap/huy-lenh-cho-20261024/** -text
+/ban-do-bot-1-3/luot-20261024-r11/** -text
+/KIEM-CHUNG-HUY-LENH-CHO-BOT-1-3*.json -text

@@ -36,7 +36,7 @@ def main():
         for name,digest in mql['hashes'].items():require(sha(folder/name)==digest,'MQL_EVIDENCE_CHANGED')
         engine=ROOT/f'doi-chung-mt5/quet-lenh-20261024/engine-scan-b{bot}-r2';build=read(engine/'build.json');ec=read(engine/'comparison.json');job=read(engine/'jobs.json')[0];run=[json.loads(line) for line in (engine/'runner/ket-qua-chay.jsonl').read_text().splitlines()][-1]
         require(ec['matched']==ec['cases']==n and ec['failed']==0 and build['errors']==build['warnings']==0,'TESTER_BUILD_OR_COMPARISON_FAILED')
-        require(build['component_build_receipt_sha256']==sha(receipt_path) and build['tool_sha256']==sha(Path(__file__).with_name('kiem-hang-doi-trong-may-thu.py')),'TESTER_PROVENANCE_CHANGED')
+        require(build['component_build_receipt_sha256']==sha(receipt_path) and build['tool_sha256']==sha(folder/'tested-sources/tester-check-tool.py'),'TESTER_PROVENANCE_CHANGED')
         require(build['tester_sha256']=='5033d9d45d669cebd735e8a6be20b54d74b75274f885c9a0e48e52d872104efb' and build['test_input_sha256']==sha(folder/'cases.bin'),'TESTER_ENGINE_OR_INPUT_CHANGED')
         for name,digest in mql['sources_sha256'].items():require(build['component_sources_sha256'][name]==digest,'TESTER_SOURCE_CHANGED')
         require(sha(engine/'OrderScanEngineCheck.mq5')==build['source_sha256'] and sha(engine/'OrderScanEngineCheck.ex5')==build['binary_sha256']==run['expert_sha256'],'TESTER_WRAPPER_OR_BINARY_CHANGED')

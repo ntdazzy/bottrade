@@ -1,0 +1,20 @@
+{
+  "bot": 3,
+  "cases": 964,
+  "matched": 964,
+  "failed": 0,
+  "first_failures": [],
+  "seconds": 6.29,
+  "source_comparison": "bot-cua-toi-3/bang-chung/kiem-huy-lenh-cho/cancel-20261024-r2",
+  "hashes": {
+    "cases.bin": "2a87a75680c1e8264ef74a89a5aea496c026dd3aa282d5f8eab6f41973271a49",
+    "original-results.bin": "be3a2481301516cceaa730de2d470f96f57cfc12356d44215bc3ed51e836d954",
+    "tester-mql5-results.bin": "be3a2481301516cceaa730de2d470f96f57cfc12356d44215bc3ed51e836d954",
+    "script-mql5-results.bin": "be3a2481301516cceaa730de2d470f96f57cfc12356d44215bc3ed51e836d954",
+    "api-fixtures.bin": "fbfd46611e4154e640f83d3c251106776d53433ca1c74cdb530f76a445ac000d",
+    "script-status.bin": "2c0fc528f5dc92b1d5188623be6596a13ef6780a3de3c3dc06daf0c13c900bec"
+  },
+  "whole_bot_complete": false,
+  "scope": "Same full cancel guard/request/send/messages check body inside identical tester engine.35fields,four strings,return and ordered typed query/send/format records compared. Terminal query/send results supplied and input-bound; formatting measured. No actual broker/full EA/allocation-failure proof.",
+  "input_contract_checked_cases": 964
+}

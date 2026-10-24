@@ -231,6 +231,7 @@ def main():
                     p=ROOT/f'bot-cua-toi-{bot}/source/MQL5/Include/bot-cua-toi-{bot}/Bot{bot}AccountInitialization.mqh'
                     reconstructed={'path':p.relative_to(ROOT).as_posix(),'sha256':sha(p),'partial_only':True}
             new_parts={
+                (0x34150 if bot==1 else 0x32450):('kiem-huy-lenh-cho/cancel-20261024-r2','OrderCancel','Hủy một vé qua kiểm vùng cấm, tạo và gửi/thông báo: 964 ca. Truy vấn/kết quả gửi cấp sẵn; còn hàm chọn vé, nơi giao dịch, lỗi cấp bộ nhớ và toàn EA.'),
                 (0x2e6d0 if bot==1 else 0x3bb10):('kiem-hang-doi/queue-20261024-r3','PendingQueue','Hàng đợi và thử lại; kết quả tạo lệnh cấp sẵn, còn so chung với tạo/gửi và toàn EA.'),
                 (0x336d0 if bot==1 else 0x3ee80):('kiem-chuoi-loi/errors-20261024-r3','TradeErrors','Nội dung lỗi/tăng đếm; chuỗi cũ kiểm ở gốc, lỗi cấp bộ nhớ và toàn bộ nơi gọi còn mở.'),
                 (0x231c0 if bot==1 else 0x2e8f0):('kiem-kieu-khop-lenh/filling-20261024-r1','Filling','Hàm chọn cách khớp; dữ liệu thuộc tính cấp sẵn, chưa ghép giao dịch.'),
@@ -253,6 +254,10 @@ def main():
                     if rva in scan_rvas[bot]:
                         group=scan_rvas[bot][rva];engine=ROOT/f'doi-chung-mt5/quet-lenh-20261024/engine-scan-b{bot}-r2/comparison.json'
                         proof.update(function_case_group=group,group_comparison=comparison['groups'][group],tester_comparison=engine.relative_to(ROOT).as_posix(),tester_comparison_sha256=sha(engine))
+                    if rva==(0x34150 if bot==1 else 0x32450):
+                        engine=ROOT/f'doi-chung-mt5/huy-lenh-cho-20261024/engine-cancel-b{bot}-r2/comparison.json'
+                        tested=json.loads(engine.read_text());assert tested['cases']==tested['matched']==964 and tested['failed']==0
+                        proof.update(tester_comparison=engine.relative_to(ROOT).as_posix(),tester_comparison_sha256=sha(engine))
             pipeline_rvas={1:{0x950,0x231c0,0x235c0,0x23fa0,0x26060,0x26360,0x2e6d0,0x32dd0,0x336d0},
                            3:{0x950,0x2e8f0,0x2ecf0,0x2f6d0,0x31790,0x31a90,0x3bb10,0x3e580,0x3ee80}}
             if proof and rva in pipeline_rvas[bot]:

@@ -1,0 +1,24 @@
+{
+  "phase": "native checker",
+  "case": 2,
+  "error": "CANCEL_EXECUTION_NOT_COMPLETE_OR_MEMORY_BALANCED",
+  "root_cause": "One owned transient string is retained in the shared return slot after the wrapper. Explicit caller consumption used by the existing send/queue checkers was omitted.",
+  "native_returned": true,
+  "all_fixture_records_consumed": true,
+  "slot_descriptor_capacity": 28,
+  "slot_header_capacity_refs_length": [
+    28,
+    1,
+    27
+  ],
+  "slot_text": "cancel #1311768467463790320",
+  "before_allocations_frees": [
+    6,
+    5
+  ],
+  "after_explicit_consumption": [
+    6,
+    6
+  ],
+  "source_algorithm_difference_proven": false
+}
