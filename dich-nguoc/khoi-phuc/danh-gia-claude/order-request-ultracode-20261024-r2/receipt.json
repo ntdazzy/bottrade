@@ -1,0 +1,32 @@
+{
+  "session": "a1de6f30-cda2-4523-a4f5-59b65386b37d",
+  "status": "refused-no-analysis",
+  "requested_model": "claude-opus-5-5",
+  "observed_model": [
+    "claude-opus-5-5"
+  ],
+  "effort_requested": "max",
+  "ultracode_requested": true,
+  "response_sha256": "515680099b3dc14f375549fdf95b5b28ba86f42ef6b9556a19690b8be6d3e1b8",
+  "host_action": "No further rephrasing requested. This response is not independent validation. Host native comparison is separately scoped.",
+  "observed_requests": [
+    {
+      "timestamp": "2026-10-24T09:21:13.839Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-24T09:21:17.813Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-24T09:26:14.693Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    }
+  ],
+  "effort_observed": [
+    "max"
+  ]
+}

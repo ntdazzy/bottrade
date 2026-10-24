@@ -1,5 +1,11 @@
 # Kết quả khôi phục mã — lượt 23/10/2026
 
+Cập nhật tiếp 24/10: mỗi bot khớp 3.096 ca chọn cách khớp lệnh và
+1.607 ca chuẩn bị yêu cầu lệnh chờ, gồm đủ 35 trường và thứ tự gọi;
+thêm 16 ca riêng cho giá dừng/chốt không xác định cũng khớp.
+[Phạm vi](PHAN-TICH-TAO-YEU-CAU-CHO-BOT-1-3.md). Chưa chạy bước gửi
+lệnh trong phần mới, chưa có EA chính hoàn chỉnh cho bot 1 và 3.
+
 Cập nhật 24/10: phần đổi giờ theo mùa của bot 1 và 3 đã có nguồn MQL5,
 khớp 4.737/4.737 ca mỗi bot; kết quả và thứ tự gọi trùng từng byte,
 biên dịch 0 lỗi/cảnh báo. [Phạm vi](PHAN-TICH-GIO-MUA-HE-BOT-1-3.md).

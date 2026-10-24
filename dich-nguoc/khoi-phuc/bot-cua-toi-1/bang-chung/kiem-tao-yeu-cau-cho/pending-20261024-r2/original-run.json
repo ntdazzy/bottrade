@@ -1,0 +1,9 @@
+{
+  "cases": 1607,
+  "seconds": 25.01,
+  "native_rva": "0x32dd0",
+  "send_boundary_rva": "0x950",
+  "result_sha256": "30f46824bd36b3937fb944fd7e37b429405f6acfd39977fc764e0d6980b6947e",
+  "tool_sha256": "35b9b0f611a01e12d94b1015570511e0fd95fd617fcbd567a71a727ad6b04600",
+  "scope": "Compare request preparation with native code stopped before the send wrapper.\n\nUsage: kiem-tao-yeu-cau-cho-bot-1-3.py prepare|original|mql5|compare BOT RUN [--build BUILD]\nTests all35 known-source-calibrated request/result/check fields, magic, filling\npreference and ordered API/message arguments. Ready means preparation reached the\nsend boundary, never that a trade was sent. Terminal properties are supplied.\n"
+}

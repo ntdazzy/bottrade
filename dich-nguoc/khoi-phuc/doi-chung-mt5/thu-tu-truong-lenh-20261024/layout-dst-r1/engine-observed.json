@@ -1,0 +1,20 @@
+{
+  "pid": 14476,
+  "process": "C:\\Users\\NTD\\Desktop\\Bot Market Demo\\dich-nguoc\\.local\\claude-recovery-20261023\\mt5\\metatester64.exe",
+  "engine_base": "0x7ff7fe950000",
+  "engine_sha256": "5033d9d45d669cebd735e8a6be20b54d74b75274f885c9a0e48e52d872104efb",
+  "observed_processes": [
+    {
+      "id": 14476,
+      "path": "C:\\Users\\NTD\\Desktop\\Bot Market Demo\\dich-nguoc\\.local\\claude-recovery-20261023\\mt5\\metatester64.exe",
+      "base": 140703104827392,
+      "started": 639284559827597430
+    },
+    {
+      "id": 11936,
+      "path": "C:\\Users\\NTD\\Desktop\\Bot Market Demo\\dich-nguoc\\.local\\claude-recovery-20261023\\mt5\\terminal64.exe",
+      "base": 140700482535424,
+      "started": 639284559794434960
+    }
+  ]
+}

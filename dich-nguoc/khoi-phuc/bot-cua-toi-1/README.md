@@ -1,5 +1,9 @@
 # bot-cua-toi-1
 
+Đã dựng chọn cách khớp lệnh: 3.096 ca khớp; chuẩn bị yêu cầu lệnh chờ:
+1.607 ca và 16 ca bổ sung khớp. Chưa gửi lệnh trong phần này.
+[Bằng chứng](../PHAN-TICH-TAO-YEU-CAU-CHO-BOT-1-3.md).
+
 Đã dựng giờ theo mùa: 4.737/4.737 ca khớp kết quả và thứ tự gọi;
 biên dịch 0 lỗi/cảnh báo. [Giới hạn](../PHAN-TICH-GIO-MUA-HE-BOT-1-3.md).
 Chưa có EA chính hoàn chỉnh.

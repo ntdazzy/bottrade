@@ -1,0 +1,12 @@
+{
+  "cases": 16,
+  "matched": 16,
+  "failed": 0,
+  "first_failures": [],
+  "hashes": {
+    "cases.bin": "f9a66bc545e1b2bbd622e24d49e64efbf246c322747156c2ea910f2026d6f672",
+    "original-results.bin": "61d7c5b0b3a2fdd61035e223d617f59bc2d6e76e6d281953225f59ecc64cd08d",
+    "mql5-results.bin": "61d7c5b0b3a2fdd61035e223d617f59bc2d6e76e6d281953225f59ecc64cd08d"
+  },
+  "scope": "Preparation up to the send wrapper, not actual order submission:35 calibrated struct fields plus magic/preferred and ordered API/messages. Both native filling checks and string helpers execute. Initial struct strings supplied as non-owning literals; allocation failures and send/result/queue behavior remain open."
+}

@@ -1,0 +1,17 @@
+{
+  "native_rva": "0x2e8f0",
+  "end_rva_exclusive": "0x2ece6",
+  "native_code_sha256": "9345f9b4eb47f0bc99625e70ef777e0a6d64488aa37ea9ee16c0379483e08e8f",
+  "capture_region_sha256": "7464a1dcb3a66d1438d510f365a08fbcdfa4aaa00f03afb49259225bc7d5cfbb",
+  "listing_sha256": "0b6ac5f1238ae70bbdd52885840171e84ad935358afa1f38f5e6745a5a5edc9f",
+  "fields": {
+    "fn": "0x2e8f0",
+    "request": "0x744f0",
+    "fill": "0x74544",
+    "time": "0x74548",
+    "code": "0x745e0",
+    "preferred": "0x74775",
+    "chart": "0x1d6e28"
+  },
+  "runtime_write_guard": "Only four identified global32-bit fields plus local stack and supplied string heap allowed during execution; original native body and string-copy/destruction functions executed."
+}

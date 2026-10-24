@@ -80,9 +80,18 @@ Các kết quả 4.737 ca ở trên giữ nguyên phạm vi, chưa đủ để �
   trả thất bại và ghép chuỗi thất bại không ghi. Khi đó phải kiểm cả
   0/1/2 lần hủy chuỗi; bộ hiện tại chỉ chấp nhận 0 hoặc 2.
 - Cần tách hai khai báo chuỗi để khớp thứ tự khởi tạo từng ô gốc,
-  rồi biên dịch và chạy lại. Đồng thời chụp bản biên dịch gọi MT5
-  trực tiếp, không thay lời gọi bằng hàm kiểm, để so cách trình biên
-  dịch nối các lời gọi và khởi tạo vùng ngày.
+  rồi biên dịch và chạy lại.
+
+Đã xử lý thêm khoảng kiểm bản biên dịch gọi MT5 trực tiếp: thư viện
+có nguồn được biên dịch sạch rồi chụp trong máy thử, chỉ chạy hàm
+khởi tạo dữ liệu. Hai hàm giờ không bị thay bằng hàm kiểm trong bản
+biên dịch này. Chạy lệnh máy đã chụp với cùng bộ 4.737 ca/kết quả MT5
+đã đo: kết quả và thứ tự/đối số trùng từng byte với mã gốc ở cả hai bot.
+[Bot 1](bot-cua-toi-1/bang-chung/kiem-gio-mua-he/dst-20261024-r1/direct-compiled-run.json),
+[bot 3](bot-cua-toi-3/bang-chung/kiem-gio-mua-he/dst-20261024-r1/direct-compiled-run.json).
+Chỉ bỏ một thông báo đánh dấu của chương trình đối chứng khỏi phép
+so; các lời gọi bên trong hàm vẫn được kiểm đủ. Phạm vi đầu vào/lỗi
+vẫn như bộ ca cũ, không dùng lượt này để đóng những mục còn thiếu.
 
 Claude chưa tự đọc bằng chứng chuỗi rỗng mới; điểm đó đã được chốt
 bằng `string-literals.json`, không coi lại là giả thuyết. Công cụ tự

@@ -1,0 +1,137 @@
+#property strict
+#property library
+#property version "1.00"
+#include "TradeLayoutSeed.mqh"
+#include <bot-cua-toi-1/Bot1AmericanDST.mqh>
+#include <bot-cua-toi-3/Bot3AmericanDST.mqh>
+
+// Exported wrappers remain available for inspection. The driver calls Anchor only.
+long P_Anchor(const long k,const double x,const string s) export
+{
+   SeedTradeLayout();
+   Print("EX5_API_PROBE:Anchor");
+   return k;
+}
+
+double P_GlobalVariableGet(const long k,const double x,const string s) export
+{
+   Print("EX5_API_PROBE:GlobalVariableGet");
+   return GlobalVariableGet(s);
+}
+
+bool P_GlobalVariableGetRef(const long k,const double x,const string s) export
+{
+   Print("EX5_API_PROBE:GlobalVariableGetRef");
+   double value=0.0;
+   return GlobalVariableGet(s,value);
+}
+
+long P_GlobalVariableSet(const long k,const double x,const string s) export
+{
+   Print("EX5_API_PROBE:GlobalVariableSet");
+   return (long)GlobalVariableSet(s,x);
+}
+
+bool P_GlobalVariableCheck(const long k,const double x,const string s) export
+{
+   Print("EX5_API_PROBE:GlobalVariableCheck");
+   return GlobalVariableCheck(s);
+}
+
+bool P_GlobalVariableDel(const long k,const double x,const string s) export
+{
+   Print("EX5_API_PROBE:GlobalVariableDel");
+   return GlobalVariableDel(s);
+}
+
+int P_ObjectsDeleteAll(const long k,const double x,const string s) export
+{
+   Print("EX5_API_PROBE:ObjectsDeleteAll");
+   return ObjectsDeleteAll(k,-1,-1);
+}
+
+int P_ObjectsDeleteAllPrefix(const long k,const double x,const string s) export
+{
+   Print("EX5_API_PROBE:ObjectsDeleteAllPrefix");
+   return ObjectsDeleteAll(k,s,-1,-1);
+}
+
+double P_TesterStatistics(const long k,const double x,const string s) export
+{
+   Print("EX5_API_PROBE:TesterStatistics");
+   return TesterStatistics((ENUM_STATISTICS)k);
+}
+
+int P_MessageBox(const long k,const double x,const string s) export
+{
+   Print("EX5_API_PROBE:MessageBox");
+   return MessageBox(s,s,(int)k);
+}
+
+int P_CalendarEventByCountry(const long k,const double x,const string s) export
+{
+   Print("EX5_API_PROBE:CalendarEventByCountry");
+   MqlCalendarEvent events[];
+   return CalendarEventByCountry(s,events);
+}
+
+int P_CalendarEventByCurrency(const long k,const double x,const string s) export
+{
+   Print("EX5_API_PROBE:CalendarEventByCurrency");
+   MqlCalendarEvent events[];
+   return CalendarEventByCurrency(s,events);
+}
+
+int P_CalendarValueHistoryByEvent(const long k,const double x,const string s) export
+{
+   Print("EX5_API_PROBE:CalendarValueHistoryByEvent");
+   MqlCalendarValue values[];
+   return CalendarValueHistoryByEvent((ulong)k,values,(datetime)x,0);
+}
+
+int P_CalendarValueHistory(const long k,const double x,const string s) export
+{
+   Print("EX5_API_PROBE:CalendarValueHistory");
+   MqlCalendarValue values[];
+   return CalendarValueHistory(values,(datetime)k,(datetime)x,s,NULL);
+}
+
+bool P_CalendarEventById(const long k,const double x,const string s) export
+{
+   Print("EX5_API_PROBE:CalendarEventById");
+   MqlCalendarEvent event;
+   return CalendarEventById((ulong)k,event);
+}
+
+bool P_CalendarCountryById(const long k,const double x,const string s) export
+{
+   Print("EX5_API_PROBE:CalendarCountryById");
+   MqlCalendarCountry country;
+   return CalendarCountryById((long)k,country);
+}
+
+bool P_CalendarValueById(const long k,const double x,const string s) export
+{
+   Print("EX5_API_PROBE:CalendarValueById");
+   MqlCalendarValue value;
+   return CalendarValueById((ulong)k,value);
+}
+
+string P_StringToLower(const long k,const double x,const string s) export
+{
+   Print("EX5_API_PROBE:StringToLower");
+   string value=s;
+   StringToLower(value);
+   return value;
+}
+
+bool P_AmericanDST1(const long k,const double x,const string s) export
+{
+   Print("EX5_API_PROBE:AmericanDST1");
+   return Bot1AmericanDST();
+}
+bool P_AmericanDST3(const long k,const double x,const string s) export
+{
+   Print("EX5_API_PROBE:AmericanDST3");
+   return Bot3AmericanDST();
+}

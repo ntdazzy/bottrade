@@ -1,0 +1,8 @@
+{
+  "status": "oracle-initialization-failed-not-a-source-comparison",
+  "case": 0,
+  "error": "UC_ERR_READ_UNMAPPED in native string destructor RVA0x19",
+  "descriptor_rva": "0x67698",
+  "cause": "Used stand-alone global struct spacing as class-member spacing; the destructor received seeded double fields as a string descriptor. No native result was produced.",
+  "next_action": "Measure packed class-member positions from a separate known-source capture; keep this attempt unchanged."
+}

@@ -1,0 +1,35 @@
+{
+  "requested_model": "claude-opus-5-5",
+  "observed_model": [
+    "claude-opus-5-5"
+  ],
+  "effort_requested": "max",
+  "ultracode_requested": true,
+  "session": "0ead3e5b-60ea-41de-9849-163efca2d605",
+  "status": "refused-no-analysis",
+  "response_sha256": "98331c775336c5ea189ce8a96eb97b313f8ca0fb556b8fb8bb05d315815d4589",
+  "cli_subtype": "success",
+  "cli_is_error": false,
+  "scope": "P11 bot1 stage map and initial trading gates",
+  "host_action": "Recorded refusal; no rephrasing to evade it, no independent review claimed. Existing host analysis and direct comparisons remain separate.",
+  "observed_requests": [
+    {
+      "timestamp": "2026-10-24T09:17:28.512Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-24T09:17:54.229Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-24T09:19:11.171Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    }
+  ],
+  "effort_observed": [
+    "max"
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "cases": 3096,
+  "seconds": 47.95,
+  "native_rva": "0x231c0",
+  "result_sha256": "bc271ef42ef7e76baff7469caffbfb96066c0a0deadccbe688643a79798aa30e",
+  "tool_sha256": "7bc0022adbb2e5f3ffaf1bf2a5fd356258d1de0918137be33a0693bb5d579512",
+  "scope": "Compare complete native filling-policy selection with restored MQL5.\n\nUsage: kiem-kieu-khop-lenh-bot-1-3.py prepare|original|mql5|compare BOT RUN [--build BUILD]\nSymbol properties and read success are supplied. Native string helpers execute;\nreturn byte, four mutated fields and ordered API/message arguments are compared.\nNo request is sent; only the private MT5 executes a component check script.\n"
+}

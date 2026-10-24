@@ -273,6 +273,49 @@ Lượt hiện hành: `volume-validation-20261024-r5`, bản dựng
 đúng kết quả gốc r3 vì đầu vào giống từng byte; có biên nhận riêng.
 [Phạm vi và các lượt chưa đạt](../PHAN-TICH-KHOI-LUONG-HOP-LE-BOT-1-3.md).
 
+## Kiểm chọn cách khớp lệnh
+
+`kiem-kieu-khop-lenh-bot-1-3.py MODE BOT RUN [--build BUILD]`, với
+`MODE`: `prepare`, `original`, `mql5`, `compare`. Đầu vào ở
+`bot-cua-toi-N/bang-chung/kiem-kieu-khop-lenh/RUN/`. `mql5` bắt buộc
+biên dịch `BotNFillingCheck.mq5` trước và truyền đúng `--build`.
+Lượt `filling-20261024-r1`, hai bản `b1-filling-01`, `b3-filling-01`
+khớp 3.096 ca mỗi bot. Chỉ cấp dữ liệu thuộc tính mã giá, không gửi
+lệnh; chặn mọi lần ghi biến chung ngoài 4 trường đã biết.
+[Phạm vi](../PHAN-TICH-KIEU-KHOP-LENH-BOT-1-3.md).
+
+## Kiểm bước chuẩn bị yêu cầu lệnh chờ
+
+`kiem-tao-yeu-cau-cho-bot-1-3.py MODE BOT RUN [--build BUILD]`, với
+`MODE`: `prepare`, `original`, `mql5`, `compare`. Biên dịch nguồn kiểm
+`BotNPendingRequestCheck.mq5`, rồi truyền biên nhận qua `--build`.
+Đầu ra ở `bot-cua-toi-N/bang-chung/kiem-tao-yeu-cau-cho/RUN/`.
+Lượt `pending-20261024-r2`, bản `bN-pending-request-01`: 1.607 ca mỗi
+bot khớp. Lượt `pending-protection-20261024-r1`: 16 ca bổ sung khớp.
+
+Bộ kiểm chặn mã gốc ngay trước hàm gửi `0x950`, kiểm đủ 35 trường đã
+đo bằng nguồn biết trước, số nhận diện/cách khớp và thứ tự lời gọi.
+`true` chỉ nghĩa là tới bước gửi; không hề gửi lệnh trong lượt này.
+Lượt bot 1 `pending-20261024-r1` lỗi khởi tạo bố cục trong lớp, giữ
+bằng chứng riêng, không dùng làm kết quả đạt.
+
+`kiem-thu-tu-truong-lenh.py <thư mục lượt đối chứng>` đọc bản chụp đã
+kiểm mã băm, đối chiếu đủ 35 giá trị đánh dấu và ghi `trade-layout.json`.
+Lượt trong lớp: `doi-chung-mt5/thu-tu-truong-lenh-class-20261024/layout-class-r1`.
+Các biến đứng riêng có khoảng đệm khác, không được dùng nhầm khoảng
+cách giữa chúng cho trường trong lớp.
+
+## Giao một phần phân tích cho Claude
+
+`chay-claude-phan-tich.ps1 -Prompt <tệp trong dự án> -Run <tên mới>`
+mở một phiên Claude Opus 5.5 Max, bật Ultracode, chỉ cho đọc tệp.
+Nội dung được truyền qua tệp, không ghép vào câu lệnh. Chạy ẩn và trả
+mã tiến trình; kết quả ở `.local/claude-parallel-YYYYMMDD/RUN/`.
+`-Resume <mã phiên>` nối lại lịch sử; chỉ dùng khi tiến trình cũ đã
+dừng. `-WaitForExit` giữ lệnh chờ để công cụ có thể theo dõi đúng phiên.
+Không có phản hồi thì chưa có đánh giá. Ultracode được yêu cầu bật
+không có nghĩa đã sinh tác tử phụ; phải kiểm kết quả và quyền thực tế.
+
 ## Bộ kiểm giờ theo mùa
 
 `kiem-gio-mua-he-bot-1-3.py MODE BOT RUN [--build BUILD]` kiểm nguyên
@@ -299,6 +342,14 @@ Lượt `dst-20261024-r1`, bản dựng `b1-american-dst-01` và
 lời gọi. Không chứng minh lỗi đổi ngày đầu tiên với vùng chưa khởi
 tạo, lỗi cấp bộ nhớ hoặc toàn bộ P26. [Phạm vi](../PHAN-TICH-GIO-MUA-HE-BOT-1-3.md).
 
+`kiem-ma-bien-dich-gio-mua-he.py BOT RUN PROBE_RUN` dùng bản chụp thư
+viện có nguồn để chạy lệnh máy của nguồn giờ theo mùa gọi MT5 trực
+tiếp, không có các hàm thay thế của chương trình kiểm. Dùng lại đầu
+vào và kết quả API đã đo từ lượt `RUN`; so đủ kết quả và dấu vết.
+Không mở MT5 hoặc gọi giao dịch. Chỉ bỏ thông báo đánh dấu đầu hàm
+của chương trình đối chứng. Hai lượt `dst-20261024-r1` đã khớp đủ
+4.737 ca mỗi bot; giới hạn đầu vào/lỗi của lượt đó vẫn giữ nguyên.
+
 ## Đối chứng lời gọi MT5 và phân tích nạp vốn
 
 - `doi-chung-loi-goi-bo-sung.py NEW_RUN`: biên dịch thư viện có nguồn
@@ -306,6 +357,9 @@ tạo, lỗi cấp bộ nhớ hoặc toàn bộ P26. [Phạm vi](../PHAN-TICH-GI
   `Anchor`, chụp mã rồi nối các địa chỉ còn thiếu. Chạy máy thử riêng
   trên demo đã được phép; không thực thi các hàm xóa/lịch tin/hộp thoại.
   Lượt đạt: `api-extra-r2`. Thư mục lượt cũ không bị ghi đè.
+  Có thể truyền `--area <thư mục trong doi-chung-mt5>` có bộ nguồn
+  `source/RecoveryApiLibrary.mq5` và `source/RecoveryApiDriver.mq5`;
+  chép cả tệp `.mqh` cạnh chúng. Giữ nguyên nguồn/bằng chứng cũ.
 - `phan-tich-khoi-tao-von-bot-1-3.py BOT NEW_RUN`: chạy riêng đoạn nạp
   vốn trong mã gốc, so với bảng luật phân tích; không mở MT5. Cấp dữ
   liệu cho tài khoản/kho lưu/đồng hồ và phép đổi số thành chuỗi; các

@@ -1,0 +1,12 @@
+{
+  "cases": 3096,
+  "matched": 3096,
+  "failed": 0,
+  "first_failures": [],
+  "hashes": {
+    "cases.bin": "8b75ac29751bfd723fcd848859ed25e9f206db454d5e6db44eaba40c381b9efa",
+    "original-results.bin": "bc271ef42ef7e76baff7469caffbfb96066c0a0deadccbe688643a79798aa30e",
+    "mql5-results.bin": "bc271ef42ef7e76baff7469caffbfb96066c0a0deadccbe688643a79798aa30e"
+  },
+  "scope": "Complete filling-policy selection: low-byte return, four state fields and ordered symbol properties/message arguments; original write guard rejects any other global mutation. Terminal read results supplied, no actual request or whole EA tested."
+}

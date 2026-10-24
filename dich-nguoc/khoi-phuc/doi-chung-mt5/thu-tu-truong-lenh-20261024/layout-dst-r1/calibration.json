@@ -1,0 +1,1272 @@
+{
+  "engine_sha256": "5033d9d45d669cebd735e8a6be20b54d74b75274f885c9a0e48e52d872104efb",
+  "engine_base": "0x7ff7fe950000",
+  "code_sha256": "c2206e6210fe0c7cab5a9290d716a871a997c2674197b4251b2dfb2afe43d7a9",
+  "data_sha256": "479ab833f55e27a72846a30965a71ca336e3ddb3b4c140b27a083c41b88d6a73",
+  "functions": [
+    {
+      "rva": "0x0",
+      "end_rva": "0x57",
+      "markers": [],
+      "calls": [
+        {
+          "site_rva": "0x3d",
+          "target_rva": "0x7d1200",
+          "rdx_constant": null,
+          "r8_constant": 140703113024000,
+          "transfer": "call"
+        }
+      ]
+    },
+    {
+      "rva": "0x60",
+      "end_rva": "0x278",
+      "markers": [],
+      "calls": [
+        {
+          "site_rva": "0xa3",
+          "target_rva": "0x7d1190",
+          "rdx_constant": null,
+          "r8_constant": null,
+          "transfer": "call"
+        },
+        {
+          "site_rva": "0x116",
+          "target_rva": "0x7d1200",
+          "rdx_constant": null,
+          "r8_constant": 140703113024000,
+          "transfer": "call"
+        },
+        {
+          "site_rva": "0x16d",
+          "target_rva": "0x7d1200",
+          "rdx_constant": null,
+          "r8_constant": 2224092174696,
+          "transfer": "call"
+        },
+        {
+          "site_rva": "0x246",
+          "target_rva": "0x7d1200",
+          "rdx_constant": null,
+          "r8_constant": null,
+          "transfer": "jmp"
+        },
+        {
+          "site_rva": "0x275",
+          "target_rva": "0x395c00",
+          "rdx_constant": 505,
+          "r8_constant": null,
+          "transfer": "call"
+        }
+      ]
+    },
+    {
+      "rva": "0x280",
+      "end_rva": "0x345",
+      "markers": [],
+      "calls": [
+        {
+          "site_rva": "0x31f",
+          "target_rva": "0x7b6ef0",
+          "rdx_constant": null,
+          "r8_constant": null,
+          "transfer": "call"
+        }
+      ]
+    },
+    {
+      "rva": "0x360",
+      "end_rva": "0x3e5",
+      "markers": [],
+      "calls": []
+    },
+    {
+      "rva": "0x3f0",
+      "end_rva": "0x438",
+      "markers": [],
+      "calls": []
+    },
+    {
+      "rva": "0x440",
+      "end_rva": "0x468",
+      "markers": [],
+      "calls": []
+    },
+    {
+      "rva": "0x470",
+      "end_rva": "0x4a2",
+      "markers": [],
+      "calls": []
+    },
+    {
+      "rva": "0x4b0",
+      "end_rva": "0x80e",
+      "markers": [
+        "Anchor"
+      ],
+      "calls": [
+        {
+          "site_rva": "0x802",
+          "target_rva": "0x7b49f0",
+          "rdx_constant": 2,
+          "r8_constant": 1,
+          "transfer": "call"
+        }
+      ]
+    },
+    {
+      "rva": "0x810",
+      "end_rva": "0x879",
+      "markers": [
+        "GlobalVariableGet"
+      ],
+      "calls": [
+        {
+          "site_rva": "0x850",
+          "target_rva": "0x7b49f0",
+          "rdx_constant": 2,
+          "r8_constant": 1,
+          "transfer": "call"
+        },
+        {
+          "site_rva": "0x862",
+          "target_rva": "0x7bdbe0",
+          "rdx_constant": null,
+          "r8_constant": null,
+          "transfer": "call"
+        }
+      ]
+    },
+    {
+      "rva": "0x880",
+      "end_rva": "0x8ea",
+      "markers": [
+        "GlobalVariableGetRef"
+      ],
+      "calls": [
+        {
+          "site_rva": "0x8c0",
+          "target_rva": "0x7b49f0",
+          "rdx_constant": 2,
+          "r8_constant": 1,
+          "transfer": "call"
+        },
+        {
+          "site_rva": "0x8e0",
+          "target_rva": "0x7bdc40",
+          "rdx_constant": null,
+          "r8_constant": null,
+          "transfer": "call"
+        }
+      ]
+    },
+    {
+      "rva": "0x8f0",
+      "end_rva": "0x95b",
+      "markers": [
+        "GlobalVariableSet"
+      ],
+      "calls": [
+        {
+          "site_rva": "0x938",
+          "target_rva": "0x7b49f0",
+          "rdx_constant": 2,
+          "r8_constant": 1,
+          "transfer": "call"
+        },
+        {
+          "site_rva": "0x958",
+          "target_rva": "0x7bdc90",
+          "rdx_constant": null,
+          "r8_constant": null,
+          "transfer": "jmp"
+        }
+      ]
+    },
+    {
+      "rva": "0x960",
+      "end_rva": "0x9bb",
+      "markers": [
+        "GlobalVariableCheck"
+      ],
+      "calls": [
+        {
+          "site_rva": "0x9a0",
+          "target_rva": "0x7b49f0",
+          "rdx_constant": 2,
+          "r8_constant": 1,
+          "transfer": "call"
+        },
+        {
+          "site_rva": "0x9b8",
+          "target_rva": "0x7bdda0",
+          "rdx_constant": null,
+          "r8_constant": null,
+          "transfer": "jmp"
+        }
+      ]
+    },
+    {
+      "rva": "0x9c0",
+      "end_rva": "0xa1b",
+      "markers": [
+        "GlobalVariableDel"
+      ],
+      "calls": [
+        {
+          "site_rva": "0xa00",
+          "target_rva": "0x7b49f0",
+          "rdx_constant": 2,
+          "r8_constant": 1,
+          "transfer": "call"
+        },
+        {
+          "site_rva": "0xa18",
+          "target_rva": "0x7bdde0",
+          "rdx_constant": null,
+          "r8_constant": null,
+          "transfer": "jmp"
+        }
+      ]
+    },
+    {
+      "rva": "0xa20",
+      "end_rva": "0xa87",
+      "markers": [
+        "ObjectsDeleteAll"
+      ],
+      "calls": [
+        {
+          "site_rva": "0xa60",
+          "target_rva": "0x7b49f0",
+          "rdx_constant": 2,
+          "r8_constant": 1,
+          "transfer": "call"
+        },
+        {
+          "site_rva": "0xa84",
+          "target_rva": "0x7c4d40",
+          "rdx_constant": null,
+          "r8_constant": 4294967295,
+          "transfer": "jmp"
+        }
+      ]
+    },
+    {
+      "rva": "0xa90",
+      "end_rva": "0xb02",
+      "markers": [
+        "ObjectsDeleteAllPrefix"
+      ],
+      "calls": [
+        {
+          "site_rva": "0xad4",
+          "target_rva": "0x7b49f0",
+          "rdx_constant": 2,
+          "r8_constant": 1,
+          "transfer": "call"
+        },
+        {
+          "site_rva": "0xaf7",
+          "target_rva": "0x7c4da0",
+          "rdx_constant": null,
+          "r8_constant": null,
+          "transfer": "call"
+        }
+      ]
+    },
+    {
+      "rva": "0xb10",
+      "end_rva": "0xb78",
+      "markers": [
+        "TesterStatistics"
+      ],
+      "calls": [
+        {
+          "site_rva": "0xb50",
+          "target_rva": "0x7b49f0",
+          "rdx_constant": 2,
+          "r8_constant": 1,
+          "transfer": "call"
+        },
+        {
+          "site_rva": "0xb61",
+          "target_rva": "0x7b2230",
+          "rdx_constant": null,
+          "r8_constant": null,
+          "transfer": "call"
+        }
+      ]
+    },
+    {
+      "rva": "0xb80",
+      "end_rva": "0xbe6",
+      "markers": [
+        "MessageBox"
+      ],
+      "calls": [
+        {
+          "site_rva": "0xbc4",
+          "target_rva": "0x7b49f0",
+          "rdx_constant": 2,
+          "r8_constant": 1,
+          "transfer": "call"
+        },
+        {
+          "site_rva": "0xbe3",
+          "target_rva": "0x7b16a0",
+          "rdx_constant": null,
+          "r8_constant": null,
+          "transfer": "jmp"
+        }
+      ]
+    },
+    {
+      "rva": "0xbf0",
+      "end_rva": "0xcca",
+      "markers": [
+        "CalendarEventByCountry"
+      ],
+      "calls": [
+        {
+          "site_rva": "0xc31",
+          "target_rva": "0x7b49f0",
+          "rdx_constant": 2,
+          "r8_constant": 1,
+          "transfer": "call"
+        },
+        {
+          "site_rva": "0xcad",
+          "target_rva": "0x380260",
+          "rdx_constant": null,
+          "r8_constant": null,
+          "transfer": "call"
+        }
+      ]
+    },
+    {
+      "rva": "0xcd0",
+      "end_rva": "0xdaa",
+      "markers": [
+        "CalendarEventByCurrency"
+      ],
+      "calls": [
+        {
+          "site_rva": "0xd11",
+          "target_rva": "0x7b49f0",
+          "rdx_constant": 2,
+          "r8_constant": 1,
+          "transfer": "call"
+        },
+        {
+          "site_rva": "0xd8d",
+          "target_rva": "0x3802f0",
+          "rdx_constant": null,
+          "r8_constant": null,
+          "transfer": "call"
+        }
+      ]
+    },
+    {
+      "rva": "0xdb0",
+      "end_rva": "0xe9a",
+      "markers": [
+        "CalendarValueHistoryByEvent"
+      ],
+      "calls": [
+        {
+          "site_rva": "0xdfa",
+          "target_rva": "0x7b49f0",
+          "rdx_constant": 2,
+          "r8_constant": 1,
+          "transfer": "call"
+        },
+        {
+          "site_rva": "0xe78",
+          "target_rva": "0x380440",
+          "rdx_constant": null,
+          "r8_constant": null,
+          "transfer": "call"
+        }
+      ]
+    },
+    {
+      "rva": "0xea0",
+      "end_rva": "0xf9e",
+      "markers": [
+        "CalendarValueHistory"
+      ],
+      "calls": [
+        {
+          "site_rva": "0xef0",
+          "target_rva": "0x7b49f0",
+          "rdx_constant": 2,
+          "r8_constant": 1,
+          "transfer": "call"
+        },
+        {
+          "site_rva": "0xf79",
+          "target_rva": "0x380550",
+          "rdx_constant": null,
+          "r8_constant": null,
+          "transfer": "call"
+        }
+      ]
+    },
+    {
+      "rva": "0xfa0",
+      "end_rva": "0x105d",
+      "markers": [
+        "CalendarEventById"
+      ],
+      "calls": [
+        {
+          "site_rva": "0xfe4",
+          "target_rva": "0x7b49f0",
+          "rdx_constant": 2,
+          "r8_constant": 1,
+          "transfer": "call"
+        },
+        {
+          "site_rva": "0x102f",
+          "target_rva": "0x380380",
+          "rdx_constant": null,
+          "r8_constant": null,
+          "transfer": "call"
+        }
+      ]
+    },
+    {
+      "rva": "0x1060",
+      "end_rva": "0x1143",
+      "markers": [
+        "CalendarCountryById"
+      ],
+      "calls": [
+        {
+          "site_rva": "0x10a4",
+          "target_rva": "0x7b49f0",
+          "rdx_constant": 2,
+          "r8_constant": 1,
+          "transfer": "call"
+        },
+        {
+          "site_rva": "0x1107",
+          "target_rva": "0x3803c0",
+          "rdx_constant": null,
+          "r8_constant": null,
+          "transfer": "call"
+        }
+      ]
+    },
+    {
+      "rva": "0x1150",
+      "end_rva": "0x11b7",
+      "markers": [
+        "CalendarValueById"
+      ],
+      "calls": [
+        {
+          "site_rva": "0x1193",
+          "target_rva": "0x7b49f0",
+          "rdx_constant": 2,
+          "r8_constant": 1,
+          "transfer": "call"
+        },
+        {
+          "site_rva": "0x11aa",
+          "target_rva": "0x380400",
+          "rdx_constant": null,
+          "r8_constant": null,
+          "transfer": "call"
+        }
+      ]
+    },
+    {
+      "rva": "0x11c0",
+      "end_rva": "0x1456",
+      "markers": [
+        "StringToLower"
+      ],
+      "calls": [
+        {
+          "site_rva": "0x1212",
+          "target_rva": "0x7b49f0",
+          "rdx_constant": 2,
+          "r8_constant": 1,
+          "transfer": "call"
+        },
+        {
+          "site_rva": "0x1299",
+          "target_rva": "0x7d1190",
+          "rdx_constant": null,
+          "r8_constant": null,
+          "transfer": "call"
+        },
+        {
+          "site_rva": "0x1351",
+          "target_rva": "0x7d1190",
+          "rdx_constant": null,
+          "r8_constant": null,
+          "transfer": "call"
+        },
+        {
+          "site_rva": "0x13d7",
+          "target_rva": "0x7d1200",
+          "rdx_constant": null,
+          "r8_constant": null,
+          "transfer": "call"
+        },
+        {
+          "site_rva": "0x13e8",
+          "target_rva": "0xacc3a0",
+          "rdx_constant": null,
+          "r8_constant": null,
+          "transfer": "call"
+        }
+      ]
+    },
+    {
+      "rva": "0x1460",
+      "end_rva": "0x1945",
+      "markers": [
+        "AmericanDST1"
+      ],
+      "calls": [
+        {
+          "site_rva": "0x14c6",
+          "target_rva": "0x7b49f0",
+          "rdx_constant": 2,
+          "r8_constant": 1,
+          "transfer": "call"
+        },
+        {
+          "site_rva": "0x1521",
+          "target_rva": "0x7d1c40",
+          "rdx_constant": null,
+          "r8_constant": null,
+          "transfer": "call"
+        },
+        {
+          "site_rva": "0x153c",
+          "target_rva": "0x7d1f60",
+          "rdx_constant": null,
+          "r8_constant": null,
+          "transfer": "call"
+        },
+        {
+          "site_rva": "0x15c0",
+          "target_rva": "0xaa9970",
+          "rdx_constant": null,
+          "r8_constant": null,
+          "transfer": "call"
+        },
+        {
+          "site_rva": "0x15e8",
+          "target_rva": "0xaa9970",
+          "rdx_constant": null,
+          "r8_constant": null,
+          "transfer": "call"
+        },
+        {
+          "site_rva": "0x16c2",
+          "target_rva": "0x7b49f0",
+          "rdx_constant": 372,
+          "r8_constant": 3,
+          "transfer": "call"
+        },
+        {
+          "site_rva": "0x170d",
+          "target_rva": "0xaa9970",
+          "rdx_constant": null,
+          "r8_constant": null,
+          "transfer": "call"
+        },
+        {
+          "site_rva": "0x172a",
+          "target_rva": "0xaa9970",
+          "rdx_constant": null,
+          "r8_constant": null,
+          "transfer": "call"
+        },
+        {
+          "site_rva": "0x17ed",
+          "target_rva": "0x7b49f0",
+          "rdx_constant": 372,
+          "r8_constant": 3,
+          "transfer": "call"
+        },
+        {
+          "site_rva": "0x182d",
+          "target_rva": "0x7b49f0",
+          "rdx_constant": 372,
+          "r8_constant": 3,
+          "transfer": "call"
+        },
+        {
+          "site_rva": "0x184a",
+          "target_rva": "0x7cd370",
+          "rdx_constant": null,
+          "r8_constant": null,
+          "transfer": "call"
+        },
+        {
+          "site_rva": "0x1855",
+          "target_rva": "0x7cd370",
+          "rdx_constant": null,
+          "r8_constant": null,
+          "transfer": "call"
+        }
+      ]
+    },
+    {
+      "rva": "0x1950",
+      "end_rva": "0x1e35",
+      "markers": [
+        "AmericanDST3"
+      ],
+      "calls": [
+        {
+          "site_rva": "0x19b6",
+          "target_rva": "0x7b49f0",
+          "rdx_constant": 2,
+          "r8_constant": 1,
+          "transfer": "call"
+        },
+        {
+          "site_rva": "0x1a11",
+          "target_rva": "0x7d1c40",
+          "rdx_constant": null,
+          "r8_constant": null,
+          "transfer": "call"
+        },
+        {
+          "site_rva": "0x1a2c",
+          "target_rva": "0x7d1f60",
+          "rdx_constant": null,
+          "r8_constant": null,
+          "transfer": "call"
+        },
+        {
+          "site_rva": "0x1ab0",
+          "target_rva": "0xaa9970",
+          "rdx_constant": null,
+          "r8_constant": null,
+          "transfer": "call"
+        },
+        {
+          "site_rva": "0x1ad8",
+          "target_rva": "0xaa9970",
+          "rdx_constant": null,
+          "r8_constant": null,
+          "transfer": "call"
+        },
+        {
+          "site_rva": "0x1bb2",
+          "target_rva": "0x7b49f0",
+          "rdx_constant": 372,
+          "r8_constant": 3,
+          "transfer": "call"
+        },
+        {
+          "site_rva": "0x1bfd",
+          "target_rva": "0xaa9970",
+          "rdx_constant": null,
+          "r8_constant": null,
+          "transfer": "call"
+        },
+        {
+          "site_rva": "0x1c1a",
+          "target_rva": "0xaa9970",
+          "rdx_constant": null,
+          "r8_constant": null,
+          "transfer": "call"
+        },
+        {
+          "site_rva": "0x1cdd",
+          "target_rva": "0x7b49f0",
+          "rdx_constant": 372,
+          "r8_constant": 3,
+          "transfer": "call"
+        },
+        {
+          "site_rva": "0x1d1d",
+          "target_rva": "0x7b49f0",
+          "rdx_constant": 372,
+          "r8_constant": 3,
+          "transfer": "call"
+        },
+        {
+          "site_rva": "0x1d3a",
+          "target_rva": "0x7cd370",
+          "rdx_constant": null,
+          "r8_constant": null,
+          "transfer": "call"
+        },
+        {
+          "site_rva": "0x1d45",
+          "target_rva": "0x7cd370",
+          "rdx_constant": null,
+          "r8_constant": null,
+          "transfer": "call"
+        }
+      ]
+    }
+  ],
+  "runtime_function_table": [
+    {
+      "offset": 4404,
+      "begin": 0,
+      "end": 87,
+      "unwind": 12288
+    },
+    {
+      "offset": 4416,
+      "begin": 96,
+      "end": 632,
+      "unwind": 12296
+    },
+    {
+      "offset": 4428,
+      "begin": 640,
+      "end": 837,
+      "unwind": 12312
+    },
+    {
+      "offset": 4440,
+      "begin": 864,
+      "end": 997,
+      "unwind": 12332
+    },
+    {
+      "offset": 4452,
+      "begin": 1008,
+      "end": 1080,
+      "unwind": 12344
+    },
+    {
+      "offset": 4464,
+      "begin": 1088,
+      "end": 1128,
+      "unwind": 12364
+    },
+    {
+      "offset": 4476,
+      "begin": 1136,
+      "end": 1186,
+      "unwind": 12376
+    },
+    {
+      "offset": 4488,
+      "begin": 1200,
+      "end": 2062,
+      "unwind": 12400
+    },
+    {
+      "offset": 4500,
+      "begin": 2064,
+      "end": 2169,
+      "unwind": 12428
+    },
+    {
+      "offset": 4512,
+      "begin": 2176,
+      "end": 2282,
+      "unwind": 12452
+    },
+    {
+      "offset": 4524,
+      "begin": 2288,
+      "end": 2395,
+      "unwind": 12476
+    },
+    {
+      "offset": 4536,
+      "begin": 2400,
+      "end": 2491,
+      "unwind": 12504
+    },
+    {
+      "offset": 4548,
+      "begin": 2496,
+      "end": 2587,
+      "unwind": 12528
+    },
+    {
+      "offset": 4560,
+      "begin": 2592,
+      "end": 2695,
+      "unwind": 12552
+    },
+    {
+      "offset": 4572,
+      "begin": 2704,
+      "end": 2818,
+      "unwind": 12576
+    },
+    {
+      "offset": 4584,
+      "begin": 2832,
+      "end": 2936,
+      "unwind": 12600
+    },
+    {
+      "offset": 4596,
+      "begin": 2944,
+      "end": 3046,
+      "unwind": 12624
+    },
+    {
+      "offset": 4608,
+      "begin": 3056,
+      "end": 3274,
+      "unwind": 12648
+    },
+    {
+      "offset": 4620,
+      "begin": 3280,
+      "end": 3498,
+      "unwind": 12676
+    },
+    {
+      "offset": 4632,
+      "begin": 3504,
+      "end": 3738,
+      "unwind": 12704
+    },
+    {
+      "offset": 4644,
+      "begin": 3744,
+      "end": 3998,
+      "unwind": 12736
+    },
+    {
+      "offset": 4656,
+      "begin": 4000,
+      "end": 4189,
+      "unwind": 12768
+    },
+    {
+      "offset": 4668,
+      "begin": 4192,
+      "end": 4419,
+      "unwind": 12800
+    },
+    {
+      "offset": 4680,
+      "begin": 4432,
+      "end": 4535,
+      "unwind": 12832
+    },
+    {
+      "offset": 4692,
+      "begin": 4544,
+      "end": 5206,
+      "unwind": 12856
+    },
+    {
+      "offset": 4704,
+      "begin": 5216,
+      "end": 6469,
+      "unwind": 12888
+    },
+    {
+      "offset": 4716,
+      "begin": 6480,
+      "end": 7733,
+      "unwind": 12940
+    }
+  ],
+  "source_markers_verified": [
+    "AmericanDST1",
+    "AmericanDST3",
+    "Anchor",
+    "CalendarCountryById",
+    "CalendarEventByCountry",
+    "CalendarEventByCurrency",
+    "CalendarEventById",
+    "CalendarValueById",
+    "CalendarValueHistory",
+    "CalendarValueHistoryByEvent",
+    "GlobalVariableCheck",
+    "GlobalVariableDel",
+    "GlobalVariableGet",
+    "GlobalVariableGetRef",
+    "GlobalVariableSet",
+    "MessageBox",
+    "ObjectsDeleteAll",
+    "ObjectsDeleteAllPrefix",
+    "StringToLower",
+    "TesterStatistics"
+  ],
+  "bots": [
+    {
+      "bot": 1,
+      "inventory_sha256": "5520fa609abe1c689c33b4a00d5de57047c3ec8d3a8ac4e6bf09f0bf746272fe",
+      "addresses": [
+        {
+          "original_address": "0x7ff6842a0260",
+          "engine_rva": "0x380260",
+          "known_source_sites": [
+            {
+              "source_marker": "CalendarEventByCountry",
+              "function_rva": "0xbf0",
+              "call": {
+                "site_rva": "0xcad",
+                "target_rva": "0x380260",
+                "rdx_constant": null,
+                "r8_constant": null,
+                "transfer": "call"
+              }
+            }
+          ],
+          "mapped": true
+        },
+        {
+          "original_address": "0x7ff6842a02f0",
+          "engine_rva": "0x3802f0",
+          "known_source_sites": [
+            {
+              "source_marker": "CalendarEventByCurrency",
+              "function_rva": "0xcd0",
+              "call": {
+                "site_rva": "0xd8d",
+                "target_rva": "0x3802f0",
+                "rdx_constant": null,
+                "r8_constant": null,
+                "transfer": "call"
+              }
+            }
+          ],
+          "mapped": true
+        },
+        {
+          "original_address": "0x7ff6842a0440",
+          "engine_rva": "0x380440",
+          "known_source_sites": [
+            {
+              "source_marker": "CalendarValueHistoryByEvent",
+              "function_rva": "0xdb0",
+              "call": {
+                "site_rva": "0xe78",
+                "target_rva": "0x380440",
+                "rdx_constant": null,
+                "r8_constant": null,
+                "transfer": "call"
+              }
+            }
+          ],
+          "mapped": true
+        },
+        {
+          "original_address": "0x7ff6846d16a0",
+          "engine_rva": "0x7b16a0",
+          "known_source_sites": [
+            {
+              "source_marker": "MessageBox",
+              "function_rva": "0xb80",
+              "call": {
+                "site_rva": "0xbe3",
+                "target_rva": "0x7b16a0",
+                "rdx_constant": null,
+                "r8_constant": null,
+                "transfer": "jmp"
+              }
+            }
+          ],
+          "mapped": true
+        },
+        {
+          "original_address": "0x7ff6846d2230",
+          "engine_rva": "0x7b2230",
+          "known_source_sites": [
+            {
+              "source_marker": "TesterStatistics",
+              "function_rva": "0xb10",
+              "call": {
+                "site_rva": "0xb61",
+                "target_rva": "0x7b2230",
+                "rdx_constant": null,
+                "r8_constant": null,
+                "transfer": "call"
+              }
+            }
+          ],
+          "mapped": true
+        },
+        {
+          "original_address": "0x7ff6846ddbe0",
+          "engine_rva": "0x7bdbe0",
+          "known_source_sites": [
+            {
+              "source_marker": "GlobalVariableGet",
+              "function_rva": "0x810",
+              "call": {
+                "site_rva": "0x862",
+                "target_rva": "0x7bdbe0",
+                "rdx_constant": null,
+                "r8_constant": null,
+                "transfer": "call"
+              }
+            }
+          ],
+          "mapped": true
+        },
+        {
+          "original_address": "0x7ff6846ddc90",
+          "engine_rva": "0x7bdc90",
+          "known_source_sites": [
+            {
+              "source_marker": "GlobalVariableSet",
+              "function_rva": "0x8f0",
+              "call": {
+                "site_rva": "0x958",
+                "target_rva": "0x7bdc90",
+                "rdx_constant": null,
+                "r8_constant": null,
+                "transfer": "jmp"
+              }
+            }
+          ],
+          "mapped": true
+        },
+        {
+          "original_address": "0x7ff6846ddda0",
+          "engine_rva": "0x7bdda0",
+          "known_source_sites": [
+            {
+              "source_marker": "GlobalVariableCheck",
+              "function_rva": "0x960",
+              "call": {
+                "site_rva": "0x9b8",
+                "target_rva": "0x7bdda0",
+                "rdx_constant": null,
+                "r8_constant": null,
+                "transfer": "jmp"
+              }
+            }
+          ],
+          "mapped": true
+        },
+        {
+          "original_address": "0x7ff6846e4d40",
+          "engine_rva": "0x7c4d40",
+          "known_source_sites": [
+            {
+              "source_marker": "ObjectsDeleteAll",
+              "function_rva": "0xa20",
+              "call": {
+                "site_rva": "0xa84",
+                "target_rva": "0x7c4d40",
+                "rdx_constant": null,
+                "r8_constant": 4294967295,
+                "transfer": "jmp"
+              }
+            }
+          ],
+          "mapped": true
+        },
+        {
+          "original_address": "0x7ff6849ec3a0",
+          "engine_rva": "0xacc3a0",
+          "known_source_sites": [
+            {
+              "source_marker": "StringToLower",
+              "function_rva": "0x11c0",
+              "call": {
+                "site_rva": "0x13e8",
+                "target_rva": "0xacc3a0",
+                "rdx_constant": null,
+                "r8_constant": null,
+                "transfer": "call"
+              }
+            }
+          ],
+          "mapped": true
+        }
+      ],
+      "mapped": 10,
+      "remaining": 0
+    },
+    {
+      "bot": 3,
+      "inventory_sha256": "0023ba3b41af15576359138259d9e9720d3f3f1efc47b9e5d36f874358e1ecc6",
+      "addresses": [
+        {
+          "original_address": "0x7ff6842a0260",
+          "engine_rva": "0x380260",
+          "known_source_sites": [
+            {
+              "source_marker": "CalendarEventByCountry",
+              "function_rva": "0xbf0",
+              "call": {
+                "site_rva": "0xcad",
+                "target_rva": "0x380260",
+                "rdx_constant": null,
+                "r8_constant": null,
+                "transfer": "call"
+              }
+            }
+          ],
+          "mapped": true
+        },
+        {
+          "original_address": "0x7ff6842a02f0",
+          "engine_rva": "0x3802f0",
+          "known_source_sites": [
+            {
+              "source_marker": "CalendarEventByCurrency",
+              "function_rva": "0xcd0",
+              "call": {
+                "site_rva": "0xd8d",
+                "target_rva": "0x3802f0",
+                "rdx_constant": null,
+                "r8_constant": null,
+                "transfer": "call"
+              }
+            }
+          ],
+          "mapped": true
+        },
+        {
+          "original_address": "0x7ff6842a0440",
+          "engine_rva": "0x380440",
+          "known_source_sites": [
+            {
+              "source_marker": "CalendarValueHistoryByEvent",
+              "function_rva": "0xdb0",
+              "call": {
+                "site_rva": "0xe78",
+                "target_rva": "0x380440",
+                "rdx_constant": null,
+                "r8_constant": null,
+                "transfer": "call"
+              }
+            }
+          ],
+          "mapped": true
+        },
+        {
+          "original_address": "0x7ff6846d16a0",
+          "engine_rva": "0x7b16a0",
+          "known_source_sites": [
+            {
+              "source_marker": "MessageBox",
+              "function_rva": "0xb80",
+              "call": {
+                "site_rva": "0xbe3",
+                "target_rva": "0x7b16a0",
+                "rdx_constant": null,
+                "r8_constant": null,
+                "transfer": "jmp"
+              }
+            }
+          ],
+          "mapped": true
+        },
+        {
+          "original_address": "0x7ff6846ddbe0",
+          "engine_rva": "0x7bdbe0",
+          "known_source_sites": [
+            {
+              "source_marker": "GlobalVariableGet",
+              "function_rva": "0x810",
+              "call": {
+                "site_rva": "0x862",
+                "target_rva": "0x7bdbe0",
+                "rdx_constant": null,
+                "r8_constant": null,
+                "transfer": "call"
+              }
+            }
+          ],
+          "mapped": true
+        },
+        {
+          "original_address": "0x7ff6846ddc90",
+          "engine_rva": "0x7bdc90",
+          "known_source_sites": [
+            {
+              "source_marker": "GlobalVariableSet",
+              "function_rva": "0x8f0",
+              "call": {
+                "site_rva": "0x958",
+                "target_rva": "0x7bdc90",
+                "rdx_constant": null,
+                "r8_constant": null,
+                "transfer": "jmp"
+              }
+            }
+          ],
+          "mapped": true
+        },
+        {
+          "original_address": "0x7ff6846ddda0",
+          "engine_rva": "0x7bdda0",
+          "known_source_sites": [
+            {
+              "source_marker": "GlobalVariableCheck",
+              "function_rva": "0x960",
+              "call": {
+                "site_rva": "0x9b8",
+                "target_rva": "0x7bdda0",
+                "rdx_constant": null,
+                "r8_constant": null,
+                "transfer": "jmp"
+              }
+            }
+          ],
+          "mapped": true
+        },
+        {
+          "original_address": "0x7ff6846e4d40",
+          "engine_rva": "0x7c4d40",
+          "known_source_sites": [
+            {
+              "source_marker": "ObjectsDeleteAll",
+              "function_rva": "0xa20",
+              "call": {
+                "site_rva": "0xa84",
+                "target_rva": "0x7c4d40",
+                "rdx_constant": null,
+                "r8_constant": 4294967295,
+                "transfer": "jmp"
+              }
+            }
+          ],
+          "mapped": true
+        },
+        {
+          "original_address": "0x7ff6849ec3a0",
+          "engine_rva": "0xacc3a0",
+          "known_source_sites": [
+            {
+              "source_marker": "StringToLower",
+              "function_rva": "0x11c0",
+              "call": {
+                "site_rva": "0x13e8",
+                "target_rva": "0xacc3a0",
+                "rdx_constant": null,
+                "r8_constant": null,
+                "transfer": "call"
+              }
+            }
+          ],
+          "mapped": true
+        }
+      ],
+      "mapped": 9,
+      "remaining": 0
+    }
+  ],
+  "scope": "Known-source call-site calibration only. StringToLower identifies an internal helper used by that operation. No original EA branches or full business behavior are verified.",
+  "tool_sha256": "0c51df3e797d37f30b1828add80c08f947b5a31f590e97a71879378b7e6fcfa0",
+  "capture_tool_sha256": "1fe88e82434722a6c9c58d7b200ef4a0b36c8cde2106e5d41f6ccc7a300391d0",
+  "source_sha256": {
+    "RecoveryApiDriver.mq5": "29e5e31f76870e85e3f5b8939449b44ffbd7bc1c2f4f278c41b2a69a3984d2df",
+    "RecoveryApiLibrary.mq5": "9d1e2f0ba746298fe9d6f594092ac2ae528ddf81b5c80de9a9f5166416d5d526",
+    "TradeLayoutSeed.mqh": "96711ce6ab650c35c875ed90a268bea90c039031070fd9541b81e280a357bd95"
+  },
+  "runner_verified": true,
+  "only_anchor_executed": true
+}

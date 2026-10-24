@@ -19,9 +19,9 @@ phải được phân tích tiếp trước khi viết luật tương ứng.
 
 Danh sách đầy đủ từng hàm và từng dòng cài đặt:
 
-- [Bot 1](ban-do-bot-1-3/luot-20261023-r5/bot-1.md), [dữ liệu chi tiết](ban-do-bot-1-3/luot-20261023-r5/bot-1.json).
-- [Bot 3](ban-do-bot-1-3/luot-20261023-r5/bot-3.md), [dữ liệu chi tiết](ban-do-bot-1-3/luot-20261023-r5/bot-3.json).
-- [Biên nhận lập danh sách](ban-do-bot-1-3/luot-20261023-r5/summary.json).
+- [Bot 1](ban-do-bot-1-3/luot-20261024-r6/bot-1.md), [dữ liệu chi tiết](ban-do-bot-1-3/luot-20261024-r6/bot-1.json).
+- [Bot 3](ban-do-bot-1-3/luot-20261024-r6/bot-3.md), [dữ liệu chi tiết](ban-do-bot-1-3/luot-20261024-r6/bot-3.json).
+- [Biên nhận lập danh sách](ban-do-bot-1-3/luot-20261024-r6/summary.json).
 
 Mỗi hàm có vị trí gốc, dòng C, các hàm gọi/được gọi, lời gọi MT5, mã
 điều phối, chuỗi liên quan, biến dùng chung, nguồn dựng lại và bằng
@@ -64,7 +64,7 @@ phép đối chiếu trong phạm vi cụ thể; không đánh dấu hoàn tất
 | P13 | Đổi tiền tài khoản và cặp giá | `0x36220`, `0x47d20` / `0x8300`, `0x41780` | Đã so hai chiều và ghép; còn nạp đuôi mã lúc khởi tạo |
 | P14 | Vốn cao nhất, rút tiền và lưu trạng thái | `0x173f0`, `0xc30` / `0x1fd00`, `0xc30` | Đã so cập nhật/ghi-đọc, tên mục và nạp lại trong đoạn khởi tạo; còn ghép toàn bộ, mã lỗi/thông báo và kiểm cùng tài khoản |
 | P15 | Kiểm khối lượng hợp lệ và ký quỹ | `0x3bfe0`, `0x3cb30`, `0x457d0` / `0x46ca0`, `0x47840`, `0x53670` | Đã so kiểm ký quỹ và dựng kiểm khối lượng hợp lệ: 1.834 ca mỗi bot, gồm 27 lần dừng vì chia 0 thật. Còn ghép EA, lỗi dữ liệu thực và đuôi số thông báo; [bằng chứng](PHAN-TICH-KHOI-LUONG-HOP-LE-BOT-1-3.md) |
-| P16 | Tạo/gửi yêu cầu giao dịch | `0x950`, `0x2e6d0`, `0x32dd0` / `0x950`, `0x3bb10`, `0x3e580` | Cần đủ trường yêu cầu, loại lệnh, cách khớp, kết quả, đồng bộ/bất đồng bộ |
+| P16 | Tạo/gửi yêu cầu giao dịch | `0x950`, `0x2e6d0`, `0x32dd0` / `0x950`, `0x3bb10`, `0x3e580` | Đã dựng chọn cách khớp, 3.096 ca mỗi bot; chuẩn bị yêu cầu đến trước hàm gửi, 1.607 ca mỗi bot khớp 35 trường và thứ tự gọi. Còn gửi/kết quả/thông báo, hàng đợi 100 lệnh, thử lại và lỗi thực; [bằng chứng](PHAN-TICH-TAO-YEU-CAU-CHO-BOT-1-3.md) |
 | P17 | Quét, nhận dạng và đếm lệnh/vị thế | Các hàm nhóm `0x2f5c0..0x32ce0` / `0x3ca00..0x3e490` | Cần nhận dạng chiến lược/mã giao dịch, thứ tự, vé 0 và giới hạn số lệnh |
 | P18 | Sửa/hủy lệnh chờ và vùng cấm sửa | `0x30320`, `0x34150` / `0x32450`, `0x3d650` | Cần điều kiện giá, chọn lệnh, trường yêu cầu và xử lý thất bại |
 | P19 | Hết hạn thật và tự quản lý hết hạn | Tham số ở `0x7500` / `0xe0c0`, nơi dùng trong chiến lược | Đã so cách tính thời hạn; chưa toàn bộ việc hủy khi đến hạn |
@@ -74,7 +74,7 @@ phép đối chiếu trong phạm vi cụ thể; không đánh dấu hoàn tất
 | P23 | Đóng vị thế và xóa theo bộ lọc | `0x3d010`, các hàm quét / `0x47d20`, các hàm quét | Cần mã giá, khoảng cấm sửa/đóng, cả hai chiều và lỗi |
 | P24 | Giới hạn lỗ ngày/tổng và vốn | `0x10f60`, `0x18aa0`, `0x1efa0` / `0x17f00`, `0x20ef0`, `0x2a1c0` | Cần phép tổng hợp, thời điểm đặt lại và hành động khi chạm giới hạn |
 | P25 | Giờ giao dịch, thứ Sáu và phiên của nơi giao dịch | Hàm chiến lược, các hàm giờ, chuỗi `[SESSIONS]` | Cần các mốc, đổi ngày, lịch phiên và trường hợp không có phiên |
-| P26 | Giờ UTC và đổi giờ theo mùa | `0x17840`, `0x17d20` / `0x7e20`, `0x20150` | Đã dựng/so giờ theo mùa: 4.737 ca mỗi bot khớp kết quả và thứ tự gọi; [bằng chứng, đánh giá Claude và giới hạn](PHAN-TICH-GIO-MUA-HE-BOT-1-3.md). Còn bổ sung giờ sát biên năm xa, các kiểu lỗi, thứ tự khởi tạo, chụp bản biên dịch gọi MT5 trực tiếp và ghép EA; UTC/HTTP/nhập tay vẫn còn |
+| P26 | Giờ UTC và đổi giờ theo mùa | `0x17840`, `0x17d20` / `0x7e20`, `0x20150` | Đã so cả nguồn có hàm kiểm và bản biên dịch gọi MT5 trực tiếp, 4.737 ca mỗi bot khớp kết quả/thứ tự gọi; [bằng chứng và giới hạn](PHAN-TICH-GIO-MUA-HE-BOT-1-3.md). Còn giờ sát biên năm xa, các kiểu lỗi, thứ tự khởi tạo và ghép EA; UTC/HTTP/nhập tay vẫn còn |
 | P27 | NFP, lãi suất và CPI | Nhóm `0x61b0..0x7310` / `0x6ad0..0x7c30`, chuỗi lỗi/lịch | Đã so chọn thời điểm chặn 1.620 ca mỗi bot; cần tìm sự kiện lịch, lịch thay thế, hủy/đóng và dữ liệu thiếu; [phạm vi](PHAN-TICH-CHAN-TIN-BOT-1-3.md) |
 | P28 | Lịch sử/tệp dữ liệu tin | Bot 3 có chuỗi `newshist.csv`, `news.csv` tại phần khởi tạo/hủy | Cần xác định đường đọc thật, nhánh có sử dụng và dữ liệu đi kèm; chưa khẳng định tính năng đang bật |
 | P29 | Bảng thông tin, nhãn và thao tác biểu đồ | `0x8320`, `0xe1b0`, `0xffb0`, `0x45b70`, `0x47740` / `0xef40`, `0x14fa0`, `0x16e80`, `0x53a10`, `0x555e0` | Cần từng đối tượng, nội dung, màu/cỡ chữ, vị trí và hành vi hiển thị khi đo lại quá khứ |
@@ -104,6 +104,12 @@ Lượt kiểm phương pháp cài đặt bị Claude từ chối với nhãn `[
 [biên nhận](../.local/bot1-3-inputs-20261023/claude-method-review/run.json).
 Không dùng phản hồi này làm xác nhận độc lập.
 
+Hai lượt P11/P16 mới bị Claude từ chối sau khi nối lại phiên đã dừng;
+không có phân tích độc lập từ hai lượt này. Đã lưu phản hồi ở
+`danh-gia-claude/p11-bot1-ultracode-20261024-r2/` và
+`danh-gia-claude/order-request-ultracode-20261024-r2/`; không yêu cầu
+đổi cách hỏi để vượt chặn. Phép so mới do mình thực hiện trực tiếp.
+
 ## Các điểm phân tích còn mở
 
 - Đã nối địa chỉ gọi ngoài trực tiếp còn thiếu bằng nguồn đối chứng.
@@ -120,3 +126,9 @@ Công cụ: `cong-cu/lap-ban-do-bot-1-3.py`. Lượt `r5` thêm đối chứng l
 gọi, bằng chứng menu và phần nạp vốn đã dựng; giữ các lượt cũ. Lượt `r2` chỉ quét những địa
 chỉ thực sự được gọi, đã loại các phép ép con trỏ `0/1` bị lượt `r1`
 đếm nhầm là địa chỉ hàm. Lượt `r3` sửa mô tả các hàm tin theo chuỗi và lời gọi thực tế, thêm bằng chứng đối chứng API. Các lượt được giữ để kiểm lại cách lập danh sách.
+
+Lượt hiện hành `luot-20261024-r6` nối thêm nguồn và bằng chứng giờ theo
+mùa, khối lượng hợp lệ, chọn cách khớp và chuẩn bị yêu cầu. Đã sửa mô
+tả `0x2e6d0/0x3bb10`: đó là xử lý hàng đợi 100 lệnh chờ, không phải
+chỉ tạo trường yêu cầu. Mã thao tác 2 đã nối với `Print` bằng chương
+trình có nguồn. Các lượt cũ giữ nguyên, không sửa lại bằng chứng.

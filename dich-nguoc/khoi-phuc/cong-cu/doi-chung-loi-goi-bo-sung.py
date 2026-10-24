@@ -99,13 +99,21 @@ def analyze(out,engine,capture):
 
 
 def main():
-    ap=argparse.ArgumentParser(description=__doc__);ap.add_argument('run');a=ap.parse_args()
+    global AREA
+    ap=argparse.ArgumentParser(description=__doc__);ap.add_argument('run');ap.add_argument('--area',type=Path);a=ap.parse_args()
+    if a.area:
+        area=a.area.resolve()
+        if not area.is_relative_to((ROOT/'doi-chung-mt5').resolve()):raise ValueError('AREA_OUTSIDE_PROBE_DIRECTORY')
+        if not (area/'source/RecoveryApiLibrary.mq5').is_file() or not (area/'source/RecoveryApiDriver.mq5').is_file():raise ValueError('PROBE_SOURCES_MISSING')
+        AREA=area
     if not re.fullmatch('[a-z0-9-]{1,40}',a.run):raise ValueError('INVALID_RUN')
     if settings.processes():raise RuntimeError('PRIVATE_MT5_IS_BUSY')
     if settings.sha(MT/'metatester64.exe')!=settings.ENGINE_SHA:raise ValueError('ENGINE_CHANGED')
     out=AREA/a.run;out.mkdir(parents=True,exist_ok=False)
     target=MT/'MQL5/Experts/RecoveryApi20261023'/a.run
     target.mkdir(parents=True,exist_ok=False)
+    for source in (AREA/'source').glob('*.mqh'):
+        shutil.copyfile(source,target/source.name);shutil.copyfile(source,out/source.name)
     build=[]
     startup=subprocess.STARTUPINFO();startup.dwFlags|=subprocess.STARTF_USESHOWWINDOW;startup.wShowWindow=0
     for name in ['RecoveryApiLibrary','RecoveryApiDriver']:
@@ -169,7 +177,7 @@ def main():
         if settings.sha(out/'captures/library'/region['file'])!=region['sha256']:raise ValueError('PROBE_CAPTURE_HASH_MISMATCH')
     result=analyze(out,identity,capture)
     result.update(tool_sha256=settings.sha(Path(__file__)),capture_tool_sha256=settings.sha(ROOT/'cong-cu-cu/inspect-ex5-running-code.py'),
-                  source_sha256={p.name:settings.sha(p) for p in (AREA/'source').glob('*.mq5')},
+                  source_sha256={p.name:settings.sha(p) for p in (AREA/'source').iterdir() if p.suffix in ['.mq5','.mqh']},
                   runner_verified=True,only_anchor_executed=True)
     (out/'calibration.json').write_text(json.dumps(result,ensure_ascii=False,indent=2),encoding='utf-8')
     print(json.dumps({'source_markers':len(result['source_markers_verified']),'bots':[{k:b[k] for k in ['bot','mapped','remaining']} for b in result['bots']],'runner_verified':True,'only_anchor_executed':True}))

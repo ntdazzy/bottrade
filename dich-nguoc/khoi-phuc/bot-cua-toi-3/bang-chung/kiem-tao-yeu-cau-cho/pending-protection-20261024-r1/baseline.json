@@ -1,0 +1,8 @@
+{
+  "original_ex5_sha256": "ee063d3d87490afe24e2f4ce85f6b05659320e297b102efd70207f71ca2feb83",
+  "cases": 16,
+  "cases_sha256": "f9a66bc545e1b2bbd622e24d49e64efbf246c322747156c2ea910f2026d6f672",
+  "tool_sha256": "35b9b0f611a01e12d94b1015570511e0fd95fd617fcbd567a71a727ad6b04600",
+  "layout_sha256": "01e11f8b969576faa9647a53efeaf6a2f7748baa7711a5bc2730981c8883def1",
+  "scope": "Additional16 cases isolating NaN protective prices when both or either order-protection flag is missing; existing source and compiler receipts unchanged."
+}

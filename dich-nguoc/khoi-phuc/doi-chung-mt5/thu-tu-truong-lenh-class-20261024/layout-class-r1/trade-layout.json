@@ -1,0 +1,256 @@
+{
+  "status": "known-source-class-seed-executed-capture-verified",
+  "capture_pid": 25148,
+  "only_anchor_executed": true,
+  "runner_verified": true,
+  "engine_sha256": "5033d9d45d669cebd735e8a6be20b54d74b75274f885c9a0e48e52d872104efb",
+  "source_sha256": {
+    "doi-chung-mt5/thu-tu-truong-lenh-class-20261024/layout-class-r1/RecoveryApiDriver.mq5": "87628bda5729a784a93b26e573da62b029c9218e0c7992550ba7fefe73947dce",
+    "doi-chung-mt5/thu-tu-truong-lenh-class-20261024/layout-class-r1/RecoveryApiLibrary.mq5": "c21c5ff475aaa2a5c0c07466140abe40bc8e583d924457cb3f881cc2f5d55cf8",
+    "doi-chung-mt5/thu-tu-truong-lenh-class-20261024/layout-class-r1/TradeLayoutSeed.mqh": "2a7f02aaae78f991d50aa07c19d4566fdad47cf6a52da4f3db0dbc656e076637"
+  },
+  "data_region": {
+    "base": 1390103638016,
+    "allocation_base": 1390103625728,
+    "bytes": 53248,
+    "protect": 4,
+    "kind": "mutable_program_data",
+    "file": "00000143a8a23000-program-data.bin",
+    "sha256": "6c8d3717daf9ac783c775083b75174fe5a7aa8c6e0508752b7b7945f48a869ec"
+  },
+  "reference_seed_sha256": "5966e3f537b51e91526c3be19655ce4b6d9767f80fd786d3a3260ca2e980b8a6",
+  "relative_native_storage_bases": {
+    "request": 0,
+    "result": 240,
+    "check": 436
+  },
+  "end_marker_offset": 628,
+  "layouts": {
+    "request": {
+      "captured_address": "0x143a8a25010",
+      "fields": [
+        {
+          "name": "action",
+          "offset": 0,
+          "kind": "i",
+          "value": 101
+        },
+        {
+          "name": "magic",
+          "offset": 4,
+          "kind": "Q",
+          "value": 1234605616436508552
+        },
+        {
+          "name": "order",
+          "offset": 12,
+          "kind": "Q",
+          "value": 2392048381845735320
+        },
+        {
+          "name": "symbol",
+          "offset": 20,
+          "kind": "s",
+          "value": "TRADE_LAYOUT_SYMBOL"
+        },
+        {
+          "name": "volume",
+          "offset": 32,
+          "kind": "d",
+          "value": 1101.25
+        },
+        {
+          "name": "price",
+          "offset": 40,
+          "kind": "d",
+          "value": 1102.25
+        },
+        {
+          "name": "stoplimit",
+          "offset": 48,
+          "kind": "d",
+          "value": 1103.25
+        },
+        {
+          "name": "sl",
+          "offset": 56,
+          "kind": "d",
+          "value": 1104.25
+        },
+        {
+          "name": "tp",
+          "offset": 64,
+          "kind": "d",
+          "value": 1105.25
+        },
+        {
+          "name": "deviation",
+          "offset": 72,
+          "kind": "Q",
+          "value": 3549491147254962088
+        },
+        {
+          "name": "type",
+          "offset": 80,
+          "kind": "i",
+          "value": 102
+        },
+        {
+          "name": "type_filling",
+          "offset": 84,
+          "kind": "i",
+          "value": 103
+        },
+        {
+          "name": "type_time",
+          "offset": 88,
+          "kind": "i",
+          "value": 104
+        },
+        {
+          "name": "expiration",
+          "offset": 92,
+          "kind": "q",
+          "value": 4706933912664188856
+        },
+        {
+          "name": "comment",
+          "offset": 100,
+          "kind": "s",
+          "value": "TRADE_LAYOUT_COMMENT"
+        },
+        {
+          "name": "position",
+          "offset": 112,
+          "kind": "Q",
+          "value": 5864376678073415624
+        },
+        {
+          "name": "position_by",
+          "offset": 120,
+          "kind": "Q",
+          "value": 7021819443482642392
+        }
+      ]
+    },
+    "result": {
+      "captured_address": "0x143a8a25100",
+      "fields": [
+        {
+          "name": "retcode",
+          "offset": 0,
+          "kind": "I",
+          "value": 201
+        },
+        {
+          "name": "deal",
+          "offset": 4,
+          "kind": "Q",
+          "value": 1311768465173141112
+        },
+        {
+          "name": "order",
+          "offset": 12,
+          "kind": "Q",
+          "value": 2541551403420444553
+        },
+        {
+          "name": "volume",
+          "offset": 20,
+          "kind": "d",
+          "value": 1201.25
+        },
+        {
+          "name": "price",
+          "offset": 28,
+          "kind": "d",
+          "value": 1202.25
+        },
+        {
+          "name": "bid",
+          "offset": 36,
+          "kind": "d",
+          "value": 1203.25
+        },
+        {
+          "name": "ask",
+          "offset": 44,
+          "kind": "d",
+          "value": 1204.25
+        },
+        {
+          "name": "comment",
+          "offset": 52,
+          "kind": "s",
+          "value": "TRADE_LAYOUT_RESULT"
+        },
+        {
+          "name": "request_id",
+          "offset": 64,
+          "kind": "I",
+          "value": 202
+        },
+        {
+          "name": "retcode_external",
+          "offset": 68,
+          "kind": "i",
+          "value": 203
+        }
+      ]
+    },
+    "check": {
+      "captured_address": "0x143a8a251c4",
+      "fields": [
+        {
+          "name": "retcode",
+          "offset": 0,
+          "kind": "I",
+          "value": 301
+        },
+        {
+          "name": "balance",
+          "offset": 4,
+          "kind": "d",
+          "value": 1301.25
+        },
+        {
+          "name": "equity",
+          "offset": 12,
+          "kind": "d",
+          "value": 1302.25
+        },
+        {
+          "name": "profit",
+          "offset": 20,
+          "kind": "d",
+          "value": 1303.25
+        },
+        {
+          "name": "margin",
+          "offset": 28,
+          "kind": "d",
+          "value": 1304.25
+        },
+        {
+          "name": "margin_free",
+          "offset": 36,
+          "kind": "d",
+          "value": 1305.25
+        },
+        {
+          "name": "margin_level",
+          "offset": 44,
+          "kind": "d",
+          "value": 1306.25
+        },
+        {
+          "name": "comment",
+          "offset": 52,
+          "kind": "s",
+          "value": "TRADE_LAYOUT_CHECK"
+        }
+      ]
+    }
+  },
+  "scope": "35 actual seeded fields and relative class-member positions. No trading request sent; native storage offsets are not logical sizeof."
+}

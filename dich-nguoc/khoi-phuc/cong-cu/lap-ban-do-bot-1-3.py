@@ -43,7 +43,7 @@ ROLES=[
 (0xffb0,0x16e80,'Quét lịch sử, tổng hợp số liệu và nhãn thông tin','Hiển thị'),
 (0x10f60,0x17f00,'Luồng điều phối chiến lược, vốn và bộ lọc','Điều phối'),
 (0x173f0,0x1fd00,'Cập nhật vốn cao nhất theo lịch sử rút tiền','Trạng thái vốn'),
-(0x17840,0x7e20,'Tính lịch/đổi giờ; cần chốt công thức và phạm vi năm','Giờ'),
+(0x17840,0x7e20,'Tính giờ theo mùa bằng hai công thức và so ngày trong năm','Giờ'),
 (0x17d20,0x20150,'Đọc giờ UTC qua HTTP và tách kết quả','Giờ'),
 (0x18790,0x20bc0,'Đồng bộ các bảng lưu theo vé vị thế','Trạng thái lệnh'),
 (0x18aa0,0x20ef0,'Xử lý một chiến lược: lọc, quét, vào và quản lý lệnh','Chiến lược'),
@@ -65,7 +65,7 @@ ROLES=[
 (0x26d20,0x32a90,'Kiểm vé/mã giao dịch và tạo yêu cầu sửa','Giao dịch'),
 (0x271f0,0x32f60,'Quản lý vị thế nhánh mua: dừng/chốt, dời và đóng','Quản lý vị thế'),
 (0x2abc0,0x37590,'Quản lý vị thế nhánh bán: dừng/chốt, dời và đóng','Quản lý vị thế'),
-(0x2e6d0,0x3bb10,'Chuẩn bị các trường và gửi yêu cầu giao dịch','Giao dịch'),
+(0x2e6d0,0x3bb10,'Gửi hàng đợi 100 lệnh chờ theo giá, ghi vé và thử lại khi lỗi 132','Giao dịch'),
 (0x2f5c0,0x3ca00,'Quét/hủy lệnh chờ mua theo khoảng cách','Quản lý lệnh chờ'),
 (0x2f7e0,0x3cc20,'Quét/hủy lệnh chờ bán theo khoảng cách','Quản lý lệnh chờ'),
 (0x2fa00,0x3ce40,'Quét/đóng vị thế nhánh mua theo bộ lọc','Quản lý vị thế'),
@@ -93,7 +93,7 @@ ROLES=[
 (0x3cb30,0x47840,'Chặn theo vốn/khối lượng rồi kiểm ký quỹ','Ký quỹ'),
 (0x3d010,0x47d20,'Kiểm giá/vùng cấm sửa rồi yêu cầu đóng vị thế','Quản lý vị thế'),
 (0x3d200,0x47f10,'Tính và lưu mức dừng theo vé; bảng dừng ảo','Dừng ảo'),
-(None,0x482b0,'Lưu/đọc mức theo vé trong bảng; cần chốt vai trò','Trạng thái lệnh'),
+(None,0x482b0,'Lưu/đọc mức chốt lời ảo theo vé trong bảng 500 hàng','Trạng thái lệnh'),
 (0x3d5a0,0x484c0,'Kiểm thời gian chờ theo vé trong bảng','Dừng ảo'),
 (0x3d640,0x48560,'Ghi thời điểm vào bảng theo vé','Dừng ảo'),
 (0x3d6c0,0x485e0,'Các điều kiện tài khoản/chuỗi và chế độ chạy; chưa chốt toàn bộ','Điều kiện dùng'),
@@ -149,6 +149,12 @@ def main():
             assert row['errors']==row['warnings']==0
             assert sha(extra_path.parent/(row['name']+'.mq5'))==row['source_sha256']
             assert sha(extra_path.parent/(row['name']+'.ex5'))==row['binary_sha256']
+        anchor=[f for f in extra['functions'] if f['markers']==['Anchor']]
+        if len(anchor)==1 and len(anchor[0]['calls'])==1:
+            call=anchor[0]['calls'][0]
+            source_text=(extra_path.parent/'RecoveryApiLibrary.mq5').read_text(encoding='utf-8-sig')
+            if call.get('rdx_constant')==2 and call.get('r8_constant')==1 and 'Print("EX5_API_PROBE:Anchor");' in source_text:
+                operations[2]='Print'
         for bot in extra['bots']:
             for address in bot['addresses']:
                 names={site['source_marker'] for site in address['known_source_sites']}
@@ -223,6 +229,19 @@ def main():
                     proof={'path':p.relative_to(ROOT).as_posix(),'sha256':sha(p),'comparison':comparison,
                            'partial_only':'Đoạn nạp vốn/tên lưu; chưa toàn bộ hàm khởi tạo.'}
                     p=ROOT/f'bot-cua-toi-{bot}/source/MQL5/Include/bot-cua-toi-{bot}/Bot{bot}AccountInitialization.mqh'
+                    reconstructed={'path':p.relative_to(ROOT).as_posix(),'sha256':sha(p),'partial_only':True}
+            new_parts={
+                (0x231c0 if bot==1 else 0x2e8f0):('kiem-kieu-khop-lenh/filling-20261024-r1','Filling','Hàm chọn cách khớp; dữ liệu thuộc tính cấp sẵn, chưa ghép giao dịch.'),
+                (0x32dd0 if bot==1 else 0x3e580):('kiem-tao-yeu-cau-cho/pending-20261024-r2','PendingRequest','Chỉ chuẩn bị đến trước hàm gửi0x950; chưa phải gửi lệnh.'),
+                (0x3bfe0 if bot==1 else 0x46ca0):('kiem-khoi-luong-hop-le/volume-validation-20261024-r5','VolumeValidation','Hàm kiểm khối lượng; đuôi số trong thông báo và ghép EA còn mở.'),
+                (0x17840 if bot==1 else 0x7e20):('kiem-gio-mua-he/dst-20261024-r1','AmericanDST','Hàm giờ theo mùa trong bộ ca đã ghi; các lỗi và giờ sát biên năm xa còn mở.'),
+            }
+            if rva in new_parts:
+                sub,name,limit=new_parts[rva];p=ROOT/f'bot-cua-toi-{bot}/bang-chung'/sub/'comparison.json'
+                if p.exists():
+                    comparison=json.loads(p.read_text());assert comparison['failed']==0
+                    proof={'path':p.relative_to(ROOT).as_posix(),'sha256':sha(p),'comparison':comparison,'partial_only':limit}
+                    p=ROOT/f'bot-cua-toi-{bot}/source/MQL5/Include/bot-cua-toi-{bot}/Bot{bot}{name}.mqh'
                     reconstructed={'path':p.relative_to(ROOT).as_posix(),'sha256':sha(p),'partial_only':True}
             functions.append({'rva':hex(rva),'end_rva_exclusive':runtime[rva]['end_rva'],'role':role,'category':category,
                 'source':source.relative_to(ROOT).as_posix(),'line':line,'last_line':last,'c_sha256':hashlib.sha256(body.encode()).hexdigest(),

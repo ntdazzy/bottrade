@@ -1,0 +1,87 @@
+{
+  "status": "components-verified-with-stated-limits",
+  "checks": [
+    {
+      "bot": 1,
+      "part": "filling",
+      "cases": 3096,
+      "matched": 3096,
+      "comparison": "bot-cua-toi-1/bang-chung/kiem-kieu-khop-lenh/filling-20261024-r1/comparison.json",
+      "comparison_sha256": "4a245d4c17cfbf345cb415541d765cbb340e23db95f4c9324252e09fdd80a9ee",
+      "build_receipt": "bot-cua-toi-1/bang-chung/bien-dich/b1-filling-01/bien-nhan.json",
+      "binary_sha256": "6d9294fbc10e099bc5d6d7f3660f54aed7d4793fb1539277c32c4b04242bc33d",
+      "source_sha256": {
+        "Scripts/bot-cua-toi-1/Bot1FillingCheck.mq5": "37f418c638ef4e4778961629e4bb17005bb5c5890bd9d6a69c71e31342f38c79",
+        "Include/bot-cua-toi-1/Bot1Filling.mqh": "d01485811439d971833de028c791c5abb6cb64ba5b9c20228ca8785453a6615d"
+      }
+    },
+    {
+      "bot": 3,
+      "part": "filling",
+      "cases": 3096,
+      "matched": 3096,
+      "comparison": "bot-cua-toi-3/bang-chung/kiem-kieu-khop-lenh/filling-20261024-r1/comparison.json",
+      "comparison_sha256": "4a245d4c17cfbf345cb415541d765cbb340e23db95f4c9324252e09fdd80a9ee",
+      "build_receipt": "bot-cua-toi-3/bang-chung/bien-dich/b3-filling-01/bien-nhan.json",
+      "binary_sha256": "9ac162ef0fb88cb6b71a20e216d2cffee467481688de5325a2eb6dfa2c6ce46f",
+      "source_sha256": {
+        "Scripts/bot-cua-toi-3/Bot3FillingCheck.mq5": "de554febf5ba688a65c794ce9455a0efa604fceb916e1c2e6c153552652a1889",
+        "Include/bot-cua-toi-3/Bot3Filling.mqh": "c2806af2b1e00363652b7a09387065f1de289cf6e2bc644611f4d5f6d1c47599"
+      }
+    },
+    {
+      "bot": 1,
+      "part": "pending-preparation",
+      "cases": 1607,
+      "matched": 1607,
+      "comparison": "bot-cua-toi-1/bang-chung/kiem-tao-yeu-cau-cho/pending-20261024-r2/comparison.json",
+      "comparison_sha256": "c2f95e6089bd645d7fe46a337bdc40b6cb0c587e7ee907c20ddf3588c24cba83",
+      "build_receipt": "bot-cua-toi-1/bang-chung/bien-dich/b1-pending-request-01/bien-nhan.json",
+      "binary_sha256": "14896602f76934f256e9e4cff437eb5ab749f4ca9dc5eb8442fc8b64a4b996c6",
+      "source_sha256": {
+        "Scripts/bot-cua-toi-1/Bot1PendingRequestCheck.mq5": "4cf498712c86a78cc44d1cb442adaf1c7c64348e03da2de1a73f559a8f503920",
+        "Include/bot-cua-toi-1/Bot1PendingRequest.mqh": "46ffbb7da4d469533e1a665b5b666ccbfc755ff973ae5e5ebabf5cdd9051700d",
+        "Include/bot-cua-toi-1/Bot1Filling.mqh": "d01485811439d971833de028c791c5abb6cb64ba5b9c20228ca8785453a6615d"
+      }
+    },
+    {
+      "bot": 3,
+      "part": "pending-preparation",
+      "cases": 1607,
+      "matched": 1607,
+      "comparison": "bot-cua-toi-3/bang-chung/kiem-tao-yeu-cau-cho/pending-20261024-r2/comparison.json",
+      "comparison_sha256": "c2f95e6089bd645d7fe46a337bdc40b6cb0c587e7ee907c20ddf3588c24cba83",
+      "build_receipt": "bot-cua-toi-3/bang-chung/bien-dich/b3-pending-request-01/bien-nhan.json",
+      "binary_sha256": "2b489d684b3c95df37108208e4a40c0a4e7905c53331b5dd116536e31bb5b124",
+      "source_sha256": {
+        "Scripts/bot-cua-toi-3/Bot3PendingRequestCheck.mq5": "2b63734480f6d5662bd00d4c9d697a3a9f2c777222f6c1dda8dd5e0fb41dd58f",
+        "Include/bot-cua-toi-3/Bot3PendingRequest.mqh": "54bc2c75ff9a2ee47f375f874908912da0cad56d2ecb586801d0274c2d025648",
+        "Include/bot-cua-toi-3/Bot3Filling.mqh": "c2806af2b1e00363652b7a09387065f1de289cf6e2bc644611f4d5f6d1c47599"
+      }
+    }
+  ],
+  "remaining": [
+    "Actual send wrapper0x950 and returned trade results",
+    "Deferred100-order queue and retries",
+    "Underlying terminal property errors and owned-string allocation/failure cases",
+    "Full EA, settings, display and restart comparisons"
+  ],
+  "whole_bot_complete": false,
+  "additional_protection_checks": [
+    {
+      "bot": 1,
+      "cases": 16,
+      "matched": 16,
+      "comparison": "bot-cua-toi-1/bang-chung/kiem-tao-yeu-cau-cho/pending-protection-20261024-r1/comparison.json",
+      "comparison_sha256": "a3a4c04bd98530544348b2e1994b7665a6418cbe5ccc34e23a5718c6559d5c42"
+    },
+    {
+      "bot": 3,
+      "cases": 16,
+      "matched": 16,
+      "comparison": "bot-cua-toi-3/bang-chung/kiem-tao-yeu-cau-cho/pending-protection-20261024-r1/comparison.json",
+      "comparison_sha256": "a3a4c04bd98530544348b2e1994b7665a6418cbe5ccc34e23a5718c6559d5c42"
+    }
+  ],
+  "independent_review": "danh-gia-doc-lap/trade-components-20261024/review.md"
+}

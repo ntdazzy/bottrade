@@ -1,0 +1,15 @@
+{
+  "rva": "0x32dd0",
+  "end_rva_exclusive": "0x336c8",
+  "whole_function_sha256": "8d666c1808a0c8d2090eb04e957a383f26fd51f6a8bcee6edeb9d3875b0a7217",
+  "scope": "Executed original prefix and both full filling checks/string helpers. Stops at original send wrapper0x950 before its first instruction. Not send/result verification.",
+  "class_layout_proof": "doi-chung-mt5/thu-tu-truong-lenh-class-20261024/layout-class-r1/trade-layout.json",
+  "class_layout_sha256": "01e11f8b969576faa9647a53efeaf6a2f7748baa7711a5bc2730981c8883def1",
+  "global_writes_allowed": {
+    "request_result_check_bytes": 628,
+    "magic_bytes": 8,
+    "preferred_bytes": 4
+  },
+  "logical_fields_compared": 35,
+  "readonly_literal_initial_strings": true
+}
