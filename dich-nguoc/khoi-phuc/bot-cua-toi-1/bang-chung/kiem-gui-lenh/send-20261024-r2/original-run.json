@@ -1,0 +1,8 @@
+{
+  "cases": 697,
+  "seconds": 10.78,
+  "result_sha256": "0b2240782191ec26d504679ea7a95b817d341dcc5fee65f092b5b836fa8fea0c",
+  "fixtures_sha256": "a3af86b948ca78dc03c8e46f2f0c3c313f6c858018bea43adb0538408e4ad204",
+  "tool_sha256": "dfa8bcf59d3afd26fc373b21d26616428b54bb9c7e6f674609e5c2026e9ae1ca",
+  "scope": "Compare full native send routing and all request/result message functions.\n\nUsage: kiem-gui-lenh-bot-1-3.py prepare|mql5|original|compare BOT RUN [--build BUILD]\nRun MQL5 first. Send calls are supplied; real MT5 number/string formatting outputs\nare recorded, then native arguments/order are checked against them. No order sent.\nOriginal send/format/owned-string helper code executes; allocation faults excluded.\n"
+}

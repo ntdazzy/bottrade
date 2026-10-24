@@ -1,0 +1,9 @@
+{
+  "cases": 1687,
+  "passed": true,
+  "seconds": 26.7,
+  "tool_sha256": "a6e265a8c1ab22ba1bcdcdd44695e9ef325cfe0bb6eb4465f75a37d23b6b59bd",
+  "layout_sha256": "01e11f8b969576faa9647a53efeaf6a2f7748baa7711a5bc2730981c8883def1",
+  "result_sha256": "611bc8a0bc38c3f7a22a632d639617296fd6f198230cda11ff0390bfb533570d",
+  "scope": "Original full628-byte class storage: after ordinary preparation all364 reserved bytes zero; stopped path changes only retcode in those628 bytes. Public35 fields and magic/preference still equal both previous native/MQL5 results. MQL5 private padding bytes not compared."
+}

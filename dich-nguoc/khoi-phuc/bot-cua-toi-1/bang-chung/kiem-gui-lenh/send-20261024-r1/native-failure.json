@@ -1,0 +1,9 @@
+{
+  "status": "native-test-initialization-failed",
+  "case": 6,
+  "rva": "0x775",
+  "error": "UC_ERR_READ_UNMAPPED while releasing prior shared string return buffer",
+  "cause": "Captured shared return string descriptor retained a dynamic address outside captured regions. Test must explicitly supply an empty initial transient return slot; request/result inputs are already supplied.",
+  "source_comparison_completed": false,
+  "adapter_sha256": "4325ce293dd881658e148ed75eea1ceabb56c4e490c2b8ced2e3fcfa79c65129"
+}

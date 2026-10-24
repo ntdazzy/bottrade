@@ -1,5 +1,10 @@
 # bot-cua-toi-3
 
+Đã dựng hàm gửi/thông báo: 1.201 ca khớp; ghép với tạo yêu cầu:
+1.687 ca khớp. Biên dịch 0 lỗi/cảnh báo. Kết quả gửi được cấp trong
+bộ kiểm; chưa kiểm nơi giao dịch thật, hàng đợi/thử lại hoặc toàn EA.
+[Bằng chứng](../PHAN-TICH-GUI-LENH-BOT-1-3.md).
+
 Đã dựng chọn cách khớp lệnh: 3.096 ca khớp; chuẩn bị yêu cầu lệnh chờ:
 1.607 ca và 16 ca bổ sung khớp. Chưa gửi lệnh trong phần này.
 [Bằng chứng](../PHAN-TICH-TAO-YEU-CAU-CHO-BOT-1-3.md).

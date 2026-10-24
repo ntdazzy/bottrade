@@ -1,0 +1,92 @@
+{
+  "status": "components-verified-with-stated-limits",
+  "checks": [
+    {
+      "bot": 1,
+      "part": "send-messages",
+      "cases": 1201,
+      "matched": 1201,
+      "original_ex5_sha256": "a3b0de423a06e10ebedc279307b93d7cb9188ba2bb5de77131a913c865b0e922",
+      "comparison": "bot-cua-toi-1/bang-chung/kiem-gui-lenh/send-20261024-r3/comparison.json",
+      "comparison_sha256": "2f9e46cec73b9817fad2e1da8b0cf4d98f7e135cc6a05a71ed53f1cae11fe41e",
+      "build_receipt": "bot-cua-toi-1/bang-chung/bien-dich/b1-trade-send-03/bien-nhan.json",
+      "build_receipt_sha256": "4b9c930b4d6e8da8a0453b649f28cc0cb411809b35d05be7edfb87e32a7c51dc",
+      "binary_sha256": "325f280f1dbc49f74664a062ab376a70b800798d8bde68f4a73fe15c5ee4dd3e",
+      "sources_sha256": {
+        "Include/bot-cua-toi-1/Bot1TradeMessages.mqh": "af36245e2dd03ec12d5808457530c4937bc354a9a68b5a1f70f8bc394f5ab5a3",
+        "Include/bot-cua-toi-1/Bot1TradeSend.mqh": "dddd20fb58daa7cd60ce87f08c89be3a204ce170e89418c801b24175d4d12e8c",
+        "Include/bot-cua-toi-1/Bot1PendingRequest.mqh": "46ffbb7da4d469533e1a665b5b666ccbfc755ff973ae5e5ebabf5cdd9051700d",
+        "Include/bot-cua-toi-1/Bot1Filling.mqh": "d01485811439d971833de028c791c5abb6cb64ba5b9c20228ca8785453a6615d",
+        "Scripts/bot-cua-toi-1/Bot1TradeSendCheck.mq5": "ecdb190fa206cd86103a69dbd57b7bf666a623977dc5b3fc2e103806da739c90"
+      }
+    },
+    {
+      "bot": 1,
+      "part": "combined-pending-send",
+      "cases": 1687,
+      "matched": 1687,
+      "original_ex5_sha256": "a3b0de423a06e10ebedc279307b93d7cb9188ba2bb5de77131a913c865b0e922",
+      "comparison": "bot-cua-toi-1/bang-chung/kiem-ghep-dat-lenh-cho/open-pending-20261024-r1/comparison.json",
+      "comparison_sha256": "4aed7752e40dbbd2493ccb839b34c2cc5c914c89becfb3f962d70d2012e06530",
+      "build_receipt": "bot-cua-toi-1/bang-chung/bien-dich/b1-open-pending-01/bien-nhan.json",
+      "build_receipt_sha256": "8d53228b65237a1bea9bb4146b73b9d2b91a3f637ee2eaab55139319f59aea41",
+      "binary_sha256": "ffa8b453c26714ea0b603a759f361bbbb11bc5423abb2ce9378e087edd76405d",
+      "sources_sha256": {
+        "Include/bot-cua-toi-1/Bot1TradeMessages.mqh": "af36245e2dd03ec12d5808457530c4937bc354a9a68b5a1f70f8bc394f5ab5a3",
+        "Include/bot-cua-toi-1/Bot1TradeSend.mqh": "dddd20fb58daa7cd60ce87f08c89be3a204ce170e89418c801b24175d4d12e8c",
+        "Include/bot-cua-toi-1/Bot1PendingRequest.mqh": "46ffbb7da4d469533e1a665b5b666ccbfc755ff973ae5e5ebabf5cdd9051700d",
+        "Include/bot-cua-toi-1/Bot1Filling.mqh": "d01485811439d971833de028c791c5abb6cb64ba5b9c20228ca8785453a6615d",
+        "Scripts/bot-cua-toi-1/Bot1TradeSendCheck.mq5": "ecdb190fa206cd86103a69dbd57b7bf666a623977dc5b3fc2e103806da739c90",
+        "Scripts/bot-cua-toi-1/Bot1OpenPendingCheck.mq5": "1350b5928e40461a79729769bc7838070ff69b16b8378a4f57baaa861b8b9dfe"
+      },
+      "storage_audit_sha256": "7de4ff61f692c99b7c4d149696a5abeaa23382e2b49abb985a9d85d01bb4aa1d"
+    },
+    {
+      "bot": 3,
+      "part": "send-messages",
+      "cases": 1201,
+      "matched": 1201,
+      "original_ex5_sha256": "ee063d3d87490afe24e2f4ce85f6b05659320e297b102efd70207f71ca2feb83",
+      "comparison": "bot-cua-toi-3/bang-chung/kiem-gui-lenh/send-20261024-r3/comparison.json",
+      "comparison_sha256": "2f9e46cec73b9817fad2e1da8b0cf4d98f7e135cc6a05a71ed53f1cae11fe41e",
+      "build_receipt": "bot-cua-toi-3/bang-chung/bien-dich/b3-trade-send-03/bien-nhan.json",
+      "build_receipt_sha256": "6edf32cf12611934596721eb462245a75db8dec53cbd978231553bcdc0677c7e",
+      "binary_sha256": "9ea32493b136ad4d7eef907c2457c0d331b7024db229aa9110e9c0acde828853",
+      "sources_sha256": {
+        "Include/bot-cua-toi-3/Bot3TradeMessages.mqh": "3bf211b2aa34980e0857f31e66a08e65136728fa7ef6e239d58cfc1c2bec5d16",
+        "Include/bot-cua-toi-3/Bot3TradeSend.mqh": "6031d82d7db3cb5652b76c4583853e871ac1e7f1770834e8dcbd165fa3a60f1f",
+        "Include/bot-cua-toi-3/Bot3PendingRequest.mqh": "54bc2c75ff9a2ee47f375f874908912da0cad56d2ecb586801d0274c2d025648",
+        "Include/bot-cua-toi-3/Bot3Filling.mqh": "c2806af2b1e00363652b7a09387065f1de289cf6e2bc644611f4d5f6d1c47599",
+        "Scripts/bot-cua-toi-3/Bot3TradeSendCheck.mq5": "4330c43d51dac1cddba39b5a79e2ed64e499b77c6061f6aac7cc31e1316d3345"
+      }
+    },
+    {
+      "bot": 3,
+      "part": "combined-pending-send",
+      "cases": 1687,
+      "matched": 1687,
+      "original_ex5_sha256": "ee063d3d87490afe24e2f4ce85f6b05659320e297b102efd70207f71ca2feb83",
+      "comparison": "bot-cua-toi-3/bang-chung/kiem-ghep-dat-lenh-cho/open-pending-20261024-r1/comparison.json",
+      "comparison_sha256": "4aed7752e40dbbd2493ccb839b34c2cc5c914c89becfb3f962d70d2012e06530",
+      "build_receipt": "bot-cua-toi-3/bang-chung/bien-dich/b3-open-pending-01/bien-nhan.json",
+      "build_receipt_sha256": "40778c34df080aa81343582b6e1127c40059685ffc57ddbfc5de3a38203643c2",
+      "binary_sha256": "653dc8712ed6d1e7fc183781750d8b5e3f72d59ddce8eb092879d0e96c77262a",
+      "sources_sha256": {
+        "Include/bot-cua-toi-3/Bot3TradeMessages.mqh": "3bf211b2aa34980e0857f31e66a08e65136728fa7ef6e239d58cfc1c2bec5d16",
+        "Include/bot-cua-toi-3/Bot3TradeSend.mqh": "6031d82d7db3cb5652b76c4583853e871ac1e7f1770834e8dcbd165fa3a60f1f",
+        "Include/bot-cua-toi-3/Bot3PendingRequest.mqh": "54bc2c75ff9a2ee47f375f874908912da0cad56d2ecb586801d0274c2d025648",
+        "Include/bot-cua-toi-3/Bot3Filling.mqh": "c2806af2b1e00363652b7a09387065f1de289cf6e2bc644611f4d5f6d1c47599",
+        "Scripts/bot-cua-toi-3/Bot3TradeSendCheck.mq5": "4330c43d51dac1cddba39b5a79e2ed64e499b77c6061f6aac7cc31e1316d3345",
+        "Scripts/bot-cua-toi-3/Bot3OpenPendingCheck.mq5": "324dd9a0154163af007da7ff4570dc6b37fba57bf943a6fe414c03854401af3a"
+      },
+      "storage_audit_sha256": "c0ebedae2df40560748b511ca8127d44905cbe1a8aa2772b3d3d16d7e1a121f7"
+    }
+  ],
+  "whole_bot_complete": false,
+  "remaining": [
+    "Broker execution and real send outcomes",
+    "Deferred100-order queue and retry/error processing",
+    "MQL5 private padding and allocation failures",
+    "Full EA, all settings, display, restart and error paths"
+  ]
+}

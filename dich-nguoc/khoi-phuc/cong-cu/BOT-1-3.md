@@ -2,6 +2,33 @@
 
 Chạy từ thư mục dự án. Mỗi lượt dùng tên mới để giữ bằng chứng cũ.
 
+## Gửi lệnh, thông báo và ghép tạo yêu cầu
+
+- `kiem-gui-lenh-bot-1-3.py MODE BOT RUN [--build BUILD]`: hàm gửi
+  `0x950` cùng các hàm thông báo yêu cầu/kết quả/loại/giá.
+  Biên dịch `BotNTradeSendCheck.mq5`; lượt đạt `send-20261024-r3`,
+  `bN-trade-send-03`, 1.201 ca mỗi bot.
+- `kiem-ghep-dat-lenh-cho-bot-1-3.py MODE BOT RUN [--build BUILD]`:
+  chạy liên tục hàm tạo yêu cầu qua gửi/thông báo đến khi trả về,
+  không dừng trước hàm gửi. Biên dịch `BotNOpenPendingCheck.mq5`;
+  lượt đạt `open-pending-20261024-r1`, `bN-open-pending-01`, 1.687 ca.
+- `kiem-chung-gui-lenh-bot-1-3.py NEW_JSON`: kiểm lại mã tệp bằng
+  chứng, nguồn hiện hành, biên nhận biên dịch, sơ đồ trường và kiểm
+  bổ sung vùng lưu; tạo biên nhận mới trong `khoi-phuc`, không mở MT5.
+
+Với hai công cụ đầu, `MODE` theo thứ tự `prepare` → biên dịch →
+`mql5` → `original` → `compare`. Bước `mql5` bắt buộc chỉ đúng biên
+nhận bằng `--build`. Chạy lần lượt hai bot vì dùng chung MT5 riêng.
+Các hàm gửi trong chương trình kiểm được thay bằng kết quả định sẵn;
+không gửi lệnh. Việc định dạng số/chuỗi dùng MT5 thật, mã gốc phải gọi
+đúng đối số, kiểu và thứ tự đã đo. Nguồn giao dịch chính dùng lời gọi
+MT5 trực tiếp; không mang hàm thay thế của bộ kiểm vào nguồn chính.
+
+Công cụ ghép có thêm `audit BOT RUN`: chạy lại mã gốc với kiểm toàn
+bộ 628 byte lưu trong lớp và kiểm lại sơ đồ; so với kết quả cũ rồi
+ghi `native-storage-audit.json` mới. Không ghi đè kết quả cũ và chưa
+so byte đệm riêng của MQL5. [Phạm vi](../PHAN-TICH-GUI-LENH-BOT-1-3.md).
+
 | Công cụ | Đầu vào và kết quả |
 |---|---|
 | `chay-chup-bot-1-3.py BOT RUN` | Chạy EX5 gốc trong MT5 riêng, chụp mã/dữ liệu, lưu nhật ký. Chỉ dùng tài khoản demo đã được phép. Dừng nếu lượt máy thử chưa hoàn tất; bản chụp có kết quả riêng. |
@@ -155,7 +182,7 @@ liệt kê mọi hàm trong bảng đã chụp, toàn bộ dòng cài đặt đ�
 lời gọi, chuỗi, chỗ chưa rõ và liên kết bằng chứng. Thư mục đích phải
 mới và nằm trong `khoi-phuc`; không sửa EX5 hoặc mã trung gian.
 
-Lượt hiện hành: `ban-do-bot-1-3/luot-20261023-r5/`. Danh sách không tự
+Lượt hiện hành: `ban-do-bot-1-3/luot-20261024-r7/`. Danh sách không tự
 khẳng định toàn bộ EX5 đã được phân tích hoặc mọi cài đặt đã được nối.
 
 ## Hai bộ kiểm đã hoàn tất trước khi chuyển sang rà bản đồ

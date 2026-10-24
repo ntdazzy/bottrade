@@ -1,0 +1,13 @@
+{
+  "cases": 1687,
+  "matched": 1687,
+  "failed": 0,
+  "first_failures": [],
+  "hashes": {
+    "cases.bin": "c008589a1b5206cf56221f6dde4f93ceb1658473650e5d26869f25705a9b1a0e",
+    "original-results.bin": "611bc8a0bc38c3f7a22a632d639617296fd6f198230cda11ff0390bfb533570d",
+    "mql5-results.bin": "611bc8a0bc38c3f7a22a632d639617296fd6f198230cda11ff0390bfb533570d",
+    "api-fixtures.bin": "93a865425030ed6e0e30e3ce754e8a06c62b758c0941c94bef97fc5833136db0"
+  },
+  "scope": "Complete original pending-builder through both filling checks and full send/message functions versus restored combined source.35 state fields plus magic/preferred, return bool and ordered typed API calls/text. Send outcomes/properties supplied, formatting measured. No broker execution/allocation-failure/whole EA claim."
+}

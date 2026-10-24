@@ -1,10 +1,16 @@
 # Kết quả khôi phục mã — lượt 23/10/2026
 
+Cập nhật tiếp 24/10: hàm gửi và thông báo khớp 1.201 ca mỗi bot;
+chuỗi ghép tạo yêu cầu → gửi → thông báo khớp 1.687 ca mỗi bot,
+biên dịch 0 lỗi/cảnh báo. Kết quả gửi được cấp trong bộ kiểm, chưa có
+lệnh gửi tới nơi giao dịch. [Phạm vi và bằng chứng](PHAN-TICH-GUI-LENH-BOT-1-3.md).
+Hai bot vẫn chưa có EA chính hoàn chỉnh và chưa được xác nhận 100%.
+
 Cập nhật tiếp 24/10: mỗi bot khớp 3.096 ca chọn cách khớp lệnh và
 1.607 ca chuẩn bị yêu cầu lệnh chờ, gồm đủ 35 trường và thứ tự gọi;
 thêm 16 ca riêng cho giá dừng/chốt không xác định cũng khớp.
-[Phạm vi](PHAN-TICH-TAO-YEU-CAU-CHO-BOT-1-3.md). Chưa chạy bước gửi
-lệnh trong phần mới, chưa có EA chính hoàn chỉnh cho bot 1 và 3.
+[Phạm vi](PHAN-TICH-TAO-YEU-CAU-CHO-BOT-1-3.md). Phần chuẩn bị riêng
+dừng trước bước gửi; lượt ghép mới được nêu ở trên.
 
 Cập nhật 24/10: phần đổi giờ theo mùa của bot 1 và 3 đã có nguồn MQL5,
 khớp 4.737/4.737 ca mỗi bot; kết quả và thứ tự gọi trùng từng byte,

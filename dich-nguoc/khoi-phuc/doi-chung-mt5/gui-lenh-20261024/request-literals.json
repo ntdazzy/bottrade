@@ -1,0 +1,50 @@
+[
+  {
+    "bot": 1,
+    "function_rva": "0x23fa0",
+    "literals": {
+      "0x53260": "request %s %s position #%I64u %s at %s",
+      "0x53568": "modify position #%I64u %s (sl: %s, tp: %s)",
+      "0x536e0": "close position #%I64u by #%I64u",
+      "0x53790": "unknown action ",
+      "0x534f0": "%s %s %s at %s",
+      "0x52e30": " sl: %s",
+      "0x53638": "modify #%I64u at %s (sl: %s tp: %s)",
+      "0x53678": "cancel #%I64u",
+      "0x535c8": "modify %s (sl: %s, tp: %s)",
+      "0x533d0": "market %s %s position #%I64u %s",
+      "0x53470": "exchange %s %s position #%I64u %s",
+      "0x53320": "instant %s %s position #%I64u %s at %s",
+      "0x53750": "wrong action close by (#%I64u by #%I64u)",
+      "0x53410": "market %s %s %s",
+      "0x52e60": " tp: %s",
+      "0x534b0": "exchange %s %s %s",
+      "0x532b0": "request %s %s %s at %s",
+      "0x53370": "instant %s %s %s at %s"
+    }
+  },
+  {
+    "bot": 3,
+    "function_rva": "0x2f6d0",
+    "literals": {
+      "0x5ba10": "request %s %s position #%I64u %s at %s",
+      "0x5bd18": "modify position #%I64u %s (sl: %s, tp: %s)",
+      "0x5be90": "close position #%I64u by #%I64u",
+      "0x5bf40": "unknown action ",
+      "0x5bca0": "%s %s %s at %s",
+      "0x5b5e0": " sl: %s",
+      "0x5bde8": "modify #%I64u at %s (sl: %s tp: %s)",
+      "0x5be28": "cancel #%I64u",
+      "0x5bd78": "modify %s (sl: %s, tp: %s)",
+      "0x5bb80": "market %s %s position #%I64u %s",
+      "0x5bc20": "exchange %s %s position #%I64u %s",
+      "0x5bad0": "instant %s %s position #%I64u %s at %s",
+      "0x5bf00": "wrong action close by (#%I64u by #%I64u)",
+      "0x5bbc0": "market %s %s %s",
+      "0x5b610": " tp: %s",
+      "0x5bc60": "exchange %s %s %s",
+      "0x5ba60": "request %s %s %s at %s",
+      "0x5bb20": "instant %s %s %s at %s"
+    }
+  }
+]

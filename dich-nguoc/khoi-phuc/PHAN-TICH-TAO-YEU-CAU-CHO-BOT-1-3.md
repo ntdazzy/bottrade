@@ -51,7 +51,12 @@ và [bot 3](bot-cua-toi-3/bang-chung/kiem-tao-yeu-cau-cho/pending-20261024-r2/co
 Một lượt kiểm độc lập nữa không tìm thấy lỗi đáng kể trong phạm vi
 nguồn và bộ so đã giao; [phạm vi kiểm](danh-gia-doc-lap/trade-components-20261024/review.md).
 
-Phạm vi còn thiếu: hàm gửi và kết quả thật, hàng đợi/thử lại, lỗi dữ
+Lượt tiếp đã dựng hàm gửi/thông báo và ghép với phần chuẩn bị, khớp
+1.687 ca mỗi bot. [Phạm vi mới](PHAN-TICH-GUI-LENH-BOT-1-3.md).
+Hàm `Prepare` ở trên vẫn chỉ là bước chuẩn bị; hàm `OpenPending`
+trong `BotNTradeSend.mqh` mới nối bước gửi và trả đúng kết quả gửi.
+
+Phạm vi còn thiếu: kết quả gửi thật, hàng đợi/thử lại, lỗi dữ
 liệu thật của MT5, chuỗi cũ đã cấp bộ nhớ và lỗi cấp bộ nhớ. Lượt
 `pending-20261024-r1` của bot 1 giữ bằng chứng khởi tạo bộ kiểm sai;
 không dùng làm kết quả đạt. Lượt `r2` dùng bố cục trong lớp đã đo lại.

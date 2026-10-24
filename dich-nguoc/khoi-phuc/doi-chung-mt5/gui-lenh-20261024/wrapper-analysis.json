@@ -1,0 +1,32 @@
+[
+  {
+    "bot": 1,
+    "rva": "0x950",
+    "native_code_sha256": "02ea4d7bfe8f743d650e6f88c9ebb368e72f974853f13c04a82446a03f979824",
+    "format_rva": "0x531e8",
+    "format": "CTrade::OrderSend: %s [%s]",
+    "async_flag_offset": 660,
+    "log_level_offset": 685,
+    "format_evaluation_order": [
+      "result text",
+      "request text",
+      "PrintFormat"
+    ],
+    "return": "Original32-bit API return, callers consume low byte; actual terminal bool values are0/1"
+  },
+  {
+    "bot": 3,
+    "rva": "0x950",
+    "native_code_sha256": "cd994d32c983116d8c365399e820c82ac239932d62ac7f18f80b1dcc72195fcc",
+    "format_rva": "0x5b998",
+    "format": "CTrade::OrderSend: %s [%s]",
+    "async_flag_offset": 660,
+    "log_level_offset": 685,
+    "format_evaluation_order": [
+      "result text",
+      "request text",
+      "PrintFormat"
+    ],
+    "return": "Original32-bit API return, callers consume low byte; actual terminal bool values are0/1"
+  }
+]

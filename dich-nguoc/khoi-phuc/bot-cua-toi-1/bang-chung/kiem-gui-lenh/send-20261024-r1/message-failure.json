@@ -1,0 +1,12 @@
+{
+  "status": "source-message-mismatch-not-passed",
+  "case": 6,
+  "native_format": "request %s %s %s at %s",
+  "reconstructed_format": "%s %s %s at %s",
+  "cause": "Reconstructed message omitted distinct request/instant/market/exchange prefixes. Native argument comparison caught it before final comparison.",
+  "source_sha256": {
+    "Bot1TradeMessages.mqh": "457154f7215e3c17f35548f224462de5cb1494bf98ebec90610291b98f4fdec4",
+    "Bot1TradeSend.mqh": "dddd20fb58daa7cd60ce87f08c89be3a204ce170e89418c801b24175d4d12e8c"
+  },
+  "fix": "Restore exact native format literals; rebuild and use a new run."
+}

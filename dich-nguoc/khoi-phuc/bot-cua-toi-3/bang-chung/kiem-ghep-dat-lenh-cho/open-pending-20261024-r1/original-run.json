@@ -1,0 +1,8 @@
+{
+  "cases": 1687,
+  "seconds": 26.96,
+  "result_sha256": "611bc8a0bc38c3f7a22a632d639617296fd6f198230cda11ff0390bfb533570d",
+  "fixtures_sha256": "93a865425030ed6e0e30e3ce754e8a06c62b758c0941c94bef97fc5833136db0",
+  "tool_sha256": "3c499d9ce9eae3ea8ab46c686fc1f34ff8b74be19e098f5802555463a2ff2f2d",
+  "scope": "Compare original pending builder through send/result/message handling as one path.\n\nUsage: kiem-ghep-dat-lenh-cho-bot-1-3.py prepare|mql5|original|compare BOT RUN [--build BUILD]\nNo trading request is sent. Send results and terminal properties are supplied;\nreal MT5 formatting is measured. All35 state fields, magic/preference and complete\ntyped API order/arguments are compared through the native return, not a stop marker.\n"
+}

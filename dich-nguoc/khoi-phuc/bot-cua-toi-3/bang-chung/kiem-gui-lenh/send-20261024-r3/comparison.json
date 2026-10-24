@@ -1,0 +1,13 @@
+{
+  "cases": 1201,
+  "matched": 1201,
+  "failed": 0,
+  "first_failures": [],
+  "hashes": {
+    "cases.bin": "315f51040b9ed2b961a78f84012a7c3c2e053efe094251430a606508d00ebe88",
+    "original-results.bin": "f05185d7b6417d2e9665528d0af832645957a0f4bca2eb93330b7d4acce3777f",
+    "mql5-results.bin": "f05185d7b6417d2e9665528d0af832645957a0f4bca2eb93330b7d4acce3777f",
+    "api-fixtures.bin": "c3772eeac5c6e9d1c26e77f114709edaeca3b49b3841976a4d9452cf306bf0f8"
+  },
+  "scope": "Full send wrapper and request/result message functions, ordered typed send/property/format calls, request/result fields, printed arguments and text. Send outcome is supplied and formatting/casts measured in MT5. No real or demo broker order submission, allocation-failure or whole EA claim."
+}

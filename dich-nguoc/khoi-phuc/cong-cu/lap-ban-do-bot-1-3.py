@@ -56,16 +56,16 @@ ROLES=[
 (0x22c00,0x2e330,'Hủy chuỗi trong một cấu trúc','Bộ nhớ'),
 (0x22c40,0x2e370,'Tạo yêu cầu sửa vị thế theo vé','Giao dịch'),
 (0x231c0,0x2e8f0,'Kiểm kiểu khớp lệnh theo thuộc tính mã giao dịch','Giao dịch'),
-(0x235c0,0x2ecf0,'Định dạng kết quả/yêu cầu giao dịch','Thông báo'),
+(0x235c0,0x2ecf0,'Định dạng kết quả giao dịch','Thông báo'),
 (0x23fa0,0x2f6d0,'Định dạng chi tiết yêu cầu giao dịch','Thông báo'),
-(0x26060,0x31790,'Đổi mã kết quả giao dịch thành chuỗi','Thông báo'),
-(0x26360,0x31a90,'Định dạng thông báo số/khối lượng','Thông báo'),
+(0x26060,0x31790,'Đổi loại lệnh thành chuỗi','Thông báo'),
+(0x26360,0x31a90,'Định dạng giá và giá kích hoạt','Thông báo'),
 (0x265a0,0x31cd0,'Tìm mức mua, xác nhận và lọc lệnh chờ gần','Điểm vào'),
 (0x26960,0x32090,'Tìm mức bán, xác nhận và lọc lệnh chờ gần','Điểm vào'),
 (0x26d20,0x32a90,'Kiểm vé/mã giao dịch và tạo yêu cầu sửa','Giao dịch'),
 (0x271f0,0x32f60,'Quản lý vị thế nhánh mua: dừng/chốt, dời và đóng','Quản lý vị thế'),
 (0x2abc0,0x37590,'Quản lý vị thế nhánh bán: dừng/chốt, dời và đóng','Quản lý vị thế'),
-(0x2e6d0,0x3bb10,'Gửi hàng đợi 100 lệnh chờ theo giá, ghi vé và thử lại khi lỗi 132','Giao dịch'),
+(0x2e6d0,0x3bb10,'Gửi hàng đợi 100 lệnh chờ theo giá, ghi kết quả và thử lại khi lỗi 132','Giao dịch'),
 (0x2f5c0,0x3ca00,'Quét/hủy lệnh chờ mua theo khoảng cách','Quản lý lệnh chờ'),
 (0x2f7e0,0x3cc20,'Quét/hủy lệnh chờ bán theo khoảng cách','Quản lý lệnh chờ'),
 (0x2fa00,0x3ce40,'Quét/đóng vị thế nhánh mua theo bộ lọc','Quản lý vị thế'),
@@ -82,7 +82,7 @@ ROLES=[
 (0x32ac0,0x3e270,'Tìm mức đáy theo hai chiều rộng nến','Mức giá'),
 (0x32ce0,0x3e490,'Đọc vé/đếm; cần giải nghĩa lời gọi lệnh/vị thế bị trộn','Quản lý lệnh chờ'),
 (0x32dd0,0x3e580,'Kiểm thuộc tính và tạo yêu cầu mở lệnh','Giao dịch'),
-(0x336d0,0x3ee80,'Định dạng nội dung gửi/kết quả giao dịch','Thông báo'),
+(0x336d0,0x3ee80,'Đổi mã lỗi thành chuỗi và tăng bộ đếm','Thông báo'),
 (0x34150,0x32450,'Kiểm vùng cấm sửa rồi tạo yêu cầu hủy lệnh','Giao dịch'),
 (0x34780,0x3f900,'Tính khối lượng và cập nhật trạng thái vốn','Khối lượng'),
 (0x36220,0x8300,'Đổi tiền của tài khoản sang USD','Đổi tiền tệ'),
@@ -232,10 +232,12 @@ def main():
                     reconstructed={'path':p.relative_to(ROOT).as_posix(),'sha256':sha(p),'partial_only':True}
             new_parts={
                 (0x231c0 if bot==1 else 0x2e8f0):('kiem-kieu-khop-lenh/filling-20261024-r1','Filling','Hàm chọn cách khớp; dữ liệu thuộc tính cấp sẵn, chưa ghép giao dịch.'),
-                (0x32dd0 if bot==1 else 0x3e580):('kiem-tao-yeu-cau-cho/pending-20261024-r2','PendingRequest','Chỉ chuẩn bị đến trước hàm gửi0x950; chưa phải gửi lệnh.'),
+                (0x32dd0 if bot==1 else 0x3e580):('kiem-ghep-dat-lenh-cho/open-pending-20261024-r1','TradeSend','Ghép tạo yêu cầu qua gửi/thông báo; kết quả gửi cấp sẵn, chưa có nơi giao dịch/hàng đợi/EA.'),
                 (0x3bfe0 if bot==1 else 0x46ca0):('kiem-khoi-luong-hop-le/volume-validation-20261024-r5','VolumeValidation','Hàm kiểm khối lượng; đuôi số trong thông báo và ghép EA còn mở.'),
                 (0x17840 if bot==1 else 0x7e20):('kiem-gio-mua-he/dst-20261024-r1','AmericanDST','Hàm giờ theo mùa trong bộ ca đã ghi; các lỗi và giờ sát biên năm xa còn mở.'),
             }
+            for send_rva in [0x950,*( [0x235c0,0x23fa0,0x26060,0x26360] if bot==1 else [0x2ecf0,0x2f6d0,0x31790,0x31a90])]:
+                new_parts[send_rva]=('kiem-gui-lenh/send-20261024-r3','TradeSend' if send_rva==0x950 else 'TradeMessages','Hàm gửi/thông báo trong bộ ca đã ghi; kết quả gửi cấp sẵn, chưa có nơi giao dịch hoặc toàn EA.')
             if rva in new_parts:
                 sub,name,limit=new_parts[rva];p=ROOT/f'bot-cua-toi-{bot}/bang-chung'/sub/'comparison.json'
                 if p.exists():
