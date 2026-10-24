@@ -46,3 +46,18 @@
 /danh-gia-claude/order-scan-ultracode-20261024-r1/** -text
 /ban-do-bot-1-3/luot-20261024-r9/** -text
 /KIEM-CHUNG-CHUOI-DAT-LENH-BOT-1-3*.json -text
+/bot-cua-toi-[13]/source/MQL5/Include/bot-cua-toi-[13]/Bot[13]OrderScan.mqh -text
+/bot-cua-toi-[13]/source/MQL5/Scripts/bot-cua-toi-[13]/Bot[13]OrderScanCheck.mq5 -text
+/bot-cua-toi-[13]/bang-chung/kiem-quet-lenh/** -text
+/bot-cua-toi-[13]/bang-chung/bien-dich/b[13]-order-scan-*/** -text
+/bot-cua-toi-[13]/phan-tich/huy-lenh-cho/** -text
+# C excerpts preserve the original trailing spaces; do not reformat evidence.
+/bot-cua-toi-[13]/phan-tich/huy-lenh-cho/**/functions.c whitespace=-blank-at-eol,-blank-at-eof,cr-at-eol
+/cong-cu/kiem-quet-lenh-bot-1-3.py -text
+/cong-cu/kiem-chung-quet-lenh-bot-1-3.py -text
+/cong-cu/phan-tich-huy-lenh-cho-bot-1-3.py -text
+/doi-chung-mt5/quet-lenh-20261024/** -text
+/danh-gia-doc-lap/quet-lenh-20261024/** -text
+/danh-gia-claude/cancel-guards-ultracode-20261024-r1/** -text
+/ban-do-bot-1-3/luot-20261024-r10/** -text
+/KIEM-CHUNG-QUET-LENH-BOT-1-3*.json -text

@@ -1,0 +1,15 @@
+[
+  {
+    "id": "q-engine-engine-b1-r5",
+    "expert": "RecoveryPipeline20261024\\engine-b1-r5\\PipelineEngineCheck.ex5",
+    "symbol": "XAUUSD_NOCOST_V2",
+    "period": "M15",
+    "model": 0,
+    "from": "2026.09.29",
+    "to": "2026.09.30",
+    "timeout": 120,
+    "inputs": {
+      "CheckRun": "pipeline-20261024-r3"
+    }
+  }
+]

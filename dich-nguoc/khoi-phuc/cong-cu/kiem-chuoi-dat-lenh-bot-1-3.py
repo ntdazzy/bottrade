@@ -190,14 +190,16 @@ def validate_fixture_inputs(row,records):
     if inside:raise ValueError('FIXTURE_BUILDER_NOT_RETURNED')
 
 def dependencies(bot):
-    paths=[Path(__file__),Path(queue.__file__),Path(queue.errors.__file__),Path(send.__file__),Path(pending.__file__),Path(pending.fill.__file__),Path(pending.fill.validation.__file__),Path(pending.fill.entry.__file__),Path(pending.fill.entry.price_check.__file__),send.LAYOUT]
+    paths=[Path(__file__),Path(queue.__file__),Path(queue.errors.__file__),Path(send.__file__),Path(pending.__file__),Path(pending.fill.__file__),Path(pending.fill.validation.__file__),Path(pending.fill.validation.volume.__file__),Path(pending.fill.entry.__file__),Path(pending.fill.entry.price_check.__file__),send.LAYOUT]
     paths.extend(ROOT/name for name in json.loads(send.LAYOUT.read_text())['source_sha256'])
     folder='luot-20261023-data-v2' if bot==1 else 'luot-20261023-data'
     home=ROOT/f'bot-cua-toi-{bot}';capture=home/'bang-chung/captures/luot-20261023-r1/capture.json'
     paths.extend([home/'phan-tich'/folder/'metadata/import.json',capture,home/'bang-chung/luot-20261023-r1/engine-observed.json'])
     paths.extend(capture.parent/region['file'] for region in json.loads(capture.read_text())['regions'])
     paths.extend(ROOT/'doi-chung-mt5/hang-doi-20261024/arithmetic-runtime-r2'/name for name in ['results.json','results.bin'])
-    return {path.relative_to(ROOT).as_posix():sha(path) for path in paths}
+    runtime=ROOT.parent/'.local/claude-recovery-20261023/python'
+    paths.extend(path for package in ['unicorn','capstone'] for path in (runtime/package).rglob('*') if path.is_file() and path.suffix in ['.py','.dll'])
+    return {(path.relative_to(ROOT).as_posix() if path.is_relative_to(ROOT) else '../'+path.relative_to(ROOT.parent).as_posix()):sha(path) for path in paths}
 def read_results(path,n):
     rd=send.Reader(path.read_bytes())
     if rd.take('3i')!=(MAGIC,1,n):raise ValueError('RESULT_HEADER_DIFFERS')
@@ -309,7 +311,7 @@ class Original(queue.Original):
                     if i and struct.unpack('<I',m.mem_read(sp+32+16*i,4))[0]!=0x590008:raise ValueError('PREPARATION_MESSAGE_TYPE_DIFFERS')
                     actual.append(self.text(struct.unpack('<Q',m.mem_read(sp+40+16*i,8))[0]))
                 expected=self.next(7 if opcode==2 else 8)
-                if actual!=list(expected[:count]):raise ValueError('PREPARATION_MESSAGE_ARGUMENTS_DIFFER')
+                if count!=(len(expected) if opcode==2 else 2) or actual!=list(expected[:count]):raise ValueError('PREPARATION_MESSAGE_ARGUMENTS_DIFFER')
                 return
             return send.Original.call(self,m,address,size,user)
         if api==46 and m.reg_read(x.UC_X86_REG_R8)==0x53:return send.Original.call(self,m,address,size,user)
@@ -374,6 +376,7 @@ def main():
         if sha(out/name)!=digest:raise ValueError('MQL5_EVIDENCE_CHANGED')
     if sha(out/'original-results.bin')!=native['result_sha256'] or sha(out/'api-fixtures.bin')!=native['fixtures_sha256'] or sha(Path(__file__))!=native['tool_sha256']:raise ValueError('NATIVE_EVIDENCE_CHANGED')
     if native['dependencies_sha256']!=dependencies(a.bot) or native['fixture_input_contract_checked_cases']!=n:raise ValueError('NATIVE_DEPENDENCIES_OR_INPUT_CONTRACT_CHANGED')
+    if baseline['tool_sha256']!=native['tool_sha256'] or encode(cases())!=(out/'cases.bin').read_bytes():raise ValueError('CASE_GENERATOR_OR_PREPARATION_TOOL_CHANGED')
     records,chart,digits=fixtures(out/'api-fixtures.bin',n)
     for row in rows:validate_fixture_inputs(row,records[row['id']])
     original=read_results(out/'original-results.bin',n);actual=read_results(out/'mql5-results.bin',n);failures=[]

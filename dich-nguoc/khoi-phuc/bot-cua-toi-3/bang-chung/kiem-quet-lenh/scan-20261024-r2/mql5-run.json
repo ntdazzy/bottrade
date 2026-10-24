@@ -1,0 +1,16 @@
+{
+  "cases": 215,
+  "exit_code": 0,
+  "seconds": 3.4,
+  "script_sha256": "e428ae2abeeb560689041f129dc3cb78cffaa90671574e09bd3a8be40fb45007",
+  "build_receipt": "bot-cua-toi-3/bang-chung/bien-dich/b3-order-scan-01/bien-nhan.json",
+  "build_receipt_sha256": "6a6a7c1a525f7bf1fc7098e9358ccb57b930115ad1aac941200d7202ada59dc9",
+  "sources_sha256": {
+    "Scripts/bot-cua-toi-3/Bot3OrderScanCheck.mq5": "7091566d65d4c06173568c5e732e48daacfb81d9ad11ed61f3c6521fb39b0f84",
+    "Include/bot-cua-toi-3/Bot3OrderScan.mqh": "b076c27183eae6a9a8c9c23aaad427f4984580f6e7f6a8a3a392d0371bc1b667"
+  },
+  "hashes": {
+    "mql5-results.bin": "b3885c6d53841afef79418c4679eeafd416939adbb71eed8707c2d429a59ac39",
+    "script-status.bin": "34021edc73ef25f580cf59e5f04e3d64c938b674cf66ee570758d894a8249c3e"
+  }
+}

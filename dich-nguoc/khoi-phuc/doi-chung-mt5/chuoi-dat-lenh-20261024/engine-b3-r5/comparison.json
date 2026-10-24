@@ -1,0 +1,20 @@
+{
+  "bot": 3,
+  "cases": 818,
+  "matched": 818,
+  "failed": 0,
+  "first_failures": [],
+  "seconds": 6.2,
+  "source_comparison": "bot-cua-toi-3/bang-chung/kiem-chuoi-dat-lenh/pipeline-20261024-r3",
+  "hashes": {
+    "cases.bin": "b6bd533411e42f6fe749321db921973eebf2fbbf82b26395e74672ead35050a0",
+    "original-results.bin": "4ed7498583ae62dce3fe76fcb04572e9463442b50fc5ee8b3ab7d4002b43cac7",
+    "tester-mql5-results.bin": "4ed7498583ae62dce3fe76fcb04572e9463442b50fc5ee8b3ab7d4002b43cac7",
+    "script-mql5-results.bin": "4ed7498583ae62dce3fe76fcb04572e9463442b50fc5ee8b3ab7d4002b43cac7",
+    "api-fixtures.bin": "90762e71fce26732ade8e53336db4a099994ca9581299d8180bc31c77187bed5",
+    "script-status.bin": "6688a16d4e43f4676efcf06aed961283064abf098958ce3aa5568586f25689c1"
+  },
+  "whole_bot_complete": false,
+  "scope": "Same full queue -> actual pending builder -> filling -> send -> messages check body inside identical tester engine. All500 queue doubles,35 trade fields,four full strings,actual builder bool and ordered API arguments/state compared. Terminal properties/send outcomes/errors supplied and input-bound; no actual broker/full EA/allocation-fault proof.",
+  "fixture_input_contract_checked_cases": 818
+}

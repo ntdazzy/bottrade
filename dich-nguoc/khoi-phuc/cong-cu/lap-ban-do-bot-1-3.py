@@ -80,7 +80,7 @@ ROLES=[
 (0x325b0,0x3dd60,'Giới hạn lệnh chờ nhánh bán, chọn giá cần xử lý','Quản lý lệnh chờ'),
 (0x32890,0x3e040,'Tìm mức đỉnh theo hai chiều rộng nến','Mức giá'),
 (0x32ac0,0x3e270,'Tìm mức đáy theo hai chiều rộng nến','Mức giá'),
-(0x32ce0,0x3e490,'Đọc vé/đếm; cần giải nghĩa lời gọi lệnh/vị thế bị trộn','Quản lý lệnh chờ'),
+(0x32ce0,0x3e490,'Dọn bảng kết quả 100 hàng theo vé vị thế; lấy biên từ tổng lệnh chờ','Quản lý lệnh chờ'),
 (0x32dd0,0x3e580,'Kiểm thuộc tính và tạo yêu cầu mở lệnh','Giao dịch'),
 (0x336d0,0x3ee80,'Đổi mã lỗi thành chuỗi và tăng bộ đếm','Thông báo'),
 (0x34150,0x32450,'Kiểm vùng cấm sửa rồi tạo yêu cầu hủy lệnh','Giao dịch'),
@@ -238,6 +238,9 @@ def main():
                 (0x3bfe0 if bot==1 else 0x46ca0):('kiem-khoi-luong-hop-le/volume-validation-20261024-r5','VolumeValidation','Hàm kiểm khối lượng; đuôi số trong thông báo và ghép EA còn mở.'),
                 (0x17840 if bot==1 else 0x7e20):('kiem-gio-mua-he/dst-20261024-r1','AmericanDST','Hàm giờ theo mùa trong bộ ca đã ghi; các lỗi và giờ sát biên năm xa còn mở.'),
             }
+            scan_rvas={1:{0x31f40:'0',0x323e0:'1',0x32ce0:'2'},3:{0x3e490:'2',0x47330:'3'}}
+            for scan_rva in scan_rvas[bot]:
+                new_parts[scan_rva]=('kiem-quet-lenh/scan-20261024-r2','OrderScan','Quét/đếm/dọn bảng/giới hạn trong bộ ca; truy vấn và trạng thái chọn được cấp. Còn tài khoản thật, lỗi cấp bộ nhớ và ghép EA.')
             for send_rva in [0x950,*( [0x235c0,0x23fa0,0x26060,0x26360] if bot==1 else [0x2ecf0,0x2f6d0,0x31790,0x31a90])]:
                 new_parts[send_rva]=('kiem-gui-lenh/send-20261024-r3','TradeSend' if send_rva==0x950 else 'TradeMessages','Hàm gửi/thông báo trong bộ ca đã ghi; kết quả gửi cấp sẵn, chưa có nơi giao dịch hoặc toàn EA.')
             if rva in new_parts:
@@ -247,13 +250,16 @@ def main():
                     proof={'path':p.relative_to(ROOT).as_posix(),'sha256':sha(p),'comparison':comparison,'partial_only':limit}
                     p=ROOT/f'bot-cua-toi-{bot}/source/MQL5/Include/bot-cua-toi-{bot}/Bot{bot}{name}.mqh'
                     reconstructed={'path':p.relative_to(ROOT).as_posix(),'sha256':sha(p),'partial_only':True}
+                    if rva in scan_rvas[bot]:
+                        group=scan_rvas[bot][rva];engine=ROOT/f'doi-chung-mt5/quet-lenh-20261024/engine-scan-b{bot}-r2/comparison.json'
+                        proof.update(function_case_group=group,group_comparison=comparison['groups'][group],tester_comparison=engine.relative_to(ROOT).as_posix(),tester_comparison_sha256=sha(engine))
             pipeline_rvas={1:{0x950,0x231c0,0x235c0,0x23fa0,0x26060,0x26360,0x2e6d0,0x32dd0,0x336d0},
                            3:{0x950,0x2e8f0,0x2ecf0,0x2f6d0,0x31790,0x31a90,0x3bb10,0x3e580,0x3ee80}}
             if proof and rva in pipeline_rvas[bot]:
-                p=ROOT/f'bot-cua-toi-{bot}/bang-chung/kiem-chuoi-dat-lenh/pipeline-20261024-r2/comparison.json'
+                p=ROOT/f'bot-cua-toi-{bot}/bang-chung/kiem-chuoi-dat-lenh/pipeline-20261024-r3/comparison.json'
                 if p.exists():
                     comparison=json.loads(p.read_text());assert comparison['cases']==comparison['matched']==818 and comparison['failed']==0
-                    engine=ROOT/f'doi-chung-mt5/chuoi-dat-lenh-20261024/engine-b{bot}-r4/comparison.json'
+                    engine=ROOT/f'doi-chung-mt5/chuoi-dat-lenh-20261024/engine-b{bot}-r5/comparison.json'
                     tested=json.loads(engine.read_text());assert tested['cases']==tested['matched']==818 and tested['failed']==0
                     proof['combined_pipeline']={'path':p.relative_to(ROOT).as_posix(),'sha256':sha(p),'comparison':comparison,
                         'tester_comparison':engine.relative_to(ROOT).as_posix(),'tester_comparison_sha256':sha(engine),

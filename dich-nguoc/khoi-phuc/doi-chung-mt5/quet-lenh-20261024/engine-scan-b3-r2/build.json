@@ -1,0 +1,15 @@
+{
+  "exit_code": 1,
+  "errors": 0,
+  "warnings": 0,
+  "source_sha256": "92515ae75ce0e873088b604ee7da443e7be7c492b8f0ec1d0b6875477211b824",
+  "binary_sha256": "012f8b79d46e5dc857ca77329e561c4103541adf8bece3520804098993041f42",
+  "component_build_receipt_sha256": "6a6a7c1a525f7bf1fc7098e9358ccb57b930115ad1aac941200d7202ada59dc9",
+  "component_sources_sha256": {
+    "Scripts/bot-cua-toi-3/Bot3OrderScanCheck.mq5": "7091566d65d4c06173568c5e732e48daacfb81d9ad11ed61f3c6521fb39b0f84",
+    "Include/bot-cua-toi-3/Bot3OrderScan.mqh": "b076c27183eae6a9a8c9c23aaad427f4984580f6e7f6a8a3a392d0371bc1b667"
+  },
+  "test_input_sha256": "e3eff176c85c2579084cb4069c68cae349e5dfcf3db21ca3516cb2eadaa8d5fe",
+  "tester_sha256": "5033d9d45d669cebd735e8a6be20b54d74b75274f885c9a0e48e52d872104efb",
+  "tool_sha256": "ddcd52df2617aa6f06d8fe77dc14a532f1507744753ba6b807b6ed7745bcdd09"
+}

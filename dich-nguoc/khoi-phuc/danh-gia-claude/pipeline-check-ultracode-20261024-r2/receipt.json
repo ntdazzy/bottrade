@@ -1,0 +1,41 @@
+{
+  "session_id": "43de9f8b-1e57-4a98-b537-fbbe3ea87616",
+  "process_returned": true,
+  "review_received": true,
+  "partial_analysis_only": false,
+  "actual_request_effort_verified": true,
+  "observed_requests": [
+    {
+      "timestamp": "2026-10-24T12:37:05.720Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-24T12:37:26.927Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-24T12:37:39.703Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-24T12:39:30.283Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-24T12:41:57.722Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    }
+  ],
+  "observed_settings": {
+    "ultracode": true
+  },
+  "children": [],
+  "response_sha256": "bee28faa1de02dc0c1b7c3a2a1c8baf7a91c16d5a4984616dddc7a69015a7678",
+  "transcript_sha256_at_completion": "4c0e40b53f6fac32af3282399e6125460e0f9ce14535ed10ff59599f2bf4d811",
+  "limit": "Read-only scoped review; no MT5/hash recalculation. Parent must verify and fix findings."
+}

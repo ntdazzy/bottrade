@@ -1,0 +1,22 @@
+{
+  "exit_code": 0,
+  "seconds": 3.29,
+  "script_sha256": "22902d1fe785b6e77f3df5f3ff312e0a9424c819974725f6e042acc050d8a0e0",
+  "build_receipt": "bot-cua-toi-1/bang-chung/bien-dich/b1-pending-pipeline-02/bien-nhan.json",
+  "build_receipt_sha256": "4d0c73ce89842363882dfa7be6b8b968f583439fbc4652d2af11b0edbebb69f9",
+  "sources_sha256": {
+    "Scripts/bot-cua-toi-1/Bot1PendingPipelineCheck.mq5": "c01912c9d8bbb9b76fdf42dbab85d179087d3a320872220f86eaa6b3e4a38db1",
+    "Scripts/bot-cua-toi-1/Bot1PipelineApi.mqh": "cc7c0e9d1199205e1f2b6ab178a55cb6e9fc838e991d3b40a176f90f4d110cee",
+    "Include/bot-cua-toi-1/Bot1PendingQueue.mqh": "80cc8d64096392a4e30924c6b41727dc40c69058c7523f814638b7391b8dd962",
+    "Include/bot-cua-toi-1/Bot1TradeErrors.mqh": "e82f3b2f47ce8bd998f775b2e87e5e94ebc66a93ffec6adc48d5c7b896366883",
+    "Include/bot-cua-toi-1/Bot1TradeSend.mqh": "dddd20fb58daa7cd60ce87f08c89be3a204ce170e89418c801b24175d4d12e8c",
+    "Include/bot-cua-toi-1/Bot1TradeMessages.mqh": "af36245e2dd03ec12d5808457530c4937bc354a9a68b5a1f70f8bc394f5ab5a3",
+    "Include/bot-cua-toi-1/Bot1PendingRequest.mqh": "46ffbb7da4d469533e1a665b5b666ccbfc755ff973ae5e5ebabf5cdd9051700d",
+    "Include/bot-cua-toi-1/Bot1Filling.mqh": "d01485811439d971833de028c791c5abb6cb64ba5b9c20228ca8785453a6615d"
+  },
+  "hashes": {
+    "mql5-results.bin": "4ed7498583ae62dce3fe76fcb04572e9463442b50fc5ee8b3ab7d4002b43cac7",
+    "api-fixtures.bin": "90762e71fce26732ade8e53336db4a099994ca9581299d8180bc31c77187bed5",
+    "script-status.bin": "6688a16d4e43f4676efcf06aed961283064abf098958ce3aa5568586f25689c1"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "bot": 3,
+  "cases": 215,
+  "matched": 215,
+  "failed": 0,
+  "first_failures": [],
+  "seconds": 6.17,
+  "source_comparison": "bot-cua-toi-3/bang-chung/kiem-quet-lenh/scan-20261024-r2",
+  "hashes": {
+    "cases.bin": "e3eff176c85c2579084cb4069c68cae349e5dfcf3db21ca3516cb2eadaa8d5fe",
+    "original-results.bin": "b3885c6d53841afef79418c4679eeafd416939adbb71eed8707c2d429a59ac39",
+    "tester-mql5-results.bin": "b3885c6d53841afef79418c4679eeafd416939adbb71eed8707c2d429a59ac39",
+    "script-mql5-results.bin": "b3885c6d53841afef79418c4679eeafd416939adbb71eed8707c2d429a59ac39",
+    "script-status.bin": "34021edc73ef25f580cf59e5f04e3d64c938b674cf66ee570758d894a8249c3e"
+  },
+  "whole_bot_complete": false,
+  "scope": "Same five scoped order-scan functions/check body in identical tester engine. Return,last ticket,all200 table doubles and ordered query/selection-model records compared. No orders. Queries and selection supplied; no full EA/actual account/CPU-allocation-fault proof."
+}

@@ -19,9 +19,9 @@ phải được phân tích tiếp trước khi viết luật tương ứng.
 
 Danh sách đầy đủ từng hàm và từng dòng cài đặt:
 
-- [Bot 1](ban-do-bot-1-3/luot-20261024-r9/bot-1.md), [dữ liệu chi tiết](ban-do-bot-1-3/luot-20261024-r9/bot-1.json).
-- [Bot 3](ban-do-bot-1-3/luot-20261024-r9/bot-3.md), [dữ liệu chi tiết](ban-do-bot-1-3/luot-20261024-r9/bot-3.json).
-- [Biên nhận lập danh sách](ban-do-bot-1-3/luot-20261024-r9/summary.json).
+- [Bot 1](ban-do-bot-1-3/luot-20261024-r10/bot-1.md), [dữ liệu chi tiết](ban-do-bot-1-3/luot-20261024-r10/bot-1.json).
+- [Bot 3](ban-do-bot-1-3/luot-20261024-r10/bot-3.md), [dữ liệu chi tiết](ban-do-bot-1-3/luot-20261024-r10/bot-3.json).
+- [Biên nhận lập danh sách](ban-do-bot-1-3/luot-20261024-r10/summary.json).
 
 Mỗi hàm có vị trí gốc, dòng C, các hàm gọi/được gọi, lời gọi MT5, mã
 điều phối, chuỗi liên quan, biến dùng chung, nguồn dựng lại và bằng
@@ -65,8 +65,8 @@ phép đối chiếu trong phạm vi cụ thể; không đánh dấu hoàn tất
 | P14 | Vốn cao nhất, rút tiền và lưu trạng thái | `0x173f0`, `0xc30` / `0x1fd00`, `0xc30` | Đã so cập nhật/ghi-đọc, tên mục và nạp lại trong đoạn khởi tạo; còn ghép toàn bộ, mã lỗi/thông báo và kiểm cùng tài khoản |
 | P15 | Kiểm khối lượng hợp lệ và ký quỹ | `0x3bfe0`, `0x3cb30`, `0x457d0` / `0x46ca0`, `0x47840`, `0x53670` | Đã so kiểm ký quỹ và dựng kiểm khối lượng hợp lệ: 1.834 ca mỗi bot, gồm 27 lần dừng vì chia 0 thật. Còn ghép EA, lỗi dữ liệu thực và đuôi số thông báo; [bằng chứng](PHAN-TICH-KHOI-LUONG-HOP-LE-BOT-1-3.md) |
 | P16 | Tạo/gửi yêu cầu giao dịch | `0x950`, `0x2e6d0`, `0x32dd0` / `0x950`, `0x3bb10`, `0x3e580` | Đã dựng chọn cách khớp (3.096 ca), chuẩn bị (1.607 ca), gửi/thông báo (1.201 ca), ghép tạo yêu cầu qua gửi (1.687 ca), hàng đợi/thử lại (374 ca). Đã so chung hàng đợi→tạo→gửi→thông báo 818 ca mỗi bot, cả chương trình MQL5 và máy đo quá khứ. Thuộc tính/kết quả/lỗi gửi được cấp; còn nơi giao dịch và ghép EA; [phạm vi](PHAN-TICH-CHUOI-DAT-LENH-BOT-1-3.md) |
-| P17 | Quét, nhận dạng và đếm lệnh/vị thế | Các hàm nhóm `0x2f5c0..0x32ce0` / `0x3ca00..0x3e490`, bot 3 `0x47330` | Đã phân tích trước năm hàm đếm/dọn bảng/giới hạn, chốt chỉ số total..0, độ rộng mã nhận diện và lời gọi tổng lệnh/vé vị thế khác nhau. Chưa dựng/chạy; còn ép số đặc biệt, trạng thái chọn, nơi gọi và các hàm còn lại; [phạm vi](PHAN-TICH-QUET-LENH-BOT-1-3.md) |
-| P18 | Sửa/hủy lệnh chờ và vùng cấm sửa | `0x30320`, `0x34150` / `0x32450`, `0x3d650` | Cần điều kiện giá, chọn lệnh, trường yêu cầu và xử lý thất bại |
+| P17 | Quét, nhận dạng và đếm lệnh/vị thế | Các hàm nhóm `0x2f5c0..0x32ce0` / `0x3ca00..0x3e490`, bot 3 `0x47330` | Đã dựng năm hàm đếm/dọn bảng/giới hạn: bot 1 khớp 307 ca, bot 3 215 ca cả chương trình MQL5 và máy đo quá khứ. Còn trạng thái chọn/tài khoản thực, nơi gọi và các hàm còn lại; [phạm vi](PHAN-TICH-QUET-LENH-BOT-1-3.md) |
+| P18 | Sửa/hủy lệnh chờ và vùng cấm sửa | `0x30320`, `0x34150` / `0x32450`, `0x3d650`, các hàm chọn vé | Đã tách mã C/lệnh máy của ba hàm mỗi bot và chốt bốn điều kiện số, gồm khác biệt với số không xác định. Chưa có MQL5/kiểm chạy; còn đối chứng dữ liệu giá, chọn vé, sửa lệnh và xử lý thất bại; [phạm vi](PHAN-TICH-HUY-LENH-CHO-BOT-1-3.md) |
 | P19 | Hết hạn thật và tự quản lý hết hạn | Tham số ở `0x7500` / `0xe0c0`, nơi dùng trong chiến lược | Đã so cách tính thời hạn; chưa toàn bộ việc hủy khi đến hạn |
 | P20 | Dừng lỗ/chốt lời sau khớp | `0x271f0`, `0x2abc0` / `0x32f60`, `0x37590` | Cần cả hai chiều, đặt sau khớp và kết quả sửa |
 | P21 | Dời dừng lỗ/chốt lời, hòa vốn, phục hồi theo thời gian | Cùng hai hàm quản lý vị thế và các `UseHL*`, `AdjustTrail*` | Cần từng chế độ, giá kích hoạt, giới hạn và thử lại |
@@ -139,7 +139,11 @@ ghi kết quả 0/1 thay vì vé; hàm `0x26060/0x31790` đổi loại lệnh,
 `0x26360/0x31a90` định dạng giá, `0x336d0/0x3ee80` đổi mã lỗi.
 
 Lượt `luot-20261024-r8` nối thêm nguồn/bằng chứng hàng đợi 100 lệnh,
-thử lại và nội dung mã lỗi. Lượt hiện hành `luot-20261024-r9` nối thêm
+thử lại và nội dung mã lỗi. Lượt `luot-20261024-r9` nối thêm
 phép so chung hàng đợi→tạo→gửi→thông báo cho chín hàm của mỗi bot.
 Còn kết quả nơi giao dịch, toàn EA và các giới hạn CPU/bộ nhớ;
 không đánh dấu hai hàng P16/P31 hoặc toàn bộ bot là hoàn tất.
+
+Lượt hiện hành `luot-20261024-r10` nối thêm năm hàm quét/đếm/dọn bảng/
+giới hạn và phép so chuỗi đặt lệnh r3 đã sửa kiểm số đối số thông báo
+theo nhận xét Claude. Phần hủy đang ở bước phân tích; chưa có EA đầy đủ.

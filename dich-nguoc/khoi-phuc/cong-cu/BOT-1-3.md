@@ -2,6 +2,26 @@
 
 Chạy từ thư mục dự án. Mỗi lượt dùng tên mới để giữ bằng chứng cũ.
 
+## Quét/đếm lệnh và phân tích hủy
+
+- `kiem-quet-lenh-bot-1-3.py MODE BOT RUN [--build BUILD]`: thứ tự
+  `prepare` → biên dịch `BotNOrderScanCheck.mq5` → `original` →
+  `mql5` → `compare`. Không gửi/sửa/hủy lệnh. Lượt `scan-20261024-r2`,
+  bản `bN-order-scan-01`: bot 1 khớp 307 ca, bot 3 khớp 215 ca.
+- `kiem-hang-doi-trong-may-thu.py BOT NEW_RUN --component-run RUN
+  --build BUILD --scan`: chạy cùng thân kiểm trong máy đo quá khứ;
+  lượt đạt `engine-scan-b1-r2`/`engine-scan-b3-r2`.
+- `kiem-chung-quet-lenh-bot-1-3.py NEW_JSON`: kiểm hiện trạng nguồn,
+  bản biên dịch, dữ liệu gốc/MQL5/máy đo quá khứ và phần phụ thuộc;
+  không mở MT5. Đầu ra mới phải nằm trong `khoi-phuc`.
+- `phan-tich-huy-lenh-cho-bot-1-3.py BOT NEW_RUN`: tách ba hàm hủy/
+  chọn vé từ bản chụp đã kiểm mã; lưu C, lệnh máy, bốn khối điều kiện
+  số và biên nhận vào `bot-cua-toi-N/phan-tich/huy-lenh-cho/NEW_RUN/`.
+  Chỉ phân tích, không chạy mã bot hoặc MT5. Lượt `cancel-20261024-r1`.
+
+[Quét và giới hạn](../PHAN-TICH-QUET-LENH-BOT-1-3.md),
+[phần hủy chưa phục hồi](../PHAN-TICH-HUY-LENH-CHO-BOT-1-3.md).
+
 ## Hàng đợi và nội dung lỗi
 
 - `kiem-chuoi-loi-bot-1-3.py MODE BOT RUN [--build BUILD]`: dùng
@@ -376,12 +396,13 @@ Không gửi lệnh thật. Đầu ra ở
 `doi-chung-mt5/chuoi-dat-lenh-20261024/NEW_RUN/`. Bỏ `--pipeline`
 thì giữ cách kiểm hàng đợi riêng trước đây với `--queue-run`.
 
-Lượt đạt `pipeline-20261024-r2`, bản biên dịch
+Lượt đạt hiện hành `pipeline-20261024-r3`, bản biên dịch
 `b1-pending-pipeline-02`/`b3-pending-pipeline-02`, máy đo quá khứ
-`engine-b1-r4`/`engine-b3-r4`: 818 ca mỗi bot khớp từng byte.
+`engine-b1-r5`/`engine-b3-r5`: 818 ca mỗi bot khớp từng byte.
 `kiem-chung-chuoi-dat-lenh-bot-1-3.py NEW_JSON` kiểm lại bằng chứng,
 nguồn hiện hành và sáu kiểu dữ liệu cấp sai phải bị từ chối; không
-chạy MT5. `NEW_JSON` phải mới và ở trong `khoi-phuc`.
+chạy MT5. Đã thêm kiểm 0/1/3 đối số `Print` bị từ chối khi bản ghi
+đòi 2; 2 đối số đúng vẫn qua. `NEW_JSON` phải mới và ở trong `khoi-phuc`.
 [Phạm vi](../PHAN-TICH-CHUOI-DAT-LENH-BOT-1-3.md): dữ liệu dịch vụ
 MT5 được cấp, chưa phải phép so nơi giao dịch hoặc toàn EA.
 

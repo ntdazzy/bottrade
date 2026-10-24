@@ -1,0 +1,28 @@
+{
+  "session_id": "1177b58c-dab1-4762-a98b-b2358e8c1ca9",
+  "process_returned": false,
+  "review_received": false,
+  "actual_request_effort_verified": true,
+  "observed_requests": [
+    {
+      "timestamp": "2026-10-24T13:25:13.408Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-24T13:25:22.632Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-24T13:29:50.237Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    }
+  ],
+  "observed_settings": {
+    "ultracode": true
+  },
+  "transcript_sha256_at_observation": "ffdbee7e5e85fa35596f5d2c7aa278c6e6d3fd5650390e23d7db762bfb190026",
+  "limit": "Settings observed while the run was active; no final review yet."
+}

@@ -1,0 +1,14 @@
+{
+  "cases": 307,
+  "matched": 307,
+  "failed": 0,
+  "first_failures": [],
+  "hashes": {
+    "cases.bin": "11e4cd8ff4a160d7c68f464f13b917c15d2d84e316a64d547bc350bceaace44e",
+    "original-results.bin": "eeac5c041446ead37e134bf8c244c57c7f8fbb20b00f932085351fb3c2ce2973",
+    "mql5-results.bin": "eeac5c041446ead37e134bf8c244c57c7f8fbb20b00f932085351fb3c2ce2973",
+    "script-status.bin": "87b9916abf0556d10a43f0a2f164fb793f4f6f6f230e47a56db9d6f37b7be995"
+  },
+  "whole_bot_complete": false,
+  "scope": "Compare original order counters,100-row cleanup and account order limit.\n\nUsage: kiem-quet-lenh-bot-1-3.py prepare|original|mql5|compare BOT RUN [--build BUILD]\nQueries are supplied, not real account data; no send/modify/close calls exist.\nAll200 table doubles,return,last ticket,selection model and ordered API records\nare compared. Native conversion executes unchanged, including NaN/inf cases.\n"
+}

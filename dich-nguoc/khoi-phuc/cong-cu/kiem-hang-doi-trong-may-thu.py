@@ -2,6 +2,7 @@
 
 Usage: kiem-hang-doi-trong-may-thu.py BOT NEW_RUN --queue-run RUN --build BUILD
        kiem-hang-doi-trong-may-thu.py BOT NEW_RUN --component-run RUN --build BUILD --pipeline
+       kiem-hang-doi-trong-may-thu.py BOT NEW_RUN --component-run RUN --build BUILD --scan
 Creates a test EA from the checked script, changing only the file input path and
 event entry. Queue source remains unchanged. All sends/sleeps remain test doubles.
 """
@@ -21,18 +22,24 @@ queue=importlib.util.module_from_spec(spec);spec.loader.exec_module(queue)
 MT=queue.MT;sha=queue.sha;save=queue.save
 
 def main():
-    parser=argparse.ArgumentParser(description=__doc__);parser.add_argument('bot',type=int,choices=[1,3]);parser.add_argument('new_run');parser.add_argument('--queue-run','--component-run',dest='queue_run',required=True);parser.add_argument('--build',required=True);parser.add_argument('--pipeline',action='store_true');a=parser.parse_args()
+    parser=argparse.ArgumentParser(description=__doc__);parser.add_argument('bot',type=int,choices=[1,3]);parser.add_argument('new_run');parser.add_argument('--queue-run','--component-run',dest='queue_run',required=True);parser.add_argument('--build',required=True)
+    modes=parser.add_mutually_exclusive_group();modes.add_argument('--pipeline',action='store_true');modes.add_argument('--scan',action='store_true');a=parser.parse_args()
     for name in [a.new_run,a.queue_run,a.build]:
         if not re.fullmatch('[a-z0-9-]{1,40}',name):raise ValueError('INVALID_RUN_OR_BUILD')
     component=queue
     if a.pipeline:
         spec=importlib.util.spec_from_file_location('pipeline_check',Path(__file__).with_name('kiem-chuoi-dat-lenh-bot-1-3.py'));component=importlib.util.module_from_spec(spec);spec.loader.exec_module(component)
+    if a.scan:
+        spec=importlib.util.spec_from_file_location('scan_check',Path(__file__).with_name('kiem-quet-lenh-bot-1-3.py'));component=importlib.util.module_from_spec(spec);spec.loader.exec_module(component)
     label='Pipeline' if a.pipeline else 'Queue';part='kiem-chuoi-dat-lenh' if a.pipeline else 'kiem-hang-doi'
+    if a.scan:label='OrderScan';part='kiem-quet-lenh'
     home=ROOT/f'bot-cua-toi-{a.bot}';prior=home/'bang-chung'/part/a.queue_run;baseline=json.loads((prior/'baseline.json').read_text());rows=component.read_cases(prior/'cases.bin')
     if sha(prior/'cases.bin')!=baseline['cases_sha256'] or queue.send.pending.fill.validation.original_hash(a.bot)!=baseline['original_ex5_sha256']:raise ValueError('INPUTS_CHANGED')
     receipt_path=home/'bang-chung/bien-dich'/a.build/'bien-nhan.json';receipt=json.loads(receipt_path.read_text(encoding='utf-8-sig'))
     script_name=f'Scripts/bot-cua-toi-{a.bot}/Bot{a.bot}Pending{label}Check.mq5'
     names=[script_name]+[f'Include/bot-cua-toi-{a.bot}/Bot{a.bot}{name}.mqh' for name in ['PendingQueue','TradeErrors','TradeSend','TradeMessages','PendingRequest','Filling']]
+    if a.scan:
+        script_name=f'Scripts/bot-cua-toi-{a.bot}/Bot{a.bot}OrderScanCheck.mq5';names=[script_name,f'Include/bot-cua-toi-{a.bot}/Bot{a.bot}OrderScan.mqh']
     if a.pipeline:names.append(f'Scripts/bot-cua-toi-{a.bot}/Bot{a.bot}PipelineApi.mqh')
     if receipt['target']!=script_name or receipt['errors'] or receipt['warnings']:raise ValueError('SOURCE_BUILD_NOT_VERIFIED')
     for name in names:
@@ -40,6 +47,7 @@ def main():
         if sha(home/'source/MQL5'/name)!=expected or sha(MT/'MQL5'/name)!=expected:raise ValueError('CURRENT_OR_PRIVATE_SOURCE_DIFFERS '+name)
     if sha(MT/'metatester64.exe')!='5033d9d45d669cebd735e8a6be20b54d74b75274f885c9a0e48e52d872104efb':raise ValueError('TESTER_ENGINE_CHANGED')
     folder='chuoi-dat-lenh-20261024' if a.pipeline else 'hang-doi-20261024'
+    if a.scan:folder='quet-lenh-20261024'
     out=ROOT/'doi-chung-mt5'/folder/a.new_run;out.mkdir(parents=True,exist_ok=False)
     filename=f'b{a.bot}-{label.lower()}-{a.new_run}.bin';destination=MT/'MQL5/Files'/filename
     if destination.exists():raise FileExistsError('TESTER_INPUT_ALREADY_EXISTS')
@@ -78,7 +86,9 @@ def main():
     journal=(runner/(job['id']+'.log')).read_text()
     if marker+'0' not in journal:raise ValueError('QUEUE_TESTER_SCRIPT_DID_NOT_PASS')
     files=MT/f'Tester/Agent-127.0.0.1-3000/MQL5/Files/bot{a.bot}-pending-{label.lower()}'/a.queue_run
+    if a.scan:files=MT/f'Tester/Agent-127.0.0.1-3000/MQL5/Files/bot{a.bot}-order-scan'/a.queue_run
     output_names=['mql5-results.bin','api-fixtures.bin','script-status.bin'] if a.pipeline else ['mql5-results.bin','last-error-calibration.bin']
+    if a.scan:output_names=['mql5-results.bin','script-status.bin']
     for name in output_names:
         source_file=files/name
         if not source_file.resolve().is_relative_to(MT.resolve()):raise ValueError('AGENT_FILE_OUTSIDE_PRIVATE_MT5')
@@ -100,6 +110,11 @@ def main():
         comparison['scope']='Same full queue -> actual pending builder -> filling -> send -> messages check body inside identical tester engine. All500 queue doubles,35 trade fields,four full strings,actual builder bool and ordered API arguments/state compared. Terminal properties/send outcomes/errors supplied and input-bound; no actual broker/full EA/allocation-fault proof.'
         comparison['fixture_input_contract_checked_cases']=len(rows)
         comparison['hashes'].update({name:sha(out/name) for name in output_names if name!='mql5-results.bin'})
+    if a.scan:
+        import struct
+        if struct.unpack('<2i',(out/'script-status.bin').read_bytes())!=(0,len(rows)):raise ValueError('SCAN_TESTER_STATUS_DIFFERS')
+        comparison['hashes']['script-status.bin']=sha(out/'script-status.bin')
+        comparison['scope']='Same five scoped order-scan functions/check body in identical tester engine. Return,last ticket,all200 table doubles and ordered query/selection-model records compared. No orders. Queries and selection supplied; no full EA/actual account/CPU-allocation-fault proof.'
     save(out/'comparison.json',comparison);print(json.dumps(comparison));raise SystemExit(bool(failures))
 
 if __name__=='__main__':main()

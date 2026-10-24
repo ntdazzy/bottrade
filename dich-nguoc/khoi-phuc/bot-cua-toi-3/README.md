@@ -1,5 +1,9 @@
 # bot-cua-toi-3
 
+Đã dựng dọn bảng 100 hàng và kiểm giới hạn lệnh: 215/215 ca khớp cả
+chương trình MQL5 và máy đo quá khứ; biên dịch 0 lỗi/cảnh báo.
+[Phạm vi và phần còn thiếu](../PHAN-TICH-QUET-LENH-BOT-1-3.md).
+
 Đã so chung hàng đợi → tạo yêu cầu → kiểm cách khớp → gửi → thông báo:
 818/818 ca khớp trong chương trình MQL5 và máy đo quá khứ. Biên dịch
 0 lỗi/cảnh báo. Thuộc tính/kết quả gửi/lỗi được cấp trong bộ kiểm;

@@ -1,5 +1,12 @@
 # Kết quả khôi phục mã — lượt 23/10/2026
 
+Cập nhật tiếp 24/10: dựng năm hàm quét/đếm/dọn bảng/giới hạn lệnh.
+Bot 1 khớp **307/307**, bot 3 **215/215** ca, cả chương trình MQL5
+và máy đo quá khứ; biên dịch 0 lỗi/cảnh báo.
+[Phạm vi](PHAN-TICH-QUET-LENH-BOT-1-3.md). Đã sửa điểm yếu kiểm số
+đối số thông báo do Claude phát hiện, rồi so lại chuỗi đặt lệnh:
+818/818 ca mỗi bot vẫn khớp. Hai bot chưa có chương trình hoàn chỉnh.
+
 Cập nhật tiếp 24/10: chuỗi hàng đợi → tạo yêu cầu → kiểm cách khớp
 → gửi → thông báo khớp **818/818 ca mỗi bot**, cả chương trình MQL5
 và máy đo quá khứ. Đã kiểm dữ liệu cấp vào và nguồn/bản biên dịch.

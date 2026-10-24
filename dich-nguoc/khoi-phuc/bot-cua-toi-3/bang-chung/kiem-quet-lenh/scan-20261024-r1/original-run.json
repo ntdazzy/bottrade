@@ -1,0 +1,8 @@
+{
+  "cases": 215,
+  "seconds": 3.37,
+  "result_sha256": "b3885c6d53841afef79418c4679eeafd416939adbb71eed8707c2d429a59ac39",
+  "tool_sha256": "6681cae40fd1fa4ec2ae07f3175f4983291ab39bb38f1d8b157406d10b7d4c96",
+  "metadata_sha256": "2b0f2cf309fb5055a53acb134f61d4e35d33db55454cf85f79e2081ef586bc88",
+  "scope": "Compare original order counters,100-row cleanup and account order limit.\n\nUsage: kiem-quet-lenh-bot-1-3.py prepare|original|mql5|compare BOT RUN [--build BUILD]\nQueries are supplied, not real account data; no send/modify/close calls exist.\nAll200 table doubles,return,last ticket,selection model and ordered API records\nare compared. Native conversion executes unchanged, including NaN/inf cases.\n"
+}

@@ -35,7 +35,7 @@ Không trộn với mã sự kiện của bảng kết quả hàng đợi.
 
 Mã kiểm gốc đã khớp từng phần không thay cho phép so chung này.
 
-Đã so chung ở lượt `pipeline-20261024-r2`: **818/818 ca mỗi bot**.
+Đã so chung ở lượt `pipeline-20261024-r3`: **818/818 ca mỗi bot**.
 Biên dịch `b1-pending-pipeline-02` và `b3-pending-pipeline-02` đều
 0 lỗi, 0 cảnh báo. Chạy thêm cùng thân chương trình kiểm trong máy
 đo lại quá khứ, dùng đúng bộ máy MT5 đã chụp gốc: vẫn **818/818 mỗi
@@ -44,8 +44,8 @@ trùng từng byte; tệp lời gọi/định dạng cũng trùng giữa hai cá
 
 | Bằng chứng | Bot 1 | Bot 3 |
 |---|---|---|
-| So mã gốc với MQL5 | [818 ca](bot-cua-toi-1/bang-chung/kiem-chuoi-dat-lenh/pipeline-20261024-r2/comparison.json) | [818 ca](bot-cua-toi-3/bang-chung/kiem-chuoi-dat-lenh/pipeline-20261024-r2/comparison.json) |
-| Chạy trong máy đo quá khứ | [818 ca](doi-chung-mt5/chuoi-dat-lenh-20261024/engine-b1-r4/comparison.json) | [818 ca](doi-chung-mt5/chuoi-dat-lenh-20261024/engine-b3-r4/comparison.json) |
+| So mã gốc với MQL5 | [818 ca](bot-cua-toi-1/bang-chung/kiem-chuoi-dat-lenh/pipeline-20261024-r3/comparison.json) | [818 ca](bot-cua-toi-3/bang-chung/kiem-chuoi-dat-lenh/pipeline-20261024-r3/comparison.json) |
+| Chạy trong máy đo quá khứ | [818 ca](doi-chung-mt5/chuoi-dat-lenh-20261024/engine-b1-r5/comparison.json) | [818 ca](doi-chung-mt5/chuoi-dat-lenh-20261024/engine-b3-r5/comparison.json) |
 
 Đã ràng từng giá trị thuộc tính và đúng/sai khi đọc với dữ liệu ca
 kiểm; không chỉ lấy điều MT5 ghi ra rồi cấp lại cho hai phía. Kiểm
@@ -57,7 +57,7 @@ bị bộ kiểm từ chối ở cả hai bot.
 Bộ kiểm mới giữ dấu kiểm mã nguồn, bản biên dịch, bố cục trường,
 bảng hàm, bản chụp mã/dữ liệu và bằng chứng phép tính. Bản chuẩn bị
 ca và bản chạy gốc có mã riêng được giữ trong `tested-sources/`.
-[Kiểm chứng tổng hợp](KIEM-CHUNG-CHUOI-DAT-LENH-BOT-1-3.json).
+[Kiểm chứng tổng hợp hiện hành](KIEM-CHUNG-CHUOI-DAT-LENH-BOT-1-3-R3.json).
 
 Bản dành cho máy đo quá khứ chỉ đổi điểm vào, đường tệp đầu vào và
 đường nạp tệp hỗ trợ; thân kiểm và nguồn phục hồi giữ nguyên. Lời
@@ -79,5 +79,11 @@ thông báo đã giao năm tác tử; nhật ký phụ kết thúc bằng dòng 
 ngắt, chưa có nhận xét thực tế. Đã kiểm được Opus 5.5 `max` ở cả
 phiên chính và năm tác tử, nhưng **chưa có xác nhận của Claude**.
 Đã nối lại phiên bằng yêu cầu nhỏ hơn ở
-`pipeline-check-ultracode-20261024-r2`, bắt buộc trả đánh giá cụ thể;
-[biên nhận lần đầu](danh-gia-claude/pipeline-check-ultracode-20261024-r1/receipt.json).
+`pipeline-check-ultracode-20261024-r2`: Claude đã trả đánh giá cụ thể,
+chỉ ra bộ kiểm `Print` chưa so số đối số. Đã sửa, chạy lại toàn bộ
+và thêm ca cố tình cấp 0/1/3 đối số thay vì 2: đều bị từ chối;
+2 đối số đúng vẫn qua. Lượt r2 cũ không chứng minh riêng điểm này.
+Đồng thời đã băm thêm phần phụ thuộc bị thiếu và thư viện mô phỏng,
+sinh lại đầu vào để so byte, nối cùng mã công cụ chuẩn bị/chạy gốc.
+[Đánh giá của Claude](danh-gia-claude/pipeline-check-ultracode-20261024-r2/review.md),
+[biên nhận cấu hình thực](danh-gia-claude/pipeline-check-ultracode-20261024-r2/receipt.json).
