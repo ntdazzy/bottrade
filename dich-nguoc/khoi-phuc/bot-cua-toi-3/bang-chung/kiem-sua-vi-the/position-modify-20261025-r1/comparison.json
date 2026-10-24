@@ -1,0 +1,28 @@
+{
+  "cases": 1596,
+  "matched": 1596,
+  "failed": 0,
+  "first_failures": [],
+  "paths": {
+    "stopped": 83,
+    "select_failed": 33,
+    "sent": 1480
+  },
+  "coverage": {
+    "instructions": 196,
+    "executed": 196
+  },
+  "observed_literals": {
+    "0x5c970": "%s: MQL5 program is stopped. Trading is disabled",
+    "0x5b660": "CTrade::PositionModify"
+  },
+  "hashes": {
+    "cases.bin": "3cb84244854ad62c579833481ed6016dd5622a4d1eca95cfba8d59f1c09cf5ee",
+    "original-results.bin": "76f88d45fcd9bcf41602e3c011f1b10cd41b7f15606f2d895320dcfc146cf513",
+    "mql5-results.bin": "76f88d45fcd9bcf41602e3c011f1b10cd41b7f15606f2d895320dcfc146cf513",
+    "api-fixtures.bin": "9b49af4df8db7e631b415f3ac397180d829b274b96f05ebdeb1f27bda6126c7f",
+    "script-status.bin": "4f697a0fed08f103a4fda4ea4e4b1920b2447d4d990140ccbdc66ec8dbb70c0a"
+  },
+  "whole_bot_complete": false,
+  "scope": "Compare the complete position-modify-by-ticket path with the original EX5 code.\n\nUsage: kiem-sua-vi-the-bot-1-3.py prepare|mql5|original|compare BOT RUN [--build BUILD]\nOrder: prepare -> compile BotNPositionModifyCheck.mq5 -> mql5 --build -> original -> compare.\nIsStopped, PositionSelectByTicket/PositionGetString replies and the send reply are\nsupplied and input-bound; formatting/casts are measured in MT5. Original 0x26d20/0x32a90\nexecutes to return with 0x950, message and string helpers. Public state, four strings,\nNULL flags, stored values and send options are compared before each service call,\nafter send and on return. Final state is frozen before separate original output-string\ncleanup; memory balance is checked afterwards. Every analysed instruction must run.\nNo real orders, callers, full EA, broker/account behavior or allocation-fault proof.\n"
+}

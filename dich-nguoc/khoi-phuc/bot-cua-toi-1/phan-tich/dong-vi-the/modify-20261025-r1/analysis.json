@@ -1,0 +1,1203 @@
+{
+  "bot": 1,
+  "original_ex5_sha256": "a3b0de423a06e10ebedc279307b93d7cb9188ba2bb5de77131a913c865b0e922",
+  "inventory_sha256": "c9797f6d354c3b721322b1af0765f4b7058923f2f3ff9654736db7ff31ab6a5b",
+  "metadata_sha256": "732905b62143980f94c360226bfb75120d52bfccb7e646a3a0cc9be9d3e21adb",
+  "engine_sha256": "5033d9d45d669cebd735e8a6be20b54d74b75274f885c9a0e48e52d872104efb",
+  "source": "bot-cua-toi-1/phan-tich/luot-20261023-data-v2/ma-trung-gian.c",
+  "source_sha256": "c6389dfe5bd1ef95ed7616eaf5c16b7d041fbd279e650753d239b28e3ea65a8d",
+  "functions": [
+    {
+      "rva": "0x26d20",
+      "end_rva": "0x271e7",
+      "native_bytes_sha256": "2e80dc3d922f1a7a60b6609b77395050c52a09ff3bf1352cec145d624506d48c",
+      "source_line": 16977,
+      "source_last_line": 17100,
+      "observed_direct_calls": [],
+      "instructions": [
+        {
+          "rva": "0x26d20",
+          "bytes": "4157",
+          "mnemonic": "push",
+          "operands": "r15"
+        },
+        {
+          "rva": "0x26d22",
+          "bytes": "4156",
+          "mnemonic": "push",
+          "operands": "r14"
+        },
+        {
+          "rva": "0x26d24",
+          "bytes": "4155",
+          "mnemonic": "push",
+          "operands": "r13"
+        },
+        {
+          "rva": "0x26d26",
+          "bytes": "4154",
+          "mnemonic": "push",
+          "operands": "r12"
+        },
+        {
+          "rva": "0x26d28",
+          "bytes": "56",
+          "mnemonic": "push",
+          "operands": "rsi"
+        },
+        {
+          "rva": "0x26d29",
+          "bytes": "57",
+          "mnemonic": "push",
+          "operands": "rdi"
+        },
+        {
+          "rva": "0x26d2a",
+          "bytes": "55",
+          "mnemonic": "push",
+          "operands": "rbp"
+        },
+        {
+          "rva": "0x26d2b",
+          "bytes": "53",
+          "mnemonic": "push",
+          "operands": "rbx"
+        },
+        {
+          "rva": "0x26d2c",
+          "bytes": "4881ec88000000",
+          "mnemonic": "sub",
+          "operands": "rsp, 0x88"
+        },
+        {
+          "rva": "0x26d33",
+          "bytes": "440f29442470",
+          "mnemonic": "movaps",
+          "operands": "xmmword ptr [rsp + 0x70], xmm8"
+        },
+        {
+          "rva": "0x26d39",
+          "bytes": "0f297c2460",
+          "mnemonic": "movaps",
+          "operands": "xmmword ptr [rsp + 0x60], xmm7"
+        },
+        {
+          "rva": "0x26d3e",
+          "bytes": "0f29742450",
+          "mnemonic": "movaps",
+          "operands": "xmmword ptr [rsp + 0x50], xmm6"
+        },
+        {
+          "rva": "0x26d43",
+          "bytes": "c744244000000000",
+          "mnemonic": "mov",
+          "operands": "dword ptr [rsp + 0x40], 0"
+        },
+        {
+          "rva": "0x26d4b",
+          "bytes": "48c744244400000000",
+          "mnemonic": "mov",
+          "operands": "qword ptr [rsp + 0x44], 0"
+        },
+        {
+          "rva": "0x26d54",
+          "bytes": "48b814a4a75a3e020000",
+          "mnemonic": "movabs",
+          "operands": "rax, 0x23e5aa7a414"
+        },
+        {
+          "rva": "0x26d5e",
+          "bytes": "49bc0000a15a3e020000",
+          "mnemonic": "movabs",
+          "operands": "r12, 0x23e5aa10000"
+        },
+        {
+          "rva": "0x26d68",
+          "bytes": "833800",
+          "mnemonic": "cmp",
+          "operands": "dword ptr [rax], 0"
+        },
+        {
+          "rva": "0x26d6b",
+          "bytes": "7464",
+          "mnemonic": "je",
+          "operands": "0x23e5aa36dd1"
+        },
+        {
+          "rva": "0x26d6d",
+          "bytes": "48b8b02ea65a3e020000",
+          "mnemonic": "movabs",
+          "operands": "rax, 0x23e5aa62eb0"
+        },
+        {
+          "rva": "0x26d77",
+          "bytes": "48b9c041a65a3e020000",
+          "mnemonic": "movabs",
+          "operands": "rcx, 0x23e5aa641c0"
+        },
+        {
+          "rva": "0x26d81",
+          "bytes": "ba0d000000",
+          "mnemonic": "mov",
+          "operands": "edx, 0xd"
+        },
+        {
+          "rva": "0x26d86",
+          "bytes": "41b802000000",
+          "mnemonic": "mov",
+          "operands": "r8d, 2"
+        },
+        {
+          "rva": "0x26d8c",
+          "bytes": "41b908005900",
+          "mnemonic": "mov",
+          "operands": "r9d, 0x590008"
+        },
+        {
+          "rva": "0x26d92",
+          "bytes": "c744242808005900",
+          "mnemonic": "mov",
+          "operands": "dword ptr [rsp + 0x28], 0x590008"
+        },
+        {
+          "rva": "0x26d9a",
+          "bytes": "4889442430",
+          "mnemonic": "mov",
+          "operands": "qword ptr [rsp + 0x30], rax"
+        },
+        {
+          "rva": "0x26d9f",
+          "bytes": "48894c2420",
+          "mnemonic": "mov",
+          "operands": "qword ptr [rsp + 0x20], rcx"
+        },
+        {
+          "rva": "0x26da4",
+          "bytes": "48b978ae5e573e020000",
+          "mnemonic": "movabs",
+          "operands": "rcx, 0x23e575eae78"
+        },
+        {
+          "rva": "0x26dae",
+          "bytes": "48b8f0496d84f67f0000",
+          "mnemonic": "movabs",
+          "operands": "rax, 0x7ff6846d49f0"
+        },
+        {
+          "rva": "0x26db8",
+          "bytes": "ffd0",
+          "mnemonic": "call",
+          "operands": "rax"
+        },
+        {
+          "rva": "0x26dba",
+          "bytes": "48b8a075a75a3e020000",
+          "mnemonic": "movabs",
+          "operands": "rax, 0x23e5aa775a0"
+        },
+        {
+          "rva": "0x26dc4",
+          "bytes": "31f6",
+          "mnemonic": "xor",
+          "operands": "esi, esi"
+        },
+        {
+          "rva": "0x26dc6",
+          "bytes": "c7002b270000",
+          "mnemonic": "mov",
+          "operands": "dword ptr [rax], 0x272b"
+        },
+        {
+          "rva": "0x26dcc",
+          "bytes": "e9e8030000",
+          "mnemonic": "jmp",
+          "operands": "0x23e5aa371b9"
+        },
+        {
+          "rva": "0x26dd1",
+          "bytes": "4889cb",
+          "mnemonic": "mov",
+          "operands": "rbx, rcx"
+        },
+        {
+          "rva": "0x26dd4",
+          "bytes": "48b978ae5e573e020000",
+          "mnemonic": "movabs",
+          "operands": "rcx, 0x23e575eae78"
+        },
+        {
+          "rva": "0x26dde",
+          "bytes": "48b8e07e6f84f67f0000",
+          "mnemonic": "movabs",
+          "operands": "rax, 0x7ff6846f7ee0"
+        },
+        {
+          "rva": "0x26de8",
+          "bytes": "0f28f9",
+          "mnemonic": "movaps",
+          "operands": "xmm7, xmm1"
+        },
+        {
+          "rva": "0x26deb",
+          "bytes": "0f28f2",
+          "mnemonic": "movaps",
+          "operands": "xmm6, xmm2"
+        },
+        {
+          "rva": "0x26dee",
+          "bytes": "4889da",
+          "mnemonic": "mov",
+          "operands": "rdx, rbx"
+        },
+        {
+          "rva": "0x26df1",
+          "bytes": "ffd0",
+          "mnemonic": "call",
+          "operands": "rax"
+        },
+        {
+          "rva": "0x26df3",
+          "bytes": "84c0",
+          "mnemonic": "test",
+          "operands": "al, al"
+        },
+        {
+          "rva": "0x26df5",
+          "bytes": "0f84bc030000",
+          "mnemonic": "je",
+          "operands": "0x23e5aa371b7"
+        },
+        {
+          "rva": "0x26dfb",
+          "bytes": "49bec474a75a3e020000",
+          "mnemonic": "movabs",
+          "operands": "r14, 0x23e5aa774c4"
+        },
+        {
+          "rva": "0x26e05",
+          "bytes": "48b8c074a75a3e020000",
+          "mnemonic": "movabs",
+          "operands": "rax, 0x23e5aa774c0"
+        },
+        {
+          "rva": "0x26e0f",
+          "bytes": "450f57c0",
+          "mnemonic": "xorps",
+          "operands": "xmm8, xmm8"
+        },
+        {
+          "rva": "0x26e13",
+          "bytes": "48beb074a75a3e020000",
+          "mnemonic": "movabs",
+          "operands": "rsi, 0x23e5aa774b0"
+        },
+        {
+          "rva": "0x26e1d",
+          "bytes": "48bf9074a75a3e020000",
+          "mnemonic": "movabs",
+          "operands": "rdi, 0x23e5aa77490"
+        },
+        {
+          "rva": "0x26e27",
+          "bytes": "4c89f1",
+          "mnemonic": "mov",
+          "operands": "rcx, r14"
+        },
+        {
+          "rva": "0x26e2a",
+          "bytes": "440f2906",
+          "mnemonic": "movaps",
+          "operands": "xmmword ptr [rsi], xmm8"
+        },
+        {
+          "rva": "0x26e2e",
+          "bytes": "c70000000000",
+          "mnemonic": "mov",
+          "operands": "dword ptr [rax], 0"
+        },
+        {
+          "rva": "0x26e34",
+          "bytes": "41ffd4",
+          "mnemonic": "call",
+          "operands": "r12"
+        },
+        {
+          "rva": "0x26e37",
+          "bytes": "48b9e074a75a3e020000",
+          "mnemonic": "movabs",
+          "operands": "rcx, 0x23e5aa774e0"
+        },
+        {
+          "rva": "0x26e41",
+          "bytes": "48b80075a75a3e020000",
+          "mnemonic": "movabs",
+          "operands": "rax, 0x23e5aa77500"
+        },
+        {
+          "rva": "0x26e4b",
+          "bytes": "49bdf074a75a3e020000",
+          "mnemonic": "movabs",
+          "operands": "r13, 0x23e5aa774f0"
+        },
+        {
+          "rva": "0x26e55",
+          "bytes": "48bad074a75a3e020000",
+          "mnemonic": "movabs",
+          "operands": "rdx, 0x23e5aa774d0"
+        },
+        {
+          "rva": "0x26e5f",
+          "bytes": "440f2901",
+          "mnemonic": "movaps",
+          "operands": "xmmword ptr [rcx], xmm8"
+        },
+        {
+          "rva": "0x26e63",
+          "bytes": "48b91075a75a3e020000",
+          "mnemonic": "movabs",
+          "operands": "rcx, 0x23e5aa77510"
+        },
+        {
+          "rva": "0x26e6d",
+          "bytes": "440f2900",
+          "mnemonic": "movaps",
+          "operands": "xmmword ptr [rax], xmm8"
+        },
+        {
+          "rva": "0x26e71",
+          "bytes": "450f294500",
+          "mnemonic": "movaps",
+          "operands": "xmmword ptr [r13], xmm8"
+        },
+        {
+          "rva": "0x26e76",
+          "bytes": "440f2902",
+          "mnemonic": "movaps",
+          "operands": "xmmword ptr [rdx], xmm8"
+        },
+        {
+          "rva": "0x26e7a",
+          "bytes": "c70100000000",
+          "mnemonic": "mov",
+          "operands": "dword ptr [rcx], 0"
+        },
+        {
+          "rva": "0x26e80",
+          "bytes": "48b91475a75a3e020000",
+          "mnemonic": "movabs",
+          "operands": "rcx, 0x23e5aa77514"
+        },
+        {
+          "rva": "0x26e8a",
+          "bytes": "41ffd4",
+          "mnemonic": "call",
+          "operands": "r12"
+        },
+        {
+          "rva": "0x26e8d",
+          "bytes": "48b9b075a75a3e020000",
+          "mnemonic": "movabs",
+          "operands": "rcx, 0x23e5aa775b0"
+        },
+        {
+          "rva": "0x26e97",
+          "bytes": "48ba9075a75a3e020000",
+          "mnemonic": "movabs",
+          "operands": "rdx, 0x23e5aa77590"
+        },
+        {
+          "rva": "0x26ea1",
+          "bytes": "48b8c075a75a3e020000",
+          "mnemonic": "movabs",
+          "operands": "rax, 0x23e5aa775c0"
+        },
+        {
+          "rva": "0x26eab",
+          "bytes": "49bfa075a75a3e020000",
+          "mnemonic": "movabs",
+          "operands": "r15, 0x23e5aa775a0"
+        },
+        {
+          "rva": "0x26eb5",
+          "bytes": "48bd2075a75a3e020000",
+          "mnemonic": "movabs",
+          "operands": "rbp, 0x23e5aa77520"
+        },
+        {
+          "rva": "0x26ebf",
+          "bytes": "440f2901",
+          "mnemonic": "movaps",
+          "operands": "xmmword ptr [rcx], xmm8"
+        },
+        {
+          "rva": "0x26ec3",
+          "bytes": "48b98075a75a3e020000",
+          "mnemonic": "movabs",
+          "operands": "rcx, 0x23e5aa77580"
+        },
+        {
+          "rva": "0x26ecd",
+          "bytes": "440f2902",
+          "mnemonic": "movaps",
+          "operands": "xmmword ptr [rdx], xmm8"
+        },
+        {
+          "rva": "0x26ed1",
+          "bytes": "48ba7075a75a3e020000",
+          "mnemonic": "movabs",
+          "operands": "rdx, 0x23e5aa77570"
+        },
+        {
+          "rva": "0x26edb",
+          "bytes": "440f2900",
+          "mnemonic": "movaps",
+          "operands": "xmmword ptr [rax], xmm8"
+        },
+        {
+          "rva": "0x26edf",
+          "bytes": "450f2907",
+          "mnemonic": "movaps",
+          "operands": "xmmword ptr [r15], xmm8"
+        },
+        {
+          "rva": "0x26ee3",
+          "bytes": "440f294500",
+          "mnemonic": "movaps",
+          "operands": "xmmword ptr [rbp], xmm8"
+        },
+        {
+          "rva": "0x26ee8",
+          "bytes": "440f2901",
+          "mnemonic": "movaps",
+          "operands": "xmmword ptr [rcx], xmm8"
+        },
+        {
+          "rva": "0x26eec",
+          "bytes": "48b96075a75a3e020000",
+          "mnemonic": "movabs",
+          "operands": "rcx, 0x23e5aa77560"
+        },
+        {
+          "rva": "0x26ef6",
+          "bytes": "440f2902",
+          "mnemonic": "movaps",
+          "operands": "xmmword ptr [rdx], xmm8"
+        },
+        {
+          "rva": "0x26efa",
+          "bytes": "48ba5075a75a3e020000",
+          "mnemonic": "movabs",
+          "operands": "rdx, 0x23e5aa77550"
+        },
+        {
+          "rva": "0x26f04",
+          "bytes": "440f2901",
+          "mnemonic": "movaps",
+          "operands": "xmmword ptr [rcx], xmm8"
+        },
+        {
+          "rva": "0x26f08",
+          "bytes": "48b94075a75a3e020000",
+          "mnemonic": "movabs",
+          "operands": "rcx, 0x23e5aa77540"
+        },
+        {
+          "rva": "0x26f12",
+          "bytes": "440f2902",
+          "mnemonic": "movaps",
+          "operands": "xmmword ptr [rdx], xmm8"
+        },
+        {
+          "rva": "0x26f16",
+          "bytes": "48ba3075a75a3e020000",
+          "mnemonic": "movabs",
+          "operands": "rdx, 0x23e5aa77530"
+        },
+        {
+          "rva": "0x26f20",
+          "bytes": "440f2901",
+          "mnemonic": "movaps",
+          "operands": "xmmword ptr [rcx], xmm8"
+        },
+        {
+          "rva": "0x26f24",
+          "bytes": "48b9d075a75a3e020000",
+          "mnemonic": "movabs",
+          "operands": "rcx, 0x23e5aa775d0"
+        },
+        {
+          "rva": "0x26f2e",
+          "bytes": "440f2902",
+          "mnemonic": "movaps",
+          "operands": "xmmword ptr [rdx], xmm8"
+        },
+        {
+          "rva": "0x26f32",
+          "bytes": "c70100000000",
+          "mnemonic": "mov",
+          "operands": "dword ptr [rcx], 0"
+        },
+        {
+          "rva": "0x26f38",
+          "bytes": "48b9d475a75a3e020000",
+          "mnemonic": "movabs",
+          "operands": "rcx, 0x23e5aa775d4"
+        },
+        {
+          "rva": "0x26f42",
+          "bytes": "41ffd4",
+          "mnemonic": "call",
+          "operands": "r12"
+        },
+        {
+          "rva": "0x26f45",
+          "bytes": "48b97076a75a3e020000",
+          "mnemonic": "movabs",
+          "operands": "rcx, 0x23e5aa77670"
+        },
+        {
+          "rva": "0x26f4f",
+          "bytes": "48ba6076a75a3e020000",
+          "mnemonic": "movabs",
+          "operands": "rdx, 0x23e5aa77660"
+        },
+        {
+          "rva": "0x26f59",
+          "bytes": "48b88076a75a3e020000",
+          "mnemonic": "movabs",
+          "operands": "rax, 0x23e5aa77680"
+        },
+        {
+          "rva": "0x26f63",
+          "bytes": "440f2901",
+          "mnemonic": "movaps",
+          "operands": "xmmword ptr [rcx], xmm8"
+        },
+        {
+          "rva": "0x26f67",
+          "bytes": "48b95076a75a3e020000",
+          "mnemonic": "movabs",
+          "operands": "rcx, 0x23e5aa77650"
+        },
+        {
+          "rva": "0x26f71",
+          "bytes": "440f2902",
+          "mnemonic": "movaps",
+          "operands": "xmmword ptr [rdx], xmm8"
+        },
+        {
+          "rva": "0x26f75",
+          "bytes": "48ba4076a75a3e020000",
+          "mnemonic": "movabs",
+          "operands": "rdx, 0x23e5aa77640"
+        },
+        {
+          "rva": "0x26f7f",
+          "bytes": "440f2900",
+          "mnemonic": "movaps",
+          "operands": "xmmword ptr [rax], xmm8"
+        },
+        {
+          "rva": "0x26f83",
+          "bytes": "440f2901",
+          "mnemonic": "movaps",
+          "operands": "xmmword ptr [rcx], xmm8"
+        },
+        {
+          "rva": "0x26f87",
+          "bytes": "48b93076a75a3e020000",
+          "mnemonic": "movabs",
+          "operands": "rcx, 0x23e5aa77630"
+        },
+        {
+          "rva": "0x26f91",
+          "bytes": "440f2902",
+          "mnemonic": "movaps",
+          "operands": "xmmword ptr [rdx], xmm8"
+        },
+        {
+          "rva": "0x26f95",
+          "bytes": "48ba2076a75a3e020000",
+          "mnemonic": "movabs",
+          "operands": "rdx, 0x23e5aa77620"
+        },
+        {
+          "rva": "0x26f9f",
+          "bytes": "440f2901",
+          "mnemonic": "movaps",
+          "operands": "xmmword ptr [rcx], xmm8"
+        },
+        {
+          "rva": "0x26fa3",
+          "bytes": "48b91076a75a3e020000",
+          "mnemonic": "movabs",
+          "operands": "rcx, 0x23e5aa77610"
+        },
+        {
+          "rva": "0x26fad",
+          "bytes": "440f2902",
+          "mnemonic": "movaps",
+          "operands": "xmmword ptr [rdx], xmm8"
+        },
+        {
+          "rva": "0x26fb1",
+          "bytes": "48ba0076a75a3e020000",
+          "mnemonic": "movabs",
+          "operands": "rdx, 0x23e5aa77600"
+        },
+        {
+          "rva": "0x26fbb",
+          "bytes": "440f2901",
+          "mnemonic": "movaps",
+          "operands": "xmmword ptr [rcx], xmm8"
+        },
+        {
+          "rva": "0x26fbf",
+          "bytes": "48b9f075a75a3e020000",
+          "mnemonic": "movabs",
+          "operands": "rcx, 0x23e5aa775f0"
+        },
+        {
+          "rva": "0x26fc9",
+          "bytes": "440f2902",
+          "mnemonic": "movaps",
+          "operands": "xmmword ptr [rdx], xmm8"
+        },
+        {
+          "rva": "0x26fcd",
+          "bytes": "48bae075a75a3e020000",
+          "mnemonic": "movabs",
+          "operands": "rdx, 0x23e5aa775e0"
+        },
+        {
+          "rva": "0x26fd7",
+          "bytes": "440f2901",
+          "mnemonic": "movaps",
+          "operands": "xmmword ptr [rcx], xmm8"
+        },
+        {
+          "rva": "0x26fdb",
+          "bytes": "48b99076a75a3e020000",
+          "mnemonic": "movabs",
+          "operands": "rcx, 0x23e5aa77690"
+        },
+        {
+          "rva": "0x26fe5",
+          "bytes": "440f2902",
+          "mnemonic": "movaps",
+          "operands": "xmmword ptr [rdx], xmm8"
+        },
+        {
+          "rva": "0x26fe9",
+          "bytes": "48c70100000000",
+          "mnemonic": "mov",
+          "operands": "qword ptr [rcx], 0"
+        },
+        {
+          "rva": "0x26ff0",
+          "bytes": "48b99876a75a3e020000",
+          "mnemonic": "movabs",
+          "operands": "rcx, 0x23e5aa77698"
+        },
+        {
+          "rva": "0x26ffa",
+          "bytes": "41ffd4",
+          "mnemonic": "call",
+          "operands": "r12"
+        },
+        {
+          "rva": "0x26ffd",
+          "bytes": "48b91477a75a3e020000",
+          "mnemonic": "movabs",
+          "operands": "rcx, 0x23e5aa77714"
+        },
+        {
+          "rva": "0x27007",
+          "bytes": "49b80c77a75a3e020000",
+          "mnemonic": "movabs",
+          "operands": "r8, 0x23e5aa7770c"
+        },
+        {
+          "rva": "0x27011",
+          "bytes": "48b81c77a75a3e020000",
+          "mnemonic": "movabs",
+          "operands": "rax, 0x23e5aa7771c"
+        },
+        {
+          "rva": "0x2701b",
+          "bytes": "31d2",
+          "mnemonic": "xor",
+          "operands": "edx, edx"
+        },
+        {
+          "rva": "0x2701d",
+          "bytes": "48c70100000000",
+          "mnemonic": "mov",
+          "operands": "qword ptr [rcx], 0"
+        },
+        {
+          "rva": "0x27024",
+          "bytes": "48b90477a75a3e020000",
+          "mnemonic": "movabs",
+          "operands": "rcx, 0x23e5aa77704"
+        },
+        {
+          "rva": "0x2702e",
+          "bytes": "49c70000000000",
+          "mnemonic": "mov",
+          "operands": "qword ptr [r8], 0"
+        },
+        {
+          "rva": "0x27035",
+          "bytes": "49b8fc76a75a3e020000",
+          "mnemonic": "movabs",
+          "operands": "r8, 0x23e5aa776fc"
+        },
+        {
+          "rva": "0x2703f",
+          "bytes": "48c70000000000",
+          "mnemonic": "mov",
+          "operands": "qword ptr [rax], 0"
+        },
+        {
+          "rva": "0x27046",
+          "bytes": "48b810806f84f67f0000",
+          "mnemonic": "movabs",
+          "operands": "rax, 0x7ff6846f8010"
+        },
+        {
+          "rva": "0x27050",
+          "bytes": "48c70100000000",
+          "mnemonic": "mov",
+          "operands": "qword ptr [rcx], 0"
+        },
+        {
+          "rva": "0x27057",
+          "bytes": "48b9f476a75a3e020000",
+          "mnemonic": "movabs",
+          "operands": "rcx, 0x23e5aa776f4"
+        },
+        {
+          "rva": "0x27061",
+          "bytes": "49c70000000000",
+          "mnemonic": "mov",
+          "operands": "qword ptr [r8], 0"
+        },
+        {
+          "rva": "0x27068",
+          "bytes": "49b8ec76a75a3e020000",
+          "mnemonic": "movabs",
+          "operands": "r8, 0x23e5aa776ec"
+        },
+        {
+          "rva": "0x27072",
+          "bytes": "48c70100000000",
+          "mnemonic": "mov",
+          "operands": "qword ptr [rcx], 0"
+        },
+        {
+          "rva": "0x27079",
+          "bytes": "48b9e476a75a3e020000",
+          "mnemonic": "movabs",
+          "operands": "rcx, 0x23e5aa776e4"
+        },
+        {
+          "rva": "0x27083",
+          "bytes": "49c70000000000",
+          "mnemonic": "mov",
+          "operands": "qword ptr [r8], 0"
+        },
+        {
+          "rva": "0x2708a",
+          "bytes": "49b8dc76a75a3e020000",
+          "mnemonic": "movabs",
+          "operands": "r8, 0x23e5aa776dc"
+        },
+        {
+          "rva": "0x27094",
+          "bytes": "48c70100000000",
+          "mnemonic": "mov",
+          "operands": "qword ptr [rcx], 0"
+        },
+        {
+          "rva": "0x2709b",
+          "bytes": "48b9d476a75a3e020000",
+          "mnemonic": "movabs",
+          "operands": "rcx, 0x23e5aa776d4"
+        },
+        {
+          "rva": "0x270a5",
+          "bytes": "49c70000000000",
+          "mnemonic": "mov",
+          "operands": "qword ptr [r8], 0"
+        },
+        {
+          "rva": "0x270ac",
+          "bytes": "49b8cc76a75a3e020000",
+          "mnemonic": "movabs",
+          "operands": "r8, 0x23e5aa776cc"
+        },
+        {
+          "rva": "0x270b6",
+          "bytes": "48c70100000000",
+          "mnemonic": "mov",
+          "operands": "qword ptr [rcx], 0"
+        },
+        {
+          "rva": "0x270bd",
+          "bytes": "48b9c476a75a3e020000",
+          "mnemonic": "movabs",
+          "operands": "rcx, 0x23e5aa776c4"
+        },
+        {
+          "rva": "0x270c7",
+          "bytes": "49c70000000000",
+          "mnemonic": "mov",
+          "operands": "qword ptr [r8], 0"
+        },
+        {
+          "rva": "0x270ce",
+          "bytes": "49b8bc76a75a3e020000",
+          "mnemonic": "movabs",
+          "operands": "r8, 0x23e5aa776bc"
+        },
+        {
+          "rva": "0x270d8",
+          "bytes": "48c70100000000",
+          "mnemonic": "mov",
+          "operands": "qword ptr [rcx], 0"
+        },
+        {
+          "rva": "0x270df",
+          "bytes": "48b9b476a75a3e020000",
+          "mnemonic": "movabs",
+          "operands": "rcx, 0x23e5aa776b4"
+        },
+        {
+          "rva": "0x270e9",
+          "bytes": "49c70000000000",
+          "mnemonic": "mov",
+          "operands": "qword ptr [r8], 0"
+        },
+        {
+          "rva": "0x270f0",
+          "bytes": "49b8ac76a75a3e020000",
+          "mnemonic": "movabs",
+          "operands": "r8, 0x23e5aa776ac"
+        },
+        {
+          "rva": "0x270fa",
+          "bytes": "48c70100000000",
+          "mnemonic": "mov",
+          "operands": "qword ptr [rcx], 0"
+        },
+        {
+          "rva": "0x27101",
+          "bytes": "48b9a476a75a3e020000",
+          "mnemonic": "movabs",
+          "operands": "rcx, 0x23e5aa776a4"
+        },
+        {
+          "rva": "0x2710b",
+          "bytes": "49c70000000000",
+          "mnemonic": "mov",
+          "operands": "qword ptr [r8], 0"
+        },
+        {
+          "rva": "0x27112",
+          "bytes": "48c70100000000",
+          "mnemonic": "mov",
+          "operands": "qword ptr [rcx], 0"
+        },
+        {
+          "rva": "0x27119",
+          "bytes": "48b978ae5e573e020000",
+          "mnemonic": "movabs",
+          "operands": "rcx, 0x23e575eae78"
+        },
+        {
+          "rva": "0x27123",
+          "bytes": "c70606000000",
+          "mnemonic": "mov",
+          "operands": "dword ptr [rsi], 6"
+        },
+        {
+          "rva": "0x27129",
+          "bytes": "48895d00",
+          "mnemonic": "mov",
+          "operands": "qword ptr [rbp], rbx"
+        },
+        {
+          "rva": "0x2712d",
+          "bytes": "ffd0",
+          "mnemonic": "call",
+          "operands": "rax"
+        },
+        {
+          "rva": "0x2712f",
+          "bytes": "488d5c2440",
+          "mnemonic": "lea",
+          "operands": "rbx, [rsp + 0x40]"
+        },
+        {
+          "rva": "0x27134",
+          "bytes": "49b958d9a65a3e020000",
+          "mnemonic": "movabs",
+          "operands": "r9, 0x23e5aa6d958"
+        },
+        {
+          "rva": "0x2713e",
+          "bytes": "48bdc005a15a3e020000",
+          "mnemonic": "movabs",
+          "operands": "rbp, 0x23e5aa105c0"
+        },
+        {
+          "rva": "0x27148",
+          "bytes": "48ba3ca4a75a3e020000",
+          "mnemonic": "movabs",
+          "operands": "rdx, 0x23e5aa7a43c"
+        },
+        {
+          "rva": "0x27152",
+          "bytes": "41b001",
+          "mnemonic": "mov",
+          "operands": "r8b, 1"
+        },
+        {
+          "rva": "0x27155",
+          "bytes": "4889d9",
+          "mnemonic": "mov",
+          "operands": "rcx, rbx"
+        },
+        {
+          "rva": "0x27158",
+          "bytes": "ffd5",
+          "mnemonic": "call",
+          "operands": "rbp"
+        },
+        {
+          "rva": "0x2715a",
+          "bytes": "49b968d9a65a3e020000",
+          "mnemonic": "movabs",
+          "operands": "r9, 0x23e5aa6d968"
+        },
+        {
+          "rva": "0x27164",
+          "bytes": "4c89f1",
+          "mnemonic": "mov",
+          "operands": "rcx, r14"
+        },
+        {
+          "rva": "0x27167",
+          "bytes": "4889da",
+          "mnemonic": "mov",
+          "operands": "rdx, rbx"
+        },
+        {
+          "rva": "0x2716a",
+          "bytes": "4531c0",
+          "mnemonic": "xor",
+          "operands": "r8d, r8d"
+        },
+        {
+          "rva": "0x2716d",
+          "bytes": "ffd5",
+          "mnemonic": "call",
+          "operands": "rbp"
+        },
+        {
+          "rva": "0x2716f",
+          "bytes": "48b82577a75a3e020000",
+          "mnemonic": "movabs",
+          "operands": "rax, 0x23e5aa77725"
+        },
+        {
+          "rva": "0x27179",
+          "bytes": "48b9b474a75a3e020000",
+          "mnemonic": "movabs",
+          "operands": "rcx, 0x23e5aa774b4"
+        },
+        {
+          "rva": "0x27183",
+          "bytes": "4889f2",
+          "mnemonic": "mov",
+          "operands": "rdx, rsi"
+        },
+        {
+          "rva": "0x27186",
+          "bytes": "4d89f8",
+          "mnemonic": "mov",
+          "operands": "r8, r15"
+        },
+        {
+          "rva": "0x27189",
+          "bytes": "488b00",
+          "mnemonic": "mov",
+          "operands": "rax, qword ptr [rax]"
+        },
+        {
+          "rva": "0x2718c",
+          "bytes": "488901",
+          "mnemonic": "mov",
+          "operands": "qword ptr [rcx], rax"
+        },
+        {
+          "rva": "0x2718f",
+          "bytes": "48b9e874a75a3e020000",
+          "mnemonic": "movabs",
+          "operands": "rcx, 0x23e5aa774e8"
+        },
+        {
+          "rva": "0x27199",
+          "bytes": "48b85009a15a3e020000",
+          "mnemonic": "movabs",
+          "operands": "rax, 0x23e5aa10950"
+        },
+        {
+          "rva": "0x271a3",
+          "bytes": "f20f1139",
+          "mnemonic": "movsd",
+          "operands": "qword ptr [rcx], xmm7"
+        },
+        {
+          "rva": "0x271a7",
+          "bytes": "4889f9",
+          "mnemonic": "mov",
+          "operands": "rcx, rdi"
+        },
+        {
+          "rva": "0x271aa",
+          "bytes": "f2410f117500",
+          "mnemonic": "movsd",
+          "operands": "qword ptr [r13], xmm6"
+        },
+        {
+          "rva": "0x271b0",
+          "bytes": "ffd0",
+          "mnemonic": "call",
+          "operands": "rax"
+        },
+        {
+          "rva": "0x271b2",
+          "bytes": "0fb6f0",
+          "mnemonic": "movzx",
+          "operands": "esi, al"
+        },
+        {
+          "rva": "0x271b5",
+          "bytes": "eb02",
+          "mnemonic": "jmp",
+          "operands": "0x23e5aa371b9"
+        },
+        {
+          "rva": "0x271b7",
+          "bytes": "31f6",
+          "mnemonic": "xor",
+          "operands": "esi, esi"
+        },
+        {
+          "rva": "0x271b9",
+          "bytes": "488d4c2440",
+          "mnemonic": "lea",
+          "operands": "rcx, [rsp + 0x40]"
+        },
+        {
+          "rva": "0x271be",
+          "bytes": "41ffd4",
+          "mnemonic": "call",
+          "operands": "r12"
+        },
+        {
+          "rva": "0x271c1",
+          "bytes": "0f28742450",
+          "mnemonic": "movaps",
+          "operands": "xmm6, xmmword ptr [rsp + 0x50]"
+        },
+        {
+          "rva": "0x271c6",
+          "bytes": "0f287c2460",
+          "mnemonic": "movaps",
+          "operands": "xmm7, xmmword ptr [rsp + 0x60]"
+        },
+        {
+          "rva": "0x271cb",
+          "bytes": "440f28442470",
+          "mnemonic": "movaps",
+          "operands": "xmm8, xmmword ptr [rsp + 0x70]"
+        },
+        {
+          "rva": "0x271d1",
+          "bytes": "89f0",
+          "mnemonic": "mov",
+          "operands": "eax, esi"
+        },
+        {
+          "rva": "0x271d3",
+          "bytes": "4881c488000000",
+          "mnemonic": "add",
+          "operands": "rsp, 0x88"
+        },
+        {
+          "rva": "0x271da",
+          "bytes": "5b",
+          "mnemonic": "pop",
+          "operands": "rbx"
+        },
+        {
+          "rva": "0x271db",
+          "bytes": "5d",
+          "mnemonic": "pop",
+          "operands": "rbp"
+        },
+        {
+          "rva": "0x271dc",
+          "bytes": "5f",
+          "mnemonic": "pop",
+          "operands": "rdi"
+        },
+        {
+          "rva": "0x271dd",
+          "bytes": "5e",
+          "mnemonic": "pop",
+          "operands": "rsi"
+        },
+        {
+          "rva": "0x271de",
+          "bytes": "415c",
+          "mnemonic": "pop",
+          "operands": "r12"
+        },
+        {
+          "rva": "0x271e0",
+          "bytes": "415d",
+          "mnemonic": "pop",
+          "operands": "r13"
+        },
+        {
+          "rva": "0x271e2",
+          "bytes": "415e",
+          "mnemonic": "pop",
+          "operands": "r14"
+        },
+        {
+          "rva": "0x271e4",
+          "bytes": "415f",
+          "mnemonic": "pop",
+          "operands": "r15"
+        },
+        {
+          "rva": "0x271e6",
+          "bytes": "c3",
+          "mnemonic": "ret",
+          "operands": ""
+        }
+      ]
+    }
+  ],
+  "analysis_complete": false,
+  "runtime_verified": false,
+  "limits": [
+    "Code inventory only; exact SDK constants, argument types, guards and side effects require explicit confirmation.",
+    "No runtime comparison for this newly selected scope."
+  ]
+}

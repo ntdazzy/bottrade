@@ -1,0 +1,118 @@
+{
+  "task": "position-modify-20261025-r1",
+  "deliverable_root": "dich-nguoc/khoi-phuc/claude-thuc-hien/position-modify-20261025-r1",
+  "target_root": "dich-nguoc/khoi-phuc",
+  "status": "proposed files only; not compiled, not executed, not compared with the original EX5",
+  "files": [
+    {
+      "source": "analysis.md",
+      "target": "PHAN-TICH-SUA-VI-THE-BOT-1-3.md",
+      "action": "create",
+      "note": "change the link [semantics.json](semantics.json) to bot-cua-toi-1/phan-tich/dong-vi-the/modify-20261025-r1/semantics.json"
+    },
+    {
+      "source": "semantics.json",
+      "target": "bot-cua-toi-1/phan-tich/dong-vi-the/modify-20261025-r1/semantics.json",
+      "action": "create",
+      "note": "same file for both bots; required dependency of kiem-sua-vi-the-bot-1-3.py; existing analysis.json/functions.c/native-guards.txt/receipt.json stay unchanged"
+    },
+    {
+      "source": "semantics.json",
+      "target": "bot-cua-toi-3/phan-tich/dong-vi-the/modify-20261025-r1/semantics.json",
+      "action": "create"
+    },
+    {
+      "source": "files/bot-cua-toi-1/source/MQL5/Include/bot-cua-toi-1/Bot1PositionModify.mqh",
+      "target": "bot-cua-toi-1/source/MQL5/Include/bot-cua-toi-1/Bot1PositionModify.mqh",
+      "action": "create"
+    },
+    {
+      "source": "files/bot-cua-toi-3/source/MQL5/Include/bot-cua-toi-3/Bot3PositionModify.mqh",
+      "target": "bot-cua-toi-3/source/MQL5/Include/bot-cua-toi-3/Bot3PositionModify.mqh",
+      "action": "create"
+    },
+    {
+      "source": "files/bot-cua-toi-1/source/MQL5/Scripts/bot-cua-toi-1/Bot1PositionModifyCheck.mq5",
+      "target": "bot-cua-toi-1/source/MQL5/Scripts/bot-cua-toi-1/Bot1PositionModifyCheck.mq5",
+      "action": "create"
+    },
+    {
+      "source": "files/bot-cua-toi-3/source/MQL5/Scripts/bot-cua-toi-3/Bot3PositionModifyCheck.mq5",
+      "target": "bot-cua-toi-3/source/MQL5/Scripts/bot-cua-toi-3/Bot3PositionModifyCheck.mq5",
+      "action": "create"
+    },
+    {
+      "source": "files/cong-cu/kiem-sua-vi-the-bot-1-3.py",
+      "target": "cong-cu/kiem-sua-vi-the-bot-1-3.py",
+      "action": "create"
+    },
+    {
+      "source": "files/cong-cu/phan-tich-goi-sua-vi-the-bot-1-3.py",
+      "target": "cong-cu/phan-tich-goi-sua-vi-the-bot-1-3.py",
+      "action": "create"
+    },
+    {
+      "source": "files/cong-cu/kiem-sua-vi-the-bot-1-3-schema.md",
+      "target": "cong-cu/kiem-sua-vi-the-bot-1-3-schema.md",
+      "action": "create"
+    },
+    {
+      "source": "files/cong-cu/BOT-1-3.section-sua-vi-the.md",
+      "target": "cong-cu/BOT-1-3.md",
+      "action": "insert-section",
+      "position": "immediately before the line '## Đóng vị thế theo vé và điều kiện'",
+      "note": "insert text only; do not change existing sections"
+    }
+  ],
+  "reused_unchanged": [
+    "cong-cu/kiem-dong-vi-the-bot-1-3.py",
+    "cong-cu/kiem-huy-lenh-cho-bot-1-3.py",
+    "cong-cu/kiem-gui-lenh-bot-1-3.py",
+    "cong-cu/kiem-tao-yeu-cau-cho-bot-1-3.py",
+    "cong-cu/kiem-kieu-khop-lenh-bot-1-3.py",
+    "cong-cu/kiem-gia-vao-bot-1-3.py",
+    "cong-cu/kiem-muc-gia-bot-1-3.py",
+    "cong-cu/kiem-khoi-luong-hop-le-bot-1-3.py",
+    "cong-cu/bien-dich.ps1",
+    "bot-cua-toi-N/source/MQL5/Scripts/bot-cua-toi-N/BotNPipelineApi.mqh",
+    "bot-cua-toi-N/source/MQL5/Include/bot-cua-toi-N/BotNTradeSend.mqh",
+    "bot-cua-toi-N/source/MQL5/Include/bot-cua-toi-N/BotNTradeMessages.mqh",
+    "bot-cua-toi-N/source/MQL5/Include/bot-cua-toi-N/BotNPendingRequest.mqh",
+    "bot-cua-toi-N/source/MQL5/Include/bot-cua-toi-N/BotNFilling.mqh",
+    "doi-chung-mt5/dong-vi-the-20261024/close-api-r1/api-contract.json",
+    "doi-chung-mt5/thu-tu-truong-lenh-class-20261024/layout-class-r1/trade-layout.json",
+    "bot-cua-toi-N/phan-tich/dong-vi-the/modify-20261025-r1/{analysis.json,functions.c,native-guards.txt,receipt.json}"
+  ],
+  "commands_not_run": [
+    "python -I -B -X utf8 dich-nguoc/khoi-phuc/cong-cu/phan-tich-goi-sua-vi-the-bot-1-3.py 1 modify-callers-20261025-r1",
+    "python -I -B -X utf8 dich-nguoc/khoi-phuc/cong-cu/phan-tich-goi-sua-vi-the-bot-1-3.py 3 modify-callers-20261025-r1",
+    "python -I -B -X utf8 dich-nguoc/khoi-phuc/cong-cu/kiem-sua-vi-the-bot-1-3.py prepare 1 modify-20261025-r1",
+    "& dich-nguoc/khoi-phuc/cong-cu/bien-dich.ps1 -Bot 1 -Terminal 'dich-nguoc/.local/claude-recovery-20261023/mt5' -Run b1-position-modify-01 -Source 'dich-nguoc/khoi-phuc/bot-cua-toi-1/source/MQL5/Scripts/bot-cua-toi-1/Bot1PositionModifyCheck.mq5'",
+    "python -I -B -X utf8 dich-nguoc/khoi-phuc/cong-cu/kiem-sua-vi-the-bot-1-3.py mql5 1 modify-20261025-r1 --build b1-position-modify-01",
+    "python -I -B -X utf8 dich-nguoc/khoi-phuc/cong-cu/kiem-sua-vi-the-bot-1-3.py original 1 modify-20261025-r1",
+    "python -I -B -X utf8 dich-nguoc/khoi-phuc/cong-cu/kiem-sua-vi-the-bot-1-3.py compare 1 modify-20261025-r1",
+    "python -I -B -X utf8 dich-nguoc/khoi-phuc/cong-cu/kiem-sua-vi-the-bot-1-3.py prepare 3 modify-20261025-r1",
+    "& dich-nguoc/khoi-phuc/cong-cu/bien-dich.ps1 -Bot 3 -Terminal 'dich-nguoc/.local/claude-recovery-20261023/mt5' -Run b3-position-modify-01 -Source 'dich-nguoc/khoi-phuc/bot-cua-toi-3/source/MQL5/Scripts/bot-cua-toi-3/Bot3PositionModifyCheck.mq5'",
+    "python -I -B -X utf8 dich-nguoc/khoi-phuc/cong-cu/kiem-sua-vi-the-bot-1-3.py mql5 3 modify-20261025-r1 --build b3-position-modify-01",
+    "python -I -B -X utf8 dich-nguoc/khoi-phuc/cong-cu/kiem-sua-vi-the-bot-1-3.py original 3 modify-20261025-r1",
+    "python -I -B -X utf8 dich-nguoc/khoi-phuc/cong-cu/kiem-sua-vi-the-bot-1-3.py compare 3 modify-20261025-r1"
+  ],
+  "expected_outputs": {
+    "caller_trace": "bot-cua-toi-N/phan-tich/dong-vi-the/modify-callers-20261025-r1/{caller-sites.json,receipt.json}",
+    "comparison_run": "bot-cua-toi-N/bang-chung/kiem-sua-vi-the/modify-20261025-r1/{cases.bin,cases.json,baseline.json,mql5-results.bin,api-fixtures.bin,script-status.bin,mql5-run.json,tested-sources/,original-results.bin,original-run.json,comparison.json}",
+    "build": "bot-cua-toi-N/bang-chung/bien-dich/bN-position-modify-01/{bien-nhan.json,metaeditor.log,BotNPositionModifyCheck.ex5}",
+    "planned_case_count_per_bot": 1596
+  },
+  "after_successful_compare_update": [
+    "PHAN-TICH-SUA-VI-THE-BOT-1-3.md result section with real comparison numbers and links",
+    "bot README files and BAN-DO-TOAN-BO-BOT-1-3.md entry for 0x26d20/0x32a90",
+    "optional engine/tester replay through kiem-hang-doi-trong-may-thu.py needs a new option; not proposed here"
+  ],
+  "not_claimed": [
+    "compile success",
+    "any matched case",
+    "caller reconstruction",
+    "whole-EA, settings, UI, restart, persistent state, live account, _LastError or allocation-fault behavior",
+    "100 percent completion"
+  ]
+}

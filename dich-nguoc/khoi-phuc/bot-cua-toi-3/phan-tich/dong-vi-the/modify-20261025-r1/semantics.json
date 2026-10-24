@@ -1,0 +1,291 @@
+{
+  "component": "position-modify-by-ticket",
+  "status": "static analysis written before production source; not compiled, not executed, not compared",
+  "runtime_verified": false,
+  "analysis_complete_for_function_body": true,
+  "whole_bot_complete": false,
+  "rva_rule": "RVA = absolute address - captured code base; bot3 instruction RVA = bot1 instruction RVA + 0xbd70 for every instruction",
+  "evidence": {
+    "1": {
+      "folder": "bot-cua-toi-1/phan-tich/dong-vi-the/modify-20261025-r1",
+      "receipt_hashes": {
+        "analysis.json": "82312a2bd19b51883931599bd1729ffa6b7c28616955d1355559186d0443a789",
+        "functions.c": "ec20c3b33e7ca9bd79f36c6b6dbb7f02b3c71a0e3e230f1ba1f5bc01e1810b4f",
+        "native-guards.txt": "57247e286d9a6159dc460b797126e6b3b5c52e7dd6743deec79c7260678afcb2"
+      },
+      "analysis_tool_sha256": "467f2bbb6768e6d9adc345969b5368c1a2fedc3c665911c3674a37d413dfab92",
+      "original_ex5_sha256": "a3b0de423a06e10ebedc279307b93d7cb9188ba2bb5de77131a913c865b0e922",
+      "engine_sha256": "5033d9d45d669cebd735e8a6be20b54d74b75274f885c9a0e48e52d872104efb",
+      "c_source": "bot-cua-toi-1/phan-tich/luot-20261023-data-v2/ma-trung-gian.c",
+      "c_source_sha256": "c6389dfe5bd1ef95ed7616eaf5c16b7d041fbd279e650753d239b28e3ea65a8d",
+      "c_lines": [16977, 17100],
+      "functions_c_line_offset": 16975,
+      "code_base": "0x23e5aa10000",
+      "function_rva": "0x26d20",
+      "end_rva_exclusive": "0x271e7",
+      "native_bytes_sha256": "2e80dc3d922f1a7a60b6609b77395050c52a09ff3bf1352cec145d624506d48c",
+      "instruction_count": 196,
+      "strings_tsv": "bot-cua-toi-1/phan-tich/luot-20261023-data-v2/metadata/strings.tsv"
+    },
+    "3": {
+      "folder": "bot-cua-toi-3/phan-tich/dong-vi-the/modify-20261025-r1",
+      "receipt_hashes": {
+        "analysis.json": "8a46863709f2ea6f2bb83ca40847893bfd21cd354aa2d28d387e44d5596f93b3",
+        "functions.c": "058d60fbc58e012d99fc87ec820bb43a42b647ced815c6ab398bfb7a5949bce1",
+        "native-guards.txt": "6f780d666747f15fdc498a7c2c723cbce86def0e2df3b9b88371ebc8ba99d20a"
+      },
+      "analysis_tool_sha256": "467f2bbb6768e6d9adc345969b5368c1a2fedc3c665911c3674a37d413dfab92",
+      "original_ex5_sha256": "ee063d3d87490afe24e2f4ce85f6b05659320e297b102efd70207f71ca2feb83",
+      "engine_sha256": "5033d9d45d669cebd735e8a6be20b54d74b75274f885c9a0e48e52d872104efb",
+      "c_source": "bot-cua-toi-3/phan-tich/luot-20261023-data/ma-trung-gian-day-du.c",
+      "c_source_sha256": "ef8e07ac21522a8a2ab7165db6e77f40885acfc5a044c502ba81e331b826f620",
+      "c_lines": [22819, 22942],
+      "functions_c_line_offset": 22817,
+      "code_base": "0x17156250000",
+      "function_rva": "0x32a90",
+      "end_rva_exclusive": "0x32f57",
+      "native_bytes_sha256": "739d61a802bdfc35918209de111f8b4cc5142c4aa9b9352b1f0ed48bfdd20250",
+      "instruction_count": 196,
+      "strings_tsv": "bot-cua-toi-3/phan-tich/luot-20261023-data/metadata/strings.tsv"
+    }
+  },
+  "known_source_dependencies": [
+    {
+      "path": "doi-chung-mt5/dong-vi-the-20261024/close-api-r1/api-contract.json",
+      "used_for": "SDK target 0x7d7ee0 = PositionSelectByTicket (CloseSelect), 0x7d8010 = PositionGetString (CloseSymbol, xor edx,edx), POSITION_SYMBOL=0"
+    },
+    {
+      "path": "doi-chung-mt5/thu-tu-truong-lenh-class-20261024/layout-class-r1/trade-layout.json",
+      "used_for": "35 field offsets; request/result/check storage bases 0/240/436; end marker 628"
+    },
+    {
+      "path": "PHAN-TICH-GUI-LENH-BOT-1-3.md and bot-cua-toi-N/source/MQL5/Include/bot-cua-toi-N/BotNTradeSend.mqh, BotNTradeMessages.mqh",
+      "used_for": "0x950 send wrapper and message functions, already compared; dispatch opcode 13 PrintFormat, 216 StringFormat; numeric cast target 0x7cf6c0"
+    },
+    {
+      "path": "ban-do-bot-1-3/luot-20261025-r1 and luot-20261025-r2, bot-1.json and bot-3.json (same callers; bot1 0x18aa0 = C 11210..13824)",
+      "used_for": "callers 0x18aa0/0x271f0/0x2abc0 (bot1) and 0x20ef0/0x32f60/0x37590 (bot3); bot1 C line 17091 and bot3 C line 22933 dispatch opcode 13 argc 2 known_source_api PrintFormat; callees 0x0/0x5c0/0x950 for both"
+    },
+    {
+      "path": "PHAN-TICH-TAO-YEU-CAU-CHO-BOT-1-3.md, PHAN-TICH-DONG-VI-THE-BOT-1-3.md, PHAN-TICH-HUY-LENH-CHO-BOT-1-3.md",
+      "used_for": "stop flag dword -> IsStopped(), two-string stop message, low32 retcode 10027 after the message"
+    }
+  ],
+  "address_map": {
+    "1": {
+      "stop_flag_dword": "0x6a414",
+      "send_context": "0x67490",
+      "async_mode_byte": "0x67724",
+      "margin_mode_int": "0x67739",
+      "log_level_int": "0x6773d",
+      "request": "0x674b0",
+      "result": "0x675a0",
+      "check": "0x67664",
+      "stored_magic_qword": "0x67725",
+      "deviation_qword_not_used": "0x6772d",
+      "preferred_filling_not_used": "0x67735",
+      "transient_string_slot": "0x6a43c",
+      "format_descriptor": "0x541c0",
+      "format_text": "0x5415c",
+      "method_descriptor": "0x52eb0",
+      "method_text": "0x52e7c",
+      "assign_descriptor_from_transient": "0x5d958",
+      "assign_descriptor_to_request_symbol": "0x5d968",
+      "helper_release_string": "0x0",
+      "helper_assign_string": "0x5c0",
+      "helper_send_and_messages": "0x950",
+      "terminal_context_absolute_not_module_rva": "0x23e575eae78",
+      "reset_block_first_instruction": "0x26dfb",
+      "stop_branch_first_instruction": "0x26d6d",
+      "select_fail_instruction": "0x271b7",
+      "common_exit_instruction": "0x271b9"
+    },
+    "3": {
+      "stop_flag_dword": "0x1d6e14",
+      "send_context": "0x744d0",
+      "async_mode_byte": "0x74764",
+      "margin_mode_int": "0x74779",
+      "log_level_int": "0x7477d",
+      "request": "0x744f0",
+      "result": "0x745e0",
+      "check": "0x746a4",
+      "stored_magic_qword": "0x74765",
+      "deviation_qword_not_used": "0x7476d",
+      "preferred_filling_not_used": "0x74775",
+      "transient_string_slot": "0x1d6e3c",
+      "format_descriptor": "0x5c970",
+      "format_text": "0x5c90c",
+      "method_descriptor": "0x5b660",
+      "method_text": "0x5b62c",
+      "assign_descriptor_from_transient": "0x67cb8",
+      "assign_descriptor_to_request_symbol": "0x67cc8",
+      "helper_release_string": "0x0",
+      "helper_assign_string": "0x5c0",
+      "helper_send_and_messages": "0x950",
+      "terminal_context_absolute_not_module_rva": "0x171514ca538",
+      "reset_block_first_instruction": "0x32b6b",
+      "stop_branch_first_instruction": "0x32add",
+      "select_fail_instruction": "0x32f27",
+      "common_exit_instruction": "0x32f29"
+    },
+    "sdk_rva_from_engine_base": {
+      "dispatch": "0x7b49f0",
+      "position_select_by_ticket": "0x7d7ee0",
+      "position_get_string": "0x7d8010",
+      "absolute_in_capture": {
+        "dispatch": "0x7ff6846d49f0",
+        "position_select_by_ticket": "0x7ff6846f7ee0",
+        "position_get_string": "0x7ff6846f8010"
+      }
+    }
+  },
+  "signature": {
+    "native": "uint8 f(uint64 rcx_ticket, double xmm1_sl, double xmm2_tp)",
+    "evidence": [
+      "0x26dd1 mov rbx, rcx; 0x26dee mov rdx, rbx before select; 0x27129 mov qword ptr [request+112], rbx",
+      "0x26de8 movaps xmm7, xmm1; 0x271a3 movsd qword ptr [request+56], xmm7",
+      "0x26deb movaps xmm6, xmm2; 0x271aa movsd qword ptr [request+64], xmm6",
+      "rdx/r8/r9 are written before any use; xmm0/xmm3 are never read; no load from the caller argument area",
+      "return: 0x271b2 movzx esi, al after 0x950; 0x26dc4/0x271b7 xor esi, esi; 0x271d1 mov eax, esi"
+    ],
+    "decompiler_type_error": "C declares param_2/param_3 as undefined8 integer parameters; native code uses XMM1/XMM2 doubles",
+    "state_is_global": "request/result/check/magic/context are fixed globals, not arguments",
+    "production": "bool BotNModifyPosition(BotNPendingRequestState &state,BotNTradeSendOptions &options,const ulong ticket,const double sl,const double tp)",
+    "production_name_status": "reconstructed name; original label only known from literal CTrade::PositionModify passed by this function"
+  },
+  "control_flow": [
+    {"step": "prologue", "rva": {"1": "0x26d20-0x26d3e", "3": "0x32a90-0x32aae"}, "effect": "push r15,r14,r13,r12,rsi,rdi,rbp,rbx; sub rsp,0x88; save xmm8,xmm7,xmm6"},
+    {"step": "local_string_init", "rva": {"1": "0x26d43-0x26d4b", "3": "0x32ab3-0x32abb"}, "c": {"1": "16990-16991", "3": "22832-22833"}, "effect": "12-byte local descriptor [rsp+0x40]: dword 0, qword 0"},
+    {"step": "stop_check", "rva": {"1": "0x26d54-0x26d6b", "3": "0x32ac4-0x32adb"}, "c": {"1": "16992", "3": "22834"}, "effect": "cmp dword [stop_flag], 0; zero -> selection path; any nonzero 32-bit value (negative included) -> stop branch"},
+    {"step": "stop_message", "rva": {"1": "0x26d6d-0x26db8", "3": "0x32add-0x32b28"}, "c": {"1": "17091", "3": "22933"}, "effect": "dispatch opcode 13 with 2 string arguments: format descriptor, method descriptor"},
+    {"step": "stop_retcode", "rva": {"1": "0x26dba-0x26dcc", "3": "0x32b2a-0x32b3c"}, "c": {"1": "17093", "3": "22935"}, "effect": "after the message: mov dword [result+0], 0x272b (10027); esi=0; jump to common exit"},
+    {"step": "select", "rva": {"1": "0x26dd1-0x26df5", "3": "0x32b41-0x32b65"}, "c": {"1": "16993-16994", "3": "22835-22836"}, "effect": "keep ticket in rbx, sl in xmm7, tp in xmm6; PositionSelectByTicket(ticket); test al,al; zero -> 0x271b7/0x32f27 esi=0 with no state write"},
+    {"step": "reset", "rva": {"1": "0x26dfb-0x27112", "3": "0x32b6b-0x32e82"}, "c": {"1": "16995-17074", "3": "22837-22916"}, "effect": "zero all 628 storage bytes including private padding; release four string descriptors; C statement order differs from native order"},
+    {"step": "action_position", "rva": {"1": "0x27119-0x27129", "3": "0x32e89-0x32e99"}, "c": {"1": "17075-17076", "3": "22917-22918"}, "effect": "dword request.action=6; qword request.position=ticket; both before the symbol query"},
+    {"step": "symbol_query", "rva": {"1": "0x2712d", "3": "0x32e9d"}, "c": {"1": "17077", "3": "22919"}, "effect": "PositionGetString(property edx=0)"},
+    {"step": "symbol_assign", "rva": {"1": "0x2712f-0x2716d", "3": "0x32e9f-0x32edd"}, "c": {"1": "17078-17079", "3": "22920-22921"}, "effect": "0x5c0(local, transient slot, 1, descA); 0x5c0(request.symbol, local, 0, descB)"},
+    {"step": "magic", "rva": {"1": "0x2716f-0x2718c", "3": "0x32edf-0x32efc"}, "c": {"1": "17080-17081", "3": "22922-22923"}, "effect": "qword request.magic = qword stored magic, read after the symbol query"},
+    {"step": "sl_tp", "rva": {"1": "0x2718f-0x271aa", "3": "0x32eff-0x32f1a"}, "c": {"1": "17082-17083", "3": "22924-22925"}, "effect": "movsd request.sl=xmm7, request.tp=xmm6 (entry values)"},
+    {"step": "send", "rva": {"1": "0x271b0-0x271b5", "3": "0x32f20-0x32f25"}, "c": {"1": "17084", "3": "22926"}, "effect": "0x950(context, request, result); esi = movzx al"},
+    {"step": "common_exit", "rva": {"1": "0x271b9-0x271e6", "3": "0x32f29-0x32f56"}, "c": {"1": "17095-17096", "3": "22937-22938"}, "effect": "release local string on every path; restore registers; eax=esi; ret"}
+  ],
+  "reset_native_detail": {
+    "relative_to_request_storage": [
+      "0x26e2a movaps [0..15]; 0x26e2e dword [16..19]; 0x26e34 release [20] request.symbol",
+      "0x26e5f [48..63]; 0x26e6d [80..95]; 0x26e71 [64..79]; 0x26e76 [32..47]; 0x26e7a dword [96..99]; 0x26e8a release [100] request.comment",
+      "0x26ebf [256..271]; 0x26ecd [224..239]; 0x26edb [272..287]; 0x26edf [240..255]; 0x26ee3 [112..127]; 0x26ee8 [208..223]; 0x26ef6 [192..207]; 0x26f04 [176..191]; 0x26f12 [160..175]; 0x26f20 [144..159]; 0x26f2e [128..143]; 0x26f32 dword [288..291]; 0x26f42 release [292] result.comment",
+      "0x26f63 [448..463]; 0x26f71 [432..447]; 0x26f7f [464..479]; 0x26f83 [416..431]; 0x26f91 [400..415]; 0x26f9f [384..399]; 0x26fad [368..383]; 0x26fbb [352..367]; 0x26fc9 [336..351]; 0x26fd7 [320..335]; 0x26fe5 [304..319]; 0x26fe9 qword [480..487]; 0x26ffa release [488] check.comment",
+      "0x2701d..0x27112 16 qword stores covering [500..627]"
+    ],
+    "covered": "request 0..127 + padding 128..239; result 240..311 + padding 312..435; check 436..499 + padding 500..627",
+    "not_written": "byte 628 async mode, stored magic, deviation, preferred filling, margin/log options, stop flag",
+    "rva_note": "listed RVAs are bot1; add 0xbd70 for bot3"
+  },
+  "calls_in_order": [
+    {"id": "A", "branch": "stop", "rva": {"1": "0x26db8", "3": "0x32b28"}, "target": "engine+0x7b49f0", "args": "rcx terminal context; edx 13; r8d 2; r9d 0x590008; [rsp+0x20] format descriptor; [rsp+0x28] 0x590008; [rsp+0x30] method descriptor", "result_use": "none"},
+    {"id": "B", "branch": "not stopped", "rva": {"1": "0x26df1", "3": "0x32b61"}, "target": "engine+0x7d7ee0", "args": "rcx terminal context; rdx full 64-bit ticket", "result_use": "test al,al"},
+    {"id": "C1", "branch": "selected", "rva": {"1": "0x26e34", "3": "0x32ba4"}, "target": "0x0", "args": "rcx request.symbol", "result_use": "none"},
+    {"id": "C2", "branch": "selected", "rva": {"1": "0x26e8a", "3": "0x32bfa"}, "target": "0x0", "args": "rcx request.comment", "result_use": "none"},
+    {"id": "C3", "branch": "selected", "rva": {"1": "0x26f42", "3": "0x32cb2"}, "target": "0x0", "args": "rcx result.comment", "result_use": "none"},
+    {"id": "C4", "branch": "selected", "rva": {"1": "0x26ffa", "3": "0x32d6a"}, "target": "0x0", "args": "rcx check.comment", "result_use": "none"},
+    {"id": "D", "branch": "selected", "rva": {"1": "0x2712d", "3": "0x32e9d"}, "target": "engine+0x7d8010", "args": "rcx terminal context; edx 0 (rdx zeroed at 0x2701b/0x32d8b)", "result_use": "transient string slot read by E1"},
+    {"id": "E1", "branch": "selected", "rva": {"1": "0x27158", "3": "0x32ec8"}, "target": "0x5c0", "args": "rcx local; rdx transient slot; r8b 1; r9 descA", "result_use": "none"},
+    {"id": "E2", "branch": "selected", "rva": {"1": "0x2716d", "3": "0x32edd"}, "target": "0x5c0", "args": "rcx request.symbol; rdx local; r8d 0; r9 descB", "result_use": "none"},
+    {"id": "F", "branch": "selected", "rva": {"1": "0x271b0", "3": "0x32f20"}, "target": "0x950", "args": "rcx send context; rdx request; r8 result", "result_use": "al returned"},
+    {"id": "G", "branch": "all", "rva": {"1": "0x271be", "3": "0x32f2e"}, "target": "0x0", "args": "rcx local", "result_use": "none"}
+  ],
+  "state_reads": [
+    {"what": "stop flag dword", "when": "once at entry before any call"},
+    {"what": "stored magic qword", "when": "once after PositionGetString and both string assignments, before sl/tp stores"},
+    {"what": "transient string slot", "when": "by E1 after PositionGetString"},
+    {"what": "sl/tp", "when": "argument registers captured at entry into xmm7/xmm6 before any call"}
+  ],
+  "state_writes": {
+    "stop_branch": ["result.retcode low32 = 10027 after the message"],
+    "select_failed": [],
+    "selected": ["all 628 bytes reset; four strings released", "request.action=6", "request.position=ticket", "request.symbol", "request.magic", "request.sl", "request.tp", "result fields by 0x950 send path (supplied in tests)"]
+  },
+  "request_at_send": {
+    "action": 6,
+    "magic": "stored magic at step magic",
+    "order": 0,
+    "symbol": "PositionGetString result; may be NULL or empty",
+    "volume": 0.0,
+    "price": 0.0,
+    "stoplimit": 0.0,
+    "sl": "argument bits",
+    "tp": "argument bits",
+    "deviation": 0,
+    "type": 0,
+    "type_filling": 0,
+    "type_time": 0,
+    "expiration": 0,
+    "comment": "NULL",
+    "position": "ticket",
+    "position_by": 0,
+    "result_before_send": "all zero/NULL",
+    "check_before_send": "all zero/NULL"
+  },
+  "floating_point": {
+    "comparisons": "none in this function",
+    "arithmetic": "none in this function",
+    "copy": "movaps register copy then movsd 8-byte store; -0.0, infinities, quiet and signaling NaN payloads are preserved",
+    "formatting": "only inside reused 0x950 message functions"
+  },
+  "integer_widths": {
+    "stop_flag": "signed/unsigned irrelevant: 32-bit compare with zero",
+    "ticket": "64-bit, unchanged",
+    "magic": "64-bit copy (unaligned qword)",
+    "action": "32-bit store",
+    "retcode": "32-bit store"
+  },
+  "return": {
+    "stop": 0,
+    "select_failed": 0,
+    "selected": "zero-extended al returned by 0x950 (send accepted flag)",
+    "register": "eax; upper 32 bits of rax zero by mov eax, esi"
+  },
+  "string_literals": {
+    "1": {"method": {"text": "CTrade::PositionModify", "text_rva": "0x52e7c", "length": 22, "descriptor_rva": "0x52eb0"}, "format": {"text": "%s: MQL5 program is stopped. Trading is disabled", "text_rva": "0x5415c", "length": 48, "descriptor_rva": "0x541c0"}},
+    "3": {"method": {"text": "CTrade::PositionModify", "text_rva": "0x5b62c", "length": 22, "descriptor_rva": "0x5b660"}, "format": {"text": "%s: MQL5 program is stopped. Trading is disabled", "text_rva": "0x5c90c", "length": 48, "descriptor_rva": "0x5c970"}},
+    "evidence": "strings.tsv base64 text entries; descriptor address = text + 2*length + 2 rounded up to 8, same relation as close literal 0x52ef8 -> CTrade::PositionClose at 0x52ecc",
+    "limit": "descriptor bytes were not read in this static pass; the native harness reads them through the pointers passed at runtime"
+  },
+  "observable_boundaries_for_tests": [
+    "before PositionSelectByTicket",
+    "before the stop message dispatch",
+    "before PositionGetString",
+    "after the send API result is written, before message formatting",
+    "final state before separate output-string cleanup"
+  ],
+  "callers_c_only": {
+    "1": {"0x18aa0": [11995], "0x271f0": [17278, 17294, 17459, 17720, 17801, 17894, 17969, 18047, 18102], "0x2abc0": [18387, 18403, 18558, 18914, 18979, 19048, 19111, 19165, 19218], "return_assigned_lines": [17720, 17801, 17894, 17969, 18047, 18914, 18979, 19048, 19111, 19165], "two_argument_display_lines": [17278, 17294, 17459, 17720, 17801, 17894, 17969, 18047, 18102]},
+    "3": {"0x20ef0": [16242], "0x32f60": [23121, 23137, 23346, 23732, 23818, 23899, 23992, 24067, 24145, 24200], "0x37590": [24483, 24499, 24695, 25159, 25220, 25299, 25374, 25434, 25496, 25532], "return_assigned_lines": [23732, 23818, 23899, 23992, 24067, 24145, 25159, 25220, 25299, 25374, 25434, 25532], "two_argument_display_lines": [23121, 23137, 23346, 23732, 23818, 23899, 23992, 24067, 24145, 24200]},
+    "observation": "some calls pass (longlong)dVar6 where dVar6=(double)(longlong)ticket (bot1 C 17203); native caller instructions not yet traced",
+    "evidence_task": "files/cong-cu/phan-tich-goi-sua-vi-the-bot-1-3.py"
+  },
+  "unresolved": [
+    {"id": "U1", "item": "meaning of 0x5c0 r8b flag 1/0 and r9 descriptors", "impact": "none for reconstruction; native helper executed unchanged in tests"},
+    {"id": "U2", "item": "0x0 release on the still-empty local in stop/select-failed paths", "impact": "checked only through allocation/free balance"},
+    {"id": "U3", "item": "MQL5 value of TRADE_ACTION_SLTP", "impact": "native literal 6; check script records (string)(int)TRADE_ACTION_SLTP and request.action bytes for comparison"},
+    {"id": "U4", "item": "caller-side native argument sources, return width use, double->integer ticket conversion", "impact": "caller reconstruction only"},
+    {"id": "U5", "item": "real terminal behavior: selection side effects, string query failure, _LastError, broker reply", "impact": "tests supply query/send results"},
+    {"id": "U6", "item": "allocation failure in string/send helpers", "impact": "not tested"},
+    {"id": "U7", "item": "instruction-level order of zero stores between the four releases", "impact": "not observable from MQL5; states compared at service boundaries and return"},
+    {"id": "U8", "item": "high-level original name", "impact": "reconstructed name BotNModifyPosition"},
+    {"id": "U9", "item": "callers, whole EA, settings, UI, restart, persistent state, live account", "impact": "outside this component"}
+  ],
+  "production_proposal": {
+    "1": "files/bot-cua-toi-1/source/MQL5/Include/bot-cua-toi-1/Bot1PositionModify.mqh",
+    "3": "files/bot-cua-toi-3/source/MQL5/Include/bot-cua-toi-3/Bot3PositionModify.mqh",
+    "reuses_unchanged": ["BotNPendingRequestState", "BotNTradeSendOptions", "BotNSendTrade", "BotNTradeMessages.mqh"],
+    "does_not_call": ["BotNCheckFilling"]
+  },
+  "test_contract": {
+    "tool": "files/cong-cu/kiem-sua-vi-the-bot-1-3.py",
+    "scripts": ["files/bot-cua-toi-1/source/MQL5/Scripts/bot-cua-toi-1/Bot1PositionModifyCheck.mq5", "files/bot-cua-toi-3/source/MQL5/Scripts/bot-cua-toi-3/Bot3PositionModifyCheck.mq5"],
+    "supplied": ["IsStopped value", "PositionSelectByTicket reply", "PositionGetString reply and NULL flag", "OrderSend/OrderSendAsync accepted flag and written result", "SymbolInfoInteger digits/execution replies", "MT5-measured DoubleToString/StringFormat/PrintFormat/cast outputs"],
+    "compared": ["return eax", "35 public fields", "four full strings and NULL flags", "stored magic, preferred filling, deviation, async/margin/log options", "state before each service call and after send", "ordered typed API arguments", "message arguments and printed text hash", "call counters"],
+    "native_only_invariants": ["all 196 instructions executed at least once across the case set", "early exits keep all 628 storage bytes except stop retcode and controlled harness writes", "selected path clears padding (128,112),(312,124),(500,128)", "no write outside storage/stack/heap/transient slot", "callee-saved registers and stack restored", "allocation/free balanced after separate output-string cleanup"]
+  }
+}
