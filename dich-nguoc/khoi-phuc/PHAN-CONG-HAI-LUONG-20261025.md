@@ -115,6 +115,12 @@ không suy ra một chế độ không chạy chỉ vì nhìn một cạnh quay 
 Mỗi lượt phải tạo phần mã/bằng chứng cụ thể, không dừng ở kế hoạch.
 Giữ phần chưa rõ trong bảng; không thêm luật để làm mã trông đủ.
 
+Bản đồ lời gọi quản lý mới:
+`bot-cua-toi-1/phan-tich/dong-vi-the/management-20261025-r1/branch-map.md`
+và `bot-cua-toi-3/phan-tich/dong-vi-the/management-20261025-r1/branch-map.md`.
+Hai tệp chỉ là bản đồ tĩnh để chia nhánh; chúng không được dùng thay
+phép chạy hoặc xác nhận hai hàm quản lý hoàn chỉnh.
+
 ## Hai chat và công việc đã giao
 
 - Chat bot 1: `01a171c2-add5-7a92-be00-6a7afc2406a4`.
