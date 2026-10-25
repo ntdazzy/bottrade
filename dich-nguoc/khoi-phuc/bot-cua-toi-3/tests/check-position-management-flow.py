@@ -193,7 +193,7 @@ def main():
         for n,digest in current['sources_sha256'].items():require(sha(MT/'MQL5'/n)==build['sources_sha256'][n]==digest,'SOURCE_DIFFERS '+n)
         binary=MT/'MQL5'/Path(SCRIPT).with_suffix('.ex5');require(sha(binary)==build['binary_sha256']==sha(receipt.parent/binary.name),'BINARY_DIFFERS')
         files=MT/'MQL5/Files/bot3-position-management-flow'/a.run;files.mkdir(parents=True,exist_ok=False);shutil.copyfile(folder/'cases.bin',files/'cases.bin');preset=MT/'MQL5/Presets'/('b3-full-flow-'+a.run+'.set');ini=MT/('b3-full-flow-'+a.run+'.ini')
-        with preset.open('x',encoding='utf-16') as f:f.write('CheckRun='+a.run+'\nExecuteTableChildren='+str(TABLE_MODE).lower()+'\n')
+        with preset.open('x',encoding='utf-16') as f:f.write('CheckRun='+a.run+'\nExecuteTableChildren='+str(TABLE_MODE).lower()+'\nExecuteTradeChildren=false\n')
         with ini.open('x',encoding='utf-16') as f:f.write('[Experts]\nEnabled=0\nAllowLiveTrading=0\nAllowDllImport=0\n[StartUp]\nScript=bot-cua-toi-3\\Bot3PositionManagementFlowCheck\nScriptParameters='+preset.name+'\nSymbol=XAUUSD_NOCOST_V2\nPeriod=M15\nShutdownTerminal=1\n')
         proc=subprocess.Popen(f'"{MT/"terminal64.exe"}" /portable /config:"{ini}"',cwd=MT,creationflags=subprocess.CREATE_NO_WINDOW)
         try:code=proc.wait(timeout=120)

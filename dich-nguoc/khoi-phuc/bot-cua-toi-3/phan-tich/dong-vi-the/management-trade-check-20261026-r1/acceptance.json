@@ -1,0 +1,18 @@
+{
+  "author": "Claude Opus 5.5 max",
+  "proposal_sha256": "6481072e68c1bc146a87375ce116b4d96b13c3bfbff0d8a265df27a4957d8040",
+  "canonical_sha256": "6481072e68c1bc146a87375ce116b4d96b13c3bfbff0d8a265df27a4957d8040",
+  "body_changed": false,
+  "compile_build": "b3-management-trade-check-20261026-r1",
+  "compile_errors": 0,
+  "compile_warnings": 0,
+  "legacy_regression": "manager-trade-legacy-20261026-r1",
+  "legacy_cases": 364,
+  "table_regression": "manager-trade-regression-20261026-r1",
+  "table_cases": 364,
+  "trade_mode_compiled": true,
+  "trade_mode_executed": false,
+  "trade_mode_native_adapter_complete": false,
+  "whole_manager_complete": false,
+  "whole_bot_complete": false
+}
