@@ -1,0 +1,13 @@
+{
+  "pid": 19672,
+  "started": "2026-10-25T08:18:46.6202102Z",
+  "model": "claude-opus-5-5",
+  "effort": "max",
+  "ultracode_requested": true,
+  "scope": "Write proposed analysis/code only within an explicitly assigned deliverable directory",
+  "output_directory": "dich-nguoc/khoi-phuc/claude-thuc-hien/bot1-management-distance-20261025-r1",
+  "edit_rule": "Edit(./dich-nguoc/khoi-phuc/claude-thuc-hien/bot1-management-distance-20261025-r1/**)",
+  "permission_mode": "dontAsk",
+  "prompt_sha256": "725559e60ee0a67ddf236c87d9e12bd243eb4617097e425a22bc6314175f5639",
+  "resume": ""
+}
