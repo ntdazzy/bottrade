@@ -1,0 +1,17 @@
+{
+  "cases": 291,
+  "matched": 291,
+  "failed": 0,
+  "first_failures": [],
+  "original_ex5_sha256": "ee063d3d87490afe24e2f4ce85f6b05659320e297b102efd70207f71ca2feb83",
+  "engine_sha256": "5033d9d45d669cebd735e8a6be20b54d74b75274f885c9a0e48e52d872104efb",
+  "source_matrix": "virtual-matrix-20261025-r1",
+  "hashes": {
+    "build.json": "5a3fb3fd3f7dd60cf82e72699630c5f7c639cf34fa6501079a228d93b9b733b4",
+    "mql5-results.bin": "1219f54591eb809a6fa864b9becff8a465f540661c16ce401a6f70db6122e965",
+    "api-fixtures.bin": "3e2c7348711eab87c44ffe431e111b66053e3bad2317e27269f7b522e8d88c11",
+    "script-status.bin": "32e3aceb62c160870116122e56f76bce3bd5046d45fc3602d2a0709cc7b8233a"
+  },
+  "whole_bot_complete": false,
+  "scope": "Same five bot3 functions/check body in the original tester-engine version; all2500 table doubles,both warning tickets,guard,return bits,settings,selection and full physical ticket array match. API records equal to the script; query/time replies supplied and ArrayResize measured. No orders; no complete EA,lifecycle,actual account state or exhaustive allocation-failure proof."
+}

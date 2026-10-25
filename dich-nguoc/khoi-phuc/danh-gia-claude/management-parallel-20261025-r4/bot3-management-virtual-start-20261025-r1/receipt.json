@@ -1,0 +1,105 @@
+{
+  "run": "bot3-management-virtual-start-20261025-r1",
+  "session_id": "9ef2826b-0531-4f40-a7bb-30ec1bc55926",
+  "started": "2026-10-25T11:19:17.3005412Z",
+  "snapshot_utc": "2026-10-25T11:58:57.589658+00:00",
+  "status": "delivered-unverified",
+  "response_is_error": false,
+  "terminal_reason": "completed",
+  "job_sha256": "e714dcf29208ecd17118fcc9f0cc62e59dff61d81b3efc603e5a963d92a4af31",
+  "prompt_sha256": "a197fdbf8340cc9d69e9cbb20600c672d13c92c6d232054cfd1677007cf0af3b",
+  "response_sha256": "6df3842bed58279a83a71a6feb6e3afc929a67b04d59a4c0674641533321172c",
+  "actual_requests": 16,
+  "requests": [
+    {
+      "timestamp": "2026-10-25T11:19:20.510Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T11:19:25.891Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T11:19:29.965Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T11:19:33.938Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T11:19:40.306Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T11:19:47.082Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T11:19:51.998Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T11:21:33.538Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T11:21:38.019Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T11:21:54.120Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T11:21:58.152Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T11:22:45.085Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T11:22:57.483Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T11:23:25.565Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T11:24:34.437Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T11:24:37.995Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    }
+  ],
+  "ultracode_requested": true,
+  "ultracode_runtime_confirmed": null,
+  "journal_prefix_bytes": 1260874,
+  "journal_prefix_sha256": "fbbf140f3aa3c760eb9ae4b8604862ad70025a91b7b6ece5bde17f059ab78704",
+  "files_sha256": {
+    "dich-nguoc/khoi-phuc/claude-thuc-hien/bot3-management-virtual-start-20261025-r1/Bot3ManagementVirtualStart.mqh": "8060d2b7637b5e923825265a90de035f9f0ef5aa6c8b863754ebe818e5eda0ec",
+    "dich-nguoc/khoi-phuc/claude-thuc-hien/bot3-management-virtual-start-20261025-r1/SUMMARY.md": "d470c789ad8f2ad087ba4f9677114d83890237315850986a29f982248e87dfce"
+  },
+  "source_validated": false,
+  "whole_bot_complete": false
+}

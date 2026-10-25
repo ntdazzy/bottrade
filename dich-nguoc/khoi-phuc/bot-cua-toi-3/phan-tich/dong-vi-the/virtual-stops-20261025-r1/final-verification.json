@@ -1,0 +1,19 @@
+{
+  "normal_cases": 291,
+  "matched": 291,
+  "fatal_classes_and_states": 2,
+  "tester_cases": 291,
+  "tester_report_verified": true,
+  "source_build_errors": 0,
+  "source_build_warnings": 0,
+  "source_hashes": {
+    "Include/bot-cua-toi-3/Bot3VirtualStops.mqh": "f62cf679b7dd0607e0f079675572be7ecb4d46bed9dd8a3ff04b9374d694a500",
+    "Include/bot-cua-toi-3/Bot3PriceLevels.mqh": "1cfecf5f324056b64f72a8fb21f446b7ca35f377ae40d4ab0c6859bfe736c413",
+    "Scripts/bot-cua-toi-3/Bot3VirtualStopsCheck.mq5": "c8ece73717571849f78c5b7f30921e02f70258d9b4a57ad36528dd16becbe963"
+  },
+  "original_ex5_sha256": "ee063d3d87490afe24e2f4ce85f6b05659320e297b102efd70207f71ca2feb83",
+  "comparison_sha256": "fc215180cf6beb7f8fb5648e9ba8de83cddbbe2fd341c40fe71c26ac557452df",
+  "fatal_summary_sha256": "47046e76ec21af4124c08bf61e79c3ff46bea03eb5e485d7318445138852b4dc",
+  "tester_comparison_sha256": "7a48bd4bd4ac20f96465f91b1a716f855f1b37fa93c99dd91a0f81829bfc5e1b",
+  "whole_bot_complete": false
+}

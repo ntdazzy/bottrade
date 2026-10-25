@@ -1,0 +1,240 @@
+{
+  "cases": 291,
+  "matched": 291,
+  "failed": 0,
+  "first_failures": [],
+  "groups": {
+    "guard-byte": {
+      "cases": 16,
+      "matched": 16
+    },
+    "first-existing-ticket": {
+      "cases": 8,
+      "matched": 8
+    },
+    "duplicate-first-match": {
+      "cases": 8,
+      "matched": 8
+    },
+    "side-int32": {
+      "cases": 7,
+      "matched": 7
+    },
+    "float-arguments": {
+      "cases": 54,
+      "matched": 54
+    },
+    "digits-low32": {
+      "cases": 11,
+      "matched": 11
+    },
+    "no-free-row-cleanup": {
+      "cases": 3,
+      "matched": 3
+    },
+    "find-free-last": {
+      "cases": 2,
+      "matched": 2
+    },
+    "full-table-warning": {
+      "cases": 1,
+      "matched": 1
+    },
+    "full-table-warning-once": {
+      "cases": 1,
+      "matched": 1
+    },
+    "disabled-table-warning": {
+      "cases": 1,
+      "matched": 1
+    },
+    "zero-guard-warning": {
+      "cases": 1,
+      "matched": 1
+    },
+    "warning-rereads-guard": {
+      "cases": 1,
+      "matched": 1
+    },
+    "digits-reread-unit": {
+      "cases": 1,
+      "matched": 1
+    },
+    "digits-enable-and-fill-row": {
+      "cases": 1,
+      "matched": 1
+    },
+    "cleanup-rereads-guard": {
+      "cases": 1,
+      "matched": 1
+    },
+    "array-initial-size": {
+      "cases": 12,
+      "matched": 12
+    },
+    "position-types-and-selection": {
+      "cases": 10,
+      "matched": 10
+    },
+    "array-growth": {
+      "cases": 8,
+      "matched": 8
+    },
+    "resize-fails-empty-account": {
+      "cases": 1,
+      "matched": 1
+    },
+    "delay-conversion-and-boundary": {
+      "cases": 45,
+      "matched": 45
+    },
+    "delay-int32": {
+      "cases": 6,
+      "matched": 6
+    },
+    "delay-rereads-setting": {
+      "cases": 1,
+      "matched": 1
+    },
+    "delay-caches-stamp": {
+      "cases": 1,
+      "matched": 1
+    },
+    "delay-no-ticket": {
+      "cases": 1,
+      "matched": 1
+    },
+    "stamp-int64-to-double": {
+      "cases": 6,
+      "matched": 6
+    },
+    "stamp-keeps-found-row": {
+      "cases": 1,
+      "matched": 1
+    },
+    "stamp-no-ticket": {
+      "cases": 1,
+      "matched": 1
+    },
+    "initial-resize-retry": {
+      "cases": 1,
+      "matched": 1
+    },
+    "old-tail-is-not-open": {
+      "cases": 2,
+      "matched": 2
+    },
+    "negative-zero-ticket-cache": {
+      "cases": 1,
+      "matched": 1
+    },
+    "negative-zero-free-slot": {
+      "cases": 1,
+      "matched": 1
+    },
+    "cached-level-not-rounded": {
+      "cases": 1,
+      "matched": 1
+    },
+    "symbol-forwarding": {
+      "cases": 2,
+      "matched": 2
+    },
+    "separate-multiply-add": {
+      "cases": 1,
+      "matched": 1
+    },
+    "separate-multiply-subtract": {
+      "cases": 1,
+      "matched": 1
+    },
+    "take-level-guard-float": {
+      "cases": 32,
+      "matched": 32
+    },
+    "take-cached-before-invalid-input": {
+      "cases": 8,
+      "matched": 8
+    },
+    "take-duplicate-first-match": {
+      "cases": 8,
+      "matched": 8
+    },
+    "take-full-cleanup": {
+      "cases": 3,
+      "matched": 3
+    },
+    "cleanup-both-tables": {
+      "cases": 3,
+      "matched": 3
+    },
+    "cleanup-mixed-stop-take": {
+      "cases": 2,
+      "matched": 2
+    },
+    "cleanup-take-long-conversion": {
+      "cases": 2,
+      "matched": 2
+    },
+    "take-ticket-special": {
+      "cases": 6,
+      "matched": 6
+    },
+    "take-free-last": {
+      "cases": 1,
+      "matched": 1
+    },
+    "take-full-warning-once": {
+      "cases": 2,
+      "matched": 2
+    },
+    "take-warning-rereads-guard": {
+      "cases": 1,
+      "matched": 1
+    },
+    "take-cleanup-rereads-guard": {
+      "cases": 1,
+      "matched": 1
+    },
+    "take-cleanup-enables-table": {
+      "cases": 1,
+      "matched": 1
+    },
+    "take-warning-ticket-after-total": {
+      "cases": 1,
+      "matched": 1
+    }
+  },
+  "coverage": {
+    "0x20bc0": {
+      "executed": 167,
+      "instructions": 183
+    },
+    "0x47f10": {
+      "executed": 174,
+      "instructions": 174
+    },
+    "0x482b0": {
+      "executed": 105,
+      "instructions": 105
+    },
+    "0x484c0": {
+      "executed": 39,
+      "instructions": 39
+    },
+    "0x48560": {
+      "executed": 29,
+      "instructions": 29
+    }
+  },
+  "hashes": {
+    "cases.bin": "0c8691398d5d9e86020cb84dca151afa89d2bdf1e48c34a0b7344958d0014963",
+    "baseline.json": "3bd85645829eb6ee38c4b27cfad2fba276a63aa0d45714dc288637bc30c7f544",
+    "mql5-results.bin": "1219f54591eb809a6fa864b9becff8a465f540661c16ce401a6f70db6122e965",
+    "api-fixtures.bin": "3e2c7348711eab87c44ffe431e111b66053e3bad2317e27269f7b522e8d88c11",
+    "original-results.bin": "1219f54591eb809a6fa864b9becff8a465f540661c16ce401a6f70db6122e965",
+    "script-status.bin": "32e3aceb62c160870116122e56f76bce3bd5046d45fc3602d2a0709cc7b8233a"
+  },
+  "whole_bot_complete": false,
+  "scope": "Five bot3 virtual-stop/take functions. Return bits, all2500 table doubles,guard,both warning tickets,delay,unit,symbol,selected-position model,full physical ticket array and exact typed SDK records compared. ArrayResize post-state measured in MQL5 and input-bound; query replies supplied. Fatal cases,actual account/LastError,all allocation outcomes,error locations,tester and whole EA remain unverified."
+}

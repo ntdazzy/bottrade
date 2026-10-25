@@ -1,0 +1,16 @@
+[
+  {
+    "id": "b3-engine-engine-virtual-b3-r2",
+    "expert": "RecoveryBot3Virtual20261025\\engine-virtual-b3-r2\\Bot3VirtualStopsEngineCheck.ex5",
+    "symbol": "XAUUSD_NOCOST_V2",
+    "period": "M15",
+    "model": 0,
+    "from": "2026.09.29",
+    "to": "2026.09.30",
+    "timeout": 120,
+    "inputs": {
+      "CheckRun": "engine-virtual-b3-r2",
+      "OnlyCase": -1
+    }
+  }
+]

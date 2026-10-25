@@ -1,0 +1,57 @@
+{
+  "run": "bot3-slippage-audit-20261025-r1",
+  "session_id": "2febfea0-d4ac-42f6-99e8-710279f0a05d",
+  "started": "2026-10-25T11:46:55.3438367Z",
+  "snapshot_utc": "2026-10-25T11:58:57.589658+00:00",
+  "status": "provider-blocked-or-error",
+  "response_is_error": true,
+  "terminal_reason": "api_error",
+  "job_sha256": "30b79df7fb9236a4303e031a0378d54a006931c46e18dc18ff578142df996028",
+  "prompt_sha256": "ecbe1351b11cf90117d26a0babb02e4e0c7e49d4cecb0fe05355413f80d1d005",
+  "response_sha256": "eae32f30452d8f3a6dbe8b4d1b0418901e8bda59ce596cd317ef8182e38455a4",
+  "actual_requests": 7,
+  "requests": [
+    {
+      "timestamp": "2026-10-25T11:46:58.546Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T11:47:05.974Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T11:47:11.313Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T11:47:14.967Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T11:47:21.690Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T11:47:24.830Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T11:48:18.307Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    }
+  ],
+  "ultracode_requested": true,
+  "ultracode_runtime_confirmed": null,
+  "journal_prefix_bytes": 918837,
+  "journal_prefix_sha256": "7efae0dd413ce156165b6edb6b3a9869a50d8b42d070fc7e2d184f572196fbcb",
+  "files_sha256": {},
+  "source_validated": false,
+  "whole_bot_complete": false
+}

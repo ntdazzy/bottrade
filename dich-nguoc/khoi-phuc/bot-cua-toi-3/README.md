@@ -1,5 +1,11 @@
 # bot-cua-toi-3
 
+Mới thêm xử lý khởi đầu mức dừng/chốt ảo và cập nhật chốt ảo:
+**696/696 ca khớp** mã máy gốc/MQL5; biên dịch **0 lỗi, 0 cảnh báo**.
+Các hàm con được cấp kết quả tại ranh giới gọi. Còn phần cuối nhánh
+ảo, nhánh thật, vòng ngoài và EA chính; chưa chạy cặp hai bot đầy đủ.
+[Phạm vi và bằng chứng](../PHAN-TICH-QUAN-LY-BOT-3-20261025.md).
+
 Đã dựng năm hàm bảng dừng/chốt ảo: 291/291 ca thường khớp mã gốc,
 MQL5 và máy đo quá khứ riêng; hai ca lỗi mảng khớp loại lỗi/trạng thái.
 Biên dịch 0 lỗi/cảnh báo. So cả 2.500 số trong hai bảng, mảng vé và

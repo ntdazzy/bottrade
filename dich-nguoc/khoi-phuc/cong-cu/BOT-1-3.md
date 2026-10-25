@@ -696,6 +696,17 @@ tệp `Defaults` do MT5 xuất và các tệp số đã nạp để đọc tên 
   SSE2 nhỏ trên CPU Windows x64 và Unicorn. Dùng vùng nhớ riêng, trả lại
   quyền nhớ/giải phóng và khôi phục MXCSR; không sửa EX5 hoặc hệ thống.
   Lượt cpu-nan-20261025-r1 ghi 24 khác biệt, là phép đo giới hạn mô phỏng.
+- `bot-cua-toi-3/tests/check-management-virtual-levels.py prepare|original|mql5|compare NEW_RUN [--build BUILD]`:
+  bắt đầu nhánh mức dừng/chốt ảo và cập nhật chốt ảo; biên dịch
+  Bot3ManagementVirtualLevelsCheck.mq5. Lượt levels-20261025-r2 khớp
+  696/696 ca, b3-virtual-levels-check-01 sạch 0/0. Hàm con được cấp trả lời;
+  hai phép hai NaN dùng CPU qua doi-chieu-nan-quan-ly.py, có đếm riêng.
+- `thu-ket-qua-claude.py BATCH --runs RUN ... [--refused RUN ...]`:
+  kiểm prompt, nối nhật ký từng phiên, xác nhận model/effort thực tế,
+  lưu phản hồi/biên nhận mới mà không sửa bằng chứng cũ. --refused dùng
+  khi đã đọc và xác định phản hồi từ chối bằng chữ dù is_error=false.
+  Không có mã/đánh giá thì không gọi là đã giao kết quả; bản nhận chưa
+  phải nguồn đã được kiểm. Ultracode vẫn ghi chưa xác nhận thực tế.
 
 Các chương trình chỉ dùng MT5 riêng của từng bot trong dich-nguoc/.local.
 Với hai bộ theo mode, chạy prepare, biên dịch, mql5 --build, original,

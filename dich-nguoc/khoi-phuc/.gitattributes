@@ -209,7 +209,23 @@
 /danh-gia-claude/bot3-native-sse-check-*/** -text
 /danh-gia-claude/bot3-nan-review-*/** -text
 /danh-gia-claude/management-parallel-*/** -text
+/danh-gia-claude/management-parallel-*/*/prompt.txt whitespace=-blank-at-eol,-blank-at-eof,cr-at-eol
 # Original prompts/contracts are SHA-bound evidence, including their whitespace.
 /claude-thuc-hien/bot3-*/TASK.md whitespace=-blank-at-eol,-blank-at-eof,cr-at-eol
 /danh-gia-claude/bot3-*/prompt.txt whitespace=-blank-at-eol,-blank-at-eof,cr-at-eol
 /bot-cua-toi-3/phan-tich/dong-vi-the/management-virtual-20261025-r1/contract.md whitespace=-blank-at-eof,cr-at-eol
+
+# Exact-byte evidence for virtual levels and the accepted parallel finish parts.
+/bot-cua-toi-[13]/source/MQL5/Include/bot-cua-toi-[13]/Bot[13]ManagementVirtual*.mqh -text
+/bot-cua-toi-[13]/phan-tich/dong-vi-the/management-virtual-*-20261025-r1/** -text
+/bot-cua-toi-3/source/MQL5/Include/bot-cua-toi-3/Bot3VirtualStops.mqh -text
+/bot-cua-toi-3/source/MQL5/Scripts/bot-cua-toi-3/Bot3VirtualStops*.mq5 -text
+/bot-cua-toi-3/tests/kiem-*dung-ao*.py -text
+/bot-cua-toi-3/phan-tich/dong-vi-the/virtual-stops-20261025-r1/** -text
+/bot-cua-toi-3/bang-chung/kiem-bang-dung-ao*/** -text
+/bot-cua-toi-3/bang-chung/bien-dich/b3-virtual-*/** -text
+/cong-cu/doi-chieu-nan-quan-ly.py -text
+/cong-cu/thu-ket-qua-claude.py -text
+/claude-thuc-hien/bot3-*-audit-*/** -text
+/claude-thuc-hien/bot3-finish-*/** -text
+/danh-gia-claude/management-parallel-*/** -text

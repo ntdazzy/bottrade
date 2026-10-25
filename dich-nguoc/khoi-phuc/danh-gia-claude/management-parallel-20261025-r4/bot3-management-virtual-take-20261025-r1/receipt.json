@@ -1,0 +1,37 @@
+{
+  "run": "bot3-management-virtual-take-20261025-r1",
+  "session_id": "c38907ac-9834-4f60-8d8e-229cabc62b69",
+  "started": "2026-10-25T11:19:18.6259919Z",
+  "snapshot_utc": "2026-10-25T11:58:57.589658+00:00",
+  "status": "textual-refusal",
+  "response_is_error": false,
+  "terminal_reason": "completed",
+  "job_sha256": "35fdd73cae353dd22a993159040ca3b2a98f9d88c75c6b341476d71452f46761",
+  "prompt_sha256": "d20e02ea82341c6620f48b781ec199d874d8d1655c615b4961c2e0a866510664",
+  "response_sha256": "12dad7c9eed3110ee4c2183006900205b4d0ebe0b99064bcf2d507aa5a8e9c78",
+  "actual_requests": 3,
+  "requests": [
+    {
+      "timestamp": "2026-10-25T11:19:21.946Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T11:19:45.106Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T11:20:02.220Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    }
+  ],
+  "ultracode_requested": true,
+  "ultracode_runtime_confirmed": null,
+  "journal_prefix_bytes": 684730,
+  "journal_prefix_sha256": "442eb82544e2b827876893453f84fefb5d7424de2ec1fabee3e82edc32ba83af",
+  "files_sha256": {},
+  "source_validated": false,
+  "whole_bot_complete": false
+}

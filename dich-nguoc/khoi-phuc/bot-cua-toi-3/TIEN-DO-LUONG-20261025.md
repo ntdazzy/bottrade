@@ -1,5 +1,18 @@
 # Tiến độ riêng bot 3 — 25/10/2026
 
+## Cập nhật mới: mức dừng/chốt trong quản lý
+
+- Bot3ManagementVirtualStart.mqh và Bot3ManagementVirtualTake.mqh:
+  levels-20261025-r2 khớp **696/696 ca** (272 đầu nhánh, 424 cập nhật chốt).
+  Biên dịch b3-virtual-levels-check-01: **0 lỗi, 0 cảnh báo**.
+- Phần khởi đầu Claude viết, Codex giữ thân hàm và kiểm; phần cập nhật
+  chốt Claude từ chối, Codex trực tiếp làm theo ngoại lệ đã được duyệt.
+- Đã chốt mô tả ba phần cao/thấp, khóa lời/bộ đếm, lưu hai bảng từ native;
+  đang giao ba phiên Claude viết riêng. Chưa có bằng chứng chạy các phần này.
+- Các số ở dưới là kết quả của từng lượt cũ. Dòng “0 phiên còn chạy” chỉ
+  nói về nhóm năm phiên bảng ảo đã kết thúc, không nói nhóm quản lý mới.
+- Chưa có hai hàm quản lý hoặc EA hoàn chỉnh; chưa chạy cặp toàn bot.
+
 ## Kết quả mới có bằng chứng
 
 - Đã đọc quy tắc và quy trình trước khi sửa. SHA-256 EX5 gốc đã kiểm

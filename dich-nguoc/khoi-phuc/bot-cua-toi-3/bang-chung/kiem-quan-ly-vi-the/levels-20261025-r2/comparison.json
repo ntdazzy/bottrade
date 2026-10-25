@@ -1,0 +1,32 @@
+{
+  "cases": 696,
+  "matched": 696,
+  "failed": 0,
+  "groups": {
+    "0": {
+      "cases": 272,
+      "matched": 272
+    },
+    "4": {
+      "cases": 424,
+      "matched": 424
+    }
+  },
+  "first_failures": [],
+  "hashes": {
+    "cases.bin": "96c10fecb30eddc6fdc70e5c91238b57ae559730521b69987faf01a586682807",
+    "original-results.bin": "22d284f593c42841ad38360db18f440c4d4b0a8acceb6934189fed6bb00a0190",
+    "mql5-results.bin": "22d284f593c42841ad38360db18f440c4d4b0a8acceb6934189fed6bb00a0190"
+  },
+  "slice_only": true,
+  "whole_manager_complete": false,
+  "whole_bot_complete": false,
+  "helper_children_intercepted": true,
+  "original_bytes_changed": false,
+  "limits": [
+    "Only virtual-start and virtual-take segments; no complete manager, EA or paired terminal comparison.",
+    "Stop/take/delay/modify/stamp/close helpers are intercepted at their original call boundaries; API replies are supplied.",
+    "Try-close forwarding values are verified on the MQL5 side. Valid volume indices are a precondition.",
+    "Both-NaN scalar results use measured Windows SSE2 fixtures; all other original instructions execute in Unicorn. No full physical original run or MXCSR status comparison."
+  ]
+}

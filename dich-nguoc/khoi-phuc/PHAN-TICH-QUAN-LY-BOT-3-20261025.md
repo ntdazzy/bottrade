@@ -4,6 +4,27 @@
 Bot3ManagementPrelude.mqh và Bot3ManagementVirtual.mqh.
 Nguồn này chưa phải hai hàm quản lý đầy đủ hoặc EA.
 
+Đã bổ sung Bot3ManagementVirtualStart.mqh (Claude viết, Codex kiểm) và
+Bot3ManagementVirtualTake.mqh (Codex làm theo ngoại lệ Claude từ chối).
+Lượt levels-20261025-r2 khớp 696/696 ca: 272 ca bắt đầu nhánh ảo,
+424 ca cập nhật chốt ảo. Biên dịch b3-virtual-levels-check-01 sạch 0/0;
+hai tệp kết quả cùng SHA-256
+22d284f593c42841ad38360db18f440c4d4b0a8acceb6934189fed6bb00a0190.
+Phép so giữ thứ tự gọi và thời điểm đọc khi API thay đổi dữ liệu, vé
+64 bit, số không dấu/có dấu, NaN/vô cực, cài đặt và các giá trị trả false.
+Giữ hành vi gốc: phía bán cũng dùng bid để tính mức chốt ảo mới;
+hàm ghi giờ vẫn được gọi dù sửa vị thế trả false.
+
+Thân hàm khởi đầu của Claude giữ nguyên, chỉ đổi ghi chú đầu tệp.
+Mô tả trước viết, ranh giới gốc, biên nhận ghép và xác nhận cuối ở
+bot-cua-toi-3/phan-tich/dong-vi-the/management-virtual-levels-20261025-r1/.
+Rà độc lập không thấy lỗi có cơ sở trong nguồn và cách ghi/đọc bộ kiểm.
+Lượt levels-20261025-r1 dừng vì bộ kiểm quên giả lập lệnh trả về của
+hàm con; giữ attempt-error.json. Nguồn MQL5 không đổi để xử lý lỗi đó.
+Lượt r2 dùng CPU cho đúng hai phép có hai NaN; mọi lệnh còn lại vẫn
+qua Unicorn. Các hàm con được cấp kết quả tại ranh giới, chưa chạy
+toàn chuỗi quản lý với các hàm con thật hoặc hai EA đầy đủ.
+
 | Phần | Bằng chứng mới | Kết quả |
 |---|---|---|
 | Đọc/lọc vị thế, dừng/chốt đầu, ba nhóm đóng theo nến | prelude-cpu-20261025-r1 | 636/636 khớp toàn bản ghi và thứ tự gọi; 519/519 + 522/522 lệnh trong ranh giới đã chạy |
@@ -58,8 +79,9 @@ các phép so trên. Rà độc lập không thấy lỗi chức năng có cơ s
 
 ## Còn thiếu
 
-- Bắt đầu nhánh dừng/chốt ảo của bot 3, các nhánh dừng thật, mức cao/thấp,
-  khóa lời, bộ đếm và ghi bảng.
+- Các nhánh dừng thật, mức cao/thấp, khóa lời, bộ đếm và ghi bảng.
+  Ba phần cuối nhánh ảo đã có mô tả native, đang giao Claude viết song song;
+  chưa xem đề xuất hoặc phản hồi chờ là nguồn đã đạt.
 - Vòng ngoài, thời điểm/nơi gọi, nhiều vị thế, các đường lỗi cấp bộ nhớ.
 - Ghép hàm con thật: các bộ kiểm trên chặn hàm sửa và kiểm đóng ở ranh giới.
 - Cài đặt, bảng hiển thị, lưu trạng thái, khởi động lại và EA chính.

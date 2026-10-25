@@ -1,0 +1,23 @@
+{
+  "case_id": 220,
+  "group": "initial-resize-fatal",
+  "exit_code": 4294967295,
+  "seconds": 3.55,
+  "native": {
+    "code": "0x161e9d000001f6",
+    "class_low32": 502,
+    "return_rva": "0x20eef",
+    "state_sha256": "19884a5908bdb76f238c3a046bc4b8d7719120005c6d4500f6abb351698ee612",
+    "array_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "service_records_consumed": 5
+  },
+  "mql5_error_class": "array out of range",
+  "no_normal_result": true,
+  "hashes": {
+    "mql5-results.bin": "251c642fdfac2c1752b5074ac246be15fa61546ddf493e2a2a8b458dabc9a7d9",
+    "api-fixtures.bin": "1714efec0687991c27196cce67cb83355b8577afc98e1796019a302066abcb26",
+    "runtime-lines.txt": "4d0835a0ea557321b6cb0153bc8af8e847d07c744237594fdfbe82e367b75a3d"
+  },
+  "terminal_sha256_before": "d92c969e0c141cad6f4f9083234b841e2da21862e66b3bbc9b70cbfe5a8e7a47",
+  "terminal_sha256_after": "d92c969e0c141cad6f4f9083234b841e2da21862e66b3bbc9b70cbfe5a8e7a47"
+}

@@ -1,0 +1,74 @@
+{
+  "take": {
+    "session": "40632b56-b5b1-4e21-aa41-5f88c650449f",
+    "pid": 22668,
+    "finished": true,
+    "status": "declined",
+    "response_sha256": "7ba3231b796927e39236f5f3b803ef6a31be1548f34f5054f2963467612beefa",
+    "output_hashes": {
+      "fragment.mqh": "475b93b06cc67cdb53d54a5c294f9b0193834d3b356a5ba20989ad7245996223",
+      "notes.md": "acd22aa513cf8f95ce945283c7f6a497ea1d2200e52d8da1df77ce998178ffa1"
+    },
+    "observed_model": "claude-opus-5-5",
+    "observed_effort": "max",
+    "ultracode_runtime_confirmed": false
+  },
+  "checks": {
+    "session": "486468aa-0200-4c03-a8bc-11a61eee9bf1",
+    "pid": 19268,
+    "finished": true,
+    "status": "declined",
+    "response_sha256": "148f719dc2bb8f270507e0163c8be270e06a8ff305affd46d0cf0fa4a122e914",
+    "output_hashes": {
+      "Bot3VirtualStopsCheck.mq5": "dbafd5c1d91be6ec79f3326fb77326e13a8e77160b0d5bca43fa120c14522b28",
+      "kiem-bang-dung-ao-day-du-bot-3.py": "0494d7bd8a34f3709628520526005236a3c3f42f58f46e620440f142b812047b",
+      "notes.md": "49789b79ce41478827770ddc759c1943fd71382cd9a7067f4be283b2a6ae4fef",
+      "README.md": "0494d7bd8a34f3709628520526005236a3c3f42f58f46e620440f142b812047b"
+    },
+    "observed_model": "claude-opus-5-5",
+    "observed_effort": "max",
+    "ultracode_runtime_confirmed": false
+  },
+  "stop": {
+    "session": "7c976294-4c1b-41b1-8f66-b5d6e1328878",
+    "pid": 1392,
+    "finished": true,
+    "status": "wrote_code",
+    "response_sha256": "384c4462d380977ec2dc9a405af8cbe3364ed8eb3893f5e3cca51cb4c9b2880d",
+    "output_hashes": {
+      "fragment.mqh": "0e412244f2ccbb7ec101dcae554578705d6917b07bd63eee0f6958ce12b9059f",
+      "notes.md": "091a21ade3214bcdf72aaf2dab8adf73ccba3704414d2588a1a2a4e66e400404"
+    },
+    "observed_model": "claude-opus-5-5",
+    "observed_effort": "max",
+    "ultracode_runtime_confirmed": false
+  },
+  "clean": {
+    "session": "8a3eba89-5b38-46eb-b8d8-cd1d52f0f2fe",
+    "pid": 17228,
+    "finished": true,
+    "status": "declined",
+    "response_sha256": "9148991c3d2c3a96beae33a5602d26227636d7f09b937b1eb781a96901597a23",
+    "output_hashes": {
+      "fragment.mqh": "dbafd5c1d91be6ec79f3326fb77326e13a8e77160b0d5bca43fa120c14522b28",
+      "notes.md": "f88cf1c327714b54f97da4f5975224a961cdddb0bdaf1f764706b8503e3e69d0"
+    },
+    "observed_model": "claude-opus-5-5",
+    "observed_effort": "max",
+    "ultracode_runtime_confirmed": false
+  },
+  "time": {
+    "session": "a145875e-1c94-42a0-8e35-5ac3fdca19fc",
+    "pid": 16300,
+    "finished": true,
+    "status": "wrote_code",
+    "response_sha256": "958ae32104468912065faf7d1dd2544bf35ef27088bca615dfb14759310b9163",
+    "output_hashes": {
+      "fragment.mqh": "16cbc2838e62ec7a6f9b53d0341dde79b98d2920c78a8a96f425e3588ee4e9f1",
+      "notes.md": "6de0d9f7c878cde0aca18ed1026244003746be3e5561ac3f46e536a8c2a6d16f"
+    },
+    "observed_model": "claude-opus-5-5",
+    "observed_effort": "max",
+    "ultracode_runtime_confirmed": false
+  }
+}

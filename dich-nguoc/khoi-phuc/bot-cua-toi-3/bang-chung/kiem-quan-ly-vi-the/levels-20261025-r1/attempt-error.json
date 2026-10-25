@@ -1,0 +1,8 @@
+{
+  "status": "incomplete-tool-error",
+  "reason": "Original child hook did not simulate RET, so the original child body continued unexpectedly.",
+  "failed_case": 30,
+  "source_changed": false,
+  "resolved_in": "levels-20261025-r2",
+  "whole_bot_complete": false
+}

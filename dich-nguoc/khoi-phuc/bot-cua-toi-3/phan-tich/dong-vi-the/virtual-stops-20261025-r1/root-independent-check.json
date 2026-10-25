@@ -1,0 +1,47 @@
+{
+  "status": "root-independent-scoped-check-passed",
+  "normal_matched": 291,
+  "fatal_checks_reconciled": 2,
+  "original_rerun_sha256": "1219f54591eb809a6fa864b9becff8a465f540661c16ce401a6f70db6122e965",
+  "matrix_comparison": "bot-cua-toi-3/bang-chung/kiem-bang-dung-ao/virtual-matrix-20261025-r1/comparison.json",
+  "tester_comparison": "bot-cua-toi-3/bang-chung/kiem-bang-dung-ao-may-thu/engine-virtual-b3-r2/comparison.json",
+  "source_sha256": {
+    "Include/bot-cua-toi-3/Bot3VirtualStops.mqh": "f62cf679b7dd0607e0f079675572be7ecb4d46bed9dd8a3ff04b9374d694a500",
+    "Include/bot-cua-toi-3/Bot3PriceLevels.mqh": "1cfecf5f324056b64f72a8fb21f446b7ca35f377ae40d4ab0c6859bfe736c413",
+    "Scripts/bot-cua-toi-3/Bot3VirtualStopsCheck.mq5": "c8ece73717571849f78c5b7f30921e02f70258d9b4a57ad36528dd16becbe963"
+  },
+  "coverage": {
+    "0x20bc0": {
+      "captured": 183,
+      "executed": 167,
+      "extra": []
+    },
+    "0x47f10": {
+      "captured": 174,
+      "executed": 174,
+      "extra": []
+    },
+    "0x482b0": {
+      "captured": 105,
+      "executed": 105,
+      "extra": []
+    },
+    "0x484c0": {
+      "captured": 39,
+      "executed": 39,
+      "extra": []
+    },
+    "0x48560": {
+      "captured": 29,
+      "executed": 29,
+      "extra": []
+    }
+  },
+  "child_final_verification_sha256": "9d5dfb346883bd9605a386aa4f0113e94517d9376630e6026656d2fdedbb7060",
+  "whole_bot_complete": false,
+  "limits": [
+    "Five helper bodies only, not position-management or whole EA.",
+    "Query/time responses supplied; allocation post-state observed in MQL5.",
+    "Physical out-of-memory, full account/LastError/lifecycle and source error locations are not established."
+  ]
+}
