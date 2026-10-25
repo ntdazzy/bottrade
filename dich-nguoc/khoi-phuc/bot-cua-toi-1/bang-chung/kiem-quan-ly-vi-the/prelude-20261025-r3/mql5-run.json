@@ -1,0 +1,22 @@
+{
+  "original_ex5_sha256": "a3b0de423a06e10ebedc279307b93d7cb9188ba2bb5de77131a913c865b0e922",
+  "tool_sha256": "f5dbe950896e58a00331ef32473ccebdcbbf03a9627e8c12449c7f4087e6a49d",
+  "analysis_sha256": "88ac3446d1c8a0b209c06a94f3a0f6f668850776df92b5b427c84577fa34a085",
+  "sources_sha256": {
+    "Include/bot-cua-toi-1/Bot1ManagementPrelude.mqh": "2b4e3908d3b185ea8487dec7de07b33b32460569b901884afc948c54ea350211",
+    "Include/bot-cua-toi-1/Bot1PriceLevels.mqh": "601bdd551e24e3ac9a7742cc00e057d881b069ab672843bec31b3f32a43316b1",
+    "Include/bot-cua-toi-1/Bot1PositionModify.mqh": "0bf230d471ffd384f32df9a57794d65ef1cd9ab91b3ccebe41c52d6d12be5472",
+    "Include/bot-cua-toi-1/Bot1PositionClose.mqh": "03c79f46a202b8a06ddab6fdae88291d4dbf30a0c2d6f99c0ff30fe24ffc21d5",
+    "Include/bot-cua-toi-1/Bot1VirtualStops.mqh": "da7aa4f6ff38c97aa4e9288620f7e975d7255c598468948a515f8de2f2b7f400",
+    "Scripts/bot-cua-toi-1/Bot1ManagementPreludeCheck.mq5": "fe3fa98112af6692991b0fea2aa23006fa59bb6fac5038197ed2e1488fa13ad5"
+  },
+  "exit_code": 0,
+  "cases": 340,
+  "seconds": 3.28,
+  "build_receipt_sha256": "5b59ffcd58374063955ff7583dbfa3b0045d7ec8fb77dfa4d0d69c5ab807e564",
+  "binary_sha256": "410b6a205ea5de9fe44b7d700cdecd60b35a5189bef983eea958a1a86eac3dca",
+  "terminal_sha256_before": "d92c969e0c141cad6f4f9083234b841e2da21862e66b3bbc9b70cbfe5a8e7a47",
+  "terminal_sha256_after": "d92c969e0c141cad6f4f9083234b841e2da21862e66b3bbc9b70cbfe5a8e7a47",
+  "result_sha256": "8f3d229175dc29077b675f9846c8966e7ffb36b3e1df4ca26d6669c6ddbe53a1",
+  "prefix_only": true
+}

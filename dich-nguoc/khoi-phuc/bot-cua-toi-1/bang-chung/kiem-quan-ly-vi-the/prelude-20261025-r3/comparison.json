@@ -1,0 +1,18 @@
+{
+  "cases": 340,
+  "matched": 340,
+  "failed": 0,
+  "first_failures": [],
+  "prefix_only": true,
+  "whole_bot_complete": false,
+  "hashes": {
+    "cases.bin": "668e5b6828687bd1f292c38f75c69585e66062c5f92b1485a88ab03e1fed2a7d",
+    "original-results.bin": "8f3d229175dc29077b675f9846c8966e7ffb36b3e1df4ca26d6669c6ddbe53a1",
+    "mql5-results.bin": "8f3d229175dc29077b675f9846c8966e7ffb36b3e1df4ca26d6669c6ddbe53a1"
+  },
+  "limits": [
+    "Native stopped at documented prefix boundary; later management branches not executed.",
+    "Terminal replies supplied; modify/close children intercepted, separately verified in earlier runs.",
+    "No real trades, full EA, allocation-failure or restart proof."
+  ]
+}

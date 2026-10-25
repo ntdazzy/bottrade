@@ -1,0 +1,54 @@
+{
+  "status": "root-independent-bot1-management-slices-check-passed",
+  "slices": {
+    "prelude-20261025-r3": {
+      "cases": 340,
+      "matched": 340,
+      "failed": 0,
+      "build": "b1-management-prelude-03",
+      "build_errors": 0,
+      "build_warnings": 0,
+      "comparison_sha256": "7f223ea179310100e262e8afb54143f4b9b64a0e9d51a5fa4ee0ad842ac587fb",
+      "result_sha256": "8f3d229175dc29077b675f9846c8966e7ffb36b3e1df4ca26d6669c6ddbe53a1",
+      "scope_only": true,
+      "whole_bot_complete": false,
+      "limits": [
+        "Native stopped at documented prefix boundary; later management branches not executed.",
+        "Terminal replies supplied; modify/close children intercepted, separately verified in earlier runs.",
+        "No real trades, full EA, allocation-failure or restart proof."
+      ]
+    },
+    "cache-20261025-r2": {
+      "cases": 266,
+      "matched": 266,
+      "failed": 0,
+      "build": "b1-management-cache-02",
+      "build_errors": 0,
+      "build_warnings": 0,
+      "comparison_sha256": "c10df5cabfb5c3020bb96b82f2b5adc815bd2bda63c9a7e0aacbe9dd3658d43c",
+      "result_sha256": "1f464cf68dc3d69d6e8933ed4a02c977634bfbc7a23d41e93bc1a07ff16a5032",
+      "scope_only": true,
+      "whole_bot_complete": false,
+      "limits": [
+        "Slice only; not whole manager"
+      ]
+    },
+    "virtual-start-20261025-r6": {
+      "cases": 924,
+      "matched": 924,
+      "failed": 0,
+      "build": "b1-management-virtual-start-05",
+      "build_errors": 0,
+      "build_warnings": 0,
+      "comparison_sha256": "f7a512fa71285c34a6a59c8fc472c210d15dc6522d62168a5e201a8142efd4f4",
+      "result_sha256": "64542376799cac87132e3bbe6cb94309d4dc9304654223e2e61467abdc64257d",
+      "scope_only": true,
+      "whole_bot_complete": false,
+      "limits": [
+        "Only native virtual-start slices; remaining virtual trailing and outer management not executed.",
+        "Virtual-table, delay, stamp, modify and close children supplied at call boundary; children separately verified."
+      ]
+    }
+  },
+  "whole_bot_complete": false
+}

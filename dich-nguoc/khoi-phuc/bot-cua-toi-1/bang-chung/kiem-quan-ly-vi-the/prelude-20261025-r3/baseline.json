@@ -1,0 +1,16 @@
+{
+  "original_ex5_sha256": "a3b0de423a06e10ebedc279307b93d7cb9188ba2bb5de77131a913c865b0e922",
+  "tool_sha256": "f5dbe950896e58a00331ef32473ccebdcbbf03a9627e8c12449c7f4087e6a49d",
+  "analysis_sha256": "88ac3446d1c8a0b209c06a94f3a0f6f668850776df92b5b427c84577fa34a085",
+  "sources_sha256": {
+    "Include/bot-cua-toi-1/Bot1ManagementPrelude.mqh": "2b4e3908d3b185ea8487dec7de07b33b32460569b901884afc948c54ea350211",
+    "Include/bot-cua-toi-1/Bot1PriceLevels.mqh": "601bdd551e24e3ac9a7742cc00e057d881b069ab672843bec31b3f32a43316b1",
+    "Include/bot-cua-toi-1/Bot1PositionModify.mqh": "0bf230d471ffd384f32df9a57794d65ef1cd9ab91b3ccebe41c52d6d12be5472",
+    "Include/bot-cua-toi-1/Bot1PositionClose.mqh": "03c79f46a202b8a06ddab6fdae88291d4dbf30a0c2d6f99c0ff30fe24ffc21d5",
+    "Include/bot-cua-toi-1/Bot1VirtualStops.mqh": "da7aa4f6ff38c97aa4e9288620f7e975d7255c598468948a515f8de2f2b7f400",
+    "Scripts/bot-cua-toi-1/Bot1ManagementPreludeCheck.mq5": "fe3fa98112af6692991b0fea2aa23006fa59bb6fac5038197ed2e1488fa13ad5"
+  },
+  "cases": 340,
+  "inputs_sha256": "668e5b6828687bd1f292c38f75c69585e66062c5f92b1485a88ab03e1fed2a7d",
+  "prefix_only": true
+}

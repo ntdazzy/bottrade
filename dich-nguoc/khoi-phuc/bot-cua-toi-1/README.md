@@ -114,3 +114,9 @@ Thư mục `phan-tich/ban-ex5-05/` là bằng chứng cũ, được giữ nguyê
 Lượt `history-sort-20261025-r1` khớp 512/512 ca thường với mã gốc,
 biên dịch 0 lỗi/0 cảnh báo. Ca lỗi, nơi gọi, phần tổng hợp lịch sử,
 khởi động lại và toàn EA chưa kiểm.
+
+Các đoạn đầu của quản lý vị thế cũng đã được kiểm riêng:
+340 ca đọc/lọc và đóng theo nến, 266 ca bảng 100 vé/giá mở, 924 ca
+nhánh bắt đầu dừng ảo; cả ba lượt khớp mã gốc/MQL5, biên dịch 0 lỗi/
+0 cảnh báo. Đây chưa phải hai hàm quản lý đầy đủ; các nhánh dời dừng
+còn lại, nơi gọi, điều phối và toàn EA vẫn mở.
