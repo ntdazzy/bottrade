@@ -1,4 +1,4 @@
-"""Compare bot1 distance, slippage and store slices with captured native instructions.
+"""Compare bot1 real-management slices with captured native instructions.
 prepare|original|mql5|compare RUN [--build BUILD]. No orders are sent.
 """
 import argparse,importlib.util,json,re,shutil,struct,subprocess
@@ -13,20 +13,20 @@ CPU_PATH=ROOT/'cong-cu/doi-chieu-nan-quan-ly.py';cpu=module('blocks1_cpu',CPU_PA
 sha,require,save=pre.sha,pre.require,pre.save
 MT=(ROOT.parent/'.local/mt5-bot1-thread-20261025').resolve();MASK=(1<<64)-1
 MAGIC=inputs.MAGIC;ANALYSIS=pre.ANALYSIS;RESULT=struct.Struct('<5iIIQ41QiQQ')
-CONTRACT=ROOT/'claude-thuc-hien/bot1-real-three-check-20261026-r1/TASK.md'
-BINDINGS=HOME/'phan-tich/dong-vi-the/management-real-three-20261026-r1/native-bindings.json'
-NAMES=['Include/bot-cua-toi-1/'+n for n in ['Bot1ManagementPrelude.mqh','Bot1PriceLevels.mqh','Bot1PositionModify.mqh','Bot1PositionClose.mqh','Bot1VirtualStops.mqh','Bot1TradeErrors.mqh','Bot1ManagementMessages.mqh','Bot1TradeSend.mqh','Bot1TradeMessages.mqh','Bot1PendingRequest.mqh','Bot1Filling.mqh','Bot1ManagementRealDistance.mqh','Bot1ManagementRealSlippage.mqh','Bot1ManagementRealStore.mqh']]+['Scripts/bot-cua-toi-1/Bot1ManagementRealBlocksCheck.mq5']
+CONTRACT=ROOT/'claude-thuc-hien/bot1-real-six-check-20261026-r1/TASK.md'
+BINDINGS=HOME/'phan-tich/dong-vi-the/management-real-six-20261026-r1/native-bindings.json'
+NAMES=['Include/bot-cua-toi-1/'+n for n in ['Bot1ManagementPrelude.mqh','Bot1PriceLevels.mqh','Bot1PositionModify.mqh','Bot1PositionClose.mqh','Bot1VirtualStops.mqh','Bot1TradeErrors.mqh','Bot1ManagementMessages.mqh','Bot1TradeSend.mqh','Bot1TradeMessages.mqh','Bot1PendingRequest.mqh','Bot1Filling.mqh','Bot1ManagementRealDistance.mqh','Bot1ManagementRealSlippage.mqh','Bot1ManagementRealHighLow.mqh','Bot1ManagementRealLock.mqh','Bot1ManagementRealCounter.mqh','Bot1ManagementRealStore.mqh']]+['Scripts/bot-cua-toi-1/Bot1ManagementRealBlocksCheck.mq5']
 FIELDS=['id','returned','changed','counter','guard','index','error_count','deviation']+inputs.DOUBLES+['volume'+str(i) for i in range(8)]+['level'+str(i) for i in range(8)]+['calls','ordered_hash','table_hash']
 SCOPE=dict(calculation_slices_only=True,whole_manager_complete=False,whole_bot_complete=False,modify_child_intercepted=True,close_child_intercepted=True,original_report_text_code_executed=True,error_text_helper_executed=True,successful_string_allocation_supplied=True,signed_decimal_cast_supplied=True,original_ex5_changed=False)
-LIMITS=['Three separate real blocks in both directions; not a full manager, event loop, EA or paired terminals run.',
+LIMITS=['Separate real blocks in both directions; not a full manager, event loop, EA or paired terminals run.',
  'Modify and try-close receive supplied replies. Original close ticket comes from RCX; forwarding context fields are supplied and checked only on the MQL5 side.',
  'Native error-code/counter/string/Print code executes. Signed decimal conversion and successful allocation/free are supplied, not allocation failure.',
  'Both-NaN results use measured Windows SSE2 fixtures; remaining native instructions execute in Unicorn. No physical whole-original or MXCSR-status proof.',
- 'All API-triggered mutations are supplied provider effects. Unread protocol fields are checked only as provider state: counter/levels/lock fields in all three slices; trail/step/start/limit in store; step in slippage; current_stop outside store. They do not prove calculations in other bot1 blocks.']
-SCALARS={0x66d98:'unit',0x66a70:'gap',0x67468:'freeze',0x62580:'current_stop'}
+ 'All API-triggered mutations are supplied provider effects. Unread protocol fields are checked only as provider state, including unrelated stage settings and current_stop outside store. They do not prove calculations in other bot1 blocks.']
+SCALARS={0x66d98:'unit',0x66a70:'gap',0x67468:'freeze',0x62580:'current_stop',0x624c8:'lock_start',0x624d0:'lock_extra',0x62520:'step_distance',0x673e8:'copied_step',0x62510:'step_reference'}
 BY_STAGE={0:{0x624a8:'trail',0x624c0:'step',0x624b0:'start',0x624b8:'limit'},1:{0x62400:'trail',0x623f8:'start',0x62408:'limit'}}
-STARTS={0:(0x28220,0x2bc82),1:(0x2865c,0x2bfdf),5:(0x29675,0x2cdba)}
-EXITS={0:[0x2865c,0x2bfdf],1:[0x28aed,0x2c36e],5:[0x29878,0x2cfb8,0x2a3e5,0x2db64]}
+STARTS={0:(0x28220,0x2bc82),1:(0x2865c,0x2bfdf),2:(0x28aed,0x2c36e),3:(0x28f72,0x2c771),4:(0x293c6,0x2cb0a),5:(0x29675,0x2cdba)}
+EXITS={0:[0x2865c,0x2bfdf],1:[0x28aed,0x2c36e],2:[0x28f72,0x2c74c,0x2c767,0x2c771,0x2c78c],3:[0x293c6,0x29651,0x2cb0a,0x2cd92],4:[0x29651,0x2cd92],5:[0x29878,0x2cfb8,0x2a3e5,0x2db64]}
 
 def identity():
     helpers=[V_PATH,CASE_PATH,CPU_PATH,HOME/'tests/check-management-prelude.py',ROOT/'bot-cua-toi-3/tests/real_blocks_cases.py',ROOT/'cong-cu/kiem-gia-vao-bot-1-3.py',ROOT/'cong-cu/kiem-muc-gia-bot-1-3.py',ROOT/'cong-cu/kiem-khoi-luong-hop-le-bot-1-3.py',ROOT/'cong-cu/kiem-khoi-luong-bot-1-3.py',BINDINGS]
@@ -81,10 +81,9 @@ class Original(v.Original):
             if key not in changes and key!='unit':continue
             value=struct.unpack('<d',self.m.mem_read(self.base+rva,8))[0];value=value*2. if key=='unit' else value+changes[key];self.m.mem_write(self.base+rva,struct.pack('<d',value))
         for rva,delta in [(0x67758,.25),(0x67760,.5)]:self.m.mem_write(self.base+rva,struct.pack('<d',struct.unpack('<d',self.m.mem_read(self.base+rva,8))[0]+delta))
-        for key,delta in changes.items():
-            if key not in self.mapping.values():self.shadow[key]+=delta
-        index=(struct.unpack('<I',self.m.mem_read(self.base+0x678f4,4))[0]+1)%8;self.m.mem_write(self.base+0x678f4,struct.pack('<I',index));self.levels[index]+=1.25
-        self.counter=(self.counter+1+(1<<31))%(1<<32)-(1<<31)
+        index=(struct.unpack('<I',self.m.mem_read(self.base+0x678f4,4))[0]+1)%8;self.m.mem_write(self.base+0x678f4,struct.pack('<I',index))
+        level=self.base+self.level_base+index*8;m=self.m;m.mem_write(level,struct.pack('<d',struct.unpack('<d',m.mem_read(level,8))[0]+1.25))
+        self.m.mem_write(self.base+0x673f0,struct.pack('<I',(self.integer(0x673f0)+1)&0xffffffff))
         guard=self.m.mem_read(self.base+0x66410,1)[0];self.m.mem_write(self.base+0x66410,bytes([(guard+1)%3]));self.deviation=(self.deviation+1)&MASK
     def child(self,m,address,size,user):
         api=self.apis[address];x=self.x
@@ -116,7 +115,7 @@ class Original(v.Original):
             self.mutate(8 if value.startswith(('TrailStop error','error:','error when')) else 9);m.reg_write(x.UC_X86_REG_RAX,0);return
         raise ValueError('UNEXPECTED_API '+str(api))
     def run(self,c):
-        m,x=self.m,self.x;self.case=c;self.events=[];self.prints=[];self.stopped=False;self.closed=0;self.stop_rva=None;self.cursor=0x70001000;self.digit_count=0;self.point_count=0;self.deviation=c['deviation'];self.allocs=self.frees=self.cast_calls=0;self.error_covered=set();self.counter=c['counter'];self.levels=list(c['levels'])
+        m,x=self.m,self.x;self.case=c;self.events=[];self.prints=[];self.stopped=False;self.closed=0;self.stop_rva=None;self.cursor=0x70001000;self.digit_count=0;self.point_count=0;self.deviation=c['deviation'];self.allocs=self.frees=self.cast_calls=0;self.error_covered=set()
         for region,raw in self.regions:
             if region.get('kind')=='mutable_program_data':m.mem_write(region['base'],raw)
         for reg in ['RAX','RBX','RCX','RDX','RSI','RDI','RBP','R8','R9','R10','R11','R12','R13','R14','R15']:m.reg_write(getattr(x,'UC_X86_REG_'+reg),0)
@@ -126,21 +125,27 @@ class Original(v.Original):
         m.reg_write(x.UC_X86_REG_EFLAGS,0x202);m.reg_write(x.UC_X86_REG_MXCSR,0x1f80);m.mem_write(0x50000000,b'\0'*0x20000)
         self.mapping=SCALARS|BY_STAGE[0]
         if c['stage']==1:self.mapping={r:k for r,k in self.mapping.items() if k not in BY_STAGE[1].values()}|BY_STAGE[1]
-        self.shadow={k:c[k] for k in ['lock_start','lock_extra','step_distance','copied_step']}
         for rva,key in self.mapping.items():m.mem_write(self.base+rva,struct.pack('<d',c[key]))
+        for rva,key in [(0x624e4,'enabled'),(0x62360,'gap_count'),(0x62518,'minimum_steps'),(0x673f0,'counter')]:m.mem_write(self.base+rva,struct.pack('<i',c[key]))
+        for rva,key in [(0x624d8,'before_open'),(0x624ec,'shift_setting'),(0x62508,'step_enabled')]:m.mem_write(self.base+rva,bytes([c[key]]))
+        self.level_base=0x670d0 if c['buy'] else 0x66db0;m.mem_write(self.base+self.level_base,struct.pack('<8d',*c['levels']))
         m.mem_write(self.base+0x623f0,struct.pack('<i',c['enabled']));m.mem_write(self.base+0x6a410,struct.pack('<i',c['error_code']));m.mem_write(self.base+0x6744c,struct.pack('<I',c['error_count']));m.mem_write(self.base+0x6a438,b'\0'*4);m.mem_write(self.base+0x6a43c,b'\0'*12);m.mem_write(self.base+0x6a448,b'\0'*8)
         m.mem_write(self.base+0x66410,bytes([c['guard']]));m.mem_write(self.base+0x678f4,struct.pack('<I',c['index']));m.mem_write(self.base+0x66a80,struct.pack('<8d',*c['volumes']));m.mem_write(self.base+0x62590,table(c));m.mem_write(self.base+0x67758,struct.pack('<2d',c['bid'],c['ask']));m.mem_write(self.base+0x67918,struct.pack('<IQ',0,self.string('CHECK')))
         m.reg_write(x.UC_X86_REG_RSI,0x23e575eae78);m.reg_write(x.UC_X86_REG_RDI,self.base+0x67918);m.reg_write(x.UC_X86_REG_R13,self.base+0x6a448);m.reg_write(x.UC_X86_REG_R14,self.base+0x677f8);m.reg_write(x.UC_X86_REG_R15,self.base+(0x67758 if c['buy'] else 0x67760));m.reg_write(x.UC_X86_REG_R12,self.base+(0x624a8 if c['stage']==0 and c['buy'] else 0x678f4))
+        if c['buy'] and c['stage'] in [2,3]:m.reg_write(x.UC_X86_REG_R12,self.base+0x624c8)
+        if not c['buy'] and c['stage']==3:m.reg_write(x.UC_X86_REG_R15,self.base+0x624d0)
         for reg,key in [(6,'open_price'),(7,'tp'),(8,'sl'),(9,'initial_stop'),(11,'ticket_number'),(12,'volume'),(14,'reference'),(15,'anchor')]:m.reg_write(getattr(x,'UC_X86_REG_XMM'+str(reg)),pre.bits(c[key]))
         sp=0x50020000-0x208;m.reg_write(x.UC_X86_REG_RSP,sp);m.reg_write(x.UC_X86_REG_RBP,sp+0xa0 if c['buy'] else c['ticket']&MASK)
-        m.mem_write(sp+0x30,struct.pack('<q',c['ticket']));m.mem_write(sp+0x88,struct.pack('<d',c['anchor']));m.mem_write(sp+0xa8,struct.pack('<d',c['volume']));m.mem_write(sp+(0x50 if c['buy'] else 0x58),struct.pack('<Q',c['prior_changed']));m.mem_write(sp+(0x5c if c['buy'] else 0x6c),bytes([c['passed_flag']]))
+        m.mem_write(sp+0x30,struct.pack('<q',c['ticket']));m.mem_write(sp+0x88,struct.pack('<d',c['anchor']));m.mem_write(sp+0xa8,struct.pack('<d',c['volume']));m.mem_write(sp+(0x50 if c['buy'] else 0x58),struct.pack('<Q',c['prior_changed']));m.mem_write(sp+(0x5c if c['buy'] else 0x6c),bytes([c['passed_flag']]));m.mem_write(sp+(0x3f if c['buy'] else 0x37),bytes([c['eligible_flag']]))
         m.emu_start(self.base+STARTS[c['stage']][0 if c['buy'] else 1],0x60000000,timeout=10000000,count=300000);require(self.stopped,'BOUNDARY_MISSING')
-        changed=(struct.unpack('<Q',m.mem_read(sp+(0x50 if c['buy'] else 0x58),8))[0]&255) if c['stage']!=5 else c['prior_changed']
+        if c['stage'] in [0,1,2]:changed=struct.unpack('<Q',m.mem_read(sp+(0x50 if c['buy'] else 0x58),8))[0]&255
+        elif c['stage']==3 and self.stop_rva in [0x293c6,0x2cb0a]:changed=c['prior_changed']
+        elif c['stage'] in [3,4]:changed=m.reg_read(x.UC_X86_REG_R12)&255
+        else:changed=c['prior_changed']
         values={k:pre.bits(c[k]) for k in inputs.DOUBLES};values.update(sl=m.reg_read(x.UC_X86_REG_XMM8)&MASK,tp=m.reg_read(x.UC_X86_REG_XMM7)&MASK,bid=self.read(0x67758),ask=self.read(0x67760))
         for rva,key in self.mapping.items():values[key]=self.read(rva)
-        for key,value in self.shadow.items():values[key]=pre.bits(value)
-        vector=list(struct.unpack('<8Q',m.mem_read(self.base+0x66a80,64)))+[pre.bits(v) for v in self.levels];raw=b''.join(struct.pack('<5Q',*e) for e in self.events)
-        return RESULT.pack(c['id'],self.closed if c['stage']==0 else 0,int(changed!=0),self.counter,m.mem_read(self.base+0x66410,1)[0],struct.unpack('<I',m.mem_read(self.base+0x678f4,4))[0],struct.unpack('<I',m.mem_read(self.base+0x6744c,4))[0],self.deviation,*(values[k] for k in inputs.DOUBLES),*vector,len(self.events),fnv(raw),fnv(bytes(m.mem_read(self.base+0x62590,12000))))
+        vector=list(struct.unpack('<8Q',m.mem_read(self.base+0x66a80,64)))+list(struct.unpack('<8Q',m.mem_read(self.base+self.level_base,64)));raw=b''.join(struct.pack('<5Q',*e) for e in self.events)
+        return RESULT.pack(c['id'],self.closed if c['stage']==0 else 0,int(changed!=0),self.integer(0x673f0),m.mem_read(self.base+0x66410,1)[0],struct.unpack('<I',m.mem_read(self.base+0x678f4,4))[0],struct.unpack('<I',m.mem_read(self.base+0x6744c,4))[0],self.deviation,*(values[k] for k in inputs.DOUBLES),*vector,len(self.events),fnv(raw),fnv(bytes(m.mem_read(self.base+0x62590,12000))))
 
 def main():
     p=argparse.ArgumentParser(description=__doc__);p.add_argument('mode',choices=['prepare','original','mql5','compare']);p.add_argument('run');p.add_argument('--build');a=p.parse_args();require(re.fullmatch('[a-z0-9-]{1,50}',a.run),'BAD_RUN')
@@ -148,7 +153,7 @@ def main():
     if a.mode=='prepare':
         folder.mkdir(parents=True,exist_ok=False);(folder/'cases.bin').write_bytes(inputs.encode(rows));s=folder/'tested-sources';s.mkdir()
         for n in NAMES:shutil.copyfile(HOME/'source/MQL5'/n,s/Path(n).name)
-        for path in [Path(__file__),CASE_PATH]:shutil.copyfile(path,s/path.name)
+        for path in [Path(__file__),CASE_PATH,BINDINGS]:shutil.copyfile(path,s/path.name)
         save(folder/'baseline.json',dict(**current,cases=len(rows),inputs_sha256=sha(folder/'cases.bin'),**SCOPE));print(json.dumps(dict(cases=len(rows))));return
     b=json.loads((folder/'baseline.json').read_text());require(all(b[k]==value for k,value in current.items()) and (folder/'cases.bin').read_bytes()==inputs.encode(rows),'IDENTITY_OR_INPUT_DIFFERS')
     if a.mode=='original':

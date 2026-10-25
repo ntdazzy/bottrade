@@ -1,0 +1,15 @@
+{
+  "utc": "2026-10-25T19:16:28.337866+00:00",
+  "reviewer": "/root/review_bot3_parent_flow",
+  "findings": [],
+  "checked": [
+    "Three new header specs and native maps",
+    "Native stage boundaries and GPR/stack live-in",
+    "R12 low byte changed evaluated after native branch boundaries",
+    "Counter673f0,levels670d0/66db0,error_count6744c"
+  ],
+  "cases": 2290,
+  "matched": 2290,
+  "whole_manager_complete": false,
+  "whole_bot_complete": false
+}

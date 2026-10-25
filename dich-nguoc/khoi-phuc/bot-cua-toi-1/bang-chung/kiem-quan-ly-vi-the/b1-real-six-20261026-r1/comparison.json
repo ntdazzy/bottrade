@@ -1,0 +1,27 @@
+{
+  "cases": 2290,
+  "matched": 2290,
+  "failed": 0,
+  "first_failures": [],
+  "result_sha256": {
+    "original": "e9a2c51bda55a2ee7e9726f83ff00a6e20383e1c9cab9667811e6f9856f8c331",
+    "mql5": "e9a2c51bda55a2ee7e9726f83ff00a6e20383e1c9cab9667811e6f9856f8c331"
+  },
+  "calculation_slices_only": true,
+  "whole_manager_complete": false,
+  "whole_bot_complete": false,
+  "modify_child_intercepted": true,
+  "close_child_intercepted": true,
+  "original_report_text_code_executed": true,
+  "error_text_helper_executed": true,
+  "successful_string_allocation_supplied": true,
+  "signed_decimal_cast_supplied": true,
+  "original_ex5_changed": false,
+  "limits": [
+    "Separate real blocks in both directions; not a full manager, event loop, EA or paired terminals run.",
+    "Modify and try-close receive supplied replies. Original close ticket comes from RCX; forwarding context fields are supplied and checked only on the MQL5 side.",
+    "Native error-code/counter/string/Print code executes. Signed decimal conversion and successful allocation/free are supplied, not allocation failure.",
+    "Both-NaN results use measured Windows SSE2 fixtures; remaining native instructions execute in Unicorn. No physical whole-original or MXCSR-status proof.",
+    "All API-triggered mutations are supplied provider effects. Unread protocol fields are checked only as provider state, including unrelated stage settings and current_stop outside store. They do not prove calculations in other bot1 blocks."
+  ]
+}

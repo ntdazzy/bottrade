@@ -1,0 +1,109 @@
+{
+  "original_sha256": "a3b0de423a06e10ebedc279307b93d7cb9188ba2bb5de77131a913c865b0e922",
+  "base": "0x23e5aa10000",
+  "functions": [
+    {
+      "begin": "0x271f0",
+      "end": "0x2abbd",
+      "sha256": "49434714f53278010cec8489ff0d716ffea00c58b154f9b2118e500cbf69e22d"
+    },
+    {
+      "begin": "0x2abc0",
+      "end": "0x2e6c1",
+      "sha256": "28bf9f135f5645b1504fcd1deb119907ce2f55f20b8ce4def81ae3aa0f6512d3"
+    },
+    {
+      "begin": "0x336d0",
+      "end": "0x34148",
+      "sha256": "c9d0c4597fb633a94ee1ca3880a3d94aac6c5459f3e373a418fee687e46a7e48"
+    }
+  ],
+  "starts": {
+    "distance": [
+      "0x28220",
+      "0x2bc82"
+    ],
+    "slippage": [
+      "0x2865c",
+      "0x2bfdf"
+    ],
+    "store": [
+      "0x29675",
+      "0x2cdba"
+    ],
+    "highlow": [
+      "0x28aed",
+      "0x2c36e"
+    ],
+    "lock": [
+      "0x28f72",
+      "0x2c771"
+    ],
+    "counter": [
+      "0x293c6",
+      "0x2cb0a"
+    ]
+  },
+  "live_in": {
+    "context": "0x23e575eae78",
+    "symbol": "0x67918",
+    "double_slot": "0x6a448",
+    "unit": "0x66d98",
+    "gap": "0x66a70",
+    "freeze": "0x67468",
+    "index": "0x678f4",
+    "volumes": "0x66a80",
+    "stop_table": "0x62590",
+    "guard": "0x66410",
+    "current_stop": "0x62580",
+    "error_code": "0x6a410",
+    "error_count": "0x6744c",
+    "buy_changed_stack": "0x50",
+    "sell_changed_stack": "0x58",
+    "buy_passed_stack": "0x5c",
+    "sell_passed_stack": "0x6c",
+    "buy_ticket_stack": "0x30",
+    "buy_anchor_stack": "0x88",
+    "sell_volume_stack": "0xa8",
+    "buy_string_descriptor_stack": "0xa0",
+    "slippage_reference_register": "XMM14",
+    "sell_distance_anchor_register": "XMM15",
+    "sl_register": "XMM8",
+    "tp_register": "XMM7",
+    "open_register": "XMM6",
+    "buy_volume_register": "XMM12",
+    "initial_stop_register": "XMM9",
+    "ticket_number_register": "XMM11",
+    "zero_register": {
+      "name": "XMM10",
+      "bits": "0x0000000000000000",
+      "buy_source": "0x27316 xorpd xmm10,xmm10",
+      "sell_source": "0x2ace6 xorpd xmm10,xmm10",
+      "other_parent_writes": "only epilogue restores caller XMM10 at0x2a9c6/0x2e4b4"
+    },
+    "error_string_slot": "0x6a43c",
+    "high_low_enabled": "0x624e4",
+    "high_low_gap_count": "0x62360",
+    "high_low_before_open": "0x624d8",
+    "high_low_shift": "0x624ec",
+    "buy_levels": "0x670d0",
+    "sell_levels": "0x66db0",
+    "lock_start": "0x624c8",
+    "lock_extra": "0x624d0",
+    "step_enabled": "0x62508",
+    "step_reference": "0x62510",
+    "minimum_steps": "0x62518",
+    "step_distance": "0x62520",
+    "copied_step": "0x673e8",
+    "counter": "0x673f0",
+    "buy_eligible_stack": "0x3f",
+    "sell_eligible_stack": "0x37",
+    "buy_highlow_lock_r12": "base+0x624c8",
+    "sell_lock_r15": "base+0x624d0"
+  },
+  "store_excludes_parent_current_stop_write": true,
+  "unused_protocol_fields_are_provider_shadow": false,
+  "whole_bot_complete": false,
+  "counter_source": "0x336d9 movabs rax,base+0x6744c;0x33731 inc dword[rax]; existing cong-cu/kiem-chuoi-loi-bot-1-3.py CFG agrees",
+  "unread_fields_and_mutations_are_provider_effects": true
+}

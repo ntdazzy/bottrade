@@ -1,0 +1,25 @@
+{
+  "utc": "2026-10-25T19:16:16.637847+00:00",
+  "run": "b1-real-six-20261026-r1",
+  "cases": 2290,
+  "matched": 2290,
+  "by_stage": {
+    "distance": 536,
+    "slippage": 400,
+    "highlow": 352,
+    "lock": 334,
+    "counter": 358,
+    "store": 310
+  },
+  "result_sha256": "e9a2c51bda55a2ee7e9726f83ff00a6e20383e1c9cab9667811e6f9856f8c331",
+  "legacy_cases_compared_by_source_id": 1246,
+  "legacy_mql5_and_native_records_match_except_renumbered_id": true,
+  "source_algorithm_changed": false,
+  "compile_build": "b1-real-six-check-20261026-r1",
+  "errors": 0,
+  "warnings": 0,
+  "whole_manager_complete": false,
+  "whole_bot_complete": false,
+  "native_error_cases": 254,
+  "printed_messages": 416
+}

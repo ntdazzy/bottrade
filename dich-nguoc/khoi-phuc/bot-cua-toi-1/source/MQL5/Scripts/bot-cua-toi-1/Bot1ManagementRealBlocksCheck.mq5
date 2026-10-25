@@ -1,4 +1,4 @@
-// Supplied terminal, error, print, modify and close replies for the three real Bot1 management blocks; no live trading.
+// Supplied terminal, error, print, modify and close replies for the six real Bot1 management blocks; no live trading.
 #property strict
 #property script_show_inputs
 // Included before the macros so their own calls stay real; neither loads Bot1ManagementMessages or Bot1TradeErrors.
@@ -14,7 +14,8 @@ double BlocksUnit=0,BlocksTrail=0,BlocksStep=0,BlocksStart=0,BlocksLimit=0,Block
 double BlocksGap=0,BlocksFreeze=0,BlocksPoint=0,BlocksMinimum=0,BlocksLockStart=0,BlocksLockExtra=0;
 double BlocksStepReference=0,BlocksStepDistance=0,BlocksCopiedStep=0,BlocksInitialStop=0;
 double BlocksTicketNumber=0,BlocksCurrentStop=0,BlocksVolumes[8],BlocksLevels[8];
-int BlocksEnabled=0,BlocksCounter=0;
+int BlocksEnabled=0,BlocksGapCount=0,BlocksMinimumSteps=0,BlocksCounter=0;
+uchar BlocksBeforeOpen=0,BlocksShiftSetting=0,BlocksStepEnabled=0;
 uint BlocksIndex=0,BlocksErrorCount=0;
 ulong BlocksDeviation=0;
 MqlTick BlocksTick;
@@ -50,7 +51,8 @@ void BlocksTrace(const int api,const ulong a=0,const ulong b=0,const ulong v=0,c
 }
 // Called after each API event. Targets: digits 1/3/4/5 and point 2/6 by call order, modify 7, error print 8,
 // other print 9, minimum volume 10, close 11. Position, reference, anchor, step reference, initial stop,
-// ticket number, volumes, point, minimum, enabled, the flags and the error counter never change here.
+// ticket number, volumes, point, minimum, enabled, gap count, minimum steps, the flags and the error counter
+// never change here.
 void BlocksMutate(const int target)
 {
    if(BlocksScenario!=target) return;
@@ -117,10 +119,14 @@ bool BlocksTryClose(Bot1PendingRequestState &state,Bot1TradeSendOptions &options
 #define Bot1ModifyPosition BlocksModify
 #define Bot1TryClosePosition BlocksTryClose
 // Messages and Bot1TradeErrors are first loaded here; with the block headers below, the error text,
-// counter and message bodies run for real on the supplied error code and print.
+// counter, message bodies and the high-low and lock error reporters run for real on the supplied
+// error code and print.
 #include "../../Include/bot-cua-toi-1/Bot1ManagementMessages.mqh"
 #include "../../Include/bot-cua-toi-1/Bot1ManagementRealDistance.mqh"
 #include "../../Include/bot-cua-toi-1/Bot1ManagementRealSlippage.mqh"
+#include "../../Include/bot-cua-toi-1/Bot1ManagementRealHighLow.mqh"
+#include "../../Include/bot-cua-toi-1/Bot1ManagementRealLock.mqh"
+#include "../../Include/bot-cua-toi-1/Bot1ManagementRealCounter.mqh"
 #include "../../Include/bot-cua-toi-1/Bot1ManagementRealStore.mqh"
 #undef SymbolInfoInteger
 #undef SymbolInfoDouble
@@ -164,8 +170,8 @@ ulong BlocksTableHash()
    return hash;
 }
 // Calls the case's block on the per-case globals; only the distance block returns a value.
-bool BlocksRunStage(const int stage,const bool buy,const uchar passed_flag,const ulong ticket,
-                    Bot1ManagedPosition &position,bool &changed)
+bool BlocksRunStage(const int stage,const bool buy,const uchar passed_flag,const uchar eligible_flag,
+                    const ulong ticket,Bot1ManagedPosition &position,bool &changed)
 {
    if(stage==0)
    {
@@ -189,6 +195,37 @@ bool BlocksRunStage(const int stage,const bool buy,const uchar passed_flag,const
                                            position,BlocksTick,changed,BlocksState,BlocksOptions,
                                            BlocksErrorCount,ticket);
    }
+   else if(stage==2)
+   {
+      if(buy) Bot1AdvanceHighLowRealBuyStop("CHECK",BlocksEnabled,eligible_flag,BlocksGapCount,BlocksUnit,
+                                            BlocksBeforeOpen,BlocksShiftSetting,BlocksGap,BlocksFreeze,
+                                            BlocksLevels,BlocksIndex,position,BlocksTick,changed,BlocksState,
+                                            BlocksOptions,BlocksErrorCount,ticket);
+      else Bot1AdvanceHighLowRealSellStop("CHECK",BlocksEnabled,eligible_flag,BlocksGapCount,BlocksUnit,
+                                          BlocksBeforeOpen,BlocksShiftSetting,BlocksGap,BlocksFreeze,
+                                          BlocksLevels,BlocksIndex,position,BlocksTick,changed,BlocksState,
+                                          BlocksOptions,BlocksErrorCount,ticket);
+   }
+   else if(stage==3)
+   {
+      if(buy) Bot1AdvanceRealLockBuyStop("CHECK",BlocksLockStart,BlocksLockExtra,BlocksUnit,BlocksGap,
+                                         BlocksFreeze,position,BlocksTick,changed,BlocksState,BlocksOptions,
+                                         BlocksErrorCount,ticket);
+      else Bot1AdvanceRealLockSellStop("CHECK",BlocksLockStart,BlocksLockExtra,BlocksUnit,BlocksGap,
+                                       BlocksFreeze,position,BlocksTick,changed,BlocksState,BlocksOptions,
+                                       BlocksErrorCount,ticket);
+   }
+   else if(stage==4)
+   {
+      if(buy) Bot1AdvanceRealCounterBuyStop("CHECK",BlocksStepEnabled,BlocksStepReference,BlocksMinimumSteps,
+                                            BlocksStepDistance,BlocksUnit,BlocksCopiedStep,BlocksAnchor,
+                                            BlocksGap,BlocksFreeze,BlocksCounter,position,BlocksTick,changed,
+                                            BlocksState,BlocksOptions,ticket);
+      else Bot1AdvanceRealCounterSellStop("CHECK",BlocksStepEnabled,BlocksStepReference,BlocksMinimumSteps,
+                                          BlocksStepDistance,BlocksUnit,BlocksCopiedStep,BlocksAnchor,
+                                          BlocksGap,BlocksFreeze,BlocksCounter,position,BlocksTick,changed,
+                                          BlocksState,BlocksOptions,ticket);
+   }
    // Stage 5, the only value left after the case check.
    else Bot1StoreRealStop("CHECK",BlocksInitialStop,BlocksCurrentStop,BlocksTicketNumber,BlocksTable);
    return false;
@@ -201,10 +238,8 @@ bool BlocksRunCase(const int source,const int output,const int expected_id)
    BlocksScenario=FileReadInteger(source);BlocksModifyOk=FileReadInteger(source);
    BlocksErrorCode=FileReadInteger(source);
    for(int i=0;i<4;i++) BlocksDigits[i]=FileReadInteger(source);
-   // gap_count, minimum_steps and the eligible, before-open, shift and step flags keep their slots;
-   // none of the three blocks takes them.
-   BlocksEnabled=FileReadInteger(source);int gap_count=FileReadInteger(source);
-   int minimum_steps=FileReadInteger(source);BlocksCounter=FileReadInteger(source);
+   BlocksEnabled=FileReadInteger(source);BlocksGapCount=FileReadInteger(source);
+   BlocksMinimumSteps=FileReadInteger(source);BlocksCounter=FileReadInteger(source);
    int passed_flag=FileReadInteger(source);int eligible_flag=FileReadInteger(source);
    int before_open=FileReadInteger(source);int shift_setting=FileReadInteger(source);
    int step_enabled=FileReadInteger(source);int guard=FileReadInteger(source);
@@ -226,15 +261,19 @@ bool BlocksRunCase(const int source,const int output,const int expected_id)
    BlocksTicketNumber=FileReadDouble(source);BlocksCurrentStop=FileReadDouble(source);
    for(int i=0;i<8;i++) BlocksVolumes[i]=FileReadDouble(source);
    for(int i=0;i<8;i++) BlocksLevels[i]=FileReadDouble(source);
-   if(id!=expected_id || (buy!=0 && buy!=1) || (stage!=0 && stage!=1 && stage!=5) || BlocksScenario<0 ||
+   if(id!=expected_id || (buy!=0 && buy!=1) || stage<0 || stage>5 || BlocksScenario<0 ||
       BlocksScenario>11 || BlocksIndex>7 || !BlocksIsByte(passed_flag) || !BlocksIsByte(eligible_flag) ||
       !BlocksIsByte(before_open) || !BlocksIsByte(shift_setting) || !BlocksIsByte(step_enabled) ||
       !BlocksIsByte(guard) || (prior_changed!=0 && prior_changed!=1) || table_pattern<0 ||
       table_pattern>5 || (BlocksModifyOk!=0 && BlocksModifyOk!=1)) return false;
    BlocksCalls=0;BlocksDigitIndex=0;BlocksPointIndex=0;BlocksHash=(ulong)0xcbf29ce484222325;
    ZeroMemory(BlocksState);ZeroMemory(BlocksOptions);BlocksFillTable((uchar)guard,table_pattern);
+   // The three flag slots are checked as bytes above, then given to the blocks as uchar references.
+   BlocksBeforeOpen=(uchar)before_open;BlocksShiftSetting=(uchar)shift_setting;
+   BlocksStepEnabled=(uchar)step_enabled;
    bool changed=prior_changed!=0;
-   bool returned=BlocksRunStage(stage,buy!=0,(uchar)passed_flag,(ulong)ticket,position,changed);
+   bool returned=BlocksRunStage(stage,buy!=0,(uchar)passed_flag,(uchar)eligible_flag,(ulong)ticket,
+                                position,changed);
    FileWriteInteger(output,id);FileWriteInteger(output,(int)returned);FileWriteInteger(output,(int)changed);
    FileWriteInteger(output,BlocksCounter);FileWriteInteger(output,(int)BlocksTable.guard);
    FileWriteInteger(output,(int)BlocksIndex);FileWriteInteger(output,(int)BlocksErrorCount);

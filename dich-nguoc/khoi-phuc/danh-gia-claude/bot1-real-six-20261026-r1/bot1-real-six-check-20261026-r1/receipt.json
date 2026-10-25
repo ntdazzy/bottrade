@@ -1,0 +1,81 @@
+{
+  "run": "bot1-real-six-check-20261026-r1",
+  "session_id": "caa4b36c-b055-4ec0-88e4-59f84d99820e",
+  "started": "2026-10-25T18:28:02.8261420Z",
+  "snapshot_utc": "2026-10-25T19:12:40.163261+00:00",
+  "status": "delivered-unverified",
+  "response_is_error": false,
+  "terminal_reason": "completed",
+  "job_sha256": "74167b55f7f62399c25d546ff8695c0bc5cf5e699321d79c6b9e6b21162a7eb0",
+  "prompt_sha256": "253564a83c6da42d0976fdb4427eb13921a84532bc836dcf2c290907e65b32c3",
+  "response_sha256": "e10069971ebe9767306201deda5942aa3053649cc80833987ea143648723febd",
+  "actual_requests": 11,
+  "requests": [
+    {
+      "timestamp": "2026-10-25T18:28:04.025Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T18:28:16.944Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T18:28:25.131Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T18:28:32.370Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T18:28:41.481Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T18:31:25.588Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T18:32:45.175Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T18:33:06.529Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T18:34:36.865Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T18:34:55.585Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T18:35:25.285Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    }
+  ],
+  "ultracode_requested": true,
+  "ultracode_runtime_confirmed": null,
+  "journal_prefix_bytes": 1428360,
+  "journal_prefix_sha256": "0babe7ff76edfb4cfcabfb468227b4292732fcc2d12e23c23b950e473c16725c",
+  "files_sha256": {
+    "dich-nguoc/khoi-phuc/claude-thuc-hien/bot1-real-six-check-20261026-r1/Bot1ManagementRealBlocksCheck.mq5": "739712a3923bc55eeab91cd9e4a7aaa39555acc4990425632fdc859446f38681",
+    "dich-nguoc/khoi-phuc/claude-thuc-hien/bot1-real-six-check-20261026-r1/real_blocks_cases.py": "e3711f25502a1bb2e79a56578383ed5f01eecff480e65c7a0b9989e948047ee7",
+    "dich-nguoc/khoi-phuc/claude-thuc-hien/bot1-real-six-check-20261026-r1/SUMMARY.md": "6127201ede3f65c60b128d33509fe68c8cd329810f5d77d7bb380dff1d747c0d"
+  },
+  "source_validated": false,
+  "whole_bot_complete": false
+}

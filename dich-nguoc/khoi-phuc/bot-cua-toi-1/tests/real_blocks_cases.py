@@ -5,8 +5,9 @@ Giao diện theo claude-thuc-hien/bot1-real-three-check-20261026-r1/TASK.md
 count), mỗi ca 440 byte `<22iqQII41d` = 22 int32, int64 ticket, uint64
 deviation, uint32 index, uint32 error_count, 25 double, 8 volumes, 8 levels.
 Ca lấy từ bộ ca Bot3 hiện hành bot-cua-toi-3/tests/real_blocks_cases.py,
-chỉ stage 0, 1, 5. Chỉ tạo đầu vào: không tính kết quả mong đợi, không gọi
-mã MQL5 production hay mã gốc. Dùng: data = encode(cases()).
+mọi stage 0..5 theo claude-thuc-hien/bot1-real-six-check-20261026-r1/TASK.md.
+Chỉ tạo đầu vào: không tính kết quả mong đợi, không gọi mã MQL5 production
+hay mã gốc. Dùng: data = encode(cases()).
 """
 
 import copy
@@ -18,7 +19,7 @@ MAGIC = 0x4d524231
 VERSION = 1
 MAX_COUNT = 100000
 ARRAY_SIZE = 8
-STAGES = (0, 1, 5)
+STAGES = (0, 1, 2, 3, 4, 5)
 
 HEADER = struct.Struct('<3i')
 CASE = struct.Struct('<22iqQII41d')
@@ -70,7 +71,7 @@ _SOURCE = _load_source()
 
 
 def cases() -> list:
-    """Ca stage 0, 1, 5 của Bot3 theo thứ tự gốc, id liên tục từ 0.
+    """Ca stage 0..5 của Bot3 theo thứ tự gốc, id liên tục từ 0.
 
     Mỗi ca là bản sao sâu; source_case_id giữ id Bot3, volumes/levels lấy
     ARRAY_SIZE phần đầu, index %= ARRAY_SIZE. Stage, các giá trị khác (cả bit

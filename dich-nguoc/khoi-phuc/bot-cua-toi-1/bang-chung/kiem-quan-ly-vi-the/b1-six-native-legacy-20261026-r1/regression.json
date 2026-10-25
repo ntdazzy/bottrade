@@ -1,0 +1,14 @@
+{
+  "utc": "2026-10-25T18:35:37.562690+00:00",
+  "cases": 1246,
+  "matched": 1246,
+  "source_sha256": "b51ea5e265d71fd9419976972eb35709f3e3f681d8afb717d432e0a979a3d413",
+  "bindings_sha256": "a9e0d137b43d4cce9f456f352e971d3524c8dcc4456f632e60b4f0f5513037fb",
+  "inputs_sha256": "b7722f737a4830a7d51171e15cb38d347ea96d101f5e4eb83fb3e17969b0630f",
+  "result_sha256": "601bc09bc66ed6d1cd5b1e538fea6ce371a5c9acdb67695ad125bd55045240e6",
+  "reference": "b1-real-three-20261026-r3/original-results.bin",
+  "native_adapter_only": true,
+  "no_new_mql5_run": true,
+  "whole_manager_complete": false,
+  "whole_bot_complete": false
+}
