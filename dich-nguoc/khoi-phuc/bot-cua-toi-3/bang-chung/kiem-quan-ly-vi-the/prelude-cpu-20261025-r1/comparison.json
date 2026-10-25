@@ -1,0 +1,194 @@
+{
+  "cases": 636,
+  "matched": 636,
+  "failed": 0,
+  "groups": {
+    "initial-levels-ticket64": {
+      "cases": 48,
+      "matched": 48
+    },
+    "filter-type-low32": {
+      "cases": 14,
+      "matched": 14
+    },
+    "filter-magic-low32": {
+      "cases": 22,
+      "matched": 22
+    },
+    "filter-enabled": {
+      "cases": 12,
+      "matched": 12
+    },
+    "symbol-null-and-unicode": {
+      "cases": 26,
+      "matched": 26
+    },
+    "comment-null-and-unicode": {
+      "cases": 8,
+      "matched": 8
+    },
+    "numeric-sl": {
+      "cases": 18,
+      "matched": 18
+    },
+    "numeric-tp": {
+      "cases": 18,
+      "matched": 18
+    },
+    "numeric-open": {
+      "cases": 18,
+      "matched": 18
+    },
+    "numeric-unit": {
+      "cases": 18,
+      "matched": 18
+    },
+    "numeric-stop": {
+      "cases": 18,
+      "matched": 18
+    },
+    "numeric-take": {
+      "cases": 18,
+      "matched": 18
+    },
+    "numeric-volume": {
+      "cases": 6,
+      "matched": 6
+    },
+    "nan-payload-operand-order": {
+      "cases": 12,
+      "matched": 12
+    },
+    "digits-low32-clamp": {
+      "cases": 12,
+      "matched": 12
+    },
+    "digits-five-reads": {
+      "cases": 24,
+      "matched": 24
+    },
+    "candle-flag-byte": {
+      "cases": 18,
+      "matched": 18
+    },
+    "candle-frame-shift": {
+      "cases": 42,
+      "matched": 42
+    },
+    "candle-time-boundaries": {
+      "cases": 36,
+      "matched": 36
+    },
+    "candle-time-signed": {
+      "cases": 18,
+      "matched": 18
+    },
+    "candle-body-boundaries": {
+      "cases": 54,
+      "matched": 54
+    },
+    "candle-level-boundaries": {
+      "cases": 36,
+      "matched": 36
+    },
+    "close-reread": {
+      "cases": 30,
+      "matched": 30
+    },
+    "three-groups-all-close": {
+      "cases": 24,
+      "matched": 24
+    },
+    "group-exit-independent": {
+      "cases": 30,
+      "matched": 30
+    },
+    "group-flag-independent": {
+      "cases": 12,
+      "matched": 12
+    },
+    "group-random-outcomes": {
+      "cases": 24,
+      "matched": 24
+    },
+    "tick-failure-continues": {
+      "cases": 20,
+      "matched": 20
+    }
+  },
+  "first_failures": [],
+  "coverage": {
+    "0x32f60": [
+      519,
+      519
+    ],
+    "0x37590": [
+      522,
+      522
+    ]
+  },
+  "cpu_fixture": {
+    "opcodes": {
+      "mul": "f20f1001f20f590266480f7ec0c3",
+      "add": "f20f1001f20f580266480f7ec0c3",
+      "sub": "f20f1001f20f5c0266480f7ec0c3",
+      "mxcsr_get": "0fae19c3",
+      "mxcsr_set": "0fae11c3"
+    },
+    "mxcsr_used": "0x1f80",
+    "probe": {
+      "sha256": "bd633e156fa141d81718ecd96894b0f3d3ce403d430dff10d4c66f0d4dff5c7f",
+      "rows": 363,
+      "cpu_bits_reproduced": 363,
+      "unicorn_differences": 24
+    },
+    "calls": 383,
+    "delegated_instructions": 20,
+    "delegated_by_site": {
+      "0x335a9": 2,
+      "0x335ad": 3,
+      "0x3367d": 2,
+      "0x33681": 3,
+      "0x37be5": 2,
+      "0x37bea": 3,
+      "0x37cbe": 2,
+      "0x37cc2": 3
+    },
+    "delegated_cases": [
+      122,
+      123,
+      124,
+      125,
+      126,
+      127,
+      440,
+      441,
+      442,
+      443,
+      444,
+      445
+    ]
+  },
+  "hashes": {
+    "baseline.json": "96e6a5d2438ff65463d992d8ab625596f32a1747c1804dd79d324d60df109ea3",
+    "cases.bin": "e4fa35b4a30e40d3394d3b4b4e05f221f819d759262accd7130339fa8937babb",
+    "original-results.bin": "7e0a9de7db90d2ff4d04f186cee5ed3bec6df47bcb912952f67853918995b43b",
+    "mql5-results.bin": "7e0a9de7db90d2ff4d04f186cee5ed3bec6df47bcb912952f67853918995b43b",
+    "script-status.bin": "0c081e92a676d27ef5a9aa5094d06182ea2dd362066a688c5b131a0ea1ea0a39"
+  },
+  "prefix_only": true,
+  "whole_manager_complete": false,
+  "whole_bot_complete": false,
+  "full_ea": false,
+  "original_bytes_changed": false,
+  "both_nan_sites_on_cpu": 8,
+  "whole_original_on_cpu": false,
+  "limits": [
+    "Native stops at the documented one-position prefix boundary; the outer loop and later management branches are not executed.",
+    "Terminal replies are supplied; children 0x32a90/0x47d20 are intercepted at the call boundary and were verified separately.",
+    "Try-close deviation, bid/ask and thresholds are checked only on the MQL5 side; native 0x47d20 reads them from globals.",
+    "Original instruction bytes are unchanged. Only at the eight listed mulsd/addsd/subsd sites and only when both operands are NaN are the result bits computed by the standalone fixture on this Windows x64 CPU (MXCSR 0x1f80), correcting Unicorn NaN selection; all other instructions run in Unicorn. original-run.json counts the delegated instructions; this is not a physical original run.",
+    "Delegated instructions do not update the emulated MXCSR status flags; no branch in the captured segments reads MXCSR.",
+    "No real trades, full EA, allocation-failure or restart proof."
+  ]
+}

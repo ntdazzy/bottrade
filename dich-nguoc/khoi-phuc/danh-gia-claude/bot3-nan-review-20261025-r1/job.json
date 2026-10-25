@@ -1,0 +1,13 @@
+{
+  "pid": 14024,
+  "started": "2026-10-25T10:11:59.2508566Z",
+  "model": "claude-opus-5-5",
+  "effort": "max",
+  "ultracode_requested": true,
+  "scope": "Write proposed analysis/code only within an explicitly assigned deliverable directory",
+  "output_directory": "dich-nguoc/khoi-phuc/claude-thuc-hien/bot3-nan-review-20261025-r1",
+  "edit_rule": "Edit(./dich-nguoc/khoi-phuc/claude-thuc-hien/bot3-nan-review-20261025-r1/**)",
+  "permission_mode": "dontAsk",
+  "prompt_sha256": "330052298ba99ce68d9fad835f363f488f942fbb5b252618a670c17c1ac085d2",
+  "resume": ""
+}

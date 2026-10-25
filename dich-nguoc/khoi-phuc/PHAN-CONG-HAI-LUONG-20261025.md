@@ -145,3 +145,15 @@ sắp xếp lịch sử: bot 1 `b751396e-1166-4172-8b45-1cf9ce178a64`, bot 3
 Ultracode được yêu cầu nhưng chưa có bằng chứng chạy thực tế. Mã đã
 được kiểm độc lập: mỗi bot 512/512 ca thường khớp từng byte, biên dịch
 0 lỗi/0 cảnh báo. Ca lỗi ngoài mảng và nơi gọi còn thiếu.
+
+## Đợt quản lý bot 3 làm song song
+
+Đã giao tám việc cho tám phiên Claude: phần đầu, ba nhánh dời dừng,
+hai bộ kiểm, rà sai khác NaN và sửa bộ so theo CPU. Nhật ký xác nhận
+189 yêu cầu Opus 5.5/max; Ultracode chỉ xác nhận đã yêu cầu.
+Bảy phiên giao kết quả. Phiên bộ kiểm ba nhánh bị chặn với nhãn cyber;
+Codex trực tiếp viết và chạy bộ đó theo ngoại lệ đã duyệt, không gửi lại.
+Kết quả đã kiểm: 636/636 phần đầu, 560/560 ba nhánh, 0 lỗi/cảnh báo.
+Các đoạn chưa phải hai hàm quản lý đầy đủ hoặc EA. Phân công, mã,
+biên nhận và giới hạn: PHAN-TICH-QUAN-LY-BOT-3-20261025.md và
+danh-gia-claude/management-parallel-20261025-r3/dispatch.json.

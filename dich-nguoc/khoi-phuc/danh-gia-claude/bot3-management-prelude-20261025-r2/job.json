@@ -1,0 +1,13 @@
+{
+  "pid": 9740,
+  "started": "2026-10-25T09:40:15.7639196Z",
+  "model": "claude-opus-5-5",
+  "effort": "max",
+  "ultracode_requested": true,
+  "scope": "Write proposed analysis/code only within an explicitly assigned deliverable directory",
+  "output_directory": "dich-nguoc/khoi-phuc/claude-thuc-hien/bot3-management-prelude-20261025-r2",
+  "edit_rule": "Edit(./dich-nguoc/khoi-phuc/claude-thuc-hien/bot3-management-prelude-20261025-r2/**)",
+  "permission_mode": "dontAsk",
+  "prompt_sha256": "ffe18c43496cbc9b16f847c2b1d1d2131bf5df130a9d09be793f229b6c607ab2",
+  "resume": "020781dd-4928-4e27-aa3a-21c0eee627d0"
+}

@@ -678,3 +678,28 @@ tệp `Defaults` do MT5 xuất và các tệp số đã nạp để đọc tên 
 ## Sắp xếp lịch sử
 
 - `kiem-sap-xep-bot-1-3.py prepare|mql5|original|compare BOT NEW_RUN [--build BUILD]`: kiểm hàm sắp xếp hai mảng lịch sử (`0x47950` bot 1, `0x557f0` bot 3). Lượt `history-sort-20261025-r1` dùng 512 ca thường: bốn tổ hợp cờ đảo, khóa unsigned lớn/trùng, mảng tăng/giảm, khoảng con, trái bằng/phía trên phải và mảng độ dài khác nhưng không đọc ngoài vùng. Kết quả gốc/MQL5 khớp 512/512 từng byte mỗi bot; biên dịch `b1-history-sort-02` và `b3-history-sort-02` đều 0/0. Ca lỗi ngoài mảng, nơi gọi và toàn phần lịch sử còn mở.
+
+## Kiểm quản lý vị thế mới
+
+- `bot-cua-toi-1/tests/check-management-close-link.py NEW_RUN --build BUILD`:
+  chạy hàm kiểm đóng thật từ ba nơi gọi; 36 ca hai chiều, hai giá khác
+  nhau, luôn dừng trước gửi. Lượt close-link-20261025-r2 đạt 36/36.
+- `bot-cua-toi-3/tests/check-management-prelude.py prepare|original|mql5|compare NEW_RUN [--build BUILD]`:
+  phần đầu một vị thế và ba nhóm nến, 636 ca. Lượt prelude-cpu-20261025-r1
+  khớp 636/636; tám vị trí có hai NaN dùng CPU đã đo, mọi lệnh khác qua
+  Unicorn. Không phải toàn hàm. Biên dịch Bot3ManagementPreludeCheck.mq5.
+- `bot-cua-toi-3/tests/check-management-virtual.py prepare|original|mql5|compare NEW_RUN [--build BUILD]`:
+  ba nhánh ảo sau bước đầu, 560 ca; lượt virtual-20261025-r1 khớp 560/560.
+  Biên dịch Bot3ManagementVirtualCheck.mq5. Dùng lại bộ ca bot 1, giữ
+  kiểu bản ghi và đổi mã nhận dạng; chỉ số mảng trong phạm vi hợp lệ.
+- `bot-cua-toi-3/tests/check-nan-cpu.py NEW_RUN`: đo 363 tổ hợp ba phép
+  SSE2 nhỏ trên CPU Windows x64 và Unicorn. Dùng vùng nhớ riêng, trả lại
+  quyền nhớ/giải phóng và khôi phục MXCSR; không sửa EX5 hoặc hệ thống.
+  Lượt cpu-nan-20261025-r1 ghi 24 khác biệt, là phép đo giới hạn mô phỏng.
+
+Các chương trình chỉ dùng MT5 riêng của từng bot trong dich-nguoc/.local.
+Với hai bộ theo mode, chạy prepare, biên dịch, mql5 --build, original,
+rồi compare. Tên lượt mới bắt buộc, không ghi đè; nguồn/EX5 phải đúng
+biên nhận. Hàm sửa/kiểm đóng được cấp kết quả tại ranh giới gọi.
+Đầu ra trong bang-chung/kiem-quan-ly-vi-the/ của bot. Bộ kiểm bot 3
+không gửi lệnh; các phép so không thay cho chạy cặp EA đầy đủ.

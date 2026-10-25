@@ -1,0 +1,71 @@
+{
+  "run": "bot3-management-timed-20261025-r1",
+  "session_id": "5a1ae9f8-d6bc-4b9c-9480-f2960d8069f1",
+  "job_sha256": "7bd53ebff5bb08c5a0eb13ae9765318d862348e9cfd9dda91dd0d33b3e01cb51",
+  "started": "2026-10-25T09:53:07.0529519Z",
+  "snapshot_utc": "2026-10-25T10:01:07.119919+00:00",
+  "status": "completed",
+  "actual_requests": 10,
+  "requests": [
+    {
+      "timestamp": "2026-10-25T09:53:10.177Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T09:53:21.488Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T09:53:31.608Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T09:53:43.537Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T09:53:52.957Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T09:55:49.003Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T09:55:57.101Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T09:58:45.993Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T09:58:53.869Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T09:59:29.438Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    }
+  ],
+  "ultracode_requested": true,
+  "ultracode_runtime_confirmed": null,
+  "journal_prefix_bytes": 1181270,
+  "journal_prefix_sha256": "3f96f275302174511f71f10df0e50f2606853671ac0895f779645976e67744b7",
+  "files_sha256": {
+    "dich-nguoc/khoi-phuc/claude-thuc-hien/bot3-management-timed-20261025-r1/Bot3ManagementTimedStop.mqh": "a99764f0544446f1e3d09bf80d427b23287aff4407da3566dae1bb9f7fbde073",
+    "dich-nguoc/khoi-phuc/claude-thuc-hien/bot3-management-timed-20261025-r1/SUMMARY.md": "9177a249bc29dfa8a5828073efa6bb181510d7fada45ebd9ff58378577bc7781"
+  },
+  "source_validated": false,
+  "whole_bot_complete": false
+}

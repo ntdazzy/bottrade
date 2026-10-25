@@ -1,0 +1,37 @@
+{
+  "status": "root-scoped-comparison-passed",
+  "checks": {
+    "prelude-cpu-20261025-r1": {
+      "report_sha256": "31a9e56fae263b355301793c1683786096794a1ede85d6dcd3dd1beb6b09e3a2",
+      "cases": 636,
+      "matched": 636
+    },
+    "virtual-20261025-r1": {
+      "report_sha256": "d6152469fd7fa7abd9ad887bec5b8d721fd78d5e0498a66c4b158153fd136f4e",
+      "cases": 560,
+      "matched": 560
+    }
+  },
+  "build_receipts_sha256": {
+    "b3-management-prelude-02": "0653d652a6873c0db1d499884dd6ac58d6fe10e849c1ff5b5aeb7405f622bf78",
+    "b3-management-virtual-01": "4a7cb0a2e973e3c8dfd1708c0c1fed84f0b78a79eb6782969f0174935f4d7ac5"
+  },
+  "sources_sha256": {
+    "Include/bot-cua-toi-3/Bot3ManagementPrelude.mqh": "e0db33b8346340eb81b7c55db6fd456f66124dd565a0e8b7a0e6d5b17bb363fe",
+    "Include/bot-cua-toi-3/Bot3PriceLevels.mqh": "1cfecf5f324056b64f72a8fb21f446b7ca35f377ae40d4ab0c6859bfe736c413",
+    "Include/bot-cua-toi-3/Bot3PositionModify.mqh": "66ef002ab0e4b3d4bf8a0070e3f6fddfbe3446f0ded59a723e033b972d52e0a5",
+    "Include/bot-cua-toi-3/Bot3PositionClose.mqh": "7233c829f4e625b8c9a3c3258d6677b78b1518af61cb4617123f5597ccdcd495",
+    "Include/bot-cua-toi-3/Bot3TradeSend.mqh": "6031d82d7db3cb5652b76c4583853e871ac1e7f1770834e8dcbd165fa3a60f1f",
+    "Include/bot-cua-toi-3/Bot3TradeMessages.mqh": "3bf211b2aa34980e0857f31e66a08e65136728fa7ef6e239d58cfc1c2bec5d16",
+    "Include/bot-cua-toi-3/Bot3PendingRequest.mqh": "54bc2c75ff9a2ee47f375f874908912da0cad56d2ecb586801d0274c2d025648",
+    "Include/bot-cua-toi-3/Bot3Filling.mqh": "c2806af2b1e00363652b7a09387065f1de289cf6e2bc644611f4d5f6d1c47599",
+    "Scripts/bot-cua-toi-3/Bot3ManagementPreludeCheck.mq5": "445e0714a1cc00eea0741969f4b4fdfc168c7874a11ae3ca60548e129a46c7c3",
+    "Include/bot-cua-toi-3/Bot3ManagementVirtual.mqh": "e74e2780e94e9997cef11bd39f37910d0e2c75d1eb8b7311eec45e59c86db21d",
+    "Scripts/bot-cua-toi-3/Bot3ManagementVirtualCheck.mq5": "88bf68c3c1e5a18a7e9d0b21dd6a4a9cacc287d90fbd6317ea83464d8f3e9c70"
+  },
+  "merged_claude_function_bodies_unchanged": true,
+  "prelude_only_comment_changed": true,
+  "independent_review": "No supported functional issue reported after checking sources, native mapping and proof; does not prove full managers.",
+  "whole_manager_complete": false,
+  "whole_bot_complete": false
+}

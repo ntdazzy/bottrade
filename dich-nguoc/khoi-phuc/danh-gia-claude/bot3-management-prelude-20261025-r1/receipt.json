@@ -1,0 +1,147 @@
+{
+  "status": "process-missing-no-delivery",
+  "pid": 20928,
+  "checked_utc": "2026-10-25T09:40:14.608732+00:00",
+  "session_id": "020781dd-4928-4e27-aa3a-21c0eee627d0",
+  "actual_requests": 26,
+  "requests": [
+    {
+      "timestamp": "2026-10-25T09:22:42.008Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T09:22:49.790Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T09:23:07.067Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T09:23:10.599Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T09:23:17.660Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T09:23:21.835Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T09:23:29.820Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T09:23:48.333Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T09:23:52.769Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T09:24:00.977Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T09:24:41.078Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T09:24:48.936Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T09:24:56.516Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T09:25:01.833Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T09:25:07.091Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T09:25:39.599Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T09:25:46.781Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T09:25:59.432Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T09:26:07.682Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T09:26:22.638Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T09:26:29.965Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T09:26:36.907Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T09:26:44.179Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T09:26:54.185Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T09:27:24.491Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T09:27:36.220Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    }
+  ],
+  "journal_prefix_bytes": 1673264,
+  "journal_prefix_sha256": "f593b840b2588200bf8093221b38729fd1adb485c586d2c0aaa8ce74bd21d4f7",
+  "response_bytes": 0,
+  "deliverables": 0,
+  "terminal_cause": "not recorded; no final result or refusal observed",
+  "ultracode_requested": true,
+  "ultracode_runtime_confirmed": null,
+  "whole_bot_complete": false
+}

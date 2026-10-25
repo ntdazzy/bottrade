@@ -115,3 +115,9 @@ Hàm `0xc30` được xuất riêng sau lần quá thời gian và ghép vào b�
 Lượt `history-sort-20261025-r1` khớp 512/512 ca thường với mã gốc,
 biên dịch 0 lỗi/0 cảnh báo. Ca lỗi, nơi gọi, phần tổng hợp lịch sử,
 khởi động lại và toàn EA chưa kiểm.
+
+Đã ghép phần đầu quản lý vị thế và ba nhánh dời dừng ảo do Claude viết.
+Phần đầu khớp 636/636 ca sau đối chứng phép tính NaN trên CPU; ba nhánh
+khớp 560/560 ca, biên dịch 0 lỗi/0 cảnh báo. Đây là kiểm từng phần,
+hàm sửa/kiểm đóng còn được chặn ở ranh giới, chưa có EA hoàn chỉnh.
+[Bằng chứng và giới hạn](../PHAN-TICH-QUAN-LY-BOT-3-20261025.md).

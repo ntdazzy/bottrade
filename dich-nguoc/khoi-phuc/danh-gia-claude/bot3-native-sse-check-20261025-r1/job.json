@@ -1,0 +1,13 @@
+{
+  "pid": 26080,
+  "started": "2026-10-25T10:16:35.9806896Z",
+  "model": "claude-opus-5-5",
+  "effort": "max",
+  "ultracode_requested": true,
+  "scope": "Write proposed analysis/code only within an explicitly assigned deliverable directory",
+  "output_directory": "dich-nguoc/khoi-phuc/claude-thuc-hien/bot3-native-sse-check-20261025-r1",
+  "edit_rule": "Edit(./dich-nguoc/khoi-phuc/claude-thuc-hien/bot3-native-sse-check-20261025-r1/**)",
+  "permission_mode": "dontAsk",
+  "prompt_sha256": "eba3d321646dcf6fa7916c68e8cde0e07ecb86bb7b2316d69c70bb75da019be5",
+  "resume": ""
+}

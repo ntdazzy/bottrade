@@ -1,0 +1,27 @@
+{
+  "parts": [
+    {
+      "part": "timed",
+      "proposal": "claude-thuc-hien/bot3-management-timed-20261025-r1/Bot3ManagementTimedStop.mqh",
+      "proposal_sha256": "a99764f0544446f1e3d09bf80d427b23287aff4407da3566dae1bb9f7fbde073",
+      "function_sha256": "ae44b4d1b94e91088bc6f6f27181fede63295cd03b59ca94aec441dccd4deccb"
+    },
+    {
+      "part": "distance",
+      "proposal": "claude-thuc-hien/bot3-management-distance-20261025-r1/Bot3ManagementDistanceStop.mqh",
+      "proposal_sha256": "4c22f994ac3328341e5d7fb55e8f339338a23e87cace8c5c605d8ec05177e28a",
+      "function_sha256": "2c9113a82c3ea0a318f92fafe568a8c8f2287431d5829e7531f01f12ba5f209e"
+    },
+    {
+      "part": "slippage",
+      "proposal": "claude-thuc-hien/bot3-management-slippage-20261025-r1/Bot3ManagementSlippageStop.mqh",
+      "proposal_sha256": "faf12d4d887fb633c99efbb4607e3ac549406f39203fb15f5017274b056e6b66",
+      "function_sha256": "2348174d1913ead2c68ad88ec6906b25fa3451905528f99e77efcfa87093b3c4"
+    }
+  ],
+  "canonical": "bot-cua-toi-3/source/MQL5/Include/bot-cua-toi-3/Bot3ManagementVirtual.mqh",
+  "canonical_sha256": "e74e2780e94e9997cef11bd39f37910d0e2c75d1eb8b7311eec45e59c86db21d",
+  "function_bodies_unchanged": true,
+  "compiled": false,
+  "runtime_compared": false
+}

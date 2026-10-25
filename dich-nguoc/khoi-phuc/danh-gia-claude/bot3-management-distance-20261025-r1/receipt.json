@@ -1,0 +1,91 @@
+{
+  "run": "bot3-management-distance-20261025-r1",
+  "session_id": "17a9136d-0ad8-44ee-b2e6-1dcb4b42b7a2",
+  "job_sha256": "695ec4fb744cdb441aad131934e6206b0dd1e2fbcab7e65992febb2a523b6adf",
+  "started": "2026-10-25T09:53:08.3527584Z",
+  "snapshot_utc": "2026-10-25T10:30:51.800777+00:00",
+  "status": "completed",
+  "actual_requests": 14,
+  "requests": [
+    {
+      "timestamp": "2026-10-25T09:53:11.511Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T09:53:27.405Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T09:53:37.590Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T09:53:48.638Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T09:53:54.357Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T09:53:58.202Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T09:54:04.896Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T09:54:13.631Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T09:58:36.447Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T09:58:40.937Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T09:59:40.922Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T10:01:07.778Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T10:01:22.442Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T10:01:27.050Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    }
+  ],
+  "ultracode_requested": true,
+  "ultracode_runtime_confirmed": null,
+  "journal_prefix_bytes": 1247408,
+  "journal_prefix_sha256": "42d139a52eb2fa5f3a2656f372a7c663c3f212fce16d873200353cf17224894b",
+  "files_sha256": {
+    "dich-nguoc/khoi-phuc/claude-thuc-hien/bot3-management-distance-20261025-r1/Bot3ManagementDistanceStop.mqh": "4c22f994ac3328341e5d7fb55e8f339338a23e87cace8c5c605d8ec05177e28a",
+    "dich-nguoc/khoi-phuc/claude-thuc-hien/bot3-management-distance-20261025-r1/SUMMARY.md": "5bf70c427aaf43377d38567138a3adb58f5ca147fb0559c16fe1ba1b1eabbee1"
+  },
+  "source_validated": false,
+  "whole_bot_complete": false
+}

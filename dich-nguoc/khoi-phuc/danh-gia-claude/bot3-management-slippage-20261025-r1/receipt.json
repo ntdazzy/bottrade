@@ -1,0 +1,86 @@
+{
+  "run": "bot3-management-slippage-20261025-r1",
+  "session_id": "1bd0f713-15cf-42d8-aad1-07f611fbe437",
+  "job_sha256": "c852b893cb8bb93f8e8eeb7cf24e1a20da7424c12f4f601fce7ed0cf4323bb7f",
+  "started": "2026-10-25T09:53:09.6366761Z",
+  "snapshot_utc": "2026-10-25T10:30:51.800777+00:00",
+  "status": "completed",
+  "actual_requests": 13,
+  "requests": [
+    {
+      "timestamp": "2026-10-25T09:53:12.801Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T09:53:26.256Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T09:53:37.228Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T09:53:46.785Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T09:53:54.058Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T09:53:59.218Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T09:54:04.914Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T09:54:16.295Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T09:55:30.735Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T09:55:39.198Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T09:57:56.707Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T10:01:39.356Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T10:02:09.213Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    }
+  ],
+  "ultracode_requested": true,
+  "ultracode_runtime_confirmed": null,
+  "journal_prefix_bytes": 1307983,
+  "journal_prefix_sha256": "88e0247a9b4745efeaf659077bb8420c07fe02e00217e47bf53c436f3b8e5241",
+  "files_sha256": {
+    "dich-nguoc/khoi-phuc/claude-thuc-hien/bot3-management-slippage-20261025-r1/Bot3ManagementSlippageStop.mqh": "faf12d4d887fb633c99efbb4607e3ac549406f39203fb15f5017274b056e6b66",
+    "dich-nguoc/khoi-phuc/claude-thuc-hien/bot3-management-slippage-20261025-r1/SUMMARY.md": "acad8a0c66dc0fa00b0f1a70280d5f4dc9afa04f4ea487e0e35df2ff1b82e51a"
+  },
+  "source_validated": false,
+  "whole_bot_complete": false
+}

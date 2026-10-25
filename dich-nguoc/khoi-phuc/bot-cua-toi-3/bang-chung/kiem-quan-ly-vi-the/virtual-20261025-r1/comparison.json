@@ -1,0 +1,34 @@
+{
+  "cases": 560,
+  "matched": 560,
+  "failed": 0,
+  "groups": {
+    "1": {
+      "cases": 156,
+      "matched": 156
+    },
+    "2": {
+      "cases": 220,
+      "matched": 220
+    },
+    "3": {
+      "cases": 184,
+      "matched": 184
+    }
+  },
+  "first_failures": [],
+  "hashes": {
+    "cases.bin": "eedfcba31cafd5981ca2602f2442414ffe71379b8c034b35a69d592bc74314c7",
+    "original-results.bin": "9436e215961e8da94f0c9d666d3e08aa8bdd188342e8d05155be22632c5cf49a",
+    "mql5-results.bin": "9436e215961e8da94f0c9d666d3e08aa8bdd188342e8d05155be22632c5cf49a"
+  },
+  "slice_only": true,
+  "whole_manager_complete": false,
+  "whole_bot_complete": false,
+  "helper_children_intercepted": true,
+  "limits": [
+    "Only three virtual trailing segments, not the initial virtual stop/take, remaining manager or EA.",
+    "Terminal replies are supplied. Close guard 0x47d20 is recorded but not executed; MQL5 verifies its forwarded values.",
+    "Inputs use valid volume indices; no out-of-range or allocation-failure proof."
+  ]
+}

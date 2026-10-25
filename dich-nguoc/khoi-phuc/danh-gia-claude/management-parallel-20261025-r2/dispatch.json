@@ -1,0 +1,1065 @@
+{
+  "snapshot_utc": "2026-10-25T10:30:51.800777+00:00",
+  "jobs": [
+    {
+      "run": "bot3-management-prelude-20261025-r2",
+      "session_id": "020781dd-4928-4e27-aa3a-21c0eee627d0",
+      "job_sha256": "a6250b9437895f08e5cdca33c5a7aef4a761b2adfc28a7fa8a14287799ace5e0",
+      "started": "2026-10-25T09:40:15.7639196Z",
+      "snapshot_utc": "2026-10-25T10:30:51.800777+00:00",
+      "status": "completed",
+      "actual_requests": 8,
+      "requests": [
+        {
+          "timestamp": "2026-10-25T09:40:20.069Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-25T09:40:26.216Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-25T09:40:33.081Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-25T09:44:10.020Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-25T09:46:00.062Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-25T09:46:06.348Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-25T09:47:23.561Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-25T09:47:41.887Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        }
+      ],
+      "ultracode_requested": true,
+      "ultracode_runtime_confirmed": null,
+      "journal_prefix_bytes": 2388784,
+      "journal_prefix_sha256": "1539d1c11f2f072821032dcc4062f29471b4206c64ff525d0e59c53389e67e2e",
+      "files_sha256": {
+        "dich-nguoc/khoi-phuc/claude-thuc-hien/bot3-management-prelude-20261025-r2/Bot3ManagementPrelude.mqh": "0109fcab5131a2e73723bfdddf2dd6ef68a09a22dae80a757d57b56df95ad815",
+        "dich-nguoc/khoi-phuc/claude-thuc-hien/bot3-management-prelude-20261025-r2/SUMMARY.md": "eac88361893f9db0224f3d414e720eb84b06d0aa81a39f3506cade52532e9d1c"
+      },
+      "source_validated": false,
+      "whole_bot_complete": false,
+      "previous_session_prefix_unchanged": true
+    },
+    {
+      "run": "bot3-management-prelude-check-20261025-r1",
+      "session_id": "2a4d92a1-7793-40d1-8490-fdac18ef7bc9",
+      "job_sha256": "4e5f81f985469e424634692066b6bfa76b016db5dba09e589980ad6da4683678",
+      "started": "2026-10-25T09:41:18.1651984Z",
+      "snapshot_utc": "2026-10-25T10:30:51.800777+00:00",
+      "status": "completed",
+      "actual_requests": 40,
+      "requests": [
+        {
+          "timestamp": "2026-10-25T09:41:21.275Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-25T09:41:29.199Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-25T09:41:35.715Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-25T09:41:41.601Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-25T09:41:46.043Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-25T09:41:51.058Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-25T09:41:56.803Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-25T09:42:01.542Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-25T09:42:07.882Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-25T09:42:20.190Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-25T09:42:30.057Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-25T09:43:27.457Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-25T09:43:36.260Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-25T09:44:27.701Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-25T09:44:31.209Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-25T09:44:58.211Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-25T09:45:01.831Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-25T09:46:51.587Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-25T09:46:55.412Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-25T09:47:14.881Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-25T09:47:19.763Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-25T09:47:38.318Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-25T09:47:42.936Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-25T09:51:01.991Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-25T09:51:07.328Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-25T09:51:22.450Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-25T09:51:29.209Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-25T09:55:42.316Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-25T09:59:45.227Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-25T09:59:52.001Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-25T10:03:56.962Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-25T10:06:23.817Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-25T10:08:58.202Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-25T10:09:04.083Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-25T10:09:15.396Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-25T10:09:24.593Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-25T10:09:36.761Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-25T10:09:49.425Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-25T10:10:43.248Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-25T10:10:52.406Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        }
+      ],
+      "ultracode_requested": true,
+      "ultracode_runtime_confirmed": null,
+      "journal_prefix_bytes": 3393653,
+      "journal_prefix_sha256": "f56d1d5667453511181192b9262b4a954226f43b57a7e25b67bae35b11d81b9e",
+      "files_sha256": {
+        "dich-nguoc/khoi-phuc/claude-thuc-hien/bot3-management-prelude-check-20261025-r1/Bot3ManagementPreludeCheck.mq5": "445e0714a1cc00eea0741969f4b4fdfc168c7874a11ae3ca60548e129a46c7c3",
+        "dich-nguoc/khoi-phuc/claude-thuc-hien/bot3-management-prelude-check-20261025-r1/check-management-prelude.py": "09200deeee49abcee23c58088dc0e704a208761e563f0c6f03d863f8eb3f018a",
+        "dich-nguoc/khoi-phuc/claude-thuc-hien/bot3-management-prelude-check-20261025-r1/SUMMARY.md": "372cffcb8b465a20aeee550d84565f65aa21cac86f57b93a6af6bbd6b50caa2b"
+      },
+      "source_validated": false,
+      "whole_bot_complete": false
+    },
+    {
+      "run": "bot3-management-timed-20261025-r1",
+      "session_id": "5a1ae9f8-d6bc-4b9c-9480-f2960d8069f1",
+      "job_sha256": "7bd53ebff5bb08c5a0eb13ae9765318d862348e9cfd9dda91dd0d33b3e01cb51",
+      "started": "2026-10-25T09:53:07.0529519Z",
+      "snapshot_utc": "2026-10-25T10:30:51.800777+00:00",
+      "status": "completed",
+      "actual_requests": 10,
+      "requests": [
+        {
+          "timestamp": "2026-10-25T09:53:10.177Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-25T09:53:21.488Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-25T09:53:31.608Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-25T09:53:43.537Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-25T09:53:52.957Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-25T09:55:49.003Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-25T09:55:57.101Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-25T09:58:45.993Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-25T09:58:53.869Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-25T09:59:29.438Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        }
+      ],
+      "ultracode_requested": true,
+      "ultracode_runtime_confirmed": null,
+      "journal_prefix_bytes": 1181270,
+      "journal_prefix_sha256": "3f96f275302174511f71f10df0e50f2606853671ac0895f779645976e67744b7",
+      "files_sha256": {
+        "dich-nguoc/khoi-phuc/claude-thuc-hien/bot3-management-timed-20261025-r1/Bot3ManagementTimedStop.mqh": "a99764f0544446f1e3d09bf80d427b23287aff4407da3566dae1bb9f7fbde073",
+        "dich-nguoc/khoi-phuc/claude-thuc-hien/bot3-management-timed-20261025-r1/SUMMARY.md": "9177a249bc29dfa8a5828073efa6bb181510d7fada45ebd9ff58378577bc7781"
+      },
+      "source_validated": false,
+      "whole_bot_complete": false
+    },
+    {
+      "run": "bot3-management-distance-20261025-r1",
+      "session_id": "17a9136d-0ad8-44ee-b2e6-1dcb4b42b7a2",
+      "job_sha256": "695ec4fb744cdb441aad131934e6206b0dd1e2fbcab7e65992febb2a523b6adf",
+      "started": "2026-10-25T09:53:08.3527584Z",
+      "snapshot_utc": "2026-10-25T10:30:51.800777+00:00",
+      "status": "completed",
+      "actual_requests": 14,
+      "requests": [
+        {
+          "timestamp": "2026-10-25T09:53:11.511Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-25T09:53:27.405Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-25T09:53:37.590Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-25T09:53:48.638Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-25T09:53:54.357Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-25T09:53:58.202Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-25T09:54:04.896Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-25T09:54:13.631Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-25T09:58:36.447Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-25T09:58:40.937Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-25T09:59:40.922Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-25T10:01:07.778Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-25T10:01:22.442Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-25T10:01:27.050Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        }
+      ],
+      "ultracode_requested": true,
+      "ultracode_runtime_confirmed": null,
+      "journal_prefix_bytes": 1247408,
+      "journal_prefix_sha256": "42d139a52eb2fa5f3a2656f372a7c663c3f212fce16d873200353cf17224894b",
+      "files_sha256": {
+        "dich-nguoc/khoi-phuc/claude-thuc-hien/bot3-management-distance-20261025-r1/Bot3ManagementDistanceStop.mqh": "4c22f994ac3328341e5d7fb55e8f339338a23e87cace8c5c605d8ec05177e28a",
+        "dich-nguoc/khoi-phuc/claude-thuc-hien/bot3-management-distance-20261025-r1/SUMMARY.md": "5bf70c427aaf43377d38567138a3adb58f5ca147fb0559c16fe1ba1b1eabbee1"
+      },
+      "source_validated": false,
+      "whole_bot_complete": false
+    },
+    {
+      "run": "bot3-management-slippage-20261025-r1",
+      "session_id": "1bd0f713-15cf-42d8-aad1-07f611fbe437",
+      "job_sha256": "c852b893cb8bb93f8e8eeb7cf24e1a20da7424c12f4f601fce7ed0cf4323bb7f",
+      "started": "2026-10-25T09:53:09.6366761Z",
+      "snapshot_utc": "2026-10-25T10:30:51.800777+00:00",
+      "status": "completed",
+      "actual_requests": 13,
+      "requests": [
+        {
+          "timestamp": "2026-10-25T09:53:12.801Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-25T09:53:26.256Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-25T09:53:37.228Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-25T09:53:46.785Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-25T09:53:54.058Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-25T09:53:59.218Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-25T09:54:04.914Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-25T09:54:16.295Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-25T09:55:30.735Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-25T09:55:39.198Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-25T09:57:56.707Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-25T10:01:39.356Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-25T10:02:09.213Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        }
+      ],
+      "ultracode_requested": true,
+      "ultracode_runtime_confirmed": null,
+      "journal_prefix_bytes": 1307983,
+      "journal_prefix_sha256": "88e0247a9b4745efeaf659077bb8420c07fe02e00217e47bf53c436f3b8e5241",
+      "files_sha256": {
+        "dich-nguoc/khoi-phuc/claude-thuc-hien/bot3-management-slippage-20261025-r1/Bot3ManagementSlippageStop.mqh": "faf12d4d887fb633c99efbb4607e3ac549406f39203fb15f5017274b056e6b66",
+        "dich-nguoc/khoi-phuc/claude-thuc-hien/bot3-management-slippage-20261025-r1/SUMMARY.md": "acad8a0c66dc0fa00b0f1a70280d5f4dc9afa04f4ea487e0e35df2ff1b82e51a"
+      },
+      "source_validated": false,
+      "whole_bot_complete": false
+    },
+    {
+      "run": "bot3-management-virtual-check-20261025-r1",
+      "session_id": "e3d3b0ee-13a8-4060-a94d-f84093d9bea4",
+      "job_sha256": "baafdc57b09b03cb466550a6b1af7513e8881dc46cfeef5e8dfe5540309ca6a0",
+      "started": "2026-10-25T09:57:04.6521827Z",
+      "snapshot_utc": "2026-10-25T10:30:51.800777+00:00",
+      "status": "pending-final-response",
+      "actual_requests": 55,
+      "requests": [
+        {
+          "timestamp": "2026-10-25T09:57:05.794Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-25T09:57:13.941Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-25T09:57:19.993Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-25T09:57:24.734Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-25T09:57:28.331Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-25T09:57:32.685Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-25T09:57:36.473Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-25T09:57:40.299Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-25T09:57:43.511Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-25T09:57:47.095Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-25T09:58:06.759Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-25T09:58:12.607Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-25T09:58:18.305Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-25T09:58:22.272Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-25T09:58:32.380Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-25T09:58:55.416Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-25T10:00:07.224Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-25T10:00:26.245Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-25T10:00:38.113Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-25T10:00:45.998Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-25T10:01:24.157Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-25T10:01:28.219Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-25T10:01:31.563Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-25T10:01:42.644Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-25T10:01:50.328Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-25T10:01:53.778Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-25T10:03:53.965Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-25T10:03:59.414Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-25T10:04:24.986Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-25T10:04:35.511Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-25T10:05:40.800Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-25T10:05:45.279Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-25T10:05:49.682Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-25T10:05:58.132Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-25T10:06:05.080Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-25T10:06:09.193Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-25T10:06:20.102Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-25T10:06:51.032Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-25T10:07:10.886Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-25T10:07:20.102Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-25T10:07:32.813Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-25T10:07:39.780Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-25T10:07:43.603Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-25T10:08:05.580Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-25T10:14:41.341Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-25T10:15:50.160Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-25T10:16:03.603Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-25T10:16:12.141Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-25T10:16:20.843Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-25T10:17:07.373Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-25T10:17:11.857Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-25T10:17:53.025Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-25T10:18:00.542Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-25T10:26:14.762Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-25T10:27:08.213Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        }
+      ],
+      "ultracode_requested": true,
+      "ultracode_runtime_confirmed": null,
+      "journal_prefix_bytes": 3293880,
+      "journal_prefix_sha256": "b1cc71c91d84292ac281af6a98a40517ffcac1e251ce20856084d1061697314a",
+      "files_sha256": {},
+      "source_validated": false,
+      "whole_bot_complete": false
+    },
+    {
+      "run": "bot3-nan-review-20261025-r1",
+      "session_id": "25504cbb-ef5f-421e-99a9-b43384071d5e",
+      "job_sha256": "f6ff67ed2b4f4eca624a912cc49f2c94e50af7f04774b38cd79367d00eb0a066",
+      "started": "2026-10-25T10:11:59.2508566Z",
+      "snapshot_utc": "2026-10-25T10:30:51.800777+00:00",
+      "status": "completed",
+      "actual_requests": 29,
+      "requests": [
+        {
+          "timestamp": "2026-10-25T10:12:00.441Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-25T10:12:06.811Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-25T10:12:13.541Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-25T10:12:51.269Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-25T10:15:17.134Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-25T10:15:28.397Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-25T10:15:48.783Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-25T10:15:54.350Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-25T10:15:58.116Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-25T10:16:38.914Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-25T10:16:49.087Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-25T10:16:59.802Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-25T10:17:09.207Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-25T10:17:12.640Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-25T10:17:20.892Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-25T10:17:32.790Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-25T10:17:47.149Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-25T10:17:54.061Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-25T10:18:08.743Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-25T10:18:15.539Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-25T10:18:26.802Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-25T10:19:57.965Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-25T10:20:03.379Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-25T10:20:13.554Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-25T10:20:23.198Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-25T10:20:32.845Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-25T10:21:13.216Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-25T10:21:16.710Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-25T10:25:20.783Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        }
+      ],
+      "ultracode_requested": true,
+      "ultracode_runtime_confirmed": null,
+      "journal_prefix_bytes": 2220899,
+      "journal_prefix_sha256": "b6cf5eb52790e92b43b0759095b5057de96521486ed58dec645e1df346506faf",
+      "files_sha256": {
+        "dich-nguoc/khoi-phuc/claude-thuc-hien/bot3-nan-review-20261025-r1/REVIEW.md": "43357ab010ec25098fa6047face367affab7ac78aadbf7dcfc0ced7a32cf774e"
+      },
+      "source_validated": false,
+      "whole_bot_complete": false
+    },
+    {
+      "run": "bot3-native-sse-check-20261025-r1",
+      "session_id": "01a2a45d-389b-4f86-b7b3-607eda09b76c",
+      "job_sha256": "98da31c9dbca90bdbdceb306c9e74c116cc43c2a8fcad0530d7a3c16012c3d7e",
+      "started": "2026-10-25T10:16:35.9806896Z",
+      "snapshot_utc": "2026-10-25T10:30:51.800777+00:00",
+      "status": "pending-final-response",
+      "actual_requests": 10,
+      "requests": [
+        {
+          "timestamp": "2026-10-25T10:16:37.140Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-25T10:16:49.336Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-25T10:16:57.501Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-25T10:17:02.128Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-25T10:17:10.529Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-25T10:17:17.527Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-25T10:24:18.629Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-25T10:24:35.585Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-25T10:30:09.884Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-25T10:30:37.480Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        }
+      ],
+      "ultracode_requested": true,
+      "ultracode_runtime_confirmed": null,
+      "journal_prefix_bytes": 1436065,
+      "journal_prefix_sha256": "bcbc8fd93e93cc87eb3f668fd0e84cfd7132d90bc4877bc79c208b34268844e6",
+      "files_sha256": {
+        "dich-nguoc/khoi-phuc/claude-thuc-hien/bot3-native-sse-check-20261025-r1/check-management-prelude.py": "b03b5d12607ae74800b9af07e215cc31eb6485d8436348c404487ee4cfc93a49"
+      },
+      "source_validated": false,
+      "whole_bot_complete": false
+    }
+  ]
+}

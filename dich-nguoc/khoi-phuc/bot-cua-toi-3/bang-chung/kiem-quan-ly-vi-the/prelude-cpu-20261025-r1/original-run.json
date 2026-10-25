@@ -1,0 +1,95 @@
+{
+  "original_ex5_sha256": "ee063d3d87490afe24e2f4ce85f6b05659320e297b102efd70207f71ca2feb83",
+  "tool_sha256": "402a6b548e6144115536a86987471f2b2fa59f9fb4a54a989985636a40c4eb7e",
+  "analysis_sha256": "b22402c383a0b2fdda202f40285fc28d60b7b845f60c5fc39f8839db95d7d163",
+  "contract_sha256": "cced761bf3ba4f0c161cffceee93f3bf0d3f7da09965d50399c0365a87f5271e",
+  "boundaries_sha256": "f6964e9e63194190e93543b735f510451bce6c88410d6cd6816aacab307bcade",
+  "probe_sha256": "bd633e156fa141d81718ecd96894b0f3d3ce403d430dff10d4c66f0d4dff5c7f",
+  "helpers_sha256": {
+    "kiem-gia-vao-bot-1-3.py": "22394e48932feb7242b967aa58e327d2990402f12bfe52621916f64914c9dac2",
+    "kiem-muc-gia-bot-1-3.py": "a6c447ca80029fb63ced0c9d1673bb14222a7736b04df5c410f280f8471d6a35",
+    "kiem-khoi-luong-hop-le-bot-1-3.py": "8251fb4423d6f5f2e1b79a1c53dbb25fb5a6c568bb61cddef23396dc982243f0",
+    "kiem-khoi-luong-bot-1-3.py": "32539c090422ab6bc2ce94a9fdacfd33e53c394aca58bd3827c2232d817d7f77"
+  },
+  "sources_sha256": {
+    "Include/bot-cua-toi-3/Bot3ManagementPrelude.mqh": "e0db33b8346340eb81b7c55db6fd456f66124dd565a0e8b7a0e6d5b17bb363fe",
+    "Include/bot-cua-toi-3/Bot3PriceLevels.mqh": "1cfecf5f324056b64f72a8fb21f446b7ca35f377ae40d4ab0c6859bfe736c413",
+    "Include/bot-cua-toi-3/Bot3PositionModify.mqh": "66ef002ab0e4b3d4bf8a0070e3f6fddfbe3446f0ded59a723e033b972d52e0a5",
+    "Include/bot-cua-toi-3/Bot3PositionClose.mqh": "7233c829f4e625b8c9a3c3258d6677b78b1518af61cb4617123f5597ccdcd495",
+    "Include/bot-cua-toi-3/Bot3TradeSend.mqh": "6031d82d7db3cb5652b76c4583853e871ac1e7f1770834e8dcbd165fa3a60f1f",
+    "Include/bot-cua-toi-3/Bot3TradeMessages.mqh": "3bf211b2aa34980e0857f31e66a08e65136728fa7ef6e239d58cfc1c2bec5d16",
+    "Include/bot-cua-toi-3/Bot3PendingRequest.mqh": "54bc2c75ff9a2ee47f375f874908912da0cad56d2ecb586801d0274c2d025648",
+    "Include/bot-cua-toi-3/Bot3Filling.mqh": "c2806af2b1e00363652b7a09387065f1de289cf6e2bc644611f4d5f6d1c47599",
+    "Scripts/bot-cua-toi-3/Bot3ManagementPreludeCheck.mq5": "445e0714a1cc00eea0741969f4b4fdfc168c7874a11ae3ca60548e129a46c7c3"
+  },
+  "cases": 636,
+  "seconds": 9.87,
+  "result_sha256": "7e0a9de7db90d2ff4d04f186cee5ed3bec6df47bcb912952f67853918995b43b",
+  "paths": {
+    "sell-rejected": 35,
+    "sell-accepted": 283,
+    "buy-rejected": 34,
+    "buy-accepted": 284
+  },
+  "coverage": {
+    "0x32f60": {
+      "instructions": 519,
+      "executed": 519,
+      "missing": []
+    },
+    "0x37590": {
+      "instructions": 522,
+      "executed": 522,
+      "missing": []
+    }
+  },
+  "cpu_fixture": {
+    "opcodes": {
+      "mul": "f20f1001f20f590266480f7ec0c3",
+      "add": "f20f1001f20f580266480f7ec0c3",
+      "sub": "f20f1001f20f5c0266480f7ec0c3",
+      "mxcsr_get": "0fae19c3",
+      "mxcsr_set": "0fae11c3"
+    },
+    "mxcsr_used": "0x1f80",
+    "probe": {
+      "sha256": "bd633e156fa141d81718ecd96894b0f3d3ce403d430dff10d4c66f0d4dff5c7f",
+      "rows": 363,
+      "cpu_bits_reproduced": 363,
+      "unicorn_differences": 24
+    },
+    "calls": 383,
+    "delegated_instructions": 20,
+    "delegated_by_site": {
+      "0x335a9": 2,
+      "0x335ad": 3,
+      "0x3367d": 2,
+      "0x33681": 3,
+      "0x37be5": 2,
+      "0x37bea": 3,
+      "0x37cbe": 2,
+      "0x37cc2": 3
+    },
+    "delegated_cases": [
+      122,
+      123,
+      124,
+      125,
+      126,
+      127,
+      440,
+      441,
+      442,
+      443,
+      444,
+      445
+    ]
+  },
+  "prefix_only": true,
+  "whole_manager_complete": false,
+  "whole_bot_complete": false,
+  "full_ea": false,
+  "original_bytes_changed": false,
+  "both_nan_sites_on_cpu": 8,
+  "whole_original_on_cpu": false
+}
