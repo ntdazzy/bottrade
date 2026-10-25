@@ -1,0 +1,27 @@
+{
+  "parts": {
+    "Bot3AdvanceTimedBuyStop": {
+      "proposal_sha256": "31a323a76ac4ced143294679c4dbaaee9def6ebec4b67055270d96dd595ef350",
+      "function_sha256": "b11526be9e076b6ad975f347a7376fe4e089756d04384814a0c8a22c11204d2e",
+      "body_unchanged": true
+    },
+    "Bot3AdvanceTimedSellStop": {
+      "proposal_sha256": "52efed9631305fa92e6c50079de059b607f4cbdaf7c07db35395a2cfa32c9b2a",
+      "function_sha256": "d4e619ff9418d0ad81079bf60348f602afd30568e149215d7f7515b430898679",
+      "body_unchanged": true
+    },
+    "Bot3ManagementMessages.mqh": {
+      "proposal_sha256": "877cf90d7cb69de1bd714d838d745eb3769d8fac74d0e64103765a52e7dbb3aa",
+      "source_sha256": "877cf90d7cb69de1bd714d838d745eb3769d8fac74d0e64103765a52e7dbb3aa",
+      "whole_file_unchanged": true
+    },
+    "Bot3ManagementVirtualFinishFlow.mqh": {
+      "proposal_sha256": "ca976fcaabd8185f8f8fb12cbb12af6d8aa4bdde4ec5be5615dc325b93d59ebb",
+      "source_sha256": "ca976fcaabd8185f8f8fb12cbb12af6d8aa4bdde4ec5be5615dc325b93d59ebb",
+      "whole_file_unchanged": true
+    }
+  },
+  "root_review": "All four implementations checked against fixed functional specs and native evidence. No algorithm change made during merge.",
+  "runtime_verified": false,
+  "whole_bot_complete": false
+}

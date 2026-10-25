@@ -1,0 +1,18 @@
+{
+  "parts": {
+    "Bot3AdvanceDistanceBuyStop": {
+      "proposal_sha256": "0d0a90e824e1c8405aa6a6b581b62765319b74320d7f68576b495d77609a47a8",
+      "function_sha256": "f1556c6ce2117ef9244c8d15eb7530a83952ad800b39fc32b0546176ae6722f9",
+      "body_unchanged": true
+    },
+    "Bot3AdvanceDistanceSellStop": {
+      "proposal_sha256": "1742f4b08e1d827a421d747c4109b61df7cf8f39e008c9ce7b2a751493b5493d",
+      "function_sha256": "e0ad7de898b518bd257c3fba778a2581dc414991ff25161a9e68b871cb307169",
+      "body_unchanged": true
+    }
+  },
+  "source_sha256": "d118464da3ac7129baecd1a5d6c32c7d3b27e5bb0bc55cb1b9886050cc5d104e",
+  "root_review": "Both bodies checked against the fixed functional specs and native evidence; exact body text retained.",
+  "runtime_verified": false,
+  "whole_bot_complete": false
+}

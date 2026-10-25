@@ -1,0 +1,13 @@
+{
+  "pid": 25924,
+  "started": "2026-10-25T12:39:32.6284617Z",
+  "model": "claude-opus-5-5",
+  "effort": "max",
+  "ultracode_requested": true,
+  "scope": "Write proposed analysis/code only within an explicitly assigned deliverable directory",
+  "output_directory": "dich-nguoc/khoi-phuc/claude-thuc-hien/bot3-real-distance-buy-20261025-r1",
+  "edit_rule": "Edit(./dich-nguoc/khoi-phuc/claude-thuc-hien/bot3-real-distance-buy-20261025-r1/**)",
+  "permission_mode": "dontAsk",
+  "prompt_sha256": "6930d5f4e4c4e8249696b10d63ed3bd649742318a0ca8eae19737f96a2ea7f3c",
+  "resume": ""
+}

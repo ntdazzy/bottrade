@@ -20,15 +20,22 @@ phép kiểm và việc còn thiếu. Sau đó mới làm lần lượt; không 
 viết xong một phần che mất các phần khác. Giữ mã sạch, rõ và đúng hành
 vi EX5, gồm kiểu số, thứ tự, làm tròn và tác dụng phụ.
 
-Theo yêu cầu hiện tại, Claude là người làm chính, nhận khoảng 95%
-phần việc phân tích, viết mã và bộ kiểm. Codex quản lý, chia phần,
-theo dõi, tự đối chiếu với bot gốc và kiểm kết quả trước khi ghép.
+Theo phân công hiện tại, Codex phân tích chứng cứ gốc, chốt thuật toán
+và viết đặc tả. Claude nhận phần lớn việc viết mã/bộ kiểm theo đặc tả,
+mục tiêu khoảng 95% phần thực hiện. Codex quản lý, chia phần, theo dõi,
+tự đối chiếu với bot gốc và kiểm kết quả trước khi ghép.
 Cách giao việc được làm rõ ngày 25/10/2026: Codex phân tích bằng chứng
 gốc trước và chốt mô tả từng chức năng, gồm công thức, điều kiện, kiểu
 số, thứ tự và tác dụng phụ. Claude nhận mô tả cùng ngữ cảnh/mục tiêu
 để viết từng phần; không phải tự phân tích EX5 thay bước này. Codex
 kiểm mã rồi so với bản gốc. Cách viết mã có thể khác, logic xử lý phải
 giữ nguyên; chỗ chưa rõ cần phân tích tiếp, không tự điền hoặc thêm luật.
+Làm rõ mới nhất: giao Claude viết mã từ bản mô tả chức năng độc lập,
+đủ giao diện, kiểu số, công thức, điều kiện, thứ tự đọc/ghi, làm tròn,
+tác dụng phụ và đầu ra. Không giao Claude đọc EX5/mã máy hoặc tự bóc
+tách thuật toán. Codex giữ chứng cứ gốc để kiểm, tự phân tích tiếp
+mọi chỗ chưa rõ trước khi giao. Ngữ cảnh viết mã là chức năng MQL5
+cụ thể; không bịa lý do, quyền sở hữu hay đổi tên phần đã bị từ chối.
 Ngoại lệ được người dùng xác nhận ngày 25/10/2026: Codex trực tiếp làm
 các phần Claude từ chối, gồm phân tích, viết mã và bộ kiểm; Claude làm
 các phần còn nhận. Không đổi cách hỏi để vượt việc từ chối.

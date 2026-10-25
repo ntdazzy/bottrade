@@ -1,0 +1,22 @@
+{
+  "cases": 296,
+  "matched": 296,
+  "run": "store-20261025-r2",
+  "build": "b3-virtual-store-check-02",
+  "result_sha256": "5c142a513956f9839d43665f5e9c8f04767e1a71d15ca6624940caac46610583",
+  "comparison_sha256": "efe592a698612f37a750435432f8075381b1e35568e585fad3ba3497fc75a4b9",
+  "source_hashes": {
+    "Include/bot-cua-toi-3/Bot3ManagementPrelude.mqh": "e0db33b8346340eb81b7c55db6fd456f66124dd565a0e8b7a0e6d5b17bb363fe",
+    "Include/bot-cua-toi-3/Bot3PriceLevels.mqh": "1cfecf5f324056b64f72a8fb21f446b7ca35f377ae40d4ab0c6859bfe736c413",
+    "Include/bot-cua-toi-3/Bot3PositionModify.mqh": "66ef002ab0e4b3d4bf8a0070e3f6fddfbe3446f0ded59a723e033b972d52e0a5",
+    "Include/bot-cua-toi-3/Bot3PositionClose.mqh": "7233c829f4e625b8c9a3c3258d6677b78b1518af61cb4617123f5597ccdcd495",
+    "Include/bot-cua-toi-3/Bot3TradeSend.mqh": "6031d82d7db3cb5652b76c4583853e871ac1e7f1770834e8dcbd165fa3a60f1f",
+    "Include/bot-cua-toi-3/Bot3TradeMessages.mqh": "3bf211b2aa34980e0857f31e66a08e65136728fa7ef6e239d58cfc1c2bec5d16",
+    "Include/bot-cua-toi-3/Bot3PendingRequest.mqh": "54bc2c75ff9a2ee47f375f874908912da0cad56d2ecb586801d0274c2d025648",
+    "Include/bot-cua-toi-3/Bot3Filling.mqh": "c2806af2b1e00363652b7a09387065f1de289cf6e2bc644611f4d5f6d1c47599",
+    "Include/bot-cua-toi-3/Bot3VirtualStops.mqh": "f62cf679b7dd0607e0f079675572be7ecb4d46bed9dd8a3ff04b9374d694a500",
+    "Include/bot-cua-toi-3/Bot3ManagementVirtualFinish.mqh": "9b143e1beec432210edb4b79144a3fa7427c1caef975be27730c7e7bc70c00e0",
+    "Scripts/bot-cua-toi-3/Bot3ManagementVirtualStoreCheck.mq5": "c0f76f92b5d1db00e4b5563f9062c83ed49af9bb36c0513f7e830ff512f64fd9"
+  },
+  "whole_bot_complete": false
+}

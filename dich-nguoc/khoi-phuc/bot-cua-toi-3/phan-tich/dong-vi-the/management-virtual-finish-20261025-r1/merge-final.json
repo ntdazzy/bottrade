@@ -1,0 +1,19 @@
+{
+  "functions": {
+    "Bot3AdvanceVirtualHighLow": {
+      "proposal_sha256": "721d0b416082b9772a0e2d59ae95fbe3b9ca3da371e477efb455fa12d8135173",
+      "function_sha256": "409d08149e31308ac9278df6387b155f4f5357cba03400f6f20d68ab8458e495",
+      "function_body_unchanged": true,
+      "claude_final_response_sha256": "888bece8e6b18609755297e1036cd3872cb14ef9ccfe69a26c580cd6ae977a93"
+    },
+    "Bot3AdvanceVirtualBreakEvenCounter": {
+      "proposal_sha256": "8cd4c1dfbc4390f4a4fc1fca78d64a47a1c5f26ef8cb86e3508737c47fd5f453",
+      "function_sha256": "6cb58d2d791bc0ae422d682fd6bc31d051f7d9d9bcab3597ade3b70996c15c36",
+      "function_body_unchanged": true,
+      "claude_final_response_sha256": "d5ecf150dc64e16e21af7f5211dde10ecdde2a20262bcc9cbcdc67f332e9e004"
+    }
+  },
+  "source_sha256": "9b143e1beec432210edb4b79144a3fa7427c1caef975be27730c7e7bc70c00e0",
+  "store_author": "Codex under approved refusal exception",
+  "whole_bot_complete": false
+}

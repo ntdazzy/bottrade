@@ -1,0 +1,170 @@
+{
+  "run": "bot3-finish-high-low-20261025-r1",
+  "session_id": "aa6b4716-ee02-4823-b4cd-17db297fd6ad",
+  "started": "2026-10-25T11:57:40.1091653Z",
+  "snapshot_utc": "2026-10-25T13:09:32.351974+00:00",
+  "status": "delivered-unverified",
+  "response_is_error": false,
+  "terminal_reason": "completed",
+  "job_sha256": "68039b8f13fec7b0474cdb52116064620f06023c38acf85fddcd09f9d9a9ebbc",
+  "prompt_sha256": "8d29c846ccc96a74ff6f44ceb579eda297a38beadac3956f33a7d4aa15610738",
+  "response_sha256": "888bece8e6b18609755297e1036cd3872cb14ef9ccfe69a26c580cd6ae977a93",
+  "actual_requests": 29,
+  "requests": [
+    {
+      "timestamp": "2026-10-25T11:57:43.289Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T11:57:49.300Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T11:57:57.320Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T11:58:03.234Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T11:58:10.233Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T11:58:14.332Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T11:58:20.062Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T11:58:24.235Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T11:58:29.791Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T11:58:34.241Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T11:58:40.236Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T11:59:19.260Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T12:01:22.442Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T12:01:28.472Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T12:02:19.384Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T12:02:28.232Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T12:02:45.217Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T12:02:52.336Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T12:03:48.141Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T12:03:59.087Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T12:04:15.063Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T12:04:28.475Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T12:04:41.860Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T12:04:59.655Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T12:05:56.349Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T12:06:41.867Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T12:07:04.778Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T12:07:13.156Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T12:07:29.688Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    }
+  ],
+  "ultracode_requested": true,
+  "ultracode_runtime_confirmed": null,
+  "journal_prefix_bytes": 1735355,
+  "journal_prefix_sha256": "2bcf854d7153fec60d814829bd2a9e2414a632ec4d26293647bab57f318a22ad",
+  "files_sha256": {
+    "dich-nguoc/khoi-phuc/claude-thuc-hien/bot3-finish-high-low-20261025-r1/part.mqh": "721d0b416082b9772a0e2d59ae95fbe3b9ca3da371e477efb455fa12d8135173",
+    "dich-nguoc/khoi-phuc/claude-thuc-hien/bot3-finish-high-low-20261025-r1/SUMMARY.md": "b508b44b12847fb19ea207283668b09abeb6f940f2ff9980cb7ad69fc9141a2a"
+  },
+  "source_validated": false,
+  "whole_bot_complete": false
+}

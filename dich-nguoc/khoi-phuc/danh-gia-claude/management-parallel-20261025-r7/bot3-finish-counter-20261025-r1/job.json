@@ -1,0 +1,13 @@
+{
+  "pid": 5916,
+  "started": "2026-10-25T11:57:41.4427744Z",
+  "model": "claude-opus-5-5",
+  "effort": "max",
+  "ultracode_requested": true,
+  "scope": "Write proposed analysis/code only within an explicitly assigned deliverable directory",
+  "output_directory": "dich-nguoc/khoi-phuc/claude-thuc-hien/bot3-finish-counter-20261025-r1",
+  "edit_rule": "Edit(./dich-nguoc/khoi-phuc/claude-thuc-hien/bot3-finish-counter-20261025-r1/**)",
+  "permission_mode": "dontAsk",
+  "prompt_sha256": "3dca3b6fbe51b95d691bebee53483455c21b214ad42f4a0bcc2e8e551244e13b",
+  "resume": ""
+}

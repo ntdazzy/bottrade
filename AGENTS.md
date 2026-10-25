@@ -29,10 +29,11 @@
    Nêu đúng bối cảnh và phạm vi; không yêu cầu vượt biện pháp bảo vệ.
    Nhận xét của Claude phải được đối chiếu lại bằng chứng, không thay
    cho phép so với bot gốc. Không có phản hồi thì ghi là chưa có đánh giá.
-   Theo yêu cầu mới: giao khoảng 95% phần việc tiếp theo cho Claude,
-   gồm phân tích, viết mã và bộ kiểm. Claude là người làm chính;
+   Theo phân công hiện tại: Codex trực tiếp phân tích chứng cứ gốc,
+   chốt thuật toán và viết đặc tả. Giao phần lớn việc viết mã và bộ
+   kiểm theo đặc tả cho Claude, mục tiêu khoảng 95% phần thực hiện.
    Codex quản lý, chia phần, theo dõi, kiểm chứng độc lập và ghép kết
-   quả; không chỉ giao Claude đọc/rà mã.
+   quả; không thay việc giao viết mã bằng chỉ giao đọc/rà mã.
    Cách giao việc mới được người dùng làm rõ ngày 25/10/2026: Codex
    phân tích bằng chứng gốc trước, chốt công thức, điều kiện, kiểu số,
    thứ tự gọi và tác dụng phụ thành mô tả cụ thể. Sau đó giao Claude
@@ -40,6 +41,16 @@
    không bắt Claude tự phân tích EX5 thay cho bước này. Codex kiểm mã
    và so kết quả với bản gốc. Mã có thể khác cách viết, nhưng logic
    xử lý phải giữ nguyên; không tự thêm luật hoặc điền chỗ chưa rõ.
+   Làm rõ mới nhất của người dùng ngày 25/10/2026: Claude là bên viết
+   mã từ bản mô tả chức năng đã được Codex chốt, không phải bên bóc
+   tách hoặc rà mã gốc. Mỗi việc giao phải có giao diện, kiểu dữ liệu,
+   công thức, điều kiện, thứ tự đọc/ghi, cách làm tròn, tác dụng phụ
+   và kết quả cần trả. Không yêu cầu Claude đọc EX5, mã máy hoặc tự
+   tìm thuật toán. Codex giữ phần chứng cứ gốc và tự đối chiếu; khi
+   thiếu chi tiết thì Codex phân tích tiếp trước khi giao viết mã.
+   Ngữ cảnh giao việc tập trung vào chức năng MQL5 cần viết. Không
+   bịa quyền sở hữu hoặc lý do khác, không gửi lại phần đã từ chối
+   dưới tên khác; các phần đó Codex làm theo ngoại lệ đã xác nhận.
    Người dùng yêu cầu tăng số Claude làm song song: người quản lý
    nắm danh sách và phụ thuộc toàn bot, chia mô tả đã chốt thành các
    phần độc lập, giao nhiều phiên Claude viết mã cùng lúc. Khởi đầu

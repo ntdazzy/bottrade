@@ -1,0 +1,75 @@
+{
+  "run": "bot3-real-distance-sell-20261025-r1",
+  "session_id": "5ffdd943-f155-42c5-8f28-e0f6820269d8",
+  "started": "2026-10-25T12:39:33.9192426Z",
+  "snapshot_utc": "2026-10-25T13:09:32.351974+00:00",
+  "status": "delivered-unverified",
+  "response_is_error": false,
+  "terminal_reason": "completed",
+  "job_sha256": "dad288dff42c7100adaa5b150f6f98624c380097b569f76482506d0a09afbfc5",
+  "prompt_sha256": "872549a62f4d8f49c510ac8101bc2f1d26b21b1b6a92437ef122e54b9310faf8",
+  "response_sha256": "95a189190ff37bf5a43a2fe820eb8c4afde33baf4c51d684f21b64f6b9e20630",
+  "actual_requests": 10,
+  "requests": [
+    {
+      "timestamp": "2026-10-25T12:39:37.127Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T12:39:48.353Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T12:39:53.110Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T12:39:56.813Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T12:40:01.905Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T12:40:07.482Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T12:45:31.030Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T12:45:43.423Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T12:46:58.303Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T12:47:02.745Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    }
+  ],
+  "ultracode_requested": true,
+  "ultracode_runtime_confirmed": null,
+  "journal_prefix_bytes": 1046612,
+  "journal_prefix_sha256": "b11621d962c70da86711b015c3fda067a3637df4937610b9db7305348bfce363",
+  "files_sha256": {
+    "dich-nguoc/khoi-phuc/claude-thuc-hien/bot3-real-distance-sell-20261025-r1/Bot3DistanceRealSell.mqh": "1742f4b08e1d827a421d747c4109b61df7cf8f39e008c9ce7b2a751493b5493d",
+    "dich-nguoc/khoi-phuc/claude-thuc-hien/bot3-real-distance-sell-20261025-r1/SUMMARY.md": "b431faf72253704a84cb5aa61ba52db2a62cca7ab3d71de74eecf7388571fb38"
+  },
+  "source_validated": false,
+  "whole_bot_complete": false
+}

@@ -1,5 +1,18 @@
 # Tiến độ luồng bot 1 — 25/10/2026
 
+## Cập nhật: kết thúc nhánh ảo
+
+- Bot1ManagementVirtualFinish.mqh đã có nguồn, mô tả từ native trước viết.
+- finish-root-20261025-r4 khớp **1.260/1.260 ca**, bản dựng
+  b1-virtual-finish-root-02 **0 lỗi, 0 cảnh báo**.
+- Giữ 484 ca cũ và thêm 776 ca: cờ có sẵn, các byte bật/tắt,
+  vé khớp ở hàng 0/250/499, trùng, không khớp hoặc NaN.
+- So đủ 1.500 ô bảng, cờ bảng/chỉ số, bộ đếm/cờ tổng, giá và lời gọi.
+  Rà độc lập đã xác nhận hai thiếu kiểm trước được xử lý.
+- Hàm kiểm đóng vẫn bị chặn tại ranh giới; chưa phải toàn quản lý/EA.
+  Xem ../PHAN-TICH-KET-THUC-AO-BOT-1-3.md và expanded-verification.json
+  trong phan-tich/dong-vi-the/management-virtual-finish-20261025-r1/.
+
 Chỉ ghi bot 1; không Git, không sửa bằng chứng cũ hoặc công cụ chung.
 Đã đọc AGENTS.md, QUY-TRINH.md và PHAN-CONG-HAI-LUONG-20261025.md.
 EX5 gốc được đọc lại và băm đúng `a3b0de423a06e10ebedc279307b93d7cb9188ba2bb5de77131a913c865b0e922`.

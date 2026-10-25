@@ -1,0 +1,30 @@
+{
+  "cases": 1304,
+  "matched": 1304,
+  "failed": 0,
+  "groups": {
+    "0": {
+      "cases": 524,
+      "matched": 524
+    },
+    "1": {
+      "cases": 780,
+      "matched": 780
+    }
+  },
+  "first_failures": [],
+  "result_sha256": {
+    "original": "ff2aebe8dbf8ac4490f2748d07c59c5cfaab3a9170b58527aa3e5c59ada55d27",
+    "mql5": "ff2aebe8dbf8ac4490f2748d07c59c5cfaab3a9170b58527aa3e5c59ada55d27"
+  },
+  "slice_only": true,
+  "whole_manager_complete": false,
+  "whole_bot_complete": false,
+  "original_bytes_changed": false,
+  "limits": [
+    "Two final virtual calculation blocks only. Persistence is compared separately; no full manager, EA or paired terminal run.",
+    "Symbol point replies and external API-time changes are supplied. Valid 0..8 indices are a precondition.",
+    "A close boundary after the counter is recorded, not executed. No actual order or full close-helper composition.",
+    "Two-NaN scalar arithmetic uses measured CPU fixtures only when both operands are NaN; remaining original instructions execute in Unicorn."
+  ]
+}

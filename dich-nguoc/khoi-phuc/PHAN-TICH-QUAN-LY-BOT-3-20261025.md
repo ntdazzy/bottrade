@@ -1,5 +1,29 @@
 # Quản lý bot 3 — kết quả kiểm từng phần 25/10/2026
 
+Đã bổ sung phần cuối nhánh ảo: **1.304/1.304 ca** cao/thấp và khóa/bộ đếm,
+**296/296 ca** lưu cả hai bảng trên cùng bản nguồn đã ghép; biên dịch sạch.
+[Bằng chứng và giới hạn](PHAN-TICH-KET-THUC-AO-BOT-1-3.md).
+
+Nguồn mới Bot3ManagementRealTimed.mqh do hai Claude viết từ đặc tả:
+**492/492 ca** phần tính dời dừng thật theo thời gian khớp, mua/bán có
+thứ tự đọc/làm tròn khác nhau. Lượt real-timed-20261025-r1, bản dựng
+b3-management-real-timed-01, hai kết quả cùng mã
+8526b7e7e25f738d2003215e7d3e3e5a2fb967acfcd8eebbbaa0e1cec4aade8b.
+Hàm sửa được cấp trả lời và khối báo lỗi gốc được chặn để ghi nhận;
+chưa kiểm thực thi phần ghép/in chuỗi lỗi trong lượt này.
+
+Bot3ManagementMessages.mqh, Bot3ManagementVirtualFinishFlow.mqh và
+Bot3ManagementRealDistance.mqh đã có nguồn Claude, Codex đọc lại rồi ghép;
+b3-management-real-api-02 biên dịch cả nhóm với API thật: **0 lỗi, 0 cảnh báo**.
+Bản này chỉ biên dịch, không chạy. Nhóm khoảng giá/hàm bao/thân báo lỗi
+chưa có bằng chứng chạy chung; không dùng biên dịch thay phép so.
+
+Cách giao mới chỉ đưa Claude mô tả chức năng đã chốt để viết mã:
+tám phiên, bảy giao mã, một từ chối tạo dữ liệu kiểm. Codex trực tiếp
+làm phần từ chối. Nhật ký xác nhận Opus 5.5 max; Ultracode mới được yêu cầu,
+chưa xác nhận thực tế. Trạng thái cuối toàn đợt 17 phiên/301 yêu cầu ở
+danh-gia-claude/management-parallel-20261025-r7/dispatch.json.
+
 Đã ghép mã Claude vào hai tệp nguồn:
 Bot3ManagementPrelude.mqh và Bot3ManagementVirtual.mqh.
 Nguồn này chưa phải hai hàm quản lý đầy đủ hoặc EA.
@@ -79,9 +103,9 @@ các phép so trên. Rà độc lập không thấy lỗi chức năng có cơ s
 
 ## Còn thiếu
 
-- Các nhánh dừng thật, mức cao/thấp, khóa lời, bộ đếm và ghi bảng.
-  Ba phần cuối nhánh ảo đã có mô tả native, đang giao Claude viết song song;
-  chưa xem đề xuất hoặc phản hồi chờ là nguồn đã đạt.
+- Các nhánh thật còn lại; nhóm thời gian mới kiểm phần tính và gọi sửa,
+  nhóm khoảng giá mới biên dịch. Cao/thấp, khóa/bộ đếm, lưu bảng ảo
+  đã có bằng chứng từng phần nêu đầu báo cáo; còn ghép toàn chuỗi.
 - Vòng ngoài, thời điểm/nơi gọi, nhiều vị thế, các đường lỗi cấp bộ nhớ.
 - Ghép hàm con thật: các bộ kiểm trên chặn hàm sửa và kiểm đóng ở ranh giới.
 - Cài đặt, bảng hiển thị, lưu trạng thái, khởi động lại và EA chính.

@@ -1,0 +1,22 @@
+{
+  "cases": 492,
+  "matched": 492,
+  "failed": 0,
+  "first_failures": [],
+  "result_sha256": {
+    "original": "8526b7e7e25f738d2003215e7d3e3e5a2fb967acfcd8eebbbaa0e1cec4aade8b",
+    "mql5": "8526b7e7e25f738d2003215e7d3e3e5a2fb967acfcd8eebbbaa0e1cec4aade8b"
+  },
+  "calculation_slice_only": true,
+  "whole_manager_complete": false,
+  "whole_bot_complete": false,
+  "original_bytes_changed": false,
+  "modify_child_intercepted": true,
+  "error_reporting_block_intercepted": true,
+  "limits": [
+    "Only the timed real-stop calculation/modify-call slice. This is not the full manager, EA or a paired original/restored terminal run.",
+    "Modify 0x32a90 receives supplied replies. The post-failure reporting block at 0x34046/0x38685 is intercepted as a report callback; original string-building/printing/error-helper code does not execute in this comparison.",
+    "The report callback counter and suffix are supplied at that boundary and recorded by the MQL5 checker too. The actual Bot3ManagementMessages body has compile-only evidence here.",
+    "Other API replies/time mutations are supplied; two-NaN scalar arithmetic, if reached, uses measured Windows SSE2 fixtures; other instructions run in Unicorn."
+  ]
+}

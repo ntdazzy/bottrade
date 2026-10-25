@@ -1,0 +1,13 @@
+{
+  "pid": 26148,
+  "started": "2026-10-25T11:57:40.1091653Z",
+  "model": "claude-opus-5-5",
+  "effort": "max",
+  "ultracode_requested": true,
+  "scope": "Write proposed analysis/code only within an explicitly assigned deliverable directory",
+  "output_directory": "dich-nguoc/khoi-phuc/claude-thuc-hien/bot3-finish-high-low-20261025-r1",
+  "edit_rule": "Edit(./dich-nguoc/khoi-phuc/claude-thuc-hien/bot3-finish-high-low-20261025-r1/**)",
+  "permission_mode": "dontAsk",
+  "prompt_sha256": "8d29c846ccc96a74ff6f44ceb579eda297a38beadac3956f33a7d4aa15610738",
+  "resume": ""
+}

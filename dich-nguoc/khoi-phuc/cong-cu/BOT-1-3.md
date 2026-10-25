@@ -714,3 +714,18 @@ rồi compare. Tên lượt mới bắt buộc, không ghi đè; nguồn/EX5 ph�
 biên nhận. Hàm sửa/kiểm đóng được cấp kết quả tại ranh giới gọi.
 Đầu ra trong bang-chung/kiem-quan-ly-vi-the/ của bot. Bộ kiểm bot 3
 không gửi lệnh; các phép so không thay cho chạy cặp EA đầy đủ.
+
+- Bot 1: check-management-virtual-finish.py, Script Bot1ManagementVirtualFinishCheck,
+  lượt finish-root-20261025-r4/build b1-virtual-finish-root-02: 1.260/1.260, gồm
+  cờ true có sẵn, đủ 1.500 ô và sáu mẫu vé/hàng. Giữ các lượt lỗi cũ.
+- Bot 3: check-management-virtual-finish-complete.py và Script
+  Bot3ManagementVirtualFinishCheck: finish-root-20261025-r1 đạt 1.304/1.304.
+- Bot 3: check-management-virtual-store.py và Script
+  Bot3ManagementVirtualStoreCheck: store-20261025-r2 đạt 296/296, so 2.500 ô.
+- Bot 3: check-management-real-timed.py và Script Bot3ManagementRealTimedCheck:
+  real-timed-20261025-r1 đạt 492/492; bộ tạo đầu vào real_timed_cases.py.
+  Hàm sửa và khối báo lỗi được chặn; chưa kiểm toàn thân báo lỗi.
+
+Cả bốn công cụ theo thứ tự prepare → biên dịch → original/mql5 → compare,
+mode như các bộ quản lý trên, tên lượt mới bắt buộc. Bản dựng thật b3-management-real-api-02
+chỉ biên dịch Bot3ManagementRealApiCompile.mq5, không chạy script này.

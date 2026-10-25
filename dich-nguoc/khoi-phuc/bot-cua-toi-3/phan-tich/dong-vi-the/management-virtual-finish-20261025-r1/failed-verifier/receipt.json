@@ -1,0 +1,17 @@
+{
+  "status": "superseded-incomplete-verifier",
+  "reason": "Incorrect initial register/API context; no completed native/MQL5 comparison. Replaced by check-management-virtual-finish-complete.py and Bot3ManagementVirtualFinishCheck.mq5.",
+  "files": [
+    {
+      "original_path": "dich-nguoc/khoi-phuc/bot-cua-toi-3/tests/check-management-virtual-finish-branches.py",
+      "archive_path": "dich-nguoc/khoi-phuc/bot-cua-toi-3/phan-tich/dong-vi-the/management-virtual-finish-20261025-r1/failed-verifier/check-management-virtual-finish-branches.py",
+      "sha256": "0d37a23a8d2b87dc91f65e339ecd280d4c175a4a939aa33a5de44cc49f3b9d7a"
+    },
+    {
+      "original_path": "dich-nguoc/khoi-phuc/bot-cua-toi-3/source/MQL5/Scripts/bot-cua-toi-3/Bot3ManagementVirtualFinishBranchesCheck.mq5",
+      "archive_path": "dich-nguoc/khoi-phuc/bot-cua-toi-3/phan-tich/dong-vi-the/management-virtual-finish-20261025-r1/failed-verifier/Bot3ManagementVirtualFinishBranchesCheck.mq5",
+      "sha256": "b7c735175fdcd04940014606f00ed990778783f9b04a413e22a9e68058f0be6f"
+    }
+  ],
+  "whole_bot_complete": false
+}

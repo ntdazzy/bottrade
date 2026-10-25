@@ -1,0 +1,23 @@
+{
+  "cases": 652,
+  "matched": 652,
+  "run": "finish-root-20261025-r3",
+  "build": "b1-virtual-finish-root-02",
+  "build_receipt_sha256": "06563d536e1a4c8f06f3b6223942b97164d39d69680c457cbbfd86575ffbd8ff",
+  "source_hashes": {
+    "Include/bot-cua-toi-1/Bot1ManagementPrelude.mqh": "2df9994dae1ba586adb7135e660a316e45a8766842eb94a9d93943ffdb52ab29",
+    "Include/bot-cua-toi-1/Bot1ManagementVirtualFinish.mqh": "9293f29cec6950150712b394d64993445ac3c07ad70f42d43cd9a4d51d73155f",
+    "Include/bot-cua-toi-1/Bot1PriceLevels.mqh": "601bdd551e24e3ac9a7742cc00e057d881b069ab672843bec31b3f32a43316b1",
+    "Include/bot-cua-toi-1/Bot1PositionModify.mqh": "0bf230d471ffd384f32df9a57794d65ef1cd9ab91b3ccebe41c52d6d12be5472",
+    "Include/bot-cua-toi-1/Bot1PositionClose.mqh": "03c79f46a202b8a06ddab6fdae88291d4dbf30a0c2d6f99c0ff30fe24ffc21d5",
+    "Include/bot-cua-toi-1/Bot1VirtualStops.mqh": "da7aa4f6ff38c97aa4e9288620f7e975d7255c598468948a515f8de2f2b7f400",
+    "Scripts/bot-cua-toi-1/Bot1ManagementVirtualFinishCheck.mq5": "25e7c4879e81d40da224eb67c34b3b48f4184a7e5a8ba12114dafb0aad230669"
+  },
+  "tool_sha256": "0b1649e5801eac25b032773fb73ada3232afe615bd076d4fd23f9ebbdad90030",
+  "result_sha256": "0699cbeee4f37697652534448a0c1afc0f9dc12b60dcac744bff6f0a1147495f",
+  "comparison_sha256": "47a81a4b7b67fb519c3e189d6f7463f7e503c444f491d4a32c0470234824e0be",
+  "independent_review": "review_finish_proofs: no remaining supported issue in these stated scopes; B1 prior-flag and table-pattern gaps were corrected and reviewed again",
+  "whole_manager_complete": false,
+  "whole_bot_complete": false,
+  "close_helper_intercepted": true
+}

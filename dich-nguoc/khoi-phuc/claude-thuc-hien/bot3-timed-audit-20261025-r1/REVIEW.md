@@ -38,7 +38,7 @@ phạm vi này. Không động tới bản quyền/kích hoạt; chỉ đọc b�
 
 | Bước | Nguồn | Mua | Bán | Ý nghĩa |
 |---|---|---|---|---|
-| Cổng activation | :13 | 0x35f8f nạp `[0x6d5e8]`; 0x35f9d `66410f2ec3` ucomisd xmm0,xmm11; 0x35fa2 `762f` jbe 0x35fd3 | 0x3a228 `66410f2ec3`; 0x3a22d `0f86c4000000` jbe 0x3a2f7 | xmm11=0.0 (`xorpd` 0x33086/0x376b0; không lệnh nào khác ghi xmm11 trong thân hàm). Đi tiếp chỉ khi `activation>0` và có thứ tự |
+| Cổng activation | :13 | 0x35f8f nạp `[0x6d5e8]`; 0x35f9d `66410f2ec3` ucomisd xmm0,xmm11; 0x35fa2 `762f` jbe 0x35fd3 | 0x3a228 `66410f2ec3`; 0x3a22d `0f86c4000000` jbe 0x3a2f7 | xmm11=0.0 (`xorpd` 0x33086/0x376b0; ngoài lệnh khôi phục ở phần kết hàm, không lệnh nào khác ghi xmm11). Đi tiếp chỉ khi `activation>0` và có thứ tự |
 | TimeCurrent | :14 | 0x35fa4–0x35fb3: rcx=rsi, edx=0, gọi 0x7ff6846f1c40 | 0x3a233–0x3a242 | = eb+0x7d1c40 = `TimeCurrent` (`virtual-stops-20261025-r1/api-contract.json:236`), dạng không MqlDateTime. Gọi một lần, sau cổng 1 |
 | So thời gian | :15 | 0x35fbf `mov rdx,[rsp+0x60]`; 0x35fc4 `486309` movsxd; 0x35fc7 `4801ca` add rdx,rcx; 0x35fca `4839d0` cmp rax,rdx; 0x35fcd `0f8dac060000` jge 0x3667f | `[rsp+0x70]`; 0x3a253/56/59 cùng byte; 0x3a25c `0f8c95000000` jl 0x3a2f7 | int32 mở rộng có dấu, cộng 64-bit tràn vòng, so có dấu; không trừ, không đổi sang số thực. delay/opened đọc sau lời gọi |
 | Chụp P, quote | :16–17 | 0x3669f `[0x6d670]`→xmm14; 0x366a4 `[0x74798]`→xmm8; trước call 0x366b3 | 0x3a282 `[0x6d670]`; 0x3a287 `[0x747a0]`; trước 0x3a296 | Chụp sau TimeCurrent, trước POINT |
@@ -51,8 +51,8 @@ phạm vi này. Không động tới bản quyền/kích hoạt; chỉ đọc b�
 
 Nguồn lệnh: `ng:2342-2359, 2667-2695, 2728-2733` (mua), `ng:5521-5565` (bán).
 Byte: `aj:14077-14146, 16075-16180, 33161-33230, 33293-33392`. Hai đoạn chỉ có
-một lối vào (0x35f8f/0x3a21a); không lệnh nhảy nào vào giữa đoạn (đã tìm mọi
-đích nhảy trong khoảng; chỉ có 0x36580→0x3672c, nằm sau đoạn). Bản chạy gốc
+một lối vào (0x35f8f/0x3a21a); không lệnh nhảy trực tiếp nào vào giữa đoạn
+(đã tìm mọi đích nhảy trong khoảng; chỉ có 0x36580→0x3672c, nằm sau đoạn). Bản chạy gốc
 đã đi qua mọi lệnh của hai đoạn (`original-run.json:29-48, 190-222, 227-268`).
 
 ## 3. Các điểm TASK yêu cầu
@@ -68,8 +68,8 @@ một lối vào (0x35f8f/0x3a21a); không lệnh nhảy nào vào giữa đoạ
 - **int64.** Dùng `long` có dấu và ép `(long)` cho cả `TimeCurrent()` lẫn
   `delay_seconds`; khớp `movsxd`+`add`+`jge/jl`. Không có phép trừ thời gian
   hay đổi sang double. Khi ghép nên giữ ép `(long)`.
-- **So có thứ tự.** Năm phép số thực đều `ucomisd`+`jbe` (thoát khi ≤ hoặc
-  không thứ tự); nguồn viết `!(a<b)` nên NaN thoát ở cả hai. Ca NaN đã có cho
+- **So có thứ tự.** Năm phép so số thực (activation và bốn phép so giá) đều
+  `ucomisd`+`jbe` (thoát khi ≤ hoặc không thứ tự); nguồn viết `!(a<b)` nên NaN thoát ở cả hai. Ca NaN đã có cho
   activation, P, point, distance, unit, freeze, tp và đều khớp.
   Khi bid/ask không đổi giữa các lần đọc (đúng trong MT5), qua được cả hai
   phép so thì bid/ask hữu hạn, offset hữu hạn hoặc −∞, nên giá trị ghi không
@@ -107,9 +107,9 @@ changed=0; mọi số là nhị phân đúng.
 | E2 | mua | P=95, T=120, freeze=20 | so 1 qua; 100<100 sai → thoát | `<=` ở so 2 mua |
 | E3 | bán | P=100.5, T=80, freeze=0.1 | 100<100.0 sai → thoát | `<=` ở so 1 bán |
 | E4 | bán | P=105, T=80, freeze=20 | so 1 qua; 100<100 sai → thoát | `<=` ở so 2 bán |
-| T1 | cả hai | now=−1 | −1<1020 có dấu → thoát sau TimeCurrent, 1 sự kiện | so không dấu |
-| T2 | cả hai | opened=2^63−2, now=1021 | tổng tràn −2^63+18; đi tiếp, ghi P | so không dấu, dạng trừ |
-| T3 | cả hai | opened=2^63−2, now=2^63−1 | đi tiếp, ghi P | dạng `now-opened<delay` |
+| T1 | cả hai | P/T/freeze như nền; now=−1 | −1<1020 có dấu → thoát sau TimeCurrent, 1 sự kiện | so không dấu |
+| T2 | cả hai | như T1; opened=2^63−2, now=1021 | tổng tràn −2^63+18; đi tiếp, ghi P=99.75 (mua)/100.25 (bán) | so không dấu, dạng trừ |
+| T3 | cả hai | như T1; opened=2^63−2, now=2^63−1 | đi tiếp, ghi P như T2 | dạng `now-opened<delay` |
 | C1 | mua | kịch bản 2, P=98.5, bid=ask=99.5, T=120, freeze=0.1 | 99.0<99.5 qua → P=99.25, changed=1 | đọc P sau POINT (sẽ thoát, P=99.75) |
 | C1' | bán | kịch bản 2, P=100.5, T=80, freeze=0.1 | 100<100.0 sai → thoát, P=101.75 | đọc P sau POINT (sẽ ghi P=100.25) |
 | C2 | mua | kịch bản 5, P=99.5, T=120, freeze=0.1 | thoát; P=100.75, bid=ask=101.25 | đọc quote sau POINT (sẽ ghi P=101.0) |
@@ -135,7 +135,8 @@ changed=0; mọi số là nhị phân đúng.
 - **L3 — Lối vào.** 0x35f8f có ba đường tới: `je` 0x35e0c, `jbe` 0x35ecf, và
   rơi xuống sau Modify 0x35f7e + gọi 0x48560 tại 0x35f8d; bán: 0x3a098,
   0x3a15a, 0x3a218 (`ng:2265, 2303, 2334-2341, 5444, 5482`). Hàm không dùng giá
-  trị trả về của các lời gọi đó (rax/xmm0 bị ghi đè ở 0x35f8f/0x35f99). Người
+  trị trả về của các lời gọi đó (rax/xmm0 bị ghi đè ở 0x35f8f/0x35f99, bán
+  0x3a21a/0x3a224). Người
   gọi phải gọi hàm ở cả ba đường.
 - **L4 — Phạm vi bản dịch.** Bằng chứng chỉ cho bản dịch `cpu='X64 Regular'`
   (`bien-dich/b3-management-virtual-01/metaeditor.log:48`), với

@@ -1,0 +1,42 @@
+{
+  "run": "bot3-finish-store-20261025-r1",
+  "session_id": "e4f1be89-314d-4e20-84e8-d51a0794800e",
+  "started": "2026-10-25T11:57:42.8497618Z",
+  "snapshot_utc": "2026-10-25T13:09:32.351974+00:00",
+  "status": "textual-refusal",
+  "response_is_error": false,
+  "terminal_reason": "completed",
+  "job_sha256": "1eedeefc1d446e482d45f8cf6a73103f1c71e5783e8d6791594ca77d6182bf35",
+  "prompt_sha256": "2269d93e67a8c2a1e95c08eac087a3ab7ef698c1f2c96d32ce5f9522289f6355",
+  "response_sha256": "437236f0e0ec357ca143c570385cc9d86574892c58f4852b0bde8a1ed3a0f9bf",
+  "actual_requests": 4,
+  "requests": [
+    {
+      "timestamp": "2026-10-25T11:57:46.092Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T11:58:15.746Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T11:58:43.250Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T11:58:54.280Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    }
+  ],
+  "ultracode_requested": true,
+  "ultracode_runtime_confirmed": null,
+  "journal_prefix_bytes": 786017,
+  "journal_prefix_sha256": "1441878c3bcd370413958963b2a30eccffa1fd99e0fc74691fac319aa948a158",
+  "files_sha256": {},
+  "source_validated": false,
+  "whole_bot_complete": false
+}

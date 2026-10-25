@@ -1,0 +1,19 @@
+{
+  "cases": 296,
+  "matched": 296,
+  "failed": 0,
+  "first_failures": [],
+  "result_sha256": {
+    "original": "5c142a513956f9839d43665f5e9c8f04767e1a71d15ca6624940caac46610583",
+    "mql5": "5c142a513956f9839d43665f5e9c8f04767e1a71d15ca6624940caac46610583"
+  },
+  "persistence_only": true,
+  "whole_manager_complete": false,
+  "whole_bot_complete": false,
+  "original_bytes_changed": false,
+  "limits": [
+    "Only the final two-table persistence block; no price-level calculation, close check, full manager or EA.",
+    "All 2500 double fields are compared by an ordered 64-bit hash, together with guard/shared levels/call count and ordered API hash.",
+    "Digit replies and API-time mutations are supplied. Original scalar two-NaN arithmetic, if reached, uses measured CPU fixtures; no full physical original run."
+  ]
+}

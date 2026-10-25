@@ -1,0 +1,12 @@
+{
+  "archive_complete": true,
+  "canonical_files_removed": false,
+  "automatic_review_blocked_deletion": true,
+  "first_reason": "Dynamic or unresolved delete path rejected by PreToolUse hook.",
+  "literal_path_attempt": "Rejected: blocked by policy.",
+  "files_retained": [
+    "dich-nguoc/khoi-phuc/bot-cua-toi-3/tests/check-management-virtual-finish-branches.py",
+    "dich-nguoc/khoi-phuc/bot-cua-toi-3/source/MQL5/Scripts/bot-cua-toi-3/Bot3ManagementVirtualFinishBranchesCheck.mq5"
+  ],
+  "retry_using_alternate_delete_method": false
+}

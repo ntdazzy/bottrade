@@ -226,6 +226,14 @@
 /bot-cua-toi-3/bang-chung/bien-dich/b3-virtual-*/** -text
 /cong-cu/doi-chieu-nan-quan-ly.py -text
 /cong-cu/thu-ket-qua-claude.py -text
+/bot-cua-toi-3/source/MQL5/Include/bot-cua-toi-3/Bot3ManagementReal*.mqh -text
+/bot-cua-toi-3/source/MQL5/Include/bot-cua-toi-3/Bot3ManagementMessages.mqh -text
+/bot-cua-toi-3/tests/real_timed_cases.py -text
+/bot-cua-toi-3/phan-tich/dong-vi-the/management-real-*-20261025-r1/** -text
+/bot-cua-toi-1/bang-chung/bien-dich/b1-virtual-finish-*/** -text
+/bot-cua-toi-1/phan-tich/dong-vi-the/management-virtual-finish-20261025-r1/** -text
+/claude-thuc-hien/bot3-real-*/** -text
+/claude-thuc-hien/bot3-virtual-finish-*/** -text
 /claude-thuc-hien/bot3-*-audit-*/** -text
 /claude-thuc-hien/bot3-finish-*/** -text
 /danh-gia-claude/management-parallel-*/** -text

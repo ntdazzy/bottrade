@@ -1,0 +1,23 @@
+{
+  "original_ex5_sha256": "a3b0de423a06e10ebedc279307b93d7cb9188ba2bb5de77131a913c865b0e922",
+  "tool_sha256": "e16540c8989d23585c7bf895a447ddd7037226e8e21140e3d3c6dab278779225",
+  "sources_sha256": {
+    "Include/bot-cua-toi-1/Bot1ManagementPrelude.mqh": "2df9994dae1ba586adb7135e660a316e45a8766842eb94a9d93943ffdb52ab29",
+    "Include/bot-cua-toi-1/Bot1ManagementVirtualFinish.mqh": "9293f29cec6950150712b394d64993445ac3c07ad70f42d43cd9a4d51d73155f",
+    "Include/bot-cua-toi-1/Bot1PriceLevels.mqh": "601bdd551e24e3ac9a7742cc00e057d881b069ab672843bec31b3f32a43316b1",
+    "Include/bot-cua-toi-1/Bot1PositionModify.mqh": "0bf230d471ffd384f32df9a57794d65ef1cd9ab91b3ccebe41c52d6d12be5472",
+    "Include/bot-cua-toi-1/Bot1PositionClose.mqh": "03c79f46a202b8a06ddab6fdae88291d4dbf30a0c2d6f99c0ff30fe24ffc21d5",
+    "Include/bot-cua-toi-1/Bot1VirtualStops.mqh": "da7aa4f6ff38c97aa4e9288620f7e975d7255c598468948a515f8de2f2b7f400",
+    "Scripts/bot-cua-toi-1/Bot1ManagementVirtualFinishCheck.mq5": "25e7c4879e81d40da224eb67c34b3b48f4184a7e5a8ba12114dafb0aad230669"
+  },
+  "analysis_sha256": "88ac3446d1c8a0b209c06a94f3a0f6f668850776df92b5b427c84577fa34a085",
+  "contract_sha256": "fd44277eca8119dabff06f6a12ca71507ddda5454a2afb1e63d264fe20a6fcf6",
+  "helpers_sha256": {
+    "check-management-prelude.py": "f5dbe950896e58a00331ef32473ccebdcbbf03a9627e8c12449c7f4087e6a49d",
+    "check-management-virtual-start.py": "f5555f42e1e7115f134fca29843e117754ee5375ed33218ad8e3e6a5d4ec44ad"
+  },
+  "cases": 1260,
+  "exit_code": 0,
+  "result_sha256": "6c3469fa28cf8a1e8345123535bbc2edb0720f9ed931ac6aab3ce29ce2798354",
+  "binary_sha256": "3afd4a7bfb0481c93cd4c45f676a1a93780bdd55690e32bfd137bd6c10554d65"
+}

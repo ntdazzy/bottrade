@@ -1,5 +1,10 @@
 # bot-cua-toi-1
 
+Mới thêm phần cuối quản lý mức ảo: **1.260/1.260 ca khớp**, gồm cờ có sẵn,
+bộ đếm và đủ 1.500 ô bảng với vé ở đầu/giữa/cuối, trùng hoặc không khớp.
+Biên dịch **0 lỗi, 0 cảnh báo**. Hàm đóng được chặn ở ranh giới;
+chưa phải toàn quản lý hoặc EA. [Phạm vi](../PHAN-TICH-KET-THUC-AO-BOT-1-3.md).
+
 Đã viết bốn hàm bảng dừng ảo: 220/220 ca khớp mã gốc/MQL5/máy đo
 quá khứ, thêm hai ca lỗi mảng chạy thật khớp trạng thái trước lỗi.
 Biên dịch 0 lỗi/cảnh báo, gồm bản dùng API MT5 thật chỉ biên dịch.

@@ -1,5 +1,20 @@
 # Tiến độ riêng bot 3 — 25/10/2026
 
+## Cập nhật: phần cuối ảo và nhánh thật
+
+- Kết thúc ảo: **1.304/1.304 ca** cao/thấp, khóa/bộ đếm và **296/296 ca**
+  lưu hai bảng khớp trên nguồn ghép hiện hành; cả hai bản dựng 0/0.
+- Dời dừng thật theo thời gian: **492/492 ca** phần tính/gọi sửa khớp;
+  hàm sửa/khối báo lỗi được cấp trả lời, chưa kiểm thân báo lỗi ở lượt này.
+- Claude viết thêm hai hàm khoảng giá, hàm bao kết thúc ảo và báo lỗi;
+  b3-management-real-api-02 biên dịch cả nhóm với API thật sạch, không chạy.
+- Theo cách giao mới, Codex tự phân tích/chốt mô tả, Claude chỉ viết mã.
+  7/8 phiên mới giao mã, 1 từ chối tạo ca; Codex trực tiếp làm phần đó.
+- Mọi phiên trong đợt đã kết thúc; biên nhận cuối ở
+  ../danh-gia-claude/management-parallel-20261025-r7/dispatch.json.
+- Còn ghép/chạy toàn chuỗi quản lý, các nhánh thật khác, EA, cài đặt/
+  hiển thị/lưu trạng thái và chạy cặp hai bot hoàn chỉnh.
+
 ## Cập nhật mới: mức dừng/chốt trong quản lý
 
 - Bot3ManagementVirtualStart.mqh và Bot3ManagementVirtualTake.mqh:

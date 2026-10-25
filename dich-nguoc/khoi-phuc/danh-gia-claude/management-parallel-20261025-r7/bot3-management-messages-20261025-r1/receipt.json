@@ -1,0 +1,80 @@
+{
+  "run": "bot3-management-messages-20261025-r1",
+  "session_id": "d1d3d63d-0113-4b1b-8cca-23fc91737ff7",
+  "started": "2026-10-25T12:22:44.7820517Z",
+  "snapshot_utc": "2026-10-25T13:09:32.351974+00:00",
+  "status": "delivered-unverified",
+  "response_is_error": false,
+  "terminal_reason": "completed",
+  "job_sha256": "0cbce7e3de73765bd514b08b85eca4095e92f9edb059671277571f294e1603dd",
+  "prompt_sha256": "2375892f4047ca3c8d11080dc0bc90d83cbe73a6003486176cd2c4a01a0e66ad",
+  "response_sha256": "c5358e6d4e61101d1d7ae23c7beb99c61f94489f92fb4ac6ff262b54368427e2",
+  "actual_requests": 11,
+  "requests": [
+    {
+      "timestamp": "2026-10-25T12:22:48.017Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T12:23:00.600Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T12:23:08.702Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T12:23:16.263Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T12:23:20.694Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T12:23:50.244Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T12:23:55.524Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T12:24:10.598Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T12:24:49.897Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T12:25:33.957Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T12:26:17.481Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    }
+  ],
+  "ultracode_requested": true,
+  "ultracode_runtime_confirmed": null,
+  "journal_prefix_bytes": 1003916,
+  "journal_prefix_sha256": "5448d48f2e284917daf65a8c7715eccfac7d226a0f9a7a4c840a51746823506f",
+  "files_sha256": {
+    "dich-nguoc/khoi-phuc/claude-thuc-hien/bot3-management-messages-20261025-r1/Bot3ManagementMessages.mqh": "877cf90d7cb69de1bd714d838d745eb3769d8fac74d0e64103765a52e7dbb3aa",
+    "dich-nguoc/khoi-phuc/claude-thuc-hien/bot3-management-messages-20261025-r1/SUMMARY.md": "92a4b5cd27a704af902b38354d2bb16407d73ed39e98f68848dcdad2b6cd41b2"
+  },
+  "source_validated": false,
+  "whole_bot_complete": false
+}

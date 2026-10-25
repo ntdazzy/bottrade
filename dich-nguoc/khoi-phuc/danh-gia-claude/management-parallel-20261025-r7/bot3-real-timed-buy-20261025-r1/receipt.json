@@ -1,0 +1,110 @@
+{
+  "run": "bot3-real-timed-buy-20261025-r1",
+  "session_id": "52c25c9e-7674-4246-849d-9af83391a84a",
+  "started": "2026-10-25T12:22:42.1920457Z",
+  "snapshot_utc": "2026-10-25T13:09:32.351974+00:00",
+  "status": "delivered-unverified",
+  "response_is_error": false,
+  "terminal_reason": "completed",
+  "job_sha256": "3db53929318866830fa4561e0d0a5009894be9f4759e97eef6b4d112a9a10d4e",
+  "prompt_sha256": "ade824bdfb9c553d2daee06becc9ba9864ab84f0e72cbd274251bd316914f435",
+  "response_sha256": "9817c287f4fe83c4d439f74ebfdb1ea5c7a2ffed8e06661a169f19998da1ddd1",
+  "actual_requests": 17,
+  "requests": [
+    {
+      "timestamp": "2026-10-25T12:22:43.442Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T12:22:52.538Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T12:22:57.632Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T12:23:02.257Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T12:23:06.813Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T12:23:12.463Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T12:23:19.866Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T12:23:24.323Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T12:23:28.647Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T12:23:30.823Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T12:23:51.123Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T12:25:11.174Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T12:26:11.125Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T12:26:14.698Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T12:26:23.086Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T12:28:12.378Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T12:28:18.399Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    }
+  ],
+  "ultracode_requested": true,
+  "ultracode_runtime_confirmed": null,
+  "journal_prefix_bytes": 1206874,
+  "journal_prefix_sha256": "c5285370a30dbb80d8c71265d5e75b9d8b91be78bea0601eba9350bcdf23a73c",
+  "files_sha256": {
+    "dich-nguoc/khoi-phuc/claude-thuc-hien/bot3-real-timed-buy-20261025-r1/Bot3TimedRealBuy.mqh": "31a323a76ac4ced143294679c4dbaaee9def6ebec4b67055270d96dd595ef350",
+    "dich-nguoc/khoi-phuc/claude-thuc-hien/bot3-real-timed-buy-20261025-r1/SUMMARY.md": "52e1f72bdbb2e1dec08e21b55084ac32143226d2a7cbec7aaf4b02a1812c8206"
+  },
+  "source_validated": false,
+  "whole_bot_complete": false
+}

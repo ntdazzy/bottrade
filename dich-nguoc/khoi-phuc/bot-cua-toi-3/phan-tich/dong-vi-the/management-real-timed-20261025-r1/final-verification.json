@@ -1,0 +1,34 @@
+{
+  "cases": 492,
+  "matched": 492,
+  "run": "real-timed-20261025-r1",
+  "build": "b3-management-real-timed-01",
+  "source_hashes": {
+    "Include/bot-cua-toi-3/Bot3ManagementPrelude.mqh": "e0db33b8346340eb81b7c55db6fd456f66124dd565a0e8b7a0e6d5b17bb363fe",
+    "Include/bot-cua-toi-3/Bot3PriceLevels.mqh": "1cfecf5f324056b64f72a8fb21f446b7ca35f377ae40d4ab0c6859bfe736c413",
+    "Include/bot-cua-toi-3/Bot3PositionModify.mqh": "66ef002ab0e4b3d4bf8a0070e3f6fddfbe3446f0ded59a723e033b972d52e0a5",
+    "Include/bot-cua-toi-3/Bot3PositionClose.mqh": "7233c829f4e625b8c9a3c3258d6677b78b1518af61cb4617123f5597ccdcd495",
+    "Include/bot-cua-toi-3/Bot3TradeSend.mqh": "6031d82d7db3cb5652b76c4583853e871ac1e7f1770834e8dcbd165fa3a60f1f",
+    "Include/bot-cua-toi-3/Bot3TradeMessages.mqh": "3bf211b2aa34980e0857f31e66a08e65136728fa7ef6e239d58cfc1c2bec5d16",
+    "Include/bot-cua-toi-3/Bot3PendingRequest.mqh": "54bc2c75ff9a2ee47f375f874908912da0cad56d2ecb586801d0274c2d025648",
+    "Include/bot-cua-toi-3/Bot3Filling.mqh": "c2806af2b1e00363652b7a09387065f1de289cf6e2bc644611f4d5f6d1c47599",
+    "Include/bot-cua-toi-3/Bot3VirtualStops.mqh": "f62cf679b7dd0607e0f079675572be7ecb4d46bed9dd8a3ff04b9374d694a500",
+    "Include/bot-cua-toi-3/Bot3ManagementRealTimed.mqh": "0d3ed0aa7a8d3c0fc37cf8fe116eaacca3342d990bd750e8e3b01e8391a9755b",
+    "Include/bot-cua-toi-3/Bot3ManagementMessages.mqh": "877cf90d7cb69de1bd714d838d745eb3769d8fac74d0e64103765a52e7dbb3aa",
+    "Include/bot-cua-toi-3/Bot3TradeErrors.mqh": "3fb7fe70d418da44d1a77f8e65e9cf71fae00c1d4b5fe3b941ff5ae7e7982a8e",
+    "Scripts/bot-cua-toi-3/Bot3ManagementRealTimedCheck.mq5": "b55cac0a9370dac91f134f5b31701730692f37cfd4ad8ddd33f3bec5c409ee41"
+  },
+  "result_sha256": "8526b7e7e25f738d2003215e7d3e3e5a2fb967acfcd8eebbbaa0e1cec4aade8b",
+  "comparison_sha256": "1c7f7193c176623c5f06d52ad505cf711accb2dc9e1e0c801610cdecc5cb7f33",
+  "modify_intercepted": true,
+  "error_reporting_block_intercepted": true,
+  "message_body_runtime_verified": false,
+  "independent_review": "review_finish_proofs: no supported issue in the stated calculation slice and bounds",
+  "limits": [
+    "Only the timed real-stop calculation/modify-call slice. This is not the full manager, EA or a paired original/restored terminal run.",
+    "Modify 0x32a90 receives supplied replies. The post-failure reporting block at 0x34046/0x38685 is intercepted as a report callback; original string-building/printing/error-helper code does not execute in this comparison.",
+    "The report callback counter and suffix are supplied at that boundary and recorded by the MQL5 checker too. The actual Bot3ManagementMessages body has compile-only evidence here.",
+    "Other API replies/time mutations are supplied; two-NaN scalar arithmetic, if reached, uses measured Windows SSE2 fixtures; other instructions run in Unicorn."
+  ],
+  "whole_bot_complete": false
+}
