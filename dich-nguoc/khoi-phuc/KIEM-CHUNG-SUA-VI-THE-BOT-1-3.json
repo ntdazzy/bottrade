@@ -1,0 +1,578 @@
+{
+  "status": "position-modify-helper-verified-with-stated-limits",
+  "checks": [
+    {
+      "bot": 1,
+      "cases": 1596,
+      "paths": {
+        "stopped": 83,
+        "select_failed": 33,
+        "sent": 1480
+      },
+      "coverage": {
+        "instructions": 196,
+        "executed": 196
+      },
+      "replayed_original_case_ids": [
+        0,
+        50,
+        246,
+        271,
+        279,
+        299,
+        309,
+        421,
+        556,
+        808,
+        830,
+        870,
+        918,
+        982,
+        1006,
+        1510,
+        1511,
+        1512,
+        1513,
+        1514,
+        1515,
+        1516,
+        1517,
+        1518,
+        1519,
+        1520,
+        1521,
+        1522,
+        1523,
+        1524,
+        1525,
+        1526,
+        1527,
+        1528,
+        1529,
+        1530,
+        1531,
+        1532,
+        1533,
+        1534,
+        1535,
+        1536,
+        1537,
+        1538,
+        1554
+      ],
+      "rejected_corrupt_input_types": [
+        "cast-retcode",
+        "cast-sltp-constant",
+        "duplicate-select",
+        "duplicate-send",
+        "duplicate-symbol",
+        "format-before-send",
+        "format-property",
+        "format-status",
+        "format-value",
+        "missing-cast-record",
+        "select-index",
+        "select-reply",
+        "select-ticket",
+        "send-mode",
+        "send-reply",
+        "send-result",
+        "symbol-before-select",
+        "symbol-index",
+        "symbol-null",
+        "symbol-property",
+        "symbol-text",
+        "unexpected-record"
+      ],
+      "rejected_corrupt_files": [
+        "case-scenario-range",
+        "case-select-reply-range",
+        "case-null-symbol-with-text",
+        "case-null-flag-range",
+        "case-id-order",
+        "case-async-byte-range",
+        "case-header-magic",
+        "fixture-header-count",
+        "fixture-unknown-api",
+        "fixture-case-id",
+        "result-header-count",
+        "result-case-id"
+      ],
+      "length_checks": [
+        {
+          "file": "bot-cua-toi-1/bang-chung/kiem-sua-vi-the/position-modify-20261025-r1/cases.bin",
+          "removed_tail_bytes": 1,
+          "rejected": true
+        },
+        {
+          "file": "bot-cua-toi-1/bang-chung/kiem-sua-vi-the/position-modify-20261025-r1/cases.bin",
+          "removed_tail_bytes": 2,
+          "rejected": true
+        },
+        {
+          "file": "bot-cua-toi-1/bang-chung/kiem-sua-vi-the/position-modify-20261025-r1/cases.bin",
+          "removed_tail_bytes": 4,
+          "rejected": true
+        },
+        {
+          "file": "bot-cua-toi-1/bang-chung/kiem-sua-vi-the/position-modify-20261025-r1/api-fixtures.bin",
+          "removed_tail_bytes": 1,
+          "rejected": true
+        },
+        {
+          "file": "bot-cua-toi-1/bang-chung/kiem-sua-vi-the/position-modify-20261025-r1/api-fixtures.bin",
+          "removed_tail_bytes": 2,
+          "rejected": true
+        },
+        {
+          "file": "bot-cua-toi-1/bang-chung/kiem-sua-vi-the/position-modify-20261025-r1/api-fixtures.bin",
+          "removed_tail_bytes": 4,
+          "rejected": true
+        },
+        {
+          "file": "bot-cua-toi-1/bang-chung/kiem-sua-vi-the/position-modify-20261025-r1/original-results.bin",
+          "removed_tail_bytes": 1,
+          "rejected": true
+        },
+        {
+          "file": "bot-cua-toi-1/bang-chung/kiem-sua-vi-the/position-modify-20261025-r1/original-results.bin",
+          "removed_tail_bytes": 2,
+          "rejected": true
+        },
+        {
+          "file": "bot-cua-toi-1/bang-chung/kiem-sua-vi-the/position-modify-20261025-r1/original-results.bin",
+          "removed_tail_bytes": 4,
+          "rejected": true
+        },
+        {
+          "file": "bot-cua-toi-1/bang-chung/kiem-sua-vi-the/position-modify-20261025-r1/mql5-results.bin",
+          "removed_tail_bytes": 1,
+          "rejected": true
+        },
+        {
+          "file": "bot-cua-toi-1/bang-chung/kiem-sua-vi-the/position-modify-20261025-r1/mql5-results.bin",
+          "removed_tail_bytes": 2,
+          "rejected": true
+        },
+        {
+          "file": "bot-cua-toi-1/bang-chung/kiem-sua-vi-the/position-modify-20261025-r1/mql5-results.bin",
+          "removed_tail_bytes": 4,
+          "rejected": true
+        },
+        {
+          "file": "doi-chung-mt5/sua-vi-the-20261025/engine-modify-b1-r1/api-fixtures.bin",
+          "removed_tail_bytes": 1,
+          "rejected": true
+        },
+        {
+          "file": "doi-chung-mt5/sua-vi-the-20261025/engine-modify-b1-r1/api-fixtures.bin",
+          "removed_tail_bytes": 2,
+          "rejected": true
+        },
+        {
+          "file": "doi-chung-mt5/sua-vi-the-20261025/engine-modify-b1-r1/api-fixtures.bin",
+          "removed_tail_bytes": 4,
+          "rejected": true
+        },
+        {
+          "file": "doi-chung-mt5/sua-vi-the-20261025/engine-modify-b1-r1/mql5-results.bin",
+          "removed_tail_bytes": 1,
+          "rejected": true
+        },
+        {
+          "file": "doi-chung-mt5/sua-vi-the-20261025/engine-modify-b1-r1/mql5-results.bin",
+          "removed_tail_bytes": 2,
+          "rejected": true
+        },
+        {
+          "file": "doi-chung-mt5/sua-vi-the-20261025/engine-modify-b1-r1/mql5-results.bin",
+          "removed_tail_bytes": 4,
+          "rejected": true
+        }
+      ],
+      "sources_sha256": {
+        "Scripts/bot-cua-toi-1/Bot1PositionModifyCheck.mq5": "e9e85bd3381749944623e13e1d6eee2674227ffb77b977c048467196b068b426",
+        "Scripts/bot-cua-toi-1/Bot1PipelineApi.mqh": "cc7c0e9d1199205e1f2b6ab178a55cb6e9fc838e991d3b40a176f90f4d110cee",
+        "Include/bot-cua-toi-1/Bot1PositionModify.mqh": "0bf230d471ffd384f32df9a57794d65ef1cd9ab91b3ccebe41c52d6d12be5472",
+        "Include/bot-cua-toi-1/Bot1TradeSend.mqh": "dddd20fb58daa7cd60ce87f08c89be3a204ce170e89418c801b24175d4d12e8c",
+        "Include/bot-cua-toi-1/Bot1TradeMessages.mqh": "af36245e2dd03ec12d5808457530c4937bc354a9a68b5a1f70f8bc394f5ab5a3",
+        "Include/bot-cua-toi-1/Bot1PendingRequest.mqh": "46ffbb7da4d469533e1a665b5b666ccbfc755ff973ae5e5ebabf5cdd9051700d",
+        "Include/bot-cua-toi-1/Bot1Filling.mqh": "d01485811439d971833de028c791c5abb6cb64ba5b9c20228ca8785453a6615d"
+      },
+      "dependencies_sha256": {
+        "cong-cu/kiem-huy-lenh-cho-bot-1-3.py": "e2b173acc3fcdf13437f23798898627ec0c6c8c06f13cb399b4e21d9ed56a760",
+        "cong-cu/kiem-gui-lenh-bot-1-3.py": "a110aafe8287b4907d73af26dcd59a5675a1c61adb307530f00d8b69574be763",
+        "cong-cu/kiem-tao-yeu-cau-cho-bot-1-3.py": "35b9b0f611a01e12d94b1015570511e0fd95fd617fcbd567a71a727ad6b04600",
+        "cong-cu/kiem-kieu-khop-lenh-bot-1-3.py": "7bc0022adbb2e5f3ffaf1bf2a5fd356258d1de0918137be33a0693bb5d579512",
+        "cong-cu/kiem-khoi-luong-hop-le-bot-1-3.py": "8251fb4423d6f5f2e1b79a1c53dbb25fb5a6c568bb61cddef23396dc982243f0",
+        "cong-cu/kiem-khoi-luong-bot-1-3.py": "32539c090422ab6bc2ce94a9fdacfd33e53c394aca58bd3827c2232d817d7f77",
+        "cong-cu/kiem-gia-vao-bot-1-3.py": "22394e48932feb7242b967aa58e327d2990402f12bfe52621916f64914c9dac2",
+        "cong-cu/kiem-muc-gia-bot-1-3.py": "a6c447ca80029fb63ced0c9d1673bb14222a7736b04df5c410f280f8471d6a35",
+        "doi-chung-mt5/thu-tu-truong-lenh-class-20261024/layout-class-r1/trade-layout.json": "01e11f8b969576faa9647a53efeaf6a2f7748baa7711a5bc2730981c8883def1",
+        "bot-cua-toi-1/phan-tich/luot-20261023-data-v2/metadata/import.json": "732905b62143980f94c360226bfb75120d52bfccb7e646a3a0cc9be9d3e21adb",
+        "bot-cua-toi-1/bang-chung/captures/luot-20261023-r1/capture.json": "81a7c83f595c9869d6ea278f155f10a17b97f5178d9c9c541a2ed41bcdcb956d",
+        "bot-cua-toi-1/bang-chung/luot-20261023-r1/engine-observed.json": "219c2a51597356c03c9470979a1f6e2058c8243e75669b4c9d36916856a62696",
+        "doi-chung-mt5/thu-tu-truong-lenh-class-20261024/layout-class-r1/RecoveryApiDriver.mq5": "87628bda5729a784a93b26e573da62b029c9218e0c7992550ba7fefe73947dce",
+        "doi-chung-mt5/thu-tu-truong-lenh-class-20261024/layout-class-r1/RecoveryApiLibrary.mq5": "c21c5ff475aaa2a5c0c07466140abe40bc8e583d924457cb3f881cc2f5d55cf8",
+        "doi-chung-mt5/thu-tu-truong-lenh-class-20261024/layout-class-r1/TradeLayoutSeed.mqh": "2a7f02aaae78f991d50aa07c19d4566fdad47cf6a52da4f3db0dbc656e076637",
+        "bot-cua-toi-1/bang-chung/captures/luot-20261023-r1/0000023e5aa10000.bin": "e099f124084093c3fdc8651d5f5326709b165248982e5d4eb7394afcbb8177a4",
+        "bot-cua-toi-1/bang-chung/captures/luot-20261023-r1/00007ffa1b990000.bin": "2233cd222526170e3ac45cca5e2acb4c4ad3070cd113da99f91f412f6c558438",
+        "bot-cua-toi-1/bang-chung/captures/luot-20261023-r1/00007ffa1b991000.bin": "ad7facb2586fc6e966c004d7d1d16b024f5805ff7cb47c7a85dabd8b48892ca7",
+        "bot-cua-toi-1/bang-chung/captures/luot-20261023-r1/0000023e5aa5f000-program-data.bin": "2ad9ad0ea90a8f8df88170348a71a070d475174122c9eae7df8deb1fb32c61f4",
+        "doi-chung-mt5/huy-lenh-cho-20261024/cancel-tick-api-r1/tick-fields.json": "aa218a26f5ec206c680391b959aaf0a89d8cf4f317dad33cbddcd54cd6e76f90",
+        "doi-chung-mt5/huy-lenh-cho-20261024/cancel-tick-api-r1/tick-fields-native.txt": "10e51deea2bb1b3119941e34a4b494736eba2decc6479312b53611d6104d865c",
+        "doi-chung-mt5/huy-lenh-cho-20261024/cancel-tick-api-r1/calibration.json": "c8093d820d3bccee9bebd59cc2dac7dfa45e8e03d8fb8439e7697b52ee6f4016",
+        "doi-chung-mt5/huy-lenh-cho-20261024/cancel-tick-api-r1/build.json": "f7108f4b30cd38d0f317912d9b093f8f930b418eaa911899e3b92b93c11516e9",
+        "doi-chung-mt5/huy-lenh-cho-20261024/cancel-tick-api-r1/engine-observed.json": "4751f765d5c76948f840582764fcd752584eaaf79fe7e4f5a069efad444375ec",
+        "doi-chung-mt5/huy-lenh-cho-20261024/cancel-tick-api-r1/RecoveryApiLibrary.mq5": "6f23c433ab19b90f7c043f38c2efa45d8527f6208b32603c7209bbea2beacfb9",
+        "doi-chung-mt5/huy-lenh-cho-20261024/cancel-tick-api-r1/RecoveryApiDriver.mq5": "29e5e31f76870e85e3f5b8939449b44ffbd7bc1c2f4f278c41b2a69a3984d2df",
+        "doi-chung-mt5/huy-lenh-cho-20261024/cancel-tick-api-r1/captures/library/capture.json": "88a3ed500ac26020d6b8dafa06c37cec3bc6c31dc68baa13fe489dd3f28a0fac",
+        "doi-chung-mt5/huy-lenh-cho-20261024/cancel-tick-api-r1/captures/library/000002365ca60000.bin": "edcaefd1d068fbe7c60edf6e50e7f8a012b3d422f4bc80db5e2a713e06a504f0",
+        "doi-chung-mt5/huy-lenh-cho-20261024/cancel-tick-api-r1/captures/library/00007ffd4af30000.bin": "b5326cf17fcd7722476542b31c15215b3a6cdb10810a16019292a9540a4198eb",
+        "doi-chung-mt5/huy-lenh-cho-20261024/cancel-tick-api-r1/captures/library/00007ffd4af31000.bin": "ad7facb2586fc6e966c004d7d1d16b024f5805ff7cb47c7a85dabd8b48892ca7",
+        "doi-chung-mt5/huy-lenh-cho-20261024/cancel-tick-api-r1/captures/library/000002365ca62000-program-data.bin": "d848d98ff534aa8e3ab6a72a5259c1d5634e934d72dc96ee053e19989f3a70f6",
+        "../.local/claude-recovery-20261023/python/unicorn/arm64_const.py": "ddadd814eccd0a312bb43da7b4f2298690660bd5698c27edc306b1d981cff972",
+        "../.local/claude-recovery-20261023/python/unicorn/arm_const.py": "ace0c3e49f61649034a1bec4279576b67e064df146ea8062c67e68dc14e6eb7b",
+        "../.local/claude-recovery-20261023/python/unicorn/m68k_const.py": "af95f32f2810fe19888ac723db70c74c7fb1df2bc8ba3578ede0a28b8eca94a7",
+        "../.local/claude-recovery-20261023/python/unicorn/mips_const.py": "087925a25a128662e095bb861af3c38a2a6c522fc21e222e31b71aeacaaa63d3",
+        "../.local/claude-recovery-20261023/python/unicorn/ppc_const.py": "11e0c52a1c137874352119fb3d1621639079feda6574ee575271ef683a0a8f17",
+        "../.local/claude-recovery-20261023/python/unicorn/riscv_const.py": "86e08d5f6327d154306d5d02899331892de6f44020ff86900a84d2b212205925",
+        "../.local/claude-recovery-20261023/python/unicorn/s390x_const.py": "4f6194d1697d8684921782a81f494458dc859f8ebf2f78e30f673bd5f7cd590f",
+        "../.local/claude-recovery-20261023/python/unicorn/sparc_const.py": "9dd58fa5aeab225a0f8186f653f5c8fc5fd161b75ccc6a541e5af79f36af2698",
+        "../.local/claude-recovery-20261023/python/unicorn/tricore_const.py": "88310f61e12b731b2550031eb6423fbf815e66428b483132d3df47614c9d53ae",
+        "../.local/claude-recovery-20261023/python/unicorn/unicorn.py": "2aed71e6d5bc60807198cdcc3ed43a485a7acae1f41f08d986137afc55df2029",
+        "../.local/claude-recovery-20261023/python/unicorn/unicorn_const.py": "c21d7c49f62296591a5f09ed0119ef95083b82f5f3f66b829578784c7b164368",
+        "../.local/claude-recovery-20261023/python/unicorn/unicorn_py2.py": "b82ccc7c00762e10f0326e8d8ad4381872cf531799d5e003ad52c9d7ac61ae42",
+        "../.local/claude-recovery-20261023/python/unicorn/x86_const.py": "d7663db6425f52838f3e79e45a8fe22b6c02be7edb44367ea2118aec04ee5728",
+        "../.local/claude-recovery-20261023/python/unicorn/__init__.py": "0e8ac7115c755994a968fa865bd1b2f2075edea715c17e91d62af2cc52c13392",
+        "../.local/claude-recovery-20261023/python/unicorn/lib/unicorn.dll": "010d85dce84b8f6ffaec3d5420f1b5f7768f859eb831be574c7da23e656ee8f1",
+        "../.local/claude-recovery-20261023/python/unicorn/unicorn_py3/unicorn.py": "b4de7d560790a587157b17edd71c83b4f2d2bade2447d1a5433c497468ac8aeb",
+        "../.local/claude-recovery-20261023/python/unicorn/unicorn_py3/__init__.py": "2cd4a0d95ef236b5b9e3efb68b20fb6a6d1fb4190db2e9cc0a6447eb2c0aa755",
+        "../.local/claude-recovery-20261023/python/unicorn/unicorn_py3/arch/arm.py": "d486ff4a9c3f797e5e57a5201a1e2304b97a54b6bc61e320062f1290f4e3dc33",
+        "../.local/claude-recovery-20261023/python/unicorn/unicorn_py3/arch/arm64.py": "2e393f3f863da1576619e03abcbda2a2e2e54d673aac98979cf0b6caed8926b4",
+        "../.local/claude-recovery-20261023/python/unicorn/unicorn_py3/arch/intel.py": "b3b8338a85ac74623e7a67dfb4f44dc9933786a329e64d772987490dbf751637",
+        "../.local/claude-recovery-20261023/python/unicorn/unicorn_py3/arch/types.py": "525ed179db874a13291f9469bd6243e7293aba17454de9b10a9227106d093787",
+        "../.local/claude-recovery-20261023/python/unicorn/unicorn_py3/arch/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "cong-cu/kiem-dong-vi-the-bot-1-3.py": "d2cbc38e571d6d63927ae20ba22b54ccbb5ffbc20e120bd71bd45432bf487545",
+        "cong-cu/kiem-api-dong-vi-the.py": "efac9eb0aa5316664bed7989f0931afaba609cf16740c9384109ec68d08e99b8",
+        "doi-chung-mt5/dong-vi-the-20261024/close-api-r1/api-contract.json": "402e1fae9f01632ed75341f7eb4c81a7f989d5cc1a6bc96049efe0107aca2513",
+        "doi-chung-mt5/dong-vi-the-20261024/close-api-r1/calibration.json": "3ac5bf6e659082e5ec8cdd035ba0ec16299eb822b9995326689cd7d1875bd191",
+        "doi-chung-mt5/dong-vi-the-20261024/close-api-r1/build.json": "ce95d966304b83b87fb889c2fc8e23b7089fd172e6df8503444f5d87454be314",
+        "doi-chung-mt5/dong-vi-the-20261024/close-api-r1/engine-observed.json": "10efc4cc7c921e214b3742e9eb731b193c3c74601cfc7b1a775e2643fd9cbbac",
+        "doi-chung-mt5/dong-vi-the-20261024/close-api-r1/RecoveryApiLibrary.mq5": "5c4a1c2b1da6803c53e3516f9b16176b5548b3799d3a235b606c495ba052b8f1",
+        "doi-chung-mt5/dong-vi-the-20261024/close-api-r1/RecoveryApiDriver.mq5": "29e5e31f76870e85e3f5b8939449b44ffbd7bc1c2f4f278c41b2a69a3984d2df",
+        "doi-chung-mt5/dong-vi-the-20261024/close-api-r1/captures/library/capture.json": "cde726ea9cb699c4c3315716c2ba9b1d68ba82c5c3ab8ddf2bb0d49c409f0a97",
+        "doi-chung-mt5/dong-vi-the-20261024/close-api-r1/captures/library/000001ad025c0000.bin": "5a4acccb477fbd9f01ab5ad9e88b3d537a8da1227162d31f09f9e17ac119539a",
+        "doi-chung-mt5/dong-vi-the-20261024/close-api-r1/captures/library/00007ffd4af30000.bin": "b5326cf17fcd7722476542b31c15215b3a6cdb10810a16019292a9540a4198eb",
+        "doi-chung-mt5/dong-vi-the-20261024/close-api-r1/captures/library/00007ffd4af31000.bin": "ad7facb2586fc6e966c004d7d1d16b024f5805ff7cb47c7a85dabd8b48892ca7",
+        "doi-chung-mt5/dong-vi-the-20261024/close-api-r1/captures/library/000001ad025c2000-program-data.bin": "db890ea8bbe43eb3697425e41be53b40a033caa71fd74226f34ffde776f96b8b",
+        "bot-cua-toi-1/phan-tich/dong-vi-the/close-20261024-r1/analysis.json": "6b4df876a33d02d294d006404baff5aeba7225af9af9b65ef5679792ee6abd43",
+        "bot-cua-toi-1/phan-tich/dong-vi-the/close-20261024-r1/semantics.json": "c7d8239287d8830a77528307aa7654a5d5489a24a35eca223a843082fb60b1d1",
+        "bot-cua-toi-1/phan-tich/dong-vi-the/close-20261024-r1/native-guards.txt": "47c695ae854ec049cbd2a9eaf617c80e100339ddfa13c027795bdbfd36bb70fe",
+        "cong-cu/kiem-sua-vi-the-bot-1-3.py": "5a8b031e00f768824142b98825136b9df9e7d9000f8f64abf6209271a6898b8f",
+        "bot-cua-toi-1/phan-tich/dong-vi-the/modify-20261025-r1/analysis.json": "82312a2bd19b51883931599bd1729ffa6b7c28616955d1355559186d0443a789",
+        "bot-cua-toi-1/phan-tich/dong-vi-the/modify-20261025-r1/functions.c": "ec20c3b33e7ca9bd79f36c6b6dbb7f02b3c71a0e3e230f1ba1f5bc01e1810b4f",
+        "bot-cua-toi-1/phan-tich/dong-vi-the/modify-20261025-r1/native-guards.txt": "57247e286d9a6159dc460b797126e6b3b5c52e7dd6743deec79c7260678afcb2",
+        "bot-cua-toi-1/phan-tich/dong-vi-the/modify-20261025-r1/receipt.json": "1119dbd9b92008c978907f50f498490d1705e2bd0942e9af26ef0d101a1f31c7",
+        "bot-cua-toi-1/phan-tich/dong-vi-the/modify-20261025-r1/semantics.json": "6e94a2ce0beeb6acab763e2b6e8bf1f5090536ebde4787f80964ddf20e478215",
+        "bot-cua-toi-1/phan-tich/luot-20261023-data-v2/metadata/strings.tsv": "d2726e8cf08f720165e1816159dc47492548448dca9973f85e46972bc3cb758c"
+      },
+      "tool_sha256": "5a8b031e00f768824142b98825136b9df9e7d9000f8f64abf6209271a6898b8f",
+      "tester_tool_sha256": "55dceaaf4cb2d6f4d12e6a9d64e0b5f818e392e66187cc2b21e51a654bed76f5",
+      "result_sha256": "76f88d45fcd9bcf41602e3c011f1b10cd41b7f15606f2d895320dcfc146cf513",
+      "comparison_sha256": "595473156bd0bd9f42a9026d4500fff28ba8a784ca400bc576fd9510996ca3f8",
+      "tester_comparison_sha256": "e7c2e032ac28fafd0a5268a525ee010ff4440dbe77953a08fdc7a6bc2218a0f7"
+    },
+    {
+      "bot": 3,
+      "cases": 1596,
+      "paths": {
+        "stopped": 83,
+        "select_failed": 33,
+        "sent": 1480
+      },
+      "coverage": {
+        "instructions": 196,
+        "executed": 196
+      },
+      "replayed_original_case_ids": [
+        0,
+        50,
+        246,
+        271,
+        279,
+        299,
+        309,
+        421,
+        556,
+        808,
+        830,
+        870,
+        918,
+        982,
+        1006,
+        1510,
+        1511,
+        1512,
+        1513,
+        1514,
+        1515,
+        1516,
+        1517,
+        1518,
+        1519,
+        1520,
+        1521,
+        1522,
+        1523,
+        1524,
+        1525,
+        1526,
+        1527,
+        1528,
+        1529,
+        1530,
+        1531,
+        1532,
+        1533,
+        1534,
+        1535,
+        1536,
+        1537,
+        1538,
+        1554
+      ],
+      "rejected_corrupt_input_types": [
+        "cast-retcode",
+        "cast-sltp-constant",
+        "duplicate-select",
+        "duplicate-send",
+        "duplicate-symbol",
+        "format-before-send",
+        "format-property",
+        "format-status",
+        "format-value",
+        "missing-cast-record",
+        "select-index",
+        "select-reply",
+        "select-ticket",
+        "send-mode",
+        "send-reply",
+        "send-result",
+        "symbol-before-select",
+        "symbol-index",
+        "symbol-null",
+        "symbol-property",
+        "symbol-text",
+        "unexpected-record"
+      ],
+      "rejected_corrupt_files": [
+        "case-scenario-range",
+        "case-select-reply-range",
+        "case-null-symbol-with-text",
+        "case-null-flag-range",
+        "case-id-order",
+        "case-async-byte-range",
+        "case-header-magic",
+        "fixture-header-count",
+        "fixture-unknown-api",
+        "fixture-case-id",
+        "result-header-count",
+        "result-case-id"
+      ],
+      "length_checks": [
+        {
+          "file": "bot-cua-toi-3/bang-chung/kiem-sua-vi-the/position-modify-20261025-r1/cases.bin",
+          "removed_tail_bytes": 1,
+          "rejected": true
+        },
+        {
+          "file": "bot-cua-toi-3/bang-chung/kiem-sua-vi-the/position-modify-20261025-r1/cases.bin",
+          "removed_tail_bytes": 2,
+          "rejected": true
+        },
+        {
+          "file": "bot-cua-toi-3/bang-chung/kiem-sua-vi-the/position-modify-20261025-r1/cases.bin",
+          "removed_tail_bytes": 4,
+          "rejected": true
+        },
+        {
+          "file": "bot-cua-toi-3/bang-chung/kiem-sua-vi-the/position-modify-20261025-r1/api-fixtures.bin",
+          "removed_tail_bytes": 1,
+          "rejected": true
+        },
+        {
+          "file": "bot-cua-toi-3/bang-chung/kiem-sua-vi-the/position-modify-20261025-r1/api-fixtures.bin",
+          "removed_tail_bytes": 2,
+          "rejected": true
+        },
+        {
+          "file": "bot-cua-toi-3/bang-chung/kiem-sua-vi-the/position-modify-20261025-r1/api-fixtures.bin",
+          "removed_tail_bytes": 4,
+          "rejected": true
+        },
+        {
+          "file": "bot-cua-toi-3/bang-chung/kiem-sua-vi-the/position-modify-20261025-r1/original-results.bin",
+          "removed_tail_bytes": 1,
+          "rejected": true
+        },
+        {
+          "file": "bot-cua-toi-3/bang-chung/kiem-sua-vi-the/position-modify-20261025-r1/original-results.bin",
+          "removed_tail_bytes": 2,
+          "rejected": true
+        },
+        {
+          "file": "bot-cua-toi-3/bang-chung/kiem-sua-vi-the/position-modify-20261025-r1/original-results.bin",
+          "removed_tail_bytes": 4,
+          "rejected": true
+        },
+        {
+          "file": "bot-cua-toi-3/bang-chung/kiem-sua-vi-the/position-modify-20261025-r1/mql5-results.bin",
+          "removed_tail_bytes": 1,
+          "rejected": true
+        },
+        {
+          "file": "bot-cua-toi-3/bang-chung/kiem-sua-vi-the/position-modify-20261025-r1/mql5-results.bin",
+          "removed_tail_bytes": 2,
+          "rejected": true
+        },
+        {
+          "file": "bot-cua-toi-3/bang-chung/kiem-sua-vi-the/position-modify-20261025-r1/mql5-results.bin",
+          "removed_tail_bytes": 4,
+          "rejected": true
+        },
+        {
+          "file": "doi-chung-mt5/sua-vi-the-20261025/engine-modify-b3-r1/api-fixtures.bin",
+          "removed_tail_bytes": 1,
+          "rejected": true
+        },
+        {
+          "file": "doi-chung-mt5/sua-vi-the-20261025/engine-modify-b3-r1/api-fixtures.bin",
+          "removed_tail_bytes": 2,
+          "rejected": true
+        },
+        {
+          "file": "doi-chung-mt5/sua-vi-the-20261025/engine-modify-b3-r1/api-fixtures.bin",
+          "removed_tail_bytes": 4,
+          "rejected": true
+        },
+        {
+          "file": "doi-chung-mt5/sua-vi-the-20261025/engine-modify-b3-r1/mql5-results.bin",
+          "removed_tail_bytes": 1,
+          "rejected": true
+        },
+        {
+          "file": "doi-chung-mt5/sua-vi-the-20261025/engine-modify-b3-r1/mql5-results.bin",
+          "removed_tail_bytes": 2,
+          "rejected": true
+        },
+        {
+          "file": "doi-chung-mt5/sua-vi-the-20261025/engine-modify-b3-r1/mql5-results.bin",
+          "removed_tail_bytes": 4,
+          "rejected": true
+        }
+      ],
+      "sources_sha256": {
+        "Scripts/bot-cua-toi-3/Bot3PositionModifyCheck.mq5": "035b443a91660c18fff59af1cec0665c093448a2d4246c61238233dd46c0a733",
+        "Scripts/bot-cua-toi-3/Bot3PipelineApi.mqh": "c0d748484ddab7b8d6c4ecd606f12cb872c819e4a598cbe963629d2d95d291ab",
+        "Include/bot-cua-toi-3/Bot3PositionModify.mqh": "66ef002ab0e4b3d4bf8a0070e3f6fddfbe3446f0ded59a723e033b972d52e0a5",
+        "Include/bot-cua-toi-3/Bot3TradeSend.mqh": "6031d82d7db3cb5652b76c4583853e871ac1e7f1770834e8dcbd165fa3a60f1f",
+        "Include/bot-cua-toi-3/Bot3TradeMessages.mqh": "3bf211b2aa34980e0857f31e66a08e65136728fa7ef6e239d58cfc1c2bec5d16",
+        "Include/bot-cua-toi-3/Bot3PendingRequest.mqh": "54bc2c75ff9a2ee47f375f874908912da0cad56d2ecb586801d0274c2d025648",
+        "Include/bot-cua-toi-3/Bot3Filling.mqh": "c2806af2b1e00363652b7a09387065f1de289cf6e2bc644611f4d5f6d1c47599"
+      },
+      "dependencies_sha256": {
+        "cong-cu/kiem-huy-lenh-cho-bot-1-3.py": "e2b173acc3fcdf13437f23798898627ec0c6c8c06f13cb399b4e21d9ed56a760",
+        "cong-cu/kiem-gui-lenh-bot-1-3.py": "a110aafe8287b4907d73af26dcd59a5675a1c61adb307530f00d8b69574be763",
+        "cong-cu/kiem-tao-yeu-cau-cho-bot-1-3.py": "35b9b0f611a01e12d94b1015570511e0fd95fd617fcbd567a71a727ad6b04600",
+        "cong-cu/kiem-kieu-khop-lenh-bot-1-3.py": "7bc0022adbb2e5f3ffaf1bf2a5fd356258d1de0918137be33a0693bb5d579512",
+        "cong-cu/kiem-khoi-luong-hop-le-bot-1-3.py": "8251fb4423d6f5f2e1b79a1c53dbb25fb5a6c568bb61cddef23396dc982243f0",
+        "cong-cu/kiem-khoi-luong-bot-1-3.py": "32539c090422ab6bc2ce94a9fdacfd33e53c394aca58bd3827c2232d817d7f77",
+        "cong-cu/kiem-gia-vao-bot-1-3.py": "22394e48932feb7242b967aa58e327d2990402f12bfe52621916f64914c9dac2",
+        "cong-cu/kiem-muc-gia-bot-1-3.py": "a6c447ca80029fb63ced0c9d1673bb14222a7736b04df5c410f280f8471d6a35",
+        "doi-chung-mt5/thu-tu-truong-lenh-class-20261024/layout-class-r1/trade-layout.json": "01e11f8b969576faa9647a53efeaf6a2f7748baa7711a5bc2730981c8883def1",
+        "bot-cua-toi-3/phan-tich/luot-20261023-data/metadata/import.json": "2b0f2cf309fb5055a53acb134f61d4e35d33db55454cf85f79e2081ef586bc88",
+        "bot-cua-toi-3/bang-chung/captures/luot-20261023-r1/capture.json": "c7060fa7349025372b5c0407efb760fbb9a084f0cf1c598f7c775321148443c3",
+        "bot-cua-toi-3/bang-chung/luot-20261023-r1/engine-observed.json": "dfb233134d30f0e595b0858267f987fbf345ff979d8fdef2c9f1df2457c84db6",
+        "doi-chung-mt5/thu-tu-truong-lenh-class-20261024/layout-class-r1/RecoveryApiDriver.mq5": "87628bda5729a784a93b26e573da62b029c9218e0c7992550ba7fefe73947dce",
+        "doi-chung-mt5/thu-tu-truong-lenh-class-20261024/layout-class-r1/RecoveryApiLibrary.mq5": "c21c5ff475aaa2a5c0c07466140abe40bc8e583d924457cb3f881cc2f5d55cf8",
+        "doi-chung-mt5/thu-tu-truong-lenh-class-20261024/layout-class-r1/TradeLayoutSeed.mqh": "2a7f02aaae78f991d50aa07c19d4566fdad47cf6a52da4f3db0dbc656e076637",
+        "bot-cua-toi-3/bang-chung/captures/luot-20261023-r1/0000017156250000.bin": "7464a1dcb3a66d1438d510f365a08fbcdfa4aaa00f03afb49259225bc7d5cfbb",
+        "bot-cua-toi-3/bang-chung/captures/luot-20261023-r1/00007ffa1b990000.bin": "2233cd222526170e3ac45cca5e2acb4c4ad3070cd113da99f91f412f6c558438",
+        "bot-cua-toi-3/bang-chung/captures/luot-20261023-r1/00007ffa1b991000.bin": "ad7facb2586fc6e966c004d7d1d16b024f5805ff7cb47c7a85dabd8b48892ca7",
+        "bot-cua-toi-3/bang-chung/captures/luot-20261023-r1/00000171562a7000-program-data.bin": "1d8c5ee1af972615461e71ede70b519d30bd876561cf96169606e4c9aeaab073",
+        "doi-chung-mt5/huy-lenh-cho-20261024/cancel-tick-api-r1/tick-fields.json": "aa218a26f5ec206c680391b959aaf0a89d8cf4f317dad33cbddcd54cd6e76f90",
+        "doi-chung-mt5/huy-lenh-cho-20261024/cancel-tick-api-r1/tick-fields-native.txt": "10e51deea2bb1b3119941e34a4b494736eba2decc6479312b53611d6104d865c",
+        "doi-chung-mt5/huy-lenh-cho-20261024/cancel-tick-api-r1/calibration.json": "c8093d820d3bccee9bebd59cc2dac7dfa45e8e03d8fb8439e7697b52ee6f4016",
+        "doi-chung-mt5/huy-lenh-cho-20261024/cancel-tick-api-r1/build.json": "f7108f4b30cd38d0f317912d9b093f8f930b418eaa911899e3b92b93c11516e9",
+        "doi-chung-mt5/huy-lenh-cho-20261024/cancel-tick-api-r1/engine-observed.json": "4751f765d5c76948f840582764fcd752584eaaf79fe7e4f5a069efad444375ec",
+        "doi-chung-mt5/huy-lenh-cho-20261024/cancel-tick-api-r1/RecoveryApiLibrary.mq5": "6f23c433ab19b90f7c043f38c2efa45d8527f6208b32603c7209bbea2beacfb9",
+        "doi-chung-mt5/huy-lenh-cho-20261024/cancel-tick-api-r1/RecoveryApiDriver.mq5": "29e5e31f76870e85e3f5b8939449b44ffbd7bc1c2f4f278c41b2a69a3984d2df",
+        "doi-chung-mt5/huy-lenh-cho-20261024/cancel-tick-api-r1/captures/library/capture.json": "88a3ed500ac26020d6b8dafa06c37cec3bc6c31dc68baa13fe489dd3f28a0fac",
+        "doi-chung-mt5/huy-lenh-cho-20261024/cancel-tick-api-r1/captures/library/000002365ca60000.bin": "edcaefd1d068fbe7c60edf6e50e7f8a012b3d422f4bc80db5e2a713e06a504f0",
+        "doi-chung-mt5/huy-lenh-cho-20261024/cancel-tick-api-r1/captures/library/00007ffd4af30000.bin": "b5326cf17fcd7722476542b31c15215b3a6cdb10810a16019292a9540a4198eb",
+        "doi-chung-mt5/huy-lenh-cho-20261024/cancel-tick-api-r1/captures/library/00007ffd4af31000.bin": "ad7facb2586fc6e966c004d7d1d16b024f5805ff7cb47c7a85dabd8b48892ca7",
+        "doi-chung-mt5/huy-lenh-cho-20261024/cancel-tick-api-r1/captures/library/000002365ca62000-program-data.bin": "d848d98ff534aa8e3ab6a72a5259c1d5634e934d72dc96ee053e19989f3a70f6",
+        "../.local/claude-recovery-20261023/python/unicorn/arm64_const.py": "ddadd814eccd0a312bb43da7b4f2298690660bd5698c27edc306b1d981cff972",
+        "../.local/claude-recovery-20261023/python/unicorn/arm_const.py": "ace0c3e49f61649034a1bec4279576b67e064df146ea8062c67e68dc14e6eb7b",
+        "../.local/claude-recovery-20261023/python/unicorn/m68k_const.py": "af95f32f2810fe19888ac723db70c74c7fb1df2bc8ba3578ede0a28b8eca94a7",
+        "../.local/claude-recovery-20261023/python/unicorn/mips_const.py": "087925a25a128662e095bb861af3c38a2a6c522fc21e222e31b71aeacaaa63d3",
+        "../.local/claude-recovery-20261023/python/unicorn/ppc_const.py": "11e0c52a1c137874352119fb3d1621639079feda6574ee575271ef683a0a8f17",
+        "../.local/claude-recovery-20261023/python/unicorn/riscv_const.py": "86e08d5f6327d154306d5d02899331892de6f44020ff86900a84d2b212205925",
+        "../.local/claude-recovery-20261023/python/unicorn/s390x_const.py": "4f6194d1697d8684921782a81f494458dc859f8ebf2f78e30f673bd5f7cd590f",
+        "../.local/claude-recovery-20261023/python/unicorn/sparc_const.py": "9dd58fa5aeab225a0f8186f653f5c8fc5fd161b75ccc6a541e5af79f36af2698",
+        "../.local/claude-recovery-20261023/python/unicorn/tricore_const.py": "88310f61e12b731b2550031eb6423fbf815e66428b483132d3df47614c9d53ae",
+        "../.local/claude-recovery-20261023/python/unicorn/unicorn.py": "2aed71e6d5bc60807198cdcc3ed43a485a7acae1f41f08d986137afc55df2029",
+        "../.local/claude-recovery-20261023/python/unicorn/unicorn_const.py": "c21d7c49f62296591a5f09ed0119ef95083b82f5f3f66b829578784c7b164368",
+        "../.local/claude-recovery-20261023/python/unicorn/unicorn_py2.py": "b82ccc7c00762e10f0326e8d8ad4381872cf531799d5e003ad52c9d7ac61ae42",
+        "../.local/claude-recovery-20261023/python/unicorn/x86_const.py": "d7663db6425f52838f3e79e45a8fe22b6c02be7edb44367ea2118aec04ee5728",
+        "../.local/claude-recovery-20261023/python/unicorn/__init__.py": "0e8ac7115c755994a968fa865bd1b2f2075edea715c17e91d62af2cc52c13392",
+        "../.local/claude-recovery-20261023/python/unicorn/lib/unicorn.dll": "010d85dce84b8f6ffaec3d5420f1b5f7768f859eb831be574c7da23e656ee8f1",
+        "../.local/claude-recovery-20261023/python/unicorn/unicorn_py3/unicorn.py": "b4de7d560790a587157b17edd71c83b4f2d2bade2447d1a5433c497468ac8aeb",
+        "../.local/claude-recovery-20261023/python/unicorn/unicorn_py3/__init__.py": "2cd4a0d95ef236b5b9e3efb68b20fb6a6d1fb4190db2e9cc0a6447eb2c0aa755",
+        "../.local/claude-recovery-20261023/python/unicorn/unicorn_py3/arch/arm.py": "d486ff4a9c3f797e5e57a5201a1e2304b97a54b6bc61e320062f1290f4e3dc33",
+        "../.local/claude-recovery-20261023/python/unicorn/unicorn_py3/arch/arm64.py": "2e393f3f863da1576619e03abcbda2a2e2e54d673aac98979cf0b6caed8926b4",
+        "../.local/claude-recovery-20261023/python/unicorn/unicorn_py3/arch/intel.py": "b3b8338a85ac74623e7a67dfb4f44dc9933786a329e64d772987490dbf751637",
+        "../.local/claude-recovery-20261023/python/unicorn/unicorn_py3/arch/types.py": "525ed179db874a13291f9469bd6243e7293aba17454de9b10a9227106d093787",
+        "../.local/claude-recovery-20261023/python/unicorn/unicorn_py3/arch/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "cong-cu/kiem-dong-vi-the-bot-1-3.py": "d2cbc38e571d6d63927ae20ba22b54ccbb5ffbc20e120bd71bd45432bf487545",
+        "cong-cu/kiem-api-dong-vi-the.py": "efac9eb0aa5316664bed7989f0931afaba609cf16740c9384109ec68d08e99b8",
+        "doi-chung-mt5/dong-vi-the-20261024/close-api-r1/api-contract.json": "402e1fae9f01632ed75341f7eb4c81a7f989d5cc1a6bc96049efe0107aca2513",
+        "doi-chung-mt5/dong-vi-the-20261024/close-api-r1/calibration.json": "3ac5bf6e659082e5ec8cdd035ba0ec16299eb822b9995326689cd7d1875bd191",
+        "doi-chung-mt5/dong-vi-the-20261024/close-api-r1/build.json": "ce95d966304b83b87fb889c2fc8e23b7089fd172e6df8503444f5d87454be314",
+        "doi-chung-mt5/dong-vi-the-20261024/close-api-r1/engine-observed.json": "10efc4cc7c921e214b3742e9eb731b193c3c74601cfc7b1a775e2643fd9cbbac",
+        "doi-chung-mt5/dong-vi-the-20261024/close-api-r1/RecoveryApiLibrary.mq5": "5c4a1c2b1da6803c53e3516f9b16176b5548b3799d3a235b606c495ba052b8f1",
+        "doi-chung-mt5/dong-vi-the-20261024/close-api-r1/RecoveryApiDriver.mq5": "29e5e31f76870e85e3f5b8939449b44ffbd7bc1c2f4f278c41b2a69a3984d2df",
+        "doi-chung-mt5/dong-vi-the-20261024/close-api-r1/captures/library/capture.json": "cde726ea9cb699c4c3315716c2ba9b1d68ba82c5c3ab8ddf2bb0d49c409f0a97",
+        "doi-chung-mt5/dong-vi-the-20261024/close-api-r1/captures/library/000001ad025c0000.bin": "5a4acccb477fbd9f01ab5ad9e88b3d537a8da1227162d31f09f9e17ac119539a",
+        "doi-chung-mt5/dong-vi-the-20261024/close-api-r1/captures/library/00007ffd4af30000.bin": "b5326cf17fcd7722476542b31c15215b3a6cdb10810a16019292a9540a4198eb",
+        "doi-chung-mt5/dong-vi-the-20261024/close-api-r1/captures/library/00007ffd4af31000.bin": "ad7facb2586fc6e966c004d7d1d16b024f5805ff7cb47c7a85dabd8b48892ca7",
+        "doi-chung-mt5/dong-vi-the-20261024/close-api-r1/captures/library/000001ad025c2000-program-data.bin": "db890ea8bbe43eb3697425e41be53b40a033caa71fd74226f34ffde776f96b8b",
+        "bot-cua-toi-3/phan-tich/dong-vi-the/close-20261024-r1/analysis.json": "e7ceb7423fdbb83c92a720139c9a15d54600099c8e38196640c8fcd754af7dbe",
+        "bot-cua-toi-3/phan-tich/dong-vi-the/close-20261024-r1/semantics.json": "589ad48c12acdc5d4d455a3daf3c99ad63c1a611224ad16c333bdf7b37006701",
+        "bot-cua-toi-3/phan-tich/dong-vi-the/close-20261024-r1/native-guards.txt": "89a680f491b8c477f6eee98213d1d4760e83ab0ecfbd027055f499b9ff326d34",
+        "cong-cu/kiem-sua-vi-the-bot-1-3.py": "5a8b031e00f768824142b98825136b9df9e7d9000f8f64abf6209271a6898b8f",
+        "bot-cua-toi-3/phan-tich/dong-vi-the/modify-20261025-r1/analysis.json": "8a46863709f2ea6f2bb83ca40847893bfd21cd354aa2d28d387e44d5596f93b3",
+        "bot-cua-toi-3/phan-tich/dong-vi-the/modify-20261025-r1/functions.c": "058d60fbc58e012d99fc87ec820bb43a42b647ced815c6ab398bfb7a5949bce1",
+        "bot-cua-toi-3/phan-tich/dong-vi-the/modify-20261025-r1/native-guards.txt": "6f780d666747f15fdc498a7c2c723cbce86def0e2df3b9b88371ebc8ba99d20a",
+        "bot-cua-toi-3/phan-tich/dong-vi-the/modify-20261025-r1/receipt.json": "e4b004d9023a64b87e8888227dffafdddbdbfb143defeaf340cc96f699191e16",
+        "bot-cua-toi-3/phan-tich/dong-vi-the/modify-20261025-r1/semantics.json": "6e94a2ce0beeb6acab763e2b6e8bf1f5090536ebde4787f80964ddf20e478215",
+        "bot-cua-toi-3/phan-tich/luot-20261023-data/metadata/strings.tsv": "d15a232406366b8d4ef93584e08b6f1bd4031d333b0752958d2c9390d678ee39"
+      },
+      "tool_sha256": "5a8b031e00f768824142b98825136b9df9e7d9000f8f64abf6209271a6898b8f",
+      "tester_tool_sha256": "55dceaaf4cb2d6f4d12e6a9d64e0b5f818e392e66187cc2b21e51a654bed76f5",
+      "result_sha256": "76f88d45fcd9bcf41602e3c011f1b10cd41b7f15606f2d895320dcfc146cf513",
+      "comparison_sha256": "567b4313f093e14cbe5b191f4ed4553d89aa81e6c84b6c81abfb863db6f9de72",
+      "tester_comparison_sha256": "a037cc017b606d06e9387fbb39257f847473d9771dc0835f9f6126febeef6f6b"
+    }
+  ],
+  "tool_sha256": "e1ed2078b25b3b30134cef06d1ca3a7202b23029a0f642c7280aee74b4c3909d",
+  "whole_bot_complete": false,
+  "limits": [
+    "IsStopped, selection, symbol and send replies are supplied and input-bound; formatting/casts measured in MT5.",
+    "Return, 35 public fields, four strings/null flags, stored values/options and state at service boundaries compared; MQL padding not compared.",
+    "Original replay covers a subset; the full original run is checked through its frozen hashes and recomputed paths/requests.",
+    "Callers, argument origins in callers, full EA, settings, display, restart, actual account/broker, _LastError and allocation faults still require proof.",
+    "1596 finite cases per bot are not a percentage of whole-bot completion."
+  ]
+}

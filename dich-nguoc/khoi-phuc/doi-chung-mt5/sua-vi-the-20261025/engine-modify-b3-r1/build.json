@@ -1,0 +1,21 @@
+{
+  "exit_code": 1,
+  "errors": 0,
+  "warnings": 0,
+  "source_sha256": "cec5adc683c9b40076bec18e127cd601df73f51f99b8f62170f90bd5bfcced24",
+  "binary_sha256": "730b551bb24dc30706e5c7f7e4addf068d433619d011a93b86c24fd2dc8f86c7",
+  "component_build_receipt_sha256": "c6d7811ed4b8f1f547627fb4cc8ea188f87f98d7003606c2188c0686111658d0",
+  "component_sources_sha256": {
+    "Scripts/bot-cua-toi-3/Bot3PositionModifyCheck.mq5": "035b443a91660c18fff59af1cec0665c093448a2d4246c61238233dd46c0a733",
+    "Include/bot-cua-toi-3/Bot3PositionModify.mqh": "66ef002ab0e4b3d4bf8a0070e3f6fddfbe3446f0ded59a723e033b972d52e0a5",
+    "Include/bot-cua-toi-3/Bot3TradeSend.mqh": "6031d82d7db3cb5652b76c4583853e871ac1e7f1770834e8dcbd165fa3a60f1f",
+    "Include/bot-cua-toi-3/Bot3TradeMessages.mqh": "3bf211b2aa34980e0857f31e66a08e65136728fa7ef6e239d58cfc1c2bec5d16",
+    "Include/bot-cua-toi-3/Bot3PendingRequest.mqh": "54bc2c75ff9a2ee47f375f874908912da0cad56d2ecb586801d0274c2d025648",
+    "Include/bot-cua-toi-3/Bot3Filling.mqh": "c2806af2b1e00363652b7a09387065f1de289cf6e2bc644611f4d5f6d1c47599",
+    "Scripts/bot-cua-toi-3/Bot3PipelineApi.mqh": "c0d748484ddab7b8d6c4ecd606f12cb872c819e4a598cbe963629d2d95d291ab"
+  },
+  "test_input_sha256": "3cb84244854ad62c579833481ed6016dd5622a4d1eca95cfba8d59f1c09cf5ee",
+  "tester_sha256": "5033d9d45d669cebd735e8a6be20b54d74b75274f885c9a0e48e52d872104efb",
+  "tool_sha256": "55dceaaf4cb2d6f4d12e6a9d64e0b5f818e392e66187cc2b21e51a654bed76f5",
+  "adapted_api_include_sha256": "16dfe4c16cc39e156df391be6efdc2afcb16c7c994ecf33b40d2b1da7dd870c0"
+}

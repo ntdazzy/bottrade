@@ -1,0 +1,58 @@
+{
+  "first_execution_exit_code": 1,
+  "first_error": "TESTER_COMPONENT_SOURCE_CHANGED",
+  "cause": "The seven source paths and their SHA256 values are identical; only JSON key insertion order differs. That order does not specify the MQL include/execution order, which is checked separately through the exact wrapper and source hashes.",
+  "proposal_sha256": "030289b9b587d4e5955c92616f9a0b6b9e9ac173e6f0f76857cd1e23cd1a6591",
+  "correction": "Replace list(key_order)==names with set(keys)==set(names); retain exact dictionary equality and all per-name source hashes. No production MQL changes.",
+  "checked_source_records": [
+    {
+      "bot": 1,
+      "same_names_and_hashes": true,
+      "script_order": [
+        "Scripts/bot-cua-toi-1/Bot1PositionModifyCheck.mq5",
+        "Scripts/bot-cua-toi-1/Bot1PipelineApi.mqh",
+        "Include/bot-cua-toi-1/Bot1PositionModify.mqh",
+        "Include/bot-cua-toi-1/Bot1TradeSend.mqh",
+        "Include/bot-cua-toi-1/Bot1TradeMessages.mqh",
+        "Include/bot-cua-toi-1/Bot1PendingRequest.mqh",
+        "Include/bot-cua-toi-1/Bot1Filling.mqh"
+      ],
+      "tester_order": [
+        "Scripts/bot-cua-toi-1/Bot1PositionModifyCheck.mq5",
+        "Include/bot-cua-toi-1/Bot1PositionModify.mqh",
+        "Include/bot-cua-toi-1/Bot1TradeSend.mqh",
+        "Include/bot-cua-toi-1/Bot1TradeMessages.mqh",
+        "Include/bot-cua-toi-1/Bot1PendingRequest.mqh",
+        "Include/bot-cua-toi-1/Bot1Filling.mqh",
+        "Scripts/bot-cua-toi-1/Bot1PipelineApi.mqh"
+      ]
+    },
+    {
+      "bot": 3,
+      "same_names_and_hashes": true,
+      "script_order": [
+        "Scripts/bot-cua-toi-3/Bot3PositionModifyCheck.mq5",
+        "Scripts/bot-cua-toi-3/Bot3PipelineApi.mqh",
+        "Include/bot-cua-toi-3/Bot3PositionModify.mqh",
+        "Include/bot-cua-toi-3/Bot3TradeSend.mqh",
+        "Include/bot-cua-toi-3/Bot3TradeMessages.mqh",
+        "Include/bot-cua-toi-3/Bot3PendingRequest.mqh",
+        "Include/bot-cua-toi-3/Bot3Filling.mqh"
+      ],
+      "tester_order": [
+        "Scripts/bot-cua-toi-3/Bot3PositionModifyCheck.mq5",
+        "Include/bot-cua-toi-3/Bot3PositionModify.mqh",
+        "Include/bot-cua-toi-3/Bot3TradeSend.mqh",
+        "Include/bot-cua-toi-3/Bot3TradeMessages.mqh",
+        "Include/bot-cua-toi-3/Bot3PendingRequest.mqh",
+        "Include/bot-cua-toi-3/Bot3Filling.mqh",
+        "Scripts/bot-cua-toi-3/Bot3PipelineApi.mqh"
+      ]
+    }
+  ],
+  "second_execution_exit_code": 0,
+  "aggregate_sha256": "307a7d9595a0c5d04407cd5d98a0fdbba9f338738cd14f31f5ba4ccda4a8ea86",
+  "corrected_tool_sha256": "e1ed2078b25b3b30134cef06d1ca3a7202b23029a0f642c7280aee74b4c3909d",
+  "aggregate_status": "position-modify-helper-verified-with-stated-limits",
+  "whole_bot_complete": false
+}

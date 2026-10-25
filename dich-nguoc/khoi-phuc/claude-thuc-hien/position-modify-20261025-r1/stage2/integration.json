@@ -1,0 +1,115 @@
+{
+  "task": "position-modify-20261025-r1/stage2",
+  "deliverable_root": "dich-nguoc/khoi-phuc/claude-thuc-hien/position-modify-20261025-r1/stage2",
+  "target_root": "dich-nguoc/khoi-phuc",
+  "status": "Runner and aggregate were already integrated and run by Codex before these docs were written; inventory r4 and documentation are still to be applied. Claude read files only; no shell, MT5 or hashing by Claude.",
+  "observed_evidence_read_by_claude": {
+    "component_runs": "bot-cua-toi-N/bang-chung/kiem-sua-vi-the/position-modify-20261025-r1/comparison.json: 1596/1596 matched, 0 failed, paths 83/33/1480, coverage 196/196",
+    "component_builds": "bot-cua-toi-N/bang-chung/bien-dich/bN-position-modify-01/bien-nhan.json: exit_code 1, errors 0, warnings 0",
+    "tester_runs": "doi-chung-mt5/sua-vi-the-20261025/engine-modify-bN-r1/: build.json exit_code 1, errors 0, warnings 0, tool_sha256 55dceaaf4cb2d6f4d12e6a9d64e0b5f818e392e66187cc2b21e51a654bed76f5; runner exit_code 0, demo/login confirmed, report created; log contains POSITIONMODIFY_NATIVE_CHECK_EXIT:0; comparison.json 1596/1596 matched, 0 failed, tester results hash 76f88d45fcd9bcf41602e3c011f1b10cd41b7f15606f2d895320dcfc146cf513",
+    "aggregate": "KIEM-CHUNG-SUA-VI-THE-BOT-1-3.json: status position-modify-helper-verified-with-stated-limits, tool_sha256 e1ed2078b25b3b30134cef06d1ca3a7202b23029a0f642c7280aee74b4c3909d, per bot 45 replayed original cases, 22 rejected input types, 12 rejected corrupt files, 18 rejected truncations, whole_bot_complete false",
+    "caller_trace": "bot-cua-toi-N/phan-tich/dong-vi-the/modify-callers-20261025-r1/caller-sites.json: bot1 19 native sites = 19 C lines, bot3 21 = 21, callers match inventory, runtime_verified false",
+    "claude_phase1_receipt": "danh-gia-claude/position-modify-implementation-20261025-r1/receipt.json: 118/118 requests claude-opus-5-5 effort max, ultracode_requested true, ultracode_workflow_completed false, outside_output_writes []"
+  },
+  "files": [
+    {
+      "source": "files/cong-cu/kiem-hang-doi-trong-may-thu.py",
+      "target": "cong-cu/kiem-hang-doi-trong-may-thu.py",
+      "action": "already-integrated",
+      "note": "Read identical to the canonical file in every --modify line and in lines 1-99. Expected SHA-256 equals the frozen run copy 55dceaaf4cb2d6f4d12e6a9d64e0b5f818e392e66187cc2b21e51a654bed76f5 (not computed by Claude). Do not copy if the hash differs; report the difference."
+    },
+    {
+      "source": "files/cong-cu/kiem-chung-sua-vi-the-bot-1-3.py",
+      "target": "cong-cu/kiem-chung-sua-vi-the-bot-1-3.py",
+      "action": "already-integrated",
+      "note": "Stage2 copy now carries the Codex fix set(build['component_sources_sha256'])==set(names) (build.json lists PipelineApi last). Expected SHA-256 e1ed2078b25b3b30134cef06d1ca3a7202b23029a0f642c7280aee74b4c3909d from the existing report (not computed by Claude). Keep the canonical file if the hash differs."
+    },
+    {
+      "source": "files/cong-cu/lap-ban-do-bot-1-3.py",
+      "target": "cong-cu/lap-ban-do-bot-1-3.py",
+      "action": "replace",
+      "note": "Only changes: role text of 0x26d20/0x32a90; modify_rvas/modify_sites; new_parts entry for kiem-sua-vi-the/position-modify-20261025-r1 (PositionModify); proof block asserting 1596/1596 and 196/196, tester comparison engine-modify-bN-r1 (1596/0), semantics, caller-sites (19/21, runtime_verified false) and aggregate status. Older inventory runs keep their recorded tool hash."
+    },
+    {
+      "source": "files/cong-cu/BOT-1-3.md",
+      "target": "cong-cu/BOT-1-3.md",
+      "action": "replace-after-inventory",
+      "note": "Full copy of the 612-line canonical file (Codex section preserved) plus one new section before '## Quét/chọn vị thế qua toàn bộ phần đóng' and 'Lượt hiện hành: luot-20261025-r4'. Apply only after commands 6-7 pass."
+    },
+    {
+      "source": "files/BAN-DO-TOAN-BO-BOT-1-3.md",
+      "target": "BAN-DO-TOAN-BO-BOT-1-3.md",
+      "action": "replace-after-inventory",
+      "note": "Links r3 -> r4, P20 row adds the modify helper and its limits, r3 paragraph no longer called current, new r4 paragraph. Coordinator refusal paragraph unchanged."
+    },
+    {
+      "source": "files/bot-cua-toi-1/README.md",
+      "target": "bot-cua-toi-1/README.md",
+      "action": "replace-after-inventory",
+      "note": "New first paragraph only."
+    },
+    {
+      "source": "files/bot-cua-toi-3/README.md",
+      "target": "bot-cua-toi-3/README.md",
+      "action": "replace-after-inventory",
+      "note": "New first paragraph only."
+    },
+    {
+      "source": "files/PHAN-TICH-SUA-VI-THE-BOT-1-3.md",
+      "target": "PHAN-TICH-SUA-VI-THE-BOT-1-3.md",
+      "action": "create",
+      "note": "Target does not exist at writing time; refuse if it appears before copying."
+    },
+    {
+      "source": "../files/cong-cu/kiem-sua-vi-the-bot-1-3-schema.md",
+      "target": "cong-cu/kiem-sua-vi-the-bot-1-3-schema.md",
+      "action": "optional-create",
+      "note": "Unchanged phase1 file describing the binary/JSON layouts the aggregate reads; not linked from the new docs."
+    }
+  ],
+  "commands_with_existing_outputs": [
+    "python -I -B -X utf8 dich-nguoc/khoi-phuc/cong-cu/kiem-hang-doi-trong-may-thu.py 1 engine-modify-b1-r1 --component-run position-modify-20261025-r1 --build b1-position-modify-01 --modify",
+    "python -I -B -X utf8 dich-nguoc/khoi-phuc/cong-cu/kiem-hang-doi-trong-may-thu.py 3 engine-modify-b3-r1 --component-run position-modify-20261025-r1 --build b3-position-modify-01 --modify",
+    "python -I -B -X utf8 dich-nguoc/khoi-phuc/cong-cu/kiem-chung-sua-vi-the-bot-1-3.py dich-nguoc/khoi-phuc/KIEM-CHUNG-SUA-VI-THE-BOT-1-3.json"
+  ],
+  "commands_to_run_in_order": [
+    "(Get-FileHash -LiteralPath 'dich-nguoc/khoi-phuc/claude-thuc-hien/position-modify-20261025-r1/stage2/files/cong-cu/kiem-hang-doi-trong-may-thu.py' -Algorithm SHA256).Hash.ToLower()",
+    "(Get-FileHash -LiteralPath 'dich-nguoc/khoi-phuc/claude-thuc-hien/position-modify-20261025-r1/stage2/files/cong-cu/kiem-chung-sua-vi-the-bot-1-3.py' -Algorithm SHA256).Hash.ToLower()",
+    "Copy-Item -LiteralPath 'dich-nguoc/khoi-phuc/claude-thuc-hien/position-modify-20261025-r1/stage2/files/cong-cu/lap-ban-do-bot-1-3.py' -Destination 'dich-nguoc/khoi-phuc/cong-cu/lap-ban-do-bot-1-3.py'",
+    "if (Test-Path -LiteralPath 'dich-nguoc/khoi-phuc/ban-do-bot-1-3/luot-20261025-r4') { throw 'INVENTORY_RUN_EXISTS' }",
+    "python -I -B -X utf8 dich-nguoc/khoi-phuc/cong-cu/lap-ban-do-bot-1-3.py dich-nguoc/khoi-phuc/ban-do-bot-1-3/luot-20261025-r4 --extra-calibration dich-nguoc/khoi-phuc/doi-chung-mt5/api-bo-sung-20261023/api-extra-r2/calibration.json --menu-evidence dich-nguoc/khoi-phuc/menu-bot-1-3/luot-20261023-r1/verified-menu.json",
+    "python -I -B -X utf8 -c \"import json;from pathlib import Path;R=Path('dich-nguoc/khoi-phuc/ban-do-bot-1-3');L=lambda r,b:json.loads((R/r/f'bot-{b}.json').read_text(encoding='utf-8'))['functions'];[print(b,[f['rva'] for f,g in zip(L('luot-20261025-r4',b),L('luot-20261025-r3',b)) if f!=g],len(L('luot-20261025-r4',b))==len(L('luot-20261025-r3',b))) for b in (1,3)]\"",
+    "python -I -B -X utf8 -c \"import json;from pathlib import Path;R=Path('dich-nguoc/khoi-phuc/ban-do-bot-1-3/luot-20261025-r4');[print(b,f['role'],sorted(f['component_proof']),f['reconstructed']['path']) for b,rva in ((1,'0x26d20'),(3,'0x32a90')) for f in json.loads((R/f'bot-{b}.json').read_text(encoding='utf-8'))['functions'] if f['rva']==rva]\"",
+    "if (Test-Path -LiteralPath 'dich-nguoc/khoi-phuc/PHAN-TICH-SUA-VI-THE-BOT-1-3.md') { throw 'DOC_TARGET_EXISTS' }",
+    "Copy-Item -LiteralPath 'dich-nguoc/khoi-phuc/claude-thuc-hien/position-modify-20261025-r1/stage2/files/PHAN-TICH-SUA-VI-THE-BOT-1-3.md' -Destination 'dich-nguoc/khoi-phuc/PHAN-TICH-SUA-VI-THE-BOT-1-3.md'",
+    "Copy-Item -LiteralPath 'dich-nguoc/khoi-phuc/claude-thuc-hien/position-modify-20261025-r1/stage2/files/cong-cu/BOT-1-3.md' -Destination 'dich-nguoc/khoi-phuc/cong-cu/BOT-1-3.md'",
+    "Copy-Item -LiteralPath 'dich-nguoc/khoi-phuc/claude-thuc-hien/position-modify-20261025-r1/stage2/files/BAN-DO-TOAN-BO-BOT-1-3.md' -Destination 'dich-nguoc/khoi-phuc/BAN-DO-TOAN-BO-BOT-1-3.md'",
+    "Copy-Item -LiteralPath 'dich-nguoc/khoi-phuc/claude-thuc-hien/position-modify-20261025-r1/stage2/files/bot-cua-toi-1/README.md' -Destination 'dich-nguoc/khoi-phuc/bot-cua-toi-1/README.md'",
+    "Copy-Item -LiteralPath 'dich-nguoc/khoi-phuc/claude-thuc-hien/position-modify-20261025-r1/stage2/files/bot-cua-toi-3/README.md' -Destination 'dich-nguoc/khoi-phuc/bot-cua-toi-3/README.md'"
+  ],
+  "expected_results": {
+    "hash_runner": "55dceaaf4cb2d6f4d12e6a9d64e0b5f818e392e66187cc2b21e51a654bed76f5",
+    "hash_aggregate": "e1ed2078b25b3b30134cef06d1ca3a7202b23029a0f642c7280aee74b4c3909d",
+    "inventory_summary": "summary.json analysis_complete false; bot 1 84 functions, bot 3 82 functions, unchanged input row counts",
+    "r3_r4_function_differences": "bot 1 ['0x26d20'] True; bot 3 ['0x32a90'] True. Any other RVA means an evidence file changed after r3 and must be inspected before applying docs.",
+    "modify_function_proof_keys": "aggregate, aggregate_sha256, caller_sites, caller_sites_sha256, comparison, partial_only, path, semantics_sha256, semantics_source, sha256, tester_comparison, tester_comparison_sha256",
+    "reconstructed_path": "bot-cua-toi-N/source/MQL5/Include/bot-cua-toi-N/BotNPositionModify.mqh"
+  },
+  "stop_conditions": [
+    "Either hash in commands 1-2 differs: keep the canonical tool, do not overwrite it, report the difference.",
+    "luot-20261025-r4 already exists or the inventory raises: do not apply the docs that call r4 current.",
+    "r3/r4 differences include RVAs other than the modify helper: inspect before applying docs."
+  ],
+  "unchanged_and_pinned": [
+    "Phase1 files in the deliverable root and files/ (headers, scripts, kiem-sua-vi-the-bot-1-3.py, phan-tich-goi-sua-vi-the-bot-1-3.py, analysis.md, semantics.json)",
+    "All existing evidence folders, original EX5 files, captures and earlier inventory runs"
+  ],
+  "not_claimed": [
+    "Claude-computed hashes or executions",
+    "inventory luot-20261025-r4 results before it exists",
+    "caller reconstruction, argument origins, both management directions, post-fill placement",
+    "real account/broker modify results, _LastError, allocation faults",
+    "whole EA, settings/menus, display, restart or persistent state",
+    "100 percent completion"
+  ]
+}

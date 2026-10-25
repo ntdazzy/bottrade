@@ -1,5 +1,13 @@
 # bot-cua-toi-3
 
+Đã dựng hàm sửa dừng lỗ/chốt lời vị thế theo vé `0x32a90`: kiểm
+chương trình dừng, chọn vé, tạo yêu cầu sửa rồi gửi/thông báo.
+1.596/1.596 ca khớp mã gốc/MQL5/máy đo quá khứ (83 ca dừng, 33 ca chọn
+vé thất bại, 1.480 ca gửi), chạy đủ 196/196 lệnh máy; biên dịch 0 lỗi/
+cảnh báo. Truy vấn/kết quả gửi được cấp. Còn 21 nơi gọi và giá trị
+truyền vào, tài khoản/mã lỗi thật, cài đặt, hiển thị, khởi động lại,
+lỗi cấp bộ nhớ và toàn EA; [phạm vi](../PHAN-TICH-SUA-VI-THE-BOT-1-3.md).
+
 Đã ghép quét/chọn vị thế mua/bán qua toàn bộ phần đóng/gửi/thông báo:
 lượt r3 khớp 4.600/4.600 ca mã gốc/MQL5/máy đo quá khứ (2.300 ca mỗi
 chiều), gồm số 32/64 bit, chuỗi trống, trạng thái tại các lần đọc dữ

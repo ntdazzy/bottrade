@@ -19,9 +19,9 @@ phải được phân tích tiếp trước khi viết luật tương ứng.
 
 Danh sách đầy đủ từng hàm và từng dòng cài đặt:
 
-- [Bot 1](ban-do-bot-1-3/luot-20261025-r3/bot-1.md), [dữ liệu chi tiết](ban-do-bot-1-3/luot-20261025-r3/bot-1.json).
-- [Bot 3](ban-do-bot-1-3/luot-20261025-r3/bot-3.md), [dữ liệu chi tiết](ban-do-bot-1-3/luot-20261025-r3/bot-3.json).
-- [Biên nhận lập danh sách](ban-do-bot-1-3/luot-20261025-r3/summary.json).
+- [Bot 1](ban-do-bot-1-3/luot-20261025-r4/bot-1.md), [dữ liệu chi tiết](ban-do-bot-1-3/luot-20261025-r4/bot-1.json).
+- [Bot 3](ban-do-bot-1-3/luot-20261025-r4/bot-3.md), [dữ liệu chi tiết](ban-do-bot-1-3/luot-20261025-r4/bot-3.json).
+- [Biên nhận lập danh sách](ban-do-bot-1-3/luot-20261025-r4/summary.json).
 
 Mỗi hàm có vị trí gốc, dòng C, các hàm gọi/được gọi, lời gọi MT5, mã
 điều phối, chuỗi liên quan, biến dùng chung, nguồn dựng lại và bằng
@@ -68,7 +68,7 @@ phép đối chiếu trong phạm vi cụ thể; không đánh dấu hoàn tất
 | P17 | Quét, nhận dạng và đếm lệnh/vị thế | Các hàm nhóm `0x2f5c0..0x32ce0` / `0x3ca00..0x3e490`, bot 3 `0x47330` | Đã dựng năm hàm đếm/dọn bảng/giới hạn: bot 1 khớp 307 ca, bot 3 215 ca cả chương trình MQL5 và máy đo quá khứ. Còn trạng thái chọn/tài khoản thực, nơi gọi và các hàm còn lại; [phạm vi](PHAN-TICH-QUET-LENH-BOT-1-3.md) |
 | P18 | Sửa/hủy lệnh chờ và vùng cấm sửa | `0x30320`, `0x34150`, `0x32110`, `0x325b0` / `0x32450`, `0x3d650`, `0x3da90`, `0x3dd60` | Đã dựng hủy một vé (964 ca), ghép hai hàm chọn vé mua/bán qua hủy/gửi và dọn bảng/thông báo (2.522 ca mỗi bot); khớp mã gốc/MQL5/máy đo quá khứ. Truy vấn/kết quả gửi được cấp. Còn sửa lệnh, dữ liệu/trạng thái chọn tài khoản thực, lỗi cấp bộ nhớ, nơi gọi và toàn EA; [phạm vi](PHAN-TICH-HUY-LENH-CHO-BOT-1-3.md) |
 | P19 | Hết hạn thật và tự quản lý hết hạn | Tham số ở `0x7500` / `0xe0c0`, nơi dùng trong chiến lược | Đã so cách tính thời hạn; chưa toàn bộ việc hủy khi đến hạn |
-| P20 | Dừng lỗ/chốt lời sau khớp | `0x271f0`, `0x2abc0` / `0x32f60`, `0x37590` | Cần cả hai chiều, đặt sau khớp và kết quả sửa |
+| P20 | Dừng lỗ/chốt lời sau khớp | `0x271f0`, `0x2abc0`, hàm sửa `0x26d20` / `0x32f60`, `0x37590`, hàm sửa `0x32a90` | Đã dựng hàm sửa dừng lỗ/chốt lời theo vé: 1.596 ca mỗi bot khớp mã gốc/MQL5/máy đo quá khứ (83 dừng, 33 chọn vé thất bại, 1.480 gửi; 196/196 lệnh máy); tổng kiểm từ chối 22 kiểu dữ liệu sai. Truy vấn/kết quả gửi được cấp. Còn 19/21 nơi gọi trong hai hàm quản lý và hàm chiến lược, giá trị dừng lỗ/chốt lời truyền vào, cả hai chiều, đặt sau khớp và kết quả sửa trên tài khoản thật; [phạm vi](PHAN-TICH-SUA-VI-THE-BOT-1-3.md) |
 | P21 | Dời dừng lỗ/chốt lời, hòa vốn, phục hồi theo thời gian | Cùng hai hàm quản lý vị thế và các `UseHL*`, `AdjustTrail*` | Cần từng chế độ, giá kích hoạt, giới hạn và thử lại |
 | P22 | Dừng/chốt ảo và chờ chuyển thành lệnh thật | `0x3d200`, `0x3d5a0`, `0x3d640` / `0x47f10`, `0x482b0`, `0x484c0`, `0x48560` | Đã phân tích bảng 500 hàng, xác nhận hằng làm tròn, hai nơi truyền vé, 7 đối số thông báo và sáu ca chốt lời gốc; chưa dựng/so MQL5. Còn kiểm nhánh đầy bảng, dọn bảng, lỗi và khởi động lại; [bằng chứng](PHAN-TICH-BANG-DUNG-AO-BOT-1-3.md) |
 | P23 | Đóng vị thế và xóa theo bộ lọc | `0x2fa00`, `0x2fce0`, `0x3d010`, `0x22c40` / `0x3ce40`, `0x3d220`, `0x47d20`, `0x2e370` | Đã ghép quét mua/bán qua kiểm điều kiện, đóng, chọn cách khớp, gửi và thông báo: lượt r3 khớp 4.600 ca mỗi bot (2.300 mỗi chiều) ở mã gốc/MQL5/máy đo quá khứ, gồm trạng thái trước/sau dịch vụ và hai ca đổi dữ liệu sau lần kiểm đóng đầu; bốn bản sai cố ý bị từ chối. Đã nối hai ô giá với vùng dữ liệu giá gần nhất. Còn nơi/thời điểm gọi, mọi đường nạp/ghi giá/ngưỡng, mọi tổ hợp cách khớp, trạng thái chọn/mã lỗi tài khoản thật, lỗi cấp bộ nhớ và toàn EA; [phạm vi](PHAN-TICH-CHON-VI-THE-DONG-BOT-1-3.md) |
@@ -108,6 +108,15 @@ Lượt giao khối điều phối bot 1 `0x10f60` mới cũng bị Claude từ 
 với nhãn `[cyber]`, chưa có tệp triển khai hoặc đánh giá:
 [biên nhận](danh-gia-claude/bot1-coordinator-20261025-r1/receipt.json).
 Không đổi cách hỏi hoặc đổi phiên để vượt chặn; phần này vẫn chưa đạt.
+
+Lượt giao hai hàm quản lý vị thế bot 1 `0x271f0` / `0x2abc0` cũng
+bị Claude từ chối trong phản hồi cuối; không có phân tích hoặc mã mới:
+[biên nhận](danh-gia-claude/bot1-position-management-20261025-r1/receipt.json).
+Claude nêu nghi ngờ quyền sở hữu và nói không nhận khôi phục bot 1/3;
+đây là nhận định của Claude, không phải kết luận đã được Codex xác minh.
+Đã tách trước đủ hai thân hàm, 5.621 lệnh máy; chưa xem là đã phân tích
+hoàn tất hoặc kiểm đúng hành vi. Đang chờ người dùng chốt cách phân công
+các phần bị từ chối vì quy tắc hiện hành giao khoảng 95% việc cho Claude.
 
 Hai lượt P11/P16 mới bị Claude từ chối sau khi nối lại phiên đã dừng;
 không có phân tích độc lập từ hai lượt này. Đã lưu phản hồi ở
@@ -153,7 +162,13 @@ Lượt `luot-20261024-r10` nối thêm năm hàm quét/đếm/dọn bảng/
 giới hạn và phép so chuỗi đặt lệnh r3 đã sửa kiểm số đối số thông báo
 theo nhận xét Claude. Phần hủy đang ở bước phân tích; chưa có EA đầy đủ.
 
-Lượt hiện hành `luot-20261025-r3`: công cụ chỉ đổi bằng chứng của bốn
+Lượt `luot-20261025-r3`: công cụ chỉ đổi bằng chứng của bốn
 hàm quét/chọn vị thế sang lượt `position-selection-20261025-r3` (4.600
 ca mỗi bot) và máy đo quá khứ `engine-position-selection-bN-r3`. Các
 lượt cũ, gồm `luot-20261025-r1/r2`, giữ nguyên.
+
+Lượt hiện hành `luot-20261025-r4`: công cụ nối bằng chứng hàm sửa vị
+thế `0x26d20` / `0x32a90` (lượt `position-modify-20261025-r1`, máy đo
+quá khứ `engine-modify-bN-r1`, nơi gọi `modify-callers-20261025-r1` và
+[tổng kiểm](KIEM-CHUNG-SUA-VI-THE-BOT-1-3.json)), đổi mô tả vai trò của
+hàm này. Các lượt cũ, gồm `luot-20261025-r1/r2/r3`, giữ nguyên.

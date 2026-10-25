@@ -1,0 +1,44 @@
+{
+  "status": "running-snapshot-no-completion-claim",
+  "captured_utc": "2026-10-24T20:46:20.969661+00:00",
+  "pid": 15784,
+  "started": "2026-10-24T20:44:00.3325081Z",
+  "session_id": "69addd4b-a80a-4aed-827d-c8c2db3f47ef",
+  "prompt_sha256": "4e93e80c72919ef0bfca1d6989d91fe4e77e02d6e247ff8e3639802d4fd42e3a",
+  "actual_requests_observed": [
+    {
+      "timestamp": "2026-10-24T20:44:03.629Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-24T20:44:53.459Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-24T20:45:24.466Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-24T20:45:30.846Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    }
+  ],
+  "ultracode_requested": true,
+  "ultracode_runtime_confirmed": null,
+  "journal_prefix_bytes": 746090,
+  "journal_prefix_sha256": "dd21dba392140d96abd1ca1a02df3bb917d2aac4709605e5fa80fa4d4376081e",
+  "analysis_input": "bot-cua-toi-1/phan-tich/dong-vi-the/management-20261025-r1/analysis.json",
+  "analysis_input_sha256": "88ac3446d1c8a0b209c06a94f3a0f6f668850776df92b5b427c84577fa34a085",
+  "original_ex5_sha256": "a3b0de423a06e10ebedc279307b93d7cb9188ba2bb5de77131a913c865b0e922",
+  "function_rvas": [
+    "0x271f0",
+    "0x2abc0"
+  ],
+  "native_instructions": 5621,
+  "coordinator_or_entry_body_in_scope": false,
+  "whole_bot_complete": false
+}

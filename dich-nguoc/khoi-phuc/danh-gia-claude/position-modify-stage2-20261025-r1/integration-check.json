@@ -1,0 +1,64 @@
+{
+  "checks": [
+    {
+      "target": "cong-cu/kiem-hang-doi-trong-may-thu.py",
+      "proposal_sha256": "55dceaaf4cb2d6f4d12e6a9d64e0b5f818e392e66187cc2b21e51a654bed76f5",
+      "current_sha256": "55dceaaf4cb2d6f4d12e6a9d64e0b5f818e392e66187cc2b21e51a654bed76f5",
+      "same_bytes": true,
+      "manager_addition": null
+    },
+    {
+      "target": "cong-cu/kiem-chung-sua-vi-the-bot-1-3.py",
+      "proposal_sha256": "e1ed2078b25b3b30134cef06d1ca3a7202b23029a0f642c7280aee74b4c3909d",
+      "current_sha256": "e1ed2078b25b3b30134cef06d1ca3a7202b23029a0f642c7280aee74b4c3909d",
+      "same_bytes": true,
+      "manager_addition": null
+    },
+    {
+      "target": "cong-cu/lap-ban-do-bot-1-3.py",
+      "proposal_sha256": "2f5d0c80f8a537d4f80c210f05ca933dc1e278be014441c31c211f4a2031ce3f",
+      "current_sha256": "2f5d0c80f8a537d4f80c210f05ca933dc1e278be014441c31c211f4a2031ce3f",
+      "same_bytes": true,
+      "manager_addition": null
+    },
+    {
+      "target": "cong-cu/BOT-1-3.md",
+      "proposal_sha256": "83a134b23a006a6fa1b2eb32edc897addad4087a5991fca45253dfc2b7a8050d",
+      "current_sha256": "da702a8174009fad24004b844c56ba532e643e539912998eb91aea28e0fe458d",
+      "same_bytes": false,
+      "manager_addition": "Documented current receipt, management extraction or newly received refusal only."
+    },
+    {
+      "target": "BAN-DO-TOAN-BO-BOT-1-3.md",
+      "proposal_sha256": "31e2131715ac84af0249a2a6ff713f72973043053b392135f12a42afc44a9edf",
+      "current_sha256": "04d9ed5c2f982edf27644c824696d8c6f9c5cc4b0b0ad135053db25e3e3a408a",
+      "same_bytes": false,
+      "manager_addition": "Documented current receipt, management extraction or newly received refusal only."
+    },
+    {
+      "target": "bot-cua-toi-1/README.md",
+      "proposal_sha256": "43059544ac712674d0db8d04fdd5d7bc2cb11027a54fdd21b27c8bbb483848f6",
+      "current_sha256": "43059544ac712674d0db8d04fdd5d7bc2cb11027a54fdd21b27c8bbb483848f6",
+      "same_bytes": true,
+      "manager_addition": null
+    },
+    {
+      "target": "bot-cua-toi-3/README.md",
+      "proposal_sha256": "e1ce7e07df34f741d0294f4765aeaa88d9f55ff87362d148a6cadb80f86745e3",
+      "current_sha256": "e1ce7e07df34f741d0294f4765aeaa88d9f55ff87362d148a6cadb80f86745e3",
+      "same_bytes": true,
+      "manager_addition": null
+    },
+    {
+      "target": "PHAN-TICH-SUA-VI-THE-BOT-1-3.md",
+      "proposal_sha256": "bcfe6a299baa9810a4b33533e04e835ef5b7695281153aeceb76db39e42a1838",
+      "current_sha256": "aef66bee2df9cd5a9685ce8263b36998acd715d27bb914098792355146d4b059",
+      "same_bytes": false,
+      "manager_addition": "Documented current receipt, management extraction or newly received refusal only."
+    }
+  ],
+  "phase1_production_and_scripts_unchanged": true,
+  "inventory_r4_check": "danh-gia-doc-lap/sua-vi-the-20261025/inventory-r4-check.json",
+  "aggregate": "KIEM-CHUNG-SUA-VI-THE-BOT-1-3.json",
+  "whole_bot_complete": false
+}

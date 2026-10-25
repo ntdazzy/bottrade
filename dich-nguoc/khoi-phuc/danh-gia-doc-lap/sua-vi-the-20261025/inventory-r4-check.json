@@ -1,0 +1,23 @@
+{
+  "checks": [
+    {
+      "bot": 1,
+      "function_count": 84,
+      "changed_function": "0x26d20",
+      "partial_helper_proof": true,
+      "full_function_verified": false,
+      "other_functions_unchanged": true
+    },
+    {
+      "bot": 3,
+      "function_count": 82,
+      "changed_function": "0x32a90",
+      "partial_helper_proof": true,
+      "full_function_verified": false,
+      "other_functions_unchanged": true
+    }
+  ],
+  "inventory_summary_sha256": "7360349cf5c585d5c9134c8db74038f27e61d5cfb767f94a1245b1814601b952",
+  "analysis_complete": false,
+  "whole_bot_complete": false
+}

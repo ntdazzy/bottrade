@@ -1,0 +1,15 @@
+[
+  {
+    "id": "q-engine-engine-modify-b3-r1",
+    "expert": "RecoveryPositionModify20261024\\engine-modify-b3-r1\\PositionModifyEngineCheck.ex5",
+    "symbol": "XAUUSD_NOCOST_V2",
+    "period": "M15",
+    "model": 0,
+    "from": "2026.09.29",
+    "to": "2026.09.30",
+    "timeout": 120,
+    "inputs": {
+      "CheckRun": "engine-modify-b3-r1"
+    }
+  }
+]

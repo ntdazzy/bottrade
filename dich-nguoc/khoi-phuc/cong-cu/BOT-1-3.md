@@ -20,6 +20,37 @@ Chạy từ thư mục dự án. Mỗi lượt dùng tên mới để giữ bằ
   `phan-tich/dieu-phoi/NEW_RUN/`. Bot 1 lượt
   `coordinator-20261025-r1`: 4.894 lệnh máy; chưa xác nhận là sự kiện
   MT5 nào và chưa có kết quả chạy.
+- Cùng công cụ, `--position-management`: tách hai hàm quản lý vị thế
+  vào `phan-tich/dong-vi-the/NEW_RUN/`. Bot 1 lượt
+  `management-20261025-r1`: 5.621 lệnh máy, giữ đủ thân hàm và mã C;
+  chỉ tách bằng chứng, chưa phân tích hoàn tất hoặc chạy đối chiếu.
+
+## Sửa dừng lỗ/chốt lời vị thế theo vé
+
+- `phan-tich-goi-sua-vi-the-bot-1-3.py BOT NEW_RUN`: đọc tĩnh nơi gọi
+  hàm sửa `0x26d20` / `0x32a90` và lệnh ghi vé/dừng lỗ/chốt lời trong
+  cùng đoạn lệnh thẳng. Lượt `modify-callers-20261025-r1`: bot 1 có 19
+  nơi, bot 3 có 21 nơi, mỗi bot trong ba hàm; không chạy mã bot.
+- `kiem-sua-vi-the-bot-1-3.py MODE BOT RUN [--build BUILD]`: `prepare`
+  → biên dịch `BotNPositionModifyCheck.mq5` → `mql5 --build` →
+  `original` → `compare`. Lượt `position-modify-20261025-r1`, bản
+  `bN-position-modify-01`: 1.596 ca mỗi bot (83 dừng, 33 chọn vé thất
+  bại, 1.480 gửi), chạy đủ 196/196 lệnh máy. Không gửi lệnh thật.
+- `kiem-hang-doi-trong-may-thu.py BOT NEW_RUN --component-run RUN
+  --build BUILD --modify`: cùng thân kiểm trong máy đo quá khứ, đầu ra ở
+  `doi-chung-mt5/sua-vi-the-20261025/NEW_RUN/`; runner lưu bản chính nó
+  thành `tester-check-tool.py` của lượt. `engine-modify-b1-r1` /
+  `engine-modify-b3-r1` đạt 1.596 ca mỗi bot.
+- `kiem-chung-sua-vi-the-bot-1-3.py NEW_JSON`: không mở MT5; kiểm nguồn,
+  bản dựng, dữ liệu ba nơi chạy, tính lại đường đi/yêu cầu gửi, chạy lại
+  45 ca mã gốc, 22 kiểu dữ liệu sai, 12 tệp sai và 18 tệp cắt cụt mỗi
+  bot. Đầu ra hiện hành `KIEM-CHUNG-SUA-VI-THE-BOT-1-3.json`.
+
+MetaEditor trả mã 1 ở cả bốn lần dựng dù 0 lỗi/0 cảnh báo; tổng kiểm
+dựa vào số lỗi/cảnh báo, mã EX5 và kết quả chạy. Truy vấn dừng/chọn vé/
+mã giá và kết quả gửi được cấp; định dạng đo trong MT5. Còn nơi gọi,
+nguồn đối số, toàn EA, tài khoản thật, `_LastError` và lỗi cấp bộ nhớ.
+[Phạm vi](../PHAN-TICH-SUA-VI-THE-BOT-1-3.md).
 
 ## Quét/chọn vị thế qua toàn bộ phần đóng
 
@@ -355,7 +386,7 @@ liệt kê mọi hàm trong bảng đã chụp, toàn bộ dòng cài đặt đ�
 lời gọi, chuỗi, chỗ chưa rõ và liên kết bằng chứng. Thư mục đích phải
 mới và nằm trong `khoi-phuc`; không sửa EX5 hoặc mã trung gian.
 
-Lượt hiện hành: `ban-do-bot-1-3/luot-20261025-r3/`. Danh sách không tự
+Lượt hiện hành: `ban-do-bot-1-3/luot-20261025-r4/`. Danh sách không tự
 khẳng định toàn bộ EX5 đã được phân tích hoặc mọi cài đặt đã được nối.
 
 ## Hai bộ kiểm đã hoàn tất trước khi chuyển sang rà bản đồ

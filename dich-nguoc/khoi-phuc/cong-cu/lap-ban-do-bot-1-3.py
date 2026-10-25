@@ -62,7 +62,7 @@ ROLES=[
 (0x26360,0x31a90,'Định dạng giá và giá kích hoạt','Thông báo'),
 (0x265a0,0x31cd0,'Tìm mức mua, xác nhận và lọc lệnh chờ gần','Điểm vào'),
 (0x26960,0x32090,'Tìm mức bán, xác nhận và lọc lệnh chờ gần','Điểm vào'),
-(0x26d20,0x32a90,'Kiểm vé/mã giao dịch và tạo yêu cầu sửa','Giao dịch'),
+(0x26d20,0x32a90,'Kiểm dừng, chọn vị thế theo vé, tạo yêu cầu sửa dừng lỗ/chốt lời rồi gửi/thông báo','Giao dịch'),
 (0x271f0,0x32f60,'Quản lý vị thế nhánh mua: dừng/chốt, dời và đóng','Quản lý vị thế'),
 (0x2abc0,0x37590,'Quản lý vị thế nhánh bán: dừng/chốt, dời và đóng','Quản lý vị thế'),
 (0x2e6d0,0x3bb10,'Gửi hàng đợi 100 lệnh chờ theo giá, ghi kết quả và thử lại khi lỗi 132','Giao dịch'),
@@ -243,12 +243,15 @@ def main():
             selection_rvas={1:[0x32110,0x325b0],3:[0x3da90,0x3dd60]}
             close_rvas={1:[0x22c40,0x3d010],3:[0x2e370,0x47d20]}
             position_scan_rvas={1:[0x2fa00,0x2fce0],3:[0x3ce40,0x3d220]}
+            modify_rvas={1:[0x26d20],3:[0x32a90]};modify_sites={1:19,3:21}
             for selection_rva in selection_rvas[bot]:
                 new_parts[selection_rva]=('kiem-chon-lenh-huy/selection-20261024-r2','PendingSelection','Bộ 2.522 ca mua/bán mỗi bot: chọn vé qua hủy/gửi, dọn bảng và thông báo. Truy vấn/kết quả gửi cấp sẵn; còn tài khoản thực, lỗi cấp bộ nhớ, nơi gọi và toàn EA.')
             for close_rva in close_rvas[bot]:
                 new_parts[close_rva]=('kiem-dong-vi-the/close-20261025-r4','PositionClose','Bộ 2.589 ca: kiểm điều kiện/đóng vị thế qua chọn cách khớp, gửi và thông báo. So trạng thái trước truy vấn và sau gửi. Truy vấn/kết quả gửi cấp sẵn; còn nguồn biến giá dùng chung, nơi gọi, tài khoản thực, lỗi cấp bộ nhớ và toàn EA.')
             for scan_rva in position_scan_rvas[bot]:
                 new_parts[scan_rva]=('kiem-chon-vi-the-dong/position-selection-20261025-r3','PositionSelection','Bộ 4.600 ca mỗi bot: quét mua/bán qua nguyên phần kiểm đóng, đóng, chọn cách khớp, gửi và thông báo. So trạng thái trước/sau dịch vụ; truy vấn/kết quả gửi/trạng thái chọn cấp sẵn. Còn nơi gọi, thứ tự nạp giá mọi nhánh, tài khoản/mã lỗi thật, lỗi cấp bộ nhớ và toàn EA.')
+            for modify_rva in modify_rvas[bot]:
+                new_parts[modify_rva]=('kiem-sua-vi-the/position-modify-20261025-r1','PositionModify',f'Bộ 1.596 ca mỗi bot: kiểm dừng, chọn vị thế theo vé, đọc mã giá, tạo yêu cầu sửa dừng lỗ/chốt lời, gửi và thông báo; 83 ca dừng, 33 ca chọn thất bại, 1.480 ca gửi; chạy đủ 196/196 lệnh máy. Truy vấn/kết quả gửi cấp sẵn. Còn {modify_sites[bot]} nơi gọi và nguồn đối số trong nơi gọi, tài khoản/mã lỗi thật, lỗi cấp bộ nhớ và toàn EA.')
             for scan_rva in scan_rvas[bot]:
                 new_parts[scan_rva]=('kiem-quet-lenh/scan-20261024-r2','OrderScan','Quét/đếm/dọn bảng/giới hạn trong bộ ca; truy vấn và trạng thái chọn được cấp. Còn tài khoản thật, lỗi cấp bộ nhớ và ghép EA.')
             for send_rva in [0x950,*( [0x235c0,0x23fa0,0x26060,0x26360] if bot==1 else [0x2ecf0,0x2f6d0,0x31790,0x31a90])]:
@@ -281,6 +284,17 @@ def main():
                         tested=json.loads(engine.read_text());assert tested['cases']==tested['matched']==4600 and tested['failed']==0
                         semantics=ROOT/f'bot-cua-toi-{bot}/phan-tich/dong-vi-the/scan-20261025-r1/semantics.json'
                         proof.update(function_case_kind=position_scan_rvas[bot].index(rva),tester_comparison=engine.relative_to(ROOT).as_posix(),tester_comparison_sha256=sha(engine),semantics_source=semantics.relative_to(ROOT).as_posix(),semantics_sha256=sha(semantics))
+                    if rva in modify_rvas[bot]:
+                        assert comparison['cases']==comparison['matched']==1596 and comparison['coverage']=={'instructions':196,'executed':196}
+                        engine=ROOT/f'doi-chung-mt5/sua-vi-the-20261025/engine-modify-b{bot}-r1/comparison.json'
+                        tested=json.loads(engine.read_text());assert tested['cases']==tested['matched']==1596 and tested['failed']==0
+                        semantics=ROOT/f'bot-cua-toi-{bot}/phan-tich/dong-vi-the/modify-20261025-r1/semantics.json'
+                        callers=ROOT/f'bot-cua-toi-{bot}/phan-tich/dong-vi-the/modify-callers-20261025-r1/caller-sites.json'
+                        sites=json.loads(callers.read_text());assert sites['native_site_count']==sites['c_call_line_count']==modify_sites[bot] and sites['native_callers_match_inventory'] and not sites['runtime_verified']
+                        aggregate=ROOT/'KIEM-CHUNG-SUA-VI-THE-BOT-1-3.json'
+                        report=json.loads(aggregate.read_text());assert report['status']=='position-modify-helper-verified-with-stated-limits' and report['whole_bot_complete'] is False
+                        proof.update(tester_comparison=engine.relative_to(ROOT).as_posix(),tester_comparison_sha256=sha(engine),semantics_source=semantics.relative_to(ROOT).as_posix(),semantics_sha256=sha(semantics),
+                                     caller_sites=callers.relative_to(ROOT).as_posix(),caller_sites_sha256=sha(callers),aggregate=aggregate.relative_to(ROOT).as_posix(),aggregate_sha256=sha(aggregate))
             pipeline_rvas={1:{0x950,0x231c0,0x235c0,0x23fa0,0x26060,0x26360,0x2e6d0,0x32dd0,0x336d0},
                            3:{0x950,0x2e8f0,0x2ecf0,0x2f6d0,0x31790,0x31a90,0x3bb10,0x3e580,0x3ee80}}
             if proof and rva in pipeline_rvas[bot]:
