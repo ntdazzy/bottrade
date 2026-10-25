@@ -1,0 +1,65 @@
+{
+  "run": "bot1-real-store-20261025-r2",
+  "session_id": "f29e71e6-7b9f-4248-aaac-b9956637e19a",
+  "started": "2026-10-25T16:56:53.1840185Z",
+  "snapshot_utc": "2026-10-25T17:11:27.779009+00:00",
+  "status": "delivered-unverified",
+  "response_is_error": false,
+  "terminal_reason": "completed",
+  "job_sha256": "21965eee566d8566c0d8c23fbda1cac6d55a7e540eef31b061abfc9d8e9175d4",
+  "prompt_sha256": "f5e23afd4b2324bfd6eccbe25dcaeaa08c58d822483d1f65aaeb0ad495929ee0",
+  "response_sha256": "6078027e7c0a4a27d494980bb8c4d7dd1101caf535476e61a501dc311ada2092",
+  "actual_requests": 8,
+  "requests": [
+    {
+      "timestamp": "2026-10-25T16:56:56.437Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T16:57:11.279Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T16:57:15.781Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T16:57:22.571Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T16:57:34.890Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T16:57:52.944Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T17:00:21.289Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T17:00:48.423Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    }
+  ],
+  "ultracode_requested": true,
+  "ultracode_runtime_confirmed": null,
+  "journal_prefix_bytes": 991774,
+  "journal_prefix_sha256": "c9b66ab7e9971aaa5a1cfb663e77c686fdf955dacc136f5066de394a7b6af6f8",
+  "files_sha256": {
+    "dich-nguoc/khoi-phuc/claude-thuc-hien/bot1-real-store-20261025-r2/Bot1ManagementRealStore.mqh": "5c49bca8249c23f071cc9ef65d508eb67b91c536c871aac21e4c053ae40cd48f",
+    "dich-nguoc/khoi-phuc/claude-thuc-hien/bot1-real-store-20261025-r2/SUMMARY.md": "fe4e6960aa4b14f0e090e6466a8accec17390721c35f4da09aa163d7344d3f69"
+  },
+  "source_validated": false,
+  "whole_bot_complete": false
+}

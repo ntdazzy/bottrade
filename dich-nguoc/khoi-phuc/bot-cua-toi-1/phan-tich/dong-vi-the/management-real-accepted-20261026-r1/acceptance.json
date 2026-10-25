@@ -1,0 +1,41 @@
+{
+  "author": "Claude Opus 5.5",
+  "actual_effort": "max",
+  "actual_model_effort_receipts": "danh-gia-claude/table-parallel-20261025-r2/dispatch.json",
+  "ultracode_requested": true,
+  "ultracode_runtime_confirmed": null,
+  "accepted_sources": [
+    {
+      "run": "bot1-real-store-20261025-r2",
+      "file": "Bot1ManagementRealStore.mqh",
+      "proposal_sha256": "5c49bca8249c23f071cc9ef65d508eb67b91c536c871aac21e4c053ae40cd48f",
+      "canonical_sha256": "859bae08e43275b5a1389ddef78278827f41ce22548d0a3159bf0c486055f9b2",
+      "body_changed": false,
+      "adaptations": [
+        "project line endings"
+      ],
+      "reviewed_against_root_functional_spec": true,
+      "runtime_verified": false
+    },
+    {
+      "run": "bot1-real-distance-20261025-r1",
+      "file": "Bot1ManagementRealDistance.mqh",
+      "proposal_sha256": "e8798d0ce1cba7bc76150032f7b4fbd6704ff330e39995ab86f755a3d4f36c09",
+      "canonical_sha256": "9f4cd30a143f80cba892038d17a41b60aadfcb263867c8c10b0ed439c27ddc08",
+      "body_changed": false,
+      "adaptations": [
+        "project line endings",
+        "removed stale candidate status comment"
+      ],
+      "reviewed_against_root_functional_spec": true,
+      "runtime_verified": false
+    }
+  ],
+  "compile_build": "b1-real-distance-store-api-20261026-r1",
+  "compile_errors": 0,
+  "compile_warnings": 0,
+  "compile_only": true,
+  "compiled_script_was_not_run": true,
+  "whole_manager_complete": false,
+  "whole_bot_complete": false
+}

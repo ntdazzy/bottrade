@@ -1,0 +1,13 @@
+{
+  "pid": 25620,
+  "started": "2026-10-25T16:56:53.1865152Z",
+  "model": "claude-opus-5-5",
+  "effort": "max",
+  "ultracode_requested": true,
+  "scope": "Write proposed analysis/code only within an explicitly assigned deliverable directory",
+  "output_directory": "dich-nguoc/khoi-phuc/claude-thuc-hien/bot1-real-distance-20261025-r1",
+  "edit_rule": "Edit(./dich-nguoc/khoi-phuc/claude-thuc-hien/bot1-real-distance-20261025-r1/**)",
+  "permission_mode": "dontAsk",
+  "prompt_sha256": "29df4a63ee29eb0bbad07b4cdba8c53e272f3830e0cb51dfda84f52ab1b22f3a",
+  "resume": ""
+}

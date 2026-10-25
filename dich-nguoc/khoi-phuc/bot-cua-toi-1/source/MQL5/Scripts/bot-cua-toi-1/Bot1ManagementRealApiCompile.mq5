@@ -1,6 +1,8 @@
 // Compile-only use of actual terminal API declarations. Do not run this script.
 #property strict
 #include "../../Include/bot-cua-toi-1/Bot1ManagementRealTimed.mqh"
+#include "../../Include/bot-cua-toi-1/Bot1ManagementRealDistance.mqh"
+#include "../../Include/bot-cua-toi-1/Bot1ManagementRealStore.mqh"
 input bool InvokeFunctions=false;
 void OnStart()
 {
@@ -13,4 +15,10 @@ void OnStart()
    int seconds=60;uint error_count=0;ulong ticket=7;
    Bot1AdvanceTimedBuyStop(symbol,unit,activation,distance,seconds,gap,freeze,position,tick,state,options,error_count,ticket);
    Bot1AdvanceTimedSellStop(symbol,unit,activation,distance,seconds,gap,freeze,position,tick,state,options,error_count,ticket);
+   double trail=2.,step=.5,start=1.,limit=4.,anchor=100.,volumes[9];ArrayInitialize(volumes,.1);
+   uint strategy_index=2;bool changed=false;ulong deviation=1;
+   Bot1AdvanceDistanceBuyStop(symbol,unit,trail,step,start,limit,anchor,gap,freeze,position,tick,volumes,strategy_index,changed,state,options,deviation,error_count,ticket);
+   Bot1AdvanceDistanceSellStop(symbol,unit,trail,step,start,limit,anchor,gap,freeze,position,tick,volumes,strategy_index,changed,state,options,deviation,error_count,ticket);
+   Bot1VirtualStopState table;ZeroMemory(table);double current_stop=95.;
+   Bot1StoreRealStop(symbol,95.,current_stop,7.,table);
 }

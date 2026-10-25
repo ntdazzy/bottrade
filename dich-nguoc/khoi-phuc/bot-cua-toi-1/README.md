@@ -1,5 +1,9 @@
 # bot-cua-toi-1
 
+Mới ghép hai phần Claude viết: dời dừng lỗ theo khoảng giá và ghi mức
+dừng vào bảng. Biên dịch **0 lỗi/0 cảnh báo**, **chưa so kết quả chạy**.
+[Phạm vi](phan-tich/dong-vi-the/management-real-accepted-20261026-r1/README.md).
+
 Mới kiểm dừng lỗ thật theo thời gian mua/bán: **492/492 ca khớp**,
 biên dịch **0 lỗi, 0 cảnh báo**. Hàm sửa và khối báo lỗi được cấp trả lời;
 chưa phải toàn quản lý hoặc EA.
