@@ -124,3 +124,8 @@ còn lại, nơi gọi, điều phối và toàn EA vẫn mở.
 Trong 924 ca dừng ảo có 364 ca đầu nhánh, 156 ca theo thời gian,
 220 ca theo khoảng cách và 184 ca kiểm trượt giá. Các ca này dùng
 dịch vụ con giả lập ở ranh giới lời gọi; chưa chứng minh giao dịch thật.
+
+Đã sửa ba nơi gọi đóng sang hàm kiểm điều kiện như gốc. Kiểm lại nguồn
+hiện hành: 340/340, 266/266 và 924/924 ca khớp; thêm 36/36 ca chạy
+hàm kiểm đóng thật từ ba nơi gọi, luôn chặn trước gửi lệnh.
+[Bằng chứng và giới hạn](../PHAN-TICH-GHEP-KIEM-DONG-QUAN-LY-BOT-1.md).

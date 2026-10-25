@@ -1,0 +1,17 @@
+{
+  "cases": 924,
+  "matched": 924,
+  "failed": 0,
+  "first_failures": [],
+  "slice_only": true,
+  "whole_bot_complete": false,
+  "hashes": {
+    "cases.bin": "2ba6856612d6efb842f8f91c3a5586fd3c9fabb4efbd29f81a9eb5a7f50e9e73",
+    "original-results.bin": "64542376799cac87132e3bbe6cb94309d4dc9304654223e2e61467abdc64257d",
+    "mql5-results.bin": "64542376799cac87132e3bbe6cb94309d4dc9304654223e2e61467abdc64257d"
+  },
+  "limits": [
+    "Only native virtual-start slices; remaining virtual trailing and outer management not executed.",
+    "Virtual-table, delay, stamp, modify and close children supplied at call boundary; children separately verified."
+  ]
+}

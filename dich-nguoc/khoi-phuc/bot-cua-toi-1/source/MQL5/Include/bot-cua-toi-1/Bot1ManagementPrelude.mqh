@@ -78,7 +78,8 @@ void Bot1CloseManagementCandle(const bool buy,const string &symbol,
                               const uchar &enabled,const uchar &timeframe,const bool alternate,
                               const Bot1ManagedPosition &position,
                               Bot1PendingRequestState &state,Bot1TradeSendOptions &options,
-                              const ulong &deviation)
+                              const ulong &deviation,const MqlTick &tick,
+                              const double &threshold_a,const double &threshold_b)
 {
    if(enabled!=1) return;
    long previous=(long)iTime(symbol,Bot1ManagementCandleTimeframe(timeframe,alternate),1);
@@ -90,7 +91,8 @@ void Bot1CloseManagementCandle(const bool buy,const string &symbol,
    if(!(buy ? close<open : open<close)) return;
    close=iClose(symbol,Bot1ManagementCandleTimeframe(timeframe,alternate),1);
    if(!(buy ? close<position.open_price : position.open_price<close)) return;
-   Bot1ClosePosition(state,options,deviation,(ulong)(long)position.ticket_number);
+   Bot1TryClosePosition(state,options,deviation,tick.bid,tick.ask,threshold_a,threshold_b,
+                        (ulong)(long)position.ticket_number);
    Print("closing candle confirmation");
 }
 
@@ -132,7 +134,8 @@ bool Bot1StartVirtualManagement(const bool buy,const string &symbol,const double
                                 Bot1VirtualStopState &table,long &open_tickets[],
                                 double &initial_level,double &current_level,
                                 Bot1PendingRequestState &state,Bot1TradeSendOptions &options,
-                                const ulong &deviation)
+                                const ulong &deviation,const double &threshold_a,
+                                const double &threshold_b)
 {
    long ticket=(long)position.ticket_number;
    initial_level=Bot1VirtualStopLevel(table,open_tickets,symbol,unit,buy ? 1 : 2,
@@ -141,7 +144,8 @@ bool Bot1StartVirtualManagement(const bool buy,const string &symbol,const double
    if(buy ? tick.bid<=initial_level : initial_level<=tick.ask)
    {
       SymbolInfoTick(symbol,tick);
-      Bot1ClosePosition(state,options,deviation,(ulong)ticket);
+      Bot1TryClosePosition(state,options,deviation,tick.bid,tick.ask,threshold_a,threshold_b,
+                           (ulong)ticket);
       return true;
    }
    if(Bot1VirtualStopDelayPassed(table,delay_seconds,ticket))
@@ -194,7 +198,8 @@ bool Bot1AdvanceDistanceVirtualStop(const bool buy,const string &symbol,const do
                                     MqlTick &tick,const double &volumes[],const uint &strategy_index,
                                     double &current_level,bool &changed,
                                     Bot1PendingRequestState &state,Bot1TradeSendOptions &options,
-                                    const ulong &deviation)
+                                    const ulong &deviation,const double &threshold_a,
+                                    const double &threshold_b)
 {
    if(!(0.0<trail_distance)) return false;
    double level=current_level;
@@ -222,7 +227,8 @@ bool Bot1AdvanceDistanceVirtualStop(const bool buy,const string &symbol,const do
       double minimum=SymbolInfoDouble(symbol,SYMBOL_VOLUME_MIN);
       if(minimum<=volume)
       {
-         Bot1ClosePosition(state,options,deviation,(ulong)(long)position.ticket_number);
+         Bot1TryClosePosition(state,options,deviation,tick.bid,tick.ask,threshold_a,threshold_b,
+                              (ulong)(long)position.ticket_number);
          return true;
       }
    }

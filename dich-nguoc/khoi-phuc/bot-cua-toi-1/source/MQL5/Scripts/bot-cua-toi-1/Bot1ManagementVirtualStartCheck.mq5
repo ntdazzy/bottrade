@@ -9,6 +9,8 @@ int VCalls=0,VFault=0,VDigitsIndex=0,VDigits[2],VDelay=0,VModify=0,VScenario=0,V
 double VLevel=0.0,VPoint=0.0,VBid=0.0,VAsk=0.0,VCurrent=0.0,VMinimum=0.0;
 long VNow=0;
 MqlTick VTickData;
+ulong VExpectedDeviation=(ulong)0x0123456789abcdef;
+double VThresholdA=1.25,VThresholdB=2.5;
 ulong VHash=0;
 ulong VBits(const double value) { VirtualStartBits b;b.d=value;return b.u; }
 ulong VText(const string value)
@@ -53,8 +55,15 @@ bool VModifyPosition(Bot1PendingRequestState &state,Bot1TradeSendOptions &option
 {
    VTrace(5,ticket,VBits(sl),VBits(tp),(ulong)VModify);VChanged(5);return VModify!=0;
 }
-void VClosePosition(Bot1PendingRequestState &state,Bot1TradeSendOptions &options,
-                     const ulong &deviation,const ulong ticket) { VTrace(8,ticket); }
+void VTryClosePosition(Bot1PendingRequestState &state,Bot1TradeSendOptions &options,
+                        const ulong &deviation,const double &reference_a,const double &reference_b,
+                        const double &threshold_a,const double &threshold_b,const ulong ticket)
+{
+   if(deviation!=VExpectedDeviation || VBits(reference_a)!=VBits(VTickData.bid) ||
+      VBits(reference_b)!=VBits(VTickData.ask) || VBits(threshold_a)!=VBits(VThresholdA) ||
+      VBits(threshold_b)!=VBits(VThresholdB)) VFault=14;
+   VTrace(8,ticket);
+}
 long VSymbolDigits(const string symbol,const ENUM_SYMBOL_INFO_INTEGER property)
 {
    if(symbol!="CHECK" || property!=SYMBOL_DIGITS || VDigitsIndex>=2) { VFault=2;return 0; }
@@ -75,7 +84,7 @@ bool VTick(const string symbol,MqlTick &tick)
 #define Bot1VirtualStopDelayPassed VWait
 #define Bot1VirtualStopStamp VStamp
 #define Bot1ModifyPosition VModifyPosition
-#define Bot1ClosePosition VClosePosition
+#define Bot1TryClosePosition VTryClosePosition
 #define SymbolInfoInteger VSymbolDigits
 #define SymbolInfoDouble VSymbolPoint
 #define SymbolInfoTick VTick
@@ -86,7 +95,7 @@ bool VTick(const string symbol,MqlTick &tick)
 #undef Bot1VirtualStopDelayPassed
 #undef Bot1VirtualStopStamp
 #undef Bot1ModifyPosition
-#undef Bot1ClosePosition
+#undef Bot1TryClosePosition
 #undef SymbolInfoInteger
 #undef SymbolInfoDouble
 #undef SymbolInfoTick
@@ -109,7 +118,7 @@ int OnStart()
    int result=FileOpen(folder+"mql5-results.bin",FILE_WRITE|FILE_BIN);
    if(result==INVALID_HANDLE) { FileClose(source);return 8; }
    FileWriteInteger(result,magic);FileWriteInteger(result,version);FileWriteInteger(result,count);
-   string symbol="CHECK";ulong deviation=0;int delay=99;long tickets[];
+   string symbol="CHECK";int delay=99;long tickets[];
    Bot1VirtualStopState table;ZeroMemory(table);
    Bot1PendingRequestState state;ZeroMemory(state);Bot1TradeSendOptions options;ZeroMemory(options);
    for(int i=0;i<count;i++)
@@ -134,9 +143,9 @@ int OnStart()
       ZeroMemory(VTickData);VTickData.bid=VBid;VTickData.ask=VAsk;position.opened=opened;
       double initial=VLevel;VCurrent=stage==0 ? 666. : VLevel;VCalls=VDigitsIndex=0;VHash=(ulong)0xcbf29ce484222325;
       bool closed=false;
-      if(stage==0) closed=Bot1StartVirtualManagement(buy!=0,symbol,unit,distance,delay,position,VTickData,table,tickets,initial,VCurrent,state,options,deviation);
+      if(stage==0) closed=Bot1StartVirtualManagement(buy!=0,symbol,unit,distance,delay,position,VTickData,table,tickets,initial,VCurrent,state,options,VExpectedDeviation,VThresholdA,VThresholdB);
       else if(stage==1) Bot1AdvanceTimedVirtualStop(buy!=0,symbol,unit,activation,timed_distance,seconds,freeze_distance,position,VTickData,VCurrent,changed);
-      else if(stage==2) closed=Bot1AdvanceDistanceVirtualStop(buy!=0,symbol,unit,trail,trail_step,trail_start,trail_limit,anchor,position,VTickData,volumes,strategy_index,VCurrent,changed,state,options,deviation);
+      else if(stage==2) closed=Bot1AdvanceDistanceVirtualStop(buy!=0,symbol,unit,trail,trail_step,trail_start,trail_limit,anchor,position,VTickData,volumes,strategy_index,VCurrent,changed,state,options,VExpectedDeviation,VThresholdA,VThresholdB);
       else if(stage==3) Bot1AdvanceSlippageVirtualStop(buy!=0,symbol,unit,slippage_enabled,distance_passed,anchor,trail,trail_start,trail_limit,freeze_distance,position,VTickData,VCurrent,changed);
       else VFault=12;
       FileWriteInteger(result,id);FileWriteInteger(result,(int)closed);FileWriteInteger(result,(int)changed);

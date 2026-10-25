@@ -1,0 +1,18 @@
+{
+  "cases": 36,
+  "failed": 0,
+  "matched": 36,
+  "first_failures": [],
+  "script_status": [
+    0,
+    36
+  ],
+  "result_sha256": "d642cdce25b755d9f487228b8c05eba1332220a5ab88d1decb1b882aeb033287",
+  "binary_sha256": "8c6904f9a86c077969fe4b4dc25196f4bc5695a7e628ca98195c1af7dd3fdb4f",
+  "real_close_guard_executed": true,
+  "is_stopped_always_true": true,
+  "whole_bot_complete": false,
+  "limits": [
+    "Checks caller links and supplied blocked/stopped guard paths; not a native full-manager run, send-path comparison or full EA."
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "original_ex5_sha256": "a3b0de423a06e10ebedc279307b93d7cb9188ba2bb5de77131a913c865b0e922",
+  "tool_sha256": "f5555f42e1e7115f134fca29843e117754ee5375ed33218ad8e3e6a5d4ec44ad",
+  "dependency_sha256": "f5dbe950896e58a00331ef32473ccebdcbbf03a9627e8c12449c7f4087e6a49d",
+  "analysis_sha256": "88ac3446d1c8a0b209c06a94f3a0f6f668850776df92b5b427c84577fa34a085",
+  "sources_sha256": {
+    "Include/bot-cua-toi-1/Bot1ManagementPrelude.mqh": "2df9994dae1ba586adb7135e660a316e45a8766842eb94a9d93943ffdb52ab29",
+    "Include/bot-cua-toi-1/Bot1PriceLevels.mqh": "601bdd551e24e3ac9a7742cc00e057d881b069ab672843bec31b3f32a43316b1",
+    "Include/bot-cua-toi-1/Bot1PositionModify.mqh": "0bf230d471ffd384f32df9a57794d65ef1cd9ab91b3ccebe41c52d6d12be5472",
+    "Include/bot-cua-toi-1/Bot1PositionClose.mqh": "03c79f46a202b8a06ddab6fdae88291d4dbf30a0c2d6f99c0ff30fe24ffc21d5",
+    "Include/bot-cua-toi-1/Bot1VirtualStops.mqh": "da7aa4f6ff38c97aa4e9288620f7e975d7255c598468948a515f8de2f2b7f400",
+    "Scripts/bot-cua-toi-1/Bot1ManagementVirtualStartCheck.mq5": "b80cec6f9ada9255c84eabeecac9db85dbd7c2710613ff1cc790da0225bb622a"
+  },
+  "cases": 924,
+  "exit_code": 0,
+  "binary_sha256": "15d6c4b35c01ba75d77927754b8fa20088a1104a53ac8cef909dd59ea2c47586",
+  "build_receipt_sha256": "51052effadff1ebf2372b222d8b664262285e610a261eb105c98aa1305cfe3be",
+  "result_sha256": "64542376799cac87132e3bbe6cb94309d4dc9304654223e2e61467abdc64257d",
+  "slice_only": true
+}

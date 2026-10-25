@@ -14,6 +14,9 @@ double SL=0.0,TP=0.0,PriceOpen=0.0,Volume=0.0,Unit=0.0,Stop=0.0,Take=0.0;
 double Bid=0.0,Ask=0.0,Closes[4],Opens[2];
 uchar CandleOn[2],Timeframes[2];
 string TestSymbol,PositionSymbol,TestComment;
+MqlTick TestTick;
+ulong ExpectedDeviation=(ulong)0x0123456789abcdef;
+double ThresholdA=1.25,ThresholdB=2.5;
 
 ulong Bits(const double value) { PreludeBits x;x.d=value;return x.u; }
 ulong TextHash(const string value)
@@ -84,8 +87,15 @@ bool CheckModify(Bot1PendingRequestState &state,Bot1TradeSendOptions &options,
 {
    Trace(8,ticket,Bits(sl),Bits(tp));return false;
 }
-void CheckClose(Bot1PendingRequestState &state,Bot1TradeSendOptions &options,
-                const ulong &deviation,const ulong ticket) { Trace(9,ticket); }
+void CheckTryClose(Bot1PendingRequestState &state,Bot1TradeSendOptions &options,
+                   const ulong &deviation,const double &reference_a,const double &reference_b,
+                   const double &threshold_a,const double &threshold_b,const ulong ticket)
+{
+   if(deviation!=ExpectedDeviation || Bits(reference_a)!=Bits(TestTick.bid) ||
+      Bits(reference_b)!=Bits(TestTick.ask) || Bits(threshold_a)!=Bits(ThresholdA) ||
+      Bits(threshold_b)!=Bits(ThresholdB)) Fault=9;
+   Trace(9,ticket);
+}
 datetime CheckTime(const string symbol,const ENUM_TIMEFRAMES timeframe,const int shift)
 {
    if(TimeIndex>=4) { Fault=10;return 0; }
@@ -109,7 +119,7 @@ double CheckOpenPrice(const string symbol,const ENUM_TIMEFRAMES timeframe,const 
 #define SymbolInfoTick CheckTick
 #define Print CheckPrint
 #define Bot1ModifyPosition CheckModify
-#define Bot1ClosePosition CheckClose
+#define Bot1TryClosePosition CheckTryClose
 #define iTime CheckTime
 #define iClose CheckClosePrice
 #define iOpen CheckOpenPrice
@@ -122,7 +132,7 @@ double CheckOpenPrice(const string symbol,const ENUM_TIMEFRAMES timeframe,const 
 #undef SymbolInfoTick
 #undef Print
 #undef Bot1ModifyPosition
-#undef Bot1ClosePosition
+#undef Bot1TryClosePosition
 #undef iTime
 #undef iClose
 #undef iOpen
@@ -184,18 +194,18 @@ int OnStart()
       for(int j=0;j<2;j++) Opens[j]=FileReadDouble(input_file);
       TestSymbol=ReadText(input_file);PositionSymbol=ReadText(input_file);TestComment=ReadText(input_file);
       Bot1ManagedPosition position;ZeroMemory(position);
-      MqlTick tick;ZeroMemory(tick);tick.bid=-100.0;tick.ask=-101.0;
+      ZeroMemory(TestTick);TestTick.bid=-100.0;TestTick.ask=-101.0;
       Bot1PendingRequestState state;ZeroMemory(state);Bot1TradeSendOptions options;ZeroMemory(options);
-      ulong ticket=0,deviation=0;
+      ulong ticket=0,deviation=ExpectedDeviation;
       Calls=DigitIndex=TimeIndex=CloseIndex=OpenIndex=0;Hash=(ulong)0xcbf29ce484222325;
-      bool accepted=Bot1ReadManagementPosition(0,buy!=0,ExpectedMagic,Enabled,TestSymbol,ticket,tick,position);
+      bool accepted=Bot1ReadManagementPosition(0,buy!=0,ExpectedMagic,Enabled,TestSymbol,ticket,TestTick,position);
       if(accepted)
       {
          Bot1FillManagementInitialLevels(buy!=0,TestSymbol,Unit,Stop,Take,position,state,options);
-         Bot1CloseManagementCandle(buy!=0,TestSymbol,CandleOn[0],Timeframes[0],false,position,state,options,deviation);
-         Bot1CloseManagementCandle(buy!=0,TestSymbol,CandleOn[1],Timeframes[1],true,position,state,options,deviation);
+         Bot1CloseManagementCandle(buy!=0,TestSymbol,CandleOn[0],Timeframes[0],false,position,state,options,deviation,TestTick,ThresholdA,ThresholdB);
+         Bot1CloseManagementCandle(buy!=0,TestSymbol,CandleOn[1],Timeframes[1],true,position,state,options,deviation,TestTick,ThresholdA,ThresholdB);
       }
-      WritePosition(output,id,accepted,ticket,position,tick);
+      WritePosition(output,id,accepted,ticket,position,TestTick);
    }
    if(FileTell(input_file)!=FileSize(input_file)) Fault=27;
    FileClose(input_file);FileClose(output);

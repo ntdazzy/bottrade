@@ -40,3 +40,15 @@ Hiện chưa có phần bổ sung thỏa điều kiện đó. Bộ kiểm bảng
   lượt r2 mới có phép so đạt.
 - Máy thử riêng `.local/mt5-bot1-thread-20261025`; chỉ chạy chương trình
   kiểm với giao dịch và DLL tắt. Không dùng máy thử chung hoặc MT5 chính.
+
+## Kiểm bổ sung của chat điều phối
+
+Đã sửa ba nơi gọi đóng để qua Bot1TryClosePosition (0x3d010) như mã gốc,
+thay cho gọi trực tiếp Bot1ClosePosition. Nguồn hiện hành đã khớp lại
+340 ca phần đầu, 266 ca bảng và 924 ca dừng ảo. Thêm 36 ca chạy hàm
+kiểm đóng thật tại ba nơi gọi, hai chiều; mọi đường gửi bị chặn bằng
+IsStopped=true. Cả bốn bản thành công 0 lỗi/cảnh báo. Chưa có EA đầy đủ.
+Xem ../PHAN-TICH-GHEP-KIEM-DONG-QUAN-LY-BOT-1.md và các lượt mới
+prelude-guard-20261025-r2, cache-guard-20261025-r1,
+virtual-guard-20261025-r2, close-link-20261025-r2. Lượt r2 còn kiểm
+đủ đối số hàm đóng và dùng hai giá mua/bán khác nhau theo rà độc lập.
