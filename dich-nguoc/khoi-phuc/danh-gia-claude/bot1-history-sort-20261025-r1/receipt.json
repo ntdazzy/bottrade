@@ -1,0 +1,82 @@
+{
+  "status": "completed-proposal-host-tested",
+  "session_id": "b751396e-1166-4172-8b45-1cf9ce178a64",
+  "started": "2026-10-25T07:23:40.7241827Z",
+  "archived_utc": "2026-10-25T08:02:05.863146+00:00",
+  "actual_requests": 10,
+  "requests": [
+    {
+      "timestamp": "2026-10-25T07:23:44.695Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T07:24:05.012Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T07:24:12.469Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T07:24:21.325Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T07:24:26.760Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T07:24:35.688Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T07:27:04.408Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T07:27:10.168Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T07:28:34.586Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T07:28:56.229Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    }
+  ],
+  "writes": [
+    {
+      "timestamp": "2026-10-25T07:28:34.515Z",
+      "tool": "Write",
+      "path": "C:\\Users\\NTD\\Desktop\\Bot Market Demo\\dich-nguoc\\khoi-phuc\\claude-thuc-hien\\bot1-history-sort-20261025-r1\\Bot1HistorySort.mqh"
+    },
+    {
+      "timestamp": "2026-10-25T07:28:56.176Z",
+      "tool": "Write",
+      "path": "C:\\Users\\NTD\\Desktop\\Bot Market Demo\\dich-nguoc\\khoi-phuc\\claude-thuc-hien\\bot1-history-sort-20261025-r1\\SUMMARY.md"
+    }
+  ],
+  "write_scope_verified": true,
+  "model_effort_verified": true,
+  "ultracode_requested": true,
+  "ultracode_runtime_confirmed": null,
+  "deliverables_sha256": {
+    "Bot1HistorySort.mqh": "9954854b21c7973835eb0c6c589e93d3b655b509d37bbcaa9c289094a01fd4e3",
+    "SUMMARY.md": "be9381819c252e601574e367396c6ff6148df95d176c7e6f8a1e226a34ebc3d9",
+    "TASK.md": "90eaf2c7744bab9d7647154b3066946fa515bcd190243e9ff5129604cd040803"
+  },
+  "response_sha256": "7a555a410fffc8a9ee08c43ba12c737c68bfee82788860f9cd23328ccc0936ec",
+  "whole_bot_complete": false
+}

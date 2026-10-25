@@ -109,3 +109,8 @@ lần mở MT5 riêng đạt. [Kết quả mới](../PHAN-TICH-RUT-TIEN-BOT-1-3.
 - [Kết quả kiểm](bang-chung/kiem-muc-gia/gia-20261023-r1/comparison.json)
 
 Thư mục `phan-tich/ban-ex5-05/` là bằng chứng cũ, được giữ nguyên.
+
+Đã dựng hàm sắp xếp hai mảng lịch sử `Bot1HistorySort.mqh` tại `0x47950`.
+Lượt `history-sort-20261025-r1` khớp 512/512 ca thường với mã gốc,
+biên dịch 0 lỗi/0 cảnh báo. Ca lỗi, nơi gọi, phần tổng hợp lịch sử,
+khởi động lại và toàn EA chưa kiểm.

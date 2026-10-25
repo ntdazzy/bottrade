@@ -1,5 +1,12 @@
 # bot-cua-toi-3
 
+Đã dựng năm hàm bảng dừng/chốt ảo: 291/291 ca thường khớp mã gốc,
+MQL5 và máy đo quá khứ riêng; hai ca lỗi mảng khớp loại lỗi/trạng thái.
+Biên dịch 0 lỗi/cảnh báo. So cả 2.500 số trong hai bảng, mảng vé và
+thứ tự lời gọi; dữ liệu vị thế/giờ được cấp. Chưa ghép quản lý hoặc
+EA đầy đủ, chưa kiểm vòng đời và lỗi tài khoản thật.
+[Tiến độ, nguồn và bằng chứng](TIEN-DO-LUONG-20261025.md).
+
 Đã dựng hàm sửa dừng lỗ/chốt lời vị thế theo vé `0x32a90`: kiểm
 chương trình dừng, chọn vé, tạo yêu cầu sửa rồi gửi/thông báo.
 1.596/1.596 ca khớp mã gốc/MQL5/máy đo quá khứ (83 ca dừng, 33 ca chọn
@@ -103,3 +110,8 @@ lần mở MT5 riêng đạt. [Kết quả mới](../PHAN-TICH-RUT-TIEN-BOT-1-3.
 
 Hàm `0xc30` được xuất riêng sau lần quá thời gian và ghép vào bản C đầy
 đủ. Tệp gốc, phần bổ sung và mã kiểm tra đều được giữ trong thư mục phân tích.
+
+Đã dựng hàm sắp xếp hai mảng lịch sử `Bot3HistorySort.mqh` tại `0x557f0`.
+Lượt `history-sort-20261025-r1` khớp 512/512 ca thường với mã gốc,
+biên dịch 0 lỗi/0 cảnh báo. Ca lỗi, nơi gọi, phần tổng hợp lịch sử,
+khởi động lại và toàn EA chưa kiểm.

@@ -130,3 +130,12 @@ Giữ phần chưa rõ trong bảng; không thêm luật để làm mã trông �
 - Chat điều phối còn một phiên Claude viết bộ kiểm bằng chứng
   bảng dừng ảo bot 1. Không gọi là đã bàn giao công cụ khi chưa có
   mã hoàn chỉnh và chưa chạy kiểm độc lập.
+
+Lượt tiếp theo đã giao thêm ba phiên Claude song song cho phần hàm phụ
+sắp xếp lịch sử: bot 1 `b751396e-1166-4172-8b45-1cf9ce178a64`, bot 3
+`34a7fb95-fff7-482d-8268-c0b0f12d458f`, và bộ kiểm
+`ed96b19a-5a71-4fbe-95d7-ba696ddb815c`. Nhật ký API xác nhận lần lượt
+10, 12 và 30 yêu cầu thực tế, đều `claude-opus-5-5`, effort `max`;
+Ultracode được yêu cầu nhưng chưa có bằng chứng chạy thực tế. Mã đã
+được kiểm độc lập: mỗi bot 512/512 ca thường khớp từng byte, biên dịch
+0 lỗi/0 cảnh báo. Ca lỗi ngoài mảng và nơi gọi còn thiếu.

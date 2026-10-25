@@ -1,0 +1,48 @@
+{
+  "cases": 512,
+  "exit_code": 0,
+  "seconds": 4.63,
+  "build": "b1-history-sort-02",
+  "build_receipt_sha256": "265f8384e88ee5c54e1c294bfeae58909b31b1506c3dbf9e3d007df72b26c294",
+  "binary_sha256": "90f8df6d5d2337fe494ce5792b412b4f0414088827adf8f7e53c64d6403b1a5e",
+  "metaeditor_sha256": "cf2750bde55d98a1f3b4e56bcdd4f59300d0cff5caa6760985f7ef2c2cc12229",
+  "terminal_sha256_before": "d92c969e0c141cad6f4f9083234b841e2da21862e66b3bbc9b70cbfe5a8e7a47",
+  "terminal_sha256_after": "d92c969e0c141cad6f4f9083234b841e2da21862e66b3bbc9b70cbfe5a8e7a47",
+  "original_ex5_sha256": "a3b0de423a06e10ebedc279307b93d7cb9188ba2bb5de77131a913c865b0e922",
+  "tool_sha256": "16c768a081c142b254677128661210e2f15706cb9786655625015aa41a548da0",
+  "dependencies_sha256": {
+    "kiem-gia-vao-bot-1-3.py": "22394e48932feb7242b967aa58e327d2990402f12bfe52621916f64914c9dac2",
+    "kiem-muc-gia-bot-1-3.py": "a6c447ca80029fb63ced0c9d1673bb14222a7736b04df5c410f280f8471d6a35",
+    "kiem-khoi-luong-hop-le-bot-1-3.py": "8251fb4423d6f5f2e1b79a1c53dbb25fb5a6c568bb61cddef23396dc982243f0",
+    "kiem-khoi-luong-bot-1-3.py": "32539c090422ab6bc2ce94a9fdacfd33e53c394aca58bd3827c2232d817d7f77",
+    "bien-dich.ps1": "7ab0a9054d8265106dfcf2a603bd36d41f3121a2880bf7500772a519125722dc"
+  },
+  "native_inputs_sha256": {
+    "bot-cua-toi-1/phan-tich/sap-xep/sort-20261025-r1/analysis.json": "5d174449f4a5f1349757f2988f0ada999ebee38d351390beb40d848df4e578d3",
+    "bot-cua-toi-1/phan-tich/sap-xep/sort-20261025-r1/native.txt": "da74b14c13c61a61682523472274bfe5f2de4c3ab95b5a17839fbd5db24ba131",
+    "bot-cua-toi-1/phan-tich/sap-xep/sort-20261025-r1/function.c": "1e06bb31e3a6f82f716088630f3974745b2cb5a28da783fb8140be748255d499",
+    "bot-cua-toi-1/phan-tich/sap-xep/sort-20261025-r1/native-pilot.json": "062bd7c4ee62230a2aac10f801cde21400a326aa3fab473f810f82a0dfe5555b",
+    "bot-cua-toi-1/phan-tich/luot-20261023-data-v2/metadata/import.json": "732905b62143980f94c360226bfb75120d52bfccb7e646a3a0cc9be9d3e21adb",
+    "bot-cua-toi-1/bang-chung/captures/luot-20261023-r1/capture.json": "81a7c83f595c9869d6ea278f155f10a17b97f5178d9c9c541a2ed41bcdcb956d",
+    "bot-cua-toi-1/bang-chung/luot-20261023-r1/engine-observed.json": "219c2a51597356c03c9470979a1f6e2058c8243e75669b4c9d36916856a62696"
+  },
+  "sources_sha256": {
+    "Scripts/bot-cua-toi-1/Bot1HistorySortCheck.mq5": "06a40fd13b4db91918fc161b6a279ee9b09140765a74687bf5a62dd1b8ee8e75",
+    "Include/bot-cua-toi-1/Bot1HistorySort.mqh": "9954854b21c7973835eb0c6c589e93d3b655b509d37bbcaa9c289094a01fd4e3"
+  },
+  "hashes": {
+    "mql5-results.bin": "b60cdd971c2182fbd7ced6cc77ad7e34fa7193c9a07235b9f90e9ee8bfc23ab5",
+    "script-status.bin": "baf00e0b9e04a2563ee664311136c4f84d22d5790ea9171c344e6093d6b0bd12"
+  },
+  "tested_sources_sha256": {
+    "bien-dich.ps1": "7ab0a9054d8265106dfcf2a603bd36d41f3121a2880bf7500772a519125722dc",
+    "Bot1HistorySort.mqh": "9954854b21c7973835eb0c6c589e93d3b655b509d37bbcaa9c289094a01fd4e3",
+    "Bot1HistorySortCheck.mq5": "06a40fd13b4db91918fc161b6a279ee9b09140765a74687bf5a62dd1b8ee8e75",
+    "check-tool.py": "16c768a081c142b254677128661210e2f15706cb9786655625015aa41a548da0",
+    "kiem-gia-vao-bot-1-3.py": "22394e48932feb7242b967aa58e327d2990402f12bfe52621916f64914c9dac2",
+    "kiem-khoi-luong-bot-1-3.py": "32539c090422ab6bc2ce94a9fdacfd33e53c394aca58bd3827c2232d817d7f77",
+    "kiem-khoi-luong-hop-le-bot-1-3.py": "8251fb4423d6f5f2e1b79a1c53dbb25fb5a6c568bb61cddef23396dc982243f0",
+    "kiem-muc-gia-bot-1-3.py": "a6c447ca80029fb63ced0c9d1673bb14222a7736b04df5c410f280f8471d6a35"
+  },
+  "whole_bot_complete": false
+}

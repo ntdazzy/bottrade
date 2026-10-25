@@ -17,6 +17,12 @@ phải được phân tích tiếp trước khi viết luật tương ứng.
 | Nơi gọi nội bộ chưa có trong bảng được quét | 0 | 0 |
 | Địa chỉ gọi ngoài trực tiếp chưa có nhãn trong lần quét | 0, đã đối chứng thêm 10 | 0, đã đối chứng thêm 9 |
 
+Hàm phụ sắp xếp lịch sử đã có nguồn riêng cho cả hai bot: bot 1
+`0x47950`, bot 3 `0x557f0`. Lượt `history-sort-20261025-r1` chạy
+512 ca thường mỗi bot, khớp 512/512 từng byte giữa mã gốc và MQL5,
+biên dịch 0 lỗi/0 cảnh báo. Đây chỉ là hàm phụ; chưa chứng minh toàn
+bộ phần lịch sử hoặc EA.
+
 Danh sách đầy đủ từng hàm và từng dòng cài đặt:
 
 - [Bot 1](ban-do-bot-1-3/luot-20261025-r5/bot-1.md), [dữ liệu chi tiết](ban-do-bot-1-3/luot-20261025-r5/bot-1.json).

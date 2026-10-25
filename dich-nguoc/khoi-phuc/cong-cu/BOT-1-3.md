@@ -673,3 +673,8 @@ python -I -B -X utf8 dich-nguoc/khoi-phuc/cong-cu/lap-ban-do-bot-1-3.py dich-ngu
 Menu được kiểm bằng kỹ năng điều khiển ứng dụng, không dùng mã tự bấm
 Windows. Thư mục `menu-bot-1-3/luot-20261023-r1/` giữ ảnh/cây cửa sổ,
 tệp `Defaults` do MT5 xuất và các tệp số đã nạp để đọc tên hiển thị.
+
+
+## Sắp xếp lịch sử
+
+- `kiem-sap-xep-bot-1-3.py prepare|mql5|original|compare BOT NEW_RUN [--build BUILD]`: kiểm hàm sắp xếp hai mảng lịch sử (`0x47950` bot 1, `0x557f0` bot 3). Lượt `history-sort-20261025-r1` dùng 512 ca thường: bốn tổ hợp cờ đảo, khóa unsigned lớn/trùng, mảng tăng/giảm, khoảng con, trái bằng/phía trên phải và mảng độ dài khác nhưng không đọc ngoài vùng. Kết quả gốc/MQL5 khớp 512/512 từng byte mỗi bot; biên dịch `b1-history-sort-02` và `b3-history-sort-02` đều 0/0. Ca lỗi ngoài mảng, nơi gọi và toàn phần lịch sử còn mở.
