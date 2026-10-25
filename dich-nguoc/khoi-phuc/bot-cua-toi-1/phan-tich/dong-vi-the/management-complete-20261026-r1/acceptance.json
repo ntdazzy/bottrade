@@ -1,0 +1,36 @@
+{
+  "utc": "2026-10-25T19:37:19.213269+00:00",
+  "author": "Claude Opus5.5",
+  "actual_effort": "max",
+  "actual_receipts": "danh-gia-claude/bot1-parent-20261026-r2/dispatch.json",
+  "ultracode_runtime_confirmed": null,
+  "sources": [
+    {
+      "file": "Bot1PositionManagement.mqh",
+      "proposal_sha256": "9c671265f96317d82ce7b247af0d942328ed7e1c743e340aa43f951a2938957e",
+      "canonical_sha256": "6a85427b59f4473f00c0df94d73ff79abc681ac3cada75912d9de6fcb6818ca0",
+      "adaptations": [
+        "Removed stale candidate comment",
+        "Corrected Codex spec: PositionGetDouble(POSITION_VOLUME) in emergency path"
+      ],
+      "runtime_compared": true
+    },
+    {
+      "file": "Bot1ManagementRealStart.mqh",
+      "proposal_sha256": "5f839a3ccf92f0d6d77e90b870bfcd4cd0c278974aaf57a04ad2c2c6500aac64",
+      "canonical_sha256": "71426accdf8f0fb3efa5e7fff583f54c52de51226a2d6a681a9a9b863e122eea",
+      "adaptations": [
+        "Removed stale candidate comment"
+      ],
+      "runtime_compared": true
+    }
+  ],
+  "compile_only_api_build": "b1-position-management-api-20261026-r1",
+  "runtime_build": "b1-position-management-flow-20261026-r1",
+  "run": "b1-manager-flow-20261026-r1",
+  "cases": 352,
+  "matched": 352,
+  "child_helpers_intercepted": true,
+  "whole_manager_complete": false,
+  "whole_bot_complete": false
+}

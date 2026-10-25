@@ -1,0 +1,16 @@
+{
+  "utc": "2026-10-25T19:37:19.213269+00:00",
+  "reviewer": "/root/review_bot3_parent_flow",
+  "findings": [],
+  "checked": [
+    "Manager and RealStart against functional specs plus emergency-volume correction",
+    "Factory uses inputs only and removes profile16",
+    "112-byte result,8-entry arrays,2candles,1500 stop cells and200cachecells",
+    "Native parent adapter bindings and supplied child boundaries",
+    "Cached eligibility after first total; fresh mode after real store; no virtual tail mode read"
+  ],
+  "cases_observed_after_review": 352,
+  "matched": 352,
+  "whole_manager_complete": false,
+  "whole_bot_complete": false
+}

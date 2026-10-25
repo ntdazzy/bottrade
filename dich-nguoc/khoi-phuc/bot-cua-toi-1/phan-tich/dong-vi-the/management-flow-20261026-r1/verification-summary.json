@@ -1,0 +1,24 @@
+{
+  "utc": "2026-10-25T19:37:19.213269+00:00",
+  "run": "b1-manager-flow-20261026-r1",
+  "cases": 352,
+  "matched": 352,
+  "failed": 0,
+  "output_fields": 19,
+  "native_parent_sites": 5049,
+  "result_sha256": "c6ded56f789e3b3e6d6faed8f90b4fc92c1ac218f9edd704d01470f3bc5ca041",
+  "compile_build": "b1-position-management-flow-20261026-r1",
+  "errors": 0,
+  "warnings": 0,
+  "native_body_executed_from_entry_to_return": true,
+  "child_helpers_intercepted": true,
+  "scope": [
+    "Both original management parent functions run to return, including their loop and real/virtual transitions. This is not an EA, paired terminal comparison or complete manager integration proof.",
+    "Modify, try-close, virtual stop/delay/stamp child replies and their specified provider-side effects are supplied at original call boundaries; child internals do not run here. They have separate component evidence.",
+    "Native error-code/string/Print code executes. Successful string allocation and signed decimal conversion are supplied; double text is measured separately in MT5 and supplied by value bits.",
+    "CPU both-NaN fixtures only correct measured two-NaN arithmetic. Other native instructions run in Unicorn; no physical original-run, allocation-failure or complete error coverage claim.",
+    "R12 is initialized0 in this fixture. The first zero-ticket path does not prove behavior for arbitrary incoming caller register state."
+  ],
+  "whole_manager_complete": false,
+  "whole_bot_complete": false
+}

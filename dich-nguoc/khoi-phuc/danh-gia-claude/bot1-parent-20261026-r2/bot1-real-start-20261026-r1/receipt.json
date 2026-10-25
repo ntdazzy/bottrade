@@ -1,0 +1,75 @@
+{
+  "run": "bot1-real-start-20261026-r1",
+  "session_id": "48637d97-6023-4954-8398-c2169957143b",
+  "started": "2026-10-25T19:15:39.3101818Z",
+  "snapshot_utc": "2026-10-25T19:35:54.818701+00:00",
+  "status": "delivered-unverified",
+  "response_is_error": false,
+  "terminal_reason": "completed",
+  "job_sha256": "f26b918e13414d1bb3c70f8395e2294e982d9158e97bae344f5ba1c38cf6812d",
+  "prompt_sha256": "ccc1910b7bc0b3ec1ee1d367030d4055e25784c83c8036e90036e683d9080354",
+  "response_sha256": "f1936fd044088f42d7a2415d24cbebee5a8b5536d6facde3759af6b17b90e3ad",
+  "actual_requests": 10,
+  "requests": [
+    {
+      "timestamp": "2026-10-25T19:15:43.425Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T19:15:54.277Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T19:16:03.558Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T19:16:08.677Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T19:16:15.610Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T19:16:22.860Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T19:16:30.349Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T19:16:40.247Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T19:19:19.007Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T19:19:56.715Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    }
+  ],
+  "ultracode_requested": true,
+  "ultracode_runtime_confirmed": null,
+  "journal_prefix_bytes": 1097380,
+  "journal_prefix_sha256": "4892277c16489db2914412e9831b341aa9d7c2ede898dd4d47396167da9f8862",
+  "files_sha256": {
+    "dich-nguoc/khoi-phuc/claude-thuc-hien/bot1-real-start-20261026-r1/Bot1ManagementRealStart.mqh": "5f839a3ccf92f0d6d77e90b870bfcd4cd0c278974aaf57a04ad2c2c6500aac64",
+    "dich-nguoc/khoi-phuc/claude-thuc-hien/bot1-real-start-20261026-r1/SUMMARY.md": "bb75e641c7ab428782bd1fb911989d3a41bf7faa9b011925a4e8ca411ae47f58"
+  },
+  "source_validated": false,
+  "whole_bot_complete": false
+}

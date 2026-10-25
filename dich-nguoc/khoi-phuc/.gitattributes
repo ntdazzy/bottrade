@@ -319,3 +319,17 @@
 /bot-cua-toi-1/bang-chung/kiem-quan-ly-vi-the/b1-six-native-legacy-*/** -text
 /danh-gia-claude/bot1-real-six-*/** -text
 /danh-gia-doc-lap/bot1-real-six-*/** -text
+
+/bot-cua-toi-1/source/MQL5/Include/bot-cua-toi-1/Bot1PositionManagement.mqh -text
+/bot-cua-toi-1/source/MQL5/Include/bot-cua-toi-1/Bot1ManagementRealStart.mqh -text
+/bot-cua-toi-1/source/MQL5/Scripts/bot-cua-toi-1/Bot1PositionManagement*.mq5 -text
+/bot-cua-toi-1/tests/check-position-management-flow.py -text
+/bot-cua-toi-1/tests/manager_flow_cases.py -text
+/bot-cua-toi-1/bang-chung/bien-dich/b1-position-management-*/** -text
+/bot-cua-toi-1/phan-tich/dong-vi-the/management-flow-*/** -text
+/bot-cua-toi-1/phan-tich/dong-vi-the/management-complete-*/** -text
+/claude-thuc-hien/bot1-manager-*/** -text
+/danh-gia-claude/bot1-parent-*/** -text
+/danh-gia-doc-lap/bot1-parent-*/** -text
+/bot-cua-toi-3/phan-tich/chuong-trinh-chinh/main-calls-*/** -text
+/bot-cua-toi-3/phan-tich/chuong-trinh-chinh/bar-gate-*/** -text
