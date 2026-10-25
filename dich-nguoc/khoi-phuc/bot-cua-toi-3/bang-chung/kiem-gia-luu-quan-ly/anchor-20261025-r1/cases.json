@@ -1,0 +1,4746 @@
+[
+  {
+    "id": 0,
+    "group": "missing-ticket-fill",
+    "side": 0,
+    "flag": 1,
+    "fill": 0,
+    "digits": 3,
+    "ticket": 4664419695607152640,
+    "opened": 4636737291354636288,
+    "unit": 4591870180066957722,
+    "step": 4613937818241073152,
+    "limit": 4611686018427387904,
+    "initial_step": 13875370549602942976,
+    "rows": [],
+    "control": 0,
+    "control_row": 0,
+    "control_values": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": 1,
+    "group": "missing-ticket-fill",
+    "side": 0,
+    "flag": 1,
+    "fill": 1,
+    "digits": 3,
+    "ticket": 4664419695607152640,
+    "opened": 4636737291354636288,
+    "unit": 4591870180066957722,
+    "step": 4613937818241073152,
+    "limit": 4611686018427387904,
+    "initial_step": 13875370549602942976,
+    "rows": [],
+    "control": 0,
+    "control_row": 0,
+    "control_values": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": 2,
+    "group": "missing-ticket-fill",
+    "side": 0,
+    "flag": 1,
+    "fill": 2,
+    "digits": 3,
+    "ticket": 4664419695607152640,
+    "opened": 4636737291354636288,
+    "unit": 4591870180066957722,
+    "step": 4613937818241073152,
+    "limit": 4611686018427387904,
+    "initial_step": 13875370549602942976,
+    "rows": [],
+    "control": 0,
+    "control_row": 0,
+    "control_values": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": 3,
+    "group": "missing-ticket-fill",
+    "side": 0,
+    "flag": 1,
+    "fill": 3,
+    "digits": 3,
+    "ticket": 4664419695607152640,
+    "opened": 4636737291354636288,
+    "unit": 4591870180066957722,
+    "step": 4613937818241073152,
+    "limit": 4611686018427387904,
+    "initial_step": 13875370549602942976,
+    "rows": [],
+    "control": 0,
+    "control_row": 0,
+    "control_values": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": 4,
+    "group": "ticket-conversion",
+    "side": 0,
+    "flag": 1,
+    "fill": 1,
+    "digits": 3,
+    "ticket": 0,
+    "opened": 4636737291354636288,
+    "unit": 4591870180066957722,
+    "step": 4613937818241073152,
+    "limit": 4611686018427387904,
+    "initial_step": 13875370549602942976,
+    "rows": [],
+    "control": 0,
+    "control_row": 0,
+    "control_values": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": 5,
+    "group": "ticket-conversion",
+    "side": 0,
+    "flag": 1,
+    "fill": 1,
+    "digits": 3,
+    "ticket": 9223372036854775808,
+    "opened": 4636737291354636288,
+    "unit": 4591870180066957722,
+    "step": 4613937818241073152,
+    "limit": 4611686018427387904,
+    "initial_step": 13875370549602942976,
+    "rows": [],
+    "control": 0,
+    "control_row": 0,
+    "control_values": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": 6,
+    "group": "ticket-conversion",
+    "side": 0,
+    "flag": 1,
+    "fill": 1,
+    "digits": 3,
+    "ticket": 4607182418800017408,
+    "opened": 4636737291354636288,
+    "unit": 4591870180066957722,
+    "step": 4613937818241073152,
+    "limit": 4611686018427387904,
+    "initial_step": 13875370549602942976,
+    "rows": [],
+    "control": 0,
+    "control_row": 0,
+    "control_values": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": 7,
+    "group": "ticket-conversion",
+    "side": 0,
+    "flag": 1,
+    "fill": 1,
+    "digits": 3,
+    "ticket": 13830554455654793216,
+    "opened": 4636737291354636288,
+    "unit": 4591870180066957722,
+    "step": 4613937818241073152,
+    "limit": 4611686018427387904,
+    "initial_step": 13875370549602942976,
+    "rows": [],
+    "control": 0,
+    "control_row": 0,
+    "control_values": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": 8,
+    "group": "ticket-conversion",
+    "side": 0,
+    "flag": 1,
+    "fill": 1,
+    "digits": 3,
+    "ticket": 4845873199050653696,
+    "opened": 4636737291354636288,
+    "unit": 4591870180066957722,
+    "step": 4613937818241073152,
+    "limit": 4611686018427387904,
+    "initial_step": 13875370549602942976,
+    "rows": [],
+    "control": 0,
+    "control_row": 0,
+    "control_values": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": 9,
+    "group": "ticket-conversion",
+    "side": 0,
+    "flag": 1,
+    "fill": 1,
+    "digits": 3,
+    "ticket": 14114281232179134464,
+    "opened": 4636737291354636288,
+    "unit": 4591870180066957722,
+    "step": 4613937818241073152,
+    "limit": 4611686018427387904,
+    "initial_step": 13875370549602942976,
+    "rows": [],
+    "control": 0,
+    "control_row": 0,
+    "control_values": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": 10,
+    "group": "ticket-conversion",
+    "side": 0,
+    "flag": 1,
+    "fill": 1,
+    "digits": 3,
+    "ticket": 4890909195324358656,
+    "opened": 4636737291354636288,
+    "unit": 4591870180066957722,
+    "step": 4613937818241073152,
+    "limit": 4611686018427387904,
+    "initial_step": 13875370549602942976,
+    "rows": [],
+    "control": 0,
+    "control_row": 0,
+    "control_values": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": 11,
+    "group": "ticket-conversion",
+    "side": 0,
+    "flag": 1,
+    "fill": 1,
+    "digits": 3,
+    "ticket": 5055640609639927018,
+    "opened": 4636737291354636288,
+    "unit": 4591870180066957722,
+    "step": 4613937818241073152,
+    "limit": 4611686018427387904,
+    "initial_step": 13875370549602942976,
+    "rows": [],
+    "control": 0,
+    "control_row": 0,
+    "control_values": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": 12,
+    "group": "ticket-conversion",
+    "side": 0,
+    "flag": 1,
+    "fill": 1,
+    "digits": 3,
+    "ticket": 14279012646494702826,
+    "opened": 4636737291354636288,
+    "unit": 4591870180066957722,
+    "step": 4613937818241073152,
+    "limit": 4611686018427387904,
+    "initial_step": 13875370549602942976,
+    "rows": [],
+    "control": 0,
+    "control_row": 0,
+    "control_values": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": 13,
+    "group": "ticket-conversion",
+    "side": 0,
+    "flag": 1,
+    "fill": 1,
+    "digits": 3,
+    "ticket": 9221120237041090560,
+    "opened": 4636737291354636288,
+    "unit": 4591870180066957722,
+    "step": 4613937818241073152,
+    "limit": 4611686018427387904,
+    "initial_step": 13875370549602942976,
+    "rows": [],
+    "control": 0,
+    "control_row": 0,
+    "control_values": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": 14,
+    "group": "ticket-conversion",
+    "side": 0,
+    "flag": 1,
+    "fill": 1,
+    "digits": 3,
+    "ticket": 9218868437227405312,
+    "opened": 4636737291354636288,
+    "unit": 4591870180066957722,
+    "step": 4613937818241073152,
+    "limit": 4611686018427387904,
+    "initial_step": 13875370549602942976,
+    "rows": [],
+    "control": 0,
+    "control_row": 0,
+    "control_values": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": 15,
+    "group": "ticket-conversion",
+    "side": 0,
+    "flag": 1,
+    "fill": 1,
+    "digits": 3,
+    "ticket": 18442240474082181120,
+    "opened": 4636737291354636288,
+    "unit": 4591870180066957722,
+    "step": 4613937818241073152,
+    "limit": 4611686018427387904,
+    "initial_step": 13875370549602942976,
+    "rows": [],
+    "control": 0,
+    "control_row": 0,
+    "control_values": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": 16,
+    "group": "reference-byte",
+    "side": 0,
+    "flag": 0,
+    "fill": 0,
+    "digits": 3,
+    "ticket": 4664419695607152640,
+    "opened": 4636737291354636288,
+    "unit": 4591870180066957722,
+    "step": 4613937818241073152,
+    "limit": 4611686018427387904,
+    "initial_step": 13875370549602942976,
+    "rows": [
+      [
+        0,
+        4664419695607152640,
+        4636666922610458624
+      ]
+    ],
+    "control": 0,
+    "control_row": 0,
+    "control_values": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": 17,
+    "group": "reference-byte",
+    "side": 0,
+    "flag": 1,
+    "fill": 0,
+    "digits": 3,
+    "ticket": 4664419695607152640,
+    "opened": 4636737291354636288,
+    "unit": 4591870180066957722,
+    "step": 4613937818241073152,
+    "limit": 4611686018427387904,
+    "initial_step": 13875370549602942976,
+    "rows": [
+      [
+        0,
+        4664419695607152640,
+        4636666922610458624
+      ]
+    ],
+    "control": 0,
+    "control_row": 0,
+    "control_values": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": 18,
+    "group": "reference-byte",
+    "side": 0,
+    "flag": 2,
+    "fill": 0,
+    "digits": 3,
+    "ticket": 4664419695607152640,
+    "opened": 4636737291354636288,
+    "unit": 4591870180066957722,
+    "step": 4613937818241073152,
+    "limit": 4611686018427387904,
+    "initial_step": 13875370549602942976,
+    "rows": [
+      [
+        0,
+        4664419695607152640,
+        4636666922610458624
+      ]
+    ],
+    "control": 0,
+    "control_row": 0,
+    "control_values": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": 19,
+    "group": "reference-byte",
+    "side": 0,
+    "flag": 255,
+    "fill": 0,
+    "digits": 3,
+    "ticket": 4664419695607152640,
+    "opened": 4636737291354636288,
+    "unit": 4591870180066957722,
+    "step": 4613937818241073152,
+    "limit": 4611686018427387904,
+    "initial_step": 13875370549602942976,
+    "rows": [
+      [
+        0,
+        4664419695607152640,
+        4636666922610458624
+      ]
+    ],
+    "control": 0,
+    "control_row": 0,
+    "control_values": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": 20,
+    "group": "cached-level-rounding",
+    "side": 0,
+    "flag": 1,
+    "fill": 0,
+    "digits": 3,
+    "ticket": 4664419695607152640,
+    "opened": 4636737291354636288,
+    "unit": 4591870180066957722,
+    "step": 4613937818241073152,
+    "limit": 4611686018427387904,
+    "initial_step": 13875370549602942976,
+    "rows": [
+      [
+        3,
+        4664419695607152640,
+        0
+      ]
+    ],
+    "control": 0,
+    "control_row": 0,
+    "control_values": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": 21,
+    "group": "new-opened-price",
+    "side": 0,
+    "flag": 1,
+    "fill": 0,
+    "digits": 3,
+    "ticket": 4664419695607152640,
+    "opened": 0,
+    "unit": 4591870180066957722,
+    "step": 4613937818241073152,
+    "limit": 4611686018427387904,
+    "initial_step": 13875370549602942976,
+    "rows": [],
+    "control": 0,
+    "control_row": 0,
+    "control_values": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": 22,
+    "group": "cached-level-rounding",
+    "side": 0,
+    "flag": 1,
+    "fill": 0,
+    "digits": 3,
+    "ticket": 4664419695607152640,
+    "opened": 4636737291354636288,
+    "unit": 4591870180066957722,
+    "step": 4613937818241073152,
+    "limit": 4611686018427387904,
+    "initial_step": 13875370549602942976,
+    "rows": [
+      [
+        3,
+        4664419695607152640,
+        9223372036854775808
+      ]
+    ],
+    "control": 0,
+    "control_row": 0,
+    "control_values": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": 23,
+    "group": "new-opened-price",
+    "side": 0,
+    "flag": 1,
+    "fill": 0,
+    "digits": 3,
+    "ticket": 4664419695607152640,
+    "opened": 9223372036854775808,
+    "unit": 4591870180066957722,
+    "step": 4613937818241073152,
+    "limit": 4611686018427387904,
+    "initial_step": 13875370549602942976,
+    "rows": [],
+    "control": 0,
+    "control_row": 0,
+    "control_values": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": 24,
+    "group": "cached-level-rounding",
+    "side": 0,
+    "flag": 1,
+    "fill": 0,
+    "digits": 3,
+    "ticket": 4664419695607152640,
+    "opened": 4636737291354636288,
+    "unit": 4591870180066957722,
+    "step": 4613937818241073152,
+    "limit": 4611686018427387904,
+    "initial_step": 13875370549602942976,
+    "rows": [
+      [
+        3,
+        4664419695607152640,
+        4607204936798154260
+      ]
+    ],
+    "control": 0,
+    "control_row": 0,
+    "control_values": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": 25,
+    "group": "new-opened-price",
+    "side": 0,
+    "flag": 1,
+    "fill": 0,
+    "digits": 3,
+    "ticket": 4664419695607152640,
+    "opened": 4607204936798154260,
+    "unit": 4591870180066957722,
+    "step": 4613937818241073152,
+    "limit": 4611686018427387904,
+    "initial_step": 13875370549602942976,
+    "rows": [],
+    "control": 0,
+    "control_row": 0,
+    "control_values": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": 26,
+    "group": "cached-level-rounding",
+    "side": 0,
+    "flag": 1,
+    "fill": 0,
+    "digits": 3,
+    "ticket": 4664419695607152640,
+    "opened": 4636737291354636288,
+    "unit": 4591870180066957722,
+    "step": 4613937818241073152,
+    "limit": 4611686018427387904,
+    "initial_step": 13875370549602942976,
+    "rows": [
+      [
+        3,
+        4664419695607152640,
+        13830576973652930068
+      ]
+    ],
+    "control": 0,
+    "control_row": 0,
+    "control_values": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": 27,
+    "group": "new-opened-price",
+    "side": 0,
+    "flag": 1,
+    "fill": 0,
+    "digits": 3,
+    "ticket": 4664419695607152640,
+    "opened": 13830576973652930068,
+    "unit": 4591870180066957722,
+    "step": 4613937818241073152,
+    "limit": 4611686018427387904,
+    "initial_step": 13875370549602942976,
+    "rows": [],
+    "control": 0,
+    "control_row": 0,
+    "control_values": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": 28,
+    "group": "cached-level-rounding",
+    "side": 0,
+    "flag": 1,
+    "fill": 0,
+    "digits": 3,
+    "ticket": 4664419695607152640,
+    "opened": 4636737291354636288,
+    "unit": 4591870180066957722,
+    "step": 4613937818241073152,
+    "limit": 4611686018427387904,
+    "initial_step": 13875370549602942976,
+    "rows": [
+      [
+        3,
+        4664419695607152640,
+        4636675610054139822
+      ]
+    ],
+    "control": 0,
+    "control_row": 0,
+    "control_values": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": 29,
+    "group": "new-opened-price",
+    "side": 0,
+    "flag": 1,
+    "fill": 0,
+    "digits": 3,
+    "ticket": 4664419695607152640,
+    "opened": 4636675610054139822,
+    "unit": 4591870180066957722,
+    "step": 4613937818241073152,
+    "limit": 4611686018427387904,
+    "initial_step": 13875370549602942976,
+    "rows": [],
+    "control": 0,
+    "control_row": 0,
+    "control_values": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": 30,
+    "group": "cached-level-rounding",
+    "side": 0,
+    "flag": 1,
+    "fill": 0,
+    "digits": 3,
+    "ticket": 4664419695607152640,
+    "opened": 4636737291354636288,
+    "unit": 4591870180066957722,
+    "step": 4613937818241073152,
+    "limit": 4611686018427387904,
+    "initial_step": 13875370549602942976,
+    "rows": [
+      [
+        3,
+        4664419695607152640,
+        5055640609639927018
+      ]
+    ],
+    "control": 0,
+    "control_row": 0,
+    "control_values": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": 31,
+    "group": "new-opened-price",
+    "side": 0,
+    "flag": 1,
+    "fill": 0,
+    "digits": 3,
+    "ticket": 4664419695607152640,
+    "opened": 5055640609639927018,
+    "unit": 4591870180066957722,
+    "step": 4613937818241073152,
+    "limit": 4611686018427387904,
+    "initial_step": 13875370549602942976,
+    "rows": [],
+    "control": 0,
+    "control_row": 0,
+    "control_values": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": 32,
+    "group": "cached-level-rounding",
+    "side": 0,
+    "flag": 1,
+    "fill": 0,
+    "digits": 3,
+    "ticket": 4664419695607152640,
+    "opened": 4636737291354636288,
+    "unit": 4591870180066957722,
+    "step": 4613937818241073152,
+    "limit": 4611686018427387904,
+    "initial_step": 13875370549602942976,
+    "rows": [
+      [
+        3,
+        4664419695607152640,
+        14279012646494702826
+      ]
+    ],
+    "control": 0,
+    "control_row": 0,
+    "control_values": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": 33,
+    "group": "new-opened-price",
+    "side": 0,
+    "flag": 1,
+    "fill": 0,
+    "digits": 3,
+    "ticket": 4664419695607152640,
+    "opened": 14279012646494702826,
+    "unit": 4591870180066957722,
+    "step": 4613937818241073152,
+    "limit": 4611686018427387904,
+    "initial_step": 13875370549602942976,
+    "rows": [],
+    "control": 0,
+    "control_row": 0,
+    "control_values": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": 34,
+    "group": "cached-level-rounding",
+    "side": 0,
+    "flag": 1,
+    "fill": 0,
+    "digits": 3,
+    "ticket": 4664419695607152640,
+    "opened": 4636737291354636288,
+    "unit": 4591870180066957722,
+    "step": 4613937818241073152,
+    "limit": 4611686018427387904,
+    "initial_step": 13875370549602942976,
+    "rows": [
+      [
+        3,
+        4664419695607152640,
+        9221120237041090560
+      ]
+    ],
+    "control": 0,
+    "control_row": 0,
+    "control_values": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": 35,
+    "group": "new-opened-price",
+    "side": 0,
+    "flag": 1,
+    "fill": 0,
+    "digits": 3,
+    "ticket": 4664419695607152640,
+    "opened": 9221120237041090560,
+    "unit": 4591870180066957722,
+    "step": 4613937818241073152,
+    "limit": 4611686018427387904,
+    "initial_step": 13875370549602942976,
+    "rows": [],
+    "control": 0,
+    "control_row": 0,
+    "control_values": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": 36,
+    "group": "cached-level-rounding",
+    "side": 0,
+    "flag": 1,
+    "fill": 0,
+    "digits": 3,
+    "ticket": 4664419695607152640,
+    "opened": 4636737291354636288,
+    "unit": 4591870180066957722,
+    "step": 4613937818241073152,
+    "limit": 4611686018427387904,
+    "initial_step": 13875370549602942976,
+    "rows": [
+      [
+        3,
+        4664419695607152640,
+        9218868437227405312
+      ]
+    ],
+    "control": 0,
+    "control_row": 0,
+    "control_values": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": 37,
+    "group": "new-opened-price",
+    "side": 0,
+    "flag": 1,
+    "fill": 0,
+    "digits": 3,
+    "ticket": 4664419695607152640,
+    "opened": 9218868437227405312,
+    "unit": 4591870180066957722,
+    "step": 4613937818241073152,
+    "limit": 4611686018427387904,
+    "initial_step": 13875370549602942976,
+    "rows": [],
+    "control": 0,
+    "control_row": 0,
+    "control_values": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": 38,
+    "group": "cached-level-rounding",
+    "side": 0,
+    "flag": 1,
+    "fill": 0,
+    "digits": 3,
+    "ticket": 4664419695607152640,
+    "opened": 4636737291354636288,
+    "unit": 4591870180066957722,
+    "step": 4613937818241073152,
+    "limit": 4611686018427387904,
+    "initial_step": 13875370549602942976,
+    "rows": [
+      [
+        3,
+        4664419695607152640,
+        18442240474082181120
+      ]
+    ],
+    "control": 0,
+    "control_row": 0,
+    "control_values": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": 39,
+    "group": "new-opened-price",
+    "side": 0,
+    "flag": 1,
+    "fill": 0,
+    "digits": 3,
+    "ticket": 4664419695607152640,
+    "opened": 18442240474082181120,
+    "unit": 4591870180066957722,
+    "step": 4613937818241073152,
+    "limit": 4611686018427387904,
+    "initial_step": 13875370549602942976,
+    "rows": [],
+    "control": 0,
+    "control_row": 0,
+    "control_values": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": 40,
+    "group": "unit-negative-zero-NaN",
+    "side": 0,
+    "flag": 1,
+    "fill": 0,
+    "digits": 3,
+    "ticket": 4664419695607152640,
+    "opened": 4636737291354636288,
+    "unit": 0,
+    "step": 4613937818241073152,
+    "limit": 4611686018427387904,
+    "initial_step": 13875370549602942976,
+    "rows": [
+      [
+        3,
+        4664419695607152640,
+        0
+      ]
+    ],
+    "control": 0,
+    "control_row": 0,
+    "control_values": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": 41,
+    "group": "unit-negative-zero-NaN",
+    "side": 0,
+    "flag": 1,
+    "fill": 0,
+    "digits": 3,
+    "ticket": 4664419695607152640,
+    "opened": 4636737291354636288,
+    "unit": 0,
+    "step": 4613937818241073152,
+    "limit": 4611686018427387904,
+    "initial_step": 13875370549602942976,
+    "rows": [
+      [
+        3,
+        4664419695607152640,
+        4636666922610458624
+      ]
+    ],
+    "control": 0,
+    "control_row": 0,
+    "control_values": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": 42,
+    "group": "unit-negative-zero-NaN",
+    "side": 0,
+    "flag": 1,
+    "fill": 0,
+    "digits": 3,
+    "ticket": 4664419695607152640,
+    "opened": 4636737291354636288,
+    "unit": 0,
+    "step": 4613937818241073152,
+    "limit": 4611686018427387904,
+    "initial_step": 13875370549602942976,
+    "rows": [
+      [
+        3,
+        4664419695607152640,
+        9221120237041090560
+      ]
+    ],
+    "control": 0,
+    "control_row": 0,
+    "control_values": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": 43,
+    "group": "unit-negative-zero-NaN",
+    "side": 0,
+    "flag": 1,
+    "fill": 0,
+    "digits": 3,
+    "ticket": 4664419695607152640,
+    "opened": 4636737291354636288,
+    "unit": 9223372036854775808,
+    "step": 4613937818241073152,
+    "limit": 4611686018427387904,
+    "initial_step": 13875370549602942976,
+    "rows": [
+      [
+        3,
+        4664419695607152640,
+        0
+      ]
+    ],
+    "control": 0,
+    "control_row": 0,
+    "control_values": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": 44,
+    "group": "unit-negative-zero-NaN",
+    "side": 0,
+    "flag": 1,
+    "fill": 0,
+    "digits": 3,
+    "ticket": 4664419695607152640,
+    "opened": 4636737291354636288,
+    "unit": 9223372036854775808,
+    "step": 4613937818241073152,
+    "limit": 4611686018427387904,
+    "initial_step": 13875370549602942976,
+    "rows": [
+      [
+        3,
+        4664419695607152640,
+        4636666922610458624
+      ]
+    ],
+    "control": 0,
+    "control_row": 0,
+    "control_values": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": 45,
+    "group": "unit-negative-zero-NaN",
+    "side": 0,
+    "flag": 1,
+    "fill": 0,
+    "digits": 3,
+    "ticket": 4664419695607152640,
+    "opened": 4636737291354636288,
+    "unit": 9223372036854775808,
+    "step": 4613937818241073152,
+    "limit": 4611686018427387904,
+    "initial_step": 13875370549602942976,
+    "rows": [
+      [
+        3,
+        4664419695607152640,
+        9221120237041090560
+      ]
+    ],
+    "control": 0,
+    "control_row": 0,
+    "control_values": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": 46,
+    "group": "unit-negative-zero-NaN",
+    "side": 0,
+    "flag": 1,
+    "fill": 0,
+    "digits": 3,
+    "ticket": 4664419695607152640,
+    "opened": 4636737291354636288,
+    "unit": 13815242216921733530,
+    "step": 4613937818241073152,
+    "limit": 4611686018427387904,
+    "initial_step": 13875370549602942976,
+    "rows": [
+      [
+        3,
+        4664419695607152640,
+        0
+      ]
+    ],
+    "control": 0,
+    "control_row": 0,
+    "control_values": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": 47,
+    "group": "unit-negative-zero-NaN",
+    "side": 0,
+    "flag": 1,
+    "fill": 0,
+    "digits": 3,
+    "ticket": 4664419695607152640,
+    "opened": 4636737291354636288,
+    "unit": 13815242216921733530,
+    "step": 4613937818241073152,
+    "limit": 4611686018427387904,
+    "initial_step": 13875370549602942976,
+    "rows": [
+      [
+        3,
+        4664419695607152640,
+        4636666922610458624
+      ]
+    ],
+    "control": 0,
+    "control_row": 0,
+    "control_values": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": 48,
+    "group": "unit-negative-zero-NaN",
+    "side": 0,
+    "flag": 1,
+    "fill": 0,
+    "digits": 3,
+    "ticket": 4664419695607152640,
+    "opened": 4636737291354636288,
+    "unit": 13815242216921733530,
+    "step": 4613937818241073152,
+    "limit": 4611686018427387904,
+    "initial_step": 13875370549602942976,
+    "rows": [
+      [
+        3,
+        4664419695607152640,
+        9221120237041090560
+      ]
+    ],
+    "control": 0,
+    "control_row": 0,
+    "control_values": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": 49,
+    "group": "unit-negative-zero-NaN",
+    "side": 0,
+    "flag": 1,
+    "fill": 0,
+    "digits": 3,
+    "ticket": 4664419695607152640,
+    "opened": 4636737291354636288,
+    "unit": 4591870180066957722,
+    "step": 4613937818241073152,
+    "limit": 4611686018427387904,
+    "initial_step": 13875370549602942976,
+    "rows": [
+      [
+        3,
+        4664419695607152640,
+        0
+      ]
+    ],
+    "control": 0,
+    "control_row": 0,
+    "control_values": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": 50,
+    "group": "unit-negative-zero-NaN",
+    "side": 0,
+    "flag": 1,
+    "fill": 0,
+    "digits": 3,
+    "ticket": 4664419695607152640,
+    "opened": 4636737291354636288,
+    "unit": 4591870180066957722,
+    "step": 4613937818241073152,
+    "limit": 4611686018427387904,
+    "initial_step": 13875370549602942976,
+    "rows": [
+      [
+        3,
+        4664419695607152640,
+        4636666922610458624
+      ]
+    ],
+    "control": 0,
+    "control_row": 0,
+    "control_values": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": 51,
+    "group": "unit-negative-zero-NaN",
+    "side": 0,
+    "flag": 1,
+    "fill": 0,
+    "digits": 3,
+    "ticket": 4664419695607152640,
+    "opened": 4636737291354636288,
+    "unit": 4591870180066957722,
+    "step": 4613937818241073152,
+    "limit": 4611686018427387904,
+    "initial_step": 13875370549602942976,
+    "rows": [
+      [
+        3,
+        4664419695607152640,
+        9221120237041090560
+      ]
+    ],
+    "control": 0,
+    "control_row": 0,
+    "control_values": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": 52,
+    "group": "unit-negative-zero-NaN",
+    "side": 0,
+    "flag": 1,
+    "fill": 0,
+    "digits": 3,
+    "ticket": 4664419695607152640,
+    "opened": 4636737291354636288,
+    "unit": 9221120237041090560,
+    "step": 4613937818241073152,
+    "limit": 4611686018427387904,
+    "initial_step": 13875370549602942976,
+    "rows": [
+      [
+        3,
+        4664419695607152640,
+        0
+      ]
+    ],
+    "control": 0,
+    "control_row": 0,
+    "control_values": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": 53,
+    "group": "unit-negative-zero-NaN",
+    "side": 0,
+    "flag": 1,
+    "fill": 0,
+    "digits": 3,
+    "ticket": 4664419695607152640,
+    "opened": 4636737291354636288,
+    "unit": 9221120237041090560,
+    "step": 4613937818241073152,
+    "limit": 4611686018427387904,
+    "initial_step": 13875370549602942976,
+    "rows": [
+      [
+        3,
+        4664419695607152640,
+        4636666922610458624
+      ]
+    ],
+    "control": 0,
+    "control_row": 0,
+    "control_values": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": 54,
+    "group": "unit-negative-zero-NaN",
+    "side": 0,
+    "flag": 1,
+    "fill": 0,
+    "digits": 3,
+    "ticket": 4664419695607152640,
+    "opened": 4636737291354636288,
+    "unit": 9221120237041090560,
+    "step": 4613937818241073152,
+    "limit": 4611686018427387904,
+    "initial_step": 13875370549602942976,
+    "rows": [
+      [
+        3,
+        4664419695607152640,
+        9221120237041090560
+      ]
+    ],
+    "control": 0,
+    "control_row": 0,
+    "control_values": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": 55,
+    "group": "unit-negative-zero-NaN",
+    "side": 0,
+    "flag": 1,
+    "fill": 0,
+    "digits": 3,
+    "ticket": 4664419695607152640,
+    "opened": 4636737291354636288,
+    "unit": 9218868437227405312,
+    "step": 4613937818241073152,
+    "limit": 4611686018427387904,
+    "initial_step": 13875370549602942976,
+    "rows": [
+      [
+        3,
+        4664419695607152640,
+        0
+      ]
+    ],
+    "control": 0,
+    "control_row": 0,
+    "control_values": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": 56,
+    "group": "unit-negative-zero-NaN",
+    "side": 0,
+    "flag": 1,
+    "fill": 0,
+    "digits": 3,
+    "ticket": 4664419695607152640,
+    "opened": 4636737291354636288,
+    "unit": 9218868437227405312,
+    "step": 4613937818241073152,
+    "limit": 4611686018427387904,
+    "initial_step": 13875370549602942976,
+    "rows": [
+      [
+        3,
+        4664419695607152640,
+        4636666922610458624
+      ]
+    ],
+    "control": 0,
+    "control_row": 0,
+    "control_values": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": 57,
+    "group": "unit-negative-zero-NaN",
+    "side": 0,
+    "flag": 1,
+    "fill": 0,
+    "digits": 3,
+    "ticket": 4664419695607152640,
+    "opened": 4636737291354636288,
+    "unit": 9218868437227405312,
+    "step": 4613937818241073152,
+    "limit": 4611686018427387904,
+    "initial_step": 13875370549602942976,
+    "rows": [
+      [
+        3,
+        4664419695607152640,
+        9221120237041090560
+      ]
+    ],
+    "control": 0,
+    "control_row": 0,
+    "control_values": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": 58,
+    "group": "unit-negative-zero-NaN",
+    "side": 0,
+    "flag": 1,
+    "fill": 0,
+    "digits": 3,
+    "ticket": 4664419695607152640,
+    "opened": 4636737291354636288,
+    "unit": 18442240474082181120,
+    "step": 4613937818241073152,
+    "limit": 4611686018427387904,
+    "initial_step": 13875370549602942976,
+    "rows": [
+      [
+        3,
+        4664419695607152640,
+        0
+      ]
+    ],
+    "control": 0,
+    "control_row": 0,
+    "control_values": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": 59,
+    "group": "unit-negative-zero-NaN",
+    "side": 0,
+    "flag": 1,
+    "fill": 0,
+    "digits": 3,
+    "ticket": 4664419695607152640,
+    "opened": 4636737291354636288,
+    "unit": 18442240474082181120,
+    "step": 4613937818241073152,
+    "limit": 4611686018427387904,
+    "initial_step": 13875370549602942976,
+    "rows": [
+      [
+        3,
+        4664419695607152640,
+        4636666922610458624
+      ]
+    ],
+    "control": 0,
+    "control_row": 0,
+    "control_values": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": 60,
+    "group": "unit-negative-zero-NaN",
+    "side": 0,
+    "flag": 1,
+    "fill": 0,
+    "digits": 3,
+    "ticket": 4664419695607152640,
+    "opened": 4636737291354636288,
+    "unit": 18442240474082181120,
+    "step": 4613937818241073152,
+    "limit": 4611686018427387904,
+    "initial_step": 13875370549602942976,
+    "rows": [
+      [
+        3,
+        4664419695607152640,
+        9221120237041090560
+      ]
+    ],
+    "control": 0,
+    "control_row": 0,
+    "control_values": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": 61,
+    "group": "digits-low32",
+    "side": 0,
+    "flag": 1,
+    "fill": 0,
+    "digits": -1,
+    "ticket": 4664419695607152640,
+    "opened": 4636737291354636288,
+    "unit": 4591870180066957722,
+    "step": 4613937818241073152,
+    "limit": 4611686018427387904,
+    "initial_step": 13875370549602942976,
+    "rows": [
+      [
+        0,
+        4664419695607152640,
+        4636675610103397943
+      ]
+    ],
+    "control": 0,
+    "control_row": 0,
+    "control_values": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": 62,
+    "group": "digits-low32",
+    "side": 0,
+    "flag": 1,
+    "fill": 0,
+    "digits": 0,
+    "ticket": 4664419695607152640,
+    "opened": 4636737291354636288,
+    "unit": 4591870180066957722,
+    "step": 4613937818241073152,
+    "limit": 4611686018427387904,
+    "initial_step": 13875370549602942976,
+    "rows": [
+      [
+        0,
+        4664419695607152640,
+        4636675610103397943
+      ]
+    ],
+    "control": 0,
+    "control_row": 0,
+    "control_values": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": 63,
+    "group": "digits-low32",
+    "side": 0,
+    "flag": 1,
+    "fill": 0,
+    "digits": 2,
+    "ticket": 4664419695607152640,
+    "opened": 4636737291354636288,
+    "unit": 4591870180066957722,
+    "step": 4613937818241073152,
+    "limit": 4611686018427387904,
+    "initial_step": 13875370549602942976,
+    "rows": [
+      [
+        0,
+        4664419695607152640,
+        4636675610103397943
+      ]
+    ],
+    "control": 0,
+    "control_row": 0,
+    "control_values": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": 64,
+    "group": "digits-low32",
+    "side": 0,
+    "flag": 1,
+    "fill": 0,
+    "digits": 8,
+    "ticket": 4664419695607152640,
+    "opened": 4636737291354636288,
+    "unit": 4591870180066957722,
+    "step": 4613937818241073152,
+    "limit": 4611686018427387904,
+    "initial_step": 13875370549602942976,
+    "rows": [
+      [
+        0,
+        4664419695607152640,
+        4636675610103397943
+      ]
+    ],
+    "control": 0,
+    "control_row": 0,
+    "control_values": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": 65,
+    "group": "digits-low32",
+    "side": 0,
+    "flag": 1,
+    "fill": 0,
+    "digits": 10,
+    "ticket": 4664419695607152640,
+    "opened": 4636737291354636288,
+    "unit": 4591870180066957722,
+    "step": 4613937818241073152,
+    "limit": 4611686018427387904,
+    "initial_step": 13875370549602942976,
+    "rows": [
+      [
+        0,
+        4664419695607152640,
+        4636675610103397943
+      ]
+    ],
+    "control": 0,
+    "control_row": 0,
+    "control_values": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": 66,
+    "group": "digits-low32",
+    "side": 0,
+    "flag": 1,
+    "fill": 0,
+    "digits": 11,
+    "ticket": 4664419695607152640,
+    "opened": 4636737291354636288,
+    "unit": 4591870180066957722,
+    "step": 4613937818241073152,
+    "limit": 4611686018427387904,
+    "initial_step": 13875370549602942976,
+    "rows": [
+      [
+        0,
+        4664419695607152640,
+        4636675610103397943
+      ]
+    ],
+    "control": 0,
+    "control_row": 0,
+    "control_values": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": 67,
+    "group": "digits-low32",
+    "side": 0,
+    "flag": 1,
+    "fill": 0,
+    "digits": 12,
+    "ticket": 4664419695607152640,
+    "opened": 4636737291354636288,
+    "unit": 4591870180066957722,
+    "step": 4613937818241073152,
+    "limit": 4611686018427387904,
+    "initial_step": 13875370549602942976,
+    "rows": [
+      [
+        0,
+        4664419695607152640,
+        4636675610103397943
+      ]
+    ],
+    "control": 0,
+    "control_row": 0,
+    "control_values": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": 68,
+    "group": "digits-low32",
+    "side": 0,
+    "flag": 1,
+    "fill": 0,
+    "digits": 4294967299,
+    "ticket": 4664419695607152640,
+    "opened": 4636737291354636288,
+    "unit": 4591870180066957722,
+    "step": 4613937818241073152,
+    "limit": 4611686018427387904,
+    "initial_step": 13875370549602942976,
+    "rows": [
+      [
+        0,
+        4664419695607152640,
+        4636675610103397943
+      ]
+    ],
+    "control": 0,
+    "control_row": 0,
+    "control_values": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": 69,
+    "group": "digits-low32",
+    "side": 0,
+    "flag": 1,
+    "fill": 0,
+    "digits": -9223372036854775808,
+    "ticket": 4664419695607152640,
+    "opened": 4636737291354636288,
+    "unit": 4591870180066957722,
+    "step": 4613937818241073152,
+    "limit": 4611686018427387904,
+    "initial_step": 13875370549602942976,
+    "rows": [
+      [
+        0,
+        4664419695607152640,
+        4636675610103397943
+      ]
+    ],
+    "control": 0,
+    "control_row": 0,
+    "control_values": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": 70,
+    "group": "digits-low32",
+    "side": 0,
+    "flag": 1,
+    "fill": 0,
+    "digits": 9223372036854775807,
+    "ticket": 4664419695607152640,
+    "opened": 4636737291354636288,
+    "unit": 4591870180066957722,
+    "step": 4613937818241073152,
+    "limit": 4611686018427387904,
+    "initial_step": 13875370549602942976,
+    "rows": [
+      [
+        0,
+        4664419695607152640,
+        4636675610103397943
+      ]
+    ],
+    "control": 0,
+    "control_row": 0,
+    "control_values": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": 71,
+    "group": "distance-boundary",
+    "side": 0,
+    "flag": 1,
+    "fill": 0,
+    "digits": 3,
+    "ticket": 4664419695607152640,
+    "opened": 4636737291354636288,
+    "unit": 4591870180066957722,
+    "step": 4613937818241073152,
+    "limit": 4621819117026021567,
+    "initial_step": 13875370549602942976,
+    "rows": [
+      [
+        0,
+        4664419695607152640,
+        4636807660098813952
+      ]
+    ],
+    "control": 0,
+    "control_row": 0,
+    "control_values": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": 72,
+    "group": "distance-boundary",
+    "side": 0,
+    "flag": 1,
+    "fill": 0,
+    "digits": 3,
+    "ticket": 4664419695607152640,
+    "opened": 4636737291354636288,
+    "unit": 4591870180066957722,
+    "step": 4613937818241073152,
+    "limit": 4621819117588971520,
+    "initial_step": 13875370549602942976,
+    "rows": [
+      [
+        0,
+        4664419695607152640,
+        4636807660098813952
+      ]
+    ],
+    "control": 0,
+    "control_row": 0,
+    "control_values": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": 73,
+    "group": "distance-boundary",
+    "side": 0,
+    "flag": 1,
+    "fill": 0,
+    "digits": 3,
+    "ticket": 4664419695607152640,
+    "opened": 4636737291354636288,
+    "unit": 4591870180066957722,
+    "step": 4613937818241073152,
+    "limit": 4621819118151921473,
+    "initial_step": 13875370549602942976,
+    "rows": [
+      [
+        0,
+        4664419695607152640,
+        4636807660098813952
+      ]
+    ],
+    "control": 0,
+    "control_row": 0,
+    "control_values": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": 74,
+    "group": "distance-unordered",
+    "side": 0,
+    "flag": 1,
+    "fill": 0,
+    "digits": 3,
+    "ticket": 4664419695607152640,
+    "opened": 4636737291354636288,
+    "unit": 4591870180066957722,
+    "step": 4613937818241073152,
+    "limit": 13830554455654793216,
+    "initial_step": 13875370549602942976,
+    "rows": [
+      [
+        0,
+        4664419695607152640,
+        4636807660098813952
+      ]
+    ],
+    "control": 0,
+    "control_row": 0,
+    "control_values": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": 75,
+    "group": "distance-unordered",
+    "side": 0,
+    "flag": 1,
+    "fill": 0,
+    "digits": 3,
+    "ticket": 4664419695607152640,
+    "opened": 4636737291354636288,
+    "unit": 4591870180066957722,
+    "step": 4613937818241073152,
+    "limit": 0,
+    "initial_step": 13875370549602942976,
+    "rows": [
+      [
+        0,
+        4664419695607152640,
+        4636807660098813952
+      ]
+    ],
+    "control": 0,
+    "control_row": 0,
+    "control_values": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": 76,
+    "group": "distance-unordered",
+    "side": 0,
+    "flag": 1,
+    "fill": 0,
+    "digits": 3,
+    "ticket": 4664419695607152640,
+    "opened": 4636737291354636288,
+    "unit": 4591870180066957722,
+    "step": 4613937818241073152,
+    "limit": 9221120237041090560,
+    "initial_step": 13875370549602942976,
+    "rows": [
+      [
+        0,
+        4664419695607152640,
+        4636807660098813952
+      ]
+    ],
+    "control": 0,
+    "control_row": 0,
+    "control_values": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": 77,
+    "group": "distance-unordered",
+    "side": 0,
+    "flag": 1,
+    "fill": 0,
+    "digits": 3,
+    "ticket": 4664419695607152640,
+    "opened": 4636737291354636288,
+    "unit": 4591870180066957722,
+    "step": 4613937818241073152,
+    "limit": 9218868437227405312,
+    "initial_step": 13875370549602942976,
+    "rows": [
+      [
+        0,
+        4664419695607152640,
+        4636807660098813952
+      ]
+    ],
+    "control": 0,
+    "control_row": 0,
+    "control_values": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": 78,
+    "group": "distance-unordered",
+    "side": 0,
+    "flag": 1,
+    "fill": 0,
+    "digits": 3,
+    "ticket": 4664419695607152640,
+    "opened": 4636737291354636288,
+    "unit": 4591870180066957722,
+    "step": 4613937818241073152,
+    "limit": 18442240474082181120,
+    "initial_step": 13875370549602942976,
+    "rows": [
+      [
+        0,
+        4664419695607152640,
+        4636807660098813952
+      ]
+    ],
+    "control": 0,
+    "control_row": 0,
+    "control_values": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": 79,
+    "group": "duplicate-first-match",
+    "side": 0,
+    "flag": 1,
+    "fill": 0,
+    "digits": 3,
+    "ticket": 4664419695607152640,
+    "opened": 4636737291354636288,
+    "unit": 4591870180066957722,
+    "step": 4613937818241073152,
+    "limit": 4611686018427387904,
+    "initial_step": 13875370549602942976,
+    "rows": [
+      [
+        1,
+        4664419695607152640,
+        4636666922610458624
+      ],
+      [
+        4,
+        4664419695607152640,
+        4635892866424504320
+      ]
+    ],
+    "control": 0,
+    "control_row": 0,
+    "control_values": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": 80,
+    "group": "free-last-row",
+    "side": 0,
+    "flag": 1,
+    "fill": 1,
+    "digits": 3,
+    "ticket": 4664419695607152640,
+    "opened": 4636737291354636288,
+    "unit": 4591870180066957722,
+    "step": 4613937818241073152,
+    "limit": 4611686018427387904,
+    "initial_step": 13875370549602942976,
+    "rows": [
+      [
+        99,
+        9223372036854775808,
+        4644565814144401408
+      ]
+    ],
+    "control": 0,
+    "control_row": 0,
+    "control_values": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": 81,
+    "group": "zero-ticket-cached-value",
+    "side": 0,
+    "flag": 1,
+    "fill": 0,
+    "digits": 3,
+    "ticket": 9223372036854775808,
+    "opened": 4636737291354636288,
+    "unit": 4591870180066957722,
+    "step": 4613937818241073152,
+    "limit": 4611686018427387904,
+    "initial_step": 13875370549602942976,
+    "rows": [
+      [
+        0,
+        0,
+        4636666922610458624
+      ]
+    ],
+    "control": 0,
+    "control_row": 0,
+    "control_values": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": 82,
+    "group": "step-copied-before-api",
+    "side": 0,
+    "flag": 1,
+    "fill": 0,
+    "digits": 3,
+    "ticket": 4664419695607152640,
+    "opened": 4636737291354636288,
+    "unit": 4591870180066957722,
+    "step": 0,
+    "limit": 4611686018427387904,
+    "initial_step": 13875370549602942976,
+    "rows": [],
+    "control": 0,
+    "control_row": 0,
+    "control_values": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": 83,
+    "group": "step-copied-before-api",
+    "side": 0,
+    "flag": 1,
+    "fill": 0,
+    "digits": 3,
+    "ticket": 4664419695607152640,
+    "opened": 4636737291354636288,
+    "unit": 4591870180066957722,
+    "step": 9223372036854775808,
+    "limit": 4611686018427387904,
+    "initial_step": 13875370549602942976,
+    "rows": [],
+    "control": 0,
+    "control_row": 0,
+    "control_values": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": 84,
+    "group": "step-copied-before-api",
+    "side": 0,
+    "flag": 1,
+    "fill": 0,
+    "digits": 3,
+    "ticket": 4664419695607152640,
+    "opened": 4636737291354636288,
+    "unit": 4591870180066957722,
+    "step": 4607182418800017408,
+    "limit": 4611686018427387904,
+    "initial_step": 13875370549602942976,
+    "rows": [],
+    "control": 0,
+    "control_row": 0,
+    "control_values": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": 85,
+    "group": "step-copied-before-api",
+    "side": 0,
+    "flag": 1,
+    "fill": 0,
+    "digits": 3,
+    "ticket": 4664419695607152640,
+    "opened": 4636737291354636288,
+    "unit": 4591870180066957722,
+    "step": 9221120237041090560,
+    "limit": 4611686018427387904,
+    "initial_step": 13875370549602942976,
+    "rows": [],
+    "control": 0,
+    "control_row": 0,
+    "control_values": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": 86,
+    "group": "step-copied-before-api",
+    "side": 0,
+    "flag": 1,
+    "fill": 0,
+    "digits": 3,
+    "ticket": 4664419695607152640,
+    "opened": 4636737291354636288,
+    "unit": 4591870180066957722,
+    "step": 9218868437227405312,
+    "limit": 4611686018427387904,
+    "initial_step": 13875370549602942976,
+    "rows": [],
+    "control": 0,
+    "control_row": 0,
+    "control_values": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": 87,
+    "group": "step-copied-before-api",
+    "side": 0,
+    "flag": 1,
+    "fill": 0,
+    "digits": 3,
+    "ticket": 4664419695607152640,
+    "opened": 4636737291354636288,
+    "unit": 4591870180066957722,
+    "step": 18442240474082181120,
+    "limit": 4611686018427387904,
+    "initial_step": 13875370549602942976,
+    "rows": [],
+    "control": 0,
+    "control_row": 0,
+    "control_values": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": 88,
+    "group": "service-state-change",
+    "side": 0,
+    "flag": 1,
+    "fill": 0,
+    "digits": 3,
+    "ticket": 4664419695607152640,
+    "opened": 4636737291354636288,
+    "unit": 4591870180066957722,
+    "step": 4613937818241073152,
+    "limit": 4611686018427387904,
+    "initial_step": 13875370549602942976,
+    "rows": [
+      [
+        0,
+        4664419695607152640,
+        4636666922610458624
+      ]
+    ],
+    "control": 1,
+    "control_row": 0,
+    "control_values": [
+      4598175219545276416,
+      0
+    ]
+  },
+  {
+    "id": 89,
+    "group": "service-state-change",
+    "side": 0,
+    "flag": 1,
+    "fill": 0,
+    "digits": 3,
+    "ticket": 4664419695607152640,
+    "opened": 4636737291354636288,
+    "unit": 4591870180066957722,
+    "step": 4613937818241073152,
+    "limit": 4611686018427387904,
+    "initial_step": 13875370549602942976,
+    "rows": [
+      [
+        0,
+        4664419695607152640,
+        4636666922610458624
+      ]
+    ],
+    "control": 1,
+    "control_row": 0,
+    "control_values": [
+      9218868437227405312,
+      0
+    ]
+  },
+  {
+    "id": 90,
+    "group": "service-state-change",
+    "side": 0,
+    "flag": 1,
+    "fill": 0,
+    "digits": 3,
+    "ticket": 4664419695607152640,
+    "opened": 4636737291354636288,
+    "unit": 4591870180066957722,
+    "step": 4613937818241073152,
+    "limit": 4611686018427387904,
+    "initial_step": 13875370549602942976,
+    "rows": [
+      [
+        0,
+        4664419695607152640,
+        4636666922610458624
+      ]
+    ],
+    "control": 2,
+    "control_row": 0,
+    "control_values": [
+      4652007308841189376,
+      0
+    ]
+  },
+  {
+    "id": 91,
+    "group": "service-state-change",
+    "side": 0,
+    "flag": 1,
+    "fill": 0,
+    "digits": 3,
+    "ticket": 4664419695607152640,
+    "opened": 4636737291354636288,
+    "unit": 4591870180066957722,
+    "step": 4613937818241073152,
+    "limit": 4611686018427387904,
+    "initial_step": 13875370549602942976,
+    "rows": [
+      [
+        0,
+        4664419695607152640,
+        4636666922610458624
+      ]
+    ],
+    "control": 3,
+    "control_row": 0,
+    "control_values": [
+      4666722622711529472,
+      0
+    ]
+  },
+  {
+    "id": 92,
+    "group": "service-state-change",
+    "side": 0,
+    "flag": 1,
+    "fill": 0,
+    "digits": 3,
+    "ticket": 4664419695607152640,
+    "opened": 4636737291354636288,
+    "unit": 4591870180066957722,
+    "step": 4613937818241073152,
+    "limit": 4611686018427387904,
+    "initial_step": 13875370549602942976,
+    "rows": [
+      [
+        0,
+        4664419695607152640,
+        4636666922610458624
+      ]
+    ],
+    "control": 4,
+    "control_row": 0,
+    "control_values": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": 93,
+    "group": "service-state-change",
+    "side": 0,
+    "flag": 1,
+    "fill": 0,
+    "digits": 3,
+    "ticket": 4664419695607152640,
+    "opened": 4636737291354636288,
+    "unit": 4591870180066957722,
+    "step": 4613937818241073152,
+    "limit": 4611686018427387904,
+    "initial_step": 13875370549602942976,
+    "rows": [
+      [
+        0,
+        4664419695607152640,
+        4636666922610458624
+      ]
+    ],
+    "control": 4,
+    "control_row": 0,
+    "control_values": [
+      4643176031446892544,
+      0
+    ]
+  },
+  {
+    "id": 94,
+    "group": "service-changes-matched-row",
+    "side": 0,
+    "flag": 1,
+    "fill": 0,
+    "digits": 3,
+    "ticket": 4664419695607152640,
+    "opened": 4636737291354636288,
+    "unit": 4591870180066957722,
+    "step": 4613937818241073152,
+    "limit": 4611686018427387904,
+    "initial_step": 13875370549602942976,
+    "rows": [],
+    "control": 5,
+    "control_row": 0,
+    "control_values": [
+      4664419695607152640,
+      4636666922610458624
+    ]
+  },
+  {
+    "id": 95,
+    "group": "missing-ticket-fill",
+    "side": 1,
+    "flag": 1,
+    "fill": 0,
+    "digits": 3,
+    "ticket": 4664419695607152640,
+    "opened": 4636737291354636288,
+    "unit": 4591870180066957722,
+    "step": 4613937818241073152,
+    "limit": 4611686018427387904,
+    "initial_step": 13875370549602942976,
+    "rows": [],
+    "control": 0,
+    "control_row": 0,
+    "control_values": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": 96,
+    "group": "missing-ticket-fill",
+    "side": 1,
+    "flag": 1,
+    "fill": 1,
+    "digits": 3,
+    "ticket": 4664419695607152640,
+    "opened": 4636737291354636288,
+    "unit": 4591870180066957722,
+    "step": 4613937818241073152,
+    "limit": 4611686018427387904,
+    "initial_step": 13875370549602942976,
+    "rows": [],
+    "control": 0,
+    "control_row": 0,
+    "control_values": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": 97,
+    "group": "missing-ticket-fill",
+    "side": 1,
+    "flag": 1,
+    "fill": 2,
+    "digits": 3,
+    "ticket": 4664419695607152640,
+    "opened": 4636737291354636288,
+    "unit": 4591870180066957722,
+    "step": 4613937818241073152,
+    "limit": 4611686018427387904,
+    "initial_step": 13875370549602942976,
+    "rows": [],
+    "control": 0,
+    "control_row": 0,
+    "control_values": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": 98,
+    "group": "missing-ticket-fill",
+    "side": 1,
+    "flag": 1,
+    "fill": 3,
+    "digits": 3,
+    "ticket": 4664419695607152640,
+    "opened": 4636737291354636288,
+    "unit": 4591870180066957722,
+    "step": 4613937818241073152,
+    "limit": 4611686018427387904,
+    "initial_step": 13875370549602942976,
+    "rows": [],
+    "control": 0,
+    "control_row": 0,
+    "control_values": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": 99,
+    "group": "ticket-conversion",
+    "side": 1,
+    "flag": 1,
+    "fill": 1,
+    "digits": 3,
+    "ticket": 0,
+    "opened": 4636737291354636288,
+    "unit": 4591870180066957722,
+    "step": 4613937818241073152,
+    "limit": 4611686018427387904,
+    "initial_step": 13875370549602942976,
+    "rows": [],
+    "control": 0,
+    "control_row": 0,
+    "control_values": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": 100,
+    "group": "ticket-conversion",
+    "side": 1,
+    "flag": 1,
+    "fill": 1,
+    "digits": 3,
+    "ticket": 9223372036854775808,
+    "opened": 4636737291354636288,
+    "unit": 4591870180066957722,
+    "step": 4613937818241073152,
+    "limit": 4611686018427387904,
+    "initial_step": 13875370549602942976,
+    "rows": [],
+    "control": 0,
+    "control_row": 0,
+    "control_values": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": 101,
+    "group": "ticket-conversion",
+    "side": 1,
+    "flag": 1,
+    "fill": 1,
+    "digits": 3,
+    "ticket": 4607182418800017408,
+    "opened": 4636737291354636288,
+    "unit": 4591870180066957722,
+    "step": 4613937818241073152,
+    "limit": 4611686018427387904,
+    "initial_step": 13875370549602942976,
+    "rows": [],
+    "control": 0,
+    "control_row": 0,
+    "control_values": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": 102,
+    "group": "ticket-conversion",
+    "side": 1,
+    "flag": 1,
+    "fill": 1,
+    "digits": 3,
+    "ticket": 13830554455654793216,
+    "opened": 4636737291354636288,
+    "unit": 4591870180066957722,
+    "step": 4613937818241073152,
+    "limit": 4611686018427387904,
+    "initial_step": 13875370549602942976,
+    "rows": [],
+    "control": 0,
+    "control_row": 0,
+    "control_values": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": 103,
+    "group": "ticket-conversion",
+    "side": 1,
+    "flag": 1,
+    "fill": 1,
+    "digits": 3,
+    "ticket": 4845873199050653696,
+    "opened": 4636737291354636288,
+    "unit": 4591870180066957722,
+    "step": 4613937818241073152,
+    "limit": 4611686018427387904,
+    "initial_step": 13875370549602942976,
+    "rows": [],
+    "control": 0,
+    "control_row": 0,
+    "control_values": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": 104,
+    "group": "ticket-conversion",
+    "side": 1,
+    "flag": 1,
+    "fill": 1,
+    "digits": 3,
+    "ticket": 14114281232179134464,
+    "opened": 4636737291354636288,
+    "unit": 4591870180066957722,
+    "step": 4613937818241073152,
+    "limit": 4611686018427387904,
+    "initial_step": 13875370549602942976,
+    "rows": [],
+    "control": 0,
+    "control_row": 0,
+    "control_values": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": 105,
+    "group": "ticket-conversion",
+    "side": 1,
+    "flag": 1,
+    "fill": 1,
+    "digits": 3,
+    "ticket": 4890909195324358656,
+    "opened": 4636737291354636288,
+    "unit": 4591870180066957722,
+    "step": 4613937818241073152,
+    "limit": 4611686018427387904,
+    "initial_step": 13875370549602942976,
+    "rows": [],
+    "control": 0,
+    "control_row": 0,
+    "control_values": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": 106,
+    "group": "ticket-conversion",
+    "side": 1,
+    "flag": 1,
+    "fill": 1,
+    "digits": 3,
+    "ticket": 5055640609639927018,
+    "opened": 4636737291354636288,
+    "unit": 4591870180066957722,
+    "step": 4613937818241073152,
+    "limit": 4611686018427387904,
+    "initial_step": 13875370549602942976,
+    "rows": [],
+    "control": 0,
+    "control_row": 0,
+    "control_values": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": 107,
+    "group": "ticket-conversion",
+    "side": 1,
+    "flag": 1,
+    "fill": 1,
+    "digits": 3,
+    "ticket": 14279012646494702826,
+    "opened": 4636737291354636288,
+    "unit": 4591870180066957722,
+    "step": 4613937818241073152,
+    "limit": 4611686018427387904,
+    "initial_step": 13875370549602942976,
+    "rows": [],
+    "control": 0,
+    "control_row": 0,
+    "control_values": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": 108,
+    "group": "ticket-conversion",
+    "side": 1,
+    "flag": 1,
+    "fill": 1,
+    "digits": 3,
+    "ticket": 9221120237041090560,
+    "opened": 4636737291354636288,
+    "unit": 4591870180066957722,
+    "step": 4613937818241073152,
+    "limit": 4611686018427387904,
+    "initial_step": 13875370549602942976,
+    "rows": [],
+    "control": 0,
+    "control_row": 0,
+    "control_values": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": 109,
+    "group": "ticket-conversion",
+    "side": 1,
+    "flag": 1,
+    "fill": 1,
+    "digits": 3,
+    "ticket": 9218868437227405312,
+    "opened": 4636737291354636288,
+    "unit": 4591870180066957722,
+    "step": 4613937818241073152,
+    "limit": 4611686018427387904,
+    "initial_step": 13875370549602942976,
+    "rows": [],
+    "control": 0,
+    "control_row": 0,
+    "control_values": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": 110,
+    "group": "ticket-conversion",
+    "side": 1,
+    "flag": 1,
+    "fill": 1,
+    "digits": 3,
+    "ticket": 18442240474082181120,
+    "opened": 4636737291354636288,
+    "unit": 4591870180066957722,
+    "step": 4613937818241073152,
+    "limit": 4611686018427387904,
+    "initial_step": 13875370549602942976,
+    "rows": [],
+    "control": 0,
+    "control_row": 0,
+    "control_values": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": 111,
+    "group": "reference-byte",
+    "side": 1,
+    "flag": 0,
+    "fill": 0,
+    "digits": 3,
+    "ticket": 4664419695607152640,
+    "opened": 4636737291354636288,
+    "unit": 4591870180066957722,
+    "step": 4613937818241073152,
+    "limit": 4611686018427387904,
+    "initial_step": 13875370549602942976,
+    "rows": [
+      [
+        0,
+        4664419695607152640,
+        4636666922610458624
+      ]
+    ],
+    "control": 0,
+    "control_row": 0,
+    "control_values": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": 112,
+    "group": "reference-byte",
+    "side": 1,
+    "flag": 1,
+    "fill": 0,
+    "digits": 3,
+    "ticket": 4664419695607152640,
+    "opened": 4636737291354636288,
+    "unit": 4591870180066957722,
+    "step": 4613937818241073152,
+    "limit": 4611686018427387904,
+    "initial_step": 13875370549602942976,
+    "rows": [
+      [
+        0,
+        4664419695607152640,
+        4636666922610458624
+      ]
+    ],
+    "control": 0,
+    "control_row": 0,
+    "control_values": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": 113,
+    "group": "reference-byte",
+    "side": 1,
+    "flag": 2,
+    "fill": 0,
+    "digits": 3,
+    "ticket": 4664419695607152640,
+    "opened": 4636737291354636288,
+    "unit": 4591870180066957722,
+    "step": 4613937818241073152,
+    "limit": 4611686018427387904,
+    "initial_step": 13875370549602942976,
+    "rows": [
+      [
+        0,
+        4664419695607152640,
+        4636666922610458624
+      ]
+    ],
+    "control": 0,
+    "control_row": 0,
+    "control_values": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": 114,
+    "group": "reference-byte",
+    "side": 1,
+    "flag": 255,
+    "fill": 0,
+    "digits": 3,
+    "ticket": 4664419695607152640,
+    "opened": 4636737291354636288,
+    "unit": 4591870180066957722,
+    "step": 4613937818241073152,
+    "limit": 4611686018427387904,
+    "initial_step": 13875370549602942976,
+    "rows": [
+      [
+        0,
+        4664419695607152640,
+        4636666922610458624
+      ]
+    ],
+    "control": 0,
+    "control_row": 0,
+    "control_values": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": 115,
+    "group": "cached-level-rounding",
+    "side": 1,
+    "flag": 1,
+    "fill": 0,
+    "digits": 3,
+    "ticket": 4664419695607152640,
+    "opened": 4636737291354636288,
+    "unit": 4591870180066957722,
+    "step": 4613937818241073152,
+    "limit": 4611686018427387904,
+    "initial_step": 13875370549602942976,
+    "rows": [
+      [
+        3,
+        4664419695607152640,
+        0
+      ]
+    ],
+    "control": 0,
+    "control_row": 0,
+    "control_values": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": 116,
+    "group": "new-opened-price",
+    "side": 1,
+    "flag": 1,
+    "fill": 0,
+    "digits": 3,
+    "ticket": 4664419695607152640,
+    "opened": 0,
+    "unit": 4591870180066957722,
+    "step": 4613937818241073152,
+    "limit": 4611686018427387904,
+    "initial_step": 13875370549602942976,
+    "rows": [],
+    "control": 0,
+    "control_row": 0,
+    "control_values": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": 117,
+    "group": "cached-level-rounding",
+    "side": 1,
+    "flag": 1,
+    "fill": 0,
+    "digits": 3,
+    "ticket": 4664419695607152640,
+    "opened": 4636737291354636288,
+    "unit": 4591870180066957722,
+    "step": 4613937818241073152,
+    "limit": 4611686018427387904,
+    "initial_step": 13875370549602942976,
+    "rows": [
+      [
+        3,
+        4664419695607152640,
+        9223372036854775808
+      ]
+    ],
+    "control": 0,
+    "control_row": 0,
+    "control_values": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": 118,
+    "group": "new-opened-price",
+    "side": 1,
+    "flag": 1,
+    "fill": 0,
+    "digits": 3,
+    "ticket": 4664419695607152640,
+    "opened": 9223372036854775808,
+    "unit": 4591870180066957722,
+    "step": 4613937818241073152,
+    "limit": 4611686018427387904,
+    "initial_step": 13875370549602942976,
+    "rows": [],
+    "control": 0,
+    "control_row": 0,
+    "control_values": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": 119,
+    "group": "cached-level-rounding",
+    "side": 1,
+    "flag": 1,
+    "fill": 0,
+    "digits": 3,
+    "ticket": 4664419695607152640,
+    "opened": 4636737291354636288,
+    "unit": 4591870180066957722,
+    "step": 4613937818241073152,
+    "limit": 4611686018427387904,
+    "initial_step": 13875370549602942976,
+    "rows": [
+      [
+        3,
+        4664419695607152640,
+        4607204936798154260
+      ]
+    ],
+    "control": 0,
+    "control_row": 0,
+    "control_values": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": 120,
+    "group": "new-opened-price",
+    "side": 1,
+    "flag": 1,
+    "fill": 0,
+    "digits": 3,
+    "ticket": 4664419695607152640,
+    "opened": 4607204936798154260,
+    "unit": 4591870180066957722,
+    "step": 4613937818241073152,
+    "limit": 4611686018427387904,
+    "initial_step": 13875370549602942976,
+    "rows": [],
+    "control": 0,
+    "control_row": 0,
+    "control_values": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": 121,
+    "group": "cached-level-rounding",
+    "side": 1,
+    "flag": 1,
+    "fill": 0,
+    "digits": 3,
+    "ticket": 4664419695607152640,
+    "opened": 4636737291354636288,
+    "unit": 4591870180066957722,
+    "step": 4613937818241073152,
+    "limit": 4611686018427387904,
+    "initial_step": 13875370549602942976,
+    "rows": [
+      [
+        3,
+        4664419695607152640,
+        13830576973652930068
+      ]
+    ],
+    "control": 0,
+    "control_row": 0,
+    "control_values": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": 122,
+    "group": "new-opened-price",
+    "side": 1,
+    "flag": 1,
+    "fill": 0,
+    "digits": 3,
+    "ticket": 4664419695607152640,
+    "opened": 13830576973652930068,
+    "unit": 4591870180066957722,
+    "step": 4613937818241073152,
+    "limit": 4611686018427387904,
+    "initial_step": 13875370549602942976,
+    "rows": [],
+    "control": 0,
+    "control_row": 0,
+    "control_values": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": 123,
+    "group": "cached-level-rounding",
+    "side": 1,
+    "flag": 1,
+    "fill": 0,
+    "digits": 3,
+    "ticket": 4664419695607152640,
+    "opened": 4636737291354636288,
+    "unit": 4591870180066957722,
+    "step": 4613937818241073152,
+    "limit": 4611686018427387904,
+    "initial_step": 13875370549602942976,
+    "rows": [
+      [
+        3,
+        4664419695607152640,
+        4636675610054139822
+      ]
+    ],
+    "control": 0,
+    "control_row": 0,
+    "control_values": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": 124,
+    "group": "new-opened-price",
+    "side": 1,
+    "flag": 1,
+    "fill": 0,
+    "digits": 3,
+    "ticket": 4664419695607152640,
+    "opened": 4636675610054139822,
+    "unit": 4591870180066957722,
+    "step": 4613937818241073152,
+    "limit": 4611686018427387904,
+    "initial_step": 13875370549602942976,
+    "rows": [],
+    "control": 0,
+    "control_row": 0,
+    "control_values": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": 125,
+    "group": "cached-level-rounding",
+    "side": 1,
+    "flag": 1,
+    "fill": 0,
+    "digits": 3,
+    "ticket": 4664419695607152640,
+    "opened": 4636737291354636288,
+    "unit": 4591870180066957722,
+    "step": 4613937818241073152,
+    "limit": 4611686018427387904,
+    "initial_step": 13875370549602942976,
+    "rows": [
+      [
+        3,
+        4664419695607152640,
+        5055640609639927018
+      ]
+    ],
+    "control": 0,
+    "control_row": 0,
+    "control_values": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": 126,
+    "group": "new-opened-price",
+    "side": 1,
+    "flag": 1,
+    "fill": 0,
+    "digits": 3,
+    "ticket": 4664419695607152640,
+    "opened": 5055640609639927018,
+    "unit": 4591870180066957722,
+    "step": 4613937818241073152,
+    "limit": 4611686018427387904,
+    "initial_step": 13875370549602942976,
+    "rows": [],
+    "control": 0,
+    "control_row": 0,
+    "control_values": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": 127,
+    "group": "cached-level-rounding",
+    "side": 1,
+    "flag": 1,
+    "fill": 0,
+    "digits": 3,
+    "ticket": 4664419695607152640,
+    "opened": 4636737291354636288,
+    "unit": 4591870180066957722,
+    "step": 4613937818241073152,
+    "limit": 4611686018427387904,
+    "initial_step": 13875370549602942976,
+    "rows": [
+      [
+        3,
+        4664419695607152640,
+        14279012646494702826
+      ]
+    ],
+    "control": 0,
+    "control_row": 0,
+    "control_values": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": 128,
+    "group": "new-opened-price",
+    "side": 1,
+    "flag": 1,
+    "fill": 0,
+    "digits": 3,
+    "ticket": 4664419695607152640,
+    "opened": 14279012646494702826,
+    "unit": 4591870180066957722,
+    "step": 4613937818241073152,
+    "limit": 4611686018427387904,
+    "initial_step": 13875370549602942976,
+    "rows": [],
+    "control": 0,
+    "control_row": 0,
+    "control_values": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": 129,
+    "group": "cached-level-rounding",
+    "side": 1,
+    "flag": 1,
+    "fill": 0,
+    "digits": 3,
+    "ticket": 4664419695607152640,
+    "opened": 4636737291354636288,
+    "unit": 4591870180066957722,
+    "step": 4613937818241073152,
+    "limit": 4611686018427387904,
+    "initial_step": 13875370549602942976,
+    "rows": [
+      [
+        3,
+        4664419695607152640,
+        9221120237041090560
+      ]
+    ],
+    "control": 0,
+    "control_row": 0,
+    "control_values": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": 130,
+    "group": "new-opened-price",
+    "side": 1,
+    "flag": 1,
+    "fill": 0,
+    "digits": 3,
+    "ticket": 4664419695607152640,
+    "opened": 9221120237041090560,
+    "unit": 4591870180066957722,
+    "step": 4613937818241073152,
+    "limit": 4611686018427387904,
+    "initial_step": 13875370549602942976,
+    "rows": [],
+    "control": 0,
+    "control_row": 0,
+    "control_values": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": 131,
+    "group": "cached-level-rounding",
+    "side": 1,
+    "flag": 1,
+    "fill": 0,
+    "digits": 3,
+    "ticket": 4664419695607152640,
+    "opened": 4636737291354636288,
+    "unit": 4591870180066957722,
+    "step": 4613937818241073152,
+    "limit": 4611686018427387904,
+    "initial_step": 13875370549602942976,
+    "rows": [
+      [
+        3,
+        4664419695607152640,
+        9218868437227405312
+      ]
+    ],
+    "control": 0,
+    "control_row": 0,
+    "control_values": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": 132,
+    "group": "new-opened-price",
+    "side": 1,
+    "flag": 1,
+    "fill": 0,
+    "digits": 3,
+    "ticket": 4664419695607152640,
+    "opened": 9218868437227405312,
+    "unit": 4591870180066957722,
+    "step": 4613937818241073152,
+    "limit": 4611686018427387904,
+    "initial_step": 13875370549602942976,
+    "rows": [],
+    "control": 0,
+    "control_row": 0,
+    "control_values": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": 133,
+    "group": "cached-level-rounding",
+    "side": 1,
+    "flag": 1,
+    "fill": 0,
+    "digits": 3,
+    "ticket": 4664419695607152640,
+    "opened": 4636737291354636288,
+    "unit": 4591870180066957722,
+    "step": 4613937818241073152,
+    "limit": 4611686018427387904,
+    "initial_step": 13875370549602942976,
+    "rows": [
+      [
+        3,
+        4664419695607152640,
+        18442240474082181120
+      ]
+    ],
+    "control": 0,
+    "control_row": 0,
+    "control_values": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": 134,
+    "group": "new-opened-price",
+    "side": 1,
+    "flag": 1,
+    "fill": 0,
+    "digits": 3,
+    "ticket": 4664419695607152640,
+    "opened": 18442240474082181120,
+    "unit": 4591870180066957722,
+    "step": 4613937818241073152,
+    "limit": 4611686018427387904,
+    "initial_step": 13875370549602942976,
+    "rows": [],
+    "control": 0,
+    "control_row": 0,
+    "control_values": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": 135,
+    "group": "unit-negative-zero-NaN",
+    "side": 1,
+    "flag": 1,
+    "fill": 0,
+    "digits": 3,
+    "ticket": 4664419695607152640,
+    "opened": 4636737291354636288,
+    "unit": 0,
+    "step": 4613937818241073152,
+    "limit": 4611686018427387904,
+    "initial_step": 13875370549602942976,
+    "rows": [
+      [
+        3,
+        4664419695607152640,
+        0
+      ]
+    ],
+    "control": 0,
+    "control_row": 0,
+    "control_values": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": 136,
+    "group": "unit-negative-zero-NaN",
+    "side": 1,
+    "flag": 1,
+    "fill": 0,
+    "digits": 3,
+    "ticket": 4664419695607152640,
+    "opened": 4636737291354636288,
+    "unit": 0,
+    "step": 4613937818241073152,
+    "limit": 4611686018427387904,
+    "initial_step": 13875370549602942976,
+    "rows": [
+      [
+        3,
+        4664419695607152640,
+        4636666922610458624
+      ]
+    ],
+    "control": 0,
+    "control_row": 0,
+    "control_values": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": 137,
+    "group": "unit-negative-zero-NaN",
+    "side": 1,
+    "flag": 1,
+    "fill": 0,
+    "digits": 3,
+    "ticket": 4664419695607152640,
+    "opened": 4636737291354636288,
+    "unit": 0,
+    "step": 4613937818241073152,
+    "limit": 4611686018427387904,
+    "initial_step": 13875370549602942976,
+    "rows": [
+      [
+        3,
+        4664419695607152640,
+        9221120237041090560
+      ]
+    ],
+    "control": 0,
+    "control_row": 0,
+    "control_values": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": 138,
+    "group": "unit-negative-zero-NaN",
+    "side": 1,
+    "flag": 1,
+    "fill": 0,
+    "digits": 3,
+    "ticket": 4664419695607152640,
+    "opened": 4636737291354636288,
+    "unit": 9223372036854775808,
+    "step": 4613937818241073152,
+    "limit": 4611686018427387904,
+    "initial_step": 13875370549602942976,
+    "rows": [
+      [
+        3,
+        4664419695607152640,
+        0
+      ]
+    ],
+    "control": 0,
+    "control_row": 0,
+    "control_values": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": 139,
+    "group": "unit-negative-zero-NaN",
+    "side": 1,
+    "flag": 1,
+    "fill": 0,
+    "digits": 3,
+    "ticket": 4664419695607152640,
+    "opened": 4636737291354636288,
+    "unit": 9223372036854775808,
+    "step": 4613937818241073152,
+    "limit": 4611686018427387904,
+    "initial_step": 13875370549602942976,
+    "rows": [
+      [
+        3,
+        4664419695607152640,
+        4636666922610458624
+      ]
+    ],
+    "control": 0,
+    "control_row": 0,
+    "control_values": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": 140,
+    "group": "unit-negative-zero-NaN",
+    "side": 1,
+    "flag": 1,
+    "fill": 0,
+    "digits": 3,
+    "ticket": 4664419695607152640,
+    "opened": 4636737291354636288,
+    "unit": 9223372036854775808,
+    "step": 4613937818241073152,
+    "limit": 4611686018427387904,
+    "initial_step": 13875370549602942976,
+    "rows": [
+      [
+        3,
+        4664419695607152640,
+        9221120237041090560
+      ]
+    ],
+    "control": 0,
+    "control_row": 0,
+    "control_values": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": 141,
+    "group": "unit-negative-zero-NaN",
+    "side": 1,
+    "flag": 1,
+    "fill": 0,
+    "digits": 3,
+    "ticket": 4664419695607152640,
+    "opened": 4636737291354636288,
+    "unit": 13815242216921733530,
+    "step": 4613937818241073152,
+    "limit": 4611686018427387904,
+    "initial_step": 13875370549602942976,
+    "rows": [
+      [
+        3,
+        4664419695607152640,
+        0
+      ]
+    ],
+    "control": 0,
+    "control_row": 0,
+    "control_values": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": 142,
+    "group": "unit-negative-zero-NaN",
+    "side": 1,
+    "flag": 1,
+    "fill": 0,
+    "digits": 3,
+    "ticket": 4664419695607152640,
+    "opened": 4636737291354636288,
+    "unit": 13815242216921733530,
+    "step": 4613937818241073152,
+    "limit": 4611686018427387904,
+    "initial_step": 13875370549602942976,
+    "rows": [
+      [
+        3,
+        4664419695607152640,
+        4636666922610458624
+      ]
+    ],
+    "control": 0,
+    "control_row": 0,
+    "control_values": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": 143,
+    "group": "unit-negative-zero-NaN",
+    "side": 1,
+    "flag": 1,
+    "fill": 0,
+    "digits": 3,
+    "ticket": 4664419695607152640,
+    "opened": 4636737291354636288,
+    "unit": 13815242216921733530,
+    "step": 4613937818241073152,
+    "limit": 4611686018427387904,
+    "initial_step": 13875370549602942976,
+    "rows": [
+      [
+        3,
+        4664419695607152640,
+        9221120237041090560
+      ]
+    ],
+    "control": 0,
+    "control_row": 0,
+    "control_values": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": 144,
+    "group": "unit-negative-zero-NaN",
+    "side": 1,
+    "flag": 1,
+    "fill": 0,
+    "digits": 3,
+    "ticket": 4664419695607152640,
+    "opened": 4636737291354636288,
+    "unit": 4591870180066957722,
+    "step": 4613937818241073152,
+    "limit": 4611686018427387904,
+    "initial_step": 13875370549602942976,
+    "rows": [
+      [
+        3,
+        4664419695607152640,
+        0
+      ]
+    ],
+    "control": 0,
+    "control_row": 0,
+    "control_values": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": 145,
+    "group": "unit-negative-zero-NaN",
+    "side": 1,
+    "flag": 1,
+    "fill": 0,
+    "digits": 3,
+    "ticket": 4664419695607152640,
+    "opened": 4636737291354636288,
+    "unit": 4591870180066957722,
+    "step": 4613937818241073152,
+    "limit": 4611686018427387904,
+    "initial_step": 13875370549602942976,
+    "rows": [
+      [
+        3,
+        4664419695607152640,
+        4636666922610458624
+      ]
+    ],
+    "control": 0,
+    "control_row": 0,
+    "control_values": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": 146,
+    "group": "unit-negative-zero-NaN",
+    "side": 1,
+    "flag": 1,
+    "fill": 0,
+    "digits": 3,
+    "ticket": 4664419695607152640,
+    "opened": 4636737291354636288,
+    "unit": 4591870180066957722,
+    "step": 4613937818241073152,
+    "limit": 4611686018427387904,
+    "initial_step": 13875370549602942976,
+    "rows": [
+      [
+        3,
+        4664419695607152640,
+        9221120237041090560
+      ]
+    ],
+    "control": 0,
+    "control_row": 0,
+    "control_values": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": 147,
+    "group": "unit-negative-zero-NaN",
+    "side": 1,
+    "flag": 1,
+    "fill": 0,
+    "digits": 3,
+    "ticket": 4664419695607152640,
+    "opened": 4636737291354636288,
+    "unit": 9221120237041090560,
+    "step": 4613937818241073152,
+    "limit": 4611686018427387904,
+    "initial_step": 13875370549602942976,
+    "rows": [
+      [
+        3,
+        4664419695607152640,
+        0
+      ]
+    ],
+    "control": 0,
+    "control_row": 0,
+    "control_values": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": 148,
+    "group": "unit-negative-zero-NaN",
+    "side": 1,
+    "flag": 1,
+    "fill": 0,
+    "digits": 3,
+    "ticket": 4664419695607152640,
+    "opened": 4636737291354636288,
+    "unit": 9221120237041090560,
+    "step": 4613937818241073152,
+    "limit": 4611686018427387904,
+    "initial_step": 13875370549602942976,
+    "rows": [
+      [
+        3,
+        4664419695607152640,
+        4636666922610458624
+      ]
+    ],
+    "control": 0,
+    "control_row": 0,
+    "control_values": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": 149,
+    "group": "unit-negative-zero-NaN",
+    "side": 1,
+    "flag": 1,
+    "fill": 0,
+    "digits": 3,
+    "ticket": 4664419695607152640,
+    "opened": 4636737291354636288,
+    "unit": 9221120237041090560,
+    "step": 4613937818241073152,
+    "limit": 4611686018427387904,
+    "initial_step": 13875370549602942976,
+    "rows": [
+      [
+        3,
+        4664419695607152640,
+        9221120237041090560
+      ]
+    ],
+    "control": 0,
+    "control_row": 0,
+    "control_values": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": 150,
+    "group": "unit-negative-zero-NaN",
+    "side": 1,
+    "flag": 1,
+    "fill": 0,
+    "digits": 3,
+    "ticket": 4664419695607152640,
+    "opened": 4636737291354636288,
+    "unit": 9218868437227405312,
+    "step": 4613937818241073152,
+    "limit": 4611686018427387904,
+    "initial_step": 13875370549602942976,
+    "rows": [
+      [
+        3,
+        4664419695607152640,
+        0
+      ]
+    ],
+    "control": 0,
+    "control_row": 0,
+    "control_values": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": 151,
+    "group": "unit-negative-zero-NaN",
+    "side": 1,
+    "flag": 1,
+    "fill": 0,
+    "digits": 3,
+    "ticket": 4664419695607152640,
+    "opened": 4636737291354636288,
+    "unit": 9218868437227405312,
+    "step": 4613937818241073152,
+    "limit": 4611686018427387904,
+    "initial_step": 13875370549602942976,
+    "rows": [
+      [
+        3,
+        4664419695607152640,
+        4636666922610458624
+      ]
+    ],
+    "control": 0,
+    "control_row": 0,
+    "control_values": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": 152,
+    "group": "unit-negative-zero-NaN",
+    "side": 1,
+    "flag": 1,
+    "fill": 0,
+    "digits": 3,
+    "ticket": 4664419695607152640,
+    "opened": 4636737291354636288,
+    "unit": 9218868437227405312,
+    "step": 4613937818241073152,
+    "limit": 4611686018427387904,
+    "initial_step": 13875370549602942976,
+    "rows": [
+      [
+        3,
+        4664419695607152640,
+        9221120237041090560
+      ]
+    ],
+    "control": 0,
+    "control_row": 0,
+    "control_values": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": 153,
+    "group": "unit-negative-zero-NaN",
+    "side": 1,
+    "flag": 1,
+    "fill": 0,
+    "digits": 3,
+    "ticket": 4664419695607152640,
+    "opened": 4636737291354636288,
+    "unit": 18442240474082181120,
+    "step": 4613937818241073152,
+    "limit": 4611686018427387904,
+    "initial_step": 13875370549602942976,
+    "rows": [
+      [
+        3,
+        4664419695607152640,
+        0
+      ]
+    ],
+    "control": 0,
+    "control_row": 0,
+    "control_values": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": 154,
+    "group": "unit-negative-zero-NaN",
+    "side": 1,
+    "flag": 1,
+    "fill": 0,
+    "digits": 3,
+    "ticket": 4664419695607152640,
+    "opened": 4636737291354636288,
+    "unit": 18442240474082181120,
+    "step": 4613937818241073152,
+    "limit": 4611686018427387904,
+    "initial_step": 13875370549602942976,
+    "rows": [
+      [
+        3,
+        4664419695607152640,
+        4636666922610458624
+      ]
+    ],
+    "control": 0,
+    "control_row": 0,
+    "control_values": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": 155,
+    "group": "unit-negative-zero-NaN",
+    "side": 1,
+    "flag": 1,
+    "fill": 0,
+    "digits": 3,
+    "ticket": 4664419695607152640,
+    "opened": 4636737291354636288,
+    "unit": 18442240474082181120,
+    "step": 4613937818241073152,
+    "limit": 4611686018427387904,
+    "initial_step": 13875370549602942976,
+    "rows": [
+      [
+        3,
+        4664419695607152640,
+        9221120237041090560
+      ]
+    ],
+    "control": 0,
+    "control_row": 0,
+    "control_values": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": 156,
+    "group": "digits-low32",
+    "side": 1,
+    "flag": 1,
+    "fill": 0,
+    "digits": -1,
+    "ticket": 4664419695607152640,
+    "opened": 4636737291354636288,
+    "unit": 4591870180066957722,
+    "step": 4613937818241073152,
+    "limit": 4611686018427387904,
+    "initial_step": 13875370549602942976,
+    "rows": [
+      [
+        0,
+        4664419695607152640,
+        4636675610103397943
+      ]
+    ],
+    "control": 0,
+    "control_row": 0,
+    "control_values": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": 157,
+    "group": "digits-low32",
+    "side": 1,
+    "flag": 1,
+    "fill": 0,
+    "digits": 0,
+    "ticket": 4664419695607152640,
+    "opened": 4636737291354636288,
+    "unit": 4591870180066957722,
+    "step": 4613937818241073152,
+    "limit": 4611686018427387904,
+    "initial_step": 13875370549602942976,
+    "rows": [
+      [
+        0,
+        4664419695607152640,
+        4636675610103397943
+      ]
+    ],
+    "control": 0,
+    "control_row": 0,
+    "control_values": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": 158,
+    "group": "digits-low32",
+    "side": 1,
+    "flag": 1,
+    "fill": 0,
+    "digits": 2,
+    "ticket": 4664419695607152640,
+    "opened": 4636737291354636288,
+    "unit": 4591870180066957722,
+    "step": 4613937818241073152,
+    "limit": 4611686018427387904,
+    "initial_step": 13875370549602942976,
+    "rows": [
+      [
+        0,
+        4664419695607152640,
+        4636675610103397943
+      ]
+    ],
+    "control": 0,
+    "control_row": 0,
+    "control_values": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": 159,
+    "group": "digits-low32",
+    "side": 1,
+    "flag": 1,
+    "fill": 0,
+    "digits": 8,
+    "ticket": 4664419695607152640,
+    "opened": 4636737291354636288,
+    "unit": 4591870180066957722,
+    "step": 4613937818241073152,
+    "limit": 4611686018427387904,
+    "initial_step": 13875370549602942976,
+    "rows": [
+      [
+        0,
+        4664419695607152640,
+        4636675610103397943
+      ]
+    ],
+    "control": 0,
+    "control_row": 0,
+    "control_values": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": 160,
+    "group": "digits-low32",
+    "side": 1,
+    "flag": 1,
+    "fill": 0,
+    "digits": 10,
+    "ticket": 4664419695607152640,
+    "opened": 4636737291354636288,
+    "unit": 4591870180066957722,
+    "step": 4613937818241073152,
+    "limit": 4611686018427387904,
+    "initial_step": 13875370549602942976,
+    "rows": [
+      [
+        0,
+        4664419695607152640,
+        4636675610103397943
+      ]
+    ],
+    "control": 0,
+    "control_row": 0,
+    "control_values": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": 161,
+    "group": "digits-low32",
+    "side": 1,
+    "flag": 1,
+    "fill": 0,
+    "digits": 11,
+    "ticket": 4664419695607152640,
+    "opened": 4636737291354636288,
+    "unit": 4591870180066957722,
+    "step": 4613937818241073152,
+    "limit": 4611686018427387904,
+    "initial_step": 13875370549602942976,
+    "rows": [
+      [
+        0,
+        4664419695607152640,
+        4636675610103397943
+      ]
+    ],
+    "control": 0,
+    "control_row": 0,
+    "control_values": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": 162,
+    "group": "digits-low32",
+    "side": 1,
+    "flag": 1,
+    "fill": 0,
+    "digits": 12,
+    "ticket": 4664419695607152640,
+    "opened": 4636737291354636288,
+    "unit": 4591870180066957722,
+    "step": 4613937818241073152,
+    "limit": 4611686018427387904,
+    "initial_step": 13875370549602942976,
+    "rows": [
+      [
+        0,
+        4664419695607152640,
+        4636675610103397943
+      ]
+    ],
+    "control": 0,
+    "control_row": 0,
+    "control_values": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": 163,
+    "group": "digits-low32",
+    "side": 1,
+    "flag": 1,
+    "fill": 0,
+    "digits": 4294967299,
+    "ticket": 4664419695607152640,
+    "opened": 4636737291354636288,
+    "unit": 4591870180066957722,
+    "step": 4613937818241073152,
+    "limit": 4611686018427387904,
+    "initial_step": 13875370549602942976,
+    "rows": [
+      [
+        0,
+        4664419695607152640,
+        4636675610103397943
+      ]
+    ],
+    "control": 0,
+    "control_row": 0,
+    "control_values": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": 164,
+    "group": "digits-low32",
+    "side": 1,
+    "flag": 1,
+    "fill": 0,
+    "digits": -9223372036854775808,
+    "ticket": 4664419695607152640,
+    "opened": 4636737291354636288,
+    "unit": 4591870180066957722,
+    "step": 4613937818241073152,
+    "limit": 4611686018427387904,
+    "initial_step": 13875370549602942976,
+    "rows": [
+      [
+        0,
+        4664419695607152640,
+        4636675610103397943
+      ]
+    ],
+    "control": 0,
+    "control_row": 0,
+    "control_values": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": 165,
+    "group": "digits-low32",
+    "side": 1,
+    "flag": 1,
+    "fill": 0,
+    "digits": 9223372036854775807,
+    "ticket": 4664419695607152640,
+    "opened": 4636737291354636288,
+    "unit": 4591870180066957722,
+    "step": 4613937818241073152,
+    "limit": 4611686018427387904,
+    "initial_step": 13875370549602942976,
+    "rows": [
+      [
+        0,
+        4664419695607152640,
+        4636675610103397943
+      ]
+    ],
+    "control": 0,
+    "control_row": 0,
+    "control_values": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": 166,
+    "group": "distance-boundary",
+    "side": 1,
+    "flag": 1,
+    "fill": 0,
+    "digits": 3,
+    "ticket": 4664419695607152640,
+    "opened": 4636737291354636288,
+    "unit": 4591870180066957722,
+    "step": 4613937818241073152,
+    "limit": 4621819117026021567,
+    "initial_step": 13875370549602942976,
+    "rows": [
+      [
+        0,
+        4664419695607152640,
+        4636666922610458624
+      ]
+    ],
+    "control": 0,
+    "control_row": 0,
+    "control_values": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": 167,
+    "group": "distance-boundary",
+    "side": 1,
+    "flag": 1,
+    "fill": 0,
+    "digits": 3,
+    "ticket": 4664419695607152640,
+    "opened": 4636737291354636288,
+    "unit": 4591870180066957722,
+    "step": 4613937818241073152,
+    "limit": 4621819117588971520,
+    "initial_step": 13875370549602942976,
+    "rows": [
+      [
+        0,
+        4664419695607152640,
+        4636666922610458624
+      ]
+    ],
+    "control": 0,
+    "control_row": 0,
+    "control_values": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": 168,
+    "group": "distance-boundary",
+    "side": 1,
+    "flag": 1,
+    "fill": 0,
+    "digits": 3,
+    "ticket": 4664419695607152640,
+    "opened": 4636737291354636288,
+    "unit": 4591870180066957722,
+    "step": 4613937818241073152,
+    "limit": 4621819118151921473,
+    "initial_step": 13875370549602942976,
+    "rows": [
+      [
+        0,
+        4664419695607152640,
+        4636666922610458624
+      ]
+    ],
+    "control": 0,
+    "control_row": 0,
+    "control_values": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": 169,
+    "group": "distance-unordered",
+    "side": 1,
+    "flag": 1,
+    "fill": 0,
+    "digits": 3,
+    "ticket": 4664419695607152640,
+    "opened": 4636737291354636288,
+    "unit": 4591870180066957722,
+    "step": 4613937818241073152,
+    "limit": 13830554455654793216,
+    "initial_step": 13875370549602942976,
+    "rows": [
+      [
+        0,
+        4664419695607152640,
+        4636666922610458624
+      ]
+    ],
+    "control": 0,
+    "control_row": 0,
+    "control_values": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": 170,
+    "group": "distance-unordered",
+    "side": 1,
+    "flag": 1,
+    "fill": 0,
+    "digits": 3,
+    "ticket": 4664419695607152640,
+    "opened": 4636737291354636288,
+    "unit": 4591870180066957722,
+    "step": 4613937818241073152,
+    "limit": 0,
+    "initial_step": 13875370549602942976,
+    "rows": [
+      [
+        0,
+        4664419695607152640,
+        4636666922610458624
+      ]
+    ],
+    "control": 0,
+    "control_row": 0,
+    "control_values": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": 171,
+    "group": "distance-unordered",
+    "side": 1,
+    "flag": 1,
+    "fill": 0,
+    "digits": 3,
+    "ticket": 4664419695607152640,
+    "opened": 4636737291354636288,
+    "unit": 4591870180066957722,
+    "step": 4613937818241073152,
+    "limit": 9221120237041090560,
+    "initial_step": 13875370549602942976,
+    "rows": [
+      [
+        0,
+        4664419695607152640,
+        4636666922610458624
+      ]
+    ],
+    "control": 0,
+    "control_row": 0,
+    "control_values": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": 172,
+    "group": "distance-unordered",
+    "side": 1,
+    "flag": 1,
+    "fill": 0,
+    "digits": 3,
+    "ticket": 4664419695607152640,
+    "opened": 4636737291354636288,
+    "unit": 4591870180066957722,
+    "step": 4613937818241073152,
+    "limit": 9218868437227405312,
+    "initial_step": 13875370549602942976,
+    "rows": [
+      [
+        0,
+        4664419695607152640,
+        4636666922610458624
+      ]
+    ],
+    "control": 0,
+    "control_row": 0,
+    "control_values": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": 173,
+    "group": "distance-unordered",
+    "side": 1,
+    "flag": 1,
+    "fill": 0,
+    "digits": 3,
+    "ticket": 4664419695607152640,
+    "opened": 4636737291354636288,
+    "unit": 4591870180066957722,
+    "step": 4613937818241073152,
+    "limit": 18442240474082181120,
+    "initial_step": 13875370549602942976,
+    "rows": [
+      [
+        0,
+        4664419695607152640,
+        4636666922610458624
+      ]
+    ],
+    "control": 0,
+    "control_row": 0,
+    "control_values": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": 174,
+    "group": "duplicate-first-match",
+    "side": 1,
+    "flag": 1,
+    "fill": 0,
+    "digits": 3,
+    "ticket": 4664419695607152640,
+    "opened": 4636737291354636288,
+    "unit": 4591870180066957722,
+    "step": 4613937818241073152,
+    "limit": 4611686018427387904,
+    "initial_step": 13875370549602942976,
+    "rows": [
+      [
+        1,
+        4664419695607152640,
+        4636666922610458624
+      ],
+      [
+        4,
+        4664419695607152640,
+        4635892866424504320
+      ]
+    ],
+    "control": 0,
+    "control_row": 0,
+    "control_values": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": 175,
+    "group": "free-last-row",
+    "side": 1,
+    "flag": 1,
+    "fill": 1,
+    "digits": 3,
+    "ticket": 4664419695607152640,
+    "opened": 4636737291354636288,
+    "unit": 4591870180066957722,
+    "step": 4613937818241073152,
+    "limit": 4611686018427387904,
+    "initial_step": 13875370549602942976,
+    "rows": [
+      [
+        99,
+        9223372036854775808,
+        4644565814144401408
+      ]
+    ],
+    "control": 0,
+    "control_row": 0,
+    "control_values": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": 176,
+    "group": "zero-ticket-cached-value",
+    "side": 1,
+    "flag": 1,
+    "fill": 0,
+    "digits": 3,
+    "ticket": 9223372036854775808,
+    "opened": 4636737291354636288,
+    "unit": 4591870180066957722,
+    "step": 4613937818241073152,
+    "limit": 4611686018427387904,
+    "initial_step": 13875370549602942976,
+    "rows": [
+      [
+        0,
+        0,
+        4636666922610458624
+      ]
+    ],
+    "control": 0,
+    "control_row": 0,
+    "control_values": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": 177,
+    "group": "step-copied-before-api",
+    "side": 1,
+    "flag": 1,
+    "fill": 0,
+    "digits": 3,
+    "ticket": 4664419695607152640,
+    "opened": 4636737291354636288,
+    "unit": 4591870180066957722,
+    "step": 0,
+    "limit": 4611686018427387904,
+    "initial_step": 13875370549602942976,
+    "rows": [],
+    "control": 0,
+    "control_row": 0,
+    "control_values": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": 178,
+    "group": "step-copied-before-api",
+    "side": 1,
+    "flag": 1,
+    "fill": 0,
+    "digits": 3,
+    "ticket": 4664419695607152640,
+    "opened": 4636737291354636288,
+    "unit": 4591870180066957722,
+    "step": 9223372036854775808,
+    "limit": 4611686018427387904,
+    "initial_step": 13875370549602942976,
+    "rows": [],
+    "control": 0,
+    "control_row": 0,
+    "control_values": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": 179,
+    "group": "step-copied-before-api",
+    "side": 1,
+    "flag": 1,
+    "fill": 0,
+    "digits": 3,
+    "ticket": 4664419695607152640,
+    "opened": 4636737291354636288,
+    "unit": 4591870180066957722,
+    "step": 4607182418800017408,
+    "limit": 4611686018427387904,
+    "initial_step": 13875370549602942976,
+    "rows": [],
+    "control": 0,
+    "control_row": 0,
+    "control_values": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": 180,
+    "group": "step-copied-before-api",
+    "side": 1,
+    "flag": 1,
+    "fill": 0,
+    "digits": 3,
+    "ticket": 4664419695607152640,
+    "opened": 4636737291354636288,
+    "unit": 4591870180066957722,
+    "step": 9221120237041090560,
+    "limit": 4611686018427387904,
+    "initial_step": 13875370549602942976,
+    "rows": [],
+    "control": 0,
+    "control_row": 0,
+    "control_values": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": 181,
+    "group": "step-copied-before-api",
+    "side": 1,
+    "flag": 1,
+    "fill": 0,
+    "digits": 3,
+    "ticket": 4664419695607152640,
+    "opened": 4636737291354636288,
+    "unit": 4591870180066957722,
+    "step": 9218868437227405312,
+    "limit": 4611686018427387904,
+    "initial_step": 13875370549602942976,
+    "rows": [],
+    "control": 0,
+    "control_row": 0,
+    "control_values": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": 182,
+    "group": "step-copied-before-api",
+    "side": 1,
+    "flag": 1,
+    "fill": 0,
+    "digits": 3,
+    "ticket": 4664419695607152640,
+    "opened": 4636737291354636288,
+    "unit": 4591870180066957722,
+    "step": 18442240474082181120,
+    "limit": 4611686018427387904,
+    "initial_step": 13875370549602942976,
+    "rows": [],
+    "control": 0,
+    "control_row": 0,
+    "control_values": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": 183,
+    "group": "service-state-change",
+    "side": 1,
+    "flag": 1,
+    "fill": 0,
+    "digits": 3,
+    "ticket": 4664419695607152640,
+    "opened": 4636737291354636288,
+    "unit": 4591870180066957722,
+    "step": 4613937818241073152,
+    "limit": 4611686018427387904,
+    "initial_step": 13875370549602942976,
+    "rows": [
+      [
+        0,
+        4664419695607152640,
+        4636666922610458624
+      ]
+    ],
+    "control": 1,
+    "control_row": 0,
+    "control_values": [
+      4598175219545276416,
+      0
+    ]
+  },
+  {
+    "id": 184,
+    "group": "service-state-change",
+    "side": 1,
+    "flag": 1,
+    "fill": 0,
+    "digits": 3,
+    "ticket": 4664419695607152640,
+    "opened": 4636737291354636288,
+    "unit": 4591870180066957722,
+    "step": 4613937818241073152,
+    "limit": 4611686018427387904,
+    "initial_step": 13875370549602942976,
+    "rows": [
+      [
+        0,
+        4664419695607152640,
+        4636666922610458624
+      ]
+    ],
+    "control": 1,
+    "control_row": 0,
+    "control_values": [
+      9218868437227405312,
+      0
+    ]
+  },
+  {
+    "id": 185,
+    "group": "service-state-change",
+    "side": 1,
+    "flag": 1,
+    "fill": 0,
+    "digits": 3,
+    "ticket": 4664419695607152640,
+    "opened": 4636737291354636288,
+    "unit": 4591870180066957722,
+    "step": 4613937818241073152,
+    "limit": 4611686018427387904,
+    "initial_step": 13875370549602942976,
+    "rows": [
+      [
+        0,
+        4664419695607152640,
+        4636666922610458624
+      ]
+    ],
+    "control": 2,
+    "control_row": 0,
+    "control_values": [
+      4652007308841189376,
+      0
+    ]
+  },
+  {
+    "id": 186,
+    "group": "service-state-change",
+    "side": 1,
+    "flag": 1,
+    "fill": 0,
+    "digits": 3,
+    "ticket": 4664419695607152640,
+    "opened": 4636737291354636288,
+    "unit": 4591870180066957722,
+    "step": 4613937818241073152,
+    "limit": 4611686018427387904,
+    "initial_step": 13875370549602942976,
+    "rows": [
+      [
+        0,
+        4664419695607152640,
+        4636666922610458624
+      ]
+    ],
+    "control": 3,
+    "control_row": 0,
+    "control_values": [
+      4666722622711529472,
+      0
+    ]
+  },
+  {
+    "id": 187,
+    "group": "service-state-change",
+    "side": 1,
+    "flag": 1,
+    "fill": 0,
+    "digits": 3,
+    "ticket": 4664419695607152640,
+    "opened": 4636737291354636288,
+    "unit": 4591870180066957722,
+    "step": 4613937818241073152,
+    "limit": 4611686018427387904,
+    "initial_step": 13875370549602942976,
+    "rows": [
+      [
+        0,
+        4664419695607152640,
+        4636666922610458624
+      ]
+    ],
+    "control": 4,
+    "control_row": 0,
+    "control_values": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": 188,
+    "group": "service-state-change",
+    "side": 1,
+    "flag": 1,
+    "fill": 0,
+    "digits": 3,
+    "ticket": 4664419695607152640,
+    "opened": 4636737291354636288,
+    "unit": 4591870180066957722,
+    "step": 4613937818241073152,
+    "limit": 4611686018427387904,
+    "initial_step": 13875370549602942976,
+    "rows": [
+      [
+        0,
+        4664419695607152640,
+        4636666922610458624
+      ]
+    ],
+    "control": 4,
+    "control_row": 0,
+    "control_values": [
+      4643176031446892544,
+      0
+    ]
+  },
+  {
+    "id": 189,
+    "group": "service-changes-matched-row",
+    "side": 1,
+    "flag": 1,
+    "fill": 0,
+    "digits": 3,
+    "ticket": 4664419695607152640,
+    "opened": 4636737291354636288,
+    "unit": 4591870180066957722,
+    "step": 4613937818241073152,
+    "limit": 4611686018427387904,
+    "initial_step": 13875370549602942976,
+    "rows": [],
+    "control": 5,
+    "control_row": 0,
+    "control_values": [
+      4664419695607152640,
+      4636666922610458624
+    ]
+  }
+]

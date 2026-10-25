@@ -1,0 +1,22 @@
+{
+  "status": "root-independent-anchor-check-passed",
+  "cases": 190,
+  "matched": 190,
+  "failed": 0,
+  "build": "b3-management-anchor-02",
+  "build_errors": 0,
+  "build_warnings": 0,
+  "comparison_sha256": "f3c34fbc7b18b6ca00d8688c308e52c3cced9ceb64ace0228912c88d1b8ab727",
+  "result_sha256": "6a0b9c6ae3a9f87524a5bf3a892591c92d58d88199e0656956997d92e19bb06a",
+  "source_sha256": "633c867de8ffff72e7010f36f0142141af63d8e9fc5370d97d00b302259ddd4c",
+  "coverage": {
+    "1": 101,
+    "0": 99
+  },
+  "whole_manager_complete": false,
+  "whole_bot_complete": false,
+  "limits": [
+    "Two anchor slices only, one SymbolInfoInteger reply supplied per case.",
+    "No full management functions, callers, trades, account/lifecycle or whole EA proof."
+  ]
+}

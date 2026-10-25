@@ -1,0 +1,16 @@
+{
+  "cases": 190,
+  "matched": 190,
+  "failed": 0,
+  "first_failures": [],
+  "hashes": {
+    "baseline.json": "a1335af7913c75e0fa813a1eea153135dc807861ea5986bbe7494de16b815816",
+    "cases.bin": "f4ba344f41f83951aba64f6f9e0bf8ff1df2f10625ed0979dfea5f3813a1989d",
+    "original-results.bin": "6a0b9c6ae3a9f87524a5bf3a892591c92d58d88199e0656956997d92e19bb06a",
+    "mql5-results.bin": "6a0b9c6ae3a9f87524a5bf3a892591c92d58d88199e0656956997d92e19bb06a",
+    "script-status.bin": "5a979af620db7aa08cef6dbace209b79fe684635317a15e98f986a663fdb1c9b"
+  },
+  "whole_manager_complete": false,
+  "whole_bot_complete": false,
+  "scope": "Only the two anchor segments: all200 table doubles,copied setting,converted ticket,anchor,reference,gap bool and before/after supplied digits service state. Other management branches,callers,trades,real account,lifecycle and full EA remain unverified."
+}
