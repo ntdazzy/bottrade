@@ -1,0 +1,11 @@
+0x1881e nop 
+0x1890f nop 
+0x18985 nop word ptr cs:[rax + rax]
+0x1898f nop 
+0x189e4 nop word ptr cs:[rax + rax]
+0x189ee nop 
+0x18a5e movabs rcx, 0x23e575eae78
+0x18a68 movabs rax, 0x7ff6842b59a0
+0x18a72 movabs rdx, 0x1f1ad9000001f6
+0x18a7c call rax
+0x18a9e int3 

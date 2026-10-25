@@ -1,0 +1,180 @@
+{
+  "cases": 220,
+  "matched": 220,
+  "failed": 0,
+  "first_failures": [],
+  "groups": {
+    "guard-byte": {
+      "cases": 16,
+      "matched": 16
+    },
+    "first-existing-ticket": {
+      "cases": 8,
+      "matched": 8
+    },
+    "duplicate-first-match": {
+      "cases": 8,
+      "matched": 8
+    },
+    "side-int32": {
+      "cases": 7,
+      "matched": 7
+    },
+    "float-arguments": {
+      "cases": 54,
+      "matched": 54
+    },
+    "digits-low32": {
+      "cases": 11,
+      "matched": 11
+    },
+    "no-free-row-cleanup": {
+      "cases": 3,
+      "matched": 3
+    },
+    "find-free-last": {
+      "cases": 2,
+      "matched": 2
+    },
+    "full-table-warning": {
+      "cases": 1,
+      "matched": 1
+    },
+    "full-table-warning-once": {
+      "cases": 1,
+      "matched": 1
+    },
+    "disabled-table-warning": {
+      "cases": 1,
+      "matched": 1
+    },
+    "zero-guard-warning": {
+      "cases": 1,
+      "matched": 1
+    },
+    "warning-rereads-guard": {
+      "cases": 1,
+      "matched": 1
+    },
+    "digits-reread-unit": {
+      "cases": 1,
+      "matched": 1
+    },
+    "digits-enable-and-fill-row": {
+      "cases": 1,
+      "matched": 1
+    },
+    "cleanup-rereads-guard": {
+      "cases": 1,
+      "matched": 1
+    },
+    "array-initial-size": {
+      "cases": 12,
+      "matched": 12
+    },
+    "position-types-and-selection": {
+      "cases": 10,
+      "matched": 10
+    },
+    "array-growth": {
+      "cases": 8,
+      "matched": 8
+    },
+    "resize-fails-empty-account": {
+      "cases": 1,
+      "matched": 1
+    },
+    "delay-conversion-and-boundary": {
+      "cases": 45,
+      "matched": 45
+    },
+    "delay-int32": {
+      "cases": 6,
+      "matched": 6
+    },
+    "delay-rereads-setting": {
+      "cases": 1,
+      "matched": 1
+    },
+    "delay-caches-stamp": {
+      "cases": 1,
+      "matched": 1
+    },
+    "delay-no-ticket": {
+      "cases": 1,
+      "matched": 1
+    },
+    "stamp-int64-to-double": {
+      "cases": 6,
+      "matched": 6
+    },
+    "stamp-keeps-found-row": {
+      "cases": 1,
+      "matched": 1
+    },
+    "stamp-no-ticket": {
+      "cases": 1,
+      "matched": 1
+    },
+    "initial-resize-retry": {
+      "cases": 1,
+      "matched": 1
+    },
+    "old-tail-is-not-open": {
+      "cases": 2,
+      "matched": 2
+    },
+    "negative-zero-ticket-cache": {
+      "cases": 1,
+      "matched": 1
+    },
+    "negative-zero-free-slot": {
+      "cases": 1,
+      "matched": 1
+    },
+    "cached-level-not-rounded": {
+      "cases": 1,
+      "matched": 1
+    },
+    "symbol-forwarding": {
+      "cases": 2,
+      "matched": 2
+    },
+    "separate-multiply-add": {
+      "cases": 1,
+      "matched": 1
+    },
+    "separate-multiply-subtract": {
+      "cases": 1,
+      "matched": 1
+    }
+  },
+  "coverage": {
+    "0x18790": {
+      "executed": 163,
+      "instructions": 178
+    },
+    "0x3d200": {
+      "executed": 174,
+      "instructions": 174
+    },
+    "0x3d5a0": {
+      "executed": 39,
+      "instructions": 39
+    },
+    "0x3d640": {
+      "executed": 29,
+      "instructions": 29
+    }
+  },
+  "hashes": {
+    "cases.bin": "fbf9b3681ca2fadebf8b595b9dd090318a7b1f99280ed94aec9be91a1a1d3cf2",
+    "baseline.json": "b0d934be00f3495670247fa6fbdb15683ec0e9614125a348a432412439d04dd7",
+    "mql5-results.bin": "7aabffa254cfdc27660cc4252ac504d32ab10b7eb86149c56bfd82b2a19cdf24",
+    "api-fixtures.bin": "b40c43bc6aca0bc4a34cdd1df890d8a351bded429bf243e366279c77f9f474e3",
+    "original-results.bin": "7aabffa254cfdc27660cc4252ac504d32ab10b7eb86149c56bfd82b2a19cdf24",
+    "script-status.bin": "836367b29904a735384d24d4e8457bc70092a437779ba2e21c6b33aee2d35219"
+  },
+  "whole_bot_complete": false,
+  "scope": "Four bot1 virtual-stop functions. Return bits, all1500 table doubles,guard,warning ticket,delay,unit,symbol,selected-position model,full physical ticket array and exact typed SDK records compared. ArrayResize post-state measured in MQL5 and input-bound; query replies supplied. Fatal cases,actual account/LastError,all allocation outcomes,error locations,tester and whole EA remain unverified."
+}

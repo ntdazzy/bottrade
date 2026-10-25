@@ -1,0 +1,120 @@
+{
+  "status": "running-no-delivery-yet",
+  "pid": 7384,
+  "started": "2026-10-25T06:26:54.0530929Z",
+  "session_id": "06889925-53b9-46d0-abd8-2e1f08e68869",
+  "requests_observed": [
+    {
+      "timestamp": "2026-10-25T06:26:57.475Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T06:27:32.179Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T06:27:36.870Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T06:27:43.933Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T06:28:11.635Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T06:28:16.289Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T06:28:26.320Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T06:28:31.072Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T06:28:41.448Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T06:28:47.831Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T06:28:53.829Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T06:28:57.585Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T06:29:05.912Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T06:29:20.466Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T06:29:27.095Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T06:30:35.806Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T06:30:42.363Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T06:30:47.302Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T06:31:17.368Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T06:31:24.713Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T06:31:34.859Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    }
+  ],
+  "prompt_sha256": "8292122cc75e90006103943cbb9b84b9c70f61c617c019e070e12bade6bb918c",
+  "journal_prefix_bytes": 12010641,
+  "journal_prefix_sha256": "aaaa82fe501116bf41243c577704f33c50cf21faba43597a60a37989e147bc39",
+  "previous_review_prefix_unchanged": true,
+  "ultracode_requested": true,
+  "ultracode_runtime_confirmed": null,
+  "whole_bot_complete": false
+}

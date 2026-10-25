@@ -23,6 +23,12 @@ vi EX5, gồm kiểu số, thứ tự, làm tròn và tác dụng phụ.
 Theo yêu cầu hiện tại, Claude là người làm chính, nhận khoảng 95%
 phần việc phân tích, viết mã và bộ kiểm. Codex quản lý, chia phần,
 theo dõi, tự đối chiếu với bot gốc và kiểm kết quả trước khi ghép.
+Cách giao việc được làm rõ ngày 25/10/2026: Codex phân tích bằng chứng
+gốc trước và chốt mô tả từng chức năng, gồm công thức, điều kiện, kiểu
+số, thứ tự và tác dụng phụ. Claude nhận mô tả cùng ngữ cảnh/mục tiêu
+để viết từng phần; không phải tự phân tích EX5 thay bước này. Codex
+kiểm mã rồi so với bản gốc. Cách viết mã có thể khác, logic xử lý phải
+giữ nguyên; chỗ chưa rõ cần phân tích tiếp, không tự điền hoặc thêm luật.
 Ngoại lệ được người dùng xác nhận ngày 25/10/2026: Codex trực tiếp làm
 các phần Claude từ chối, gồm phân tích, viết mã và bộ kiểm; Claude làm
 các phần còn nhận. Không đổi cách hỏi để vượt việc từ chối.
@@ -79,6 +85,10 @@ lượng → đặt/sửa/xóa lệnh → sau khớp → lịch tin/giao diện 
 - Kết quả mong đợi lấy từ bản gốc, không lấy từ chính mã mới để tự chứng minh.
 - Hai bản dùng cùng mã giá, dữ liệu, kỳ, khung, tham số, cách tạo giá, vốn, phí và điều kiện khớp.
 - So thời điểm, hướng, giá, khối lượng, dừng/chốt và mọi lần đặt/khớp/sửa/hủy/hết hạn/đóng; cùng tổng tiền chưa đủ.
+- Khi đã có EA chính đầy đủ, chạy bản gốc và bản dựng lại song song
+  trong hai môi trường MT5 kiểm thử riêng, dùng cùng dữ liệu và cài
+  đặt. So đầy đủ kết quả theo thứ tự; mọi mục bắt buộc phải khớp mới
+  đạt. Kiểm từng hàm trước đó không được gọi là đã chạy cặp toàn bot.
 - Kiểm các chế độ, tham số, ngày/nến mới, không vào lệnh, mất dữ liệu, khởi động lại và lỗi.
 - Có sai số thì giải thích nguồn và ảnh hưởng; không nới sai số để giấu lệch.
 - Mỗi lượt lưu lệnh chạy, phiên bản công cụ, mã nguồn/EX5/dữ liệu, nhật ký, kết quả và giới hạn. Không sửa bằng chứng cũ.

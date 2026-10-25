@@ -1,0 +1,16 @@
+{
+  "exit_code": 1,
+  "errors": 0,
+  "warnings": 0,
+  "source_sha256": "cc839e364f77e29bbe48022bede29fd377b88c06daaccb214998c94e35f4be62",
+  "binary_sha256": "0c01684fd93ed2ebec8008c57c0b9c048dce48b6ad6c790657aa52634d9c0a10",
+  "component_build_receipt_sha256": "a9a800aa5d531e7adc6dc62e3b2ddc679d0a58f7ff572e4a58bee215439195ec",
+  "component_sources_sha256": {
+    "Include/bot-cua-toi-1/Bot1VirtualStops.mqh": "da7aa4f6ff38c97aa4e9288620f7e975d7255c598468948a515f8de2f2b7f400",
+    "Include/bot-cua-toi-1/Bot1PriceLevels.mqh": "601bdd551e24e3ac9a7742cc00e057d881b069ab672843bec31b3f32a43316b1",
+    "Scripts/bot-cua-toi-1/Bot1VirtualStopsCheck.mq5": "753c6426aaa468bc2c31a242f963165ee32a9055d0413ba79c6654d113cbcd2a"
+  },
+  "test_input_sha256": "fbf9b3681ca2fadebf8b595b9dd090318a7b1f99280ed94aec9be91a1a1d3cf2",
+  "tester_sha256": "5033d9d45d669cebd735e8a6be20b54d74b75274f885c9a0e48e52d872104efb",
+  "tool_sha256": "9bffea7c404da12df62c1727f74cdd903de4c6b4bb4d2abb3095b4b38d8f9ab5"
+}

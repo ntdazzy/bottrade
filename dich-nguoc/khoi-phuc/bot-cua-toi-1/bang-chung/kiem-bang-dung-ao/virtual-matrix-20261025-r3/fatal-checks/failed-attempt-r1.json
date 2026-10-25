@@ -1,0 +1,14 @@
+{
+  "status": "driver-exit-code-assumption-failed",
+  "cause": "The driver expected terminal exit0 for a fatal script. The terminal journal instead records script result/terminal shutdown -1 and an actual array-out-of-range error. Production code is unchanged.",
+  "observed_case": 211,
+  "observed_mql_error": "array out of range in 'Bot1VirtualStops.mqh' (25,20)",
+  "journal_time_local": "09:34:54.433",
+  "script_status_present": false,
+  "hashes": {
+    "mql5-results.bin": "a2929724afcb7fd37ecadbd10557d0767f753a287c3231fe51dd83ffa65a3464",
+    "api-fixtures.bin": "c1ba9ec26b6266a4e51949e51b32c6eaec62a19126f5acb012ff1a371f495849"
+  },
+  "process_exit_code_not_saved_by_first_driver": true,
+  "whole_bot_complete": false
+}

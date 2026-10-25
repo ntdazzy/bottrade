@@ -244,6 +244,9 @@ def main():
             close_rvas={1:[0x22c40,0x3d010],3:[0x2e370,0x47d20]}
             position_scan_rvas={1:[0x2fa00,0x2fce0],3:[0x3ce40,0x3d220]}
             modify_rvas={1:[0x26d20],3:[0x32a90]};modify_sites={1:19,3:21}
+            virtual_rvas=[0x18790,0x3d200,0x3d5a0,0x3d640] if bot==1 else []
+            for virtual_rva in virtual_rvas:
+                new_parts[virtual_rva]=('kiem-bang-dung-ao/virtual-matrix-20261025-r4','VirtualStops','Bốn hàm bảng dừng ảo: 220 ca thường và hai ca lỗi mảng; truy vấn/giờ cấp sẵn, mảng cấp phát thật. Dòng/cột báo lỗi khác, còn nhánh lỗi chưa chạy, mọi khả năng cấp phát, tài khoản/mã lỗi thật, khởi động lại, nơi gọi và toàn EA.')
             for selection_rva in selection_rvas[bot]:
                 new_parts[selection_rva]=('kiem-chon-lenh-huy/selection-20261024-r2','PendingSelection','Bộ 2.522 ca mua/bán mỗi bot: chọn vé qua hủy/gửi, dọn bảng và thông báo. Truy vấn/kết quả gửi cấp sẵn; còn tài khoản thực, lỗi cấp bộ nhớ, nơi gọi và toàn EA.')
             for close_rva in close_rvas[bot]:
@@ -295,6 +298,16 @@ def main():
                         report=json.loads(aggregate.read_text());assert report['status']=='position-modify-helper-verified-with-stated-limits' and report['whole_bot_complete'] is False
                         proof.update(tester_comparison=engine.relative_to(ROOT).as_posix(),tester_comparison_sha256=sha(engine),semantics_source=semantics.relative_to(ROOT).as_posix(),semantics_sha256=sha(semantics),
                                      caller_sites=callers.relative_to(ROOT).as_posix(),caller_sites_sha256=sha(callers),aggregate=aggregate.relative_to(ROOT).as_posix(),aggregate_sha256=sha(aggregate))
+                    if rva in virtual_rvas:
+                        assert comparison['cases']==comparison['matched']==220 and comparison['whole_bot_complete'] is False
+                        engine=ROOT/'doi-chung-mt5/bang-dung-ao-20261025/engine-virtual-b1-r3/comparison.json'
+                        tested=json.loads(engine.read_text());assert tested['cases']==tested['matched']==220 and tested['failed']==0
+                        faults=ROOT/'bot-cua-toi-1/bang-chung/kiem-bang-dung-ao/virtual-matrix-20261025-r4/fatal-checks/virtual-faults-20261025-r3/summary.json'
+                        errors=json.loads(faults.read_text());assert len(errors['checks'])==2 and errors['whole_bot_complete'] is False
+                        audit=faults.parents[2]/'coverage-audit.json';coverage=json.loads(audit.read_text())
+                        assert not coverage['extra_addresses'] and coverage['whole_bot_complete'] is False
+                        proof.update(function_coverage=comparison['coverage'][hex(rva)],tester_comparison=engine.relative_to(ROOT).as_posix(),tester_comparison_sha256=sha(engine),
+                                     fatal_comparison=faults.relative_to(ROOT).as_posix(),fatal_comparison_sha256=sha(faults),coverage_audit=audit.relative_to(ROOT).as_posix(),coverage_audit_sha256=sha(audit))
             pipeline_rvas={1:{0x950,0x231c0,0x235c0,0x23fa0,0x26060,0x26360,0x2e6d0,0x32dd0,0x336d0},
                            3:{0x950,0x2e8f0,0x2ecf0,0x2f6d0,0x31790,0x31a90,0x3bb10,0x3e580,0x3ee80}}
             if proof and rva in pipeline_rvas[bot]:

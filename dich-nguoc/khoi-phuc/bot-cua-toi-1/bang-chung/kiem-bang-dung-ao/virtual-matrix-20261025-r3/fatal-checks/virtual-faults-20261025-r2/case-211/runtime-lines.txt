@@ -1,0 +1,7 @@
+PR	0	09:38:13.172	Bot1VirtualStopsCheck (XAUUSD_NOCOST_V2,M15)	VIRTUAL_MATRIX_CASE:211
+QL	2	09:38:13.173	Bot1VirtualStopsCheck (XAUUSD_NOCOST_V2,M15)	array out of range in 'Bot1VirtualStops.mqh' (25,20)
+LL	0	09:38:13.149	MQL5	2 inputs read from script 'bot-cua-toi-1\Bot1VirtualStopsCheck' set file "C:\Users\NTD\Desktop\Bot Market Demo\dich-nguoc\.local\claude-recovery-20261023\mt5\MQL5\Presets\b1-virtual-faults-20261025-r2-f211.set"
+CK	0	09:38:13.154	Scripts	script Bot1VirtualStopsCheck (XAUUSD_NOCOST_V2,M15) loaded successfully
+FG	0	09:38:13.173	Scripts	script Bot1VirtualStopsCheck (XAUUSD_NOCOST_V2,M15) closes terminal with code -1
+EN	0	09:38:13.173	Scripts	script Bot1VirtualStopsCheck (XAUUSD_NOCOST_V2,M15) removed (result code -1)
+QE	0	09:38:13.670	Terminal	shutdown with -1

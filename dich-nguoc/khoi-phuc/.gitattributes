@@ -155,3 +155,13 @@
 /bot-cua-toi-1/bang-chung/kiem-bang-dung-ao/** -text
 /bot-cua-toi-1/bang-chung/bien-dich/b1-virtual-smoke-*/** -text
 /danh-gia-claude/virtual-stop-source-review-20261025-r1/** -text
+/cong-cu/kiem-bang-dung-ao-day-du-bot-1.py -text
+/bot-cua-toi-1/source/MQL5/Scripts/bot-cua-toi-1/Bot1VirtualStopsCheck.mq5 -text
+/bot-cua-toi-1/bang-chung/bien-dich/b1-virtual-matrix-*/** -text
+/cong-cu/kiem-loi-bang-dung-ao-bot-1.py -text
+/bot-cua-toi-1/source/MQL5/Scripts/bot-cua-toi-1/Bot1VirtualStopsApiCompile.mq5 -text
+/bot-cua-toi-1/bang-chung/bien-dich/b1-virtual-native-api-*/** -text
+/doi-chung-mt5/bang-dung-ao-20261025/** -text
+/danh-gia-claude/virtual-stop-verifier-20261025-r1/** -text
+/ban-do-bot-1-3/luot-20261025-r5/** -text
+/bot-cua-toi-1/bang-chung/kiem-bang-dung-ao/*/missing-native.txt whitespace=-blank-at-eol,cr-at-eol

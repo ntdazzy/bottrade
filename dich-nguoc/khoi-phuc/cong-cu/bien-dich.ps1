@@ -33,6 +33,16 @@ foreach ($part in 'Experts','Include','Scripts') {
     $from=Join-Path $srcMql "$part\$name"
     if (-not (Test-Path -LiteralPath $from)) { continue }
     $to=Join-Path $mql "$part\$name"
+    $to=[IO.Path]::GetFullPath($to)
+    if (-not $to.StartsWith($terminal+'\',[StringComparison]::OrdinalIgnoreCase)) { throw 'COPY_TARGET_OUTSIDE_PRIVATE_MT5' }
+    $scan=$to
+    while ($scan.StartsWith($terminal,[StringComparison]::OrdinalIgnoreCase)) {
+        if ((Test-Path -LiteralPath $scan) -and ((Get-Item -LiteralPath $scan -Force).Attributes -band [IO.FileAttributes]::ReparsePoint)) { throw 'REPARSE_POINT_IN_COPY_TARGET' }
+        $scan=Split-Path $scan -Parent
+    }
+    if (Test-Path -LiteralPath $to) {
+        if (Get-ChildItem -LiteralPath $to -Recurse -Force | Where-Object { $_.Attributes -band [IO.FileAttributes]::ReparsePoint }) { throw 'REPARSE_POINT_BELOW_COPY_TARGET' }
+    }
     if (Test-Path -LiteralPath $to) { Remove-Item -LiteralPath $to -Recurse -Force }
     [IO.Directory]::CreateDirectory($to) | Out-Null
     foreach ($file in Get-ChildItem -LiteralPath $from -File -Recurse | Where-Object { $_.Extension -in '.mq5','.mqh' }) {

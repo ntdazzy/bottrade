@@ -1,0 +1,30 @@
+{
+  "original_ex5_sha256": "a3b0de423a06e10ebedc279307b93d7cb9188ba2bb5de77131a913c865b0e922",
+  "tool_sha256": "0f1982232a2019ebc41a4554f8da314ec52cb9ff1797abbda7995e3bf52b296d",
+  "sources_sha256": {
+    "Include/bot-cua-toi-1/Bot1VirtualStops.mqh": "da7aa4f6ff38c97aa4e9288620f7e975d7255c598468948a515f8de2f2b7f400",
+    "Include/bot-cua-toi-1/Bot1PriceLevels.mqh": "601bdd551e24e3ac9a7742cc00e057d881b069ab672843bec31b3f32a43316b1",
+    "Scripts/bot-cua-toi-1/Bot1VirtualStopsCheck.mq5": "6a8a78949a162d8c3e4d4d8ed6bcfef18b114d20e3fbdaacffd0d29b5bc525d9"
+  },
+  "dependencies_sha256": {
+    "kiem-bang-dung-ao-bot-1.py": "157965a177c3235db90f763dcf9c87cf3a5222bc21f849e3cfe862da1553a0a3",
+    "kiem-gia-vao-bot-1-3.py": "22394e48932feb7242b967aa58e327d2990402f12bfe52621916f64914c9dac2",
+    "kiem-muc-gia-bot-1-3.py": "a6c447ca80029fb63ced0c9d1673bb14222a7736b04df5c410f280f8471d6a35",
+    "kiem-khoi-luong-hop-le-bot-1-3.py": "8251fb4423d6f5f2e1b79a1c53dbb25fb5a6c568bb61cddef23396dc982243f0"
+  },
+  "analysis_sha256": "25540106c233d53aa480db5f4bd4b1957944262f8d0afbf87145002fdcde4a0c",
+  "api_contract_sha256": "0cc683c9a12ca7d4ce5194df32b38206c56a1f58d3027c18a905f505403e9664",
+  "cases": 210,
+  "exit_code": 0,
+  "seconds": 3.54,
+  "build_receipt": "b1-virtual-matrix-02",
+  "build_receipt_sha256": "60f1050a3d069cdea86544bc32465fe1314cc43cf2d42700b409ffe35bf7323c",
+  "binary_sha256": "e243389be51d77e99a0827f1229887ff8b025d6a86a8bae59b5623bf1e70934c",
+  "terminal_sha256_before": "d92c969e0c141cad6f4f9083234b841e2da21862e66b3bbc9b70cbfe5a8e7a47",
+  "terminal_sha256_after": "d92c969e0c141cad6f4f9083234b841e2da21862e66b3bbc9b70cbfe5a8e7a47",
+  "hashes": {
+    "mql5-results.bin": "6567db4a812fbb44a1b7bd64ae3f85416c09c16f437a6f07d66688dcf4189fff",
+    "api-fixtures.bin": "2c816e6e7a14c2983fbdfd11b3ff2eca187a2ab6eff3c53a796800621ef8af22",
+    "script-status.bin": "afd2a8576744e6368f379197422e6f8e209eea9236193d49712c5a9c432448ab"
+  }
+}

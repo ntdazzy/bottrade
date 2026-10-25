@@ -19,9 +19,9 @@ phải được phân tích tiếp trước khi viết luật tương ứng.
 
 Danh sách đầy đủ từng hàm và từng dòng cài đặt:
 
-- [Bot 1](ban-do-bot-1-3/luot-20261025-r4/bot-1.md), [dữ liệu chi tiết](ban-do-bot-1-3/luot-20261025-r4/bot-1.json).
-- [Bot 3](ban-do-bot-1-3/luot-20261025-r4/bot-3.md), [dữ liệu chi tiết](ban-do-bot-1-3/luot-20261025-r4/bot-3.json).
-- [Biên nhận lập danh sách](ban-do-bot-1-3/luot-20261025-r4/summary.json).
+- [Bot 1](ban-do-bot-1-3/luot-20261025-r5/bot-1.md), [dữ liệu chi tiết](ban-do-bot-1-3/luot-20261025-r5/bot-1.json).
+- [Bot 3](ban-do-bot-1-3/luot-20261025-r5/bot-3.md), [dữ liệu chi tiết](ban-do-bot-1-3/luot-20261025-r5/bot-3.json).
+- [Biên nhận lập danh sách](ban-do-bot-1-3/luot-20261025-r5/summary.json).
 
 Mỗi hàm có vị trí gốc, dòng C, các hàm gọi/được gọi, lời gọi MT5, mã
 điều phối, chuỗi liên quan, biến dùng chung, nguồn dựng lại và bằng
@@ -70,7 +70,7 @@ phép đối chiếu trong phạm vi cụ thể; không đánh dấu hoàn tất
 | P19 | Hết hạn thật và tự quản lý hết hạn | Tham số ở `0x7500` / `0xe0c0`, nơi dùng trong chiến lược | Đã so cách tính thời hạn; chưa toàn bộ việc hủy khi đến hạn |
 | P20 | Dừng lỗ/chốt lời sau khớp | `0x271f0`, `0x2abc0`, hàm sửa `0x26d20` / `0x32f60`, `0x37590`, hàm sửa `0x32a90` | Đã dựng hàm sửa dừng lỗ/chốt lời theo vé: 1.596 ca mỗi bot khớp mã gốc/MQL5/máy đo quá khứ (83 dừng, 33 chọn vé thất bại, 1.480 gửi; 196/196 lệnh máy); tổng kiểm từ chối 22 kiểu dữ liệu sai. Truy vấn/kết quả gửi được cấp. Còn 19/21 nơi gọi trong hai hàm quản lý và hàm chiến lược, giá trị dừng lỗ/chốt lời truyền vào, cả hai chiều, đặt sau khớp và kết quả sửa trên tài khoản thật; [phạm vi](PHAN-TICH-SUA-VI-THE-BOT-1-3.md) |
 | P21 | Dời dừng lỗ/chốt lời, hòa vốn, phục hồi theo thời gian | Cùng hai hàm quản lý vị thế và các `UseHL*`, `AdjustTrail*` | Cần từng chế độ, giá kích hoạt, giới hạn và thử lại |
-| P22 | Dừng/chốt ảo và chờ chuyển thành lệnh thật | `0x3d200`, `0x3d5a0`, `0x3d640`, dọn `0x18790` / `0x47f10`, `0x482b0`, `0x484c0`, `0x48560` | Bot 1 đã có nguồn bốn hàm và chuỗi kiểm ban đầu 7/7 bước khớp mã gốc/MQL5, biên dịch 0 lỗi/cảnh báo; đã nối lời gọi mở rộng mảng với chương trình có nguồn. Chưa đủ nhánh: còn nhiều vị thế, bảng đầy, nội dung mảng/lỗi mở rộng, số đặc biệt, máy đo quá khứ, khởi động lại và ghép quản lý. Bot 3 chưa dựng/so; [bằng chứng](PHAN-TICH-BANG-DUNG-AO-BOT-1-3.md) |
+| P22 | Dừng/chốt ảo và chờ chuyển thành lệnh thật | `0x3d200`, `0x3d5a0`, `0x3d640`, dọn `0x18790` / `0x47f10`, `0x482b0`, `0x484c0`, `0x48560` | Bot 1 có nguồn bốn hàm: 220/220 ca thường khớp mã gốc/MQL5/máy đo quá khứ và hai ca lỗi mảng chạy thật khớp trạng thái; biên dịch 0 lỗi/cảnh báo, gồm bản API thật chỉ biên dịch. Đã chạy 409/420 lệnh, còn 11 lệnh đã liệt kê; dòng/cột báo lỗi khác. Còn mã lỗi/tài khoản thật, mọi khả năng cấp phát, khởi động lại và ghép quản lý/toàn EA. Bot 3 có mô tả năm hàm và năm Claude viết song song, chưa có phép so nguồn đạt; [bằng chứng](PHAN-TICH-BANG-DUNG-AO-BOT-1-3.md) |
 | P23 | Đóng vị thế và xóa theo bộ lọc | `0x2fa00`, `0x2fce0`, `0x3d010`, `0x22c40` / `0x3ce40`, `0x3d220`, `0x47d20`, `0x2e370` | Đã ghép quét mua/bán qua kiểm điều kiện, đóng, chọn cách khớp, gửi và thông báo: lượt r3 khớp 4.600 ca mỗi bot (2.300 mỗi chiều) ở mã gốc/MQL5/máy đo quá khứ, gồm trạng thái trước/sau dịch vụ và hai ca đổi dữ liệu sau lần kiểm đóng đầu; bốn bản sai cố ý bị từ chối. Đã nối hai ô giá với vùng dữ liệu giá gần nhất. Còn nơi/thời điểm gọi, mọi đường nạp/ghi giá/ngưỡng, mọi tổ hợp cách khớp, trạng thái chọn/mã lỗi tài khoản thật, lỗi cấp bộ nhớ và toàn EA; [phạm vi](PHAN-TICH-CHON-VI-THE-DONG-BOT-1-3.md) |
 | P24 | Giới hạn lỗ ngày/tổng và vốn | `0x10f60`, `0x18aa0`, `0x1efa0` / `0x17f00`, `0x20ef0`, `0x2a1c0` | Cần phép tổng hợp, thời điểm đặt lại và hành động khi chạm giới hạn |
 | P25 | Giờ giao dịch, thứ Sáu và phiên của nơi giao dịch | Hàm chiến lược, các hàm giờ, chuỗi `[SESSIONS]` | Cần các mốc, đổi ngày, lịch phiên và trường hợp không có phiên |

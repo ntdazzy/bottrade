@@ -38,6 +38,24 @@ Chạy từ thư mục dự án. Mỗi lượt dùng tên mới để giữ bằ
   1.500 số trong bảng, vé đã báo, độ dài mảng, kết quả có nghĩa và
   dấu vết lời gọi. Chưa kiểm nhiều vị thế, bảng đầy, lỗi mở rộng,
   số không hợp lệ, toàn bộ nhánh hoặc máy đo quá khứ.
+- `kiem-bang-dung-ao-day-du-bot-1.py prepare|mql5|original|compare
+  NEW_RUN [--build BUILD]`: bộ ca phiên bản 2, chuẩn bị → biên dịch
+  `Bot1VirtualStopsCheck.mq5` → chạy MQL5 → chạy gốc → so. Lượt
+  `virtual-matrix-20261025-r4`, bản `b1-virtual-matrix-03`: 220/220
+  ca thường khớp; hai ca lỗi giữ trong danh sách để chạy riêng.
+  So đủ bảng, mảng vé thường/đảo, trạng thái và lời gọi có kiểu;
+  đo thay đổi mảng thật trong MT5, ràng buộc với đầu vào khi chạy gốc.
+- `kiem-loi-bang-dung-ao-bot-1.py MATRIX_RUN --build BUILD
+  --check-run NEW_RUN`: chạy riêng hai ca lỗi mảng, không gửi lệnh.
+  Với r4, lượt `virtual-faults-20261025-r3`: cả hai khớp lớp lỗi và
+  trạng thái, có dòng/cột nguồn khác; chưa đo hết bộ nhớ vật lý.
+- `kiem-hang-doi-trong-may-thu.py 1 NEW_RUN --component-run MATRIX_RUN
+  --build BUILD --virtual-stops`: cùng thân kiểm trong máy đo quá khứ
+  MT5; `engine-virtual-b1-r3` khớp 220/220 của r4, không có EA đầy đủ.
+  `engine-virtual-b1-r2` giữ nguyên là lượt mất kết nối/xác nhận demo
+  thất bại; không nhận kết quả đó là đạt. Bản API thật dùng
+  `Bot1VirtualStopsApiCompile.mq5`, bản `b1-virtual-native-api-02`:
+  0 lỗi/cảnh báo; chỉ biên dịch, chưa thực hiện trên tài khoản.
 
 ## Sửa dừng lỗ/chốt lời vị thế theo vé
 

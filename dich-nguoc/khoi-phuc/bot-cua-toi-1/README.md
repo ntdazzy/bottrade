@@ -1,7 +1,10 @@
 # bot-cua-toi-1
 
-Đã viết bốn hàm bảng dừng ảo và kiểm ban đầu: 7/7 bước khớp mã gốc,
-biên dịch 0 lỗi/cảnh báo. Chưa đủ nhánh, chưa ghép quản lý vị thế;
+Đã viết bốn hàm bảng dừng ảo: 220/220 ca khớp mã gốc/MQL5/máy đo
+quá khứ, thêm hai ca lỗi mảng chạy thật khớp trạng thái trước lỗi.
+Biên dịch 0 lỗi/cảnh báo, gồm bản dùng API MT5 thật chỉ biên dịch.
+Còn nhánh lỗi chưa chạy, dòng/cột báo lỗi khác, khởi động lại và
+ghép quản lý vị thế/toàn EA;
 [phạm vi và bước còn thiếu](../PHAN-TICH-BANG-DUNG-AO-BOT-1-3.md).
 
 Đã dựng hàm sửa dừng lỗ/chốt lời vị thế theo vé `0x26d20`: kiểm

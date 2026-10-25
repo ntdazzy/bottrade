@@ -1,0 +1,20 @@
+{
+  "bot": 1,
+  "cases": 211,
+  "matched": 211,
+  "failed": 0,
+  "first_failures": [],
+  "seconds": 7.22,
+  "source_comparison": "bot-cua-toi-1/bang-chung/kiem-bang-dung-ao/virtual-matrix-20261025-r3",
+  "hashes": {
+    "cases.bin": "741feed2ffd585b27a00d2faf0d6d0ddac02920beb73df106277b649bade6a84",
+    "original-results.bin": "d8c43637f4314cc6875f6182ec06f5bcdefa1b075e090ea39d0a37ae98cbcc9b",
+    "tester-mql5-results.bin": "d8c43637f4314cc6875f6182ec06f5bcdefa1b075e090ea39d0a37ae98cbcc9b",
+    "script-mql5-results.bin": "d8c43637f4314cc6875f6182ec06f5bcdefa1b075e090ea39d0a37ae98cbcc9b",
+    "api-fixtures.bin": "ab3174fd4edfd4fa053f0273a90494514a783a6981a1afe01a224f788dc523de",
+    "script-status.bin": "dbb5a8d37f70d60d6346d55ba65c83b1fdffa96c64889d461e07a3ebe161197d"
+  },
+  "whole_bot_complete": false,
+  "scope": "Same four virtual-stop functions/check body in identical tester engine. All1500 table doubles,guard,warning ticket,delay,unit,symbol,selection model,full physical ticket array and typed service records compared. Query/time replies supplied; real ArrayResize states observed and equal to script records. Fatal cases not run here; no actual account/LastError,lifecycle or full EA proof.",
+  "input_contract_checked_cases": 211
+}

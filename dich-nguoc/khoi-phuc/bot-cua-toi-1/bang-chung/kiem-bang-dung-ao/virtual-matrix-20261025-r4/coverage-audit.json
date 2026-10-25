@@ -1,0 +1,54 @@
+{
+  "checks": [
+    {
+      "rva": "0x18790",
+      "instructions": 178,
+      "normal_executed": 163,
+      "with_fatal_executed": 167,
+      "missing": [
+        "0x1881e",
+        "0x1890f",
+        "0x18985",
+        "0x1898f",
+        "0x189e4",
+        "0x189ee",
+        "0x18a5e",
+        "0x18a68",
+        "0x18a72",
+        "0x18a7c",
+        "0x18a9e"
+      ]
+    },
+    {
+      "rva": "0x3d200",
+      "instructions": 174,
+      "normal_executed": 174,
+      "with_fatal_executed": 174,
+      "missing": []
+    },
+    {
+      "rva": "0x3d5a0",
+      "instructions": 39,
+      "normal_executed": 39,
+      "with_fatal_executed": 39,
+      "missing": []
+    },
+    {
+      "rva": "0x3d640",
+      "instructions": 29,
+      "normal_executed": 29,
+      "with_fatal_executed": 29,
+      "missing": []
+    }
+  ],
+  "fresh_full_native_result_sha256": "7aabffa254cfdc27660cc4252ac504d32ab10b7eb86149c56bfd82b2a19cdf24",
+  "matrix_tool_sha256": "dc95ca98cb26cb169324d0aec6540d252c32e7d668daf3c7fb7f7528028a0224",
+  "fatal_summary_sha256": "201910e473626d9edd5fda01c7f5da7f05914cb9dff2aa807c55695af8d2a7d1",
+  "audit_tool_sha256": "22158c232571a6915ffe2bb625221e2f312794d1cb4f3f4e049abc4ffad261cb",
+  "extra_addresses": [],
+  "whole_bot_complete": false,
+  "limits": [
+    "Instruction coverage is scoped to four captured helper bodies and these cases.",
+    "Unexecuted instructions remain listed; no full-function or whole-EA completeness claim."
+  ]
+}

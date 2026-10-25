@@ -1,0 +1,40 @@
+{
+  "status": "host-verified-scoped-virtual-stops",
+  "normal_matched": 220,
+  "fatal_array_errors_matched": 2,
+  "script_native_tester_bytes_equal": true,
+  "real_api_compile_only": true,
+  "builds": {
+    "b1-virtual-matrix-03": {
+      "receipt_sha256": "a9a800aa5d531e7adc6dc62e3b2ddc679d0a58f7ff572e4a58bee215439195ec",
+      "errors": 0,
+      "warnings": 0,
+      "binary_sha256": "f1bae8b2e2f5c4f56b839b7c2e0e3b5e18b5686cb74cc0f166d4f77fa0838780"
+    },
+    "b1-virtual-native-api-02": {
+      "receipt_sha256": "7fc619f6db46872ca967d24afa20056c1f97663425574402214d8587b16429f0",
+      "errors": 0,
+      "warnings": 0,
+      "binary_sha256": "0210ec3e246b213bb5bf8bc7c6c8a73fb5611864022232f1d0e45acd4be56fd0"
+    }
+  },
+  "syntax_checked": [
+    "kiem-bang-dung-ao-day-du-bot-1.py",
+    "kiem-loi-bang-dung-ao-bot-1.py",
+    "kiem-hang-doi-trong-may-thu.py",
+    "lap-ban-do-bot-1-3.py"
+  ],
+  "comparison_sha256": "2700f9f01f895ae713fa5e62888408dbce6dc3b8b96cf78be563793cd57062fb",
+  "tester_comparison_sha256": "7e5b0d1ecb79165bbf54ce54e00450f29a8becf2f4eb2ceb5272a232e668ef57",
+  "fatal_summary_sha256": "201910e473626d9edd5fda01c7f5da7f05914cb9dff2aa807c55695af8d2a7d1",
+  "coverage_audit_sha256": "b56a90d9c74dbc4c9fd2b818e7f0d01349ae2e28483978593f273f3e8213c1bc",
+  "normal_result_sha256": "7aabffa254cfdc27660cc4252ac504d32ab10b7eb86149c56bfd82b2a19cdf24",
+  "fixture_sha256": "b40c43bc6aca0bc4a34cdd1df890d8a351bded429bf243e366279c77f9f474e3",
+  "claude_aggregate_verifier_delivered": false,
+  "whole_bot_complete": false,
+  "limits": [
+    "Four helpers only, supplied query/time responses; no whole EA comparison.",
+    "Array-error source location payload differs; physical out-of-memory and unexecuted read-error branch are not proven.",
+    "This host reconciliation is not the pending Claude verifier."
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "pid": 11928,
+  "started": "2026-10-25T01:51:53.0148830Z",
+  "model": "claude-opus-5-5",
+  "effort": "max",
+  "ultracode_requested": true,
+  "scope": "Write proposed analysis/code only within an explicitly assigned deliverable directory",
+  "output_directory": "dich-nguoc/khoi-phuc/claude-thuc-hien/virtual-stop-source-review-20261025-r1",
+  "edit_rule": "Edit(./dich-nguoc/khoi-phuc/claude-thuc-hien/virtual-stop-source-review-20261025-r1/**)",
+  "permission_mode": "dontAsk",
+  "prompt_sha256": "2909ea565b68327273e4eaceba95940b8d86165d670913872c8f2422a3b4ae5c",
+  "resume": "06889925-53b9-46d0-abd8-2e1f08e68869"
+}

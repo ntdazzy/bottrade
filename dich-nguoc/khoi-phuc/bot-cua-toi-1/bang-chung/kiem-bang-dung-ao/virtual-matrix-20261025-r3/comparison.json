@@ -1,0 +1,152 @@
+{
+  "cases": 211,
+  "matched": 211,
+  "failed": 0,
+  "first_failures": [],
+  "groups": {
+    "guard-byte": {
+      "cases": 16,
+      "matched": 16
+    },
+    "first-existing-ticket": {
+      "cases": 8,
+      "matched": 8
+    },
+    "duplicate-first-match": {
+      "cases": 8,
+      "matched": 8
+    },
+    "side-int32": {
+      "cases": 7,
+      "matched": 7
+    },
+    "float-arguments": {
+      "cases": 54,
+      "matched": 54
+    },
+    "digits-low32": {
+      "cases": 11,
+      "matched": 11
+    },
+    "no-free-row-cleanup": {
+      "cases": 3,
+      "matched": 3
+    },
+    "find-free-last": {
+      "cases": 2,
+      "matched": 2
+    },
+    "full-table-warning": {
+      "cases": 1,
+      "matched": 1
+    },
+    "full-table-warning-once": {
+      "cases": 1,
+      "matched": 1
+    },
+    "disabled-table-warning": {
+      "cases": 1,
+      "matched": 1
+    },
+    "zero-guard-warning": {
+      "cases": 1,
+      "matched": 1
+    },
+    "warning-rereads-guard": {
+      "cases": 1,
+      "matched": 1
+    },
+    "digits-reread-unit": {
+      "cases": 1,
+      "matched": 1
+    },
+    "digits-enable-and-fill-row": {
+      "cases": 1,
+      "matched": 1
+    },
+    "cleanup-rereads-guard": {
+      "cases": 1,
+      "matched": 1
+    },
+    "array-initial-size": {
+      "cases": 12,
+      "matched": 12
+    },
+    "position-types-and-selection": {
+      "cases": 10,
+      "matched": 10
+    },
+    "array-growth": {
+      "cases": 8,
+      "matched": 8
+    },
+    "resize-fails-empty-account": {
+      "cases": 1,
+      "matched": 1
+    },
+    "delay-conversion-and-boundary": {
+      "cases": 45,
+      "matched": 45
+    },
+    "delay-int32": {
+      "cases": 6,
+      "matched": 6
+    },
+    "delay-rereads-setting": {
+      "cases": 1,
+      "matched": 1
+    },
+    "delay-caches-stamp": {
+      "cases": 1,
+      "matched": 1
+    },
+    "delay-no-ticket": {
+      "cases": 1,
+      "matched": 1
+    },
+    "stamp-int64-to-double": {
+      "cases": 6,
+      "matched": 6
+    },
+    "stamp-keeps-found-row": {
+      "cases": 1,
+      "matched": 1
+    },
+    "stamp-no-ticket": {
+      "cases": 1,
+      "matched": 1
+    },
+    "initial-resize-retry": {
+      "cases": 1,
+      "matched": 1
+    }
+  },
+  "coverage": {
+    "0x18790": {
+      "executed": 163,
+      "instructions": 178
+    },
+    "0x3d200": {
+      "executed": 174,
+      "instructions": 174
+    },
+    "0x3d5a0": {
+      "executed": 39,
+      "instructions": 39
+    },
+    "0x3d640": {
+      "executed": 29,
+      "instructions": 29
+    }
+  },
+  "hashes": {
+    "cases.bin": "741feed2ffd585b27a00d2faf0d6d0ddac02920beb73df106277b649bade6a84",
+    "baseline.json": "f070712ef075885cd9281e3c11d4d67a9372a3aace9cb1f2678d0c960c084f35",
+    "mql5-results.bin": "d8c43637f4314cc6875f6182ec06f5bcdefa1b075e090ea39d0a37ae98cbcc9b",
+    "api-fixtures.bin": "ab3174fd4edfd4fa053f0273a90494514a783a6981a1afe01a224f788dc523de",
+    "original-results.bin": "d8c43637f4314cc6875f6182ec06f5bcdefa1b075e090ea39d0a37ae98cbcc9b",
+    "script-status.bin": "dbb5a8d37f70d60d6346d55ba65c83b1fdffa96c64889d461e07a3ebe161197d"
+  },
+  "whole_bot_complete": false,
+  "scope": "Four bot1 virtual-stop functions. Return bits, all1500 table doubles,guard,warning ticket,delay,unit,symbol,selected-position model,full physical ticket array and exact typed SDK records compared. ArrayResize post-state measured in MQL5 and input-bound; query replies supplied. Fatal cases,actual account/LastError,all allocation outcomes,error locations,tester and whole EA remain unverified."
+}

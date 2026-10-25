@@ -1,0 +1,19 @@
+{
+  "status": "failed-verification-kept-immutable",
+  "reason": "Demo login not confirmed; terminal recorded lost connection and server synchronization failure. Tester ran but this attempt is not accepted.",
+  "source_failure_analysis_sha256": "bde7ffc83c76bcc4ca9cfa0c348dc2aae082cf97f525795309ed8b2137206f5b",
+  "direct_log_lines_redacted": [
+    "LH\t1\t13:28:20.612\tNetwork\t'<demo>': connection to Exness-MT5Trial8 lost",
+    "RS\t2\t13:28:52.147\tTester\tnot synchronized with trade server",
+    "II\t2\t13:28:52.231\tTester\tterminal is not synchronized with the trade server before start automatic testing [2]"
+  ],
+  "evidence_sha256": {
+    "runner/ket-qua-chay.jsonl": "35340ebcf095a831b614c9b9d655fcec1e06a073aeb5913e059a3f88f6b59a83",
+    "runner/q-engine-engine-virtual-b1-r2.terminal.log": "c5880d23cea93e7d3af7143462955f3be59a8e52b126eb86e1e73711c7335701",
+    "runner/q-engine-engine-virtual-b1-r2.log": "bef40768a62ed58444e2b84db6edf7ee507211bd031997bfe46e36193fd74acc",
+    "build.json": "fa5103ab3b83c25929a62d778393954d41b911667fdfb3efb9d7b0221c2995f7",
+    "VirtualStopsEngineCheck.mq5": "8d54dc47a9c7cab93e6c1807efcdd3767d711a3176af68f81bc227fe4bc5b94a"
+  },
+  "next_attempt": "engine-virtual-b1-r3, same component cases/sources, fresh namespace, demo verification unchanged",
+  "whole_bot_complete": false
+}

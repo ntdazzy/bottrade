@@ -33,12 +33,29 @@
    gồm phân tích, viết mã và bộ kiểm. Claude là người làm chính;
    Codex quản lý, chia phần, theo dõi, kiểm chứng độc lập và ghép kết
    quả; không chỉ giao Claude đọc/rà mã.
+   Cách giao việc mới được người dùng làm rõ ngày 25/10/2026: Codex
+   phân tích bằng chứng gốc trước, chốt công thức, điều kiện, kiểu số,
+   thứ tự gọi và tác dụng phụ thành mô tả cụ thể. Sau đó giao Claude
+   viết từng phần/từng chức năng theo mô tả, kèm ngữ cảnh và mục tiêu;
+   không bắt Claude tự phân tích EX5 thay cho bước này. Codex kiểm mã
+   và so kết quả với bản gốc. Mã có thể khác cách viết, nhưng logic
+   xử lý phải giữ nguyên; không tự thêm luật hoặc điền chỗ chưa rõ.
+   Người dùng yêu cầu tăng số Claude làm song song: người quản lý
+   nắm danh sách và phụ thuộc toàn bot, chia mô tả đã chốt thành các
+   phần độc lập, giao nhiều phiên Claude viết mã cùng lúc. Khởi đầu
+   từng nhóm tối đa 5 phần đã đủ bằng chứng mỗi bot; tăng khi còn việc
+   độc lập và máy đáp ứng. Không tạo việc cho đủ số hoặc giao phần
+   chưa hiểu; mỗi phiên có thư mục đề xuất riêng và được kiểm trước ghép.
    Ngoại lệ được người dùng xác nhận ngày 25/10/2026: Codex trực tiếp
    phân tích, viết mã và kiểm các phần Claude từ chối; Claude làm các
    phần còn nhận. Không đổi cách hỏi để vượt việc từ chối.
 6. So từng phần rồi so toàn bộ nguồn MQL5 đã biên dịch với EX5 gốc trên
    cùng dữ liệu và điều kiện. Kiểm cả giao dịch, toàn bộ cài đặt, bảng
    hiển thị, khởi động lại, trạng thái lưu và lỗi; cùng lợi nhuận chưa đủ.
+   Theo yêu cầu ngày 25/10/2026, khi đủ EA chính thì chạy bản gốc và
+   bản dựng lại song song trong hai môi trường MT5 kiểm thử riêng,
+   cùng dữ liệu và cài đặt; so đầy đủ kết quả theo thứ tự. Chưa có EA
+   đầy đủ thì ghi đúng là kiểm từng phần, không gọi là đã chạy hai bot.
 7. Chỉ xác nhận hoàn thành 100% khi mọi mục bắt buộc đã có bằng chứng
    trực tiếp, không còn nhánh/chức năng bị sót hoặc sai khác chưa xử lý.
    Nêu đúng giới hạn bằng chứng; số ca kiểm đạt không phải tỷ lệ hoàn
