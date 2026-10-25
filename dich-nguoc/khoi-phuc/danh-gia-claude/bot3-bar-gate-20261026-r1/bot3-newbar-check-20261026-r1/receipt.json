@@ -1,0 +1,126 @@
+{
+  "run": "bot3-newbar-check-20261026-r1",
+  "session_id": "050f23f2-428b-4378-b728-aef0386e1e76",
+  "started": "2026-10-25T19:33:32.8550931Z",
+  "snapshot_utc": "2026-10-25T19:49:35.616917+00:00",
+  "status": "delivered-unverified",
+  "response_is_error": false,
+  "terminal_reason": "completed",
+  "job_sha256": "b16c4390b45b95b4ce52bb71ff16c61619d34bb91e8fd679f7500e201afea213",
+  "prompt_sha256": "cc5c2fef9b9edbce4bc8a2ca3292e3d0b4380fcb4c951b0099ebd865f03e37ee",
+  "response_sha256": "e0d3f9177767d8b86b0f4e6737d194f87cf32412307b8d7e4e6d693c132785ef",
+  "actual_requests": 20,
+  "requests": [
+    {
+      "timestamp": "2026-10-25T19:33:33.999Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T19:33:46.587Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T19:33:59.911Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T19:34:09.080Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T19:34:15.385Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T19:34:20.758Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T19:34:29.438Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T19:34:34.987Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T19:35:00.931Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T19:36:12.878Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T19:36:22.562Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T19:36:28.162Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T19:36:34.906Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T19:38:14.002Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T19:38:28.988Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T19:40:53.089Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T19:43:22.599Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T19:46:17.843Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T19:46:36.079Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T19:47:45.446Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    }
+  ],
+  "ultracode_requested": true,
+  "ultracode_runtime_confirmed": null,
+  "journal_prefix_bytes": 1742040,
+  "journal_prefix_sha256": "f29ec0b9b1fb29fab79781a23cdd1b8ed3e701e07630e87cff4894e0b6a018ab",
+  "files_sha256": {
+    "dich-nguoc/khoi-phuc/claude-thuc-hien/bot3-newbar-check-20261026-r1/bar_gate_cases.py": "cb2be4547571a2c56592709faa909f3e9c57033bc81c32e949fd0e72a8c7102f",
+    "dich-nguoc/khoi-phuc/claude-thuc-hien/bot3-newbar-check-20261026-r1/Bot3ManagementBarGateCheck.mq5": "06034d6429a8ede888d3b6efea2555c9849b294f7f3a65b6db2d3abb2600bc99",
+    "dich-nguoc/khoi-phuc/claude-thuc-hien/bot3-newbar-check-20261026-r1/SUMMARY.md": "831da72c374ab5fdb2052fae700cdd4918761055896e15e50db17c7d39202dcb"
+  },
+  "source_validated": false,
+  "whole_bot_complete": false
+}

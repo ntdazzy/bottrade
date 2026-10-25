@@ -1,0 +1,29 @@
+{
+  "utc": "2026-10-25T19:53:04.801602+00:00",
+  "cases": 384,
+  "matched": 384,
+  "failed": 0,
+  "run": "b3-bar-gate-20261026-r1",
+  "native_caller_sites": 27,
+  "result_sha256": "537856dcfd0f1c239e3d5e3fbff1b6bf01d99320f2f4b0e24496e284239c0bc9",
+  "compile_build": "b3-management-bar-check-20261026-r1",
+  "errors": 0,
+  "warnings": 0,
+  "author": "Claude Opus5.5",
+  "actual_effort": "max",
+  "actual_requests": [
+    7,
+    20
+  ],
+  "receipts": "danh-gia-claude/bot3-bar-gate-20261026-r1/dispatch.json",
+  "ultracode_runtime_confirmed": null,
+  "canonical_source_sha256": "69fbd538a060f70f4f16f0a6714f8f5c4f5ce58c3f9d27d4c5864816dfa70344",
+  "proposal_source_sha256": "69fbd538a060f70f4f16f0a6714f8f5c4f5ce58c3f9d27d4c5864816dfa70344",
+  "source_body_changed": false,
+  "scope": [
+    "Only the new-bar time check, second time write, ordered buy/sell calls and boolean branch are executed; not the complete coordinator or EA.",
+    "Both manager bodies and iTime replies/effects are supplied; management bodies have separate scoped comparisons.",
+    "Valid indices0..8 and the specified fixtures only; no claim about invalid indices, all broker data or full program lifecycle."
+  ],
+  "whole_bot_complete": false
+}

@@ -1,0 +1,13 @@
+{
+  "pid": 19376,
+  "started": "2026-10-25T19:33:32.8550931Z",
+  "model": "claude-opus-5-5",
+  "effort": "max",
+  "ultracode_requested": true,
+  "scope": "Write proposed analysis/code only within an explicitly assigned deliverable directory",
+  "output_directory": "dich-nguoc/khoi-phuc/claude-thuc-hien/bot3-newbar-check-20261026-r1",
+  "edit_rule": "Edit(./dich-nguoc/khoi-phuc/claude-thuc-hien/bot3-newbar-check-20261026-r1/**)",
+  "permission_mode": "dontAsk",
+  "prompt_sha256": "cc5c2fef9b9edbce4bc8a2ca3292e3d0b4380fcb4c951b0099ebd865f03e37ee",
+  "resume": ""
+}

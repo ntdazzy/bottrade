@@ -1,0 +1,46 @@
+{
+  "original_ex5_sha256": "ee063d3d87490afe24e2f4ce85f6b05659320e297b102efd70207f71ca2feb83",
+  "base": "0x17156250000",
+  "function": {
+    "begin": "0x20ef0",
+    "end": "0x2a1bc",
+    "sha256": "6bead161fa97b6568b546e8c86a4ff03fdda55d6fb226a52b58dd14ec050d920"
+  },
+  "slice": {
+    "begin": "0x227c0",
+    "end_false": "0x22851",
+    "end_true": "0x22875"
+  },
+  "globals": {
+    "timeframe": "0x6d584",
+    "last_times": "0x73790",
+    "symbol": "0x74958",
+    "counter": "0x74430",
+    "mode": "0x6d514",
+    "shared_index": "0x74934",
+    "buy_levels": "0x74110",
+    "sell_levels": "0x73df0"
+  },
+  "calls": {
+    "first_time": "0x22807",
+    "second_time": "0x2282c",
+    "write_time": "0x2282f",
+    "buy": "0x2283d",
+    "sell": "0x2284b",
+    "or": "0x2284d"
+  },
+  "callee": {
+    "buy": "0x32f60",
+    "sell": "0x37590",
+    "iTime_sdk_offset": "0x7d3b50"
+  },
+  "guards": {
+    "cached_time_read_before_first_time_call": "0x22803",
+    "equal_skip": "0x2280a/0x2280d",
+    "second_timeframe_read": "0x2280f",
+    "both_managers_unconditionally_before_or": true
+  },
+  "functional_spec": "claude-thuc-hien/bot3-newbar-manager-20261026-r1/TASK.md",
+  "test_contract": "claude-thuc-hien/bot3-newbar-check-20261026-r1/TASK.md",
+  "whole_bot_complete": false
+}

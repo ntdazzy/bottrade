@@ -65,7 +65,7 @@ phép đối chiếu trong phạm vi cụ thể; không đánh dấu hoàn tất
 | P08 | Tìm đỉnh/đáy làm mức giá | `0x32890`, `0x32ac0` / `0x3e040`, `0x3e270` | Đã so hai hàm; còn ghép đúng nơi gọi |
 | P09 | Xác nhận mức chưa bị phá | `0x265a0`, `0x26960` / `0x31cd0`, `0x32090` | Đã so phần; còn điều kiện cấp tham số từ toàn bộ chiến lược |
 | P10 | Chặn lệnh chờ gần mức dự kiến | `0x3c670`, `0x3c8d0` / `0x47380`, `0x475e0` | Đã so phần; còn ghép cùng giá đặt cuối cùng |
-| P11 | Toàn bộ điều kiện cho phép vào | `0x18aa0` / `0x20ef0` | Cần bảng nhánh đầy đủ cho từng chiến lược và từng chiều |
+| P11 | Toàn bộ điều kiện cho phép vào | `0x18aa0` / `0x20ef0` | Bot3 đã dựng đoạn đổi nến gọi đủ hai chiều quản lý:384/384ca, thân quản lý được cấp kết quả trong lượt này; [phạm vi](bot-cua-toi-3/phan-tich/chuong-trinh-chinh/bar-gate-20261026-r1/README.md). Còn bảng nhánh đầy đủ cho từng chiến lược và từng chiều |
 | P12 | Tính khối lượng và các chế độ rủi ro | `0x34780` / `0x3f900` | Đã so phần; các giá trị cấp từ chương trình chính chưa đủ |
 | P13 | Đổi tiền tài khoản và cặp giá | `0x36220`, `0x47d20` / `0x8300`, `0x41780` | Đã so hai chiều và ghép; còn nạp đuôi mã lúc khởi tạo |
 | P14 | Vốn cao nhất, rút tiền và lưu trạng thái | `0x173f0`, `0xc30` / `0x1fd00`, `0xc30` | Đã so cập nhật/ghi-đọc, tên mục và nạp lại trong đoạn khởi tạo; còn ghép toàn bộ, mã lỗi/thông báo và kiểm cùng tài khoản |

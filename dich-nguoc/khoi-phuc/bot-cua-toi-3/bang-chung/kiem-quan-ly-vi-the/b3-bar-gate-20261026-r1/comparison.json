@@ -1,0 +1,22 @@
+{
+  "cases": 384,
+  "matched": 384,
+  "failed": 0,
+  "first_failures": [],
+  "result_sha256": {
+    "original": "537856dcfd0f1c239e3d5e3fbff1b6bf01d99320f2f4b0e24496e284239c0bc9",
+    "mql5": "537856dcfd0f1c239e3d5e3fbff1b6bf01d99320f2f4b0e24496e284239c0bc9"
+  },
+  "whole_manager_complete": false,
+  "whole_bot_complete": false,
+  "full_ea": false,
+  "native_caller_slice_executed": true,
+  "child_helpers_intercepted": true,
+  "terminal_replies_supplied": true,
+  "original_ex5_changed": false,
+  "limits": [
+    "Only the new-bar time check, second time write, ordered buy/sell calls and boolean branch are executed; not the complete coordinator or EA.",
+    "Both manager bodies and iTime replies/effects are supplied; management bodies have separate scoped comparisons.",
+    "Valid indices0..8 and the specified fixtures only; no claim about invalid indices, all broker data or full program lifecycle."
+  ]
+}

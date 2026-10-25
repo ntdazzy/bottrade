@@ -1,5 +1,11 @@
 # Ghép quản lý vị thế bot3 — ngày25/10/2026
 
+Đã nối thêm đoạn gọi quản lý khi nến đổi từ chương trình chính:
+384/384ca khớp,0lỗi/0cảnhbáo. Giữ2lần đọc thời gian và luôn gọi mua
+rồi bán trước khi ghép kết quả. Thân quản lý trong lượt kiểm đoạn
+nối được cấp kết quả; chưa phải kiểm cả chương trình chính hoặc EA.
+[Bằng chứng đoạn nối](bot-cua-toi-3/phan-tich/chuong-trinh-chinh/bar-gate-20261026-r1/README.md).
+
 Đã kiểm vòng quản lý mua/bán thật/ảo **364/364 ca khớp**, biên dịch
 **0 lỗi, 0 cảnh báo**. Hai thân gốc chạy từ đầu tới trả về, gồm nhiều
 vị thế, đổi chế độ giữa vòng, sửa/đóng/lấy giá lỗi và vé 64 bit.

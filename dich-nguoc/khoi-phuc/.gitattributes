@@ -333,3 +333,12 @@
 /danh-gia-doc-lap/bot1-parent-*/** -text
 /bot-cua-toi-3/phan-tich/chuong-trinh-chinh/main-calls-*/** -text
 /bot-cua-toi-3/phan-tich/chuong-trinh-chinh/bar-gate-*/** -text
+
+/bot-cua-toi-3/source/MQL5/Include/bot-cua-toi-3/Bot3ManagementBarGate.mqh -text
+/bot-cua-toi-3/source/MQL5/Scripts/bot-cua-toi-3/Bot3ManagementBarGate*.mq5 -text
+/bot-cua-toi-3/tests/bar_gate_cases.py -text
+/bot-cua-toi-3/tests/check-management-bar-gate.py -text
+/bot-cua-toi-3/bang-chung/bien-dich/b3-management-bar-*/** -text
+/claude-thuc-hien/bot3-newbar-*/** -text
+/danh-gia-claude/bot3-bar-gate-*/** -text
+/danh-gia-doc-lap/bot3-bar-gate-*/** -text
