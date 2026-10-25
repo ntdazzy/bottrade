@@ -1,0 +1,85 @@
+{
+  "run": "bot1-real-lock-20261026-r1",
+  "session_id": "fce966dd-acbb-4dea-bb43-50cf6d5b660f",
+  "started": "2026-10-25T18:16:35.5318083Z",
+  "snapshot_utc": "2026-10-25T18:25:10.513040+00:00",
+  "status": "delivered-unverified",
+  "response_is_error": false,
+  "terminal_reason": "completed",
+  "job_sha256": "0707156aabb0466380a6f904828b99a205ca76fbc9ad1d713b142b49d07dc4f7",
+  "prompt_sha256": "4a996c90dfbcf849e646a13dbef731213e7d97dbe9f94485a4d051cb350fe3e6",
+  "response_sha256": "dba16e41bb7c0d7a605ab03eaf6436e59d212d03e7337c526a8bcd16bac7d8e6",
+  "actual_requests": 12,
+  "requests": [
+    {
+      "timestamp": "2026-10-25T18:16:36.688Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T18:17:06.724Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T18:17:13.984Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T18:17:21.041Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T18:17:34.074Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T18:17:39.398Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T18:17:45.396Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T18:19:27.301Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T18:21:35.194Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T18:21:47.072Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T18:23:02.952Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T18:23:07.027Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    }
+  ],
+  "ultracode_requested": true,
+  "ultracode_runtime_confirmed": null,
+  "journal_prefix_bytes": 1145878,
+  "journal_prefix_sha256": "1292da73d7edeecc1c263f4face155c7c7a5ec65817c10c731d92ba4c446987b",
+  "files_sha256": {
+    "dich-nguoc/khoi-phuc/claude-thuc-hien/bot1-real-lock-20261026-r1/Bot1ManagementRealLock.mqh": "a1711c2e86c74cae7ed637ee16b57850bcee690801fda2229fffcb28b04ad467",
+    "dich-nguoc/khoi-phuc/claude-thuc-hien/bot1-real-lock-20261026-r1/SUMMARY.md": "d6269204f31b8552724c7b51201a2454f61f730b7e12519c4458a0fbc488230c"
+  },
+  "source_validated": false,
+  "whole_bot_complete": false
+}

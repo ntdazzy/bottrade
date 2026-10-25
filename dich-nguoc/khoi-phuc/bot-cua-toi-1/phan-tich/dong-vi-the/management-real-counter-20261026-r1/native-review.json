@@ -1,0 +1,31 @@
+{
+  "buy": {
+    "begin": "0x293c6",
+    "end": "0x29651",
+    "modify": "0x2964a"
+  },
+  "sell": {
+    "begin": "0x2cb0a",
+    "end": "0x2cd92",
+    "modify": "0x2cd8b"
+  },
+  "fields": {
+    "enabled": "0x62508",
+    "reference_setting": "0x62510",
+    "minimum_steps": "0x62518",
+    "step_distance": "0x62520",
+    "copied_step": "0x673e8",
+    "counter": "0x673f0"
+  },
+  "wrap_counter_signed32": true,
+  "selected_anchor": {
+    "buy": "SP+0x88",
+    "sell": "XMM15"
+  },
+  "modify_reply_ignored": true,
+  "no_error_message": true,
+  "original_sha256": "a3b0de423a06e10ebedc279307b93d7cb9188ba2bb5de77131a913c865b0e922",
+  "functional_spec": "claude-thuc-hien/bot1-real-counter-20261026-r1/TASK.md",
+  "runtime_verified": false,
+  "whole_bot_complete": false
+}

@@ -1,0 +1,14 @@
+{
+  "utc": "2026-10-25T18:29:56.775850+00:00",
+  "reviewer": "/root/review_bot3_parent_flow",
+  "findings": [],
+  "compared": [
+    "Three Claude functional TASKs and corresponding native review mappings",
+    "HighLow byte flags, service/read order, error helper",
+    "Lock operand/read order, before/after API captures, error text",
+    "Counter signed32 wrap, zero/NaN reference, reset before DIGITS2, ignored modify reply"
+  ],
+  "compile_only": true,
+  "runtime_verified": false,
+  "whole_bot_complete": false
+}

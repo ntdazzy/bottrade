@@ -1,0 +1,37 @@
+{
+  "utc": "2026-10-25T18:29:04.477140+00:00",
+  "run": "b1-real-three-20261026-r3",
+  "cases": 1246,
+  "matched": 1246,
+  "by_stage": {
+    "distance": 536,
+    "slippage": 400,
+    "store": 310
+  },
+  "result_sha256": "601bc09bc66ed6d1cd5b1e538fea6ce371a5c9acdb67695ad125bd55045240e6",
+  "compile_build": "b1-real-three-check-20261026-r1",
+  "errors": 0,
+  "warnings": 0,
+  "failed_attempts_preserved": [
+    "b1-real-three-20261026-r1",
+    "b1-real-three-20261026-r2"
+  ],
+  "adapter_corrections": [
+    "SDK base from PositionsTotal with verified SymbolInfoDouble, not first API id4",
+    "error_count6744c, error string slot6a43c with separate initialization"
+  ],
+  "product_algorithm_changed": false,
+  "source_author": "Claude Opus5.5 max",
+  "actual_receipts": "danh-gia-claude/bot1-real-five-20261026-r2/dispatch.json",
+  "native_error_cases": 128,
+  "printed_messages": 290,
+  "scope": [
+    "Three separate real blocks in both directions; not a full manager, event loop, EA or paired terminals run.",
+    "Modify and try-close receive supplied replies. Original close ticket comes from RCX; forwarding context fields are supplied and checked only on the MQL5 side.",
+    "Native error-code/counter/string/Print code executes. Signed decimal conversion and successful allocation/free are supplied, not allocation failure.",
+    "Both-NaN results use measured Windows SSE2 fixtures; remaining native instructions execute in Unicorn. No physical whole-original or MXCSR-status proof.",
+    "All API-triggered mutations are supplied provider effects. Unread protocol fields are checked only as provider state: counter/levels/lock fields in all three slices; trail/step/start/limit in store; step in slippage; current_stop outside store. They do not prove calculations in other bot1 blocks."
+  ],
+  "whole_manager_complete": false,
+  "whole_bot_complete": false
+}

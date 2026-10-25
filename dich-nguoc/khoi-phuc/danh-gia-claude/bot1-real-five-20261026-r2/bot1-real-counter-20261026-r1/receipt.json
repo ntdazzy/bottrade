@@ -1,0 +1,75 @@
+{
+  "run": "bot1-real-counter-20261026-r1",
+  "session_id": "1af17287-f643-4551-ad07-872296741890",
+  "started": "2026-10-25T18:17:25.5094382Z",
+  "snapshot_utc": "2026-10-25T18:25:10.513040+00:00",
+  "status": "delivered-unverified",
+  "response_is_error": false,
+  "terminal_reason": "completed",
+  "job_sha256": "8650172099a6d44c44b6551f303f609575a478951535b10b3801f95734ab3410",
+  "prompt_sha256": "b9bf6f8e4a856d639fa5f2f4ba3fac3dd22c7eae38705ea8470414505a441133",
+  "response_sha256": "7b7ac88d5cb23401a7bd36322e78f52ce442addec25c80c51162c66329df55e9",
+  "actual_requests": 10,
+  "requests": [
+    {
+      "timestamp": "2026-10-25T18:17:28.664Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T18:17:44.939Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T18:17:49.523Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T18:17:54.774Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T18:18:03.500Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T18:18:15.645Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T18:21:37.705Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T18:21:52.621Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T18:21:57.785Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T18:22:39.639Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    }
+  ],
+  "ultracode_requested": true,
+  "ultracode_runtime_confirmed": null,
+  "journal_prefix_bytes": 1078029,
+  "journal_prefix_sha256": "0ed9a7b0a2c4873f133900e7d744df793980bc148339bee07f994b3b94c77656",
+  "files_sha256": {
+    "dich-nguoc/khoi-phuc/claude-thuc-hien/bot1-real-counter-20261026-r1/Bot1ManagementRealCounter.mqh": "13d44f6581185fcb7f7592466ea1a6a6019443a2c6c59f8a377ce730b1e33c73",
+    "dich-nguoc/khoi-phuc/claude-thuc-hien/bot1-real-counter-20261026-r1/SUMMARY.md": "05cc31533ca1f9e2dbcde4ca27cc0a40cb76a9686e7f6e0de51be6b31fe93491"
+  },
+  "source_validated": false,
+  "whole_bot_complete": false
+}

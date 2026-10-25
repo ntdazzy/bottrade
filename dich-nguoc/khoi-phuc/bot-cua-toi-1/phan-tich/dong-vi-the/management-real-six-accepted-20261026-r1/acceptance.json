@@ -1,0 +1,36 @@
+{
+  "utc": "2026-10-25T18:29:04.477140+00:00",
+  "author": "Claude Opus5.5",
+  "actual_effort": "max",
+  "actual_receipts": "danh-gia-claude/bot1-real-five-20261026-r2/dispatch.json",
+  "ultracode_runtime_confirmed": null,
+  "sources": [
+    {
+      "file": "Bot1ManagementRealHighLow.mqh",
+      "proposal_sha256": "8e0e96e12fed566fd0977ec73a6f76ee30a46ec5702267258f1bf8f259b289ad",
+      "canonical_sha256": "8e0e96e12fed566fd0977ec73a6f76ee30a46ec5702267258f1bf8f259b289ad",
+      "body_changed": false,
+      "runtime_verified": false
+    },
+    {
+      "file": "Bot1ManagementRealLock.mqh",
+      "proposal_sha256": "a1711c2e86c74cae7ed637ee16b57850bcee690801fda2229fffcb28b04ad467",
+      "canonical_sha256": "a1711c2e86c74cae7ed637ee16b57850bcee690801fda2229fffcb28b04ad467",
+      "body_changed": false,
+      "runtime_verified": false
+    },
+    {
+      "file": "Bot1ManagementRealCounter.mqh",
+      "proposal_sha256": "13d44f6581185fcb7f7592466ea1a6a6019443a2c6c59f8a377ce730b1e33c73",
+      "canonical_sha256": "13d44f6581185fcb7f7592466ea1a6a6019443a2c6c59f8a377ce730b1e33c73",
+      "body_changed": false,
+      "runtime_verified": false
+    }
+  ],
+  "compile_only": true,
+  "compile_build": "b1-real-six-api-20261026-r1",
+  "errors": 0,
+  "warnings": 0,
+  "compiled_script_was_not_run": true,
+  "whole_bot_complete": false
+}

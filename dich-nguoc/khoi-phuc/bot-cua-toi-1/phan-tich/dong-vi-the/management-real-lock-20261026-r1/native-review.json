@@ -1,0 +1,25 @@
+{
+  "buy": {
+    "begin": "0x28f72",
+    "end": "0x293c6",
+    "modify": "0x292d0"
+  },
+  "sell": {
+    "begin_with_start_guard": "0x2c771",
+    "arithmetic_begin": "0x2c7b4",
+    "end": "0x2cb0a",
+    "modify": "0x2ca0c"
+  },
+  "fields": {
+    "start": "0x624c8",
+    "extra": "0x624d0"
+  },
+  "prefix": "error when setting breakeven: '",
+  "prefix_descriptor": "0x55c00",
+  "suffix": "' ..'Exit_BE_start_' to close to 'Exit_BE_extra_pips_' ..trying again!",
+  "suffix_utf16": "0x55c1c",
+  "original_sha256": "a3b0de423a06e10ebedc279307b93d7cb9188ba2bb5de77131a913c865b0e922",
+  "functional_spec": "claude-thuc-hien/bot1-real-lock-20261026-r1/TASK.md",
+  "runtime_verified": false,
+  "whole_bot_complete": false
+}

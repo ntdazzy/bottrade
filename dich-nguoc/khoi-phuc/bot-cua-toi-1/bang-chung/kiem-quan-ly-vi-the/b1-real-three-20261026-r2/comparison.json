@@ -1,0 +1,268 @@
+{
+  "cases": 1246,
+  "matched": 1118,
+  "failed": 128,
+  "first_failures": [
+    {
+      "id": 578,
+      "group": "scenario/scenario=0,modify_ok=0,prior_changed=0,minimum=+0",
+      "buy": 0,
+      "stage": 0,
+      "differences": {
+        "error_count": [
+          19,
+          1
+        ],
+        "ordered_hash": [
+          4147253782006582954,
+          6249099194958651384
+        ]
+      }
+    },
+    {
+      "id": 579,
+      "group": "scenario/scenario=0,modify_ok=0,prior_changed=1,minimum=+0",
+      "buy": 0,
+      "stage": 0,
+      "differences": {
+        "error_count": [
+          19,
+          1
+        ],
+        "ordered_hash": [
+          4147253782006582954,
+          6249099194958651384
+        ]
+      }
+    },
+    {
+      "id": 582,
+      "group": "scenario/scenario=1,modify_ok=0,prior_changed=0,minimum=+0",
+      "buy": 0,
+      "stage": 0,
+      "differences": {
+        "error_count": [
+          19,
+          1
+        ],
+        "ordered_hash": [
+          17532614433095961219,
+          1187715772338478033
+        ]
+      }
+    },
+    {
+      "id": 583,
+      "group": "scenario/scenario=1,modify_ok=0,prior_changed=1,minimum=+0",
+      "buy": 0,
+      "stage": 0,
+      "differences": {
+        "error_count": [
+          19,
+          1
+        ],
+        "ordered_hash": [
+          17532614433095961219,
+          1187715772338478033
+        ]
+      }
+    },
+    {
+      "id": 586,
+      "group": "scenario/scenario=2,modify_ok=0,prior_changed=0,minimum=+0",
+      "buy": 0,
+      "stage": 0,
+      "differences": {
+        "error_count": [
+          19,
+          1
+        ],
+        "ordered_hash": [
+          17532614433095961219,
+          1187715772338478033
+        ]
+      }
+    },
+    {
+      "id": 587,
+      "group": "scenario/scenario=2,modify_ok=0,prior_changed=1,minimum=+0",
+      "buy": 0,
+      "stage": 0,
+      "differences": {
+        "error_count": [
+          19,
+          1
+        ],
+        "ordered_hash": [
+          17532614433095961219,
+          1187715772338478033
+        ]
+      }
+    },
+    {
+      "id": 590,
+      "group": "scenario/scenario=3,modify_ok=0,prior_changed=0,minimum=+0",
+      "buy": 0,
+      "stage": 0,
+      "differences": {
+        "error_count": [
+          19,
+          1
+        ],
+        "ordered_hash": [
+          17532614433095961219,
+          1187715772338478033
+        ]
+      }
+    },
+    {
+      "id": 591,
+      "group": "scenario/scenario=3,modify_ok=0,prior_changed=1,minimum=+0",
+      "buy": 0,
+      "stage": 0,
+      "differences": {
+        "error_count": [
+          19,
+          1
+        ],
+        "ordered_hash": [
+          17532614433095961219,
+          1187715772338478033
+        ]
+      }
+    },
+    {
+      "id": 594,
+      "group": "scenario/scenario=4,modify_ok=0,prior_changed=0,minimum=+0",
+      "buy": 0,
+      "stage": 0,
+      "differences": {
+        "error_count": [
+          19,
+          1
+        ],
+        "ordered_hash": [
+          4147253782006582954,
+          6249099194958651384
+        ]
+      }
+    },
+    {
+      "id": 595,
+      "group": "scenario/scenario=4,modify_ok=0,prior_changed=1,minimum=+0",
+      "buy": 0,
+      "stage": 0,
+      "differences": {
+        "error_count": [
+          19,
+          1
+        ],
+        "ordered_hash": [
+          4147253782006582954,
+          6249099194958651384
+        ]
+      }
+    },
+    {
+      "id": 598,
+      "group": "scenario/scenario=5,modify_ok=0,prior_changed=0,minimum=+0",
+      "buy": 0,
+      "stage": 0,
+      "differences": {
+        "error_count": [
+          19,
+          1
+        ],
+        "ordered_hash": [
+          4147253782006582954,
+          6249099194958651384
+        ]
+      }
+    },
+    {
+      "id": 599,
+      "group": "scenario/scenario=5,modify_ok=0,prior_changed=1,minimum=+0",
+      "buy": 0,
+      "stage": 0,
+      "differences": {
+        "error_count": [
+          19,
+          1
+        ],
+        "ordered_hash": [
+          4147253782006582954,
+          6249099194958651384
+        ]
+      }
+    },
+    {
+      "id": 602,
+      "group": "scenario/scenario=6,modify_ok=0,prior_changed=0,minimum=+0",
+      "buy": 0,
+      "stage": 0,
+      "differences": {
+        "error_count": [
+          19,
+          1
+        ],
+        "ordered_hash": [
+          4147253782006582954,
+          6249099194958651384
+        ]
+      }
+    },
+    {
+      "id": 603,
+      "group": "scenario/scenario=6,modify_ok=0,prior_changed=1,minimum=+0",
+      "buy": 0,
+      "stage": 0,
+      "differences": {
+        "error_count": [
+          19,
+          1
+        ],
+        "ordered_hash": [
+          4147253782006582954,
+          6249099194958651384
+        ]
+      }
+    },
+    {
+      "id": 606,
+      "group": "scenario/scenario=7,modify_ok=0,prior_changed=0,minimum=+0",
+      "buy": 0,
+      "stage": 0,
+      "differences": {
+        "error_count": [
+          19,
+          1
+        ],
+        "ordered_hash": [
+          4147253782006582954,
+          6249099194958651384
+        ]
+      }
+    }
+  ],
+  "result_sha256": {
+    "original": "370bd866894d12ae924f3a4e97ab90e8e1853751951f09d4060369e3cc4df4c7",
+    "mql5": "601bc09bc66ed6d1cd5b1e538fea6ce371a5c9acdb67695ad125bd55045240e6"
+  },
+  "calculation_slices_only": true,
+  "whole_manager_complete": false,
+  "whole_bot_complete": false,
+  "modify_child_intercepted": true,
+  "close_child_intercepted": true,
+  "original_report_text_code_executed": true,
+  "error_text_helper_executed": true,
+  "successful_string_allocation_supplied": true,
+  "signed_decimal_cast_supplied": true,
+  "original_ex5_changed": false,
+  "limits": [
+    "Three separate real blocks in both directions; not a full manager, event loop, EA or paired terminals run.",
+    "Modify and try-close receive supplied replies. Original close ticket comes from RCX; forwarding context fields are supplied and checked only on the MQL5 side.",
+    "Native error-code/counter/string/Print code executes. Signed decimal conversion and successful allocation/free are supplied, not allocation failure.",
+    "Both-NaN results use measured Windows SSE2 fixtures; remaining native instructions execute in Unicorn. No physical whole-original or MXCSR-status proof.",
+    "All API-triggered mutations are supplied provider effects. Unread protocol fields are checked only as provider state: counter/levels/lock fields in all three slices; trail/step/start/limit in store; step in slippage; current_stop outside store. They do not prove calculations in other bot1 blocks."
+  ]
+}

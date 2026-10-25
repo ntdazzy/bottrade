@@ -300,3 +300,17 @@
 /danh-gia-doc-lap/viewer-*/** -text
 
 /doi-chung-mt5/thu-tu-truong-lenh-class-20261024/layout-class-r1/trade-layout.json -text
+
+/bot-cua-toi-1/tests/check-management-real-blocks.py -text
+/bot-cua-toi-1/tests/real_blocks_cases.py -text
+/bot-cua-toi-1/source/MQL5/Scripts/bot-cua-toi-1/Bot1ManagementRealBlocksCheck.mq5 -text
+/bot-cua-toi-1/source/MQL5/Include/bot-cua-toi-1/Bot1ManagementRealHighLow.mqh -text
+/bot-cua-toi-1/source/MQL5/Include/bot-cua-toi-1/Bot1ManagementRealLock.mqh -text
+/bot-cua-toi-1/source/MQL5/Include/bot-cua-toi-1/Bot1ManagementRealCounter.mqh -text
+/bot-cua-toi-1/phan-tich/dong-vi-the/management-real-three-*/** -text
+/bot-cua-toi-1/phan-tich/dong-vi-the/management-real-highlow-*/** -text
+/bot-cua-toi-1/phan-tich/dong-vi-the/management-real-lock-*/** -text
+/bot-cua-toi-1/phan-tich/dong-vi-the/management-real-counter-*/** -text
+/bot-cua-toi-1/phan-tich/dong-vi-the/management-real-six-accepted-*/** -text
+/danh-gia-claude/bot1-real-five-*/** -text
+/danh-gia-doc-lap/bot1-real-three-*/** -text

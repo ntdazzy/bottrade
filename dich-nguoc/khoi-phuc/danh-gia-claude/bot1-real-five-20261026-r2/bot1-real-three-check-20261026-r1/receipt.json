@@ -1,0 +1,135 @@
+{
+  "run": "bot1-real-three-check-20261026-r1",
+  "session_id": "a25c7a17-6d35-467c-8177-ee90f375401f",
+  "started": "2026-10-25T18:03:47.4962138Z",
+  "snapshot_utc": "2026-10-25T18:25:10.513040+00:00",
+  "status": "delivered-unverified",
+  "response_is_error": false,
+  "terminal_reason": "completed",
+  "job_sha256": "e5b408f39ecf94397b243ce11f0b3f965755cc96e53c4a373312ec569dedcdfd",
+  "prompt_sha256": "d9fadc4fe0e7fafb5ca08e7ba0899f71bab12f4318ff394080c77d1ed67d368e",
+  "response_sha256": "00561fa0a78da91e07f9eab4762c87fc9190edc668fac63b3f7273760ba7b424",
+  "actual_requests": 22,
+  "requests": [
+    {
+      "timestamp": "2026-10-25T18:03:48.680Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T18:04:00.079Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T18:04:07.235Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T18:04:11.256Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T18:04:15.230Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T18:04:18.978Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T18:04:24.531Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T18:04:30.687Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T18:04:39.830Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T18:05:08.436Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T18:05:19.658Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T18:06:02.661Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T18:06:08.838Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T18:06:15.694Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T18:09:13.627Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T18:11:06.562Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T18:11:23.045Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T18:15:20.293Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T18:16:21.454Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T18:16:37.407Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T18:17:57.352Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T18:18:02.892Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    }
+  ],
+  "ultracode_requested": true,
+  "ultracode_runtime_confirmed": null,
+  "journal_prefix_bytes": 1814324,
+  "journal_prefix_sha256": "cd0756601308543f4732b94b3ea2eb80fc899c6aac6630e624c28a6cf0013ce0",
+  "files_sha256": {
+    "dich-nguoc/khoi-phuc/claude-thuc-hien/bot1-real-three-check-20261026-r1/Bot1ManagementRealBlocksCheck.mq5": "66a28eee43a0c57921929c93d7eca6c28b4cfdf3afdcac4f4cb888ffa1df76e5",
+    "dich-nguoc/khoi-phuc/claude-thuc-hien/bot1-real-three-check-20261026-r1/SUMMARY.md": "d4c09ac7f306654b7919f84f5feaf0f529673b65d86c08a65267c2aa2f49bdba"
+  },
+  "source_validated": false,
+  "whole_bot_complete": false
+}

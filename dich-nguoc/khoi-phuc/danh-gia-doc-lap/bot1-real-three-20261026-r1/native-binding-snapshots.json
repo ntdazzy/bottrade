@@ -1,0 +1,9 @@
+{
+  "method": "Old r1/r2 binding JSON reconstructed from the previous values; accepted only after exact SHA256 comparison to their immutable baselines. r3 copied from verified current binding.",
+  "runs": [
+    "b1-real-three-20261026-r1",
+    "b1-real-three-20261026-r2",
+    "b1-real-three-20261026-r3"
+  ],
+  "verified": true
+}

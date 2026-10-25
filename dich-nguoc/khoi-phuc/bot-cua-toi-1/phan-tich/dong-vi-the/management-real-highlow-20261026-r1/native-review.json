@@ -1,0 +1,44 @@
+{
+  "original_sha256": "a3b0de423a06e10ebedc279307b93d7cb9188ba2bb5de77131a913c865b0e922",
+  "buy": {
+    "begin": "0x28aed",
+    "end": "0x28f72",
+    "guard": "0x28af7 enabled>0 and0x28b00 eligiblebyte!=0",
+    "gap_count": "0x62360",
+    "level_array": "0x670d0",
+    "changed_write_before_error": "0x28e7e",
+    "modify": "0x28e78"
+  },
+  "sell": {
+    "begin": "0x2c36e",
+    "end": "0x2c767 plus restore0x2c78c",
+    "guard": "0x2c378 enabled>0 and0x2c381 eligiblebyte!=0",
+    "gap_count": "0x62360",
+    "level_array": "0x66db0",
+    "changed_write_before_error": "0x2c65a",
+    "modify": "0x2c654"
+  },
+  "constants": {
+    "0x50248": {
+      "bits": "0x4024000000000000",
+      "value": 10.0
+    },
+    "0x50270": {
+      "bits": "0x4024000000000000",
+      "value": 10.0
+    }
+  },
+  "error": {
+    "prefix_descriptor": "0x55140",
+    "prefix": "error: '",
+    "suffix_utf16": "0x55b7c",
+    "suffix": "' when modifying stoploss",
+    "helper": "0x336d0",
+    "code": "0x6a410",
+    "counter": "0x6744c",
+    "string_slot": "0x6a43c"
+  },
+  "functional_spec": "claude-thuc-hien/bot1-real-highlow-20261026-r1/TASK.md",
+  "runtime_verified": false,
+  "whole_bot_complete": false
+}
