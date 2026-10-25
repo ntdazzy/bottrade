@@ -1,0 +1,15 @@
+{
+  "status": "codex-candidate-compile-only-passed",
+  "run": "b1-management-slippage-compile-02",
+  "candidate_source_sha256": "0d976059db94f3230cdcf9f8ba199159e20d99d2521df97d63b1e9d176fd926c",
+  "test_script_sha256": "4c8b8ce0b64b7340d5b81f500ed0ea3bec140aebecc3bb996de33a6d34cb0871",
+  "errors": 0,
+  "warnings": 0,
+  "claude_deliverable": false,
+  "whole_bot_complete": false,
+  "limits": [
+    "No runtime/native comparison; Codex wrote candidate because Claude delivered no file."
+  ],
+  "receipt_archived": false,
+  "note": "Compiler output was 0/0 during this turn; temporary build receipt/binary were removed after recording the candidate hashes because no runtime proof exists."
+}
