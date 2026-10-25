@@ -1,0 +1,23 @@
+{
+  "cases": 994,
+  "matched": 994,
+  "failed": 0,
+  "first_failures": [],
+  "result_sha256": {
+    "original": "9fa9199d9c59814b51021358c8baa836e0349e0515329cff61313b0705785c83",
+    "mql5": "9fa9199d9c59814b51021358c8baa836e0349e0515329cff61313b0705785c83"
+  },
+  "calculation_slice_only": true,
+  "whole_manager_complete": false,
+  "whole_bot_complete": false,
+  "original_bytes_changed": false,
+  "modify_child_intercepted": true,
+  "close_child_intercepted": true,
+  "error_reporting_block_intercepted": true,
+  "limits": [
+    "Only real trailing-take calculations and their call boundaries, not the complete manager, EA or a paired original/restored terminal run.",
+    "Modify32a90 and TryClose47d20 are intercepted. The close ticket comes from native RCX; other close values are supplied context and checked for MQL5 forwarding only, not by executing the original close child.",
+    "The original failure-report blocks34923/38e4d are replaced by a report callback. Original string building/printing/error helper does not execute. The real message header has compile-only evidence.",
+    "API replies and mutation cases are supplied; both-NaN arithmetic uses measured Windows SSE2 fixtures, other native instructions execute in Unicorn. No physical whole-original or MXCSR-status comparison."
+  ]
+}

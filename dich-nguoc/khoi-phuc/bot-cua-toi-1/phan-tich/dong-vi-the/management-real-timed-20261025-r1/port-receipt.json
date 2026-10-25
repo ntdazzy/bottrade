@@ -1,0 +1,20 @@
+{
+  "parts": {
+    "Bot1ManagementRealTimed.mqh": {
+      "from_source": "dich-nguoc/khoi-phuc/bot-cua-toi-3/source/MQL5/Include/bot-cua-toi-3/Bot3ManagementRealTimed.mqh",
+      "from_source_sha256": "0d3ed0aa7a8d3c0fc37cf8fe116eaacca3342d990bd750e8e3b01e8391a9755b",
+      "source_sha256": "32c86600b33d22c846fd1650cdd6754c9440ce7fa52edfa6e5335a652906edbe",
+      "change": "Namespace only after Codex independently compared both native sides and error strings"
+    },
+    "Bot1ManagementMessages.mqh": {
+      "from_source": "dich-nguoc/khoi-phuc/bot-cua-toi-3/source/MQL5/Include/bot-cua-toi-3/Bot3ManagementMessages.mqh",
+      "from_source_sha256": "877cf90d7cb69de1bd714d838d745eb3769d8fac74d0e64103765a52e7dbb3aa",
+      "source_sha256": "6aa043b12ca515814f68574219f6e05d450a743fb2e4a53692ad7f9d8828df61",
+      "change": "Namespace only after Codex independently compared both native sides and error strings"
+    }
+  },
+  "native_review": "buy 0x27ee4..0x28220; sell 0x2b8ed..0x2bc82 + alternate exit0x2b938; all arithmetic/read order/time wrap matches the Bot3 specification. Errorprefix55978/suffix5599c were read directly.",
+  "author": "Codex under approved exception for Bot1 management refusals; original Bot3 function bodies were written by Claude",
+  "runtime_verified": false,
+  "whole_bot_complete": false
+}

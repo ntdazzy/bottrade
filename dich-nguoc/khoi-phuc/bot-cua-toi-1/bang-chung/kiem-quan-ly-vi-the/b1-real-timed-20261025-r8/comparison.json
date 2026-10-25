@@ -1,0 +1,293 @@
+{
+  "cases": 492,
+  "matched": 207,
+  "failed": 285,
+  "first_failures": [
+    {
+      "id": 0,
+      "group": "normal",
+      "differences": {
+        "requested": [
+          0,
+          1
+        ],
+        "calls": [
+          6,
+          5
+        ],
+        "ordered_hash": [
+          14995219628596305590,
+          13549218306395441252
+        ]
+      }
+    },
+    {
+      "id": 7,
+      "group": "numeric-sl",
+      "differences": {
+        "requested": [
+          0,
+          1
+        ],
+        "calls": [
+          6,
+          5
+        ],
+        "ordered_hash": [
+          14995219628596305590,
+          13549218306395441252
+        ]
+      }
+    },
+    {
+      "id": 8,
+      "group": "numeric-sl",
+      "differences": {
+        "requested": [
+          0,
+          1
+        ],
+        "calls": [
+          6,
+          5
+        ],
+        "ordered_hash": [
+          14995219628596305590,
+          13549218306395441252
+        ]
+      }
+    },
+    {
+      "id": 9,
+      "group": "numeric-sl",
+      "differences": {
+        "requested": [
+          0,
+          1
+        ],
+        "calls": [
+          6,
+          5
+        ],
+        "ordered_hash": [
+          14995219628596305590,
+          13549218306395441252
+        ]
+      }
+    },
+    {
+      "id": 12,
+      "group": "numeric-tp",
+      "differences": {
+        "requested": [
+          0,
+          1
+        ],
+        "calls": [
+          6,
+          5
+        ],
+        "ordered_hash": [
+          10406236664537351826,
+          13228098048051188400
+        ]
+      }
+    },
+    {
+      "id": 13,
+      "group": "numeric-tp",
+      "differences": {
+        "requested": [
+          0,
+          1
+        ],
+        "calls": [
+          6,
+          5
+        ],
+        "ordered_hash": [
+          14717068779889800298,
+          8996632216418779027
+        ]
+      }
+    },
+    {
+      "id": 14,
+      "group": "numeric-tp",
+      "differences": {
+        "requested": [
+          0,
+          1
+        ],
+        "calls": [
+          6,
+          5
+        ],
+        "ordered_hash": [
+          3095360556203930150,
+          12271071002533668228
+        ]
+      }
+    },
+    {
+      "id": 15,
+      "group": "numeric-tp",
+      "differences": {
+        "requested": [
+          0,
+          1
+        ],
+        "calls": [
+          6,
+          5
+        ],
+        "ordered_hash": [
+          1659803738485776678,
+          5262676637041941965
+        ]
+      }
+    },
+    {
+      "id": 16,
+      "group": "numeric-tp",
+      "differences": {
+        "requested": [
+          0,
+          1
+        ],
+        "calls": [
+          6,
+          5
+        ],
+        "ordered_hash": [
+          12035576978324218918,
+          18317115290835281741
+        ]
+      }
+    },
+    {
+      "id": 17,
+      "group": "numeric-tp",
+      "differences": {
+        "requested": [
+          0,
+          1
+        ],
+        "calls": [
+          6,
+          5
+        ],
+        "ordered_hash": [
+          4580698176280530762,
+          8125928843561159847
+        ]
+      }
+    },
+    {
+      "id": 23,
+      "group": "numeric-bid",
+      "differences": {
+        "requested": [
+          0,
+          1
+        ],
+        "calls": [
+          6,
+          5
+        ],
+        "ordered_hash": [
+          14995219628596305590,
+          13549218306395441252
+        ]
+      }
+    },
+    {
+      "id": 24,
+      "group": "numeric-bid",
+      "differences": {
+        "requested": [
+          0,
+          1
+        ],
+        "calls": [
+          6,
+          5
+        ],
+        "ordered_hash": [
+          14995219628596305590,
+          13549218306395441252
+        ]
+      }
+    },
+    {
+      "id": 25,
+      "group": "numeric-bid",
+      "differences": {
+        "requested": [
+          0,
+          1
+        ],
+        "calls": [
+          6,
+          5
+        ],
+        "ordered_hash": [
+          14995219628596305590,
+          13549218306395441252
+        ]
+      }
+    },
+    {
+      "id": 26,
+      "group": "numeric-bid",
+      "differences": {
+        "requested": [
+          0,
+          1
+        ],
+        "calls": [
+          6,
+          5
+        ],
+        "ordered_hash": [
+          14995219628596305590,
+          13549218306395441252
+        ]
+      }
+    },
+    {
+      "id": 27,
+      "group": "numeric-bid",
+      "differences": {
+        "requested": [
+          0,
+          1
+        ],
+        "calls": [
+          6,
+          5
+        ],
+        "ordered_hash": [
+          14995219628596305590,
+          13549218306395441252
+        ]
+      }
+    }
+  ],
+  "calculation_slice_only": true,
+  "whole_manager_complete": false,
+  "whole_bot_complete": false,
+  "original_bytes_changed": false,
+  "modify_child_intercepted": true,
+  "error_reporting_block_intercepted": true,
+  "limits": [
+    "Chỉ kiểm lát cắt dừng lỗ thật theo thời gian; chưa phải toàn bộ bộ quản lý hoặc EA.",
+    "Nút sửa vị thế và khối báo lỗi được trả lời tại điểm gọi; actualReporter không chạy.",
+    "Phép tính NaN dùng bộ đo SSE2 BothNaN và bộ dữ liệu vật lý; các lệnh khác chạy trong Unicorn."
+  ],
+  "hashes": {
+    "cases": "6a3c796df02e4391e5d5163049f5e90429ea3163ed9bb6bcfb709c3d3483ec94",
+    "original": "991f9ed7fe0129eba04ea6a0a33990998bd4d76bbb9a6b1c972478d6f4ba2ddf",
+    "mql5": "a18e1f3ee7e684fb9806cdd037d122d0df9af52a7c9e7f1b5c7fbe30ca2defdb"
+  }
+}

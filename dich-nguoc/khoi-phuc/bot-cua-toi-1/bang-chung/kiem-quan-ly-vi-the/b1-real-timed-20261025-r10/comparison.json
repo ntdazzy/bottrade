@@ -1,0 +1,22 @@
+{
+  "cases": 492,
+  "matched": 492,
+  "failed": 0,
+  "first_failures": [],
+  "calculation_slice_only": true,
+  "whole_manager_complete": false,
+  "whole_bot_complete": false,
+  "original_bytes_changed": false,
+  "modify_child_intercepted": true,
+  "error_reporting_block_intercepted": true,
+  "limits": [
+    "Chỉ kiểm lát cắt dừng lỗ thật theo thời gian; chưa phải toàn bộ bộ quản lý hoặc EA.",
+    "Nút sửa vị thế và khối báo lỗi được trả lời tại điểm gọi; actualReporter không chạy.",
+    "Phép tính NaN dùng bộ đo SSE2 BothNaN và bộ dữ liệu vật lý; các lệnh khác chạy trong Unicorn."
+  ],
+  "hashes": {
+    "cases": "6a3c796df02e4391e5d5163049f5e90429ea3163ed9bb6bcfb709c3d3483ec94",
+    "original": "a18e1f3ee7e684fb9806cdd037d122d0df9af52a7c9e7f1b5c7fbe30ca2defdb",
+    "mql5": "a18e1f3ee7e684fb9806cdd037d122d0df9af52a7c9e7f1b5c7fbe30ca2defdb"
+  }
+}

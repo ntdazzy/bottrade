@@ -1,0 +1,13 @@
+{
+  "pid": 13656,
+  "started": "2026-10-25T14:06:50.6270401Z",
+  "model": "claude-opus-5-5",
+  "effort": "max",
+  "ultracode_requested": true,
+  "scope": "Write proposed analysis/code only within an explicitly assigned deliverable directory",
+  "output_directory": "dich-nguoc/khoi-phuc/claude-thuc-hien/bot3-real-take-check-20261025-r1",
+  "edit_rule": "Edit(./dich-nguoc/khoi-phuc/claude-thuc-hien/bot3-real-take-check-20261025-r1/**)",
+  "permission_mode": "dontAsk",
+  "prompt_sha256": "237a15a88025654b29f815e5133bbf9d69d1be378ed86b7147ddbed6d406e018",
+  "resume": ""
+}

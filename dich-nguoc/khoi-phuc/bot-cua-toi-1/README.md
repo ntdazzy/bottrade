@@ -1,5 +1,10 @@
 # bot-cua-toi-1
 
+Mới kiểm dừng lỗ thật theo thời gian mua/bán: **492/492 ca khớp**,
+biên dịch **0 lỗi, 0 cảnh báo**. Hàm sửa và khối báo lỗi được cấp trả lời;
+chưa phải toàn quản lý hoặc EA.
+[Phạm vi mới](../PHAN-TICH-NHANH-THAT-BOT-1-3.md).
+
 Mới thêm phần cuối quản lý mức ảo: **1.260/1.260 ca khớp**, gồm cờ có sẵn,
 bộ đếm và đủ 1.500 ô bảng với vé ở đầu/giữa/cuối, trùng hoặc không khớp.
 Biên dịch **0 lỗi, 0 cảnh báo**. Hàm đóng được chặn ở ranh giới;

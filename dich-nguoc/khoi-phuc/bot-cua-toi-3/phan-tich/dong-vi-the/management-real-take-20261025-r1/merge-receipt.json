@@ -1,0 +1,19 @@
+{
+  "parts": {
+    "Buy": {
+      "proposal": "dich-nguoc\\khoi-phuc\\claude-thuc-hien\\bot3-real-take-buy-20261025-r1\\Bot3RealTakeBuy.mqh",
+      "proposal_sha256": "7d45b4b95423c18447331e9d4b108aa51427d103b6ca7b1ef42a65ab9f56d590",
+      "function_sha256": "b47a9c53295edd7da33a936e93d6a2174d236dbe73b440a8d63d267c5d3e92b3"
+    },
+    "Sell": {
+      "proposal": "dich-nguoc\\khoi-phuc\\claude-thuc-hien\\bot3-real-take-sell-20261025-r1\\Bot3RealTakeSell.mqh",
+      "proposal_sha256": "32d5a68ceb75fc77482ba7db300e6de82f1661eee22b9b2b0acd0be84cd75a39",
+      "function_sha256": "34a8f382363a67061906b1f1cbb2dca3e5b1c26d59f05670205396d82f0a574e"
+    }
+  },
+  "source_sha256": "ddb5b1962a873ebadb909946be28912946402e5a3b4e012f24cc264009a70eb1",
+  "function_bodies_changed": false,
+  "independent_read_review": "review_bot3_real_take: no supported mismatch; native ranges buy34564..3491e, sell38aaa..38e48",
+  "runtime_verified": false,
+  "whole_bot_complete": false
+}

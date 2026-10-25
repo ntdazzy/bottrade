@@ -1,0 +1,20 @@
+{
+  "run": "real-take-20261025-r1",
+  "build": "b3-real-take-check-01",
+  "cases": 994,
+  "matched": 994,
+  "failed": 0,
+  "comparison_sha256": "411ede27394ad0ad3587c9803badf8ea8ac5fa374658a7804925e331f49c6c08",
+  "original_result_sha256": "9fa9199d9c59814b51021358c8baa836e0349e0515329cff61313b0705785c83",
+  "mql5_result_sha256": "9fa9199d9c59814b51021358c8baa836e0349e0515329cff61313b0705785c83",
+  "build_receipt_sha256": "355ff73d96fc41b4ae3b7fc63a5500665bd945cd7e7cb423f17e25e4f657d781",
+  "source_identity_rechecked": true,
+  "compile_errors": 0,
+  "compile_warnings": 0,
+  "calculation_and_call_boundaries_only": true,
+  "whole_manager_complete": false,
+  "whole_bot_complete": false,
+  "paired_original_restored_ea_test": false,
+  "report_body_executed": false,
+  "original_ex5_sha256": "ee063d3d87490afe24e2f4ce85f6b05659320e297b102efd70207f71ca2feb83"
+}

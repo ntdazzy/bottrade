@@ -1,5 +1,10 @@
 # Tiến độ luồng bot 1 — 25/10/2026
 
+Mới kiểm dừng lỗ thật theo thời gian mua/bán: **492/492 ca khớp**,
+biên dịch **0 lỗi, 0 cảnh báo**. Hàm sửa và khối báo lỗi được cấp trả lời;
+chưa phải toàn quản lý hoặc EA.
+[Phạm vi mới](../PHAN-TICH-NHANH-THAT-BOT-1-3.md).
+
 ## Cập nhật: kết thúc nhánh ảo
 
 - Bot1ManagementVirtualFinish.mqh đã có nguồn, mô tả từ native trước viết.

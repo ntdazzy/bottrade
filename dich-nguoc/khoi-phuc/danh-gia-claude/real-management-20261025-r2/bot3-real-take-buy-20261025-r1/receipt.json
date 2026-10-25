@@ -1,0 +1,105 @@
+{
+  "run": "bot3-real-take-buy-20261025-r1",
+  "session_id": "ac2ea828-aa1a-423e-99cd-4001b0b4f1c1",
+  "started": "2026-10-25T13:50:13.2969773Z",
+  "snapshot_utc": "2026-10-25T14:30:53.613875+00:00",
+  "status": "delivered-unverified",
+  "response_is_error": false,
+  "terminal_reason": "completed",
+  "job_sha256": "7fc27f19cde7ebdf2fe82c0a1a78a92a67f014cd39ca38f64a52e5eddb063536",
+  "prompt_sha256": "3a6ce17d00675ba6c74e9f5231f67f7b93094fab52093bde3f123da61fa2ba54",
+  "response_sha256": "8b6cc62a078f198de487ad1cb6e5a0062799f49e24efb835158ad865a3ab8c35",
+  "actual_requests": 16,
+  "requests": [
+    {
+      "timestamp": "2026-10-25T13:50:17.522Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T13:50:33.063Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T13:50:40.088Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T13:50:43.927Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T13:50:52.229Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T13:50:57.976Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T13:52:19.290Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T13:52:25.946Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T13:52:31.300Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T13:53:23.963Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T13:53:31.205Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T13:53:33.847Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T13:54:52.759Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T13:54:57.795Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T13:56:05.892Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T13:56:12.156Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    }
+  ],
+  "ultracode_requested": true,
+  "ultracode_runtime_confirmed": null,
+  "journal_prefix_bytes": 1174503,
+  "journal_prefix_sha256": "b1158e716f6828b62397d127c67750b0b147deb46bc133e85a2453e6d0e109e3",
+  "files_sha256": {
+    "dich-nguoc/khoi-phuc/claude-thuc-hien/bot3-real-take-buy-20261025-r1/Bot3RealTakeBuy.mqh": "7d45b4b95423c18447331e9d4b108aa51427d103b6ca7b1ef42a65ab9f56d590",
+    "dich-nguoc/khoi-phuc/claude-thuc-hien/bot3-real-take-buy-20261025-r1/SUMMARY.md": "cc296a3779cd2f298bf526c8136b8f3e347bf87d93736772791128e23015f745"
+  },
+  "source_validated": false,
+  "whole_bot_complete": false
+}

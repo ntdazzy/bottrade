@@ -1,0 +1,13 @@
+{
+  "pid": 1792,
+  "started": "2026-10-25T14:14:59.8056782Z",
+  "model": "claude-opus-5-5",
+  "effort": "max",
+  "ultracode_requested": true,
+  "scope": "Write proposed analysis/code only within an explicitly assigned deliverable directory",
+  "output_directory": "dich-nguoc/khoi-phuc/claude-thuc-hien/bot3-real-slippage-20261025-r1",
+  "edit_rule": "Edit(./dich-nguoc/khoi-phuc/claude-thuc-hien/bot3-real-slippage-20261025-r1/**)",
+  "permission_mode": "dontAsk",
+  "prompt_sha256": "89e3b1eb2a3b1d100a08642cd31a9c51206cc542e09b8adb61aa8bd7ff2d2db3",
+  "resume": ""
+}

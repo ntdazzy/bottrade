@@ -1,0 +1,100 @@
+{
+  "run": "bot3-real-slippage-20261025-r1",
+  "session_id": "b2ac9b21-6c04-4684-abab-634225c0955e",
+  "started": "2026-10-25T14:14:59.8056782Z",
+  "snapshot_utc": "2026-10-25T14:30:53.613875+00:00",
+  "status": "delivered-unverified",
+  "response_is_error": false,
+  "terminal_reason": "completed",
+  "job_sha256": "d94d7d49c9a8d1cc7cc35b5f52c719340d2c3e09ad69371d8c0d28ba0c7dd4fc",
+  "prompt_sha256": "89e3b1eb2a3b1d100a08642cd31a9c51206cc542e09b8adb61aa8bd7ff2d2db3",
+  "response_sha256": "30e3151b87a80461e87f124374181a5d79bc24100b0c948b511d0b87bef632b3",
+  "actual_requests": 15,
+  "requests": [
+    {
+      "timestamp": "2026-10-25T14:15:01.039Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T14:15:19.453Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T14:15:43.643Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T14:15:48.987Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T14:15:59.092Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T14:16:04.831Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T14:16:11.600Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T14:16:18.909Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T14:16:30.047Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T14:16:44.020Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T14:17:41.325Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T14:20:47.214Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T14:21:04.239Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T14:21:11.881Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T14:22:55.689Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    }
+  ],
+  "ultracode_requested": true,
+  "ultracode_runtime_confirmed": null,
+  "journal_prefix_bytes": 1361381,
+  "journal_prefix_sha256": "9cd45b1ad3408582dde27ccebc911c11bd8269962f3c3e2a0617b32a047b8d08",
+  "files_sha256": {
+    "dich-nguoc/khoi-phuc/claude-thuc-hien/bot3-real-slippage-20261025-r1/Bot3ManagementRealSlippage.mqh": "a6b1b923d900032184e3050f13ac694ecb6a82918fadc31265bc4d476853fcd9",
+    "dich-nguoc/khoi-phuc/claude-thuc-hien/bot3-real-slippage-20261025-r1/SUMMARY.md": "9211dac0aa7548fff205c3288e3b5d911d1df789178aee33c86f7f5241cc1bb9"
+  },
+  "source_validated": false,
+  "whole_bot_complete": false
+}

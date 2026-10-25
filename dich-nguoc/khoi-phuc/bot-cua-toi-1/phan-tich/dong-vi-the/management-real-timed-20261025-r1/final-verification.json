@@ -1,0 +1,20 @@
+{
+  "run": "b1-real-timed-20261025-r10",
+  "build": "b1-real-timed-check-01",
+  "cases": 492,
+  "matched": 492,
+  "failed": 0,
+  "comparison_sha256": "4928b9f3c0d08fb7ab78ab83256d75c5e96b910cd7cf61ba4fb4c427f1622ba5",
+  "original_result_sha256": "a18e1f3ee7e684fb9806cdd037d122d0df9af52a7c9e7f1b5c7fbe30ca2defdb",
+  "mql5_result_sha256": "a18e1f3ee7e684fb9806cdd037d122d0df9af52a7c9e7f1b5c7fbe30ca2defdb",
+  "build_receipt_sha256": "fd9253f9a9c633cb12b248eb8e30a47a7ed698a49090c8fb29ab86824d155d93",
+  "source_identity_rechecked": true,
+  "compile_errors": 0,
+  "compile_warnings": 0,
+  "calculation_and_call_boundaries_only": true,
+  "whole_manager_complete": false,
+  "whole_bot_complete": false,
+  "paired_original_restored_ea_test": false,
+  "report_body_executed": false,
+  "original_ex5_sha256": "a3b0de423a06e10ebedc279307b93d7cb9188ba2bb5de77131a913c865b0e922"
+}

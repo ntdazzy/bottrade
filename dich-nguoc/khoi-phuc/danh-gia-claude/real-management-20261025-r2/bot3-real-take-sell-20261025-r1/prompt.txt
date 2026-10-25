@@ -1,0 +1,14 @@
+Viết mã MQL5 theo đặc tả chức năng đã chốt. Không tự tìm thuật toán hay đọc các bản phân tích lịch sử. Chỉ ghi trong thư mục được giao, không sửa nguồn chính/Git, không chạy lệnh/tác tử lồng. Opus5.5 max, Ultracode được yêu cầu. Không TODO/hàm rỗng; chỗ thiếu nói rõ. Codex kiểm và ghép. Include Bot3ManagementPrelude.mqh và Bot3ManagementMessages.mqh. Dùng Bot3RoundPrice, không NormalizeDouble. Mọi biến cài đặt/tick/volumes/index là tham chiếu có thể đổi sau API; position.sl/open_price/volume là giá trị cục bộ không bị API đổi; position.tp được hàm này cập nhật. Các trường dữ liệu không trùng vùng nhớ, chỉ số mảng0..8hợp lệ.
+Chỉghi Bot3RealTakeSell.mqh và SUMMARY.md trong dich-nguoc/khoi-phuc/claude-thuc-hien/bot3-real-take-sell-20261025-r1/.
+bool Bot3AdvanceRealTakeSell(const string &symbol,const double &unit,const double &distance,const double &start,const double anchor,const double &gap,const double &freeze,Bot3ManagedPosition &position,MqlTick &tick,const double &volumes[],const uint &strategy_index,bool &changed,Bot3PendingRequestState &state,Bot3TradeSendOptions &options,const ulong &deviation,uint &error_count,const ulong ticket).
+1. Chỉ tiếp nếu0.0<distance; KHÔNG kiểmthêmTP>0. Chụp quote=tick.bid TRƯỚC DIGITS1; lưu digits1 rồi gọiPOINT.
+2. SauPOINTđọc distance/unitmới; gate=Bot3RoundPrice(distance*unit+(point+position.tp),digits1). Yêu cầu gate<quote. Giữ ngoặc point+TP (khôngTP+point).
+3. Chụp quote2=tick.bid TRƯỚC DIGITS2; sauAPIđọcstart/unitmới, boundary=Bot3RoundPrice(start*unit+anchor,digits2). Yêu cầu boundary<quote2.
+4. Đọc bid/freeze mới; yêu cầu freeze+position.tp<tick.bid. Phía bán cũngdùngBID ởcổngnày, khôngđổi sangask.
+5. HỏiDIGITS3; sauAPI chụp quote3=tick.bid; đọc distance/unitmới, new_tp=Bot3RoundPrice(quote3-distance*unit,digits3). Gánposition.tp=new_tp NGAY.
+6. Đọcgapmới, yêu cầu new_tp<quote3-gap; nếu saitrảfalse nhưnggiữTPmới. Giữquote3từbước5cho cổngnày.
+Sau cổngcuối gọi Bot3ModifyPosition(state,options,ticket,position.sl,position.tp).
+Nếu false: gọi Bot3PrintManagementError("' when setting trailing Exit_TP.  Trying again!",error_count), rồi changed=true; trảfalse. Không đổi thứ tựbáolỗi→cờ, không tínhvolume trongnhánhfalse.
+Nếu Modifytrue: đọcvolumes[strategy_index] mới, z=Bot3RoundPrice(volumes[strategy_index]*0.0,2); rồi changed=true. Nếu !(z<position.volume), false. Nếu đạt minimum=SymbolInfoDouble(symbol,SYMBOL_VOLUME_MIN); nếu !(minimum<=z), false. Nếu đạt Bot3TryClosePosition(state,options,deviation,tick.bid,tick.ask,gap,freeze,ticket), true. KhôngSymbolInfoTick trướcđóng.
+Mọi đường trướcModify giữchangedcũ, kểcảTPđãđượcgánmới. TrueCHỈ khiđếnTryClose; khôngđồngnghĩaModifysuccess. Không đổiSL,ghi bảng,Stamp,kiểmthêm0<TP haytựthêmluật. NaN làmcổngdươngsai; giữ0.0*volume vìInf/NaN. GhiSUMMARY thứtựAPI/đọc/ghi/đầu ra; khôngclaimđãbiêndịch/đãchạy.
+

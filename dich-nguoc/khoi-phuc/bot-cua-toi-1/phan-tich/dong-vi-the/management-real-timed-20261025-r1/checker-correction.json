@@ -1,0 +1,9 @@
+{
+  "failed_run": "b1-real-timed-20261025-r8",
+  "failed_cases": 285,
+  "root_cause": "The derived checker added a second hook at26d20 although vstart.Original already installed one. Each native call produced two events and popped two return addresses, skipping flag code.",
+  "fix": "Removed duplicate hook and fake return fallback. r9 passed492; independent review added transitive source/helper hashes, strict result and saved binary identity. Current final r10 passed492 with the exact same MQL5 function bodies.",
+  "production_algorithm_changed": false,
+  "prior_failed_files_retained": true,
+  "final_run": "b1-real-timed-20261025-r10"
+}

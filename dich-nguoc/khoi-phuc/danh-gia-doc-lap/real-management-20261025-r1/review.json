@@ -1,0 +1,19 @@
+{
+  "reviewer": "review_bot3_real_take",
+  "bot1_timed": {
+    "current_run": "b1-real-timed-20261025-r10",
+    "earlier_review_run": "b1-real-timed-20261025-r9",
+    "supported_numeric_bug": false,
+    "identity_gap": "Four transitive include and two helper hashes missing in r9; root added closure/helpers and reran r10:492/492."
+  },
+  "bot3_take": {
+    "run": "real-take-20261025-r1",
+    "supported_bug": false,
+    "cases": 994,
+    "native_sites": 370,
+    "modify_events": 822,
+    "report_events": 88,
+    "close_attempts": 150
+  },
+  "limits": "Read-only independent review; does not replace the scoped original/MQL5 results, close/modify/report children remain intercepted."
+}

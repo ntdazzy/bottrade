@@ -1,0 +1,55 @@
+{
+  "run": "bot3-real-take-cases-20261025-r1",
+  "session_id": "cc966654-e660-46e4-9d37-e57353abd198",
+  "started": "2026-10-25T14:06:51.8991295Z",
+  "snapshot_utc": "2026-10-25T14:30:53.613875+00:00",
+  "status": "delivered-unverified",
+  "response_is_error": false,
+  "terminal_reason": "completed",
+  "job_sha256": "373cb7073341fd9c64fe2f65431cbba3d7455427daf2bfdd42761ce6b4bc97a3",
+  "prompt_sha256": "56763347b1c0dbf1fba20a412089ed0610caa56f275b3c7f681a283aea40c6ce",
+  "response_sha256": "d77405edc215168c8e3ba64cf43cb32aaef7e5a5b1265f62748d33a3f8618f73",
+  "actual_requests": 6,
+  "requests": [
+    {
+      "timestamp": "2026-10-25T14:06:55.079Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T14:07:02.803Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T14:07:22.698Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T14:24:01.765Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T14:24:42.768Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T14:24:54.783Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    }
+  ],
+  "ultracode_requested": true,
+  "ultracode_runtime_confirmed": null,
+  "journal_prefix_bytes": 1397303,
+  "journal_prefix_sha256": "a5d82610a08496d4030c32bb10a0c97dd52f86d9a1f97bcd2514d222e94a30b4",
+  "files_sha256": {
+    "dich-nguoc/khoi-phuc/claude-thuc-hien/bot3-real-take-cases-20261025-r1/real_take_cases.py": "4c9f83012a96167cbd0acb14d4208737c78800ae338b23b32a6637686536c81f",
+    "dich-nguoc/khoi-phuc/claude-thuc-hien/bot3-real-take-cases-20261025-r1/SUMMARY.md": "5d84dd32349b5783e65ecf3130b0751e13a4fac703a9c0b5a6f47677b01aa673"
+  },
+  "source_validated": false,
+  "whole_bot_complete": false
+}

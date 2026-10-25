@@ -1,0 +1,16 @@
+// Compile-only use of actual terminal API declarations. Do not run this script.
+#property strict
+#include "../../Include/bot-cua-toi-1/Bot1ManagementRealTimed.mqh"
+input bool InvokeFunctions=false;
+void OnStart()
+{
+   if(!InvokeFunctions) { Print("Bot1ManagementRealApiCompile: compile only");return; }
+   Bot1ManagedPosition position;ZeroMemory(position);
+   Bot1PendingRequestState state;ZeroMemory(state);
+   Bot1TradeSendOptions options;ZeroMemory(options);
+   MqlTick tick;ZeroMemory(tick);
+   string symbol="CHECK";double unit=1.,activation=1.,distance=2.,gap=.2,freeze=2.5;
+   int seconds=60;uint error_count=0;ulong ticket=7;
+   Bot1AdvanceTimedBuyStop(symbol,unit,activation,distance,seconds,gap,freeze,position,tick,state,options,error_count,ticket);
+   Bot1AdvanceTimedSellStop(symbol,unit,activation,distance,seconds,gap,freeze,position,tick,state,options,error_count,ticket);
+}

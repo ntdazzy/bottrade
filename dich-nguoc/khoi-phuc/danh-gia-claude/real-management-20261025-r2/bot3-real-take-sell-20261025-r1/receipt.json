@@ -1,0 +1,80 @@
+{
+  "run": "bot3-real-take-sell-20261025-r1",
+  "session_id": "9041ca3e-69af-4b6b-9567-7ef20a47ebcb",
+  "started": "2026-10-25T13:50:14.5893999Z",
+  "snapshot_utc": "2026-10-25T14:30:53.613875+00:00",
+  "status": "delivered-unverified",
+  "response_is_error": false,
+  "terminal_reason": "completed",
+  "job_sha256": "1bebc550322f3324daaffe67e5f720f04111390132fde4c3b9c4b067d586bcc9",
+  "prompt_sha256": "fee56e735ae1fb952c807a7f38b49d440367252eced4ed1b67dbd63ceb3ae598",
+  "response_sha256": "b8275a2f6de317edbf7a23e90f24c78c58d5f5ec7e8dcdcac4586547c90a090c",
+  "actual_requests": 11,
+  "requests": [
+    {
+      "timestamp": "2026-10-25T13:50:17.821Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T13:50:36.030Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T13:50:50.910Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T13:51:04.742Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T13:51:14.346Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T13:51:20.734Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T13:51:28.799Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T13:51:32.674Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T13:54:01.322Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T13:54:13.790Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T13:55:37.482Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    }
+  ],
+  "ultracode_requested": true,
+  "ultracode_runtime_confirmed": null,
+  "journal_prefix_bytes": 1071058,
+  "journal_prefix_sha256": "20542f536db34363f0c756f5e5bb81dfa98458c5971f4a99d7498cfb208f5f13",
+  "files_sha256": {
+    "dich-nguoc/khoi-phuc/claude-thuc-hien/bot3-real-take-sell-20261025-r1/Bot3RealTakeSell.mqh": "32d5a68ceb75fc77482ba7db300e6de82f1661eee22b9b2b0acd0be84cd75a39",
+    "dich-nguoc/khoi-phuc/claude-thuc-hien/bot3-real-take-sell-20261025-r1/SUMMARY.md": "0f2a4ef38193ab687d14d8f163e9c2c4a32333e29c6f0dad5321b93c230715c6"
+  },
+  "source_validated": false,
+  "whole_bot_complete": false
+}

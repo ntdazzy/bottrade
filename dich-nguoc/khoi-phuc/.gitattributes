@@ -237,3 +237,18 @@
 /claude-thuc-hien/bot3-*-audit-*/** -text
 /claude-thuc-hien/bot3-finish-*/** -text
 /danh-gia-claude/management-parallel-*/** -text
+
+# Exact-byte evidence for real timed/take management checks.
+/bot-cua-toi-1/source/MQL5/Include/bot-cua-toi-1/Bot1ManagementReal*.mqh -text
+/bot-cua-toi-1/source/MQL5/Include/bot-cua-toi-1/Bot1ManagementMessages.mqh -text
+/bot-cua-toi-[13]/source/MQL5/Scripts/bot-cua-toi-[13]/Bot[13]ManagementReal*.mq5 -text
+/bot-cua-toi-[13]/tests/check-management-real-*.py -text
+/bot-cua-toi-3/tests/real_take_cases.py -text
+/bot-cua-toi-1/phan-tich/dong-vi-the/management-real-*-20261025-r1/** -text
+/bot-cua-toi-1/bang-chung/bien-dich/b1-real-*/** -text
+/bot-cua-toi-3/bang-chung/bien-dich/b3-real-*/** -text
+/cong-cu/xem-quan-ly-goc.py -text
+/danh-gia-claude/real-management-*/** -text
+/danh-gia-doc-lap/real-management-*/** -text
+/danh-gia-claude/real-management-*/bot3-real-take-*/prompt.txt whitespace=-blank-at-eol,-blank-at-eof,cr-at-eol
+/bot-cua-toi-3/source/MQL5/Include/bot-cua-toi-3/Bot3PriceLevels.mqh -text

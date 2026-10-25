@@ -1,5 +1,11 @@
 # bot-cua-toi-3
 
+Mới kiểm dời chốt lời thật mua/bán: **994/994 ca khớp**,
+biên dịch **0 lỗi, 0 cảnh báo**. Claude viết hai thân hàm và bộ kiểm;
+Codex đối chiếu, giữ nguyên thân rồi ghép. Hàm sửa/đóng và khối báo lỗi
+được cấp trả lời; chưa phải toàn quản lý hoặc EA.
+[Phạm vi mới](../PHAN-TICH-NHANH-THAT-BOT-1-3.md).
+
 Mới thêm phần cuối nhánh ảo: **1.304/1.304 ca** cao/thấp, khóa/bộ đếm
 và **296/296 ca** lưu hai bảng khớp; nhóm dời dừng thật theo thời gian
 khớp **492/492 ca** phần tính/gọi sửa. Tất cả biên dịch sạch. Phần báo
