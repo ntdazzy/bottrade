@@ -1,0 +1,263 @@
+{
+  "cases": 2290,
+  "matched": 1702,
+  "failed": 588,
+  "first_failures": [
+    {
+      "id": 0,
+      "group": "baseline",
+      "buy": 0,
+      "stage": 0,
+      "differences": {
+        "sl": [
+          4636455816377925632,
+          4636596553866280960
+        ],
+        "calls": [
+          3,
+          5
+        ],
+        "ordered_hash": [
+          11880548543771492646,
+          16230683671774804160
+        ]
+      }
+    },
+    {
+      "id": 12,
+      "group": "special/sl=-inf",
+      "buy": 0,
+      "stage": 0,
+      "differences": {
+        "changed": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "id": 13,
+      "group": "special/sl=-1e+19",
+      "buy": 0,
+      "stage": 0,
+      "differences": {
+        "changed": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "id": 14,
+      "group": "special/sl=-100.125",
+      "buy": 0,
+      "stage": 0,
+      "differences": {
+        "changed": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "id": 15,
+      "group": "special/sl=-0",
+      "buy": 0,
+      "stage": 0,
+      "differences": {
+        "changed": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "id": 16,
+      "group": "special/sl=+0",
+      "buy": 0,
+      "stage": 0,
+      "differences": {
+        "changed": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "id": 17,
+      "group": "special/sl=0.01",
+      "buy": 0,
+      "stage": 0,
+      "differences": {
+        "changed": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "id": 18,
+      "group": "special/sl=100.125",
+      "buy": 0,
+      "stage": 0,
+      "differences": {
+        "sl": [
+          4636455816377925632,
+          4636596553866280960
+        ],
+        "calls": [
+          3,
+          5
+        ],
+        "ordered_hash": [
+          11880548543771492646,
+          16230683671774804160
+        ]
+      }
+    },
+    {
+      "id": 19,
+      "group": "special/sl=1e+19",
+      "buy": 0,
+      "stage": 0,
+      "differences": {
+        "sl": [
+          4636455816377925632,
+          4636596553866280960
+        ],
+        "calls": [
+          3,
+          5
+        ],
+        "ordered_hash": [
+          11880548543771492646,
+          16230683671774804160
+        ]
+      }
+    },
+    {
+      "id": 20,
+      "group": "special/sl=inf",
+      "buy": 0,
+      "stage": 0,
+      "differences": {
+        "sl": [
+          4636455816377925632,
+          4636596553866280960
+        ],
+        "calls": [
+          3,
+          5
+        ],
+        "ordered_hash": [
+          11880548543771492646,
+          16230683671774804160
+        ]
+      }
+    },
+    {
+      "id": 21,
+      "group": "special/sl=nan7ff8000000000123",
+      "buy": 0,
+      "stage": 0,
+      "differences": {
+        "changed": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "id": 22,
+      "group": "special/sl=nanfff8000000000456",
+      "buy": 0,
+      "stage": 0,
+      "differences": {
+        "changed": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "id": 23,
+      "group": "special/tp=-inf",
+      "buy": 0,
+      "stage": 0,
+      "differences": {
+        "sl": [
+          4636455816377925632,
+          4636596553866280960
+        ],
+        "calls": [
+          3,
+          5
+        ],
+        "ordered_hash": [
+          11880548543771492646,
+          11432470417215110876
+        ]
+      }
+    },
+    {
+      "id": 24,
+      "group": "special/tp=-1e+19",
+      "buy": 0,
+      "stage": 0,
+      "differences": {
+        "sl": [
+          4636455816377925632,
+          4636596553866280960
+        ],
+        "calls": [
+          3,
+          5
+        ],
+        "ordered_hash": [
+          11880548543771492646,
+          18073891739586982435
+        ]
+      }
+    },
+    {
+      "id": 25,
+      "group": "special/tp=-100.125",
+      "buy": 0,
+      "stage": 0,
+      "differences": {
+        "sl": [
+          4636455816377925632,
+          4636596553866280960
+        ],
+        "calls": [
+          3,
+          5
+        ],
+        "ordered_hash": [
+          11880548543771492646,
+          18014949414907666528
+        ]
+      }
+    }
+  ],
+  "result_sha256": {
+    "original": "dde0e07dfdbf5b58ea1ccc82ddff987682aa9bbc04127d858e63fa15244054b1",
+    "mql5": "3c6ffccbda38e8d8509fa1577fd3a7d00fd4388cd8cf5f7380c4c1ef54d54775"
+  },
+  "calculation_slices_only": true,
+  "whole_manager_complete": false,
+  "whole_bot_complete": false,
+  "modify_child_intercepted": true,
+  "close_child_intercepted": true,
+  "original_report_text_code_executed": true,
+  "error_text_helper_executed": true,
+  "successful_string_allocation_supplied": true,
+  "signed_decimal_cast_supplied": true,
+  "original_ex5_changed": false,
+  "limits": [
+    "Six separate real blocks; not a full manager, event loop, EA or paired terminals run.",
+    "Modify and try-close receive supplied replies. The native close ticket is read from RCX; its other context values are checked as MQL5 forwarding only, not by executing the original close child.",
+    "Native error-code selection/counter, string building and Print calls execute. Signed decimal conversion and successful string allocation/free are supplied, not allocation failures.",
+    "Both-NaN arithmetic uses the measured Windows SSE2 fixtures; other native instructions execute in Unicorn. No physical whole-original or MXCSR-status comparison."
+  ]
+}

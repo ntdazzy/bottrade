@@ -1,0 +1,12 @@
+Viết duy nhất Bot3ManagementRealCounter.mqh và SUMMARY.md trong thư mục này. Viết theo chức năng đã chốt dưới đây. Không đọc phân tích lịch sử/tự tìmthuậttoán; không sửa nguồn chính/Git/chạy lệnh/tác tử khác. Codexkiểm/ghép/chạy. Opus5.5max,Ultracodeyêucầu. Khôngclaimđãbiêndịch/chạy.
+IncludeBot3ManagementPrelude.mqh. DùngBot3RoundPrice,khôngNormalizeDouble. Thamchiếucàiđặt/tick/counter cóthểđổi sauAPI; position.sl do hàmghi, tp/open_price cục bộkhôngbịAPIđổi. Khôngtrùngvùngnhớ.
+Hai hàmvoid Bot3AdvanceRealCounterBuyStop/SellStop,giao diệnchung:
+(const string &symbol,const uchar &enabled,const double &reference_setting,const int &minimum_steps,const double &step_distance,const double &unit,const double &copied_step,const double selected_anchor,const double &gap,const double &freeze,int &counter,Bot3ManagedPosition &position,MqlTick &tick,bool &changed,Bot3PendingRequestState &state,Bot3TradeSendOptions &options,const ulong ticket).
+1 Nếuchangedđãtrue,thoát. Nếuenabled!=1thoát(giữfalse). counter=(int)((uint)counter+1) đểtràn32bit; luônlưutăngngay,kểcảcổngsaukhôngđạt.
+2 Chụpquote=buy?tick.bid:tick.ask vàu=unit trướcAPInào; product=step_distance*u. BUY cần (product+position.sl)+gap<quote và quote<position.tp-freeze. SELL cần quote<(position.sl-product)-gap và freeze+position.tp<quote. CổngcóthứtựNaNfalse; khôngPOINT.
+3 reference_settingbằng+0/-0thìbỏcổngmốc. Khác0 hoặcNaN: off=u*copied_step; BUYcần selected_anchor+off<quote; SELLcầnquote<selected_anchor-off. Haihướngđềudùngselected_anchor cốđịnh,khôngđổi sangreference_setting.
+4 Cầncounter>=minimum_steps,socódấu. Chưatớiđâyđều giữcountertăngvàchangedfalse.
+5 DIGITS1; sauAPI đọcstep_distance/unitmới,BUYcandidate=Round(step_distance*unit+position.sl,d1) [product+SL];SELLcandidate=Round(position.sl-step_distance*unit,d1). CầnBUYSLcũ<candidate;SELLcandidate<SLcũ. Saisẽkhôngresetcounter/SL/flag.
+6 Đạtcổng5thì counter=0 NGAYtrướcDIGITS2. HỏiDIGITS2;rồibuynew_sl=Round(position.sl+step_distance*unit,d2) [SL+product,khácngoặc/thứtựvới5];sellnew_sl=Round(position.sl-step_distance*unit,d2). GánSLmớingay.
+7 Bot3ModifyPosition(state,options,ticket,position.sl,position.tp); bỏqua kếtquả,changed=true. KHÔNGbáolỗi,hỏigiá/POINT,gap/freezegate saulàmtròn,khốilượng,đóng,Stamp,mảng. Sửafalsevẫngiữcounter0/SLmới/changedtrue. NếuAPIthaycounterởDIGITS2 thì giữgiátrịAPIghi,khôngresetlần2.
+Không thêm luật hoặc rútgọnbiểu thứcsốthực. SUMMARY ghiđủAPI/đếm/đầu ra,chưachạy.

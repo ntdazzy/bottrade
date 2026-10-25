@@ -1,0 +1,17 @@
+{
+  "lock_prefix": {
+    "rva": "0x5e290",
+    "kind": "descriptor",
+    "text": "error when setting breakeven: '"
+  },
+  "lock_suffix": {
+    "rva": "0x5e2ac",
+    "kind": "raw",
+    "text": "' ..'Exit_BE_start_' to close to 'Exit_BE_extra_pips_' ..trying again!"
+  },
+  "hit_warning": {
+    "rva": "0x5ded0",
+    "kind": "descriptor",
+    "text": "Closing with virtual SL"
+  }
+}

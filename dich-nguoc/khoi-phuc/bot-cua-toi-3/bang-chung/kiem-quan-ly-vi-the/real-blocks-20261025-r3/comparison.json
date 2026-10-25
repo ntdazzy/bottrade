@@ -1,0 +1,26 @@
+{
+  "cases": 2290,
+  "matched": 2290,
+  "failed": 0,
+  "first_failures": [],
+  "result_sha256": {
+    "original": "3c6ffccbda38e8d8509fa1577fd3a7d00fd4388cd8cf5f7380c4c1ef54d54775",
+    "mql5": "3c6ffccbda38e8d8509fa1577fd3a7d00fd4388cd8cf5f7380c4c1ef54d54775"
+  },
+  "calculation_slices_only": true,
+  "whole_manager_complete": false,
+  "whole_bot_complete": false,
+  "modify_child_intercepted": true,
+  "close_child_intercepted": true,
+  "original_report_text_code_executed": true,
+  "error_text_helper_executed": true,
+  "successful_string_allocation_supplied": true,
+  "signed_decimal_cast_supplied": true,
+  "original_ex5_changed": false,
+  "limits": [
+    "Six separate real blocks; not a full manager, event loop, EA or paired terminals run.",
+    "Modify and try-close receive supplied replies. The native close ticket is read from RCX; its other context values are checked as MQL5 forwarding only, not by executing the original close child.",
+    "Native error-code selection/counter, string building and Print calls execute. Signed decimal conversion and successful string allocation/free are supplied, not allocation failures.",
+    "Both-NaN arithmetic uses the measured Windows SSE2 fixtures; other native instructions execute in Unicorn. No physical whole-original or MXCSR-status comparison."
+  ]
+}

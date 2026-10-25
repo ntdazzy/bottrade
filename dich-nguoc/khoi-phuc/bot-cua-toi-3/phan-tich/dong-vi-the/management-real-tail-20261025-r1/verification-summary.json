@@ -1,0 +1,44 @@
+{
+  "run": "real-blocks-20261025-r3",
+  "cases": 2290,
+  "matched": 2290,
+  "failed": 0,
+  "groups": {
+    "0": 536,
+    "1": 400,
+    "2": 352,
+    "3": 334,
+    "4": 358,
+    "5": 310
+  },
+  "api_events": {
+    "4": 2008,
+    "3": 4873,
+    "5": 1248,
+    "13": 416,
+    "6": 82,
+    "7": 82
+  },
+  "native_error_helper_cases": 254,
+  "supplied_signed_cast_calls": 222,
+  "native_instructions": 2097,
+  "result_sha256": {
+    "original": "3c6ffccbda38e8d8509fa1577fd3a7d00fd4388cd8cf5f7380c4c1ef54d54775",
+    "mql5": "3c6ffccbda38e8d8509fa1577fd3a7d00fd4388cd8cf5f7380c4c1ef54d54775"
+  },
+  "comparison_sha256": "894a982569267d06c66633fc7b88956194c53272a6b45c5dc7f79a17545ac770",
+  "build": "b3-real-blocks-check-01",
+  "build_receipt_sha256": "ae4e3ba1570955d2824292d27de0c86bb40fe1e11944826300bd77b858c7dcaa",
+  "compile_errors": 0,
+  "compile_warnings": 0,
+  "source_bodies_changed": false,
+  "whole_manager_complete": false,
+  "whole_bot_complete": false,
+  "paired_terminal_ea_test": false,
+  "limits": [
+    "Six separate real blocks; not a full manager, event loop, EA or paired terminals run.",
+    "Modify and try-close receive supplied replies. The native close ticket is read from RCX; its other context values are checked as MQL5 forwarding only, not by executing the original close child.",
+    "Native error-code selection/counter, string building and Print calls execute. Signed decimal conversion and successful string allocation/free are supplied, not allocation failures.",
+    "Both-NaN arithmetic uses the measured Windows SSE2 fixtures; other native instructions execute in Unicorn. No physical whole-original or MXCSR-status comparison."
+  ]
+}

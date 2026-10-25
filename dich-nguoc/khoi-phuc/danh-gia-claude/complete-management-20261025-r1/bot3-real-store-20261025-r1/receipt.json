@@ -1,0 +1,60 @@
+{
+  "run": "bot3-real-store-20261025-r1",
+  "session_id": "cb7ccb00-5944-46f5-b04b-d2ecdf703a0f",
+  "started": "2026-10-25T14:45:59.8547993Z",
+  "snapshot_utc": "2026-10-25T15:31:06.866692+00:00",
+  "status": "delivered-unverified",
+  "response_is_error": false,
+  "terminal_reason": "completed",
+  "job_sha256": "60bca345f4a74def9cd9d9392267c5bce2aa8bd27b2c94df7d15b84aa17b9d6f",
+  "prompt_sha256": "0164ce1d5fa88a4913e6b88268cec8282101b3500262c352be6c84698f991acd",
+  "response_sha256": "17d3f4c26cc5add248e585e005050d79b7e74fe7301839136cfa0c239bcefae9",
+  "actual_requests": 7,
+  "requests": [
+    {
+      "timestamp": "2026-10-25T14:46:03.084Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T14:47:21.772Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T14:47:36.356Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T14:48:03.613Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T14:50:52.110Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T14:51:15.602Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T14:51:47.213Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    }
+  ],
+  "ultracode_requested": true,
+  "ultracode_runtime_confirmed": null,
+  "journal_prefix_bytes": 963466,
+  "journal_prefix_sha256": "4d0fbda4e75c8f5640ac852005b30b6616f17794f79c202665c208408d6ea231",
+  "files_sha256": {
+    "dich-nguoc/khoi-phuc/claude-thuc-hien/bot3-real-store-20261025-r1/Bot3ManagementRealStore.mqh": "c94a1cc6008b71886ff1667fb84bbe0def370d453ad32d47bca4dab808477c6b",
+    "dich-nguoc/khoi-phuc/claude-thuc-hien/bot3-real-store-20261025-r1/SUMMARY.md": "3f937452c0a57c31f933228b854214339f16abb6c93b6905bd2546c6886602f0"
+  },
+  "source_validated": false,
+  "whole_bot_complete": false
+}

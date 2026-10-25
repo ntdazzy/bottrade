@@ -1,5 +1,10 @@
 # bot-cua-toi-3
 
+Đã ghép nguồn quản lý mua/bán thật/ảo và vòng nhiều vị thế, biên dịch
+**0 lỗi, 0 cảnh báo**; chưa chạy so toàn luồng ghép. Sáu khối thật vừa
+khớp **2.290/2.290 ca**, gồm thân đổi lỗi/ghép/in chuỗi gốc.
+[Phạm vi mới và phần còn thiếu](../PHAN-TICH-GHEP-QUAN-LY-BOT-3.md).
+
 Mới kiểm dời chốt lời thật mua/bán: **994/994 ca khớp**,
 biên dịch **0 lỗi, 0 cảnh báo**. Claude viết hai thân hàm và bộ kiểm;
 Codex đối chiếu, giữ nguyên thân rồi ghép. Hàm sửa/đóng và khối báo lỗi

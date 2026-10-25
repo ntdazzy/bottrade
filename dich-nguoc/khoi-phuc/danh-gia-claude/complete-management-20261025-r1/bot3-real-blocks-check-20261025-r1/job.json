@@ -1,0 +1,13 @@
+{
+  "pid": 25432,
+  "started": "2026-10-25T14:51:22.6651934Z",
+  "model": "claude-opus-5-5",
+  "effort": "max",
+  "ultracode_requested": true,
+  "scope": "Write proposed analysis/code only within an explicitly assigned deliverable directory",
+  "output_directory": "dich-nguoc/khoi-phuc/claude-thuc-hien/bot3-real-blocks-check-20261025-r1",
+  "edit_rule": "Edit(./dich-nguoc/khoi-phuc/claude-thuc-hien/bot3-real-blocks-check-20261025-r1/**)",
+  "permission_mode": "dontAsk",
+  "prompt_sha256": "07bfc4f6902868239f49ad92b3397c6692bfbf70589fdb441e7b03916f32def7",
+  "resume": ""
+}

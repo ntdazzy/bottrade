@@ -1,0 +1,17 @@
+{
+  "source_marker": "DoubleText",
+  "source_expression": "return (string)value, value is const double",
+  "function_rva": "0x3390",
+  "call": {
+    "site_rva": "0x341b",
+    "target_rva": "0x7cf6c0",
+    "rdx_constant": null,
+    "r8_constant": 88,
+    "transfer": "call"
+  },
+  "calibration_sha256": "2892d99b58583c93689b57b1fa776ebda34a99620d032cc0c8205135e1fff54e",
+  "engine_sha256": "5033d9d45d669cebd735e8a6be20b54d74b75274f885c9a0e48e52d872104efb",
+  "runner_verified": true,
+  "only_anchor_executed": true,
+  "scope": "Known-source compiled cast call signature only; decimal text still comes from MT5."
+}

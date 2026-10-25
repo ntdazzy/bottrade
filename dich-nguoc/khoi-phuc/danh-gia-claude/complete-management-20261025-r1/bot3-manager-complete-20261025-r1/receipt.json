@@ -1,0 +1,145 @@
+{
+  "run": "bot3-manager-complete-20261025-r1",
+  "session_id": "6e1adf20-4040-4bd9-abc1-4b8fb9d15814",
+  "started": "2026-10-25T15:14:10.1572214Z",
+  "snapshot_utc": "2026-10-25T15:31:06.866692+00:00",
+  "status": "delivered-unverified",
+  "response_is_error": false,
+  "terminal_reason": "completed",
+  "job_sha256": "b2cfa238e1efde9722a16f28d68ada2a2bd09ca005814239a0799fe84b9797c8",
+  "prompt_sha256": "1a15b8aea3bbb8ba37d99182e0c5b06ef67bfbd39e8400c15b2e64a3d78dd4cb",
+  "response_sha256": "ac4418284d4005ba92bfc3d90e1e789ef3a8c5cf549bf37ff8d6f2df426b4992",
+  "actual_requests": 24,
+  "requests": [
+    {
+      "timestamp": "2026-10-25T15:14:13.364Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T15:14:27.406Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T15:14:33.854Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T15:14:41.457Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T15:14:47.749Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T15:14:51.006Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T15:14:54.445Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T15:15:00.079Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T15:15:11.187Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T15:15:14.088Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T15:15:19.160Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T15:15:26.235Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T15:15:37.220Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T15:15:48.452Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T15:15:56.488Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T15:16:05.113Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T15:16:14.866Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T15:16:19.994Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T15:19:55.617Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T15:20:04.217Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T15:26:16.008Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T15:26:26.105Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T15:26:33.509Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T15:28:17.776Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    }
+  ],
+  "ultracode_requested": true,
+  "ultracode_runtime_confirmed": null,
+  "journal_prefix_bytes": 2023853,
+  "journal_prefix_sha256": "8fab5e623bf344724506efee0d39ea185612adbac8204eb51a8a5428de596d95",
+  "files_sha256": {
+    "dich-nguoc/khoi-phuc/claude-thuc-hien/bot3-manager-complete-20261025-r1/Bot3PositionManagement.mqh": "8998b186e3f1520b7664b7fac06e5aecf0c17f66a5607843122e1cb8a9c5800b",
+    "dich-nguoc/khoi-phuc/claude-thuc-hien/bot3-manager-complete-20261025-r1/SUMMARY.md": "ea1884f5253310701a3c2cf559f540503baaa4cc416b90e14bb0000aeb789bb0"
+  },
+  "source_validated": false,
+  "whole_bot_complete": false
+}

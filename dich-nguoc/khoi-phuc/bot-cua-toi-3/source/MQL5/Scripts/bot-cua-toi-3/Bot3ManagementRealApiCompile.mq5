@@ -5,6 +5,9 @@
 #include "../../Include/bot-cua-toi-3/Bot3ManagementRealTake.mqh"
 #include "../../Include/bot-cua-toi-3/Bot3ManagementRealSlippage.mqh"
 #include "../../Include/bot-cua-toi-3/Bot3ManagementRealHighLow.mqh"
+#include "../../Include/bot-cua-toi-3/Bot3ManagementRealLock.mqh"
+#include "../../Include/bot-cua-toi-3/Bot3ManagementRealCounter.mqh"
+#include "../../Include/bot-cua-toi-3/Bot3ManagementRealStore.mqh"
 #include "../../Include/bot-cua-toi-3/Bot3ManagementVirtualFinishFlow.mqh"
 input bool InvokeFunctions=false;
 void OnStart()
@@ -21,6 +24,7 @@ void OnStart()
    double current=95.,take=120.,copied=.5,levels[9];ArrayInitialize(levels,100.);
    bool changed=false;
    int enabled=1,gap_count=1;uchar eligible=1,before_open=0,shift=0;
+   int minimum_steps=2;uchar step_enabled=1;
    Bot3AdvanceTimedBuyStop(symbol,unit,activation,distance,seconds,gap,freeze,position,tick,state,options,error_count,ticket);
    Bot3AdvanceTimedSellStop(symbol,unit,activation,distance,seconds,gap,freeze,position,tick,state,options,error_count,ticket);
    Bot3AdvanceDistanceBuyStop(symbol,unit,distance,distance,distance,distance,100.,gap,freeze,position,tick,
@@ -39,6 +43,13 @@ void OnStart()
                                  levels,index,position,tick,changed,state,options,error_count,ticket);
    Bot3AdvanceHighLowRealSellStop(symbol,enabled,eligible,gap_count,unit,before_open,shift,gap,freeze,
                                   levels,index,position,tick,changed,state,options,error_count,ticket);
+   Bot3AdvanceRealLockBuyStop(symbol,distance,distance,unit,gap,freeze,position,tick,changed,state,options,error_count,ticket);
+   Bot3AdvanceRealLockSellStop(symbol,distance,distance,unit,gap,freeze,position,tick,changed,state,options,error_count,ticket);
+   Bot3AdvanceRealCounterBuyStop(symbol,step_enabled,distance,minimum_steps,distance,unit,copied,
+                                 100.,gap,freeze,counter,position,tick,changed,state,options,ticket);
+   Bot3AdvanceRealCounterSellStop(symbol,step_enabled,distance,minimum_steps,distance,unit,copied,
+                                  100.,gap,freeze,counter,position,tick,changed,state,options,ticket);
+   Bot3StoreRealStop(symbol,95.,current,(double)(long)ticket,table);
    Bot3FinishVirtualManagement(true,symbol,settings,unit,gap,freeze,100.,copied,position,tick,levels,index,
                                current,take,changed,counter,95.,120.,(long)ticket,table,state,options,deviation);
 }

@@ -1,0 +1,36 @@
+{
+  "parts": [
+    {
+      "part": "lock",
+      "proposal": "dich-nguoc\\khoi-phuc\\claude-thuc-hien\\bot3-real-lock-20261025-r1\\Bot3ManagementRealLock.mqh",
+      "source": "dich-nguoc\\khoi-phuc\\bot-cua-toi-3\\source\\MQL5\\Include\\bot-cua-toi-3\\Bot3ManagementRealLock.mqh",
+      "proposal_sha256": "d758efd7c221405e9d575dbd3f4acecb52724f1131fc45c856ac5a1168f0e4cf",
+      "source_sha256": "d758efd7c221405e9d575dbd3f4acecb52724f1131fc45c856ac5a1168f0e4cf",
+      "changed": false,
+      "root_read_review": true,
+      "runtime_verified": false
+    },
+    {
+      "part": "counter",
+      "proposal": "dich-nguoc\\khoi-phuc\\claude-thuc-hien\\bot3-real-counter-20261025-r1\\Bot3ManagementRealCounter.mqh",
+      "source": "dich-nguoc\\khoi-phuc\\bot-cua-toi-3\\source\\MQL5\\Include\\bot-cua-toi-3\\Bot3ManagementRealCounter.mqh",
+      "proposal_sha256": "265c9a17d395c44902f749a47f10993aae2b938bd8be61a8e2ef6cc3b8f16e34",
+      "source_sha256": "265c9a17d395c44902f749a47f10993aae2b938bd8be61a8e2ef6cc3b8f16e34",
+      "changed": false,
+      "root_read_review": true,
+      "runtime_verified": false
+    },
+    {
+      "part": "store",
+      "proposal": "dich-nguoc\\khoi-phuc\\claude-thuc-hien\\bot3-real-store-20261025-r1\\Bot3ManagementRealStore.mqh",
+      "source": "dich-nguoc\\khoi-phuc\\bot-cua-toi-3\\source\\MQL5\\Include\\bot-cua-toi-3\\Bot3ManagementRealStore.mqh",
+      "proposal_sha256": "c94a1cc6008b71886ff1667fb84bbe0def370d453ad32d47bca4dab808477c6b",
+      "source_sha256": "c94a1cc6008b71886ff1667fb84bbe0def370d453ad32d47bca4dab808477c6b",
+      "changed": false,
+      "root_read_review": true,
+      "runtime_verified": false
+    }
+  ],
+  "whole_manager_complete": false,
+  "whole_bot_complete": false
+}

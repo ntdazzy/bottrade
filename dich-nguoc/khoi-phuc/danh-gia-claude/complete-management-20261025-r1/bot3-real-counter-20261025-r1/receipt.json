@@ -1,0 +1,85 @@
+{
+  "run": "bot3-real-counter-20261025-r1",
+  "session_id": "b23ecf75-fe1a-4b2d-8df5-231651215b6f",
+  "started": "2026-10-25T14:45:58.5665247Z",
+  "snapshot_utc": "2026-10-25T15:31:06.866692+00:00",
+  "status": "delivered-unverified",
+  "response_is_error": false,
+  "terminal_reason": "completed",
+  "job_sha256": "e49f5db559c1e66ab7cc3acf34f2bc989361fe1cb526a2cdddd4c185ddfc78c3",
+  "prompt_sha256": "14e9870438ad2543258d5e4fdd9fb70a72aa7ea365a3c1ebd03d27ba897f8151",
+  "response_sha256": "17e1263fefe2dfc20002462949836d689b62760ddd1957fe796b618f3c7c67de",
+  "actual_requests": 12,
+  "requests": [
+    {
+      "timestamp": "2026-10-25T14:46:01.759Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T14:46:20.030Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T14:46:34.726Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T14:46:41.079Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T14:46:50.630Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T14:46:56.872Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T14:47:04.441Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T14:47:08.819Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T14:47:14.285Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T14:51:16.437Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T14:51:27.343Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-25T14:52:49.125Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    }
+  ],
+  "ultracode_requested": true,
+  "ultracode_runtime_confirmed": null,
+  "journal_prefix_bytes": 1134441,
+  "journal_prefix_sha256": "a26de060525b8c84e864ab48f83d61d3cff6dbf8191a1ff871577d159c156b1a",
+  "files_sha256": {
+    "dich-nguoc/khoi-phuc/claude-thuc-hien/bot3-real-counter-20261025-r1/Bot3ManagementRealCounter.mqh": "265c9a17d395c44902f749a47f10993aae2b938bd8be61a8e2ef6cc3b8f16e34",
+    "dich-nguoc/khoi-phuc/claude-thuc-hien/bot3-real-counter-20261025-r1/SUMMARY.md": "7305da5c58ad3abc51977350dd47ee9beeecc24256ce351c0da5b67f34d6042e"
+  },
+  "source_validated": false,
+  "whole_bot_complete": false
+}

@@ -1,0 +1,9 @@
+{
+  "case": 1230,
+  "stage": 1,
+  "buy": 0,
+  "group": "scenario/scenario=0,modify_ok=0,prior_changed=0,minimum=+0",
+  "error": "UC_ERR_FETCH_UNMAPPED at RIP0 while entering original sell reporting string append: checker had RBP0, but caller preserves base+4a0.",
+  "algorithm_changed": false,
+  "original_result_complete": false
+}

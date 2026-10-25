@@ -1,0 +1,10 @@
+{
+  "reviewer": "review_real_blocks_proof",
+  "run": "real-blocks-20261025-r3",
+  "supported_material_bug": false,
+  "cases": 2290,
+  "matched": 2290,
+  "printed_events": 416,
+  "native_error_helper_cases": 254,
+  "scope": "Read-only independent review of six separate real blocks and their case/runner/native checker evidence. Full manager and EA are not covered."
+}

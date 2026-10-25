@@ -1,0 +1,19 @@
+{
+  "parts": [
+    {
+      "proposal": "dich-nguoc\\khoi-phuc\\claude-thuc-hien\\bot3-real-hit-start-20261025-r1\\Bot3ManagementRealStart.mqh",
+      "source": "dich-nguoc\\khoi-phuc\\bot-cua-toi-3\\source\\MQL5\\Include\\bot-cua-toi-3\\Bot3ManagementRealStart.mqh",
+      "sha256": "c310f60f1ebe94da29f4adf6d93824a2494f3ee855df894913c2e61fbaad0477",
+      "changed": false
+    },
+    {
+      "proposal": "dich-nguoc\\khoi-phuc\\claude-thuc-hien\\bot3-manager-complete-20261025-r1\\Bot3PositionManagement.mqh",
+      "source": "dich-nguoc\\khoi-phuc\\bot-cua-toi-3\\source\\MQL5\\Include\\bot-cua-toi-3\\Bot3PositionManagement.mqh",
+      "sha256": "8998b186e3f1520b7664b7fac06e5aecf0c17f66a5607843122e1cb8a9c5800b",
+      "changed": false
+    }
+  ],
+  "compile_verified": false,
+  "runtime_verified": false,
+  "whole_bot_complete": false
+}
