@@ -120,3 +120,7 @@ Các đoạn đầu của quản lý vị thế cũng đã được kiểm riên
 nhánh bắt đầu dừng ảo; cả ba lượt khớp mã gốc/MQL5, biên dịch 0 lỗi/
 0 cảnh báo. Đây chưa phải hai hàm quản lý đầy đủ; các nhánh dời dừng
 còn lại, nơi gọi, điều phối và toàn EA vẫn mở.
+
+Trong 924 ca dừng ảo có 364 ca đầu nhánh, 156 ca theo thời gian,
+220 ca theo khoảng cách và 184 ca kiểm trượt giá. Các ca này dùng
+dịch vụ con giả lập ở ranh giới lời gọi; chưa chứng minh giao dịch thật.
