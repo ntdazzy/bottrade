@@ -1,0 +1,14 @@
+{
+  "cases": 7,
+  "matched": 7,
+  "failed": 0,
+  "first_failures": [],
+  "hashes": {
+    "baseline.json": "8263772ae138a3322412bedede15d59a51cb7cb81feb8efc66b08ab39a215b8a",
+    "original-results.bin": "b338b8830e685c47136efd91ec9b126991c55b6699dcd0fe1a7d73d475778875",
+    "mql5-results.bin": "b338b8830e685c47136efd91ec9b126991c55b6699dcd0fe1a7d73d475778875",
+    "script-status.bin": "4e65285e650a360f443a4924e7caee49f419179d9613682c162ab6c5ee39046e"
+  },
+  "whole_bot_complete": false,
+  "scope": "Initial seven-step sequence only: meaningful return bits, all1500 table doubles,guard,reported ticket,array length and ordered SDK-call hashes. SDK values supplied. No positive-position scan,full-table path,array contents/failure,invalid numbers,source error locations,all branches,tester or full EA proof."
+}

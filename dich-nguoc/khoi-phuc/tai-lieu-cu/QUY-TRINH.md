@@ -23,6 +23,9 @@ vi EX5, gồm kiểu số, thứ tự, làm tròn và tác dụng phụ.
 Theo yêu cầu hiện tại, Claude là người làm chính, nhận khoảng 95%
 phần việc phân tích, viết mã và bộ kiểm. Codex quản lý, chia phần,
 theo dõi, tự đối chiếu với bot gốc và kiểm kết quả trước khi ghép.
+Ngoại lệ được người dùng xác nhận ngày 25/10/2026: Codex trực tiếp làm
+các phần Claude từ chối, gồm phân tích, viết mã và bộ kiểm; Claude làm
+các phần còn nhận. Không đổi cách hỏi để vượt việc từ chối.
 Giao từng phần rõ đầu vào/đầu ra và nêu đúng bối cảnh; không yêu cầu
 vượt biện pháp bảo vệ. Bản đề xuất của Claude chưa phải kết quả đã đạt.
 Khi đã ghép đủ, phải so toàn bộ bot và toàn bộ cài đặt/hiển thị, kể cả

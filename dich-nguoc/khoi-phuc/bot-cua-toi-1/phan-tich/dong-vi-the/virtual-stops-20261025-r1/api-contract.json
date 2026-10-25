@@ -1,0 +1,251 @@
+{
+  "bot": 1,
+  "engine_sha256": "5033d9d45d669cebd735e8a6be20b54d74b75274f885c9a0e48e52d872104efb",
+  "original_ex5_sha256": "a3b0de423a06e10ebedc279307b93d7cb9188ba2bb5de77131a913c865b0e922",
+  "analysis_sha256": "25540106c233d53aa480db5f4bd4b1957944262f8d0afbf87145002fdcde4a0c",
+  "calibration_sha256": "dcb30c260ea6ac9938716f00513c6ed8c218723309715dced290a08f48e397c1",
+  "probe_analysis_sha256": "611aaa401d869aaa7494d5133471bc024f984842249c4101c49901087f559a35",
+  "probe_source_sha256": "83fb498fe4fc50d8fb3cf2ba6e6f61c5321d80444bbc1e7226dccbf87e64df17",
+  "probe_capture_sha256": "1d7363c471b4da2789dce005323ac624281530b356a50c14450550b19f935f8a",
+  "array_resize_reference": {
+    "function_rva": "0x57d0",
+    "call_rva": "0x5872",
+    "sdk_rva": "0x7aa0e0",
+    "function_bytes_sha256": "f1101ce1403ac132694e05e207cb419b1da7ce801b95026201f9b04768a8c975",
+    "source_body": "double a[]; return ArrayResize(a,(int)k);",
+    "arguments": [
+      "RCX=context",
+      "RDX=array descriptor",
+      "R8D=int32 requested length",
+      "R9D=0 reserve"
+    ],
+    "instructions": [
+      {
+        "rva": "0x57d0",
+        "bytes": "56",
+        "text": "push rsi"
+      },
+      {
+        "rva": "0x57d1",
+        "bytes": "57",
+        "text": "push rdi"
+      },
+      {
+        "rva": "0x57d2",
+        "bytes": "53",
+        "text": "push rbx"
+      },
+      {
+        "rva": "0x57d3",
+        "bytes": "4883ec60",
+        "text": "sub rsp, 0x60"
+      },
+      {
+        "rva": "0x57d7",
+        "bytes": "48b840f4fd2b09020000",
+        "text": "movabs rax, 0x2092bfdf440"
+      },
+      {
+        "rva": "0x57e1",
+        "bytes": "48bf5892812709020000",
+        "text": "movabs rdi, 0x20927819258"
+      },
+      {
+        "rva": "0x57eb",
+        "bytes": "4889ce",
+        "text": "mov rsi, rcx"
+      },
+      {
+        "rva": "0x57ee",
+        "bytes": "ba02000000",
+        "text": "mov edx, 2"
+      },
+      {
+        "rva": "0x57f3",
+        "bytes": "41b801000000",
+        "text": "mov r8d, 1"
+      },
+      {
+        "rva": "0x57f9",
+        "bytes": "41b908005900",
+        "text": "mov r9d, 0x590008"
+      },
+      {
+        "rva": "0x57ff",
+        "bytes": "4889442420",
+        "text": "mov qword ptr [rsp + 0x20], rax"
+      },
+      {
+        "rva": "0x5804",
+        "bytes": "48b8f0497953f67f0000",
+        "text": "movabs rax, 0x7ff6537949f0"
+      },
+      {
+        "rva": "0x580e",
+        "bytes": "4889f9",
+        "text": "mov rcx, rdi"
+      },
+      {
+        "rva": "0x5811",
+        "bytes": "ffd0",
+        "text": "call rax"
+      },
+      {
+        "rva": "0x5813",
+        "bytes": "48b85800010008000000",
+        "text": "movabs rax, 0x800010058"
+      },
+      {
+        "rva": "0x581d",
+        "bytes": "488d5c2428",
+        "text": "lea rbx, [rsp + 0x28]"
+      },
+      {
+        "rva": "0x5822",
+        "bytes": "4889f9",
+        "text": "mov rcx, rdi"
+      },
+      {
+        "rva": "0x5825",
+        "bytes": "4189f0",
+        "text": "mov r8d, esi"
+      },
+      {
+        "rva": "0x5828",
+        "bytes": "4531c9",
+        "text": "xor r9d, r9d"
+      },
+      {
+        "rva": "0x582b",
+        "bytes": "4889442428",
+        "text": "mov qword ptr [rsp + 0x28], rax"
+      },
+      {
+        "rva": "0x5830",
+        "bytes": "48b8e0a07853f67f0000",
+        "text": "movabs rax, 0x7ff65378a0e0"
+      },
+      {
+        "rva": "0x583a",
+        "bytes": "4889da",
+        "text": "mov rdx, rbx"
+      },
+      {
+        "rva": "0x583d",
+        "bytes": "48c744243000000000",
+        "text": "mov qword ptr [rsp + 0x30], 0"
+      },
+      {
+        "rva": "0x5846",
+        "bytes": "48c744243800000000",
+        "text": "mov qword ptr [rsp + 0x38], 0"
+      },
+      {
+        "rva": "0x584f",
+        "bytes": "48c744244000000000",
+        "text": "mov qword ptr [rsp + 0x40], 0"
+      },
+      {
+        "rva": "0x5858",
+        "bytes": "48c744244800000000",
+        "text": "mov qword ptr [rsp + 0x48], 0"
+      },
+      {
+        "rva": "0x5861",
+        "bytes": "48c744245000000000",
+        "text": "mov qword ptr [rsp + 0x50], 0"
+      },
+      {
+        "rva": "0x586a",
+        "bytes": "c744245800000000",
+        "text": "mov dword ptr [rsp + 0x58], 0"
+      },
+      {
+        "rva": "0x5872",
+        "bytes": "ffd0",
+        "text": "call rax"
+      },
+      {
+        "rva": "0x5874",
+        "bytes": "4863f0",
+        "text": "movsxd rsi, eax"
+      },
+      {
+        "rva": "0x5877",
+        "bytes": "48b8209d7853f67f0000",
+        "text": "movabs rax, 0x7ff653789d20"
+      },
+      {
+        "rva": "0x5881",
+        "bytes": "4889f9",
+        "text": "mov rcx, rdi"
+      },
+      {
+        "rva": "0x5884",
+        "bytes": "4889da",
+        "text": "mov rdx, rbx"
+      },
+      {
+        "rva": "0x5887",
+        "bytes": "ffd0",
+        "text": "call rax"
+      },
+      {
+        "rva": "0x5889",
+        "bytes": "4889f0",
+        "text": "mov rax, rsi"
+      },
+      {
+        "rva": "0x588c",
+        "bytes": "4883c460",
+        "text": "add rsp, 0x60"
+      },
+      {
+        "rva": "0x5890",
+        "bytes": "5b",
+        "text": "pop rbx"
+      },
+      {
+        "rva": "0x5891",
+        "bytes": "5f",
+        "text": "pop rdi"
+      },
+      {
+        "rva": "0x5892",
+        "bytes": "5e",
+        "text": "pop rsi"
+      },
+      {
+        "rva": "0x5893",
+        "bytes": "c3",
+        "text": "ret "
+      }
+    ]
+  },
+  "original_array": {
+    "descriptor_rva": "0x6a3c0",
+    "header": "0x800010055",
+    "element_bytes": 8,
+    "element_type": "0x55 signed int64",
+    "length_offset": 8,
+    "data_pointer_offset": 28,
+    "series_bit": "0x10 in flags at +2"
+  },
+  "sdk_targets": {
+    "0x7aa0e0": "ArrayResize",
+    "0x7d1c40": "TimeCurrent",
+    "0x7c2970": "SymbolInfoInteger",
+    "0x7d7da0": "PositionsTotal",
+    "0x7d7df0": "PositionGetTicket",
+    "0x7d7fc0": "PositionGetInteger",
+    "0x7b49f0": "Print dispatcher",
+    "0x3959a0": "runtime array fault"
+  },
+  "tool_sha256": "cf7654bda1ff138f4a51e8c0af0b175997672266dcf23652059a396f66efa696",
+  "runtime_verified": false,
+  "limits": [
+    "Known-source call target/signature and original array header only; no fresh MT5 run.",
+    "Array growth/failure effects, fatal errors and all four table algorithms still need original-versus-MQL5 checks.",
+    "The reference resizes a double array; the original descriptor establishes the signed-int64 element type."
+  ]
+}

@@ -24,6 +24,20 @@ Chạy từ thư mục dự án. Mỗi lượt dùng tên mới để giữ bằ
   vào `phan-tich/dong-vi-the/NEW_RUN/`. Bot 1 lượt
   `management-20261025-r1`: 5.621 lệnh máy, giữ đủ thân hàm và mã C;
   chỉ tách bằng chứng, chưa phân tích hoàn tất hoặc chạy đối chiếu.
+- Cùng công cụ, `--virtual-stops`: tách bốn hàm bảng dừng ảo bot 1
+  (dọn bảng, lấy mức, kiểm chờ, ghi giờ). Lượt `virtual-stops-20261025-r1`
+  có 420 lệnh; giữ nguyên các bằng chứng cũ.
+- `kiem-api-bang-dung-ao.py BOT ANALYSIS_RUN`: kiểm mã chương trình
+  đối chứng có nguồn đã lưu, nối hàm mở rộng mảng và tám lời gọi ngoài;
+  tạo mới `api-contract.json` trong lượt phân tích. Không mở MT5.
+- `kiem-bang-dung-ao-bot-1.py prepare|original|mql5|compare RUN
+  [--build BUILD]`: chuỗi kiểm ban đầu bảy bước, chưa phải đủ nhánh.
+  Chuẩn bị → chạy gốc → biên dịch `Bot1VirtualStopsSmoke.mq5` → chạy
+  MQL5 với `--build` → so. Lượt `virtual-smoke-20261025-r1`, bản
+  `b1-virtual-smoke-01`: 7/7 bước khớp, 0 lỗi/cảnh báo. So toàn bộ
+  1.500 số trong bảng, vé đã báo, độ dài mảng, kết quả có nghĩa và
+  dấu vết lời gọi. Chưa kiểm nhiều vị thế, bảng đầy, lỗi mở rộng,
+  số không hợp lệ, toàn bộ nhánh hoặc máy đo quá khứ.
 
 ## Sửa dừng lỗ/chốt lời vị thế theo vé
 

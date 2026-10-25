@@ -1,0 +1,26 @@
+{
+  "original_ex5_sha256": "a3b0de423a06e10ebedc279307b93d7cb9188ba2bb5de77131a913c865b0e922",
+  "tool_sha256": "157965a177c3235db90f763dcf9c87cf3a5222bc21f849e3cfe862da1553a0a3",
+  "sources_sha256": {
+    "Include/bot-cua-toi-1/Bot1VirtualStops.mqh": "da7aa4f6ff38c97aa4e9288620f7e975d7255c598468948a515f8de2f2b7f400",
+    "Include/bot-cua-toi-1/Bot1PriceLevels.mqh": "601bdd551e24e3ac9a7742cc00e057d881b069ab672843bec31b3f32a43316b1",
+    "Scripts/bot-cua-toi-1/Bot1VirtualStopsSmoke.mq5": "9056450c504402b9ea1aa2ef7fba8bd9db05f6d6709416774c7bf8f8b4ae0c51"
+  },
+  "dependencies_sha256": {
+    "kiem-gia-vao-bot-1-3.py": "22394e48932feb7242b967aa58e327d2990402f12bfe52621916f64914c9dac2",
+    "kiem-muc-gia-bot-1-3.py": "a6c447ca80029fb63ced0c9d1673bb14222a7736b04df5c410f280f8471d6a35",
+    "kiem-khoi-luong-hop-le-bot-1-3.py": "8251fb4423d6f5f2e1b79a1c53dbb25fb5a6c568bb61cddef23396dc982243f0"
+  },
+  "analysis_sha256": "25540106c233d53aa480db5f4bd4b1957944262f8d0afbf87145002fdcde4a0c",
+  "api_contract_sha256": "0cc683c9a12ca7d4ce5194df32b38206c56a1f58d3027c18a905f505403e9664",
+  "sequence": [
+    "new-level",
+    "cached-level",
+    "unstamped-delay",
+    "stamp",
+    "before-delay-boundary",
+    "at-delay-boundary",
+    "drop-empty-account"
+  ],
+  "cases": 7
+}

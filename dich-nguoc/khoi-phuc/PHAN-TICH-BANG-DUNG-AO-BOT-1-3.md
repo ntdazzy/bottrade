@@ -1,6 +1,6 @@
 # Bảng dừng lỗ/chốt lời ảo — bot 1 và 3
 
-Trạng thái: **đã phân tích; chưa có nguồn MQL5 được kiểm đạt cho phần này**.
+Trạng thái: **bot 1 đã có nguồn và bảy bước kiểm ban đầu; chưa đủ toàn bộ phần này**.
 [Claude phân tích độc lập](danh-gia-claude/virtual-stops-20261024-r1/analysis.md),
 [kết luận sau khi tự đối chiếu](danh-gia-claude/virtual-stops-20261024-r1/host-verdict.json).
 
@@ -42,3 +42,19 @@ bằng chương trình có nguồn và bản chụp cũ, không đoán theo tên
 chưa được đưa vào nguồn chính. Còn phải kiểm thông báo khi chạy,
 việc chọn vị thế/đổi kích thước mảng khi dọn bảng, các lỗi, vé lớn/trùng,
 trạng thái sau khởi động lại rồi mới dựng và so đầy đủ. P22 vẫn còn mở.
+
+Lượt mới do Codex trực tiếp làm theo phân công người dùng đã xác nhận:
+
+- [Phân tích bốn hàm bot 1](bot-cua-toi-1/phan-tich/dong-vi-the/virtual-stops-20261025-r1/analysis.md):
+  420 lệnh, đủ hàm dọn bảng, lấy mức, kiểm chờ và ghi giờ. Bằng chứng
+  có nguồn cũ đã xác nhận lời gọi `ArrayResize` tại `0x7aa0e0`; không
+  còn đoán tên lời gọi này từ cách dùng.
+- [Nguồn mới](bot-cua-toi-1/source/MQL5/Include/bot-cua-toi-1/Bot1VirtualStops.mqh)
+  biên dịch 0 lỗi/cảnh báo; [bảy bước ban đầu](bot-cua-toi-1/bang-chung/kiem-bang-dung-ao/virtual-smoke-20261025-r1/comparison.json)
+  khớp từng byte mã gốc: tạo mức, dùng lại mức cũ, chờ khi chưa ghi
+  giờ, ghi giờ, trước/đúng mốc chờ, dọn khi không còn vị thế.
+- Đã so 1.500 số trong bảng, byte cho phép, vé đã báo, độ dài mảng,
+  giá trị trả có nghĩa và thứ tự lời gọi. Chỉ chạy 204/420 lệnh máy;
+  số này không phải tỷ lệ hoàn thành. Chưa kiểm nhiều vị thế, bảng
+  đầy, nội dung mảng vé/lỗi mở rộng, số đặc biệt và máy đo quá khứ.
+  Bot 3 và việc ghép vào quản lý vị thế vẫn chưa đạt.

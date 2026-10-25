@@ -1,0 +1,33 @@
+{
+  "status": "initial-sequence-only",
+  "author": "Codex, under human-confirmed exception for Claude refusals",
+  "cases": 7,
+  "matched": 7,
+  "coverage": {
+    "0x18790": {
+      "executed": 54,
+      "instructions": 178
+    },
+    "0x3d200": {
+      "executed": 90,
+      "instructions": 174
+    },
+    "0x3d5a0": {
+      "executed": 36,
+      "instructions": 39
+    },
+    "0x3d640": {
+      "executed": 24,
+      "instructions": 29
+    }
+  },
+  "executed_instructions": 204,
+  "scoped_instructions": 420,
+  "source_and_frozen_copies_match": true,
+  "original_and_mql_bytes_match": true,
+  "compiler_receipt": "bot-cua-toi-1/bang-chung/bien-dich/b1-virtual-smoke-01/bien-nhan.json",
+  "result_sha256": "b338b8830e685c47136efd91ec9b126991c55b6699dcd0fe1a7d73d475778875",
+  "scope": "Initial seven-step sequence only: meaningful return bits, all1500 table doubles,guard,reported ticket,array length and ordered SDK-call hashes. SDK values supplied. No positive-position scan,full-table path,array contents/failure,invalid numbers,source error locations,all branches,tester or full EA proof.",
+  "whole_bot_complete": false,
+  "claude_review": "Requested separately for the new source; no evaluation claimed until a response is received."
+}

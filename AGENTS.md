@@ -33,6 +33,9 @@
    gồm phân tích, viết mã và bộ kiểm. Claude là người làm chính;
    Codex quản lý, chia phần, theo dõi, kiểm chứng độc lập và ghép kết
    quả; không chỉ giao Claude đọc/rà mã.
+   Ngoại lệ được người dùng xác nhận ngày 25/10/2026: Codex trực tiếp
+   phân tích, viết mã và kiểm các phần Claude từ chối; Claude làm các
+   phần còn nhận. Không đổi cách hỏi để vượt việc từ chối.
 6. So từng phần rồi so toàn bộ nguồn MQL5 đã biên dịch với EX5 gốc trên
    cùng dữ liệu và điều kiện. Kiểm cả giao dịch, toàn bộ cài đặt, bảng
    hiển thị, khởi động lại, trạng thái lưu và lỗi; cùng lợi nhuận chưa đủ.

@@ -1,6 +1,6 @@
 """Save the scoped cancel/filter functions and exact floating-point guard code.
 
-Usage: phan-tich-huy-lenh-cho-bot-1-3.py BOT NEW_RUN [--positions|--position-scan|--position-references|--position-modify|--position-management|--coordinator]
+Usage: phan-tich-huy-lenh-cho-bot-1-3.py BOT NEW_RUN [--positions|--position-scan|--position-references|--position-modify|--position-management|--virtual-stops|--coordinator]
 Read-only toward originals/captures/source. No execution of bot instructions/MT5.
 This is an analysis inventory, not a behavioral-equivalence result.
 """
@@ -20,6 +20,7 @@ CLOSE_RVA={1:[0x22c40,0x3d010],3:[0x2e370,0x47d20]}
 POSITION_SCAN_RVA={1:[0x2fa00,0x2fce0],3:[0x3ce40,0x3d220]}
 POSITION_MODIFY_RVA={1:[0x26d20],3:[0x32a90]}
 POSITION_MANAGEMENT_RVA={1:[0x271f0,0x2abc0],3:[0x32f60,0x37590]}
+VIRTUAL_STOPS_RVA={1:[0x18790,0x3d200,0x3d5a0,0x3d640],3:[0x20bc0,0x47f10,0x482b0,0x484c0,0x48560]}
 COORDINATOR_RVA={1:[0x10f60],3:[0x17f00]}
 GUARDS={1:[(0x34220,0x34319),(0x34760,0x3477d)],3:[(0x32520,0x32619),(0x32a60,0x32a84)]}
 def save(path,value):
@@ -63,21 +64,21 @@ def reference_origins(a,o,meta,inventory,source,lines,md,digest):
 
 def main():
     parser=argparse.ArgumentParser(description=__doc__);parser.add_argument('bot',type=int,choices=[1,3]);parser.add_argument('new_run')
-    modes=parser.add_mutually_exclusive_group();modes.add_argument('--positions',action='store_true');modes.add_argument('--position-scan',action='store_true');modes.add_argument('--position-references',action='store_true');modes.add_argument('--position-modify',action='store_true');modes.add_argument('--position-management',action='store_true');modes.add_argument('--coordinator',action='store_true');a=parser.parse_args()
+    modes=parser.add_mutually_exclusive_group();modes.add_argument('--positions',action='store_true');modes.add_argument('--position-scan',action='store_true');modes.add_argument('--position-references',action='store_true');modes.add_argument('--position-modify',action='store_true');modes.add_argument('--position-management',action='store_true');modes.add_argument('--virtual-stops',action='store_true');modes.add_argument('--coordinator',action='store_true');a=parser.parse_args()
     if not re.fullmatch('[a-z0-9-]{1,48}',a.new_run):raise ValueError('INVALID_RUN')
     digest=validation.original_hash(a.bot);o=entry.Original(a.bot)
     import capstone
     md=capstone.Cs(capstone.CS_ARCH_X86,capstone.CS_MODE_64);md.detail=True
-    position_scope=a.positions or a.position_scan or a.position_modify or a.position_management
+    position_scope=a.positions or a.position_scan or a.position_modify or a.position_management or a.virtual_stops
     full_scope=position_scope or a.coordinator
-    inventory_run='luot-20261025-r3' if a.position_management else 'luot-20261025-r2' if a.coordinator else 'luot-20261025-r1' if a.position_scan or a.position_references or a.position_modify else 'luot-20261024-r13' if a.positions else 'luot-20261024-r9'
+    inventory_run='luot-20261025-r4' if a.virtual_stops else 'luot-20261025-r3' if a.position_management else 'luot-20261025-r2' if a.coordinator else 'luot-20261025-r1' if a.position_scan or a.position_references or a.position_modify else 'luot-20261024-r13' if a.positions else 'luot-20261024-r9'
     inventory_path=ROOT/f'ban-do-bot-1-3/{inventory_run}/bot-{a.bot}.json';inventory=json.loads(inventory_path.read_text())
     folder='luot-20261023-data-v2' if a.bot==1 else 'luot-20261023-data';home=ROOT/f'bot-cua-toi-{a.bot}';meta_path=home/'phan-tich'/folder/'metadata/import.json';meta=json.loads(meta_path.read_text())
     source=ROOT/inventory['c_source']
     if entry.sha(source)!=inventory['c_source_sha256']:raise ValueError('C_SOURCE_CHANGED')
     lines=source.read_text(encoding='utf-8-sig').splitlines();records=[];excerpts=[];guards=[]
     if a.position_references:return reference_origins(a,o,meta,inventory,source,lines,md,digest)
-    for rva in (COORDINATOR_RVA if a.coordinator else POSITION_MANAGEMENT_RVA if a.position_management else POSITION_MODIFY_RVA if a.position_modify else POSITION_SCAN_RVA if a.position_scan else CLOSE_RVA if a.positions else RVA)[a.bot]:
+    for rva in (COORDINATOR_RVA if a.coordinator else VIRTUAL_STOPS_RVA if a.virtual_stops else POSITION_MANAGEMENT_RVA if a.position_management else POSITION_MODIFY_RVA if a.position_modify else POSITION_SCAN_RVA if a.position_scan else CLOSE_RVA if a.positions else RVA)[a.bot]:
         fn=next(f for f in meta['functions'] if int(f['begin_rva'],16)==rva);end=int(fn['end_rva'],16);known=next(f for f in inventory['functions'] if int(f['rva'],16)==rva)
         raw=bytes(o.m.mem_read(o.base+rva,end-rva));instructions=[];callees=set()
         for ins in md.disasm(raw,o.base+rva):
