@@ -4,7 +4,7 @@ Chạy từ gốc dự án. Mỗi lượt dùng tên mới, giữ nguyên bằng
 
 | Công cụ | Đầu vào và kết quả | Giới hạn |
 |---|---|---|
-| `xem-quan-ly-goc.py` | Bot, cặp vị trí đầu/cuối viết hệ16; in lệnh đã chụp và vị trí đúng của dữ liệu trong chương trình | Chỉ đọc hai thân quản lý đã có trong analysis.json; cuối khoảng không được tính; không đọc/sửa EX5 hoặc chạy MT5 |
+| `xem-quan-ly-goc.py` | Bot, cặp vị trí đầu/cuối viết hệ16; thêm `--full-snapshot` để đọc hàm khác trong bản chụp; in lệnh và vị trí dữ liệu, mã kiểm của hàm | Mặc định đọc hai thân quản lý trong analysis.json; cuối khoảng không được tính; không sửa EX5 hoặc chạy MT5 |
 | `thu-ket-qua-claude.py` | Tên đợt và `--runs` các tên việc; lưu biên nhận, câu giao/đáp và mã kiểm tra | Kiểm model/mức suy nghĩ từ yêu cầu thật trong nhật ký; đã giao tệp chưa đồng nghĩa mã đạt; Ultracode vẫn cần bằng chứng riêng |
 | `giao-claude-phan-viec.ps1` | `-Prompt`, `-Run`, `-OutputDirectory`; khởi chạy Claude ghi đề xuất trong thư mục riêng | Chỉ giao phần đã đủ mô tả; không tự ghép nguồn, không giao lại phần bị từ chối dưới tên khác |
 | `kiem-ban-git-quan-ly.py` | `--manifest FILE --case-run BOT:RUN --compile-only BOT:BUILD`, thêm `--ref HEAD` sau commit; so nguồn/phụ thuộc đúng byte Git, kết quả, bản dựng và EX5 gốc | Chỉ đọc; kiểm đúng phạm vi các lượt được chọn, không xác nhận EA đầy đủ |
@@ -14,6 +14,7 @@ Ví dụ đọc hai đoạn, không sửa tệp:
 
 ```powershell
 python -I -B -X utf8 dich-nguoc/khoi-phuc/cong-cu/xem-quan-ly-goc.py 1 27ee4 28220 2b8ed 2bc82
+python -I -B -X utf8 dich-nguoc/khoi-phuc/cong-cu/xem-quan-ly-goc.py 3 e0c0 e150 --full-snapshot
 ```
 
 Khoảng sai báo lỗi trước khi đọc; chỉ chấp nhận bot1/3. Các phép kiểm

@@ -1,0 +1,15 @@
+{
+  "utc": "2026-10-25T18:04:51.379417+00:00",
+  "reviewer": "/root/review_bot3_parent_flow",
+  "mode": "read-only-independent",
+  "findings": [],
+  "checked": [
+    "Five trade child callbacks execute original bodies without replacing return state",
+    "context vtable preserved while public structures initialized",
+    "ASK enum4 from calibrated source",
+    "31 output fields,35 request/result/check fields and metadata",
+    "scope limits"
+  ],
+  "oracle_sha256": "a11c20814ac8c6b49f403227313821b16f7e8d666ea23c10b3b4e39835d7d915",
+  "whole_bot_complete": false
+}

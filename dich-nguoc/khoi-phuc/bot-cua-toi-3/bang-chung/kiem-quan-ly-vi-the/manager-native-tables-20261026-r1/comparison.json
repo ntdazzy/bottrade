@@ -1,0 +1,27 @@
+{
+  "cases": 364,
+  "matched": 364,
+  "failed": 0,
+  "first_failures": [],
+  "result_sha256": {
+    "original": "5701ce57416be2dfc9392b9f62b06397c8ead448e1a61101b6da79f749d84478",
+    "mql5": "5701ce57416be2dfc9392b9f62b06397c8ead448e1a61101b6da79f749d84478"
+  },
+  "full_management_parents_executed": true,
+  "whole_manager_complete": false,
+  "whole_bot_complete": false,
+  "full_ea": false,
+  "child_helpers_intercepted": true,
+  "terminal_replies_supplied": true,
+  "original_ex5_changed": false,
+  "virtual_table_children_executed": true,
+  "modify_child_intercepted": true,
+  "close_child_intercepted": true,
+  "trade_children_executed": false,
+  "limits": [
+    "Both original management parent functions run to return, including their loop and real/virtual transitions. This is not an EA, paired terminal comparison or complete manager integration proof.",
+    "Stop/take/delay/stamp run their actual original and MQL5 bodies. Modify/try-close replies and provider-side effects are supplied. The matrix does not prove every table-growth, full-table or allocation-failure branch.",
+    "Native error-code/string/Print code executes. Successful string allocation and signed decimal conversion are supplied; double text is measured separately in MT5 and supplied by value bits.",
+    "CPU both-NaN fixtures only correct measured two-NaN arithmetic. Other native instructions run in Unicorn; no physical original-run, allocation-failure or complete error coverage claim."
+  ]
+}

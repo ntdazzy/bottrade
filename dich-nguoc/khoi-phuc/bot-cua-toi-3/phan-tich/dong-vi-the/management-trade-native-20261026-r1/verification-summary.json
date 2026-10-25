@@ -1,0 +1,19 @@
+{
+  "utc": "2026-10-25T18:04:51.379417+00:00",
+  "run": "manager-all-children-20261026-r2",
+  "cases": 364,
+  "matched": 364,
+  "fields": 31,
+  "parent_sites": 6038,
+  "table_sites": 119,
+  "trade_sites": 605,
+  "result_sha256": "5e4b26e789d16fca0a27f0922f093aecedb279d4465acd3b186ac55861fedb5d",
+  "regressions": [
+    "manager-native-legacy-20261026-r1",
+    "manager-native-tables-20261026-r1"
+  ],
+  "oracle_sha256": "a11c20814ac8c6b49f403227313821b16f7e8d666ea23c10b3b4e39835d7d915",
+  "product_algorithm_changed": false,
+  "whole_manager_complete": false,
+  "whole_bot_complete": false
+}

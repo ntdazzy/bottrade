@@ -291,3 +291,12 @@
 /bot-cua-toi-3/bang-chung/bien-dich/b3-management-trade-check-*/** -text
 /danh-gia-claude/table-parallel-20261025-r3/** -text
 /danh-gia-doc-lap/trade-check-20261026-r1/** -text
+
+/bot-cua-toi-1/source/MQL5/Include/bot-cua-toi-1/Bot1ManagementRealSlippage.mqh -text
+/bot-cua-toi-1/phan-tich/dong-vi-the/management-slippage-accepted-*/** -text
+/bot-cua-toi-3/phan-tich/dong-vi-the/management-trade-native-*/** -text
+/danh-gia-claude/slippage-bot1-*/** -text
+/danh-gia-doc-lap/trade-native-*/** -text
+/danh-gia-doc-lap/viewer-*/** -text
+
+/doi-chung-mt5/thu-tu-truong-lenh-class-20261024/layout-class-r1/trade-layout.json -text

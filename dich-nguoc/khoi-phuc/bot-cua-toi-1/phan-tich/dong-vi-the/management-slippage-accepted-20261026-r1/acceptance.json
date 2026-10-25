@@ -1,0 +1,22 @@
+{
+  "utc": "2026-10-25T18:04:51.379417+00:00",
+  "author": "Claude Opus5.5",
+  "actual_effort": "max",
+  "actual_requests": 14,
+  "receipt": "danh-gia-claude/slippage-bot1-20261026-r1/dispatch.json",
+  "proposal_sha256": "69761a0a15dec4472b46b8aaaafcc9f05abc87b1d135f53ea03be07e255b5620",
+  "canonical_sha256": "bf5814d394de6ade5976dd1f83fb970c185aeda22f7587f3880f73ad3a0c58aa",
+  "body_changed": false,
+  "adaptations": [
+    "Removed stale candidate status comment; preserved code body"
+  ],
+  "independent_review_findings": [],
+  "compile_build": "b1-real-slippage-api-20261026-r1",
+  "errors": 0,
+  "warnings": 0,
+  "compile_only": true,
+  "compiled_script_was_not_run": true,
+  "runtime_verified": false,
+  "ultracode_runtime_confirmed": null,
+  "whole_bot_complete": false
+}

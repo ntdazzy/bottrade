@@ -1,0 +1,39 @@
+{
+  "original_ex5_sha256": "ee063d3d87490afe24e2f4ce85f6b05659320e297b102efd70207f71ca2feb83",
+  "metadata_sha256": "2b0f2cf309fb5055a53acb134f61d4e35d33db55454cf85f79e2081ef586bc88",
+  "metadata_path": "bot-cua-toi-3\\phan-tich\\luot-20261023-data\\metadata\\import.json",
+  "functions": [
+    {
+      "rva": "0x950",
+      "end_rva": "0xb5e",
+      "native_bytes_sha256": "cd994d32c983116d8c365399e820c82ac239932d62ac7f18f80b1dcc72195fcc",
+      "previous_component_hash_checked": false
+    },
+    {
+      "rva": "0x2e370",
+      "end_rva": "0x2e8ec",
+      "native_bytes_sha256": "053b40b4d431c8643c461ab4071c27b91bc5bb136e1bf093feca582286b5c41f",
+      "previous_component_hash_checked": true
+    },
+    {
+      "rva": "0x2e8f0",
+      "end_rva": "0x2ece6",
+      "native_bytes_sha256": "9345f9b4eb47f0bc99625e70ef777e0a6d64488aa37ea9ee16c0379483e08e8f",
+      "previous_component_hash_checked": false
+    },
+    {
+      "rva": "0x32a90",
+      "end_rva": "0x32f57",
+      "native_bytes_sha256": "739d61a802bdfc35918209de111f8b4cc5142c4aa9b9352b1f0ed48bfdd20250",
+      "previous_component_hash_checked": true
+    },
+    {
+      "rva": "0x47d20",
+      "end_rva": "0x47f0c",
+      "native_bytes_sha256": "187cb4166613486af42d77b33219fd76967b06b726229f1ef4aefa1dccd1fdb8",
+      "previous_component_hash_checked": true
+    }
+  ],
+  "old_bindings": "bot-cua-toi-3/phan-tich/dong-vi-the/management-integrated-tables-20261025-r1/trade-next-bindings.json",
+  "whole_bot_complete": false
+}

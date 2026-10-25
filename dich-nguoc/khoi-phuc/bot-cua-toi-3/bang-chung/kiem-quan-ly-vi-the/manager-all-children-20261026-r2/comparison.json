@@ -1,0 +1,28 @@
+{
+  "cases": 364,
+  "matched": 364,
+  "failed": 0,
+  "first_failures": [],
+  "result_sha256": {
+    "original": "5e4b26e789d16fca0a27f0922f093aecedb279d4465acd3b186ac55861fedb5d",
+    "mql5": "5e4b26e789d16fca0a27f0922f093aecedb279d4465acd3b186ac55861fedb5d"
+  },
+  "full_management_parents_executed": true,
+  "whole_manager_complete": false,
+  "whole_bot_complete": false,
+  "full_ea": false,
+  "child_helpers_intercepted": false,
+  "terminal_replies_supplied": true,
+  "original_ex5_changed": false,
+  "virtual_table_children_executed": true,
+  "modify_child_intercepted": false,
+  "close_child_intercepted": false,
+  "trade_children_executed": true,
+  "terminal_send_replies_supplied": true,
+  "limits": [
+    "Both original management parent functions run to return, including their loop and real/virtual transitions. This is not an EA, paired terminal comparison or complete manager integration proof.",
+    "All direct management helpers and underlying close/filling/send execute their actual bodies. Terminal queries, send replies and their specified provider-side position effects are supplied. IsStopped=0, logging=0, market execution=2 and filling flag=1; no complete branch/broker/account/EA claim.",
+    "Native error-code/string/Print code executes. Successful string allocation and signed decimal conversion are supplied; double text is measured separately in MT5 and supplied by value bits.",
+    "CPU both-NaN fixtures only correct measured two-NaN arithmetic. Other native instructions run in Unicorn; no physical original-run, allocation-failure or complete error coverage claim."
+  ]
+}

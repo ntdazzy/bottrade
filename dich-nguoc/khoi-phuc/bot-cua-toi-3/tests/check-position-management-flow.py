@@ -15,6 +15,14 @@ PUB_PATH=ROOT/'cong-cu/kiem-ban-git-quan-ly.py';pub=module('flow3_closure',PUB_P
 SCRIPT='Scripts/bot-cua-toi-3/Bot3PositionManagementFlowCheck.mq5'
 CONTRACT=ROOT/'claude-thuc-hien/bot3-manager-flow-check-20261025-r1/CONTRACT.md'
 TABLE_MODE=False
+TRADE_MODE=False
+TRADE_STATE=struct.Struct('<4Qi')
+TRADE_FIELDS=['request_hash','result_hash','check_hash','trade_metadata_hash','trade_sends']
+TRADE_BINDINGS=HOME/'phan-tich/dong-vi-the/management-integrated-tables-20261025-r1/trade-next-bindings.json'
+TRADE_NATIVE=HOME/'phan-tich/dong-vi-the/management-trade-native-20261026-r1/native-bindings.json'
+TRADE_CONTRACT=ROOT/'claude-thuc-hien/bot3-management-trade-check-20261025-r1/TASK.md'
+TRADE_API=ROOT/'doi-chung-mt5/dong-vi-the-20261024/close-api-r1/api-contract.json'
+TRADE_LAYOUT=ROOT/'doi-chung-mt5/thu-tu-truong-lenh-class-20261024/layout-class-r1/trade-layout.json'
 TABLE_ANALYSIS=HOME/'phan-tich/dong-vi-the/virtual-stops-20261025-r1/analysis.json'
 TABLE_CONTRACT=HOME/'phan-tich/dong-vi-the/management-integrated-tables-20261025-r1/contract.md'
 TABLE_STATE=struct.Struct('<qqiiQi')
@@ -31,7 +39,7 @@ INT_CFG={0x6d564:'magic',0x6d520:'enabled',0x6d514:'mode',0x7449c:'timed_delay_s
 BYTE_CFG={0x6d508:'use_anchor',0x1d6fa0:'high_low_eligible',0x6d5c8:'high_low_before_open',0x6d5dc:'high_low_shift',0x6d5f8:'step_enabled',0x6d29c:'candle_shift'}
 def identity():
     old=B.identity();base=HOME/'source/MQL5';names=sorted(p.relative_to(base.resolve()).as_posix() for p in pub.closure(base/SCRIPT,base))
-    return dict(execute_table_children=TABLE_MODE,table_analysis_sha256=sha(TABLE_ANALYSIS) if TABLE_MODE else None,table_contract_sha256=sha(TABLE_CONTRACT) if TABLE_MODE else None,original_ex5_sha256=old['original_ex5_sha256'],tool_sha256=sha(Path(__file__)),analysis_sha256=sha(ANALYSIS/'analysis.json'),contract_sha256=sha(CONTRACT),probe_sha256=sha(cpu.PROBE),helpers_sha256=old['helpers_sha256']|{str(p.relative_to(ROOT)):sha(p) for p in [B_PATH,CASE_PATH,PUB_PATH,FLOAT_PROOF]+([TABLE_ANALYSIS,TABLE_CONTRACT] if TABLE_MODE else [])},sources_sha256={n:sha(base/n) for n in names})
+    return dict(execute_trade_children=TRADE_MODE,execute_table_children=TABLE_MODE,table_analysis_sha256=sha(TABLE_ANALYSIS) if TABLE_MODE else None,table_contract_sha256=sha(TABLE_CONTRACT) if TABLE_MODE else None,original_ex5_sha256=old['original_ex5_sha256'],tool_sha256=sha(Path(__file__)),analysis_sha256=sha(ANALYSIS/'analysis.json'),contract_sha256=sha(CONTRACT),probe_sha256=sha(cpu.PROBE),helpers_sha256=old['helpers_sha256']|{str(p.relative_to(ROOT)):sha(p) for p in [B_PATH,CASE_PATH,PUB_PATH,FLOAT_PROOF]+([TABLE_ANALYSIS,TABLE_CONTRACT] if TABLE_MODE else [])+([TRADE_BINDINGS,TRADE_NATIVE,TRADE_CONTRACT,TRADE_LAYOUT,TRADE_API] if TRADE_MODE else [])},sources_sha256={n:sha(base/n) for n in names})
 def signed64(n):return ((n+(1<<63))&MASK)-(1<<63)
 def normalized(n):
     value=float(signed64(n));return float(-(1<<63) if value>=1<<63 or value<-(1<<63) else int(value))
@@ -45,9 +53,9 @@ def casts(path,count):
     require(pos==len(raw),'CAST_TRAILING_BYTES');return out
 class Original(B.Original):
     def __init__(self,fixture,formats):
-        self.table_children=TABLE_MODE;self.table_covered=set();self.table_calls={};super().__init__(fixture);self.formats=formats
+        self.trade_children=TRADE_MODE;self.trade_covered=set();self.trade_calls={};self.table_children=TABLE_MODE;self.table_covered=set();self.table_calls={};super().__init__(fixture);self.formats=formats
         eb=next(a for a,k in self.apis.items() if k==4)-0x7c2890
-        for rva,api in {0x7d7df0:102,0x7d7f70:103,0x7d7fc0:104,0x7d8010:105,0x7d7da0:106,0x7d3b50:107,0x7d3d40:108,0x7d3bc0:109}.items():
+        for rva,api in {0x7d7df0:102,0x7d7f70:103,0x7d7fc0:104,0x7d8010:105,0x7d7da0:106,0x7d3b50:107,0x7d3d40:108,0x7d3bc0:109,**({0x7d7ee0:110,0x7d8b70:111,0x7d8be0:112} if self.trade_children else {})}.items():
             address=eb+rva
             if address not in self.apis:
                 if not any(lo<=address<=hi for lo,hi,_ in self.m.mem_regions()):self.m.mem_map(address&~4095,4096)
@@ -61,6 +69,37 @@ class Original(B.Original):
                 require(__import__('hashlib').sha256(bytes(self.m.mem_read(self.base+lo,hi-lo))).hexdigest()==fn['native_bytes_sha256'],'TABLE_NATIVE_CODE_DIFFERS')
                 self.m.hook_add(self.uc.UC_HOOK_CODE,self.table_visit,begin=self.base+lo,end=self.base+hi-1)
             if not any(lo<=0x71000000<=hi for lo,hi,_ in self.m.mem_regions()):self.m.mem_map(0x71000000,0x20000)
+        if self.trade_children:
+            self.bindings=json.loads(TRADE_BINDINGS.read_text());layout=json.loads(TRADE_LAYOUT.read_text());self.trade_constants=json.loads(TRADE_API.read_text())['constants']
+            require(sha(TRADE_LAYOUT)==self.bindings['layout_sha256'],'TRADE_LAYOUT_DIFFERS');self.schemas=layout['layouts'];self.storage=layout['relative_native_storage_bases']
+            data=json.loads(TRADE_NATIVE.read_text());require(data['original_ex5_sha256']==pre.validation.original_hash(3),'TRADE_EX5_DIFFERS');self.trade_starts=set()
+            for fn in data['functions']:
+                lo,hi=int(fn['rva'],16),int(fn['end_rva'],16);self.trade_starts.add(lo)
+                require(__import__('hashlib').sha256(bytes(self.m.mem_read(self.base+lo,hi-lo))).hexdigest()==fn['native_bytes_sha256'],'TRADE_NATIVE_CODE_DIFFERS')
+                self.m.hook_add(self.uc.UC_HOOK_CODE,self.trade_visit,begin=self.base+lo,end=self.base+hi-1)
+    def trade_visit(self,m,address,size,user):
+        off=address-self.base;self.trade_covered.add(off)
+        if off in self.trade_starts:
+            key=hex(off);self.trade_calls[key]=self.trade_calls.get(key,0)+1
+    def struct_hash(self,key,pointer):
+        words=[]
+        for field in self.schemas[key]['fields']:
+            address=pointer+field['offset'];kind=field['kind']
+            if kind=='s':words.extend([pre.entry.text_hash(self.text(address)),self.text_null(address)])
+            elif kind in ['d','Q','q']:words.append(struct.unpack('<Q',self.m.mem_read(address,8))[0])
+            elif kind in ['i','I']:words.append(struct.unpack('<'+kind,self.m.mem_read(address,4))[0]&MASK)
+            else:raise ValueError('BAD_TRADE_FIELD_KIND '+str(kind))
+        return B.fnv(b''.join(struct.pack('<Q',n) for n in words))
+    def trade_meta_hash(self):
+        context=self.base+0x744d0
+        words=[self.read(0x74765),self.integer(0x74775)&MASK,self.read(0x7476d),self.m.mem_read(context+660,1)[0],self.integer(0x744d0+685)&MASK,self.integer(0x744d0+681)&MASK]
+        return B.fnv(struct.pack('<6Q',*words))
+    def field(self,key,pointer,name):
+        spec=next(f for f in self.schemas[key]['fields'] if f['name']==name);address=pointer+spec['offset'];kind=spec['kind']
+        return self.text(address) if kind=='s' else struct.unpack('<'+kind,self.m.mem_read(address,struct.calcsize('<'+kind)))[0]
+    def set_field(self,key,pointer,name,value):
+        spec=next(f for f in self.schemas[key]['fields'] if f['name']==name)
+        require(spec['kind']!='s','TRADE_STRING_ASSIGNMENT_NOT_SUPPLIED');self.m.mem_write(pointer+spec['offset'],struct.pack('<'+spec['kind'],value))
     def table_visit(self,m,address,size,user):self.table_covered.add(address-self.base)
     def visit(self,m,address,size,user):self.covered.add(address-self.base)
     def text_null(self,descriptor):return int(struct.unpack('<Q',self.m.mem_read(descriptor+4,8))[0]==0)
@@ -71,6 +110,10 @@ class Original(B.Original):
             if row['ticket']==ticket:self.positions.pop(i);self.selected=-1;break
     def child(self,m,address,size,user):
         x=self.x;c=self.case;api=self.apis[address];r=lambda n:m.reg_read(getattr(x,'UC_X86_REG_'+n))&MASK;value=0
+        if self.trade_children and api in [5,8]:
+            if api==5:self.event(30,r('RCX'),r('XMM1'),r('XMM2'))
+            else:self.event(31,r('RCX'))
+            return
         if self.table_children and api in [1,11,2,6]:
             key=hex(address-self.base);self.table_calls[key]=self.table_calls.get(key,0)+1
             if api==1:self.event(20,r('RCX'),r('XMM1'),r('XMM2'),r('R9'))
@@ -90,6 +133,22 @@ class Original(B.Original):
     def call(self,m,address,size,user):
         api=self.apis[address];c=self.case;x=self.x;r=lambda n:m.reg_read(getattr(x,'UC_X86_REG_'+n))&MASK;a=r('RDX');b=r('R8')&0xffffffff
         if api in [100,101]:return pre.entry.Original.call(self,m,address,size,user)
+        if api==110:
+            found=False
+            for index,row in enumerate(self.positions):
+                if row['ticket']==a:self.selected=index;found=True;break
+            self.event(27,a,int(found),self.selected);m.reg_write(x.UC_X86_REG_RAX,int(found));return
+        if api in [111,112]:
+            request=a;result=r('R8');require(request==self.base+0x744f0 and result==self.base+0x745e0,'BAD_SEND_POINTERS')
+            action=self.field('request',request,'action');require(action in [1,6],'BAD_SEND_ACTION')
+            accepted=c['modify_ok'] if action==6 else c['close_ok'];before=bytes(m.mem_read(request,128));req_hash=self.struct_hash('request',request);old_hash=self.struct_hash('result',result)
+            values=dict(retcode=10009 if accepted else 10006,deal=800000+c['id'] if action==1 else 0,order=700000+c['id'],volume=self.field('request',request,'volume'),price=self.field('request',request,'price'),bid=self.bid,ask=self.ask,request_id=c['id']+1,retcode_external=0)
+            m.mem_write(result,b'\0'*72)
+            for name,value in values.items():self.set_field('result',result,name,value)
+            self.event(28,int(api==112),req_hash,old_hash,self.struct_hash('result',result));self.event(29,action,accepted,self.trade_sends);self.trade_sends+=1
+            require(bytes(m.mem_read(request,128))==before,'SEND_PROVIDER_CHANGED_REQUEST')
+            if accepted and action==1:self.remove(self.field('request',request,'position'))
+            m.reg_write(x.UC_X86_REG_RAX,accepted);return
         if api==46:
             require(b in [0x52,0x58],'BAD_CAST_KIND');text=str(signed64(a)) if b==0x52 else self.formats[c['id']].get(a)
             require(text is not None,'DOUBLE_CAST_FIXTURE_MISSING '+hex(a));m.mem_write(r('R9'),struct.pack('<IQ',0,self.string(text)));return
@@ -111,11 +170,16 @@ class Original(B.Original):
                 require(a in [0,11],'BAD_POSITION_STRING');text=row['symbol' if a==0 else 'comment'] if row else None;self.event(5,a,pre.entry.text_hash(text or ''),int(text is None));m.mem_write(self.base+0x1d6e3c,struct.pack('<IQ',0,0 if text is None else self.string(text)))
             return
         if api==3:
+            if self.trade_children and b in [33,50]:
+                require(self.text(a)=='CHECK','BAD_FILLING_SYMBOL');value=2 if b==33 else 1
+                self.event(1,b,pre.entry.text_hash(self.text(a)),value,self.text_null(a));m.reg_write(x.UC_X86_REG_RAX,value);return
             require(b==17 and self.text(a)=='CHECK','BAD_DIGITS');self.event(1,17,pre.entry.text_hash(self.text(a)),c['digits'],self.text_null(a));self.digit_count+=1
             if c['flip_digit']>0 and self.digit_count==c['flip_digit']:m.mem_write(self.base+0x6d514,struct.pack('<i',c['flip_mode']))
             m.reg_write(x.UC_X86_REG_RAX,c['digits']&MASK);return
         if api==4:
-            require(b in [16,34] and self.text(a)=='CHECK','BAD_SYMBOL_DOUBLE');value=.01 if b==16 else self.minimum;raw=pre.bits(value);self.event(18,b,raw);m.mem_write(self.base+0x1d6e48,struct.pack('<Q',raw));m.reg_write(x.UC_X86_REG_XMM0,raw);return
+            values={16:.01,34:self.minimum}
+            if self.trade_children:values.update({self.trade_constants['SYMBOL_BID']:self.bid,self.trade_constants['SYMBOL_ASK']:self.ask})
+            require(b in values and self.text(a)=='CHECK','BAD_SYMBOL_DOUBLE '+str(b));value=values[b];raw=pre.bits(value);self.event(18,b,raw);m.mem_write(self.base+0x1d6e48,struct.pack('<Q',raw));m.reg_write(x.UC_X86_REG_XMM0,raw);return
         if api==7:
             require(self.text(a)=='CHECK' and r('R8')==self.base+0x74790,'BAD_TICK');self.event(6,pre.entry.text_hash(self.text(a)),c['tick_ok'],pre.bits(self.bid),pre.bits(self.ask))
             if c['tick_ok']:m.mem_write(self.base+0x74798,struct.pack('<2d',self.bid,self.ask))
@@ -141,7 +205,7 @@ class Original(B.Original):
             self.event({107:10,108:11,109:12}[api],tf,shift,raw,pre.entry.text_hash(self.text(a)));return
         raise ValueError('UNEXPECTED_FLOW_API '+str(api))
     def run(self,c):
-        m,x=self.m,self.x;self.case=c;cfg=inputs.settings(c);self.positions=copy.deepcopy(inputs.positions(c));self.selected=-1;self.events=[];self.prints=[];self.cursor=0x70001000;self.allocs=self.frees=0;self.total_calls=self.digit_count=0;self.error_covered=set()
+        m,x=self.m,self.x;self.case=c;cfg=inputs.settings(c);self.positions=copy.deepcopy(inputs.positions(c));self.selected=-1;self.events=[];self.prints=[];self.cursor=0x70001000;self.allocs=self.frees=0;self.total_calls=self.digit_count=self.trade_sends=0;self.error_covered=set()
         self.bid,self.ask=inputs.tick_reply(c);self.stop_reply,self.take_reply=inputs.levels_reply(c);self.minimum=inputs.minimum_reply(c)
         for region,raw in self.regions:
             if region.get('kind')=='mutable_program_data':m.mem_write(region['base'],raw)
@@ -164,6 +228,11 @@ class Original(B.Original):
         if self.table_children:
             m.mem_write(self.base+0x73458,b'\0'*16);descriptor=self.base+0x1d6d10
             m.mem_write(descriptor,struct.pack('<Q',0x800010055)+b'\0'*44);m.mem_write(descriptor+28,struct.pack('<Q',0x71000000))
+        if self.trade_children:
+            # Public request/result/check only: preserve the context vtable.
+            m.mem_write(self.base+0x744f0,b'\0'*628);m.mem_write(self.base+0x1d6e14,b'\0'*4)
+            m.mem_write(self.base+0x74765,struct.pack('<Q',0));m.mem_write(self.base+0x74775,struct.pack('<i',0));m.mem_write(self.base+0x7476d,struct.pack('<Q',0x0123456789abcdef))
+            m.mem_write(self.base+0x744d0+660,b'\0');m.mem_write(self.base+0x744d0+681,b'\0'*8)
         top=0x50020000-0x108;m.mem_write(top,struct.pack('<Q',0x60000000));m.reg_write(x.UC_X86_REG_RSP,top);m.emu_start(self.base+(0x32f60 if c['buy'] else 0x37590),0x60000000,timeout=15000000,count=2000000);require(m.reg_read(x.UC_X86_REG_RIP)==0x60000000,'MANAGER_DID_NOT_RETURN')
         raw=b''.join(struct.pack('<5Q',*e) for e in self.events);rows=bytes(m.mem_read(self.base+0x6d680,12000))+bytes(m.mem_read(self.base+0x70560,8000));remaining=b''.join(struct.pack('<Q',r['ticket']) for r in self.positions)
         result=RESULT.pack(c['id'],m.reg_read(x.UC_X86_REG_RAX)&255,self.integer(0x74430),self.integer(0x6d514),len(self.positions),m.mem_read(self.base+0x1d6fa0,1)[0],m.mem_read(self.base+0x73450,1)[0],struct.unpack('<I',m.mem_read(self.base+0x74934,4))[0],struct.unpack('<I',m.mem_read(self.base+0x7448c,4))[0],self.read(0x74838),self.read(0x6d670),self.read(0x724a0),self.read(0x74798),self.read(0x747a0),self.read(0x74428),len(self.events),B.fnv(raw),B.fnv(bytes(m.mem_read(self.base+0x72e10,1600))),B.fnv(rows),B.fnv(remaining))
@@ -171,16 +240,22 @@ class Original(B.Original):
             descriptor=self.base+0x1d6d10;n=struct.unpack('<i',m.mem_read(descriptor+8,4))[0];require(0<=n<=4096,'BAD_OPEN_TICKETS_SIZE')
             series=int(bool(struct.unpack('<H',m.mem_read(descriptor+2,2))[0]&0x10));ptr=struct.unpack('<Q',m.mem_read(descriptor+28,8))[0]
             result+=TABLE_STATE.pack(signed64(self.read(0x73458)),signed64(self.read(0x73460)),n,series,B.fnv(bytes(m.mem_read(ptr,n*8)) if n else b''),self.selected)
+        if self.trade_children:
+            result+=TRADE_STATE.pack(self.struct_hash('request',self.base+0x744f0),self.struct_hash('result',self.base+0x745e0),self.struct_hash('check',self.base+0x744f0+436),self.trade_meta_hash(),self.trade_sends)
         return result
 def main():
-    p=argparse.ArgumentParser(description=__doc__);p.add_argument('mode',choices=['prepare','mql5','original','compare']);p.add_argument('run');p.add_argument('--build');p.add_argument('--table-children',action='store_true');a=p.parse_args();require(re.fullmatch('[a-z0-9-]{1,50}',a.run),'BAD_RUN')
-    global TABLE_MODE
-    TABLE_MODE=a.table_children
+    p=argparse.ArgumentParser(description=__doc__);p.add_argument('mode',choices=['prepare','mql5','original','compare']);p.add_argument('run');p.add_argument('--build');p.add_argument('--table-children',action='store_true');p.add_argument('--trade-children',action='store_true');a=p.parse_args();require(re.fullmatch('[a-z0-9-]{1,50}',a.run),'BAD_RUN')
+    global TABLE_MODE,TRADE_MODE
+    TRADE_MODE=a.trade_children;TABLE_MODE=a.table_children or TRADE_MODE
     SCOPE['virtual_table_children_executed']=TABLE_MODE
     if TABLE_MODE:
         SCOPE.update(modify_child_intercepted=True,close_child_intercepted=True)
         LIMITS[1]='Stop/take/delay/stamp run their actual original and MQL5 bodies. Modify/try-close replies and provider-side effects are supplied. The matrix does not prove every table-growth, full-table or allocation-failure branch.'
-    version=2 if TABLE_MODE else 1;size=RESULT.size+(TABLE_STATE.size if TABLE_MODE else 0);fields=FIELDS+(TABLE_FIELDS if TABLE_MODE else [])
+    SCOPE['trade_children_executed']=TRADE_MODE
+    if TRADE_MODE:
+        SCOPE.update(child_helpers_intercepted=False,modify_child_intercepted=False,close_child_intercepted=False,terminal_send_replies_supplied=True)
+        LIMITS[1]='All direct management helpers and underlying close/filling/send execute their actual bodies. Terminal queries, send replies and their specified provider-side position effects are supplied. IsStopped=0, logging=0, market execution=2 and filling flag=1; no complete branch/broker/account/EA claim.'
+    version=3 if TRADE_MODE else 2 if TABLE_MODE else 1;size=RESULT.size+(TABLE_STATE.size if TABLE_MODE else 0)+(TRADE_STATE.size if TRADE_MODE else 0);fields=FIELDS+(TABLE_FIELDS if TABLE_MODE else [])+(TRADE_FIELDS if TRADE_MODE else [])
     folder=HOME/'bang-chung/kiem-quan-ly-vi-the'/a.run;rows=inputs.cases();current=identity()
     if a.mode=='prepare':
         folder.mkdir(parents=True,exist_ok=False);(folder/'cases.bin').write_bytes(inputs.encode(rows));tested=folder/'tested-sources';tested.mkdir()
@@ -193,7 +268,7 @@ def main():
         for n,digest in current['sources_sha256'].items():require(sha(MT/'MQL5'/n)==build['sources_sha256'][n]==digest,'SOURCE_DIFFERS '+n)
         binary=MT/'MQL5'/Path(SCRIPT).with_suffix('.ex5');require(sha(binary)==build['binary_sha256']==sha(receipt.parent/binary.name),'BINARY_DIFFERS')
         files=MT/'MQL5/Files/bot3-position-management-flow'/a.run;files.mkdir(parents=True,exist_ok=False);shutil.copyfile(folder/'cases.bin',files/'cases.bin');preset=MT/'MQL5/Presets'/('b3-full-flow-'+a.run+'.set');ini=MT/('b3-full-flow-'+a.run+'.ini')
-        with preset.open('x',encoding='utf-16') as f:f.write('CheckRun='+a.run+'\nExecuteTableChildren='+str(TABLE_MODE).lower()+'\nExecuteTradeChildren=false\n')
+        with preset.open('x',encoding='utf-16') as f:f.write('CheckRun='+a.run+'\nExecuteTableChildren='+str(TABLE_MODE).lower()+'\nExecuteTradeChildren='+str(TRADE_MODE).lower()+'\n')
         with ini.open('x',encoding='utf-16') as f:f.write('[Experts]\nEnabled=0\nAllowLiveTrading=0\nAllowDllImport=0\n[StartUp]\nScript=bot-cua-toi-3\\Bot3PositionManagementFlowCheck\nScriptParameters='+preset.name+'\nSymbol=XAUUSD_NOCOST_V2\nPeriod=M15\nShutdownTerminal=1\n')
         proc=subprocess.Popen(f'"{MT/"terminal64.exe"}" /portable /config:"{ini}"',cwd=MT,creationflags=subprocess.CREATE_NO_WINDOW)
         try:code=proc.wait(timeout=120)
@@ -212,7 +287,7 @@ def main():
                     value=dict(case=c['id'],profile=c['profile'],buy=c['buy'],rva=hex(runner.m.reg_read(runner.x.UC_X86_REG_RIP)-runner.base),error=str(error),events=runner.events[-30:])
                     save(folder/'attempt-error.json',value);raise RuntimeError(json.dumps(value)) from error
                 traces.append(dict(id=c['id'],profile=c['profile'],buy=c['buy'],events=runner.events,prints=runner.prints))
-            (folder/'original-results.bin').write_bytes(raw);save(folder/'original-traces.json',traces);save(folder/'original-run.json',dict(**current,cases=len(rows),result_sha256=sha(folder/'original-results.bin'),casts_sha256=sha(folder/'cast-values.bin'),instructions=sorted(hex(n) for n in runner.covered),table_instructions=sorted(hex(n) for n in runner.table_covered),table_calls=runner.table_calls,nan_fixture=runner.nan.report(),**SCOPE));print(json.dumps(dict(cases=len(rows),instructions=len(runner.covered))))
+            (folder/'original-results.bin').write_bytes(raw);save(folder/'original-traces.json',traces);save(folder/'original-run.json',dict(**current,cases=len(rows),result_sha256=sha(folder/'original-results.bin'),casts_sha256=sha(folder/'cast-values.bin'),instructions=sorted(hex(n) for n in runner.covered),table_instructions=sorted(hex(n) for n in runner.table_covered),table_calls=runner.table_calls,trade_instructions=sorted(hex(n) for n in runner.trade_covered),trade_calls=runner.trade_calls,nan_fixture=runner.nan.report(),**SCOPE));print(json.dumps(dict(cases=len(rows),instructions=len(runner.covered))))
         finally:fixture.close()
         return
     for n in ['original-run.json','mql5-run.json']:
@@ -221,6 +296,7 @@ def main():
     for c in rows:
         off=12+c['id']*size;n=RESULT.unpack_from(native,off);r=RESULT.unpack_from(actual,off)
         if TABLE_MODE:n+=TABLE_STATE.unpack_from(native,off+RESULT.size);r+=TABLE_STATE.unpack_from(actual,off+RESULT.size)
+        if TRADE_MODE:n+=TRADE_STATE.unpack_from(native,off+RESULT.size+TABLE_STATE.size);r+=TRADE_STATE.unpack_from(actual,off+RESULT.size+TABLE_STATE.size)
         if n!=r:failed.append(dict(id=c['id'],buy=c['buy'],profile=c['profile'],group=c['group'],differences={k:[x,y] for k,x,y in zip(fields,n,r) if x!=y}))
     report=dict(cases=len(rows),matched=len(rows)-len(failed),failed=len(failed),first_failures=failed[:25],result_sha256=dict(original=sha(folder/'original-results.bin'),mql5=sha(folder/'mql5-results.bin')),**SCOPE,limits=LIMITS);save(folder/'comparison.json',report);print(json.dumps(report));raise SystemExit(bool(failed))
 if __name__=='__main__':main()

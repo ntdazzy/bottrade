@@ -3,7 +3,16 @@
 Đã kiểm vòng quản lý mua/bán thật/ảo **364/364 ca khớp**, biên dịch
 **0 lỗi, 0 cảnh báo**. Hai thân gốc chạy từ đầu tới trả về, gồm nhiều
 vị thế, đổi chế độ giữa vòng, sửa/đóng/lấy giá lỗi và vé 64 bit.
-**Bốn hàm bảng đã chạy thân thật; hai hàm sửa/kiểm đóng còn được cấp trả lời. Chưa có EA đầy đủ hoặc chạy cặp hai EA.**
+**Đã nối thân thật của bốn hàm bảng và các hàm sửa/đóng/gửi. Dịch vụ MT5 vẫn được cấp dữ liệu kiểm. Chưa có EA đầy đủ hoặc chạy cặp hai EA.**
+
+Lượt mới [manager-all-children-20261026-r2](bot-cua-toi-3/bang-chung/kiem-quan-ly-vi-the/manager-all-children-20261026-r2/comparison.json)
+khớp364/364ca, so31trường. Hàm sửa chạy488lần, kiểm đóng98lần,
+đóng88lần, chọn kiểu khớp88lần và gửi524lần. Hai kết quả cùng SHA
+5e4b26e789d16fca0a27f0922f093aecedb279d4465acd3b186ac55861fedb5d.
+[Phạm vi và cách lặp](bot-cua-toi-3/phan-tich/dong-vi-the/management-trade-native-20261026-r1/README.md).
+Bộ kiểm MQL5 doClaude viết; Codex nối bộ chạy gốc và tự đối chiếu.
+Hai chế độ kiểm cũ đã chạy lại364/364ca mỗi chế độ với bộ chạy mới,
+giữ nguyên kết quả trước. Rà độc lập không thấy lỗi cần sửa.
 
 Lượt mới [manager-tables-20261025-r2](bot-cua-toi-3/bang-chung/kiem-quan-ly-vi-the/manager-tables-20261025-r2/comparison.json),
 bản dựng b3-position-management-tables-02. So26trường, thêm trạng thái
@@ -70,12 +79,10 @@ Các hàm con có bộ kiểm riêng không tự chứng minh luồng ghép đú
 
 ## Phần kế tiếp bắt buộc
 
-1. Nối thân thật của hai hàm sửa/kiểm đóng còn lại thay trả lời được cấp; so lại
-   toàn chuỗi, mọi tác dụng phụ và trạng thái chọn/vé/yêu cầu.
-2. Nối nguồn settings/shared và nơi gọi từ chương trình chính. Byte
+1. Nối nguồn settings/shared và nơi gọi từ chương trình chính. Byte
    1d6fa0 đã xác nhận là UseHL_TrailingSL; nơi gọiC là 20ef0, còn kiểm
    lệnh máy và các giá trị khác trước khi viết phần điều phối.
-3. Hoàn thiện bot1, điều phối/vào lệnh, cài đặt, bảng hiển thị,
+2. Hoàn thiện bot1, điều phối/vào lệnh, cài đặt, bảng hiển thị,
    trạng thái lưu và so hai EA đầy đủ cùng dữ liệu/cài đặt.
 
 Không lấy số ca đạt làm phần trăm hoàn thành toàn bot.
