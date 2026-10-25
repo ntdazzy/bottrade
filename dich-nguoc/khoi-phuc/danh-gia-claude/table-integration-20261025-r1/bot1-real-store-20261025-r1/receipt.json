@@ -1,0 +1,27 @@
+{
+  "run": "bot1-real-store-20261025-r1",
+  "session_id": "a53543f3-801b-433a-a0d5-e67b7a176bc1",
+  "started": "2026-10-25T16:35:23.9021060Z",
+  "snapshot_utc": "2026-10-25T16:40:50.050860+00:00",
+  "status": "provider-blocked-or-error",
+  "response_is_error": true,
+  "terminal_reason": "api_error",
+  "job_sha256": "32e6318e8b5aa15f62b7c9282d4da80030aad5406eaa594a61b38e0ac4ce32aa",
+  "prompt_sha256": "f5e23afd4b2324bfd6eccbe25dcaeaa08c58d822483d1f65aaeb0ad495929ee0",
+  "response_sha256": "50add66f3fa99e747991ea6ecf80856553a1ae652819ba80bb5d0bdbe5f6a3e4",
+  "actual_requests": 1,
+  "requests": [
+    {
+      "timestamp": "2026-10-25T16:35:27.935Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    }
+  ],
+  "ultracode_requested": true,
+  "ultracode_runtime_confirmed": null,
+  "journal_prefix_bytes": 82495,
+  "journal_prefix_sha256": "ff3479ca202150676cec670e649731bee1863aeee12cbf4c00c46c68c59145c5",
+  "files_sha256": {},
+  "source_validated": false,
+  "whole_bot_complete": false
+}

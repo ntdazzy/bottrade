@@ -1,0 +1,102 @@
+{
+  "snapshot_utc": "2026-10-25T16:57:12.755293+00:00",
+  "jobs": [
+    {
+      "run": "bot1-real-store-20261025-r2",
+      "session_id": "f29e71e6-7b9f-4248-aaac-b9956637e19a",
+      "started": "2026-10-25T16:56:53.1840185Z",
+      "snapshot_utc": "2026-10-25T16:57:12.755293+00:00",
+      "status": "pending-final-response",
+      "response_is_error": null,
+      "terminal_reason": null,
+      "job_sha256": "21965eee566d8566c0d8c23fbda1cac6d55a7e540eef31b061abfc9d8e9175d4",
+      "prompt_sha256": "f5e23afd4b2324bfd6eccbe25dcaeaa08c58d822483d1f65aaeb0ad495929ee0",
+      "response_sha256": null,
+      "actual_requests": 2,
+      "requests": [
+        {
+          "timestamp": "2026-10-25T16:56:56.437Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-25T16:57:11.279Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        }
+      ],
+      "ultracode_requested": true,
+      "ultracode_runtime_confirmed": null,
+      "journal_prefix_bytes": 616204,
+      "journal_prefix_sha256": "9732b75d5847cda0622abb3aa138c39f3489d0244725d37d46d8e7aaf227e90c",
+      "files_sha256": {},
+      "source_validated": false,
+      "whole_bot_complete": false
+    },
+    {
+      "run": "bot1-real-distance-20261025-r1",
+      "session_id": "d1826e30-ec84-4792-8ff7-bea95f23780e",
+      "started": "2026-10-25T16:56:53.1865152Z",
+      "snapshot_utc": "2026-10-25T16:57:12.755293+00:00",
+      "status": "pending-final-response",
+      "response_is_error": null,
+      "terminal_reason": null,
+      "job_sha256": "08343f6159f85335cfbc628353160a792a4ebbb25c364485115097a2e4084ffe",
+      "prompt_sha256": "29df4a63ee29eb0bbad07b4cdba8c53e272f3830e0cb51dfda84f52ab1b22f3a",
+      "response_sha256": null,
+      "actual_requests": 1,
+      "requests": [
+        {
+          "timestamp": "2026-10-25T16:56:54.468Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        }
+      ],
+      "ultracode_requested": true,
+      "ultracode_runtime_confirmed": null,
+      "journal_prefix_bytes": 73469,
+      "journal_prefix_sha256": "5f50a935fd6d9d4b762d27a5afd3bcdb4ea36d7f90041ab3c668163e681f9992",
+      "files_sha256": {},
+      "source_validated": false,
+      "whole_bot_complete": false
+    },
+    {
+      "run": "bot3-management-trade-check-20261025-r1",
+      "session_id": "7be552d1-2014-47e6-b710-fb22fcdc2f8b",
+      "started": "2026-10-25T16:56:53.1821974Z",
+      "snapshot_utc": "2026-10-25T16:57:12.755293+00:00",
+      "status": "pending-final-response",
+      "response_is_error": null,
+      "terminal_reason": null,
+      "job_sha256": "c2ef8da7c50250e20853204ad3fa5ac06d6a1aae542de9e3bd918f9c60917895",
+      "prompt_sha256": "3e6839e25a09644eadfd6b56c3f6bf6805c9c765b42d76461f99c689fbfba76c",
+      "response_sha256": null,
+      "actual_requests": 3,
+      "requests": [
+        {
+          "timestamp": "2026-10-25T16:56:56.478Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-25T16:57:02.698Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-25T16:57:10.254Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        }
+      ],
+      "ultracode_requested": true,
+      "ultracode_runtime_confirmed": null,
+      "journal_prefix_bytes": 613351,
+      "journal_prefix_sha256": "c184a1b902f1120806e04b43e0d0a3854d1265c44779d3b7be82dcbce1983e42",
+      "files_sha256": {},
+      "source_validated": false,
+      "whole_bot_complete": false
+    }
+  ],
+  "whole_bot_complete": false
+}

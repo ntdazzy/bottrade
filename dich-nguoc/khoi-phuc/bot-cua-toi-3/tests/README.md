@@ -40,3 +40,8 @@ Nguồn/công cụ/đầu vào phải giữ đúng mã kiểm tra từng lượt
 Lượt hiện hành manager-flow-claude-20261025-r1:364/364, bản dựng
 b3-position-management-flow-03:0/0. Hai parent gốc chạy từ đầu tới
 trả về; sáu hàm con và dịch vụ được cấp trả lời. Chưa phải hai EA.
+
+Từ lượt manager-tables-20261025-r2, thêm `--table-children` ở mọi bước
+để chạy bốn hàm bảng thật. MQL5 nhận ExecuteTableChildren=true.
+Kết quả version2 dài156byte, thêm6trường con; chế độ cũ vẫn120byte.
+Sửa/kiểm đóng còn được cấp trả lời. Chưa phải EA hoặc máy giao dịch thật.

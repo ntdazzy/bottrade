@@ -1,0 +1,274 @@
+{
+  "base": "0x17156250000",
+  "send": {
+    "context": "0x744d0",
+    "request": "0x744f0",
+    "result": "0x745e0",
+    "slot": "0x1d6e3c",
+    "chart": "0x1d6e28",
+    "digits": "0x1d6e20"
+  },
+  "close": {
+    "functions": [
+      189296,
+      294176
+    ],
+    "filling": 190704,
+    "deviation": 477037,
+    "variables": [
+      477080,
+      477088,
+      473776,
+      476328
+    ]
+  },
+  "pending": {
+    "fn": 255360,
+    "send": 2384,
+    "stopped": 1928724,
+    "virtual": 1929160,
+    "magic_input": 447844,
+    "magic": 477029
+  },
+  "relative_native_storage_bases": {
+    "request": 0,
+    "result": 240,
+    "check": 436
+  },
+  "layout_path": "doi-chung-mt5\\thu-tu-truong-lenh-class-20261024\\layout-class-r1\\trade-layout.json",
+  "layout_sha256": "01e11f8b969576faa9647a53efeaf6a2f7748baa7711a5bc2730981c8883def1",
+  "schemas": {
+    "request": {
+      "captured_address": "0x143a8a25010",
+      "fields": [
+        {
+          "name": "action",
+          "offset": 0,
+          "kind": "i",
+          "value": 101
+        },
+        {
+          "name": "magic",
+          "offset": 4,
+          "kind": "Q",
+          "value": 1234605616436508552
+        },
+        {
+          "name": "order",
+          "offset": 12,
+          "kind": "Q",
+          "value": 2392048381845735320
+        },
+        {
+          "name": "symbol",
+          "offset": 20,
+          "kind": "s",
+          "value": "TRADE_LAYOUT_SYMBOL"
+        },
+        {
+          "name": "volume",
+          "offset": 32,
+          "kind": "d",
+          "value": 1101.25
+        },
+        {
+          "name": "price",
+          "offset": 40,
+          "kind": "d",
+          "value": 1102.25
+        },
+        {
+          "name": "stoplimit",
+          "offset": 48,
+          "kind": "d",
+          "value": 1103.25
+        },
+        {
+          "name": "sl",
+          "offset": 56,
+          "kind": "d",
+          "value": 1104.25
+        },
+        {
+          "name": "tp",
+          "offset": 64,
+          "kind": "d",
+          "value": 1105.25
+        },
+        {
+          "name": "deviation",
+          "offset": 72,
+          "kind": "Q",
+          "value": 3549491147254962088
+        },
+        {
+          "name": "type",
+          "offset": 80,
+          "kind": "i",
+          "value": 102
+        },
+        {
+          "name": "type_filling",
+          "offset": 84,
+          "kind": "i",
+          "value": 103
+        },
+        {
+          "name": "type_time",
+          "offset": 88,
+          "kind": "i",
+          "value": 104
+        },
+        {
+          "name": "expiration",
+          "offset": 92,
+          "kind": "q",
+          "value": 4706933912664188856
+        },
+        {
+          "name": "comment",
+          "offset": 100,
+          "kind": "s",
+          "value": "TRADE_LAYOUT_COMMENT"
+        },
+        {
+          "name": "position",
+          "offset": 112,
+          "kind": "Q",
+          "value": 5864376678073415624
+        },
+        {
+          "name": "position_by",
+          "offset": 120,
+          "kind": "Q",
+          "value": 7021819443482642392
+        }
+      ]
+    },
+    "result": {
+      "captured_address": "0x143a8a25100",
+      "fields": [
+        {
+          "name": "retcode",
+          "offset": 0,
+          "kind": "I",
+          "value": 201
+        },
+        {
+          "name": "deal",
+          "offset": 4,
+          "kind": "Q",
+          "value": 1311768465173141112
+        },
+        {
+          "name": "order",
+          "offset": 12,
+          "kind": "Q",
+          "value": 2541551403420444553
+        },
+        {
+          "name": "volume",
+          "offset": 20,
+          "kind": "d",
+          "value": 1201.25
+        },
+        {
+          "name": "price",
+          "offset": 28,
+          "kind": "d",
+          "value": 1202.25
+        },
+        {
+          "name": "bid",
+          "offset": 36,
+          "kind": "d",
+          "value": 1203.25
+        },
+        {
+          "name": "ask",
+          "offset": 44,
+          "kind": "d",
+          "value": 1204.25
+        },
+        {
+          "name": "comment",
+          "offset": 52,
+          "kind": "s",
+          "value": "TRADE_LAYOUT_RESULT"
+        },
+        {
+          "name": "request_id",
+          "offset": 64,
+          "kind": "I",
+          "value": 202
+        },
+        {
+          "name": "retcode_external",
+          "offset": 68,
+          "kind": "i",
+          "value": 203
+        }
+      ]
+    },
+    "check": {
+      "captured_address": "0x143a8a251c4",
+      "fields": [
+        {
+          "name": "retcode",
+          "offset": 0,
+          "kind": "I",
+          "value": 301
+        },
+        {
+          "name": "balance",
+          "offset": 4,
+          "kind": "d",
+          "value": 1301.25
+        },
+        {
+          "name": "equity",
+          "offset": 12,
+          "kind": "d",
+          "value": 1302.25
+        },
+        {
+          "name": "profit",
+          "offset": 20,
+          "kind": "d",
+          "value": 1303.25
+        },
+        {
+          "name": "margin",
+          "offset": 28,
+          "kind": "d",
+          "value": 1304.25
+        },
+        {
+          "name": "margin_free",
+          "offset": 36,
+          "kind": "d",
+          "value": 1305.25
+        },
+        {
+          "name": "margin_level",
+          "offset": 44,
+          "kind": "d",
+          "value": 1306.25
+        },
+        {
+          "name": "comment",
+          "offset": 52,
+          "kind": "s",
+          "value": "TRADE_LAYOUT_CHECK"
+        }
+      ]
+    }
+  },
+  "options_offsets": {
+    "async_mode": 660,
+    "margin_mode": 681,
+    "log_level": 685
+  },
+  "public_states_wired": false,
+  "whole_ea_complete": false
+}

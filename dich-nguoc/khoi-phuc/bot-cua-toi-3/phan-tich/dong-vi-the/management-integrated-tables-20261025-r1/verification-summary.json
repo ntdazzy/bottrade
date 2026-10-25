@@ -1,0 +1,27 @@
+{
+  "run": "manager-tables-20261025-r2",
+  "build": "b3-position-management-tables-02",
+  "cases": 364,
+  "matched": 364,
+  "result_sha256": {
+    "original": "5701ce57416be2dfc9392b9f62b06397c8ead448e1a61101b6da79f749d84478",
+    "mql5": "5701ce57416be2dfc9392b9f62b06397c8ead448e1a61101b6da79f749d84478"
+  },
+  "parent_instruction_sites": 6038,
+  "table_instruction_sites": 119,
+  "table_calls": {
+    "0x47f10": 600,
+    "0x482b0": 302,
+    "0x484c0": 282,
+    "0x48560": 258
+  },
+  "comparison_sha256": "6b7a2d2e113ddc3b677a2d8f774fb8517e5a259388679d4587606893d6e4b837",
+  "record_bytes": 156,
+  "compared_fields": 26,
+  "regression_run": "manager-parent-regression-20261025-r1",
+  "regression_sha256": "fc6a803d25990d0ea008bb8637f8f62d4dac076f345a9844465586e8751ff31b",
+  "modify_and_close_intercepted": true,
+  "full_ea": false,
+  "whole_manager_complete": false,
+  "whole_bot_complete": false
+}

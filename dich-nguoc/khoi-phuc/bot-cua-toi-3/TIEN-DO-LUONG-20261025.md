@@ -3,7 +3,8 @@
 Đã kiểm cả vòng quản lý mua/bán thật/ảo: **364/364 ca khớp**,
 biên dịch **0 lỗi, 0 cảnh báo**. Có nhiều vị thế, đổi chế độ giữa vòng,
 lấy giá thất bại, sửa/đóng lỗi, vé64bit và bộ đếm tràn.
-Sáu hàm con sửa/đóng/mức dừng-chốt/giờ được cấp trả lời;
+Bốn hàm mức dừng/chốt/chờ/ghi giờ đã chạy thân thật;
+sửa và kiểm đóng vẫn được cấp trả lời;
 **chưa ghép đủ EA hoặc chạy hai bot hoàn chỉnh**.
 [Phạm vi mới và phần còn thiếu](../PHAN-TICH-GHEP-QUAN-LY-BOT-3.md).
 

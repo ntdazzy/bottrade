@@ -1,10 +1,10 @@
-// Full parent control-flow check with supplied service and child replies; no orders.
+// Parent-flow check with supplied services and optional table helpers; no orders.
 #property strict
 #property script_show_inputs
 #include "../../Include/bot-cua-toi-3/Bot3PositionModify.mqh"
 #include "../../Include/bot-cua-toi-3/Bot3PositionClose.mqh"
-#include "../../Include/bot-cua-toi-3/Bot3VirtualStops.mqh"
 input string CheckRun="";
+input bool ExecuteTableChildren=false;
 union FlowBits { double d;ulong u; };
 struct FlowPosition
 {
@@ -124,6 +124,12 @@ double FCandleOpen(const string symbol,const ENUM_TIMEFRAMES frame,const int shi
    double value=FCase[1]!=0 ? 95. : 105.;FTrace(12,(ulong)frame,(ulong)(long)shift,FBits(value),FText(symbol));return value;
 }
 void FPrint(const string value) { FTrace(7,FText(value)); }
+void FPrint(const string first,const int slots,const string second,const int positions,
+            const string third,const long ticket,const string fourth)
+{
+   FTrace(24,FText(first),FText(second),FText(third),FText(fourth));
+   FTrace(25,(ulong)(long)slots,(ulong)(long)positions,(ulong)ticket);
+}
 int FLastError() { return FCase[17]; }
 bool FModify(Bot3PendingRequestState &state,Bot3TradeSendOptions &options,const ulong ticket,const double sl,const double tp)
 {
@@ -143,22 +149,6 @@ bool FTryClose(Bot3PendingRequestState &state,Bot3TradeSendOptions &options,cons
          }
    return FCase[11]!=0;
 }
-double FStopLevel(Bot3VirtualStopState &table,long &open_tickets[],const string &symbol,const double &unit,
-                   const int side,const double price,const double distance,const long ticket)
-{
-   if(symbol!="CHECK") FFail(30);
-   FTrace(20,(ulong)(long)side,FBits(price),FBits(distance),(ulong)ticket);return FStopReply;
-}
-double FTakeLevel(Bot3VirtualStopState &table,long &open_tickets[],const double take,const long ticket)
-{
-   FTrace(21,(ulong)ticket,FBits(take));return FTakeReply;
-}
-bool FDelay(Bot3VirtualStopState &table,const int seconds,const long ticket)
-{
-   FTrace(22,(ulong)ticket,(ulong)(long)seconds,(ulong)FCase[12]);return FCase[12]!=0;
-}
-void FStamp(Bot3VirtualStopState &table,const long ticket) { FTrace(23,(ulong)ticket); }
-
 #define PositionsTotal FPositionsTotal
 #define PositionGetTicket FPositionTicket
 #define PositionGetDouble FPositionDouble
@@ -173,6 +163,33 @@ void FStamp(Bot3VirtualStopState &table,const long ticket) { FTrace(23,(ulong)ti
 #define iOpen FCandleOpen
 #define GetLastError FLastError
 #define Print FPrint
+#include "../../Include/bot-cua-toi-3/Bot3VirtualStops.mqh"
+double FStopLevel(Bot3VirtualStopState &table,long &open_tickets[],const string &symbol,const double &unit,
+                   const int side,const double price,const double distance,const long ticket)
+{
+   if(symbol!="CHECK") FFail(30);
+   FTrace(20,(ulong)(long)side,FBits(price),FBits(distance),(ulong)ticket);
+   if(ExecuteTableChildren) return Bot3VirtualStopLevel(table,open_tickets,symbol,unit,side,price,distance,ticket);
+   return FStopReply;
+}
+double FTakeLevel(Bot3VirtualStopState &table,long &open_tickets[],const double take,const long ticket)
+{
+   FTrace(21,(ulong)ticket,FBits(take));
+   if(ExecuteTableChildren) return Bot3VirtualTakeLevel(table,open_tickets,take,ticket);
+   return FTakeReply;
+}
+bool FDelay(Bot3VirtualStopState &table,const int seconds,const long ticket)
+{
+   if(ExecuteTableChildren)
+   { FTrace(26,(ulong)ticket,(ulong)(long)seconds);return Bot3VirtualStopDelayPassed(table,seconds,ticket); }
+   FTrace(22,(ulong)ticket,(ulong)(long)seconds,(ulong)FCase[12]);return FCase[12]!=0;
+}
+void FStamp(Bot3VirtualStopState &table,const long ticket)
+{
+   FTrace(23,(ulong)ticket);
+   if(ExecuteTableChildren) Bot3VirtualStopStamp(table,ticket);
+}
+
 #define Bot3ModifyPosition FModify
 #define Bot3TryClosePosition FTryClose
 #define Bot3VirtualStopLevel FStopLevel
@@ -308,6 +325,15 @@ void FWriteResult(const int file,const int id,const bool returned)
    FileWriteDouble(file,FShared.tick.bid);FileWriteDouble(file,FShared.tick.ask);FileWriteDouble(file,FShared.anchor.step_reference);
    FileWriteInteger(file,FCalls);FileWriteLong(file,(long)FHash);FileWriteLong(file,(long)cache);
    FileWriteLong(file,(long)table);FileWriteLong(file,(long)positions);
+   if(ExecuteTableChildren)
+   {
+      int size=ArraySize(FShared.open_tickets);bool series=ArrayGetAsSeries(FShared.open_tickets);
+      ulong tickets=(ulong)0xcbf29ce484222325;
+      for(int i=0;i<size;i++) tickets=FHashWord(tickets,(ulong)FShared.open_tickets[series ? size-1-i : i]);
+      FileWriteLong(file,FShared.table.reported_ticket);FileWriteLong(file,FShared.table.reported_take_ticket);
+      FileWriteInteger(file,size);FileWriteInteger(file,(int)series);FileWriteLong(file,(long)tickets);
+      FileWriteInteger(file,FSelected);
+   }
 }
 int OnStart()
 {
@@ -325,7 +351,7 @@ int OnStart()
    int output=FileOpen(folder+"mql5-results.bin",FILE_WRITE|FILE_BIN);
    int formats=FileOpen(folder+"cast-values.bin",FILE_WRITE|FILE_BIN);
    if(output==INVALID_HANDLE || formats==INVALID_HANDLE) { FileClose(source);if(output!=INVALID_HANDLE) FileClose(output);if(formats!=INVALID_HANDLE) FileClose(formats);return 8; }
-   FileWriteInteger(output,magic);FileWriteInteger(output,version);FileWriteInteger(output,count);
+   FileWriteInteger(output,magic);FileWriteInteger(output,ExecuteTableChildren ? 2 : version);FileWriteInteger(output,count);
    FileWriteInteger(formats,magic);FileWriteInteger(formats,version);FileWriteInteger(formats,count);
    for(int id=0;id<count;id++)
    {

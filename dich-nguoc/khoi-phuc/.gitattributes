@@ -273,3 +273,14 @@
 /claude-thuc-hien/bot3-manager-flow-*/** -text
 /danh-gia-claude/parent-flow-*/** -text
 /danh-gia-doc-lap/parent-flow-*/** -text
+
+# Integrated virtual-table execution evidence.
+/bot-cua-toi-3/phan-tich/dong-vi-the/management-integrated-tables-*/** -text
+/bot-cua-toi-3/phan-tich/dong-vi-the/virtual-stops-20261025-r1/analysis.json -text
+/bot-cua-toi-3/bang-chung/bien-dich/b3-position-management-tables-*/** -text
+/bot-cua-toi-1/phan-tich/dong-vi-the/management-real-spec-*/** -text
+/claude-thuc-hien/bot1-real-*/** -text
+/claude-thuc-hien/bot3-management-trade-check-*/** -text
+/danh-gia-doc-lap/table-integration-*/** -text
+/danh-gia-claude/table-integration-*/** -text
+/danh-gia-claude/table-parallel-*/** -text

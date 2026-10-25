@@ -1,0 +1,14 @@
+{
+  "reviewer": "/root/review_bot3_parent_flow",
+  "read_only": true,
+  "findings": [],
+  "reviewed_run": "manager-tables-20261025-r2",
+  "compared_cases": 364,
+  "regression_run": "manager-parent-regression-20261025-r1",
+  "actual_table_helpers": 4,
+  "remaining_intercepts": [
+    "Modify",
+    "TryClose"
+  ],
+  "no_complete_ea_claim": true
+}

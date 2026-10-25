@@ -1,4 +1,5 @@
-"""Compare both complete management parents, with supplied terminal and child replies.
+"""Compare complete management parents with supplied terminal replies.
+--table-children executes the four virtual table helpers; modify/close stay supplied.
 prepare -> compile -> mql5 -> original -> compare. This is not a complete EA or broker test.
 """
 import argparse,copy,importlib.util,json,math,re,shutil,struct,subprocess
@@ -13,6 +14,11 @@ MASK=B.MASK;MAGIC=inputs.MAGIC;RESULT=struct.Struct('<7iIIQ5Qi4Q');ANALYSIS=B.AN
 PUB_PATH=ROOT/'cong-cu/kiem-ban-git-quan-ly.py';pub=module('flow3_closure',PUB_PATH)
 SCRIPT='Scripts/bot-cua-toi-3/Bot3PositionManagementFlowCheck.mq5'
 CONTRACT=ROOT/'claude-thuc-hien/bot3-manager-flow-check-20261025-r1/CONTRACT.md'
+TABLE_MODE=False
+TABLE_ANALYSIS=HOME/'phan-tich/dong-vi-the/virtual-stops-20261025-r1/analysis.json'
+TABLE_CONTRACT=HOME/'phan-tich/dong-vi-the/management-integrated-tables-20261025-r1/contract.md'
+TABLE_STATE=struct.Struct('<qqiiQi')
+TABLE_FIELDS=['reported_ticket','reported_take_ticket','open_tickets_size','open_tickets_series','open_tickets_hash','selected_index']
 FLOAT_PROOF=ROOT/'doi-chung-mt5/cast-double-20261025/double-cast-native-r1/double-cast-contract.json'
 FIELDS=['id','returned','counter','mode','live_count','eligible','guard','index','error_count','last_ticket','current_stop','current_take','bid','ask','copied_step','calls','ordered_hash','cache_hash','table_hash','positions_hash']
 SCOPE=dict(full_management_parents_executed=True,whole_manager_complete=False,whole_bot_complete=False,full_ea=False,child_helpers_intercepted=True,terminal_replies_supplied=True,original_ex5_changed=False)
@@ -25,7 +31,7 @@ INT_CFG={0x6d564:'magic',0x6d520:'enabled',0x6d514:'mode',0x7449c:'timed_delay_s
 BYTE_CFG={0x6d508:'use_anchor',0x1d6fa0:'high_low_eligible',0x6d5c8:'high_low_before_open',0x6d5dc:'high_low_shift',0x6d5f8:'step_enabled',0x6d29c:'candle_shift'}
 def identity():
     old=B.identity();base=HOME/'source/MQL5';names=sorted(p.relative_to(base.resolve()).as_posix() for p in pub.closure(base/SCRIPT,base))
-    return dict(original_ex5_sha256=old['original_ex5_sha256'],tool_sha256=sha(Path(__file__)),analysis_sha256=sha(ANALYSIS/'analysis.json'),contract_sha256=sha(CONTRACT),probe_sha256=sha(cpu.PROBE),helpers_sha256=old['helpers_sha256']|{str(p.relative_to(ROOT)):sha(p) for p in [B_PATH,CASE_PATH,PUB_PATH,FLOAT_PROOF]},sources_sha256={n:sha(base/n) for n in names})
+    return dict(execute_table_children=TABLE_MODE,table_analysis_sha256=sha(TABLE_ANALYSIS) if TABLE_MODE else None,table_contract_sha256=sha(TABLE_CONTRACT) if TABLE_MODE else None,original_ex5_sha256=old['original_ex5_sha256'],tool_sha256=sha(Path(__file__)),analysis_sha256=sha(ANALYSIS/'analysis.json'),contract_sha256=sha(CONTRACT),probe_sha256=sha(cpu.PROBE),helpers_sha256=old['helpers_sha256']|{str(p.relative_to(ROOT)):sha(p) for p in [B_PATH,CASE_PATH,PUB_PATH,FLOAT_PROOF]+([TABLE_ANALYSIS,TABLE_CONTRACT] if TABLE_MODE else [])},sources_sha256={n:sha(base/n) for n in names})
 def signed64(n):return ((n+(1<<63))&MASK)-(1<<63)
 def normalized(n):
     value=float(signed64(n));return float(-(1<<63) if value>=1<<63 or value<-(1<<63) else int(value))
@@ -39,7 +45,7 @@ def casts(path,count):
     require(pos==len(raw),'CAST_TRAILING_BYTES');return out
 class Original(B.Original):
     def __init__(self,fixture,formats):
-        super().__init__(fixture);self.formats=formats
+        self.table_children=TABLE_MODE;self.table_covered=set();self.table_calls={};super().__init__(fixture);self.formats=formats
         eb=next(a for a,k in self.apis.items() if k==4)-0x7c2890
         for rva,api in {0x7d7df0:102,0x7d7f70:103,0x7d7fc0:104,0x7d8010:105,0x7d7da0:106,0x7d3b50:107,0x7d3d40:108,0x7d3bc0:109}.items():
             address=eb+rva
@@ -48,6 +54,14 @@ class Original(B.Original):
                 self.m.mem_write(address,b'\xc3');self.m.hook_add(self.uc.UC_HOOK_CODE,self.call,begin=address,end=address)
             self.apis[address]=api
         self.m.hook_add(self.uc.UC_HOOK_CODE,self.visit,begin=self.base+0x32f60,end=self.base+0x3badf)
+        if self.table_children:
+            data=json.loads(TABLE_ANALYSIS.read_text());require(data['original_ex5_sha256']==pre.validation.original_hash(3),'TABLE_EX5_DIFFERS')
+            for fn in data['functions']:
+                lo,hi=int(fn['rva'],16),int(fn['end_rva'],16)
+                require(__import__('hashlib').sha256(bytes(self.m.mem_read(self.base+lo,hi-lo))).hexdigest()==fn['native_bytes_sha256'],'TABLE_NATIVE_CODE_DIFFERS')
+                self.m.hook_add(self.uc.UC_HOOK_CODE,self.table_visit,begin=self.base+lo,end=self.base+hi-1)
+            if not any(lo<=0x71000000<=hi for lo,hi,_ in self.m.mem_regions()):self.m.mem_map(0x71000000,0x20000)
+    def table_visit(self,m,address,size,user):self.table_covered.add(address-self.base)
     def visit(self,m,address,size,user):self.covered.add(address-self.base)
     def text_null(self,descriptor):return int(struct.unpack('<Q',self.m.mem_read(descriptor+4,8))[0]==0)
     def selected_row(self):return self.positions[self.selected] if 0<=self.selected<len(self.positions) else None
@@ -57,6 +71,13 @@ class Original(B.Original):
             if row['ticket']==ticket:self.positions.pop(i);self.selected=-1;break
     def child(self,m,address,size,user):
         x=self.x;c=self.case;api=self.apis[address];r=lambda n:m.reg_read(getattr(x,'UC_X86_REG_'+n))&MASK;value=0
+        if self.table_children and api in [1,11,2,6]:
+            key=hex(address-self.base);self.table_calls[key]=self.table_calls.get(key,0)+1
+            if api==1:self.event(20,r('RCX'),r('XMM1'),r('XMM2'),r('R9'))
+            elif api==11:self.event(21,r('RDX'),r('XMM0'))
+            elif api==2:self.event(26,r('RCX'),self.integer(0x6d518))
+            else:self.event(23,r('RCX'))
+            return
         if api==1:self.event(20,r('RCX'),r('XMM1'),r('XMM2'),r('R9'));m.reg_write(x.UC_X86_REG_XMM0,pre.bits(self.stop_reply))
         elif api==11:self.event(21,r('RDX'),r('XMM0'));m.reg_write(x.UC_X86_REG_XMM0,pre.bits(self.take_reply))
         elif api==2:self.event(22,r('RCX'),self.integer(0x6d518),c['delay_pass']);value=c['delay_pass']
@@ -101,7 +122,17 @@ class Original(B.Original):
             m.reg_write(x.UC_X86_REG_RAX,c['tick_ok']);return
         if api==9:require(a==0,'BAD_TIME_OVERLOAD');self.event(19,1061);m.reg_write(x.UC_X86_REG_RAX,1061);return
         if api==10:
-            require(a==2 and b==1 and r('R9')==0x590008,'BAD_PRINT_SIGNATURE');descriptor=struct.unpack('<Q',m.mem_read(r('RSP')+0x28,8))[0];text=self.text(descriptor);self.event(7,pre.entry.text_hash(text));self.prints.append(text);m.reg_write(x.UC_X86_REG_RAX,0);return
+            require(a==2,'BAD_PRINT_OPERATION');sp=r('RSP')
+            if b==1:
+                require(r('R9')==0x590008,'BAD_PRINT_SIGNATURE');descriptor=struct.unpack('<Q',m.mem_read(sp+0x28,8))[0];text=self.text(descriptor);self.event(7,pre.entry.text_hash(text));self.prints.append(text)
+            elif b==7 and self.table_children:
+                tags=[r('R9')&0xffffffff]+[struct.unpack('<I',m.mem_read(sp+0x30+16*i,4))[0] for i in range(6)]
+                require(tags==[0x590008,0x520004,0x590008,0x520004,0x590008,0x550005,0x590008],'BAD_TABLE_PRINT_TAGS')
+                values=[struct.unpack('<Q',m.mem_read(sp+0x28+16*i,8))[0] for i in range(7)]
+                strings=[self.text(values[i]) for i in [0,2,4,6]];slots=struct.unpack('<i',struct.pack('<I',values[1]&0xffffffff))[0];positions=struct.unpack('<i',struct.pack('<I',values[3]&0xffffffff))[0]
+                self.event(24,*(pre.entry.text_hash(v) for v in strings));self.event(25,slots,positions,values[5]);self.prints.append(dict(strings=strings,slots=slots,positions=positions,ticket=signed64(values[5])))
+            else:raise ValueError('BAD_PRINT_COUNT '+str(b))
+            m.reg_write(x.UC_X86_REG_RAX,0);return
         if api in [107,108,109]:
             tf=b;shift=r('R9')&0xffffffff;require(self.text(a)=='CHECK','BAD_CANDLE_SYMBOL')
             if api==107:require(shift in [0,1],'BAD_TIME_SHIFT');value=900 if shift else 1100;raw=value;m.reg_write(x.UC_X86_REG_RAX,value)
@@ -130,11 +161,26 @@ class Original(B.Original):
         for i,row in enumerate(self.positions):
             if row['ticket']!=0:stop[i]=[normalized(row['ticket']),self.stop_reply,0.];take[i]=[normalized(row['ticket']),self.take_reply]
         m.mem_write(self.base+0x6d680,struct.pack('<1500d',*(v for row in stop for v in row)));m.mem_write(self.base+0x70560,struct.pack('<1000d',*(v for row in take for v in row)))
+        if self.table_children:
+            m.mem_write(self.base+0x73458,b'\0'*16);descriptor=self.base+0x1d6d10
+            m.mem_write(descriptor,struct.pack('<Q',0x800010055)+b'\0'*44);m.mem_write(descriptor+28,struct.pack('<Q',0x71000000))
         top=0x50020000-0x108;m.mem_write(top,struct.pack('<Q',0x60000000));m.reg_write(x.UC_X86_REG_RSP,top);m.emu_start(self.base+(0x32f60 if c['buy'] else 0x37590),0x60000000,timeout=15000000,count=2000000);require(m.reg_read(x.UC_X86_REG_RIP)==0x60000000,'MANAGER_DID_NOT_RETURN')
         raw=b''.join(struct.pack('<5Q',*e) for e in self.events);rows=bytes(m.mem_read(self.base+0x6d680,12000))+bytes(m.mem_read(self.base+0x70560,8000));remaining=b''.join(struct.pack('<Q',r['ticket']) for r in self.positions)
-        return RESULT.pack(c['id'],m.reg_read(x.UC_X86_REG_RAX)&255,self.integer(0x74430),self.integer(0x6d514),len(self.positions),m.mem_read(self.base+0x1d6fa0,1)[0],m.mem_read(self.base+0x73450,1)[0],struct.unpack('<I',m.mem_read(self.base+0x74934,4))[0],struct.unpack('<I',m.mem_read(self.base+0x7448c,4))[0],self.read(0x74838),self.read(0x6d670),self.read(0x724a0),self.read(0x74798),self.read(0x747a0),self.read(0x74428),len(self.events),B.fnv(raw),B.fnv(bytes(m.mem_read(self.base+0x72e10,1600))),B.fnv(rows),B.fnv(remaining))
+        result=RESULT.pack(c['id'],m.reg_read(x.UC_X86_REG_RAX)&255,self.integer(0x74430),self.integer(0x6d514),len(self.positions),m.mem_read(self.base+0x1d6fa0,1)[0],m.mem_read(self.base+0x73450,1)[0],struct.unpack('<I',m.mem_read(self.base+0x74934,4))[0],struct.unpack('<I',m.mem_read(self.base+0x7448c,4))[0],self.read(0x74838),self.read(0x6d670),self.read(0x724a0),self.read(0x74798),self.read(0x747a0),self.read(0x74428),len(self.events),B.fnv(raw),B.fnv(bytes(m.mem_read(self.base+0x72e10,1600))),B.fnv(rows),B.fnv(remaining))
+        if self.table_children:
+            descriptor=self.base+0x1d6d10;n=struct.unpack('<i',m.mem_read(descriptor+8,4))[0];require(0<=n<=4096,'BAD_OPEN_TICKETS_SIZE')
+            series=int(bool(struct.unpack('<H',m.mem_read(descriptor+2,2))[0]&0x10));ptr=struct.unpack('<Q',m.mem_read(descriptor+28,8))[0]
+            result+=TABLE_STATE.pack(signed64(self.read(0x73458)),signed64(self.read(0x73460)),n,series,B.fnv(bytes(m.mem_read(ptr,n*8)) if n else b''),self.selected)
+        return result
 def main():
-    p=argparse.ArgumentParser(description=__doc__);p.add_argument('mode',choices=['prepare','mql5','original','compare']);p.add_argument('run');p.add_argument('--build');a=p.parse_args();require(re.fullmatch('[a-z0-9-]{1,50}',a.run),'BAD_RUN')
+    p=argparse.ArgumentParser(description=__doc__);p.add_argument('mode',choices=['prepare','mql5','original','compare']);p.add_argument('run');p.add_argument('--build');p.add_argument('--table-children',action='store_true');a=p.parse_args();require(re.fullmatch('[a-z0-9-]{1,50}',a.run),'BAD_RUN')
+    global TABLE_MODE
+    TABLE_MODE=a.table_children
+    SCOPE['virtual_table_children_executed']=TABLE_MODE
+    if TABLE_MODE:
+        SCOPE.update(modify_child_intercepted=True,close_child_intercepted=True)
+        LIMITS[1]='Stop/take/delay/stamp run their actual original and MQL5 bodies. Modify/try-close replies and provider-side effects are supplied. The matrix does not prove every table-growth, full-table or allocation-failure branch.'
+    version=2 if TABLE_MODE else 1;size=RESULT.size+(TABLE_STATE.size if TABLE_MODE else 0);fields=FIELDS+(TABLE_FIELDS if TABLE_MODE else [])
     folder=HOME/'bang-chung/kiem-quan-ly-vi-the'/a.run;rows=inputs.cases();current=identity()
     if a.mode=='prepare':
         folder.mkdir(parents=True,exist_ok=False);(folder/'cases.bin').write_bytes(inputs.encode(rows));tested=folder/'tested-sources';tested.mkdir()
@@ -147,7 +193,7 @@ def main():
         for n,digest in current['sources_sha256'].items():require(sha(MT/'MQL5'/n)==build['sources_sha256'][n]==digest,'SOURCE_DIFFERS '+n)
         binary=MT/'MQL5'/Path(SCRIPT).with_suffix('.ex5');require(sha(binary)==build['binary_sha256']==sha(receipt.parent/binary.name),'BINARY_DIFFERS')
         files=MT/'MQL5/Files/bot3-position-management-flow'/a.run;files.mkdir(parents=True,exist_ok=False);shutil.copyfile(folder/'cases.bin',files/'cases.bin');preset=MT/'MQL5/Presets'/('b3-full-flow-'+a.run+'.set');ini=MT/('b3-full-flow-'+a.run+'.ini')
-        with preset.open('x',encoding='utf-16') as f:f.write('CheckRun='+a.run+'\n')
+        with preset.open('x',encoding='utf-16') as f:f.write('CheckRun='+a.run+'\nExecuteTableChildren='+str(TABLE_MODE).lower()+'\n')
         with ini.open('x',encoding='utf-16') as f:f.write('[Experts]\nEnabled=0\nAllowLiveTrading=0\nAllowDllImport=0\n[StartUp]\nScript=bot-cua-toi-3\\Bot3PositionManagementFlowCheck\nScriptParameters='+preset.name+'\nSymbol=XAUUSD_NOCOST_V2\nPeriod=M15\nShutdownTerminal=1\n')
         proc=subprocess.Popen(f'"{MT/"terminal64.exe"}" /portable /config:"{ini}"',cwd=MT,creationflags=subprocess.CREATE_NO_WINDOW)
         try:code=proc.wait(timeout=120)
@@ -159,21 +205,22 @@ def main():
     if a.mode=='original':
         require(not (folder/'original-results.bin').exists(),'RESULT_EXISTS');formats=casts(folder/'cast-values.bin',len(rows));fixture=cpu.CpuFixture()
         try:
-            cpu.verify_probe(fixture,current['probe_sha256']);runner=Original(fixture,formats);raw=bytearray(struct.pack('<3i',MAGIC,1,len(rows)));traces=[]
+            cpu.verify_probe(fixture,current['probe_sha256']);runner=Original(fixture,formats);raw=bytearray(struct.pack('<3i',MAGIC,version,len(rows)));traces=[]
             for c in rows:
                 try:raw+=runner.run(c)
                 except Exception as error:
                     value=dict(case=c['id'],profile=c['profile'],buy=c['buy'],rva=hex(runner.m.reg_read(runner.x.UC_X86_REG_RIP)-runner.base),error=str(error),events=runner.events[-30:])
                     save(folder/'attempt-error.json',value);raise RuntimeError(json.dumps(value)) from error
                 traces.append(dict(id=c['id'],profile=c['profile'],buy=c['buy'],events=runner.events,prints=runner.prints))
-            (folder/'original-results.bin').write_bytes(raw);save(folder/'original-traces.json',traces);save(folder/'original-run.json',dict(**current,cases=len(rows),result_sha256=sha(folder/'original-results.bin'),casts_sha256=sha(folder/'cast-values.bin'),instructions=sorted(hex(n) for n in runner.covered),nan_fixture=runner.nan.report(),**SCOPE));print(json.dumps(dict(cases=len(rows),instructions=len(runner.covered))))
+            (folder/'original-results.bin').write_bytes(raw);save(folder/'original-traces.json',traces);save(folder/'original-run.json',dict(**current,cases=len(rows),result_sha256=sha(folder/'original-results.bin'),casts_sha256=sha(folder/'cast-values.bin'),instructions=sorted(hex(n) for n in runner.covered),table_instructions=sorted(hex(n) for n in runner.table_covered),table_calls=runner.table_calls,nan_fixture=runner.nan.report(),**SCOPE));print(json.dumps(dict(cases=len(rows),instructions=len(runner.covered))))
         finally:fixture.close()
         return
     for n in ['original-run.json','mql5-run.json']:
         rec=json.loads((folder/n).read_text());require(all(rec[k]==v for k,v in current.items()) and rec['result_sha256']==sha(folder/n.replace('-run.json','-results.bin')) and rec['casts_sha256']==sha(folder/'cast-values.bin'),'RUN_IDENTITY_DIFFERS')
-    native=(folder/'original-results.bin').read_bytes();actual=(folder/'mql5-results.bin').read_bytes();require(native[:12]==actual[:12]==struct.pack('<3i',MAGIC,1,len(rows)) and len(native)==len(actual)==12+RESULT.size*len(rows),'BAD_RESULTS');failed=[]
+    native=(folder/'original-results.bin').read_bytes();actual=(folder/'mql5-results.bin').read_bytes();require(native[:12]==actual[:12]==struct.pack('<3i',MAGIC,version,len(rows)) and len(native)==len(actual)==12+size*len(rows),'BAD_RESULTS');failed=[]
     for c in rows:
-        off=12+c['id']*RESULT.size;n=RESULT.unpack_from(native,off);r=RESULT.unpack_from(actual,off)
-        if n!=r:failed.append(dict(id=c['id'],buy=c['buy'],profile=c['profile'],group=c['group'],differences={k:[x,y] for k,x,y in zip(FIELDS,n,r) if x!=y}))
+        off=12+c['id']*size;n=RESULT.unpack_from(native,off);r=RESULT.unpack_from(actual,off)
+        if TABLE_MODE:n+=TABLE_STATE.unpack_from(native,off+RESULT.size);r+=TABLE_STATE.unpack_from(actual,off+RESULT.size)
+        if n!=r:failed.append(dict(id=c['id'],buy=c['buy'],profile=c['profile'],group=c['group'],differences={k:[x,y] for k,x,y in zip(fields,n,r) if x!=y}))
     report=dict(cases=len(rows),matched=len(rows)-len(failed),failed=len(failed),first_failures=failed[:25],result_sha256=dict(original=sha(folder/'original-results.bin'),mql5=sha(folder/'mql5-results.bin')),**SCOPE,limits=LIMITS);save(folder/'comparison.json',report);print(json.dumps(report));raise SystemExit(bool(failed))
 if __name__=='__main__':main()

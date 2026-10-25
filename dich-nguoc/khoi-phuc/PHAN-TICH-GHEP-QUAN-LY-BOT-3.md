@@ -3,12 +3,14 @@
 Đã kiểm vòng quản lý mua/bán thật/ảo **364/364 ca khớp**, biên dịch
 **0 lỗi, 0 cảnh báo**. Hai thân gốc chạy từ đầu tới trả về, gồm nhiều
 vị thế, đổi chế độ giữa vòng, sửa/đóng/lấy giá lỗi và vé 64 bit.
-**Sáu hàm con được cấp trả lời; chưa có EA đầy đủ hoặc chạy cặp hai EA.**
+**Bốn hàm bảng đã chạy thân thật; hai hàm sửa/kiểm đóng còn được cấp trả lời. Chưa có EA đầy đủ hoặc chạy cặp hai EA.**
 
-Lượt hiện hành [manager-flow-claude-20261025-r1](bot-cua-toi-3/bang-chung/kiem-quan-ly-vi-the/manager-flow-claude-20261025-r1/comparison.json),
-bản dựng b3-position-management-flow-03. So 20 trường và băm toàn thứ tự,
-bảng 200 ô/bảng 2.500 ô, vé sống; kết quả cùng SHA
-fc6a803d25990d0ea008bb8637f8f62d4dac076f345a9844465586e8751ff31b.
+Lượt mới [manager-tables-20261025-r2](bot-cua-toi-3/bang-chung/kiem-quan-ly-vi-the/manager-tables-20261025-r2/comparison.json),
+bản dựng b3-position-management-tables-02. So26trường, thêm trạng thái
+bảng con;600/302/282/258 lần chạy mức dừng/chốt/chờ/ghi giờ. Kết quả cùngSHA
+5701ce57416be2dfc9392b9f62b06397c8ead448e1a61101b6da79f749d84478.
+[Phạm vi và cách chạy](bot-cua-toi-3/phan-tich/dong-vi-the/management-integrated-tables-20261025-r1/README.md).
+Chế độ cấp đáp cũ cũng kiểm lại364/364 với mã mới, vẫn cùng kết quả.
 
 Đã phát hiện và sửa nhãn thông báo bán Last Bid→Last Ask. Mô tả Root
 ban đầu sai; mã Claude đã làm theo mô tả đó. Giữ nguyên136ca r1 có 2 lỗi,
@@ -68,7 +70,7 @@ Các hàm con có bộ kiểm riêng không tự chứng minh luồng ghép đú
 
 ## Phần kế tiếp bắt buộc
 
-1. Nối thân thật của sáu hàm con thay cho trả lời được cấp; so lại
+1. Nối thân thật của hai hàm sửa/kiểm đóng còn lại thay trả lời được cấp; so lại
    toàn chuỗi, mọi tác dụng phụ và trạng thái chọn/vé/yêu cầu.
 2. Nối nguồn settings/shared và nơi gọi từ chương trình chính. Byte
    1d6fa0 đã xác nhận là UseHL_TrailingSL; nơi gọiC là 20ef0, còn kiểm
