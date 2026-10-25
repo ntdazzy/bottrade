@@ -1,0 +1,13 @@
+{
+  "status": "compile-only-passed",
+  "run": "b1-management-timed-compile-02",
+  "receipt_sha256": "a21c5c1fed56fbaa828c565c40fc5266029bbd538ade32739c8995c5fdc42a13",
+  "candidate_source_sha256": "0902b5be842b7ec1f1b11dd2669145841247ab41a2fa9f070bec65c45b1ec166",
+  "test_script_sha256": "a7e877cc2648162c9946e5e2aab8bd877cff087a5e7fc47f89949cee9091088a",
+  "errors": 0,
+  "warnings": 0,
+  "whole_bot_complete": false,
+  "limits": [
+    "No runtime/native comparison for this bounded branch."
+  ]
+}
