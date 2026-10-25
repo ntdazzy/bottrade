@@ -1,0 +1,14 @@
+{
+  "author": "Claude Opus 5.5 max; Codex checked inputs and adapted two interface keys, added 8 supplied delay-pass inputs",
+  "provider_terminal_status": "usage_limit_reached after Write; no final SUMMARY.md",
+  "proposal_sha256": "28db94c26a2888ac0996b812c2e362f4b9058cdc528b42874f957b3cb1c7f20d",
+  "canonical_sha256": "7ace50b214de9be0220dfda33991ba06d4abc6be9a284a6d2d82635b1425a1a9",
+  "cases": 364,
+  "proposal_cases": 356,
+  "configuration_equal_to_root_inputs": true,
+  "expected_outputs_computed": false,
+  "source_validated": true,
+  "whole_bot_complete": false,
+  "verified_run": "manager-flow-claude-20261025-r1",
+  "comparison_sha256": "aa15ecb647ad7c32dcadcc9f7a7dd49f8aad880006703f5950f820f878c64292"
+}

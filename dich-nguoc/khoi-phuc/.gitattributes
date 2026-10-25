@@ -263,3 +263,13 @@
 /danh-gia-doc-lap/complete-management-*/** -text
 /doi-chung-mt5/cast-double-20261025/** -text
 /cong-cu/kiem-ban-git-quan-ly.py -text
+
+# Parent-flow checks retain exact tested bytes.
+/bot-cua-toi-3/source/MQL5/Scripts/bot-cua-toi-3/Bot3PositionManagementFlowCheck.mq5 -text
+/bot-cua-toi-3/tests/check-position-management-flow.py -text
+/bot-cua-toi-3/tests/manager_flow_cases.py -text
+/bot-cua-toi-3/bang-chung/bien-dich/b3-position-management-flow-*/** -text
+/bot-cua-toi-3/phan-tich/dong-vi-the/management-flow-*/** -text
+/claude-thuc-hien/bot3-manager-flow-*/** -text
+/danh-gia-claude/parent-flow-*/** -text
+/danh-gia-doc-lap/parent-flow-*/** -text

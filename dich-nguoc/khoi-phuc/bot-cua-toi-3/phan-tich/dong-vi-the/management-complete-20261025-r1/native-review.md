@@ -2,11 +2,13 @@
 
 EX5 ee063d3d87490afe24e2f4ce85f6b05659320e297b102efd70207f71ca2feb83,
 base17156250000; hai hàm32f60/37590 trong management-20261025-r1/analysis.json.
-Đây là bản mô tả luồng và mã ghép; chưa phải phép so toàn manager hoặc EA.
+Đây là bản mô tả luồng và mã ghép. Đã so parent 364 ca với hàm con
+được cấp trả lời, chưa phải phép so đủ hàm con hoặc EA; xem ../management-flow-20261025-r1/.
 
 - Vòng ngoài gọiPositionsTotal trước, total<1 trảfalse. Sau lời gọi đầu mới chép
   byte1d6fa0 sangSP3f/SP37 (3308f/376b9), dùng cùngbyte cho mọi vị thế.
-  Chưa xác định nơi tạo byte1d6fa0, giao diện giữ nguyên dữ liệu do bên gọi cấp.
+  Byte1d6fa0 là input UseHL_TrailingSL, đã xác minh ở cai-dat-da-kiem.json
+  dòng603. Chưa nối nạp input/điều phối EA; xem settings-origin.json của lượtflow.
 - Duyệt xuôiindex0, đọc ticket/đủ thuộc tính/tick rồi lọc, điền dừng/chốt ban đầu,
   chạy ba nhóm đóng nến. Đóng nến không làm thoát manager hoặc tự đặt cờ.
 - Anchor33b73..33d76/38194..3839c: chépstep6d600→74428 trướcDIGITS, giữ vélong
@@ -31,7 +33,9 @@ base17156250000; hai hàm32f60/37590 trong management-20261025-r1/analysis.json.
 - Đườngthường gộpcờ, dọnvịthế,tăngindex rồiPositionsTotal lại trước vòngsau.
 
 Thôngbáohit đọc trực tiếp5ded0/5df08/5df48: Closing with virtual SL;
-Virtual_SL: ; Last Bid: . NhãnLastBid giữ nguyên cả ở bán nhưng sốlàASK.
+Virtual_SL: ; Last Bid: ở mua, Last Ask: ở bán (5e368, tham chiếu3b55e/3b6fb).
+Bản mô tả ban đầu đã nhầm nhãn bán; phép so toàn vòng r1 phát hiện 2 ca.
+Bằng chứng sửa: ../management-flow-20261025-r1/real-hit-label-correction.json.
 Đọcmức sauPrint1, đọcbid/ask sauPrint2, Tick sauPrint3, rồi TryClose.
 Nguồn đãbiếtkiểu doublecast0x58 quaP_DoubleText; xem
 doi-chung-mt5/cast-double-20261025/double-cast-native-r1/double-cast-contract.json.
@@ -39,5 +43,6 @@ doi-chung-mt5/cast-double-20261025/double-cast-native-r1/double-cast-contract.js
 Một bảnđồ đọc C ban đầu từng đảo tên thật/ảo và gọi đườngđóng lànext;
 Codex đã loại các kết luận đó và đối chiếu lệnhmáy trước chốt TASK.md.
 Đặc tả giaoClaude được giữ trongclaude-thuc-hien/bot3-manager-complete-20261025-r1/.
-Mã ghép nhậnsettings/shared do bên gọi cấp; nguồn dựng các giá trị đó và
-mọi lời gọi từchươngtrìnhchính còn phải ghép/kiểm, không coi đã xongEA.
+Mã ghép nhậnsettings/shared do bên gọi cấp. C đã nối caller20ef0 và
+inputUseHL/EnableVirtualSLTP; còn kiểm lệnh máy của caller và ghép/kiểm
+nguồn các giá trị khác cùng sự kiện chươngtrìnhchính, không coi đã xongEA.

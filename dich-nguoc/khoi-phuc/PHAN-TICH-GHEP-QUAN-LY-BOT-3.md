@@ -1,8 +1,23 @@
 # Ghép quản lý vị thế bot3 — ngày25/10/2026
 
-Đã có nguồn ghép mua/bán, thật/ảo trong Bot3PositionManagement.mqh,
-biên dịch **0 lỗi, 0 cảnh báo** với khai báo MT5 thật. **Chưa chạy so
-toàn luồng ghép, chưa có EA chính hoàn chỉnh hoặc phép chạy cặp hai EA.**
+Đã kiểm vòng quản lý mua/bán thật/ảo **364/364 ca khớp**, biên dịch
+**0 lỗi, 0 cảnh báo**. Hai thân gốc chạy từ đầu tới trả về, gồm nhiều
+vị thế, đổi chế độ giữa vòng, sửa/đóng/lấy giá lỗi và vé 64 bit.
+**Sáu hàm con được cấp trả lời; chưa có EA đầy đủ hoặc chạy cặp hai EA.**
+
+Lượt hiện hành [manager-flow-claude-20261025-r1](bot-cua-toi-3/bang-chung/kiem-quan-ly-vi-the/manager-flow-claude-20261025-r1/comparison.json),
+bản dựng b3-position-management-flow-03. So 20 trường và băm toàn thứ tự,
+bảng 200 ô/bảng 2.500 ô, vé sống; kết quả cùng SHA
+fc6a803d25990d0ea008bb8637f8f62d4dac076f345a9844465586e8751ff31b.
+
+Đã phát hiện và sửa nhãn thông báo bán Last Bid→Last Ask. Mô tả Root
+ban đầu sai; mã Claude đã làm theo mô tả đó. Giữ nguyên136ca r1 có 2 lỗi,
+nguồn đã thử và đề xuất gốc. Chi tiết [phạm vi/bằng chứng](bot-cua-toi-3/phan-tich/dong-vi-the/management-flow-20261025-r1/README.md).
+
+Claude kịp giao tệp 356 ca trước khi chạm hạn mức. Root kiểm và chỉnh 2 tên
+khóa giao diện, thêm 8 ca chờ đủ rồi chạy lại 364 ca. Phiên viết bộ kiểm chưa
+giao mã, Root làm phần đó và bộ chạy gốc. 24 yêu cầu thật đều Opus 5.5 max;
+Ultracode chưa xác minh. Rà độc lập bộ136ca không thấy lỗi chức năng đáng kể.
 
 ## Kết quả sáu khối vừa kiểm
 
@@ -43,19 +58,21 @@ Giữ nguyên các lượt lỗi. Rà độc lập không thấy lỗi đáng k�
 - Giữ lối thật→ảo khi modeđổi sau lưu bảng, cờ có sẵn, bảng dùng chung
   và giá tick cũ khi lấy giá mới lỗi. Đường đóng thoát cả manager.
 - Bot3ManagementRealStart.mqh giữ ba dòng in, ép số thành chữ đúng
-  kiểu đã xác minh, rồi làm mới giá/kiểm đóng. Lát này mới biên dịch.
-- Cả hai tệp doClaude viết, giữ nguyên khi ghép. Bản dựng
-  b3-position-management-api-01 chỉ biên dịch, **không chạy**.
+  kiểu đã xác minh, rồi làm mới giá/kiểm đóng. Đã qua bộ kiểm vòng 364 ca.
+- Cả hai tệp doClaude viết. Root sửa nhãn bán sau phép so vòng đầu,
+  không đổi công thức quản lý. Bản dựngAPI cũ chỉ biên dịch; bản kiểm
+  vòng mới đã chạy theo phạm vi nêu trên.
 
 [Mô tả gốc và giới hạn](bot-cua-toi-3/phan-tich/dong-vi-the/management-complete-20261025-r1/native-review.md).
 Các hàm con có bộ kiểm riêng không tự chứng minh luồng ghép đúng.
 
 ## Phần kế tiếp bắt buộc
 
-1. So toàn luồng ghép với hai hàm gốc, nhiều vịthế, đóng giữa vòng,
-   modeđổi, hàm con lỗi và trạng thái/bảng/cờ/thứ tự đầy đủ.
-2. Nối chắc nguồn dữ liệusettings/shared từ chươngtrìnhchính, gồm byte
-   1d6fa0 chưa xác định nơi tạo; không tựgán theo suy đoán.
+1. Nối thân thật của sáu hàm con thay cho trả lời được cấp; so lại
+   toàn chuỗi, mọi tác dụng phụ và trạng thái chọn/vé/yêu cầu.
+2. Nối nguồn settings/shared và nơi gọi từ chương trình chính. Byte
+   1d6fa0 đã xác nhận là UseHL_TrailingSL; nơi gọiC là 20ef0, còn kiểm
+   lệnh máy và các giá trị khác trước khi viết phần điều phối.
 3. Hoàn thiện bot1, điều phối/vào lệnh, cài đặt, bảng hiển thị,
    trạng thái lưu và so hai EA đầy đủ cùng dữ liệu/cài đặt.
 

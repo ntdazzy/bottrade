@@ -1,0 +1,174 @@
+{
+  "snapshot_utc": "2026-10-25T16:14:12.737687+00:00",
+  "jobs": [
+    {
+      "run": "bot3-manager-flow-check-20261025-r1",
+      "session_id": "9e343b30-821f-4d64-ba87-bd86bc6c2e77",
+      "started": "2026-10-25T15:51:38.0578092Z",
+      "snapshot_utc": "2026-10-25T16:14:12.737687+00:00",
+      "status": "provider-blocked-or-error",
+      "response_is_error": true,
+      "terminal_reason": "api_error",
+      "job_sha256": "87f5d91dab80c2d935af96fe90edd2bd7c884fd5a31b26ade72bff6b4691fd5f",
+      "prompt_sha256": "dcee9ec954af70f1fa3ae291d441be49aa0682d850f96befda18c94bb4869b69",
+      "response_sha256": "f820086e948736f8719185f9b87301262dd590f58c15988e2b663a6ad269003a",
+      "actual_requests": 18,
+      "requests": [
+        {
+          "timestamp": "2026-10-25T15:51:41.710Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-25T15:51:49.156Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-25T15:51:53.473Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-25T15:51:56.794Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-25T15:52:00.286Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-25T15:52:03.721Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-25T15:52:06.767Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-25T15:52:09.345Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-25T15:52:25.620Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-25T15:52:30.220Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-25T15:52:52.062Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-25T15:52:56.704Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-25T15:53:02.031Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-25T15:53:07.845Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-25T15:53:12.609Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-25T15:53:16.597Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-25T15:53:20.088Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-25T16:00:09.234Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        }
+      ],
+      "ultracode_requested": true,
+      "ultracode_runtime_confirmed": null,
+      "journal_prefix_bytes": 1473350,
+      "journal_prefix_sha256": "642c3d370dbeb2474c6d76eef23477b5d57389a7c78b52b7c468e97d23f13c90",
+      "files_sha256": {
+        "dich-nguoc/khoi-phuc/claude-thuc-hien/bot3-manager-flow-check-20261025-r1/CONTRACT.md": "297a667a5b703d759bf44552bbcd48d6357c0f174594c72f2d13553f1cba05d1"
+      },
+      "source_validated": false,
+      "whole_bot_complete": false
+    },
+    {
+      "run": "bot3-manager-flow-cases-20261025-r1",
+      "session_id": "6c6bf5ab-0a61-454d-b6fe-e0fc9ed8d7f4",
+      "started": "2026-10-25T15:51:39.4786561Z",
+      "snapshot_utc": "2026-10-25T16:14:12.737687+00:00",
+      "status": "provider-blocked-or-error",
+      "response_is_error": true,
+      "terminal_reason": "api_error",
+      "job_sha256": "3313a6fb8bcd2a3b839d12fa692da96e1f7f193e2fd515adf259f401e1138961",
+      "prompt_sha256": "64a0fb2ecdee7928d3f1d265f5f35e30e88574189394d14bcc400f74dce126c9",
+      "response_sha256": "6a087321435aaec1fb7fe865d4caeb4e2a26b79b1075099b3cdb5102f766ef2f",
+      "actual_requests": 6,
+      "requests": [
+        {
+          "timestamp": "2026-10-25T15:51:42.697Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-25T15:52:22.269Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-25T15:52:43.680Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-25T15:52:49.520Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-25T15:59:48.350Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-25T16:07:11.025Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        }
+      ],
+      "ultracode_requested": true,
+      "ultracode_runtime_confirmed": null,
+      "journal_prefix_bytes": 1374894,
+      "journal_prefix_sha256": "e1de7e356a63b85999d471dd3849910dd6dd28d2c468d38bdaafd06712673ca7",
+      "files_sha256": {
+        "dich-nguoc/khoi-phuc/claude-thuc-hien/bot3-manager-flow-cases-20261025-r1/manager_flow_cases.py": "28db94c26a2888ac0996b812c2e362f4b9058cdc528b42874f957b3cb1c7f20d"
+      },
+      "source_validated": false,
+      "whole_bot_complete": false
+    }
+  ],
+  "whole_bot_complete": false
+}

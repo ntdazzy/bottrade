@@ -1,0 +1,75 @@
+{
+  "input_proof": "bot-cua-toi-3\\phan-tich\\cai-dat-20261023\\cai-dat-da-kiem.json",
+  "input_proof_sha256": "88c3bd053a29e1cc41878eb8a67e54739ec54129ea88457c2e67a112eaa1118a",
+  "c_source": "bot-cua-toi-3\\phan-tich\\luot-20261023-data\\ma-trung-gian-day-du.c",
+  "c_source_sha256": "ef8e07ac21522a8a2ab7165db6e77f40885acfc5a044c502ba81e331b826f620",
+  "bindings": [
+    {
+      "name": "UseHL_TrailingSL",
+      "candidate_rva": "0x1d6fa0",
+      "observed": "true",
+      "default_verified": true,
+      "original_memory_binding_verified": true,
+      "c_sites": [
+        {
+          "function_rva": "0x17f00",
+          "line": 13224,
+          "address": "0x17156426fa0",
+          "text": "if (DAT_17156426fa0 == '\\0') {"
+        },
+        {
+          "function_rva": "0x17f00",
+          "line": 13544,
+          "address": "0x17156426fa0",
+          "text": "if (DAT_17156426fa0 == '\\0') {"
+        },
+        {
+          "function_rva": "0x32f60",
+          "line": 23013,
+          "address": "0x17156426fa0",
+          "text": "local_149 = DAT_17156426fa0;"
+        },
+        {
+          "function_rva": "0x37590",
+          "line": 24376,
+          "address": "0x17156426fa0",
+          "text": "local_151 = DAT_17156426fa0;"
+        }
+      ]
+    },
+    {
+      "name": "EnableVirtualSLTP",
+      "candidate_rva": "0x1d6fe0",
+      "observed": "false",
+      "default_verified": true,
+      "original_memory_binding_verified": true,
+      "c_sites": [
+        {
+          "function_rva": "0xe0c0",
+          "line": 7323,
+          "address": "0x17156426fe0",
+          "text": "DAT_171562bd514 = 2 - (uint)(DAT_17156426fe0 == '\\0');"
+        },
+        {
+          "function_rva": "0x17f00",
+          "line": 12986,
+          "address": "0x17156426fe0",
+          "text": "if (DAT_17156426fe0 != '\\0') {"
+        }
+      ]
+    }
+  ],
+  "high_low_input_snapshot": "Managers copy UseHL_TrailingSL after the first PositionsTotal call; input loader instructions not traced here.",
+  "mode_expression": "2 - (EnableVirtualSLTP == 0)",
+  "mode_false": 1,
+  "mode_true": 2,
+  "caller_c_rva": "0x20ef0",
+  "caller_c_lines": [
+    16278,
+    16283,
+    16284
+  ],
+  "caller_machine_instructions_verified": false,
+  "manager_settings_from_main_wired": false,
+  "whole_bot_complete": false
+}

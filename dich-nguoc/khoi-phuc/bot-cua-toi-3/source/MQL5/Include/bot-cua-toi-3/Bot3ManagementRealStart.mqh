@@ -1,11 +1,11 @@
 // Start of bot 3 real management: SL level from the virtual SL table, close at once on a hit.
-// Written from the Codex spec only; not compiled or run, verification is pending.
+// The caller owns the stop, quote and request state passed by reference.
 #ifndef BOT3_MANAGEMENT_REAL_START_MQH
 #define BOT3_MANAGEMENT_REAL_START_MQH
 #include "Bot3ManagementPrelude.mqh"
 #include "Bot3VirtualStops.mqh"
 
-// SELL keeps the "Last Bid" label although it prints the ask.
+// The label and value both follow the selected side.
 bool Bot3CloseRealStopHit(const bool buy,const string &symbol,const double &current_stop,
                           MqlTick &tick,Bot3PendingRequestState &state,
                           Bot3TradeSendOptions &options,const ulong &deviation,
@@ -13,7 +13,7 @@ bool Bot3CloseRealStopHit(const bool buy,const string &symbol,const double &curr
 {
    Print("Closing with virtual SL");
    Print("Virtual_SL: "+(string)current_stop);
-   Print("Last Bid: "+(string)(buy ? tick.bid : tick.ask));
+   Print((buy ? "Last Bid: " : "Last Ask: ")+(string)(buy ? tick.bid : tick.ask));
    SymbolInfoTick(symbol,tick);
    Bot3TryClosePosition(state,options,deviation,tick.bid,tick.ask,gap,freeze,(ulong)ticket);
    return true;

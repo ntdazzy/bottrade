@@ -1,0 +1,13 @@
+{
+  "pid": 26184,
+  "started": "2026-10-25T15:51:39.4786561Z",
+  "model": "claude-opus-5-5",
+  "effort": "max",
+  "ultracode_requested": true,
+  "scope": "Write proposed analysis/code only within an explicitly assigned deliverable directory",
+  "output_directory": "dich-nguoc/khoi-phuc/claude-thuc-hien/bot3-manager-flow-cases-20261025-r1",
+  "edit_rule": "Edit(./dich-nguoc/khoi-phuc/claude-thuc-hien/bot3-manager-flow-cases-20261025-r1/**)",
+  "permission_mode": "dontAsk",
+  "prompt_sha256": "64a0fb2ecdee7928d3f1d265f5f35e30e88574189394d14bcc400f74dce126c9",
+  "resume": ""
+}

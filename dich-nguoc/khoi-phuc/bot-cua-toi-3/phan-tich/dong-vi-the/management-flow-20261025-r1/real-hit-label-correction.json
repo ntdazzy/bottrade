@@ -1,0 +1,31 @@
+{
+  "original_ex5_sha256": "ee063d3d87490afe24e2f4ce85f6b05659320e297b102efd70207f71ca2feb83",
+  "analysis_sha256": "b22402c383a0b2fdda202f40285fc28d60b7b845f60c5fc39f8839db95d7d163",
+  "base": "0x17156250000",
+  "strings": {
+    "0x5ded0": "Closing with virtual SL",
+    "0x5df08": "Virtual_SL: ",
+    "0x5df48": "Last Bid: ",
+    "0x5e368": "Last Ask: "
+  },
+  "references": [
+    {
+      "rva": "0x37139",
+      "operands": "rdx, 0x171562adf48"
+    },
+    {
+      "rva": "0x37276",
+      "operands": "rdx, 0x171562adf48"
+    },
+    {
+      "rva": "0x3b55e",
+      "operands": "rdx, 0x171562ae368"
+    },
+    {
+      "rva": "0x3b6fb",
+      "operands": "rdx, 0x171562ae368"
+    }
+  ],
+  "failed_run": "manager-flow-initial-20261025-r1",
+  "source_before_sha256": "c310f60f1ebe94da29f4adf6d93824a2494f3ee855df894913c2e61fbaad0477"
+}

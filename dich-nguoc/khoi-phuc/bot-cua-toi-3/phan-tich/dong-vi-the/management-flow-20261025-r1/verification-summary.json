@@ -1,0 +1,38 @@
+{
+  "run": "manager-flow-claude-20261025-r1",
+  "build": "b3-position-management-flow-03",
+  "cases": 364,
+  "matched": 364,
+  "groups": {
+    "baseline": 92,
+    "multipos": 48,
+    "empty": 4,
+    "modeflip": 72,
+    "eligibility": 8,
+    "modifyfalse": 36,
+    "close_replyfalse": 28,
+    "ticket64": 32,
+    "tickfalse": 16,
+    "delay-passed": 8,
+    "error_countwrap": 20
+  },
+  "comparison_sha256": "aa15ecb647ad7c32dcadcc9f7a7dd49f8aad880006703f5950f820f878c64292",
+  "original_run_sha256": "8035d60db690c254f44f07abe6c0749c90fd824902500616463f2ba4db040cae",
+  "mql5_run_sha256": "92d7d20eee837d52ea7dec737ee5f9a10fc13d73402bd47a84c6a813a1e5b82d",
+  "result_sha256": {
+    "original": "fc6a803d25990d0ea008bb8637f8f62d4dac076f345a9844465586e8751ff31b",
+    "mql5": "fc6a803d25990d0ea008bb8637f8f62d4dac076f345a9844465586e8751ff31b"
+  },
+  "parent_native_sites": 6032,
+  "full_management_parents_executed": true,
+  "whole_manager_complete": false,
+  "whole_bot_complete": false,
+  "helpers_intercepted": [
+    "Modify",
+    "TryClose",
+    "VirtualStopLevel",
+    "VirtualTakeLevel",
+    "VirtualStopDelayPassed",
+    "VirtualStopStamp"
+  ]
+}

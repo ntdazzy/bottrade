@@ -1,0 +1,23 @@
+{
+  "cases": 364,
+  "matched": 364,
+  "failed": 0,
+  "first_failures": [],
+  "result_sha256": {
+    "original": "411a2353ab2e42c1c35a24075a80598d460391c098b35317d4338cee52b99b33",
+    "mql5": "411a2353ab2e42c1c35a24075a80598d460391c098b35317d4338cee52b99b33"
+  },
+  "full_management_parents_executed": true,
+  "whole_manager_complete": false,
+  "whole_bot_complete": false,
+  "full_ea": false,
+  "child_helpers_intercepted": true,
+  "terminal_replies_supplied": true,
+  "original_ex5_changed": false,
+  "limits": [
+    "Both original management parent functions run to return, including their loop and real/virtual transitions. This is not an EA, paired terminal comparison or complete manager integration proof.",
+    "Modify, try-close, virtual stop/take/delay/stamp child replies and their specified provider-side effects are supplied at original call boundaries; child internals do not run here. They have separate component evidence.",
+    "Native error-code/string/Print code executes. Successful string allocation and signed decimal conversion are supplied; double text is measured separately in MT5 and supplied by value bits.",
+    "CPU both-NaN fixtures only correct measured two-NaN arithmetic. Other native instructions run in Unicorn; no physical original-run, allocation-failure or complete error coverage claim."
+  ]
+}

@@ -1,5 +1,5 @@
 // Bot 3 position manager assembled from the existing management helpers.
-// Not compiled, not run and not compared with the original EX5.
+// Settings and shared state are supplied by the caller.
 #ifndef BOT3_POSITION_MANAGEMENT_MQH
 #define BOT3_POSITION_MANAGEMENT_MQH
 #include "Bot3ManagementPrelude.mqh"

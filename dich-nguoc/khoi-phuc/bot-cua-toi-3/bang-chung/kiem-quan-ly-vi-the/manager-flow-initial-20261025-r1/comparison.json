@@ -1,0 +1,48 @@
+{
+  "cases": 136,
+  "matched": 134,
+  "failed": 2,
+  "first_failures": [
+    {
+      "id": 11,
+      "buy": 0,
+      "profile": 10,
+      "group": "initial-full-parent-fixture",
+      "differences": {
+        "ordered_hash": [
+          9908276812541991751,
+          2593796109018341292
+        ]
+      }
+    },
+    {
+      "id": 12,
+      "buy": 0,
+      "profile": 11,
+      "group": "initial-full-parent-fixture",
+      "differences": {
+        "ordered_hash": [
+          484255217574144659,
+          10280626943997134160
+        ]
+      }
+    }
+  ],
+  "result_sha256": {
+    "original": "5e5da8a3fcf67e5d5b4e60419413d3af2939bbfa5370156805be40c22deeacb8",
+    "mql5": "422014b5ad42aa49b7e7fe4ede2530be7b2839a0fca54169c89b95113e8d5a80"
+  },
+  "full_management_parents_executed": true,
+  "whole_manager_complete": false,
+  "whole_bot_complete": false,
+  "full_ea": false,
+  "child_helpers_intercepted": true,
+  "terminal_replies_supplied": true,
+  "original_ex5_changed": false,
+  "limits": [
+    "Both original management parent functions run to return, including their loop and real/virtual transitions. This is not an EA, paired terminal comparison or complete manager integration proof.",
+    "Modify, try-close, virtual stop/take/delay/stamp child replies and their specified provider-side effects are supplied at original call boundaries; child internals do not run here. They have separate component evidence.",
+    "Native error-code/string/Print code executes. Successful string allocation and signed decimal conversion are supplied; double text is measured separately in MT5 and supplied by value bits.",
+    "CPU both-NaN fixtures only correct measured two-NaN arithmetic. Other native instructions run in Unicorn; no physical original-run, allocation-failure or complete error coverage claim."
+  ]
+}

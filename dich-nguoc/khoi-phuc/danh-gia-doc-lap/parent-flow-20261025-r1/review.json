@@ -1,0 +1,15 @@
+{
+  "reviewer": "/root/review_bot3_parent_flow",
+  "read_only": true,
+  "reviewed_run": "manager-flow-initial-20261025-r2",
+  "reviewed_cases": 136,
+  "material_functional_findings": [],
+  "stale_comments_fixed": [
+    "Bot3PositionManagement.mqh:2",
+    "Bot3ManagementRealStart.mqh:2"
+  ],
+  "later_root_verified_run": "manager-flow-claude-20261025-r1",
+  "later_root_verified_cases": 364,
+  "not_an_independent_review_of_complete_EA": true,
+  "whole_bot_complete": false
+}

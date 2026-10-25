@@ -1,8 +1,10 @@
 # Tiến độ riêng bot 3 — 25/10/2026
 
-Đã ghép nguồn quản lý mua/bán thật/ảo và vòng nhiều vị thế, biên dịch
-**0 lỗi, 0 cảnh báo**; chưa chạy so toàn luồng ghép. Sáu khối thật vừa
-khớp **2.290/2.290 ca**, gồm thân đổi lỗi/ghép/in chuỗi gốc.
+Đã kiểm cả vòng quản lý mua/bán thật/ảo: **364/364 ca khớp**,
+biên dịch **0 lỗi, 0 cảnh báo**. Có nhiều vị thế, đổi chế độ giữa vòng,
+lấy giá thất bại, sửa/đóng lỗi, vé64bit và bộ đếm tràn.
+Sáu hàm con sửa/đóng/mức dừng-chốt/giờ được cấp trả lời;
+**chưa ghép đủ EA hoặc chạy hai bot hoàn chỉnh**.
 [Phạm vi mới và phần còn thiếu](../PHAN-TICH-GHEP-QUAN-LY-BOT-3.md).
 
 Mới kiểm dời chốt lời thật mua/bán: **994/994 ca khớp**,
