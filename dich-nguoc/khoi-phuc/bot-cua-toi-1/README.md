@@ -10,10 +10,9 @@ và dịch vụ từ phần trước, chưa phải EA đầy đủ.
 MQL5 đầy đủ, đặc biệt nhánh NaN và nơi gọi từ EA.
 [Đặc tả](phan-tich/chuong-trinh-chinh/preparation-complete-20261026-r1/README.md).
 
-Đã viết khối nạp 8 cấu hình và điều chỉnh khoảng giá: **320/320 ca native/MQL5
-khớp từng bit**, gồm hai chế độ HL, hạt giống 32-bit và bốn ô điều chỉnh hữu
-hạn; biên dịch **0 lỗi, 0 cảnh báo**. Ca NaN/vô cực đã có bằng chứng native
-riêng nhưng chưa đưa vào lượt MQL5 này. [Đặc tả và phép kiểm](phan-tich/chuong-trinh-chinh/profile-parameters-20261026-r1/README.md).
+Đã viết khối nạp 8 cấu hình và điều chỉnh khoảng giá: **432/432 ca native/MQL5
+khớp từng bit**, gồm hai chế độ HL, hạt giống 32-bit, số NaN/vô cực và bốn ô
+điều chỉnh; biên dịch **0 lỗi, 0 cảnh báo**. [Đặc tả và phép kiểm](phan-tich/chuong-trinh-chinh/profile-parameters-20261026-r1/README.md).
 
 Vòng quản lý mua/bán đã ghép cùng các hàm bảng/sửa/đóng/gửi và khớp
 **352/352 ca**, biên dịch **0 lỗi/0 cảnh báo**. Dữ liệu và kết quả gửi

@@ -63,6 +63,6 @@ Lệnh đầy đủ, kèm byte, được ghi trong `native-instructions.txt`. V�
 
 - Native đã chạy số dương/âm/NaN/vô cực và seed 0/1/MAX. Số dương dùng 7 mẫu theo thứ tự buy, sell, stop, target, trail, trail-start, trail-limit; profile 5 cần tiền nạp `R8=base+0x4ff00` trước block.
 - Hệ số native là đúng `1/32768`; các ô điều chỉnh `0x6a708`, `0x6a710`, `0x6a718`, `0x6a720` lần lượt tác động vào giá mua/bán, dừng, mục tiêu và khoảng dời dừng.
-- MQL5 đã so **320/320 ca** hữu hạn (hai HL, bốn mức randomization hữu hạn, bốn ô điều chỉnh ±1), kết quả gốc/MQL5 cùng mã kiểm `87bf7d128b10b6a5c05c0994f0067a07b71f38ea07d22e880ec183ff17a7ca7c`.
-- Ca NaN/vô cực đã có bằng chứng native nhưng chưa nằm trong bộ MQL5 320 ca; khởi tạo seed từ chương trình gọi, toàn EA và nơi gọi vẫn chưa chốt.
+- MQL5 đã so **432/432 ca** (hai HL, randomization hữu hạn/NaN/vô cực, bốn ô điều chỉnh hữu hạn/NaN), kết quả gốc/MQL5 cùng mã kiểm `ad362ef765433cbeac0e1eafb2c9eb0e97e1c9f0c8ee6eb2abae2f98c209c9fd`.
+- Khởi tạo seed từ chương trình gọi, toàn EA và nơi gọi vẫn chưa chốt.
 - Đây là kiểm từng khối nạp tham số, chưa phải kiểm toàn bộ EA và chưa phải chạy song song hai bot trên MT5.

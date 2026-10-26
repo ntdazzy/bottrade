@@ -42,7 +42,31 @@ def cases():
                     row[selected] = value
                     rows.append(row)
                     next_id += 1
-    if len(rows) != 320 or any(row["id"] != i for i, row in enumerate(rows)):
+    for randomization in (float("nan"), float("inf"), float("-inf")):
+        for hl in (0, 1):
+            for index in range(8):
+                rows.append({
+                    "id": next_id, "index": index, "hl": hl, "seed": 1,
+                    "randomization": randomization,
+                    "price_delta": 0.0, "stop_delta": 0.0,
+                    "target_delta": 0.0, "trail_delta": 0.0,
+                    "group": "special-randomization",
+                })
+                next_id += 1
+    for selected in DELTA_NAMES:
+        for hl in (0, 1):
+            for index in range(8):
+                row = {
+                    "id": next_id, "index": index, "hl": hl, "seed": 1,
+                    "randomization": 0.0,
+                    "price_delta": 0.0, "stop_delta": 0.0,
+                    "target_delta": 0.0, "trail_delta": 0.0,
+                    "group": "nan-adjustment-" + selected,
+                }
+                row[selected] = float("nan")
+                rows.append(row)
+                next_id += 1
+    if len(rows) != 432 or any(row["id"] != i for i, row in enumerate(rows)):
         raise AssertionError("bot1 runtime profile case set changed")
     return rows
 

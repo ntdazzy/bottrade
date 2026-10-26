@@ -59,7 +59,7 @@ def native_for(row):
     require(not output.exists(), "NATIVE_RUN_EXISTS " + name)
     command = [
         sys.executable, "-I", "-B", "-X", "utf8", str(ANALYZER), name,
-        "--amount", repr(row["randomization"]), "--seed", str(row["seed"]),
+        "--amount=" + repr(row["randomization"]), "--seed", str(row["seed"]),
         "--hl", str(row["hl"]), "--adjustments",
         repr(row["price_delta"]), repr(row["stop_delta"]),
         repr(row["target_delta"]), repr(row["trail_delta"]),
@@ -69,10 +69,14 @@ def native_for(row):
     report = json.loads((output / "native-profiles.json").read_text(encoding="utf-8"))
     native = next(item for item in report["rows"] if item["index"] == row["index"])
     values = native["values"]
+    raw_fields = native.get("raw_fields", {})
     words = [native["seed_after"]]
     for name, kind in FIELDS:
         require(name in values, "NATIVE_FIELD_MISSING " + name)
-        words.append(word(values[name], kind))
+        if kind == "d" and name in raw_fields:
+            words.append(int.from_bytes(bytes.fromhex(raw_fields[name]), "little"))
+        else:
+            words.append(word(values[name], kind))
     return CASES.RESULT.pack(row["id"], 0, 0, *words)
 
 
