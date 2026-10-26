@@ -39,6 +39,9 @@ Phép kiểm ghép mới:
   theo từng bit và kiểm trường ngoài phạm vi. Chỉ là khối trước EA, chưa là toàn bot.
 - `bot-cua-toi-1/tests/check-runtime-profile.py`: prepare/original/mql5/compare,
   432 ca nạp 8 cấu hình, hai HL, hạt giống, NaN/vô cực và bốn ô điều chỉnh; so từng bit.
+- `bot-cua-toi-1/source/MQL5/Include/bot-cua-toi-1/Bot1PreparationNumeric.mqh`:
+  chuyển các giá trị thị trường đã cấp vào `Bot1PrepareDistances`; chỉ biên dịch
+  API, chưa phải phép so toàn thân chuẩn bị hoặc EA.
 - `bot-cua-toi-3/tests/probe-division-behavior.py RUN --build BUILD`: đo6ca chia
   trong MT5riêng. `bien-dich.ps1 -CheckFloatingPointDividers` tạo dự án bật
   fpzerocheck1 và giữSHA; chỉ dùng khi bằng chứng gốc yêu cầu cách dừng này.
