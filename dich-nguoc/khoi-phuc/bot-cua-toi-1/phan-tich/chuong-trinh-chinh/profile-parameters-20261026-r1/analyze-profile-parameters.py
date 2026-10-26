@@ -78,6 +78,9 @@ def main():
    if z in [r for _,_,r in fields] or (0x62200<=z<=0x62380):
     raw=bytes(m.mem_read(address,size));writes.append({'rva':hex(z),'size':size,'bits':raw.hex(),'instruction':hex(em.reg_read(x.UC_X86_REG_RIP)-base),'expression':memory_expr.get(address)});written.update(range(address,address+size))
   h1=m.hook_add(o.uc.UC_HOOK_CODE,visit);h2=m.hook_add(o.uc.UC_HOOK_MEM_WRITE,store)
+  # The profile-5 block receives this pointer from the immediately preceding
+  # native preload at RVA 0x14eb1/0x14ed7; it is outside the block start.
+  m.reg_write(x.UC_X86_REG_R8,base+0x4ff00)
   try:m.emu_start(base+int(prof['start_rva'],16),0x60000000,count=20000)
   finally:m.hook_del(h1);m.hook_del(h2)
   values={n:struct.unpack('<'+k,m.mem_read(base+r,struct.calcsize('<'+k)))[0] for n,k,r in fields if k in ['d','i','B'] and all(base+r+j in written for j in range(struct.calcsize('<'+k)))}

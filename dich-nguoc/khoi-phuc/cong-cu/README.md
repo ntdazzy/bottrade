@@ -37,6 +37,9 @@ Phép kiểm ghép mới:
 - `bot-cua-toi-3/tests/check-runtime-profile.py`: prepare/original/mql5/compare,
   2.106 ca nạp 9 cấu hình, hạt giống và điều chỉnh; so toàn bộ 32 giá trị
   theo từng bit và kiểm trường ngoài phạm vi. Chỉ là khối trước EA, chưa là toàn bot.
+- `bot-cua-toi-1/tests/check-runtime-profile.py`: prepare/original/mql5/compare,
+  320 ca nạp 8 cấu hình, hai HL, hạt giống và bốn ô điều chỉnh hữu hạn; so từng bit.
+  Ca NaN/vô cực native được giữ riêng, chưa tính vào 320 ca MQL5.
 - `bot-cua-toi-3/tests/probe-division-behavior.py RUN --build BUILD`: đo6ca chia
   trong MT5riêng. `bien-dich.ps1 -CheckFloatingPointDividers` tạo dự án bật
   fpzerocheck1 và giữSHA; chỉ dùng khi bằng chứng gốc yêu cầu cách dừng này.

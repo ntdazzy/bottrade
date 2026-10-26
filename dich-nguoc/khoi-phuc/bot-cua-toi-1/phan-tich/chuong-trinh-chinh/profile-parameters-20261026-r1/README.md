@@ -59,10 +59,10 @@ Lệnh đầy đủ, kèm byte, được ghi trong `native-instructions.txt`. V�
 12545: 81 c1 c3 9e 26 00 add ecx, 0x269ec3
 ```
 
-## Còn chưa đủ bằng chứng
+## Kết quả dựng lại và phần còn thiếu
 
-- Chưa có phép chạy độc lập với `Randomization > 0`; vì vậy chưa chốt được toàn bộ thứ tự số ngẫu nhiên cho từng trường và từng nhánh HL.
-- Chưa chốt được giá trị số của `DAT_23e5aa5fe30` ở dạng nguồn MQL5; báo cáo giữ nguyên biểu thức native để không đoán.
-- Bốn ô điều chỉnh đã xác định vị trí và đã kiểm với giá trị `0.0`, nhưng tác dụng riêng của từng ô trên mọi trường chưa được kiểm bằng ca dương/âm/NaN.
-- Chưa có bằng chứng rằng `0x6a478` được khởi tạo từ tham số nào; chỉ có bằng chứng chắc chắn về nơi đọc/cập nhật trong khối này.
+- Native đã chạy số dương/âm/NaN/vô cực và seed 0/1/MAX. Số dương dùng 7 mẫu theo thứ tự buy, sell, stop, target, trail, trail-start, trail-limit; profile 5 cần tiền nạp `R8=base+0x4ff00` trước block.
+- Hệ số native là đúng `1/32768`; các ô điều chỉnh `0x6a708`, `0x6a710`, `0x6a718`, `0x6a720` lần lượt tác động vào giá mua/bán, dừng, mục tiêu và khoảng dời dừng.
+- MQL5 đã so **320/320 ca** hữu hạn (hai HL, bốn mức randomization hữu hạn, bốn ô điều chỉnh ±1), kết quả gốc/MQL5 cùng mã kiểm `87bf7d128b10b6a5c05c0994f0067a07b71f38ea07d22e880ec183ff17a7ca7c`.
+- Ca NaN/vô cực đã có bằng chứng native nhưng chưa nằm trong bộ MQL5 320 ca; khởi tạo seed từ chương trình gọi, toàn EA và nơi gọi vẫn chưa chốt.
 - Đây là kiểm từng khối nạp tham số, chưa phải kiểm toàn bộ EA và chưa phải chạy song song hai bot trên MT5.

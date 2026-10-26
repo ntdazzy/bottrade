@@ -1,0 +1,11 @@
+{
+  "analyzer_sha256": "c251df15a3c1e2c975b77ced97c3f0bbd503521ea9f3514ecd9760729695595e",
+  "script_sha256": "b788686a47c5994905a447fd3e54c57fbfcced27a0a0fb4d1e5aadebebc5cac5",
+  "helper_sha256": {
+    "bot-cua-toi-1/tests/check-runtime-profile.py": "aed88db2d06da83f0fb20f7e05d7c26aa56a7d35a919432a4b7945bd0432aafa",
+    "bot-cua-toi-1/tests/runtime_profile_cases.py": "6d7b23489469bd00df4f9329bb3d887bc7bc52b9714c16132a894b65af30b572",
+    "bot-cua-toi-1/phan-tich/chuong-trinh-chinh/profile-parameters-20261026-r1/analyze-profile-parameters.py": "c251df15a3c1e2c975b77ced97c3f0bbd503521ea9f3514ecd9760729695595e"
+  },
+  "cases": 320,
+  "result_sha256": "87bf7d128b10b6a5c05c0994f0067a07b71f38ea07d22e880ec183ff17a7ca7c"
+}
