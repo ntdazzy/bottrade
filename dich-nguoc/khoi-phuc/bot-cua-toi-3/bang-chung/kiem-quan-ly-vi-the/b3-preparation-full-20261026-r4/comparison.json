@@ -1,0 +1,23 @@
+{
+  "cases": 1016,
+  "matched": 1016,
+  "failed": 0,
+  "first_failures": [],
+  "result_sha256": {
+    "original": "465601457c2dab5b3ba994fe8d2408ff71a11739d1c39c6934f54044ae87229d",
+    "mql5": "465601457c2dab5b3ba994fe8d2408ff71a11739d1c39c6934f54044ae87229d"
+  },
+  "whole_manager_complete": false,
+  "whole_bot_complete": false,
+  "full_ea": false,
+  "full_preparation_body_executed": true,
+  "child_helpers_intercepted": false,
+  "terminal_replies_supplied": true,
+  "original_ex5_changed": false,
+  "limits": [
+    "The full captured preparation function executes with supplied successful indicator/tick/market replies. All 76 listed words are compared, not the EA.",
+    "Only the 1,016 legacy successful finite cases run here; the 18 prior runtime-error cases are retained outside this cohort. No handle failure, CopyBuffer zero/negative, short-array, allocation-failure or new runtime-error proof.",
+    "Seven SDK call counts are compared. Tick/calendar contents beyond the listed outputs and mutations of settings during SDK calls are not compared in this cohort.",
+    "String allocation succeeds. The indicator has two supplied samples and its size/series are compared; no complete indicator or broker/lifecycle claim."
+  ]
+}
