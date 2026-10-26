@@ -379,3 +379,9 @@
 /claude-thuc-hien/bot1-zero-ticket-check-*/** -text
 /danh-gia-claude/bot1-zero-ticket-*/** -text
 /danh-gia-doc-lap/bot1-zero-ticket-*/** -text
+
+/bot-cua-toi-3/source/MQL5/Scripts/bot-cua-toi-3/Bot3DivisionBehaviorCheck.mq5 -text
+/bot-cua-toi-3/tests/check-preparation-errors.py -text
+/bot-cua-toi-3/tests/probe-division-behavior.py -text
+/bot-cua-toi-3/phan-tich/chuong-trinh-chinh/division-*/** -text
+/bot-cua-toi-3/bang-chung/bien-dich/b3-division-*/** -text

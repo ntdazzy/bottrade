@@ -1,0 +1,6 @@
+NQ	0	09:51:27.649	Bot3DivisionBehaviorCheck (XAUUSD_NOCOST_V2,M15)	DIVISION_BEGIN:3
+JG	2	09:51:27.649	Bot3DivisionBehaviorCheck (XAUUSD_NOCOST_V2,M15)	zero divide, check divider to avoid this error in 'Bot3DivisionBehaviorCheck.mq5' (11,24)
+II	0	09:51:27.603	MQL5	2 inputs read from script 'bot-cua-toi-3\Bot3DivisionBehaviorCheck' set file "C:\Users\NTD\Desktop\Bot Market Demo\dich-nguoc\.local\mt5-bot3-thread-20261025\MQL5\Presets\division-project-20261026-r1-5.set"
+OE	0	09:51:27.616	Scripts	script Bot3DivisionBehaviorCheck (XAUUSD_NOCOST_V2,M15) loaded successfully
+KE	0	09:51:27.649	Scripts	script Bot3DivisionBehaviorCheck (XAUUSD_NOCOST_V2,M15) closes terminal with code -1
+KL	0	09:51:27.649	Scripts	script Bot3DivisionBehaviorCheck (XAUUSD_NOCOST_V2,M15) removed

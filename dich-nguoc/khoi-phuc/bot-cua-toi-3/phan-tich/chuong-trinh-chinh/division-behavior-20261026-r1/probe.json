@@ -1,0 +1,66 @@
+{
+  "results": [
+    {
+      "index": 0,
+      "mode": 0,
+      "denominator_bits": "0x0",
+      "exit_code": 0,
+      "seconds": 6.47,
+      "zero_divide": false,
+      "returned": true
+    },
+    {
+      "index": 1,
+      "mode": 1,
+      "denominator_bits": "0x0",
+      "exit_code": 0,
+      "seconds": 5.37,
+      "zero_divide": false,
+      "returned": true
+    },
+    {
+      "index": 2,
+      "mode": 2,
+      "denominator_bits": "0x0",
+      "exit_code": 0,
+      "seconds": 6.43,
+      "zero_divide": false,
+      "returned": true
+    },
+    {
+      "index": 3,
+      "mode": 3,
+      "denominator_bits": "0x0",
+      "exit_code": 0,
+      "seconds": 6.38,
+      "zero_divide": false,
+      "returned": true
+    },
+    {
+      "index": 4,
+      "mode": 3,
+      "denominator_bits": "0x4000000000000000",
+      "exit_code": 0,
+      "seconds": 5.44,
+      "zero_divide": false,
+      "returned": true
+    },
+    {
+      "index": 5,
+      "mode": 3,
+      "denominator_bits": "0x8000000000000000",
+      "exit_code": 0,
+      "seconds": 7.45,
+      "zero_divide": false,
+      "returned": true
+    }
+  ],
+  "source_sha256": "697cccb377da40967801498facd9dbfd765f4540a32e02eea65dbea34cecb5af",
+  "build_receipt_sha256": "7637296f38acc5190da768e4045c2e0e9bc3e9e7b0155c4d1fea29bb6fcc989a",
+  "binary_sha256": "33cbf3406f79c44578970d6c9b5da62ac33c90176bf4ded9ce235fc83e132828",
+  "tool_sha256": "90fa3f232252eb26d0519c17d37f1c3c13043f58b88d0d21507b39e38d61c3ae",
+  "terminal_sha256": "d92c969e0c141cad6f4f9083234b841e2da21862e66b3bbc9b70cbfe5a8e7a47",
+  "metaeditor_sha256": "cf2750bde55d98a1f3b4e56bcdd4f59300d0cff5caa6760985f7ef2c2cc12229",
+  "whole_bot_complete": false,
+  "scope": "Measured division/error class for six tiny calibration runs; no whole-bot or all-partial-state claim."
+}

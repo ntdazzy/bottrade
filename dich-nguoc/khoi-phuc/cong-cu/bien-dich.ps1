@@ -7,7 +7,8 @@ param(
     [Parameter(Mandatory)][ValidateRange(1,15)][int]$Bot,
     [Parameter(Mandatory)][string]$Terminal,
     [Parameter(Mandatory)][ValidatePattern('\A[a-z0-9-]+\z')][string]$Run,
-    [string]$Source
+    [string]$Source,
+    [switch]$CheckFloatingPointDividers
 )
 $ErrorActionPreference='Stop'
 $root=Split-Path $PSScriptRoot -Parent
@@ -55,8 +56,17 @@ $target=Join-Path $mql $sourcePath.Substring($srcMql.Length+1)
 $log=[IO.Path]::ChangeExtension($target,'.log')
 $binary=[IO.Path]::ChangeExtension($target,'.ex5')
 foreach ($p in $log,$binary) { if (Test-Path -LiteralPath $p) { Remove-Item -LiteralPath $p } }
+$compileTarget=$target
+$project=$null
+if ($CheckFloatingPointDividers) {
+    $programType=if ($target.StartsWith((Join-Path $mql 'Scripts')+'\',[StringComparison]::OrdinalIgnoreCase)) { 'script' } elseif ($target.StartsWith((Join-Path $mql 'Experts')+'\',[StringComparison]::OrdinalIgnoreCase)) { 'expert' } else { throw 'PROJECT_PROGRAM_TYPE_NOT_SUPPORTED' }
+    $project=[IO.Path]::ChangeExtension($target,'.mqproj')
+    $projectData=[ordered]@{platform='mt5';program_type=$programType;optimize='1';fpzerocheck='1';files=@(@{path=[IO.Path]::GetFileName($target);compile=$true;relative_to_project=$true})}
+    [IO.File]::WriteAllText($project,($projectData | ConvertTo-Json -Depth 5),[Text.UTF8Encoding]::new($false))
+    $compileTarget=$project
+}
 # Không dùng /portable: với cờ này MetaEditor thoát mà không biên dịch, không tạo nhật ký (lần chạy 23/10/2026).
-$arguments=@('/compile:"'+$target+'"','/log:"'+$log+'"','/inc:"'+$mql+'"')
+$arguments=@('/compile:"'+$compileTarget+'"','/log:"'+$log+'"','/inc:"'+$mql+'"')
 $p=Start-Process -FilePath $editor -ArgumentList $arguments -WindowStyle Hidden -Wait -PassThru
 if (-not (Test-Path -LiteralPath $log)) { throw 'COMPILER_DID_NOT_CREATE_LOG' }
 $raw=[IO.File]::ReadAllBytes($log)
@@ -66,6 +76,7 @@ $result=$lines | Where-Object { $_ -match 'Result: (\d+) errors?, (\d+) warnings
 $m=[regex]::Match([string]$result,'(\d+) errors?, (\d+) warnings?')
 [IO.Directory]::CreateDirectory($out) | Out-Null
 Copy-Item -LiteralPath $log -Destination (Join-Path $out 'metaeditor.log')
+if ($project) { Copy-Item -LiteralPath $project -Destination (Join-Path $out 'compile-project.mqproj') }
 $receipt=[ordered]@{
     run=$Run; target=$target.Substring($mql.Length+1).Replace('\','/')
     metaeditor_sha256=(Get-FileHash -LiteralPath $editor -Algorithm SHA256).Hash.ToLowerInvariant()
@@ -76,6 +87,8 @@ $receipt=[ordered]@{
     sources_sha256=$copied
     trade_mqh_sha256=(Get-FileHash -LiteralPath (Join-Path $mql 'Include\Trade\Trade.mqh') -Algorithm SHA256).Hash.ToLowerInvariant()
     binary_sha256=if (Test-Path -LiteralPath $binary) { (Get-FileHash -LiteralPath $binary -Algorithm SHA256).Hash.ToLowerInvariant() } else { $null }
+    floating_point_dividers_check_requested=[bool]$CheckFloatingPointDividers
+    compile_project_sha256=if ($project) { (Get-FileHash -LiteralPath $project -Algorithm SHA256).Hash.ToLowerInvariant() } else { $null }
 }
 if (Test-Path -LiteralPath $binary) { Copy-Item -LiteralPath $binary -Destination (Join-Path $out ([IO.Path]::GetFileName($binary))) }
 $receipt | ConvertTo-Json -Depth 4 | Set-Content -LiteralPath (Join-Path $out 'bien-nhan.json') -Encoding utf8

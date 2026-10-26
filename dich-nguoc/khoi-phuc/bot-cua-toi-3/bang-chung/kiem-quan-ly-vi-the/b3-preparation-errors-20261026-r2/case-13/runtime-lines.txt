@@ -1,0 +1,6 @@
+ME	0	09:54:18.838	Bot3PreparationCheck (XAUUSD_NOCOST_V2,M15)	PREPARATION_CASE:13
+FL	2	09:54:18.839	Bot3PreparationCheck (XAUUSD_NOCOST_V2,M15)	zero divide, check divider to avoid this error in 'Bot3Preparation.mqh' (275,52)
+IF	0	09:54:18.811	MQL5	2 inputs read from script 'bot-cua-toi-3\Bot3PreparationCheck' set file "C:\Users\NTD\Desktop\Bot Market Demo\dich-nguoc\.local\mt5-bot3-thread-20261025\MQL5\Presets\b3-prep-b3-preparation-errors-20261026-r2-f13.set"
+JK	0	09:54:18.818	Scripts	script Bot3PreparationCheck (XAUUSD_NOCOST_V2,M15) loaded successfully
+MM	0	09:54:18.840	Scripts	script Bot3PreparationCheck (XAUUSD_NOCOST_V2,M15) closes terminal with code -1
+HN	0	09:54:18.840	Scripts	script Bot3PreparationCheck (XAUUSD_NOCOST_V2,M15) removed (result code -1)

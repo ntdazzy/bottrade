@@ -3,6 +3,10 @@
 Mới thêm khối chuẩn bị cài đặt chiến lược: **1.016/1.016 ca thường khớp**,
 so76giá trị, biên dịch **0 lỗi/0 cảnh báo**. Còn các nhánh lỗi, dữ liệu
 đầy đủ và ghép EA. [Phạm vi](../PHAN-TICH-CHUAN-BI-BOT-3.md).
+Đã so thêm18/18ca chia0: khớp loại lỗi và dừng, chưa so mọi trạng thái
+trước lỗi. Biên dịch với `-CheckFloatingPointDividers` để giữ cách dừng
+của bản gốc;1.016ca thường vẫn khớp, chưa là EA hoàn chỉnh.
+
 
 Đã kiểm cả vòng quản lý mua/bán thật/ảo: **364/364 ca khớp**,
 biên dịch **0 lỗi, 0 cảnh báo**. Có nhiều vị thế, đổi chế độ giữa vòng,

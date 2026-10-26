@@ -19,3 +19,23 @@ python -I -B -X utf8 dich-nguoc/khoi-phuc/cong-cu/xem-quan-ly-goc.py 3 e0c0 e150
 
 Khoảng sai báo lỗi trước khi đọc; chỉ chấp nhận bot1/3. Các phép kiểm
 riêng của từng phần ở `bot-cua-toi-1/tests/` và `bot-cua-toi-3/tests/`.
+
+Phép kiểm ghép mới:
+
+- `bot-cua-toi-1/tests/check-management-router.py`: prepare/original/mql5/compare;
+  --first-zero-ticket-changed chọn ngữ cảnh của bộ kiểm; hai manager được cấp trả lời.
+- `bot-cua-toi-1/tests/check-position-management-flow.py`: --trade-children chạy thân
+  hàm con; --first-zero-ticket-changed chọn ngữ cảnh riêng, --router-caller chạy
+  nơi gọi theo lần nhận giá qua các thân quản lý thật. Chưa là EA.
+- `bot-cua-toi-3/tests/check-preparation-full.py`: prepare/original/mql5/compare,
+  dùng1.016ca thường và76giá trị, không nuốt18ca lỗi vào kết quả thường.
+- `bot-cua-toi-3/tests/check-preparation-errors.py RUN --build BUILD`:18ca chia0,
+  kiểm lớp lỗi và không có kết quả thường, chưa so mọi trạng thái trước lỗi.
+- `bot-cua-toi-3/tests/probe-division-behavior.py RUN --build BUILD`: đo6ca chia
+  trong MT5riêng. `bien-dich.ps1 -CheckFloatingPointDividers` tạo dự án bật
+  fpzerocheck1 và giữSHA; chỉ dùng khi bằng chứng gốc yêu cầu cách dừng này.
+- `chay-chup-bot-1-3.py`/`chup-bot-1-3.py`/`tao-ho-so-ma-chup.py` nhận thêmbot2;
+  giữ kiểmPID/đườngdẫn/mãbăm, bản gốc đãcàiSHA390d8..., không sửaEX5/khóa.
+- `xuat-ma-co-du-lieu.ps1 -Bot N -Metadata ... -Ghidra ... -Java ... -Run ...`
+  xuất C từ bản chụp/metadata đã kiểm; giữ lỗi từng hàm, không xem C làMQL5.
+  Thư mục dự án Ghidra không được chứa thành phần bắt đầu dấu chấm.

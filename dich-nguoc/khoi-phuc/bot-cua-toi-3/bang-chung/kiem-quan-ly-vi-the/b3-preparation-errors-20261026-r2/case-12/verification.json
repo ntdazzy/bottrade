@@ -1,0 +1,25 @@
+{
+  "case_id": 12,
+  "source_case_id": 611,
+  "native": {
+    "code": "0x23095a000001f7",
+    "class_low32": 503,
+    "api_counts": {
+      "10": 1,
+      "11": 1,
+      "15": 1,
+      "12": 1,
+      "13": 1,
+      "14": 4,
+      "3": 6,
+      "200": 1
+    }
+  },
+  "mql5_fatal_class": "zero divide",
+  "no_normal_record": true,
+  "partial_state_compared": false,
+  "hashes": {
+    "mql5-results.bin": "a32c34895c36f036d75c5a509695c05413ab8b0841e02b3f6f318d73f4cde946",
+    "runtime-lines.txt": "18d217b93e7d48b6f199caa8ff27602911195f78c0d462fa715d72b51ae6ad78"
+  }
+}

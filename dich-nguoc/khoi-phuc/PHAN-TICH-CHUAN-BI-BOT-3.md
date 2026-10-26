@@ -28,3 +28,21 @@ Nguồn [Bot3Preparation.mqh](bot-cua-toi-3/source/MQL5/Include/bot-cua-toi-3/Bo
 Chưa nối đầy đủ nơi nạp tham số và nơi gọi trong EA chính. Tiếp theo:
 kiểm các đường trả sớm/lỗi và trạng thái trước lỗi, ghép vào luồng chọn
 chiến lược rồi điều kiện mua/bán và quản lý.
+
+## Đã kiểm thêm lỗi chia0 và cách biên dịch
+
+18/18ca gốc gây chia0 đã chạy riêng từng ca trong MT5: khớp lớp lỗi
+và dừng trước khi có kết quả thường. Lượt b3-preparation-errors-20261026-r2
+không khẳng định so đủ trạng thái trước lỗi hay số dòng lỗi.
+
+Nguyên nhân lượt đầu chạy tiếp là biên dịch trực tiếp chưa bật kiểm chia0.
+Đã đo6ca không bật và6ca bật bằng tệp dự án; bật thì5ca0/-0 dừng đúng,
+ca chia2 vẫn trả bình thường. Không thêm luật chặn hoặc đổi công thức
+trong header sản phẩm. Bản mới biên dịch cùng `fpzerocheck=1` và1.016ca
+thường vẫn giữ nguyên kết quả465601...229d.
+
+Bắt buộc dùng `bien-dich.ps1 -CheckFloatingPointDividers` cho khối này khi
+cần hành vi lỗi như bản gốc. Dự án và SHA được giữ trong từng biên nhận;
+[mô tả chính thức](https://www.mql5.com/en/book/advanced/project/project_mqproj).
+Tùy chọn mới không đổi lượt cũ hoặc MT5 chính. Hồ sơ thường/lỗi ban đầu
+được giữ nguyên; trạng thái mới nằm trong project-error-verification.json.

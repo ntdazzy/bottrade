@@ -1,0 +1,54 @@
+{
+  "projects": [
+    {
+      "build": "b3-preparation-project-check-20261026-r1",
+      "project_sha256": "7c6d1debfc72d86a0ec50cc9b20e95fdaecda8e9fd997d8fe1a18c1b99a22f83",
+      "fpzerocheck": "1",
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "build": "b3-preparation-project-api-20261026-r1",
+      "project_sha256": "6ecd660cfcda6a062f260c6bcc7dc98ddfe30804ffd81f92882335b5d3473eb4",
+      "fpzerocheck": "1",
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "build": "b3-division-project-20261026-r1",
+      "project_sha256": "ae8b4f93620f36d6303a825b33951429bca265bf5c6641a8311c531a1d8c9e04",
+      "fpzerocheck": "1",
+      "errors": 0,
+      "warnings": 0
+    }
+  ],
+  "normal_cases": {
+    "cases": 1016,
+    "matched": 1016,
+    "failed": 0,
+    "first_failures": [],
+    "result_sha256": {
+      "original": "465601457c2dab5b3ba994fe8d2408ff71a11739d1c39c6934f54044ae87229d",
+      "mql5": "465601457c2dab5b3ba994fe8d2408ff71a11739d1c39c6934f54044ae87229d"
+    },
+    "whole_manager_complete": false,
+    "whole_bot_complete": false,
+    "full_ea": false,
+    "full_preparation_body_executed": true,
+    "child_helpers_intercepted": false,
+    "terminal_replies_supplied": true,
+    "original_ex5_changed": false,
+    "limits": [
+      "The full captured preparation function executes with supplied successful indicator/tick/market replies. All 76 listed words are compared, not the EA.",
+      "Only the 1,016 legacy successful finite cases run here; the 18 prior runtime-error cases are retained outside this cohort. No handle failure, CopyBuffer zero/negative, short-array, allocation-failure or new runtime-error proof.",
+      "Seven SDK call counts are compared. Tick/calendar contents beyond the listed outputs and mutations of settings during SDK calls are not compared in this cohort.",
+      "String allocation succeeds. The indicator has two supplied samples and its size/series are compared; no complete indicator or broker/lifecycle claim."
+    ]
+  },
+  "error_cases": 18,
+  "error_class_and_absent_normal_results_matched": 18,
+  "partial_error_state_compared": false,
+  "production_header_changed_for_error_checks": false,
+  "official_project_format": "https://www.mql5.com/en/book/advanced/project/project_mqproj",
+  "whole_bot_complete": false
+}

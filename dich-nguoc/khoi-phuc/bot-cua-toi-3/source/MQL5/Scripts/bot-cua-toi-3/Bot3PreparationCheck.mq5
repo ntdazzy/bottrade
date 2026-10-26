@@ -6,6 +6,8 @@
 // Bot3EntryProfiles.mqh guard stops the preparation header from including that file again.
 #include "../../Include/bot-cua-toi-3/Bot3DistanceSettings.mqh"
 input string CheckRun="";
+// -1 runs every case; 0..count-1 runs that case only, though every case is still read and checked.
+input int OnlyCase=-1;
 union DoubleBits { double value; ulong bits; };
 ulong ValueBits(const double value) { DoubleBits v; v.value=value; return v.bits; }
 // Market values of the current case; the supplied services answer from it.
@@ -344,23 +346,31 @@ int OnStart()
    int bot=FileReadInteger(source),count=FileReadInteger(source);
    if(magic!=0x44535431 || version!=1 || bot!=3 || count<1 || count>10000 ||
       FileSize(source)!=(ulong)16+(ulong)count*268) { FileClose(source);return 7; }
+   // OnlyCase is checked against the count of the file, before any output exists.
+   if(OnlyCase<-1 || OnlyCase>=count) { FileClose(source);return 12; }
+   int selected_count=OnlyCase<0 ? count : 1;
    int output=FileOpen(folder+"mql5-results.bin",FILE_WRITE|FILE_BIN);
    if(output==INVALID_HANDLE) { FileClose(source);return 8; }
    FileWriteInteger(output,0x50525033);FileWriteInteger(output,1);
-   FileWriteInteger(output,count);FileWriteInteger(output,76);
+   FileWriteInteger(output,selected_count);FileWriteInteger(output,76);
    for(int i=0;i<count;i++)
    {
       // The whole case is read before the id check; a wrong id stops the run before its call.
       Bot3DistanceInputs r;
       if(PrepReadCase(source,r)!=i) { PrepRunFail(9);break; }
+      // Any other case is only read and checked; the loop still reads to the end of the file.
+      if(OnlyCase>=0 && i!=OnlyCase) continue;
+      // The case number reaches the log and the written words reach the file before the call.
+      Print("PREPARATION_CASE:",i);
+      FileFlush(output);
       PrepRunCase(output,i,r);
    }
    if(FileTell(source)!=FileSize(source)) PrepRunFail(10);
    FileClose(source);FileClose(output);
    int status=FileOpen(folder+"script-status.bin",FILE_WRITE|FILE_BIN);
    if(status==INVALID_HANDLE) return 11;
-   FileWriteInteger(status,PrepFault);FileWriteInteger(status,count);FileClose(status);
+   FileWriteInteger(status,PrepFault);FileWriteInteger(status,selected_count);FileClose(status);
    // The macros are undefined above, so this is the terminal Print.
-   Print("Bot3PreparationCheck:",PrepFault,",",count);
+   Print("Bot3PreparationCheck:",PrepFault,",",selected_count);
    return PrepFault;
 }
