@@ -1,0 +1,22 @@
+{
+  "cases": 416,
+  "matched": 416,
+  "failed": 0,
+  "first_failures": [],
+  "result_sha256": {
+    "original": "06b446adceb3845651714e39231094912cf65237bf7af8af03c4ff4dfe0a84f3",
+    "mql5": "06b446adceb3845651714e39231094912cf65237bf7af8af03c4ff4dfe0a84f3"
+  },
+  "whole_manager_complete": false,
+  "whole_bot_complete": false,
+  "full_ea": false,
+  "native_caller_slice_executed": true,
+  "child_helpers_intercepted": true,
+  "terminal_replies_supplied": true,
+  "original_ex5_changed": false,
+  "limits": [
+    "Only the caller after a supplied base price, not the earlier entry conditions or whole main program.",
+    "Margin/volume/pending-send/error-text children and terminal replies are supplied; the inline account/order limit, RoundPrice and caller instructions execute.",
+    "Valid 8-volume/100-row arrays and successful native string allocations only; no claim for all allocations, infinite retries, real accounts or lifecycle."
+  ]
+}

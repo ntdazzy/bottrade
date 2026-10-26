@@ -1,5 +1,13 @@
 # bot-cua-toi-3
 
+Đã thêm khối nạp 9 cấu hình chạy ở trước bước chuẩn bị: **2.106/2.106 ca
+khớp** mã gốc và MQL5, gồm hạt giống 32-bit, số dương/âm/NaN/vô cực,
+6 điều chỉnh và kiểm không đổi các trường ngoài phạm vi; biên dịch **0 lỗi,
+0 cảnh báo**. Kết quả hai bên cùng mã kiểm
+`759a57f91f6b00e724d6f34c8224886bf61c7be2fe21b94655a87e9d2b91251e`.
+Đây vẫn là một khối độc lập, chưa được gọi từ EA chính và chưa chứng minh
+toàn bot. [Đặc tả và phép kiểm](phan-tich/chuong-trinh-chinh/profile-parameters-20261026-r1/README.md).
+
 Mới thêm đoạn đặt lệnh sau khi đã có giá cơ sở: **332/332 ca khớp**,
 biên dịch **0 lỗi/0 cảnh báo**, giữ đúng thử lại và ghi bảng. Claude
 viết mã/bộ kiểm, Codex so với bản gốc. Chưa ghép toàn EA.

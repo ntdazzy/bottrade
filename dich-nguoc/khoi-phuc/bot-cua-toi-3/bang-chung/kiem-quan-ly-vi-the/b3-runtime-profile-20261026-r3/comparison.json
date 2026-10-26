@@ -1,0 +1,22 @@
+{
+  "cases": 2106,
+  "matched": 2106,
+  "failed": 0,
+  "first_failures": [],
+  "result_sha256": {
+    "original": "759a57f91f6b00e724d6f34c8224886bf61c7be2fe21b94655a87e9d2b91251e",
+    "mql5": "759a57f91f6b00e724d6f34c8224886bf61c7be2fe21b94655a87e9d2b91251e"
+  },
+  "whole_manager_complete": false,
+  "whole_bot_complete": false,
+  "full_ea": false,
+  "native_scalar_profile_executed": true,
+  "terminal_replies_supplied": false,
+  "child_helpers_intercepted": false,
+  "original_ex5_changed": false,
+  "limits": [
+    "Valid indices0..8; scalar profile loading only, before symbol/currency/magic selection and strategy preparation/main.",
+    "Full arithmetic and uint32 random state run; only both-NaN SSE results are delegated to measured CPU instructions, not the whole original on CPU.",
+    "MXCSR status flags, allocator/stack failures, initialization of the random seed, strategy selection and complete EAs are outside this comparison."
+  ]
+}

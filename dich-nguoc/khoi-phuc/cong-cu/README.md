@@ -34,6 +34,9 @@ Phép kiểm ghép mới:
   dùng1.016ca thường và76giá trị, không nuốt18ca lỗi vào kết quả thường.
 - `bot-cua-toi-3/tests/check-preparation-errors.py RUN --build BUILD`:18ca chia0,
   kiểm lớp lỗi và không có kết quả thường, chưa so mọi trạng thái trước lỗi.
+- `bot-cua-toi-3/tests/check-runtime-profile.py`: prepare/original/mql5/compare,
+  2.106 ca nạp 9 cấu hình, hạt giống và điều chỉnh; so toàn bộ 32 giá trị
+  theo từng bit và kiểm trường ngoài phạm vi. Chỉ là khối trước EA, chưa là toàn bot.
 - `bot-cua-toi-3/tests/probe-division-behavior.py RUN --build BUILD`: đo6ca chia
   trong MT5riêng. `bien-dich.ps1 -CheckFloatingPointDividers` tạo dự án bật
   fpzerocheck1 và giữSHA; chỉ dùng khi bằng chứng gốc yêu cầu cách dừng này.

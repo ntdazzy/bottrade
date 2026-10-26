@@ -1,5 +1,15 @@
 # bot-cua-toi-1
 
+Đã thêm đoạn sau khi có giá cơ sở đến đặt lệnh chờ: **416/416 ca khớp**
+giữa mã gốc và MQL5, biên dịch **0 lỗi/0 cảnh báo**. Đoạn này vẫn nhận giá
+và dịch vụ từ phần trước, chưa phải EA đầy đủ.
+[Bằng chứng](phan-tich/chuong-trinh-chinh/pending-submission-20261026-r1/README.md).
+
+Đã chốt đặc tả khối chuẩn bị tại `0x7500..0x831d` bằng mã lệnh máy; phép
+đối chiếu độc lập xác nhận thứ tự gọi và nhánh lỗi. Còn viết và kiểm phần
+MQL5 đầy đủ, đặc biệt nhánh NaN và nơi gọi từ EA.
+[Đặc tả](phan-tich/chuong-trinh-chinh/preparation-complete-20261026-r1/README.md).
+
 Vòng quản lý mua/bán đã ghép cùng các hàm bảng/sửa/đóng/gửi và khớp
 **352/352 ca**, biên dịch **0 lỗi/0 cảnh báo**. Dữ liệu và kết quả gửi
 của MT5 được cấp trong bộ kiểm; **chưa có EA đầy đủ**.

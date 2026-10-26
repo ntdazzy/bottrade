@@ -1,0 +1,56 @@
+{
+  "bot": 1,
+  "function": {"begin_rva": "0x7500", "end_rva_exclusive": "0x831d", "base": "0x23e5aa10000"},
+  "function_sha256": "8679070031fe7f3309378147c8afc4bf2d4ab596b3ee22a73e8e6386db6c9d0d",
+  "capture_code_sha256": "e099f124084093c3fdc8651d5f5326709b165248982e5d4eb7394afcbb8177a4",
+  "original_ex5_catalog_sha256": "a3b0de423a06e10ebedc279307b93d7cb9188ba2bb5de77131a913c865b0e922",
+  "original_ex5_catalog_basis": "catalog.json index 5, Gold Trade Pro MT5; the full EA file is not present in this workspace",
+  "input_register": {"ecx": "native_RVA_param_1; copied to [RVA 0x678f4] at 0x76e0"},
+  "indicator_and_buffer": {
+    "service_create": {"call_rva": "0x7587", "service": "MT5_Dispatch", "args": {"edx": "0", "r8d": "3", "r9d": "0x590008", "stack_0x20": "0x23e5aa721c8", "stack_0x28": "0x520004", "stack_0x30": "[RVA 0x621c4]", "stack_0x38": "0x520004", "stack_0x40": "[RVA 0x621c4]"}, "semantic_names": "not proven; retain native_RVA"},
+    "handle": "[RVA 0x62188], written at 0x7597",
+    "copy_buffer": {"call_rva": "0x75d0", "count": "100", "start": "0", "buffer_descriptor": "[RVA 0x62190]", "handle": "[RVA 0x62188]", "return_zero": "returns at 0x8286"},
+    "array_series": {"flags_word": "[RVA 0x62192]", "length": "[RVA 0x62198]", "series_bit_set": "low nibble test at 0x75e8; OR 0x10 at 0x75ec", "short_length": "<2 branches to runtime calls at 0x82a6 and 0x82d0"},
+    "scale": {"reference": "[RVA 0x62180]", "sample_array": "[RVA 0x621ac + index*8]", "variable_flag": "[RVA 0x6a5c8]", "adjust_lots_flag": "[RVA 0x6a798]", "scale_output": "[RVA 0x682e8]", "lot_scale_output": "[RVA 0x682f0]", "formula": "if reference>0, sample/reference is used; otherwise reference base [RVA 0x4fd40]. Exact branch and NaN handling are in 0x7637..0x76b4; do not replace with a simplified finite-only rule"}
+  },
+  "market_and_time": {
+    "symbol_tick": "call 0x76f6; output descriptor [RVA 0x67918], tick state [RVA 0x67750]; failure prints via 0x7706..0x7730",
+    "time_current": "call 0x7753; output [RVA 0x67790]",
+    "point": "SymbolInfoDouble property 0x10 call 0x7775; saved [RVA 0x67928] and [RVA 0x66d98]. RVA 0x7753 is the separate TimeCurrent call",
+    "digits": "property 0x11 calls 0x77bb, 0x77e8, 0x781a; 3 -> unit=point*10 at 0x77f1; 5 -> same; 1 -> unit=point/10 at 0x7823; unit [RVA 0x66d98]",
+    "spread": "ask-bid subtraction at 0x7856..0x7878; output [RVA 0x62560]",
+    "extra_digits_read": "property 0x11 call 0x787c; return unused"
+  },
+  "settings_write_order": {
+    "first_table": "writes begin 0x7889 and continue through 0x7d77; source values are at native RVAs 0x62214..0x623a0; scaled values multiply by [RVA 0x66d98] at the listed mulsd instructions",
+    "entry_and_distances": ["0x6242c", "0x62430", "0x62434", "0x62438", "0x62440", "0x62448", "0x62450", "0x62458", "0x62460", "0x62468", "0x62498", "0x624a0", "0x624a8", "0x624b0", "0x624b8", "0x624c8", "0x624d0"],
+    "comment": {"copy_call_rva": "0x7e4e", "destination": "[RVA 0x62480]", "source": "[RVA 0x622d0]"},
+    "after_comment_fields": ["0x62528", "0x62530", "0x62538", "0x62540", "0x62548", "0x62550"],
+    "semantic_names_not_proven": ["native_RVA_0x62458", "native_RVA_0x62468", "native_RVA_0x624b8", "native_RVA_0x624c8", "native_RVA_0x624d0", "native_RVA_0x62528", "native_RVA_0x62530", "native_RVA_0x62538", "native_RVA_0x62540", "native_RVA_0x62548", "native_RVA_0x62550"]
+  },
+  "broker_and_normalisation": {
+    "min_change": "candidate [RVA 0x62520] * unit; if candidate < point then read point again and set min_change=point/unit at 0x7e72..0x7f1d",
+    "stops_level": "property 0x1f at 0x7f8d; stop_min_price=[RVA 0x66a70] = integer*point",
+    "freeze_level": "property 0x20 at 0x7fb9; freeze_min_price=[RVA 0x67468] = integer*point",
+    "nonpositive_stop_target": "stop [RVA 0x62498] and target [RVA 0x624a0] set to 1.0 when <=0 at 0x7f1f..0x7f42",
+    "trigger_locked": "if locked [RVA 0x624d0] is below trigger [RVA 0x624c8], locked=trigger+0.1 at 0x8045..0x806d",
+    "freeze_units": "freeze_min_price/unit; division at 0x8089 is a real stop/error path when unit is zero",
+    "distance_limits": "updates native_RVA_0x62430, 0x62434, 0x62440, 0x624a8, 0x624f8, 0x62500 through 0x80d4..0x818d; comparisons preserve unordered NaN behavior"
+  },
+  "expiration": {
+    "hours": "native_RVA_0x62468",
+    "seconds": "[RVA 0x66da0] = (uint)hours * 0xe10 at 0x81e0..0x81f7",
+    "current_time": "call 0x820f only when hours>0",
+    "expiration_output": "[RVA 0x67450] set to current+seconds only when virtual-expiration byte [RVA 0x62419] == 0; otherwise 0 at 0x8272..0x8283"
+  },
+  "stop_and_error_paths": {
+    "indicator_handle_negative": "0x7597 test/0x759d js to 0x78ea; print/return through 0x8286",
+    "copy_buffer_zero": "0x75d3 test/0x75d5 je 0x8286",
+    "short_buffer": "length<2 at 0x75fc..0x7602; runtime calls at 0x82a6 and 0x82d0",
+    "invalid_reference_or_zero_scale": "runtime calls at 0x82fc and 0x8310; exact host error text is not proven from this snapshot",
+    "division_by_zero": "0x8089 division path; native exception/error behavior must be preserved",
+    "return": "normal epilogue 0x8286..0x829b; error branches may call runtime stop before return"
+  },
+  "unresolved": ["exact semantic names/types for several 0x622xx input slots", "exact indicator creation service parameter meanings", "exact host error text and runtime exception behavior", "full EA caller and persistence/lifecycle"],
+  "source_of_truth": ["raw-instructions.txt", "README.md", "metadata/import.json", "ma-trung-gian.c lines 3650-3883"]
+}

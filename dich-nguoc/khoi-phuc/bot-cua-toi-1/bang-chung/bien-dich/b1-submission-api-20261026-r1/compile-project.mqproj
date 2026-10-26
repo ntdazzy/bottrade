@@ -1,0 +1,13 @@
+{
+  "platform": "mt5",
+  "program_type": "script",
+  "optimize": "1",
+  "fpzerocheck": "1",
+  "files": [
+    {
+      "compile": true,
+      "path": "Bot1PendingSubmissionApiCompile.mq5",
+      "relative_to_project": true
+    }
+  ]
+}

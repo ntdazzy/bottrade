@@ -1,0 +1,78 @@
+# Native instructions for bot 1 profile blocks
+# Base: 0x23e5aa10000. Bytes are from the captured code SHA256
+# e099f124084093c3fdc8651d5f5326709b165248982e5d4eb7394afcbb8177a4.
+
+## Block starts and first calls
+0x12469 -> call RVA 0x12f2e
+0x12fd5 -> call RVA 0x1383f
+0x138d9 -> call RVA 0x14060
+0x14104 -> call RVA 0x14764
+0x147fe -> call RVA 0x14e85
+0x14f29 -> call RVA 0x15791
+0x15821 -> call RVA 0x15e71
+0x15f01 -> call RVA 0x166b3
+
+## Repeated field setup and direct constants
+48 ba 80 22 a7 5a 3e 02 00 00  movabs rdx, 0x23e5aa72280
+48 b9 84 22 a7 5a 3e 02 00 00  movabs rcx, 0x23e5aa72284
+66 0f 57 e4                       xorpd xmm4, xmm4
+c6 02 01                          mov byte ptr [rdx], 1
+c7 01 <older>                     mov dword ptr [rcx], <older>
+48 b9 7c 22 a7 5a 3e 02 00 00  movabs rax, 0x23e5aa7227c
+c7 00 18 40 00 00                 mov dword ptr [rax], 0x4018
+c7 02 <recent>                     mov dword ptr [rdx], <recent>
+c7 01 <last_shift>                 mov dword ptr [rcx], <last_shift>
+48 89 0a                          mov qword ptr [rdx], rcx
+
+## Exact constants observed at starts
+0x1249f: c7 01 04 00 00 00 mov dword ptr [rcx], 4
+0x124bf: c7 02 02 00 00 00 mov dword ptr [rdx], 2
+0x124c5: c7 01 a0 00 00 00 mov dword ptr [rcx], 0xa0
+0x13008: c6 02 01 mov byte ptr [rdx], 1
+0x1300b: c7 01 08 00 00 00 mov dword ptr [rcx], 8
+0x1302b: c7 02 0a 00 00 00 mov dword ptr [rdx], 10
+0x13031: c7 01 96 00 00 00 mov dword ptr [rcx], 0x96
+0x1390c: c6 02 01 mov byte ptr [rdx], 1
+0x13919: 41 c7 00 12 00 00 00 mov dword ptr [r8], 0x12
+0x13930: c7 02 03 00 00 00 mov dword ptr [rdx], 3
+0x13940: 41 c7 00 b4 00 00 00 mov dword ptr [r8], 0xb4
+0x14137: c6 02 01 mov byte ptr [rdx], 1
+0x14144: 41 c7 00 04 00 00 00 mov dword ptr [r8], 4
+0x1415b: c7 02 02 00 00 00 mov dword ptr [rdx], 2
+0x1416b: 41 c7 00 f0 00 00 00 mov dword ptr [r8], 0xf0
+0x14831: c6 02 01 mov byte ptr [rdx], 1
+0x14834: c7 01 0f 00 00 00 mov dword ptr [rcx], 0xf
+0x14854: c7 02 03 00 00 00 mov dword ptr [rdx], 3
+0x1485a: c7 01 e6 00 00 00 mov dword ptr [rcx], 0xe6
+0x14f5c: c6 02 01 mov byte ptr [rdx], 1
+0x14f5f: c7 01 0c 00 00 00 mov dword ptr [rcx], 0xc
+0x14f7f: c7 02 02 00 00 00 mov dword ptr [rdx], 2
+0x14f85: c7 01 32 00 00 00 mov dword ptr [rcx], 0x32
+0x15854: c6 02 01 mov byte ptr [rdx], 1
+0x15857: c7 01 11 00 00 00 mov dword ptr [rcx], 0x11
+0x15877: c7 02 02 00 00 00 mov dword ptr [rdx], 2
+0x1587d: c7 01 6e 00 00 00 mov dword ptr [rcx], 0x6e
+0x15f34: c6 02 01 mov byte ptr [rdx], 1
+0x15f37: c7 01 07 00 00 00 mov dword ptr [rcx], 7
+0x15f57: c7 02 02 00 00 00 mov dword ptr [rdx], 2
+0x15f5d: c7 01 14 00 00 00 mov dword ptr [rcx], 0x14
+
+## Random generator instructions (shown verbatim from each branch family)
+48 b8 78 a4 a7 5a 3e 02 00 00  movabs rax, 0x23e5aa7a478
+69 08 fd 43 03 00                 imul ecx, dword ptr [rax], 0x343fd
+81 c1 c3 9e 26 00                 add ecx, 0x269ec3
+69 d1 fd 43 03 00                 imul edx, ecx, 0x343fd
+81 c2 c3 9e 26 00                 add edx, 0x269ec3
+
+The same multiply/add sequence is repeated at native RVAs:
+0x12532, 0x12545, 0x1266d, 0x12679, 0x1269f, 0x126c8, 0x12776,
+0x1309e, 0x130b7, 0x131cf, 0x131dd, 0x13249, 0x13271, 0x13292,
+0x13379, 0x13385, 0x133ea, 0x13406, 0x1342f, and corresponding
+families through 0x166b3. The branch guard is `ucomisd xmm0,xmm4`
+followed by `jbe`; C prints the same guard as `if (0.0 < DAT_...5f0)`.
+
+## Control addresses
+0x6a5d0 = HL byte
+0x6a5f0 = Randomization double
+0x6a478 = seed state (direct movabs references above)
+0x6a708, 0x6a710, 0x6a718, 0x6a720 = four adjustment doubles

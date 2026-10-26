@@ -1,0 +1,5671 @@
+{
+  "bot": 3,
+  "run": "expressions-zero",
+  "randomization": 0.0,
+  "seed": 1,
+  "adjustments": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "controls": {
+    "0x1d6fd0": 0.0,
+    "0x1d70e8": 0.0,
+    "0x1d70f0": 0.0,
+    "0x1d70f8": 0.0,
+    "0x1d7100": 0.0,
+    "0x1d7108": 0.0,
+    "0x1d7110": 0.0
+  },
+  "function_begin": "0x17f00",
+  "function_end_exclusive": "0x1fcf9",
+  "function_sha256": "ad9ba21d686c6f054138072d755e4851473ddc903acc6f1fc3bf7fe0cad1f714",
+  "coefficient_bits": "000000000000003f",
+  "coefficient": 3.0517578125e-05,
+  "tool_sha256": "23faa9a5d89a47f9e326298ad9857fb91e453cbddb92b4fc644b3b7adb4c6513",
+  "prior_entry_proof_sha256": "87c3eb428d1315576479e3d2dedb1e5a2af36e854496c93331e5099342249317",
+  "required_scalar_bytes": 178,
+  "rows": [
+    {
+      "index": 0,
+      "start_rva": "0x1a80a",
+      "stop_before_rva": "0x1ae06",
+      "seed_before": 1,
+      "seed_after": 1,
+      "values": {
+        "entry.confirmation_frame": 16408,
+        "entry.entry_frame": 15,
+        "entry.older_width": 24,
+        "entry.recent_width": 3,
+        "entry.last_shift": 105,
+        "entry.gap_points": 45.0,
+        "buy_offset": -275.0,
+        "sell_offset": -160.0,
+        "nearby_radius": 30.0,
+        "expiration_hours": 35,
+        "stop_distance": 6100.0,
+        "target_distance": 1450.0,
+        "trail_distance": 1800.0,
+        "trail_start": 1800.0,
+        "trail_limit": 5000.0,
+        "trail_step": 0.1,
+        "native_6d368": 700.0,
+        "native_6d370": 1600.0,
+        "trigger_distance": 930.0,
+        "locked_distance": 120.0,
+        "aux_hour1": 1,
+        "aux_scan50": 1,
+        "aux_older": 14,
+        "aux_recent": 12,
+        "aux_offset": 22.0
+      },
+      "raw_fields": {
+        "0x6d2b8:4": {
+          "bits": "0f000000",
+          "as_unsigned": 15,
+          "as_double": null
+        },
+        "0x6d2bc:4": {
+          "bits": "18000000",
+          "as_unsigned": 24,
+          "as_double": null
+        },
+        "0x6d2b4:4": {
+          "bits": "18400000",
+          "as_unsigned": 16408,
+          "as_double": null
+        },
+        "0x6d2c0:4": {
+          "bits": "03000000",
+          "as_unsigned": 3,
+          "as_double": null
+        },
+        "0x6d2c4:4": {
+          "bits": "69000000",
+          "as_unsigned": 105,
+          "as_double": null
+        },
+        "0x6d2c8:8": {
+          "bits": "0000000000804640",
+          "as_unsigned": 4631530004285489152,
+          "as_double": 45.0
+        },
+        "0x6d2e0:4": {
+          "bits": "05000000",
+          "as_unsigned": 5,
+          "as_double": null
+        },
+        "0x6d2d0:8": {
+          "bits": "00000000003071c0",
+          "as_unsigned": 13866917504208601088,
+          "as_double": -275.0
+        },
+        "0x6d2e8:8": {
+          "bits": "0000000000003e40",
+          "as_unsigned": 4629137466983448576,
+          "as_double": 30.0
+        },
+        "0x6d2f0:4": {
+          "bits": "23000000",
+          "as_unsigned": 35,
+          "as_double": null
+        },
+        "0x6d324:4": {
+          "bits": "01000000",
+          "as_unsigned": 1,
+          "as_double": null
+        },
+        "0x6d2d8:8": {
+          "bits": "00000000000064c0",
+          "as_unsigned": 13863205552953229312,
+          "as_double": -160.0
+        },
+        "0x6d330:8": {
+          "bits": "0000000000a89640",
+          "as_unsigned": 4654091982887452672,
+          "as_double": 1450.0
+        },
+        "0x6d348:8": {
+          "bits": "0000000000209c40",
+          "as_unsigned": 4655631299166339072,
+          "as_double": 1800.0
+        },
+        "0x6d328:8": {
+          "bits": "0000000000d4b740",
+          "as_unsigned": 4663429035630526464,
+          "as_double": 6100.0
+        },
+        "0x6d350:8": {
+          "bits": "0000000000209c40",
+          "as_unsigned": 4655631299166339072,
+          "as_double": 1800.0
+        },
+        "0x6d358:8": {
+          "bits": "000000000088b340",
+          "as_unsigned": 4662219572839972864,
+          "as_double": 5000.0
+        },
+        "0x6d360:8": {
+          "bits": "9a9999999999b93f",
+          "as_unsigned": 4591870180066957722,
+          "as_double": 0.1
+        },
+        "0x6d370:8": {
+          "bits": "0000000000009940",
+          "as_unsigned": 4654751689864118272,
+          "as_double": 1600.0
+        },
+        "0x6d368:8": {
+          "bits": "0000000000e08540",
+          "as_unsigned": 4649368480934526976,
+          "as_double": 700.0
+        },
+        "0x6d398:8": {
+          "bits": "0000000000108d40",
+          "as_unsigned": 4651391582329634816,
+          "as_double": 930.0
+        },
+        "0x6d3b4:1": {
+          "bits": "01",
+          "as_unsigned": 1,
+          "as_double": null
+        },
+        "0x6d3b5:1": {
+          "bits": "01",
+          "as_unsigned": 1,
+          "as_double": null
+        },
+        "0x6d3b8:4": {
+          "bits": "0e000000",
+          "as_unsigned": 14,
+          "as_double": null
+        },
+        "0x6d3bc:4": {
+          "bits": "0c000000",
+          "as_unsigned": 12,
+          "as_double": null
+        },
+        "0x6d3c0:4": {
+          "bits": "2c010000",
+          "as_unsigned": 300,
+          "as_double": null
+        },
+        "0x6d2e4:4": {
+          "bits": "05000000",
+          "as_unsigned": 5,
+          "as_double": null
+        },
+        "0x6d3c8:8": {
+          "bits": "0000000000003640",
+          "as_unsigned": 4626885667169763328,
+          "as_double": 22.0
+        },
+        "0x6d174:4": {
+          "bits": "18400000",
+          "as_unsigned": 16408,
+          "as_double": null
+        },
+        "0x6d170:4": {
+          "bits": "10000000",
+          "as_unsigned": 16,
+          "as_double": null
+        },
+        "0x6d3a0:8": {
+          "bits": "0000000000005e40",
+          "as_unsigned": 4638144666238189568,
+          "as_double": 120.0
+        }
+      },
+      "writes": [
+        {
+          "rva": "0x6d2b8",
+          "size": 4,
+          "value_bits": "0xf",
+          "instruction": "0x1a83d"
+        },
+        {
+          "rva": "0x6d2bc",
+          "size": 4,
+          "value_bits": "0x18",
+          "instruction": "0x1a843"
+        },
+        {
+          "rva": "0x6d2b4",
+          "size": 4,
+          "value_bits": "0x4018",
+          "instruction": "0x1a85d"
+        },
+        {
+          "rva": "0x6d2c0",
+          "size": 4,
+          "value_bits": "0x3",
+          "instruction": "0x1a863"
+        },
+        {
+          "rva": "0x6d2c4",
+          "size": 4,
+          "value_bits": "0x69",
+          "instruction": "0x1a869"
+        },
+        {
+          "rva": "0x6d2c8",
+          "size": 8,
+          "value_bits": "0x4046800000000000",
+          "instruction": "0x1a883"
+        },
+        {
+          "rva": "0x6d2e0",
+          "size": 4,
+          "value_bits": "0x5",
+          "instruction": "0x1a962"
+        },
+        {
+          "rva": "0x6d2d0",
+          "size": 8,
+          "value_bits": "0xc071300000000000",
+          "instruction": "0x1a97c"
+        },
+        {
+          "rva": "0x6d2e8",
+          "size": 8,
+          "value_bits": "0x403e000000000000",
+          "instruction": "0x1a98a"
+        },
+        {
+          "rva": "0x6d2f0",
+          "size": 4,
+          "value_bits": "0x23",
+          "instruction": "0x1a9a1"
+        },
+        {
+          "rva": "0x6d324",
+          "size": 4,
+          "value_bits": "0x1",
+          "instruction": "0x1a9b1"
+        },
+        {
+          "rva": "0x6d2d8",
+          "size": 8,
+          "value_bits": "0xc064000000000000",
+          "instruction": "0x1a9bb"
+        },
+        {
+          "rva": "0x6d330",
+          "size": 8,
+          "value_bits": "0x4096a80000000000",
+          "instruction": "0x1ace6"
+        },
+        {
+          "rva": "0x6d348",
+          "size": 8,
+          "value_bits": "0x409c200000000000",
+          "instruction": "0x1acea"
+        },
+        {
+          "rva": "0x6d328",
+          "size": 8,
+          "value_bits": "0x40b7d40000000000",
+          "instruction": "0x1ad02"
+        },
+        {
+          "rva": "0x6d350",
+          "size": 8,
+          "value_bits": "0x409c200000000000",
+          "instruction": "0x1ad10"
+        },
+        {
+          "rva": "0x6d358",
+          "size": 8,
+          "value_bits": "0x40b3880000000000",
+          "instruction": "0x1ad14"
+        },
+        {
+          "rva": "0x6d360",
+          "size": 8,
+          "value_bits": "0x3fb999999999999a",
+          "instruction": "0x1ad2c"
+        },
+        {
+          "rva": "0x6d370",
+          "size": 8,
+          "value_bits": "0x4099000000000000",
+          "instruction": "0x1ad43"
+        },
+        {
+          "rva": "0x6d368",
+          "size": 8,
+          "value_bits": "0x4085e00000000000",
+          "instruction": "0x1ad52"
+        },
+        {
+          "rva": "0x6d398",
+          "size": 8,
+          "value_bits": "0x408d100000000000",
+          "instruction": "0x1ad61"
+        },
+        {
+          "rva": "0x6d3b4",
+          "size": 1,
+          "value_bits": "0x1",
+          "instruction": "0x1ad7f"
+        },
+        {
+          "rva": "0x6d3b5",
+          "size": 1,
+          "value_bits": "0x1",
+          "instruction": "0x1ad8c"
+        },
+        {
+          "rva": "0x6d3b8",
+          "size": 4,
+          "value_bits": "0xe",
+          "instruction": "0x1ad99"
+        },
+        {
+          "rva": "0x6d3bc",
+          "size": 4,
+          "value_bits": "0xc",
+          "instruction": "0x1ada9"
+        },
+        {
+          "rva": "0x6d3c0",
+          "size": 4,
+          "value_bits": "0x12c",
+          "instruction": "0x1adb9"
+        },
+        {
+          "rva": "0x6d2e4",
+          "size": 4,
+          "value_bits": "0x5",
+          "instruction": "0x1adc9"
+        },
+        {
+          "rva": "0x6d3c8",
+          "size": 8,
+          "value_bits": "0x4036000000000000",
+          "instruction": "0x1add9"
+        },
+        {
+          "rva": "0x6d174",
+          "size": 4,
+          "value_bits": "0x4018",
+          "instruction": "0x1adeb"
+        },
+        {
+          "rva": "0x6d170",
+          "size": 4,
+          "value_bits": "0x10",
+          "instruction": "0x1adf1"
+        },
+        {
+          "rva": "0x6d3a0",
+          "size": 8,
+          "value_bits": "0x405e000000000000",
+          "instruction": "0x1ae01"
+        }
+      ],
+      "instructions": [
+        "0x1a80a",
+        "0x1a814",
+        "0x1a81e",
+        "0x1a822",
+        "0x1a82c",
+        "0x1a834",
+        "0x1a83d",
+        "0x1a843",
+        "0x1a849",
+        "0x1a853",
+        "0x1a85d",
+        "0x1a863",
+        "0x1a869",
+        "0x1a86f",
+        "0x1a879",
+        "0x1a883",
+        "0x1a886",
+        "0x1a890",
+        "0x1a89a",
+        "0x1a89e",
+        "0x1a8a8",
+        "0x1a8ac",
+        "0x1a8b0",
+        "0x1a8b4",
+        "0x1a8b8",
+        "0x1a938",
+        "0x1a93c",
+        "0x1a946",
+        "0x1a950",
+        "0x1a95a",
+        "0x1a95e",
+        "0x1a962",
+        "0x1a968",
+        "0x1a972",
+        "0x1a97c",
+        "0x1a980",
+        "0x1a98a",
+        "0x1a98d",
+        "0x1a997",
+        "0x1a9a1",
+        "0x1a9a7",
+        "0x1a9b1",
+        "0x1a9b7",
+        "0x1a9bb",
+        "0x1a9bf",
+        "0x1a9c3",
+        "0x1a9cd",
+        "0x1a9d1",
+        "0x1ac24",
+        "0x1ac2e",
+        "0x1ac38",
+        "0x1ac42",
+        "0x1ac47",
+        "0x1ac4b",
+        "0x1ac4f",
+        "0x1ac59",
+        "0x1ac5d",
+        "0x1ac67",
+        "0x1ac71",
+        "0x1ac76",
+        "0x1ac80",
+        "0x1ac85",
+        "0x1ac8f",
+        "0x1ac94",
+        "0x1ac9e",
+        "0x1aca3",
+        "0x1aca7",
+        "0x1acab",
+        "0x1acb5",
+        "0x1acb9",
+        "0x1acbe",
+        "0x1acc8",
+        "0x1acd2",
+        "0x1acdc",
+        "0x1ace6",
+        "0x1acea",
+        "0x1acee",
+        "0x1acf8",
+        "0x1ad02",
+        "0x1ad06",
+        "0x1ad10",
+        "0x1ad14",
+        "0x1ad18",
+        "0x1ad22",
+        "0x1ad2c",
+        "0x1ad2f",
+        "0x1ad39",
+        "0x1ad43",
+        "0x1ad48",
+        "0x1ad52",
+        "0x1ad57",
+        "0x1ad61",
+        "0x1ad66",
+        "0x1ad70",
+        "0x1ad75",
+        "0x1ad7f",
+        "0x1ad82",
+        "0x1ad8c",
+        "0x1ad8f",
+        "0x1ad99",
+        "0x1ad9f",
+        "0x1ada9",
+        "0x1adaf",
+        "0x1adb9",
+        "0x1adbf",
+        "0x1adc9",
+        "0x1adcf",
+        "0x1add9",
+        "0x1addc",
+        "0x1ade6",
+        "0x1adeb",
+        "0x1adf1",
+        "0x1adf7",
+        "0x1ae01"
+      ],
+      "unresolved_registers": {},
+      "float_expressions": {
+        "entry.gap_points": [
+          "k",
+          "0000000000804640"
+        ],
+        "buy_offset": [
+          "+",
+          [
+            "k",
+            "00000000003071c0"
+          ],
+          [
+            "v",
+            "price_delta"
+          ]
+        ],
+        "sell_offset": [
+          "+",
+          [
+            "+",
+            [
+              "v",
+              "price_delta"
+            ],
+            [
+              "k",
+              "00000000000064c0"
+            ]
+          ],
+          [
+            "k",
+            "0000000000000000"
+          ]
+        ],
+        "nearby_radius": [
+          "k",
+          "0000000000003e40"
+        ],
+        "stop_distance": [
+          "+",
+          [
+            "v",
+            "stop_delta"
+          ],
+          [
+            "k",
+            "0000000000d4b740"
+          ]
+        ],
+        "target_distance": [
+          "+",
+          [
+            "v",
+            "target_delta"
+          ],
+          [
+            "k",
+            "0000000000a89640"
+          ]
+        ],
+        "trail_distance": [
+          "+",
+          [
+            "v",
+            "trail_delta"
+          ],
+          [
+            "k",
+            "0000000000209c40"
+          ]
+        ],
+        "trail_start": [
+          "k",
+          "0000000000209c40"
+        ],
+        "trail_limit": [
+          "k",
+          "000000000088b340"
+        ],
+        "trail_step": [
+          "k",
+          "9a9999999999b93f"
+        ],
+        "native_6d368": [
+          "+",
+          [
+            "v",
+            "aux_delta"
+          ],
+          [
+            "k",
+            "0000000000e08540"
+          ]
+        ],
+        "native_6d370": [
+          "k",
+          "0000000000009940"
+        ],
+        "trigger_distance": [
+          "k",
+          "0000000000108d40"
+        ],
+        "locked_distance": [
+          "+",
+          [
+            "+",
+            [
+              "v",
+              "lock_delta"
+            ],
+            [
+              "k",
+              "0000000000005e40"
+            ]
+          ],
+          [
+            "k",
+            "0000000000000000"
+          ]
+        ],
+        "aux_offset": [
+          "k",
+          "0000000000003640"
+        ]
+      },
+      "random_word_conversion_order": []
+    },
+    {
+      "index": 3,
+      "start_rva": "0x1b087",
+      "stop_before_rva": "0x1b6af",
+      "seed_before": 1,
+      "seed_after": 1,
+      "values": {
+        "entry.confirmation_frame": 16388,
+        "entry.entry_frame": 16385,
+        "entry.older_width": 12,
+        "entry.recent_width": 8,
+        "entry.last_shift": 90,
+        "entry.gap_points": 1050.0,
+        "buy_offset": -40.0,
+        "sell_offset": -100.0,
+        "nearby_radius": 130.0,
+        "expiration_hours": 192,
+        "stop_distance": 800.0,
+        "target_distance": 4900.0,
+        "trail_distance": 1300.0,
+        "trail_start": 1450.0,
+        "trail_limit": 2000.0,
+        "trail_step": 0.1,
+        "native_6d368": 200.0,
+        "native_6d370": 1400.0,
+        "trigger_distance": 500.0,
+        "locked_distance": 200.0,
+        "aux_hour1": 1,
+        "aux_scan50": 1,
+        "aux_older": 14,
+        "aux_recent": 6,
+        "aux_offset": 32.0
+      },
+      "raw_fields": {
+        "0x6d2b8:4": {
+          "bits": "01400000",
+          "as_unsigned": 16385,
+          "as_double": null
+        },
+        "0x6d2bc:4": {
+          "bits": "0c000000",
+          "as_unsigned": 12,
+          "as_double": null
+        },
+        "0x6d2b4:4": {
+          "bits": "04400000",
+          "as_unsigned": 16388,
+          "as_double": null
+        },
+        "0x6d2c0:4": {
+          "bits": "08000000",
+          "as_unsigned": 8,
+          "as_double": null
+        },
+        "0x6d2c4:4": {
+          "bits": "5a000000",
+          "as_unsigned": 90,
+          "as_double": null
+        },
+        "0x6d2c8:8": {
+          "bits": "0000000000689040",
+          "as_unsigned": 4652332764283011072,
+          "as_double": 1050.0
+        },
+        "0x6d2e0:4": {
+          "bits": "02000000",
+          "as_unsigned": 2,
+          "as_double": null
+        },
+        "0x6d2d0:8": {
+          "bits": "00000000000044c0",
+          "as_unsigned": 13854198353698488320,
+          "as_double": -40.0
+        },
+        "0x6d2e8:8": {
+          "bits": "0000000000406040",
+          "as_unsigned": 4638777984935788544,
+          "as_double": 130.0
+        },
+        "0x6d2f0:4": {
+          "bits": "c0000000",
+          "as_unsigned": 192,
+          "as_double": null
+        },
+        "0x6d324:4": {
+          "bits": "05000000",
+          "as_unsigned": 5,
+          "as_double": null
+        },
+        "0x6d2d8:8": {
+          "bits": "00000000000059c0",
+          "as_unsigned": 13860109328209412096,
+          "as_double": -100.0
+        },
+        "0x6d328:8": {
+          "bits": "0000000000008940",
+          "as_unsigned": 4650248090236747776,
+          "as_double": 800.0
+        },
+        "0x6d330:8": {
+          "bits": "000000000024b340",
+          "as_unsigned": 4662109621677195264,
+          "as_double": 4900.0
+        },
+        "0x6d348:8": {
+          "bits": "0000000000509440",
+          "as_unsigned": 4653432275910787072,
+          "as_double": 1300.0
+        },
+        "0x6d350:8": {
+          "bits": "0000000000a89640",
+          "as_unsigned": 4654091982887452672,
+          "as_double": 1450.0
+        },
+        "0x6d358:8": {
+          "bits": "0000000000409f40",
+          "as_unsigned": 4656510908468559872,
+          "as_double": 2000.0
+        },
+        "0x6d360:8": {
+          "bits": "9a9999999999b93f",
+          "as_unsigned": 4591870180066957722,
+          "as_double": 0.1
+        },
+        "0x6d3a0:8": {
+          "bits": "0000000000006940",
+          "as_unsigned": 4641240890982006784,
+          "as_double": 200.0
+        },
+        "0x6d370:8": {
+          "bits": "0000000000e09540",
+          "as_unsigned": 4653872080561897472,
+          "as_double": 1400.0
+        },
+        "0x6d3b5:1": {
+          "bits": "01",
+          "as_unsigned": 1,
+          "as_double": null
+        },
+        "0x6d368:8": {
+          "bits": "0000000000006940",
+          "as_unsigned": 4641240890982006784,
+          "as_double": 200.0
+        },
+        "0x6d3bc:4": {
+          "bits": "06000000",
+          "as_unsigned": 6,
+          "as_double": null
+        },
+        "0x6d398:8": {
+          "bits": "0000000000407f40",
+          "as_unsigned": 4647503709213818880,
+          "as_double": 500.0
+        },
+        "0x6d2e4:4": {
+          "bits": "63000000",
+          "as_unsigned": 99,
+          "as_double": null
+        },
+        "0x6d3b4:1": {
+          "bits": "01",
+          "as_unsigned": 1,
+          "as_double": null
+        },
+        "0x6d174:4": {
+          "bits": "18400000",
+          "as_unsigned": 16408,
+          "as_double": null
+        },
+        "0x6d3b8:4": {
+          "bits": "0e000000",
+          "as_unsigned": 14,
+          "as_double": null
+        },
+        "0x6d3c0:4": {
+          "bits": "90010000",
+          "as_unsigned": 400,
+          "as_double": null
+        },
+        "0x6d3c8:8": {
+          "bits": "0000000000004040",
+          "as_unsigned": 4629700416936869888,
+          "as_double": 32.0
+        },
+        "0x6d170:4": {
+          "bits": "10000000",
+          "as_unsigned": 16,
+          "as_double": null
+        }
+      },
+      "writes": [
+        {
+          "rva": "0x6d2b8",
+          "size": 4,
+          "value_bits": "0x4001",
+          "instruction": "0x1b0ba"
+        },
+        {
+          "rva": "0x6d2bc",
+          "size": 4,
+          "value_bits": "0xc",
+          "instruction": "0x1b0c0"
+        },
+        {
+          "rva": "0x6d2b4",
+          "size": 4,
+          "value_bits": "0x4004",
+          "instruction": "0x1b0da"
+        },
+        {
+          "rva": "0x6d2c0",
+          "size": 4,
+          "value_bits": "0x8",
+          "instruction": "0x1b0e0"
+        },
+        {
+          "rva": "0x6d2c4",
+          "size": 4,
+          "value_bits": "0x5a",
+          "instruction": "0x1b0e6"
+        },
+        {
+          "rva": "0x6d2c8",
+          "size": 8,
+          "value_bits": "0x4090680000000000",
+          "instruction": "0x1b100"
+        },
+        {
+          "rva": "0x6d2e0",
+          "size": 4,
+          "value_bits": "0x2",
+          "instruction": "0x1b1e2"
+        },
+        {
+          "rva": "0x6d2d0",
+          "size": 8,
+          "value_bits": "0xc044000000000000",
+          "instruction": "0x1b1fc"
+        },
+        {
+          "rva": "0x6d2e8",
+          "size": 8,
+          "value_bits": "0x4060400000000000",
+          "instruction": "0x1b20e"
+        },
+        {
+          "rva": "0x6d2f0",
+          "size": 4,
+          "value_bits": "0xc0",
+          "instruction": "0x1b21b"
+        },
+        {
+          "rva": "0x6d324",
+          "size": 4,
+          "value_bits": "0x5",
+          "instruction": "0x1b22b"
+        },
+        {
+          "rva": "0x6d2d8",
+          "size": 8,
+          "value_bits": "0xc059000000000000",
+          "instruction": "0x1b242"
+        },
+        {
+          "rva": "0x6d328",
+          "size": 8,
+          "value_bits": "0x4089000000000000",
+          "instruction": "0x1b2db"
+        },
+        {
+          "rva": "0x6d330",
+          "size": 8,
+          "value_bits": "0x40b3240000000000",
+          "instruction": "0x1b5b7"
+        },
+        {
+          "rva": "0x6d348",
+          "size": 8,
+          "value_bits": "0x4094500000000000",
+          "instruction": "0x1b5c5"
+        },
+        {
+          "rva": "0x6d350",
+          "size": 8,
+          "value_bits": "0x4096a80000000000",
+          "instruction": "0x1b5d3"
+        },
+        {
+          "rva": "0x6d358",
+          "size": 8,
+          "value_bits": "0x409f400000000000",
+          "instruction": "0x1b5e1"
+        },
+        {
+          "rva": "0x6d360",
+          "size": 8,
+          "value_bits": "0x3fb999999999999a",
+          "instruction": "0x1b5f4"
+        },
+        {
+          "rva": "0x6d3a0",
+          "size": 8,
+          "value_bits": "0x4069000000000000",
+          "instruction": "0x1b60b"
+        },
+        {
+          "rva": "0x6d370",
+          "size": 8,
+          "value_bits": "0x4095e00000000000",
+          "instruction": "0x1b610"
+        },
+        {
+          "rva": "0x6d3b5",
+          "size": 1,
+          "value_bits": "0x1",
+          "instruction": "0x1b61e"
+        },
+        {
+          "rva": "0x6d368",
+          "size": 8,
+          "value_bits": "0x4069000000000000",
+          "instruction": "0x1b62b"
+        },
+        {
+          "rva": "0x6d3bc",
+          "size": 4,
+          "value_bits": "0x6",
+          "instruction": "0x1b63a"
+        },
+        {
+          "rva": "0x6d398",
+          "size": 8,
+          "value_bits": "0x407f400000000000",
+          "instruction": "0x1b64a"
+        },
+        {
+          "rva": "0x6d2e4",
+          "size": 4,
+          "value_bits": "0x63",
+          "instruction": "0x1b659"
+        },
+        {
+          "rva": "0x6d3b4",
+          "size": 1,
+          "value_bits": "0x1",
+          "instruction": "0x1b669"
+        },
+        {
+          "rva": "0x6d174",
+          "size": 4,
+          "value_bits": "0x4018",
+          "instruction": "0x1b676"
+        },
+        {
+          "rva": "0x6d3b8",
+          "size": 4,
+          "value_bits": "0xe",
+          "instruction": "0x1b67c"
+        },
+        {
+          "rva": "0x6d3c0",
+          "size": 4,
+          "value_bits": "0x190",
+          "instruction": "0x1b68c"
+        },
+        {
+          "rva": "0x6d3c8",
+          "size": 8,
+          "value_bits": "0x4040000000000000",
+          "instruction": "0x1b69c"
+        },
+        {
+          "rva": "0x6d170",
+          "size": 4,
+          "value_bits": "0x10",
+          "instruction": "0x1b6a9"
+        }
+      ],
+      "instructions": [
+        "0x1b087",
+        "0x1b091",
+        "0x1b09b",
+        "0x1b09f",
+        "0x1b0a9",
+        "0x1b0b1",
+        "0x1b0ba",
+        "0x1b0c0",
+        "0x1b0c6",
+        "0x1b0d0",
+        "0x1b0da",
+        "0x1b0e0",
+        "0x1b0e6",
+        "0x1b0ec",
+        "0x1b0f6",
+        "0x1b100",
+        "0x1b103",
+        "0x1b10d",
+        "0x1b117",
+        "0x1b11b",
+        "0x1b125",
+        "0x1b129",
+        "0x1b12d",
+        "0x1b131",
+        "0x1b135",
+        "0x1b1b6",
+        "0x1b1c0",
+        "0x1b1ca",
+        "0x1b1d4",
+        "0x1b1de",
+        "0x1b1e2",
+        "0x1b1e8",
+        "0x1b1f2",
+        "0x1b1fc",
+        "0x1b200",
+        "0x1b20a",
+        "0x1b20e",
+        "0x1b211",
+        "0x1b21b",
+        "0x1b221",
+        "0x1b22b",
+        "0x1b231",
+        "0x1b23b",
+        "0x1b23e",
+        "0x1b242",
+        "0x1b246",
+        "0x1b24a",
+        "0x1b24c",
+        "0x1b250",
+        "0x1b25a",
+        "0x1b26a",
+        "0x1b26e",
+        "0x1b2be",
+        "0x1b2c2",
+        "0x1b2cc",
+        "0x1b2d6",
+        "0x1b2db",
+        "0x1b2df",
+        "0x1b2e3",
+        "0x1b2ed",
+        "0x1b2f2",
+        "0x1b2f6",
+        "0x1b300",
+        "0x1b511",
+        "0x1b51b",
+        "0x1b525",
+        "0x1b52f",
+        "0x1b534",
+        "0x1b538",
+        "0x1b53d",
+        "0x1b547",
+        "0x1b551",
+        "0x1b55b",
+        "0x1b560",
+        "0x1b564",
+        "0x1b56e",
+        "0x1b578",
+        "0x1b57d",
+        "0x1b581",
+        "0x1b585",
+        "0x1b58a",
+        "0x1b594",
+        "0x1b59e",
+        "0x1b5a8",
+        "0x1b5ad",
+        "0x1b5b7",
+        "0x1b5bb",
+        "0x1b5c5",
+        "0x1b5c9",
+        "0x1b5d3",
+        "0x1b5d7",
+        "0x1b5e1",
+        "0x1b5e5",
+        "0x1b5ef",
+        "0x1b5f4",
+        "0x1b5f7",
+        "0x1b601",
+        "0x1b60b",
+        "0x1b610",
+        "0x1b614",
+        "0x1b61e",
+        "0x1b621",
+        "0x1b62b",
+        "0x1b630",
+        "0x1b63a",
+        "0x1b640",
+        "0x1b64a",
+        "0x1b64f",
+        "0x1b659",
+        "0x1b65f",
+        "0x1b669",
+        "0x1b66c",
+        "0x1b676",
+        "0x1b67c",
+        "0x1b682",
+        "0x1b68c",
+        "0x1b692",
+        "0x1b69c",
+        "0x1b69f",
+        "0x1b6a9"
+      ],
+      "unresolved_registers": {},
+      "float_expressions": {
+        "entry.gap_points": [
+          "k",
+          "0000000000689040"
+        ],
+        "buy_offset": [
+          "+",
+          [
+            "k",
+            "00000000000044c0"
+          ],
+          [
+            "v",
+            "price_delta"
+          ]
+        ],
+        "sell_offset": [
+          "+",
+          [
+            "+",
+            [
+              "v",
+              "price_delta"
+            ],
+            [
+              "k",
+              "00000000000059c0"
+            ]
+          ],
+          [
+            "k",
+            "0000000000000000"
+          ]
+        ],
+        "nearby_radius": [
+          "k",
+          "0000000000406040"
+        ],
+        "stop_distance": [
+          "+",
+          [
+            "+",
+            [
+              "v",
+              "stop_delta"
+            ],
+            [
+              "k",
+              "0000000000008940"
+            ]
+          ],
+          [
+            "k",
+            "0000000000000000"
+          ]
+        ],
+        "target_distance": [
+          "+",
+          [
+            "v",
+            "target_delta"
+          ],
+          [
+            "k",
+            "000000000024b340"
+          ]
+        ],
+        "trail_distance": [
+          "+",
+          [
+            "v",
+            "trail_delta"
+          ],
+          [
+            "k",
+            "0000000000509440"
+          ]
+        ],
+        "trail_start": [
+          "k",
+          "0000000000a89640"
+        ],
+        "trail_limit": [
+          "k",
+          "0000000000409f40"
+        ],
+        "trail_step": [
+          "k",
+          "9a9999999999b93f"
+        ],
+        "native_6d368": [
+          "+",
+          [
+            "v",
+            "aux_delta"
+          ],
+          [
+            "k",
+            "0000000000006940"
+          ]
+        ],
+        "native_6d370": [
+          "k",
+          "0000000000e09540"
+        ],
+        "trigger_distance": [
+          "k",
+          "0000000000407f40"
+        ],
+        "locked_distance": [
+          "+",
+          [
+            "+",
+            [
+              "v",
+              "lock_delta"
+            ],
+            [
+              "k",
+              "0000000000006940"
+            ]
+          ],
+          [
+            "k",
+            "0000000000000000"
+          ]
+        ],
+        "aux_offset": [
+          "k",
+          "0000000000004040"
+        ]
+      },
+      "random_word_conversion_order": []
+    },
+    {
+      "index": 1,
+      "start_rva": "0x1b93b",
+      "stop_before_rva": "0x1bf4f",
+      "seed_before": 1,
+      "seed_after": 1,
+      "values": {
+        "entry.confirmation_frame": 16408,
+        "entry.entry_frame": 16385,
+        "entry.older_width": 15,
+        "entry.recent_width": 3,
+        "entry.last_shift": 230,
+        "entry.gap_points": 550.0,
+        "buy_offset": -170.0,
+        "sell_offset": -70.0,
+        "nearby_radius": 480.0,
+        "expiration_hours": 480,
+        "stop_distance": 1000.0,
+        "target_distance": 4100.0,
+        "trail_distance": 450.0,
+        "trail_start": 1400.0,
+        "trail_limit": 5000.0,
+        "trail_step": 0.1,
+        "native_6d368": 400.0,
+        "native_6d370": 1600.0,
+        "trigger_distance": 500.0,
+        "locked_distance": 100.0,
+        "aux_hour1": 1,
+        "aux_scan50": 1,
+        "aux_older": 1,
+        "aux_recent": 5,
+        "aux_offset": 22.0
+      },
+      "raw_fields": {
+        "0x6d2b8:4": {
+          "bits": "01400000",
+          "as_unsigned": 16385,
+          "as_double": null
+        },
+        "0x6d2bc:4": {
+          "bits": "0f000000",
+          "as_unsigned": 15,
+          "as_double": null
+        },
+        "0x6d2b4:4": {
+          "bits": "18400000",
+          "as_unsigned": 16408,
+          "as_double": null
+        },
+        "0x6d2c0:4": {
+          "bits": "03000000",
+          "as_unsigned": 3,
+          "as_double": null
+        },
+        "0x6d2c4:4": {
+          "bits": "e6000000",
+          "as_unsigned": 230,
+          "as_double": null
+        },
+        "0x6d2c8:8": {
+          "bits": "0000000000308140",
+          "as_unsigned": 4648049066981195776,
+          "as_double": 550.0
+        },
+        "0x6d2e0:4": {
+          "bits": "01000000",
+          "as_unsigned": 1,
+          "as_double": null
+        },
+        "0x6d2d0:8": {
+          "bits": "00000000004065c0",
+          "as_unsigned": 13863557396674117632,
+          "as_double": -170.0
+        },
+        "0x6d2e8:8": {
+          "bits": "0000000000007e40",
+          "as_unsigned": 4647151865492930560,
+          "as_double": 480.0
+        },
+        "0x6d2f0:4": {
+          "bits": "e0010000",
+          "as_unsigned": 480,
+          "as_double": null
+        },
+        "0x6d324:4": {
+          "bits": "01000000",
+          "as_unsigned": 1,
+          "as_double": null
+        },
+        "0x6d2d8:8": {
+          "bits": "00000000008051c0",
+          "as_unsigned": 13857998265884082176,
+          "as_double": -70.0
+        },
+        "0x6d330:8": {
+          "bits": "000000000004b040",
+          "as_unsigned": 4661230012374974464,
+          "as_double": 4100.0
+        },
+        "0x6d348:8": {
+          "bits": "0000000000207c40",
+          "as_unsigned": 4646624099911598080,
+          "as_double": 450.0
+        },
+        "0x6d328:8": {
+          "bits": "0000000000408f40",
+          "as_unsigned": 4652007308841189376,
+          "as_double": 1000.0
+        },
+        "0x6d350:8": {
+          "bits": "0000000000e09540",
+          "as_unsigned": 4653872080561897472,
+          "as_double": 1400.0
+        },
+        "0x6d358:8": {
+          "bits": "000000000088b340",
+          "as_unsigned": 4662219572839972864,
+          "as_double": 5000.0
+        },
+        "0x6d360:8": {
+          "bits": "9a9999999999b93f",
+          "as_unsigned": 4591870180066957722,
+          "as_double": 0.1
+        },
+        "0x6d370:8": {
+          "bits": "0000000000009940",
+          "as_unsigned": 4654751689864118272,
+          "as_double": 1600.0
+        },
+        "0x6d368:8": {
+          "bits": "0000000000007940",
+          "as_unsigned": 4645744490609377280,
+          "as_double": 400.0
+        },
+        "0x6d398:8": {
+          "bits": "0000000000407f40",
+          "as_unsigned": 4647503709213818880,
+          "as_double": 500.0
+        },
+        "0x6d3b4:1": {
+          "bits": "01",
+          "as_unsigned": 1,
+          "as_double": null
+        },
+        "0x6d3b5:1": {
+          "bits": "01",
+          "as_unsigned": 1,
+          "as_double": null
+        },
+        "0x6d3b8:4": {
+          "bits": "01000000",
+          "as_unsigned": 1,
+          "as_double": null
+        },
+        "0x6d3bc:4": {
+          "bits": "05000000",
+          "as_unsigned": 5,
+          "as_double": null
+        },
+        "0x6d3c0:4": {
+          "bits": "bc020000",
+          "as_unsigned": 700,
+          "as_double": null
+        },
+        "0x6d2e4:4": {
+          "bits": "63000000",
+          "as_unsigned": 99,
+          "as_double": null
+        },
+        "0x6d3c8:8": {
+          "bits": "0000000000003640",
+          "as_unsigned": 4626885667169763328,
+          "as_double": 22.0
+        },
+        "0x6d174:4": {
+          "bits": "18400000",
+          "as_unsigned": 16408,
+          "as_double": null
+        },
+        "0x6d170:4": {
+          "bits": "29000000",
+          "as_unsigned": 41,
+          "as_double": null
+        },
+        "0x6d3a0:8": {
+          "bits": "0000000000005940",
+          "as_unsigned": 4636737291354636288,
+          "as_double": 100.0
+        }
+      },
+      "writes": [
+        {
+          "rva": "0x6d2b8",
+          "size": 4,
+          "value_bits": "0x4001",
+          "instruction": "0x1b96e"
+        },
+        {
+          "rva": "0x6d2bc",
+          "size": 4,
+          "value_bits": "0xf",
+          "instruction": "0x1b974"
+        },
+        {
+          "rva": "0x6d2b4",
+          "size": 4,
+          "value_bits": "0x4018",
+          "instruction": "0x1b98e"
+        },
+        {
+          "rva": "0x6d2c0",
+          "size": 4,
+          "value_bits": "0x3",
+          "instruction": "0x1b994"
+        },
+        {
+          "rva": "0x6d2c4",
+          "size": 4,
+          "value_bits": "0xe6",
+          "instruction": "0x1b99a"
+        },
+        {
+          "rva": "0x6d2c8",
+          "size": 8,
+          "value_bits": "0x4081300000000000",
+          "instruction": "0x1b9b4"
+        },
+        {
+          "rva": "0x6d2e0",
+          "size": 4,
+          "value_bits": "0x1",
+          "instruction": "0x1ba93"
+        },
+        {
+          "rva": "0x6d2d0",
+          "size": 8,
+          "value_bits": "0xc065400000000000",
+          "instruction": "0x1baad"
+        },
+        {
+          "rva": "0x6d2e8",
+          "size": 8,
+          "value_bits": "0x407e000000000000",
+          "instruction": "0x1babb"
+        },
+        {
+          "rva": "0x6d2f0",
+          "size": 4,
+          "value_bits": "0x1e0",
+          "instruction": "0x1bad2"
+        },
+        {
+          "rva": "0x6d324",
+          "size": 4,
+          "value_bits": "0x1",
+          "instruction": "0x1bae2"
+        },
+        {
+          "rva": "0x6d2d8",
+          "size": 8,
+          "value_bits": "0xc051800000000000",
+          "instruction": "0x1baec"
+        },
+        {
+          "rva": "0x6d330",
+          "size": 8,
+          "value_bits": "0x40b0040000000000",
+          "instruction": "0x1be2f"
+        },
+        {
+          "rva": "0x6d348",
+          "size": 8,
+          "value_bits": "0x407c200000000000",
+          "instruction": "0x1be33"
+        },
+        {
+          "rva": "0x6d328",
+          "size": 8,
+          "value_bits": "0x408f400000000000",
+          "instruction": "0x1be4b"
+        },
+        {
+          "rva": "0x6d350",
+          "size": 8,
+          "value_bits": "0x4095e00000000000",
+          "instruction": "0x1be59"
+        },
+        {
+          "rva": "0x6d358",
+          "size": 8,
+          "value_bits": "0x40b3880000000000",
+          "instruction": "0x1be5d"
+        },
+        {
+          "rva": "0x6d360",
+          "size": 8,
+          "value_bits": "0x3fb999999999999a",
+          "instruction": "0x1be75"
+        },
+        {
+          "rva": "0x6d370",
+          "size": 8,
+          "value_bits": "0x4099000000000000",
+          "instruction": "0x1be8c"
+        },
+        {
+          "rva": "0x6d368",
+          "size": 8,
+          "value_bits": "0x4079000000000000",
+          "instruction": "0x1be9b"
+        },
+        {
+          "rva": "0x6d398",
+          "size": 8,
+          "value_bits": "0x407f400000000000",
+          "instruction": "0x1beaa"
+        },
+        {
+          "rva": "0x6d3b4",
+          "size": 1,
+          "value_bits": "0x1",
+          "instruction": "0x1bec8"
+        },
+        {
+          "rva": "0x6d3b5",
+          "size": 1,
+          "value_bits": "0x1",
+          "instruction": "0x1bed5"
+        },
+        {
+          "rva": "0x6d3b8",
+          "size": 4,
+          "value_bits": "0x1",
+          "instruction": "0x1bee2"
+        },
+        {
+          "rva": "0x6d3bc",
+          "size": 4,
+          "value_bits": "0x5",
+          "instruction": "0x1bef2"
+        },
+        {
+          "rva": "0x6d3c0",
+          "size": 4,
+          "value_bits": "0x2bc",
+          "instruction": "0x1bf02"
+        },
+        {
+          "rva": "0x6d2e4",
+          "size": 4,
+          "value_bits": "0x63",
+          "instruction": "0x1bf12"
+        },
+        {
+          "rva": "0x6d3c8",
+          "size": 8,
+          "value_bits": "0x4036000000000000",
+          "instruction": "0x1bf22"
+        },
+        {
+          "rva": "0x6d174",
+          "size": 4,
+          "value_bits": "0x4018",
+          "instruction": "0x1bf34"
+        },
+        {
+          "rva": "0x6d170",
+          "size": 4,
+          "value_bits": "0x29",
+          "instruction": "0x1bf3a"
+        },
+        {
+          "rva": "0x6d3a0",
+          "size": 8,
+          "value_bits": "0x4059000000000000",
+          "instruction": "0x1bf4a"
+        }
+      ],
+      "instructions": [
+        "0x1b93b",
+        "0x1b945",
+        "0x1b94f",
+        "0x1b953",
+        "0x1b95d",
+        "0x1b965",
+        "0x1b96e",
+        "0x1b974",
+        "0x1b97a",
+        "0x1b984",
+        "0x1b98e",
+        "0x1b994",
+        "0x1b99a",
+        "0x1b9a0",
+        "0x1b9aa",
+        "0x1b9b4",
+        "0x1b9b7",
+        "0x1b9c1",
+        "0x1b9cb",
+        "0x1b9cf",
+        "0x1b9d9",
+        "0x1b9dd",
+        "0x1b9e1",
+        "0x1b9e5",
+        "0x1b9e9",
+        "0x1ba69",
+        "0x1ba6d",
+        "0x1ba77",
+        "0x1ba81",
+        "0x1ba8b",
+        "0x1ba8f",
+        "0x1ba93",
+        "0x1ba99",
+        "0x1baa3",
+        "0x1baad",
+        "0x1bab1",
+        "0x1babb",
+        "0x1babe",
+        "0x1bac8",
+        "0x1bad2",
+        "0x1bad8",
+        "0x1bae2",
+        "0x1bae8",
+        "0x1baec",
+        "0x1baf0",
+        "0x1baf4",
+        "0x1bafe",
+        "0x1bb02",
+        "0x1bd63",
+        "0x1bd6d",
+        "0x1bd77",
+        "0x1bd81",
+        "0x1bd86",
+        "0x1bd8a",
+        "0x1bd8e",
+        "0x1bd93",
+        "0x1bd9d",
+        "0x1bda7",
+        "0x1bdb1",
+        "0x1bdb6",
+        "0x1bdc0",
+        "0x1bdc5",
+        "0x1bdcf",
+        "0x1bdd4",
+        "0x1bdde",
+        "0x1bde2",
+        "0x1bde6",
+        "0x1bdea",
+        "0x1bdf4",
+        "0x1bdf8",
+        "0x1be02",
+        "0x1be07",
+        "0x1be11",
+        "0x1be1b",
+        "0x1be25",
+        "0x1be2f",
+        "0x1be33",
+        "0x1be37",
+        "0x1be41",
+        "0x1be4b",
+        "0x1be4f",
+        "0x1be59",
+        "0x1be5d",
+        "0x1be61",
+        "0x1be6b",
+        "0x1be75",
+        "0x1be78",
+        "0x1be82",
+        "0x1be8c",
+        "0x1be91",
+        "0x1be9b",
+        "0x1bea0",
+        "0x1beaa",
+        "0x1beaf",
+        "0x1beb9",
+        "0x1bebe",
+        "0x1bec8",
+        "0x1becb",
+        "0x1bed5",
+        "0x1bed8",
+        "0x1bee2",
+        "0x1bee8",
+        "0x1bef2",
+        "0x1bef8",
+        "0x1bf02",
+        "0x1bf08",
+        "0x1bf12",
+        "0x1bf18",
+        "0x1bf22",
+        "0x1bf25",
+        "0x1bf2f",
+        "0x1bf34",
+        "0x1bf3a",
+        "0x1bf40",
+        "0x1bf4a"
+      ],
+      "unresolved_registers": {},
+      "float_expressions": {
+        "entry.gap_points": [
+          "k",
+          "0000000000308140"
+        ],
+        "buy_offset": [
+          "+",
+          [
+            "k",
+            "00000000004065c0"
+          ],
+          [
+            "v",
+            "price_delta"
+          ]
+        ],
+        "sell_offset": [
+          "+",
+          [
+            "+",
+            [
+              "v",
+              "price_delta"
+            ],
+            [
+              "k",
+              "00000000008051c0"
+            ]
+          ],
+          [
+            "k",
+            "0000000000000000"
+          ]
+        ],
+        "nearby_radius": [
+          "k",
+          "0000000000007e40"
+        ],
+        "stop_distance": [
+          "+",
+          [
+            "v",
+            "stop_delta"
+          ],
+          [
+            "k",
+            "0000000000408f40"
+          ]
+        ],
+        "target_distance": [
+          "+",
+          [
+            "v",
+            "target_delta"
+          ],
+          [
+            "k",
+            "000000000004b040"
+          ]
+        ],
+        "trail_distance": [
+          "+",
+          [
+            "v",
+            "trail_delta"
+          ],
+          [
+            "k",
+            "0000000000207c40"
+          ]
+        ],
+        "trail_start": [
+          "k",
+          "0000000000e09540"
+        ],
+        "trail_limit": [
+          "k",
+          "000000000088b340"
+        ],
+        "trail_step": [
+          "k",
+          "9a9999999999b93f"
+        ],
+        "native_6d368": [
+          "+",
+          [
+            "v",
+            "aux_delta"
+          ],
+          [
+            "k",
+            "0000000000007940"
+          ]
+        ],
+        "native_6d370": [
+          "k",
+          "0000000000009940"
+        ],
+        "trigger_distance": [
+          "k",
+          "0000000000407f40"
+        ],
+        "locked_distance": [
+          "+",
+          [
+            "+",
+            [
+              "v",
+              "lock_delta"
+            ],
+            [
+              "k",
+              "0000000000005940"
+            ]
+          ],
+          [
+            "k",
+            "0000000000000000"
+          ]
+        ],
+        "aux_offset": [
+          "k",
+          "0000000000003640"
+        ]
+      },
+      "random_word_conversion_order": []
+    },
+    {
+      "index": 2,
+      "start_rva": "0x1c1d1",
+      "stop_before_rva": "0x1c7e9",
+      "seed_before": 1,
+      "seed_after": 1,
+      "values": {
+        "entry.confirmation_frame": 16408,
+        "entry.entry_frame": 16385,
+        "entry.older_width": 7,
+        "entry.recent_width": 2,
+        "entry.last_shift": 20,
+        "entry.gap_points": 250.0,
+        "buy_offset": -130.0,
+        "sell_offset": -120.0,
+        "nearby_radius": 980.0,
+        "expiration_hours": 432,
+        "stop_distance": 700.0,
+        "target_distance": 3300.0,
+        "trail_distance": 500.0,
+        "trail_start": 400.0,
+        "trail_limit": 5000.0,
+        "trail_step": 0.1,
+        "native_6d368": 2000.0,
+        "native_6d370": 1000.0,
+        "trigger_distance": 400.0,
+        "locked_distance": 0.0,
+        "aux_hour1": 1,
+        "aux_scan50": 1,
+        "aux_older": 7,
+        "aux_recent": 4,
+        "aux_offset": 0.0
+      },
+      "raw_fields": {
+        "0x6d2b8:4": {
+          "bits": "01400000",
+          "as_unsigned": 16385,
+          "as_double": null
+        },
+        "0x6d2bc:4": {
+          "bits": "07000000",
+          "as_unsigned": 7,
+          "as_double": null
+        },
+        "0x6d2b4:4": {
+          "bits": "18400000",
+          "as_unsigned": 16408,
+          "as_double": null
+        },
+        "0x6d2c0:4": {
+          "bits": "02000000",
+          "as_unsigned": 2,
+          "as_double": null
+        },
+        "0x6d2c4:4": {
+          "bits": "14000000",
+          "as_unsigned": 20,
+          "as_double": null
+        },
+        "0x6d2c8:8": {
+          "bits": "0000000000406f40",
+          "as_unsigned": 4643000109586448384,
+          "as_double": 250.0
+        },
+        "0x6d2e0:4": {
+          "bits": "01000000",
+          "as_unsigned": 1,
+          "as_double": null
+        },
+        "0x6d2d0:8": {
+          "bits": "00000000004060c0",
+          "as_unsigned": 13862150021790564352,
+          "as_double": -130.0
+        },
+        "0x6d2e8:8": {
+          "bits": "0000000000a08e40",
+          "as_unsigned": 4651831386980745216,
+          "as_double": 980.0
+        },
+        "0x6d2f0:4": {
+          "bits": "b0010000",
+          "as_unsigned": 432,
+          "as_double": null
+        },
+        "0x6d324:4": {
+          "bits": "01000000",
+          "as_unsigned": 1,
+          "as_double": null
+        },
+        "0x6d2d8:8": {
+          "bits": "0000000000005ec0",
+          "as_unsigned": 13861516703092965376,
+          "as_double": -120.0
+        },
+        "0x6d328:8": {
+          "bits": "0000000000e08540",
+          "as_unsigned": 4649368480934526976,
+          "as_double": 700.0
+        },
+        "0x6d348:8": {
+          "bits": "0000000000407f40",
+          "as_unsigned": 4647503709213818880,
+          "as_double": 500.0
+        },
+        "0x6d350:8": {
+          "bits": "0000000000007940",
+          "as_unsigned": 4645744490609377280,
+          "as_double": 400.0
+        },
+        "0x6d330:8": {
+          "bits": "0000000000c8a940",
+          "as_unsigned": 4659475191817043968,
+          "as_double": 3300.0
+        },
+        "0x6d358:8": {
+          "bits": "000000000088b340",
+          "as_unsigned": 4662219572839972864,
+          "as_double": 5000.0
+        },
+        "0x6d370:8": {
+          "bits": "0000000000408f40",
+          "as_unsigned": 4652007308841189376,
+          "as_double": 1000.0
+        },
+        "0x6d368:8": {
+          "bits": "0000000000409f40",
+          "as_unsigned": 4656510908468559872,
+          "as_double": 2000.0
+        },
+        "0x6d398:8": {
+          "bits": "0000000000007940",
+          "as_unsigned": 4645744490609377280,
+          "as_double": 400.0
+        },
+        "0x6d360:8": {
+          "bits": "9a9999999999b93f",
+          "as_unsigned": 4591870180066957722,
+          "as_double": 0.1
+        },
+        "0x6d3b4:1": {
+          "bits": "01",
+          "as_unsigned": 1,
+          "as_double": null
+        },
+        "0x6d3a0:8": {
+          "bits": "0000000000000000",
+          "as_unsigned": 0,
+          "as_double": 0.0
+        },
+        "0x6d3b8:4": {
+          "bits": "07000000",
+          "as_unsigned": 7,
+          "as_double": null
+        },
+        "0x6d3b5:1": {
+          "bits": "01",
+          "as_unsigned": 1,
+          "as_double": null
+        },
+        "0x6d3c0:4": {
+          "bits": "64000000",
+          "as_unsigned": 100,
+          "as_double": null
+        },
+        "0x6d3bc:4": {
+          "bits": "04000000",
+          "as_unsigned": 4,
+          "as_double": null
+        },
+        "0x6d2e4:4": {
+          "bits": "63000000",
+          "as_unsigned": 99,
+          "as_double": null
+        },
+        "0x6d3c8:8": {
+          "bits": "0000000000000000",
+          "as_unsigned": 0,
+          "as_double": 0.0
+        },
+        "0x6d174:4": {
+          "bits": "18400000",
+          "as_unsigned": 16408,
+          "as_double": null
+        },
+        "0x6d170:4": {
+          "bits": "05000000",
+          "as_unsigned": 5,
+          "as_double": null
+        }
+      },
+      "writes": [
+        {
+          "rva": "0x6d2b8",
+          "size": 4,
+          "value_bits": "0x4001",
+          "instruction": "0x1c204"
+        },
+        {
+          "rva": "0x6d2bc",
+          "size": 4,
+          "value_bits": "0x7",
+          "instruction": "0x1c20a"
+        },
+        {
+          "rva": "0x6d2b4",
+          "size": 4,
+          "value_bits": "0x4018",
+          "instruction": "0x1c224"
+        },
+        {
+          "rva": "0x6d2c0",
+          "size": 4,
+          "value_bits": "0x2",
+          "instruction": "0x1c22a"
+        },
+        {
+          "rva": "0x6d2c4",
+          "size": 4,
+          "value_bits": "0x14",
+          "instruction": "0x1c230"
+        },
+        {
+          "rva": "0x6d2c8",
+          "size": 8,
+          "value_bits": "0x406f400000000000",
+          "instruction": "0x1c24a"
+        },
+        {
+          "rva": "0x6d2e0",
+          "size": 4,
+          "value_bits": "0x1",
+          "instruction": "0x1c32c"
+        },
+        {
+          "rva": "0x6d2d0",
+          "size": 8,
+          "value_bits": "0xc060400000000000",
+          "instruction": "0x1c346"
+        },
+        {
+          "rva": "0x6d2e8",
+          "size": 8,
+          "value_bits": "0x408ea00000000000",
+          "instruction": "0x1c358"
+        },
+        {
+          "rva": "0x6d2f0",
+          "size": 4,
+          "value_bits": "0x1b0",
+          "instruction": "0x1c365"
+        },
+        {
+          "rva": "0x6d324",
+          "size": 4,
+          "value_bits": "0x1",
+          "instruction": "0x1c375"
+        },
+        {
+          "rva": "0x6d2d8",
+          "size": 8,
+          "value_bits": "0xc05e000000000000",
+          "instruction": "0x1c38c"
+        },
+        {
+          "rva": "0x6d328",
+          "size": 8,
+          "value_bits": "0x4085e00000000000",
+          "instruction": "0x1c425"
+        },
+        {
+          "rva": "0x6d348",
+          "size": 8,
+          "value_bits": "0x407f400000000000",
+          "instruction": "0x1c6f3"
+        },
+        {
+          "rva": "0x6d350",
+          "size": 8,
+          "value_bits": "0x4079000000000000",
+          "instruction": "0x1c706"
+        },
+        {
+          "rva": "0x6d330",
+          "size": 8,
+          "value_bits": "0x40a9c80000000000",
+          "instruction": "0x1c714"
+        },
+        {
+          "rva": "0x6d358",
+          "size": 8,
+          "value_bits": "0x40b3880000000000",
+          "instruction": "0x1c718"
+        },
+        {
+          "rva": "0x6d370",
+          "size": 8,
+          "value_bits": "0x408f400000000000",
+          "instruction": "0x1c72b"
+        },
+        {
+          "rva": "0x6d368",
+          "size": 8,
+          "value_bits": "0x409f400000000000",
+          "instruction": "0x1c739"
+        },
+        {
+          "rva": "0x6d398",
+          "size": 8,
+          "value_bits": "0x4079000000000000",
+          "instruction": "0x1c748"
+        },
+        {
+          "rva": "0x6d360",
+          "size": 8,
+          "value_bits": "0x3fb999999999999a",
+          "instruction": "0x1c757"
+        },
+        {
+          "rva": "0x6d3b4",
+          "size": 1,
+          "value_bits": "0x1",
+          "instruction": "0x1c764"
+        },
+        {
+          "rva": "0x6d3a0",
+          "size": 8,
+          "value_bits": "0x0",
+          "instruction": "0x1c771"
+        },
+        {
+          "rva": "0x6d3b8",
+          "size": 4,
+          "value_bits": "0x7",
+          "instruction": "0x1c77f"
+        },
+        {
+          "rva": "0x6d3b5",
+          "size": 1,
+          "value_bits": "0x1",
+          "instruction": "0x1c78f"
+        },
+        {
+          "rva": "0x6d3c0",
+          "size": 4,
+          "value_bits": "0x64",
+          "instruction": "0x1c79c"
+        },
+        {
+          "rva": "0x6d3bc",
+          "size": 4,
+          "value_bits": "0x4",
+          "instruction": "0x1c7ac"
+        },
+        {
+          "rva": "0x6d2e4",
+          "size": 4,
+          "value_bits": "0x63",
+          "instruction": "0x1c7bc"
+        },
+        {
+          "rva": "0x6d3c8",
+          "size": 8,
+          "value_bits": "0x0",
+          "instruction": "0x1c7cc"
+        },
+        {
+          "rva": "0x6d174",
+          "size": 4,
+          "value_bits": "0x4018",
+          "instruction": "0x1c7dd"
+        },
+        {
+          "rva": "0x6d170",
+          "size": 4,
+          "value_bits": "0x5",
+          "instruction": "0x1c7e3"
+        }
+      ],
+      "instructions": [
+        "0x1c1d1",
+        "0x1c1db",
+        "0x1c1e5",
+        "0x1c1e9",
+        "0x1c1f3",
+        "0x1c1fb",
+        "0x1c204",
+        "0x1c20a",
+        "0x1c210",
+        "0x1c21a",
+        "0x1c224",
+        "0x1c22a",
+        "0x1c230",
+        "0x1c236",
+        "0x1c240",
+        "0x1c24a",
+        "0x1c24d",
+        "0x1c257",
+        "0x1c261",
+        "0x1c265",
+        "0x1c26f",
+        "0x1c273",
+        "0x1c277",
+        "0x1c27b",
+        "0x1c27f",
+        "0x1c300",
+        "0x1c30a",
+        "0x1c314",
+        "0x1c31e",
+        "0x1c328",
+        "0x1c32c",
+        "0x1c332",
+        "0x1c33c",
+        "0x1c346",
+        "0x1c34a",
+        "0x1c354",
+        "0x1c358",
+        "0x1c35b",
+        "0x1c365",
+        "0x1c36b",
+        "0x1c375",
+        "0x1c37b",
+        "0x1c385",
+        "0x1c388",
+        "0x1c38c",
+        "0x1c390",
+        "0x1c394",
+        "0x1c396",
+        "0x1c39a",
+        "0x1c3a4",
+        "0x1c3b4",
+        "0x1c3b8",
+        "0x1c408",
+        "0x1c40c",
+        "0x1c416",
+        "0x1c420",
+        "0x1c425",
+        "0x1c429",
+        "0x1c42d",
+        "0x1c437",
+        "0x1c43c",
+        "0x1c440",
+        "0x1c64f",
+        "0x1c659",
+        "0x1c663",
+        "0x1c66d",
+        "0x1c671",
+        "0x1c676",
+        "0x1c680",
+        "0x1c68a",
+        "0x1c68f",
+        "0x1c699",
+        "0x1c69d",
+        "0x1c6a7",
+        "0x1c6ab",
+        "0x1c6af",
+        "0x1c6b3",
+        "0x1c6bd",
+        "0x1c6c2",
+        "0x1c6c7",
+        "0x1c6d1",
+        "0x1c6d5",
+        "0x1c6df",
+        "0x1c6e9",
+        "0x1c6f3",
+        "0x1c6f7",
+        "0x1c701",
+        "0x1c706",
+        "0x1c70a",
+        "0x1c714",
+        "0x1c718",
+        "0x1c71c",
+        "0x1c726",
+        "0x1c72b",
+        "0x1c72f",
+        "0x1c739",
+        "0x1c73e",
+        "0x1c748",
+        "0x1c74d",
+        "0x1c757",
+        "0x1c75a",
+        "0x1c764",
+        "0x1c767",
+        "0x1c771",
+        "0x1c775",
+        "0x1c77f",
+        "0x1c785",
+        "0x1c78f",
+        "0x1c792",
+        "0x1c79c",
+        "0x1c7a2",
+        "0x1c7ac",
+        "0x1c7b2",
+        "0x1c7bc",
+        "0x1c7c2",
+        "0x1c7cc",
+        "0x1c7d3",
+        "0x1c7dd",
+        "0x1c7e3"
+      ],
+      "unresolved_registers": {},
+      "float_expressions": {
+        "entry.gap_points": [
+          "k",
+          "0000000000406f40"
+        ],
+        "buy_offset": [
+          "+",
+          [
+            "k",
+            "00000000004060c0"
+          ],
+          [
+            "v",
+            "price_delta"
+          ]
+        ],
+        "sell_offset": [
+          "+",
+          [
+            "+",
+            [
+              "v",
+              "price_delta"
+            ],
+            [
+              "k",
+              "0000000000005ec0"
+            ]
+          ],
+          [
+            "k",
+            "0000000000000000"
+          ]
+        ],
+        "nearby_radius": [
+          "k",
+          "0000000000a08e40"
+        ],
+        "stop_distance": [
+          "+",
+          [
+            "+",
+            [
+              "v",
+              "stop_delta"
+            ],
+            [
+              "k",
+              "0000000000e08540"
+            ]
+          ],
+          [
+            "k",
+            "0000000000000000"
+          ]
+        ],
+        "target_distance": [
+          "+",
+          [
+            "v",
+            "target_delta"
+          ],
+          [
+            "k",
+            "0000000000c8a940"
+          ]
+        ],
+        "trail_distance": [
+          "+",
+          [
+            "v",
+            "trail_delta"
+          ],
+          [
+            "k",
+            "0000000000407f40"
+          ]
+        ],
+        "trail_start": [
+          "k",
+          "0000000000007940"
+        ],
+        "trail_limit": [
+          "k",
+          "000000000088b340"
+        ],
+        "trail_step": [
+          "k",
+          "9a9999999999b93f"
+        ],
+        "native_6d368": [
+          "+",
+          [
+            "v",
+            "aux_delta"
+          ],
+          [
+            "k",
+            "0000000000409f40"
+          ]
+        ],
+        "native_6d370": [
+          "k",
+          "0000000000408f40"
+        ],
+        "trigger_distance": [
+          "k",
+          "0000000000007940"
+        ],
+        "locked_distance": [
+          "+",
+          [
+            "+",
+            [
+              "k",
+              "0000000000000000"
+            ],
+            [
+              "v",
+              "lock_delta"
+            ]
+          ],
+          [
+            "k",
+            "0000000000000000"
+          ]
+        ],
+        "aux_offset": [
+          "k",
+          "0000000000000000"
+        ]
+      },
+      "random_word_conversion_order": []
+    },
+    {
+      "index": 5,
+      "start_rva": "0x1ca75",
+      "stop_before_rva": "0x1d071",
+      "seed_before": 1,
+      "seed_after": 1,
+      "values": {
+        "entry.confirmation_frame": 16385,
+        "entry.entry_frame": 5,
+        "entry.older_width": 26,
+        "entry.recent_width": 24,
+        "entry.last_shift": 140,
+        "entry.gap_points": 120.0,
+        "buy_offset": -115.0,
+        "sell_offset": -145.0,
+        "nearby_radius": 55.0,
+        "expiration_hours": 20,
+        "stop_distance": 10100.0,
+        "target_distance": 800.0,
+        "trail_distance": 500.0,
+        "trail_start": 1200.0,
+        "trail_limit": 5000.0,
+        "trail_step": 0.1,
+        "native_6d368": 350.0,
+        "native_6d370": 1950.0,
+        "trigger_distance": 330.0,
+        "locked_distance": 80.0,
+        "aux_hour1": 1,
+        "aux_scan50": 1,
+        "aux_older": 0,
+        "aux_recent": 0,
+        "aux_offset": 0.0
+      },
+      "raw_fields": {
+        "0x6d2b8:4": {
+          "bits": "05000000",
+          "as_unsigned": 5,
+          "as_double": null
+        },
+        "0x6d2bc:4": {
+          "bits": "1a000000",
+          "as_unsigned": 26,
+          "as_double": null
+        },
+        "0x6d2b4:4": {
+          "bits": "01400000",
+          "as_unsigned": 16385,
+          "as_double": null
+        },
+        "0x6d2c0:4": {
+          "bits": "18000000",
+          "as_unsigned": 24,
+          "as_double": null
+        },
+        "0x6d2c4:4": {
+          "bits": "8c000000",
+          "as_unsigned": 140,
+          "as_double": null
+        },
+        "0x6d2c8:8": {
+          "bits": "0000000000005e40",
+          "as_unsigned": 4638144666238189568,
+          "as_double": 120.0
+        },
+        "0x6d2e0:4": {
+          "bits": "05000000",
+          "as_unsigned": 5,
+          "as_double": null
+        },
+        "0x6d2d0:8": {
+          "bits": "0000000000c05cc0",
+          "as_unsigned": 13861164859372077056,
+          "as_double": -115.0
+        },
+        "0x6d2e8:8": {
+          "bits": "0000000000804b40",
+          "as_unsigned": 4632937379169042432,
+          "as_double": 55.0
+        },
+        "0x6d2f0:4": {
+          "bits": "14000000",
+          "as_unsigned": 20,
+          "as_double": null
+        },
+        "0x6d324:4": {
+          "bits": "01000000",
+          "as_unsigned": 1,
+          "as_double": null
+        },
+        "0x6d2d8:8": {
+          "bits": "00000000002062c0",
+          "as_unsigned": 13862677787371896832,
+          "as_double": -145.0
+        },
+        "0x6d348:8": {
+          "bits": "0000000000407f40",
+          "as_unsigned": 4647503709213818880,
+          "as_double": 500.0
+        },
+        "0x6d330:8": {
+          "bits": "0000000000008940",
+          "as_unsigned": 4650248090236747776,
+          "as_double": 800.0
+        },
+        "0x6d328:8": {
+          "bits": "0000000000bac340",
+          "as_unsigned": 4666778148048732160,
+          "as_double": 10100.0
+        },
+        "0x6d358:8": {
+          "bits": "000000000088b340",
+          "as_unsigned": 4662219572839972864,
+          "as_double": 5000.0
+        },
+        "0x6d350:8": {
+          "bits": "0000000000c09240",
+          "as_unsigned": 4652992471259676672,
+          "as_double": 1200.0
+        },
+        "0x6d360:8": {
+          "bits": "9a9999999999b93f",
+          "as_unsigned": 4591870180066957722,
+          "as_double": 0.1
+        },
+        "0x6d370:8": {
+          "bits": "0000000000789e40",
+          "as_unsigned": 4656291006143004672,
+          "as_double": 1950.0
+        },
+        "0x6d368:8": {
+          "bits": "0000000000e07540",
+          "as_unsigned": 4644864881307156480,
+          "as_double": 350.0
+        },
+        "0x6d398:8": {
+          "bits": "0000000000a07440",
+          "as_unsigned": 4644513037586268160,
+          "as_double": 330.0
+        },
+        "0x6d3b4:1": {
+          "bits": "01",
+          "as_unsigned": 1,
+          "as_double": null
+        },
+        "0x6d3b5:1": {
+          "bits": "01",
+          "as_unsigned": 1,
+          "as_double": null
+        },
+        "0x6d3b8:4": {
+          "bits": "00000000",
+          "as_unsigned": 0,
+          "as_double": null
+        },
+        "0x6d3bc:4": {
+          "bits": "00000000",
+          "as_unsigned": 0,
+          "as_double": null
+        },
+        "0x6d3c0:4": {
+          "bits": "64000000",
+          "as_unsigned": 100,
+          "as_double": null
+        },
+        "0x6d3c8:8": {
+          "bits": "0000000000000000",
+          "as_unsigned": 0,
+          "as_double": 0.0
+        },
+        "0x6d2e4:4": {
+          "bits": "05000000",
+          "as_unsigned": 5,
+          "as_double": null
+        },
+        "0x6d170:4": {
+          "bits": "14000000",
+          "as_unsigned": 20,
+          "as_double": null
+        },
+        "0x6d174:4": {
+          "bits": "18400000",
+          "as_unsigned": 16408,
+          "as_double": null
+        },
+        "0x6d3a0:8": {
+          "bits": "0000000000005440",
+          "as_unsigned": 4635329916471083008,
+          "as_double": 80.0
+        }
+      },
+      "writes": [
+        {
+          "rva": "0x6d2b8",
+          "size": 4,
+          "value_bits": "0x5",
+          "instruction": "0x1caa8"
+        },
+        {
+          "rva": "0x6d2bc",
+          "size": 4,
+          "value_bits": "0x1a",
+          "instruction": "0x1caae"
+        },
+        {
+          "rva": "0x6d2b4",
+          "size": 4,
+          "value_bits": "0x4001",
+          "instruction": "0x1cac8"
+        },
+        {
+          "rva": "0x6d2c0",
+          "size": 4,
+          "value_bits": "0x18",
+          "instruction": "0x1cace"
+        },
+        {
+          "rva": "0x6d2c4",
+          "size": 4,
+          "value_bits": "0x8c",
+          "instruction": "0x1cad4"
+        },
+        {
+          "rva": "0x6d2c8",
+          "size": 8,
+          "value_bits": "0x405e000000000000",
+          "instruction": "0x1caee"
+        },
+        {
+          "rva": "0x6d2e0",
+          "size": 4,
+          "value_bits": "0x5",
+          "instruction": "0x1cbe1"
+        },
+        {
+          "rva": "0x6d2d0",
+          "size": 8,
+          "value_bits": "0xc05cc00000000000",
+          "instruction": "0x1cbfb"
+        },
+        {
+          "rva": "0x6d2e8",
+          "size": 8,
+          "value_bits": "0x404b800000000000",
+          "instruction": "0x1cc09"
+        },
+        {
+          "rva": "0x6d2f0",
+          "size": 4,
+          "value_bits": "0x14",
+          "instruction": "0x1cc20"
+        },
+        {
+          "rva": "0x6d324",
+          "size": 4,
+          "value_bits": "0x1",
+          "instruction": "0x1cc30"
+        },
+        {
+          "rva": "0x6d2d8",
+          "size": 8,
+          "value_bits": "0xc062200000000000",
+          "instruction": "0x1cc44"
+        },
+        {
+          "rva": "0x6d348",
+          "size": 8,
+          "value_bits": "0x407f400000000000",
+          "instruction": "0x1cf54"
+        },
+        {
+          "rva": "0x6d330",
+          "size": 8,
+          "value_bits": "0x4089000000000000",
+          "instruction": "0x1cf62"
+        },
+        {
+          "rva": "0x6d328",
+          "size": 8,
+          "value_bits": "0x40c3ba0000000000",
+          "instruction": "0x1cf70"
+        },
+        {
+          "rva": "0x6d358",
+          "size": 8,
+          "value_bits": "0x40b3880000000000",
+          "instruction": "0x1cf7e"
+        },
+        {
+          "rva": "0x6d350",
+          "size": 8,
+          "value_bits": "0x4092c00000000000",
+          "instruction": "0x1cf8c"
+        },
+        {
+          "rva": "0x6d360",
+          "size": 8,
+          "value_bits": "0x3fb999999999999a",
+          "instruction": "0x1cf9a"
+        },
+        {
+          "rva": "0x6d370",
+          "size": 8,
+          "value_bits": "0x409e780000000000",
+          "instruction": "0x1cfa7"
+        },
+        {
+          "rva": "0x6d368",
+          "size": 8,
+          "value_bits": "0x4075e00000000000",
+          "instruction": "0x1cfb6"
+        },
+        {
+          "rva": "0x6d398",
+          "size": 8,
+          "value_bits": "0x4074a00000000000",
+          "instruction": "0x1cfc5"
+        },
+        {
+          "rva": "0x6d3b4",
+          "size": 1,
+          "value_bits": "0x1",
+          "instruction": "0x1cfe3"
+        },
+        {
+          "rva": "0x6d3b5",
+          "size": 1,
+          "value_bits": "0x1",
+          "instruction": "0x1cff0"
+        },
+        {
+          "rva": "0x6d3b8",
+          "size": 4,
+          "value_bits": "0x0",
+          "instruction": "0x1cffd"
+        },
+        {
+          "rva": "0x6d3bc",
+          "size": 4,
+          "value_bits": "0x0",
+          "instruction": "0x1d00d"
+        },
+        {
+          "rva": "0x6d3c0",
+          "size": 4,
+          "value_bits": "0x64",
+          "instruction": "0x1d01d"
+        },
+        {
+          "rva": "0x6d3c8",
+          "size": 8,
+          "value_bits": "0x0",
+          "instruction": "0x1d02d"
+        },
+        {
+          "rva": "0x6d2e4",
+          "size": 4,
+          "value_bits": "0x5",
+          "instruction": "0x1d03e"
+        },
+        {
+          "rva": "0x6d170",
+          "size": 4,
+          "value_bits": "0x14",
+          "instruction": "0x1d04e"
+        },
+        {
+          "rva": "0x6d174",
+          "size": 4,
+          "value_bits": "0x4018",
+          "instruction": "0x1d063"
+        },
+        {
+          "rva": "0x6d3a0",
+          "size": 8,
+          "value_bits": "0x4054000000000000",
+          "instruction": "0x1d06c"
+        }
+      ],
+      "instructions": [
+        "0x1ca75",
+        "0x1ca7f",
+        "0x1ca89",
+        "0x1ca8d",
+        "0x1ca97",
+        "0x1ca9f",
+        "0x1caa8",
+        "0x1caae",
+        "0x1cab4",
+        "0x1cabe",
+        "0x1cac8",
+        "0x1cace",
+        "0x1cad4",
+        "0x1cada",
+        "0x1cae4",
+        "0x1caee",
+        "0x1caf1",
+        "0x1cafb",
+        "0x1cb05",
+        "0x1cb09",
+        "0x1cb13",
+        "0x1cb17",
+        "0x1cb1b",
+        "0x1cb1f",
+        "0x1cb23",
+        "0x1cb27",
+        "0x1cb2b",
+        "0x1cba3",
+        "0x1cba7",
+        "0x1cbb1",
+        "0x1cbbb",
+        "0x1cbc5",
+        "0x1cbc9",
+        "0x1cbd3",
+        "0x1cbdd",
+        "0x1cbe1",
+        "0x1cbe7",
+        "0x1cbf1",
+        "0x1cbfb",
+        "0x1cbff",
+        "0x1cc09",
+        "0x1cc0c",
+        "0x1cc16",
+        "0x1cc20",
+        "0x1cc26",
+        "0x1cc30",
+        "0x1cc36",
+        "0x1cc40",
+        "0x1cc44",
+        "0x1cc48",
+        "0x1cc4c",
+        "0x1cc56",
+        "0x1cc5a",
+        "0x1cc64",
+        "0x1ceae",
+        "0x1ceb8",
+        "0x1cec2",
+        "0x1cecc",
+        "0x1ced1",
+        "0x1cedb",
+        "0x1cee0",
+        "0x1cee5",
+        "0x1ceea",
+        "0x1ceee",
+        "0x1cef3",
+        "0x1cef8",
+        "0x1cf02",
+        "0x1cf06",
+        "0x1cf0a",
+        "0x1cf14",
+        "0x1cf19",
+        "0x1cf1d",
+        "0x1cf27",
+        "0x1cf2c",
+        "0x1cf36",
+        "0x1cf40",
+        "0x1cf4a",
+        "0x1cf54",
+        "0x1cf58",
+        "0x1cf62",
+        "0x1cf66",
+        "0x1cf70",
+        "0x1cf74",
+        "0x1cf7e",
+        "0x1cf82",
+        "0x1cf8c",
+        "0x1cf90",
+        "0x1cf9a",
+        "0x1cf9d",
+        "0x1cfa7",
+        "0x1cfac",
+        "0x1cfb6",
+        "0x1cfbb",
+        "0x1cfc5",
+        "0x1cfca",
+        "0x1cfd4",
+        "0x1cfd9",
+        "0x1cfe3",
+        "0x1cfe6",
+        "0x1cff0",
+        "0x1cff3",
+        "0x1cffd",
+        "0x1d003",
+        "0x1d00d",
+        "0x1d013",
+        "0x1d01d",
+        "0x1d023",
+        "0x1d02d",
+        "0x1d034",
+        "0x1d03e",
+        "0x1d044",
+        "0x1d04e",
+        "0x1d054",
+        "0x1d05e",
+        "0x1d063",
+        "0x1d069",
+        "0x1d06c"
+      ],
+      "unresolved_registers": {},
+      "float_expressions": {
+        "entry.gap_points": [
+          "k",
+          "0000000000005e40"
+        ],
+        "buy_offset": [
+          "+",
+          [
+            "k",
+            "0000000000c05cc0"
+          ],
+          [
+            "v",
+            "price_delta"
+          ]
+        ],
+        "sell_offset": [
+          "+",
+          [
+            "+",
+            [
+              "v",
+              "price_delta"
+            ],
+            [
+              "k",
+              "00000000002062c0"
+            ]
+          ],
+          [
+            "k",
+            "0000000000000000"
+          ]
+        ],
+        "nearby_radius": [
+          "k",
+          "0000000000804b40"
+        ],
+        "stop_distance": [
+          "+",
+          [
+            "v",
+            "stop_delta"
+          ],
+          [
+            "k",
+            "0000000000bac340"
+          ]
+        ],
+        "target_distance": [
+          "+",
+          [
+            "v",
+            "target_delta"
+          ],
+          [
+            "k",
+            "0000000000008940"
+          ]
+        ],
+        "trail_distance": [
+          "+",
+          [
+            "v",
+            "trail_delta"
+          ],
+          [
+            "k",
+            "0000000000407f40"
+          ]
+        ],
+        "trail_start": [
+          "k",
+          "0000000000c09240"
+        ],
+        "trail_limit": [
+          "k",
+          "000000000088b340"
+        ],
+        "trail_step": [
+          "k",
+          "9a9999999999b93f"
+        ],
+        "native_6d368": [
+          "+",
+          [
+            "v",
+            "aux_delta"
+          ],
+          [
+            "k",
+            "0000000000e07540"
+          ]
+        ],
+        "native_6d370": [
+          "k",
+          "0000000000789e40"
+        ],
+        "trigger_distance": [
+          "k",
+          "0000000000a07440"
+        ],
+        "locked_distance": [
+          "+",
+          [
+            "+",
+            [
+              "v",
+              "lock_delta"
+            ],
+            [
+              "k",
+              "0000000000005440"
+            ]
+          ],
+          [
+            "k",
+            "0000000000000000"
+          ]
+        ],
+        "aux_offset": [
+          "k",
+          "0000000000000000"
+        ]
+      },
+      "random_word_conversion_order": []
+    },
+    {
+      "index": 4,
+      "start_rva": "0x1d2f6",
+      "stop_before_rva": "0x1d8e5",
+      "seed_before": 1,
+      "seed_after": 1,
+      "values": {
+        "entry.confirmation_frame": 16385,
+        "entry.entry_frame": 15,
+        "entry.older_width": 30,
+        "entry.recent_width": 19,
+        "entry.last_shift": 110,
+        "entry.gap_points": 160.0,
+        "buy_offset": -120.0,
+        "sell_offset": -110.0,
+        "nearby_radius": 55.0,
+        "expiration_hours": 30,
+        "stop_distance": 5300.0,
+        "target_distance": 900.0,
+        "trail_distance": 495.0,
+        "trail_start": 400.0,
+        "trail_limit": 5000.0,
+        "trail_step": 0.1,
+        "native_6d368": 250.0,
+        "native_6d370": 1900.0,
+        "trigger_distance": 260.0,
+        "locked_distance": 80.0,
+        "aux_hour1": 1,
+        "aux_scan50": 1,
+        "aux_older": 0,
+        "aux_recent": 0,
+        "aux_offset": 0.0
+      },
+      "raw_fields": {
+        "0x6d2b8:4": {
+          "bits": "0f000000",
+          "as_unsigned": 15,
+          "as_double": null
+        },
+        "0x6d2bc:4": {
+          "bits": "1e000000",
+          "as_unsigned": 30,
+          "as_double": null
+        },
+        "0x6d2b4:4": {
+          "bits": "01400000",
+          "as_unsigned": 16385,
+          "as_double": null
+        },
+        "0x6d2c0:4": {
+          "bits": "13000000",
+          "as_unsigned": 19,
+          "as_double": null
+        },
+        "0x6d2c4:4": {
+          "bits": "6e000000",
+          "as_unsigned": 110,
+          "as_double": null
+        },
+        "0x6d2c8:8": {
+          "bits": "0000000000006440",
+          "as_unsigned": 4639833516098453504,
+          "as_double": 160.0
+        },
+        "0x6d2e0:4": {
+          "bits": "03000000",
+          "as_unsigned": 3,
+          "as_double": null
+        },
+        "0x6d2d0:8": {
+          "bits": "0000000000005ec0",
+          "as_unsigned": 13861516703092965376,
+          "as_double": -120.0
+        },
+        "0x6d2e8:8": {
+          "bits": "0000000000804b40",
+          "as_unsigned": 4632937379169042432,
+          "as_double": 55.0
+        },
+        "0x6d2f0:4": {
+          "bits": "1e000000",
+          "as_unsigned": 30,
+          "as_double": null
+        },
+        "0x6d324:4": {
+          "bits": "01000000",
+          "as_unsigned": 1,
+          "as_double": null
+        },
+        "0x6d2d8:8": {
+          "bits": "0000000000805bc0",
+          "as_unsigned": 13860813015651188736,
+          "as_double": -110.0
+        },
+        "0x6d348:8": {
+          "bits": "0000000000f07e40",
+          "as_unsigned": 4647415748283596800,
+          "as_double": 495.0
+        },
+        "0x6d330:8": {
+          "bits": "0000000000208c40",
+          "as_unsigned": 4651127699538968576,
+          "as_double": 900.0
+        },
+        "0x6d328:8": {
+          "bits": "0000000000b4b440",
+          "as_unsigned": 4662549426328305664,
+          "as_double": 5300.0
+        },
+        "0x6d358:8": {
+          "bits": "000000000088b340",
+          "as_unsigned": 4662219572839972864,
+          "as_double": 5000.0
+        },
+        "0x6d350:8": {
+          "bits": "0000000000007940",
+          "as_unsigned": 4645744490609377280,
+          "as_double": 400.0
+        },
+        "0x6d360:8": {
+          "bits": "9a9999999999b93f",
+          "as_unsigned": 4591870180066957722,
+          "as_double": 0.1
+        },
+        "0x6d370:8": {
+          "bits": "0000000000b09d40",
+          "as_unsigned": 4656071103817449472,
+          "as_double": 1900.0
+        },
+        "0x6d368:8": {
+          "bits": "0000000000406f40",
+          "as_unsigned": 4643000109586448384,
+          "as_double": 250.0
+        },
+        "0x6d398:8": {
+          "bits": "0000000000407040",
+          "as_unsigned": 4643281584563159040,
+          "as_double": 260.0
+        },
+        "0x6d3b4:1": {
+          "bits": "01",
+          "as_unsigned": 1,
+          "as_double": null
+        },
+        "0x6d3b5:1": {
+          "bits": "01",
+          "as_unsigned": 1,
+          "as_double": null
+        },
+        "0x6d3b8:4": {
+          "bits": "00000000",
+          "as_unsigned": 0,
+          "as_double": null
+        },
+        "0x6d3bc:4": {
+          "bits": "00000000",
+          "as_unsigned": 0,
+          "as_double": null
+        },
+        "0x6d3c0:4": {
+          "bits": "64000000",
+          "as_unsigned": 100,
+          "as_double": null
+        },
+        "0x6d3c8:8": {
+          "bits": "0000000000000000",
+          "as_unsigned": 0,
+          "as_double": 0.0
+        },
+        "0x6d2e4:4": {
+          "bits": "63000000",
+          "as_unsigned": 99,
+          "as_double": null
+        },
+        "0x6d170:4": {
+          "bits": "18000000",
+          "as_unsigned": 24,
+          "as_double": null
+        },
+        "0x6d174:4": {
+          "bits": "18400000",
+          "as_unsigned": 16408,
+          "as_double": null
+        },
+        "0x6d3a0:8": {
+          "bits": "0000000000005440",
+          "as_unsigned": 4635329916471083008,
+          "as_double": 80.0
+        }
+      },
+      "writes": [
+        {
+          "rva": "0x6d2b8",
+          "size": 4,
+          "value_bits": "0xf",
+          "instruction": "0x1d329"
+        },
+        {
+          "rva": "0x6d2bc",
+          "size": 4,
+          "value_bits": "0x1e",
+          "instruction": "0x1d32f"
+        },
+        {
+          "rva": "0x6d2b4",
+          "size": 4,
+          "value_bits": "0x4001",
+          "instruction": "0x1d349"
+        },
+        {
+          "rva": "0x6d2c0",
+          "size": 4,
+          "value_bits": "0x13",
+          "instruction": "0x1d34f"
+        },
+        {
+          "rva": "0x6d2c4",
+          "size": 4,
+          "value_bits": "0x6e",
+          "instruction": "0x1d355"
+        },
+        {
+          "rva": "0x6d2c8",
+          "size": 8,
+          "value_bits": "0x4064000000000000",
+          "instruction": "0x1d36f"
+        },
+        {
+          "rva": "0x6d2e0",
+          "size": 4,
+          "value_bits": "0x3",
+          "instruction": "0x1d46c"
+        },
+        {
+          "rva": "0x6d2d0",
+          "size": 8,
+          "value_bits": "0xc05e000000000000",
+          "instruction": "0x1d486"
+        },
+        {
+          "rva": "0x6d2e8",
+          "size": 8,
+          "value_bits": "0x404b800000000000",
+          "instruction": "0x1d494"
+        },
+        {
+          "rva": "0x6d2f0",
+          "size": 4,
+          "value_bits": "0x1e",
+          "instruction": "0x1d4ab"
+        },
+        {
+          "rva": "0x6d324",
+          "size": 4,
+          "value_bits": "0x1",
+          "instruction": "0x1d4bb"
+        },
+        {
+          "rva": "0x6d2d8",
+          "size": 8,
+          "value_bits": "0xc05b800000000000",
+          "instruction": "0x1d4cf"
+        },
+        {
+          "rva": "0x6d348",
+          "size": 8,
+          "value_bits": "0x407ef00000000000",
+          "instruction": "0x1d7c8"
+        },
+        {
+          "rva": "0x6d330",
+          "size": 8,
+          "value_bits": "0x408c200000000000",
+          "instruction": "0x1d7d6"
+        },
+        {
+          "rva": "0x6d328",
+          "size": 8,
+          "value_bits": "0x40b4b40000000000",
+          "instruction": "0x1d7e4"
+        },
+        {
+          "rva": "0x6d358",
+          "size": 8,
+          "value_bits": "0x40b3880000000000",
+          "instruction": "0x1d7f2"
+        },
+        {
+          "rva": "0x6d350",
+          "size": 8,
+          "value_bits": "0x4079000000000000",
+          "instruction": "0x1d800"
+        },
+        {
+          "rva": "0x6d360",
+          "size": 8,
+          "value_bits": "0x3fb999999999999a",
+          "instruction": "0x1d80e"
+        },
+        {
+          "rva": "0x6d370",
+          "size": 8,
+          "value_bits": "0x409db00000000000",
+          "instruction": "0x1d81b"
+        },
+        {
+          "rva": "0x6d368",
+          "size": 8,
+          "value_bits": "0x406f400000000000",
+          "instruction": "0x1d82a"
+        },
+        {
+          "rva": "0x6d398",
+          "size": 8,
+          "value_bits": "0x4070400000000000",
+          "instruction": "0x1d839"
+        },
+        {
+          "rva": "0x6d3b4",
+          "size": 1,
+          "value_bits": "0x1",
+          "instruction": "0x1d857"
+        },
+        {
+          "rva": "0x6d3b5",
+          "size": 1,
+          "value_bits": "0x1",
+          "instruction": "0x1d864"
+        },
+        {
+          "rva": "0x6d3b8",
+          "size": 4,
+          "value_bits": "0x0",
+          "instruction": "0x1d871"
+        },
+        {
+          "rva": "0x6d3bc",
+          "size": 4,
+          "value_bits": "0x0",
+          "instruction": "0x1d881"
+        },
+        {
+          "rva": "0x6d3c0",
+          "size": 4,
+          "value_bits": "0x64",
+          "instruction": "0x1d891"
+        },
+        {
+          "rva": "0x6d3c8",
+          "size": 8,
+          "value_bits": "0x0",
+          "instruction": "0x1d8a1"
+        },
+        {
+          "rva": "0x6d2e4",
+          "size": 4,
+          "value_bits": "0x63",
+          "instruction": "0x1d8b2"
+        },
+        {
+          "rva": "0x6d170",
+          "size": 4,
+          "value_bits": "0x18",
+          "instruction": "0x1d8c2"
+        },
+        {
+          "rva": "0x6d174",
+          "size": 4,
+          "value_bits": "0x4018",
+          "instruction": "0x1d8d7"
+        },
+        {
+          "rva": "0x6d3a0",
+          "size": 8,
+          "value_bits": "0x4054000000000000",
+          "instruction": "0x1d8e0"
+        }
+      ],
+      "instructions": [
+        "0x1d2f6",
+        "0x1d300",
+        "0x1d30a",
+        "0x1d30e",
+        "0x1d318",
+        "0x1d320",
+        "0x1d329",
+        "0x1d32f",
+        "0x1d335",
+        "0x1d33f",
+        "0x1d349",
+        "0x1d34f",
+        "0x1d355",
+        "0x1d35b",
+        "0x1d365",
+        "0x1d36f",
+        "0x1d372",
+        "0x1d37c",
+        "0x1d386",
+        "0x1d38a",
+        "0x1d394",
+        "0x1d398",
+        "0x1d39c",
+        "0x1d3a0",
+        "0x1d3a4",
+        "0x1d3a8",
+        "0x1d3ac",
+        "0x1d424",
+        "0x1d428",
+        "0x1d432",
+        "0x1d43c",
+        "0x1d446",
+        "0x1d44a",
+        "0x1d454",
+        "0x1d45e",
+        "0x1d468",
+        "0x1d46c",
+        "0x1d472",
+        "0x1d47c",
+        "0x1d486",
+        "0x1d48a",
+        "0x1d494",
+        "0x1d497",
+        "0x1d4a1",
+        "0x1d4ab",
+        "0x1d4b1",
+        "0x1d4bb",
+        "0x1d4c1",
+        "0x1d4cb",
+        "0x1d4cf",
+        "0x1d4d3",
+        "0x1d4d7",
+        "0x1d4e1",
+        "0x1d4e5",
+        "0x1d4ef",
+        "0x1d72b",
+        "0x1d735",
+        "0x1d73a",
+        "0x1d744",
+        "0x1d749",
+        "0x1d74e",
+        "0x1d752",
+        "0x1d75c",
+        "0x1d760",
+        "0x1d76a",
+        "0x1d76f",
+        "0x1d773",
+        "0x1d778",
+        "0x1d782",
+        "0x1d787",
+        "0x1d78c",
+        "0x1d796",
+        "0x1d79b",
+        "0x1d7a0",
+        "0x1d7aa",
+        "0x1d7b4",
+        "0x1d7be",
+        "0x1d7c8",
+        "0x1d7cc",
+        "0x1d7d6",
+        "0x1d7da",
+        "0x1d7e4",
+        "0x1d7e8",
+        "0x1d7f2",
+        "0x1d7f6",
+        "0x1d800",
+        "0x1d804",
+        "0x1d80e",
+        "0x1d811",
+        "0x1d81b",
+        "0x1d820",
+        "0x1d82a",
+        "0x1d82f",
+        "0x1d839",
+        "0x1d83e",
+        "0x1d848",
+        "0x1d84d",
+        "0x1d857",
+        "0x1d85a",
+        "0x1d864",
+        "0x1d867",
+        "0x1d871",
+        "0x1d877",
+        "0x1d881",
+        "0x1d887",
+        "0x1d891",
+        "0x1d897",
+        "0x1d8a1",
+        "0x1d8a8",
+        "0x1d8b2",
+        "0x1d8b8",
+        "0x1d8c2",
+        "0x1d8c8",
+        "0x1d8d2",
+        "0x1d8d7",
+        "0x1d8dd",
+        "0x1d8e0"
+      ],
+      "unresolved_registers": {},
+      "float_expressions": {
+        "entry.gap_points": [
+          "k",
+          "0000000000006440"
+        ],
+        "buy_offset": [
+          "+",
+          [
+            "k",
+            "0000000000005ec0"
+          ],
+          [
+            "v",
+            "price_delta"
+          ]
+        ],
+        "sell_offset": [
+          "+",
+          [
+            "+",
+            [
+              "v",
+              "price_delta"
+            ],
+            [
+              "k",
+              "0000000000805bc0"
+            ]
+          ],
+          [
+            "k",
+            "0000000000000000"
+          ]
+        ],
+        "nearby_radius": [
+          "k",
+          "0000000000804b40"
+        ],
+        "stop_distance": [
+          "+",
+          [
+            "v",
+            "stop_delta"
+          ],
+          [
+            "k",
+            "0000000000b4b440"
+          ]
+        ],
+        "target_distance": [
+          "+",
+          [
+            "v",
+            "target_delta"
+          ],
+          [
+            "k",
+            "0000000000208c40"
+          ]
+        ],
+        "trail_distance": [
+          "+",
+          [
+            "v",
+            "trail_delta"
+          ],
+          [
+            "k",
+            "0000000000f07e40"
+          ]
+        ],
+        "trail_start": [
+          "k",
+          "0000000000007940"
+        ],
+        "trail_limit": [
+          "k",
+          "000000000088b340"
+        ],
+        "trail_step": [
+          "k",
+          "9a9999999999b93f"
+        ],
+        "native_6d368": [
+          "+",
+          [
+            "v",
+            "aux_delta"
+          ],
+          [
+            "k",
+            "0000000000406f40"
+          ]
+        ],
+        "native_6d370": [
+          "k",
+          "0000000000b09d40"
+        ],
+        "trigger_distance": [
+          "k",
+          "0000000000407040"
+        ],
+        "locked_distance": [
+          "+",
+          [
+            "+",
+            [
+              "v",
+              "lock_delta"
+            ],
+            [
+              "k",
+              "0000000000005440"
+            ]
+          ],
+          [
+            "k",
+            "0000000000000000"
+          ]
+        ],
+        "aux_offset": [
+          "k",
+          "0000000000000000"
+        ]
+      },
+      "random_word_conversion_order": []
+    },
+    {
+      "index": 8,
+      "start_rva": "0x1db6a",
+      "stop_before_rva": "0x1e160",
+      "seed_before": 1,
+      "seed_after": 1,
+      "values": {
+        "entry.confirmation_frame": 16385,
+        "entry.entry_frame": 15,
+        "entry.older_width": 7,
+        "entry.recent_width": 5,
+        "entry.last_shift": 200,
+        "entry.gap_points": 40.0,
+        "buy_offset": -150.0,
+        "sell_offset": -145.0,
+        "nearby_radius": 5.0,
+        "expiration_hours": 15,
+        "stop_distance": 3900.0,
+        "target_distance": 1350.0,
+        "trail_distance": 445.0,
+        "trail_start": 355.0,
+        "trail_limit": 5000.0,
+        "trail_step": 0.1,
+        "native_6d368": 250.0,
+        "native_6d370": 1850.0,
+        "trigger_distance": 160.0,
+        "locked_distance": 50.0,
+        "aux_hour1": 1,
+        "aux_scan50": 1,
+        "aux_older": 1,
+        "aux_recent": 9,
+        "aux_offset": 46.0
+      },
+      "raw_fields": {
+        "0x6d2b8:4": {
+          "bits": "0f000000",
+          "as_unsigned": 15,
+          "as_double": null
+        },
+        "0x6d2bc:4": {
+          "bits": "07000000",
+          "as_unsigned": 7,
+          "as_double": null
+        },
+        "0x6d2b4:4": {
+          "bits": "01400000",
+          "as_unsigned": 16385,
+          "as_double": null
+        },
+        "0x6d2c0:4": {
+          "bits": "05000000",
+          "as_unsigned": 5,
+          "as_double": null
+        },
+        "0x6d2c4:4": {
+          "bits": "c8000000",
+          "as_unsigned": 200,
+          "as_double": null
+        },
+        "0x6d2c8:8": {
+          "bits": "0000000000004440",
+          "as_unsigned": 4630826316843712512,
+          "as_double": 40.0
+        },
+        "0x6d2e0:4": {
+          "bits": "03000000",
+          "as_unsigned": 3,
+          "as_double": null
+        },
+        "0x6d2d0:8": {
+          "bits": "0000000000c062c0",
+          "as_unsigned": 13862853709232340992,
+          "as_double": -150.0
+        },
+        "0x6d2e8:8": {
+          "bits": "0000000000001440",
+          "as_unsigned": 4617315517961601024,
+          "as_double": 5.0
+        },
+        "0x6d2f0:4": {
+          "bits": "0f000000",
+          "as_unsigned": 15,
+          "as_double": null
+        },
+        "0x6d324:4": {
+          "bits": "01000000",
+          "as_unsigned": 1,
+          "as_double": null
+        },
+        "0x6d2d8:8": {
+          "bits": "00000000002062c0",
+          "as_unsigned": 13862677787371896832,
+          "as_double": -145.0
+        },
+        "0x6d330:8": {
+          "bits": "0000000000189540",
+          "as_unsigned": 4653652178236342272,
+          "as_double": 1350.0
+        },
+        "0x6d348:8": {
+          "bits": "0000000000d07b40",
+          "as_unsigned": 4646536138981376000,
+          "as_double": 445.0
+        },
+        "0x6d328:8": {
+          "bits": "000000000078ae40",
+          "as_unsigned": 4660794605770375168,
+          "as_double": 3900.0
+        },
+        "0x6d350:8": {
+          "bits": "0000000000307640",
+          "as_unsigned": 4644952842237378560,
+          "as_double": 355.0
+        },
+        "0x6d358:8": {
+          "bits": "000000000088b340",
+          "as_unsigned": 4662219572839972864,
+          "as_double": 5000.0
+        },
+        "0x6d360:8": {
+          "bits": "9a9999999999b93f",
+          "as_unsigned": 4591870180066957722,
+          "as_double": 0.1
+        },
+        "0x6d370:8": {
+          "bits": "0000000000e89c40",
+          "as_unsigned": 4655851201491894272,
+          "as_double": 1850.0
+        },
+        "0x6d368:8": {
+          "bits": "0000000000406f40",
+          "as_unsigned": 4643000109586448384,
+          "as_double": 250.0
+        },
+        "0x6d398:8": {
+          "bits": "0000000000006440",
+          "as_unsigned": 4639833516098453504,
+          "as_double": 160.0
+        },
+        "0x6d3b4:1": {
+          "bits": "01",
+          "as_unsigned": 1,
+          "as_double": null
+        },
+        "0x6d3b5:1": {
+          "bits": "01",
+          "as_unsigned": 1,
+          "as_double": null
+        },
+        "0x6d3b8:4": {
+          "bits": "01000000",
+          "as_unsigned": 1,
+          "as_double": null
+        },
+        "0x6d3bc:4": {
+          "bits": "09000000",
+          "as_unsigned": 9,
+          "as_double": null
+        },
+        "0x6d3c0:4": {
+          "bits": "dc050000",
+          "as_unsigned": 1500,
+          "as_double": null
+        },
+        "0x6d2e4:4": {
+          "bits": "63000000",
+          "as_unsigned": 99,
+          "as_double": null
+        },
+        "0x6d3c8:8": {
+          "bits": "0000000000004740",
+          "as_unsigned": 4631670741773844480,
+          "as_double": 46.0
+        },
+        "0x6d174:4": {
+          "bits": "18400000",
+          "as_unsigned": 16408,
+          "as_double": null
+        },
+        "0x6d170:4": {
+          "bits": "0c000000",
+          "as_unsigned": 12,
+          "as_double": null
+        },
+        "0x6d3a0:8": {
+          "bits": "0000000000004940",
+          "as_unsigned": 4632233691727265792,
+          "as_double": 50.0
+        }
+      },
+      "writes": [
+        {
+          "rva": "0x6d2b8",
+          "size": 4,
+          "value_bits": "0xf",
+          "instruction": "0x1db9d"
+        },
+        {
+          "rva": "0x6d2bc",
+          "size": 4,
+          "value_bits": "0x7",
+          "instruction": "0x1dba3"
+        },
+        {
+          "rva": "0x6d2b4",
+          "size": 4,
+          "value_bits": "0x4001",
+          "instruction": "0x1dbbd"
+        },
+        {
+          "rva": "0x6d2c0",
+          "size": 4,
+          "value_bits": "0x5",
+          "instruction": "0x1dbc3"
+        },
+        {
+          "rva": "0x6d2c4",
+          "size": 4,
+          "value_bits": "0xc8",
+          "instruction": "0x1dbc9"
+        },
+        {
+          "rva": "0x6d2c8",
+          "size": 8,
+          "value_bits": "0x4044000000000000",
+          "instruction": "0x1dbe3"
+        },
+        {
+          "rva": "0x6d2e0",
+          "size": 4,
+          "value_bits": "0x3",
+          "instruction": "0x1dce0"
+        },
+        {
+          "rva": "0x6d2d0",
+          "size": 8,
+          "value_bits": "0xc062c00000000000",
+          "instruction": "0x1dcfa"
+        },
+        {
+          "rva": "0x6d2e8",
+          "size": 8,
+          "value_bits": "0x4014000000000000",
+          "instruction": "0x1dd08"
+        },
+        {
+          "rva": "0x6d2f0",
+          "size": 4,
+          "value_bits": "0xf",
+          "instruction": "0x1dd1f"
+        },
+        {
+          "rva": "0x6d324",
+          "size": 4,
+          "value_bits": "0x1",
+          "instruction": "0x1dd2f"
+        },
+        {
+          "rva": "0x6d2d8",
+          "size": 8,
+          "value_bits": "0xc062200000000000",
+          "instruction": "0x1dd43"
+        },
+        {
+          "rva": "0x6d330",
+          "size": 8,
+          "value_bits": "0x4095180000000000",
+          "instruction": "0x1e040"
+        },
+        {
+          "rva": "0x6d348",
+          "size": 8,
+          "value_bits": "0x407bd00000000000",
+          "instruction": "0x1e044"
+        },
+        {
+          "rva": "0x6d328",
+          "size": 8,
+          "value_bits": "0x40ae780000000000",
+          "instruction": "0x1e05c"
+        },
+        {
+          "rva": "0x6d350",
+          "size": 8,
+          "value_bits": "0x4076300000000000",
+          "instruction": "0x1e06a"
+        },
+        {
+          "rva": "0x6d358",
+          "size": 8,
+          "value_bits": "0x40b3880000000000",
+          "instruction": "0x1e06e"
+        },
+        {
+          "rva": "0x6d360",
+          "size": 8,
+          "value_bits": "0x3fb999999999999a",
+          "instruction": "0x1e086"
+        },
+        {
+          "rva": "0x6d370",
+          "size": 8,
+          "value_bits": "0x409ce80000000000",
+          "instruction": "0x1e09d"
+        },
+        {
+          "rva": "0x6d368",
+          "size": 8,
+          "value_bits": "0x406f400000000000",
+          "instruction": "0x1e0ac"
+        },
+        {
+          "rva": "0x6d398",
+          "size": 8,
+          "value_bits": "0x4064000000000000",
+          "instruction": "0x1e0bb"
+        },
+        {
+          "rva": "0x6d3b4",
+          "size": 1,
+          "value_bits": "0x1",
+          "instruction": "0x1e0d9"
+        },
+        {
+          "rva": "0x6d3b5",
+          "size": 1,
+          "value_bits": "0x1",
+          "instruction": "0x1e0e6"
+        },
+        {
+          "rva": "0x6d3b8",
+          "size": 4,
+          "value_bits": "0x1",
+          "instruction": "0x1e0f3"
+        },
+        {
+          "rva": "0x6d3bc",
+          "size": 4,
+          "value_bits": "0x9",
+          "instruction": "0x1e103"
+        },
+        {
+          "rva": "0x6d3c0",
+          "size": 4,
+          "value_bits": "0x5dc",
+          "instruction": "0x1e113"
+        },
+        {
+          "rva": "0x6d2e4",
+          "size": 4,
+          "value_bits": "0x63",
+          "instruction": "0x1e123"
+        },
+        {
+          "rva": "0x6d3c8",
+          "size": 8,
+          "value_bits": "0x4047000000000000",
+          "instruction": "0x1e133"
+        },
+        {
+          "rva": "0x6d174",
+          "size": 4,
+          "value_bits": "0x4018",
+          "instruction": "0x1e145"
+        },
+        {
+          "rva": "0x6d170",
+          "size": 4,
+          "value_bits": "0xc",
+          "instruction": "0x1e14b"
+        },
+        {
+          "rva": "0x6d3a0",
+          "size": 8,
+          "value_bits": "0x4049000000000000",
+          "instruction": "0x1e15b"
+        }
+      ],
+      "instructions": [
+        "0x1db6a",
+        "0x1db74",
+        "0x1db7e",
+        "0x1db82",
+        "0x1db8c",
+        "0x1db94",
+        "0x1db9d",
+        "0x1dba3",
+        "0x1dba9",
+        "0x1dbb3",
+        "0x1dbbd",
+        "0x1dbc3",
+        "0x1dbc9",
+        "0x1dbcf",
+        "0x1dbd9",
+        "0x1dbe3",
+        "0x1dbe6",
+        "0x1dbf0",
+        "0x1dbfa",
+        "0x1dbfe",
+        "0x1dc08",
+        "0x1dc0c",
+        "0x1dc10",
+        "0x1dc14",
+        "0x1dc18",
+        "0x1dc1c",
+        "0x1dc20",
+        "0x1dc98",
+        "0x1dc9c",
+        "0x1dca6",
+        "0x1dcb0",
+        "0x1dcba",
+        "0x1dcbe",
+        "0x1dcc8",
+        "0x1dcd2",
+        "0x1dcdc",
+        "0x1dce0",
+        "0x1dce6",
+        "0x1dcf0",
+        "0x1dcfa",
+        "0x1dcfe",
+        "0x1dd08",
+        "0x1dd0b",
+        "0x1dd15",
+        "0x1dd1f",
+        "0x1dd25",
+        "0x1dd2f",
+        "0x1dd35",
+        "0x1dd3f",
+        "0x1dd43",
+        "0x1dd47",
+        "0x1dd4b",
+        "0x1dd55",
+        "0x1dd59",
+        "0x1dd63",
+        "0x1dfa2",
+        "0x1dfac",
+        "0x1dfb6",
+        "0x1dfbb",
+        "0x1dfc5",
+        "0x1dfca",
+        "0x1dfcf",
+        "0x1dfd4",
+        "0x1dfd8",
+        "0x1dfdd",
+        "0x1dfe7",
+        "0x1dfeb",
+        "0x1dff0",
+        "0x1dffa",
+        "0x1dfff",
+        "0x1e009",
+        "0x1e00e",
+        "0x1e013",
+        "0x1e018",
+        "0x1e022",
+        "0x1e02c",
+        "0x1e036",
+        "0x1e040",
+        "0x1e044",
+        "0x1e048",
+        "0x1e052",
+        "0x1e05c",
+        "0x1e060",
+        "0x1e06a",
+        "0x1e06e",
+        "0x1e072",
+        "0x1e07c",
+        "0x1e086",
+        "0x1e089",
+        "0x1e093",
+        "0x1e09d",
+        "0x1e0a2",
+        "0x1e0ac",
+        "0x1e0b1",
+        "0x1e0bb",
+        "0x1e0c0",
+        "0x1e0ca",
+        "0x1e0cf",
+        "0x1e0d9",
+        "0x1e0dc",
+        "0x1e0e6",
+        "0x1e0e9",
+        "0x1e0f3",
+        "0x1e0f9",
+        "0x1e103",
+        "0x1e109",
+        "0x1e113",
+        "0x1e119",
+        "0x1e123",
+        "0x1e129",
+        "0x1e133",
+        "0x1e136",
+        "0x1e140",
+        "0x1e145",
+        "0x1e14b",
+        "0x1e151",
+        "0x1e15b"
+      ],
+      "unresolved_registers": {},
+      "float_expressions": {
+        "entry.gap_points": [
+          "k",
+          "0000000000004440"
+        ],
+        "buy_offset": [
+          "+",
+          [
+            "k",
+            "0000000000c062c0"
+          ],
+          [
+            "v",
+            "price_delta"
+          ]
+        ],
+        "sell_offset": [
+          "+",
+          [
+            "+",
+            [
+              "v",
+              "price_delta"
+            ],
+            [
+              "k",
+              "00000000002062c0"
+            ]
+          ],
+          [
+            "k",
+            "0000000000000000"
+          ]
+        ],
+        "nearby_radius": [
+          "k",
+          "0000000000001440"
+        ],
+        "stop_distance": [
+          "+",
+          [
+            "v",
+            "stop_delta"
+          ],
+          [
+            "k",
+            "000000000078ae40"
+          ]
+        ],
+        "target_distance": [
+          "+",
+          [
+            "v",
+            "target_delta"
+          ],
+          [
+            "k",
+            "0000000000189540"
+          ]
+        ],
+        "trail_distance": [
+          "+",
+          [
+            "v",
+            "trail_delta"
+          ],
+          [
+            "k",
+            "0000000000d07b40"
+          ]
+        ],
+        "trail_start": [
+          "k",
+          "0000000000307640"
+        ],
+        "trail_limit": [
+          "k",
+          "000000000088b340"
+        ],
+        "trail_step": [
+          "k",
+          "9a9999999999b93f"
+        ],
+        "native_6d368": [
+          "+",
+          [
+            "v",
+            "aux_delta"
+          ],
+          [
+            "k",
+            "0000000000406f40"
+          ]
+        ],
+        "native_6d370": [
+          "k",
+          "0000000000e89c40"
+        ],
+        "trigger_distance": [
+          "k",
+          "0000000000006440"
+        ],
+        "locked_distance": [
+          "+",
+          [
+            "+",
+            [
+              "v",
+              "lock_delta"
+            ],
+            [
+              "k",
+              "0000000000004940"
+            ]
+          ],
+          [
+            "k",
+            "0000000000000000"
+          ]
+        ],
+        "aux_offset": [
+          "k",
+          "0000000000004740"
+        ]
+      },
+      "random_word_conversion_order": []
+    },
+    {
+      "index": 6,
+      "start_rva": "0x1e3e8",
+      "stop_before_rva": "0x1ea03",
+      "seed_before": 1,
+      "seed_after": 1,
+      "values": {
+        "entry.confirmation_frame": 16385,
+        "entry.entry_frame": 15,
+        "entry.older_width": 25,
+        "entry.recent_width": 23,
+        "entry.last_shift": 145,
+        "entry.gap_points": 10.0,
+        "buy_offset": -10.0,
+        "sell_offset": -145.0,
+        "nearby_radius": 90.0,
+        "expiration_hours": 60,
+        "stop_distance": 2250.0,
+        "target_distance": 1450.0,
+        "trail_distance": 450.0,
+        "trail_start": 900.0,
+        "trail_limit": 5000.0,
+        "trail_step": 0.1,
+        "native_6d368": 350.0,
+        "native_6d370": 2800.0,
+        "trigger_distance": 340.0,
+        "locked_distance": 30.0,
+        "aux_hour1": 1,
+        "aux_scan50": 1,
+        "aux_older": 12,
+        "aux_recent": 17,
+        "aux_offset": 45.0
+      },
+      "raw_fields": {
+        "0x6d2b8:4": {
+          "bits": "0f000000",
+          "as_unsigned": 15,
+          "as_double": null
+        },
+        "0x6d2bc:4": {
+          "bits": "19000000",
+          "as_unsigned": 25,
+          "as_double": null
+        },
+        "0x6d2b4:4": {
+          "bits": "01400000",
+          "as_unsigned": 16385,
+          "as_double": null
+        },
+        "0x6d2c0:4": {
+          "bits": "17000000",
+          "as_unsigned": 23,
+          "as_double": null
+        },
+        "0x6d2c4:4": {
+          "bits": "91000000",
+          "as_unsigned": 145,
+          "as_double": null
+        },
+        "0x6d2c8:8": {
+          "bits": "0000000000002440",
+          "as_unsigned": 4621819117588971520,
+          "as_double": 10.0
+        },
+        "0x6d2e0:4": {
+          "bits": "05000000",
+          "as_unsigned": 5,
+          "as_double": null
+        },
+        "0x6d2d0:8": {
+          "bits": "00000000000024c0",
+          "as_unsigned": 13845191154443747328,
+          "as_double": -10.0
+        },
+        "0x6d2e8:8": {
+          "bits": "0000000000805640",
+          "as_unsigned": 4636033603912859648,
+          "as_double": 90.0
+        },
+        "0x6d2f0:4": {
+          "bits": "3c000000",
+          "as_unsigned": 60,
+          "as_double": null
+        },
+        "0x6d324:4": {
+          "bits": "01000000",
+          "as_unsigned": 1,
+          "as_double": null
+        },
+        "0x6d2d8:8": {
+          "bits": "00000000002062c0",
+          "as_unsigned": 13862677787371896832,
+          "as_double": -145.0
+        },
+        "0x6d330:8": {
+          "bits": "0000000000a89640",
+          "as_unsigned": 4654091982887452672,
+          "as_double": 1450.0
+        },
+        "0x6d348:8": {
+          "bits": "0000000000207c40",
+          "as_unsigned": 4646624099911598080,
+          "as_double": 450.0
+        },
+        "0x6d328:8": {
+          "bits": "000000000094a140",
+          "as_unsigned": 4657166217398714368,
+          "as_double": 2250.0
+        },
+        "0x6d350:8": {
+          "bits": "0000000000208c40",
+          "as_unsigned": 4651127699538968576,
+          "as_double": 900.0
+        },
+        "0x6d358:8": {
+          "bits": "000000000088b340",
+          "as_unsigned": 4662219572839972864,
+          "as_double": 5000.0
+        },
+        "0x6d360:8": {
+          "bits": "9a9999999999b93f",
+          "as_unsigned": 4591870180066957722,
+          "as_double": 0.1
+        },
+        "0x6d370:8": {
+          "bits": "0000000000e0a540",
+          "as_unsigned": 4658375680189267968,
+          "as_double": 2800.0
+        },
+        "0x6d368:8": {
+          "bits": "0000000000e07540",
+          "as_unsigned": 4644864881307156480,
+          "as_double": 350.0
+        },
+        "0x6d398:8": {
+          "bits": "0000000000407540",
+          "as_unsigned": 4644688959446712320,
+          "as_double": 340.0
+        },
+        "0x6d3b4:1": {
+          "bits": "01",
+          "as_unsigned": 1,
+          "as_double": null
+        },
+        "0x6d3b5:1": {
+          "bits": "01",
+          "as_unsigned": 1,
+          "as_double": null
+        },
+        "0x6d3b8:4": {
+          "bits": "0c000000",
+          "as_unsigned": 12,
+          "as_double": null
+        },
+        "0x6d3bc:4": {
+          "bits": "11000000",
+          "as_unsigned": 17,
+          "as_double": null
+        },
+        "0x6d3c0:4": {
+          "bits": "e8030000",
+          "as_unsigned": 1000,
+          "as_double": null
+        },
+        "0x6d2e4:4": {
+          "bits": "05000000",
+          "as_unsigned": 5,
+          "as_double": null
+        },
+        "0x6d3c8:8": {
+          "bits": "0000000000804640",
+          "as_unsigned": 4631530004285489152,
+          "as_double": 45.0
+        },
+        "0x6d174:4": {
+          "bits": "01400000",
+          "as_unsigned": 16385,
+          "as_double": null
+        },
+        "0x6d170:4": {
+          "bits": "1c000000",
+          "as_unsigned": 28,
+          "as_double": null
+        },
+        "0x6d3a0:8": {
+          "bits": "0000000000003e40",
+          "as_unsigned": 4629137466983448576,
+          "as_double": 30.0
+        }
+      },
+      "writes": [
+        {
+          "rva": "0x6d2b8",
+          "size": 4,
+          "value_bits": "0xf",
+          "instruction": "0x1e41b"
+        },
+        {
+          "rva": "0x6d2bc",
+          "size": 4,
+          "value_bits": "0x19",
+          "instruction": "0x1e421"
+        },
+        {
+          "rva": "0x6d2b4",
+          "size": 4,
+          "value_bits": "0x4001",
+          "instruction": "0x1e43b"
+        },
+        {
+          "rva": "0x6d2c0",
+          "size": 4,
+          "value_bits": "0x17",
+          "instruction": "0x1e441"
+        },
+        {
+          "rva": "0x6d2c4",
+          "size": 4,
+          "value_bits": "0x91",
+          "instruction": "0x1e447"
+        },
+        {
+          "rva": "0x6d2c8",
+          "size": 8,
+          "value_bits": "0x4024000000000000",
+          "instruction": "0x1e461"
+        },
+        {
+          "rva": "0x6d2e0",
+          "size": 4,
+          "value_bits": "0x5",
+          "instruction": "0x1e540"
+        },
+        {
+          "rva": "0x6d2d0",
+          "size": 8,
+          "value_bits": "0xc024000000000000",
+          "instruction": "0x1e55a"
+        },
+        {
+          "rva": "0x6d2e8",
+          "size": 8,
+          "value_bits": "0x4056800000000000",
+          "instruction": "0x1e568"
+        },
+        {
+          "rva": "0x6d2f0",
+          "size": 4,
+          "value_bits": "0x3c",
+          "instruction": "0x1e57f"
+        },
+        {
+          "rva": "0x6d324",
+          "size": 4,
+          "value_bits": "0x1",
+          "instruction": "0x1e58f"
+        },
+        {
+          "rva": "0x6d2d8",
+          "size": 8,
+          "value_bits": "0xc062200000000000",
+          "instruction": "0x1e5a3"
+        },
+        {
+          "rva": "0x6d330",
+          "size": 8,
+          "value_bits": "0x4096a80000000000",
+          "instruction": "0x1e8e3"
+        },
+        {
+          "rva": "0x6d348",
+          "size": 8,
+          "value_bits": "0x407c200000000000",
+          "instruction": "0x1e8e7"
+        },
+        {
+          "rva": "0x6d328",
+          "size": 8,
+          "value_bits": "0x40a1940000000000",
+          "instruction": "0x1e8ff"
+        },
+        {
+          "rva": "0x6d350",
+          "size": 8,
+          "value_bits": "0x408c200000000000",
+          "instruction": "0x1e90d"
+        },
+        {
+          "rva": "0x6d358",
+          "size": 8,
+          "value_bits": "0x40b3880000000000",
+          "instruction": "0x1e911"
+        },
+        {
+          "rva": "0x6d360",
+          "size": 8,
+          "value_bits": "0x3fb999999999999a",
+          "instruction": "0x1e929"
+        },
+        {
+          "rva": "0x6d370",
+          "size": 8,
+          "value_bits": "0x40a5e00000000000",
+          "instruction": "0x1e940"
+        },
+        {
+          "rva": "0x6d368",
+          "size": 8,
+          "value_bits": "0x4075e00000000000",
+          "instruction": "0x1e94f"
+        },
+        {
+          "rva": "0x6d398",
+          "size": 8,
+          "value_bits": "0x4075400000000000",
+          "instruction": "0x1e95e"
+        },
+        {
+          "rva": "0x6d3b4",
+          "size": 1,
+          "value_bits": "0x1",
+          "instruction": "0x1e97c"
+        },
+        {
+          "rva": "0x6d3b5",
+          "size": 1,
+          "value_bits": "0x1",
+          "instruction": "0x1e989"
+        },
+        {
+          "rva": "0x6d3b8",
+          "size": 4,
+          "value_bits": "0xc",
+          "instruction": "0x1e996"
+        },
+        {
+          "rva": "0x6d3bc",
+          "size": 4,
+          "value_bits": "0x11",
+          "instruction": "0x1e9a6"
+        },
+        {
+          "rva": "0x6d3c0",
+          "size": 4,
+          "value_bits": "0x3e8",
+          "instruction": "0x1e9b6"
+        },
+        {
+          "rva": "0x6d2e4",
+          "size": 4,
+          "value_bits": "0x5",
+          "instruction": "0x1e9c6"
+        },
+        {
+          "rva": "0x6d3c8",
+          "size": 8,
+          "value_bits": "0x4046800000000000",
+          "instruction": "0x1e9d6"
+        },
+        {
+          "rva": "0x6d174",
+          "size": 4,
+          "value_bits": "0x4001",
+          "instruction": "0x1e9e8"
+        },
+        {
+          "rva": "0x6d170",
+          "size": 4,
+          "value_bits": "0x1c",
+          "instruction": "0x1e9ee"
+        },
+        {
+          "rva": "0x6d3a0",
+          "size": 8,
+          "value_bits": "0x403e000000000000",
+          "instruction": "0x1e9fe"
+        }
+      ],
+      "instructions": [
+        "0x1e3e8",
+        "0x1e3f2",
+        "0x1e3fc",
+        "0x1e400",
+        "0x1e40a",
+        "0x1e412",
+        "0x1e41b",
+        "0x1e421",
+        "0x1e427",
+        "0x1e431",
+        "0x1e43b",
+        "0x1e441",
+        "0x1e447",
+        "0x1e44d",
+        "0x1e457",
+        "0x1e461",
+        "0x1e464",
+        "0x1e46e",
+        "0x1e478",
+        "0x1e47c",
+        "0x1e486",
+        "0x1e48a",
+        "0x1e48e",
+        "0x1e492",
+        "0x1e496",
+        "0x1e49a",
+        "0x1e49e",
+        "0x1e516",
+        "0x1e51a",
+        "0x1e524",
+        "0x1e52e",
+        "0x1e538",
+        "0x1e53c",
+        "0x1e540",
+        "0x1e546",
+        "0x1e550",
+        "0x1e55a",
+        "0x1e55e",
+        "0x1e568",
+        "0x1e56b",
+        "0x1e575",
+        "0x1e57f",
+        "0x1e585",
+        "0x1e58f",
+        "0x1e595",
+        "0x1e59f",
+        "0x1e5a3",
+        "0x1e5a7",
+        "0x1e5ab",
+        "0x1e5b5",
+        "0x1e5b9",
+        "0x1e5c3",
+        "0x1e82a",
+        "0x1e834",
+        "0x1e83e",
+        "0x1e848",
+        "0x1e84d",
+        "0x1e857",
+        "0x1e85c",
+        "0x1e861",
+        "0x1e865",
+        "0x1e86a",
+        "0x1e86f",
+        "0x1e879",
+        "0x1e883",
+        "0x1e887",
+        "0x1e891",
+        "0x1e896",
+        "0x1e89a",
+        "0x1e89e",
+        "0x1e8a8",
+        "0x1e8ac",
+        "0x1e8b6",
+        "0x1e8bb",
+        "0x1e8c5",
+        "0x1e8cf",
+        "0x1e8d9",
+        "0x1e8e3",
+        "0x1e8e7",
+        "0x1e8eb",
+        "0x1e8f5",
+        "0x1e8ff",
+        "0x1e903",
+        "0x1e90d",
+        "0x1e911",
+        "0x1e915",
+        "0x1e91f",
+        "0x1e929",
+        "0x1e92c",
+        "0x1e936",
+        "0x1e940",
+        "0x1e945",
+        "0x1e94f",
+        "0x1e954",
+        "0x1e95e",
+        "0x1e963",
+        "0x1e96d",
+        "0x1e972",
+        "0x1e97c",
+        "0x1e97f",
+        "0x1e989",
+        "0x1e98c",
+        "0x1e996",
+        "0x1e99c",
+        "0x1e9a6",
+        "0x1e9ac",
+        "0x1e9b6",
+        "0x1e9bc",
+        "0x1e9c6",
+        "0x1e9cc",
+        "0x1e9d6",
+        "0x1e9d9",
+        "0x1e9e3",
+        "0x1e9e8",
+        "0x1e9ee",
+        "0x1e9f4",
+        "0x1e9fe"
+      ],
+      "unresolved_registers": {},
+      "float_expressions": {
+        "entry.gap_points": [
+          "k",
+          "0000000000002440"
+        ],
+        "buy_offset": [
+          "+",
+          [
+            "k",
+            "00000000000024c0"
+          ],
+          [
+            "v",
+            "price_delta"
+          ]
+        ],
+        "sell_offset": [
+          "+",
+          [
+            "+",
+            [
+              "v",
+              "price_delta"
+            ],
+            [
+              "k",
+              "00000000002062c0"
+            ]
+          ],
+          [
+            "k",
+            "0000000000000000"
+          ]
+        ],
+        "nearby_radius": [
+          "k",
+          "0000000000805640"
+        ],
+        "stop_distance": [
+          "+",
+          [
+            "v",
+            "stop_delta"
+          ],
+          [
+            "k",
+            "000000000094a140"
+          ]
+        ],
+        "target_distance": [
+          "+",
+          [
+            "v",
+            "target_delta"
+          ],
+          [
+            "k",
+            "0000000000a89640"
+          ]
+        ],
+        "trail_distance": [
+          "+",
+          [
+            "v",
+            "trail_delta"
+          ],
+          [
+            "k",
+            "0000000000207c40"
+          ]
+        ],
+        "trail_start": [
+          "k",
+          "0000000000208c40"
+        ],
+        "trail_limit": [
+          "k",
+          "000000000088b340"
+        ],
+        "trail_step": [
+          "k",
+          "9a9999999999b93f"
+        ],
+        "native_6d368": [
+          "+",
+          [
+            "v",
+            "aux_delta"
+          ],
+          [
+            "k",
+            "0000000000e07540"
+          ]
+        ],
+        "native_6d370": [
+          "k",
+          "0000000000e0a540"
+        ],
+        "trigger_distance": [
+          "k",
+          "0000000000407540"
+        ],
+        "locked_distance": [
+          "+",
+          [
+            "+",
+            [
+              "v",
+              "lock_delta"
+            ],
+            [
+              "k",
+              "0000000000003e40"
+            ]
+          ],
+          [
+            "k",
+            "0000000000000000"
+          ]
+        ],
+        "aux_offset": [
+          "k",
+          "0000000000804640"
+        ]
+      },
+      "random_word_conversion_order": []
+    },
+    {
+      "index": 7,
+      "start_rva": "0x1ec8b",
+      "stop_before_rva": "0x1f28e",
+      "seed_before": 1,
+      "seed_after": 1,
+      "values": {
+        "entry.confirmation_frame": 16385,
+        "entry.entry_frame": 15,
+        "entry.older_width": 26,
+        "entry.recent_width": 20,
+        "entry.last_shift": 235,
+        "entry.gap_points": 80.0,
+        "buy_offset": -140.0,
+        "sell_offset": -170.0,
+        "nearby_radius": 5.0,
+        "expiration_hours": 55,
+        "stop_distance": 1900.0,
+        "target_distance": 1200.0,
+        "trail_distance": 1250.0,
+        "trail_start": 650.0,
+        "trail_limit": 5000.0,
+        "trail_step": 0.1,
+        "native_6d368": 250.0,
+        "native_6d370": 1950.0,
+        "trigger_distance": 270.0,
+        "locked_distance": 0.0,
+        "aux_hour1": 1,
+        "aux_scan50": 1,
+        "aux_older": 15,
+        "aux_recent": 3,
+        "aux_offset": 16.0
+      },
+      "raw_fields": {
+        "0x6d2b8:4": {
+          "bits": "0f000000",
+          "as_unsigned": 15,
+          "as_double": null
+        },
+        "0x6d2bc:4": {
+          "bits": "1a000000",
+          "as_unsigned": 26,
+          "as_double": null
+        },
+        "0x6d2b4:4": {
+          "bits": "01400000",
+          "as_unsigned": 16385,
+          "as_double": null
+        },
+        "0x6d2c0:4": {
+          "bits": "14000000",
+          "as_unsigned": 20,
+          "as_double": null
+        },
+        "0x6d2c4:4": {
+          "bits": "eb000000",
+          "as_unsigned": 235,
+          "as_double": null
+        },
+        "0x6d2c8:8": {
+          "bits": "0000000000005440",
+          "as_unsigned": 4635329916471083008,
+          "as_double": 80.0
+        },
+        "0x6d2e0:4": {
+          "bits": "05000000",
+          "as_unsigned": 5,
+          "as_double": null
+        },
+        "0x6d2d0:8": {
+          "bits": "00000000008061c0",
+          "as_unsigned": 13862501865511452672,
+          "as_double": -140.0
+        },
+        "0x6d2e8:8": {
+          "bits": "0000000000001440",
+          "as_unsigned": 4617315517961601024,
+          "as_double": 5.0
+        },
+        "0x6d2f0:4": {
+          "bits": "37000000",
+          "as_unsigned": 55,
+          "as_double": null
+        },
+        "0x6d324:4": {
+          "bits": "01000000",
+          "as_unsigned": 1,
+          "as_double": null
+        },
+        "0x6d2d8:8": {
+          "bits": "00000000004065c0",
+          "as_unsigned": 13863557396674117632,
+          "as_double": -170.0
+        },
+        "0x6d330:8": {
+          "bits": "0000000000c09240",
+          "as_unsigned": 4652992471259676672,
+          "as_double": 1200.0
+        },
+        "0x6d348:8": {
+          "bits": "0000000000889340",
+          "as_unsigned": 4653212373585231872,
+          "as_double": 1250.0
+        },
+        "0x6d328:8": {
+          "bits": "0000000000b09d40",
+          "as_unsigned": 4656071103817449472,
+          "as_double": 1900.0
+        },
+        "0x6d350:8": {
+          "bits": "0000000000508440",
+          "as_unsigned": 4648928676283416576,
+          "as_double": 650.0
+        },
+        "0x6d358:8": {
+          "bits": "000000000088b340",
+          "as_unsigned": 4662219572839972864,
+          "as_double": 5000.0
+        },
+        "0x6d360:8": {
+          "bits": "9a9999999999b93f",
+          "as_unsigned": 4591870180066957722,
+          "as_double": 0.1
+        },
+        "0x6d370:8": {
+          "bits": "0000000000789e40",
+          "as_unsigned": 4656291006143004672,
+          "as_double": 1950.0
+        },
+        "0x6d368:8": {
+          "bits": "0000000000406f40",
+          "as_unsigned": 4643000109586448384,
+          "as_double": 250.0
+        },
+        "0x6d398:8": {
+          "bits": "0000000000e07040",
+          "as_unsigned": 4643457506423603200,
+          "as_double": 270.0
+        },
+        "0x6d3a0:8": {
+          "bits": "0000000000000000",
+          "as_unsigned": 0,
+          "as_double": 0.0
+        },
+        "0x6d3b4:1": {
+          "bits": "01",
+          "as_unsigned": 1,
+          "as_double": null
+        },
+        "0x6d3b5:1": {
+          "bits": "01",
+          "as_unsigned": 1,
+          "as_double": null
+        },
+        "0x6d3b8:4": {
+          "bits": "0f000000",
+          "as_unsigned": 15,
+          "as_double": null
+        },
+        "0x6d3bc:4": {
+          "bits": "03000000",
+          "as_unsigned": 3,
+          "as_double": null
+        },
+        "0x6d3c0:4": {
+          "bits": "b0040000",
+          "as_unsigned": 1200,
+          "as_double": null
+        },
+        "0x6d2e4:4": {
+          "bits": "14000000",
+          "as_unsigned": 20,
+          "as_double": null
+        },
+        "0x6d3c8:8": {
+          "bits": "0000000000003040",
+          "as_unsigned": 4625196817309499392,
+          "as_double": 16.0
+        },
+        "0x6d174:4": {
+          "bits": "18400000",
+          "as_unsigned": 16408,
+          "as_double": null
+        },
+        "0x6d170:4": {
+          "bits": "0b000000",
+          "as_unsigned": 11,
+          "as_double": null
+        }
+      },
+      "writes": [
+        {
+          "rva": "0x6d2b8",
+          "size": 4,
+          "value_bits": "0xf",
+          "instruction": "0x1ecbe"
+        },
+        {
+          "rva": "0x6d2bc",
+          "size": 4,
+          "value_bits": "0x1a",
+          "instruction": "0x1ecc4"
+        },
+        {
+          "rva": "0x6d2b4",
+          "size": 4,
+          "value_bits": "0x4001",
+          "instruction": "0x1ecde"
+        },
+        {
+          "rva": "0x6d2c0",
+          "size": 4,
+          "value_bits": "0x14",
+          "instruction": "0x1ece4"
+        },
+        {
+          "rva": "0x6d2c4",
+          "size": 4,
+          "value_bits": "0xeb",
+          "instruction": "0x1ecea"
+        },
+        {
+          "rva": "0x6d2c8",
+          "size": 8,
+          "value_bits": "0x4054000000000000",
+          "instruction": "0x1ed04"
+        },
+        {
+          "rva": "0x6d2e0",
+          "size": 4,
+          "value_bits": "0x5",
+          "instruction": "0x1ede3"
+        },
+        {
+          "rva": "0x6d2d0",
+          "size": 8,
+          "value_bits": "0xc061800000000000",
+          "instruction": "0x1edfd"
+        },
+        {
+          "rva": "0x6d2e8",
+          "size": 8,
+          "value_bits": "0x4014000000000000",
+          "instruction": "0x1ee0b"
+        },
+        {
+          "rva": "0x6d2f0",
+          "size": 4,
+          "value_bits": "0x37",
+          "instruction": "0x1ee22"
+        },
+        {
+          "rva": "0x6d324",
+          "size": 4,
+          "value_bits": "0x1",
+          "instruction": "0x1ee32"
+        },
+        {
+          "rva": "0x6d2d8",
+          "size": 8,
+          "value_bits": "0xc065400000000000",
+          "instruction": "0x1ee3c"
+        },
+        {
+          "rva": "0x6d330",
+          "size": 8,
+          "value_bits": "0x4092c00000000000",
+          "instruction": "0x1f183"
+        },
+        {
+          "rva": "0x6d348",
+          "size": 8,
+          "value_bits": "0x4093880000000000",
+          "instruction": "0x1f187"
+        },
+        {
+          "rva": "0x6d328",
+          "size": 8,
+          "value_bits": "0x409db00000000000",
+          "instruction": "0x1f1a4"
+        },
+        {
+          "rva": "0x6d350",
+          "size": 8,
+          "value_bits": "0x4084500000000000",
+          "instruction": "0x1f1a8"
+        },
+        {
+          "rva": "0x6d358",
+          "size": 8,
+          "value_bits": "0x40b3880000000000",
+          "instruction": "0x1f1ac"
+        },
+        {
+          "rva": "0x6d360",
+          "size": 8,
+          "value_bits": "0x3fb999999999999a",
+          "instruction": "0x1f1c9"
+        },
+        {
+          "rva": "0x6d370",
+          "size": 8,
+          "value_bits": "0x409e780000000000",
+          "instruction": "0x1f1e0"
+        },
+        {
+          "rva": "0x6d368",
+          "size": 8,
+          "value_bits": "0x406f400000000000",
+          "instruction": "0x1f1ef"
+        },
+        {
+          "rva": "0x6d398",
+          "size": 8,
+          "value_bits": "0x4070e00000000000",
+          "instruction": "0x1f1fe"
+        },
+        {
+          "rva": "0x6d3a0",
+          "size": 8,
+          "value_bits": "0x0",
+          "instruction": "0x1f20d"
+        },
+        {
+          "rva": "0x6d3b4",
+          "size": 1,
+          "value_bits": "0x1",
+          "instruction": "0x1f21b"
+        },
+        {
+          "rva": "0x6d3b5",
+          "size": 1,
+          "value_bits": "0x1",
+          "instruction": "0x1f228"
+        },
+        {
+          "rva": "0x6d3b8",
+          "size": 4,
+          "value_bits": "0xf",
+          "instruction": "0x1f235"
+        },
+        {
+          "rva": "0x6d3bc",
+          "size": 4,
+          "value_bits": "0x3",
+          "instruction": "0x1f245"
+        },
+        {
+          "rva": "0x6d3c0",
+          "size": 4,
+          "value_bits": "0x4b0",
+          "instruction": "0x1f255"
+        },
+        {
+          "rva": "0x6d2e4",
+          "size": 4,
+          "value_bits": "0x14",
+          "instruction": "0x1f265"
+        },
+        {
+          "rva": "0x6d3c8",
+          "size": 8,
+          "value_bits": "0x4030000000000000",
+          "instruction": "0x1f275"
+        },
+        {
+          "rva": "0x6d174",
+          "size": 4,
+          "value_bits": "0x4018",
+          "instruction": "0x1f282"
+        },
+        {
+          "rva": "0x6d170",
+          "size": 4,
+          "value_bits": "0xb",
+          "instruction": "0x1f288"
+        }
+      ],
+      "instructions": [
+        "0x1ec8b",
+        "0x1ec95",
+        "0x1ec9f",
+        "0x1eca3",
+        "0x1ecad",
+        "0x1ecb5",
+        "0x1ecbe",
+        "0x1ecc4",
+        "0x1ecca",
+        "0x1ecd4",
+        "0x1ecde",
+        "0x1ece4",
+        "0x1ecea",
+        "0x1ecf0",
+        "0x1ecfa",
+        "0x1ed04",
+        "0x1ed07",
+        "0x1ed11",
+        "0x1ed1b",
+        "0x1ed1f",
+        "0x1ed29",
+        "0x1ed2d",
+        "0x1ed31",
+        "0x1ed35",
+        "0x1ed39",
+        "0x1edb9",
+        "0x1edbd",
+        "0x1edc7",
+        "0x1edd1",
+        "0x1eddb",
+        "0x1eddf",
+        "0x1ede3",
+        "0x1ede9",
+        "0x1edf3",
+        "0x1edfd",
+        "0x1ee01",
+        "0x1ee0b",
+        "0x1ee0e",
+        "0x1ee18",
+        "0x1ee22",
+        "0x1ee28",
+        "0x1ee32",
+        "0x1ee38",
+        "0x1ee3c",
+        "0x1ee40",
+        "0x1ee44",
+        "0x1ee4e",
+        "0x1ee52",
+        "0x1f0b3",
+        "0x1f0bd",
+        "0x1f0c7",
+        "0x1f0d1",
+        "0x1f0d6",
+        "0x1f0da",
+        "0x1f0de",
+        "0x1f0e3",
+        "0x1f0ed",
+        "0x1f0f7",
+        "0x1f101",
+        "0x1f106",
+        "0x1f110",
+        "0x1f115",
+        "0x1f11f",
+        "0x1f124",
+        "0x1f12e",
+        "0x1f132",
+        "0x1f136",
+        "0x1f13a",
+        "0x1f144",
+        "0x1f148",
+        "0x1f152",
+        "0x1f157",
+        "0x1f161",
+        "0x1f16b",
+        "0x1f16f",
+        "0x1f179",
+        "0x1f183",
+        "0x1f187",
+        "0x1f18b",
+        "0x1f195",
+        "0x1f19f",
+        "0x1f1a4",
+        "0x1f1a8",
+        "0x1f1ac",
+        "0x1f1b0",
+        "0x1f1ba",
+        "0x1f1c4",
+        "0x1f1c9",
+        "0x1f1cc",
+        "0x1f1d6",
+        "0x1f1e0",
+        "0x1f1e5",
+        "0x1f1ef",
+        "0x1f1f4",
+        "0x1f1fe",
+        "0x1f203",
+        "0x1f20d",
+        "0x1f211",
+        "0x1f21b",
+        "0x1f21e",
+        "0x1f228",
+        "0x1f22b",
+        "0x1f235",
+        "0x1f23b",
+        "0x1f245",
+        "0x1f24b",
+        "0x1f255",
+        "0x1f25b",
+        "0x1f265",
+        "0x1f26b",
+        "0x1f275",
+        "0x1f278",
+        "0x1f282",
+        "0x1f288"
+      ],
+      "unresolved_registers": {},
+      "float_expressions": {
+        "entry.gap_points": [
+          "k",
+          "0000000000005440"
+        ],
+        "buy_offset": [
+          "+",
+          [
+            "k",
+            "00000000008061c0"
+          ],
+          [
+            "v",
+            "price_delta"
+          ]
+        ],
+        "sell_offset": [
+          "+",
+          [
+            "+",
+            [
+              "v",
+              "price_delta"
+            ],
+            [
+              "k",
+              "00000000004065c0"
+            ]
+          ],
+          [
+            "k",
+            "0000000000000000"
+          ]
+        ],
+        "nearby_radius": [
+          "k",
+          "0000000000001440"
+        ],
+        "stop_distance": [
+          "+",
+          [
+            "v",
+            "stop_delta"
+          ],
+          [
+            "k",
+            "0000000000b09d40"
+          ]
+        ],
+        "target_distance": [
+          "+",
+          [
+            "v",
+            "target_delta"
+          ],
+          [
+            "k",
+            "0000000000c09240"
+          ]
+        ],
+        "trail_distance": [
+          "+",
+          [
+            "v",
+            "trail_delta"
+          ],
+          [
+            "k",
+            "0000000000889340"
+          ]
+        ],
+        "trail_start": [
+          "k",
+          "0000000000508440"
+        ],
+        "trail_limit": [
+          "k",
+          "000000000088b340"
+        ],
+        "trail_step": [
+          "k",
+          "9a9999999999b93f"
+        ],
+        "native_6d368": [
+          "+",
+          [
+            "v",
+            "aux_delta"
+          ],
+          [
+            "k",
+            "0000000000406f40"
+          ]
+        ],
+        "native_6d370": [
+          "k",
+          "0000000000789e40"
+        ],
+        "trigger_distance": [
+          "k",
+          "0000000000e07040"
+        ],
+        "locked_distance": [
+          "+",
+          [
+            "+",
+            [
+              "k",
+              "0000000000000000"
+            ],
+            [
+              "v",
+              "lock_delta"
+            ]
+          ],
+          [
+            "k",
+            "0000000000000000"
+          ]
+        ],
+        "aux_offset": [
+          "k",
+          "0000000000003040"
+        ]
+      },
+      "random_word_conversion_order": []
+    }
+  ],
+  "whole_bot_complete": false,
+  "scope": "Native profile assignments through the25 original distance fields and6 additional scalar fields; no terminal calls or symbol/currency/magic selection, preparation or strategy main. Controls fixed during each call. No expected outputs calculated."
+}
