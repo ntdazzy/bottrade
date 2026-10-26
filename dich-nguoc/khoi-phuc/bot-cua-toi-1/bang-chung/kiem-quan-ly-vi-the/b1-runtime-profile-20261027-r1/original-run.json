@@ -1,0 +1,247 @@
+{
+  "analyzer_sha256": "c237e36bb310831600b62dc29e8739d05fc19bc57349bbd3a501a74352c40f74",
+  "sources_sha256": {
+    "Scripts/bot-cua-toi-1/Bot1RuntimeProfileCheck.mq5": "b788686a47c5994905a447fd3e54c57fbfcced27a0a0fb4d1e5aadebebc5cac5",
+    "Include/bot-cua-toi-1/Bot1RuntimeProfile.mqh": "4da6e718dad5c6e4b320ef964ad0a6d6174da0fba0919a57de234c3ce0c29292",
+    "Include/bot-cua-toi-1/Bot1BaseDistances.mqh": "64eb353e1f253feb1aa6bc404f9d2047c31b28c565afd5b1ab82949b4d03577d",
+    "Include/bot-cua-toi-1/Bot1DistanceSettings.mqh": "8cf7296b4301274d2f044362ffa211610fff5237e9daa9fa6d08680a53daa518",
+    "Include/bot-cua-toi-1/Bot1EntryProfiles.mqh": "263568e3883564270a6911dafebed8a2350bc37c8ea1530e4e6c670a14a33d60"
+  },
+  "helpers_sha256": {
+    "bot-cua-toi-1/tests/check-runtime-profile.py": "76eb82ee34dbb51c5d2ffd652aaded9dc92fbf8ea591e44ceb06cf4078af744e",
+    "bot-cua-toi-1/tests/runtime_profile_cases.py": "62051d96221d5204b673f069ef05cc9dc3bb9ca57a1f53cd3450f5171bd274bf",
+    "bot-cua-toi-1/phan-tich/chuong-trinh-chinh/profile-parameters-20261026-r1/analyze-profile-parameters.py": "c237e36bb310831600b62dc29e8739d05fc19bc57349bbd3a501a74352c40f74",
+    "cong-cu/kiem-dieu-chinh-bot-1-3.py": "6c450fe3381f3145b08478e97f80dee54a60144ab43c5f69bef8b8fe6f525cc1",
+    "cong-cu/kiem-gia-vao-bot-1-3.py": "22394e48932feb7242b967aa58e327d2990402f12bfe52621916f64914c9dac2",
+    "cong-cu/kiem-muc-gia-bot-1-3.py": "a6c447ca80029fb63ced0c9d1673bb14222a7736b04df5c410f280f8471d6a35",
+    "cong-cu/kiem-khoi-luong-hop-le-bot-1-3.py": "8251fb4423d6f5f2e1b79a1c53dbb25fb5a6c568bb61cddef23396dc982243f0",
+    "cong-cu/kiem-khoi-luong-bot-1-3.py": "32539c090422ab6bc2ce94a9fdacfd33e53c394aca58bd3827c2232d817d7f77",
+    "bot-cua-toi-1/phan-tich/luot-20261023-data-v2/metadata/import.json": "732905b62143980f94c360226bfb75120d52bfccb7e646a3a0cc9be9d3e21adb",
+    "bot-cua-toi-1/phan-tich/luot-20261023-data-v2/kiem-tham-so-goc.json": "840d664cd82aca71535557f8f45fb1d948a749cccf3f04ef3251e5698972c294"
+  },
+  "cases": 432,
+  "result_sha256": "6dc91e388f951cb0f81a2d6cd3086d2d5d312e104830a52bb0881401f8092784",
+  "native_reports": [
+    {
+      "report": "bot-cua-toi-1/phan-tich/chuong-trinh-chinh/profile-parameters-20261026-r1/b1-runtime-profile-20261027-r1-n000/native-profiles.json",
+      "sha256": "ff8836686ced2dda0c9ffa863c667e2dcddafe9c9e335763e7f863c9297e3476"
+    },
+    {
+      "report": "bot-cua-toi-1/phan-tich/chuong-trinh-chinh/profile-parameters-20261026-r1/b1-runtime-profile-20261027-r1-n001/native-profiles.json",
+      "sha256": "9d0a4a313d8bf12cda980e57c79763176ff9b2ab931ae066b8a19f1a78825a43"
+    },
+    {
+      "report": "bot-cua-toi-1/phan-tich/chuong-trinh-chinh/profile-parameters-20261026-r1/b1-runtime-profile-20261027-r1-n002/native-profiles.json",
+      "sha256": "a8e5998fd78aa210aa38f9e77a4342cbf514f66d59dbf693498b80502f40cc17"
+    },
+    {
+      "report": "bot-cua-toi-1/phan-tich/chuong-trinh-chinh/profile-parameters-20261026-r1/b1-runtime-profile-20261027-r1-n003/native-profiles.json",
+      "sha256": "fc7d8b94d5440d2f382dc31c7f4413ac3cbbebe408b08f054404fb389cf638cc"
+    },
+    {
+      "report": "bot-cua-toi-1/phan-tich/chuong-trinh-chinh/profile-parameters-20261026-r1/b1-runtime-profile-20261027-r1-n004/native-profiles.json",
+      "sha256": "8a4832372b6042b6fa69964584be4aaddbdef557ce8d0e7041ec81233444f865"
+    },
+    {
+      "report": "bot-cua-toi-1/phan-tich/chuong-trinh-chinh/profile-parameters-20261026-r1/b1-runtime-profile-20261027-r1-n005/native-profiles.json",
+      "sha256": "6de92221ed33062c7cc4914db6c3a710ac91b808b7fd14fe16f15ba26835727b"
+    },
+    {
+      "report": "bot-cua-toi-1/phan-tich/chuong-trinh-chinh/profile-parameters-20261026-r1/b1-runtime-profile-20261027-r1-n006/native-profiles.json",
+      "sha256": "02c4c880360980301ec19259ef228092d44168d6601dd28096e89682a01f0997"
+    },
+    {
+      "report": "bot-cua-toi-1/phan-tich/chuong-trinh-chinh/profile-parameters-20261026-r1/b1-runtime-profile-20261027-r1-n007/native-profiles.json",
+      "sha256": "6ef79db926d1928ec43f9e6856acd997361bd652bed1b94c8c307ce442e876d2"
+    },
+    {
+      "report": "bot-cua-toi-1/phan-tich/chuong-trinh-chinh/profile-parameters-20261026-r1/b1-runtime-profile-20261027-r1-n008/native-profiles.json",
+      "sha256": "3ce2e1de69355665fe6574fd311e0f4203d586317213ca656e345d5a721cb984"
+    },
+    {
+      "report": "bot-cua-toi-1/phan-tich/chuong-trinh-chinh/profile-parameters-20261026-r1/b1-runtime-profile-20261027-r1-n009/native-profiles.json",
+      "sha256": "c43332ff3bda581070d100293676b5deeac5a86a3ca76131d4923764e754e949"
+    },
+    {
+      "report": "bot-cua-toi-1/phan-tich/chuong-trinh-chinh/profile-parameters-20261026-r1/b1-runtime-profile-20261027-r1-n010/native-profiles.json",
+      "sha256": "3c89c5e733aa0a4f8e62d6917fdae879daa7b50e4f76938ee69656196378a79c"
+    },
+    {
+      "report": "bot-cua-toi-1/phan-tich/chuong-trinh-chinh/profile-parameters-20261026-r1/b1-runtime-profile-20261027-r1-n011/native-profiles.json",
+      "sha256": "2634b8c117ada1722d4a3205b314d508941b2779b09e31c69223a2d92f73e115"
+    },
+    {
+      "report": "bot-cua-toi-1/phan-tich/chuong-trinh-chinh/profile-parameters-20261026-r1/b1-runtime-profile-20261027-r1-n012/native-profiles.json",
+      "sha256": "5742db55828ca6b730ddc1b5dc7d2d944f1cf37e445c3e25342b502f94ae0910"
+    },
+    {
+      "report": "bot-cua-toi-1/phan-tich/chuong-trinh-chinh/profile-parameters-20261026-r1/b1-runtime-profile-20261027-r1-n013/native-profiles.json",
+      "sha256": "492decbf26e48256d400632db944d7ec6303185ae4cba137a7639d1e30b8a7fe"
+    },
+    {
+      "report": "bot-cua-toi-1/phan-tich/chuong-trinh-chinh/profile-parameters-20261026-r1/b1-runtime-profile-20261027-r1-n014/native-profiles.json",
+      "sha256": "c4fa85707c67607be95a07a70ad30bb5d7e281c1e67cc4bacfd9bf1dbd6fdb6b"
+    },
+    {
+      "report": "bot-cua-toi-1/phan-tich/chuong-trinh-chinh/profile-parameters-20261026-r1/b1-runtime-profile-20261027-r1-n015/native-profiles.json",
+      "sha256": "ab2a80259bcb410903e3385d6156f2de861783ded41c0ed1f44c3fc65956bada"
+    },
+    {
+      "report": "bot-cua-toi-1/phan-tich/chuong-trinh-chinh/profile-parameters-20261026-r1/b1-runtime-profile-20261027-r1-n016/native-profiles.json",
+      "sha256": "c475f04d7c31975059faa9ce84be8ea46ff515b9cb09cacff6e92aae65f5d4b4"
+    },
+    {
+      "report": "bot-cua-toi-1/phan-tich/chuong-trinh-chinh/profile-parameters-20261026-r1/b1-runtime-profile-20261027-r1-n017/native-profiles.json",
+      "sha256": "b2eb3c79d29d746b964fc21f65dbf0939a768696a21ef48ac62343bcd969b747"
+    },
+    {
+      "report": "bot-cua-toi-1/phan-tich/chuong-trinh-chinh/profile-parameters-20261026-r1/b1-runtime-profile-20261027-r1-n018/native-profiles.json",
+      "sha256": "8ba22c1c290fe133b775c243f26166546ab2fa0bf8eaca453f5266dfa1c99eef"
+    },
+    {
+      "report": "bot-cua-toi-1/phan-tich/chuong-trinh-chinh/profile-parameters-20261026-r1/b1-runtime-profile-20261027-r1-n019/native-profiles.json",
+      "sha256": "1525e30d5fd3585c3afb2ffab71bdabf9c0e799eb1ac4711f217d975241ae746"
+    },
+    {
+      "report": "bot-cua-toi-1/phan-tich/chuong-trinh-chinh/profile-parameters-20261026-r1/b1-runtime-profile-20261027-r1-n020/native-profiles.json",
+      "sha256": "a5b1f2ea55f00b9fbc430a64d5c7e686763f4da574652aa961a288274b032a37"
+    },
+    {
+      "report": "bot-cua-toi-1/phan-tich/chuong-trinh-chinh/profile-parameters-20261026-r1/b1-runtime-profile-20261027-r1-n021/native-profiles.json",
+      "sha256": "b1a1a1cc337f220c9aba11e9aa3b2e419ebb8f5f976c146fe4602d97437421bc"
+    },
+    {
+      "report": "bot-cua-toi-1/phan-tich/chuong-trinh-chinh/profile-parameters-20261026-r1/b1-runtime-profile-20261027-r1-n022/native-profiles.json",
+      "sha256": "4f9b9d237d87ee28004d91ff3f0667ab916cf586ad769debd39ed23d899ab11c"
+    },
+    {
+      "report": "bot-cua-toi-1/phan-tich/chuong-trinh-chinh/profile-parameters-20261026-r1/b1-runtime-profile-20261027-r1-n023/native-profiles.json",
+      "sha256": "e5aab4920031e0c4c88d2eff00e6519f3f0ee15bf7b54085de049f6c07a50bbf"
+    },
+    {
+      "report": "bot-cua-toi-1/phan-tich/chuong-trinh-chinh/profile-parameters-20261026-r1/b1-runtime-profile-20261027-r1-n024/native-profiles.json",
+      "sha256": "d9a824992f2f421b68a1d03138a4e186fb7de50627d4348b123aad8904eebbd4"
+    },
+    {
+      "report": "bot-cua-toi-1/phan-tich/chuong-trinh-chinh/profile-parameters-20261026-r1/b1-runtime-profile-20261027-r1-n025/native-profiles.json",
+      "sha256": "29bacd12237b3764446c4f8acf256e68363f62a38c93ee962136c5bcdb26dd0d"
+    },
+    {
+      "report": "bot-cua-toi-1/phan-tich/chuong-trinh-chinh/profile-parameters-20261026-r1/b1-runtime-profile-20261027-r1-n026/native-profiles.json",
+      "sha256": "7e7071732ea7ad9ad6c44009f210efa1c365dac00e05037a0b61a2bd0e45ec1c"
+    },
+    {
+      "report": "bot-cua-toi-1/phan-tich/chuong-trinh-chinh/profile-parameters-20261026-r1/b1-runtime-profile-20261027-r1-n027/native-profiles.json",
+      "sha256": "ca90b4f9413d410b7521bfae0bc81a817cbe6538ccb0cc5e491dd490d9b1fc8c"
+    },
+    {
+      "report": "bot-cua-toi-1/phan-tich/chuong-trinh-chinh/profile-parameters-20261026-r1/b1-runtime-profile-20261027-r1-n028/native-profiles.json",
+      "sha256": "1c2c5cb30d3bcd62fdf2494f97522b3aae9fda7c7088f96d9ae694b8b51aff52"
+    },
+    {
+      "report": "bot-cua-toi-1/phan-tich/chuong-trinh-chinh/profile-parameters-20261026-r1/b1-runtime-profile-20261027-r1-n029/native-profiles.json",
+      "sha256": "40b24c73ba6c266af56a5d23c9d21d2ec44e0293144aaaa8f52e7b0af57785cd"
+    },
+    {
+      "report": "bot-cua-toi-1/phan-tich/chuong-trinh-chinh/profile-parameters-20261026-r1/b1-runtime-profile-20261027-r1-n030/native-profiles.json",
+      "sha256": "3d8b81371a098fbb70efeb1907346ad3c02c93ba3045be35075e270bf525cd43"
+    },
+    {
+      "report": "bot-cua-toi-1/phan-tich/chuong-trinh-chinh/profile-parameters-20261026-r1/b1-runtime-profile-20261027-r1-n031/native-profiles.json",
+      "sha256": "0bf5bdbe68cd64f95bc71f5337903edad0918bec2401cfd4b353e3b0d6009494"
+    },
+    {
+      "report": "bot-cua-toi-1/phan-tich/chuong-trinh-chinh/profile-parameters-20261026-r1/b1-runtime-profile-20261027-r1-n032/native-profiles.json",
+      "sha256": "a2559f57bc9462620e8f35af733ecb0f5de9400540a798c5a64fa415fe7a175a"
+    },
+    {
+      "report": "bot-cua-toi-1/phan-tich/chuong-trinh-chinh/profile-parameters-20261026-r1/b1-runtime-profile-20261027-r1-n033/native-profiles.json",
+      "sha256": "1bd767e9674881e8924a1ea0717d4c16c38e81378b4976902301dd48dd908a3d"
+    },
+    {
+      "report": "bot-cua-toi-1/phan-tich/chuong-trinh-chinh/profile-parameters-20261026-r1/b1-runtime-profile-20261027-r1-n034/native-profiles.json",
+      "sha256": "341303a28bf74e6e0c8077eacefe122b99c22c10abadc9d2d47c82c17864ae50"
+    },
+    {
+      "report": "bot-cua-toi-1/phan-tich/chuong-trinh-chinh/profile-parameters-20261026-r1/b1-runtime-profile-20261027-r1-n035/native-profiles.json",
+      "sha256": "8c74214c92f077eff46a9d7685a994ba1e1d3655daf2e6926849496d49293c1d"
+    },
+    {
+      "report": "bot-cua-toi-1/phan-tich/chuong-trinh-chinh/profile-parameters-20261026-r1/b1-runtime-profile-20261027-r1-n036/native-profiles.json",
+      "sha256": "b52db009ddd0358b3b62df0ac20207a45dea5d31d9406f8556868318bd89cc80"
+    },
+    {
+      "report": "bot-cua-toi-1/phan-tich/chuong-trinh-chinh/profile-parameters-20261026-r1/b1-runtime-profile-20261027-r1-n037/native-profiles.json",
+      "sha256": "c3b1d7dba3d4faa445ba698d4bcae26a8c549c899ad4942a95901bd189e1cac5"
+    },
+    {
+      "report": "bot-cua-toi-1/phan-tich/chuong-trinh-chinh/profile-parameters-20261026-r1/b1-runtime-profile-20261027-r1-n038/native-profiles.json",
+      "sha256": "ab0e30af128aad2d6497131936a4f4d5abc75f4e21c43250e7f0676265064d88"
+    },
+    {
+      "report": "bot-cua-toi-1/phan-tich/chuong-trinh-chinh/profile-parameters-20261026-r1/b1-runtime-profile-20261027-r1-n039/native-profiles.json",
+      "sha256": "331577b67f96fd5e8d33cea85faa4d416e2b67560e916d922ff0ad1fc1bd99b7"
+    },
+    {
+      "report": "bot-cua-toi-1/phan-tich/chuong-trinh-chinh/profile-parameters-20261026-r1/b1-runtime-profile-20261027-r1-n040/native-profiles.json",
+      "sha256": "3ea4e30ddb83fc7bce67310317d260bc1f6d6675fbe7bada242840fd3a081f47"
+    },
+    {
+      "report": "bot-cua-toi-1/phan-tich/chuong-trinh-chinh/profile-parameters-20261026-r1/b1-runtime-profile-20261027-r1-n041/native-profiles.json",
+      "sha256": "0674475b15760253b154cf2deb16875569e0c8fbafde194ceb6944f33107e0f6"
+    },
+    {
+      "report": "bot-cua-toi-1/phan-tich/chuong-trinh-chinh/profile-parameters-20261026-r1/b1-runtime-profile-20261027-r1-n042/native-profiles.json",
+      "sha256": "e0843c48e904a884b88673d0a585e7a94e9f7c77e42b38a3b72fe6eb38ef5d8f"
+    },
+    {
+      "report": "bot-cua-toi-1/phan-tich/chuong-trinh-chinh/profile-parameters-20261026-r1/b1-runtime-profile-20261027-r1-n043/native-profiles.json",
+      "sha256": "52b499b2862f43ff7e42430114d3fc169c7149c7325437b67bc3291df2d05424"
+    },
+    {
+      "report": "bot-cua-toi-1/phan-tich/chuong-trinh-chinh/profile-parameters-20261026-r1/b1-runtime-profile-20261027-r1-n044/native-profiles.json",
+      "sha256": "28c13f575f7907deef7d6a7f204257219c70885c86a90e499f4e3c0936e96a9c"
+    },
+    {
+      "report": "bot-cua-toi-1/phan-tich/chuong-trinh-chinh/profile-parameters-20261026-r1/b1-runtime-profile-20261027-r1-n045/native-profiles.json",
+      "sha256": "c71b16aa008f26116a923982a8097952b835780bae28fec483bba3c36771dddd"
+    },
+    {
+      "report": "bot-cua-toi-1/phan-tich/chuong-trinh-chinh/profile-parameters-20261026-r1/b1-runtime-profile-20261027-r1-n046/native-profiles.json",
+      "sha256": "d7e61d5686f016438d695c3bb7c4c9458f4959a203218c02823c7cff7b9f4ce1"
+    },
+    {
+      "report": "bot-cua-toi-1/phan-tich/chuong-trinh-chinh/profile-parameters-20261026-r1/b1-runtime-profile-20261027-r1-n047/native-profiles.json",
+      "sha256": "aff6026b4499ee6122c5f138ccfc4c384bbd352220390c59d74afbb3c48f735c"
+    },
+    {
+      "report": "bot-cua-toi-1/phan-tich/chuong-trinh-chinh/profile-parameters-20261026-r1/b1-runtime-profile-20261027-r1-n048/native-profiles.json",
+      "sha256": "9c63d6683a36bea52a6f15200863f22fc8c5220eba228e50b73fc20a0ead2b32"
+    },
+    {
+      "report": "bot-cua-toi-1/phan-tich/chuong-trinh-chinh/profile-parameters-20261026-r1/b1-runtime-profile-20261027-r1-n049/native-profiles.json",
+      "sha256": "d35afed965a1a7f9f949b3b48a93e8a9161f157cc1795907eccdf824bd5dec59"
+    },
+    {
+      "report": "bot-cua-toi-1/phan-tich/chuong-trinh-chinh/profile-parameters-20261026-r1/b1-runtime-profile-20261027-r1-n050/native-profiles.json",
+      "sha256": "7b2142946b3c0ce22f38ee2f1f293aac32d80cac139e7456757413aaa09d18ac"
+    },
+    {
+      "report": "bot-cua-toi-1/phan-tich/chuong-trinh-chinh/profile-parameters-20261026-r1/b1-runtime-profile-20261027-r1-n051/native-profiles.json",
+      "sha256": "306b3bf07cf7ec10c3d3e8487733d1a4da38b0b8ca0432dd78c61d6e09d0c02d"
+    },
+    {
+      "report": "bot-cua-toi-1/phan-tich/chuong-trinh-chinh/profile-parameters-20261026-r1/b1-runtime-profile-20261027-r1-n052/native-profiles.json",
+      "sha256": "7e8ae6b9c9a4c65a48f1c18af453a3ceab279fc1330aad3533536674d1fd9967"
+    },
+    {
+      "report": "bot-cua-toi-1/phan-tich/chuong-trinh-chinh/profile-parameters-20261026-r1/b1-runtime-profile-20261027-r1-n053/native-profiles.json",
+      "sha256": "c344517b17afce6c845f0164928a1aa1377b7e88cb6c372358fb00ecf857e3b4"
+    }
+  ],
+  "whole_bot_complete": false,
+  "whole_manager_complete": false,
+  "full_ea": false,
+  "native_scalar_profile_executed": true,
+  "original_ex5_changed": false
+}

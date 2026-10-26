@@ -1,0 +1,15 @@
+{
+  "case_id": 6,
+  "source_case_id": 611,
+  "short_size": -1,
+  "native": {
+    "code": "0x230862000001f7",
+    "class_low32": 503
+  },
+  "mql5_fatal_class": "zero divide",
+  "exit_code": 4294967295,
+  "no_normal_result": true,
+  "partial_state_compared": false,
+  "seconds": 3.28,
+  "runtime_lines_sha256": "be04abe59f21a0483fe6e5a7d96bb38bfc9caf3c1c66838ea229c71b1ae89da5"
+}

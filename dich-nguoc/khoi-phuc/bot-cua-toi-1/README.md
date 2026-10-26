@@ -5,14 +5,18 @@ giữa mã gốc và MQL5, biên dịch **0 lỗi/0 cảnh báo**. Đoạn này 
 và dịch vụ từ phần trước, chưa phải EA đầy đủ.
 [Bằng chứng](phan-tich/chuong-trinh-chinh/pending-submission-20261026-r1/README.md).
 
-Đã chốt đặc tả khối chuẩn bị tại `0x7500..0x831d` bằng mã lệnh máy; phép
-đối chiếu độc lập xác nhận thứ tự gọi và nhánh lỗi. Còn viết và kiểm phần
-MQL5 đầy đủ, đặc biệt nhánh NaN và nơi gọi từ EA.
-[Đặc tả](phan-tich/chuong-trinh-chinh/preparation-complete-20261026-r1/README.md).
+Đã dựng thân chuẩn bị tại `0x7500..0x831d`: **1.060/1.060 ca khớp** 87 giá
+trị và thứ tự gọi, gồm lỗi chỉ báo/lấy giá, NaN và vô cực. Thêm **12/12 ca**
+khớp loại lỗi dừng vì chia 0 hoặc thiếu phần tử; chưa so đủ trạng thái trước
+lỗi. Biên dịch 0 lỗi/cảnh báo; còn nối EA và kiểm toàn bộ.
+[Nguồn, bằng chứng và giới hạn](phan-tich/chuong-trinh-chinh/preparation-complete-20261026-r1/SPEC-r2.md).
 
 Đã viết khối nạp 8 cấu hình và điều chỉnh khoảng giá: **432/432 ca native/MQL5
 khớp từng bit**, gồm hai chế độ HL, hạt giống 32-bit, số NaN/vô cực và bốn ô
 điều chỉnh; biên dịch **0 lỗi, 0 cảnh báo**. [Đặc tả và phép kiểm](phan-tich/chuong-trinh-chinh/profile-parameters-20261026-r1/README.md).
+Lượt 27/10 đã kiểm lại tiền nạp và đủ 127 byte của 22 trường ở mọi cấu hình;
+bộ dò dừng ngay nếu còn thanh ghi chưa xác định. Kết quả mới vẫn 432/432,
+mã kiểm `6dc91e38...`; chưa nối phần nạp này vào EA.
 
 Vòng quản lý mua/bán đã ghép cùng các hàm bảng/sửa/đóng/gửi và khớp
 **352/352 ca**, biên dịch **0 lỗi/0 cảnh báo**. Dữ liệu và kết quả gửi

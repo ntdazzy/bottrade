@@ -1,0 +1,2 @@
+CI	0	02:42:25.391	Bot1PreparationCheck (XAUUSD_NOCOST_V2,M15)	PREPARATION_CASE:2
+KO	2	02:42:25.391	Bot1PreparationCheck (XAUUSD_NOCOST_V2,M15)	zero divide, check divider to avoid this error in 'Bot1Preparation.mqh' (198,52)

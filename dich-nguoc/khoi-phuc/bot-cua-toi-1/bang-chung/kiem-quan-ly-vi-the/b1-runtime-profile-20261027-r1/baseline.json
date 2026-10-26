@@ -1,0 +1,23 @@
+{
+  "analyzer_sha256": "c237e36bb310831600b62dc29e8739d05fc19bc57349bbd3a501a74352c40f74",
+  "sources_sha256": {
+    "Scripts/bot-cua-toi-1/Bot1RuntimeProfileCheck.mq5": "b788686a47c5994905a447fd3e54c57fbfcced27a0a0fb4d1e5aadebebc5cac5",
+    "Include/bot-cua-toi-1/Bot1RuntimeProfile.mqh": "4da6e718dad5c6e4b320ef964ad0a6d6174da0fba0919a57de234c3ce0c29292",
+    "Include/bot-cua-toi-1/Bot1BaseDistances.mqh": "64eb353e1f253feb1aa6bc404f9d2047c31b28c565afd5b1ab82949b4d03577d",
+    "Include/bot-cua-toi-1/Bot1DistanceSettings.mqh": "8cf7296b4301274d2f044362ffa211610fff5237e9daa9fa6d08680a53daa518",
+    "Include/bot-cua-toi-1/Bot1EntryProfiles.mqh": "263568e3883564270a6911dafebed8a2350bc37c8ea1530e4e6c670a14a33d60"
+  },
+  "helpers_sha256": {
+    "bot-cua-toi-1/tests/check-runtime-profile.py": "76eb82ee34dbb51c5d2ffd652aaded9dc92fbf8ea591e44ceb06cf4078af744e",
+    "bot-cua-toi-1/tests/runtime_profile_cases.py": "62051d96221d5204b673f069ef05cc9dc3bb9ca57a1f53cd3450f5171bd274bf",
+    "bot-cua-toi-1/phan-tich/chuong-trinh-chinh/profile-parameters-20261026-r1/analyze-profile-parameters.py": "c237e36bb310831600b62dc29e8739d05fc19bc57349bbd3a501a74352c40f74",
+    "cong-cu/kiem-dieu-chinh-bot-1-3.py": "6c450fe3381f3145b08478e97f80dee54a60144ab43c5f69bef8b8fe6f525cc1",
+    "cong-cu/kiem-gia-vao-bot-1-3.py": "22394e48932feb7242b967aa58e327d2990402f12bfe52621916f64914c9dac2",
+    "cong-cu/kiem-muc-gia-bot-1-3.py": "a6c447ca80029fb63ced0c9d1673bb14222a7736b04df5c410f280f8471d6a35",
+    "cong-cu/kiem-khoi-luong-hop-le-bot-1-3.py": "8251fb4423d6f5f2e1b79a1c53dbb25fb5a6c568bb61cddef23396dc982243f0",
+    "cong-cu/kiem-khoi-luong-bot-1-3.py": "32539c090422ab6bc2ce94a9fdacfd33e53c394aca58bd3827c2232d817d7f77",
+    "bot-cua-toi-1/phan-tich/luot-20261023-data-v2/metadata/import.json": "732905b62143980f94c360226bfb75120d52bfccb7e646a3a0cc9be9d3e21adb",
+    "bot-cua-toi-1/phan-tich/luot-20261023-data-v2/kiem-tham-so-goc.json": "840d664cd82aca71535557f8f45fb1d948a749cccf3f04ef3251e5698972c294"
+  },
+  "cases": 432
+}

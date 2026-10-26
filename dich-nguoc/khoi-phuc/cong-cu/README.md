@@ -35,13 +35,16 @@ Phép kiểm ghép mới:
 - `bot-cua-toi-3/tests/check-preparation-errors.py RUN --build BUILD`:18ca chia0,
   kiểm lớp lỗi và không có kết quả thường, chưa so mọi trạng thái trước lỗi.
 - `bot-cua-toi-3/tests/check-runtime-profile.py`: prepare/original/mql5/compare,
-  2.106 ca nạp 9 cấu hình, hạt giống và điều chỉnh; so toàn bộ 32 giá trị
+  2.106 ca nạp 9 cấu hình, hạt giống và điều chỉnh; so toàn bộ 33 giá trị
   theo từng bit và kiểm trường ngoài phạm vi. Chỉ là khối trước EA, chưa là toàn bot.
 - `bot-cua-toi-1/tests/check-runtime-profile.py`: prepare/original/mql5/compare,
   432 ca nạp 8 cấu hình, hai HL, hạt giống, NaN/vô cực và bốn ô điều chỉnh; so từng bit.
-- `bot-cua-toi-1/source/MQL5/Include/bot-cua-toi-1/Bot1PreparationNumeric.mqh`:
-  chuyển các giá trị thị trường đã cấp vào `Bot1PrepareDistances`; chỉ biên dịch
-  API, chưa phải phép so toàn thân chuẩn bị hoặc EA.
+- `bot-cua-toi-1/tests/check-preparation-full.py`: prepare/original/mql5/compare,
+  1.060 ca/87 giá trị từ thân chuẩn bị đầy đủ; gồm lỗi dịch vụ, mảng mẫu khác nhau,
+  NaN/vô cực và thứ tự gọi. `--build` chọn bản Script đã biên dịch.
+- `bot-cua-toi-1/tests/check-preparation-errors.py RUN --build BUILD`: 10 ca chia 0,
+  hai ca mảng ngắn; so loại lỗi và không ghi kết quả bình thường, chưa so đủ
+  trạng thái trước lỗi. Dùng MT5 riêng và dự án bật kiểm chia 0.
 - `bot-cua-toi-3/tests/probe-division-behavior.py RUN --build BUILD`: đo6ca chia
   trong MT5riêng. `bien-dich.ps1 -CheckFloatingPointDividers` tạo dự án bật
   fpzerocheck1 và giữSHA; chỉ dùng khi bằng chứng gốc yêu cầu cách dừng này.

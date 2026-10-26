@@ -1,0 +1,21 @@
+{
+  "cases": 1060,
+  "matched": 1060,
+  "failed": 0,
+  "first_failures": [],
+  "result_sha256": {
+    "original": "3958df845e1a8470f7dbc7f9991c9cb6a630d931b4f22e4d42f0a348552b53ed",
+    "mql5": "3958df845e1a8470f7dbc7f9991c9cb6a630d931b4f22e4d42f0a348552b53ed"
+  },
+  "whole_manager_complete": false,
+  "whole_bot_complete": false,
+  "full_ea": false,
+  "full_preparation_body_executed": true,
+  "terminal_replies_supplied": true,
+  "original_ex5_changed": false,
+  "limits": [
+    "The full captured preparation body runs with supplied indicator, tick, time and symbol replies; not a complete EA.",
+    "1,040 ordinary cases plus 20 service/nonfinite cases. Short arrays, zero divisions and mutations of settings during SDK calls require separate cohorts.",
+    "Successful string allocations; seed/profile initialization, UI, lifecycle and real broker behavior remain outside this comparison."
+  ]
+}

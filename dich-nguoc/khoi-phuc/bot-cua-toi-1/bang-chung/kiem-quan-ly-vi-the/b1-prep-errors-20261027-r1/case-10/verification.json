@@ -1,0 +1,15 @@
+{
+  "case_id": 10,
+  "source_case_id": -1,
+  "short_size": 0,
+  "native": {
+    "code": "0xd078e000001f6",
+    "class_low32": 502
+  },
+  "mql5_fatal_class": "array out of range",
+  "exit_code": 4294967295,
+  "no_normal_result": true,
+  "partial_state_compared": false,
+  "seconds": 3.25,
+  "runtime_lines_sha256": "2a0e2489df6e5568854bac07642dac4afa31b0dd5cb3061baabbdbe0ac31a1fd"
+}

@@ -1,0 +1,30 @@
+{
+  "original_ex5_sha256": "a3b0de423a06e10ebedc279307b93d7cb9188ba2bb5de77131a913c865b0e922",
+  "tool_sha256": "7deafd13aa588e3d87b846ad93ca18ebcc834b0e7124e97b4860a79f5d14f919",
+  "helpers_sha256": {
+    "bot-cua-toi-1/tests/check-preparation-full.py": "7deafd13aa588e3d87b846ad93ca18ebcc834b0e7124e97b4860a79f5d14f919",
+    "cong-cu/kiem-dieu-chinh-bot-1-3.py": "6c450fe3381f3145b08478e97f80dee54a60144ab43c5f69bef8b8fe6f525cc1",
+    "cong-cu/kiem-ban-git-quan-ly.py": "7186478774b34e0d72b4594fbcc85972d9b4c07ed02160987d46d34f39dcb160",
+    "bot-cua-toi-1/tests/check-management-prelude.py": "f5dbe950896e58a00331ef32473ccebdcbbf03a9627e8c12449c7f4087e6a49d",
+    "cong-cu/kiem-gia-vao-bot-1-3.py": "22394e48932feb7242b967aa58e327d2990402f12bfe52621916f64914c9dac2",
+    "cong-cu/kiem-muc-gia-bot-1-3.py": "a6c447ca80029fb63ced0c9d1673bb14222a7736b04df5c410f280f8471d6a35",
+    "cong-cu/kiem-khoi-luong-hop-le-bot-1-3.py": "8251fb4423d6f5f2e1b79a1c53dbb25fb5a6c568bb61cddef23396dc982243f0",
+    "cong-cu/kiem-khoi-luong-bot-1-3.py": "32539c090422ab6bc2ce94a9fdacfd33e53c394aca58bd3827c2232d817d7f77",
+    "bot-cua-toi-1/bang-chung/kiem-dieu-chinh/settings-20261023-r2/cases.json": "6e8000bf4498ded8803fdbaa76731e2e48f44dd8c13783c11d2075d0cb40a4ea",
+    "bot-cua-toi-1/bang-chung/kiem-dieu-chinh/settings-20261023-r2/original-run.json": "ad4eace6ccf851525c83be59d7d4e29720a2e828f4681295536b9514ef215a56"
+  },
+  "sources_sha256": {
+    "Include/bot-cua-toi-1/Bot1EntryProfiles.mqh": "263568e3883564270a6911dafebed8a2350bc37c8ea1530e4e6c670a14a33d60",
+    "Scripts/bot-cua-toi-1/Bot1PreparationCheck.mq5": "d7c790437047a9e7819e9606a80fcb91c55e3e84f717e939cf0a7ffc1f52a628",
+    "Include/bot-cua-toi-1/Bot1Preparation.mqh": "611f243cae510d7d176b2b7653e55fab7336b1a937b0e5a6e1133342c0eedfd0"
+  },
+  "cases": 1060,
+  "instructions": 611,
+  "result_sha256": "3958df845e1a8470f7dbc7f9991c9cb6a630d931b4f22e4d42f0a348552b53ed",
+  "whole_manager_complete": false,
+  "whole_bot_complete": false,
+  "full_ea": false,
+  "full_preparation_body_executed": true,
+  "terminal_replies_supplied": true,
+  "original_ex5_changed": false
+}

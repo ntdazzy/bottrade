@@ -18,7 +18,7 @@ Bản nạp cấu hình trước đây gán `inputs.management_timeframe` từ b
 - Gán `inputs.management_timeframe` từ bảng `native_6d324`
   (`1,1,1,5,1,1,1,1,1`).
 - Gán `inputs.native_6d2e4` từ bảng ô `0x6d2e4`
-  (`5,1,1,2,3,5,5,20,3`).
+  (`5,99,99,99,99,5,5,20,99`).
 - Bộ kiểm runtime ghi và so cả hai trường; lượt r6 đạt **2.106/2.106**,
   mã kiểm `07e41752...`.
 

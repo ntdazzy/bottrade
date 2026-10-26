@@ -1,5 +1,11 @@
 # Đặc tả luồng chính bot 1 (EX5 gốc)
 
+**Bản sơ bộ chưa được chấp nhận để viết mã.** Một số địa chỉ trong tài liệu
+này chưa được trừ đúng địa chỉ nền, và các tên dịch vụ chưa có đối chứng đủ.
+Ví dụ ô khối lượng là RVA `0x66a80`, không phải `0x76a80`. Dùng bản chụp
+native và đặc tả riêng đã có phép so khi chốt từng phần; không lấy số dòng
+C hoặc bản sơ bộ này làm bằng chứng đã hiểu toàn chương trình.
+
 ## Bằng chứng
 
 - EX5 gốc SHA-256: `a3b0de423a06e10ebedc279307b93d7cb9188ba2bb5de77131a913c865b0e922`.

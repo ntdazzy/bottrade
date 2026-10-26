@@ -1,5 +1,10 @@
 # Đặc tả luồng chính Bot 3 — bản r1 (2026-10-26)
 
+**Bản sơ bộ chưa được chấp nhận để viết mã.** Phần gọi quản lý có địa chỉ
+ghi chưa đúng: đích là RVA `0x32f60` và `0x37590`, không phải `0x82f60` và
+`0x87590`. Cần đối chiếu lệnh native và thứ tự dữ liệu trước khi dùng từng
+nhánh. Những phần đã có phép so riêng vẫn theo bằng chứng riêng của chúng.
+
 ## Phạm vi và bằng chứng
 
 - EX5 được dùng trong lượt này có SHA-256 `ee063d3d87490afe24e2f4ce85f6b05659320e297b102efd70207f71ca2feb83` (bản ghi trong `preparation-full-20261026-r2/SPEC-r2.md`). Mã C trung gian đối chiếu có SHA-256 `ef8e07ac21522a8a2ab7165db6e77f40885acfc5a044c502ba81e331b826f620`.

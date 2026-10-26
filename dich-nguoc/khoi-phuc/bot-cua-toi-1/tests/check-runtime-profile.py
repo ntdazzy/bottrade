@@ -36,6 +36,10 @@ FIELDS = [
     ("aux_recent", "i"), ("aux_offset", "d"),
 ]
 NATIVE_PREFIX = "b1"
+NATIVE_REPORTS = {}
+NATIVE_RECEIPTS = []
+SCOPE = {"whole_bot_complete": False, "whole_manager_complete": False, "full_ea": False,
+         "native_scalar_profile_executed": True, "original_ex5_changed": False}
 
 
 def sha(path):
@@ -54,27 +58,36 @@ def word(value, kind):
 
 
 def native_for(row):
-    name = f"{NATIVE_PREFIX}-native-profile-{row['id']:04d}"
-    output = ANALYSIS / name
-    require(not output.exists(), "NATIVE_RUN_EXISTS " + name)
-    command = [
-        sys.executable, "-I", "-B", "-X", "utf8", str(ANALYZER), name,
-        "--amount=" + repr(row["randomization"]), "--seed", str(row["seed"]),
-        "--hl", str(row["hl"]), "--adjustments",
-        repr(row["price_delta"]), repr(row["stop_delta"]),
-        repr(row["target_delta"]), repr(row["trail_delta"]),
-    ]
-    result = subprocess.run(command, cwd=ROOT.parent, capture_output=True, text=True)
-    require(result.returncode == 0, "NATIVE_PROBE_FAILED " + name + " " + result.stderr[-500:])
-    report = json.loads((output / "native-profiles.json").read_text(encoding="utf-8"))
+    controls=[row[n] for n in ["randomization", "price_delta", "stop_delta", "target_delta", "trail_delta"]]
+    key=(row["seed"],row["hl"],struct.pack("<5d",*controls))
+    if key not in NATIVE_REPORTS:
+        name=f"{NATIVE_PREFIX}-n{len(NATIVE_REPORTS):03d}"
+        output=ANALYSIS/name
+        require(not output.exists(), "NATIVE_RUN_EXISTS " + name)
+        command=[sys.executable,"-I","-B","-X","utf8",str(ANALYZER),name,
+                 "--amount="+repr(controls[0]),"--seed",str(row["seed"]),"--hl",str(row["hl"]),
+                 "--adjustments",*[repr(v) for v in controls[1:]]]
+        result=subprocess.run(command,cwd=ROOT.parent,capture_output=True,text=True)
+        require(result.returncode==0,"NATIVE_PROBE_FAILED "+name+" "+result.stderr[-500:])
+        report_path=output/"native-profiles.json"
+        report=json.loads(report_path.read_text(encoding="utf-8"))
+        require(report["installed_ex5_sha256"]=="a3b0de423a06e10ebedc279307b93d7cb9188ba2bb5de77131a913c865b0e922","ORIGINAL_EX5_DIFFERS")
+        require(report["function_sha256"]=="f5edd0f5e9033ddddb289a3419406c06292ce22bff197bea6d10acea1756c721","ORIGINAL_FUNCTION_DIFFERS")
+        require(report["tool_sha256"]==sha(ANALYZER),"NATIVE_PROBE_TOOL_CHANGED")
+        NATIVE_REPORTS[key]=report
+        NATIVE_RECEIPTS.append({"report":report_path.relative_to(ROOT).as_posix(),"sha256":sha(report_path)})
+    report=NATIVE_REPORTS[key]
     native = next(item for item in report["rows"] if item["index"] == row["index"])
+    require(native["required_field_count"]==22 and native["required_field_bytes_written"]==127,"PROFILE_WRITES_INCOMPLETE")
+    require(native["stop_details"]["reason"]=="required_fields_complete" and not native["read_before_write_events"],"NATIVE_PROFILE_CONTEXT_UNPROVEN")
     require(not native.get("unresolved_before_last_profile_write"), "NATIVE_UNRESOLVED_PROFILE " + str(native.get("unresolved_before_last_profile_write")))
     values = native["values"]
-    raw_fields = native.get("raw_fields", {})
+    raw_fields = native["raw_fields"]
     words = [native["seed_after"]]
     for name, kind in FIELDS:
         require(name in values, "NATIVE_FIELD_MISSING " + name)
-        if kind == "d" and name in raw_fields:
+        if kind == "d":
+            require(name in raw_fields,"NATIVE_BITS_MISSING "+name)
             words.append(int.from_bytes(bytes.fromhex(raw_fields[name]), "little"))
         else:
             words.append(word(values[name], kind))
@@ -89,7 +102,12 @@ def identity():
         HOME / "source/MQL5/Include/bot-cua-toi-1/Bot1DistanceSettings.mqh",
         HOME / "source/MQL5/Include/bot-cua-toi-1/Bot1EntryProfiles.mqh",
     ]
-    helpers = [Path(__file__), Path(CASES.__file__), ANALYZER]
+    helpers = [Path(__file__), Path(CASES.__file__), ANALYZER,
+               ROOT/'cong-cu/kiem-dieu-chinh-bot-1-3.py',ROOT/'cong-cu/kiem-gia-vao-bot-1-3.py',
+               ROOT/'cong-cu/kiem-muc-gia-bot-1-3.py',ROOT/'cong-cu/kiem-khoi-luong-hop-le-bot-1-3.py',
+               ROOT/'cong-cu/kiem-khoi-luong-bot-1-3.py',
+               HOME/'phan-tich/luot-20261023-data-v2/metadata/import.json',
+               HOME/'phan-tich/luot-20261023-data-v2/kiem-tham-so-goc.json']
     return {
         "analyzer_sha256": sha(ANALYZER),
         "sources_sha256": {str(path.relative_to(HOME / "source/MQL5")).replace("\\", "/"): sha(path) for path in sources},
@@ -119,11 +137,12 @@ def main():
     require(all(baseline[key] == value for key, value in current.items()), "IDENTITY_CHANGED")
     require((folder / "cases.bin").read_bytes() == CASES.encode(rows), "INPUTS_CHANGED")
     if args.mode == "original":
+        require(not (folder/"original-results.bin").exists(),"RESULT_EXISTS")
         result = bytearray(CASES.HEADER.pack(CASES.MAGIC, CASES.VERSION, len(rows)))
         for row in rows:
             result.extend(native_for(row))
         (folder / "original-results.bin").write_bytes(result)
-        (folder / "original-run.json").write_text(json.dumps(dict(**current, cases=len(rows), result_sha256=sha(folder / "original-results.bin")), indent=2), encoding="utf-8")
+        (folder / "original-run.json").write_text(json.dumps(dict(**current, cases=len(rows), result_sha256=sha(folder / "original-results.bin"), native_reports=NATIVE_RECEIPTS, **SCOPE), indent=2), encoding="utf-8")
         print(json.dumps({"cases": len(rows)}))
         return
     if args.mode == "mql5":
@@ -131,6 +150,10 @@ def main():
         receipt = HOME / "bang-chung/bien-dich" / args.build / "bien-nhan.json"
         build = json.loads(receipt.read_text(encoding="utf-8-sig"))
         require(build["target"] == SCRIPT and build["errors"] == build["warnings"] == 0, "BUILD_NOT_CLEAN")
+        for name,digest in current['sources_sha256'].items():
+            require(sha(MT/'MQL5'/name)==build['sources_sha256'][name]==digest,'BUILD_SOURCE_DIFFERS '+name)
+        binary=MT/'MQL5'/Path(SCRIPT).with_suffix('.ex5')
+        require(sha(binary)==build['binary_sha256']==sha(receipt.parent/binary.name),'BUILD_BINARY_DIFFERS')
         files = MT / "MQL5/Files/bot1-runtime-profile" / args.run
         files.mkdir(parents=True, exist_ok=False)
         shutil.copyfile(folder / "cases.bin", files / "cases.bin")
@@ -139,15 +162,25 @@ def main():
         preset.write_text("CheckRun=" + args.run + "\n", encoding="utf-16")
         ini.write_text("[Experts]\nEnabled=0\nAllowLiveTrading=0\nAllowDllImport=0\n[StartUp]\nScript=bot-cua-toi-1\\Bot1RuntimeProfileCheck\nScriptParameters=" + preset.name + "\nSymbol=XAUUSD_NOCOST_V2\nPeriod=M15\nShutdownTerminal=1\n", encoding="utf-16")
         proc = subprocess.Popen(f'"{MT / "terminal64.exe"}" /portable /config:"{ini}"', cwd=MT, creationflags=subprocess.CREATE_NO_WINDOW)
-        code = proc.wait(timeout=120)
+        try:code = proc.wait(timeout=120)
+        except subprocess.TimeoutExpired:
+            proc.terminate();proc.wait(timeout=30);raise RuntimeError('MT5_TIMEOUT')
         require(code == 0 and (files / "script-status.bin").read_bytes() == struct.pack("<2i", 0, len(rows)), "MT5_FAILED")
         for name in ("mql5-results.bin", "script-status.bin"):
             shutil.copyfile(files / name, folder / name)
-        (folder / "mql5-run.json").write_text(json.dumps(dict(**current, cases=len(rows), result_sha256=sha(folder / "mql5-results.bin"), build=args.build), indent=2), encoding="utf-8")
+        (folder / "mql5-run.json").write_text(json.dumps(dict(**current, cases=len(rows), result_sha256=sha(folder / "mql5-results.bin"), build=args.build, build_receipt_sha256=sha(receipt), **SCOPE), indent=2), encoding="utf-8")
         print(json.dumps({"cases": len(rows), "exit_code": code}))
         return
     native = (folder / "original-results.bin").read_bytes()
     actual = (folder / "mql5-results.bin").read_bytes()
+    for name in ['original-run.json','mql5-run.json']:
+        record=json.loads((folder/name).read_text())
+        require(all(record[k]==v for k,v in current.items()),'RUN_IDENTITY_DIFFERS')
+        require(record['result_sha256']==sha(folder/name.replace('-run.json','-results.bin')),'RESULT_FILE_CHANGED')
+    for item in json.loads((folder/'original-run.json').read_text())['native_reports']:
+        require(sha(ROOT/item['report'])==item['sha256'],'NATIVE_REPORT_CHANGED')
+    header=CASES.HEADER.pack(CASES.MAGIC,CASES.VERSION,len(rows))
+    require(native[:12]==actual[:12]==header and len(native)==len(actual)==12+len(rows)*CASES.RESULT.size,'RESULT_SIZE_OR_HEADER_DIFFERS')
     require(native == actual, "RESULTS_DIFFER")
     report = {"cases": len(rows), "matched": len(rows), "failed": 0, "result_sha256": {"original": sha(folder / "original-results.bin"), "mql5": sha(folder / "mql5-results.bin")}, "whole_bot_complete": False, "whole_manager_complete": False, "full_ea": False, "native_scalar_profile_executed": True}
     (folder / "comparison.json").write_text(json.dumps(report, indent=2), encoding="utf-8")
