@@ -15,10 +15,13 @@ FIELDS=[
  ('target_distance','d'),('trail_distance','d'),('trail_start','d'),
  ('trail_limit','d'),('trail_step','d'),('aux_hour1','i'),('aux_scan50','i'),
  ('aux_older','i'),('aux_recent','i'),('aux_offset','d')]
+PROFILE_EXTRA=[('indicator_period','i',0x621c4),('indicator_day','B',0x621c8),
+ ('native_622a8','B',0x622a8),('native_622ec','i',0x622ec),
+ ('native_622f0','B',0x622f0),('native_62360','i',0x62360)]
 def canon(md,aliases,r):
  n=md.reg_name(r);return aliases.get(n,n)
 def main():
- p=argparse.ArgumentParser();p.add_argument('run');p.add_argument('--amount',type=float,required=True);p.add_argument('--seed',type=int,required=True);p.add_argument('--adjustments',nargs=4,type=float,default=[0.,0.,0.,0.]);p.add_argument('--hl',type=int,choices=[0,1],required=True);a=p.parse_args()
+ p=argparse.ArgumentParser();p.add_argument('run');p.add_argument('--amount',type=float,required=True);p.add_argument('--seed',type=int,required=True);p.add_argument('--adjustments',nargs=4,type=float,default=[0.,0.,0.,0.]);p.add_argument('--hl',type=int,choices=[0,1],required=True);p.add_argument('--full-inputs',action='store_true');a=p.parse_args()
  out=Path(__file__).parent/a.run;out.mkdir()
  o=entry.Original(1);m,x,base=o.m,o.x,o.base
  import capstone
@@ -37,6 +40,7 @@ def main():
  settings_fields=settings.fields(settings.INPUTS,1)
  setting_by_name={n:(k,r) for n,k,r in settings_fields}
  fields=[(n,setting_by_name[n][0],setting_by_name[n][1]) for n,k in FIELDS]
+ if a.full_inputs:fields+=PROFILE_EXTRA
  fieldmap={base+r:(n,k,r) for n,k,r in fields}
  required_bytes={base+r+j for n,k,r in fields for j in range(struct.calcsize('<'+k))}
  controls={0x6a5f0:a.amount,0x6a708:a.adjustments[0],0x6a710:a.adjustments[1],0x6a718:a.adjustments[2],0x6a720:a.adjustments[3]}
@@ -123,7 +127,7 @@ def main():
   field_write_ordinals=[w['instruction_ordinal'] for w in writes if any(base+int(w['rva'],16)+j in required_bytes for j in range(w['size']))]
   last_profile_write=max(field_write_ordinals) if field_write_ordinals else -1
   unresolved_before={event['register']:event['rva'] for event in read_before_write if event['ordinal']<=last_profile_write}
-  rows.append(dict(index=prof['index'],hl=a.hl,start_rva=prof['start_rva'],first_call_rva=hex(stop[0]-base) if stop else None,stop_details=stop_details,seed_before=a.seed,seed_after=struct.unpack('<I',m.mem_read(base+0x6a478,4))[0],values=values,raw_fields=raw_fields,writes=writes,required_field_count=len(FIELDS),required_field_bytes_written=len(required_bytes & written),scope_write_bytes=len(scope_written),preload_details=preload_details,read_before_write_events=read_before_write,random_word_conversion_order=random_order,float_expressions={n:memory_expr.get(base+r) for n,k,r in fields if k=='d' and base+r in memory_expr},unresolved_registers=live,unresolved_before_last_profile_write=unresolved_before,last_profile_write_ordinal=last_profile_write,instructions=[hex(z-base) for z in trace]))
- report=dict(bot=1,run=a.run,amount=a.amount,seed=a.seed,hl=a.hl,adjustments=a.adjustments,input_controls={'amount':a.amount,'seed':a.seed,'hl':a.hl,'adjustments':a.adjustments},function_begin=hex(lo),function_end_exclusive=hex(hi),function_sha256=hashlib.sha256(code).hexdigest(),native_code_sha256=meta['code_sha256'],installed_ex5_sha256=hashlib.sha256(installed_ex5.read_bytes()).hexdigest(),tool_sha256=hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),rows=rows,scope='Native profile blocks through first original call or the next instruction after all 22 required fields are written; no terminal calls and no expected-value injection.')
+  rows.append(dict(index=prof['index'],hl=a.hl,start_rva=prof['start_rva'],first_call_rva=hex(stop[0]-base) if stop else None,stop_details=stop_details,seed_before=a.seed,seed_after=struct.unpack('<I',m.mem_read(base+0x6a478,4))[0],values=values,raw_fields=raw_fields,writes=writes,required_field_count=len(fields),required_field_bytes_written=len(required_bytes & written),scope_write_bytes=len(scope_written),preload_details=preload_details,read_before_write_events=read_before_write,random_word_conversion_order=random_order,float_expressions={n:memory_expr.get(base+r) for n,k,r in fields if k=='d' and base+r in memory_expr},unresolved_registers=live,unresolved_before_last_profile_write=unresolved_before,last_profile_write_ordinal=last_profile_write,instructions=[hex(z-base) for z in trace]))
+ report=dict(bot=1,run=a.run,full_inputs=a.full_inputs,amount=a.amount,seed=a.seed,hl=a.hl,adjustments=a.adjustments,input_controls={'amount':a.amount,'seed':a.seed,'hl':a.hl,'adjustments':a.adjustments},function_begin=hex(lo),function_end_exclusive=hex(hi),function_sha256=hashlib.sha256(code).hexdigest(),native_code_sha256=meta['code_sha256'],installed_ex5_sha256=hashlib.sha256(installed_ex5.read_bytes()).hexdigest(),tool_sha256=hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),rows=rows,scope='Native profile blocks through first original call or the next instruction after all required fields are written; no terminal calls and no expected-value injection.')
  (out/'native-profiles.json').write_text(json.dumps(report,indent=2,allow_nan=True),encoding='utf-8');(out/Path(__file__).name).write_bytes(Path(__file__).read_bytes());print(json.dumps({'rows':len(rows),'random_counts':[len(r['random_word_conversion_order']) for r in rows],'unresolved':[r['unresolved_registers'] for r in rows]}))
 if __name__=='__main__':main()

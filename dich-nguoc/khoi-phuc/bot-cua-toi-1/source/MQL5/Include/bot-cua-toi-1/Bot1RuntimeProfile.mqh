@@ -3,6 +3,7 @@
 #ifndef BOT1_RUNTIME_PROFILE_MQH
 #define BOT1_RUNTIME_PROFILE_MQH
 #include "Bot1BaseDistances.mqh"
+#include "Bot1Preparation.mqh"
 
 struct Bot1ProfileAdjustments
 {
@@ -16,6 +17,7 @@ struct Bot1ProfileAdjustments
 struct Bot1ProfileRuntimeState
 {
    uint random_seed;
+   int native_62360;
 };
 
 double Bot1ProfileSum(const double left,const double right)
@@ -110,5 +112,41 @@ void Bot1LoadRuntimeProfile(const uint index,const bool use_hl_trailing,
       inputs.trail_start=base.trail_start;
       inputs.trail_limit=base.trail_limit;
    }
+}
+// Full scalar input set needed by the preparation function. Common inputs stay owned by the caller.
+void Bot1LoadRuntimeProfile(const uint index,const bool use_hl_trailing,
+                            const Bot1ProfileAdjustments &adjustments,
+                            Bot1PreparationInputs &inputs,Bot1ProfileRuntimeState &state)
+{
+   if(index>=8) return;
+   Bot1DistanceInputs profile;ZeroMemory(profile);
+   Bot1LoadRuntimeProfile(index,use_hl_trailing,adjustments,profile,state);
+   inputs.entry=profile.entry;
+   inputs.reference=profile.reference;
+   inputs.buy_offset=profile.buy_offset;
+   inputs.sell_offset=profile.sell_offset;
+   inputs.nearby_radius=profile.nearby_radius;
+   inputs.expiration_hours=profile.expiration_hours;
+   inputs.stop_distance=profile.stop_distance;
+   inputs.target_distance=profile.target_distance;
+   inputs.trail_distance=profile.trail_distance;
+   inputs.trail_start=profile.trail_start;
+   inputs.trail_limit=profile.trail_limit;
+   inputs.trail_step=profile.trail_step;
+   inputs.aux_hour1=(uchar)profile.aux_hour1;
+   inputs.aux_scan50=(uchar)profile.aux_scan50;
+   inputs.aux_older=profile.aux_older;
+   inputs.aux_recent=profile.aux_recent;
+   inputs.aux_offset=profile.aux_offset;
+   int periods[8]={53,97,58,47,100,99,95,145};
+   int native_622ec[8]={1,5,1,1,1,1,1,1};
+   uchar native_622f0[8]={1,0,1,1,1,1,1,1};
+   int native_62360[8]={800,400,700,100,600,300,100,100};
+   inputs.indicator_period=periods[index];
+   inputs.indicator_day=1;
+   inputs.native_622a8=1;
+   inputs.native_622ec=native_622ec[index];
+   inputs.native_622f0=native_622f0[index];
+   state.native_62360=native_62360[index];
 }
 #endif

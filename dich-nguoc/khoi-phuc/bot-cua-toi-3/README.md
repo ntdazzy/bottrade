@@ -1,5 +1,10 @@
 # bot-cua-toi-3
 
+Đã so nối nạp cấu hình với chuẩn bị dữ liệu: **2.106/2.106 ca khớp**, so
+124 giá trị và đối số chỉ báo. Hai thân gốc dùng cùng bộ nhớ; tên mã/comment/
+vốn vẫn được cấp, chưa nối EA chính.
+[Bằng chứng và giới hạn](phan-tich/chuong-trinh-chinh/profile-preparation-20261027-r1/README.md).
+
 Đã thêm khối nạp 9 cấu hình chạy ở trước bước chuẩn bị: **2.106/2.106 ca
 khớp** mã gốc và MQL5, gồm hạt giống 32-bit, số dương/âm/NaN/vô cực,
 6 điều chỉnh và kiểm không đổi các trường ngoài phạm vi; biên dịch **0 lỗi,

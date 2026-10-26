@@ -451,6 +451,11 @@
 /bot-cua-toi-1/source/MQL5/Include/bot-cua-toi-1/Bot1Preparation.mqh -text
 /bot-cua-toi-1/source/MQL5/Scripts/bot-cua-toi-1/Bot1Preparation*.mq5 -text
 /bot-cua-toi-1/tests/check-preparation-*.py -text
+/bot-cua-toi-[13]/tests/check-profile-preparation.py -text
+/bot-cua-toi-[13]/source/MQL5/Scripts/bot-cua-toi-[13]/Bot[13]ProfilePreparation*.mq5 -text
+/bot-cua-toi-[13]/phan-tich/chuong-trinh-chinh/profile-preparation-20261027-r1/** -text
+/bot-cua-toi-[13]/bang-chung/bien-dich/b[13]-profile-prep-20261027-*/** -text
+/bot-cua-toi-[13]/bang-chung/bien-dich/b[13]-profile-prep-*-20261027-*/** -text
 /bot-cua-toi-1/phan-tich/luot-20261023-data-v2/metadata/import.json -text
 /bot-cua-toi-1/phan-tich/luot-20261023-data-v2/kiem-tham-so-goc.json -text
 /bot-cua-toi-1/bang-chung/kiem-dieu-chinh/settings-20261023-r2/original-run.json -text

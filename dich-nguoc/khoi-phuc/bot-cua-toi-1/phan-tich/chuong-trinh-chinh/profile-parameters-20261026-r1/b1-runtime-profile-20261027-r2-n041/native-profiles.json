@@ -1,0 +1,4626 @@
+{
+  "bot": 1,
+  "run": "b1-runtime-profile-20261027-r2-n041",
+  "full_inputs": false,
+  "amount": NaN,
+  "seed": 1,
+  "hl": 1,
+  "adjustments": [
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "input_controls": {
+    "amount": NaN,
+    "seed": 1,
+    "hl": 1,
+    "adjustments": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "function_begin": "0x10f60",
+  "function_end_exclusive": "0x173e4",
+  "function_sha256": "f5edd0f5e9033ddddb289a3419406c06292ce22bff197bea6d10acea1756c721",
+  "native_code_sha256": "e099f124084093c3fdc8651d5f5326709b165248982e5d4eb7394afcbb8177a4",
+  "installed_ex5_sha256": "a3b0de423a06e10ebedc279307b93d7cb9188ba2bb5de77131a913c865b0e922",
+  "tool_sha256": "e53eb37d1016bafdb3aec3557c2b34b6e8984d5a5e9202e282bc4d9d8557b868",
+  "rows": [
+    {
+      "index": 0,
+      "hl": 1,
+      "start_rva": "0x12469",
+      "first_call_rva": null,
+      "stop_details": {
+        "reason": "required_fields_complete",
+        "rva": "0x12ac5",
+        "ordinal": 94
+      },
+      "seed_before": 1,
+      "seed_after": 1,
+      "values": {
+        "reference": 26.0,
+        "entry.confirmation_frame": 16408,
+        "entry.hour1_flag": 1,
+        "entry.older_width": 4,
+        "entry.recent_width": 2,
+        "entry.last_shift": 160,
+        "entry.gap_points": 150.0,
+        "buy_offset": -140.0,
+        "sell_offset": -290.0,
+        "nearby_radius": 680.0,
+        "expiration_hours": 408,
+        "stop_distance": 1500.0,
+        "target_distance": 1700.0,
+        "trail_distance": 600.0,
+        "trail_start": 550.0,
+        "trail_limit": 200.0,
+        "trail_step": 0.1,
+        "aux_hour1": 1,
+        "aux_scan50": 1,
+        "aux_older": 2,
+        "aux_recent": 3,
+        "aux_offset": 20.0
+      },
+      "raw_fields": {
+        "reference": "0000000000003a40",
+        "entry.confirmation_frame": "18400000",
+        "entry.hour1_flag": "01",
+        "entry.older_width": "04000000",
+        "entry.recent_width": "02000000",
+        "entry.last_shift": "a0000000",
+        "entry.gap_points": "0000000000c06240",
+        "buy_offset": "00000000008061c0",
+        "sell_offset": "00000000002072c0",
+        "nearby_radius": "0000000000408540",
+        "expiration_hours": "98010000",
+        "stop_distance": "0000000000709740",
+        "target_distance": "0000000000909a40",
+        "trail_distance": "0000000000c08240",
+        "trail_start": "0000000000308140",
+        "trail_limit": "0000000000006940",
+        "trail_step": "9a9999999999b93f",
+        "aux_hour1": "01",
+        "aux_scan50": "01",
+        "aux_older": "02000000",
+        "aux_recent": "03000000",
+        "aux_offset": "0000000000003440"
+      },
+      "writes": [
+        {
+          "rva": "0x62280",
+          "size": 1,
+          "before_bits": "01",
+          "bits": "01",
+          "instruction": "0x1249c",
+          "instruction_ordinal": 7,
+          "expression": null
+        },
+        {
+          "rva": "0x62284",
+          "size": 4,
+          "before_bits": "0a000000",
+          "bits": "04000000",
+          "instruction": "0x1249f",
+          "instruction_ordinal": 8,
+          "expression": null
+        },
+        {
+          "rva": "0x6227c",
+          "size": 4,
+          "before_bits": "00000000",
+          "bits": "18400000",
+          "instruction": "0x124b9",
+          "instruction_ordinal": 11,
+          "expression": null
+        },
+        {
+          "rva": "0x62288",
+          "size": 4,
+          "before_bits": "03000000",
+          "bits": "02000000",
+          "instruction": "0x124bf",
+          "instruction_ordinal": 12,
+          "expression": null
+        },
+        {
+          "rva": "0x6228c",
+          "size": 4,
+          "before_bits": "78000000",
+          "bits": "a0000000",
+          "instruction": "0x124c5",
+          "instruction_ordinal": 13,
+          "expression": null
+        },
+        {
+          "rva": "0x62290",
+          "size": 8,
+          "before_bits": "0000000000003e40",
+          "bits": "0000000000c06240",
+          "instruction": "0x124df",
+          "instruction_ordinal": 16,
+          "expression": [
+            "k",
+            "0000000000c06240"
+          ]
+        },
+        {
+          "rva": "0x622a8",
+          "size": 1,
+          "before_bits": "01",
+          "bits": "01",
+          "instruction": "0x125b7",
+          "instruction_ordinal": 30,
+          "expression": null
+        },
+        {
+          "rva": "0x62298",
+          "size": 8,
+          "before_bits": "000000000000e03f",
+          "bits": "00000000008061c0",
+          "instruction": "0x125ce",
+          "instruction_ordinal": 33,
+          "expression": [
+            "+",
+            [
+              "k",
+              "00000000008061c0"
+            ],
+            [
+              "k",
+              "0000000000000000"
+            ]
+          ]
+        },
+        {
+          "rva": "0x622b0",
+          "size": 8,
+          "before_bits": "000000000000f03f",
+          "bits": "0000000000408540",
+          "instruction": "0x125dc",
+          "instruction_ordinal": 35,
+          "expression": [
+            "k",
+            "0000000000408540"
+          ]
+        },
+        {
+          "rva": "0x622b8",
+          "size": 4,
+          "before_bits": "18000000",
+          "bits": "98010000",
+          "instruction": "0x125f3",
+          "instruction_ordinal": 38,
+          "expression": null
+        },
+        {
+          "rva": "0x622ec",
+          "size": 4,
+          "before_bits": "01000000",
+          "bits": "01000000",
+          "instruction": "0x12603",
+          "instruction_ordinal": 40,
+          "expression": null
+        },
+        {
+          "rva": "0x622f0",
+          "size": 1,
+          "before_bits": "01",
+          "bits": "01",
+          "instruction": "0x12613",
+          "instruction_ordinal": 42,
+          "expression": null
+        },
+        {
+          "rva": "0x622a0",
+          "size": 8,
+          "before_bits": "0000000000000000",
+          "bits": "00000000002072c0",
+          "instruction": "0x1262b",
+          "instruction_ordinal": 47,
+          "expression": [
+            "+",
+            [
+              "+",
+              [
+                "k",
+                "0000000000000000"
+              ],
+              [
+                "k",
+                "00000000002072c0"
+              ]
+            ],
+            [
+              "k",
+              "0000000000000000"
+            ]
+          ]
+        },
+        {
+          "rva": "0x622f8",
+          "size": 8,
+          "before_bits": "0000000000004940",
+          "bits": "0000000000709740",
+          "instruction": "0x1296c",
+          "instruction_ordinal": 58,
+          "expression": [
+            "+",
+            [
+              "k",
+              "0000000000000000"
+            ],
+            [
+              "k",
+              "0000000000709740"
+            ]
+          ]
+        },
+        {
+          "rva": "0x62300",
+          "size": 8,
+          "before_bits": "0000000000005940",
+          "bits": "0000000000909a40",
+          "instruction": "0x12988",
+          "instruction_ordinal": 62,
+          "expression": [
+            "+",
+            [
+              "k",
+              "0000000000000000"
+            ],
+            [
+              "k",
+              "0000000000909a40"
+            ]
+          ]
+        },
+        {
+          "rva": "0x62318",
+          "size": 8,
+          "before_bits": "0000000000002440",
+          "bits": "0000000000c08240",
+          "instruction": "0x12a13",
+          "instruction_ordinal": 69,
+          "expression": [
+            "+",
+            [
+              "k",
+              "0000000000000000"
+            ],
+            [
+              "k",
+              "0000000000c08240"
+            ]
+          ]
+        },
+        {
+          "rva": "0x62320",
+          "size": 8,
+          "before_bits": "0000000000002440",
+          "bits": "0000000000308140",
+          "instruction": "0x12a21",
+          "instruction_ordinal": 71,
+          "expression": [
+            "k",
+            "0000000000308140"
+          ]
+        },
+        {
+          "rva": "0x62330",
+          "size": 8,
+          "before_bits": "9a9999999999d93f",
+          "bits": "9a9999999999b93f",
+          "instruction": "0x12a5a",
+          "instruction_ordinal": 78,
+          "expression": [
+            "k",
+            "9a9999999999b93f"
+          ]
+        },
+        {
+          "rva": "0x62354",
+          "size": 1,
+          "before_bits": "00",
+          "bits": "01",
+          "instruction": "0x12a67",
+          "instruction_ordinal": 80,
+          "expression": null
+        },
+        {
+          "rva": "0x62328",
+          "size": 8,
+          "before_bits": "0000000000005940",
+          "bits": "0000000000006940",
+          "instruction": "0x12a74",
+          "instruction_ordinal": 82,
+          "expression": [
+            "k",
+            "0000000000006940"
+          ]
+        },
+        {
+          "rva": "0x62355",
+          "size": 1,
+          "before_bits": "00",
+          "bits": "01",
+          "instruction": "0x12a78",
+          "instruction_ordinal": 83,
+          "expression": null
+        },
+        {
+          "rva": "0x62358",
+          "size": 4,
+          "before_bits": "00000000",
+          "bits": "02000000",
+          "instruction": "0x12a85",
+          "instruction_ordinal": 85,
+          "expression": null
+        },
+        {
+          "rva": "0x6235c",
+          "size": 4,
+          "before_bits": "00000000",
+          "bits": "03000000",
+          "instruction": "0x12a95",
+          "instruction_ordinal": 87,
+          "expression": null
+        },
+        {
+          "rva": "0x62360",
+          "size": 4,
+          "before_bits": "00000000",
+          "bits": "20030000",
+          "instruction": "0x12aa5",
+          "instruction_ordinal": 89,
+          "expression": null
+        },
+        {
+          "rva": "0x62368",
+          "size": 8,
+          "before_bits": "0000000000000000",
+          "bits": "0000000000003440",
+          "instruction": "0x12ab5",
+          "instruction_ordinal": 91,
+          "expression": [
+            "k",
+            "0000000000003440"
+          ]
+        },
+        {
+          "rva": "0x62180",
+          "size": 8,
+          "before_bits": "0000000000000000",
+          "bits": "0000000000003a40",
+          "instruction": "0x12ac2",
+          "instruction_ordinal": 93,
+          "expression": [
+            "k",
+            "0000000000003a40"
+          ]
+        }
+      ],
+      "required_field_count": 22,
+      "required_field_bytes_written": 127,
+      "scope_write_bytes": 137,
+      "preload_details": [],
+      "read_before_write_events": [],
+      "random_word_conversion_order": [],
+      "float_expressions": {
+        "reference": [
+          "k",
+          "0000000000003a40"
+        ],
+        "entry.gap_points": [
+          "k",
+          "0000000000c06240"
+        ],
+        "buy_offset": [
+          "+",
+          [
+            "k",
+            "00000000008061c0"
+          ],
+          [
+            "k",
+            "0000000000000000"
+          ]
+        ],
+        "sell_offset": [
+          "+",
+          [
+            "+",
+            [
+              "k",
+              "0000000000000000"
+            ],
+            [
+              "k",
+              "00000000002072c0"
+            ]
+          ],
+          [
+            "k",
+            "0000000000000000"
+          ]
+        ],
+        "nearby_radius": [
+          "k",
+          "0000000000408540"
+        ],
+        "stop_distance": [
+          "+",
+          [
+            "k",
+            "0000000000000000"
+          ],
+          [
+            "k",
+            "0000000000709740"
+          ]
+        ],
+        "target_distance": [
+          "+",
+          [
+            "k",
+            "0000000000000000"
+          ],
+          [
+            "k",
+            "0000000000909a40"
+          ]
+        ],
+        "trail_distance": [
+          "+",
+          [
+            "k",
+            "0000000000000000"
+          ],
+          [
+            "k",
+            "0000000000c08240"
+          ]
+        ],
+        "trail_start": [
+          "k",
+          "0000000000308140"
+        ],
+        "trail_limit": [
+          "k",
+          "0000000000006940"
+        ],
+        "trail_step": [
+          "k",
+          "9a9999999999b93f"
+        ],
+        "aux_offset": [
+          "k",
+          "0000000000003440"
+        ]
+      },
+      "unresolved_registers": {},
+      "unresolved_before_last_profile_write": {},
+      "last_profile_write_ordinal": 93,
+      "instructions": [
+        "0x12469",
+        "0x12473",
+        "0x1247d",
+        "0x12481",
+        "0x1248b",
+        "0x12493",
+        "0x1249c",
+        "0x1249f",
+        "0x124a5",
+        "0x124af",
+        "0x124b9",
+        "0x124bf",
+        "0x124c5",
+        "0x124cb",
+        "0x124d5",
+        "0x124df",
+        "0x124e2",
+        "0x124ec",
+        "0x124f6",
+        "0x124fa",
+        "0x12504",
+        "0x12508",
+        "0x1250c",
+        "0x12510",
+        "0x12514",
+        "0x12595",
+        "0x1259f",
+        "0x125a9",
+        "0x125b3",
+        "0x125b7",
+        "0x125ba",
+        "0x125c4",
+        "0x125ce",
+        "0x125d2",
+        "0x125dc",
+        "0x125df",
+        "0x125e9",
+        "0x125f3",
+        "0x125f9",
+        "0x12603",
+        "0x12609",
+        "0x12613",
+        "0x12616",
+        "0x12620",
+        "0x12623",
+        "0x12627",
+        "0x1262b",
+        "0x1262f",
+        "0x12633",
+        "0x12639",
+        "0x12643",
+        "0x12647",
+        "0x1264b",
+        "0x1294a",
+        "0x12954",
+        "0x1295e",
+        "0x12968",
+        "0x1296c",
+        "0x12970",
+        "0x1297a",
+        "0x1297e",
+        "0x12988",
+        "0x1298c",
+        "0x12990",
+        "0x1299a",
+        "0x129a4",
+        "0x129a8",
+        "0x129b2",
+        "0x12a13",
+        "0x12a17",
+        "0x12a21",
+        "0x12a24",
+        "0x12a2e",
+        "0x12a32",
+        "0x12a3c",
+        "0x12a46",
+        "0x12a50",
+        "0x12a5a",
+        "0x12a5d",
+        "0x12a67",
+        "0x12a6a",
+        "0x12a74",
+        "0x12a78",
+        "0x12a7b",
+        "0x12a85",
+        "0x12a8b",
+        "0x12a95",
+        "0x12a9b",
+        "0x12aa5",
+        "0x12aab",
+        "0x12ab5",
+        "0x12ab8",
+        "0x12ac2"
+      ]
+    },
+    {
+      "index": 1,
+      "hl": 1,
+      "start_rva": "0x12fd5",
+      "first_call_rva": null,
+      "stop_details": {
+        "reason": "required_fields_complete",
+        "rva": "0x1368e",
+        "ordinal": 93
+      },
+      "seed_before": 1,
+      "seed_after": 1,
+      "values": {
+        "reference": 25.5,
+        "entry.confirmation_frame": 16388,
+        "entry.hour1_flag": 1,
+        "entry.older_width": 8,
+        "entry.recent_width": 10,
+        "entry.last_shift": 150,
+        "entry.gap_points": 600.0,
+        "buy_offset": -50.0,
+        "sell_offset": -130.0,
+        "nearby_radius": 230.0,
+        "expiration_hours": 384,
+        "stop_distance": 1600.0,
+        "target_distance": 3900.0,
+        "trail_distance": 950.0,
+        "trail_start": 100.0,
+        "trail_limit": 1600.0,
+        "trail_step": 0.1,
+        "aux_hour1": 1,
+        "aux_scan50": 1,
+        "aux_older": 3,
+        "aux_recent": 3,
+        "aux_offset": 20.0
+      },
+      "raw_fields": {
+        "reference": "0000000000803940",
+        "entry.confirmation_frame": "04400000",
+        "entry.hour1_flag": "01",
+        "entry.older_width": "08000000",
+        "entry.recent_width": "0a000000",
+        "entry.last_shift": "96000000",
+        "entry.gap_points": "0000000000c08240",
+        "buy_offset": "00000000000049c0",
+        "sell_offset": "00000000004060c0",
+        "nearby_radius": "0000000000c06c40",
+        "expiration_hours": "80010000",
+        "stop_distance": "0000000000009940",
+        "target_distance": "000000000078ae40",
+        "trail_distance": "0000000000b08d40",
+        "trail_start": "0000000000005940",
+        "trail_limit": "0000000000009940",
+        "trail_step": "9a9999999999b93f",
+        "aux_hour1": "01",
+        "aux_scan50": "01",
+        "aux_older": "03000000",
+        "aux_recent": "03000000",
+        "aux_offset": "0000000000003440"
+      },
+      "writes": [
+        {
+          "rva": "0x62280",
+          "size": 1,
+          "before_bits": "01",
+          "bits": "01",
+          "instruction": "0x13008",
+          "instruction_ordinal": 7,
+          "expression": null
+        },
+        {
+          "rva": "0x62284",
+          "size": 4,
+          "before_bits": "0a000000",
+          "bits": "08000000",
+          "instruction": "0x1300b",
+          "instruction_ordinal": 8,
+          "expression": null
+        },
+        {
+          "rva": "0x6227c",
+          "size": 4,
+          "before_bits": "00000000",
+          "bits": "04400000",
+          "instruction": "0x13025",
+          "instruction_ordinal": 11,
+          "expression": null
+        },
+        {
+          "rva": "0x62288",
+          "size": 4,
+          "before_bits": "03000000",
+          "bits": "0a000000",
+          "instruction": "0x1302b",
+          "instruction_ordinal": 12,
+          "expression": null
+        },
+        {
+          "rva": "0x6228c",
+          "size": 4,
+          "before_bits": "78000000",
+          "bits": "96000000",
+          "instruction": "0x13031",
+          "instruction_ordinal": 13,
+          "expression": null
+        },
+        {
+          "rva": "0x62290",
+          "size": 8,
+          "before_bits": "0000000000003e40",
+          "bits": "0000000000c08240",
+          "instruction": "0x1304b",
+          "instruction_ordinal": 16,
+          "expression": [
+            "k",
+            "0000000000c08240"
+          ]
+        },
+        {
+          "rva": "0x622a8",
+          "size": 1,
+          "before_bits": "01",
+          "bits": "01",
+          "instruction": "0x13123",
+          "instruction_ordinal": 30,
+          "expression": null
+        },
+        {
+          "rva": "0x62298",
+          "size": 8,
+          "before_bits": "000000000000e03f",
+          "bits": "00000000000049c0",
+          "instruction": "0x1313a",
+          "instruction_ordinal": 33,
+          "expression": [
+            "+",
+            [
+              "k",
+              "00000000000049c0"
+            ],
+            [
+              "k",
+              "0000000000000000"
+            ]
+          ]
+        },
+        {
+          "rva": "0x622b0",
+          "size": 8,
+          "before_bits": "000000000000f03f",
+          "bits": "0000000000c06c40",
+          "instruction": "0x13148",
+          "instruction_ordinal": 35,
+          "expression": [
+            "k",
+            "0000000000c06c40"
+          ]
+        },
+        {
+          "rva": "0x622b8",
+          "size": 4,
+          "before_bits": "18000000",
+          "bits": "80010000",
+          "instruction": "0x1315f",
+          "instruction_ordinal": 38,
+          "expression": null
+        },
+        {
+          "rva": "0x622ec",
+          "size": 4,
+          "before_bits": "01000000",
+          "bits": "05000000",
+          "instruction": "0x1316f",
+          "instruction_ordinal": 40,
+          "expression": null
+        },
+        {
+          "rva": "0x622f0",
+          "size": 1,
+          "before_bits": "01",
+          "bits": "00",
+          "instruction": "0x1317f",
+          "instruction_ordinal": 42,
+          "expression": null
+        },
+        {
+          "rva": "0x622a0",
+          "size": 8,
+          "before_bits": "0000000000000000",
+          "bits": "00000000004060c0",
+          "instruction": "0x13197",
+          "instruction_ordinal": 47,
+          "expression": [
+            "+",
+            [
+              "+",
+              [
+                "k",
+                "0000000000000000"
+              ],
+              [
+                "k",
+                "00000000004060c0"
+              ]
+            ],
+            [
+              "k",
+              "0000000000000000"
+            ]
+          ]
+        },
+        {
+          "rva": "0x622f8",
+          "size": 8,
+          "before_bits": "0000000000004940",
+          "bits": "0000000000009940",
+          "instruction": "0x13514",
+          "instruction_ordinal": 58,
+          "expression": [
+            "+",
+            [
+              "k",
+              "0000000000000000"
+            ],
+            [
+              "k",
+              "0000000000009940"
+            ]
+          ]
+        },
+        {
+          "rva": "0x62300",
+          "size": 8,
+          "before_bits": "0000000000005940",
+          "bits": "000000000078ae40",
+          "instruction": "0x1353e",
+          "instruction_ordinal": 64,
+          "expression": [
+            "+",
+            [
+              "k",
+              "0000000000000000"
+            ],
+            [
+              "k",
+              "000000000078ae40"
+            ]
+          ]
+        },
+        {
+          "rva": "0x62320",
+          "size": 8,
+          "before_bits": "0000000000002440",
+          "bits": "0000000000005940",
+          "instruction": "0x1355a",
+          "instruction_ordinal": 68,
+          "expression": [
+            "k",
+            "0000000000005940"
+          ]
+        },
+        {
+          "rva": "0x62318",
+          "size": 8,
+          "before_bits": "0000000000002440",
+          "bits": "0000000000b08d40",
+          "instruction": "0x1356b",
+          "instruction_ordinal": 71,
+          "expression": [
+            "+",
+            [
+              "k",
+              "0000000000000000"
+            ],
+            [
+              "k",
+              "0000000000b08d40"
+            ]
+          ]
+        },
+        {
+          "rva": "0x62330",
+          "size": 8,
+          "before_bits": "9a9999999999d93f",
+          "bits": "9a9999999999b93f",
+          "instruction": "0x13623",
+          "instruction_ordinal": 77,
+          "expression": [
+            "k",
+            "9a9999999999b93f"
+          ]
+        },
+        {
+          "rva": "0x62354",
+          "size": 1,
+          "before_bits": "00",
+          "bits": "01",
+          "instruction": "0x13630",
+          "instruction_ordinal": 79,
+          "expression": null
+        },
+        {
+          "rva": "0x62328",
+          "size": 8,
+          "before_bits": "0000000000005940",
+          "bits": "0000000000009940",
+          "instruction": "0x1363d",
+          "instruction_ordinal": 81,
+          "expression": [
+            "k",
+            "0000000000009940"
+          ]
+        },
+        {
+          "rva": "0x62355",
+          "size": 1,
+          "before_bits": "00",
+          "bits": "01",
+          "instruction": "0x13641",
+          "instruction_ordinal": 82,
+          "expression": null
+        },
+        {
+          "rva": "0x62358",
+          "size": 4,
+          "before_bits": "00000000",
+          "bits": "03000000",
+          "instruction": "0x1364e",
+          "instruction_ordinal": 84,
+          "expression": null
+        },
+        {
+          "rva": "0x6235c",
+          "size": 4,
+          "before_bits": "00000000",
+          "bits": "03000000",
+          "instruction": "0x1365e",
+          "instruction_ordinal": 86,
+          "expression": null
+        },
+        {
+          "rva": "0x62360",
+          "size": 4,
+          "before_bits": "00000000",
+          "bits": "90010000",
+          "instruction": "0x1366e",
+          "instruction_ordinal": 88,
+          "expression": null
+        },
+        {
+          "rva": "0x62368",
+          "size": 8,
+          "before_bits": "0000000000000000",
+          "bits": "0000000000003440",
+          "instruction": "0x1367e",
+          "instruction_ordinal": 90,
+          "expression": [
+            "k",
+            "0000000000003440"
+          ]
+        },
+        {
+          "rva": "0x62180",
+          "size": 8,
+          "before_bits": "0000000000000000",
+          "bits": "0000000000803940",
+          "instruction": "0x1368b",
+          "instruction_ordinal": 92,
+          "expression": [
+            "k",
+            "0000000000803940"
+          ]
+        }
+      ],
+      "required_field_count": 22,
+      "required_field_bytes_written": 127,
+      "scope_write_bytes": 137,
+      "preload_details": [
+        {
+          "rva": "0x12f54",
+          "opcode": "movabs",
+          "operands": "r9, 0x4034000000000000",
+          "defined": [
+            "r9"
+          ]
+        }
+      ],
+      "read_before_write_events": [],
+      "random_word_conversion_order": [],
+      "float_expressions": {
+        "reference": [
+          "k",
+          "0000000000803940"
+        ],
+        "entry.gap_points": [
+          "k",
+          "0000000000c08240"
+        ],
+        "buy_offset": [
+          "+",
+          [
+            "k",
+            "00000000000049c0"
+          ],
+          [
+            "k",
+            "0000000000000000"
+          ]
+        ],
+        "sell_offset": [
+          "+",
+          [
+            "+",
+            [
+              "k",
+              "0000000000000000"
+            ],
+            [
+              "k",
+              "00000000004060c0"
+            ]
+          ],
+          [
+            "k",
+            "0000000000000000"
+          ]
+        ],
+        "nearby_radius": [
+          "k",
+          "0000000000c06c40"
+        ],
+        "stop_distance": [
+          "+",
+          [
+            "k",
+            "0000000000000000"
+          ],
+          [
+            "k",
+            "0000000000009940"
+          ]
+        ],
+        "target_distance": [
+          "+",
+          [
+            "k",
+            "0000000000000000"
+          ],
+          [
+            "k",
+            "000000000078ae40"
+          ]
+        ],
+        "trail_distance": [
+          "+",
+          [
+            "k",
+            "0000000000000000"
+          ],
+          [
+            "k",
+            "0000000000b08d40"
+          ]
+        ],
+        "trail_start": [
+          "k",
+          "0000000000005940"
+        ],
+        "trail_limit": [
+          "k",
+          "0000000000009940"
+        ],
+        "trail_step": [
+          "k",
+          "9a9999999999b93f"
+        ],
+        "aux_offset": [
+          "k",
+          "0000000000003440"
+        ]
+      },
+      "unresolved_registers": {},
+      "unresolved_before_last_profile_write": {},
+      "last_profile_write_ordinal": 92,
+      "instructions": [
+        "0x12fd5",
+        "0x12fdf",
+        "0x12fe9",
+        "0x12fed",
+        "0x12ff7",
+        "0x12fff",
+        "0x13008",
+        "0x1300b",
+        "0x13011",
+        "0x1301b",
+        "0x13025",
+        "0x1302b",
+        "0x13031",
+        "0x13037",
+        "0x13041",
+        "0x1304b",
+        "0x1304e",
+        "0x13058",
+        "0x13062",
+        "0x13066",
+        "0x13070",
+        "0x13074",
+        "0x13078",
+        "0x1307c",
+        "0x13080",
+        "0x13101",
+        "0x1310b",
+        "0x13115",
+        "0x1311f",
+        "0x13123",
+        "0x13126",
+        "0x13130",
+        "0x1313a",
+        "0x1313e",
+        "0x13148",
+        "0x1314b",
+        "0x13155",
+        "0x1315f",
+        "0x13165",
+        "0x1316f",
+        "0x13175",
+        "0x1317f",
+        "0x13182",
+        "0x1318c",
+        "0x1318f",
+        "0x13193",
+        "0x13197",
+        "0x1319b",
+        "0x1319f",
+        "0x131a5",
+        "0x131af",
+        "0x131b3",
+        "0x131b7",
+        "0x134f1",
+        "0x134fb",
+        "0x13505",
+        "0x1350f",
+        "0x13514",
+        "0x13518",
+        "0x13522",
+        "0x13526",
+        "0x13530",
+        "0x13534",
+        "0x1353e",
+        "0x13542",
+        "0x13546",
+        "0x13550",
+        "0x1355a",
+        "0x1355d",
+        "0x13561",
+        "0x1356b",
+        "0x1356f",
+        "0x135fb",
+        "0x13605",
+        "0x1360f",
+        "0x13619",
+        "0x13623",
+        "0x13626",
+        "0x13630",
+        "0x13633",
+        "0x1363d",
+        "0x13641",
+        "0x13644",
+        "0x1364e",
+        "0x13654",
+        "0x1365e",
+        "0x13664",
+        "0x1366e",
+        "0x13674",
+        "0x1367e",
+        "0x13681",
+        "0x1368b"
+      ]
+    },
+    {
+      "index": 2,
+      "hl": 1,
+      "start_rva": "0x138d9",
+      "first_call_rva": null,
+      "stop_details": {
+        "reason": "required_fields_complete",
+        "rva": "0x13ebb",
+        "ordinal": 96
+      },
+      "seed_before": 1,
+      "seed_after": 1,
+      "values": {
+        "reference": 37.5,
+        "entry.confirmation_frame": 16408,
+        "entry.hour1_flag": 1,
+        "entry.older_width": 18,
+        "entry.recent_width": 3,
+        "entry.last_shift": 180,
+        "entry.gap_points": 900.0,
+        "buy_offset": -130.0,
+        "sell_offset": -30.0,
+        "nearby_radius": 980.0,
+        "expiration_hours": 408,
+        "stop_distance": 1800.0,
+        "target_distance": 1800.0,
+        "trail_distance": 750.0,
+        "trail_start": 600.0,
+        "trail_limit": 200.0,
+        "trail_step": 0.1,
+        "aux_hour1": 1,
+        "aux_scan50": 1,
+        "aux_older": 1,
+        "aux_recent": 6,
+        "aux_offset": 5.0
+      },
+      "raw_fields": {
+        "reference": "0000000000c04240",
+        "entry.confirmation_frame": "18400000",
+        "entry.hour1_flag": "01",
+        "entry.older_width": "12000000",
+        "entry.recent_width": "03000000",
+        "entry.last_shift": "b4000000",
+        "entry.gap_points": "0000000000208c40",
+        "buy_offset": "00000000004060c0",
+        "sell_offset": "0000000000003ec0",
+        "nearby_radius": "0000000000a08e40",
+        "expiration_hours": "98010000",
+        "stop_distance": "0000000000209c40",
+        "target_distance": "0000000000209c40",
+        "trail_distance": "0000000000708740",
+        "trail_start": "0000000000c08240",
+        "trail_limit": "0000000000006940",
+        "trail_step": "9a9999999999b93f",
+        "aux_hour1": "01",
+        "aux_scan50": "01",
+        "aux_older": "01000000",
+        "aux_recent": "06000000",
+        "aux_offset": "0000000000001440"
+      },
+      "writes": [
+        {
+          "rva": "0x62280",
+          "size": 1,
+          "before_bits": "01",
+          "bits": "01",
+          "instruction": "0x1390c",
+          "instruction_ordinal": 7,
+          "expression": null
+        },
+        {
+          "rva": "0x62284",
+          "size": 4,
+          "before_bits": "0a000000",
+          "bits": "12000000",
+          "instruction": "0x13919",
+          "instruction_ordinal": 9,
+          "expression": null
+        },
+        {
+          "rva": "0x6227c",
+          "size": 4,
+          "before_bits": "00000000",
+          "bits": "18400000",
+          "instruction": "0x1392a",
+          "instruction_ordinal": 11,
+          "expression": null
+        },
+        {
+          "rva": "0x62288",
+          "size": 4,
+          "before_bits": "03000000",
+          "bits": "03000000",
+          "instruction": "0x13930",
+          "instruction_ordinal": 12,
+          "expression": null
+        },
+        {
+          "rva": "0x6228c",
+          "size": 4,
+          "before_bits": "78000000",
+          "bits": "b4000000",
+          "instruction": "0x13940",
+          "instruction_ordinal": 14,
+          "expression": null
+        },
+        {
+          "rva": "0x62290",
+          "size": 8,
+          "before_bits": "0000000000003e40",
+          "bits": "0000000000208c40",
+          "instruction": "0x13947",
+          "instruction_ordinal": 15,
+          "expression": [
+            "k",
+            "0000000000208c40"
+          ]
+        },
+        {
+          "rva": "0x622a8",
+          "size": 1,
+          "before_bits": "01",
+          "bits": "01",
+          "instruction": "0x13a1f",
+          "instruction_ordinal": 29,
+          "expression": null
+        },
+        {
+          "rva": "0x62298",
+          "size": 8,
+          "before_bits": "000000000000e03f",
+          "bits": "00000000004060c0",
+          "instruction": "0x13a36",
+          "instruction_ordinal": 32,
+          "expression": [
+            "+",
+            [
+              "k",
+              "00000000004060c0"
+            ],
+            [
+              "k",
+              "0000000000000000"
+            ]
+          ]
+        },
+        {
+          "rva": "0x622b0",
+          "size": 8,
+          "before_bits": "000000000000f03f",
+          "bits": "0000000000a08e40",
+          "instruction": "0x13a44",
+          "instruction_ordinal": 34,
+          "expression": [
+            "k",
+            "0000000000a08e40"
+          ]
+        },
+        {
+          "rva": "0x622b8",
+          "size": 4,
+          "before_bits": "18000000",
+          "bits": "98010000",
+          "instruction": "0x13a5b",
+          "instruction_ordinal": 37,
+          "expression": null
+        },
+        {
+          "rva": "0x622ec",
+          "size": 4,
+          "before_bits": "01000000",
+          "bits": "01000000",
+          "instruction": "0x13a6b",
+          "instruction_ordinal": 39,
+          "expression": null
+        },
+        {
+          "rva": "0x622f0",
+          "size": 1,
+          "before_bits": "01",
+          "bits": "01",
+          "instruction": "0x13a7b",
+          "instruction_ordinal": 41,
+          "expression": null
+        },
+        {
+          "rva": "0x622a0",
+          "size": 8,
+          "before_bits": "0000000000000000",
+          "bits": "0000000000003ec0",
+          "instruction": "0x13a93",
+          "instruction_ordinal": 46,
+          "expression": [
+            "+",
+            [
+              "+",
+              [
+                "k",
+                "0000000000000000"
+              ],
+              [
+                "k",
+                "0000000000003ec0"
+              ]
+            ],
+            [
+              "k",
+              "0000000000000000"
+            ]
+          ]
+        },
+        {
+          "rva": "0x622f8",
+          "size": 8,
+          "before_bits": "0000000000004940",
+          "bits": "0000000000209c40",
+          "instruction": "0x13d53",
+          "instruction_ordinal": 57,
+          "expression": [
+            "+",
+            [
+              "k",
+              "0000000000000000"
+            ],
+            [
+              "k",
+              "0000000000209c40"
+            ]
+          ]
+        },
+        {
+          "rva": "0x62300",
+          "size": 8,
+          "before_bits": "0000000000005940",
+          "bits": "0000000000209c40",
+          "instruction": "0x13d6f",
+          "instruction_ordinal": 61,
+          "expression": [
+            "+",
+            [
+              "k",
+              "0000000000000000"
+            ],
+            [
+              "k",
+              "0000000000209c40"
+            ]
+          ]
+        },
+        {
+          "rva": "0x62320",
+          "size": 8,
+          "before_bits": "0000000000002440",
+          "bits": "0000000000c08240",
+          "instruction": "0x13def",
+          "instruction_ordinal": 68,
+          "expression": [
+            "k",
+            "0000000000c08240"
+          ]
+        },
+        {
+          "rva": "0x62318",
+          "size": 8,
+          "before_bits": "0000000000002440",
+          "bits": "0000000000708740",
+          "instruction": "0x13dfc",
+          "instruction_ordinal": 70,
+          "expression": [
+            "+",
+            [
+              "k",
+              "0000000000000000"
+            ],
+            [
+              "k",
+              "0000000000708740"
+            ]
+          ]
+        },
+        {
+          "rva": "0x62330",
+          "size": 8,
+          "before_bits": "9a9999999999d93f",
+          "bits": "9a9999999999b93f",
+          "instruction": "0x13e22",
+          "instruction_ordinal": 75,
+          "expression": [
+            "k",
+            "9a9999999999b93f"
+          ]
+        },
+        {
+          "rva": "0x62328",
+          "size": 8,
+          "before_bits": "0000000000005940",
+          "bits": "0000000000006940",
+          "instruction": "0x13e39",
+          "instruction_ordinal": 78,
+          "expression": [
+            "k",
+            "0000000000006940"
+          ]
+        },
+        {
+          "rva": "0x62354",
+          "size": 1,
+          "before_bits": "00",
+          "bits": "01",
+          "instruction": "0x13e47",
+          "instruction_ordinal": 80,
+          "expression": null
+        },
+        {
+          "rva": "0x62355",
+          "size": 1,
+          "before_bits": "00",
+          "bits": "01",
+          "instruction": "0x13e54",
+          "instruction_ordinal": 82,
+          "expression": null
+        },
+        {
+          "rva": "0x62358",
+          "size": 4,
+          "before_bits": "00000000",
+          "bits": "01000000",
+          "instruction": "0x13e61",
+          "instruction_ordinal": 84,
+          "expression": null
+        },
+        {
+          "rva": "0x6235c",
+          "size": 4,
+          "before_bits": "00000000",
+          "bits": "06000000",
+          "instruction": "0x13e71",
+          "instruction_ordinal": 86,
+          "expression": null
+        },
+        {
+          "rva": "0x62360",
+          "size": 4,
+          "before_bits": "00000000",
+          "bits": "bc020000",
+          "instruction": "0x13e81",
+          "instruction_ordinal": 88,
+          "expression": null
+        },
+        {
+          "rva": "0x62368",
+          "size": 8,
+          "before_bits": "0000000000000000",
+          "bits": "0000000000001440",
+          "instruction": "0x13e91",
+          "instruction_ordinal": 90,
+          "expression": [
+            "k",
+            "0000000000001440"
+          ]
+        },
+        {
+          "rva": "0x62180",
+          "size": 8,
+          "before_bits": "0000000000000000",
+          "bits": "0000000000c04240",
+          "instruction": "0x13eb8",
+          "instruction_ordinal": 95,
+          "expression": [
+            "k",
+            "0000000000c04240"
+          ]
+        }
+      ],
+      "required_field_count": 22,
+      "required_field_bytes_written": 127,
+      "scope_write_bytes": 137,
+      "preload_details": [],
+      "read_before_write_events": [],
+      "random_word_conversion_order": [],
+      "float_expressions": {
+        "reference": [
+          "k",
+          "0000000000c04240"
+        ],
+        "entry.gap_points": [
+          "k",
+          "0000000000208c40"
+        ],
+        "buy_offset": [
+          "+",
+          [
+            "k",
+            "00000000004060c0"
+          ],
+          [
+            "k",
+            "0000000000000000"
+          ]
+        ],
+        "sell_offset": [
+          "+",
+          [
+            "+",
+            [
+              "k",
+              "0000000000000000"
+            ],
+            [
+              "k",
+              "0000000000003ec0"
+            ]
+          ],
+          [
+            "k",
+            "0000000000000000"
+          ]
+        ],
+        "nearby_radius": [
+          "k",
+          "0000000000a08e40"
+        ],
+        "stop_distance": [
+          "+",
+          [
+            "k",
+            "0000000000000000"
+          ],
+          [
+            "k",
+            "0000000000209c40"
+          ]
+        ],
+        "target_distance": [
+          "+",
+          [
+            "k",
+            "0000000000000000"
+          ],
+          [
+            "k",
+            "0000000000209c40"
+          ]
+        ],
+        "trail_distance": [
+          "+",
+          [
+            "k",
+            "0000000000000000"
+          ],
+          [
+            "k",
+            "0000000000708740"
+          ]
+        ],
+        "trail_start": [
+          "k",
+          "0000000000c08240"
+        ],
+        "trail_limit": [
+          "k",
+          "0000000000006940"
+        ],
+        "trail_step": [
+          "k",
+          "9a9999999999b93f"
+        ],
+        "aux_offset": [
+          "k",
+          "0000000000001440"
+        ]
+      },
+      "unresolved_registers": {},
+      "unresolved_before_last_profile_write": {},
+      "last_profile_write_ordinal": 95,
+      "instructions": [
+        "0x138d9",
+        "0x138e3",
+        "0x138ed",
+        "0x138f1",
+        "0x138fb",
+        "0x13903",
+        "0x1390c",
+        "0x1390f",
+        "0x13919",
+        "0x13920",
+        "0x1392a",
+        "0x13930",
+        "0x13936",
+        "0x13940",
+        "0x13947",
+        "0x1394a",
+        "0x13954",
+        "0x1395e",
+        "0x13962",
+        "0x1396c",
+        "0x13970",
+        "0x13974",
+        "0x13978",
+        "0x1397c",
+        "0x139fd",
+        "0x13a07",
+        "0x13a11",
+        "0x13a1b",
+        "0x13a1f",
+        "0x13a22",
+        "0x13a2c",
+        "0x13a36",
+        "0x13a3a",
+        "0x13a44",
+        "0x13a47",
+        "0x13a51",
+        "0x13a5b",
+        "0x13a61",
+        "0x13a6b",
+        "0x13a71",
+        "0x13a7b",
+        "0x13a7e",
+        "0x13a88",
+        "0x13a8b",
+        "0x13a8f",
+        "0x13a93",
+        "0x13a97",
+        "0x13a9b",
+        "0x13aa1",
+        "0x13aab",
+        "0x13aaf",
+        "0x13ab9",
+        "0x13abd",
+        "0x13d3a",
+        "0x13d44",
+        "0x13d4e",
+        "0x13d53",
+        "0x13d57",
+        "0x13d61",
+        "0x13d65",
+        "0x13d6f",
+        "0x13d73",
+        "0x13d77",
+        "0x13d7b",
+        "0x13dd1",
+        "0x13ddb",
+        "0x13de5",
+        "0x13def",
+        "0x13df2",
+        "0x13dfc",
+        "0x13e00",
+        "0x13e04",
+        "0x13e0e",
+        "0x13e18",
+        "0x13e22",
+        "0x13e25",
+        "0x13e2f",
+        "0x13e39",
+        "0x13e3d",
+        "0x13e47",
+        "0x13e4a",
+        "0x13e54",
+        "0x13e57",
+        "0x13e61",
+        "0x13e67",
+        "0x13e71",
+        "0x13e77",
+        "0x13e81",
+        "0x13e87",
+        "0x13e91",
+        "0x13e94",
+        "0x13e9e",
+        "0x13ea8",
+        "0x13eae",
+        "0x13eb8"
+      ]
+    },
+    {
+      "index": 3,
+      "hl": 1,
+      "start_rva": "0x14104",
+      "first_call_rva": null,
+      "stop_details": {
+        "reason": "required_fields_complete",
+        "rva": "0x145b3",
+        "ordinal": 92
+      },
+      "seed_before": 1,
+      "seed_after": 1,
+      "values": {
+        "reference": 34.5,
+        "entry.confirmation_frame": 16408,
+        "entry.hour1_flag": 1,
+        "entry.older_width": 4,
+        "entry.recent_width": 2,
+        "entry.last_shift": 240,
+        "entry.gap_points": 900.0,
+        "buy_offset": -250.0,
+        "sell_offset": -130.0,
+        "nearby_radius": 680.0,
+        "expiration_hours": 48,
+        "stop_distance": 1600.0,
+        "target_distance": 1700.0,
+        "trail_distance": 800.0,
+        "trail_start": 500.0,
+        "trail_limit": 200.0,
+        "trail_step": 0.1,
+        "aux_hour1": 1,
+        "aux_scan50": 1,
+        "aux_older": 5,
+        "aux_recent": 6,
+        "aux_offset": 0.0
+      },
+      "raw_fields": {
+        "reference": "0000000000404140",
+        "entry.confirmation_frame": "18400000",
+        "entry.hour1_flag": "01",
+        "entry.older_width": "04000000",
+        "entry.recent_width": "02000000",
+        "entry.last_shift": "f0000000",
+        "entry.gap_points": "0000000000208c40",
+        "buy_offset": "0000000000406fc0",
+        "sell_offset": "00000000004060c0",
+        "nearby_radius": "0000000000408540",
+        "expiration_hours": "30000000",
+        "stop_distance": "0000000000009940",
+        "target_distance": "0000000000909a40",
+        "trail_distance": "0000000000008940",
+        "trail_start": "0000000000407f40",
+        "trail_limit": "0000000000006940",
+        "trail_step": "9a9999999999b93f",
+        "aux_hour1": "01",
+        "aux_scan50": "01",
+        "aux_older": "05000000",
+        "aux_recent": "06000000",
+        "aux_offset": "0000000000000000"
+      },
+      "writes": [
+        {
+          "rva": "0x62280",
+          "size": 1,
+          "before_bits": "01",
+          "bits": "01",
+          "instruction": "0x14137",
+          "instruction_ordinal": 7,
+          "expression": null
+        },
+        {
+          "rva": "0x62284",
+          "size": 4,
+          "before_bits": "0a000000",
+          "bits": "04000000",
+          "instruction": "0x14144",
+          "instruction_ordinal": 9,
+          "expression": null
+        },
+        {
+          "rva": "0x6227c",
+          "size": 4,
+          "before_bits": "00000000",
+          "bits": "18400000",
+          "instruction": "0x14155",
+          "instruction_ordinal": 11,
+          "expression": null
+        },
+        {
+          "rva": "0x62288",
+          "size": 4,
+          "before_bits": "03000000",
+          "bits": "02000000",
+          "instruction": "0x1415b",
+          "instruction_ordinal": 12,
+          "expression": null
+        },
+        {
+          "rva": "0x6228c",
+          "size": 4,
+          "before_bits": "78000000",
+          "bits": "f0000000",
+          "instruction": "0x1416b",
+          "instruction_ordinal": 14,
+          "expression": null
+        },
+        {
+          "rva": "0x62290",
+          "size": 8,
+          "before_bits": "0000000000003e40",
+          "bits": "0000000000208c40",
+          "instruction": "0x14172",
+          "instruction_ordinal": 15,
+          "expression": [
+            "k",
+            "0000000000208c40"
+          ]
+        },
+        {
+          "rva": "0x622a8",
+          "size": 1,
+          "before_bits": "01",
+          "bits": "01",
+          "instruction": "0x1424a",
+          "instruction_ordinal": 29,
+          "expression": null
+        },
+        {
+          "rva": "0x62298",
+          "size": 8,
+          "before_bits": "000000000000e03f",
+          "bits": "0000000000406fc0",
+          "instruction": "0x14261",
+          "instruction_ordinal": 32,
+          "expression": [
+            "+",
+            [
+              "k",
+              "0000000000406fc0"
+            ],
+            [
+              "k",
+              "0000000000000000"
+            ]
+          ]
+        },
+        {
+          "rva": "0x622b0",
+          "size": 8,
+          "before_bits": "000000000000f03f",
+          "bits": "0000000000408540",
+          "instruction": "0x1426f",
+          "instruction_ordinal": 34,
+          "expression": [
+            "k",
+            "0000000000408540"
+          ]
+        },
+        {
+          "rva": "0x622b8",
+          "size": 4,
+          "before_bits": "18000000",
+          "bits": "30000000",
+          "instruction": "0x14286",
+          "instruction_ordinal": 37,
+          "expression": null
+        },
+        {
+          "rva": "0x622ec",
+          "size": 4,
+          "before_bits": "01000000",
+          "bits": "01000000",
+          "instruction": "0x14296",
+          "instruction_ordinal": 39,
+          "expression": null
+        },
+        {
+          "rva": "0x622f0",
+          "size": 1,
+          "before_bits": "01",
+          "bits": "01",
+          "instruction": "0x142a6",
+          "instruction_ordinal": 41,
+          "expression": null
+        },
+        {
+          "rva": "0x622a0",
+          "size": 8,
+          "before_bits": "0000000000000000",
+          "bits": "00000000004060c0",
+          "instruction": "0x142be",
+          "instruction_ordinal": 46,
+          "expression": [
+            "+",
+            [
+              "+",
+              [
+                "k",
+                "0000000000000000"
+              ],
+              [
+                "k",
+                "00000000004060c0"
+              ]
+            ],
+            [
+              "k",
+              "0000000000000000"
+            ]
+          ]
+        },
+        {
+          "rva": "0x622f8",
+          "size": 8,
+          "before_bits": "0000000000004940",
+          "bits": "0000000000009940",
+          "instruction": "0x144b7",
+          "instruction_ordinal": 57,
+          "expression": [
+            "+",
+            [
+              "k",
+              "0000000000000000"
+            ],
+            [
+              "k",
+              "0000000000009940"
+            ]
+          ]
+        },
+        {
+          "rva": "0x62300",
+          "size": 8,
+          "before_bits": "0000000000005940",
+          "bits": "0000000000909a40",
+          "instruction": "0x144dd",
+          "instruction_ordinal": 62,
+          "expression": [
+            "+",
+            [
+              "k",
+              "0000000000000000"
+            ],
+            [
+              "k",
+              "0000000000909a40"
+            ]
+          ]
+        },
+        {
+          "rva": "0x62320",
+          "size": 8,
+          "before_bits": "0000000000002440",
+          "bits": "0000000000407f40",
+          "instruction": "0x144f9",
+          "instruction_ordinal": 66,
+          "expression": [
+            "k",
+            "0000000000407f40"
+          ]
+        },
+        {
+          "rva": "0x62318",
+          "size": 8,
+          "before_bits": "0000000000002440",
+          "bits": "0000000000008940",
+          "instruction": "0x14518",
+          "instruction_ordinal": 71,
+          "expression": [
+            "+",
+            [
+              "k",
+              "0000000000000000"
+            ],
+            [
+              "k",
+              "0000000000008940"
+            ]
+          ]
+        },
+        {
+          "rva": "0x62330",
+          "size": 8,
+          "before_bits": "9a9999999999d93f",
+          "bits": "9a9999999999b93f",
+          "instruction": "0x14544",
+          "instruction_ordinal": 76,
+          "expression": [
+            "k",
+            "9a9999999999b93f"
+          ]
+        },
+        {
+          "rva": "0x62354",
+          "size": 1,
+          "before_bits": "00",
+          "bits": "01",
+          "instruction": "0x14551",
+          "instruction_ordinal": 78,
+          "expression": null
+        },
+        {
+          "rva": "0x62328",
+          "size": 8,
+          "before_bits": "0000000000005940",
+          "bits": "0000000000006940",
+          "instruction": "0x1455e",
+          "instruction_ordinal": 80,
+          "expression": [
+            "k",
+            "0000000000006940"
+          ]
+        },
+        {
+          "rva": "0x62355",
+          "size": 1,
+          "before_bits": "00",
+          "bits": "01",
+          "instruction": "0x14562",
+          "instruction_ordinal": 81,
+          "expression": null
+        },
+        {
+          "rva": "0x62358",
+          "size": 4,
+          "before_bits": "00000000",
+          "bits": "05000000",
+          "instruction": "0x1456f",
+          "instruction_ordinal": 83,
+          "expression": null
+        },
+        {
+          "rva": "0x6235c",
+          "size": 4,
+          "before_bits": "00000000",
+          "bits": "06000000",
+          "instruction": "0x1457f",
+          "instruction_ordinal": 85,
+          "expression": null
+        },
+        {
+          "rva": "0x62360",
+          "size": 4,
+          "before_bits": "00000000",
+          "bits": "64000000",
+          "instruction": "0x1458f",
+          "instruction_ordinal": 87,
+          "expression": null
+        },
+        {
+          "rva": "0x62368",
+          "size": 8,
+          "before_bits": "0000000000000000",
+          "bits": "0000000000000000",
+          "instruction": "0x1459f",
+          "instruction_ordinal": 89,
+          "expression": [
+            "k",
+            "0000000000000000"
+          ]
+        },
+        {
+          "rva": "0x62180",
+          "size": 8,
+          "before_bits": "0000000000000000",
+          "bits": "0000000000404140",
+          "instruction": "0x145b0",
+          "instruction_ordinal": 91,
+          "expression": [
+            "k",
+            "0000000000404140"
+          ]
+        }
+      ],
+      "required_field_count": 22,
+      "required_field_bytes_written": 127,
+      "scope_write_bytes": 137,
+      "preload_details": [],
+      "read_before_write_events": [],
+      "random_word_conversion_order": [],
+      "float_expressions": {
+        "reference": [
+          "k",
+          "0000000000404140"
+        ],
+        "entry.gap_points": [
+          "k",
+          "0000000000208c40"
+        ],
+        "buy_offset": [
+          "+",
+          [
+            "k",
+            "0000000000406fc0"
+          ],
+          [
+            "k",
+            "0000000000000000"
+          ]
+        ],
+        "sell_offset": [
+          "+",
+          [
+            "+",
+            [
+              "k",
+              "0000000000000000"
+            ],
+            [
+              "k",
+              "00000000004060c0"
+            ]
+          ],
+          [
+            "k",
+            "0000000000000000"
+          ]
+        ],
+        "nearby_radius": [
+          "k",
+          "0000000000408540"
+        ],
+        "stop_distance": [
+          "+",
+          [
+            "k",
+            "0000000000000000"
+          ],
+          [
+            "k",
+            "0000000000009940"
+          ]
+        ],
+        "target_distance": [
+          "+",
+          [
+            "k",
+            "0000000000000000"
+          ],
+          [
+            "k",
+            "0000000000909a40"
+          ]
+        ],
+        "trail_distance": [
+          "+",
+          [
+            "k",
+            "0000000000000000"
+          ],
+          [
+            "k",
+            "0000000000008940"
+          ]
+        ],
+        "trail_start": [
+          "k",
+          "0000000000407f40"
+        ],
+        "trail_limit": [
+          "k",
+          "0000000000006940"
+        ],
+        "trail_step": [
+          "k",
+          "9a9999999999b93f"
+        ],
+        "aux_offset": [
+          "k",
+          "0000000000000000"
+        ]
+      },
+      "unresolved_registers": {},
+      "unresolved_before_last_profile_write": {},
+      "last_profile_write_ordinal": 91,
+      "instructions": [
+        "0x14104",
+        "0x1410e",
+        "0x14118",
+        "0x1411c",
+        "0x14126",
+        "0x1412e",
+        "0x14137",
+        "0x1413a",
+        "0x14144",
+        "0x1414b",
+        "0x14155",
+        "0x1415b",
+        "0x14161",
+        "0x1416b",
+        "0x14172",
+        "0x14175",
+        "0x1417f",
+        "0x14189",
+        "0x1418d",
+        "0x14197",
+        "0x1419b",
+        "0x1419f",
+        "0x141a3",
+        "0x141a7",
+        "0x14228",
+        "0x14232",
+        "0x1423c",
+        "0x14246",
+        "0x1424a",
+        "0x1424d",
+        "0x14257",
+        "0x14261",
+        "0x14265",
+        "0x1426f",
+        "0x14272",
+        "0x1427c",
+        "0x14286",
+        "0x1428c",
+        "0x14296",
+        "0x1429c",
+        "0x142a6",
+        "0x142a9",
+        "0x142b3",
+        "0x142b6",
+        "0x142ba",
+        "0x142be",
+        "0x142c2",
+        "0x142c6",
+        "0x142cc",
+        "0x142d0",
+        "0x142da",
+        "0x142de",
+        "0x14495",
+        "0x1449f",
+        "0x144a9",
+        "0x144b3",
+        "0x144b7",
+        "0x144bb",
+        "0x144c5",
+        "0x144cf",
+        "0x144d3",
+        "0x144dd",
+        "0x144e1",
+        "0x144e5",
+        "0x144ef",
+        "0x144f9",
+        "0x144fc",
+        "0x14506",
+        "0x1450a",
+        "0x1450e",
+        "0x14518",
+        "0x1451c",
+        "0x14526",
+        "0x14530",
+        "0x1453a",
+        "0x14544",
+        "0x14547",
+        "0x14551",
+        "0x14554",
+        "0x1455e",
+        "0x14562",
+        "0x14565",
+        "0x1456f",
+        "0x14575",
+        "0x1457f",
+        "0x14585",
+        "0x1458f",
+        "0x14595",
+        "0x1459f",
+        "0x145a6",
+        "0x145b0"
+      ]
+    },
+    {
+      "index": 4,
+      "hl": 1,
+      "start_rva": "0x147fe",
+      "first_call_rva": null,
+      "stop_details": {
+        "reason": "required_fields_complete",
+        "rva": "0x14ccc",
+        "ordinal": 96
+      },
+      "seed_before": 1,
+      "seed_after": 1,
+      "values": {
+        "reference": 28.0,
+        "entry.confirmation_frame": 16408,
+        "entry.hour1_flag": 1,
+        "entry.older_width": 15,
+        "entry.recent_width": 3,
+        "entry.last_shift": 230,
+        "entry.gap_points": 550.0,
+        "buy_offset": -170.0,
+        "sell_offset": -70.0,
+        "nearby_radius": 480.0,
+        "expiration_hours": 480,
+        "stop_distance": 1100.0,
+        "target_distance": 1700.0,
+        "trail_distance": 500.0,
+        "trail_start": 300.0,
+        "trail_limit": 200.0,
+        "trail_step": 0.1,
+        "aux_hour1": 1,
+        "aux_scan50": 1,
+        "aux_older": 1,
+        "aux_recent": 4,
+        "aux_offset": 6.0
+      },
+      "raw_fields": {
+        "reference": "0000000000003c40",
+        "entry.confirmation_frame": "18400000",
+        "entry.hour1_flag": "01",
+        "entry.older_width": "0f000000",
+        "entry.recent_width": "03000000",
+        "entry.last_shift": "e6000000",
+        "entry.gap_points": "0000000000308140",
+        "buy_offset": "00000000004065c0",
+        "sell_offset": "00000000008051c0",
+        "nearby_radius": "0000000000007e40",
+        "expiration_hours": "e0010000",
+        "stop_distance": "0000000000309140",
+        "target_distance": "0000000000909a40",
+        "trail_distance": "0000000000407f40",
+        "trail_start": "0000000000c07240",
+        "trail_limit": "0000000000006940",
+        "trail_step": "9a9999999999b93f",
+        "aux_hour1": "01",
+        "aux_scan50": "01",
+        "aux_older": "01000000",
+        "aux_recent": "04000000",
+        "aux_offset": "0000000000001840"
+      },
+      "writes": [
+        {
+          "rva": "0x62280",
+          "size": 1,
+          "before_bits": "01",
+          "bits": "01",
+          "instruction": "0x14831",
+          "instruction_ordinal": 7,
+          "expression": null
+        },
+        {
+          "rva": "0x62284",
+          "size": 4,
+          "before_bits": "0a000000",
+          "bits": "0f000000",
+          "instruction": "0x14834",
+          "instruction_ordinal": 8,
+          "expression": null
+        },
+        {
+          "rva": "0x6227c",
+          "size": 4,
+          "before_bits": "00000000",
+          "bits": "18400000",
+          "instruction": "0x1484e",
+          "instruction_ordinal": 11,
+          "expression": null
+        },
+        {
+          "rva": "0x62288",
+          "size": 4,
+          "before_bits": "03000000",
+          "bits": "03000000",
+          "instruction": "0x14854",
+          "instruction_ordinal": 12,
+          "expression": null
+        },
+        {
+          "rva": "0x6228c",
+          "size": 4,
+          "before_bits": "78000000",
+          "bits": "e6000000",
+          "instruction": "0x1485a",
+          "instruction_ordinal": 13,
+          "expression": null
+        },
+        {
+          "rva": "0x62290",
+          "size": 8,
+          "before_bits": "0000000000003e40",
+          "bits": "0000000000308140",
+          "instruction": "0x14874",
+          "instruction_ordinal": 16,
+          "expression": [
+            "k",
+            "0000000000308140"
+          ]
+        },
+        {
+          "rva": "0x622a8",
+          "size": 1,
+          "before_bits": "01",
+          "bits": "01",
+          "instruction": "0x1494d",
+          "instruction_ordinal": 30,
+          "expression": null
+        },
+        {
+          "rva": "0x62298",
+          "size": 8,
+          "before_bits": "000000000000e03f",
+          "bits": "00000000004065c0",
+          "instruction": "0x1495a",
+          "instruction_ordinal": 32,
+          "expression": [
+            "+",
+            [
+              "k",
+              "00000000004065c0"
+            ],
+            [
+              "k",
+              "0000000000000000"
+            ]
+          ]
+        },
+        {
+          "rva": "0x622b0",
+          "size": 8,
+          "before_bits": "000000000000f03f",
+          "bits": "0000000000007e40",
+          "instruction": "0x14968",
+          "instruction_ordinal": 34,
+          "expression": [
+            "k",
+            "0000000000007e40"
+          ]
+        },
+        {
+          "rva": "0x622b8",
+          "size": 4,
+          "before_bits": "18000000",
+          "bits": "e0010000",
+          "instruction": "0x1497f",
+          "instruction_ordinal": 37,
+          "expression": null
+        },
+        {
+          "rva": "0x622ec",
+          "size": 4,
+          "before_bits": "01000000",
+          "bits": "01000000",
+          "instruction": "0x1498f",
+          "instruction_ordinal": 39,
+          "expression": null
+        },
+        {
+          "rva": "0x622f0",
+          "size": 1,
+          "before_bits": "01",
+          "bits": "01",
+          "instruction": "0x1499f",
+          "instruction_ordinal": 41,
+          "expression": null
+        },
+        {
+          "rva": "0x622a0",
+          "size": 8,
+          "before_bits": "0000000000000000",
+          "bits": "00000000008051c0",
+          "instruction": "0x149b7",
+          "instruction_ordinal": 46,
+          "expression": [
+            "+",
+            [
+              "+",
+              [
+                "k",
+                "0000000000000000"
+              ],
+              [
+                "k",
+                "00000000008051c0"
+              ]
+            ],
+            [
+              "k",
+              "0000000000000000"
+            ]
+          ]
+        },
+        {
+          "rva": "0x622f8",
+          "size": 8,
+          "before_bits": "0000000000004940",
+          "bits": "0000000000309140",
+          "instruction": "0x14bb0",
+          "instruction_ordinal": 57,
+          "expression": [
+            "+",
+            [
+              "k",
+              "0000000000000000"
+            ],
+            [
+              "k",
+              "0000000000309140"
+            ]
+          ]
+        },
+        {
+          "rva": "0x62300",
+          "size": 8,
+          "before_bits": "0000000000005940",
+          "bits": "0000000000909a40",
+          "instruction": "0x14bd6",
+          "instruction_ordinal": 62,
+          "expression": [
+            "+",
+            [
+              "k",
+              "0000000000000000"
+            ],
+            [
+              "k",
+              "0000000000909a40"
+            ]
+          ]
+        },
+        {
+          "rva": "0x62320",
+          "size": 8,
+          "before_bits": "0000000000002440",
+          "bits": "0000000000c07240",
+          "instruction": "0x14bf2",
+          "instruction_ordinal": 66,
+          "expression": [
+            "k",
+            "0000000000c07240"
+          ]
+        },
+        {
+          "rva": "0x62318",
+          "size": 8,
+          "before_bits": "0000000000002440",
+          "bits": "0000000000407f40",
+          "instruction": "0x14c11",
+          "instruction_ordinal": 71,
+          "expression": [
+            "+",
+            [
+              "k",
+              "0000000000000000"
+            ],
+            [
+              "k",
+              "0000000000407f40"
+            ]
+          ]
+        },
+        {
+          "rva": "0x62330",
+          "size": 8,
+          "before_bits": "9a9999999999d93f",
+          "bits": "9a9999999999b93f",
+          "instruction": "0x14c33",
+          "instruction_ordinal": 75,
+          "expression": [
+            "k",
+            "9a9999999999b93f"
+          ]
+        },
+        {
+          "rva": "0x62328",
+          "size": 8,
+          "before_bits": "0000000000005940",
+          "bits": "0000000000006940",
+          "instruction": "0x14c4a",
+          "instruction_ordinal": 78,
+          "expression": [
+            "k",
+            "0000000000006940"
+          ]
+        },
+        {
+          "rva": "0x62354",
+          "size": 1,
+          "before_bits": "00",
+          "bits": "01",
+          "instruction": "0x14c58",
+          "instruction_ordinal": 80,
+          "expression": null
+        },
+        {
+          "rva": "0x62355",
+          "size": 1,
+          "before_bits": "00",
+          "bits": "01",
+          "instruction": "0x14c65",
+          "instruction_ordinal": 82,
+          "expression": null
+        },
+        {
+          "rva": "0x62358",
+          "size": 4,
+          "before_bits": "00000000",
+          "bits": "01000000",
+          "instruction": "0x14c72",
+          "instruction_ordinal": 84,
+          "expression": null
+        },
+        {
+          "rva": "0x6235c",
+          "size": 4,
+          "before_bits": "00000000",
+          "bits": "04000000",
+          "instruction": "0x14c82",
+          "instruction_ordinal": 86,
+          "expression": null
+        },
+        {
+          "rva": "0x62360",
+          "size": 4,
+          "before_bits": "00000000",
+          "bits": "58020000",
+          "instruction": "0x14c92",
+          "instruction_ordinal": 88,
+          "expression": null
+        },
+        {
+          "rva": "0x62368",
+          "size": 8,
+          "before_bits": "0000000000000000",
+          "bits": "0000000000001840",
+          "instruction": "0x14ca2",
+          "instruction_ordinal": 90,
+          "expression": [
+            "k",
+            "0000000000001840"
+          ]
+        },
+        {
+          "rva": "0x62180",
+          "size": 8,
+          "before_bits": "0000000000000000",
+          "bits": "0000000000003c40",
+          "instruction": "0x14cc9",
+          "instruction_ordinal": 95,
+          "expression": [
+            "k",
+            "0000000000003c40"
+          ]
+        }
+      ],
+      "required_field_count": 22,
+      "required_field_bytes_written": 127,
+      "scope_write_bytes": 137,
+      "preload_details": [],
+      "read_before_write_events": [],
+      "random_word_conversion_order": [],
+      "float_expressions": {
+        "reference": [
+          "k",
+          "0000000000003c40"
+        ],
+        "entry.gap_points": [
+          "k",
+          "0000000000308140"
+        ],
+        "buy_offset": [
+          "+",
+          [
+            "k",
+            "00000000004065c0"
+          ],
+          [
+            "k",
+            "0000000000000000"
+          ]
+        ],
+        "sell_offset": [
+          "+",
+          [
+            "+",
+            [
+              "k",
+              "0000000000000000"
+            ],
+            [
+              "k",
+              "00000000008051c0"
+            ]
+          ],
+          [
+            "k",
+            "0000000000000000"
+          ]
+        ],
+        "nearby_radius": [
+          "k",
+          "0000000000007e40"
+        ],
+        "stop_distance": [
+          "+",
+          [
+            "k",
+            "0000000000000000"
+          ],
+          [
+            "k",
+            "0000000000309140"
+          ]
+        ],
+        "target_distance": [
+          "+",
+          [
+            "k",
+            "0000000000000000"
+          ],
+          [
+            "k",
+            "0000000000909a40"
+          ]
+        ],
+        "trail_distance": [
+          "+",
+          [
+            "k",
+            "0000000000000000"
+          ],
+          [
+            "k",
+            "0000000000407f40"
+          ]
+        ],
+        "trail_start": [
+          "k",
+          "0000000000c07240"
+        ],
+        "trail_limit": [
+          "k",
+          "0000000000006940"
+        ],
+        "trail_step": [
+          "k",
+          "9a9999999999b93f"
+        ],
+        "aux_offset": [
+          "k",
+          "0000000000001840"
+        ]
+      },
+      "unresolved_registers": {},
+      "unresolved_before_last_profile_write": {},
+      "last_profile_write_ordinal": 95,
+      "instructions": [
+        "0x147fe",
+        "0x14808",
+        "0x14812",
+        "0x14816",
+        "0x14820",
+        "0x14828",
+        "0x14831",
+        "0x14834",
+        "0x1483a",
+        "0x14844",
+        "0x1484e",
+        "0x14854",
+        "0x1485a",
+        "0x14860",
+        "0x1486a",
+        "0x14874",
+        "0x14877",
+        "0x14881",
+        "0x1488b",
+        "0x1488f",
+        "0x14899",
+        "0x1489d",
+        "0x148a1",
+        "0x148a5",
+        "0x148a9",
+        "0x1492a",
+        "0x14934",
+        "0x1493e",
+        "0x14943",
+        "0x1494d",
+        "0x14950",
+        "0x1495a",
+        "0x1495e",
+        "0x14968",
+        "0x1496b",
+        "0x14975",
+        "0x1497f",
+        "0x14985",
+        "0x1498f",
+        "0x14995",
+        "0x1499f",
+        "0x149a2",
+        "0x149ac",
+        "0x149af",
+        "0x149b3",
+        "0x149b7",
+        "0x149bb",
+        "0x149bf",
+        "0x149c5",
+        "0x149c9",
+        "0x149d3",
+        "0x149d7",
+        "0x14b8e",
+        "0x14b98",
+        "0x14ba2",
+        "0x14bac",
+        "0x14bb0",
+        "0x14bb4",
+        "0x14bbe",
+        "0x14bc8",
+        "0x14bcc",
+        "0x14bd6",
+        "0x14bda",
+        "0x14bde",
+        "0x14be8",
+        "0x14bf2",
+        "0x14bf5",
+        "0x14bff",
+        "0x14c03",
+        "0x14c07",
+        "0x14c11",
+        "0x14c15",
+        "0x14c1f",
+        "0x14c29",
+        "0x14c33",
+        "0x14c36",
+        "0x14c40",
+        "0x14c4a",
+        "0x14c4e",
+        "0x14c58",
+        "0x14c5b",
+        "0x14c65",
+        "0x14c68",
+        "0x14c72",
+        "0x14c78",
+        "0x14c82",
+        "0x14c88",
+        "0x14c92",
+        "0x14c98",
+        "0x14ca2",
+        "0x14ca5",
+        "0x14caf",
+        "0x14cb9",
+        "0x14cbf",
+        "0x14cc9"
+      ]
+    },
+    {
+      "index": 5,
+      "hl": 1,
+      "start_rva": "0x14f29",
+      "first_call_rva": null,
+      "stop_details": {
+        "reason": "required_fields_complete",
+        "rva": "0x155e0",
+        "ordinal": 93
+      },
+      "seed_before": 1,
+      "seed_after": 1,
+      "values": {
+        "reference": 33.0,
+        "entry.confirmation_frame": 16408,
+        "entry.hour1_flag": 1,
+        "entry.older_width": 12,
+        "entry.recent_width": 2,
+        "entry.last_shift": 50,
+        "entry.gap_points": 700.0,
+        "buy_offset": 20.0,
+        "sell_offset": -70.0,
+        "nearby_radius": 30.0,
+        "expiration_hours": 384,
+        "stop_distance": 1600.0,
+        "target_distance": 1900.0,
+        "trail_distance": 600.0,
+        "trail_start": 500.0,
+        "trail_limit": 1000.0,
+        "trail_step": 0.1,
+        "aux_hour1": 1,
+        "aux_scan50": 1,
+        "aux_older": 1,
+        "aux_recent": 2,
+        "aux_offset": 0.0
+      },
+      "raw_fields": {
+        "reference": "0000000000804040",
+        "entry.confirmation_frame": "18400000",
+        "entry.hour1_flag": "01",
+        "entry.older_width": "0c000000",
+        "entry.recent_width": "02000000",
+        "entry.last_shift": "32000000",
+        "entry.gap_points": "0000000000e08540",
+        "buy_offset": "0000000000003440",
+        "sell_offset": "00000000008051c0",
+        "nearby_radius": "0000000000003e40",
+        "expiration_hours": "80010000",
+        "stop_distance": "0000000000009940",
+        "target_distance": "0000000000b09d40",
+        "trail_distance": "0000000000c08240",
+        "trail_start": "0000000000407f40",
+        "trail_limit": "0000000000408f40",
+        "trail_step": "9a9999999999b93f",
+        "aux_hour1": "01",
+        "aux_scan50": "01",
+        "aux_older": "01000000",
+        "aux_recent": "02000000",
+        "aux_offset": "0000000000000000"
+      },
+      "writes": [
+        {
+          "rva": "0x62280",
+          "size": 1,
+          "before_bits": "01",
+          "bits": "01",
+          "instruction": "0x14f5c",
+          "instruction_ordinal": 7,
+          "expression": null
+        },
+        {
+          "rva": "0x62284",
+          "size": 4,
+          "before_bits": "0a000000",
+          "bits": "0c000000",
+          "instruction": "0x14f5f",
+          "instruction_ordinal": 8,
+          "expression": null
+        },
+        {
+          "rva": "0x6227c",
+          "size": 4,
+          "before_bits": "00000000",
+          "bits": "18400000",
+          "instruction": "0x14f79",
+          "instruction_ordinal": 11,
+          "expression": null
+        },
+        {
+          "rva": "0x62288",
+          "size": 4,
+          "before_bits": "03000000",
+          "bits": "02000000",
+          "instruction": "0x14f7f",
+          "instruction_ordinal": 12,
+          "expression": null
+        },
+        {
+          "rva": "0x6228c",
+          "size": 4,
+          "before_bits": "78000000",
+          "bits": "32000000",
+          "instruction": "0x14f85",
+          "instruction_ordinal": 13,
+          "expression": null
+        },
+        {
+          "rva": "0x62290",
+          "size": 8,
+          "before_bits": "0000000000003e40",
+          "bits": "0000000000e08540",
+          "instruction": "0x14f9f",
+          "instruction_ordinal": 16,
+          "expression": [
+            "k",
+            "0000000000e08540"
+          ]
+        },
+        {
+          "rva": "0x622a8",
+          "size": 1,
+          "before_bits": "01",
+          "bits": "01",
+          "instruction": "0x15078",
+          "instruction_ordinal": 30,
+          "expression": null
+        },
+        {
+          "rva": "0x62298",
+          "size": 8,
+          "before_bits": "000000000000e03f",
+          "bits": "0000000000003440",
+          "instruction": "0x15085",
+          "instruction_ordinal": 32,
+          "expression": [
+            "+",
+            [
+              "k",
+              "0000000000003440"
+            ],
+            [
+              "k",
+              "0000000000000000"
+            ]
+          ]
+        },
+        {
+          "rva": "0x622b0",
+          "size": 8,
+          "before_bits": "000000000000f03f",
+          "bits": "0000000000003e40",
+          "instruction": "0x15093",
+          "instruction_ordinal": 34,
+          "expression": [
+            "k",
+            "0000000000003e40"
+          ]
+        },
+        {
+          "rva": "0x622b8",
+          "size": 4,
+          "before_bits": "18000000",
+          "bits": "80010000",
+          "instruction": "0x150aa",
+          "instruction_ordinal": 37,
+          "expression": null
+        },
+        {
+          "rva": "0x622ec",
+          "size": 4,
+          "before_bits": "01000000",
+          "bits": "01000000",
+          "instruction": "0x150ba",
+          "instruction_ordinal": 39,
+          "expression": null
+        },
+        {
+          "rva": "0x622f0",
+          "size": 1,
+          "before_bits": "01",
+          "bits": "01",
+          "instruction": "0x150ca",
+          "instruction_ordinal": 41,
+          "expression": null
+        },
+        {
+          "rva": "0x622a0",
+          "size": 8,
+          "before_bits": "0000000000000000",
+          "bits": "00000000008051c0",
+          "instruction": "0x150e2",
+          "instruction_ordinal": 46,
+          "expression": [
+            "+",
+            [
+              "+",
+              [
+                "k",
+                "0000000000000000"
+              ],
+              [
+                "k",
+                "00000000008051c0"
+              ]
+            ],
+            [
+              "k",
+              "0000000000000000"
+            ]
+          ]
+        },
+        {
+          "rva": "0x622f8",
+          "size": 8,
+          "before_bits": "0000000000004940",
+          "bits": "0000000000009940",
+          "instruction": "0x15464",
+          "instruction_ordinal": 57,
+          "expression": [
+            "+",
+            [
+              "k",
+              "0000000000000000"
+            ],
+            [
+              "k",
+              "0000000000009940"
+            ]
+          ]
+        },
+        {
+          "rva": "0x62300",
+          "size": 8,
+          "before_bits": "0000000000005940",
+          "bits": "0000000000b09d40",
+          "instruction": "0x1548a",
+          "instruction_ordinal": 62,
+          "expression": [
+            "+",
+            [
+              "k",
+              "0000000000000000"
+            ],
+            [
+              "k",
+              "0000000000b09d40"
+            ]
+          ]
+        },
+        {
+          "rva": "0x62320",
+          "size": 8,
+          "before_bits": "0000000000002440",
+          "bits": "0000000000407f40",
+          "instruction": "0x154a6",
+          "instruction_ordinal": 66,
+          "expression": [
+            "k",
+            "0000000000407f40"
+          ]
+        },
+        {
+          "rva": "0x62318",
+          "size": 8,
+          "before_bits": "0000000000002440",
+          "bits": "0000000000c08240",
+          "instruction": "0x154c5",
+          "instruction_ordinal": 71,
+          "expression": [
+            "+",
+            [
+              "k",
+              "0000000000000000"
+            ],
+            [
+              "k",
+              "0000000000c08240"
+            ]
+          ]
+        },
+        {
+          "rva": "0x62330",
+          "size": 8,
+          "before_bits": "9a9999999999d93f",
+          "bits": "9a9999999999b93f",
+          "instruction": "0x15571",
+          "instruction_ordinal": 77,
+          "expression": [
+            "k",
+            "9a9999999999b93f"
+          ]
+        },
+        {
+          "rva": "0x62354",
+          "size": 1,
+          "before_bits": "00",
+          "bits": "01",
+          "instruction": "0x1557e",
+          "instruction_ordinal": 79,
+          "expression": null
+        },
+        {
+          "rva": "0x62328",
+          "size": 8,
+          "before_bits": "0000000000005940",
+          "bits": "0000000000408f40",
+          "instruction": "0x1558b",
+          "instruction_ordinal": 81,
+          "expression": [
+            "k",
+            "0000000000408f40"
+          ]
+        },
+        {
+          "rva": "0x62355",
+          "size": 1,
+          "before_bits": "00",
+          "bits": "01",
+          "instruction": "0x1558f",
+          "instruction_ordinal": 82,
+          "expression": null
+        },
+        {
+          "rva": "0x62358",
+          "size": 4,
+          "before_bits": "00000000",
+          "bits": "01000000",
+          "instruction": "0x1559c",
+          "instruction_ordinal": 84,
+          "expression": null
+        },
+        {
+          "rva": "0x6235c",
+          "size": 4,
+          "before_bits": "00000000",
+          "bits": "02000000",
+          "instruction": "0x155ac",
+          "instruction_ordinal": 86,
+          "expression": null
+        },
+        {
+          "rva": "0x62360",
+          "size": 4,
+          "before_bits": "00000000",
+          "bits": "2c010000",
+          "instruction": "0x155bc",
+          "instruction_ordinal": 88,
+          "expression": null
+        },
+        {
+          "rva": "0x62368",
+          "size": 8,
+          "before_bits": "0000000000000000",
+          "bits": "0000000000000000",
+          "instruction": "0x155cc",
+          "instruction_ordinal": 90,
+          "expression": [
+            "k",
+            "0000000000000000"
+          ]
+        },
+        {
+          "rva": "0x62180",
+          "size": 8,
+          "before_bits": "0000000000000000",
+          "bits": "0000000000804040",
+          "instruction": "0x155dd",
+          "instruction_ordinal": 92,
+          "expression": [
+            "k",
+            "0000000000804040"
+          ]
+        }
+      ],
+      "required_field_count": 22,
+      "required_field_bytes_written": 127,
+      "scope_write_bytes": 137,
+      "preload_details": [
+        {
+          "rva": "0x14eb1",
+          "opcode": "movabs",
+          "operands": "r8, 0x23e5aa5ff00",
+          "defined": [
+            "r8"
+          ]
+        }
+      ],
+      "read_before_write_events": [],
+      "random_word_conversion_order": [],
+      "float_expressions": {
+        "reference": [
+          "k",
+          "0000000000804040"
+        ],
+        "entry.gap_points": [
+          "k",
+          "0000000000e08540"
+        ],
+        "buy_offset": [
+          "+",
+          [
+            "k",
+            "0000000000003440"
+          ],
+          [
+            "k",
+            "0000000000000000"
+          ]
+        ],
+        "sell_offset": [
+          "+",
+          [
+            "+",
+            [
+              "k",
+              "0000000000000000"
+            ],
+            [
+              "k",
+              "00000000008051c0"
+            ]
+          ],
+          [
+            "k",
+            "0000000000000000"
+          ]
+        ],
+        "nearby_radius": [
+          "k",
+          "0000000000003e40"
+        ],
+        "stop_distance": [
+          "+",
+          [
+            "k",
+            "0000000000000000"
+          ],
+          [
+            "k",
+            "0000000000009940"
+          ]
+        ],
+        "target_distance": [
+          "+",
+          [
+            "k",
+            "0000000000000000"
+          ],
+          [
+            "k",
+            "0000000000b09d40"
+          ]
+        ],
+        "trail_distance": [
+          "+",
+          [
+            "k",
+            "0000000000000000"
+          ],
+          [
+            "k",
+            "0000000000c08240"
+          ]
+        ],
+        "trail_start": [
+          "k",
+          "0000000000407f40"
+        ],
+        "trail_limit": [
+          "k",
+          "0000000000408f40"
+        ],
+        "trail_step": [
+          "k",
+          "9a9999999999b93f"
+        ],
+        "aux_offset": [
+          "k",
+          "0000000000000000"
+        ]
+      },
+      "unresolved_registers": {},
+      "unresolved_before_last_profile_write": {},
+      "last_profile_write_ordinal": 92,
+      "instructions": [
+        "0x14f29",
+        "0x14f33",
+        "0x14f3d",
+        "0x14f41",
+        "0x14f4b",
+        "0x14f53",
+        "0x14f5c",
+        "0x14f5f",
+        "0x14f65",
+        "0x14f6f",
+        "0x14f79",
+        "0x14f7f",
+        "0x14f85",
+        "0x14f8b",
+        "0x14f95",
+        "0x14f9f",
+        "0x14fa2",
+        "0x14fac",
+        "0x14fb6",
+        "0x14fba",
+        "0x14fc4",
+        "0x14fc8",
+        "0x14fcc",
+        "0x14fd0",
+        "0x14fd4",
+        "0x15055",
+        "0x1505f",
+        "0x15069",
+        "0x1506e",
+        "0x15078",
+        "0x1507b",
+        "0x15085",
+        "0x15089",
+        "0x15093",
+        "0x15096",
+        "0x150a0",
+        "0x150aa",
+        "0x150b0",
+        "0x150ba",
+        "0x150c0",
+        "0x150ca",
+        "0x150cd",
+        "0x150d7",
+        "0x150da",
+        "0x150de",
+        "0x150e2",
+        "0x150e6",
+        "0x150ea",
+        "0x150f0",
+        "0x150fa",
+        "0x150fe",
+        "0x15102",
+        "0x15442",
+        "0x1544c",
+        "0x15456",
+        "0x15460",
+        "0x15464",
+        "0x15468",
+        "0x15472",
+        "0x1547c",
+        "0x15480",
+        "0x1548a",
+        "0x1548e",
+        "0x15492",
+        "0x1549c",
+        "0x154a6",
+        "0x154a9",
+        "0x154b3",
+        "0x154b7",
+        "0x154bb",
+        "0x154c5",
+        "0x154c9",
+        "0x15549",
+        "0x15553",
+        "0x1555d",
+        "0x15567",
+        "0x15571",
+        "0x15574",
+        "0x1557e",
+        "0x15581",
+        "0x1558b",
+        "0x1558f",
+        "0x15592",
+        "0x1559c",
+        "0x155a2",
+        "0x155ac",
+        "0x155b2",
+        "0x155bc",
+        "0x155c2",
+        "0x155cc",
+        "0x155d3",
+        "0x155dd"
+      ]
+    },
+    {
+      "index": 6,
+      "hl": 1,
+      "start_rva": "0x15821",
+      "first_call_rva": null,
+      "stop_details": {
+        "reason": "required_fields_complete",
+        "rva": "0x15cda",
+        "ordinal": 96
+      },
+      "seed_before": 1,
+      "seed_after": 1,
+      "values": {
+        "reference": 27.5,
+        "entry.confirmation_frame": 16408,
+        "entry.hour1_flag": 1,
+        "entry.older_width": 17,
+        "entry.recent_width": 2,
+        "entry.last_shift": 110,
+        "entry.gap_points": 150.0,
+        "buy_offset": -40.0,
+        "sell_offset": -140.0,
+        "nearby_radius": 280.0,
+        "expiration_hours": 240,
+        "stop_distance": 1200.0,
+        "target_distance": 1600.0,
+        "trail_distance": 600.0,
+        "trail_start": 200.0,
+        "trail_limit": 4400.0,
+        "trail_step": 0.1,
+        "aux_hour1": 1,
+        "aux_scan50": 1,
+        "aux_older": 5,
+        "aux_recent": 2,
+        "aux_offset": 14.0
+      },
+      "raw_fields": {
+        "reference": "0000000000803b40",
+        "entry.confirmation_frame": "18400000",
+        "entry.hour1_flag": "01",
+        "entry.older_width": "11000000",
+        "entry.recent_width": "02000000",
+        "entry.last_shift": "6e000000",
+        "entry.gap_points": "0000000000c06240",
+        "buy_offset": "00000000000044c0",
+        "sell_offset": "00000000008061c0",
+        "nearby_radius": "0000000000807140",
+        "expiration_hours": "f0000000",
+        "stop_distance": "0000000000c09240",
+        "target_distance": "0000000000009940",
+        "trail_distance": "0000000000c08240",
+        "trail_start": "0000000000006940",
+        "trail_limit": "000000000030b140",
+        "trail_step": "9a9999999999b93f",
+        "aux_hour1": "01",
+        "aux_scan50": "01",
+        "aux_older": "05000000",
+        "aux_recent": "02000000",
+        "aux_offset": "0000000000002c40"
+      },
+      "writes": [
+        {
+          "rva": "0x62280",
+          "size": 1,
+          "before_bits": "01",
+          "bits": "01",
+          "instruction": "0x15854",
+          "instruction_ordinal": 7,
+          "expression": null
+        },
+        {
+          "rva": "0x62284",
+          "size": 4,
+          "before_bits": "0a000000",
+          "bits": "11000000",
+          "instruction": "0x15857",
+          "instruction_ordinal": 8,
+          "expression": null
+        },
+        {
+          "rva": "0x6227c",
+          "size": 4,
+          "before_bits": "00000000",
+          "bits": "18400000",
+          "instruction": "0x15871",
+          "instruction_ordinal": 11,
+          "expression": null
+        },
+        {
+          "rva": "0x62288",
+          "size": 4,
+          "before_bits": "03000000",
+          "bits": "02000000",
+          "instruction": "0x15877",
+          "instruction_ordinal": 12,
+          "expression": null
+        },
+        {
+          "rva": "0x6228c",
+          "size": 4,
+          "before_bits": "78000000",
+          "bits": "6e000000",
+          "instruction": "0x1587d",
+          "instruction_ordinal": 13,
+          "expression": null
+        },
+        {
+          "rva": "0x62290",
+          "size": 8,
+          "before_bits": "0000000000003e40",
+          "bits": "0000000000c06240",
+          "instruction": "0x15897",
+          "instruction_ordinal": 16,
+          "expression": [
+            "k",
+            "0000000000c06240"
+          ]
+        },
+        {
+          "rva": "0x622a8",
+          "size": 1,
+          "before_bits": "01",
+          "bits": "01",
+          "instruction": "0x1596f",
+          "instruction_ordinal": 30,
+          "expression": null
+        },
+        {
+          "rva": "0x62298",
+          "size": 8,
+          "before_bits": "000000000000e03f",
+          "bits": "00000000000044c0",
+          "instruction": "0x15986",
+          "instruction_ordinal": 33,
+          "expression": [
+            "+",
+            [
+              "k",
+              "00000000000044c0"
+            ],
+            [
+              "k",
+              "0000000000000000"
+            ]
+          ]
+        },
+        {
+          "rva": "0x622b0",
+          "size": 8,
+          "before_bits": "000000000000f03f",
+          "bits": "0000000000807140",
+          "instruction": "0x15994",
+          "instruction_ordinal": 35,
+          "expression": [
+            "k",
+            "0000000000807140"
+          ]
+        },
+        {
+          "rva": "0x622b8",
+          "size": 4,
+          "before_bits": "18000000",
+          "bits": "f0000000",
+          "instruction": "0x159ab",
+          "instruction_ordinal": 38,
+          "expression": null
+        },
+        {
+          "rva": "0x622ec",
+          "size": 4,
+          "before_bits": "01000000",
+          "bits": "01000000",
+          "instruction": "0x159bb",
+          "instruction_ordinal": 40,
+          "expression": null
+        },
+        {
+          "rva": "0x622f0",
+          "size": 1,
+          "before_bits": "01",
+          "bits": "01",
+          "instruction": "0x159cb",
+          "instruction_ordinal": 42,
+          "expression": null
+        },
+        {
+          "rva": "0x622a0",
+          "size": 8,
+          "before_bits": "0000000000000000",
+          "bits": "00000000008061c0",
+          "instruction": "0x159e3",
+          "instruction_ordinal": 47,
+          "expression": [
+            "+",
+            [
+              "+",
+              [
+                "k",
+                "0000000000000000"
+              ],
+              [
+                "k",
+                "00000000008061c0"
+              ]
+            ],
+            [
+              "k",
+              "0000000000000000"
+            ]
+          ]
+        },
+        {
+          "rva": "0x622f8",
+          "size": 8,
+          "before_bits": "0000000000004940",
+          "bits": "0000000000c09240",
+          "instruction": "0x15bbe",
+          "instruction_ordinal": 57,
+          "expression": [
+            "+",
+            [
+              "k",
+              "0000000000000000"
+            ],
+            [
+              "k",
+              "0000000000c09240"
+            ]
+          ]
+        },
+        {
+          "rva": "0x62300",
+          "size": 8,
+          "before_bits": "0000000000005940",
+          "bits": "0000000000009940",
+          "instruction": "0x15be4",
+          "instruction_ordinal": 62,
+          "expression": [
+            "+",
+            [
+              "k",
+              "0000000000000000"
+            ],
+            [
+              "k",
+              "0000000000009940"
+            ]
+          ]
+        },
+        {
+          "rva": "0x62320",
+          "size": 8,
+          "before_bits": "0000000000002440",
+          "bits": "0000000000006940",
+          "instruction": "0x15c00",
+          "instruction_ordinal": 66,
+          "expression": [
+            "k",
+            "0000000000006940"
+          ]
+        },
+        {
+          "rva": "0x62318",
+          "size": 8,
+          "before_bits": "0000000000002440",
+          "bits": "0000000000c08240",
+          "instruction": "0x15c1f",
+          "instruction_ordinal": 71,
+          "expression": [
+            "+",
+            [
+              "k",
+              "0000000000000000"
+            ],
+            [
+              "k",
+              "0000000000c08240"
+            ]
+          ]
+        },
+        {
+          "rva": "0x62330",
+          "size": 8,
+          "before_bits": "9a9999999999d93f",
+          "bits": "9a9999999999b93f",
+          "instruction": "0x15c41",
+          "instruction_ordinal": 75,
+          "expression": [
+            "k",
+            "9a9999999999b93f"
+          ]
+        },
+        {
+          "rva": "0x62328",
+          "size": 8,
+          "before_bits": "0000000000005940",
+          "bits": "000000000030b140",
+          "instruction": "0x15c58",
+          "instruction_ordinal": 78,
+          "expression": [
+            "k",
+            "000000000030b140"
+          ]
+        },
+        {
+          "rva": "0x62354",
+          "size": 1,
+          "before_bits": "00",
+          "bits": "01",
+          "instruction": "0x15c66",
+          "instruction_ordinal": 80,
+          "expression": null
+        },
+        {
+          "rva": "0x62355",
+          "size": 1,
+          "before_bits": "00",
+          "bits": "01",
+          "instruction": "0x15c73",
+          "instruction_ordinal": 82,
+          "expression": null
+        },
+        {
+          "rva": "0x62358",
+          "size": 4,
+          "before_bits": "00000000",
+          "bits": "05000000",
+          "instruction": "0x15c80",
+          "instruction_ordinal": 84,
+          "expression": null
+        },
+        {
+          "rva": "0x6235c",
+          "size": 4,
+          "before_bits": "00000000",
+          "bits": "02000000",
+          "instruction": "0x15c90",
+          "instruction_ordinal": 86,
+          "expression": null
+        },
+        {
+          "rva": "0x62360",
+          "size": 4,
+          "before_bits": "00000000",
+          "bits": "64000000",
+          "instruction": "0x15ca0",
+          "instruction_ordinal": 88,
+          "expression": null
+        },
+        {
+          "rva": "0x62368",
+          "size": 8,
+          "before_bits": "0000000000000000",
+          "bits": "0000000000002c40",
+          "instruction": "0x15cb0",
+          "instruction_ordinal": 90,
+          "expression": [
+            "k",
+            "0000000000002c40"
+          ]
+        },
+        {
+          "rva": "0x62180",
+          "size": 8,
+          "before_bits": "0000000000000000",
+          "bits": "0000000000803b40",
+          "instruction": "0x15cd7",
+          "instruction_ordinal": 95,
+          "expression": [
+            "k",
+            "0000000000803b40"
+          ]
+        }
+      ],
+      "required_field_count": 22,
+      "required_field_bytes_written": 127,
+      "scope_write_bytes": 137,
+      "preload_details": [],
+      "read_before_write_events": [],
+      "random_word_conversion_order": [],
+      "float_expressions": {
+        "reference": [
+          "k",
+          "0000000000803b40"
+        ],
+        "entry.gap_points": [
+          "k",
+          "0000000000c06240"
+        ],
+        "buy_offset": [
+          "+",
+          [
+            "k",
+            "00000000000044c0"
+          ],
+          [
+            "k",
+            "0000000000000000"
+          ]
+        ],
+        "sell_offset": [
+          "+",
+          [
+            "+",
+            [
+              "k",
+              "0000000000000000"
+            ],
+            [
+              "k",
+              "00000000008061c0"
+            ]
+          ],
+          [
+            "k",
+            "0000000000000000"
+          ]
+        ],
+        "nearby_radius": [
+          "k",
+          "0000000000807140"
+        ],
+        "stop_distance": [
+          "+",
+          [
+            "k",
+            "0000000000000000"
+          ],
+          [
+            "k",
+            "0000000000c09240"
+          ]
+        ],
+        "target_distance": [
+          "+",
+          [
+            "k",
+            "0000000000000000"
+          ],
+          [
+            "k",
+            "0000000000009940"
+          ]
+        ],
+        "trail_distance": [
+          "+",
+          [
+            "k",
+            "0000000000000000"
+          ],
+          [
+            "k",
+            "0000000000c08240"
+          ]
+        ],
+        "trail_start": [
+          "k",
+          "0000000000006940"
+        ],
+        "trail_limit": [
+          "k",
+          "000000000030b140"
+        ],
+        "trail_step": [
+          "k",
+          "9a9999999999b93f"
+        ],
+        "aux_offset": [
+          "k",
+          "0000000000002c40"
+        ]
+      },
+      "unresolved_registers": {},
+      "unresolved_before_last_profile_write": {},
+      "last_profile_write_ordinal": 95,
+      "instructions": [
+        "0x15821",
+        "0x1582b",
+        "0x15835",
+        "0x15839",
+        "0x15843",
+        "0x1584b",
+        "0x15854",
+        "0x15857",
+        "0x1585d",
+        "0x15867",
+        "0x15871",
+        "0x15877",
+        "0x1587d",
+        "0x15883",
+        "0x1588d",
+        "0x15897",
+        "0x1589a",
+        "0x158a4",
+        "0x158ae",
+        "0x158b2",
+        "0x158bc",
+        "0x158c0",
+        "0x158c4",
+        "0x158c8",
+        "0x158cc",
+        "0x1594d",
+        "0x15957",
+        "0x15961",
+        "0x1596b",
+        "0x1596f",
+        "0x15972",
+        "0x1597c",
+        "0x15986",
+        "0x1598a",
+        "0x15994",
+        "0x15997",
+        "0x159a1",
+        "0x159ab",
+        "0x159b1",
+        "0x159bb",
+        "0x159c1",
+        "0x159cb",
+        "0x159ce",
+        "0x159d8",
+        "0x159db",
+        "0x159df",
+        "0x159e3",
+        "0x159e7",
+        "0x159f1",
+        "0x159f5",
+        "0x159f9",
+        "0x159fd",
+        "0x15b9c",
+        "0x15ba6",
+        "0x15bb0",
+        "0x15bba",
+        "0x15bbe",
+        "0x15bc2",
+        "0x15bcc",
+        "0x15bd6",
+        "0x15bda",
+        "0x15be4",
+        "0x15be8",
+        "0x15bec",
+        "0x15bf6",
+        "0x15c00",
+        "0x15c03",
+        "0x15c0d",
+        "0x15c11",
+        "0x15c15",
+        "0x15c1f",
+        "0x15c23",
+        "0x15c2d",
+        "0x15c37",
+        "0x15c41",
+        "0x15c44",
+        "0x15c4e",
+        "0x15c58",
+        "0x15c5c",
+        "0x15c66",
+        "0x15c69",
+        "0x15c73",
+        "0x15c76",
+        "0x15c80",
+        "0x15c86",
+        "0x15c90",
+        "0x15c96",
+        "0x15ca0",
+        "0x15ca6",
+        "0x15cb0",
+        "0x15cb3",
+        "0x15cbd",
+        "0x15cc7",
+        "0x15ccd",
+        "0x15cd7"
+      ]
+    },
+    {
+      "index": 7,
+      "hl": 1,
+      "start_rva": "0x15f01",
+      "first_call_rva": null,
+      "stop_details": {
+        "reason": "required_fields_complete",
+        "rva": "0x1651c",
+        "ordinal": 98
+      },
+      "seed_before": 1,
+      "seed_after": 1,
+      "values": {
+        "reference": 22.0,
+        "entry.confirmation_frame": 16408,
+        "entry.hour1_flag": 1,
+        "entry.older_width": 7,
+        "entry.recent_width": 2,
+        "entry.last_shift": 20,
+        "entry.gap_points": 250.0,
+        "buy_offset": -130.0,
+        "sell_offset": -120.0,
+        "nearby_radius": 980.0,
+        "expiration_hours": 432,
+        "stop_distance": 700.0,
+        "target_distance": 4900.0,
+        "trail_distance": 600.0,
+        "trail_start": 350.0,
+        "trail_limit": 2000.0,
+        "trail_step": 0.1,
+        "aux_hour1": 1,
+        "aux_scan50": 1,
+        "aux_older": 17,
+        "aux_recent": 1,
+        "aux_offset": 38.0
+      },
+      "raw_fields": {
+        "reference": "0000000000003640",
+        "entry.confirmation_frame": "18400000",
+        "entry.hour1_flag": "01",
+        "entry.older_width": "07000000",
+        "entry.recent_width": "02000000",
+        "entry.last_shift": "14000000",
+        "entry.gap_points": "0000000000406f40",
+        "buy_offset": "00000000004060c0",
+        "sell_offset": "0000000000005ec0",
+        "nearby_radius": "0000000000a08e40",
+        "expiration_hours": "b0010000",
+        "stop_distance": "0000000000e08540",
+        "target_distance": "000000000024b340",
+        "trail_distance": "0000000000c08240",
+        "trail_start": "0000000000e07540",
+        "trail_limit": "0000000000409f40",
+        "trail_step": "9a9999999999b93f",
+        "aux_hour1": "01",
+        "aux_scan50": "01",
+        "aux_older": "11000000",
+        "aux_recent": "01000000",
+        "aux_offset": "0000000000004340"
+      },
+      "writes": [
+        {
+          "rva": "0x62280",
+          "size": 1,
+          "before_bits": "01",
+          "bits": "01",
+          "instruction": "0x15f34",
+          "instruction_ordinal": 7,
+          "expression": null
+        },
+        {
+          "rva": "0x62284",
+          "size": 4,
+          "before_bits": "0a000000",
+          "bits": "07000000",
+          "instruction": "0x15f37",
+          "instruction_ordinal": 8,
+          "expression": null
+        },
+        {
+          "rva": "0x6227c",
+          "size": 4,
+          "before_bits": "00000000",
+          "bits": "18400000",
+          "instruction": "0x15f51",
+          "instruction_ordinal": 11,
+          "expression": null
+        },
+        {
+          "rva": "0x62288",
+          "size": 4,
+          "before_bits": "03000000",
+          "bits": "02000000",
+          "instruction": "0x15f57",
+          "instruction_ordinal": 12,
+          "expression": null
+        },
+        {
+          "rva": "0x6228c",
+          "size": 4,
+          "before_bits": "78000000",
+          "bits": "14000000",
+          "instruction": "0x15f5d",
+          "instruction_ordinal": 13,
+          "expression": null
+        },
+        {
+          "rva": "0x62290",
+          "size": 8,
+          "before_bits": "0000000000003e40",
+          "bits": "0000000000406f40",
+          "instruction": "0x15f77",
+          "instruction_ordinal": 16,
+          "expression": [
+            "k",
+            "0000000000406f40"
+          ]
+        },
+        {
+          "rva": "0x622a8",
+          "size": 1,
+          "before_bits": "01",
+          "bits": "01",
+          "instruction": "0x1604f",
+          "instruction_ordinal": 30,
+          "expression": null
+        },
+        {
+          "rva": "0x62298",
+          "size": 8,
+          "before_bits": "000000000000e03f",
+          "bits": "00000000004060c0",
+          "instruction": "0x16066",
+          "instruction_ordinal": 33,
+          "expression": [
+            "+",
+            [
+              "k",
+              "00000000004060c0"
+            ],
+            [
+              "k",
+              "0000000000000000"
+            ]
+          ]
+        },
+        {
+          "rva": "0x622b0",
+          "size": 8,
+          "before_bits": "000000000000f03f",
+          "bits": "0000000000a08e40",
+          "instruction": "0x16074",
+          "instruction_ordinal": 35,
+          "expression": [
+            "k",
+            "0000000000a08e40"
+          ]
+        },
+        {
+          "rva": "0x622b8",
+          "size": 4,
+          "before_bits": "18000000",
+          "bits": "b0010000",
+          "instruction": "0x1608b",
+          "instruction_ordinal": 38,
+          "expression": null
+        },
+        {
+          "rva": "0x622ec",
+          "size": 4,
+          "before_bits": "01000000",
+          "bits": "01000000",
+          "instruction": "0x1609b",
+          "instruction_ordinal": 40,
+          "expression": null
+        },
+        {
+          "rva": "0x622f0",
+          "size": 1,
+          "before_bits": "01",
+          "bits": "01",
+          "instruction": "0x160ab",
+          "instruction_ordinal": 42,
+          "expression": null
+        },
+        {
+          "rva": "0x622a0",
+          "size": 8,
+          "before_bits": "0000000000000000",
+          "bits": "0000000000005ec0",
+          "instruction": "0x160c3",
+          "instruction_ordinal": 47,
+          "expression": [
+            "+",
+            [
+              "+",
+              [
+                "k",
+                "0000000000000000"
+              ],
+              [
+                "k",
+                "0000000000005ec0"
+              ]
+            ],
+            [
+              "k",
+              "0000000000000000"
+            ]
+          ]
+        },
+        {
+          "rva": "0x622f8",
+          "size": 8,
+          "before_bits": "0000000000004940",
+          "bits": "0000000000e08540",
+          "instruction": "0x163b3",
+          "instruction_ordinal": 58,
+          "expression": [
+            "+",
+            [
+              "k",
+              "0000000000000000"
+            ],
+            [
+              "k",
+              "0000000000e08540"
+            ]
+          ]
+        },
+        {
+          "rva": "0x62300",
+          "size": 8,
+          "before_bits": "0000000000005940",
+          "bits": "000000000024b340",
+          "instruction": "0x163cf",
+          "instruction_ordinal": 62,
+          "expression": [
+            "+",
+            [
+              "k",
+              "0000000000000000"
+            ],
+            [
+              "k",
+              "000000000024b340"
+            ]
+          ]
+        },
+        {
+          "rva": "0x62320",
+          "size": 8,
+          "before_bits": "0000000000002440",
+          "bits": "0000000000e07540",
+          "instruction": "0x16450",
+          "instruction_ordinal": 70,
+          "expression": [
+            "k",
+            "0000000000e07540"
+          ]
+        },
+        {
+          "rva": "0x62318",
+          "size": 8,
+          "before_bits": "0000000000002440",
+          "bits": "0000000000c08240",
+          "instruction": "0x1645d",
+          "instruction_ordinal": 72,
+          "expression": [
+            "+",
+            [
+              "k",
+              "0000000000000000"
+            ],
+            [
+              "k",
+              "0000000000c08240"
+            ]
+          ]
+        },
+        {
+          "rva": "0x62330",
+          "size": 8,
+          "before_bits": "9a9999999999d93f",
+          "bits": "9a9999999999b93f",
+          "instruction": "0x16483",
+          "instruction_ordinal": 77,
+          "expression": [
+            "k",
+            "9a9999999999b93f"
+          ]
+        },
+        {
+          "rva": "0x62328",
+          "size": 8,
+          "before_bits": "0000000000005940",
+          "bits": "0000000000409f40",
+          "instruction": "0x1649a",
+          "instruction_ordinal": 80,
+          "expression": [
+            "k",
+            "0000000000409f40"
+          ]
+        },
+        {
+          "rva": "0x62354",
+          "size": 1,
+          "before_bits": "00",
+          "bits": "01",
+          "instruction": "0x164a8",
+          "instruction_ordinal": 82,
+          "expression": null
+        },
+        {
+          "rva": "0x62355",
+          "size": 1,
+          "before_bits": "00",
+          "bits": "01",
+          "instruction": "0x164b5",
+          "instruction_ordinal": 84,
+          "expression": null
+        },
+        {
+          "rva": "0x62358",
+          "size": 4,
+          "before_bits": "00000000",
+          "bits": "11000000",
+          "instruction": "0x164c2",
+          "instruction_ordinal": 86,
+          "expression": null
+        },
+        {
+          "rva": "0x6235c",
+          "size": 4,
+          "before_bits": "00000000",
+          "bits": "01000000",
+          "instruction": "0x164d2",
+          "instruction_ordinal": 88,
+          "expression": null
+        },
+        {
+          "rva": "0x62360",
+          "size": 4,
+          "before_bits": "00000000",
+          "bits": "64000000",
+          "instruction": "0x164e2",
+          "instruction_ordinal": 90,
+          "expression": null
+        },
+        {
+          "rva": "0x62368",
+          "size": 8,
+          "before_bits": "0000000000000000",
+          "bits": "0000000000004340",
+          "instruction": "0x164f2",
+          "instruction_ordinal": 92,
+          "expression": [
+            "k",
+            "0000000000004340"
+          ]
+        },
+        {
+          "rva": "0x62180",
+          "size": 8,
+          "before_bits": "0000000000000000",
+          "bits": "0000000000003640",
+          "instruction": "0x16519",
+          "instruction_ordinal": 97,
+          "expression": [
+            "k",
+            "0000000000003640"
+          ]
+        }
+      ],
+      "required_field_count": 22,
+      "required_field_bytes_written": 127,
+      "scope_write_bytes": 137,
+      "preload_details": [],
+      "read_before_write_events": [],
+      "random_word_conversion_order": [],
+      "float_expressions": {
+        "reference": [
+          "k",
+          "0000000000003640"
+        ],
+        "entry.gap_points": [
+          "k",
+          "0000000000406f40"
+        ],
+        "buy_offset": [
+          "+",
+          [
+            "k",
+            "00000000004060c0"
+          ],
+          [
+            "k",
+            "0000000000000000"
+          ]
+        ],
+        "sell_offset": [
+          "+",
+          [
+            "+",
+            [
+              "k",
+              "0000000000000000"
+            ],
+            [
+              "k",
+              "0000000000005ec0"
+            ]
+          ],
+          [
+            "k",
+            "0000000000000000"
+          ]
+        ],
+        "nearby_radius": [
+          "k",
+          "0000000000a08e40"
+        ],
+        "stop_distance": [
+          "+",
+          [
+            "k",
+            "0000000000000000"
+          ],
+          [
+            "k",
+            "0000000000e08540"
+          ]
+        ],
+        "target_distance": [
+          "+",
+          [
+            "k",
+            "0000000000000000"
+          ],
+          [
+            "k",
+            "000000000024b340"
+          ]
+        ],
+        "trail_distance": [
+          "+",
+          [
+            "k",
+            "0000000000000000"
+          ],
+          [
+            "k",
+            "0000000000c08240"
+          ]
+        ],
+        "trail_start": [
+          "k",
+          "0000000000e07540"
+        ],
+        "trail_limit": [
+          "k",
+          "0000000000409f40"
+        ],
+        "trail_step": [
+          "k",
+          "9a9999999999b93f"
+        ],
+        "aux_offset": [
+          "k",
+          "0000000000004340"
+        ]
+      },
+      "unresolved_registers": {},
+      "unresolved_before_last_profile_write": {},
+      "last_profile_write_ordinal": 97,
+      "instructions": [
+        "0x15f01",
+        "0x15f0b",
+        "0x15f15",
+        "0x15f19",
+        "0x15f23",
+        "0x15f2b",
+        "0x15f34",
+        "0x15f37",
+        "0x15f3d",
+        "0x15f47",
+        "0x15f51",
+        "0x15f57",
+        "0x15f5d",
+        "0x15f63",
+        "0x15f6d",
+        "0x15f77",
+        "0x15f7a",
+        "0x15f84",
+        "0x15f8e",
+        "0x15f92",
+        "0x15f9c",
+        "0x15fa0",
+        "0x15fa4",
+        "0x15fa8",
+        "0x15fac",
+        "0x1602d",
+        "0x16037",
+        "0x16041",
+        "0x1604b",
+        "0x1604f",
+        "0x16052",
+        "0x1605c",
+        "0x16066",
+        "0x1606a",
+        "0x16074",
+        "0x16077",
+        "0x16081",
+        "0x1608b",
+        "0x16091",
+        "0x1609b",
+        "0x160a1",
+        "0x160ab",
+        "0x160ae",
+        "0x160b8",
+        "0x160bb",
+        "0x160bf",
+        "0x160c3",
+        "0x160c7",
+        "0x160cb",
+        "0x160d1",
+        "0x160db",
+        "0x160df",
+        "0x160e3",
+        "0x16391",
+        "0x1639b",
+        "0x163a5",
+        "0x163af",
+        "0x163b3",
+        "0x163b7",
+        "0x163c1",
+        "0x163c5",
+        "0x163cf",
+        "0x163d3",
+        "0x163d7",
+        "0x163e1",
+        "0x163e5",
+        "0x16432",
+        "0x1643c",
+        "0x16446",
+        "0x16450",
+        "0x16453",
+        "0x1645d",
+        "0x16461",
+        "0x16465",
+        "0x1646f",
+        "0x16479",
+        "0x16483",
+        "0x16486",
+        "0x16490",
+        "0x1649a",
+        "0x1649e",
+        "0x164a8",
+        "0x164ab",
+        "0x164b5",
+        "0x164b8",
+        "0x164c2",
+        "0x164c8",
+        "0x164d2",
+        "0x164d8",
+        "0x164e2",
+        "0x164e8",
+        "0x164f2",
+        "0x164f5",
+        "0x164ff",
+        "0x16509",
+        "0x1650f",
+        "0x16519"
+      ]
+    }
+  ],
+  "scope": "Native profile blocks through first original call or the next instruction after all required fields are written; no terminal calls and no expected-value injection."
+}

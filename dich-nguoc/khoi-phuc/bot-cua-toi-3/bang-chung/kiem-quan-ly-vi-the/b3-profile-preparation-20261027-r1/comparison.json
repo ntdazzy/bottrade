@@ -1,0 +1,21 @@
+{
+  "cases": 2106,
+  "matched": 2106,
+  "failed": 0,
+  "first_failures": [],
+  "result_sha256": {
+    "original": "c9db2f15e64ab604f9df5650a4705f18a53542b0d5ae286fcad1a19e49244b5a",
+    "mql5": "c9db2f15e64ab604f9df5650a4705f18a53542b0d5ae286fcad1a19e49244b5a"
+  },
+  "whole_bot_complete": false,
+  "whole_manager_complete": false,
+  "full_ea": false,
+  "native_profile_and_preparation_bodies_executed": true,
+  "terminal_replies_supplied": true,
+  "original_ex5_changed": false,
+  "limits": [
+    "Valid indices 0..8. Both captured profile prefix and preparation body run in the same emulator; common inputs and SDK replies are supplied.",
+    "Only two-NaN scalar SSE arithmetic is delegated to measured CPU instructions. Original bytes stay unchanged; CPU status flags are not compared.",
+    "The original symbol/currency/comment work between the blocks, seed initialization, full dispatcher/EA, allocation failures and real broker behavior remain outside this comparison."
+  ]
+}

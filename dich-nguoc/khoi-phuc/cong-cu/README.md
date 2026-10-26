@@ -22,6 +22,11 @@ riêng của từng phần ở `bot-cua-toi-1/tests/` và `bot-cua-toi-3/tests/`
 
 Phép kiểm ghép mới:
 
+- `bot-cua-toi-{1,3}/tests/check-profile-preparation.py`: prepare/original/mql5/compare,
+  chạy thân nạp cấu hình rồi chuẩn bị trong cùng bộ nhớ native. Bot 1 so 432 ca/
+  119 giá trị; bot 3 so 2.106 ca/124 giá trị. Dữ liệu tên mã, comment, vốn và
+  dịch vụ được cấp; chưa phải dispatcher hay EA đầy đủ.
+
 - `bot-cua-toi-3/tests/check-pending-submission.py`: prepare/original/mql5/compare,
   so332ca từ giá cơ sở đến đặt/thử lại/ghi bảng; các hàm con được cấp trả lời,
   giữ làm tròn thật; dùng `--build` ở mql5. Chưa là toàn chương trình chính.

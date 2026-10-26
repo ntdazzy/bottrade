@@ -101,6 +101,7 @@ def identity():
         HOME / "source/MQL5/Include/bot-cua-toi-1/Bot1BaseDistances.mqh",
         HOME / "source/MQL5/Include/bot-cua-toi-1/Bot1DistanceSettings.mqh",
         HOME / "source/MQL5/Include/bot-cua-toi-1/Bot1EntryProfiles.mqh",
+        HOME / "source/MQL5/Include/bot-cua-toi-1/Bot1Preparation.mqh",
     ]
     helpers = [Path(__file__), Path(CASES.__file__), ANALYZER,
                ROOT/'cong-cu/kiem-dieu-chinh-bot-1-3.py',ROOT/'cong-cu/kiem-gia-vao-bot-1-3.py',

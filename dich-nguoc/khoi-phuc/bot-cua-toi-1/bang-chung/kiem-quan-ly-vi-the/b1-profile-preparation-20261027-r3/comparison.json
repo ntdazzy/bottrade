@@ -1,0 +1,21 @@
+{
+  "cases": 432,
+  "matched": 432,
+  "failed": 0,
+  "first_failures": [],
+  "result_sha256": {
+    "original": "80c2d91578aa7c454210396b228c1269ad31c397308f175b795aa015daceac81",
+    "mql5": "80c2d91578aa7c454210396b228c1269ad31c397308f175b795aa015daceac81"
+  },
+  "whole_bot_complete": false,
+  "whole_manager_complete": false,
+  "full_ea": false,
+  "native_profile_and_preparation_bodies_executed": true,
+  "terminal_replies_supplied": true,
+  "original_ex5_changed": false,
+  "limits": [
+    "Valid indices 0..7. Both captured scalar profile prefix and full preparation execute in the same emulator; common inputs and MT5 replies are supplied.",
+    "The original currency/symbol/comment work between these blocks is excluded; no claim about the complete dispatcher, seed initialization, EA or real broker.",
+    "432 input cases, successful string allocation and valid arrays. Error-stop proof remains in the separate preparation tests."
+  ]
+}

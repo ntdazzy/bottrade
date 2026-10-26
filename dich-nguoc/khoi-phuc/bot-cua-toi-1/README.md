@@ -1,5 +1,10 @@
 # bot-cua-toi-1
 
+Đã nối nạp cấu hình với chuẩn bị dữ liệu: **432/432 ca khớp**, so 119 giá
+trị và đối số chỉ báo. Đã bổ sung đủ sáu ô phụ còn thiếu để truyền sang bước
+chuẩn bị; tên mã/comment/vốn vẫn được cấp, chưa nối EA chính.
+[Bằng chứng và giới hạn](phan-tich/chuong-trinh-chinh/profile-preparation-20261027-r1/README.md).
+
 Đã thêm đoạn sau khi có giá cơ sở đến đặt lệnh chờ: **416/416 ca khớp**
 giữa mã gốc và MQL5, biên dịch **0 lỗi/0 cảnh báo**. Đoạn này vẫn nhận giá
 và dịch vụ từ phần trước, chưa phải EA đầy đủ.
