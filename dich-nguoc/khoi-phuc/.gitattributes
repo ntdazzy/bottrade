@@ -355,3 +355,8 @@
 /claude-thuc-hien/bot1-main-router-*/** -text
 /danh-gia-claude/bot1-router-*/** -text
 /danh-gia-doc-lap/bot1-router-*/** -text
+
+/bot-cua-toi-2/phan-tich/khoi-dong-20261026-r1/** -text
+/bot-cua-toi-2/phan-tich/ban-ex5-06/ma-trung-gian.c -text whitespace=-blank-at-eol,-blank-at-eof,cr-at-eol
+/bot-cua-toi-2/phan-tich/ban-ex5-06/diem-bat-dau-ham.txt -text
+/bot-cua-toi-2/phan-tich/ban-ex5-06/ket-qua-chup.json -text

@@ -1,0 +1,9 @@
+{
+  "run": "re2batch1_06",
+  "source": "mt5-btc-recovery/Goldbot One MT5.ex5",
+  "source_sha256": "390D8AB14FC213FF4B8CBE5084BEC545526E62C6028516FE21219A59398CE795",
+  "capture_exit": 0,
+  "tester_pid": 22804,
+  "runner_exit": 0,
+  "test_interrupted_after_capture": true
+}

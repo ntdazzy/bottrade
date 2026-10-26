@@ -1,0 +1,21 @@
+{
+  "current_ex5": {
+    "path": "1-dang-tin-nhat/bot-cua-toi-2/bot-cua-toi-2.ex5",
+    "bytes": 226872,
+    "sha256": "0b501b712685844b8cdd17a3bf691767383e7edd727fb62c4630fe323050c557"
+  },
+  "set_files": [
+    {"path":"1-dang-tin-nhat/bot-cua-toi-2/bo-cai-tac-gia/bot-cua-toi-2_HighRisk_Max50DD.set","bytes":5167,"sha256":"3bdeba636532cc3ba5c739a2823702b2a55d5f1c6383706df60e1c1c088c6d5f"},
+    {"path":"1-dang-tin-nhat/bot-cua-toi-2/bo-cai-tac-gia/bot-cua-toi-2_LowRisk_Max15DD.set","bytes":5166,"sha256":"e6d8d6218f3cd6f8cac8fdb1c2923a221d306d04449777563952d41b93ed9daf"},
+    {"path":"1-dang-tin-nhat/bot-cua-toi-2/bo-cai-tac-gia/bot-cua-toi-2_MediumRisk_Max30DD.set","bytes":5166,"sha256":"cfe384ec07cbbfa02c86c23e913f4cb4b5c70837bebaeda42e039d7667af93d9"},
+    {"path":"1-dang-tin-nhat/bot-cua-toi-2/bo-cai-tac-gia/bot-cua-toi-2_PropFirm_10_5.set","bytes":5166,"sha256":"f3c0a348e081d07d9277be95af0eaeb9efb8e4b11b714ba3e4b2b1f7f54097f9"},
+    {"path":"1-dang-tin-nhat/bot-cua-toi-2/bo-cai-tac-gia/bot-cua-toi-2_PropFirm_5_2.5.set","bytes":5166,"sha256":"e2ea32de00a41f38d94ee3429230a8a09a040f0a759e9c8fcfb4dd9890222fc8"}
+  ],
+  "stale_analysis_excluded": {
+    "source_name": "Goldbot One MT5.ex5",
+    "source_sha256": "390d8ab14fc213ff4b8cbe5084bec545526e62c6028516fe21219a59398ce795",
+    "capture_main_bytes": 311296,
+    "capture_base": "0x24fc8630000",
+    "reason": "Không trùng EX5 bot2 hiện tại; không được dùng để phục hồi bot2."
+  }
+}

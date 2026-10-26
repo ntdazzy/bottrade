@@ -1,0 +1,6 @@
+{
+  "workspace_renamed_build": {"path":"1-dang-tin-nhat/bot-cua-toi-2/bot-cua-toi-2.ex5","bytes":226872,"sha256":"0b501b712685844b8cdd17a3bf691767383e7edd727fb62c4630fe323050c557","label":"bản trong workspace"},
+  "installed_market_build": {"path":"C:/Users/NTD/Desktop/BotTradeEA/local/market-demos-20261020/dich-nguoc-luot2/terminal/MQL5/Experts/Market/Goldbot One MT5.ex5","bytes":226872,"sha256":"390d8ab14fc213ff4b8cbe5084bec545526e62c6028516fe21219a59398ce795","label":"bản đã cài và đã chụp trước đây"},
+  "byte_comparison": {"different_bytes":52,"different_ranges":["0xa8..0xea","0x1a8..0x1d0"],"interpretation":"Các byte khác nằm trong hai vùng chuỗi UTF-16; các byte ngoài hai vùng này trùng. Đây là dấu hiệu mạnh của bản đổi tên, không tự coi là cùng bản phát hành."},
+  "captured_analysis": {"capture_source":"Goldbot One MT5.ex5","source_sha256":"390d8ab14fc213ff4b8cbe5084bec545526e62c6028516fe21219a59398ce795","main_region_bytes":311296,"main_region_sha256":"c549d8a7ce64156e32c0dde4268ab1a791f424b33c5287d83fd9278e25b4d2b3","base":"0x24fc8630000","function_count_in_snapshot":83,"scope":"Bản chụp được tạo từ installed_market_build; kết luận áp cho workspace phải ghi rõ đối chiếu hai bản."}
+}
