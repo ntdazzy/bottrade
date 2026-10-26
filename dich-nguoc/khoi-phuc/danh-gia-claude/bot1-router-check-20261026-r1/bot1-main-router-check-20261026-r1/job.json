@@ -1,0 +1,13 @@
+{
+  "pid": 27228,
+  "started": "2026-10-26T01:07:04.2546518Z",
+  "model": "claude-opus-5-5",
+  "effort": "max",
+  "ultracode_requested": true,
+  "scope": "Write proposed analysis/code only within an explicitly assigned deliverable directory",
+  "output_directory": "dich-nguoc/khoi-phuc/claude-thuc-hien/bot1-main-router-check-20261026-r1",
+  "edit_rule": "Edit(./dich-nguoc/khoi-phuc/claude-thuc-hien/bot1-main-router-check-20261026-r1/**)",
+  "permission_mode": "dontAsk",
+  "prompt_sha256": "79ff05dc7a81cb85967f257f4fe85870e16e55336e00e20fc2426281a7fc9759",
+  "resume": ""
+}

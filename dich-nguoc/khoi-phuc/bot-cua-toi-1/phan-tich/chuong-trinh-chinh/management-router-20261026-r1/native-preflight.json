@@ -1,0 +1,1682 @@
+{
+  "cases": 11,
+  "instructions": 248,
+  "results": [
+    {
+      "case": {
+        "id": 0,
+        "index": 6,
+        "timeframe": 15,
+        "after_first_frame": 16385,
+        "buy_reply": 1,
+        "sell_reply": 1,
+        "change_first_bar": 1,
+        "change_buy": 1,
+        "license_valid": 0,
+        "tick_management": 1,
+        "bar_override": 0,
+        "profile": 3,
+        "shrink_after_buy": 0,
+        "magic": -123,
+        "previous": 1000,
+        "observed": 1100,
+        "second": 1200,
+        "after_first_bar": 5000
+      },
+      "result": {
+        "id": 0,
+        "returned": 1,
+        "timeframe": 15,
+        "counter": 7,
+        "mode": 1,
+        "index": 7,
+        "events": 1,
+        "selected": -1,
+        "total_calls": 0,
+        "buy_calls": 0,
+        "sell_calls": 0,
+        "live_count": 6,
+        "last_ticket": 999,
+        "ordered_hash": 14951560173156086584,
+        "bar0": 100,
+        "bar1": 101,
+        "bar2": 102,
+        "bar3": 103,
+        "bar4": 104,
+        "bar5": 105,
+        "bar6": 1000,
+        "bar7": 107
+      },
+      "events": [
+        [
+          4,
+          16133657785097069412,
+          0,
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "case": {
+        "id": 1,
+        "index": 6,
+        "timeframe": 15,
+        "after_first_frame": 16385,
+        "buy_reply": 1,
+        "sell_reply": 1,
+        "change_first_bar": 1,
+        "change_buy": 1,
+        "license_valid": 1,
+        "tick_management": 0,
+        "bar_override": 0,
+        "profile": 0,
+        "shrink_after_buy": 0,
+        "magic": -123,
+        "previous": 1000,
+        "observed": 1100,
+        "second": 1200,
+        "after_first_bar": 5000
+      },
+      "result": {
+        "id": 1,
+        "returned": 1,
+        "timeframe": 16385,
+        "counter": 8,
+        "mode": 2,
+        "index": 0,
+        "events": 4,
+        "selected": -1,
+        "total_calls": 0,
+        "buy_calls": 1,
+        "sell_calls": 1,
+        "live_count": 0,
+        "last_ticket": 999,
+        "ordered_hash": 16973854454027858581,
+        "bar0": 100,
+        "bar1": 101,
+        "bar2": 102,
+        "bar3": 103,
+        "bar4": 104,
+        "bar5": 105,
+        "bar6": 1210,
+        "bar7": 107
+      },
+      "events": [
+        [
+          1,
+          15,
+          1,
+          1000,
+          1100
+        ],
+        [
+          1,
+          16385,
+          1,
+          5000,
+          1200
+        ],
+        [
+          2,
+          7,
+          1,
+          7,
+          4621819117588971520
+        ],
+        [
+          3,
+          8,
+          2,
+          0,
+          4626322717216342016
+        ]
+      ]
+    },
+    {
+      "case": {
+        "id": 2,
+        "index": 6,
+        "timeframe": 15,
+        "after_first_frame": 16385,
+        "buy_reply": 1,
+        "sell_reply": 1,
+        "change_first_bar": 1,
+        "change_buy": 1,
+        "license_valid": 1,
+        "tick_management": 1,
+        "bar_override": 1,
+        "profile": 1,
+        "shrink_after_buy": 0,
+        "magic": -123,
+        "previous": 1000,
+        "observed": 1100,
+        "second": 1200,
+        "after_first_bar": 5000
+      },
+      "result": {
+        "id": 2,
+        "returned": 1,
+        "timeframe": 16385,
+        "counter": 8,
+        "mode": 2,
+        "index": 0,
+        "events": 4,
+        "selected": -1,
+        "total_calls": 0,
+        "buy_calls": 1,
+        "sell_calls": 1,
+        "live_count": 1,
+        "last_ticket": 999,
+        "ordered_hash": 16973854454027858581,
+        "bar0": 100,
+        "bar1": 101,
+        "bar2": 102,
+        "bar3": 103,
+        "bar4": 104,
+        "bar5": 105,
+        "bar6": 1210,
+        "bar7": 107
+      },
+      "events": [
+        [
+          1,
+          15,
+          1,
+          1000,
+          1100
+        ],
+        [
+          1,
+          16385,
+          1,
+          5000,
+          1200
+        ],
+        [
+          2,
+          7,
+          1,
+          7,
+          4621819117588971520
+        ],
+        [
+          3,
+          8,
+          2,
+          0,
+          4626322717216342016
+        ]
+      ]
+    },
+    {
+      "case": {
+        "id": 3,
+        "index": 6,
+        "timeframe": 15,
+        "after_first_frame": 16385,
+        "buy_reply": 1,
+        "sell_reply": 1,
+        "change_first_bar": 1,
+        "change_buy": 1,
+        "license_valid": 1,
+        "tick_management": 1,
+        "bar_override": 0,
+        "profile": 0,
+        "shrink_after_buy": 0,
+        "magic": -123,
+        "previous": 1000,
+        "observed": 1100,
+        "second": 1200,
+        "after_first_bar": 5000
+      },
+      "result": {
+        "id": 3,
+        "returned": 1,
+        "timeframe": 16385,
+        "counter": 8,
+        "mode": 2,
+        "index": 0,
+        "events": 5,
+        "selected": -1,
+        "total_calls": 1,
+        "buy_calls": 1,
+        "sell_calls": 1,
+        "live_count": 0,
+        "last_ticket": 999,
+        "ordered_hash": 8559479989590595633,
+        "bar0": 100,
+        "bar1": 101,
+        "bar2": 102,
+        "bar3": 103,
+        "bar4": 104,
+        "bar5": 105,
+        "bar6": 1210,
+        "bar7": 107
+      },
+      "events": [
+        [
+          5,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          15,
+          1,
+          1000,
+          1100
+        ],
+        [
+          1,
+          16385,
+          1,
+          5000,
+          1200
+        ],
+        [
+          2,
+          7,
+          1,
+          7,
+          4621819117588971520
+        ],
+        [
+          3,
+          8,
+          2,
+          0,
+          4626322717216342016
+        ]
+      ]
+    },
+    {
+      "case": {
+        "id": 4,
+        "index": 6,
+        "timeframe": 15,
+        "after_first_frame": 16385,
+        "buy_reply": 1,
+        "sell_reply": 1,
+        "change_first_bar": 1,
+        "change_buy": 1,
+        "license_valid": 1,
+        "tick_management": 1,
+        "bar_override": 0,
+        "profile": 1,
+        "shrink_after_buy": 0,
+        "magic": -123,
+        "previous": 1000,
+        "observed": 1100,
+        "second": 1200,
+        "after_first_bar": 5000
+      },
+      "result": {
+        "id": 4,
+        "returned": 1,
+        "timeframe": 15,
+        "counter": 8,
+        "mode": 2,
+        "index": 0,
+        "events": 14,
+        "selected": 0,
+        "total_calls": 5,
+        "buy_calls": 1,
+        "sell_calls": 0,
+        "live_count": 1,
+        "last_ticket": 101,
+        "ordered_hash": 4126073643221405606,
+        "bar0": 100,
+        "bar1": 101,
+        "bar2": 102,
+        "bar3": 103,
+        "bar4": 104,
+        "bar5": 105,
+        "bar6": 1010,
+        "bar7": 107
+      },
+      "events": [
+        [
+          5,
+          1,
+          1,
+          1,
+          0
+        ],
+        [
+          5,
+          2,
+          1,
+          1,
+          0
+        ],
+        [
+          6,
+          0,
+          101,
+          0,
+          0
+        ],
+        [
+          7,
+          12,
+          18446744073709551493,
+          0,
+          0
+        ],
+        [
+          7,
+          2,
+          0,
+          0,
+          0
+        ],
+        [
+          8,
+          0,
+          5470890803951353603,
+          0,
+          0
+        ],
+        [
+          5,
+          3,
+          1,
+          1,
+          0
+        ],
+        [
+          2,
+          7,
+          1,
+          7,
+          4621819117588971520
+        ],
+        [
+          5,
+          4,
+          1,
+          1,
+          0
+        ],
+        [
+          6,
+          0,
+          101,
+          0,
+          0
+        ],
+        [
+          7,
+          12,
+          18446744073709551493,
+          0,
+          0
+        ],
+        [
+          8,
+          0,
+          5470890803951353603,
+          0,
+          0
+        ],
+        [
+          7,
+          2,
+          0,
+          0,
+          0
+        ],
+        [
+          5,
+          5,
+          1,
+          1,
+          0
+        ]
+      ]
+    },
+    {
+      "case": {
+        "id": 5,
+        "index": 6,
+        "timeframe": 15,
+        "after_first_frame": 16385,
+        "buy_reply": 1,
+        "sell_reply": 1,
+        "change_first_bar": 1,
+        "change_buy": 1,
+        "license_valid": 1,
+        "tick_management": 1,
+        "bar_override": 0,
+        "profile": 2,
+        "shrink_after_buy": 0,
+        "magic": -123,
+        "previous": 1000,
+        "observed": 1100,
+        "second": 1200,
+        "after_first_bar": 5000
+      },
+      "result": {
+        "id": 5,
+        "returned": 1,
+        "timeframe": 15,
+        "counter": 7,
+        "mode": 1,
+        "index": 7,
+        "events": 13,
+        "selected": 0,
+        "total_calls": 5,
+        "buy_calls": 0,
+        "sell_calls": 1,
+        "live_count": 1,
+        "last_ticket": 102,
+        "ordered_hash": 4861654702909313203,
+        "bar0": 100,
+        "bar1": 101,
+        "bar2": 102,
+        "bar3": 103,
+        "bar4": 104,
+        "bar5": 105,
+        "bar6": 1000,
+        "bar7": 107
+      },
+      "events": [
+        [
+          5,
+          1,
+          1,
+          1,
+          0
+        ],
+        [
+          5,
+          2,
+          1,
+          1,
+          0
+        ],
+        [
+          6,
+          0,
+          102,
+          0,
+          0
+        ],
+        [
+          7,
+          12,
+          18446744073709551493,
+          0,
+          0
+        ],
+        [
+          7,
+          2,
+          1,
+          0,
+          0
+        ],
+        [
+          5,
+          3,
+          1,
+          1,
+          0
+        ],
+        [
+          5,
+          4,
+          1,
+          1,
+          0
+        ],
+        [
+          6,
+          0,
+          102,
+          0,
+          0
+        ],
+        [
+          7,
+          12,
+          18446744073709551493,
+          0,
+          0
+        ],
+        [
+          8,
+          0,
+          5470890803951353603,
+          0,
+          0
+        ],
+        [
+          7,
+          2,
+          1,
+          0,
+          0
+        ],
+        [
+          5,
+          5,
+          1,
+          1,
+          0
+        ],
+        [
+          3,
+          7,
+          1,
+          7,
+          4626322717216342016
+        ]
+      ]
+    },
+    {
+      "case": {
+        "id": 6,
+        "index": 6,
+        "timeframe": 15,
+        "after_first_frame": 16385,
+        "buy_reply": 1,
+        "sell_reply": 1,
+        "change_first_bar": 1,
+        "change_buy": 1,
+        "license_valid": 1,
+        "tick_management": 1,
+        "bar_override": 0,
+        "profile": 3,
+        "shrink_after_buy": 0,
+        "magic": -123,
+        "previous": 1000,
+        "observed": 1100,
+        "second": 1200,
+        "after_first_bar": 5000
+      },
+      "result": {
+        "id": 6,
+        "returned": 1,
+        "timeframe": 15,
+        "counter": 8,
+        "mode": 2,
+        "index": 0,
+        "events": 52,
+        "selected": 5,
+        "total_calls": 15,
+        "buy_calls": 1,
+        "sell_calls": 1,
+        "live_count": 6,
+        "last_ticket": 206,
+        "ordered_hash": 967244329762380022,
+        "bar0": 100,
+        "bar1": 101,
+        "bar2": 102,
+        "bar3": 103,
+        "bar4": 104,
+        "bar5": 105,
+        "bar6": 1010,
+        "bar7": 107
+      },
+      "events": [
+        [
+          5,
+          1,
+          6,
+          6,
+          0
+        ],
+        [
+          5,
+          2,
+          6,
+          6,
+          0
+        ],
+        [
+          6,
+          0,
+          0,
+          18446744073709551615,
+          0
+        ],
+        [
+          5,
+          3,
+          6,
+          6,
+          0
+        ],
+        [
+          6,
+          1,
+          202,
+          1,
+          0
+        ],
+        [
+          7,
+          12,
+          18446744073709551494,
+          1,
+          0
+        ],
+        [
+          5,
+          4,
+          6,
+          6,
+          0
+        ],
+        [
+          6,
+          2,
+          203,
+          2,
+          0
+        ],
+        [
+          7,
+          12,
+          18446744073709551493,
+          2,
+          0
+        ],
+        [
+          7,
+          2,
+          2,
+          2,
+          0
+        ],
+        [
+          5,
+          5,
+          6,
+          6,
+          0
+        ],
+        [
+          6,
+          3,
+          204,
+          3,
+          0
+        ],
+        [
+          7,
+          12,
+          18446744073709551493,
+          3,
+          0
+        ],
+        [
+          7,
+          2,
+          0,
+          3,
+          0
+        ],
+        [
+          8,
+          0,
+          17360526335643560785,
+          3,
+          0
+        ],
+        [
+          5,
+          6,
+          6,
+          6,
+          0
+        ],
+        [
+          6,
+          4,
+          205,
+          4,
+          0
+        ],
+        [
+          7,
+          12,
+          18446744073709551493,
+          4,
+          0
+        ],
+        [
+          7,
+          2,
+          0,
+          4,
+          0
+        ],
+        [
+          8,
+          0,
+          5470890803951353603,
+          4,
+          0
+        ],
+        [
+          5,
+          7,
+          6,
+          6,
+          0
+        ],
+        [
+          6,
+          5,
+          206,
+          5,
+          0
+        ],
+        [
+          7,
+          12,
+          18446744073709551493,
+          5,
+          0
+        ],
+        [
+          7,
+          2,
+          1,
+          5,
+          0
+        ],
+        [
+          5,
+          8,
+          6,
+          6,
+          0
+        ],
+        [
+          2,
+          7,
+          1,
+          7,
+          4621819117588971520
+        ],
+        [
+          5,
+          9,
+          6,
+          6,
+          0
+        ],
+        [
+          6,
+          0,
+          0,
+          5,
+          0
+        ],
+        [
+          5,
+          10,
+          6,
+          6,
+          0
+        ],
+        [
+          6,
+          1,
+          202,
+          1,
+          0
+        ],
+        [
+          7,
+          12,
+          18446744073709551494,
+          1,
+          0
+        ],
+        [
+          5,
+          11,
+          6,
+          6,
+          0
+        ],
+        [
+          6,
+          2,
+          203,
+          2,
+          0
+        ],
+        [
+          7,
+          12,
+          18446744073709551493,
+          2,
+          0
+        ],
+        [
+          8,
+          0,
+          5470890803951353603,
+          2,
+          0
+        ],
+        [
+          7,
+          2,
+          2,
+          2,
+          0
+        ],
+        [
+          5,
+          12,
+          6,
+          6,
+          0
+        ],
+        [
+          6,
+          3,
+          204,
+          3,
+          0
+        ],
+        [
+          7,
+          12,
+          18446744073709551493,
+          3,
+          0
+        ],
+        [
+          8,
+          0,
+          17360526335643560785,
+          3,
+          0
+        ],
+        [
+          5,
+          13,
+          6,
+          6,
+          0
+        ],
+        [
+          6,
+          4,
+          205,
+          4,
+          0
+        ],
+        [
+          7,
+          12,
+          18446744073709551493,
+          4,
+          0
+        ],
+        [
+          8,
+          0,
+          5470890803951353603,
+          4,
+          0
+        ],
+        [
+          7,
+          2,
+          0,
+          4,
+          0
+        ],
+        [
+          5,
+          14,
+          6,
+          6,
+          0
+        ],
+        [
+          6,
+          5,
+          206,
+          5,
+          0
+        ],
+        [
+          7,
+          12,
+          18446744073709551493,
+          5,
+          0
+        ],
+        [
+          8,
+          0,
+          5470890803951353603,
+          5,
+          0
+        ],
+        [
+          7,
+          2,
+          1,
+          5,
+          0
+        ],
+        [
+          5,
+          15,
+          6,
+          6,
+          0
+        ],
+        [
+          3,
+          8,
+          2,
+          0,
+          4626322717216342016
+        ]
+      ]
+    },
+    {
+      "case": {
+        "id": 7,
+        "index": 6,
+        "timeframe": 15,
+        "after_first_frame": 16385,
+        "buy_reply": 1,
+        "sell_reply": 1,
+        "change_first_bar": 1,
+        "change_buy": 1,
+        "license_valid": 1,
+        "tick_management": 1,
+        "bar_override": 0,
+        "profile": 4,
+        "shrink_after_buy": 0,
+        "magic": -123,
+        "previous": 1000,
+        "observed": 1100,
+        "second": 1200,
+        "after_first_bar": 5000
+      },
+      "result": {
+        "id": 7,
+        "returned": 0,
+        "timeframe": 15,
+        "counter": 7,
+        "mode": 1,
+        "index": 7,
+        "events": 15,
+        "selected": 1,
+        "total_calls": 7,
+        "buy_calls": 0,
+        "sell_calls": 0,
+        "live_count": 2,
+        "last_ticket": 302,
+        "ordered_hash": 14748392049614576428,
+        "bar0": 100,
+        "bar1": 101,
+        "bar2": 102,
+        "bar3": 103,
+        "bar4": 104,
+        "bar5": 105,
+        "bar6": 1000,
+        "bar7": 107
+      },
+      "events": [
+        [
+          5,
+          1,
+          2,
+          2,
+          0
+        ],
+        [
+          5,
+          2,
+          2,
+          2,
+          0
+        ],
+        [
+          6,
+          0,
+          301,
+          0,
+          0
+        ],
+        [
+          7,
+          12,
+          4294967173,
+          0,
+          0
+        ],
+        [
+          5,
+          3,
+          2,
+          2,
+          0
+        ],
+        [
+          6,
+          1,
+          302,
+          1,
+          0
+        ],
+        [
+          7,
+          12,
+          4294967173,
+          1,
+          0
+        ],
+        [
+          5,
+          4,
+          2,
+          2,
+          0
+        ],
+        [
+          5,
+          5,
+          2,
+          2,
+          0
+        ],
+        [
+          6,
+          0,
+          301,
+          0,
+          0
+        ],
+        [
+          7,
+          12,
+          4294967173,
+          0,
+          0
+        ],
+        [
+          5,
+          6,
+          2,
+          2,
+          0
+        ],
+        [
+          6,
+          1,
+          302,
+          1,
+          0
+        ],
+        [
+          7,
+          12,
+          4294967173,
+          1,
+          0
+        ],
+        [
+          5,
+          7,
+          2,
+          2,
+          0
+        ]
+      ]
+    },
+    {
+      "case": {
+        "id": 8,
+        "index": 6,
+        "timeframe": 15,
+        "after_first_frame": 16385,
+        "buy_reply": 1,
+        "sell_reply": 1,
+        "change_first_bar": 1,
+        "change_buy": 1,
+        "license_valid": 1,
+        "tick_management": 1,
+        "bar_override": 0,
+        "profile": 5,
+        "shrink_after_buy": 0,
+        "magic": -123,
+        "previous": 1000,
+        "observed": 1100,
+        "second": 1200,
+        "after_first_bar": 5000
+      },
+      "result": {
+        "id": 8,
+        "returned": 0,
+        "timeframe": 15,
+        "counter": 7,
+        "mode": 1,
+        "index": 7,
+        "events": 21,
+        "selected": 1,
+        "total_calls": 7,
+        "buy_calls": 0,
+        "sell_calls": 0,
+        "live_count": 2,
+        "last_ticket": 402,
+        "ordered_hash": 8357773948547275997,
+        "bar0": 100,
+        "bar1": 101,
+        "bar2": 102,
+        "bar3": 103,
+        "bar4": 104,
+        "bar5": 105,
+        "bar6": 1000,
+        "bar7": 107
+      },
+      "events": [
+        [
+          5,
+          1,
+          2,
+          2,
+          0
+        ],
+        [
+          5,
+          2,
+          2,
+          2,
+          0
+        ],
+        [
+          6,
+          0,
+          401,
+          0,
+          0
+        ],
+        [
+          7,
+          12,
+          18446744073709551493,
+          0,
+          0
+        ],
+        [
+          7,
+          2,
+          4294967296,
+          0,
+          0
+        ],
+        [
+          5,
+          3,
+          2,
+          2,
+          0
+        ],
+        [
+          6,
+          1,
+          402,
+          1,
+          0
+        ],
+        [
+          7,
+          12,
+          18446744073709551493,
+          1,
+          0
+        ],
+        [
+          7,
+          2,
+          4294967297,
+          1,
+          0
+        ],
+        [
+          5,
+          4,
+          2,
+          2,
+          0
+        ],
+        [
+          5,
+          5,
+          2,
+          2,
+          0
+        ],
+        [
+          6,
+          0,
+          401,
+          0,
+          0
+        ],
+        [
+          7,
+          12,
+          18446744073709551493,
+          0,
+          0
+        ],
+        [
+          8,
+          0,
+          5470890803951353603,
+          0,
+          0
+        ],
+        [
+          7,
+          2,
+          4294967296,
+          0,
+          0
+        ],
+        [
+          5,
+          6,
+          2,
+          2,
+          0
+        ],
+        [
+          6,
+          1,
+          402,
+          1,
+          0
+        ],
+        [
+          7,
+          12,
+          18446744073709551493,
+          1,
+          0
+        ],
+        [
+          8,
+          0,
+          5470890803951353603,
+          1,
+          0
+        ],
+        [
+          7,
+          2,
+          4294967297,
+          1,
+          0
+        ],
+        [
+          5,
+          7,
+          2,
+          2,
+          0
+        ]
+      ]
+    },
+    {
+      "case": {
+        "id": 9,
+        "index": 6,
+        "timeframe": 15,
+        "after_first_frame": 16385,
+        "buy_reply": 1,
+        "sell_reply": 1,
+        "change_first_bar": 1,
+        "change_buy": 1,
+        "license_valid": 1,
+        "tick_management": 1,
+        "bar_override": 0,
+        "profile": 6,
+        "shrink_after_buy": 0,
+        "magic": -123,
+        "previous": 1000,
+        "observed": 1100,
+        "second": 1200,
+        "after_first_bar": 5000
+      },
+      "result": {
+        "id": 9,
+        "returned": 0,
+        "timeframe": 15,
+        "counter": 7,
+        "mode": 1,
+        "index": 7,
+        "events": 20,
+        "selected": 1,
+        "total_calls": 7,
+        "buy_calls": 0,
+        "sell_calls": 0,
+        "live_count": 2,
+        "last_ticket": 502,
+        "ordered_hash": 3226891697279654321,
+        "bar0": 100,
+        "bar1": 101,
+        "bar2": 102,
+        "bar3": 103,
+        "bar4": 104,
+        "bar5": 105,
+        "bar6": 1000,
+        "bar7": 107
+      },
+      "events": [
+        [
+          5,
+          1,
+          2,
+          2,
+          0
+        ],
+        [
+          5,
+          2,
+          2,
+          2,
+          0
+        ],
+        [
+          6,
+          0,
+          501,
+          0,
+          0
+        ],
+        [
+          7,
+          12,
+          18446744073709551493,
+          0,
+          0
+        ],
+        [
+          7,
+          2,
+          0,
+          0,
+          0
+        ],
+        [
+          8,
+          0,
+          17360526335643560785,
+          0,
+          0
+        ],
+        [
+          5,
+          3,
+          2,
+          2,
+          0
+        ],
+        [
+          6,
+          1,
+          502,
+          1,
+          0
+        ],
+        [
+          7,
+          12,
+          18446744073709551493,
+          1,
+          0
+        ],
+        [
+          7,
+          2,
+          1,
+          1,
+          0
+        ],
+        [
+          5,
+          4,
+          2,
+          2,
+          0
+        ],
+        [
+          5,
+          5,
+          2,
+          2,
+          0
+        ],
+        [
+          6,
+          0,
+          501,
+          0,
+          0
+        ],
+        [
+          7,
+          12,
+          18446744073709551493,
+          0,
+          0
+        ],
+        [
+          8,
+          0,
+          17360526335643560785,
+          0,
+          0
+        ],
+        [
+          5,
+          6,
+          2,
+          2,
+          0
+        ],
+        [
+          6,
+          1,
+          502,
+          1,
+          0
+        ],
+        [
+          7,
+          12,
+          18446744073709551493,
+          1,
+          0
+        ],
+        [
+          8,
+          0,
+          17360526335643560785,
+          1,
+          0
+        ],
+        [
+          5,
+          7,
+          2,
+          2,
+          0
+        ]
+      ]
+    },
+    {
+      "case": {
+        "id": 10,
+        "index": 6,
+        "timeframe": 15,
+        "after_first_frame": 16385,
+        "buy_reply": 1,
+        "sell_reply": 1,
+        "change_first_bar": 1,
+        "change_buy": 1,
+        "license_valid": 1,
+        "tick_management": 1,
+        "bar_override": 0,
+        "profile": 7,
+        "shrink_after_buy": 0,
+        "magic": -123,
+        "previous": 1000,
+        "observed": 1100,
+        "second": 1200,
+        "after_first_bar": 5000
+      },
+      "result": {
+        "id": 10,
+        "returned": 1,
+        "timeframe": 15,
+        "counter": 7,
+        "mode": 1,
+        "index": 7,
+        "events": 14,
+        "selected": 1,
+        "total_calls": 5,
+        "buy_calls": 0,
+        "sell_calls": 1,
+        "live_count": 2,
+        "last_ticket": 602,
+        "ordered_hash": 4745511695382262006,
+        "bar0": 100,
+        "bar1": 101,
+        "bar2": 102,
+        "bar3": 103,
+        "bar4": 104,
+        "bar5": 105,
+        "bar6": 1000,
+        "bar7": 107
+      },
+      "events": [
+        [
+          5,
+          1,
+          2,
+          2,
+          0
+        ],
+        [
+          5,
+          2,
+          0,
+          2,
+          0
+        ],
+        [
+          5,
+          3,
+          2,
+          2,
+          0
+        ],
+        [
+          6,
+          0,
+          601,
+          0,
+          0
+        ],
+        [
+          7,
+          12,
+          18446744073709551493,
+          0,
+          0
+        ],
+        [
+          8,
+          0,
+          5470890803951353603,
+          0,
+          0
+        ],
+        [
+          7,
+          2,
+          0,
+          0,
+          0
+        ],
+        [
+          5,
+          4,
+          2,
+          2,
+          0
+        ],
+        [
+          6,
+          1,
+          602,
+          1,
+          0
+        ],
+        [
+          7,
+          12,
+          18446744073709551493,
+          1,
+          0
+        ],
+        [
+          8,
+          0,
+          5470890803951353603,
+          1,
+          0
+        ],
+        [
+          7,
+          2,
+          1,
+          1,
+          0
+        ],
+        [
+          5,
+          5,
+          2,
+          2,
+          0
+        ],
+        [
+          3,
+          7,
+          1,
+          7,
+          4626322717216342016
+        ]
+      ]
+    }
+  ],
+  "whole_manager_complete": false,
+  "whole_bot_complete": false,
+  "full_ea": false,
+  "native_caller_slice_executed": true,
+  "child_helpers_intercepted": true,
+  "terminal_replies_supplied": true,
+  "original_ex5_changed": false
+}

@@ -24,8 +24,10 @@ Codex nối bộ chạy gốc, kiểm mã, biên dịch và so kết quả độ
 Lượt viết chương trình kiểm mới đã xác nhận19yêu cầu dùng Opus5.5max.
 Có yêu cầu ultracode, chưa xác nhận được chế độ này từ dữ liệu lúc chạy.
 [Biên nhận](danh-gia-claude/bot1-children-20261026-r1/dispatch.json).
-Lượt Claude rà độc lập mới chưa có phản hồi cuối tại thời điểm ghi báo cáo;
-không coi là đã được xác nhận. Các đánh giá trước chỉ áp cho phạm vi cũ.
+Claude đã rà độc lập và chưa thấy lỗi làm sai phép so trong phạm vi đã đọc.
+Đã xác nhận góp ý cần ghi rõ:352ca chưa kiểm đủ mở rộng/đầy bảng hoặc
+cấp phát thất bại. Giữ nguyên hồ sơ và nguồn đã kiểm; [nhận xét và giới hạn](danh-gia-claude/bot1-children-review-20261026-r1/REVIEW-NOTES.md).
+Các đánh giá trước chỉ áp cho phạm vi cũ.
 
 Giới hạn: dữ liệu trả từ MT5 và kết quả gửi vẫn được cấp trong bộ kiểm;
 chương trình không dừng, ghi thông báo giao dịch tắt, kiểu thực hiện2 và
@@ -42,3 +44,7 @@ PositionGetDouble(POSITION_VOLUME) theo mã gốc, giữ CORRECTION.md để tra
 Còn nối nơi gọi trong chương trình chính, cài đặt, điều kiện mua/bán,
 hiển thị, trạng thái lưu, lỗi và phép so toàn bot. Không lấy352ca làm
 phần trăm hoàn thành.
+
+Đã nối thêm nơi gọi quản lý theo lần nhận giá hoặc nến mới:1.536/1.536ca,
+biên dịch0/0. Giữ đúng đếm và thứ tự hai chiều, khung/ô đã chụp; hai thân
+quản lý được cấp trả lời trong lượt mới này. [Phạm vi nơi gọi](bot-cua-toi-1/phan-tich/chuong-trinh-chinh/management-router-20261026-r1/README.md).

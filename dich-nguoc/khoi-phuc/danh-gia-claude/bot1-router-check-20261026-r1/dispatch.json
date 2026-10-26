@@ -1,0 +1,117 @@
+{
+  "snapshot_utc": "2026-10-26T01:20:24.318882+00:00",
+  "jobs": [
+    {
+      "run": "bot1-main-router-check-20261026-r1",
+      "session_id": "81aeef7f-0794-431f-98fe-6e3fde4f74fa",
+      "started": "2026-10-26T01:07:04.2546518Z",
+      "snapshot_utc": "2026-10-26T01:20:24.318882+00:00",
+      "status": "delivered-unverified",
+      "response_is_error": false,
+      "terminal_reason": "completed",
+      "job_sha256": "5697c96a1712151747e0634820834b65fc8a4dd69eace02750a80b711b5295da",
+      "prompt_sha256": "79ff05dc7a81cb85967f257f4fe85870e16e55336e00e20fc2426281a7fc9759",
+      "response_sha256": "2a1c061a30c02685c8c6de25cb98c7c3c1921689553176198f6d20b61fc4c4ab",
+      "actual_requests": 17,
+      "requests": [
+        {
+          "timestamp": "2026-10-26T01:07:07.526Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-26T01:07:13.030Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-26T01:07:17.732Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-26T01:07:21.187Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-26T01:07:24.803Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-26T01:07:28.221Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-26T01:07:33.467Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-26T01:07:36.954Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-26T01:07:41.931Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-26T01:07:45.059Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-26T01:12:47.612Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-26T01:14:24.122Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-26T01:15:12.562Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-26T01:16:01.369Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-26T01:16:04.845Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-26T01:16:11.626Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        },
+        {
+          "timestamp": "2026-10-26T01:17:19.030Z",
+          "model": "claude-opus-5-5",
+          "effort": "max"
+        }
+      ],
+      "ultracode_requested": true,
+      "ultracode_runtime_confirmed": null,
+      "journal_prefix_bytes": 1526358,
+      "journal_prefix_sha256": "5bd410bb2800d67b1f4ee441a81f975b16a4a7516968c0f7b3a194312fc99550",
+      "files_sha256": {
+        "dich-nguoc/khoi-phuc/claude-thuc-hien/bot1-main-router-check-20261026-r1/Bot1ManagementRouterCheck.mq5": "e7f0be599d66d3d417da84d73b7e2cc84cb1e8509f5d4824f5ebcad9bb657b97",
+        "dich-nguoc/khoi-phuc/claude-thuc-hien/bot1-main-router-check-20261026-r1/router_cases.py": "3c63d0f22e3c2b3f71730298e70dbc61075c7f7b30dbb23b9e845e8eb2f5483f",
+        "dich-nguoc/khoi-phuc/claude-thuc-hien/bot1-main-router-check-20261026-r1/SUMMARY.md": "8d996b9072b3afc1bc3a2f2caa0c241bab7e69b0dbbfc0b23f141ad525216370"
+      },
+      "source_validated": false,
+      "whole_bot_complete": false
+    }
+  ],
+  "whole_bot_complete": false
+}

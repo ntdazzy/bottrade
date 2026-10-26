@@ -1,0 +1,80 @@
+{
+  "session_id": "3db4055c-8c12-4261-b239-448b7aa67c5d",
+  "actual_requests": 13,
+  "requests": [
+    {
+      "timestamp": "2026-10-26T00:54:04.421Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-26T00:54:15.016Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-26T00:54:21.726Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-26T00:54:25.827Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-26T00:54:31.017Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-26T00:58:37.386Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-26T00:59:38.492Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-26T00:59:51.848Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-26T01:00:00.973Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-26T01:05:00.591Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-26T01:05:35.229Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-26T01:06:30.666Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-26T01:09:22.696Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    }
+  ],
+  "ultracode_requested": true,
+  "ultracode_runtime_confirmed": null,
+  "journal_prefix_bytes": 1231807,
+  "journal_prefix_sha256": "b5ae6c3b3a88f15be3ff978fb765e0ef917af36eb0607de3e5316c8cfdd3365e",
+  "response_sha256": "f37f9cfdfb83cbb78765fe3d931b630235b2c80c64e27b6c2e0ac544c7e351d3",
+  "prompt_sha256": "2148ab9c139bdd57aecf5d4afd5adc4378d91a0933644bb4deaa6b377a0d2ee3",
+  "review_scope": "Static review of the new bot1 integrated table/trade check and supplied evidence; not a full EA review",
+  "source_validated": false,
+  "whole_bot_complete": false
+}

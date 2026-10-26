@@ -345,3 +345,13 @@
 
 /bot-cua-toi-1/bang-chung/bien-dich/b1-management-children-*/** -text
 /danh-gia-claude/bot1-children-*/** -text
+
+/bot-cua-toi-1/source/MQL5/Include/bot-cua-toi-1/Bot1ManagementRouter.mqh -text
+/bot-cua-toi-1/source/MQL5/Scripts/bot-cua-toi-1/Bot1ManagementRouterCheck.mq5 -text
+/bot-cua-toi-1/tests/check-management-router.py -text
+/bot-cua-toi-1/tests/router_cases.py -text
+/bot-cua-toi-1/phan-tich/chuong-trinh-chinh/management-router-*/** -text
+/bot-cua-toi-1/bang-chung/bien-dich/b1-management-router-*/** -text
+/claude-thuc-hien/bot1-main-router-*/** -text
+/danh-gia-claude/bot1-router-*/** -text
+/danh-gia-doc-lap/bot1-router-*/** -text
