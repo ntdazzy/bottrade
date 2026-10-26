@@ -1,5 +1,9 @@
 # bot-cua-toi-3
 
+Mới thêm khối chuẩn bị cài đặt chiến lược: **1.016/1.016 ca thường khớp**,
+so76giá trị, biên dịch **0 lỗi/0 cảnh báo**. Còn các nhánh lỗi, dữ liệu
+đầy đủ và ghép EA. [Phạm vi](../PHAN-TICH-CHUAN-BI-BOT-3.md).
+
 Đã kiểm cả vòng quản lý mua/bán thật/ảo: **364/364 ca khớp**,
 biên dịch **0 lỗi, 0 cảnh báo**. Có nhiều vị thế, đổi chế độ giữa vòng,
 lấy giá thất bại, sửa/đóng lỗi, vé64bit và bộ đếm tràn.

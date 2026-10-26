@@ -1,0 +1,13 @@
+{
+  "pid": 9392,
+  "started": "2026-10-26T01:35:56.5648967Z",
+  "model": "claude-opus-5-5",
+  "effort": "max",
+  "ultracode_requested": true,
+  "scope": "Write proposed analysis/code only within an explicitly assigned deliverable directory",
+  "output_directory": "dich-nguoc/khoi-phuc/claude-thuc-hien/bot3-preparation-check-20261026-r1",
+  "edit_rule": "Edit(./dich-nguoc/khoi-phuc/claude-thuc-hien/bot3-preparation-check-20261026-r1/**)",
+  "permission_mode": "dontAsk",
+  "prompt_sha256": "e44130b1d7c6e305bebdffa47e94335187f3526318aa720b2747a4c5c0b44fdc",
+  "resume": ""
+}

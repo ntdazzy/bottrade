@@ -1,0 +1,50 @@
+{
+  "original_ex5_sha256": "a3b0de423a06e10ebedc279307b93d7cb9188ba2bb5de77131a913c865b0e922",
+  "oracle_sha256": "60406997ecb72598e89440eb6ffca5c4ee45ff825f51425d089cc8b5bc254d49",
+  "results": [
+    {
+      "case_id": 92,
+      "buy": 0,
+      "positions": 3,
+      "manager_entries": [
+        {
+          "parent_rva": "0x2abc0",
+          "incoming_r12": "0x7ff6846f7df0"
+        }
+      ],
+      "manager_returns": [
+        {
+          "site": "0x1a5ef",
+          "returned": 1
+        }
+      ],
+      "router_stop_rva": "0x1a63a",
+      "router_abort": 1,
+      "sdk_calls": 68
+    },
+    {
+      "case_id": 94,
+      "buy": 1,
+      "positions": 3,
+      "manager_entries": [
+        {
+          "parent_rva": "0x271f0",
+          "incoming_r12": "0x7ff6846f7fc0"
+        }
+      ],
+      "manager_returns": [
+        {
+          "site": "0x1a436",
+          "returned": 1
+        }
+      ],
+      "router_stop_rva": "0x1a63a",
+      "router_abort": 1,
+      "sdk_calls": 70
+    }
+  ],
+  "original_bytes_patched": false,
+  "actual_native_router_and_parent_executed": true,
+  "terminal_and_child_replies_supplied": true,
+  "full_ea": false
+}

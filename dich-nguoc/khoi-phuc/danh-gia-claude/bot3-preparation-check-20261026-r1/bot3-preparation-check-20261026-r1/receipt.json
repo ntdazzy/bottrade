@@ -1,0 +1,145 @@
+{
+  "run": "bot3-preparation-check-20261026-r1",
+  "session_id": "a0fa97d9-303f-48b0-a4d0-97683e74b428",
+  "started": "2026-10-26T01:35:56.5648967Z",
+  "snapshot_utc": "2026-10-26T02:04:42.518159+00:00",
+  "status": "delivered-unverified",
+  "response_is_error": false,
+  "terminal_reason": "completed",
+  "job_sha256": "ef5408c63b4486c0d7cbf12cc3957b206a28b69ffbadb43de67587ae6e36e5cd",
+  "prompt_sha256": "e44130b1d7c6e305bebdffa47e94335187f3526318aa720b2747a4c5c0b44fdc",
+  "response_sha256": "1fc783183c48061fc7506fad3f80561fd1977d82a3170a61bdb6c70ce18a4329",
+  "actual_requests": 24,
+  "requests": [
+    {
+      "timestamp": "2026-10-26T01:35:57.783Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-26T01:36:05.685Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-26T01:36:12.318Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-26T01:36:18.616Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-26T01:36:25.591Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-26T01:36:30.619Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-26T01:38:16.167Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-26T01:38:25.920Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-26T01:38:32.459Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-26T01:40:36.871Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-26T01:40:43.505Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-26T01:40:50.844Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-26T01:43:19.850Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-26T01:43:27.025Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-26T01:43:43.890Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-26T01:44:08.083Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-26T01:44:18.987Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-26T01:48:25.510Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-26T01:48:40.913Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-26T01:51:03.192Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-26T01:51:57.319Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-26T01:52:06.944Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-26T01:52:21.407Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-26T01:54:21.324Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    }
+  ],
+  "ultracode_requested": true,
+  "ultracode_runtime_confirmed": null,
+  "journal_prefix_bytes": 2231577,
+  "journal_prefix_sha256": "9d6785c990f2452bf83e55f73d62fa867d3a5d940d143ae0df187bc200c3c215",
+  "files_sha256": {
+    "dich-nguoc/khoi-phuc/claude-thuc-hien/bot3-preparation-check-20261026-r1/Bot3PreparationCheck.mq5": "0e2fee45d5af254bb54546b7c56da52881fa42516f53e36238cdc4fb1df7bb45",
+    "dich-nguoc/khoi-phuc/claude-thuc-hien/bot3-preparation-check-20261026-r1/SUMMARY.md": "6f5f1421cc7b73f78e4bcf726533439aa7cd3cd1f3be9cfcf00b9824e3223758"
+  },
+  "source_validated": false,
+  "whole_bot_complete": false
+}

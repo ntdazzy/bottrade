@@ -1,0 +1,501 @@
+{
+  "base": "0x17156250000",
+  "legacy_numeric_outputs": [
+    {
+      "name": "scale",
+      "kind": "d",
+      "rva": "0x6d1c0"
+    },
+    {
+      "name": "lot_scale",
+      "kind": "d",
+      "rva": "0x6d1c8"
+    },
+    {
+      "name": "unit",
+      "kind": "d",
+      "rva": "0x73dd8"
+    },
+    {
+      "name": "spread",
+      "kind": "d",
+      "rva": "0x6d650"
+    },
+    {
+      "name": "max_spread",
+      "kind": "d",
+      "rva": "0x6d4d0"
+    },
+    {
+      "name": "feature_flag",
+      "kind": "B",
+      "rva": "0x6d4cc"
+    },
+    {
+      "name": "freeze_buffer",
+      "kind": "i",
+      "rva": "0x6d4d8"
+    },
+    {
+      "name": "entry_frame",
+      "kind": "i",
+      "rva": "0x6d524"
+    },
+    {
+      "name": "older_width",
+      "kind": "i",
+      "rva": "0x6d528"
+    },
+    {
+      "name": "recent_width",
+      "kind": "i",
+      "rva": "0x6d52c"
+    },
+    {
+      "name": "last_shift",
+      "kind": "i",
+      "rva": "0x6d530"
+    },
+    {
+      "name": "gap_points",
+      "kind": "d",
+      "rva": "0x6d538"
+    },
+    {
+      "name": "buy_offset",
+      "kind": "d",
+      "rva": "0x6d540"
+    },
+    {
+      "name": "sell_offset",
+      "kind": "d",
+      "rva": "0x6d548"
+    },
+    {
+      "name": "nearby_radius",
+      "kind": "d",
+      "rva": "0x6d558"
+    },
+    {
+      "name": "stop_distance",
+      "kind": "d",
+      "rva": "0x6d588"
+    },
+    {
+      "name": "target_distance",
+      "kind": "d",
+      "rva": "0x6d590"
+    },
+    {
+      "name": "trail_distance",
+      "kind": "d",
+      "rva": "0x6d598"
+    },
+    {
+      "name": "trail_start",
+      "kind": "d",
+      "rva": "0x6d5a0"
+    },
+    {
+      "name": "trail_limit",
+      "kind": "d",
+      "rva": "0x6d5a8"
+    },
+    {
+      "name": "trail_step",
+      "kind": "d",
+      "rva": "0x6d5b0"
+    },
+    {
+      "name": "trigger_distance",
+      "kind": "d",
+      "rva": "0x6d5b8"
+    },
+    {
+      "name": "locked_distance",
+      "kind": "d",
+      "rva": "0x6d5c0"
+    },
+    {
+      "name": "native_6d378",
+      "kind": "d",
+      "rva": "0x6d378"
+    },
+    {
+      "name": "native_6d380",
+      "kind": "d",
+      "rva": "0x6d380"
+    },
+    {
+      "name": "aux_frame",
+      "kind": "i",
+      "rva": "0x6d5cc"
+    },
+    {
+      "name": "aux_scan",
+      "kind": "i",
+      "rva": "0x6d5d0"
+    },
+    {
+      "name": "aux_older",
+      "kind": "i",
+      "rva": "0x6d5d4"
+    },
+    {
+      "name": "aux_recent",
+      "kind": "i",
+      "rva": "0x6d5d8"
+    },
+    {
+      "name": "aux_offset",
+      "kind": "d",
+      "rva": "0x6d5e0"
+    },
+    {
+      "name": "min_change",
+      "kind": "d",
+      "rva": "0x6d610"
+    },
+    {
+      "name": "stop_min_price",
+      "kind": "d",
+      "rva": "0x73ab0"
+    },
+    {
+      "name": "freeze_min_price",
+      "kind": "d",
+      "rva": "0x744a8"
+    },
+    {
+      "name": "expiration_seconds",
+      "kind": "I",
+      "rva": "0x73de0"
+    },
+    {
+      "name": "expiration",
+      "kind": "q",
+      "rva": "0x74490"
+    }
+  ],
+  "extra_inputs_outputs": [
+    {
+      "input_name": "native_6d250",
+      "input_kind": "d",
+      "input_rva": "0x6d250",
+      "output_name": "native_6d4e0",
+      "output_kind": "d",
+      "output_rva": "0x6d4e0"
+    },
+    {
+      "input_name": "native_6d258",
+      "input_kind": "B",
+      "input_rva": "0x6d258",
+      "output_name": "native_6d4e8",
+      "output_kind": "i",
+      "output_rva": "0x6d4e8"
+    },
+    {
+      "input_name": "native_6d260",
+      "input_kind": "d",
+      "input_rva": "0x6d260",
+      "output_name": "native_6d4f0",
+      "output_kind": "d",
+      "output_rva": "0x6d4f0"
+    },
+    {
+      "input_name": "native_6d268",
+      "input_kind": "d",
+      "input_rva": "0x6d268",
+      "output_name": "native_6d4f8",
+      "output_kind": "d",
+      "output_rva": "0x6d4f8"
+    },
+    {
+      "input_name": "native_6d270",
+      "input_kind": "d",
+      "input_rva": "0x6d270",
+      "output_name": "native_6d500",
+      "output_kind": "d",
+      "output_rva": "0x6d500"
+    },
+    {
+      "input_name": "native_6d278",
+      "input_kind": "B",
+      "input_rva": "0x6d278",
+      "output_name": "native_6d508",
+      "output_kind": "B",
+      "output_rva": "0x6d508"
+    },
+    {
+      "input_name": "native_1d6fa8",
+      "input_kind": "i",
+      "input_rva": "0x1d6fa8",
+      "output_name": "native_6d50c",
+      "output_kind": "i",
+      "output_rva": "0x6d50c"
+    },
+    {
+      "input_name": "native_1d6fc0",
+      "input_kind": "B",
+      "input_rva": "0x1d6fc0",
+      "output_name": "native_6d510",
+      "output_kind": "B",
+      "output_rva": "0x6d510"
+    },
+    {
+      "input_name": "virtual_stops",
+      "input_kind": "B",
+      "input_rva": "0x1d6fe0",
+      "output_name": "mode",
+      "output_kind": "i",
+      "output_rva": "0x6d514"
+    },
+    {
+      "input_name": "native_1d6fe8",
+      "input_kind": "i",
+      "input_rva": "0x1d6fe8",
+      "output_name": "native_6d518",
+      "output_kind": "i",
+      "output_rva": "0x6d518"
+    },
+    {
+      "input_name": "native_1d7178",
+      "input_kind": "B",
+      "input_rva": "0x1d7178",
+      "output_name": "native_6d51c",
+      "output_kind": "B",
+      "output_rva": "0x6d51c"
+    },
+    {
+      "input_name": "native_6d2a3",
+      "input_kind": "B",
+      "input_rva": "0x6d2a3",
+      "output_name": "native_6d520",
+      "output_kind": "i",
+      "output_rva": "0x6d520"
+    },
+    {
+      "input_name": "native_6d2e0",
+      "input_kind": "i",
+      "input_rva": "0x6d2e0",
+      "output_name": "native_6d550",
+      "output_kind": "i",
+      "output_rva": "0x6d550"
+    },
+    {
+      "input_name": "management_timeframe",
+      "input_kind": "i",
+      "input_rva": "0x6d324",
+      "output_name": "management_timeframe",
+      "output_kind": "i",
+      "output_rva": "0x6d584"
+    },
+    {
+      "input_name": "native_6d3f8",
+      "input_kind": "B",
+      "input_rva": "0x6d3f8",
+      "output_name": "native_6d608",
+      "output_kind": "i",
+      "output_rva": "0x6d608"
+    },
+    {
+      "input_name": "native_6d3f0",
+      "input_kind": "d",
+      "input_rva": "0x6d3f0",
+      "output_name": "native_6d600",
+      "output_kind": "d",
+      "output_rva": "0x6d600"
+    },
+    {
+      "input_name": "native_6d408",
+      "input_kind": "d",
+      "input_rva": "0x6d408",
+      "output_name": "native_6d618",
+      "output_kind": "d",
+      "output_rva": "0x6d618"
+    },
+    {
+      "input_name": "native_1d7138",
+      "input_kind": "d",
+      "input_rva": "0x1d7138",
+      "output_name": "native_6d620",
+      "output_kind": "d",
+      "output_rva": "0x6d620"
+    },
+    {
+      "input_name": "native_6d410",
+      "input_kind": "d",
+      "input_rva": "0x6d410",
+      "output_name": "native_6d628",
+      "output_kind": "d",
+      "output_rva": "0x6d628"
+    },
+    {
+      "input_name": "native_1d7130",
+      "input_kind": "i",
+      "input_rva": "0x1d7130",
+      "output_name": "native_6d630",
+      "output_kind": "i",
+      "output_rva": "0x6d630"
+    },
+    {
+      "input_name": "native_6d418",
+      "input_kind": "d",
+      "input_rva": "0x6d418",
+      "output_name": "native_6d638",
+      "output_kind": "d",
+      "output_rva": "0x6d638"
+    },
+    {
+      "input_name": "native_6d420",
+      "input_kind": "B",
+      "input_rva": "0x6d420",
+      "output_name": "native_6d640",
+      "output_kind": "i",
+      "output_rva": "0x6d640"
+    }
+  ],
+  "tail": [
+    {
+      "name": "native_6d5c8",
+      "kind": "B",
+      "rva": "0x6d5c8"
+    },
+    {
+      "name": "native_6d5f0",
+      "kind": "d",
+      "rva": "0x6d5f0"
+    },
+    {
+      "name": "native_6d5dc",
+      "kind": "B",
+      "rva": "0x6d5dc"
+    },
+    {
+      "name": "native_6d5e8",
+      "kind": "d",
+      "rva": "0x6d5e8"
+    },
+    {
+      "name": "native_6d5f8",
+      "kind": "B",
+      "rva": "0x6d5f8"
+    },
+    {
+      "name": "expiration_hours",
+      "kind": "i",
+      "rva": "0x6d560"
+    },
+    {
+      "name": "point",
+      "kind": "d",
+      "rva": "0x74968"
+    },
+    {
+      "name": "strategy_index",
+      "kind": "I",
+      "rva": "0x74934"
+    },
+    {
+      "name": "indicator_handle",
+      "kind": "i",
+      "rva": "0x6d178"
+    }
+  ],
+  "result_fields": [
+    "id",
+    "success",
+    "scale",
+    "lot_scale",
+    "unit",
+    "spread",
+    "max_spread",
+    "feature_flag",
+    "freeze_buffer",
+    "entry_frame",
+    "older_width",
+    "recent_width",
+    "last_shift",
+    "gap_points",
+    "buy_offset",
+    "sell_offset",
+    "nearby_radius",
+    "stop_distance",
+    "target_distance",
+    "trail_distance",
+    "trail_start",
+    "trail_limit",
+    "trail_step",
+    "trigger_distance",
+    "locked_distance",
+    "native_6d378",
+    "native_6d380",
+    "aux_frame",
+    "aux_scan",
+    "aux_older",
+    "aux_recent",
+    "aux_offset",
+    "min_change",
+    "stop_min_price",
+    "freeze_min_price",
+    "expiration_seconds",
+    "expiration",
+    "native_6d4e0",
+    "native_6d4e8",
+    "native_6d4f0",
+    "native_6d4f8",
+    "native_6d500",
+    "native_6d508",
+    "native_6d50c",
+    "native_6d510",
+    "mode",
+    "native_6d518",
+    "native_6d51c",
+    "native_6d520",
+    "native_6d550",
+    "management_timeframe",
+    "native_6d608",
+    "native_6d600",
+    "native_6d618",
+    "native_6d620",
+    "native_6d628",
+    "native_6d630",
+    "native_6d638",
+    "native_6d640",
+    "native_6d5c8",
+    "native_6d5f0",
+    "native_6d5dc",
+    "native_6d5e8",
+    "native_6d5f8",
+    "expiration_hours",
+    "point",
+    "strategy_index",
+    "indicator_handle",
+    "array_size",
+    "array_series",
+    "comment_hash",
+    "calls_iATR",
+    "calls_CopyBuffer",
+    "calls_iOpen",
+    "calls_SymbolInfoTick",
+    "calls_TimeCurrent",
+    "calls_SymbolInfoDouble",
+    "calls_SymbolInfoInteger"
+  ],
+  "output_words": 76,
+  "scope": {
+    "whole_manager_complete": false,
+    "whole_bot_complete": false,
+    "full_ea": false,
+    "full_preparation_body_executed": true,
+    "child_helpers_intercepted": false,
+    "terminal_replies_supplied": true,
+    "original_ex5_changed": false
+  },
+  "limits": [
+    "The full captured preparation function executes with supplied successful indicator/tick/market replies. All 76 listed words are compared, not the EA.",
+    "Only the 1,016 legacy successful finite cases run here; the 18 prior runtime-error cases are retained outside this cohort. No handle failure, CopyBuffer zero/negative, short-array, allocation-failure or new runtime-error proof.",
+    "Seven SDK call counts are compared. Tick/calendar contents beyond the listed outputs and mutations of settings during SDK calls are not compared in this cohort.",
+    "String allocation succeeds. The indicator has two supplied samples and its size/series are compared; no complete indicator or broker/lifecycle claim."
+  ]
+}

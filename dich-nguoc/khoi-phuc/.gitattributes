@@ -360,3 +360,15 @@
 /bot-cua-toi-2/phan-tich/ban-ex5-06/ma-trung-gian.c -text whitespace=-blank-at-eol,-blank-at-eof,cr-at-eol
 /bot-cua-toi-2/phan-tich/ban-ex5-06/diem-bat-dau-ham.txt -text
 /bot-cua-toi-2/phan-tich/ban-ex5-06/ket-qua-chup.json -text
+
+/bot-cua-toi-3/source/MQL5/Include/bot-cua-toi-3/Bot3Preparation.mqh -text
+/bot-cua-toi-3/source/MQL5/Scripts/bot-cua-toi-3/Bot3Preparation*.mq5 -text
+/bot-cua-toi-3/tests/check-preparation-full.py -text
+/bot-cua-toi-3/phan-tich/chuong-trinh-chinh/preparation-complete-*/** -text
+/bot-cua-toi-3/bang-chung/bien-dich/b3-preparation-*/** -text
+/claude-thuc-hien/bot3-preparation-*/** -text
+/danh-gia-claude/bot3-preparation-*/** -text
+/danh-gia-doc-lap/bot3-preparation-*/** -text
+
+/bot-cua-toi-3/source/MQL5/Include/bot-cua-toi-3/Bot3DistanceSettings.mqh -text
+/bot-cua-toi-3/source/MQL5/Include/bot-cua-toi-3/Bot3EntryProfiles.mqh -text

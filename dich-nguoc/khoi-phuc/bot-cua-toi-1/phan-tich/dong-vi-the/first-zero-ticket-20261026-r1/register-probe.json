@@ -1,0 +1,183 @@
+{
+  "original_ex5_sha256": "a3b0de423a06e10ebedc279307b93d7cb9188ba2bb5de77131a913c865b0e922",
+  "oracle_sha256": "60406997ecb72598e89440eb6ffca5c4ee45ff825f51425d089cc8b5bc254d49",
+  "case_source_sha256": "2d825bd01001180de9846f330dffcd19ae1f668944a00616c150987f33acc154",
+  "recorded_mql_run": "b1-manager-children-legacy-20261026-r1",
+  "results": [
+    {
+      "id": 4,
+      "buy": 0,
+      "positions": 1,
+      "mql_returned": 0,
+      "native": [
+        {
+          "incoming_r12": "0x0",
+          "returned": 0,
+          "different_fields": {}
+        },
+        {
+          "incoming_r12": "0x1",
+          "returned": 1,
+          "different_fields": {
+            "returned": [
+              1,
+              0
+            ]
+          }
+        },
+        {
+          "incoming_r12": "0x7ff6846f7fc0",
+          "returned": 1,
+          "different_fields": {
+            "returned": [
+              1,
+              0
+            ]
+          }
+        },
+        {
+          "incoming_r12": "0x7ff6846f7df0",
+          "returned": 1,
+          "different_fields": {
+            "returned": [
+              1,
+              0
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "buy": 1,
+      "positions": 1,
+      "mql_returned": 0,
+      "native": [
+        {
+          "incoming_r12": "0x0",
+          "returned": 0,
+          "different_fields": {}
+        },
+        {
+          "incoming_r12": "0x1",
+          "returned": 1,
+          "different_fields": {
+            "returned": [
+              1,
+              0
+            ]
+          }
+        },
+        {
+          "incoming_r12": "0x7ff6846f7fc0",
+          "returned": 1,
+          "different_fields": {
+            "returned": [
+              1,
+              0
+            ]
+          }
+        },
+        {
+          "incoming_r12": "0x7ff6846f7df0",
+          "returned": 1,
+          "different_fields": {
+            "returned": [
+              1,
+              0
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": 92,
+      "buy": 0,
+      "positions": 3,
+      "mql_returned": 0,
+      "native": [
+        {
+          "incoming_r12": "0x0",
+          "returned": 0,
+          "different_fields": {}
+        },
+        {
+          "incoming_r12": "0x1",
+          "returned": 1,
+          "different_fields": {
+            "returned": [
+              1,
+              0
+            ]
+          }
+        },
+        {
+          "incoming_r12": "0x7ff6846f7fc0",
+          "returned": 1,
+          "different_fields": {
+            "returned": [
+              1,
+              0
+            ]
+          }
+        },
+        {
+          "incoming_r12": "0x7ff6846f7df0",
+          "returned": 1,
+          "different_fields": {
+            "returned": [
+              1,
+              0
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": 94,
+      "buy": 1,
+      "positions": 3,
+      "mql_returned": 0,
+      "native": [
+        {
+          "incoming_r12": "0x0",
+          "returned": 0,
+          "different_fields": {}
+        },
+        {
+          "incoming_r12": "0x1",
+          "returned": 1,
+          "different_fields": {
+            "returned": [
+              1,
+              0
+            ]
+          }
+        },
+        {
+          "incoming_r12": "0x7ff6846f7fc0",
+          "returned": 1,
+          "different_fields": {
+            "returned": [
+              1,
+              0
+            ]
+          }
+        },
+        {
+          "incoming_r12": "0x7ff6846f7df0",
+          "returned": 1,
+          "different_fields": {
+            "returned": [
+              1,
+              0
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "original_bytes_patched": false,
+  "source_changed": false,
+  "scope": "Incoming-register-only probes of captured parents with supplied SDK/child replies; not a physical whole-EA proof."
+}

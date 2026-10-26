@@ -1,0 +1,12 @@
+{
+  "base": "0x17156250000",
+  "original_ex5_sha256": "ee063d3d87490afe24e2f4ce85f6b05659320e297b102efd70207f71ca2feb83",
+  "function": {
+    "rva": "0xe0c0",
+    "end": "0xef3f",
+    "sha256": "1e12d60da60e0727d7fc3eef9a05407e3ec6fb150cde4349f0fa1d50580bb0df"
+  },
+  "contract": "claude-thuc-hien/bot3-preparation-complete-20261026-r1/TASK.md",
+  "scope": "Complete captured body; semantic comparison remains scoped to listed words, ordinary cases and supplied terminal replies.",
+  "whole_bot_complete": false
+}
