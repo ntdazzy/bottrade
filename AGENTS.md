@@ -72,6 +72,6 @@
    Nêu đúng giới hạn bằng chứng; số ca kiểm đạt không phải tỷ lệ hoàn
    thành toàn bộ bot.
 
-Ưu tiên hiện tại: bot 1 và bot 3. Dùng MT5 riêng cho kiểm thử, không gửi
+Ưu tiên hiện tại: bot 1 và bot 3; bắt đầu phân tích bot 2 song song theo yêu cầu ngày 26/10/2026. Dùng MT5 riêng cho kiểm thử, không gửi
 lệnh lên tài khoản thật, không sửa EX5 gốc, khóa bản quyền hoặc MT5 chính.
 Quy trình chi tiết: `dich-nguoc/khoi-phuc/tai-lieu-cu/QUY-TRINH.md`.

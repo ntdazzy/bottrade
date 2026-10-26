@@ -1,0 +1,17 @@
+{
+  "original_ex5_sha256": "390d8ab14fc213ff4b8cbe5084bec545526e62c6028516fe21219a59398ce795",
+  "code_sha256": "ae4e9020f7f5f08d49774728bed14c17eb2bd26b6271c20da51bd3aaa446014f",
+  "native_function": {
+    "begin_rva": "0xc30",
+    "end_rva": "0x58ca",
+    "unwind_rva": "0x4c0f0"
+  },
+  "native_function_sha256": "398d60ba86acd940c2045b791f68d4b9adff37ddd1f10bb567bd8a5c5c45fd05",
+  "initial_c_sha256": "35358f89287c0beb556df14301cf0c0344f8f1ee5eaf5e51476c41180323c8dd",
+  "retry_c_sha256": "5aa8b18a6186ac87f16ed2baebbd5aeae89ce3287b74b65fc4a1bdfa8997eea4",
+  "full_c_sha256": "445a0e71fb7aac36d64a2e9724270468e0b61c24edcf5246471497cde1ca28f3",
+  "replacement": "Only the failed0xc30 export block is replaced in a new output; initial evidence retained.",
+  "whole_bot_complete": false,
+  "c_exported_function_count": 86,
+  "source_is_recovered_mql5": false
+}

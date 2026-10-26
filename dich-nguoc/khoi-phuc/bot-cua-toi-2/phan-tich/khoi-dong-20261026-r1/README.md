@@ -36,3 +36,15 @@ Dùng call-map-v2.py với --json và --md trỏ hai tên đầu ra MỚI khác 
 không ghi đè hồ sơ cũ. Các bảng chỉ là phân tích C, chưa là nguồn EA.
 README-initial-superseded.md và inputs.json giữ nhận định ban đầu để
 tra; kết luận hiện hành về hai bản nằm ở đây và inputs-r2.json.
+
+
+## Bản chụp mới đã có
+
+Ngày26/10đã chạy lại đúng EX5 bảnđãcài trongmáythửriêng,PID27580,
+engine5033d9..., codebase0x253f2620000. Đã kiểm86dải hàm,680chuỗi,
+141nhãndịchvụ/81chữký. Lượt xuất đầu85thànhcông/1hếttimeout; lần
+thửriêng300giây đãxuấtxong0xc30, ghép tệp C đầy đủMỚI, giữlượtđầu.
+Danh sách hiện hành trong ../luot-20261026-data-r2/inventory-v3/.
+
+Những ghi chú thiếubảnchụp/mapping-pending trước đây là trạng thái cũ;
+hiện có đủbảnchụpđểphântíchtiếp, chưa hiểu xong mọi hàm hoặc cóMQL5.

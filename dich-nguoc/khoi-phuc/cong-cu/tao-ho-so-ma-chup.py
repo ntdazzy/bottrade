@@ -14,7 +14,7 @@ import re
 import struct
 
 ap = argparse.ArgumentParser(description=__doc__)
-ap.add_argument('bot', type=int, choices=(1, 3))
+ap.add_argument('bot', type=int, choices=(1, 2, 3))
 ap.add_argument('capture', type=Path)
 ap.add_argument('engine', type=Path)
 ap.add_argument('out', type=Path)

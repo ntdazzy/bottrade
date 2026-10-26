@@ -1,0 +1,375 @@
+{
+  "files": [
+    {
+      "name": "bot-cua-toi-2_HighRisk_Max50DD.set",
+      "bytes": 5167,
+      "sha256": "3bdeba636532cc3ba5c739a2823702b2a55d5f1c6383706df60e1c1c088c6d5f"
+    },
+    {
+      "name": "bot-cua-toi-2_LowRisk_Max15DD.set",
+      "bytes": 5166,
+      "sha256": "e6d8d6218f3cd6f8cac8fdb1c2923a221d306d04449777563952d41b93ed9daf"
+    },
+    {
+      "name": "bot-cua-toi-2_MediumRisk_Max30DD.set",
+      "bytes": 5166,
+      "sha256": "cfe384ec07cbbfa02c86c23e913f4cb4b5c70837bebaeda42e039d7667af93d9"
+    },
+    {
+      "name": "bot-cua-toi-2_PropFirm_10_5.set",
+      "bytes": 5166,
+      "sha256": "f3c0a348e081d07d9277be95af0eaeb9efb8e4b11b714ba3e4b2b1f7f54097f9"
+    },
+    {
+      "name": "bot-cua-toi-2_PropFirm_5_2.5.set",
+      "bytes": 5166,
+      "sha256": "e2ea32de00a41f38d94ee3429230a8a09a040f0a759e9c8fcfb4dd9890222fc8"
+    }
+  ],
+  "note": "Chỉ lấy dòng key=value cơ sở; hậu tố ,F/,1/,2/,3/ được giữ riêng và không coi là input khác.",
+  "inputs": {
+    "AdjustBE": {
+      "bot-cua-toi-2_HighRisk_Max50DD.set": "0.00000000",
+      "bot-cua-toi-2_LowRisk_Max15DD.set": "0.00000000",
+      "bot-cua-toi-2_MediumRisk_Max30DD.set": "0.00000000",
+      "bot-cua-toi-2_PropFirm_10_5.set": "0.00000000",
+      "bot-cua-toi-2_PropFirm_5_2.5.set": "0.00000000"
+    },
+    "AdjustEntry": {
+      "bot-cua-toi-2_HighRisk_Max50DD.set": "0.00000000",
+      "bot-cua-toi-2_LowRisk_Max15DD.set": "0.00000000",
+      "bot-cua-toi-2_MediumRisk_Max30DD.set": "0.00000000",
+      "bot-cua-toi-2_PropFirm_10_5.set": "0.00000000",
+      "bot-cua-toi-2_PropFirm_5_2.5.set": "0.00000000"
+    },
+    "AdjustLotsizeToVariableValues": {
+      "bot-cua-toi-2_HighRisk_Max50DD.set": "1",
+      "bot-cua-toi-2_LowRisk_Max15DD.set": "1",
+      "bot-cua-toi-2_MediumRisk_Max30DD.set": "1",
+      "bot-cua-toi-2_PropFirm_10_5.set": "1",
+      "bot-cua-toi-2_PropFirm_5_2.5.set": "1"
+    },
+    "AdjustSL": {
+      "bot-cua-toi-2_HighRisk_Max50DD.set": "0.00000000",
+      "bot-cua-toi-2_LowRisk_Max15DD.set": "0.00000000",
+      "bot-cua-toi-2_MediumRisk_Max30DD.set": "0.00000000",
+      "bot-cua-toi-2_PropFirm_10_5.set": "0.00000000",
+      "bot-cua-toi-2_PropFirm_5_2.5.set": "0.00000000"
+    },
+    "AdjustTP": {
+      "bot-cua-toi-2_HighRisk_Max50DD.set": "0.00000000",
+      "bot-cua-toi-2_LowRisk_Max15DD.set": "0.00000000",
+      "bot-cua-toi-2_MediumRisk_Max30DD.set": "0.00000000",
+      "bot-cua-toi-2_PropFirm_10_5.set": "0.00000000",
+      "bot-cua-toi-2_PropFirm_5_2.5.set": "0.00000000"
+    },
+    "AdjustTrailSL": {
+      "bot-cua-toi-2_HighRisk_Max50DD.set": "0.00000000",
+      "bot-cua-toi-2_LowRisk_Max15DD.set": "0.00000000",
+      "bot-cua-toi-2_MediumRisk_Max30DD.set": "0.00000000",
+      "bot-cua-toi-2_PropFirm_10_5.set": "0.00000000",
+      "bot-cua-toi-2_PropFirm_5_2.5.set": "0.00000000"
+    },
+    "AllowBuyTrades": {
+      "bot-cua-toi-2_HighRisk_Max50DD.set": "1",
+      "bot-cua-toi-2_LowRisk_Max15DD.set": "1",
+      "bot-cua-toi-2_MediumRisk_Max30DD.set": "1",
+      "bot-cua-toi-2_PropFirm_10_5.set": "1",
+      "bot-cua-toi-2_PropFirm_5_2.5.set": "1"
+    },
+    "AllowSellTrades": {
+      "bot-cua-toi-2_HighRisk_Max50DD.set": "1",
+      "bot-cua-toi-2_LowRisk_Max15DD.set": "1",
+      "bot-cua-toi-2_MediumRisk_Max30DD.set": "1",
+      "bot-cua-toi-2_PropFirm_10_5.set": "1",
+      "bot-cua-toi-2_PropFirm_5_2.5.set": "1"
+    },
+    "AutoGMT": {
+      "bot-cua-toi-2_HighRisk_Max50DD.set": "1",
+      "bot-cua-toi-2_LowRisk_Max15DD.set": "1",
+      "bot-cua-toi-2_MediumRisk_Max30DD.set": "1",
+      "bot-cua-toi-2_PropFirm_10_5.set": "1",
+      "bot-cua-toi-2_PropFirm_5_2.5.set": "1"
+    },
+    "Broker_GMT_OFFSET_Summer": {
+      "bot-cua-toi-2_HighRisk_Max50DD.set": "3",
+      "bot-cua-toi-2_LowRisk_Max15DD.set": "3",
+      "bot-cua-toi-2_MediumRisk_Max30DD.set": "3",
+      "bot-cua-toi-2_PropFirm_10_5.set": "3",
+      "bot-cua-toi-2_PropFirm_5_2.5.set": "3"
+    },
+    "Broker_GMT_OFFSET_Winter": {
+      "bot-cua-toi-2_HighRisk_Max50DD.set": "2",
+      "bot-cua-toi-2_LowRisk_Max15DD.set": "2",
+      "bot-cua-toi-2_MediumRisk_Max30DD.set": "2",
+      "bot-cua-toi-2_PropFirm_10_5.set": "2",
+      "bot-cua-toi-2_PropFirm_5_2.5.set": "2"
+    },
+    "CheckMargin": {
+      "bot-cua-toi-2_HighRisk_Max50DD.set": "1",
+      "bot-cua-toi-2_LowRisk_Max15DD.set": "1",
+      "bot-cua-toi-2_MediumRisk_Max30DD.set": "1",
+      "bot-cua-toi-2_PropFirm_10_5.set": "1",
+      "bot-cua-toi-2_PropFirm_5_2.5.set": "1"
+    },
+    "EnableNFP_Filter": {
+      "bot-cua-toi-2_HighRisk_Max50DD.set": "1",
+      "bot-cua-toi-2_LowRisk_Max15DD.set": "1",
+      "bot-cua-toi-2_MediumRisk_Max30DD.set": "1",
+      "bot-cua-toi-2_PropFirm_10_5.set": "1",
+      "bot-cua-toi-2_PropFirm_5_2.5.set": "1"
+    },
+    "FakeOutFilter": {
+      "bot-cua-toi-2_HighRisk_Max50DD.set": "1",
+      "bot-cua-toi-2_LowRisk_Max15DD.set": "1",
+      "bot-cua-toi-2_MediumRisk_Max30DD.set": "1",
+      "bot-cua-toi-2_PropFirm_10_5.set": "1",
+      "bot-cua-toi-2_PropFirm_5_2.5.set": "1"
+    },
+    "FridayStopHour": {
+      "bot-cua-toi-2_HighRisk_Max50DD.set": "25",
+      "bot-cua-toi-2_LowRisk_Max15DD.set": "25",
+      "bot-cua-toi-2_MediumRisk_Max30DD.set": "25",
+      "bot-cua-toi-2_PropFirm_10_5.set": "25",
+      "bot-cua-toi-2_PropFirm_5_2.5.set": "25"
+    },
+    "InfoPanelSizeAdjust": {
+      "bot-cua-toi-2_HighRisk_Max50DD.set": "1.00000000",
+      "bot-cua-toi-2_LowRisk_Max15DD.set": "1.00000000",
+      "bot-cua-toi-2_MediumRisk_Max30DD.set": "1.00000000",
+      "bot-cua-toi-2_PropFirm_10_5.set": "1.00000000",
+      "bot-cua-toi-2_PropFirm_5_2.5.set": "1.00000000"
+    },
+    "LotPerBalance_step": {
+      "bot-cua-toi-2_HighRisk_Max50DD.set": "1000",
+      "bot-cua-toi-2_LowRisk_Max15DD.set": "1000",
+      "bot-cua-toi-2_MediumRisk_Max30DD.set": "1000",
+      "bot-cua-toi-2_PropFirm_10_5.set": "1000",
+      "bot-cua-toi-2_PropFirm_5_2.5.set": "1000"
+    },
+    "LotSizeSettings": {
+      "bot-cua-toi-2_HighRisk_Max50DD.set": "----------------------- LotSize Settings -----------------------",
+      "bot-cua-toi-2_LowRisk_Max15DD.set": "----------------------- LotSize Settings -----------------------",
+      "bot-cua-toi-2_MediumRisk_Max30DD.set": "----------------------- LotSize Settings -----------------------",
+      "bot-cua-toi-2_PropFirm_10_5.set": "----------------------- LotSize Settings -----------------------",
+      "bot-cua-toi-2_PropFirm_5_2.5.set": "----------------------- LotSize Settings -----------------------"
+    },
+    "ManualBalance": {
+      "bot-cua-toi-2_HighRisk_Max50DD.set": "0.00000000",
+      "bot-cua-toi-2_LowRisk_Max15DD.set": "0.00000000",
+      "bot-cua-toi-2_MediumRisk_Max30DD.set": "0.00000000",
+      "bot-cua-toi-2_PropFirm_10_5.set": "0.00000000",
+      "bot-cua-toi-2_PropFirm_5_2.5.set": "0.00000000"
+    },
+    "MaxRiskPerStrategy": {
+      "bot-cua-toi-2_HighRisk_Max50DD.set": "10.00000000",
+      "bot-cua-toi-2_LowRisk_Max15DD.set": "3.00000000",
+      "bot-cua-toi-2_MediumRisk_Max30DD.set": "6.00000000",
+      "bot-cua-toi-2_PropFirm_10_5.set": "2.00000000",
+      "bot-cua-toi-2_PropFirm_5_2.5.set": "1.00000000"
+    },
+    "MaxSpread": {
+      "bot-cua-toi-2_HighRisk_Max50DD.set": "500.00000000",
+      "bot-cua-toi-2_LowRisk_Max15DD.set": "500.00000000",
+      "bot-cua-toi-2_MediumRisk_Max30DD.set": "500.00000000",
+      "bot-cua-toi-2_PropFirm_10_5.set": "500.00000000",
+      "bot-cua-toi-2_PropFirm_5_2.5.set": "500.00000000"
+    },
+    "NFP_CloseOpenTrades": {
+      "bot-cua-toi-2_HighRisk_Max50DD.set": "1",
+      "bot-cua-toi-2_LowRisk_Max15DD.set": "1",
+      "bot-cua-toi-2_MediumRisk_Max30DD.set": "1",
+      "bot-cua-toi-2_PropFirm_10_5.set": "1",
+      "bot-cua-toi-2_PropFirm_5_2.5.set": "1"
+    },
+    "NFP_ClosePendingOrders": {
+      "bot-cua-toi-2_HighRisk_Max50DD.set": "1",
+      "bot-cua-toi-2_LowRisk_Max15DD.set": "1",
+      "bot-cua-toi-2_MediumRisk_Max30DD.set": "1",
+      "bot-cua-toi-2_PropFirm_10_5.set": "1",
+      "bot-cua-toi-2_PropFirm_5_2.5.set": "1"
+    },
+    "NFP_FILTER": {
+      "bot-cua-toi-2_HighRisk_Max50DD.set": "----------------------- NFP Filter -----------------------",
+      "bot-cua-toi-2_LowRisk_Max15DD.set": "----------------------- NFP Filter -----------------------",
+      "bot-cua-toi-2_MediumRisk_Max30DD.set": "----------------------- NFP Filter -----------------------",
+      "bot-cua-toi-2_PropFirm_10_5.set": "----------------------- NFP Filter -----------------------",
+      "bot-cua-toi-2_PropFirm_5_2.5.set": "----------------------- NFP Filter -----------------------"
+    },
+    "NFP_MinutesAfter": {
+      "bot-cua-toi-2_HighRisk_Max50DD.set": "50",
+      "bot-cua-toi-2_LowRisk_Max15DD.set": "50",
+      "bot-cua-toi-2_MediumRisk_Max30DD.set": "50",
+      "bot-cua-toi-2_PropFirm_10_5.set": "50",
+      "bot-cua-toi-2_PropFirm_5_2.5.set": "50"
+    },
+    "NFP_MinutesBefore": {
+      "bot-cua-toi-2_HighRisk_Max50DD.set": "180",
+      "bot-cua-toi-2_LowRisk_Max15DD.set": "180",
+      "bot-cua-toi-2_MediumRisk_Max30DD.set": "180",
+      "bot-cua-toi-2_PropFirm_10_5.set": "180",
+      "bot-cua-toi-2_PropFirm_5_2.5.set": "180"
+    },
+    "OnlyUp": {
+      "bot-cua-toi-2_HighRisk_Max50DD.set": "0",
+      "bot-cua-toi-2_LowRisk_Max15DD.set": "0",
+      "bot-cua-toi-2_MediumRisk_Max30DD.set": "0",
+      "bot-cua-toi-2_PropFirm_10_5.set": "0",
+      "bot-cua-toi-2_PropFirm_5_2.5.set": "0"
+    },
+    "PropFirmMaxDailyDD": {
+      "bot-cua-toi-2_HighRisk_Max50DD.set": "0.00000000",
+      "bot-cua-toi-2_LowRisk_Max15DD.set": "0.00000000",
+      "bot-cua-toi-2_MediumRisk_Max30DD.set": "0.00000000",
+      "bot-cua-toi-2_PropFirm_10_5.set": "4.00000000",
+      "bot-cua-toi-2_PropFirm_5_2.5.set": "2.00000000"
+    },
+    "Randomization": {
+      "bot-cua-toi-2_HighRisk_Max50DD.set": "0.00000000",
+      "bot-cua-toi-2_LowRisk_Max15DD.set": "0.00000000",
+      "bot-cua-toi-2_MediumRisk_Max30DD.set": "0.00000000",
+      "bot-cua-toi-2_PropFirm_10_5.set": "0.00000000",
+      "bot-cua-toi-2_PropFirm_5_2.5.set": "0.00000000"
+    },
+    "RemoveCommentSuffix": {
+      "bot-cua-toi-2_HighRisk_Max50DD.set": "0",
+      "bot-cua-toi-2_LowRisk_Max15DD.set": "0",
+      "bot-cua-toi-2_MediumRisk_Max30DD.set": "0",
+      "bot-cua-toi-2_PropFirm_10_5.set": "0",
+      "bot-cua-toi-2_PropFirm_5_2.5.set": "0"
+    },
+    "Risk": {
+      "bot-cua-toi-2_HighRisk_Max50DD.set": "3",
+      "bot-cua-toi-2_LowRisk_Max15DD.set": "3",
+      "bot-cua-toi-2_MediumRisk_Max30DD.set": "3",
+      "bot-cua-toi-2_PropFirm_10_5.set": "3",
+      "bot-cua-toi-2_PropFirm_5_2.5.set": "3"
+    },
+    "RunStrategyA": {
+      "bot-cua-toi-2_HighRisk_Max50DD.set": "1",
+      "bot-cua-toi-2_LowRisk_Max15DD.set": "1",
+      "bot-cua-toi-2_MediumRisk_Max30DD.set": "1",
+      "bot-cua-toi-2_PropFirm_10_5.set": "1",
+      "bot-cua-toi-2_PropFirm_5_2.5.set": "1"
+    },
+    "RunStrategyB": {
+      "bot-cua-toi-2_HighRisk_Max50DD.set": "1",
+      "bot-cua-toi-2_LowRisk_Max15DD.set": "1",
+      "bot-cua-toi-2_MediumRisk_Max30DD.set": "1",
+      "bot-cua-toi-2_PropFirm_10_5.set": "1",
+      "bot-cua-toi-2_PropFirm_5_2.5.set": "1"
+    },
+    "RunStrategyC": {
+      "bot-cua-toi-2_HighRisk_Max50DD.set": "1",
+      "bot-cua-toi-2_LowRisk_Max15DD.set": "1",
+      "bot-cua-toi-2_MediumRisk_Max30DD.set": "1",
+      "bot-cua-toi-2_PropFirm_10_5.set": "1",
+      "bot-cua-toi-2_PropFirm_5_2.5.set": "1"
+    },
+    "RunStrategyD": {
+      "bot-cua-toi-2_HighRisk_Max50DD.set": "1",
+      "bot-cua-toi-2_LowRisk_Max15DD.set": "1",
+      "bot-cua-toi-2_MediumRisk_Max30DD.set": "1",
+      "bot-cua-toi-2_PropFirm_10_5.set": "1",
+      "bot-cua-toi-2_PropFirm_5_2.5.set": "1"
+    },
+    "RunStrategyE": {
+      "bot-cua-toi-2_HighRisk_Max50DD.set": "1",
+      "bot-cua-toi-2_LowRisk_Max15DD.set": "1",
+      "bot-cua-toi-2_MediumRisk_Max30DD.set": "1",
+      "bot-cua-toi-2_PropFirm_10_5.set": "1",
+      "bot-cua-toi-2_PropFirm_5_2.5.set": "1"
+    },
+    "RunStrategyF": {
+      "bot-cua-toi-2_HighRisk_Max50DD.set": "1",
+      "bot-cua-toi-2_LowRisk_Max15DD.set": "1",
+      "bot-cua-toi-2_MediumRisk_Max30DD.set": "1",
+      "bot-cua-toi-2_PropFirm_10_5.set": "1",
+      "bot-cua-toi-2_PropFirm_5_2.5.set": "1"
+    },
+    "RunStrategyG": {
+      "bot-cua-toi-2_HighRisk_Max50DD.set": "1",
+      "bot-cua-toi-2_LowRisk_Max15DD.set": "1",
+      "bot-cua-toi-2_MediumRisk_Max30DD.set": "1",
+      "bot-cua-toi-2_PropFirm_10_5.set": "1",
+      "bot-cua-toi-2_PropFirm_5_2.5.set": "1"
+    },
+    "RunStrategyH": {
+      "bot-cua-toi-2_HighRisk_Max50DD.set": "1",
+      "bot-cua-toi-2_LowRisk_Max15DD.set": "1",
+      "bot-cua-toi-2_MediumRisk_Max30DD.set": "1",
+      "bot-cua-toi-2_PropFirm_10_5.set": "1",
+      "bot-cua-toi-2_PropFirm_5_2.5.set": "1"
+    },
+    "ST1_Comment": {
+      "bot-cua-toi-2_HighRisk_Max50DD.set": "bot-cua-toi-2",
+      "bot-cua-toi-2_LowRisk_Max15DD.set": "bot-cua-toi-2",
+      "bot-cua-toi-2_MediumRisk_Max30DD.set": "bot-cua-toi-2",
+      "bot-cua-toi-2_PropFirm_10_5.set": "bot-cua-toi-2",
+      "bot-cua-toi-2_PropFirm_5_2.5.set": "bot-cua-toi-2"
+    },
+    "ST1_MagicNumber": {
+      "bot-cua-toi-2_HighRisk_Max50DD.set": "2000",
+      "bot-cua-toi-2_LowRisk_Max15DD.set": "2000",
+      "bot-cua-toi-2_MediumRisk_Max30DD.set": "2000",
+      "bot-cua-toi-2_PropFirm_10_5.set": "2000",
+      "bot-cua-toi-2_PropFirm_5_2.5.set": "2000"
+    },
+    "ShowInfoPanel": {
+      "bot-cua-toi-2_HighRisk_Max50DD.set": "1",
+      "bot-cua-toi-2_LowRisk_Max15DD.set": "1",
+      "bot-cua-toi-2_MediumRisk_Max30DD.set": "1",
+      "bot-cua-toi-2_PropFirm_10_5.set": "1",
+      "bot-cua-toi-2_PropFirm_5_2.5.set": "1"
+    },
+    "StartLots": {
+      "bot-cua-toi-2_HighRisk_Max50DD.set": "0.01000000",
+      "bot-cua-toi-2_LowRisk_Max15DD.set": "0.01000000",
+      "bot-cua-toi-2_MediumRisk_Max30DD.set": "0.01000000",
+      "bot-cua-toi-2_PropFirm_10_5.set": "0.01000000",
+      "bot-cua-toi-2_PropFirm_5_2.5.set": "0.01000000"
+    },
+    "UpdateInfoTesting": {
+      "bot-cua-toi-2_HighRisk_Max50DD.set": "0",
+      "bot-cua-toi-2_LowRisk_Max15DD.set": "0",
+      "bot-cua-toi-2_MediumRisk_Max30DD.set": "0",
+      "bot-cua-toi-2_PropFirm_10_5.set": "0",
+      "bot-cua-toi-2_PropFirm_5_2.5.set": "0"
+    },
+    "UseEquity": {
+      "bot-cua-toi-2_HighRisk_Max50DD.set": "0",
+      "bot-cua-toi-2_LowRisk_Max15DD.set": "0",
+      "bot-cua-toi-2_MediumRisk_Max30DD.set": "0",
+      "bot-cua-toi-2_PropFirm_10_5.set": "0",
+      "bot-cua-toi-2_PropFirm_5_2.5.set": "0"
+    },
+    "Virtual_expiration": {
+      "bot-cua-toi-2_HighRisk_Max50DD.set": "1",
+      "bot-cua-toi-2_LowRisk_Max15DD.set": "1",
+      "bot-cua-toi-2_MediumRisk_Max30DD.set": "1",
+      "bot-cua-toi-2_PropFirm_10_5.set": "1",
+      "bot-cua-toi-2_PropFirm_5_2.5.set": "1"
+    },
+    "propfirmsettings": {
+      "bot-cua-toi-2_HighRisk_Max50DD.set": "----------------------- Propfirm unique trades settings -----------------------",
+      "bot-cua-toi-2_LowRisk_Max15DD.set": "----------------------- Propfirm unique trades settings -----------------------",
+      "bot-cua-toi-2_MediumRisk_Max30DD.set": "----------------------- Propfirm unique trades settings -----------------------",
+      "bot-cua-toi-2_PropFirm_10_5.set": "----------------------- Propfirm unique trades settings -----------------------",
+      "bot-cua-toi-2_PropFirm_5_2.5.set": "----------------------- Propfirm unique trades settings -----------------------"
+    },
+    "setSL_TP_After_Entry": {
+      "bot-cua-toi-2_HighRisk_Max50DD.set": "0",
+      "bot-cua-toi-2_LowRisk_Max15DD.set": "0",
+      "bot-cua-toi-2_MediumRisk_Max30DD.set": "0",
+      "bot-cua-toi-2_PropFirm_10_5.set": "0",
+      "bot-cua-toi-2_PropFirm_5_2.5.set": "0"
+    },
+    "spreadfilter": {
+      "bot-cua-toi-2_HighRisk_Max50DD.set": "------------------------------ Settings ------------------------------",
+      "bot-cua-toi-2_LowRisk_Max15DD.set": "------------------------------ Settings ------------------------------",
+      "bot-cua-toi-2_MediumRisk_Max30DD.set": "------------------------------ Settings ------------------------------",
+      "bot-cua-toi-2_PropFirm_10_5.set": "------------------------------ Settings ------------------------------",
+      "bot-cua-toi-2_PropFirm_5_2.5.set": "------------------------------ Settings ------------------------------"
+    }
+  }
+}

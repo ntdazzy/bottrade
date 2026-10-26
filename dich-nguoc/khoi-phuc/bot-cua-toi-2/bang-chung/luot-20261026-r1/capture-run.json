@@ -1,0 +1,23 @@
+{
+  "bot": 2,
+  "source": "C:\\Users\\NTD\\Desktop\\BotTradeEA\\local\\market-demos-20261020\\dich-nguoc-luot2\\terminal\\MQL5\\Experts\\Market\\Goldbot One MT5.ex5",
+  "source_sha256": "390d8ab14fc213ff4b8cbe5084bec545526e62c6028516fe21219a59398ce795",
+  "tester_sha256": "5033d9d45d669cebd735e8a6be20b54d74b75274f885c9a0e48e52d872104efb",
+  "job": {
+    "id": "b2-luot-20261026-r1",
+    "expert": "Market\\Goldbot One MT5.ex5",
+    "symbol": "XAUUSD_NOCOST_V2",
+    "period": "D1",
+    "model": 0,
+    "from": "2026.09.29",
+    "to": "2026.10.20",
+    "timeout": 300,
+    "inputs": {
+      "AutoGMT": "false",
+      "Broker_GMT_OFFSET_Winter": "0",
+      "Broker_GMT_OFFSET_Summer": "0"
+    }
+  },
+  "tester_pid": 27580,
+  "engine_base": "0x7ff79ff60000"
+}

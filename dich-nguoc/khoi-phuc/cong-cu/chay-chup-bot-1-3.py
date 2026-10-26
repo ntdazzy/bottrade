@@ -1,7 +1,7 @@
 """Run one original bot in the private Strategy Tester and capture its code/data.
 
 Usage from project root: python -I -B -X utf8 dich-nguoc/khoi-phuc/cong-cu/chay-chup-bot-1-3.py 1 RUN
-Bot must be 1 or 3. RUN must be new. Existing evidence and originals are never overwritten.
+Bot must be 1, 2 or 3. RUN must be new. Existing evidence and originals are never overwritten.
 The account is the already authorized demo used by this project's private tester.
 """
 import argparse
@@ -15,7 +15,7 @@ import sys
 import time
 
 ap = argparse.ArgumentParser(description=__doc__)
-ap.add_argument('bot', type=int, choices=(1, 3))
+ap.add_argument('bot', type=int, choices=(1, 2, 3))
 ap.add_argument('run')
 a = ap.parse_args()
 if not re.fullmatch('[a-z0-9-]+', a.run):
@@ -23,9 +23,12 @@ if not re.fullmatch('[a-z0-9-]+', a.run):
 root = Path(__file__).resolve().parents[1]
 mt = root.parent / '.local/claude-recovery-20261023/mt5'
 catalog = json.loads((root / 'tai-lieu-cu/catalog.json').read_text(encoding='utf-8'))
-index, terminal_id = (5, '820755052E4765D7D56E6DAAFBB28091') if a.bot == 1 else (16, 'D0E8209F77C8CF37AD8BF550E51FF075')
+index, terminal_id = {1:(5, '820755052E4765D7D56E6DAAFBB28091'),2:(6,None),3:(16, 'D0E8209F77C8CF37AD8BF550E51FF075')}[a.bot]
 entry = next(v for v in catalog if v['index'] == index)
-original = Path.home() / 'AppData/Roaming/MetaQuotes/Terminal' / terminal_id / 'MQL5/Experts/Market' / entry['test']['ex5']
+if a.bot==2:
+    original=Path('C:/Users/NTD/Desktop/BotTradeEA/local/market-demos-20261020/dich-nguoc-luot2/terminal/MQL5/Experts/Market')/entry['test']['ex5']
+else:
+    original = Path.home() / 'AppData/Roaming/MetaQuotes/Terminal' / terminal_id / 'MQL5/Experts/Market' / entry['test']['ex5']
 def sha(path):
     return hashlib.sha256(path.read_bytes()).hexdigest()
 if sha(original) != entry['sha256'].lower():
@@ -83,7 +86,7 @@ with (out / 'runner.stdout.txt').open('x', encoding='utf-8') as stdout, (out / '
     record['runner_exit'] = proc.wait(timeout=1000)
     if owned:
         # The tester can outlive a timed-out terminal. Stop only the exact process observed above.
-        cleanup = f"$p=Get-Process -Id {owned['id']} -ErrorAction SilentlyContinue; if ($p -and $p.StartTime.Ticks -eq {owned['started']}) {{ Stop-Process -Id $p.Id }}"
+        cleanup = f"$ErrorActionPreference='Stop'; $p=Get-Process -Id {owned['id']} -ErrorAction SilentlyContinue; if ($p -and $p.StartTime.Ticks -eq {owned['started']}) {{ Stop-Process -Id $p.Id }}; exit 0"
         subprocess.run(['powershell', '-NoProfile', '-Command', cleanup], check=True)
     result_file = out / 'ket-qua-chay.jsonl'
     results = [json.loads(line) for line in result_file.read_text(encoding='utf-8').splitlines()] if result_file.exists() else []

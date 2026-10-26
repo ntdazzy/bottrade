@@ -4,7 +4,7 @@ Chủ dự án xác nhận toàn bộ bot là của mình, mất mã nguồn khi
 cho phép dịch ngược và viết lại toàn bộ theo [AGENTS.md](../../../AGENTS.md).
 Mục tiêu: phục hồi 100% chức năng bằng nguồn MQL5 đầy đủ, tạo được EX5
 từ nguồn và chạy trực tiếp trên MT5 như bot gốc, có bằng chứng đối chiếu.
-Ưu tiên hiện tại là bot 1 và bot 3 theo yêu cầu mới; phần chưa kiểm không được gọi là đạt 100%.
+Ưu tiên hiện tại là bot 1 và bot 3; phân tích bot 2 song song theo yêu cầu ngày26/10/2026; phần chưa kiểm không được gọi là đạt 100%.
 Không gỡ giới hạn dùng thử hoặc khóa bản quyền; phần đó cần bản cấp phép phù hợp.
 
 ## Luồng phân tích trước khi viết mã

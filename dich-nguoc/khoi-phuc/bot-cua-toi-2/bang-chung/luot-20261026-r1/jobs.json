@@ -1,0 +1,17 @@
+[
+  {
+    "id": "b2-luot-20261026-r1",
+    "expert": "Market\\Goldbot One MT5.ex5",
+    "symbol": "XAUUSD_NOCOST_V2",
+    "period": "D1",
+    "model": 0,
+    "from": "2026.09.29",
+    "to": "2026.10.20",
+    "timeout": 300,
+    "inputs": {
+      "AutoGMT": "false",
+      "Broker_GMT_OFFSET_Winter": "0",
+      "Broker_GMT_OFFSET_Summer": "0"
+    }
+  }
+]
