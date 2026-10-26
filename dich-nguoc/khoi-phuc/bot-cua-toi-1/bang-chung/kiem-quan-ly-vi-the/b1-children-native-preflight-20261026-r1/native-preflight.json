@@ -1,0 +1,21 @@
+{
+  "utc": "2026-10-25T19:51:28.087122+00:00",
+  "cases": 352,
+  "native_only_no_mql5_comparison": true,
+  "source_sha256": "60406997ecb72598e89440eb6ffca5c4ee45ff825f51425d089cc8b5bc254d49",
+  "table_calls": {
+    "0x3d200": 584,
+    "0x3d5a0": 286,
+    "0x3d640": 262
+  },
+  "trade_calls": {
+    "0x26d20": 464,
+    "0x950": 500,
+    "0x3d010": 90,
+    "0x22c40": 80,
+    "0x231c0": 80
+  },
+  "native_trade_sites": 605,
+  "whole_manager_complete": false,
+  "whole_bot_complete": false
+}

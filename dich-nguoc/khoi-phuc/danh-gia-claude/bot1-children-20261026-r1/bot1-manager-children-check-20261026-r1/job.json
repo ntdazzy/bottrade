@@ -1,0 +1,13 @@
+{
+  "pid": 19640,
+  "started": "2026-10-25T19:41:03.2239837Z",
+  "model": "claude-opus-5-5",
+  "effort": "max",
+  "ultracode_requested": true,
+  "scope": "Write proposed analysis/code only within an explicitly assigned deliverable directory",
+  "output_directory": "dich-nguoc/khoi-phuc/claude-thuc-hien/bot1-manager-children-check-20261026-r1",
+  "edit_rule": "Edit(./dich-nguoc/khoi-phuc/claude-thuc-hien/bot1-manager-children-check-20261026-r1/**)",
+  "permission_mode": "dontAsk",
+  "prompt_sha256": "2734576f8a7bd06214bc914e78493a0f4ccedc8eab00c376355a29733ef42ab2",
+  "resume": ""
+}

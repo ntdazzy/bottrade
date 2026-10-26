@@ -1,0 +1,14 @@
+{
+  "original_ex5_sha256": "a3b0de423a06e10ebedc279307b93d7cb9188ba2bb5de77131a913c865b0e922",
+  "base": "0x23e5aa10000",
+  "open_tickets_descriptor": "0x6a3c0",
+  "captured_descriptor_hex": "55000100080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+  "empty_type_word": "0x800010055",
+  "length_offset": 8,
+  "physical_pointer_offset": 28,
+  "reported_ticket": "0x66418",
+  "virtual_stop_table": "0x62590",
+  "guard": "0x66410",
+  "scope": "Captured long-array descriptor, including type word; initializing zero size for the managed comparison does not prove resize/failure behavior.",
+  "whole_bot_complete": false
+}

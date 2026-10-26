@@ -1,0 +1,92 @@
+{
+  "original_ex5_sha256": "a3b0de423a06e10ebedc279307b93d7cb9188ba2bb5de77131a913c865b0e922",
+  "runs": {
+    "b1-manager-all-children-20261026-r1": {
+      "cases": 352,
+      "matched": 352,
+      "failed": 0,
+      "first_failures": [],
+      "result_sha256": {
+        "original": "e21198f27c919bfeca2cdc598a356e37ae6379ca7939d8bc495f1a5873115764",
+        "mql5": "e21198f27c919bfeca2cdc598a356e37ae6379ca7939d8bc495f1a5873115764"
+      },
+      "full_management_parents_executed": true,
+      "whole_manager_complete": false,
+      "whole_bot_complete": false,
+      "full_ea": false,
+      "child_helpers_intercepted": false,
+      "terminal_replies_supplied": true,
+      "original_ex5_changed": false,
+      "virtual_table_children_executed": true,
+      "modify_child_intercepted": false,
+      "close_child_intercepted": false,
+      "trade_children_executed": true,
+      "terminal_send_replies_supplied": true,
+      "limits": [
+        "Both original management parent functions run to return, including their loop and real/virtual transitions. This is not an EA, paired terminal comparison or complete manager integration proof.",
+        "All direct management helpers and underlying close/filling/send execute their actual bodies. Terminal queries, send replies and their specified provider-side position effects are supplied. IsStopped=0, logging=0, market execution=2 and filling flag=1; no complete branch/broker/account/EA claim.",
+        "Native error-code/string/Print code executes. Successful string allocation and signed decimal conversion are supplied; double text is measured separately in MT5 and supplied by value bits.",
+        "CPU both-NaN fixtures only correct measured two-NaN arithmetic. Other native instructions run in Unicorn; no physical original-run, allocation-failure or complete error coverage claim.",
+        "R12 is initialized0 in this fixture. The first zero-ticket path does not prove behavior for arbitrary incoming caller register state."
+      ]
+    },
+    "b1-manager-children-legacy-20261026-r1": {
+      "cases": 352,
+      "matched": 352,
+      "failed": 0,
+      "first_failures": [],
+      "result_sha256": {
+        "original": "c6ded56f789e3b3e6d6faed8f90b4fc92c1ac218f9edd704d01470f3bc5ca041",
+        "mql5": "c6ded56f789e3b3e6d6faed8f90b4fc92c1ac218f9edd704d01470f3bc5ca041"
+      },
+      "full_management_parents_executed": true,
+      "whole_manager_complete": false,
+      "whole_bot_complete": false,
+      "full_ea": false,
+      "child_helpers_intercepted": true,
+      "terminal_replies_supplied": true,
+      "original_ex5_changed": false,
+      "virtual_table_children_executed": false,
+      "trade_children_executed": false,
+      "limits": [
+        "Both original management parent functions run to return, including their loop and real/virtual transitions. This is not an EA, paired terminal comparison or complete manager integration proof.",
+        "Modify, try-close, virtual stop/delay/stamp child replies and their specified provider-side effects are supplied at original call boundaries; child internals do not run here. They have separate component evidence.",
+        "Native error-code/string/Print code executes. Successful string allocation and signed decimal conversion are supplied; double text is measured separately in MT5 and supplied by value bits.",
+        "CPU both-NaN fixtures only correct measured two-NaN arithmetic. Other native instructions run in Unicorn; no physical original-run, allocation-failure or complete error coverage claim.",
+        "R12 is initialized0 in this fixture. The first zero-ticket path does not prove behavior for arbitrary incoming caller register state."
+      ]
+    },
+    "b1-manager-table-children-20261026-r1": {
+      "cases": 352,
+      "matched": 352,
+      "failed": 0,
+      "first_failures": [],
+      "result_sha256": {
+        "original": "3e206fb915e7c04b014dd231270f7febc906a6e51d79a8538df8070839a95e69",
+        "mql5": "3e206fb915e7c04b014dd231270f7febc906a6e51d79a8538df8070839a95e69"
+      },
+      "full_management_parents_executed": true,
+      "whole_manager_complete": false,
+      "whole_bot_complete": false,
+      "full_ea": false,
+      "child_helpers_intercepted": true,
+      "terminal_replies_supplied": true,
+      "original_ex5_changed": false,
+      "virtual_table_children_executed": true,
+      "modify_child_intercepted": true,
+      "close_child_intercepted": true,
+      "trade_children_executed": false,
+      "limits": [
+        "Both original management parent functions run to return, including their loop and real/virtual transitions. This is not an EA, paired terminal comparison or complete manager integration proof.",
+        "Stop/delay/stamp run their actual original and MQL5 bodies. Modify/try-close replies and provider-side effects are supplied. The matrix does not prove every table-growth, full-table or allocation-failure branch.",
+        "Native error-code/string/Print code executes. Successful string allocation and signed decimal conversion are supplied; double text is measured separately in MT5 and supplied by value bits.",
+        "CPU both-NaN fixtures only correct measured two-NaN arithmetic. Other native instructions run in Unicorn; no physical original-run, allocation-failure or complete error coverage claim.",
+        "R12 is initialized0 in this fixture. The first zero-ticket path does not prove behavior for arbitrary incoming caller register state."
+      ]
+    }
+  },
+  "build": "b1-management-children-check-20261026-r1",
+  "whole_bot_complete": false,
+  "whole_manager_complete": false,
+  "claude_new_review_final_received": false
+}

@@ -1,34 +1,44 @@
 # Vòng quản lý vị thế bot1
 
-Đã ghép nguồn vòng quản lý mua/bán, biên dịch0lỗi/0cảnhbáo và so
-**352/352ca khớp** ở `b1-manager-flow-20261026-r1`.
-Hai thân gốc chạy từ đầu đến trả về, gồm nhiều vị thế, bỏ qua vị thế,
-đóng theo nến, đóng sớm, nhánh thật/ảo, đổi chế độ và các lần sửa lỗi.
+Đã ghép nguồn quản lý mua/bán và chạy cả các hàm bảng, sửa, kiểm đóng,
+đóng, chọn cách khớp và gửi trong cùng lượt: **352/352 ca khớp**.
+Biên dịch **0 lỗi/0 cảnh báo** tại `b1-management-children-check-20261026-r1`.
 
-So19trường, gồm mức dừng, giá mua/bán, cờ/bộ đếm, vé, thứ tự/đối số
-lời gọi, bộ nhớ200ô và bảngdừng1.500ô qua băm.
-Hai kết quả cùngSHA:
-`c6ded56f789e3b3e6d6faed8f90b4fc92c1ac218f9edd704d01470f3bc5ca041`.
-Phépso: [comparison.json](bot-cua-toi-1/bang-chung/kiem-quan-ly-vi-the/b1-manager-flow-20261026-r1/comparison.json).
+Lượt `b1-manager-all-children-20261026-r1` so29trường, gồm trạng thái,
+thứ tự/đối số lời gọi, bộ nhớ200ô, bảng dừng1.500ô, danh sách vé,
+trạng thái chọn và yêu cầu/kết quả/kiểm lệnh qua mã băm. Hai kết quả có SHA:
+`e21198f27c919bfeca2cdc598a356e37ae6379ca7939d8bc495f1a5873115764`.
+[Phép so](bot-cua-toi-1/bang-chung/kiem-quan-ly-vi-the/b1-manager-all-children-20261026-r1/comparison.json).
 
-Claude viết mã ghép, phần kiểm chạm mức dừng, chương trình MQL5 và
-bộ ca theo mô tả Codex đã chốt. Codex tự nối bộ chạy gốc, kiểm và so.
-Mô tả Codex ban đầu ghi nhầm loại truy vấn khối lượng ở nhánh đóng
-sớm; đã sửa thànhPositionGetDouble(POSITION_VOLUME) theo mã gốc.
-Giữ nguyên đề xuất/câu giao ban đầu vàCORRECTION.md để truy vết.
-Rà độc lập không thấy lỗi cần sửa trong phần ghép và bộ kiểm.
+Giữ và kiểm lại hai chế độ cũ bằng cùng chương trình kiểm mới:
 
-Các hàm bảng, sửa và kiểm đóng được cấp kết quả ở ranh giới gọi;
-thân báo lỗi/ghép chuỗi vẫn chạy. Đây chưa là kiểm đầy đủ mọi hàm
-con trong cùng lượt. Trường hợp vé đầu tiên bằng0 dùng thanh ghi
-R12banđầu0 trong bộ kiểm; chưa chứng minh mọi trạng thái bên gọi.
-Chưa có EA đầy đủ hoặc phép chạy cặp hai EA trên dữ liệu giá.
+- Chỉ chạy thân vòng quản lý, cấp kết quả các hàm con:352/352ca,
+  lượt `b1-manager-children-legacy-20261026-r1`, SHA
+  `c6ded56f789e3b3e6d6faed8f90b4fc92c1ac218f9edd704d01470f3bc5ca041`.
+- Chạy thêm thân hàm bảng, cấp kết quả sửa/kiểm đóng:352/352ca,
+  lượt `b1-manager-table-children-20261026-r1`, SHA
+  `3e206fb915e7c04b014dd231270f7febc906a6e51d79a8538df8070839a95e69`.
 
-Nguồn [Bot1PositionManagement.mqh](bot-cua-toi-1/source/MQL5/Include/bot-cua-toi-1/Bot1PositionManagement.mqh),
-biên nhận `b1-position-management-flow-20261026-r1`.
-Phạm vi chi tiết trong `management-flow-20261026-r1` và
-`management-complete-20261026-r1` ở thư mục phân tích bot1.
+Claude viết mã quản lý và chương trình MQL5 theo mô tả Codex đã chốt;
+Codex nối bộ chạy gốc, kiểm mã, biên dịch và so kết quả độc lập.
+Lượt viết chương trình kiểm mới đã xác nhận19yêu cầu dùng Opus5.5max.
+Có yêu cầu ultracode, chưa xác nhận được chế độ này từ dữ liệu lúc chạy.
+[Biên nhận](danh-gia-claude/bot1-children-20261026-r1/dispatch.json).
+Lượt Claude rà độc lập mới chưa có phản hồi cuối tại thời điểm ghi báo cáo;
+không coi là đã được xác nhận. Các đánh giá trước chỉ áp cho phạm vi cũ.
 
-Kế tiếp: nối thân các hàm con và nơi gọi trong chương trình chính;
-hoàn thiện cài đặt, điều kiện mua/bán, bảng hiển thị, trạng thái lưu,
-lỗi và phép so toàn bot. Không lấy352ca làm phần trăm hoàn thành.
+Giới hạn: dữ liệu trả từ MT5 và kết quả gửi vẫn được cấp trong bộ kiểm;
+chương trình không dừng, ghi thông báo giao dịch tắt, kiểu thực hiện2 và
+cờ khớp1. Cấp phát chuỗi thành công và đổi số ra chữ được cấp; lỗi cấp
+phát và toàn bộ kiểu tài khoản chưa kiểm. Hai sốNaN cùng lúc chỉ hiệu
+chỉnh theo đối chứng CPU riêng. R12banđầu0 khi vé đầu bằng0; chưa chứng
+minh mọi trạng thái thanh ghi từ bên gọi.
+
+Nguồn [Bot1PositionManagement.mqh](bot-cua-toi-1/source/MQL5/Include/bot-cua-toi-1/Bot1PositionManagement.mqh).
+Bản mô tả trước ghi nhầm truy vấn khối lượng đóng sớm; đã sửa thành
+PositionGetDouble(POSITION_VOLUME) theo mã gốc, giữ CORRECTION.md để tra.
+
+**Chưa có EA đầy đủ hoặc phép chạy cặp hai EA trên dữ liệu giá.**
+Còn nối nơi gọi trong chương trình chính, cài đặt, điều kiện mua/bán,
+hiển thị, trạng thái lưu, lỗi và phép so toàn bot. Không lấy352ca làm
+phần trăm hoàn thành.

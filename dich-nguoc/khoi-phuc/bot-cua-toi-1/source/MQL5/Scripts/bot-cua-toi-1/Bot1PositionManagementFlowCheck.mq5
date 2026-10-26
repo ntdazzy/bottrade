@@ -1,10 +1,9 @@
-// Bot1 full parent control-flow check with supplied service and child replies; no orders.
+// Bot1 full parent control-flow check with supplied services; table and trade children run on request; no orders.
 #property strict
 #property script_show_inputs
-#include "../../Include/bot-cua-toi-1/Bot1PositionModify.mqh"
-#include "../../Include/bot-cua-toi-1/Bot1PositionClose.mqh"
-#include "../../Include/bot-cua-toi-1/Bot1VirtualStops.mqh"
 input string CheckRun="";
+input bool ExecuteTableChildren=false;
+input bool ExecuteTradeChildren=false;
 union FlowBits { double d;ulong u; };
 struct FlowPosition
 {
@@ -12,7 +11,7 @@ struct FlowPosition
    double sl,tp,price,volume;string comment,symbol;
 };
 FlowPosition FPositions[3];
-int FCase[20],FLive=0,FSelected=-1,FFault=0,FCalls=0,FTotalCalls=0,FDigitCalls=0;
+int FCase[20],FLive=0,FSelected=-1,FFault=0,FCalls=0,FTotalCalls=0,FDigitCalls=0,FTradeSends=0;
 uint FInitialErrors=0;
 ulong FHash=0,FDeviation=(ulong)0x0123456789abcdef;
 double FBid=0,FAsk=0,FStopReply=0,FMinimum=0;
@@ -37,6 +36,46 @@ ulong FText(const string value)
    }
    return hash;
 }
+// Trade structs are hashed field by field (35 fields), never as memory; text adds a NULL flag.
+ulong FHashText(ulong hash,const string value)
+{
+   hash=FHashWord(hash,FText(value));
+   return FHashWord(hash,(ulong)(value==NULL));
+}
+ulong FHashRequest(const MqlTradeRequest &request)
+{
+   ulong hash=(ulong)0xcbf29ce484222325;
+   hash=FHashWord(hash,(ulong)(long)(int)request.action);hash=FHashWord(hash,request.magic);
+   hash=FHashWord(hash,request.order);hash=FHashText(hash,request.symbol);
+   hash=FHashWord(hash,FBits(request.volume));hash=FHashWord(hash,FBits(request.price));
+   hash=FHashWord(hash,FBits(request.stoplimit));hash=FHashWord(hash,FBits(request.sl));
+   hash=FHashWord(hash,FBits(request.tp));hash=FHashWord(hash,request.deviation);
+   hash=FHashWord(hash,(ulong)(long)(int)request.type);
+   hash=FHashWord(hash,(ulong)(long)(int)request.type_filling);
+   hash=FHashWord(hash,(ulong)(long)(int)request.type_time);
+   hash=FHashWord(hash,(ulong)(long)request.expiration);hash=FHashText(hash,request.comment);
+   hash=FHashWord(hash,request.position);
+   return FHashWord(hash,request.position_by);
+}
+ulong FHashResult(const MqlTradeResult &result)
+{
+   ulong hash=(ulong)0xcbf29ce484222325;
+   hash=FHashWord(hash,(ulong)result.retcode);hash=FHashWord(hash,result.deal);
+   hash=FHashWord(hash,result.order);hash=FHashWord(hash,FBits(result.volume));
+   hash=FHashWord(hash,FBits(result.price));hash=FHashWord(hash,FBits(result.bid));
+   hash=FHashWord(hash,FBits(result.ask));hash=FHashText(hash,result.comment);
+   hash=FHashWord(hash,(ulong)result.request_id);
+   return FHashWord(hash,(ulong)(long)result.retcode_external);
+}
+ulong FHashCheck(const MqlTradeCheckResult &check)
+{
+   ulong hash=(ulong)0xcbf29ce484222325;
+   hash=FHashWord(hash,(ulong)check.retcode);hash=FHashWord(hash,FBits(check.balance));
+   hash=FHashWord(hash,FBits(check.equity));hash=FHashWord(hash,FBits(check.profit));
+   hash=FHashWord(hash,FBits(check.margin));hash=FHashWord(hash,FBits(check.margin_free));
+   hash=FHashWord(hash,FBits(check.margin_level));
+   return FHashText(hash,check.comment);
+}
 void FTrace(const int api,const ulong a=0,const ulong b=0,const ulong c=0,const ulong d=0)
 {
    ulong words[5];words[0]=(ulong)api;words[1]=a;words[2]=b;words[3]=c;words[4]=d;
@@ -54,6 +93,14 @@ ulong FPositionTicket(const int index)
    if(index>=0 && index<FLive) ticket=FPositions[index].ticket;
    else FSelected=-1;
    FTrace(2,(ulong)(long)index,0,ticket);return ticket;
+}
+// A ticket that is not open keeps the previous selection.
+bool FSelectByTicket(const ulong ticket)
+{
+   bool found=false;
+   for(int i=0;i<FLive;i++)
+      if(FPositions[i].ticket==ticket) { FSelected=i;found=true;break; }
+   FTrace(27,ticket,(ulong)found,(ulong)(long)FSelected);return found;
 }
 double FPositionDouble(const ENUM_POSITION_PROPERTY_DOUBLE property)
 {
@@ -90,14 +137,27 @@ string FPositionString(const ENUM_POSITION_PROPERTY_STRING property)
 }
 long FSymbolInteger(const string symbol,const ENUM_SYMBOL_INFO_INTEGER property)
 {
+   if(property==SYMBOL_TRADE_EXEMODE || property==SYMBOL_FILLING_MODE)
+   {
+      if(symbol!="CHECK") FFail(23);
+      long value=property==SYMBOL_TRADE_EXEMODE ? 2 : 1;
+      FTrace(1,(ulong)property,FText(symbol),(ulong)value,(ulong)(symbol==NULL));return value;
+   }
    if(symbol!="CHECK" || property!=SYMBOL_DIGITS) FFail(23);
    FTrace(1,17,FText(symbol),(ulong)(long)FCase[13],(ulong)(symbol==NULL));
    FDigitCalls++;FAfterDigits();return (long)FCase[13];
 }
+// Only unreached branches of the trade headers use this form; any call is a fault.
+bool FSymbolInteger(const string symbol,const ENUM_SYMBOL_INFO_INTEGER property,long &value)
+{
+   FFail(23);return false;
+}
 double FSymbolDouble(const string symbol,const ENUM_SYMBOL_INFO_DOUBLE property)
 {
-   if(symbol!="CHECK" || (property!=SYMBOL_POINT && property!=SYMBOL_VOLUME_MIN)) FFail(24);
+   if(symbol!="CHECK" || (property!=SYMBOL_POINT && property!=SYMBOL_VOLUME_MIN && property!=SYMBOL_BID && property!=SYMBOL_ASK)) FFail(24);
    double value=property==SYMBOL_POINT ? .01 : FMinimum;
+   if(property==SYMBOL_BID) value=FBid;
+   if(property==SYMBOL_ASK) value=FAsk;
    FTrace(18,(ulong)property,FBits(value));return value;
 }
 bool FSymbolTick(const string symbol,MqlTick &tick)
@@ -124,39 +184,48 @@ double FCandleOpen(const string symbol,const ENUM_TIMEFRAMES frame,const int shi
    double value=FCase[1]!=0 ? 95. : 105.;FTrace(12,(ulong)frame,(ulong)(long)shift,FBits(value),FText(symbol));return value;
 }
 void FPrint(const string value) { FTrace(7,FText(value)); }
+void FPrint(const string first,const int slots,const string second,const int positions,
+            const string third,const long ticket,const string fourth)
+{
+   FTrace(24,FText(first),FText(second),FText(third),FText(fourth));
+   FTrace(25,(ulong)(long)slots,(ulong)(long)positions,(ulong)ticket);
+}
 int FLastError() { return FCase[17]; }
-bool FModify(Bot1PendingRequestState &state,Bot1TradeSendOptions &options,const ulong ticket,const double sl,const double tp)
+bool FIsStopped() { return false; }
+void FRemovePosition(const ulong ticket)
 {
-   FTrace(8,ticket,FBits(sl),FBits(tp),(ulong)FCase[10]);return FCase[10]!=0;
+   for(int i=0;i<FLive;i++)
+      if(FPositions[i].ticket==ticket)
+      {
+         for(int j=i;j<FLive-1;j++) FPositions[j]=FPositions[j+1];
+         FLive--;FSelected=-1;return;
+      }
 }
-bool FTryClose(Bot1PendingRequestState &state,Bot1TradeSendOptions &options,const ulong &deviation,
-               const double &bid,const double &ask,const double &gap,const double &freeze,const ulong ticket)
+// Supplied send service: mode 0 for OrderSend, 1 for OrderSendAsync. An accepted SLTP leaves the
+// stored sl/tp unchanged; an accepted deal removes its position except in profile 7.
+bool FTradeService(const int mode,const MqlTradeRequest &request,MqlTradeResult &result)
 {
-   if(!FCloseReferences(deviation,bid,ask,gap,freeze)) FFail(29);
-   FTrace(9,ticket,(ulong)FCase[11]);
-   if(FCase[11]!=0 && FCase[2]!=7)
-      for(int i=0;i<FLive;i++)
-         if(FPositions[i].ticket==ticket)
-         {
-            for(int j=i;j<FLive-1;j++) FPositions[j]=FPositions[j+1];
-            FLive--;FSelected=-1;break;
-         }
-   return FCase[11]!=0;
+   bool accepted=false;
+   if(request.action==TRADE_ACTION_SLTP) accepted=FCase[10]!=0;
+   else if(request.action==TRADE_ACTION_DEAL) accepted=FCase[11]!=0;
+   else FFail(32);
+   ulong request_hash=FHashRequest(request),old_result_hash=FHashResult(result);
+   ZeroMemory(result);
+   result.retcode=(uint)(accepted ? 10009 : 10006);
+   result.deal=request.action==TRADE_ACTION_DEAL ? (ulong)(800000+FCase[0]) : (ulong)0;
+   result.order=(ulong)(700000+FCase[0]);result.volume=request.volume;result.price=request.price;
+   result.bid=FBid;result.ask=FAsk;result.request_id=(uint)(FCase[0]+1);result.retcode_external=0;
+   FTrace(28,(ulong)mode,request_hash,old_result_hash,FHashResult(result));
+   FTrace(29,(ulong)request.action,(ulong)accepted,(ulong)FTradeSends);FTradeSends++;
+   if(accepted && request.action==TRADE_ACTION_DEAL && FCase[2]!=7) FRemovePosition(request.position);
+   return accepted;
 }
-double FStopLevel(Bot1VirtualStopState &table,long &open_tickets[],const string &symbol,const double &unit,
-                   const int side,const double price,const double distance,const long ticket)
-{
-   if(symbol!="CHECK") FFail(30);
-   FTrace(20,(ulong)(long)side,FBits(price),FBits(distance),(ulong)ticket);return FStopReply;
-}
-bool FDelay(Bot1VirtualStopState &table,const int seconds,const long ticket)
-{
-   FTrace(22,(ulong)ticket,(ulong)(long)seconds,(ulong)FCase[12]);return FCase[12]!=0;
-}
-void FStamp(Bot1VirtualStopState &table,const long ticket) { FTrace(23,(ulong)ticket); }
-
+bool FOrderSend(const MqlTradeRequest &request,MqlTradeResult &result) { return FTradeService(0,request,result); }
+bool FOrderSendAsync(const MqlTradeRequest &request,MqlTradeResult &result) { return FTradeService(1,request,result); }
+// SDK macros take effect before the trade headers so every send in them reaches FTradeService.
 #define PositionsTotal FPositionsTotal
 #define PositionGetTicket FPositionTicket
+#define PositionSelectByTicket FSelectByTicket
 #define PositionGetDouble FPositionDouble
 #define PositionGetInteger FPositionInteger
 #define PositionGetString FPositionString
@@ -168,7 +237,52 @@ void FStamp(Bot1VirtualStopState &table,const long ticket) { FTrace(23,(ulong)ti
 #define iClose FCandleClose
 #define iOpen FCandleOpen
 #define GetLastError FLastError
+#define IsStopped FIsStopped
+#define OrderSend FOrderSend
+#define OrderSendAsync FOrderSendAsync
+#include "../../Include/bot-cua-toi-1/Bot1PositionModify.mqh"
+#include "../../Include/bot-cua-toi-1/Bot1PositionClose.mqh"
+// Mapped only after the trade headers: their multi-argument Print calls are not reached here.
 #define Print FPrint
+#include "../../Include/bot-cua-toi-1/Bot1VirtualStops.mqh"
+// Written before the helper macros, so the Bot1 names called below are the real header bodies.
+double FStopLevel(Bot1VirtualStopState &table,long &open_tickets[],const string &symbol,const double &unit,
+                   const int side,const double price,const double distance,const long ticket)
+{
+   if(symbol!="CHECK") FFail(30);
+   FTrace(20,(ulong)(long)side,FBits(price),FBits(distance),(ulong)ticket);
+   if(ExecuteTableChildren) return Bot1VirtualStopLevel(table,open_tickets,symbol,unit,side,price,distance,ticket);
+   return FStopReply;
+}
+bool FDelay(Bot1VirtualStopState &table,const int seconds,const long ticket)
+{
+   if(ExecuteTableChildren)
+   { FTrace(26,(ulong)ticket,(ulong)(long)seconds);return Bot1VirtualStopDelayPassed(table,seconds,ticket); }
+   FTrace(22,(ulong)ticket,(ulong)(long)seconds,(ulong)FCase[12]);return FCase[12]!=0;
+}
+void FStamp(Bot1VirtualStopState &table,const long ticket)
+{
+   FTrace(23,(ulong)ticket);
+   if(ExecuteTableChildren) Bot1VirtualStopStamp(table,ticket);
+}
+bool FModify(Bot1PendingRequestState &state,Bot1TradeSendOptions &options,const ulong ticket,const double sl,const double tp)
+{
+   if(ExecuteTradeChildren)
+   { FTrace(30,ticket,FBits(sl),FBits(tp));return Bot1ModifyPosition(state,options,ticket,sl,tp); }
+   FTrace(8,ticket,FBits(sl),FBits(tp),(ulong)FCase[10]);return FCase[10]!=0;
+}
+// Bot1TryClosePosition returns nothing; the trade branch reports true as the Bot3 check does.
+bool FTryClose(Bot1PendingRequestState &state,Bot1TradeSendOptions &options,const ulong &deviation,
+               const double &bid,const double &ask,const double &gap,const double &freeze,const ulong ticket)
+{
+   if(!FCloseReferences(deviation,bid,ask,gap,freeze)) FFail(29);
+   if(ExecuteTradeChildren)
+   { FTrace(31,ticket);Bot1TryClosePosition(state,options,deviation,bid,ask,gap,freeze,ticket);return true; }
+   FTrace(9,ticket,(ulong)FCase[11]);
+   if(FCase[11]!=0 && FCase[2]!=7) FRemovePosition(ticket);
+   return FCase[11]!=0;
+}
+
 #define Bot1ModifyPosition FModify
 #define Bot1TryClosePosition FTryClose
 #define Bot1VirtualStopLevel FStopLevel
@@ -177,6 +291,7 @@ void FStamp(Bot1VirtualStopState &table,const long ticket) { FTrace(23,(ulong)ti
 #include "../../Include/bot-cua-toi-1/Bot1PositionManagement.mqh"
 #undef PositionsTotal
 #undef PositionGetTicket
+#undef PositionSelectByTicket
 #undef PositionGetDouble
 #undef PositionGetInteger
 #undef PositionGetString
@@ -188,6 +303,9 @@ void FStamp(Bot1VirtualStopState &table,const long ticket) { FTrace(23,(ulong)ti
 #undef iClose
 #undef iOpen
 #undef GetLastError
+#undef IsStopped
+#undef OrderSend
+#undef OrderSendAsync
 #undef Print
 #undef Bot1ModifyPosition
 #undef Bot1TryClosePosition
@@ -226,7 +344,8 @@ void FSetProfile(const int profile)
 void FInitialize()
 {
    ZeroMemory(FCfg);ZeroMemory(FShared);ZeroMemory(FRequests);ZeroMemory(FOptions);
-   ZeroMemory(FPositions);FSelected=-1;FTotalCalls=0;FDigitCalls=0;FCalls=0;FHash=(ulong)0xcbf29ce484222325;
+   FRequests.magic=0;FRequests.preferred=ORDER_FILLING_FOK;FOptions.async_mode=0;FOptions.margin_mode=0;FOptions.log_level=0;
+   ZeroMemory(FPositions);FSelected=-1;FTotalCalls=0;FDigitCalls=0;FCalls=0;FTradeSends=0;FHash=(ulong)0xcbf29ce484222325;
    bool buy=FCase[1]!=0;int profile=FCase[2];FLive=FCase[3];
    FCfg.symbol="CHECK";FCfg.magic=FCase[16];FCfg.enabled=FCase[15];FCfg.unit=1.;
    FCfg.stop_distance=10.;FCfg.take_distance=20.;FCfg.emergency_offset=.5;FCfg.gap=.2;FCfg.freeze=2.5;
@@ -286,7 +405,16 @@ void FWriteCasts(const int file,const int id)
       for(int j=0;j<StringLen(value);j++) FileWriteInteger(file,(int)StringGetCharacter(value,j),SHORT_VALUE);
    }
 }
+ulong FHashMetadata(const Bot1PendingRequestState &state,const Bot1TradeSendOptions &options,const ulong deviation)
+{
+   ulong hash=(ulong)0xcbf29ce484222325;
+   hash=FHashWord(hash,state.magic);hash=FHashWord(hash,(ulong)(long)(int)state.preferred);
+   hash=FHashWord(hash,deviation);hash=FHashWord(hash,(ulong)options.async_mode);
+   hash=FHashWord(hash,(ulong)(long)options.log_level);
+   return FHashWord(hash,(ulong)(long)options.margin_mode);
+}
 // 112 bytes <7iIIQ4di4Q: cache_hash covers shared.cache 100x2, table_hash only the 500x3 stop rows.
+// Table children append 28 bytes <qiiQi (140 in all), trade children 36 more bytes <4Qi (176 in all).
 void FWriteResult(const int file,const int id,const bool returned)
 {
    ulong cache=(ulong)0xcbf29ce484222325,table=cache,positions=cache;
@@ -301,9 +429,25 @@ void FWriteResult(const int file,const int id,const bool returned)
    FileWriteDouble(file,FShared.tick.bid);FileWriteDouble(file,FShared.tick.ask);FileWriteDouble(file,FShared.copied_step);
    FileWriteInteger(file,FCalls);FileWriteLong(file,(long)FHash);FileWriteLong(file,(long)cache);
    FileWriteLong(file,(long)table);FileWriteLong(file,(long)positions);
+   if(ExecuteTableChildren)
+   {
+      int size=ArraySize(FShared.open_tickets);bool series=ArrayGetAsSeries(FShared.open_tickets);
+      ulong tickets=(ulong)0xcbf29ce484222325;
+      for(int i=0;i<size;i++) tickets=FHashWord(tickets,(ulong)FShared.open_tickets[series ? size-1-i : i]);
+      FileWriteLong(file,FShared.table.reported_ticket);
+      FileWriteInteger(file,size);FileWriteInteger(file,(int)series);FileWriteLong(file,(long)tickets);
+      FileWriteInteger(file,FSelected);
+   }
+   if(ExecuteTradeChildren)
+   {
+      FileWriteLong(file,(long)FHashRequest(FRequests.request));FileWriteLong(file,(long)FHashResult(FRequests.result));
+      FileWriteLong(file,(long)FHashCheck(FRequests.check));FileWriteLong(file,(long)FHashMetadata(FRequests,FOptions,FDeviation));
+      FileWriteInteger(file,FTradeSends);
+   }
 }
 int OnStart()
 {
+   if(ExecuteTradeChildren && !ExecuteTableChildren) return 12;
    if(StringLen(CheckRun)<1 || StringLen(CheckRun)>50) return 4;
    for(int i=0;i<StringLen(CheckRun);i++)
    {
@@ -318,7 +462,7 @@ int OnStart()
    int output=FileOpen(folder+"mql5-results.bin",FILE_WRITE|FILE_BIN);
    int formats=FileOpen(folder+"cast-values.bin",FILE_WRITE|FILE_BIN);
    if(output==INVALID_HANDLE || formats==INVALID_HANDLE) { FileClose(source);if(output!=INVALID_HANDLE) FileClose(output);if(formats!=INVALID_HANDLE) FileClose(formats);return 8; }
-   FileWriteInteger(output,magic);FileWriteInteger(output,version);FileWriteInteger(output,count);
+   FileWriteInteger(output,magic);FileWriteInteger(output,ExecuteTradeChildren ? 3 : (ExecuteTableChildren ? 2 : version));FileWriteInteger(output,count);
    FileWriteInteger(formats,magic);FileWriteInteger(formats,version);FileWriteInteger(formats,count);
    for(int id=0;id<count;id++)
    {
