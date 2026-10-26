@@ -38,11 +38,15 @@ Ngày kiểm: 26/10/2026. Khối này nằm trong phần điều phối cấu h�
 
 ## Kết quả đối chiếu
 
-Lượt `b3-runtime-profile-20261026-r3` chạy **2.106 ca** trên thân gốc và
+Lượt `b3-runtime-profile-20261026-r6` chạy **2.106 ca** trên thân gốc và
 MQL5, gồm seed 0/1/2/MAX, số âm/âm không dấu/0/số rất nhỏ/số dương/NaN/
 vô cực và sáu điều chỉnh. Kết quả: **2.106 khớp, 0 lệch**, mã kiểm hai tệp
-`759a57f91f6b00e724d6f34c8224886bf61c7be2fe21b94655a87e9d2b91251e`.
+`07e4175232b4be31eed89a3730243aa7032a0afe05805af854f5f34ad2c06925`.
 Mã MQL5 biên dịch **0 lỗi, 0 cảnh báo** với kiểm chia số 0 bật.
+
+`native_6d2e4` là trường riêng. `management_timeframe` được truyền từ bảng
+`native_6d324`, vì bước chuẩn bị đọc ô này tại `0xe759`; không gộp hai ô chỉ
+vì chúng nằm cạnh nhau.
 
 ## Giới hạn
 

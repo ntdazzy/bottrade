@@ -9,7 +9,7 @@ MAGIC = 0x52504633
 VERSION = 1
 HEADER = struct.Struct("<3i")
 CASE = struct.Struct("<2iI7d")
-RESULT = struct.Struct("<3i32Q")
+RESULT = struct.Struct("<3i33Q")
 
 DELTA_NAMES = (
     "price_delta",
@@ -98,7 +98,7 @@ RESULT_NAMES = [
     "stop_distance", "target_distance", "trail_distance", "trail_start", "trail_limit",
     "trail_step", "native_6d368", "native_6d370", "trigger_distance", "locked_distance",
     "aux_hour1", "aux_scan50", "aux_older", "aux_recent", "aux_offset", "indicator_period",
-    "indicator_timeframe", "native_6d2e0", "management_timeframe",
+    "indicator_timeframe", "native_6d2e0", "management_timeframe", "native_6d2e4",
 ]
-if len(RESULT_NAMES) != 35:
+if len(RESULT_NAMES) != 36:
     raise AssertionError("result name count changed")

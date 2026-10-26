@@ -43,6 +43,8 @@ cụ thể; không bịa lý do, quyền sở hữu hay đổi tên phần đã 
 Ngoại lệ được người dùng xác nhận ngày 25/10/2026: Codex trực tiếp làm
 các phần Claude từ chối, gồm phân tích, viết mã và bộ kiểm; Claude làm
 các phần còn nhận. Không đổi cách hỏi để vượt việc từ chối.
+Ngày 26/10/2026, người dùng yêu cầu Codex tự viết tiếp khi Claude hết
+hạn mức; không chờ dịch vụ mở lại. Quy tắc phân tích và đối chiếu giữ nguyên.
 Giao từng phần rõ đầu vào/đầu ra và nêu đúng bối cảnh; không yêu cầu
 vượt biện pháp bảo vệ. Bản đề xuất của Claude chưa phải kết quả đã đạt.
 Khi đã ghép đủ, phải so toàn bộ bot và toàn bộ cài đặt/hiển thị, kể cả

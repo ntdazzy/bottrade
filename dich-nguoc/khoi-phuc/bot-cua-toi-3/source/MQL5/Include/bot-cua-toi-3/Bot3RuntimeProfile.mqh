@@ -77,7 +77,8 @@ void Bot3LoadRuntimeProfile(const uint index,const Bot3ProfileAdjustments &adjus
    inputs.indicator_period=indicator_period[index];
    inputs.indicator_timeframe=indicator_timeframe[index];
    inputs.native_6d2e0=native_6d2e0[index];
-   inputs.management_timeframe=management_timeframe[index];
+   inputs.native_6d2e4=management_timeframe[index];
+   inputs.management_timeframe=native_6d324[index];
    state.native_6d324=native_6d324[index];
    state.native_6d3c0=native_6d3c0[index];
 

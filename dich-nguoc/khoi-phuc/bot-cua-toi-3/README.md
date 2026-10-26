@@ -4,7 +4,9 @@
 khớp** mã gốc và MQL5, gồm hạt giống 32-bit, số dương/âm/NaN/vô cực,
 6 điều chỉnh và kiểm không đổi các trường ngoài phạm vi; biên dịch **0 lỗi,
 0 cảnh báo**. Kết quả hai bên cùng mã kiểm
-`759a57f91f6b00e724d6f34c8224886bf61c7be2fe21b94655a87e9d2b91251e`.
+`07e4175232b4be31eed89a3730243aa7032a0afe05805af854f5f34ad2c06925`.
+Bộ kiểm mới tách đúng ô `0x6d2e4` khỏi `management_timeframe` tại `0x6d324`;
+không còn dùng nhầm hai trường khi nối sang bước chuẩn bị.
 Đây vẫn là một khối độc lập, chưa được gọi từ EA chính và chưa chứng minh
 toàn bot. [Đặc tả và phép kiểm](phan-tich/chuong-trinh-chinh/profile-parameters-20261026-r1/README.md).
 

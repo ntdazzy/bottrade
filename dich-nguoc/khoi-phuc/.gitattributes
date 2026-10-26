@@ -430,11 +430,15 @@
 # Independent integration and preparation reviews.
 /danh-gia-doc-lap/integration-maps-20261026-r2/** -text
 /danh-gia-doc-lap/bot1-preparation-20261026-r1/** -text
+/danh-gia-doc-lap/bot1-profile-integrity-20261026-r1/** -text
+/danh-gia-doc-lap/bot3-profile-preparation-20261026-r1/** -text
 
 # Exact-byte bot1 pending/profile/preparation evidence and Claude deliveries.
 /bot-cua-toi-1/source/MQL5/Include/bot-cua-toi-1/Bot1PendingSubmission.mqh -text
 /bot-cua-toi-1/source/MQL5/Include/bot-cua-toi-1/Bot1Margin.mqh -text
 /bot-cua-toi-1/source/MQL5/Include/bot-cua-toi-1/Bot1BaseDistances.mqh -text
+/bot-cua-toi-1/source/MQL5/Include/bot-cua-toi-1/Bot1DistanceSettings.mqh -text
+/bot-cua-toi-1/source/MQL5/Include/bot-cua-toi-1/Bot1EntryProfiles.mqh -text
 /bot-cua-toi-1/source/MQL5/Include/bot-cua-toi-1/Bot1RuntimeProfile.mqh -text
 /bot-cua-toi-1/source/MQL5/Scripts/bot-cua-toi-1/Bot1RuntimeProfile*.mq5 -text
 /bot-cua-toi-1/tests/check-runtime-profile.py -text

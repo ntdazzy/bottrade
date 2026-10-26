@@ -68,6 +68,7 @@ def native_for(row):
     require(result.returncode == 0, "NATIVE_PROBE_FAILED " + name + " " + result.stderr[-500:])
     report = json.loads((output / "native-profiles.json").read_text(encoding="utf-8"))
     native = next(item for item in report["rows"] if item["index"] == row["index"])
+    require(not native.get("unresolved_before_last_profile_write"), "NATIVE_UNRESOLVED_PROFILE " + str(native.get("unresolved_before_last_profile_write")))
     values = native["values"]
     raw_fields = native.get("raw_fields", {})
     words = [native["seed_after"]]
@@ -81,12 +82,18 @@ def native_for(row):
 
 
 def identity():
-    sources = [HOME / "source/MQL5" / SCRIPT]
+    sources = [
+        HOME / "source/MQL5" / SCRIPT,
+        HOME / "source/MQL5/Include/bot-cua-toi-1/Bot1RuntimeProfile.mqh",
+        HOME / "source/MQL5/Include/bot-cua-toi-1/Bot1BaseDistances.mqh",
+        HOME / "source/MQL5/Include/bot-cua-toi-1/Bot1DistanceSettings.mqh",
+        HOME / "source/MQL5/Include/bot-cua-toi-1/Bot1EntryProfiles.mqh",
+    ]
     helpers = [Path(__file__), Path(CASES.__file__), ANALYZER]
     return {
         "analyzer_sha256": sha(ANALYZER),
-        "script_sha256": sha(sources[0]),
-        "helper_sha256": {str(path.relative_to(ROOT)).replace("\\", "/"): sha(path) for path in helpers},
+        "sources_sha256": {str(path.relative_to(HOME / "source/MQL5")).replace("\\", "/"): sha(path) for path in sources},
+        "helpers_sha256": {str(path.relative_to(ROOT)).replace("\\", "/"): sha(path) for path in helpers},
     }
 
 

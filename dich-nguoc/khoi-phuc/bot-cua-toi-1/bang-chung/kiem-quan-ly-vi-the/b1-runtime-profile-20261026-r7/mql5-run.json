@@ -1,0 +1,18 @@
+{
+  "analyzer_sha256": "aa1727ab2786daca6d4bf45683005a555848a73149e43048d5017775cc08f441",
+  "sources_sha256": {
+    "Scripts/bot-cua-toi-1/Bot1RuntimeProfileCheck.mq5": "b788686a47c5994905a447fd3e54c57fbfcced27a0a0fb4d1e5aadebebc5cac5",
+    "Include/bot-cua-toi-1/Bot1RuntimeProfile.mqh": "4da6e718dad5c6e4b320ef964ad0a6d6174da0fba0919a57de234c3ce0c29292",
+    "Include/bot-cua-toi-1/Bot1BaseDistances.mqh": "64eb353e1f253feb1aa6bc404f9d2047c31b28c565afd5b1ab82949b4d03577d",
+    "Include/bot-cua-toi-1/Bot1DistanceSettings.mqh": "8cf7296b4301274d2f044362ffa211610fff5237e9daa9fa6d08680a53daa518",
+    "Include/bot-cua-toi-1/Bot1EntryProfiles.mqh": "263568e3883564270a6911dafebed8a2350bc37c8ea1530e4e6c670a14a33d60"
+  },
+  "cases": 432,
+  "result_sha256": "6dc91e388f951cb0f81a2d6cd3086d2d5d312e104830a52bb0881401f8092784",
+  "build": "b1-runtime-profile-check-20261026-r4",
+  "helpers_sha256": {
+    "bot-cua-toi-1/tests/check-runtime-profile.py": "1aa4780b37b4b7d696729a116ad5ad5f6c9d625686c116543d90211ec79f1664",
+    "bot-cua-toi-1/tests/runtime_profile_cases.py": "62051d96221d5204b673f069ef05cc9dc3bb9ca57a1f53cd3450f5171bd274bf",
+    "bot-cua-toi-1/phan-tich/chuong-trinh-chinh/profile-parameters-20261026-r1/analyze-profile-parameters.py": "aa1727ab2786daca6d4bf45683005a555848a73149e43048d5017775cc08f441"
+  }
+}

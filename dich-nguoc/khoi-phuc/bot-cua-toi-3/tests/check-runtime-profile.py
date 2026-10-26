@@ -20,8 +20,8 @@ CODE_BEGIN,CODE_END=(int(json.loads(POSITIVE.read_text())[k],16) for k in ['func
 CODE_SHA=json.loads(POSITIVE.read_text())['function_sha256']
 PROFILE_FIELDS=json.loads(BASELINE.read_text())['fields']
 FIELDS=[('random_seed','I',0x1d6e78),('native_6d324','i',0x6d324),('native_6d3c0','i',0x6d3c0)]+PROFILE_FIELDS+[
- ('indicator_period','i',0x6d170),('indicator_timeframe','i',0x6d174),('native_6d2e0','i',0x6d2e0),('management_timeframe','i',0x6d2e4)]
-require(len(FIELDS)==32,'FIELD_COUNT_DIFFERS')
+ ('indicator_period','i',0x6d170),('indicator_timeframe','i',0x6d174),('native_6d2e0','i',0x6d2e0),('management_timeframe','i',0x6d324),('native_6d2e4','i',0x6d2e4)]
+require(len(FIELDS)==33,'FIELD_COUNT_DIFFERS')
 SCOPE=dict(whole_manager_complete=False,whole_bot_complete=False,full_ea=False,native_scalar_profile_executed=True,
  terminal_replies_supplied=False,child_helpers_intercepted=False,original_ex5_changed=False)
 LIMITS=['Valid indices0..8; scalar profile loading only, before symbol/currency/magic selection and strategy preparation/main.',

@@ -29,8 +29,8 @@ void Bot3RuntimeSetSentinels(Bot3PreparationInputs &inputs)
    inputs.native_1d6fa8=70035;inputs.native_1d6fc0=13;inputs.virtual_expiration=14;
    inputs.virtual_stops=15;inputs.native_1d6fe8=70036;inputs.native_1d7178=16;
    inputs.native_6d2a3=17;inputs.buy_offset=70041.25;inputs.sell_offset=70042.25;
-   inputs.native_6d2e0=70043;inputs.nearby_radius=70044.25;inputs.expiration_hours=70045;
-   inputs.management_timeframe=70046;inputs.stop_distance=70047.25;
+   inputs.native_6d2e0=70043;inputs.native_6d2e4=70044;inputs.nearby_radius=70045.25;inputs.expiration_hours=70046;
+   inputs.management_timeframe=70047;inputs.stop_distance=70048.25;
    inputs.target_distance=70048.25;inputs.trail_distance=70049.25;
    inputs.trail_start=70050.25;inputs.native_6d368=70051.25;
    inputs.native_6d370=70052.25;inputs.trail_limit=70053.25;
@@ -76,7 +76,7 @@ void Bot3RuntimeWriteWords(const int output,const Bot3PreparationInputs &inputs,
    FileWriteLong(output,(long)inputs.aux_older);FileWriteLong(output,(long)inputs.aux_recent);
    FileWriteLong(output,(long)Bot3RuntimeBits(inputs.aux_offset));FileWriteLong(output,(long)inputs.indicator_period);
    FileWriteLong(output,(long)inputs.indicator_timeframe);FileWriteLong(output,(long)inputs.native_6d2e0);
-   FileWriteLong(output,(long)inputs.management_timeframe);
+   FileWriteLong(output,(long)inputs.management_timeframe);FileWriteLong(output,(long)inputs.native_6d2e4);
 }
 
 int OnStart()

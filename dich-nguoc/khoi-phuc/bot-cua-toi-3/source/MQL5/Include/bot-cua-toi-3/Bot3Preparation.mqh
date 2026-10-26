@@ -34,6 +34,7 @@ struct Bot3PreparationInputs
    double buy_offset;
    double sell_offset;
    int native_6d2e0;
+   int native_6d2e4;
    double nearby_radius;
    int expiration_hours;
    int management_timeframe;

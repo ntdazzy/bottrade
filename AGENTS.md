@@ -64,6 +64,9 @@
    Ngoại lệ được người dùng xác nhận ngày 25/10/2026: Codex trực tiếp
    phân tích, viết mã và kiểm các phần Claude từ chối; Claude làm các
    phần còn nhận. Không đổi cách hỏi để vượt việc từ chối.
+   Cập nhật ngày 26/10/2026: khi Claude hết hạn mức, người dùng yêu cầu
+   Codex trực tiếp viết tiếp mã và bộ kiểm; không chờ Claude mở lại.
+   Vẫn phải phân tích bản gốc và so kết quả độc lập trước khi ghép.
 6. So từng phần rồi so toàn bộ nguồn MQL5 đã biên dịch với EX5 gốc trên
    cùng dữ liệu và điều kiện. Kiểm cả giao dịch, toàn bộ cài đặt, bảng
    hiển thị, khởi động lại, trạng thái lưu và lỗi; cùng lợi nhuận chưa đủ.

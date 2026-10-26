@@ -40,7 +40,7 @@ bool Bot1LoadBaseDistances(const int index,const bool use_hl_trailing,Bot1Distan
    r.aux_older=aux_older[index];
    int aux_recent[8]={3,3,6,6,4,2,2,1};
    r.aux_recent=aux_recent[index];
-   double aux_offset[8]={20.0,0.0,5.0,0.0,6.0,0.0,14.0,38.0};
+   double aux_offset[8]={20.0,20.0,5.0,0.0,6.0,0.0,14.0,38.0};
    r.aux_offset=aux_offset[index];
    return true;
 }

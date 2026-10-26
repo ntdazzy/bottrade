@@ -81,11 +81,19 @@ def main():
   # The profile-5 block receives this pointer from the immediately preceding
   # native preload at RVA 0x14eb1/0x14ed7; it is outside the block start.
   m.reg_write(x.UC_X86_REG_R8,base+0x4ff00)
+  # Profile 1 receives the constant aux offset from the caller immediately
+  # before its block at RVA 0x12f54/0x12f7a.
+  if prof['index']==1:
+   m.reg_write(x.UC_X86_REG_R9,0x4034000000000000)
   try:m.emu_start(base+int(prof['start_rva'],16),0x60000000,count=20000)
   finally:m.hook_del(h1);m.hook_del(h2)
   values={n:struct.unpack('<'+k,m.mem_read(base+r,struct.calcsize('<'+k)))[0] for n,k,r in fields if k in ['d','i','B'] and all(base+r+j in written for j in range(struct.calcsize('<'+k)))}
   raw_fields={n:bytes(m.mem_read(base+r,struct.calcsize('<'+k))).hex() for n,k,r in fields if all(base+r+j in written for j in range(struct.calcsize('<'+k)))}
-  rows.append(dict(index=prof['index'],hl=a.hl,start_rva=prof['start_rva'],first_call_rva=hex(stop[0]-base) if stop else None,seed_before=a.seed,seed_after=struct.unpack('<I',m.mem_read(base+0x6a478,4))[0],values=values,raw_fields=raw_fields,writes=writes,random_word_conversion_order=random_order,float_expressions={n:memory_expr.get(base+r) for n,k,r in fields if k=='d' and base+r in memory_expr},unresolved_registers=live,instructions=[hex(z-base) for z in trace]))
+  output_rvas={0x623d8,0x623d4,0x623e0,0x6242c,0x62430,0x62434,0x62438,0x62440,0x62448,0x62450,0x62460,0x62498,0x624a0,0x624a8,0x624b0,0x624b8,0x624c0,0x624dc,0x624e0,0x624e4,0x624e8,0x624f0,0x62520,0x66a70,0x67468,0x66da0,0x67450}
+  profile_write_instructions=[int(w['instruction'],16) for w in writes if int(w['rva'],16) in output_rvas]
+  last_profile_write=max(profile_write_instructions) if profile_write_instructions else -1
+  unresolved_before={n:v for n,v in live.items() if int(v,16)<=last_profile_write}
+  rows.append(dict(index=prof['index'],hl=a.hl,start_rva=prof['start_rva'],first_call_rva=hex(stop[0]-base) if stop else None,seed_before=a.seed,seed_after=struct.unpack('<I',m.mem_read(base+0x6a478,4))[0],values=values,raw_fields=raw_fields,writes=writes,random_word_conversion_order=random_order,float_expressions={n:memory_expr.get(base+r) for n,k,r in fields if k=='d' and base+r in memory_expr},unresolved_registers=live,unresolved_before_last_profile_write=unresolved_before,last_profile_write_rva=hex(last_profile_write),instructions=[hex(z-base) for z in trace]))
  report=dict(bot=1,run=a.run,amount=a.amount,seed=a.seed,hl=a.hl,adjustments=a.adjustments,function_begin=hex(lo),function_end_exclusive=hex(hi),function_sha256=hashlib.sha256(code).hexdigest(),tool_sha256=hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),rows=rows,scope='Native profile blocks through first original call; no terminal calls and no expected-value injection.')
  (out/'native-profiles.json').write_text(json.dumps(report,indent=2,allow_nan=True),encoding='utf-8');(out/Path(__file__).name).write_bytes(Path(__file__).read_bytes());print(json.dumps({'rows':len(rows),'random_counts':[len(r['random_word_conversion_order']) for r in rows],'unresolved':[r['unresolved_registers'] for r in rows]}))
 if __name__=='__main__':main()
