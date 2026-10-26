@@ -1,9 +1,10 @@
 # Vòng quản lý vị thế bot1
 
-**Còn sai khác cần sửa:** vé đầu bằng0 có kết quả phụ thuộc trạng thái
-bên gọi. Đã chạy xác nhận4ca với bốn đầu vào ngữ cảnh; seed0 khớp bộ cũ,
-seedkhác0 đổi kết quả trả. [Bằng chứng và việc cần sửa](bot-cua-toi-1/phan-tich/dong-vi-the/first-zero-ticket-20261026-r1/README.md).
-352ca dưới đây chỉ đúng trong ngữ cảnh đã ghi, chưa xác nhận ghép toàn bot.
+Đã sửa nhánh vé đầu0 theo ngữ cảnh bên gọi: hai ngữ cảnh riêng352/352ca
+mỗi lượt, thêm chuỗi nơi gọi→quản lý→hàm con352/352ca; router1.536ca với
+hai cờ đều khớp. [Bản sửa và giới hạn](bot-cua-toi-1/phan-tich/dong-vi-the/first-zero-ticket-20261026-r1/README.md).
+**Còn thiếu:** nguồn cờ ở nhánh nến mới từ chương trình chính chưa chốt;
+API mới bắt buộc bên gọi cấp cờ, không tự mặc định.
 
 Đã ghép nguồn quản lý mua/bán và chạy cả các hàm bảng, sửa, kiểm đóng,
 đóng, chọn cách khớp và gửi trong cùng lượt: **352/352 ca khớp**.

@@ -16,6 +16,8 @@ SCRIPT='Scripts/bot-cua-toi-1/Bot1PositionManagementFlowCheck.mq5'
 CONTRACT=ROOT/'claude-thuc-hien/bot1-manager-flow-check-20261026-r1/TASK.md'
 TABLE_MODE=False
 TRADE_MODE=False
+FIRST_ZERO_CHANGED=False
+ROUTER_CALLER=False
 TRADE_STATE=struct.Struct('<4Qi')
 TRADE_FIELDS=['request_hash','result_hash','check_hash','trade_metadata_hash','trade_sends']
 TRADE_BINDINGS=HOME/'phan-tich/dong-vi-the/management-trade-native-20261026-r1/native-bindings.json'
@@ -40,9 +42,10 @@ DOUBLE_CFG={0x66d98:'unit',0x62498:'stop_distance',0x624a0:'take_distance',0x625
 INT_CFG={0x6246c:'magic',0x62428:'enabled',0x6241c:'mode',0x6745c:'timed_delay_seconds',0x62420:'virtual_delay_seconds',0x623f0:'slippage_enabled',0x62360:'high_low_gap_count',0x624e4:'high_low_enabled',0x62518:'min_steps'}
 BYTE_CFG={0x62410:'use_anchor',0x6a5d0:'high_low_eligible',0x624d8:'high_low_before_open',0x624ec:'high_low_shift',0x62508:'step_enabled'}
 FLOW_BINDINGS=HOME/'phan-tich/dong-vi-the/management-flow-20261026-r1/native-bindings.json'
+CALLER_BINDINGS=HOME/'phan-tich/chuong-trinh-chinh/management-router-20261026-r1/native-bindings.json'
 def identity():
     old=B.identity();base=HOME/'source/MQL5';names=sorted(p.relative_to(base.resolve()).as_posix() for p in pub.closure(base/SCRIPT,base))
-    return dict(execute_trade_children=TRADE_MODE,execute_table_children=TABLE_MODE,table_analysis_sha256=sha(TABLE_ANALYSIS) if TABLE_MODE else None,table_contract_sha256=sha(TABLE_CONTRACT) if TABLE_MODE else None,original_ex5_sha256=old['original_ex5_sha256'],tool_sha256=sha(Path(__file__)),analysis_sha256=sha(ANALYSIS/'analysis.json'),contract_sha256=sha(CONTRACT),probe_sha256=sha(cpu.PROBE),helpers_sha256=old['helpers_sha256']|{str(p.relative_to(ROOT)):sha(p) for p in [B_PATH,CASE_PATH,PUB_PATH,FLOAT_PROOF,FLOW_BINDINGS,ROOT/'bot-cua-toi-3/tests/manager_flow_cases.py']+([TABLE_ANALYSIS,TABLE_CONTRACT,TABLE_DESCRIPTOR] if TABLE_MODE else [])+([TRADE_BINDINGS,TRADE_NATIVE,TRADE_CONTRACT,TRADE_LAYOUT,TRADE_API] if TRADE_MODE else [])},sources_sha256={n:sha(base/n) for n in names})
+    return dict(first_zero_ticket_changed=FIRST_ZERO_CHANGED,execute_router_caller=ROUTER_CALLER,execute_trade_children=TRADE_MODE,execute_table_children=TABLE_MODE,table_analysis_sha256=sha(TABLE_ANALYSIS) if TABLE_MODE else None,table_contract_sha256=sha(TABLE_CONTRACT) if TABLE_MODE else None,original_ex5_sha256=old['original_ex5_sha256'],tool_sha256=sha(Path(__file__)),analysis_sha256=sha(ANALYSIS/'analysis.json'),contract_sha256=sha(CONTRACT),probe_sha256=sha(cpu.PROBE),helpers_sha256=old['helpers_sha256']|{str(p.relative_to(ROOT)):sha(p) for p in [B_PATH,CASE_PATH,PUB_PATH,FLOAT_PROOF,FLOW_BINDINGS,CALLER_BINDINGS,ROOT/'bot-cua-toi-3/tests/manager_flow_cases.py',ROOT/'claude-thuc-hien/bot1-first-zero-ticket-20261026-r1/TASK.md',ROOT/'claude-thuc-hien/bot1-zero-ticket-check-20261026-r1/TASK.md']+([TABLE_ANALYSIS,TABLE_CONTRACT,TABLE_DESCRIPTOR] if TABLE_MODE else [])+([TRADE_BINDINGS,TRADE_NATIVE,TRADE_CONTRACT,TRADE_LAYOUT,TRADE_API] if TRADE_MODE else [])},sources_sha256={n:sha(base/n) for n in names})
 def signed64(n):return ((n+(1<<63))&MASK)-(1<<63)
 def normalized(n):
     value=float(signed64(n));return float(-(1<<63) if value>=1<<63 or value<-(1<<63) else int(value))
@@ -57,6 +60,12 @@ def casts(path,count):
 class Original(B.Original):
     def __init__(self,fixture,formats):
         self.trade_children=TRADE_MODE;self.trade_covered=set();self.trade_calls={};self.table_children=TABLE_MODE;self.table_covered=set();self.table_calls={};super().__init__(fixture);self.formats=formats
+        self.caller_covered=set()
+        if ROUTER_CALLER:
+            binding=json.loads(CALLER_BINDINGS.read_bytes());lo=int(binding['function']['rva'],16);hi=int(binding['function']['end'],16)
+            require(__import__('hashlib').sha256(bytes(self.m.mem_read(self.base+lo,hi-lo))).hexdigest()==binding['function']['sha256'],'CALLER_NATIVE_CODE_DIFFERS')
+        for off in [0x271f0,0x2abc0]:self.m.hook_add(self.uc.UC_HOOK_CODE,self.context_entry,begin=self.base+off,end=self.base+off)
+        self.m.hook_add(self.uc.UC_HOOK_CODE,self.caller_visit,begin=self.base+0x1a152,end=self.base+0x1a63a)
         eb=next(a for a,k in self.apis.items() if k==1)-0x7d3c40
         require(self.apis[eb+0x7c2890]==4,'SYMBOL_DOUBLE_BINDING_DIFFERS')
         for rva,api in {0x7d7df0:102,0x7d7f70:103,0x7d7fc0:104,0x7d8010:105,0x7d7da0:106,0x7d3b50:107,0x7d3d40:108,0x7d3bc0:109,**({0x7d7ee0:110,0x7d8b70:111,0x7d8be0:112} if self.trade_children else {})}.items():
@@ -107,6 +116,23 @@ class Original(B.Original):
         require(spec['kind']!='s','TRADE_STRING_ASSIGNMENT_NOT_SUPPLIED');self.m.mem_write(pointer+spec['offset'],struct.pack('<'+spec['kind'],value))
     def table_visit(self,m,address,size,user):self.table_covered.add(address-self.base)
     def visit(self,m,address,size,user):self.covered.add(address-self.base)
+    def context_entry(self,m,address,size,user):
+        if not ROUTER_CALLER:
+            # Explicit incoming context; native bytes and the parent's branch stay unchanged.
+            m.reg_write(self.x.UC_X86_REG_R12,0x7ff6846f7fc0 if FIRST_ZERO_CHANGED else 0);return
+        if self.router_started:return
+        self.router_started=True;x=self.x;top=m.reg_read(x.UC_X86_REG_RSP)
+        m.mem_write(top+0xbc,struct.pack('<I',self.case['index']))
+        for off,value in [(0x67470,1),(0x62490,1),(0x62000,0)]:m.mem_write(self.base+off,bytes([value]))
+        m.mem_write(self.base+0x6248c,struct.pack('<i',15));m.mem_write(self.base+0x66750,b'\0'*64)
+        m.mem_write(self.base+0x670d0,struct.pack('<8d',*([95.]*8)));m.mem_write(self.base+0x66db0,struct.pack('<8d',*([105.]*8)))
+        m.reg_write(x.UC_X86_REG_R12,0x7ff6846f7fc0 if FIRST_ZERO_CHANGED else 0)
+        m.reg_write(x.UC_X86_REG_RIP,self.base+0x1a152)
+    def caller_visit(self,m,address,size,user):
+        if not ROUTER_CALLER:return
+        off=address-self.base;self.caller_covered.add(off)
+        if off in [0x1a620,0x1a63a]:
+            self.router_stop=off;m.reg_write(self.x.UC_X86_REG_RAX,int(off==0x1a63a));m.reg_write(self.x.UC_X86_REG_RIP,0x60000000);m.emu_stop()
     def text_null(self,descriptor):return int(struct.unpack('<Q',self.m.mem_read(descriptor+4,8))[0]==0)
     def selected_row(self):return self.positions[self.selected] if 0<=self.selected<len(self.positions) else None
     def remove(self,ticket):
@@ -208,7 +234,7 @@ class Original(B.Original):
             self.event({107:10,108:11,109:12}[api],tf,shift,raw,pre.entry.text_hash(self.text(a)));return
         raise ValueError('UNEXPECTED_FLOW_API '+str(api))
     def run(self,c):
-        m,x=self.m,self.x;self.case=c;cfg=inputs.settings(c);self.positions=copy.deepcopy(inputs.positions(c));self.selected=-1;self.events=[];self.prints=[];self.cursor=0x70001000;self.allocs=self.frees=0;self.total_calls=self.digit_count=self.trade_sends=0;self.error_covered=set()
+        m,x=self.m,self.x;self.case=c;cfg=inputs.settings(c);self.positions=copy.deepcopy(inputs.positions(c));self.selected=-1;self.events=[];self.prints=[];self.cursor=0x70001000;self.allocs=self.frees=0;self.total_calls=self.digit_count=self.trade_sends=0;self.error_covered=set();self.router_started=False;self.router_stop=None
         self.bid,self.ask=inputs.tick_reply(c);self.stop_reply=inputs.levels_reply(c);self.minimum=inputs.minimum_reply(c)
         for region,raw in self.regions:
             if region.get('kind')=='mutable_program_data':m.mem_write(region['base'],raw)
@@ -247,9 +273,11 @@ class Original(B.Original):
             result+=TRADE_STATE.pack(self.struct_hash('request',self.base+0x674b0),self.struct_hash('result',self.base+0x675a0),self.struct_hash('check',self.base+0x674b0+436),self.trade_meta_hash(),self.trade_sends)
         return result
 def main():
-    p=argparse.ArgumentParser(description=__doc__);p.add_argument('mode',choices=['prepare','mql5','original','compare']);p.add_argument('run');p.add_argument('--build');p.add_argument('--table-children',action='store_true');p.add_argument('--trade-children',action='store_true');a=p.parse_args();require(re.fullmatch('[a-z0-9-]{1,50}',a.run),'BAD_RUN')
-    global TABLE_MODE,TRADE_MODE
-    TRADE_MODE=a.trade_children;TABLE_MODE=a.table_children or TRADE_MODE
+    p=argparse.ArgumentParser(description=__doc__);p.add_argument('mode',choices=['prepare','mql5','original','compare']);p.add_argument('run');p.add_argument('--build');p.add_argument('--table-children',action='store_true');p.add_argument('--trade-children',action='store_true');p.add_argument('--first-zero-ticket-changed',action='store_true');p.add_argument('--router-caller',action='store_true');a=p.parse_args();require(re.fullmatch('[a-z0-9-]{1,50}',a.run),'BAD_RUN')
+    global TABLE_MODE,TRADE_MODE,FIRST_ZERO_CHANGED,ROUTER_CALLER
+    TRADE_MODE=a.trade_children;TABLE_MODE=a.table_children or TRADE_MODE;FIRST_ZERO_CHANGED=a.first_zero_ticket_changed;ROUTER_CALLER=a.router_caller
+    SCOPE.update(incoming_first_zero_ticket_changed=FIRST_ZERO_CHANGED,native_router_caller_executed=ROUTER_CALLER)
+    LIMITS[-1]='Incoming R12 low-byte context is supplied explicitly for isolated manager calls. Caller mode executes the captured routing/counts with tick-management=1, override=0, validity=1 fixture inputs, then the actual managers and enabled table/trade helpers; no full EA/licensing/protected-byte change.'
     SCOPE['virtual_table_children_executed']=TABLE_MODE
     if TABLE_MODE:
         SCOPE.update(modify_child_intercepted=True,close_child_intercepted=True)
@@ -257,7 +285,7 @@ def main():
     SCOPE['trade_children_executed']=TRADE_MODE
     if TRADE_MODE:
         SCOPE.update(child_helpers_intercepted=False,modify_child_intercepted=False,close_child_intercepted=False,terminal_send_replies_supplied=True)
-        LIMITS[1]='All direct management helpers and underlying close/filling/send execute their actual bodies. Terminal queries, send replies and their specified provider-side position effects are supplied. IsStopped=0, logging=0, market execution=2 and filling flag=1; no complete branch/broker/account/EA claim.'
+        LIMITS[1]='All direct management helpers and underlying close/filling/send execute their actual bodies. Terminal queries, send replies and their specified provider-side position effects are supplied. IsStopped=0, logging=0, market execution=2 and filling flag=1; no complete branch/broker/account/EA claim, including every table-growth, full-table or allocation-failure path.'
     version=3 if TRADE_MODE else 2 if TABLE_MODE else 1;size=RESULT.size+(TABLE_STATE.size if TABLE_MODE else 0)+(TRADE_STATE.size if TRADE_MODE else 0);fields=FIELDS+(TABLE_FIELDS if TABLE_MODE else [])+(TRADE_FIELDS if TRADE_MODE else [])
     folder=HOME/'bang-chung/kiem-quan-ly-vi-the'/a.run;rows=inputs.cases();current=identity()
     if a.mode=='prepare':
@@ -269,9 +297,12 @@ def main():
     if a.mode=='mql5':
         require(a.build and re.fullmatch('[a-z0-9-]{1,50}',a.build),'BUILD_REQUIRED');receipt=HOME/'bang-chung/bien-dich'/a.build/'bien-nhan.json';build=json.loads(receipt.read_text(encoding='utf-8-sig'));require(build['target']==SCRIPT and build['errors']==build['warnings']==0,'BUILD_NOT_CLEAN')
         for n,digest in current['sources_sha256'].items():require(sha(MT/'MQL5'/n)==build['sources_sha256'][n]==digest,'SOURCE_DIFFERS '+n)
-        binary=MT/'MQL5'/Path(SCRIPT).with_suffix('.ex5');require(sha(binary)==build['binary_sha256']==sha(receipt.parent/binary.name),'BINARY_DIFFERS')
+        binary=MT/'MQL5'/Path(SCRIPT).with_suffix('.ex5');saved_binary=receipt.parent/binary.name
+        require(sha(saved_binary)==build['binary_sha256'],'SAVED_BINARY_DIFFERS')
+        if not binary.exists():shutil.copyfile(saved_binary,binary)
+        require(sha(binary)==build['binary_sha256'],'BINARY_DIFFERS')
         files=MT/'MQL5/Files/bot1-position-management-flow'/a.run;files.mkdir(parents=True,exist_ok=False);shutil.copyfile(folder/'cases.bin',files/'cases.bin');preset=MT/'MQL5/Presets'/('b1-full-flow-'+a.run+'.set');ini=MT/('b1-full-flow-'+a.run+'.ini')
-        with preset.open('x',encoding='utf-16') as f:f.write('CheckRun='+a.run+'\nExecuteTableChildren='+str(TABLE_MODE).lower()+'\nExecuteTradeChildren='+str(TRADE_MODE).lower()+'\n')
+        with preset.open('x',encoding='utf-16') as f:f.write('CheckRun='+a.run+'\nExecuteTableChildren='+str(TABLE_MODE).lower()+'\nExecuteTradeChildren='+str(TRADE_MODE).lower()+'\nFirstZeroTicketChanged='+str(FIRST_ZERO_CHANGED).lower()+'\nExecuteManagementRouter='+str(ROUTER_CALLER).lower()+'\n')
         with ini.open('x',encoding='utf-16') as f:f.write('[Experts]\nEnabled=0\nAllowLiveTrading=0\nAllowDllImport=0\n[StartUp]\nScript=bot-cua-toi-1\\Bot1PositionManagementFlowCheck\nScriptParameters='+preset.name+'\nSymbol=XAUUSD_NOCOST_V2\nPeriod=M15\nShutdownTerminal=1\n')
         proc=subprocess.Popen(f'"{MT/"terminal64.exe"}" /portable /config:"{ini}"',cwd=MT,creationflags=subprocess.CREATE_NO_WINDOW)
         try:code=proc.wait(timeout=120)
@@ -290,7 +321,7 @@ def main():
                     value=dict(case=c['id'],profile=c['profile'],buy=c['buy'],rva=hex(runner.m.reg_read(runner.x.UC_X86_REG_RIP)-runner.base),error=str(error),events=runner.events[-30:])
                     save(folder/'attempt-error.json',value);raise RuntimeError(json.dumps(value)) from error
                 traces.append(dict(id=c['id'],profile=c['profile'],buy=c['buy'],events=runner.events,prints=runner.prints))
-            (folder/'original-results.bin').write_bytes(raw);save(folder/'original-traces.json',traces);save(folder/'original-run.json',dict(**current,cases=len(rows),result_sha256=sha(folder/'original-results.bin'),casts_sha256=sha(folder/'cast-values.bin'),instructions=sorted(hex(n) for n in runner.covered),table_instructions=sorted(hex(n) for n in runner.table_covered),table_calls=runner.table_calls,trade_instructions=sorted(hex(n) for n in runner.trade_covered),trade_calls=runner.trade_calls,nan_fixture=runner.nan.report(),**SCOPE));print(json.dumps(dict(cases=len(rows),instructions=len(runner.covered))))
+            (folder/'original-results.bin').write_bytes(raw);save(folder/'original-traces.json',traces);save(folder/'original-run.json',dict(**current,cases=len(rows),result_sha256=sha(folder/'original-results.bin'),casts_sha256=sha(folder/'cast-values.bin'),instructions=sorted(hex(n) for n in runner.covered),caller_instructions=sorted(hex(n) for n in runner.caller_covered),table_instructions=sorted(hex(n) for n in runner.table_covered),table_calls=runner.table_calls,trade_instructions=sorted(hex(n) for n in runner.trade_covered),trade_calls=runner.trade_calls,nan_fixture=runner.nan.report(),**SCOPE));print(json.dumps(dict(cases=len(rows),instructions=len(runner.covered),caller_instructions=len(runner.caller_covered))))
         finally:fixture.close()
         return
     for n in ['original-run.json','mql5-run.json']:

@@ -6,6 +6,7 @@
 // it again, so the macros never reach the real manager.
 #include "../../Include/bot-cua-toi-1/Bot1PositionManagement.mqh"
 input string CheckRun="";
+input bool FirstZeroTicketChanged=false;
 union RouterDoubleBits { double d;ulong u; };
 struct RouterInput
 {
@@ -132,16 +133,23 @@ void FakePrint(const string value)
 }
 // Same signature as the real manager. The event reads the arguments, never the globals; after a
 // buy event change_buy and shrink_after_buy move the globals. A sell call changes nothing.
+// first_zero_ticket_changed is only checked, never hashed or used for the reply. When both flags
+// allow per-tick, the first PositionsTotal keeps that branch for every profile but the empty
+// profile 0, profile 7 included; it passes true, the bar-change branch FirstZeroTicketChanged.
 bool FakeBot1ManagePositions(const bool buy,const Bot1PositionManagementSettings &settings,
                              Bot1PositionManagementState &shared,const double &levels[],
                              Bot1PendingRequestState &requests,Bot1TradeSendOptions &options,
-                             const ulong &deviation)
+                             const ulong &deviation,const bool first_zero_ticket_changed)
 {
    if(settings.symbol!="CHECK") RouterFail(30);
    if(deviation!=RouterDeviation) RouterFail(31);
    if(!(buy ? RouterSameLevels(levels,RouterLevelsBuy) : RouterSameLevels(levels,RouterLevelsSell)))
       RouterFail(32);
    if((buy ? RouterBuyCalls : RouterSellCalls)>=1) RouterFail(33);
+   const bool per_tick=RouterCase.tick_management!=0 && RouterCase.bar_override==0 &&
+                       RouterCase.profile!=0;
+   const bool expected_flag=per_tick ? true : FirstZeroTicketChanged;
+   if(first_zero_ticket_changed!=expected_flag) RouterFail(34);
    RouterEvent(buy ? 2 : 3,(ulong)(long)shared.counter,(ulong)(long)settings.finish.mode,
                (ulong)shared.strategy_index,RouterBits(levels[0]));
    if(buy) RouterBuyCalls++;
@@ -274,7 +282,7 @@ int OnStart()
                                                 RouterBarOverride,RouterFrame,(uint)RouterCase.index,
                                                 RouterBars,RouterCfg,RouterShared,RouterLevelsBuy,
                                                 RouterLevelsSell,RouterRequests,RouterOptions,
-                                                RouterDeviation);
+                                                RouterDeviation,FirstZeroTicketChanged);
       RouterWriteResult(output,id,returned);
    }
    if(FileTell(source)!=FileSize(source)) RouterFail(10);

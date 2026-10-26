@@ -4,6 +4,8 @@
 input string CheckRun="";
 input bool ExecuteTableChildren=false;
 input bool ExecuteTradeChildren=false;
+input bool FirstZeroTicketChanged=false;
+input bool ExecuteManagementRouter=false;
 union FlowBits { double d;ulong u; };
 struct FlowPosition
 {
@@ -288,7 +290,8 @@ bool FTryClose(Bot1PendingRequestState &state,Bot1TradeSendOptions &options,cons
 #define Bot1VirtualStopLevel FStopLevel
 #define Bot1VirtualStopDelayPassed FDelay
 #define Bot1VirtualStopStamp FStamp
-#include "../../Include/bot-cua-toi-1/Bot1PositionManagement.mqh"
+// The router header includes the manager header, so the macros above reach both.
+#include "../../Include/bot-cua-toi-1/Bot1ManagementRouter.mqh"
 #undef PositionsTotal
 #undef PositionGetTicket
 #undef PositionSelectByTicket
@@ -445,6 +448,18 @@ void FWriteResult(const int file,const int id,const bool returned)
       FileWriteInteger(file,FTradeSends);
    }
 }
+// Real router in the per-tick context: licence 1, per-tick 1, no bar override, timeframe 15 and zero
+// bar times. strategy_index is the case value FCase[14], which FInitialize also stores in FShared.
+// Buy and sell get their own 8-entry levels. FirstZeroTicketChanged reaches only the bar-change
+// managers, which this context enters only with no live position.
+bool FRouteManagement()
+{
+   uchar license_valid=1,tick_management=1,bar_override=0;
+   int timeframe=15;long times[8];ArrayInitialize(times,0);
+   double buy_levels[8],sell_levels[8];ArrayInitialize(buy_levels,95.);ArrayInitialize(sell_levels,105.);
+   return Bot1RoutePositionManagement(license_valid,tick_management,bar_override,timeframe,(uint)FCase[14],times,FCfg,
+                                      FShared,buy_levels,sell_levels,FRequests,FOptions,FDeviation,FirstZeroTicketChanged);
+}
 int OnStart()
 {
    if(ExecuteTradeChildren && !ExecuteTableChildren) return 12;
@@ -468,7 +483,8 @@ int OnStart()
    {
       if(!FReadCase(source,id)) { FFail(9);break; }
       FInitialize();FWriteCasts(formats,id);
-      bool returned=Bot1ManagePositions(FCase[1]!=0,FCfg,FShared,FLevels,FRequests,FOptions,FDeviation);
+      bool returned=ExecuteManagementRouter ? FRouteManagement()
+                    : Bot1ManagePositions(FCase[1]!=0,FCfg,FShared,FLevels,FRequests,FOptions,FDeviation,FirstZeroTicketChanged);
       FWriteResult(output,id,returned);
    }
    if(FileTell(source)!=FileSize(source)) FFail(10);

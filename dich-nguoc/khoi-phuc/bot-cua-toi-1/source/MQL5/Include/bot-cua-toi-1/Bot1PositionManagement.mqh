@@ -67,16 +67,23 @@ struct Bot1PositionManagementState
 
 // Internal step of Bot1ManagePositions for the position at index. Returns true only when a
 // close path ends the whole pass; changed collects the updates of this position.
+// A zero ticket at index 0 sets changed to first_zero_ticket_changed and still returns false.
 bool Bot1ManageOnePosition(const bool buy,const Bot1PositionManagementSettings &settings,
                            Bot1PositionManagementState &shared,const double &levels[],
                            Bot1PendingRequestState &requests,Bot1TradeSendOptions &options,
                            const ulong &deviation,const int index,const uchar eligible,
-                           bool &changed)
+                           bool &changed,const bool first_zero_ticket_changed)
 {
    Bot1ManagedPosition position;
    if(!Bot1ReadManagementPosition(index,buy,settings.magic,settings.enabled,settings.symbol,
                                   shared.last_ticket,shared.tick,position))
+   {
+      // The helper stores PositionGetTicket first and returns at once on zero; a nonzero
+      // ticket that is filtered out does not touch changed.
+      if(index==0 && shared.last_ticket==0)
+         changed=first_zero_ticket_changed;
       return false;
+   }
    // Modify results are ignored here and do not set changed.
    Bot1FillManagementInitialLevels(buy,settings.symbol,settings.unit,settings.stop_distance,
                                    settings.take_distance,position,requests,options);
@@ -251,10 +258,11 @@ bool Bot1ManageOnePosition(const bool buy,const Bot1PositionManagementSettings &
 
 // Manages the open positions of one direction. Returns true as soon as a close path is
 // reached, otherwise whether any position reported a change.
+// first_zero_ticket_changed has no default; the caller picks it for each call.
 bool Bot1ManagePositions(const bool buy,const Bot1PositionManagementSettings &settings,
                          Bot1PositionManagementState &shared,const double &levels[],
                          Bot1PendingRequestState &requests,Bot1TradeSendOptions &options,
-                         const ulong &deviation)
+                         const ulong &deviation,const bool first_zero_ticket_changed)
 {
    int total=PositionsTotal();
    if(total<1) return false;
@@ -266,7 +274,7 @@ bool Bot1ManagePositions(const bool buy,const Bot1PositionManagementSettings &se
    {
       bool changed=false;
       if(Bot1ManageOnePosition(buy,settings,shared,levels,requests,options,deviation,index,
-                               eligible,changed))
+                               eligible,changed,first_zero_ticket_changed))
          return true;
       any_changed=any_changed || changed;
       index++;

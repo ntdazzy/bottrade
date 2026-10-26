@@ -51,6 +51,7 @@ int Bot1CountManagementPositions(const bool buy,const string &symbol,
 // strategy_index is the caller's 0..7 snapshot and picks the slot in the 8-entry last_times;
 // shared.strategy_index is not used for it. Returns true when the licence flag is 0 or a
 // manager returned true, so the caller stops the rest of its pass; false lets it continue.
+// bar_first_zero_ticket_changed has no default and is passed to both bar-change managers.
 bool Bot1RoutePositionManagement(const uchar &license_valid,
                                  const uchar &tick_management,const uchar &bar_override,
                                  const int &timeframe,const uint strategy_index,
@@ -59,7 +60,8 @@ bool Bot1RoutePositionManagement(const uchar &license_valid,
                                  Bot1PositionManagementState &shared,
                                  const double &buy_levels[],const double &sell_levels[],
                                  Bot1PendingRequestState &requests,
-                                 Bot1TradeSendOptions &options,const ulong &deviation)
+                                 Bot1TradeSendOptions &options,const ulong &deviation,
+                                 const bool bar_first_zero_ticket_changed)
 {
    // The flag is owned by the caller and only read here.
    if(license_valid==0)
@@ -79,26 +81,29 @@ bool Bot1RoutePositionManagement(const uchar &license_valid,
       const long current=(long)iTime(settings.symbol,(ENUM_TIMEFRAMES)timeframe,1);
       last_times[strategy_index]=current;
       // Sell always runs after buy, even when buy returned true, with the state buy left behind.
+      // Both receive the bar_first_zero_ticket_changed value of this router call.
       const bool buy_changed=Bot1ManagePositions(true,settings,shared,buy_levels,requests,options,
-                                                 deviation);
+                                                 deviation,bar_first_zero_ticket_changed);
       const bool sell_changed=Bot1ManagePositions(false,settings,shared,sell_levels,requests,
-                                                  options,deviation);
+                                                  options,deviation,bar_first_zero_ticket_changed);
       return buy_changed || sell_changed;
    }
 
    // Each count reads PositionsTotal itself. The sell count runs even when buy management
    // returned true and sees the positions and state buy management left behind.
+   // Both per-tick managers take true for a zero ticket at index 0.
    const int buy_count=Bot1CountManagementPositions(true,settings.symbol,settings.magic,
                                                     shared.last_ticket);
    bool buy_changed=false;
    if(buy_count>0)
-      buy_changed=Bot1ManagePositions(true,settings,shared,buy_levels,requests,options,deviation);
+      buy_changed=Bot1ManagePositions(true,settings,shared,buy_levels,requests,options,
+                                      deviation,true);
    const int sell_count=Bot1CountManagementPositions(false,settings.symbol,settings.magic,
                                                      shared.last_ticket);
    bool sell_changed=false;
    if(sell_count>0)
       sell_changed=Bot1ManagePositions(false,settings,shared,sell_levels,requests,options,
-                                       deviation);
+                                       deviation,true);
    return buy_changed || sell_changed;
 }
 #endif

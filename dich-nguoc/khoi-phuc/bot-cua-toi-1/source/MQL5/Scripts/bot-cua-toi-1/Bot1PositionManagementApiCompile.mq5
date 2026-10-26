@@ -10,6 +10,6 @@ void OnStart()
    Bot1PendingRequestState requests;ZeroMemory(requests);
    Bot1TradeSendOptions options;ZeroMemory(options);
    double levels[8];ArrayInitialize(levels,0.0);ulong deviation=1;
-   Bot1ManagePositions(true,settings,shared,levels,requests,options,deviation);
-   Bot1ManagePositions(false,settings,shared,levels,requests,options,deviation);
+   Bot1ManagePositions(true,settings,shared,levels,requests,options,deviation,false);
+   Bot1ManagePositions(false,settings,shared,levels,requests,options,deviation,false);
 }

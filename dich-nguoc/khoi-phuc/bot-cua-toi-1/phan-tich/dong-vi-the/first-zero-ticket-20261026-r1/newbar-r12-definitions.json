@@ -1,0 +1,131 @@
+{
+  "base": "0x23e5aa10000",
+  "function": {
+    "begin": "0x18aa0",
+    "end": "0x1ef9c"
+  },
+  "targets": [
+    {
+      "call_rva": "0x1a2cd",
+      "side": "buy",
+      "definitions": [
+        {
+          "rva": "0x18f13",
+          "mnemonic": "movabs",
+          "operands": "r12, 0x23e5aa7246c",
+          "bytes": "49bc6c24a75a3e020000"
+        },
+        {
+          "rva": "0x18f55",
+          "mnemonic": "lea",
+          "operands": "r12, [rsp + 0x1a8]",
+          "bytes": "4c8da424a8010000"
+        },
+        {
+          "rva": "0x19237",
+          "mnemonic": "mov",
+          "operands": "r12d, dword ptr [rax - 4]",
+          "bytes": "448b60fc"
+        },
+        {
+          "rva": "0x1924e",
+          "mnemonic": "xor",
+          "operands": "r12d, r12d",
+          "bytes": "4531e4"
+        },
+        {
+          "rva": "0x1936e",
+          "mnemonic": "mov",
+          "operands": "r12d, dword ptr [rax - 4]",
+          "bytes": "448b60fc"
+        },
+        {
+          "rva": "0x19385",
+          "mnemonic": "xor",
+          "operands": "r12d, r12d",
+          "bytes": "4531e4"
+        },
+        {
+          "rva": "0x194d6",
+          "mnemonic": "xor",
+          "operands": "r12d, r12d",
+          "bytes": "4531e4"
+        },
+        {
+          "rva": "0x19b9d",
+          "mnemonic": "inc",
+          "operands": "r12d",
+          "bytes": "41ffc4"
+        }
+      ],
+      "unresolved_function_entries": [
+        "0x18aa0",
+        "0x19034",
+        "0x1994d",
+        "0x19be1"
+      ]
+    },
+    {
+      "call_rva": "0x1a2db",
+      "side": "sell",
+      "definitions": [
+        {
+          "rva": "0x18f13",
+          "mnemonic": "movabs",
+          "operands": "r12, 0x23e5aa7246c",
+          "bytes": "49bc6c24a75a3e020000"
+        },
+        {
+          "rva": "0x18f55",
+          "mnemonic": "lea",
+          "operands": "r12, [rsp + 0x1a8]",
+          "bytes": "4c8da424a8010000"
+        },
+        {
+          "rva": "0x19237",
+          "mnemonic": "mov",
+          "operands": "r12d, dword ptr [rax - 4]",
+          "bytes": "448b60fc"
+        },
+        {
+          "rva": "0x1924e",
+          "mnemonic": "xor",
+          "operands": "r12d, r12d",
+          "bytes": "4531e4"
+        },
+        {
+          "rva": "0x1936e",
+          "mnemonic": "mov",
+          "operands": "r12d, dword ptr [rax - 4]",
+          "bytes": "448b60fc"
+        },
+        {
+          "rva": "0x19385",
+          "mnemonic": "xor",
+          "operands": "r12d, r12d",
+          "bytes": "4531e4"
+        },
+        {
+          "rva": "0x194d6",
+          "mnemonic": "xor",
+          "operands": "r12d, r12d",
+          "bytes": "4531e4"
+        },
+        {
+          "rva": "0x19b9d",
+          "mnemonic": "inc",
+          "operands": "r12d",
+          "bytes": "41ffc4"
+        }
+      ],
+      "unresolved_function_entries": [
+        "0x18aa0",
+        "0x19034",
+        "0x1994d",
+        "0x19be1"
+      ]
+    }
+  ],
+  "nonvolatile_rule": "R12 is callee-saved across calls; calls do not define it in this trace.",
+  "original_bytes_modified": false
+}

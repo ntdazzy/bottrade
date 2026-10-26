@@ -1,0 +1,67 @@
+{
+  "original_ex5_sha256": "a3b0de423a06e10ebedc279307b93d7cb9188ba2bb5de77131a913c865b0e922",
+  "base": "0x23e5aa10000",
+  "function": {
+    "rva": "0x18aa0",
+    "end": "0x1ef9c",
+    "sha256": "45d53270186b7019a8721e0cf3734a61aac8e8660c70f7e602849b1c298d7cbd"
+  },
+  "region": {
+    "begin": "0x1a152",
+    "end_continue": "0x1a620",
+    "end_abort": "0x1a63a"
+  },
+  "globals": {
+    "ready": "0x67470",
+    "tick_management": "0x62490",
+    "bar_override": "0x62000",
+    "timeframe": "0x6248c",
+    "last_times": "0x66750",
+    "magic": "0x6246c",
+    "symbol": "0x67918",
+    "last_ticket": "0x677f8",
+    "counter": "0x673f0",
+    "mode": "0x6241c",
+    "current_strategy_index": "0x678f4",
+    "buy_levels": "0x670d0",
+    "sell_levels": "0x66db0",
+    "string_reply": "0x6a43c"
+  },
+  "guard_message": {
+    "descriptor": "0x54618",
+    "text": "Licence not valid!"
+  },
+  "calls": {
+    "bar_iTime1": "0x1a28b",
+    "bar_iTime2": "0x1a2bd",
+    "bar_write": "0x1a2bf",
+    "bar_buy": "0x1a2cd",
+    "bar_sell": "0x1a2db",
+    "tick_buy": "0x1a434",
+    "tick_sell": "0x1a5ed"
+  },
+  "buy_count_order": [
+    "Ticket",
+    "Magic64",
+    "Type64",
+    "Symbol",
+    "Total"
+  ],
+  "sell_count_order": [
+    "Ticket",
+    "Magic64",
+    "Symbol",
+    "Type64",
+    "Total"
+  ],
+  "whole_bot_complete": false,
+  "sdk_addresses": {
+    "iTime": "0x7ff6846f3b50",
+    "PositionsTotal": "0x7ff6846f7da0",
+    "PositionGetTicket": "0x7ff6846f7df0",
+    "PositionGetInteger": "0x7ff6846f7fc0",
+    "PositionGetString": "0x7ff6846f8010",
+    "DispatchPrint": "0x7ff6846d49f0"
+  },
+  "sdk_scope": "Terminal services and the two management bodies are supplied in this caller-slice comparison; validity flag is not forced or changed in the original program."
+}

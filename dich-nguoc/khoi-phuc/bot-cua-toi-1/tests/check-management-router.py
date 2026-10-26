@@ -14,6 +14,7 @@ PUB_PATH=ROOT/'cong-cu/kiem-ban-git-quan-ly.py';pub=module('router1_closure',PUB
 sha,require,save=pre.sha,pre.require,pre.save
 MT=(ROOT.parent/'.local/mt5-bot1-thread-20261025').resolve();MASK=(1<<64)-1
 SCRIPT='Scripts/bot-cua-toi-1/Bot1ManagementRouterCheck.mq5'
+FIRST_ZERO_CHANGED=False
 BINDINGS=HOME/'phan-tich/chuong-trinh-chinh/management-router-20261026-r1/native-bindings.json'
 CONTRACT=ROOT/'claude-thuc-hien/bot1-main-router-check-20261026-r1/TASK.md'
 RESULT=struct.Struct('<12i2Q8q')
@@ -26,7 +27,7 @@ LIMITS=['Only the existing validity-flag branch, route selection, ordered positi
 
 def identity():
     base=HOME/'source/MQL5';names=sorted(p.relative_to(base.resolve()).as_posix() for p in pub.closure(base/SCRIPT,base))
-    return dict(original_ex5_sha256=pre.validation.original_hash(1),tool_sha256=sha(Path(__file__)),contract_sha256=sha(CONTRACT),helpers_sha256={p.relative_to(ROOT).as_posix():sha(p) for p in [PRE_PATH,CASE_PATH,PUB_PATH,BINDINGS,ROOT/'cong-cu/kiem-gia-vao-bot-1-3.py',ROOT/'cong-cu/kiem-muc-gia-bot-1-3.py',ROOT/'cong-cu/kiem-khoi-luong-hop-le-bot-1-3.py',ROOT/'cong-cu/kiem-khoi-luong-bot-1-3.py']},sources_sha256={n:sha(base/n) for n in names})
+    return dict(first_zero_ticket_changed=FIRST_ZERO_CHANGED,original_ex5_sha256=pre.validation.original_hash(1),tool_sha256=sha(Path(__file__)),contract_sha256=sha(CONTRACT),helpers_sha256={p.relative_to(ROOT).as_posix():sha(p) for p in [PRE_PATH,CASE_PATH,PUB_PATH,BINDINGS,ROOT/'cong-cu/kiem-gia-vao-bot-1-3.py',ROOT/'cong-cu/kiem-muc-gia-bot-1-3.py',ROOT/'cong-cu/kiem-khoi-luong-hop-le-bot-1-3.py',ROOT/'cong-cu/kiem-khoi-luong-bot-1-3.py',ROOT/'claude-thuc-hien/bot1-zero-ticket-check-20261026-r1/TASK.md']},sources_sha256={n:sha(base/n) for n in names})
 
 def fnv(raw):
     value=0xcbf29ce484222325
@@ -123,7 +124,9 @@ class Original(pre.entry.Original):
         return RESULT.pack(c['id'],int(self.stop==0x1a63a),self.integer(0x6248c),self.integer(0x673f0),self.integer(0x6241c),self.integer(0x678f4),len(self.events),self.selected,self.total_calls,self.buy_calls,self.sell_calls,len(self.positions),self.word(0x677f8),fnv(raw),*bars)
 
 def main():
-    p=argparse.ArgumentParser(description=__doc__);p.add_argument('mode',choices=['prepare','mql5','original','compare']);p.add_argument('run');p.add_argument('--build');a=p.parse_args();require(re.fullmatch('[a-z0-9-]{1,50}',a.run),'BAD_RUN')
+    p=argparse.ArgumentParser(description=__doc__);p.add_argument('mode',choices=['prepare','mql5','original','compare']);p.add_argument('run');p.add_argument('--build');p.add_argument('--first-zero-ticket-changed',action='store_true');a=p.parse_args();require(re.fullmatch('[a-z0-9-]{1,50}',a.run),'BAD_RUN')
+    global FIRST_ZERO_CHANGED
+    FIRST_ZERO_CHANGED=a.first_zero_ticket_changed
     inputs=module('router1_inputs',CASE_PATH);folder=HOME/'bang-chung/kiem-quan-ly-vi-the'/a.run;rows=inputs.cases();current=identity()
     if a.mode=='prepare':
         folder.mkdir(parents=True,exist_ok=False);(folder/'cases.bin').write_bytes(inputs.encode(rows));tested=folder/'tested-sources';tested.mkdir()
@@ -134,9 +137,12 @@ def main():
     if a.mode=='mql5':
         require(a.build and re.fullmatch('[a-z0-9-]{1,50}',a.build),'BUILD_REQUIRED');receipt=HOME/'bang-chung/bien-dich'/a.build/'bien-nhan.json';build=json.loads(receipt.read_text(encoding='utf-8-sig'));require(build['target']==SCRIPT and build['errors']==build['warnings']==0,'BUILD_NOT_CLEAN')
         for name,digest in current['sources_sha256'].items():require(sha(MT/'MQL5'/name)==build['sources_sha256'][name]==digest,'SOURCE_DIFFERS '+name)
-        binary=MT/'MQL5'/Path(SCRIPT).with_suffix('.ex5');require(sha(binary)==build['binary_sha256']==sha(receipt.parent/binary.name),'BINARY_DIFFERS')
+        binary=MT/'MQL5'/Path(SCRIPT).with_suffix('.ex5');saved_binary=receipt.parent/binary.name
+        require(sha(saved_binary)==build['binary_sha256'],'SAVED_BINARY_DIFFERS')
+        if not binary.exists():shutil.copyfile(saved_binary,binary)
+        require(sha(binary)==build['binary_sha256'],'BINARY_DIFFERS')
         files=MT/'MQL5/Files/bot1-management-router'/a.run;files.mkdir(parents=True,exist_ok=False);shutil.copyfile(folder/'cases.bin',files/'cases.bin');preset=MT/'MQL5/Presets'/('b1-router-'+a.run+'.set');ini=MT/('b1-router-'+a.run+'.ini')
-        with preset.open('x',encoding='utf-16') as f:f.write('CheckRun='+a.run+'\n')
+        with preset.open('x',encoding='utf-16') as f:f.write('CheckRun='+a.run+'\nFirstZeroTicketChanged='+str(FIRST_ZERO_CHANGED).lower()+'\n')
         with ini.open('x',encoding='utf-16') as f:f.write('[Experts]\nEnabled=0\nAllowLiveTrading=0\nAllowDllImport=0\n[StartUp]\nScript=bot-cua-toi-1\\Bot1ManagementRouterCheck\nScriptParameters='+preset.name+'\nSymbol=XAUUSD_NOCOST_V2\nPeriod=M15\nShutdownTerminal=1\n')
         proc=subprocess.Popen(f'"{MT/"terminal64.exe"}" /portable /config:"{ini}"',cwd=MT,creationflags=subprocess.CREATE_NO_WINDOW)
         try:code=proc.wait(timeout=120)

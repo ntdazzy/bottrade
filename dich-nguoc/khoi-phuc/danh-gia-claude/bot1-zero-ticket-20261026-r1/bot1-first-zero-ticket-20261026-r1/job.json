@@ -1,0 +1,13 @@
+{
+  "pid": 27168,
+  "started": "2026-10-26T01:56:48.2521026Z",
+  "model": "claude-opus-5-5",
+  "effort": "max",
+  "ultracode_requested": true,
+  "scope": "Write proposed analysis/code only within an explicitly assigned deliverable directory",
+  "output_directory": "dich-nguoc/khoi-phuc/claude-thuc-hien/bot1-first-zero-ticket-20261026-r1",
+  "edit_rule": "Edit(./dich-nguoc/khoi-phuc/claude-thuc-hien/bot1-first-zero-ticket-20261026-r1/**)",
+  "permission_mode": "dontAsk",
+  "prompt_sha256": "3b54df58a57e6b77cb6a6d8bf32e62dd2f9912aaaa341309be3b55b889eb55d6",
+  "resume": ""
+}

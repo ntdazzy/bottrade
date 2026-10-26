@@ -1,0 +1,66 @@
+{
+  "run": "bot1-first-zero-ticket-20261026-r1",
+  "session_id": "854384b4-b324-4d52-9f1d-be8b6beb1dc8",
+  "started": "2026-10-26T01:56:48.2521026Z",
+  "snapshot_utc": "2026-10-26T02:43:52.394244+00:00",
+  "status": "delivered-unverified",
+  "response_is_error": false,
+  "terminal_reason": "completed",
+  "job_sha256": "5f5093f865c8bde3c894458907321d5061e4757fdf50234fae76b5174c04ccc2",
+  "prompt_sha256": "3b54df58a57e6b77cb6a6d8bf32e62dd2f9912aaaa341309be3b55b889eb55d6",
+  "response_sha256": "e9c09c744adcf54026f4dbde7c4dac735b3c9be94f3d964992f3d70307fa672f",
+  "actual_requests": 8,
+  "requests": [
+    {
+      "timestamp": "2026-10-26T01:56:49.480Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-26T01:57:09.057Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-26T01:57:17.454Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-26T01:57:20.649Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-26T01:57:38.123Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-26T02:04:52.486Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-26T02:05:03.604Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    },
+    {
+      "timestamp": "2026-10-26T02:06:24.012Z",
+      "model": "claude-opus-5-5",
+      "effort": "max"
+    }
+  ],
+  "ultracode_requested": true,
+  "ultracode_runtime_confirmed": null,
+  "journal_prefix_bytes": 1326811,
+  "journal_prefix_sha256": "ece3e23aecceba95d54b5a9dcc58d1cc9af8c626075ca6a16e07e19616880473",
+  "files_sha256": {
+    "dich-nguoc/khoi-phuc/claude-thuc-hien/bot1-first-zero-ticket-20261026-r1/Bot1ManagementRouter.mqh": "8d236bd32513ff675c68d35253c423c8f5280506a71d4662bccb876e7cb7a6c6",
+    "dich-nguoc/khoi-phuc/claude-thuc-hien/bot1-first-zero-ticket-20261026-r1/Bot1PositionManagement.mqh": "5bb104df9d8f76eedf8c7e136e543e475c88a5fefed5628e53f9cfc912eda1c4",
+    "dich-nguoc/khoi-phuc/claude-thuc-hien/bot1-first-zero-ticket-20261026-r1/SUMMARY.md": "4b682bdea1a4b8dcf44d5a44892f29eeaca46db3046b2f2814dfb76b0f935731"
+  },
+  "source_validated": false,
+  "whole_bot_complete": false
+}

@@ -1,0 +1,13 @@
+{
+  "pid": 9820,
+  "started": "2026-10-26T02:27:56.3108606Z",
+  "model": "claude-opus-5-5",
+  "effort": "max",
+  "ultracode_requested": true,
+  "scope": "Write proposed analysis/code only within an explicitly assigned deliverable directory",
+  "output_directory": "dich-nguoc/khoi-phuc/claude-thuc-hien/bot1-zero-ticket-check-20261026-r1",
+  "edit_rule": "Edit(./dich-nguoc/khoi-phuc/claude-thuc-hien/bot1-zero-ticket-check-20261026-r1/**)",
+  "permission_mode": "dontAsk",
+  "prompt_sha256": "a946ac02e6b5493e44bffd417898cca34378ff36811da6525adb0e1b2e04f7dd",
+  "resume": ""
+}
