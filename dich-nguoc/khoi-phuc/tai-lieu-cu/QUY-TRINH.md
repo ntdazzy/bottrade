@@ -24,6 +24,10 @@ Theo phân công hiện tại, Codex phân tích chứng cứ gốc, chốt thu�
 và viết đặc tả. Claude nhận phần lớn việc viết mã/bộ kiểm theo đặc tả,
 mục tiêu khoảng 95% phần thực hiện. Codex quản lý, chia phần, theo dõi,
 tự đối chiếu với bot gốc và kiểm kết quả trước khi ghép.
+Làm rõ ngày26/10/2026: cố gắng giao toàn bộ việc viết mã đã đủ mô tả
+cho Claude; giao Claude lập bảng nối tất cả các khối nguồn hiện có,
+giao diện, nơi gọi và dữ liệu truyền. Codex kiểm bảng nối trước khi
+dùng để giao viết phần ghép tiếp theo; phần chưa rõ vẫn phải phân tích.
 Cách giao việc được làm rõ ngày 25/10/2026: Codex phân tích bằng chứng
 gốc trước và chốt mô tả từng chức năng, gồm công thức, điều kiện, kiểu
 số, thứ tự và tác dụng phụ. Claude nhận mô tả cùng ngữ cảnh/mục tiêu

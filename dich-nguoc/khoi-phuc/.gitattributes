@@ -396,3 +396,18 @@
 /cong-cu/tao-ho-so-ma-chup.py -text
 /cong-cu/xuat-ma-co-du-lieu.ps1 -text
 /cong-cu-cu/ghidra/ExportOneCapturedFunction.java -text
+
+/bot-cua-toi-3/source/MQL5/Include/bot-cua-toi-3/Bot3PendingSubmission.mqh -text
+/bot-cua-toi-3/source/MQL5/Scripts/bot-cua-toi-3/Bot3PendingSubmission*.mq5 -text
+/bot-cua-toi-3/tests/check-pending-submission.py -text
+/bot-cua-toi-3/tests/pending_submission_cases.py -text
+/bot-cua-toi-3/phan-tich/chuong-trinh-chinh/pending-submission-20261026-r2/** -text
+/bot-cua-toi-3/bang-chung/kiem-quan-ly-vi-the/b3-pending-submission-*/** -text
+/bot-cua-toi-3/bang-chung/kiem-quan-ly-vi-the/b3-submission-cpu-*/** -text
+/bot-cua-toi-3/bang-chung/bien-dich/b3-submission-*/** -text
+/claude-thuc-hien/bot3-pending-*/** -text
+/claude-thuc-hien/bot*-integration-map-20261026-r1/** -text
+/danh-gia-claude/bot3-pending-*/** -text
+/danh-gia-claude/integration-maps-dispatch-20261026-r1/** -text
+/bot-cua-toi-3/source/MQL5/Include/bot-cua-toi-3/Bot3Margin.mqh -text
+/claude-thuc-hien/bot1-integration-map-20261026-r1/TASK.md whitespace=-blank-at-eof

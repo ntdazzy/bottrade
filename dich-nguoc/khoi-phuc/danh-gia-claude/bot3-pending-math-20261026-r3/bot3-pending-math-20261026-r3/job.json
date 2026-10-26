@@ -1,0 +1,13 @@
+{
+  "pid": 14652,
+  "started": "2026-10-26T06:55:40.4922382Z",
+  "model": "claude-opus-5-5",
+  "effort": "max",
+  "ultracode_requested": true,
+  "scope": "Write proposed analysis/code only within an explicitly assigned deliverable directory",
+  "output_directory": "dich-nguoc/khoi-phuc/claude-thuc-hien/bot3-pending-math-20261026-r3",
+  "edit_rule": "Edit(./dich-nguoc/khoi-phuc/claude-thuc-hien/bot3-pending-math-20261026-r3/**)",
+  "permission_mode": "dontAsk",
+  "prompt_sha256": "45ec4018f955daeed1626ae38cf52d9dbefaff9648f6f953d525f264a3a77ddf",
+  "resume": "f6905473-e68c-4cb8-81ee-95ca07d9b28c"
+}

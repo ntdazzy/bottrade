@@ -1,5 +1,10 @@
 # bot-cua-toi-3
 
+Mới thêm đoạn đặt lệnh sau khi đã có giá cơ sở: **332/332 ca khớp**,
+biên dịch **0 lỗi/0 cảnh báo**, giữ đúng thử lại và ghi bảng. Claude
+viết mã/bộ kiểm, Codex so với bản gốc. Chưa ghép toàn EA.
+[Phạm vi](../PHAN-TICH-DAT-LENH-TRONG-MAIN-BOT-3.md).
+
 Mới thêm khối chuẩn bị cài đặt chiến lược: **1.016/1.016 ca thường khớp**,
 so76giá trị, biên dịch **0 lỗi/0 cảnh báo**. Còn các nhánh lỗi, dữ liệu
 đầy đủ và ghép EA. [Phạm vi](../PHAN-TICH-CHUAN-BI-BOT-3.md).

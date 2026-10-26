@@ -1,0 +1,3121 @@
+{
+  "tool_sha256": "c014cb0e056f1a04157f683bbde58dbe8a432780916b154cb94dbdb68be8c273",
+  "unicorn_version": "2.1.4",
+  "mxcsr_used": "0x1f80",
+  "original_mxcsr": "0x1fa0",
+  "opcodes": {
+    "mul": "f20f1001f20f590266480f7ec0c3",
+    "add": "f20f1001f20f580266480f7ec0c3",
+    "sub": "f20f1001f20f5c0266480f7ec0c3",
+    "mxcsr_get": "0fae19c3",
+    "mxcsr_set": "0fae11c3"
+  },
+  "cases": 363,
+  "matched": 339,
+  "failed": 24,
+  "differences": [
+    {
+      "operation": "mul",
+      "left": "7ff8000000000123",
+      "right": "fff8000000000456",
+      "cpu": "7ff8000000000123",
+      "unicorn": "fff8000000000456",
+      "matched": false
+    },
+    {
+      "operation": "mul",
+      "left": "7ff8000000000123",
+      "right": "7ff8000000000789",
+      "cpu": "7ff8000000000123",
+      "unicorn": "7ff8000000000789",
+      "matched": false
+    },
+    {
+      "operation": "mul",
+      "left": "fff8000000000456",
+      "right": "7ff8000000000789",
+      "cpu": "fff8000000000456",
+      "unicorn": "7ff8000000000789",
+      "matched": false
+    },
+    {
+      "operation": "mul",
+      "left": "7ff0000000000123",
+      "right": "fff8000000000456",
+      "cpu": "7ff8000000000123",
+      "unicorn": "fff8000000000456",
+      "matched": false
+    },
+    {
+      "operation": "mul",
+      "left": "7ff0000000000123",
+      "right": "7ff8000000000789",
+      "cpu": "7ff8000000000123",
+      "unicorn": "7ff8000000000789",
+      "matched": false
+    },
+    {
+      "operation": "mul",
+      "left": "7ff0000000000123",
+      "right": "fff0000000000456",
+      "cpu": "7ff8000000000123",
+      "unicorn": "fff8000000000456",
+      "matched": false
+    },
+    {
+      "operation": "mul",
+      "left": "fff0000000000456",
+      "right": "7ff8000000000123",
+      "cpu": "fff8000000000456",
+      "unicorn": "7ff8000000000123",
+      "matched": false
+    },
+    {
+      "operation": "mul",
+      "left": "fff0000000000456",
+      "right": "7ff8000000000789",
+      "cpu": "fff8000000000456",
+      "unicorn": "7ff8000000000789",
+      "matched": false
+    },
+    {
+      "operation": "add",
+      "left": "7ff8000000000123",
+      "right": "fff8000000000456",
+      "cpu": "7ff8000000000123",
+      "unicorn": "fff8000000000456",
+      "matched": false
+    },
+    {
+      "operation": "add",
+      "left": "7ff8000000000123",
+      "right": "7ff8000000000789",
+      "cpu": "7ff8000000000123",
+      "unicorn": "7ff8000000000789",
+      "matched": false
+    },
+    {
+      "operation": "add",
+      "left": "fff8000000000456",
+      "right": "7ff8000000000789",
+      "cpu": "fff8000000000456",
+      "unicorn": "7ff8000000000789",
+      "matched": false
+    },
+    {
+      "operation": "add",
+      "left": "7ff0000000000123",
+      "right": "fff8000000000456",
+      "cpu": "7ff8000000000123",
+      "unicorn": "fff8000000000456",
+      "matched": false
+    },
+    {
+      "operation": "add",
+      "left": "7ff0000000000123",
+      "right": "7ff8000000000789",
+      "cpu": "7ff8000000000123",
+      "unicorn": "7ff8000000000789",
+      "matched": false
+    },
+    {
+      "operation": "add",
+      "left": "7ff0000000000123",
+      "right": "fff0000000000456",
+      "cpu": "7ff8000000000123",
+      "unicorn": "fff8000000000456",
+      "matched": false
+    },
+    {
+      "operation": "add",
+      "left": "fff0000000000456",
+      "right": "7ff8000000000123",
+      "cpu": "fff8000000000456",
+      "unicorn": "7ff8000000000123",
+      "matched": false
+    },
+    {
+      "operation": "add",
+      "left": "fff0000000000456",
+      "right": "7ff8000000000789",
+      "cpu": "fff8000000000456",
+      "unicorn": "7ff8000000000789",
+      "matched": false
+    },
+    {
+      "operation": "sub",
+      "left": "7ff8000000000123",
+      "right": "fff8000000000456",
+      "cpu": "7ff8000000000123",
+      "unicorn": "fff8000000000456",
+      "matched": false
+    },
+    {
+      "operation": "sub",
+      "left": "7ff8000000000123",
+      "right": "7ff8000000000789",
+      "cpu": "7ff8000000000123",
+      "unicorn": "7ff8000000000789",
+      "matched": false
+    },
+    {
+      "operation": "sub",
+      "left": "fff8000000000456",
+      "right": "7ff8000000000789",
+      "cpu": "fff8000000000456",
+      "unicorn": "7ff8000000000789",
+      "matched": false
+    },
+    {
+      "operation": "sub",
+      "left": "7ff0000000000123",
+      "right": "fff8000000000456",
+      "cpu": "7ff8000000000123",
+      "unicorn": "fff8000000000456",
+      "matched": false
+    },
+    {
+      "operation": "sub",
+      "left": "7ff0000000000123",
+      "right": "7ff8000000000789",
+      "cpu": "7ff8000000000123",
+      "unicorn": "7ff8000000000789",
+      "matched": false
+    },
+    {
+      "operation": "sub",
+      "left": "7ff0000000000123",
+      "right": "fff0000000000456",
+      "cpu": "7ff8000000000123",
+      "unicorn": "fff8000000000456",
+      "matched": false
+    },
+    {
+      "operation": "sub",
+      "left": "fff0000000000456",
+      "right": "7ff8000000000123",
+      "cpu": "fff8000000000456",
+      "unicorn": "7ff8000000000123",
+      "matched": false
+    },
+    {
+      "operation": "sub",
+      "left": "fff0000000000456",
+      "right": "7ff8000000000789",
+      "cpu": "fff8000000000456",
+      "unicorn": "7ff8000000000789",
+      "matched": false
+    }
+  ],
+  "rows": [
+    {
+      "operation": "mul",
+      "left": "0000000000000000",
+      "right": "0000000000000000",
+      "cpu": "0000000000000000",
+      "unicorn": "0000000000000000",
+      "matched": true
+    },
+    {
+      "operation": "mul",
+      "left": "0000000000000000",
+      "right": "8000000000000000",
+      "cpu": "8000000000000000",
+      "unicorn": "8000000000000000",
+      "matched": true
+    },
+    {
+      "operation": "mul",
+      "left": "0000000000000000",
+      "right": "3ff0000000000000",
+      "cpu": "0000000000000000",
+      "unicorn": "0000000000000000",
+      "matched": true
+    },
+    {
+      "operation": "mul",
+      "left": "0000000000000000",
+      "right": "bff0000000000000",
+      "cpu": "8000000000000000",
+      "unicorn": "8000000000000000",
+      "matched": true
+    },
+    {
+      "operation": "mul",
+      "left": "0000000000000000",
+      "right": "7ff0000000000000",
+      "cpu": "fff8000000000000",
+      "unicorn": "fff8000000000000",
+      "matched": true
+    },
+    {
+      "operation": "mul",
+      "left": "0000000000000000",
+      "right": "fff0000000000000",
+      "cpu": "fff8000000000000",
+      "unicorn": "fff8000000000000",
+      "matched": true
+    },
+    {
+      "operation": "mul",
+      "left": "0000000000000000",
+      "right": "7ff8000000000123",
+      "cpu": "7ff8000000000123",
+      "unicorn": "7ff8000000000123",
+      "matched": true
+    },
+    {
+      "operation": "mul",
+      "left": "0000000000000000",
+      "right": "fff8000000000456",
+      "cpu": "fff8000000000456",
+      "unicorn": "fff8000000000456",
+      "matched": true
+    },
+    {
+      "operation": "mul",
+      "left": "0000000000000000",
+      "right": "7ff8000000000789",
+      "cpu": "7ff8000000000789",
+      "unicorn": "7ff8000000000789",
+      "matched": true
+    },
+    {
+      "operation": "mul",
+      "left": "0000000000000000",
+      "right": "7ff0000000000123",
+      "cpu": "7ff8000000000123",
+      "unicorn": "7ff8000000000123",
+      "matched": true
+    },
+    {
+      "operation": "mul",
+      "left": "0000000000000000",
+      "right": "fff0000000000456",
+      "cpu": "fff8000000000456",
+      "unicorn": "fff8000000000456",
+      "matched": true
+    },
+    {
+      "operation": "mul",
+      "left": "8000000000000000",
+      "right": "0000000000000000",
+      "cpu": "8000000000000000",
+      "unicorn": "8000000000000000",
+      "matched": true
+    },
+    {
+      "operation": "mul",
+      "left": "8000000000000000",
+      "right": "8000000000000000",
+      "cpu": "0000000000000000",
+      "unicorn": "0000000000000000",
+      "matched": true
+    },
+    {
+      "operation": "mul",
+      "left": "8000000000000000",
+      "right": "3ff0000000000000",
+      "cpu": "8000000000000000",
+      "unicorn": "8000000000000000",
+      "matched": true
+    },
+    {
+      "operation": "mul",
+      "left": "8000000000000000",
+      "right": "bff0000000000000",
+      "cpu": "0000000000000000",
+      "unicorn": "0000000000000000",
+      "matched": true
+    },
+    {
+      "operation": "mul",
+      "left": "8000000000000000",
+      "right": "7ff0000000000000",
+      "cpu": "fff8000000000000",
+      "unicorn": "fff8000000000000",
+      "matched": true
+    },
+    {
+      "operation": "mul",
+      "left": "8000000000000000",
+      "right": "fff0000000000000",
+      "cpu": "fff8000000000000",
+      "unicorn": "fff8000000000000",
+      "matched": true
+    },
+    {
+      "operation": "mul",
+      "left": "8000000000000000",
+      "right": "7ff8000000000123",
+      "cpu": "7ff8000000000123",
+      "unicorn": "7ff8000000000123",
+      "matched": true
+    },
+    {
+      "operation": "mul",
+      "left": "8000000000000000",
+      "right": "fff8000000000456",
+      "cpu": "fff8000000000456",
+      "unicorn": "fff8000000000456",
+      "matched": true
+    },
+    {
+      "operation": "mul",
+      "left": "8000000000000000",
+      "right": "7ff8000000000789",
+      "cpu": "7ff8000000000789",
+      "unicorn": "7ff8000000000789",
+      "matched": true
+    },
+    {
+      "operation": "mul",
+      "left": "8000000000000000",
+      "right": "7ff0000000000123",
+      "cpu": "7ff8000000000123",
+      "unicorn": "7ff8000000000123",
+      "matched": true
+    },
+    {
+      "operation": "mul",
+      "left": "8000000000000000",
+      "right": "fff0000000000456",
+      "cpu": "fff8000000000456",
+      "unicorn": "fff8000000000456",
+      "matched": true
+    },
+    {
+      "operation": "mul",
+      "left": "3ff0000000000000",
+      "right": "0000000000000000",
+      "cpu": "0000000000000000",
+      "unicorn": "0000000000000000",
+      "matched": true
+    },
+    {
+      "operation": "mul",
+      "left": "3ff0000000000000",
+      "right": "8000000000000000",
+      "cpu": "8000000000000000",
+      "unicorn": "8000000000000000",
+      "matched": true
+    },
+    {
+      "operation": "mul",
+      "left": "3ff0000000000000",
+      "right": "3ff0000000000000",
+      "cpu": "3ff0000000000000",
+      "unicorn": "3ff0000000000000",
+      "matched": true
+    },
+    {
+      "operation": "mul",
+      "left": "3ff0000000000000",
+      "right": "bff0000000000000",
+      "cpu": "bff0000000000000",
+      "unicorn": "bff0000000000000",
+      "matched": true
+    },
+    {
+      "operation": "mul",
+      "left": "3ff0000000000000",
+      "right": "7ff0000000000000",
+      "cpu": "7ff0000000000000",
+      "unicorn": "7ff0000000000000",
+      "matched": true
+    },
+    {
+      "operation": "mul",
+      "left": "3ff0000000000000",
+      "right": "fff0000000000000",
+      "cpu": "fff0000000000000",
+      "unicorn": "fff0000000000000",
+      "matched": true
+    },
+    {
+      "operation": "mul",
+      "left": "3ff0000000000000",
+      "right": "7ff8000000000123",
+      "cpu": "7ff8000000000123",
+      "unicorn": "7ff8000000000123",
+      "matched": true
+    },
+    {
+      "operation": "mul",
+      "left": "3ff0000000000000",
+      "right": "fff8000000000456",
+      "cpu": "fff8000000000456",
+      "unicorn": "fff8000000000456",
+      "matched": true
+    },
+    {
+      "operation": "mul",
+      "left": "3ff0000000000000",
+      "right": "7ff8000000000789",
+      "cpu": "7ff8000000000789",
+      "unicorn": "7ff8000000000789",
+      "matched": true
+    },
+    {
+      "operation": "mul",
+      "left": "3ff0000000000000",
+      "right": "7ff0000000000123",
+      "cpu": "7ff8000000000123",
+      "unicorn": "7ff8000000000123",
+      "matched": true
+    },
+    {
+      "operation": "mul",
+      "left": "3ff0000000000000",
+      "right": "fff0000000000456",
+      "cpu": "fff8000000000456",
+      "unicorn": "fff8000000000456",
+      "matched": true
+    },
+    {
+      "operation": "mul",
+      "left": "bff0000000000000",
+      "right": "0000000000000000",
+      "cpu": "8000000000000000",
+      "unicorn": "8000000000000000",
+      "matched": true
+    },
+    {
+      "operation": "mul",
+      "left": "bff0000000000000",
+      "right": "8000000000000000",
+      "cpu": "0000000000000000",
+      "unicorn": "0000000000000000",
+      "matched": true
+    },
+    {
+      "operation": "mul",
+      "left": "bff0000000000000",
+      "right": "3ff0000000000000",
+      "cpu": "bff0000000000000",
+      "unicorn": "bff0000000000000",
+      "matched": true
+    },
+    {
+      "operation": "mul",
+      "left": "bff0000000000000",
+      "right": "bff0000000000000",
+      "cpu": "3ff0000000000000",
+      "unicorn": "3ff0000000000000",
+      "matched": true
+    },
+    {
+      "operation": "mul",
+      "left": "bff0000000000000",
+      "right": "7ff0000000000000",
+      "cpu": "fff0000000000000",
+      "unicorn": "fff0000000000000",
+      "matched": true
+    },
+    {
+      "operation": "mul",
+      "left": "bff0000000000000",
+      "right": "fff0000000000000",
+      "cpu": "7ff0000000000000",
+      "unicorn": "7ff0000000000000",
+      "matched": true
+    },
+    {
+      "operation": "mul",
+      "left": "bff0000000000000",
+      "right": "7ff8000000000123",
+      "cpu": "7ff8000000000123",
+      "unicorn": "7ff8000000000123",
+      "matched": true
+    },
+    {
+      "operation": "mul",
+      "left": "bff0000000000000",
+      "right": "fff8000000000456",
+      "cpu": "fff8000000000456",
+      "unicorn": "fff8000000000456",
+      "matched": true
+    },
+    {
+      "operation": "mul",
+      "left": "bff0000000000000",
+      "right": "7ff8000000000789",
+      "cpu": "7ff8000000000789",
+      "unicorn": "7ff8000000000789",
+      "matched": true
+    },
+    {
+      "operation": "mul",
+      "left": "bff0000000000000",
+      "right": "7ff0000000000123",
+      "cpu": "7ff8000000000123",
+      "unicorn": "7ff8000000000123",
+      "matched": true
+    },
+    {
+      "operation": "mul",
+      "left": "bff0000000000000",
+      "right": "fff0000000000456",
+      "cpu": "fff8000000000456",
+      "unicorn": "fff8000000000456",
+      "matched": true
+    },
+    {
+      "operation": "mul",
+      "left": "7ff0000000000000",
+      "right": "0000000000000000",
+      "cpu": "fff8000000000000",
+      "unicorn": "fff8000000000000",
+      "matched": true
+    },
+    {
+      "operation": "mul",
+      "left": "7ff0000000000000",
+      "right": "8000000000000000",
+      "cpu": "fff8000000000000",
+      "unicorn": "fff8000000000000",
+      "matched": true
+    },
+    {
+      "operation": "mul",
+      "left": "7ff0000000000000",
+      "right": "3ff0000000000000",
+      "cpu": "7ff0000000000000",
+      "unicorn": "7ff0000000000000",
+      "matched": true
+    },
+    {
+      "operation": "mul",
+      "left": "7ff0000000000000",
+      "right": "bff0000000000000",
+      "cpu": "fff0000000000000",
+      "unicorn": "fff0000000000000",
+      "matched": true
+    },
+    {
+      "operation": "mul",
+      "left": "7ff0000000000000",
+      "right": "7ff0000000000000",
+      "cpu": "7ff0000000000000",
+      "unicorn": "7ff0000000000000",
+      "matched": true
+    },
+    {
+      "operation": "mul",
+      "left": "7ff0000000000000",
+      "right": "fff0000000000000",
+      "cpu": "fff0000000000000",
+      "unicorn": "fff0000000000000",
+      "matched": true
+    },
+    {
+      "operation": "mul",
+      "left": "7ff0000000000000",
+      "right": "7ff8000000000123",
+      "cpu": "7ff8000000000123",
+      "unicorn": "7ff8000000000123",
+      "matched": true
+    },
+    {
+      "operation": "mul",
+      "left": "7ff0000000000000",
+      "right": "fff8000000000456",
+      "cpu": "fff8000000000456",
+      "unicorn": "fff8000000000456",
+      "matched": true
+    },
+    {
+      "operation": "mul",
+      "left": "7ff0000000000000",
+      "right": "7ff8000000000789",
+      "cpu": "7ff8000000000789",
+      "unicorn": "7ff8000000000789",
+      "matched": true
+    },
+    {
+      "operation": "mul",
+      "left": "7ff0000000000000",
+      "right": "7ff0000000000123",
+      "cpu": "7ff8000000000123",
+      "unicorn": "7ff8000000000123",
+      "matched": true
+    },
+    {
+      "operation": "mul",
+      "left": "7ff0000000000000",
+      "right": "fff0000000000456",
+      "cpu": "fff8000000000456",
+      "unicorn": "fff8000000000456",
+      "matched": true
+    },
+    {
+      "operation": "mul",
+      "left": "fff0000000000000",
+      "right": "0000000000000000",
+      "cpu": "fff8000000000000",
+      "unicorn": "fff8000000000000",
+      "matched": true
+    },
+    {
+      "operation": "mul",
+      "left": "fff0000000000000",
+      "right": "8000000000000000",
+      "cpu": "fff8000000000000",
+      "unicorn": "fff8000000000000",
+      "matched": true
+    },
+    {
+      "operation": "mul",
+      "left": "fff0000000000000",
+      "right": "3ff0000000000000",
+      "cpu": "fff0000000000000",
+      "unicorn": "fff0000000000000",
+      "matched": true
+    },
+    {
+      "operation": "mul",
+      "left": "fff0000000000000",
+      "right": "bff0000000000000",
+      "cpu": "7ff0000000000000",
+      "unicorn": "7ff0000000000000",
+      "matched": true
+    },
+    {
+      "operation": "mul",
+      "left": "fff0000000000000",
+      "right": "7ff0000000000000",
+      "cpu": "fff0000000000000",
+      "unicorn": "fff0000000000000",
+      "matched": true
+    },
+    {
+      "operation": "mul",
+      "left": "fff0000000000000",
+      "right": "fff0000000000000",
+      "cpu": "7ff0000000000000",
+      "unicorn": "7ff0000000000000",
+      "matched": true
+    },
+    {
+      "operation": "mul",
+      "left": "fff0000000000000",
+      "right": "7ff8000000000123",
+      "cpu": "7ff8000000000123",
+      "unicorn": "7ff8000000000123",
+      "matched": true
+    },
+    {
+      "operation": "mul",
+      "left": "fff0000000000000",
+      "right": "fff8000000000456",
+      "cpu": "fff8000000000456",
+      "unicorn": "fff8000000000456",
+      "matched": true
+    },
+    {
+      "operation": "mul",
+      "left": "fff0000000000000",
+      "right": "7ff8000000000789",
+      "cpu": "7ff8000000000789",
+      "unicorn": "7ff8000000000789",
+      "matched": true
+    },
+    {
+      "operation": "mul",
+      "left": "fff0000000000000",
+      "right": "7ff0000000000123",
+      "cpu": "7ff8000000000123",
+      "unicorn": "7ff8000000000123",
+      "matched": true
+    },
+    {
+      "operation": "mul",
+      "left": "fff0000000000000",
+      "right": "fff0000000000456",
+      "cpu": "fff8000000000456",
+      "unicorn": "fff8000000000456",
+      "matched": true
+    },
+    {
+      "operation": "mul",
+      "left": "7ff8000000000123",
+      "right": "0000000000000000",
+      "cpu": "7ff8000000000123",
+      "unicorn": "7ff8000000000123",
+      "matched": true
+    },
+    {
+      "operation": "mul",
+      "left": "7ff8000000000123",
+      "right": "8000000000000000",
+      "cpu": "7ff8000000000123",
+      "unicorn": "7ff8000000000123",
+      "matched": true
+    },
+    {
+      "operation": "mul",
+      "left": "7ff8000000000123",
+      "right": "3ff0000000000000",
+      "cpu": "7ff8000000000123",
+      "unicorn": "7ff8000000000123",
+      "matched": true
+    },
+    {
+      "operation": "mul",
+      "left": "7ff8000000000123",
+      "right": "bff0000000000000",
+      "cpu": "7ff8000000000123",
+      "unicorn": "7ff8000000000123",
+      "matched": true
+    },
+    {
+      "operation": "mul",
+      "left": "7ff8000000000123",
+      "right": "7ff0000000000000",
+      "cpu": "7ff8000000000123",
+      "unicorn": "7ff8000000000123",
+      "matched": true
+    },
+    {
+      "operation": "mul",
+      "left": "7ff8000000000123",
+      "right": "fff0000000000000",
+      "cpu": "7ff8000000000123",
+      "unicorn": "7ff8000000000123",
+      "matched": true
+    },
+    {
+      "operation": "mul",
+      "left": "7ff8000000000123",
+      "right": "7ff8000000000123",
+      "cpu": "7ff8000000000123",
+      "unicorn": "7ff8000000000123",
+      "matched": true
+    },
+    {
+      "operation": "mul",
+      "left": "7ff8000000000123",
+      "right": "fff8000000000456",
+      "cpu": "7ff8000000000123",
+      "unicorn": "fff8000000000456",
+      "matched": false
+    },
+    {
+      "operation": "mul",
+      "left": "7ff8000000000123",
+      "right": "7ff8000000000789",
+      "cpu": "7ff8000000000123",
+      "unicorn": "7ff8000000000789",
+      "matched": false
+    },
+    {
+      "operation": "mul",
+      "left": "7ff8000000000123",
+      "right": "7ff0000000000123",
+      "cpu": "7ff8000000000123",
+      "unicorn": "7ff8000000000123",
+      "matched": true
+    },
+    {
+      "operation": "mul",
+      "left": "7ff8000000000123",
+      "right": "fff0000000000456",
+      "cpu": "7ff8000000000123",
+      "unicorn": "7ff8000000000123",
+      "matched": true
+    },
+    {
+      "operation": "mul",
+      "left": "fff8000000000456",
+      "right": "0000000000000000",
+      "cpu": "fff8000000000456",
+      "unicorn": "fff8000000000456",
+      "matched": true
+    },
+    {
+      "operation": "mul",
+      "left": "fff8000000000456",
+      "right": "8000000000000000",
+      "cpu": "fff8000000000456",
+      "unicorn": "fff8000000000456",
+      "matched": true
+    },
+    {
+      "operation": "mul",
+      "left": "fff8000000000456",
+      "right": "3ff0000000000000",
+      "cpu": "fff8000000000456",
+      "unicorn": "fff8000000000456",
+      "matched": true
+    },
+    {
+      "operation": "mul",
+      "left": "fff8000000000456",
+      "right": "bff0000000000000",
+      "cpu": "fff8000000000456",
+      "unicorn": "fff8000000000456",
+      "matched": true
+    },
+    {
+      "operation": "mul",
+      "left": "fff8000000000456",
+      "right": "7ff0000000000000",
+      "cpu": "fff8000000000456",
+      "unicorn": "fff8000000000456",
+      "matched": true
+    },
+    {
+      "operation": "mul",
+      "left": "fff8000000000456",
+      "right": "fff0000000000000",
+      "cpu": "fff8000000000456",
+      "unicorn": "fff8000000000456",
+      "matched": true
+    },
+    {
+      "operation": "mul",
+      "left": "fff8000000000456",
+      "right": "7ff8000000000123",
+      "cpu": "fff8000000000456",
+      "unicorn": "fff8000000000456",
+      "matched": true
+    },
+    {
+      "operation": "mul",
+      "left": "fff8000000000456",
+      "right": "fff8000000000456",
+      "cpu": "fff8000000000456",
+      "unicorn": "fff8000000000456",
+      "matched": true
+    },
+    {
+      "operation": "mul",
+      "left": "fff8000000000456",
+      "right": "7ff8000000000789",
+      "cpu": "fff8000000000456",
+      "unicorn": "7ff8000000000789",
+      "matched": false
+    },
+    {
+      "operation": "mul",
+      "left": "fff8000000000456",
+      "right": "7ff0000000000123",
+      "cpu": "fff8000000000456",
+      "unicorn": "fff8000000000456",
+      "matched": true
+    },
+    {
+      "operation": "mul",
+      "left": "fff8000000000456",
+      "right": "fff0000000000456",
+      "cpu": "fff8000000000456",
+      "unicorn": "fff8000000000456",
+      "matched": true
+    },
+    {
+      "operation": "mul",
+      "left": "7ff8000000000789",
+      "right": "0000000000000000",
+      "cpu": "7ff8000000000789",
+      "unicorn": "7ff8000000000789",
+      "matched": true
+    },
+    {
+      "operation": "mul",
+      "left": "7ff8000000000789",
+      "right": "8000000000000000",
+      "cpu": "7ff8000000000789",
+      "unicorn": "7ff8000000000789",
+      "matched": true
+    },
+    {
+      "operation": "mul",
+      "left": "7ff8000000000789",
+      "right": "3ff0000000000000",
+      "cpu": "7ff8000000000789",
+      "unicorn": "7ff8000000000789",
+      "matched": true
+    },
+    {
+      "operation": "mul",
+      "left": "7ff8000000000789",
+      "right": "bff0000000000000",
+      "cpu": "7ff8000000000789",
+      "unicorn": "7ff8000000000789",
+      "matched": true
+    },
+    {
+      "operation": "mul",
+      "left": "7ff8000000000789",
+      "right": "7ff0000000000000",
+      "cpu": "7ff8000000000789",
+      "unicorn": "7ff8000000000789",
+      "matched": true
+    },
+    {
+      "operation": "mul",
+      "left": "7ff8000000000789",
+      "right": "fff0000000000000",
+      "cpu": "7ff8000000000789",
+      "unicorn": "7ff8000000000789",
+      "matched": true
+    },
+    {
+      "operation": "mul",
+      "left": "7ff8000000000789",
+      "right": "7ff8000000000123",
+      "cpu": "7ff8000000000789",
+      "unicorn": "7ff8000000000789",
+      "matched": true
+    },
+    {
+      "operation": "mul",
+      "left": "7ff8000000000789",
+      "right": "fff8000000000456",
+      "cpu": "7ff8000000000789",
+      "unicorn": "7ff8000000000789",
+      "matched": true
+    },
+    {
+      "operation": "mul",
+      "left": "7ff8000000000789",
+      "right": "7ff8000000000789",
+      "cpu": "7ff8000000000789",
+      "unicorn": "7ff8000000000789",
+      "matched": true
+    },
+    {
+      "operation": "mul",
+      "left": "7ff8000000000789",
+      "right": "7ff0000000000123",
+      "cpu": "7ff8000000000789",
+      "unicorn": "7ff8000000000789",
+      "matched": true
+    },
+    {
+      "operation": "mul",
+      "left": "7ff8000000000789",
+      "right": "fff0000000000456",
+      "cpu": "7ff8000000000789",
+      "unicorn": "7ff8000000000789",
+      "matched": true
+    },
+    {
+      "operation": "mul",
+      "left": "7ff0000000000123",
+      "right": "0000000000000000",
+      "cpu": "7ff8000000000123",
+      "unicorn": "7ff8000000000123",
+      "matched": true
+    },
+    {
+      "operation": "mul",
+      "left": "7ff0000000000123",
+      "right": "8000000000000000",
+      "cpu": "7ff8000000000123",
+      "unicorn": "7ff8000000000123",
+      "matched": true
+    },
+    {
+      "operation": "mul",
+      "left": "7ff0000000000123",
+      "right": "3ff0000000000000",
+      "cpu": "7ff8000000000123",
+      "unicorn": "7ff8000000000123",
+      "matched": true
+    },
+    {
+      "operation": "mul",
+      "left": "7ff0000000000123",
+      "right": "bff0000000000000",
+      "cpu": "7ff8000000000123",
+      "unicorn": "7ff8000000000123",
+      "matched": true
+    },
+    {
+      "operation": "mul",
+      "left": "7ff0000000000123",
+      "right": "7ff0000000000000",
+      "cpu": "7ff8000000000123",
+      "unicorn": "7ff8000000000123",
+      "matched": true
+    },
+    {
+      "operation": "mul",
+      "left": "7ff0000000000123",
+      "right": "fff0000000000000",
+      "cpu": "7ff8000000000123",
+      "unicorn": "7ff8000000000123",
+      "matched": true
+    },
+    {
+      "operation": "mul",
+      "left": "7ff0000000000123",
+      "right": "7ff8000000000123",
+      "cpu": "7ff8000000000123",
+      "unicorn": "7ff8000000000123",
+      "matched": true
+    },
+    {
+      "operation": "mul",
+      "left": "7ff0000000000123",
+      "right": "fff8000000000456",
+      "cpu": "7ff8000000000123",
+      "unicorn": "fff8000000000456",
+      "matched": false
+    },
+    {
+      "operation": "mul",
+      "left": "7ff0000000000123",
+      "right": "7ff8000000000789",
+      "cpu": "7ff8000000000123",
+      "unicorn": "7ff8000000000789",
+      "matched": false
+    },
+    {
+      "operation": "mul",
+      "left": "7ff0000000000123",
+      "right": "7ff0000000000123",
+      "cpu": "7ff8000000000123",
+      "unicorn": "7ff8000000000123",
+      "matched": true
+    },
+    {
+      "operation": "mul",
+      "left": "7ff0000000000123",
+      "right": "fff0000000000456",
+      "cpu": "7ff8000000000123",
+      "unicorn": "fff8000000000456",
+      "matched": false
+    },
+    {
+      "operation": "mul",
+      "left": "fff0000000000456",
+      "right": "0000000000000000",
+      "cpu": "fff8000000000456",
+      "unicorn": "fff8000000000456",
+      "matched": true
+    },
+    {
+      "operation": "mul",
+      "left": "fff0000000000456",
+      "right": "8000000000000000",
+      "cpu": "fff8000000000456",
+      "unicorn": "fff8000000000456",
+      "matched": true
+    },
+    {
+      "operation": "mul",
+      "left": "fff0000000000456",
+      "right": "3ff0000000000000",
+      "cpu": "fff8000000000456",
+      "unicorn": "fff8000000000456",
+      "matched": true
+    },
+    {
+      "operation": "mul",
+      "left": "fff0000000000456",
+      "right": "bff0000000000000",
+      "cpu": "fff8000000000456",
+      "unicorn": "fff8000000000456",
+      "matched": true
+    },
+    {
+      "operation": "mul",
+      "left": "fff0000000000456",
+      "right": "7ff0000000000000",
+      "cpu": "fff8000000000456",
+      "unicorn": "fff8000000000456",
+      "matched": true
+    },
+    {
+      "operation": "mul",
+      "left": "fff0000000000456",
+      "right": "fff0000000000000",
+      "cpu": "fff8000000000456",
+      "unicorn": "fff8000000000456",
+      "matched": true
+    },
+    {
+      "operation": "mul",
+      "left": "fff0000000000456",
+      "right": "7ff8000000000123",
+      "cpu": "fff8000000000456",
+      "unicorn": "7ff8000000000123",
+      "matched": false
+    },
+    {
+      "operation": "mul",
+      "left": "fff0000000000456",
+      "right": "fff8000000000456",
+      "cpu": "fff8000000000456",
+      "unicorn": "fff8000000000456",
+      "matched": true
+    },
+    {
+      "operation": "mul",
+      "left": "fff0000000000456",
+      "right": "7ff8000000000789",
+      "cpu": "fff8000000000456",
+      "unicorn": "7ff8000000000789",
+      "matched": false
+    },
+    {
+      "operation": "mul",
+      "left": "fff0000000000456",
+      "right": "7ff0000000000123",
+      "cpu": "fff8000000000456",
+      "unicorn": "fff8000000000456",
+      "matched": true
+    },
+    {
+      "operation": "mul",
+      "left": "fff0000000000456",
+      "right": "fff0000000000456",
+      "cpu": "fff8000000000456",
+      "unicorn": "fff8000000000456",
+      "matched": true
+    },
+    {
+      "operation": "add",
+      "left": "0000000000000000",
+      "right": "0000000000000000",
+      "cpu": "0000000000000000",
+      "unicorn": "0000000000000000",
+      "matched": true
+    },
+    {
+      "operation": "add",
+      "left": "0000000000000000",
+      "right": "8000000000000000",
+      "cpu": "0000000000000000",
+      "unicorn": "0000000000000000",
+      "matched": true
+    },
+    {
+      "operation": "add",
+      "left": "0000000000000000",
+      "right": "3ff0000000000000",
+      "cpu": "3ff0000000000000",
+      "unicorn": "3ff0000000000000",
+      "matched": true
+    },
+    {
+      "operation": "add",
+      "left": "0000000000000000",
+      "right": "bff0000000000000",
+      "cpu": "bff0000000000000",
+      "unicorn": "bff0000000000000",
+      "matched": true
+    },
+    {
+      "operation": "add",
+      "left": "0000000000000000",
+      "right": "7ff0000000000000",
+      "cpu": "7ff0000000000000",
+      "unicorn": "7ff0000000000000",
+      "matched": true
+    },
+    {
+      "operation": "add",
+      "left": "0000000000000000",
+      "right": "fff0000000000000",
+      "cpu": "fff0000000000000",
+      "unicorn": "fff0000000000000",
+      "matched": true
+    },
+    {
+      "operation": "add",
+      "left": "0000000000000000",
+      "right": "7ff8000000000123",
+      "cpu": "7ff8000000000123",
+      "unicorn": "7ff8000000000123",
+      "matched": true
+    },
+    {
+      "operation": "add",
+      "left": "0000000000000000",
+      "right": "fff8000000000456",
+      "cpu": "fff8000000000456",
+      "unicorn": "fff8000000000456",
+      "matched": true
+    },
+    {
+      "operation": "add",
+      "left": "0000000000000000",
+      "right": "7ff8000000000789",
+      "cpu": "7ff8000000000789",
+      "unicorn": "7ff8000000000789",
+      "matched": true
+    },
+    {
+      "operation": "add",
+      "left": "0000000000000000",
+      "right": "7ff0000000000123",
+      "cpu": "7ff8000000000123",
+      "unicorn": "7ff8000000000123",
+      "matched": true
+    },
+    {
+      "operation": "add",
+      "left": "0000000000000000",
+      "right": "fff0000000000456",
+      "cpu": "fff8000000000456",
+      "unicorn": "fff8000000000456",
+      "matched": true
+    },
+    {
+      "operation": "add",
+      "left": "8000000000000000",
+      "right": "0000000000000000",
+      "cpu": "0000000000000000",
+      "unicorn": "0000000000000000",
+      "matched": true
+    },
+    {
+      "operation": "add",
+      "left": "8000000000000000",
+      "right": "8000000000000000",
+      "cpu": "8000000000000000",
+      "unicorn": "8000000000000000",
+      "matched": true
+    },
+    {
+      "operation": "add",
+      "left": "8000000000000000",
+      "right": "3ff0000000000000",
+      "cpu": "3ff0000000000000",
+      "unicorn": "3ff0000000000000",
+      "matched": true
+    },
+    {
+      "operation": "add",
+      "left": "8000000000000000",
+      "right": "bff0000000000000",
+      "cpu": "bff0000000000000",
+      "unicorn": "bff0000000000000",
+      "matched": true
+    },
+    {
+      "operation": "add",
+      "left": "8000000000000000",
+      "right": "7ff0000000000000",
+      "cpu": "7ff0000000000000",
+      "unicorn": "7ff0000000000000",
+      "matched": true
+    },
+    {
+      "operation": "add",
+      "left": "8000000000000000",
+      "right": "fff0000000000000",
+      "cpu": "fff0000000000000",
+      "unicorn": "fff0000000000000",
+      "matched": true
+    },
+    {
+      "operation": "add",
+      "left": "8000000000000000",
+      "right": "7ff8000000000123",
+      "cpu": "7ff8000000000123",
+      "unicorn": "7ff8000000000123",
+      "matched": true
+    },
+    {
+      "operation": "add",
+      "left": "8000000000000000",
+      "right": "fff8000000000456",
+      "cpu": "fff8000000000456",
+      "unicorn": "fff8000000000456",
+      "matched": true
+    },
+    {
+      "operation": "add",
+      "left": "8000000000000000",
+      "right": "7ff8000000000789",
+      "cpu": "7ff8000000000789",
+      "unicorn": "7ff8000000000789",
+      "matched": true
+    },
+    {
+      "operation": "add",
+      "left": "8000000000000000",
+      "right": "7ff0000000000123",
+      "cpu": "7ff8000000000123",
+      "unicorn": "7ff8000000000123",
+      "matched": true
+    },
+    {
+      "operation": "add",
+      "left": "8000000000000000",
+      "right": "fff0000000000456",
+      "cpu": "fff8000000000456",
+      "unicorn": "fff8000000000456",
+      "matched": true
+    },
+    {
+      "operation": "add",
+      "left": "3ff0000000000000",
+      "right": "0000000000000000",
+      "cpu": "3ff0000000000000",
+      "unicorn": "3ff0000000000000",
+      "matched": true
+    },
+    {
+      "operation": "add",
+      "left": "3ff0000000000000",
+      "right": "8000000000000000",
+      "cpu": "3ff0000000000000",
+      "unicorn": "3ff0000000000000",
+      "matched": true
+    },
+    {
+      "operation": "add",
+      "left": "3ff0000000000000",
+      "right": "3ff0000000000000",
+      "cpu": "4000000000000000",
+      "unicorn": "4000000000000000",
+      "matched": true
+    },
+    {
+      "operation": "add",
+      "left": "3ff0000000000000",
+      "right": "bff0000000000000",
+      "cpu": "0000000000000000",
+      "unicorn": "0000000000000000",
+      "matched": true
+    },
+    {
+      "operation": "add",
+      "left": "3ff0000000000000",
+      "right": "7ff0000000000000",
+      "cpu": "7ff0000000000000",
+      "unicorn": "7ff0000000000000",
+      "matched": true
+    },
+    {
+      "operation": "add",
+      "left": "3ff0000000000000",
+      "right": "fff0000000000000",
+      "cpu": "fff0000000000000",
+      "unicorn": "fff0000000000000",
+      "matched": true
+    },
+    {
+      "operation": "add",
+      "left": "3ff0000000000000",
+      "right": "7ff8000000000123",
+      "cpu": "7ff8000000000123",
+      "unicorn": "7ff8000000000123",
+      "matched": true
+    },
+    {
+      "operation": "add",
+      "left": "3ff0000000000000",
+      "right": "fff8000000000456",
+      "cpu": "fff8000000000456",
+      "unicorn": "fff8000000000456",
+      "matched": true
+    },
+    {
+      "operation": "add",
+      "left": "3ff0000000000000",
+      "right": "7ff8000000000789",
+      "cpu": "7ff8000000000789",
+      "unicorn": "7ff8000000000789",
+      "matched": true
+    },
+    {
+      "operation": "add",
+      "left": "3ff0000000000000",
+      "right": "7ff0000000000123",
+      "cpu": "7ff8000000000123",
+      "unicorn": "7ff8000000000123",
+      "matched": true
+    },
+    {
+      "operation": "add",
+      "left": "3ff0000000000000",
+      "right": "fff0000000000456",
+      "cpu": "fff8000000000456",
+      "unicorn": "fff8000000000456",
+      "matched": true
+    },
+    {
+      "operation": "add",
+      "left": "bff0000000000000",
+      "right": "0000000000000000",
+      "cpu": "bff0000000000000",
+      "unicorn": "bff0000000000000",
+      "matched": true
+    },
+    {
+      "operation": "add",
+      "left": "bff0000000000000",
+      "right": "8000000000000000",
+      "cpu": "bff0000000000000",
+      "unicorn": "bff0000000000000",
+      "matched": true
+    },
+    {
+      "operation": "add",
+      "left": "bff0000000000000",
+      "right": "3ff0000000000000",
+      "cpu": "0000000000000000",
+      "unicorn": "0000000000000000",
+      "matched": true
+    },
+    {
+      "operation": "add",
+      "left": "bff0000000000000",
+      "right": "bff0000000000000",
+      "cpu": "c000000000000000",
+      "unicorn": "c000000000000000",
+      "matched": true
+    },
+    {
+      "operation": "add",
+      "left": "bff0000000000000",
+      "right": "7ff0000000000000",
+      "cpu": "7ff0000000000000",
+      "unicorn": "7ff0000000000000",
+      "matched": true
+    },
+    {
+      "operation": "add",
+      "left": "bff0000000000000",
+      "right": "fff0000000000000",
+      "cpu": "fff0000000000000",
+      "unicorn": "fff0000000000000",
+      "matched": true
+    },
+    {
+      "operation": "add",
+      "left": "bff0000000000000",
+      "right": "7ff8000000000123",
+      "cpu": "7ff8000000000123",
+      "unicorn": "7ff8000000000123",
+      "matched": true
+    },
+    {
+      "operation": "add",
+      "left": "bff0000000000000",
+      "right": "fff8000000000456",
+      "cpu": "fff8000000000456",
+      "unicorn": "fff8000000000456",
+      "matched": true
+    },
+    {
+      "operation": "add",
+      "left": "bff0000000000000",
+      "right": "7ff8000000000789",
+      "cpu": "7ff8000000000789",
+      "unicorn": "7ff8000000000789",
+      "matched": true
+    },
+    {
+      "operation": "add",
+      "left": "bff0000000000000",
+      "right": "7ff0000000000123",
+      "cpu": "7ff8000000000123",
+      "unicorn": "7ff8000000000123",
+      "matched": true
+    },
+    {
+      "operation": "add",
+      "left": "bff0000000000000",
+      "right": "fff0000000000456",
+      "cpu": "fff8000000000456",
+      "unicorn": "fff8000000000456",
+      "matched": true
+    },
+    {
+      "operation": "add",
+      "left": "7ff0000000000000",
+      "right": "0000000000000000",
+      "cpu": "7ff0000000000000",
+      "unicorn": "7ff0000000000000",
+      "matched": true
+    },
+    {
+      "operation": "add",
+      "left": "7ff0000000000000",
+      "right": "8000000000000000",
+      "cpu": "7ff0000000000000",
+      "unicorn": "7ff0000000000000",
+      "matched": true
+    },
+    {
+      "operation": "add",
+      "left": "7ff0000000000000",
+      "right": "3ff0000000000000",
+      "cpu": "7ff0000000000000",
+      "unicorn": "7ff0000000000000",
+      "matched": true
+    },
+    {
+      "operation": "add",
+      "left": "7ff0000000000000",
+      "right": "bff0000000000000",
+      "cpu": "7ff0000000000000",
+      "unicorn": "7ff0000000000000",
+      "matched": true
+    },
+    {
+      "operation": "add",
+      "left": "7ff0000000000000",
+      "right": "7ff0000000000000",
+      "cpu": "7ff0000000000000",
+      "unicorn": "7ff0000000000000",
+      "matched": true
+    },
+    {
+      "operation": "add",
+      "left": "7ff0000000000000",
+      "right": "fff0000000000000",
+      "cpu": "fff8000000000000",
+      "unicorn": "fff8000000000000",
+      "matched": true
+    },
+    {
+      "operation": "add",
+      "left": "7ff0000000000000",
+      "right": "7ff8000000000123",
+      "cpu": "7ff8000000000123",
+      "unicorn": "7ff8000000000123",
+      "matched": true
+    },
+    {
+      "operation": "add",
+      "left": "7ff0000000000000",
+      "right": "fff8000000000456",
+      "cpu": "fff8000000000456",
+      "unicorn": "fff8000000000456",
+      "matched": true
+    },
+    {
+      "operation": "add",
+      "left": "7ff0000000000000",
+      "right": "7ff8000000000789",
+      "cpu": "7ff8000000000789",
+      "unicorn": "7ff8000000000789",
+      "matched": true
+    },
+    {
+      "operation": "add",
+      "left": "7ff0000000000000",
+      "right": "7ff0000000000123",
+      "cpu": "7ff8000000000123",
+      "unicorn": "7ff8000000000123",
+      "matched": true
+    },
+    {
+      "operation": "add",
+      "left": "7ff0000000000000",
+      "right": "fff0000000000456",
+      "cpu": "fff8000000000456",
+      "unicorn": "fff8000000000456",
+      "matched": true
+    },
+    {
+      "operation": "add",
+      "left": "fff0000000000000",
+      "right": "0000000000000000",
+      "cpu": "fff0000000000000",
+      "unicorn": "fff0000000000000",
+      "matched": true
+    },
+    {
+      "operation": "add",
+      "left": "fff0000000000000",
+      "right": "8000000000000000",
+      "cpu": "fff0000000000000",
+      "unicorn": "fff0000000000000",
+      "matched": true
+    },
+    {
+      "operation": "add",
+      "left": "fff0000000000000",
+      "right": "3ff0000000000000",
+      "cpu": "fff0000000000000",
+      "unicorn": "fff0000000000000",
+      "matched": true
+    },
+    {
+      "operation": "add",
+      "left": "fff0000000000000",
+      "right": "bff0000000000000",
+      "cpu": "fff0000000000000",
+      "unicorn": "fff0000000000000",
+      "matched": true
+    },
+    {
+      "operation": "add",
+      "left": "fff0000000000000",
+      "right": "7ff0000000000000",
+      "cpu": "fff8000000000000",
+      "unicorn": "fff8000000000000",
+      "matched": true
+    },
+    {
+      "operation": "add",
+      "left": "fff0000000000000",
+      "right": "fff0000000000000",
+      "cpu": "fff0000000000000",
+      "unicorn": "fff0000000000000",
+      "matched": true
+    },
+    {
+      "operation": "add",
+      "left": "fff0000000000000",
+      "right": "7ff8000000000123",
+      "cpu": "7ff8000000000123",
+      "unicorn": "7ff8000000000123",
+      "matched": true
+    },
+    {
+      "operation": "add",
+      "left": "fff0000000000000",
+      "right": "fff8000000000456",
+      "cpu": "fff8000000000456",
+      "unicorn": "fff8000000000456",
+      "matched": true
+    },
+    {
+      "operation": "add",
+      "left": "fff0000000000000",
+      "right": "7ff8000000000789",
+      "cpu": "7ff8000000000789",
+      "unicorn": "7ff8000000000789",
+      "matched": true
+    },
+    {
+      "operation": "add",
+      "left": "fff0000000000000",
+      "right": "7ff0000000000123",
+      "cpu": "7ff8000000000123",
+      "unicorn": "7ff8000000000123",
+      "matched": true
+    },
+    {
+      "operation": "add",
+      "left": "fff0000000000000",
+      "right": "fff0000000000456",
+      "cpu": "fff8000000000456",
+      "unicorn": "fff8000000000456",
+      "matched": true
+    },
+    {
+      "operation": "add",
+      "left": "7ff8000000000123",
+      "right": "0000000000000000",
+      "cpu": "7ff8000000000123",
+      "unicorn": "7ff8000000000123",
+      "matched": true
+    },
+    {
+      "operation": "add",
+      "left": "7ff8000000000123",
+      "right": "8000000000000000",
+      "cpu": "7ff8000000000123",
+      "unicorn": "7ff8000000000123",
+      "matched": true
+    },
+    {
+      "operation": "add",
+      "left": "7ff8000000000123",
+      "right": "3ff0000000000000",
+      "cpu": "7ff8000000000123",
+      "unicorn": "7ff8000000000123",
+      "matched": true
+    },
+    {
+      "operation": "add",
+      "left": "7ff8000000000123",
+      "right": "bff0000000000000",
+      "cpu": "7ff8000000000123",
+      "unicorn": "7ff8000000000123",
+      "matched": true
+    },
+    {
+      "operation": "add",
+      "left": "7ff8000000000123",
+      "right": "7ff0000000000000",
+      "cpu": "7ff8000000000123",
+      "unicorn": "7ff8000000000123",
+      "matched": true
+    },
+    {
+      "operation": "add",
+      "left": "7ff8000000000123",
+      "right": "fff0000000000000",
+      "cpu": "7ff8000000000123",
+      "unicorn": "7ff8000000000123",
+      "matched": true
+    },
+    {
+      "operation": "add",
+      "left": "7ff8000000000123",
+      "right": "7ff8000000000123",
+      "cpu": "7ff8000000000123",
+      "unicorn": "7ff8000000000123",
+      "matched": true
+    },
+    {
+      "operation": "add",
+      "left": "7ff8000000000123",
+      "right": "fff8000000000456",
+      "cpu": "7ff8000000000123",
+      "unicorn": "fff8000000000456",
+      "matched": false
+    },
+    {
+      "operation": "add",
+      "left": "7ff8000000000123",
+      "right": "7ff8000000000789",
+      "cpu": "7ff8000000000123",
+      "unicorn": "7ff8000000000789",
+      "matched": false
+    },
+    {
+      "operation": "add",
+      "left": "7ff8000000000123",
+      "right": "7ff0000000000123",
+      "cpu": "7ff8000000000123",
+      "unicorn": "7ff8000000000123",
+      "matched": true
+    },
+    {
+      "operation": "add",
+      "left": "7ff8000000000123",
+      "right": "fff0000000000456",
+      "cpu": "7ff8000000000123",
+      "unicorn": "7ff8000000000123",
+      "matched": true
+    },
+    {
+      "operation": "add",
+      "left": "fff8000000000456",
+      "right": "0000000000000000",
+      "cpu": "fff8000000000456",
+      "unicorn": "fff8000000000456",
+      "matched": true
+    },
+    {
+      "operation": "add",
+      "left": "fff8000000000456",
+      "right": "8000000000000000",
+      "cpu": "fff8000000000456",
+      "unicorn": "fff8000000000456",
+      "matched": true
+    },
+    {
+      "operation": "add",
+      "left": "fff8000000000456",
+      "right": "3ff0000000000000",
+      "cpu": "fff8000000000456",
+      "unicorn": "fff8000000000456",
+      "matched": true
+    },
+    {
+      "operation": "add",
+      "left": "fff8000000000456",
+      "right": "bff0000000000000",
+      "cpu": "fff8000000000456",
+      "unicorn": "fff8000000000456",
+      "matched": true
+    },
+    {
+      "operation": "add",
+      "left": "fff8000000000456",
+      "right": "7ff0000000000000",
+      "cpu": "fff8000000000456",
+      "unicorn": "fff8000000000456",
+      "matched": true
+    },
+    {
+      "operation": "add",
+      "left": "fff8000000000456",
+      "right": "fff0000000000000",
+      "cpu": "fff8000000000456",
+      "unicorn": "fff8000000000456",
+      "matched": true
+    },
+    {
+      "operation": "add",
+      "left": "fff8000000000456",
+      "right": "7ff8000000000123",
+      "cpu": "fff8000000000456",
+      "unicorn": "fff8000000000456",
+      "matched": true
+    },
+    {
+      "operation": "add",
+      "left": "fff8000000000456",
+      "right": "fff8000000000456",
+      "cpu": "fff8000000000456",
+      "unicorn": "fff8000000000456",
+      "matched": true
+    },
+    {
+      "operation": "add",
+      "left": "fff8000000000456",
+      "right": "7ff8000000000789",
+      "cpu": "fff8000000000456",
+      "unicorn": "7ff8000000000789",
+      "matched": false
+    },
+    {
+      "operation": "add",
+      "left": "fff8000000000456",
+      "right": "7ff0000000000123",
+      "cpu": "fff8000000000456",
+      "unicorn": "fff8000000000456",
+      "matched": true
+    },
+    {
+      "operation": "add",
+      "left": "fff8000000000456",
+      "right": "fff0000000000456",
+      "cpu": "fff8000000000456",
+      "unicorn": "fff8000000000456",
+      "matched": true
+    },
+    {
+      "operation": "add",
+      "left": "7ff8000000000789",
+      "right": "0000000000000000",
+      "cpu": "7ff8000000000789",
+      "unicorn": "7ff8000000000789",
+      "matched": true
+    },
+    {
+      "operation": "add",
+      "left": "7ff8000000000789",
+      "right": "8000000000000000",
+      "cpu": "7ff8000000000789",
+      "unicorn": "7ff8000000000789",
+      "matched": true
+    },
+    {
+      "operation": "add",
+      "left": "7ff8000000000789",
+      "right": "3ff0000000000000",
+      "cpu": "7ff8000000000789",
+      "unicorn": "7ff8000000000789",
+      "matched": true
+    },
+    {
+      "operation": "add",
+      "left": "7ff8000000000789",
+      "right": "bff0000000000000",
+      "cpu": "7ff8000000000789",
+      "unicorn": "7ff8000000000789",
+      "matched": true
+    },
+    {
+      "operation": "add",
+      "left": "7ff8000000000789",
+      "right": "7ff0000000000000",
+      "cpu": "7ff8000000000789",
+      "unicorn": "7ff8000000000789",
+      "matched": true
+    },
+    {
+      "operation": "add",
+      "left": "7ff8000000000789",
+      "right": "fff0000000000000",
+      "cpu": "7ff8000000000789",
+      "unicorn": "7ff8000000000789",
+      "matched": true
+    },
+    {
+      "operation": "add",
+      "left": "7ff8000000000789",
+      "right": "7ff8000000000123",
+      "cpu": "7ff8000000000789",
+      "unicorn": "7ff8000000000789",
+      "matched": true
+    },
+    {
+      "operation": "add",
+      "left": "7ff8000000000789",
+      "right": "fff8000000000456",
+      "cpu": "7ff8000000000789",
+      "unicorn": "7ff8000000000789",
+      "matched": true
+    },
+    {
+      "operation": "add",
+      "left": "7ff8000000000789",
+      "right": "7ff8000000000789",
+      "cpu": "7ff8000000000789",
+      "unicorn": "7ff8000000000789",
+      "matched": true
+    },
+    {
+      "operation": "add",
+      "left": "7ff8000000000789",
+      "right": "7ff0000000000123",
+      "cpu": "7ff8000000000789",
+      "unicorn": "7ff8000000000789",
+      "matched": true
+    },
+    {
+      "operation": "add",
+      "left": "7ff8000000000789",
+      "right": "fff0000000000456",
+      "cpu": "7ff8000000000789",
+      "unicorn": "7ff8000000000789",
+      "matched": true
+    },
+    {
+      "operation": "add",
+      "left": "7ff0000000000123",
+      "right": "0000000000000000",
+      "cpu": "7ff8000000000123",
+      "unicorn": "7ff8000000000123",
+      "matched": true
+    },
+    {
+      "operation": "add",
+      "left": "7ff0000000000123",
+      "right": "8000000000000000",
+      "cpu": "7ff8000000000123",
+      "unicorn": "7ff8000000000123",
+      "matched": true
+    },
+    {
+      "operation": "add",
+      "left": "7ff0000000000123",
+      "right": "3ff0000000000000",
+      "cpu": "7ff8000000000123",
+      "unicorn": "7ff8000000000123",
+      "matched": true
+    },
+    {
+      "operation": "add",
+      "left": "7ff0000000000123",
+      "right": "bff0000000000000",
+      "cpu": "7ff8000000000123",
+      "unicorn": "7ff8000000000123",
+      "matched": true
+    },
+    {
+      "operation": "add",
+      "left": "7ff0000000000123",
+      "right": "7ff0000000000000",
+      "cpu": "7ff8000000000123",
+      "unicorn": "7ff8000000000123",
+      "matched": true
+    },
+    {
+      "operation": "add",
+      "left": "7ff0000000000123",
+      "right": "fff0000000000000",
+      "cpu": "7ff8000000000123",
+      "unicorn": "7ff8000000000123",
+      "matched": true
+    },
+    {
+      "operation": "add",
+      "left": "7ff0000000000123",
+      "right": "7ff8000000000123",
+      "cpu": "7ff8000000000123",
+      "unicorn": "7ff8000000000123",
+      "matched": true
+    },
+    {
+      "operation": "add",
+      "left": "7ff0000000000123",
+      "right": "fff8000000000456",
+      "cpu": "7ff8000000000123",
+      "unicorn": "fff8000000000456",
+      "matched": false
+    },
+    {
+      "operation": "add",
+      "left": "7ff0000000000123",
+      "right": "7ff8000000000789",
+      "cpu": "7ff8000000000123",
+      "unicorn": "7ff8000000000789",
+      "matched": false
+    },
+    {
+      "operation": "add",
+      "left": "7ff0000000000123",
+      "right": "7ff0000000000123",
+      "cpu": "7ff8000000000123",
+      "unicorn": "7ff8000000000123",
+      "matched": true
+    },
+    {
+      "operation": "add",
+      "left": "7ff0000000000123",
+      "right": "fff0000000000456",
+      "cpu": "7ff8000000000123",
+      "unicorn": "fff8000000000456",
+      "matched": false
+    },
+    {
+      "operation": "add",
+      "left": "fff0000000000456",
+      "right": "0000000000000000",
+      "cpu": "fff8000000000456",
+      "unicorn": "fff8000000000456",
+      "matched": true
+    },
+    {
+      "operation": "add",
+      "left": "fff0000000000456",
+      "right": "8000000000000000",
+      "cpu": "fff8000000000456",
+      "unicorn": "fff8000000000456",
+      "matched": true
+    },
+    {
+      "operation": "add",
+      "left": "fff0000000000456",
+      "right": "3ff0000000000000",
+      "cpu": "fff8000000000456",
+      "unicorn": "fff8000000000456",
+      "matched": true
+    },
+    {
+      "operation": "add",
+      "left": "fff0000000000456",
+      "right": "bff0000000000000",
+      "cpu": "fff8000000000456",
+      "unicorn": "fff8000000000456",
+      "matched": true
+    },
+    {
+      "operation": "add",
+      "left": "fff0000000000456",
+      "right": "7ff0000000000000",
+      "cpu": "fff8000000000456",
+      "unicorn": "fff8000000000456",
+      "matched": true
+    },
+    {
+      "operation": "add",
+      "left": "fff0000000000456",
+      "right": "fff0000000000000",
+      "cpu": "fff8000000000456",
+      "unicorn": "fff8000000000456",
+      "matched": true
+    },
+    {
+      "operation": "add",
+      "left": "fff0000000000456",
+      "right": "7ff8000000000123",
+      "cpu": "fff8000000000456",
+      "unicorn": "7ff8000000000123",
+      "matched": false
+    },
+    {
+      "operation": "add",
+      "left": "fff0000000000456",
+      "right": "fff8000000000456",
+      "cpu": "fff8000000000456",
+      "unicorn": "fff8000000000456",
+      "matched": true
+    },
+    {
+      "operation": "add",
+      "left": "fff0000000000456",
+      "right": "7ff8000000000789",
+      "cpu": "fff8000000000456",
+      "unicorn": "7ff8000000000789",
+      "matched": false
+    },
+    {
+      "operation": "add",
+      "left": "fff0000000000456",
+      "right": "7ff0000000000123",
+      "cpu": "fff8000000000456",
+      "unicorn": "fff8000000000456",
+      "matched": true
+    },
+    {
+      "operation": "add",
+      "left": "fff0000000000456",
+      "right": "fff0000000000456",
+      "cpu": "fff8000000000456",
+      "unicorn": "fff8000000000456",
+      "matched": true
+    },
+    {
+      "operation": "sub",
+      "left": "0000000000000000",
+      "right": "0000000000000000",
+      "cpu": "0000000000000000",
+      "unicorn": "0000000000000000",
+      "matched": true
+    },
+    {
+      "operation": "sub",
+      "left": "0000000000000000",
+      "right": "8000000000000000",
+      "cpu": "0000000000000000",
+      "unicorn": "0000000000000000",
+      "matched": true
+    },
+    {
+      "operation": "sub",
+      "left": "0000000000000000",
+      "right": "3ff0000000000000",
+      "cpu": "bff0000000000000",
+      "unicorn": "bff0000000000000",
+      "matched": true
+    },
+    {
+      "operation": "sub",
+      "left": "0000000000000000",
+      "right": "bff0000000000000",
+      "cpu": "3ff0000000000000",
+      "unicorn": "3ff0000000000000",
+      "matched": true
+    },
+    {
+      "operation": "sub",
+      "left": "0000000000000000",
+      "right": "7ff0000000000000",
+      "cpu": "fff0000000000000",
+      "unicorn": "fff0000000000000",
+      "matched": true
+    },
+    {
+      "operation": "sub",
+      "left": "0000000000000000",
+      "right": "fff0000000000000",
+      "cpu": "7ff0000000000000",
+      "unicorn": "7ff0000000000000",
+      "matched": true
+    },
+    {
+      "operation": "sub",
+      "left": "0000000000000000",
+      "right": "7ff8000000000123",
+      "cpu": "7ff8000000000123",
+      "unicorn": "7ff8000000000123",
+      "matched": true
+    },
+    {
+      "operation": "sub",
+      "left": "0000000000000000",
+      "right": "fff8000000000456",
+      "cpu": "fff8000000000456",
+      "unicorn": "fff8000000000456",
+      "matched": true
+    },
+    {
+      "operation": "sub",
+      "left": "0000000000000000",
+      "right": "7ff8000000000789",
+      "cpu": "7ff8000000000789",
+      "unicorn": "7ff8000000000789",
+      "matched": true
+    },
+    {
+      "operation": "sub",
+      "left": "0000000000000000",
+      "right": "7ff0000000000123",
+      "cpu": "7ff8000000000123",
+      "unicorn": "7ff8000000000123",
+      "matched": true
+    },
+    {
+      "operation": "sub",
+      "left": "0000000000000000",
+      "right": "fff0000000000456",
+      "cpu": "fff8000000000456",
+      "unicorn": "fff8000000000456",
+      "matched": true
+    },
+    {
+      "operation": "sub",
+      "left": "8000000000000000",
+      "right": "0000000000000000",
+      "cpu": "8000000000000000",
+      "unicorn": "8000000000000000",
+      "matched": true
+    },
+    {
+      "operation": "sub",
+      "left": "8000000000000000",
+      "right": "8000000000000000",
+      "cpu": "0000000000000000",
+      "unicorn": "0000000000000000",
+      "matched": true
+    },
+    {
+      "operation": "sub",
+      "left": "8000000000000000",
+      "right": "3ff0000000000000",
+      "cpu": "bff0000000000000",
+      "unicorn": "bff0000000000000",
+      "matched": true
+    },
+    {
+      "operation": "sub",
+      "left": "8000000000000000",
+      "right": "bff0000000000000",
+      "cpu": "3ff0000000000000",
+      "unicorn": "3ff0000000000000",
+      "matched": true
+    },
+    {
+      "operation": "sub",
+      "left": "8000000000000000",
+      "right": "7ff0000000000000",
+      "cpu": "fff0000000000000",
+      "unicorn": "fff0000000000000",
+      "matched": true
+    },
+    {
+      "operation": "sub",
+      "left": "8000000000000000",
+      "right": "fff0000000000000",
+      "cpu": "7ff0000000000000",
+      "unicorn": "7ff0000000000000",
+      "matched": true
+    },
+    {
+      "operation": "sub",
+      "left": "8000000000000000",
+      "right": "7ff8000000000123",
+      "cpu": "7ff8000000000123",
+      "unicorn": "7ff8000000000123",
+      "matched": true
+    },
+    {
+      "operation": "sub",
+      "left": "8000000000000000",
+      "right": "fff8000000000456",
+      "cpu": "fff8000000000456",
+      "unicorn": "fff8000000000456",
+      "matched": true
+    },
+    {
+      "operation": "sub",
+      "left": "8000000000000000",
+      "right": "7ff8000000000789",
+      "cpu": "7ff8000000000789",
+      "unicorn": "7ff8000000000789",
+      "matched": true
+    },
+    {
+      "operation": "sub",
+      "left": "8000000000000000",
+      "right": "7ff0000000000123",
+      "cpu": "7ff8000000000123",
+      "unicorn": "7ff8000000000123",
+      "matched": true
+    },
+    {
+      "operation": "sub",
+      "left": "8000000000000000",
+      "right": "fff0000000000456",
+      "cpu": "fff8000000000456",
+      "unicorn": "fff8000000000456",
+      "matched": true
+    },
+    {
+      "operation": "sub",
+      "left": "3ff0000000000000",
+      "right": "0000000000000000",
+      "cpu": "3ff0000000000000",
+      "unicorn": "3ff0000000000000",
+      "matched": true
+    },
+    {
+      "operation": "sub",
+      "left": "3ff0000000000000",
+      "right": "8000000000000000",
+      "cpu": "3ff0000000000000",
+      "unicorn": "3ff0000000000000",
+      "matched": true
+    },
+    {
+      "operation": "sub",
+      "left": "3ff0000000000000",
+      "right": "3ff0000000000000",
+      "cpu": "0000000000000000",
+      "unicorn": "0000000000000000",
+      "matched": true
+    },
+    {
+      "operation": "sub",
+      "left": "3ff0000000000000",
+      "right": "bff0000000000000",
+      "cpu": "4000000000000000",
+      "unicorn": "4000000000000000",
+      "matched": true
+    },
+    {
+      "operation": "sub",
+      "left": "3ff0000000000000",
+      "right": "7ff0000000000000",
+      "cpu": "fff0000000000000",
+      "unicorn": "fff0000000000000",
+      "matched": true
+    },
+    {
+      "operation": "sub",
+      "left": "3ff0000000000000",
+      "right": "fff0000000000000",
+      "cpu": "7ff0000000000000",
+      "unicorn": "7ff0000000000000",
+      "matched": true
+    },
+    {
+      "operation": "sub",
+      "left": "3ff0000000000000",
+      "right": "7ff8000000000123",
+      "cpu": "7ff8000000000123",
+      "unicorn": "7ff8000000000123",
+      "matched": true
+    },
+    {
+      "operation": "sub",
+      "left": "3ff0000000000000",
+      "right": "fff8000000000456",
+      "cpu": "fff8000000000456",
+      "unicorn": "fff8000000000456",
+      "matched": true
+    },
+    {
+      "operation": "sub",
+      "left": "3ff0000000000000",
+      "right": "7ff8000000000789",
+      "cpu": "7ff8000000000789",
+      "unicorn": "7ff8000000000789",
+      "matched": true
+    },
+    {
+      "operation": "sub",
+      "left": "3ff0000000000000",
+      "right": "7ff0000000000123",
+      "cpu": "7ff8000000000123",
+      "unicorn": "7ff8000000000123",
+      "matched": true
+    },
+    {
+      "operation": "sub",
+      "left": "3ff0000000000000",
+      "right": "fff0000000000456",
+      "cpu": "fff8000000000456",
+      "unicorn": "fff8000000000456",
+      "matched": true
+    },
+    {
+      "operation": "sub",
+      "left": "bff0000000000000",
+      "right": "0000000000000000",
+      "cpu": "bff0000000000000",
+      "unicorn": "bff0000000000000",
+      "matched": true
+    },
+    {
+      "operation": "sub",
+      "left": "bff0000000000000",
+      "right": "8000000000000000",
+      "cpu": "bff0000000000000",
+      "unicorn": "bff0000000000000",
+      "matched": true
+    },
+    {
+      "operation": "sub",
+      "left": "bff0000000000000",
+      "right": "3ff0000000000000",
+      "cpu": "c000000000000000",
+      "unicorn": "c000000000000000",
+      "matched": true
+    },
+    {
+      "operation": "sub",
+      "left": "bff0000000000000",
+      "right": "bff0000000000000",
+      "cpu": "0000000000000000",
+      "unicorn": "0000000000000000",
+      "matched": true
+    },
+    {
+      "operation": "sub",
+      "left": "bff0000000000000",
+      "right": "7ff0000000000000",
+      "cpu": "fff0000000000000",
+      "unicorn": "fff0000000000000",
+      "matched": true
+    },
+    {
+      "operation": "sub",
+      "left": "bff0000000000000",
+      "right": "fff0000000000000",
+      "cpu": "7ff0000000000000",
+      "unicorn": "7ff0000000000000",
+      "matched": true
+    },
+    {
+      "operation": "sub",
+      "left": "bff0000000000000",
+      "right": "7ff8000000000123",
+      "cpu": "7ff8000000000123",
+      "unicorn": "7ff8000000000123",
+      "matched": true
+    },
+    {
+      "operation": "sub",
+      "left": "bff0000000000000",
+      "right": "fff8000000000456",
+      "cpu": "fff8000000000456",
+      "unicorn": "fff8000000000456",
+      "matched": true
+    },
+    {
+      "operation": "sub",
+      "left": "bff0000000000000",
+      "right": "7ff8000000000789",
+      "cpu": "7ff8000000000789",
+      "unicorn": "7ff8000000000789",
+      "matched": true
+    },
+    {
+      "operation": "sub",
+      "left": "bff0000000000000",
+      "right": "7ff0000000000123",
+      "cpu": "7ff8000000000123",
+      "unicorn": "7ff8000000000123",
+      "matched": true
+    },
+    {
+      "operation": "sub",
+      "left": "bff0000000000000",
+      "right": "fff0000000000456",
+      "cpu": "fff8000000000456",
+      "unicorn": "fff8000000000456",
+      "matched": true
+    },
+    {
+      "operation": "sub",
+      "left": "7ff0000000000000",
+      "right": "0000000000000000",
+      "cpu": "7ff0000000000000",
+      "unicorn": "7ff0000000000000",
+      "matched": true
+    },
+    {
+      "operation": "sub",
+      "left": "7ff0000000000000",
+      "right": "8000000000000000",
+      "cpu": "7ff0000000000000",
+      "unicorn": "7ff0000000000000",
+      "matched": true
+    },
+    {
+      "operation": "sub",
+      "left": "7ff0000000000000",
+      "right": "3ff0000000000000",
+      "cpu": "7ff0000000000000",
+      "unicorn": "7ff0000000000000",
+      "matched": true
+    },
+    {
+      "operation": "sub",
+      "left": "7ff0000000000000",
+      "right": "bff0000000000000",
+      "cpu": "7ff0000000000000",
+      "unicorn": "7ff0000000000000",
+      "matched": true
+    },
+    {
+      "operation": "sub",
+      "left": "7ff0000000000000",
+      "right": "7ff0000000000000",
+      "cpu": "fff8000000000000",
+      "unicorn": "fff8000000000000",
+      "matched": true
+    },
+    {
+      "operation": "sub",
+      "left": "7ff0000000000000",
+      "right": "fff0000000000000",
+      "cpu": "7ff0000000000000",
+      "unicorn": "7ff0000000000000",
+      "matched": true
+    },
+    {
+      "operation": "sub",
+      "left": "7ff0000000000000",
+      "right": "7ff8000000000123",
+      "cpu": "7ff8000000000123",
+      "unicorn": "7ff8000000000123",
+      "matched": true
+    },
+    {
+      "operation": "sub",
+      "left": "7ff0000000000000",
+      "right": "fff8000000000456",
+      "cpu": "fff8000000000456",
+      "unicorn": "fff8000000000456",
+      "matched": true
+    },
+    {
+      "operation": "sub",
+      "left": "7ff0000000000000",
+      "right": "7ff8000000000789",
+      "cpu": "7ff8000000000789",
+      "unicorn": "7ff8000000000789",
+      "matched": true
+    },
+    {
+      "operation": "sub",
+      "left": "7ff0000000000000",
+      "right": "7ff0000000000123",
+      "cpu": "7ff8000000000123",
+      "unicorn": "7ff8000000000123",
+      "matched": true
+    },
+    {
+      "operation": "sub",
+      "left": "7ff0000000000000",
+      "right": "fff0000000000456",
+      "cpu": "fff8000000000456",
+      "unicorn": "fff8000000000456",
+      "matched": true
+    },
+    {
+      "operation": "sub",
+      "left": "fff0000000000000",
+      "right": "0000000000000000",
+      "cpu": "fff0000000000000",
+      "unicorn": "fff0000000000000",
+      "matched": true
+    },
+    {
+      "operation": "sub",
+      "left": "fff0000000000000",
+      "right": "8000000000000000",
+      "cpu": "fff0000000000000",
+      "unicorn": "fff0000000000000",
+      "matched": true
+    },
+    {
+      "operation": "sub",
+      "left": "fff0000000000000",
+      "right": "3ff0000000000000",
+      "cpu": "fff0000000000000",
+      "unicorn": "fff0000000000000",
+      "matched": true
+    },
+    {
+      "operation": "sub",
+      "left": "fff0000000000000",
+      "right": "bff0000000000000",
+      "cpu": "fff0000000000000",
+      "unicorn": "fff0000000000000",
+      "matched": true
+    },
+    {
+      "operation": "sub",
+      "left": "fff0000000000000",
+      "right": "7ff0000000000000",
+      "cpu": "fff0000000000000",
+      "unicorn": "fff0000000000000",
+      "matched": true
+    },
+    {
+      "operation": "sub",
+      "left": "fff0000000000000",
+      "right": "fff0000000000000",
+      "cpu": "fff8000000000000",
+      "unicorn": "fff8000000000000",
+      "matched": true
+    },
+    {
+      "operation": "sub",
+      "left": "fff0000000000000",
+      "right": "7ff8000000000123",
+      "cpu": "7ff8000000000123",
+      "unicorn": "7ff8000000000123",
+      "matched": true
+    },
+    {
+      "operation": "sub",
+      "left": "fff0000000000000",
+      "right": "fff8000000000456",
+      "cpu": "fff8000000000456",
+      "unicorn": "fff8000000000456",
+      "matched": true
+    },
+    {
+      "operation": "sub",
+      "left": "fff0000000000000",
+      "right": "7ff8000000000789",
+      "cpu": "7ff8000000000789",
+      "unicorn": "7ff8000000000789",
+      "matched": true
+    },
+    {
+      "operation": "sub",
+      "left": "fff0000000000000",
+      "right": "7ff0000000000123",
+      "cpu": "7ff8000000000123",
+      "unicorn": "7ff8000000000123",
+      "matched": true
+    },
+    {
+      "operation": "sub",
+      "left": "fff0000000000000",
+      "right": "fff0000000000456",
+      "cpu": "fff8000000000456",
+      "unicorn": "fff8000000000456",
+      "matched": true
+    },
+    {
+      "operation": "sub",
+      "left": "7ff8000000000123",
+      "right": "0000000000000000",
+      "cpu": "7ff8000000000123",
+      "unicorn": "7ff8000000000123",
+      "matched": true
+    },
+    {
+      "operation": "sub",
+      "left": "7ff8000000000123",
+      "right": "8000000000000000",
+      "cpu": "7ff8000000000123",
+      "unicorn": "7ff8000000000123",
+      "matched": true
+    },
+    {
+      "operation": "sub",
+      "left": "7ff8000000000123",
+      "right": "3ff0000000000000",
+      "cpu": "7ff8000000000123",
+      "unicorn": "7ff8000000000123",
+      "matched": true
+    },
+    {
+      "operation": "sub",
+      "left": "7ff8000000000123",
+      "right": "bff0000000000000",
+      "cpu": "7ff8000000000123",
+      "unicorn": "7ff8000000000123",
+      "matched": true
+    },
+    {
+      "operation": "sub",
+      "left": "7ff8000000000123",
+      "right": "7ff0000000000000",
+      "cpu": "7ff8000000000123",
+      "unicorn": "7ff8000000000123",
+      "matched": true
+    },
+    {
+      "operation": "sub",
+      "left": "7ff8000000000123",
+      "right": "fff0000000000000",
+      "cpu": "7ff8000000000123",
+      "unicorn": "7ff8000000000123",
+      "matched": true
+    },
+    {
+      "operation": "sub",
+      "left": "7ff8000000000123",
+      "right": "7ff8000000000123",
+      "cpu": "7ff8000000000123",
+      "unicorn": "7ff8000000000123",
+      "matched": true
+    },
+    {
+      "operation": "sub",
+      "left": "7ff8000000000123",
+      "right": "fff8000000000456",
+      "cpu": "7ff8000000000123",
+      "unicorn": "fff8000000000456",
+      "matched": false
+    },
+    {
+      "operation": "sub",
+      "left": "7ff8000000000123",
+      "right": "7ff8000000000789",
+      "cpu": "7ff8000000000123",
+      "unicorn": "7ff8000000000789",
+      "matched": false
+    },
+    {
+      "operation": "sub",
+      "left": "7ff8000000000123",
+      "right": "7ff0000000000123",
+      "cpu": "7ff8000000000123",
+      "unicorn": "7ff8000000000123",
+      "matched": true
+    },
+    {
+      "operation": "sub",
+      "left": "7ff8000000000123",
+      "right": "fff0000000000456",
+      "cpu": "7ff8000000000123",
+      "unicorn": "7ff8000000000123",
+      "matched": true
+    },
+    {
+      "operation": "sub",
+      "left": "fff8000000000456",
+      "right": "0000000000000000",
+      "cpu": "fff8000000000456",
+      "unicorn": "fff8000000000456",
+      "matched": true
+    },
+    {
+      "operation": "sub",
+      "left": "fff8000000000456",
+      "right": "8000000000000000",
+      "cpu": "fff8000000000456",
+      "unicorn": "fff8000000000456",
+      "matched": true
+    },
+    {
+      "operation": "sub",
+      "left": "fff8000000000456",
+      "right": "3ff0000000000000",
+      "cpu": "fff8000000000456",
+      "unicorn": "fff8000000000456",
+      "matched": true
+    },
+    {
+      "operation": "sub",
+      "left": "fff8000000000456",
+      "right": "bff0000000000000",
+      "cpu": "fff8000000000456",
+      "unicorn": "fff8000000000456",
+      "matched": true
+    },
+    {
+      "operation": "sub",
+      "left": "fff8000000000456",
+      "right": "7ff0000000000000",
+      "cpu": "fff8000000000456",
+      "unicorn": "fff8000000000456",
+      "matched": true
+    },
+    {
+      "operation": "sub",
+      "left": "fff8000000000456",
+      "right": "fff0000000000000",
+      "cpu": "fff8000000000456",
+      "unicorn": "fff8000000000456",
+      "matched": true
+    },
+    {
+      "operation": "sub",
+      "left": "fff8000000000456",
+      "right": "7ff8000000000123",
+      "cpu": "fff8000000000456",
+      "unicorn": "fff8000000000456",
+      "matched": true
+    },
+    {
+      "operation": "sub",
+      "left": "fff8000000000456",
+      "right": "fff8000000000456",
+      "cpu": "fff8000000000456",
+      "unicorn": "fff8000000000456",
+      "matched": true
+    },
+    {
+      "operation": "sub",
+      "left": "fff8000000000456",
+      "right": "7ff8000000000789",
+      "cpu": "fff8000000000456",
+      "unicorn": "7ff8000000000789",
+      "matched": false
+    },
+    {
+      "operation": "sub",
+      "left": "fff8000000000456",
+      "right": "7ff0000000000123",
+      "cpu": "fff8000000000456",
+      "unicorn": "fff8000000000456",
+      "matched": true
+    },
+    {
+      "operation": "sub",
+      "left": "fff8000000000456",
+      "right": "fff0000000000456",
+      "cpu": "fff8000000000456",
+      "unicorn": "fff8000000000456",
+      "matched": true
+    },
+    {
+      "operation": "sub",
+      "left": "7ff8000000000789",
+      "right": "0000000000000000",
+      "cpu": "7ff8000000000789",
+      "unicorn": "7ff8000000000789",
+      "matched": true
+    },
+    {
+      "operation": "sub",
+      "left": "7ff8000000000789",
+      "right": "8000000000000000",
+      "cpu": "7ff8000000000789",
+      "unicorn": "7ff8000000000789",
+      "matched": true
+    },
+    {
+      "operation": "sub",
+      "left": "7ff8000000000789",
+      "right": "3ff0000000000000",
+      "cpu": "7ff8000000000789",
+      "unicorn": "7ff8000000000789",
+      "matched": true
+    },
+    {
+      "operation": "sub",
+      "left": "7ff8000000000789",
+      "right": "bff0000000000000",
+      "cpu": "7ff8000000000789",
+      "unicorn": "7ff8000000000789",
+      "matched": true
+    },
+    {
+      "operation": "sub",
+      "left": "7ff8000000000789",
+      "right": "7ff0000000000000",
+      "cpu": "7ff8000000000789",
+      "unicorn": "7ff8000000000789",
+      "matched": true
+    },
+    {
+      "operation": "sub",
+      "left": "7ff8000000000789",
+      "right": "fff0000000000000",
+      "cpu": "7ff8000000000789",
+      "unicorn": "7ff8000000000789",
+      "matched": true
+    },
+    {
+      "operation": "sub",
+      "left": "7ff8000000000789",
+      "right": "7ff8000000000123",
+      "cpu": "7ff8000000000789",
+      "unicorn": "7ff8000000000789",
+      "matched": true
+    },
+    {
+      "operation": "sub",
+      "left": "7ff8000000000789",
+      "right": "fff8000000000456",
+      "cpu": "7ff8000000000789",
+      "unicorn": "7ff8000000000789",
+      "matched": true
+    },
+    {
+      "operation": "sub",
+      "left": "7ff8000000000789",
+      "right": "7ff8000000000789",
+      "cpu": "7ff8000000000789",
+      "unicorn": "7ff8000000000789",
+      "matched": true
+    },
+    {
+      "operation": "sub",
+      "left": "7ff8000000000789",
+      "right": "7ff0000000000123",
+      "cpu": "7ff8000000000789",
+      "unicorn": "7ff8000000000789",
+      "matched": true
+    },
+    {
+      "operation": "sub",
+      "left": "7ff8000000000789",
+      "right": "fff0000000000456",
+      "cpu": "7ff8000000000789",
+      "unicorn": "7ff8000000000789",
+      "matched": true
+    },
+    {
+      "operation": "sub",
+      "left": "7ff0000000000123",
+      "right": "0000000000000000",
+      "cpu": "7ff8000000000123",
+      "unicorn": "7ff8000000000123",
+      "matched": true
+    },
+    {
+      "operation": "sub",
+      "left": "7ff0000000000123",
+      "right": "8000000000000000",
+      "cpu": "7ff8000000000123",
+      "unicorn": "7ff8000000000123",
+      "matched": true
+    },
+    {
+      "operation": "sub",
+      "left": "7ff0000000000123",
+      "right": "3ff0000000000000",
+      "cpu": "7ff8000000000123",
+      "unicorn": "7ff8000000000123",
+      "matched": true
+    },
+    {
+      "operation": "sub",
+      "left": "7ff0000000000123",
+      "right": "bff0000000000000",
+      "cpu": "7ff8000000000123",
+      "unicorn": "7ff8000000000123",
+      "matched": true
+    },
+    {
+      "operation": "sub",
+      "left": "7ff0000000000123",
+      "right": "7ff0000000000000",
+      "cpu": "7ff8000000000123",
+      "unicorn": "7ff8000000000123",
+      "matched": true
+    },
+    {
+      "operation": "sub",
+      "left": "7ff0000000000123",
+      "right": "fff0000000000000",
+      "cpu": "7ff8000000000123",
+      "unicorn": "7ff8000000000123",
+      "matched": true
+    },
+    {
+      "operation": "sub",
+      "left": "7ff0000000000123",
+      "right": "7ff8000000000123",
+      "cpu": "7ff8000000000123",
+      "unicorn": "7ff8000000000123",
+      "matched": true
+    },
+    {
+      "operation": "sub",
+      "left": "7ff0000000000123",
+      "right": "fff8000000000456",
+      "cpu": "7ff8000000000123",
+      "unicorn": "fff8000000000456",
+      "matched": false
+    },
+    {
+      "operation": "sub",
+      "left": "7ff0000000000123",
+      "right": "7ff8000000000789",
+      "cpu": "7ff8000000000123",
+      "unicorn": "7ff8000000000789",
+      "matched": false
+    },
+    {
+      "operation": "sub",
+      "left": "7ff0000000000123",
+      "right": "7ff0000000000123",
+      "cpu": "7ff8000000000123",
+      "unicorn": "7ff8000000000123",
+      "matched": true
+    },
+    {
+      "operation": "sub",
+      "left": "7ff0000000000123",
+      "right": "fff0000000000456",
+      "cpu": "7ff8000000000123",
+      "unicorn": "fff8000000000456",
+      "matched": false
+    },
+    {
+      "operation": "sub",
+      "left": "fff0000000000456",
+      "right": "0000000000000000",
+      "cpu": "fff8000000000456",
+      "unicorn": "fff8000000000456",
+      "matched": true
+    },
+    {
+      "operation": "sub",
+      "left": "fff0000000000456",
+      "right": "8000000000000000",
+      "cpu": "fff8000000000456",
+      "unicorn": "fff8000000000456",
+      "matched": true
+    },
+    {
+      "operation": "sub",
+      "left": "fff0000000000456",
+      "right": "3ff0000000000000",
+      "cpu": "fff8000000000456",
+      "unicorn": "fff8000000000456",
+      "matched": true
+    },
+    {
+      "operation": "sub",
+      "left": "fff0000000000456",
+      "right": "bff0000000000000",
+      "cpu": "fff8000000000456",
+      "unicorn": "fff8000000000456",
+      "matched": true
+    },
+    {
+      "operation": "sub",
+      "left": "fff0000000000456",
+      "right": "7ff0000000000000",
+      "cpu": "fff8000000000456",
+      "unicorn": "fff8000000000456",
+      "matched": true
+    },
+    {
+      "operation": "sub",
+      "left": "fff0000000000456",
+      "right": "fff0000000000000",
+      "cpu": "fff8000000000456",
+      "unicorn": "fff8000000000456",
+      "matched": true
+    },
+    {
+      "operation": "sub",
+      "left": "fff0000000000456",
+      "right": "7ff8000000000123",
+      "cpu": "fff8000000000456",
+      "unicorn": "7ff8000000000123",
+      "matched": false
+    },
+    {
+      "operation": "sub",
+      "left": "fff0000000000456",
+      "right": "fff8000000000456",
+      "cpu": "fff8000000000456",
+      "unicorn": "fff8000000000456",
+      "matched": true
+    },
+    {
+      "operation": "sub",
+      "left": "fff0000000000456",
+      "right": "7ff8000000000789",
+      "cpu": "fff8000000000456",
+      "unicorn": "7ff8000000000789",
+      "matched": false
+    },
+    {
+      "operation": "sub",
+      "left": "fff0000000000456",
+      "right": "7ff0000000000123",
+      "cpu": "fff8000000000456",
+      "unicorn": "fff8000000000456",
+      "matched": true
+    },
+    {
+      "operation": "sub",
+      "left": "fff0000000000456",
+      "right": "fff0000000000456",
+      "cpu": "fff8000000000456",
+      "unicorn": "fff8000000000456",
+      "matched": true
+    }
+  ],
+  "original_ex5_modified": false,
+  "whole_bot_complete": false,
+  "limits": [
+    "Standalone CPU/Unicorn arithmetic conformance, not a full original EA run or trade comparison."
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "scope": "FUN_253f2627550 only",
+  "base": "0x253f2620000",
+  "range": {"begin_rva": "0x7550", "end_rva": "0x83c4", "length_hex": "0xe74", "sha256": "dcd19e9d1581d0d4e68a1f8c1e293a83c1a4cb1f17de08a506e1e74f4d762141"},
+  "instructions": [
+    {"rva":"0x7690","operation":"ucomisd reference,0; jbe","result":"reference <= 0 or NaN enters iOpen"},
+    {"rva":"0x76c6","operation":"ucomisd iOpen_result,0; jne; jnp error","result":"zero finite errors; nonzero and NaN continue"},
+    {"rva":"0x76d6","operation":"candidate = symbol_value / reference"},
+    {"rva":"0x770b","operation":"scale = candidate == 0 ? reference : candidate"},
+    {"rva":"0x7723","operation":"write scale to full 0x253f2686228 (RVA 0x66228)"},
+    {"rva":"0x7866","operation":"lot_scale = scale * value at RVA 0x4cd98 when property 0x11 is 3 or 5"},
+    {"rva":"0x7891","operation":"lot_scale = scale / value at RVA 0x4cd98 when property 0x11 is 1"},
+    {"rva":"0x80d7","operation":"ucomisd lot_scale,0; jne; jnp error","result":"zero finite errors; NaN continues"},
+    {"rva":"0x80e3","operation":"dVar2 = limit / lot_scale"},
+    {"rva":"0x8214","operation":"twice = (limit + limit) / lot_scale"},
+    {"rva":"0x8265","operation":"write literal 0x3fb999999999999a (0.1)"},
+    {"rva":"0x8288","operation":"seconds = parameter * 0xe10 (3600)"}
+  ]
+}

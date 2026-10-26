@@ -22,6 +22,9 @@ riêng của từng phần ở `bot-cua-toi-1/tests/` và `bot-cua-toi-3/tests/`
 
 Phép kiểm ghép mới:
 
+- `bot-cua-toi-3/tests/check-pending-submission.py`: prepare/original/mql5/compare,
+  so332ca từ giá cơ sở đến đặt/thử lại/ghi bảng; các hàm con được cấp trả lời,
+  giữ làm tròn thật; dùng `--build` ở mql5. Chưa là toàn chương trình chính.
 - `bot-cua-toi-1/tests/check-management-router.py`: prepare/original/mql5/compare;
   --first-zero-ticket-changed chọn ngữ cảnh của bộ kiểm; hai manager được cấp trả lời.
 - `bot-cua-toi-1/tests/check-position-management-flow.py`: --trade-children chạy thân

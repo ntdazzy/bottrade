@@ -1,0 +1,43 @@
+{
+  "original_ex5_sha256": "ee063d3d87490afe24e2f4ce85f6b05659320e297b102efd70207f71ca2feb83",
+  "tool_sha256": "5ed4e84ac094788f9357a0652ecea0151561fc28ecb09a5a713008aa8ec20106",
+  "helpers_sha256": {
+    "bot-cua-toi-3/tests/check-pending-submission.py": "5ed4e84ac094788f9357a0652ecea0151561fc28ecb09a5a713008aa8ec20106",
+    "bot-cua-toi-3/tests/pending_submission_cases.py": "530552d8fa1f582c4d460704c9e8a2354fef7ce8094df3a648b339d122b8e8c7",
+    "bot-cua-toi-3/tests/check-management-prelude.py": "402a6b548e6144115536a86987471f2b2fa59f9fb4a54a989985636a40c4eb7e",
+    "bot-cua-toi-1/tests/check-management-prelude.py": "f5dbe950896e58a00331ef32473ccebdcbbf03a9627e8c12449c7f4087e6a49d",
+    "cong-cu/kiem-gia-vao-bot-1-3.py": "22394e48932feb7242b967aa58e327d2990402f12bfe52621916f64914c9dac2",
+    "cong-cu/kiem-muc-gia-bot-1-3.py": "a6c447ca80029fb63ced0c9d1673bb14222a7736b04df5c410f280f8471d6a35",
+    "cong-cu/kiem-khoi-luong-hop-le-bot-1-3.py": "8251fb4423d6f5f2e1b79a1c53dbb25fb5a6c568bb61cddef23396dc982243f0",
+    "cong-cu/kiem-khoi-luong-bot-1-3.py": "32539c090422ab6bc2ce94a9fdacfd33e53c394aca58bd3827c2232d817d7f77",
+    "cong-cu/kiem-ban-git-quan-ly.py": "7186478774b34e0d72b4594fbcc85972d9b4c07ed02160987d46d34f39dcb160",
+    "claude-thuc-hien/bot3-pending-check-20261026-r2/TASK.md": "f62f9dcd1c09612fc7bd5502e00701942237e7887f18be7ec56e9cd3bc35bd1b",
+    "claude-thuc-hien/bot3-pending-submission-20261026-r2/TASK.md": "9f3679974fb1992c71fb692691d4623490cd8f1296a728716ac0a6f1bc138d7d",
+    "bot-cua-toi-3/phan-tich/chuong-trinh-chinh/pending-submission-20261026-r2/native-bindings.json": "cea50fce7644beea762d508e52a40791471da989179277edbe6188b68e6ab6a0"
+  },
+  "sources_sha256": {
+    "Include/bot-cua-toi-3/Bot3Filling.mqh": "c2806af2b1e00363652b7a09387065f1de289cf6e2bc644611f4d5f6d1c47599",
+    "Include/bot-cua-toi-3/Bot3Margin.mqh": "ac72bb1fb67b35a0200310fc0195148455dfc52ec4dba01bc61db55dba5e96ec",
+    "Include/bot-cua-toi-3/Bot3OrderScan.mqh": "b076c27183eae6a9a8c9c23aaad427f4984580f6e7f6a8a3a392d0371bc1b667",
+    "Include/bot-cua-toi-3/Bot3PendingRequest.mqh": "54bc2c75ff9a2ee47f375f874908912da0cad56d2ecb586801d0274c2d025648",
+    "Include/bot-cua-toi-3/Bot3PendingSubmission.mqh": "53bdeaec9d2edbdb2b54d410237c6b2d31de10336e1f67d975514716898d5d31",
+    "Include/bot-cua-toi-3/Bot3PriceLevels.mqh": "1cfecf5f324056b64f72a8fb21f446b7ca35f377ae40d4ab0c6859bfe736c413",
+    "Include/bot-cua-toi-3/Bot3TradeErrors.mqh": "3fb7fe70d418da44d1a77f8e65e9cf71fae00c1d4b5fe3b941ff5ae7e7982a8e",
+    "Include/bot-cua-toi-3/Bot3TradeMessages.mqh": "3bf211b2aa34980e0857f31e66a08e65136728fa7ef6e239d58cfc1c2bec5d16",
+    "Include/bot-cua-toi-3/Bot3TradeSend.mqh": "6031d82d7db3cb5652b76c4583853e871ac1e7f1770834e8dcbd165fa3a60f1f",
+    "Include/bot-cua-toi-3/Bot3VolumeValidation.mqh": "76ddfc034aa36ce6aafc67d7fc0932f2dddaf5e40e2f81995bdc6778aef1749d",
+    "Scripts/bot-cua-toi-3/Bot3PendingSubmissionCheck.mq5": "9983ca6513ce828420361be41c8275873b422cca91ebfbfd70e813632291b7f1"
+  },
+  "native_main_sha256": "6bead161fa97b6568b546e8c86a4ff03fdda55d6fb226a52b58dd14ec050d920",
+  "cases": 308,
+  "result_sha256": "20f808c1ceb979ec5368c313377f0ca35143fbca48048602d5fd1e7d3cf7d972",
+  "build": "b3-submission-check-20261026-r2",
+  "build_receipt_sha256": "9a1dd230e1011a113f8306482ba497e7a4cd3148542ead15178e961d9ce16944",
+  "whole_manager_complete": false,
+  "whole_bot_complete": false,
+  "full_ea": false,
+  "native_caller_slice_executed": true,
+  "child_helpers_intercepted": true,
+  "terminal_replies_supplied": true,
+  "original_ex5_changed": false
+}

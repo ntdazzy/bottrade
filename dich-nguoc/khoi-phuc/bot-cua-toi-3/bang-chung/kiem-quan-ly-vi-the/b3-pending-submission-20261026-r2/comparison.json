@@ -1,0 +1,43 @@
+{
+  "cases": 308,
+  "matched": 306,
+  "failed": 2,
+  "first_failures": [
+    {
+      "id": 116,
+      "group": "numeric-take_distance",
+      "differences": {
+        "ordered_hash": [
+          17572128318231175992,
+          10588808413863770040
+        ]
+      }
+    },
+    {
+      "id": 262,
+      "group": "numeric-stop_distance",
+      "differences": {
+        "ordered_hash": [
+          12314689254479316976,
+          5561974986479646576
+        ]
+      }
+    }
+  ],
+  "result_sha256": {
+    "original": "74965ec8e171c49a57da98fa0b8cabeea1f7ee1dae19a52b9517eed59ed00bd8",
+    "mql5": "20f808c1ceb979ec5368c313377f0ca35143fbca48048602d5fd1e7d3cf7d972"
+  },
+  "whole_manager_complete": false,
+  "whole_bot_complete": false,
+  "full_ea": false,
+  "native_caller_slice_executed": true,
+  "child_helpers_intercepted": true,
+  "terminal_replies_supplied": true,
+  "original_ex5_changed": false,
+  "limits": [
+    "Only the caller after a supplied base price, not the earlier entry conditions or whole main program.",
+    "Margin/volume/limit/pending-send/error-text children and terminal replies are supplied; RoundPrice and caller instructions execute.",
+    "Valid 9-volume/100-row arrays and successful native string allocations only; no claim for all allocations, infinite retries, real accounts or lifecycle."
+  ]
+}

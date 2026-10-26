@@ -34,6 +34,10 @@
    kiểm theo đặc tả cho Claude, mục tiêu khoảng 95% phần thực hiện.
    Codex quản lý, chia phần, theo dõi, kiểm chứng độc lập và ghép kết
    quả; không thay việc giao viết mã bằng chỉ giao đọc/rà mã.
+   Làm rõ ngày 26/10/2026: cố gắng giao toàn bộ phần viết mã đã đủ mô
+   tả cho Claude. Giao Claude lập bảng nối tất cả các khối nguồn hiện
+   có: giao diện, nơi gọi, dữ liệu truyền và phần còn thiếu để ghép;
+   Codex kiểm lại bảng nối trước khi dùng làm căn cứ viết mã tiếp.
    Cách giao việc mới được người dùng làm rõ ngày 25/10/2026: Codex
    phân tích bằng chứng gốc trước, chốt công thức, điều kiện, kiểu số,
    thứ tự gọi và tác dụng phụ thành mô tả cụ thể. Sau đó giao Claude
