@@ -1,0 +1,35 @@
+{
+  "cases": 2,
+  "matched": 2,
+  "results": [
+    {
+      "id": 316,
+      "error": "0x461ca3000001f7",
+      "volume_events_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "pending_events_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matched": true,
+      "terminal_exit_code": 4294967295,
+      "log_sha256": "45aa4cb6f6a9f43b6d332c46f230c28202f72c6e64b089e7a7398c7d5d4a3180"
+    },
+    {
+      "id": 317,
+      "error": "0x300ed5000001f7",
+      "volume_events_sha256": "8daa762c8c5c641e0357632af4e0241bba82e176d7b6a4dc2bf191485703d619",
+      "pending_events_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matched": true,
+      "terminal_exit_code": 4294967295,
+      "log_sha256": "77665e6cc527a75648822190224acaf2f697f3c0c3fe6baf921eff66625da611"
+    }
+  ],
+  "whole_bot_complete": false,
+  "whole_manager_complete": false,
+  "whole_evaluator_complete": false,
+  "full_ea": false,
+  "native_balance_volume_resize_continuous": true,
+  "child_helpers_intercepted": false,
+  "terminal_replies_supplied": true,
+  "original_ex5_changed": false,
+  "limits": [
+    "Fault class, completed SDK events and their pre-call state; no final state after the last SDK call on a terminated script."
+  ]
+}

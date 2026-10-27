@@ -1,3 +1,12 @@
+- `kiem-chuoi-doi-khoi-luong-bot-1-3.py prepare|mql5|original|compare BOT RUN`:
+  chuỗi cổng vốn→toàn khối lượng/rút tiền/đổi tiền→xóa/mở/gửi lệnh chờ,
+  giữ chung bộ nhớ/chỉ số/mảng. `mql5`/`errors` cần `--build BUILD`;
+  chạy mql5 trước original để đo chuỗi số MT5. Lượt b1/b3-resize-flow-20261027-r1:
+  316ca thường +2ca lỗi mỗi bot; không phải toàn evaluator/EA.
+- `tao-bo-kiem-chuoi-doi-khoi-luong.py`: tạo bộ kiểm ghép từ các bộ trả
+  lời dịch vụ đã kiểm của volume/resize; giữ nguyên các tệp kiểm cũ,
+  không thêm quy tắc trong nguồn bot. Cần biên dịch lại sau khi tạo.
+
 - `kiem-khoi-luong-thuc-bot-1-3.py prepare|mql5|original|compare BOT RUN`:
   toàn thân khối lượng/rút tiền/đổi tiền; chạy mql5 trước để đo chuỗi số
   của MT5 thật. `mql5` và `errors` cần `--build BUILD` đúng bộ kiểm đã

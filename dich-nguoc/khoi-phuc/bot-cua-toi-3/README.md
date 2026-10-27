@@ -1,3 +1,10 @@
+Đã ghép `Bot3EvaluationResizeFlow.mqh`: cổng vốn → toàn bước tính
+khối lượng/rút tiền/đổi tiền → tạo lại lệnh chờ qua xóa/mở/gửi thật.
+**316/316 ca thường +2/2 ca chia0 khớp**; giữ chung chỉ số/mảng,
+không đặt lại trạng thái giữa các phần. Bản nguồn trực tiếp và bộ kiểm
+đều biên dịch0lỗi/0cảnh báo. Còn nối phía trước/sau và toànEA.
+[Phạm vi](../danh-gia-doc-lap/resize-flow-20261027-r1/SPEC.md).
+
 Đã phục hồi thêm toàn bước tính khối lượng `Bot3VolumeRuntime.mqh`:
 **1039/1039 ca thường** khớp từng byte, **6/6 ca chia 0** dừng đúng,
 so cả đọc lại dữ liệu, thứ tự/chuỗi thông báo, ghi vốn và toàn mảng khối lượng.

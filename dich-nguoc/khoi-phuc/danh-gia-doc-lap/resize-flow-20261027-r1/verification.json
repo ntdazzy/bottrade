@@ -1,0 +1,32 @@
+{
+  "checks": [
+    {
+      "bot": 1,
+      "cases": 316,
+      "matched": 316,
+      "volume_called": 221,
+      "gate_skipped": 95,
+      "fatal_cases": 2,
+      "fatal_matched": 2,
+      "instructions": 2142,
+      "result_sha256": "84eb648db7bae3b94ca8af136e5bd29d91b25c6f63a69443bb85a96f92078223",
+      "cast_results_sha256": "866455e47925316381c097292c56c5a7073e101bb0ef8258f6b583cbf51bcd55",
+      "fixed_results_sha256": "78983b68f5d8c7a6dbd0c0c6ea040a01665fc2c191ca575376effe8d7e77ac1b"
+    },
+    {
+      "bot": 3,
+      "cases": 316,
+      "matched": 316,
+      "volume_called": 221,
+      "gate_skipped": 95,
+      "fatal_cases": 2,
+      "fatal_matched": 2,
+      "instructions": 2256,
+      "result_sha256": "62baa700ce775b2915cf5b2e64675d82864d8741cc26d9e001cfd33cde2e4353",
+      "cast_results_sha256": "866455e47925316381c097292c56c5a7073e101bb0ef8258f6b583cbf51bcd55",
+      "fixed_results_sha256": "78983b68f5d8c7a6dbd0c0c6ea040a01665fc2c191ca575376effe8d7e77ac1b"
+    }
+  ],
+  "independent_review": "volume_live_source_review: no material blockers in shared mutable state, native adapter, or byte comparison",
+  "whole_eas_complete": 0
+}

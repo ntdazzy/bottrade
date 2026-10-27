@@ -1,0 +1,17 @@
+{
+  "cases": 316,
+  "matched": 316,
+  "failed": 0,
+  "first_failures": [],
+  "whole_bot_complete": false,
+  "whole_manager_complete": false,
+  "whole_evaluator_complete": false,
+  "full_ea": false,
+  "native_balance_volume_resize_continuous": true,
+  "child_helpers_intercepted": false,
+  "terminal_replies_supplied": true,
+  "original_ex5_changed": false,
+  "limits": [
+    "Evaluator balance gate through complete volume/withdrawal/currency and pending delete/open/send. Initial earlier evaluator frame/state and terminal replies supplied; no complete evaluator or EA."
+  ]
+}
