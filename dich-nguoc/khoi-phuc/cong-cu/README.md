@@ -1,3 +1,10 @@
+- `kiem-danh-gia-co-thong-ke-bot-1-3.py prepare|mql5|original|compare BOT RUN`:
+  nối thân đánh giá đã kiểm với thống kê cuối và dọn bảng theo giờ; bot1
+  61/61 ca, bot3 57/57 ca. `mql5` cần `--build BUILD`; khởi tạo/thoát, menu
+  và toàn EA vẫn nằm ngoài phạm vi.
+- `tao-bo-kiem-danh-gia-co-thong-ke.py`: tạo hai bộ kiểm có cùng trạng thái
+  từ đầu đánh giá tới phần hiển thị cuối.
+
 - `kiem-danh-gia-lien-tuc-bot-1-3.py prepare|mql5|original|compare BOT RUN`:
   từ đầu đánh giá qua phiên/giá/dừng-chốt/quản lý tới hết tạo lệnh;
   61/61caB1,57/57caB3; mọi thân con thật, trạng thái chung. `mql5` cần
@@ -23,6 +30,13 @@
   tin sắp tới, mọi chế độ và trạng thái đọc lại sau dịch vụ. `mql5` cần
   `--build BUILD`; chạy trước `original` để đo cách đổi số/ngày thành chữ
   trong MT5. Đã khớp297/297caB1,324/324caB3; chưa kiểm ảnh hoặc toànEA.
+- `kiem-bang-thong-tin-lich-su-bot-1-3.py prepare|mql5|original|compare BOT RUN`:
+  so toàn thân thống kê lịch sử và chữ lãi/lỗ cuối hàm; bot1 222/222 ca,
+  bot3 243/243 ca. `mql5` cần `--build BUILD`; không kiểm ảnh biểu đồ hay
+  toàn EA.
+- `tao-bo-kiem-bang-thong-tin-lich-su-bot-1-3.py`: tạo bộ ghi hai bot,
+  giữ đúng số lần đọc vé/lãi/phí/hoán đổi và trạng thái bảng.
+
 - `tao-bo-kiem-bang-thong-tin-mo-bot-1-3.py`: tạo hai bộ ghi MT5 riêng
   và hai nguồn kiểm biên dịch gọi dịch vụ thật; không gửi lệnh giao dịch.
 

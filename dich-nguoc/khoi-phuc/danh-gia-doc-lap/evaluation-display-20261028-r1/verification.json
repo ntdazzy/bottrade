@@ -1,0 +1,72 @@
+{
+  "checks": [
+    {
+      "bot": 1,
+      "scope": "closed-status-panel",
+      "run": "b1-closed-panel-20261028-r1",
+      "cases": 222,
+      "matched": 222,
+      "failed": 0,
+      "sdk_calls": 4855,
+      "native_closed_status_body_executed": true,
+      "result_sha256": "0bcfe39e6890ce98c6d08a24dd000f22f27b565875221820eb59e796cead09e9"
+    },
+    {
+      "bot": 3,
+      "scope": "closed-status-panel",
+      "run": "b3-closed-panel-20261028-r1",
+      "cases": 243,
+      "matched": 243,
+      "failed": 0,
+      "sdk_calls": 6078,
+      "native_closed_status_body_executed": true,
+      "result_sha256": "e54f059728c0304ddf7183d486bfeb6d7e2429113bc0a672e697a43b6ad8e1fb"
+    },
+    {
+      "bot": 1,
+      "scope": "evaluation-with-display",
+      "run": "b1-evaluation-display-20261028-r1",
+      "cases": 61,
+      "matched": 61,
+      "failed": 0,
+      "sdk_calls": 13630,
+      "native_child_calls": {
+        "evaluation": 61,
+        "buy_manager": 56,
+        "sell_manager": 56,
+        "send": 107,
+        "modify": 40,
+        "table_cleanup": 9,
+        "close": 9
+      },
+      "final_display_included": true,
+      "result_sha256": "342650862d5c23d19fff9053d96a8d2db80aa658f46b147bdcd7300004d4825d"
+    },
+    {
+      "bot": 3,
+      "scope": "evaluation-with-display",
+      "run": "b3-evaluation-display-20261028-r1",
+      "cases": 57,
+      "matched": 57,
+      "failed": 0,
+      "sdk_calls": 11519,
+      "native_child_calls": {
+        "evaluation": 57,
+        "buy_manager": 56,
+        "sell_manager": 56,
+        "send": 93,
+        "modify": 36,
+        "table_cleanup": 8,
+        "close": 11
+      },
+      "final_display_included": true,
+      "result_sha256": "cce5b8abd866c0ae116c58c97d2084f83e960c9ad11de35fe747eb9371d4317e"
+    }
+  ],
+  "whole_evaluator_complete": false,
+  "whole_ea_complete": false,
+  "original_ex5_changed": false,
+  "limits": [
+    "Không có ảnh biểu đồ, khởi tạo/thoát, menu/tài nguyên hoặc chạy cặp EA hoàn chỉnh."
+  ]
+}

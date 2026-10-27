@@ -1,0 +1,20 @@
+{
+  "cases": 243,
+  "matched": 243,
+  "failed": 0,
+  "first_failures": [],
+  "sdk_calls": 6078,
+  "whole_bot_complete": false,
+  "whole_manager_complete": false,
+  "whole_evaluator_complete": false,
+  "full_ea": false,
+  "native_closed_status_body_executed": true,
+  "child_helpers_intercepted": false,
+  "terminal_replies_supplied": true,
+  "text_formatting_replies_measured_in_mt5": true,
+  "rendered_chart_verified": false,
+  "original_ex5_changed": false,
+  "limits": [
+    "Full closed-history panel, native deal loop and text, ordered SDK calls, supplied history replies and actual MT5 formatting. No chart rendering, lifecycle or complete EA."
+  ]
+}

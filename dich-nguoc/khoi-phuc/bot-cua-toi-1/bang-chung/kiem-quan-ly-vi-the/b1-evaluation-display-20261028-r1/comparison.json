@@ -1,0 +1,20 @@
+{
+  "cases": 61,
+  "matched": 61,
+  "failed": 0,
+  "whole_bot_complete": false,
+  "whole_manager_complete": false,
+  "whole_evaluator_complete": false,
+  "full_ea": false,
+  "native_evaluator_entry_to_entry_loop_continuous": true,
+  "child_helpers_intercepted": false,
+  "terminal_replies_supplied": true,
+  "withdrawals_disabled": true,
+  "final_display_excluded": false,
+  "original_ex5_changed": false,
+  "native_closed_history_executed": true,
+  "native_hourly_results_cleanup_executed": true,
+  "limits": [
+    "Native entry through management and all following active branches. Terminal replies and initial configuration supplied. Closed-history display and hourly cleanup included; initialization/lifecycle, all branch/error coverage, rendered UI and complete paired EA run remain excluded."
+  ]
+}

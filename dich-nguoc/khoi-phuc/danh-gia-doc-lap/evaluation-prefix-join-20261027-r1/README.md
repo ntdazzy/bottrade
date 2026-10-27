@@ -11,7 +11,7 @@ chờ → điều kiện dừng → lọc tin → mức giá và tạo lệnh.
 | Kiểm lại quản lý với 18 nhóm giá trị ngoài | 352/352 ca | 364/364 ca |
 | Kiểm lại giao diện điều phối cũ, kết quả hai hàm quản lý được cấp | 1.536/1.536 ca | 384/384 ca |
 
-Lượt ghép cuối là `bN-evaluation-20261027-r7`, bản biên dịch kiểm `r6`.
+Lượt ghép thân chính là `bN-evaluation-20261027-r7`; phần nối thống kê/hiển thị cuối được kiểm riêng ở `bN-evaluation-display-20261028-r1`.
 Hai nguồn gọi dịch vụ thật là `bN-evaluation-api-20261027-r2`.
 Lượt quản lý riêng `bN-manager-fields-20261027-r4`, điều phối tương thích
 `bN-router-compat-20261027-r1`. Các bản biên dịch bàn giao đều0lỗi/0cảnh báo.
@@ -36,10 +36,10 @@ kiểm tra bản cũ/dữ liệu và điểm lệch; không dùng chính mã m�
 
 ## Giới hạn
 
-Đây vẫn là **kiểm đoạn chương trình**. Phần thống kê/hiển thị cuối hàm
-chưa nối. Khởi tạo/thoát, bộ điều phối chiến lược bên ngoài, menu/tài
-nguyên và chạy cặp EA hoàn chỉnh vẫn còn. Vì vậy chưa xác nhận toàn
-evaluator hoặc bot hoàn thành. Không sửa EX5 gốc hay MT5 chính.
+Đây vẫn là **kiểm đoạn chương trình**. Phần thống kê/hiển thị cuối hàm đã
+được nối và đối chiếu riêng; khởi tạo/thoát, bộ điều phối chiến lược bên
+ngoài, menu/tài nguyên và chạy cặp EA hoàn chỉnh vẫn còn. Vì vậy chưa xác
+nhận toàn evaluator hoặc bot hoàn thành. Không sửa EX5 gốc hay MT5 chính.
 
 Luồng ghép dùng dữ liệu MT5 được cấp, chế độ khối lượng0, rút tiền tắt,
 ghi thông báo gửi0 và các danh sách vị thế/lệnh đơn giản. Có kiểm lỗi

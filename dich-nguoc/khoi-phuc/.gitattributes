@@ -851,3 +851,19 @@
 /cong-cu/kiem-danh-gia-lien-tuc-bot-1-3.py -text
 /cong-cu/tao-bo-kiem-danh-gia-lien-tuc.py -text
 /danh-gia-doc-lap/evaluation-prefix-join-20261027-r1/** -text
+# Closed-history status and evaluator display-tail evidence.
+/bot-cua-toi-[13]/source/MQL5/Include/bot-cua-toi-[13]/Bot[13]ClosedStatusPanel.mqh -text
+/bot-cua-toi-[13]/source/MQL5/Include/bot-cua-toi-[13]/Bot[13]EvaluationWithDisplay.mqh -text
+/bot-cua-toi-[13]/source/MQL5/Scripts/bot-cua-toi-[13]/Bot[13]ClosedStatusPanel*.mq5 -text
+/bot-cua-toi-[13]/source/MQL5/Scripts/bot-cua-toi-[13]/Bot[13]EvaluationWithDisplay*.mq5 -text
+/bot-cua-toi-[13]/bang-chung/bien-dich/b[13]-closed-panel-*/** -text
+/bot-cua-toi-[13]/bang-chung/bien-dich/b[13]-evaluation-display-*/** -text
+/bot-cua-toi-[13]/bang-chung/kiem-quan-ly-vi-the/b[13]-closed-panel-*/** -text
+/bot-cua-toi-[13]/bang-chung/kiem-quan-ly-vi-the/b[13]-evaluation-display-*/** -text
+/cong-cu/kiem-bang-thong-tin-lich-su-bot-1-3.py -text
+/cong-cu/tao-bo-kiem-bang-thong-tin-lich-su-bot-1-3.py -text
+/cong-cu/kiem-danh-gia-co-thong-ke-bot-1-3.py -text
+/cong-cu/tao-bo-kiem-danh-gia-co-thong-ke.py -text
+/danh-gia-doc-lap/closed-status-panel-20261028-r1/** -text
+/danh-gia-doc-lap/evaluation-display-20261028-r1/** -text
+

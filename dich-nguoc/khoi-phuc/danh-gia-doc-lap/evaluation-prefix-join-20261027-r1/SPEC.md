@@ -92,3 +92,13 @@ emergency_offset=spread. Mức mua dùng lower, mức bán dùng upper.
 Ngữ cảnh incoming_changed của B1 còn cần nối từ hàm gọi ngoài để thành EA;
 phép kiểm hàm đánh giá cấp rõ byte này. Không tự gán0 hoặc70 cho mọi đường.
 Thống kê lịch sử/hiển thị cuối hàm và khởi tạo/thoát chưa nằm trong lượt này.
+
+
+## Nối thống kê lịch sử và dọn bảng theo giờ
+
+Sau `BotNEvaluate` giữ nguyên quyết định; chỉ khi quyết định không phải
+`BOTN_LEVEL_STOP` mới gọi `BotNUpdateClosedStatusPanel`. Nếu giờ trong
+`cached_calendar` khác `display.last_hour`, ghi giờ mới rồi gọi
+`BotNCleanPendingResults(queue.results,execution.last_ticket)`. Bộ kiểm
+`evaluation-display-20261028-r1` đối chiếu 61/61 ca bot 1 và 57/57 ca bot 3
+qua thân native, gồm cả thứ tự lời gọi và trạng thái cuối.

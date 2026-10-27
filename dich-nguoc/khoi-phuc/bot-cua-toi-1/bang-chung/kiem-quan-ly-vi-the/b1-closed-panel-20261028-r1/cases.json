@@ -1,0 +1,9893 @@
+[
+  {
+    "id": 0,
+    "tag": "display-gates",
+    "values": {
+      "Show": 0,
+      "Tester": 0,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [
+      {
+        "ticket": 21,
+        "symbol": "XAUUSD",
+        "magics": [
+          9001
+        ],
+        "profit": [
+          10.0
+        ],
+        "commission": [
+          -1.0
+        ],
+        "swap": [
+          -0.5
+        ]
+      }
+    ],
+    "info": [
+      0,
+      0
+    ],
+    "select": 1,
+    "total": 1,
+    "effects": [],
+    "error_mode": 0
+  },
+  {
+    "id": 1,
+    "tag": "display-gates",
+    "values": {
+      "Show": 0,
+      "Tester": 0,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [
+      {
+        "ticket": 21,
+        "symbol": "XAUUSD",
+        "magics": [
+          9001
+        ],
+        "profit": [
+          10.0
+        ],
+        "commission": [
+          -1.0
+        ],
+        "swap": [
+          -0.5
+        ]
+      }
+    ],
+    "info": [
+      0,
+      1
+    ],
+    "select": 1,
+    "total": 1,
+    "effects": [],
+    "error_mode": 0
+  },
+  {
+    "id": 2,
+    "tag": "display-gates",
+    "values": {
+      "Show": 0,
+      "Tester": 0,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [
+      {
+        "ticket": 21,
+        "symbol": "XAUUSD",
+        "magics": [
+          9001
+        ],
+        "profit": [
+          10.0
+        ],
+        "commission": [
+          -1.0
+        ],
+        "swap": [
+          -0.5
+        ]
+      }
+    ],
+    "info": [
+      1,
+      0
+    ],
+    "select": 1,
+    "total": 1,
+    "effects": [],
+    "error_mode": 0
+  },
+  {
+    "id": 3,
+    "tag": "display-gates",
+    "values": {
+      "Show": 0,
+      "Tester": 0,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [
+      {
+        "ticket": 21,
+        "symbol": "XAUUSD",
+        "magics": [
+          9001
+        ],
+        "profit": [
+          10.0
+        ],
+        "commission": [
+          -1.0
+        ],
+        "swap": [
+          -0.5
+        ]
+      }
+    ],
+    "info": [
+      1,
+      1
+    ],
+    "select": 1,
+    "total": 1,
+    "effects": [],
+    "error_mode": 0
+  },
+  {
+    "id": 4,
+    "tag": "display-gates",
+    "values": {
+      "Show": 0,
+      "Tester": 0,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [
+      {
+        "ticket": 21,
+        "symbol": "XAUUSD",
+        "magics": [
+          9001
+        ],
+        "profit": [
+          10.0
+        ],
+        "commission": [
+          -1.0
+        ],
+        "swap": [
+          -0.5
+        ]
+      }
+    ],
+    "info": [
+      2,
+      2
+    ],
+    "select": 1,
+    "total": 1,
+    "effects": [],
+    "error_mode": 0
+  },
+  {
+    "id": 5,
+    "tag": "display-gates",
+    "values": {
+      "Show": 0,
+      "Tester": 1,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [
+      {
+        "ticket": 21,
+        "symbol": "XAUUSD",
+        "magics": [
+          9001
+        ],
+        "profit": [
+          10.0
+        ],
+        "commission": [
+          -1.0
+        ],
+        "swap": [
+          -0.5
+        ]
+      }
+    ],
+    "info": [
+      0,
+      0
+    ],
+    "select": 1,
+    "total": 1,
+    "effects": [],
+    "error_mode": 0
+  },
+  {
+    "id": 6,
+    "tag": "display-gates",
+    "values": {
+      "Show": 0,
+      "Tester": 1,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [
+      {
+        "ticket": 21,
+        "symbol": "XAUUSD",
+        "magics": [
+          9001
+        ],
+        "profit": [
+          10.0
+        ],
+        "commission": [
+          -1.0
+        ],
+        "swap": [
+          -0.5
+        ]
+      }
+    ],
+    "info": [
+      0,
+      1
+    ],
+    "select": 1,
+    "total": 1,
+    "effects": [],
+    "error_mode": 0
+  },
+  {
+    "id": 7,
+    "tag": "display-gates",
+    "values": {
+      "Show": 0,
+      "Tester": 1,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [
+      {
+        "ticket": 21,
+        "symbol": "XAUUSD",
+        "magics": [
+          9001
+        ],
+        "profit": [
+          10.0
+        ],
+        "commission": [
+          -1.0
+        ],
+        "swap": [
+          -0.5
+        ]
+      }
+    ],
+    "info": [
+      1,
+      0
+    ],
+    "select": 1,
+    "total": 1,
+    "effects": [],
+    "error_mode": 0
+  },
+  {
+    "id": 8,
+    "tag": "display-gates",
+    "values": {
+      "Show": 0,
+      "Tester": 1,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [
+      {
+        "ticket": 21,
+        "symbol": "XAUUSD",
+        "magics": [
+          9001
+        ],
+        "profit": [
+          10.0
+        ],
+        "commission": [
+          -1.0
+        ],
+        "swap": [
+          -0.5
+        ]
+      }
+    ],
+    "info": [
+      1,
+      1
+    ],
+    "select": 1,
+    "total": 1,
+    "effects": [],
+    "error_mode": 0
+  },
+  {
+    "id": 9,
+    "tag": "display-gates",
+    "values": {
+      "Show": 0,
+      "Tester": 1,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [
+      {
+        "ticket": 21,
+        "symbol": "XAUUSD",
+        "magics": [
+          9001
+        ],
+        "profit": [
+          10.0
+        ],
+        "commission": [
+          -1.0
+        ],
+        "swap": [
+          -0.5
+        ]
+      }
+    ],
+    "info": [
+      2,
+      2
+    ],
+    "select": 1,
+    "total": 1,
+    "effects": [],
+    "error_mode": 0
+  },
+  {
+    "id": 10,
+    "tag": "display-gates",
+    "values": {
+      "Show": 0,
+      "Tester": 255,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [
+      {
+        "ticket": 21,
+        "symbol": "XAUUSD",
+        "magics": [
+          9001
+        ],
+        "profit": [
+          10.0
+        ],
+        "commission": [
+          -1.0
+        ],
+        "swap": [
+          -0.5
+        ]
+      }
+    ],
+    "info": [
+      0,
+      0
+    ],
+    "select": 1,
+    "total": 1,
+    "effects": [],
+    "error_mode": 0
+  },
+  {
+    "id": 11,
+    "tag": "display-gates",
+    "values": {
+      "Show": 0,
+      "Tester": 255,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [
+      {
+        "ticket": 21,
+        "symbol": "XAUUSD",
+        "magics": [
+          9001
+        ],
+        "profit": [
+          10.0
+        ],
+        "commission": [
+          -1.0
+        ],
+        "swap": [
+          -0.5
+        ]
+      }
+    ],
+    "info": [
+      0,
+      1
+    ],
+    "select": 1,
+    "total": 1,
+    "effects": [],
+    "error_mode": 0
+  },
+  {
+    "id": 12,
+    "tag": "display-gates",
+    "values": {
+      "Show": 0,
+      "Tester": 255,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [
+      {
+        "ticket": 21,
+        "symbol": "XAUUSD",
+        "magics": [
+          9001
+        ],
+        "profit": [
+          10.0
+        ],
+        "commission": [
+          -1.0
+        ],
+        "swap": [
+          -0.5
+        ]
+      }
+    ],
+    "info": [
+      1,
+      0
+    ],
+    "select": 1,
+    "total": 1,
+    "effects": [],
+    "error_mode": 0
+  },
+  {
+    "id": 13,
+    "tag": "display-gates",
+    "values": {
+      "Show": 0,
+      "Tester": 255,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [
+      {
+        "ticket": 21,
+        "symbol": "XAUUSD",
+        "magics": [
+          9001
+        ],
+        "profit": [
+          10.0
+        ],
+        "commission": [
+          -1.0
+        ],
+        "swap": [
+          -0.5
+        ]
+      }
+    ],
+    "info": [
+      1,
+      1
+    ],
+    "select": 1,
+    "total": 1,
+    "effects": [],
+    "error_mode": 0
+  },
+  {
+    "id": 14,
+    "tag": "display-gates",
+    "values": {
+      "Show": 0,
+      "Tester": 255,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [
+      {
+        "ticket": 21,
+        "symbol": "XAUUSD",
+        "magics": [
+          9001
+        ],
+        "profit": [
+          10.0
+        ],
+        "commission": [
+          -1.0
+        ],
+        "swap": [
+          -0.5
+        ]
+      }
+    ],
+    "info": [
+      2,
+      2
+    ],
+    "select": 1,
+    "total": 1,
+    "effects": [],
+    "error_mode": 0
+  },
+  {
+    "id": 15,
+    "tag": "display-gates",
+    "values": {
+      "Show": 1,
+      "Tester": 0,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [
+      {
+        "ticket": 21,
+        "symbol": "XAUUSD",
+        "magics": [
+          9001
+        ],
+        "profit": [
+          10.0
+        ],
+        "commission": [
+          -1.0
+        ],
+        "swap": [
+          -0.5
+        ]
+      }
+    ],
+    "info": [
+      0,
+      0
+    ],
+    "select": 1,
+    "total": 1,
+    "effects": [],
+    "error_mode": 0
+  },
+  {
+    "id": 16,
+    "tag": "display-gates",
+    "values": {
+      "Show": 1,
+      "Tester": 0,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [
+      {
+        "ticket": 21,
+        "symbol": "XAUUSD",
+        "magics": [
+          9001
+        ],
+        "profit": [
+          10.0
+        ],
+        "commission": [
+          -1.0
+        ],
+        "swap": [
+          -0.5
+        ]
+      }
+    ],
+    "info": [
+      0,
+      1
+    ],
+    "select": 1,
+    "total": 1,
+    "effects": [],
+    "error_mode": 0
+  },
+  {
+    "id": 17,
+    "tag": "display-gates",
+    "values": {
+      "Show": 1,
+      "Tester": 0,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [
+      {
+        "ticket": 21,
+        "symbol": "XAUUSD",
+        "magics": [
+          9001
+        ],
+        "profit": [
+          10.0
+        ],
+        "commission": [
+          -1.0
+        ],
+        "swap": [
+          -0.5
+        ]
+      }
+    ],
+    "info": [
+      1,
+      0
+    ],
+    "select": 1,
+    "total": 1,
+    "effects": [],
+    "error_mode": 0
+  },
+  {
+    "id": 18,
+    "tag": "display-gates",
+    "values": {
+      "Show": 1,
+      "Tester": 0,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [
+      {
+        "ticket": 21,
+        "symbol": "XAUUSD",
+        "magics": [
+          9001
+        ],
+        "profit": [
+          10.0
+        ],
+        "commission": [
+          -1.0
+        ],
+        "swap": [
+          -0.5
+        ]
+      }
+    ],
+    "info": [
+      1,
+      1
+    ],
+    "select": 1,
+    "total": 1,
+    "effects": [],
+    "error_mode": 0
+  },
+  {
+    "id": 19,
+    "tag": "display-gates",
+    "values": {
+      "Show": 1,
+      "Tester": 0,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [
+      {
+        "ticket": 21,
+        "symbol": "XAUUSD",
+        "magics": [
+          9001
+        ],
+        "profit": [
+          10.0
+        ],
+        "commission": [
+          -1.0
+        ],
+        "swap": [
+          -0.5
+        ]
+      }
+    ],
+    "info": [
+      2,
+      2
+    ],
+    "select": 1,
+    "total": 1,
+    "effects": [],
+    "error_mode": 0
+  },
+  {
+    "id": 20,
+    "tag": "display-gates",
+    "values": {
+      "Show": 1,
+      "Tester": 1,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [
+      {
+        "ticket": 21,
+        "symbol": "XAUUSD",
+        "magics": [
+          9001
+        ],
+        "profit": [
+          10.0
+        ],
+        "commission": [
+          -1.0
+        ],
+        "swap": [
+          -0.5
+        ]
+      }
+    ],
+    "info": [
+      0,
+      0
+    ],
+    "select": 1,
+    "total": 1,
+    "effects": [],
+    "error_mode": 0
+  },
+  {
+    "id": 21,
+    "tag": "display-gates",
+    "values": {
+      "Show": 1,
+      "Tester": 1,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [
+      {
+        "ticket": 21,
+        "symbol": "XAUUSD",
+        "magics": [
+          9001
+        ],
+        "profit": [
+          10.0
+        ],
+        "commission": [
+          -1.0
+        ],
+        "swap": [
+          -0.5
+        ]
+      }
+    ],
+    "info": [
+      0,
+      1
+    ],
+    "select": 1,
+    "total": 1,
+    "effects": [],
+    "error_mode": 0
+  },
+  {
+    "id": 22,
+    "tag": "display-gates",
+    "values": {
+      "Show": 1,
+      "Tester": 1,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [
+      {
+        "ticket": 21,
+        "symbol": "XAUUSD",
+        "magics": [
+          9001
+        ],
+        "profit": [
+          10.0
+        ],
+        "commission": [
+          -1.0
+        ],
+        "swap": [
+          -0.5
+        ]
+      }
+    ],
+    "info": [
+      1,
+      0
+    ],
+    "select": 1,
+    "total": 1,
+    "effects": [],
+    "error_mode": 0
+  },
+  {
+    "id": 23,
+    "tag": "display-gates",
+    "values": {
+      "Show": 1,
+      "Tester": 1,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [
+      {
+        "ticket": 21,
+        "symbol": "XAUUSD",
+        "magics": [
+          9001
+        ],
+        "profit": [
+          10.0
+        ],
+        "commission": [
+          -1.0
+        ],
+        "swap": [
+          -0.5
+        ]
+      }
+    ],
+    "info": [
+      1,
+      1
+    ],
+    "select": 1,
+    "total": 1,
+    "effects": [],
+    "error_mode": 0
+  },
+  {
+    "id": 24,
+    "tag": "display-gates",
+    "values": {
+      "Show": 1,
+      "Tester": 1,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [
+      {
+        "ticket": 21,
+        "symbol": "XAUUSD",
+        "magics": [
+          9001
+        ],
+        "profit": [
+          10.0
+        ],
+        "commission": [
+          -1.0
+        ],
+        "swap": [
+          -0.5
+        ]
+      }
+    ],
+    "info": [
+      2,
+      2
+    ],
+    "select": 1,
+    "total": 1,
+    "effects": [],
+    "error_mode": 0
+  },
+  {
+    "id": 25,
+    "tag": "display-gates",
+    "values": {
+      "Show": 1,
+      "Tester": 255,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [
+      {
+        "ticket": 21,
+        "symbol": "XAUUSD",
+        "magics": [
+          9001
+        ],
+        "profit": [
+          10.0
+        ],
+        "commission": [
+          -1.0
+        ],
+        "swap": [
+          -0.5
+        ]
+      }
+    ],
+    "info": [
+      0,
+      0
+    ],
+    "select": 1,
+    "total": 1,
+    "effects": [],
+    "error_mode": 0
+  },
+  {
+    "id": 26,
+    "tag": "display-gates",
+    "values": {
+      "Show": 1,
+      "Tester": 255,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [
+      {
+        "ticket": 21,
+        "symbol": "XAUUSD",
+        "magics": [
+          9001
+        ],
+        "profit": [
+          10.0
+        ],
+        "commission": [
+          -1.0
+        ],
+        "swap": [
+          -0.5
+        ]
+      }
+    ],
+    "info": [
+      0,
+      1
+    ],
+    "select": 1,
+    "total": 1,
+    "effects": [],
+    "error_mode": 0
+  },
+  {
+    "id": 27,
+    "tag": "display-gates",
+    "values": {
+      "Show": 1,
+      "Tester": 255,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [
+      {
+        "ticket": 21,
+        "symbol": "XAUUSD",
+        "magics": [
+          9001
+        ],
+        "profit": [
+          10.0
+        ],
+        "commission": [
+          -1.0
+        ],
+        "swap": [
+          -0.5
+        ]
+      }
+    ],
+    "info": [
+      1,
+      0
+    ],
+    "select": 1,
+    "total": 1,
+    "effects": [],
+    "error_mode": 0
+  },
+  {
+    "id": 28,
+    "tag": "display-gates",
+    "values": {
+      "Show": 1,
+      "Tester": 255,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [
+      {
+        "ticket": 21,
+        "symbol": "XAUUSD",
+        "magics": [
+          9001
+        ],
+        "profit": [
+          10.0
+        ],
+        "commission": [
+          -1.0
+        ],
+        "swap": [
+          -0.5
+        ]
+      }
+    ],
+    "info": [
+      1,
+      1
+    ],
+    "select": 1,
+    "total": 1,
+    "effects": [],
+    "error_mode": 0
+  },
+  {
+    "id": 29,
+    "tag": "display-gates",
+    "values": {
+      "Show": 1,
+      "Tester": 255,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [
+      {
+        "ticket": 21,
+        "symbol": "XAUUSD",
+        "magics": [
+          9001
+        ],
+        "profit": [
+          10.0
+        ],
+        "commission": [
+          -1.0
+        ],
+        "swap": [
+          -0.5
+        ]
+      }
+    ],
+    "info": [
+      2,
+      2
+    ],
+    "select": 1,
+    "total": 1,
+    "effects": [],
+    "error_mode": 0
+  },
+  {
+    "id": 30,
+    "tag": "display-gates",
+    "values": {
+      "Show": 255,
+      "Tester": 0,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [
+      {
+        "ticket": 21,
+        "symbol": "XAUUSD",
+        "magics": [
+          9001
+        ],
+        "profit": [
+          10.0
+        ],
+        "commission": [
+          -1.0
+        ],
+        "swap": [
+          -0.5
+        ]
+      }
+    ],
+    "info": [
+      0,
+      0
+    ],
+    "select": 1,
+    "total": 1,
+    "effects": [],
+    "error_mode": 0
+  },
+  {
+    "id": 31,
+    "tag": "display-gates",
+    "values": {
+      "Show": 255,
+      "Tester": 0,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [
+      {
+        "ticket": 21,
+        "symbol": "XAUUSD",
+        "magics": [
+          9001
+        ],
+        "profit": [
+          10.0
+        ],
+        "commission": [
+          -1.0
+        ],
+        "swap": [
+          -0.5
+        ]
+      }
+    ],
+    "info": [
+      0,
+      1
+    ],
+    "select": 1,
+    "total": 1,
+    "effects": [],
+    "error_mode": 0
+  },
+  {
+    "id": 32,
+    "tag": "display-gates",
+    "values": {
+      "Show": 255,
+      "Tester": 0,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [
+      {
+        "ticket": 21,
+        "symbol": "XAUUSD",
+        "magics": [
+          9001
+        ],
+        "profit": [
+          10.0
+        ],
+        "commission": [
+          -1.0
+        ],
+        "swap": [
+          -0.5
+        ]
+      }
+    ],
+    "info": [
+      1,
+      0
+    ],
+    "select": 1,
+    "total": 1,
+    "effects": [],
+    "error_mode": 0
+  },
+  {
+    "id": 33,
+    "tag": "display-gates",
+    "values": {
+      "Show": 255,
+      "Tester": 0,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [
+      {
+        "ticket": 21,
+        "symbol": "XAUUSD",
+        "magics": [
+          9001
+        ],
+        "profit": [
+          10.0
+        ],
+        "commission": [
+          -1.0
+        ],
+        "swap": [
+          -0.5
+        ]
+      }
+    ],
+    "info": [
+      1,
+      1
+    ],
+    "select": 1,
+    "total": 1,
+    "effects": [],
+    "error_mode": 0
+  },
+  {
+    "id": 34,
+    "tag": "display-gates",
+    "values": {
+      "Show": 255,
+      "Tester": 0,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [
+      {
+        "ticket": 21,
+        "symbol": "XAUUSD",
+        "magics": [
+          9001
+        ],
+        "profit": [
+          10.0
+        ],
+        "commission": [
+          -1.0
+        ],
+        "swap": [
+          -0.5
+        ]
+      }
+    ],
+    "info": [
+      2,
+      2
+    ],
+    "select": 1,
+    "total": 1,
+    "effects": [],
+    "error_mode": 0
+  },
+  {
+    "id": 35,
+    "tag": "display-gates",
+    "values": {
+      "Show": 255,
+      "Tester": 1,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [
+      {
+        "ticket": 21,
+        "symbol": "XAUUSD",
+        "magics": [
+          9001
+        ],
+        "profit": [
+          10.0
+        ],
+        "commission": [
+          -1.0
+        ],
+        "swap": [
+          -0.5
+        ]
+      }
+    ],
+    "info": [
+      0,
+      0
+    ],
+    "select": 1,
+    "total": 1,
+    "effects": [],
+    "error_mode": 0
+  },
+  {
+    "id": 36,
+    "tag": "display-gates",
+    "values": {
+      "Show": 255,
+      "Tester": 1,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [
+      {
+        "ticket": 21,
+        "symbol": "XAUUSD",
+        "magics": [
+          9001
+        ],
+        "profit": [
+          10.0
+        ],
+        "commission": [
+          -1.0
+        ],
+        "swap": [
+          -0.5
+        ]
+      }
+    ],
+    "info": [
+      0,
+      1
+    ],
+    "select": 1,
+    "total": 1,
+    "effects": [],
+    "error_mode": 0
+  },
+  {
+    "id": 37,
+    "tag": "display-gates",
+    "values": {
+      "Show": 255,
+      "Tester": 1,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [
+      {
+        "ticket": 21,
+        "symbol": "XAUUSD",
+        "magics": [
+          9001
+        ],
+        "profit": [
+          10.0
+        ],
+        "commission": [
+          -1.0
+        ],
+        "swap": [
+          -0.5
+        ]
+      }
+    ],
+    "info": [
+      1,
+      0
+    ],
+    "select": 1,
+    "total": 1,
+    "effects": [],
+    "error_mode": 0
+  },
+  {
+    "id": 38,
+    "tag": "display-gates",
+    "values": {
+      "Show": 255,
+      "Tester": 1,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [
+      {
+        "ticket": 21,
+        "symbol": "XAUUSD",
+        "magics": [
+          9001
+        ],
+        "profit": [
+          10.0
+        ],
+        "commission": [
+          -1.0
+        ],
+        "swap": [
+          -0.5
+        ]
+      }
+    ],
+    "info": [
+      1,
+      1
+    ],
+    "select": 1,
+    "total": 1,
+    "effects": [],
+    "error_mode": 0
+  },
+  {
+    "id": 39,
+    "tag": "display-gates",
+    "values": {
+      "Show": 255,
+      "Tester": 1,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [
+      {
+        "ticket": 21,
+        "symbol": "XAUUSD",
+        "magics": [
+          9001
+        ],
+        "profit": [
+          10.0
+        ],
+        "commission": [
+          -1.0
+        ],
+        "swap": [
+          -0.5
+        ]
+      }
+    ],
+    "info": [
+      2,
+      2
+    ],
+    "select": 1,
+    "total": 1,
+    "effects": [],
+    "error_mode": 0
+  },
+  {
+    "id": 40,
+    "tag": "display-gates",
+    "values": {
+      "Show": 255,
+      "Tester": 255,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [
+      {
+        "ticket": 21,
+        "symbol": "XAUUSD",
+        "magics": [
+          9001
+        ],
+        "profit": [
+          10.0
+        ],
+        "commission": [
+          -1.0
+        ],
+        "swap": [
+          -0.5
+        ]
+      }
+    ],
+    "info": [
+      0,
+      0
+    ],
+    "select": 1,
+    "total": 1,
+    "effects": [],
+    "error_mode": 0
+  },
+  {
+    "id": 41,
+    "tag": "display-gates",
+    "values": {
+      "Show": 255,
+      "Tester": 255,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [
+      {
+        "ticket": 21,
+        "symbol": "XAUUSD",
+        "magics": [
+          9001
+        ],
+        "profit": [
+          10.0
+        ],
+        "commission": [
+          -1.0
+        ],
+        "swap": [
+          -0.5
+        ]
+      }
+    ],
+    "info": [
+      0,
+      1
+    ],
+    "select": 1,
+    "total": 1,
+    "effects": [],
+    "error_mode": 0
+  },
+  {
+    "id": 42,
+    "tag": "display-gates",
+    "values": {
+      "Show": 255,
+      "Tester": 255,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [
+      {
+        "ticket": 21,
+        "symbol": "XAUUSD",
+        "magics": [
+          9001
+        ],
+        "profit": [
+          10.0
+        ],
+        "commission": [
+          -1.0
+        ],
+        "swap": [
+          -0.5
+        ]
+      }
+    ],
+    "info": [
+      1,
+      0
+    ],
+    "select": 1,
+    "total": 1,
+    "effects": [],
+    "error_mode": 0
+  },
+  {
+    "id": 43,
+    "tag": "display-gates",
+    "values": {
+      "Show": 255,
+      "Tester": 255,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [
+      {
+        "ticket": 21,
+        "symbol": "XAUUSD",
+        "magics": [
+          9001
+        ],
+        "profit": [
+          10.0
+        ],
+        "commission": [
+          -1.0
+        ],
+        "swap": [
+          -0.5
+        ]
+      }
+    ],
+    "info": [
+      1,
+      1
+    ],
+    "select": 1,
+    "total": 1,
+    "effects": [],
+    "error_mode": 0
+  },
+  {
+    "id": 44,
+    "tag": "display-gates",
+    "values": {
+      "Show": 255,
+      "Tester": 255,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [
+      {
+        "ticket": 21,
+        "symbol": "XAUUSD",
+        "magics": [
+          9001
+        ],
+        "profit": [
+          10.0
+        ],
+        "commission": [
+          -1.0
+        ],
+        "swap": [
+          -0.5
+        ]
+      }
+    ],
+    "info": [
+      2,
+      2
+    ],
+    "select": 1,
+    "total": 1,
+    "effects": [],
+    "error_mode": 0
+  },
+  {
+    "id": 45,
+    "tag": "history-selection-count",
+    "values": {
+      "Show": 1,
+      "Tester": 1,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [
+      {
+        "ticket": 21,
+        "symbol": "XAUUSD",
+        "magics": [
+          9001
+        ],
+        "profit": [
+          10.0
+        ],
+        "commission": [
+          -1.0
+        ],
+        "swap": [
+          -0.5
+        ]
+      },
+      {
+        "ticket": 22,
+        "symbol": "XAUUSD",
+        "magics": [
+          9001
+        ],
+        "profit": [
+          -10.0
+        ],
+        "commission": [
+          -1.0
+        ],
+        "swap": [
+          -0.5
+        ]
+      }
+    ],
+    "info": [
+      0,
+      0
+    ],
+    "select": 0,
+    "total": -1,
+    "effects": [],
+    "error_mode": 0
+  },
+  {
+    "id": 46,
+    "tag": "history-selection-count",
+    "values": {
+      "Show": 1,
+      "Tester": 1,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [
+      {
+        "ticket": 21,
+        "symbol": "XAUUSD",
+        "magics": [
+          9001
+        ],
+        "profit": [
+          10.0
+        ],
+        "commission": [
+          -1.0
+        ],
+        "swap": [
+          -0.5
+        ]
+      },
+      {
+        "ticket": 22,
+        "symbol": "XAUUSD",
+        "magics": [
+          9001
+        ],
+        "profit": [
+          -10.0
+        ],
+        "commission": [
+          -1.0
+        ],
+        "swap": [
+          -0.5
+        ]
+      }
+    ],
+    "info": [
+      0,
+      0
+    ],
+    "select": 0,
+    "total": 0,
+    "effects": [],
+    "error_mode": 0
+  },
+  {
+    "id": 47,
+    "tag": "history-selection-count",
+    "values": {
+      "Show": 1,
+      "Tester": 1,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [
+      {
+        "ticket": 21,
+        "symbol": "XAUUSD",
+        "magics": [
+          9001
+        ],
+        "profit": [
+          10.0
+        ],
+        "commission": [
+          -1.0
+        ],
+        "swap": [
+          -0.5
+        ]
+      },
+      {
+        "ticket": 22,
+        "symbol": "XAUUSD",
+        "magics": [
+          9001
+        ],
+        "profit": [
+          -10.0
+        ],
+        "commission": [
+          -1.0
+        ],
+        "swap": [
+          -0.5
+        ]
+      }
+    ],
+    "info": [
+      0,
+      0
+    ],
+    "select": 0,
+    "total": 1,
+    "effects": [],
+    "error_mode": 0
+  },
+  {
+    "id": 48,
+    "tag": "history-selection-count",
+    "values": {
+      "Show": 1,
+      "Tester": 1,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [
+      {
+        "ticket": 21,
+        "symbol": "XAUUSD",
+        "magics": [
+          9001
+        ],
+        "profit": [
+          10.0
+        ],
+        "commission": [
+          -1.0
+        ],
+        "swap": [
+          -0.5
+        ]
+      },
+      {
+        "ticket": 22,
+        "symbol": "XAUUSD",
+        "magics": [
+          9001
+        ],
+        "profit": [
+          -10.0
+        ],
+        "commission": [
+          -1.0
+        ],
+        "swap": [
+          -0.5
+        ]
+      }
+    ],
+    "info": [
+      0,
+      0
+    ],
+    "select": 0,
+    "total": 2,
+    "effects": [],
+    "error_mode": 0
+  },
+  {
+    "id": 49,
+    "tag": "history-selection-count",
+    "values": {
+      "Show": 1,
+      "Tester": 1,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [
+      {
+        "ticket": 21,
+        "symbol": "XAUUSD",
+        "magics": [
+          9001
+        ],
+        "profit": [
+          10.0
+        ],
+        "commission": [
+          -1.0
+        ],
+        "swap": [
+          -0.5
+        ]
+      },
+      {
+        "ticket": 22,
+        "symbol": "XAUUSD",
+        "magics": [
+          9001
+        ],
+        "profit": [
+          -10.0
+        ],
+        "commission": [
+          -1.0
+        ],
+        "swap": [
+          -0.5
+        ]
+      }
+    ],
+    "info": [
+      0,
+      0
+    ],
+    "select": 1,
+    "total": -1,
+    "effects": [],
+    "error_mode": 0
+  },
+  {
+    "id": 50,
+    "tag": "history-selection-count",
+    "values": {
+      "Show": 1,
+      "Tester": 1,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [
+      {
+        "ticket": 21,
+        "symbol": "XAUUSD",
+        "magics": [
+          9001
+        ],
+        "profit": [
+          10.0
+        ],
+        "commission": [
+          -1.0
+        ],
+        "swap": [
+          -0.5
+        ]
+      },
+      {
+        "ticket": 22,
+        "symbol": "XAUUSD",
+        "magics": [
+          9001
+        ],
+        "profit": [
+          -10.0
+        ],
+        "commission": [
+          -1.0
+        ],
+        "swap": [
+          -0.5
+        ]
+      }
+    ],
+    "info": [
+      0,
+      0
+    ],
+    "select": 1,
+    "total": 0,
+    "effects": [],
+    "error_mode": 0
+  },
+  {
+    "id": 51,
+    "tag": "history-selection-count",
+    "values": {
+      "Show": 1,
+      "Tester": 1,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [
+      {
+        "ticket": 21,
+        "symbol": "XAUUSD",
+        "magics": [
+          9001
+        ],
+        "profit": [
+          10.0
+        ],
+        "commission": [
+          -1.0
+        ],
+        "swap": [
+          -0.5
+        ]
+      },
+      {
+        "ticket": 22,
+        "symbol": "XAUUSD",
+        "magics": [
+          9001
+        ],
+        "profit": [
+          -10.0
+        ],
+        "commission": [
+          -1.0
+        ],
+        "swap": [
+          -0.5
+        ]
+      }
+    ],
+    "info": [
+      0,
+      0
+    ],
+    "select": 1,
+    "total": 1,
+    "effects": [],
+    "error_mode": 0
+  },
+  {
+    "id": 52,
+    "tag": "history-selection-count",
+    "values": {
+      "Show": 1,
+      "Tester": 1,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [
+      {
+        "ticket": 21,
+        "symbol": "XAUUSD",
+        "magics": [
+          9001
+        ],
+        "profit": [
+          10.0
+        ],
+        "commission": [
+          -1.0
+        ],
+        "swap": [
+          -0.5
+        ]
+      },
+      {
+        "ticket": 22,
+        "symbol": "XAUUSD",
+        "magics": [
+          9001
+        ],
+        "profit": [
+          -10.0
+        ],
+        "commission": [
+          -1.0
+        ],
+        "swap": [
+          -0.5
+        ]
+      }
+    ],
+    "info": [
+      0,
+      0
+    ],
+    "select": 1,
+    "total": 2,
+    "effects": [],
+    "error_mode": 0
+  },
+  {
+    "id": 53,
+    "tag": "group-magic-and-direction",
+    "values": {
+      "Show": 1,
+      "Tester": 1,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [
+      {
+        "ticket": 21,
+        "symbol": "XAUUSD",
+        "magics": [
+          9001
+        ],
+        "profit": [
+          -10.0
+        ],
+        "commission": [
+          -1.0
+        ],
+        "swap": [
+          -0.5
+        ]
+      }
+    ],
+    "info": [
+      0,
+      0
+    ],
+    "select": 1,
+    "total": 1,
+    "effects": [],
+    "error_mode": 0
+  },
+  {
+    "id": 54,
+    "tag": "group-magic-and-direction",
+    "values": {
+      "Show": 1,
+      "Tester": 1,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [
+      {
+        "ticket": 21,
+        "symbol": "XAUUSD",
+        "magics": [
+          9001
+        ],
+        "profit": [
+          0.0
+        ],
+        "commission": [
+          -1.0
+        ],
+        "swap": [
+          -0.5
+        ]
+      }
+    ],
+    "info": [
+      0,
+      0
+    ],
+    "select": 1,
+    "total": 1,
+    "effects": [],
+    "error_mode": 0
+  },
+  {
+    "id": 55,
+    "tag": "group-magic-and-direction",
+    "values": {
+      "Show": 1,
+      "Tester": 1,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [
+      {
+        "ticket": 21,
+        "symbol": "XAUUSD",
+        "magics": [
+          9001
+        ],
+        "profit": [
+          10.0
+        ],
+        "commission": [
+          -1.0
+        ],
+        "swap": [
+          -0.5
+        ]
+      }
+    ],
+    "info": [
+      0,
+      0
+    ],
+    "select": 1,
+    "total": 1,
+    "effects": [],
+    "error_mode": 0
+  },
+  {
+    "id": 56,
+    "tag": "group-magic-and-direction",
+    "values": {
+      "Show": 1,
+      "Tester": 1,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [
+      {
+        "ticket": 21,
+        "symbol": "XAUUSD",
+        "magics": [
+          9002
+        ],
+        "profit": [
+          -10.0
+        ],
+        "commission": [
+          -1.0
+        ],
+        "swap": [
+          -0.5
+        ]
+      }
+    ],
+    "info": [
+      0,
+      0
+    ],
+    "select": 1,
+    "total": 1,
+    "effects": [],
+    "error_mode": 0
+  },
+  {
+    "id": 57,
+    "tag": "group-magic-and-direction",
+    "values": {
+      "Show": 1,
+      "Tester": 1,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [
+      {
+        "ticket": 21,
+        "symbol": "XAUUSD",
+        "magics": [
+          9002
+        ],
+        "profit": [
+          0.0
+        ],
+        "commission": [
+          -1.0
+        ],
+        "swap": [
+          -0.5
+        ]
+      }
+    ],
+    "info": [
+      0,
+      0
+    ],
+    "select": 1,
+    "total": 1,
+    "effects": [],
+    "error_mode": 0
+  },
+  {
+    "id": 58,
+    "tag": "group-magic-and-direction",
+    "values": {
+      "Show": 1,
+      "Tester": 1,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [
+      {
+        "ticket": 21,
+        "symbol": "XAUUSD",
+        "magics": [
+          9002
+        ],
+        "profit": [
+          10.0
+        ],
+        "commission": [
+          -1.0
+        ],
+        "swap": [
+          -0.5
+        ]
+      }
+    ],
+    "info": [
+      0,
+      0
+    ],
+    "select": 1,
+    "total": 1,
+    "effects": [],
+    "error_mode": 0
+  },
+  {
+    "id": 59,
+    "tag": "group-magic-and-direction",
+    "values": {
+      "Show": 1,
+      "Tester": 1,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [
+      {
+        "ticket": 21,
+        "symbol": "XAUUSD",
+        "magics": [
+          9003
+        ],
+        "profit": [
+          -10.0
+        ],
+        "commission": [
+          -1.0
+        ],
+        "swap": [
+          -0.5
+        ]
+      }
+    ],
+    "info": [
+      0,
+      0
+    ],
+    "select": 1,
+    "total": 1,
+    "effects": [],
+    "error_mode": 0
+  },
+  {
+    "id": 60,
+    "tag": "group-magic-and-direction",
+    "values": {
+      "Show": 1,
+      "Tester": 1,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [
+      {
+        "ticket": 21,
+        "symbol": "XAUUSD",
+        "magics": [
+          9003
+        ],
+        "profit": [
+          0.0
+        ],
+        "commission": [
+          -1.0
+        ],
+        "swap": [
+          -0.5
+        ]
+      }
+    ],
+    "info": [
+      0,
+      0
+    ],
+    "select": 1,
+    "total": 1,
+    "effects": [],
+    "error_mode": 0
+  },
+  {
+    "id": 61,
+    "tag": "group-magic-and-direction",
+    "values": {
+      "Show": 1,
+      "Tester": 1,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [
+      {
+        "ticket": 21,
+        "symbol": "XAUUSD",
+        "magics": [
+          9003
+        ],
+        "profit": [
+          10.0
+        ],
+        "commission": [
+          -1.0
+        ],
+        "swap": [
+          -0.5
+        ]
+      }
+    ],
+    "info": [
+      0,
+      0
+    ],
+    "select": 1,
+    "total": 1,
+    "effects": [],
+    "error_mode": 0
+  },
+  {
+    "id": 62,
+    "tag": "group-magic-and-direction",
+    "values": {
+      "Show": 1,
+      "Tester": 1,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [
+      {
+        "ticket": 21,
+        "symbol": "XAUUSD",
+        "magics": [
+          9004
+        ],
+        "profit": [
+          -10.0
+        ],
+        "commission": [
+          -1.0
+        ],
+        "swap": [
+          -0.5
+        ]
+      }
+    ],
+    "info": [
+      0,
+      0
+    ],
+    "select": 1,
+    "total": 1,
+    "effects": [],
+    "error_mode": 0
+  },
+  {
+    "id": 63,
+    "tag": "group-magic-and-direction",
+    "values": {
+      "Show": 1,
+      "Tester": 1,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [
+      {
+        "ticket": 21,
+        "symbol": "XAUUSD",
+        "magics": [
+          9004
+        ],
+        "profit": [
+          0.0
+        ],
+        "commission": [
+          -1.0
+        ],
+        "swap": [
+          -0.5
+        ]
+      }
+    ],
+    "info": [
+      0,
+      0
+    ],
+    "select": 1,
+    "total": 1,
+    "effects": [],
+    "error_mode": 0
+  },
+  {
+    "id": 64,
+    "tag": "group-magic-and-direction",
+    "values": {
+      "Show": 1,
+      "Tester": 1,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [
+      {
+        "ticket": 21,
+        "symbol": "XAUUSD",
+        "magics": [
+          9004
+        ],
+        "profit": [
+          10.0
+        ],
+        "commission": [
+          -1.0
+        ],
+        "swap": [
+          -0.5
+        ]
+      }
+    ],
+    "info": [
+      0,
+      0
+    ],
+    "select": 1,
+    "total": 1,
+    "effects": [],
+    "error_mode": 0
+  },
+  {
+    "id": 65,
+    "tag": "group-magic-and-direction",
+    "values": {
+      "Show": 1,
+      "Tester": 1,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [
+      {
+        "ticket": 21,
+        "symbol": "XAUUSD",
+        "magics": [
+          9005
+        ],
+        "profit": [
+          -10.0
+        ],
+        "commission": [
+          -1.0
+        ],
+        "swap": [
+          -0.5
+        ]
+      }
+    ],
+    "info": [
+      0,
+      0
+    ],
+    "select": 1,
+    "total": 1,
+    "effects": [],
+    "error_mode": 0
+  },
+  {
+    "id": 66,
+    "tag": "group-magic-and-direction",
+    "values": {
+      "Show": 1,
+      "Tester": 1,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [
+      {
+        "ticket": 21,
+        "symbol": "XAUUSD",
+        "magics": [
+          9005
+        ],
+        "profit": [
+          0.0
+        ],
+        "commission": [
+          -1.0
+        ],
+        "swap": [
+          -0.5
+        ]
+      }
+    ],
+    "info": [
+      0,
+      0
+    ],
+    "select": 1,
+    "total": 1,
+    "effects": [],
+    "error_mode": 0
+  },
+  {
+    "id": 67,
+    "tag": "group-magic-and-direction",
+    "values": {
+      "Show": 1,
+      "Tester": 1,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [
+      {
+        "ticket": 21,
+        "symbol": "XAUUSD",
+        "magics": [
+          9005
+        ],
+        "profit": [
+          10.0
+        ],
+        "commission": [
+          -1.0
+        ],
+        "swap": [
+          -0.5
+        ]
+      }
+    ],
+    "info": [
+      0,
+      0
+    ],
+    "select": 1,
+    "total": 1,
+    "effects": [],
+    "error_mode": 0
+  },
+  {
+    "id": 68,
+    "tag": "group-magic-and-direction",
+    "values": {
+      "Show": 1,
+      "Tester": 1,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [
+      {
+        "ticket": 21,
+        "symbol": "XAUUSD",
+        "magics": [
+          9006
+        ],
+        "profit": [
+          -10.0
+        ],
+        "commission": [
+          -1.0
+        ],
+        "swap": [
+          -0.5
+        ]
+      }
+    ],
+    "info": [
+      0,
+      0
+    ],
+    "select": 1,
+    "total": 1,
+    "effects": [],
+    "error_mode": 0
+  },
+  {
+    "id": 69,
+    "tag": "group-magic-and-direction",
+    "values": {
+      "Show": 1,
+      "Tester": 1,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [
+      {
+        "ticket": 21,
+        "symbol": "XAUUSD",
+        "magics": [
+          9006
+        ],
+        "profit": [
+          0.0
+        ],
+        "commission": [
+          -1.0
+        ],
+        "swap": [
+          -0.5
+        ]
+      }
+    ],
+    "info": [
+      0,
+      0
+    ],
+    "select": 1,
+    "total": 1,
+    "effects": [],
+    "error_mode": 0
+  },
+  {
+    "id": 70,
+    "tag": "group-magic-and-direction",
+    "values": {
+      "Show": 1,
+      "Tester": 1,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [
+      {
+        "ticket": 21,
+        "symbol": "XAUUSD",
+        "magics": [
+          9006
+        ],
+        "profit": [
+          10.0
+        ],
+        "commission": [
+          -1.0
+        ],
+        "swap": [
+          -0.5
+        ]
+      }
+    ],
+    "info": [
+      0,
+      0
+    ],
+    "select": 1,
+    "total": 1,
+    "effects": [],
+    "error_mode": 0
+  },
+  {
+    "id": 71,
+    "tag": "group-magic-and-direction",
+    "values": {
+      "Show": 1,
+      "Tester": 1,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [
+      {
+        "ticket": 21,
+        "symbol": "XAUUSD",
+        "magics": [
+          9007
+        ],
+        "profit": [
+          -10.0
+        ],
+        "commission": [
+          -1.0
+        ],
+        "swap": [
+          -0.5
+        ]
+      }
+    ],
+    "info": [
+      0,
+      0
+    ],
+    "select": 1,
+    "total": 1,
+    "effects": [],
+    "error_mode": 0
+  },
+  {
+    "id": 72,
+    "tag": "group-magic-and-direction",
+    "values": {
+      "Show": 1,
+      "Tester": 1,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [
+      {
+        "ticket": 21,
+        "symbol": "XAUUSD",
+        "magics": [
+          9007
+        ],
+        "profit": [
+          0.0
+        ],
+        "commission": [
+          -1.0
+        ],
+        "swap": [
+          -0.5
+        ]
+      }
+    ],
+    "info": [
+      0,
+      0
+    ],
+    "select": 1,
+    "total": 1,
+    "effects": [],
+    "error_mode": 0
+  },
+  {
+    "id": 73,
+    "tag": "group-magic-and-direction",
+    "values": {
+      "Show": 1,
+      "Tester": 1,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [
+      {
+        "ticket": 21,
+        "symbol": "XAUUSD",
+        "magics": [
+          9007
+        ],
+        "profit": [
+          10.0
+        ],
+        "commission": [
+          -1.0
+        ],
+        "swap": [
+          -0.5
+        ]
+      }
+    ],
+    "info": [
+      0,
+      0
+    ],
+    "select": 1,
+    "total": 1,
+    "effects": [],
+    "error_mode": 0
+  },
+  {
+    "id": 74,
+    "tag": "group-magic-and-direction",
+    "values": {
+      "Show": 1,
+      "Tester": 1,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [
+      {
+        "ticket": 21,
+        "symbol": "XAUUSD",
+        "magics": [
+          9008
+        ],
+        "profit": [
+          -10.0
+        ],
+        "commission": [
+          -1.0
+        ],
+        "swap": [
+          -0.5
+        ]
+      }
+    ],
+    "info": [
+      0,
+      0
+    ],
+    "select": 1,
+    "total": 1,
+    "effects": [],
+    "error_mode": 0
+  },
+  {
+    "id": 75,
+    "tag": "group-magic-and-direction",
+    "values": {
+      "Show": 1,
+      "Tester": 1,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [
+      {
+        "ticket": 21,
+        "symbol": "XAUUSD",
+        "magics": [
+          9008
+        ],
+        "profit": [
+          0.0
+        ],
+        "commission": [
+          -1.0
+        ],
+        "swap": [
+          -0.5
+        ]
+      }
+    ],
+    "info": [
+      0,
+      0
+    ],
+    "select": 1,
+    "total": 1,
+    "effects": [],
+    "error_mode": 0
+  },
+  {
+    "id": 76,
+    "tag": "group-magic-and-direction",
+    "values": {
+      "Show": 1,
+      "Tester": 1,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [
+      {
+        "ticket": 21,
+        "symbol": "XAUUSD",
+        "magics": [
+          9008
+        ],
+        "profit": [
+          10.0
+        ],
+        "commission": [
+          -1.0
+        ],
+        "swap": [
+          -0.5
+        ]
+      }
+    ],
+    "info": [
+      0,
+      0
+    ],
+    "select": 1,
+    "total": 1,
+    "effects": [],
+    "error_mode": 0
+  },
+  {
+    "id": 77,
+    "tag": "ticket-zero-and-symbol",
+    "values": {
+      "Show": 1,
+      "Tester": 1,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [
+      {
+        "ticket": 0,
+        "symbol": "XAUUSD",
+        "magics": [
+          9001
+        ],
+        "profit": [
+          10.0
+        ],
+        "commission": [
+          -1.0
+        ],
+        "swap": [
+          -0.5
+        ]
+      }
+    ],
+    "info": [
+      0,
+      0
+    ],
+    "select": 1,
+    "total": 1,
+    "effects": [],
+    "error_mode": 1
+  },
+  {
+    "id": 78,
+    "tag": "ticket-zero-and-symbol",
+    "values": {
+      "Show": 1,
+      "Tester": 1,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [
+      {
+        "ticket": 0,
+        "symbol": "OTHER",
+        "magics": [
+          9001
+        ],
+        "profit": [
+          10.0
+        ],
+        "commission": [
+          -1.0
+        ],
+        "swap": [
+          -0.5
+        ]
+      }
+    ],
+    "info": [
+      0,
+      0
+    ],
+    "select": 1,
+    "total": 1,
+    "effects": [],
+    "error_mode": 1
+  },
+  {
+    "id": 79,
+    "tag": "ticket-zero-and-symbol",
+    "values": {
+      "Show": 1,
+      "Tester": 1,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [
+      {
+        "ticket": 0,
+        "symbol": "",
+        "magics": [
+          9001
+        ],
+        "profit": [
+          10.0
+        ],
+        "commission": [
+          -1.0
+        ],
+        "swap": [
+          -0.5
+        ]
+      }
+    ],
+    "info": [
+      0,
+      0
+    ],
+    "select": 1,
+    "total": 1,
+    "effects": [],
+    "error_mode": 1
+  },
+  {
+    "id": 80,
+    "tag": "ticket-zero-and-symbol",
+    "values": {
+      "Show": 1,
+      "Tester": 1,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [
+      {
+        "ticket": 0,
+        "symbol": "Vàng",
+        "magics": [
+          9001
+        ],
+        "profit": [
+          10.0
+        ],
+        "commission": [
+          -1.0
+        ],
+        "swap": [
+          -0.5
+        ]
+      }
+    ],
+    "info": [
+      0,
+      0
+    ],
+    "select": 1,
+    "total": 1,
+    "effects": [],
+    "error_mode": 1
+  },
+  {
+    "id": 81,
+    "tag": "ticket-zero-and-symbol",
+    "values": {
+      "Show": 1,
+      "Tester": 1,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [
+      {
+        "ticket": 1,
+        "symbol": "XAUUSD",
+        "magics": [
+          9001
+        ],
+        "profit": [
+          10.0
+        ],
+        "commission": [
+          -1.0
+        ],
+        "swap": [
+          -0.5
+        ]
+      }
+    ],
+    "info": [
+      0,
+      0
+    ],
+    "select": 1,
+    "total": 1,
+    "effects": [],
+    "error_mode": 1
+  },
+  {
+    "id": 82,
+    "tag": "ticket-zero-and-symbol",
+    "values": {
+      "Show": 1,
+      "Tester": 1,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [
+      {
+        "ticket": 1,
+        "symbol": "OTHER",
+        "magics": [
+          9001
+        ],
+        "profit": [
+          10.0
+        ],
+        "commission": [
+          -1.0
+        ],
+        "swap": [
+          -0.5
+        ]
+      }
+    ],
+    "info": [
+      0,
+      0
+    ],
+    "select": 1,
+    "total": 1,
+    "effects": [],
+    "error_mode": 1
+  },
+  {
+    "id": 83,
+    "tag": "ticket-zero-and-symbol",
+    "values": {
+      "Show": 1,
+      "Tester": 1,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [
+      {
+        "ticket": 1,
+        "symbol": "",
+        "magics": [
+          9001
+        ],
+        "profit": [
+          10.0
+        ],
+        "commission": [
+          -1.0
+        ],
+        "swap": [
+          -0.5
+        ]
+      }
+    ],
+    "info": [
+      0,
+      0
+    ],
+    "select": 1,
+    "total": 1,
+    "effects": [],
+    "error_mode": 1
+  },
+  {
+    "id": 84,
+    "tag": "ticket-zero-and-symbol",
+    "values": {
+      "Show": 1,
+      "Tester": 1,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [
+      {
+        "ticket": 1,
+        "symbol": "Vàng",
+        "magics": [
+          9001
+        ],
+        "profit": [
+          10.0
+        ],
+        "commission": [
+          -1.0
+        ],
+        "swap": [
+          -0.5
+        ]
+      }
+    ],
+    "info": [
+      0,
+      0
+    ],
+    "select": 1,
+    "total": 1,
+    "effects": [],
+    "error_mode": 1
+  },
+  {
+    "id": 85,
+    "tag": "ticket-zero-and-symbol",
+    "values": {
+      "Show": 1,
+      "Tester": 1,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [
+      {
+        "ticket": 4294967298,
+        "symbol": "XAUUSD",
+        "magics": [
+          9001
+        ],
+        "profit": [
+          10.0
+        ],
+        "commission": [
+          -1.0
+        ],
+        "swap": [
+          -0.5
+        ]
+      }
+    ],
+    "info": [
+      0,
+      0
+    ],
+    "select": 1,
+    "total": 1,
+    "effects": [],
+    "error_mode": 1
+  },
+  {
+    "id": 86,
+    "tag": "ticket-zero-and-symbol",
+    "values": {
+      "Show": 1,
+      "Tester": 1,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [
+      {
+        "ticket": 4294967298,
+        "symbol": "OTHER",
+        "magics": [
+          9001
+        ],
+        "profit": [
+          10.0
+        ],
+        "commission": [
+          -1.0
+        ],
+        "swap": [
+          -0.5
+        ]
+      }
+    ],
+    "info": [
+      0,
+      0
+    ],
+    "select": 1,
+    "total": 1,
+    "effects": [],
+    "error_mode": 1
+  },
+  {
+    "id": 87,
+    "tag": "ticket-zero-and-symbol",
+    "values": {
+      "Show": 1,
+      "Tester": 1,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [
+      {
+        "ticket": 4294967298,
+        "symbol": "",
+        "magics": [
+          9001
+        ],
+        "profit": [
+          10.0
+        ],
+        "commission": [
+          -1.0
+        ],
+        "swap": [
+          -0.5
+        ]
+      }
+    ],
+    "info": [
+      0,
+      0
+    ],
+    "select": 1,
+    "total": 1,
+    "effects": [],
+    "error_mode": 1
+  },
+  {
+    "id": 88,
+    "tag": "ticket-zero-and-symbol",
+    "values": {
+      "Show": 1,
+      "Tester": 1,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [
+      {
+        "ticket": 4294967298,
+        "symbol": "Vàng",
+        "magics": [
+          9001
+        ],
+        "profit": [
+          10.0
+        ],
+        "commission": [
+          -1.0
+        ],
+        "swap": [
+          -0.5
+        ]
+      }
+    ],
+    "info": [
+      0,
+      0
+    ],
+    "select": 1,
+    "total": 1,
+    "effects": [],
+    "error_mode": 1
+  },
+  {
+    "id": 89,
+    "tag": "signed-magic-wrap",
+    "values": {
+      "Show": 1,
+      "Tester": 1,
+      "Seed": -2147483648,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [
+      {
+        "ticket": 21,
+        "symbol": "XAUUSD",
+        "magics": [
+          -2147483647
+        ],
+        "profit": [
+          10.0
+        ],
+        "commission": [
+          -1.0
+        ],
+        "swap": [
+          -0.5
+        ]
+      }
+    ],
+    "info": [
+      0,
+      0
+    ],
+    "select": 1,
+    "total": 1,
+    "effects": [],
+    "error_mode": 0
+  },
+  {
+    "id": 90,
+    "tag": "signed-magic-wrap",
+    "values": {
+      "Show": 1,
+      "Tester": 1,
+      "Seed": -2147483648,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [
+      {
+        "ticket": 21,
+        "symbol": "XAUUSD",
+        "magics": [
+          -2147483640
+        ],
+        "profit": [
+          10.0
+        ],
+        "commission": [
+          -1.0
+        ],
+        "swap": [
+          -0.5
+        ]
+      }
+    ],
+    "info": [
+      0,
+      0
+    ],
+    "select": 1,
+    "total": 1,
+    "effects": [],
+    "error_mode": 0
+  },
+  {
+    "id": 91,
+    "tag": "signed-magic-wrap",
+    "values": {
+      "Show": 1,
+      "Tester": 1,
+      "Seed": -2147483648,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [
+      {
+        "ticket": 21,
+        "symbol": "XAUUSD",
+        "magics": [
+          -2147483633
+        ],
+        "profit": [
+          10.0
+        ],
+        "commission": [
+          -1.0
+        ],
+        "swap": [
+          -0.5
+        ]
+      }
+    ],
+    "info": [
+      0,
+      0
+    ],
+    "select": 1,
+    "total": 1,
+    "effects": [],
+    "error_mode": 0
+  },
+  {
+    "id": 92,
+    "tag": "signed-magic-wrap",
+    "values": {
+      "Show": 1,
+      "Tester": 1,
+      "Seed": 2147483647,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [
+      {
+        "ticket": 21,
+        "symbol": "XAUUSD",
+        "magics": [
+          -2147483648
+        ],
+        "profit": [
+          10.0
+        ],
+        "commission": [
+          -1.0
+        ],
+        "swap": [
+          -0.5
+        ]
+      }
+    ],
+    "info": [
+      0,
+      0
+    ],
+    "select": 1,
+    "total": 1,
+    "effects": [],
+    "error_mode": 0
+  },
+  {
+    "id": 93,
+    "tag": "signed-magic-wrap",
+    "values": {
+      "Show": 1,
+      "Tester": 1,
+      "Seed": 2147483647,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [
+      {
+        "ticket": 21,
+        "symbol": "XAUUSD",
+        "magics": [
+          -2147483641
+        ],
+        "profit": [
+          10.0
+        ],
+        "commission": [
+          -1.0
+        ],
+        "swap": [
+          -0.5
+        ]
+      }
+    ],
+    "info": [
+      0,
+      0
+    ],
+    "select": 1,
+    "total": 1,
+    "effects": [],
+    "error_mode": 0
+  },
+  {
+    "id": 94,
+    "tag": "signed-magic-wrap",
+    "values": {
+      "Show": 1,
+      "Tester": 1,
+      "Seed": 2147483647,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [
+      {
+        "ticket": 21,
+        "symbol": "XAUUSD",
+        "magics": [
+          -2147483634
+        ],
+        "profit": [
+          10.0
+        ],
+        "commission": [
+          -1.0
+        ],
+        "swap": [
+          -0.5
+        ]
+      }
+    ],
+    "info": [
+      0,
+      0
+    ],
+    "select": 1,
+    "total": 1,
+    "effects": [],
+    "error_mode": 0
+  },
+  {
+    "id": 95,
+    "tag": "signed-magic-wrap",
+    "values": {
+      "Show": 1,
+      "Tester": 1,
+      "Seed": -1,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [
+      {
+        "ticket": 21,
+        "symbol": "XAUUSD",
+        "magics": [
+          0
+        ],
+        "profit": [
+          10.0
+        ],
+        "commission": [
+          -1.0
+        ],
+        "swap": [
+          -0.5
+        ]
+      }
+    ],
+    "info": [
+      0,
+      0
+    ],
+    "select": 1,
+    "total": 1,
+    "effects": [],
+    "error_mode": 0
+  },
+  {
+    "id": 96,
+    "tag": "signed-magic-wrap",
+    "values": {
+      "Show": 1,
+      "Tester": 1,
+      "Seed": -1,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [
+      {
+        "ticket": 21,
+        "symbol": "XAUUSD",
+        "magics": [
+          7
+        ],
+        "profit": [
+          10.0
+        ],
+        "commission": [
+          -1.0
+        ],
+        "swap": [
+          -0.5
+        ]
+      }
+    ],
+    "info": [
+      0,
+      0
+    ],
+    "select": 1,
+    "total": 1,
+    "effects": [],
+    "error_mode": 0
+  },
+  {
+    "id": 97,
+    "tag": "signed-magic-wrap",
+    "values": {
+      "Show": 1,
+      "Tester": 1,
+      "Seed": -1,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [
+      {
+        "ticket": 21,
+        "symbol": "XAUUSD",
+        "magics": [
+          14
+        ],
+        "profit": [
+          10.0
+        ],
+        "commission": [
+          -1.0
+        ],
+        "swap": [
+          -0.5
+        ]
+      }
+    ],
+    "info": [
+      0,
+      0
+    ],
+    "select": 1,
+    "total": 1,
+    "effects": [],
+    "error_mode": 0
+  },
+  {
+    "id": 98,
+    "tag": "numeric-profit",
+    "values": {
+      "Show": 1,
+      "Tester": 1,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [
+      {
+        "ticket": 21,
+        "symbol": "XAUUSD",
+        "magics": [
+          9001
+        ],
+        "profit": [
+          0.0
+        ],
+        "commission": [
+          0.0
+        ],
+        "swap": [
+          0.0
+        ]
+      }
+    ],
+    "info": [
+      0,
+      0
+    ],
+    "select": 1,
+    "total": 1,
+    "effects": [],
+    "error_mode": 0
+  },
+  {
+    "id": 99,
+    "tag": "numeric-profit",
+    "values": {
+      "Show": 1,
+      "Tester": 1,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [
+      {
+        "ticket": 21,
+        "symbol": "XAUUSD",
+        "magics": [
+          9001
+        ],
+        "profit": [
+          0.0
+        ],
+        "commission": [
+          -1.0
+        ],
+        "swap": [
+          -0.5
+        ]
+      }
+    ],
+    "info": [
+      0,
+      0
+    ],
+    "select": 1,
+    "total": 1,
+    "effects": [],
+    "error_mode": 0
+  },
+  {
+    "id": 100,
+    "tag": "numeric-profit",
+    "values": {
+      "Show": 1,
+      "Tester": 1,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [
+      {
+        "ticket": 21,
+        "symbol": "XAUUSD",
+        "magics": [
+          9001
+        ],
+        "profit": [
+          0.0
+        ],
+        "commission": [
+          Infinity
+        ],
+        "swap": [
+          -Infinity
+        ]
+      }
+    ],
+    "info": [
+      0,
+      0
+    ],
+    "select": 1,
+    "total": 1,
+    "effects": [],
+    "error_mode": 0
+  },
+  {
+    "id": 101,
+    "tag": "numeric-profit",
+    "values": {
+      "Show": 1,
+      "Tester": 1,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [
+      {
+        "ticket": 21,
+        "symbol": "XAUUSD",
+        "magics": [
+          9001
+        ],
+        "profit": [
+          -0.0
+        ],
+        "commission": [
+          0.0
+        ],
+        "swap": [
+          0.0
+        ]
+      }
+    ],
+    "info": [
+      0,
+      0
+    ],
+    "select": 1,
+    "total": 1,
+    "effects": [],
+    "error_mode": 0
+  },
+  {
+    "id": 102,
+    "tag": "numeric-profit",
+    "values": {
+      "Show": 1,
+      "Tester": 1,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [
+      {
+        "ticket": 21,
+        "symbol": "XAUUSD",
+        "magics": [
+          9001
+        ],
+        "profit": [
+          -0.0
+        ],
+        "commission": [
+          -1.0
+        ],
+        "swap": [
+          -0.5
+        ]
+      }
+    ],
+    "info": [
+      0,
+      0
+    ],
+    "select": 1,
+    "total": 1,
+    "effects": [],
+    "error_mode": 0
+  },
+  {
+    "id": 103,
+    "tag": "numeric-profit",
+    "values": {
+      "Show": 1,
+      "Tester": 1,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [
+      {
+        "ticket": 21,
+        "symbol": "XAUUSD",
+        "magics": [
+          9001
+        ],
+        "profit": [
+          -0.0
+        ],
+        "commission": [
+          Infinity
+        ],
+        "swap": [
+          -Infinity
+        ]
+      }
+    ],
+    "info": [
+      0,
+      0
+    ],
+    "select": 1,
+    "total": 1,
+    "effects": [],
+    "error_mode": 0
+  },
+  {
+    "id": 104,
+    "tag": "numeric-profit",
+    "values": {
+      "Show": 1,
+      "Tester": 1,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [
+      {
+        "ticket": 21,
+        "symbol": "XAUUSD",
+        "magics": [
+          9001
+        ],
+        "profit": [
+          1.005
+        ],
+        "commission": [
+          0.0
+        ],
+        "swap": [
+          0.0
+        ]
+      }
+    ],
+    "info": [
+      0,
+      0
+    ],
+    "select": 1,
+    "total": 1,
+    "effects": [],
+    "error_mode": 0
+  },
+  {
+    "id": 105,
+    "tag": "numeric-profit",
+    "values": {
+      "Show": 1,
+      "Tester": 1,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [
+      {
+        "ticket": 21,
+        "symbol": "XAUUSD",
+        "magics": [
+          9001
+        ],
+        "profit": [
+          1.005
+        ],
+        "commission": [
+          -1.0
+        ],
+        "swap": [
+          -0.5
+        ]
+      }
+    ],
+    "info": [
+      0,
+      0
+    ],
+    "select": 1,
+    "total": 1,
+    "effects": [],
+    "error_mode": 0
+  },
+  {
+    "id": 106,
+    "tag": "numeric-profit",
+    "values": {
+      "Show": 1,
+      "Tester": 1,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [
+      {
+        "ticket": 21,
+        "symbol": "XAUUSD",
+        "magics": [
+          9001
+        ],
+        "profit": [
+          1.005
+        ],
+        "commission": [
+          Infinity
+        ],
+        "swap": [
+          -Infinity
+        ]
+      }
+    ],
+    "info": [
+      0,
+      0
+    ],
+    "select": 1,
+    "total": 1,
+    "effects": [],
+    "error_mode": 0
+  },
+  {
+    "id": 107,
+    "tag": "numeric-profit",
+    "values": {
+      "Show": 1,
+      "Tester": 1,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [
+      {
+        "ticket": 21,
+        "symbol": "XAUUSD",
+        "magics": [
+          9001
+        ],
+        "profit": [
+          -1.005
+        ],
+        "commission": [
+          0.0
+        ],
+        "swap": [
+          0.0
+        ]
+      }
+    ],
+    "info": [
+      0,
+      0
+    ],
+    "select": 1,
+    "total": 1,
+    "effects": [],
+    "error_mode": 0
+  },
+  {
+    "id": 108,
+    "tag": "numeric-profit",
+    "values": {
+      "Show": 1,
+      "Tester": 1,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [
+      {
+        "ticket": 21,
+        "symbol": "XAUUSD",
+        "magics": [
+          9001
+        ],
+        "profit": [
+          -1.005
+        ],
+        "commission": [
+          -1.0
+        ],
+        "swap": [
+          -0.5
+        ]
+      }
+    ],
+    "info": [
+      0,
+      0
+    ],
+    "select": 1,
+    "total": 1,
+    "effects": [],
+    "error_mode": 0
+  },
+  {
+    "id": 109,
+    "tag": "numeric-profit",
+    "values": {
+      "Show": 1,
+      "Tester": 1,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [
+      {
+        "ticket": 21,
+        "symbol": "XAUUSD",
+        "magics": [
+          9001
+        ],
+        "profit": [
+          -1.005
+        ],
+        "commission": [
+          Infinity
+        ],
+        "swap": [
+          -Infinity
+        ]
+      }
+    ],
+    "info": [
+      0,
+      0
+    ],
+    "select": 1,
+    "total": 1,
+    "effects": [],
+    "error_mode": 0
+  },
+  {
+    "id": 110,
+    "tag": "numeric-profit",
+    "values": {
+      "Show": 1,
+      "Tester": 1,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [
+      {
+        "ticket": 21,
+        "symbol": "XAUUSD",
+        "magics": [
+          9001
+        ],
+        "profit": [
+          1e+19
+        ],
+        "commission": [
+          0.0
+        ],
+        "swap": [
+          0.0
+        ]
+      }
+    ],
+    "info": [
+      0,
+      0
+    ],
+    "select": 1,
+    "total": 1,
+    "effects": [],
+    "error_mode": 0
+  },
+  {
+    "id": 111,
+    "tag": "numeric-profit",
+    "values": {
+      "Show": 1,
+      "Tester": 1,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [
+      {
+        "ticket": 21,
+        "symbol": "XAUUSD",
+        "magics": [
+          9001
+        ],
+        "profit": [
+          1e+19
+        ],
+        "commission": [
+          -1.0
+        ],
+        "swap": [
+          -0.5
+        ]
+      }
+    ],
+    "info": [
+      0,
+      0
+    ],
+    "select": 1,
+    "total": 1,
+    "effects": [],
+    "error_mode": 0
+  },
+  {
+    "id": 112,
+    "tag": "numeric-profit",
+    "values": {
+      "Show": 1,
+      "Tester": 1,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [
+      {
+        "ticket": 21,
+        "symbol": "XAUUSD",
+        "magics": [
+          9001
+        ],
+        "profit": [
+          1e+19
+        ],
+        "commission": [
+          Infinity
+        ],
+        "swap": [
+          -Infinity
+        ]
+      }
+    ],
+    "info": [
+      0,
+      0
+    ],
+    "select": 1,
+    "total": 1,
+    "effects": [],
+    "error_mode": 0
+  },
+  {
+    "id": 113,
+    "tag": "numeric-profit",
+    "values": {
+      "Show": 1,
+      "Tester": 1,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [
+      {
+        "ticket": 21,
+        "symbol": "XAUUSD",
+        "magics": [
+          9001
+        ],
+        "profit": [
+          -1e+19
+        ],
+        "commission": [
+          0.0
+        ],
+        "swap": [
+          0.0
+        ]
+      }
+    ],
+    "info": [
+      0,
+      0
+    ],
+    "select": 1,
+    "total": 1,
+    "effects": [],
+    "error_mode": 0
+  },
+  {
+    "id": 114,
+    "tag": "numeric-profit",
+    "values": {
+      "Show": 1,
+      "Tester": 1,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [
+      {
+        "ticket": 21,
+        "symbol": "XAUUSD",
+        "magics": [
+          9001
+        ],
+        "profit": [
+          -1e+19
+        ],
+        "commission": [
+          -1.0
+        ],
+        "swap": [
+          -0.5
+        ]
+      }
+    ],
+    "info": [
+      0,
+      0
+    ],
+    "select": 1,
+    "total": 1,
+    "effects": [],
+    "error_mode": 0
+  },
+  {
+    "id": 115,
+    "tag": "numeric-profit",
+    "values": {
+      "Show": 1,
+      "Tester": 1,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [
+      {
+        "ticket": 21,
+        "symbol": "XAUUSD",
+        "magics": [
+          9001
+        ],
+        "profit": [
+          -1e+19
+        ],
+        "commission": [
+          Infinity
+        ],
+        "swap": [
+          -Infinity
+        ]
+      }
+    ],
+    "info": [
+      0,
+      0
+    ],
+    "select": 1,
+    "total": 1,
+    "effects": [],
+    "error_mode": 0
+  },
+  {
+    "id": 116,
+    "tag": "numeric-profit",
+    "values": {
+      "Show": 1,
+      "Tester": 1,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [
+      {
+        "ticket": 21,
+        "symbol": "XAUUSD",
+        "magics": [
+          9001
+        ],
+        "profit": [
+          NaN
+        ],
+        "commission": [
+          0.0
+        ],
+        "swap": [
+          0.0
+        ]
+      }
+    ],
+    "info": [
+      0,
+      0
+    ],
+    "select": 1,
+    "total": 1,
+    "effects": [],
+    "error_mode": 0
+  },
+  {
+    "id": 117,
+    "tag": "numeric-profit",
+    "values": {
+      "Show": 1,
+      "Tester": 1,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [
+      {
+        "ticket": 21,
+        "symbol": "XAUUSD",
+        "magics": [
+          9001
+        ],
+        "profit": [
+          NaN
+        ],
+        "commission": [
+          -1.0
+        ],
+        "swap": [
+          -0.5
+        ]
+      }
+    ],
+    "info": [
+      0,
+      0
+    ],
+    "select": 1,
+    "total": 1,
+    "effects": [],
+    "error_mode": 0
+  },
+  {
+    "id": 118,
+    "tag": "numeric-profit",
+    "values": {
+      "Show": 1,
+      "Tester": 1,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [
+      {
+        "ticket": 21,
+        "symbol": "XAUUSD",
+        "magics": [
+          9001
+        ],
+        "profit": [
+          NaN
+        ],
+        "commission": [
+          Infinity
+        ],
+        "swap": [
+          -Infinity
+        ]
+      }
+    ],
+    "info": [
+      0,
+      0
+    ],
+    "select": 1,
+    "total": 1,
+    "effects": [],
+    "error_mode": 0
+  },
+  {
+    "id": 119,
+    "tag": "numeric-profit",
+    "values": {
+      "Show": 1,
+      "Tester": 1,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [
+      {
+        "ticket": 21,
+        "symbol": "XAUUSD",
+        "magics": [
+          9001
+        ],
+        "profit": [
+          Infinity
+        ],
+        "commission": [
+          0.0
+        ],
+        "swap": [
+          0.0
+        ]
+      }
+    ],
+    "info": [
+      0,
+      0
+    ],
+    "select": 1,
+    "total": 1,
+    "effects": [],
+    "error_mode": 0
+  },
+  {
+    "id": 120,
+    "tag": "numeric-profit",
+    "values": {
+      "Show": 1,
+      "Tester": 1,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [
+      {
+        "ticket": 21,
+        "symbol": "XAUUSD",
+        "magics": [
+          9001
+        ],
+        "profit": [
+          Infinity
+        ],
+        "commission": [
+          -1.0
+        ],
+        "swap": [
+          -0.5
+        ]
+      }
+    ],
+    "info": [
+      0,
+      0
+    ],
+    "select": 1,
+    "total": 1,
+    "effects": [],
+    "error_mode": 0
+  },
+  {
+    "id": 121,
+    "tag": "numeric-profit",
+    "values": {
+      "Show": 1,
+      "Tester": 1,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [
+      {
+        "ticket": 21,
+        "symbol": "XAUUSD",
+        "magics": [
+          9001
+        ],
+        "profit": [
+          Infinity
+        ],
+        "commission": [
+          Infinity
+        ],
+        "swap": [
+          -Infinity
+        ]
+      }
+    ],
+    "info": [
+      0,
+      0
+    ],
+    "select": 1,
+    "total": 1,
+    "effects": [],
+    "error_mode": 0
+  },
+  {
+    "id": 122,
+    "tag": "numeric-profit",
+    "values": {
+      "Show": 1,
+      "Tester": 1,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [
+      {
+        "ticket": 21,
+        "symbol": "XAUUSD",
+        "magics": [
+          9001
+        ],
+        "profit": [
+          -Infinity
+        ],
+        "commission": [
+          0.0
+        ],
+        "swap": [
+          0.0
+        ]
+      }
+    ],
+    "info": [
+      0,
+      0
+    ],
+    "select": 1,
+    "total": 1,
+    "effects": [],
+    "error_mode": 0
+  },
+  {
+    "id": 123,
+    "tag": "numeric-profit",
+    "values": {
+      "Show": 1,
+      "Tester": 1,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [
+      {
+        "ticket": 21,
+        "symbol": "XAUUSD",
+        "magics": [
+          9001
+        ],
+        "profit": [
+          -Infinity
+        ],
+        "commission": [
+          -1.0
+        ],
+        "swap": [
+          -0.5
+        ]
+      }
+    ],
+    "info": [
+      0,
+      0
+    ],
+    "select": 1,
+    "total": 1,
+    "effects": [],
+    "error_mode": 0
+  },
+  {
+    "id": 124,
+    "tag": "numeric-profit",
+    "values": {
+      "Show": 1,
+      "Tester": 1,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [
+      {
+        "ticket": 21,
+        "symbol": "XAUUSD",
+        "magics": [
+          9001
+        ],
+        "profit": [
+          -Infinity
+        ],
+        "commission": [
+          Infinity
+        ],
+        "swap": [
+          -Infinity
+        ]
+      }
+    ],
+    "info": [
+      0,
+      0
+    ],
+    "select": 1,
+    "total": 1,
+    "effects": [],
+    "error_mode": 0
+  },
+  {
+    "id": 125,
+    "tag": "fresh-double-reads",
+    "values": {
+      "Show": 1,
+      "Tester": 1,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [
+      {
+        "ticket": 21,
+        "symbol": "XAUUSD",
+        "magics": [
+          9001
+        ],
+        "profit": [
+          10.0,
+          1.0,
+          -5.0
+        ],
+        "commission": [
+          -2.0,
+          1.0
+        ],
+        "swap": [
+          -0.5,
+          2.0
+        ]
+      }
+    ],
+    "info": [
+      0,
+      0
+    ],
+    "select": 1,
+    "total": 1,
+    "effects": [],
+    "error_mode": 0
+  },
+  {
+    "id": 126,
+    "tag": "fresh-magic-reads",
+    "values": {
+      "Show": 1,
+      "Tester": 1,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [
+      {
+        "ticket": 21,
+        "symbol": "XAUUSD",
+        "magics": [
+          -1,
+          9002
+        ],
+        "profit": [
+          10.0
+        ],
+        "commission": [
+          -1.0
+        ],
+        "swap": [
+          -0.5
+        ]
+      }
+    ],
+    "info": [
+      0,
+      0
+    ],
+    "select": 1,
+    "total": 1,
+    "effects": [],
+    "error_mode": 0
+  },
+  {
+    "id": 127,
+    "tag": "addition-and-reverse-order",
+    "values": {
+      "Show": 1,
+      "Tester": 1,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [
+      {
+        "ticket": 21,
+        "symbol": "XAUUSD",
+        "magics": [
+          9001
+        ],
+        "profit": [
+          1e+16
+        ],
+        "commission": [
+          0.0
+        ],
+        "swap": [
+          0.0
+        ]
+      },
+      {
+        "ticket": 22,
+        "symbol": "XAUUSD",
+        "magics": [
+          9001
+        ],
+        "profit": [
+          1.0
+        ],
+        "commission": [
+          0.0
+        ],
+        "swap": [
+          0.0
+        ]
+      },
+      {
+        "ticket": 23,
+        "symbol": "XAUUSD",
+        "magics": [
+          9001
+        ],
+        "profit": [
+          -1e+16
+        ],
+        "commission": [
+          0.0
+        ],
+        "swap": [
+          0.0
+        ]
+      }
+    ],
+    "info": [
+      0,
+      0
+    ],
+    "select": 1,
+    "total": 3,
+    "effects": [],
+    "error_mode": 0
+  },
+  {
+    "id": 128,
+    "tag": "addition-and-reverse-order",
+    "values": {
+      "Show": 1,
+      "Tester": 1,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [
+      {
+        "ticket": 21,
+        "symbol": "XAUUSD",
+        "magics": [
+          9001
+        ],
+        "profit": [
+          -0.0
+        ],
+        "commission": [
+          0.0
+        ],
+        "swap": [
+          0.0
+        ]
+      },
+      {
+        "ticket": 22,
+        "symbol": "XAUUSD",
+        "magics": [
+          9001
+        ],
+        "profit": [
+          -0.0
+        ],
+        "commission": [
+          0.0
+        ],
+        "swap": [
+          0.0
+        ]
+      },
+      {
+        "ticket": 23,
+        "symbol": "XAUUSD",
+        "magics": [
+          9001
+        ],
+        "profit": [
+          -0.0
+        ],
+        "commission": [
+          0.0
+        ],
+        "swap": [
+          0.0
+        ]
+      }
+    ],
+    "info": [
+      0,
+      0
+    ],
+    "select": 1,
+    "total": 3,
+    "effects": [],
+    "error_mode": 0
+  },
+  {
+    "id": 129,
+    "tag": "addition-and-reverse-order",
+    "values": {
+      "Show": 1,
+      "Tester": 1,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [
+      {
+        "ticket": 21,
+        "symbol": "XAUUSD",
+        "magics": [
+          9001
+        ],
+        "profit": [
+          Infinity
+        ],
+        "commission": [
+          0.0
+        ],
+        "swap": [
+          0.0
+        ]
+      },
+      {
+        "ticket": 22,
+        "symbol": "XAUUSD",
+        "magics": [
+          9001
+        ],
+        "profit": [
+          -Infinity
+        ],
+        "commission": [
+          0.0
+        ],
+        "swap": [
+          0.0
+        ]
+      },
+      {
+        "ticket": 23,
+        "symbol": "XAUUSD",
+        "magics": [
+          9001
+        ],
+        "profit": [
+          1.0
+        ],
+        "commission": [
+          0.0
+        ],
+        "swap": [
+          0.0
+        ]
+      }
+    ],
+    "info": [
+      0,
+      0
+    ],
+    "select": 1,
+    "total": 3,
+    "effects": [],
+    "error_mode": 0
+  },
+  {
+    "id": 130,
+    "tag": "preserved-numeric-counts",
+    "values": {
+      "Show": 1,
+      "Tester": 0,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 7.0
+    },
+    "deals": [],
+    "info": [
+      0,
+      1
+    ],
+    "select": 1,
+    "total": 0,
+    "effects": [],
+    "error_mode": 0
+  },
+  {
+    "id": 131,
+    "tag": "preserved-numeric-counts",
+    "values": {
+      "Show": 1,
+      "Tester": 0,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": -7.0,
+      "Losses": -7.0
+    },
+    "deals": [],
+    "info": [
+      0,
+      1
+    ],
+    "select": 1,
+    "total": 0,
+    "effects": [],
+    "error_mode": 0
+  },
+  {
+    "id": 132,
+    "tag": "preserved-numeric-counts",
+    "values": {
+      "Show": 1,
+      "Tester": 0,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 1e+19,
+      "Losses": 1e+19
+    },
+    "deals": [],
+    "info": [
+      0,
+      1
+    ],
+    "select": 1,
+    "total": 0,
+    "effects": [],
+    "error_mode": 0
+  },
+  {
+    "id": 133,
+    "tag": "preserved-numeric-counts",
+    "values": {
+      "Show": 1,
+      "Tester": 0,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": NaN,
+      "Losses": NaN
+    },
+    "deals": [],
+    "info": [
+      0,
+      1
+    ],
+    "select": 1,
+    "total": 0,
+    "effects": [],
+    "error_mode": 0
+  },
+  {
+    "id": 134,
+    "tag": "preserved-numeric-counts",
+    "values": {
+      "Show": 1,
+      "Tester": 0,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": Infinity,
+      "Losses": Infinity
+    },
+    "deals": [],
+    "info": [
+      0,
+      1
+    ],
+    "select": 1,
+    "total": 0,
+    "effects": [],
+    "error_mode": 0
+  },
+  {
+    "id": 135,
+    "tag": "live-fields-Tester",
+    "values": {
+      "Show": 1,
+      "Tester": 1,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [
+      {
+        "ticket": 21,
+        "symbol": "XAUUSD",
+        "magics": [
+          9001
+        ],
+        "profit": [
+          10.0
+        ],
+        "commission": [
+          -1.0
+        ],
+        "swap": [
+          -0.5
+        ]
+      }
+    ],
+    "info": [
+      0,
+      0
+    ],
+    "select": 1,
+    "total": 1,
+    "effects": [
+      {
+        "api": 1,
+        "n": 1,
+        "name": "Tester",
+        "value": 0
+      }
+    ],
+    "error_mode": 1
+  },
+  {
+    "id": 136,
+    "tag": "live-fields-Tester",
+    "values": {
+      "Show": 1,
+      "Tester": 1,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [
+      {
+        "ticket": 21,
+        "symbol": "XAUUSD",
+        "magics": [
+          9001
+        ],
+        "profit": [
+          10.0
+        ],
+        "commission": [
+          -1.0
+        ],
+        "swap": [
+          -0.5
+        ]
+      }
+    ],
+    "info": [
+      0,
+      0
+    ],
+    "select": 1,
+    "total": 1,
+    "effects": [
+      {
+        "api": 1,
+        "n": 2,
+        "name": "Tester",
+        "value": 1
+      }
+    ],
+    "error_mode": 1
+  },
+  {
+    "id": 137,
+    "tag": "live-fields-Seed",
+    "values": {
+      "Show": 1,
+      "Tester": 1,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [
+      {
+        "ticket": 21,
+        "symbol": "XAUUSD",
+        "magics": [
+          9001
+        ],
+        "profit": [
+          10.0
+        ],
+        "commission": [
+          -1.0
+        ],
+        "swap": [
+          -0.5
+        ]
+      }
+    ],
+    "info": [
+      0,
+      0
+    ],
+    "select": 1,
+    "total": 1,
+    "effects": [
+      {
+        "api": 3,
+        "n": 1,
+        "name": "Seed",
+        "value": 9001
+      }
+    ],
+    "error_mode": 1
+  },
+  {
+    "id": 138,
+    "tag": "live-fields-Seed",
+    "values": {
+      "Show": 1,
+      "Tester": 1,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [
+      {
+        "ticket": 21,
+        "symbol": "XAUUSD",
+        "magics": [
+          9001
+        ],
+        "profit": [
+          10.0
+        ],
+        "commission": [
+          -1.0
+        ],
+        "swap": [
+          -0.5
+        ]
+      }
+    ],
+    "info": [
+      0,
+      0
+    ],
+    "select": 1,
+    "total": 1,
+    "effects": [
+      {
+        "api": 5,
+        "n": 1,
+        "name": "Seed",
+        "value": 9999
+      }
+    ],
+    "error_mode": 1
+  },
+  {
+    "id": 139,
+    "tag": "live-fields-PanelSymbol",
+    "values": {
+      "Show": 1,
+      "Tester": 1,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [
+      {
+        "ticket": 21,
+        "symbol": "XAUUSD",
+        "magics": [
+          9001
+        ],
+        "profit": [
+          10.0
+        ],
+        "commission": [
+          -1.0
+        ],
+        "swap": [
+          -0.5
+        ]
+      }
+    ],
+    "info": [
+      0,
+      0
+    ],
+    "select": 1,
+    "total": 1,
+    "effects": [
+      {
+        "api": 6,
+        "n": 1,
+        "name": "PanelSymbol",
+        "value": "OTHER"
+      }
+    ],
+    "error_mode": 1
+  },
+  {
+    "id": 140,
+    "tag": "live-fields-Losses",
+    "values": {
+      "Show": 1,
+      "Tester": 1,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [
+      {
+        "ticket": 21,
+        "symbol": "XAUUSD",
+        "magics": [
+          9001
+        ],
+        "profit": [
+          10.0
+        ],
+        "commission": [
+          -1.0
+        ],
+        "swap": [
+          -0.5
+        ]
+      }
+    ],
+    "info": [
+      0,
+      0
+    ],
+    "select": 1,
+    "total": 1,
+    "effects": [
+      {
+        "api": 9,
+        "n": 1,
+        "name": "Losses",
+        "value": 99.0
+      }
+    ],
+    "error_mode": 1
+  },
+  {
+    "id": 141,
+    "tag": "live-fields-Wins",
+    "values": {
+      "Show": 1,
+      "Tester": 1,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [
+      {
+        "ticket": 21,
+        "symbol": "XAUUSD",
+        "magics": [
+          9001
+        ],
+        "profit": [
+          10.0
+        ],
+        "commission": [
+          -1.0
+        ],
+        "swap": [
+          -0.5
+        ]
+      }
+    ],
+    "info": [
+      0,
+      0
+    ],
+    "select": 1,
+    "total": 1,
+    "effects": [
+      {
+        "api": 10,
+        "n": 1,
+        "name": "Wins",
+        "value": 88.0
+      }
+    ],
+    "error_mode": 1
+  },
+  {
+    "id": 142,
+    "tag": "mixed-history",
+    "values": {
+      "Show": 1,
+      "Tester": 1,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [
+      {
+        "ticket": 1,
+        "symbol": "OTHER",
+        "magics": [
+          9008
+        ],
+        "profit": [
+          -50.857774762769914
+        ],
+        "commission": [
+          -1.1809242944937997
+        ],
+        "swap": [
+          -1.4650442503511254
+        ]
+      },
+      {
+        "ticket": 2,
+        "symbol": "XAUUSD",
+        "magics": [
+          9000
+        ],
+        "profit": [
+          -87.9587492907626
+        ],
+        "commission": [
+          -2.2026469268513256
+        ],
+        "swap": [
+          -1.0364214063369754
+        ]
+      }
+    ],
+    "info": [
+      0,
+      0
+    ],
+    "select": 1,
+    "total": 2,
+    "effects": [],
+    "error_mode": 0
+  },
+  {
+    "id": 143,
+    "tag": "mixed-history",
+    "values": {
+      "Show": 1,
+      "Tester": 1,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [],
+    "info": [
+      0,
+      0
+    ],
+    "select": 1,
+    "total": 0,
+    "effects": [],
+    "error_mode": 1
+  },
+  {
+    "id": 144,
+    "tag": "mixed-history",
+    "values": {
+      "Show": 1,
+      "Tester": 1,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [
+      {
+        "ticket": 1,
+        "symbol": "XAUUSD",
+        "magics": [
+          9001
+        ],
+        "profit": [
+          -16.36846027470004
+        ],
+        "commission": [
+          -2.0207592624842072
+        ],
+        "swap": [
+          -1.515318168646691
+        ]
+      },
+      {
+        "ticket": 2,
+        "symbol": "XAUUSD",
+        "magics": [
+          9015
+        ],
+        "profit": [
+          4.817388173060721
+        ],
+        "commission": [
+          -1.8146092614741258
+        ],
+        "swap": [
+          -1.9692910485338864
+        ]
+      },
+      {
+        "ticket": 3,
+        "symbol": "XAUUSD",
+        "magics": [
+          9013
+        ],
+        "profit": [
+          -76.65117760514872
+        ],
+        "commission": [
+          -1.8868186960148314
+        ],
+        "swap": [
+          -1.1019523123973598
+        ]
+      }
+    ],
+    "info": [
+      0,
+      0
+    ],
+    "select": 1,
+    "total": 3,
+    "effects": [],
+    "error_mode": 1
+  },
+  {
+    "id": 145,
+    "tag": "mixed-history",
+    "values": {
+      "Show": 1,
+      "Tester": 1,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [
+      {
+        "ticket": 1,
+        "symbol": "OTHER",
+        "magics": [
+          9011
+        ],
+        "profit": [
+          -41.09538179473509
+        ],
+        "commission": [
+          0.841697879338581
+        ],
+        "swap": [
+          -0.8527386890275399
+        ]
+      },
+      {
+        "ticket": 2,
+        "symbol": "XAUUSD",
+        "magics": [
+          9009
+        ],
+        "profit": [
+          57.30654486143567
+        ],
+        "commission": [
+          0.7999046643482464
+        ],
+        "swap": [
+          1.864897030466253
+        ]
+      },
+      {
+        "ticket": 3,
+        "symbol": "OTHER",
+        "magics": [
+          9014
+        ],
+        "profit": [
+          81.63229043676
+        ],
+        "commission": [
+          -1.5544989791040353
+        ],
+        "swap": [
+          -0.590589905352445
+        ]
+      }
+    ],
+    "info": [
+      0,
+      0
+    ],
+    "select": 1,
+    "total": 3,
+    "effects": [],
+    "error_mode": 0
+  },
+  {
+    "id": 146,
+    "tag": "mixed-history",
+    "values": {
+      "Show": 1,
+      "Tester": 1,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [
+      {
+        "ticket": 1,
+        "symbol": "XAUUSD",
+        "magics": [
+          9009
+        ],
+        "profit": [
+          88.50809775420623
+        ],
+        "commission": [
+          -0.19288981832580676
+        ],
+        "swap": [
+          -1.864340418325361
+        ]
+      },
+      {
+        "ticket": 2,
+        "symbol": "XAUUSD",
+        "magics": [
+          9001
+        ],
+        "profit": [
+          -96.83497446561884
+        ],
+        "commission": [
+          -2.3523933184573242
+        ],
+        "swap": [
+          -1.5182538006189645
+        ]
+      },
+      {
+        "ticket": 3,
+        "symbol": "XAUUSD",
+        "magics": [
+          9013
+        ],
+        "profit": [
+          85.9687391512563
+        ],
+        "commission": [
+          -0.08523819245695963
+        ],
+        "swap": [
+          1.892040007088628
+        ]
+      },
+      {
+        "ticket": 4,
+        "symbol": "XAUUSD",
+        "magics": [
+          9015
+        ],
+        "profit": [
+          54.41216460856245
+        ],
+        "commission": [
+          -2.6595594528125006
+        ],
+        "swap": [
+          -1.4118499535993414
+        ]
+      }
+    ],
+    "info": [
+      0,
+      0
+    ],
+    "select": 1,
+    "total": 4,
+    "effects": [],
+    "error_mode": 0
+  },
+  {
+    "id": 147,
+    "tag": "mixed-history",
+    "values": {
+      "Show": 1,
+      "Tester": 1,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [
+      {
+        "ticket": 1,
+        "symbol": "OTHER",
+        "magics": [
+          8999
+        ],
+        "profit": [
+          91.80286131914096
+        ],
+        "commission": [
+          -1.9473465789024842
+        ],
+        "swap": [
+          1.4312625596260138
+        ]
+      },
+      {
+        "ticket": 2,
+        "symbol": "XAUUSD",
+        "magics": [
+          9011
+        ],
+        "profit": [
+          33.65898092859274
+        ],
+        "commission": [
+          -2.8574095086044586
+        ],
+        "swap": [
+          -1.2324072208867207
+        ]
+      }
+    ],
+    "info": [
+      0,
+      0
+    ],
+    "select": 1,
+    "total": 2,
+    "effects": [],
+    "error_mode": 0
+  },
+  {
+    "id": 148,
+    "tag": "mixed-history",
+    "values": {
+      "Show": 1,
+      "Tester": 1,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [],
+    "info": [
+      0,
+      0
+    ],
+    "select": 1,
+    "total": 0,
+    "effects": [],
+    "error_mode": 0
+  },
+  {
+    "id": 149,
+    "tag": "mixed-history",
+    "values": {
+      "Show": 1,
+      "Tester": 1,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [
+      {
+        "ticket": 1,
+        "symbol": "OTHER",
+        "magics": [
+          9005
+        ],
+        "profit": [
+          -85.81371265628775
+        ],
+        "commission": [
+          0.6234101425070753
+        ],
+        "swap": [
+          -0.6054945237750768
+        ]
+      }
+    ],
+    "info": [
+      0,
+      0
+    ],
+    "select": 1,
+    "total": 1,
+    "effects": [],
+    "error_mode": 0
+  },
+  {
+    "id": 150,
+    "tag": "mixed-history",
+    "values": {
+      "Show": 1,
+      "Tester": 1,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [
+      {
+        "ticket": 1,
+        "symbol": "OTHER",
+        "magics": [
+          9006
+        ],
+        "profit": [
+          8.26006975345561
+        ],
+        "commission": [
+          -0.4433434116255235
+        ],
+        "swap": [
+          1.6418879990058075
+        ]
+      },
+      {
+        "ticket": 2,
+        "symbol": "XAUUSD",
+        "magics": [
+          9011
+        ],
+        "profit": [
+          58.21275125831923
+        ],
+        "commission": [
+          0.8594563505252584
+        ],
+        "swap": [
+          -0.7189699109306211
+        ]
+      },
+      {
+        "ticket": 3,
+        "symbol": "XAUUSD",
+        "magics": [
+          9001
+        ],
+        "profit": [
+          10.666128008015477
+        ],
+        "commission": [
+          -1.6038163912535333
+        ],
+        "swap": [
+          1.0002667648013213
+        ]
+      }
+    ],
+    "info": [
+      0,
+      0
+    ],
+    "select": 1,
+    "total": 3,
+    "effects": [],
+    "error_mode": 1
+  },
+  {
+    "id": 151,
+    "tag": "mixed-history",
+    "values": {
+      "Show": 1,
+      "Tester": 1,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [
+      {
+        "ticket": 1,
+        "symbol": "OTHER",
+        "magics": [
+          9006
+        ],
+        "profit": [
+          -33.535820345546824
+        ],
+        "commission": [
+          -2.3792504101367826
+        ],
+        "swap": [
+          -0.019128630812699665
+        ]
+      }
+    ],
+    "info": [
+      0,
+      0
+    ],
+    "select": 1,
+    "total": 1,
+    "effects": [],
+    "error_mode": 1
+  },
+  {
+    "id": 152,
+    "tag": "mixed-history",
+    "values": {
+      "Show": 1,
+      "Tester": 1,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [],
+    "info": [
+      0,
+      0
+    ],
+    "select": 1,
+    "total": 0,
+    "effects": [],
+    "error_mode": 1
+  },
+  {
+    "id": 153,
+    "tag": "mixed-history",
+    "values": {
+      "Show": 1,
+      "Tester": 1,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [
+      {
+        "ticket": 1,
+        "symbol": "XAUUSD",
+        "magics": [
+          9011
+        ],
+        "profit": [
+          23.607646295435927
+        ],
+        "commission": [
+          -0.04683841410074452
+        ],
+        "swap": [
+          -0.21118877378560796
+        ]
+      },
+      {
+        "ticket": 2,
+        "symbol": "OTHER",
+        "magics": [
+          9013
+        ],
+        "profit": [
+          1.7335608895697305
+        ],
+        "commission": [
+          0.8073557454116331
+        ],
+        "swap": [
+          -1.1678856624933127
+        ]
+      }
+    ],
+    "info": [
+      0,
+      0
+    ],
+    "select": 1,
+    "total": 2,
+    "effects": [],
+    "error_mode": 0
+  },
+  {
+    "id": 154,
+    "tag": "mixed-history",
+    "values": {
+      "Show": 1,
+      "Tester": 1,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [
+      {
+        "ticket": 1,
+        "symbol": "OTHER",
+        "magics": [
+          9006
+        ],
+        "profit": [
+          20.64336315164148
+        ],
+        "commission": [
+          -2.2976612349881975
+        ],
+        "swap": [
+          -0.22583579338942172
+        ]
+      },
+      {
+        "ticket": 2,
+        "symbol": "XAUUSD",
+        "magics": [
+          9010
+        ],
+        "profit": [
+          75.50395658929259
+        ],
+        "commission": [
+          0.03104052240509514
+        ],
+        "swap": [
+          1.322103446122652
+        ]
+      },
+      {
+        "ticket": 3,
+        "symbol": "OTHER",
+        "magics": [
+          9011
+        ],
+        "profit": [
+          -85.46996176431678
+        ],
+        "commission": [
+          -1.395634025789016
+        ],
+        "swap": [
+          -1.4432064839744299
+        ]
+      }
+    ],
+    "info": [
+      0,
+      0
+    ],
+    "select": 1,
+    "total": 3,
+    "effects": [],
+    "error_mode": 1
+  },
+  {
+    "id": 155,
+    "tag": "mixed-history",
+    "values": {
+      "Show": 1,
+      "Tester": 1,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [
+      {
+        "ticket": 1,
+        "symbol": "XAUUSD",
+        "magics": [
+          9003
+        ],
+        "profit": [
+          23.22184682898019
+        ],
+        "commission": [
+          -2.0892559808262194
+        ],
+        "swap": [
+          1.0277304460643064
+        ]
+      },
+      {
+        "ticket": 2,
+        "symbol": "XAUUSD",
+        "magics": [
+          9012
+        ],
+        "profit": [
+          -81.40021686915777
+        ],
+        "commission": [
+          0.5537195872294522
+        ],
+        "swap": [
+          -0.19802457723385025
+        ]
+      },
+      {
+        "ticket": 3,
+        "symbol": "OTHER",
+        "magics": [
+          9008
+        ],
+        "profit": [
+          -74.28331550138168
+        ],
+        "commission": [
+          -2.777290276224743
+        ],
+        "swap": [
+          -0.5376529798809271
+        ]
+      }
+    ],
+    "info": [
+      0,
+      0
+    ],
+    "select": 1,
+    "total": 3,
+    "effects": [],
+    "error_mode": 0
+  },
+  {
+    "id": 156,
+    "tag": "mixed-history",
+    "values": {
+      "Show": 1,
+      "Tester": 1,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [
+      {
+        "ticket": 1,
+        "symbol": "XAUUSD",
+        "magics": [
+          9013
+        ],
+        "profit": [
+          -63.062882199322125
+        ],
+        "commission": [
+          -2.3122871377810017
+        ],
+        "swap": [
+          1.8231733814239628
+        ]
+      },
+      {
+        "ticket": 2,
+        "symbol": "XAUUSD",
+        "magics": [
+          9014
+        ],
+        "profit": [
+          18.142514903284777
+        ],
+        "commission": [
+          -0.89641754885715
+        ],
+        "swap": [
+          -0.43431020216036265
+        ]
+      },
+      {
+        "ticket": 3,
+        "symbol": "XAUUSD",
+        "magics": [
+          9005
+        ],
+        "profit": [
+          55.792291843123564
+        ],
+        "commission": [
+          -0.3176699801547702
+        ],
+        "swap": [
+          -0.968350686343344
+        ]
+      }
+    ],
+    "info": [
+      0,
+      0
+    ],
+    "select": 1,
+    "total": 3,
+    "effects": [],
+    "error_mode": 0
+  },
+  {
+    "id": 157,
+    "tag": "mixed-history",
+    "values": {
+      "Show": 1,
+      "Tester": 1,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [
+      {
+        "ticket": 1,
+        "symbol": "OTHER",
+        "magics": [
+          9002
+        ],
+        "profit": [
+          64.48156551347657
+        ],
+        "commission": [
+          -1.2793669999738673
+        ],
+        "swap": [
+          1.2126576734817331
+        ]
+      },
+      {
+        "ticket": 2,
+        "symbol": "OTHER",
+        "magics": [
+          9001
+        ],
+        "profit": [
+          4.437972432259386
+        ],
+        "commission": [
+          -1.8041979424155627
+        ],
+        "swap": [
+          1.5721323247306156
+        ]
+      }
+    ],
+    "info": [
+      0,
+      0
+    ],
+    "select": 1,
+    "total": 2,
+    "effects": [],
+    "error_mode": 0
+  },
+  {
+    "id": 158,
+    "tag": "mixed-history",
+    "values": {
+      "Show": 1,
+      "Tester": 1,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [],
+    "info": [
+      0,
+      0
+    ],
+    "select": 1,
+    "total": 0,
+    "effects": [],
+    "error_mode": 0
+  },
+  {
+    "id": 159,
+    "tag": "mixed-history",
+    "values": {
+      "Show": 1,
+      "Tester": 1,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [
+      {
+        "ticket": 1,
+        "symbol": "XAUUSD",
+        "magics": [
+          9003
+        ],
+        "profit": [
+          50.7383842942038
+        ],
+        "commission": [
+          -1.8435871331836773
+        ],
+        "swap": [
+          1.060157625176143
+        ]
+      },
+      {
+        "ticket": 2,
+        "symbol": "XAUUSD",
+        "magics": [
+          9012
+        ],
+        "profit": [
+          59.12948494001532
+        ],
+        "commission": [
+          -0.5557431837973361
+        ],
+        "swap": [
+          0.3658877273640666
+        ]
+      },
+      {
+        "ticket": 3,
+        "symbol": "XAUUSD",
+        "magics": [
+          9009
+        ],
+        "profit": [
+          -46.34263384522808
+        ],
+        "commission": [
+          -0.9130014940244906
+        ],
+        "swap": [
+          1.4174817686498482
+        ]
+      }
+    ],
+    "info": [
+      0,
+      0
+    ],
+    "select": 1,
+    "total": 3,
+    "effects": [],
+    "error_mode": 1
+  },
+  {
+    "id": 160,
+    "tag": "mixed-history",
+    "values": {
+      "Show": 1,
+      "Tester": 1,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [],
+    "info": [
+      0,
+      0
+    ],
+    "select": 1,
+    "total": 0,
+    "effects": [],
+    "error_mode": 1
+  },
+  {
+    "id": 161,
+    "tag": "mixed-history",
+    "values": {
+      "Show": 1,
+      "Tester": 1,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [],
+    "info": [
+      0,
+      0
+    ],
+    "select": 1,
+    "total": 0,
+    "effects": [],
+    "error_mode": 0
+  },
+  {
+    "id": 162,
+    "tag": "mixed-history",
+    "values": {
+      "Show": 1,
+      "Tester": 1,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [
+      {
+        "ticket": 1,
+        "symbol": "OTHER",
+        "magics": [
+          8999
+        ],
+        "profit": [
+          48.84352837036252
+        ],
+        "commission": [
+          -1.3240048585588808
+        ],
+        "swap": [
+          1.4107963709914317
+        ]
+      },
+      {
+        "ticket": 2,
+        "symbol": "OTHER",
+        "magics": [
+          9011
+        ],
+        "profit": [
+          -83.62047266648409
+        ],
+        "commission": [
+          0.47629641690986135
+        ],
+        "swap": [
+          1.5438489795209787
+        ]
+      }
+    ],
+    "info": [
+      0,
+      0
+    ],
+    "select": 1,
+    "total": 2,
+    "effects": [],
+    "error_mode": 1
+  },
+  {
+    "id": 163,
+    "tag": "mixed-history",
+    "values": {
+      "Show": 1,
+      "Tester": 1,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [
+      {
+        "ticket": 1,
+        "symbol": "OTHER",
+        "magics": [
+          9000
+        ],
+        "profit": [
+          -81.76476598696611
+        ],
+        "commission": [
+          0.9480582220304759
+        ],
+        "swap": [
+          -0.32269071648789627
+        ]
+      },
+      {
+        "ticket": 2,
+        "symbol": "OTHER",
+        "magics": [
+          9009
+        ],
+        "profit": [
+          -82.23153765313495
+        ],
+        "commission": [
+          -0.18437336733345688
+        ],
+        "swap": [
+          -1.72774684028249
+        ]
+      },
+      {
+        "ticket": 3,
+        "symbol": "XAUUSD",
+        "magics": [
+          9011
+        ],
+        "profit": [
+          24.959412129747264
+        ],
+        "commission": [
+          -2.4054037014038383
+        ],
+        "swap": [
+          0.7955222739038676
+        ]
+      }
+    ],
+    "info": [
+      0,
+      0
+    ],
+    "select": 1,
+    "total": 3,
+    "effects": [],
+    "error_mode": 0
+  },
+  {
+    "id": 164,
+    "tag": "mixed-history",
+    "values": {
+      "Show": 1,
+      "Tester": 1,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [],
+    "info": [
+      0,
+      0
+    ],
+    "select": 1,
+    "total": 0,
+    "effects": [],
+    "error_mode": 0
+  },
+  {
+    "id": 165,
+    "tag": "mixed-history",
+    "values": {
+      "Show": 1,
+      "Tester": 1,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [
+      {
+        "ticket": 1,
+        "symbol": "OTHER",
+        "magics": [
+          9015
+        ],
+        "profit": [
+          46.62356720268696
+        ],
+        "commission": [
+          -2.30750981170276
+        ],
+        "swap": [
+          1.4551154692180526
+        ]
+      },
+      {
+        "ticket": 2,
+        "symbol": "OTHER",
+        "magics": [
+          9005
+        ],
+        "profit": [
+          -20.234525025095593
+        ],
+        "commission": [
+          -2.4027823765373286
+        ],
+        "swap": [
+          -1.0558495861707504
+        ]
+      },
+      {
+        "ticket": 3,
+        "symbol": "XAUUSD",
+        "magics": [
+          9016
+        ],
+        "profit": [
+          -49.95972232653572
+        ],
+        "commission": [
+          -2.46525107048112
+        ],
+        "swap": [
+          -1.802679992432469
+        ]
+      },
+      {
+        "ticket": 4,
+        "symbol": "XAUUSD",
+        "magics": [
+          9004
+        ],
+        "profit": [
+          -97.46212745726798
+        ],
+        "commission": [
+          0.20674826940289837
+        ],
+        "swap": [
+          -0.6453712566361678
+        ]
+      }
+    ],
+    "info": [
+      0,
+      0
+    ],
+    "select": 1,
+    "total": 4,
+    "effects": [],
+    "error_mode": 1
+  },
+  {
+    "id": 166,
+    "tag": "mixed-history",
+    "values": {
+      "Show": 1,
+      "Tester": 1,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [
+      {
+        "ticket": 1,
+        "symbol": "OTHER",
+        "magics": [
+          9013
+        ],
+        "profit": [
+          -95.06321355435662
+        ],
+        "commission": [
+          -2.5038541280642064
+        ],
+        "swap": [
+          -0.6592193692064447
+        ]
+      },
+      {
+        "ticket": 2,
+        "symbol": "OTHER",
+        "magics": [
+          9013
+        ],
+        "profit": [
+          -23.029777666776184
+        ],
+        "commission": [
+          -1.622044116584159
+        ],
+        "swap": [
+          0.6882862253534778
+        ]
+      },
+      {
+        "ticket": 3,
+        "symbol": "XAUUSD",
+        "magics": [
+          9010
+        ],
+        "profit": [
+          77.87957422448355
+        ],
+        "commission": [
+          -1.7849774819706692
+        ],
+        "swap": [
+          0.6361229863382567
+        ]
+      },
+      {
+        "ticket": 4,
+        "symbol": "OTHER",
+        "magics": [
+          9009
+        ],
+        "profit": [
+          16.57659698908293
+        ],
+        "commission": [
+          -0.589330011339745
+        ],
+        "swap": [
+          1.916522759501711
+        ]
+      }
+    ],
+    "info": [
+      0,
+      0
+    ],
+    "select": 1,
+    "total": 4,
+    "effects": [],
+    "error_mode": 0
+  },
+  {
+    "id": 167,
+    "tag": "mixed-history",
+    "values": {
+      "Show": 1,
+      "Tester": 1,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [
+      {
+        "ticket": 1,
+        "symbol": "OTHER",
+        "magics": [
+          9013
+        ],
+        "profit": [
+          26.13034269680854
+        ],
+        "commission": [
+          -2.649383144254708
+        ],
+        "swap": [
+          1.9082616331327937
+        ]
+      },
+      {
+        "ticket": 2,
+        "symbol": "OTHER",
+        "magics": [
+          9006
+        ],
+        "profit": [
+          39.989411568447736
+        ],
+        "commission": [
+          -0.7854062094075274
+        ],
+        "swap": [
+          0.2685730759590883
+        ]
+      },
+      {
+        "ticket": 3,
+        "symbol": "XAUUSD",
+        "magics": [
+          9014
+        ],
+        "profit": [
+          -5.060976493172362
+        ],
+        "commission": [
+          -1.2110660965538975
+        ],
+        "swap": [
+          -0.5224469076661333
+        ]
+      }
+    ],
+    "info": [
+      0,
+      0
+    ],
+    "select": 1,
+    "total": 3,
+    "effects": [],
+    "error_mode": 0
+  },
+  {
+    "id": 168,
+    "tag": "mixed-history",
+    "values": {
+      "Show": 1,
+      "Tester": 1,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [
+      {
+        "ticket": 1,
+        "symbol": "OTHER",
+        "magics": [
+          8999
+        ],
+        "profit": [
+          97.62337740561262
+        ],
+        "commission": [
+          0.2932693910055941
+        ],
+        "swap": [
+          1.8069640733037038
+        ]
+      },
+      {
+        "ticket": 2,
+        "symbol": "XAUUSD",
+        "magics": [
+          9010
+        ],
+        "profit": [
+          -82.09222639445768
+        ],
+        "commission": [
+          -2.181148354163513
+        ],
+        "swap": [
+          -0.6119562213251983
+        ]
+      },
+      {
+        "ticket": 3,
+        "symbol": "XAUUSD",
+        "magics": [
+          8999
+        ],
+        "profit": [
+          0.7626379940810324
+        ],
+        "commission": [
+          -0.19437377345205276
+        ],
+        "swap": [
+          0.263024217975079
+        ]
+      },
+      {
+        "ticket": 4,
+        "symbol": "XAUUSD",
+        "magics": [
+          9009
+        ],
+        "profit": [
+          -77.21127784109743
+        ],
+        "commission": [
+          -2.368054771309177
+        ],
+        "swap": [
+          -1.3560572000782045
+        ]
+      }
+    ],
+    "info": [
+      0,
+      0
+    ],
+    "select": 1,
+    "total": 4,
+    "effects": [],
+    "error_mode": 1
+  },
+  {
+    "id": 169,
+    "tag": "mixed-history",
+    "values": {
+      "Show": 1,
+      "Tester": 1,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [
+      {
+        "ticket": 1,
+        "symbol": "OTHER",
+        "magics": [
+          9015
+        ],
+        "profit": [
+          60.67063890846467
+        ],
+        "commission": [
+          -2.822965468249453
+        ],
+        "swap": [
+          -0.4422624992505648
+        ]
+      }
+    ],
+    "info": [
+      0,
+      0
+    ],
+    "select": 1,
+    "total": 1,
+    "effects": [],
+    "error_mode": 1
+  },
+  {
+    "id": 170,
+    "tag": "mixed-history",
+    "values": {
+      "Show": 1,
+      "Tester": 1,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [
+      {
+        "ticket": 1,
+        "symbol": "XAUUSD",
+        "magics": [
+          9016
+        ],
+        "profit": [
+          -24.924400372226714
+        ],
+        "commission": [
+          -1.0783321160981134
+        ],
+        "swap": [
+          -0.15766870821869228
+        ]
+      },
+      {
+        "ticket": 2,
+        "symbol": "OTHER",
+        "magics": [
+          9002
+        ],
+        "profit": [
+          -78.16493929257649
+        ],
+        "commission": [
+          -2.780384651826034
+        ],
+        "swap": [
+          0.2767209356747129
+        ]
+      }
+    ],
+    "info": [
+      0,
+      0
+    ],
+    "select": 1,
+    "total": 2,
+    "effects": [],
+    "error_mode": 1
+  },
+  {
+    "id": 171,
+    "tag": "mixed-history",
+    "values": {
+      "Show": 1,
+      "Tester": 1,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [
+      {
+        "ticket": 1,
+        "symbol": "OTHER",
+        "magics": [
+          9015
+        ],
+        "profit": [
+          -50.003644979526406
+        ],
+        "commission": [
+          -0.04112649389819678
+        ],
+        "swap": [
+          0.5013857525209406
+        ]
+      },
+      {
+        "ticket": 2,
+        "symbol": "XAUUSD",
+        "magics": [
+          9009
+        ],
+        "profit": [
+          76.69936927561972
+        ],
+        "commission": [
+          0.6003069402953254
+        ],
+        "swap": [
+          -0.23973237920537294
+        ]
+      }
+    ],
+    "info": [
+      0,
+      0
+    ],
+    "select": 1,
+    "total": 2,
+    "effects": [],
+    "error_mode": 0
+  },
+  {
+    "id": 172,
+    "tag": "mixed-history",
+    "values": {
+      "Show": 1,
+      "Tester": 1,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [],
+    "info": [
+      0,
+      0
+    ],
+    "select": 1,
+    "total": 0,
+    "effects": [],
+    "error_mode": 0
+  },
+  {
+    "id": 173,
+    "tag": "mixed-history",
+    "values": {
+      "Show": 1,
+      "Tester": 1,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [
+      {
+        "ticket": 1,
+        "symbol": "XAUUSD",
+        "magics": [
+          9010
+        ],
+        "profit": [
+          13.887551189980798
+        ],
+        "commission": [
+          0.7002140019417524
+        ],
+        "swap": [
+          -0.43588560891787553
+        ]
+      },
+      {
+        "ticket": 2,
+        "symbol": "OTHER",
+        "magics": [
+          8999
+        ],
+        "profit": [
+          -99.49518071738206
+        ],
+        "commission": [
+          0.4507555245901802
+        ],
+        "swap": [
+          0.8612990463087935
+        ]
+      },
+      {
+        "ticket": 3,
+        "symbol": "OTHER",
+        "magics": [
+          9008
+        ],
+        "profit": [
+          -78.69907604482887
+        ],
+        "commission": [
+          -2.6880484951885486
+        ],
+        "swap": [
+          -0.05801405173229224
+        ]
+      }
+    ],
+    "info": [
+      0,
+      0
+    ],
+    "select": 1,
+    "total": 3,
+    "effects": [],
+    "error_mode": 1
+  },
+  {
+    "id": 174,
+    "tag": "mixed-history",
+    "values": {
+      "Show": 1,
+      "Tester": 1,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [],
+    "info": [
+      0,
+      0
+    ],
+    "select": 1,
+    "total": 0,
+    "effects": [],
+    "error_mode": 0
+  },
+  {
+    "id": 175,
+    "tag": "mixed-history",
+    "values": {
+      "Show": 1,
+      "Tester": 1,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [
+      {
+        "ticket": 1,
+        "symbol": "OTHER",
+        "magics": [
+          9012
+        ],
+        "profit": [
+          27.96093260203925
+        ],
+        "commission": [
+          -2.2101061321945643
+        ],
+        "swap": [
+          -0.09464254754444568
+        ]
+      },
+      {
+        "ticket": 2,
+        "symbol": "XAUUSD",
+        "magics": [
+          9014
+        ],
+        "profit": [
+          45.715162214374374
+        ],
+        "commission": [
+          -1.7685180062500199
+        ],
+        "swap": [
+          0.26240995376227483
+        ]
+      },
+      {
+        "ticket": 3,
+        "symbol": "OTHER",
+        "magics": [
+          9002
+        ],
+        "profit": [
+          -61.243761562599985
+        ],
+        "commission": [
+          -0.9035858975028921
+        ],
+        "swap": [
+          1.7048626328390117
+        ]
+      },
+      {
+        "ticket": 4,
+        "symbol": "XAUUSD",
+        "magics": [
+          9000
+        ],
+        "profit": [
+          -9.065128534945586
+        ],
+        "commission": [
+          -2.3251071299765873
+        ],
+        "swap": [
+          1.0825770998284132
+        ]
+      }
+    ],
+    "info": [
+      0,
+      0
+    ],
+    "select": 1,
+    "total": 4,
+    "effects": [],
+    "error_mode": 0
+  },
+  {
+    "id": 176,
+    "tag": "mixed-history",
+    "values": {
+      "Show": 1,
+      "Tester": 1,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [],
+    "info": [
+      0,
+      0
+    ],
+    "select": 1,
+    "total": 0,
+    "effects": [],
+    "error_mode": 1
+  },
+  {
+    "id": 177,
+    "tag": "mixed-history",
+    "values": {
+      "Show": 1,
+      "Tester": 1,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [],
+    "info": [
+      0,
+      0
+    ],
+    "select": 1,
+    "total": 0,
+    "effects": [],
+    "error_mode": 1
+  },
+  {
+    "id": 178,
+    "tag": "mixed-history",
+    "values": {
+      "Show": 1,
+      "Tester": 1,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [
+      {
+        "ticket": 1,
+        "symbol": "XAUUSD",
+        "magics": [
+          9002
+        ],
+        "profit": [
+          -55.92115291087243
+        ],
+        "commission": [
+          -1.3862214022218295
+        ],
+        "swap": [
+          -1.411318147735603
+        ]
+      },
+      {
+        "ticket": 2,
+        "symbol": "XAUUSD",
+        "magics": [
+          9013
+        ],
+        "profit": [
+          89.38930748067534
+        ],
+        "commission": [
+          -0.10861523367937798
+        ],
+        "swap": [
+          -0.7979307922274517
+        ]
+      },
+      {
+        "ticket": 3,
+        "symbol": "XAUUSD",
+        "magics": [
+          9010
+        ],
+        "profit": [
+          28.206519253506087
+        ],
+        "commission": [
+          -0.9403602848716042
+        ],
+        "swap": [
+          -0.20232016462996638
+        ]
+      },
+      {
+        "ticket": 4,
+        "symbol": "OTHER",
+        "magics": [
+          9013
+        ],
+        "profit": [
+          -29.220070201347895
+        ],
+        "commission": [
+          -1.1225373898294864
+        ],
+        "swap": [
+          -0.6843099974679152
+        ]
+      }
+    ],
+    "info": [
+      0,
+      0
+    ],
+    "select": 1,
+    "total": 4,
+    "effects": [],
+    "error_mode": 1
+  },
+  {
+    "id": 179,
+    "tag": "mixed-history",
+    "values": {
+      "Show": 1,
+      "Tester": 1,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [
+      {
+        "ticket": 1,
+        "symbol": "OTHER",
+        "magics": [
+          9015
+        ],
+        "profit": [
+          50.19982877978225
+        ],
+        "commission": [
+          -1.0591761556599382
+        ],
+        "swap": [
+          0.16142660707516976
+        ]
+      },
+      {
+        "ticket": 2,
+        "symbol": "XAUUSD",
+        "magics": [
+          9000
+        ],
+        "profit": [
+          24.299136940063775
+        ],
+        "commission": [
+          0.8950511505759922
+        ],
+        "swap": [
+          0.2949443195074877
+        ]
+      },
+      {
+        "ticket": 3,
+        "symbol": "XAUUSD",
+        "magics": [
+          9008
+        ],
+        "profit": [
+          26.77041448179645
+        ],
+        "commission": [
+          0.4537461870046937
+        ],
+        "swap": [
+          -0.5090158190560046
+        ]
+      },
+      {
+        "ticket": 4,
+        "symbol": "OTHER",
+        "magics": [
+          9001
+        ],
+        "profit": [
+          -82.70722492883138
+        ],
+        "commission": [
+          0.583141234988831
+        ],
+        "swap": [
+          -0.6601043311191228
+        ]
+      }
+    ],
+    "info": [
+      0,
+      0
+    ],
+    "select": 1,
+    "total": 4,
+    "effects": [],
+    "error_mode": 1
+  },
+  {
+    "id": 180,
+    "tag": "mixed-history",
+    "values": {
+      "Show": 1,
+      "Tester": 1,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [
+      {
+        "ticket": 1,
+        "symbol": "OTHER",
+        "magics": [
+          9001
+        ],
+        "profit": [
+          -2.174924116995939
+        ],
+        "commission": [
+          0.43625303014158145
+        ],
+        "swap": [
+          1.8583173363371368
+        ]
+      },
+      {
+        "ticket": 2,
+        "symbol": "XAUUSD",
+        "magics": [
+          9003
+        ],
+        "profit": [
+          79.61547669695835
+        ],
+        "commission": [
+          -1.2548908261919642
+        ],
+        "swap": [
+          0.6369709474728813
+        ]
+      },
+      {
+        "ticket": 3,
+        "symbol": "XAUUSD",
+        "magics": [
+          9010
+        ],
+        "profit": [
+          -8.298805655024793
+        ],
+        "commission": [
+          -0.44983749869197265
+        ],
+        "swap": [
+          1.3303589470534485
+        ]
+      }
+    ],
+    "info": [
+      0,
+      0
+    ],
+    "select": 1,
+    "total": 3,
+    "effects": [],
+    "error_mode": 1
+  },
+  {
+    "id": 181,
+    "tag": "mixed-history",
+    "values": {
+      "Show": 1,
+      "Tester": 1,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [
+      {
+        "ticket": 1,
+        "symbol": "OTHER",
+        "magics": [
+          9014
+        ],
+        "profit": [
+          -41.24703804558769
+        ],
+        "commission": [
+          -1.927290215301117
+        ],
+        "swap": [
+          -0.8284050949052446
+        ]
+      }
+    ],
+    "info": [
+      0,
+      0
+    ],
+    "select": 1,
+    "total": 1,
+    "effects": [],
+    "error_mode": 0
+  },
+  {
+    "id": 182,
+    "tag": "mixed-history",
+    "values": {
+      "Show": 1,
+      "Tester": 1,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [
+      {
+        "ticket": 1,
+        "symbol": "XAUUSD",
+        "magics": [
+          9016
+        ],
+        "profit": [
+          60.11997225852696
+        ],
+        "commission": [
+          -0.4368199894934346
+        ],
+        "swap": [
+          0.41206933078572616
+        ]
+      },
+      {
+        "ticket": 2,
+        "symbol": "OTHER",
+        "magics": [
+          9006
+        ],
+        "profit": [
+          -33.39265901261284
+        ],
+        "commission": [
+          -0.5190498383919868
+        ],
+        "swap": [
+          -1.045834755335128
+        ]
+      }
+    ],
+    "info": [
+      0,
+      0
+    ],
+    "select": 1,
+    "total": 2,
+    "effects": [],
+    "error_mode": 1
+  },
+  {
+    "id": 183,
+    "tag": "mixed-history",
+    "values": {
+      "Show": 1,
+      "Tester": 1,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [
+      {
+        "ticket": 1,
+        "symbol": "OTHER",
+        "magics": [
+          9001
+        ],
+        "profit": [
+          10.603476104801828
+        ],
+        "commission": [
+          -0.8298753399052434
+        ],
+        "swap": [
+          -0.6986986159942479
+        ]
+      }
+    ],
+    "info": [
+      0,
+      0
+    ],
+    "select": 1,
+    "total": 1,
+    "effects": [],
+    "error_mode": 0
+  },
+  {
+    "id": 184,
+    "tag": "mixed-history",
+    "values": {
+      "Show": 1,
+      "Tester": 1,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [
+      {
+        "ticket": 1,
+        "symbol": "XAUUSD",
+        "magics": [
+          9013
+        ],
+        "profit": [
+          -14.582153994065166
+        ],
+        "commission": [
+          -2.2168397646657434
+        ],
+        "swap": [
+          0.24616962072493154
+        ]
+      },
+      {
+        "ticket": 2,
+        "symbol": "OTHER",
+        "magics": [
+          9004
+        ],
+        "profit": [
+          -30.65986802105634
+        ],
+        "commission": [
+          -0.4962992037800089
+        ],
+        "swap": [
+          -1.8868129636923485
+        ]
+      },
+      {
+        "ticket": 3,
+        "symbol": "OTHER",
+        "magics": [
+          9001
+        ],
+        "profit": [
+          -73.80940729619059
+        ],
+        "commission": [
+          0.9945260675511531
+        ],
+        "swap": [
+          1.5380429391702592
+        ]
+      }
+    ],
+    "info": [
+      0,
+      0
+    ],
+    "select": 1,
+    "total": 3,
+    "effects": [],
+    "error_mode": 1
+  },
+  {
+    "id": 185,
+    "tag": "mixed-history",
+    "values": {
+      "Show": 1,
+      "Tester": 1,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [
+      {
+        "ticket": 1,
+        "symbol": "XAUUSD",
+        "magics": [
+          9008
+        ],
+        "profit": [
+          -50.85408641021863
+        ],
+        "commission": [
+          -2.739941980500885
+        ],
+        "swap": [
+          1.2835778665108584
+        ]
+      },
+      {
+        "ticket": 2,
+        "symbol": "XAUUSD",
+        "magics": [
+          9014
+        ],
+        "profit": [
+          33.494478726428895
+        ],
+        "commission": [
+          0.9857919092101679
+        ],
+        "swap": [
+          1.71186653094255
+        ]
+      },
+      {
+        "ticket": 3,
+        "symbol": "XAUUSD",
+        "magics": [
+          9002
+        ],
+        "profit": [
+          89.33605347291751
+        ],
+        "commission": [
+          0.8555227181344192
+        ],
+        "swap": [
+          -1.5999559042124938
+        ]
+      }
+    ],
+    "info": [
+      0,
+      0
+    ],
+    "select": 1,
+    "total": 3,
+    "effects": [],
+    "error_mode": 0
+  },
+  {
+    "id": 186,
+    "tag": "mixed-history",
+    "values": {
+      "Show": 1,
+      "Tester": 1,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [],
+    "info": [
+      0,
+      0
+    ],
+    "select": 1,
+    "total": 0,
+    "effects": [],
+    "error_mode": 1
+  },
+  {
+    "id": 187,
+    "tag": "mixed-history",
+    "values": {
+      "Show": 1,
+      "Tester": 1,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [],
+    "info": [
+      0,
+      0
+    ],
+    "select": 1,
+    "total": 0,
+    "effects": [],
+    "error_mode": 0
+  },
+  {
+    "id": 188,
+    "tag": "mixed-history",
+    "values": {
+      "Show": 1,
+      "Tester": 1,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [
+      {
+        "ticket": 1,
+        "symbol": "OTHER",
+        "magics": [
+          9010
+        ],
+        "profit": [
+          82.42851616328574
+        ],
+        "commission": [
+          -2.8284342869327355
+        ],
+        "swap": [
+          1.4186120698439364
+        ]
+      }
+    ],
+    "info": [
+      0,
+      0
+    ],
+    "select": 1,
+    "total": 1,
+    "effects": [],
+    "error_mode": 1
+  },
+  {
+    "id": 189,
+    "tag": "mixed-history",
+    "values": {
+      "Show": 1,
+      "Tester": 1,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [
+      {
+        "ticket": 1,
+        "symbol": "OTHER",
+        "magics": [
+          9009
+        ],
+        "profit": [
+          97.7166180266137
+        ],
+        "commission": [
+          -0.22178966528126143
+        ],
+        "swap": [
+          1.52212885606151
+        ]
+      },
+      {
+        "ticket": 2,
+        "symbol": "OTHER",
+        "magics": [
+          9008
+        ],
+        "profit": [
+          10.332981715100047
+        ],
+        "commission": [
+          -1.662282772336567
+        ],
+        "swap": [
+          1.0479006907500557
+        ]
+      },
+      {
+        "ticket": 3,
+        "symbol": "OTHER",
+        "magics": [
+          9013
+        ],
+        "profit": [
+          -56.025968713577946
+        ],
+        "commission": [
+          -0.8899762707538654
+        ],
+        "swap": [
+          -0.3851412251504871
+        ]
+      },
+      {
+        "ticket": 4,
+        "symbol": "OTHER",
+        "magics": [
+          9016
+        ],
+        "profit": [
+          -24.807753544453234
+        ],
+        "commission": [
+          0.8854522058902194
+        ],
+        "swap": [
+          0.443266439725865
+        ]
+      }
+    ],
+    "info": [
+      0,
+      0
+    ],
+    "select": 1,
+    "total": 4,
+    "effects": [],
+    "error_mode": 1
+  },
+  {
+    "id": 190,
+    "tag": "mixed-history",
+    "values": {
+      "Show": 1,
+      "Tester": 1,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [
+      {
+        "ticket": 1,
+        "symbol": "XAUUSD",
+        "magics": [
+          9008
+        ],
+        "profit": [
+          -28.583654038752087
+        ],
+        "commission": [
+          -2.7742697978238167
+        ],
+        "swap": [
+          0.17546248801644326
+        ]
+      },
+      {
+        "ticket": 2,
+        "symbol": "XAUUSD",
+        "magics": [
+          8999
+        ],
+        "profit": [
+          98.41401712730084
+        ],
+        "commission": [
+          -1.3480443737707084
+        ],
+        "swap": [
+          -0.22684327571388874
+        ]
+      },
+      {
+        "ticket": 3,
+        "symbol": "XAUUSD",
+        "magics": [
+          9013
+        ],
+        "profit": [
+          -30.333216585860498
+        ],
+        "commission": [
+          0.16622120798796924
+        ],
+        "swap": [
+          0.2862545406390855
+        ]
+      },
+      {
+        "ticket": 4,
+        "symbol": "XAUUSD",
+        "magics": [
+          9008
+        ],
+        "profit": [
+          5.285423673173639
+        ],
+        "commission": [
+          -2.5878562928767934
+        ],
+        "swap": [
+          -0.47972160613331916
+        ]
+      }
+    ],
+    "info": [
+      0,
+      0
+    ],
+    "select": 1,
+    "total": 4,
+    "effects": [],
+    "error_mode": 0
+  },
+  {
+    "id": 191,
+    "tag": "mixed-history",
+    "values": {
+      "Show": 1,
+      "Tester": 1,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [
+      {
+        "ticket": 1,
+        "symbol": "OTHER",
+        "magics": [
+          9013
+        ],
+        "profit": [
+          96.20473171197185
+        ],
+        "commission": [
+          -2.810444520957972
+        ],
+        "swap": [
+          1.9882240535955984
+        ]
+      },
+      {
+        "ticket": 2,
+        "symbol": "XAUUSD",
+        "magics": [
+          9007
+        ],
+        "profit": [
+          36.41315177267896
+        ],
+        "commission": [
+          -2.512255461196269
+        ],
+        "swap": [
+          0.7377773918104715
+        ]
+      },
+      {
+        "ticket": 3,
+        "symbol": "OTHER",
+        "magics": [
+          9011
+        ],
+        "profit": [
+          80.37754978841394
+        ],
+        "commission": [
+          0.54515359723406
+        ],
+        "swap": [
+          -0.9536014574513274
+        ]
+      }
+    ],
+    "info": [
+      0,
+      0
+    ],
+    "select": 1,
+    "total": 3,
+    "effects": [],
+    "error_mode": 1
+  },
+  {
+    "id": 192,
+    "tag": "mixed-history",
+    "values": {
+      "Show": 1,
+      "Tester": 1,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [
+      {
+        "ticket": 1,
+        "symbol": "XAUUSD",
+        "magics": [
+          9016
+        ],
+        "profit": [
+          -96.22424326299995
+        ],
+        "commission": [
+          -1.8537267142025615
+        ],
+        "swap": [
+          -0.322060631596389
+        ]
+      },
+      {
+        "ticket": 2,
+        "symbol": "XAUUSD",
+        "magics": [
+          9011
+        ],
+        "profit": [
+          -64.54431000703144
+        ],
+        "commission": [
+          0.2720202095797113
+        ],
+        "swap": [
+          -0.3791406017374852
+        ]
+      },
+      {
+        "ticket": 3,
+        "symbol": "OTHER",
+        "magics": [
+          9011
+        ],
+        "profit": [
+          -91.91108146473175
+        ],
+        "commission": [
+          -2.1645528543339796
+        ],
+        "swap": [
+          0.5200045091463728
+        ]
+      },
+      {
+        "ticket": 4,
+        "symbol": "XAUUSD",
+        "magics": [
+          9004
+        ],
+        "profit": [
+          37.17671947422397
+        ],
+        "commission": [
+          -2.302175044371936
+        ],
+        "swap": [
+          1.2230881910396278
+        ]
+      }
+    ],
+    "info": [
+      0,
+      0
+    ],
+    "select": 1,
+    "total": 4,
+    "effects": [],
+    "error_mode": 1
+  },
+  {
+    "id": 193,
+    "tag": "mixed-history",
+    "values": {
+      "Show": 1,
+      "Tester": 1,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [],
+    "info": [
+      0,
+      0
+    ],
+    "select": 1,
+    "total": 0,
+    "effects": [],
+    "error_mode": 0
+  },
+  {
+    "id": 194,
+    "tag": "mixed-history",
+    "values": {
+      "Show": 1,
+      "Tester": 1,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [
+      {
+        "ticket": 1,
+        "symbol": "OTHER",
+        "magics": [
+          9015
+        ],
+        "profit": [
+          -84.16133897390202
+        ],
+        "commission": [
+          -2.651201933563842
+        ],
+        "swap": [
+          -1.5337588091375909
+        ]
+      }
+    ],
+    "info": [
+      0,
+      0
+    ],
+    "select": 1,
+    "total": 1,
+    "effects": [],
+    "error_mode": 0
+  },
+  {
+    "id": 195,
+    "tag": "mixed-history",
+    "values": {
+      "Show": 1,
+      "Tester": 1,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [],
+    "info": [
+      0,
+      0
+    ],
+    "select": 1,
+    "total": 0,
+    "effects": [],
+    "error_mode": 1
+  },
+  {
+    "id": 196,
+    "tag": "mixed-history",
+    "values": {
+      "Show": 1,
+      "Tester": 1,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [
+      {
+        "ticket": 1,
+        "symbol": "OTHER",
+        "magics": [
+          9003
+        ],
+        "profit": [
+          94.32630643136034
+        ],
+        "commission": [
+          -0.7133462562833559
+        ],
+        "swap": [
+          -1.5859319065344843
+        ]
+      },
+      {
+        "ticket": 2,
+        "symbol": "OTHER",
+        "magics": [
+          9003
+        ],
+        "profit": [
+          37.26046830893634
+        ],
+        "commission": [
+          0.3271967553185062
+        ],
+        "swap": [
+          -0.1721596876230551
+        ]
+      },
+      {
+        "ticket": 3,
+        "symbol": "XAUUSD",
+        "magics": [
+          9010
+        ],
+        "profit": [
+          -0.18156063418935275
+        ],
+        "commission": [
+          -1.5269554615177676
+        ],
+        "swap": [
+          1.7821871984904378
+        ]
+      }
+    ],
+    "info": [
+      0,
+      0
+    ],
+    "select": 1,
+    "total": 3,
+    "effects": [],
+    "error_mode": 1
+  },
+  {
+    "id": 197,
+    "tag": "mixed-history",
+    "values": {
+      "Show": 1,
+      "Tester": 1,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [
+      {
+        "ticket": 1,
+        "symbol": "XAUUSD",
+        "magics": [
+          9015
+        ],
+        "profit": [
+          -79.01730022707665
+        ],
+        "commission": [
+          -1.2121314275485058
+        ],
+        "swap": [
+          -1.0845706229485144
+        ]
+      },
+      {
+        "ticket": 2,
+        "symbol": "XAUUSD",
+        "magics": [
+          9000
+        ],
+        "profit": [
+          67.70090901778053
+        ],
+        "commission": [
+          -2.179207228772067
+        ],
+        "swap": [
+          -1.5435310778413185
+        ]
+      }
+    ],
+    "info": [
+      0,
+      0
+    ],
+    "select": 1,
+    "total": 2,
+    "effects": [],
+    "error_mode": 0
+  },
+  {
+    "id": 198,
+    "tag": "mixed-history",
+    "values": {
+      "Show": 1,
+      "Tester": 1,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [
+      {
+        "ticket": 1,
+        "symbol": "OTHER",
+        "magics": [
+          9008
+        ],
+        "profit": [
+          -2.235517773058831
+        ],
+        "commission": [
+          -0.7604871652514094
+        ],
+        "swap": [
+          -0.7435159518469772
+        ]
+      },
+      {
+        "ticket": 2,
+        "symbol": "XAUUSD",
+        "magics": [
+          9009
+        ],
+        "profit": [
+          18.20652040846211
+        ],
+        "commission": [
+          -2.850398158221074
+        ],
+        "swap": [
+          0.8244253057554216
+        ]
+      }
+    ],
+    "info": [
+      0,
+      0
+    ],
+    "select": 1,
+    "total": 2,
+    "effects": [],
+    "error_mode": 1
+  },
+  {
+    "id": 199,
+    "tag": "mixed-history",
+    "values": {
+      "Show": 1,
+      "Tester": 1,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [
+      {
+        "ticket": 1,
+        "symbol": "OTHER",
+        "magics": [
+          9000
+        ],
+        "profit": [
+          44.19285193195756
+        ],
+        "commission": [
+          -1.5445440698449988
+        ],
+        "swap": [
+          0.9189274285398317
+        ]
+      },
+      {
+        "ticket": 2,
+        "symbol": "XAUUSD",
+        "magics": [
+          9007
+        ],
+        "profit": [
+          -31.751395604719164
+        ],
+        "commission": [
+          -1.3153599462156778
+        ],
+        "swap": [
+          -0.015265903393564262
+        ]
+      },
+      {
+        "ticket": 3,
+        "symbol": "XAUUSD",
+        "magics": [
+          9011
+        ],
+        "profit": [
+          55.734840557486905
+        ],
+        "commission": [
+          -0.3872837763348178
+        ],
+        "swap": [
+          -0.03404071422968569
+        ]
+      }
+    ],
+    "info": [
+      0,
+      0
+    ],
+    "select": 1,
+    "total": 3,
+    "effects": [],
+    "error_mode": 0
+  },
+  {
+    "id": 200,
+    "tag": "mixed-history",
+    "values": {
+      "Show": 1,
+      "Tester": 1,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [
+      {
+        "ticket": 1,
+        "symbol": "XAUUSD",
+        "magics": [
+          9005
+        ],
+        "profit": [
+          88.84776129475588
+        ],
+        "commission": [
+          0.5797494425660092
+        ],
+        "swap": [
+          0.8352489266915342
+        ]
+      },
+      {
+        "ticket": 2,
+        "symbol": "OTHER",
+        "magics": [
+          9006
+        ],
+        "profit": [
+          -61.245919906294375
+        ],
+        "commission": [
+          -1.1557584032021615
+        ],
+        "swap": [
+          1.2335486403114184
+        ]
+      },
+      {
+        "ticket": 3,
+        "symbol": "OTHER",
+        "magics": [
+          9000
+        ],
+        "profit": [
+          -44.84782637032689
+        ],
+        "commission": [
+          -1.7160030222338118
+        ],
+        "swap": [
+          0.26324988805489546
+        ]
+      },
+      {
+        "ticket": 4,
+        "symbol": "XAUUSD",
+        "magics": [
+          9012
+        ],
+        "profit": [
+          72.74131076431715
+        ],
+        "commission": [
+          0.17928059247476202
+        ],
+        "swap": [
+          1.3531445160109379
+        ]
+      }
+    ],
+    "info": [
+      0,
+      0
+    ],
+    "select": 1,
+    "total": 4,
+    "effects": [],
+    "error_mode": 1
+  },
+  {
+    "id": 201,
+    "tag": "mixed-history",
+    "values": {
+      "Show": 1,
+      "Tester": 1,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [
+      {
+        "ticket": 1,
+        "symbol": "OTHER",
+        "magics": [
+          9001
+        ],
+        "profit": [
+          92.5274454193144
+        ],
+        "commission": [
+          -2.2685662772716455
+        ],
+        "swap": [
+          -0.23212698614157778
+        ]
+      }
+    ],
+    "info": [
+      0,
+      0
+    ],
+    "select": 1,
+    "total": 1,
+    "effects": [],
+    "error_mode": 0
+  },
+  {
+    "id": 202,
+    "tag": "mixed-history",
+    "values": {
+      "Show": 1,
+      "Tester": 1,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [
+      {
+        "ticket": 1,
+        "symbol": "XAUUSD",
+        "magics": [
+          9010
+        ],
+        "profit": [
+          40.346038858367365
+        ],
+        "commission": [
+          -2.096969597639385
+        ],
+        "swap": [
+          -1.733768215255147
+        ]
+      },
+      {
+        "ticket": 2,
+        "symbol": "OTHER",
+        "magics": [
+          9001
+        ],
+        "profit": [
+          23.78339700291741
+        ],
+        "commission": [
+          -2.3363771819181487
+        ],
+        "swap": [
+          1.4794850567938265
+        ]
+      }
+    ],
+    "info": [
+      0,
+      0
+    ],
+    "select": 1,
+    "total": 2,
+    "effects": [],
+    "error_mode": 1
+  },
+  {
+    "id": 203,
+    "tag": "mixed-history",
+    "values": {
+      "Show": 1,
+      "Tester": 1,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [
+      {
+        "ticket": 1,
+        "symbol": "XAUUSD",
+        "magics": [
+          9006
+        ],
+        "profit": [
+          64.37962185858254
+        ],
+        "commission": [
+          0.5938865984443562
+        ],
+        "swap": [
+          1.5846083373780573
+        ]
+      }
+    ],
+    "info": [
+      0,
+      0
+    ],
+    "select": 1,
+    "total": 1,
+    "effects": [],
+    "error_mode": 1
+  },
+  {
+    "id": 204,
+    "tag": "mixed-history",
+    "values": {
+      "Show": 1,
+      "Tester": 1,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [
+      {
+        "ticket": 1,
+        "symbol": "XAUUSD",
+        "magics": [
+          9016
+        ],
+        "profit": [
+          19.88022946718789
+        ],
+        "commission": [
+          -1.2309472273546462
+        ],
+        "swap": [
+          -1.4804664209057847
+        ]
+      },
+      {
+        "ticket": 2,
+        "symbol": "XAUUSD",
+        "magics": [
+          9011
+        ],
+        "profit": [
+          -28.609272320454338
+        ],
+        "commission": [
+          0.6716597560300057
+        ],
+        "swap": [
+          0.22947352325625436
+        ]
+      },
+      {
+        "ticket": 3,
+        "symbol": "XAUUSD",
+        "magics": [
+          9008
+        ],
+        "profit": [
+          -83.55489560096679
+        ],
+        "commission": [
+          -0.85509128152701
+        ],
+        "swap": [
+          0.8398501802124998
+        ]
+      }
+    ],
+    "info": [
+      0,
+      0
+    ],
+    "select": 1,
+    "total": 3,
+    "effects": [],
+    "error_mode": 1
+  },
+  {
+    "id": 205,
+    "tag": "mixed-history",
+    "values": {
+      "Show": 1,
+      "Tester": 1,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [
+      {
+        "ticket": 1,
+        "symbol": "OTHER",
+        "magics": [
+          9001
+        ],
+        "profit": [
+          21.193003749370718
+        ],
+        "commission": [
+          -0.0279426890412382
+        ],
+        "swap": [
+          1.10902444606256
+        ]
+      },
+      {
+        "ticket": 2,
+        "symbol": "OTHER",
+        "magics": [
+          9011
+        ],
+        "profit": [
+          92.90990667463069
+        ],
+        "commission": [
+          0.6360219231724491
+        ],
+        "swap": [
+          -0.8417544815967428
+        ]
+      }
+    ],
+    "info": [
+      0,
+      0
+    ],
+    "select": 1,
+    "total": 2,
+    "effects": [],
+    "error_mode": 0
+  },
+  {
+    "id": 206,
+    "tag": "mixed-history",
+    "values": {
+      "Show": 1,
+      "Tester": 1,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [
+      {
+        "ticket": 1,
+        "symbol": "OTHER",
+        "magics": [
+          9013
+        ],
+        "profit": [
+          15.325414146844565
+        ],
+        "commission": [
+          -1.4460673683314185
+        ],
+        "swap": [
+          -1.0498213427322804
+        ]
+      }
+    ],
+    "info": [
+      0,
+      0
+    ],
+    "select": 1,
+    "total": 1,
+    "effects": [],
+    "error_mode": 0
+  },
+  {
+    "id": 207,
+    "tag": "mixed-history",
+    "values": {
+      "Show": 1,
+      "Tester": 1,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [
+      {
+        "ticket": 1,
+        "symbol": "OTHER",
+        "magics": [
+          9006
+        ],
+        "profit": [
+          59.16504294965267
+        ],
+        "commission": [
+          -1.799487664918086
+        ],
+        "swap": [
+          -0.33587910908289986
+        ]
+      },
+      {
+        "ticket": 2,
+        "symbol": "OTHER",
+        "magics": [
+          8999
+        ],
+        "profit": [
+          -91.33583304682821
+        ],
+        "commission": [
+          -2.952802038074561
+        ],
+        "swap": [
+          -1.405321583865057
+        ]
+      },
+      {
+        "ticket": 3,
+        "symbol": "XAUUSD",
+        "magics": [
+          9016
+        ],
+        "profit": [
+          -79.51784847096062
+        ],
+        "commission": [
+          0.9173780467757897
+        ],
+        "swap": [
+          0.9254779174145638
+        ]
+      },
+      {
+        "ticket": 4,
+        "symbol": "OTHER",
+        "magics": [
+          9015
+        ],
+        "profit": [
+          25.550830733315678
+        ],
+        "commission": [
+          -0.5992000693934547
+        ],
+        "swap": [
+          -1.9560420980269493
+        ]
+      }
+    ],
+    "info": [
+      0,
+      0
+    ],
+    "select": 1,
+    "total": 4,
+    "effects": [],
+    "error_mode": 1
+  },
+  {
+    "id": 208,
+    "tag": "mixed-history",
+    "values": {
+      "Show": 1,
+      "Tester": 1,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [
+      {
+        "ticket": 1,
+        "symbol": "XAUUSD",
+        "magics": [
+          8999
+        ],
+        "profit": [
+          -48.45996310291034
+        ],
+        "commission": [
+          0.531627133085975
+        ],
+        "swap": [
+          -1.6907215246492657
+        ]
+      },
+      {
+        "ticket": 2,
+        "symbol": "OTHER",
+        "magics": [
+          8999
+        ],
+        "profit": [
+          -6.072275353313714
+        ],
+        "commission": [
+          -1.4266443730986054
+        ],
+        "swap": [
+          1.8708028748843986
+        ]
+      },
+      {
+        "ticket": 3,
+        "symbol": "OTHER",
+        "magics": [
+          9008
+        ],
+        "profit": [
+          -64.8119699485421
+        ],
+        "commission": [
+          -2.0811890666312105
+        ],
+        "swap": [
+          -0.13393532237508587
+        ]
+      }
+    ],
+    "info": [
+      0,
+      0
+    ],
+    "select": 1,
+    "total": 3,
+    "effects": [],
+    "error_mode": 0
+  },
+  {
+    "id": 209,
+    "tag": "mixed-history",
+    "values": {
+      "Show": 1,
+      "Tester": 1,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [
+      {
+        "ticket": 1,
+        "symbol": "OTHER",
+        "magics": [
+          9001
+        ],
+        "profit": [
+          -15.610941011809203
+        ],
+        "commission": [
+          -1.278478159188909
+        ],
+        "swap": [
+          -1.469757137314116
+        ]
+      },
+      {
+        "ticket": 2,
+        "symbol": "XAUUSD",
+        "magics": [
+          9007
+        ],
+        "profit": [
+          -28.438251591903068
+        ],
+        "commission": [
+          -0.4582759737475488
+        ],
+        "swap": [
+          0.40245017023963614
+        ]
+      }
+    ],
+    "info": [
+      0,
+      0
+    ],
+    "select": 1,
+    "total": 2,
+    "effects": [],
+    "error_mode": 1
+  },
+  {
+    "id": 210,
+    "tag": "mixed-history",
+    "values": {
+      "Show": 1,
+      "Tester": 1,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [
+      {
+        "ticket": 1,
+        "symbol": "XAUUSD",
+        "magics": [
+          9013
+        ],
+        "profit": [
+          -11.80505871967641
+        ],
+        "commission": [
+          0.1524305532145256
+        ],
+        "swap": [
+          1.2447984451550882
+        ]
+      },
+      {
+        "ticket": 2,
+        "symbol": "OTHER",
+        "magics": [
+          8999
+        ],
+        "profit": [
+          -4.507115200522065
+        ],
+        "commission": [
+          -1.259567530578301
+        ],
+        "swap": [
+          0.560633324289384
+        ]
+      },
+      {
+        "ticket": 3,
+        "symbol": "XAUUSD",
+        "magics": [
+          9008
+        ],
+        "profit": [
+          -25.842900849299937
+        ],
+        "commission": [
+          -0.7614206806002173
+        ],
+        "swap": [
+          -1.1883555339858085
+        ]
+      },
+      {
+        "ticket": 4,
+        "symbol": "XAUUSD",
+        "magics": [
+          9004
+        ],
+        "profit": [
+          62.600977569743065
+        ],
+        "commission": [
+          -1.3226312878246431
+        ],
+        "swap": [
+          -0.1432348855213652
+        ]
+      }
+    ],
+    "info": [
+      0,
+      0
+    ],
+    "select": 1,
+    "total": 4,
+    "effects": [],
+    "error_mode": 1
+  },
+  {
+    "id": 211,
+    "tag": "mixed-history",
+    "values": {
+      "Show": 1,
+      "Tester": 1,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [
+      {
+        "ticket": 1,
+        "symbol": "OTHER",
+        "magics": [
+          9007
+        ],
+        "profit": [
+          90.21242080084198
+        ],
+        "commission": [
+          0.32308406713424453
+        ],
+        "swap": [
+          -0.9667295099776188
+        ]
+      }
+    ],
+    "info": [
+      0,
+      0
+    ],
+    "select": 1,
+    "total": 1,
+    "effects": [],
+    "error_mode": 1
+  },
+  {
+    "id": 212,
+    "tag": "mixed-history",
+    "values": {
+      "Show": 1,
+      "Tester": 1,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [
+      {
+        "ticket": 1,
+        "symbol": "XAUUSD",
+        "magics": [
+          9005
+        ],
+        "profit": [
+          -7.174961091188891
+        ],
+        "commission": [
+          0.6763715999001092
+        ],
+        "swap": [
+          -1.5876393441975178
+        ]
+      },
+      {
+        "ticket": 2,
+        "symbol": "OTHER",
+        "magics": [
+          9000
+        ],
+        "profit": [
+          44.83239369822016
+        ],
+        "commission": [
+          0.4514298752498531
+        ],
+        "swap": [
+          -1.7214120480263917
+        ]
+      }
+    ],
+    "info": [
+      0,
+      0
+    ],
+    "select": 1,
+    "total": 2,
+    "effects": [],
+    "error_mode": 1
+  },
+  {
+    "id": 213,
+    "tag": "mixed-history",
+    "values": {
+      "Show": 1,
+      "Tester": 1,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [],
+    "info": [
+      0,
+      0
+    ],
+    "select": 1,
+    "total": 0,
+    "effects": [],
+    "error_mode": 0
+  },
+  {
+    "id": 214,
+    "tag": "mixed-history",
+    "values": {
+      "Show": 1,
+      "Tester": 1,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [
+      {
+        "ticket": 1,
+        "symbol": "XAUUSD",
+        "magics": [
+          9007
+        ],
+        "profit": [
+          18.464301239518875
+        ],
+        "commission": [
+          -0.6101288698148721
+        ],
+        "swap": [
+          0.06113639276085259
+        ]
+      }
+    ],
+    "info": [
+      0,
+      0
+    ],
+    "select": 1,
+    "total": 1,
+    "effects": [],
+    "error_mode": 1
+  },
+  {
+    "id": 215,
+    "tag": "mixed-history",
+    "values": {
+      "Show": 1,
+      "Tester": 1,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [
+      {
+        "ticket": 1,
+        "symbol": "XAUUSD",
+        "magics": [
+          9016
+        ],
+        "profit": [
+          44.9872637675939
+        ],
+        "commission": [
+          -2.171373731020026
+        ],
+        "swap": [
+          -0.9689100857074067
+        ]
+      },
+      {
+        "ticket": 2,
+        "symbol": "OTHER",
+        "magics": [
+          9016
+        ],
+        "profit": [
+          -85.59341111946017
+        ],
+        "commission": [
+          0.06058509372299303
+        ],
+        "swap": [
+          1.9535830828751442
+        ]
+      },
+      {
+        "ticket": 3,
+        "symbol": "OTHER",
+        "magics": [
+          8999
+        ],
+        "profit": [
+          39.27411783199429
+        ],
+        "commission": [
+          -0.9256491934028528
+        ],
+        "swap": [
+          -0.9154584582065404
+        ]
+      }
+    ],
+    "info": [
+      0,
+      0
+    ],
+    "select": 1,
+    "total": 3,
+    "effects": [],
+    "error_mode": 1
+  },
+  {
+    "id": 216,
+    "tag": "mixed-history",
+    "values": {
+      "Show": 1,
+      "Tester": 1,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [
+      {
+        "ticket": 1,
+        "symbol": "OTHER",
+        "magics": [
+          9002
+        ],
+        "profit": [
+          -20.951524653719062
+        ],
+        "commission": [
+          -2.627826097686432
+        ],
+        "swap": [
+          -1.7588907916047103
+        ]
+      },
+      {
+        "ticket": 2,
+        "symbol": "XAUUSD",
+        "magics": [
+          9006
+        ],
+        "profit": [
+          69.77598560858905
+        ],
+        "commission": [
+          -0.6559569737431041
+        ],
+        "swap": [
+          -0.17855050234229752
+        ]
+      },
+      {
+        "ticket": 3,
+        "symbol": "OTHER",
+        "magics": [
+          9008
+        ],
+        "profit": [
+          88.99885485999332
+        ],
+        "commission": [
+          0.10651138228744461
+        ],
+        "swap": [
+          -0.6981252646068694
+        ]
+      }
+    ],
+    "info": [
+      0,
+      0
+    ],
+    "select": 1,
+    "total": 3,
+    "effects": [],
+    "error_mode": 1
+  },
+  {
+    "id": 217,
+    "tag": "mixed-history",
+    "values": {
+      "Show": 1,
+      "Tester": 1,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [
+      {
+        "ticket": 1,
+        "symbol": "OTHER",
+        "magics": [
+          9012
+        ],
+        "profit": [
+          74.51163251279633
+        ],
+        "commission": [
+          -1.209966372671679
+        ],
+        "swap": [
+          -1.6270238478964227
+        ]
+      }
+    ],
+    "info": [
+      0,
+      0
+    ],
+    "select": 1,
+    "total": 1,
+    "effects": [],
+    "error_mode": 1
+  },
+  {
+    "id": 218,
+    "tag": "mixed-history",
+    "values": {
+      "Show": 1,
+      "Tester": 1,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [],
+    "info": [
+      0,
+      0
+    ],
+    "select": 1,
+    "total": 0,
+    "effects": [],
+    "error_mode": 1
+  },
+  {
+    "id": 219,
+    "tag": "mixed-history",
+    "values": {
+      "Show": 1,
+      "Tester": 1,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [
+      {
+        "ticket": 1,
+        "symbol": "OTHER",
+        "magics": [
+          9008
+        ],
+        "profit": [
+          -67.2082036546112
+        ],
+        "commission": [
+          -2.632514738015707
+        ],
+        "swap": [
+          -0.963626772114103
+        ]
+      },
+      {
+        "ticket": 2,
+        "symbol": "XAUUSD",
+        "magics": [
+          9016
+        ],
+        "profit": [
+          -71.7540602330556
+        ],
+        "commission": [
+          -0.5363370820151916
+        ],
+        "swap": [
+          0.3713408668298759
+        ]
+      },
+      {
+        "ticket": 3,
+        "symbol": "OTHER",
+        "magics": [
+          9008
+        ],
+        "profit": [
+          24.865922439198698
+        ],
+        "commission": [
+          0.5515776096449772
+        ],
+        "swap": [
+          0.7299067464179076
+        ]
+      }
+    ],
+    "info": [
+      0,
+      0
+    ],
+    "select": 1,
+    "total": 3,
+    "effects": [],
+    "error_mode": 0
+  },
+  {
+    "id": 220,
+    "tag": "mixed-history",
+    "values": {
+      "Show": 1,
+      "Tester": 1,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [
+      {
+        "ticket": 1,
+        "symbol": "XAUUSD",
+        "magics": [
+          9014
+        ],
+        "profit": [
+          -36.5787762516137
+        ],
+        "commission": [
+          -1.738884709045903
+        ],
+        "swap": [
+          0.3307885910023809
+        ]
+      },
+      {
+        "ticket": 2,
+        "symbol": "OTHER",
+        "magics": [
+          9008
+        ],
+        "profit": [
+          69.48746324599267
+        ],
+        "commission": [
+          -2.8576497914953762
+        ],
+        "swap": [
+          0.14557635212772801
+        ]
+      },
+      {
+        "ticket": 3,
+        "symbol": "XAUUSD",
+        "magics": [
+          9014
+        ],
+        "profit": [
+          -71.80388249786382
+        ],
+        "commission": [
+          0.2803012861901406
+        ],
+        "swap": [
+          0.08954177079878844
+        ]
+      },
+      {
+        "ticket": 4,
+        "symbol": "XAUUSD",
+        "magics": [
+          9013
+        ],
+        "profit": [
+          -21.60488266656111
+        ],
+        "commission": [
+          -2.9900448736238094
+        ],
+        "swap": [
+          1.087858286910159
+        ]
+      }
+    ],
+    "info": [
+      0,
+      0
+    ],
+    "select": 1,
+    "total": 4,
+    "effects": [],
+    "error_mode": 0
+  },
+  {
+    "id": 221,
+    "tag": "mixed-history",
+    "values": {
+      "Show": 1,
+      "Tester": 1,
+      "Seed": 9000,
+      "PanelSymbol": "XAUUSD",
+      "Wins": 7.0,
+      "Losses": 8.0
+    },
+    "deals": [],
+    "info": [
+      0,
+      0
+    ],
+    "select": 1,
+    "total": 0,
+    "effects": [],
+    "error_mode": 1
+  }
+]
