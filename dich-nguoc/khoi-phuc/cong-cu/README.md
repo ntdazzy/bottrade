@@ -311,3 +311,7 @@ Phép kiểm ghép mới:
 - `xuat-ma-co-du-lieu.ps1 -Bot N -Metadata ... -Ghidra ... -Java ... -Run ...`
   xuất C từ bản chụp/metadata đã kiểm; giữ lỗi từng hàm, không xem C làMQL5.
   Thư mục dự án Ghidra không được chứa thành phần bắt đầu dấu chấm.
+
+- `BotNAllHeadersAPICompile.mq5`: biên dịch toàn bộ tệp tiêu đề của bot N
+  trong một đơn vị dịch; bot1 84 tệp và bot3 91 tệp đều 0 lỗi/0 cảnh báo.
+  Đây là kiểm ghép mã, chưa phải kiểm chạy EA.

@@ -874,4 +874,8 @@
 /bot-cua-toi-[13]/bang-chung/kiem-quan-ly-vi-the/b[13]-lifecycle-*/** -text
 /cong-cu/kiem-vong-doi-bot-1-3.py -text
 /danh-gia-doc-lap/lifecycle-20261028-r1/** -text
+# Whole-header compile-only integration.
+/bot-cua-toi-[13]/source/MQL5/Scripts/bot-cua-toi-[13]/Bot[13]AllHeadersAPICompile.mq5 -text
+/bot-cua-toi-[13]/bang-chung/bien-dich/b[13]-all-headers-api-*/** -text
+/danh-gia-doc-lap/all-headers-20261028-r1/** -text
 

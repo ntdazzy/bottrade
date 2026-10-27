@@ -1,0 +1,20 @@
+{
+  "checks": [
+    {
+      "bot": 1,
+      "headers": 84,
+      "errors": 0,
+      "warnings": 0,
+      "build": "b1-all-headers-api-20261028-r1"
+    },
+    {
+      "bot": 3,
+      "headers": 91,
+      "errors": 0,
+      "warnings": 0,
+      "build": "b3-all-headers-api-20261028-r1"
+    }
+  ],
+  "whole_ea_complete": false,
+  "scope": "Compile-only integration"
+}
