@@ -1,8 +1,9 @@
 # Nhánh dự phòng NFP — phần phân tích cho bước ghép tiếp
 
 Đã đối chiếu raw1b7ae..1bdfd/23e0b..24437 và nguồn hiện hành
-AmericanDST/PositionSelection/PendingDistanceCancel. Chưa viết hoặc
-xác nhận toàn nhánh dự phòng này đạt.
+AmericanDST/PositionSelection/PendingDistanceCancel. Phần ghép hiện hành và phép kiểm107/107ca mỗi bot đã có tại
+[nfp-filter-20261027-r1](../nfp-filter-20261027-r1/SPEC.md); các ghi chú
+phân tích dưới đây giữ vị trí và hành vi đã dùng để viết nguồn.
 
 - Gọi AmericanDST trước. Giá trịfalse chọn bù3600giây, true chọn0.
   Sau đó gọi helper lấy năm: TimeCurrent(MqlDateTime&) rồi đọc trường

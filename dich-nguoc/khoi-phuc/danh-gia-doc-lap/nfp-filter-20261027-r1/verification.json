@@ -1,0 +1,58 @@
+{
+  "checks": [
+    {
+      "bot": 1,
+      "cases": 107,
+      "matched": 107,
+      "sdk_calls": 3723,
+      "child_calls": {
+        "calendar": 62,
+        "dst": 29,
+        "year": 498,
+        "month": 169,
+        "cancel_buy": 60,
+        "cancel_sell": 60,
+        "filtered_buy": 60,
+        "filtered_sell": 60,
+        "guard_close": 17,
+        "close": 17,
+        "filling": 17,
+        "send": 42,
+        "string_copy": 486,
+        "string_append": 92,
+        "array_cleanup": 122
+      },
+      "parent_instructions": 406,
+      "result_sha256": "2c636b9f7efb9c0f410dd1106e16f04c24898b9f32c524941ee6b6ad2af8e96b",
+      "sdk_tape_sha256": "cb63f4e2e1dc8a9d57ba068027d6fd486b42c1982a37f163e65ed3f2b7345dfd"
+    },
+    {
+      "bot": 3,
+      "cases": 107,
+      "matched": 107,
+      "sdk_calls": 3723,
+      "child_calls": {
+        "calendar": 62,
+        "dst": 29,
+        "year": 498,
+        "month": 169,
+        "cancel_buy": 60,
+        "cancel_sell": 60,
+        "filtered_buy": 60,
+        "filtered_sell": 60,
+        "guard_close": 17,
+        "close": 17,
+        "filling": 17,
+        "send": 42,
+        "string_copy": 486,
+        "string_append": 20,
+        "array_cleanup": 122
+      },
+      "parent_instructions": 450,
+      "result_sha256": "2c636b9f7efb9c0f410dd1106e16f04c24898b9f32c524941ee6b6ad2af8e96b",
+      "sdk_tape_sha256": "cb63f4e2e1dc8a9d57ba068027d6fd486b42c1982a37f163e65ed3f2b7345dfd"
+    }
+  ],
+  "independent_review": "nfp_full_branch_review: no publication-blocking findings in source, unchanged native algorithms, SDK tape or shared state",
+  "whole_eas_complete": 0
+}

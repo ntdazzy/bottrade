@@ -1,3 +1,10 @@
+Đã ghép nguyên nhánh NFP trong `Bot3NfpFilter.mqh`: lịch kinh tế,
+lịch dự phòng, kiểm giờ, hủy lệnh chờ và đóng vị thế qua gửi yêu cầu.
+**107/107tình huống khớp**, so3.723lần gọi dịch vụ và trạng thái trước
+mỗi lần/cuối nhánh; đã đi qua42lần gửi và17lần thân đóng vị thế.
+Mã/bộ kiểm trực tiếp biên dịch0lỗi/0cảnh báo. Dữ liệu dịch vụ được cấp;
+chưa là toànEA. [Phạm vi ghép](../danh-gia-doc-lap/nfp-filter-20261027-r1/SPEC.md).
+
 Đã dựng `Bot3NewsSelector.mqh` chọn thời điểm và nhãn tin theo đúng
 thứ tự đọc giờ máy chủ: **961/961ca khớp**, gồm946ca kiểm lại hàm số
 cũ sau sửa phép nhân phút32bit. Đã so nhãn rỗng/NFP/Interest rates/CPI,

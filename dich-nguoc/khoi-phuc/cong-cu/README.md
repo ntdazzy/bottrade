@@ -1,3 +1,12 @@
+- `kiem-nfp-toan-nhanh-bot-1-3.py prepare|mql5|original|compare BOT RUN`:
+  nguyên nhánhNFPvà các thân lịch/giờ/hủy/đóng/gửi. Chạy mql5 trước
+  original để đo trả lời đổi số/ngày/chuỗi/toán học của MT5; kiểm gốc
+  phải yêu cầu đúng đầu vào/thứ tự và trạng thái trước mỗi dịch vụ.
+  `mql5` cần `--build BUILD`. Lượt b1/b3-nfp-filter-20261027-r2:
+  107ca,3.723dịch vụ,42gửi/17đóng mỗi bot; chưa là toàn evaluator/EA.
+- `tao-bo-kiem-nfp-toan-nhanh.py`: tạo hai Script ghi dịch vụ từ cùng
+  bộ trường/35trường giao dịch đã kiểm; không thay thuật toán trong source bot.
+
 - `kiem-chon-tin-day-du-bot-1-3.py prepare|original|mql5|compare BOT RUN`:
   selector đầy đủ qua helperchuỗi gốc, so nhãn/thời điểm/trạng thái và
   thứ tự giờ máy chủ;961ca mỗi bot, gồm946ca phần số học sửa tràn32bit.

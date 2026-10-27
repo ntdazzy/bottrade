@@ -25,6 +25,8 @@ và bảng300ô; [phân tích còn phải ghép](danh-gia-doc-lap/news-selector-
 Quét/hủy mua-bán theo khoảng cách cũng đã có698/698ca mỗi bot qua
 thân hủy/gửi; [phạm vi](danh-gia-doc-lap/pending-distance-20261027-r1/SPEC.md).
 
-Còn tìm lịch lãi suất/CPI, toàn nhánh gọi lịch/dự phòng, ghép hủy/đóng
-khi tin chặn, dữ liệu lịch trực tuyến, giờUTCqua mạng, lỗi cấp phát
-và toànEA. Chưa thể xác nhận toàn bộ bộ lọc tin hoặc bot đạt100%.
+Đã ghép toàn nhánhNFPqua nguyên lịch/giờ/hủy/đóng/gửi:107/107ca
+mỗi bot, so3.723dịch vụ và các trạng thái chung;
+[phạm vi ghép](danh-gia-doc-lap/nfp-filter-20261027-r1/SPEC.md).
+Còn lịch/điều phối lãi suất/CPI, dữ liệu trực tuyến, giờUTCqua mạng,
+lỗi cấp phát và toànEA. Chưa thể xác nhận toàn bộ bộ lọc tin hoặc bot đạt100%.

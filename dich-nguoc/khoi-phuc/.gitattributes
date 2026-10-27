@@ -643,3 +643,16 @@
 /cong-cu/kiem-chon-tin-day-du-bot-1-3.py -text
 /danh-gia-doc-lap/news-selector-20261027-r1/** -text
 /danh-gia-doc-lap/news-selector-20261027-r1/*-native-*.txt whitespace=-blank-at-eol,-blank-at-eof,cr-at-eol
+
+/bot-cua-toi-1/source/MQL5/Include/bot-cua-toi-1/Bot1NfpFilter.mqh -text
+/bot-cua-toi-1/source/MQL5/Scripts/bot-cua-toi-1/Bot1NfpFilter*.mq5 -text
+/bot-cua-toi-1/bang-chung/kiem-quan-ly-vi-the/b1-nfp-filter-*/** -text
+/bot-cua-toi-1/bang-chung/bien-dich/b1-nfp-filter-*/** -text
+/bot-cua-toi-3/source/MQL5/Include/bot-cua-toi-3/Bot3NfpFilter.mqh -text
+/bot-cua-toi-3/source/MQL5/Scripts/bot-cua-toi-3/Bot3NfpFilter*.mq5 -text
+/bot-cua-toi-3/bang-chung/kiem-quan-ly-vi-the/b3-nfp-filter-*/** -text
+/bot-cua-toi-3/bang-chung/bien-dich/b3-nfp-filter-*/** -text
+/cong-cu/kiem-nfp-toan-nhanh-bot-1-3.py -text
+/cong-cu/tao-bo-kiem-nfp-toan-nhanh.py -text
+/danh-gia-doc-lap/nfp-filter-20261027-r1/** -text
+/danh-gia-doc-lap/nfp-filter-20261027-r1/*-native-*.txt whitespace=-blank-at-eol,-blank-at-eof,cr-at-eol

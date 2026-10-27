@@ -1,0 +1,200 @@
+[
+  {
+    "bot": 1,
+    "parent_begin": "0x1b44f",
+    "parent_end": "0x1bdfd",
+    "evaluator_sha256": "45d53270186b7019a8721e0cf3734a61aac8e8660c70f7e602849b1c298d7cbd",
+    "listing": "bot1-native-1b44f-1bdfd.txt",
+    "children": [
+      {
+        "name": "calendar",
+        "begin": "0x61b0",
+        "end": "0x65f3",
+        "sha256": "c0b3ee5403b7957c86efd5e90b42827068a7003096abb7ce92b0511ebbf9d1ed"
+      },
+      {
+        "name": "dst",
+        "begin": "0x17840",
+        "end": "0x17d17",
+        "sha256": "ad3a659ce19f3082f5d48041bd01838900c5ae09a012347c6be1b7f8759763b4"
+      },
+      {
+        "name": "year",
+        "begin": "0x2ffb0",
+        "end": "0x2ffd8",
+        "sha256": "1b83250e588a8c3fed0020d8d9ac4c8c7d8fbb9048fa91712248774b5c85b563"
+      },
+      {
+        "name": "month",
+        "begin": "0x2ffe0",
+        "end": "0x30008",
+        "sha256": "a933daabd9e5cfbff6e815b24834eb6f81c69d5bd5e1324f75b73e80327c5712"
+      },
+      {
+        "name": "cancel_buy",
+        "begin": "0x2f5c0",
+        "end": "0x2f7dd",
+        "sha256": "01d72da0e079969614793876b5980284cb253defde41f75f9811e4b3372f0268"
+      },
+      {
+        "name": "cancel_sell",
+        "begin": "0x2f7e0",
+        "end": "0x2f9fd",
+        "sha256": "b8b370d5defab96f03e578f0a34b3016a16d86ee934c709621ff4e63bdaa767b"
+      },
+      {
+        "name": "filtered_buy",
+        "begin": "0x2fa00",
+        "end": "0x2fcd9",
+        "sha256": "75bc2c18afe63731051cd723f09a0acf0ad55b3a66c3763a7513c674ca471e2d"
+      },
+      {
+        "name": "filtered_sell",
+        "begin": "0x2fce0",
+        "end": "0x2ffa8",
+        "sha256": "e17314e890e47dbfce08630d5c419531fa9b1bcc5c89077fbdcfd84e61b4d930"
+      },
+      {
+        "name": "guard_close",
+        "begin": "0x3d010",
+        "end": "0x3d1fc",
+        "sha256": "0f2ddcbfc4c63764b65c9a256db0e107dbd7570aada08008040c62abc99bb3cf"
+      },
+      {
+        "name": "close",
+        "begin": "0x22c40",
+        "end": "0x231bc",
+        "sha256": "6666360dee2c53c90ef5a307bfd5e09993224d529644ff91aff2494ef0975bf1"
+      },
+      {
+        "name": "filling",
+        "begin": "0x231c0",
+        "end": "0x235b6",
+        "sha256": "8ff1c9b76c8c8629560f30307f42944a05858e1cb103c54d62fa0ff7c371d23a"
+      },
+      {
+        "name": "send",
+        "begin": "0x950",
+        "end": "0xb5e",
+        "sha256": "02ea4d7bfe8f743d650e6f88c9ebb368e72f974853f13c04a82446a03f979824"
+      },
+      {
+        "name": "string_copy",
+        "begin": "0x5c0",
+        "end": "0x7d8",
+        "sha256": "a80053a62a68051182668a3855d1cb65ecd436caef015d772079945cb3c075bb"
+      },
+      {
+        "name": "string_append",
+        "begin": "0x4a0",
+        "end": "0x5bd",
+        "sha256": "28fad928b2986d5302ebcbfc5eb31ca399a52bfea4d3815af424be22415391c9"
+      },
+      {
+        "name": "array_cleanup",
+        "begin": "0x7e0",
+        "end": "0x8a5",
+        "sha256": "426b4b95eec7aad667721bb4ddc6446c739beb5c3ad4e28a7de56f87a00eec91"
+      }
+    ]
+  },
+  {
+    "bot": 3,
+    "parent_begin": "0x2372b",
+    "parent_end": "0x24437",
+    "evaluator_sha256": "6bead161fa97b6568b546e8c86a4ff03fdda55d6fb226a52b58dd14ec050d920",
+    "listing": "bot3-native-2372b-24437.txt",
+    "children": [
+      {
+        "name": "calendar",
+        "begin": "0x6ad0",
+        "end": "0x6f13",
+        "sha256": "2dee9d0e2fda26923648e75141e15be6b6b055f60582c8c8fe6736006cd2d3d4"
+      },
+      {
+        "name": "dst",
+        "begin": "0x7e20",
+        "end": "0x82f7",
+        "sha256": "89a100acb20d937bc0b7f9ec261baf1ec1c62d4c5a469f643cac144cb6b92db8"
+      },
+      {
+        "name": "year",
+        "begin": "0x3d5f0",
+        "end": "0x3d618",
+        "sha256": "435d1e95d3eeaa236560b1e73c0ce70e5605aa972992992a4554240d1c712d92"
+      },
+      {
+        "name": "month",
+        "begin": "0x3d620",
+        "end": "0x3d648",
+        "sha256": "d6e126e8c113eca2822230ff64792f030eb95d5971b8486273e3cf2ec36da924"
+      },
+      {
+        "name": "cancel_buy",
+        "begin": "0x3ca00",
+        "end": "0x3cc1d",
+        "sha256": "2ca1558cfb8ab905c4c570da4c7f3f63a5f9d68a1e1c5edef85a62f969d95677"
+      },
+      {
+        "name": "cancel_sell",
+        "begin": "0x3cc20",
+        "end": "0x3ce3d",
+        "sha256": "94661a0c5afa9b3973e86b1b28552ba724f6eabe9a8bedd08437002927943646"
+      },
+      {
+        "name": "filtered_buy",
+        "begin": "0x3ce40",
+        "end": "0x3d21a",
+        "sha256": "dbe817e348abd0ef6030cb3dea6d323be9d2dd32208a6836d09b245448ef6dad"
+      },
+      {
+        "name": "filtered_sell",
+        "begin": "0x3d220",
+        "end": "0x3d5e9",
+        "sha256": "3f537f9bb5c02a80c658bf80f5b840d7b6377ba5df6793d44c5f3d2bc8f54279"
+      },
+      {
+        "name": "guard_close",
+        "begin": "0x47d20",
+        "end": "0x47f0c",
+        "sha256": "187cb4166613486af42d77b33219fd76967b06b726229f1ef4aefa1dccd1fdb8"
+      },
+      {
+        "name": "close",
+        "begin": "0x2e370",
+        "end": "0x2e8ec",
+        "sha256": "053b40b4d431c8643c461ab4071c27b91bc5bb136e1bf093feca582286b5c41f"
+      },
+      {
+        "name": "filling",
+        "begin": "0x2e8f0",
+        "end": "0x2ece6",
+        "sha256": "9345f9b4eb47f0bc99625e70ef777e0a6d64488aa37ea9ee16c0379483e08e8f"
+      },
+      {
+        "name": "send",
+        "begin": "0x950",
+        "end": "0xb5e",
+        "sha256": "cd994d32c983116d8c365399e820c82ac239932d62ac7f18f80b1dcc72195fcc"
+      },
+      {
+        "name": "string_copy",
+        "begin": "0x5c0",
+        "end": "0x7d8",
+        "sha256": "0ae5fe1cab02a23b2fba400c9943c3b157df1b3d7fb636a97feef48a25e40358"
+      },
+      {
+        "name": "string_append",
+        "begin": "0x4a0",
+        "end": "0x5bd",
+        "sha256": "12fd4989bd3c45d8d6ba53c5bd3d6d08a77438d8587de43e072a22ee0153a046"
+      },
+      {
+        "name": "array_cleanup",
+        "begin": "0x7e0",
+        "end": "0x8a5",
+        "sha256": "44cfb833e9b59a41975f482acc19d0d17c3256dbc92d949d740246db47d8aa55"
+      }
+    ]
+  }
+]

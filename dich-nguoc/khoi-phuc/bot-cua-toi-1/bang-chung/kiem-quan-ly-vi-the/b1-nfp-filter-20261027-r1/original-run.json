@@ -1,0 +1,41 @@
+{
+  "original_ex5_sha256": "a3b0de423a06e10ebedc279307b93d7cb9188ba2bb5de77131a913c865b0e922",
+  "sources_sha256": {
+    "Include/bot-cua-toi-1/Bot1Filling.mqh": "d01485811439d971833de028c791c5abb6cb64ba5b9c20228ca8785453a6615d",
+    "Include/bot-cua-toi-1/Bot1AmericanDST.mqh": "d688edbfb9c2829e1b1db46e6a80aeac9ae000053498192d8647668acebb9acc",
+    "Include/bot-cua-toi-1/Bot1PositionSelection.mqh": "56a15c3e66d7597834b04594647298143658c5c213cc54e8091cf09b481ef15f",
+    "Include/bot-cua-toi-1/Bot1OrderCancel.mqh": "261f1731c6331cdb2d56d858770627ad4c88319e708df3e360a6a6e5934e8789",
+    "Include/bot-cua-toi-1/Bot1PositionClose.mqh": "03c79f46a202b8a06ddab6fdae88291d4dbf30a0c2d6f99c0ff30fe24ffc21d5",
+    "Include/bot-cua-toi-1/Bot1TradeMessages.mqh": "af36245e2dd03ec12d5808457530c4937bc354a9a68b5a1f70f8bc394f5ab5a3",
+    "Include/bot-cua-toi-1/Bot1TradeSend.mqh": "dddd20fb58daa7cd60ce87f08c89be3a204ce170e89418c801b24175d4d12e8c",
+    "Include/bot-cua-toi-1/Bot1PendingRequest.mqh": "46ffbb7da4d469533e1a665b5b666ccbfc755ff973ae5e5ebabf5cdd9051700d",
+    "Scripts/bot-cua-toi-1/Bot1NfpFilterCheck.mq5": "adac0d106b7c2fe5d8570b9ae2d3a53a74ea564b18a2db0ea4130ab945922714",
+    "Include/bot-cua-toi-1/Bot1NfpFilter.mqh": "5ace4fd3cdf31c5d07dd02ac168d35aaad88b0b53febde60d8daef3e1dcf5b7f",
+    "Include/bot-cua-toi-1/Bot1NewsBlock.mqh": "776c5957d4ea88a9f18ee2c59ad29cc8a6563f0f4f59877d6791ddec6d1bef1f",
+    "Include/bot-cua-toi-1/Bot1NfpCalendar.mqh": "7b2524e93192d694972a3bfaa5a78764ee9d0360f01df5b7713aeb5186844875",
+    "Include/bot-cua-toi-1/Bot1PendingDistanceCancel.mqh": "59521d8e23de6c625471959560ffa8752ce5f6a27a74be8d4b5432b9dc9f0d7d",
+    "Include/bot-cua-toi-1/Bot1NewsSelector.mqh": "b08563167e86648a9ca4b300bf2642142167db808f817244a3ee972aba68f207"
+  },
+  "helpers_sha256": {
+    "cong-cu/kiem-nfp-toan-nhanh-bot-1-3.py": "f4b1b79e1d804b1efc52a24cbce8fbf4d47aad08888a568546b97d46514f3b4b",
+    "doi-chung-mt5/thu-tu-truong-lenh-class-20261024/layout-class-r1/trade-layout.json": "01e11f8b969576faa9647a53efeaf6a2f7748baa7711a5bc2730981c8883def1",
+    "cong-cu/kiem-gia-vao-bot-1-3.py": "22394e48932feb7242b967aa58e327d2990402f12bfe52621916f64914c9dac2",
+    "cong-cu/kiem-muc-gia-bot-1-3.py": "a6c447ca80029fb63ced0c9d1673bb14222a7736b04df5c410f280f8471d6a35",
+    "cong-cu/kiem-ban-git-quan-ly.py": "7186478774b34e0d72b4594fbcc85972d9b4c07ed02160987d46d34f39dcb160",
+    "cong-cu/kiem-khoi-luong-hop-le-bot-1-3.py": "8251fb4423d6f5f2e1b79a1c53dbb25fb5a6c568bb61cddef23396dc982243f0",
+    "danh-gia-doc-lap/news-selector-20261027-r1/nfp-history-evidence.json": "0ff16875d372b0d686cd737b29a3e4a7892f78adecffa89045a6221077be1b44"
+  },
+  "cases": 107,
+  "result_sha256": "2c636b9f7efb9c0f410dd1106e16f04c24898b9f32c524941ee6b6ad2af8e96b",
+  "sdk_tape_sha256": "cb63f4e2e1dc8a9d57ba068027d6fd486b42c1982a37f163e65ed3f2b7345dfd",
+  "parent_instructions": 406,
+  "sdk_calls": 3723,
+  "whole_bot_complete": false,
+  "whole_manager_complete": false,
+  "whole_evaluator_complete": false,
+  "full_ea": false,
+  "native_complete_nfp_branch_executed": true,
+  "child_helpers_intercepted": false,
+  "terminal_replies_supplied": true,
+  "original_ex5_changed": false
+}
