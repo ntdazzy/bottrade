@@ -1,0 +1,49 @@
+FUNCTION 0x20ef0..0x2a1bc snapshot_sha256=6bead161fa97b6568b546e8c86a4ff03fdda55d6fb226a52b58dd14ec050d920
+RANGE 0x22920..0x22a59 (end excluded); base=0x17156250000
+0x22920 movabs rax, 0x17156426c60[RVA=0x1d6c60]
+0x2292a movabs rcx, 0x171562c44c0[RVA=0x744c0]
+0x22934 movabs r12, 0x171562505c0[RVA=0x5c0]
+0x2293e mov dword ptr [rsp + 0x58], 0
+0x22946 mov dword ptr [rsp + 0xa0], 0
+0x22951 mov dword ptr [rsp + 0x78], 0
+0x22959 mov dword ptr [rsp + 0x48], 0
+0x22961 mov dword ptr [rsp + 0x90], 0
+0x2296c mov dword ptr [rsp + 0xb8], 0
+0x22977 mov qword ptr [rsp + 0x88], r14
+0x2297f mov qword ptr [rsp + 0x5c], 0
+0x22988 mov qword ptr [rsp + 0xa4], 0
+0x22994 mov qword ptr [rsp + 0x7c], 0
+0x2299d mov qword ptr [rsp + 0x4c], 0
+0x229a6 mov qword ptr [rsp + 0x94], 0
+0x229b2 mov qword ptr [rsp + 0xbc], 0
+0x229be movsd xmm0, qword ptr [rax]
+0x229c2 movsd xmm1, qword ptr [rcx]
+0x229c6 ucomisd xmm0, xmm1
+0x229ca jne 0x171562729d2[RVA=0x229d2]
+0x229cc jnp 0x171562735f7[RVA=0x235f7]
+0x229d2 movabs rax, 0x171562bd618[RVA=0x6d618]
+0x229dc movapd xmm3, xmm1
+0x229e0 movsd xmm2, qword ptr [rax]
+0x229e4 movabs rax, 0x171562a81e0[RVA=0x581e0]
+0x229ee divsd xmm2, qword ptr [rax]
+0x229f2 movabs rax, 0x171562a81e8[RVA=0x581e8]
+0x229fc addsd xmm2, qword ptr [rax]
+0x22a00 mulsd xmm3, xmm2
+0x22a04 ucomisd xmm0, xmm3
+0x22a08 ja 0x17156272a28[RVA=0x22a28]
+0x22a0a xorpd xmm3, xmm3
+0x22a0e ucomisd xmm2, xmm3
+0x22a12 jne 0x17156272a1a[RVA=0x22a1a]
+0x22a14 jnp 0x17156279dc5[RVA=0x29dc5]
+0x22a1a divsd xmm1, xmm2
+0x22a1e ucomisd xmm1, xmm0
+0x22a22 jbe 0x171562735f7[RVA=0x235f7]
+0x22a28 movabs rax, 0x171562bd644[RVA=0x6d644]
+0x22a32 xor ecx, ecx
+0x22a34 mov edx, 0x64
+0x22a39 cmp byte ptr [rax], 0
+0x22a3c movabs rax, 0x171562bd588[RVA=0x6d588]
+0x22a46 movsd xmm0, qword ptr [rax]
+0x22a4a movabs rax, 0x1715628f900[RVA=0x3f900]
+0x22a54 cmove edx, ecx
+0x22a57 call rax

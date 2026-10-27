@@ -1,0 +1,29 @@
+{
+  "checks": [
+    {
+      "bot": 1,
+      "cases": 973,
+      "matched": 973,
+      "fatal_cases": 6,
+      "fatal_matched": 6,
+      "result_sha256": "b6a4b420c73d34578ffd64d4a32a551ca17b9f269aa77a3d64f0c4ca11b67758",
+      "native_exits_sha256": "a3142887a31feef05846b1c6b30372071b2b612b9005b6e32bee9799da36f09a",
+      "build": "b1-resize-balance-check-20261027-r1",
+      "binary_sha256": "a9d8a4ed69d2ac06f2e85249d6ed6d6f9c497781d98d5d4b61b1c651e017e75e"
+    },
+    {
+      "bot": 3,
+      "cases": 973,
+      "matched": 973,
+      "fatal_cases": 6,
+      "fatal_matched": 6,
+      "result_sha256": "d2dfd8252b90d2b1684834aaa873c6be4379435f0b749734c4fbfca184d41285",
+      "native_exits_sha256": "4b97f76943882aa2b2f80c2883b0974c8003e8dcb35e5d762d945f5ce92ced0b",
+      "build": "b3-resize-balance-check-20261027-r1",
+      "binary_sha256": "c5c5991e057510551977569f9b83c6f2e97c64248d765a61da748d2323394def"
+    }
+  ],
+  "independent_review": "resize_balance_gate_review: no publication-blocking findings",
+  "whole_eas_complete": 0,
+  "scope": "Only numeric change gate, no volume child or whole evaluator; bot1 updates previous and bot3 does not."
+}

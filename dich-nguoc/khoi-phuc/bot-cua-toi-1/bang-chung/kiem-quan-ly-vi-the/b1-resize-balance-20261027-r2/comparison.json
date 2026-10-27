@@ -1,0 +1,16 @@
+{
+  "cases": 973,
+  "matched": 973,
+  "failed": 0,
+  "first_failures": [],
+  "whole_bot_complete": false,
+  "whole_manager_complete": false,
+  "whole_evaluator_complete": false,
+  "full_ea": false,
+  "native_balance_gate_executed": true,
+  "volume_and_resize_children_executed": false,
+  "original_ex5_changed": false,
+  "limits": [
+    "Gate only; no volume/resize children or full EA. Bot1 updates previous on change; bot3 does not. Fatal division cases are separate in errors.json."
+  ]
+}

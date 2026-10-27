@@ -1,0 +1,34 @@
+[
+  {
+    "bot": 1,
+    "original_ex5_sha256": "a3b0de423a06e10ebedc279307b93d7cb9188ba2bb5de77131a913c865b0e922",
+    "function_sha256": "45d53270186b7019a8721e0cf3734a61aac8e8660c70f7e602849b1c298d7cbd",
+    "range": [
+      "0x1a6e5",
+      "0x1a817"
+    ],
+    "range_sha256": "7f5006bb9ab2a617bc0e918d224eb5f660b49337e89b15df81ff4ed0d52c6fcb",
+    "listing": "bot1-native-1a6e5-1a817.txt",
+    "listing_sha256": "253b9441c99b5f0cc0d96cbf1344890822e06cc235dcd92007161ee5d920be9f",
+    "constants_rva": "0x4ffd0",
+    "constant_bytes": "0000000000005940000000000000f03f",
+    "skip": "0x1b317",
+    "fatal": "0x1ed65"
+  },
+  {
+    "bot": 3,
+    "original_ex5_sha256": "ee063d3d87490afe24e2f4ce85f6b05659320e297b102efd70207f71ca2feb83",
+    "function_sha256": "6bead161fa97b6568b546e8c86a4ff03fdda55d6fb226a52b58dd14ec050d920",
+    "range": [
+      "0x22920",
+      "0x22a59"
+    ],
+    "range_sha256": "854213a30edeba156a58f5ef03fd9a1b3f1c6c984a5bfc0e5c081cfd9185f8bf",
+    "listing": "bot3-native-22920-22a59.txt",
+    "listing_sha256": "a70427497611aa17da4fc77095f19f6f3532db5adeba8c7897cb9056fd1e502e",
+    "constants_rva": "0x581e0",
+    "constant_bytes": "0000000000005940000000000000f03f",
+    "skip": "0x235f7",
+    "fatal": "0x29dc5"
+  }
+]

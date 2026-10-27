@@ -1,0 +1,67 @@
+{
+  "cases": 6,
+  "matched": 6,
+  "results": [
+    {
+      "id": 973,
+      "matched": true,
+      "original_exit": "0x1ed65",
+      "message": "zero divide",
+      "terminal_exit_code": 4294967295,
+      "log_sha256": "92a491140bea0cfc98ece66246d3d164b99cef4009f5a6652e4774a9a847cf8b",
+      "before_fault_sha256": "772ba1ac3c1c1f3065b0f856a6ba7fe46adfa5befd723ac3a041de95cbe96856"
+    },
+    {
+      "id": 974,
+      "matched": true,
+      "original_exit": "0x1ed65",
+      "message": "zero divide",
+      "terminal_exit_code": 4294967295,
+      "log_sha256": "3946f1eb2d1efbbd958327d864ffc2087803a4d9339574f4fdbb859abaa1d8fe",
+      "before_fault_sha256": "77955573f7935a99c8217ddbca9b91ec62b22785256eb248dd4bef09d4292a26"
+    },
+    {
+      "id": 975,
+      "matched": true,
+      "original_exit": "0x1ed65",
+      "message": "zero divide",
+      "terminal_exit_code": 4294967295,
+      "log_sha256": "29c0d20b97115ceab8b8f2497192dffb1e48cb7ba0ae301e1af26d0dca041b34",
+      "before_fault_sha256": "21c2ec7f37be6ac4a44be790a2a3bafb58836b4469c7e681903f8f64f0e8af72"
+    },
+    {
+      "id": 976,
+      "matched": true,
+      "original_exit": "0x1ed65",
+      "message": "zero divide",
+      "terminal_exit_code": 4294967295,
+      "log_sha256": "775e22a37b055d43a99b8ef04655116c782a5d3478c6029b377619a74f371dab",
+      "before_fault_sha256": "da290091e2fc4a2137505b021756b600b24cbe88747bf24e09fac805b204c33f"
+    },
+    {
+      "id": 977,
+      "matched": true,
+      "original_exit": "0x1ed65",
+      "message": "zero divide",
+      "terminal_exit_code": 4294967295,
+      "log_sha256": "c5d20a321179e90b4897b523ca2b34e7bca057e57d218bd69344a2a1809695b2",
+      "before_fault_sha256": "9966909422ccad37b6ab10dcccd73629614a6b54a16c6c826e49bb7481357ea8"
+    },
+    {
+      "id": 978,
+      "matched": true,
+      "original_exit": "0x1ed65",
+      "message": "zero divide",
+      "terminal_exit_code": 4294967295,
+      "log_sha256": "efc9338f37e827551553053987153fe20847351579c27d84b9600b8cf0314d91",
+      "before_fault_sha256": "774b1ff4689453ed0df8755b134a88b4b7a84fd8c190eef4192d62a10b7ff743"
+    }
+  ],
+  "whole_bot_complete": false,
+  "whole_manager_complete": false,
+  "whole_evaluator_complete": false,
+  "full_ea": false,
+  "native_balance_gate_executed": true,
+  "volume_and_resize_children_executed": false,
+  "original_ex5_changed": false
+}

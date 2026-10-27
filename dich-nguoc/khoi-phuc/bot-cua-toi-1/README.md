@@ -1,5 +1,11 @@
 # bot-cua-toi-1
 
+Đã dựng cổng thay đổi vốn trước bước tính khối lượng/tạo lại lệnh:
+**973/973 ca thường,6/6 ca chia0 khớp**, biên dịch0lỗi/0cảnh báo.
+Giữ đúng ghi mốc vốn trước lời gọi kế của bot1. Chưa nối bước tính
+khối lượng với cổng này hoặc toànEA.
+[Phạm vi](../danh-gia-doc-lap/resize-balance-gate-20261027-r1/README.md).
+
 Đã viết vòng tạo lại lệnh chờ sau thay đổi khối lượng: **278/278 ca
 khớp**, đủ200ô bảng,35trường/4chuỗi và dịch vụ/thông báo/chờ. Chạy
 nguyên các thân xóa/mở/gửi của bot1 riêng; đầu vào sau tính khối lượng

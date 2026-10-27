@@ -1,0 +1,106 @@
+"""Compare native resize balance gates and the distinct previous-value mutation.
+
+prepare|original|mql5(--build)|compare BOT RUN. No SDK/volume child reply is supplied.
+errors BOT RUN --build BUILD runs each expected division fault in an isolated script.
+"""
+import argparse,hashlib,importlib.util,json,math,re,shutil,struct,subprocess
+from pathlib import Path
+ROOT=Path(__file__).resolve().parents[1];MASK=(1<<64)-1;MAGIC=0x52424731
+def module(name,path):
+    s=importlib.util.spec_from_file_location(name,path);m=importlib.util.module_from_spec(s);s.loader.exec_module(m);return m
+entry=module('resize_balance_entry',ROOT/'cong-cu/kiem-gia-vao-bot-1-3.py')
+validation=module('resize_balance_validation',ROOT/'cong-cu/kiem-khoi-luong-hop-le-bot-1-3.py')
+pub=module('resize_balance_pub',ROOT/'cong-cu/kiem-ban-git-quan-ly.py');require=pub.require
+CFG={1:dict(entry=0x1a6e5,skip=0x1b317,call=0x1a815,error=0x1ed65,current=0x6a320,previous=0x67480,percent=0x62528,function=0x18aa0,end=0x1ef9c,sha='45d53270186b7019a8721e0cf3734a61aac8e8660c70f7e602849b1c298d7cbd'),
+ 3:dict(entry=0x22920,skip=0x235f7,call=0x22a57,error=0x29dc5,current=0x1d6c60,previous=0x744c0,percent=0x6d618,function=0x20ef0,end=0x2a1bc,sha='6bead161fa97b6568b546e8c86a4ff03fdda55d6fb226a52b58dd14ec050d920')}
+SCOPE=dict(whole_bot_complete=False,whole_manager_complete=False,whole_evaluator_complete=False,full_ea=False,
+ native_balance_gate_executed=True,volume_and_resize_children_executed=False,original_ex5_changed=False)
+def bits(value):return struct.unpack('<Q',struct.pack('<d',value))[0]
+def sha(path):return hashlib.sha256(path.read_bytes()).hexdigest()
+def save(path,value):
+    with path.open('x',encoding='utf-8',newline='\n') as f:json.dump(value,f,ensure_ascii=False,indent=2)
+def cases():
+    values=[bits(v) for v in [-math.inf,-100.,-1.,-0.,0.,1e-310,1.,100.,math.inf]]+[0x7ff8000000000123,0xfff8000000000456]
+    percents=[-101.,-100.01,-99.99,-1.,0.,10.,math.inf,math.nan];rows=[]
+    def add(current,previous,percent,fatal=0):rows.append(dict(id=len(rows),fatal=fatal,current=current,previous=previous,percent=bits(percent)))
+    for c in values:
+        for p in values:
+            for percent in percents:add(c,p,percent)
+    for c,p in [(1.,0.),(2.,1.),(math.inf,1.),(0.,0.),(-1.,-1.)]:add(bits(c),bits(p),-100.)
+    for c,p in [(0.,1.),(-1.,0.),(-2.,1.),(-1.,2.),(-math.inf,1.),(0.,-1.)]:add(bits(c),bits(p),-100.,1)
+    return rows
+def encode(rows):return struct.pack('<3i',MAGIC,1,len(rows))+b''.join(struct.pack('<2i3Q',c['id'],c['fatal'],c['current'],c['previous'],c['percent']) for c in rows)
+class Original(entry.Original):
+    def __init__(self,bot):
+        super().__init__(bot);self.gate=CFG[bot];self.covered=set();cfg=self.gate
+        require(hashlib.sha256(bytes(self.m.mem_read(self.base+cfg['function'],cfg['end']-cfg['function']))).hexdigest()==cfg['sha'],'EVALUATOR_BYTES_CHANGED')
+        self.m.hook_add(self.uc.UC_HOOK_CODE,self.visit,begin=self.base+cfg['function'],end=self.base+cfg['end']-1)
+    def visit(self,m,address,size,user):
+        rva=address-self.base;self.covered.add(rva)
+        if rva in [self.gate[k] for k in ['skip','call','error']]:self.exit=rva;m.emu_stop()
+    def run(self,c):
+        m,x=self.m,self.x;cfg=self.gate;self.exit=None
+        for region,raw in self.regions:
+            if region.get('kind')=='mutable_program_data':m.mem_write(region['base'],raw)
+        for k in ['current','previous','percent']:m.mem_write(self.base+cfg[k],struct.pack('<Q',c[k]))
+        for n in ['RAX','RBX','RCX','RDX','RSI','RDI','RBP','R8','R9','R10','R11','R12','R13','R14','R15']:m.reg_write(getattr(x,'UC_X86_REG_'+n),0)
+        for i in range(16):m.reg_write(getattr(x,'UC_X86_REG_XMM'+str(i)),0)
+        m.reg_write(x.UC_X86_REG_RSP,0x5001f000);m.reg_write(x.UC_X86_REG_EFLAGS,0x202);m.reg_write(x.UC_X86_REG_MXCSR,0x1f80)
+        m.emu_start(self.base+cfg['entry'],0x60000000,timeout=1000000,count=10000);require(self.exit is not None,'GATE_NO_EXIT')
+        fatal=int(self.exit==cfg['error']);previous=struct.unpack('<Q',m.mem_read(self.base+cfg['previous'],8))[0]
+        require(fatal==c['fatal'],'FATAL_CASE_CLASSIFICATION');return dict(id=c['id'],changed=int(self.exit==cfg['call']),previous=previous,fatal=fatal,exit=hex(self.exit))
+def identity(bot):
+    home=ROOT/f'bot-cua-toi-{bot}';source=home/'source/MQL5';script=f'Scripts/bot-cua-toi-{bot}/Bot{bot}PendingResizeBalanceCheck.mq5'
+    helpers=[Path(__file__),ROOT/'cong-cu/kiem-gia-vao-bot-1-3.py',ROOT/'cong-cu/kiem-muc-gia-bot-1-3.py',ROOT/'cong-cu/kiem-khoi-luong-hop-le-bot-1-3.py',ROOT/'cong-cu/kiem-khoi-luong-bot-1-3.py',ROOT/'cong-cu/kiem-ban-git-quan-ly.py']
+    return dict(original_ex5_sha256=validation.original_hash(bot),tool_sha256=sha(Path(__file__)),sources_sha256={f.relative_to(source).as_posix():sha(f) for f in pub.closure(source/script,source)},helpers_sha256={f.relative_to(ROOT).as_posix():sha(f) for f in helpers})
+def execute(bot,folder,rows,build,only=-1,filesuffix=''):
+    mt=ROOT.parent/f'.local/mt5-bot{bot}-thread-20261025';home=ROOT/f'bot-cua-toi-{bot}';source=home/'source/MQL5';script=f'Scripts/bot-cua-toi-{bot}/Bot{bot}PendingResizeBalanceCheck.mq5'
+    receipt=home/'bang-chung/bien-dich'/build/'bien-nhan.json';b=json.loads(receipt.read_text(encoding='utf-8-sig'));require(b['target']==script and b['errors']==b['warnings']==0,'BUILD_NOT_CLEAN')
+    for n,h in identity(bot)['sources_sha256'].items():require(sha(mt/'MQL5'/n)==b['sources_sha256'][n]==h,'BUILD_SOURCE_DIFFERS')
+    binary=mt/'MQL5'/Path(script).with_suffix('.ex5');require(sha(binary)==b['binary_sha256']==sha(receipt.parent/binary.name),'BUILD_BINARY_DIFFERS')
+    run=folder.name+filesuffix;files=mt/f'MQL5/Files/bot{bot}-resize-balance'/run;files.mkdir(parents=True,exist_ok=False);shutil.copyfile(folder/'cases.bin',files/'cases.bin')
+    ini=mt/('gate-'+run+'.ini');preset=mt/'MQL5/Presets'/('gate-'+run+'.set')
+    with preset.open('x',encoding='utf-16') as f:f.write('CheckRun='+run+'\nOnlyCase='+str(only)+'\n')
+    with ini.open('x',encoding='utf-16') as f:f.write('[Experts]\nEnabled=0\nAllowLiveTrading=0\nAllowDllImport=0\n[StartUp]\nScript=bot-cua-toi-'+str(bot)+'\\Bot'+str(bot)+'PendingResizeBalanceCheck\nScriptParameters='+preset.name+'\nSymbol=XAUUSD_NOCOST_V2\nPeriod=M15\nShutdownTerminal=1\n')
+    logs=mt/'MQL5/Logs';before={p:p.stat().st_size for p in logs.glob('*.log')}
+    proc=subprocess.Popen(f'"{mt/"terminal64.exe"}" /portable /config:"{ini}"',cwd=mt,creationflags=subprocess.CREATE_NO_WINDOW)
+    try:code=proc.wait(timeout=120)
+    except subprocess.TimeoutExpired:proc.terminate();proc.wait(timeout=30);raise RuntimeError('MT5_TIMEOUT')
+    require(code==0,'MT5_EXIT');new=[]
+    for path in logs.glob('*.log'):
+        raw=path.read_bytes()[before.get(path,0):];new.append(raw.decode('utf-16-le',errors='replace'))
+    return files,b,receipt,'\n'.join(new)
+def main():
+    ap=argparse.ArgumentParser(description=__doc__);ap.add_argument('mode',choices=['prepare','original','mql5','compare','errors']);ap.add_argument('bot',type=int,choices=[1,3]);ap.add_argument('run');ap.add_argument('--build');a=ap.parse_args()
+    require(re.fullmatch('[a-z0-9-]{1,32}',a.run),'BAD_RUN');folder=ROOT/f'bot-cua-toi-{a.bot}/bang-chung/kiem-quan-ly-vi-the'/a.run;rows=cases();normal=[c for c in rows if not c['fatal']];current=identity(a.bot)
+    if a.mode=='prepare':
+        folder.mkdir(parents=True,exist_ok=False);(folder/'cases.bin').write_bytes(encode(rows));save(folder/'baseline.json',dict(**current,cases=len(normal),fatal_cases=len(rows)-len(normal),inputs_sha256=sha(folder/'cases.bin'),**SCOPE));print(json.dumps(dict(cases=len(normal),fatal_cases=len(rows)-len(normal))));return
+    b=json.loads((folder/'baseline.json').read_text());require(all(b[k]==v for k,v in current.items()) and (folder/'cases.bin').read_bytes()==encode(rows),'IDENTITY_CHANGED')
+    if a.mode=='original':
+        o=Original(a.bot);results=[o.run(c) for c in rows];raw=struct.pack('<3i',MAGIC,1,len(rows))+b''.join(struct.pack('<i2Q',c['id'],c['changed'],c['previous']) for c in results if not c['fatal'])
+        with (folder/'original-results.bin').open('xb') as f:f.write(raw)
+        save(folder/'native-exits.json',results);save(folder/'original-run.json',dict(**current,cases=len(normal),fatal_cases=len(rows)-len(normal),native_exits_sha256=sha(folder/'native-exits.json'),result_sha256=sha(folder/'original-results.bin'),instructions=len(o.covered),**SCOPE));print(json.dumps(dict(cases=len(normal),instructions=len(o.covered))));return
+    if a.mode=='mql5':
+        require(a.build,'BUILD_REQUIRED');files,build,receipt,_=execute(a.bot,folder,rows,a.build);require((files/'script-status.bin').read_bytes()==struct.pack('<2i',0,len(normal)),'MT5_STATUS')
+        for name in ['mql5-results.bin','script-status.bin']:
+            with (folder/name).open('xb') as f:f.write((files/name).read_bytes())
+        save(folder/'mql5-run.json',dict(**current,cases=len(normal),build=a.build,build_receipt_sha256=sha(receipt),result_sha256=sha(folder/'mql5-results.bin'),**SCOPE));print(json.dumps(dict(cases=len(normal))));return
+    if a.mode=='errors':
+        require(a.build and not(folder/'errors.json').exists(),'BUILD_OR_NEW_ERRORS_REQUIRED');native=json.loads((folder/'native-exits.json').read_text());out=[]
+        for c in rows:
+            if not c['fatal']:continue
+            require(native[c['id']]['fatal']==1 and native[c['id']]['previous']==c['previous'],'ORIGINAL_ERROR_STATE');files,build,receipt,log=execute(a.bot,folder,rows,a.build,c['id'],'-e'+str(c['id']))
+            require((files/'before-fault.bin').read_bytes()==struct.pack('<iQ',c['id'],c['previous']),'ERROR_INITIAL_STATE')
+            require(not(files/'script-status.bin').exists() and (files/'mql5-results.bin').read_bytes()==struct.pack('<3i',MAGIC,1,len(rows)),'FATAL_DID_NOT_STOP')
+            require('zero divide' in log.lower() and ('RESIZE_BALANCE_CASE:'+str(c['id'])) in log,'FATAL_LOG_CLASS')
+            out.append(dict(id=c['id'],matched=True,original_exit=native[c['id']]['exit'],message='zero divide',log_sha256=hashlib.sha256(log.encode()).hexdigest(),before_fault_sha256=sha(files/'before-fault.bin')))
+        save(folder/'errors.json',dict(cases=len(out),matched=len(out),results=out,**SCOPE));print(json.dumps(dict(cases=len(out),matched=len(out))));return
+    for name in ['original','mql5']:
+        r=json.loads((folder/(name+'-run.json')).read_text());require(all(r[k]==v for k,v in current.items()) and r['result_sha256']==sha(folder/(name+'-results.bin')),'RUN_CHANGED')
+    left=(folder/'original-results.bin').read_bytes();right=(folder/'mql5-results.bin').read_bytes();require(left[:12]==right[:12]==struct.pack('<3i',MAGIC,1,len(rows)) and len(left)==len(right)==12+20*len(normal),'RESULT_SHAPE');failures=[]
+    for i,c in enumerate(normal):
+        n=struct.unpack_from('<i2Q',left,12+20*i);r=struct.unpack_from('<i2Q',right,12+20*i)
+        if n!=r:failures.append(dict(**c,native=n,mql5=r))
+    report=dict(cases=len(normal),matched=len(normal)-len(failures),failed=len(failures),first_failures=failures[:12],**SCOPE,limits=['Gate only; no volume/resize children or full EA. Bot1 updates previous on change; bot3 does not. Fatal division cases are separate in errors.json.'])
+    save(folder/'comparison.json',report);print(json.dumps(report));raise SystemExit(bool(failures))
+if __name__=='__main__':main()

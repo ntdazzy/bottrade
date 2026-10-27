@@ -22,6 +22,13 @@ riêng của từng phần ở `bot-cua-toi-1/tests/` và `bot-cua-toi-3/tests/`
 
 Phép kiểm ghép mới:
 
+- `kiem-cong-doi-von-bot-1-3.py prepare|original|mql5|compare BOT RUN`:
+  973ca cổng vốn trước tính khối lượng/tạo lại lệnh; so nhánh chọn và
+  mốc lưu (bot1 ghi khi chọn,bot3 giữ). Mql5 cần `--build BUILD` của
+  `BotNPendingResizeBalanceCheck.mq5`, dựng với kiểm chia0. Chạy thêm
+  `errors BOT RUN --build BUILD` để so6ca dừng chia0/nhật ký/trạng thái.
+  Phần native không gọi SDK/hàm con, chưa là phép ghép khối lượng/EA.
+
 - `bot-cua-toi-1/tests/check-evaluation-pending-resize.py prepare|mql5|original|compare RUN`:
   278ca vòng1a817..1b317 sau tính khối lượng; thân xóa34150/mở32dd0/gửi950
   chạy nguyên. Khácbot3 ở hàm xóa trảvoid, địa chỉ dữ liệu và8ô khối lượng.
