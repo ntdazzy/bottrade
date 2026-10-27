@@ -1,0 +1,66 @@
+"""Extend existing continuous trade recorders to panel/balance/availability."""
+import importlib.util
+from pathlib import Path
+ROOT=Path(__file__).resolve().parents[1]
+s=importlib.util.spec_from_file_location('active_schema',ROOT/'cong-cu/kiem-luong-sau-quan-ly-bot-1-3.py')
+data=importlib.util.module_from_spec(s);s.loader.exec_module(data)
+for bot in [1,3]:
+    folder=ROOT/f'bot-cua-toi-{bot}/source/MQL5/Scripts/bot-cua-toi-{bot}'
+    source=(folder/f'Bot{bot}EvaluationTradeFlowCheck.mq5').read_text()
+    source=source.replace('int SourceError();', '''string MockPanelDoubleText(const double value,const int digits);
+bool MockPanelObjectText(const long chart,const string name,const ENUM_OBJECT_PROPERTY_STRING property,const string value);
+void MockPanelSetError(const ushort code);
+int SourceError();''',1)
+    source=source.replace('#define MQLInfoInteger MockInfo','''#define DoubleToString MockPanelDoubleText
+#define ObjectSetString MockPanelObjectText
+#define SetUserError MockPanelSetError
+#define MQLInfoInteger MockInfo''',1)
+    source=source.replace('#undef MQLInfoInteger','''#undef DoubleToString
+#undef ObjectSetString
+#undef SetUserError
+#undef MQLInfoInteger''',1)
+    source=source.replace(f'Bot{bot}EvaluationTradeFlow.mqh',f'Bot{bot}EvaluationActiveFlow.mqh')
+    fs=data.fields(bot);types={'B':'uchar','i':'int','d':'double'}
+    declarations='\n'.join(types[k]+' '+n+';' for n,k,_,_ in fs)+'\nlong ActiveData['+str(len(fs))+'];\n'
+    source=source.replace('int TapeFile,EndErrorOverride=-1;',declarations+'int TapeFile,EndErrorOverride=-1;',1)
+    snapshot='\n'.join('   Word('+('Bits('+n+')' if k=='d' else '(ulong)(long)'+n)+');' for n,k,_,_ in fs)
+    source=source.replace('   if(RecordFinal) Word((ulong)Decision);',snapshot+'\n   if(RecordFinal) Word((ulong)Decision);',1)
+    source=source.replace('int value=(int)P[p_info];End(1,','int value=(int)property==4 ? TradeAllowed : (int)P[p_info];End(1,',1)
+    wrappers='''string MockPanelDoubleText(const double value,const int digits)
+{
+   Begin();string text=DoubleToString(value,digits);End(43,Bits(value),(ulong)(uint)digits,0,0,text);return text;
+}
+bool MockPanelObjectText(const long chart,const string name,const ENUM_OBJECT_PROPERTY_STRING property,const string value)
+{
+   Begin();End(44,(ulong)chart,(ulong)property,1,0,name,value);return true;
+}
+void MockPanelSetError(const ushort code) { SetSdkError(65536+(int)code); }
+void DateCast(const int file,const datetime value)
+{
+   ResetLastError();string text=(string)value;SetUserError(7);uint before=GetLastError();string second=(string)value;uint after=GetLastError();
+   if(before!=after || text!=second) CastProofOk=false;WriteCast(file,0x54,(ulong)value,0xffffffff,text);
+}
+'''
+    source=source.replace('int OnStart()\n{',wrappers+'int OnStart()\n{',1)
+    load='      for(int i=0;i<'+str(len(fs))+';i++) ActiveData[i]=FileReadLong(file);\n'
+    for i,(n,k,_,_) in enumerate(fs):load+='      '+n+'='+('Number((ulong)ActiveData['+str(i)+'])' if k=='d' else '('+types[k]+')ActiveData['+str(i)+']')+';\n'
+    # The loop-specific values precede ActiveData in the binary case record.
+    marker='      for(int i=0;i<'+str(23 if bot==1 else 25)+';i++) LoopData[i]=FileReadLong(file);'
+    assert marker in source
+    line_end=source.index('\n',source.index(marker))
+    source=source[:line_end]+ '\n'+load.rstrip()+source[line_end:]
+    extra=['PanelShow','PanelTester','PanelMode']+(['PanelTradeRisk','PanelBalanceStep'] if bot==1 else ['PanelFrequency','PanelManual','PanelDD'])+['BlockFlags!=0','DaySwitch','ChangePercent','PreviousBalance']
+    source=source.replace(f'Decision=Bot{bot}EvaluateTradeFlow(',f'Decision=Bot{bot}EvaluateActiveFlow(',1)
+    before='VolumeSuffix'+(',WeightDenominator,VolumeEnabled' if bot==3 else '')+',Volumes);int final_error='
+    after=before.replace(',Volumes);int final_error=',',Volumes,'+','.join(extra)+');int final_error=')
+    assert before in source;source=source.replace(before,after,1)
+    casts='SignedCast(casts,5);'+('SignedCast(casts,PanelBalanceStep);DoubleCast(casts,PanelTradeRisk);' if bot==1 else 'DoubleCast(casts,PanelManual);DoubleCast(casts,PanelDD);')
+    casts+='DoubleCast(casts,VolumeSettings.strategy_risk);DoubleCast(casts,ChangePercent);DateCast(casts,(datetime)Events.nfp);DateCast(casts,(datetime)Events.interest);DateCast(casts,(datetime)Events.cpi);'
+    source=source.replace('count*9','count*17').replace('if(!CastProofOk) return 9;',casts+'if(!CastProofOk) return 9;',1)
+    source=source.replace(f'bot{bot}-evaluation-trade-flow',f'bot{bot}-evaluation-active-flow').replace('EVALUATION_TRADE_FLOW_CASE','EVALUATION_ACTIVE_FLOW_CASE')
+    (folder/f'Bot{bot}EvaluationActiveFlowCheck.mq5').write_text(source,encoding='utf-8',newline='\n')
+    api=(folder/f'Bot{bot}EvaluationTradeFlowAPICompile.mq5').read_text().replace(f'Bot{bot}EvaluationTradeFlow.mqh',f'Bot{bot}EvaluationActiveFlow.mqh')
+    api=api.replace('   int pending_enabled=0,maximum_pending=0;',declarations+'   int pending_enabled=0,maximum_pending=0;',1)
+    api=api.replace(f'Bot{bot}EvaluateTradeFlow(',f'Bot{bot}EvaluateActiveFlow(',1)
+    api=api.replace('volumes);','volumes,'+','.join(extra)+');',1)
+    (folder/f'Bot{bot}EvaluationActiveFlowAPICompile.mq5').write_text(api,encoding='utf-8',newline='\n')

@@ -1,0 +1,141 @@
+"""Compare native panel -> balance/resize -> availability -> news -> entry loop.
+prepare|mql5(--build)|original|compare BOT RUN. Initial management/frame is supplied.
+"""
+import argparse,copy,hashlib,importlib.util,json,re,shutil,struct,subprocess
+from pathlib import Path
+ROOT=Path(__file__).resolve().parents[1];MASK=(1<<64)-1
+def module(name,file):
+    s=importlib.util.spec_from_file_location(name,ROOT/'cong-cu'/file);m=importlib.util.module_from_spec(s);s.loader.exec_module(m);return m
+flow=module('active_previous_flow','kiem-luong-danh-gia-giao-dich.py');PARTS=flow.PARTS;base=flow.base
+pub=base.pub;require=pub.require;sha=base.sha;save=base.save;MAGIC=base.MAGIC;Reader=PARTS[1].Reader
+CFG={1:dict(start=0x1a620,end=0x1e94f,newbar=0x1ca24),3:dict(start=0x22851,end=0x29c88,newbar=0x26f9e)}
+SCOPE=dict(whole_bot_complete=False,whole_manager_complete=False,whole_evaluator_complete=False,full_ea=False,
+ native_panel_resize_availability_news_entry_continuous=True,child_helpers_intercepted=False,terminal_replies_supplied=True,
+ withdrawals_disabled=True,volume_mode_coverage=[0],chart_rendering_verified=False,original_ex5_changed=False)
+def fields(bot):
+    common=[('PanelShow','B',0x6a528,0x1d6f38,0),('PanelTester','B',0x6a530,0x1d6f40,1),
+      ('PanelMode','i',0x6a748,0x6d630,0 if bot==1 else 1234),('DaySwitch','B',0x62568,0x6d658,0),
+      ('ChangePercent','d',0x62528,0x6d618,10.),('PreviousBalance','d',0x67480,0x744c0,0.),
+      ('BlockFlags','i',None,None,0),('TradeAllowed','i',None,None,1)]
+    extra={1:[('PanelTradeRisk','d',0x6a750,1.2),('PanelBalanceStep','i',0x6a768,600)],
+           3:[('PanelFrequency','i',0x6d21c,3),('PanelManual','d',0x1d7138,.1),('PanelDD','d',0x1d7140,30.)]}
+    return [(n,k,a if bot==1 else b,v) for n,k,a,b,v in common]+extra[bot]
+def cases(bot):
+    rows=flow.cases(bot)
+    defaults={n:v for n,_,_,v in fields(bot)}
+    for c in rows:c['active']=copy.deepcopy(defaults)
+    prototype=copy.deepcopy(rows[22])
+    def add(tag,values=None,**updates):
+        c=copy.deepcopy(prototype);c['tag']='active-'+tag;c.update(updates);c['active'].update(values or {});rows.append(c);return c
+    for flags in [0,1,2,3]:
+        for show in [0,1]:add('blocked-after-panel',dict(BlockFlags=flags,PanelShow=show))
+    for info in [-1,0,1,2]:
+        for allowed in [-1,0,1]:
+            for notice in [0,1,255]:add('availability-flags',dict(TradeAllowed=allowed),info=info,initialization_notice=notice)
+    for enabled in [0,1,255]:
+        for hour in [-1,0,1]:
+            for minute in [-1,0,4,5]:
+                c=add('day-switch-boundaries',dict(DaySwitch=enabled),initialization_notice=0);c['cached'][3:5]=[hour,minute]
+    for notice in [1,255]:
+        c=add('day-switch-already-notified',dict(DaySwitch=1),initialization_notice=notice);c['cached'][3:5]=[0,4]
+    for previous in [0.,1.,10000.,-10000.]:
+        for show in [0,1]:add('balance-volume-no-pending',dict(PreviousBalance=previous,PanelShow=show))
+    for price in [78.,110.,122.]:
+        for kind in [4,5]:add('resize-delete-reopen',dict(PreviousBalance=10000.,PanelShow=1),orders=1,totals=[1]*8,first_type=kind,second_type=kind,prices=[price]*6)
+    for mode in ([0,3,999,9999] if bot==1 else [0,3,1234]):
+        for position in [0,1,2]:add('panel-modes-and-matched-position',dict(PanelShow=1,PanelMode=mode),position=position,position_magic=43)
+    if bot==3:
+        for frequency in [-1,0,1,2,3,4,5]:add('panel-frequencies',dict(PanelShow=1,PanelFrequency=frequency))
+    for index in [0,1,3]:add('caller-index-through-resize',dict(PreviousBalance=10000.),caller_index=index,current_index=index)
+    for i,c in enumerate(rows):c['id']=i
+    return rows
+def encode(rows,bot):
+    raw=bytearray(struct.pack('<3i',MAGIC,1,len(rows)))
+    for c in rows:
+        raw+=flow.encode([c],bot)[12:]
+        for n,k,_,_ in fields(bot):raw+=struct.pack('<Q',base.bits(c['active'][n]) if k=='d' else c['active'][n]&MASK)
+    return bytes(raw)
+def Original(bot,casts):
+    part=PARTS[bot];cache=part.news;cfg=CFG[bot]
+    class Active(part.Original):
+        def __init__(self):
+            super().__init__(bot,casts);self.nfp=dict(self.nfp,start=cfg['start'],end=cfg['end'])
+            for api,off in [(43,0x7cd7c0),(44,0x7c3c80)]:
+                a=0x7ff683f20000+off;existed=a in self.apis or a in self.sdk
+                if not any(lo<=a<=hi for lo,hi,_ in self.m.mem_regions()):self.m.mem_map(a&~4095,4096)
+                self.sdk[a]=api;self.m.mem_write(a,b'\xc3')
+                if not existed:self.m.hook_add(self.uc.UC_HOOK_CODE,self.call,begin=a,end=a)
+        def state(self):
+            raw=cache.Original.state(self)+part.Original.state(self)
+            for n,k,a,_ in fields(bot):
+                value=self.case['active'][n] if a is None else self.value(a,'Q' if k=='d' else k)
+                raw+=struct.pack('<Q',value&MASK)
+            return raw
+        def visit(self,m,address,size,user):
+            rva=address-self.base
+            if rva==cfg['end']:self.entry_decision=2 if self.saw_new_bar else 1;self.done=True;m.emu_stop();return
+            if rva==cfg['newbar']:self.saw_new_bar=True
+            result=super().visit(m,address,size,user)
+            if rva==cfg['start'] and not self.active_seeded:
+                self.active_seeded=True
+                for n,k,a,_ in fields(bot):
+                    if a is not None:m.mem_write(self.base+a,struct.pack('<'+k,self.case['active'][n]))
+                block=self.case['active']['BlockFlags'];frame=0x5001f000
+                if bot==1:m.mem_write(frame+0xc0,bytes([int(block!=0)]))
+                else:
+                    m.mem_write(frame+0x88,bytes([block&1]));m.mem_write(frame+0xf8,bytes([(block>>1)&1]));m.reg_write(self.x.UC_X86_REG_R14,self.case['caller_index'])
+            return result
+        def call(self,m,address,size,user):
+            api=self.sdk.get(address);x=self.x;r=lambda n:m.reg_read(getattr(x,'UC_X86_REG_'+n))
+            if api not in [1,43,44]:return super().call(m,address,size,user)
+            rd=self.tape;require(rd.block()==self.state(),'ACTIVE_STATE '+str((self.case['id'],api,self.api_count)));kind,*args=rd.take('i4Q');texts=[rd.text() for _ in range(4)];payload=rd.block();error,=rd.take('I')
+            require(kind==api and r('RCX')==self.nfp['ctx'] and payload==b'','ACTIVE_SDK_CONTEXT')
+            if api==1:
+                expected=self.case['active']['TradeAllowed'] if args[0]==4 else self.case['info'];require(r('RDX')==args[0] and args[0] in [4,6] and args[1]==(expected&MASK),'ACTIVE_INFO');m.reg_write(x.UC_X86_REG_RAX,args[1])
+            elif api==43:
+                require((r('XMM1')&MASK)==args[0] and (r('R8')&0xffffffff)==args[1],'ACTIVE_DOUBLE_TEXT')
+                m.mem_write(self.base+self.cfg['string_result'],struct.pack('<IQ',0,self.string(texts[0])))
+            else:
+                sp=r('RSP');value=struct.unpack('<Q',m.mem_read(sp+40,8))[0]
+                require((r('RDX'),r('R9'))==(args[0],args[1]) and self.read_text(r('R8'))==texts[0] and self.read_text(value)==texts[1],'ACTIVE_OBJECT_TEXT '+str(self.case['id']));m.reg_write(x.UC_X86_REG_RAX,args[2])
+            m.mem_write(self.base+self.nfp['error'],struct.pack('<I',error));self.api_count+=1
+        def run(self,c,tape):self.active_seeded=False;self.saw_new_bar=False;return super().run(c,tape)
+    return Active()
+def identity(bot):
+    source=ROOT/f'bot-cua-toi-{bot}/source/MQL5';script=f'Scripts/bot-cua-toi-{bot}/Bot{bot}EvaluationActiveFlowCheck.mq5';helpers=dict(flow.identity(bot)['helpers_sha256'])
+    for p in [Path(__file__),ROOT/'cong-cu/tao-bo-kiem-luong-sau-quan-ly.py']:helpers[p.relative_to(ROOT).as_posix()]=sha(p)
+    return dict(original_ex5_sha256=base.validation.original_hash(bot),sources_sha256={p.relative_to(source).as_posix():sha(p) for p in pub.closure(source/script,source)},helpers_sha256=helpers)
+def execute(bot,folder,build):
+    h=ROOT/f'bot-cua-toi-{bot}';mt=ROOT.parent/f'.local/mt5-bot{bot}-thread-20261025';receipt=h/'bang-chung/bien-dich'/build/'bien-nhan.json';b=json.loads(receipt.read_text(encoding='utf-8-sig'));script=f'Scripts/bot-cua-toi-{bot}/Bot{bot}EvaluationActiveFlowCheck.mq5';require(b['target']==script and b['errors']==b['warnings']==0,'BUILD_NOT_CLEAN')
+    for n,v in identity(bot)['sources_sha256'].items():require(sha(mt/'MQL5'/n)==b['sources_sha256'][n]==v,'BUILD_SOURCE_CHANGED')
+    binary=mt/'MQL5'/Path(script).with_suffix('.ex5');require(sha(binary)==b['binary_sha256']==sha(receipt.parent/binary.name),'BUILD_BINARY_CHANGED');files=mt/f'MQL5/Files/bot{bot}-evaluation-active-flow'/folder.name;files.mkdir(parents=True,exist_ok=False);shutil.copyfile(folder/'cases.bin',files/'cases.bin')
+    preset=mt/'MQL5/Presets'/('active-'+folder.name+'.set');ini=mt/('active-'+folder.name+'.ini');preset.write_text('CheckRun='+folder.name+'\n',encoding='utf-16');ini.write_text(f'[Experts]\nEnabled=0\nAllowLiveTrading=0\nAllowDllImport=0\n[StartUp]\nScript=bot-cua-toi-{bot}\\Bot{bot}EvaluationActiveFlowCheck\nScriptParameters={preset.name}\nSymbol=XAUUSD_NOCOST_V2\nPeriod=M15\nShutdownTerminal=1\n',encoding='utf-16');p=subprocess.Popen(f'"{mt/"terminal64.exe"}" /portable /config:"{ini}"',cwd=mt,creationflags=subprocess.CREATE_NO_WINDOW)
+    try:code=p.wait(timeout=120)
+    except subprocess.TimeoutExpired:p.terminate();p.wait(timeout=30);raise RuntimeError('MT5_TIMEOUT')
+    require(code==0,'MT5_EXIT');return files,receipt
+def main():
+    p=argparse.ArgumentParser(description=__doc__);p.add_argument('mode',choices=['prepare','mql5','original','compare']);p.add_argument('bot',type=int,choices=[1,3]);p.add_argument('run');p.add_argument('--build');a=p.parse_args();require(re.fullmatch('[a-z0-9-]{1,48}',a.run),'BAD_RUN');rows=cases(a.bot);folder=ROOT/f'bot-cua-toi-{a.bot}/bang-chung/kiem-quan-ly-vi-the'/a.run;current=identity(a.bot);header=struct.pack('<3i',MAGIC,1,len(rows))
+    if a.mode=='prepare':folder.mkdir(parents=True,exist_ok=False);(folder/'cases.bin').write_bytes(encode(rows,a.bot));save(folder/'baseline.json',dict(**current,cases=len(rows),inputs_sha256=sha(folder/'cases.bin'),**SCOPE));print(json.dumps(dict(cases=len(rows))));return
+    baseline=json.loads((folder/'baseline.json').read_text());require(all(baseline[k]==v for k,v in current.items()) and (folder/'cases.bin').read_bytes()==encode(rows,a.bot),'IDENTITY_CHANGED')
+    if a.mode=='mql5':
+        files,receipt=execute(a.bot,folder,a.build);require((files/'script-status.bin').read_bytes()==struct.pack('<2i',0,len(rows)),'SCRIPT_FAILED')
+        for n in ['mql5-results.bin','sdk-tape.bin','script-status.bin','cast-values.bin']:
+            with (folder/n).open('xb') as f:f.write((files/n).read_bytes())
+        save(folder/'mql5-run.json',dict(**current,cases=len(rows),result_sha256=sha(folder/'mql5-results.bin'),sdk_tape_sha256=sha(folder/'sdk-tape.bin'),casts_sha256=sha(folder/'cast-values.bin'),build=a.build,build_receipt_sha256=sha(receipt),**SCOPE));print(json.dumps(dict(cases=len(rows))));return
+    if a.mode=='original':
+        tape=Reader((folder/'sdk-tape.bin').read_bytes());require(tape.take('3i')==(MAGIC,1,len(rows)),'TAPE_HEADER');o=Original(a.bot,PARTS[a.bot].news.news.news.news.cast_values(folder/'cast-values.bin'));o.cast_calls=o.queue_clears=0;raw=bytearray(header);calls=0
+        for c in rows:
+            require(tape.take('i')[0]==c['id'],'TAPE_CASE_ID');state=o.run(c,tape.block());raw+=struct.pack('<2i',c['id'],len(state))+state;calls+=o.api_count
+        require(tape.pos==len(tape.raw),'TAPE_TRAILING')
+        with (folder/'original-results.bin').open('xb') as f:f.write(raw)
+        save(folder/'original-run.json',dict(**current,cases=len(rows),result_sha256=sha(folder/'original-results.bin'),sdk_tape_sha256=sha(folder/'sdk-tape.bin'),sdk_calls=calls,cast_calls=o.cast_calls,queue_clears=o.queue_clears,casts_sha256=sha(folder/'cast-values.bin'),parent_instructions=len(o.covered),**SCOPE));print(json.dumps(dict(cases=len(rows),sdk_calls=calls)));return
+    for n in ['original','mql5']:
+        r=json.loads((folder/(n+'-run.json')).read_text());require(all(r[k]==v for k,v in current.items()) and r['result_sha256']==sha(folder/(n+'-results.bin')) and r['sdk_tape_sha256']==sha(folder/'sdk-tape.bin') and r['casts_sha256']==sha(folder/'cast-values.bin'),'RUN_CHANGED')
+    data=[Reader((folder/(n+'-results.bin')).read_bytes()) for n in ['original','mql5']];require(all(r.take('3i')==(MAGIC,1,len(rows)) for r in data),'RESULT_HEADER');fail=[]
+    for c in rows:
+        states=[]
+        for r in data:require(r.take('i')[0]==c['id'],'RESULT_ID');states.append(r.block())
+        if states[0]!=states[1]:fail.append(dict(id=c['id'],tag=c['tag'],first_difference=next((i for i,(x,y) in enumerate(zip(*states)) if x!=y),None),sizes=list(map(len,states))))
+    require(all(r.pos==len(r.raw) for r in data),'RESULT_TRAILING');result=dict(cases=len(rows),matched=len(rows)-len(fail),failed=len(fail),first_failures=fail[:12],**SCOPE,limits=['Continuous panel, balance/volume/resize, availability and news through entry loops. Mode0/withdrawals disabled in this integration suite. Initial earlier management/frame and terminal replies, logical SDK errors, successful allocation and measured conversions supplied. No full evaluator, rendered UI or EA.'])
+    save(folder/'comparison.json',result);print(json.dumps(result));raise SystemExit(bool(fail))
+if __name__=='__main__':main()

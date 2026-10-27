@@ -1,0 +1,21 @@
+{
+  "cases": 297,
+  "matched": 297,
+  "failed": 0,
+  "first_failures": [],
+  "sdk_calls": 6087,
+  "whole_bot_complete": false,
+  "whole_manager_complete": false,
+  "whole_evaluator_complete": false,
+  "full_ea": false,
+  "native_open_status_body_executed": true,
+  "native_news_selector_executed": true,
+  "child_helpers_intercepted": false,
+  "terminal_replies_supplied": true,
+  "text_formatting_replies_measured_in_mt5": true,
+  "rendered_chart_verified": false,
+  "original_ex5_changed": false,
+  "limits": [
+    "Only the full open-status body, text and ordered SDK calls, with supplied position/account/news values and MT5 text conversions. No chart rendering, lifecycle or complete EA."
+  ]
+}

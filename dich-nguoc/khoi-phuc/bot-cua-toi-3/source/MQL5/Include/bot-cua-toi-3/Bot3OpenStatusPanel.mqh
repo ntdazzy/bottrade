@@ -9,10 +9,12 @@ string Bot3PanelIntegerText(const int value) { return (string)value; }
 string Bot3PanelTimeText(const datetime value) { return (string)value; }
 #endif
 
-void Bot3UpdateOpenStatusPanel(const uchar &show,const uchar &show_tester,const int &seed,const string &symbol,
-                              const double &balance,const int &frequency,const int &mode,const double &manual_lots,
+void Bot3UpdateOpenStatusPanelFields(const uchar &show,const uchar &show_tester,const int &seed,const string &symbol,
+                              const double &balance,const int &frequency,const uint &mode,const double &manual_lots,
                               const double &allowed_dd,const double &strategy_risk,const Bot3NewsEvents &events,
-                              const Bot3NewsWindows &windows,Bot3NewsSelection &selection,ulong &last_ticket)
+                              const uchar &nfp_enabled,const int &nfp_after,const uchar &interest_enabled,
+                              const int &interest_after,const uchar &cpi_enabled,const int &cpi_after,
+                              Bot3NewsSelection &selection,ulong &last_ticket)
 {
    if(show==0) return;
    const long tester=MQLInfoInteger((ENUM_MQL_INFO_INTEGER)6);
@@ -55,7 +57,8 @@ void Bot3UpdateOpenStatusPanel(const uchar &show,const uchar &show_tester,const 
    const string balance_text=DoubleToString(balance,2);
    index_text=IntegerToString(0,0,32);
    ObjectSetString(0,"linea"+index_text,(ENUM_OBJECT_PROPERTY_STRING)6,"Account Balance: "+balance_text);
-   Bot3UpdateNewsSelection(events,windows,selection);
+   Bot3UpdateNewsSelectionFields(nfp_enabled,events.nfp,nfp_after,interest_enabled,events.interest,interest_after,
+                                 cpi_enabled,events.cpi,cpi_after,selection);
    string news_text;
    if(selection.block_time!=0)
       news_text="Next News: "+selection.label+", "+Bot3PanelTimeText((datetime)selection.block_time);
@@ -75,6 +78,16 @@ void Bot3UpdateOpenStatusPanel(const uchar &show,const uchar &show_tester,const 
    else if(mode==1234) risk_text="Max allowed DD: "+Bot3PanelDoubleText(allowed_dd)+"%";
    else risk_text="Manual lotsize: "+Bot3PanelDoubleText(manual_lots)+"lots";
    ObjectSetString(0,"linet",(ENUM_OBJECT_PROPERTY_STRING)6,risk_text);
+}
+
+void Bot3UpdateOpenStatusPanel(const uchar &show,const uchar &show_tester,const int &seed,const string &symbol,
+                              const double &balance,const int &frequency,const uint &mode,const double &manual_lots,
+                              const double &allowed_dd,const double &strategy_risk,const Bot3NewsEvents &events,
+                              const Bot3NewsWindows &windows,Bot3NewsSelection &selection,ulong &last_ticket)
+{
+   Bot3UpdateOpenStatusPanelFields(show,show_tester,seed,symbol,balance,frequency,mode,manual_lots,allowed_dd,
+                                   strategy_risk,events,windows.nfp_enabled,windows.nfp_after,windows.interest_enabled,
+                                   windows.interest_after,windows.cpi_enabled,windows.cpi_after,selection,last_ticket);
 }
 
 #endif

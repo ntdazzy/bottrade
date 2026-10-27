@@ -1,3 +1,11 @@
+- `kiem-luong-sau-quan-ly-bot-1-3.py prepare|mql5|original|compare BOT RUN`:
+  nối nguyên thân bảng→vốn→khối lượng→chỉnh lệnh chờ→điều kiện dừng→tin→
+  tạo lệnh,296/296caB1,392/392caB3; có5chế độ khối lượng mỗi bot.
+  `mql5` cần `--build BUILD`. Tắt rút tiền, chưa gồm phần trước quản lý,
+  thống kê/lifecycle/ảnh bảng và toànEA. Không đặt lại dữ liệu giữa các khối.
+- `tao-bo-kiem-luong-sau-quan-ly.py`: tạo hai bộ ghi ghép và nguồn kiểm
+  biên dịch gọi dịch vụ thật, giữ cùng đối tượng/biến đã nối vị trí gốc.
+
 - `kiem-bang-thong-tin-mo-bot-1-3.py prepare|mql5|original|compare BOT RUN`:
   so toàn hàm cập nhật chữ/lãi lỗ mở `e1b0`/`14fa0`, gồm quét nhóm mã,
   tin sắp tới, mọi chế độ và trạng thái đọc lại sau dịch vụ. `mql5` cần

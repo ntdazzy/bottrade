@@ -1,0 +1,68 @@
+{
+  "checks": [
+    {
+      "bot": 1,
+      "scope": "joined",
+      "run": "b1-active-flow-20261027-r3",
+      "cases": 296,
+      "matched": 296,
+      "sdk_calls": 34310,
+      "result_sha256": "abf23f8afb89b9d583a18e75357d12107579f75b2fe2aede49e742f2c3568915",
+      "volume_mode_calls": {
+        "0": 289,
+        "2": 3,
+        "3": 3,
+        "999": 3,
+        "9999": 3
+      },
+      "resize_sleep_calls": 6,
+      "panel_text_calls": 144
+    },
+    {
+      "bot": 3,
+      "scope": "joined",
+      "run": "b3-active-flow-20261027-r3",
+      "cases": 392,
+      "matched": 392,
+      "sdk_calls": 49511,
+      "result_sha256": "db09624d8a7f2771416def70f8a281e84816197762951daa714ac430c72fd7f0",
+      "volume_mode_calls": {
+        "0": 379,
+        "3": 6,
+        "1234": 6,
+        "2": 3,
+        "9999": 3
+      },
+      "resize_sleep_calls": 6,
+      "panel_text_calls": 200
+    },
+    {
+      "bot": 1,
+      "scope": "panel-regression",
+      "run": "b1-open-panel-20261027-r4",
+      "cases": 297,
+      "matched": 297,
+      "sdk_calls": 6087,
+      "result_sha256": "d04c9b02c564f64591896e24493ab0ae5241f590fc7d8b6cc5fe733b387c1be7",
+      "volume_mode_calls": null,
+      "resize_sleep_calls": null,
+      "panel_text_calls": null
+    },
+    {
+      "bot": 3,
+      "scope": "panel-regression",
+      "run": "b3-open-panel-20261027-r4",
+      "cases": 324,
+      "matched": 324,
+      "sdk_calls": 7270,
+      "result_sha256": "78e10efb920bafc749decaaad327526c73eafa5879b604cb9b4d081e2019fb93",
+      "volume_mode_calls": null,
+      "resize_sleep_calls": null,
+      "panel_text_calls": null
+    }
+  ],
+  "whole_eas_complete": 0,
+  "rendered_ui_verified": false,
+  "original_ex5_changed": false,
+  "independent_review": "No further concrete finding after uint/shared Bot3 state correction; native paired execution remains authoritative."
+}

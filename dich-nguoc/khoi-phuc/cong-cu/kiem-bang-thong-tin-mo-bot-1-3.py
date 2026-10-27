@@ -20,7 +20,7 @@ SCOPE=dict(whole_bot_complete=False,whole_manager_complete=False,whole_evaluator
 def fields(bot):
     common=[('PanelShow','B',0x6a528,0x1d6f38),('PanelTester','B',0x6a530,0x1d6f40),
       ('PanelSeed','i',0x6a610,0x1d6ff0),('PanelSymbol','s',0x67918,0x74958),('PanelBalance','d',0x6a320,0x1d6c60),
-      ('PanelMode','i',0x6a748,0x6d630),('PanelStrategyRisk','d',0x6a758,0x1d7150)]
+      ('PanelMode','i' if bot==1 else 'I',0x6a748,0x6d630),('PanelStrategyRisk','d',0x6a758,0x1d7150)]
     extra={1:[('PanelVolume','d',0x66a80),('PanelTradeRisk','d',0x6a750),('PanelStep','i',0x6a768)],
            3:[('PanelFrequency','i',0x6d21c),('PanelManual','d',0x1d7138),('PanelDD','d',0x1d7140)]}
     out=[(n,k,a if bot==1 else b) for n,k,a,b in common]+extra[bot]

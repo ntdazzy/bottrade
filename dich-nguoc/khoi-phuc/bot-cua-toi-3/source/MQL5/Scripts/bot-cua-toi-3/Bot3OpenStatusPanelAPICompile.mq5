@@ -5,7 +5,7 @@ uchar PanelTester;
 int PanelSeed;
 string PanelSymbol;
 double PanelBalance;
-int PanelMode;
+uint PanelMode;
 double PanelStrategyRisk;
 int PanelFrequency;
 double PanelManual;

@@ -1,0 +1,22 @@
+{
+  "r1_passed": false,
+  "findings": [
+    {
+      "part": "Bot3 shared mode/frequency/drawdown values",
+      "evidence": "ACTIVE_STATE (0,1,0); native mode address 6d630, frequency 6d21c, allowed DD 1d7140 are also volume inputs/state.",
+      "change": "Pass volume_state.mode and volume_settings.frequency/max_total_dd directly to the panel. Use uint reference for the 32-bit mode. Keep Bot1 separate panel/runtime mode addresses."
+    },
+    {
+      "part": "Native SDK adapter for Sleep",
+      "evidence": "RESTORE_SLEEP_ARGS after joining the pending-resize body; native resize calls Sleep(1000), while the earlier queue/entry adapter only accepted Sleep(2500).",
+      "change": "Validate 1000 or 2500 against the recorded parameter, preserve logical error/effects, and count genuine resize sleeps."
+    },
+    {
+      "part": "Availability notice number",
+      "evidence": "B1 1b3e5..1b3f0 and B3 2369b onward use runtime cast tag 0x52 with int5, not IntegerToString.",
+      "change": "Use explicit int5 to string conversion, measured with the existing MT5 cast recorder."
+    }
+  ],
+  "r2_to_r3": "Only the test generator's independent API compile output was initialized to remove 7/9 warnings. Main recorder source/production code stayed identical. R3 repeats the joined proof with the final generator hash.",
+  "scope": "The joined active path starts after successful position management. No full evaluator, lifecycle or EA claim."
+}

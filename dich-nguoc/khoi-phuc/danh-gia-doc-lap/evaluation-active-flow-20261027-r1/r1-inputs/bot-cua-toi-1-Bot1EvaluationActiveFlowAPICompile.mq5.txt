@@ -1,0 +1,35 @@
+#property strict
+#include "../../Include/bot-cua-toi-1/Bot1EvaluationActiveFlow.mqh"
+void OnStart()
+{
+   Bot1NfpFilterSettings nfp_settings;Bot1NfpFilterState nfp;
+   Bot1ReleaseFilterSettings interest_settings,cpi_settings;Bot1ReleaseFilterState interest,cpi;
+   Bot1NewsEvents events;Bot1NewsSelection selection;Bot1NfpExecution execution;MqlDateTime cached;
+   Bot1LevelCacheSettings level_settings;ZeroMemory(level_settings);uint caller_index=0,current_index=0;long bar_times[100];double upper[100],lower[100];
+   ArrayInitialize(bar_times,0);ArrayInitialize(upper,0);ArrayInitialize(lower,0);
+   Bot1EntryLoopSettings loop_settings;Bot1EntryLoopState loop_state;
+   Bot1VolumeSettings volume_settings;Bot1VolumeState volume_state;
+   ZeroMemory(loop_settings);ZeroMemory(loop_state);ZeroMemory(volume_settings);ZeroMemory(volume_state);
+   string peak_key="",time_key="",suffix="";long last_check=0,last_deal=0;double volumes[8];ArrayInitialize(volumes,0);
+uchar PanelShow;
+uchar PanelTester;
+int PanelMode;
+uchar DaySwitch;
+double ChangePercent;
+double PreviousBalance;
+int BlockFlags;
+int TradeAllowed;
+double PanelTradeRisk;
+int PanelBalanceStep;
+long ActiveData[10];
+   int pending_enabled=0,maximum_pending=0;
+   Bot1PendingRestoreSettings restore;ZeroMemory(restore);
+   Bot1SpreadSettings spread_settings;Bot1PendingQueue queue;double unit=0,spread=0;ZeroMemory(spread_settings);ZeroMemory(queue);
+   Bot1FridaySettings friday;uchar friday_closed=0;ZeroMemory(friday);
+   long nfp_history[300],interest_history[300],cpi_history[300];
+   ZeroMemory(nfp_settings);ZeroMemory(nfp);ZeroMemory(interest_settings);ZeroMemory(cpi_settings);
+   ZeroMemory(interest);ZeroMemory(cpi);ZeroMemory(events);ZeroMemory(execution);ZeroMemory(cached);
+   ArrayInitialize(nfp_history,0);ArrayInitialize(interest_history,0);ArrayInitialize(cpi_history,0);
+   Bot1EvaluateActiveFlow(nfp_settings,nfp,interest_settings,interest,cpi_settings,cpi,events,cached,
+                            nfp_history,interest_history,cpi_history,execution,selection,friday,friday_closed,spread_settings,unit,spread,queue,restore,pending_enabled,maximum_pending,level_settings,caller_index,current_index,bar_times,upper,lower,loop_settings,loop_state,volume_settings,volume_state,false,peak_key,time_key,last_check,last_deal,suffix,volumes,PanelShow,PanelTester,PanelMode,PanelTradeRisk,PanelBalanceStep,BlockFlags!=0,DaySwitch,ChangePercent,PreviousBalance);
+}

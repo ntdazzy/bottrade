@@ -46,7 +46,7 @@ uchar PanelTester;
 int PanelSeed;
 string PanelSymbol;
 double PanelBalance;
-int PanelMode;
+uint PanelMode;
 double PanelStrategyRisk;
 int PanelFrequency;
 double PanelManual;
@@ -110,7 +110,7 @@ void ApplyEffects(const int api)
          case 2: PanelSeed=(int)Effects[i].word;break;
          case 3: PanelSymbol=Effects[i].text;break;
          case 4: PanelBalance=Number(Effects[i].word);break;
-         case 5: PanelMode=(int)Effects[i].word;break;
+         case 5: PanelMode=(uint)Effects[i].word;break;
          case 6: PanelStrategyRisk=Number(Effects[i].word);break;
          case 7: PanelFrequency=(int)Effects[i].word;break;
          case 8: PanelManual=Number(Effects[i].word);break;
@@ -217,7 +217,7 @@ int OnStart()
       PanelSeed=(int)(ulong)FileReadLong(file);
       PanelSymbol=ReadText(file);
       PanelBalance=Number((ulong)FileReadLong(file));
-      PanelMode=(int)(ulong)FileReadLong(file);
+      PanelMode=(uint)(ulong)FileReadLong(file);
       PanelStrategyRisk=Number((ulong)FileReadLong(file));
       PanelFrequency=(int)(ulong)FileReadLong(file);
       PanelManual=Number((ulong)FileReadLong(file));

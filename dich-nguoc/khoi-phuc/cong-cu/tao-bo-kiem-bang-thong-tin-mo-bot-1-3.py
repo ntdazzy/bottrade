@@ -197,7 +197,7 @@ int OnStart()
 }
 '''
 def generate(bot):
-    fs=data.fields(bot);types={'B':'uchar','i':'int','Q':'ulong','q':'long','d':'double','s':'string'}
+    fs=data.fields(bot);types={'B':'uchar','i':'int','I':'uint','Q':'ulong','q':'long','d':'double','s':'string'}
     globals_='\n'.join(types[k]+' '+n+';' for n,k,_ in fs if '.' not in n and n!='LastTicket')
     def value(kind,expression):return expression if kind=='s' else 'Number('+expression+')' if kind=='d' else '('+types[kind]+')'+expression
     state='\n'.join('   '+('WriteText(file,'+n+');' if k=='s' else 'Word(file,'+('Bits('+n+')' if k=='d' else '(ulong)(long)'+n)+');') for n,k,_ in fs)

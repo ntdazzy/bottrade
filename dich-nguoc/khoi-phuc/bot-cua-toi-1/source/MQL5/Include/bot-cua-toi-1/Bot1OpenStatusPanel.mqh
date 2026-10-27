@@ -10,10 +10,12 @@ string Bot1PanelIntegerText(const int value) { return (string)value; }
 string Bot1PanelTimeText(const datetime value) { return (string)value; }
 #endif
 
-void Bot1UpdateOpenStatusPanel(const uchar &show,const uchar &show_tester,const int &seed,const string &symbol,
+void Bot1UpdateOpenStatusPanelFields(const uchar &show,const uchar &show_tester,const int &seed,const string &symbol,
                               const double &balance,const double &first_volume,const int &mode,const double &trade_risk,
                               const double &strategy_risk,const int &balance_step,const Bot1NewsEvents &events,
-                              const Bot1NewsWindows &windows,Bot1NewsSelection &selection,ulong &last_ticket)
+                              const uchar &nfp_enabled,const int &nfp_after,const uchar &interest_enabled,
+                              const int &interest_after,const uchar &cpi_enabled,const int &cpi_after,
+                              Bot1NewsSelection &selection,ulong &last_ticket)
 {
    if(show==0) return;
    const long tester=MQLInfoInteger((ENUM_MQL_INFO_INTEGER)6);
@@ -61,7 +63,8 @@ void Bot1UpdateOpenStatusPanel(const uchar &show,const uchar &show_tester,const 
    const string balance_text=DoubleToString(balance,2);
    index_text=IntegerToString(0,0,32);
    ObjectSetString(0,"linea"+index_text,(ENUM_OBJECT_PROPERTY_STRING)6,"Account Balance: "+balance_text);
-   Bot1UpdateNewsSelection(events,windows,selection);
+   Bot1UpdateNewsSelectionFields(nfp_enabled,events.nfp,nfp_after,interest_enabled,events.interest,interest_after,
+                                 cpi_enabled,events.cpi,cpi_after,selection);
    string news_text;
    if(selection.block_time!=0)
       news_text="Next News: "+selection.label+", "+Bot1PanelTimeText((datetime)selection.block_time);
@@ -78,6 +81,16 @@ void Bot1UpdateOpenStatusPanel(const uchar &show,const uchar &show_tester,const 
    else
       strategy_text="Using fixed lotsizee: "+DoubleToString(Bot1RoundPrice(first_volume,2),2)+"lots";
    ObjectSetString(0,"lines",(ENUM_OBJECT_PROPERTY_STRING)6,strategy_text);
+}
+
+void Bot1UpdateOpenStatusPanel(const uchar &show,const uchar &show_tester,const int &seed,const string &symbol,
+                              const double &balance,const double &first_volume,const int &mode,const double &trade_risk,
+                              const double &strategy_risk,const int &balance_step,const Bot1NewsEvents &events,
+                              const Bot1NewsWindows &windows,Bot1NewsSelection &selection,ulong &last_ticket)
+{
+   Bot1UpdateOpenStatusPanelFields(show,show_tester,seed,symbol,balance,first_volume,mode,trade_risk,strategy_risk,
+                                   balance_step,events,windows.nfp_enabled,windows.nfp_after,windows.interest_enabled,
+                                   windows.interest_after,windows.cpi_enabled,windows.cpi_after,selection,last_ticket);
 }
 
 #endif
