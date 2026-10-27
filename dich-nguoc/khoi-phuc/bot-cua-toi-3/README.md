@@ -1,3 +1,13 @@
+Đã ghép `Bot3NewsFridaySpreadRestoreFlow.mqh`: tin → cuối tuần →
+lưu/hủy khi chênh lệch cao → đặt lại lệnh khi chênh lệch thấp.
+**801/801ca khớp**, so **19.635 lần gọi dịch vụ**, gồm mở/gửi/thử lại/
+báo lỗi và500ô bảng. Nguồn/bộ kiểm0lỗi/0cảnh báo. Còn giới hạn và
+điều kiện vào lệnh phía sau, khởi tạo/hiển thị/toànEA.
+[Phạm vi](../danh-gia-doc-lap/spread-restore-20261027-r1/SPEC.md).
+
+Các mốc dưới đây giữ bằng chứng cũ; phần còn thiếu ghi tại từng mốc
+không thay trạng thái hiện tại ở trên.
+
 Đã ghép `Bot3NewsFridaySpreadFlow.mqh`: tin → đóng cuối tuần →
 lưu/hủy khi chênh lệch cao. **640/640 ca khớp**, so **18.809 lần gọi dịch
 vụ** và 500 ô bảng; nguồn/bộ kiểm 0 lỗi/0 cảnh báo. Còn đặt lại lệnh

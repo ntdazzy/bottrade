@@ -1,0 +1,30 @@
+{
+  "checks": [
+    {
+      "bot": 1,
+      "cases": 801,
+      "sdk_calls": 19260,
+      "cast_calls": 364,
+      "queue_clears": 120,
+      "parent_instructions": 860,
+      "result_sha256": "9cf68db041dd9d08f6d7acc0bd8574bf73d839be568497a6c1934781a8eb49ca",
+      "sdk_tape_sha256": "8c818bea3df09fd998e422621e8633207ef7d6e27bd47246accab9632ccb8238",
+      "casts_sha256": "5096e7a24025d68d6123ec0b5a2e7816066d3ebdf7f7e364e8b1401117de9747",
+      "matched": 801
+    },
+    {
+      "bot": 3,
+      "cases": 801,
+      "sdk_calls": 19635,
+      "cast_calls": 364,
+      "queue_clears": 120,
+      "parent_instructions": 2004,
+      "result_sha256": "79dc06528bb6fc124269c34268be794aa2d2d39315bd9122bbf1ad40250b048c",
+      "sdk_tape_sha256": "456eb663114b5fb606055598fd9b2c50b94cb9e6d3d2b392f2ebd6d4cead458a",
+      "casts_sha256": "5096e7a24025d68d6123ec0b5a2e7816066d3ebdf7f7e364e8b1401117de9747",
+      "matched": 801
+    }
+  ],
+  "independent_review": "friday_flow_review: no material findings; R2 SDK string-return cache initialization documented separately",
+  "whole_eas_complete": 0
+}

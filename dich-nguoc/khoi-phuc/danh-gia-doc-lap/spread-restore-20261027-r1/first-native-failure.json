@@ -1,0 +1,60 @@
+[
+  {
+    "bot": 1,
+    "case": 662,
+    "tag": "real-open-retry-error",
+    "error": "Invalid memory read (UC_ERR_READ_UNMAPPED)",
+    "invalid": [
+      {
+        "access": 19,
+        "address": "0x23e5c451ba6",
+        "size": 4,
+        "regs": {
+          "RIP": "0x23e5aa10775",
+          "RSP": "0x5001edf0",
+          "RAX": "0x8",
+          "RBX": "0x23e5aa65e6c",
+          "RCX": "0x7000104c",
+          "RDX": "0x23e5c451ba6",
+          "R8": "0x9",
+          "R9": "0x23e5aa7a43c",
+          "R12": "0x5001ef10",
+          "R13": "0x23e5aa105c0",
+          "R14": "0x23e5aa7a43c",
+          "R15": "0x0"
+        }
+      }
+    ],
+    "tape_pos": 29672,
+    "tape_size": 34700
+  },
+  {
+    "bot": 3,
+    "case": 662,
+    "tag": "real-open-retry-error",
+    "error": "Invalid memory read (UC_ERR_READ_UNMAPPED)",
+    "invalid": [
+      {
+        "access": 19,
+        "address": "0x17156432200",
+        "size": 4,
+        "regs": {
+          "RIP": "0x17156250775",
+          "RSP": "0x5001edf0",
+          "RAX": "0x8",
+          "RBX": "0x171562ae54c",
+          "RCX": "0x7000104c",
+          "RDX": "0x17156432200",
+          "R8": "0x9",
+          "R9": "0x17156426e3c",
+          "R12": "0x5001ef10",
+          "R13": "0x171562505c0",
+          "R14": "0x17156426e3c",
+          "R15": "0x0"
+        }
+      }
+    ],
+    "tape_pos": 29768,
+    "tape_size": 34812
+  }
+]

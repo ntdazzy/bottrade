@@ -1,3 +1,10 @@
+- `kiem-khoi-phuc-lenh-da-luu-bot-1-3.py prepare|mql5|original|compare BOT RUN`:
+  ghép tin/cuối tuần/lưu-hủy/đặt lại lệnh tới trước giới hạn. `mql5`
+  cần `--build BUILD`;801ca mỗi bot. Thử lại/thông báo/mã lỗi/đổi chữ
+  đều được đối chiếu; lỗi dịch vụ và chờ được cấp ở rìa, chưa toànEA.
+- `tao-bo-kiem-khoi-phuc-lenh-da-luu.py`: tạo bộ ghi/caller trực tiếp;
+  kiểm bảo toàn lỗi khi đổi kiểu và ghi đầy đủ500ô bảng/trạng thái.
+
 - `kiem-chenh-gia-cao-bot-1-3.py prepare|mql5|original|compare BOT RUN`:
   so liên tục tin→cuối tuần→lưu/hủy khi chênh lệch cao;640ca mỗi bot,
   đủ500ô bảng. `mql5` cần `--build BUILD`. Đổi số thành chuỗi được đo

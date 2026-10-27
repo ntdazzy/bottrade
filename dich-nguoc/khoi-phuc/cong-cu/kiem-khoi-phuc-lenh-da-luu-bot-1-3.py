@@ -1,0 +1,143 @@
+"""Compare continuous news, Friday, high-spread storage and low-spread queue restoration.
+prepare|mql5(--build)|original|compare BOT RUN. Stops immediately before order limits.
+"""
+import argparse,copy,hashlib,importlib.util,json,math,re,shutil,struct,subprocess
+from pathlib import Path
+ROOT=Path(__file__).resolve().parents[1];MASK=(1<<64)-1
+def module(name,file):
+    spec=importlib.util.spec_from_file_location(name,ROOT/'cong-cu'/file);m=importlib.util.module_from_spec(spec);spec.loader.exec_module(m);return m
+news=module('restore_high','kiem-chenh-gia-cao-bot-1-3.py');base=news.base
+pub=base.pub;require=pub.require;sha=base.sha;save=base.save;MAGIC=base.MAGIC
+CFG={1:dict(end=0x1c85c,sl=0x62498,tp=0x624a0,anchor=0x67450,virtual=0x6a5e8,comment=0x62470,counter=0x6744c),
+     3:dict(end=0x269fb,sl=0x6d588,tp=0x6d590,anchor=0x74490,virtual=0x1d6fc8,comment=0x6d568,counter=0x7448c)}
+SCOPE=dict(whole_bot_complete=False,whole_manager_complete=False,whole_evaluator_complete=False,full_ea=False,native_news_friday_spread_restore_executed=True,child_helpers_intercepted=False,terminal_replies_supplied=True,numeric_conversion_measured_in_mt5=True,original_ex5_changed=False)
+def cases():
+    rows=news.cases()
+    for c in rows:c.update(sl=20.,tp=100.,anchor=1700000000,virtual=1,error_count=0,restore_mode=0,focus=0,restore_kind=0,accepted_replies=[c['accepted']]*3,error_replies=[0]*3)
+    prototype=copy.deepcopy(rows[0]);prototype.update(enabled=0,ir_settings=[0,0,0,10,10],cpi_settings=[0,0,0,10,10],friday=[0,20,0,1,1],wide_enabled=1,maximum=2.,minimum=2.,orders=0,position=0,restore_kind=4,accepted=1,accepted_replies=[1]*3)
+    def add(tag,**changes):
+        c=copy.deepcopy(prototype);c.update(changes);c['tag']=tag;rows.append(c);return c
+    for kind in [4,5]:
+        for focus in [0,1,50,99]:
+            for flag in [0,1,2,3,255]:add('restore-row-and-flags',restore_kind=kind,focus=focus,queue_enabled=flag)
+        for accepted,errors in [([1,1,1],[0,0,0]),([0,0,0],[0,0,0]),([0,0,0],[3,3,3]),([0,1,1],[132,0,0]),([0,0,1],[132,132,0]),([0,0,0],[999,999,999])]:
+            for async_mode in [0,1]:add('real-open-retry-error',restore_kind=kind,accepted_replies=accepted,error_replies=errors,async_mode=async_mode)
+        for mode in range(1,10):
+            c=add('live-fields-at-service',restore_kind=kind,restore_mode=mode)
+            if mode in [3,9]:c.update(accepted_replies=[0,1,1],error_replies=[132,0,0])
+        for code in [0,0xffffffff]:add('error-counter-wrap',restore_kind=kind,error_count=code,accepted_replies=[0]*3,error_replies=[999]*3)
+        for minimum in [-1.,0.,1.,2.,math.nan,math.inf]:add('lower-spread-boundary',restore_kind=kind,minimum=minimum)
+        for virtual in [0,1,255]:
+            for anchor in [-172800,0,1700000000]:add('expiration-context',restore_kind=kind,virtual=virtual,anchor=anchor)
+    for flag in [0,1,2,3,255]:
+        for day in [4,5,6]:
+            for hour in [19,20,21]:
+                c=add('friday-low-bit-restoration-gate',friday=[flag,20,1,1,1]);c['cached'][6]=day;c['cached'][3]=hour
+    for i,c in enumerate(rows):c['id']=i
+    return rows
+
+def table(c):
+    orders,results=news.table(c)
+    if c['restore_kind']:
+        orders=[[0.,0.,0.] for _ in range(100)];orders[c['focus']]=[110. if c['restore_kind']==4 else 90.,float(c['restore_kind']),.25]
+    return orders,results
+
+def encode(rows):
+    raw=bytearray(struct.pack('<3i',MAGIC,1,len(rows)))
+    for c in rows:
+        orders,results=table(c)
+        raw+=news.encode([c])[12:-4000]+struct.pack('<500d',*[v for row in orders+results for v in row])
+        raw+=struct.pack('<2Q2qQ9q',base.bits(c['sl']),base.bits(c['tp']),c['anchor'],c['virtual'],c['error_count'],c['restore_mode'],c['focus'],c['restore_kind'],*c['accepted_replies'],*c['error_replies'])
+    return bytes(raw)
+class Original(news.Original):
+    def __init__(self,bot,casts):
+        super().__init__(bot,casts);self.restore=CFG[bot];self.wide=dict(self.wide,pass_ends=[self.restore['end']]);self.nfp=dict(self.nfp,end=self.restore['end'])
+        for api,off in [(33,0x7b17c0),(34,0xacad20)]:
+            a=0x7ff683f20000+off
+            if not any(lo<=a<=hi for lo,hi,_ in self.m.mem_regions()):self.m.mem_map(a&~4095,4096)
+            self.sdk[a]=api;self.m.mem_write(a,b'\xc3');self.m.hook_add(self.uc.UC_HOOK_CODE,self.call,begin=a,end=a)
+    def state(self):
+        raw=super().state();r=self.restore
+        raw+=b''.join(bytes(self.m.mem_read(self.base+r[n],8)) for n in ['sl','tp','anchor'])
+        raw+=struct.pack('<2Q',self.value(r['virtual'],'B'),self.value(r['counter'],'I'))+base.text(self.read_text(self.base+r['comment']));return raw
+    def visit(self,m,address,size,user):
+        result=super().visit(m,address,size,user)
+        if address==self.base+self.nfp['start'] and not self.restore_seeded:
+            self.restore_seeded=True;c=self.case;r=self.restore
+            # Start the supplied SDK string-return cache empty, as in the prior error-helper proof.
+            m.mem_write(self.base+self.cfg['string_result'],bytes(12))
+            for n in ['sl','tp']:m.mem_write(self.base+r[n],struct.pack('<d',c[n]))
+            m.mem_write(self.base+r['anchor'],struct.pack('<q',c['anchor']));m.mem_write(self.base+r['virtual'],bytes([c['virtual']]));m.mem_write(self.base+r['counter'],struct.pack('<I',c['error_count']));m.mem_write(self.base+r['comment'],struct.pack('<IQ',0,self.string('restore')))
+            orders,results=table(c);m.mem_write(self.base+self.wide['orders'],struct.pack('<300d',*[v for row in orders for v in row]));m.mem_write(self.base+self.wide['results'],struct.pack('<200d',*[v for row in results for v in row]))
+        return result
+    def effect(self,api,strings):
+        m=self.m;c=self.case;mode=c['restore_mode'];r=self.restore;n=self.nfp
+        first=False
+        if api==10 and strings[0] in ['Restoring pending buy-order','Restoring pending sell-order']:
+            self.restore_prints+=1;first=self.restore_prints==1
+        update=(mode==1 and first) or (mode==2 and api==21 and self.send_calls==1) or (mode==3 and api==33 and self.sleep_calls==1)
+        if update:
+            for key,value in [('sl',12.),('tp',7.)]:m.mem_write(self.base+r[key],struct.pack('<d',value))
+            m.mem_write(self.base+self.wide['unit'],struct.pack('<d',.5));m.mem_write(self.base+n['magic'],struct.pack('<i',77));m.mem_write(self.base+r['comment'],struct.pack('<IQ',0,self.string('updated')))
+            if mode==3:m.mem_write(self.base+self.wide['orders']+c['focus']*24,struct.pack('<3d',112. if c['restore_kind']==4 else 88.,float(c['restore_kind']),.5))
+        if mode in [4,5] and api==21 and self.send_calls==1:m.mem_write(self.base+self.wide['queue_enabled'],bytes([0 if mode==4 else 2]))
+        if mode==6 and first:m.mem_write(self.base+self.wide['orders']+c['focus']*24,struct.pack('<3d',90.,5.,.25))
+        if mode==8 and first:m.mem_write(self.base+n['variables'][2],struct.pack('<d',1000.))
+        if mode==9 and api==33 and self.sleep_calls==1:m.mem_write(self.base+n['error'],bytes(4))
+    def call(self,m,address,size,user):
+        api=self.sdk.get(address);x=self.x;r=lambda n:m.reg_read(getattr(x,'UC_X86_REG_'+n))
+        if api==32:
+            kind=r('R8')&0xffffffff;value=r('RDX')& (0xffffffff if kind==0x52 else MASK);require(r('RCX')==self.nfp['ctx'] and (kind,value) in self.casts,'RESTORE_UNMEASURED_CAST');text,error=self.casts[(kind,value)];require(error==0xffffffff,'CAST_ERROR_PRESERVATION_NOT_MEASURED');m.mem_write(r('R9'),struct.pack('<IQ',0,self.string(text)));self.cast_calls+=1;return
+        if api==34:
+            destination=r('RCX');require((destination,r('RDX'),r('R8'))==(self.base+self.wide['orders'],0,2400),'RESTORE_QUEUE_CLEAR_ARGS');m.mem_write(destination,bytes(2400));m.reg_write(x.UC_X86_REG_RAX,destination);self.queue_clears+=1;return
+        if not api:return super().call(m,address,size,user)
+        peek=base.Reader(self.tape.raw[self.tape.pos:]);peek.block();kind,*args=peek.take('i4Q');strings=[peek.text() for _ in range(4)]
+        if api in [21,30,33]:
+            rd=self.tape;require(rd.block()==self.state(),'RESTORE_STATE_BEFORE_SDK '+str((self.case['id'],api)));kind,*args=rd.take('i4Q');texts=[rd.text() for _ in range(4)];payload=rd.block();error,=rd.take('I');require(r('RCX')==self.nfp['ctx'] and texts==[None]*4 and payload==b'','RESTORE_SDK_SHAPE')
+            if api==33:
+                require(kind==33 and args==[2500,0,0,0] and r('RDX')==2500,'RESTORE_SLEEP_ARGS');self.sleep_calls+=1
+            else:
+                i=min(self.send_calls,2);accepted=int(bool(self.case['accepted_replies'][i]));require(kind==21 and args==[int(api==30),accepted,0,0] and error==self.case['error_replies'][i] and r('RDX')==self.base+self.nfp['request'] and r('R8')==self.base+self.nfp['request']+240,'RESTORE_SEND_ARGS_OR_REPLY');m.reg_write(x.UC_X86_REG_RAX,accepted);self.send_calls+=1
+            m.mem_write(self.base+self.nfp['error'],struct.pack('<I',error));self.api_count+=1
+        else:super().call(m,address,size,user)
+        self.effect(21 if api==30 else api,strings)
+    def run(self,c,tape):
+        self.restore_seeded=False;self.restore_prints=self.send_calls=self.sleep_calls=0;return super().run(c,tape)
+
+def identity(bot):
+    h=ROOT/f'bot-cua-toi-{bot}';source=h/'source/MQL5';script=f'Scripts/bot-cua-toi-{bot}/Bot{bot}NewsFridaySpreadRestoreCheck.mq5';helpers=dict(news.identity(bot)['helpers_sha256']);helpers[Path(__file__).relative_to(ROOT).as_posix()]=sha(Path(__file__))
+    return dict(original_ex5_sha256=base.validation.original_hash(bot),sources_sha256={p.relative_to(source).as_posix():sha(p) for p in pub.closure(source/script,source)},helpers_sha256=helpers)
+def execute(bot,folder,build):
+    h=ROOT/f'bot-cua-toi-{bot}';mt=ROOT.parent/f'.local/mt5-bot{bot}-thread-20261025';receipt=h/'bang-chung/bien-dich'/build/'bien-nhan.json';b=json.loads(receipt.read_text(encoding='utf-8-sig'));script=f'Scripts/bot-cua-toi-{bot}/Bot{bot}NewsFridaySpreadRestoreCheck.mq5';require(b['target']==script and b['errors']==b['warnings']==0,'BUILD_NOT_CLEAN')
+    for n,v in identity(bot)['sources_sha256'].items():require(sha(mt/'MQL5'/n)==b['sources_sha256'][n]==v,'BUILD_SOURCE_CHANGED')
+    binary=mt/'MQL5'/Path(script).with_suffix('.ex5');require(sha(binary)==b['binary_sha256']==sha(receipt.parent/binary.name),'BUILD_BINARY_CHANGED');files=mt/f'MQL5/Files/bot{bot}-news-friday-spread-restore'/folder.name;files.mkdir(parents=True,exist_ok=False);shutil.copyfile(folder/'cases.bin',files/'cases.bin')
+    preset=mt/'MQL5/Presets'/('friday-'+folder.name+'.set');ini=mt/('friday-'+folder.name+'.ini');preset.write_text('CheckRun='+folder.name+'\n',encoding='utf-16');ini.write_text(f'[Experts]\nEnabled=0\nAllowLiveTrading=0\nAllowDllImport=0\n[StartUp]\nScript=bot-cua-toi-{bot}\\Bot{bot}NewsFridaySpreadRestoreCheck\nScriptParameters={preset.name}\nSymbol=XAUUSD_NOCOST_V2\nPeriod=M15\nShutdownTerminal=1\n',encoding='utf-16');p=subprocess.Popen(f'"{mt/"terminal64.exe"}" /portable /config:"{ini}"',cwd=mt,creationflags=subprocess.CREATE_NO_WINDOW)
+    try:code=p.wait(timeout=120)
+    except subprocess.TimeoutExpired:p.terminate();p.wait(timeout=30);raise RuntimeError('MT5_TIMEOUT')
+    require(code==0,'MT5_EXIT');return files,receipt
+def main():
+    p=argparse.ArgumentParser(description=__doc__);p.add_argument('mode',choices=['prepare','mql5','original','compare']);p.add_argument('bot',type=int,choices=[1,3]);p.add_argument('run');p.add_argument('--build');a=p.parse_args();require(re.fullmatch('[a-z0-9-]{1,32}',a.run),'BAD_RUN');rows=cases();folder=ROOT/f'bot-cua-toi-{a.bot}/bang-chung/kiem-quan-ly-vi-the'/a.run;current=identity(a.bot);header=struct.pack('<3i',MAGIC,1,len(rows))
+    if a.mode=='prepare':folder.mkdir(parents=True,exist_ok=False);(folder/'cases.bin').write_bytes(encode(rows));save(folder/'baseline.json',dict(**current,cases=len(rows),inputs_sha256=sha(folder/'cases.bin'),**SCOPE));print(json.dumps(dict(cases=len(rows))));return
+    baseline=json.loads((folder/'baseline.json').read_text());require(all(baseline[k]==v for k,v in current.items()) and (folder/'cases.bin').read_bytes()==encode(rows),'IDENTITY_CHANGED')
+    if a.mode=='mql5':
+        files,receipt=execute(a.bot,folder,a.build);require((files/'script-status.bin').read_bytes()==struct.pack('<2i',0,len(rows)),'SCRIPT_FAILED')
+        for n in ['mql5-results.bin','sdk-tape.bin','script-status.bin','cast-values.bin']:
+            with (folder/n).open('xb') as f:f.write((files/n).read_bytes())
+        save(folder/'mql5-run.json',dict(**current,cases=len(rows),result_sha256=sha(folder/'mql5-results.bin'),sdk_tape_sha256=sha(folder/'sdk-tape.bin'),casts_sha256=sha(folder/'cast-values.bin'),build=a.build,build_receipt_sha256=sha(receipt),**SCOPE));print(json.dumps(dict(cases=len(rows))));return
+    if a.mode=='original':
+        tape=base.Reader((folder/'sdk-tape.bin').read_bytes());require(tape.take('3i')==(MAGIC,1,len(rows)),'TAPE_HEADER');o=Original(a.bot,news.cast_values(folder/'cast-values.bin'));o.cast_calls=o.queue_clears=0;raw=bytearray(header);calls=0
+        for c in rows:
+            require(tape.take('i')[0]==c['id'],'TAPE_CASE_ID');state=o.run(c,tape.block());raw+=struct.pack('<2i',c['id'],len(state))+state;calls+=o.api_count
+        require(tape.pos==len(tape.raw),'TAPE_TRAILING')
+        with (folder/'original-results.bin').open('xb') as f:f.write(raw)
+        save(folder/'original-run.json',dict(**current,cases=len(rows),result_sha256=sha(folder/'original-results.bin'),sdk_tape_sha256=sha(folder/'sdk-tape.bin'),sdk_calls=calls,cast_calls=o.cast_calls,queue_clears=o.queue_clears,casts_sha256=sha(folder/'cast-values.bin'),parent_instructions=len(o.covered),**SCOPE));print(json.dumps(dict(cases=len(rows),sdk_calls=calls)));return
+    for n in ['original','mql5']:
+        r=json.loads((folder/(n+'-run.json')).read_text());require(all(r[k]==v for k,v in current.items()) and r['result_sha256']==sha(folder/(n+'-results.bin')) and r['sdk_tape_sha256']==sha(folder/'sdk-tape.bin') and r['casts_sha256']==sha(folder/'cast-values.bin'),'RUN_CHANGED')
+    data=[base.Reader((folder/(n+'-results.bin')).read_bytes()) for n in ['original','mql5']];require(all(r.take('3i')==(MAGIC,1,len(rows)) for r in data),'RESULT_HEADER');fail=[]
+    for c in rows:
+        states=[]
+        for r in data:require(r.take('i')[0]==c['id'],'RESULT_ID');states.append(r.block())
+        if states[0]!=states[1]:fail.append(dict(id=c['id'],tag=c['tag'],first_difference=next((i for i,(x,y) in enumerate(zip(*states)) if x!=y),None),sizes=list(map(len,states))))
+    require(all(r.pos==len(r.raw) for r in data),'RESULT_TRAILING');result=dict(cases=len(rows),matched=len(rows)-len(fail),failed=len(fail),first_failures=fail[:12],**SCOPE,limits=['Continuous news, Friday, high-spread storage and low-spread restoration only; stops before order limits. Initial frame/state, terminal replies, logical SDK errors, successful allocation and measured number conversions supplied. No full evaluator or EA.'])
+    save(folder/'comparison.json',result);print(json.dumps(result));raise SystemExit(bool(fail))
+if __name__=='__main__':main()
