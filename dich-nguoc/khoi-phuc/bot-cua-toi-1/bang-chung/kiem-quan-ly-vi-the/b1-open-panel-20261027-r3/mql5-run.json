@@ -1,0 +1,34 @@
+{
+  "original_ex5_sha256": "a3b0de423a06e10ebedc279307b93d7cb9188ba2bb5de77131a913c865b0e922",
+  "sources_sha256": {
+    "Include/bot-cua-toi-1/Bot1OpenStatusPanel.mqh": "32681a4ef986309b9cec864212f13cffee07193f904241d88ad171b9e816a5e6",
+    "Scripts/bot-cua-toi-1/Bot1OpenStatusPanelCheck.mq5": "1c130a9294ff9388f4b4c4eb53663757343b2708d8c1ecf0c658223f3ace906e",
+    "Include/bot-cua-toi-1/Bot1NewsBlock.mqh": "776c5957d4ea88a9f18ee2c59ad29cc8a6563f0f4f59877d6791ddec6d1bef1f",
+    "Include/bot-cua-toi-1/Bot1PriceLevels.mqh": "827d537baa2798c0cb6dc317bf500011e20af788529a9ebc095f9a4492e45d22",
+    "Include/bot-cua-toi-1/Bot1NewsSelector.mqh": "84e6c99d0e7b87a32933496a85b84ef0dd035fbf4aa40ce08b8a9b37658cf679"
+  },
+  "helpers_sha256": {
+    "cong-cu/kiem-bang-thong-tin-mo-bot-1-3.py": "d4366e8f00d9ea19c7254331889977f79c41533a27552f1532981b5b429a6fba",
+    "cong-cu/tao-bo-kiem-bang-thong-tin-mo-bot-1-3.py": "c6b2e354e1d8abb20e3b0dba2b8be0d027519719bd1dd1a07b34881fddff3a20",
+    "cong-cu/kiem-chon-tin-day-du-bot-1-3.py": "0a7ebaf1893d8a11ae0e3f30b4018af70078c1f78451540fcf688032930492a4",
+    "cong-cu/kiem-gia-vao-bot-1-3.py": "22394e48932feb7242b967aa58e327d2990402f12bfe52621916f64914c9dac2",
+    "cong-cu/kiem-muc-gia-bot-1-3.py": "a6c447ca80029fb63ced0c9d1673bb14222a7736b04df5c410f280f8471d6a35",
+    "cong-cu/kiem-ban-git-quan-ly.py": "7186478774b34e0d72b4594fbcc85972d9b4c07ed02160987d46d34f39dcb160",
+    "cong-cu/kiem-khoi-luong-hop-le-bot-1-3.py": "8251fb4423d6f5f2e1b79a1c53dbb25fb5a6c568bb61cddef23396dc982243f0"
+  },
+  "cases": 297,
+  "result_sha256": "d04c9b02c564f64591896e24493ab0ae5241f590fc7d8b6cc5fe733b387c1be7",
+  "build": "b1-open-panel-check-20261027-r3",
+  "build_receipt_sha256": "550239f801192885a46da19acf1b26327c67f78de62c026d72360dbe386b0a68",
+  "whole_bot_complete": false,
+  "whole_manager_complete": false,
+  "whole_evaluator_complete": false,
+  "full_ea": false,
+  "native_open_status_body_executed": true,
+  "native_news_selector_executed": true,
+  "child_helpers_intercepted": false,
+  "terminal_replies_supplied": true,
+  "text_formatting_replies_measured_in_mt5": true,
+  "rendered_chart_verified": false,
+  "original_ex5_changed": false
+}

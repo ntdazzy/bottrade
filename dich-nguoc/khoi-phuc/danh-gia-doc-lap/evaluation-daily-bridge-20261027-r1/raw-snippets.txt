@@ -1,0 +1,6 @@
+Bot1 range: RVA 0x1b317..0x1b450, 0x1b44f..0x1b650, 0x1b8a7..0x1b980, 0x1ea3e..0x1ecb0, 0x1ec5d..0x1ed20.
+Bot3 range: RVA 0x235f7..0x2372c, 0x2372b..0x23a20, 0x238fd..0x23b50, 0x23bb9..0x23c80.
+
+Các đoạn trên đã được xem bằng xem-quan-ly-goc.py với --full-snapshot. SHA-256:
+Bot1 evaluator snapshot = 45d53270186b7019a8721e0cf3734a61aac8e8660c70f7e602849b1c298d7cbd
+Bot3 evaluator snapshot = 6bead161fa97b6568b546e8c86a4ff03fdda55d6fb226a52b58dd14ec050d920

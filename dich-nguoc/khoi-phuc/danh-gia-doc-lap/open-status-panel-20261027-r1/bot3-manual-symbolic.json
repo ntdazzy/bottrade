@@ -1,0 +1,81 @@
+{
+  "bot": 3,
+  "events": [
+    {
+      "api": "info",
+      "property": 6
+    },
+    {
+      "api": "positions"
+    },
+    {
+      "api": "double-text",
+      "value": 0.0,
+      "digits": 2
+    },
+    {
+      "api": "integer-text",
+      "value": 0,
+      "width": 0,
+      "fill": 32
+    },
+    {
+      "api": "set-text",
+      "chart": 0,
+      "name": "lineopl0",
+      "property": 6,
+      "text": "Open P/L: <D2>"
+    },
+    {
+      "api": "double-text",
+      "value": 10000.0,
+      "digits": 2
+    },
+    {
+      "api": "integer-text",
+      "value": 0,
+      "width": 0,
+      "fill": 32
+    },
+    {
+      "api": "set-text",
+      "chart": 0,
+      "name": "linea0",
+      "property": 6,
+      "text": "Account Balance: <D5>"
+    },
+    {
+      "api": "integer-text",
+      "value": 0,
+      "width": 0,
+      "fill": 32
+    },
+    {
+      "api": "set-text",
+      "chart": 0,
+      "name": "linenfp0",
+      "property": 6,
+      "text": "no news coming up"
+    },
+    {
+      "api": "set-text",
+      "chart": 0,
+      "name": "lines",
+      "property": 6,
+      "text": "Trade Frequency: intense"
+    },
+    {
+      "api": "cast-text",
+      "value": 4593311331947716280,
+      "kind": 88
+    },
+    {
+      "api": "set-text",
+      "chart": 0,
+      "name": "linet",
+      "property": 6,
+      "text": "Manual lotsize: <CAST11>lots"
+    }
+  ],
+  "scope": "symbolic SDK text replies; zero positions; analysis only"
+}

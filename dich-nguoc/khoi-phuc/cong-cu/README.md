@@ -1,3 +1,11 @@
+- `kiem-bang-thong-tin-mo-bot-1-3.py prepare|mql5|original|compare BOT RUN`:
+  so toàn hàm cập nhật chữ/lãi lỗ mở `e1b0`/`14fa0`, gồm quét nhóm mã,
+  tin sắp tới, mọi chế độ và trạng thái đọc lại sau dịch vụ. `mql5` cần
+  `--build BUILD`; chạy trước `original` để đo cách đổi số/ngày thành chữ
+  trong MT5. Đã khớp297/297caB1,324/324caB3; chưa kiểm ảnh hoặc toànEA.
+- `tao-bo-kiem-bang-thong-tin-mo-bot-1-3.py`: tạo hai bộ ghi MT5 riêng
+  và hai nguồn kiểm biên dịch gọi dịch vụ thật; không gửi lệnh giao dịch.
+
 - `kiem-vong-phat-sinh-lenh-bot-3.py prepare|mql5|original|compare 3 RUN`:
   toàn vòng26f9e..29c88,260ca/23.556dịchvụ, nguyên thân con; `mql5`
   cần `--build BUILD`. Có cổng giới hạn vị thế/nhóm15mã/giá riêngB3.

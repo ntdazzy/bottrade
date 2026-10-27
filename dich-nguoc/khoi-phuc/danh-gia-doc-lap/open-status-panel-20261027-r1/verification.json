@@ -1,0 +1,26 @@
+{
+  "checks": [
+    {
+      "bot": 1,
+      "run": "b1-open-panel-20261027-r3",
+      "cases": 297,
+      "matched": 297,
+      "sdk_calls": 6087,
+      "instructions": 1166,
+      "result_sha256": "d04c9b02c564f64591896e24493ab0ae5241f590fc7d8b6cc5fe733b387c1be7"
+    },
+    {
+      "bot": 3,
+      "run": "b3-open-panel-20261027-r2",
+      "cases": 324,
+      "matched": 324,
+      "sdk_calls": 7270,
+      "instructions": 1201,
+      "result_sha256": "977d82bbac94d9924d23fd9794201367badfb50c5a85d8e8c08ac9c2ce37f6ad"
+    }
+  ],
+  "whole_eas_complete": 0,
+  "chart_rendering_verified": false,
+  "original_ex5_changed": false,
+  "independent_review": "Initial no-findings review missed B1 seed captured before PositionsTotal. Root checked raw e2ea..e33a and corrected it; final live-mutation checks passed."
+}

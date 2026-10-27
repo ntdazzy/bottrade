@@ -1,0 +1,2310 @@
+[
+  {
+    "bot": 1,
+    "name": "default",
+    "options": {},
+    "events": [
+      {
+        "api": "info",
+        "property": 6
+      },
+      {
+        "api": "info",
+        "property": 6
+      },
+      {
+        "api": "positions"
+      },
+      {
+        "api": "double-text",
+        "value": 0.0,
+        "digits": 2
+      },
+      {
+        "api": "integer-text",
+        "value": 0,
+        "width": 0,
+        "fill": 32
+      },
+      {
+        "api": "set-text",
+        "chart": 0,
+        "name": "lineopl0",
+        "property": 6,
+        "text": "Open P/L: <D3>"
+      },
+      {
+        "api": "double-text",
+        "value": 10000.0,
+        "digits": 2
+      },
+      {
+        "api": "integer-text",
+        "value": 0,
+        "width": 0,
+        "fill": 32
+      },
+      {
+        "api": "set-text",
+        "chart": 0,
+        "name": "linea0",
+        "property": 6,
+        "text": "Account Balance: <D6>"
+      },
+      {
+        "api": "integer-text",
+        "value": 0,
+        "width": 0,
+        "fill": 32
+      },
+      {
+        "api": "set-text",
+        "chart": 0,
+        "name": "linenfp0",
+        "property": 6,
+        "text": "no news coming up"
+      },
+      {
+        "api": "double-text",
+        "value": 0.0,
+        "digits": 2
+      },
+      {
+        "api": "set-text",
+        "chart": 0,
+        "name": "lines",
+        "property": 6,
+        "text": "Using fixed lotsizee: <D11>lots"
+      }
+    ]
+  },
+  {
+    "bot": 1,
+    "name": "mode-3",
+    "options": {
+      "words": {
+        "6a748": 3
+      }
+    },
+    "events": [
+      {
+        "api": "info",
+        "property": 6
+      },
+      {
+        "api": "info",
+        "property": 6
+      },
+      {
+        "api": "positions"
+      },
+      {
+        "api": "double-text",
+        "value": 0.0,
+        "digits": 2
+      },
+      {
+        "api": "integer-text",
+        "value": 0,
+        "width": 0,
+        "fill": 32
+      },
+      {
+        "api": "set-text",
+        "chart": 0,
+        "name": "lineopl0",
+        "property": 6,
+        "text": "Open P/L: <D3>"
+      },
+      {
+        "api": "double-text",
+        "value": 10000.0,
+        "digits": 2
+      },
+      {
+        "api": "integer-text",
+        "value": 0,
+        "width": 0,
+        "fill": 32
+      },
+      {
+        "api": "set-text",
+        "chart": 0,
+        "name": "linea0",
+        "property": 6,
+        "text": "Account Balance: <D6>"
+      },
+      {
+        "api": "integer-text",
+        "value": 0,
+        "width": 0,
+        "fill": 32
+      },
+      {
+        "api": "set-text",
+        "chart": 0,
+        "name": "linenfp0",
+        "property": 6,
+        "text": "no news coming up"
+      },
+      {
+        "api": "cast-text",
+        "value": 4613937818241073152,
+        "kind": 88
+      },
+      {
+        "api": "set-text",
+        "chart": 0,
+        "name": "lines",
+        "property": 6,
+        "text": "Using Max Risk Per Strategy: <CAST11>%"
+      }
+    ]
+  },
+  {
+    "bot": 1,
+    "name": "mode-999",
+    "options": {
+      "words": {
+        "6a748": 999
+      }
+    },
+    "events": [
+      {
+        "api": "info",
+        "property": 6
+      },
+      {
+        "api": "info",
+        "property": 6
+      },
+      {
+        "api": "positions"
+      },
+      {
+        "api": "double-text",
+        "value": 0.0,
+        "digits": 2
+      },
+      {
+        "api": "integer-text",
+        "value": 0,
+        "width": 0,
+        "fill": 32
+      },
+      {
+        "api": "set-text",
+        "chart": 0,
+        "name": "lineopl0",
+        "property": 6,
+        "text": "Open P/L: <D3>"
+      },
+      {
+        "api": "double-text",
+        "value": 10000.0,
+        "digits": 2
+      },
+      {
+        "api": "integer-text",
+        "value": 0,
+        "width": 0,
+        "fill": 32
+      },
+      {
+        "api": "set-text",
+        "chart": 0,
+        "name": "linea0",
+        "property": 6,
+        "text": "Account Balance: <D6>"
+      },
+      {
+        "api": "integer-text",
+        "value": 0,
+        "width": 0,
+        "fill": 32
+      },
+      {
+        "api": "set-text",
+        "chart": 0,
+        "name": "linenfp0",
+        "property": 6,
+        "text": "no news coming up"
+      },
+      {
+        "api": "cast-text",
+        "value": 4608083138725491507,
+        "kind": 88
+      },
+      {
+        "api": "set-text",
+        "chart": 0,
+        "name": "lines",
+        "property": 6,
+        "text": "Using Max Risk Per Trade: <CAST11>%"
+      }
+    ]
+  },
+  {
+    "bot": 1,
+    "name": "mode-9999",
+    "options": {
+      "words": {
+        "6a748": 9999
+      }
+    },
+    "events": [
+      {
+        "api": "info",
+        "property": 6
+      },
+      {
+        "api": "info",
+        "property": 6
+      },
+      {
+        "api": "positions"
+      },
+      {
+        "api": "double-text",
+        "value": 0.0,
+        "digits": 2
+      },
+      {
+        "api": "integer-text",
+        "value": 0,
+        "width": 0,
+        "fill": 32
+      },
+      {
+        "api": "set-text",
+        "chart": 0,
+        "name": "lineopl0",
+        "property": 6,
+        "text": "Open P/L: <D3>"
+      },
+      {
+        "api": "double-text",
+        "value": 10000.0,
+        "digits": 2
+      },
+      {
+        "api": "integer-text",
+        "value": 0,
+        "width": 0,
+        "fill": 32
+      },
+      {
+        "api": "set-text",
+        "chart": 0,
+        "name": "linea0",
+        "property": 6,
+        "text": "Account Balance: <D6>"
+      },
+      {
+        "api": "integer-text",
+        "value": 0,
+        "width": 0,
+        "fill": 32
+      },
+      {
+        "api": "set-text",
+        "chart": 0,
+        "name": "linenfp0",
+        "property": 6,
+        "text": "no news coming up"
+      },
+      {
+        "api": "cast-text",
+        "value": 600,
+        "kind": 82
+      },
+      {
+        "api": "set-text",
+        "chart": 0,
+        "name": "lines",
+        "property": 6,
+        "text": "Using Lots Per Balance, stepsize: <CAST11>"
+      }
+    ]
+  },
+  {
+    "bot": 1,
+    "name": "info-0-show-0",
+    "options": {
+      "info": 0,
+      "bytes": {
+        "6a530": 0
+      }
+    },
+    "events": [
+      {
+        "api": "info",
+        "property": 6
+      },
+      {
+        "api": "info",
+        "property": 6
+      },
+      {
+        "api": "positions"
+      },
+      {
+        "api": "double-text",
+        "value": 0.0,
+        "digits": 2
+      },
+      {
+        "api": "integer-text",
+        "value": 0,
+        "width": 0,
+        "fill": 32
+      },
+      {
+        "api": "set-text",
+        "chart": 0,
+        "name": "lineopl0",
+        "property": 6,
+        "text": "Open P/L: <D3>"
+      },
+      {
+        "api": "double-text",
+        "value": 10000.0,
+        "digits": 2
+      },
+      {
+        "api": "integer-text",
+        "value": 0,
+        "width": 0,
+        "fill": 32
+      },
+      {
+        "api": "set-text",
+        "chart": 0,
+        "name": "linea0",
+        "property": 6,
+        "text": "Account Balance: <D6>"
+      },
+      {
+        "api": "integer-text",
+        "value": 0,
+        "width": 0,
+        "fill": 32
+      },
+      {
+        "api": "set-text",
+        "chart": 0,
+        "name": "linenfp0",
+        "property": 6,
+        "text": "no news coming up"
+      },
+      {
+        "api": "double-text",
+        "value": 0.0,
+        "digits": 2
+      },
+      {
+        "api": "set-text",
+        "chart": 0,
+        "name": "lines",
+        "property": 6,
+        "text": "Using fixed lotsizee: <D11>lots"
+      }
+    ]
+  },
+  {
+    "bot": 1,
+    "name": "info-0-show-1",
+    "options": {
+      "info": 0,
+      "bytes": {
+        "6a530": 1
+      }
+    },
+    "events": [
+      {
+        "api": "info",
+        "property": 6
+      },
+      {
+        "api": "info",
+        "property": 6
+      },
+      {
+        "api": "positions"
+      },
+      {
+        "api": "double-text",
+        "value": 0.0,
+        "digits": 2
+      },
+      {
+        "api": "integer-text",
+        "value": 0,
+        "width": 0,
+        "fill": 32
+      },
+      {
+        "api": "set-text",
+        "chart": 0,
+        "name": "lineopl0",
+        "property": 6,
+        "text": "Open P/L: <D3>"
+      },
+      {
+        "api": "double-text",
+        "value": 10000.0,
+        "digits": 2
+      },
+      {
+        "api": "integer-text",
+        "value": 0,
+        "width": 0,
+        "fill": 32
+      },
+      {
+        "api": "set-text",
+        "chart": 0,
+        "name": "linea0",
+        "property": 6,
+        "text": "Account Balance: <D6>"
+      },
+      {
+        "api": "integer-text",
+        "value": 0,
+        "width": 0,
+        "fill": 32
+      },
+      {
+        "api": "set-text",
+        "chart": 0,
+        "name": "linenfp0",
+        "property": 6,
+        "text": "no news coming up"
+      },
+      {
+        "api": "double-text",
+        "value": 0.0,
+        "digits": 2
+      },
+      {
+        "api": "set-text",
+        "chart": 0,
+        "name": "lines",
+        "property": 6,
+        "text": "Using fixed lotsizee: <D11>lots"
+      }
+    ]
+  },
+  {
+    "bot": 1,
+    "name": "info-1-show-0",
+    "options": {
+      "info": 1,
+      "bytes": {
+        "6a530": 0
+      }
+    },
+    "events": [
+      {
+        "api": "info",
+        "property": 6
+      }
+    ]
+  },
+  {
+    "bot": 1,
+    "name": "info-1-show-1",
+    "options": {
+      "info": 1,
+      "bytes": {
+        "6a530": 1
+      }
+    },
+    "events": [
+      {
+        "api": "info",
+        "property": 6
+      },
+      {
+        "api": "info",
+        "property": 6
+      },
+      {
+        "api": "positions"
+      },
+      {
+        "api": "double-text",
+        "value": 0.0,
+        "digits": 2
+      },
+      {
+        "api": "integer-text",
+        "value": 0,
+        "width": 0,
+        "fill": 32
+      },
+      {
+        "api": "set-text",
+        "chart": 0,
+        "name": "lineopl0",
+        "property": 6,
+        "text": "Open P/L: <D3>"
+      },
+      {
+        "api": "double-text",
+        "value": 10000.0,
+        "digits": 2
+      },
+      {
+        "api": "integer-text",
+        "value": 0,
+        "width": 0,
+        "fill": 32
+      },
+      {
+        "api": "set-text",
+        "chart": 0,
+        "name": "linea0",
+        "property": 6,
+        "text": "Account Balance: <D6>"
+      },
+      {
+        "api": "integer-text",
+        "value": 0,
+        "width": 0,
+        "fill": 32
+      },
+      {
+        "api": "set-text",
+        "chart": 0,
+        "name": "linenfp0",
+        "property": 6,
+        "text": "no news coming up"
+      },
+      {
+        "api": "double-text",
+        "value": 0.0,
+        "digits": 2
+      },
+      {
+        "api": "set-text",
+        "chart": 0,
+        "name": "lines",
+        "property": 6,
+        "text": "Using fixed lotsizee: <D11>lots"
+      }
+    ]
+  },
+  {
+    "bot": 1,
+    "name": "news-0",
+    "options": {
+      "bytes": {
+        "6a640": 1
+      },
+      "longs": {
+        "6a360": 1767355500
+      }
+    },
+    "events": [
+      {
+        "api": "info",
+        "property": 6
+      },
+      {
+        "api": "info",
+        "property": 6
+      },
+      {
+        "api": "positions"
+      },
+      {
+        "api": "double-text",
+        "value": 0.0,
+        "digits": 2
+      },
+      {
+        "api": "integer-text",
+        "value": 0,
+        "width": 0,
+        "fill": 32
+      },
+      {
+        "api": "set-text",
+        "chart": 0,
+        "name": "lineopl0",
+        "property": 6,
+        "text": "Open P/L: <D3>"
+      },
+      {
+        "api": "double-text",
+        "value": 10000.0,
+        "digits": 2
+      },
+      {
+        "api": "integer-text",
+        "value": 0,
+        "width": 0,
+        "fill": 32
+      },
+      {
+        "api": "set-text",
+        "chart": 0,
+        "name": "linea0",
+        "property": 6,
+        "text": "Account Balance: <D6>"
+      },
+      {
+        "api": "server",
+        "time": 1767355200
+      },
+      {
+        "api": "cast-text",
+        "value": 1767355500,
+        "kind": 84
+      },
+      {
+        "api": "integer-text",
+        "value": 0,
+        "width": 0,
+        "fill": 32
+      },
+      {
+        "api": "set-text",
+        "chart": 0,
+        "name": "linenfp0",
+        "property": 6,
+        "text": "Next News: NFP, <CAST10>"
+      },
+      {
+        "api": "double-text",
+        "value": 0.0,
+        "digits": 2
+      },
+      {
+        "api": "set-text",
+        "chart": 0,
+        "name": "lines",
+        "property": 6,
+        "text": "Using fixed lotsizee: <D13>lots"
+      }
+    ]
+  },
+  {
+    "bot": 1,
+    "name": "news-1",
+    "options": {
+      "bytes": {
+        "6a698": 1
+      },
+      "longs": {
+        "6a368": 1767355500
+      }
+    },
+    "events": [
+      {
+        "api": "info",
+        "property": 6
+      },
+      {
+        "api": "info",
+        "property": 6
+      },
+      {
+        "api": "positions"
+      },
+      {
+        "api": "double-text",
+        "value": 0.0,
+        "digits": 2
+      },
+      {
+        "api": "integer-text",
+        "value": 0,
+        "width": 0,
+        "fill": 32
+      },
+      {
+        "api": "set-text",
+        "chart": 0,
+        "name": "lineopl0",
+        "property": 6,
+        "text": "Open P/L: <D3>"
+      },
+      {
+        "api": "double-text",
+        "value": 10000.0,
+        "digits": 2
+      },
+      {
+        "api": "integer-text",
+        "value": 0,
+        "width": 0,
+        "fill": 32
+      },
+      {
+        "api": "set-text",
+        "chart": 0,
+        "name": "linea0",
+        "property": 6,
+        "text": "Account Balance: <D6>"
+      },
+      {
+        "api": "server",
+        "time": 1767355200
+      },
+      {
+        "api": "cast-text",
+        "value": 1767355500,
+        "kind": 84
+      },
+      {
+        "api": "integer-text",
+        "value": 0,
+        "width": 0,
+        "fill": 32
+      },
+      {
+        "api": "set-text",
+        "chart": 0,
+        "name": "linenfp0",
+        "property": 6,
+        "text": "Next News: Interest rates, <CAST10>"
+      },
+      {
+        "api": "double-text",
+        "value": 0.0,
+        "digits": 2
+      },
+      {
+        "api": "set-text",
+        "chart": 0,
+        "name": "lines",
+        "property": 6,
+        "text": "Using fixed lotsizee: <D13>lots"
+      }
+    ]
+  },
+  {
+    "bot": 1,
+    "name": "news-2",
+    "options": {
+      "bytes": {
+        "6a6d0": 1
+      },
+      "longs": {
+        "6a370": 1767355500
+      }
+    },
+    "events": [
+      {
+        "api": "info",
+        "property": 6
+      },
+      {
+        "api": "info",
+        "property": 6
+      },
+      {
+        "api": "positions"
+      },
+      {
+        "api": "double-text",
+        "value": 0.0,
+        "digits": 2
+      },
+      {
+        "api": "integer-text",
+        "value": 0,
+        "width": 0,
+        "fill": 32
+      },
+      {
+        "api": "set-text",
+        "chart": 0,
+        "name": "lineopl0",
+        "property": 6,
+        "text": "Open P/L: <D3>"
+      },
+      {
+        "api": "double-text",
+        "value": 10000.0,
+        "digits": 2
+      },
+      {
+        "api": "integer-text",
+        "value": 0,
+        "width": 0,
+        "fill": 32
+      },
+      {
+        "api": "set-text",
+        "chart": 0,
+        "name": "linea0",
+        "property": 6,
+        "text": "Account Balance: <D6>"
+      },
+      {
+        "api": "server",
+        "time": 1767355200
+      },
+      {
+        "api": "cast-text",
+        "value": 1767355500,
+        "kind": 84
+      },
+      {
+        "api": "integer-text",
+        "value": 0,
+        "width": 0,
+        "fill": 32
+      },
+      {
+        "api": "set-text",
+        "chart": 0,
+        "name": "linenfp0",
+        "property": 6,
+        "text": "Next News: CPI, <CAST10>"
+      },
+      {
+        "api": "double-text",
+        "value": 0.0,
+        "digits": 2
+      },
+      {
+        "api": "set-text",
+        "chart": 0,
+        "name": "lines",
+        "property": 6,
+        "text": "Using fixed lotsizee: <D13>lots"
+      }
+    ]
+  },
+  {
+    "bot": 3,
+    "name": "default",
+    "options": {},
+    "events": [
+      {
+        "api": "info",
+        "property": 6
+      },
+      {
+        "api": "positions"
+      },
+      {
+        "api": "double-text",
+        "value": 0.0,
+        "digits": 2
+      },
+      {
+        "api": "integer-text",
+        "value": 0,
+        "width": 0,
+        "fill": 32
+      },
+      {
+        "api": "set-text",
+        "chart": 0,
+        "name": "lineopl0",
+        "property": 6,
+        "text": "Open P/L: <D2>"
+      },
+      {
+        "api": "double-text",
+        "value": 10000.0,
+        "digits": 2
+      },
+      {
+        "api": "integer-text",
+        "value": 0,
+        "width": 0,
+        "fill": 32
+      },
+      {
+        "api": "set-text",
+        "chart": 0,
+        "name": "linea0",
+        "property": 6,
+        "text": "Account Balance: <D5>"
+      },
+      {
+        "api": "integer-text",
+        "value": 0,
+        "width": 0,
+        "fill": 32
+      },
+      {
+        "api": "set-text",
+        "chart": 0,
+        "name": "linenfp0",
+        "property": 6,
+        "text": "no news coming up"
+      },
+      {
+        "api": "set-text",
+        "chart": 0,
+        "name": "lines",
+        "property": 6,
+        "text": "Trade Frequency: intense"
+      },
+      {
+        "api": "cast-text",
+        "value": 4629137466983448576,
+        "kind": 88
+      },
+      {
+        "api": "set-text",
+        "chart": 0,
+        "name": "linet",
+        "property": 6,
+        "text": "Max allowed DD: <CAST11>%"
+      }
+    ]
+  },
+  {
+    "bot": 3,
+    "name": "mode-3",
+    "options": {
+      "words": {
+        "6d630": 3
+      }
+    },
+    "events": [
+      {
+        "api": "info",
+        "property": 6
+      },
+      {
+        "api": "positions"
+      },
+      {
+        "api": "double-text",
+        "value": 0.0,
+        "digits": 2
+      },
+      {
+        "api": "integer-text",
+        "value": 0,
+        "width": 0,
+        "fill": 32
+      },
+      {
+        "api": "set-text",
+        "chart": 0,
+        "name": "lineopl0",
+        "property": 6,
+        "text": "Open P/L: <D2>"
+      },
+      {
+        "api": "double-text",
+        "value": 10000.0,
+        "digits": 2
+      },
+      {
+        "api": "integer-text",
+        "value": 0,
+        "width": 0,
+        "fill": 32
+      },
+      {
+        "api": "set-text",
+        "chart": 0,
+        "name": "linea0",
+        "property": 6,
+        "text": "Account Balance: <D5>"
+      },
+      {
+        "api": "integer-text",
+        "value": 0,
+        "width": 0,
+        "fill": 32
+      },
+      {
+        "api": "set-text",
+        "chart": 0,
+        "name": "linenfp0",
+        "property": 6,
+        "text": "no news coming up"
+      },
+      {
+        "api": "set-text",
+        "chart": 0,
+        "name": "lines",
+        "property": 6,
+        "text": "Trade Frequency: intense"
+      },
+      {
+        "api": "cast-text",
+        "value": 4607182418800017408,
+        "kind": 88
+      },
+      {
+        "api": "set-text",
+        "chart": 0,
+        "name": "linet",
+        "property": 6,
+        "text": "Max risk per strategy: <CAST11>%"
+      }
+    ]
+  },
+  {
+    "bot": 3,
+    "name": "mode-1234",
+    "options": {
+      "words": {
+        "6d630": 1234
+      }
+    },
+    "events": [
+      {
+        "api": "info",
+        "property": 6
+      },
+      {
+        "api": "positions"
+      },
+      {
+        "api": "double-text",
+        "value": 0.0,
+        "digits": 2
+      },
+      {
+        "api": "integer-text",
+        "value": 0,
+        "width": 0,
+        "fill": 32
+      },
+      {
+        "api": "set-text",
+        "chart": 0,
+        "name": "lineopl0",
+        "property": 6,
+        "text": "Open P/L: <D2>"
+      },
+      {
+        "api": "double-text",
+        "value": 10000.0,
+        "digits": 2
+      },
+      {
+        "api": "integer-text",
+        "value": 0,
+        "width": 0,
+        "fill": 32
+      },
+      {
+        "api": "set-text",
+        "chart": 0,
+        "name": "linea0",
+        "property": 6,
+        "text": "Account Balance: <D5>"
+      },
+      {
+        "api": "integer-text",
+        "value": 0,
+        "width": 0,
+        "fill": 32
+      },
+      {
+        "api": "set-text",
+        "chart": 0,
+        "name": "linenfp0",
+        "property": 6,
+        "text": "no news coming up"
+      },
+      {
+        "api": "set-text",
+        "chart": 0,
+        "name": "lines",
+        "property": 6,
+        "text": "Trade Frequency: intense"
+      },
+      {
+        "api": "cast-text",
+        "value": 4629137466983448576,
+        "kind": 88
+      },
+      {
+        "api": "set-text",
+        "chart": 0,
+        "name": "linet",
+        "property": 6,
+        "text": "Max allowed DD: <CAST11>%"
+      }
+    ]
+  },
+  {
+    "bot": 3,
+    "name": "frequency--1",
+    "options": {
+      "words": {
+        "6d21c": -1
+      }
+    },
+    "events": [
+      {
+        "api": "info",
+        "property": 6
+      },
+      {
+        "api": "positions"
+      },
+      {
+        "api": "double-text",
+        "value": 0.0,
+        "digits": 2
+      },
+      {
+        "api": "integer-text",
+        "value": 0,
+        "width": 0,
+        "fill": 32
+      },
+      {
+        "api": "set-text",
+        "chart": 0,
+        "name": "lineopl0",
+        "property": 6,
+        "text": "Open P/L: <D2>"
+      },
+      {
+        "api": "double-text",
+        "value": 10000.0,
+        "digits": 2
+      },
+      {
+        "api": "integer-text",
+        "value": 0,
+        "width": 0,
+        "fill": 32
+      },
+      {
+        "api": "set-text",
+        "chart": 0,
+        "name": "linea0",
+        "property": 6,
+        "text": "Account Balance: <D5>"
+      },
+      {
+        "api": "integer-text",
+        "value": 0,
+        "width": 0,
+        "fill": 32
+      },
+      {
+        "api": "set-text",
+        "chart": 0,
+        "name": "linenfp0",
+        "property": 6,
+        "text": "no news coming up"
+      },
+      {
+        "api": "set-text",
+        "chart": 0,
+        "name": "lines",
+        "property": 6,
+        "text": "Trade Frequency: manual strategy selection"
+      },
+      {
+        "api": "cast-text",
+        "value": 4629137466983448576,
+        "kind": 88
+      },
+      {
+        "api": "set-text",
+        "chart": 0,
+        "name": "linet",
+        "property": 6,
+        "text": "Max allowed DD: <CAST11>%"
+      }
+    ]
+  },
+  {
+    "bot": 3,
+    "name": "frequency-0",
+    "options": {
+      "words": {
+        "6d21c": 0
+      }
+    },
+    "events": [
+      {
+        "api": "info",
+        "property": 6
+      },
+      {
+        "api": "positions"
+      },
+      {
+        "api": "double-text",
+        "value": 0.0,
+        "digits": 2
+      },
+      {
+        "api": "integer-text",
+        "value": 0,
+        "width": 0,
+        "fill": 32
+      },
+      {
+        "api": "set-text",
+        "chart": 0,
+        "name": "lineopl0",
+        "property": 6,
+        "text": "Open P/L: <D2>"
+      },
+      {
+        "api": "double-text",
+        "value": 10000.0,
+        "digits": 2
+      },
+      {
+        "api": "integer-text",
+        "value": 0,
+        "width": 0,
+        "fill": 32
+      },
+      {
+        "api": "set-text",
+        "chart": 0,
+        "name": "linea0",
+        "property": 6,
+        "text": "Account Balance: <D5>"
+      },
+      {
+        "api": "integer-text",
+        "value": 0,
+        "width": 0,
+        "fill": 32
+      },
+      {
+        "api": "set-text",
+        "chart": 0,
+        "name": "linenfp0",
+        "property": 6,
+        "text": "no news coming up"
+      },
+      {
+        "api": "set-text",
+        "chart": 0,
+        "name": "lines",
+        "property": 6,
+        "text": "Trade Frequency: extreme conservative"
+      },
+      {
+        "api": "cast-text",
+        "value": 4629137466983448576,
+        "kind": 88
+      },
+      {
+        "api": "set-text",
+        "chart": 0,
+        "name": "linet",
+        "property": 6,
+        "text": "Max allowed DD: <CAST11>%"
+      }
+    ]
+  },
+  {
+    "bot": 3,
+    "name": "frequency-1",
+    "options": {
+      "words": {
+        "6d21c": 1
+      }
+    },
+    "events": [
+      {
+        "api": "info",
+        "property": 6
+      },
+      {
+        "api": "positions"
+      },
+      {
+        "api": "double-text",
+        "value": 0.0,
+        "digits": 2
+      },
+      {
+        "api": "integer-text",
+        "value": 0,
+        "width": 0,
+        "fill": 32
+      },
+      {
+        "api": "set-text",
+        "chart": 0,
+        "name": "lineopl0",
+        "property": 6,
+        "text": "Open P/L: <D2>"
+      },
+      {
+        "api": "double-text",
+        "value": 10000.0,
+        "digits": 2
+      },
+      {
+        "api": "integer-text",
+        "value": 0,
+        "width": 0,
+        "fill": 32
+      },
+      {
+        "api": "set-text",
+        "chart": 0,
+        "name": "linea0",
+        "property": 6,
+        "text": "Account Balance: <D5>"
+      },
+      {
+        "api": "integer-text",
+        "value": 0,
+        "width": 0,
+        "fill": 32
+      },
+      {
+        "api": "set-text",
+        "chart": 0,
+        "name": "linenfp0",
+        "property": 6,
+        "text": "no news coming up"
+      },
+      {
+        "api": "set-text",
+        "chart": 0,
+        "name": "lines",
+        "property": 6,
+        "text": "Trade Frequency: conservative"
+      },
+      {
+        "api": "cast-text",
+        "value": 4629137466983448576,
+        "kind": 88
+      },
+      {
+        "api": "set-text",
+        "chart": 0,
+        "name": "linet",
+        "property": 6,
+        "text": "Max allowed DD: <CAST11>%"
+      }
+    ]
+  },
+  {
+    "bot": 3,
+    "name": "frequency-2",
+    "options": {
+      "words": {
+        "6d21c": 2
+      }
+    },
+    "events": [
+      {
+        "api": "info",
+        "property": 6
+      },
+      {
+        "api": "positions"
+      },
+      {
+        "api": "double-text",
+        "value": 0.0,
+        "digits": 2
+      },
+      {
+        "api": "integer-text",
+        "value": 0,
+        "width": 0,
+        "fill": 32
+      },
+      {
+        "api": "set-text",
+        "chart": 0,
+        "name": "lineopl0",
+        "property": 6,
+        "text": "Open P/L: <D2>"
+      },
+      {
+        "api": "double-text",
+        "value": 10000.0,
+        "digits": 2
+      },
+      {
+        "api": "integer-text",
+        "value": 0,
+        "width": 0,
+        "fill": 32
+      },
+      {
+        "api": "set-text",
+        "chart": 0,
+        "name": "linea0",
+        "property": 6,
+        "text": "Account Balance: <D5>"
+      },
+      {
+        "api": "integer-text",
+        "value": 0,
+        "width": 0,
+        "fill": 32
+      },
+      {
+        "api": "set-text",
+        "chart": 0,
+        "name": "linenfp0",
+        "property": 6,
+        "text": "no news coming up"
+      },
+      {
+        "api": "set-text",
+        "chart": 0,
+        "name": "lines",
+        "property": 6,
+        "text": "Trade Frequency: moderate"
+      },
+      {
+        "api": "cast-text",
+        "value": 4629137466983448576,
+        "kind": 88
+      },
+      {
+        "api": "set-text",
+        "chart": 0,
+        "name": "linet",
+        "property": 6,
+        "text": "Max allowed DD: <CAST11>%"
+      }
+    ]
+  },
+  {
+    "bot": 3,
+    "name": "frequency-3",
+    "options": {
+      "words": {
+        "6d21c": 3
+      }
+    },
+    "events": [
+      {
+        "api": "info",
+        "property": 6
+      },
+      {
+        "api": "positions"
+      },
+      {
+        "api": "double-text",
+        "value": 0.0,
+        "digits": 2
+      },
+      {
+        "api": "integer-text",
+        "value": 0,
+        "width": 0,
+        "fill": 32
+      },
+      {
+        "api": "set-text",
+        "chart": 0,
+        "name": "lineopl0",
+        "property": 6,
+        "text": "Open P/L: <D2>"
+      },
+      {
+        "api": "double-text",
+        "value": 10000.0,
+        "digits": 2
+      },
+      {
+        "api": "integer-text",
+        "value": 0,
+        "width": 0,
+        "fill": 32
+      },
+      {
+        "api": "set-text",
+        "chart": 0,
+        "name": "linea0",
+        "property": 6,
+        "text": "Account Balance: <D5>"
+      },
+      {
+        "api": "integer-text",
+        "value": 0,
+        "width": 0,
+        "fill": 32
+      },
+      {
+        "api": "set-text",
+        "chart": 0,
+        "name": "linenfp0",
+        "property": 6,
+        "text": "no news coming up"
+      },
+      {
+        "api": "set-text",
+        "chart": 0,
+        "name": "lines",
+        "property": 6,
+        "text": "Trade Frequency: intense"
+      },
+      {
+        "api": "cast-text",
+        "value": 4629137466983448576,
+        "kind": 88
+      },
+      {
+        "api": "set-text",
+        "chart": 0,
+        "name": "linet",
+        "property": 6,
+        "text": "Max allowed DD: <CAST11>%"
+      }
+    ]
+  },
+  {
+    "bot": 3,
+    "name": "frequency-4",
+    "options": {
+      "words": {
+        "6d21c": 4
+      }
+    },
+    "events": [
+      {
+        "api": "info",
+        "property": 6
+      },
+      {
+        "api": "positions"
+      },
+      {
+        "api": "double-text",
+        "value": 0.0,
+        "digits": 2
+      },
+      {
+        "api": "integer-text",
+        "value": 0,
+        "width": 0,
+        "fill": 32
+      },
+      {
+        "api": "set-text",
+        "chart": 0,
+        "name": "lineopl0",
+        "property": 6,
+        "text": "Open P/L: <D2>"
+      },
+      {
+        "api": "double-text",
+        "value": 10000.0,
+        "digits": 2
+      },
+      {
+        "api": "integer-text",
+        "value": 0,
+        "width": 0,
+        "fill": 32
+      },
+      {
+        "api": "set-text",
+        "chart": 0,
+        "name": "linea0",
+        "property": 6,
+        "text": "Account Balance: <D5>"
+      },
+      {
+        "api": "integer-text",
+        "value": 0,
+        "width": 0,
+        "fill": 32
+      },
+      {
+        "api": "set-text",
+        "chart": 0,
+        "name": "linenfp0",
+        "property": 6,
+        "text": "no news coming up"
+      },
+      {
+        "api": "set-text",
+        "chart": 0,
+        "name": "lines",
+        "property": 6,
+        "text": "Trade Frequency: extreme"
+      },
+      {
+        "api": "cast-text",
+        "value": 4629137466983448576,
+        "kind": 88
+      },
+      {
+        "api": "set-text",
+        "chart": 0,
+        "name": "linet",
+        "property": 6,
+        "text": "Max allowed DD: <CAST11>%"
+      }
+    ]
+  },
+  {
+    "bot": 3,
+    "name": "frequency-5",
+    "options": {
+      "words": {
+        "6d21c": 5
+      }
+    },
+    "events": [
+      {
+        "api": "info",
+        "property": 6
+      },
+      {
+        "api": "positions"
+      },
+      {
+        "api": "double-text",
+        "value": 0.0,
+        "digits": 2
+      },
+      {
+        "api": "integer-text",
+        "value": 0,
+        "width": 0,
+        "fill": 32
+      },
+      {
+        "api": "set-text",
+        "chart": 0,
+        "name": "lineopl0",
+        "property": 6,
+        "text": "Open P/L: <D2>"
+      },
+      {
+        "api": "double-text",
+        "value": 10000.0,
+        "digits": 2
+      },
+      {
+        "api": "integer-text",
+        "value": 0,
+        "width": 0,
+        "fill": 32
+      },
+      {
+        "api": "set-text",
+        "chart": 0,
+        "name": "linea0",
+        "property": 6,
+        "text": "Account Balance: <D5>"
+      },
+      {
+        "api": "integer-text",
+        "value": 0,
+        "width": 0,
+        "fill": 32
+      },
+      {
+        "api": "set-text",
+        "chart": 0,
+        "name": "linenfp0",
+        "property": 6,
+        "text": "no news coming up"
+      },
+      {
+        "api": "set-text",
+        "chart": 0,
+        "name": "lines",
+        "property": 6,
+        "text": "Trade Frequency: manual strategy selection"
+      },
+      {
+        "api": "cast-text",
+        "value": 4629137466983448576,
+        "kind": 88
+      },
+      {
+        "api": "set-text",
+        "chart": 0,
+        "name": "linet",
+        "property": 6,
+        "text": "Max allowed DD: <CAST11>%"
+      }
+    ]
+  },
+  {
+    "bot": 3,
+    "name": "info-0-show-0",
+    "options": {
+      "info": 0,
+      "bytes": {
+        "1d6f40": 0
+      }
+    },
+    "events": [
+      {
+        "api": "info",
+        "property": 6
+      },
+      {
+        "api": "positions"
+      },
+      {
+        "api": "double-text",
+        "value": 0.0,
+        "digits": 2
+      },
+      {
+        "api": "integer-text",
+        "value": 0,
+        "width": 0,
+        "fill": 32
+      },
+      {
+        "api": "set-text",
+        "chart": 0,
+        "name": "lineopl0",
+        "property": 6,
+        "text": "Open P/L: <D2>"
+      },
+      {
+        "api": "double-text",
+        "value": 10000.0,
+        "digits": 2
+      },
+      {
+        "api": "integer-text",
+        "value": 0,
+        "width": 0,
+        "fill": 32
+      },
+      {
+        "api": "set-text",
+        "chart": 0,
+        "name": "linea0",
+        "property": 6,
+        "text": "Account Balance: <D5>"
+      },
+      {
+        "api": "integer-text",
+        "value": 0,
+        "width": 0,
+        "fill": 32
+      },
+      {
+        "api": "set-text",
+        "chart": 0,
+        "name": "linenfp0",
+        "property": 6,
+        "text": "no news coming up"
+      },
+      {
+        "api": "set-text",
+        "chart": 0,
+        "name": "lines",
+        "property": 6,
+        "text": "Trade Frequency: intense"
+      },
+      {
+        "api": "cast-text",
+        "value": 4629137466983448576,
+        "kind": 88
+      },
+      {
+        "api": "set-text",
+        "chart": 0,
+        "name": "linet",
+        "property": 6,
+        "text": "Max allowed DD: <CAST11>%"
+      }
+    ]
+  },
+  {
+    "bot": 3,
+    "name": "info-0-show-1",
+    "options": {
+      "info": 0,
+      "bytes": {
+        "1d6f40": 1
+      }
+    },
+    "events": [
+      {
+        "api": "info",
+        "property": 6
+      },
+      {
+        "api": "positions"
+      },
+      {
+        "api": "double-text",
+        "value": 0.0,
+        "digits": 2
+      },
+      {
+        "api": "integer-text",
+        "value": 0,
+        "width": 0,
+        "fill": 32
+      },
+      {
+        "api": "set-text",
+        "chart": 0,
+        "name": "lineopl0",
+        "property": 6,
+        "text": "Open P/L: <D2>"
+      },
+      {
+        "api": "double-text",
+        "value": 10000.0,
+        "digits": 2
+      },
+      {
+        "api": "integer-text",
+        "value": 0,
+        "width": 0,
+        "fill": 32
+      },
+      {
+        "api": "set-text",
+        "chart": 0,
+        "name": "linea0",
+        "property": 6,
+        "text": "Account Balance: <D5>"
+      },
+      {
+        "api": "integer-text",
+        "value": 0,
+        "width": 0,
+        "fill": 32
+      },
+      {
+        "api": "set-text",
+        "chart": 0,
+        "name": "linenfp0",
+        "property": 6,
+        "text": "no news coming up"
+      },
+      {
+        "api": "set-text",
+        "chart": 0,
+        "name": "lines",
+        "property": 6,
+        "text": "Trade Frequency: intense"
+      },
+      {
+        "api": "cast-text",
+        "value": 4629137466983448576,
+        "kind": 88
+      },
+      {
+        "api": "set-text",
+        "chart": 0,
+        "name": "linet",
+        "property": 6,
+        "text": "Max allowed DD: <CAST11>%"
+      }
+    ]
+  },
+  {
+    "bot": 3,
+    "name": "info-1-show-0",
+    "options": {
+      "info": 1,
+      "bytes": {
+        "1d6f40": 0
+      }
+    },
+    "events": [
+      {
+        "api": "info",
+        "property": 6
+      }
+    ]
+  },
+  {
+    "bot": 3,
+    "name": "info-1-show-1",
+    "options": {
+      "info": 1,
+      "bytes": {
+        "1d6f40": 1
+      }
+    },
+    "events": [
+      {
+        "api": "info",
+        "property": 6
+      },
+      {
+        "api": "positions"
+      },
+      {
+        "api": "double-text",
+        "value": 0.0,
+        "digits": 2
+      },
+      {
+        "api": "integer-text",
+        "value": 0,
+        "width": 0,
+        "fill": 32
+      },
+      {
+        "api": "set-text",
+        "chart": 0,
+        "name": "lineopl0",
+        "property": 6,
+        "text": "Open P/L: <D2>"
+      },
+      {
+        "api": "double-text",
+        "value": 10000.0,
+        "digits": 2
+      },
+      {
+        "api": "integer-text",
+        "value": 0,
+        "width": 0,
+        "fill": 32
+      },
+      {
+        "api": "set-text",
+        "chart": 0,
+        "name": "linea0",
+        "property": 6,
+        "text": "Account Balance: <D5>"
+      },
+      {
+        "api": "integer-text",
+        "value": 0,
+        "width": 0,
+        "fill": 32
+      },
+      {
+        "api": "set-text",
+        "chart": 0,
+        "name": "linenfp0",
+        "property": 6,
+        "text": "no news coming up"
+      },
+      {
+        "api": "set-text",
+        "chart": 0,
+        "name": "lines",
+        "property": 6,
+        "text": "Trade Frequency: intense"
+      },
+      {
+        "api": "cast-text",
+        "value": 4629137466983448576,
+        "kind": 88
+      },
+      {
+        "api": "set-text",
+        "chart": 0,
+        "name": "linet",
+        "property": 6,
+        "text": "Max allowed DD: <CAST11>%"
+      }
+    ]
+  },
+  {
+    "bot": 3,
+    "name": "news-0",
+    "options": {
+      "bytes": {
+        "1d7020": 1
+      },
+      "longs": {
+        "1d6c70": 1767355500
+      }
+    },
+    "events": [
+      {
+        "api": "info",
+        "property": 6
+      },
+      {
+        "api": "positions"
+      },
+      {
+        "api": "double-text",
+        "value": 0.0,
+        "digits": 2
+      },
+      {
+        "api": "integer-text",
+        "value": 0,
+        "width": 0,
+        "fill": 32
+      },
+      {
+        "api": "set-text",
+        "chart": 0,
+        "name": "lineopl0",
+        "property": 6,
+        "text": "Open P/L: <D2>"
+      },
+      {
+        "api": "double-text",
+        "value": 10000.0,
+        "digits": 2
+      },
+      {
+        "api": "integer-text",
+        "value": 0,
+        "width": 0,
+        "fill": 32
+      },
+      {
+        "api": "set-text",
+        "chart": 0,
+        "name": "linea0",
+        "property": 6,
+        "text": "Account Balance: <D5>"
+      },
+      {
+        "api": "server",
+        "time": 1767355200
+      },
+      {
+        "api": "cast-text",
+        "value": 1767355500,
+        "kind": 84
+      },
+      {
+        "api": "integer-text",
+        "value": 0,
+        "width": 0,
+        "fill": 32
+      },
+      {
+        "api": "set-text",
+        "chart": 0,
+        "name": "linenfp0",
+        "property": 6,
+        "text": "Next News: NFP, <CAST9>"
+      },
+      {
+        "api": "set-text",
+        "chart": 0,
+        "name": "lines",
+        "property": 6,
+        "text": "Trade Frequency: intense"
+      },
+      {
+        "api": "cast-text",
+        "value": 4629137466983448576,
+        "kind": 88
+      },
+      {
+        "api": "set-text",
+        "chart": 0,
+        "name": "linet",
+        "property": 6,
+        "text": "Max allowed DD: <CAST13>%"
+      }
+    ]
+  },
+  {
+    "bot": 3,
+    "name": "news-1",
+    "options": {
+      "bytes": {
+        "1d7078": 1
+      },
+      "longs": {
+        "1d6c78": 1767355500
+      }
+    },
+    "events": [
+      {
+        "api": "info",
+        "property": 6
+      },
+      {
+        "api": "positions"
+      },
+      {
+        "api": "double-text",
+        "value": 0.0,
+        "digits": 2
+      },
+      {
+        "api": "integer-text",
+        "value": 0,
+        "width": 0,
+        "fill": 32
+      },
+      {
+        "api": "set-text",
+        "chart": 0,
+        "name": "lineopl0",
+        "property": 6,
+        "text": "Open P/L: <D2>"
+      },
+      {
+        "api": "double-text",
+        "value": 10000.0,
+        "digits": 2
+      },
+      {
+        "api": "integer-text",
+        "value": 0,
+        "width": 0,
+        "fill": 32
+      },
+      {
+        "api": "set-text",
+        "chart": 0,
+        "name": "linea0",
+        "property": 6,
+        "text": "Account Balance: <D5>"
+      },
+      {
+        "api": "server",
+        "time": 1767355200
+      },
+      {
+        "api": "cast-text",
+        "value": 1767355500,
+        "kind": 84
+      },
+      {
+        "api": "integer-text",
+        "value": 0,
+        "width": 0,
+        "fill": 32
+      },
+      {
+        "api": "set-text",
+        "chart": 0,
+        "name": "linenfp0",
+        "property": 6,
+        "text": "Next News: Interest rates, <CAST9>"
+      },
+      {
+        "api": "set-text",
+        "chart": 0,
+        "name": "lines",
+        "property": 6,
+        "text": "Trade Frequency: intense"
+      },
+      {
+        "api": "cast-text",
+        "value": 4629137466983448576,
+        "kind": 88
+      },
+      {
+        "api": "set-text",
+        "chart": 0,
+        "name": "linet",
+        "property": 6,
+        "text": "Max allowed DD: <CAST13>%"
+      }
+    ]
+  },
+  {
+    "bot": 3,
+    "name": "news-2",
+    "options": {
+      "bytes": {
+        "1d70b0": 1
+      },
+      "longs": {
+        "1d6c80": 1767355500
+      }
+    },
+    "events": [
+      {
+        "api": "info",
+        "property": 6
+      },
+      {
+        "api": "positions"
+      },
+      {
+        "api": "double-text",
+        "value": 0.0,
+        "digits": 2
+      },
+      {
+        "api": "integer-text",
+        "value": 0,
+        "width": 0,
+        "fill": 32
+      },
+      {
+        "api": "set-text",
+        "chart": 0,
+        "name": "lineopl0",
+        "property": 6,
+        "text": "Open P/L: <D2>"
+      },
+      {
+        "api": "double-text",
+        "value": 10000.0,
+        "digits": 2
+      },
+      {
+        "api": "integer-text",
+        "value": 0,
+        "width": 0,
+        "fill": 32
+      },
+      {
+        "api": "set-text",
+        "chart": 0,
+        "name": "linea0",
+        "property": 6,
+        "text": "Account Balance: <D5>"
+      },
+      {
+        "api": "server",
+        "time": 1767355200
+      },
+      {
+        "api": "cast-text",
+        "value": 1767355500,
+        "kind": 84
+      },
+      {
+        "api": "integer-text",
+        "value": 0,
+        "width": 0,
+        "fill": 32
+      },
+      {
+        "api": "set-text",
+        "chart": 0,
+        "name": "linenfp0",
+        "property": 6,
+        "text": "Next News: CPI, <CAST9>"
+      },
+      {
+        "api": "set-text",
+        "chart": 0,
+        "name": "lines",
+        "property": 6,
+        "text": "Trade Frequency: intense"
+      },
+      {
+        "api": "cast-text",
+        "value": 4629137466983448576,
+        "kind": 88
+      },
+      {
+        "api": "set-text",
+        "chart": 0,
+        "name": "linet",
+        "property": 6,
+        "text": "Max allowed DD: <CAST13>%"
+      }
+    ]
+  }
+]

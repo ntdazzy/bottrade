@@ -1,0 +1,78 @@
+{
+  "bot": 1,
+  "events": [
+    {
+      "api": "info",
+      "property": 6
+    },
+    {
+      "api": "info",
+      "property": 6
+    },
+    {
+      "api": "positions"
+    },
+    {
+      "api": "double-text",
+      "value": 0.0,
+      "digits": 2
+    },
+    {
+      "api": "integer-text",
+      "value": 0,
+      "width": 0,
+      "fill": 32
+    },
+    {
+      "api": "set-text",
+      "chart": 0,
+      "name": "lineopl0",
+      "property": 6,
+      "text": "Open P/L: <D3>"
+    },
+    {
+      "api": "double-text",
+      "value": 10000.0,
+      "digits": 2
+    },
+    {
+      "api": "integer-text",
+      "value": 0,
+      "width": 0,
+      "fill": 32
+    },
+    {
+      "api": "set-text",
+      "chart": 0,
+      "name": "linea0",
+      "property": 6,
+      "text": "Account Balance: <D6>"
+    },
+    {
+      "api": "integer-text",
+      "value": 0,
+      "width": 0,
+      "fill": 32
+    },
+    {
+      "api": "set-text",
+      "chart": 0,
+      "name": "linenfp0",
+      "property": 6,
+      "text": "no news coming up"
+    },
+    {
+      "api": "double-text",
+      "value": 0.0,
+      "digits": 2
+    },
+    {
+      "api": "set-text",
+      "chart": 0,
+      "name": "lines",
+      "property": 6,
+      "text": "Using fixed lotsizee: <D11>lots"
+    }
+  ],
+  "scope": "symbolic SDK text replies; zero positions; analysis only"
+}

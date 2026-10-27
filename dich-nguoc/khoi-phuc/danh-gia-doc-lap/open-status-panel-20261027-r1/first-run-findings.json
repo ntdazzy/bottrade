@@ -1,0 +1,9 @@
+{
+  "runs": ["b1-open-panel-20261027-r1", "b3-open-panel-20261027-r1"],
+  "passed": false,
+  "first_case": 15,
+  "first_difference": "The recorder preserved allocated empty text (length 0), while the native adapter incorrectly normalized it to a NULL string (length -1). Both lengths and numeric fields matched; the first differing byte was 168.",
+  "correction": "Preserve NULL and allocated empty text separately in native text decoding and state encoding. Start new proof runs; keep the first recordings.",
+  "additional_source_review": "Bot1 captured the group seed before initial PositionsTotal. Native e2ea..e33a captures it after that SDK. Move capture after the initial total; retain a live-mutation case.",
+  "scope": "Open-status body only. No original EX5 changes, rendered UI or full EA claim."
+}

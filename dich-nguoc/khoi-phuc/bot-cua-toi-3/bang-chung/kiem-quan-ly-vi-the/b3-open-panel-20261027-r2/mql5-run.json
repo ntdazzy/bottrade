@@ -1,0 +1,33 @@
+{
+  "original_ex5_sha256": "ee063d3d87490afe24e2f4ce85f6b05659320e297b102efd70207f71ca2feb83",
+  "sources_sha256": {
+    "Include/bot-cua-toi-3/Bot3NewsSelector.mqh": "fa1254b69418f29d8de0a3823580714ba67a2fad646ce75d188ba2c9fab0f755",
+    "Include/bot-cua-toi-3/Bot3OpenStatusPanel.mqh": "b91e5995f33435bf4a285cda314b842505fa76c6e7fafc9e89fb48465ed847f0",
+    "Include/bot-cua-toi-3/Bot3NewsBlock.mqh": "cbded973dcafad86fb98231399a83fc5fa2b215330dd725caeba2bc98cbff40c",
+    "Scripts/bot-cua-toi-3/Bot3OpenStatusPanelCheck.mq5": "a8b8efd91ee8d4b33faa2511b88a9d7c9e5dc6935e7070a6ddbe2dfa996af497"
+  },
+  "helpers_sha256": {
+    "cong-cu/kiem-bang-thong-tin-mo-bot-1-3.py": "d4366e8f00d9ea19c7254331889977f79c41533a27552f1532981b5b429a6fba",
+    "cong-cu/tao-bo-kiem-bang-thong-tin-mo-bot-1-3.py": "c6b2e354e1d8abb20e3b0dba2b8be0d027519719bd1dd1a07b34881fddff3a20",
+    "cong-cu/kiem-chon-tin-day-du-bot-1-3.py": "0a7ebaf1893d8a11ae0e3f30b4018af70078c1f78451540fcf688032930492a4",
+    "cong-cu/kiem-gia-vao-bot-1-3.py": "22394e48932feb7242b967aa58e327d2990402f12bfe52621916f64914c9dac2",
+    "cong-cu/kiem-muc-gia-bot-1-3.py": "a6c447ca80029fb63ced0c9d1673bb14222a7736b04df5c410f280f8471d6a35",
+    "cong-cu/kiem-ban-git-quan-ly.py": "7186478774b34e0d72b4594fbcc85972d9b4c07ed02160987d46d34f39dcb160",
+    "cong-cu/kiem-khoi-luong-hop-le-bot-1-3.py": "8251fb4423d6f5f2e1b79a1c53dbb25fb5a6c568bb61cddef23396dc982243f0"
+  },
+  "cases": 324,
+  "result_sha256": "977d82bbac94d9924d23fd9794201367badfb50c5a85d8e8c08ac9c2ce37f6ad",
+  "build": "b3-open-panel-check-20261027-r2",
+  "build_receipt_sha256": "7bd2b170874e4aa32b75b1cfb6e996bb653f58600b583afe42591f0244d3a4b0",
+  "whole_bot_complete": false,
+  "whole_manager_complete": false,
+  "whole_evaluator_complete": false,
+  "full_ea": false,
+  "native_open_status_body_executed": true,
+  "native_news_selector_executed": true,
+  "child_helpers_intercepted": false,
+  "terminal_replies_supplied": true,
+  "text_formatting_replies_measured_in_mt5": true,
+  "rendered_chart_verified": false,
+  "original_ex5_changed": false
+}
