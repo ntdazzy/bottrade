@@ -39,3 +39,28 @@ Bảng có240mốc khác0 và60ô0 ở cả hai bản chụp. Đã đối chiế
 Cần ghép nguyên nhánh gọi lịch trực tuyến/bảng dự phòng/chọn tin cùng
 các thân hủy/đóng đã có, so tác dụng phụ và mọi đường ra. Không biến
 nhánh có chuỗi lạ thành quy tắc thứSáu dễ viết hơn.
+
+## Các ô dùng chung phải nối đúng khi ghép hành động
+
+| Dữ liệu | Bot1 | Bot3 |
+|---|---|---|
+| Mã chiến lược của quét lệnh chờ |6246c|6d564|
+| Mã gốc để lọc nhiều chiến lược khi đóng vị thế |6a610|1d6ff0|
+| Vé cuối dùng chung |677f8|74838|
+| Giá dùng cho hủy chờ mua / reference_b của kiểm đóng |67760|747a0|
+| Giá dùng cho hủy chờ bán / reference_a của kiểm đóng |67758|74798|
+| Khoảng cách hủy / threshold_b của kiểm đóng |67468|744a8|
+| threshold_a của kiểm đóng |66a70|73ab0|
+| Độ lệch giá dùng khi đóng |6772d|7476d|
+
+Hai giá và hai ngưỡng không được gộp thành cùng một giá/ngưỡng. Hủy
+chờ mua dùng reference_b, nhưng kiểm đóng mua bắt đầu với reference_a;
+phải giữ hành vi gốc. Khoảng cách hủy và threshold_b là cùng một ô,
+không sao chép thành hai giá trị có thể lệch khi dịch vụ đổi trạng thái.
+Mã gốc để lọc vị thế và mã chiến lược hiện tại cũng là hai ô khác nhau.
+
+Căn cứ hiện hành: CFG của `cong-cu/kiem-dong-vi-the-bot-1-3.py`,
+`cong-cu/kiem-chon-vi-the-dong-bot-1-3.py` và
+`cong-cu/kiem-huy-lenh-theo-khoang-cach.py`; các phép kiểm hiện có đã
+đối chiếu chúng với thân gốc. Chỉ bảng nối dữ liệu, chưa phải phép kiểm
+ghép toàn nhánhNFP. Khi ghép cần dùng chung các ô này qua gọi hủy rồi đóng.
