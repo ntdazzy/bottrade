@@ -49,13 +49,13 @@ void Bot3ProcessPendingQueueLive(Bot3PendingQueue &queue,const Bot3PendingRestor
    {
       if(queue.orders[i][0]>0.0)
       {
-         if(queue.orders[i][1]==4.0 && Bot3QueueDifference(queue.orders[i][0],execution.threshold_a)>execution.reference_b)
+         if(queue.orders[i][1]==4.0 && Bot3QueueDifference(queue.orders[i][0],execution.threshold_a)>execution.tick.ask)
          {
             Print("Restoring pending buy-order");
             if(!Bot3SendQueuedPendingLive(queue,settings,unit,execution,i,ORDER_TYPE_BUY_STOP))
                Bot3RetryQueuedPendingLive(queue,settings,unit,execution,i,ORDER_TYPE_BUY_STOP);
          }
-         if(queue.orders[i][1]==5.0 && Bot3QueueSum(queue.orders[i][0],execution.threshold_a)<execution.reference_a)
+         if(queue.orders[i][1]==5.0 && Bot3QueueSum(queue.orders[i][0],execution.threshold_a)<execution.tick.bid)
          {
             Print("Restoring pending sell-order");
             if(!Bot3SendQueuedPendingLive(queue,settings,unit,execution,i,ORDER_TYPE_SELL_STOP))

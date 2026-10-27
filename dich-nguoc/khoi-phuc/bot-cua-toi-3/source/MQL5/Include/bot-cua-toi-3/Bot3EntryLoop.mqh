@@ -138,14 +138,14 @@ void Bot3ProcessEntryDirection(const bool buy,const int &maximum_pending,
    if(buy)
       candidate=Bot3EntryLevel(true,execution.symbol,settings.confirmation_frame,
                                settings.confirmation_frame,settings.older_width,
-                               settings.recent_width,settings.last_shift,execution.reference_b,
+                               settings.recent_width,settings.last_shift,execution.tick.ask,
                                settings.gap_points,unit,execution.strategy_magic,
                                settings.buy_offset,settings.sell_offset,settings.radius,
                                execution.last_ticket);
    else
       candidate=Bot3EntryLevel(false,execution.symbol,settings.confirmation_frame,
                                settings.confirmation_frame,settings.older_width,
-                               settings.recent_width,settings.last_shift,execution.reference_a,
+                               settings.recent_width,settings.last_shift,execution.tick.bid,
                                settings.gap_points,unit,execution.strategy_magic,
                                settings.buy_offset,settings.sell_offset,settings.radius,
                                execution.last_ticket);
@@ -213,14 +213,14 @@ void Bot3RunEntryLoop(const int &maximum_pending,const Bot3EntryLoopSettings &se
       }
       if(Bot3EntryRiskLimitReached(true,settings,accepted,execution))
          Bot3CancelDistantPending(1,true,execution.strategy_magic,execution.symbol,
-                                  execution.reference_b,execution.gap,execution.last_ticket,
+                                  execution.tick.ask,execution.gap,execution.last_ticket,
                                   execution.trade,execution.options);
       else if(buy_enabled!=0)
          Bot3ProcessEntryDirection(true,maximum_pending,settings,state,restore,unit,
                                    execution,volumes,strategy_index,queue);
       if(Bot3EntryRiskLimitReached(false,settings,accepted,execution))
          Bot3CancelDistantPending(1,false,execution.strategy_magic,execution.symbol,
-                                  execution.reference_a,execution.gap,execution.last_ticket,
+                                  execution.tick.bid,execution.gap,execution.last_ticket,
                                   execution.trade,execution.options);
       else if(sell_enabled!=0)
          Bot3ProcessEntryDirection(false,maximum_pending,settings,state,restore,unit,

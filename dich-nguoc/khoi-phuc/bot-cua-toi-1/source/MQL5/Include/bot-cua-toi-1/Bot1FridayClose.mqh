@@ -11,10 +11,10 @@ struct Bot1FridaySettings
 void Bot1CloseForFriday(Bot1NfpExecution &execution)
 {
    Bot1CloseFilteredBuyPositions(execution.magic_base,execution.symbol,execution.last_ticket,execution.trade,
-                                 execution.options,execution.deviation,execution.reference_a,execution.reference_b,
+                                 execution.options,execution.deviation,execution.tick.bid,execution.tick.ask,
                                  execution.threshold_a,execution.gap);
    Bot1CloseFilteredSellPositions(execution.magic_base,execution.symbol,execution.last_ticket,execution.trade,
-                                  execution.options,execution.deviation,execution.reference_a,execution.reference_b,
+                                  execution.options,execution.deviation,execution.tick.bid,execution.tick.ask,
                                   execution.threshold_a,execution.gap);
 
    const int total=OrdersTotal();

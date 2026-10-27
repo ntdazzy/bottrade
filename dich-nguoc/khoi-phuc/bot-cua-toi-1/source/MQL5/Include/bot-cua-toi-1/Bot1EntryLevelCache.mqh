@@ -33,13 +33,13 @@ Bot1EntryLevelDecision Bot1UpdateEntryLevelCache(const int &pending_enabled,cons
    if(settings.aux_older>0)
    {
       const double upper_result=Bot1UpperLevel(execution.symbol,settings.aux_timeframe,settings.aux_older,
-                                               settings.aux_recent,settings.last_shift,execution.reference_b,
+                                               settings.aux_recent,settings.last_shift,execution.tick.ask,
                                                execution.threshold_a);
       const uint upper_slot=current_index;
       upper[upper_slot]=Bot1QueueSum(Bot1QueueProduct(settings.aux_offset,unit),
                                      Bot1QueueSum(upper_result,spread));
       const double lower_result=Bot1LowerLevel(execution.symbol,settings.aux_timeframe,settings.aux_older,
-                                               settings.aux_recent,settings.last_shift,execution.reference_a,
+                                               settings.aux_recent,settings.last_shift,execution.tick.bid,
                                                execution.threshold_a);
       const uint lower_slot=current_index;
       lower[lower_slot]=Bot1QueueDifference(lower_result,Bot1QueueProduct(settings.aux_offset,unit));

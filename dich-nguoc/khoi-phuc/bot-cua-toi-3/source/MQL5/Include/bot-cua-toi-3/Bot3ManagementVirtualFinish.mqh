@@ -20,14 +20,15 @@ struct Bot3VirtualFinishSettings
    double step_distance;
 };
 
-void Bot3AdvanceVirtualHighLow(const bool buy,const string &symbol,
+void Bot3AdvanceVirtualHighLowFields(const bool buy,const string &symbol,
                                const Bot3VirtualFinishSettings &settings,const double &unit,
                                const double &gap,const double &freeze,
                                const Bot3ManagedPosition &position,MqlTick &tick,
                                const double &levels[],const uint &strategy_index,
-                               double &current_level,bool &changed)
+                               double &current_level,bool &changed,
+                               const int &high_low_enabled)
 {
-   if(settings.high_low_enabled<=0) return;
+   if(high_low_enabled<=0) return;
    double level=current_level;
    double first=levels[strategy_index];
    double limit=buy ? level+gap : level-gap;
@@ -48,11 +49,24 @@ void Bot3AdvanceVirtualHighLow(const bool buy,const string &symbol,
    current_level=levels[strategy_index];
 }
 
-void Bot3AdvanceVirtualBreakEvenCounter(const bool buy,const string &symbol,
+void Bot3AdvanceVirtualHighLow(const bool buy,const string &symbol,
+                               const Bot3VirtualFinishSettings &settings,const double &unit,
+                               const double &gap,const double &freeze,
+                               const Bot3ManagedPosition &position,MqlTick &tick,
+                               const double &levels[],const uint &strategy_index,
+                               double &current_level,bool &changed)
+{
+   Bot3AdvanceVirtualHighLowFields(buy,symbol,settings,unit,gap,freeze,position,tick,
+                                   levels,strategy_index,current_level,changed,
+                                   settings.high_low_enabled);
+}
+
+void Bot3AdvanceVirtualBreakEvenCounterFields(const bool buy,const string &symbol,
                                         const Bot3VirtualFinishSettings &settings,const double &unit,
                                         const double &gap,const double &freeze,const double selected_anchor,
                                         const double &copied_step,const Bot3ManagedPosition &position,
-                                        MqlTick &tick,double &current_level,bool &changed,int &counter)
+                                        MqlTick &tick,double &current_level,bool &changed,int &counter,
+                                        const double &step_reference)
 {
    double open_price=position.open_price;
    double tp=position.tp;
@@ -101,7 +115,7 @@ void Bot3AdvanceVirtualBreakEvenCounter(const bool buy,const string &symbol,
    if(!(buy ? gap+next<quote : quote<next-gap)) return;
    if(!(buy ? quote<tp-freeze : freeze+tp<quote)) return;
    // +0 and -0 skip the anchor test; any other value, NaN included, requires it on both sides.
-   if(settings.step_reference!=0.0)
+   if(step_reference!=0.0)
    {
       double distance=u*copied_step;
       if(!(buy ? selected_anchor+distance<quote : quote<selected_anchor-distance)) return;
@@ -110,6 +124,17 @@ void Bot3AdvanceVirtualBreakEvenCounter(const bool buy,const string &symbol,
    counter=0;
    current_level=next;
    changed=true;
+}
+
+void Bot3AdvanceVirtualBreakEvenCounter(const bool buy,const string &symbol,
+                                        const Bot3VirtualFinishSettings &settings,const double &unit,
+                                        const double &gap,const double &freeze,const double selected_anchor,
+                                        const double &copied_step,const Bot3ManagedPosition &position,
+                                        MqlTick &tick,double &current_level,bool &changed,int &counter)
+{
+   Bot3AdvanceVirtualBreakEvenCounterFields(buy,symbol,settings,unit,gap,freeze,selected_anchor,
+                                            copied_step,position,tick,current_level,changed,counter,
+                                            settings.step_reference);
 }
 
 // Buy 0x36b19..0x36f5f, sell 0x3ad01..0x3b14f; do not create new rows.

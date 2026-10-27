@@ -14,10 +14,10 @@ void Bot3CloseForFriday(const uchar &delete_pending,const uchar &close_positions
    if(close_positions!=0)
    {
       Bot3CloseFilteredBuyPositions(execution.magic_base,execution.symbol,execution.last_ticket,execution.trade,
-                                    execution.options,execution.deviation,execution.reference_a,execution.reference_b,
+                                    execution.options,execution.deviation,execution.tick.bid,execution.tick.ask,
                                     execution.threshold_a,execution.gap);
       Bot3CloseFilteredSellPositions(execution.magic_base,execution.symbol,execution.last_ticket,execution.trade,
-                                     execution.options,execution.deviation,execution.reference_a,execution.reference_b,
+                                     execution.options,execution.deviation,execution.tick.bid,execution.tick.ask,
                                      execution.threshold_a,execution.gap);
    }
    if(delete_pending==0) return;

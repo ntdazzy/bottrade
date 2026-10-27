@@ -14,19 +14,19 @@ struct Bot3ManagementAnchorState
    double reference;
 };
 
-void Bot3PrepareManagementAnchor(Bot3ManagementAnchorState &state,
+void Bot3PrepareManagementAnchorFields(Bot3ManagementAnchorState &state,
                                  const string &symbol,const double &unit,
                                  const double &step_setting,const double &limit,
                                  const uchar &use_anchor,const bool buy,
-                                 const double ticket_number,const double opened)
+                                 const double ticket_number,const double opened,double &rows[][2],double &step_reference)
 {
-   state.step_reference=step_setting;
+   step_reference=step_setting;
    uint digits=(uint)SymbolInfoInteger(symbol,SYMBOL_DIGITS);
    state.ticket=(long)ticket_number;
    double key=(double)state.ticket;
    double level=0.0;
    for(int row=0;row<100;row++)
-      if(state.rows[row][0]==key) { level=state.rows[row][1];break; }
+      if(rows[row][0]==key) { level=rows[row][1];break; }
    level=Bot3RoundPrice(level,digits);
    if(level!=0.0)
    {
@@ -38,9 +38,9 @@ void Bot3PrepareManagementAnchor(Bot3ManagementAnchorState &state,
       level=opened;
       for(int row=0;row<100;row++)
       {
-         if(state.rows[row][0]!=0.0) continue;
-         state.rows[row][0]=key;
-         state.rows[row][1]=opened;
+         if(rows[row][0]!=0.0) continue;
+         rows[row][0]=key;
+         rows[row][1]=opened;
          break;
       }
    }
@@ -54,5 +54,15 @@ void Bot3PrepareManagementAnchor(Bot3ManagementAnchorState &state,
    }
    state.reference=opened;
    if(use_anchor!=0) state.reference=level;
+}
+
+void Bot3PrepareManagementAnchor(Bot3ManagementAnchorState &state,
+                                 const string &symbol,const double &unit,
+                                 const double &step_setting,const double &limit,
+                                 const uchar &use_anchor,const bool buy,
+                                 const double ticket_number,const double opened)
+{
+   Bot3PrepareManagementAnchorFields(state,symbol,unit,step_setting,limit,use_anchor,buy,ticket_number,opened,
+                                      state.rows,state.step_reference);
 }
 #endif

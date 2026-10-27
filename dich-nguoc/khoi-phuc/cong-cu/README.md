@@ -1,3 +1,9 @@
+- `kiem-quan-ly-trang-thai-chung.py generate|prepare|mql5|original|compare BOT RUN`:
+  quản lý nhận trực tiếp7nhóm trạng thái và9thiết lập ngoài; cố ý đặt sai
+  ô cũ để bắt đọc nhầm.352/352caB1,364/364caB3, chạy nguyên thân bảng và
+  giao dịch. `generate BOT` tạo nguồn, `mql5` cần `--build BUILD`; dùng
+  MT5 riêng mỗi bot. Chưa gồm bộ điều phối quản lý/toàn phần đánh giá/EA.
+
 - `kiem-luong-sau-quan-ly-bot-1-3.py prepare|mql5|original|compare BOT RUN`:
   nối nguyên thân bảng→vốn→khối lượng→chỉnh lệnh chờ→điều kiện dừng→tin→
   tạo lệnh,296/296caB1,392/392caB3; có5chế độ khối lượng mỗi bot.

@@ -1,0 +1,26 @@
+{
+  "cases": 392,
+  "matched": 392,
+  "failed": 0,
+  "first_failures": [],
+  "whole_bot_complete": false,
+  "whole_manager_complete": false,
+  "whole_evaluator_complete": false,
+  "full_ea": false,
+  "native_panel_resize_availability_news_entry_continuous": true,
+  "child_helpers_intercepted": false,
+  "terminal_replies_supplied": true,
+  "withdrawals_disabled": true,
+  "volume_mode_coverage": [
+    0,
+    2,
+    3,
+    1234,
+    9999
+  ],
+  "chart_rendering_verified": false,
+  "original_ex5_changed": false,
+  "limits": [
+    "Continuous panel, balance/volume/resize, availability and news through entry loops, with five measured volume modes. Withdrawals disabled in this integration suite. Initial earlier management/frame and terminal replies, logical SDK errors, successful allocation and measured conversions supplied. No full evaluator, rendered UI or EA."
+  ]
+}

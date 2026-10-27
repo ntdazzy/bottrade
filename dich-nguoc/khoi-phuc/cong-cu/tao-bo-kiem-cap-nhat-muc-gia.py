@@ -44,10 +44,10 @@ functions='''void EntryEffect(const int api,const long property=-1)
    if(api==36 && HighCalls==1)
    {
       if(mode==3) CurrentIndex=3;
-      if(mode==4) { LevelSettings.last_shift=1;Execution.reference_b=999.; }
+      if(mode==4) { LevelSettings.last_shift=1;Execution.tick.ask=999.; }
       if(mode==10) Execution.symbol="OTHER";
    }
-   if(api==37 && LowCalls==1 && mode==5) { Execution.reference_a=-999.;Execution.threshold_a=2.; }
+   if(api==37 && LowCalls==1 && mode==5) { Execution.tick.bid=-999.;Execution.threshold_a=2.; }
    if(api==26 && property==17)
    {
       DigitCalls++;

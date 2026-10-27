@@ -20,7 +20,7 @@ struct Bot1NfpExecution
 {
    int strategy_magic,magic_base;
    string symbol;
-   double reference_a,reference_b,threshold_a,gap;
+   MqlTick tick;double threshold_a,gap;
    ulong last_ticket,deviation;
    Bot1PendingRequestState trade;
    Bot1TradeSendOptions options;
@@ -43,17 +43,17 @@ void Bot1NfpFilterActions(const Bot1NfpFilterSettings &settings,Bot1NfpFilterSta
    if(settings.delete_pending!=0)
    {
       Bot1CancelDistantPending(1,true,execution.strategy_magic,execution.symbol,
-                               execution.reference_b,execution.gap,execution.last_ticket,execution.trade,execution.options);
+                               execution.tick.ask,execution.gap,execution.last_ticket,execution.trade,execution.options);
       Bot1CancelDistantPending(1,false,execution.strategy_magic,execution.symbol,
-                               execution.reference_a,execution.gap,execution.last_ticket,execution.trade,execution.options);
+                               execution.tick.bid,execution.gap,execution.last_ticket,execution.trade,execution.options);
    }
    if(settings.close_positions!=0)
    {
       Bot1CloseFilteredBuyPositions(execution.magic_base,execution.symbol,execution.last_ticket,execution.trade,
-                                    execution.options,execution.deviation,execution.reference_a,execution.reference_b,
+                                    execution.options,execution.deviation,execution.tick.bid,execution.tick.ask,
                                     execution.threshold_a,execution.gap);
       Bot1CloseFilteredSellPositions(execution.magic_base,execution.symbol,execution.last_ticket,execution.trade,
-                                     execution.options,execution.deviation,execution.reference_a,execution.reference_b,
+                                     execution.options,execution.deviation,execution.tick.bid,execution.tick.ask,
                                      execution.threshold_a,execution.gap);
    }
    if(state.blocked==0) Print("NFP!! deleting trades!!");

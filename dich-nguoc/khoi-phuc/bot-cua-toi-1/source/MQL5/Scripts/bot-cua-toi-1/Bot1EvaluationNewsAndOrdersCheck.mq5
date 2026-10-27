@@ -114,7 +114,7 @@ void Snapshot()
    Word((ulong)(long)Cached.year);Word((ulong)(long)Cached.mon);Word((ulong)(long)Cached.day);Word((ulong)(long)Cached.hour);
    Word((ulong)(long)Cached.min);Word((ulong)(long)Cached.sec);Word((ulong)(long)Cached.day_of_week);Word((ulong)(long)Cached.day_of_year);
    Word((ulong)(long)Execution.strategy_magic);Word((ulong)(long)Execution.magic_base);Text(Execution.symbol);
-   Word(Bits(Execution.reference_a));Word(Bits(Execution.reference_b));Word(Bits(Execution.threshold_a));Word(Bits(Execution.gap));
+   Word(Bits(Execution.tick.bid));Word(Bits(Execution.tick.ask));Word(Bits(Execution.threshold_a));Word(Bits(Execution.gap));
    Word(Execution.last_ticket);Word(Execution.deviation);
    Word((ulong)Execution.trade.request.action);
    Word((ulong)Execution.trade.request.magic);
@@ -211,8 +211,8 @@ void WideEffect(const int api,const string text=NULL,const long property=-1)
    if(api==19 && property==9)
    {
       PriceReads++;
-      if(mode==1 && PriceReads==1) Execution.reference_b=105.;
-      if(mode==2 && PriceReads==2) Execution.reference_b=1000.;
+      if(mode==1 && PriceReads==1) Execution.tick.ask=105.;
+      if(mode==2 && PriceReads==2) Execution.tick.ask=1000.;
    }
    if(mode==3 && api==10 && StringFind(text,"Spread too high..(")==0) Queue.enabled=0;
    if(mode==4 && api==10 && StringFind(text,"Storing pending order nr ")==0) Execution.last_ticket=999;
@@ -371,9 +371,9 @@ int OnStart()
       Settings.before_minutes=(int)P[p_before_minutes];Settings.after_minutes=(int)P[p_after_minutes];
       State.initialization_notice=(uchar)P[p_initialization_notice];State.notice=(uchar)P[p_notice];State.blocked=(uchar)P[p_blocked];
       State.last_query=P[p_last_query];State.utc_reference=P[p_utc_reference];Events.nfp=P[p_nfp];Events.interest=7777;Events.cpi=8888;
-      Execution.strategy_magic=42;Execution.magic_base=(int)FridayData[5];Execution.symbol="XAUUSD";Execution.reference_a=Number((ulong)WideData[8]);Execution.reference_b=Number((ulong)WideData[7]);
+      Execution.strategy_magic=42;Execution.magic_base=(int)FridayData[5];Execution.symbol="XAUUSD";Execution.tick.bid=Number((ulong)WideData[8]);Execution.tick.ask=Number((ulong)WideData[7]);
       Execution.threshold_a=1.;Execution.gap=Number((ulong)WideData[9]);Execution.last_ticket=(ulong)0x1122334455667788;Execution.deviation=99;Execution.options.async_mode=(uchar)P[p_async_mode];
-      DoubleCast(casts,CurrentSpread);DoubleCast(casts,Execution.reference_b-Execution.reference_a);TicketCast(casts,(ulong)WideData[13]);TicketCast(casts,999);TicketCast(casts,(ulong)0x1122334455667788);SignedCast(casts,0);SignedCast(casts,3);SignedCast(casts,132);SignedCast(casts,999);if(!CastProofOk) return 9;
+      DoubleCast(casts,CurrentSpread);DoubleCast(casts,Execution.tick.ask-Execution.tick.bid);TicketCast(casts,(ulong)WideData[13]);TicketCast(casts,999);TicketCast(casts,(ulong)0x1122334455667788);SignedCast(casts,0);SignedCast(casts,3);SignedCast(casts,132);SignedCast(casts,999);if(!CastProofOk) return 9;
       string name=folder+"tape-"+IntegerToString(id)+".bin";TapeFile=FileOpen(name,FILE_WRITE|FILE_BIN);if(TapeFile==INVALID_HANDLE) return 5;
       Print("NEWS_ORDERS_CASE:",id);ResetLastError();
       RecordFinal=false;EndErrorOverride=-1;NewsBlocked=Bot1EvaluateNewsAndPendingLimits(Settings,State,InterestSettings,InterestState,CpiSettings,CpiState,Events,Cached,History,History,History,Execution,Selection,Friday,FridayClosed,SpreadSettings,SpreadUnit,CurrentSpread,Queue,Restore,PendingEnabled,MaximumPending);int final_error=SourceError();FileClose(TapeFile);

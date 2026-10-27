@@ -57,13 +57,13 @@ void Bot3SubmitEntryAfterPriceLive(const bool buy,const double base_price,
    if(!Bot3AllowsPendingOrder()) return;
    if(buy)
    {
-      double ask=execution.reference_b;
+      double ask=execution.tick.ask;
       if(!(ask<price-execution.gap)) return;
       if(!(ask<price-execution.threshold_a)) return;
    }
    else
    {
-      double bid=execution.reference_a;
+      double bid=execution.tick.bid;
       if(!(execution.gap+price<bid)) return;
       if(!(execution.threshold_a+price<bid)) return;
    }

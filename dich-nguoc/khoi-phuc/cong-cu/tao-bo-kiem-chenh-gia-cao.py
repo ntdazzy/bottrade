@@ -17,7 +17,7 @@ template=template.replace('for(int i=0;i<12;i++) FridayData[i]=FileReadLong(file
       for(int row=0;row<100;row++) for(int col=0;col<3;col++) Queue.orders[row][col]=FileReadDouble(file);
       for(int row=0;row<100;row++) for(int col=0;col<2;col++) Queue.results[row][col]=FileReadDouble(file);''')
 template=template.replace('Mutated=false;OrderTypeReads=0;','Mutated=false;OrderTypeReads=0;MagicReads=0;PriceReads=0;')
-template=template.replace('Execution.reference_a=100.;Execution.reference_b=101.;','Execution.reference_a=Number((ulong)WideData[8]);Execution.reference_b=Number((ulong)WideData[7]);')
+template=template.replace('Execution.tick.bid=100.;Execution.tick.ask=101.;','Execution.tick.bid=Number((ulong)WideData[8]);Execution.tick.ask=Number((ulong)WideData[7]);')
 template=template.replace('Execution.gap=1.;','Execution.gap=Number((ulong)WideData[9]);')
 template=template.replace('BotNProcessNewsAndFriday(Settings,State,InterestSettings,InterestState,CpiSettings,CpiState,Events,Cached,History,History,History,Execution,Selection,Friday,FridayClosed);','BotNProcessNewsFridayAndHighSpread(Settings,State,InterestSettings,InterestState,CpiSettings,CpiState,Events,Cached,History,History,History,Execution,Selection,Friday,FridayClosed,SpreadSettings,SpreadUnit,CurrentSpread,Queue);')
 template=template.replace('botN-news-friday','botN-news-friday-spread').replace('NEWS_FRIDAY_CASE','HIGH_SPREAD_CASE')
@@ -27,8 +27,8 @@ template=template.replace('void MockPrint(const string value) { Begin();ServiceE
    if(api==19 && property==9)
    {
       PriceReads++;
-      if(mode==1 && PriceReads==1) Execution.reference_b=105.;
-      if(mode==2 && PriceReads==2) Execution.reference_b=1000.;
+      if(mode==1 && PriceReads==1) Execution.tick.ask=105.;
+      if(mode==2 && PriceReads==2) Execution.tick.ask=1000.;
    }
    if(mode==3 && api==10 && StringFind(text,"Spread too high..(")==0) Queue.enabled=0;
    if(mode==4 && api==10 && StringFind(text,"Storing pending order nr ")==0) Execution.last_ticket=999;
@@ -57,7 +57,7 @@ void TicketCast(const int file,const ulong value)
 '''
 template=template.replace(marker,formats+marker)
 template=template.replace('if(output==INVALID_HANDLE || tapes==INVALID_HANDLE)', 'int casts=FileOpen(folder+"cast-values.bin",FILE_WRITE|FILE_BIN);if(casts==INVALID_HANDLE) return 8;\n   FileWriteInteger(casts,magic);FileWriteInteger(casts,version);FileWriteInteger(casts,count*5);\n   if(output==INVALID_HANDLE || tapes==INVALID_HANDLE)')
-template=template.replace('string name=folder+"tape-"','DoubleCast(casts,CurrentSpread);DoubleCast(casts,Execution.reference_b-Execution.reference_a);TicketCast(casts,(ulong)WideData[13]);TicketCast(casts,999);TicketCast(casts,(ulong)0x1122334455667788);\n      string name=folder+"tape-"')
+template=template.replace('string name=folder+"tape-"','DoubleCast(casts,CurrentSpread);DoubleCast(casts,Execution.tick.ask-Execution.tick.bid);TicketCast(casts,(ulong)WideData[13]);TicketCast(casts,999);TicketCast(casts,(ulong)0x1122334455667788);\n      string name=folder+"tape-"')
 template=template.replace('FileClose(file);FileClose(output);FileClose(tapes);int status=', 'FileClose(file);FileClose(output);FileClose(tapes);FileClose(casts);int status=')
 api=(ROOT/'bot-cua-toi-1/source/MQL5/Scripts/bot-cua-toi-1/Bot1NewsFridayAPICompile.mq5').read_text().replace('Bot1','BotN').replace('bot-cua-toi-1','bot-cua-toi-N').replace('BotNNewsFridayFlow.mqh','BotNNewsFridaySpreadFlow.mqh')
 api=api.replace('BotNFridaySettings friday;','BotNSpreadSettings spread_settings;BotNPendingQueue queue;double unit=0,spread=0;ZeroMemory(spread_settings);ZeroMemory(queue);\n   BotNFridaySettings friday;').replace('BotNProcessNewsAndFriday(','BotNProcessNewsFridayAndHighSpread(').replace('selection,friday,friday_closed);','selection,friday,friday_closed,spread_settings,unit,spread,queue);')

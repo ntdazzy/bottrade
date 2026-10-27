@@ -81,14 +81,14 @@ void Bot1ProcessEntryDirection(const bool buy,const int &maximum_pending,
    if(buy)
       candidate=Bot1EntryLevel(true,execution.symbol,settings.confirmation_frame,
                                settings.confirmation_frame,settings.older_width,
-                               settings.recent_width,settings.last_shift,execution.reference_b,
+                               settings.recent_width,settings.last_shift,execution.tick.ask,
                                settings.gap_points,unit,execution.strategy_magic,
                                settings.buy_offset,settings.sell_offset,settings.radius,
                                execution.last_ticket);
    else
       candidate=Bot1EntryLevel(false,execution.symbol,settings.confirmation_frame,
                                settings.confirmation_frame,settings.older_width,
-                               settings.recent_width,settings.last_shift,execution.reference_a,
+                               settings.recent_width,settings.last_shift,execution.tick.bid,
                                settings.gap_points,unit,execution.strategy_magic,
                                settings.buy_offset,settings.sell_offset,settings.radius,
                                execution.last_ticket);

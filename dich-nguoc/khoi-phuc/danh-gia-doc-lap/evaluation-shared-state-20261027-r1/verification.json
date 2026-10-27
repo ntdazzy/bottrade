@@ -1,0 +1,68 @@
+{
+  "checks": [
+    {
+      "bot": 1,
+      "scope": "manager-fields",
+      "run": "b1-manager-fields-20261027-r3",
+      "cases": 352,
+      "matched": 352,
+      "result_sha256": "e21198f27c919bfeca2cdc598a356e37ae6379ca7939d8bc495f1a5873115764",
+      "sdk_calls": null,
+      "child_helpers_intercepted": false
+    },
+    {
+      "bot": 1,
+      "scope": "active-flow-regression",
+      "run": "b1-active-flow-20261027-r4",
+      "cases": 296,
+      "matched": 296,
+      "result_sha256": "abf23f8afb89b9d583a18e75357d12107579f75b2fe2aede49e742f2c3568915",
+      "sdk_calls": 34310,
+      "child_helpers_intercepted": false
+    },
+    {
+      "bot": 1,
+      "scope": "nfp-regression",
+      "run": "b1-nfp-shared-20261027-r1",
+      "cases": 107,
+      "matched": 107,
+      "result_sha256": "2c636b9f7efb9c0f410dd1106e16f04c24898b9f32c524941ee6b6ad2af8e96b",
+      "sdk_calls": 3723,
+      "child_helpers_intercepted": false
+    },
+    {
+      "bot": 3,
+      "scope": "manager-fields",
+      "run": "b3-manager-fields-20261027-r3",
+      "cases": 364,
+      "matched": 364,
+      "result_sha256": "5e4b26e789d16fca0a27f0922f093aecedb279d4465acd3b186ac55861fedb5d",
+      "sdk_calls": null,
+      "child_helpers_intercepted": false
+    },
+    {
+      "bot": 3,
+      "scope": "active-flow-regression",
+      "run": "b3-active-flow-20261027-r4",
+      "cases": 392,
+      "matched": 392,
+      "result_sha256": "db09624d8a7f2771416def70f8a281e84816197762951daa714ac430c72fd7f0",
+      "sdk_calls": 49511,
+      "child_helpers_intercepted": false
+    },
+    {
+      "bot": 3,
+      "scope": "nfp-regression",
+      "run": "b3-nfp-shared-20261027-r1",
+      "cases": 107,
+      "matched": 107,
+      "result_sha256": "2c636b9f7efb9c0f410dd1106e16f04c24898b9f32c524941ee6b6ad2af8e96b",
+      "sdk_calls": 3723,
+      "child_helpers_intercepted": false
+    }
+  ],
+  "original_ex5_changed": false,
+  "whole_eas_complete": 0,
+  "whole_evaluator_complete": false,
+  "independent_review": "No concrete issue in quote/state/config rewiring after second review. Native paired execution remains authoritative."
+}

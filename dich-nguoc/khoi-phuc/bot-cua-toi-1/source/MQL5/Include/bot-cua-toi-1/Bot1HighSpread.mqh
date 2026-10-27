@@ -25,7 +25,7 @@ void Bot1StorePendingForHighSpread(const Bot1SpreadSettings &settings,const doub
       if(OrderGetInteger(ORDER_TYPE)==4)
       {
          const double first_price=OrderGetDouble((ENUM_ORDER_PROPERTY_DOUBLE)9);
-         const double quote=execution.reference_b;
+         const double quote=execution.tick.ask;
          const double threshold=Bot1QueueSum(Bot1QueueProduct((double)settings.distance_points,unit),quote);
          if(threshold>first_price)
          {
@@ -37,7 +37,7 @@ void Bot1StorePendingForHighSpread(const Bot1SpreadSettings &settings,const doub
       if(OrderGetInteger(ORDER_TYPE)==5)
       {
          const double first_price=OrderGetDouble((ENUM_ORDER_PROPERTY_DOUBLE)9);
-         const double bid=execution.reference_a;
+         const double bid=execution.tick.bid;
          const double threshold=Bot1QueueDifference(bid,Bot1QueueProduct((double)settings.distance_points,unit));
          if(first_price>threshold)
          {
@@ -86,7 +86,7 @@ void Bot1StoreHighSpreadAction(const Bot1SpreadSettings &settings,const double &
 bool Bot1ProcessHighSpread(const Bot1SpreadSettings &settings,const double &unit,double &spread,
                            Bot1NfpExecution &execution,Bot1PendingQueue &queue)
 {
-   spread=Bot1QueueDifference(execution.reference_b,execution.reference_a);
+   spread=Bot1QueueDifference(execution.tick.ask,execution.tick.bid);
    if(settings.enabled==0) return false;
    if(!(spread>Bot1QueueProduct(settings.maximum,unit))) return false;
    Bot1StorePendingForHighSpread(settings,unit,spread,execution,queue);

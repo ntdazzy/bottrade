@@ -14,18 +14,18 @@ void Bot1ReleaseFilterActions(const bool interest,const Bot1ReleaseFilterSetting
 {
    if(settings.delete_pending!=0)
    {
-      Bot1CancelDistantPending(1,true,execution.strategy_magic,execution.symbol,execution.reference_b,
+      Bot1CancelDistantPending(1,true,execution.strategy_magic,execution.symbol,execution.tick.ask,
                                execution.gap,execution.last_ticket,execution.trade,execution.options);
-      Bot1CancelDistantPending(1,false,execution.strategy_magic,execution.symbol,execution.reference_a,
+      Bot1CancelDistantPending(1,false,execution.strategy_magic,execution.symbol,execution.tick.bid,
                                execution.gap,execution.last_ticket,execution.trade,execution.options);
    }
    if(settings.close_positions!=0)
    {
       Bot1CloseFilteredBuyPositions(execution.magic_base,execution.symbol,execution.last_ticket,execution.trade,
-                                    execution.options,execution.deviation,execution.reference_a,execution.reference_b,
+                                    execution.options,execution.deviation,execution.tick.bid,execution.tick.ask,
                                     execution.threshold_a,execution.gap);
       Bot1CloseFilteredSellPositions(execution.magic_base,execution.symbol,execution.last_ticket,execution.trade,
-                                     execution.options,execution.deviation,execution.reference_a,execution.reference_b,
+                                     execution.options,execution.deviation,execution.tick.bid,execution.tick.ask,
                                      execution.threshold_a,execution.gap);
    }
    if(state.blocked==0) Print(interest ? "Interest Rate decision!! deleting trades!!" : "CPI!! deleting trades!!");

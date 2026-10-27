@@ -1,0 +1,17 @@
+{
+  "cases": 107,
+  "matched": 107,
+  "failed": 0,
+  "first_failures": [],
+  "whole_bot_complete": false,
+  "whole_manager_complete": false,
+  "whole_evaluator_complete": false,
+  "full_ea": false,
+  "native_complete_nfp_branch_executed": true,
+  "child_helpers_intercepted": false,
+  "terminal_replies_supplied": true,
+  "original_ex5_changed": false,
+  "limits": [
+    "Complete NFP branch and calendar/DST/cancel/filtered-close/send children; earlier evaluator inputs, initial frame, calendar/broker replies, allocation and genuine MT5 conversion results supplied. Send logging0, controlled simple order/position lists. No whole evaluator/EA, actual broker execution or allocation-fault proof."
+  ]
+}

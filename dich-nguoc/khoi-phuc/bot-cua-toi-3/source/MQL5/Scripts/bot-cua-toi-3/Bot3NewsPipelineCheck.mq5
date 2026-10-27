@@ -105,7 +105,7 @@ void Snapshot()
    Word((ulong)(long)Cached.year);Word((ulong)(long)Cached.mon);Word((ulong)(long)Cached.day);Word((ulong)(long)Cached.hour);
    Word((ulong)(long)Cached.min);Word((ulong)(long)Cached.sec);Word((ulong)(long)Cached.day_of_week);Word((ulong)(long)Cached.day_of_year);
    Word((ulong)(long)Execution.strategy_magic);Word((ulong)(long)Execution.magic_base);Text(Execution.symbol);
-   Word(Bits(Execution.reference_a));Word(Bits(Execution.reference_b));Word(Bits(Execution.threshold_a));Word(Bits(Execution.gap));
+   Word(Bits(Execution.tick.bid));Word(Bits(Execution.tick.ask));Word(Bits(Execution.threshold_a));Word(Bits(Execution.gap));
    Word(Execution.last_ticket);Word(Execution.deviation);
    Word((ulong)Execution.trade.request.action);
    Word((ulong)Execution.trade.request.magic);
@@ -262,7 +262,7 @@ int OnStart()
       Settings.before_minutes=(int)P[p_before_minutes];Settings.after_minutes=(int)P[p_after_minutes];
       State.initialization_notice=(uchar)P[p_initialization_notice];State.notice=(uchar)P[p_notice];State.blocked=(uchar)P[p_blocked];
       State.last_query=P[p_last_query];State.utc_reference=P[p_utc_reference];Events.nfp=P[p_nfp];Events.interest=7777;Events.cpi=8888;
-      Execution.strategy_magic=42;Execution.magic_base=42;Execution.symbol="XAUUSD";Execution.reference_a=100.;Execution.reference_b=101.;
+      Execution.strategy_magic=42;Execution.magic_base=42;Execution.symbol="XAUUSD";Execution.tick.bid=100.;Execution.tick.ask=101.;
       Execution.threshold_a=1.;Execution.gap=1.;Execution.last_ticket=(ulong)0x1122334455667788;Execution.deviation=99;Execution.options.async_mode=(uchar)P[p_async_mode];
       string name=folder+"tape-"+IntegerToString(id)+".bin";TapeFile=FileOpen(name,FILE_WRITE|FILE_BIN);if(TapeFile==INVALID_HANDLE) return 5;
       Print("NEWS_PIPELINE_CASE:",id);ResetLastError();
