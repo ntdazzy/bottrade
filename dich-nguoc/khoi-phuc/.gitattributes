@@ -1,5 +1,14 @@
 # Keep the exact bytes referenced by the send/combined verification receipts.
 * whitespace=cr-at-eol
+/bot-cua-toi-1/tests/check-evaluation-pending-resize.py -text
+/bot-cua-toi-1/source/MQL5/Include/bot-cua-toi-1/Bot1EvaluationPendingResize.mqh -text
+/bot-cua-toi-1/source/MQL5/Scripts/bot-cua-toi-1/Bot1EvaluationPendingResize*.mq5 -text
+/bot-cua-toi-1/source/MQL5/Scripts/bot-cua-toi-1/Bot1EvaluationResizeApi.mqh -text
+/bot-cua-toi-1/phan-tich/chuong-trinh-chinh/pending-resize-20261027-r1/** -text
+/bot-cua-toi-1/phan-tich/chuong-trinh-chinh/pending-resize-20261027-r1/native-*.txt whitespace=cr-at-eol,-blank-at-eol,-blank-at-eof
+/bot-cua-toi-1/bang-chung/kiem-quan-ly-vi-the/b1-eval-resize-20261027-*/** -text
+/bot-cua-toi-1/bang-chung/bien-dich/b1-eval-resize-*-20261027-*/** -text
+/danh-gia-doc-lap/pending-resize-bot1-20261027-r1/** -text
 /bot-cua-toi-3/tests/check-evaluation-pending-resize.py -text
 /bot-cua-toi-3/source/MQL5/Include/bot-cua-toi-3/Bot3EvaluationPendingResize.mqh -text
 /bot-cua-toi-3/source/MQL5/Scripts/bot-cua-toi-3/Bot3EvaluationPendingResize*.mq5 -text

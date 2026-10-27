@@ -1,0 +1,24 @@
+{
+  "cases": 278,
+  "matched": 278,
+  "failed": 0,
+  "identical": true,
+  "first_different_byte": null,
+  "bytes": [
+    1522140,
+    1522140
+  ],
+  "whole_bot_complete": false,
+  "whole_manager_complete": false,
+  "whole_evaluator_complete": false,
+  "full_ea": false,
+  "native_pending_resize_caller_executed": true,
+  "native_delete_open_send_executed": true,
+  "child_helpers_intercepted": false,
+  "terminal_replies_supplied": true,
+  "original_ex5_changed": false,
+  "limits": [
+    "Only resize caller1a817..1b317 with its original delete34150, complete open32dd0, filling/expiration helpers and send950. Initial post-volume frame/arrays/registers are supplied; no earlier management/volume gate or complete EA.",
+    "Terminal queries, selection, send replies and successful allocation are supplied. Numeric cast text is measured in isolated MT5 and matched to native value/type. Send log_level=0; no live order or allocation-fault proof."
+  ]
+}

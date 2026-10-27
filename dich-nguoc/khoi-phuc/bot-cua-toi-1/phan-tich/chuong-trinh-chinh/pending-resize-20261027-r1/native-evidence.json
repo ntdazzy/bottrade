@@ -1,0 +1,42 @@
+{
+  "base": "0x23e5aa10000",
+  "original_ex5_sha256": "a3b0de423a06e10ebedc279307b93d7cb9188ba2bb5de77131a913c865b0e922",
+  "ranges": [
+    {
+      "begin": "0x1a817",
+      "end_exclusive": "0x1b317",
+      "sha256": "2a90c4742db4758be7a7753a2066577e29f3c5e67d86847630f8ad7498bd240a",
+      "listing": "native-1a817-1b317.txt",
+      "listing_sha256": "ccbd399dd9ade652dc1a7ed4588ae42ccd4148dd24c0c5cc3791c98f371ba95c"
+    },
+    {
+      "begin": "0x33615",
+      "end_exclusive": "0x336c8",
+      "sha256": "f90acb4819d18f6da7995ff6919bc2393c2041816036f45dc25eee8a32c946ae",
+      "listing": "native-33615-336c8.txt",
+      "listing_sha256": "118e6d03ea2455b17b0480749ffbece94f3b7d16ba57d1fceea9a7f0b0a99485"
+    },
+    {
+      "begin": "0x34150",
+      "end_exclusive": "0x3477d",
+      "sha256": "c10c5f706bb77a27a0e692307c8848c63fcfcbeb65e72d9f5ce30784fceec10b",
+      "listing": "native-34150-3477d.txt",
+      "listing_sha256": "7d88bd99e84e225a7a2097b86f55a7b47b34d2bc665167611df36b67ae076e96"
+    }
+  ],
+  "strings": [
+    {
+      "rva": "0x57b88",
+      "text": "lotsize changed more than "
+    },
+    {
+      "rva": "0x57c48",
+      "text": "Lotsize changed more than "
+    },
+    {
+      "rva": "0x57bac",
+      "length": 40,
+      "text": "%... adjusting lotsize of pending orders"
+    }
+  ]
+}

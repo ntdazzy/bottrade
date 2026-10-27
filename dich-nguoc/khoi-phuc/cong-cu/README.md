@@ -22,6 +22,13 @@ riêng của từng phần ở `bot-cua-toi-1/tests/` và `bot-cua-toi-3/tests/`
 
 Phép kiểm ghép mới:
 
+- `bot-cua-toi-1/tests/check-evaluation-pending-resize.py prepare|mql5|original|compare RUN`:
+  278ca vòng1a817..1b317 sau tính khối lượng; thân xóa34150/mở32dd0/gửi950
+  chạy nguyên. Khácbot3 ở hàm xóa trảvoid, địa chỉ dữ liệu và8ô khối lượng.
+  Dùng chung bộ đầu vào, mã gốc bot1 tự cho kết quả; mql5 cần
+  `--build BUILD` của `Bot1EvaluationPendingResizeCheck.mq5`. Đầu vào/
+  dịch vụ/cấp chuỗi được cấp, chưa có cổng trước đó hoặc EA.
+
 - `bot-cua-toi-3/tests/check-evaluation-pending-resize.py prepare|mql5|original|compare RUN`:
   278ca vòng22a59..235f7 sau tính khối lượng; nguyên thân xóa32450,
   mở3e580 và gửi950, đủ200ô bảng/35trường/4chuỗi cùng thứ tự dịch vụ.

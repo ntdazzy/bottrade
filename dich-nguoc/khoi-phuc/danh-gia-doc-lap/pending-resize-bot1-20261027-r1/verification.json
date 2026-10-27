@@ -1,0 +1,47 @@
+{
+  "cases": 278,
+  "matched": 278,
+  "result_sha256": "bffe621815e1b5b281b87ee2ce05f3700e229b4d20407b20a258b00bde7191b6",
+  "cast_results_sha256": "8c5d26148937ddc1e699dc5af1e788005494bdf589289fafcc18564efd6bf821",
+  "resize_instructions": 1219,
+  "open_instructions": 332,
+  "all_queue_cells_compared": 200,
+  "independent_code_review": "pending_resize_review: no actionable blockers in bot1 port; primary Codex verified native instructions/strings, byte comparison and decoded rows",
+  "scope": {
+    "cases": 278,
+    "matched": 278,
+    "failed": 0,
+    "identical": true,
+    "first_different_byte": null,
+    "bytes": [
+      1522140,
+      1522140
+    ],
+    "whole_bot_complete": false,
+    "whole_manager_complete": false,
+    "whole_evaluator_complete": false,
+    "full_ea": false,
+    "native_pending_resize_caller_executed": true,
+    "native_delete_open_send_executed": true,
+    "child_helpers_intercepted": false,
+    "terminal_replies_supplied": true,
+    "original_ex5_changed": false,
+    "limits": [
+      "Only resize caller1a817..1b317 with its original delete34150, complete open32dd0, filling/expiration helpers and send950. Initial post-volume frame/arrays/registers are supplied; no earlier management/volume gate or complete EA.",
+      "Terminal queries, selection, send replies and successful allocation are supplied. Numeric cast text is measured in isolated MT5 and matched to native value/type. Send log_level=0; no live order or allocation-fault proof."
+    ]
+  },
+  "compiles": [
+    {
+      "build": "b1-eval-resize-api-20261027-r1",
+      "receipt_sha256": "4512b577f0383f51b853f3155d1d76fba1a91226ca1ad0a537d6c5fa65849c91",
+      "binary_sha256": "660836fb4072c2f4832ac2d75d15f9aa73ec126a7ed337c181982e101338e91d"
+    },
+    {
+      "build": "b1-eval-resize-check-20261027-r1",
+      "receipt_sha256": "8b8b38dab1329b7e0948d35de267a4cbfec9de9f7ba87769eb3ad1dd875c7c38",
+      "binary_sha256": "aff153700934d3d7977f46959c5859ad496bc20d47f27ed3d460a4b0cc874ec4"
+    }
+  ],
+  "whole_eas_complete": 0
+}

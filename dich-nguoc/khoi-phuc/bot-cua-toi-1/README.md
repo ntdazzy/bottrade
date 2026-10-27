@@ -1,5 +1,11 @@
 # bot-cua-toi-1
 
+Đã viết vòng tạo lại lệnh chờ sau thay đổi khối lượng: **278/278 ca
+khớp**, đủ200ô bảng,35trường/4chuỗi và dịch vụ/thông báo/chờ. Chạy
+nguyên các thân xóa/mở/gửi của bot1 riêng; đầu vào sau tính khối lượng
+và dịch vụ được cấp. Biên dịch0lỗi/0cảnh báo; còn cổng trước vòng và EA.
+[Phạm vi và bằng chứng](phan-tich/chuong-trinh-chinh/pending-resize-20261027-r1/README.md).
+
 Đã chốt cờ nhánh vé đầu0 ở cạnh quản lý khi đổi nến:
 **3.628/3.628 ca khớp**, biên dịch0lỗi/0cảnh báo. Chạy liên tục từ
 đầu đánh giá tới đúng nhánh trong thân quản lý thật, giữ nguyên cờ
