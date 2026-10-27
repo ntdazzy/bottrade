@@ -1,3 +1,11 @@
+- `kiem-chon-tin-day-du-bot-1-3.py prepare|original|mql5|compare BOT RUN`:
+  selector đầy đủ qua helperchuỗi gốc, so nhãn/thời điểm/trạng thái và
+  thứ tự giờ máy chủ;961ca mỗi bot, gồm946ca phần số học sửa tràn32bit.
+  `mql5` cần `--build BUILD`; chưa phải toàn nhánh lịch/hủy/đóng hoặcEA.
+- `danh-gia-doc-lap/news-selector-20261027-r1/probe-nfp-manual-string.py BOT OUTPUT_JSON`:
+  đọc nguyên đoạn ghép chuỗi NFPdựphòng, dừng trướcStringToTime; khung/
+  lịch đã lưu và trả lời dịch vụ được cấp, không gọi đó là kiểm toànnhánh.
+
 - `kiem-huy-lenh-theo-khoang-cach.py prepare|original|mql5|compare BOT RUN`:
   quét mua/bán qua nguyên thân hủy/gửi, giữ giá tham chiếu trước đọc giá
   lệnh và khoảng cách sau đọc. `mql5` cần `--build BUILD`;698ca mỗi bot,

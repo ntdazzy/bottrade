@@ -1,0 +1,22 @@
+{
+  "checks": [
+    {
+      "bot": 1,
+      "cases": 961,
+      "matched": 961,
+      "numeric_regression_cases": 946,
+      "instructions": 108,
+      "result_sha256": "f30db6b2162e97bd5b3c891fe8a2e0a5e9d74ef3b5f16ff5787d3f41d8168905"
+    },
+    {
+      "bot": 3,
+      "cases": 961,
+      "matched": 961,
+      "numeric_regression_cases": 946,
+      "instructions": 108,
+      "result_sha256": "f30db6b2162e97bd5b3c891fe8a2e0a5e9d74ef3b5f16ff5787d3f41d8168905"
+    }
+  ],
+  "independent_review": "news_selector_review: no material blockers; int32 multiplication, labels, live state and server call ordering match raw",
+  "whole_eas_complete": 0
+}

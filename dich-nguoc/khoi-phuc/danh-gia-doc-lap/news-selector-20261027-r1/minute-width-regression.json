@@ -1,0 +1,72 @@
+[
+  {
+    "bot": 1,
+    "id": 98,
+    "input": {
+      "id": 98,
+      "times": [
+        900,
+        1000,
+        1100
+      ],
+      "flags": [
+        1,
+        0,
+        0
+      ],
+      "minutes": [
+        2147483647,
+        2147483647,
+        2147483647
+      ],
+      "clocks": [
+        1000,
+        1000,
+        1000
+      ],
+      "mutation": 0,
+      "tag": "int32-minutes-and-priority"
+    },
+    "native": 0,
+    "mql5_numeric": 0,
+    "old_source_64bit_formula_end": 128849019720,
+    "old_source_64bit_formula_selected": 900,
+    "old_source_sha256": "aa69ffb6715fddb153a04bf74bd1d9a0920714a349cec71b3d691b146ae428b9",
+    "old_formula_is_source_analysis_not_old_binary_measurement": true
+  },
+  {
+    "bot": 3,
+    "id": 98,
+    "input": {
+      "id": 98,
+      "times": [
+        900,
+        1000,
+        1100
+      ],
+      "flags": [
+        1,
+        0,
+        0
+      ],
+      "minutes": [
+        2147483647,
+        2147483647,
+        2147483647
+      ],
+      "clocks": [
+        1000,
+        1000,
+        1000
+      ],
+      "mutation": 0,
+      "tag": "int32-minutes-and-priority"
+    },
+    "native": 0,
+    "mql5_numeric": 0,
+    "old_source_64bit_formula_end": 128849019720,
+    "old_source_64bit_formula_selected": 900,
+    "old_source_sha256": "02a7ce5a14788fb50d215b055c83d8ca1ec44f615ae9096acf7b08ee46df4914",
+    "old_formula_is_source_analysis_not_old_binary_measurement": true
+  }
+]

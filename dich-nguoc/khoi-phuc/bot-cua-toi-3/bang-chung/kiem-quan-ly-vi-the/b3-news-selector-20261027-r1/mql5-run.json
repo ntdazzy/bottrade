@@ -1,0 +1,28 @@
+{
+  "original_ex5_sha256": "ee063d3d87490afe24e2f4ce85f6b05659320e297b102efd70207f71ca2feb83",
+  "sources_sha256": {
+    "Include/bot-cua-toi-3/Bot3NewsSelector.mqh": "11f3464451445238f47f01155095b97b580934f636276d174e962edeffb15f0c",
+    "Scripts/bot-cua-toi-3/Bot3NewsSelectorCheck.mq5": "4722a36e5ca85a9ab62e90ddff935459fdfe6966354d022cd75a0915dae73b71",
+    "Include/bot-cua-toi-3/Bot3NewsBlock.mqh": "cbded973dcafad86fb98231399a83fc5fa2b215330dd725caeba2bc98cbff40c"
+  },
+  "helpers_sha256": {
+    "cong-cu/kiem-chon-tin-day-du-bot-1-3.py": "0a7ebaf1893d8a11ae0e3f30b4018af70078c1f78451540fcf688032930492a4",
+    "cong-cu/kiem-gia-vao-bot-1-3.py": "22394e48932feb7242b967aa58e327d2990402f12bfe52621916f64914c9dac2",
+    "cong-cu/kiem-muc-gia-bot-1-3.py": "a6c447ca80029fb63ced0c9d1673bb14222a7736b04df5c410f280f8471d6a35",
+    "cong-cu/kiem-ban-git-quan-ly.py": "7186478774b34e0d72b4594fbcc85972d9b4c07ed02160987d46d34f39dcb160",
+    "cong-cu/kiem-khoi-luong-hop-le-bot-1-3.py": "8251fb4423d6f5f2e1b79a1c53dbb25fb5a6c568bb61cddef23396dc982243f0"
+  },
+  "cases": 961,
+  "result_sha256": "f30db6b2162e97bd5b3c891fe8a2e0a5e9d74ef3b5f16ff5787d3f41d8168905",
+  "numeric_regression_sha256": "ba6382cc344aac2b51b5ea66855454e1c5e15dcb616180134dd39b01f2afec50",
+  "build": "b3-news-selector-check-20261027-r1",
+  "build_receipt_sha256": "b72eb9e57deb0a852e7f33c0b4700d0aceeda87f3444156307fa05a832347ea6",
+  "whole_bot_complete": false,
+  "whole_manager_complete": false,
+  "whole_evaluator_complete": false,
+  "full_ea": false,
+  "native_full_news_selector_executed": true,
+  "child_helpers_intercepted": false,
+  "server_time_replies_supplied": true,
+  "original_ex5_changed": false
+}

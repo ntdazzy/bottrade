@@ -1,0 +1,62 @@
+{
+  "bot": 1,
+  "start_rva": "0x1b8f4",
+  "evaluator_sha256": "45d53270186b7019a8721e0cf3734a61aac8e8660c70f7e602849b1c298d7cbd",
+  "tool_sha256": "df32ab3aa6225b8875d92bdcf64f811b3f6e0c36d45542930881fd4a961d8701",
+  "events": [
+    {
+      "api": "TimeCurrent",
+      "return_rva": "0x2ffcf",
+      "out_struct": true
+    },
+    {
+      "api": "IntegerToString",
+      "value": 2027,
+      "width": 0,
+      "fill": 32,
+      "return_rva": "0x1b963",
+      "result": "2027"
+    },
+    {
+      "api": "TimeCurrent",
+      "return_rva": "0x2ffff",
+      "out_struct": true
+    },
+    {
+      "api": "IntegerToString",
+      "value": 1,
+      "width": 0,
+      "fill": 32,
+      "return_rva": "0x1b9a7",
+      "result": "1"
+    },
+    {
+      "api": "TimeCurrent",
+      "return_rva": "0x1ba1c",
+      "out_struct": true
+    },
+    {
+      "api": "IntegerToString",
+      "value": 1,
+      "width": 0,
+      "fill": 32,
+      "return_rva": "0x1ba2f",
+      "result": "1"
+    },
+    {
+      "api": "IntegerToString",
+      "value": 1230,
+      "width": 0,
+      "fill": 32,
+      "return_rva": "0x1badc",
+      "result": "1230"
+    },
+    {
+      "api": "StringToTime",
+      "text": "202711 1230",
+      "return_rva": "0x1bb75"
+    }
+  ],
+  "scope": "Manual fallback string-building slice only. Initial frame/cached calendar and TimeCurrent/IntegerToString SDK replies supplied; stop before StringToTime. Earlier DST/year branch and actions not executed.",
+  "whole_bot_complete": false
+}

@@ -1,0 +1,18 @@
+{
+  "cases": 961,
+  "matched": 961,
+  "failed": 0,
+  "first_failures": [],
+  "numeric_regression_cases": 946,
+  "whole_bot_complete": false,
+  "whole_manager_complete": false,
+  "whole_evaluator_complete": false,
+  "full_ea": false,
+  "native_full_news_selector_executed": true,
+  "child_helpers_intercepted": false,
+  "server_time_replies_supplied": true,
+  "original_ex5_changed": false,
+  "limits": [
+    "Full selector including labels and ordered server reads; data from earlier calendar/close branches and server replies supplied. No complete evaluator or EA."
+  ]
+}

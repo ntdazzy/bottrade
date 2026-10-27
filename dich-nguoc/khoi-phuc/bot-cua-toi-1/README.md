@@ -1,3 +1,10 @@
+Đã dựng `Bot1NewsSelector.mqh` chọn thời điểm và nhãn tin theo đúng
+thứ tự đọc giờ máy chủ: **961/961ca khớp**, gồm946ca kiểm lại hàm số
+cũ sau sửa phép nhân phút32bit. Đã so nhãn rỗng/NFP/Interest rates/CPI,
+trạng thái đổi giữa lần đọc và tràn số. Nguồn trực tiếp/bộ kiểm0/0.
+Nhánh NFP dự phòng đã có bằng chứng thêm về chuỗi ngày; chưa ghép hết.
+[Phạm vi](../danh-gia-doc-lap/news-selector-20261027-r1/SPEC.md).
+
 Đã dựng `Bot1PendingDistanceCancel.mqh` cho hai chiều hủy lệnh chờ
 khi đủ khoảng cách: **698/698 ca khớp** (349ca mỗi chiều), chạy nguyên
 thân hủy/gửi. Có ca thay giá/khoảng cách/vé giữa lần đọc; giữ giá tham
