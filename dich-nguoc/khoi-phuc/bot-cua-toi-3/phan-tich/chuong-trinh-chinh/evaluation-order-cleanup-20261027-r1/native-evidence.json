@@ -1,0 +1,22 @@
+{
+  "base": "0x17156250000",
+  "original_ex5_sha256": "ee063d3d87490afe24e2f4ce85f6b05659320e297b102efd70207f71ca2feb83",
+  "table_rva": "0x72e10",
+  "table_absolute": "0x171562c2e10",
+  "ranges": [
+    {
+      "begin": "0x212ff",
+      "end_exclusive": "0x214ee",
+      "sha256": "7af07c7b397a7918a63d5b98f04c502d1defa5236cd1bc67afce5cd3d41aa125",
+      "listing": "native-212ff-214ee.txt",
+      "listing_sha256": "bf6e918310c06e23f5d18e71c676597f965285e3725cc9d8938ba9e82a29cb93"
+    },
+    {
+      "begin": "0x32450",
+      "end_exclusive": "0x32a84",
+      "sha256": "9c734e0a55e2cbbe1b567281e7d9a93329834ecd8b29d5054e63ab2b7122eede",
+      "listing": "native-32450-32a84.txt",
+      "listing_sha256": "752d963186f51bfb67c0f244125a3629cc57ba6402074346f5b4e16d1b48562e"
+    }
+  ]
+}

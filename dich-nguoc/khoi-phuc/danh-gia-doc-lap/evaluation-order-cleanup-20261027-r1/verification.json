@@ -1,0 +1,47 @@
+{
+  "cases": 339,
+  "matched": 339,
+  "delete_instructions": 260,
+  "joined_instructions": 845,
+  "result_sha256": "6fd90f4126cfacb45e419af5840f319f37a68af60051b05e2e1f04860f1f2f80",
+  "all_queue_cells_compared": 200,
+  "independent_code_review": "stops_final_review: no actionable blockers in pending cleanup/SDK and state comparison; primary Codex independently verified original instructions, byte comparison and decoded rows",
+  "scope": {
+    "cases": 339,
+    "matched": 339,
+    "failed": 0,
+    "identical": true,
+    "first_different_byte": null,
+    "bytes": [
+      2103948,
+      2103948
+    ],
+    "whole_bot_complete": false,
+    "whole_manager_complete": false,
+    "whole_evaluator_complete": false,
+    "full_ea": false,
+    "native_modify_and_send_executed": true,
+    "child_helpers_intercepted": false,
+    "terminal_replies_supplied": true,
+    "original_ex5_changed": false,
+    "native_pending_cleanup_executed": true,
+    "native_delete_child_executed": true,
+    "limits": [
+      "Native evaluator20ef0 -> session/tick prelude -> pending cleanup -> initial position levels to227c0. Native delete32450, modify32a90 and send950 execute; no child reply is substituted.",
+      "Terminal replies, initial trade/queue state and successful allocation are supplied. Send log_level=0; no later manager, complete EA, actual broker order or allocation-fault proof."
+    ]
+  },
+  "compiles": [
+    {
+      "build": "b3-eval-cleanup-api-20261027-r1",
+      "receipt_sha256": "a147fd8c9f2a43772033badbdadc87c9bce1b40dcaa6f9b523bb6ac7673576ae",
+      "binary_sha256": "6261d6ddd5dac0821954ad77757399b5cdce81b2f9c93ced1035214244f5ba65"
+    },
+    {
+      "build": "b3-eval-cleanup-check-20261027-r1",
+      "receipt_sha256": "0f1e367c9dd36503790282f90c13d2f696936a6df6c219e800870ba1b9d40456",
+      "binary_sha256": "2314db45d52f2890a4152e9f3925fa3291b9c8c2f4a2e6a6334e9d9433d9417e"
+    }
+  ],
+  "whole_eas_complete": 0
+}

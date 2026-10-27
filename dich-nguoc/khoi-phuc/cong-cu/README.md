@@ -22,6 +22,15 @@ riêng của từng phần ở `bot-cua-toi-1/tests/` và `bot-cua-toi-3/tests/`
 
 Phép kiểm ghép mới:
 
+- `bot-cua-toi-3/tests/check-evaluation-pending-cleanup.py prepare|original|mql5|compare RUN`:
+  339 ca nguyên evaluator từ20ef0 qua phần đầu, dọn lệnh chờ và bổ sung
+  dừng/chốt tới227c0. Các thân xóa32450/sửa32a90/gửi950 đều chạy thật;
+  so đủ200ô bảng, trạng thái35trường/4chuỗi và toàn bộ đối số dịch vụ.
+  Bước mql5 cần `--build BUILD` của `Bot3EvaluationPendingCleanupCheck.mq5`
+  trong MT5 riêng. Câu trả lời SDK/cấp chuỗi được cấp, thông báo gửi log0;
+  chưa là quản lý tiếp theo hoặc EA. `inspect-results.py RUN` cùng thư mục
+  phân tích `evaluation-order-cleanup-20261027-r1` đọc lại đủ từng ca để chỉ chỗ lệch.
+
 - `kiem-bo-sung-muc-dung-bot-1-3.py prepare|original|mql5|compare BOT RUN`:
   1.172 ca mỗi bot chạy liên tục từ đầu đánh giá qua quét bổ sung dừng/chốt,
   chạy nguyên thân sửa26d20/32a90 và gửi950; so theo byte đủ trạng thái35trường,

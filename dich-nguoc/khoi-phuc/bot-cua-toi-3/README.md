@@ -1,5 +1,11 @@
 # bot-cua-toi-3
 
+Đã nối thêm bước dọn lệnh chờ giữa đầu đánh giá và bổ sung dừng/chốt:
+**339/339 ca khớp**, gồm đầy đủ200ô bảng, đối số/chuỗi dịch vụ và
+trạng thái yêu cầu. Các thân xóa/sửa/gửi chạy thật, câu trả lời MT5
+được cấp; hai bản dựng đều0lỗi/0cảnh báo. Còn quản lý phía sau và EA đầy đủ.
+[Phạm vi và bằng chứng](phan-tich/chuong-trinh-chinh/evaluation-order-cleanup-20261027-r1/README.md).
+
 Đã nối đầu đánh giá qua vòng bổ sung dừng lỗ/chốt lời, thân sửa vị thế và
 thân gửi: **1.172/1.172 ca khớp**, bốn thời điểm chụp đủ trường yêu cầu/
 kết quả và chuỗi; biên dịch **0 lỗi/0 cảnh báo**. Cờ người gọi0 bỏ bước
