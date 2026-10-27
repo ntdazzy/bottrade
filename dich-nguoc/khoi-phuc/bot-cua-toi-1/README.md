@@ -1,3 +1,13 @@
+Ngày 28/10, cập nhật mới: đã dựng toàn hàm tạo bảng trong `Bot1PanelCreation.mqh`,
+so bản gốc **170/170 ca khớp**. Bảng dựng thật trên MT5 có
+**45 đối tượng, 8 hàng chiến lược**; đã xem ảnh. Ghép 87 tệp
+biên dịch 0 lỗi, 0 cảnh báo. Chưa so ảnh bảng với bản gốc; bộ cài đặt
+thử có chữ tiêu đề ô bị cắt. Còn khởi tạo đầy đủ, điều phối ngoài,
+ảnh menu và chạy cặp hai EA hoàn chỉnh; chưa đạt 100%.
+[Bằng chứng tạo bảng](../danh-gia-doc-lap/panel-create-20261028-r1/README.md).
+
+Các đoạn dưới là các mốc cũ, giữ lại để tra bằng chứng.
+
 Ngày 28/10: đã sửa và so hàm dọn khi thoát **62/62 ca**, hàm tạo ô chữ
 **172/172 ca**; đủ 72 đầu vào và nạp .set trong MT5 khớp
 **288/288 giá trị**. Ghép toàn bộ 86 header biên dịch0lỗi/0cảnh báo.

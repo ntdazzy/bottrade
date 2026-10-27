@@ -55,6 +55,7 @@
 #include "../../Include/bot-cua-toi-1/Bot1OrderCancel.mqh"
 #include "../../Include/bot-cua-toi-1/Bot1OrderScan.mqh"
 #include "../../Include/bot-cua-toi-1/Bot1PanelCell.mqh"
+#include "../../Include/bot-cua-toi-1/Bot1PanelCreation.mqh"
 #include "../../Include/bot-cua-toi-1/Bot1PendingDistanceCancel.mqh"
 #include "../../Include/bot-cua-toi-1/Bot1PendingLimitStage.mqh"
 #include "../../Include/bot-cua-toi-1/Bot1PendingQueue.mqh"

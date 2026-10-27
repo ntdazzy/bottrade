@@ -1,0 +1,26 @@
+{
+  "bot": 3,
+  "objects": 50,
+  "cells": 40,
+  "sources_sha256": {
+    "Include/bot-cua-toi-3/Bot3NewsSelector.mqh": "fa1254b69418f29d8de0a3823580714ba67a2fad646ce75d188ba2c9fab0f755",
+    "Include/bot-cua-toi-3/Bot3NewsBlock.mqh": "cbded973dcafad86fb98231399a83fc5fa2b215330dd725caeba2bc98cbff40c",
+    "Scripts/bot-cua-toi-3/Bot3PanelCreationVisualCheck.mq5": "9a0f3ba31ddbcfed5c9a06aff908e003cacfc426742c066548bf17157b4bdedd",
+    "Include/bot-cua-toi-3/Bot3OpenStatusPanel.mqh": "9bf2617bb6c3c237b61aaec81e714286e455d1082182e4301e6eb766376a16a1",
+    "Include/bot-cua-toi-3/Bot3PriceLevels.mqh": "6ec313c6ec1e108939b23d62c594ae797d7408f37763b6c15cfa8a7c62ddf486",
+    "Include/bot-cua-toi-3/Bot3PanelCreation.mqh": "b4eabaff0a5d9d1ee184b63a1052da6449047c12996299d70ea888444e614445",
+    "Include/bot-cua-toi-3/Bot3PanelCell.mqh": "9bc1a7f9447246e257f62a00d7f6badff4b6b0ee8ba0657d8d5d1da612892ac6"
+  },
+  "build": "b3-panel-create-visual-20261028-r2",
+  "build_receipt_sha256": "4cf3779cb6be81908b64e3b3dcd2d04c23b1e12eeb011007638b1220ff73ecef",
+  "helpers_sha256": {
+    "cong-cu/kiem-hinh-bang-bot-1-3.py": "e05edf506688e70269e4303abb165d6ae302af9be0db15beacd243fe64621d8c"
+  },
+  "result_sha256": "139b08bf1c48e093fe250f5d475253886340363dec6757671170ce001f2b12d2",
+  "screenshot_sha256": "4ca6685b5a72a77f0e85644ef0a835b397777a2ea1791f6437233e607649d3ff",
+  "sdk_properties_sha256": "d6a6d15b3c75503088ba397e4e30769be1a9318f77cfe318e6d87fd9e8b24c17",
+  "full_ea": false,
+  "actual_mt5_objects_verified": true,
+  "original_rendering_compared": false,
+  "visual_inspection_pending": true
+}

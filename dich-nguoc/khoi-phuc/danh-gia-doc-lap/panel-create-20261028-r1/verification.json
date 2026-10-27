@@ -1,0 +1,114 @@
+{
+  "checks": [
+    {
+      "bot": 1,
+      "run": "b1-panel-create-20261028-r4",
+      "cases": 170,
+      "matched": 170,
+      "failed": 0,
+      "sdk_calls": 213322,
+      "result_sha256": "f74fac34046225c826a98c1473520a6bd270ec02d62733c6d189f380ce691239",
+      "source_sha256": {
+        "Include/bot-cua-toi-1/Bot1NewsSelector.mqh": "84e6c99d0e7b87a32933496a85b84ef0dd035fbf4aa40ce08b8a9b37658cf679",
+        "Include/bot-cua-toi-1/Bot1PanelCreation.mqh": "3df2b68f0d9b59a6d0d568dc36c30fec75056a3a717f60a55eaf64afdb70a058",
+        "Include/bot-cua-toi-1/Bot1PanelCell.mqh": "419efdc3eefb3e23e69f190257752405c1185d8f14c9fc947fae50c9f99e4690",
+        "Include/bot-cua-toi-1/Bot1PriceLevels.mqh": "827d537baa2798c0cb6dc317bf500011e20af788529a9ebc095f9a4492e45d22",
+        "Include/bot-cua-toi-1/Bot1OpenStatusPanel.mqh": "79de39d12962e1735191205ed4e9d90046ae827c9f4a2a7f672fbba582c82df5",
+        "Include/bot-cua-toi-1/Bot1NewsBlock.mqh": "776c5957d4ea88a9f18ee2c59ad29cc8a6563f0f4f59877d6791ddec6d1bef1f",
+        "Scripts/bot-cua-toi-1/Bot1PanelCreationCheck.mq5": "0ba5f30f578326cca7991ed1bb93f7650c8436db64ac623ebe84ebb0eaf95d3f"
+      },
+      "builds": [
+        {
+          "run": "b1-panel-create-check-20261028-r3",
+          "receipt_sha256": "570390632c93f16b034e5c46058488ca67934da0fbbd72f3d2a3ee725d7fba79",
+          "target": "Scripts/bot-cua-toi-1/Bot1PanelCreationCheck.mq5",
+          "errors": 0,
+          "warnings": 0
+        },
+        {
+          "run": "b1-panel-create-api-20261028-r2",
+          "receipt_sha256": "983dd294dbe8218f78a16c1acc191c82bf27af571a4c7eb32ed2ce2e8514c43c",
+          "target": "Scripts/bot-cua-toi-1/Bot1PanelCreationAPICompile.mq5",
+          "errors": 0,
+          "warnings": 0
+        },
+        {
+          "run": "b1-panel-create-visual-20261028-r2",
+          "receipt_sha256": "ad6814f3c2be0bce446c05b1fe3d61ac0e406244f5e1524f0ebd6f2312aefa79",
+          "target": "Scripts/bot-cua-toi-1/Bot1PanelCreationVisualCheck.mq5",
+          "errors": 0,
+          "warnings": 0
+        },
+        {
+          "run": "b1-all-headers-api-20261028-r3",
+          "receipt_sha256": "cffecfe24ec6f780ed40be18cc750ad96e705905e51ead16d643d64a5d82c0f6",
+          "target": "Scripts/bot-cua-toi-1/Bot1AllHeadersAPICompile.mq5",
+          "errors": 0,
+          "warnings": 0
+        }
+      ],
+      "actual_objects": 45,
+      "actual_properties_matching_verified_original_calls": 459
+    },
+    {
+      "bot": 3,
+      "run": "b3-panel-create-20261028-r4",
+      "cases": 179,
+      "matched": 179,
+      "failed": 0,
+      "sdk_calls": 248042,
+      "result_sha256": "7ddd4a92605ff01de7b68b2eb68e023824470e7d4e3f31cb2707007527d8f6be",
+      "source_sha256": {
+        "Include/bot-cua-toi-3/Bot3PanelCell.mqh": "9bc1a7f9447246e257f62a00d7f6badff4b6b0ee8ba0657d8d5d1da612892ac6",
+        "Include/bot-cua-toi-3/Bot3NewsSelector.mqh": "fa1254b69418f29d8de0a3823580714ba67a2fad646ce75d188ba2c9fab0f755",
+        "Include/bot-cua-toi-3/Bot3OpenStatusPanel.mqh": "9bf2617bb6c3c237b61aaec81e714286e455d1082182e4301e6eb766376a16a1",
+        "Include/bot-cua-toi-3/Bot3PanelCreation.mqh": "b4eabaff0a5d9d1ee184b63a1052da6449047c12996299d70ea888444e614445",
+        "Scripts/bot-cua-toi-3/Bot3PanelCreationCheck.mq5": "b16d4d2aa34185ec47a53a3d5c1422fd1c43b156e901be9b45d05dbe8f26b442",
+        "Include/bot-cua-toi-3/Bot3NewsBlock.mqh": "cbded973dcafad86fb98231399a83fc5fa2b215330dd725caeba2bc98cbff40c",
+        "Include/bot-cua-toi-3/Bot3PriceLevels.mqh": "6ec313c6ec1e108939b23d62c594ae797d7408f37763b6c15cfa8a7c62ddf486"
+      },
+      "builds": [
+        {
+          "run": "b3-panel-create-check-20261028-r3",
+          "receipt_sha256": "230cbe9f75333fe74be0e2cd6360dbd824385719acd36d6184f8de150a3d6e01",
+          "target": "Scripts/bot-cua-toi-3/Bot3PanelCreationCheck.mq5",
+          "errors": 0,
+          "warnings": 0
+        },
+        {
+          "run": "b3-panel-create-api-20261028-r2",
+          "receipt_sha256": "04c7377d371c9d79bdd8df7cbe1292a51de781226e63d9935cd8d8776b637880",
+          "target": "Scripts/bot-cua-toi-3/Bot3PanelCreationAPICompile.mq5",
+          "errors": 0,
+          "warnings": 0
+        },
+        {
+          "run": "b3-panel-create-visual-20261028-r2",
+          "receipt_sha256": "4cf3779cb6be81908b64e3b3dcd2d04c23b1e12eeb011007638b1220ff73ecef",
+          "target": "Scripts/bot-cua-toi-3/Bot3PanelCreationVisualCheck.mq5",
+          "errors": 0,
+          "warnings": 0
+        },
+        {
+          "run": "b3-all-headers-api-20261028-r3",
+          "receipt_sha256": "49393e145898727671dd55bb17b486feb425f6b5fca262b208d41719dd3fc000",
+          "target": "Scripts/bot-cua-toi-3/Bot3AllHeadersAPICompile.mq5",
+          "errors": 0,
+          "warnings": 0
+        }
+      ],
+      "actual_objects": 50,
+      "actual_properties_matching_verified_original_calls": 510
+    }
+  ],
+  "full_eas_complete": 0,
+  "rendered_original_compared": false,
+  "negative_controls_rejected": 2,
+  "unchanged_original_ex5_count": 2,
+  "remaining": [
+    "Full initialization and outer dispatch with shared state",
+    "MT5 event handlers and complete main EA",
+    "Original rendering/menu comparison, resources and restart behavior",
+    "Paired original/source EA runs under identical data and conditions"
+  ]
+}

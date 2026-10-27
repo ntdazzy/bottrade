@@ -1,0 +1,19 @@
+{
+  "cases": 179,
+  "matched": 179,
+  "failed": 0,
+  "full_ea": false,
+  "whole_bot_complete": false,
+  "whole_manager_complete": false,
+  "full_panel_constructor_executed": true,
+  "native_panel_cell_executed": true,
+  "native_news_selector_executed": true,
+  "child_helpers_intercepted": false,
+  "terminal_replies_supplied": true,
+  "text_formatting_measured_in_mt5": true,
+  "rendered_chart_verified": false,
+  "original_ex5_changed": false,
+  "limits": [
+    "Whole panel constructor with actual MQL5 casts, all object calls and state compared. Successful string allocations and supplied SDK replies. No rendered chart or full EA pair."
+  ]
+}

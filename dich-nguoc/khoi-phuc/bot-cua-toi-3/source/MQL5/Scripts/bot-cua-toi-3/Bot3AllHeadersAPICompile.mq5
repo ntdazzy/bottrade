@@ -62,6 +62,7 @@
 #include "../../Include/bot-cua-toi-3/Bot3OrderCancel.mqh"
 #include "../../Include/bot-cua-toi-3/Bot3OrderScan.mqh"
 #include "../../Include/bot-cua-toi-3/Bot3PanelCell.mqh"
+#include "../../Include/bot-cua-toi-3/Bot3PanelCreation.mqh"
 #include "../../Include/bot-cua-toi-3/Bot3PendingDistanceCancel.mqh"
 #include "../../Include/bot-cua-toi-3/Bot3PendingLimitStage.mqh"
 #include "../../Include/bot-cua-toi-3/Bot3PendingQueue.mqh"

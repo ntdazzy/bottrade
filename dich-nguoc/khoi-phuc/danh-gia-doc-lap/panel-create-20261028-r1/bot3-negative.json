@@ -1,0 +1,13 @@
+{
+  "bot": 3,
+  "case": 36,
+  "rejected": true,
+  "reason": "SDK_ARGUMENTS (36, 61, 3, 'lineopl0', [0, 0, 0, 0, 0], [0, 0, 9109504, 0, 0])",
+  "rejected_source_sha256": "662aa6dc8d13ecf16e0eb751c4029a5878c88d9813b03c4f3e05c2849dc42b27",
+  "current_source_sha256": "b4eabaff0a5d9d1ee184b63a1052da6449047c12996299d70ea888444e614445",
+  "original_body_sha256": "889bf0b36cb6250816cadfa17e0e2e21beedbccf54ff84bd7c1b1ad9de042920",
+  "rejected_build_sha256": "8e19cb39192ae915bf047fff2d8acef388ce0db93600b0ac9f0d4e946bdbd4af",
+  "recorded_result_sha256": "3aaf541a1df6d781854f54eefaebdf13c11d569462d4710fc6128f831a824fcc",
+  "source_patch": "Replace bit-0 comparison with nonzero comparison only",
+  "full_ea": false
+}

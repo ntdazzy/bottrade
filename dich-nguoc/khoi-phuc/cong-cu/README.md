@@ -1,3 +1,7 @@
+- `kiem-tao-bang-bot-1-3.py generate BOT | prepare|mql5|original|compare BOT RUN`: toàn hàm tạo bảng, 170/179 ca khớp; `mql5` cần `--build BUILD`, chạy trước `original`. Nguyên các thân tạo ô/chọn tin; chưa là toàn EA.
+- `kiem-hinh-bang-bot-1-3.py generate BOT | run BOT RUN --build BUILD`: dựng bảng thật trên MT5 riêng, xuất đối tượng và ảnh; đã có45/50đối tượng,8/9hàng. Chưa so ảnh gốc.
+- `phan-tich-tao-bang-bot-1-3.py BOT OUTPUT [--mode N] [--frequency N]`: đọc luồng tạo bảng gốc với phản hồi giả để phân tích; không dùng riêng kết quả này để xác nhận mã đã khớp.
+
 - `kiem-vong-doi-day-du-bot-1-3.py generate BOT | prepare|mql5|original|compare BOT RUN`: kiểm mới62ca mỗi bot, cờ byte đúng1/đổi giữa dịch vụ/số chỉ báo32bit/mã lỗi. `mql5` cần `--build BUILD`. Công cụ cũ bốn ca được giữ cho bằng chứng lịch sử.
 - `tao-khai-bao-cai-dat-bot-1-3.py [--check]`: sinh đủ72/80đầu vào và7menu từ dữ liệu đã đọc, gồm dòng phân cách.
 - `kiem-gia-tri-cai-dat-bot-1-3.py run BOT RUN --build BUILD | compare BOT RUN`: nạp4/10bộ .set trong MT5riêng, so288/800giá trị; chưa so toàn hành viEA hoặc ảnh menu.
