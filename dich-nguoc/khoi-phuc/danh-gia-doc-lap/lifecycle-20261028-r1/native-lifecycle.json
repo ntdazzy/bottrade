@@ -34,7 +34,12 @@
         "info_ea"
       ],
       "conditional_count": 300,
-      "indicator_release": true
+      "indicator_release": true,
+      "objects_delete_all": {
+        "chart": 0,
+        "sub_window": -1,
+        "object_type": -1
+      }
     },
     {
       "bot": 3,
@@ -67,7 +72,12 @@
         "info_ea"
       ],
       "conditional_count": 300,
-      "indicator_release": true
+      "indicator_release": true,
+      "objects_delete_all": {
+        "chart": 0,
+        "sub_window": -1,
+        "object_type": -1
+      }
     }
   ],
   "status": "analysis_only",

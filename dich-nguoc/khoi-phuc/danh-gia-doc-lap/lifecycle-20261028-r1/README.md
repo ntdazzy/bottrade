@@ -26,6 +26,7 @@ Thứ tự chung đã đọc được:
    có chỉ số, `horizontalrect` và `info_ea`. Điều kiện dừng là cờ vẫn bằng
    1 và chỉ số trước đó nhỏ hơn 299.
 6. Nếu tay cầm chỉ báo khác `-1`, gọi `IndicatorRelease` rồi ghi lại `-1`.
+7. Cuối hàm gọi `ObjectsDeleteAll(0,-1,-1)`; đây là lời gọi xóa toàn biểu đồ, không được thay bằng một vòng `ObjectDelete`.
 
 Các lời gọi `IntegerToString` đều ghi vào vùng chuỗi dùng chung trước khi
 ghép tên; `ObjectDelete` nhận biểu đồ 0 và chuỗi đã ghép. Không được đổi
