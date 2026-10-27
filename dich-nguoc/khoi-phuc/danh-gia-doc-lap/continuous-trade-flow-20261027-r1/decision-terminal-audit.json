@@ -1,0 +1,128 @@
+[
+  {
+    "bot": 1,
+    "case": 168,
+    "tag": "joined-same-bar",
+    "end_rva": "0x1e94f",
+    "decision": 1,
+    "blocked": false,
+    "saw_new_bar": false
+  },
+  {
+    "bot": 1,
+    "case": 169,
+    "tag": "joined-entry-blocked",
+    "end_rva": "0x1a63a",
+    "decision": 0,
+    "blocked": true,
+    "saw_new_bar": false
+  },
+  {
+    "bot": 1,
+    "case": 170,
+    "tag": "joined-disabled",
+    "end_rva": "0x1a63a",
+    "decision": 0,
+    "blocked": true,
+    "saw_new_bar": false
+  },
+  {
+    "bot": 1,
+    "case": 171,
+    "tag": "joined-friday-closed",
+    "end_rva": "0x1a63a",
+    "decision": 0,
+    "blocked": true,
+    "saw_new_bar": false
+  },
+  {
+    "bot": 1,
+    "case": 172,
+    "tag": "joined-nfp-block",
+    "end_rva": "0x1e94f",
+    "decision": 2,
+    "blocked": false,
+    "saw_new_bar": true
+  },
+  {
+    "bot": 1,
+    "case": 173,
+    "tag": "joined-interest-block",
+    "end_rva": "0x1e94f",
+    "decision": 2,
+    "blocked": false,
+    "saw_new_bar": true
+  },
+  {
+    "bot": 1,
+    "case": 174,
+    "tag": "joined-cpi-block",
+    "end_rva": "0x1e94f",
+    "decision": 2,
+    "blocked": false,
+    "saw_new_bar": true
+  },
+  {
+    "bot": 3,
+    "case": 260,
+    "tag": "joined-same-bar",
+    "end_rva": "0x29c88",
+    "decision": 1,
+    "blocked": false,
+    "saw_new_bar": false
+  },
+  {
+    "bot": 3,
+    "case": 261,
+    "tag": "joined-entry-blocked",
+    "end_rva": "0x22875",
+    "decision": 0,
+    "blocked": true,
+    "saw_new_bar": false
+  },
+  {
+    "bot": 3,
+    "case": 262,
+    "tag": "joined-disabled",
+    "end_rva": "0x22875",
+    "decision": 0,
+    "blocked": true,
+    "saw_new_bar": false
+  },
+  {
+    "bot": 3,
+    "case": 263,
+    "tag": "joined-friday-closed",
+    "end_rva": "0x22875",
+    "decision": 0,
+    "blocked": true,
+    "saw_new_bar": false
+  },
+  {
+    "bot": 3,
+    "case": 264,
+    "tag": "joined-nfp-block",
+    "end_rva": "0x29c88",
+    "decision": 2,
+    "blocked": false,
+    "saw_new_bar": true
+  },
+  {
+    "bot": 3,
+    "case": 265,
+    "tag": "joined-interest-block",
+    "end_rva": "0x29c88",
+    "decision": 2,
+    "blocked": false,
+    "saw_new_bar": true
+  },
+  {
+    "bot": 3,
+    "case": 266,
+    "tag": "joined-cpi-block",
+    "end_rva": "0x29c88",
+    "decision": 2,
+    "blocked": false,
+    "saw_new_bar": true
+  }
+]

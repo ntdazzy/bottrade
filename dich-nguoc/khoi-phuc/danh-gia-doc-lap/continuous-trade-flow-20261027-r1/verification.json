@@ -1,0 +1,30 @@
+{
+  "checks": [
+    {
+      "bot": 1,
+      "matched": 175,
+      "cases": 175,
+      "sdk_calls": 19788,
+      "cast_calls": 4,
+      "parent_instructions": 1860,
+      "result_sha256": "bcf7b0cb37c8f6ec8647f10bed5bcc84a5ee702a0c096c5ab7038f3e9e5c9f32",
+      "sdk_tape_sha256": "b91516d68c992b5addcbb415e1efbe2b56e0838dee8aeae643cd5f5fa318370c",
+      "casts_sha256": "ce49581ed95042e05b6c3dc0ae5d3d2ee891de01581daf0f743137e511aff850",
+      "control_branches_verified": 7
+    },
+    {
+      "bot": 3,
+      "matched": 267,
+      "cases": 267,
+      "sdk_calls": 32649,
+      "cast_calls": 4,
+      "parent_instructions": 2800,
+      "result_sha256": "62c82184ea9f0d809fa636d3653148cab5a55db9fc5f1ba8703586be0bd09a09",
+      "sdk_tape_sha256": "5a369ef7bb69ef03aa779b6eefe3faf4df8044ec3c84ed846b6bfa659501e665",
+      "casts_sha256": "bc45a392aa4523afb3015633bda6f60c2ed5e24e0dcf53dfd3587fd7447d7869",
+      "control_branches_verified": 7
+    }
+  ],
+  "independent_review": "mapping concern rechecked by native terminal-address audit; real fixture coverage issue fixed R2",
+  "whole_eas_complete": 0
+}

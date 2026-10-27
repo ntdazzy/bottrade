@@ -1,0 +1,21 @@
+{
+  "cases": 175,
+  "matched": 175,
+  "failed": 0,
+  "first_failures": [],
+  "whole_bot_complete": false,
+  "whole_manager_complete": false,
+  "whole_evaluator_complete": false,
+  "full_ea": false,
+  "native_continuous_news_to_entry_loop": true,
+  "child_helpers_intercepted": false,
+  "terminal_replies_supplied": true,
+  "withdrawals_disabled": true,
+  "volume_mode_coverage": [
+    0
+  ],
+  "original_ex5_changed": false,
+  "limits": [
+    "Continuous NFP through all trade gates and entry loops, actual children. Volume mode0/withdrawals disabled in this suite. Earlier evaluator and display/housekeeping excluded. Initial frame/state, terminal replies, logical SDK errors, successful allocation and measured number conversions supplied. No full evaluator or EA."
+  ]
+}

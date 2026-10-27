@@ -1,12 +1,20 @@
+Đã ghép `Bot3EvaluationTradeFlow.mqh`: NFP/lãi suất/CPI → cuối tuần
+→ chênh lệch/đặt lại/giới hạn → cổng/nến/mức giá → toàn vòng tạo lệnh.
+**267/267ca khớp**, **32.649lần gọi dịch vụ**, các thân con chạy thật.
+Nguồn/bộ kiểm0lỗi/0cảnh báo; đã audit riêng cổng dừng/cùng nến/tin nóng.
+Lượt ghép dùngvolume0/rúttiềntắt. Còn phần đầu evaluator, khởi tạo,
+thống kê/hiển thị/các sự kiệnEA và chạy cặp toàn bot.
+[Phạm vi](../danh-gia-doc-lap/continuous-trade-flow-20261027-r1/SPEC.md).
+
+Các mốc dưới đây giữ bằng chứng cũ; phần còn thiếu ghi tại từng mốc
+không thay trạng thái hiện tại ở trên.
+
 Đã ghép `Bot3EvaluationEntryLevels.mqh`: tin/cuối tuần/chênh lệch/
 đặt lại/giới hạn → cổng vào → lưu thời gian nến và mức giá.
 **1.128/1.128ca khớp**, so **22.926 lần gọi dịch vụ** và800ô bảng.
 Nguồn trực tiếp/bộ kiểm0lỗi/0cảnh báo. Còn phát sinh lệnh phía sau,
 thống kê/hiển thị/khởi tạo và toànEA; chưa chạy cặp toàn bot.
 [Phạm vi](../danh-gia-doc-lap/entry-level-cache-20261027-r1/SPEC.md).
-
-Các mốc dưới đây giữ bằng chứng cũ; phần còn thiếu ghi tại từng mốc
-không thay trạng thái hiện tại ở trên.
 
 Đã ghép `Bot3EvaluationNewsAndOrders.mqh`: tin → cuối tuần →
 lưu/hủy/đặt lại lệnh → kiểm soát số lệnh chờ. **989/989ca khớp**,

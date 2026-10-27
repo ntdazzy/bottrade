@@ -1,0 +1,13 @@
+{
+  "platform": "mt5",
+  "program_type": "script",
+  "optimize": "1",
+  "fpzerocheck": "1",
+  "files": [
+    {
+      "path": "Bot3EntryLoopCheck.mq5",
+      "compile": true,
+      "relative_to_project": true
+    }
+  ]
+}

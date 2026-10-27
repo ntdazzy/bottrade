@@ -1,0 +1,14 @@
+{
+  "bot": 3,
+  "original_ex5_sha256": "ee063d3d87490afe24e2f4ce85f6b05659320e297b102efd70207f71ca2feb83",
+  "bounds": [
+    "0x26f9e",
+    "0x29c88"
+  ],
+  "listing_sha256": "ecffda69c3c6b5713592426eef6f148309be9d089fc463b614ded63403ce379f",
+  "maximum_positions": "0x6d2e4:int32",
+  "maximum_group_pending": "0x6d240:double",
+  "candidate_buy": "0x74480",
+  "candidate_sell": "0x74478",
+  "active_step": "0x74428"
+}

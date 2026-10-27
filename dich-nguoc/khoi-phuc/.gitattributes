@@ -774,3 +774,25 @@
 /cong-cu/tao-bo-kiem-vong-phat-sinh-lenh-bot-1.py -text
 /danh-gia-doc-lap/entry-submission-20261027-r1/** -text
 /danh-gia-doc-lap/entry-submission-20261027-r1/*-native-*.txt whitespace=-blank-at-eol,-blank-at-eof,cr-at-eol
+
+/bot-cua-toi-3/source/MQL5/Include/bot-cua-toi-3/Bot3EntryLevels.mqh -text
+/bot-cua-toi-3/source/MQL5/Include/bot-cua-toi-3/Bot3EntryLoop.mqh -text
+/bot-cua-toi-3/source/MQL5/Include/bot-cua-toi-3/Bot3EntrySubmissionLive.mqh -text
+/bot-cua-toi-3/source/MQL5/Scripts/bot-cua-toi-3/Bot3EntryLoop*.mq5 -text
+/bot-cua-toi-3/bang-chung/kiem-quan-ly-vi-the/b3-entry-loop-*/** -text
+/bot-cua-toi-3/bang-chung/bien-dich/b3-entry-loop-*/** -text
+/cong-cu/kiem-vong-phat-sinh-lenh-bot-3.py -text
+/cong-cu/tao-bo-kiem-vong-phat-sinh-lenh-bot-3.py -text
+/danh-gia-doc-lap/entry-submission-bot3-20261027-r1/** -text
+/danh-gia-doc-lap/entry-submission-bot3-20261027-r1/*-native-*.txt whitespace=-blank-at-eol,-blank-at-eof,cr-at-eol
+/bot-cua-toi-1/source/MQL5/Include/bot-cua-toi-1/Bot1EvaluationTradeFlow.mqh -text
+/bot-cua-toi-1/source/MQL5/Scripts/bot-cua-toi-1/Bot1EvaluationTradeFlow*.mq5 -text
+/bot-cua-toi-1/bang-chung/kiem-quan-ly-vi-the/b1-evaluation-trade-*/** -text
+/bot-cua-toi-1/bang-chung/bien-dich/b1-evaluation-trade-*/** -text
+/bot-cua-toi-3/source/MQL5/Include/bot-cua-toi-3/Bot3EvaluationTradeFlow.mqh -text
+/bot-cua-toi-3/source/MQL5/Scripts/bot-cua-toi-3/Bot3EvaluationTradeFlow*.mq5 -text
+/bot-cua-toi-3/bang-chung/kiem-quan-ly-vi-the/b3-evaluation-trade-*/** -text
+/bot-cua-toi-3/bang-chung/bien-dich/b3-evaluation-trade-*/** -text
+/cong-cu/kiem-luong-danh-gia-giao-dich.py -text
+/cong-cu/tao-bo-kiem-luong-danh-gia-giao-dich.py -text
+/danh-gia-doc-lap/continuous-trade-flow-20261027-r1/** -text

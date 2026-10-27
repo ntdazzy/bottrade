@@ -1,0 +1,58 @@
+[
+  {
+    "bot": 3,
+    "case": 260,
+    "tag": "joined-same-bar",
+    "end_rva": "0x29c88",
+    "decision": 1,
+    "fixture_reached_expected_branch": true
+  },
+  {
+    "bot": 3,
+    "case": 261,
+    "tag": "joined-entry-blocked",
+    "end_rva": "0x22875",
+    "decision": 0,
+    "fixture_reached_expected_branch": true
+  },
+  {
+    "bot": 3,
+    "case": 262,
+    "tag": "joined-disabled",
+    "end_rva": "0x22875",
+    "decision": 0,
+    "fixture_reached_expected_branch": true
+  },
+  {
+    "bot": 3,
+    "case": 263,
+    "tag": "joined-friday-closed",
+    "end_rva": "0x22875",
+    "decision": 0,
+    "fixture_reached_expected_branch": true
+  },
+  {
+    "bot": 3,
+    "case": 264,
+    "tag": "joined-nfp-block",
+    "end_rva": "0x22875",
+    "decision": 0,
+    "fixture_reached_expected_branch": true
+  },
+  {
+    "bot": 3,
+    "case": 265,
+    "tag": "joined-interest-block",
+    "end_rva": "0x22875",
+    "decision": 0,
+    "fixture_reached_expected_branch": true
+  },
+  {
+    "bot": 3,
+    "case": 266,
+    "tag": "joined-cpi-block",
+    "end_rva": "0x22875",
+    "decision": 0,
+    "fixture_reached_expected_branch": true
+  }
+]

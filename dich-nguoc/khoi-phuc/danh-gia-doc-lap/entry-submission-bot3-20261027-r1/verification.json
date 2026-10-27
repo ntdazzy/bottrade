@@ -1,0 +1,21 @@
+{
+  "checks": [
+    {
+      "cases": 260,
+      "sdk_calls": 23556,
+      "cast_calls": 4,
+      "parent_instructions": 2176,
+      "result_sha256": "992271802e3c08f03f293d7229b72feb2186ef690aa625b1cd6d765b0d140d71",
+      "sdk_tape_sha256": "c41f0c8146861f909837a384fa9cd5661cd43fd91f2d32bffe3fd93970897b5d",
+      "casts_sha256": "a62731cdeab9d4be283ff3a5d4d0a7f2622757adebbc6e3632c21ec947e30b4c",
+      "bot": 3,
+      "matched": 260,
+      "volume_modes": [
+        0
+      ],
+      "withdrawals_disabled": true
+    }
+  ],
+  "independent_review": "friday_flow_review: no concrete mismatches in full bot3 loop/live submission",
+  "whole_eas_complete": 0
+}

@@ -1,3 +1,14 @@
+- `kiem-vong-phat-sinh-lenh-bot-3.py prepare|mql5|original|compare 3 RUN`:
+  toàn vòng26f9e..29c88,260ca/23.556dịchvụ, nguyên thân con; `mql5`
+  cần `--build BUILD`. Có cổng giới hạn vị thế/nhóm15mã/giá riêngB3.
+- `tao-bo-kiem-vong-phat-sinh-lenh-bot-3.py`: tạo bộ ghi vòngB3.
+- `kiem-luong-danh-gia-giao-dich.py prepare|mql5|original|compare BOT RUN`:
+  nối liên tục NFP→hết vòng tạo lệnh;175caB1/267caB3; `mql5` cần
+  `--build BUILD`; volume0/rúttiềntắt. Chưa gồm phần đầu đánh giá/UI/EA.
+- `tao-bo-kiem-luong-danh-gia-giao-dich.py`: ghép bộ ghi, giữ đối tượng/
+  mảng/trạng thái chung. `danh-gia-doc-lap/continuous-trade-flow-20261027-r1/audit-decisions.py BOT RUN`
+  đo RIP/decision thực tế của ca kiểm soát, từ chối fixture không tới nhánh.
+
 - `kiem-vong-phat-sinh-lenh-bot-1.py prepare|mql5|original|compare 1 RUN`:
   cả vòng vào lệnh1ca24..1e94f, nguyên các thân con;168ca/14.103dịchvụ.
   `mql5` cần `--build BUILD`. Bộ ghép dùngvolume0/rúttiềntắt, còn trước/
