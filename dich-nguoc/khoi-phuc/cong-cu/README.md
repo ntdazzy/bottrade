@@ -1,3 +1,10 @@
+- `kiem-gioi-han-lenh-cho-day-du.py prepare|mql5|original|compare BOT RUN`:
+  ghép tin/cuối tuần/chênh lệch/đặt lại tới giới hạn lệnh,989ca mỗi bot.
+  `mql5` cần `--build BUILD`; so tổng thay giữa các vòng/cờ/giới hạn sống,
+  count→delete mua→count→delete bán. Chưa qua cổng vào/toànEA.
+- `tao-bo-kiem-gioi-han-lenh-cho.py`: tạo bộ ghi hai bot, cấp tám trả lời
+  tổng mỗi ca để kiểm đọc lại; không thay thuật toán trong nguồn bot.
+
 - `kiem-khoi-phuc-lenh-da-luu-bot-1-3.py prepare|mql5|original|compare BOT RUN`:
   ghép tin/cuối tuần/lưu-hủy/đặt lại lệnh tới trước giới hạn. `mql5`
   cần `--build BUILD`;801ca mỗi bot. Thử lại/thông báo/mã lỗi/đổi chữ

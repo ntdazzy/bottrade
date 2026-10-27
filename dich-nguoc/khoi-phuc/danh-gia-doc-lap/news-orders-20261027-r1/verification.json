@@ -1,0 +1,30 @@
+{
+  "checks": [
+    {
+      "bot": 1,
+      "cases": 989,
+      "sdk_calls": 20220,
+      "cast_calls": 364,
+      "queue_clears": 120,
+      "parent_instructions": 881,
+      "result_sha256": "62a7e514a25ab1dfe5c5bbe845e64ef3ae7ff6d144e3f9208a987269b236686a",
+      "sdk_tape_sha256": "b937448c0de33bee2727f8076cb3c25a7acd9a2fe04878993cee7b47f3dd5039",
+      "casts_sha256": "e271cd42331f809302ac8b4e20c6c2b1100f298d917347c28c7417b443370b83",
+      "matched": 989
+    },
+    {
+      "bot": 3,
+      "cases": 989,
+      "sdk_calls": 20595,
+      "cast_calls": 364,
+      "queue_clears": 120,
+      "parent_instructions": 2208,
+      "result_sha256": "018e36952c99dea3150643f7df684017f9968e7e5b919e17a26c68d62409c8b3",
+      "sdk_tape_sha256": "ae7e9805090ca2fd800b964d33f31cfeb3fcdf7e9950b3312253e4b83ac7757d",
+      "casts_sha256": "e271cd42331f809302ac8b4e20c6c2b1100f298d917347c28c7417b443370b83",
+      "matched": 989
+    }
+  ],
+  "independent_review": "friday_flow_review: source/native count/delete order and recorder reviewed; no material findings",
+  "whole_eas_complete": 0
+}

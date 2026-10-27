@@ -1,0 +1,18 @@
+{
+  "cases": 989,
+  "matched": 989,
+  "failed": 0,
+  "first_failures": [],
+  "whole_bot_complete": false,
+  "whole_manager_complete": false,
+  "whole_evaluator_complete": false,
+  "full_ea": false,
+  "native_news_through_pending_limits_executed": true,
+  "child_helpers_intercepted": false,
+  "terminal_replies_supplied": true,
+  "numeric_conversion_measured_in_mt5": true,
+  "original_ex5_changed": false,
+  "limits": [
+    "Continuous news, Friday, high/low spread and pending limits; stops before following entry gates. Initial frame/state, terminal replies, logical SDK errors, successful allocation and measured number conversions supplied. No full evaluator or EA."
+  ]
+}

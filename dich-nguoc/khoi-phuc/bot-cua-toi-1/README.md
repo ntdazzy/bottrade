@@ -1,12 +1,19 @@
+Đã ghép `Bot1EvaluationNewsAndOrders.mqh`: tin → cuối tuần →
+lưu/hủy/đặt lại lệnh → kiểm soát số lệnh chờ. **989/989ca khớp**,
+so **20.220 lần gọi dịch vụ**,500ô bảng và trạng thái trước mỗi dịch vụ.
+Nguồn trực tiếp/bộ kiểm0lỗi/0cảnh báo. Còn cổng vào/cập nhật mức giá/
+phát sinh lệnh phía sau, khởi tạo/hiển thị/toànEA.
+[Phạm vi](../danh-gia-doc-lap/news-orders-20261027-r1/SPEC.md).
+
+Các mốc dưới đây giữ bằng chứng cũ; phần còn thiếu ghi tại từng mốc
+không thay trạng thái hiện tại ở trên.
+
 Đã ghép `Bot1NewsFridaySpreadRestoreFlow.mqh`: tin → cuối tuần →
 lưu/hủy khi chênh lệch cao → đặt lại lệnh khi chênh lệch thấp.
 **801/801ca khớp**, so **19.260 lần gọi dịch vụ**, gồm mở/gửi/thử lại/
 báo lỗi và500ô bảng. Nguồn/bộ kiểm0lỗi/0cảnh báo. Còn giới hạn và
 điều kiện vào lệnh phía sau, khởi tạo/hiển thị/toànEA.
 [Phạm vi](../danh-gia-doc-lap/spread-restore-20261027-r1/SPEC.md).
-
-Các mốc dưới đây giữ bằng chứng cũ; phần còn thiếu ghi tại từng mốc
-không thay trạng thái hiện tại ở trên.
 
 Đã ghép `Bot1NewsFridaySpreadFlow.mqh`: tin → đóng cuối tuần →
 lưu/hủy khi chênh lệch cao. **640/640 ca khớp**, so **18.434 lần gọi dịch

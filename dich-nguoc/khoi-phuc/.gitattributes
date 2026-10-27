@@ -731,3 +731,18 @@
 /cong-cu/tao-bo-kiem-khoi-phuc-lenh-da-luu.py -text
 /danh-gia-doc-lap/spread-restore-20261027-r1/** -text
 /danh-gia-doc-lap/spread-restore-20261027-r1/*-native-*.txt whitespace=-blank-at-eol,-blank-at-eof,cr-at-eol
+
+/bot-cua-toi-1/source/MQL5/Include/bot-cua-toi-1/Bot1PendingLimitStage.mqh -text
+/bot-cua-toi-1/source/MQL5/Include/bot-cua-toi-1/Bot1EvaluationNewsAndOrders.mqh -text
+/bot-cua-toi-1/source/MQL5/Scripts/bot-cua-toi-1/Bot1EvaluationNewsAndOrders*.mq5 -text
+/bot-cua-toi-1/bang-chung/kiem-quan-ly-vi-the/b1-news-orders-*/** -text
+/bot-cua-toi-1/bang-chung/bien-dich/b1-news-orders-*/** -text
+/bot-cua-toi-3/source/MQL5/Include/bot-cua-toi-3/Bot3PendingLimitStage.mqh -text
+/bot-cua-toi-3/source/MQL5/Include/bot-cua-toi-3/Bot3EvaluationNewsAndOrders.mqh -text
+/bot-cua-toi-3/source/MQL5/Scripts/bot-cua-toi-3/Bot3EvaluationNewsAndOrders*.mq5 -text
+/bot-cua-toi-3/bang-chung/kiem-quan-ly-vi-the/b3-news-orders-*/** -text
+/bot-cua-toi-3/bang-chung/bien-dich/b3-news-orders-*/** -text
+/cong-cu/kiem-gioi-han-lenh-cho-day-du.py -text
+/cong-cu/tao-bo-kiem-gioi-han-lenh-cho.py -text
+/danh-gia-doc-lap/news-orders-20261027-r1/** -text
+/danh-gia-doc-lap/news-orders-20261027-r1/*-native-*.txt whitespace=-blank-at-eol,-blank-at-eof,cr-at-eol

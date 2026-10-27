@@ -1,0 +1,28 @@
+[
+  {
+    "bot": 1,
+    "original_ex5_sha256": "a3b0de423a06e10ebedc279307b93d7cb9188ba2bb5de77131a913c865b0e922",
+    "bounds": [
+      "1c85c",
+      "1c8c7",
+      "31f40",
+      "32108",
+      "323e0",
+      "325a8"
+    ],
+    "listing_sha256": "d89c6890344e05487cf13dc02c58973432dda9a5fce61475898ffc18c845d0ca",
+    "enabled": "0x62428",
+    "maximum": "0x62458"
+  },
+  {
+    "bot": 3,
+    "original_ex5_sha256": "ee063d3d87490afe24e2f4ce85f6b05659320e297b102efd70207f71ca2feb83",
+    "bounds": [
+      "269fb",
+      "26e3e"
+    ],
+    "listing_sha256": "56f39203e59ae22af942ff0c845d69447ce908d96ed60e75455cdc9e2d757d89",
+    "enabled": "0x6d520",
+    "maximum": "0x6d550"
+  }
+]
