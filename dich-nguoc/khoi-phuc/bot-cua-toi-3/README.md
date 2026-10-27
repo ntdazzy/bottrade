@@ -1,5 +1,11 @@
 # bot-cua-toi-3
 
+Đã viết phần đầu đánh giá chiến lược: đọc thời gian, chọn chuỗi tên mã
+và chọn nhánh tiếp theo. **432/432 ca khớp**, gồm 17 giá trị, chuỗi đầy đủ,
+NULL/chuỗi rỗng và dịch vụ đổi ngày giờ báo lỗi. Biên dịch 0 lỗi/cảnh báo;
+còn các nhánh xử lý phiên, giao dịch và phần đánh giá phía sau.
+[Nguồn và giới hạn](phan-tich/chuong-trinh-chinh/evaluator-prelude-20261027-r1/VERIFIED-HEAD.md).
+
 Đã ghép nạp cấu hình → ghi chú/mã/đổi tiền → chuẩn bị: **2.106/2.106 ca khớp**,
 so **132 giá trị và toàn bộ ghi chú lệnh**. Đã nối đúng cờ dùng chung
 `1d6f28`, giữ hai lần đổi tiền và giá trị tham chiếu khi bật điều chỉnh khoảng cách.

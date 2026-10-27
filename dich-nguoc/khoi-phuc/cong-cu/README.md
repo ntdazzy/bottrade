@@ -22,6 +22,12 @@ riêng của từng phần ở `bot-cua-toi-1/tests/` và `bot-cua-toi-3/tests/`
 
 Phép kiểm ghép mới:
 
+- `bot-cua-toi-3/tests/check-evaluation-head.py prepare|original|mql5|compare RUN`:
+  432 ca đầu đánh giá `20ef0..211ea/216e5`; so 17 giá trị, chuỗi UTF-16 và NULL.
+  Bước mql5 dùng `--build BUILD` của `Bot3EvaluationHeadCheck.mq5` trong MT5
+  riêng. Ngày giờ/thông tin MQL, calendar ban đầu và cấp chuỗi thành công
+  được cấp; chưa chạy các nhánh sau hoặc toàn EA.
+
 - `kiem-nap-chien-luoc-bot-1-3.py prepare|original|mql5|compare BOT RUN`:
   chạy liên tục khối nạp cấu hình → ghi chú/mã/đổi tiền → lời gọi chuẩn bị
   thật của hàm điều phối. Bot 1 so 432 ca/127 giá trị; bot 3 so 2.106 ca/132

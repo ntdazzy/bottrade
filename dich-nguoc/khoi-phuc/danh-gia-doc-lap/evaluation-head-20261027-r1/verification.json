@@ -1,0 +1,27 @@
+{
+  "cases": 432,
+  "matched": 432,
+  "values_per_case": 17,
+  "result_sha256": "0ff5b12042fbdb1751471f8177394c640349cd80817aaf4db30098b89bb6f27b",
+  "scope": {
+    "cases": 432,
+    "matched": 432,
+    "failed": 0,
+    "first_failures": [],
+    "whole_bot_complete": false,
+    "whole_manager_complete": false,
+    "whole_evaluator_complete": false,
+    "full_ea": false,
+    "native_head_executed": true,
+    "string_helper_intercepted": false,
+    "terminal_replies_supplied": true,
+    "original_ex5_changed": false,
+    "limits": [
+      "Only HEAD from20ef0 to211ea/216e5 executes; no day/session/tick/order/position logic or complete EA.",
+      "Server time, MQLInfo7, successful/failed calendar reply, initial calendar scratch and successful allocation are supplied.",
+      "Native NULL, heap-empty and literal-empty inputs are distinct; MQL represents the two empty variants with empty text. Selection and complete UTF-16 output/null comparison are checked."
+    ]
+  },
+  "whole_eas_complete": 0,
+  "calendar_reference": "https://www.mql5.com/en/docs/constants/structures/mqldatetime"
+}
