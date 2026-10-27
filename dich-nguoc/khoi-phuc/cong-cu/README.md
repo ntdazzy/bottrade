@@ -1,3 +1,11 @@
+- `kiem-chuoi-tin-bot-1-3.py prepare|mql5|original|compare BOT RUN`:
+  chạy liên tục NFP→lãi suất→CPI→chọn lịch, không đặt lại trạng thái.
+  MQL5 ghi trả lời dịch vụ; mã máy gốc phải khớp trạng thái trước từng
+  lần gọi, đối số và kết quả cuối. `mql5` cần `--build BUILD`.
+  Lượt r7:133ca/10.243dịch vụ mỗi bot. Chỉ phần tin, chưa là toànEA.
+- `tao-bo-kiem-chuoi-tin.py`: tạo Script kiểm từ bộ ghi NFP hiện có,
+  thêm lịch USD/US và trạng thái lãi suất/CPI/chọn lịch; không sửa luật bot.
+
 - `kiem-lich-ir-cpi-bot-1-3.py prepare|original|mql5|compare BOT RUN`:
   helper lãi suất/CPI,490ca thường +16ca lỗi mỗi bot, so truy vấn,
   điều kiện chọn, mốc trả/mã lỗi/thông báo và mảng xuôi-ngược.

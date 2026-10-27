@@ -5,28 +5,37 @@
 struct Bot3NewsEvents { long nfp,interest,cpi; };
 struct Bot3NewsWindows { uchar nfp_enabled,interest_enabled,cpi_enabled;int nfp_after,interest_after,cpi_after; };
 struct Bot3NewsSelection { long block_time;string label; };
-void Bot3UpdateNewsSelection(const Bot3NewsEvents &events,const Bot3NewsWindows &settings,Bot3NewsSelection &state)
+void Bot3UpdateNewsSelectionFields(const uchar &nfp_enabled,const long &nfp_time,const int &nfp_after,
+                                   const uchar &interest_enabled,const long &interest_time,const int &interest_after,
+                                   const uchar &cpi_enabled,const long &cpi_time,const int &cpi_after,
+                                   Bot3NewsSelection &state)
 {
    state.block_time=0;
    state.label="";
-   if(settings.nfp_enabled!=0 && events.nfp>0)
+   if(nfp_enabled!=0 && nfp_time>0)
    {
-      const long end=events.nfp+Bot3NewsMinutes32(settings.nfp_after);
-      if(end>(long)TimeTradeServer()) { state.block_time=events.nfp;state.label="NFP"; }
+      const long end=nfp_time+Bot3NewsMinutes32(nfp_after);
+      if(end>(long)TimeTradeServer()) { state.block_time=nfp_time;state.label="NFP"; }
    }
-   if(settings.interest_enabled!=0 && events.interest>0)
+   if(interest_enabled!=0 && interest_time>0)
    {
-      const long end=events.interest+Bot3NewsMinutes32(settings.interest_after);
+      const long end=interest_time+Bot3NewsMinutes32(interest_after);
       if(end>(long)TimeTradeServer())
-         if(state.block_time==0 || events.interest<state.block_time)
-         { state.block_time=events.interest;state.label="Interest rates"; }
+         if(state.block_time==0 || interest_time<state.block_time)
+         { state.block_time=interest_time;state.label="Interest rates"; }
    }
-   if(settings.cpi_enabled!=0 && events.cpi>0)
+   if(cpi_enabled!=0 && cpi_time>0)
    {
-      const long end=events.cpi+Bot3NewsMinutes32(settings.cpi_after);
+      const long end=cpi_time+Bot3NewsMinutes32(cpi_after);
       if(end>(long)TimeTradeServer())
-         if(state.block_time==0 || events.cpi<state.block_time)
-         { state.block_time=events.cpi;state.label="CPI"; }
+         if(state.block_time==0 || cpi_time<state.block_time)
+         { state.block_time=cpi_time;state.label="CPI"; }
    }
+}
+void Bot3UpdateNewsSelection(const Bot3NewsEvents &events,const Bot3NewsWindows &settings,Bot3NewsSelection &state)
+{
+   Bot3UpdateNewsSelectionFields(settings.nfp_enabled,events.nfp,settings.nfp_after,
+                                  settings.interest_enabled,events.interest,settings.interest_after,
+                                  settings.cpi_enabled,events.cpi,settings.cpi_after,state);
 }
 #endif

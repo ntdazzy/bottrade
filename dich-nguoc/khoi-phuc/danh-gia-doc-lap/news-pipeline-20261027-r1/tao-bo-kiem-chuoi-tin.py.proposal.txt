@@ -1,0 +1,81 @@
+"""Tạo script MQL5 kiểm biên dịch chuỗi NFP -> IR -> CPI -> selector.
+
+Script này chỉ tạo tệp kiểm trong source kiểm thử; không sửa Include sản xuất.
+"""
+from pathlib import Path
+import importlib.util
+
+ROOT = Path(__file__).resolve().parents[1]
+
+TEMPLATE = r'''#property strict
+#include "../../Include/bot-cua-toi-N/BotNNewsFilterPipeline.mqh"
+input string CheckRun="";
+
+void OnStart()
+{
+   BotNNfpFilterSettings nfp_settings;
+   BotNReleaseFilterSettings interest_settings,cpi_settings;
+   BotNNfpFilterState nfp;
+   BotNReleaseFilterState interest,cpi;
+   BotNNewsEvents events;
+   BotNNewsSelection selection;
+   BotNNfpExecution execution;
+   MqlDateTime cached;
+   long nfp_history[300],interest_history[300],cpi_history[300];
+   ZeroMemory(nfp_settings); ZeroMemory(interest_settings); ZeroMemory(cpi_settings);
+   ZeroMemory(nfp); ZeroMemory(interest); ZeroMemory(cpi); ZeroMemory(events);
+   ZeroMemory(selection); ZeroMemory(execution); ZeroMemory(cached);
+   ArrayInitialize(nfp_history,0); ArrayInitialize(interest_history,0); ArrayInitialize(cpi_history,0);
+   bool blocked=BotNProcessNewsFilters(nfp_settings,nfp,interest_settings,interest,cpi_settings,cpi,
+                                       events,cached,nfp_history,interest_history,cpi_history,
+                                       execution,selection);
+   Print("NEWS_PIPELINE_CHECK:",blocked,"|",selection.block_time,"|",selection.label);
+}
+'''
+
+def main() -> None:
+    old_path = ROOT / "cong-cu/tao-bo-kiem-nfp-toan-nhanh.py"
+    spec = importlib.util.spec_from_file_location("old_nfp_generator", old_path)
+    old = importlib.util.module_from_spec(spec); spec.loader.exec_module(old)
+    for bot in (1, 3):
+        bot_dir = ROOT / f"bot-cua-toi-{bot}"
+        out = bot_dir / "source/MQL5/Scripts" / f"bot-cua-toi-{bot}" / f"Bot{bot}NewsPipelineCheck.mq5"
+        out.parent.mkdir(parents=True, exist_ok=True)
+        source = old.T
+        source = source.replace('#include "../../Include/bot-cua-toi-N/BotNNfpFilter.mqh"', '#include "../../Include/bot-cua-toi-N/BotNNewsFilterPipeline.mqh"')
+        source = source.replace('#define CalendarEventByCurrency MockEvents', '#define CalendarEventByCurrency MockEvents\n#define CalendarEventByCountry MockEventsCountry')
+        source = source.replace('int MockEvents(const string currency,MqlCalendarEvent &events[]);', 'int MockEvents(const string currency,MqlCalendarEvent &events[]);\nint MockEventsCountry(const string country,MqlCalendarEvent &events[]);')
+        source = source.replace('int MockEvents(const string currency,MqlCalendarEvent &events[])\n{', 'int MockEvents(const string currency,MqlCalendarEvent &events[])\n{')
+        source = source.replace('Begin();int status=(int)P[p_calendar_status];int count=status>0 ? 1 : 0;ArrayResize(events,count);\n   if(count>0) { ZeroMemory(events[0]);events[0].id=status==3 ? 0 : 77;events[0].name=status==4 ? NULL : (status==2 ? "Other" : "Nonfarm Payrolls"); }\n   int reply=status<0 ? -1 : count;End(11,(ulong)(long)reply,(ulong)count,0,0,currency);return reply;', 'Begin();int status=(int)P[p_calendar_status];int count=status>0 ? 2 : 0;ArrayResize(events,count);\n   if(count>0) { ZeroMemory(events[0]);events[0].id=77;events[0].name="Nonfarm Payrolls";ZeroMemory(events[1]);events[1].id=88;events[1].name="CPI (YoY)"; }\n   int reply=status<0 ? -1 : count;End(11,(ulong)(long)reply,(ulong)count,0,0,currency);return reply;')
+        marker = 'int MockValues(const ulong event_id,MqlCalendarValue &values[],const datetime from,const datetime to=0)'
+        country = 'int MockEventsCountry(const string country,MqlCalendarEvent &events[])\n{\n   Begin(); ArrayResize(events,1); ZeroMemory(events[0]); events[0].id=99; events[0].name="Fed Interest Rate Decision"; End(11,1,1,0,0,country); return 1;\n}\n'
+        source = source.replace(marker, country + marker)
+        source = source.replace('BotNNfpFilterSettings Settings;BotNNfpFilterState State;BotNNewsEvents Events;BotNNfpExecution Execution;', 'BotNNfpFilterSettings Settings;BotNReleaseFilterSettings InterestSettings,CpiSettings;BotNNfpFilterState State;BotNReleaseFilterState InterestState,CpiState;BotNNewsEvents Events;BotNNewsSelection Selection;BotNNfpExecution Execution;')
+        source = source.replace('Word(State.initialization_notice);Word(State.notice);Word(State.blocked);Word((ulong)State.last_query);Word((ulong)State.utc_reference);', 'Word(State.initialization_notice);Word(State.notice);Word(State.blocked);Word((ulong)State.last_query);Word((ulong)State.utc_reference);\n   Word(InterestSettings.enabled);Word(InterestSettings.delete_pending);Word(InterestSettings.close_positions);Word((ulong)(long)InterestSettings.before_minutes);Word((ulong)(long)InterestSettings.after_minutes);Word(InterestState.notice);Word(InterestState.blocked);Word((ulong)InterestState.last_query);\n   Word(CpiSettings.enabled);Word(CpiSettings.delete_pending);Word(CpiSettings.close_positions);Word((ulong)(long)CpiSettings.before_minutes);Word((ulong)(long)CpiSettings.after_minutes);Word(CpiState.notice);Word(CpiState.blocked);Word((ulong)CpiState.last_query);\n   Word((ulong)Selection.block_time);Text(Selection.label);')
+        old_call = 'BotNProcessNfpFilter(Settings,State,Events,Cached,History,Execution);'
+        new_call = 'BotNProcessNewsFilters(Settings,State,InterestSettings,InterestState,CpiSettings,CpiState,Events,Cached,History,History,History,Execution,Selection);'
+        source = source.replace(old_call, new_call)
+        source = source.replace('ZeroMemory(Settings);ZeroMemory(State);ZeroMemory(Events);ZeroMemory(Execution);', 'ZeroMemory(Settings);ZeroMemory(State);ZeroMemory(InterestSettings);ZeroMemory(CpiSettings);ZeroMemory(InterestState);ZeroMemory(CpiState);ZeroMemory(Events);ZeroMemory(Selection);ZeroMemory(Execution);')
+        source = source.replace('Settings.before_minutes=(int)P[p_before_minutes];Settings.after_minutes=(int)P[p_after_minutes];', 'Settings.before_minutes=(int)P[p_before_minutes];Settings.after_minutes=(int)P[p_after_minutes]; InterestSettings.enabled=1;InterestSettings.delete_pending=0;InterestSettings.close_positions=0;InterestSettings.before_minutes=10;InterestSettings.after_minutes=10; CpiSettings=InterestSettings;')
+        source = source.replace('Execution.strategy_magic=42;', 'Execution.strategy_magic=42;')
+        # Include the pipeline type names and preserve all recorder helpers.
+        source = source.replace('BotNProcessNewsFilters', 'BotNProcessNewsFilters')
+        split = source.index('enum Parameter')
+        head, tail = source[:split], source[split:]
+        tail = tail.replace('const int flags=TIME_DATE|TIME_MINUTES','const int flags').replace('const int length=0,const ushort fill=\' \'','const int length,const ushort fill').replace('const datetime to=0','const datetime to')
+        source = head + tail
+        source = source.replace('BotNNfpFilterSettings Settings;BotNReleaseFilterSettings', 'BotNNfpFilterSettings Settings;BotNReleaseFilterSettings')
+        state = []
+        for key, schema in old.data.SCHEMAS.items():
+            for field in schema['fields']:
+                name = f'Execution.trade.{key}.{field["name"]}'
+                state.append('   ' + (f'Text({name});' if field['kind'] == 's' else f'Word(Bits({name}));' if field['kind'] == 'd' else f'Word((ulong){name});'))
+        source = source.replace('PROTOTYPES', old.protos).replace('ENUM_FIELDS', ','.join('p_'+n for n in old.data.FIELDS)).replace('FIELD_COUNT', str(len(old.data.FIELDS))).replace('TRADE_STATE', '\n'.join(state))
+        undef = '\n'.join('#undef ' + line.split()[1] for line in source.splitlines() if line.startswith('#define ') and not line.startswith('#define BOT'))
+        source = source.replace('UNDEFS', undef)
+        source = source.replace("BOTN", f"BOT{bot}").replace("BotN", f"Bot{bot}").replace("botN", f"bot{bot}").replace("bot-cua-toi-N", f"bot-cua-toi-{bot}")
+        out.write_text(source, encoding="utf-8", newline="\n")
+        print(out)
+
+if __name__ == "__main__":
+    main()

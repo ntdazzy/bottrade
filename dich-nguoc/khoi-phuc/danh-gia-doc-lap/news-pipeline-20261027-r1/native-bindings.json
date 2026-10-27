@@ -1,0 +1,18 @@
+[
+  {
+    "bot": 1,
+    "original_ex5_sha256": "a3b0de423a06e10ebedc279307b93d7cb9188ba2bb5de77131a913c865b0e922",
+    "begin_rva": "0x1b44f",
+    "pass_end_rva": "0x1c6f1",
+    "blocked_end_rva": "0x1a63a",
+    "native_listing_sha256": "27a35b5c49dafb8b6133cc1a711ac409977a188ba3ce855467e3eb18326bd0b7"
+  },
+  {
+    "bot": 3,
+    "original_ex5_sha256": "ee063d3d87490afe24e2f4ce85f6b05659320e297b102efd70207f71ca2feb83",
+    "begin_rva": "0x2372b",
+    "pass_end_rva": "0x24f8d",
+    "blocked_end_rva": "0x22875",
+    "native_listing_sha256": "bae047fdd9d95701fb0a6050f03547d39a00497dd33086c517bc80cb4810af15"
+  }
+]

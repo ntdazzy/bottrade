@@ -1,3 +1,9 @@
+Đã ghép `Bot3NewsFilterPipeline.mqh`: NFP → lãi suất → CPI → chọn lịch,
+chung trạng thái và hủy/đóng/gửi. **133/133 tình huống khớp**,
+so **10.243 lần gọi dịch vụ** và trạng thái trước mỗi lần/cuối đoạn.
+Nguồn trực tiếp/bộ kiểm biên dịch 0 lỗi/0 cảnh báo. Chỉ phần tin;
+chưa là EA đầy đủ. [Phạm vi](../danh-gia-doc-lap/news-pipeline-20261027-r1/SPEC.md).
+
 Đã dựng `Bot3ReleaseCalendars.mqh` lấy lịch lãi suất/CPI theo đúng
 điều kiện gốc: **490/490ca thường +16/16ca lỗi mảng khớp** mỗi bot,
 đủ mảng xuôi/ngược, mã dự phòng, lỗi5401và thông báo. Hai bản biên dịch0/0.

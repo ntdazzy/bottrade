@@ -1,0 +1,17 @@
+{
+  "cases": 133,
+  "matched": 133,
+  "failed": 0,
+  "first_failures": [],
+  "whole_bot_complete": false,
+  "whole_manager_complete": false,
+  "whole_evaluator_complete": false,
+  "full_ea": false,
+  "native_complete_news_pipeline_executed": true,
+  "child_helpers_intercepted": false,
+  "terminal_replies_supplied": true,
+  "original_ex5_changed": false,
+  "limits": [
+    "Complete news section only; initial frame/state and terminal replies supplied. No full EA, live broker or allocation-fault proof."
+  ]
+}

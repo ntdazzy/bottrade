@@ -1,0 +1,63 @@
+"""Kiểm tra dấu vết và biên dịch script chuỗi tin mới.
+
+Không gọi MT5 gốc và không dùng kết quả mã mới làm đáp án cho mã gốc.
+"""
+import argparse, hashlib, json, re, subprocess, importlib.util
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parents[1]
+GEN = ROOT / "cong-cu/tao-bo-kiem-chuoi-tin.py"
+PIPE = ["ProcessNfpFilter", "ProcessReleaseFilter", "UpdateNewsSelectionFields"]
+CFG = {1: {"start": "0x1b44f", "stop": ("0x1c6f1", "0x1a63a"), "selector": ("0x6a390", "0x6a398")},
+       3: {"start": "0x2372b", "stop": ("0x24f8d", "0x22875"), "selector": ("0x1d6ca0", "0x1d6ca8")}}
+
+def sha(path):
+    return hashlib.sha256(path.read_bytes()).hexdigest()
+
+def source(bot):
+    return ROOT / f"bot-cua-toi-{bot}/source/MQL5/Include/bot-cua-toi-{bot}/Bot{bot}NewsFilterPipeline.mqh"
+
+def check_structure(bot):
+    path = source(bot); text = path.read_text(encoding="utf-8")
+    required = [f"Bot{bot}{x}" for x in PIPE]
+    missing = [x for x in required if x not in text]
+    if missing:
+        raise RuntimeError(f"PIPELINE_SYMBOL_MISSING bot={bot}: {missing}")
+    order = [text.index(x) for x in required]
+    if order != sorted(order):
+        raise RuntimeError(f"PIPELINE_ORDER_CHANGED bot={bot}: {order}")
+    if "nfp.utc_reference" not in text or "nfp_settings.use_calendar" not in text:
+        raise RuntimeError(f"SHARED_NFP_CLOCK_SETTINGS_MISSING bot={bot}")
+    if "interest.blocked&1" not in text or "cpi.blocked&1" not in text:
+        raise RuntimeError(f"FINAL_BLOCK_OR_MISSING bot={bot}")
+    return {"bot": bot, "source": str(path), "source_sha256": sha(path), "required_order": required,
+            "native_start": CFG[bot]["start"], "native_stop_candidates": CFG[bot]["stop"],
+            "selector_offsets": CFG[bot]["selector"]}
+
+def main():
+    ap = argparse.ArgumentParser(); ap.add_argument("mode", choices=["generate", "structure", "native-probe"]); ap.add_argument("run")
+    a = ap.parse_args()
+    if not re.fullmatch(r"[A-Za-z0-9-]{1,40}", a.run): raise SystemExit("BAD_RUN")
+    folder = ROOT / "bot-cua-toi-1/bang-chung/kiem-quan-ly-vi-the" / a.run
+    folder.mkdir(parents=True, exist_ok=(a.mode == "native-probe"))
+    if a.mode == "generate":
+        subprocess.run(["python", str(GEN)], check=True)
+    if a.mode == "native-probe":
+        old_path = ROOT / "cong-cu/kiem-nfp-toan-nhanh-bot-1-3.py"
+        spec = importlib.util.spec_from_file_location("old_nfp_check", old_path); old = importlib.util.module_from_spec(spec); spec.loader.exec_module(old)
+        old.CFG[1]["end"] = 0x1c6f1
+        tape_path = ROOT / "bot-cua-toi-1/bang-chung/kiem-quan-ly-vi-the" / a.run / "sdk-tape.bin"
+        tape = old.Reader(tape_path.read_bytes()); header = tape.take("3i"); case_id = tape.take("i")[0]; events = tape.block()
+        case = old.cases()[0]; case.update(enabled=1,use_calendar=1,info=0,orders=1,position=0,async_mode=0,accepted=0)
+        try:
+            native = old.Original(1); state = native.run(case, events)
+            result = {"status":"matched-native-probe","header":header,"case":case_id,"state_bytes":len(state),"sdk_calls":native.api_count}
+        except Exception as exc:
+            result = {"status":"native-probe-blocked","header":header,"case":case_id,"error":type(exc).__name__,"detail":str(exc),"sdk_calls":getattr(locals().get("native"),"api_count",None)}
+        (ROOT / "bot-cua-toi-1/bang-chung/kiem-quan-ly-vi-the" / a.run / "native-probe.json").write_text(json.dumps(result,ensure_ascii=False,indent=2),encoding="utf-8")
+        print(json.dumps(result,ensure_ascii=False)); return
+    rows = [check_structure(bot) for bot in (1, 3)]
+    (folder / "structure.json").write_text(json.dumps({"run": a.run, "bots": rows}, ensure_ascii=False, indent=2), encoding="utf-8")
+    print(json.dumps({"run": a.run, "bots": rows}, ensure_ascii=False))
+
+if __name__ == "__main__": main()

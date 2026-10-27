@@ -1,0 +1,24 @@
+{
+  "checks": [
+    {
+      "bot": 1,
+      "cases": 133,
+      "matched": 133,
+      "sdk_calls": 10243,
+      "parent_instructions": 793,
+      "result_sha256": "05a512ab0ebcc30758e3c1ddcf28cf041774de7ea2acf46ffabd799342cadf70",
+      "sdk_tape_sha256": "3db07d56b22483343c26d72a3950b65d813d38b8781beb9b516ad78fc7971465"
+    },
+    {
+      "bot": 3,
+      "cases": 133,
+      "matched": 133,
+      "sdk_calls": 10243,
+      "parent_instructions": 832,
+      "result_sha256": "05a512ab0ebcc30758e3c1ddcf28cf041774de7ea2acf46ffabd799342cadf70",
+      "sdk_tape_sha256": "3db07d56b22483343c26d72a3950b65d813d38b8781beb9b516ad78fc7971465"
+    }
+  ],
+  "independent_review": "news_pipeline_review: no material findings; read-only review of both production headers, recorder, comparison and r7 evidence",
+  "whole_eas_complete": 0
+}
