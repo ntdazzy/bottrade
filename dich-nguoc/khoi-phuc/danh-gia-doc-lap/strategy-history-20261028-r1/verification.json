@@ -1,0 +1,76 @@
+{
+  "checks": [
+    {
+      "bot": 1,
+      "normal_run": "b1-strategy-history-20261028-r3",
+      "cases": 270,
+      "matched": 270,
+      "failed": 0,
+      "sdk_calls": 7202,
+      "native_sort_entries": 72,
+      "host_cpu_additions": 612,
+      "result_sha256": "d1c45e5308889d57705a87cf873708b2720772c75c9e5e6e86fa47d35e32c0a4",
+      "sources_sha256": {
+        "Include/bot-cua-toi-1/Bot1StrategyHistory.mqh": "13be7585d62c0c0a719e26b6fb1b789506d946fbae70cb631b5768c66a36956e",
+        "Scripts/bot-cua-toi-1/Bot1StrategyHistoryCheck.mq5": "e3a333c05e3ff88dd91c13e57f26b73959852bac4fb6da96401f3c9583a4a3b3",
+        "Include/bot-cua-toi-1/Bot1HistorySort.mqh": "9954854b21c7973835eb0c6c589e93d3b655b509d37bbcaa9c289094a01fd4e3"
+      },
+      "fatal_cases": 4,
+      "source_error_lines": [
+        42,
+        44,
+        64,
+        65
+      ],
+      "fatal_runtime_exit_codes": [
+        4294967295,
+        4294967295,
+        4294967295,
+        4294967295
+      ]
+    },
+    {
+      "bot": 3,
+      "normal_run": "b3-strategy-history-20261028-r3",
+      "cases": 270,
+      "matched": 270,
+      "failed": 0,
+      "sdk_calls": 7252,
+      "native_sort_entries": 76,
+      "host_cpu_additions": 618,
+      "result_sha256": "6e315037bbfcd1750017b88e764f1cd037f0039ca8bf80ec5734fad2989f445f",
+      "sources_sha256": {
+        "Scripts/bot-cua-toi-3/Bot3StrategyHistoryCheck.mq5": "20319185c832883523a2a330dd3074891e1308b5d03c71c2c5b94e77f9062d51",
+        "Include/bot-cua-toi-3/Bot3HistorySort.mqh": "1009721fd541b8a9e6495e364c3018407a9a227291780750a887f1d1b3588c77",
+        "Include/bot-cua-toi-3/Bot3StrategyHistory.mqh": "a67165e18d96fb945b7c87f1ad92e35d523d172d6d53c4ffca18928eef799b48"
+      },
+      "fatal_cases": 4,
+      "source_error_lines": [
+        42,
+        44,
+        64,
+        65
+      ],
+      "fatal_runtime_exit_codes": [
+        4294967295,
+        4294967295,
+        4294967295,
+        4294967295
+      ]
+    }
+  ],
+  "host_cpu_calibration": {
+    "cases": 100,
+    "unicorn_differences": 15,
+    "independently_reproduced": true
+  },
+  "negative_controls_rejected": 2,
+  "full_eas_complete": 0,
+  "unchanged_originals": 2,
+  "remaining": [
+    "Full initialization and outer dispatch/events",
+    "Complete setting, rendering, restart and resource behavior",
+    "Audit old NaN arithmetic checks against actual CPU",
+    "Paired original/source EA runs under identical data and conditions"
+  ]
+}

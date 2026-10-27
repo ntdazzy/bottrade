@@ -1,0 +1,11 @@
+{
+  "cases": 254,
+  "failed": 1,
+  "failures": [
+    {
+      "case": 178,
+      "tag": "sum-order",
+      "error": "RETURN_BITS (178, 0)"
+    }
+  ]
+}

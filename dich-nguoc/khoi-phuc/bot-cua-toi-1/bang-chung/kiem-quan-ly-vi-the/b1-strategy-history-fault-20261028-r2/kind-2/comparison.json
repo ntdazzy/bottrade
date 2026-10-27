@@ -1,0 +1,12 @@
+{
+  "native_fault": "0x132de1000001f6",
+  "sdk_calls": 9,
+  "state_sha256": "ec9f115bb9ca6f2825605202e66457554dcfc37f9f3c43dd06ab869dedbc8af2",
+  "state_before_fault_matched": true,
+  "kind": 2,
+  "source_line": 64,
+  "mql5_error": "FJ\t2\t03:40:10.799\tBot1StrategyHistoryFaultCheck (XAUUSD_NOCOST_V2,M15)\tarray out of range in 'Bot1StrategyHistory.mqh' (64,42)",
+  "mt5_exit_code": 4294967295,
+  "prefix_sha256": "10d209a89109f584fe473476eabddab477fa340eed8e173edd8122cbf684b3dc",
+  "last_state_sha256": "ec9f115bb9ca6f2825605202e66457554dcfc37f9f3c43dd06ab869dedbc8af2"
+}

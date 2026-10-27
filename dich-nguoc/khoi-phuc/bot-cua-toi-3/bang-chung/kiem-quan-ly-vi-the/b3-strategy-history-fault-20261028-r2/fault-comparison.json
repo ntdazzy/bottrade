@@ -1,0 +1,88 @@
+{
+  "bot": 3,
+  "cases": 4,
+  "matched": 4,
+  "failed": 0,
+  "results": [
+    {
+      "native_fault": "0x103804000001f6",
+      "sdk_calls": 9,
+      "state_sha256": "e731c54c9a4247322928e5641663d517a4d73e4954fa09578fe58e6f6dc4d159",
+      "state_before_fault_matched": true,
+      "kind": 0,
+      "source_line": 42,
+      "mql5_error": "MD\t2\t03:40:01.723\tBot3StrategyHistoryFaultCheck (XAUUSD_NOCOST_V2,M15)\tarray out of range in 'Bot3StrategyHistory.mqh' (42,35)",
+      "mt5_exit_code": 4294967295,
+      "prefix_sha256": "8850560d0a22a38c3e5fca4abb9d51fa8dbe952bb7961dd085aa85ed787010e7",
+      "last_state_sha256": "e731c54c9a4247322928e5641663d517a4d73e4954fa09578fe58e6f6dc4d159"
+    },
+    {
+      "native_fault": "0x103805000001f6",
+      "sdk_calls": 10,
+      "state_sha256": "6ac08ba7b5dace1453983380a02f4f3ef0920fc97d1056ec4395aea3c3ca5163",
+      "state_before_fault_matched": true,
+      "kind": 1,
+      "source_line": 44,
+      "mql5_error": "RD\t2\t03:40:08.038\tBot3StrategyHistoryFaultCheck (XAUUSD_NOCOST_V2,M15)\tarray out of range in 'Bot3StrategyHistory.mqh' (44,32)",
+      "mt5_exit_code": 4294967295,
+      "prefix_sha256": "3a6dc393bc16bd059b446a554e92f380f1853229f4f552ef938942d686813530",
+      "last_state_sha256": "6ac08ba7b5dace1453983380a02f4f3ef0920fc97d1056ec4395aea3c3ca5163"
+    },
+    {
+      "native_fault": "0x133818000001f6",
+      "sdk_calls": 9,
+      "state_sha256": "d9071cd9e0118b2678c4b5c579863c6a237771f5fb0a9a686706a99ff4e0eef1",
+      "state_before_fault_matched": true,
+      "kind": 2,
+      "source_line": 64,
+      "mql5_error": "QD\t2\t03:40:12.747\tBot3StrategyHistoryFaultCheck (XAUUSD_NOCOST_V2,M15)\tarray out of range in 'Bot3StrategyHistory.mqh' (64,42)",
+      "mt5_exit_code": 4294967295,
+      "prefix_sha256": "c1b1bb070c900ccf3aea726be2920509a113d26d7ad70efbe39abbc93de860a2",
+      "last_state_sha256": "d9071cd9e0118b2678c4b5c579863c6a237771f5fb0a9a686706a99ff4e0eef1"
+    },
+    {
+      "native_fault": "0x1a3819000001f6",
+      "sdk_calls": 9,
+      "state_sha256": "1db55e43de2e474abc94c1612103baef5cea3fc5949bda197b6b5a762a96e108",
+      "state_before_fault_matched": true,
+      "kind": 3,
+      "source_line": 65,
+      "mql5_error": "ID\t2\t03:40:18.927\tBot3StrategyHistoryFaultCheck (XAUUSD_NOCOST_V2,M15)\tarray out of range in 'Bot3StrategyHistory.mqh' (65,49)",
+      "mt5_exit_code": 4294967295,
+      "prefix_sha256": "c70dfc2bd074bda5f536a7ffa6a4ebfd2fbf5c56d961b2e57f6ac8f2dc9df1f5",
+      "last_state_sha256": "1db55e43de2e474abc94c1612103baef5cea3fc5949bda197b6b5a762a96e108"
+    }
+  ],
+  "sources_sha256": {
+    "Include/bot-cua-toi-3/Bot3HistorySort.mqh": "1009721fd541b8a9e6495e364c3018407a9a227291780750a887f1d1b3588c77",
+    "Include/bot-cua-toi-3/Bot3StrategyHistory.mqh": "a67165e18d96fb945b7c87f1ad92e35d523d172d6d53c4ffca18928eef799b48",
+    "Scripts/bot-cua-toi-3/Bot3StrategyHistoryFaultCheck.mq5": "ec6941adc872eba39f3100dd3e9d0622b2cca9595fb5c001cb6a5eff29a69599"
+  },
+  "build": "b3-strategy-history-fault-20261028-r1",
+  "build_receipt_sha256": "aff6a98d708333d5b3465fd7a7870fe208915e4ac5879e463ba1eec8b8aef954",
+  "tool_sha256": "d87f937ee2e259f0a28e4192b55eeda868aacb6f4c8b6934d0ac3ce477056bb0",
+  "shared_identity": {
+    "original_ex5_sha256": "ee063d3d87490afe24e2f4ce85f6b05659320e297b102efd70207f71ca2feb83",
+    "native_body_sha256": "3089eaa5351ecd00d853e4ea8153bab82c3f5a2196c724371fb84513c3ecd3b3",
+    "sources_sha256": {
+      "Include/bot-cua-toi-3/Bot3HistorySort.mqh": "1009721fd541b8a9e6495e364c3018407a9a227291780750a887f1d1b3588c77",
+      "Scripts/bot-cua-toi-3/Bot3StrategyHistoryCheck.mq5": "20319185c832883523a2a330dd3074891e1308b5d03c71c2c5b94e77f9062d51",
+      "Include/bot-cua-toi-3/Bot3StrategyHistory.mqh": "a67165e18d96fb945b7c87f1ad92e35d523d172d6d53c4ffca18928eef799b48"
+    },
+    "helpers_sha256": {
+      "cong-cu/kiem-lich-su-chien-luoc-bot-1-3.py": "64970d4a1ef42180fb44b3da19d6b51aa60147fce70ac480cd78d5769e91c45a",
+      "cong-cu/kiem-bang-thong-tin-lich-su-bot-1-3.py": "39d3cfd2d70045f8cae98735ce40bef8d4743f559052c0b78aa9ada8ec848155",
+      "cong-cu/kiem-sap-xep-bot-1-3.py": "16c768a081c142b254677128661210e2f15706cb9786655625015aa41a548da0",
+      "cong-cu/kiem-gia-vao-bot-1-3.py": "22394e48932feb7242b967aa58e327d2990402f12bfe52621916f64914c9dac2",
+      "cong-cu/kiem-muc-gia-bot-1-3.py": "a6c447ca80029fb63ced0c9d1673bb14222a7736b04df5c410f280f8471d6a35",
+      "cong-cu/kiem-khoi-luong-hop-le-bot-1-3.py": "8251fb4423d6f5f2e1b79a1c53dbb25fb5a6c568bb61cddef23396dc982243f0",
+      "cong-cu/kiem-ban-git-quan-ly.py": "7186478774b34e0d72b4594fbcc85972d9b4c07ed02160987d46d34f39dcb160",
+      "danh-gia-doc-lap/strategy-history-20261028-r1/nan-add-cpu-probe.py": "232a79fdeec98045553277d91831e5f0cf558feff2fcb70010a5532cbee4d837",
+      "danh-gia-doc-lap/strategy-history-20261028-r1/nan-add-cpu-probe.json": "4f0f1395695010e9ee459ac339be20ad8586c3e322f8fe40c51223fe33afb65b"
+    }
+  },
+  "full_ea": false,
+  "limits": [
+    "Compare exact calls and state immediately before four array-bound failures. Post-failure runtime state/messages are not claimed identical."
+  ]
+}

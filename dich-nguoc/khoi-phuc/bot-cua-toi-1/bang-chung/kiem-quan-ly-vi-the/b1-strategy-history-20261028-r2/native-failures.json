@@ -1,0 +1,11 @@
+{
+  "cases": 270,
+  "failed": 1,
+  "failures": [
+    {
+      "case": 255,
+      "tag": "nan-sign-and-payload",
+      "error": "RETURN_BITS (255, 0)"
+    }
+  ]
+}

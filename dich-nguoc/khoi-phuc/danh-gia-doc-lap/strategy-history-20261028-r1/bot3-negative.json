@@ -1,0 +1,11 @@
+{
+  "bot": 3,
+  "case": 178,
+  "rejected": true,
+  "reason": "RETURN_BITS (178, 0)",
+  "old_source_sha256": "b8e0a845207774391dc514ea0781a764590fa8e06d25b3a02c32a5984cf120e4",
+  "old_mql5_return": "0xfff8000000000000",
+  "original_return_with_host_addsd": "0x7ff8000000000000",
+  "host_cpu_calibrated_pairs": 100,
+  "full_ea": false
+}

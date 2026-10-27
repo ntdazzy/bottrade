@@ -1,3 +1,11 @@
+Ngày 28/10, cập nhật mới: đã dựng toàn bộ hàm lịch sử theo chiến lược
+`Bot1StrategyHistory.mqh`, giữ chung bộ lưu qua nhiều lần gọi: **270/270 ca**
+và **4/4 nhánh lỗi dãy** khớp. Ghép 88 tệp biên dịch 0 lỗi/0 cảnh báo.
+Đã sửa khác biệt phép cộng số không hợp lệ và đo riêng CPU thật; các
+phép kiểm cũ có NaN cần rà lại trước kết luận 100%. Còn bộ điều phối
+đầy đủ, khởi tạo, các sự kiện và chạy cặp EA.
+[Bằng chứng mới](../danh-gia-doc-lap/strategy-history-20261028-r1/README.md).
+
 Ngày 28/10, cập nhật mới: đã dựng toàn hàm tạo bảng trong `Bot1PanelCreation.mqh`,
 so bản gốc **170/170 ca khớp**. Bảng dựng thật trên MT5 có
 **45 đối tượng, 8 hàng chiến lược**; đã xem ảnh. Ghép 87 tệp

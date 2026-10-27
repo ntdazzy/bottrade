@@ -1,3 +1,6 @@
+- `kiem-lich-su-chien-luoc-bot-1-3.py generate BOT | prepare|mql5|original|compare BOT RUN`: toàn hàm lịch sử từng chiến lược và bộ lưu dùng chung, 270ca mỗi bot; `mql5` cần `--build BUILD`. Ba phép cộng chạy trên CPU thật sau đối chứng100cặp; các dịch vụ/dãy được đo trên MT5 riêng.
+- `kiem-loi-lich-su-chien-luoc-bot-1-3.py generate BOT | run BOT RUN --build BUILD`: bốn nhánh lỗi dãy, so lời gọi/trạng thái ngay trước lỗi; MT5 cố ý dừng với mã4294967295, không gọi là thoát thường.
+
 - `kiem-tao-bang-bot-1-3.py generate BOT | prepare|mql5|original|compare BOT RUN`: toàn hàm tạo bảng, 170/179 ca khớp; `mql5` cần `--build BUILD`, chạy trước `original`. Nguyên các thân tạo ô/chọn tin; chưa là toàn EA.
 - `kiem-hinh-bang-bot-1-3.py generate BOT | run BOT RUN --build BUILD`: dựng bảng thật trên MT5 riêng, xuất đối tượng và ảnh; đã có45/50đối tượng,8/9hàng. Chưa so ảnh gốc.
 - `phan-tich-tao-bang-bot-1-3.py BOT OUTPUT [--mode N] [--frequency N]`: đọc luồng tạo bảng gốc với phản hồi giả để phân tích; không dùng riêng kết quả này để xác nhận mã đã khớp.

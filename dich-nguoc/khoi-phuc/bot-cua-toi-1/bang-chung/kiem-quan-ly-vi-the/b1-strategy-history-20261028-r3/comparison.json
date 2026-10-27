@@ -1,0 +1,18 @@
+{
+  "cases": 270,
+  "matched": 270,
+  "failed": 0,
+  "full_ea": false,
+  "whole_bot_complete": false,
+  "whole_manager_complete": false,
+  "full_strategy_history_executed": true,
+  "native_sort_executed": true,
+  "child_helpers_intercepted": false,
+  "terminal_replies_supplied": true,
+  "array_resize_measured_in_mt5": true,
+  "addsd_executed_on_host_cpu": true,
+  "original_ex5_changed": false,
+  "limits": [
+    "Valid caller strategy indexes, normal-return cases, successful string allocations. Full cache building/searching/sort and repeated calls; MT5 ArrayResize measured. Not fatal array faults, full dispatcher or a full EA pair."
+  ]
+}

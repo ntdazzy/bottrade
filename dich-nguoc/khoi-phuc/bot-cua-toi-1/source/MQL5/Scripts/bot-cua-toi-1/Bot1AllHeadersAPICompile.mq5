@@ -74,6 +74,7 @@
 #include "../../Include/bot-cua-toi-1/Bot1ReleaseFilters.mqh"
 #include "../../Include/bot-cua-toi-1/Bot1RuntimeProfile.mqh"
 #include "../../Include/bot-cua-toi-1/Bot1StrategyContext.mqh"
+#include "../../Include/bot-cua-toi-1/Bot1StrategyHistory.mqh"
 #include "../../Include/bot-cua-toi-1/Bot1StrategySelection.mqh"
 #include "../../Include/bot-cua-toi-1/Bot1StrategySetup.mqh"
 #include "../../Include/bot-cua-toi-1/Bot1TradeErrors.mqh"

@@ -1,0 +1,12 @@
+{
+  "native_fault": "0x103804000001f6",
+  "sdk_calls": 9,
+  "state_sha256": "e731c54c9a4247322928e5641663d517a4d73e4954fa09578fe58e6f6dc4d159",
+  "state_before_fault_matched": true,
+  "kind": 0,
+  "source_line": 42,
+  "mql5_error": "MD\t2\t03:40:01.723\tBot3StrategyHistoryFaultCheck (XAUUSD_NOCOST_V2,M15)\tarray out of range in 'Bot3StrategyHistory.mqh' (42,35)",
+  "mt5_exit_code": 4294967295,
+  "prefix_sha256": "8850560d0a22a38c3e5fca4abb9d51fa8dbe952bb7961dd085aa85ed787010e7",
+  "last_state_sha256": "e731c54c9a4247322928e5641663d517a4d73e4954fa09578fe58e6f6dc4d159"
+}

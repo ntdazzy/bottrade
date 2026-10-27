@@ -911,3 +911,11 @@
 /bot-cua-toi-[13]/bang-chung/kiem-quan-ly-vi-the/b[13]-panel-create-*/** -text
 /bot-cua-toi-[13]/bang-chung/kiem-quan-ly-vi-the/b[13]-panel-visual-*/** -text
 /danh-gia-doc-lap/panel-create-20261028-r1/** -text
+# Strategy-history cache, host arithmetic calibration and fatal-array checks.
+/cong-cu/kiem-lich-su-chien-luoc-bot-1-3.py -text
+/cong-cu/kiem-loi-lich-su-chien-luoc-bot-1-3.py -text
+/bot-cua-toi-[13]/source/MQL5/Include/bot-cua-toi-[13]/Bot[13]StrategyHistory.mqh -text
+/bot-cua-toi-[13]/source/MQL5/Scripts/bot-cua-toi-[13]/Bot[13]StrategyHistory*.mq5 -text
+/bot-cua-toi-[13]/bang-chung/bien-dich/b[13]-strategy-history-*/** -text
+/bot-cua-toi-[13]/bang-chung/kiem-quan-ly-vi-the/b[13]-strategy-history-*/** -text
+/danh-gia-doc-lap/strategy-history-20261028-r1/** -text
