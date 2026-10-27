@@ -1,12 +1,15 @@
-# Bằng chứng raw
+# Bằng chứng đọc lại tiền tài khoản
 
-- Bot1 `0x36220`: lệnh gọi `AccountInfoString` ở `0x362d1`, kiểm USD ở
-  `0x36301`, đọc lại nếu khác ở `0x3636c`, rồi đọc mới tại `0x363bc`.
-  Các nhánh tiếp theo đọc chuỗi mới ở `0x36473`, `0x36527`, và các nhánh
-  sau; thân dùng `iClose(...,0x4018,1)` rồi chỉ đọc lần hai khi giá dương.
-- Bot3 `0x8300`: cùng mẫu ở `0x83b1`, `0x83e1`, `0x844c`, `0x847c`;
-  nhánh đổi giá bắt đầu tại `0x8753`. Cổng `0x41780` lặp mẫu ở
-  `0x41831`, `0x41861`, `0x418cc`, `0x4191c`; nhánh chia trực tiếp khi
-  giá đã dương ở `0x41c36` và `0x41f42`.
-- Raw cho thấy các điều kiện tiếp nối bằng nhánh riêng; mã phục dựng
-  không dùng `break` sau lần khớp đầu.
+Bản liệt kê đầy đủ và mã SHA-256 của các thân gốc nằm tại
+[volume-runtime-20261027-r1/native-evidence.json](../volume-runtime-20261027-r1/native-evidence.json).
+
+Bot1: gọi AccountInfoString tại `362d1`, soUSD, nếu khác thì gọi lại
+ở `3637b`; sau đó gọi mới tại `363bc` trước điều kiệnEUR. Bot3 có hai
+lần gọi đầu tương ứng `83b1`, `845b`. Các điều kiện tiếp tục gọi lại;
+không dừng sau mã tiền đầu tiên khớp.
+
+Thứ tự hướng đổi sangUSD của cả hai bot là EUR,GBP,AUD,JPY/YEN,CHF,
+CZK,HKD,RUB,CNH,CNY,SGD rồi các tiền số. Kết quả được làm tròn ở cuối.
+Hướng đổi ngược của bot3 dùng thân `41780` đã so riêng trong nguồn
+Bot3StrategyContextAmount. Bộ kiểm mới so cả thứ tự/đối số/chuỗi
+và trạng thái, gồm tiền tài khoản thay đổi giữa các lần đọc.
