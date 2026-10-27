@@ -1,0 +1,24 @@
+{
+  "checks": [
+    {
+      "bot": 1,
+      "cases": 490,
+      "matched": 490,
+      "fatal_cases": 16,
+      "fatal_matched": 16,
+      "instructions": 611,
+      "result_sha256": "a77d9ade87f6fc353c9cf2f616cd21956c6050dde24bd6baa6fc475e136e36ea"
+    },
+    {
+      "bot": 3,
+      "cases": 490,
+      "matched": 490,
+      "fatal_cases": 16,
+      "fatal_matched": 16,
+      "instructions": 611,
+      "result_sha256": "a77d9ade87f6fc353c9cf2f616cd21956c6050dde24bd6baa6fc475e136e36ea"
+    }
+  ],
+  "independent_review": "release_calendars_review: no material blockers; logical SDK error model and exact CPI predicate/IR timeout reviewed",
+  "whole_eas_complete": 0
+}

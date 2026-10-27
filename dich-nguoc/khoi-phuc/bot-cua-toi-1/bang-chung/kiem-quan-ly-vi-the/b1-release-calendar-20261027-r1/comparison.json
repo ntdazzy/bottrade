@@ -1,0 +1,17 @@
+{
+  "cases": 490,
+  "matched": 490,
+  "failed": 0,
+  "first_failures": [],
+  "whole_bot_complete": false,
+  "whole_manager_complete": false,
+  "whole_evaluator_complete": false,
+  "full_ea": false,
+  "native_interest_cpi_calendars_executed": true,
+  "child_helpers_intercepted": false,
+  "terminal_replies_and_errors_supplied": true,
+  "original_ex5_changed": false,
+  "limits": [
+    "Calendar helpers only, including country/currency queries, exact predicates, stale/injected timeout and series arrays. Calendar/error/allocation replies supplied; StringFind return/error effects measured in MT5. No IR/CPI evaluator or actual calendar network."
+  ]
+}

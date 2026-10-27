@@ -1,3 +1,9 @@
+Đã dựng `Bot1ReleaseCalendars.mqh` lấy lịch lãi suất/CPI theo đúng
+điều kiện gốc: **490/490ca thường +16/16ca lỗi mảng khớp** mỗi bot,
+đủ mảng xuôi/ngược, mã dự phòng, lỗi5401và thông báo. Hai bản biên dịch0/0.
+Còn ghép người gọi IR/CPI vào luồng tin; NFPđã có nguồn ghép riêng.
+[Phạm vi](../danh-gia-doc-lap/remaining-news-calendars-20261027-r1/SPEC.md).
+
 Đã ghép nguyên nhánh NFP trong `Bot1NfpFilter.mqh`: lịch kinh tế,
 lịch dự phòng, kiểm giờ, hủy lệnh chờ và đóng vị thế qua gửi yêu cầu.
 **107/107tình huống khớp**, so3.723lần gọi dịch vụ và trạng thái trước

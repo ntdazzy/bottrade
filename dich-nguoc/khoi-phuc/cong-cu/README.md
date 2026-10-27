@@ -1,3 +1,9 @@
+- `kiem-lich-ir-cpi-bot-1-3.py prepare|original|mql5|compare BOT RUN`:
+  helper lãi suất/CPI,490ca thường +16ca lỗi mỗi bot, so truy vấn,
+  điều kiện chọn, mốc trả/mã lỗi/thông báo và mảng xuôi-ngược.
+  `mql5`/`errors` cần `--build BUILD`; lỗi terminal được cấp ở rìaSDK,
+  StringFindvà mã lỗi của nó được đo thật trong MT5. Chưa là caller/EA.
+
 - `kiem-nfp-toan-nhanh-bot-1-3.py prepare|mql5|original|compare BOT RUN`:
   nguyên nhánhNFPvà các thân lịch/giờ/hủy/đóng/gửi. Chạy mql5 trước
   original để đo trả lời đổi số/ngày/chuỗi/toán học của MT5; kiểm gốc

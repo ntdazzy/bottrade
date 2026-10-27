@@ -1,0 +1,30 @@
+[
+  {
+    "bot": 1,
+    "kind": "interest",
+    "begin": "0x6600",
+    "end": "0x6a83",
+    "sha256": "838030d52caabd790d7d05aa41e1e5565383e48caf8af43af743d891d6ccb779"
+  },
+  {
+    "bot": 1,
+    "kind": "cpi",
+    "begin": "0x6a90",
+    "end": "0x7306",
+    "sha256": "5715ddd4e5fe42fcaa691abb7d03dc4768a03006226e906be6346111a732f861"
+  },
+  {
+    "bot": 3,
+    "kind": "interest",
+    "begin": "0x6f20",
+    "end": "0x73a3",
+    "sha256": "b7b0dd56f6a7d08c77fee52856adb8014e6bf82723c993b11690c2f28f10037b"
+  },
+  {
+    "bot": 3,
+    "kind": "cpi",
+    "begin": "0x73b0",
+    "end": "0x7c26",
+    "sha256": "9bdc4165b5a1765c612f238beabeaee5894345223708701851b7735aafcd61ba"
+  }
+]

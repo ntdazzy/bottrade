@@ -1,0 +1,486 @@
+[
+  {
+    "bot": 1,
+    "kind": "interest",
+    "title": "Fed Interest Rate Decision",
+    "initial_error": 0,
+    "event_id_requested": 123,
+    "returned_time": 1793200000,
+    "messages": []
+  },
+  {
+    "bot": 1,
+    "kind": "interest",
+    "title": "Fed Interest Rate Decision",
+    "initial_error": 5401,
+    "event_id_requested": 123,
+    "returned_time": 0,
+    "messages": [
+      "Calendar timeout error. Try shortening the date range."
+    ]
+  },
+  {
+    "bot": 1,
+    "kind": "interest",
+    "title": "X Fed Interest Rate Decision",
+    "initial_error": 0,
+    "event_id_requested": 123,
+    "returned_time": 1793200000,
+    "messages": []
+  },
+  {
+    "bot": 1,
+    "kind": "interest",
+    "title": "X Fed Interest Rate Decision",
+    "initial_error": 5401,
+    "event_id_requested": 123,
+    "returned_time": 0,
+    "messages": [
+      "Calendar timeout error. Try shortening the date range."
+    ]
+  },
+  {
+    "bot": 1,
+    "kind": "interest",
+    "title": "fed Interest Rate Decision",
+    "initial_error": 0,
+    "event_id_requested": 840050014,
+    "returned_time": 1793200000,
+    "messages": []
+  },
+  {
+    "bot": 1,
+    "kind": "interest",
+    "title": "fed Interest Rate Decision",
+    "initial_error": 5401,
+    "event_id_requested": 840050014,
+    "returned_time": 0,
+    "messages": [
+      "Calendar timeout error. Try shortening the date range."
+    ]
+  },
+  {
+    "bot": 1,
+    "kind": "interest",
+    "title": "Other",
+    "initial_error": 0,
+    "event_id_requested": 840050014,
+    "returned_time": 1793200000,
+    "messages": []
+  },
+  {
+    "bot": 1,
+    "kind": "interest",
+    "title": "Other",
+    "initial_error": 5401,
+    "event_id_requested": 840050014,
+    "returned_time": 0,
+    "messages": [
+      "Calendar timeout error. Try shortening the date range."
+    ]
+  },
+  {
+    "bot": 1,
+    "kind": "cpi",
+    "title": "Consumer Price Index",
+    "initial_error": 0,
+    "event_id_requested": 123,
+    "returned_time": 1793200000,
+    "messages": []
+  },
+  {
+    "bot": 1,
+    "kind": "cpi",
+    "title": "Consumer Price Index",
+    "initial_error": 5401,
+    "event_id_requested": 123,
+    "returned_time": 1793200000,
+    "messages": []
+  },
+  {
+    "bot": 1,
+    "kind": "cpi",
+    "title": "CPI ",
+    "initial_error": 0,
+    "event_id_requested": 123,
+    "returned_time": 1793200000,
+    "messages": []
+  },
+  {
+    "bot": 1,
+    "kind": "cpi",
+    "title": "CPI ",
+    "initial_error": 5401,
+    "event_id_requested": 123,
+    "returned_time": 1793200000,
+    "messages": []
+  },
+  {
+    "bot": 1,
+    "kind": "cpi",
+    "title": "(YoY)",
+    "initial_error": 0,
+    "event_id_requested": 840030005,
+    "returned_time": 1793200000,
+    "messages": []
+  },
+  {
+    "bot": 1,
+    "kind": "cpi",
+    "title": "(YoY)",
+    "initial_error": 5401,
+    "event_id_requested": 840030005,
+    "returned_time": 1793200000,
+    "messages": []
+  },
+  {
+    "bot": 1,
+    "kind": "cpi",
+    "title": "ex Food",
+    "initial_error": 0,
+    "event_id_requested": 840030005,
+    "returned_time": 1793200000,
+    "messages": []
+  },
+  {
+    "bot": 1,
+    "kind": "cpi",
+    "title": "ex Food",
+    "initial_error": 5401,
+    "event_id_requested": 840030005,
+    "returned_time": 1793200000,
+    "messages": []
+  },
+  {
+    "bot": 1,
+    "kind": "cpi",
+    "title": "Consumer Price Index ex Food",
+    "initial_error": 0,
+    "event_id_requested": 840030005,
+    "returned_time": 1793200000,
+    "messages": []
+  },
+  {
+    "bot": 1,
+    "kind": "cpi",
+    "title": "Consumer Price Index ex Food",
+    "initial_error": 5401,
+    "event_id_requested": 840030005,
+    "returned_time": 1793200000,
+    "messages": []
+  },
+  {
+    "bot": 1,
+    "kind": "cpi",
+    "title": "CPI ex Food (YoY)",
+    "initial_error": 0,
+    "event_id_requested": 123,
+    "returned_time": 1793200000,
+    "messages": []
+  },
+  {
+    "bot": 1,
+    "kind": "cpi",
+    "title": "CPI ex Food (YoY)",
+    "initial_error": 5401,
+    "event_id_requested": 123,
+    "returned_time": 1793200000,
+    "messages": []
+  },
+  {
+    "bot": 1,
+    "kind": "cpi",
+    "title": "CPI ex Food (MoM)",
+    "initial_error": 0,
+    "event_id_requested": 840030005,
+    "returned_time": 1793200000,
+    "messages": []
+  },
+  {
+    "bot": 1,
+    "kind": "cpi",
+    "title": "CPI ex Food (MoM)",
+    "initial_error": 5401,
+    "event_id_requested": 840030005,
+    "returned_time": 1793200000,
+    "messages": []
+  },
+  {
+    "bot": 1,
+    "kind": "cpi",
+    "title": "CPI blah",
+    "initial_error": 0,
+    "event_id_requested": 123,
+    "returned_time": 1793200000,
+    "messages": []
+  },
+  {
+    "bot": 1,
+    "kind": "cpi",
+    "title": "CPI blah",
+    "initial_error": 5401,
+    "event_id_requested": 123,
+    "returned_time": 1793200000,
+    "messages": []
+  },
+  {
+    "bot": 1,
+    "kind": "cpi",
+    "title": "Consumer Price Index (YoY)",
+    "initial_error": 0,
+    "event_id_requested": 123,
+    "returned_time": 1793200000,
+    "messages": []
+  },
+  {
+    "bot": 1,
+    "kind": "cpi",
+    "title": "Consumer Price Index (YoY)",
+    "initial_error": 5401,
+    "event_id_requested": 123,
+    "returned_time": 1793200000,
+    "messages": []
+  },
+  {
+    "bot": 3,
+    "kind": "interest",
+    "title": "Fed Interest Rate Decision",
+    "initial_error": 0,
+    "event_id_requested": 123,
+    "returned_time": 1793200000,
+    "messages": []
+  },
+  {
+    "bot": 3,
+    "kind": "interest",
+    "title": "Fed Interest Rate Decision",
+    "initial_error": 5401,
+    "event_id_requested": 123,
+    "returned_time": 0,
+    "messages": [
+      "Calendar timeout error. Try shortening the date range."
+    ]
+  },
+  {
+    "bot": 3,
+    "kind": "interest",
+    "title": "X Fed Interest Rate Decision",
+    "initial_error": 0,
+    "event_id_requested": 123,
+    "returned_time": 1793200000,
+    "messages": []
+  },
+  {
+    "bot": 3,
+    "kind": "interest",
+    "title": "X Fed Interest Rate Decision",
+    "initial_error": 5401,
+    "event_id_requested": 123,
+    "returned_time": 0,
+    "messages": [
+      "Calendar timeout error. Try shortening the date range."
+    ]
+  },
+  {
+    "bot": 3,
+    "kind": "interest",
+    "title": "fed Interest Rate Decision",
+    "initial_error": 0,
+    "event_id_requested": 840050014,
+    "returned_time": 1793200000,
+    "messages": []
+  },
+  {
+    "bot": 3,
+    "kind": "interest",
+    "title": "fed Interest Rate Decision",
+    "initial_error": 5401,
+    "event_id_requested": 840050014,
+    "returned_time": 0,
+    "messages": [
+      "Calendar timeout error. Try shortening the date range."
+    ]
+  },
+  {
+    "bot": 3,
+    "kind": "interest",
+    "title": "Other",
+    "initial_error": 0,
+    "event_id_requested": 840050014,
+    "returned_time": 1793200000,
+    "messages": []
+  },
+  {
+    "bot": 3,
+    "kind": "interest",
+    "title": "Other",
+    "initial_error": 5401,
+    "event_id_requested": 840050014,
+    "returned_time": 0,
+    "messages": [
+      "Calendar timeout error. Try shortening the date range."
+    ]
+  },
+  {
+    "bot": 3,
+    "kind": "cpi",
+    "title": "Consumer Price Index",
+    "initial_error": 0,
+    "event_id_requested": 123,
+    "returned_time": 1793200000,
+    "messages": []
+  },
+  {
+    "bot": 3,
+    "kind": "cpi",
+    "title": "Consumer Price Index",
+    "initial_error": 5401,
+    "event_id_requested": 123,
+    "returned_time": 1793200000,
+    "messages": []
+  },
+  {
+    "bot": 3,
+    "kind": "cpi",
+    "title": "CPI ",
+    "initial_error": 0,
+    "event_id_requested": 123,
+    "returned_time": 1793200000,
+    "messages": []
+  },
+  {
+    "bot": 3,
+    "kind": "cpi",
+    "title": "CPI ",
+    "initial_error": 5401,
+    "event_id_requested": 123,
+    "returned_time": 1793200000,
+    "messages": []
+  },
+  {
+    "bot": 3,
+    "kind": "cpi",
+    "title": "(YoY)",
+    "initial_error": 0,
+    "event_id_requested": 840030005,
+    "returned_time": 1793200000,
+    "messages": []
+  },
+  {
+    "bot": 3,
+    "kind": "cpi",
+    "title": "(YoY)",
+    "initial_error": 5401,
+    "event_id_requested": 840030005,
+    "returned_time": 1793200000,
+    "messages": []
+  },
+  {
+    "bot": 3,
+    "kind": "cpi",
+    "title": "ex Food",
+    "initial_error": 0,
+    "event_id_requested": 840030005,
+    "returned_time": 1793200000,
+    "messages": []
+  },
+  {
+    "bot": 3,
+    "kind": "cpi",
+    "title": "ex Food",
+    "initial_error": 5401,
+    "event_id_requested": 840030005,
+    "returned_time": 1793200000,
+    "messages": []
+  },
+  {
+    "bot": 3,
+    "kind": "cpi",
+    "title": "Consumer Price Index ex Food",
+    "initial_error": 0,
+    "event_id_requested": 840030005,
+    "returned_time": 1793200000,
+    "messages": []
+  },
+  {
+    "bot": 3,
+    "kind": "cpi",
+    "title": "Consumer Price Index ex Food",
+    "initial_error": 5401,
+    "event_id_requested": 840030005,
+    "returned_time": 1793200000,
+    "messages": []
+  },
+  {
+    "bot": 3,
+    "kind": "cpi",
+    "title": "CPI ex Food (YoY)",
+    "initial_error": 0,
+    "event_id_requested": 123,
+    "returned_time": 1793200000,
+    "messages": []
+  },
+  {
+    "bot": 3,
+    "kind": "cpi",
+    "title": "CPI ex Food (YoY)",
+    "initial_error": 5401,
+    "event_id_requested": 123,
+    "returned_time": 1793200000,
+    "messages": []
+  },
+  {
+    "bot": 3,
+    "kind": "cpi",
+    "title": "CPI ex Food (MoM)",
+    "initial_error": 0,
+    "event_id_requested": 840030005,
+    "returned_time": 1793200000,
+    "messages": []
+  },
+  {
+    "bot": 3,
+    "kind": "cpi",
+    "title": "CPI ex Food (MoM)",
+    "initial_error": 5401,
+    "event_id_requested": 840030005,
+    "returned_time": 1793200000,
+    "messages": []
+  },
+  {
+    "bot": 3,
+    "kind": "cpi",
+    "title": "CPI blah",
+    "initial_error": 0,
+    "event_id_requested": 123,
+    "returned_time": 1793200000,
+    "messages": []
+  },
+  {
+    "bot": 3,
+    "kind": "cpi",
+    "title": "CPI blah",
+    "initial_error": 5401,
+    "event_id_requested": 123,
+    "returned_time": 1793200000,
+    "messages": []
+  },
+  {
+    "bot": 3,
+    "kind": "cpi",
+    "title": "Consumer Price Index (YoY)",
+    "initial_error": 0,
+    "event_id_requested": 123,
+    "returned_time": 1793200000,
+    "messages": []
+  },
+  {
+    "bot": 3,
+    "kind": "cpi",
+    "title": "Consumer Price Index (YoY)",
+    "initial_error": 5401,
+    "event_id_requested": 123,
+    "returned_time": 1793200000,
+    "messages": []
+  }
+]

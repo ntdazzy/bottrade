@@ -1,0 +1,28 @@
+{
+  "original_ex5_sha256": "a3b0de423a06e10ebedc279307b93d7cb9188ba2bb5de77131a913c865b0e922",
+  "sources_sha256": {
+    "Scripts/bot-cua-toi-1/Bot1ReleaseCalendarsCheck.mq5": "2bad422cf3a997eb70f8544b9654045c08de3a20c90c50517abb11c61f9f5e5a",
+    "Include/bot-cua-toi-1/Bot1ReleaseCalendars.mqh": "4f5838cce558dcded2c5d9de49e233c69e650aa1f72aeb8fb05ca7bb9e5ddf32"
+  },
+  "helpers_sha256": {
+    "cong-cu/kiem-lich-ir-cpi-bot-1-3.py": "0cb9bc91385b4cee5d625a66b54a986e373ba908ece032e14835e4350eb4473d",
+    "cong-cu/kiem-lich-nfp-bot-1-3.py": "44f4fabc2800c818e558475e3ca97516160d41301d3a37a4d58321591273ab77",
+    "cong-cu/kiem-gia-vao-bot-1-3.py": "22394e48932feb7242b967aa58e327d2990402f12bfe52621916f64914c9dac2",
+    "cong-cu/kiem-muc-gia-bot-1-3.py": "a6c447ca80029fb63ced0c9d1673bb14222a7736b04df5c410f280f8471d6a35",
+    "cong-cu/kiem-ban-git-quan-ly.py": "7186478774b34e0d72b4594fbcc85972d9b4c07ed02160987d46d34f39dcb160",
+    "cong-cu/kiem-khoi-luong-hop-le-bot-1-3.py": "8251fb4423d6f5f2e1b79a1c53dbb25fb5a6c568bb61cddef23396dc982243f0",
+    "danh-gia-doc-lap/remaining-news-calendars-20261027-r1/native-bindings.json": "debcb2fb049d18258c5fef460f73f1be85dfe3359ce380e19666c9b1ed1710a5"
+  },
+  "cases": 490,
+  "fatal_cases": 16,
+  "instructions": 611,
+  "result_sha256": "a77d9ade87f6fc353c9cf2f616cd21956c6050dde24bd6baa6fc475e136e36ea",
+  "whole_bot_complete": false,
+  "whole_manager_complete": false,
+  "whole_evaluator_complete": false,
+  "full_ea": false,
+  "native_interest_cpi_calendars_executed": true,
+  "child_helpers_intercepted": false,
+  "terminal_replies_and_errors_supplied": true,
+  "original_ex5_changed": false
+}
