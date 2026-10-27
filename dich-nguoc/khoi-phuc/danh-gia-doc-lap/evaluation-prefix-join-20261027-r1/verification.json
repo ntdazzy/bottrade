@@ -1,0 +1,91 @@
+{
+  "checks": [
+    {
+      "bot": 1,
+      "scope": "continuous-evaluator",
+      "run": "b1-evaluation-20261027-r7",
+      "cases": 61,
+      "matched": 61,
+      "result_sha256": "a7a12d3265ef2ff0c3aae2904e26ae05612b12c39fa04743e203a33dda27c02c",
+      "sdk_calls": 5844,
+      "native_child_calls": {
+        "evaluation": 61,
+        "buy_manager": 56,
+        "sell_manager": 56,
+        "send": 107,
+        "modify": 40,
+        "table_cleanup": 9,
+        "close": 9
+      },
+      "child_helpers_intercepted": false
+    },
+    {
+      "bot": 1,
+      "scope": "manager-fields-regression",
+      "run": "b1-manager-fields-20261027-r4",
+      "cases": 352,
+      "matched": 352,
+      "result_sha256": "e21198f27c919bfeca2cdc598a356e37ae6379ca7939d8bc495f1a5873115764",
+      "sdk_calls": null,
+      "native_child_calls": null,
+      "child_helpers_intercepted": false
+    },
+    {
+      "bot": 1,
+      "scope": "old-router-interface",
+      "run": "b1-router-compat-20261027-r1",
+      "cases": 1536,
+      "matched": 1536,
+      "result_sha256": "d106ddc3a526d93e7517acb7930f9a4f9b6365505c17af616b120100bb26f18a",
+      "sdk_calls": null,
+      "native_child_calls": null,
+      "child_helpers_intercepted": true
+    },
+    {
+      "bot": 3,
+      "scope": "continuous-evaluator",
+      "run": "b3-evaluation-20261027-r7",
+      "cases": 57,
+      "matched": 57,
+      "result_sha256": "911340d3e6dc5bee454975f8cc1e613d7eed112aca6ead679d7d7d51c2829ea7",
+      "sdk_calls": 5339,
+      "native_child_calls": {
+        "evaluation": 57,
+        "buy_manager": 56,
+        "sell_manager": 56,
+        "send": 93,
+        "modify": 36,
+        "table_cleanup": 8,
+        "close": 11
+      },
+      "child_helpers_intercepted": false
+    },
+    {
+      "bot": 3,
+      "scope": "manager-fields-regression",
+      "run": "b3-manager-fields-20261027-r4",
+      "cases": 364,
+      "matched": 364,
+      "result_sha256": "5e4b26e789d16fca0a27f0922f093aecedb279d4465acd3b186ac55861fedb5d",
+      "sdk_calls": null,
+      "native_child_calls": null,
+      "child_helpers_intercepted": false
+    },
+    {
+      "bot": 3,
+      "scope": "old-router-interface",
+      "run": "b3-router-compat-20261027-r1",
+      "cases": 384,
+      "matched": 384,
+      "result_sha256": "537856dcfd0f1c239e3d5e3fbff1b6bf01d99320f2f4b0e24496e284239c0bc9",
+      "sdk_calls": null,
+      "native_child_calls": null,
+      "child_helpers_intercepted": true
+    }
+  ],
+  "whole_eas_complete": 0,
+  "whole_evaluator_complete": false,
+  "final_display_included": false,
+  "original_ex5_changed": false,
+  "independent_review": "Second review confirmed both BUY alias and its coverage gap resolved; four boundary cases and old-binary negative test verified. No further concrete finding. Full evaluator/EA remains unverified."
+}

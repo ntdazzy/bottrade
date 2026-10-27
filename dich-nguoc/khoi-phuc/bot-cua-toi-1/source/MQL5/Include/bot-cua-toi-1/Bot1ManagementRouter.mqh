@@ -52,7 +52,7 @@ int Bot1CountManagementPositions(const bool buy,const string &symbol,
 // shared.strategy_index is not used for it. Returns true when the licence flag is 0 or a
 // manager returned true, so the caller stops the rest of its pass; false lets it continue.
 // bar_first_zero_ticket_changed has no default and is passed to both bar-change managers.
-bool Bot1RoutePositionManagement(const uchar &license_valid,
+bool Bot1RoutePositionManagementFields(const uchar &license_valid,
                                  const uchar &tick_management,const uchar &bar_override,
                                  const int &timeframe,const uint strategy_index,
                                  long &last_times[],
@@ -61,7 +61,13 @@ bool Bot1RoutePositionManagement(const uchar &license_valid,
                                  const double &buy_levels[],const double &sell_levels[],
                                  Bot1PendingRequestState &requests,
                                  Bot1TradeSendOptions &options,const ulong &deviation,
-                                 const bool bar_first_zero_ticket_changed)
+                                 const bool bar_first_zero_ticket_changed,
+                                 double &copied_step,double &cache[][2],const double &volumes[],
+                                 const uint &current_index,uint &error_count,ulong &last_ticket,MqlTick &tick,
+                                 const string &symbol,const int &magic,const double &unit,
+                                 const double &stop_distance,const double &take_distance,const double &gap,
+                                 const double &freeze,const int &high_low_enabled,const double &step_reference,
+                                 const int &management_enabled,const double &emergency_offset)
 {
    // The flag is owned by the caller and only read here.
    if(license_valid==0)
@@ -75,35 +81,54 @@ bool Bot1RoutePositionManagement(const uchar &license_valid,
    {
       const ENUM_TIMEFRAMES frame=(ENUM_TIMEFRAMES)timeframe;
       const long previous=last_times[strategy_index];
-      const long observed=(long)iTime(settings.symbol,frame,1);
+      const long observed=(long)iTime(symbol,frame,1);
       if(observed==previous) return false;
       // symbol and timeframe are read again; the stored time comes from this second call.
-      const long current=(long)iTime(settings.symbol,(ENUM_TIMEFRAMES)timeframe,1);
+      const long current=(long)iTime(symbol,(ENUM_TIMEFRAMES)timeframe,1);
       last_times[strategy_index]=current;
       // Sell always runs after buy, even when buy returned true, with the state buy left behind.
       // Both receive the bar_first_zero_ticket_changed value of this router call.
-      const bool buy_changed=Bot1ManagePositions(true,settings,shared,buy_levels,requests,options,
-                                                 deviation,bar_first_zero_ticket_changed);
-      const bool sell_changed=Bot1ManagePositions(false,settings,shared,sell_levels,requests,
-                                                  options,deviation,bar_first_zero_ticket_changed);
+      const bool buy_changed=Bot1ManagePositionsFields(true,settings,shared,buy_levels,requests,options,
+         deviation,bar_first_zero_ticket_changed,copied_step,cache,volumes,current_index,error_count,last_ticket,tick,
+         symbol,magic,unit,stop_distance,take_distance,gap,freeze,high_low_enabled,step_reference,
+         management_enabled,emergency_offset);
+      const bool sell_changed=Bot1ManagePositionsFields(false,settings,shared,sell_levels,requests,options,
+         deviation,bar_first_zero_ticket_changed,copied_step,cache,volumes,current_index,error_count,last_ticket,tick,
+         symbol,magic,unit,stop_distance,take_distance,gap,freeze,high_low_enabled,step_reference,
+         management_enabled,emergency_offset);
       return buy_changed || sell_changed;
    }
 
    // Each count reads PositionsTotal itself. The sell count runs even when buy management
    // returned true and sees the positions and state buy management left behind.
    // Both per-tick managers take true for a zero ticket at index 0.
-   const int buy_count=Bot1CountManagementPositions(true,settings.symbol,settings.magic,
-                                                    shared.last_ticket);
+   const int buy_count=Bot1CountManagementPositions(true,symbol,magic,last_ticket);
    bool buy_changed=false;
    if(buy_count>0)
-      buy_changed=Bot1ManagePositions(true,settings,shared,buy_levels,requests,options,
-                                      deviation,true);
-   const int sell_count=Bot1CountManagementPositions(false,settings.symbol,settings.magic,
-                                                     shared.last_ticket);
+      buy_changed=Bot1ManagePositionsFields(true,settings,shared,buy_levels,requests,options,
+         deviation,true,copied_step,cache,volumes,current_index,error_count,last_ticket,tick,
+         symbol,magic,unit,stop_distance,take_distance,gap,freeze,high_low_enabled,step_reference,
+         management_enabled,emergency_offset);
+   const int sell_count=Bot1CountManagementPositions(false,symbol,magic,last_ticket);
    bool sell_changed=false;
    if(sell_count>0)
-      sell_changed=Bot1ManagePositions(false,settings,shared,sell_levels,requests,options,
-                                       deviation,true);
+      sell_changed=Bot1ManagePositionsFields(false,settings,shared,sell_levels,requests,options,
+         deviation,true,copied_step,cache,volumes,current_index,error_count,last_ticket,tick,
+         symbol,magic,unit,stop_distance,take_distance,gap,freeze,high_low_enabled,step_reference,
+         management_enabled,emergency_offset);
    return buy_changed || sell_changed;
+}
+
+bool Bot1RoutePositionManagement(const uchar &license_valid,const uchar &tick_management,const uchar &bar_override,
+                                 const int &timeframe,const uint strategy_index,long &last_times[],
+                                 const Bot1PositionManagementSettings &settings,Bot1PositionManagementState &shared,
+                                 const double &buy_levels[],const double &sell_levels[],Bot1PendingRequestState &requests,
+                                 Bot1TradeSendOptions &options,const ulong &deviation,const bool bar_first_zero_ticket_changed)
+{
+   return Bot1RoutePositionManagementFields(license_valid,tick_management,bar_override,timeframe,strategy_index,last_times,
+      settings,shared,buy_levels,sell_levels,requests,options,deviation,bar_first_zero_ticket_changed,
+      shared.copied_step,shared.cache,shared.volumes,shared.strategy_index,shared.error_count,shared.last_ticket,shared.tick,
+      settings.symbol,settings.magic,settings.unit,settings.stop_distance,settings.take_distance,settings.gap,
+      settings.freeze,settings.finish.high_low_enabled,settings.finish.step_reference,settings.enabled,settings.emergency_offset);
 }
 #endif

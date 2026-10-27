@@ -75,22 +75,36 @@ uchar Bot3CheckSession(const string symbol,const MqlDateTime &calendar,
    }
 }
 
-void Bot3PrepareEvaluation(const uint strategy_index,const uchar caller_flag,
-                           Bot3EvaluationHeadInputs &inputs,
-                           Bot3EvaluationPreludeState &state)
+void Bot3PrepareEvaluationFields(const uint strategy_index,const uchar caller_flag,
+                                  Bot3EvaluationHeadInputs &inputs,
+                                  Bot3EvaluationPreludeState &state,const string &symbol,
+                                  MqlTick &tick,double &spread,
+                                  MqlDateTime &current_calendar,bool &reported_sessions)
 {
-   const Bot3EvaluationHeadResult route=Bot3BeginEvaluation(strategy_index,caller_flag,inputs,state.head);
+   reported_sessions=false;
+   const Bot3EvaluationHeadResult route=Bot3BeginEvaluationFields(strategy_index,caller_flag,
+                                                                    inputs,state.head,symbol);
    if(route==BOT3_HEAD_NEXT_216E5)
    {
       inputs.native_1d6d08=1;
       Bot3ReportSessions(state.head.selected_symbol);
+      reported_sessions=true;
    }
    state.session_flag=Bot3CheckSession(state.head.selected_symbol,state.head.calendar,state.head.server_time);
    state.head.selected_symbol=NULL;
-   if(!SymbolInfoTick(inputs.symbol,state.tick))
+   if(!SymbolInfoTick(symbol,tick))
       Print("Tick not ok");
-   state.spread=state.tick.ask-state.tick.bid;
-   TimeCurrent(state.current_calendar);
+   spread=tick.ask-tick.bid;
+   TimeCurrent(current_calendar);
+}
+
+void Bot3PrepareEvaluation(const uint strategy_index,const uchar caller_flag,
+                           Bot3EvaluationHeadInputs &inputs,
+                           Bot3EvaluationPreludeState &state)
+{
+   bool reported_sessions=false;
+   Bot3PrepareEvaluationFields(strategy_index,caller_flag,inputs,state,inputs.symbol,state.tick,
+                                state.spread,state.current_calendar,reported_sessions);
 }
 
 #endif

@@ -84,10 +84,11 @@ bool Bot3ManageOnePositionFields(const bool buy,const Bot3PositionManagementSett
                            const uint &strategy_index,uint &error_count,ulong &last_ticket,MqlTick &tick,
                            const string &symbol,const int &magic,const double &unit,
                            const double &stop_distance,const double &take_distance,const double &gap,
-                           const double &freeze,const int &high_low_enabled,const double &step_reference)
+                           const double &freeze,const int &high_low_enabled,const double &step_reference,
+                           const int &management_enabled,const double &emergency_offset)
 {
    Bot3ManagedPosition position;
-   if(!Bot3ReadManagementPosition(index,buy,magic,settings.enabled,symbol,
+   if(!Bot3ReadManagementPosition(index,buy,magic,management_enabled,symbol,
                                   last_ticket,tick,position))
       return false;
    Bot3FillManagementInitialLevels(buy,symbol,unit,stop_distance,
@@ -112,8 +113,8 @@ bool Bot3ManageOnePositionFields(const bool buy,const Bot3PositionManagementSett
    // Emergency close without a message; last_ticket is read after the two ignored calls.
    const double u=unit;
    const double distance=stop_distance;
-   const double trigger=buy ? (position.open_price-u*(distance+0.0))-settings.emergency_offset
-                            : (u*(distance+0.0)+position.open_price)+settings.emergency_offset;
+   const double trigger=buy ? (position.open_price-u*(distance+0.0))-emergency_offset
+                            : (u*(distance+0.0)+position.open_price)+emergency_offset;
    if(buy ? tick.bid<trigger : trigger<tick.ask)
    {
       SymbolInfoTick(symbol,tick);
@@ -281,7 +282,8 @@ bool Bot3ManageOnePosition(const bool buy,const Bot3PositionManagementSettings &
    return Bot3ManageOnePositionFields(buy,settings,shared,levels,requests,options,deviation,index,eligible,changed,
       shared.anchor.step_reference,shared.anchor.rows,shared.volumes,shared.strategy_index,shared.error_count,shared.last_ticket,shared.tick,
       settings.symbol,settings.magic,settings.unit,settings.stop_distance,settings.take_distance,settings.gap,
-      settings.freeze,settings.finish.high_low_enabled,settings.finish.step_reference);
+      settings.freeze,settings.finish.high_low_enabled,settings.finish.step_reference,
+      settings.enabled,settings.emergency_offset);
 }
 
 // Manages the open positions of one direction. Returns true as soon as a close path is
@@ -294,7 +296,8 @@ bool Bot3ManagePositionsFields(const bool buy,const Bot3PositionManagementSettin
                            const uint &strategy_index,uint &error_count,ulong &last_ticket,MqlTick &tick,
                            const string &symbol,const int &magic,const double &unit,
                            const double &stop_distance,const double &take_distance,const double &gap,
-                           const double &freeze,const int &high_low_enabled,const double &step_reference)
+                           const double &freeze,const int &high_low_enabled,const double &step_reference,
+                           const int &management_enabled,const double &emergency_offset)
 {
    int total=PositionsTotal();
    if(total<1) return false;
@@ -307,7 +310,8 @@ bool Bot3ManagePositionsFields(const bool buy,const Bot3PositionManagementSettin
       bool changed=false;
       if(Bot3ManageOnePositionFields(buy,settings,shared,levels,requests,options,deviation,index,
                                eligible,changed,copied_step,cache,volumes,strategy_index,error_count,last_ticket,tick,
-                               symbol,magic,unit,stop_distance,take_distance,gap,freeze,high_low_enabled,step_reference))
+                               symbol,magic,unit,stop_distance,take_distance,gap,freeze,high_low_enabled,step_reference,
+                               management_enabled,emergency_offset))
          return true;
       any_changed=any_changed || changed;
       index++;
@@ -325,6 +329,7 @@ bool Bot3ManagePositions(const bool buy,const Bot3PositionManagementSettings &se
    return Bot3ManagePositionsFields(buy,settings,shared,levels,requests,options,deviation,
       shared.anchor.step_reference,shared.anchor.rows,shared.volumes,shared.strategy_index,shared.error_count,shared.last_ticket,shared.tick,
       settings.symbol,settings.magic,settings.unit,settings.stop_distance,settings.take_distance,settings.gap,
-      settings.freeze,settings.finish.high_low_enabled,settings.finish.step_reference);
+      settings.freeze,settings.finish.high_low_enabled,settings.finish.step_reference,
+      settings.enabled,settings.emergency_offset);
 }
 #endif

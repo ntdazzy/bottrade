@@ -52,10 +52,16 @@ datetime FakeiTime(const string symbol,const ENUM_TIMEFRAMES frame,const int shi
 }
 // Same signature as the real manager. The event reads the arguments, never the globals;
 // after a buy event change_buy moves the globals they refer to. A sell call changes nothing.
-bool FakeBot3ManagePositions(const bool buy,const Bot3PositionManagementSettings &settings,
-                             Bot3PositionManagementState &shared,const double &levels[],
-                             Bot3PendingRequestState &requests,Bot3TradeSendOptions &options,
-                             const ulong &deviation)
+bool FakeBot3ManagePositionsFields(const bool buy,const Bot3PositionManagementSettings &settings,
+                         Bot3PositionManagementState &shared,const double &levels[],
+                         Bot3PendingRequestState &requests,Bot3TradeSendOptions &options,
+                         const ulong &deviation,
+                           double &copied_step,double &cache[][2],const double &volumes[],
+                           const uint &strategy_index,uint &error_count,ulong &last_ticket,MqlTick &tick,
+                           const string &symbol,const int &magic,const double &unit,
+                           const double &stop_distance,const double &take_distance,const double &gap,
+                           const double &freeze,const int &high_low_enabled,const double &step_reference,
+                           const int &management_enabled,const double &emergency_offset)
 {
    if(deviation!=GateDeviation) GateFail(30);
    if(settings.symbol!="CHECK") GateFail(31);
@@ -73,10 +79,10 @@ bool FakeBot3ManagePositions(const bool buy,const Bot3PositionManagementSettings
    return buy ? GateCase.buy_reply!=0 : GateCase.sell_reply!=0;
 }
 #define iTime FakeiTime
-#define Bot3ManagePositions FakeBot3ManagePositions
+#define Bot3ManagePositionsFields FakeBot3ManagePositionsFields
 #include "../../Include/bot-cua-toi-3/Bot3ManagementBarGate.mqh"
 #undef iTime
-#undef Bot3ManagePositions
+#undef Bot3ManagePositionsFields
 
 void GateInitialize()
 {

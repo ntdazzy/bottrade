@@ -70,24 +70,36 @@ uchar Bot1CheckSession(const string symbol,const MqlDateTime &calendar,const dat
    }
 }
 
-void Bot1PrepareEvaluation(const uint strategy_index,Bot1EvaluationPreludeInputs &inputs,
-                           Bot1EvaluationPreludeState &state)
+void Bot1PrepareEvaluationFields(const uint strategy_index,Bot1EvaluationPreludeInputs &inputs,
+                                  Bot1EvaluationPreludeState &state,const string &symbol,
+                                  MqlTick &tick,double &spread,
+                                  MqlDateTime &current_calendar,bool &reported_sessions)
 {
+   reported_sessions=false;
    state.strategy_index=strategy_index;
    state.server_time=TimeTradeServer();
    TimeToStruct(state.server_time,state.calendar);
-   if(inputs.symbol=="") state.selected_symbol=inputs.native_6a428;
-   else state.selected_symbol=inputs.symbol;
+   if(symbol=="") state.selected_symbol=inputs.native_6a428;
+   else state.selected_symbol=symbol;
    if(inputs.native_6a3b4==0 && MQLInfoInteger((ENUM_MQL_INFO_INTEGER)7)==0)
    {
       inputs.native_6a3b4=1;
       Bot1ReportSessions(state.selected_symbol);
+      reported_sessions=true;
    }
    state.session_flag=Bot1CheckSession(state.selected_symbol,state.calendar,state.server_time);
    state.selected_symbol=NULL;
-   if(!SymbolInfoTick(inputs.symbol,state.tick)) Print("Tick not ok");
-   state.spread=state.tick.ask-state.tick.bid;
-   TimeCurrent(state.current_calendar);
+   if(!SymbolInfoTick(symbol,tick)) Print("Tick not ok");
+   spread=tick.ask-tick.bid;
+   TimeCurrent(current_calendar);
+}
+
+void Bot1PrepareEvaluation(const uint strategy_index,Bot1EvaluationPreludeInputs &inputs,
+                           Bot1EvaluationPreludeState &state)
+{
+   bool reported_sessions=false;
+   Bot1PrepareEvaluationFields(strategy_index,inputs,state,inputs.symbol,state.tick,
+                                state.spread,state.current_calendar,reported_sessions);
 }
 
 #endif

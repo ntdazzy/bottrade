@@ -21,16 +21,18 @@ double Bot1EvaluationDifference(const double left,const double right)
    return left-right;
 }
 
-void Bot1FillEvaluationStops(const string &symbol,const Bot1EvaluationStopInputs &inputs,
-                             Bot1PendingRequestState &trade,Bot1TradeSendOptions &options)
+int Bot1FillEvaluationStopsFields(const string &symbol,const uchar &enabled,const int &magic,
+                                  const double &stop_distance,const double &target_distance,
+                                  const double &unit,Bot1PendingRequestState &trade,
+                                  Bot1TradeSendOptions &options)
 {
-   if(inputs.enabled==0) return;
+   if(enabled==0) return 0;
    const int total=PositionsTotal();
    for(int index=total-1;index>=0;index--)
    {
       const ulong ticket=PositionGetTicket(index);
       if(ticket==0) continue;
-      if(PositionGetInteger(POSITION_MAGIC)!=(long)inputs.magic) continue;
+      if(PositionGetInteger(POSITION_MAGIC)!=(long)magic) continue;
       if(PositionGetString(POSITION_SYMBOL)!=symbol) continue;
       double sl=PositionGetDouble(POSITION_SL);
       double tp=PositionGetDouble(POSITION_TP);
@@ -42,19 +44,27 @@ void Bot1FillEvaluationStops(const string &symbol,const Bot1EvaluationStopInputs
       if(sl==0.0)
       {
          if(type==POSITION_TYPE_BUY)
-            sl=Bot1RoundPrice(Bot1EvaluationDifference(open,(inputs.stop_distance+0.0)*inputs.unit),digits);
+            sl=Bot1RoundPrice(Bot1EvaluationDifference(open,(stop_distance+0.0)*unit),digits);
          else
-            sl=Bot1RoundPrice((inputs.stop_distance+0.0)*inputs.unit+open,digits);
+            sl=Bot1RoundPrice((stop_distance+0.0)*unit+open,digits);
       }
-      if(tp==0.0 && inputs.target_distance>0.0)
+      if(tp==0.0 && target_distance>0.0)
       {
          if(type==POSITION_TYPE_BUY)
-            tp=Bot1RoundPrice(open+inputs.target_distance*inputs.unit,digits);
+            tp=Bot1RoundPrice(open+target_distance*unit,digits);
          else
-            tp=Bot1RoundPrice(Bot1EvaluationDifference(open,inputs.target_distance*inputs.unit),digits);
+            tp=Bot1RoundPrice(Bot1EvaluationDifference(open,target_distance*unit),digits);
       }
       Bot1ModifyPosition(trade,options,ticket,sl,tp);
    }
+   return total;
+}
+
+void Bot1FillEvaluationStops(const string &symbol,const Bot1EvaluationStopInputs &inputs,
+                             Bot1PendingRequestState &trade,Bot1TradeSendOptions &options)
+{
+   Bot1FillEvaluationStopsFields(symbol,inputs.enabled,inputs.magic,inputs.stop_distance,
+                                 inputs.target_distance,inputs.unit,trade,options);
 }
 
 #endif

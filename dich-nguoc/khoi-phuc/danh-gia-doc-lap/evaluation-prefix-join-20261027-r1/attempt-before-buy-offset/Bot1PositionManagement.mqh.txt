@@ -1,0 +1,326 @@
+// Bot 1 position manager assembled from the existing management helpers.
+// Verification scope is recorded with the management evidence.
+#ifndef BOT1_POSITION_MANAGEMENT_MQH
+#define BOT1_POSITION_MANAGEMENT_MQH
+#include "Bot1ManagementPrelude.mqh"
+#include "Bot1ManagementVirtualFinish.mqh"
+#include "Bot1ManagementRealStart.mqh"
+#include "Bot1ManagementRealTimed.mqh"
+#include "Bot1ManagementRealDistance.mqh"
+#include "Bot1ManagementRealSlippage.mqh"
+#include "Bot1ManagementRealHighLow.mqh"
+#include "Bot1ManagementRealLock.mqh"
+#include "Bot1ManagementRealCounter.mqh"
+#include "Bot1ManagementRealStore.mqh"
+
+// Filled by the caller; the mode exists only as finish.mode. finish.high_low_buy_shift and
+// finish.high_low_sell_shift are constants the caller sets to 10.0.
+struct Bot1PositionManagementSettings
+{
+   string symbol;
+   int magic;
+   int enabled;
+   double unit;
+   double stop_distance;
+   double take_distance;
+   double emergency_offset;
+   uchar candle_enabled[2];
+   uchar candle_timeframe[2];
+   double anchor_limit;
+   uchar use_anchor;
+   uchar high_low_eligible;
+   double timed_activation;
+   double timed_distance;
+   int timed_delay_seconds;
+   int virtual_delay_seconds;
+   double trail;
+   double trail_step;
+   double trail_start;
+   double trail_limit;
+   int slippage_enabled;
+   double slippage_trail;
+   double slippage_start;
+   double slippage_limit;
+   int high_low_gap_count;
+   double gap;
+   double freeze;
+   Bot1VirtualFinishSettings finish;
+};
+
+// strategy_index is kept in 0..7 by the caller and levels[] matches the managed direction.
+// cache, table and tick are shared and never reset per position, so a failed
+// SymbolInfoTick keeps the previous quote.
+struct Bot1PositionManagementState
+{
+   double cache[100][2];
+   double copied_step;
+   Bot1VirtualStopState table;
+   long open_tickets[];
+   double current_stop;
+   double volumes[8];
+   uint strategy_index;
+   uint error_count;
+   int counter;
+   ulong last_ticket;
+   MqlTick tick;
+};
+
+// Internal step of Bot1ManagePositions for the position at index. Returns true only when a
+// close path ends the whole pass; changed collects the updates of this position.
+// A zero ticket at index 0 sets changed to first_zero_ticket_changed and still returns false.
+bool Bot1ManageOnePositionFields(const bool buy,const Bot1PositionManagementSettings &settings,
+                           Bot1PositionManagementState &shared,const double &levels[],
+                           Bot1PendingRequestState &requests,Bot1TradeSendOptions &options,
+                           const ulong &deviation,const int index,const uchar eligible,
+                           bool &changed,const bool first_zero_ticket_changed,
+                           double &copied_step,double &cache[][2],const double &volumes[],
+                           const uint &strategy_index,uint &error_count,ulong &last_ticket,MqlTick &tick,
+                           const string &symbol,const int &magic,const double &unit,
+                           const double &stop_distance,const double &take_distance,const double &gap,
+                           const double &freeze,const int &high_low_enabled,const double &step_reference,
+                           const int &management_enabled,const double &emergency_offset)
+{
+   Bot1ManagedPosition position;
+   if(!Bot1ReadManagementPosition(index,buy,magic,management_enabled,symbol,
+                                  last_ticket,tick,position))
+   {
+      // The helper stores PositionGetTicket first and returns at once on zero; a nonzero
+      // ticket that is filtered out does not touch changed.
+      if(index==0 && last_ticket==0)
+         changed=first_zero_ticket_changed;
+      return false;
+   }
+   // Modify results are ignored here and do not set changed.
+   Bot1FillManagementInitialLevels(buy,symbol,unit,stop_distance,
+                                   take_distance,position,requests,options);
+   // Candle groups 0 and 1: a close attempt neither returns nor sets changed, and the later
+   // steps keep this local position.
+   Bot1CloseManagementCandle(buy,symbol,settings.candle_enabled[0],
+                             settings.candle_timeframe[0],false,position,requests,options,
+                             deviation,tick,gap,freeze);
+   Bot1CloseManagementCandle(buy,symbol,settings.candle_enabled[1],
+                             settings.candle_timeframe[1],true,position,requests,options,
+                             deviation,tick,gap,freeze);
+   bool passed;
+   double anchor;
+   double raw_reference=Bot1ManagementCachedReference(buy,symbol,position.ticket_number,
+                                                      position.open_price,unit,
+                                                      step_reference,
+                                                      settings.anchor_limit,settings.use_anchor,
+                                                      copied_step,cache,
+                                                      passed,anchor);
+   // Captured after the cache lookup. ticket, ticket_number, passed, anchor and raw_reference
+   // keep these values for the rest of this position.
+   const long ticket=(long)position.ticket_number;
+   const double ticket_number=(double)ticket;
+
+   // Emergency close without a message; last_ticket is read after the two ignored calls.
+   const double u=unit;
+   const double distance=stop_distance;
+   const double trigger=buy ? (position.open_price-u*(distance+0.0))-settings.emergency_offset
+                            : (u*(distance+0.0)+position.open_price)+emergency_offset;
+   const double quote=buy ? tick.bid : tick.ask;
+   if(buy ? quote<trigger : trigger<quote)
+   {
+      SymbolInfoTick(symbol,tick);
+      PositionGetDouble(POSITION_VOLUME);
+      Bot1TryClosePosition(requests,options,deviation,tick.bid,tick.ask,
+                           gap,freeze,last_ticket);
+      return true;
+   }
+
+   if(settings.finish.mode!=2)
+   {
+      double initial_stop;
+      if(Bot1StartRealManagement(buy,symbol,unit,stop_distance,ticket,
+                                 position,tick,shared.table,shared.open_tickets,
+                                 initial_stop,shared.current_stop,requests,options,deviation,
+                                 gap,freeze))
+         return true;
+      // buy cannot change during the call: both blocks run timed, distance, slippage,
+      // high/low, lock and counter in the same order. A true timed result sets changed and
+      // false keeps it; counter is called even when changed is already true.
+      if(buy)
+      {
+         if(Bot1AdvanceTimedBuyStop(symbol,unit,settings.timed_activation,
+                                    settings.timed_distance,settings.timed_delay_seconds,
+                                    gap,freeze,position,tick,requests,
+                                    options,error_count,(ulong)ticket))
+            changed=true;
+         if(Bot1AdvanceDistanceBuyStop(symbol,unit,settings.trail,
+                                       settings.trail_step,settings.trail_start,
+                                       settings.trail_limit,anchor,gap,freeze,
+                                       position,tick,volumes,strategy_index,
+                                       changed,requests,options,deviation,error_count,
+                                       (ulong)ticket))
+            return true;
+         Bot1AdvanceSlippageRealBuyStop(symbol,unit,settings.slippage_enabled,
+                                        (uchar)passed,raw_reference,settings.slippage_trail,
+                                        settings.slippage_start,settings.slippage_limit,
+                                        gap,freeze,position,tick,changed,
+                                        requests,options,error_count,(ulong)ticket);
+         Bot1AdvanceHighLowRealBuyStop(symbol,high_low_enabled,eligible,
+                                       settings.high_low_gap_count,unit,
+                                       settings.finish.high_low_before_open,
+                                       settings.finish.high_low_shift,gap,
+                                       freeze,levels,strategy_index,position,
+                                       tick,changed,requests,options,error_count,
+                                       (ulong)ticket);
+         Bot1AdvanceRealLockBuyStop(symbol,settings.finish.lock_start,
+                                    settings.finish.lock_extra,unit,gap,
+                                    freeze,position,tick,changed,requests,
+                                    options,error_count,(ulong)ticket);
+         Bot1AdvanceRealCounterBuyStop(symbol,settings.finish.step_enabled,
+                                       step_reference,settings.finish.min_steps,
+                                       settings.finish.step_distance,unit,
+                                       copied_step,anchor,gap,freeze,
+                                       shared.counter,position,tick,changed,requests,
+                                       options,(ulong)ticket);
+      }
+      else
+      {
+         if(Bot1AdvanceTimedSellStop(symbol,unit,settings.timed_activation,
+                                     settings.timed_distance,settings.timed_delay_seconds,
+                                     gap,freeze,position,tick,requests,
+                                     options,error_count,(ulong)ticket))
+            changed=true;
+         if(Bot1AdvanceDistanceSellStop(symbol,unit,settings.trail,
+                                        settings.trail_step,settings.trail_start,
+                                        settings.trail_limit,anchor,gap,freeze,
+                                        position,tick,volumes,strategy_index,
+                                        changed,requests,options,deviation,error_count,
+                                        (ulong)ticket))
+            return true;
+         Bot1AdvanceSlippageRealSellStop(symbol,unit,settings.slippage_enabled,
+                                         (uchar)passed,raw_reference,settings.slippage_trail,
+                                         settings.slippage_start,settings.slippage_limit,
+                                         gap,freeze,position,tick,changed,
+                                         requests,options,error_count,(ulong)ticket);
+         Bot1AdvanceHighLowRealSellStop(symbol,high_low_enabled,eligible,
+                                        settings.high_low_gap_count,unit,
+                                        settings.finish.high_low_before_open,
+                                        settings.finish.high_low_shift,gap,
+                                        freeze,levels,strategy_index,position,
+                                        tick,changed,requests,options,error_count,
+                                        (ulong)ticket);
+         Bot1AdvanceRealLockSellStop(symbol,settings.finish.lock_start,
+                                     settings.finish.lock_extra,unit,gap,
+                                     freeze,position,tick,changed,requests,
+                                     options,error_count,(ulong)ticket);
+         Bot1AdvanceRealCounterSellStop(symbol,settings.finish.step_enabled,
+                                        step_reference,settings.finish.min_steps,
+                                        settings.finish.step_distance,unit,
+                                        copied_step,anchor,gap,freeze,
+                                        shared.counter,position,tick,changed,requests,
+                                        options,(ulong)ticket);
+      }
+      // Written before the strict hit test; a quote equal to the stop is not a hit.
+      shared.current_stop=position.sl;
+      if(buy ? tick.bid<position.sl : position.sl<tick.ask)
+      {
+         Bot1CloseRealStopHit(buy,symbol,shared.current_stop,tick,requests,
+                              options,deviation,gap,freeze,ticket);
+         return true;
+      }
+      // Stored whether changed is set or not.
+      Bot1StoreRealStop(symbol,initial_stop,shared.current_stop,ticket_number,
+                        shared.table);
+      // mode is read again after the store; 2 continues into the virtual part with changed kept.
+      if(settings.finish.mode!=2) return false;
+   }
+
+   double initial_level;
+   // Table level, current_stop write, hit test with equality, real-stop move and stamp all
+   // stay inside the helper.
+   if(Bot1StartVirtualManagement(buy,symbol,unit,stop_distance,
+                                 settings.virtual_delay_seconds,position,tick,
+                                 shared.table,shared.open_tickets,initial_level,
+                                 shared.current_stop,requests,options,deviation,gap,
+                                 freeze))
+      return true;
+   Bot1AdvanceTimedVirtualStop(buy,symbol,unit,settings.timed_activation,
+                               settings.timed_distance,settings.timed_delay_seconds,
+                               freeze,position,tick,shared.current_stop,changed);
+   if(Bot1AdvanceDistanceVirtualStop(buy,symbol,unit,settings.trail,
+                                     settings.trail_step,settings.trail_start,
+                                     settings.trail_limit,anchor,position,tick,
+                                     volumes,strategy_index,shared.current_stop,
+                                     changed,requests,options,deviation,gap,
+                                     freeze))
+      return true;
+   Bot1AdvanceSlippageVirtualStop(buy,symbol,unit,settings.slippage_enabled,
+                                  passed,raw_reference,settings.slippage_trail,
+                                  settings.slippage_start,settings.slippage_limit,
+                                  freeze,position,tick,shared.current_stop,
+                                  changed);
+   // Last virtual step: mode is not read again and neither chain is entered again.
+   return Bot1FinishVirtualManagementFields(buy,symbol,settings.finish,unit,
+                                      gap,freeze,anchor,raw_reference,
+                                      copied_step,position,tick,levels,
+                                      strategy_index,shared.current_stop,changed,
+                                      shared.counter,initial_level,ticket,shared.table,
+                                      requests,options,deviation,high_low_enabled,step_reference);
+}
+
+bool Bot1ManageOnePosition(const bool buy,const Bot1PositionManagementSettings &settings,
+                           Bot1PositionManagementState &shared,const double &levels[],
+                           Bot1PendingRequestState &requests,Bot1TradeSendOptions &options,
+                           const ulong &deviation,const int index,const uchar eligible,
+                           bool &changed,const bool first_zero_ticket_changed)
+{
+   return Bot1ManageOnePositionFields(buy,settings,shared,levels,requests,options,deviation,index,eligible,changed,first_zero_ticket_changed,
+      shared.copied_step,shared.cache,shared.volumes,shared.strategy_index,shared.error_count,shared.last_ticket,shared.tick,
+      settings.symbol,settings.magic,settings.unit,settings.stop_distance,settings.take_distance,settings.gap,
+      settings.freeze,settings.finish.high_low_enabled,settings.finish.step_reference,
+      settings.enabled,settings.emergency_offset);
+}
+
+// Manages the open positions of one direction. Returns true as soon as a close path is
+// reached, otherwise whether any position reported a change.
+// first_zero_ticket_changed has no default; the caller picks it for each call.
+bool Bot1ManagePositionsFields(const bool buy,const Bot1PositionManagementSettings &settings,
+                         Bot1PositionManagementState &shared,const double &levels[],
+                         Bot1PendingRequestState &requests,Bot1TradeSendOptions &options,
+                         const ulong &deviation,const bool first_zero_ticket_changed,
+                           double &copied_step,double &cache[][2],const double &volumes[],
+                           const uint &strategy_index,uint &error_count,ulong &last_ticket,MqlTick &tick,
+                           const string &symbol,const int &magic,const double &unit,
+                           const double &stop_distance,const double &take_distance,const double &gap,
+                           const double &freeze,const int &high_low_enabled,const double &step_reference,
+                           const int &management_enabled,const double &emergency_offset)
+{
+   int total=PositionsTotal();
+   if(total<1) return false;
+   // Read once per pass after the first API call; every position uses this copy.
+   const uchar eligible=settings.high_low_eligible;
+   bool any_changed=false;
+   int index=0;
+   do
+   {
+      bool changed=false;
+      if(Bot1ManageOnePositionFields(buy,settings,shared,levels,requests,options,deviation,index,
+                               eligible,changed,first_zero_ticket_changed,copied_step,cache,volumes,strategy_index,error_count,last_ticket,tick,
+                               symbol,magic,unit,stop_distance,take_distance,gap,freeze,high_low_enabled,step_reference,
+                               management_enabled,emergency_offset))
+         return true;
+      any_changed=any_changed || changed;
+      index++;
+      // Read again after each position; skips and candle closes do not move index or total.
+      total=PositionsTotal();
+   }
+   while(index<total);
+   return any_changed;
+}
+
+bool Bot1ManagePositions(const bool buy,const Bot1PositionManagementSettings &settings,
+                         Bot1PositionManagementState &shared,const double &levels[],
+                         Bot1PendingRequestState &requests,Bot1TradeSendOptions &options,
+                         const ulong &deviation,const bool first_zero_ticket_changed)
+{
+   return Bot1ManagePositionsFields(buy,settings,shared,levels,requests,options,deviation,first_zero_ticket_changed,
+      shared.copied_step,shared.cache,shared.volumes,shared.strategy_index,shared.error_count,shared.last_ticket,shared.tick,
+      settings.symbol,settings.magic,settings.unit,settings.stop_distance,settings.take_distance,settings.gap,
+      settings.freeze,settings.finish.high_low_enabled,settings.finish.step_reference,
+      settings.enabled,settings.emergency_offset);
+}
+#endif

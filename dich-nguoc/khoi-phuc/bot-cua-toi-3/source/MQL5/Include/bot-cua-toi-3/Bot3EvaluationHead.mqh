@@ -25,9 +25,10 @@ struct Bot3EvaluationHeadState
    string selected_symbol;
 };
 
-Bot3EvaluationHeadResult Bot3BeginEvaluation(const uint index,const uchar caller_flag,
-                                             const Bot3EvaluationHeadInputs &inputs,
-                                             Bot3EvaluationHeadState &state)
+Bot3EvaluationHeadResult Bot3BeginEvaluationFields(const uint index,const uchar caller_flag,
+                                                   const Bot3EvaluationHeadInputs &inputs,
+                                                   Bot3EvaluationHeadState &state,
+                                                   const string &symbol)
 {
    state.strategy_index=index;
    state.caller_flag=caller_flag;
@@ -35,12 +36,19 @@ Bot3EvaluationHeadResult Bot3BeginEvaluation(const uint index,const uchar caller
    TimeToStruct(state.server_time,state.calendar);
 
    // Preserve the empty-string comparison; do not add a generic NULL fallback.
-   if(inputs.symbol=="") state.selected_symbol=inputs.native_1d6e28;
-   else state.selected_symbol=inputs.symbol;
+   if(symbol=="") state.selected_symbol=inputs.native_1d6e28;
+   else state.selected_symbol=symbol;
 
    if(inputs.native_1d6d08==0 && MQLInfoInteger((ENUM_MQL_INFO_INTEGER)7)==0)
       return BOT3_HEAD_NEXT_216E5;
    return BOT3_HEAD_NEXT_211EA;
+}
+
+Bot3EvaluationHeadResult Bot3BeginEvaluation(const uint index,const uchar caller_flag,
+                                             const Bot3EvaluationHeadInputs &inputs,
+                                             Bot3EvaluationHeadState &state)
+{
+   return Bot3BeginEvaluationFields(index,caller_flag,inputs,state,inputs.symbol);
 }
 
 #endif

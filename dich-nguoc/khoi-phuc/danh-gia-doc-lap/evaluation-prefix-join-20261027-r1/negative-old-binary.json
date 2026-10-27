@@ -1,0 +1,20 @@
+[
+  {
+    "bot": 1,
+    "old_build": "b1-evaluation-check-20261027-r5",
+    "old_binary_sha256": "51cc1f0e93fc01a682a0f75f5a84a639497d0054a2c232f88c1971d1968ced9c",
+    "cases_sha256": "7f3104d04a97aa62dc4d89b60e574684ac44ca60942dbe0ff147c6623b7ee963",
+    "sdk_tape_sha256": "6f1e7b5d1a2b8844ac6b7a9c19db54e768889c8758a59b276c94d35885ba7315",
+    "difference": "EVALUATOR_SDK_ORDER (0, 28, 26)",
+    "detected": true
+  },
+  {
+    "bot": 3,
+    "old_build": "b3-evaluation-check-20261027-r5",
+    "old_binary_sha256": "643ca63b3ad9d73d73f51242329f90d7ca22f938a61f6633fccb7ca509ffa118",
+    "cases_sha256": "2ae1907ef30c5c0bd88679015cdf318146a6affc48027c598f9e46a18e6fa8fb",
+    "sdk_tape_sha256": "1b12d0ab6022b6f19659dc6b8252bd1beb901ea1b1f734247724159864b6bf14",
+    "difference": "EVALUATOR_SDK_ORDER (0, 28, 26)",
+    "detected": true
+  }
+]

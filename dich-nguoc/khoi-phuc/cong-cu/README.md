@@ -1,5 +1,11 @@
+- `kiem-danh-gia-lien-tuc-bot-1-3.py prepare|mql5|original|compare BOT RUN`:
+  từ đầu đánh giá qua phiên/giá/dừng-chốt/quản lý tới hết tạo lệnh;
+  61/61caB1,57/57caB3; mọi thân con thật, trạng thái chung. `mql5` cần
+  `--build BUILD`. Còn thống kê/hiển thị cuối hàm, khởi tạo và toànEA.
+- `tao-bo-kiem-danh-gia-lien-tuc.py`: tạo hai bộ ghi đoạn ghép; có báo
+  phiên, ArrayResize đo trên MT5, đủ trạng thái mảng và thông báo có kiểu.
 - `kiem-quan-ly-trang-thai-chung.py generate|prepare|mql5|original|compare BOT RUN`:
-  quản lý nhận trực tiếp7nhóm trạng thái và9thiết lập ngoài; cố ý đặt sai
+  quản lý nhận trực tiếp7nhóm trạng thái và11thiết lập ngoài; cố ý đặt sai
   ô cũ để bắt đọc nhầm.352/352caB1,364/364caB3, chạy nguyên thân bảng và
   giao dịch. `generate BOT` tạo nguồn, `mql5` cần `--build BUILD`; dùng
   MT5 riêng mỗi bot. Chưa gồm bộ điều phối quản lý/toàn phần đánh giá/EA.

@@ -16,12 +16,13 @@ def generate(bot):
     else:fields.update({'FShared.anchor.rows':'FCache','FShared.anchor.step_reference':'FStep'})
     core={'FCfg.symbol':'FSymbol','FCfg.magic':'FMagic','FCfg.unit':'FUnit','FCfg.stop_distance':'FStopDistance',
           'FCfg.take_distance':'FTakeDistance','FCfg.gap':'FGap','FCfg.freeze':'FFreeze',
-          'FCfg.finish.high_low_enabled':'FHighLowEnabled','FCfg.finish.step_reference':'FStepSetting'}
+          'FCfg.finish.high_low_enabled':'FHighLowEnabled','FCfg.finish.step_reference':'FStepSetting',
+          'FCfg.enabled':'FEnabled','FCfg.emergency_offset':'FEmergencyOffset'}
     for old,new in sorted((fields|core).items(),key=lambda item:-len(item[0])):source=source.replace(old,new)
     marker=f'Bot{bot}PositionManagementState FShared;';assert source.count(marker)==1
-    source=source.replace(marker,marker+f'\ndouble FCache[100][2],FVolumes[{8 if bot==1 else 9}],FStep;uint FIndex,FErrors;ulong FLast;MqlTick FTick;\nstring FSymbol;int FMagic,FHighLowEnabled;double FUnit,FStopDistance,FTakeDistance,FGap,FFreeze,FStepSetting;',1)
+    source=source.replace(marker,marker+f'\ndouble FCache[100][2],FVolumes[{8 if bot==1 else 9}],FStep;uint FIndex,FErrors;ulong FLast;MqlTick FTick;\nstring FSymbol;int FMagic,FHighLowEnabled,FEnabled;double FUnit,FStopDistance,FTakeDistance,FGap,FFreeze,FStepSetting,FEmergencyOffset;',1)
     marker='ZeroMemory(FShared);';assert source.count(marker)==1
-    source=source.replace(marker,marker+'ZeroMemory(FTick);ArrayInitialize(FCache,0.0);ArrayInitialize(FVolumes,0.0);FStep=0;FIndex=0;FErrors=0;FLast=0;FSymbol=NULL;FMagic=0;FHighLowEnabled=0;FUnit=0;FStopDistance=0;FTakeDistance=0;FGap=0;FFreeze=0;FStepSetting=0;',1)
+    source=source.replace(marker,marker+'ZeroMemory(FTick);ArrayInitialize(FCache,0.0);ArrayInitialize(FVolumes,0.0);FStep=0;FIndex=0;FErrors=0;FLast=0;FSymbol=NULL;FMagic=0;FHighLowEnabled=0;FUnit=0;FStopDistance=0;FTakeDistance=0;FGap=0;FFreeze=0;FStepSetting=0;FEnabled=0;FEmergencyOffset=0;',1)
     name=f'Bot{bot}ManagePositions';at=source.rindex(name+'(');start=at+len(name);depth=0;end=None
     for i in range(start,len(source)):
         if source[i]=='(':depth+=1
@@ -29,7 +30,7 @@ def generate(bot):
             depth-=1
             if depth==0:end=i;break
     assert end is not None
-    source=source[:end]+',FStep,FCache,FVolumes,FIndex,FErrors,FLast,FTick,FSymbol,FMagic,FUnit,FStopDistance,FTakeDistance,FGap,FFreeze,FHighLowEnabled,FStepSetting'+source[end:]
+    source=source[:end]+',FStep,FCache,FVolumes,FIndex,FErrors,FLast,FTick,FSymbol,FMagic,FUnit,FStopDistance,FTakeDistance,FGap,FFreeze,FHighLowEnabled,FStepSetting,FEnabled,FEmergencyOffset'+source[end:]
     source=source[:at]+name+'Fields'+source[at+len(name):]
     # These legacy members must remain irrelevant to the Fields path. All mock
     # effects, reference checks and exported results now use external storage.
@@ -39,14 +40,14 @@ def generate(bot):
       FShared.tick.bid=-123456;FShared.tick.ask=123456;ArrayInitialize(FShared.volumes,-777.0);
 '''
     poison+=('      FShared.copied_step=-98765;ArrayInitialize(FShared.cache,-777.0);\n' if bot==1 else '      FShared.anchor.step_reference=-98765;ArrayInitialize(FShared.anchor.rows,-777.0);\n')
-    poison+='      FCfg.symbol="DETACHED";FCfg.magic=-777;FCfg.unit=-777;FCfg.stop_distance=-777;FCfg.take_distance=-777;FCfg.gap=-777;FCfg.freeze=-777;FCfg.finish.high_low_enabled=-777;FCfg.finish.step_reference=-777;\n'
+    poison+='      FCfg.symbol="DETACHED";FCfg.magic=-777;FCfg.unit=-777;FCfg.stop_distance=-777;FCfg.take_distance=-777;FCfg.gap=-777;FCfg.freeze=-777;FCfg.finish.high_low_enabled=-777;FCfg.finish.step_reference=-777;FCfg.enabled=-777;FCfg.emergency_offset=-777;\n'
     source=source.replace(marker,poison+marker,1)
     if bot==1:
         # Caller-router mode is intentionally outside this direct-manager test.
         source=source.replace('if(CheckRun=="") return 1;','if(CheckRun=="" || ExecuteManagementRouter) return 1;',1)
     source=source.replace(f'bot{bot}-position-management-flow',f'bot{bot}-position-management-fields')
     target=folder/f'Bot{bot}PositionManagementFieldsCheck.mq5';target.write_text(source,encoding='utf-8',newline='\n')
-    args='false,settings,shared,levels,requests,options,deviation'+(',false' if bot==1 else '')+',step,cache,volumes,index,errors,last,tick,settings.symbol,settings.magic,settings.unit,settings.stop_distance,settings.take_distance,settings.gap,settings.freeze,settings.finish.high_low_enabled,settings.finish.step_reference'
+    args='false,settings,shared,levels,requests,options,deviation'+(',false' if bot==1 else '')+',step,cache,volumes,index,errors,last,tick,settings.symbol,settings.magic,settings.unit,settings.stop_distance,settings.take_distance,settings.gap,settings.freeze,settings.finish.high_low_enabled,settings.finish.step_reference,settings.enabled,settings.emergency_offset'
     api=f'''#property strict
 #include "../../Include/bot-cua-toi-{bot}/Bot{bot}PositionManagement.mqh"
 void OnStart()

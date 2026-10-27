@@ -1,0 +1,24 @@
+{
+  "production_findings": [
+    {
+      "severity": "P1",
+      "issue": "BUY emergency-close branch still read settings.emergency_offset while SELL used the external emergency_offset reference.",
+      "fix": "Use external emergency_offset for both directions, shared with the evaluator spread value at B1 62560 / B3 6d650.",
+      "proof": "Four boundary fixtures added. The preserved old test EX5 fails native SDK ordering for bid=-20.5 and ask=-19.5 in both bots; current r7 passes all cases."
+    },
+    {
+      "issue": "First implementation of Bot1PrepareEvaluationFields still selected inputs.symbol instead of its external symbol reference.",
+      "fix": "Use the external symbol for both empty-string selection branches. The joined check keeps inputs.symbol=DETACHED while execution.symbol is XAUUSD."
+    }
+  ],
+  "test_adapter_findings": [
+    "The active-flow adapter originally seeded its fields only at the later active start; seed them at the evaluator start and suppress later reseeding.",
+    "The new generic SymbolInfoInteger-by-reference adapter initially swapped the value and success reply; use the established SDK argument order.",
+    "Real manager calls require ArrayResize; record actual MQL5 post-state and supply that service state, while running native table algorithms unchanged.",
+    "ZeroMemory does not shrink a dynamic member array between test cases. Explicitly resize the fixture array to zero before each new independent input.",
+    "Native child-entry counters need hooks at each child address, beyond the parent evaluator instruction range.",
+    "Session reporting and table-full messages require three-string and seven-typed-argument Print recorders."
+  ],
+  "whole_evaluator_complete": false,
+  "whole_eas_complete": 0
+}

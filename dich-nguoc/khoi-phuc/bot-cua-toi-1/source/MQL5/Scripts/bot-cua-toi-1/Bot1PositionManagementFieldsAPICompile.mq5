@@ -8,5 +8,5 @@ void OnStart()
    double step=0,cache[100][2],volumes[8],levels[100];MqlTick tick;ZeroMemory(tick);
    ArrayInitialize(cache,0.0);ArrayInitialize(volumes,0.0);ArrayInitialize(levels,0.0);
    uint index=0,errors=0;ulong last=0,deviation=0;
-   Bot1ManagePositionsFields(false,settings,shared,levels,requests,options,deviation,false,step,cache,volumes,index,errors,last,tick,settings.symbol,settings.magic,settings.unit,settings.stop_distance,settings.take_distance,settings.gap,settings.freeze,settings.finish.high_low_enabled,settings.finish.step_reference);
+   Bot1ManagePositionsFields(false,settings,shared,levels,requests,options,deviation,false,step,cache,volumes,index,errors,last,tick,settings.symbol,settings.magic,settings.unit,settings.stop_distance,settings.take_distance,settings.gap,settings.freeze,settings.finish.high_low_enabled,settings.finish.step_reference,settings.enabled,settings.emergency_offset);
 }

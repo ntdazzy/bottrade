@@ -1,0 +1,23 @@
+{
+  "cases": 1536,
+  "matched": 1536,
+  "failed": 0,
+  "first_failures": [],
+  "result_sha256": {
+    "original": "d106ddc3a526d93e7517acb7930f9a4f9b6365505c17af616b120100bb26f18a",
+    "mql5": "d106ddc3a526d93e7517acb7930f9a4f9b6365505c17af616b120100bb26f18a"
+  },
+  "whole_manager_complete": false,
+  "whole_bot_complete": false,
+  "full_ea": false,
+  "native_caller_slice_executed": true,
+  "child_helpers_intercepted": true,
+  "terminal_replies_supplied": true,
+  "original_ex5_changed": false,
+  "limits": [
+    "Only the existing validity-flag branch, route selection, ordered position counts, new-bar reads/write and manager-call ordering execute. This is not the complete coordinator or EA.",
+    "The flag is supplied solely as a fixture input to the unchanged check. No license check is removed, forced valid, rewritten or patched.",
+    "Both manager bodies and terminal replies/effects are supplied; management bodies have separate scoped comparisons.",
+    "Valid indices0..7 and successful string allocation only. No all-broker/invalid-index/lifecycle/allocation-failure claim."
+  ]
+}

@@ -1,0 +1,223 @@
+"""Compare evaluator entry through management and entry loop, excluding final display.
+prepare|mql5(--build)|original|compare BOT RUN. Native children execute unchanged.
+"""
+import argparse,copy,hashlib,importlib.util,json,re,shutil,struct,subprocess
+from pathlib import Path
+ROOT=Path(__file__).resolve().parents[1];MASK=(1<<64)-1
+def module(name,file):
+    s=importlib.util.spec_from_file_location(name,ROOT/file);m=importlib.util.module_from_spec(s);s.loader.exec_module(m);return m
+active=module('evaluation_active','cong-cu/kiem-luong-sau-quan-ly-bot-1-3.py');base=active.base;pub=active.pub;require=pub.require;sha=active.sha;save=active.save;Reader=active.Reader;MAGIC=base.MAGIC
+news_adapter=module('evaluation_calendar_sdk','cong-cu/kiem-chuoi-tin-bot-1-3.py')
+SCOPE=dict(whole_bot_complete=False,whole_manager_complete=False,whole_evaluator_complete=False,full_ea=False,
+ native_evaluator_entry_to_entry_loop_continuous=True,child_helpers_intercepted=False,terminal_replies_supplied=True,
+ withdrawals_disabled=True,final_display_excluded=True,original_ex5_changed=False)
+CFG={1:dict(start=0x18aa0,end=0x1e94f,sub=0x228,tick=0x67750,report=0x6a3b4,fallback=0x6a428,server_cal=0x50,session=0xc0,mframe=0x6248c,mtimes=0x66750,guard=0x66410,stops=0x62590,reported=0x66418,current_stop=0x62580,counter=0x673f0),
+     3:dict(start=0x20ef0,end=0x29c88,sub=0x288,tick=0x74790,report=0x1d6d08,fallback=0x1d6e28,server_cal=0x58,session=0xf8,mframe=0x6d584,mtimes=0x73790,guard=0x73450,stops=0x6d680,reported=0x73458,current_stop=0x6d670,current_take=0x724a0,takes=0x70560,counter=0x74430)}
+EXTRA=[('ReportFlag','B',1),('Info7','i',1),('SessionMode','i',0),('TickOk','i',1),('TickWrite','i',1),('CallerFlag','B',0),('LicenceValid','B',1),('TickManagement','B',0),('BarOverride','B',0),('ManagerFrame','i',30),('ManagerPrevious','q',0),('ManagerFirst','q',1000),('ManagerSecond','q',1001),('IncomingChanged','B',0),('ManagerMode','i',0),('TableGuard','B',0)]
+def manager_fields(bot):
+    p=ROOT/f'bot-cua-toi-{bot}/tests/check-position-management-flow.py'
+    # Read literal mappings without importing the older manager runner/CPU process.
+    import ast
+    tree=ast.parse(p.read_text());maps={}
+    for node in tree.body:
+        if isinstance(node,ast.Assign) and any(isinstance(t,ast.Name) and t.id in ['DOUBLE_CFG','INT_CFG','BYTE_CFG'] for t in node.targets):maps[node.targets[0].id]=ast.literal_eval(node.value)
+    core={'unit','stop_distance','take_distance','emergency_offset','gap','freeze','magic','enabled','high_low_enabled','step_reference'}
+    out=[]
+    for kind,name in [('d','DOUBLE_CFG'),('i','INT_CFG'),('B','BYTE_CFG')]:
+        for address,key in maps[name].items():
+            if key not in core:out.append(('finish.'+key if key in ['mode','lock_start','lock_extra','min_steps','step_distance','high_low_before_open','high_low_shift','step_enabled'] else key,kind,address))
+    for i in range(2 if bot==1 else 3):
+        out.append((f'candle_enabled[{i}]','B',(0x62265+i*2 if bot==1 else 0x6d29e+i*2)))
+        out.append((f'candle_timeframe[{i}]','B',(0x62264+i*2 if bot==1 else 0x6d29d+i*2)))
+    return out
+def cases(bot):
+    previous=active.cases(bot);prototype=copy.deepcopy(previous[22]);out=[]
+    defaults={n:v for n,_,v in EXTRA}
+    def add(tag,extra=None,changes=None):
+        c=copy.deepcopy(prototype);c.update(changes or {});c['extra']=copy.deepcopy(defaults);c['extra'].update(extra or {});c['tag']='evaluator-'+tag
+        c['active']['BlockFlags']=0;out.append(c);return c
+    for show in [0,1]:
+        for sides in [[0,0],[1,0],[0,1],[1,1]]:
+            c=add('full-pass',changes=dict(position=0));c['active']['PanelShow']=show;c['loop'][0:2]=sides
+    for mode in [0,1,2]:
+        for caller in ([0] if bot==1 else [0,1,255]):
+            c=add('session-and-caller',dict(SessionMode=mode,CallerFlag=caller));c['active']['PanelShow']=1
+    for report in [0,1]:
+        for info in [0,1]:add('report-sessions',dict(ReportFlag=report,Info7=info))
+    for tickok in [0,1]:
+        for write in [0,1]:add('tick-reply',dict(TickOk=tickok,TickWrite=write))
+    for first in [0,1000]:add('manager-same-new-bar',dict(ManagerFirst=first))
+    for position in [0,1,2]:
+        for enabled in [0,1]:
+            for omit in [0,1]:
+                c=add('initial-stops-and-management',changes=dict(position=position,pending_enabled=enabled));c['loop'][7]=omit
+    if bot==1:
+        for valid in [0,1]:
+            for tick in [0,1]:
+                for override in [0,1]:add('licence-and-routing',dict(LicenceValid=valid,TickManagement=tick,BarOverride=override))
+        for incoming in [0,70]:add('incoming-manager-context',dict(IncomingChanged=incoming),dict(position=1))
+    for index in [0,1,3]:add('caller-index',changes=dict(caller_index=index,current_index=2))
+    for mode in [0,2]:
+        for guard in [0,1]:
+            for position in [1,2]:add('real-virtual-manager-tables',dict(ManagerMode=mode,TableGuard=guard),dict(position=position))
+    for bid in [-21.1,-21.,-20.5,-20.]:
+        add('buy-emergency-shared-spread',changes=dict(position=1,bid=bid,ask=bid+1.))
+    for news in ['nfp','interest','cpi']:
+        c=add('news-block-'+news,changes=dict(use_calendar=1,info=0,last_query=prototype['server']-901,release=prototype['current']+300))
+        if news=='nfp':c['enabled']=1
+        else:c['ir_settings' if news=='interest' else 'cpi_settings'][0]=1;c['ir_state' if news=='interest' else 'cpi_state']=[0,0,0]
+    for i,c in enumerate(out):c['id']=i
+    return out
+def encode(rows,bot):
+    raw=bytearray(struct.pack('<3i',MAGIC,1,len(rows)))
+    for c in rows:raw+=active.encode([c],bot)[12:]+struct.pack('<'+str(len(EXTRA))+'Q',*[c['extra'][n]&MASK for n,_,_ in EXTRA])
+    return raw
+def original(bot,casts):
+    prior=active.Original(bot,casts);parent=prior.__class__;cfg=CFG[bot]
+    class Full(parent):
+        def __init__(self):
+            super().__init__();self.nfp=dict(self.nfp,start=cfg['start'],end=cfg['end']);self.prepared=False;self.manager_time_calls=0;self.executed={};self.terminals=[]
+            address=0x7ff683f20000+0x7c2cb0;self.sdk[address]=45
+            if not any(lo<=address<=hi for lo,hi,_ in self.m.mem_regions()):self.m.mem_map(address&~4095,4096)
+            self.m.mem_write(address,b'\xc3');self.m.hook_add(self.uc.UC_HOOK_CODE,self.call,begin=address,end=address)
+            address=0x7ff683f20000+0x7aa0e0;self.sdk[address]=46
+            if not any(lo<=address<=hi for lo,hi,_ in self.m.mem_regions()):self.m.mem_map(address&~4095,4096)
+            self.m.mem_write(address,b'\xc3');self.m.hook_add(self.uc.UC_HOOK_CODE,self.call,begin=address,end=address);self.m.mem_map(0x71000000,0x20000)
+            for rva in ([0x271f0,0x2abc0,0x26d20,0x22c40,0x950,0x18790] if bot==1 else [0x32f60,0x37590,0x32a90,0x2e370,0x950,0x20bc0]):
+                self.m.hook_add(self.uc.UC_HOOK_CODE,self.visit,begin=self.base+rva,end=self.base+rva)
+        def state(self):
+            raw=super().state();e=self.case['extra'];raw+=struct.pack('<'+str(len(EXTRA))+'Q',*[self.value(cfg['report'],'B') if n=='ReportFlag' else self.value(cfg['mframe'],'i')&MASK if n=='ManagerFrame' else e[n]&MASK for n,_,_ in EXTRA])
+            raw+=bytes(self.m.mem_read(self.base+cfg['tick'],64))+bytes(self.m.mem_read(self.base+cfg['mtimes'],(8 if bot==1 else 9)*8))
+            for name in ['current_stop','counter','guard']+(['current_take'] if bot==3 else []):raw+=struct.pack('<Q',self.value(cfg[name],'Q' if 'current_' in name else 'i' if name=='counter' else 'B')&MASK)
+            raw+=bytes(self.m.mem_read(self.base+cfg['stops'],12000))
+            if bot==3:raw+=bytes(self.m.mem_read(self.base+cfg['takes'],8000))
+            desc=self.base+(0x6a3c0 if bot==1 else 0x1d6d10);n=self.value(desc-self.base+8,'i');ptr=self.value(desc-self.base+28,'Q')
+            raw+=struct.pack('<Q',n)+bytes(self.m.mem_read(ptr,n*8) if n else b'')+bytes(self.m.mem_read(self.base+cfg['reported'],8 if bot==1 else 16))
+            return raw
+        def visit(self,m,address,size,user):
+            rva=address-self.base
+            names={0x18aa0:'evaluation',0x271f0:'buy_manager',0x2abc0:'sell_manager',0x26d20:'modify',0x22c40:'close',0x950:'send',0x18790:'table_cleanup'} if bot==1 else {0x20ef0:'evaluation',0x32f60:'buy_manager',0x37590:'sell_manager',0x32a90:'modify',0x2e370:'close',0x950:'send',0x20bc0:'table_cleanup'}
+            if rva in names:self.executed[names[rva]]=self.executed.get(names[rva],0)+1
+            if address==self.base+cfg['start']:self.active_seeded=True
+            result=super().visit(m,address,size,user)
+            if self.done:self.terminal=rva
+            if address==self.base+cfg['start'] and not self.prepared:
+                self.prepared=True;c=self.case;e=c['extra'];x=self.x
+                for n,k,a,_ in active.fields(bot):
+                    if a is not None:m.mem_write(self.base+a,struct.pack('<'+k,c['active'][n]))
+                top=0x5001f000+cfg['sub']+64;m.mem_write(top,struct.pack('<Q',0x60000000));m.reg_write(x.UC_X86_REG_RSP,top);m.reg_write(x.UC_X86_REG_RCX,c['caller_index']);m.reg_write(x.UC_X86_REG_RDX,e['CallerFlag']);m.reg_write(x.UC_X86_REG_R12,e['IncomingChanged'])
+                for _,kind,rva in manager_fields(bot):m.mem_write(self.base+rva,bytes(struct.calcsize('<'+kind)))
+                m.mem_write(self.base+(0x6241c if bot==1 else 0x6d514),struct.pack('<i',e['ManagerMode']))
+                m.mem_write(self.base+cfg['report'],bytes([e['ReportFlag']]));m.mem_write(self.base+cfg['fallback'],struct.pack('<IQ',0,self.string('XAUUSD')))
+                m.mem_write(self.base+cfg['mframe'],struct.pack('<i',e['ManagerFrame']));m.mem_write(self.base+cfg['mtimes'],struct.pack('<'+str(8 if bot==1 else 9)+'q',*[e['ManagerPrevious']]*(8 if bot==1 else 9)))
+                m.mem_write(self.base+cfg['tick'],struct.pack('<q3dQqI4xd',0,c['bid'],c['ask'],0.,0,0,0,0.));m.mem_write(self.base+cfg['stops'],bytes(12000));m.mem_write(self.base+cfg['guard'],bytes([e['TableGuard']]));m.mem_write(self.base+cfg['current_stop'],bytes(8));m.mem_write(self.base+cfg['counter'],bytes(4));m.mem_write(self.base+cfg['reported'],bytes(16 if bot==3 else 8))
+                desc=self.base+(0x6a3c0 if bot==1 else 0x1d6d10);m.mem_write(desc,struct.pack('<Q',0x800010055)+bytes(44))
+                if bot==1:
+                    for a,v in [(0x67470,e['LicenceValid']),(0x62490,e['TickManagement']),(0x62000,e['BarOverride'])]:m.mem_write(self.base+a,bytes([v]))
+                else:m.mem_write(self.base+cfg['takes'],bytes(8000));m.mem_write(self.base+cfg['current_take'],bytes(8))
+            return result
+        def call(self,m,address,size,user):
+            api=self.sdk.get(address);x=self.x;r=lambda n:m.reg_read(getattr(x,'UC_X86_REG_'+n));sp=r('RSP')
+            if api is None:return super().call(m,address,size,user)
+            if api in [0,32,34]:return super().call(m,address,size,user)
+            if api in [11,12,31]:return news_adapter.Original.call(self,m,address,size,user)
+            rd=self.tape;want=rd.block();got=self.state()
+            if want!=got:
+                at=next((i for i,(a,b) in enumerate(zip(want,got)) if a!=b),min(len(want),len(got)));raise ValueError('EVALUATOR_STATE '+str((self.case['id'],api,self.api_count,at,len(want),len(got),len(super().state()),want[max(0,at-8):at+24].hex(),got[max(0,at-8):at+24].hex())))
+            kind,*args=rd.take('i4Q');texts=[rd.text() for _ in range(4)];payload=rd.block();error,=rd.take('I');a,b,c,d=args
+            require(kind==(21 if api==30 else api) and (r('RCX')==self.nfp['ctx'] or api==5),'EVALUATOR_SDK_ORDER '+str((self.case['id'],kind,api)))
+            def integer(v):m.reg_write(x.UC_X86_REG_RAX,v&MASK)
+            def double(v):m.mem_write(self.base+self.cfg['slot'],struct.pack('<Q',v));m.reg_write(x.UC_X86_REG_XMM0,v)
+            def string(v):m.mem_write(self.base+self.cfg['string_result'],struct.pack('<IQ',0,0 if v is None else self.string(v)))
+            if api==1:require(r('RDX')==a and a in [4,6,7],'INFO');integer(b)
+            elif api==2:require(r('RDX')==0,'SERVER');integer(a)
+            elif api==3:
+                require(int(r('RDX')!=0)==a,'CURRENT');integer(b)
+                if a:require(len(payload)==32,'CURRENT_PAYLOAD');m.mem_write(r('RDX'),payload)
+            elif api==4:require(r('RDX')==a and len(payload)==32,'STRUCT');m.mem_write(r('R8'),payload);integer(b)
+            elif api==5:require((r('XMM0')&MASK,r('XMM1')&MASK)==(a,b),'MOD');m.reg_write(x.UC_X86_REG_XMM0,c)
+            elif api==6:require(self.read_text(r('RDX'))==texts[0],'PARSE');integer(a)
+            elif api in [7,8,43]:
+                actual=(r('XMM1')&MASK,r('R8')&0xffffffff) if api==43 else (r('RDX'),r('R8')&0xffffffff)
+                require(actual==(a,b),'FORMAT_ARGUMENTS');string(texts[0])
+                if api==8:require(r('R9')&65535==c,'INTEGER_FILL')
+            elif api==10:
+                require(r('RDX')==2 and r('R8')==a,'PRINT')
+                if a==7:
+                    for i in range(4):require(self.read_text(struct.unpack('<Q',m.mem_read(sp+40+32*i,8))[0])==texts[i],'SEVEN_PRINT_TEXT')
+                    for i,value in enumerate([b,c,d]):require(struct.unpack('<Q',m.mem_read(sp+56+32*i,8))[0]==value,'SEVEN_PRINT_NUMBER')
+                elif a<=4:
+                    for i in range(a):require(self.read_text(struct.unpack('<Q',m.mem_read(sp+40+16*i,8))[0])==texts[i],'PRINT_TEXT')
+                else:
+                    extra=Reader(payload);alltext=texts+[extra.text(),extra.text()]
+                    for i in range(a):require(self.read_text(struct.unpack('<Q',m.mem_read(sp+40+16*i,8))[0])==alltext[i],'SIX_PRINT')
+            elif api in [13,15]:integer(a)
+            elif api in [14,16]:require(r('RDX')&0xffffffff==a,'TICKET');integer(b)
+            elif api in [17,22]:require(r('RDX')==a,'INTEGER');integer(b)
+            elif api in [18,23]:require(r('RDX')==a,'STRING');string(texts[0])
+            elif api in [19,24]:require(r('RDX')==a,'DOUBLE');double(b)
+            elif api in [20,25]:require(r('RDX')==a,'SELECT');integer(b)
+            elif api in [21,30]:require((r('RDX'),r('R8'))==(self.base+self.nfp['request'],self.base+self.nfp['request']+240),'SEND');integer(b)
+            elif api in [26,27,29]:
+                require(self.read_text(r('RDX'))==texts[0] and r('R8')==a,'SYMBOL')
+                if api==29:m.mem_write(r('R9'),struct.pack('<q',b));integer(c)
+                elif api==27:double(b)
+                else:integer(b)
+            elif api==28:require(self.read_text(r('RDX'))==texts[0] and len(payload)==64,'TICK');m.mem_write(r('R8'),payload);integer(a)
+            elif api==33:require(r('RDX')==a and a in [1000,2500],'SLEEP')
+            elif api in [35,36,37]:
+                require(self.read_text(r('RDX'))==texts[0] and (r('R8')&0xffffffff)==(a&0xffffffff) and (r('R9')&0xffffffff)==(b&0xffffffff),'SERIES')
+                if api==35:integer(c)
+                else:double(c)
+            elif api==38:require(r('RDX')==a,'ACCOUNT_DOUBLE');double(b)
+            elif api==39:require(self.read_text(r('RDX'))==texts[0] and r('XMM2')&MASK==a,'GLOBAL');integer(b)
+            elif api==40:require(r('RDX')==a,'ACCOUNT_STRING');string(texts[0])
+            elif api==41:require(r('RDX')==a,'ACCOUNT_INTEGER');integer(b)
+            elif api==42:
+                require(r('RDX')==a and self.read_text(r('R8'))==texts[0] and r('XMM3')&MASK==b and int.from_bytes(m.mem_read(sp+40,8),'little')==c,'MARGIN');m.mem_write(int.from_bytes(m.mem_read(sp+48,8),'little'),payload);integer(d)
+            elif api==44:require(r('RDX')==a and r('R9')==b and self.read_text(r('R8'))==texts[0] and self.read_text(int.from_bytes(m.mem_read(sp+40,8),'little'))==texts[1],'OBJECT');integer(c)
+            elif api==45:
+                require(self.read_text(r('RDX'))==texts[0] and r('R8')==a and r('R9')==b and len(payload)==16,'SESSION');m.mem_write(int.from_bytes(m.mem_read(sp+40,8),'little'),payload[:8]);m.mem_write(int.from_bytes(m.mem_read(sp+48,8),'little'),payload[8:]);integer(c)
+            elif api==46:
+                desc=self.base+(0x6a3c0 if bot==1 else 0x1d6d10);require(r('RDX')==desc and r('R8')==a and r('R9')==b and len(payload)==d*8,'RESIZE')
+                m.mem_write(desc+8,struct.pack('<I',d));m.mem_write(desc+28,struct.pack('<Q',0x71000000));m.mem_write(0x71000000,payload);integer(c)
+            else:raise ValueError('UNBOUND_SDK '+str(api))
+            m.mem_write(self.base+self.nfp['error'],struct.pack('<I',error));self.api_count+=1
+        def run(self,c,tape):
+            self.prepared=False;self.terminal=None;result=super().run(c,tape);self.terminals.append(dict(id=c['id'],tag=c['tag'],terminal_rva=hex(self.terminal),decision=self.entry_decision));return result
+    return Full()
+def identity(bot):
+    source=ROOT/f'bot-cua-toi-{bot}/source/MQL5';script=f'Scripts/bot-cua-toi-{bot}/Bot{bot}EvaluationCheck.mq5';helpers=dict(active.identity(bot)['helpers_sha256'])
+    for p in [Path(__file__),ROOT/'cong-cu/tao-bo-kiem-danh-gia-lien-tuc.py',ROOT/f'bot-cua-toi-{bot}/tests/check-position-management-flow.py']:helpers[p.relative_to(ROOT).as_posix()]=sha(p)
+    return dict(original_ex5_sha256=base.validation.original_hash(bot),sources_sha256={p.relative_to(source).as_posix():sha(p) for p in pub.closure(source/script,source)},helpers_sha256=helpers)
+def main():
+    p=argparse.ArgumentParser(description=__doc__);p.add_argument('mode',choices=['prepare','mql5','original','compare']);p.add_argument('bot',type=int,choices=[1,3]);p.add_argument('run');p.add_argument('--build');a=p.parse_args();require(re.fullmatch('[a-z0-9-]{1,48}',a.run),'BAD_RUN');rows=cases(a.bot);folder=ROOT/f'bot-cua-toi-{a.bot}/bang-chung/kiem-quan-ly-vi-the'/a.run;current=identity(a.bot);header=struct.pack('<3i',MAGIC,1,len(rows))
+    if a.mode=='prepare':folder.mkdir(parents=True,exist_ok=False);(folder/'cases.bin').write_bytes(encode(rows,a.bot));save(folder/'baseline.json',dict(**current,cases=len(rows),inputs_sha256=sha(folder/'cases.bin'),**SCOPE));print(json.dumps(dict(cases=len(rows))));return
+    b=json.loads((folder/'baseline.json').read_text());require(all(b[k]==v for k,v in current.items()) and (folder/'cases.bin').read_bytes()==encode(rows,a.bot),'IDENTITY_CHANGED')
+    if a.mode=='mql5':
+        mt=ROOT.parent/f'.local/mt5-bot{a.bot}-thread-20261025';receipt=ROOT/f'bot-cua-toi-{a.bot}/bang-chung/bien-dich'/a.build/'bien-nhan.json';build=json.loads(receipt.read_text(encoding='utf-8-sig'));script=f'Scripts/bot-cua-toi-{a.bot}/Bot{a.bot}EvaluationCheck.mq5'
+        require(build['target']==script and build['errors']==build['warnings']==0,'BUILD_NOT_CLEAN')
+        for n,h in current['sources_sha256'].items():require(sha(mt/'MQL5'/n)==build['sources_sha256'][n]==h,'BUILD_CHANGED')
+        binary=mt/'MQL5'/Path(script).with_suffix('.ex5');require(sha(binary)==build['binary_sha256']==sha(receipt.parent/binary.name),'BINARY_CHANGED')
+        files=mt/f'MQL5/Files/bot{a.bot}-evaluation'/a.run;files.mkdir(parents=True,exist_ok=False);shutil.copyfile(folder/'cases.bin',files/'cases.bin')
+        preset=mt/'MQL5/Presets'/('evaluation-'+a.run+'.set');ini=mt/('evaluation-'+a.run+'.ini');preset.write_text('CheckRun='+a.run+'\n',encoding='utf-16');ini.write_text(f'[Experts]\nEnabled=0\nAllowLiveTrading=0\nAllowDllImport=0\n[StartUp]\nScript=bot-cua-toi-{a.bot}\\Bot{a.bot}EvaluationCheck\nScriptParameters={preset.name}\nSymbol=XAUUSD_NOCOST_V2\nPeriod=M15\nShutdownTerminal=1\n',encoding='utf-16');proc=subprocess.Popen(f'"{mt/"terminal64.exe"}" /portable /config:"{ini}"',cwd=mt,creationflags=subprocess.CREATE_NO_WINDOW)
+        try:code=proc.wait(timeout=120)
+        except subprocess.TimeoutExpired:proc.terminate();proc.wait(timeout=30);raise RuntimeError('MT5_TIMEOUT')
+        require(code==0 and (files/'script-status.bin').read_bytes()==struct.pack('<2i',0,len(rows)),'SCRIPT_FAILED')
+        for n in ['mql5-results.bin','sdk-tape.bin','script-status.bin','cast-values.bin']:
+            with (folder/n).open('xb') as f:f.write((files/n).read_bytes())
+        save(folder/'mql5-run.json',dict(**current,cases=len(rows),result_sha256=sha(folder/'mql5-results.bin'),sdk_tape_sha256=sha(folder/'sdk-tape.bin'),casts_sha256=sha(folder/'cast-values.bin'),build=a.build,build_receipt_sha256=sha(receipt),**SCOPE));print(json.dumps(dict(cases=len(rows))));return
+    if a.mode=='original':
+        tape=Reader((folder/'sdk-tape.bin').read_bytes());require(tape.take('3i')==(MAGIC,1,len(rows)),'TAPE_HEADER');o=original(a.bot,active.PARTS[a.bot].news.news.news.news.cast_values(folder/'cast-values.bin'));o.cast_calls=o.queue_clears=0;raw=bytearray(header);calls=0
+        for c in rows:
+            require(tape.take('i')[0]==c['id'],'TAPE_ID');state=o.run(c,tape.block());raw+=struct.pack('<2i',c['id'],len(state))+state;calls+=o.api_count
+        require(tape.pos==len(tape.raw),'TAPE_TRAILING')
+        with (folder/'original-results.bin').open('xb') as f:f.write(raw)
+        require(all(o.executed.get(k,0)>0 for k in ['evaluation','buy_manager','sell_manager','modify','close','send','table_cleanup']),'UNEXECUTED_CHILD')
+        save(folder/'decisions.json',o.terminals)
+        save(folder/'original-run.json',dict(**current,cases=len(rows),result_sha256=sha(folder/'original-results.bin'),sdk_tape_sha256=sha(folder/'sdk-tape.bin'),casts_sha256=sha(folder/'cast-values.bin'),sdk_calls=calls,parent_instructions=len(o.covered),native_child_calls=o.executed,**SCOPE));print(json.dumps(dict(cases=len(rows),sdk_calls=calls,children=o.executed)));return
+    for n in ['original','mql5']:
+        r=json.loads((folder/(n+'-run.json')).read_text());require(all(r[k]==v for k,v in current.items()) and r['result_sha256']==sha(folder/(n+'-results.bin')) and r['sdk_tape_sha256']==sha(folder/'sdk-tape.bin') and r['casts_sha256']==sha(folder/'cast-values.bin'),'RUN_CHANGED')
+    left,right=[(folder/(n+'-results.bin')).read_bytes() for n in ['original','mql5']];require(left==right,'RESULTS_DIFFER')
+    save(folder/'comparison.json',dict(cases=len(rows),matched=len(rows),failed=0,**SCOPE,limits=['Native entry through management and all following active branches. Terminal replies and initial configuration supplied. Final display/statistics, initialization/lifecycle and complete paired EA run remain excluded.']));print(json.dumps(dict(cases=len(rows),matched=len(rows),failed=0)))
+if __name__=='__main__':main()

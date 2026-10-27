@@ -136,10 +136,16 @@ void FakePrint(const string value)
 // first_zero_ticket_changed is only checked, never hashed or used for the reply. When both flags
 // allow per-tick, the first PositionsTotal keeps that branch for every profile but the empty
 // profile 0, profile 7 included; it passes true, the bar-change branch FirstZeroTicketChanged.
-bool FakeBot1ManagePositions(const bool buy,const Bot1PositionManagementSettings &settings,
-                             Bot1PositionManagementState &shared,const double &levels[],
-                             Bot1PendingRequestState &requests,Bot1TradeSendOptions &options,
-                             const ulong &deviation,const bool first_zero_ticket_changed)
+bool FakeBot1ManagePositionsFields(const bool buy,const Bot1PositionManagementSettings &settings,
+                         Bot1PositionManagementState &shared,const double &levels[],
+                         Bot1PendingRequestState &requests,Bot1TradeSendOptions &options,
+                         const ulong &deviation,const bool first_zero_ticket_changed,
+                           double &copied_step,double &cache[][2],const double &volumes[],
+                           const uint &strategy_index,uint &error_count,ulong &last_ticket,MqlTick &tick,
+                           const string &symbol,const int &magic,const double &unit,
+                           const double &stop_distance,const double &take_distance,const double &gap,
+                           const double &freeze,const int &high_low_enabled,const double &step_reference,
+                           const int &management_enabled,const double &emergency_offset)
 {
    if(settings.symbol!="CHECK") RouterFail(30);
    if(deviation!=RouterDeviation) RouterFail(31);
@@ -169,7 +175,7 @@ bool FakeBot1ManagePositions(const bool buy,const Bot1PositionManagementSettings
 #define PositionGetInteger FakePositionGetInteger
 #define PositionGetString FakePositionGetString
 #define Print FakePrint
-#define Bot1ManagePositions FakeBot1ManagePositions
+#define Bot1ManagePositionsFields FakeBot1ManagePositionsFields
 #include "../../Include/bot-cua-toi-1/Bot1ManagementRouter.mqh"
 #undef iTime
 #undef PositionsTotal
@@ -177,7 +183,7 @@ bool FakeBot1ManagePositions(const bool buy,const Bot1PositionManagementSettings
 #undef PositionGetInteger
 #undef PositionGetString
 #undef Print
-#undef Bot1ManagePositions
+#undef Bot1ManagePositionsFields
 
 void RouterAdd(const ulong ticket,const long magic,const long type,const string symbol)
 {

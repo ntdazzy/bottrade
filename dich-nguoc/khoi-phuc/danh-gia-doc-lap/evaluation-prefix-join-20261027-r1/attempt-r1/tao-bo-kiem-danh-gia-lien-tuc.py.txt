@@ -1,0 +1,76 @@
+"""Extend the active-flow recorders to the real evaluator entry and manager calls."""
+import importlib.util
+from pathlib import Path
+ROOT=Path(__file__).resolve().parents[1]
+s=importlib.util.spec_from_file_location('evaluation_schema',ROOT/'cong-cu/kiem-danh-gia-lien-tuc-bot-1-3.py')
+t=importlib.util.module_from_spec(s);s.loader.exec_module(t)
+for bot in [1,3]:
+    folder=ROOT/f'bot-cua-toi-{bot}/source/MQL5/Scripts/bot-cua-toi-{bot}'
+    source=(folder/f'Bot{bot}EvaluationActiveFlowCheck.mq5').read_text()
+    source=source.replace('int SourceError();','int MockResize(long &values[],const int size,const int reserve=0);\nbool MockSession(const string symbol,const ENUM_DAY_OF_WEEK day,const uint session,datetime &from,datetime &to);\nint SourceError();',1)
+    source=source.replace('#define MQLInfoInteger MockInfo','#define ArrayResize MockResize\n#define SymbolInfoSessionTrade MockSession\n#define MQLInfoInteger MockInfo',1)
+    source=source.replace('#undef MQLInfoInteger','#undef ArrayResize\n#undef SymbolInfoSessionTrade\n#undef MQLInfoInteger',1)
+    source=source.replace(f'Bot{bot}EvaluationActiveFlow.mqh',f'Bot{bot}Evaluation.mqh')
+    declarations=f'Bot{bot}EvaluationPrefixSettings Prefix;Bot{bot}EvaluationPrefixState PrefixState;long PrefixData[{len(t.EXTRA)}];int ManagerTimeCalls=0;\n'
+    source=source.replace('int TapeFile,EndErrorOverride=-1;',declarations+'int TapeFile,EndErrorOverride=-1;',1)
+    snapshot='\n'.join('   Word((ulong)(long)'+(f'Prefix.inputs.native_{"6a3b4" if bot==1 else "1d6d08"}' if n=='ReportFlag' else 'Prefix.management_timeframe' if n=='ManagerFrame' else f'PrefixData[{i}]')+');' for i,(n,_,_) in enumerate(t.EXTRA))
+    snapshot+='''
+   Word((ulong)Execution.tick.time);Word(Bits(Execution.tick.bid));Word(Bits(Execution.tick.ask));Word(Bits(Execution.tick.last));
+   Word(Execution.tick.volume);Word((ulong)Execution.tick.time_msc);FileWriteInteger(TapeFile,(int)Execution.tick.flags);FileWriteInteger(TapeFile,0);Word(Bits(Execution.tick.volume_real));
+'''
+    snapshot+=f'   for(int i=0;i<{8 if bot==1 else 9};i++) Word((ulong)PrefixState.management_times[i]);\n'
+    snapshot+='   Word(Bits(PrefixState.management.current_stop));Word((ulong)(long)PrefixState.management.counter);Word(PrefixState.management.table.guard);\n'
+    if bot==3:snapshot+='   Word(Bits(PrefixState.management.current_take));\n'
+    snapshot+='   for(int i=0;i<500;i++) for(int j=0;j<3;j++) Word(Bits(PrefixState.management.table.rows[i][j]));\n'
+    if bot==3:snapshot+='   for(int i=0;i<500;i++) for(int j=0;j<2;j++) Word(Bits(PrefixState.management.table.take_rows[i][j]));\n'
+    snapshot+='   Word((ulong)ArraySize(PrefixState.management.open_tickets));for(int i=0;i<ArraySize(PrefixState.management.open_tickets);i++) Word((ulong)PrefixState.management.open_tickets[i]);Word((ulong)PrefixState.management.table.reported_ticket);\n'
+    if bot==3:snapshot+='   Word((ulong)PrefixState.management.table.reported_take_ticket);\n'
+    source=source.replace('   if(RecordFinal) Word((ulong)Decision);',snapshot+'   if(RecordFinal) Word((ulong)Decision);',1)
+    source=source.replace('int value=(int)property==4 ? TradeAllowed : (int)P[p_info];','int value=(int)property==7 ? (int)PrefixData[1] : ((int)property==4 ? TradeAllowed : (int)P[p_info]);')
+    marker='   Begin();datetime value=(datetime)LevelData[TimeCalls==0 ? 10 : 11];';assert marker in source
+    source=source.replace(marker,'''   if((int)timeframe==Prefix.management_timeframe)
+   { Begin();long reply=PrefixData[ManagerTimeCalls==0 ? 11 : 12];ManagerTimeCalls++;End(35,(ulong)(long)timeframe,(ulong)(long)shift,(ulong)reply,0,symbol);return (datetime)reply; }
+'''+marker,1)
+    # Distinguish the manager timeframe from the later entry timeframe in cases.
+    source=source.replace('ZeroMemory(tick);tick.bid=100.;tick.ask=101.;','ZeroMemory(tick);tick.bid=100.;tick.ask=101.;')
+    a=source.index('bool MockTick(const string symbol,MqlTick &tick)\n{');b=source.index('\nbool MockStopped()',a)
+    source=source[:a]+'''bool MockTick(const string symbol,MqlTick &tick)
+{
+   Begin();if(PrefixData[4]!=0) { ZeroMemory(tick);tick.bid=Number((ulong)WideData[8]);tick.ask=Number((ulong)WideData[7]); }
+   uint error=SourceError();Header(28,(ulong)PrefixData[3],0,0,0,symbol,NULL,NULL,NULL,64);
+   Word((ulong)tick.time);Word(Bits(tick.bid));Word(Bits(tick.ask));Word(Bits(tick.last));Word(tick.volume);Word((ulong)tick.time_msc);FileWriteInteger(TapeFile,(int)tick.flags);FileWriteInteger(TapeFile,0);Word(Bits(tick.volume_real));FileWriteInteger(TapeFile,(int)error);return PrefixData[3]!=0;
+}
+'''+source[b:]
+    functions='''bool MockSession(const string symbol,const ENUM_DAY_OF_WEEK day,const uint session,datetime &from,datetime &to)
+{
+   Begin();bool ok=session==0 && PrefixData[2]!=0;from=PrefixData[2]==2 ? 1 : 0;to=PrefixData[2]==2 ? 2 : 86400;
+   uint error=SourceError();Header(45,(ulong)(int)day,(ulong)session,(ulong)ok,0,symbol,NULL,NULL,NULL,16);
+   Word((ulong)from);Word((ulong)to);FileWriteInteger(TapeFile,(int)error);return ok;
+}
+int MockResize(long &values[],const int size,const int reserve)
+{
+   Begin();int reply=ArrayResize(values,size,reserve);uint error=SourceError();int n=ArraySize(values);
+   Header(46,(ulong)(long)size,(ulong)(long)reserve,(ulong)(long)reply,(ulong)n,NULL,NULL,NULL,NULL,n*8);
+   for(int i=0;i<n;i++) Word((ulong)values[i]);FileWriteInteger(TapeFile,(int)error);return reply;
+}
+void MockPrint(const string a,const string b,const string c)
+{ Begin();End(10,3,0,0,0,a,b,c); }
+void MockPrint(const string a,const int b,const string c,const int d,const string e,const long f,const string g)
+{ Begin();End(10,7,(ulong)(long)b,(ulong)(long)d,(ulong)f,a,c,e,g); }
+'''
+    # Session report has a three-string Print overload compiled inside the headers.
+    source=source.replace('void MockPrint(const string a,const string b,const string c,const string d,const string e,const string f);','void MockPrint(const string a,const string b,const string c);\nvoid MockPrint(const string a,const int b,const string c,const int d,const string e,const long f,const string g);\nvoid MockPrint(const string a,const string b,const string c,const string d,const string e,const string f);',1)
+    source=source.replace('int OnStart()\n{',functions+'int OnStart()\n{',1)
+    marker='      for(int i=0;i<'+str(len(t.active.fields(bot)))+';i++) ActiveData[i]=FileReadLong(file);';assert marker in source
+    source=source.replace(marker,marker+f'\n      for(int i=0;i<{len(t.EXTRA)};i++) PrefixData[i]=FileReadLong(file);',1)
+    setup=f'''      ZeroMemory(Prefix);ZeroMemory(PrefixState);ManagerTimeCalls=0;
+      Prefix.inputs.symbol="DETACHED";Prefix.inputs.native_{'6a428' if bot==1 else '1d6e28'}="XAUUSD";
+      Prefix.inputs.native_{'6a3b4' if bot==1 else '1d6d08'}=(uchar)PrefixData[0];Prefix.management_timeframe=(int)PrefixData[9];
+      for(int i=0;i<{8 if bot==1 else 9};i++) PrefixState.management_times[i]=PrefixData[10];
+'''
+    if bot==1:setup+='      Prefix.license_valid=(uchar)PrefixData[6];Prefix.tick_management=(uchar)PrefixData[7];Prefix.bar_override=(uchar)PrefixData[8];Prefix.incoming_changed=PrefixData[13]!=0;\n'
+    else:setup+='      Prefix.caller_flag=(uchar)PrefixData[5];\n'
+    marker='      DoubleCast(casts,CurrentSpread);';assert marker in source;source=source.replace(marker,setup+marker,1)
+    source=source.replace(f'Decision=Bot{bot}EvaluateActiveFlow(',f'Decision=Bot{bot}Evaluate(',1).replace(',BlockFlags!=0,DaySwitch',',DaySwitch').replace(',ChangePercent,PreviousBalance);int final_error=',',ChangePercent,PreviousBalance,Prefix,PrefixState);int final_error=',1)
+    source=source.replace(f'bot{bot}-evaluation-active-flow',f'bot{bot}-evaluation').replace('EVALUATION_ACTIVE_FLOW_CASE','EVALUATION_CASE')
+    (folder/f'Bot{bot}EvaluationCheck.mq5').write_text(source,encoding='utf-8',newline='\n')

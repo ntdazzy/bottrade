@@ -1,0 +1,18 @@
+{
+  "cases": 57,
+  "matched": 57,
+  "failed": 0,
+  "whole_bot_complete": false,
+  "whole_manager_complete": false,
+  "whole_evaluator_complete": false,
+  "full_ea": false,
+  "native_evaluator_entry_to_entry_loop_continuous": true,
+  "child_helpers_intercepted": false,
+  "terminal_replies_supplied": true,
+  "withdrawals_disabled": true,
+  "final_display_excluded": true,
+  "original_ex5_changed": false,
+  "limits": [
+    "Native entry through management and all following active branches. Terminal replies and initial configuration supplied. Final display/statistics, initialization/lifecycle and complete paired EA run remain excluded."
+  ]
+}

@@ -319,7 +319,7 @@ bool FTryClose(Bot1PendingRequestState &state,Bot1TradeSendOptions &options,cons
 Bot1PositionManagementSettings FCfg;
 Bot1PositionManagementState FShared;
 double FCache[100][2],FVolumes[8],FStep;uint FIndex,FErrors;ulong FLast;MqlTick FTick;
-string FSymbol;int FMagic,FHighLowEnabled;double FUnit,FStopDistance,FTakeDistance,FGap,FFreeze,FStepSetting;
+string FSymbol;int FMagic,FHighLowEnabled,FEnabled;double FUnit,FStopDistance,FTakeDistance,FGap,FFreeze,FStepSetting,FEmergencyOffset;
 Bot1PendingRequestState FRequests;
 Bot1TradeSendOptions FOptions;
 double FLevels[8];
@@ -348,12 +348,12 @@ void FSetProfile(const int profile)
 // Bot1 has no take reply, so profile 13 starts like profile 0; the table is seeded with stop rows only.
 void FInitialize()
 {
-   ZeroMemory(FCfg);ZeroMemory(FShared);ZeroMemory(FTick);ArrayInitialize(FCache,0.0);ArrayInitialize(FVolumes,0.0);FStep=0;FIndex=0;FErrors=0;FLast=0;FSymbol=NULL;FMagic=0;FHighLowEnabled=0;FUnit=0;FStopDistance=0;FTakeDistance=0;FGap=0;FFreeze=0;FStepSetting=0;ZeroMemory(FRequests);ZeroMemory(FOptions);
+   ZeroMemory(FCfg);ZeroMemory(FShared);ZeroMemory(FTick);ArrayInitialize(FCache,0.0);ArrayInitialize(FVolumes,0.0);FStep=0;FIndex=0;FErrors=0;FLast=0;FSymbol=NULL;FMagic=0;FHighLowEnabled=0;FUnit=0;FStopDistance=0;FTakeDistance=0;FGap=0;FFreeze=0;FStepSetting=0;FEnabled=0;FEmergencyOffset=0;ZeroMemory(FRequests);ZeroMemory(FOptions);
    FRequests.magic=0;FRequests.preferred=ORDER_FILLING_FOK;FOptions.async_mode=0;FOptions.margin_mode=0;FOptions.log_level=0;
    ZeroMemory(FPositions);FSelected=-1;FTotalCalls=0;FDigitCalls=0;FCalls=0;FTradeSends=0;FHash=(ulong)0xcbf29ce484222325;
    bool buy=FCase[1]!=0;int profile=FCase[2];FLive=FCase[3];
-   FSymbol="CHECK";FMagic=FCase[16];FCfg.enabled=FCase[15];FUnit=1.;
-   FStopDistance=10.;FTakeDistance=20.;FCfg.emergency_offset=.5;FGap=.2;FFreeze=2.5;
+   FSymbol="CHECK";FMagic=FCase[16];FEnabled=FCase[15];FUnit=1.;
+   FStopDistance=10.;FTakeDistance=20.;FEmergencyOffset=.5;FGap=.2;FFreeze=2.5;
    FCfg.finish.mode=FCase[4];FCfg.high_low_eligible=(uchar)FCase[7];
    FCfg.finish.high_low_buy_shift=10.;FCfg.finish.high_low_sell_shift=10.;FCfg.finish.min_steps=2;
    FCfg.timed_delay_seconds=60;FCfg.virtual_delay_seconds=7;FCfg.anchor_limit=1.;
@@ -363,9 +363,9 @@ void FInitialize()
    for(int i=0;i<8;i++) { FVolumes[i]=.1+i*.01;FLevels[i]=buy ? 95. : 105.; }
    FBid=buy ? 105. : 95.;FAsk=buy ? 106. : 96.;FStopReply=buy ? 95. : 105.;
    FMinimum=profile==22 ? 0. : .01;
-   if(profile==5) FCfg.enabled=0;
+   if(profile==5) FEnabled=0;
    if(profile==7 || profile==8) { FCfg.candle_enabled[0]=1;FCfg.candle_timeframe[0]=15; }
-   if(profile==9) { FCfg.emergency_offset=0.;FStopDistance=.1;FBid=buy ? 95. : 104.;FAsk=buy ? 96. : 105.; }
+   if(profile==9) { FEmergencyOffset=0.;FStopDistance=.1;FBid=buy ? 95. : 104.;FAsk=buy ? 96. : 105.; }
    if(profile==10) FStopReply=buy ? 106. : 95.;
    if(profile==12) FStopReply=buy ? FBid : FAsk;
    FSetProfile(profile);
@@ -488,9 +488,9 @@ int OnStart()
       FShared.strategy_index=99;FShared.error_count=0xffffffff;FShared.last_ticket=0xffffffffffffffff;
       FShared.tick.bid=-123456;FShared.tick.ask=123456;ArrayInitialize(FShared.volumes,-777.0);
       FShared.copied_step=-98765;ArrayInitialize(FShared.cache,-777.0);
-      FCfg.symbol="DETACHED";FCfg.magic=-777;FCfg.unit=-777;FCfg.stop_distance=-777;FCfg.take_distance=-777;FCfg.gap=-777;FCfg.freeze=-777;FCfg.finish.high_low_enabled=-777;FCfg.finish.step_reference=-777;
+      FCfg.symbol="DETACHED";FCfg.magic=-777;FCfg.unit=-777;FCfg.stop_distance=-777;FCfg.take_distance=-777;FCfg.gap=-777;FCfg.freeze=-777;FCfg.finish.high_low_enabled=-777;FCfg.finish.step_reference=-777;FCfg.enabled=-777;FCfg.emergency_offset=-777;
       bool returned=ExecuteManagementRouter ? FRouteManagement()
-                    : Bot1ManagePositionsFields(FCase[1]!=0,FCfg,FShared,FLevels,FRequests,FOptions,FDeviation,FirstZeroTicketChanged,FStep,FCache,FVolumes,FIndex,FErrors,FLast,FTick,FSymbol,FMagic,FUnit,FStopDistance,FTakeDistance,FGap,FFreeze,FHighLowEnabled,FStepSetting);
+                    : Bot1ManagePositionsFields(FCase[1]!=0,FCfg,FShared,FLevels,FRequests,FOptions,FDeviation,FirstZeroTicketChanged,FStep,FCache,FVolumes,FIndex,FErrors,FLast,FTick,FSymbol,FMagic,FUnit,FStopDistance,FTakeDistance,FGap,FFreeze,FHighLowEnabled,FStepSetting,FEnabled,FEmergencyOffset);
       FWriteResult(output,id,returned);
    }
    if(FileTell(source)!=FileSize(source)) FFail(10);

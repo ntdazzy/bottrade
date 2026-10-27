@@ -1,0 +1,33 @@
+{
+  "cases": 352,
+  "matched": 352,
+  "failed": 0,
+  "first_failures": [],
+  "result_sha256": {
+    "original": "e21198f27c919bfeca2cdc598a356e37ae6379ca7939d8bc495f1a5873115764",
+    "mql5": "e21198f27c919bfeca2cdc598a356e37ae6379ca7939d8bc495f1a5873115764"
+  },
+  "full_management_parents_executed": true,
+  "whole_manager_complete": false,
+  "whole_bot_complete": false,
+  "full_ea": false,
+  "child_helpers_intercepted": false,
+  "terminal_replies_supplied": true,
+  "original_ex5_changed": false,
+  "external_shared_fields_executed": true,
+  "unused_legacy_members_poisoned": true,
+  "incoming_first_zero_ticket_changed": false,
+  "native_router_caller_executed": false,
+  "virtual_table_children_executed": true,
+  "modify_child_intercepted": false,
+  "close_child_intercepted": false,
+  "trade_children_executed": true,
+  "terminal_send_replies_supplied": true,
+  "limits": [
+    "Both original management parent functions run to return, including their loop and real/virtual transitions. This is not an EA, paired terminal comparison or complete manager integration proof.",
+    "All direct management helpers and underlying close/filling/send execute their actual bodies. Terminal queries, send replies and their specified provider-side position effects are supplied. IsStopped=0, logging=0, market execution=2 and filling flag=1; no complete branch/broker/account/EA claim, including every table-growth, full-table or allocation-failure path.",
+    "Native error-code/string/Print code executes. Successful string allocation and signed decimal conversion are supplied; double text is measured separately in MT5 and supplied by value bits.",
+    "CPU both-NaN fixtures only correct measured two-NaN arithmetic. Other native instructions run in Unicorn; no physical original-run, allocation-failure or complete error coverage claim.",
+    "Incoming R12 low-byte context is supplied explicitly for isolated manager calls. Caller mode executes the captured routing/counts with tick-management=1, override=0, validity=1 fixture inputs, then the actual managers and enabled table/trade helpers; no full EA/licensing/protected-byte change."
+  ]
+}
