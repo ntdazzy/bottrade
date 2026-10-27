@@ -1,0 +1,13 @@
+FUNCTION 0x20ef0..0x2a1bc snapshot_sha256=6bead161fa97b6568b546e8c86a4ff03fdda55d6fb226a52b58dd14ec050d920
+RANGE 0x22a59..0x22aa6 (end excluded); base=0x17156250000
+0x22a59 movabs rcx, 0x171514ca538
+0x22a63 movabs rax, 0x7ff6846f81a0
+0x22a6d call rax
+0x22a6f test eax, eax
+0x22a71 js 0x171562735f7[RVA=0x235f7]
+0x22a77 mov ebx, eax
+0x22a79 movabs r14, 0x171514ca538
+0x22a83 movabs r15, 0x7ff6846f81f0
+0x22a8d movabs r13, 0x171562c4838[RVA=0x74838]
+0x22a97 movabs rbp, 0x7ff6846f8310
+0x22aa1 jmp 0x17156272b3d[RVA=0x22b3d]

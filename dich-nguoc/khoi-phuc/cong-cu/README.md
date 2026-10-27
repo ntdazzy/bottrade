@@ -22,6 +22,15 @@ riêng của từng phần ở `bot-cua-toi-1/tests/` và `bot-cua-toi-3/tests/`
 
 Phép kiểm ghép mới:
 
+- `bot-cua-toi-3/tests/check-evaluation-pending-resize.py prepare|mql5|original|compare RUN`:
+  278ca vòng22a59..235f7 sau tính khối lượng; nguyên thân xóa32450,
+  mở3e580 và gửi950, đủ200ô bảng/35trường/4chuỗi cùng thứ tự dịch vụ.
+  Mql5 chạy trước với `--build BUILD` của `Bot3EvaluationPendingResizeCheck.mq5`
+  để đo chuỗi chuyển số; native kiểm lại giá trị/kiểu đầu vào. Không chạy
+  cổng/quản lý phía trước, đầu vào/trả lời dịch vụ/cấp chuỗi được cấp;
+  chưa là EA. `inspect-results.py RUN` trong phân tích `pending-resize-20261027-r1`
+  đọc lại cấu trúc từng ca và chỉ nhãn trường lệch, không sửa bằng chứng.
+
 - `bot-cua-toi-1/tests/check-first-zero-caller-context.py prepare|original|mql5|compare RUN`:
   3.628ca chạy nguyên evaluator tới nhánh vé đầu0 ở quản lý27368; so
   hàm thuần chốt byte R12B của cạnh nến mới,0..10phiên,16vị trí ngăn xếp,

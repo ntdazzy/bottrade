@@ -1,0 +1,99 @@
+{
+  "cases": 278,
+  "matched": 53,
+  "failed": 225,
+  "first_failures": [
+    {
+      "id": 2,
+      "tag": "inclusive-indices",
+      "differences": {
+        "event.5.word0": [
+          7,
+          8
+        ]
+      }
+    },
+    {
+      "id": 3,
+      "tag": "inclusive-indices",
+      "differences": {
+        "event.6.word0": [
+          7,
+          8
+        ],
+        "event.36.word0": [
+          7,
+          8
+        ]
+      }
+    },
+    {
+      "id": 4,
+      "tag": "inclusive-indices",
+      "differences": {
+        "event.7.word0": [
+          7,
+          8
+        ],
+        "event.37.word0": [
+          7,
+          8
+        ]
+      }
+    },
+    {
+      "id": 5,
+      "tag": "inclusive-indices",
+      "differences": {
+        "event.8.word0": [
+          7,
+          8
+        ],
+        "event.38.word0": [
+          7,
+          8
+        ]
+      }
+    },
+    {
+      "id": 26,
+      "tag": "type-and-volume",
+      "differences": {
+        "event.6.word0": [
+          7,
+          8
+        ]
+      }
+    },
+    {
+      "id": 27,
+      "tag": "type-and-volume",
+      "differences": {
+        "event.6.word0": [
+          7,
+          8
+        ]
+      }
+    },
+    {
+      "id": 28,
+      "tag": "type-and-volume",
+      "differences": {
+        "event.6.word0": [
+          7,
+          8
+        ]
+      }
+    },
+    {
+      "id": 29,
+      "tag": "type-and-volume",
+      "differences": {
+        "event.6.word0": [
+          7,
+          8
+        ]
+      }
+    }
+  ]
+}

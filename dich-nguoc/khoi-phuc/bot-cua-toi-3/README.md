@@ -1,5 +1,11 @@
 # bot-cua-toi-3
 
+Đã viết vòng tạo lại lệnh chờ sau thay đổi khối lượng: **278/278 ca
+khớp**, so đủ bảng200ô,35trường/4chuỗi và mọi dịch vụ/thông báo/chờ.
+Thân xóa/mở/gửi chạy thật; đầu vào sau tính khối lượng và dịch vụ được
+cấp. Biên dịch0lỗi/0cảnh báo; còn ghép cổng vốn/quản lý trước vòng và EA.
+[Phạm vi và bằng chứng](phan-tich/chuong-trinh-chinh/pending-resize-20261027-r1/README.md).
+
 Đã nối thêm bước dọn lệnh chờ giữa đầu đánh giá và bổ sung dừng/chốt:
 **339/339 ca khớp**, gồm đầy đủ200ô bảng, đối số/chuỗi dịch vụ và
 trạng thái yêu cầu. Các thân xóa/sửa/gửi chạy thật, câu trả lời MT5
