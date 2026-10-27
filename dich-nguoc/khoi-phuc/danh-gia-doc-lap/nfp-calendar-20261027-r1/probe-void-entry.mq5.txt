@@ -1,0 +1,9 @@
+#property strict
+input string ProbeRun="";
+void OnStart()
+{
+   MqlCalendarEvent events[];MqlCalendarValue values[];ArrayResize(events,2);ArrayResize(values,2);
+   events[0].id=11;events[1].id=22;values[0].time=(datetime)100;values[1].time=(datetime)200;
+   bool a=ArraySetAsSeries(events,true),b=ArraySetAsSeries(values,true);
+   Print("NFP_ARRAY_LAYOUT_PROBE:",ProbeRun,"/",(int)a,"/",(int)b,"/",ArrayGetAsSeries(events),"/",ArrayGetAsSeries(values),"/",events[0].id,"/",values[0].time);
+}

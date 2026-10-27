@@ -1,0 +1,17 @@
+{
+  "cases": 479,
+  "matched": 479,
+  "failed": 0,
+  "first_failures": [],
+  "whole_bot_complete": false,
+  "whole_manager_complete": false,
+  "whole_evaluator_complete": false,
+  "full_ea": false,
+  "native_nfp_calendar_executed": true,
+  "child_helpers_intercepted": false,
+  "terminal_calendar_replies_supplied": true,
+  "original_ex5_changed": false,
+  "limits": [
+    "Complete NFP lookup only; calendar replies and successful allocation supplied. No calendar network or evaluator close/cancel branches."
+  ]
+}

@@ -1,3 +1,9 @@
+Đã dựng `Bot1NfpCalendar.mqh` tìm lịch NFP thật theo hàm gốc:
+**1.916/1.916 ca thường +8/8 ca mảng thiếu khớp**; có cả mảng đọc
+xuôi/ngược, mã dự phòng, thứ tự dịch vụ và mã lỗi cuối. Nguồn trực tiếp
+và bộ kiểm biên dịch0/0. Dữ liệu lịch được cấp; còn nối nhánh hủy/đóng
+và lịch trực tuyến. [Phạm vi](../danh-gia-doc-lap/nfp-calendar-20261027-r1/SPEC.md).
+
 Đã ghép `Bot1EvaluationResizeFlow.mqh`: cổng vốn → toàn bước tính
 khối lượng/rút tiền/đổi tiền → tạo lại lệnh chờ qua xóa/mở/gửi thật.
 **316/316 ca thường +2/2 ca chia0 khớp**; giữ chung chỉ số/mảng,

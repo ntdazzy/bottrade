@@ -1,0 +1,30 @@
+{
+  "cases": 2,
+  "matched": 2,
+  "results": [
+    {
+      "id": 479,
+      "error": "0x1f343b000001f6",
+      "events_sha256": "538a6e76479cf4594ef9000b50f50a86b6f444bca3bab3af3928abc68fe8f47f",
+      "matched": true,
+      "terminal_exit_code": 4294967295,
+      "log_sha256": "0f05385694ca7c5dd6cac9b20e4b8701a8fb61575a3aa4acd0a2d2d60defdc3a"
+    },
+    {
+      "id": 480,
+      "error": "0x143451000001f6",
+      "events_sha256": "aa43108eef73e66dba31b263aabe41671150bece0ac948828364be2deb4f54dd",
+      "matched": true,
+      "terminal_exit_code": 4294967295,
+      "log_sha256": "f79933a92cf10f4174913ce2850562e6669292e95c2fa11fa7ad3f8a64eca945"
+    }
+  ],
+  "whole_bot_complete": false,
+  "whole_manager_complete": false,
+  "whole_evaluator_complete": false,
+  "full_ea": false,
+  "native_nfp_calendar_executed": true,
+  "child_helpers_intercepted": false,
+  "terminal_calendar_replies_supplied": true,
+  "original_ex5_changed": false
+}

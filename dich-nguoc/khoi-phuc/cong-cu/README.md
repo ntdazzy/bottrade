@@ -1,3 +1,9 @@
+- `kiem-lich-nfp-bot-1-3.py prepare|original|mql5|compare BOT RUN`:
+  chạy nguyên helper tìm lịch NFP, so thời điểm/mã lỗi/dịch vụ. `mql5`
+  và `errors` cần `--build BUILD`; cờ xuôi/ngược hai mảng đều được cấp.
+  Lượt b1/b3-nfp-calendar-20261027-r2:1.916ca thường +8ca lỗi mỗi bot;
+  dữ liệu lịch/cấp phát được cấp, chưa nối nhánh hủy/đóng hoặc toànEA.
+
 - `kiem-chuoi-doi-khoi-luong-bot-1-3.py prepare|mql5|original|compare BOT RUN`:
   chuỗi cổng vốn→toàn khối lượng/rút tiền/đổi tiền→xóa/mở/gửi lệnh chờ,
   giữ chung bộ nhớ/chỉ số/mảng. `mql5`/`errors` cần `--build BUILD`;

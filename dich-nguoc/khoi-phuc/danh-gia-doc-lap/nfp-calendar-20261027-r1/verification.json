@@ -1,0 +1,26 @@
+{
+  "checks": [
+    {
+      "bot": 1,
+      "cases": 1916,
+      "matched": 1916,
+      "fatal_cases": 8,
+      "fatal_matched": 8,
+      "instructions": 213,
+      "result_sha256": "4b445fcf09a5da8ef07d5ac477b0d89a4c18c3de8fa45e431f9b26679bdba532",
+      "function_sha256": "c0b3ee5403b7957c86efd5e90b42827068a7003096abb7ce92b0511ebbf9d1ed"
+    },
+    {
+      "bot": 3,
+      "cases": 1916,
+      "matched": 1916,
+      "fatal_cases": 8,
+      "fatal_matched": 8,
+      "instructions": 213,
+      "result_sha256": "4b445fcf09a5da8ef07d5ac477b0d89a4c18c3de8fa45e431f9b26679bdba532",
+      "function_sha256": "2dee9d0e2fda26923648e75141e15be6b6b055f60582c8c8fe6736006cd2d3d4"
+    }
+  ],
+  "independent_review": "nfp_calendar_review and nfp_schedule_spec: no material blockers; original first-match/default/error/series behavior verified",
+  "whole_eas_complete": 0
+}

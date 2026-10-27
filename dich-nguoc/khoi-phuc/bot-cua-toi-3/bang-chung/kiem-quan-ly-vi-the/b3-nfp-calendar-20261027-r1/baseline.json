@@ -1,0 +1,25 @@
+{
+  "original_ex5_sha256": "ee063d3d87490afe24e2f4ce85f6b05659320e297b102efd70207f71ca2feb83",
+  "sources_sha256": {
+    "Scripts/bot-cua-toi-3/Bot3NfpCalendarCheck.mq5": "390b9759c94287b1c6de654cd9263ed4e7ce022275b8bf03e3e3efb1fa3a5349",
+    "Include/bot-cua-toi-3/Bot3NfpCalendar.mqh": "1fd2dfa59cc0eb750bfb65281b59605316767984b7fbecb3f6bd2c442c2036b9"
+  },
+  "helpers_sha256": {
+    "cong-cu/kiem-lich-nfp-bot-1-3.py": "176c347744587acd3f86442f2ab386fb63c892b6ba826dadf68ae82d7ad8f6bf",
+    "cong-cu/kiem-gia-vao-bot-1-3.py": "22394e48932feb7242b967aa58e327d2990402f12bfe52621916f64914c9dac2",
+    "cong-cu/kiem-muc-gia-bot-1-3.py": "a6c447ca80029fb63ced0c9d1673bb14222a7736b04df5c410f280f8471d6a35",
+    "cong-cu/kiem-ban-git-quan-ly.py": "7186478774b34e0d72b4594fbcc85972d9b4c07ed02160987d46d34f39dcb160",
+    "cong-cu/kiem-khoi-luong-hop-le-bot-1-3.py": "8251fb4423d6f5f2e1b79a1c53dbb25fb5a6c568bb61cddef23396dc982243f0"
+  },
+  "cases": 479,
+  "fatal_cases": 2,
+  "inputs_sha256": "82e2d0fab1b7f92e82e776057c238e852ce52d2ec93c18b7ab7e021d52f371f6",
+  "whole_bot_complete": false,
+  "whole_manager_complete": false,
+  "whole_evaluator_complete": false,
+  "full_ea": false,
+  "native_nfp_calendar_executed": true,
+  "child_helpers_intercepted": false,
+  "terminal_calendar_replies_supplied": true,
+  "original_ex5_changed": false
+}

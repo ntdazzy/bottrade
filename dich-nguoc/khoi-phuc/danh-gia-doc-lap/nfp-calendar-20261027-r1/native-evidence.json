@@ -1,0 +1,24 @@
+[
+  {
+    "bot": 1,
+    "begin": "0x61b0",
+    "end": "0x65f3",
+    "sha256": "c0b3ee5403b7957c86efd5e90b42827068a7003096abb7ce92b0511ebbf9d1ed",
+    "listing": "bot1-native-61b0-65f3.txt",
+    "opaque_array_type_addresses": [
+      "0x23e5761278a",
+      "0x23e57610daa"
+    ]
+  },
+  {
+    "bot": 3,
+    "begin": "0x6ad0",
+    "end": "0x6f13",
+    "sha256": "2dee9d0e2fda26923648e75141e15be6b6b055f60582c8c8fe6736006cd2d3d4",
+    "listing": "bot3-native-6ad0-6f13.txt",
+    "opaque_array_type_addresses": [
+      "0x171514adbca",
+      "0x17156057baa"
+    ]
+  }
+]

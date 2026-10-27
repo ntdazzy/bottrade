@@ -1,0 +1,78 @@
+{
+  "cases": 8,
+  "matched": 8,
+  "results": [
+    {
+      "id": 479,
+      "error": "0x1f343b000001f6",
+      "events_sha256": "538a6e76479cf4594ef9000b50f50a86b6f444bca3bab3af3928abc68fe8f47f",
+      "matched": true,
+      "terminal_exit_code": 4294967295,
+      "log_sha256": "cd2fe4dcf51c074b4b3b935d37f74c1042a9af77e2e8dee474b72df8a550b807"
+    },
+    {
+      "id": 480,
+      "error": "0x143451000001f6",
+      "events_sha256": "aa43108eef73e66dba31b263aabe41671150bece0ac948828364be2deb4f54dd",
+      "matched": true,
+      "terminal_exit_code": 4294967295,
+      "log_sha256": "c6f298b6649ba2aca5279106c3591c091d9fba02468975d71d109aa1086894b4"
+    },
+    {
+      "id": 960,
+      "error": "0x1f343b000001f6",
+      "events_sha256": "538a6e76479cf4594ef9000b50f50a86b6f444bca3bab3af3928abc68fe8f47f",
+      "matched": true,
+      "terminal_exit_code": 4294967295,
+      "log_sha256": "329f2d5f046c0e4a519d1b318e2eea653bfe96aa957fce2f3825d68f9c44fcfb"
+    },
+    {
+      "id": 961,
+      "error": "0x143451000001f6",
+      "events_sha256": "aa43108eef73e66dba31b263aabe41671150bece0ac948828364be2deb4f54dd",
+      "matched": true,
+      "terminal_exit_code": 4294967295,
+      "log_sha256": "43ee7b298924f285f581587501e2972d4f1b02c73624ef454f46b20cf3c71c7c"
+    },
+    {
+      "id": 1441,
+      "error": "0x1f343b000001f6",
+      "events_sha256": "538a6e76479cf4594ef9000b50f50a86b6f444bca3bab3af3928abc68fe8f47f",
+      "matched": true,
+      "terminal_exit_code": 4294967295,
+      "log_sha256": "e355f9a0f3be7899f5817b9e299709d4f3e3469f50addb340bfca02c89355ba4"
+    },
+    {
+      "id": 1442,
+      "error": "0x143451000001f6",
+      "events_sha256": "aa43108eef73e66dba31b263aabe41671150bece0ac948828364be2deb4f54dd",
+      "matched": true,
+      "terminal_exit_code": 4294967295,
+      "log_sha256": "86891ba9db98db6e64c29bc5470244309e7a123c5dee0e4380e1e871e313916b"
+    },
+    {
+      "id": 1922,
+      "error": "0x1f343b000001f6",
+      "events_sha256": "538a6e76479cf4594ef9000b50f50a86b6f444bca3bab3af3928abc68fe8f47f",
+      "matched": true,
+      "terminal_exit_code": 4294967295,
+      "log_sha256": "0e9bc778e4965015044e9eeba5eb8b6993b24f5e657c9ffde349476b13b20fab"
+    },
+    {
+      "id": 1923,
+      "error": "0x143451000001f6",
+      "events_sha256": "aa43108eef73e66dba31b263aabe41671150bece0ac948828364be2deb4f54dd",
+      "matched": true,
+      "terminal_exit_code": 4294967295,
+      "log_sha256": "a2ac7ae483dca25e78339eee76c096ff64870ed086f95c65f161ed1e0dddb62b"
+    }
+  ],
+  "whole_bot_complete": false,
+  "whole_manager_complete": false,
+  "whole_evaluator_complete": false,
+  "full_ea": false,
+  "native_nfp_calendar_executed": true,
+  "child_helpers_intercepted": false,
+  "terminal_calendar_replies_supplied": true,
+  "original_ex5_changed": false
+}

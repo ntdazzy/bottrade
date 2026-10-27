@@ -600,3 +600,15 @@
 /cong-cu/tao-bo-kiem-chuoi-doi-khoi-luong.py -text
 /danh-gia-doc-lap/resize-flow-20261027-r1/** -text
 /danh-gia-doc-lap/resize-flow-20261027-r1/*-native-*.txt whitespace=-blank-at-eol,-blank-at-eof,cr-at-eol
+
+/bot-cua-toi-1/source/MQL5/Include/bot-cua-toi-1/Bot1NfpCalendar.mqh -text
+/bot-cua-toi-1/source/MQL5/Scripts/bot-cua-toi-1/Bot1Nfp*.mq5 -text
+/bot-cua-toi-1/bang-chung/kiem-quan-ly-vi-the/b1-nfp-calendar-*/** -text
+/bot-cua-toi-1/bang-chung/bien-dich/b1-nfp-*/** -text
+/bot-cua-toi-3/source/MQL5/Include/bot-cua-toi-3/Bot3NfpCalendar.mqh -text
+/bot-cua-toi-3/source/MQL5/Scripts/bot-cua-toi-3/Bot3Nfp*.mq5 -text
+/bot-cua-toi-3/bang-chung/kiem-quan-ly-vi-the/b3-nfp-calendar-*/** -text
+/bot-cua-toi-3/bang-chung/bien-dich/b3-nfp-*/** -text
+/cong-cu/kiem-lich-nfp-bot-1-3.py -text
+/danh-gia-doc-lap/nfp-calendar-20261027-r1/** -text
+/danh-gia-doc-lap/nfp-calendar-20261027-r1/*-native-*.txt whitespace=-blank-at-eol,-blank-at-eof,cr-at-eol
