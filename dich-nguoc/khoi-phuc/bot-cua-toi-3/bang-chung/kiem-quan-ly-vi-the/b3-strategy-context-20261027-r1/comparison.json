@@ -1,0 +1,300 @@
+{
+  "cases": 1782,
+  "matched": 0,
+  "failed": 1782,
+  "first_failures": [
+    {
+      "id": 0,
+      "tag": "structure",
+      "differences": {
+        "account_reads": [
+          53,
+          1
+        ],
+        "service_order_hash": [
+          3153955782333323279,
+          16038372209008516879
+        ]
+      }
+    },
+    {
+      "id": 1,
+      "tag": "structure",
+      "differences": {
+        "account_reads": [
+          106,
+          2
+        ],
+        "service_order_hash": [
+          4583615525013201829,
+          7512341933381480869
+        ]
+      }
+    },
+    {
+      "id": 2,
+      "tag": "structure",
+      "differences": {
+        "account_reads": [
+          106,
+          2
+        ],
+        "service_order_hash": [
+          4583615525013201829,
+          7512341933381480869
+        ]
+      }
+    },
+    {
+      "id": 3,
+      "tag": "structure",
+      "differences": {
+        "account_reads": [
+          53,
+          1
+        ],
+        "service_order_hash": [
+          3153955782333323279,
+          16038372209008516879
+        ]
+      }
+    },
+    {
+      "id": 4,
+      "tag": "structure",
+      "differences": {
+        "account_reads": [
+          106,
+          2
+        ],
+        "service_order_hash": [
+          4583615525013201829,
+          7512341933381480869
+        ]
+      }
+    },
+    {
+      "id": 5,
+      "tag": "structure",
+      "differences": {
+        "account_reads": [
+          106,
+          2
+        ],
+        "service_order_hash": [
+          4583615525013201829,
+          7512341933381480869
+        ]
+      }
+    },
+    {
+      "id": 6,
+      "tag": "structure",
+      "differences": {
+        "account_reads": [
+          53,
+          1
+        ],
+        "service_order_hash": [
+          3153955782333323279,
+          16038372209008516879
+        ]
+      }
+    },
+    {
+      "id": 7,
+      "tag": "structure",
+      "differences": {
+        "account_reads": [
+          106,
+          2
+        ],
+        "service_order_hash": [
+          4583615525013201829,
+          7512341933381480869
+        ]
+      }
+    },
+    {
+      "id": 8,
+      "tag": "structure",
+      "differences": {
+        "account_reads": [
+          106,
+          2
+        ],
+        "service_order_hash": [
+          4583615525013201829,
+          7512341933381480869
+        ]
+      }
+    },
+    {
+      "id": 9,
+      "tag": "structure",
+      "differences": {
+        "account_reads": [
+          53,
+          1
+        ],
+        "service_order_hash": [
+          3153955782333323279,
+          16038372209008516879
+        ]
+      }
+    },
+    {
+      "id": 10,
+      "tag": "structure",
+      "differences": {
+        "account_reads": [
+          106,
+          2
+        ],
+        "service_order_hash": [
+          4583615525013201829,
+          7512341933381480869
+        ]
+      }
+    },
+    {
+      "id": 11,
+      "tag": "structure",
+      "differences": {
+        "account_reads": [
+          106,
+          2
+        ],
+        "service_order_hash": [
+          4583615525013201829,
+          7512341933381480869
+        ]
+      }
+    },
+    {
+      "id": 12,
+      "tag": "structure",
+      "differences": {
+        "account_reads": [
+          53,
+          1
+        ],
+        "service_order_hash": [
+          3153955782333323279,
+          16038372209008516879
+        ]
+      }
+    },
+    {
+      "id": 13,
+      "tag": "structure",
+      "differences": {
+        "account_reads": [
+          106,
+          2
+        ],
+        "service_order_hash": [
+          4583615525013201829,
+          7512341933381480869
+        ]
+      }
+    },
+    {
+      "id": 14,
+      "tag": "structure",
+      "differences": {
+        "account_reads": [
+          106,
+          2
+        ],
+        "service_order_hash": [
+          4583615525013201829,
+          7512341933381480869
+        ]
+      }
+    },
+    {
+      "id": 15,
+      "tag": "structure",
+      "differences": {
+        "account_reads": [
+          53,
+          1
+        ],
+        "service_order_hash": [
+          3153955782333323279,
+          16038372209008516879
+        ]
+      }
+    },
+    {
+      "id": 16,
+      "tag": "structure",
+      "differences": {
+        "account_reads": [
+          106,
+          2
+        ],
+        "service_order_hash": [
+          4583615525013201829,
+          7512341933381480869
+        ]
+      }
+    },
+    {
+      "id": 17,
+      "tag": "structure",
+      "differences": {
+        "account_reads": [
+          106,
+          2
+        ],
+        "service_order_hash": [
+          4583615525013201829,
+          7512341933381480869
+        ]
+      }
+    },
+    {
+      "id": 18,
+      "tag": "structure",
+      "differences": {
+        "account_reads": [
+          53,
+          1
+        ],
+        "service_order_hash": [
+          3153955782333323279,
+          16038372209008516879
+        ]
+      }
+    },
+    {
+      "id": 19,
+      "tag": "structure",
+      "differences": {
+        "account_reads": [
+          106,
+          2
+        ],
+        "service_order_hash": [
+          4583615525013201829,
+          7512341933381480869
+        ]
+      }
+    }
+  ],
+  "whole_bot_complete": false,
+  "whole_manager_complete": false,
+  "full_ea": false,
+  "original_context_fragments_executed": true,
+  "original_conversion_and_string_bodies_executed": true,
+  "caller_registers_supplied": true,
+  "terminal_replies_supplied": true,
+  "original_ex5_changed": false,
+  "limits": [
+    "Valid strategy indices, supplied caller registers/stack and successful allocation; not every path from the beginning of the dispatcher.",
+    "Original comment construction, 32-bit magic and currency bodies execute through cleanup before preparation. UTF-16 comments are compared in full.",
+    "Whole EA, settings/UI, restart, broker behavior and allocation failures remain unverified. Error cohort proves fatal class/no normal result only."
+  ]
+}

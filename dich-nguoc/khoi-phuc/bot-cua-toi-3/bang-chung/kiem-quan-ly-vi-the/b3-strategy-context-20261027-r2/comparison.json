@@ -1,0 +1,300 @@
+{
+  "cases": 1818,
+  "matched": 1364,
+  "failed": 454,
+  "first_failures": [
+    {
+      "id": 52,
+      "tag": "currency-route",
+      "differences": {
+        "account_reads": [
+          51,
+          53
+        ],
+        "service_order_hash": [
+          14126070100018531742,
+          10992581281684171938
+        ]
+      }
+    },
+    {
+      "id": 53,
+      "tag": "currency-route",
+      "differences": {
+        "account_reads": [
+          102,
+          106
+        ],
+        "service_order_hash": [
+          16344227877606658209,
+          5461850565926658777
+        ]
+      }
+    },
+    {
+      "id": 54,
+      "tag": "currency-route",
+      "differences": {
+        "account_reads": [
+          52,
+          54
+        ],
+        "service_order_hash": [
+          2185421353755039717,
+          7066911130064432405
+        ]
+      }
+    },
+    {
+      "id": 55,
+      "tag": "currency-route",
+      "differences": {
+        "account_reads": [
+          104,
+          108
+        ],
+        "service_order_hash": [
+          17485457439704443045,
+          15066523969820970629
+        ]
+      }
+    },
+    {
+      "id": 168,
+      "tag": "price-boundary",
+      "differences": {
+        "account_reads": [
+          51,
+          53
+        ],
+        "service_order_hash": [
+          8928680967250089461,
+          7612663285978201273
+        ]
+      }
+    },
+    {
+      "id": 169,
+      "tag": "price-boundary",
+      "differences": {
+        "account_reads": [
+          102,
+          106
+        ],
+        "service_order_hash": [
+          67373081189007246,
+          2056632766402114342
+        ]
+      }
+    },
+    {
+      "id": 170,
+      "tag": "price-boundary",
+      "differences": {
+        "account_reads": [
+          51,
+          53
+        ],
+        "service_order_hash": [
+          8928680967250089461,
+          7612663285978201273
+        ]
+      }
+    },
+    {
+      "id": 171,
+      "tag": "price-boundary",
+      "differences": {
+        "account_reads": [
+          102,
+          106
+        ],
+        "service_order_hash": [
+          67373081189007246,
+          2056632766402114342
+        ]
+      }
+    },
+    {
+      "id": 172,
+      "tag": "price-boundary",
+      "differences": {
+        "account_reads": [
+          51,
+          53
+        ],
+        "service_order_hash": [
+          8928680967250089461,
+          7612663285978201273
+        ]
+      }
+    },
+    {
+      "id": 173,
+      "tag": "price-boundary",
+      "differences": {
+        "account_reads": [
+          102,
+          106
+        ],
+        "service_order_hash": [
+          67373081189007246,
+          2056632766402114342
+        ]
+      }
+    },
+    {
+      "id": 174,
+      "tag": "price-boundary",
+      "differences": {
+        "account_reads": [
+          51,
+          53
+        ],
+        "service_order_hash": [
+          14126070100018531742,
+          10992581281684171938
+        ]
+      }
+    },
+    {
+      "id": 175,
+      "tag": "price-boundary",
+      "differences": {
+        "account_reads": [
+          102,
+          106
+        ],
+        "service_order_hash": [
+          16344227877606658209,
+          5461850565926658777
+        ]
+      }
+    },
+    {
+      "id": 176,
+      "tag": "price-boundary",
+      "differences": {
+        "account_reads": [
+          51,
+          53
+        ],
+        "service_order_hash": [
+          14126070100018531742,
+          10992581281684171938
+        ]
+      }
+    },
+    {
+      "id": 177,
+      "tag": "price-boundary",
+      "differences": {
+        "account_reads": [
+          102,
+          106
+        ],
+        "service_order_hash": [
+          16344227877606658209,
+          5461850565926658777
+        ]
+      }
+    },
+    {
+      "id": 254,
+      "tag": "currency-route",
+      "differences": {
+        "account_reads": [
+          51,
+          53
+        ],
+        "service_order_hash": [
+          14126070100018531742,
+          10992581281684171938
+        ]
+      }
+    },
+    {
+      "id": 255,
+      "tag": "currency-route",
+      "differences": {
+        "account_reads": [
+          102,
+          106
+        ],
+        "service_order_hash": [
+          16344227877606658209,
+          5461850565926658777
+        ]
+      }
+    },
+    {
+      "id": 256,
+      "tag": "currency-route",
+      "differences": {
+        "account_reads": [
+          52,
+          54
+        ],
+        "service_order_hash": [
+          2185421353755039717,
+          7066911130064432405
+        ]
+      }
+    },
+    {
+      "id": 257,
+      "tag": "currency-route",
+      "differences": {
+        "account_reads": [
+          104,
+          108
+        ],
+        "service_order_hash": [
+          17485457439704443045,
+          15066523969820970629
+        ]
+      }
+    },
+    {
+      "id": 370,
+      "tag": "price-boundary",
+      "differences": {
+        "account_reads": [
+          51,
+          53
+        ],
+        "service_order_hash": [
+          8928680967250089461,
+          7612663285978201273
+        ]
+      }
+    },
+    {
+      "id": 371,
+      "tag": "price-boundary",
+      "differences": {
+        "account_reads": [
+          102,
+          106
+        ],
+        "service_order_hash": [
+          67373081189007246,
+          2056632766402114342
+        ]
+      }
+    }
+  ],
+  "whole_bot_complete": false,
+  "whole_manager_complete": false,
+  "full_ea": false,
+  "original_context_fragments_executed": true,
+  "original_conversion_and_string_bodies_executed": true,
+  "caller_registers_supplied": true,
+  "terminal_replies_supplied": true,
+  "original_ex5_changed": false,
+  "limits": [
+    "Valid strategy indices, supplied caller registers/stack and successful allocation; not every path from the beginning of the dispatcher.",
+    "Original comment construction, 32-bit magic and currency bodies execute through cleanup before preparation. UTF-16 comments are compared in full.",
+    "Whole EA, settings/UI, restart, broker behavior and allocation failures remain unverified. Error cohort proves fatal class/no normal result only."
+  ]
+}

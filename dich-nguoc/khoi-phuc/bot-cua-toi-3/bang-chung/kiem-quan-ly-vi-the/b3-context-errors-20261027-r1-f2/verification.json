@@ -1,0 +1,11 @@
+{
+  "case_id": 2,
+  "tag": "second-conversion-fatal",
+  "native_error": "0x24388c000001f7",
+  "native_class_low32": 503,
+  "mql5_class": "zero divide",
+  "exit_code": 4294967295,
+  "no_normal_result": true,
+  "partial_state_compared": false,
+  "runtime_lines_sha256": "cf931845b8a999b9e3a1ac3970475028f6d733cdc6ecd86546e92e867865be7d"
+}

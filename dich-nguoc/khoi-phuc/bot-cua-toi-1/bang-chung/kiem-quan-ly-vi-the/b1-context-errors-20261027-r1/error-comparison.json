@@ -1,0 +1,53 @@
+{
+  "cases": 2,
+  "matched_fatal_class_and_no_normal_result": 2,
+  "checks": [
+    {
+      "case_id": 0,
+      "tag": "first-conversion-fatal",
+      "native_error": "0x242e56000001f7",
+      "native_class_low32": 503,
+      "mql5_class": "zero divide",
+      "exit_code": 4294967295,
+      "no_normal_result": true,
+      "partial_state_compared": false,
+      "runtime_lines_sha256": "23a38aa63d0d1901360f10c189bebf67c5e67dcb785601213d9a7e0e21f882ed"
+    },
+    {
+      "case_id": 1,
+      "tag": "first-conversion-fatal",
+      "native_error": "0x242e56000001f7",
+      "native_class_low32": 503,
+      "mql5_class": "zero divide",
+      "exit_code": 4294967295,
+      "no_normal_result": true,
+      "partial_state_compared": false,
+      "runtime_lines_sha256": "a959ba8bbe5cd2f78aca09c2e8a513ae0a0fa28f3d1b29d48dfb3b6a85519d05"
+    }
+  ],
+  "identity": {
+    "original_ex5_sha256": "a3b0de423a06e10ebedc279307b93d7cb9188ba2bb5de77131a913c865b0e922",
+    "tool_sha256": "9bb0f4c85f35b1985304b6b62fb16086d9efec49a642ab8dfb72d73812e32fc7",
+    "sources_sha256": {
+      "Scripts/bot-cua-toi-1/Bot1StrategyContextCheck.mq5": "2450f4f663fea528fc7282079c220fac93b9e7c2ed11e259755f80fa4bcab9c0",
+      "Include/bot-cua-toi-1/Bot1StrategyContext.mqh": "808faebb3b17122f0d7f71f8e04975041d9374ab8d122b57b7b961198cdf9501",
+      "Include/bot-cua-toi-1/Bot1Currency.mqh": "7d1b3bffabff6e9e51cd1a2d141cfef884754d6115ff8e6cba44f169311c9109"
+    },
+    "helpers_sha256": {
+      "cong-cu/kiem-ngu-canh-chien-luoc-bot-1-3.py": "9bb0f4c85f35b1985304b6b62fb16086d9efec49a642ab8dfb72d73812e32fc7",
+      "cong-cu/kiem-doi-tien-bot-1-3.py": "203fd243f93ad01d9229151335fc76850aa4a51ec1005f96c3b3f0de79cac8a9",
+      "cong-cu/kiem-gia-vao-bot-1-3.py": "22394e48932feb7242b967aa58e327d2990402f12bfe52621916f64914c9dac2",
+      "cong-cu/kiem-muc-gia-bot-1-3.py": "a6c447ca80029fb63ced0c9d1673bb14222a7736b04df5c410f280f8471d6a35",
+      "cong-cu/kiem-khoi-luong-hop-le-bot-1-3.py": "8251fb4423d6f5f2e1b79a1c53dbb25fb5a6c568bb61cddef23396dc982243f0",
+      "cong-cu/kiem-khoi-luong-bot-1-3.py": "32539c090422ab6bc2ce94a9fdacfd33e53c394aca58bd3827c2232d817d7f77",
+      "cong-cu/kiem-ban-git-quan-ly.py": "7186478774b34e0d72b4594fbcc85972d9b4c07ed02160987d46d34f39dcb160",
+      "bot-cua-toi-1/tests/check-management-prelude.py": "f5dbe950896e58a00331ef32473ccebdcbbf03a9627e8c12449c7f4087e6a49d"
+    }
+  },
+  "tool_sha256": "23211613f4cbf3dbda49c88b3879ce155d647cc0c7d3dd7d4cf7716b2ccbd876",
+  "build_receipt_sha256": "577db103779b1bd0450e2a2d294057d059bf790130a0b0fde664ccab9416afc0",
+  "whole_bot_complete": false,
+  "limits": [
+    "Fatal class and absence of a normal record only. Partial state, runtime line/payload and allocation failures are not compared."
+  ]
+}

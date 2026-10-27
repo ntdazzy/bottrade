@@ -1,0 +1,19 @@
+{
+  "cases": 760,
+  "matched": 760,
+  "failed": 0,
+  "first_failures": [],
+  "whole_bot_complete": false,
+  "whole_manager_complete": false,
+  "full_ea": false,
+  "original_context_fragments_executed": true,
+  "original_conversion_and_string_bodies_executed": true,
+  "caller_registers_supplied": true,
+  "terminal_replies_supplied": true,
+  "original_ex5_changed": false,
+  "limits": [
+    "Valid strategy indices, supplied caller registers/stack and successful allocation; not every path from the beginning of the dispatcher.",
+    "Original comment construction, 32-bit magic and currency bodies execute through cleanup before preparation. UTF-16 comments are compared in full.",
+    "Whole EA, settings/UI, restart, broker behavior and allocation failures remain unverified. Error cohort proves fatal class/no normal result only."
+  ]
+}

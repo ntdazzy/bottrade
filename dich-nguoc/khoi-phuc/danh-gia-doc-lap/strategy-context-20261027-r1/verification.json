@@ -1,0 +1,32 @@
+{
+  "reviewer": "Codex; no external model review available in this run",
+  "results": [
+    {
+      "bot": 1,
+      "cases": 760,
+      "matched": 760,
+      "fatal_cases": 2,
+      "result_sha256": "645eafcfbfebb3a1afb5db4edef481d0d09c8424e3e8b7324bd9a066f0e4eed7",
+      "comparison_sha256": "dd8e3ce2d597ff124e4deabf931a62bd27fdd6b9eb56f60484980e0177071cd7",
+      "error_comparison_sha256": "f40962ce4d0d66e702ee8f6f6c02d70862a460010105b0eacf7f257bd921da80"
+    },
+    {
+      "bot": 3,
+      "cases": 1818,
+      "matched": 1818,
+      "fatal_cases": 3,
+      "result_sha256": "0f4f0b4f17cc9b0e40daec9b13abbcf5a6ed9f9e5455ab5327ccbee2080509e0",
+      "comparison_sha256": "d97a7eea477b03aa9a5b920948ba8ff63faf6b7ea85f1b2be3c5bdb0eab69269",
+      "error_comparison_sha256": "33bb824848b2d2720f1826d3cd437c540a9104502c818017f9cb8ad3e466ae8d"
+    }
+  ],
+  "clean_compiles": [
+    "b1-context-api-20261027-r3",
+    "b1-context-check-20261027-r3",
+    "b3-context-api-20261027-r3",
+    "b3-context-check-20261027-r3"
+  ],
+  "whole_bot_complete": false,
+  "whole_eas_complete": 0,
+  "root_baseline_deletions_preserved": 396
+}

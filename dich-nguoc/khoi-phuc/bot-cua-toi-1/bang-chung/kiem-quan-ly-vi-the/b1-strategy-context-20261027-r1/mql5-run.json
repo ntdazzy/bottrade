@@ -1,0 +1,31 @@
+{
+  "original_ex5_sha256": "a3b0de423a06e10ebedc279307b93d7cb9188ba2bb5de77131a913c865b0e922",
+  "tool_sha256": "d9a5bf0105d1ceabceca4bb66fcc8b389c04764792bd5407a8f1d52d5221d273",
+  "sources_sha256": {
+    "Include/bot-cua-toi-1/Bot1StrategyContext.mqh": "35ded547cbfc0f47f3bac265c938ab4b537b56f2f289ab45cc8bb2c4c3704454",
+    "Include/bot-cua-toi-1/Bot1Currency.mqh": "7d1b3bffabff6e9e51cd1a2d141cfef884754d6115ff8e6cba44f169311c9109",
+    "Scripts/bot-cua-toi-1/Bot1StrategyContextCheck.mq5": "a9f019ba7b8e80729c17e39ad28361f0df3673f0bd12704992b8b52e2146bd48"
+  },
+  "helpers_sha256": {
+    "cong-cu/kiem-ngu-canh-chien-luoc-bot-1-3.py": "d9a5bf0105d1ceabceca4bb66fcc8b389c04764792bd5407a8f1d52d5221d273",
+    "cong-cu/kiem-doi-tien-bot-1-3.py": "203fd243f93ad01d9229151335fc76850aa4a51ec1005f96c3b3f0de79cac8a9",
+    "cong-cu/kiem-gia-vao-bot-1-3.py": "22394e48932feb7242b967aa58e327d2990402f12bfe52621916f64914c9dac2",
+    "cong-cu/kiem-muc-gia-bot-1-3.py": "a6c447ca80029fb63ced0c9d1673bb14222a7736b04df5c410f280f8471d6a35",
+    "cong-cu/kiem-khoi-luong-hop-le-bot-1-3.py": "8251fb4423d6f5f2e1b79a1c53dbb25fb5a6c568bb61cddef23396dc982243f0",
+    "cong-cu/kiem-khoi-luong-bot-1-3.py": "32539c090422ab6bc2ce94a9fdacfd33e53c394aca58bd3827c2232d817d7f77",
+    "cong-cu/kiem-ban-git-quan-ly.py": "7186478774b34e0d72b4594fbcc85972d9b4c07ed02160987d46d34f39dcb160",
+    "bot-cua-toi-1/tests/check-management-prelude.py": "f5dbe950896e58a00331ef32473ccebdcbbf03a9627e8c12449c7f4087e6a49d"
+  },
+  "cases": 744,
+  "result_sha256": "96505f91fc7b9c3c84c9d836ddec69f4772cacaa3197b0a1f1232b750dadeb0b",
+  "build": "b1-context-check-20261027-r1",
+  "build_receipt_sha256": "191d702b1f605157ad8b36cb32d9376a5cd310847bbe4c4256cf4599539957af",
+  "whole_bot_complete": false,
+  "whole_manager_complete": false,
+  "full_ea": false,
+  "original_context_fragments_executed": true,
+  "original_conversion_and_string_bodies_executed": true,
+  "caller_registers_supplied": true,
+  "terminal_replies_supplied": true,
+  "original_ex5_changed": false
+}

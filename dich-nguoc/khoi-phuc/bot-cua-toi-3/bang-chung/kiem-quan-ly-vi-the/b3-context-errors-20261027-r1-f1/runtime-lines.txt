@@ -1,0 +1,2 @@
+OH	0	08:54:16.020	Bot3StrategyContextCheck (XAUUSD_NOCOST_V2,M15)	STRATEGY_CONTEXT_CASE:1
+LO	2	08:54:16.020	Bot3StrategyContextCheck (XAUUSD_NOCOST_V2,M15)	zero divide, check divider to avoid this error in 'Bot3StrategyContext.mqh' (39,26)

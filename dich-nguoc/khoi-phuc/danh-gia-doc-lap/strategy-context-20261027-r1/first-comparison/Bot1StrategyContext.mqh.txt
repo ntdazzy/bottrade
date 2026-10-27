@@ -1,0 +1,37 @@
+// Dispatcher context before preparation. Contract: strategy index 0..7.
+#ifndef BOT1_STRATEGY_CONTEXT_MQH
+#define BOT1_STRATEGY_CONTEXT_MQH
+#include "Bot1Currency.mqh"
+struct Bot1StrategyContextInputs
+{
+   uchar keep_comment;
+   string comment_prefix;
+   int base_magic;
+   string symbol_suffix;
+};
+struct Bot1StrategyContextState
+{
+   string order_comment;
+   int magic;
+   double converted_value;
+};
+double Bot1StrategyContextAmount(const double amount,const string suffix)
+{
+   double value;
+   if(Bot1ConvertCurrency(amount,AccountInfoString(ACCOUNT_CURRENCY),suffix,false,value)) return value;
+   // The original stops inside the conversion, before its caller stores a value.
+   // Build with floating-point division checks, as required by the project.
+   double zero=0.0;
+   return amount/zero;
+}
+void Bot1LoadStrategyContext(const uint index,const Bot1StrategyContextInputs &inputs,
+                             Bot1StrategyContextState &state)
+{
+   const string suffix[]={"_XAUUSD_1","_XAUUSD_2","_XAUUSD_3","_XAUUSD_4",
+                          "_XAUUSD_5","_XAUUSD_6","_XAUUSD_7","_XAUUSD_8"};
+   const double amounts[]={60.0,90.0,27.0,37.0,16.0,30.0,25.0,37.0};
+   if(inputs.keep_comment==0) state.order_comment=inputs.comment_prefix+suffix[index];
+   state.magic=(int)((uint)inputs.base_magic+index+(uint)1);
+   state.converted_value=Bot1StrategyContextAmount(amounts[index],inputs.symbol_suffix);
+}
+#endif

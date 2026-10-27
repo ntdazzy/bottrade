@@ -1,0 +1,11 @@
+{
+  "case_id": 1,
+  "tag": "first-conversion-fatal",
+  "native_error": "0x24388c000001f7",
+  "native_class_low32": 503,
+  "mql5_class": "zero divide",
+  "exit_code": 4294967295,
+  "no_normal_result": true,
+  "partial_state_compared": false,
+  "runtime_lines_sha256": "6ed540a228f551d0d2605c0fd1842e5ea1561ef4d4b8e6d73029568fdd24f329"
+}

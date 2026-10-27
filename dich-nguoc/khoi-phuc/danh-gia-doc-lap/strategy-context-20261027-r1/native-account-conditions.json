@@ -1,0 +1,560 @@
+[
+  {
+    "bot": 1,
+    "c_source_sha256": "c6389dfe5bd1ef95ed7616eaf5c16b7d041fbd279e650753d239b28e3ea65a8d",
+    "currency_function_begin": "0x47d20",
+    "currency_function_end_exclusive": "0x4d256",
+    "currency_function_sha256": "ee26d9ca5595b03951cae80c7023e39d8cd71b02bc4dbfac7f1c0922e873bef6",
+    "account_read_sites_in_intermediate_c": 54,
+    "conditions": [
+      {
+        "site": 0,
+        "literal_rva": "0x5b98c",
+        "text": "USD"
+      },
+      {
+        "site": 1,
+        "comparison": null
+      },
+      {
+        "site": 2,
+        "literal_rva": "0x5b9bc",
+        "text": "EUR"
+      },
+      {
+        "site": 3,
+        "literal_rva": "0x5b9dc",
+        "text": "eur"
+      },
+      {
+        "site": 4,
+        "literal_rva": "0x5ba2c",
+        "text": "GBP"
+      },
+      {
+        "site": 5,
+        "literal_rva": "0x5ba4c",
+        "text": "gbp"
+      },
+      {
+        "site": 6,
+        "literal_rva": "0x5ba9c",
+        "text": "AUD"
+      },
+      {
+        "site": 7,
+        "literal_rva": "0x5babc",
+        "text": "aud"
+      },
+      {
+        "site": 8,
+        "literal_rva": "0x5bb0c",
+        "text": "JPY"
+      },
+      {
+        "site": 9,
+        "literal_rva": "0x5bb2c",
+        "text": "jpy"
+      },
+      {
+        "site": 10,
+        "literal_rva": "0x5bb4c",
+        "text": "YEN"
+      },
+      {
+        "site": 11,
+        "literal_rva": "0x5bb6c",
+        "text": "yen"
+      },
+      {
+        "site": 12,
+        "literal_rva": "0x5bbbc",
+        "text": "CHF"
+      },
+      {
+        "site": 13,
+        "literal_rva": "0x5bbdc",
+        "text": "chf"
+      },
+      {
+        "site": 14,
+        "literal_rva": "0x5bbbc",
+        "text": "CHF"
+      },
+      {
+        "site": 15,
+        "literal_rva": "0x5bbdc",
+        "text": "chf"
+      },
+      {
+        "site": 16,
+        "literal_rva": "0x5bc2c",
+        "text": "HKD"
+      },
+      {
+        "site": 17,
+        "literal_rva": "0x5bc4c",
+        "text": "hkd"
+      },
+      {
+        "site": 18,
+        "literal_rva": "0x5bc9c",
+        "text": "RUB"
+      },
+      {
+        "site": 19,
+        "literal_rva": "0x5bcbc",
+        "text": "rub"
+      },
+      {
+        "site": 20,
+        "literal_rva": "0x5bd0c",
+        "text": "SGD"
+      },
+      {
+        "site": 21,
+        "literal_rva": "0x5bd2c",
+        "text": "sgd"
+      },
+      {
+        "site": 22,
+        "literal_rva": "0x5aabc",
+        "text": "BTC"
+      },
+      {
+        "site": 23,
+        "literal_rva": "0x5aadc",
+        "text": "btc"
+      },
+      {
+        "site": 24,
+        "literal_rva": "0x5aafc",
+        "text": "ETH"
+      },
+      {
+        "site": 25,
+        "literal_rva": "0x5ab1c",
+        "text": "eth"
+      },
+      {
+        "site": 26,
+        "literal_rva": "0x5bddc",
+        "text": "BCH"
+      },
+      {
+        "site": 27,
+        "literal_rva": "0x5bdfc",
+        "text": "bch"
+      },
+      {
+        "site": 28,
+        "literal_rva": "0x5be4c",
+        "text": "BCC"
+      },
+      {
+        "site": 29,
+        "literal_rva": "0x5be6c",
+        "text": "bcc"
+      },
+      {
+        "site": 30,
+        "literal_rva": "0x5bebc",
+        "text": "XRP"
+      },
+      {
+        "site": 31,
+        "literal_rva": "0x5bedc",
+        "text": "xrp"
+      },
+      {
+        "site": 32,
+        "literal_rva": "0x5bf2c",
+        "text": "LTC"
+      },
+      {
+        "site": 33,
+        "literal_rva": "0x5bf4c",
+        "text": "ltc"
+      },
+      {
+        "site": 34,
+        "literal_rva": "0x5bf9c",
+        "text": "XMR"
+      },
+      {
+        "site": 35,
+        "literal_rva": "0x5bfbc",
+        "text": "xmr"
+      },
+      {
+        "site": 36,
+        "literal_rva": "0x5c00c",
+        "text": "DSH"
+      },
+      {
+        "site": 37,
+        "literal_rva": "0x5c02c",
+        "text": "dsh"
+      },
+      {
+        "site": 38,
+        "literal_rva": "0x5c07c",
+        "text": "EOS"
+      },
+      {
+        "site": 39,
+        "literal_rva": "0x5c09c",
+        "text": "eos"
+      },
+      {
+        "site": 40,
+        "literal_rva": "0x5c0ec",
+        "text": "TRX"
+      },
+      {
+        "site": 41,
+        "literal_rva": "0x5c10c",
+        "text": "trx"
+      },
+      {
+        "site": 42,
+        "literal_rva": "0x5c15c",
+        "text": "ADA"
+      },
+      {
+        "site": 43,
+        "literal_rva": "0x5c17c",
+        "text": "ada"
+      },
+      {
+        "site": 44,
+        "literal_rva": "0x5c1cc",
+        "text": "BSV"
+      },
+      {
+        "site": 45,
+        "literal_rva": "0x5c1ec",
+        "text": "bsv"
+      },
+      {
+        "site": 46,
+        "literal_rva": "0x5c23c",
+        "text": "XLM"
+      },
+      {
+        "site": 47,
+        "literal_rva": "0x5c25c",
+        "text": "xlm"
+      },
+      {
+        "site": 48,
+        "literal_rva": "0x5c2ac",
+        "text": "GLD"
+      },
+      {
+        "site": 49,
+        "literal_rva": "0x5c2cc",
+        "text": "gld"
+      },
+      {
+        "site": 50,
+        "literal_rva": "0x5c31c",
+        "text": "ZEC"
+      },
+      {
+        "site": 51,
+        "literal_rva": "0x5c33c",
+        "text": "zec"
+      },
+      {
+        "site": 52,
+        "literal_rva": "0x5c38c",
+        "text": "XEM"
+      },
+      {
+        "site": 53,
+        "literal_rva": "0x5c3ac",
+        "text": "xem"
+      }
+    ]
+  },
+  {
+    "bot": 3,
+    "c_source_sha256": "ef8e07ac21522a8a2ab7165db6e77f40885acfc5a044c502ba81e331b826f620",
+    "currency_function_begin": "0x41780",
+    "currency_function_end_exclusive": "0x46c92",
+    "currency_function_sha256": "2467f8cc511dd29189b9f1fb1b3e8c3f2f03db8019ba3ca5e5beca1c75bc7fe8",
+    "account_read_sites_in_intermediate_c": 54,
+    "conditions": [
+      {
+        "site": 0,
+        "literal_rva": "0x65c0c",
+        "text": "USD"
+      },
+      {
+        "site": 1,
+        "comparison": null
+      },
+      {
+        "site": 2,
+        "literal_rva": "0x65c3c",
+        "text": "EUR"
+      },
+      {
+        "site": 3,
+        "literal_rva": "0x65c5c",
+        "text": "eur"
+      },
+      {
+        "site": 4,
+        "literal_rva": "0x65cac",
+        "text": "GBP"
+      },
+      {
+        "site": 5,
+        "literal_rva": "0x65ccc",
+        "text": "gbp"
+      },
+      {
+        "site": 6,
+        "literal_rva": "0x65d1c",
+        "text": "AUD"
+      },
+      {
+        "site": 7,
+        "literal_rva": "0x65d3c",
+        "text": "aud"
+      },
+      {
+        "site": 8,
+        "literal_rva": "0x65d8c",
+        "text": "JPY"
+      },
+      {
+        "site": 9,
+        "literal_rva": "0x65dac",
+        "text": "jpy"
+      },
+      {
+        "site": 10,
+        "literal_rva": "0x65dcc",
+        "text": "YEN"
+      },
+      {
+        "site": 11,
+        "literal_rva": "0x65dec",
+        "text": "yen"
+      },
+      {
+        "site": 12,
+        "literal_rva": "0x65e3c",
+        "text": "CHF"
+      },
+      {
+        "site": 13,
+        "literal_rva": "0x65e5c",
+        "text": "chf"
+      },
+      {
+        "site": 14,
+        "literal_rva": "0x65eac",
+        "text": "CZK"
+      },
+      {
+        "site": 15,
+        "literal_rva": "0x65ecc",
+        "text": "czk"
+      },
+      {
+        "site": 16,
+        "literal_rva": "0x65f1c",
+        "text": "HKD"
+      },
+      {
+        "site": 17,
+        "literal_rva": "0x65f3c",
+        "text": "hkd"
+      },
+      {
+        "site": 18,
+        "literal_rva": "0x65f8c",
+        "text": "RUB"
+      },
+      {
+        "site": 19,
+        "literal_rva": "0x65fac",
+        "text": "rub"
+      },
+      {
+        "site": 20,
+        "literal_rva": "0x65ffc",
+        "text": "SGD"
+      },
+      {
+        "site": 21,
+        "literal_rva": "0x6601c",
+        "text": "sgd"
+      },
+      {
+        "site": 22,
+        "literal_rva": "0x64c4c",
+        "text": "BTC"
+      },
+      {
+        "site": 23,
+        "literal_rva": "0x64c6c",
+        "text": "btc"
+      },
+      {
+        "site": 24,
+        "literal_rva": "0x64c8c",
+        "text": "ETH"
+      },
+      {
+        "site": 25,
+        "literal_rva": "0x64cac",
+        "text": "eth"
+      },
+      {
+        "site": 26,
+        "literal_rva": "0x660cc",
+        "text": "BCH"
+      },
+      {
+        "site": 27,
+        "literal_rva": "0x660ec",
+        "text": "bch"
+      },
+      {
+        "site": 28,
+        "literal_rva": "0x6613c",
+        "text": "BCC"
+      },
+      {
+        "site": 29,
+        "literal_rva": "0x6615c",
+        "text": "bcc"
+      },
+      {
+        "site": 30,
+        "literal_rva": "0x661ac",
+        "text": "XRP"
+      },
+      {
+        "site": 31,
+        "literal_rva": "0x661cc",
+        "text": "xrp"
+      },
+      {
+        "site": 32,
+        "literal_rva": "0x6621c",
+        "text": "LTC"
+      },
+      {
+        "site": 33,
+        "literal_rva": "0x6623c",
+        "text": "ltc"
+      },
+      {
+        "site": 34,
+        "literal_rva": "0x6628c",
+        "text": "XMR"
+      },
+      {
+        "site": 35,
+        "literal_rva": "0x662ac",
+        "text": "xmr"
+      },
+      {
+        "site": 36,
+        "literal_rva": "0x662fc",
+        "text": "DSH"
+      },
+      {
+        "site": 37,
+        "literal_rva": "0x6631c",
+        "text": "dsh"
+      },
+      {
+        "site": 38,
+        "literal_rva": "0x6636c",
+        "text": "EOS"
+      },
+      {
+        "site": 39,
+        "literal_rva": "0x6638c",
+        "text": "eos"
+      },
+      {
+        "site": 40,
+        "literal_rva": "0x663dc",
+        "text": "TRX"
+      },
+      {
+        "site": 41,
+        "literal_rva": "0x663fc",
+        "text": "trx"
+      },
+      {
+        "site": 42,
+        "literal_rva": "0x6644c",
+        "text": "ADA"
+      },
+      {
+        "site": 43,
+        "literal_rva": "0x6646c",
+        "text": "ada"
+      },
+      {
+        "site": 44,
+        "literal_rva": "0x664bc",
+        "text": "BSV"
+      },
+      {
+        "site": 45,
+        "literal_rva": "0x664dc",
+        "text": "bsv"
+      },
+      {
+        "site": 46,
+        "literal_rva": "0x6652c",
+        "text": "XLM"
+      },
+      {
+        "site": 47,
+        "literal_rva": "0x6654c",
+        "text": "xlm"
+      },
+      {
+        "site": 48,
+        "literal_rva": "0x6659c",
+        "text": "GLD"
+      },
+      {
+        "site": 49,
+        "literal_rva": "0x665bc",
+        "text": "gld"
+      },
+      {
+        "site": 50,
+        "literal_rva": "0x6660c",
+        "text": "ZEC"
+      },
+      {
+        "site": 51,
+        "literal_rva": "0x6662c",
+        "text": "zec"
+      },
+      {
+        "site": 52,
+        "literal_rva": "0x6667c",
+        "text": "XEM"
+      },
+      {
+        "site": 53,
+        "literal_rva": "0x6669c",
+        "text": "xem"
+      }
+    ]
+  }
+]

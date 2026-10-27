@@ -1,5 +1,11 @@
 # bot-cua-toi-1
 
+Đã thêm phần ghi chú, mã nhận diện và đổi tiền trước khi chuẩn bị:
+**760/760 ca khớp**, gồm chuỗi đầy đủ và thứ tự đọc thông tin; thêm
+**2/2 ca** chia 0 dừng đúng loại lỗi. Biên dịch 0 lỗi/0 cảnh báo.
+Đây là đoạn đã so riêng, chưa ghép toàn bộ chương trình chính.
+[Nguồn, bằng chứng và giới hạn](phan-tich/chuong-trinh-chinh/strategy-context-20261027-r1/SPEC.md).
+
 Đã nối nạp cấu hình với chuẩn bị dữ liệu: **432/432 ca khớp**, so 119 giá
 trị và đối số chỉ báo. Đã bổ sung đủ sáu ô phụ còn thiếu để truyền sang bước
 chuẩn bị; tên mã/comment/vốn vẫn được cấp, chưa nối EA chính.

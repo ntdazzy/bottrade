@@ -1,0 +1,63 @@
+// Dispatcher context before preparation. Contract: internal strategy index 0..8.
+#ifndef BOT3_STRATEGY_CONTEXT_MQH
+#define BOT3_STRATEGY_CONTEXT_MQH
+#include "Bot3Currency.mqh"
+struct Bot3StrategyContextInputs
+{
+   uchar keep_comment;
+   string comment_prefix;
+   int base_magic;
+   string symbol_suffix;
+   uchar native_1d6f28;
+};
+struct Bot3StrategyContextState
+{
+   string order_comment;
+   int magic;
+   double converted_value;
+};
+double Bot3StrategyContextAmount(const double amount,const string suffix)
+{
+   // The USD check has no conversion, but its account reads still occur.
+   if(AccountInfoString(ACCOUNT_CURRENCY)!="USD") AccountInfoString(ACCOUNT_CURRENCY);
+   const string codes[]={"EUR","GBP","AUD","JPY","YEN","CHF","CZK","HKD","RUB","SGD",
+                         "BTC","ETH","BCH","BCC","XRP","LTC","XMR","DSH","EOS","TRX","ADA","BSV","XLM","GLD","ZEC","XEM"};
+   const string lower[]={"eur","gbp","aud","jpy","yen","chf","czk","hkd","rub","sgd",
+                         "btc","eth","bch","bcc","xrp","ltc","xmr","dsh","eos","trx","ada","bsv","xlm","gld","zec","xem"};
+   const string pairs[]={"EURUSD","GBPUSD","AUDUSD","USDJPY","USDJPY","USDCHF","USDCZK","USDHKD","USDRUB","USDSGD",
+                         "BTCUSD","ETHUSD","BCHUSD","BCCUSD","XRPUSD","LTCUSD","XMRUSD","DSHUSD","EOSUSD","TRXUSD","ADAUSD","BSVUSD","XLMUSD","GLDUSD","ZECUSD","XEMUSD"};
+   double value=amount;
+   for(int i=0;i<ArraySize(codes);i++)
+   {
+      // Independent checks, with a fresh account read for each comparison.
+      if(AccountInfoString(ACCOUNT_CURRENCY)==codes[i] || AccountInfoString(ACCOUNT_CURRENCY)==lower[i])
+      {
+         if(Bot3CurrencyPair(amount,pairs[i]+suffix,i>=3 && i<=9,value)<0)
+         {
+            // The original stops before its caller can store this conversion.
+            double zero=0.0;
+            return amount/zero;
+         }
+      }
+   }
+   return value;
+}
+void Bot3LoadStrategyContext(const uint index,const Bot3StrategyContextInputs &inputs,
+                             double &reference,Bot3StrategyContextState &state)
+{
+   const string suffix[]={"_XAUUSD_1","_XAUUSD_2","_XAUUSD_3","_XAUUSD_4",
+                          "_XAUUSD_5","_XAUUSD_6","_XAUUSD_7","_XAUUSD_8","_XAUUSD_9"};
+   const uint offsets[]={1,5,8,2,12,9,14,15,13};
+   const double amounts[]={145.0,30.0,35.0,52.0,281.0,348.0,149.0,276.0,968.0};
+   const double alternate_amounts[]={60.0,30.0,35.0,52.0,110.0,140.0,90.0,130.0,700.0};
+   const double alternate_reference[]={2000.0,2000.0,2000.0,1600.0,2600.0,2400.0,2600.0,2800.0,1900.0};
+   if(inputs.keep_comment==0) state.order_comment=inputs.comment_prefix+suffix[index];
+   state.magic=(int)((uint)inputs.base_magic+offsets[index]);
+   state.converted_value=Bot3StrategyContextAmount(amounts[index],inputs.symbol_suffix);
+   if(inputs.native_1d6f28!=0)
+   {
+      reference=alternate_reference[index];
+      state.converted_value=Bot3StrategyContextAmount(alternate_amounts[index],inputs.symbol_suffix);
+   }
+}
+#endif
