@@ -1,0 +1,57 @@
+{
+  "results": [
+    {
+      "bot": 1,
+      "run": "b1-eval-stops-20261027-r2",
+      "cases": 1172,
+      "matched": 1172,
+      "bytes": [
+        4657640,
+        4657640
+      ],
+      "result_sha256": "e29cc25ebc713d22ba3a04ce30c3502a4da7429a52979cc3a1c410a45dcc049d",
+      "joined_instructions": 505,
+      "child_instructions": 266,
+      "compiles": [
+        {
+          "build": "b1-eval-stops-api-20261027-r2",
+          "receipt_sha256": "fb6d31465ed9780d3c4bd9a8dd83ff57d233720cedead12a758881052ef60a37",
+          "binary_sha256": "85be2d4ea3f63ed4e735c4a022eedd7e0eb8d0679f73ed7acc8ff4c103abd425"
+        },
+        {
+          "build": "b1-eval-stops-check-20261027-r2",
+          "receipt_sha256": "8663d470fdd6028a4f455b7232579d40f3b6f32ab008f3b23140a7ba2388351f",
+          "binary_sha256": "946df472a192a8048432f26f7512ed48551c5d73b61defbdc1b9b36b5fab5dca"
+        }
+      ]
+    },
+    {
+      "bot": 3,
+      "run": "b3-eval-stops-20261027-r2",
+      "cases": 1172,
+      "matched": 1172,
+      "bytes": [
+        4667016,
+        4667016
+      ],
+      "result_sha256": "f4cb3094a4c6fd755ab35ffd83e90f3282aeaf5ddd3ebf261aa05987d4da38ec",
+      "joined_instructions": 506,
+      "child_instructions": 266,
+      "compiles": [
+        {
+          "build": "b3-eval-stops-api-20261027-r2",
+          "receipt_sha256": "6c247a13013cf2945065407e436ba8b360eaa9a85095232d353bcd670c2b0922",
+          "binary_sha256": "72ed8c13dddf798e59b34f3d3237891ee29a60a5c14b677af393c8ffdedb4ef2"
+        },
+        {
+          "build": "b3-eval-stops-check-20261027-r2",
+          "receipt_sha256": "bba6bc087a4775859322fdd1c94ab73d700c2968405e4400e81bf9c4f62bd2d8",
+          "binary_sha256": "61273f4afb9ebce2ea1159e0e30bbd5e06143a0c51ca738e36f53390ae720c3b"
+        }
+      ]
+    }
+  ],
+  "independent_code_review": "stops_final_review: no actionable blockers; primary Codex verified r2 byte comparison and separate decoded comparison",
+  "whole_bot_complete": false,
+  "whole_eas_complete": 0
+}

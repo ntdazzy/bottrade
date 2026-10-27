@@ -1,0 +1,60 @@
+// Initial SL/TP pass in the evaluator, before the later management loop.
+#ifndef BOT1_EVALUATION_STOPS_MQH
+#define BOT1_EVALUATION_STOPS_MQH
+#include "Bot1PriceLevels.mqh"
+#include "Bot1PositionModify.mqh"
+
+struct Bot1EvaluationStopInputs
+{
+   uchar enabled;
+   int magic;
+   double stop_distance;
+   double target_distance;
+   double unit;
+};
+
+// Keep SUBSD NaN signs; a folded negation-plus-add changes the right operand.
+double Bot1EvaluationDifference(const double left,const double right)
+{
+   if(left!=left) return left+0.0;
+   if(right!=right) return right+0.0;
+   return left-right;
+}
+
+void Bot1FillEvaluationStops(const string &symbol,const Bot1EvaluationStopInputs &inputs,
+                             Bot1PendingRequestState &trade,Bot1TradeSendOptions &options)
+{
+   if(inputs.enabled==0) return;
+   const int total=PositionsTotal();
+   for(int index=total-1;index>=0;index--)
+   {
+      const ulong ticket=PositionGetTicket(index);
+      if(ticket==0) continue;
+      if(PositionGetInteger(POSITION_MAGIC)!=(long)inputs.magic) continue;
+      if(PositionGetString(POSITION_SYMBOL)!=symbol) continue;
+      double sl=PositionGetDouble(POSITION_SL);
+      double tp=PositionGetDouble(POSITION_TP);
+      if(sl!=0.0 && tp!=0.0) continue;
+      const double open=PositionGetDouble(POSITION_PRICE_OPEN);
+      const long type=PositionGetInteger(POSITION_TYPE);
+      const uint digits=(uint)SymbolInfoInteger(symbol,SYMBOL_DIGITS);
+      if(type!=POSITION_TYPE_BUY && type!=POSITION_TYPE_SELL) continue;
+      if(sl==0.0)
+      {
+         if(type==POSITION_TYPE_BUY)
+            sl=Bot1RoundPrice(Bot1EvaluationDifference(open,(inputs.stop_distance+0.0)*inputs.unit),digits);
+         else
+            sl=Bot1RoundPrice((inputs.stop_distance+0.0)*inputs.unit+open,digits);
+      }
+      if(tp==0.0 && inputs.target_distance>0.0)
+      {
+         if(type==POSITION_TYPE_BUY)
+            tp=Bot1RoundPrice(open+inputs.target_distance*inputs.unit,digits);
+         else
+            tp=Bot1RoundPrice(Bot1EvaluationDifference(open,inputs.target_distance*inputs.unit),digits);
+      }
+      Bot1ModifyPosition(trade,options,ticket,sl,tp);
+   }
+}
+
+#endif

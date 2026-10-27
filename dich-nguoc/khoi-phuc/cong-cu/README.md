@@ -22,6 +22,15 @@ riêng của từng phần ở `bot-cua-toi-1/tests/` và `bot-cua-toi-3/tests/`
 
 Phép kiểm ghép mới:
 
+- `kiem-bo-sung-muc-dung-bot-1-3.py prepare|original|mql5|compare BOT RUN`:
+  1.172 ca mỗi bot chạy liên tục từ đầu đánh giá qua quét bổ sung dừng/chốt,
+  chạy nguyên thân sửa26d20/32a90 và gửi950; so theo byte đủ trạng thái35trường,
+  chuỗi/NULL và dịch vụ. Bước mql5 dùng `--build BUILD` của
+  `BotNEvaluationStopsCheck.mq5` trong MT5 riêng. Bot3 dùng cờ người gọi0,
+  thông báo gửi bằng0; dịch vụ/cấp chuỗi thành công được cấp, chưa là EA.
+  `danh-gia-doc-lap/evaluation-stops-20261027-r1/inspect-results.py BOT RUN`
+  đọc lại từng ca/nhãn trường để chỉ chỗ lệch, không sửa bằng chứng.
+
 - `bot-cua-toi-1/tests/check-evaluation-prelude.py prepare|original|mql5|compare RUN`:
   1.594 ca đầu đánh giá `18aa0..18eb1`, gồm cả các nhánh báo/kiểm phiên;
   so30giá trị và đầy đủ thứ tự, đối số, chuỗi dịch vụ. Dùng chung dữ liệu

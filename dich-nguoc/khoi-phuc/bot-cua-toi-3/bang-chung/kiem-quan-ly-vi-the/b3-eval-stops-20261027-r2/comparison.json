@@ -1,0 +1,24 @@
+{
+  "cases": 1172,
+  "matched": 1172,
+  "failed": 0,
+  "identical": true,
+  "first_different_byte": null,
+  "bytes": [
+    4667016,
+    4667016
+  ],
+  "whole_bot_complete": false,
+  "whole_manager_complete": false,
+  "whole_evaluator_complete": false,
+  "full_ea": false,
+  "native_modify_and_send_executed": true,
+  "child_helpers_intercepted": false,
+  "terminal_replies_supplied": true,
+  "original_ex5_changed": false,
+  "limits": [
+    "Evaluator entry, prelude and initial position-stop pass execute continuously through their native cleanup; modify26d20/32a90 and send950 execute without substituted child results.",
+    "Bot3 caller DL=0 skips the preceding pending-order cleanup. Send log_level=0 excludes message-format branches in this joined run. No later manager or complete EA.",
+    "Terminal query/selection/send replies, initial state and successful allocations are supplied. No broker execution, allocation-failure or arbitrary incoming-register proof."
+  ]
+}

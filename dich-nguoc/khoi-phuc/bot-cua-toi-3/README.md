@@ -1,5 +1,12 @@
 # bot-cua-toi-3
 
+Đã nối đầu đánh giá qua vòng bổ sung dừng lỗ/chốt lời, thân sửa vị thế và
+thân gửi: **1.172/1.172 ca khớp**, bốn thời điểm chụp đủ trường yêu cầu/
+kết quả và chuỗi; biên dịch **0 lỗi/0 cảnh báo**. Cờ người gọi0 bỏ bước
+dọn lệnh chờ trong lượt này; thân sửa/gửi chạy thật, dịch vụ được cấp.
+Còn ghép bước dọn lệnh chờ, quản lý tiếp theo và toàn EA.
+[Phạm vi và bằng chứng](../danh-gia-doc-lap/evaluation-stops-20261027-r1/README.md).
+
 Đã viết tiếp từ đầu đánh giá qua giờ giao dịch, thông báo, cập nhật giá
 và lịch hiện tại: **1.594/1.594 ca khớp**, gồm 31 giá trị và toàn bộ
 thứ tự/đối số/chuỗi dịch vụ. Giữ đúng điều chỉnh giờ kết thúc gần nửa đêm,

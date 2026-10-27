@@ -1,0 +1,415 @@
+{
+  "cases": 1172,
+  "matched": 1136,
+  "failed": 36,
+  "first_failures": [
+    {
+      "id": 631,
+      "tag": "calculation-boundary",
+      "input": {
+        "enabled": 1,
+        "magic": 42,
+        "stop": 9221120237041090851,
+        "target": 4626322717216342016,
+        "unit": 4576918229304087675,
+        "total": 1,
+        "trade_magic": 8526495040805286416,
+        "stopped": 0,
+        "select_ok": 1,
+        "async_mode": 0,
+        "accepted": 1,
+        "write_result": 1,
+        "mutation": 0,
+        "positions": [
+          {
+            "ticket": 11,
+            "magic": 42,
+            "type": 0,
+            "digits": -1,
+            "sl": 0,
+            "tp": 0,
+            "open": 4656511458224373760,
+            "symbol": "XAUUSD"
+          }
+        ],
+        "tag": "calculation-boundary",
+        "id": 631
+      },
+      "differences": {
+        "loop.9.word1": [
+          9221120237041090851,
+          18444492273895866659
+        ],
+        "loop.12.state.request.sl": [
+          9221120237041090851,
+          18444492273895866659
+        ],
+        "loop.13.state.request.sl": [
+          9221120237041090851,
+          18444492273895866659
+        ],
+        "final.request.sl": [
+          9221120237041090851,
+          18444492273895866659
+        ]
+      }
+    },
+    {
+      "id": 632,
+      "tag": "calculation-boundary",
+      "input": {
+        "enabled": 1,
+        "magic": 42,
+        "stop": 9221120237041090851,
+        "target": 4626322717216342016,
+        "unit": 4576918229304087675,
+        "total": 1,
+        "trade_magic": 8526495040805286416,
+        "stopped": 0,
+        "select_ok": 1,
+        "async_mode": 0,
+        "accepted": 1,
+        "write_result": 1,
+        "mutation": 0,
+        "positions": [
+          {
+            "ticket": 11,
+            "magic": 42,
+            "type": 0,
+            "digits": 0,
+            "sl": 0,
+            "tp": 0,
+            "open": 4656511458224373760,
+            "symbol": "XAUUSD"
+          }
+        ],
+        "tag": "calculation-boundary",
+        "id": 632
+      },
+      "differences": {
+        "loop.9.word1": [
+          9221120237041090851,
+          18444492273895866659
+        ],
+        "loop.12.state.request.sl": [
+          9221120237041090851,
+          18444492273895866659
+        ],
+        "loop.13.state.request.sl": [
+          9221120237041090851,
+          18444492273895866659
+        ],
+        "final.request.sl": [
+          9221120237041090851,
+          18444492273895866659
+        ]
+      }
+    },
+    {
+      "id": 633,
+      "tag": "calculation-boundary",
+      "input": {
+        "enabled": 1,
+        "magic": 42,
+        "stop": 9221120237041090851,
+        "target": 4626322717216342016,
+        "unit": 4576918229304087675,
+        "total": 1,
+        "trade_magic": 8526495040805286416,
+        "stopped": 0,
+        "select_ok": 1,
+        "async_mode": 0,
+        "accepted": 1,
+        "write_result": 1,
+        "mutation": 0,
+        "positions": [
+          {
+            "ticket": 11,
+            "magic": 42,
+            "type": 0,
+            "digits": 2,
+            "sl": 0,
+            "tp": 0,
+            "open": 4656511458224373760,
+            "symbol": "XAUUSD"
+          }
+        ],
+        "tag": "calculation-boundary",
+        "id": 633
+      },
+      "differences": {
+        "loop.9.word1": [
+          9221120237041090851,
+          18444492273895866659
+        ],
+        "loop.12.state.request.sl": [
+          9221120237041090851,
+          18444492273895866659
+        ],
+        "loop.13.state.request.sl": [
+          9221120237041090851,
+          18444492273895866659
+        ],
+        "final.request.sl": [
+          9221120237041090851,
+          18444492273895866659
+        ]
+      }
+    },
+    {
+      "id": 634,
+      "tag": "calculation-boundary",
+      "input": {
+        "enabled": 1,
+        "magic": 42,
+        "stop": 9221120237041090851,
+        "target": 4626322717216342016,
+        "unit": 4576918229304087675,
+        "total": 1,
+        "trade_magic": 8526495040805286416,
+        "stopped": 0,
+        "select_ok": 1,
+        "async_mode": 0,
+        "accepted": 1,
+        "write_result": 1,
+        "mutation": 0,
+        "positions": [
+          {
+            "ticket": 11,
+            "magic": 42,
+            "type": 0,
+            "digits": 11,
+            "sl": 0,
+            "tp": 0,
+            "open": 4656511458224373760,
+            "symbol": "XAUUSD"
+          }
+        ],
+        "tag": "calculation-boundary",
+        "id": 634
+      },
+      "differences": {
+        "loop.9.word1": [
+          9221120237041090851,
+          18444492273895866659
+        ],
+        "loop.12.state.request.sl": [
+          9221120237041090851,
+          18444492273895866659
+        ],
+        "loop.13.state.request.sl": [
+          9221120237041090851,
+          18444492273895866659
+        ],
+        "final.request.sl": [
+          9221120237041090851,
+          18444492273895866659
+        ]
+      }
+    },
+    {
+      "id": 635,
+      "tag": "calculation-boundary",
+      "input": {
+        "enabled": 1,
+        "magic": 42,
+        "stop": 9221120237041090851,
+        "target": 4626322717216342016,
+        "unit": 4576918229304087675,
+        "total": 1,
+        "trade_magic": 8526495040805286416,
+        "stopped": 0,
+        "select_ok": 1,
+        "async_mode": 0,
+        "accepted": 1,
+        "write_result": 1,
+        "mutation": 0,
+        "positions": [
+          {
+            "ticket": 11,
+            "magic": 42,
+            "type": 0,
+            "digits": 12,
+            "sl": 0,
+            "tp": 0,
+            "open": 4656511458224373760,
+            "symbol": "XAUUSD"
+          }
+        ],
+        "tag": "calculation-boundary",
+        "id": 635
+      },
+      "differences": {
+        "loop.9.word1": [
+          9221120237041090851,
+          18444492273895866659
+        ],
+        "loop.12.state.request.sl": [
+          9221120237041090851,
+          18444492273895866659
+        ],
+        "loop.13.state.request.sl": [
+          9221120237041090851,
+          18444492273895866659
+        ],
+        "final.request.sl": [
+          9221120237041090851,
+          18444492273895866659
+        ]
+      }
+    },
+    {
+      "id": 636,
+      "tag": "calculation-boundary",
+      "input": {
+        "enabled": 1,
+        "magic": 42,
+        "stop": 9221120237041090851,
+        "target": 4626322717216342016,
+        "unit": 4576918229304087675,
+        "total": 1,
+        "trade_magic": 8526495040805286416,
+        "stopped": 0,
+        "select_ok": 1,
+        "async_mode": 0,
+        "accepted": 1,
+        "write_result": 1,
+        "mutation": 0,
+        "positions": [
+          {
+            "ticket": 11,
+            "magic": 42,
+            "type": 0,
+            "digits": 4294967299,
+            "sl": 0,
+            "tp": 0,
+            "open": 4656511458224373760,
+            "symbol": "XAUUSD"
+          }
+        ],
+        "tag": "calculation-boundary",
+        "id": 636
+      },
+      "differences": {
+        "loop.9.word1": [
+          9221120237041090851,
+          18444492273895866659
+        ],
+        "loop.12.state.request.sl": [
+          9221120237041090851,
+          18444492273895866659
+        ],
+        "loop.13.state.request.sl": [
+          9221120237041090851,
+          18444492273895866659
+        ],
+        "final.request.sl": [
+          9221120237041090851,
+          18444492273895866659
+        ]
+      }
+    },
+    {
+      "id": 643,
+      "tag": "calculation-boundary",
+      "input": {
+        "enabled": 1,
+        "magic": 42,
+        "stop": 4621819117588971520,
+        "target": 4626322717216342016,
+        "unit": 9221120237041090851,
+        "total": 1,
+        "trade_magic": 8526495040805286416,
+        "stopped": 0,
+        "select_ok": 1,
+        "async_mode": 0,
+        "accepted": 1,
+        "write_result": 1,
+        "mutation": 0,
+        "positions": [
+          {
+            "ticket": 11,
+            "magic": 42,
+            "type": 0,
+            "digits": -1,
+            "sl": 0,
+            "tp": 0,
+            "open": 4656511458224373760,
+            "symbol": "XAUUSD"
+          }
+        ],
+        "tag": "calculation-boundary",
+        "id": 643
+      },
+      "differences": {
+        "loop.9.word1": [
+          9221120237041090851,
+          18444492273895866659
+        ],
+        "loop.12.state.request.sl": [
+          9221120237041090851,
+          18444492273895866659
+        ],
+        "loop.13.state.request.sl": [
+          9221120237041090851,
+          18444492273895866659
+        ],
+        "final.request.sl": [
+          9221120237041090851,
+          18444492273895866659
+        ]
+      }
+    },
+    {
+      "id": 644,
+      "tag": "calculation-boundary",
+      "input": {
+        "enabled": 1,
+        "magic": 42,
+        "stop": 4621819117588971520,
+        "target": 4626322717216342016,
+        "unit": 9221120237041090851,
+        "total": 1,
+        "trade_magic": 8526495040805286416,
+        "stopped": 0,
+        "select_ok": 1,
+        "async_mode": 0,
+        "accepted": 1,
+        "write_result": 1,
+        "mutation": 0,
+        "positions": [
+          {
+            "ticket": 11,
+            "magic": 42,
+            "type": 0,
+            "digits": 0,
+            "sl": 0,
+            "tp": 0,
+            "open": 4656511458224373760,
+            "symbol": "XAUUSD"
+          }
+        ],
+        "tag": "calculation-boundary",
+        "id": 644
+      },
+      "differences": {
+        "loop.9.word1": [
+          9221120237041090851,
+          18444492273895866659
+        ],
+        "loop.12.state.request.sl": [
+          9221120237041090851,
+          18444492273895866659
+        ],
+        "loop.13.state.request.sl": [
+          9221120237041090851,
+          18444492273895866659
+        ],
+        "final.request.sl": [
+          9221120237041090851,
+          18444492273895866659
+        ]
+      }
+    }
+  ]
+}

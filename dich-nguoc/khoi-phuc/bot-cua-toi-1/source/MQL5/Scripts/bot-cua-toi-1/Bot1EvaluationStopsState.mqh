@@ -1,0 +1,96 @@
+#ifndef BOT1_EVALUATION_STOPS_STATE_MQH
+#define BOT1_EVALUATION_STOPS_STATE_MQH
+// Exact35 public fields from the known-source class layout.
+void SeedStopTrade()
+{
+   ZeroMemory(ActiveTrade);ZeroMemory(ActiveOptions);
+   ActiveTrade.request.action=(ENUM_TRADE_REQUEST_ACTIONS)101;
+   ActiveTrade.request.magic=(ulong)0x1122334455667788;
+   ActiveTrade.request.order=(ulong)0x2132435465768798;
+   ActiveTrade.request.symbol="TRADE_LAYOUT_SYMBOL";
+   ActiveTrade.request.volume=1101.25;
+   ActiveTrade.request.price=1102.25;
+   ActiveTrade.request.stoplimit=1103.25;
+   ActiveTrade.request.sl=1104.25;
+   ActiveTrade.request.tp=1105.25;
+   ActiveTrade.request.deviation=(ulong)0x31425364758697a8;
+   ActiveTrade.request.type=(ENUM_ORDER_TYPE)102;
+   ActiveTrade.request.type_filling=(ENUM_ORDER_TYPE_FILLING)103;
+   ActiveTrade.request.type_time=(ENUM_ORDER_TYPE_TIME)104;
+   ActiveTrade.request.expiration=(datetime)4706933912664188856;
+   ActiveTrade.request.comment="TRADE_LAYOUT_COMMENT";
+   ActiveTrade.request.position=(ulong)0x5162738495a6b7c8;
+   ActiveTrade.request.position_by=(ulong)0x61728394a5b6c7d8;
+   ActiveTrade.result.retcode=(uint)201;
+   ActiveTrade.result.deal=(ulong)0x1234567812345678;
+   ActiveTrade.result.order=(ulong)0x2345678923456789;
+   ActiveTrade.result.volume=1201.25;
+   ActiveTrade.result.price=1202.25;
+   ActiveTrade.result.bid=1203.25;
+   ActiveTrade.result.ask=1204.25;
+   ActiveTrade.result.comment="TRADE_LAYOUT_RESULT";
+   ActiveTrade.result.request_id=(uint)202;
+   ActiveTrade.result.retcode_external=203;
+   ActiveTrade.check.retcode=(uint)301;
+   ActiveTrade.check.balance=1301.25;
+   ActiveTrade.check.equity=1302.25;
+   ActiveTrade.check.profit=1303.25;
+   ActiveTrade.check.margin=1304.25;
+   ActiveTrade.check.margin_free=1305.25;
+   ActiveTrade.check.margin_level=1306.25;
+   ActiveTrade.check.comment="TRADE_LAYOUT_CHECK";
+   ActiveTrade.magic=StopCase.trade_magic;ActiveTrade.preferred=(ENUM_ORDER_TYPE_FILLING)2;
+   ActiveOptions.async_mode=(uchar)StopCase.async_mode;ActiveOptions.margin_mode=0;ActiveOptions.log_level=0;
+}
+void WriteStopTrade()
+{
+   DoubleBits state_bits;
+   FileWriteLong(OutputFile,(long)ActiveTrade.request.action);
+   FileWriteLong(OutputFile,(long)ActiveTrade.request.magic);
+   FileWriteLong(OutputFile,(long)ActiveTrade.request.order);
+   WriteText(ActiveTrade.request.symbol);
+   state_bits.value=ActiveTrade.request.volume;FileWriteLong(OutputFile,(long)state_bits.bits);
+   state_bits.value=ActiveTrade.request.price;FileWriteLong(OutputFile,(long)state_bits.bits);
+   state_bits.value=ActiveTrade.request.stoplimit;FileWriteLong(OutputFile,(long)state_bits.bits);
+   state_bits.value=ActiveTrade.request.sl;FileWriteLong(OutputFile,(long)state_bits.bits);
+   state_bits.value=ActiveTrade.request.tp;FileWriteLong(OutputFile,(long)state_bits.bits);
+   FileWriteLong(OutputFile,(long)ActiveTrade.request.deviation);
+   FileWriteLong(OutputFile,(long)ActiveTrade.request.type);
+   FileWriteLong(OutputFile,(long)ActiveTrade.request.type_filling);
+   FileWriteLong(OutputFile,(long)ActiveTrade.request.type_time);
+   FileWriteLong(OutputFile,(long)ActiveTrade.request.expiration);
+   WriteText(ActiveTrade.request.comment);
+   FileWriteLong(OutputFile,(long)ActiveTrade.request.position);
+   FileWriteLong(OutputFile,(long)ActiveTrade.request.position_by);
+   FileWriteLong(OutputFile,(long)ActiveTrade.result.retcode);
+   FileWriteLong(OutputFile,(long)ActiveTrade.result.deal);
+   FileWriteLong(OutputFile,(long)ActiveTrade.result.order);
+   state_bits.value=ActiveTrade.result.volume;FileWriteLong(OutputFile,(long)state_bits.bits);
+   state_bits.value=ActiveTrade.result.price;FileWriteLong(OutputFile,(long)state_bits.bits);
+   state_bits.value=ActiveTrade.result.bid;FileWriteLong(OutputFile,(long)state_bits.bits);
+   state_bits.value=ActiveTrade.result.ask;FileWriteLong(OutputFile,(long)state_bits.bits);
+   WriteText(ActiveTrade.result.comment);
+   FileWriteLong(OutputFile,(long)ActiveTrade.result.request_id);
+   FileWriteLong(OutputFile,(long)ActiveTrade.result.retcode_external);
+   FileWriteLong(OutputFile,(long)ActiveTrade.check.retcode);
+   state_bits.value=ActiveTrade.check.balance;FileWriteLong(OutputFile,(long)state_bits.bits);
+   state_bits.value=ActiveTrade.check.equity;FileWriteLong(OutputFile,(long)state_bits.bits);
+   state_bits.value=ActiveTrade.check.profit;FileWriteLong(OutputFile,(long)state_bits.bits);
+   state_bits.value=ActiveTrade.check.margin;FileWriteLong(OutputFile,(long)state_bits.bits);
+   state_bits.value=ActiveTrade.check.margin_free;FileWriteLong(OutputFile,(long)state_bits.bits);
+   state_bits.value=ActiveTrade.check.margin_level;FileWriteLong(OutputFile,(long)state_bits.bits);
+   WriteText(ActiveTrade.check.comment);
+   FileWriteLong(OutputFile,(long)ActiveTrade.magic);
+   FileWriteLong(OutputFile,(long)ActiveTrade.preferred);
+   FileWriteLong(OutputFile,(long)ActiveOptions.async_mode);
+   FileWriteLong(OutputFile,(long)ActiveOptions.margin_mode);
+   FileWriteLong(OutputFile,(long)ActiveOptions.log_level);
+}
+void SupplyStopResult(MqlTradeResult &result)
+{
+   result.retcode=(uint)(10009+CurrentCase.id%3);result.deal=(ulong)(0x12340000+CurrentCase.id);
+   result.order=(ulong)(0x56780000+CurrentCase.id);result.volume=0.25;result.price=2600.5;
+   result.bid=2600.25;result.ask=2600.75;result.comment=(CurrentCase.id%2!=0 ? NULL : "Đã gửi 🚀");
+   result.request_id=(uint)(CurrentCase.id+1);result.retcode_external=-7;
+}
+#endif

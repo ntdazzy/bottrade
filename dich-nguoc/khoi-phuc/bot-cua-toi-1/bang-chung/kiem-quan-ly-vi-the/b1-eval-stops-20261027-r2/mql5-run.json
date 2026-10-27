@@ -1,0 +1,43 @@
+{
+  "original_ex5_sha256": "a3b0de423a06e10ebedc279307b93d7cb9188ba2bb5de77131a913c865b0e922",
+  "tool_sha256": "1fb8c33a8746f5612455caf51d86b463a3b15f7f4c05dd873739ead811f70577",
+  "sources_sha256": {
+    "Include/bot-cua-toi-1/Bot1TradeMessages.mqh": "af36245e2dd03ec12d5808457530c4937bc354a9a68b5a1f70f8bc394f5ab5a3",
+    "Include/bot-cua-toi-1/Bot1PriceLevels.mqh": "601bdd551e24e3ac9a7742cc00e057d881b069ab672843bec31b3f32a43316b1",
+    "Include/bot-cua-toi-1/Bot1EvaluationPrelude.mqh": "80d81539cbbb26a6e63a2acaea7ea1fdeaca6f53935ef2e1186fe5c5a3ff00ba",
+    "Include/bot-cua-toi-1/Bot1EvaluationStops.mqh": "f2d9bdfad1ad7803071be76570c103d6f95257e5a5b7d98ba0434b868ea2e1a7",
+    "Scripts/bot-cua-toi-1/Bot1EvaluationStopsCheck.mq5": "e2284cb3c3312eb5d2afdc8f587dbfecf36e68767a9df1d4dc177d6476c60e1a",
+    "Include/bot-cua-toi-1/Bot1TradeSend.mqh": "dddd20fb58daa7cd60ce87f08c89be3a204ce170e89418c801b24175d4d12e8c",
+    "Include/bot-cua-toi-1/Bot1PendingRequest.mqh": "46ffbb7da4d469533e1a665b5b666ccbfc755ff973ae5e5ebabf5cdd9051700d",
+    "Scripts/bot-cua-toi-1/Bot1EvaluationStopsState.mqh": "633508eafb8653116126a73542766f994ca8204657cb66588b95fdcfea56573d",
+    "Include/bot-cua-toi-1/Bot1PositionModify.mqh": "0bf230d471ffd384f32df9a57794d65ef1cd9ab91b3ccebe41c52d6d12be5472",
+    "Scripts/bot-cua-toi-1/Bot1EvaluationPreludeCheck.mq5": "8fdfffb16f6c317032ec2ba62f60585ed5075b66b59e7d5b7ba26056e9aa228f",
+    "Include/bot-cua-toi-1/Bot1Filling.mqh": "d01485811439d971833de028c791c5abb6cb64ba5b9c20228ca8785453a6615d"
+  },
+  "helpers_sha256": {
+    "bot-cua-toi-1/tests/check-evaluation-prelude.py": "75e195d6410235635b2e46198d6f376daf0821f776d40860bd52ae0748565031",
+    "bot-cua-toi-3/tests/check-evaluation-prelude.py": "3c582312438c4b5aa3332e0669b3a1f828e4e0f3c86adc44c602d899faacd2d5",
+    "bot-cua-toi-3/tests/check-evaluation-head.py": "bfa29b44acf294633702daf1e9e066928205a67fcceb57e648ce56e3cb4341cd",
+    "cong-cu/kiem-gia-vao-bot-1-3.py": "22394e48932feb7242b967aa58e327d2990402f12bfe52621916f64914c9dac2",
+    "cong-cu/kiem-muc-gia-bot-1-3.py": "a6c447ca80029fb63ced0c9d1673bb14222a7736b04df5c410f280f8471d6a35",
+    "cong-cu/kiem-khoi-luong-hop-le-bot-1-3.py": "8251fb4423d6f5f2e1b79a1c53dbb25fb5a6c568bb61cddef23396dc982243f0",
+    "cong-cu/kiem-khoi-luong-bot-1-3.py": "32539c090422ab6bc2ce94a9fdacfd33e53c394aca58bd3827c2232d817d7f77",
+    "cong-cu/kiem-ban-git-quan-ly.py": "7186478774b34e0d72b4594fbcc85972d9b4c07ed02160987d46d34f39dcb160",
+    "bot-cua-toi-1/phan-tich/luot-20261023-data-v2/metadata/import.json": "732905b62143980f94c360226bfb75120d52bfccb7e646a3a0cc9be9d3e21adb",
+    "cong-cu/kiem-bo-sung-muc-dung-bot-1-3.py": "1fb8c33a8746f5612455caf51d86b463a3b15f7f4c05dd873739ead811f70577",
+    "doi-chung-mt5/thu-tu-truong-lenh-class-20261024/layout-class-r1/trade-layout.json": "01e11f8b969576faa9647a53efeaf6a2f7748baa7711a5bc2730981c8883def1",
+    "bot-cua-toi-1/phan-tich/dong-vi-the/management-trade-native-20261026-r1/native-bindings.json": "caf4e653c5970d1415d21a3757449f43f940a855a8822b0014d51afe05b4831b"
+  },
+  "cases": 1172,
+  "result_sha256": "e29cc25ebc713d22ba3a04ce30c3502a4da7429a52979cc3a1c410a45dcc049d",
+  "build": "b1-eval-stops-check-20261027-r2",
+  "build_receipt_sha256": "8663d470fdd6028a4f455b7232579d40f3b6f32ab008f3b23140a7ba2388351f",
+  "whole_bot_complete": false,
+  "whole_manager_complete": false,
+  "whole_evaluator_complete": false,
+  "full_ea": false,
+  "native_modify_and_send_executed": true,
+  "child_helpers_intercepted": false,
+  "terminal_replies_supplied": true,
+  "original_ex5_changed": false
+}
