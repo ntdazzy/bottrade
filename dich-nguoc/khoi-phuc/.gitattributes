@@ -878,4 +878,9 @@
 /bot-cua-toi-[13]/source/MQL5/Scripts/bot-cua-toi-[13]/Bot[13]AllHeadersAPICompile.mq5 -text
 /bot-cua-toi-[13]/bang-chung/bien-dich/b[13]-all-headers-api-*/** -text
 /danh-gia-doc-lap/all-headers-20261028-r1/** -text
+# Input declarations from verified MT5 set snapshots.
+/bot-cua-toi-[13]/source/MQL5/Include/bot-cua-toi-[13]/Bot[13]Inputs.mqh -text
+/bot-cua-toi-[13]/source/MQL5/Scripts/bot-cua-toi-[13]/Bot[13]InputsAPICompile.mq5 -text
+/bot-cua-toi-[13]/bang-chung/bien-dich/b[13]-inputs-api-*/** -text
+/danh-gia-doc-lap/input-settings-20261028-r1/** -text
 

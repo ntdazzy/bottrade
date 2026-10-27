@@ -1,0 +1,21 @@
+{
+  "checks": [
+    {
+      "bot": 1,
+      "inputs": 71,
+      "build": "b1-inputs-api-20261028-r1",
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "bot": 3,
+      "inputs": 79,
+      "build": "b3-inputs-api-20261028-r1",
+      "errors": 0,
+      "warnings": 0
+    }
+  ],
+  "menu_behavior_complete": false,
+  "whole_ea_complete": false,
+  "source_snapshot": "menu-bot-1-3/luot-20261023-r1"
+}
