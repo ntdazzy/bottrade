@@ -1,9 +1,17 @@
 # bot-cua-toi-3
 
+Đã viết tiếp từ đầu đánh giá qua giờ giao dịch, thông báo, cập nhật giá
+và lịch hiện tại: **1.594/1.594 ca khớp**, gồm 31 giá trị và toàn bộ
+thứ tự/đối số/chuỗi dịch vụ. Giữ đúng điều chỉnh giờ kết thúc gần nửa đêm,
+nhánh không tìm thấy phiên đầu và tối đa 10 phiên. Hai bản dựng đều
+**0 lỗi/0 cảnh báo**. Dữ liệu dịch vụ được cấp; chưa quét lệnh/vị thế,
+chưa có EA đầy đủ. [Phạm vi và bằng chứng](phan-tich/chuong-trinh-chinh/evaluation-prelude-complete-20261027-r1/README.md).
+
 Đã viết phần đầu đánh giá chiến lược: đọc thời gian, chọn chuỗi tên mã
 và chọn nhánh tiếp theo. **432/432 ca khớp**, gồm 17 giá trị, chuỗi đầy đủ,
 NULL/chuỗi rỗng và dịch vụ đổi ngày giờ báo lỗi. Biên dịch 0 lỗi/cảnh báo;
-còn các nhánh xử lý phiên, giao dịch và phần đánh giá phía sau.
+còn giao dịch và phần đánh giá phía sau; nhánh giờ giao dịch đã được so
+trong lượt 1.594 ca ở trên.
 [Nguồn và giới hạn](phan-tich/chuong-trinh-chinh/evaluator-prelude-20261027-r1/VERIFIED-HEAD.md).
 
 Đã ghép nạp cấu hình → ghi chú/mã/đổi tiền → chuẩn bị: **2.106/2.106 ca khớp**,

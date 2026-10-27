@@ -1,5 +1,13 @@
 # Keep the exact bytes referenced by the send/combined verification receipts.
 * whitespace=cr-at-eol
+/bot-cua-toi-3/tests/check-evaluation-prelude.py -text
+/bot-cua-toi-3/source/MQL5/Include/bot-cua-toi-3/Bot3EvaluationPrelude.mqh -text
+/bot-cua-toi-3/source/MQL5/Scripts/bot-cua-toi-3/Bot3EvaluationPrelude*.mq5 -text
+/bot-cua-toi-3/phan-tich/chuong-trinh-chinh/evaluation-prelude-complete-20261027-r1/** -text
+/bot-cua-toi-3/phan-tich/chuong-trinh-chinh/evaluation-prelude-complete-20261027-r1/native-*.txt whitespace=cr-at-eol,-blank-at-eol,-blank-at-eof
+/bot-cua-toi-3/bang-chung/kiem-quan-ly-vi-the/b3-evaluation-prelude-20261027-*/** -text
+/bot-cua-toi-3/bang-chung/bien-dich/b3-prelude-*-20261027-*/** -text
+/danh-gia-doc-lap/evaluation-prelude-20261027-r1/** -text
 /bot-cua-toi-3/tests/check-evaluation-head.py -text
 /bot-cua-toi-3/phan-tich/luot-20261023-data/metadata/import.json -text
 /bot-cua-toi-3/source/MQL5/Include/bot-cua-toi-3/Bot3EvaluationHead.mqh -text

@@ -1,0 +1,19 @@
+{
+  "cases": 1594,
+  "matched": 1594,
+  "failed": 0,
+  "first_failures": [],
+  "whole_bot_complete": false,
+  "whole_manager_complete": false,
+  "whole_evaluator_complete": false,
+  "full_ea": false,
+  "native_prelude_executed": true,
+  "string_helper_intercepted": false,
+  "terminal_replies_supplied": true,
+  "original_ex5_changed": false,
+  "limits": [
+    "Prelude only: native entry20ef0 through212ff including session reports/checks, tick and current calendar. No order/position scan or complete EA.",
+    "Terminal replies, initial calendar/tick data and successful string allocation are supplied. Allocation failures and complete MT5 environment are outside this run.",
+    "session_flag compares the live byte at frame+f8. The remaining bits of the scratch dword hold incidental register bits and are not called a fully initialized bool."
+  ]
+}

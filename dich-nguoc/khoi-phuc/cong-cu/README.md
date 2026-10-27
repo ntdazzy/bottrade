@@ -22,6 +22,14 @@ riêng của từng phần ở `bot-cua-toi-1/tests/` và `bot-cua-toi-3/tests/`
 
 Phép kiểm ghép mới:
 
+- `bot-cua-toi-3/tests/check-evaluation-prelude.py prepare|original|mql5|compare RUN`:
+  1.594 ca chạy từ entry `20ef0` qua báo/kiểm giờ giao dịch tới `212ff`,
+  gồm cập nhật giá/lịch. So 31 giá trị và toàn bộ thứ tự, đối số, chuỗi
+  thông báo/dịch vụ. Bước mql5 dùng `--build BUILD` của
+  `Bot3EvaluationPreludeCheck.mq5` trong MT5 riêng. Giờ, lịch, phiên,
+  chuỗi giờ, giá và cấp bộ nhớ thành công được cấp; không chạy phần
+  quét lệnh/vị thế, EA hoàn chỉnh hoặc lỗi cấp bộ nhớ.
+
 - `bot-cua-toi-3/tests/check-evaluation-head.py prepare|original|mql5|compare RUN`:
   432 ca đầu đánh giá `20ef0..211ea/216e5`; so 17 giá trị, chuỗi UTF-16 và NULL.
   Bước mql5 dùng `--build BUILD` của `Bot3EvaluationHeadCheck.mq5` trong MT5
