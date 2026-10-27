@@ -1,0 +1,34 @@
+[
+  {
+    "bot": 1,
+    "direction": "buy",
+    "begin": "0x2f5c0",
+    "end": "0x2f7dd",
+    "sha256": "01d72da0e079969614793876b5980284cb253defde41f75f9811e4b3372f0268",
+    "listing": "bot1-buy-native-2f5c0-2f7dd.txt"
+  },
+  {
+    "bot": 1,
+    "direction": "sell",
+    "begin": "0x2f7e0",
+    "end": "0x2f9fd",
+    "sha256": "b8b370d5defab96f03e578f0a34b3016a16d86ee934c709621ff4e63bdaa767b",
+    "listing": "bot1-sell-native-2f7e0-2f9fd.txt"
+  },
+  {
+    "bot": 3,
+    "direction": "buy",
+    "begin": "0x3ca00",
+    "end": "0x3cc1d",
+    "sha256": "2ca1558cfb8ab905c4c570da4c7f3f63a5f9d68a1e1c5edef85a62f969d95677",
+    "listing": "bot3-buy-native-3ca00-3cc1d.txt"
+  },
+  {
+    "bot": 3,
+    "direction": "sell",
+    "begin": "0x3cc20",
+    "end": "0x3ce3d",
+    "sha256": "94661a0c5afa9b3973e86b1b28552ba724f6eabe9a8bedd08437002927943646",
+    "listing": "bot3-sell-native-3cc20-3ce3d.txt"
+  }
+]

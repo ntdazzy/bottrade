@@ -1,0 +1,26 @@
+{
+  "checks": [
+    {
+      "bot": 1,
+      "cases": 698,
+      "matched": 698,
+      "buy_cases": 349,
+      "sell_cases": 349,
+      "instructions": 566,
+      "result_sha256": "39fdc19cb75eb4745080cf363a79f0f80114284cbda739bfff8373abcd33badf",
+      "bytes": 925976
+    },
+    {
+      "bot": 3,
+      "cases": 698,
+      "matched": 698,
+      "buy_cases": 349,
+      "sell_cases": 349,
+      "instructions": 569,
+      "result_sha256": "39fdc19cb75eb4745080cf363a79f0f80114284cbda739bfff8373abcd33badf",
+      "bytes": 925976
+    }
+  ],
+  "independent_review": "pending_distance_review: no material blockers; capture timing and fresh state API mutations reviewed",
+  "whole_eas_complete": 0
+}

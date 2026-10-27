@@ -1,3 +1,11 @@
+- `kiem-huy-lenh-theo-khoang-cach.py prepare|original|mql5|compare BOT RUN`:
+  quét mua/bán qua nguyên thân hủy/gửi, giữ giá tham chiếu trước đọc giá
+  lệnh và khoảng cách sau đọc. `mql5` cần `--build BUILD`;698ca mỗi bot,
+  không phải toàn nhánh NFP/EA. Bộ so so từng byte toàn kết quả; khi lệch
+  báo vị trí byte đầu, không xem các ca chưa tách được là đã đạt.
+- `tao-bo-kiem-huy-theo-khoang-cach.py`: tạo bộ kiểm/nguồn gọi trực tiếp
+  từ phần trả lời dịch vụ đã kiểm; không sửa các bộ kiểm cũ.
+
 - `kiem-lich-nfp-bot-1-3.py prepare|original|mql5|compare BOT RUN`:
   chạy nguyên helper tìm lịch NFP, so thời điểm/mã lỗi/dịch vụ. `mql5`
   và `errors` cần `--build BUILD`; cờ xuôi/ngược hai mảng đều được cấp.

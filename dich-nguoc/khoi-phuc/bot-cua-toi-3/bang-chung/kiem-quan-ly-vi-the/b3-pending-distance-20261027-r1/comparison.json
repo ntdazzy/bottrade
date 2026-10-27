@@ -1,0 +1,21 @@
+{
+  "cases": 698,
+  "matched": 698,
+  "failed": 0,
+  "first_different_byte": null,
+  "bytes": [
+    925976,
+    925976
+  ],
+  "whole_bot_complete": false,
+  "whole_manager_complete": false,
+  "whole_evaluator_complete": false,
+  "full_ea": false,
+  "native_distance_scan_and_delete_send_executed": true,
+  "child_helpers_intercepted": false,
+  "terminal_replies_supplied": true,
+  "original_ex5_changed": false,
+  "limits": [
+    "Native buy/sell scan through full original delete/send bodies, log_level=0. Terminal replies and successful allocation supplied. No complete NFP evaluator, actual broker order or allocation-failure proof."
+  ]
+}

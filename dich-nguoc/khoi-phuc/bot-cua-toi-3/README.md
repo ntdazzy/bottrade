@@ -1,3 +1,10 @@
+Đã dựng `Bot3PendingDistanceCancel.mqh` cho hai chiều hủy lệnh chờ
+khi đủ khoảng cách: **698/698 ca khớp** (349ca mỗi chiều), chạy nguyên
+thân hủy/gửi. Có ca thay giá/khoảng cách/vé giữa lần đọc; giữ giá tham
+chiếu trước đọc giá lệnh và khoảng cách mới sau đó. Hai bản biên dịch0/0.
+Còn nối điều kiện giờ tin/đóng vị thế trong evaluator.
+[Phạm vi](../danh-gia-doc-lap/pending-distance-20261027-r1/SPEC.md).
+
 Đã dựng `Bot3NfpCalendar.mqh` tìm lịch NFP thật theo hàm gốc:
 **1.916/1.916 ca thường +8/8 ca mảng thiếu khớp**; có cả mảng đọc
 xuôi/ngược, mã dự phòng, thứ tự dịch vụ và mã lỗi cuối. Nguồn trực tiếp

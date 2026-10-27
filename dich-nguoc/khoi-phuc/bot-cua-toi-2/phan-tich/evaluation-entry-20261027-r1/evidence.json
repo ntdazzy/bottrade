@@ -1,0 +1,41 @@
+{
+  "original_path": "C:\\Users\\NTD\\Desktop\\BotTradeEA\\local\\market-demos-20261020\\dich-nguoc-luot2\\terminal\\MQL5\\Experts\\Market\\Goldbot One MT5.ex5",
+  "original_sha256": "390d8ab14fc213ff4b8cbe5084bec545526e62c6028516fe21219a59398ce795",
+  "capture_sha256": "53ba806ba665943c44c7d86f9d0bd1034144d129eaddb7ec22eb7ff8359eb1e2",
+  "code_sha256": "ae4e9020f7f5f08d49774728bed14c17eb2bd26b6271c20da51bd3aaa446014f",
+  "inventory_sha256": "7dfba97eba0895a47d1b7186706e4d458a5864edc43c700c4be9817dc540ee5f",
+  "base": "0x253f2620000",
+  "function_begin": "0x186c0",
+  "function_end": "0x1f2b3",
+  "function_sha256": "6daf563f1647b4c3ed216e69c316e0ccb60a8fdbe76c885f003cb0ae14beb951",
+  "instruction_count": 5453,
+  "verified_entry_instructions": [
+    {
+      "rva": "0x18721",
+      "instruction": "mov dword ptr [rsp + 0xc4], ecx"
+    },
+    {
+      "rva": "0x1889b",
+      "instruction": "call rax"
+    },
+    {
+      "rva": "0x188b2",
+      "instruction": "mov qword ptr [rsp + 0xf8], rdx"
+    },
+    {
+      "rva": "0x188ba",
+      "instruction": "call rax"
+    },
+    {
+      "rva": "0x18987",
+      "instruction": "movabs rsi, 0x253f26882f8"
+    },
+    {
+      "rva": "0x18991",
+      "instruction": "cmp byte ptr [rsi], 0"
+    }
+  ],
+  "whole_bot_complete": false,
+  "logic_complete": false,
+  "source_created": false
+}
