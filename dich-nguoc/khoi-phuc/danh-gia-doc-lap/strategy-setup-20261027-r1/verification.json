@@ -1,0 +1,48 @@
+{
+  "results": [
+    {
+      "bot": 1,
+      "run": "b1-strategy-setup-20261027-r2",
+      "cases": 432,
+      "matched": 432,
+      "values_per_case": 127,
+      "result_sha256": "9c4d87ecab2171db761b07e21c2f180864a0575c78c6f2872e55eb6a16821f86",
+      "comparison_sha256": "9c2b5b21b94613e51c2fa8473ecd4807d85dc6e501fd8567f131e271452c34a0",
+      "compiles": [
+        {
+          "build": "b1-setup-api-20261027-r1",
+          "receipt_sha256": "457f0fb5108a1b070250330bcfebf44697fc388f6e6d3d0be4e4d5c0c92028d9"
+        },
+        {
+          "build": "b1-setup-check-20261027-r1",
+          "receipt_sha256": "24b1685d274f1797dcbe40e0e79a9da4e9cba2eccaea10703411af4dff216747"
+        }
+      ],
+      "nan_delegated_instructions": 0
+    },
+    {
+      "bot": 3,
+      "run": "b3-strategy-setup-20261027-r3",
+      "cases": 2106,
+      "matched": 2106,
+      "values_per_case": 132,
+      "result_sha256": "c4f74131db7f28653258700655dd128571067ee6d1cd1261b33f52911d3ed078",
+      "comparison_sha256": "45b0351c763f7648fd4a9e4fd61eea33ddaf49459ad09086346b70713671754d",
+      "compiles": [
+        {
+          "build": "b3-setup-api-20261027-r2",
+          "receipt_sha256": "ae2f0eab6c5a2e6561ab0b1bc2aa736fc5a0924757c2b01876f57217b9781930"
+        },
+        {
+          "build": "b3-setup-check-20261027-r2",
+          "receipt_sha256": "0deb64c45aa75d7f457d1911fb5f8e2358cccc1b95dce6a424431cd41b20cdfe"
+        }
+      ],
+      "nan_delegated_instructions": 213
+    }
+  ],
+  "independent_code_review": "strategy_setup_review; source and harness only; final comparison verified by primary Codex",
+  "whole_bot_complete": false,
+  "whole_eas_complete": 0,
+  "failed_r2_source_snapshot_verified": true
+}

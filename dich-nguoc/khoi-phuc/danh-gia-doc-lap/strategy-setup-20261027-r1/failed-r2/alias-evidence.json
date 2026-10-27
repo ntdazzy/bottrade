@@ -1,0 +1,18 @@
+{
+  "groups": [
+    {
+      "variable_flag": 0,
+      "matched": false,
+      "cases": 1170
+    },
+    {
+      "variable_flag": 255,
+      "matched": true,
+      "cases": 936
+    }
+  ],
+  "native_flag_rva": "0x1d6f28",
+  "preparation_gate_rva": "0xe23f..0xe252",
+  "source_before_sha256": "d4de59bb981b88d59d6b5a948c0f02b81b182311c592ccde25af8697f6b6dba8",
+  "comparison_sha256": "4c1c53b91f0f892585c8745c74107e53072e33d11672b498cadb503a33d31f11"
+}

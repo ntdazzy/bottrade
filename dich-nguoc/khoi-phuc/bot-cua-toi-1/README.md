@@ -1,5 +1,11 @@
 # bot-cua-toi-1
 
+Đã ghép nạp cấu hình → ghi chú/mã/đổi tiền → chuẩn bị: **432/432 ca khớp**,
+so **127 giá trị và toàn bộ ghi chú lệnh**. Ba thân gốc chạy liên tục,
+kiểm cả chỉ số và chỗ quay về của lời gọi chuẩn bị; không đặt lại ở giữa.
+Biên dịch 0 lỗi/0 cảnh báo. Chưa gọi phần đánh giá hoặc có EA đầy đủ.
+[Đặc tả và giới hạn](../danh-gia-doc-lap/strategy-setup-20261027-r1/SPEC.md).
+
 Đã thêm phần ghi chú, mã nhận diện và đổi tiền trước khi chuẩn bị:
 **760/760 ca khớp**, gồm chuỗi đầy đủ và thứ tự đọc thông tin; thêm
 **2/2 ca** chia 0 dừng đúng loại lỗi. Biên dịch 0 lỗi/0 cảnh báo.

@@ -1,5 +1,11 @@
 # Keep the exact bytes referenced by the send/combined verification receipts.
 * whitespace=cr-at-eol
+/cong-cu/kiem-nap-chien-luoc-bot-1-3.py -text
+/bot-cua-toi-[13]/source/MQL5/Include/bot-cua-toi-[13]/Bot[13]StrategySetup.mqh -text
+/bot-cua-toi-[13]/source/MQL5/Scripts/bot-cua-toi-[13]/Bot[13]StrategySetup*.mq5 -text
+/bot-cua-toi-[13]/bang-chung/kiem-quan-ly-vi-the/b[13]-strategy-setup-20261027-*/** -text
+/bot-cua-toi-[13]/bang-chung/bien-dich/b[13]-setup-*-20261027-*/** -text
+/danh-gia-doc-lap/strategy-setup-20261027-r1/** -text
 /cong-cu/kiem-*-ngu-canh-chien-luoc-bot-1-3.py -text
 /cong-cu/kiem-ngu-canh-chien-luoc-bot-1-3.py -text
 /bot-cua-toi-[13]/source/MQL5/Include/bot-cua-toi-[13]/Bot[13]StrategyContext.mqh -text

@@ -36,6 +36,11 @@ Ghi chú lệnh `6d568` khác chuỗi do chuẩn bị sao từ `6d308` sang
 `6d578`. Giữ hai trường riêng khi nối; chỉ Reference truyền trực tiếp
 vào cùng ô `6d1b8` của đầu vào chuẩn bị.
 
+Đối chiếu khi ghép ngày 27/10: byte `1d6f28` còn được chuẩn bị đọc tại
+`e23f..e252`. Nó chính là `variable_distances` trong đầu vào chuẩn bị,
+không phải hai cờ độc lập. `Bot3StrategySetup` nối hai trường đại diện
+cùng byte trước khi gọi ba khối; xem đặc tả ghép và lỗi r2 để kiểm lại.
+
 Giao diện: chỉ số hợp lệ 0..8, byte giữ ghi chú, tiền tố, int mã gốc,
 hậu tố mã giá, byte `native_1d6f28`; Reference truyền bằng tham chiếu
 để giữ đúng tác dụng phụ. Đầu ra chuỗi ghi chú/int mã/double tiền.

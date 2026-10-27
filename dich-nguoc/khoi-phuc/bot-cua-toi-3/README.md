@@ -1,5 +1,11 @@
 # bot-cua-toi-3
 
+Đã ghép nạp cấu hình → ghi chú/mã/đổi tiền → chuẩn bị: **2.106/2.106 ca khớp**,
+so **132 giá trị và toàn bộ ghi chú lệnh**. Đã nối đúng cờ dùng chung
+`1d6f28`, giữ hai lần đổi tiền và giá trị tham chiếu khi bật điều chỉnh khoảng cách.
+Ba thân gốc chạy liên tục; biên dịch 0 lỗi/0 cảnh báo. Chưa có EA đầy đủ.
+[Đặc tả và giới hạn](../danh-gia-doc-lap/strategy-setup-20261027-r1/SPEC.md).
+
 Đã thêm phần ghi chú, mã nhận diện và đổi tiền trước khi chuẩn bị:
 **1.818/1.818 ca khớp**, giữ cả nhánh đổi tiền hai lần và sửa Reference;
 thêm **3/3 ca** chia 0 dừng đúng loại lỗi. Biên dịch 0 lỗi/0 cảnh báo.

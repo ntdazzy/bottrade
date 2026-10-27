@@ -22,6 +22,15 @@ riêng của từng phần ở `bot-cua-toi-1/tests/` và `bot-cua-toi-3/tests/`
 
 Phép kiểm ghép mới:
 
+- `kiem-nap-chien-luoc-bot-1-3.py prepare|original|mql5|compare BOT RUN`:
+  chạy liên tục khối nạp cấu hình → ghi chú/mã/đổi tiền → lời gọi chuẩn bị
+  thật của hàm điều phối. Bot 1 so 432 ca/127 giá trị; bot 3 so 2.106 ca/132
+  giá trị, thêm chuỗi UTF-16 đầy đủ. Kiểm địa chỉ quay về, chỉ số, một lần
+  gọi chuẩn bị và thứ tự dịch vụ xuyên cả luồng. Bước mql5 cần `--build BUILD`,
+  dựng `BotNStrategySetupCheck.mq5` với `-CheckFloatingPointDividers` trong
+  MT5 riêng. Các hằng thanh ghi trước điểm đầu, ngăn xếp và dịch vụ được cấp;
+  không đặt lại ở giữa; chưa chạy đánh giá hoặc toàn bộ EA.
+
 - `kiem-ngu-canh-chien-luoc-bot-1-3.py prepare|original|mql5|compare BOT RUN`:
   so đoạn ghi chú/mã nhận diện/đổi tiền, 760 ca bot 1 và 1.818 ca bot 3.
   Ở bước mql5 thêm `--build BUILD`; phải dựng `BotNStrategyContextCheck.mq5`
