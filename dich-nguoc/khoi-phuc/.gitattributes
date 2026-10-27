@@ -883,4 +883,21 @@
 /bot-cua-toi-[13]/source/MQL5/Scripts/bot-cua-toi-[13]/Bot[13]InputsAPICompile.mq5 -text
 /bot-cua-toi-[13]/bang-chung/bien-dich/b[13]-inputs-api-*/** -text
 /danh-gia-doc-lap/input-settings-20261028-r1/** -text
+# Exact bytes for strengthened lifecycle, loaded settings and panel-cell evidence.
+/cong-cu/kiem-vong-doi-day-du-bot-1-3.py -text
+/cong-cu/tao-khai-bao-cai-dat-bot-1-3.py -text
+/cong-cu/kiem-gia-tri-cai-dat-bot-1-3.py -text
+/cong-cu/kiem-o-bang-hien-thi-bot-1-3.py -text
+/bot-cua-toi-[13]/source/MQL5/Include/bot-cua-toi-[13]/Bot[13]PanelCell.mqh -text
+/bot-cua-toi-[13]/source/MQL5/Scripts/bot-cua-toi-[13]/Bot[13]LifecycleFullCheck.mq5 -text
+/bot-cua-toi-[13]/source/MQL5/Scripts/bot-cua-toi-[13]/Bot[13]PanelCell*.mq5 -text
+/bot-cua-toi-[13]/source/MQL5/Scripts/bot-cua-toi-[13]/Bot[13]Inputs*.mq5 -text
+/bot-cua-toi-[13]/bang-chung/bien-dich/b[13]-lifecycle-full-*/** -text
+/bot-cua-toi-[13]/bang-chung/bien-dich/b[13]-lifecycle-negative-*/** -text
+/bot-cua-toi-[13]/bang-chung/bien-dich/b[13]-panel-cell-*/** -text
+/bot-cua-toi-[13]/bang-chung/bien-dich/b[13]-inputs-check-*/** -text
+/bot-cua-toi-[13]/bang-chung/bien-dich/b[13]-inputs-menu-check-*/** -text
+/danh-gia-doc-lap/lifecycle-full-20261028-r1/** -text
+/danh-gia-doc-lap/input-settings-20261028-r2/** -text
+/danh-gia-doc-lap/panel-cell-20261028-r1/** -text
 

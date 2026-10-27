@@ -1,0 +1,108 @@
+{
+  "sources_sha256": {
+    "Scripts/bot-cua-toi-3/Bot3InputsCheck.mq5": "598a829880aacc6379aa3f9212705d3b9fc10670585476db1a8aefcc04972970",
+    "Include/bot-cua-toi-3/Bot3Inputs.mqh": "be6acb3c841927ebbcfc7c1e945cbe4ecfcaff24654c7638d642a3b4e528c085"
+  },
+  "evidence_sha256": {
+    "menu-bot-1-3/luot-20261023-r1/verified-menu.json": "79b637f7e3c32551032a85f33f681eb043828c31c27a2026e535fbbf5c4d443c",
+    "bot-cua-toi-3/phan-tich/cai-dat-20261023/cai-dat-da-kiem.json": "88c3bd053a29e1cc41878eb8a67e54739ec54129ea88457c2e67a112eaa1118a",
+    "menu-bot-1-3/luot-20261023-r1/bot3-defaults.set": "1420aa90a3505b052df42b6f048e287113cac6415aff4d2a5fe9fa3d6175db28",
+    "menu-bot-1-3/luot-20261023-r1/bot3-frequency-0.set": "80fb8f2683be802be039c554261aabce9eac04aba7349a4b72239cb5c2699665",
+    "menu-bot-1-3/luot-20261023-r1/bot3-frequency-1.set": "5435acf60a15f8ea0f142f09ccee984f21623f1a745f4953ed70fe5ab3bf76c2",
+    "menu-bot-1-3/luot-20261023-r1/bot3-frequency-2.set": "9e1b3d115113092a99b9565cad5824fbe197f86fe8ac5da547107b83e18c775e",
+    "menu-bot-1-3/luot-20261023-r1/bot3-frequency-3.set": "2665821c87d1687de8e6c94636a8c4cd0977dc2474e904908a9b1d1149bc1016",
+    "menu-bot-1-3/luot-20261023-r1/bot3-frequency-4.set": "0087f37e39d65edaff95da79f20ec099940be864f8a5b4326f24c4b74f7efdce",
+    "menu-bot-1-3/luot-20261023-r1/bot3-frequency-6.set": "f4945e0514d3f4216deb7da4814aa88e2149176dc797c568826b89acfffe4ba4",
+    "menu-bot-1-3/luot-20261023-r1/bot3-options-a.set": "42d377961eecb1ac3b433de7aa8fa8c2fc119e7ef45fd6e25daeef3d30d90364",
+    "menu-bot-1-3/luot-20261023-r1/bot3-options-b.set": "c6c0daa55699cbfee1a7908db247ed1ad0fc74865e917c84936c7d5159043a67",
+    "menu-bot-1-3/luot-20261023-r1/bot3-options-c.set": "da4f1ae0ff88fcd333468fe89e3a81c745f5e8d2533bfa620f887498c292bdec"
+  },
+  "helpers_sha256": {
+    "cong-cu/kiem-gia-tri-cai-dat-bot-1-3.py": "c8585958b38a36a4d0d193b1d61c85cf55db92bd6f45e457278a338339cebe7f",
+    "cong-cu/tao-khai-bao-cai-dat-bot-1-3.py": "30162082dc37cc9150c692ed27da6afcf845b50aaa6eb74c6ce216f66b7ff4b5"
+  },
+  "build": "b3-inputs-check-20261028-r4",
+  "runs": [
+    {
+      "preset": "bot3-defaults.set",
+      "sha256": "1b5c29e3e755a46806a5bcb52eac571028b74577951bf837dbe96bdd877171cd",
+      "file": "0-values.bin",
+      "values": 80,
+      "exit_code": 0,
+      "binary_sha256": "12831a07cf4d7a1a972d98e7c5d482810014a42666ba448610639d7ac37bd350"
+    },
+    {
+      "preset": "bot3-frequency-0.set",
+      "sha256": "4c5b90dc777ae28fca5d8dc506050c1ab24a8aa63e9545b35b6a257f4aa2c447",
+      "file": "1-values.bin",
+      "values": 80,
+      "exit_code": 0,
+      "binary_sha256": "12831a07cf4d7a1a972d98e7c5d482810014a42666ba448610639d7ac37bd350"
+    },
+    {
+      "preset": "bot3-frequency-1.set",
+      "sha256": "806ad2c546a8cfdc103061a445b411ace3f78d7ca013e969e8d3fd2c996db43b",
+      "file": "2-values.bin",
+      "values": 80,
+      "exit_code": 0,
+      "binary_sha256": "12831a07cf4d7a1a972d98e7c5d482810014a42666ba448610639d7ac37bd350"
+    },
+    {
+      "preset": "bot3-frequency-2.set",
+      "sha256": "95a553512a3fec9caf6343ab42606492c91443485ead04b32e85fdf145c5abe6",
+      "file": "3-values.bin",
+      "values": 80,
+      "exit_code": 0,
+      "binary_sha256": "12831a07cf4d7a1a972d98e7c5d482810014a42666ba448610639d7ac37bd350"
+    },
+    {
+      "preset": "bot3-frequency-3.set",
+      "sha256": "c0bd31ac278595d6386b057918b7911bc551310aaf84640da12297a28dd05e46",
+      "file": "4-values.bin",
+      "values": 80,
+      "exit_code": 0,
+      "binary_sha256": "12831a07cf4d7a1a972d98e7c5d482810014a42666ba448610639d7ac37bd350"
+    },
+    {
+      "preset": "bot3-frequency-4.set",
+      "sha256": "fe211b31c76661720d741b903e6495210e9026cb290b357dcf877498302c43b2",
+      "file": "5-values.bin",
+      "values": 80,
+      "exit_code": 0,
+      "binary_sha256": "12831a07cf4d7a1a972d98e7c5d482810014a42666ba448610639d7ac37bd350"
+    },
+    {
+      "preset": "bot3-frequency-6.set",
+      "sha256": "ee4e6c0eb9dedc5a832aa8ed375efe57e5cdb007bee6a0ab5633c951a1ba5efc",
+      "file": "6-values.bin",
+      "values": 80,
+      "exit_code": 0,
+      "binary_sha256": "12831a07cf4d7a1a972d98e7c5d482810014a42666ba448610639d7ac37bd350"
+    },
+    {
+      "preset": "bot3-options-a.set",
+      "sha256": "03fa07aff277d974bce21338a9ef9bf3855f0f2ceea3fe7080ec65b9424c05d8",
+      "file": "7-values.bin",
+      "values": 80,
+      "exit_code": 0,
+      "binary_sha256": "12831a07cf4d7a1a972d98e7c5d482810014a42666ba448610639d7ac37bd350"
+    },
+    {
+      "preset": "bot3-options-b.set",
+      "sha256": "acd67a3994bcfb7f47ba147fb13a2a8785ec83576a68579f4bd237f8ba26bb14",
+      "file": "8-values.bin",
+      "values": 80,
+      "exit_code": 0,
+      "binary_sha256": "12831a07cf4d7a1a972d98e7c5d482810014a42666ba448610639d7ac37bd350"
+    },
+    {
+      "preset": "bot3-options-c.set",
+      "sha256": "248df851e7896a212f5119bdc4cc4b47b6b4e9bff83f24483cf829398cc2cffd",
+      "file": "9-values.bin",
+      "values": 80,
+      "exit_code": 0,
+      "binary_sha256": "12831a07cf4d7a1a972d98e7c5d482810014a42666ba448610639d7ac37bd350"
+    }
+  ],
+  "whole_bot_complete": false
+}

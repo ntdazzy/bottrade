@@ -1,0 +1,16 @@
+{
+  "cases": 62,
+  "matched": 62,
+  "failed": 0,
+  "whole_bot_complete": false,
+  "whole_manager_complete": false,
+  "full_ea": false,
+  "native_deinitialization_body_executed": true,
+  "child_helpers_intercepted": false,
+  "terminal_replies_supplied": true,
+  "rendered_chart_verified": false,
+  "original_ex5_changed": false,
+  "limits": [
+    "Exact-byte flags, int32 handles, live mutations, error state and ordered SDK calls. Successful allocations; initialization, real chart rendering and full paired EA runs remain unverified."
+  ]
+}

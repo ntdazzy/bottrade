@@ -1,0 +1,29 @@
+#ifndef BOT3_INPUT_NEWS_MAPPING_MQH
+#define BOT3_INPUT_NEWS_MAPPING_MQH
+#include "Bot3Inputs.mqh"
+#include "Bot3NfpFilter.mqh"
+#include "Bot3ReleaseFilters.mqh"
+
+// Direct field mapping confirmed by the input-address table. Unknown lifecycle
+// and Friday/spread fields stay outside this bridge until their callers are checked.
+void Bot3MapNewsInputs(const uchar throttle,Bot3NfpFilterSettings &nfp,Bot3ReleaseFilterSettings &interest,Bot3ReleaseFilterSettings &cpi)
+{
+   nfp.enabled=(uchar)EnableNFP_Filter;
+   nfp.use_calendar=(uchar)UseMQL5Calendar;
+   nfp.throttle=throttle;
+   nfp.delete_pending=(uchar)NFP_ClosePendingOrders;
+   nfp.close_positions=(uchar)NFP_CloseOpenTrades;
+   nfp.before_minutes=NFP_MinutesBefore;
+   nfp.after_minutes=NFP_MinutesAfter;
+   interest.enabled=(uchar)EnableIR_Filter;
+   interest.delete_pending=(uchar)IR_ClosePendingOrders;
+   interest.close_positions=(uchar)IR_CloseOpenTrades;
+   interest.before_minutes=IR_MinutesBefore;
+   interest.after_minutes=IR_MinutesAfter;
+   cpi.enabled=(uchar)EnableCPI_Filter;
+   cpi.delete_pending=(uchar)CPI_ClosePendingOrders;
+   cpi.close_positions=(uchar)CPI_CloseOpenTrades;
+   cpi.before_minutes=CPI_MinutesBefore;
+   cpi.after_minutes=CPI_MinutesAfter;
+}
+#endif

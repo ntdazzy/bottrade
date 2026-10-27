@@ -1,0 +1,18 @@
+{
+  "old_ref": "b9c7f77b5cec3a91d882d43d7d05a9fd296c5133",
+  "case": {
+    "id": 0,
+    "tag": "old-bool-rejection",
+    "flag": 2,
+    "indicator": 42,
+    "errors": 0,
+    "effects": []
+  },
+  "source_sha256": "d4927c8c17871ed8aab8c46ff798b1490c8785ce68451254ca7829412b40c94b",
+  "binary_sha256": "2635f3690cc2a57743d9148e066cfa5179726a6e4682217464c9a35b7e36286f",
+  "receipt_sha256": "2ecdf66c08dd2db75d9096e150cbc3d919affbda6e15938aad9b85c3fe18dce6",
+  "measured_sha256": "ac296c9680c64c2e9e3985ac21a5924d91eccfdd6dbe7a49746a30c8952fc1a4",
+  "native_body_sha256": "23474cc8839a9d85146e838efdbbaa603edc25ffd5c8c0bfa393a24e8f85d31a",
+  "expected_mismatch": "SDK_ORDER (0, 3049, 2, 3)",
+  "old_source_rejected": true
+}

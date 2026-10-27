@@ -1,0 +1,27 @@
+{
+  "sources_sha256": {
+    "Scripts/bot-cua-toi-1/Bot1InputsCheck.mq5": "aba8ca6cd5c9994255f6af06d100b1991d1ed674f9302dec8f99ea7486c77cbb",
+    "Include/bot-cua-toi-1/Bot1Inputs.mqh": "1b4e0f1432a8de6471f7c790a733d6e585184d5c69b0bcfae806ecb59bbe6bf5"
+  },
+  "evidence_sha256": {
+    "menu-bot-1-3/luot-20261023-r1/verified-menu.json": "79b637f7e3c32551032a85f33f681eb043828c31c27a2026e535fbbf5c4d443c",
+    "bot-cua-toi-1/phan-tich/cai-dat-20261023/cai-dat-da-kiem.json": "2e45d5137667f3ba052ac380ab33c7fb9407de20b35f8f6f94f5143e97890bae",
+    "menu-bot-1-3/luot-20261023-r1/bot1-defaults.set": "b53870bd700b6580bbab055f82a113e8027bf1670597c38709bc76b57270bc60",
+    "menu-bot-1-3/luot-20261023-r1/bot1-options-a.set": "5dd212612bd3a60aed7473bea6257959e2ace29bae3395be2b8bd469d963d129",
+    "menu-bot-1-3/luot-20261023-r1/bot1-options-b.set": "e4498c3706c9284adb19f37d40341f46d8d014c6f41a2d8a2f4bd8b891544154",
+    "menu-bot-1-3/luot-20261023-r1/bot1-options-c.set": "e76f5239acbd83291460bd2185c15ec9b6448c504dc7aa1644adeffec2dfdc2b"
+  },
+  "helpers_sha256": {
+    "cong-cu/kiem-gia-tri-cai-dat-bot-1-3.py": "c8585958b38a36a4d0d193b1d61c85cf55db92bd6f45e457278a338339cebe7f",
+    "cong-cu/tao-khai-bao-cai-dat-bot-1-3.py": "30162082dc37cc9150c692ed27da6afcf845b50aaa6eb74c6ce216f66b7ff4b5"
+  },
+  "build": "b1-inputs-check-20261028-r4",
+  "build_receipt_sha256": "69eea10259e1cb5b76d1ea0d2d2266763baa2f5484ed4dfb4a379e315b8026b6",
+  "presets": [
+    "bot1-defaults.set",
+    "bot1-options-a.set",
+    "bot1-options-b.set",
+    "bot1-options-c.set"
+  ],
+  "whole_bot_complete": false
+}

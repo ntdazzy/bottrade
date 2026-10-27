@@ -1,0 +1,71 @@
+#property strict
+input string CheckRun="";
+bool MockDelete(const long chart,const string name);
+string MockIntegerText(const long value,const int width=0,const ushort fill=' ');
+bool MockRelease(const int handle);
+int MockDeleteAll(const long chart,const int window=-1,const int type=-1);
+#define ObjectDelete MockDelete
+#define IntegerToString MockIntegerText
+#define IndicatorRelease MockRelease
+#define ObjectsDeleteAll MockDeleteAll
+#include "../../Include/bot-cua-toi-1/Bot1Lifecycle.mqh"
+#undef ObjectDelete
+#undef IntegerToString
+#undef IndicatorRelease
+#undef ObjectsDeleteAll
+uchar Flag;int Indicator,TapeFile,Calls,ErrorMode;uint LogicalError;
+struct Effect { int after,flag,set_indicator,indicator; };Effect Effects[];
+void Text(const string value)
+{
+   if(value==NULL) { FileWriteInteger(TapeFile,-1);return; }
+   int n=StringLen(value);FileWriteInteger(TapeFile,n);
+   if(n>0) FileWriteString(TapeFile,value,n);
+}
+void Snapshot()
+{ FileWriteLong(TapeFile,(long)Flag);FileWriteLong(TapeFile,(long)Indicator);FileWriteLong(TapeFile,(long)LogicalError); }
+void Record(const int api,const ulong a,const ulong b,const ulong c,const ulong d,const string text,const ulong reply)
+{
+   Snapshot();FileWriteInteger(TapeFile,api);FileWriteLong(TapeFile,(long)a);FileWriteLong(TapeFile,(long)b);
+   FileWriteLong(TapeFile,(long)c);FileWriteLong(TapeFile,(long)d);Text(text);FileWriteLong(TapeFile,(long)reply);
+   Calls++;if(ErrorMode!=0) LogicalError=(uint)(7000+Calls);FileWriteInteger(TapeFile,(int)LogicalError);
+   for(int i=0;i<ArraySize(Effects);i++) if(Effects[i].after==Calls)
+   {
+      if(Effects[i].flag>=0) Flag=(uchar)Effects[i].flag;
+      if(Effects[i].set_indicator!=0) Indicator=Effects[i].indicator;
+   }
+}
+bool MockDelete(const long chart,const string name)
+{ bool reply=Calls%2==0;Record(1,(ulong)chart,0,0,0,name,(ulong)reply);return reply; }
+string MockIntegerText(const long value,const int width,const ushort fill)
+{ string reply=IntegerToString(value,width,fill);Record(2,(ulong)value,(ulong)(uint)width,(ulong)fill,0,reply,0);return reply; }
+bool MockRelease(const int handle)
+{ bool reply=Calls%2!=0;Record(3,(ulong)(uint)handle,0,0,0,NULL,(ulong)reply);return reply; }
+int MockDeleteAll(const long chart,const int window,const int type)
+{ int reply=-1;Record(4,(ulong)chart,(ulong)(uint)window,(ulong)(uint)type,0,NULL,(ulong)(long)reply);return reply; }
+int OnStart()
+{
+   if(CheckRun=="") return 1;string folder="bot1-lifecycle-full\\"+CheckRun+"\\";
+   int input_file=FileOpen(folder+"cases.bin",FILE_READ|FILE_BIN);if(input_file==INVALID_HANDLE) return 2;
+   int magic=FileReadInteger(input_file),version=FileReadInteger(input_file),count=FileReadInteger(input_file);
+   if(magic!=0x4c594332 || version!=1 || count<1) return 3;
+   int output=FileOpen(folder+"mql5-results.bin",FILE_WRITE|FILE_BIN);if(output==INVALID_HANDLE) return 4;
+   FileWriteInteger(output,magic);FileWriteInteger(output,version);FileWriteInteger(output,count);
+   for(int row=0;row<count;row++)
+   {
+      int id=FileReadInteger(input_file);Flag=(uchar)FileReadInteger(input_file);Indicator=FileReadInteger(input_file);
+      ErrorMode=FileReadInteger(input_file);int n=FileReadInteger(input_file);ArrayResize(Effects,n);
+      for(int i=0;i<n;i++)
+      { Effects[i].after=FileReadInteger(input_file);Effects[i].flag=FileReadInteger(input_file);
+        Effects[i].set_indicator=FileReadInteger(input_file);Effects[i].indicator=FileReadInteger(input_file); }
+      LogicalError=0;Calls=0;string name=folder+"events-"+IntegerToString(id)+".bin";
+      TapeFile=FileOpen(name,FILE_WRITE|FILE_BIN);if(TapeFile==INVALID_HANDLE) return 5;
+      Bot1DeinitializePanel(Flag,Indicator);Snapshot();FileClose(TapeFile);
+      int event_file=FileOpen(name,FILE_READ|FILE_BIN);if(event_file==INVALID_HANDLE) return 6;
+      int size=(int)FileSize(event_file);uchar bytes[];ArrayResize(bytes,size);
+      if(size>0) FileReadArray(event_file,bytes,0,size);FileClose(event_file);
+      FileWriteInteger(output,id);FileWriteInteger(output,size);if(size>0) FileWriteArray(output,bytes,0,size);
+   }
+   FileClose(input_file);FileClose(output);
+   int status=FileOpen(folder+"script-status.bin",FILE_WRITE|FILE_BIN);if(status==INVALID_HANDLE) return 7;
+   FileWriteInteger(status,0);FileWriteInteger(status,count);FileClose(status);return 0;
+}

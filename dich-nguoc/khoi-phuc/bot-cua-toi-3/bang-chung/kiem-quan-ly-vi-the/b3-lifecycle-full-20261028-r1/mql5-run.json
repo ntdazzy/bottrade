@@ -1,0 +1,29 @@
+{
+  "original_ex5_sha256": "ee063d3d87490afe24e2f4ce85f6b05659320e297b102efd70207f71ca2feb83",
+  "native_body_sha256": "23474cc8839a9d85146e838efdbbaa603edc25ffd5c8c0bfa393a24e8f85d31a",
+  "sources_sha256": {
+    "Scripts/bot-cua-toi-3/Bot3LifecycleFullCheck.mq5": "8fa1700604b116ae0f86dcdefd1c51b8014cd1337c329e7cba8634e64201aec9",
+    "Include/bot-cua-toi-3/Bot3Lifecycle.mqh": "3a39e2d416f3fe654a9a6f7d605f9e946afc08012c0f2cdf77f4d48ceca14247"
+  },
+  "helpers_sha256": {
+    "cong-cu/kiem-vong-doi-day-du-bot-1-3.py": "fc3066ab8051d6acb673c03533e3eca2db75eccb9f3fb1d6c34d060739926a7b",
+    "cong-cu/kiem-bang-thong-tin-lich-su-bot-1-3.py": "39d3cfd2d70045f8cae98735ce40bef8d4743f559052c0b78aa9ada8ec848155",
+    "cong-cu/kiem-gia-vao-bot-1-3.py": "22394e48932feb7242b967aa58e327d2990402f12bfe52621916f64914c9dac2",
+    "cong-cu/kiem-muc-gia-bot-1-3.py": "a6c447ca80029fb63ced0c9d1673bb14222a7736b04df5c410f280f8471d6a35",
+    "cong-cu/kiem-ban-git-quan-ly.py": "7186478774b34e0d72b4594fbcc85972d9b4c07ed02160987d46d34f39dcb160",
+    "cong-cu/kiem-khoi-luong-hop-le-bot-1-3.py": "8251fb4423d6f5f2e1b79a1c53dbb25fb5a6c568bb61cddef23396dc982243f0",
+    "cong-cu/bien-dich.ps1": "184e940a6cc3d5420bd73be14b49766457f3b0ebb4ef5844ca8614b63824c838"
+  },
+  "cases": 62,
+  "build": "b3-lifecycle-full-check-20261028-r1",
+  "build_receipt_sha256": "97790c8ba85807173fb180dedd8b86999fbcf93f61fb0518541c9dd9118e22bd",
+  "result_sha256": "9129d1cac560457d3ec6e03c14efa7cbb15dd34e7fb654b7a9c096a615504c93",
+  "whole_bot_complete": false,
+  "whole_manager_complete": false,
+  "full_ea": false,
+  "native_deinitialization_body_executed": true,
+  "child_helpers_intercepted": false,
+  "terminal_replies_supplied": true,
+  "rendered_chart_verified": false,
+  "original_ex5_changed": false
+}

@@ -1,0 +1,3 @@
+#property strict
+#include "../../Include/bot-cua-toi-1/Bot1InputNewsMapping.mqh"
+void OnStart() { Bot1NfpFilterSettings n; Bot1ReleaseFilterSettings i,c; Bot1MapNewsInputs((uchar)0,n,i,c); }

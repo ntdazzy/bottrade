@@ -1,0 +1,652 @@
+[
+  {
+    "id": 0,
+    "tag": "exact-byte-and-int32-handle",
+    "flag": 0,
+    "indicator": -2147483648,
+    "errors": 0,
+    "effects": []
+  },
+  {
+    "id": 1,
+    "tag": "exact-byte-and-int32-handle",
+    "flag": 0,
+    "indicator": -2147483648,
+    "errors": 1,
+    "effects": []
+  },
+  {
+    "id": 2,
+    "tag": "exact-byte-and-int32-handle",
+    "flag": 0,
+    "indicator": -1,
+    "errors": 0,
+    "effects": []
+  },
+  {
+    "id": 3,
+    "tag": "exact-byte-and-int32-handle",
+    "flag": 0,
+    "indicator": -1,
+    "errors": 1,
+    "effects": []
+  },
+  {
+    "id": 4,
+    "tag": "exact-byte-and-int32-handle",
+    "flag": 0,
+    "indicator": 0,
+    "errors": 0,
+    "effects": []
+  },
+  {
+    "id": 5,
+    "tag": "exact-byte-and-int32-handle",
+    "flag": 0,
+    "indicator": 0,
+    "errors": 1,
+    "effects": []
+  },
+  {
+    "id": 6,
+    "tag": "exact-byte-and-int32-handle",
+    "flag": 0,
+    "indicator": 42,
+    "errors": 0,
+    "effects": []
+  },
+  {
+    "id": 7,
+    "tag": "exact-byte-and-int32-handle",
+    "flag": 0,
+    "indicator": 42,
+    "errors": 1,
+    "effects": []
+  },
+  {
+    "id": 8,
+    "tag": "exact-byte-and-int32-handle",
+    "flag": 0,
+    "indicator": 2147483647,
+    "errors": 0,
+    "effects": []
+  },
+  {
+    "id": 9,
+    "tag": "exact-byte-and-int32-handle",
+    "flag": 0,
+    "indicator": 2147483647,
+    "errors": 1,
+    "effects": []
+  },
+  {
+    "id": 10,
+    "tag": "exact-byte-and-int32-handle",
+    "flag": 1,
+    "indicator": -2147483648,
+    "errors": 0,
+    "effects": []
+  },
+  {
+    "id": 11,
+    "tag": "exact-byte-and-int32-handle",
+    "flag": 1,
+    "indicator": -2147483648,
+    "errors": 1,
+    "effects": []
+  },
+  {
+    "id": 12,
+    "tag": "exact-byte-and-int32-handle",
+    "flag": 1,
+    "indicator": -1,
+    "errors": 0,
+    "effects": []
+  },
+  {
+    "id": 13,
+    "tag": "exact-byte-and-int32-handle",
+    "flag": 1,
+    "indicator": -1,
+    "errors": 1,
+    "effects": []
+  },
+  {
+    "id": 14,
+    "tag": "exact-byte-and-int32-handle",
+    "flag": 1,
+    "indicator": 0,
+    "errors": 0,
+    "effects": []
+  },
+  {
+    "id": 15,
+    "tag": "exact-byte-and-int32-handle",
+    "flag": 1,
+    "indicator": 0,
+    "errors": 1,
+    "effects": []
+  },
+  {
+    "id": 16,
+    "tag": "exact-byte-and-int32-handle",
+    "flag": 1,
+    "indicator": 42,
+    "errors": 0,
+    "effects": []
+  },
+  {
+    "id": 17,
+    "tag": "exact-byte-and-int32-handle",
+    "flag": 1,
+    "indicator": 42,
+    "errors": 1,
+    "effects": []
+  },
+  {
+    "id": 18,
+    "tag": "exact-byte-and-int32-handle",
+    "flag": 1,
+    "indicator": 2147483647,
+    "errors": 0,
+    "effects": []
+  },
+  {
+    "id": 19,
+    "tag": "exact-byte-and-int32-handle",
+    "flag": 1,
+    "indicator": 2147483647,
+    "errors": 1,
+    "effects": []
+  },
+  {
+    "id": 20,
+    "tag": "exact-byte-and-int32-handle",
+    "flag": 2,
+    "indicator": -2147483648,
+    "errors": 0,
+    "effects": []
+  },
+  {
+    "id": 21,
+    "tag": "exact-byte-and-int32-handle",
+    "flag": 2,
+    "indicator": -2147483648,
+    "errors": 1,
+    "effects": []
+  },
+  {
+    "id": 22,
+    "tag": "exact-byte-and-int32-handle",
+    "flag": 2,
+    "indicator": -1,
+    "errors": 0,
+    "effects": []
+  },
+  {
+    "id": 23,
+    "tag": "exact-byte-and-int32-handle",
+    "flag": 2,
+    "indicator": -1,
+    "errors": 1,
+    "effects": []
+  },
+  {
+    "id": 24,
+    "tag": "exact-byte-and-int32-handle",
+    "flag": 2,
+    "indicator": 0,
+    "errors": 0,
+    "effects": []
+  },
+  {
+    "id": 25,
+    "tag": "exact-byte-and-int32-handle",
+    "flag": 2,
+    "indicator": 0,
+    "errors": 1,
+    "effects": []
+  },
+  {
+    "id": 26,
+    "tag": "exact-byte-and-int32-handle",
+    "flag": 2,
+    "indicator": 42,
+    "errors": 0,
+    "effects": []
+  },
+  {
+    "id": 27,
+    "tag": "exact-byte-and-int32-handle",
+    "flag": 2,
+    "indicator": 42,
+    "errors": 1,
+    "effects": []
+  },
+  {
+    "id": 28,
+    "tag": "exact-byte-and-int32-handle",
+    "flag": 2,
+    "indicator": 2147483647,
+    "errors": 0,
+    "effects": []
+  },
+  {
+    "id": 29,
+    "tag": "exact-byte-and-int32-handle",
+    "flag": 2,
+    "indicator": 2147483647,
+    "errors": 1,
+    "effects": []
+  },
+  {
+    "id": 30,
+    "tag": "exact-byte-and-int32-handle",
+    "flag": 255,
+    "indicator": -2147483648,
+    "errors": 0,
+    "effects": []
+  },
+  {
+    "id": 31,
+    "tag": "exact-byte-and-int32-handle",
+    "flag": 255,
+    "indicator": -2147483648,
+    "errors": 1,
+    "effects": []
+  },
+  {
+    "id": 32,
+    "tag": "exact-byte-and-int32-handle",
+    "flag": 255,
+    "indicator": -1,
+    "errors": 0,
+    "effects": []
+  },
+  {
+    "id": 33,
+    "tag": "exact-byte-and-int32-handle",
+    "flag": 255,
+    "indicator": -1,
+    "errors": 1,
+    "effects": []
+  },
+  {
+    "id": 34,
+    "tag": "exact-byte-and-int32-handle",
+    "flag": 255,
+    "indicator": 0,
+    "errors": 0,
+    "effects": []
+  },
+  {
+    "id": 35,
+    "tag": "exact-byte-and-int32-handle",
+    "flag": 255,
+    "indicator": 0,
+    "errors": 1,
+    "effects": []
+  },
+  {
+    "id": 36,
+    "tag": "exact-byte-and-int32-handle",
+    "flag": 255,
+    "indicator": 42,
+    "errors": 0,
+    "effects": []
+  },
+  {
+    "id": 37,
+    "tag": "exact-byte-and-int32-handle",
+    "flag": 255,
+    "indicator": 42,
+    "errors": 1,
+    "effects": []
+  },
+  {
+    "id": 38,
+    "tag": "exact-byte-and-int32-handle",
+    "flag": 255,
+    "indicator": 2147483647,
+    "errors": 0,
+    "effects": []
+  },
+  {
+    "id": 39,
+    "tag": "exact-byte-and-int32-handle",
+    "flag": 255,
+    "indicator": 2147483647,
+    "errors": 1,
+    "effects": []
+  },
+  {
+    "id": 40,
+    "tag": "live-flag-disable",
+    "flag": 1,
+    "indicator": 42,
+    "errors": 1,
+    "effects": [
+      [
+        1,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "id": 41,
+    "tag": "live-flag-disable",
+    "flag": 1,
+    "indicator": 42,
+    "errors": 1,
+    "effects": [
+      [
+        1,
+        2,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "id": 42,
+    "tag": "live-flag-disable",
+    "flag": 1,
+    "indicator": 42,
+    "errors": 1,
+    "effects": [
+      [
+        1,
+        255,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "id": 43,
+    "tag": "live-flag-disable",
+    "flag": 1,
+    "indicator": 42,
+    "errors": 1,
+    "effects": [
+      [
+        3049,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "id": 44,
+    "tag": "live-flag-disable",
+    "flag": 1,
+    "indicator": 42,
+    "errors": 1,
+    "effects": [
+      [
+        3049,
+        2,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "id": 45,
+    "tag": "live-flag-disable",
+    "flag": 1,
+    "indicator": 42,
+    "errors": 1,
+    "effects": [
+      [
+        3049,
+        255,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "id": 46,
+    "tag": "live-flag-disable",
+    "flag": 1,
+    "indicator": 42,
+    "errors": 1,
+    "effects": [
+      [
+        3051,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "id": 47,
+    "tag": "live-flag-disable",
+    "flag": 1,
+    "indicator": 42,
+    "errors": 1,
+    "effects": [
+      [
+        3051,
+        2,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "id": 48,
+    "tag": "live-flag-disable",
+    "flag": 1,
+    "indicator": 42,
+    "errors": 1,
+    "effects": [
+      [
+        3051,
+        255,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "id": 49,
+    "tag": "live-flag-disable",
+    "flag": 1,
+    "indicator": 42,
+    "errors": 1,
+    "effects": [
+      [
+        3053,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "id": 50,
+    "tag": "live-flag-disable",
+    "flag": 1,
+    "indicator": 42,
+    "errors": 1,
+    "effects": [
+      [
+        3053,
+        2,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "id": 51,
+    "tag": "live-flag-disable",
+    "flag": 1,
+    "indicator": 42,
+    "errors": 1,
+    "effects": [
+      [
+        3053,
+        255,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "id": 52,
+    "tag": "live-flag-disable",
+    "flag": 1,
+    "indicator": 42,
+    "errors": 1,
+    "effects": [
+      [
+        4241,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "id": 53,
+    "tag": "live-flag-disable",
+    "flag": 1,
+    "indicator": 42,
+    "errors": 1,
+    "effects": [
+      [
+        4241,
+        2,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "id": 54,
+    "tag": "live-flag-disable",
+    "flag": 1,
+    "indicator": 42,
+    "errors": 1,
+    "effects": [
+      [
+        4241,
+        255,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "id": 55,
+    "tag": "live-flag-enable",
+    "flag": 0,
+    "indicator": -1,
+    "errors": 1,
+    "effects": [
+      [
+        1,
+        1,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "id": 56,
+    "tag": "live-flag-enable",
+    "flag": 2,
+    "indicator": -1,
+    "errors": 1,
+    "effects": [
+      [
+        1,
+        1,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "id": 57,
+    "tag": "live-flag-enable",
+    "flag": 255,
+    "indicator": -1,
+    "errors": 1,
+    "effects": [
+      [
+        1,
+        1,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "id": 58,
+    "tag": "live-handle-before-release",
+    "flag": 0,
+    "indicator": -1,
+    "errors": 1,
+    "effects": [
+      [
+        3049,
+        -1,
+        1,
+        42
+      ]
+    ]
+  },
+  {
+    "id": 59,
+    "tag": "live-handle-before-release",
+    "flag": 0,
+    "indicator": 42,
+    "errors": 1,
+    "effects": [
+      [
+        3049,
+        -1,
+        1,
+        -1
+      ]
+    ]
+  },
+  {
+    "id": 60,
+    "tag": "live-handle-before-release",
+    "flag": 0,
+    "indicator": 42,
+    "errors": 1,
+    "effects": [
+      [
+        3049,
+        -1,
+        1,
+        -2147483648
+      ]
+    ]
+  },
+  {
+    "id": 61,
+    "tag": "write-minus-one-after-release",
+    "flag": 0,
+    "indicator": 42,
+    "errors": 1,
+    "effects": [
+      [
+        3050,
+        -1,
+        1,
+        99
+      ]
+    ]
+  }
+]

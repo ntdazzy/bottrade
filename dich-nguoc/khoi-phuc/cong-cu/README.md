@@ -1,3 +1,8 @@
+- `kiem-vong-doi-day-du-bot-1-3.py generate BOT | prepare|mql5|original|compare BOT RUN`: kiểm mới62ca mỗi bot, cờ byte đúng1/đổi giữa dịch vụ/số chỉ báo32bit/mã lỗi. `mql5` cần `--build BUILD`. Công cụ cũ bốn ca được giữ cho bằng chứng lịch sử.
+- `tao-khai-bao-cai-dat-bot-1-3.py [--check]`: sinh đủ72/80đầu vào và7menu từ dữ liệu đã đọc, gồm dòng phân cách.
+- `kiem-gia-tri-cai-dat-bot-1-3.py run BOT RUN --build BUILD | compare BOT RUN`: nạp4/10bộ .set trong MT5riêng, so288/800giá trị; chưa so toàn hành viEA hoặc ảnh menu.
+- `kiem-o-bang-hien-thi-bot-1-3.py generate BOT | prepare|mql5|original|compare BOT RUN`: nguyên hàm ô chữ,172ca mỗi bot và5.160lời gọi, có trạng thái đổi trong dịch vụ. `mql5` cần `--build BUILD`. Còn toàn bảng/ảnh/EA.
+
 - `kiem-danh-gia-co-thong-ke-bot-1-3.py prepare|mql5|original|compare BOT RUN`:
   nối thân đánh giá đã kiểm với thống kê cuối và dọn bảng theo giờ; bot1
   61/61 ca, bot3 57/57 ca. `mql5` cần `--build BUILD`; khởi tạo/thoát, menu

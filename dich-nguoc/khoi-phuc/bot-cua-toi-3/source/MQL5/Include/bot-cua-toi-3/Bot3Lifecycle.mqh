@@ -2,7 +2,7 @@
 #define BOT3_LIFECYCLE_MQH
 
 // Native deinitialization order from RVA 0x2a800.
-void Bot3DeinitializePanel(const bool extended,int &indicator_handle)
+void Bot3DeinitializePanel(const uchar &extended,int &indicator_handle)
 {
    ObjectDelete(0,"line1");
    ObjectDelete(0,"linec");
@@ -27,11 +27,12 @@ void Bot3DeinitializePanel(const bool extended,int &indicator_handle)
       ObjectDelete(0,"tabel_heading"+IntegerToString(index));
       ObjectDelete(0,"tabel_totals"+IntegerToString(index));
    }
-   if(extended)
+   if(extended==1)
       for(int index=0;index<300;index++)
       {
          ObjectDelete(0,"horizontalrect"+IntegerToString(index));
          ObjectDelete(0,"info_ea"+IntegerToString(index));
+         if(extended!=1) break;
       }
    if(indicator_handle!=-1)
    {

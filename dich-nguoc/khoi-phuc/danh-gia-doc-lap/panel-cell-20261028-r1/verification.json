@@ -1,0 +1,91 @@
+{
+  "checks": [
+    {
+      "bot": 1,
+      "kind": "lifecycle",
+      "run": "b1-lifecycle-full-20261028-r1",
+      "cases": 62,
+      "matched": 62,
+      "failed": 0,
+      "sdk_calls": 208288,
+      "result_sha256": "43005aadbf915dccdf7ffc31a4f5d44f7ae4a25a50df75a61f1552aee20734e7",
+      "sources_sha256": {
+        "Include/bot-cua-toi-1/Bot1Lifecycle.mqh": "effc009578f13fc85e5e856f73f5b6593a7d6e3ec367b67a93f68e9d0af4d9b8",
+        "Scripts/bot-cua-toi-1/Bot1LifecycleFullCheck.mq5": "1168b179e72b4f411518f8f0ed9911dc4e6cbb5a48c7a78433d0e50a03e6ded5"
+      }
+    },
+    {
+      "bot": 1,
+      "kind": "panel",
+      "run": "b1-panel-cell-20261028-r2",
+      "cases": 172,
+      "matched": 172,
+      "failed": 0,
+      "sdk_calls": 5160,
+      "result_sha256": "b3cc5dfc73c641ad20e201df16fae43b4b73093d0b86bd02595b9be00d798cf6",
+      "sources_sha256": {
+        "Scripts/bot-cua-toi-1/Bot1PanelCellCheck.mq5": "6ddea52e5b96f2a4889c38c343d146dc6882bb4f165ca81ce0b095e7c9b80b5b",
+        "Include/bot-cua-toi-1/Bot1PanelCell.mqh": "419efdc3eefb3e23e69f190257752405c1185d8f14c9fc947fae50c9f99e4690"
+      }
+    },
+    {
+      "bot": 1,
+      "kind": "input-values",
+      "run": "b1-inputs-loaded-20261028-r6",
+      "presets": 4,
+      "values": 288,
+      "matched": 288,
+      "failed": 0
+    },
+    {
+      "bot": 3,
+      "kind": "lifecycle",
+      "run": "b3-lifecycle-full-20261028-r1",
+      "cases": 62,
+      "matched": 62,
+      "failed": 0,
+      "sdk_calls": 208350,
+      "result_sha256": "9129d1cac560457d3ec6e03c14efa7cbb15dd34e7fb654b7a9c096a615504c93",
+      "sources_sha256": {
+        "Scripts/bot-cua-toi-3/Bot3LifecycleFullCheck.mq5": "8fa1700604b116ae0f86dcdefd1c51b8014cd1337c329e7cba8634e64201aec9",
+        "Include/bot-cua-toi-3/Bot3Lifecycle.mqh": "3a39e2d416f3fe654a9a6f7d605f9e946afc08012c0f2cdf77f4d48ceca14247"
+      }
+    },
+    {
+      "bot": 3,
+      "kind": "panel",
+      "run": "b3-panel-cell-20261028-r2",
+      "cases": 172,
+      "matched": 172,
+      "failed": 0,
+      "sdk_calls": 5160,
+      "result_sha256": "a77774a1d51fdedfb8c68756708bc8759276ac18fcf8b5f6169a4b6f0f155b50",
+      "sources_sha256": {
+        "Include/bot-cua-toi-3/Bot3PanelCell.mqh": "9bc1a7f9447246e257f62a00d7f6badff4b6b0ee8ba0657d8d5d1da612892ac6",
+        "Scripts/bot-cua-toi-3/Bot3PanelCellCheck.mq5": "5404fd986533d0d1c3fab982c09d9e8c94a8e9c5f172a5869d66e15268e93f89"
+      }
+    },
+    {
+      "bot": 3,
+      "kind": "input-values",
+      "run": "b3-inputs-loaded-20261028-r6",
+      "presets": 10,
+      "values": 800,
+      "matched": 800,
+      "failed": 0
+    }
+  ],
+  "all_headers_compilation": {
+    "1": 86,
+    "3": 93
+  },
+  "whole_eas_complete": 0,
+  "original_ex5_changed": false,
+  "review": "Independent review: enum-display allegation retracted against official MQL5 docs; no remaining concrete finding in this scoped change.",
+  "limitations": [
+    "Full initialization and outer dispatcher still missing",
+    "Complete panel rendering and exact hidden menu labels unverified",
+    "No paired complete EA run",
+    "Claude returned subscription-access-disabled; no Claude implementation or review"
+  ]
+}

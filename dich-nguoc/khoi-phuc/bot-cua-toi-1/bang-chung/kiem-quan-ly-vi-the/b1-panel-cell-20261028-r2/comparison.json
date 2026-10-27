@@ -1,0 +1,16 @@
+{
+  "cases": 172,
+  "matched": 172,
+  "failed": 0,
+  "whole_bot_complete": false,
+  "whole_manager_complete": false,
+  "full_ea": false,
+  "native_panel_cell_executed": true,
+  "child_helpers_intercepted": false,
+  "terminal_replies_supplied": true,
+  "rendered_chart_verified": false,
+  "original_ex5_changed": false,
+  "limits": [
+    "Full native cell helper, 15 name conversions and 15 ordered object calls with live fields and terminal errors. Successful allocations and supplied SDK replies; no rendered chart or complete panel/EA."
+  ]
+}

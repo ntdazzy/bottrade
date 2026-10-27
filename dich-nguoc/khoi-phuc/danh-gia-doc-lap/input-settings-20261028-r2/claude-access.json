@@ -1,0 +1,13 @@
+{
+  "requested_model": "claude-opus-5-5",
+  "requested_effort": "max",
+  "ultracode_requested": true,
+  "request_source": "claude-thuc-hien/input-menu-20261028-r2/TASK.md",
+  "response_sha256": "2a8c3aa3797b7535c8fd58c64dc0373273c2662312988a1fdf080e76befeb144",
+  "is_error": true,
+  "result": "Your organization has disabled Claude subscription access for Claude Code · Use an Anthropic API key instead, or ask your admin to enable access",
+  "actual_model_used": null,
+  "input_tokens": 0,
+  "output_tokens": 0,
+  "codex_continued_under_existing_authorization": true
+}

@@ -1,0 +1,30 @@
+[
+  {
+    "bot": 1,
+    "errors": 0,
+    "warnings": 0,
+    "exact_files": 83,
+    "newline_only_equivalent_files": [
+      "dich-nguoc/khoi-phuc/bot-cua-toi-1/source/MQL5/Include/bot-cua-toi-1/Bot1AccountInitialization.mqh",
+      "dich-nguoc/khoi-phuc/bot-cua-toi-1/source/MQL5/Include/bot-cua-toi-1/Bot1AccountStateVolume.mqh",
+      "dich-nguoc/khoi-phuc/bot-cua-toi-1/source/MQL5/Include/bot-cua-toi-1/Bot1AccountVolume.mqh",
+      "dich-nguoc/khoi-phuc/bot-cua-toi-1/source/MQL5/Include/bot-cua-toi-1/Bot1Withdrawal.mqh"
+    ],
+    "headers": 86,
+    "source_and_git_code_equivalent": true
+  },
+  {
+    "bot": 3,
+    "errors": 0,
+    "warnings": 0,
+    "exact_files": 90,
+    "newline_only_equivalent_files": [
+      "dich-nguoc/khoi-phuc/bot-cua-toi-3/source/MQL5/Include/bot-cua-toi-3/Bot3AccountInitialization.mqh",
+      "dich-nguoc/khoi-phuc/bot-cua-toi-3/source/MQL5/Include/bot-cua-toi-3/Bot3AccountStateVolume.mqh",
+      "dich-nguoc/khoi-phuc/bot-cua-toi-3/source/MQL5/Include/bot-cua-toi-3/Bot3AccountVolume.mqh",
+      "dich-nguoc/khoi-phuc/bot-cua-toi-3/source/MQL5/Include/bot-cua-toi-3/Bot3Withdrawal.mqh"
+    ],
+    "headers": 93,
+    "source_and_git_code_equivalent": true
+  }
+]

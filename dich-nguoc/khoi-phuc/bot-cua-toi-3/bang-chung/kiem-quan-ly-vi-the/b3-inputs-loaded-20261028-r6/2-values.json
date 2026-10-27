@@ -1,0 +1,402 @@
+[
+  {
+    "name": "lijntje",
+    "kind": 4,
+    "value": "============================================================="
+  },
+  {
+    "name": "UseVariableValues",
+    "kind": 1,
+    "value": 1
+  },
+  {
+    "name": "AdjustLotsizeToVariableValues",
+    "kind": 1,
+    "value": 1
+  },
+  {
+    "name": "ShowInfoPanel",
+    "kind": 1,
+    "value": 1
+  },
+  {
+    "name": "UpdateInfoTesting",
+    "kind": 1,
+    "value": 0
+  },
+  {
+    "name": "InfoPanelSizeAdjust",
+    "kind": 3,
+    "value": 1.0
+  },
+  {
+    "name": "SetFontSize",
+    "kind": 2,
+    "value": 0
+  },
+  {
+    "name": "BacktestSpeed_string",
+    "kind": 4,
+    "value": "------------------------------ Backtest Speed settings ------------------------------"
+  },
+  {
+    "name": "BacktestSpeed",
+    "kind": 2,
+    "value": 1
+  },
+  {
+    "name": "spreadfilter",
+    "kind": 4,
+    "value": "------------------------------ settings ------------------------------"
+  },
+  {
+    "name": "AllowBuyTrades",
+    "kind": 1,
+    "value": 1
+  },
+  {
+    "name": "AllowSellTrades",
+    "kind": 1,
+    "value": 1
+  },
+  {
+    "name": "TradeFrequency",
+    "kind": 2,
+    "value": 1
+  },
+  {
+    "name": "MaxSpread",
+    "kind": 3,
+    "value": 500.0
+  },
+  {
+    "name": "UseHL_TrailingSL",
+    "kind": 1,
+    "value": 1
+  },
+  {
+    "name": "FridayStopHour",
+    "kind": 2,
+    "value": 25
+  },
+  {
+    "name": "FridayClosePending",
+    "kind": 1,
+    "value": 1
+  },
+  {
+    "name": "FridayCloseOpen",
+    "kind": 1,
+    "value": 1
+  },
+  {
+    "name": "setSL_TP_After_Entry",
+    "kind": 1,
+    "value": 0
+  },
+  {
+    "name": "Virtual_expiration",
+    "kind": 1,
+    "value": 1
+  },
+  {
+    "name": "Randomization",
+    "kind": 3,
+    "value": 0.0
+  },
+  {
+    "name": "FakeOutFilter",
+    "kind": 2,
+    "value": 2
+  },
+  {
+    "name": "EnableVirtualSLTP",
+    "kind": 1,
+    "value": 0
+  },
+  {
+    "name": "SetVSL_to_hardSL_sec_delay",
+    "kind": 2,
+    "value": 99
+  },
+  {
+    "name": "ST1_MagicNumber",
+    "kind": 2,
+    "value": 8000
+  },
+  {
+    "name": "ST1_Comment",
+    "kind": 4,
+    "value": "The Gold Reaper"
+  },
+  {
+    "name": "RemoveCommentSuffix",
+    "kind": 1,
+    "value": 0
+  },
+  {
+    "name": "NFP_FILTER",
+    "kind": 4,
+    "value": "----------------------- NFP Filter -----------------------"
+  },
+  {
+    "name": "EnableNFP_Filter",
+    "kind": 1,
+    "value": 1
+  },
+  {
+    "name": "UseMQL5Calendar",
+    "kind": 1,
+    "value": 1
+  },
+  {
+    "name": "AutoGMT",
+    "kind": 1,
+    "value": 1
+  },
+  {
+    "name": "Broker_GMT_OFFSET_Winter",
+    "kind": 2,
+    "value": 2
+  },
+  {
+    "name": "Broker_GMT_OFFSET_Summer",
+    "kind": 2,
+    "value": 3
+  },
+  {
+    "name": "NFP_CloseOpenTrades",
+    "kind": 1,
+    "value": 1
+  },
+  {
+    "name": "NFP_ClosePendingOrders",
+    "kind": 1,
+    "value": 1
+  },
+  {
+    "name": "NFP_MinutesBefore",
+    "kind": 2,
+    "value": 100
+  },
+  {
+    "name": "NFP_MinutesAfter",
+    "kind": 2,
+    "value": 60
+  },
+  {
+    "name": "IR_FILTER",
+    "kind": 4,
+    "value": "----------------------- Interest Rate Filter -----------------------"
+  },
+  {
+    "name": "EnableIR_Filter",
+    "kind": 1,
+    "value": 0
+  },
+  {
+    "name": "IR_CloseOpenTrades",
+    "kind": 1,
+    "value": 1
+  },
+  {
+    "name": "IR_ClosePendingOrders",
+    "kind": 1,
+    "value": 1
+  },
+  {
+    "name": "IR_MinutesBefore",
+    "kind": 2,
+    "value": 100
+  },
+  {
+    "name": "IR_MinutesAfter",
+    "kind": 2,
+    "value": 60
+  },
+  {
+    "name": "CPI_FILTER",
+    "kind": 4,
+    "value": "----------------------- CPI Filter -----------------------"
+  },
+  {
+    "name": "EnableCPI_Filter",
+    "kind": 1,
+    "value": 0
+  },
+  {
+    "name": "CPI_CloseOpenTrades",
+    "kind": 1,
+    "value": 1
+  },
+  {
+    "name": "CPI_ClosePendingOrders",
+    "kind": 1,
+    "value": 1
+  },
+  {
+    "name": "CPI_MinutesBefore",
+    "kind": 2,
+    "value": 100
+  },
+  {
+    "name": "CPI_MinutesAfter",
+    "kind": 2,
+    "value": 60
+  },
+  {
+    "name": "propfirmsettings",
+    "kind": 4,
+    "value": "----------------------- Propfirm unique trades settings -----------------------"
+  },
+  {
+    "name": "AdjustEntry",
+    "kind": 3,
+    "value": 0.0
+  },
+  {
+    "name": "AdjustSL",
+    "kind": 3,
+    "value": 0.0
+  },
+  {
+    "name": "AdjustTP",
+    "kind": 3,
+    "value": 0.0
+  },
+  {
+    "name": "AdjustTrailSL",
+    "kind": 3,
+    "value": 0.0
+  },
+  {
+    "name": "AdjustTrailTP",
+    "kind": 3,
+    "value": 0.0
+  },
+  {
+    "name": "AdjustBreakEven",
+    "kind": 3,
+    "value": 0.0
+  },
+  {
+    "name": "LotSizeSettings",
+    "kind": 4,
+    "value": "----------------------- LotSize Settings -----------------------"
+  },
+  {
+    "name": "ManualBalance",
+    "kind": 3,
+    "value": 0.0
+  },
+  {
+    "name": "Risk",
+    "kind": 2,
+    "value": 1234
+  },
+  {
+    "name": "StartLots",
+    "kind": 3,
+    "value": 0.01
+  },
+  {
+    "name": "MaxAllowedDD",
+    "kind": 3,
+    "value": 30.0
+  },
+  {
+    "name": "UseWeightedLots",
+    "kind": 1,
+    "value": 1
+  },
+  {
+    "name": "MaxRiskPerStrategy_",
+    "kind": 3,
+    "value": 1.0
+  },
+  {
+    "name": "PropFirmMaxDailyDD",
+    "kind": 3,
+    "value": 0.0
+  },
+  {
+    "name": "OnlyUp",
+    "kind": 1,
+    "value": 1
+  },
+  {
+    "name": "ResetHighestBalance",
+    "kind": 1,
+    "value": 0
+  },
+  {
+    "name": "ResetHighestBalanceOnWithdrawal",
+    "kind": 1,
+    "value": 1
+  },
+  {
+    "name": "CheckMargin",
+    "kind": 1,
+    "value": 1
+  },
+  {
+    "name": "UseEquity",
+    "kind": 1,
+    "value": 0
+  },
+  {
+    "name": "ManualStratSelect",
+    "kind": 4,
+    "value": "------------------------- Manual Strategy Selection -------------------------"
+  },
+  {
+    "name": "ManStratWarn",
+    "kind": 4,
+    "value": "!! DO NOT RUN MANUAL STRATEGIES WHILE USING 'MAX ALLOWED TOTAL DD' OPTION !! "
+  },
+  {
+    "name": "RunStrat1",
+    "kind": 1,
+    "value": 1
+  },
+  {
+    "name": "RunStrat2",
+    "kind": 1,
+    "value": 1
+  },
+  {
+    "name": "RunStrat3",
+    "kind": 1,
+    "value": 1
+  },
+  {
+    "name": "RunStrat4",
+    "kind": 1,
+    "value": 1
+  },
+  {
+    "name": "RunStrat5",
+    "kind": 1,
+    "value": 1
+  },
+  {
+    "name": "RunStrat6",
+    "kind": 1,
+    "value": 1
+  },
+  {
+    "name": "RunStrat7",
+    "kind": 1,
+    "value": 1
+  },
+  {
+    "name": "RunStrat8",
+    "kind": 1,
+    "value": 1
+  },
+  {
+    "name": "RunStrat9",
+    "kind": 1,
+    "value": 1
+  }
+]
