@@ -1,0 +1,75 @@
+{
+  "original_ex5_sha256": {
+    "1": "a3b0de423a06e10ebedc279307b93d7cb9188ba2bb5de77131a913c865b0e922",
+    "3": "ee063d3d87490afe24e2f4ce85f6b05659320e297b102efd70207f71ca2feb83"
+  },
+  "entries": [
+    {
+      "bot": 1,
+      "source": "bot-cua-toi-1/phan-tich/luot-20261023-data-v2/ma-trung-gian.c",
+      "source_sha256": "c6389dfe5bd1ef95ed7616eaf5c16b7d041fbd279e650753d239b28e3ea65a8d",
+      "deinit_rva": "0x1f5e0",
+      "deinit_end_rva": "0x2094e",
+      "fixed_objects": [
+        "line1",
+        "linec",
+        "line2",
+        "lines",
+        "lineTradeStart"
+      ],
+      "outer_count": 100,
+      "inner_count": 10,
+      "per_outer_objects": [
+        "lineopl",
+        "linea",
+        "lineto",
+        "linetp",
+        "linetq"
+      ],
+      "grid_object": "tabel_info",
+      "heading_object": "tabel_heading",
+      "totals_object": "tabel_totals",
+      "conditional_objects": [
+        "horizontalrect",
+        "info_ea"
+      ],
+      "conditional_count": 300,
+      "indicator_release": true
+    },
+    {
+      "bot": 3,
+      "source": "bot-cua-toi-3/phan-tich/luot-20261023-data/ma-trung-gian-day-du.c",
+      "source_sha256": "ef8e07ac21522a8a2ab7165db6e77f40885acfc5a044c502ba81e331b826f620",
+      "deinit_rva": "0x2a800",
+      "deinit_end_rva": "0x2bb7f",
+      "fixed_objects": [
+        "line1",
+        "linec",
+        "line2",
+        "lines",
+        "linet",
+        "lineTradeStart"
+      ],
+      "outer_count": 100,
+      "inner_count": 10,
+      "per_outer_objects": [
+        "lineopl",
+        "linea",
+        "lineto",
+        "linetp",
+        "linetq"
+      ],
+      "grid_object": "tabel_info",
+      "heading_object": "tabel_heading",
+      "totals_object": "tabel_totals",
+      "conditional_objects": [
+        "horizontalrect",
+        "info_ea"
+      ],
+      "conditional_count": 300,
+      "indicator_release": true
+    }
+  ],
+  "status": "analysis_only",
+  "whole_ea_complete": false
+}
