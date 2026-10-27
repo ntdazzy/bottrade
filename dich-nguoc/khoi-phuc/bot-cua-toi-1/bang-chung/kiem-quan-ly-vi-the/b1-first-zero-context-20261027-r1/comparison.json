@@ -1,0 +1,19 @@
+{
+  "cases": 3628,
+  "matched": 3628,
+  "failed": 0,
+  "first_failures": [],
+  "whole_bot_complete": false,
+  "whole_manager_complete": false,
+  "whole_evaluator_complete": false,
+  "full_ea": false,
+  "native_evaluator_and_first_ticket_executed": true,
+  "terminal_replies_supplied": true,
+  "original_ex5_changed": false,
+  "license_flag_changed": false,
+  "limits": [
+    "Original evaluator18aa0 -> prelude -> initial position pass -> new-bar caller -> real manager271f0 ->27368; the actual first zero-ticket branch and CMOV execute. No middle register/stack reset.",
+    "Initial ABI-aligned stack and R12 are supplied at entry, not recovered from every coordinator path. Ordinary coordinator preload69f70 is included; zero is an explicit alternate incoming fixture.",
+    "Server/calendar/sessions/iTime and position queries are supplied. Initial position count is -1/0/1, manager count1 and first ticket0. Successful allocation and valid IntegerToString6 are supplied; later manager/EA and allocation failure excluded."
+  ]
+}

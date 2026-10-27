@@ -22,6 +22,13 @@ riêng của từng phần ở `bot-cua-toi-1/tests/` và `bot-cua-toi-3/tests/`
 
 Phép kiểm ghép mới:
 
+- `bot-cua-toi-1/tests/check-first-zero-caller-context.py prepare|original|mql5|compare RUN`:
+  3.628ca chạy nguyên evaluator tới nhánh vé đầu0 ở quản lý27368; so
+  hàm thuần chốt byte R12B của cạnh nến mới,0..10phiên,16vị trí ngăn xếp,
+  cờ/tổng vị thế/byte vào khác nhau. Mql5 cần `--build BUILD` của
+  `Bot1ManagementCallerContextCheck.mq5`. Đầu vào cấp tại entry, không
+  reset giữa đường, không sửa cờ bản quyền. Chưa là mọi nơi gọi/manager/EA.
+
 - `bot-cua-toi-3/tests/check-evaluation-pending-cleanup.py prepare|original|mql5|compare RUN`:
   339 ca nguyên evaluator từ20ef0 qua phần đầu, dọn lệnh chờ và bổ sung
   dừng/chốt tới227c0. Các thân xóa32450/sửa32a90/gửi950 đều chạy thật;

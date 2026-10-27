@@ -1,0 +1,297 @@
+{
+  "cases": 3628,
+  "true_count": 3012,
+  "false_count": 616,
+  "all_three_marks_agree": true,
+  "all_frames_aligned16": true,
+  "observations_sha256": "93c3c5a3e60fe76d919988ed5aa5748c7e615fcbb65e75af2e7ba66dc179e4d1",
+  "normal_incoming70_false_count": 0,
+  "stack_frames": [
+    "0x5001fba0",
+    "0x5001fbb0",
+    "0x5001fbc0",
+    "0x5001fbd0",
+    "0x5001fbe0",
+    "0x5001fbf0",
+    "0x5001fc00",
+    "0x5001fc10",
+    "0x5001fc20",
+    "0x5001fc30",
+    "0x5001fc40",
+    "0x5001fc50",
+    "0x5001fc60",
+    "0x5001fc70",
+    "0x5001fc80",
+    "0x5001fc90"
+  ],
+  "reporting_last_day": [
+    {
+      "sessions": 0,
+      "r12b": [
+        8
+      ]
+    },
+    {
+      "sessions": 1,
+      "r12b": [
+        1
+      ]
+    },
+    {
+      "sessions": 2,
+      "r12b": [
+        2
+      ]
+    },
+    {
+      "sessions": 3,
+      "r12b": [
+        3
+      ]
+    },
+    {
+      "sessions": 4,
+      "r12b": [
+        4
+      ]
+    },
+    {
+      "sessions": 5,
+      "r12b": [
+        5
+      ]
+    },
+    {
+      "sessions": 6,
+      "r12b": [
+        6
+      ]
+    },
+    {
+      "sessions": 7,
+      "r12b": [
+        7
+      ]
+    },
+    {
+      "sessions": 8,
+      "r12b": [
+        8
+      ]
+    },
+    {
+      "sessions": 9,
+      "r12b": [
+        9
+      ]
+    },
+    {
+      "sessions": 10,
+      "r12b": [
+        9
+      ]
+    }
+  ],
+  "representatives": [
+    {
+      "id": 2380,
+      "enabled": 0,
+      "total": 0,
+      "day": 6,
+      "mode": 0,
+      "sessions": 0,
+      "incoming": 0,
+      "shift": 0,
+      "marks": [
+        {
+          "rva": "0x1a245",
+          "r12": "0x0",
+          "low": 0
+        },
+        {
+          "rva": "0x271f0",
+          "r12": "0x0",
+          "low": 0
+        },
+        {
+          "rva": "0x27357",
+          "r12": "0x0",
+          "low": 0
+        }
+      ],
+      "changed": 0,
+      "frame": "0x5001fc90",
+      "router_events": [
+        [
+          701,
+          1,
+          1792713600
+        ],
+        [
+          701,
+          1,
+          1792713600
+        ],
+        [
+          410,
+          1
+        ],
+        [
+          411,
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "id": 3208,
+      "enabled": 0,
+      "total": 0,
+      "day": 6,
+      "mode": 2,
+      "sessions": 1,
+      "incoming": 0,
+      "shift": 0,
+      "marks": [
+        {
+          "rva": "0x1a245",
+          "r12": "0x1",
+          "low": 1
+        },
+        {
+          "rva": "0x271f0",
+          "r12": "0x1",
+          "low": 1
+        },
+        {
+          "rva": "0x27357",
+          "r12": "0x1",
+          "low": 1
+        }
+      ],
+      "changed": 1,
+      "frame": "0x5001fc90",
+      "router_events": [
+        [
+          701,
+          1,
+          1792713600
+        ],
+        [
+          701,
+          1,
+          1792713600
+        ],
+        [
+          410,
+          1
+        ],
+        [
+          411,
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "id": 1192,
+      "enabled": 0,
+      "total": 0,
+      "day": 1,
+      "mode": 0,
+      "sessions": 0,
+      "incoming": 0,
+      "shift": 0,
+      "marks": [
+        {
+          "rva": "0x1a245",
+          "r12": "0x5001fe38",
+          "low": 56
+        },
+        {
+          "rva": "0x271f0",
+          "r12": "0x5001fe38",
+          "low": 56
+        },
+        {
+          "rva": "0x27357",
+          "r12": "0x5001fe38",
+          "low": 56
+        }
+      ],
+      "changed": 1,
+      "frame": "0x5001fc90",
+      "router_events": [
+        [
+          701,
+          1,
+          1792713600
+        ],
+        [
+          701,
+          1,
+          1792713600
+        ],
+        [
+          410,
+          1
+        ],
+        [
+          411,
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "id": 2396,
+      "enabled": 1,
+      "total": 1,
+      "day": 6,
+      "mode": 0,
+      "sessions": 0,
+      "incoming": 0,
+      "shift": 0,
+      "marks": [
+        {
+          "rva": "0x1a245",
+          "r12": "0x23e5aa7246c",
+          "low": 108
+        },
+        {
+          "rva": "0x271f0",
+          "r12": "0x23e5aa7246c",
+          "low": 108
+        },
+        {
+          "rva": "0x27357",
+          "r12": "0x23e5aa7246c",
+          "low": 108
+        }
+      ],
+      "changed": 1,
+      "frame": "0x5001fc90",
+      "router_events": [
+        [
+          701,
+          1,
+          1792713600
+        ],
+        [
+          701,
+          1,
+          1792713600
+        ],
+        [
+          410,
+          1
+        ],
+        [
+          411,
+          0,
+          0
+        ]
+      ]
+    }
+  ]
+}

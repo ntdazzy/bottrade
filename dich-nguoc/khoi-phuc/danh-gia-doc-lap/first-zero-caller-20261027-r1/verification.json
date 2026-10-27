@@ -1,0 +1,32 @@
+{
+  "cases": 3628,
+  "matched": 3628,
+  "false_count": 616,
+  "normal_incoming70_false_count": 0,
+  "all_three_marks_agree": true,
+  "all_frames_aligned16": true,
+  "result_sha256": "3722b90ceabe9767ad574836bf3e36e3a8e853a80f0339e83cd1949cb1a39db4",
+  "full_observations_sha256": "93c3c5a3e60fe76d919988ed5aa5748c7e615fcbb65e75af2e7ba66dc179e4d1",
+  "compile_receipt_sha256": "1e632909187a03caaf71a93536ba29665c4653bbb96a90550d58ae247ecbfeba",
+  "independent_code_review": "first_zero_context_review: current comparison and observations hash verified, no actionable findings; context helper has not been connected to a whole EA",
+  "scope": {
+    "cases": 3628,
+    "matched": 3628,
+    "failed": 0,
+    "first_failures": [],
+    "whole_bot_complete": false,
+    "whole_manager_complete": false,
+    "whole_evaluator_complete": false,
+    "full_ea": false,
+    "native_evaluator_and_first_ticket_executed": true,
+    "terminal_replies_supplied": true,
+    "original_ex5_changed": false,
+    "license_flag_changed": false,
+    "limits": [
+      "Original evaluator18aa0 -> prelude -> initial position pass -> new-bar caller -> real manager271f0 ->27368; the actual first zero-ticket branch and CMOV execute. No middle register/stack reset.",
+      "Initial ABI-aligned stack and R12 are supplied at entry, not recovered from every coordinator path. Ordinary coordinator preload69f70 is included; zero is an explicit alternate incoming fixture.",
+      "Server/calendar/sessions/iTime and position queries are supplied. Initial position count is -1/0/1, manager count1 and first ticket0. Successful allocation and valid IntegerToString6 are supplied; later manager/EA and allocation failure excluded."
+    ]
+  },
+  "whole_eas_complete": 0
+}

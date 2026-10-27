@@ -1,0 +1,66 @@
+FUNCTION 0x271f0..0x2abbd snapshot_sha256=49434714f53278010cec8489ff0d716ffea00c58b154f9b2118e500cbf69e22d
+RANGE 0x271f0..0x27380 (end excluded); base=0x23e5aa10000
+0x271f0 push r15
+0x271f2 push r14
+0x271f4 push r13
+0x271f6 push r12
+0x271f8 push rsi
+0x271f9 push rdi
+0x271fa push rbp
+0x271fb push rbx
+0x271fc sub rsp, 0x158
+0x27203 movabs rcx, 0x23e575eae78
+0x2720d movabs rax, 0x7ff6846f7da0
+0x27217 movapd xmmword ptr [rsp + 0x140], xmm15
+0x27221 movapd xmmword ptr [rsp + 0x130], xmm14
+0x2722b movapd xmmword ptr [rsp + 0x120], xmm13
+0x27235 movapd xmmword ptr [rsp + 0x110], xmm12
+0x2723f movapd xmmword ptr [rsp + 0x100], xmm11
+0x27249 movapd xmmword ptr [rsp + 0xf0], xmm10
+0x27253 movapd xmmword ptr [rsp + 0xe0], xmm9
+0x2725d movapd xmmword ptr [rsp + 0xd0], xmm8
+0x27267 movapd xmmword ptr [rsp + 0xc0], xmm7
+0x27270 movapd xmmword ptr [rsp + 0xb0], xmm6
+0x27279 mov dword ptr [rsp + 0x60], 0
+0x27281 mov dword ptr [rsp + 0xa0], 0
+0x2728c mov dword ptr [rsp + 0x40], 0
+0x27294 mov dword ptr [rsp + 0x90], 0
+0x2729f mov dword ptr [rsp + 0x78], 0
+0x272a7 mov qword ptr [rsp + 0x64], 0
+0x272b0 mov qword ptr [rsp + 0xa4], 0
+0x272bc mov qword ptr [rsp + 0x44], 0
+0x272c5 mov qword ptr [rsp + 0x94], 0
+0x272d1 mov qword ptr [rsp + 0x7c], 0
+0x272da call rax
+0x272dc test eax, eax
+0x272de jle 0x23e5aa3a635[RVA=0x2a635]
+0x272e4 movabs rax, 0x23e5aa7a5d0[RVA=0x6a5d0]
+0x272ee movabs rsi, 0x23e575eae78
+0x272f8 movabs r14, 0x23e5aa777f8[RVA=0x677f8]
+0x27302 movabs rdi, 0x23e5aa77918[RVA=0x67918]
+0x2730c movabs r13, 0x23e5aa7a448[RVA=0x6a448]
+0x27316 xorpd xmm10, xmm10
+0x2731b xor ebp, ebp
+0x2731d xor ebx, ebx
+0x2731f movzx eax, byte ptr [rax]
+0x27322 mov byte ptr [rsp + 0x3f], al
+0x27326 jmp 0x23e5aa3737e[RVA=0x2737e]
+0x27328 nop dword ptr [rax + rax]
+0x27330 xor r12d, r12d
+0x27333 lea rcx, [rsp + 0x78]
+0x27338 movabs r15, 0x23e5aa10000[RVA=0x0]
+0x27342 call r15
+0x27345 lea rcx, [rsp + 0x90]
+0x2734d call r15
+0x27350 mov ebp, dword ptr [rsp + 0xac]
+0x27357 test r12b, r12b
+0x2735a movzx ebx, bl
+0x2735d mov eax, 1
+0x27362 mov rcx, rsi
+0x27365 cmovne ebx, eax
+0x27368 movabs rax, 0x7ff6846f7da0
+0x27372 inc ebp
+0x27374 call rax
+0x27376 cmp ebp, eax
+0x27378 jge 0x23e5aa3a982[RVA=0x2a982]
+0x2737e mov rcx, rsi

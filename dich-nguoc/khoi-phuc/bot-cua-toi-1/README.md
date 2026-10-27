@@ -1,5 +1,12 @@
 # bot-cua-toi-1
 
+Đã chốt cờ nhánh vé đầu0 ở cạnh quản lý khi đổi nến:
+**3.628/3.628 ca khớp**, biên dịch0lỗi/0cảnh báo. Chạy liên tục từ
+đầu đánh giá tới đúng nhánh trong thân quản lý thật, giữ nguyên cờ
+bản quyền. Ngày/phiên/tổng vị thế/ngăn xếp và byte vào được cấp;
+chưa nối mọi đường hàm điều phối hoặc toàn bộ vòng quản lý.
+[Công thức, nguồn và giới hạn](phan-tich/chuong-trinh-chinh/first-zero-caller-20261027-r1/README.md).
+
 Đã nối đầu đánh giá qua vòng bổ sung dừng lỗ/chốt lời, thân sửa vị thế và
 thân gửi: **1.172/1.172 ca khớp**, bốn thời điểm chụp đủ trường yêu cầu/
 kết quả và chuỗi; biên dịch **0 lỗi/0 cảnh báo**. Thân hàm con chạy thật,

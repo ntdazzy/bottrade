@@ -1,0 +1,14 @@
+// Live R12B at the evaluator's new-bar manager call, under the normal x64 ABI.
+// Counts must come from the already executed prefix, without extra SDK reads.
+#ifndef BOT1_MANAGEMENT_CALLER_CONTEXT_MQH
+#define BOT1_MANAGEMENT_CALLER_CONTEXT_MQH
+bool Bot1BarFirstZeroTicketChanged(const uchar initial_levels,const int initial_count,
+                                  const int day_of_week,const bool reported_sessions,
+                                  const int last_day_sessions,const bool incoming_changed)
+{
+   if(initial_levels!=0 && initial_count>0) return true;
+   if(day_of_week!=0 && day_of_week!=6) return true;
+   if(reported_sessions) return last_day_sessions!=1;
+   return incoming_changed;
+}
+#endif
