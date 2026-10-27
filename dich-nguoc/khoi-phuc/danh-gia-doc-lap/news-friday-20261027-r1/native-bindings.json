@@ -1,0 +1,36 @@
+[
+  {
+    "bot": 1,
+    "original_ex5_sha256": "a3b0de423a06e10ebedc279307b93d7cb9188ba2bb5de77131a913c865b0e922",
+    "friday_begin": "0x1c6f1",
+    "pass_end": "0x1c79a",
+    "helper_begin": "0x30010",
+    "helper_end": "0x30313",
+    "listing_sha256": "f1c3fd48b1f09851d65282ce6d1d7dd27cbada3ca2a85b2e9f2ee70ba3036abf",
+    "print_pending": {
+      "descriptor": "0x5c730",
+      "text": "deleting pending order"
+    },
+    "print_friday": {
+      "descriptor": "0x55058",
+      "text": "Weekend starting! closing trades.."
+    }
+  },
+  {
+    "bot": 3,
+    "original_ex5_sha256": "ee063d3d87490afe24e2f4ce85f6b05659320e297b102efd70207f71ca2feb83",
+    "friday_begin": "0x24f8d",
+    "pass_end": "0x25040",
+    "helper_begin": "0x3d650",
+    "helper_end": "0x3da89",
+    "listing_sha256": "241f450b7b412199c27faad5cd4446ab4052ad872523aed1d789d95563c7b905",
+    "print_pending": {
+      "descriptor": "0x669d0",
+      "text": "deleting pending order"
+    },
+    "print_friday": {
+      "descriptor": "0x5d7b8",
+      "text": "Weekend starting! closing trades.."
+    }
+  }
+]

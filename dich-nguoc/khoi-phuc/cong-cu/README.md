@@ -1,3 +1,10 @@
+- `kiem-tin-va-cuoi-tuan-bot-1-3.py prepare|mql5|original|compare BOT RUN`:
+  so liên tục tin→đóng cuối tuần, giữ nguyên các thân đóng/hủy/gửi.
+  `mql5` cần `--build BUILD`; r2:406ca mỗi bot, gồm thay trạng thái
+  tại rìa dịch vụ để kiểm thứ tự. Chỉ phần tin/cuối tuần, chưa toànEA.
+- `tao-bo-kiem-tin-va-cuoi-tuan.py`: mở rộng bộ ghi phần tin cho
+  cấu hình/cờ cuối tuần và tác động của dịch vụ; tạo hai Script.
+
 - `kiem-chuoi-tin-bot-1-3.py prepare|mql5|original|compare BOT RUN`:
   chạy liên tục NFP→lãi suất→CPI→chọn lịch, không đặt lại trạng thái.
   MQL5 ghi trả lời dịch vụ; mã máy gốc phải khớp trạng thái trước từng

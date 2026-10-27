@@ -1,0 +1,17 @@
+{
+  "cases": 406,
+  "matched": 406,
+  "failed": 0,
+  "first_failures": [],
+  "whole_bot_complete": false,
+  "whole_manager_complete": false,
+  "whole_evaluator_complete": false,
+  "full_ea": false,
+  "native_news_and_friday_executed": true,
+  "child_helpers_intercepted": false,
+  "terminal_replies_supplied": true,
+  "original_ex5_changed": false,
+  "limits": [
+    "News and first Friday action only; initial frame/state and terminal replies supplied. No complete evaluator, EA, live broker or allocation-fault proof."
+  ]
+}

@@ -1,3 +1,9 @@
+Đã ghép `Bot3NewsFridayFlow.mqh`: tin → đóng cuối tuần, giữ chung
+trạng thái và toàn thân đóng/hủy/gửi. **406/406 ca khớp**, so **15.736 lần
+gọi dịch vụ**; nguồn trực tiếp/bộ kiểm 0 lỗi/0 cảnh báo. Chưa là toànEA;
+còn nhánh chênh lệch giá/giới hạn và điều kiện vào lệnh phía sau.
+[Phạm vi](../danh-gia-doc-lap/news-friday-20261027-r1/SPEC.md).
+
 Đã ghép `Bot3NewsFilterPipeline.mqh`: NFP → lãi suất → CPI → chọn lịch,
 chung trạng thái và hủy/đóng/gửi. **133/133 tình huống khớp**,
 so **10.243 lần gọi dịch vụ** và trạng thái trước mỗi lần/cuối đoạn.

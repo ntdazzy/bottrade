@@ -1,0 +1,26 @@
+{
+  "checks": [
+    {
+      "bot": 1,
+      "cases": 406,
+      "matched": 406,
+      "sdk_calls": 15361,
+      "parent_instructions": 824,
+      "result_sha256": "d5450b52cf082b40319a0a9f6b35cd9f64164acfdf97041a0d63a8f3857ec558",
+      "sdk_tape_sha256": "5d3142706529d7b3702ea6bd8e05635a0be14e43cc835dd244623f43135db779",
+      "run": "b1-news-friday-20261027-r3"
+    },
+    {
+      "bot": 3,
+      "cases": 406,
+      "matched": 406,
+      "sdk_calls": 15736,
+      "parent_instructions": 864,
+      "result_sha256": "ab7f8d05b49e75f11439e6e5dd14f49ef78f23ce3f4392f707d9efb193668741",
+      "sdk_tape_sha256": "9b8a15076af058d3344f81e6ad694f4ba3411e57ed9aa22cfe1a73ab5dfc72dc",
+      "run": "b3-news-friday-20261027-r2"
+    }
+  ],
+  "independent_review": "friday_flow_review: no material findings; original snapshot, source, tape and r2 comparisons reviewed read-only",
+  "whole_eas_complete": 0
+}
