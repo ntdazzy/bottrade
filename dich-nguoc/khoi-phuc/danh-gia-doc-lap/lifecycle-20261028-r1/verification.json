@@ -1,0 +1,50 @@
+{
+  "checks": [
+    {
+      "bot": 1,
+      "run": "b1-lifecycle-20261028-r4",
+      "cases": 4,
+      "matched": 4,
+      "failed": 0,
+      "native_event_counts": [
+        3049,
+        3050,
+        4249,
+        4250
+      ],
+      "mql5_event_counts": [
+        3049,
+        3050,
+        4249,
+        4250
+      ],
+      "build": "b1-lifecycle-check-20261028-r4",
+      "api_build": "b1-lifecycle-api-20261028-r2"
+    },
+    {
+      "bot": 3,
+      "run": "b3-lifecycle-20261028-r4",
+      "cases": 4,
+      "matched": 4,
+      "failed": 0,
+      "native_event_counts": [
+        3050,
+        3051,
+        4250,
+        4251
+      ],
+      "mql5_event_counts": [
+        3050,
+        3051,
+        4250,
+        4251
+      ],
+      "build": "b3-lifecycle-check-20261028-r4",
+      "api_build": "b3-lifecycle-api-20261028-r2"
+    }
+  ],
+  "scope": "Native deinitialization body, object deletion order, conditional 300-row branch, indicator release and ObjectsDeleteAll",
+  "whole_bot_complete": false,
+  "whole_ea_complete": false,
+  "original_ex5_changed": false
+}

@@ -1,0 +1,12 @@
+{
+  "original_ex5_sha256": "a3b0de423a06e10ebedc279307b93d7cb9188ba2bb5de77131a913c865b0e922",
+  "cases": 4,
+  "build": "b1-lifecycle-check-20261028-r4",
+  "result_sha256": "52818029acd48f191163cba47d4629e84406e8059afad662baf755fd3879472e",
+  "sources_sha256": {
+    "Scripts/bot-cua-toi-1/Bot1LifecycleCheck.mq5": "aef8f0003a170140fc2fd0e8ec193f26fc09f73f0a8e6d969aab4a57805cd84b"
+  },
+  "helpers_sha256": {
+    "cong-cu/kiem-vong-doi-bot-1-3.py": "4ced7bee91205d57ce2908ee119df6c9100b1f140556219855a1a6d3420a1e13"
+  }
+}

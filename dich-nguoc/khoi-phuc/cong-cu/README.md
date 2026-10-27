@@ -30,6 +30,11 @@
   tin sắp tới, mọi chế độ và trạng thái đọc lại sau dịch vụ. `mql5` cần
   `--build BUILD`; chạy trước `original` để đo cách đổi số/ngày thành chữ
   trong MT5. Đã khớp297/297caB1,324/324caB3; chưa kiểm ảnh hoặc toànEA.
+- `kiem-vong-doi-bot-1-3.py prepare|mql5|original|compare BOT RUN`:
+  kiểm hàm dọn khi thoát của cả hai bot; 4/4 ca mỗi bot, gồm nhánh 300,
+  giải phóng chỉ báo và `ObjectsDeleteAll`. `mql5` cần `--build BUILD`;
+  khởi tạo và toàn EA vẫn nằm ngoài phạm vi.
+
 - `kiem-bang-thong-tin-lich-su-bot-1-3.py prepare|mql5|original|compare BOT RUN`:
   so toàn thân thống kê lịch sử và chữ lãi/lỗ cuối hàm; bot1 222/222 ca,
   bot3 243/243 ca. `mql5` cần `--build BUILD`; không kiểm ảnh biểu đồ hay

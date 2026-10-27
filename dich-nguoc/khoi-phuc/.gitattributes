@@ -867,3 +867,11 @@
 /danh-gia-doc-lap/closed-status-panel-20261028-r1/** -text
 /danh-gia-doc-lap/evaluation-display-20261028-r1/** -text
 /danh-gia-doc-lap/lifecycle-20261028-r1/** -text
+# Verified deinitialization lifecycle.
+/bot-cua-toi-[13]/source/MQL5/Include/bot-cua-toi-[13]/Bot[13]Lifecycle.mqh -text
+/bot-cua-toi-[13]/source/MQL5/Scripts/bot-cua-toi-[13]/Bot[13]Lifecycle*.mq5 -text
+/bot-cua-toi-[13]/bang-chung/bien-dich/b[13]-lifecycle-*/** -text
+/bot-cua-toi-[13]/bang-chung/kiem-quan-ly-vi-the/b[13]-lifecycle-*/** -text
+/cong-cu/kiem-vong-doi-bot-1-3.py -text
+/danh-gia-doc-lap/lifecycle-20261028-r1/** -text
+

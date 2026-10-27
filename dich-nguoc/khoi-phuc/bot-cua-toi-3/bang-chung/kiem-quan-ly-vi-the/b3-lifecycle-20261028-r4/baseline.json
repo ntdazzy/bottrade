@@ -1,0 +1,12 @@
+{
+  "original_ex5_sha256": "ee063d3d87490afe24e2f4ce85f6b05659320e297b102efd70207f71ca2feb83",
+  "cases": 4,
+  "inputs_sha256": "61899b71e8931f03c4a2d482e1fe13d3f32a123454c206337cf82d8d7bc30c77",
+  "whole_bot_complete": false,
+  "sources_sha256": {
+    "Scripts/bot-cua-toi-3/Bot3LifecycleCheck.mq5": "51cd74f434df7cf504159174bf64b77fdd790580a76ed0d1f999757599f98d8c"
+  },
+  "helpers_sha256": {
+    "cong-cu/kiem-vong-doi-bot-1-3.py": "4ced7bee91205d57ce2908ee119df6c9100b1f140556219855a1a6d3420a1e13"
+  }
+}
