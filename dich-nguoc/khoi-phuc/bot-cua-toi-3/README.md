@@ -1,3 +1,9 @@
+Đã ghép `Bot3NewsFridaySpreadFlow.mqh`: tin → đóng cuối tuần →
+lưu/hủy khi chênh lệch cao. **640/640 ca khớp**, so **18.809 lần gọi dịch
+vụ** và 500 ô bảng; nguồn/bộ kiểm 0 lỗi/0 cảnh báo. Còn đặt lại lệnh
+khi chênh lệch thấp, giới hạn và điều kiện vào lệnh; chưa là toànEA.
+[Phạm vi](../danh-gia-doc-lap/high-spread-20261027-r1/SPEC.md).
+
 Đã ghép `Bot3NewsFridayFlow.mqh`: tin → đóng cuối tuần, giữ chung
 trạng thái và toàn thân đóng/hủy/gửi. **406/406 ca khớp**, so **15.736 lần
 gọi dịch vụ**; nguồn trực tiếp/bộ kiểm 0 lỗi/0 cảnh báo. Chưa là toànEA;

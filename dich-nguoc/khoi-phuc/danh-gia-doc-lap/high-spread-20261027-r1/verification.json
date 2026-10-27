@@ -1,0 +1,28 @@
+{
+  "checks": [
+    {
+      "bot": 1,
+      "cases": 640,
+      "matched": 640,
+      "sdk_calls": 18434,
+      "cast_calls": 356,
+      "parent_instructions": 843,
+      "result_sha256": "6f5b5bd1c1532f25480eaf0057adac72ce54c417b99386dff917df24dc56d849",
+      "sdk_tape_sha256": "76468a9a223d944236278cf3a16449d2a932f90b6bf2143b108f96843c5da0fa",
+      "casts_sha256": "a880bb241063af1e30c95dcd329d243c2d03b03947858217e8e67df916b04563"
+    },
+    {
+      "bot": 3,
+      "cases": 640,
+      "matched": 640,
+      "sdk_calls": 18809,
+      "cast_calls": 356,
+      "parent_instructions": 1987,
+      "result_sha256": "0ab35761c742cc2e83ff793b4abddaac59fc15a3b3991d1b57239b913ae02a18",
+      "sdk_tape_sha256": "df21296334dfe76b29d24bebb2c5380cc9bb32cfc96d121a02434fdec3ee2866",
+      "casts_sha256": "a880bb241063af1e30c95dcd329d243c2d03b03947858217e8e67df916b04563"
+    }
+  ],
+  "independent_review": "friday_flow_review: native caller/storage, arithmetic, rereads, table writes and source reviewed read-only; no material findings",
+  "whole_eas_complete": 0
+}

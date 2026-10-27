@@ -1,3 +1,10 @@
+- `kiem-chenh-gia-cao-bot-1-3.py prepare|mql5|original|compare BOT RUN`:
+  so liên tục tin→cuối tuần→lưu/hủy khi chênh lệch cao;640ca mỗi bot,
+  đủ500ô bảng. `mql5` cần `--build BUILD`. Đổi số thành chuỗi được đo
+  riêng trong MT5; thân lưu/hủy/gửi gốc tự chạy. Chưa có nhánh đặt lại/EA.
+- `tao-bo-kiem-chenh-gia-cao.py`: tạo hai Script/bộ gọi trực tiếp,
+  mở rộng bộ ghi cuối tuần; không thay luật bot.
+
 - `kiem-tin-va-cuoi-tuan-bot-1-3.py prepare|mql5|original|compare BOT RUN`:
   so liên tục tin→đóng cuối tuần, giữ nguyên các thân đóng/hủy/gửi.
   `mql5` cần `--build BUILD`; r2:406ca mỗi bot, gồm thay trạng thái

@@ -1,0 +1,18 @@
+{
+  "cases": 640,
+  "matched": 640,
+  "failed": 0,
+  "first_failures": [],
+  "whole_bot_complete": false,
+  "whole_manager_complete": false,
+  "whole_evaluator_complete": false,
+  "full_ea": false,
+  "native_news_friday_high_spread_executed": true,
+  "child_helpers_intercepted": false,
+  "terminal_replies_supplied": true,
+  "numeric_conversion_measured_in_mt5": true,
+  "original_ex5_changed": false,
+  "limits": [
+    "News, Friday and high-spread storage only; stops before low-spread restoration and limits. Initial frame/state, terminal replies, successful allocation and measured number-to-text conversions supplied. No full evaluator or EA."
+  ]
+}

@@ -1,0 +1,32 @@
+[
+  {
+    "bot": 1,
+    "original_ex5_sha256": "a3b0de423a06e10ebedc279307b93d7cb9188ba2bb5de77131a913c865b0e922",
+    "bounds": [
+      "1c79a",
+      "1c85c",
+      "30320",
+      "31f35",
+      "1e985",
+      "1e98c"
+    ],
+    "listing_sha256": "81b96348241c4b4bb48ce927cd813eab9c092267ec2fd2b5d8f77b986916d7a8",
+    "queue_enabled": "0x66420",
+    "queue_orders": "0x65470",
+    "queue_results": "0x65dd0"
+  },
+  {
+    "bot": 3,
+    "original_ex5_sha256": "ee063d3d87490afe24e2f4ce85f6b05659320e297b102efd70207f71ca2feb83",
+    "bounds": [
+      "25040",
+      "269fb",
+      "26bb7",
+      "26c20"
+    ],
+    "listing_sha256": "0e733e806de797636124dc98fb5660f9441b779a95a9afab3f795239573bcbaa",
+    "queue_enabled": "0x73468",
+    "queue_orders": "0x724b0",
+    "queue_results": "0x72e10"
+  }
+]
