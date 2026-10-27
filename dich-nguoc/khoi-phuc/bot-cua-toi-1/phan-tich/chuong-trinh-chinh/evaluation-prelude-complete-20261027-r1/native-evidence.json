@@ -1,0 +1,70 @@
+{
+  "base": "0x23e5aa10000",
+  "original_ex5_sha256": "a3b0de423a06e10ebedc279307b93d7cb9188ba2bb5de77131a913c865b0e922",
+  "function_sha256": "45d53270186b7019a8721e0cf3734a61aac8e8660c70f7e602849b1c298d7cbd",
+  "ranges": [
+    {
+      "begin": "0x18aa0",
+      "end_exclusive": "0x18eb1",
+      "sha256": "bf3ee233ae8ede46e1d4d7722eba85ed6f9a09679b7cf843dba4f62c65040fd2",
+      "listing_sha256": "3b3af1e16ec8ae3d1ced74b42b941f339b391ebaa2db48298d62624474618af1"
+    },
+    {
+      "begin": "0x18f3b",
+      "end_exclusive": "0x19d17",
+      "sha256": "30a0724e15c35f6a213ff2b5ca6d2213e99a8f5ceca6c850f029c934d58bc036",
+      "listing_sha256": "29073f797682f352653acffb6858fed47b87197868aacb3a36ca3fd6ca261aeb"
+    },
+    {
+      "begin": "0x1a2eb",
+      "end_exclusive": "0x1a2f2",
+      "sha256": "6de728e6a5d6c1c6f37dd42ea78fe2f4fbacb1348b1a1dc9f5e01ec5d39c3854",
+      "listing_sha256": "ce89a9be1bb926e0921155c48702d8cf59f981e35c9461a217f7597e401f8318"
+    }
+  ],
+  "strings": [
+    {
+      "rva": "0x5d500",
+      "kind": "descriptor",
+      "text": "[SESSIONS] trade sessions reported for "
+    },
+    {
+      "rva": "0x5d520",
+      "kind": "descriptor",
+      "text": ":"
+    },
+    {
+      "rva": "0x5d550",
+      "kind": "descriptor",
+      "text": "   day "
+    },
+    {
+      "rva": "0x5d578",
+      "kind": "descriptor",
+      "text": " ["
+    },
+    {
+      "rva": "0x545c8",
+      "kind": "descriptor",
+      "text": "Tick not ok"
+    },
+    {
+      "rva": "0x5d58c",
+      "kind": "length_then_buffer",
+      "text": "-",
+      "sha256": "24ea1ebd0bafd39482db46ec2d8959e61353a90efc072719e1308f86c3a106ba"
+    },
+    {
+      "rva": "0x5d59c",
+      "kind": "length_then_buffer",
+      "text": "]",
+      "sha256": "b230ec74895e4131aecd468afe2723678730e6f7471bd48c3f239320587faeb7"
+    },
+    {
+      "rva": "0x5d5b8",
+      "kind": "length_then_buffer",
+      "text": " none",
+      "sha256": "e5f6f02b76433410015ef54f2be9f4ffc88fdc1f61289a3442ff106e71c85f57"
+    }
+  ]
+}

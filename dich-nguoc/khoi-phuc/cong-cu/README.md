@@ -22,6 +22,15 @@ riêng của từng phần ở `bot-cua-toi-1/tests/` và `bot-cua-toi-3/tests/`
 
 Phép kiểm ghép mới:
 
+- `bot-cua-toi-1/tests/check-evaluation-prelude.py prepare|original|mql5|compare RUN`:
+  1.594 ca đầu đánh giá `18aa0..18eb1`, gồm cả các nhánh báo/kiểm phiên;
+  so30giá trị và đầy đủ thứ tự, đối số, chuỗi dịch vụ. Dùng chung dữ liệu
+  đầu vào với bộ bot3, nhưng chạy mã gốc bot1 riêng; trường DL trong dữ
+  liệu được bỏ, không thêm cờ người gọi vào hàm bot1. Bước mql5 dùng
+  `--build BUILD` của `Bot1EvaluationPreludeCheck.mq5` trong MT5 riêng.
+  Dữ liệu dịch vụ/cấp bộ nhớ thành công được cấp; chưa so ngữ cảnh nối
+  sang quản lý vị thế, các nhánh sau hoặc toàn EA.
+
 - `bot-cua-toi-3/tests/check-evaluation-prelude.py prepare|original|mql5|compare RUN`:
   1.594 ca chạy từ entry `20ef0` qua báo/kiểm giờ giao dịch tới `212ff`,
   gồm cập nhật giá/lịch. So 31 giá trị và toàn bộ thứ tự, đối số, chuỗi

@@ -1,0 +1,63 @@
+{
+  "cases": 1594,
+  "matched": 1594,
+  "values_per_case": 30,
+  "native_instructions": 744,
+  "required_branches": [
+    "0x18aa0",
+    "0x18d99",
+    "0x18dad",
+    "0x18e31",
+    "0x18eb1",
+    "0x18f3b",
+    "0x1902f",
+    "0x19040",
+    "0x1905e",
+    "0x19075",
+    "0x19093",
+    "0x1909f",
+    "0x190a4",
+    "0x1916b",
+    "0x194fb",
+    "0x197a9",
+    "0x19bd2",
+    "0x19bf0",
+    "0x1a2eb"
+  ],
+  "result_sha256": "afd3cfad921d60754ed884a5246647eef6ad241cfe139a1b0f80d9ad392b8070",
+  "events_min": 4,
+  "events_max": 232,
+  "compiles": [
+    {
+      "build": "b1-prelude-api-20261027-r1",
+      "receipt_sha256": "c27751085a7417579f7a7e78bf30a17ae23921e539ea75b00463eb400ccc4909",
+      "binary_sha256": "ed3f8a94b87964aa810a19e1f11b6e08b310de8bcd5585b8d0f3fbcf363710ae"
+    },
+    {
+      "build": "b1-prelude-check-20261027-r1",
+      "receipt_sha256": "3d9a77cb5f33c9b1e48b2b41dc3d7687d7d93cd0de93b68b249cb645ca2e020f",
+      "binary_sha256": "d45ca8c1cf17dd5403ab209c0f552f25e14a192dd5de10f59c71c9ae47973c35"
+    }
+  ],
+  "independent_code_review": "bot3_prelude_review: no actionable findings in bot1 source/check/oracle; main Codex independently verified original bytes and final comparison",
+  "scope": {
+    "cases": 1594,
+    "matched": 1594,
+    "failed": 0,
+    "first_failures": [],
+    "whole_bot_complete": false,
+    "whole_manager_complete": false,
+    "whole_evaluator_complete": false,
+    "full_ea": false,
+    "native_prelude_executed": true,
+    "string_helper_intercepted": false,
+    "terminal_replies_supplied": true,
+    "original_ex5_changed": false,
+    "limits": [
+      "Prelude only: native entry18aa0 through18eb1 including session reports/checks, tick and current calendar. No order/position scan or complete EA.",
+      "Terminal replies, initial calendar/tick data and successful string allocation are supplied. Allocation failures and complete MT5 environment are outside this run.",
+      "session_flag compares the live byte at frame+c0. The remaining bits of the scratch dword hold incidental register bits and are not called a fully initialized bool."
+    ]
+  },
+  "whole_eas_complete": 0
+}

@@ -1,0 +1,4 @@
+FUNCTION 0x18aa0..0x1ef9c snapshot_sha256=45d53270186b7019a8721e0cf3734a61aac8e8660c70f7e602849b1c298d7cbd
+RANGE 0x1a2eb..0x1a2f2 (end excluded); base=0x23e5aa10000
+0x1a2eb xor eax, eax
+0x1a2ed jmp 0x23e5aa28daf[RVA=0x18daf]

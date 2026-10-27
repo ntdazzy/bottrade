@@ -1,9 +1,16 @@
 # bot-cua-toi-1
 
+Đã viết phần đầu đánh giá qua giờ giao dịch, thông báo và cập nhật giá/
+lịch hiện tại: **1.594/1.594 ca khớp**, gồm 30 giá trị và toàn bộ dịch vụ,
+đối số, chuỗi UTF-16/NULL theo thứ tự. Hai bản dựng đều **0 lỗi/0 cảnh báo**.
+Đối chứng chạy nguyên mã bot 1, không lấy kết quả bot 3 làm mẫu. Dịch vụ
+được cấp; còn phần quét lệnh/vị thế, ngữ cảnh nối tiếp và toàn bộ EA.
+[Nguồn, bằng chứng và giới hạn](phan-tich/chuong-trinh-chinh/evaluation-prelude-complete-20261027-r1/README.md).
+
 Đã ghép nạp cấu hình → ghi chú/mã/đổi tiền → chuẩn bị: **432/432 ca khớp**,
 so **127 giá trị và toàn bộ ghi chú lệnh**. Ba thân gốc chạy liên tục,
 kiểm cả chỉ số và chỗ quay về của lời gọi chuẩn bị; không đặt lại ở giữa.
-Biên dịch 0 lỗi/0 cảnh báo. Chưa gọi phần đánh giá hoặc có EA đầy đủ.
+Biên dịch 0 lỗi/0 cảnh báo. Chưa nối bước này với đánh giá trong EA đầy đủ.
 [Đặc tả và giới hạn](../danh-gia-doc-lap/strategy-setup-20261027-r1/SPEC.md).
 
 Đã thêm phần ghi chú, mã nhận diện và đổi tiền trước khi chuẩn bị:
