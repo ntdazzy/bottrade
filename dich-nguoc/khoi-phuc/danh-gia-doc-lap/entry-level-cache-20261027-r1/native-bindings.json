@@ -1,0 +1,42 @@
+[
+  {
+    "bot": 1,
+    "original_ex5_sha256": "a3b0de423a06e10ebedc279307b93d7cb9188ba2bb5de77131a913c865b0e922",
+    "bounds": [
+      "1c8c7",
+      "1ca24",
+      "1e94f",
+      "1e985",
+      "32890",
+      "32abd",
+      "32ac0",
+      "32cdb"
+    ],
+    "listing_sha256": "d79eb5d2d624e4912d4cc53dd57d27cd8fd79626757664eaaec3c5bc0ea78319",
+    "current_index": "0x678f4",
+    "timestamp_index_frame": "0xbc:i32",
+    "timestamps": "0x66430",
+    "upper": "0x66db0",
+    "lower": "0x670d0"
+  },
+  {
+    "bot": 3,
+    "original_ex5_sha256": "ee063d3d87490afe24e2f4ce85f6b05659320e297b102efd70207f71ca2feb83",
+    "bounds": [
+      "26e3e",
+      "26f9e",
+      "29c88",
+      "29cc0",
+      "3e040",
+      "3e26d",
+      "3e270",
+      "3e48b"
+    ],
+    "listing_sha256": "1ce2568343cb62977d8ff1bcd563342bc3666412839aac352412543605603516",
+    "current_index": "0x74934",
+    "timestamp_index_frame": "0x88:i64",
+    "timestamps": "0x73470",
+    "upper": "0x73df0",
+    "lower": "0x74110"
+  }
+]

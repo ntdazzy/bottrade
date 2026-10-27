@@ -1,0 +1,74 @@
+[
+  {
+    "bot": 1,
+    "case": 1097,
+    "tag": "entry-cache-service-effects",
+    "error": "ENTRY_SDK_ARGUMENT",
+    "api": 35,
+    "kind": 35,
+    "args": [
+      15,
+      1,
+      100,
+      0
+    ],
+    "strings": [
+      "OTHER",
+      null,
+      null,
+      null
+    ],
+    "actual_argument_string": "XAUUSD",
+    "regs": {
+      "RIP": "0x7ff6846f3b50",
+      "RCX": "0x23e575eae78",
+      "RDX": "0x23e5aa77918",
+      "R8": "0xf",
+      "R9": "0x1"
+    },
+    "state_bytes": [
+      7342,
+      7342
+    ],
+    "first_difference": null,
+    "entry_section_start": 4870,
+    "before_near": "000000000000000000000000000000000100000000000000",
+    "actual_near": "000000000000000000000000000000000100000000000000"
+  },
+  {
+    "bot": 3,
+    "case": 434,
+    "tag": "spread-gate-and-minimum",
+    "error": "STATE_BEFORE_SDK 434 10",
+    "api": 10,
+    "kind": 10,
+    "args": [
+      1,
+      0,
+      0,
+      0
+    ],
+    "strings": [
+      "Spread too high..(1.0) deleting order 11",
+      null,
+      null,
+      null
+    ],
+    "actual_argument_string": null,
+    "regs": {
+      "RIP": "0x7ff6846d49f0",
+      "RCX": "0x171514ca538",
+      "RDX": "0x2",
+      "R8": "0x1",
+      "R9": "0x590008"
+    },
+    "state_bytes": [
+      7358,
+      7358
+    ],
+    "first_difference": 4942,
+    "entry_section_start": 4886,
+    "before_near": "0000000000001440000000000000000002000000000000000000000000000000",
+    "actual_near": "0000000000001440260000000000000002000000000000000000000000000000"
+  }
+]

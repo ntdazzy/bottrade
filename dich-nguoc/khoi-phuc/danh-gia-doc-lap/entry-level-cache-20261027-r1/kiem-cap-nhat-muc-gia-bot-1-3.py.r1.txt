@@ -1,0 +1,146 @@
+"""Compare news through order limits, entry gates and actual cached price-level helpers.
+prepare|mql5(--build)|original|compare BOT RUN. Same-bar housekeeping and later signals are outside this scope.
+"""
+import argparse,copy,hashlib,importlib.util,json,math,re,shutil,struct,subprocess
+from pathlib import Path
+ROOT=Path(__file__).resolve().parents[1];MASK=(1<<64)-1
+def module(name,file):
+    spec=importlib.util.spec_from_file_location(name,ROOT/'cong-cu'/file);m=importlib.util.module_from_spec(spec);spec.loader.exec_module(m);return m
+news=module('entry_cache_limits','kiem-gioi-han-lenh-cho-day-du.py');base=news.base
+pub=base.pub;require=pub.require;sha=base.sha;save=base.save;MAGIC=base.MAGIC
+CFG={1:dict(end=0x1ca24,same=0x1e94f,blocked=0x67458,timeframe=0x6242c,aux_timeframe=0x624dc,older=0x624e4,recent=0x624e8,last=0x624e0,offset=0x624f0,times=0x66430,upper=0x66db0,lower=0x670d0,index=0x678f4,frame_index=0xbc),
+     3:dict(end=0x26f9e,same=0x29c88,blocked=0x74498,timeframe=0x6d524,aux_timeframe=0x6d5cc,older=0x6d5d4,recent=0x6d5d8,last=0x6d5d0,offset=0x6d5e0,times=0x73470,upper=0x73df0,lower=0x74110,index=0x74934,frame_index=0x88)}
+SCOPE=dict(whole_bot_complete=False,whole_manager_complete=False,whole_evaluator_complete=False,full_ea=False,native_news_through_entry_levels_executed=True,child_helpers_intercepted=False,terminal_replies_supplied=True,numeric_conversion_measured_in_mt5=True,original_ex5_changed=False)
+def cases():
+    rows=news.cases()
+    for c in rows:c.update(entry_blocked=1,entry_timeframe=15,aux_timeframe=5,aux_older=2,aux_recent=1,last_shift=4,aux_offset=5.,caller_index=0,current_index=2,digits=3,first_time=100,second_time=101,entry_mode=0,stored_time=0,level_gap=1.,high=[100.,100.,120.,100.,90.,80.,70.,60.,50.,40.,30.,20.,10.,0.,0.,0.],low=[100.,100.,80.,100.,110.,120.,130.,140.,150.,160.,170.,180.,190.,200.,200.,200.])
+    prototype=copy.deepcopy(rows[0]);prototype.update(enabled=0,ir_settings=[0,0,0,10,10],cpi_settings=[0,0,0,10,10],friday=[0,20,0,1,1],wide_enabled=0,pending_enabled=1,maximum_pending=2,orders=0,position=0,totals=[0]*8,entry_blocked=0)
+    def add(tag,**changes):
+        c=copy.deepcopy(prototype);c.update(changes);c['tag']=tag;rows.append(c);return c
+    for closed in [0,1,255]:
+        for enabled in [-1,0,1,2,255]:
+            for blocked in [0,1,255]:add('three-entry-gates',friday=[0,20,closed,1,1],pending_enabled=enabled,entry_blocked=blocked)
+    for stored in [-1,0,100,101]:
+        for first in [-1,0,100,101]:add('timestamp-captured-before-sdk',stored_time=stored,first_time=first)
+    for caller in [0,7,8,99]:
+        for current in [0,7,8,99]:add('caller-versus-live-index',caller_index=caller,current_index=current)
+    for older in [-1,0,1,2]:
+        for recent in [0,1]:
+            for last in [-1,0,4]:add('auxiliary-gate-and-loop',aux_older=older,aux_recent=recent,last_shift=last)
+    for digits in [-1,0,2,11,12,2147483647]:add('rounding-digits',digits=digits)
+    for mode in range(1,11):add('entry-cache-service-effects',entry_mode=mode)
+    for offset in [-math.inf,-1.,-0.,0.,1.,math.inf,math.nan]:add('offset-special',aux_offset=offset)
+    for unit in [-math.inf,-1.,-0.,0.,1.,math.inf,math.nan]:add('unit-special',unit=unit)
+    for gap in [-math.inf,-1.,-0.,0.,1.,math.inf,math.nan]:add('live-level-gap',level_gap=gap)
+    add('no-level-found',high=[0.]*16,low=[200.]*16)
+    for i,c in enumerate(rows):c['id']=i
+    return rows
+
+def arrays(c):return [c['stored_time']]*100,[1000.+i for i in range(100)],[2000.+i for i in range(100)]
+def encode(rows):
+    raw=bytearray(struct.pack('<3i',MAGIC,1,len(rows)))
+    for c in rows:
+        raw+=news.encode([c])[12:]+struct.pack('<6qQ6qQ',c['entry_blocked'],c['entry_timeframe'],c['aux_timeframe'],c['aux_older'],c['aux_recent'],c['last_shift'],base.bits(c['aux_offset']),c['caller_index'],c['current_index'],c['digits'],c['first_time'],c['second_time'],c['entry_mode'],base.bits(c['level_gap']))
+        times,upper,lower=arrays(c);raw+=struct.pack('<100q232d',*times,*upper,*lower,*c['high'],*c['low'])
+    return bytes(raw)
+class Original(news.Original):
+    def __init__(self,bot,casts):
+        super().__init__(bot,casts);self.entry=CFG[bot];self.wide=dict(self.wide,pass_ends=[self.entry['end']]);self.nfp=dict(self.nfp,end=self.entry['end'])
+        for api,off in [(35,0x7d3b50),(36,0x7d3c40),(37,0x7d3cc0)]:
+            a=0x7ff683f20000+off;existed=a in self.apis or a in self.sdk
+            if not any(lo<=a<=hi for lo,hi,_ in self.m.mem_regions()):self.m.mem_map(a&~4095,4096)
+            self.sdk[a]=api;self.m.mem_write(a,b'\xc3')
+            if not existed:self.m.hook_add(self.uc.UC_HOOK_CODE,self.call,begin=a,end=a)
+    def state(self):
+        raw=super().state();e=self.entry
+        for name in ['blocked','timeframe','aux_timeframe','older','recent','last']:raw+=struct.pack('<Q',self.value(e[name],'B' if name=='blocked' else 'i')&MASK)
+        raw+=bytes(self.m.mem_read(self.base+e['offset'],8));frame=0x5001f000+e['frame_index'];caller=struct.unpack('<'+('I' if self.bot==1 else 'Q'),self.m.mem_read(frame,4 if self.bot==1 else 8))[0]
+        raw+=struct.pack('<2Q',caller,self.value(e['index'],'I'));raw+=bytes(self.m.mem_read(self.base+e['times'],800))+bytes(self.m.mem_read(self.base+e['upper'],1600));return raw
+    def visit(self,m,address,size,user):
+        rva=address-self.base
+        if rva in [self.entry['end'],self.entry['same']]:self.entry_decision=2 if rva==self.entry['end'] else 1;self.done=True;m.emu_stop();return
+        result=super().visit(m,address,size,user)
+        if address==self.base+self.nfp['start'] and not self.entry_seeded:
+            self.entry_seeded=True;e=self.entry;c=self.case
+            for name,key in [('blocked','entry_blocked'),('timeframe','entry_timeframe'),('aux_timeframe','aux_timeframe'),('older','aux_older'),('recent','aux_recent'),('last','last_shift')]:m.mem_write(self.base+e[name],struct.pack('<'+('B' if name=='blocked' else 'i'),c[key]))
+            m.mem_write(self.base+e['offset'],struct.pack('<d',c['aux_offset']));m.mem_write(self.base+e['index'],struct.pack('<I',c['current_index']));m.mem_write(self.base+self.nfp['variables'][2],struct.pack('<d',c['level_gap']))
+            m.mem_write(0x5001f000+e['frame_index'],struct.pack('<'+('I' if self.bot==1 else 'Q'),c['caller_index']))
+            times,upper,lower=arrays(c);m.mem_write(self.base+e['times'],struct.pack('<100q',*times));m.mem_write(self.base+e['upper'],struct.pack('<200d',*upper,*lower))
+        return result
+    def entry_effect(self,api,args):
+        c=self.case;e=self.entry;m=self.m;mode=c['entry_mode'];n=self.nfp
+        if api==35:
+            if mode==1 and self.time_calls==1:m.mem_write(self.base+e['times']+c['caller_index']*8,struct.pack('<q',c['first_time']))
+            if mode==2 and self.time_calls==1:m.mem_write(self.base+e['timeframe'],struct.pack('<i',30));m.mem_write(self.base+n['symbol'],struct.pack('<IQ',0,self.string('OTHER')))
+            if mode==8 and self.time_calls==1:m.mem_write(self.base+e['older'],bytes(4))
+        if api==36 and self.high_calls==1:
+            if mode==3:m.mem_write(self.base+e['index'],struct.pack('<I',3))
+            if mode==4:m.mem_write(self.base+e['last'],struct.pack('<i',1));m.mem_write(self.base+n['variables'][1],struct.pack('<d',999.))
+            if mode==10:m.mem_write(self.base+n['symbol'],struct.pack('<IQ',0,self.string('OTHER')))
+        if api==37 and self.low_calls==1 and mode==5:m.mem_write(self.base+n['variables'][0],struct.pack('<d',-999.));m.mem_write(self.base+n['variables'][2],struct.pack('<d',2.))
+        if api==26 and args[0]==17:
+            self.digit_calls+=1
+            if mode==6:
+                m.mem_write(self.base+e['index'],struct.pack('<I',4 if self.digit_calls==1 else 5));m.mem_write(self.base+e['offset'],struct.pack('<d',7.));m.mem_write(self.base+self.wide['unit'],struct.pack('<d',2.));m.mem_write(self.base+self.wide['spread'],struct.pack('<d',3.))
+            if mode==7:self.high_values[2]=123.456789;self.low_values[2]=78.123456
+        if api==36 and self.digit_calls>0 and mode==9:
+            for field,value in [('aux_timeframe',30),('older',1),('recent',0)]:m.mem_write(self.base+e[field],struct.pack('<i',value))
+    def call(self,m,address,size,user):
+        api=self.sdk.get(address)
+        if api in [35,36,37]:
+            rd=self.tape;require(rd.block()==self.state(),'ENTRY_STATE_BEFORE_SDK '+str((self.case['id'],api)));kind,*args=rd.take('i4Q');strings=[rd.text() for _ in range(4)];payload=rd.block();error,=rd.take('I');x=self.x;r=lambda n:m.reg_read(getattr(x,'UC_X86_REG_'+n))
+            require(kind==api and r('RCX')==self.nfp['ctx'] and self.read_text(r('RDX'))==strings[0] and (r('R8')&0xffffffff)==(args[0]&0xffffffff) and (r('R9')&0xffffffff)==(args[1]&0xffffffff) and strings[1:]==[None]*3 and payload==b'' and args[3]==0,'ENTRY_SDK_ARGUMENT')
+            if api==35:
+                expected=self.case['first_time' if self.time_calls==0 else 'second_time']&MASK;require(args[1]==1 and args[2]==expected,'ENTRY_TIME_REPLY');self.time_calls+=1;m.reg_write(x.UC_X86_REG_RAX,expected)
+            else:
+                shift=args[1] if args[1]<(1<<63) else args[1]-(1<<64);values=self.high_values if api==36 else self.low_values;expected=base.bits(values[shift] if 0<=shift<len(values) else 0.);require(args[2]==expected,'ENTRY_BAR_REPLY');m.reg_write(x.UC_X86_REG_XMM0,expected);m.mem_write(self.base+self.cfg['slot'],struct.pack('<Q',expected))
+                if api==36:self.high_calls+=1
+                else:self.low_calls+=1
+            m.mem_write(self.base+self.nfp['error'],struct.pack('<I',error));self.api_count+=1;self.entry_effect(api,args);return
+        args=[]
+        if api==26:
+            peek=base.Reader(self.tape.raw[self.tape.pos:]);peek.block();kind,*args=peek.take('i4Q')
+            if args[0]==17:require(args[1]==(self.case['digits']&MASK),'ENTRY_DIGITS_REPLY')
+        result=super().call(m,address,size,user)
+        if api==26:self.entry_effect(api,args)
+        return result
+    def run(self,c,tape):
+        self.entry_seeded=False;self.entry_decision=0;self.time_calls=self.high_calls=self.low_calls=self.digit_calls=0;self.high_values=list(c['high']);self.low_values=list(c['low']);raw=super().run(c,tape);return raw[:-8]+struct.pack('<Q',self.entry_decision)
+
+def identity(bot):
+    h=ROOT/f'bot-cua-toi-{bot}';source=h/'source/MQL5';script=f'Scripts/bot-cua-toi-{bot}/Bot{bot}EvaluationEntryLevelsCheck.mq5';helpers=dict(news.identity(bot)['helpers_sha256']);helpers[Path(__file__).relative_to(ROOT).as_posix()]=sha(Path(__file__))
+    return dict(original_ex5_sha256=base.validation.original_hash(bot),sources_sha256={p.relative_to(source).as_posix():sha(p) for p in pub.closure(source/script,source)},helpers_sha256=helpers)
+def execute(bot,folder,build):
+    h=ROOT/f'bot-cua-toi-{bot}';mt=ROOT.parent/f'.local/mt5-bot{bot}-thread-20261025';receipt=h/'bang-chung/bien-dich'/build/'bien-nhan.json';b=json.loads(receipt.read_text(encoding='utf-8-sig'));script=f'Scripts/bot-cua-toi-{bot}/Bot{bot}EvaluationEntryLevelsCheck.mq5';require(b['target']==script and b['errors']==b['warnings']==0,'BUILD_NOT_CLEAN')
+    for n,v in identity(bot)['sources_sha256'].items():require(sha(mt/'MQL5'/n)==b['sources_sha256'][n]==v,'BUILD_SOURCE_CHANGED')
+    binary=mt/'MQL5'/Path(script).with_suffix('.ex5');require(sha(binary)==b['binary_sha256']==sha(receipt.parent/binary.name),'BUILD_BINARY_CHANGED');files=mt/f'MQL5/Files/bot{bot}-entry-level-cache'/folder.name;files.mkdir(parents=True,exist_ok=False);shutil.copyfile(folder/'cases.bin',files/'cases.bin')
+    preset=mt/'MQL5/Presets'/('friday-'+folder.name+'.set');ini=mt/('friday-'+folder.name+'.ini');preset.write_text('CheckRun='+folder.name+'\n',encoding='utf-16');ini.write_text(f'[Experts]\nEnabled=0\nAllowLiveTrading=0\nAllowDllImport=0\n[StartUp]\nScript=bot-cua-toi-{bot}\\Bot{bot}EvaluationEntryLevelsCheck\nScriptParameters={preset.name}\nSymbol=XAUUSD_NOCOST_V2\nPeriod=M15\nShutdownTerminal=1\n',encoding='utf-16');p=subprocess.Popen(f'"{mt/"terminal64.exe"}" /portable /config:"{ini}"',cwd=mt,creationflags=subprocess.CREATE_NO_WINDOW)
+    try:code=p.wait(timeout=120)
+    except subprocess.TimeoutExpired:p.terminate();p.wait(timeout=30);raise RuntimeError('MT5_TIMEOUT')
+    require(code==0,'MT5_EXIT');return files,receipt
+def main():
+    p=argparse.ArgumentParser(description=__doc__);p.add_argument('mode',choices=['prepare','mql5','original','compare']);p.add_argument('bot',type=int,choices=[1,3]);p.add_argument('run');p.add_argument('--build');a=p.parse_args();require(re.fullmatch('[a-z0-9-]{1,32}',a.run),'BAD_RUN');rows=cases();folder=ROOT/f'bot-cua-toi-{a.bot}/bang-chung/kiem-quan-ly-vi-the'/a.run;current=identity(a.bot);header=struct.pack('<3i',MAGIC,1,len(rows))
+    if a.mode=='prepare':folder.mkdir(parents=True,exist_ok=False);(folder/'cases.bin').write_bytes(encode(rows));save(folder/'baseline.json',dict(**current,cases=len(rows),inputs_sha256=sha(folder/'cases.bin'),**SCOPE));print(json.dumps(dict(cases=len(rows))));return
+    baseline=json.loads((folder/'baseline.json').read_text());require(all(baseline[k]==v for k,v in current.items()) and (folder/'cases.bin').read_bytes()==encode(rows),'IDENTITY_CHANGED')
+    if a.mode=='mql5':
+        files,receipt=execute(a.bot,folder,a.build);require((files/'script-status.bin').read_bytes()==struct.pack('<2i',0,len(rows)),'SCRIPT_FAILED')
+        for n in ['mql5-results.bin','sdk-tape.bin','script-status.bin','cast-values.bin']:
+            with (folder/n).open('xb') as f:f.write((files/n).read_bytes())
+        save(folder/'mql5-run.json',dict(**current,cases=len(rows),result_sha256=sha(folder/'mql5-results.bin'),sdk_tape_sha256=sha(folder/'sdk-tape.bin'),casts_sha256=sha(folder/'cast-values.bin'),build=a.build,build_receipt_sha256=sha(receipt),**SCOPE));print(json.dumps(dict(cases=len(rows))));return
+    if a.mode=='original':
+        tape=base.Reader((folder/'sdk-tape.bin').read_bytes());require(tape.take('3i')==(MAGIC,1,len(rows)),'TAPE_HEADER');o=Original(a.bot,news.news.news.cast_values(folder/'cast-values.bin'));o.cast_calls=o.queue_clears=0;raw=bytearray(header);calls=0
+        for c in rows:
+            require(tape.take('i')[0]==c['id'],'TAPE_CASE_ID');state=o.run(c,tape.block());raw+=struct.pack('<2i',c['id'],len(state))+state;calls+=o.api_count
+        require(tape.pos==len(tape.raw),'TAPE_TRAILING')
+        with (folder/'original-results.bin').open('xb') as f:f.write(raw)
+        save(folder/'original-run.json',dict(**current,cases=len(rows),result_sha256=sha(folder/'original-results.bin'),sdk_tape_sha256=sha(folder/'sdk-tape.bin'),sdk_calls=calls,cast_calls=o.cast_calls,queue_clears=o.queue_clears,casts_sha256=sha(folder/'cast-values.bin'),parent_instructions=len(o.covered),**SCOPE));print(json.dumps(dict(cases=len(rows),sdk_calls=calls)));return
+    for n in ['original','mql5']:
+        r=json.loads((folder/(n+'-run.json')).read_text());require(all(r[k]==v for k,v in current.items()) and r['result_sha256']==sha(folder/(n+'-results.bin')) and r['sdk_tape_sha256']==sha(folder/'sdk-tape.bin') and r['casts_sha256']==sha(folder/'cast-values.bin'),'RUN_CHANGED')
+    data=[base.Reader((folder/(n+'-results.bin')).read_bytes()) for n in ['original','mql5']];require(all(r.take('3i')==(MAGIC,1,len(rows)) for r in data),'RESULT_HEADER');fail=[]
+    for c in rows:
+        states=[]
+        for r in data:require(r.take('i')[0]==c['id'],'RESULT_ID');states.append(r.block())
+        if states[0]!=states[1]:fail.append(dict(id=c['id'],tag=c['tag'],first_difference=next((i for i,(x,y) in enumerate(zip(*states)) if x!=y),None),sizes=list(map(len,states))))
+    require(all(r.pos==len(r.raw) for r in data),'RESULT_TRAILING');result=dict(cases=len(rows),matched=len(rows)-len(fail),failed=len(fail),first_failures=fail[:12],**SCOPE,limits=['Continuous news through entry gates and cached levels; same-bar housekeeping and subsequent signals are excluded. Initial frame/state, terminal replies, logical SDK errors, successful allocation and measured number conversions supplied. No full evaluator or EA.'])
+    save(folder/'comparison.json',result);print(json.dumps(result));raise SystemExit(bool(fail))
+if __name__=='__main__':main()

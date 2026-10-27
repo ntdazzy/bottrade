@@ -15,9 +15,9 @@ double Bot1RoundPrice(const double price,const uint digits)
    return (double)(long)((price-(double)whole)*scale+(0.0<price ? 0.5000001 : -0.5000001))/scale+(double)whole;
 }
 
-double Bot1UpperLevel(const string symbol,const ENUM_TIMEFRAMES timeframe,
-                     const int older_width,const int recent_width,const int last_shift,
-                     const double ask,const double gap)
+double Bot1UpperLevel(const string &symbol,const ENUM_TIMEFRAMES timeframe,
+                     const int older_width,const int recent_width,const int &last_shift,
+                     const double &ask,const double &gap)
 {
    int shift=recent_width+1;
    do
@@ -51,9 +51,9 @@ double Bot1UpperLevel(const string symbol,const ENUM_TIMEFRAMES timeframe,
    return 9999.0;
 }
 
-double Bot1LowerLevel(const string symbol,const ENUM_TIMEFRAMES timeframe,
-                     const int older_width,const int recent_width,const int last_shift,
-                     const double bid,const double gap)
+double Bot1LowerLevel(const string &symbol,const ENUM_TIMEFRAMES timeframe,
+                     const int older_width,const int recent_width,const int &last_shift,
+                     const double &bid,const double &gap)
 {
    int shift=recent_width+1;
    do

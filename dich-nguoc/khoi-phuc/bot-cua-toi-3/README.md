@@ -1,12 +1,19 @@
+Đã ghép `Bot3EvaluationEntryLevels.mqh`: tin/cuối tuần/chênh lệch/
+đặt lại/giới hạn → cổng vào → lưu thời gian nến và mức giá.
+**1.128/1.128ca khớp**, so **22.926 lần gọi dịch vụ** và800ô bảng.
+Nguồn trực tiếp/bộ kiểm0lỗi/0cảnh báo. Còn phát sinh lệnh phía sau,
+thống kê/hiển thị/khởi tạo và toànEA; chưa chạy cặp toàn bot.
+[Phạm vi](../danh-gia-doc-lap/entry-level-cache-20261027-r1/SPEC.md).
+
+Các mốc dưới đây giữ bằng chứng cũ; phần còn thiếu ghi tại từng mốc
+không thay trạng thái hiện tại ở trên.
+
 Đã ghép `Bot3EvaluationNewsAndOrders.mqh`: tin → cuối tuần →
 lưu/hủy/đặt lại lệnh → kiểm soát số lệnh chờ. **989/989ca khớp**,
 so **20.595 lần gọi dịch vụ**,500ô bảng và trạng thái trước mỗi dịch vụ.
 Nguồn trực tiếp/bộ kiểm0lỗi/0cảnh báo. Còn cổng vào/cập nhật mức giá/
 phát sinh lệnh phía sau, khởi tạo/hiển thị/toànEA.
 [Phạm vi](../danh-gia-doc-lap/news-orders-20261027-r1/SPEC.md).
-
-Các mốc dưới đây giữ bằng chứng cũ; phần còn thiếu ghi tại từng mốc
-không thay trạng thái hiện tại ở trên.
 
 Đã ghép `Bot3NewsFridaySpreadRestoreFlow.mqh`: tin → cuối tuần →
 lưu/hủy khi chênh lệch cao → đặt lại lệnh khi chênh lệch thấp.

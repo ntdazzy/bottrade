@@ -1,0 +1,30 @@
+{
+  "checks": [
+    {
+      "bot": 1,
+      "cases": 1128,
+      "sdk_calls": 22551,
+      "cast_calls": 364,
+      "queue_clears": 120,
+      "parent_instructions": 939,
+      "result_sha256": "4e1c6c0206939167e67490e045e05d7c6a318520e41d5f9c4dec8dd5d896e10b",
+      "sdk_tape_sha256": "60f892b2a339c021110a70770d60a96f1c4fe5bb38058e9bd506189104f01f34",
+      "casts_sha256": "8058938d0abde756fbb44fbbb9ff249fc6faa0e6335021cd74fcb1695651ebed",
+      "matched": 1128
+    },
+    {
+      "bot": 3,
+      "cases": 1128,
+      "sdk_calls": 22926,
+      "cast_calls": 364,
+      "queue_clears": 120,
+      "parent_instructions": 2266,
+      "result_sha256": "5851fbac8edd0cb84b258e90d6d494e79ce4ad82e87bb3886219500e6879200f",
+      "sdk_tape_sha256": "422c31bf06c7aabe0376e34378513ecd864c4c7e6b6fd4f8bbe7ff56c9e5f6c3",
+      "casts_sha256": "8058938d0abde756fbb44fbbb9ff249fc6faa0e6335021cd74fcb1695651ebed",
+      "matched": 1128
+    }
+  ],
+  "independent_review": "friday_flow_review: no material findings; source/reference reads, formulas, API order and recorder reviewed",
+  "whole_eas_complete": 0
+}

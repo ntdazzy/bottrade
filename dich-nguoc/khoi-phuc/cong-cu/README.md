@@ -1,3 +1,11 @@
+- `kiem-cap-nhat-muc-gia-bot-1-3.py prepare|mql5|original|compare BOT RUN`:
+  ghép tới cổng vào/timestamp/mức trên-dưới;1.128ca mỗi bot. `mql5`
+  cần `--build BUILD`. Chỉ số caller/timestamp khác chỉ số giá sống;
+  Sourcehelper nhận tham chiếu và giữ đọc lại sau dịch vụ. Còn phát
+  sinh lệnh/thống kê cùng nến/toànEA. Bộ đọc tránh chép lặp băng lớn.
+- `tao-bo-kiem-cap-nhat-muc-gia.py`: tạo bộ ghi iTime/iHigh/iLow cùng
+  trạng thái/bảng; ghi đối số trước tác động dịch vụ, không thay luật bot.
+
 - `kiem-gioi-han-lenh-cho-day-du.py prepare|mql5|original|compare BOT RUN`:
   ghép tin/cuối tuần/chênh lệch/đặt lại tới giới hạn lệnh,989ca mỗi bot.
   `mql5` cần `--build BUILD`; so tổng thay giữa các vòng/cờ/giới hạn sống,
