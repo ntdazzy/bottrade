@@ -1,0 +1,21 @@
+{
+  "checks": [
+    {
+      "cases": 168,
+      "sdk_calls": 14103,
+      "cast_calls": 4,
+      "parent_instructions": 1451,
+      "result_sha256": "8ea0c1038718feca228a314f1207a1911b5d84dd5b5c5fe338387284f27c767d",
+      "sdk_tape_sha256": "a38f01bb677a4ef5a6b3f093aa6e88b07e13ec135182c56b78cd309debd19cf9",
+      "casts_sha256": "2ba34db75feb1688ac1be6f895ad59ce8809b903d35cc623ea0871f66a407aa9",
+      "bot": 1,
+      "matched": 168,
+      "volume_mode_coverage": [
+        0
+      ],
+      "withdrawals_disabled": true
+    }
+  ],
+  "independent_review": "friday_flow_review: no concrete mismatches found in full loop/live submission; actual native comparison passes",
+  "whole_eas_complete": 0
+}

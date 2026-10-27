@@ -763,3 +763,14 @@
 /cong-cu/tao-bo-kiem-cap-nhat-muc-gia.py -text
 /danh-gia-doc-lap/entry-level-cache-20261027-r1/** -text
 /danh-gia-doc-lap/entry-level-cache-20261027-r1/*-native-*.txt whitespace=-blank-at-eol,-blank-at-eof,cr-at-eol
+
+/bot-cua-toi-1/source/MQL5/Include/bot-cua-toi-1/Bot1EntryLevels.mqh -text
+/bot-cua-toi-1/source/MQL5/Include/bot-cua-toi-1/Bot1EntryLoop.mqh -text
+/bot-cua-toi-1/source/MQL5/Include/bot-cua-toi-1/Bot1EntrySubmissionLive.mqh -text
+/bot-cua-toi-1/source/MQL5/Scripts/bot-cua-toi-1/Bot1EntryLoop*.mq5 -text
+/bot-cua-toi-1/bang-chung/kiem-quan-ly-vi-the/b1-entry-loop-*/** -text
+/bot-cua-toi-1/bang-chung/bien-dich/b1-entry-loop-*/** -text
+/cong-cu/kiem-vong-phat-sinh-lenh-bot-1.py -text
+/cong-cu/tao-bo-kiem-vong-phat-sinh-lenh-bot-1.py -text
+/danh-gia-doc-lap/entry-submission-20261027-r1/** -text
+/danh-gia-doc-lap/entry-submission-20261027-r1/*-native-*.txt whitespace=-blank-at-eol,-blank-at-eof,cr-at-eol

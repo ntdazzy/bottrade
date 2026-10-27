@@ -1,3 +1,11 @@
+- `kiem-vong-phat-sinh-lenh-bot-1.py prepare|mql5|original|compare 1 RUN`:
+  cả vòng vào lệnh1ca24..1e94f, nguyên các thân con;168ca/14.103dịchvụ.
+  `mql5` cần `--build BUILD`. Bộ ghép dùngvolume0/rúttiềntắt, còn trước/
+  sau vàtoànEA. So đúng trạng thái dùng/ghi, không xem padding cache là
+  biến độc lập với scalaractive_step ở0x673e8.
+- `tao-bo-kiem-vong-phat-sinh-lenh-bot-1.py`: tạo bộ ghi AccountInfo,
+  ký quỹ và toàn bộ trạng thái vòng/giao dịch; không dùngtài khoảnthật.
+
 - `kiem-cap-nhat-muc-gia-bot-1-3.py prepare|mql5|original|compare BOT RUN`:
   ghép tới cổng vào/timestamp/mức trên-dưới;1.128ca mỗi bot. `mql5`
   cần `--build BUILD`. Chỉ số caller/timestamp khác chỉ số giá sống;

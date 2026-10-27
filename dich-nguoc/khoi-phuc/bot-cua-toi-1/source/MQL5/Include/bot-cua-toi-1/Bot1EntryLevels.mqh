@@ -4,9 +4,9 @@
 #define BOT1_ENTRY_LEVELS_MQH
 #include "Bot1PriceLevels.mqh"
 
-bool Bot1NearbyPending(const bool buy,const double level,const string symbol,const int magic,
-                      const double buy_offset,const double sell_offset,const double unit,
-                      const double radius,ulong &last_ticket)
+bool Bot1NearbyPending(const bool buy,const double level,const string &symbol,const int &magic,
+                      const double &buy_offset,const double &sell_offset,const double &unit,
+                      const double &radius,ulong &last_ticket)
 {
    // The native loop deliberately starts at OrdersTotal(), including one invalid index.
    for(int i=OrdersTotal();i>=0;i--)
@@ -23,16 +23,16 @@ bool Bot1NearbyPending(const bool buy,const double level,const string symbol,con
    return false;
 }
 
-double Bot1EntryPrice(const bool buy,const string symbol,const ENUM_TIMEFRAMES timeframe,const int shift)
+double Bot1EntryPrice(const bool buy,const string &symbol,const ENUM_TIMEFRAMES timeframe,const int shift)
 {
    return buy ? iHigh(symbol,timeframe,shift) : iLow(symbol,timeframe,shift);
 }
 
-double Bot1EntryLevel(const bool buy,const string symbol,const ENUM_TIMEFRAMES timeframe,
-                     const ENUM_TIMEFRAMES confirm_timeframe,const int older_width,
-                     const int recent_width,const int last_shift,const double quote,
-                     const double gap_points,const double unit,const int magic,
-                     const double buy_offset,const double sell_offset,const double radius,
+double Bot1EntryLevel(const bool buy,const string &symbol,const ENUM_TIMEFRAMES timeframe,
+                     const ENUM_TIMEFRAMES &confirm_timeframe,const int &older_width,
+                     const int &recent_width,const int &last_shift,const double &quote,
+                     const double &gap_points,const double &unit,const int &magic,
+                     const double &buy_offset,const double &sell_offset,const double &radius,
                      ulong &last_ticket)
 {
    int shift=recent_width+1;

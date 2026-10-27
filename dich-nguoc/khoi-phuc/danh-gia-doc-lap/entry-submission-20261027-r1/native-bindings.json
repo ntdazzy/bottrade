@@ -1,0 +1,22 @@
+{
+  "bot": 1,
+  "original_ex5_sha256": "a3b0de423a06e10ebedc279307b93d7cb9188ba2bb5de77131a913c865b0e922",
+  "bounds": [
+    "1ca24",
+    "1e94f"
+  ],
+  "listing_sha256": "36ecc27256a8d449b7c47be7599dbb2aa460127cfe764afd00a7a35d70efa26a",
+  "loop_source": "Bot1EntryLoop.mqh",
+  "actual_children": {
+    "volume": "0x34780",
+    "buy_entry": "0x265a0",
+    "sell_entry": "0x26960",
+    "near_buy": "0x3c670",
+    "near_sell": "0x3c8d0",
+    "margin": "0x3cb30",
+    "validate": "0x3bfe0",
+    "open": "0x32dd0",
+    "send": "0x950",
+    "errors": "0x336d0"
+  }
+}

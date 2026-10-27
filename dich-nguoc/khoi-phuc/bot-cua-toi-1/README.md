@@ -1,12 +1,19 @@
+Đã dựng toàn vòng phát sinh lệnh `Bot1EntryLoop.mqh`: khối lượng →
+hạn/xóa quá hạn → cổng vị thế/giá → ký quỹ/kiểm khối lượng → gửi/thử lại.
+**168/168ca khớp**, **14.103lần gọi dịch vụ**, các thân con gốc chạy thật.
+Nguồn/bộ kiểm0lỗi/0cảnh báo. Lượt ghép dùngchếđộkhốilượng0/rúttiềntắt;
+còn nối trước/sau, thống kê/hiển thị/khởi tạo/toànEA.
+[Phạm vi](../danh-gia-doc-lap/entry-submission-20261027-r1/SPEC.md).
+
+Các mốc dưới đây giữ bằng chứng cũ; phần còn thiếu ghi tại từng mốc
+không thay trạng thái hiện tại ở trên.
+
 Đã ghép `Bot1EvaluationEntryLevels.mqh`: tin/cuối tuần/chênh lệch/
 đặt lại/giới hạn → cổng vào → lưu thời gian nến và mức giá.
 **1.128/1.128ca khớp**, so **22.551 lần gọi dịch vụ** và800ô bảng.
 Nguồn trực tiếp/bộ kiểm0lỗi/0cảnh báo. Còn phát sinh lệnh phía sau,
 thống kê/hiển thị/khởi tạo và toànEA; chưa chạy cặp toàn bot.
 [Phạm vi](../danh-gia-doc-lap/entry-level-cache-20261027-r1/SPEC.md).
-
-Các mốc dưới đây giữ bằng chứng cũ; phần còn thiếu ghi tại từng mốc
-không thay trạng thái hiện tại ở trên.
 
 Đã ghép `Bot1EvaluationNewsAndOrders.mqh`: tin → cuối tuần →
 lưu/hủy/đặt lại lệnh → kiểm soát số lệnh chờ. **989/989ca khớp**,
