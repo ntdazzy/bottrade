@@ -1,0 +1,28 @@
+{
+  "checks": [
+    {
+      "bot": 1,
+      "cases": 1003,
+      "matched": 1003,
+      "fatal_cases": 5,
+      "fatal_matched": 5,
+      "result_sha256": "fd53774d9d4abbfec3480a96f002153cc498b421534da5907cc2e66fb5e810b9",
+      "cast_results_sha256": "9afb21728ec9560fbe268d15bd78760438c8f055d9173174ab49c36efcf8137b",
+      "fixed_results_sha256": "9dcc6ccc08f2851dadc8fc01b41181e97e65b155be5c3516d429c3ac9aa4983e",
+      "instructions": 1146
+    },
+    {
+      "bot": 3,
+      "cases": 1039,
+      "matched": 1039,
+      "fatal_cases": 6,
+      "fatal_matched": 6,
+      "result_sha256": "921fc79f6a1fbe14a3465cbc52350b919b74548dd79e8c4b9e8fa614f42d5db1",
+      "cast_results_sha256": "5e0ed34da9eaabcdf0cdb1f4daaa51a5550d442a32441012f44dcc72ecb22d9e",
+      "fixed_results_sha256": "584a99a59e3c19d8c0bb9224bdc564d77a786b6c08441c0fdcbb16ceabf34e85",
+      "instructions": 1240
+    }
+  ],
+  "independent_review": "volume_live_source_review: initial index copy rejected; current reference fixed and no further publication-blocking findings; primary Codex inspected raw MINSD/MAXSD and corrected NaN caps",
+  "whole_eas_complete": 0
+}

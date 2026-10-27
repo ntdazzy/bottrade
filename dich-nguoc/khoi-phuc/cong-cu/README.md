@@ -1,3 +1,10 @@
+- `kiem-khoi-luong-thuc-bot-1-3.py prepare|mql5|original|compare BOT RUN`:
+  toàn thân khối lượng/rút tiền/đổi tiền; chạy mql5 trước để đo chuỗi số
+  của MT5 thật. `mql5` và `errors` cần `--build BUILD` đúng bộ kiểm đã
+  biên dịch bật kiểm chia0. `errors` chạy từng ca lỗi riêng, so nhật ký
+  mới và từng byte dịch vụ/trạng thái trước lỗi. Lượt chốt b1/b3-volume-runtime-20261027-r3:
+  1.003/1.039ca thường và5/6ca lỗi; chưa ghépEA, chưa đủ trạng thái sát lỗi.
+
 # Công cụ hiện hành cho bot 1 và 3
 
 Chạy từ gốc dự án. Mỗi lượt dùng tên mới, giữ nguyên bằng chứng cũ.

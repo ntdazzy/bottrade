@@ -1,3 +1,10 @@
+Đã phục hồi thêm toàn bước tính khối lượng `Bot3VolumeRuntime.mqh`:
+**1039/1039 ca thường** khớp từng byte, **6/6 ca chia 0** dừng đúng,
+so cả đọc lại dữ liệu, thứ tự/chuỗi thông báo, ghi vốn và toàn mảng khối lượng.
+Nguồn gọi MT5 trực tiếp và bộ kiểm đều biên dịch 0 lỗi/0 cảnh báo.
+Còn nối vào toàn bộ hàm đánh giá/EA; trạng thái ngay điểm lỗi sau
+lần đọc dịch vụ cuối chưa được xuất đủ. [Phạm vi](../danh-gia-doc-lap/volume-runtime-20261027-r1/SPEC.md).
+
 # bot-cua-toi-3
 
 Đã dựng cổng thay đổi vốn trước bước tính khối lượng/tạo lại lệnh:

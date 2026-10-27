@@ -1,0 +1,34 @@
+{
+  "original_ex5_sha256": "a3b0de423a06e10ebedc279307b93d7cb9188ba2bb5de77131a913c865b0e922",
+  "sources_sha256": {
+    "Scripts/bot-cua-toi-1/Bot1VolumeRuntimeCheck.mq5": "2f4e3d33bdcebcfc782a6266481839f495ef73dc574bafea52a100a10f7cfad2",
+    "Include/bot-cua-toi-1/Bot1VolumeWithdrawal.mqh": "d574d95090ef8f603bbd82f80d5ee845eb515921e77aa816a0c1b49d174a42b9",
+    "Include/bot-cua-toi-1/Bot1VolumeRuntime.mqh": "e72eaadb94ef4ea795c167d9dc376944b0125e8c9e1e9c51b2e813f0c0a8e6f6",
+    "Include/bot-cua-toi-1/Bot1PriceLevels.mqh": "601bdd551e24e3ac9a7742cc00e057d881b069ab672843bec31b3f32a43316b1",
+    "Include/bot-cua-toi-1/Bot1VolumeCurrency.mqh": "1630e90ff797ff2751612198a10b261b07092558f3e8c345adf859ce8f832539",
+    "Include/bot-cua-toi-1/Bot1Volume.mqh": "7a10296861bc1ed3e3bed89b5625c26eff04df29a859a9f72d221857796c5a9d"
+  },
+  "helpers_sha256": {
+    "cong-cu/kiem-khoi-luong-thuc-bot-1-3.py": "7ec34f3c65e0c58352c7d1473cab9430c5ec515430c399b5b8cb71e3b98aad1a",
+    "cong-cu/kiem-muc-gia-bot-1-3.py": "a6c447ca80029fb63ced0c9d1673bb14222a7736b04df5c410f280f8471d6a35",
+    "cong-cu/kiem-doi-tien-bot-1-3.py": "203fd243f93ad01d9229151335fc76850aa4a51ec1005f96c3b3f0de79cac8a9",
+    "cong-cu/kiem-khoi-luong-hop-le-bot-1-3.py": "8251fb4423d6f5f2e1b79a1c53dbb25fb5a6c568bb61cddef23396dc982243f0",
+    "cong-cu/kiem-ban-git-quan-ly.py": "7186478774b34e0d72b4594fbcc85972d9b4c07ed02160987d46d34f39dcb160",
+    "cong-cu/kiem-rut-tien-bot-1-3.py": "dd02f9b093b9a8ac68b6e689985c0993b7e63cabc84deb7b838835ded34db9ce",
+    "cong-cu/kiem-khoi-luong-ghep-bot-1-3.py": "e89baac423cb8aa5a04d2550140616d53aaef599be7c10a06d58f79980bd6188",
+    "cong-cu/kiem-luong-von-day-du-bot-1-3.py": "b7d88c21f6748aedd4ad30c368acf77ae71e6d281aa43567a90be175bd12c672",
+    "cong-cu/kiem-gia-vao-bot-1-3.py": "22394e48932feb7242b967aa58e327d2990402f12bfe52621916f64914c9dac2",
+    "cong-cu/kiem-khoi-luong-bot-1-3.py": "32539c090422ab6bc2ce94a9fdacfd33e53c394aca58bd3827c2232d817d7f77"
+  },
+  "cases": 1003,
+  "fatal_cases": 5,
+  "inputs_sha256": "b5c11829bd18628833ebd6c8519a4fa656c83e6d2239b9fd944ad64452b4f9ce",
+  "whole_bot_complete": false,
+  "whole_manager_complete": false,
+  "whole_evaluator_complete": false,
+  "full_ea": false,
+  "native_volume_withdrawal_currency_executed": true,
+  "child_algorithms_replaced": false,
+  "terminal_replies_supplied": true,
+  "original_ex5_changed": false
+}

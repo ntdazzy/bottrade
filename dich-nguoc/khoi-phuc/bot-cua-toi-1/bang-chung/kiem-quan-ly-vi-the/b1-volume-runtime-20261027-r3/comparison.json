@@ -1,0 +1,17 @@
+{
+  "cases": 1003,
+  "matched": 1003,
+  "failed": 0,
+  "first_failures": [],
+  "whole_bot_complete": false,
+  "whole_manager_complete": false,
+  "whole_evaluator_complete": false,
+  "full_ea": false,
+  "native_volume_withdrawal_currency_executed": true,
+  "child_algorithms_replaced": false,
+  "terminal_replies_supplied": true,
+  "original_ex5_changed": false,
+  "limits": [
+    "Complete volume caller and child algorithms; terminal replies, successful allocation and numeric cast text measured in isolated MT5 are supplied. No whole evaluator or EA."
+  ]
+}

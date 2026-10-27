@@ -1,0 +1,58 @@
+[
+  {
+    "bot": 1,
+    "begin": "0x34780",
+    "end": "0x3621b",
+    "sha256": "1b2483762ad0af66606c5351fca2dfb8023d7c09fb2872239c5c3d491f9cf65d",
+    "listing": "bot1-native-34780-3621b.txt"
+  },
+  {
+    "bot": 1,
+    "begin": "0x173f0",
+    "end": "0x17839",
+    "sha256": "1f981968afb57b93a4aac2b68353cf2ea27f35c0558ec04b771dae2758aa0aff",
+    "listing": "bot1-native-173f0-17839.txt"
+  },
+  {
+    "bot": 1,
+    "begin": "0x36220",
+    "end": "0x3bfd5",
+    "sha256": "12d84118b1c8ee2534de2681d7328f1740ee616784cea1195f1ef0a29805993d",
+    "listing": "bot1-native-36220-3bfd5.txt"
+  },
+  {
+    "bot": 1,
+    "begin": "0x3572f",
+    "end": "0x35820",
+    "sha256": "34910136bb921d4c69c8fb20dc0bd6b67a08815b012b2bc2e477ed71a33c3591",
+    "listing": "bot1-native-3572f-35820.txt"
+  },
+  {
+    "bot": 3,
+    "begin": "0x3f900",
+    "end": "0x41771",
+    "sha256": "7b2c0ebfaa2a0429ea8da7330b66f5a73a8cd44e9729aeb82a4af2f8cff4d598",
+    "listing": "bot3-native-3f900-41771.txt"
+  },
+  {
+    "bot": 3,
+    "begin": "0x1fd00",
+    "end": "0x20149",
+    "sha256": "7b7b895a15355ea5be654f8f46ced51b3943bf49aa0ed2ac4e67aa20ddb9bc05",
+    "listing": "bot3-native-1fd00-20149.txt"
+  },
+  {
+    "bot": 3,
+    "begin": "0x8300",
+    "end": "0xe0b5",
+    "sha256": "7c425c07ba2bc4ff9bc68ac7082bec2e6278582e9189e1f0c9641c43005823b6",
+    "listing": "bot3-native-8300-e0b5.txt"
+  },
+  {
+    "bot": 3,
+    "begin": "0x40b85",
+    "end": "0x40c50",
+    "sha256": "a94d733eb4f0016dcc0a8ed6c1821807ac48600bf2af46c20a8807f2303d3b42",
+    "listing": "bot3-native-40b85-40c50.txt"
+  }
+]

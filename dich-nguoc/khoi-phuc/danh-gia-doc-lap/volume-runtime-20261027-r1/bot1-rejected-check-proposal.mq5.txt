@@ -1,0 +1,49 @@
+#property strict
+input string CheckRun="";
+input int OnlyCase=-1;
+union DB { double d; ulong u; };
+#include "../../Include/bot-cua-toi-1/Bot1Volume.mqh"
+ulong Bits(const double v){ DB x; x.d=v; return x.u; }
+string ReadText(const int h){ int n=FileReadInteger(h); return n>0?FileReadString(h,n):""; }
+int out_file; int event_count; int event_bytes; int current_id;
+Bot1VolumeSettings g_r; Bot1VolumeState g_s; Bot1VolumeContext g_c;
+double g_prices[8],g_volumes[8],g_reply26[16],g_reply34[16],g_reply35[16],g_reply36[16];
+int n26,n34,n35,n36,i26,i34,i35,i36; string g_currency[128]; int nc,ic;
+long g_last_check,g_last_deal; string g_peak_key,g_time_key,g_symbol,g_suffix;
+void WriteText(const string s){ int n=StringLen(s); FileWriteInteger(out_file,n); if(n>0)FileWriteString(out_file,s,n); }
+void State(){ FileWriteLong(out_file,(long)Bits(g_s.effective_balance)); FileWriteLong(out_file,(long)Bits(g_s.highest_balance)); FileWriteLong(out_file,(long)g_s.mode); FileWriteLong(out_file,(long)Bits(g_s.strategy_loss)); FileWriteLong(out_file,(long)g_s.balance_step); FileWriteLong(out_file,(long)g_last_check); FileWriteLong(out_file,(long)g_last_deal); FileWriteLong(out_file,(long)0); for(int i=0;i<8;i++)FileWriteLong(out_file,(long)Bits(g_volumes[i])); }
+void Event(const int api,const ulong a=0,const ulong b=0,const ulong c=0,const string t1="",const string t2=""){ FileWriteInteger(out_file,api);FileWriteLong(out_file,(long)a);FileWriteLong(out_file,(long)b);FileWriteLong(out_file,(long)c);WriteText(t1);WriteText(t2);State();event_count++; }
+double MockAccountInfoDouble(const ENUM_ACCOUNT_INFO_DOUBLE p){ double v=(p==ACCOUNT_EQUITY?g_c.equity:g_c.balance);Event(1,(ulong)p,0,Bits(v));return v; }
+double MockSymbolInfoDouble(const string s,const ENUM_SYMBOL_INFO_DOUBLE p){ double v=0;int k=(int)p; if(k==26){v=g_c.tick_value;if(i26<n26)v=g_reply26[i26++];}else if(k==34){v=g_c.minimum;if(i34<n34)v=g_reply34[i34++];}else if(k==35){v=g_c.maximum;if(i35<n35)v=g_reply35[i35++];}else if(k==36){v=g_c.step;if(i36<n36)v=g_reply36[i36++];} Event(2,(ulong)k,0,Bits(v),s);return v; }
+long MockMqlInfoInteger(const ENUM_MQL_INFO_INTEGER p){Event(3,(ulong)p,0,0);return 0;}
+datetime MockTimeCurrent(){Event(4);return (datetime)0;}
+bool MockHistorySelect(const datetime a,const datetime b){Event(5,(ulong)a,(ulong)b,1);return true;}
+int MockHistoryDealsTotal(){Event(6);return 0;}
+ulong MockHistoryDealGetTicket(const int i){Event(7,(ulong)i);return 0;}
+long MockHistoryDealGetInteger(const ulong t,const ENUM_DEAL_PROPERTY_INTEGER p){Event(8,t,(ulong)p,0);return 0;}
+double MockHistoryDealGetDouble(const ulong t,const ENUM_DEAL_PROPERTY_DOUBLE p){Event(9,t,(ulong)p,0);return 0;}
+bool MockGlobalVariableSet(const string k,const double v){Event(10,0,0,Bits(v),k);return true;}
+string MockAccountInfoString(const ENUM_ACCOUNT_INFO_STRING p){string v=ic<nc?g_currency[ic++]:"USD";Event(11,(ulong)p,0,0,v);return v;}
+double MockClose(const string s,const ENUM_TIMEFRAMES tf,const int sh){double v=g_prices[MathMin(i26,7)];Event(12,(ulong)tf,(ulong)sh,Bits(v),s);return v;}
+void MockPrint(const string s){Event(13,2,1,0,s);}
+void MockPrint(const string s,const int n){Event(13,2,1,(ulong)n,s);}
+void MockAlert(const string s){Event(13,3,1,0,s);}
+#define AccountInfoDouble MockAccountInfoDouble
+#define SymbolInfoDouble MockSymbolInfoDouble
+#define MQLInfoInteger MockMqlInfoInteger
+#define TimeCurrent MockTimeCurrent
+#define HistorySelect MockHistorySelect
+#define HistoryDealsTotal MockHistoryDealsTotal
+#define HistoryDealGetTicket MockHistoryDealGetTicket
+#define HistoryDealGetInteger MockHistoryDealGetInteger
+#define HistoryDealGetDouble MockHistoryDealGetDouble
+#define GlobalVariableSet MockGlobalVariableSet
+#define AccountInfoString MockAccountInfoString
+#define iClose MockClose
+#define Print MockPrint
+#define Alert MockAlert
+#include "../../Include/bot-cua-toi-1/Bot1VolumeRuntime.mqh"
+uint g_index_u=0;
+void ReadCase(const int h){
+   g_r.use_equity=FileReadInteger(h)!=0;g_r.only_up=FileReadInteger(h)!=0;g_r.manual_balance=FileReadDouble(h);g_r.start_lots=FileReadDouble(h);g_r.max_lots=FileReadDouble(h);g_r.lot_scale=FileReadDouble(h);g_r.manual_risk=FileReadDouble(h);g_r.strategy_risk=FileReadDouble(h);g_s.mode=(uint)FileReadInteger(h);g_s.highest_balance=FileReadDouble(h);g_s.volume=FileReadDouble(h);g_s.strategy_loss=FileReadDouble(h);g_s.balance_step=FileReadInteger(h);g_c.balance=FileReadDouble(h);g_c.equity=FileReadDouble(h);g_c.converted_balance=FileReadDouble(h);g_c.converted_dd_balance=FileReadDouble(h);g_c.tick_value=FileReadDouble(h);g_c.minimum=FileReadDouble(h);g_c.maximum=FileReadDouble(h);g_c.step=FileReadDouble(h);g_c.stop_distance=FileReadDouble(h);g_c.multiplier=FileReadInteger(h);g_c.enabled_mask=(uint)FileReadInteger(h);int enabled=FileReadInteger(h),tester=FileReadInteger(h),select_ok=FileReadInteger(h),restore_ok=FileReadInteger(h),reported=FileReadInteger(h);g_last_check=FileReadLong(h);g_last_deal=FileReadLong(h);long time0=FileReadLong(h),time1=FileReadLong(h),time2=FileReadLong(h);g_symbol=ReadText(h);g_suffix=ReadText(h);g_peak_key=ReadText(h);g_time_key=ReadText(h);nc=FileReadInteger(h);for(int i=0;i<nc;i++)g_currency[i]=ReadText(h);for(int i=0;i<8;i++)g_prices[i]=FileReadDouble(h);int index=FileReadInteger(h),mutate=FileReadInteger(h),mutate_index=FileReadInteger(h);for(int i=0;i<8;i++)g_volumes[i]=FileReadDouble(h);n26=FileReadInteger(h);for(int i=0;i<n26;i++)g_reply26[i]=FileReadDouble(h);n34=FileReadInteger(h);for(int i=0;i<n34;i++)g_reply34[i]=FileReadDouble(h);n35=FileReadInteger(h);for(int i=0;i<n35;i++)g_reply35[i]=FileReadDouble(h);n36=FileReadInteger(h);for(int i=0;i<n36;i++)g_reply36[i]=FileReadDouble(h);int deals=FileReadInteger(h);for(int i=0;i<deals;i++){FileReadLong(h);FileReadLong(h);FileReadLong(h);FileReadDouble(h);}i26=i34=i35=i36=ic=0;g_s.warnings=0;g_s.alerts=0;g_s.peak_writes=0;event_count=0;}
+int OnStart(){if(CheckRun=="")return 1;string folder="bot1-volume-runtime\\"+CheckRun+"\\";int h=FileOpen(folder+"cases.bin",FILE_READ|FILE_BIN);if(h==INVALID_HANDLE)return 1;int magic=FileReadInteger(h),ver=FileReadInteger(h),bot=FileReadInteger(h),count=FileReadInteger(h);if(magic!=0x56525431||ver!=1||bot!=1)return 1;out_file=FileOpen(folder+"mql5-results.bin",FILE_WRITE|FILE_BIN);if(out_file==INVALID_HANDLE)return 1;FileWriteInteger(out_file,magic);FileWriteInteger(out_file,ver);FileWriteInteger(out_file,count);for(int i=0;i<count;i++){current_id=FileReadInteger(h);int fatal=FileReadInteger(h);ReadCase(h);if(OnlyCase>=0&&current_id!=OnlyCase)continue;if(fatal){Print("VOLUME_RUNTIME_CASE:",current_id);continue;}Bot1PrepareVolumeRuntime(g_c.stop_distance,g_c.multiplier,g_symbol,g_suffix,g_r,g_s,false,g_peak_key,g_time_key,g_last_check,g_last_deal,0,g_volumes);FileWriteInteger(out_file,current_id);FileWriteInteger(out_file,event_count);FileWriteInteger(out_file,0);}FileClose(h);FileClose(out_file);return 0;}

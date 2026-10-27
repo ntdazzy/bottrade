@@ -1,0 +1,30 @@
+#property strict
+input string CheckRun="";
+input int OnlyCase=-1;
+union DB3 { double d;ulong u; };
+#include "../../Include/bot-cua-toi-3/Bot3Volume.mqh"
+ulong Bits3(const double v){ DB3 x;x.d=v;return x.u; }
+string ReadText3(const int h){int n=FileReadInteger(h);return n>0?FileReadString(h,n):"";}
+int out3;int events3;Bot3VolumeSettings r3;Bot3VolumeState s3;Bot3VolumeContext c3;double prices3[8],vol3[9],q263[16],q343[16],q353[16],q363[16];int n263,n343,n353,n363,j263,j343,j353,j363;string cur3[128],sym3,suf3,pk3,tk3;int nc3,ic3;long lc3,ld3;
+void T3(const string x){int n=StringLen(x);FileWriteInteger(out3,n);if(n>0)FileWriteString(out3,x,n);}void S3(){FileWriteLong(out3,(long)Bits3(s3.effective_balance));FileWriteLong(out3,(long)Bits3(s3.highest_balance));FileWriteLong(out3,(long)s3.mode);FileWriteLong(out3,(long)Bits3(s3.strategy_loss));FileWriteLong(out3,(long)s3.balance_step);FileWriteLong(out3,(long)Bits3(s3.adaptive_fraction));FileWriteLong(out3,(long)lc3);FileWriteLong(out3,(long)ld3);FileWriteLong(out3,0);for(int i=0;i<9;i++)FileWriteLong(out3,(long)Bits3(vol3[i]));}void E3(const int a,const ulong b=0,const ulong c=0,const ulong d=0,const string x="",const string y=""){FileWriteInteger(out3,a);FileWriteLong(out3,(long)b);FileWriteLong(out3,(long)c);FileWriteLong(out3,(long)d);T3(x);T3(y);S3();events3++;}
+double A3(const ENUM_ACCOUNT_INFO_DOUBLE p){double v=p==ACCOUNT_EQUITY?c3.equity:c3.balance;E3(1,(ulong)p,0,Bits3(v));return v;}double D3(const string s,const ENUM_SYMBOL_INFO_DOUBLE p){int k=(int)p;double v=k==26?c3.tick_value:(k==34?c3.minimum:(k==35?c3.maximum:c3.step));if(k==26&&j263<n263)v=q263[j263++];if(k==34&&j343<n343)v=q343[j343++];if(k==35&&j353<n353)v=q353[j353++];if(k==36&&j363<n363)v=q363[j363++];E3(2,k,0,Bits3(v),s);return v;}long M3(const ENUM_MQL_INFO_INTEGER p){E3(3,p);return 0;}datetime TM3(){E3(4);return 0;}bool HS3(datetime a,datetime b){E3(5,(ulong)a,(ulong)b,1);return true;}int HT3(){E3(6);return 0;}ulong TK3(int i){E3(7,i);return 0;}long HI3(ulong t,ENUM_DEAL_PROPERTY_INTEGER p){E3(8,t,p);return 0;}double HD3(ulong t,ENUM_DEAL_PROPERTY_DOUBLE p){E3(9,t,p);return 0;}bool GV3(string k,double v){E3(10,0,0,Bits3(v),k);return true;}string AS3(ENUM_ACCOUNT_INFO_STRING p){string v=ic3<nc3?cur3[ic3++]:"USD";E3(11,p,0,0,v);return v;}double CL3(string s,ENUM_TIMEFRAMES t,int sh){double v=prices3[MathMin(j263,7)];E3(12,t,sh,Bits3(v),s);return v;}string N3(double v){string s=(string)v;E3(14,Bits3(v),0x58,0,s);return s;}void P3(string s){E3(13,2,1,0,s);}void L3(string s){E3(13,3,1,0,s);}
+#define AccountInfoDouble A3
+#define SymbolInfoDouble D3
+#define MQLInfoInteger M3
+#define TimeCurrent TM3
+#define HistorySelect HS3
+#define HistoryDealsTotal HT3
+#define HistoryDealGetTicket TK3
+#define HistoryDealGetInteger HI3
+#define HistoryDealGetDouble HD3
+#define GlobalVariableSet GV3
+#define AccountInfoString AS3
+#define iClose CL3
+void P3(const string s,const double v){E3(13,2,2,Bits3(v),s);}
+void P3(const string a,const string b,const string c,const string d,const string e,const string f){E3(13,2,6,0,a+b+c+d+e+f);}
+#define Print P3
+#define Alert L3
+#include "../../Include/bot-cua-toi-3/Bot3VolumeRuntime.mqh"
+uchar enabled3[5];
+void R3(const int h){r3.use_equity=FileReadInteger(h);r3.only_up=FileReadInteger(h);r3.manual_balance=FileReadDouble(h);r3.start_lots=FileReadDouble(h);r3.max_lots=FileReadDouble(h);r3.lot_scale=FileReadDouble(h);r3.manual_risk=FileReadDouble(h);r3.strategy_risk=FileReadDouble(h);r3.max_total_dd=FileReadDouble(h);r3.weighted=FileReadInteger(h);r3.frequency=FileReadInteger(h);s3.mode=FileReadInteger(h);s3.highest_balance=FileReadDouble(h);s3.volume=FileReadDouble(h);s3.strategy_loss=FileReadDouble(h);s3.balance_step=FileReadInteger(h);s3.adaptive_fraction=FileReadDouble(h);c3.weight_denominator=FileReadDouble(h);c3.balance=FileReadDouble(h);c3.equity=FileReadDouble(h);c3.converted_balance=FileReadDouble(h);c3.converted_dd_balance=FileReadDouble(h);c3.tick_value=FileReadDouble(h);c3.minimum=FileReadDouble(h);c3.maximum=FileReadDouble(h);c3.step=FileReadDouble(h);c3.stop_distance=FileReadDouble(h);c3.multiplier=FileReadInteger(h);c3.enabled_mask=FileReadInteger(h);int en=FileReadInteger(h),tester=FileReadInteger(h),select_ok=FileReadInteger(h),restore_ok=FileReadInteger(h),reported=FileReadInteger(h);lc3=FileReadLong(h);ld3=FileReadLong(h);long t0=FileReadLong(h),t1=FileReadLong(h),t2=FileReadLong(h);sym3=ReadText3(h);suf3=ReadText3(h);pk3=ReadText3(h);tk3=ReadText3(h);nc3=FileReadInteger(h);for(int i=0;i<nc3;i++)cur3[i]=ReadText3(h);for(int i=0;i<8;i++)prices3[i]=FileReadDouble(h);int index=FileReadInteger(h),mutate=FileReadInteger(h),mutate_index=FileReadInteger(h);for(int i=0;i<9;i++)vol3[i]=FileReadDouble(h);n263=FileReadInteger(h);for(int i=0;i<n263;i++)q263[i]=FileReadDouble(h);n343=FileReadInteger(h);for(int i=0;i<n343;i++)q343[i]=FileReadDouble(h);n353=FileReadInteger(h);for(int i=0;i<n353;i++)q353[i]=FileReadDouble(h);n363=FileReadInteger(h);for(int i=0;i<n363;i++)q363[i]=FileReadDouble(h);int nd=FileReadInteger(h);for(int i=0;i<nd;i++){FileReadLong(h);FileReadLong(h);FileReadLong(h);FileReadDouble(h);}j263=j343=j353=j363=ic3=0;events3=0;s3.warnings=s3.alerts=s3.peak_writes=0;}
+int OnStart(){if(CheckRun=="")return 1;string f="bot3-volume-runtime\\"+CheckRun+"\\";int h=FileOpen(f+"cases.bin",FILE_READ|FILE_BIN);if(h==INVALID_HANDLE)return 1;int m=FileReadInteger(h),v=FileReadInteger(h),b=FileReadInteger(h),n=FileReadInteger(h);if(m!=0x56525431||v!=1||b!=3)return 1;out3=FileOpen(f+"mql5-results.bin",FILE_WRITE|FILE_BIN);FileWriteInteger(out3,m);FileWriteInteger(out3,v);FileWriteInteger(out3,n);for(int i=0;i<n;i++){int id=FileReadInteger(h),fatal=FileReadInteger(h);R3(h);if(OnlyCase>=0&&id!=OnlyCase)continue;if(fatal){Print("VOLUME_RUNTIME_CASE:",id);continue;}for(int j=0;j<5;j++)enabled3[j]=(uchar)((c3.enabled_mask>>j)&1);Bot3PrepareVolumeRuntime(c3.stop_distance,c3.multiplier,sym3,suf3,r3,s3,false,pk3,tk3,lc3,ld3,c3.weight_denominator,enabled3,id,vol3);FileWriteInteger(out3,id);FileWriteInteger(out3,events3);FileWriteInteger(out3,0);}FileClose(h);FileClose(out3);return 0;}

@@ -1,0 +1,209 @@
+"""Compare full native volume callers, live read order, messages and public state.
+
+prepare|original|mql5|compare BOT RUN --build BUILD. Uses separate private MT5s.
+Terminal replies and successful allocation are supplied; no child algorithm is replaced.
+"""
+import argparse,hashlib,importlib.util,json,math,re,shutil,struct,subprocess
+from pathlib import Path
+ROOT=Path(__file__).resolve().parents[1];MASK=(1<<64)-1;MAGIC=0x56525431
+def module(name,file):
+    s=importlib.util.spec_from_file_location(name,ROOT/'cong-cu'/file);m=importlib.util.module_from_spec(s);s.loader.exec_module(m);return m
+flow=module('live_volume_flow','kiem-luong-von-day-du-bot-1-3.py');v=flow.volume
+pub=module('live_volume_pub','kiem-ban-git-quan-ly.py');require=pub.require
+validation=module('live_volume_validation','kiem-khoi-luong-hop-le-bot-1-3.py')
+CFG={1:dict(fn=0x34780,end=0x3621b,sha='1b2483762ad0af66606c5351fca2dfb8023d7c09fb2872239c5c3d491f9cf65d',index=0x678f4,array=0x66a80,count=8),
+     3:dict(fn=0x3f900,end=0x41771,sha='7b2c0ebfaa2a0429ea8da7330b66f5a73a8cd44e9729aeb82a4af2f8cff4d598',index=0x74934,array=0x73ac0,count=9)}
+SCOPE=dict(whole_bot_complete=False,whole_manager_complete=False,whole_evaluator_complete=False,full_ea=False,native_volume_withdrawal_currency_executed=True,child_algorithms_replaced=False,terminal_replies_supplied=True,original_ex5_changed=False)
+def bits(n):return struct.unpack('<Q',struct.pack('<d',n))[0]
+def sha(p):return hashlib.sha256(p.read_bytes()).hexdigest()
+def text(s):
+    raw=s.encode('utf-16-le');return struct.pack('<i',len(raw)//2)+raw
+def save(p,o):
+    with p.open('x',encoding='utf-8',newline='\n') as f:json.dump(o,f,ensure_ascii=False,indent=2)
+def cases(bot):
+    out=[];default=flow.withdrawal.base_case();keys=['enabled','tester','select_ok','restore_ok','reported_count','last_check','last_deal','times','peak_key','time_key','deals']
+    def add(c,tag):
+        c=dict(c);c.update({k:c.get(k,default[k]) for k in keys});c.update(tag=tag,fatal=0,symbol='XAUUSD',currency_values=[c.get('currency','USD')],suffix=c.get('suffix',''),prices=[2.]*8,index=0,mutate_after=0,mutate_index=bot+4)
+        c['replies']={26:[c.get('tick_value',1.)],34:[c.get('minimum',.01)],35:[c.get('maximum',200.)],36:[c.get('step',.01)]}
+        c['volumes']=[.37+i*.1 for i in range(CFG[bot]['count'])];c['volumes'][0]=c['s.volume'];out.append(c);return c
+    for c in v.cases(bot)[:600]:
+        c.update({'stop_distance':1500.,'s.strategy_loss':1400.,'s.balance_step':600,'enabled_mask':31})
+        if bot==3:c.update({'r.frequency':2,'r.max_total_dd':30.,'c.weight_denominator':10.})
+        add(c,'mixed-read-order')
+    for mode in ([0,3,999,9999,1234,998] if bot==1 else [0,3,999,9999,1234]):
+        for step in [[.1],[.01],[.001],[.1,.01,.001],[.05,.01,.001,.05],[math.nan,.01,.001,.1]]:
+            for mutate in [0,1,4]:
+                c=add(v.base_case(bot),'changing-step-index');c['s.mode']=mode;c['replies'][36]=step;c['mutate_after']=mutate
+        for prop in [34,35]:
+            for replies in [[0.01],[.1,.2,.3,.4],[0.,1.,0.,2.],[math.nan],[1.,0.,2.,3.]]:
+                c=add(v.base_case(bot),'changing-minimum-maximum');c['s.mode']=mode;c['replies'][prop]=replies;c['r.max_lots']=.005
+    for mode in ([999] if bot==1 else [999,1234]):
+        for currency in flow.currency.CURRENCIES:
+            c=add(v.base_case(bot),'currency-read-order');c['s.mode']=mode;c['currency_values']=[currency];c['suffix']='.a'
+            if bot==3:c['r.weighted']=0
+        for sequence in [['EUR','eur','GBP','CHF','JPY','YEN','VND'],['USD','VND','EUR','eur','VND'],['VND']*8+['CHF']*3+['VND']*70]:
+            c=add(v.base_case(bot),'changing-currency');c['s.mode']=mode;c['currency_values']=sequence
+            if bot==3:c['r.weighted']=0
+    for name in ['s.highest_balance','balance','equity','r.manual_balance','r.lot_scale','s.volume','r.start_lots','r.max_lots']:
+        for n in [math.nan,-math.inf,math.inf,-0.,0.,-1.,1e-310]:
+            c=add(v.base_case(bot),'special-values');c[name]=n;c['volumes'][0]=c['s.volume']
+    for w in flow.withdrawal.cases()[::8]:
+        c=v.base_case(bot);c.update({k:w[k] for k in keys});c.update({'s.highest_balance':w['peak'],'balance':w['balance']});add(c,'withdrawal-order')
+    # Explicit fatal cases run one by one; normal cases never catch a fatal division.
+    fatal=[]
+    for mode,key in [(3,'s.strategy_loss'),(9999,'s.balance_step'),(999,'stop_distance')]:
+        c=add(v.base_case(bot),'fatal-division');c['s.mode']=mode;c[key]=0;c['fatal']=1;fatal.append(c)
+    if bot==1:
+        c=add(v.base_case(bot),'fatal-fresh-tick');c['s.mode']=2;c['replies'][26]=[1.,0.];c['fatal']=1;fatal.append(c)
+    else:
+        for weighted in [0,1]:
+            c=add(v.base_case(bot),'fatal-adaptive');c['s.mode']=1234;c['r.weighted']=weighted;c['c.weight_denominator']=0.;c['r.max_total_dd']=0.;c['fatal']=1;fatal.append(c)
+    c=add(v.base_case(bot),'fatal-currency');c['s.mode']=999;c['currency_values']=['JPY' if bot==1 else 'EUR'];c['prices']=[2.,0.]+[2.]*6;c['fatal']=1;fatal.append(c)
+    for i,c in enumerate(out):c['id']=i
+    return out
+def encode(rows,bot):
+    raw=bytearray(struct.pack('<4i',MAGIC,1,bot,len(rows)))
+    for c in rows:
+        raw+=struct.pack('<2i',c['id'],c['fatal'])
+        for n,k,_ in v.fields(v.INPUTS,bot):raw+=struct.pack('<'+v.pack_kind(k),c[n])
+        for n,k in v.CONTEXT:raw+=struct.pack('<'+v.pack_kind(k),c[n])
+        raw+=struct.pack('<5i2q3q',*(c[n] for n in ['enabled','tester','select_ok','restore_ok','reported_count','last_check','last_deal']),*c['times'])
+        for n in ['symbol','suffix','peak_key','time_key']:raw+=text(c[n])
+        raw+=struct.pack('<i',len(c['currency_values']))+b''.join(text(s) for s in c['currency_values'])
+        raw+=struct.pack('<8d3i',*c['prices'],c['index'],c['mutate_after'],c['mutate_index'])
+        raw+=struct.pack('<'+'d'*len(c['volumes']),*c['volumes'])
+        for prop in [26,34,35,36]:
+            values=c['replies'][prop];raw+=struct.pack('<i',len(values))+struct.pack('<'+'d'*len(values),*values)
+        raw+=struct.pack('<i',len(c['deals']))+b''.join(struct.pack('<Qqqd',*d) for d in c['deals'])
+    return bytes(raw)
+class Reader:
+    def __init__(self,data):self.data=data;self.p=0
+    def take(self,fmt):s=struct.calcsize(fmt);r=struct.unpack_from(fmt,self.data,self.p);self.p+=s;return r
+    def text(self):n,=self.take('<i');s=self.data[self.p:self.p+2*n].decode('utf-16-le');self.p+=2*n;return s
+def casts(path):
+    r=Reader(path.read_bytes());magic,version,count=r.take('<3i');require((magic,version)==(MAGIC,1),'CAST_HEADER');out={}
+    for _ in range(count):key,=r.take('<Q');out[key]=r.text()
+    require(r.p==len(r.data),'CAST_TRAILING');return out
+class Original(flow.Original):
+    def __init__(self,bot,cast_values,fixed_values=None):
+        self.cast_values=cast_values;self.fixed_values=fixed_values;super().__init__(bot);cfg=CFG[bot]
+        require(sha_bytes(bytes(self.m.mem_read(self.base+cfg['fn'],cfg['end']-cfg['fn'])))==cfg['sha'],'VOLUME_BYTES_CHANGED');self.covered=set()
+        self.m.hook_add(self.uc.UC_HOOK_CODE,lambda m,a,s,u:self.covered.add(a-self.base),begin=self.base+cfg['fn'],end=self.base+cfg['end']-1)
+    def enter(self,m,address,size,user):
+        super().enter(m,address,size,user);self.events=bytearray();self.events_count=0;self.counters={};self.symbol_calls=0;self.account_calls=0
+        cfg=CFG[self.bot];m.mem_write(self.base+cfg['array'],struct.pack('<'+'d'*cfg['count'],*self.case['volumes']));m.mem_write(self.base+cfg['index'],struct.pack('<I',self.case['index']))
+        effective=next(rva for n,_,rva in v.fields(v.OUTPUTS,self.bot) if n=='effective_balance');m.mem_write(self.base+effective,b'\0'*8)
+        m.mem_write(self.base+self.cfg['symbol'],struct.pack('<IQ',0,self.string(self.case['symbol'])))
+    def state(self):
+        m=self.m;cfg=CFG[self.bot];raw=bytearray()
+        for _,k,rva in v.fields(v.OUTPUTS,self.bot):
+            if rva==cfg['array']:continue
+            b=bytes(m.mem_read(self.base+rva,struct.calcsize('<'+k)));word=int.from_bytes(b,'little') if k=='d' else struct.unpack('<'+k,b)[0]&MASK;raw+=struct.pack('<Q',word)
+        w=self.withdrawal_cfg
+        for name in ['last_check','last_deal']:raw+=bytes(m.mem_read(self.base+w[name],8))
+        raw+=struct.pack('<Q',struct.unpack('<I',m.mem_read(self.base+cfg['index'],4))[0]);raw+=bytes(m.mem_read(self.base+cfg['array'],8*cfg['count']));return bytes(raw)
+    def event(self,api,first=0,second=0,value=0,t1='',t2=''):
+        self.events+=struct.pack('<i3Q',api,first&MASK,second&MASK,value&MASK)+text(t1)+text(t2)+self.state();self.events_count+=1
+    def call(self,m,address,size,user):
+        api=self.apis[address];x=self.x;c=self.case;r=lambda n:m.reg_read(getattr(x,'UC_X86_REG_'+n));sp=r('RSP')
+        def integer(n):m.reg_write(x.UC_X86_REG_RAX,n&MASK)
+        def double(n):m.mem_write(self.base+self.cfg['slot'],struct.pack('<d',n));m.reg_write(x.UC_X86_REG_XMM0,bits(n))
+        desc=lambda p:flow.currency.Original.read_text(self,p)
+        if api in [100,101]:return super().call(m,address,size,user)
+        if api==10:
+            p=r('RDX')&0xffffffff;require(p in [37,40],'ACCOUNT_PROP');n=c['balance' if p==37 else 'equity'];self.event(1,p,0,bits(n));double(n);return
+        if api==11:
+            p=r('R8')&0xffffffff;require(p in [26,34,35,36],'SYMBOL_PROP');i=self.counters.get(p,0);values=c['replies'][p];n=values[min(i,len(values)-1)];self.counters[p]=i+1
+            self.event(2,p,0,bits(n),desc(r('RDX')));self.symbol_calls+=1
+            if c['mutate_after'] and self.symbol_calls==c['mutate_after']:m.mem_write(self.base+CFG[self.bot]['index'],struct.pack('<I',c['mutate_index']))
+            double(n);return
+        if api==20:
+            p=r('RDX')&0xffffffff;require(p==36,'CURRENCY_PROP');values=c['currency_values'];n=values[min(self.account_calls,len(values)-1)];self.account_calls+=1;self.event(11,p,0,0,n);m.mem_write(self.base+self.cfg['string_result'],struct.pack('<IQ',0,self.string(n)));return
+        if api==21:
+            n=c['prices'][min(self.counters.get('price',0),7)];self.counters['price']=self.counters.get('price',0)+1;self.event(12,r('R8')&0xffffffff,r('R9')&0xffffffff,bits(n),desc(r('RDX')));double(n);return
+        if api==30:self.event(3,r('RDX'),0,c['tester']);integer(c['tester']);return
+        if api==31:
+            n=c['times'][min(self.clock_calls,2)];self.clock_calls+=1;self.event(4,0,0,n);integer(n);return
+        if api==32:
+            n=c['select_ok' if self.select_calls==0 else 'restore_ok'];self.select_calls+=1;self.event(5,r('RDX'),r('R8'),n);integer(n);return
+        if api==33:self.event(6,0,0,c['reported_count']);integer(c['reported_count']);return
+        if api==34:
+            p=r('RDX')&0xffffffff;n=c['deals'][p][0] if p<len(c['deals']) else 0;self.event(7,p,0,n);integer(n);return
+        if api in [35,36]:
+            ticket=r('RDX');p=r('R8')&0xffffffff;d=next(d for d in c['deals'] if d[0]==ticket);n=d[1 if p==3 else 2] if api==35 else d[3]
+            self.event(8 if api==35 else 9,ticket,p,n if api==35 else bits(n));integer(n) if api==35 else double(n);return
+        if api==13:self.event(10,0,0,r('XMM2')&MASK,desc(r('RDX')));integer(0);return
+        if api==14:
+            n=r('RDX');require(r('R8')&0xffffffff==0x58,'CAST_TYPE');reply=self.cast_values[n];self.event(14,n,0x58,0,reply);m.mem_write(r('R9'),struct.pack('<IQ',0,self.string(reply)));return
+        if api==38:
+            value=r('XMM1')&MASK;digits=r('R8')&0xffffffff;require(digits==2,'FIXED_DIGITS')
+            reply=self.fixed_values[value] if self.fixed_values is not None else format(struct.unpack('<d',struct.pack('<Q',value))[0],'.2f')
+            self.event(15,value,digits,0,reply);m.mem_write(self.base+self.cfg['string_result'],struct.pack('<IQ',0,self.string(reply)));return
+        if api==12:
+            op=r('RDX');count=r('R8');require(op in [2,3] and count in [1,2,6],'MESSAGE_SHAPE');tag=r('R9')&0xffffffff;require(tag==0x590008,'MESSAGE_FIRST_TYPE');a=struct.unpack('<Q',m.mem_read(sp+40,8))[0];msg=desc(a);value=0
+            if count==2:
+                tag=struct.unpack('<I',m.mem_read(sp+48,4))[0];require(tag==0x580008,'MESSAGE_SECOND_TYPE');value=struct.unpack('<Q',m.mem_read(sp+56,8))[0]
+            if count==6:
+                for i in range(1,6):
+                    tag=struct.unpack('<I',m.mem_read(sp+32+16*i,4))[0];require(tag==0x590008,'WITHDRAWAL_STRING_TYPE');msg+=desc(struct.unpack('<Q',m.mem_read(sp+40+16*i,8))[0])
+            self.event(13,op,count,value,msg);return
+        if api==200:self.error=r('RDX');m.emu_stop();return
+        raise ValueError('UNHANDLED_API '+str(api))
+    def run(self,c):
+        super().run(c);require(bool(self.error)==bool(c['fatal']),'FATAL_CLASS '+str(c['id']))
+        return struct.pack('<3i',c['id'],self.events_count,len(self.events))+self.events+self.state()
+def sha_bytes(b):return hashlib.sha256(b).hexdigest()
+def identity(bot):
+    home=ROOT/f'bot-cua-toi-{bot}';source=home/'source/MQL5';script=f'Scripts/bot-cua-toi-{bot}/Bot{bot}VolumeRuntimeCheck.mq5';helpers={Path(__file__),ROOT/'cong-cu/kiem-ban-git-quan-ly.py',ROOT/'cong-cu/kiem-khoi-luong-hop-le-bot-1-3.py'}
+    for name in ['kiem-gia-vao-bot-1-3.py','kiem-muc-gia-bot-1-3.py','kiem-khoi-luong-bot-1-3.py','kiem-doi-tien-bot-1-3.py','kiem-khoi-luong-ghep-bot-1-3.py','kiem-rut-tien-bot-1-3.py','kiem-luong-von-day-du-bot-1-3.py']:helpers.add(ROOT/'cong-cu'/name)
+    return dict(original_ex5_sha256=validation.original_hash(bot),sources_sha256={p.relative_to(source).as_posix():sha(p) for p in pub.closure(source/script,source)},helpers_sha256={p.relative_to(ROOT).as_posix():sha(p) for p in helpers})
+def execute(bot,folder,build,only=-1):
+    home=ROOT/f'bot-cua-toi-{bot}';mt=ROOT.parent/f'.local/mt5-bot{bot}-thread-20261025';receipt=home/'bang-chung/bien-dich'/build/'bien-nhan.json';b=json.loads(receipt.read_text(encoding='utf-8-sig'));script=f'Scripts/bot-cua-toi-{bot}/Bot{bot}VolumeRuntimeCheck.mq5'
+    require(b['target']==script and b['errors']==b['warnings']==0,'BUILD_NOT_CLEAN')
+    for n,h in identity(bot)['sources_sha256'].items():require(sha(mt/'MQL5'/n)==b['sources_sha256'][n]==h,'BUILD_SOURCE_CHANGED')
+    binary=mt/'MQL5'/Path(script).with_suffix('.ex5');require(sha(binary)==b['binary_sha256']==sha(receipt.parent/binary.name),'BUILD_BINARY_CHANGED')
+    run=folder.name+('' if only<0 else '-e'+str(only));files=mt/f'MQL5/Files/bot{bot}-volume-runtime'/run;files.mkdir(parents=True,exist_ok=False);shutil.copyfile(folder/'cases.bin',files/'cases.bin')
+    ini=mt/('volume-'+run+'.ini');preset=mt/'MQL5/Presets'/('volume-'+run+'.set');preset.write_text('CheckRun='+run+'\nOnlyCase='+str(only)+'\n',encoding='utf-16')
+    ini.write_text(f'[Experts]\nEnabled=0\nAllowLiveTrading=0\nAllowDllImport=0\n[StartUp]\nScript=bot-cua-toi-{bot}\\Bot{bot}VolumeRuntimeCheck\nScriptParameters={preset.name}\nSymbol=XAUUSD_NOCOST_V2\nPeriod=M15\nShutdownTerminal=1\n',encoding='utf-16')
+    logs=mt/'MQL5/Logs';before={p:p.stat().st_size for p in logs.glob('*.log')};p=subprocess.Popen(f'"{mt/"terminal64.exe"}" /portable /config:"{ini}"',cwd=mt,creationflags=subprocess.CREATE_NO_WINDOW)
+    try:code=p.wait(timeout=120)
+    except subprocess.TimeoutExpired:p.terminate();p.wait(timeout=30);raise RuntimeError('MT5_TIMEOUT')
+    log='\n'.join(p.read_bytes()[before.get(p,0):].decode('utf-16-le',errors='replace') for p in logs.glob('*.log'));return files,receipt,code,log
+def main():
+    p=argparse.ArgumentParser(description=__doc__);p.add_argument('mode',choices=['prepare','original','mql5','compare','errors']);p.add_argument('bot',type=int,choices=[1,3]);p.add_argument('run');p.add_argument('--build');a=p.parse_args();require(re.fullmatch('[a-z0-9-]{1,32}',a.run),'BAD_RUN')
+    folder=ROOT/f'bot-cua-toi-{a.bot}/bang-chung/kiem-quan-ly-vi-the'/a.run;rows=cases(a.bot);normal=[c for c in rows if not c['fatal']];current=identity(a.bot);header=struct.pack('<3i',MAGIC,1,len(normal))
+    if a.mode=='prepare':folder.mkdir(parents=True,exist_ok=False);(folder/'cases.bin').write_bytes(encode(rows,a.bot));save(folder/'baseline.json',dict(**current,cases=len(normal),fatal_cases=len(rows)-len(normal),inputs_sha256=sha(folder/'cases.bin'),**SCOPE));print(json.dumps(dict(cases=len(normal),fatal_cases=len(rows)-len(normal))));return
+    b=json.loads((folder/'baseline.json').read_text());require(all(b[k]==x for k,x in current.items()) and (folder/'cases.bin').read_bytes()==encode(rows,a.bot),'IDENTITY_CHANGED')
+    if a.mode=='mql5':
+        files,receipt,code,log=execute(a.bot,folder,a.build);require(code==0 and (files/'script-status.bin').read_bytes()==struct.pack('<2i',0,len(normal)),'SCRIPT_FAILED')
+        for n in ['mql5-results.bin','script-status.bin','cast-results.bin','fixed-results.bin']:
+            with (folder/n).open('xb') as f:f.write((files/n).read_bytes())
+        save(folder/'mql5-run.json',dict(**current,cases=len(normal),result_sha256=sha(folder/'mql5-results.bin'),cast_results_sha256=sha(folder/'cast-results.bin'),fixed_results_sha256=sha(folder/'fixed-results.bin'),build=a.build,build_receipt_sha256=sha(receipt),**SCOPE));print(json.dumps(dict(cases=len(normal),exit_code=code)));return
+    if a.mode=='original':
+        o=Original(a.bot,casts(folder/'cast-results.bin'),casts(folder/'fixed-results.bin'));raw=bytearray(header);errors=[]
+        for c in rows:
+            r=o.run(c)
+            if c['fatal']:
+                errors.append(dict(id=c['id'],error=hex(o.error),events_sha256=sha_bytes(o.events),state_sha256=sha_bytes(o.state())))
+                with (folder/f'error-events-{c["id"]}.bin').open('xb') as f:f.write(o.events)
+            else:raw+=r
+        with (folder/'original-results.bin').open('xb') as f:f.write(raw)
+        save(folder/'native-errors.json',errors);save(folder/'original-run.json',dict(**current,cases=len(normal),fatal_cases=len(errors),result_sha256=sha(folder/'original-results.bin'),cast_results_sha256=sha(folder/'cast-results.bin'),fixed_results_sha256=sha(folder/'fixed-results.bin'),instructions=len(o.covered),**SCOPE));print(json.dumps(dict(cases=len(normal),fatal_cases=len(errors),instructions=len(o.covered))));return
+    if a.mode=='errors':
+        expected=json.loads((folder/'native-errors.json').read_text());out=[]
+        for e in expected:
+            files,receipt,code,log=execute(a.bot,folder,a.build,e['id']);require(code!=0 and 'zero divide' in log.lower() and 'VOLUME_RUNTIME_CASE:'+str(e['id']) in log,'FATAL_NOT_OBSERVED');require(not(files/'script-status.bin').exists(),'FATAL_COMPLETED')
+            require(sha_bytes((files/'mql5-results.bin').read_bytes()[24:])==e['events_sha256']==sha(folder/f'error-events-{e["id"]}.bin'),'ERROR_SDK_EVENTS_CHANGED')
+            out.append(dict(**e,matched=True,terminal_exit_code=code,log_sha256=sha_bytes(log.encode())))
+        save(folder/'errors.json',dict(cases=len(out),matched=len(out),results=out,**SCOPE,limits=['Fault class and last completed SDK events; immediate pre-fault state after the final SDK call is not exported by the terminated MQL5 script.']));print(json.dumps(dict(cases=len(out),matched=len(out))));return
+    for n in ['original','mql5']:
+        r=json.loads((folder/(n+'-run.json')).read_text());require(all(r[k]==x for k,x in current.items()) and r['result_sha256']==sha(folder/(n+'-results.bin')) and r['cast_results_sha256']==sha(folder/'cast-results.bin') and r['fixed_results_sha256']==sha(folder/'fixed-results.bin'),'RUN_CHANGED')
+    left=(folder/'original-results.bin').read_bytes();right=(folder/'mql5-results.bin').read_bytes();require(left[:12]==right[:12]==header,'RESULT_HEADER');state_size=8*(len(v.fields(v.OUTPUTS,a.bot))-1+3+CFG[a.bot]['count']);readers=[Reader(left),Reader(right)];[setattr(r,'p',12) for r in readers];failed=[]
+    for c in normal:
+        records=[]
+        for r in readers:
+            start=r.p;id_,count,length=r.take('<3i');require(id_==c['id'],'RECORD_ID');r.p+=length+state_size;records.append(r.data[start:r.p])
+        if records[0]!=records[1]:failed.append(dict(id=c['id'],tag=c['tag'],first_difference=next((i for i,(x,y) in enumerate(zip(*records)) if x!=y),None),sizes=list(map(len,records))))
+    require(all(r.p==len(r.data) for r in readers),'RESULT_TRAILING');report=dict(cases=len(normal),matched=len(normal)-len(failed),failed=len(failed),first_failures=failed[:25],**SCOPE,limits=['Complete volume caller and child algorithms; terminal replies, successful allocation and numeric cast text measured in isolated MT5 are supplied. No whole evaluator or EA.'])
+    save(folder/'comparison.json',report);print(json.dumps(report));raise SystemExit(bool(failed))
+if __name__=='__main__':main()

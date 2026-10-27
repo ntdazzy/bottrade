@@ -1,0 +1,104 @@
+// Complete volume caller 34780: live terminal reads, withdrawal and currency helpers.
+#ifndef BOT1_VOLUME_RUNTIME_MQH
+#define BOT1_VOLUME_RUNTIME_MQH
+#include "Bot1Volume.mqh"
+#include "Bot1VolumeWithdrawal.mqh"
+#include "Bot1VolumeCurrency.mqh"
+#ifndef BOT1_VOLUME_NUMBER_EXTERNAL
+string Bot1VolumeNumber(const double value) { return (string)value; }
+#endif
+void Bot1PrepareVolumeRuntime(const double stop_distance,const int multiplier,
+                             const string &symbol,const string &suffix,const Bot1VolumeSettings &r,
+                             Bot1VolumeState &s,const bool reset_on_withdrawal,
+                             const string &peak_key,const string &time_key,long &last_check,long &last_deal_time,
+                             const uint &index,double &volumes[])
+{
+   s.effective_balance=AccountInfoDouble(ACCOUNT_BALANCE);
+   if(r.use_equity) s.effective_balance=AccountInfoDouble(ACCOUNT_EQUITY);
+   Bot1VolumeWithdrawals(reset_on_withdrawal,s.effective_balance,peak_key,time_key,
+                         last_check,last_deal_time,s.highest_balance);
+   if(r.only_up && s.highest_balance>s.effective_balance) s.effective_balance=s.highest_balance;
+   else if(s.highest_balance<s.effective_balance)
+   {
+      s.highest_balance=s.effective_balance;
+      GlobalVariableSet(peak_key,s.effective_balance);
+   }
+   if(r.manual_balance>0.0) s.effective_balance=r.manual_balance;
+   if(s.effective_balance==0.0) s.effective_balance=0.01;
+   double lots=volumes[index];
+   const double tick_value=SymbolInfoDouble(symbol,SYMBOL_TRADE_TICK_VALUE);
+   const double steps[]={0.1,0.01,0.001};
+   if(s.mode>=1 && s.mode<=998)
+   {
+      if(tick_value==0.0 || stop_distance==0.0 || multiplier==0)
+      {
+         Alert("Error setting real lotsize! Switching to minimum lotsize!");
+         lots=0.01;
+      }
+      else
+      {
+         const double budget=((double)s.mode/1000.0)*s.effective_balance;
+         for(int i=0;i<3;i++)
+            if(SymbolInfoDouble(symbol,SYMBOL_VOLUME_STEP)==steps[i])
+            {
+               const double divisor=SymbolInfoDouble(symbol,SYMBOL_TRADE_TICK_VALUE)*stop_distance;
+               const double scaled=(budget/divisor)*0.1;
+               lots=Bot1RoundPrice(((double)multiplier*0.01)*scaled,(uint)i+1);
+            }
+      }
+   }
+   if(s.mode==999)
+   {
+      if(!(tick_value>0.0))
+      {
+         Alert("Broker has no value for PIP! Switching to LotsPerBalance_Step mode!");
+         s.mode=9999;
+      }
+      else
+      {
+         const double converted=Bot1VolumeCurrency(s.effective_balance,suffix);
+         const double budget=(r.manual_risk/100.0)*converted;
+         for(int i=0;i<3;i++)
+            if(SymbolInfoDouble(symbol,SYMBOL_VOLUME_STEP)==steps[i])
+            {
+               const double scaled=(budget/(0.1*stop_distance))*0.1;
+               lots=Bot1RoundPrice(((double)multiplier*0.01)*scaled,(uint)i+1);
+            }
+      }
+   }
+   if(s.mode==0)
+      for(int i=0;i<3;i++)
+         if(SymbolInfoDouble(symbol,SYMBOL_VOLUME_STEP)==steps[i])
+            lots=Bot1RoundPrice(((double)multiplier*0.01)*r.start_lots,(uint)i+1);
+   if(s.mode==9999)
+      for(int i=0;i<3;i++)
+         if(SymbolInfoDouble(symbol,SYMBOL_VOLUME_STEP)==steps[i])
+         {
+            const double scaled=(s.effective_balance/(double)s.balance_step)*0.01;
+            lots=Bot1RoundPrice(((double)multiplier*0.01)*scaled,(uint)i+1);
+         }
+   if(s.mode==3)
+      for(int i=0;i<3;i++)
+         if(SymbolInfoDouble(symbol,SYMBOL_VOLUME_STEP)==steps[i])
+            lots=Bot1RoundPrice((((r.strategy_risk/s.strategy_loss)*s.effective_balance)/100.0)*0.01,(uint)i+1);
+   lots=lots*r.lot_scale;
+   if(lots<SymbolInfoDouble(symbol,SYMBOL_VOLUME_MIN)) lots=SymbolInfoDouble(symbol,SYMBOL_VOLUME_MIN);
+   lots=r.start_lots<=lots ? lots : r.start_lots;
+   lots=lots<=r.max_lots ? lots : r.max_lots;
+   if(lots<SymbolInfoDouble(symbol,SYMBOL_VOLUME_MIN))
+      Print("Minimum lotsize for this broker is "+Bot1VolumeNumber(SymbolInfoDouble(symbol,SYMBOL_VOLUME_MIN))+" lots!!");
+   if(SymbolInfoDouble(symbol,SYMBOL_VOLUME_MAX)<lots)
+   {
+      if(SymbolInfoDouble(symbol,SYMBOL_VOLUME_MAX)!=0.0)
+      {
+         Print("Maximum lotsize for this broker is "+Bot1VolumeNumber(SymbolInfoDouble(symbol,SYMBOL_VOLUME_MAX))+" lots!!");
+         lots=SymbolInfoDouble(symbol,SYMBOL_VOLUME_MAX);
+      }
+   }
+   double power=0.0;uint digits=0;
+   if(SymbolInfoDouble(symbol,SYMBOL_VOLUME_STEP)==0.1) { power=10.0;digits=1; }
+   else if(SymbolInfoDouble(symbol,SYMBOL_VOLUME_STEP)==0.01) { power=100.0;digits=2; }
+   else if(SymbolInfoDouble(symbol,SYMBOL_VOLUME_STEP)==0.001) { power=1000.0;digits=3; }
+   if(digits!=0) volumes[index]=Bot1RoundPrice(MathFloor(lots*power)/power,digits);
+}
+#endif

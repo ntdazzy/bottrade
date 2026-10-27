@@ -1,0 +1,39 @@
+{
+  "original_ex5_sha256": "ee063d3d87490afe24e2f4ce85f6b05659320e297b102efd70207f71ca2feb83",
+  "sources_sha256": {
+    "Include/bot-cua-toi-3/Bot3VolumeRuntime.mqh": "ad3204f3e2eac916c8d8cf5e7284a16ae9b18cc7d309b63d5d6b896c1f947c74",
+    "Include/bot-cua-toi-3/Bot3VolumeCurrency.mqh": "3eab2f810b4ab1720d64ebf0b74bf071e9aeae44f068f7c0a0614ad3c8ba103a",
+    "Include/bot-cua-toi-3/Bot3PriceLevels.mqh": "1cfecf5f324056b64f72a8fb21f446b7ca35f377ae40d4ab0c6859bfe736c413",
+    "Include/bot-cua-toi-3/Bot3Volume.mqh": "d24c1e6438038f7fbaacf804fe764647f0ff8bbbeac6a39cbfdf019793f7455f",
+    "Include/bot-cua-toi-3/Bot3VolumeWithdrawal.mqh": "e42c42f033de738f1cac9f4cfab6888f1b483e837ec57bc7a4fb5ec2727311f3",
+    "Include/bot-cua-toi-3/Bot3Currency.mqh": "e5a3bb8f3cc3beef6b4b4ebd8a2818438b6608012ed0456f348b0950e56167cf",
+    "Include/bot-cua-toi-3/Bot3StrategyContext.mqh": "ca65bcbd191817179eba44830c3b45a144612187eaaa031f9737cea54a6221bc",
+    "Scripts/bot-cua-toi-3/Bot3VolumeRuntimeCheck.mq5": "4b635d2389c7ab57935620314671b74b419eb5373e40f6cf7ca789606bfa708c"
+  },
+  "helpers_sha256": {
+    "cong-cu/kiem-muc-gia-bot-1-3.py": "a6c447ca80029fb63ced0c9d1673bb14222a7736b04df5c410f280f8471d6a35",
+    "cong-cu/kiem-khoi-luong-thuc-bot-1-3.py": "458102c0b2d51f11b9939d90a33e9603e53dcb717603a909a839da8cda8ae696",
+    "cong-cu/kiem-khoi-luong-hop-le-bot-1-3.py": "8251fb4423d6f5f2e1b79a1c53dbb25fb5a6c568bb61cddef23396dc982243f0",
+    "cong-cu/kiem-luong-von-day-du-bot-1-3.py": "b7d88c21f6748aedd4ad30c368acf77ae71e6d281aa43567a90be175bd12c672",
+    "cong-cu/kiem-ban-git-quan-ly.py": "7186478774b34e0d72b4594fbcc85972d9b4c07ed02160987d46d34f39dcb160",
+    "cong-cu/kiem-rut-tien-bot-1-3.py": "dd02f9b093b9a8ac68b6e689985c0993b7e63cabc84deb7b838835ded34db9ce",
+    "cong-cu/kiem-doi-tien-bot-1-3.py": "203fd243f93ad01d9229151335fc76850aa4a51ec1005f96c3b3f0de79cac8a9",
+    "cong-cu/kiem-gia-vao-bot-1-3.py": "22394e48932feb7242b967aa58e327d2990402f12bfe52621916f64914c9dac2",
+    "cong-cu/kiem-khoi-luong-bot-1-3.py": "32539c090422ab6bc2ce94a9fdacfd33e53c394aca58bd3827c2232d817d7f77",
+    "cong-cu/kiem-khoi-luong-ghep-bot-1-3.py": "e89baac423cb8aa5a04d2550140616d53aaef599be7c10a06d58f79980bd6188"
+  },
+  "cases": 1025,
+  "result_sha256": "c88b2ef2e159de8ac1963054387d95986c56becb2ff36ba07ff1ab066abf7048",
+  "cast_results_sha256": "debe89c9fc155e9862034fd073cd4168e8bc43494b77c8749ec2c537bb14645e",
+  "fixed_results_sha256": "ba8edfe7d63efb6272098dace847330faeb1af8bd586b82409c3dc7aeadae5cf",
+  "build": "b3-volume-runtime-check-20261027-r2",
+  "build_receipt_sha256": "60b2fa866aa6e4dfac3f6c20b3b754db12765fff1feadaa27a492f92e8987e2a",
+  "whole_bot_complete": false,
+  "whole_manager_complete": false,
+  "whole_evaluator_complete": false,
+  "full_ea": false,
+  "native_volume_withdrawal_currency_executed": true,
+  "child_algorithms_replaced": false,
+  "terminal_replies_supplied": true,
+  "original_ex5_changed": false
+}
