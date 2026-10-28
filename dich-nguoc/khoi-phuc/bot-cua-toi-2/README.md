@@ -1,5 +1,10 @@
 # bot-cua-toi-2
 
+Đã phục hồi hàm đổi giờ mùa hè `Bot2AmericanDST`: **4.737/4.737 ca
+khớp**, kể cả thứ tự lời gọi; biên dịch 0 lỗi, 0 cảnh báo. Dùng đúng
+bản EX5 đã cài, SHA bắt đầu `390d8ab1`; bản EX5 cũ trong kho khác mã.
+[Bằng chứng và giới hạn](../danh-gia-doc-lap/american-dst-bot2-20261029-r5/README.md).
+
 Đang phân tích song song theo yêu cầu26/10/2026; bot1 vàbot3 vẫn ưu tiên.
 Đã có bản chụp mới đúng EX5Goldbot One MT5 đã cài:86dải hàm,680chuỗi,
 141nhãn dịch vụ đã đối chiếu cùng bản máy thử,81chữ ký. Đã xuất mã C
@@ -13,7 +18,7 @@ nghĩa đã hiểu hoặc khôi phục thuật toán.
 - [Hai bản EX5 và năm bộ cài đặt](phan-tich/khoi-dong-20261026-r1/README.md).
 
 Cần chốt cài đặt, công thức/nhánh, thứ tự gọi và trạng thái từ bản mới,
-rồi giao Claude viết từng khối theo mô tả. Bản83hàm cũ giữ riêng, không
+rồi Codex viết và kiểm từng phần. Bản83hàm cũ giữ riêng, không
 dùng số86để kết luận đã thấy toàn bộ EX5.
 
 Đã đọc thêm raw đầu hàm đánh giá186c0..1f2b3, kiểm lạiSHA thân vàEX5,

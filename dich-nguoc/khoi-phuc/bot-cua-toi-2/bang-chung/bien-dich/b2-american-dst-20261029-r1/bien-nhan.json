@@ -1,0 +1,17 @@
+{
+  "run": "b2-american-dst-20261029-r1",
+  "target": "Scripts/bot-cua-toi-2/Bot2AmericanDSTCheck.mq5",
+  "metaeditor_sha256": "cf2750bde55d98a1f3b4e56bcdd4f59300d0cff5caa6760985f7ef2c2cc12229",
+  "exit_code": 1,
+  "errors": 0,
+  "warnings": 0,
+  "result_line": "Result: 0 errors, 0 warnings, 457 ms elapsed, cpu='X64 Regular'",
+  "sources_sha256": {
+    "Include/bot-cua-toi-2/Bot2AmericanDST.mqh": "4d9aedb34fc398c78a3ab0da04b705a3cd2123777b235e0685701fa5de586f4f",
+    "Scripts/bot-cua-toi-2/Bot2AmericanDSTCheck.mq5": "6258c4008c63b415fb920cf04f51806df6408a05f7c339d4dd559b7808a26eea"
+  },
+  "trade_mqh_sha256": "96e6781624534377fe7971cba52cca3d62d1b030bc10d5e4ebf3ed8c541399ed",
+  "binary_sha256": "b55503320f394655306534e03bd880f29062d36738aa03232d7889524550c207",
+  "floating_point_dividers_check_requested": false,
+  "compile_project_sha256": null
+}

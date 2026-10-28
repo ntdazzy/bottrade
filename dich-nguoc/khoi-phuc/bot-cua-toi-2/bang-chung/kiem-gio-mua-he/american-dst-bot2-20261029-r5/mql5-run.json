@@ -1,0 +1,11 @@
+{
+  "exit_code": 0,
+  "seconds": 4.41,
+  "script_sha256": "b55503320f394655306534e03bd880f29062d36738aa03232d7889524550c207",
+  "build_receipt_sha256": "19e244b91d94a04cb12051f8b267257e78f96e62589551a111dbc034b3b9d8c2",
+  "hashes": {
+    "mql5-results.bin": "4f4183b5d9c83141647bf3f12ef3a90158658b4b20a59e07b951b8c76573bdae",
+    "api-fixtures.bin": "08f40dfee45b50fec5f3be55fb1c0ab21c1732416b9aa6b0269ba1122d49fcd5",
+    "mql5-trace.bin": "bd34b5f0132d9dd74ef99c4788d8561de8e7d40d41b6c3d47635669c0088abe8"
+  }
+}

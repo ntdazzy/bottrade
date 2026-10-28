@@ -1,0 +1,20 @@
+{
+  "run": "american-dst-bot2-20261029-r5",
+  "build": "b2-american-dst-20261029-r1",
+  "cases": 4737,
+  "matched": 4737,
+  "original_ex5_sha256": "390d8ab14fc213ff4b8cbe5084bec545526e62c6028516fe21219a59398ce795",
+  "native_code_sha256": "ae4e9020f7f5f08d49774728bed14c17eb2bd26b6271c20da51bd3aaa446014f",
+  "native_function_sha256": "387ac43a69b29852283f875ee393710e7cca3fb785dcfddbff71d48ce953e3a7",
+  "sources_sha256": {
+    "Include/bot-cua-toi-2/Bot2AmericanDST.mqh": "4d9aedb34fc398c78a3ab0da04b705a3cd2123777b235e0685701fa5de586f4f",
+    "Scripts/bot-cua-toi-2/Bot2AmericanDSTCheck.mq5": "6258c4008c63b415fb920cf04f51806df6408a05f7c339d4dd559b7808a26eea"
+  },
+  "tool_sha256": "1287b68a8012bf411d40868c1053af404b59a7d703ecfc019e31d8013b90e181",
+  "build_receipt_sha256": "19e244b91d94a04cb12051f8b267257e78f96e62589551a111dbc034b3b9d8c2",
+  "binary_sha256": "b55503320f394655306534e03bd880f29062d36738aa03232d7889524550c207",
+  "results_sha256": "4f4183b5d9c83141647bf3f12ef3a90158658b4b20a59e07b951b8c76573bdae",
+  "trace_sha256": "bd34b5f0132d9dd74ef99c4788d8561de8e7d40d41b6c3d47635669c0088abe8",
+  "whole_bot_complete": false,
+  "full_ea": false
+}

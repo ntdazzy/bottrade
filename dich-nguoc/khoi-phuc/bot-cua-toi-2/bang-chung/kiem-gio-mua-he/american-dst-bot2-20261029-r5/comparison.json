@@ -1,0 +1,16 @@
+{
+  "cases": 4737,
+  "matched": 4737,
+  "failed": 0,
+  "ordered_traces_byte_equal": true,
+  "first_failures": [],
+  "hashes": {
+    "cases.bin": "5d8633de9b2b33caaef4106b46c3eb47effa5c544131e0a5059baad84967fdb7",
+    "original-results.bin": "4f4183b5d9c83141647bf3f12ef3a90158658b4b20a59e07b951b8c76573bdae",
+    "mql5-results.bin": "4f4183b5d9c83141647bf3f12ef3a90158658b4b20a59e07b951b8c76573bdae",
+    "original-trace.bin": "bd34b5f0132d9dd74ef99c4788d8561de8e7d40d41b6c3d47635669c0088abe8",
+    "mql5-trace.bin": "bd34b5f0132d9dd74ef99c4788d8561de8e7d40d41b6c3d47635669c0088abe8",
+    "api-fixtures.bin": "08f40dfee45b50fec5f3be55fb1c0ab21c1732416b9aa6b0269ba1122d49fcd5"
+  },
+  "scope": "Complete native AmericanDST function and reconstructed MQL5, same supplied clocks; measured real MT5 math/calendar/string boundary outputs. First TimeToStruct no-write failure, allocation failures and whole-EA integration remain unproved."
+}
