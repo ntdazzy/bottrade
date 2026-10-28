@@ -1,0 +1,30 @@
+{
+  "original_ex5_sha256": "a3b0de423a06e10ebedc279307b93d7cb9188ba2bb5de77131a913c865b0e922",
+  "native_init_sha256": "c92ebab3485312da42f4d2e83d9c0be8614f65d3784e2551825eb741cc220fe8",
+  "sources_sha256": {
+    "Scripts/bot-cua-toi-1/Bot1InitializationSequenceCheck.mq5": "879bc7cc3776f4cc454ad37f566a5d8888d4e711ba8a544ac00f72d12e7da002",
+    "Include/bot-cua-toi-1/Bot1InitializationGate.mqh": "13ef726a60cec7fd9b7d744948381421596ccec2cb29d2bca701fd090f87126a"
+  },
+  "helpers_sha256": {
+    "cong-cu/kiem-thu-tu-khoi-tao-bot-1-3.py": "c9fe3022fd527986ef38f3dbca54184d9580800734e3aeeac751d51937395fd8",
+    "cong-cu/kiem-cong-khoi-tao-bot-1-3.py": "5061be5aebb8b4039ee5de24457b92b970031d83ca10e2e94a0cd329fb66ffb8",
+    "cong-cu/kiem-cong-dieu-phoi-bot-1-3.py": "a4edd0e507a18d2dda21a104a7488aada4330d0ba12f2beb42396d9faa80e635",
+    "cong-cu/kiem-nfp-toan-nhanh-bot-1-3.py": "addab3f024ed0c2acb233c548f68dc25fc7914989092afccc7373fb7cf090dda",
+    "cong-cu/kiem-gia-vao-bot-1-3.py": "22394e48932feb7242b967aa58e327d2990402f12bfe52621916f64914c9dac2",
+    "cong-cu/kiem-muc-gia-bot-1-3.py": "a6c447ca80029fb63ced0c9d1673bb14222a7736b04df5c410f280f8471d6a35",
+    "cong-cu/kiem-ban-git-quan-ly.py": "7186478774b34e0d72b4594fbcc85972d9b4c07ed02160987d46d34f39dcb160"
+  },
+  "cases": 1600,
+  "result_sha256": "b453b39a17706c310bd9f04f7c60247d91624e329643282537b8878d17f40293",
+  "whole_bot_complete": false,
+  "whole_manager_complete": false,
+  "full_ea": false,
+  "native_init_prefix_executed": true,
+  "account_call_and_tester_call_compared": true,
+  "authorization_result_supplied": true,
+  "authorization_body_executed": false,
+  "denied_alert_executed": false,
+  "service_mutations_supplied": true,
+  "real_network_called": false,
+  "original_ex5_changed": false
+}

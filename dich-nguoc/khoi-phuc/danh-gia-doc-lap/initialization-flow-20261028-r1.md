@@ -20,8 +20,9 @@ Thứ tự gọi thấy được trong mã máy:
 1. Ghi cờ hoạt động bằng 0, đọc `AccountInfoInteger(0x20)`, gọi hàm
    kiểm quyền. Nhánh từ chối gọi bộ thông báo lỗi rồi kết thúc.
 2. Ghi cờ hoạt động bằng 1. Đọc `MQLInfoInteger(6)`; trong một chế độ
-   kiểm thử đặt cổng giờ/nến bằng 1, trong chế độ khác đặt bằng 0,
-   đồng thời đặt cờ M1 bằng 1.
+   kiểm thử với tốc độ 2 đặt cổng giờ/nến và cờ M1 bằng 1; tốc độ 3
+   đặt cổng giờ/nến bằng 0 và cờ M1 bằng 1. Các tốc độ khác giữ nguyên
+   hai cờ này.
 3. Đặt cờ trạng thái lịch tin về 0. Bot 1 có hai khối lịch; bot 3 có
    ba khối. Mỗi khối gọi hàm lấy lịch, dựng chuỗi, cấp phát chuỗi,
    kiểm kết quả và gọi thông báo lỗi khi cần. Không gộp ba khối bot 3.

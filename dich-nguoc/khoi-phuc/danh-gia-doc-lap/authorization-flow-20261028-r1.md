@@ -10,19 +10,20 @@ chuỗi yêu cầu hoặc dữ liệu tài khoản.
 
 Thứ tự chung đã xác nhận:
 
-1. Nếu cờ trạng thái đã cho phép thì trả về ngay.
-2. Đọc mã tài khoản hai lần; lần đầu qua hàm phụ kiểm điều kiện tài
-   khoản. Nếu bị từ chối thì trả về nhánh không cho phép.
+1. Nếu cờ trạng thái khác 0 thì hàm trả về giá trị cho phép ngay.
+2. Đọc mã tài khoản và gọi hàm phụ kiểm điều kiện tài khoản. Nếu hàm
+   phụ trả khác 0 thì trả về giá trị cho phép. Nếu trả 0 thì đọc mã
+   tài khoản lần nữa và tiếp tục gửi yêu cầu.
 3. Đổi mã tài khoản thành chuỗi, ghép vào dữ liệu yêu cầu, chuyển sang
    mảng byte và gọi `WebRequest`.
 4. Với mã HTTP 200, đổi phản hồi thành chuỗi và tìm mẫu phản hồi nguyên
-   bản. Với phản hồi khác 200 hoặc lỗi gọi mạng, ghi mã chẩn đoán và
-   trả về không cho phép.
+   bản. Nếu không tìm thấy mẫu thì gọi hàm kiểm dự phòng. Với phản hồi
+   khác 200 hoặc lỗi gọi mạng, mã gốc cũng gọi hàm kiểm dự phòng. Chưa
+   đủ bằng chứng để khẳng định tất cả trường hợp này đều bị từ chối.
 5. Dọn toàn bộ chuỗi/mảng tạm trước khi trả về.
 
-Các hằng nhạy cảm chỉ được lưu dưới dạng mã băm trong
-`authorization-flow-20261028-r1.json`; không in ra nội dung. Không sửa
-EX5 và không thử thay kết quả để vượt kiểm quyền.
+Tệp `authorization-flow-20261028-r1.json` lưu mã băm thân hàm; không
+chứa nội dung khóa. Không sửa EX5 hay thay kết quả kiểm quyền.
 
 Chưa đưa hàm này vào EA nguồn vì cần xác định đầu vào cấp phép hợp lệ
 và cách cấp `WebRequest` trong môi trường được phép. Cổng khởi tạo hiện

@@ -6,12 +6,14 @@ biên dịch 0 lỗi, 0 cảnh báo. Còn điều phối đầy đủ, khởi t�
 [Bằng chứng lỗ ngày](../danh-gia-doc-lap/daily-loss-20261028-r1/README.md),
 [bằng chứng giờ/nến](../danh-gia-doc-lap/dispatch-gate-20261028-r1/README.md).
 
-Đã thêm nối chuẩn bị/ngữ cảnh → đánh giá: **432/432 ca** khớp; tệp nối
-và API biên dịch 0 lỗi, 0 cảnh báo. [Bằng chứng](../danh-gia-doc-lap/evaluation-bridge-20261028-r1.md).
+Đã sửa và so **68 giá trị nối**, khớp **432/432 ca** với dữ liệu gốc
+sau chuẩn bị. Chưa chạy liên tục toàn bộ phần đánh giá.
+[Phạm vi](../danh-gia-doc-lap/preparation-bridge-20261028-r2.md).
 
 Khối vốn/tài khoản khớp **616/616 ca**; [bằng chứng](../danh-gia-doc-lap/initial-state-20261028-r1.md).
 
 Cổng khởi tạo hoạt động/chế độ kiểm thử đã biên dịch sạch; [phạm vi](../danh-gia-doc-lap/initialization-gate-20261028-r1.md).
+
 
 Ngày 28/10, cập nhật mới: đã dựng toàn bộ hàm lịch sử theo chiến lược
 `Bot1StrategyHistory.mqh`, giữ chung bộ lưu qua nhiều lần gọi: **270/270 ca**

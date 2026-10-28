@@ -1,0 +1,22 @@
+#property strict
+#include "../../Include/bot-cua-toi-3/Bot3InitializationGate.mqh"
+input string CheckRun="";
+int OnStart()
+{
+   if(CheckRun=="") return 1;
+   string folder="bot3-init-gate\\"+CheckRun+"\\";
+   int file=FileOpen(folder+"cases.bin",FILE_READ|FILE_BIN);if(file==INVALID_HANDLE)return 2;
+   int magic=FileReadInteger(file),version=FileReadInteger(file),count=FileReadInteger(file);
+   if(magic!=0x49475431 || version!=1 || count<1)return 3;
+   int result=FileOpen(folder+"mql5-results.bin",FILE_WRITE|FILE_BIN);if(result==INVALID_HANDLE)return 4;
+   FileWriteInteger(result,magic);FileWriteInteger(result,version);FileWriteInteger(result,count);
+   for(int i=0;i<count;i++)
+   {
+      int id=FileReadInteger(file),auth=FileReadInteger(file),tester=FileReadInteger(file),speed=FileReadInteger(file);
+      Bot3InitializationGateState state;state.active=(uchar)FileReadInteger(file);state.dispatch_mode=(uchar)FileReadInteger(file);state.m1_enabled=(uchar)FileReadInteger(file);
+      bool allowed=Bot3InitializeGate(auth!=0,tester,speed,state);
+      FileWriteInteger(result,id);FileWriteInteger(result,(int)allowed);FileWriteInteger(result,(int)state.active);FileWriteInteger(result,(int)state.dispatch_mode);FileWriteInteger(result,(int)state.m1_enabled);
+   }
+   if(FileTell(file)!=FileSize(file))return 5;FileClose(file);FileClose(result);
+   int status=FileOpen(folder+"script-status.bin",FILE_WRITE|FILE_BIN);if(status==INVALID_HANDLE)return 6;FileWriteInteger(status,0);FileWriteInteger(status,count);FileClose(status);return 0;
+}

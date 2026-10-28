@@ -1,13 +1,13 @@
 # Nối chuẩn bị → đánh giá
 
-Đã thêm hai tệp nối dùng chung và hàm gọi liền mạch `SetupAndEvaluate`:
+Đã thêm hai tệp nối và hàm gọi `SetupAndEvaluate`:
 
 - `Bot1EvaluationBridge.mqh`
 - `Bot3EvaluationBridge.mqh`
 
-`SetupAndEvaluate` gọi `BotNSetupStrategy`, chiếu các trường vào cùng đối
-tượng trạng thái, rồi gọi `BotNEvaluateWithDisplay`. Nó không tạo lại
-trạng thái giữa các chiến lược.
+`SetupAndEvaluate` gọi `BotNSetupStrategy`, chiếu các trường vào các đối
+tượng trạng thái, rồi gọi `BotNEvaluateWithDisplay`. Chưa có phép so
+nguyên chuỗi gọi này với mã gốc; không gọi đó là kết quả đã khớp.
 
 Sau mỗi lần chuẩn bị chiến lược, nối này chép các trường đã có bằng chứng
 trực tiếp vào cùng các đối tượng mà hàm đánh giá nhận bằng tham chiếu:
@@ -25,11 +25,16 @@ mã gốc dùng riêng `magic_base`. Không tạo lại các đối tượng tro
 
 Kiểm mới:
 
-- Bộ chuẩn bị liên tục: bot 1 **432/432**, bot 3 **2.106/2.106** ca khớp
-  mã gốc và nguồn MQL5.
+- Bộ hồ sơ → ngữ cảnh → chuẩn bị: bot 1 **432/432**, bot 3
+  **2.106/2.106** ca khớp; các ca này dừng trước phần nối và đánh giá.
 - Tệp API nối của cả hai bot: **0 lỗi, 0 cảnh báo**.
 - Toàn bộ header hiện có sau khi thêm nối: **0 lỗi, 0 cảnh báo**.
 
 Phạm vi này chưa phải EA hoàn chỉnh. Còn thứ tự OnInit đầy đủ, cổng kiểm
 quyền dùng, sự kiện OnTick, phần điều phối ngoài còn lại, giao diện/tài
 nguyên và chạy đối chiếu hai EA hoàn chỉnh.
+
+Rà lại ngày 28/10 phát hiện mã nối trước đó gán sai khung xác nhận,
+ngưỡng bước giá, số nến phụ và cờ hết hạn. Đã sửa và kiểm trực tiếp
+68/69 giá trị; [phạm vi và kết quả mới](preparation-bridge-20261028-r2.md).
+Chuỗi khối đánh giá đầy đủ vẫn chưa được so liên tục với phần chuẩn bị.

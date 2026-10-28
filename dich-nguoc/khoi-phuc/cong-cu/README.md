@@ -1,7 +1,11 @@
 - `kiem-lo-ngay-bot-1-3.py prepare|mql5|original|compare BOT RUN`: toàn nhánh lỗ ngày, 330ca mỗi bot; `mql5` cần `--build BUILD`. Có nguyên thân đóng/xóa/gửi và số học CPU thật; chưa là toàn điều phối/EA.
 - `tao-bo-kiem-lo-ngay.py BOT`: tạo hai bộ ghi MQL5 từ bộ ghi cuối tuần hiện có, kiểm chặt đầu vào và giữ phản hồi dịch vụ.
 - `kiem-cong-dieu-phoi-bot-1-3.py generate BOT | prepare|mql5|original|compare BOT RUN`: cổng giờ/nến từ điểm vào hàm ngoài thật, 640ca mỗi bot; `mql5` cần `--build BUILD`. Dừng trước cờ hoạt động/kiểm quyền dùng.
-- `kiem-cau-noi-danh-gia-bot-1-3.py`: kiểm tệp nối chuẩn bị/ngữ cảnh → đánh giá, biên nhận biên dịch và lượt chuẩn bị liên tục; chưa phải toàn EA.
+- `kiem-thu-tu-khoi-tao-bot-1-3.py generate BOT | prepare|mql5|original|compare BOT RUN`: so cờ và thứ tự đọc tài khoản/kiểm thử; kết quả quyền được cấp, `mql5` cần `--build BUILD`.
+- `kiem-noi-chuan-bi-danh-gia-bot-1-3.py generate BOT | prepare|mql5|original|compare BOT RUN`: so các giá trị nối với vùng gốc sau chuẩn bị; `mql5` cần `--build BUILD`, bản dựng bật kiểm chia 0.
+- `kiem-giu-trang-thai-danh-gia-bot-1-3.py generate BOT | run BOT RUN --build BUILD`: kiểm giữ trạng thái sau hai lần gọi, lần sau trả sớm; thân đánh giá được thay bằng bộ ghi.
+- `kiem-phu-dinh-noi-trang-thai-bot-1-3.py generate BOT | run BOT RUN --build BUILD`: chạy lại phép kiểm trên bản nối cũ; phải phát hiện sai.
+- `kiem-cau-noi-danh-gia-bot-1-3.py`: kiểm lại mã băm nguồn/biên nhận/kết quả của ba bộ trên; chưa phải toàn EA.
 - Đặc tả thứ tự khởi tạo nằm ở `danh-gia-doc-lap/initialization-flow-20261028-r1.md`; còn chờ đối chiếu nhánh quyền dùng và sự kiện EA trước khi viết OnInit bàn giao.
 - `kiem-khoi-tao-von-bot-1-3.py`: lượt mới khớp 616/616 ca vốn/tài khoản cho mỗi bot; phạm vi chỉ là phần khởi tạo vốn độc lập.
 - `BotNInitializationGate.mqh`: giữ cờ hoạt động/chế độ kiểm thử/cờ M1 theo đoạn OnInit đã chốt; không tự vượt kiểm quyền.

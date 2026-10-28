@@ -45,6 +45,8 @@ các phần Claude từ chối, gồm phân tích, viết mã và bộ kiểm; C
 các phần còn nhận. Không đổi cách hỏi để vượt việc từ chối.
 Ngày 26/10/2026, người dùng yêu cầu Codex tự viết tiếp khi Claude hết
 hạn mức; không chờ dịch vụ mở lại. Quy tắc phân tích và đối chiếu giữ nguyên.
+Ngày 28/10/2026, người dùng yêu cầu không tiếp tục dùng Claude; Codex
+trực tiếp phân tích, viết và kiểm. Bằng chứng cũ vẫn được giữ nguyên.
 Giao từng phần rõ đầu vào/đầu ra và nêu đúng bối cảnh; không yêu cầu
 vượt biện pháp bảo vệ. Bản đề xuất của Claude chưa phải kết quả đã đạt.
 Khi đã ghép đủ, phải so toàn bộ bot và toàn bộ cài đặt/hiển thị, kể cả

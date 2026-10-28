@@ -1,0 +1,21 @@
+{
+  "cases": 432,
+  "matched": 432,
+  "failed": 0,
+  "first_failures": [],
+  "fields": 68,
+  "string_comparison": "UTF-16 FNV-1a hashes",
+  "whole_bot_complete": false,
+  "whole_manager_complete": false,
+  "full_ea": false,
+  "native_profile_context_preparation_executed": true,
+  "projected_values_compared": true,
+  "after_preparation_input_mutation_supplied": true,
+  "evaluator_executed": false,
+  "early_return_cases_excluded": true,
+  "terminal_replies_supplied": true,
+  "original_ex5_changed": false,
+  "limits": [
+    "Native setup and projected fields only; supplied service replies and post-preparation expiration change. Early return, full evaluator, all shared-state mutations and complete EA are excluded."
+  ]
+}

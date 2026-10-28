@@ -67,6 +67,9 @@
    Cập nhật ngày 26/10/2026: khi Claude hết hạn mức, người dùng yêu cầu
    Codex trực tiếp viết tiếp mã và bộ kiểm; không chờ Claude mở lại.
    Vẫn phải phân tích bản gốc và so kết quả độc lập trước khi ghép.
+   Cập nhật mới nhất ngày 28/10/2026: theo yêu cầu của người dùng,
+   không tiếp tục dùng Claude; Codex trực tiếp phân tích, viết và kiểm.
+   Các bằng chứng cũ vẫn giữ để tra cứu.
 6. So từng phần rồi so toàn bộ nguồn MQL5 đã biên dịch với EX5 gốc trên
    cùng dữ liệu và điều kiện. Kiểm cả giao dịch, toàn bộ cài đặt, bảng
    hiển thị, khởi động lại, trạng thái lưu và lỗi; cùng lợi nhuận chưa đủ.

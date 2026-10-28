@@ -1,0 +1,13 @@
+{
+  "old_ref": "be60026",
+  "test_case": "successful setup followed by zero CopyBuffer",
+  "calls": 2,
+  "wrong_state_bits": 238,
+  "rejected": true,
+  "build": "b3-shared-handoff-negative-check-20261028-r1",
+  "build_receipt_sha256": "7f5e8c82a206a02659155463c8121e105a167bc6a1c9e9f231795ef4a08b8afb",
+  "result_sha256": "ebdeb01dfbb775ba5d5a712e07970dec7bdf934b5440a9909446bee6e8e73c7d",
+  "tool_sha256": "49a5f8752e0d916f12dfb836457c251d8158c3c4de3d5b08d28682c1027d4e76",
+  "original_ex5_changed": false,
+  "full_ea": false
+}

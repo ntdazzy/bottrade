@@ -1,0 +1,20 @@
+{
+  "cases": 1600,
+  "matched": 1600,
+  "failed": 0,
+  "first_failures": [],
+  "whole_bot_complete": false,
+  "whole_manager_complete": false,
+  "full_ea": false,
+  "native_init_prefix_executed": true,
+  "account_call_and_tester_call_compared": true,
+  "authorization_result_supplied": true,
+  "authorization_body_executed": false,
+  "denied_alert_executed": false,
+  "service_mutations_supplied": true,
+  "real_network_called": false,
+  "original_ex5_changed": false,
+  "limits": [
+    "Initialization prefix only. Authorization body and denied alert are excluded; result and service-side effects are supplied. No complete OnInit/EA or live trading."
+  ]
+}

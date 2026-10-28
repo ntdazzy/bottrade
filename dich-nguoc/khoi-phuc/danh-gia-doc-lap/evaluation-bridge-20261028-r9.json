@@ -1,0 +1,58 @@
+{
+  "bots": {
+    "1": {
+      "init-sequence": {
+        "cases": 1600,
+        "matched": 1600,
+        "fields": null,
+        "result_sha256": "b453b39a17706c310bd9f04f7c60247d91624e329643282537b8878d17f40293"
+      },
+      "prep-bridge-controls": {
+        "cases": 432,
+        "matched": 432,
+        "fields": 68,
+        "result_sha256": "37c1c28a75bf74d43c6e37d762ae2e3984dbae2cd9f2659907a1163277f31ac7"
+      },
+      "shared_handoff": {
+        "calls": 2,
+        "failed": 0,
+        "evaluator_body_replaced": true,
+        "second_preparation_returns_early": true,
+        "previous_version_rejected": true
+      },
+      "all_headers": 92,
+      "original_sha256": "a3b0de423a06e10ebedc279307b93d7cb9188ba2bb5de77131a913c865b0e922"
+    },
+    "3": {
+      "init-sequence": {
+        "cases": 1600,
+        "matched": 1600,
+        "fields": null,
+        "result_sha256": "b453b39a17706c310bd9f04f7c60247d91624e329643282537b8878d17f40293"
+      },
+      "prep-bridge-controls": {
+        "cases": 2106,
+        "matched": 2106,
+        "fields": 69,
+        "result_sha256": "467d51e97349de584b980654996339edb9c2072916d98bc17880b7473a659f0e"
+      },
+      "shared_handoff": {
+        "calls": 2,
+        "failed": 0,
+        "evaluator_body_replaced": true,
+        "second_preparation_returns_early": true,
+        "previous_version_rejected": true
+      },
+      "all_headers": 99,
+      "original_sha256": "ee063d3d87490afe24e2f4ce85f6b05659320e297b102efd70207f71ca2feb83"
+    }
+  },
+  "whole_ea_complete": false,
+  "whole_dispatcher_complete": false,
+  "limits": [
+    "Authorization result supplied in initialization-sequence test; actual authorization body and alert are excluded.",
+    "Bridge comparison stops before evaluator; two strings use hashes.",
+    "Handoff test replaces evaluator and service replies; only one early-return scenario.",
+    "Full OnInit, OnTick, rendered interface, real account and paired EA comparison remain incomplete."
+  ]
+}
