@@ -1,3 +1,10 @@
+Đã chạy ba thân hàm lịch thật trong luồng khởi động sau cổng quyền
+dùng: **158/158 ca khớp**, 248 giá trị, 2.700 ô bảng/lịch và 12.853
+lời gọi. Đã kiểm lỗi truyền từ lịch này sang lịch khác; biên dịch
+0 lỗi/cảnh báo. Còn cổng quyền dùng, hai hàm tìm mức, ba hàm bảng
+trong phép kiểm nối và toàn EA.
+[Phạm vi hiện hành](../danh-gia-doc-lap/startup-real-calendars-20261028-r1/README.md).
+
 Đã nối từ phần tin sau cổng quyền dùng đến cuối khởi động:
 **239/239 ca khớp**, 248 giá trị, 2.700 ô bảng/lịch và 17.346 lời gọi.
 Đã sửa lỗi chép cài đặt vốn quá sớm; 107 tệp ghép biên dịch 0 lỗi/

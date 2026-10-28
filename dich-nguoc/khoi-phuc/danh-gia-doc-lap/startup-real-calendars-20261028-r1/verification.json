@@ -1,0 +1,28 @@
+{
+  "run": "b1-startup-real-calendars-20261028-r3",
+  "cases": 158,
+  "matched": 158,
+  "fields": 248,
+  "table_cells": 1800,
+  "calendar_cells": 900,
+  "sdk_calls": 12853,
+  "cpu_arithmetic_calls": 8848,
+  "calendar_body_calls": [
+    154,
+    154,
+    154
+  ],
+  "calendar_stub_events": 0,
+  "calendar_event_array_calls": 462,
+  "calendar_value_array_calls": 456,
+  "calendar_timeout_prints": 6,
+  "build": "b1-startup-real-cal-check-20261028-r3",
+  "prior_failure_sha256": "6f820c451a93ae7dd00c275850b70fe757d200b6aee66f1137ca4ccd3d31a4a3",
+  "test_recorder_fix": "Measure new MQL5 StringFind errors; preserve previous error only when no new error occurs.",
+  "production_calendar_source_changed": false,
+  "calendar_bodies_replaced": false,
+  "terminal_calendar_array_and_error_replies_supplied": true,
+  "authorization_executed": false,
+  "whole_bot_complete": false,
+  "full_ea": false
+}

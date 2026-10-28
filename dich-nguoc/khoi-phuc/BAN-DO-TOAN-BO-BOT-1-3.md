@@ -113,6 +113,12 @@ ca vốn** vẫn khớp. Còn đoạn trước vốn, các sự kiện và toàn
 248 giá trị và 2.700 ô bảng/lịch. Sửa lỗi giữ cài đặt vốn trước lời
 gọi tin. Ba hàm lấy lịch được cấp kết quả; chưa gồm cổng quyền dùng
 hoặc toàn EA. [Bằng chứng](danh-gia-doc-lap/startup-news-flow-20261028-r1/README.md).
+Đã đưa nguyên ba thân lấy lịch vào luồng `0xd60..0x5658`:
+**158/158 ca**, 248 giá trị, 2.700 ô bảng/lịch và 12.853 lời gọi.
+Phản hồi dịch vụ lịch được cấp; thuật toán tìm/chọn lịch gốc chạy
+thật. Đã sửa bộ ghi để lỗi mới không bị lỗi cũ che mất. Còn cổng
+quyền dùng và các thân con còn lại/toàn EA.
+[Bằng chứng lịch thật](danh-gia-doc-lap/startup-real-calendars-20261028-r1/README.md).
 
 Vị trí trong bảng là số tính từ đầu vùng mã của mỗi bot. Chi tiết dòng
 và lời gọi tra ở hai danh sách trên. “Đã so phần” có nghĩa đã có một

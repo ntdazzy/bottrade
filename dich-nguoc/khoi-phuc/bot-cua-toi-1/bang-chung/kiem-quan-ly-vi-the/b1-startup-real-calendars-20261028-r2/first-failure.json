@@ -1,0 +1,8 @@
+{
+  "failure": "CALENDAR_STATE (152, 64, 2134)",
+  "case": 152,
+  "mql5_error": 5401,
+  "original_error": 4009,
+  "scope": "Injected calendar error masked a later StringFind error in the test recorder; production calendar source unchanged.",
+  "full_ea": false
+}
