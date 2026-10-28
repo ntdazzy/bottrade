@@ -1,0 +1,35 @@
+{
+  "run": "b3-startup-real-panels-20261029-r2",
+  "build": "b3-startup-real-panels-check-20261029-r1",
+  "native_base": "0x17156250000",
+  "begin_rva": "0xd60",
+  "normal_return_rva": "0x5f34",
+  "cases": 56,
+  "matched": 56,
+  "fields": 284,
+  "table_cells": 2800,
+  "calendar_cells": 900,
+  "sdk_calls": 85375,
+  "cpu_arithmetic_calls": 23510,
+  "result_sha256": "b0736a96d20084d313395c6a3ab0fd5829e1eac6bc9ab277e3357e79c6c2c3ba",
+  "panel_body_sha256": {
+    "0xef40": "889bf0b36cb6250816cadfa17e0e2e21beedbccf54ff84bd7c1b1ad9de042920",
+    "0x14fa0": "ddd0398ac83f078510fa3a42a42373670bb9f4a18b45972a40f8706a1f4c5906",
+    "0x16e80": "3c3a1f367bb3b45b48d3f0d6d6711fdbaca824f702aea587d5f4ab0b2c215927",
+    "0x53a10": "1174b2b906e77a28ad0b2105211b62eb4240227e3738e9a873c5a3715660aecd",
+    "0x555e0": "fc59720396c45e0b16c70f75c16368d51fa9e889e1e67b88fa3ce2881c571463"
+  },
+  "entry_body_sha256": {
+    "0x31cd0": "a582e8c956cb1ac922200a08ba8d8c6b74d5c75f1040c0cd20ed00c39f147dde",
+    "0x32090": "e6a29cabac77fece7f0be0207b1d3789591565f4b2e224b808b1b453c615921b",
+    "0x47380": "ebe76f467ef6471c488999635095e8ad03a2066f0b38519f9dd57a738cf0af76",
+    "0x475e0": "bfb14b33b52faadc584a3ea16918b361c2ffe1fb6b258f0346e4cc491fe1f7fc"
+  },
+  "full_ea": false,
+  "authorization_executed": false,
+  "rendered_chart_verified": false,
+  "terminal_replies_supplied": true,
+  "allocation_success_supplied": true,
+  "all_headers_build": "b3-all-headers-api-20261029-r9",
+  "all_headers_count": 116
+}

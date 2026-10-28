@@ -1,9 +1,9 @@
-Đã nối lịch tin tới trả về: **254/254 ca khớp**. Chạy thêm ba thân
-lấy lịch: **158/158 ca**; thêm hai thân tìm điểm vào và kiểm lệnh
-chờ gần giá: **85/85 ca**. So 284 trường, 2.800 ô bảng và 900 ô lịch.
-116 tệp `.mqh` biên dịch 0 lỗi, 0 cảnh báo. Còn ba thân bảng trong
-phép kiểm nối, quyền dùng hợp lệ, ảnh bảng và toàn EA.
-[Bằng chứng](../danh-gia-doc-lap/startup-news-entry-bot3-20261029-r1/README.md).
+Đã nối lịch tin tới trả về, chạy cả các thân lịch/tìm điểm vào/bảng:
+**56/56 ca khớp**, 85.375 lời gọi; 284 trường, 2.800 ô bảng và 900 ô
+lịch. Nguồn kiểm và bộ ghép 116 tệp `.mqh` biên dịch 0 lỗi, 0 cảnh báo.
+Còn quyền dùng hợp lệ, ảnh bảng, các nhánh lỗi và toàn EA.
+[Bằng chứng mới](../danh-gia-doc-lap/startup-real-panels-bot3-20261029-r1/README.md),
+[lượt lịch/điểm vào](../danh-gia-doc-lap/startup-news-entry-bot3-20261029-r1/README.md).
 
 Đã nối đổi giờ/chọn tần suất, ngữ cảnh, chuẩn bị và đuôi:
 **224/224 ca khớp**, 274 trường, dãy chỉ báo và 2.800 ô. Thân đổi

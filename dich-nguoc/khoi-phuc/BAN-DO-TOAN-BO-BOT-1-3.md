@@ -198,8 +198,10 @@ chạy trong cùng lượt. Đã nối tài khoản/lịch dự phòng từ `0x1
 **108/108 ca**, 283 trường và 3.700 ô bảng/lịch. Đã nối phần lấy
 lịch tin từ `0xd60`: **254/254 ca**; thêm ba thân lịch thật:
 **158/158 ca**; thêm hai thân tìm điểm vào/kiểm lệnh chờ gần giá:
-**85/85 ca**, 284 trường. Còn ba thân bảng trong phép kiểm nối,
-ảnh bảng, quyền dùng hợp lệ và toàn EA.
+**85/85 ca**, 284 trường. Thêm cả ba thân bảng trong cùng luồng:
+**56/56 ca**, 85.375 lời gọi. Còn ảnh bảng, quyền dùng hợp lệ,
+các nhánh lỗi và toàn EA.
+[Bằng chứng bảng nối](danh-gia-doc-lap/startup-real-panels-bot3-20261029-r1/README.md).
 [Bằng chứng lịch/điểm vào nối](danh-gia-doc-lap/startup-news-entry-bot3-20261029-r1/README.md).
 [Bằng chứng ngữ cảnh nối](danh-gia-doc-lap/startup-context-flow-bot3-20261029-r1/README.md).
 [Bằng chứng phần chọn nối](danh-gia-doc-lap/startup-selection-flow-bot3-20261029-r1/README.md).
