@@ -4,6 +4,7 @@
 #include "Bot3StrategySetup.mqh"
 #include "Bot3EntryLoop.mqh"
 #include "Bot3EntryLevelCache.mqh"
+#include "Bot3EvaluationWithDisplay.mqh"
 
 void Bot3ProjectPreparationToEvaluation(const Bot3PreparationInputs &inputs,
                                         const Bot3PreparationState &preparation,
@@ -68,6 +69,47 @@ void Bot3SetupAndProjectEvaluation(const uint index,
    Bot3ProjectPreparationToEvaluation(inputs,preparation,context_state,
                                       magic_base,deviation,execution,unit,
                                       restore,loop,levels);
+}
+
+Bot3EntryLevelDecision Bot3SetupAndEvaluate(const uint index,
+                                            const Bot3ProfileAdjustments &adjustments,
+                                            Bot3PreparationInputs &inputs,
+                                            const Bot3StrategyContextInputs &context_inputs,
+                                            Bot3ProfileRuntimeState &profile_state,
+                                            Bot3StrategyContextState &context_state,
+                                            Bot3PreparationState &preparation,
+                                            const int magic_base,const ulong deviation,
+                                            Bot3NfpExecution &execution,const double &unit,
+                                            const Bot3NfpFilterSettings &nfp_settings,Bot3NfpFilterState &nfp,
+                                            const Bot3ReleaseFilterSettings &interest_settings,Bot3ReleaseFilterState &interest,
+                                            const Bot3ReleaseFilterSettings &cpi_settings,Bot3ReleaseFilterState &cpi,
+                                            Bot3NewsEvents &events,MqlDateTime &cached_calendar,
+                                            const long &nfp_history[],const long &interest_history[],const long &cpi_history[],
+                                            Bot3NewsSelection &selection,const Bot3FridaySettings &friday,uchar &friday_closed,
+                                            const Bot3SpreadSettings &spread_settings,double &spread,
+                                            Bot3PendingQueue &queue,Bot3PendingRestoreSettings &restore,
+                                            const int &pending_enabled,const int &maximum_pending,
+                                            Bot3LevelCacheSettings &level_settings,const uint caller_index,
+                                            uint &current_index,long &bar_times[],double &upper[],double &lower[],
+                                            Bot3EntryLoopSettings &loop_settings,Bot3EntryLoopState &loop_state,
+                                            const Bot3VolumeSettings &volume_settings,Bot3VolumeState &volume_state,
+                                            const bool reset_on_withdrawal,const string &peak_key,const string &time_key,
+                                            long &last_check,long &last_deal_time,const string &suffix,
+                                            const double &weight_denominator,const uchar &enabled[],double &volumes[],
+                                            const uchar &panel_show,const uchar &panel_tester,const double &panel_manual_lots,
+                                            const uchar &day_switch_filter,const double &balance_change_percent,
+                                            double &previous_balance,Bot3EvaluationPrefixSettings &prefix,
+                                            Bot3EvaluationPrefixState &state,Bot3DisplayState &display)
+{
+   Bot3SetupAndProjectEvaluation(index,adjustments,inputs,context_inputs,profile_state,context_state,
+                                 preparation,magic_base,deviation,execution,unit,restore,loop_settings,level_settings);
+   return Bot3EvaluateWithDisplay(nfp_settings,nfp,interest_settings,interest,cpi_settings,cpi,events,
+      cached_calendar,nfp_history,interest_history,cpi_history,execution,selection,friday,friday_closed,
+      spread_settings,unit,spread,queue,restore,pending_enabled,maximum_pending,level_settings,caller_index,
+      current_index,bar_times,upper,lower,loop_settings,loop_state,volume_settings,volume_state,
+      reset_on_withdrawal,peak_key,time_key,last_check,last_deal_time,suffix,weight_denominator,enabled,volumes,
+      panel_show,panel_tester,panel_manual_lots,day_switch_filter,balance_change_percent,previous_balance,
+      prefix,state,display);
 }
 
 #endif

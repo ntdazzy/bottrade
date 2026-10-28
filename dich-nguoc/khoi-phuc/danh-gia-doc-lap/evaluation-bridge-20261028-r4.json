@@ -1,0 +1,34 @@
+{
+  "bots": {
+    "1": {
+      "bridge_sha256": "9b0b0573944fbf687f5625c194328a126f13ab323c2b7b40baebd1ec8258d368",
+      "api_sha256": "056a5500b064f4fc3604359ba786b3c7e56eceb8ec55e2747ee49b71266739c1",
+      "receipt_sha256": "fd43bfe3b7054807c24698f442516a70de1edb8e88db3e5d88292f396b738a2d",
+      "setup_cases": 432,
+      "setup_matched": 432,
+      "setup_failed": 0,
+      "build_errors": 0,
+      "build_warnings": 0,
+      "mapped_fields": 15
+    },
+    "3": {
+      "bridge_sha256": "9d5b774ad11dbd69107d8cd791a7f3f66ea7bd246d6056ea1531238eb9c9e690",
+      "api_sha256": "4f7886b1fe7b5c407ed4937a3532a4203517e1d67b1ae9ff626e80bccb0be63b",
+      "receipt_sha256": "9e6ab515c3f3169bf119cda62cfbae389afa9d04f5f2f3f6e080d114cb4b9b73",
+      "setup_cases": 2106,
+      "setup_matched": 2106,
+      "setup_failed": 0,
+      "build_errors": 0,
+      "build_warnings": 0,
+      "mapped_fields": 15
+    }
+  },
+  "native_setup_scope": "profile -> context -> preparation only",
+  "whole_ea_complete": false,
+  "remaining": [
+    "OnInit exact ordering and account/license gate",
+    "OnTick/event bindings and outer dispatcher remainder",
+    "complete paired MT5 EA comparison",
+    "UI/resource and restart evidence"
+  ]
+}

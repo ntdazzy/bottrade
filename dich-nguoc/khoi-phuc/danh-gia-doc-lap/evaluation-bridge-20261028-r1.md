@@ -1,9 +1,13 @@
 # Nối chuẩn bị → đánh giá
 
-Đã thêm hai tệp nối dùng chung:
+Đã thêm hai tệp nối dùng chung và hàm gọi liền mạch `SetupAndEvaluate`:
 
 - `Bot1EvaluationBridge.mqh`
 - `Bot3EvaluationBridge.mqh`
+
+`SetupAndEvaluate` gọi `BotNSetupStrategy`, chiếu các trường vào cùng đối
+tượng trạng thái, rồi gọi `BotNEvaluateWithDisplay`. Nó không tạo lại
+trạng thái giữa các chiến lược.
 
 Sau mỗi lần chuẩn bị chiến lược, nối này chép các trường đã có bằng chứng
 trực tiếp vào cùng các đối tượng mà hàm đánh giá nhận bằng tham chiếu:
