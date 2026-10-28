@@ -12,6 +12,7 @@
 | Chế độ kiểm thử | `MQLInfoInteger(6)`, ghi cờ `0x621e0/0x621c9` | ghi `0x6d1e8/0x6d1d0` |
 | Ba hàm lấy lịch tin | `0x61b0`, `0x6600`, `0x6a90` | `0x6ad0`, `0x6f20`, `0x73b0` |
 | Chọn mốc tin dùng chung | `0x7310` | `0x7c30` |
+| Nối phần tin tới trả về | `0xd60..0x5658`, 239/239 ca, ba hàm lấy lịch được cấp kết quả | chưa dựng đoạn nối tương ứng |
 | Đoạn vốn/tài khoản trong OnInit | `0x126c..0x1941` | `0x1279..0x193f` |
 | Nối vốn, lịch dự phòng tới trả về | `0x126c..0x5658`, 93/93 ca, cùng trạng thái và 900 ô lịch | chưa dựng đoạn nối tương ứng |
 | Nạp dữ liệu lịch dự phòng và hai cờ | `0x1941..0x3827` | `0x193f..0x3840` |

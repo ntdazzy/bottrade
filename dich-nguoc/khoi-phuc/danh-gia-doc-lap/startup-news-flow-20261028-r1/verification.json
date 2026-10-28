@@ -1,0 +1,23 @@
+{
+  "run": "b1-startup-news-flow-20261028-r2",
+  "cases": 239,
+  "matched": 239,
+  "fields": 248,
+  "table_cells": 1800,
+  "calendar_cells": 900,
+  "sdk_calls": 17346,
+  "cpu_arithmetic_calls": 13318,
+  "builds": [
+    "b1-startup-news-flow-check-20261028-r2",
+    "b1-all-headers-api-20261028-r30"
+  ],
+  "source_fix": "Read account settings by reference after news callbacks instead of copying them at wrapper entry.",
+  "prior_failure_sha256": "1eb9f22142b838abab72f7a00da28a58aec95f80fc2a23282eb31e773416dcc8",
+  "prior_baseline_sha256": "c717f660ac825a6bf968385272aace1252a4165617a2f72826cdcc671bfe4e84",
+  "authorization_executed": false,
+  "calendar_bodies_replaced": true,
+  "entry_level_children_supplied": true,
+  "panel_children_recorded": true,
+  "whole_bot_complete": false,
+  "full_ea": false
+}

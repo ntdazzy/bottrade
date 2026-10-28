@@ -91,6 +91,7 @@
 #include "../../Include/bot-cua-toi-1/Bot1StartupPreparationFlow.mqh"
 #include "../../Include/bot-cua-toi-1/Bot1StartupContextFlow.mqh"
 #include "../../Include/bot-cua-toi-1/Bot1StartupAccountFlow.mqh"
+#include "../../Include/bot-cua-toi-1/Bot1StartupNewsFlow.mqh"
 #include "../../Include/bot-cua-toi-1/Bot1TradeErrors.mqh"
 #include "../../Include/bot-cua-toi-1/Bot1TradeMessages.mqh"
 #include "../../Include/bot-cua-toi-1/Bot1TradeSend.mqh"

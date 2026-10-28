@@ -1,3 +1,10 @@
+Đã nối từ phần tin sau cổng quyền dùng đến cuối khởi động:
+**239/239 ca khớp**, 248 giá trị, 2.700 ô bảng/lịch và 17.346 lời gọi.
+Đã sửa lỗi chép cài đặt vốn quá sớm; 107 tệp ghép biên dịch 0 lỗi/
+cảnh báo. Ba thân lấy lịch được cấp kết quả; còn cổng quyền dùng,
+thân con trong phép kiểm nối và toàn EA.
+[Phạm vi hiện hành](../danh-gia-doc-lap/startup-news-flow-20261028-r1/README.md).
+
 Đã nối vốn/tài khoản → lịch tin dự phòng → ngữ cảnh → chuẩn bị →
 cuối khởi động: **93/93 ca khớp**, 247 giá trị và 2.700 ô bảng/lịch.
 Đã sửa thứ tự ghi vốn cao nhất; kiểm lại **616/616 ca vốn** vẫn khớp.

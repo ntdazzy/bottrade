@@ -109,6 +109,10 @@ chiến lược/bình luận qua cả ba phần; điều kiện từ phần tài
 cao nhất theo lỗi so trạng thái trước thông báo; kiểm lại **616/616
 ca vốn** vẫn khớp. Còn đoạn trước vốn, các sự kiện và toàn EA.
 [Bằng chứng nối vốn](danh-gia-doc-lap/startup-account-flow-20261028-r1/README.md).
+Đã nối phần tin vào trước vốn, chạy `0xd60..0x5658`: **239/239 ca**,
+248 giá trị và 2.700 ô bảng/lịch. Sửa lỗi giữ cài đặt vốn trước lời
+gọi tin. Ba hàm lấy lịch được cấp kết quả; chưa gồm cổng quyền dùng
+hoặc toàn EA. [Bằng chứng](danh-gia-doc-lap/startup-news-flow-20261028-r1/README.md).
 
 Vị trí trong bảng là số tính từ đầu vùng mã của mỗi bot. Chi tiết dòng
 và lời gọi tra ở hai danh sách trên. “Đã so phần” có nghĩa đã có một

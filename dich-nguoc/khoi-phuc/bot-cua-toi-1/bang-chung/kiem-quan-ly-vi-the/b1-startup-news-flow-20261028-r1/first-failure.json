@@ -1,0 +1,13 @@
+{
+  "failure": "PREP_STATE (235, 30, 899)",
+  "case": 235,
+  "differences": [
+    {
+      "field": "Balance",
+      "rva": "0x6a320",
+      "mql5": 4666723172467343360,
+      "original": 4665272916630306816
+    }
+  ],
+  "whole_bot_complete": false
+}
