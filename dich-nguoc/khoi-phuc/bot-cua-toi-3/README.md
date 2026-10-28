@@ -1,3 +1,9 @@
+Đã nối tạo trạng thái ban đầu, chuẩn bị và đuôi: **531/531 ca khớp**,
+248 trường, dãy chỉ báo và 2.800 ô; không đặt lại dữ liệu ở điểm nối.
+113 tệp `.mqh` biên dịch 0 lỗi, 0 cảnh báo. Còn ghép phần chọn
+tần suất/đổi giờ/đổi tiền phía trước và toàn EA.
+[Bằng chứng](../danh-gia-doc-lap/startup-context-flow-bot3-20261029-r1/README.md).
+
 Đã nối thân chuẩn bị đầu tới trả về: **233/233 ca khớp**, 234 trường,
 2.800 ô và dãy chỉ báo. Ba ca lỗi riêng khớp loại lỗi/lời gọi trước
 khi dừng. Cách gọi chuẩn bị cũ vẫn khớp **1.016/1.016 ca**; 112 tệp

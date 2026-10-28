@@ -1,0 +1,1278 @@
+{
+  "bot": 3,
+  "run": "b3-startup-context-flow-20261029-r1",
+  "build": "b3-startup-context-flow-check-20261029-r1",
+  "all_headers_build": "b3-all-headers-api-20261029-r6",
+  "all_headers_count": 113,
+  "cases": 531,
+  "matched": 531,
+  "sdk_calls": 28885,
+  "cpu_arithmetic_calls": 29936,
+  "joins": 531,
+  "result_sha256": "c01b001652d6da45d2306c072a243d864cd291ac9e670f57243d98a66ecf40e2",
+  "original_ex5_sha256": "ee063d3d87490afe24e2f4ce85f6b05659320e297b102efd70207f71ca2feb83",
+  "native_init_sha256": "66812ca6397edc00b872cfc3b38ca7606cc3dc7d5cf084433c579ea13e90771c",
+  "fields": [
+    {
+      "source": "P.native_6d50c",
+      "format": "i",
+      "rva": "0x6d50c"
+    },
+    {
+      "source": "State.native_6d645",
+      "format": "B",
+      "rva": "0x6d645"
+    },
+    {
+      "source": "P.strategy_index",
+      "format": "I",
+      "rva": "0x74934"
+    },
+    {
+      "source": "P.entry_frame",
+      "format": "i",
+      "rva": "0x6d524"
+    },
+    {
+      "source": "P.management_timeframe",
+      "format": "i",
+      "rva": "0x6d584"
+    },
+    {
+      "source": "P.tick.ask",
+      "format": "d",
+      "rva": "0x747a0"
+    },
+    {
+      "source": "P.tick.bid",
+      "format": "d",
+      "rva": "0x74798"
+    },
+    {
+      "source": "P.spread",
+      "format": "d",
+      "rva": "0x6d650"
+    },
+    {
+      "source": "P.native_6d620",
+      "format": "d",
+      "rva": "0x6d620"
+    },
+    {
+      "source": "P.unit",
+      "format": "d",
+      "rva": "0x73dd8"
+    },
+    {
+      "source": "P.min_change",
+      "format": "d",
+      "rva": "0x6d610"
+    },
+    {
+      "source": "P.stop_min_price",
+      "format": "d",
+      "rva": "0x73ab0"
+    },
+    {
+      "source": "P.freeze_min_price",
+      "format": "d",
+      "rva": "0x744a8"
+    },
+    {
+      "source": "P.stop_distance",
+      "format": "d",
+      "rva": "0x6d588"
+    },
+    {
+      "source": "P.target_distance",
+      "format": "d",
+      "rva": "0x6d590"
+    },
+    {
+      "source": "P.trigger_distance",
+      "format": "d",
+      "rva": "0x6d5b8"
+    },
+    {
+      "source": "P.locked_distance",
+      "format": "d",
+      "rva": "0x6d5c0"
+    },
+    {
+      "source": "P.freeze_buffer",
+      "format": "i",
+      "rva": "0x6d4d8"
+    },
+    {
+      "source": "P.trail_distance",
+      "format": "d",
+      "rva": "0x6d598"
+    },
+    {
+      "source": "P.native_6d5e8",
+      "format": "d",
+      "rva": "0x6d5e8"
+    },
+    {
+      "source": "P.native_6d5f0",
+      "format": "d",
+      "rva": "0x6d5f0"
+    },
+    {
+      "source": "P.gap_points",
+      "format": "d",
+      "rva": "0x6d538"
+    },
+    {
+      "source": "P.older_width",
+      "format": "i",
+      "rva": "0x6d528"
+    },
+    {
+      "source": "P.recent_width",
+      "format": "i",
+      "rva": "0x6d52c"
+    },
+    {
+      "source": "P.expiration_hours",
+      "format": "i",
+      "rva": "0x6d560"
+    },
+    {
+      "source": "P.virtual_expiration",
+      "format": "B",
+      "rva": "0x6d511"
+    },
+    {
+      "source": "P.expiration_seconds",
+      "format": "I",
+      "rva": "0x73de0"
+    },
+    {
+      "source": "P.expiration",
+      "format": "q",
+      "rva": "0x74490"
+    },
+    {
+      "source": "Nfp.notice",
+      "format": "B",
+      "rva": "0x74474"
+    },
+    {
+      "source": "Nfp.blocked",
+      "format": "B",
+      "rva": "0x744c8"
+    },
+    {
+      "source": "Interest.blocked",
+      "format": "B",
+      "rva": "0x744c9"
+    },
+    {
+      "source": "Cpi.blocked",
+      "format": "B",
+      "rva": "0x744ca"
+    },
+    {
+      "source": "State.week_bar",
+      "format": "q",
+      "rva": "0x744b8"
+    },
+    {
+      "source": "P.max_spread",
+      "format": "d",
+      "rva": "0x6d4d0"
+    },
+    {
+      "source": "MinimumSpread",
+      "format": "d",
+      "rva": "0x6d648"
+    },
+    {
+      "source": "Inputs.entry.confirmation_frame",
+      "format": "i",
+      "rva": "0x6d2b4"
+    },
+    {
+      "source": "Context.magic",
+      "format": "i",
+      "rva": "0x6d564"
+    },
+    {
+      "source": "P.last_shift",
+      "format": "i",
+      "rva": "0x6d530"
+    },
+    {
+      "source": "P.buy_offset",
+      "format": "d",
+      "rva": "0x6d540"
+    },
+    {
+      "source": "P.sell_offset",
+      "format": "d",
+      "rva": "0x6d548"
+    },
+    {
+      "source": "P.nearby_radius",
+      "format": "d",
+      "rva": "0x6d558"
+    },
+    {
+      "source": "LastTicket",
+      "format": "Q",
+      "rva": "0x74838"
+    },
+    {
+      "source": "Entry.candidate_buy",
+      "format": "d",
+      "rva": "0x74480"
+    },
+    {
+      "source": "Entry.candidate_sell",
+      "format": "d",
+      "rva": "0x74478"
+    },
+    {
+      "source": "Entry.rounded_buy",
+      "format": "d",
+      "rva": "0x6d660"
+    },
+    {
+      "source": "Entry.rounded_sell",
+      "format": "d",
+      "rva": "0x6d668"
+    },
+    {
+      "source": "Levels.blocked",
+      "format": "B",
+      "rva": "0x74498"
+    },
+    {
+      "source": "Manager.counter",
+      "format": "i",
+      "rva": "0x74430"
+    },
+    {
+      "source": "State.timed_delay_seconds",
+      "format": "i",
+      "rva": "0x7449c"
+    },
+    {
+      "source": "Manager.current_stop",
+      "format": "d",
+      "rva": "0x6d670"
+    },
+    {
+      "source": "P.native_6d628",
+      "format": "d",
+      "rva": "0x6d628"
+    },
+    {
+      "source": "Manager.table.guard",
+      "format": "B",
+      "rva": "0x73450"
+    },
+    {
+      "source": "Queue.enabled",
+      "format": "B",
+      "rva": "0x73468"
+    },
+    {
+      "source": "P.comment",
+      "format": "s",
+      "rva": "0x6d578"
+    },
+    {
+      "source": "Panel.font",
+      "format": "i",
+      "rva": "0x1d6f50"
+    },
+    {
+      "source": "Panel.scale",
+      "format": "d",
+      "rva": "0x1d6f48"
+    },
+    {
+      "source": "Panel.color_flag",
+      "format": "B",
+      "rva": "0x74938"
+    },
+    {
+      "source": "Panel.mode",
+      "format": "I",
+      "rva": "0x6d630"
+    },
+    {
+      "source": "Panel.strategy_risk",
+      "format": "d",
+      "rva": "0x1d7150"
+    },
+    {
+      "source": "Panel.frequency",
+      "format": "i",
+      "rva": "0x6d21c"
+    },
+    {
+      "source": "Panel.manual_lots",
+      "format": "d",
+      "rva": "0x1d7138"
+    },
+    {
+      "source": "Panel.allowed_dd",
+      "format": "d",
+      "rva": "0x1d7140"
+    },
+    {
+      "source": "Panel.cell_x",
+      "format": "d",
+      "rva": "0x752d8"
+    },
+    {
+      "source": "Panel.cell_y",
+      "format": "d",
+      "rva": "0x752e0"
+    },
+    {
+      "source": "Panel.cell_font_flag",
+      "format": "B",
+      "rva": "0x752e8"
+    },
+    {
+      "source": "Panel.closed_star",
+      "format": "B",
+      "rva": "0x6d43c"
+    },
+    {
+      "source": "Panel.rows_ready",
+      "format": "B",
+      "rva": "0x74970"
+    },
+    {
+      "source": "Panel.closed[0]",
+      "format": "d",
+      "rva": "0x76fc0"
+    },
+    {
+      "source": "Panel.closed[1]",
+      "format": "d",
+      "rva": "0x76fc8"
+    },
+    {
+      "source": "Panel.closed[2]",
+      "format": "d",
+      "rva": "0x76fd0"
+    },
+    {
+      "source": "Panel.closed[3]",
+      "format": "d",
+      "rva": "0x76fd8"
+    },
+    {
+      "source": "Panel.closed[4]",
+      "format": "d",
+      "rva": "0x76fe0"
+    },
+    {
+      "source": "Panel.closed[5]",
+      "format": "d",
+      "rva": "0x76fe8"
+    },
+    {
+      "source": "Panel.closed[6]",
+      "format": "d",
+      "rva": "0x76ff0"
+    },
+    {
+      "source": "Panel.closed[7]",
+      "format": "d",
+      "rva": "0x76ff8"
+    },
+    {
+      "source": "Panel.closed[8]",
+      "format": "d",
+      "rva": "0x77000"
+    },
+    {
+      "source": "Panel.per_trade[0]",
+      "format": "d",
+      "rva": "0x74b10"
+    },
+    {
+      "source": "Panel.per_trade[1]",
+      "format": "d",
+      "rva": "0x74b18"
+    },
+    {
+      "source": "Panel.per_trade[2]",
+      "format": "d",
+      "rva": "0x74b20"
+    },
+    {
+      "source": "Panel.per_trade[3]",
+      "format": "d",
+      "rva": "0x74b28"
+    },
+    {
+      "source": "Panel.per_trade[4]",
+      "format": "d",
+      "rva": "0x74b30"
+    },
+    {
+      "source": "Panel.per_trade[5]",
+      "format": "d",
+      "rva": "0x74b38"
+    },
+    {
+      "source": "Panel.per_trade[6]",
+      "format": "d",
+      "rva": "0x74b40"
+    },
+    {
+      "source": "Panel.per_trade[7]",
+      "format": "d",
+      "rva": "0x74b48"
+    },
+    {
+      "source": "Panel.per_trade[8]",
+      "format": "d",
+      "rva": "0x74b50"
+    },
+    {
+      "source": "Panel.lots[0]",
+      "format": "d",
+      "rva": "0x73ac0"
+    },
+    {
+      "source": "Panel.lots[1]",
+      "format": "d",
+      "rva": "0x73ac8"
+    },
+    {
+      "source": "Panel.lots[2]",
+      "format": "d",
+      "rva": "0x73ad0"
+    },
+    {
+      "source": "Panel.lots[3]",
+      "format": "d",
+      "rva": "0x73ad8"
+    },
+    {
+      "source": "Panel.lots[4]",
+      "format": "d",
+      "rva": "0x73ae0"
+    },
+    {
+      "source": "Panel.lots[5]",
+      "format": "d",
+      "rva": "0x73ae8"
+    },
+    {
+      "source": "Panel.lots[6]",
+      "format": "d",
+      "rva": "0x73af0"
+    },
+    {
+      "source": "Panel.lots[7]",
+      "format": "d",
+      "rva": "0x73af8"
+    },
+    {
+      "source": "Panel.lots[8]",
+      "format": "d",
+      "rva": "0x73b00"
+    },
+    {
+      "source": "Events.nfp",
+      "format": "q",
+      "rva": "0x1d6c70"
+    },
+    {
+      "source": "Events.interest",
+      "format": "q",
+      "rva": "0x1d6c78"
+    },
+    {
+      "source": "Events.cpi",
+      "format": "q",
+      "rva": "0x1d6c80"
+    },
+    {
+      "source": "Windows.nfp_enabled",
+      "format": "B",
+      "rva": "0x1d7020"
+    },
+    {
+      "source": "Windows.interest_enabled",
+      "format": "B",
+      "rva": "0x1d7078"
+    },
+    {
+      "source": "Windows.cpi_enabled",
+      "format": "B",
+      "rva": "0x1d70b0"
+    },
+    {
+      "source": "Windows.nfp_after",
+      "format": "i",
+      "rva": "0x1d7060"
+    },
+    {
+      "source": "Windows.interest_after",
+      "format": "i",
+      "rva": "0x1d7098"
+    },
+    {
+      "source": "Windows.cpi_after",
+      "format": "i",
+      "rva": "0x1d70d0"
+    },
+    {
+      "source": "Selection.block_time",
+      "format": "q",
+      "rva": "0x1d6ca0"
+    },
+    {
+      "source": "Selection.label",
+      "format": "s",
+      "rva": "0x1d6ca8"
+    },
+    {
+      "source": "P.calendar.hour",
+      "format": "i",
+      "rva": "0x747dc"
+    },
+    {
+      "source": "LastHour",
+      "format": "i",
+      "rva": "0x74488"
+    },
+    {
+      "source": "Show",
+      "format": "B",
+      "rva": "0x1d6f38"
+    },
+    {
+      "source": "Tester",
+      "format": "B",
+      "rva": "0x1d6f40"
+    },
+    {
+      "source": "HistoryWindow",
+      "format": "B",
+      "rva": "0x6d43d"
+    },
+    {
+      "source": "ContextInputs.base_magic",
+      "format": "i",
+      "rva": "0x1d6ff0"
+    },
+    {
+      "source": "Balance",
+      "format": "d",
+      "rva": "0x1d6c60"
+    },
+    {
+      "source": "Wins",
+      "format": "d",
+      "rva": "0x74940"
+    },
+    {
+      "source": "Losses",
+      "format": "d",
+      "rva": "0x74948"
+    },
+    {
+      "source": "Context.order_comment",
+      "format": "s",
+      "rva": "0x6d568"
+    },
+    {
+      "source": "Inputs.symbol",
+      "format": "s",
+      "rva": "0x74958"
+    },
+    {
+      "source": "TailState.buy_first",
+      "format": "s",
+      "rva": "0x74438"
+    },
+    {
+      "source": "TailState.buy_second",
+      "format": "s",
+      "rva": "0x74448"
+    },
+    {
+      "source": "TailState.sell_first",
+      "format": "s",
+      "rva": "0x74458"
+    },
+    {
+      "source": "TailState.sell_second",
+      "format": "s",
+      "rva": "0x74468"
+    },
+    {
+      "source": "TailState.flag_744a0",
+      "format": "B",
+      "rva": "0x744a0"
+    },
+    {
+      "source": "TailBars[0]",
+      "format": "q",
+      "rva": "0x73470"
+    },
+    {
+      "source": "TailBars[1]",
+      "format": "q",
+      "rva": "0x73478"
+    },
+    {
+      "source": "TailBars[2]",
+      "format": "q",
+      "rva": "0x73480"
+    },
+    {
+      "source": "TailBars[3]",
+      "format": "q",
+      "rva": "0x73488"
+    },
+    {
+      "source": "TailBars[4]",
+      "format": "q",
+      "rva": "0x73490"
+    },
+    {
+      "source": "TailBars[5]",
+      "format": "q",
+      "rva": "0x73498"
+    },
+    {
+      "source": "TailBars[6]",
+      "format": "q",
+      "rva": "0x734a0"
+    },
+    {
+      "source": "TailBars[7]",
+      "format": "q",
+      "rva": "0x734a8"
+    },
+    {
+      "source": "TailBars[8]",
+      "format": "q",
+      "rva": "0x734b0"
+    },
+    {
+      "source": "Inputs.indicator_period",
+      "format": "i",
+      "rva": "0x6d170"
+    },
+    {
+      "source": "Inputs.indicator_timeframe",
+      "format": "i",
+      "rva": "0x6d174"
+    },
+    {
+      "source": "Inputs.reference",
+      "format": "d",
+      "rva": "0x6d1b8"
+    },
+    {
+      "source": "Inputs.variable_distances",
+      "format": "B",
+      "rva": "0x1d6f28"
+    },
+    {
+      "source": "Inputs.adjust_lots",
+      "format": "B",
+      "rva": "0x1d6f30"
+    },
+    {
+      "source": "Inputs.max_spread",
+      "format": "d",
+      "rva": "0x1d6f98"
+    },
+    {
+      "source": "Inputs.feature_flag",
+      "format": "B",
+      "rva": "0x6d23c"
+    },
+    {
+      "source": "Inputs.freeze_buffer_flag",
+      "format": "B",
+      "rva": "0x6d248"
+    },
+    {
+      "source": "Inputs.entry.entry_frame",
+      "format": "i",
+      "rva": "0x6d2b8"
+    },
+    {
+      "source": "Inputs.entry.older_width",
+      "format": "i",
+      "rva": "0x6d2bc"
+    },
+    {
+      "source": "Inputs.entry.recent_width",
+      "format": "i",
+      "rva": "0x6d2c0"
+    },
+    {
+      "source": "Inputs.entry.last_shift",
+      "format": "i",
+      "rva": "0x6d2c4"
+    },
+    {
+      "source": "Inputs.entry.gap_points",
+      "format": "d",
+      "rva": "0x6d2c8"
+    },
+    {
+      "source": "Inputs.buy_offset",
+      "format": "d",
+      "rva": "0x6d2d0"
+    },
+    {
+      "source": "Inputs.sell_offset",
+      "format": "d",
+      "rva": "0x6d2d8"
+    },
+    {
+      "source": "Inputs.nearby_radius",
+      "format": "d",
+      "rva": "0x6d2e8"
+    },
+    {
+      "source": "Inputs.expiration_hours",
+      "format": "i",
+      "rva": "0x6d2f0"
+    },
+    {
+      "source": "Inputs.virtual_expiration",
+      "format": "B",
+      "rva": "0x1d6fc8"
+    },
+    {
+      "source": "Inputs.stop_distance",
+      "format": "d",
+      "rva": "0x6d328"
+    },
+    {
+      "source": "Inputs.target_distance",
+      "format": "d",
+      "rva": "0x6d330"
+    },
+    {
+      "source": "Inputs.trail_distance",
+      "format": "d",
+      "rva": "0x6d348"
+    },
+    {
+      "source": "Inputs.trail_start",
+      "format": "d",
+      "rva": "0x6d350"
+    },
+    {
+      "source": "Inputs.trail_limit",
+      "format": "d",
+      "rva": "0x6d358"
+    },
+    {
+      "source": "Inputs.trail_step",
+      "format": "d",
+      "rva": "0x6d360"
+    },
+    {
+      "source": "Inputs.native_6d368",
+      "format": "d",
+      "rva": "0x6d368"
+    },
+    {
+      "source": "Inputs.native_6d370",
+      "format": "d",
+      "rva": "0x6d370"
+    },
+    {
+      "source": "Inputs.trigger_distance",
+      "format": "d",
+      "rva": "0x6d398"
+    },
+    {
+      "source": "Inputs.locked_distance",
+      "format": "d",
+      "rva": "0x6d3a0"
+    },
+    {
+      "source": "Inputs.aux_hour1",
+      "format": "B",
+      "rva": "0x6d3b4"
+    },
+    {
+      "source": "Inputs.aux_scan50",
+      "format": "B",
+      "rva": "0x6d3b5"
+    },
+    {
+      "source": "Inputs.aux_older",
+      "format": "i",
+      "rva": "0x6d3b8"
+    },
+    {
+      "source": "Inputs.aux_recent",
+      "format": "i",
+      "rva": "0x6d3bc"
+    },
+    {
+      "source": "Inputs.aux_offset",
+      "format": "d",
+      "rva": "0x6d3c8"
+    },
+    {
+      "source": "Inputs.min_change",
+      "format": "d",
+      "rva": "0x6d400"
+    },
+    {
+      "source": "Inputs.native_6d250",
+      "format": "d",
+      "rva": "0x6d250"
+    },
+    {
+      "source": "Inputs.native_6d258",
+      "format": "B",
+      "rva": "0x6d258"
+    },
+    {
+      "source": "Inputs.native_6d260",
+      "format": "d",
+      "rva": "0x6d260"
+    },
+    {
+      "source": "Inputs.native_6d268",
+      "format": "d",
+      "rva": "0x6d268"
+    },
+    {
+      "source": "Inputs.native_6d270",
+      "format": "d",
+      "rva": "0x6d270"
+    },
+    {
+      "source": "Inputs.native_6d278",
+      "format": "B",
+      "rva": "0x6d278"
+    },
+    {
+      "source": "Inputs.native_1d6fa8",
+      "format": "i",
+      "rva": "0x1d6fa8"
+    },
+    {
+      "source": "Inputs.native_1d6fc0",
+      "format": "B",
+      "rva": "0x1d6fc0"
+    },
+    {
+      "source": "Inputs.virtual_stops",
+      "format": "B",
+      "rva": "0x1d6fe0"
+    },
+    {
+      "source": "Inputs.native_1d6fe8",
+      "format": "i",
+      "rva": "0x1d6fe8"
+    },
+    {
+      "source": "Inputs.native_1d7178",
+      "format": "B",
+      "rva": "0x1d7178"
+    },
+    {
+      "source": "Inputs.native_6d2a3",
+      "format": "B",
+      "rva": "0x6d2a3"
+    },
+    {
+      "source": "Inputs.native_6d2e0",
+      "format": "i",
+      "rva": "0x6d2e0"
+    },
+    {
+      "source": "Inputs.management_timeframe",
+      "format": "i",
+      "rva": "0x6d324"
+    },
+    {
+      "source": "Inputs.native_6d3f8",
+      "format": "B",
+      "rva": "0x6d3f8"
+    },
+    {
+      "source": "Inputs.native_6d3f0",
+      "format": "d",
+      "rva": "0x6d3f0"
+    },
+    {
+      "source": "Inputs.native_6d408",
+      "format": "d",
+      "rva": "0x6d408"
+    },
+    {
+      "source": "Inputs.native_6d410",
+      "format": "d",
+      "rva": "0x6d410"
+    },
+    {
+      "source": "Inputs.native_1d7130",
+      "format": "i",
+      "rva": "0x1d7130"
+    },
+    {
+      "source": "Inputs.native_6d418",
+      "format": "d",
+      "rva": "0x6d418"
+    },
+    {
+      "source": "Inputs.native_6d420",
+      "format": "B",
+      "rva": "0x6d420"
+    },
+    {
+      "source": "Inputs.comment",
+      "format": "s",
+      "rva": "0x6d308"
+    },
+    {
+      "source": "P.scale",
+      "format": "d",
+      "rva": "0x6d1c0"
+    },
+    {
+      "source": "P.lot_scale",
+      "format": "d",
+      "rva": "0x6d1c8"
+    },
+    {
+      "source": "P.feature_flag",
+      "format": "B",
+      "rva": "0x6d4cc"
+    },
+    {
+      "source": "P.trail_start",
+      "format": "d",
+      "rva": "0x6d5a0"
+    },
+    {
+      "source": "P.trail_limit",
+      "format": "d",
+      "rva": "0x6d5a8"
+    },
+    {
+      "source": "P.trail_step",
+      "format": "d",
+      "rva": "0x6d5b0"
+    },
+    {
+      "source": "P.native_6d378",
+      "format": "d",
+      "rva": "0x6d378"
+    },
+    {
+      "source": "P.native_6d380",
+      "format": "d",
+      "rva": "0x6d380"
+    },
+    {
+      "source": "P.aux_frame",
+      "format": "i",
+      "rva": "0x6d5cc"
+    },
+    {
+      "source": "P.aux_scan",
+      "format": "i",
+      "rva": "0x6d5d0"
+    },
+    {
+      "source": "P.aux_older",
+      "format": "i",
+      "rva": "0x6d5d4"
+    },
+    {
+      "source": "P.aux_recent",
+      "format": "i",
+      "rva": "0x6d5d8"
+    },
+    {
+      "source": "P.aux_offset",
+      "format": "d",
+      "rva": "0x6d5e0"
+    },
+    {
+      "source": "P.native_6d4e0",
+      "format": "d",
+      "rva": "0x6d4e0"
+    },
+    {
+      "source": "P.native_6d4e8",
+      "format": "i",
+      "rva": "0x6d4e8"
+    },
+    {
+      "source": "P.native_6d4f0",
+      "format": "d",
+      "rva": "0x6d4f0"
+    },
+    {
+      "source": "P.native_6d4f8",
+      "format": "d",
+      "rva": "0x6d4f8"
+    },
+    {
+      "source": "P.native_6d500",
+      "format": "d",
+      "rva": "0x6d500"
+    },
+    {
+      "source": "P.native_6d508",
+      "format": "B",
+      "rva": "0x6d508"
+    },
+    {
+      "source": "P.native_6d510",
+      "format": "B",
+      "rva": "0x6d510"
+    },
+    {
+      "source": "P.mode",
+      "format": "i",
+      "rva": "0x6d514"
+    },
+    {
+      "source": "P.native_6d518",
+      "format": "i",
+      "rva": "0x6d518"
+    },
+    {
+      "source": "P.native_6d51c",
+      "format": "B",
+      "rva": "0x6d51c"
+    },
+    {
+      "source": "P.native_6d520",
+      "format": "i",
+      "rva": "0x6d520"
+    },
+    {
+      "source": "P.native_6d550",
+      "format": "i",
+      "rva": "0x6d550"
+    },
+    {
+      "source": "P.native_6d608",
+      "format": "i",
+      "rva": "0x6d608"
+    },
+    {
+      "source": "P.native_6d600",
+      "format": "d",
+      "rva": "0x6d600"
+    },
+    {
+      "source": "P.native_6d618",
+      "format": "d",
+      "rva": "0x6d618"
+    },
+    {
+      "source": "P.native_6d638",
+      "format": "d",
+      "rva": "0x6d638"
+    },
+    {
+      "source": "P.native_6d640",
+      "format": "i",
+      "rva": "0x6d640"
+    },
+    {
+      "source": "P.native_6d5c8",
+      "format": "B",
+      "rva": "0x6d5c8"
+    },
+    {
+      "source": "P.native_6d5dc",
+      "format": "B",
+      "rva": "0x6d5dc"
+    },
+    {
+      "source": "P.native_6d5f8",
+      "format": "B",
+      "rva": "0x6d5f8"
+    },
+    {
+      "source": "P.point",
+      "format": "d",
+      "rva": "0x74968"
+    },
+    {
+      "source": "P.indicator_handle",
+      "format": "i",
+      "rva": "0x6d178"
+    },
+    {
+      "source": "P.tick.time",
+      "format": "q",
+      "rva": "0x74790"
+    },
+    {
+      "source": "P.tick.last",
+      "format": "d",
+      "rva": "0x747a8"
+    },
+    {
+      "source": "P.tick.volume",
+      "format": "Q",
+      "rva": "0x747b0"
+    },
+    {
+      "source": "P.tick.time_msc",
+      "format": "q",
+      "rva": "0x747b8"
+    },
+    {
+      "source": "P.tick.flags",
+      "format": "I",
+      "rva": "0x747c0"
+    },
+    {
+      "source": "P.tick.volume_real",
+      "format": "d",
+      "rva": "0x747c8"
+    },
+    {
+      "source": "P.calendar.year",
+      "format": "i",
+      "rva": "0x747d0"
+    },
+    {
+      "source": "P.calendar.mon",
+      "format": "i",
+      "rva": "0x747d4"
+    },
+    {
+      "source": "P.calendar.day",
+      "format": "i",
+      "rva": "0x747d8"
+    },
+    {
+      "source": "P.calendar.min",
+      "format": "i",
+      "rva": "0x747e0"
+    },
+    {
+      "source": "P.calendar.sec",
+      "format": "i",
+      "rva": "0x747e4"
+    },
+    {
+      "source": "P.calendar.day_of_week",
+      "format": "i",
+      "rva": "0x747e8"
+    },
+    {
+      "source": "P.calendar.day_of_year",
+      "format": "i",
+      "rva": "0x747ec"
+    },
+    {
+      "source": "Context.converted_value",
+      "format": "d",
+      "rva": "0x76fa0"
+    },
+    {
+      "source": "ContextInputs.keep_comment",
+      "format": "B",
+      "rva": "0x1d7008"
+    },
+    {
+      "source": "Daily.peak",
+      "format": "d",
+      "rva": "0x75348"
+    },
+    {
+      "source": "Daily.blocked",
+      "format": "B",
+      "rva": "0x75320"
+    },
+    {
+      "source": "Daily.bars",
+      "format": "i",
+      "rva": "0x75324"
+    },
+    {
+      "source": "Startup.panel_bar",
+      "format": "q",
+      "rva": "0x75338"
+    },
+    {
+      "source": "History.total",
+      "format": "i",
+      "rva": "0x77358"
+    },
+    {
+      "source": "History.count",
+      "format": "i",
+      "rva": "0x77354"
+    },
+    {
+      "source": "Startup.extended_cleanup",
+      "format": "B",
+      "rva": "0x752d4"
+    },
+    {
+      "source": "Startup.cell_base_x",
+      "format": "d",
+      "rva": "0x75328"
+    },
+    {
+      "source": "Startup.cell_base_y",
+      "format": "d",
+      "rva": "0x75330"
+    },
+    {
+      "source": "ContextInputs.comment_prefix",
+      "format": "s",
+      "rva": "0x1d6ff8"
+    },
+    {
+      "source": "ContextInputs.symbol_suffix",
+      "format": "s",
+      "rva": "0x6d230"
+    },
+    {
+      "source": "ChartName",
+      "format": "s",
+      "rva": "0x1d6e28"
+    }
+  ],
+  "table_cells": 2800,
+  "generated_script_reproduced": true,
+  "whole_bot_complete": false,
+  "whole_manager_complete": false,
+  "full_ea": false,
+  "native_continuous_post_preparation_executed": true,
+  "join_state_reset": false,
+  "entry_level_children_supplied": true,
+  "panel_children_recorded": true,
+  "terminal_replies_supplied": true,
+  "host_cpu_arithmetic": true,
+  "allocation_success_supplied": true,
+  "original_ex5_changed": false,
+  "authorization_executed": false,
+  "authorization_entry_guarded": true,
+  "virtual_take_table_checked": true,
+  "native_first_preparation_executed": true,
+  "preparation_returns_do_not_stop_oninit": true,
+  "native_startup_context_executed": true,
+  "caller_xmm6_zero_supplied": false,
+  "caller_string_return_buffer_primed": true
+}
