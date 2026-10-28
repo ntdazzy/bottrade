@@ -14,6 +14,7 @@
 | Chọn mốc tin dùng chung | `0x7310` | `0x7c30` |
 | Đoạn vốn/tài khoản trong OnInit | `0x126c..0x1941` | `0x1279..0x193f` |
 | Nạp dữ liệu lịch dự phòng và hai cờ | `0x1941..0x3827` | `0x193f..0x3840` |
+| Ngữ cảnh/bộ đếm/đuôi mã trước chuẩn bị | `0x3827..0x3c9d` | chưa dựng phần tương ứng |
 | Chuẩn bị chiến lược đầu | `0x7500` | `0xe0c0` |
 | Tạo bảng | `0x8320`, `0xe1b0`, `0xffb0` | `0xef40`, `0x14fa0`, `0x16e80` |
 
@@ -52,6 +53,11 @@ Phần tin đã so 637/637 ca mỗi bot; dữ liệu lịch dự phòng và hai 
 đã so 108/108 ca mỗi bot. Xem
 [phần tin](news-initialization-20261028-r1/README.md) và
 [dữ liệu dự phòng](builtin-news-initialization-20261028-r1/README.md).
+
+Bot 1 đã dựng đoạn ngữ cảnh trước chuẩn bị, 298/298 ca khớp; có điều
+kiện nối từ phần trước được cấp. Vẫn cần khởi tạo tĩnh các đầu vào
+chuẩn bị, không dùng bộ cấu hình chiến lược 0 thay cho giá trị đầu.
+[Phạm vi ngữ cảnh](startup-context-20261028-r1/README.md).
 
 Phần còn thiếu trước khi viết OnInit bàn giao:
 

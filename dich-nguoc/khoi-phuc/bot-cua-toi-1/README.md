@@ -1,3 +1,9 @@
+Đã dựng đoạn ngữ cảnh khởi động trước lần chuẩn bị đầu: **298/298 ca**
+khớp mã gốc, gồm mã nhận diện gốc, đếm lịch sử, giới hạn lỗ ngày,
+kích thước ô và đuôi mã giá. Chưa nối mặc định khi nạp chương trình
+và toàn OnInit. Toàn bộ 99 tệp `.mqh` biên dịch 0 lỗi/0 cảnh báo.
+[Phạm vi](../danh-gia-doc-lap/startup-context-20261028-r1/README.md).
+
 Đã dựng phần khởi tạo ba lịch tin/chọn mốc chung **637/637 ca** và
 nạp lịch dự phòng/hai cờ **108/108 ca**, so với mã gốc. Đã kiểm đủ
 900 ô lịch, giữ nguyên đuôi mảng. Toàn bộ 98 tệp `.mqh` biên dịch

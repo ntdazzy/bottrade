@@ -1,0 +1,18 @@
+{
+  "cases": 298,
+  "matched": 298,
+  "failed": 0,
+  "first_failures": [],
+  "full_ea": false,
+  "native_startup_context_executed": true,
+  "native_string_helpers_executed": true,
+  "mulsd_executed_on_host_cpu": true,
+  "caller_xmm6_zero_supplied": true,
+  "caller_string_return_buffer_primed": true,
+  "string_allocation_success_supplied": true,
+  "allocation_failures_tested": false,
+  "original_ex5_changed": false,
+  "limits": [
+    "Startup context before first preparation only. Caller live-in XMM6=0 and non-null string-return buffer supplied; allocation failures, full static initializer, full OnInit and EA excluded."
+  ]
+}

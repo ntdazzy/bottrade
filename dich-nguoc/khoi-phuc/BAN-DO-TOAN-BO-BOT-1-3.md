@@ -66,6 +66,11 @@ và giữ đuôi chưa ghi. Đã sửa tài liệu cũ bị thiếu NFP bot 1 v�
 bộ chọn tin thành khởi tạo tài khoản. Chưa là toàn OnInit/EA;
 [thứ tự và phần còn thiếu](danh-gia-doc-lap/initialization-flow-20261028-r1.md).
 
+Bot 1 thêm ngữ cảnh trước chuẩn bị đầu: 298/298 ca, gồm bình luận,
+mã nhận diện gốc, các bộ đếm, kích thước ô, đuôi mã và mã lỗi. Giá
+trị nối từ phần vốn được cấp; chưa phải toàn OnInit.
+[Phạm vi](danh-gia-doc-lap/startup-context-20261028-r1/README.md).
+
 Vị trí trong bảng là số tính từ đầu vùng mã của mỗi bot. Chi tiết dòng
 và lời gọi tra ở hai danh sách trên. “Đã so phần” có nghĩa đã có một
 phép đối chiếu trong phạm vi cụ thể; không đánh dấu hoàn tất cả hàng.

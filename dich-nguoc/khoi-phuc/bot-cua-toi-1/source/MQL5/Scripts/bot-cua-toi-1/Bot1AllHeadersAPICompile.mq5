@@ -83,6 +83,7 @@
 #include "../../Include/bot-cua-toi-1/Bot1StrategySelection.mqh"
 #include "../../Include/bot-cua-toi-1/Bot1StrategySetup.mqh"
 #include "../../Include/bot-cua-toi-1/Bot1StrategyStatistics.mqh"
+#include "../../Include/bot-cua-toi-1/Bot1StartupContext.mqh"
 #include "../../Include/bot-cua-toi-1/Bot1TradeErrors.mqh"
 #include "../../Include/bot-cua-toi-1/Bot1TradeMessages.mqh"
 #include "../../Include/bot-cua-toi-1/Bot1TradeSend.mqh"
