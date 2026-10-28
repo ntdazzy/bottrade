@@ -1,3 +1,10 @@
+Đã dựng phần khởi tạo ba lịch tin/chọn mốc chung **637/637 ca** và
+nạp lịch dự phòng/hai cờ **108/108 ca**, so với mã gốc. Đã kiểm đủ
+900 ô lịch, giữ nguyên đuôi mảng. Toàn bộ 106 tệp `.mqh` biên dịch
+0 lỗi, 0 cảnh báo. Chưa có OnInit/EA hoàn chỉnh.
+[Phần tin](../danh-gia-doc-lap/news-initialization-20261028-r1/README.md),
+[lịch dự phòng](../danh-gia-doc-lap/builtin-news-initialization-20261028-r1/README.md).
+
 Đã nối quét lệnh vào vòng chín chiến lược, đọc lại cờ sau chuẩn bị:
 **5.563/5.563 ca** khớp ở các cổng/thứ tự/cờ, phần đánh giá được thay
 bằng bộ ghi. Quét lệnh được so riêng **543/543 ca**. Toàn bộ 104 tệp

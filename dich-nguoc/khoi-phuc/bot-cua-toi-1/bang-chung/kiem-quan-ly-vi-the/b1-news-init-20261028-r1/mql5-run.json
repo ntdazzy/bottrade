@@ -1,0 +1,32 @@
+{
+  "original_ex5_sha256": "a3b0de423a06e10ebedc279307b93d7cb9188ba2bb5de77131a913c865b0e922",
+  "native_init_sha256": "83265d19458eeaa76d297459c6e7929f98c8f74227a4c864967a519dd046c18d",
+  "sources_sha256": {
+    "Include/bot-cua-toi-1/Bot1NewsSelector.mqh": "84e6c99d0e7b87a32933496a85b84ef0dd035fbf4aa40ce08b8a9b37658cf679",
+    "Include/bot-cua-toi-1/Bot1NewsBlock.mqh": "776c5957d4ea88a9f18ee2c59ad29cc8a6563f0f4f59877d6791ddec6d1bef1f",
+    "Include/bot-cua-toi-1/Bot1NfpCalendar.mqh": "7b2524e93192d694972a3bfaa5a78764ee9d0360f01df5b7713aeb5186844875",
+    "Scripts/bot-cua-toi-1/Bot1NewsInitializationCheck.mq5": "efd5221cffe7b134d4a7b38bf4b73074993bc7682184419b9c779dda8acdf536",
+    "Include/bot-cua-toi-1/Bot1NewsInitialization.mqh": "daf40eddad186cf2e8001baf78f8ca1695fbcf6d51b595ae4397f11a974df35e",
+    "Include/bot-cua-toi-1/Bot1ReleaseCalendars.mqh": "4f5838cce558dcded2c5d9de49e233c69e650aa1f72aeb8fb05ca7bb9e5ddf32"
+  },
+  "helpers_sha256": {
+    "cong-cu/kiem-khoi-tao-tin-bot-1-3.py": "6aff7265cae9f2e131ef1447556ff92bb5ea7e8820b1849dc200db11297a2889",
+    "cong-cu/kiem-chon-tin-day-du-bot-1-3.py": "0a7ebaf1893d8a11ae0e3f30b4018af70078c1f78451540fcf688032930492a4",
+    "cong-cu/kiem-gia-vao-bot-1-3.py": "22394e48932feb7242b967aa58e327d2990402f12bfe52621916f64914c9dac2",
+    "cong-cu/kiem-muc-gia-bot-1-3.py": "a6c447ca80029fb63ced0c9d1673bb14222a7736b04df5c410f280f8471d6a35",
+    "cong-cu/kiem-ban-git-quan-ly.py": "7186478774b34e0d72b4594fbcc85972d9b4c07ed02160987d46d34f39dcb160",
+    "cong-cu/kiem-khoi-luong-hop-le-bot-1-3.py": "8251fb4423d6f5f2e1b79a1c53dbb25fb5a6c568bb61cddef23396dc982243f0"
+  },
+  "cases": 637,
+  "result_sha256": "89553a85a66026bab415bd7001d39f4efb28313c36e8b44b95dd43460a0493ad",
+  "build": "b1-news-init-check-20261028-r1",
+  "build_receipt_sha256": "7b4a67cb6f2bd6a5fa57d5caff0f84c1fc79156cde2ff47f80efff9022289d24",
+  "full_ea": false,
+  "native_news_initialization_and_selector_executed": true,
+  "calendar_bodies_replaced": true,
+  "native_string_helpers_executed": true,
+  "datetime_text_replies_measured_in_mt5": true,
+  "authorization_executed": false,
+  "allocation_failures_tested": false,
+  "original_ex5_changed": false
+}

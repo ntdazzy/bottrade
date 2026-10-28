@@ -1,3 +1,10 @@
+Đã dựng phần khởi tạo ba lịch tin/chọn mốc chung **637/637 ca** và
+nạp lịch dự phòng/hai cờ **108/108 ca**, so với mã gốc. Đã kiểm đủ
+900 ô lịch, giữ nguyên đuôi mảng. Toàn bộ 98 tệp `.mqh` biên dịch
+0 lỗi, 0 cảnh báo. Chưa có OnInit/EA hoàn chỉnh.
+[Phần tin](../danh-gia-doc-lap/news-initialization-20261028-r1/README.md),
+[lịch dự phòng](../danh-gia-doc-lap/builtin-news-initialization-20261028-r1/README.md).
+
 Đã nối vòng gọi tám chiến lược; các cổng bật/tắt và thứ tự gọi khớp
 **896/896 ca** với bản gốc, trong phép kiểm có thay thân chiến lược
 bằng bộ ghi. Chưa có nơi gọi từ sự kiện MT5.

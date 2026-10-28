@@ -60,6 +60,12 @@ ca. [Tám nhánh bật/tắt bot 1](PHAN-TICH-BAT-TAT-BOT-1.md) đã khớp đ�
 
 ## Danh sách các phần phải phân tích và phục hồi
 
+Khởi tạo đã bổ sung phần ba lịch tin/chọn mốc chung: **637/637 ca mỗi
+bot**. Dữ liệu dự phòng và hai cờ: **108/108 ca mỗi bot**, so đủ 900 ô
+và giữ đuôi chưa ghi. Đã sửa tài liệu cũ bị thiếu NFP bot 1 và nhầm
+bộ chọn tin thành khởi tạo tài khoản. Chưa là toàn OnInit/EA;
+[thứ tự và phần còn thiếu](danh-gia-doc-lap/initialization-flow-20261028-r1.md).
+
 Vị trí trong bảng là số tính từ đầu vùng mã của mỗi bot. Chi tiết dòng
 và lời gọi tra ở hai danh sách trên. “Đã so phần” có nghĩa đã có một
 phép đối chiếu trong phạm vi cụ thể; không đánh dấu hoàn tất cả hàng.

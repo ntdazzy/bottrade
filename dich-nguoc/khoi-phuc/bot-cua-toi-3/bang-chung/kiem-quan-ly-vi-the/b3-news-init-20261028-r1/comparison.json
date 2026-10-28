@@ -1,0 +1,16 @@
+{
+  "cases": 637,
+  "matched": 637,
+  "failed": 0,
+  "full_ea": false,
+  "native_news_initialization_and_selector_executed": true,
+  "calendar_bodies_replaced": true,
+  "native_string_helpers_executed": true,
+  "datetime_text_replies_measured_in_mt5": true,
+  "authorization_executed": false,
+  "allocation_failures_tested": false,
+  "original_ex5_changed": false,
+  "limits": [
+    "OnInit news section only. Calendar bodies and datetime primitive replies supplied; native string helpers and full selector execute. Authorization, allocation failures, later initialization and complete EA are excluded."
+  ]
+}

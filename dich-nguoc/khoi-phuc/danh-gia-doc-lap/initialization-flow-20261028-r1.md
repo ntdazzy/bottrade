@@ -10,10 +10,12 @@
 | Đọc quyền dùng | gọi `0x5880` | gọi `0x61a0` |
 | Đặt cờ hoạt động=1 | sau khi quyền dùng cho phép | sau khi quyền dùng cho phép |
 | Chế độ kiểm thử | `MQLInfoInteger(6)`, ghi cờ `0x621e0/0x621c9` | ghi `0x6d1e8/0x6d1d0` |
-| Lịch tin | `0x16600`, `0x16a90` | `0x56ad0`, `0x56f20`, `0x573b0` |
-| Vốn/tài khoản | `0x17310` | `0x57c30` |
+| Ba hàm lấy lịch tin | `0x61b0`, `0x6600`, `0x6a90` | `0x6ad0`, `0x6f20`, `0x73b0` |
+| Chọn mốc tin dùng chung | `0x7310` | `0x7c30` |
+| Đoạn vốn/tài khoản trong OnInit | `0x126c..0x1941` | `0x1279..0x193f` |
+| Nạp dữ liệu lịch dự phòng và hai cờ | `0x1941..0x3827` | `0x193f..0x3840` |
 | Chuẩn bị chiến lược đầu | `0x7500` | `0xe0c0` |
-| Tạo bảng | `0x8320`, `0xe1b0`, `0x1ffb0` | `0xef40`, `0x14fa0`, `0x16e80` |
+| Tạo bảng | `0x8320`, `0xe1b0`, `0xffb0` | `0xef40`, `0x14fa0`, `0x16e80` |
 
 Thứ tự gọi thấy được trong mã máy:
 
@@ -23,21 +25,33 @@ Thứ tự gọi thấy được trong mã máy:
    kiểm thử với tốc độ 2 đặt cổng giờ/nến và cờ M1 bằng 1; tốc độ 3
    đặt cổng giờ/nến bằng 0 và cờ M1 bằng 1. Các tốc độ khác giữ nguyên
    hai cờ này.
-3. Đặt cờ trạng thái lịch tin về 0. Bot 1 có hai khối lịch; bot 3 có
-   ba khối. Mỗi khối gọi hàm lấy lịch, dựng chuỗi, cấp phát chuỗi,
-   kiểm kết quả và gọi thông báo lỗi khi cần. Không gộp ba khối bot 3.
-4. Gọi khối chuẩn bị tài khoản. Sau đó đọc số dư; nếu cài đặt dùng vốn
+3. Đặt mốc lần hỏi NFP về 0. Cả hai bot có ba khối lịch: NFP, lãi suất
+   và CPI. Mỗi khối được bật thì lấy lịch, lưu thời điểm và in thông
+   báo. Sau đó gọi bộ chọn mốc tin dùng chung; hàm này không phải hàm
+   chuẩn bị tài khoản. Các nhánh lỗi chuỗi vẫn cần kiểm riêng.
+4. Đọc số dư; nếu cài đặt dùng vốn
    chủ sở hữu thì đọc thêm vốn chủ sở hữu. Tạo chuỗi khóa vốn theo số
    tài khoản và xử lý giá trị lưu trước khi chọn vốn thực dùng.
-5. Khởi tạo các mốc nến, trạng thái tin và hàng chờ theo vùng dữ liệu
-   gốc. Gọi chuẩn bị chiến lược đầu với cùng các vùng trạng thái dùng
-   lại; không tạo lại trạng thái riêng cho từng vòng.
+5. Ghi 240, 89 và 134 mốc vào đầu ba mảng lịch dự phòng, giữ các ô còn
+   lại, đồng thời đặt lại hai byte trạng thái. Bot 3 còn đọc thông tin
+   kiểm thử sau khi đặt hai byte về 0. Phần khởi tạo tham số, các mốc
+   nến và hàng chờ tiếp theo còn cần ghép. Nơi gọi gốc chuẩn bị chiến
+   lược đầu trực tiếp qua `0x7500` / `0xe0c0`; không tự chèn thêm bước
+   nạp cấu hình chiến lược vào nơi này khi chưa đối chiếu.
 6. Gọi tạo bảng rồi cập nhật trạng thái mở và trạng thái đã đóng theo
    đúng thứ tự nêu trong bảng. Hàm tạo bảng có thể gọi nhiều dịch vụ
    biểu đồ; phần này đã có bộ kiểm riêng.
 
 `0x20a00` (bot 1) và `0x2bb80` (bot 3) là hàm khởi tạo tĩnh của thời
 gian tải, không phải OnInit. Không gộp chúng vào hàm khởi tạo EA.
+
+Đã sửa ngày 28/10: bản trước bỏ sót NFP của bot 1, gọi nhầm bộ chọn
+tin là khối tài khoản và lấy nhầm phần đuôi địa chỉ mã C làm độ lệch.
+Các địa chỉ sửa trong bảng được đọc lại trực tiếp từ lệnh máy.
+Phần tin đã so 637/637 ca mỗi bot; dữ liệu lịch dự phòng và hai cờ
+đã so 108/108 ca mỗi bot. Xem
+[phần tin](news-initialization-20261028-r1/README.md) và
+[dữ liệu dự phòng](builtin-news-initialization-20261028-r1/README.md).
 
 Phần còn thiếu trước khi viết OnInit bàn giao:
 

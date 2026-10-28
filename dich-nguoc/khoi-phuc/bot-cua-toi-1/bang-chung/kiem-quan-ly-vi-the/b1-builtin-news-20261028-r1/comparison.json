@@ -1,0 +1,15 @@
+{
+  "cases": 108,
+  "matched": 108,
+  "failed": 0,
+  "first_failures": [],
+  "full_ea": false,
+  "native_literal_initialization_executed": true,
+  "all_900_array_cells_compared": true,
+  "two_native_flags_compared": true,
+  "tester_reply_and_effect_supplied": true,
+  "original_ex5_changed": false,
+  "limits": [
+    "Literal calendar initialization and two flags only. Fixed 300-element arrays; source allocation failure and full EA are excluded."
+  ]
+}
