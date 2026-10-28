@@ -1,0 +1,26 @@
+{
+  "run": "b1-startup-context-flow-20261028-r1",
+  "cases": 459,
+  "matched": 459,
+  "fields": 238,
+  "table_cells": 1800,
+  "sdk_calls": 25100,
+  "cpu_arithmetic_calls": 25619,
+  "builds": [
+    "b1-startup-context-flow-check-20261028-r2",
+    "b1-all-headers-api-20261028-r28"
+  ],
+  "original_ex5_sha256": "a3b0de423a06e10ebedc279307b93d7cb9188ba2bb5de77131a913c865b0e922",
+  "native_init_sha256": "83265d19458eeaa76d297459c6e7929f98c8f74227a4c864967a519dd046c18d",
+  "caller_conditions_supplied": [
+    "XMM6=+0.0",
+    "numeric string-return buffer primed",
+    "temporary stack strings empty"
+  ],
+  "shared_state_verified": true,
+  "entry_level_children_supplied": true,
+  "panel_children_recorded": true,
+  "allocation_success_supplied": true,
+  "whole_bot_complete": false,
+  "full_ea": false
+}

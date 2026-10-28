@@ -99,6 +99,11 @@ phạm vi nối r1, chưa là toàn OnInit/EA.
 **161/161 ca**, 224 giá trị và 1.800 ô bảng; ba ca lỗi mảng/chia 0
 dừng đúng và không sang phần cuối. Còn phần trước khởi tạo và toàn EA.
 [Bằng chứng nối chuẩn bị](danh-gia-doc-lap/startup-preparation-flow-20261028-r1/README.md).
+Đã nối thêm ngữ cảnh, từ `0x3827` tới trả về `0x5658`: **459/459 ca**,
+238 giá trị, 1.800 ô bảng và 25.100 lời gọi. Giữ chung mã giá/mã
+chiến lược/bình luận qua cả ba phần; điều kiện từ phần tài khoản
+được cấp. Còn phần trước ngữ cảnh và toàn EA.
+[Bằng chứng nối ngữ cảnh](danh-gia-doc-lap/startup-context-flow-20261028-r1/README.md).
 
 Vị trí trong bảng là số tính từ đầu vùng mã của mỗi bot. Chi tiết dòng
 và lời gọi tra ở hai danh sách trên. “Đã so phần” có nghĩa đã có một

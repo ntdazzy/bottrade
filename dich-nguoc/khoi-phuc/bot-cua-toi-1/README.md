@@ -1,3 +1,9 @@
+Đã nối ngữ cảnh → chuẩn bị đầu → cuối khởi động: **459/459 ca khớp**,
+238 giá trị, 1.800 ô bảng và 25.100 lời gọi. Giữ chung mã giá, mã
+chiến lược và bình luận giao dịch. Bộ ghép 105 tệp biên dịch 0 lỗi/
+cảnh báo. Còn phần trước ngữ cảnh và toàn EA.
+[Phạm vi hiện hành](../danh-gia-doc-lap/startup-context-flow-20261028-r1/README.md).
+
 Đã nối bước chuẩn bị đầu đến cuối khởi động: **161/161 ca khớp**,
 224 giá trị, 1.800 ô bảng và 8.988 lời gọi. Ba ca lỗi mảng/chia 0
 dừng đúng, không đi sang phần cuối. Bộ ghép 104 tệp biên dịch 0 lỗi/
