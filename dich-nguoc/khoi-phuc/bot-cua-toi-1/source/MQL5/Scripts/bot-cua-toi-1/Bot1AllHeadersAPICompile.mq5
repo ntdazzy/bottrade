@@ -107,4 +107,5 @@
 #include "../../Include/bot-cua-toi-1/Bot1DispatchGate.mqh"
 #include "../../Include/bot-cua-toi-1/Bot1EvaluationBridge.mqh"
 #include "../../Include/bot-cua-toi-1/Bot1InitializationGate.mqh"
+#include "../../Include/bot-cua-toi-1/Bot1TickStrategyPreparation.mqh"
 void OnStart() { Print("Bot1AllHeadersAPICompile"); }

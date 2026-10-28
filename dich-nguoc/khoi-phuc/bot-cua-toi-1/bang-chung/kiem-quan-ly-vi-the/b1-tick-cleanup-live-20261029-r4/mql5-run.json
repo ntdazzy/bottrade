@@ -1,0 +1,49 @@
+{
+  "original_ex5_sha256": "a3b0de423a06e10ebedc279307b93d7cb9188ba2bb5de77131a913c865b0e922",
+  "tool_sha256": "7dd511e8be6b17f888d6659d78fa4672c2c8f2c0824ac1ea260be0d5a8461a41",
+  "sources_sha256": {
+    "Scripts/bot-cua-toi-1/Bot1TickStrategyPreparationCheck.mq5": "2f62d8d00e9caf6d5f04e5e2c5c51ff5d6ffeb2e52fdb52a923c52147c0dc12b",
+    "Include/bot-cua-toi-1/Bot1TickSymbolRouting.mqh": "c71fb3814739b7cb0b9c4cef9506200a73226e90a6cf8dbaa6599e656d795317",
+    "Include/bot-cua-toi-1/Bot1TickStrategyPreparation.mqh": "a5d03c18980e43f01e8dcaede8ee39b3d89c86dc28c8014178c30efbb9826aa1",
+    "Include/bot-cua-toi-1/Bot1VirtualStops.mqh": "da7aa4f6ff38c97aa4e9288620f7e975d7255c598468948a515f8de2f2b7f400",
+    "Include/bot-cua-toi-1/Bot1PriceLevels.mqh": "827d537baa2798c0cb6dc317bf500011e20af788529a9ebc095f9a4492e45d22"
+  },
+  "dependencies_sha256": {
+    "kiem-bang-dung-ao-bot-1.py": "157965a177c3235db90f763dcf9c87cf3a5222bc21f849e3cfe862da1553a0a3",
+    "kiem-gia-vao-bot-1-3.py": "22394e48932feb7242b967aa58e327d2990402f12bfe52621916f64914c9dac2",
+    "kiem-muc-gia-bot-1-3.py": "a6c447ca80029fb63ced0c9d1673bb14222a7736b04df5c410f280f8471d6a35",
+    "kiem-khoi-luong-hop-le-bot-1-3.py": "8251fb4423d6f5f2e1b79a1c53dbb25fb5a6c568bb61cddef23396dc982243f0"
+  },
+  "analysis_sha256": "25540106c233d53aa480db5f4bd4b1957944262f8d0afbf87145002fdcde4a0c",
+  "api_contract_sha256": "0cc683c9a12ca7d4ce5194df32b38206c56a1f58d3027c18a905f505403e9664",
+  "helpers_sha256": {
+    "cong-cu/kiem-noi-ma-gia-don-bang-bot-1.py": "7dd511e8be6b17f888d6659d78fa4672c2c8f2c0824ac1ea260be0d5a8461a41",
+    "cong-cu/kiem-bang-dung-ao-day-du-bot-1.py": "dc95ca98cb26cb169324d0aec6540d252c32e7d668daf3c7fb7f7528028a0224",
+    "cong-cu/kiem-ma-gia-dieu-phoi-bot-1.py": "0ed34fcb331fedf8050e386568c4d3cff3df891f1bfd29c07032bb84ea1f9e3f",
+    "bot-cua-toi-1/source/MQL5/Scripts/bot-cua-toi-1/Bot1VirtualStopsCheck.mq5": "753c6426aaa468bc2c31a242f963165ee32a9055d0413ba79c6654d113cbcd2a",
+    "bot-cua-toi-1/phan-tich/dong-vi-the/virtual-stops-20261025-r1/analysis.json": "25540106c233d53aa480db5f4bd4b1957944262f8d0afbf87145002fdcde4a0c",
+    "bot-cua-toi-1/phan-tich/dong-vi-the/virtual-stops-20261025-r1/api-contract.json": "0cc683c9a12ca7d4ce5194df32b38206c56a1f58d3027c18a905f505403e9664",
+    "cong-cu/kiem-ngu-canh-khoi-dong-bot-1.py": "9a9156da519075e42c72caa4652c68f72330a644c3b6c458f1919c054b74c8ea",
+    "cong-cu/kiem-cong-dieu-phoi-bot-1-3.py": "a4edd0e507a18d2dda21a104a7488aada4330d0ba12f2beb42396d9faa80e635",
+    "cong-cu/kiem-lich-su-chien-luoc-bot-1-3.py": "64970d4a1ef42180fb44b3da19d6b51aa60147fce70ac480cd78d5769e91c45a",
+    "cong-cu/kiem-gia-vao-bot-1-3.py": "22394e48932feb7242b967aa58e327d2990402f12bfe52621916f64914c9dac2",
+    "cong-cu/kiem-muc-gia-bot-1-3.py": "a6c447ca80029fb63ced0c9d1673bb14222a7736b04df5c410f280f8471d6a35",
+    "cong-cu/kiem-bang-dung-ao-bot-1.py": "157965a177c3235db90f763dcf9c87cf3a5222bc21f849e3cfe862da1553a0a3",
+    "cong-cu/kiem-khoi-luong-hop-le-bot-1-3.py": "8251fb4423d6f5f2e1b79a1c53dbb25fb5a6c568bb61cddef23396dc982243f0"
+  },
+  "native_outer_sha256": "f5edd0f5e9033ddddb289a3419406c06292ce22bff197bea6d10acea1756c721",
+  "cases": 522,
+  "exit_code": 0,
+  "seconds": 4.54,
+  "build_receipt": "b1-tick-cleanup-live-check-20261029-r1",
+  "build_receipt_sha256": "07ecffb30f8092b2b6dd99e6e80ece7c387af0307ec0dd8c68c480bce237d51a",
+  "binary_sha256": "03751ef1147f4ebb4ba0d41aa959eed42fd8f0396fbdd60e36363ee5b5734dc7",
+  "terminal_sha256_before": "d92c969e0c141cad6f4f9083234b841e2da21862e66b3bbc9b70cbfe5a8e7a47",
+  "terminal_sha256_after": "d92c969e0c141cad6f4f9083234b841e2da21862e66b3bbc9b70cbfe5a8e7a47",
+  "hashes": {
+    "mql5-results.bin": "fc856ca8232e7dffdf76943ee578292015b1b4085a2c1ffa2025e73a3c771937",
+    "api-fixtures.bin": "134907b6eac0e856c53c47e277a9fa3cde9391a872609d69e994e87904d6d378",
+    "script-status.bin": "fa61ddbcacaf8bf978cc941fb0993a95e5351b5e00145d98c019212fcd4a6030"
+  },
+  "result_sha256": "fc856ca8232e7dffdf76943ee578292015b1b4085a2c1ffa2025e73a3c771937"
+}

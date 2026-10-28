@@ -1,0 +1,75 @@
+{
+  "cases": 522,
+  "matched": 522,
+  "failed": 0,
+  "first_failures": [],
+  "groups": {
+    "symbol-routing-and-flags": {
+      "cases": 484,
+      "matched": 484
+    },
+    "guard-byte": {
+      "cases": 4,
+      "matched": 4
+    },
+    "array-initial-size": {
+      "cases": 12,
+      "matched": 12
+    },
+    "position-types-and-selection": {
+      "cases": 10,
+      "matched": 10
+    },
+    "array-growth": {
+      "cases": 8,
+      "matched": 8
+    },
+    "resize-fails-empty-account": {
+      "cases": 1,
+      "matched": 1
+    },
+    "initial-resize-retry": {
+      "cases": 1,
+      "matched": 1
+    },
+    "old-tail-is-not-open": {
+      "cases": 2,
+      "matched": 2
+    }
+  },
+  "coverage": {
+    "0x18790": {
+      "executed": 163,
+      "instructions": 178
+    },
+    "0x3d200": {
+      "executed": 0,
+      "instructions": 174
+    },
+    "0x3d5a0": {
+      "executed": 0,
+      "instructions": 39
+    },
+    "0x3d640": {
+      "executed": 0,
+      "instructions": 29
+    }
+  },
+  "hashes": {
+    "cases.bin": "e18c207bcf93c1e55bb8d9900c313e5595597325a33c659074db576739d1c710",
+    "baseline.json": "30da32af1a143b34abc54d19c85013d7fa18d4d70e2974d70e3c0a3a7173e21f",
+    "mql5-results.bin": "fc856ca8232e7dffdf76943ee578292015b1b4085a2c1ffa2025e73a3c771937",
+    "api-fixtures.bin": "134907b6eac0e856c53c47e277a9fa3cde9391a872609d69e994e87904d6d378",
+    "original-results.bin": "fc856ca8232e7dffdf76943ee578292015b1b4085a2c1ffa2025e73a3c771937",
+    "script-status.bin": "fa61ddbcacaf8bf978cc941fb0993a95e5351b5e00145d98c019212fcd4a6030"
+  },
+  "whole_bot_complete": false,
+  "whole_manager_complete": false,
+  "full_ea": false,
+  "authorization_executed": false,
+  "authorization_entry_guarded": true,
+  "native_route_cleanup_continuous": true,
+  "direct_evaluator_executed": false,
+  "strategy_loop_executed": false,
+  "scope": "Continuous bot1 symbol routing and optional real cleanup only. Return bits, all1500 table doubles,guard,warning ticket,delay,unit,symbol,selected-position model,full physical ticket array and exact typed SDK records compared. ArrayResize post-state measured in MQL5 and input-bound; query replies supplied. Fatal cases,actual account/LastError,all allocation outcomes,error locations,tester and whole EA remain unverified."
+}

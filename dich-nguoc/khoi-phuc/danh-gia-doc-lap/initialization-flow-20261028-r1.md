@@ -85,6 +85,14 @@ trình; chưa là toàn bộ khởi tạo tĩnh hoặc các đầu ra của nó.
 
 Phần còn thiếu trước khi viết OnInit bàn giao:
 
+Khi nối chuẩn bị bot 3, cần giữ đúng các vùng dùng chung: `P.native_6d630`
+và `Panel.mode` cùng ô 32 bit `0x6d630` nhưng một bên có dấu, một bên
+không dấu. `Inputs.native_1d7138`/`Panel.manual_lots` ở `0x1d7138`
+khác ô khối lượng đã chuẩn bị `P.native_6d620` tại `0x6d620`; không
+được gộp hoặc chép ngược hai ô này chỉ vì ban đầu có thể bằng nhau.
+Nguồn ánh xạ: `check-preparation-full.py` phần `EXTRA` và
+`kiem-tao-bang-bot-1-3.py` phần `fields(3)`.
+
 - ghép phần trước khởi tạo với đoạn sau chuẩn bị đầu; bot 1 đã nối
   đến trả về và so 639 ca, còn lỗi chia 0/cấp phát và ba thân hiển thị
   thật trong phép kiểm nối;
