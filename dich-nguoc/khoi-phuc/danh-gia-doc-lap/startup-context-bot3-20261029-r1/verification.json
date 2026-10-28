@@ -1,0 +1,129 @@
+{
+  "bot": 3,
+  "run": "b3-startup-context-20261029-r1",
+  "cases": 298,
+  "matched": 298,
+  "build": "b3-startup-context-check-20261029-r1",
+  "all_headers_build": "b3-all-headers-api-20261029-r1",
+  "all_headers_count": 107,
+  "original_ex5_sha256": "ee063d3d87490afe24e2f4ce85f6b05659320e297b102efd70207f71ca2feb83",
+  "authorization_executed": false,
+  "authorization_entry_guarded": true,
+  "full_ea": false,
+  "whole_bot_complete": false,
+  "fields": [
+    {
+      "source": "BootContext.magic",
+      "format": "i",
+      "rva": "0x6d564"
+    },
+    {
+      "source": "BootContext.converted_value",
+      "format": "d",
+      "rva": "0x76fa0"
+    },
+    {
+      "source": "BootInputs.base_magic",
+      "format": "i",
+      "rva": "0x1d6ff0"
+    },
+    {
+      "source": "BootInputs.keep_comment",
+      "format": "B",
+      "rva": "0x1d7008"
+    },
+    {
+      "source": "BootDaily.peak",
+      "format": "d",
+      "rva": "0x75348"
+    },
+    {
+      "source": "BootDaily.blocked",
+      "format": "B",
+      "rva": "0x75320"
+    },
+    {
+      "source": "BootDaily.bars",
+      "format": "i",
+      "rva": "0x75324"
+    },
+    {
+      "source": "BootState.panel_bar",
+      "format": "q",
+      "rva": "0x75338"
+    },
+    {
+      "source": "BootHistory.total",
+      "format": "i",
+      "rva": "0x77358"
+    },
+    {
+      "source": "BootHistory.count",
+      "format": "i",
+      "rva": "0x77354"
+    },
+    {
+      "source": "BootState.extended_cleanup",
+      "format": "B",
+      "rva": "0x752d4"
+    },
+    {
+      "source": "BootPanel.cell_font_flag",
+      "format": "B",
+      "rva": "0x752e8"
+    },
+    {
+      "source": "BootState.cell_base_x",
+      "format": "d",
+      "rva": "0x75328"
+    },
+    {
+      "source": "BootState.cell_base_y",
+      "format": "d",
+      "rva": "0x75330"
+    },
+    {
+      "source": "BootPanel.scale",
+      "format": "d",
+      "rva": "0x1d6f48"
+    },
+    {
+      "source": "BootPanel.cell_x",
+      "format": "d",
+      "rva": "0x752d8"
+    },
+    {
+      "source": "BootPanel.cell_y",
+      "format": "d",
+      "rva": "0x752e0"
+    }
+  ],
+  "strings": [
+    {
+      "source": "BootInputs.comment_prefix",
+      "rva": "0x1d6ff8"
+    },
+    {
+      "source": "BootInputs.symbol_suffix",
+      "rva": "0x6d230"
+    },
+    {
+      "source": "BootContext.order_comment",
+      "rva": "0x6d568"
+    },
+    {
+      "source": "BootPreparation.symbol",
+      "rva": "0x74958"
+    },
+    {
+      "source": "BootChartSymbol",
+      "rva": "0x1d6e28"
+    }
+  ],
+  "native_start": "0x3ce6",
+  "native_end": "0x4580",
+  "native_init_sha256": "66812ca6397edc00b872cfc3b38ca7606cc3dc7d5cf084433c579ea13e90771c",
+  "prints": 30,
+  "host_multiplications": 1192,
+  "frequency_selection_executed": false
+}

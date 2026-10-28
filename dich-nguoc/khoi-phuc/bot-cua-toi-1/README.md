@@ -1,3 +1,9 @@
+Đã phục hồi phần chọn đường theo mã giá trước vòng chiến lược:
+**121/121 ca khớp**, gồm các biến thể vàng, bạc và `GC`; giữ đúng
+hoa thường, chuỗi, mã lỗi và đường đánh giá trực tiếp. Nguồn/bộ ghép
+biên dịch 0 lỗi/cảnh báo. Chưa nối toàn bộ phần xử lý giá mới.
+[Phạm vi](../danh-gia-doc-lap/tick-symbol-routing-20261029-r1/README.md).
+
 Đã chạy cả ba thân hàm bảng trong luồng khởi động sau cổng quyền:
 **42/42 ca khớp**, 248 giá trị, 2.700 ô bảng/lịch và 57.592 lời gọi.
 41 ca bật bảng đều tạo 45 đối tượng; nguồn kiểm biên dịch 0 lỗi/

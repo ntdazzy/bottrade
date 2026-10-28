@@ -83,6 +83,7 @@
 #include "../../Include/bot-cua-toi-3/Bot3ReleaseFilters.mqh"
 #include "../../Include/bot-cua-toi-3/Bot3RuntimeProfile.mqh"
 #include "../../Include/bot-cua-toi-3/Bot3StrategyContext.mqh"
+#include "../../Include/bot-cua-toi-3/Bot3StartupContext.mqh"
 #include "../../Include/bot-cua-toi-3/Bot3StrategyCycle.mqh"
 #include "../../Include/bot-cua-toi-3/Bot3StrategyDispatcher.mqh"
 #include "../../Include/bot-cua-toi-3/Bot3StrategyHistory.mqh"

@@ -19,7 +19,7 @@
 | Đoạn vốn/tài khoản trong OnInit | `0x126c..0x1941` | `0x1279..0x193f` |
 | Nối vốn, lịch dự phòng tới trả về | `0x126c..0x5658`, 93/93 ca, cùng trạng thái và 900 ô lịch | chưa dựng đoạn nối tương ứng |
 | Nạp dữ liệu lịch dự phòng và hai cờ | `0x1941..0x3827` | `0x193f..0x3840` |
-| Ngữ cảnh/bộ đếm/đuôi mã trước chuẩn bị | `0x3827..0x3c9d` | chưa dựng phần tương ứng |
+| Ngữ cảnh/bộ đếm/đuôi mã trước chuẩn bị | `0x3827..0x3c9d` | `0x3ce6..0x4580`, 298/298 ca; phần đổi giờ/chọn tần suất trước đó chưa nằm trong phép kiểm |
 | Nối ngữ cảnh tới trả về | `0x3827..0x5658`, 459/459 ca, cùng trạng thái qua chuẩn bị đầu | chưa dựng đoạn nối tương ứng |
 | Chuẩn bị chiến lược đầu | `0x7500` | `0xe0c0` |
 | Nối chuẩn bị đầu đến trả về | gọi `0x7500` tại `0x3ca9`, chạy tới `0x5658`; 161/161 ca và 3/3 ca lỗi | chưa dựng đoạn nối tương ứng |

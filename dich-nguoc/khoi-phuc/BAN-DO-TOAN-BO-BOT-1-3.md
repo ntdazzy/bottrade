@@ -176,6 +176,13 @@ Chỉ tới trước cờ hoạt động/kiểm quyền dùng, chưa là toàn b
 
 ## Điều kiện để bắt đầu từng phần và để chốt toàn bộ
 
+Ngày 29/10: bot 1 đã dựng chọn đường theo mã giá trước vòng chiến
+lược, **121/121 ca**; còn nối đánh giá trực tiếp/dọn bảng/vòng gọi.
+[Bằng chứng](danh-gia-doc-lap/tick-symbol-routing-20261029-r1/README.md).
+Bot 3 đã dựng ngữ cảnh khởi động `0x3ce6..0x4580`, **298/298 ca**;
+còn đổi giờ/chọn tần suất phía trước, chuẩn bị và phần sau.
+[Bằng chứng](danh-gia-doc-lap/startup-context-bot3-20261029-r1/README.md).
+
 P30 tiếp tục bằng phân tích tĩnh toàn luồng. Không dùng cờ/tài khoản/
 trạng thái cấp quyền giả lập để chạy phần bảo vệ. Chưa xác nhận đầy
 đủ nguồn quyền hợp lệ; xem [ranh giới và lệnh đã chốt](danh-gia-doc-lap/authorization-boundary-20261029-r1.md).

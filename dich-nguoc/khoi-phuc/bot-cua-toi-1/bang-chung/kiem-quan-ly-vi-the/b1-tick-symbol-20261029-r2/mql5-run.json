@@ -1,0 +1,31 @@
+{
+  "original_ex5_sha256": "a3b0de423a06e10ebedc279307b93d7cb9188ba2bb5de77131a913c865b0e922",
+  "native_outer_sha256": "f5edd0f5e9033ddddb289a3419406c06292ce22bff197bea6d10acea1756c721",
+  "sources_sha256": {
+    "Include/bot-cua-toi-1/Bot1TickSymbolRouting.mqh": "c71fb3814739b7cb0b9c4cef9506200a73226e90a6cf8dbaa6599e656d795317",
+    "Scripts/bot-cua-toi-1/Bot1TickSymbolRoutingCheck.mq5": "9c909319fb30d91ad899bd281255057b392a1790ca05d895163f2039fe726b5e"
+  },
+  "helpers_sha256": {
+    "cong-cu/kiem-ma-gia-dieu-phoi-bot-1.py": "0ed34fcb331fedf8050e386568c4d3cff3df891f1bfd29c07032bb84ea1f9e3f",
+    "cong-cu/kiem-ngu-canh-khoi-dong-bot-1.py": "9a9156da519075e42c72caa4652c68f72330a644c3b6c458f1919c054b74c8ea",
+    "cong-cu/kiem-cong-dieu-phoi-bot-1-3.py": "a4edd0e507a18d2dda21a104a7488aada4330d0ba12f2beb42396d9faa80e635",
+    "cong-cu/kiem-lich-su-chien-luoc-bot-1-3.py": "64970d4a1ef42180fb44b3da19d6b51aa60147fce70ac480cd78d5769e91c45a",
+    "cong-cu/kiem-gia-vao-bot-1-3.py": "22394e48932feb7242b967aa58e327d2990402f12bfe52621916f64914c9dac2",
+    "cong-cu/kiem-muc-gia-bot-1-3.py": "a6c447ca80029fb63ced0c9d1673bb14222a7736b04df5c410f280f8471d6a35"
+  },
+  "cases": 121,
+  "result_sha256": "2abb67656ddca598411c5e3c865e051db591e43a5f8d4873d8a4465719586192",
+  "build": "b1-tick-symbol-check-20261029-r2",
+  "build_receipt_sha256": "74b6b75d912b3cd76163077685bfb039b65c8ad58ebfc0db800491c0894681dd",
+  "full_ea": false,
+  "whole_bot_complete": false,
+  "whole_manager_complete": false,
+  "native_symbol_routing_executed": true,
+  "native_string_searches_executed": true,
+  "native_string_copy_executed": true,
+  "authorization_executed": false,
+  "authorization_entry_guarded": true,
+  "allocation_success_supplied": true,
+  "direct_evaluator_executed": false,
+  "strategy_loop_executed": false
+}

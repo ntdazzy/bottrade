@@ -1,0 +1,33 @@
+{
+  "bot": 1,
+  "run": "b1-tick-symbol-20261029-r2",
+  "cases": 121,
+  "matched": 121,
+  "build": "b1-tick-symbol-check-20261029-r2",
+  "all_headers_build": "b1-all-headers-api-20261029-r2",
+  "all_headers_count": 108,
+  "original_ex5_sha256": "a3b0de423a06e10ebedc279307b93d7cb9188ba2bb5de77131a913c865b0e922",
+  "authorization_executed": false,
+  "authorization_entry_guarded": true,
+  "full_ea": false,
+  "whole_bot_complete": false,
+  "patterns": [
+    "XAUUSD",
+    "xauusd",
+    "GOLD",
+    "gold",
+    "Gold",
+    "XAU",
+    "xau",
+    "XAG",
+    "xag",
+    "GC",
+    "gc"
+  ],
+  "native_start": "0x11f3f",
+  "stops": [
+    "0x12004",
+    "0x12409"
+  ],
+  "native_outer_sha256": "f5edd0f5e9033ddddb289a3419406c06292ce22bff197bea6d10acea1756c721"
+}

@@ -78,6 +78,7 @@
 #include "../../Include/bot-cua-toi-1/Bot1StrategyContext.mqh"
 #include "../../Include/bot-cua-toi-1/Bot1StrategyCycle.mqh"
 #include "../../Include/bot-cua-toi-1/Bot1StrategyDispatcher.mqh"
+#include "../../Include/bot-cua-toi-1/Bot1TickSymbolRouting.mqh"
 #include "../../Include/bot-cua-toi-1/Bot1StrategyHistory.mqh"
 #include "../../Include/bot-cua-toi-1/Bot1StrategyHour.mqh"
 #include "../../Include/bot-cua-toi-1/Bot1StrategySelection.mqh"

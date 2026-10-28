@@ -1,0 +1,17 @@
+{
+  "cases": 121,
+  "matched": 121,
+  "failed": 0,
+  "first_failures": [],
+  "full_ea": false,
+  "whole_bot_complete": false,
+  "whole_manager_complete": false,
+  "native_symbol_routing_executed": true,
+  "native_string_searches_executed": true,
+  "native_string_copy_executed": true,
+  "authorization_executed": false,
+  "authorization_entry_guarded": true,
+  "allocation_success_supplied": true,
+  "direct_evaluator_executed": false,
+  "strategy_loop_executed": false
+}
