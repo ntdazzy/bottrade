@@ -176,10 +176,11 @@ Chỉ tới trước cờ hoạt động/kiểm quyền dùng, chưa là toàn b
 
 ## Điều kiện để bắt đầu từng phần và để chốt toàn bộ
 
-Ngày 29/10: bot 1 đã nối chọn đường theo mã giá với thân dọn bảng,
-**522/522 ca**, không đặt lại vùng nhớ giữa hai phần. Còn nối đánh
-giá trực tiếp/vòng gọi.
-[Bằng chứng](danh-gia-doc-lap/tick-symbol-cleanup-bot1-20261029-r1/README.md).
+Ngày 29/10: bot 1 đã nối chọn mã giá, thân dọn bảng và 8 cổng
+chiến lược: **856/856 ca**, không đặt lại dữ liệu/thanh ghi giữa
+các phần. Còn tám thân chiến lược trong phép kiểm nối, đánh giá
+trực tiếp, phần sau vòng và toàn EA.
+[Bằng chứng](danh-gia-doc-lap/tick-dispatch-bot1-20261029-r1/README.md).
 Bot 3 đã nối đổi giờ/chọn tần suất với ngữ cảnh `0x3840..0x4580`,
 chạy cả thân mùa hè/đổi tiền: **344/344 ca**, 18.982 lời gọi/thông báo.
 Còn chuẩn bị đầu, phần sau và phép kiểm các nhánh lỗi khi đã nối.

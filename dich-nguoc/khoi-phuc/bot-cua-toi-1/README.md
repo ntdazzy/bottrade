@@ -1,8 +1,9 @@
-Đã nối chọn mã giá với thân dọn bảng dừng lỗ ảo: **522/522 ca khớp**,
-so đủ 1.500 ô bảng và toàn bộ danh sách lệnh đang mở. Nhánh đánh giá
-trực tiếp bỏ qua dọn bảng. 109 tệp `.mqh` biên dịch 0 lỗi, 0 cảnh báo.
-Còn nối đánh giá/vòng chiến lược và toàn EA.
-[Phạm vi mới](../danh-gia-doc-lap/tick-symbol-cleanup-bot1-20261029-r1/README.md).
+Đã nối chọn mã giá, thân dọn bảng và 8 cổng chiến lược:
+**856/856 ca khớp**, so 1.500 ô bảng/danh sách vé ở mỗi lần gọi.
+110 tệp `.mqh` biên dịch 0 lỗi, 0 cảnh báo. Tám thân chiến lược
+được thay bằng bộ ghi; còn nối các thân này, đường đánh giá riêng,
+phần sau vòng và toàn EA.
+[Phạm vi mới](../danh-gia-doc-lap/tick-dispatch-bot1-20261029-r1/README.md).
 
 Đã phục hồi phần chọn đường theo mã giá trước vòng chiến lược:
 **121/121 ca khớp**, gồm các biến thể vàng, bạc và `GC`; giữ đúng

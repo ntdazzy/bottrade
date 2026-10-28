@@ -1,0 +1,730 @@
+{
+  "bot": 2,
+  "snapshot": "luot-20261026-r1",
+  "source_ex5": "C:\\Users\\NTD\\Desktop\\BotTradeEA\\local\\market-demos-20261020\\dich-nguoc-luot2\\terminal\\MQL5\\Experts\\Market\\Goldbot One MT5.ex5",
+  "source_ex5_sha256": "390d8ab14fc213ff4b8cbe5084bec545526e62c6028516fe21219a59398ce795",
+  "code_base": "0x253f2620000",
+  "counts": {
+    "report_rows": 70,
+    "menu_titles": 8,
+    "inputs": 62
+  },
+  "overrides": {
+    "AutoGMT": "false",
+    "Broker_GMT_OFFSET_Winter": "0",
+    "Broker_GMT_OFFSET_Summer": "0"
+  },
+  "evidence_sha256": {
+    "dich-nguoc\\khoi-phuc\\bot-cua-toi-2\\bang-chung\\luot-20261026-r1\\b2-luot-20261026-r1.htm": "0863b59389083cedf1155ceb8d31c2abcaa27d196c06c9b529e0b58b76f74a76",
+    "dich-nguoc\\khoi-phuc\\bot-cua-toi-2\\bang-chung\\luot-20261026-r1\\capture-run.json": "7bf31e7a43efdfec1aefc8eccbd6e89fb6e754bd129f47a249ac5ad05b66a881",
+    "dich-nguoc\\khoi-phuc\\bot-cua-toi-2\\bang-chung\\luot-20261026-r1\\capture-finalization.json": "8ea78b9ebaf532f39d0a10b05c213cf98644d35374954b770a93014523fbba14",
+    "dich-nguoc\\khoi-phuc\\bot-cua-toi-2\\phan-tich\\luot-20261026-data-r2\\inventory-v3\\inventory-v3.json": "7dfba97eba0895a47d1b7186706e4d458a5864edc43c700c4be9817dc540ee5f"
+  },
+  "inputs": [
+    {
+      "order": 1,
+      "kind": "menu_title",
+      "name": "lijntje",
+      "observed_value": "=============================================================",
+      "overridden_in_capture": false,
+      "type": null,
+      "default": null,
+      "rva": null
+    },
+    {
+      "order": 2,
+      "kind": "input",
+      "name": "ShowInfoPanel",
+      "observed_value": "true",
+      "overridden_in_capture": false,
+      "type": null,
+      "default": null,
+      "rva": null
+    },
+    {
+      "order": 3,
+      "kind": "input",
+      "name": "UpdateInfoTesting",
+      "observed_value": "false",
+      "overridden_in_capture": false,
+      "type": null,
+      "default": null,
+      "rva": null
+    },
+    {
+      "order": 4,
+      "kind": "input",
+      "name": "InfoPanelSizeAdjust",
+      "observed_value": "1.0",
+      "overridden_in_capture": false,
+      "type": null,
+      "default": null,
+      "rva": null
+    },
+    {
+      "order": 5,
+      "kind": "input",
+      "name": "SetFontSize",
+      "observed_value": "0",
+      "overridden_in_capture": false,
+      "type": null,
+      "default": null,
+      "rva": null
+    },
+    {
+      "order": 6,
+      "kind": "menu_title",
+      "name": "BacktestSpeed_string",
+      "observed_value": "------------------------------ Backtest Speed settings ------------------------------",
+      "overridden_in_capture": false,
+      "type": null,
+      "default": null,
+      "rva": null
+    },
+    {
+      "order": 7,
+      "kind": "input",
+      "name": "BacktestSpeed",
+      "observed_value": "1",
+      "overridden_in_capture": false,
+      "type": null,
+      "default": null,
+      "rva": null
+    },
+    {
+      "order": 8,
+      "kind": "menu_title",
+      "name": "spreadfilter",
+      "observed_value": "------------------------------ settings ------------------------------",
+      "overridden_in_capture": false,
+      "type": null,
+      "default": null,
+      "rva": null
+    },
+    {
+      "order": 9,
+      "kind": "input",
+      "name": "AllowBuyTrades",
+      "observed_value": "true",
+      "overridden_in_capture": false,
+      "type": null,
+      "default": null,
+      "rva": null
+    },
+    {
+      "order": 10,
+      "kind": "input",
+      "name": "AllowSellTrades",
+      "observed_value": "true",
+      "overridden_in_capture": false,
+      "type": null,
+      "default": null,
+      "rva": null
+    },
+    {
+      "order": 11,
+      "kind": "input",
+      "name": "RunStrategyA",
+      "observed_value": "true",
+      "overridden_in_capture": false,
+      "type": null,
+      "default": null,
+      "rva": null
+    },
+    {
+      "order": 12,
+      "kind": "input",
+      "name": "RunStrategyB",
+      "observed_value": "true",
+      "overridden_in_capture": false,
+      "type": null,
+      "default": null,
+      "rva": null
+    },
+    {
+      "order": 13,
+      "kind": "input",
+      "name": "RunStrategyC",
+      "observed_value": "true",
+      "overridden_in_capture": false,
+      "type": null,
+      "default": null,
+      "rva": null
+    },
+    {
+      "order": 14,
+      "kind": "input",
+      "name": "RunStrategyD",
+      "observed_value": "true",
+      "overridden_in_capture": false,
+      "type": null,
+      "default": null,
+      "rva": null
+    },
+    {
+      "order": 15,
+      "kind": "input",
+      "name": "RunStrategyE",
+      "observed_value": "true",
+      "overridden_in_capture": false,
+      "type": null,
+      "default": null,
+      "rva": null
+    },
+    {
+      "order": 16,
+      "kind": "input",
+      "name": "RunStrategyF",
+      "observed_value": "true",
+      "overridden_in_capture": false,
+      "type": null,
+      "default": null,
+      "rva": null
+    },
+    {
+      "order": 17,
+      "kind": "input",
+      "name": "RunStrategyG",
+      "observed_value": "true",
+      "overridden_in_capture": false,
+      "type": null,
+      "default": null,
+      "rva": null
+    },
+    {
+      "order": 18,
+      "kind": "input",
+      "name": "RunStrategyH",
+      "observed_value": "true",
+      "overridden_in_capture": false,
+      "type": null,
+      "default": null,
+      "rva": null
+    },
+    {
+      "order": 19,
+      "kind": "input",
+      "name": "MaxSpread",
+      "observed_value": "500.0",
+      "overridden_in_capture": false,
+      "type": null,
+      "default": null,
+      "rva": null
+    },
+    {
+      "order": 20,
+      "kind": "input",
+      "name": "FridayStopHour",
+      "observed_value": "25",
+      "overridden_in_capture": false,
+      "type": null,
+      "default": null,
+      "rva": null
+    },
+    {
+      "order": 21,
+      "kind": "input",
+      "name": "setSL_TP_After_Entry",
+      "observed_value": "false",
+      "overridden_in_capture": false,
+      "type": null,
+      "default": null,
+      "rva": null
+    },
+    {
+      "order": 22,
+      "kind": "input",
+      "name": "Virtual_expiration",
+      "observed_value": "true",
+      "overridden_in_capture": false,
+      "type": null,
+      "default": null,
+      "rva": null
+    },
+    {
+      "order": 23,
+      "kind": "input",
+      "name": "Randomization",
+      "observed_value": "0.0",
+      "overridden_in_capture": false,
+      "type": null,
+      "default": null,
+      "rva": null
+    },
+    {
+      "order": 24,
+      "kind": "input",
+      "name": "FakeOutFilter",
+      "observed_value": "1",
+      "overridden_in_capture": false,
+      "type": null,
+      "default": null,
+      "rva": null
+    },
+    {
+      "order": 25,
+      "kind": "input",
+      "name": "EnableVirtualSLTP",
+      "observed_value": "false",
+      "overridden_in_capture": false,
+      "type": null,
+      "default": null,
+      "rva": null
+    },
+    {
+      "order": 26,
+      "kind": "input",
+      "name": "SetVSL_to_hardSL_sec_delay",
+      "observed_value": "99",
+      "overridden_in_capture": false,
+      "type": null,
+      "default": null,
+      "rva": null
+    },
+    {
+      "order": 27,
+      "kind": "input",
+      "name": "ST1_MagicNumber",
+      "observed_value": "2000",
+      "overridden_in_capture": false,
+      "type": null,
+      "default": null,
+      "rva": null
+    },
+    {
+      "order": 28,
+      "kind": "input",
+      "name": "ST1_Comment",
+      "observed_value": "GoldBot_One",
+      "overridden_in_capture": false,
+      "type": null,
+      "default": null,
+      "rva": null
+    },
+    {
+      "order": 29,
+      "kind": "input",
+      "name": "RemoveCommentSuffix",
+      "observed_value": "false",
+      "overridden_in_capture": false,
+      "type": null,
+      "default": null,
+      "rva": null
+    },
+    {
+      "order": 30,
+      "kind": "menu_title",
+      "name": "NFP_FILTER",
+      "observed_value": "----------------------- NFP Filter -----------------------",
+      "overridden_in_capture": false,
+      "type": null,
+      "default": null,
+      "rva": null
+    },
+    {
+      "order": 31,
+      "kind": "input",
+      "name": "EnableNFP_Filter",
+      "observed_value": "true",
+      "overridden_in_capture": false,
+      "type": null,
+      "default": null,
+      "rva": null
+    },
+    {
+      "order": 32,
+      "kind": "input",
+      "name": "UseMQL5Calendar",
+      "observed_value": "true",
+      "overridden_in_capture": false,
+      "type": null,
+      "default": null,
+      "rva": null
+    },
+    {
+      "order": 33,
+      "kind": "input",
+      "name": "AutoGMT",
+      "observed_value": "false",
+      "overridden_in_capture": true,
+      "type": null,
+      "default": null,
+      "rva": null
+    },
+    {
+      "order": 34,
+      "kind": "input",
+      "name": "Broker_GMT_OFFSET_Winter",
+      "observed_value": "0",
+      "overridden_in_capture": true,
+      "type": null,
+      "default": null,
+      "rva": null
+    },
+    {
+      "order": 35,
+      "kind": "input",
+      "name": "Broker_GMT_OFFSET_Summer",
+      "observed_value": "0",
+      "overridden_in_capture": true,
+      "type": null,
+      "default": null,
+      "rva": null
+    },
+    {
+      "order": 36,
+      "kind": "input",
+      "name": "NFP_CloseOpenTrades",
+      "observed_value": "true",
+      "overridden_in_capture": false,
+      "type": null,
+      "default": null,
+      "rva": null
+    },
+    {
+      "order": 37,
+      "kind": "input",
+      "name": "NFP_ClosePendingOrders",
+      "observed_value": "true",
+      "overridden_in_capture": false,
+      "type": null,
+      "default": null,
+      "rva": null
+    },
+    {
+      "order": 38,
+      "kind": "input",
+      "name": "NFP_MinutesBefore",
+      "observed_value": "180",
+      "overridden_in_capture": false,
+      "type": null,
+      "default": null,
+      "rva": null
+    },
+    {
+      "order": 39,
+      "kind": "input",
+      "name": "NFP_MinutesAfter",
+      "observed_value": "50",
+      "overridden_in_capture": false,
+      "type": null,
+      "default": null,
+      "rva": null
+    },
+    {
+      "order": 40,
+      "kind": "menu_title",
+      "name": "IR_FILTER",
+      "observed_value": "----------------------- Interest Rate Filter -----------------------",
+      "overridden_in_capture": false,
+      "type": null,
+      "default": null,
+      "rva": null
+    },
+    {
+      "order": 41,
+      "kind": "input",
+      "name": "EnableIR_Filter",
+      "observed_value": "false",
+      "overridden_in_capture": false,
+      "type": null,
+      "default": null,
+      "rva": null
+    },
+    {
+      "order": 42,
+      "kind": "input",
+      "name": "IR_CloseOpenTrades",
+      "observed_value": "true",
+      "overridden_in_capture": false,
+      "type": null,
+      "default": null,
+      "rva": null
+    },
+    {
+      "order": 43,
+      "kind": "input",
+      "name": "IR_ClosePendingOrders",
+      "observed_value": "true",
+      "overridden_in_capture": false,
+      "type": null,
+      "default": null,
+      "rva": null
+    },
+    {
+      "order": 44,
+      "kind": "input",
+      "name": "IR_MinutesBefore",
+      "observed_value": "100",
+      "overridden_in_capture": false,
+      "type": null,
+      "default": null,
+      "rva": null
+    },
+    {
+      "order": 45,
+      "kind": "input",
+      "name": "IR_MinutesAfter",
+      "observed_value": "60",
+      "overridden_in_capture": false,
+      "type": null,
+      "default": null,
+      "rva": null
+    },
+    {
+      "order": 46,
+      "kind": "menu_title",
+      "name": "CPI_FILTER",
+      "observed_value": "----------------------- CPI Filter -----------------------",
+      "overridden_in_capture": false,
+      "type": null,
+      "default": null,
+      "rva": null
+    },
+    {
+      "order": 47,
+      "kind": "input",
+      "name": "EnableCPI_Filter",
+      "observed_value": "false",
+      "overridden_in_capture": false,
+      "type": null,
+      "default": null,
+      "rva": null
+    },
+    {
+      "order": 48,
+      "kind": "input",
+      "name": "CPI_CloseOpenTrades",
+      "observed_value": "true",
+      "overridden_in_capture": false,
+      "type": null,
+      "default": null,
+      "rva": null
+    },
+    {
+      "order": 49,
+      "kind": "input",
+      "name": "CPI_ClosePendingOrders",
+      "observed_value": "true",
+      "overridden_in_capture": false,
+      "type": null,
+      "default": null,
+      "rva": null
+    },
+    {
+      "order": 50,
+      "kind": "input",
+      "name": "CPI_MinutesBefore",
+      "observed_value": "100",
+      "overridden_in_capture": false,
+      "type": null,
+      "default": null,
+      "rva": null
+    },
+    {
+      "order": 51,
+      "kind": "input",
+      "name": "CPI_MinutesAfter",
+      "observed_value": "60",
+      "overridden_in_capture": false,
+      "type": null,
+      "default": null,
+      "rva": null
+    },
+    {
+      "order": 52,
+      "kind": "menu_title",
+      "name": "propfirmsettings",
+      "observed_value": "----------------------- Propfirm unique trades settings -----------------------",
+      "overridden_in_capture": false,
+      "type": null,
+      "default": null,
+      "rva": null
+    },
+    {
+      "order": 53,
+      "kind": "input",
+      "name": "AdjustEntry",
+      "observed_value": "0.0",
+      "overridden_in_capture": false,
+      "type": null,
+      "default": null,
+      "rva": null
+    },
+    {
+      "order": 54,
+      "kind": "input",
+      "name": "AdjustSL",
+      "observed_value": "0.0",
+      "overridden_in_capture": false,
+      "type": null,
+      "default": null,
+      "rva": null
+    },
+    {
+      "order": 55,
+      "kind": "input",
+      "name": "AdjustTP",
+      "observed_value": "0.0",
+      "overridden_in_capture": false,
+      "type": null,
+      "default": null,
+      "rva": null
+    },
+    {
+      "order": 56,
+      "kind": "input",
+      "name": "AdjustTrailSL",
+      "observed_value": "0.0",
+      "overridden_in_capture": false,
+      "type": null,
+      "default": null,
+      "rva": null
+    },
+    {
+      "order": 57,
+      "kind": "input",
+      "name": "AdjustBE",
+      "observed_value": "0.0",
+      "overridden_in_capture": false,
+      "type": null,
+      "default": null,
+      "rva": null
+    },
+    {
+      "order": 58,
+      "kind": "menu_title",
+      "name": "LotSizeSettings",
+      "observed_value": "----------------------- LotSize Settings -----------------------",
+      "overridden_in_capture": false,
+      "type": null,
+      "default": null,
+      "rva": null
+    },
+    {
+      "order": 59,
+      "kind": "input",
+      "name": "ManualBalance",
+      "observed_value": "0.0",
+      "overridden_in_capture": false,
+      "type": null,
+      "default": null,
+      "rva": null
+    },
+    {
+      "order": 60,
+      "kind": "input",
+      "name": "StartLots",
+      "observed_value": "0.01",
+      "overridden_in_capture": false,
+      "type": null,
+      "default": null,
+      "rva": null
+    },
+    {
+      "order": 61,
+      "kind": "input",
+      "name": "Risk",
+      "observed_value": "0",
+      "overridden_in_capture": false,
+      "type": null,
+      "default": null,
+      "rva": null
+    },
+    {
+      "order": 62,
+      "kind": "input",
+      "name": "MaxRiskPerStrategy",
+      "observed_value": "6.0",
+      "overridden_in_capture": false,
+      "type": null,
+      "default": null,
+      "rva": null
+    },
+    {
+      "order": 63,
+      "kind": "input",
+      "name": "PropFirmMaxDailyDD",
+      "observed_value": "0.0",
+      "overridden_in_capture": false,
+      "type": null,
+      "default": null,
+      "rva": null
+    },
+    {
+      "order": 64,
+      "kind": "input",
+      "name": "LotPerBalance_step",
+      "observed_value": "1000",
+      "overridden_in_capture": false,
+      "type": null,
+      "default": null,
+      "rva": null
+    },
+    {
+      "order": 65,
+      "kind": "input",
+      "name": "OnlyUp",
+      "observed_value": "false",
+      "overridden_in_capture": false,
+      "type": null,
+      "default": null,
+      "rva": null
+    },
+    {
+      "order": 66,
+      "kind": "input",
+      "name": "ResetHighestBalance",
+      "observed_value": "false",
+      "overridden_in_capture": false,
+      "type": null,
+      "default": null,
+      "rva": null
+    },
+    {
+      "order": 67,
+      "kind": "input",
+      "name": "ResetHighestBalanceOnWithdrawal",
+      "observed_value": "true",
+      "overridden_in_capture": false,
+      "type": null,
+      "default": null,
+      "rva": null
+    },
+    {
+      "order": 68,
+      "kind": "input",
+      "name": "CheckMargin",
+      "observed_value": "true",
+      "overridden_in_capture": false,
+      "type": null,
+      "default": null,
+      "rva": null
+    },
+    {
+      "order": 69,
+      "kind": "input",
+      "name": "UseEquity",
+      "observed_value": "false",
+      "overridden_in_capture": false,
+      "type": null,
+      "default": null,
+      "rva": null
+    },
+    {
+      "order": 70,
+      "kind": "input",
+      "name": "AdjustLotsizeToVariableValues",
+      "observed_value": "true",
+      "overridden_in_capture": false,
+      "type": null,
+      "default": null,
+      "rva": null
+    }
+  ],
+  "limitations": [
+    "Kiểu khai báo, giá trị mặc định và RVA đều chưa có bằng chứng trực tiếp; giữ null.",
+    "59 mục không bị truyền trong lượt chạy không được gọi là mặc định chắc chắn.",
+    "inventory-v3 là bảng 86 dải hàm, không phải bảng ánh xạ đầu vào."
+  ]
+}

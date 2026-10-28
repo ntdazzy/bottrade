@@ -1,0 +1,73 @@
+{
+  "run": "b1-tick-dispatch-20261029-r2",
+  "cases": 856,
+  "matched": 856,
+  "groups": {
+    "symbol-routing-and-flags": {
+      "cases": 484,
+      "matched": 484
+    },
+    "guard-byte": {
+      "cases": 4,
+      "matched": 4
+    },
+    "array-initial-size": {
+      "cases": 12,
+      "matched": 12
+    },
+    "position-types-and-selection": {
+      "cases": 10,
+      "matched": 10
+    },
+    "array-growth": {
+      "cases": 8,
+      "matched": 8
+    },
+    "resize-fails-empty-account": {
+      "cases": 1,
+      "matched": 1
+    },
+    "initial-resize-retry": {
+      "cases": 1,
+      "matched": 1
+    },
+    "old-tail-is-not-open": {
+      "cases": 2,
+      "matched": 2
+    },
+    "all-enable-masks-after-routing": {
+      "cases": 256,
+      "matched": 256
+    },
+    "live-gates-between-strategies": {
+      "cases": 54,
+      "matched": 54
+    },
+    "cleanup-changes-enable-gate": {
+      "cases": 24,
+      "matched": 24
+    }
+  },
+  "strategy_calls": 2914,
+  "sdk_calls": 2915,
+  "table_cells": 1500,
+  "all_headers": 110,
+  "builds": [
+    "b1-tick-dispatch-check-20261029-r1",
+    "b1-all-headers-api-20261029-r4"
+  ],
+  "native_start": "0x11f3f",
+  "configured_end": "0x16730",
+  "direct_end": "0x12004",
+  "native_outer_sha256": "f5edd0f5e9033ddddb289a3419406c06292ce22bff197bea6d10acea1756c721",
+  "original_ex5_sha256": "a3b0de423a06e10ebedc279307b93d7cb9188ba2bb5de77131a913c865b0e922",
+  "result_sha256": "abb1dda4c31de23d38e1e070fc8094d5b22b8625afbb4f63c8a0b20a6e5aac58",
+  "full_strategy_bodies": false,
+  "authorization_executed": false,
+  "full_ea": false,
+  "git_exact_bytes_preserved_newline_only": [
+    "Bot1AccountStateVolume.mqh",
+    "Bot1AccountVolume.mqh",
+    "Bot1Withdrawal.mqh"
+  ]
+}

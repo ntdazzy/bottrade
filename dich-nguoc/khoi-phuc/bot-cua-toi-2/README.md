@@ -1,5 +1,11 @@
 # bot-cua-toi-2
 
+Đã chốt từ báo cáo đúng EX5: **62 cài đặt và 8 tiêu đề** theo thứ
+tự, cùng giá trị của lượt chạy. Ba mục GMT được truyền đè đã đối
+chiếu với cấu hình chạy. Kiểu khai báo, mặc định và vị trí lưu còn
+chưa rõ; chưa viết khối nhập liệu theo suy đoán.
+[Danh sách và bằng chứng](../danh-gia-doc-lap/inputs-bot2-20261029-r1/README.md).
+
 Đã phục hồi hai chiều đổi tiền: **1.650/1.650 ca khớp từng byte**,
 gồm toàn bộ thứ tự đọc tiền tệ/tỷ giá; thêm 4 ca chia 0 khớp loại
 lỗi và lời gọi trước lỗi. Giữ nguyên nhánh CHF bị lặp của bản gốc.

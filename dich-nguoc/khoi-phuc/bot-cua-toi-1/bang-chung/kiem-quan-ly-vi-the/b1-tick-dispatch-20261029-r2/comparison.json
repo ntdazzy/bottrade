@@ -1,0 +1,89 @@
+{
+  "cases": 856,
+  "matched": 856,
+  "failed": 0,
+  "first_failures": [],
+  "groups": {
+    "symbol-routing-and-flags": {
+      "cases": 484,
+      "matched": 484
+    },
+    "guard-byte": {
+      "cases": 4,
+      "matched": 4
+    },
+    "array-initial-size": {
+      "cases": 12,
+      "matched": 12
+    },
+    "position-types-and-selection": {
+      "cases": 10,
+      "matched": 10
+    },
+    "array-growth": {
+      "cases": 8,
+      "matched": 8
+    },
+    "resize-fails-empty-account": {
+      "cases": 1,
+      "matched": 1
+    },
+    "initial-resize-retry": {
+      "cases": 1,
+      "matched": 1
+    },
+    "old-tail-is-not-open": {
+      "cases": 2,
+      "matched": 2
+    },
+    "all-enable-masks-after-routing": {
+      "cases": 256,
+      "matched": 256
+    },
+    "live-gates-between-strategies": {
+      "cases": 54,
+      "matched": 54
+    },
+    "cleanup-changes-enable-gate": {
+      "cases": 24,
+      "matched": 24
+    }
+  },
+  "coverage": {
+    "0x18790": {
+      "executed": 163,
+      "instructions": 178
+    },
+    "0x3d200": {
+      "executed": 0,
+      "instructions": 174
+    },
+    "0x3d5a0": {
+      "executed": 0,
+      "instructions": 39
+    },
+    "0x3d640": {
+      "executed": 0,
+      "instructions": 29
+    }
+  },
+  "hashes": {
+    "cases.bin": "80ac6f01c5f60b3b1e085f480b7dc72582f28a2c69e56c09407e9e8408fa2f28",
+    "baseline.json": "ceec85a3f59c5fc44b5eed9dda3c54e34dffa082e994eb5a7a1590ad93709b7d",
+    "mql5-results.bin": "abb1dda4c31de23d38e1e070fc8094d5b22b8625afbb4f63c8a0b20a6e5aac58",
+    "api-fixtures.bin": "b27cc8aad952f8a007a8eec43ef7d1d8443ac8f8a569154e849a7f48f8062c47",
+    "original-results.bin": "abb1dda4c31de23d38e1e070fc8094d5b22b8625afbb4f63c8a0b20a6e5aac58",
+    "script-status.bin": "9141e33b17dd6523ae56f38464c7ab93f6d707f1c90a74bd1a5c84c95ad786d4"
+  },
+  "whole_bot_complete": false,
+  "whole_manager_complete": false,
+  "full_ea": false,
+  "authorization_executed": false,
+  "authorization_entry_guarded": true,
+  "native_route_cleanup_continuous": true,
+  "direct_evaluator_executed": false,
+  "strategy_loop_executed": true,
+  "full_strategy_bodies": false,
+  "strategy_calls_replaced_by_recorder": true,
+  "scope": "Continuous bot1 symbol routing, real cleanup and live eight-strategy gates; strategy bodies replaced by recorders. Return bits, all1500 table doubles,guard,warning ticket,delay,unit,symbol,selected-position model,full physical ticket array and exact typed SDK records compared. ArrayResize post-state measured in MQL5 and input-bound; query replies supplied. Fatal cases,actual account/LastError,all allocation outcomes,error locations,tester and whole EA remain unverified."
+}
