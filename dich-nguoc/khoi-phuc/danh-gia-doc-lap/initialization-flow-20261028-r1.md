@@ -25,7 +25,7 @@
 | Nối ngữ cảnh tới trả về | `0x3827..0x5658`, 459/459 ca, cùng trạng thái qua chuẩn bị đầu | chưa dựng đoạn nối tương ứng |
 | Chuẩn bị chiến lược đầu | `0x7500` | `0xe0c0` |
 | Bốn chuỗi ghi chú, lịch sử và thứ tự bảng tới trả về | `0x4e77..0x5658` | `0x574c..0x5f34`, 222/222 ca; ba thân bảng được thay bằng bộ ghi, chưa nối đoạn giữa |
-| Nối chuẩn bị đầu đến trả về | gọi `0x7500` tại `0x3ca9`, chạy tới `0x5658`; 161/161 ca và 3/3 ca lỗi | chưa dựng đoạn nối tương ứng |
+| Nối chuẩn bị đầu đến trả về | gọi `0x7500` tại `0x3ca9`, chạy tới `0x5658`; 161/161 ca và 3/3 ca lỗi | gọi `0xe0c0` tại `0x458c`, từ `0x4580` tới `0x5f34`; 233/233 ca và 3/3 ca lỗi riêng |
 | Trạng thái giao dịch sau chuẩn bị | `0x3cab..0x4e77`, gồm nhánh ngoài đến `0x4f4b`; 315/315 ca | `0x458e..0x574c`, gồm nhánh ngoài đến `0x5873`; 315/315 ca, 53 trường/2.800 ô |
 | Nối trạng thái giao dịch đến trả về | `0x3cab..0x5658`, 639/639 ca chạy liên tục, chung trạng thái | `0x458e..0x5f34`, 569/569 ca, 130 trường/2.800 ô; hai thân tìm mức và ba thân bảng được thay bằng bộ ghi |
 | Tạo bảng | `0x8320`, `0xe1b0`, `0xffb0` | `0xef40`, `0x14fa0`, `0x16e80` |
@@ -92,6 +92,10 @@ khác ô khối lượng đã chuẩn bị `P.native_6d620` tại `0x6d620`; kh�
 được gộp hoặc chép ngược hai ô này chỉ vì ban đầu có thể bằng nhau.
 Nguồn ánh xạ: `check-preparation-full.py` phần `EXTRA` và
 `kiem-tao-bang-bot-1-3.py` phần `fields(3)`.
+`Bot3StartupPreparationFlow` đã nối hai cách đọc ô chế độ, truyền
+tham chiếu khối lượng cài đặt và đồng bộ các bản giữ dữ liệu ở biên
+hàm. Ca trả về sớm, giá trị âm của chế độ và thay đổi giữa lời gọi
+đã được đối chiếu; không chép khối lượng đã chuẩn bị về cài đặt.
 
 - ghép phần trước khởi tạo với đoạn sau chuẩn bị đầu; bot 1 đã nối
   đến trả về và so 639 ca, còn lỗi chia 0/cấp phát và ba thân hiển thị

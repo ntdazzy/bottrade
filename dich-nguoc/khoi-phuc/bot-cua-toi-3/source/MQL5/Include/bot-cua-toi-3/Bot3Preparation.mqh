@@ -142,9 +142,10 @@ struct Bot3PreparationState
    long expiration;
 };
 // `input` is reserved in MQL5, so the settings parameter is named inputs.
-void Bot3PrepareStrategy(const uint strategy_index,
-                        const Bot3PreparationInputs &inputs,
-                        Bot3PreparationState &state)
+void Bot3PrepareStrategyWithSharedFields(const uint strategy_index,
+                                         const Bot3PreparationInputs &inputs,
+                                         Bot3PreparationState &state,
+                                         const double &manual_lots,uint &shared_mode)
 {
    // A. Indicator and scale.
    const int frame=inputs.indicator_timeframe;
@@ -243,9 +244,10 @@ void Bot3PrepareStrategy(const uint strategy_index,
    state.comment=inputs.comment;
    const double candidate=state.min_change*state.unit;
    state.native_6d618=inputs.native_6d408;
-   state.native_6d620=inputs.native_1d7138;
+   state.native_6d620=manual_lots;
    state.native_6d628=inputs.native_6d410;
    state.native_6d630=inputs.native_1d7130;
+   shared_mode=(uint)state.native_6d630;
    state.native_6d638=inputs.native_6d418;
    state.native_6d640=inputs.native_6d420!=0 ? 600 : 0;
    // D. Broker limits and normalisation.
@@ -303,5 +305,13 @@ void Bot3PrepareStrategy(const uint strategy_index,
    }
    if(state.virtual_expiration==0) state.expiration=expiry;
    else state.expiration=0;
+}
+
+void Bot3PrepareStrategy(const uint strategy_index,
+                        const Bot3PreparationInputs &inputs,
+                        Bot3PreparationState &state)
+{
+   uint mode=(uint)state.native_6d630;
+   Bot3PrepareStrategyWithSharedFields(strategy_index,inputs,state,inputs.native_1d7138,mode);
 }
 #endif

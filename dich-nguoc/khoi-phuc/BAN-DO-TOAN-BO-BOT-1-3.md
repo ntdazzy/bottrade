@@ -186,9 +186,11 @@ Còn chuẩn bị đầu, phần sau và phép kiểm các nhánh lỗi khi đã
 [Bằng chứng](danh-gia-doc-lap/startup-selection-live-bot3-20261029-r1/README.md).
 Đoạn giữa bot 3 `0x458e..0x574c` đã khớp **315/315 ca**; nối với
 đuôi tới `0x5f34` khớp **569/569 ca**, dùng chung 130 trường và
-2.800 ô. Còn ghép lần chuẩn bị đầu, phần trước, hai thân tìm mức,
-ba thân bảng và các nhánh lỗi vào phép kiểm nối.
+2.800 ô. Đã thêm thân chuẩn bị đầu từ `0x4580` tới trả về:
+**233/233 ca**, 234 trường, dãy chỉ báo; thêm 3 ca lỗi dừng riêng.
+Còn phần trước, hai thân tìm mức, ba thân bảng và các nhánh lỗi khác.
 [Bằng chứng phần nối](danh-gia-doc-lap/startup-post-preparation-bot3-20261029-r1/README.md).
+[Bằng chứng chuẩn bị đầu](danh-gia-doc-lap/startup-preparation-flow-bot3-20261029-r1/README.md).
 
 P30 tiếp tục bằng phân tích tĩnh toàn luồng. Không dùng cờ/tài khoản/
 trạng thái cấp quyền giả lập để chạy phần bảo vệ. Chưa xác nhận đầy

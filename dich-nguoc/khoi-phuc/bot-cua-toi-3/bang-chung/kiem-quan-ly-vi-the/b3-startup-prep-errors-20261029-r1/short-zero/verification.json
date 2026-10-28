@@ -1,0 +1,12 @@
+{
+  "tag": "short-zero",
+  "native_code": "0xd0878000001f6",
+  "fatal_class": "array out of range",
+  "exit_code": 4294967295,
+  "recorded_services_compared": 2,
+  "tail_not_entered": true,
+  "no_normal_result": true,
+  "exact_final_fault_state_compared": false,
+  "tape_sha256": "a397b1aed427bca805aaea20a7bf4c0da64701264a1156bebe21663350a88cc4",
+  "runtime_lines_sha256": "cf964d0b8a9521c616171f9abe2604c1bb44ba9bfada33e12f78bec9ddbb80b6"
+}

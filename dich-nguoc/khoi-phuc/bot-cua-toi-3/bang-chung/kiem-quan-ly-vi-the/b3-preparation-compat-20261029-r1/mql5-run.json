@@ -1,0 +1,34 @@
+{
+  "original_ex5_sha256": "ee063d3d87490afe24e2f4ce85f6b05659320e297b102efd70207f71ca2feb83",
+  "tool_sha256": "ac3f6cd5f0bda095e2632959b08c886e9bd86b2b937485d86a42986ed0ef3bda",
+  "contract_sha256": "e44130b1d7c6e305bebdffa47e94335187f3526318aa720b2747a4c5c0b44fdc",
+  "helpers_sha256": {
+    "bot-cua-toi-1/tests/check-management-prelude.py": "f5dbe950896e58a00331ef32473ccebdcbbf03a9627e8c12449c7f4087e6a49d",
+    "cong-cu/kiem-dieu-chinh-bot-1-3.py": "6c450fe3381f3145b08478e97f80dee54a60144ab43c5f69bef8b8fe6f525cc1",
+    "cong-cu/kiem-ban-git-quan-ly.py": "7186478774b34e0d72b4594fbcc85972d9b4c07ed02160987d46d34f39dcb160",
+    "bot-cua-toi-3/phan-tich/chuong-trinh-chinh/preparation-complete-20261026-r1/native-bindings.json": "e83c417afc6ad5bb268e62f2245dabcc1e30ed1085366bd9165b0ce46b2127cc",
+    "claude-thuc-hien/bot3-preparation-check-20261026-r1/TASK.md": "e44130b1d7c6e305bebdffa47e94335187f3526318aa720b2747a4c5c0b44fdc",
+    "bot-cua-toi-3/phan-tich/chuong-trinh-chinh/preparation-complete-20261026-r1/legacy-cohort.json": "64b83b5519b98008cba42f9619b20c542fe74aceee00e033ee1f8ebfe619caa7",
+    "cong-cu/kiem-gia-vao-bot-1-3.py": "22394e48932feb7242b967aa58e327d2990402f12bfe52621916f64914c9dac2",
+    "cong-cu/kiem-muc-gia-bot-1-3.py": "a6c447ca80029fb63ced0c9d1673bb14222a7736b04df5c410f280f8471d6a35",
+    "cong-cu/kiem-khoi-luong-hop-le-bot-1-3.py": "8251fb4423d6f5f2e1b79a1c53dbb25fb5a6c568bb61cddef23396dc982243f0",
+    "cong-cu/kiem-khoi-luong-bot-1-3.py": "32539c090422ab6bc2ce94a9fdacfd33e53c394aca58bd3827c2232d817d7f77"
+  },
+  "sources_sha256": {
+    "Include/bot-cua-toi-3/Bot3DistanceSettings.mqh": "680240f519115a0ea3ce87f20d428462f581a39773d87e65c769d37c88ff1d30",
+    "Include/bot-cua-toi-3/Bot3EntryProfiles.mqh": "f14b566f8ce4be30adfad19f2269691b069e13eee1d7bcf3ee642866251062a5",
+    "Include/bot-cua-toi-3/Bot3Preparation.mqh": "d1b24d825039ea70ef687f5415fbd328c0d155bbfbaa8de7ed62a149ee189c7b",
+    "Scripts/bot-cua-toi-3/Bot3PreparationCheck.mq5": "d9b33fd6d7a4f23c3e87d9ce5e2c8bbc02cad0364e73a005617ea71647bc3de9"
+  },
+  "cases": 1016,
+  "result_sha256": "465601457c2dab5b3ba994fe8d2408ff71a11739d1c39c6934f54044ae87229d",
+  "build": "b3-preparation-compat-check-20261029-r1",
+  "build_receipt_sha256": "a919ea7fd1537e80dfa7bd1784e835ba8b0ebd68ee059bb2148ddd9ecdb72776",
+  "whole_manager_complete": false,
+  "whole_bot_complete": false,
+  "full_ea": false,
+  "full_preparation_body_executed": true,
+  "child_helpers_intercepted": false,
+  "terminal_replies_supplied": true,
+  "original_ex5_changed": false
+}

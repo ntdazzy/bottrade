@@ -1,3 +1,10 @@
+Đã nối thân chuẩn bị đầu tới trả về: **233/233 ca khớp**, 234 trường,
+2.800 ô và dãy chỉ báo. Ba ca lỗi riêng khớp loại lỗi/lời gọi trước
+khi dừng. Cách gọi chuẩn bị cũ vẫn khớp **1.016/1.016 ca**; 112 tệp
+`.mqh` biên dịch 0 lỗi, 0 cảnh báo. Còn phần đầu khởi động, các thân
+tìm mức/bảng trong phép kiểm nối và toàn EA.
+[Bằng chứng](../danh-gia-doc-lap/startup-preparation-flow-bot3-20261029-r1/README.md).
+
 Đã nối đoạn sau chuẩn bị đầu tới trả về: **569/569 ca khớp**,
 130 trường, 2.800 ô dữ liệu, 21.354 lần gọi. Đoạn giữa so riêng
 **315/315 ca**. 111 tệp `.mqh` biên dịch 0 lỗi, 0 cảnh báo. Hai hàm
