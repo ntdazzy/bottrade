@@ -53,4 +53,24 @@ void Bot1ProjectPreparationToEvaluation(const Bot1PreparationInputs &inputs,
    levels.aux_offset=preparation.aux_offset;
 }
 
+void Bot1SetupAndProjectEvaluation(const uint index,const bool use_hl,
+                                   const Bot1ProfileAdjustments &adjustments,
+                                   Bot1PreparationInputs &inputs,
+                                   const Bot1StrategyContextInputs &context_inputs,
+                                   Bot1ProfileRuntimeState &profile_state,
+                                   Bot1StrategyContextState &context_state,
+                                   Bot1PreparationState &preparation,
+                                   const int magic_base,const ulong deviation,
+                                   Bot1NfpExecution &execution,const double &unit,
+                                   Bot1PendingRestoreSettings &restore,
+                                   Bot1EntryLoopSettings &loop,
+                                   Bot1LevelCacheSettings &levels)
+{
+   Bot1SetupStrategy(index,use_hl,adjustments,inputs,context_inputs,
+                     profile_state,context_state,preparation);
+   Bot1ProjectPreparationToEvaluation(inputs,preparation,context_state,
+                                      magic_base,deviation,execution,unit,
+                                      restore,loop,levels);
+}
+
 #endif
