@@ -1,0 +1,15 @@
+{
+  "cases": 512,
+  "matched": 512,
+  "failed": 0,
+  "first_failures": [],
+  "full_ea": false,
+  "entire_dispatcher_executed": false,
+  "native_hour_gate_executed": true,
+  "time_replies_supplied": true,
+  "service_mutations_supplied": true,
+  "original_ex5_changed": false,
+  "limits": [
+    "Only the hourly decision before strategy processing. Terminal replies and mutations are supplied; no full dispatcher or EA."
+  ]
+}

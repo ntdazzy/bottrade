@@ -1,3 +1,6 @@
+Đã so điều kiện nến H1 trước các chiến lược: **512/512 ca** khớp;
+chưa nối bộ điều phối đầy đủ. [Phạm vi](../danh-gia-doc-lap/strategy-hour-20261028-r1/README.md).
+
 Ngày 28/10, cập nhật mới: đã dựng giới hạn lỗ ngày **330/330 ca**
 và điều kiện chạy theo giờ/nến **640/640 ca**, mỗi phần đều so với mã
 gốc và có hai cách xử lý sai cố ý bị phát hiện. Ghép 97 tệp nguồn

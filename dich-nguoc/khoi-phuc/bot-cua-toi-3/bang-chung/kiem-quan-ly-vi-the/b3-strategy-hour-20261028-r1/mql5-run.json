@@ -1,0 +1,25 @@
+{
+  "original_ex5_sha256": "ee063d3d87490afe24e2f4ce85f6b05659320e297b102efd70207f71ca2feb83",
+  "native_section_sha256": "dd507ef56be70455ee837b6b2b91881095b7fdddbb79b9505a132d69b5d0263a",
+  "sources_sha256": {
+    "Include/bot-cua-toi-3/Bot3StrategyHour.mqh": "4b2fa3fa5c4ad292fff5e162d8afe73640c7758a5a9cbe1f1fb389692c824f96",
+    "Scripts/bot-cua-toi-3/Bot3StrategyHourCheck.mq5": "ce77720c1b10003054f7a9e1602847094074b4f0d727cbeaa46866c6290ac573"
+  },
+  "helpers_sha256": {
+    "cong-cu/kiem-gio-chien-luoc-bot-1-3.py": "983ac0756f0b4cf78a2a211e36d810d829dd6e66abafb9bca190c08724c6f7b9",
+    "cong-cu/kiem-cong-dieu-phoi-bot-1-3.py": "a4edd0e507a18d2dda21a104a7488aada4330d0ba12f2beb42396d9faa80e635",
+    "cong-cu/kiem-nfp-toan-nhanh-bot-1-3.py": "addab3f024ed0c2acb233c548f68dc25fc7914989092afccc7373fb7cf090dda",
+    "cong-cu/kiem-gia-vao-bot-1-3.py": "22394e48932feb7242b967aa58e327d2990402f12bfe52621916f64914c9dac2",
+    "cong-cu/kiem-muc-gia-bot-1-3.py": "a6c447ca80029fb63ced0c9d1673bb14222a7736b04df5c410f280f8471d6a35"
+  },
+  "cases": 512,
+  "result_sha256": "9545a5418e11840f0feb5e47ec7634731ac1c502ae0cc585f59ad9c338cf446d",
+  "build": "b3-strategy-hour-check-20261028-r1",
+  "build_receipt_sha256": "ea98a4e4abd8195663808a1cd0286fde52c98c1bf4534b3bccccbd0844a57c57",
+  "full_ea": false,
+  "entire_dispatcher_executed": false,
+  "native_hour_gate_executed": true,
+  "time_replies_supplied": true,
+  "service_mutations_supplied": true,
+  "original_ex5_changed": false
+}
