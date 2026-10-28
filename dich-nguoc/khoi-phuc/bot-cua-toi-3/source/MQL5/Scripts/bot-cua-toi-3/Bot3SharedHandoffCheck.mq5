@@ -92,6 +92,7 @@ Bot3EntryLevelDecision Bot3ProbeEvaluate(const Bot3NfpFilterSettings &nfp_settin
 
 int OnStart()
 {
+   uchar strategy_enabled=1;
    Bot3NfpFilterSettings nfp_settings;Bot3NfpFilterState nfp;Bot3ReleaseFilterSettings interest_settings,cpi_settings;Bot3ReleaseFilterState interest,cpi;Bot3NewsEvents events;Bot3NewsSelection selection;Bot3NfpExecution execution;MqlDateTime cached;
    Bot3LevelCacheSettings levels;uint current=0;long bars[100];double upper[100],lower[100];Bot3EntryLoopSettings loop;Bot3EntryLoopState loop_state;Bot3VolumeSettings volume;Bot3VolumeState volume_state;
    string peak="",time="",suffix="";long last_check=0,last_deal=0;double volumes[9],denominator=1;uchar enabled[5],show=0,tester=0,day_switch=0;double manual=0,change=0,previous=0,spread=0;
@@ -103,9 +104,9 @@ int OnStart()
 
    if(CheckRun=="")return 1;
    IntegrationInvocation=1;
-   Bot3SetupAndEvaluate(0,adjustments,preparation_inputs,context_inputs,profile_state,context_state,preparation,execution,nfp_settings,nfp,interest_settings,interest,cpi_settings,cpi,events,cached,nfp_history,interest_history,cpi_history,selection,friday,friday_closed,spread_settings,spread,queue,restore,levels,current,bars,upper,lower,loop,loop_state,volume,volume_state,false,peak,time,last_check,last_deal,suffix,denominator,enabled,volumes,show,tester,manual,day_switch,change,previous,prefix,state,display);
+   Bot3SetupAndEvaluate(0,strategy_enabled,adjustments,preparation_inputs,context_inputs,profile_state,context_state,preparation,execution,nfp_settings,nfp,interest_settings,interest,cpi_settings,cpi,events,cached,nfp_history,interest_history,cpi_history,selection,friday,friday_closed,spread_settings,spread,queue,restore,levels,current,bars,upper,lower,loop,loop_state,volume,volume_state,false,peak,time,last_check,last_deal,suffix,denominator,enabled,volumes,show,tester,manual,day_switch,change,previous,prefix,state,display);
    IntegrationInvocation=2;
-   Bot3SetupAndEvaluate(1,adjustments,preparation_inputs,context_inputs,profile_state,context_state,preparation,execution,nfp_settings,nfp,interest_settings,interest,cpi_settings,cpi,events,cached,nfp_history,interest_history,cpi_history,selection,friday,friday_closed,spread_settings,spread,queue,restore,levels,current,bars,upper,lower,loop,loop_state,volume,volume_state,false,peak,time,last_check,last_deal,suffix,denominator,enabled,volumes,show,tester,manual,day_switch,change,previous,prefix,state,display);
+   Bot3SetupAndEvaluate(1,strategy_enabled,adjustments,preparation_inputs,context_inputs,profile_state,context_state,preparation,execution,nfp_settings,nfp,interest_settings,interest,cpi_settings,cpi,events,cached,nfp_history,interest_history,cpi_history,selection,friday,friday_closed,spread_settings,spread,queue,restore,levels,current,bars,upper,lower,loop,loop_state,volume,volume_state,false,peak,time,last_check,last_deal,suffix,denominator,enabled,volumes,show,tester,manual,day_switch,change,previous,prefix,state,display);
    uint failures=0;
    if(ProbeCalls!=2) failures|=1;
    if(SeenUnit[0]!=0.01 || SeenUnit[1]!=0.01) failures|=2;

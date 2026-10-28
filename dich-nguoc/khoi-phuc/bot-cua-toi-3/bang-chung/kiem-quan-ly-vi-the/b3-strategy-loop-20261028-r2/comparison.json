@@ -1,0 +1,19 @@
+{
+  "cases": 5563,
+  "matched": 5563,
+  "failed": 0,
+  "first_failures": [],
+  "full_ea": false,
+  "native_enable_gates_contiguous": true,
+  "native_prepare_and_evaluate_calls_executed": true,
+  "native_profile_context_preparation_replaced": true,
+  "source_profile_context_preparation_executed": true,
+  "native_and_source_presence_scan_executed": true,
+  "evaluator_replaced_by_recorder": true,
+  "shared_state_outside_flags_compared": false,
+  "terminal_replies_and_mutations_supplied": true,
+  "original_ex5_changed": false,
+  "limits": [
+    "Presence scan, nine gates and caller flags. Native profile/context/preparation skipped; source profile/context/preparation run with supplied terminal responses. Evaluator is a recorder; full EA and common-state equivalence are excluded."
+  ]
+}

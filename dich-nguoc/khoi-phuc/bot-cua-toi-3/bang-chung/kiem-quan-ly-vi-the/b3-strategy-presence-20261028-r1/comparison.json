@@ -1,0 +1,14 @@
+{
+  "cases": 543,
+  "matched": 543,
+  "failed": 0,
+  "first_failures": [],
+  "full_ea": false,
+  "native_presence_scan_executed": true,
+  "terminal_replies_supplied": true,
+  "full_call_order_and_flag_states_compared": true,
+  "original_ex5_changed": false,
+  "limits": [
+    "The complete presence scan only. Terminal replies and mutations supplied; counts are bounded fixtures, invalid huge counts and arrays shorter than sixteen are excluded. Full EA and real account are not tested."
+  ]
+}

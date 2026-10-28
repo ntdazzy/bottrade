@@ -1,5 +1,7 @@
 - `kiem-gio-chien-luoc-bot-1-3.py generate BOT | prepare|mql5|original|compare BOT RUN`: so thời điểm nến giờ trước các chiến lược; `mql5` cần `--build BUILD`. Chỉ kiểm đoạn điều kiện giờ, thời gian và thay đổi trong lời gọi được cấp.
 - `kiem-vong-chien-luoc-bot-1.py generate | prepare|mql5|original|compare RUN`: so liên tục tám cổng bật/tắt và thứ tự gọi; mỗi thân chiến lược được thay bằng bộ ghi. `mql5` cần `--build BUILD`.
+- `kiem-vong-chien-luoc-bot-3.py generate | prepare|mql5|original|compare RUN`: quét lệnh → chín cổng → cờ sau chuẩn bị; phía gốc bỏ qua phần nạp/chuẩn bị và thay đánh giá bằng bộ ghi. `mql5` cần `--build BUILD`.
+- `kiem-lenh-con-lai-bot-3.py generate | prepare|mql5|original|compare RUN`: toàn bộ quét đánh dấu chiến lược còn lệnh; so từng dịch vụ và trạng thái, phản hồi dịch vụ được cấp. `mql5` cần `--build BUILD`.
 - `kiem-thong-ke-chien-luoc-bot-1-3.py generate BOT | prepare|mql5|original|compare BOT RUN`: so các đoạn ghi tổng/trung bình sau từng chiến lược. Kết quả và thay đổi số đếm của hàm lịch sử được cấp; `mql5` cần `--build BUILD`.
 - `kiem-noi-thong-ke-chien-luoc-bot-1-3.py generate BOT | run BOT RUN --build BUILD`: kiểm nối chuẩn bị/đánh giá/thống kê qua hai lần gọi; thân đánh giá và lịch sử được thay bằng bộ ghi.
 - `kiem-lo-ngay-bot-1-3.py prepare|mql5|original|compare BOT RUN`: toàn nhánh lỗ ngày, 330ca mỗi bot; `mql5` cần `--build BUILD`. Có nguyên thân đóng/xóa/gửi và số học CPU thật; chưa là toàn điều phối/EA.

@@ -5,7 +5,7 @@
 #include "Bot3StrategyStatistics.mqh"
 
 // The caller obtains hour_changed once before processing any strategy.
-Bot3EntryLevelDecision Bot3SetupEvaluateAndUpdateStatistics(const uint index,
+Bot3EntryLevelDecision Bot3SetupEvaluateAndUpdateStatistics(const uint index,const uchar &strategy_enabled,
                                             const Bot3ProfileAdjustments &adjustments,
                                             Bot3PreparationInputs &inputs,
                                             const Bot3StrategyContextInputs &context_inputs,
@@ -37,7 +37,7 @@ Bot3EntryLevelDecision Bot3SetupEvaluateAndUpdateStatistics(const uint index,
                                             double &strategy_totals[],double &strategy_average[])
 {
    const Bot3EntryLevelDecision result=Bot3SetupAndEvaluate(
-      index, adjustments, inputs, context_inputs, profile_state, context_state, preparation,
+      index, strategy_enabled, adjustments, inputs, context_inputs, profile_state, context_state, preparation,
       execution, nfp_settings, nfp, interest_settings, interest, cpi_settings, cpi,
       events, cached_calendar, nfp_history, interest_history, cpi_history, selection, friday,
       friday_closed, spread_settings, spread, queue, restore, level_settings, current_index,

@@ -117,7 +117,7 @@ void Bot3SetupAndProjectEvaluation(const uint index,
                                       restore,loop,levels);
 }
 
-Bot3EntryLevelDecision Bot3SetupAndEvaluate(const uint index,
+Bot3EntryLevelDecision Bot3SetupAndEvaluate(const uint index,const uchar &strategy_enabled,
                                             const Bot3ProfileAdjustments &adjustments,
                                             Bot3PreparationInputs &inputs,
                                             const Bot3StrategyContextInputs &context_inputs,
@@ -152,6 +152,8 @@ Bot3EntryLevelDecision Bot3SetupAndEvaluate(const uint index,
    cached_calendar=preparation.calendar;
    spread=preparation.spread;
    current_index=preparation.strategy_index;
+   // The native caller reads the live enable byte after preparation returns.
+   prefix.caller_flag=(uchar)(strategy_enabled==0);
    const Bot3EntryLevelDecision result=Bot3EvaluateWithDisplay(nfp_settings,nfp,interest_settings,interest,cpi_settings,cpi,events,
       cached_calendar,nfp_history,interest_history,cpi_history,execution,selection,friday,friday_closed,
       spread_settings,preparation.unit,spread,queue,restore,preparation.native_6d520,preparation.native_6d550,level_settings,index,

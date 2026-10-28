@@ -1,3 +1,9 @@
+Đã nối quét lệnh vào vòng chín chiến lược, đọc lại cờ sau chuẩn bị:
+**5.563/5.563 ca** khớp ở các cổng/thứ tự/cờ, phần đánh giá được thay
+bằng bộ ghi. Quét lệnh được so riêng **543/543 ca**. Toàn bộ 104 tệp
+`.mqh` biên dịch 0 lỗi, 0 cảnh báo. Chưa có EA hoàn chỉnh.
+[Phạm vi](../danh-gia-doc-lap/strategy-loop-bot3-20261028-r1/README.md).
+
 Đã so thống kê sau từng chiến lược **2.160/2.160 ca** và nối với bước
 chuẩn bị/đánh giá trong phép kiểm hai lượt có thay thân bằng bộ ghi.
 [Phạm vi](../danh-gia-doc-lap/strategy-cycle-20261028-r1/README.md).

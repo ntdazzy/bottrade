@@ -57,7 +57,7 @@ void Bot3SelectStrategies(const Bot3StrategySelectionInput &settings,
    }
    else if(mode==6)
    {
-      // Menu order 1..9 maps to internal indices 0,1,2,3,5,4,7,8,6.
+      // These mask bits are native flag slots, not evaluator indices.
       int menu_to_internal[9]={0,1,2,3,5,4,7,8,6};
       state.enabled_mask=0;
       for(int menu=0;menu<9;menu++)
