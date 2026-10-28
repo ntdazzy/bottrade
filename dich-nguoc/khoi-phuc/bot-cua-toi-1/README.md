@@ -6,6 +6,9 @@ biên dịch 0 lỗi, 0 cảnh báo. Còn điều phối đầy đủ, khởi t�
 [Bằng chứng lỗ ngày](../danh-gia-doc-lap/daily-loss-20261028-r1/README.md),
 [bằng chứng giờ/nến](../danh-gia-doc-lap/dispatch-gate-20261028-r1/README.md).
 
+Đã thêm nối chuẩn bị/ngữ cảnh → đánh giá: **432/432 ca** khớp; tệp nối
+và API biên dịch 0 lỗi, 0 cảnh báo. [Bằng chứng](../danh-gia-doc-lap/evaluation-bridge-20261028-r1.md).
+
 Ngày 28/10, cập nhật mới: đã dựng toàn bộ hàm lịch sử theo chiến lược
 `Bot1StrategyHistory.mqh`, giữ chung bộ lưu qua nhiều lần gọi: **270/270 ca**
 và **4/4 nhánh lỗi dãy** khớp. Ghép 88 tệp biên dịch 0 lỗi/0 cảnh báo.

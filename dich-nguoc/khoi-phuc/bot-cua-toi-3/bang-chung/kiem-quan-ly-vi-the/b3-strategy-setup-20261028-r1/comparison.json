@@ -1,0 +1,21 @@
+{
+  "cases": 2106,
+  "matched": 2106,
+  "failed": 0,
+  "first_failures": [],
+  "values_per_case": 132,
+  "whole_bot_complete": false,
+  "whole_manager_complete": false,
+  "full_ea": false,
+  "original_three_bodies_contiguous": true,
+  "native_preparation_call_and_return_checked": true,
+  "caller_constant_preloads_and_stack_supplied": true,
+  "terminal_replies_supplied": true,
+  "original_ex5_changed": false,
+  "limits": [
+    "Valid strategy indices; native scalar prefix, context and actual preparation call/return run continuously without a middle register reset.",
+    "Caller constant preloads, stack, successful string allocation and common inputs/SDK replies are supplied. Not every path from dispatcher entry.",
+    "The evaluator, startup/symbol selection, allocation failures, combined error cases, full EA/UI/restart and real broker behavior remain unverified.",
+    "Bot3 retains the separately measured CPU fixture for both-NaN arithmetic; no claim that the whole original ran on the CPU."
+  ]
+}

@@ -96,4 +96,5 @@
 #include "../../Include/bot-cua-toi-3/Bot3Withdrawal.mqh"
 #include "../../Include/bot-cua-toi-3/Bot3DailyLossGuard.mqh"
 #include "../../Include/bot-cua-toi-3/Bot3DispatchGate.mqh"
+#include "../../Include/bot-cua-toi-3/Bot3EvaluationBridge.mqh"
 void OnStart() { Print("Bot3AllHeadersAPICompile"); }
