@@ -1,0 +1,30 @@
+{
+  "run": "b1-startup-real-entry-20261028-r1",
+  "cases": 85,
+  "matched": 85,
+  "fields": 248,
+  "table_cells": 1800,
+  "calendar_cells": 900,
+  "sdk_calls": 11127,
+  "cpu_arithmetic_calls": 6786,
+  "both_price_direction_cases": 85,
+  "nearby_guard_cases": 80,
+  "high_reads": 1873,
+  "low_reads": 1607,
+  "order_total_reads": 150,
+  "order_ticket_reads": 212,
+  "entry_result_stub_events": 0,
+  "entry_native_hashes": {
+    "0x265a0": "3d99326ebfc4727efc09b48bd117eed91f5ebef151ac78cd0fbfeb4da6160d56",
+    "0x26960": "ace139c37d17100f00b98c1f70297aa3db89dcc49c49aeaadbb4a0b6d364dc9e",
+    "0x3c670": "7ce529a701fa56724bccac11e544dd6c53a87597a50c1cb4a556b74d74988ff5",
+    "0x3c8d0": "31a314c0518f81b653823d62aef15a3bd535c3c95e49e6aeb00be9495c042fd1"
+  },
+  "build": "b1-startup-real-entry-check-20261028-r1",
+  "entry_level_children_supplied": false,
+  "calendar_bodies_replaced": false,
+  "panel_children_recorded": true,
+  "authorization_executed": false,
+  "whole_bot_complete": false,
+  "full_ea": false
+}

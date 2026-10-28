@@ -14,6 +14,7 @@
 | Chọn mốc tin dùng chung | `0x7310` | `0x7c30` |
 | Nối phần tin tới trả về | `0xd60..0x5658`, 239/239 ca, ba hàm lấy lịch được cấp kết quả | chưa dựng đoạn nối tương ứng |
 | Nối cả thân lấy lịch tới trả về | `0xd60..0x5658`, 158/158 ca; nguyên ba thân lịch, dịch vụ cấp mảng dữ liệu | chưa dựng đoạn nối tương ứng |
+| Thêm thân tìm mức và kiểm lệnh gần | `0xd60..0x5658`, 85/85 ca; nguyên các thân lịch/tìm mức/kiểm lệnh gần | chưa dựng đoạn nối tương ứng |
 | Đoạn vốn/tài khoản trong OnInit | `0x126c..0x1941` | `0x1279..0x193f` |
 | Nối vốn, lịch dự phòng tới trả về | `0x126c..0x5658`, 93/93 ca, cùng trạng thái và 900 ô lịch | chưa dựng đoạn nối tương ứng |
 | Nạp dữ liệu lịch dự phòng và hai cờ | `0x1941..0x3827` | `0x193f..0x3840` |

@@ -1,3 +1,9 @@
+Đã chạy hai hàm tìm mức giá và kiểm lệnh gần bằng thân mã thật,
+cùng ba hàm lịch trong luồng khởi động: **85/85 ca khớp**, 248 giá trị,
+2.700 ô bảng/lịch và 11.127 lời gọi. Biên dịch 0 lỗi/cảnh báo.
+Còn ba hàm bảng trong phép kiểm nối, cổng quyền dùng và toàn EA.
+[Phạm vi hiện hành](../danh-gia-doc-lap/startup-real-entry-20261028-r1/README.md).
+
 Đã chạy ba thân hàm lịch thật trong luồng khởi động sau cổng quyền
 dùng: **158/158 ca khớp**, 248 giá trị, 2.700 ô bảng/lịch và 12.853
 lời gọi. Đã kiểm lỗi truyền từ lịch này sang lịch khác; biên dịch

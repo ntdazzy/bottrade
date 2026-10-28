@@ -119,6 +119,10 @@ Phản hồi dịch vụ lịch được cấp; thuật toán tìm/chọn lịch
 thật. Đã sửa bộ ghi để lỗi mới không bị lỗi cũ che mất. Còn cổng
 quyền dùng và các thân con còn lại/toàn EA.
 [Bằng chứng lịch thật](danh-gia-doc-lap/startup-real-calendars-20261028-r1/README.md).
+Đã chạy tiếp nguyên hai thân tìm mức và hai thân kiểm lệnh gần:
+**85/85 ca**, 248 giá trị và 2.700 ô bảng/lịch; không còn cấp sẵn
+kết quả mức giá trong phép nối. Còn ba hàm bảng, cổng quyền dùng
+và toàn EA. [Bằng chứng](danh-gia-doc-lap/startup-real-entry-20261028-r1/README.md).
 
 Vị trí trong bảng là số tính từ đầu vùng mã của mỗi bot. Chi tiết dòng
 và lời gọi tra ở hai danh sách trên. “Đã so phần” có nghĩa đã có một
