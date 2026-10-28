@@ -1,0 +1,39 @@
+{
+  "original_ex5_sha256": "a3b0de423a06e10ebedc279307b93d7cb9188ba2bb5de77131a913c865b0e922",
+  "native_init_sha256": "83265d19458eeaa76d297459c6e7929f98c8f74227a4c864967a519dd046c18d",
+  "sources_sha256": {
+    "Scripts/bot-cua-toi-1/Bot1StartupTailCheck.mq5": "cb58c448795019051b9831855b3718a03a028e9aa423a72ff839c92c551c4e7c",
+    "Include/bot-cua-toi-1/Bot1PanelCreation.mqh": "3df2b68f0d9b59a6d0d568dc36c30fec75056a3a717f60a55eaf64afdb70a058",
+    "Include/bot-cua-toi-1/Bot1StartupTail.mqh": "a8ad83b12b29e7d218e619d2c954a0f877860087a7e6c8aa51016b1c398516ed",
+    "Include/bot-cua-toi-1/Bot1PanelCell.mqh": "419efdc3eefb3e23e69f190257752405c1185d8f14c9fc947fae50c9f99e4690",
+    "Include/bot-cua-toi-1/Bot1NewsSelector.mqh": "84e6c99d0e7b87a32933496a85b84ef0dd035fbf4aa40ce08b8a9b37658cf679",
+    "Include/bot-cua-toi-1/Bot1PriceLevels.mqh": "827d537baa2798c0cb6dc317bf500011e20af788529a9ebc095f9a4492e45d22",
+    "Include/bot-cua-toi-1/Bot1ClosedStatusPanel.mqh": "de08765bebd00455a5825adc175bff6b847ff3be2befab5315749a3318528141",
+    "Include/bot-cua-toi-1/Bot1OpenStatusPanel.mqh": "79de39d12962e1735191205ed4e9d90046ae827c9f4a2a7f672fbba582c82df5",
+    "Include/bot-cua-toi-1/Bot1NewsBlock.mqh": "776c5957d4ea88a9f18ee2c59ad29cc8a6563f0f4f59877d6791ddec6d1bef1f"
+  },
+  "helpers_sha256": {
+    "cong-cu/kiem-duoi-khoi-dong-bot-1.py": "839ec028609266d9592373e646482515e5113aaabaa583435bfc6031a81c7e9c",
+    "cong-cu/kiem-ngu-canh-khoi-dong-bot-1.py": "9a9156da519075e42c72caa4652c68f72330a644c3b6c458f1919c054b74c8ea",
+    "cong-cu/kiem-tao-bang-bot-1-3.py": "2e7c84685ab4ab165b0f3df23af1da10ede16e91e37ef418d7050af72664de07",
+    "cong-cu/kiem-cong-dieu-phoi-bot-1-3.py": "a4edd0e507a18d2dda21a104a7488aada4330d0ba12f2beb42396d9faa80e635",
+    "cong-cu/kiem-lich-su-chien-luoc-bot-1-3.py": "64970d4a1ef42180fb44b3da19d6b51aa60147fce70ac480cd78d5769e91c45a",
+    "cong-cu/kiem-gia-vao-bot-1-3.py": "22394e48932feb7242b967aa58e327d2990402f12bfe52621916f64914c9dac2",
+    "cong-cu/kiem-muc-gia-bot-1-3.py": "a6c447ca80029fb63ced0c9d1673bb14222a7736b04df5c410f280f8471d6a35"
+  },
+  "cases": 309,
+  "result_sha256": "b240950eb473aa2abf3bd4133140c80dda7c4ea03ce710cd066daee8aaba2389",
+  "sdk_tape_sha256": "ad41f782844d42af9f92a47b25474197776f5a1dbb60abe366e7046205827519",
+  "build": "b1-startup-tail-check-20261028-r4",
+  "build_receipt_sha256": "7982cd032e3d708321e9dc02cf9357aeda8934e94cffbfcd170bbae650a28083",
+  "whole_bot_complete": false,
+  "whole_manager_complete": false,
+  "full_ea": false,
+  "native_startup_tail_executed": true,
+  "native_string_helpers_executed": true,
+  "native_history_scan_executed": true,
+  "panel_children_recorded": true,
+  "terminal_replies_supplied": true,
+  "allocation_success_supplied": true,
+  "original_ex5_changed": false
+}

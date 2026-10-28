@@ -1,3 +1,14 @@
+Đã nối phần chuẩn bị trạng thái giao dịch với cuối khởi động, dùng
+chung mảng khối lượng, chỉ số, giờ và vé lệnh: **639/639 ca khớp**,
+124 giá trị, 1.800 ô bảng và 23.747 lời gọi. Bản gốc chạy liên tục
+qua điểm nối; hai hàm tìm mức và ba hàm bảng được cấp kết quả.
+Đã phát hiện đủ bốn lỗi nối cố ý; 103 tệp nguồn biên dịch 0 lỗi/cảnh báo.
+Chưa là toàn OnInit/EA. [Phạm vi](../danh-gia-doc-lap/startup-joined-20261028-r1/README.md).
+
+Phần cuối khởi động đã so riêng **309/309 ca**, 74 trường và 1.968
+lời gọi; đoạn `0x4e77..0x5658`. Chưa kiểm nhánh lỗi sau `0x5658`.
+[Phạm vi phần cuối](../danh-gia-doc-lap/startup-tail-20261028-r1/README.md).
+
 Đã dựng phần trạng thái giao dịch sau chuẩn bị đầu: **315/315 ca**,
 54 trường và 1.800 ô bảng khớp mã gốc; đúng mốc nến tuần, đọc số dư
 và xóa từng cột theo cờ. Hai hàm tìm mức/dữ liệu MT5 được cấp.

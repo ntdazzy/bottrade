@@ -1,0 +1,640 @@
+{
+  "native_range": "0x3cab..0x5658",
+  "join": "0x4e77",
+  "fields": [
+    {
+      "source": "P.native_62414",
+      "format": "i",
+      "rva": "0x62414"
+    },
+    {
+      "source": "State.native_62555",
+      "format": "B",
+      "rva": "0x62555"
+    },
+    {
+      "source": "P.strategy_index",
+      "format": "I",
+      "rva": "0x678f4"
+    },
+    {
+      "source": "P.entry_frame",
+      "format": "i",
+      "rva": "0x6242c"
+    },
+    {
+      "source": "P.native_6248c",
+      "format": "i",
+      "rva": "0x6248c"
+    },
+    {
+      "source": "P.tick.ask",
+      "format": "d",
+      "rva": "0x67760"
+    },
+    {
+      "source": "P.tick.bid",
+      "format": "d",
+      "rva": "0x67758"
+    },
+    {
+      "source": "P.spread",
+      "format": "d",
+      "rva": "0x62560"
+    },
+    {
+      "source": "P.native_62530",
+      "format": "d",
+      "rva": "0x62530"
+    },
+    {
+      "source": "P.unit",
+      "format": "d",
+      "rva": "0x66d98"
+    },
+    {
+      "source": "P.min_change",
+      "format": "d",
+      "rva": "0x62520"
+    },
+    {
+      "source": "P.stop_min_price",
+      "format": "d",
+      "rva": "0x66a70"
+    },
+    {
+      "source": "P.freeze_min_price",
+      "format": "d",
+      "rva": "0x67468"
+    },
+    {
+      "source": "P.stop_distance",
+      "format": "d",
+      "rva": "0x62498"
+    },
+    {
+      "source": "P.target_distance",
+      "format": "d",
+      "rva": "0x624a0"
+    },
+    {
+      "source": "P.trigger_distance",
+      "format": "d",
+      "rva": "0x624c8"
+    },
+    {
+      "source": "P.locked_distance",
+      "format": "d",
+      "rva": "0x624d0"
+    },
+    {
+      "source": "P.freeze_buffer",
+      "format": "i",
+      "rva": "0x623e0"
+    },
+    {
+      "source": "P.trail_distance",
+      "format": "d",
+      "rva": "0x624a8"
+    },
+    {
+      "source": "P.native_624f8",
+      "format": "d",
+      "rva": "0x624f8"
+    },
+    {
+      "source": "P.native_62500",
+      "format": "d",
+      "rva": "0x62500"
+    },
+    {
+      "source": "P.gap_points",
+      "format": "d",
+      "rva": "0x62440"
+    },
+    {
+      "source": "P.older_width",
+      "format": "i",
+      "rva": "0x62430"
+    },
+    {
+      "source": "P.recent_width",
+      "format": "i",
+      "rva": "0x62434"
+    },
+    {
+      "source": "P.expiration_hours",
+      "format": "i",
+      "rva": "0x62468"
+    },
+    {
+      "source": "P.virtual_expiration",
+      "format": "B",
+      "rva": "0x62419"
+    },
+    {
+      "source": "P.expiration_seconds",
+      "format": "I",
+      "rva": "0x66da0"
+    },
+    {
+      "source": "P.expiration",
+      "format": "q",
+      "rva": "0x67450"
+    },
+    {
+      "source": "Nfp.notice",
+      "format": "B",
+      "rva": "0x67434"
+    },
+    {
+      "source": "Nfp.blocked",
+      "format": "B",
+      "rva": "0x67488"
+    },
+    {
+      "source": "Interest.blocked",
+      "format": "B",
+      "rva": "0x67489"
+    },
+    {
+      "source": "Cpi.blocked",
+      "format": "B",
+      "rva": "0x6748a"
+    },
+    {
+      "source": "State.week_bar",
+      "format": "q",
+      "rva": "0x67478"
+    },
+    {
+      "source": "P.max_spread",
+      "format": "d",
+      "rva": "0x623d8"
+    },
+    {
+      "source": "MinimumSpread",
+      "format": "d",
+      "rva": "0x62558"
+    },
+    {
+      "source": "Inputs.entry.confirmation_frame",
+      "format": "i",
+      "rva": "0x6227c"
+    },
+    {
+      "source": "Magic",
+      "format": "i",
+      "rva": "0x6246c"
+    },
+    {
+      "source": "P.last_shift",
+      "format": "i",
+      "rva": "0x62438"
+    },
+    {
+      "source": "P.buy_offset",
+      "format": "d",
+      "rva": "0x62448"
+    },
+    {
+      "source": "P.sell_offset",
+      "format": "d",
+      "rva": "0x62450"
+    },
+    {
+      "source": "P.nearby_radius",
+      "format": "d",
+      "rva": "0x62460"
+    },
+    {
+      "source": "LastTicket",
+      "format": "Q",
+      "rva": "0x677f8"
+    },
+    {
+      "source": "Entry.candidate_buy",
+      "format": "d",
+      "rva": "0x67440"
+    },
+    {
+      "source": "Entry.candidate_sell",
+      "format": "d",
+      "rva": "0x67438"
+    },
+    {
+      "source": "Entry.rounded_buy",
+      "format": "d",
+      "rva": "0x62570"
+    },
+    {
+      "source": "Entry.rounded_sell",
+      "format": "d",
+      "rva": "0x62578"
+    },
+    {
+      "source": "Levels.blocked",
+      "format": "B",
+      "rva": "0x67458"
+    },
+    {
+      "source": "Manager.counter",
+      "format": "i",
+      "rva": "0x673f0"
+    },
+    {
+      "source": "State.timed_delay_seconds",
+      "format": "i",
+      "rva": "0x6745c"
+    },
+    {
+      "source": "Manager.current_stop",
+      "format": "d",
+      "rva": "0x62580"
+    },
+    {
+      "source": "P.native_62538",
+      "format": "d",
+      "rva": "0x62538"
+    },
+    {
+      "source": "Manager.table.guard",
+      "format": "B",
+      "rva": "0x66410"
+    },
+    {
+      "source": "Queue.enabled",
+      "format": "B",
+      "rva": "0x66420"
+    },
+    {
+      "source": "FridayClosed",
+      "format": "B",
+      "rva": "0x67460"
+    },
+    {
+      "source": "Panel.font",
+      "format": "i",
+      "rva": "0x6a540"
+    },
+    {
+      "source": "Panel.scale",
+      "format": "d",
+      "rva": "0x6a538"
+    },
+    {
+      "source": "Panel.color_flag",
+      "format": "B",
+      "rva": "0x678f8"
+    },
+    {
+      "source": "Panel.mode",
+      "format": "i",
+      "rva": "0x6a748"
+    },
+    {
+      "source": "Panel.strategy_risk",
+      "format": "d",
+      "rva": "0x6a758"
+    },
+    {
+      "source": "Panel.trade_risk",
+      "format": "d",
+      "rva": "0x6a750"
+    },
+    {
+      "source": "Panel.balance_step",
+      "format": "i",
+      "rva": "0x6a768"
+    },
+    {
+      "source": "Panel.cell_x",
+      "format": "d",
+      "rva": "0x68298"
+    },
+    {
+      "source": "Panel.cell_y",
+      "format": "d",
+      "rva": "0x682a0"
+    },
+    {
+      "source": "Panel.cell_font_flag",
+      "format": "B",
+      "rva": "0x682a8"
+    },
+    {
+      "source": "Panel.closed_star",
+      "format": "B",
+      "rva": "0x623c4"
+    },
+    {
+      "source": "Panel.rows_ready",
+      "format": "B",
+      "rva": "0x67930"
+    },
+    {
+      "source": "Panel.closed[0]",
+      "format": "d",
+      "rva": "0x69f80"
+    },
+    {
+      "source": "Panel.closed[1]",
+      "format": "d",
+      "rva": "0x69f88"
+    },
+    {
+      "source": "Panel.closed[2]",
+      "format": "d",
+      "rva": "0x69f90"
+    },
+    {
+      "source": "Panel.closed[3]",
+      "format": "d",
+      "rva": "0x69f98"
+    },
+    {
+      "source": "Panel.closed[4]",
+      "format": "d",
+      "rva": "0x69fa0"
+    },
+    {
+      "source": "Panel.closed[5]",
+      "format": "d",
+      "rva": "0x69fa8"
+    },
+    {
+      "source": "Panel.closed[6]",
+      "format": "d",
+      "rva": "0x69fb0"
+    },
+    {
+      "source": "Panel.closed[7]",
+      "format": "d",
+      "rva": "0x69fb8"
+    },
+    {
+      "source": "Panel.per_trade[0]",
+      "format": "d",
+      "rva": "0x67ad0"
+    },
+    {
+      "source": "Panel.per_trade[1]",
+      "format": "d",
+      "rva": "0x67ad8"
+    },
+    {
+      "source": "Panel.per_trade[2]",
+      "format": "d",
+      "rva": "0x67ae0"
+    },
+    {
+      "source": "Panel.per_trade[3]",
+      "format": "d",
+      "rva": "0x67ae8"
+    },
+    {
+      "source": "Panel.per_trade[4]",
+      "format": "d",
+      "rva": "0x67af0"
+    },
+    {
+      "source": "Panel.per_trade[5]",
+      "format": "d",
+      "rva": "0x67af8"
+    },
+    {
+      "source": "Panel.per_trade[6]",
+      "format": "d",
+      "rva": "0x67b00"
+    },
+    {
+      "source": "Panel.per_trade[7]",
+      "format": "d",
+      "rva": "0x67b08"
+    },
+    {
+      "source": "Panel.lots[0]",
+      "format": "d",
+      "rva": "0x66a80"
+    },
+    {
+      "source": "Panel.lots[1]",
+      "format": "d",
+      "rva": "0x66a88"
+    },
+    {
+      "source": "Panel.lots[2]",
+      "format": "d",
+      "rva": "0x66a90"
+    },
+    {
+      "source": "Panel.lots[3]",
+      "format": "d",
+      "rva": "0x66a98"
+    },
+    {
+      "source": "Panel.lots[4]",
+      "format": "d",
+      "rva": "0x66aa0"
+    },
+    {
+      "source": "Panel.lots[5]",
+      "format": "d",
+      "rva": "0x66aa8"
+    },
+    {
+      "source": "Panel.lots[6]",
+      "format": "d",
+      "rva": "0x66ab0"
+    },
+    {
+      "source": "Panel.lots[7]",
+      "format": "d",
+      "rva": "0x66ab8"
+    },
+    {
+      "source": "Events.nfp",
+      "format": "q",
+      "rva": "0x6a360"
+    },
+    {
+      "source": "Events.interest",
+      "format": "q",
+      "rva": "0x6a368"
+    },
+    {
+      "source": "Events.cpi",
+      "format": "q",
+      "rva": "0x6a370"
+    },
+    {
+      "source": "Windows.nfp_enabled",
+      "format": "B",
+      "rva": "0x6a640"
+    },
+    {
+      "source": "Windows.interest_enabled",
+      "format": "B",
+      "rva": "0x6a698"
+    },
+    {
+      "source": "Windows.cpi_enabled",
+      "format": "B",
+      "rva": "0x6a6d0"
+    },
+    {
+      "source": "Windows.nfp_after",
+      "format": "i",
+      "rva": "0x6a680"
+    },
+    {
+      "source": "Windows.interest_after",
+      "format": "i",
+      "rva": "0x6a6b8"
+    },
+    {
+      "source": "Windows.cpi_after",
+      "format": "i",
+      "rva": "0x6a6f0"
+    },
+    {
+      "source": "Selection.block_time",
+      "format": "q",
+      "rva": "0x6a390"
+    },
+    {
+      "source": "Selection.label",
+      "format": "s",
+      "rva": "0x6a398"
+    },
+    {
+      "source": "P.calendar.hour",
+      "format": "i",
+      "rva": "0x6779c"
+    },
+    {
+      "source": "LastHour",
+      "format": "i",
+      "rva": "0x67448"
+    },
+    {
+      "source": "Show",
+      "format": "B",
+      "rva": "0x6a528"
+    },
+    {
+      "source": "Tester",
+      "format": "B",
+      "rva": "0x6a530"
+    },
+    {
+      "source": "HistoryWindow",
+      "format": "B",
+      "rva": "0x623c5"
+    },
+    {
+      "source": "Seed",
+      "format": "i",
+      "rva": "0x6a610"
+    },
+    {
+      "source": "Balance",
+      "format": "d",
+      "rva": "0x6a320"
+    },
+    {
+      "source": "Wins",
+      "format": "d",
+      "rva": "0x67900"
+    },
+    {
+      "source": "Losses",
+      "format": "d",
+      "rva": "0x67908"
+    },
+    {
+      "source": "P.comment",
+      "format": "s",
+      "rva": "0x62470"
+    },
+    {
+      "source": "Inputs.symbol",
+      "format": "s",
+      "rva": "0x67918"
+    },
+    {
+      "source": "TailState.buy_first",
+      "format": "s",
+      "rva": "0x673f8"
+    },
+    {
+      "source": "TailState.buy_second",
+      "format": "s",
+      "rva": "0x67408"
+    },
+    {
+      "source": "TailState.sell_first",
+      "format": "s",
+      "rva": "0x67418"
+    },
+    {
+      "source": "TailState.sell_second",
+      "format": "s",
+      "rva": "0x67428"
+    },
+    {
+      "source": "TailBars[0]",
+      "format": "q",
+      "rva": "0x66430"
+    },
+    {
+      "source": "TailBars[1]",
+      "format": "q",
+      "rva": "0x66438"
+    },
+    {
+      "source": "TailBars[2]",
+      "format": "q",
+      "rva": "0x66440"
+    },
+    {
+      "source": "TailBars[3]",
+      "format": "q",
+      "rva": "0x66448"
+    },
+    {
+      "source": "TailBars[4]",
+      "format": "q",
+      "rva": "0x66450"
+    },
+    {
+      "source": "TailBars[5]",
+      "format": "q",
+      "rva": "0x66458"
+    },
+    {
+      "source": "TailBars[6]",
+      "format": "q",
+      "rva": "0x66460"
+    },
+    {
+      "source": "TailBars[7]",
+      "format": "q",
+      "rva": "0x66468"
+    }
+  ],
+  "table_ranges": [
+    {
+      "rva": "0x62590",
+      "rows": 500,
+      "columns": 3
+    },
+    {
+      "rva": "0x65470",
+      "rows": 100,
+      "columns": 3
+    }
+  ],
+  "source": "cong-cu/kiem-noi-khoi-dong-bot-1.py",
+  "original_ex5_sha256": "a3b0de423a06e10ebedc279307b93d7cb9188ba2bb5de77131a913c865b0e922"
+}

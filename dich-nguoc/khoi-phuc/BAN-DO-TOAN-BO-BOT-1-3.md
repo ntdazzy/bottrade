@@ -82,6 +82,15 @@ xóa cả bảng tắt. Hai bản sai cũ bị từ chối. Còn tên đối tư
 hiển thị cuối khởi tạo và các lỗi; chưa là toàn OnInit hoặc EA.
 [Phạm vi](danh-gia-doc-lap/startup-trading-state-20261028-r1/README.md).
 
+Bot 1 đã dựng phần cuối `0x4e77..0x5658`: **309/309 ca**, tạo bốn
+chuỗi lệnh, lưu giờ, quét lịch sử và gọi ba bước hiển thị đúng thứ tự.
+[Phạm vi phần cuối](danh-gia-doc-lap/startup-tail-20261028-r1/README.md).
+Đã nối liên tục từ `0x3cab` tới trả về: **639/639 ca**, 124 giá trị,
+1.800 ô bảng, 23.747 lời gọi; giữ chung khối lượng/chỉ số/giờ/vé lệnh.
+Hai hàm tìm mức và ba hàm bảng được cấp kết quả trong phép kiểm nối.
+Còn phần trước khởi tạo, lỗi, các sự kiện và EA hoàn chỉnh.
+[Phạm vi đoạn nối](danh-gia-doc-lap/startup-joined-20261028-r1/README.md).
+
 Vị trí trong bảng là số tính từ đầu vùng mã của mỗi bot. Chi tiết dòng
 và lời gọi tra ở hai danh sách trên. “Đã so phần” có nghĩa đã có một
 phép đối chiếu trong phạm vi cụ thể; không đánh dấu hoàn tất cả hàng.

@@ -15,6 +15,7 @@
 - `doc-dau-vao-khoi-dong-bot-1.py CAPTURE_RUN`: đọc 54 trường chuẩn bị từ bản chụp thật, kiểm mã băm/vị trí/cờ tắt; giữ rõ chuỗi chưa có trong bản chụp.
 - `kiem-mac-dinh-dau-vao-bot-1.py generate CAPTURE_RUN | run TEST_RUN --capture CAPTURE_RUN --build BUILD`: tạo/kiểm 41 giá trị nội bộ từ quan sát gốc, giữ 13 trường người dùng và mã giá.
 - `kiem-trang-thai-giao-dich-khoi-dong-bot-1.py generate | prepare|mql5|original|compare RUN`: phần sau chuẩn bị đầu, 54 trường và 1.800 ô bảng; `mql5` cần `--build BUILD`. Hai hàm tìm mức/dữ liệu dịch vụ được cấp; chưa là toàn OnInit/EA.
+- `kiem-duoi-khoi-dong-bot-1.py generate | prepare|mql5|original|compare RUN`: đuôi `0x4e77..0x5658`, 309 ca/74 trường, gồm chuỗi lệnh, lịch sử và thứ tự ba hàm bảng; `mql5` cần `--build BUILD`. Thân ba hàm bảng, dữ liệu dịch vụ và cấp phát thành công được cấp riêng; chưa là nhánh lỗi sau `0x5658`, toàn OnInit hoặc EA.
 - `kiem-noi-chuan-bi-danh-gia-bot-1-3.py generate BOT | prepare|mql5|original|compare BOT RUN`: so các giá trị nối với vùng gốc sau chuẩn bị; `mql5` cần `--build BUILD`, bản dựng bật kiểm chia 0.
 - `kiem-giu-trang-thai-danh-gia-bot-1-3.py generate BOT | run BOT RUN --build BUILD`: kiểm giữ trạng thái sau hai lần gọi, lần sau trả sớm; thân đánh giá được thay bằng bộ ghi.
 - `kiem-phu-dinh-noi-trang-thai-bot-1-3.py generate BOT | run BOT RUN --build BUILD`: chạy lại phép kiểm trên bản nối cũ; phải phát hiện sai.
@@ -353,3 +354,5 @@ Phép kiểm ghép mới:
 - `BotNAllHeadersAPICompile.mq5`: biên dịch toàn bộ tệp tiêu đề của bot N
   trong một đơn vị dịch; bot1 84 tệp và bot3 91 tệp đều 0 lỗi/0 cảnh báo.
   Đây là kiểm ghép mã, chưa phải kiểm chạy EA.
+- `kiem-noi-khoi-dong-bot-1.py generate | prepare|mql5|original|compare RUN`: so liên tục `0x3cab..0x5658`, giữ chung mảng khối lượng/chỉ số/giờ/vé lệnh; `mql5` cần `--build BUILD`. Hai hàm tìm mức và ba hàm bảng được ghi nhận đối số, dữ liệu MT5 được cấp; chưa là toàn OnInit/EA.
+- `kiem-phu-dinh-noi-khoi-dong-bot-1.py generate | run RUN --build BUILD --source-run SOURCE_RUN --fault control|reset-lots|reset-index|old-start-lots|reset-ticket`: kiểm bản MQL5 cố ý nối sai. `control` phải khớp toàn bộ; bốn lỗi còn lại phải bị phát hiện. Không ghi đè lượt cũ, không sửa nguồn phục hồi.

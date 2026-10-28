@@ -1,0 +1,145 @@
+{
+  "case_runs": [
+    {
+      "run": "b1-startup-tail-20261028-r1",
+      "cases": 309,
+      "matched": 309,
+      "comparison_sha256": "eae0ab375dcdc524d76be291e782d0ac07d181c57768438324dae5218e00dc7c",
+      "result_sha256": "b240950eb473aa2abf3bd4133140c80dda7c4ea03ce710cd066daee8aaba2389"
+    },
+    {
+      "run": "b1-startup-joined-20261028-r1",
+      "cases": 639,
+      "matched": 639,
+      "comparison_sha256": "a06b01166251552b33b26fe2fd9994967e3bd56d81ffb964a1d973b1fe77565f",
+      "result_sha256": "65f5f29acc844840b0f31a86ee8e262a690be1fac2069bc82dd959b4840d8ef0"
+    }
+  ],
+  "negative_controls": [
+    {
+      "run": "b1-startup-joined-control-20261028-r1",
+      "fault": "control",
+      "cases": 639,
+      "detected": 0,
+      "result_records_different": 0,
+      "tape_records_different": 0,
+      "receipt_sha256": "2b459f5acb414b52d779cb2ed557420a79d560b7895f6cd1a4d54d49e19cce6a"
+    },
+    {
+      "run": "b1-startup-joined-negative-lots-r1",
+      "fault": "reset-lots",
+      "cases": 639,
+      "detected": 639,
+      "result_records_different": 356,
+      "tape_records_different": 639,
+      "receipt_sha256": "7910d2608c8a48dbe750a14b1f20426314b7f4a42dfbb64d0fbdaa4c3992fb22"
+    },
+    {
+      "run": "b1-startup-joined-negative-index-r1",
+      "fault": "reset-index",
+      "cases": 639,
+      "detected": 369,
+      "result_records_different": 369,
+      "tape_records_different": 369,
+      "receipt_sha256": "ffa4b81b7547000ea1903786c85da2bbed61458d4c5a5f29d4841739fde465f2"
+    },
+    {
+      "run": "b1-startup-joined-negative-start-r1",
+      "fault": "old-start-lots",
+      "cases": 639,
+      "detected": 3,
+      "result_records_different": 3,
+      "tape_records_different": 3,
+      "receipt_sha256": "fa40069f297da7b9969e760bf62f7ad4b2cc6afc42c39b618041f234dd4137bb"
+    },
+    {
+      "run": "b1-startup-joined-negative-ticket-r1",
+      "fault": "reset-ticket",
+      "cases": 639,
+      "detected": 2,
+      "result_records_different": 2,
+      "tape_records_different": 2,
+      "receipt_sha256": "66611a83def9435bbec1d84e77b16644d4e0bb42bbfad1c3caeab97a8fb41cee"
+    }
+  ],
+  "builds": [
+    {
+      "build": "b1-startup-tail-check-20261028-r4",
+      "errors": 0,
+      "warnings": 0,
+      "receipt_sha256": "7982cd032e3d708321e9dc02cf9357aeda8934e94cffbfcd170bbae650a28083"
+    },
+    {
+      "build": "b1-startup-joined-check-20261028-r1",
+      "errors": 0,
+      "warnings": 0,
+      "receipt_sha256": "ec716d31e932f69eb5a782776b1c0e2db439ab1e0a425f8bf39c476971ba87bd"
+    },
+    {
+      "build": "b1-startup-joined-negative-check-20261028-r1",
+      "errors": 0,
+      "warnings": 0,
+      "receipt_sha256": "0e4f447bd0747b45dd02e81ee1513f5afd0fad9e17a1eeb8ec08249b25a505dc"
+    },
+    {
+      "build": "b1-all-headers-api-20261028-r25",
+      "errors": 0,
+      "warnings": 0,
+      "receipt_sha256": "dba32368a018ca30a968f7f6945180bcbd1af8a87f639ccc52a11dcd2583b1b1"
+    }
+  ],
+  "all_headers": 103,
+  "independent_codex_review": "No remaining findings after adding four deliberate join faults and zero-fault control.",
+  "whole_bot_complete": false,
+  "full_ea": false,
+  "all_headers_git_byte_limit": {
+    "status": "unchanged_existing_line_endings_only",
+    "files": [
+      {
+        "path": "dich-nguoc/khoi-phuc/bot-cua-toi-1/source/MQL5/Include/bot-cua-toi-1/Bot1Withdrawal.mqh",
+        "workspace_sha256": "c6300736871f6e84e4885e3d97ea56dc36487e9e924c12c4effb7d9b2a15a5c6",
+        "index_sha256": "22c5307db81fa7714c5128a375a88116b365fd606bd997fb594b21cd2df702fd",
+        "only_line_endings": true,
+        "index_unchanged_from_head": true
+      },
+      {
+        "path": "dich-nguoc/khoi-phuc/bot-cua-toi-1/source/MQL5/Include/bot-cua-toi-1/Bot1AccountStateVolume.mqh",
+        "workspace_sha256": "7f551eb8da5819bf83e9b16428ad7db05168cbc3819cb6ace9c59c75fc6d65b6",
+        "index_sha256": "9a773e6ade609bd45c3de05555312a1ac5e3fbf3a1bfa762c2697f0d7ee786d6",
+        "only_line_endings": true,
+        "index_unchanged_from_head": true
+      },
+      {
+        "path": "dich-nguoc/khoi-phuc/bot-cua-toi-1/source/MQL5/Include/bot-cua-toi-1/Bot1AccountVolume.mqh",
+        "workspace_sha256": "4d7c9ef9ed7f184ca4741c5bdbe2c2c745016e99a89ffdde3ef2592ad6ea34b3",
+        "index_sha256": "59d81843264c8f91c77c5c0e484f9b31905af27e4741bd55643ec4bdc4eab129",
+        "only_line_endings": true,
+        "index_unchanged_from_head": true
+      },
+      {
+        "path": "dich-nguoc/khoi-phuc/bot-cua-toi-1/source/MQL5/Include/bot-cua-toi-1/Bot1AccountInitialization.mqh",
+        "workspace_sha256": "9c90b425e3d4766b28de55e5ea83df52f2e1208eba7dde228d942891ee803210",
+        "index_sha256": "a4cc59b851b23397470a79c81a4b2c110f309c5784b0b0852cb7fb52c554ab5b",
+        "only_line_endings": true,
+        "index_unchanged_from_head": true
+      }
+    ],
+    "local_compile_clean": true,
+    "new_join_and_tail_exact_git_check": "required_separately"
+  },
+  "publication_index": {
+    "exact_file_hashes": 201,
+    "files": 37,
+    "case_runs": [
+      "1:b1-startup-tail-20261028-r1",
+      "1:b1-startup-joined-20261028-r1"
+    ],
+    "compile_only": [
+      "1:b1-startup-tail-check-20261028-r4",
+      "1:b1-startup-joined-check-20261028-r1",
+      "1:b1-startup-joined-negative-check-20261028-r1"
+    ],
+    "unchanged_originals": 2,
+    "whole_eas_complete": 0
+  }
+}

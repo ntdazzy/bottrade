@@ -17,6 +17,7 @@
 | Ngữ cảnh/bộ đếm/đuôi mã trước chuẩn bị | `0x3827..0x3c9d` | chưa dựng phần tương ứng |
 | Chuẩn bị chiến lược đầu | `0x7500` | `0xe0c0` |
 | Trạng thái giao dịch sau chuẩn bị | `0x3cab..0x4e77`, gồm nhánh ngoài đến `0x4f4b`; 315/315 ca | chưa dựng đoạn tương ứng |
+| Nối trạng thái giao dịch đến trả về | `0x3cab..0x5658`, 639/639 ca chạy liên tục, chung trạng thái | chưa dựng đoạn tương ứng |
 | Tạo bảng | `0x8320`, `0xe1b0`, `0xffb0` | `0xef40`, `0x14fa0`, `0x16e80` |
 
 Thứ tự gọi thấy được trong mã máy:
@@ -60,6 +61,12 @@ kiện nối từ phần trước được cấp. Vẫn cần khởi tạo tĩnh
 chuẩn bị, không dùng bộ cấu hình chiến lược 0 thay cho giá trị đầu.
 [Phạm vi ngữ cảnh](startup-context-20261028-r1/README.md).
 
+Bot 1 đã dựng đuôi sau chuẩn bị `0x4e77..0x5658`, khớp **309/309 ca**.
+Phần này dùng chung `panel.lots`, chỉ số chiến lược và trạng thái từ đoạn
+trước. Có ghi nhận riêng lịch sử và ba hàm bảng; chưa kiểm nhánh lỗi
+`0x5659..0x5877` hoặc toàn bộ `OnInit`.
+[Phạm vi đuôi](startup-tail-20261028-r1/README.md).
+
 Đã quan sát bản gốc chạy thật với tám chiến lược tắt và phục hồi 41
 đầu vào chuẩn bị nội bộ của bot 1, giữ riêng 13 trường người dùng.
 Hàm `Bot1InitializeStartupInputs` chỉ dùng khi nạp trạng thái chương
@@ -68,8 +75,9 @@ trình; chưa là toàn bộ khởi tạo tĩnh hoặc các đầu ra của nó.
 
 Phần còn thiếu trước khi viết OnInit bàn giao:
 
-- tên đối tượng, lịch sử và ba bước hiển thị cuối khởi tạo; đoạn sau
-  chuẩn bị đầu của bot 1 đã so riêng 315 ca, còn lỗi chia 0/cấp phát;
+- ghép phần trước khởi tạo với đoạn sau chuẩn bị đầu; bot 1 đã nối
+  đến trả về và so 639 ca, còn lỗi chia 0/cấp phát và ba thân hiển thị
+  thật trong phép kiểm nối;
 - phép so trực tiếp của hàm kiểm quyền và trạng thái từ chối;
 - bảng nối đầy đủ mọi cài đặt đầu vào vào các vùng khởi tạo;
 - thứ tự chính xác của các mảng nến, hàng chờ và các nhánh lỗi cấp phát;
