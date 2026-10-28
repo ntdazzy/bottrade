@@ -12,9 +12,9 @@
 | Chế độ kiểm thử | `MQLInfoInteger(6)`, ghi cờ `0x621e0/0x621c9` | ghi `0x6d1e8/0x6d1d0` |
 | Ba hàm lấy lịch tin | `0x61b0`, `0x6600`, `0x6a90` | `0x6ad0`, `0x6f20`, `0x73b0` |
 | Chọn mốc tin dùng chung | `0x7310` | `0x7c30` |
-| Nối phần tin tới trả về | `0xd60..0x5658`, 239/239 ca, ba hàm lấy lịch được cấp kết quả | chưa dựng đoạn nối tương ứng |
-| Nối cả thân lấy lịch tới trả về | `0xd60..0x5658`, 158/158 ca; nguyên ba thân lịch, dịch vụ cấp mảng dữ liệu | chưa dựng đoạn nối tương ứng |
-| Thêm thân tìm mức và kiểm lệnh gần | `0xd60..0x5658`, 85/85 ca; nguyên các thân lịch/tìm mức/kiểm lệnh gần | chưa dựng đoạn nối tương ứng |
+| Nối phần tin tới trả về | `0xd60..0x5658`, 239/239 ca, ba hàm lấy lịch được cấp kết quả | `0xd60..0x5f34`, 254/254 ca; ba hàm lấy lịch được cấp kết quả |
+| Nối cả thân lấy lịch tới trả về | `0xd60..0x5658`, 158/158 ca; nguyên ba thân lịch, dịch vụ cấp mảng dữ liệu | `0xd60..0x5f34`, 158/158 ca; nguyên ba thân lịch |
+| Thêm thân tìm mức và kiểm lệnh gần | `0xd60..0x5658`, 85/85 ca; nguyên các thân lịch/tìm mức/kiểm lệnh gần | `0xd60..0x5f34`, 85/85 ca; nguyên các thân lịch/tìm mức/kiểm lệnh gần |
 | Thêm cả ba thân hàm bảng | `0xd60..0x5658`, 42/42 ca, 57.592 lời gọi; chưa so ảnh vẽ thật hoặc kiểm quyền | chưa dựng đoạn nối tương ứng |
 | Đoạn vốn/tài khoản trong OnInit | `0x126c..0x1941` | `0x1279..0x193f` |
 | Nối vốn, lịch dự phòng tới trả về | `0x126c..0x5658`, 93/93 ca, cùng trạng thái và 900 ô lịch | `0x1279..0x5f34`, 108/108 ca, 283 trường/900 ô lịch/2.800 ô bảng; thân đổi giờ/đổi tiền/chuẩn bị chạy thật |

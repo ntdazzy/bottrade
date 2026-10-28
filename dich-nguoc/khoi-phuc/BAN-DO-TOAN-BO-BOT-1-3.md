@@ -195,8 +195,12 @@ Còn phần trước, hai thân tìm mức, ba thân bảng và các nhánh lỗ
 trường, dãy chỉ báo/2.800 ô. Đã nối cả đoạn đổi giờ/chọn tần suất
 từ `0x3840`: **224/224 ca**, 274 trường; nguyên thân mùa hè/đổi tiền
 chạy trong cùng lượt. Đã nối tài khoản/lịch dự phòng từ `0x1279`:
-**108/108 ca**, 283 trường và 3.700 ô bảng/lịch. Còn phần lấy lịch
-tin phía trước và các thân con đang được thay bằng bộ ghi.
+**108/108 ca**, 283 trường và 3.700 ô bảng/lịch. Đã nối phần lấy
+lịch tin từ `0xd60`: **254/254 ca**; thêm ba thân lịch thật:
+**158/158 ca**; thêm hai thân tìm điểm vào/kiểm lệnh chờ gần giá:
+**85/85 ca**, 284 trường. Còn ba thân bảng trong phép kiểm nối,
+ảnh bảng, quyền dùng hợp lệ và toàn EA.
+[Bằng chứng lịch/điểm vào nối](danh-gia-doc-lap/startup-news-entry-bot3-20261029-r1/README.md).
 [Bằng chứng ngữ cảnh nối](danh-gia-doc-lap/startup-context-flow-bot3-20261029-r1/README.md).
 [Bằng chứng phần chọn nối](danh-gia-doc-lap/startup-selection-flow-bot3-20261029-r1/README.md).
 [Bằng chứng tài khoản nối](danh-gia-doc-lap/startup-account-flow-bot3-20261029-r1/README.md).

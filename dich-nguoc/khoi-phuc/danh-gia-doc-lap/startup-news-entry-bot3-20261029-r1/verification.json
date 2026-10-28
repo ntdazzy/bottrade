@@ -1,0 +1,56 @@
+{
+  "bot": 3,
+  "native_base": "0x17156250000",
+  "begin_rva": "0xd60",
+  "normal_return_rva": "0x5f34",
+  "runs": [
+    {
+      "run": "b3-startup-news-flow-20261029-r1",
+      "cases": 254,
+      "fields": 284,
+      "table_cells": 2800,
+      "calendar_cells": 900,
+      "sdk_calls": 37576,
+      "cpu_arithmetic_calls": 15494,
+      "result_sha256": "ec75b6a137c1ba10d73af84c15beeb8408094913461d34d7aefa268d4f304801"
+    },
+    {
+      "run": "b3-startup-real-calendars-20261029-r2",
+      "cases": 158,
+      "fields": 284,
+      "table_cells": 2800,
+      "calendar_cells": 900,
+      "sdk_calls": 24703,
+      "cpu_arithmetic_calls": 9638,
+      "result_sha256": "efc2e54df7bfca6420bbba9a519a2e8cd41a5f6368155474570362ad99cccdaa"
+    },
+    {
+      "run": "b3-startup-real-entry-20261029-r1",
+      "cases": 85,
+      "fields": 284,
+      "table_cells": 2800,
+      "calendar_cells": 900,
+      "sdk_calls": 17417,
+      "cpu_arithmetic_calls": 7211,
+      "result_sha256": "b10853d9d7130ddb01072636f253a362e6ef16ce103784091b5563246218ec16"
+    }
+  ],
+  "builds": [
+    "b3-startup-news-flow-check-20261029-r1",
+    "b3-startup-real-calendars-check-20261029-r2",
+    "b3-startup-real-entry-check-20261029-r1",
+    "b3-all-headers-api-20261029-r9"
+  ],
+  "all_headers": 116,
+  "original_ex5_sha256": "ee063d3d87490afe24e2f4ce85f6b05659320e297b102efd70207f71ca2feb83",
+  "authorization_executed": false,
+  "full_ea": false,
+  "rendered_chart_verified": false,
+  "panel_bodies_executed": false,
+  "failed_calendar_run_preserved": "b3-startup-real-calendars-20261029-r1",
+  "git_exact_bytes_preserved_newline_only": [
+    "Bot3AccountStateVolume.mqh",
+    "Bot3AccountVolume.mqh",
+    "Bot3Withdrawal.mqh"
+  ]
+}
