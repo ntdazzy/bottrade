@@ -1,3 +1,9 @@
+Đã chạy cả ba thân hàm bảng trong luồng khởi động sau cổng quyền:
+**42/42 ca khớp**, 248 giá trị, 2.700 ô bảng/lịch và 57.592 lời gọi.
+41 ca bật bảng đều tạo 45 đối tượng; nguồn kiểm biên dịch 0 lỗi/
+cảnh báo. Còn ảnh giao diện thật, kiểm quyền và toàn EA.
+[Phạm vi hiện hành](../danh-gia-doc-lap/startup-real-panels-20261029-r1/README.md).
+
 Đã chạy hai hàm tìm mức giá và kiểm lệnh gần bằng thân mã thật,
 cùng ba hàm lịch trong luồng khởi động: **85/85 ca khớp**, 248 giá trị,
 2.700 ô bảng/lịch và 11.127 lời gọi. Biên dịch 0 lỗi/cảnh báo.

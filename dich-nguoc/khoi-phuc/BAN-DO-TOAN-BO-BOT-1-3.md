@@ -123,6 +123,10 @@ quyền dùng và các thân con còn lại/toàn EA.
 **85/85 ca**, 248 giá trị và 2.700 ô bảng/lịch; không còn cấp sẵn
 kết quả mức giá trong phép nối. Còn ba hàm bảng, cổng quyền dùng
 và toàn EA. [Bằng chứng](danh-gia-doc-lap/startup-real-entry-20261028-r1/README.md).
+Đã đưa ba thân hàm bảng vào cùng luồng sau cổng: **42/42 ca**,
+248 giá trị, 2.700 ô bảng/lịch và 57.592 lời gọi. 41 ca bật bảng
+đều tạo 45 đối tượng; chưa so ảnh vẽ thật. Bộ chạy chặn nếu chạm
+mã kiểm quyền. [Bằng chứng](danh-gia-doc-lap/startup-real-panels-20261029-r1/README.md).
 
 Vị trí trong bảng là số tính từ đầu vùng mã của mỗi bot. Chi tiết dòng
 và lời gọi tra ở hai danh sách trên. “Đã so phần” có nghĩa đã có một
@@ -171,6 +175,10 @@ Chỉ tới trước cờ hoạt động/kiểm quyền dùng, chưa là toàn b
 [Bằng chứng](danh-gia-doc-lap/dispatch-gate-20261028-r1/README.md).
 
 ## Điều kiện để bắt đầu từng phần và để chốt toàn bộ
+
+P30 tiếp tục bằng phân tích tĩnh toàn luồng. Không dùng cờ/tài khoản/
+trạng thái cấp quyền giả lập để chạy phần bảo vệ. Chưa xác nhận đầy
+đủ nguồn quyền hợp lệ; xem [ranh giới và lệnh đã chốt](danh-gia-doc-lap/authorization-boundary-20261029-r1.md).
 
 P30 có bằng chứng mới cho cây số tài khoản bot 1: chứng minh từ
 lệnh máy đủ 1.075 giá trị cho phép trên toàn miền 64 bit; kiểm thêm
