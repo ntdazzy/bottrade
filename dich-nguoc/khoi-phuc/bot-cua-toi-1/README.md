@@ -1,3 +1,7 @@
+Đã so thống kê sau từng chiến lược **1.920/1.920 ca** và nối với bước
+chuẩn bị/đánh giá trong phép kiểm hai lượt có thay thân bằng bộ ghi.
+[Phạm vi](../danh-gia-doc-lap/strategy-cycle-20261028-r1/README.md).
+
 Đã so điều kiện nến H1 trước các chiến lược: **512/512 ca** khớp;
 chưa nối bộ điều phối đầy đủ. [Phạm vi](../danh-gia-doc-lap/strategy-hour-20261028-r1/README.md).
 

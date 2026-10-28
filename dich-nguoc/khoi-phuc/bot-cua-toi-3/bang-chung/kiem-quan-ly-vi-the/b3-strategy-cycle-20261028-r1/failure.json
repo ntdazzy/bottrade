@@ -1,0 +1,8 @@
+{
+  "failed_bits": 1024,
+  "evaluation_calls": 2,
+  "result_sha256": "e143a3328aedf87c157732c99e5dd022ef2f8f57622e12e14274a0905be8f0de",
+  "cause": "Test expected magic 44, but bot 3 strategy 1 uses base 42 plus offset 5 = 47.",
+  "source_snapshot": "danh-gia-doc-lap/strategy-cycle-20261028-r1/Bot3StrategyCycleCheck.mq5.txt",
+  "full_ea": false
+}

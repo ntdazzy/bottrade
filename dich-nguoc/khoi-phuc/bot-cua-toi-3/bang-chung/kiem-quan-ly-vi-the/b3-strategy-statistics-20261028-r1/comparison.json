@@ -1,0 +1,15 @@
+{
+  "cases": 2160,
+  "matched": 2160,
+  "failed": 0,
+  "first_failures": [],
+  "full_ea": false,
+  "full_history_body": false,
+  "native_statistics_blocks": true,
+  "history_return_supplied": true,
+  "history_count_mutation_supplied": true,
+  "original_ex5_changed": false,
+  "limits": [
+    "Post-evaluation statistics blocks only. History result and count mutation supplied; full history body tested separately."
+  ]
+}

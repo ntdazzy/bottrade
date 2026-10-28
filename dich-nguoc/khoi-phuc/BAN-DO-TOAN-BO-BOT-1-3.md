@@ -40,6 +40,12 @@ chứng kiểm thành phần nếu có. Các mô tả chỉ nói phần đã th�
 Chưa xem số hàm này là toàn bộ mã có thể chạy của EX5; lời gọi qua bảng
 hoặc nhánh chưa chạy còn phải kiểm riêng.
 
+Đã so các đoạn ghi tổng và trung bình sau từng chiến lược: bot 1
+**1.920/1.920 ca**, bot 3 **2.160/2.160 ca**; kết quả lịch sử được cấp.
+Nguồn mới đã nối chuẩn bị → đánh giá → thống kê và kiểm hai lượt có thay
+thân đánh giá/lịch sử bằng bộ ghi. Chưa kiểm điều phối hay EA đầy đủ;
+[phạm vi](danh-gia-doc-lap/strategy-cycle-20261028-r1/README.md).
+
 Đã đối chiếu thêm [toàn bộ dòng cài đặt đã thấy](PHAN-TICH-CAI-DAT-BOT-1-3.md)
 trong 18 lượt chạy riêng. Tên/thứ tự trong nhật ký, vị trí lưu và mặc
 định đã chốt. Lượt mới đã đọc trực tiếp 152 nhãn nhìn thấy và nối đủ

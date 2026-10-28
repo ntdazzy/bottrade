@@ -1,4 +1,6 @@
 - `kiem-gio-chien-luoc-bot-1-3.py generate BOT | prepare|mql5|original|compare BOT RUN`: so thời điểm nến giờ trước các chiến lược; `mql5` cần `--build BUILD`. Chỉ kiểm đoạn điều kiện giờ, thời gian và thay đổi trong lời gọi được cấp.
+- `kiem-thong-ke-chien-luoc-bot-1-3.py generate BOT | prepare|mql5|original|compare BOT RUN`: so các đoạn ghi tổng/trung bình sau từng chiến lược. Kết quả và thay đổi số đếm của hàm lịch sử được cấp; `mql5` cần `--build BUILD`.
+- `kiem-noi-thong-ke-chien-luoc-bot-1-3.py generate BOT | run BOT RUN --build BUILD`: kiểm nối chuẩn bị/đánh giá/thống kê qua hai lần gọi; thân đánh giá và lịch sử được thay bằng bộ ghi.
 - `kiem-lo-ngay-bot-1-3.py prepare|mql5|original|compare BOT RUN`: toàn nhánh lỗ ngày, 330ca mỗi bot; `mql5` cần `--build BUILD`. Có nguyên thân đóng/xóa/gửi và số học CPU thật; chưa là toàn điều phối/EA.
 - `tao-bo-kiem-lo-ngay.py BOT`: tạo hai bộ ghi MQL5 từ bộ ghi cuối tuần hiện có, kiểm chặt đầu vào và giữ phản hồi dịch vụ.
 - `kiem-cong-dieu-phoi-bot-1-3.py generate BOT | prepare|mql5|original|compare BOT RUN`: cổng giờ/nến từ điểm vào hàm ngoài thật, 640ca mỗi bot; `mql5` cần `--build BUILD`. Dừng trước cờ hoạt động/kiểm quyền dùng.

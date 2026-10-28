@@ -1,0 +1,64 @@
+{
+  "full_ea": false,
+  "basis": "staged index versus working source bytes",
+  "bots": {
+    "1": {
+      "source_files": 96,
+      "byte_differences": [
+        {
+          "path": "dich-nguoc/khoi-phuc/bot-cua-toi-1/source/MQL5/Include/bot-cua-toi-1/Bot1AccountInitialization.mqh",
+          "work_sha256": "9c90b425e3d4766b28de55e5ea83df52f2e1208eba7dde228d942891ee803210",
+          "git_sha256": "a4cc59b851b23397470a79c81a4b2c110f309c5784b0b0852cb7fb52c554ab5b",
+          "only_line_endings": true
+        },
+        {
+          "path": "dich-nguoc/khoi-phuc/bot-cua-toi-1/source/MQL5/Include/bot-cua-toi-1/Bot1AccountStateVolume.mqh",
+          "work_sha256": "7f551eb8da5819bf83e9b16428ad7db05168cbc3819cb6ace9c59c75fc6d65b6",
+          "git_sha256": "9a773e6ade609bd45c3de05555312a1ac5e3fbf3a1bfa762c2697f0d7ee786d6",
+          "only_line_endings": true
+        },
+        {
+          "path": "dich-nguoc/khoi-phuc/bot-cua-toi-1/source/MQL5/Include/bot-cua-toi-1/Bot1AccountVolume.mqh",
+          "work_sha256": "4d7c9ef9ed7f184ca4741c5bdbe2c2c745016e99a89ffdde3ef2592ad6ea34b3",
+          "git_sha256": "59d81843264c8f91c77c5c0e484f9b31905af27e4741bd55643ec4bdc4eab129",
+          "only_line_endings": true
+        },
+        {
+          "path": "dich-nguoc/khoi-phuc/bot-cua-toi-1/source/MQL5/Include/bot-cua-toi-1/Bot1Withdrawal.mqh",
+          "work_sha256": "c6300736871f6e84e4885e3d97ea56dc36487e9e924c12c4effb7d9b2a15a5c6",
+          "git_sha256": "22c5307db81fa7714c5128a375a88116b365fd606bd997fb594b21cd2df702fd",
+          "only_line_endings": true
+        }
+      ]
+    },
+    "3": {
+      "source_files": 103,
+      "byte_differences": [
+        {
+          "path": "dich-nguoc/khoi-phuc/bot-cua-toi-3/source/MQL5/Include/bot-cua-toi-3/Bot3AccountInitialization.mqh",
+          "work_sha256": "a69a7a6774a924ef21796ea771e15f81a4ff5145e88b8dee1d929b224a0b0820",
+          "git_sha256": "c70d1a10499a1554a1967355c1aa5a6097172c1b1bdc5737aaea84432df987a1",
+          "only_line_endings": true
+        },
+        {
+          "path": "dich-nguoc/khoi-phuc/bot-cua-toi-3/source/MQL5/Include/bot-cua-toi-3/Bot3AccountStateVolume.mqh",
+          "work_sha256": "4be7fd078db16ea94f448fd453f206ee37249a92ab514371b455f013b90c6b86",
+          "git_sha256": "f5922146f053193a10e968c666e0d18d08a9ac756a422f5488765a0db5ba6472",
+          "only_line_endings": true
+        },
+        {
+          "path": "dich-nguoc/khoi-phuc/bot-cua-toi-3/source/MQL5/Include/bot-cua-toi-3/Bot3AccountVolume.mqh",
+          "work_sha256": "1c711f377928abe3b2a7db7f4b8ce31e2b928264a000e9a73b0249b5514221b2",
+          "git_sha256": "8cbd40531582088f918fb0d3c840e87afb7d549e6b2adc33949c827015871d8f",
+          "only_line_endings": true
+        },
+        {
+          "path": "dich-nguoc/khoi-phuc/bot-cua-toi-3/source/MQL5/Include/bot-cua-toi-3/Bot3Withdrawal.mqh",
+          "work_sha256": "7a002e35ee6694d499b5cc466f0040d430e3f8112345afb3ec2618cbc5b1de10",
+          "git_sha256": "a3a626b1e4450bb0280d7d5f5108411c6a6c8214f56057757a7ef66519d600c8",
+          "only_line_endings": true
+        }
+      ]
+    }
+  }
+}
