@@ -1,0 +1,23 @@
+{
+  "negative_controls": [
+    {
+      "run": "b1-startup-trading-20261028-r2",
+      "candidate_build": "b1-startup-trading-check-20261028-r3",
+      "candidate_binary_sha256": "856f0bc9174f311ee90ecfe9e93aefb62508f54b8319e309ac06418729041f31",
+      "candidate_tape_sha256": "5a90fd8942ff0ee4ca513b7951c361899e39f334ff10c17816c98af7b27c6781",
+      "rejected": true,
+      "reason": "ACCOUNT_ARGS"
+    },
+    {
+      "run": "b1-startup-trading-20261028-r3",
+      "candidate_build": "b1-startup-trading-check-20261028-r4",
+      "candidate_binary_sha256": "da2e0288b9a2347ec3233d5544bd7c0c6d8deddf4dc00528cd61be2b68b1e60f",
+      "candidate_tape_sha256": "9944625c965f7d105d7700ed5443f56569a31302290c78e2758d2533e2d836a1",
+      "rejected": true,
+      "reason": "ITIME_ARGS"
+    }
+  ],
+  "positive_run": "b1-startup-trading-20261028-r6",
+  "positive_comparison_sha256": "7d5efdee3e184af47b53217e824e537889d6a7b3bf36352224a90b19cb180e74",
+  "scope": "Actual earlier compiled candidates; the original rejects their differing account/weekly-bar API arguments. Not full EA verification."
+}

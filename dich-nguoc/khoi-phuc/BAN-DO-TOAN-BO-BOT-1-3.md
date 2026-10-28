@@ -76,6 +76,12 @@ tám chiến lược tắt; đọc đủ 54 trường. Nguồn kiểm bốn bộ
 và giữ 13 trường người dùng. Chưa phải mọi đầu ra khởi tạo tĩnh hoặc
 toàn EA. [Phạm vi](danh-gia-doc-lap/startup-inputs-20261028-r1/README.md).
 
+Bot 1 thêm đoạn sau chuẩn bị đầu `0x3cab..0x4e77`: **315/315 ca**,
+54 trường và 1.800 ô bảng; giữ mốc tuần, số dư và cột thứ ba khi cờ
+xóa cả bảng tắt. Hai bản sai cũ bị từ chối. Còn tên đối tượng/lịch sử/
+hiển thị cuối khởi tạo và các lỗi; chưa là toàn OnInit hoặc EA.
+[Phạm vi](danh-gia-doc-lap/startup-trading-state-20261028-r1/README.md).
+
 Vị trí trong bảng là số tính từ đầu vùng mã của mỗi bot. Chi tiết dòng
 và lời gọi tra ở hai danh sách trên. “Đã so phần” có nghĩa đã có một
 phép đối chiếu trong phạm vi cụ thể; không đánh dấu hoàn tất cả hàng.

@@ -16,6 +16,7 @@
 | Nạp dữ liệu lịch dự phòng và hai cờ | `0x1941..0x3827` | `0x193f..0x3840` |
 | Ngữ cảnh/bộ đếm/đuôi mã trước chuẩn bị | `0x3827..0x3c9d` | chưa dựng phần tương ứng |
 | Chuẩn bị chiến lược đầu | `0x7500` | `0xe0c0` |
+| Trạng thái giao dịch sau chuẩn bị | `0x3cab..0x4e77`, gồm nhánh ngoài đến `0x4f4b`; 315/315 ca | chưa dựng đoạn tương ứng |
 | Tạo bảng | `0x8320`, `0xe1b0`, `0xffb0` | `0xef40`, `0x14fa0`, `0x16e80` |
 
 Thứ tự gọi thấy được trong mã máy:
@@ -67,10 +68,15 @@ trình; chưa là toàn bộ khởi tạo tĩnh hoặc các đầu ra của nó.
 
 Phần còn thiếu trước khi viết OnInit bàn giao:
 
+- tên đối tượng, lịch sử và ba bước hiển thị cuối khởi tạo; đoạn sau
+  chuẩn bị đầu của bot 1 đã so riêng 315 ca, còn lỗi chia 0/cấp phát;
 - phép so trực tiếp của hàm kiểm quyền và trạng thái từ chối;
 - bảng nối đầy đủ mọi cài đặt đầu vào vào các vùng khởi tạo;
 - thứ tự chính xác của các mảng nến, hàng chờ và các nhánh lỗi cấp phát;
 - các sự kiện OnTick/OnDeinit và nơi gọi vòng đánh giá sau khởi tạo.
+
+[Bằng chứng đoạn sau chuẩn bị](startup-trading-state-20261028-r1/README.md):
+54 trường/1.800 ô, giữ nguyên khung tuần và các lần đọc lại thông tin.
 
 Thân kiểm quyền đã được băm và mô tả riêng tại
 `authorization-flow-20261028-r1.md`; không ghi khóa hoặc gửi yêu cầu mạng.

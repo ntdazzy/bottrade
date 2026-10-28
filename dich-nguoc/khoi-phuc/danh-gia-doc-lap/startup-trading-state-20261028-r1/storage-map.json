@@ -1,0 +1,300 @@
+{
+  "original_ex5_sha256": "a3b0de423a06e10ebedc279307b93d7cb9188ba2bb5de77131a913c865b0e922",
+  "native_init_sha256": "83265d19458eeaa76d297459c6e7929f98c8f74227a4c864967a519dd046c18d",
+  "entry": "0x3cab",
+  "end_before": "0x4e77",
+  "out_of_line_ranges": [
+    "0x4f11..0x4f4b"
+  ],
+  "fields": [
+    {
+      "name": "P.native_62414",
+      "kind": "i",
+      "rva": "0x62414"
+    },
+    {
+      "name": "State.native_62555",
+      "kind": "B",
+      "rva": "0x62555"
+    },
+    {
+      "name": "P.strategy_index",
+      "kind": "I",
+      "rva": "0x678f4"
+    },
+    {
+      "name": "P.entry_frame",
+      "kind": "i",
+      "rva": "0x6242c"
+    },
+    {
+      "name": "P.native_6248c",
+      "kind": "i",
+      "rva": "0x6248c"
+    },
+    {
+      "name": "P.tick.ask",
+      "kind": "d",
+      "rva": "0x67760"
+    },
+    {
+      "name": "P.tick.bid",
+      "kind": "d",
+      "rva": "0x67758"
+    },
+    {
+      "name": "P.spread",
+      "kind": "d",
+      "rva": "0x62560"
+    },
+    {
+      "name": "P.native_62530",
+      "kind": "d",
+      "rva": "0x62530"
+    },
+    {
+      "name": "P.unit",
+      "kind": "d",
+      "rva": "0x66d98"
+    },
+    {
+      "name": "P.min_change",
+      "kind": "d",
+      "rva": "0x62520"
+    },
+    {
+      "name": "P.stop_min_price",
+      "kind": "d",
+      "rva": "0x66a70"
+    },
+    {
+      "name": "P.freeze_min_price",
+      "kind": "d",
+      "rva": "0x67468"
+    },
+    {
+      "name": "P.stop_distance",
+      "kind": "d",
+      "rva": "0x62498"
+    },
+    {
+      "name": "P.target_distance",
+      "kind": "d",
+      "rva": "0x624a0"
+    },
+    {
+      "name": "P.trigger_distance",
+      "kind": "d",
+      "rva": "0x624c8"
+    },
+    {
+      "name": "P.locked_distance",
+      "kind": "d",
+      "rva": "0x624d0"
+    },
+    {
+      "name": "P.freeze_buffer",
+      "kind": "i",
+      "rva": "0x623e0"
+    },
+    {
+      "name": "P.trail_distance",
+      "kind": "d",
+      "rva": "0x624a8"
+    },
+    {
+      "name": "P.native_624f8",
+      "kind": "d",
+      "rva": "0x624f8"
+    },
+    {
+      "name": "P.native_62500",
+      "kind": "d",
+      "rva": "0x62500"
+    },
+    {
+      "name": "P.gap_points",
+      "kind": "d",
+      "rva": "0x62440"
+    },
+    {
+      "name": "P.older_width",
+      "kind": "i",
+      "rva": "0x62430"
+    },
+    {
+      "name": "P.recent_width",
+      "kind": "i",
+      "rva": "0x62434"
+    },
+    {
+      "name": "P.expiration_hours",
+      "kind": "i",
+      "rva": "0x62468"
+    },
+    {
+      "name": "P.virtual_expiration",
+      "kind": "B",
+      "rva": "0x62419"
+    },
+    {
+      "name": "P.expiration_seconds",
+      "kind": "I",
+      "rva": "0x66da0"
+    },
+    {
+      "name": "P.expiration",
+      "kind": "q",
+      "rva": "0x67450"
+    },
+    {
+      "name": "Nfp.notice",
+      "kind": "B",
+      "rva": "0x67434"
+    },
+    {
+      "name": "Nfp.blocked",
+      "kind": "B",
+      "rva": "0x67488"
+    },
+    {
+      "name": "Interest.blocked",
+      "kind": "B",
+      "rva": "0x67489"
+    },
+    {
+      "name": "Cpi.blocked",
+      "kind": "B",
+      "rva": "0x6748a"
+    },
+    {
+      "name": "State.week_bar",
+      "kind": "q",
+      "rva": "0x67478"
+    },
+    {
+      "name": "P.max_spread",
+      "kind": "d",
+      "rva": "0x623d8"
+    },
+    {
+      "name": "MinimumSpread",
+      "kind": "d",
+      "rva": "0x62558"
+    },
+    {
+      "name": "Inputs.entry.confirmation_frame",
+      "kind": "i",
+      "rva": "0x6227c"
+    },
+    {
+      "name": "Magic",
+      "kind": "i",
+      "rva": "0x6246c"
+    },
+    {
+      "name": "P.last_shift",
+      "kind": "i",
+      "rva": "0x62438"
+    },
+    {
+      "name": "P.buy_offset",
+      "kind": "d",
+      "rva": "0x62448"
+    },
+    {
+      "name": "P.sell_offset",
+      "kind": "d",
+      "rva": "0x62450"
+    },
+    {
+      "name": "P.nearby_radius",
+      "kind": "d",
+      "rva": "0x62460"
+    },
+    {
+      "name": "LastTicket",
+      "kind": "Q",
+      "rva": "0x677f8"
+    },
+    {
+      "name": "Entry.candidate_buy",
+      "kind": "d",
+      "rva": "0x67440"
+    },
+    {
+      "name": "Entry.candidate_sell",
+      "kind": "d",
+      "rva": "0x67438"
+    },
+    {
+      "name": "Entry.rounded_buy",
+      "kind": "d",
+      "rva": "0x62570"
+    },
+    {
+      "name": "Entry.rounded_sell",
+      "kind": "d",
+      "rva": "0x62578"
+    },
+    {
+      "name": "Levels.blocked",
+      "kind": "B",
+      "rva": "0x67458"
+    },
+    {
+      "name": "Manager.counter",
+      "kind": "i",
+      "rva": "0x673f0"
+    },
+    {
+      "name": "State.timed_delay_seconds",
+      "kind": "i",
+      "rva": "0x6745c"
+    },
+    {
+      "name": "Manager.current_stop",
+      "kind": "d",
+      "rva": "0x62580"
+    },
+    {
+      "name": "P.native_62538",
+      "kind": "d",
+      "rva": "0x62538"
+    },
+    {
+      "name": "Manager.table.guard",
+      "kind": "B",
+      "rva": "0x66410"
+    },
+    {
+      "name": "Queue.enabled",
+      "kind": "B",
+      "rva": "0x66420"
+    },
+    {
+      "name": "FridayClosed",
+      "kind": "B",
+      "rva": "0x67460"
+    }
+  ],
+  "tables": [
+    {
+      "rva": "0x62590",
+      "rows": 500,
+      "columns": 3,
+      "clear_if_guard_equals": 1
+    },
+    {
+      "rva": "0x65470",
+      "rows": 100,
+      "columns": 3,
+      "clear_all_if_guard_equals": 1,
+      "unconditionally_cleared_columns": [
+        1,
+        0
+      ]
+    }
+  ],
+  "entry_level_children": "Two replies supplied and all arguments checked; native/source child implementations have separate evidence."
+}

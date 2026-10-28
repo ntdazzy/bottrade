@@ -1,3 +1,9 @@
+Đã dựng phần trạng thái giao dịch sau chuẩn bị đầu: **315/315 ca**,
+54 trường và 1.800 ô bảng khớp mã gốc; đúng mốc nến tuần, đọc số dư
+và xóa từng cột theo cờ. Hai hàm tìm mức/dữ liệu MT5 được cấp.
+Toàn bộ 101 `.mqh` biên dịch 0 lỗi/cảnh báo. Còn phần cuối OnInit/EA.
+[Phạm vi](../danh-gia-doc-lap/startup-trading-state-20261028-r1/README.md).
+
 Đã quan sát bản gốc chạy thật với tám chiến lược tắt và phục hồi 41
 đầu vào nội bộ ban đầu. Kiểm đủ 54 trường qua bốn bộ dữ liệu khớp,
 giữ 13 trường người dùng cùng mã giá. Toàn bộ 100 `.mqh` biên dịch
