@@ -1,0 +1,61 @@
+{
+  "run": "b1-startup-joined-20261028-r2",
+  "cases": 655,
+  "fields": 125,
+  "table_cells": 1800,
+  "sdk_calls": 24419,
+  "cpu_arithmetic_calls": 19623,
+  "native_init_sha256": "83265d19458eeaa76d297459c6e7929f98c8f74227a4c864967a519dd046c18d",
+  "comments": {
+    "order_comment": "0x62470",
+    "preparation_comment": "0x62480",
+    "copy_order_rva": "0x4e56..0x4e77",
+    "copy_preparation_rva": "0x7e40..0x7e4e"
+  },
+  "negative_controls": [
+    {
+      "run": "b1-startup-joined-negative-control-r2",
+      "fault": "control",
+      "detected": 0,
+      "receipt_sha256": "f0bc11654ce1dbf58ecebd5884ee611a9654378106bd6aa217afb08aa4c8a63e"
+    },
+    {
+      "run": "b1-startup-joined-negative-comment-r2",
+      "fault": "wrong-comment",
+      "detected": 651,
+      "receipt_sha256": "11b287211c92efcf9bf43cfc1a498f0057621a3a576288b30e32140ced1ca88d"
+    },
+    {
+      "run": "b1-startup-joined-negative-lots-r2",
+      "fault": "reset-lots",
+      "detected": 655,
+      "receipt_sha256": "d645209166a580493ba096ea6a3cdffce30e52863294053d8c6d187c51594bac"
+    },
+    {
+      "run": "b1-startup-joined-negative-index-r2",
+      "fault": "reset-index",
+      "detected": 385,
+      "receipt_sha256": "80f44174136a645d8cdc820201bd9db5b9d71ca06705f69536b227864b9686e3"
+    },
+    {
+      "run": "b1-startup-joined-negative-start-r2",
+      "fault": "old-start-lots",
+      "detected": 3,
+      "receipt_sha256": "c6f5fa634444a970e2682634ad4bec067f2b68562bcdd944bb00355d23854a13"
+    },
+    {
+      "run": "b1-startup-joined-negative-ticket-r2",
+      "fault": "reset-ticket",
+      "detected": 2,
+      "receipt_sha256": "0ad4d5877afca5c628ce728e68d825ae204d465ec390b86d10bf16b921287d1e"
+    }
+  ],
+  "builds": [
+    "b1-startup-joined-check-20261028-r2",
+    "b1-startup-joined-negative-check-20261028-r2",
+    "b1-all-headers-api-20261028-r26"
+  ],
+  "whole_bot_complete": false,
+  "full_ea": false,
+  "prior_r1_join_comment_binding_correct": false
+}

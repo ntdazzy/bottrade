@@ -90,6 +90,11 @@ chuỗi lệnh, lưu giờ, quét lịch sử và gọi ba bước hiển thị 
 Hai hàm tìm mức và ba hàm bảng được cấp kết quả trong phép kiểm nối.
 Còn phần trước khởi tạo, lỗi, các sự kiện và EA hoàn chỉnh.
 [Phạm vi đoạn nối](danh-gia-doc-lap/startup-joined-20261028-r1/README.md).
+Đã sửa bản nối trên sau khi đối chiếu thân chuẩn bị: bình luận giao
+dịch `0x62470` khác bình luận chuẩn bị `0x62480`. Lượt mới **655/655 ca**,
+125 giá trị; bản cố ý đọc nhầm bị phát hiện 651 ca. Kết quả này thay
+phạm vi nối r1, chưa là toàn OnInit/EA.
+[Bằng chứng sửa](danh-gia-doc-lap/startup-comment-binding-20261028-r1/README.md).
 
 Vị trí trong bảng là số tính từ đầu vùng mã của mỗi bot. Chi tiết dòng
 và lời gọi tra ở hai danh sách trên. “Đã so phần” có nghĩa đã có một

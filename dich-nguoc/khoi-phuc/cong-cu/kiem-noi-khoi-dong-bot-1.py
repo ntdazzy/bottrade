@@ -15,7 +15,7 @@ tail=module('joined_tail','kiem-duoi-khoi-dong-bot-1.py')
 boot,base=tr.boot,tr.base
 require,sha,save,pub,Reader=tr.require,tr.sha,tr.save,tr.pub,tr.Reader
 ALIASES={'Index':'P.strategy_index','StartLots':'P.native_62530','Calendar.hour':'P.calendar.hour',
-         'TradeComment':'P.comment','TradeSymbol':'Inputs.symbol'}
+         'TradeComment':'OrderComment','TradeSymbol':'Inputs.symbol'}
 
 def renamed(n):
     if n.startswith('P.'):return 'Panel.'+n[2:]
@@ -23,6 +23,7 @@ def renamed(n):
     if n.startswith('BarTimes['):return 'TailBars'+n[8:]
     return ALIASES.get(n,n)
 FIELDS=[(n,k,r) for n,k,r,_ in tr.FIELDS]
+FIELDS.append(('P.comment','s',0x62480))
 for n,k,r in tail.FIELDS:
     match=next((f for f in FIELDS if f[2]==r),None)
     require(match is None or match[:2]==(renamed(n),k),'SHARED_FIELD_TYPE')
@@ -39,7 +40,7 @@ SCOPE=dict(whole_bot_complete=False,whole_manager_complete=False,full_ea=False,
 def cases():
     rows=[];trials=tr.cases();tails=tail.cases()
     def add(a,b,prefer_tail=False):
-        c=copy.deepcopy(a);values={n:v for (n,_,_,_),v in zip(tr.FIELDS,a['fields'])}
+        c=copy.deepcopy(a);values={n:v for (n,_,_,_),v in zip(tr.FIELDS,a['fields'])};values['P.comment']='preparation-only'
         for n,_,r in tail.FIELDS:
             if prefer_tail or r not in {f[2] for f in tr.FIELDS}:values[renamed(n)]=b['values'][n]
         values['Inputs.symbol']=b['values']['TradeSymbol'] if prefer_tail else a['symbol']
@@ -59,6 +60,10 @@ def cases():
         c=add(trials[0],default_tail);c['tag']='join/shared-volume-index'
         c['effects'].append([3,1,next(i for i,f in enumerate(FIELDS) if f[0]=='P.strategy_index'),i])
         c['values']['P.native_62530']=-.123
+    for order in [None,'','Order','Vàng🚀']:
+        for prepared in [None,'','Prepared','Khác🚀']:
+            c=add(trials[0],default_tail);c['tag']='join/distinct-comment-storage'
+            c['values']['OrderComment']=order;c['values']['P.comment']=prepared
     return rows
 
 def encode(rows):
@@ -92,7 +97,7 @@ void MockOpen(const uchar &show,const uchar &tester,const int &seed,const string
               const Bot1NewsWindows &windows,Bot1NewsSelection &selection,ulong &ticket){Begin();End(21);@OPEN@ Effect(21);}
 void MockClosed(const uchar &show,const uchar &tester,const int &seed,const string &symbol,double &wins,double &losses){Begin();End(22);@CLOSED@ Effect(22);}
 '''
-CALL='Bot1InitializeStartupPostPreparation(Inputs,P,Magic,Entry,Nfp,Interest,Cpi,Manager,Queue,Levels,MinimumSpread,FridayClosed,TailBars,Show,Tester,HistoryWindow,Seed,Balance,Panel,Events,Windows,Selection,LastTicket,LastHour,Wins,Losses,State,TailState)'
+CALL='Bot1InitializeStartupPostPreparation(Inputs,P,Magic,OrderComment,Entry,Nfp,Interest,Cpi,Manager,Queue,Levels,MinimumSpread,FridayClosed,TailBars,Show,Tester,HistoryWindow,Seed,Balance,Panel,Events,Windows,Selection,LastTicket,LastHour,Wins,Losses,State,TailState)'
 
 def render():
     code=tr.SCRIPT
@@ -102,7 +107,7 @@ def render():
     at=tail.SCRIPT.index('void MockCreate(');end=tail.SCRIPT.index('Bot1PanelCreationState P;')
     tail_headers=tail.SCRIPT[at:end].replace('MockSymbol','MockTailSymbol').replace('MockTime','MockTailTime')
     joined='#include "../../Include/bot-cua-toi-1/Bot1StartupPostPreparation.mqh"\n'
-    globals_='Bot1PanelCreationState Panel;Bot1NewsEvents Events;Bot1NewsWindows Windows;Bot1NewsSelection Selection;Bot1StartupTailState TailState;\nint Seed,LastHour;double Balance,Wins,Losses;uchar Show,Tester,HistoryWindow;long TailBars[8];\n'
+    globals_='Bot1PanelCreationState Panel;Bot1NewsEvents Events;Bot1NewsWindows Windows;Bot1NewsSelection Selection;Bot1StartupTailState TailState;\nint Seed,LastHour;double Balance,Wins,Losses;uchar Show,Tester,HistoryWindow;long TailBars[8];string OrderComment;\n'
     code=code.replace('Bot1StartupTradingState State;',tail_headers+joined+globals_+'Bot1StartupTradingState State;')
     code=code.replace('Counts[10]','Counts[23]').replace('Volumes[i]','Panel.lots[i]')
     start=code.index('void Snapshot()');end=code.index('void Begin(){',start)

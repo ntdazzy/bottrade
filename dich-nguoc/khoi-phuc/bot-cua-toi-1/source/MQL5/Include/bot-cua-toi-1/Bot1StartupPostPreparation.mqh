@@ -6,6 +6,7 @@
 // OnInit 0x3cab..0x5658. Both parts use the same native state and lot array.
 int Bot1InitializeStartupPostPreparation(const Bot1PreparationInputs &inputs,
                                          Bot1PreparationState &p,const int &magic,
+                                         const string &order_comment,
                                          Bot1EntryLoopState &entry,Bot1NfpFilterState &nfp,
                                          Bot1ReleaseFilterState &interest,Bot1ReleaseFilterState &cpi,
                                          Bot1PositionManagementState &management,Bot1PendingQueue &queue,
@@ -21,7 +22,7 @@ int Bot1InitializeStartupPostPreparation(const Bot1PreparationInputs &inputs,
 {
    Bot1InitializeTradingState(inputs,p,magic,entry,nfp,interest,cpi,management,queue,levels,
                               minimum_spread,friday_closed,panel.lots,last_ticket,trading);
-   return Bot1InitializeStartupTail(p.comment,inputs.symbol,p.strategy_index,p.native_62530,
+   return Bot1InitializeStartupTail(order_comment,inputs.symbol,p.strategy_index,p.native_62530,
                                     p.calendar,bar_times,show_panel,show_tester,history_window,
                                     magic,magic_base,effective_balance,panel,events,windows,
                                     selection,last_ticket,last_hour,wins,losses,tail);

@@ -42,12 +42,12 @@ def tape_records(raw):
     if pos!=len(raw): raise ValueError("TAPE_TRAILING")
     return (magic,version,count),records
 
-def generate():
+def render():
     good = load_good()
     source = good.render()
     source = source.replace('input string CheckRun="";', 'input string CheckRun="";\ninput int JoinFault=0;', 1)
     source = source.replace('bot1-startup-joined\\\\', 'bot1-startup-joined-negative\\\\')
-    marker = '      Result=Bot1InitializeStartupPostPreparation(Inputs,P,Magic,Entry,Nfp,Interest,Cpi,Manager,Queue,Levels,MinimumSpread,FridayClosed,TailBars,Show,Tester,HistoryWindow,Seed,Balance,Panel,Events,Windows,Selection,LastTicket,LastHour,Wins,Losses,State,TailState);'
+    marker = '      Result='+good.CALL+';'
     replacement = '''      double old_lots[8];for(int i=0;i<8;i++)old_lots[i]=Panel.lots[i];
       uint old_index=P.strategy_index;double old_start=P.native_62530;ulong old_ticket=LastTicket;
       Bot1InitializeTradingState(Inputs,P,Magic,Entry,Nfp,Interest,Cpi,Manager,Queue,Levels,MinimumSpread,FridayClosed,Panel.lots,LastTicket,State);
@@ -55,21 +55,26 @@ def generate():
       if(JoinFault==2)P.strategy_index=old_index;
       if(JoinFault==4)LastTicket=old_ticket;
       if(JoinFault==3)
-         Result=Bot1InitializeStartupTail(P.comment,Inputs.symbol,P.strategy_index,old_start,P.calendar,TailBars,Show,Tester,HistoryWindow,Magic,Seed,Balance,Panel,Events,Windows,Selection,LastTicket,LastHour,Wins,Losses,TailState);
+         Result=Bot1InitializeStartupTail(OrderComment,Inputs.symbol,P.strategy_index,old_start,P.calendar,TailBars,Show,Tester,HistoryWindow,Magic,Seed,Balance,Panel,Events,Windows,Selection,LastTicket,LastHour,Wins,Losses,TailState);
+      else if(JoinFault==5)
+         Result=Bot1InitializeStartupTail(P.comment,Inputs.symbol,P.strategy_index,P.native_62530,P.calendar,TailBars,Show,Tester,HistoryWindow,Magic,Seed,Balance,Panel,Events,Windows,Selection,LastTicket,LastHour,Wins,Losses,TailState);
       else
-         Result=Bot1InitializeStartupTail(P.comment,Inputs.symbol,P.strategy_index,P.native_62530,P.calendar,TailBars,Show,Tester,HistoryWindow,Magic,Seed,Balance,Panel,Events,Windows,Selection,LastTicket,LastHour,Wins,Losses,TailState);'''
+         Result=Bot1InitializeStartupTail(OrderComment,Inputs.symbol,P.strategy_index,P.native_62530,P.calendar,TailBars,Show,Tester,HistoryWindow,Magic,Seed,Balance,Panel,Events,Windows,Selection,LastTicket,LastHour,Wins,Losses,TailState);'''
     if marker not in source: raise RuntimeError("JOIN_CALL_MARKER_NOT_FOUND")
     source = source.replace(marker, replacement, 1)
+    return source
+
+def generate():
     path = ROOT / "bot-cua-toi-1" / "source" / "MQL5" / "Scripts" / "bot-cua-toi-1" / "Bot1StartupPostPreparationNegativeCheck.mq5"
     if path.exists(): raise RuntimeError("SOURCE_EXISTS")
-    path.write_text(source, encoding="utf-8", newline="\n")
+    path.write_text(render(), encoding="utf-8", newline="\n")
     print(path)
 
 def run_case(run, build, source_run, fault):
     good=load_good(); require = good.require
     validate_name(run,"RUN"); validate_name(build,"BUILD"); validate_name(source_run,"SOURCE_RUN")
-    if fault not in {"control","reset-lots","reset-index","old-start-lots","reset-ticket"}: raise ValueError("BAD_FAULT")
-    fault_num={"control":0,"reset-lots":1,"reset-index":2,"old-start-lots":3,"reset-ticket":4}[fault]
+    if fault not in {"control","reset-lots","reset-index","old-start-lots","reset-ticket","wrong-comment"}: raise ValueError("BAD_FAULT")
+    fault_num={"control":0,"reset-lots":1,"reset-index":2,"old-start-lots":3,"reset-ticket":4,"wrong-comment":5}[fault]
     base=ROOT/"bot-cua-toi-1"/"bang-chung"/"kiem-quan-ly-vi-the"
     src=base/source_run; out=base/run
     if out.exists(): raise RuntimeError("RUN_EXISTS")
@@ -117,7 +122,7 @@ def run_case(run, build, source_run, fault):
     print(json.dumps({key:report[key] for key in ["source_run","fault","cases","detected","result_records_different","tape_records_different","first_ids"]},ensure_ascii=False))
 
 def main():
-    p=argparse.ArgumentParser(); p.add_argument("mode",choices=["generate","run"]); p.add_argument("run",nargs="?"); p.add_argument("--build"); p.add_argument("--source-run"); p.add_argument("--fault",choices=["control","reset-lots","reset-index","old-start-lots","reset-ticket"]); a=p.parse_args()
+    p=argparse.ArgumentParser(); p.add_argument("mode",choices=["generate","run"]); p.add_argument("run",nargs="?"); p.add_argument("--build"); p.add_argument("--source-run"); p.add_argument("--fault",choices=["control","reset-lots","reset-index","old-start-lots","reset-ticket","wrong-comment"]); a=p.parse_args()
     if a.mode=="generate": generate(); return
     if not a.run or not a.build or not a.source_run or not a.fault: raise SystemExit("run cần RUN, --build, --source-run và --fault")
     run_case(a.run,a.build,a.source_run,a.fault)

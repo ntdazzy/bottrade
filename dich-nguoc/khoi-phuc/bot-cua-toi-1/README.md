@@ -1,9 +1,9 @@
-Đã nối phần chuẩn bị trạng thái giao dịch với cuối khởi động, dùng
-chung mảng khối lượng, chỉ số, giờ và vé lệnh: **639/639 ca khớp**,
-124 giá trị, 1.800 ô bảng và 23.747 lời gọi. Bản gốc chạy liên tục
-qua điểm nối; hai hàm tìm mức và ba hàm bảng được cấp kết quả.
-Đã phát hiện đủ bốn lỗi nối cố ý; 103 tệp nguồn biên dịch 0 lỗi/cảnh báo.
-Chưa là toàn OnInit/EA. [Phạm vi](../danh-gia-doc-lap/startup-joined-20261028-r1/README.md).
+Đã sửa chỗ nối nhầm hai bình luận: **655/655 ca khớp**, 125 giá trị,
+1.800 ô bảng và 24.419 lời gọi. Bản cố ý dùng nhầm bình luận bị phát
+hiện trong 651 ca; bốn lỗi nối cũ vẫn bị phát hiện. Nguồn kiểm và
+103 tệp ghép biên dịch 0 lỗi/cảnh báo. Hai hàm tìm mức và ba hàm bảng
+được cấp kết quả; chưa là toàn OnInit/EA.
+[Phạm vi hiện hành](../danh-gia-doc-lap/startup-comment-binding-20261028-r1/README.md).
 
 Phần cuối khởi động đã so riêng **309/309 ca**, 74 trường và 1.968
 lời gọi; đoạn `0x4e77..0x5658`. Chưa kiểm nhánh lỗi sau `0x5658`.

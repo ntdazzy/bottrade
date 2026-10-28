@@ -1,5 +1,11 @@
 # Nối khởi động sau chuẩn bị đầu — bot 1
 
+**Bản r1 đã được sửa:** bảng dưới gán nhầm bình luận giao dịch
+`0x62470` vào `p.comment`, trong khi trường đó thật sự thuộc `0x62480`.
+639 ca cũ chưa phát hiện được lỗi liên kết này. Dùng
+[bản sửa và 655 ca hiện hành](../startup-comment-binding-20261028-r1/README.md).
+Phần còn lại dưới đây giữ làm hồ sơ lượt r1.
+
 Đã nối `Bot1InitializeTradingState` với `Bot1InitializeStartupTail`
 trong `Bot1StartupPostPreparation.mqh`. Bản gốc chạy liên tục từ
 `0x3cab` đến lệnh trả về `0x5658`, đi qua điểm nối `0x4e77` đúng một

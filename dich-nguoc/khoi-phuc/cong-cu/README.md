@@ -355,4 +355,4 @@ Phép kiểm ghép mới:
   trong một đơn vị dịch; bot1 84 tệp và bot3 91 tệp đều 0 lỗi/0 cảnh báo.
   Đây là kiểm ghép mã, chưa phải kiểm chạy EA.
 - `kiem-noi-khoi-dong-bot-1.py generate | prepare|mql5|original|compare RUN`: so liên tục `0x3cab..0x5658`, giữ chung mảng khối lượng/chỉ số/giờ/vé lệnh; `mql5` cần `--build BUILD`. Hai hàm tìm mức và ba hàm bảng được ghi nhận đối số, dữ liệu MT5 được cấp; chưa là toàn OnInit/EA.
-- `kiem-phu-dinh-noi-khoi-dong-bot-1.py generate | run RUN --build BUILD --source-run SOURCE_RUN --fault control|reset-lots|reset-index|old-start-lots|reset-ticket`: kiểm bản MQL5 cố ý nối sai. `control` phải khớp toàn bộ; bốn lỗi còn lại phải bị phát hiện. Không ghi đè lượt cũ, không sửa nguồn phục hồi.
+- `kiem-phu-dinh-noi-khoi-dong-bot-1.py generate | run RUN --build BUILD --source-run SOURCE_RUN --fault control|reset-lots|reset-index|old-start-lots|reset-ticket|wrong-comment`: kiểm bản MQL5 cố ý nối sai. `control` phải khớp toàn bộ; năm lỗi còn lại phải bị phát hiện. Không ghi đè lượt cũ, không sửa nguồn phục hồi.
