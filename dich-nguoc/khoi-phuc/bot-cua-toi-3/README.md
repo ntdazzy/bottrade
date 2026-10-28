@@ -1,3 +1,8 @@
+Đã chạy cả thân đổi giờ mùa hè và đổi tiền trong phần nối khởi động:
+**344/344 ca khớp**, 18.982 lời gọi/thông báo; giữ chung 47 trường và
+5 chuỗi. Biên dịch 0 lỗi, 0 cảnh báo. Còn chuẩn bị đầu/phần sau và
+EA hoàn chỉnh. [Bằng chứng](../danh-gia-doc-lap/startup-selection-live-bot3-20261029-r1/README.md).
+
 Đã nối đổi giờ và chọn tần suất với ngữ cảnh khởi động:
 **233/233 ca khớp**, 47 trường, 5 chuỗi và 700 lần gọi phần chọn.
 Toàn bộ 108 tệp `.mqh` biên dịch 0 lỗi, 0 cảnh báo. Phép kiểm cấp

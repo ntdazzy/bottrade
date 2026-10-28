@@ -21,6 +21,7 @@
 | Nạp dữ liệu lịch dự phòng và hai cờ | `0x1941..0x3827` | `0x193f..0x3840` |
 | Ngữ cảnh/bộ đếm/đuôi mã trước chuẩn bị | `0x3827..0x3c9d` | `0x3ce6..0x4580`, 298/298 ca |
 | Nối đổi giờ/chọn tần suất với ngữ cảnh | không có đoạn chọn tương ứng | `0x3840..0x4580`, 233/233 ca; kết quả hai hàm mùa hè/đổi tiền được cấp |
+| Thêm thân mùa hè/đổi tiền trong phần nối | ngoài phạm vi lượt này | `0x3840..0x4580`, 344/344 ca; 18.982 lời gọi/thông báo; còn các nhánh lỗi khi đã nối |
 | Nối ngữ cảnh tới trả về | `0x3827..0x5658`, 459/459 ca, cùng trạng thái qua chuẩn bị đầu | chưa dựng đoạn nối tương ứng |
 | Chuẩn bị chiến lược đầu | `0x7500` | `0xe0c0` |
 | Nối chuẩn bị đầu đến trả về | gọi `0x7500` tại `0x3ca9`, chạy tới `0x5658`; 161/161 ca và 3/3 ca lỗi | chưa dựng đoạn nối tương ứng |

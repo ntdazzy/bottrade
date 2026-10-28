@@ -1,0 +1,31 @@
+{
+  "cases": 344,
+  "matched": 344,
+  "failed": 0,
+  "first_failures": [],
+  "full_ea": false,
+  "native_startup_context_executed": true,
+  "native_string_helpers_executed": true,
+  "mulsd_executed_on_host_cpu": true,
+  "caller_xmm6_zero_supplied": false,
+  "caller_string_return_buffer_primed": true,
+  "string_allocation_success_supplied": true,
+  "allocation_failures_tested": false,
+  "original_ex5_changed": false,
+  "whole_bot_complete": false,
+  "whole_manager_complete": false,
+  "authorization_executed": false,
+  "authorization_entry_guarded": true,
+  "frequency_selection_executed": true,
+  "first_preparation_executed": false,
+  "adjusted_time_computation_executed": true,
+  "dst_child_reply_supplied": false,
+  "currency_child_reply_supplied": false,
+  "native_dst_body_executed": true,
+  "native_currency_body_executed": true,
+  "terminal_sdk_replies_supplied": true,
+  "currency_division_errors_tested": false,
+  "limits": [
+    "Startup context before first preparation only. Actual DST/currency bodies run; terminal SDK replies and non-null string-return buffer supplied; allocation failures, full static initializer, full OnInit and EA excluded."
+  ]
+}
