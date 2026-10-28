@@ -1,0 +1,9 @@
+{
+  "original_ex5_changed": false,
+  "bots": {
+    "1": {"function_rva": "0x5880", "end_rva": "0x61a9", "bytes": 2345, "body_sha256": "1caa57050b49fa9922677958447c643a454f9fb0d861b4b646340bd7ca097581", "http_success_status": 200, "http_failure_status": -1, "credential_content_recorded": false},
+    "3": {"function_rva": "0x61a0", "end_rva": "0x6ac9", "bytes": 2345, "body_sha256": "fdea6900667316df733ecd0a459144887c227f737188521a0f67c9b84c65bb8e2", "http_success_status": 200, "http_failure_status": -1, "credential_content_recorded": false}
+  },
+  "scope": "Static native-body evidence only; no network request was sent and no authorization result was fabricated.",
+  "whole_ea_complete": false
+}

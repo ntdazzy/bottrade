@@ -45,6 +45,9 @@ Phần còn thiếu trước khi viết OnInit bàn giao:
 - thứ tự chính xác của các mảng nến, hàng chờ và các nhánh lỗi cấp phát;
 - các sự kiện OnTick/OnDeinit và nơi gọi vòng đánh giá sau khởi tạo.
 
+Thân kiểm quyền đã được băm và mô tả riêng tại
+`authorization-flow-20261028-r1.md`; không ghi khóa hoặc gửi yêu cầu mạng.
+
 Nguồn: `ma-trung-gian.c` dòng 714–2466 và
 `ma-trung-gian-day-du.c` dòng 715–2734; bảng hàm trong
 `metadata/import.json`. Không dùng đặc tả này để vượt kiểm quyền hay
