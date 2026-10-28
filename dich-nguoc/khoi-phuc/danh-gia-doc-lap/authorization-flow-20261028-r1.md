@@ -28,3 +28,10 @@ chứa nội dung khóa. Không sửa EX5 hay thay kết quả kiểm quyền.
 Chưa đưa hàm này vào EA nguồn vì cần xác định đầu vào cấp phép hợp lệ
 và cách cấp `WebRequest` trong môi trường được phép. Cổng khởi tạo hiện
 nhận kết quả kiểm quyền từ bên ngoài và giữ nhánh từ chối đúng hành vi.
+
+Đã chốt riêng cây số trong hàm con bot 1 `0x3d6c0`: **1.075 giá trị**
+được phép, chứng minh trên toàn miền 64 bit và đối chiếu 5.000 đầu
+vào với mã gốc, 0 sai khác. Bộ trích C cũ thiếu 47 giá trị nên không
+được dùng làm bảng hoàn chỉnh. Dữ liệu riêng giữ ở `.local/`;
+[bằng chứng và phạm vi](authorization-login-tree-20261028-r1/README.md).
+226 cặp chuỗi cùng các nhánh mạng/dự phòng vẫn chưa kiểm đủ.

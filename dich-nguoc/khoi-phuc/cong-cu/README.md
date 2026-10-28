@@ -24,6 +24,8 @@
 - `kiem-khoi-tao-von-bot-1-3.py`: lượt mới khớp 616/616 ca vốn/tài khoản cho mỗi bot; phạm vi chỉ là phần khởi tạo vốn độc lập.
 - `BotNInitializationGate.mqh`: giữ cờ hoạt động/chế độ kiểm thử/cờ M1 theo đoạn OnInit đã chốt; không tự vượt kiểm quyền.
 - Bằng chứng tĩnh nhánh kiểm quyền nằm ở `danh-gia-doc-lap/authorization-flow-20261028-r1.md`; không gửi mạng và không lưu khóa.
+- `trich-dieu-kien-tai-khoan-bot-1.py NEW_RUN`: trích riêng 226 cặp chuỗi và ứng viên số từ C, ghi trong `.local/` và không in dữ liệu riêng. Danh sách số từ C chưa đủ, không dùng làm chuẩn bàn giao.
+- `kiem-cay-tai-khoan-goc-bot-1.py NEW_RUN`: dùng Z3 theo lệnh máy để chứng minh cây số trên toàn miền 64 bit, rồi so mọi số cho phép và các biên với hàm gốc. Dãy số chỉ lưu `.local/`; kết quả đã chốt 1.075 giá trị và 5.000 phép đối chiếu. Chưa là toàn hàm quyền dùng.
 
 - `kiem-lich-su-chien-luoc-bot-1-3.py generate BOT | prepare|mql5|original|compare BOT RUN`: toàn hàm lịch sử từng chiến lược và bộ lưu dùng chung, 270ca mỗi bot; `mql5` cần `--build BUILD`. Ba phép cộng chạy trên CPU thật sau đối chứng100cặp; các dịch vụ/dãy được đo trên MT5 riêng.
 - `kiem-loi-lich-su-chien-luoc-bot-1-3.py generate BOT | run BOT RUN --build BUILD`: bốn nhánh lỗi dãy, so lời gọi/trạng thái ngay trước lỗi; MT5 cố ý dừng với mã4294967295, không gọi là thoát thường.

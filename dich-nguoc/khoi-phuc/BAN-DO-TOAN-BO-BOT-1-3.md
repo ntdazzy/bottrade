@@ -172,6 +172,14 @@ Chỉ tới trước cờ hoạt động/kiểm quyền dùng, chưa là toàn b
 
 ## Điều kiện để bắt đầu từng phần và để chốt toàn bộ
 
+P30 có bằng chứng mới cho cây số tài khoản bot 1: chứng minh từ
+lệnh máy đủ 1.075 giá trị cho phép trên toàn miền 64 bit; kiểm thêm
+5.000 đầu vào với hàm gốc, không sai khác. Bản trích C thiếu 47 giá
+trị, đã được thay bằng dữ liệu đã kiểm trong thư mục riêng. Còn
+226 cặp chuỗi, hàm quyền dùng bên ngoài và nhánh mạng/dự phòng;
+không đánh dấu hoàn tất P30.
+[Bằng chứng](danh-gia-doc-lap/authorization-login-tree-20261028-r1/README.md).
+
 Trước khi viết một phần, phải đi từ hàng tương ứng đến toàn bộ các hàm
 và nhánh liên quan, chỉ rõ đầu vào/đầu ra, điều kiện kích hoạt, thứ tự
 và trường hợp lỗi. Chỗ chưa chốt được vẫn nằm trong danh sách, không
