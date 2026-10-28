@@ -192,9 +192,11 @@ Còn phần trước, hai thân tìm mức, ba thân bảng và các nhánh lỗ
 [Bằng chứng phần nối](danh-gia-doc-lap/startup-post-preparation-bot3-20261029-r1/README.md).
 [Bằng chứng chuẩn bị đầu](danh-gia-doc-lap/startup-preparation-flow-bot3-20261029-r1/README.md).
 Đã nối thêm ngữ cảnh từ `0x3ce6` tới trả về: **531/531 ca**, 248
-trường, dãy chỉ báo/2.800 ô. Còn ghép phần đổi giờ/chọn tần suất
-`0x3840..0x3ce6` và các phần phía trước vào cùng lần chạy.
+trường, dãy chỉ báo/2.800 ô. Đã nối cả đoạn đổi giờ/chọn tần suất
+từ `0x3840`: **224/224 ca**, 274 trường; nguyên thân mùa hè/đổi tiền
+chạy trong cùng lượt. Còn tài khoản/lịch tin phía trước.
 [Bằng chứng ngữ cảnh nối](danh-gia-doc-lap/startup-context-flow-bot3-20261029-r1/README.md).
+[Bằng chứng phần chọn nối](danh-gia-doc-lap/startup-selection-flow-bot3-20261029-r1/README.md).
 
 P30 tiếp tục bằng phân tích tĩnh toàn luồng. Không dùng cờ/tài khoản/
 trạng thái cấp quyền giả lập để chạy phần bảo vệ. Chưa xác nhận đầy

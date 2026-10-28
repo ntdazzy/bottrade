@@ -1,3 +1,10 @@
+Đã nối đổi giờ/chọn tần suất, ngữ cảnh, chuẩn bị và đuôi:
+**224/224 ca khớp**, 274 trường, dãy chỉ báo và 2.800 ô. Thân đổi
+giờ/đổi tiền chạy thật; 114 tệp `.mqh` biên dịch 0 lỗi, 0 cảnh báo.
+Còn phần tài khoản/lịch tin phía trước, các thân tìm mức/bảng trong
+phép kiểm nối và EA đầy đủ.
+[Bằng chứng](../danh-gia-doc-lap/startup-selection-flow-bot3-20261029-r1/README.md).
+
 Đã nối tạo trạng thái ban đầu, chuẩn bị và đuôi: **531/531 ca khớp**,
 248 trường, dãy chỉ báo và 2.800 ô; không đặt lại dữ liệu ở điểm nối.
 113 tệp `.mqh` biên dịch 0 lỗi, 0 cảnh báo. Còn ghép phần chọn

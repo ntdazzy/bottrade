@@ -22,6 +22,7 @@
 | Ngữ cảnh/bộ đếm/đuôi mã trước chuẩn bị | `0x3827..0x3c9d` | `0x3ce6..0x4580`, 298/298 ca |
 | Nối đổi giờ/chọn tần suất với ngữ cảnh | không có đoạn chọn tương ứng | `0x3840..0x4580`, 233/233 ca; kết quả hai hàm mùa hè/đổi tiền được cấp |
 | Thêm thân mùa hè/đổi tiền trong phần nối | ngoài phạm vi lượt này | `0x3840..0x4580`, 344/344 ca; 18.982 lời gọi/thông báo; còn các nhánh lỗi khi đã nối |
+| Nối chọn tần suất tới trả về | không có đoạn chọn tương ứng | `0x3840..0x5f34`, 224/224 ca, 274 trường/2.800 ô; nguyên thân mùa hè/đổi tiền/chuẩn bị |
 | Nối ngữ cảnh tới trả về | `0x3827..0x5658`, 459/459 ca, cùng trạng thái qua chuẩn bị đầu | `0x3ce6..0x5f34`, 531/531 ca, 248 trường/dãy chỉ báo/2.800 ô; chưa ghép chọn tần suất phía trước |
 | Chuẩn bị chiến lược đầu | `0x7500` | `0xe0c0` |
 | Bốn chuỗi ghi chú, lịch sử và thứ tự bảng tới trả về | `0x4e77..0x5658` | `0x574c..0x5f34`, 222/222 ca; ba thân bảng được thay bằng bộ ghi, chưa nối đoạn giữa |
