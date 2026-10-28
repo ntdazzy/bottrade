@@ -108,4 +108,6 @@
 #include "../../Include/bot-cua-toi-3/Bot3InitializationGate.mqh"
 #include "../../Include/bot-cua-toi-3/Bot3StartupSelectionContext.mqh"
 #include "../../Include/bot-cua-toi-3/Bot3StartupTail.mqh"
+#include "../../Include/bot-cua-toi-3/Bot3StartupTradingState.mqh"
+#include "../../Include/bot-cua-toi-3/Bot3StartupPostPreparation.mqh"
 void OnStart() { Print("Bot3AllHeadersAPICompile"); }

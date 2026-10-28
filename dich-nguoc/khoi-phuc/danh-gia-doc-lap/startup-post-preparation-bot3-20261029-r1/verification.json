@@ -1,0 +1,961 @@
+{
+  "bot": 3,
+  "runs": [
+    {
+      "run": "b3-startup-trading-20261029-r1",
+      "cases": 315,
+      "fields": 53,
+      "table_cells": 2800,
+      "sdk_calls": 7971,
+      "cpu_arithmetic_calls": 9455,
+      "joins": null,
+      "result_sha256": "7c7917ef62a1d96116596f3ae2e17d0581fff115b190f342dcb09d9f7bbc87ac",
+      "original_ex5_sha256": "ee063d3d87490afe24e2f4ce85f6b05659320e297b102efd70207f71ca2feb83",
+      "native_init_sha256": "66812ca6397edc00b872cfc3b38ca7606cc3dc7d5cf084433c579ea13e90771c"
+    },
+    {
+      "run": "b3-startup-joined-20261029-r1",
+      "cases": 569,
+      "fields": 130,
+      "table_cells": 2800,
+      "sdk_calls": 21354,
+      "cpu_arithmetic_calls": 17039,
+      "joins": 569,
+      "result_sha256": "6f2152ac5c1c0df0902c047adfcea4f8eb310076aaadac766645426a6ebb26fa",
+      "original_ex5_sha256": "ee063d3d87490afe24e2f4ce85f6b05659320e297b102efd70207f71ca2feb83",
+      "native_init_sha256": "66812ca6397edc00b872cfc3b38ca7606cc3dc7d5cf084433c579ea13e90771c"
+    }
+  ],
+  "builds": [
+    "b3-startup-trading-check-20261029-r1",
+    "b3-startup-joined-check-20261029-r1",
+    "b3-all-headers-api-20261029-r4"
+  ],
+  "all_headers_count": 111,
+  "middle_fields": [
+    {
+      "source": "P.native_6d50c",
+      "format": "i",
+      "rva": "0x6d50c"
+    },
+    {
+      "source": "State.native_6d645",
+      "format": "B",
+      "rva": "0x6d645"
+    },
+    {
+      "source": "P.strategy_index",
+      "format": "I",
+      "rva": "0x74934"
+    },
+    {
+      "source": "P.entry_frame",
+      "format": "i",
+      "rva": "0x6d524"
+    },
+    {
+      "source": "P.management_timeframe",
+      "format": "i",
+      "rva": "0x6d584"
+    },
+    {
+      "source": "P.tick.ask",
+      "format": "d",
+      "rva": "0x747a0"
+    },
+    {
+      "source": "P.tick.bid",
+      "format": "d",
+      "rva": "0x74798"
+    },
+    {
+      "source": "P.spread",
+      "format": "d",
+      "rva": "0x6d650"
+    },
+    {
+      "source": "P.native_6d620",
+      "format": "d",
+      "rva": "0x6d620"
+    },
+    {
+      "source": "P.unit",
+      "format": "d",
+      "rva": "0x73dd8"
+    },
+    {
+      "source": "P.min_change",
+      "format": "d",
+      "rva": "0x6d610"
+    },
+    {
+      "source": "P.stop_min_price",
+      "format": "d",
+      "rva": "0x73ab0"
+    },
+    {
+      "source": "P.freeze_min_price",
+      "format": "d",
+      "rva": "0x744a8"
+    },
+    {
+      "source": "P.stop_distance",
+      "format": "d",
+      "rva": "0x6d588"
+    },
+    {
+      "source": "P.target_distance",
+      "format": "d",
+      "rva": "0x6d590"
+    },
+    {
+      "source": "P.trigger_distance",
+      "format": "d",
+      "rva": "0x6d5b8"
+    },
+    {
+      "source": "P.locked_distance",
+      "format": "d",
+      "rva": "0x6d5c0"
+    },
+    {
+      "source": "P.freeze_buffer",
+      "format": "i",
+      "rva": "0x6d4d8"
+    },
+    {
+      "source": "P.trail_distance",
+      "format": "d",
+      "rva": "0x6d598"
+    },
+    {
+      "source": "P.native_6d5e8",
+      "format": "d",
+      "rva": "0x6d5e8"
+    },
+    {
+      "source": "P.native_6d5f0",
+      "format": "d",
+      "rva": "0x6d5f0"
+    },
+    {
+      "source": "P.gap_points",
+      "format": "d",
+      "rva": "0x6d538"
+    },
+    {
+      "source": "P.older_width",
+      "format": "i",
+      "rva": "0x6d528"
+    },
+    {
+      "source": "P.recent_width",
+      "format": "i",
+      "rva": "0x6d52c"
+    },
+    {
+      "source": "P.expiration_hours",
+      "format": "i",
+      "rva": "0x6d560"
+    },
+    {
+      "source": "P.virtual_expiration",
+      "format": "B",
+      "rva": "0x6d511"
+    },
+    {
+      "source": "P.expiration_seconds",
+      "format": "I",
+      "rva": "0x73de0"
+    },
+    {
+      "source": "P.expiration",
+      "format": "q",
+      "rva": "0x74490"
+    },
+    {
+      "source": "Nfp.notice",
+      "format": "B",
+      "rva": "0x74474"
+    },
+    {
+      "source": "Nfp.blocked",
+      "format": "B",
+      "rva": "0x744c8"
+    },
+    {
+      "source": "Interest.blocked",
+      "format": "B",
+      "rva": "0x744c9"
+    },
+    {
+      "source": "Cpi.blocked",
+      "format": "B",
+      "rva": "0x744ca"
+    },
+    {
+      "source": "State.week_bar",
+      "format": "q",
+      "rva": "0x744b8"
+    },
+    {
+      "source": "P.max_spread",
+      "format": "d",
+      "rva": "0x6d4d0"
+    },
+    {
+      "source": "MinimumSpread",
+      "format": "d",
+      "rva": "0x6d648"
+    },
+    {
+      "source": "Inputs.entry.confirmation_frame",
+      "format": "i",
+      "rva": "0x6d2b4"
+    },
+    {
+      "source": "Magic",
+      "format": "i",
+      "rva": "0x6d564"
+    },
+    {
+      "source": "P.last_shift",
+      "format": "i",
+      "rva": "0x6d530"
+    },
+    {
+      "source": "P.buy_offset",
+      "format": "d",
+      "rva": "0x6d540"
+    },
+    {
+      "source": "P.sell_offset",
+      "format": "d",
+      "rva": "0x6d548"
+    },
+    {
+      "source": "P.nearby_radius",
+      "format": "d",
+      "rva": "0x6d558"
+    },
+    {
+      "source": "LastTicket",
+      "format": "Q",
+      "rva": "0x74838"
+    },
+    {
+      "source": "Entry.candidate_buy",
+      "format": "d",
+      "rva": "0x74480"
+    },
+    {
+      "source": "Entry.candidate_sell",
+      "format": "d",
+      "rva": "0x74478"
+    },
+    {
+      "source": "Entry.rounded_buy",
+      "format": "d",
+      "rva": "0x6d660"
+    },
+    {
+      "source": "Entry.rounded_sell",
+      "format": "d",
+      "rva": "0x6d668"
+    },
+    {
+      "source": "Levels.blocked",
+      "format": "B",
+      "rva": "0x74498"
+    },
+    {
+      "source": "Manager.counter",
+      "format": "i",
+      "rva": "0x74430"
+    },
+    {
+      "source": "State.timed_delay_seconds",
+      "format": "i",
+      "rva": "0x7449c"
+    },
+    {
+      "source": "Manager.current_stop",
+      "format": "d",
+      "rva": "0x6d670"
+    },
+    {
+      "source": "P.native_6d628",
+      "format": "d",
+      "rva": "0x6d628"
+    },
+    {
+      "source": "Manager.table.guard",
+      "format": "B",
+      "rva": "0x73450"
+    },
+    {
+      "source": "Queue.enabled",
+      "format": "B",
+      "rva": "0x73468"
+    }
+  ],
+  "joined_fields": [
+    {
+      "source": "P.native_6d50c",
+      "format": "i",
+      "rva": "0x6d50c"
+    },
+    {
+      "source": "State.native_6d645",
+      "format": "B",
+      "rva": "0x6d645"
+    },
+    {
+      "source": "P.strategy_index",
+      "format": "I",
+      "rva": "0x74934"
+    },
+    {
+      "source": "P.entry_frame",
+      "format": "i",
+      "rva": "0x6d524"
+    },
+    {
+      "source": "P.management_timeframe",
+      "format": "i",
+      "rva": "0x6d584"
+    },
+    {
+      "source": "P.tick.ask",
+      "format": "d",
+      "rva": "0x747a0"
+    },
+    {
+      "source": "P.tick.bid",
+      "format": "d",
+      "rva": "0x74798"
+    },
+    {
+      "source": "P.spread",
+      "format": "d",
+      "rva": "0x6d650"
+    },
+    {
+      "source": "P.native_6d620",
+      "format": "d",
+      "rva": "0x6d620"
+    },
+    {
+      "source": "P.unit",
+      "format": "d",
+      "rva": "0x73dd8"
+    },
+    {
+      "source": "P.min_change",
+      "format": "d",
+      "rva": "0x6d610"
+    },
+    {
+      "source": "P.stop_min_price",
+      "format": "d",
+      "rva": "0x73ab0"
+    },
+    {
+      "source": "P.freeze_min_price",
+      "format": "d",
+      "rva": "0x744a8"
+    },
+    {
+      "source": "P.stop_distance",
+      "format": "d",
+      "rva": "0x6d588"
+    },
+    {
+      "source": "P.target_distance",
+      "format": "d",
+      "rva": "0x6d590"
+    },
+    {
+      "source": "P.trigger_distance",
+      "format": "d",
+      "rva": "0x6d5b8"
+    },
+    {
+      "source": "P.locked_distance",
+      "format": "d",
+      "rva": "0x6d5c0"
+    },
+    {
+      "source": "P.freeze_buffer",
+      "format": "i",
+      "rva": "0x6d4d8"
+    },
+    {
+      "source": "P.trail_distance",
+      "format": "d",
+      "rva": "0x6d598"
+    },
+    {
+      "source": "P.native_6d5e8",
+      "format": "d",
+      "rva": "0x6d5e8"
+    },
+    {
+      "source": "P.native_6d5f0",
+      "format": "d",
+      "rva": "0x6d5f0"
+    },
+    {
+      "source": "P.gap_points",
+      "format": "d",
+      "rva": "0x6d538"
+    },
+    {
+      "source": "P.older_width",
+      "format": "i",
+      "rva": "0x6d528"
+    },
+    {
+      "source": "P.recent_width",
+      "format": "i",
+      "rva": "0x6d52c"
+    },
+    {
+      "source": "P.expiration_hours",
+      "format": "i",
+      "rva": "0x6d560"
+    },
+    {
+      "source": "P.virtual_expiration",
+      "format": "B",
+      "rva": "0x6d511"
+    },
+    {
+      "source": "P.expiration_seconds",
+      "format": "I",
+      "rva": "0x73de0"
+    },
+    {
+      "source": "P.expiration",
+      "format": "q",
+      "rva": "0x74490"
+    },
+    {
+      "source": "Nfp.notice",
+      "format": "B",
+      "rva": "0x74474"
+    },
+    {
+      "source": "Nfp.blocked",
+      "format": "B",
+      "rva": "0x744c8"
+    },
+    {
+      "source": "Interest.blocked",
+      "format": "B",
+      "rva": "0x744c9"
+    },
+    {
+      "source": "Cpi.blocked",
+      "format": "B",
+      "rva": "0x744ca"
+    },
+    {
+      "source": "State.week_bar",
+      "format": "q",
+      "rva": "0x744b8"
+    },
+    {
+      "source": "P.max_spread",
+      "format": "d",
+      "rva": "0x6d4d0"
+    },
+    {
+      "source": "MinimumSpread",
+      "format": "d",
+      "rva": "0x6d648"
+    },
+    {
+      "source": "Inputs.entry.confirmation_frame",
+      "format": "i",
+      "rva": "0x6d2b4"
+    },
+    {
+      "source": "Magic",
+      "format": "i",
+      "rva": "0x6d564"
+    },
+    {
+      "source": "P.last_shift",
+      "format": "i",
+      "rva": "0x6d530"
+    },
+    {
+      "source": "P.buy_offset",
+      "format": "d",
+      "rva": "0x6d540"
+    },
+    {
+      "source": "P.sell_offset",
+      "format": "d",
+      "rva": "0x6d548"
+    },
+    {
+      "source": "P.nearby_radius",
+      "format": "d",
+      "rva": "0x6d558"
+    },
+    {
+      "source": "LastTicket",
+      "format": "Q",
+      "rva": "0x74838"
+    },
+    {
+      "source": "Entry.candidate_buy",
+      "format": "d",
+      "rva": "0x74480"
+    },
+    {
+      "source": "Entry.candidate_sell",
+      "format": "d",
+      "rva": "0x74478"
+    },
+    {
+      "source": "Entry.rounded_buy",
+      "format": "d",
+      "rva": "0x6d660"
+    },
+    {
+      "source": "Entry.rounded_sell",
+      "format": "d",
+      "rva": "0x6d668"
+    },
+    {
+      "source": "Levels.blocked",
+      "format": "B",
+      "rva": "0x74498"
+    },
+    {
+      "source": "Manager.counter",
+      "format": "i",
+      "rva": "0x74430"
+    },
+    {
+      "source": "State.timed_delay_seconds",
+      "format": "i",
+      "rva": "0x7449c"
+    },
+    {
+      "source": "Manager.current_stop",
+      "format": "d",
+      "rva": "0x6d670"
+    },
+    {
+      "source": "P.native_6d628",
+      "format": "d",
+      "rva": "0x6d628"
+    },
+    {
+      "source": "Manager.table.guard",
+      "format": "B",
+      "rva": "0x73450"
+    },
+    {
+      "source": "Queue.enabled",
+      "format": "B",
+      "rva": "0x73468"
+    },
+    {
+      "source": "P.comment",
+      "format": "s",
+      "rva": "0x6d578"
+    },
+    {
+      "source": "Panel.font",
+      "format": "i",
+      "rva": "0x1d6f50"
+    },
+    {
+      "source": "Panel.scale",
+      "format": "d",
+      "rva": "0x1d6f48"
+    },
+    {
+      "source": "Panel.color_flag",
+      "format": "B",
+      "rva": "0x74938"
+    },
+    {
+      "source": "Panel.mode",
+      "format": "I",
+      "rva": "0x6d630"
+    },
+    {
+      "source": "Panel.strategy_risk",
+      "format": "d",
+      "rva": "0x1d7150"
+    },
+    {
+      "source": "Panel.frequency",
+      "format": "i",
+      "rva": "0x6d21c"
+    },
+    {
+      "source": "Panel.manual_lots",
+      "format": "d",
+      "rva": "0x1d7138"
+    },
+    {
+      "source": "Panel.allowed_dd",
+      "format": "d",
+      "rva": "0x1d7140"
+    },
+    {
+      "source": "Panel.cell_x",
+      "format": "d",
+      "rva": "0x752d8"
+    },
+    {
+      "source": "Panel.cell_y",
+      "format": "d",
+      "rva": "0x752e0"
+    },
+    {
+      "source": "Panel.cell_font_flag",
+      "format": "B",
+      "rva": "0x752e8"
+    },
+    {
+      "source": "Panel.closed_star",
+      "format": "B",
+      "rva": "0x6d43c"
+    },
+    {
+      "source": "Panel.rows_ready",
+      "format": "B",
+      "rva": "0x74970"
+    },
+    {
+      "source": "Panel.closed[0]",
+      "format": "d",
+      "rva": "0x76fc0"
+    },
+    {
+      "source": "Panel.closed[1]",
+      "format": "d",
+      "rva": "0x76fc8"
+    },
+    {
+      "source": "Panel.closed[2]",
+      "format": "d",
+      "rva": "0x76fd0"
+    },
+    {
+      "source": "Panel.closed[3]",
+      "format": "d",
+      "rva": "0x76fd8"
+    },
+    {
+      "source": "Panel.closed[4]",
+      "format": "d",
+      "rva": "0x76fe0"
+    },
+    {
+      "source": "Panel.closed[5]",
+      "format": "d",
+      "rva": "0x76fe8"
+    },
+    {
+      "source": "Panel.closed[6]",
+      "format": "d",
+      "rva": "0x76ff0"
+    },
+    {
+      "source": "Panel.closed[7]",
+      "format": "d",
+      "rva": "0x76ff8"
+    },
+    {
+      "source": "Panel.closed[8]",
+      "format": "d",
+      "rva": "0x77000"
+    },
+    {
+      "source": "Panel.per_trade[0]",
+      "format": "d",
+      "rva": "0x74b10"
+    },
+    {
+      "source": "Panel.per_trade[1]",
+      "format": "d",
+      "rva": "0x74b18"
+    },
+    {
+      "source": "Panel.per_trade[2]",
+      "format": "d",
+      "rva": "0x74b20"
+    },
+    {
+      "source": "Panel.per_trade[3]",
+      "format": "d",
+      "rva": "0x74b28"
+    },
+    {
+      "source": "Panel.per_trade[4]",
+      "format": "d",
+      "rva": "0x74b30"
+    },
+    {
+      "source": "Panel.per_trade[5]",
+      "format": "d",
+      "rva": "0x74b38"
+    },
+    {
+      "source": "Panel.per_trade[6]",
+      "format": "d",
+      "rva": "0x74b40"
+    },
+    {
+      "source": "Panel.per_trade[7]",
+      "format": "d",
+      "rva": "0x74b48"
+    },
+    {
+      "source": "Panel.per_trade[8]",
+      "format": "d",
+      "rva": "0x74b50"
+    },
+    {
+      "source": "Panel.lots[0]",
+      "format": "d",
+      "rva": "0x73ac0"
+    },
+    {
+      "source": "Panel.lots[1]",
+      "format": "d",
+      "rva": "0x73ac8"
+    },
+    {
+      "source": "Panel.lots[2]",
+      "format": "d",
+      "rva": "0x73ad0"
+    },
+    {
+      "source": "Panel.lots[3]",
+      "format": "d",
+      "rva": "0x73ad8"
+    },
+    {
+      "source": "Panel.lots[4]",
+      "format": "d",
+      "rva": "0x73ae0"
+    },
+    {
+      "source": "Panel.lots[5]",
+      "format": "d",
+      "rva": "0x73ae8"
+    },
+    {
+      "source": "Panel.lots[6]",
+      "format": "d",
+      "rva": "0x73af0"
+    },
+    {
+      "source": "Panel.lots[7]",
+      "format": "d",
+      "rva": "0x73af8"
+    },
+    {
+      "source": "Panel.lots[8]",
+      "format": "d",
+      "rva": "0x73b00"
+    },
+    {
+      "source": "Events.nfp",
+      "format": "q",
+      "rva": "0x1d6c70"
+    },
+    {
+      "source": "Events.interest",
+      "format": "q",
+      "rva": "0x1d6c78"
+    },
+    {
+      "source": "Events.cpi",
+      "format": "q",
+      "rva": "0x1d6c80"
+    },
+    {
+      "source": "Windows.nfp_enabled",
+      "format": "B",
+      "rva": "0x1d7020"
+    },
+    {
+      "source": "Windows.interest_enabled",
+      "format": "B",
+      "rva": "0x1d7078"
+    },
+    {
+      "source": "Windows.cpi_enabled",
+      "format": "B",
+      "rva": "0x1d70b0"
+    },
+    {
+      "source": "Windows.nfp_after",
+      "format": "i",
+      "rva": "0x1d7060"
+    },
+    {
+      "source": "Windows.interest_after",
+      "format": "i",
+      "rva": "0x1d7098"
+    },
+    {
+      "source": "Windows.cpi_after",
+      "format": "i",
+      "rva": "0x1d70d0"
+    },
+    {
+      "source": "Selection.block_time",
+      "format": "q",
+      "rva": "0x1d6ca0"
+    },
+    {
+      "source": "Selection.label",
+      "format": "s",
+      "rva": "0x1d6ca8"
+    },
+    {
+      "source": "P.calendar.hour",
+      "format": "i",
+      "rva": "0x747dc"
+    },
+    {
+      "source": "LastHour",
+      "format": "i",
+      "rva": "0x74488"
+    },
+    {
+      "source": "Show",
+      "format": "B",
+      "rva": "0x1d6f38"
+    },
+    {
+      "source": "Tester",
+      "format": "B",
+      "rva": "0x1d6f40"
+    },
+    {
+      "source": "HistoryWindow",
+      "format": "B",
+      "rva": "0x6d43d"
+    },
+    {
+      "source": "Seed",
+      "format": "i",
+      "rva": "0x1d6ff0"
+    },
+    {
+      "source": "Balance",
+      "format": "d",
+      "rva": "0x1d6c60"
+    },
+    {
+      "source": "Wins",
+      "format": "d",
+      "rva": "0x74940"
+    },
+    {
+      "source": "Losses",
+      "format": "d",
+      "rva": "0x74948"
+    },
+    {
+      "source": "OrderComment",
+      "format": "s",
+      "rva": "0x6d568"
+    },
+    {
+      "source": "Inputs.symbol",
+      "format": "s",
+      "rva": "0x74958"
+    },
+    {
+      "source": "TailState.buy_first",
+      "format": "s",
+      "rva": "0x74438"
+    },
+    {
+      "source": "TailState.buy_second",
+      "format": "s",
+      "rva": "0x74448"
+    },
+    {
+      "source": "TailState.sell_first",
+      "format": "s",
+      "rva": "0x74458"
+    },
+    {
+      "source": "TailState.sell_second",
+      "format": "s",
+      "rva": "0x74468"
+    },
+    {
+      "source": "TailState.flag_744a0",
+      "format": "B",
+      "rva": "0x744a0"
+    },
+    {
+      "source": "TailBars[0]",
+      "format": "q",
+      "rva": "0x73470"
+    },
+    {
+      "source": "TailBars[1]",
+      "format": "q",
+      "rva": "0x73478"
+    },
+    {
+      "source": "TailBars[2]",
+      "format": "q",
+      "rva": "0x73480"
+    },
+    {
+      "source": "TailBars[3]",
+      "format": "q",
+      "rva": "0x73488"
+    },
+    {
+      "source": "TailBars[4]",
+      "format": "q",
+      "rva": "0x73490"
+    },
+    {
+      "source": "TailBars[5]",
+      "format": "q",
+      "rva": "0x73498"
+    },
+    {
+      "source": "TailBars[6]",
+      "format": "q",
+      "rva": "0x734a0"
+    },
+    {
+      "source": "TailBars[7]",
+      "format": "q",
+      "rva": "0x734a8"
+    },
+    {
+      "source": "TailBars[8]",
+      "format": "q",
+      "rva": "0x734b0"
+    }
+  ],
+  "whole_bot_complete": false,
+  "full_ea": false,
+  "authorization_executed": false,
+  "authorization_entry_guarded": true,
+  "entry_level_children_supplied": true,
+  "panel_children_recorded": true,
+  "join_state_reset": false
+}

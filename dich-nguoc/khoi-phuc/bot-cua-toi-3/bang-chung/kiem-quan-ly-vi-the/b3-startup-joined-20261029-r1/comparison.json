@@ -1,0 +1,25 @@
+{
+  "cases": 569,
+  "matched": 569,
+  "failed": 0,
+  "first_failures": [],
+  "fields": 130,
+  "table_cells": 2800,
+  "whole_bot_complete": false,
+  "whole_manager_complete": false,
+  "full_ea": false,
+  "native_continuous_post_preparation_executed": true,
+  "join_state_reset": false,
+  "entry_level_children_supplied": true,
+  "panel_children_recorded": true,
+  "terminal_replies_supplied": true,
+  "host_cpu_arithmetic": true,
+  "allocation_success_supplied": true,
+  "original_ex5_changed": false,
+  "authorization_executed": false,
+  "authorization_entry_guarded": true,
+  "virtual_take_table_checked": true,
+  "limits": [
+    "Continuous after first preparation through normal return only. Two entry-level and three panel children recorded; terminal replies and allocation success supplied. Zero-unit, allocation failures, earlier OnInit and full EA remain unverified."
+  ]
+}

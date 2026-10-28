@@ -1,0 +1,22 @@
+{
+  "cases": 315,
+  "matched": 315,
+  "failed": 0,
+  "first_failures": [],
+  "fields": 53,
+  "table_cells": 2800,
+  "whole_bot_complete": false,
+  "whole_manager_complete": false,
+  "full_ea": false,
+  "native_post_preparation_executed": true,
+  "entry_level_children_supplied": true,
+  "terminal_replies_supplied": true,
+  "host_cpu_arithmetic": true,
+  "original_ex5_changed": false,
+  "authorization_executed": false,
+  "authorization_entry_guarded": true,
+  "virtual_take_table_checked": true,
+  "limits": [
+    "After first preparation only. Entry-level children and terminal replies supplied. Zero-unit errors, allocation failures, object names, history/panel tail and full EA remain unverified."
+  ]
+}

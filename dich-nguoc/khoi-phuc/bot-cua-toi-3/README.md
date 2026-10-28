@@ -1,3 +1,10 @@
+Đã nối đoạn sau chuẩn bị đầu tới trả về: **569/569 ca khớp**,
+130 trường, 2.800 ô dữ liệu, 21.354 lần gọi. Đoạn giữa so riêng
+**315/315 ca**. 111 tệp `.mqh` biên dịch 0 lỗi, 0 cảnh báo. Hai hàm
+tìm mức và ba hàm bảng được thay bằng bộ ghi trong phép kiểm nối;
+còn ghép phần trước và toàn EA.
+[Bằng chứng](../danh-gia-doc-lap/startup-post-preparation-bot3-20261029-r1/README.md).
+
 Đã dựng đuôi khởi động từ bốn chuỗi ghi chú đến trả về:
 **222/222 ca khớp**, 80 trường, 1.371 lần gọi. Giữ cổng quét lịch sử
 riêng của bot 3; ba thân hàm bảng được thay bằng bộ ghi trong phép

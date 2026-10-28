@@ -26,8 +26,8 @@
 | Chuẩn bị chiến lược đầu | `0x7500` | `0xe0c0` |
 | Bốn chuỗi ghi chú, lịch sử và thứ tự bảng tới trả về | `0x4e77..0x5658` | `0x574c..0x5f34`, 222/222 ca; ba thân bảng được thay bằng bộ ghi, chưa nối đoạn giữa |
 | Nối chuẩn bị đầu đến trả về | gọi `0x7500` tại `0x3ca9`, chạy tới `0x5658`; 161/161 ca và 3/3 ca lỗi | chưa dựng đoạn nối tương ứng |
-| Trạng thái giao dịch sau chuẩn bị | `0x3cab..0x4e77`, gồm nhánh ngoài đến `0x4f4b`; 315/315 ca | chưa dựng đoạn tương ứng |
-| Nối trạng thái giao dịch đến trả về | `0x3cab..0x5658`, 639/639 ca chạy liên tục, chung trạng thái | chưa dựng đoạn tương ứng |
+| Trạng thái giao dịch sau chuẩn bị | `0x3cab..0x4e77`, gồm nhánh ngoài đến `0x4f4b`; 315/315 ca | `0x458e..0x574c`, gồm nhánh ngoài đến `0x5873`; 315/315 ca, 53 trường/2.800 ô |
+| Nối trạng thái giao dịch đến trả về | `0x3cab..0x5658`, 639/639 ca chạy liên tục, chung trạng thái | `0x458e..0x5f34`, 569/569 ca, 130 trường/2.800 ô; hai thân tìm mức và ba thân bảng được thay bằng bộ ghi |
 | Tạo bảng | `0x8320`, `0xe1b0`, `0xffb0` | `0xef40`, `0x14fa0`, `0x16e80` |
 
 Thứ tự gọi thấy được trong mã máy:
