@@ -1,0 +1,26 @@
+{
+  "bot": 3,
+  "run": "b3-dispatch-gate-20261028-r2",
+  "tape_sha256": "55f2a28c325e5f5087fe0123f3834d75caa5008b32dd50a571e1eb048d041a10",
+  "tool_sha256": "13ca09b3d3309d51712e0122bd66c14b192ac401467b66ef36bd4bd189df79ee",
+  "gate_tool_sha256": "a4edd0e507a18d2dda21a104a7488aada4330d0ba12f2beb42396d9faa80e635",
+  "checks": [
+    {
+      "name": "new-bar-obeys-old-stop",
+      "case": 14,
+      "rejected": true,
+      "expected_stop": false,
+      "wrong_stop": true,
+      "original_ex5_changed": false
+    },
+    {
+      "name": "any-nonzero-m1-stops",
+      "case": 24,
+      "rejected": true,
+      "expected_stop": false,
+      "wrong_stop": true,
+      "original_ex5_changed": false
+    }
+  ],
+  "whole_ea_complete": false
+}

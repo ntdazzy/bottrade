@@ -1,0 +1,176 @@
+"""Generate and compare the original dispatcher frequency gate with MQL5.
+
+generate BOT; prepare|mql5 --build BUILD|original|compare BOT RUN.
+Starts at the real outer-function entry, stopping before active/license checks.
+"""
+import argparse,copy,hashlib,importlib.util,json,re,shutil,struct,subprocess
+from pathlib import Path
+ROOT=Path(__file__).resolve().parents[1];MASK=(1<<64)-1;MAGIC=0x47415431
+def module(name,file):
+    s=importlib.util.spec_from_file_location(name,ROOT/'cong-cu'/file);m=importlib.util.module_from_spec(s);s.loader.exec_module(m);return m
+base=module('gate_base','kiem-nfp-toan-nhanh-bot-1-3.py');require=base.require;sha=base.sha;save=base.save;Reader=base.Reader;text=base.text;pub=base.pub
+CFG={1:dict(fn=0x10f60,cont=0x1107c,ret=0x16d74,end=0x173e4,mode=0x621e0,m1=0x621c9,time=0x621d0,bar=0x621d8,symbol=0x517c0,ctx=0x23e575eae78,error=0x6a410,sha='f5edd0f5e9033ddddb289a3419406c06292ce22bff197bea6d10acea1756c721'),
+     3:dict(fn=0x17f00,cont=0x18044,ret=0x1fb27,end=0x1fcf9,mode=0x6d1e8,m1=0x6d1d0,time=0x6d1d8,bar=0x6d1e0,symbol=0x59d00,ctx=0x171514ca538,error=0x1d6e10,sha='ad9ba21d686c6f054138072d755e4851473ddc903acc6f1fc3bf7fe0cad1f714')}
+SCOPE=dict(whole_bot_complete=False,whole_manager_complete=False,full_ea=False,native_dispatch_gate_executed=True,
+           native_outer_entry_executed=True,license_section_executed=False,terminal_replies_supplied=True,original_ex5_changed=False)
+def signed(v):return (int(v)+(1<<63))%(1<<64)-(1<<63)
+def cases():
+    rows=[]
+    def add(tag,**kw):
+        c=dict(id=len(rows),tag=tag,mode=1,m1=0,time=10,bar=100,symbol='XAUUSD',times=[12,20],bars=[100,200],effects=[]);c.update(kw);rows.append(c);return c
+    for mode in [0,1,2,3,254,255]:
+        for m1 in [0,1,2,3,254,255]:
+            for now in [9,10,11,12]:
+                for bar in [99,100,101]:add('byte-flags-time-and-bar',mode=mode,m1=m1,times=[now,20],bars=[bar,200])
+    for last in [-(1<<63),-(1<<63)+1,-1,0,1,(1<<63)-2,(1<<63)-1]:
+        for now in [-(1<<63),-1,0,(1<<63)-1]:
+            for m1 in [0,1,2,255]:add('signed-wrap-time',time=last,times=[now,-99],m1=m1)
+    for last in [-(1<<63),-1,0,(1<<63)-1]:
+        for first in [-(1<<63),-1,0,(1<<63)-1]:add('full-width-bar-and-second-read',bar=last,bars=[first,-777],mode=0,m1=1)
+    for api,n in [(1,1),(1,2),(2,1),(2,2)]:
+        for field in range(1,5):
+            for value in [0,1,2,255]:add('live-state-service-effects',times=[12,20],bars=[101,200],effects=[[api,n,field,value]])
+    for value in [0,1,2,3,254,255]:
+        add('live-mode-before-time-comparison',times=[12,20],bars=[100,200],effects=[[1,1,1,value]])
+        add('live-mode-after-second-time',times=[12,20],bars=[101,200],effects=[[1,2,1,value]])
+    for symbol in [None,'','Vàng.α','XAUUSD.a']:add('original-chart-symbol',symbol=symbol,mode=0,m1=1,bars=[101,200])
+    return rows
+def encode(rows):
+    raw=bytearray(struct.pack('<3i',MAGIC,1,len(rows)))
+    for c in rows:
+        raw+=struct.pack('<i4q',c['id'],c['mode'],c['m1'],c['time'],c['bar'])+text(c['symbol'])
+        for name in ['times','bars']:
+            items=c[name];require(0<len(items)<=256,'REPLY_COUNT');raw+=struct.pack('<i',len(items))+struct.pack('<'+'q'*len(items),*items)
+        raw+=struct.pack('<i',len(c['effects']))
+        for row in c['effects']:raw+=struct.pack('<4q',*row)
+    return bytes(raw)
+SCRIPT=r'''#property strict
+input string CheckRun="";
+datetime MockCurrent();datetime MockBar(const string symbol,const ENUM_TIMEFRAMES frame,const int shift);
+#define TimeCurrent MockCurrent
+#define iTime MockBar
+#include "../../Include/bot-cua-toi-N/BotNDispatchGate.mqh"
+#undef TimeCurrent
+#undef iTime
+BotNDispatchGateState State;uchar Mode,M1;string GateSymbol;
+long Times[256],BarsData[256],Effects[256][4];int TimeCount,BarCount,EffectCount,TimePos,BarPos,Counts[3];
+int Tape,ErrorOverride=-1;bool Final=false,Stopped=false;
+void Word(const ulong value){FileWriteLong(Tape,(long)value);}
+void Text(const string value){int n=value==NULL ? -1 : StringLen(value);FileWriteInteger(Tape,n);if(n>0)FileWriteString(Tape,value,n);}
+string ReadText(const int file){int n=FileReadInteger(file);if(n<0)return NULL;return n==0 ? "" : FileReadString(file,n);}
+void Snapshot(){uint e=ErrorOverride<0 ? GetLastError() : (uint)ErrorOverride;Word(Mode);Word(M1);Word((ulong)State.last_time);Word((ulong)State.last_bar);Text(GateSymbol);Word(e);if(Final)Word((ulong)Stopped);}
+void Begin(){ulong start=FileTell(Tape);FileWriteInteger(Tape,0);Snapshot();ulong end=FileTell(Tape);FileSeek(Tape,(long)start,SEEK_SET);FileWriteInteger(Tape,(int)(end-start-4));FileSeek(Tape,(long)end,SEEK_SET);}
+void Effect(const int api){int n=++Counts[api];for(int i=0;i<EffectCount;i++){if(Effects[i][0]!=api || Effects[i][1]!=n)continue;long f=Effects[i][2],v=Effects[i][3];if(f==1)Mode=(uchar)v;else if(f==2)M1=(uchar)v;else if(f==3)State.last_time=v;else if(f==4)State.last_bar=v;}}
+void End(const int api,const ulong a,const ulong b,const ulong c,const string value=NULL){uint e=GetLastError();FileWriteInteger(Tape,api);Word(a);Word(b);Word(c);Word(0);Text(value);Text(NULL);Text(NULL);Text(NULL);FileWriteInteger(Tape,0);FileWriteInteger(Tape,(int)e);}
+datetime MockCurrent(){Begin();long value=Times[TimePos<TimeCount ? TimePos : TimeCount-1];TimePos++;Effect(1);End(1,(ulong)value,0,0);return (datetime)value;}
+datetime MockBar(const string symbol,const ENUM_TIMEFRAMES frame,const int shift){Begin();long value=BarsData[BarPos<BarCount ? BarPos : BarCount-1];BarPos++;Effect(2);End(2,(ulong)frame,(ulong)(long)shift,(ulong)value,symbol);return (datetime)value;}
+int OnStart()
+{
+   if(CheckRun=="")return 1;string folder="botN-dispatch-gate\\"+CheckRun+"\\";
+   int file=FileOpen(folder+"cases.bin",FILE_READ|FILE_BIN);if(file==INVALID_HANDLE)return 2;
+   int magic=FileReadInteger(file),version=FileReadInteger(file),count=FileReadInteger(file);if(magic!=0x47415431 || version!=1 || count<1)return 3;
+   int output=FileOpen(folder+"mql5-results.bin",FILE_WRITE|FILE_BIN),tapes=FileOpen(folder+"sdk-tape.bin",FILE_WRITE|FILE_BIN);if(output==INVALID_HANDLE || tapes==INVALID_HANDLE)return 4;
+   FileWriteInteger(output,magic);FileWriteInteger(output,version);FileWriteInteger(output,count);FileWriteInteger(tapes,magic);FileWriteInteger(tapes,version);FileWriteInteger(tapes,count);
+   for(int i=0;i<count;i++)
+   {
+      int id=FileReadInteger(file);Mode=(uchar)FileReadLong(file);M1=(uchar)FileReadLong(file);State.last_time=FileReadLong(file);State.last_bar=FileReadLong(file);GateSymbol=ReadText(file);
+      TimeCount=FileReadInteger(file);if(TimeCount<1 || TimeCount>256)return 8;for(int j=0;j<TimeCount;j++)Times[j]=FileReadLong(file);
+      BarCount=FileReadInteger(file);if(BarCount<1 || BarCount>256)return 8;for(int j=0;j<BarCount;j++)BarsData[j]=FileReadLong(file);
+      EffectCount=FileReadInteger(file);if(EffectCount<0 || EffectCount>256)return 8;for(int j=0;j<EffectCount;j++)for(int k=0;k<4;k++)Effects[j][k]=FileReadLong(file);
+      TimePos=0;BarPos=0;ArrayInitialize(Counts,0);string name=folder+"tape-"+IntegerToString(id)+".bin";Tape=FileOpen(name,FILE_WRITE|FILE_BIN);if(Tape==INVALID_HANDLE)return 5;
+      ResetLastError();Final=false;ErrorOverride=-1;Stopped=BotNDispatchGate(Mode,M1,GateSymbol,State);int error=GetLastError();FileClose(Tape);
+      int part=FileOpen(name,FILE_READ|FILE_BIN);if(part==INVALID_HANDLE)return 6;int bytes=(int)FileSize(part);uchar raw[];ArrayResize(raw,bytes);if(bytes>0)FileReadArray(part,raw);FileClose(part);
+      FileWriteInteger(tapes,id);FileWriteInteger(tapes,bytes);if(bytes>0)FileWriteArray(tapes,raw);
+      FileWriteInteger(output,id);Tape=output;Final=true;ErrorOverride=error;Begin();
+   }
+   if(FileTell(file)!=FileSize(file))return 9;FileClose(file);FileClose(output);FileClose(tapes);int status=FileOpen(folder+"script-status.bin",FILE_WRITE|FILE_BIN);if(status==INVALID_HANDLE)return 7;FileWriteInteger(status,0);FileWriteInteger(status,count);FileClose(status);return 0;
+}
+'''
+def generate(bot):
+    folder=ROOT/f'bot-cua-toi-{bot}/source/MQL5/Scripts/bot-cua-toi-{bot}'
+    code=SCRIPT.replace('BotN',f'Bot{bot}').replace('botN',f'bot{bot}').replace('bot-cua-toi-N',f'bot-cua-toi-{bot}')
+    (folder/f'Bot{bot}DispatchGateCheck.mq5').write_text(code,encoding='utf-8',newline='\n')
+    api=f'#property strict\n#include "../../Include/bot-cua-toi-{bot}/Bot{bot}DispatchGate.mqh"\nvoid OnStart()\n{{\n   uchar mode=0,m1=0;string symbol=_Symbol;Bot{bot}DispatchGateState state;ZeroMemory(state);\n   Print(Bot{bot}DispatchGate(mode,m1,symbol,state));\n}}\n'
+    (folder/f'Bot{bot}DispatchGateAPICompile.mq5').write_text(api,encoding='utf-8',newline='\n')
+class Original(base.entry.Original):
+    def __init__(self,bot):
+        super().__init__(bot);self.gate=CFG[bot];c=self.gate
+        require(hashlib.sha256(bytes(self.m.mem_read(self.base+c['fn'],c['end']-c['fn']))).hexdigest()==c['sha'],'OUTER_BYTES_CHANGED')
+        self.sdk={0x7ff683f20000+0x7d1c40:1,0x7ff683f20000+0x7d3b50:2}
+        for a in self.sdk:
+            if not any(lo<=a<=hi for lo,hi,_ in self.m.mem_regions()):self.m.mem_map(a&~4095,4096)
+            self.m.mem_write(a,b'\xc3');self.m.hook_add(self.uc.UC_HOOK_CODE,self.call,begin=a,end=a)
+        self.covered=set();self.m.hook_add(self.uc.UC_HOOK_CODE,self.visit,begin=self.base+c['fn'],end=self.base+c['cont'])
+        self.m.hook_add(self.uc.UC_HOOK_CODE,self.visit,begin=self.base+c['ret'],end=self.base+c['ret'])
+    def read_text(self,desc):
+        pointer=struct.unpack('<Q',self.m.mem_read(desc+4,8))[0]
+        if pointer==0:return None
+        n=struct.unpack('<I',self.m.mem_read(pointer-4,4))[0];require(n<10000,'TEXT_SIZE');return bytes(self.m.mem_read(pointer,2*n)).decode('utf-16-le')
+    def value(self,name,kind):return struct.unpack('<'+kind,self.m.mem_read(self.base+self.gate[name],struct.calcsize('<'+kind)))[0]
+    def state(self):
+        return struct.pack('<4Q',self.value('mode','B'),self.value('m1','B'),self.value('time','Q'),self.value('bar','Q'))+text(self.read_text(self.base+self.gate['symbol']))+struct.pack('<Q',self.value('error','I'))
+    def visit(self,m,address,size,user):
+        self.covered.add(address-self.base)
+        if address in [self.base+self.gate['cont'],self.base+self.gate['ret']]:self.stopped=address==self.base+self.gate['ret'];self.done=True;m.emu_stop()
+    def call(self,m,address,size,user):
+        if address not in self.sdk:return super().call(m,address,size,user)
+        r=self.tape;api=self.sdk[address];expected=r.block();actual=self.state();require(expected==actual,'STATE_BEFORE_GATE_SDK '+str((self.case['id'],api,next((i for i,(a,b) in enumerate(zip(expected,actual)) if a!=b),None))))
+        kind,*args=r.take('i4Q');texts=[r.text() for _ in range(4)];payload=r.block();error,=r.take('I');require(kind==api and payload==b'','GATE_SDK_ORDER')
+        x=self.x;reg=lambda n:m.reg_read(getattr(x,'UC_X86_REG_'+n));n=self.counts[api];self.counts[api]+=1;seq=self.case['times' if api==1 else 'bars'];reply=seq[min(n,len(seq)-1)]&MASK
+        require(reg('RCX')==self.gate['ctx'],'GATE_SDK_CONTEXT')
+        if api==1:require(reg('RDX')==0 and args==[reply,0,0,0] and texts==[None]*4,'TIME_OVERLOAD_OR_REPLY')
+        else:require((reg('R8'),reg('R9'))==(1,1) and args==[1,1,reply,0] and texts==[self.read_text(reg('RDX')),None,None,None] and reg('RDX')==self.base+self.gate['symbol'],'BAR_ARGUMENT_OR_REPLY')
+        m.reg_write(x.UC_X86_REG_RAX,reply);m.mem_write(self.base+self.gate['error'],struct.pack('<I',error));self.calls+=1
+        for a,n,field,value in self.case['effects']:
+            if a==api and n==self.counts[api]:
+                name,fmt={1:('mode','B'),2:('m1','B'),3:('time','Q'),4:('bar','Q')}[field];m.mem_write(self.base+self.gate[name],(value&((1<<(8*struct.calcsize('<'+fmt)))-1)).to_bytes(struct.calcsize('<'+fmt),'little'))
+    def run(self,c,tape):
+        self.case=c;self.tape=Reader(tape);self.calls=0;self.counts={1:0,2:0};self.done=False;self.stopped=False;self.cursor=0x70001000;self.allocs=self.frees=0;m,x=self.m,self.x
+        for region,raw in self.regions:
+            if region.get('kind')=='mutable_program_data':m.mem_write(region['base'],raw)
+        for name,fmt in [('mode','B'),('m1','B'),('time','q'),('bar','q')]:m.mem_write(self.base+self.gate[name],struct.pack('<'+fmt,c[name]))
+        m.mem_write(self.base+self.gate['symbol'],struct.pack('<IQ',0,0 if c['symbol'] is None else self.string(c['symbol'])));m.mem_write(self.base+self.gate['error'],bytes(4))
+        for name in ['RAX','RBX','RCX','RDX','RSI','RDI','RBP','R8','R9','R10','R11','R12','R13','R14','R15']:m.reg_write(getattr(x,'UC_X86_REG_'+name),0)
+        for i in range(16):m.reg_write(getattr(x,'UC_X86_REG_XMM'+str(i)),0)
+        m.reg_write(x.UC_X86_REG_RSP,0x5001fef8);m.reg_write(x.UC_X86_REG_EFLAGS,0x202);m.reg_write(x.UC_X86_REG_MXCSR,0x1f80)
+        m.emu_start(self.base+self.gate['fn'],0x60000000,timeout=1000000,count=20000);require(self.done and self.tape.pos==len(tape),'GATE_NOT_FINISHED');return self.state()+struct.pack('<Q',self.stopped)
+def identity(bot):
+    source=ROOT/f'bot-cua-toi-{bot}/source/MQL5';script=source/f'Scripts/bot-cua-toi-{bot}/Bot{bot}DispatchGateCheck.mq5';helpers=[Path(__file__),Path(base.__file__),ROOT/'cong-cu/kiem-gia-vao-bot-1-3.py',ROOT/'cong-cu/kiem-muc-gia-bot-1-3.py',ROOT/'cong-cu/kiem-ban-git-quan-ly.py',ROOT/'cong-cu/kiem-khoi-luong-hop-le-bot-1-3.py']
+    return dict(original_ex5_sha256=base.validation.original_hash(bot),native_outer_sha256=CFG[bot]['sha'],sources_sha256={p.relative_to(source).as_posix():sha(p) for p in pub.closure(script,source)},helpers_sha256={p.relative_to(ROOT).as_posix():sha(p) for p in helpers})
+def execute(bot,folder,build):
+    home=ROOT/f'bot-cua-toi-{bot}';mt=ROOT.parent/f'.local/mt5-bot{bot}-thread-20261025';receipt=home/'bang-chung/bien-dich'/build/'bien-nhan.json';b=json.loads(receipt.read_text(encoding='utf-8-sig'));script=f'Scripts/bot-cua-toi-{bot}/Bot{bot}DispatchGateCheck.mq5';require(b['target']==script and b['errors']==b['warnings']==0,'BUILD_NOT_CLEAN')
+    for name,digest in identity(bot)['sources_sha256'].items():require(sha(mt/'MQL5'/name)==b['sources_sha256'][name]==digest,'BUILD_SOURCE_CHANGED')
+    binary=mt/'MQL5'/Path(script).with_suffix('.ex5');require(sha(binary)==b['binary_sha256']==sha(receipt.parent/binary.name),'BUILD_BINARY_CHANGED');files=mt/f'MQL5/Files/bot{bot}-dispatch-gate'/folder.name;files.mkdir(parents=True,exist_ok=False);shutil.copyfile(folder/'cases.bin',files/'cases.bin')
+    preset=mt/'MQL5/Presets'/('gate-'+folder.name+'.set');ini=mt/('gate-'+folder.name+'.ini');preset.write_text('CheckRun='+folder.name+'\n',encoding='utf-16');ini.write_text(f'[Experts]\nEnabled=0\nAllowLiveTrading=0\nAllowDllImport=0\n[StartUp]\nScript=bot-cua-toi-{bot}\\Bot{bot}DispatchGateCheck\nScriptParameters={preset.name}\nSymbol=XAUUSD_NOCOST_V2\nPeriod=M15\nShutdownTerminal=1\n',encoding='utf-16');p=subprocess.Popen(f'"{mt/"terminal64.exe"}" /portable /config:"{ini}"',cwd=mt,creationflags=subprocess.CREATE_NO_WINDOW)
+    try:code=p.wait(timeout=120)
+    except subprocess.TimeoutExpired:p.terminate();p.wait(timeout=30);raise RuntimeError('MT5_TIMEOUT')
+    require(code==0,'MT5_EXIT');return files,receipt
+def main():
+    p=argparse.ArgumentParser(description=__doc__);p.add_argument('mode',choices=['generate','prepare','mql5','original','compare']);p.add_argument('bot',type=int,choices=[1,3]);p.add_argument('run',nargs='?');p.add_argument('--build');a=p.parse_args()
+    if a.mode=='generate':generate(a.bot);return
+    require(a.run and re.fullmatch('[a-z0-9-]{1,48}',a.run),'BAD_RUN');rows=cases();current=identity(a.bot);folder=ROOT/f'bot-cua-toi-{a.bot}/bang-chung/kiem-quan-ly-vi-the'/a.run;header=struct.pack('<3i',MAGIC,1,len(rows))
+    if a.mode=='prepare':
+        folder.mkdir(parents=True,exist_ok=False);(folder/'cases.bin').write_bytes(encode(rows));save(folder/'cases.json',rows);save(folder/'baseline.json',dict(**current,cases=len(rows),inputs_sha256=sha(folder/'cases.bin'),**SCOPE));print(json.dumps(dict(cases=len(rows))));return
+    baseline=json.loads((folder/'baseline.json').read_text());require(all(baseline[k]==v for k,v in current.items()) and (folder/'cases.bin').read_bytes()==encode(rows),'IDENTITY_CHANGED')
+    if a.mode=='mql5':
+        files,receipt=execute(a.bot,folder,a.build);require((files/'script-status.bin').read_bytes()==struct.pack('<2i',0,len(rows)),'SCRIPT_FAILED')
+        for name in ['mql5-results.bin','sdk-tape.bin','script-status.bin']:
+            with (folder/name).open('xb') as f:f.write((files/name).read_bytes())
+        save(folder/'mql5-run.json',dict(**current,cases=len(rows),result_sha256=sha(folder/'mql5-results.bin'),sdk_tape_sha256=sha(folder/'sdk-tape.bin'),build=a.build,build_receipt_sha256=sha(receipt),**SCOPE));print(json.dumps(dict(cases=len(rows))));return
+    if a.mode=='original':
+        tape=Reader((folder/'sdk-tape.bin').read_bytes());require(tape.take('3i')==(MAGIC,1,len(rows)),'TAPE_HEADER');o=Original(a.bot);raw=bytearray(header);calls=0
+        for c in rows:
+            require(tape.take('i')[0]==c['id'],'TAPE_ID');state=o.run(c,tape.block());raw+=struct.pack('<2i',c['id'],len(state))+state;calls+=o.calls
+        require(tape.pos==len(tape.raw),'TAPE_TRAILING')
+        with (folder/'original-results.bin').open('xb') as f:f.write(raw)
+        save(folder/'original-run.json',dict(**current,cases=len(rows),result_sha256=sha(folder/'original-results.bin'),sdk_tape_sha256=sha(folder/'sdk-tape.bin'),sdk_calls=calls,parent_instructions=len(o.covered),**SCOPE));print(json.dumps(dict(cases=len(rows),sdk_calls=calls)));return
+    for name in ['original','mql5']:
+        r=json.loads((folder/(name+'-run.json')).read_text());require(all(r[k]==v for k,v in current.items()) and r['result_sha256']==sha(folder/(name+'-results.bin')) and r['sdk_tape_sha256']==sha(folder/'sdk-tape.bin'),'RUN_CHANGED')
+    records=[Reader((folder/(name+'-results.bin')).read_bytes()) for name in ['original','mql5']];require(all(r.take('3i')==(MAGIC,1,len(rows)) for r in records),'RESULT_HEADER');fail=[]
+    for c in rows:
+        states=[]
+        for r in records:require(r.take('i')[0]==c['id'],'RESULT_CASE');states.append(r.block())
+        if states[0]!=states[1]:fail.append(dict(id=c['id'],tag=c['tag'],first_difference=next((i for i,(x,y) in enumerate(zip(*states)) if x!=y),None)))
+    require(all(r.pos==len(r.raw) for r in records),'RESULT_TRAILING');result=dict(cases=len(rows),matched=len(rows)-len(fail),failed=len(fail),first_failures=fail[:12],**SCOPE,limits=['The first frequency gate only. Time/bar replies supplied. Later active/license/account/strategy sections and full EA remain unverified.'])
+    save(folder/'comparison.json',result);print(json.dumps(result));raise SystemExit(bool(fail))
+if __name__=='__main__':main()

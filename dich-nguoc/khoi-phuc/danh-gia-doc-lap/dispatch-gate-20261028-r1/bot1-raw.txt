@@ -1,0 +1,63 @@
+010f60 4157 push r15
+010f62 4156 push r14
+010f64 4155 push r13
+010f66 4154 push r12
+010f68 56 push rsi
+010f69 57 push rdi
+010f6a 55 push rbp
+010f6b 53 push rbx
+010f6c 4881ecf8000000 sub rsp, 0xf8
+010f73 48bbe021a75a3e020000 movabs rbx, 0x23e5aa721e0
+010f7d 66440f298424e0000000 movapd xmmword ptr [rsp + 0xe0], xmm8
+010f87 660f29bc24d0000000 movapd xmmword ptr [rsp + 0xd0], xmm7
+010f90 660f29b424c0000000 movapd xmmword ptr [rsp + 0xc0], xmm6
+010f99 48bec921a75a3e020000 movabs rsi, 0x23e5aa721c9
+010fa3 803b01 cmp byte ptr [rbx], 1
+010fa6 754f jne 0x23e5aa20ff7
+010fa8 48b978ae5e573e020000 movabs rcx, 0x23e575eae78
+010fb2 49be401c6f84f67f0000 movabs r14, 0x7ff6846f1c40
+010fbc 31d2 xor edx, edx
+010fbe 41ffd6 call r14
+010fc1 49bfd021a75a3e020000 movabs r15, 0x23e5aa721d0
+010fcb 0fb60b movzx ecx, byte ptr [rbx]
+010fce 498b17 mov rdx, qword ptr [r15]
+010fd1 4801ca add rdx, rcx
+010fd4 4839d0 cmp rax, rdx
+010fd7 7e2a jle 0x23e5aa21003
+010fd9 48b978ae5e573e020000 movabs rcx, 0x23e575eae78
+010fe3 31d2 xor edx, edx
+010fe5 31ff xor edi, edi
+010fe7 41ffd6 call r14
+010fea 0fb60b movzx ecx, byte ptr [rbx]
+010fed 498907 mov qword ptr [r15], rax
+010ff0 803e00 cmp byte ptr [rsi], 0
+010ff3 7416 je 0x23e5aa2100b
+010ff5 eb19 jmp 0x23e5aa21010
+010ff7 0fb63e movzx edi, byte ptr [rsi]
+010ffa 31c9 xor ecx, ecx
+010ffc 803e00 cmp byte ptr [rsi], 0
+010fff 740a je 0x23e5aa2100b
+011001 eb0d jmp 0x23e5aa21010
+011003 40b701 mov dil, 1
+011006 803e00 cmp byte ptr [rsi], 0
+011009 7505 jne 0x23e5aa21010
+01100b f6c101 test cl, 1
+01100e 7462 je 0x23e5aa21072
+011010 48b978ae5e573e020000 movabs rcx, 0x23e575eae78
+01101a 48bac017a65a3e020000 movabs rdx, 0x23e5aa617c0
+011024 48be503b6f84f67f0000 movabs rsi, 0x7ff6846f3b50
+01102e 41b801000000 mov r8d, 1
+011034 41b901000000 mov r9d, 1
+01103a ffd6 call rsi
+01103c 48bbd821a75a3e020000 movabs rbx, 0x23e5aa721d8
+011046 483b03 cmp rax, qword ptr [rbx]
+011049 7e27 jle 0x23e5aa21072
+01104b 48b978ae5e573e020000 movabs rcx, 0x23e575eae78
+011055 48bac017a65a3e020000 movabs rdx, 0x23e5aa617c0
+01105f 41b801000000 mov r8d, 1
+011065 41b901000000 mov r9d, 1
+01106b ffd6 call rsi
+01106d 488903 mov qword ptr [rbx], rax
+011070 eb0a jmp 0x23e5aa2107c
+011072 40f6c701 test dil, 1
+011076 0f85f85c0000 jne 0x23e5aa26d74

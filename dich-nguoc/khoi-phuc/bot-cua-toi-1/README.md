@@ -1,3 +1,11 @@
+Ngày 28/10, cập nhật mới: đã dựng giới hạn lỗ ngày **330/330 ca**
+và điều kiện chạy theo giờ/nến **640/640 ca**, mỗi phần đều so với mã
+gốc và có hai cách xử lý sai cố ý bị phát hiện. Ghép 90 tệp nguồn
+biên dịch 0 lỗi, 0 cảnh báo. Còn điều phối đầy đủ, khởi tạo/sự kiện,
+đối ảnh/menu và chạy cặp hai EA hoàn chỉnh; chưa đạt 100%.
+[Bằng chứng lỗ ngày](../danh-gia-doc-lap/daily-loss-20261028-r1/README.md),
+[bằng chứng giờ/nến](../danh-gia-doc-lap/dispatch-gate-20261028-r1/README.md).
+
 Ngày 28/10, cập nhật mới: đã dựng toàn bộ hàm lịch sử theo chiến lược
 `Bot1StrategyHistory.mqh`, giữ chung bộ lưu qua nhiều lần gọi: **270/270 ca**
 và **4/4 nhánh lỗi dãy** khớp. Ghép 88 tệp biên dịch 0 lỗi/0 cảnh báo.

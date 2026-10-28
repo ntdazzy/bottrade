@@ -1,0 +1,14 @@
+{
+  "bot": 1,
+  "original_ex5_sha256": "a3b0de423a06e10ebedc279307b93d7cb9188ba2bb5de77131a913c865b0e922",
+  "outer_start": "0x10f60",
+  "outer_end": "0x173e4",
+  "outer_sha256": "f5edd0f5e9033ddddb289a3419406c06292ce22bff197bea6d10acea1756c721",
+  "section_start": "0x11bd6",
+  "continue_at": "0x11ed7",
+  "return_at": "0x16d74",
+  "message_rva": "0x5c6e0",
+  "message": "Max Daily Drawdown reached, closing trades and skipping rest of the day",
+  "disassembly_sha256": "fb4f60b777a03617ac5f92e5f702ada81007259b69cf73c3b15b7f3be6de3d4c",
+  "full_outer_executed": false
+}

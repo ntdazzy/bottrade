@@ -1,0 +1,28 @@
+{
+  "bot": 3,
+  "run": "b3-daily-loss-20261028-r2",
+  "tape_sha256": "990b11cde339564d774b47112b4c619967c989d593cfc2e764117752b0bea13d",
+  "tool_sha256": "cedea3f5dd22230386e9ea006e7682acb94d4a48c7a55bfd363cb05fce05f1b4",
+  "daily_tool_sha256": "5753c829076bcc8e1a1103ebf6af8286958f969674c81b10ce0b936ac34b8777",
+  "checks": [
+    {
+      "name": "threshold-equality-closes",
+      "case": 106,
+      "tag": "strict-threshold-and-sign-not-absolute",
+      "rejected": true,
+      "extra_service": "Print",
+      "failure_type": "error",
+      "original_ex5_changed": false
+    },
+    {
+      "name": "sum-plus-part-plus-swap",
+      "case": 157,
+      "tag": "rounding-order-changes-close-decision",
+      "rejected": true,
+      "extra_service": "Print",
+      "failure_type": "error",
+      "original_ex5_changed": false
+    }
+  ],
+  "whole_ea_complete": false
+}

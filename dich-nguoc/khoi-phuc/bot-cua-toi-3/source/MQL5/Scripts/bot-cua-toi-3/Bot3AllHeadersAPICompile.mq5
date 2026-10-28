@@ -94,4 +94,6 @@
 #include "../../Include/bot-cua-toi-3/Bot3VolumeValidation.mqh"
 #include "../../Include/bot-cua-toi-3/Bot3VolumeWithdrawal.mqh"
 #include "../../Include/bot-cua-toi-3/Bot3Withdrawal.mqh"
+#include "../../Include/bot-cua-toi-3/Bot3DailyLossGuard.mqh"
+#include "../../Include/bot-cua-toi-3/Bot3DispatchGate.mqh"
 void OnStart() { Print("Bot3AllHeadersAPICompile"); }

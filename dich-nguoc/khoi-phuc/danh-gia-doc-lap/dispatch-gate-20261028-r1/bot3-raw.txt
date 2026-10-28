@@ -1,0 +1,67 @@
+017f00 4157 push r15
+017f02 4156 push r14
+017f04 4155 push r13
+017f06 4154 push r12
+017f08 56 push rsi
+017f09 57 push rdi
+017f0a 55 push rbp
+017f0b 53 push rbx
+017f0c 4881ec98010000 sub rsp, 0x198
+017f13 48bbe8d12b5671010000 movabs rbx, 0x171562bd1e8
+017f1d 66440f29a42480010000 movapd xmmword ptr [rsp + 0x180], xmm12
+017f27 66440f299c2470010000 movapd xmmword ptr [rsp + 0x170], xmm11
+017f31 66440f29942460010000 movapd xmmword ptr [rsp + 0x160], xmm10
+017f3b 66440f298c2450010000 movapd xmmword ptr [rsp + 0x150], xmm9
+017f45 66440f29842440010000 movapd xmmword ptr [rsp + 0x140], xmm8
+017f4f 660f29bc2430010000 movapd xmmword ptr [rsp + 0x130], xmm7
+017f58 660f29b42420010000 movapd xmmword ptr [rsp + 0x120], xmm6
+017f61 48bed0d12b5671010000 movabs rsi, 0x171562bd1d0
+017f6b 803b01 cmp byte ptr [rbx], 1
+017f6e 754f jne 0x17156267fbf
+017f70 48b938a54c5171010000 movabs rcx, 0x171514ca538
+017f7a 49be401c6f84f67f0000 movabs r14, 0x7ff6846f1c40
+017f84 31d2 xor edx, edx
+017f86 41ffd6 call r14
+017f89 49bfd8d12b5671010000 movabs r15, 0x171562bd1d8
+017f93 0fb60b movzx ecx, byte ptr [rbx]
+017f96 498b17 mov rdx, qword ptr [r15]
+017f99 4801ca add rdx, rcx
+017f9c 4839d0 cmp rax, rdx
+017f9f 7e2a jle 0x17156267fcb
+017fa1 48b938a54c5171010000 movabs rcx, 0x171514ca538
+017fab 31d2 xor edx, edx
+017fad 31ff xor edi, edi
+017faf 41ffd6 call r14
+017fb2 0fb60b movzx ecx, byte ptr [rbx]
+017fb5 498907 mov qword ptr [r15], rax
+017fb8 803e00 cmp byte ptr [rsi], 0
+017fbb 7416 je 0x17156267fd3
+017fbd eb19 jmp 0x17156267fd8
+017fbf 0fb63e movzx edi, byte ptr [rsi]
+017fc2 31c9 xor ecx, ecx
+017fc4 803e00 cmp byte ptr [rsi], 0
+017fc7 740a je 0x17156267fd3
+017fc9 eb0d jmp 0x17156267fd8
+017fcb 40b701 mov dil, 1
+017fce 803e00 cmp byte ptr [rsi], 0
+017fd1 7505 jne 0x17156267fd8
+017fd3 f6c101 test cl, 1
+017fd6 7462 je 0x1715626803a
+017fd8 48b938a54c5171010000 movabs rcx, 0x171514ca538
+017fe2 48ba009d2a5671010000 movabs rdx, 0x171562a9d00
+017fec 48be503b6f84f67f0000 movabs rsi, 0x7ff6846f3b50
+017ff6 41b801000000 mov r8d, 1
+017ffc 41b901000000 mov r9d, 1
+018002 ffd6 call rsi
+018004 48bbe0d12b5671010000 movabs rbx, 0x171562bd1e0
+01800e 483b03 cmp rax, qword ptr [rbx]
+018011 7e27 jle 0x1715626803a
+018013 48b938a54c5171010000 movabs rcx, 0x171514ca538
+01801d 48ba009d2a5671010000 movabs rdx, 0x171562a9d00
+018027 41b801000000 mov r8d, 1
+01802d 41b901000000 mov r9d, 1
+018033 ffd6 call rsi
+018035 488903 mov qword ptr [rbx], rax
+018038 eb0a jmp 0x17156268044
+01803a 40f6c701 test dil, 1
+01803e 0f85e37a0000 jne 0x1715626fb27

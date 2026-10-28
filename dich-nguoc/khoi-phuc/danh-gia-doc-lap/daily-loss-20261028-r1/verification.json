@@ -1,0 +1,26 @@
+{
+  "ref": "index",
+  "exact_or_documented_newline_source_checks": 189,
+  "production_headers": {
+    "1": 90,
+    "3": 97
+  },
+  "matched_cases": {
+    "1:daily-loss": 330,
+    "1:dispatch-gate": 640,
+    "3:daily-loss": 330,
+    "3:dispatch-gate": 640
+  },
+  "negative_controls_rejected": 8,
+  "original_files_unchanged": 2,
+  "whole_eas_complete": 0,
+  "whole_dispatchers_complete": 0,
+  "goal_complete": false,
+  "remaining": [
+    "complete initialization and events",
+    "remaining outer dispatcher and shared-state connections",
+    "original menu/panel images and resources",
+    "paired complete EA execution on identical MT5 data",
+    "remaining unverified branches and old NaN checks"
+  ]
+}

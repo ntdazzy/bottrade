@@ -1,0 +1,17 @@
+{
+  "cases": 330,
+  "matched": 330,
+  "failed": 0,
+  "first_failures": [],
+  "whole_bot_complete": false,
+  "whole_manager_complete": false,
+  "full_ea": false,
+  "native_daily_loss_executed": true,
+  "child_helpers_intercepted": false,
+  "terminal_replies_supplied": true,
+  "sse_arithmetic_on_host_cpu": true,
+  "original_ex5_changed": false,
+  "limits": [
+    "Only the complete daily-loss section; initial enclosing frame/state and terminal replies supplied. No full dispatcher/EA, real broker execution, allocation-fault or all INT_MIN deal-count proof."
+  ]
+}
