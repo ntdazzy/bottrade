@@ -90,4 +90,5 @@
 #include "../../Include/bot-cua-toi-1/Bot1DailyLossGuard.mqh"
 #include "../../Include/bot-cua-toi-1/Bot1DispatchGate.mqh"
 #include "../../Include/bot-cua-toi-1/Bot1EvaluationBridge.mqh"
+#include "../../Include/bot-cua-toi-1/Bot1InitializationGate.mqh"
 void OnStart() { Print("Bot1AllHeadersAPICompile"); }

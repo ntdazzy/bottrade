@@ -4,6 +4,7 @@
 - `kiem-cau-noi-danh-gia-bot-1-3.py`: kiểm tệp nối chuẩn bị/ngữ cảnh → đánh giá, biên nhận biên dịch và lượt chuẩn bị liên tục; chưa phải toàn EA.
 - Đặc tả thứ tự khởi tạo nằm ở `danh-gia-doc-lap/initialization-flow-20261028-r1.md`; còn chờ đối chiếu nhánh quyền dùng và sự kiện EA trước khi viết OnInit bàn giao.
 - `kiem-khoi-tao-von-bot-1-3.py`: lượt mới khớp 616/616 ca vốn/tài khoản cho mỗi bot; phạm vi chỉ là phần khởi tạo vốn độc lập.
+- `BotNInitializationGate.mqh`: giữ cờ hoạt động/chế độ kiểm thử/cờ M1 theo đoạn OnInit đã chốt; không tự vượt kiểm quyền.
 
 - `kiem-lich-su-chien-luoc-bot-1-3.py generate BOT | prepare|mql5|original|compare BOT RUN`: toàn hàm lịch sử từng chiến lược và bộ lưu dùng chung, 270ca mỗi bot; `mql5` cần `--build BUILD`. Ba phép cộng chạy trên CPU thật sau đối chứng100cặp; các dịch vụ/dãy được đo trên MT5 riêng.
 - `kiem-loi-lich-su-chien-luoc-bot-1-3.py generate BOT | run BOT RUN --build BUILD`: bốn nhánh lỗi dãy, so lời gọi/trạng thái ngay trước lỗi; MT5 cố ý dừng với mã4294967295, không gọi là thoát thường.
