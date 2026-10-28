@@ -1,5 +1,11 @@
 # bot-cua-toi-2
 
+Đã phục hồi hai chiều đổi tiền: **1.650/1.650 ca khớp từng byte**,
+gồm toàn bộ thứ tự đọc tiền tệ/tỷ giá; thêm 4 ca chia 0 khớp loại
+lỗi và lời gọi trước lỗi. Giữ nguyên nhánh CHF bị lặp của bản gốc.
+Hai tệp `.mqh` hiện hành biên dịch 0 lỗi, 0 cảnh báo; chưa có EA đầy đủ.
+[Bằng chứng](../danh-gia-doc-lap/currency-bot2-full-20261029-r1/README.md).
+
 Đã phục hồi hàm đổi giờ mùa hè `Bot2AmericanDST`: **4.737/4.737 ca
 khớp**, kể cả thứ tự lời gọi; biên dịch 0 lỗi, 0 cảnh báo. Dùng đúng
 bản EX5 đã cài, SHA bắt đầu `390d8ab1`; bản EX5 cũ trong kho khác mã.

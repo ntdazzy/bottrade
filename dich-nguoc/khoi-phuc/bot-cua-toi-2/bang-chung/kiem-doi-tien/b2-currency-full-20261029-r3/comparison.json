@@ -1,0 +1,21 @@
+{
+  "cases": 1650,
+  "matched": 1650,
+  "failed": 0,
+  "first_failures": [],
+  "full_ea": false,
+  "whole_bot_complete": false,
+  "whole_manager_complete": false,
+  "native_currency_bodies_executed": true,
+  "native_string_helpers_executed": true,
+  "native_code_bytes_unchanged": true,
+  "ordered_sdk_records_compared": true,
+  "host_cpu_arithmetic": true,
+  "terminal_replies_supplied": true,
+  "allocation_success_supplied": true,
+  "allocation_failures_tested": false,
+  "authorization_executed": false,
+  "limits": [
+    "Both currency bodies only. SDK-owned string buffers and successful allocation supplied; allocation failures, division-fault cases and whole EA excluded."
+  ]
+}

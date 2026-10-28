@@ -1,0 +1,62 @@
+{
+  "bot": 2,
+  "run": "b2-currency-full-20261029-r3",
+  "error_run": "b2-currency-errors-20261029-r1",
+  "builds": [
+    "b2-currency-full-check-20261029-r2",
+    "b2-all-headers-api-20261029-r1"
+  ],
+  "cases": 1650,
+  "matched": 1650,
+  "error_cases": 4,
+  "account_reads": 91359,
+  "price_reads": 1983,
+  "cpu_arithmetic_calls": 525,
+  "result_sha256": "f7b3de8b5085d65c2ae284d2fe7c5bac9a9dc00593e0a19767f29357653f46a7",
+  "original_ex5_sha256": "390d8ab14fc213ff4b8cbe5084bec545526e62c6028516fe21219a59398ce795",
+  "native_code_sha256": "ae4e9020f7f5f08d49774728bed14c17eb2bd26b6271c20da51bd3aaa446014f",
+  "native_functions": {
+    "1": {
+      "start": "0x371f0",
+      "end": "0x3cfa5",
+      "sha256": "4050f3200cf58dbd9549c2de44578abbdc70ee25ef447daed32872243ebf596b"
+    },
+    "0": {
+      "start": "0x45400",
+      "end": "0x4a936",
+      "sha256": "674cd1b5d38dd53b82fe03ccc412c287a1cfb39ee42fe79a99c968ca7999e7c3"
+    }
+  },
+  "sources_sha256": {
+    "Include/bot-cua-toi-2/Bot2CurrencyConversion.mqh": "46dbf7cbaaebd473bf3de1d008d62de1af370e3d186b6a6b037890d1d06765bb",
+    "Scripts/bot-cua-toi-2/Bot2CurrencyConversionCheck.mq5": "b37a4f82bdebb74190a6f667054c8ee5ffb9d911c7bf648e007081ed38743e26"
+  },
+  "helpers_sha256": {
+    "cong-cu/kiem-doi-tien-bot-2.py": "49cec2f43cc0b43b380c6dbd6c8aa7dd119fd3a9832c300e9441839a2b3c9826",
+    "cong-cu/kiem-gio-mua-he-bot-2.py": "1287b68a8012bf411d40868c1053af404b59a7d703ecfc019e31d8013b90e181",
+    "cong-cu/kiem-doi-tien-bot-1-3.py": "203fd243f93ad01d9229151335fc76850aa4a51ec1005f96c3b3f0de79cac8a9",
+    "cong-cu/kiem-lich-su-chien-luoc-bot-1-3.py": "64970d4a1ef42180fb44b3da19d6b51aa60147fce70ac480cd78d5769e91c45a",
+    "cong-cu/kiem-gia-vao-bot-1-3.py": "22394e48932feb7242b967aa58e327d2990402f12bfe52621916f64914c9dac2",
+    "cong-cu/kiem-muc-gia-bot-1-3.py": "a6c447ca80029fb63ced0c9d1673bb14222a7736b04df5c410f280f8471d6a35",
+    "cong-cu/kiem-khoi-luong-hop-le-bot-1-3.py": "8251fb4423d6f5f2e1b79a1c53dbb25fb5a6c568bb61cddef23396dc982243f0",
+    "bot-cua-toi-2/bang-chung/captures/luot-20261026-r1/capture.json": "53ba806ba665943c44c7d86f9d0bd1034144d129eaddb7ec22eb7ff8359eb1e2",
+    "bot-cua-toi-2/phan-tich/luot-20261026-data-r2/metadata/import.json": "6686747871bdc1f73a5066061ff4e05675f87cf27ec1a5b5024ac2a1b0851240"
+  },
+  "groups": {
+    "currency-and-price-routes": 1464,
+    "amount-boundaries": 110,
+    "nan-operand-order": 32,
+    "fresh-currency-between-reads": 6,
+    "changing-rates-and-fallback": 24,
+    "negative-second-rate": 4,
+    "multiply-zero-second-rate": 4,
+    "long-utf16-suffix": 2,
+    "duplicated-chf-fresh-reads": 4
+  },
+  "duplicate_chf_preserved": true,
+  "all_headers_count": 2,
+  "full_ea": false,
+  "whole_bot_complete": false,
+  "authorization_executed": false,
+  "exact_final_fault_state_compared": false
+}

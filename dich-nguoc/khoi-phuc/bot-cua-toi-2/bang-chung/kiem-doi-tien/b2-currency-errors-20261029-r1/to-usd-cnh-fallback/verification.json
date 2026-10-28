@@ -1,0 +1,13 @@
+{
+  "tag": "to-usd-cnh-fallback",
+  "native_code": "0x272ad3000001f7",
+  "fatal_class": "zero divide",
+  "exit_code": 4294967295,
+  "account_reads": 21,
+  "price_reads": 3,
+  "ordered_calls_before_fault_byte_equal": true,
+  "no_normal_result": true,
+  "exact_final_fault_state_compared": false,
+  "partial_sha256": "dcb8b9ec1beaecd435f25627ef0f7300ad57eed2fdb8200234f38e2b81f46f3f",
+  "runtime_lines_sha256": "dee70e464cc61371a4b02092e9622d00b042db62f001982734b797de89b2f460"
+}

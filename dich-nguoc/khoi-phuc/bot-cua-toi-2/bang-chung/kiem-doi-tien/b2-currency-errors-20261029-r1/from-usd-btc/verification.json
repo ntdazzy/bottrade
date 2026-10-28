@@ -1,0 +1,13 @@
+{
+  "tag": "from-usd-btc",
+  "native_code": "0x242a13000001f7",
+  "fatal_class": "zero divide",
+  "exit_code": 4294967295,
+  "account_reads": 23,
+  "price_reads": 2,
+  "ordered_calls_before_fault_byte_equal": true,
+  "no_normal_result": true,
+  "exact_final_fault_state_compared": false,
+  "partial_sha256": "a0ccc35f5acdd526030ddb97e98d71de99846ff23f28bd48814f1d5b13a21352",
+  "runtime_lines_sha256": "b83a423b053df0d67a806cd3815e25a104e2dd63994517a55b3e6ed026dbb6d2"
+}

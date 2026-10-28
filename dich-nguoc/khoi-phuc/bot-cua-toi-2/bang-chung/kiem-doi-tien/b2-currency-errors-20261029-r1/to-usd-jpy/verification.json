@@ -1,0 +1,13 @@
+{
+  "tag": "to-usd-jpy",
+  "native_code": "0x242aa7000001f7",
+  "fatal_class": "zero divide",
+  "exit_code": 4294967295,
+  "account_reads": 9,
+  "price_reads": 2,
+  "ordered_calls_before_fault_byte_equal": true,
+  "no_normal_result": true,
+  "exact_final_fault_state_compared": false,
+  "partial_sha256": "10a49b915b1d66a0059d89250e4c0fbe600149b789b84e9a0ad342b9db777ee2",
+  "runtime_lines_sha256": "c407b3af7ddb16473add3c876cbb275c8761c27be5706af76e83e8f2a9dc9d15"
+}
