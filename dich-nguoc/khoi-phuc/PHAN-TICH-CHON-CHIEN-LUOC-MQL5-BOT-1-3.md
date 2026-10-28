@@ -19,6 +19,11 @@ phần dựng lại trả về mặt nạ cờ để phần điều phối dùng
 
 ## Bot 3
 
+Làm rõ ngày 28/10: các bit trong `enabled_mask` là vị trí cờ ở
+`0x6d220..0x6d228`, khác chỉ số truyền vào hàm đánh giá. Các phép so
+dưới đây so vị trí cờ thật; cần nối vị trí sang chỉ số khi chạy vòng.
+[Bảng nối](danh-gia-doc-lap/strategy-loop-20261028-r1/bot3-gate-mapping.json).
+
 `Bot3SelectStrategies` giữ các hành vi đã thấy trong hai đoạn gốc:
 
 - Chế độ 0–4 chỉ thay sáu cờ sau, giữ nguyên ba cờ đầu.
@@ -27,7 +32,7 @@ phần dựng lại trả về mặt nạ cờ để phần điều phối dùng
 - Chế độ 5 chỉ tự chọn khi `Risk=1234`; ngân sách là
   `(MaxAllowedDD/100) × converted_balance`, so ngưỡng theo thứ tự 810,
   560, 330 và dùng dấu `>`.
-- Chế độ 6 nối mặt nạ menu theo thứ tự nội bộ
+- Chế độ 6 nối mặt nạ menu vào các ô cờ
   `0,1,2,3,5,4,7,8,6`.
 - Giá trị tần suất ngoài các nhánh trên được giữ nguyên cùng cờ/hệ số.
 

@@ -1,3 +1,8 @@
+Đã nối vòng gọi tám chiến lược; các cổng bật/tắt và thứ tự gọi khớp
+**896/896 ca** với bản gốc, trong phép kiểm có thay thân chiến lược
+bằng bộ ghi. Chưa có nơi gọi từ sự kiện MT5.
+[Phạm vi](../danh-gia-doc-lap/strategy-loop-20261028-r1/README.md).
+
 Đã so thống kê sau từng chiến lược **1.920/1.920 ca** và nối với bước
 chuẩn bị/đánh giá trong phép kiểm hai lượt có thay thân bằng bộ ghi.
 [Phạm vi](../danh-gia-doc-lap/strategy-cycle-20261028-r1/README.md).

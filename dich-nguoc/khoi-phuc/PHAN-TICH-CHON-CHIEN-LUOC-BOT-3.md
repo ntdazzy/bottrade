@@ -15,10 +15,14 @@ luật phân tích dưới đây. Nguồn MQL5 riêng phần chọn cũng đã �
 
 ## Chọn thủ công: phải nối đúng thứ tự
 
-Khi `TradeFrequency=6`, hai đoạn mã gốc cùng nối như sau. Chỉ số bên
-trong tính từ 0, đúng chỉ số truyền vào hàm xử lý chiến lược.
+Khi `TradeFrequency=6`, hai đoạn mã gốc cùng nối như sau. Cột thứ hai
+là ô cờ trong vùng `0x6d220..0x6d228`, tính từ 0. Đây không phải chỉ
+số truyền vào hàm đánh giá; cách gọi cột này là chỉ số bên trong trong
+bản tài liệu trước đã gây nhầm. Đã đối chiếu lại ngày 28/10 bằng từng
+lệnh gọi và chín ca bật riêng từ kết quả gốc:
+[bảng nối đã kiểm](danh-gia-doc-lap/strategy-loop-20261028-r1/bot3-gate-mapping.json).
 
-| Cài đặt | Chỉ số chiến lược bên trong |
+| Cài đặt | Ô cờ lưu |
 |---|---|
 | `RunStrat1` | 0 |
 | `RunStrat2` | 1 |
@@ -34,13 +38,14 @@ trong tính từ 0, đúng chỉ số truyền vào hàm xử lý chiến lượ
 `UseVariableValues` và ba trạng thái ban đầu, ở cả hai đoạn mã: 6.144 ca.
 Chọn thủ công ghi đủ 9 cờ, giữ nguyên hệ số tính khối lượng đang lưu.
 
-Thứ tự xử lý tìm được trong hàm điều phối là chỉ số
-`0,3,1,2,5,4,8,6,7`, tương ứng thứ tự cài đặt `1,4,2,3,5,6,8,9,7`.
+Chỉ số truyền vào hàm đánh giá lần lượt là 0 đến 8 cho cài đặt 1 đến
+9. Thứ tự xử lý trong hàm điều phối là chỉ số
+`0,3,1,2,5,4,8,6,7`, tương ứng thứ tự cài đặt `1,4,2,3,6,5,9,7,8`.
 Chưa coi thứ tự gọi này là bằng chứng đã phục hồi luật giao dịch.
 
 ## Các chế độ cố định
 
-Các chế độ 0–4 chỉ ghi lại sáu cờ có chỉ số 3–8; **giữ nguyên ba cờ
+Các chế độ 0–4 chỉ ghi lại sáu ô cờ 3–8; **giữ nguyên ba cờ
 đầu**. Không được tự thêm thao tác đặt lại ba cờ đó vào bản dựng.
 
 | Giá trị `TradeFrequency` | Số mục `RunStrat` được bật thêm ngoài ba cờ đầu (không phải chỉ số bên trong) | Hệ số khi `UseVariableValues=true` / `false` |

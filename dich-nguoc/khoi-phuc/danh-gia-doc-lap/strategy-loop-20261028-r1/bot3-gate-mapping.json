@@ -1,0 +1,320 @@
+{
+  "original_ex5_sha256": "ee063d3d87490afe24e2f4ce85f6b05659320e297b102efd70207f71ca2feb83",
+  "base": "0x17156250000",
+  "rows": [
+    {
+      "evaluation_index": 0,
+      "gate_start_rva": "0x1a7c3",
+      "profile_start_rva": "0x1a80a",
+      "flag_rva": "0x6d220",
+      "flag_slot": 0,
+      "retained_rva": "0x1d6cf9",
+      "retained_slot": 1,
+      "preparation_call_rva": "0x1affc",
+      "evaluation_call_rva": "0x1b010",
+      "gate_instructions": [
+        "0x1a7c3 movabs rdi, 0x171562bd220",
+        "0x1a7cd movabs rcx, 0x17156426cf9",
+        "0x1a7d7 movabs r12, 0x171562505c0",
+        "0x1a7e1 movabs r15, 0x7ff6846b7370",
+        "0x1a7eb movabs r13, 0x17156426e48",
+        "0x1a7f5 movabs rbp, 0x7ff6846f3b50",
+        "0x1a7ff movzx eax, byte ptr [rdi]",
+        "0x1a802 or al, byte ptr [rcx]",
+        "0x1a804 je 0x1715626b068"
+      ],
+      "call_instructions": [
+        "0x1affc call rax",
+        "0x1affe cmp byte ptr [rdi], 0",
+        "0x1b001 movabs rax, 0x17156270ef0",
+        "0x1b00b sete dl",
+        "0x1b00e xor ecx, ecx",
+        "0x1b010 call rax"
+      ]
+    },
+    {
+      "evaluation_index": 3,
+      "gate_start_rva": "0x1b068",
+      "profile_start_rva": "0x1b087",
+      "flag_rva": "0x6d223",
+      "flag_slot": 3,
+      "retained_rva": "0x1d6cfa",
+      "retained_slot": 2,
+      "preparation_call_rva": "0x1b8ad",
+      "evaluation_call_rva": "0x1b8c4",
+      "gate_instructions": [
+        "0x1b068 movabs rdi, 0x171562bd223",
+        "0x1b072 movabs rcx, 0x17156426cfa",
+        "0x1b07c movzx eax, byte ptr [rdi]",
+        "0x1b07f or al, byte ptr [rcx]",
+        "0x1b081 je 0x1715626b91c"
+      ],
+      "call_instructions": [
+        "0x1b8ad call rax",
+        "0x1b8af cmp byte ptr [rdi], 0",
+        "0x1b8b2 movabs rax, 0x17156270ef0",
+        "0x1b8bc mov ecx, 3",
+        "0x1b8c1 sete dl",
+        "0x1b8c4 call rax"
+      ]
+    },
+    {
+      "evaluation_index": 1,
+      "gate_start_rva": "0x1b91c",
+      "profile_start_rva": "0x1b93b",
+      "flag_rva": "0x6d221",
+      "flag_slot": 1,
+      "retained_rva": "0x1d6cfd",
+      "retained_slot": 5,
+      "preparation_call_rva": "0x1c143",
+      "evaluation_call_rva": "0x1c15a",
+      "gate_instructions": [
+        "0x1b91c movabs rdi, 0x171562bd221",
+        "0x1b926 movabs rcx, 0x17156426cfd",
+        "0x1b930 movzx eax, byte ptr [rdi]",
+        "0x1b933 or al, byte ptr [rcx]",
+        "0x1b935 je 0x1715626c1b2"
+      ],
+      "call_instructions": [
+        "0x1c143 call rax",
+        "0x1c145 cmp byte ptr [rdi], 0",
+        "0x1c148 movabs rax, 0x17156270ef0",
+        "0x1c152 mov ecx, 1",
+        "0x1c157 sete dl",
+        "0x1c15a call rax"
+      ]
+    },
+    {
+      "evaluation_index": 2,
+      "gate_start_rva": "0x1c1b2",
+      "profile_start_rva": "0x1c1d1",
+      "flag_rva": "0x6d222",
+      "flag_slot": 2,
+      "retained_rva": "0x1d6d00",
+      "retained_slot": 8,
+      "preparation_call_rva": "0x1c9e7",
+      "evaluation_call_rva": "0x1c9fe",
+      "gate_instructions": [
+        "0x1c1b2 movabs rdi, 0x171562bd222",
+        "0x1c1bc movabs rcx, 0x17156426d00",
+        "0x1c1c6 movzx eax, byte ptr [rdi]",
+        "0x1c1c9 or al, byte ptr [rcx]",
+        "0x1c1cb je 0x1715626ca56"
+      ],
+      "call_instructions": [
+        "0x1c9e7 call rax",
+        "0x1c9e9 cmp byte ptr [rdi], 0",
+        "0x1c9ec movabs rax, 0x17156270ef0",
+        "0x1c9f6 mov ecx, 2",
+        "0x1c9fb sete dl",
+        "0x1c9fe call rax"
+      ]
+    },
+    {
+      "evaluation_index": 5,
+      "gate_start_rva": "0x1ca56",
+      "profile_start_rva": "0x1ca75",
+      "flag_rva": "0x6d224",
+      "flag_slot": 4,
+      "retained_rva": "0x1d6d01",
+      "retained_slot": 9,
+      "preparation_call_rva": "0x1d268",
+      "evaluation_call_rva": "0x1d27f",
+      "gate_instructions": [
+        "0x1ca56 movabs rdi, 0x171562bd224",
+        "0x1ca60 movabs rcx, 0x17156426d01",
+        "0x1ca6a movzx eax, byte ptr [rdi]",
+        "0x1ca6d or al, byte ptr [rcx]",
+        "0x1ca6f je 0x1715626d2d7"
+      ],
+      "call_instructions": [
+        "0x1d268 call rax",
+        "0x1d26a cmp byte ptr [rdi], 0",
+        "0x1d26d movabs rax, 0x17156270ef0",
+        "0x1d277 mov ecx, 5",
+        "0x1d27c sete dl",
+        "0x1d27f call rax"
+      ]
+    },
+    {
+      "evaluation_index": 4,
+      "gate_start_rva": "0x1d2d7",
+      "profile_start_rva": "0x1d2f6",
+      "flag_rva": "0x6d225",
+      "flag_slot": 5,
+      "retained_rva": "0x1d6d04",
+      "retained_slot": 12,
+      "preparation_call_rva": "0x1dadc",
+      "evaluation_call_rva": "0x1daf3",
+      "gate_instructions": [
+        "0x1d2d7 movabs rdi, 0x171562bd225",
+        "0x1d2e1 movabs rcx, 0x17156426d04",
+        "0x1d2eb movzx eax, byte ptr [rdi]",
+        "0x1d2ee or al, byte ptr [rcx]",
+        "0x1d2f0 je 0x1715626db4b"
+      ],
+      "call_instructions": [
+        "0x1dadc call rax",
+        "0x1dade cmp byte ptr [rdi], 0",
+        "0x1dae1 movabs rax, 0x17156270ef0",
+        "0x1daeb mov ecx, 4",
+        "0x1daf0 sete dl",
+        "0x1daf3 call rax"
+      ]
+    },
+    {
+      "evaluation_index": 8,
+      "gate_start_rva": "0x1db4b",
+      "profile_start_rva": "0x1db6a",
+      "flag_rva": "0x6d226",
+      "flag_slot": 6,
+      "retained_rva": "0x1d6d05",
+      "retained_slot": 13,
+      "preparation_call_rva": "0x1e35a",
+      "evaluation_call_rva": "0x1e371",
+      "gate_instructions": [
+        "0x1db4b movabs rdi, 0x171562bd226",
+        "0x1db55 movabs rcx, 0x17156426d05",
+        "0x1db5f movzx eax, byte ptr [rdi]",
+        "0x1db62 or al, byte ptr [rcx]",
+        "0x1db64 je 0x1715626e3c9"
+      ],
+      "call_instructions": [
+        "0x1e35a call rax",
+        "0x1e35c cmp byte ptr [rdi], 0",
+        "0x1e35f movabs rax, 0x17156270ef0",
+        "0x1e369 mov ecx, 8",
+        "0x1e36e sete dl",
+        "0x1e371 call rax"
+      ]
+    },
+    {
+      "evaluation_index": 6,
+      "gate_start_rva": "0x1e3c9",
+      "profile_start_rva": "0x1e3e8",
+      "flag_rva": "0x6d227",
+      "flag_slot": 7,
+      "retained_rva": "0x1d6d06",
+      "retained_slot": 14,
+      "preparation_call_rva": "0x1ebfd",
+      "evaluation_call_rva": "0x1ec14",
+      "gate_instructions": [
+        "0x1e3c9 movabs rdi, 0x171562bd227",
+        "0x1e3d3 movabs rcx, 0x17156426d06",
+        "0x1e3dd movzx eax, byte ptr [rdi]",
+        "0x1e3e0 or al, byte ptr [rcx]",
+        "0x1e3e2 je 0x1715626ec6c"
+      ],
+      "call_instructions": [
+        "0x1ebfd call rax",
+        "0x1ebff cmp byte ptr [rdi], 0",
+        "0x1ec02 movabs rax, 0x17156270ef0",
+        "0x1ec0c mov ecx, 6",
+        "0x1ec11 sete dl",
+        "0x1ec14 call rax"
+      ]
+    },
+    {
+      "evaluation_index": 7,
+      "gate_start_rva": "0x1ec6c",
+      "profile_start_rva": "0x1ec8b",
+      "flag_rva": "0x6d228",
+      "flag_slot": 8,
+      "retained_rva": "0x1d6d07",
+      "retained_slot": 15,
+      "preparation_call_rva": "0x1f492",
+      "evaluation_call_rva": "0x1f4a9",
+      "gate_instructions": [
+        "0x1ec6c movabs rdi, 0x171562bd228",
+        "0x1ec76 movabs rcx, 0x17156426d07",
+        "0x1ec80 movzx eax, byte ptr [rdi]",
+        "0x1ec83 or al, byte ptr [rcx]",
+        "0x1ec85 je 0x1715626f501"
+      ],
+      "call_instructions": [
+        "0x1f492 call rax",
+        "0x1f494 cmp byte ptr [rdi], 0",
+        "0x1f497 movabs rax, 0x17156270ef0",
+        "0x1f4a1 mov ecx, 7",
+        "0x1f4a6 sete dl",
+        "0x1f4a9 call rax"
+      ]
+    }
+  ],
+  "menu_to_native_flag_slot": [
+    0,
+    1,
+    2,
+    3,
+    5,
+    4,
+    7,
+    8,
+    6
+  ],
+  "menu_to_evaluation_index": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "scope": "Direct captured dispatcher instructions. Strategy bodies were not executed.",
+  "old_documentation_issue": "Physical flag slots were called evaluator indices; these are different. The selector stores a physical-slot mask.",
+  "manual_mapping_evidence": {
+    "path": "bot-cua-toi-3/phan-tich/chon-chien-luoc/select-20261023-r1/results.jsonl",
+    "sha256": "53028cbb17df9a639bdd62ea171f66005e5a3be672ad04f40183bddf5cdbd072",
+    "rows": [
+      {
+        "menu": 1,
+        "flag_slot": 0,
+        "case": 254
+      },
+      {
+        "menu": 2,
+        "flag_slot": 1,
+        "case": 260
+      },
+      {
+        "menu": 3,
+        "flag_slot": 2,
+        "case": 272
+      },
+      {
+        "menu": 4,
+        "flag_slot": 3,
+        "case": 296
+      },
+      {
+        "menu": 5,
+        "flag_slot": 5,
+        "case": 344
+      },
+      {
+        "menu": 6,
+        "flag_slot": 4,
+        "case": 440
+      },
+      {
+        "menu": 7,
+        "flag_slot": 7,
+        "case": 632
+      },
+      {
+        "menu": 8,
+        "flag_slot": 8,
+        "case": 1016
+      },
+      {
+        "menu": 9,
+        "flag_slot": 6,
+        "case": 1784
+      }
+    ]
+  },
+  "native_outer_sha256": "ad9ba21d686c6f054138072d755e4851473ddc903acc6f1fc3bf7fe0cad1f714"
+}

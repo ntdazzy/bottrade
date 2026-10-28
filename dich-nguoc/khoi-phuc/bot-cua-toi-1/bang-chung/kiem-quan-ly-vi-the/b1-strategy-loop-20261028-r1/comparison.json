@@ -1,0 +1,15 @@
+{
+  "cases": 896,
+  "matched": 896,
+  "failed": 0,
+  "first_failures": [],
+  "full_ea": false,
+  "full_strategy_bodies": false,
+  "native_enable_gates_contiguous": true,
+  "strategy_calls_replaced_by_recorder": true,
+  "input_mutations_supplied": true,
+  "original_ex5_changed": false,
+  "limits": [
+    "Enable gates and invocation order only. All eight strategy bodies are replaced by recorders; actual full EA is not executed."
+  ]
+}
