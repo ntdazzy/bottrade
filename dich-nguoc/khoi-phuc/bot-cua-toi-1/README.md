@@ -9,6 +9,8 @@ biên dịch 0 lỗi, 0 cảnh báo. Còn điều phối đầy đủ, khởi t�
 Đã thêm nối chuẩn bị/ngữ cảnh → đánh giá: **432/432 ca** khớp; tệp nối
 và API biên dịch 0 lỗi, 0 cảnh báo. [Bằng chứng](../danh-gia-doc-lap/evaluation-bridge-20261028-r1.md).
 
+Khối vốn/tài khoản khớp **616/616 ca**; [bằng chứng](../danh-gia-doc-lap/initial-state-20261028-r1.md).
+
 Ngày 28/10, cập nhật mới: đã dựng toàn bộ hàm lịch sử theo chiến lược
 `Bot1StrategyHistory.mqh`, giữ chung bộ lưu qua nhiều lần gọi: **270/270 ca**
 và **4/4 nhánh lỗi dãy** khớp. Ghép 88 tệp biên dịch 0 lỗi/0 cảnh báo.
