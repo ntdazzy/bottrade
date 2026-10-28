@@ -1,0 +1,24 @@
+{
+  "cases": 222,
+  "matched": 222,
+  "failed": 0,
+  "first_failures": [],
+  "fields": 80,
+  "whole_bot_complete": false,
+  "whole_manager_complete": false,
+  "full_ea": false,
+  "native_startup_tail_executed": true,
+  "native_string_helpers_executed": true,
+  "native_history_scan_executed": true,
+  "panel_children_recorded": true,
+  "terminal_replies_supplied": true,
+  "allocation_success_supplied": true,
+  "original_ex5_changed": false,
+  "authorization_executed": false,
+  "authorization_entry_guarded": true,
+  "history_tester_gate_present": false,
+  "price_bar_array_rva": "0x73470",
+  "limits": [
+    "Tail only. Initial temporary strings empty and allocation successful. Three panel children recorded with supplied changes; their bodies have separate evidence. Not full initialization or EA."
+  ]
+}

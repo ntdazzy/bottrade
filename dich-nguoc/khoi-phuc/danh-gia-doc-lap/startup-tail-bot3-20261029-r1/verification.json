@@ -1,0 +1,430 @@
+{
+  "bot": 3,
+  "run": "b3-startup-tail-20261029-r1",
+  "build": "b3-startup-tail-check-20261029-r1",
+  "all_headers_build": "b3-all-headers-api-20261029-r3",
+  "all_headers_count": 109,
+  "cases": 222,
+  "matched": 222,
+  "sdk_calls": 1371,
+  "result_sha256": "ee2b9340458a8dfc81744799d5e304749a4cf7116ecd3ae33da624a072ed7f3a",
+  "original_ex5_sha256": "ee063d3d87490afe24e2f4ce85f6b05659320e297b102efd70207f71ca2feb83",
+  "native_init_sha256": "66812ca6397edc00b872cfc3b38ca7606cc3dc7d5cf084433c579ea13e90771c",
+  "fields": [
+    {
+      "source": "P.font",
+      "format": "i",
+      "rva": "0x1d6f50"
+    },
+    {
+      "source": "P.scale",
+      "format": "d",
+      "rva": "0x1d6f48"
+    },
+    {
+      "source": "P.color_flag",
+      "format": "B",
+      "rva": "0x74938"
+    },
+    {
+      "source": "P.mode",
+      "format": "I",
+      "rva": "0x6d630"
+    },
+    {
+      "source": "P.strategy_risk",
+      "format": "d",
+      "rva": "0x1d7150"
+    },
+    {
+      "source": "P.frequency",
+      "format": "i",
+      "rva": "0x6d21c"
+    },
+    {
+      "source": "P.manual_lots",
+      "format": "d",
+      "rva": "0x1d7138"
+    },
+    {
+      "source": "P.allowed_dd",
+      "format": "d",
+      "rva": "0x1d7140"
+    },
+    {
+      "source": "P.cell_x",
+      "format": "d",
+      "rva": "0x752d8"
+    },
+    {
+      "source": "P.cell_y",
+      "format": "d",
+      "rva": "0x752e0"
+    },
+    {
+      "source": "P.cell_font_flag",
+      "format": "B",
+      "rva": "0x752e8"
+    },
+    {
+      "source": "P.closed_star",
+      "format": "B",
+      "rva": "0x6d43c"
+    },
+    {
+      "source": "P.rows_ready",
+      "format": "B",
+      "rva": "0x74970"
+    },
+    {
+      "source": "P.closed[0]",
+      "format": "d",
+      "rva": "0x76fc0"
+    },
+    {
+      "source": "P.closed[1]",
+      "format": "d",
+      "rva": "0x76fc8"
+    },
+    {
+      "source": "P.closed[2]",
+      "format": "d",
+      "rva": "0x76fd0"
+    },
+    {
+      "source": "P.closed[3]",
+      "format": "d",
+      "rva": "0x76fd8"
+    },
+    {
+      "source": "P.closed[4]",
+      "format": "d",
+      "rva": "0x76fe0"
+    },
+    {
+      "source": "P.closed[5]",
+      "format": "d",
+      "rva": "0x76fe8"
+    },
+    {
+      "source": "P.closed[6]",
+      "format": "d",
+      "rva": "0x76ff0"
+    },
+    {
+      "source": "P.closed[7]",
+      "format": "d",
+      "rva": "0x76ff8"
+    },
+    {
+      "source": "P.closed[8]",
+      "format": "d",
+      "rva": "0x77000"
+    },
+    {
+      "source": "P.per_trade[0]",
+      "format": "d",
+      "rva": "0x74b10"
+    },
+    {
+      "source": "P.per_trade[1]",
+      "format": "d",
+      "rva": "0x74b18"
+    },
+    {
+      "source": "P.per_trade[2]",
+      "format": "d",
+      "rva": "0x74b20"
+    },
+    {
+      "source": "P.per_trade[3]",
+      "format": "d",
+      "rva": "0x74b28"
+    },
+    {
+      "source": "P.per_trade[4]",
+      "format": "d",
+      "rva": "0x74b30"
+    },
+    {
+      "source": "P.per_trade[5]",
+      "format": "d",
+      "rva": "0x74b38"
+    },
+    {
+      "source": "P.per_trade[6]",
+      "format": "d",
+      "rva": "0x74b40"
+    },
+    {
+      "source": "P.per_trade[7]",
+      "format": "d",
+      "rva": "0x74b48"
+    },
+    {
+      "source": "P.per_trade[8]",
+      "format": "d",
+      "rva": "0x74b50"
+    },
+    {
+      "source": "P.lots[0]",
+      "format": "d",
+      "rva": "0x73ac0"
+    },
+    {
+      "source": "P.lots[1]",
+      "format": "d",
+      "rva": "0x73ac8"
+    },
+    {
+      "source": "P.lots[2]",
+      "format": "d",
+      "rva": "0x73ad0"
+    },
+    {
+      "source": "P.lots[3]",
+      "format": "d",
+      "rva": "0x73ad8"
+    },
+    {
+      "source": "P.lots[4]",
+      "format": "d",
+      "rva": "0x73ae0"
+    },
+    {
+      "source": "P.lots[5]",
+      "format": "d",
+      "rva": "0x73ae8"
+    },
+    {
+      "source": "P.lots[6]",
+      "format": "d",
+      "rva": "0x73af0"
+    },
+    {
+      "source": "P.lots[7]",
+      "format": "d",
+      "rva": "0x73af8"
+    },
+    {
+      "source": "P.lots[8]",
+      "format": "d",
+      "rva": "0x73b00"
+    },
+    {
+      "source": "Events.nfp",
+      "format": "q",
+      "rva": "0x1d6c70"
+    },
+    {
+      "source": "Events.interest",
+      "format": "q",
+      "rva": "0x1d6c78"
+    },
+    {
+      "source": "Events.cpi",
+      "format": "q",
+      "rva": "0x1d6c80"
+    },
+    {
+      "source": "Windows.nfp_enabled",
+      "format": "B",
+      "rva": "0x1d7020"
+    },
+    {
+      "source": "Windows.interest_enabled",
+      "format": "B",
+      "rva": "0x1d7078"
+    },
+    {
+      "source": "Windows.cpi_enabled",
+      "format": "B",
+      "rva": "0x1d70b0"
+    },
+    {
+      "source": "Windows.nfp_after",
+      "format": "i",
+      "rva": "0x1d7060"
+    },
+    {
+      "source": "Windows.interest_after",
+      "format": "i",
+      "rva": "0x1d7098"
+    },
+    {
+      "source": "Windows.cpi_after",
+      "format": "i",
+      "rva": "0x1d70d0"
+    },
+    {
+      "source": "Selection.block_time",
+      "format": "q",
+      "rva": "0x1d6ca0"
+    },
+    {
+      "source": "Selection.label",
+      "format": "s",
+      "rva": "0x1d6ca8"
+    },
+    {
+      "source": "Index",
+      "format": "I",
+      "rva": "0x74934"
+    },
+    {
+      "source": "StartLots",
+      "format": "d",
+      "rva": "0x6d620"
+    },
+    {
+      "source": "Calendar.hour",
+      "format": "i",
+      "rva": "0x747dc"
+    },
+    {
+      "source": "LastHour",
+      "format": "i",
+      "rva": "0x74488"
+    },
+    {
+      "source": "Show",
+      "format": "B",
+      "rva": "0x1d6f38"
+    },
+    {
+      "source": "Tester",
+      "format": "B",
+      "rva": "0x1d6f40"
+    },
+    {
+      "source": "HistoryWindow",
+      "format": "B",
+      "rva": "0x6d43d"
+    },
+    {
+      "source": "Magic",
+      "format": "i",
+      "rva": "0x6d564"
+    },
+    {
+      "source": "Seed",
+      "format": "i",
+      "rva": "0x1d6ff0"
+    },
+    {
+      "source": "Balance",
+      "format": "d",
+      "rva": "0x1d6c60"
+    },
+    {
+      "source": "LastTicket",
+      "format": "Q",
+      "rva": "0x74838"
+    },
+    {
+      "source": "Wins",
+      "format": "d",
+      "rva": "0x74940"
+    },
+    {
+      "source": "Losses",
+      "format": "d",
+      "rva": "0x74948"
+    },
+    {
+      "source": "TradeComment",
+      "format": "s",
+      "rva": "0x6d568"
+    },
+    {
+      "source": "TradeSymbol",
+      "format": "s",
+      "rva": "0x74958"
+    },
+    {
+      "source": "State.buy_first",
+      "format": "s",
+      "rva": "0x74438"
+    },
+    {
+      "source": "State.buy_second",
+      "format": "s",
+      "rva": "0x74448"
+    },
+    {
+      "source": "State.sell_first",
+      "format": "s",
+      "rva": "0x74458"
+    },
+    {
+      "source": "State.sell_second",
+      "format": "s",
+      "rva": "0x74468"
+    },
+    {
+      "source": "State.flag_744a0",
+      "format": "B",
+      "rva": "0x744a0"
+    },
+    {
+      "source": "BarTimes[0]",
+      "format": "q",
+      "rva": "0x73470"
+    },
+    {
+      "source": "BarTimes[1]",
+      "format": "q",
+      "rva": "0x73478"
+    },
+    {
+      "source": "BarTimes[2]",
+      "format": "q",
+      "rva": "0x73480"
+    },
+    {
+      "source": "BarTimes[3]",
+      "format": "q",
+      "rva": "0x73488"
+    },
+    {
+      "source": "BarTimes[4]",
+      "format": "q",
+      "rva": "0x73490"
+    },
+    {
+      "source": "BarTimes[5]",
+      "format": "q",
+      "rva": "0x73498"
+    },
+    {
+      "source": "BarTimes[6]",
+      "format": "q",
+      "rva": "0x734a0"
+    },
+    {
+      "source": "BarTimes[7]",
+      "format": "q",
+      "rva": "0x734a8"
+    },
+    {
+      "source": "BarTimes[8]",
+      "format": "q",
+      "rva": "0x734b0"
+    }
+  ],
+  "generated_script_reproduced": true,
+  "whole_bot_complete": false,
+  "whole_manager_complete": false,
+  "full_ea": false,
+  "native_startup_tail_executed": true,
+  "native_string_helpers_executed": true,
+  "native_history_scan_executed": true,
+  "panel_children_recorded": true,
+  "terminal_replies_supplied": true,
+  "allocation_success_supplied": true,
+  "original_ex5_changed": false,
+  "authorization_executed": false,
+  "authorization_entry_guarded": true,
+  "history_tester_gate_present": false,
+  "price_bar_array_rva": "0x73470"
+}

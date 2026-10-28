@@ -20,6 +20,7 @@
 - `kiem-mac-dinh-dau-vao-bot-1.py generate CAPTURE_RUN | run TEST_RUN --capture CAPTURE_RUN --build BUILD`: tạo/kiểm 41 giá trị nội bộ từ quan sát gốc, giữ 13 trường người dùng và mã giá.
 - `kiem-trang-thai-giao-dich-khoi-dong-bot-1.py generate | prepare|mql5|original|compare RUN`: phần sau chuẩn bị đầu, 54 trường và 1.800 ô bảng; `mql5` cần `--build BUILD`. Hai hàm tìm mức/dữ liệu dịch vụ được cấp; chưa là toàn OnInit/EA.
 - `kiem-duoi-khoi-dong-bot-1.py generate | prepare|mql5|original|compare RUN`: đuôi `0x4e77..0x5658`, 309 ca/74 trường, gồm chuỗi lệnh, lịch sử và thứ tự ba hàm bảng; `mql5` cần `--build BUILD`. Thân ba hàm bảng, dữ liệu dịch vụ và cấp phát thành công được cấp riêng; chưa là nhánh lỗi sau `0x5658`, toàn OnInit hoặc EA.
+- `kiem-duoi-khoi-dong-bot-3.py generate | prepare|mql5|original|compare RUN`: đuôi bot 3 `0x574c..0x5f34`, 80 trường; chuỗi/lịch sử chạy thật, ba hàm bảng ghi đối số và thay đổi chung. `mql5` cần `--build BUILD` và chạy trước `original`; chưa ghép chuẩn bị/phần giữa hoặc thân bảng trong lượt này.
 - `kiem-noi-chuan-bi-danh-gia-bot-1-3.py generate BOT | prepare|mql5|original|compare BOT RUN`: so các giá trị nối với vùng gốc sau chuẩn bị; `mql5` cần `--build BUILD`, bản dựng bật kiểm chia 0.
 - `kiem-giu-trang-thai-danh-gia-bot-1-3.py generate BOT | run BOT RUN --build BUILD`: kiểm giữ trạng thái sau hai lần gọi, lần sau trả sớm; thân đánh giá được thay bằng bộ ghi.
 - `kiem-phu-dinh-noi-trang-thai-bot-1-3.py generate BOT | run BOT RUN --build BUILD`: chạy lại phép kiểm trên bản nối cũ; phải phát hiện sai.

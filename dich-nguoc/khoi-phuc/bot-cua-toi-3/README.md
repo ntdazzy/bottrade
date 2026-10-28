@@ -1,3 +1,9 @@
+Đã dựng đuôi khởi động từ bốn chuỗi ghi chú đến trả về:
+**222/222 ca khớp**, 80 trường, 1.371 lần gọi. Giữ cổng quét lịch sử
+riêng của bot 3; ba thân hàm bảng được thay bằng bộ ghi trong phép
+kiểm này. 109 tệp `.mqh` biên dịch 0 lỗi, 0 cảnh báo. Chưa ghép
+toàn OnInit/EA. [Bằng chứng](../danh-gia-doc-lap/startup-tail-bot3-20261029-r1/README.md).
+
 Đã chạy cả thân đổi giờ mùa hè và đổi tiền trong phần nối khởi động:
 **344/344 ca khớp**, 18.982 lời gọi/thông báo; giữ chung 47 trường và
 5 chuỗi. Biên dịch 0 lỗi, 0 cảnh báo. Còn chuẩn bị đầu/phần sau và

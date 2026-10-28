@@ -183,6 +183,10 @@ Bot 3 đã nối đổi giờ/chọn tần suất với ngữ cảnh `0x3840..0x
 chạy cả thân mùa hè/đổi tiền: **344/344 ca**, 18.982 lời gọi/thông báo.
 Còn chuẩn bị đầu, phần sau và phép kiểm các nhánh lỗi khi đã nối.
 [Bằng chứng](danh-gia-doc-lap/startup-selection-live-bot3-20261029-r1/README.md).
+Đuôi bot 3 `0x574c..0x5f34` đã có nguồn và **222/222 ca**, 80 trường;
+chuỗi/lịch sử chạy thật, ba thân bảng được thay bằng bộ ghi. Còn
+đoạn giữa `0x4580..0x574c` và ghép thân bảng vào phép kiểm nối.
+[Bằng chứng đuôi](danh-gia-doc-lap/startup-tail-bot3-20261029-r1/README.md).
 
 P30 tiếp tục bằng phân tích tĩnh toàn luồng. Không dùng cờ/tài khoản/
 trạng thái cấp quyền giả lập để chạy phần bảo vệ. Chưa xác nhận đầy
