@@ -1,0 +1,22 @@
+{
+  "cases": 88,
+  "matched": 88,
+  "failed": 0,
+  "first_failures": [],
+  "whole_bot_complete": false,
+  "whole_manager_complete": false,
+  "full_ea": false,
+  "native_enable_gates_contiguous": true,
+  "native_profile_context_preparation_executed": true,
+  "native_statistics_blocks": true,
+  "evaluator_executed": false,
+  "full_history_body": false,
+  "evaluator_and_history_replies_supplied": true,
+  "terminal_replies_supplied": true,
+  "allocation_success_supplied": true,
+  "authorization_executed": false,
+  "authorization_entry_guarded": true,
+  "original_ex5_changed": false,
+  "between_strategy_register_reset": false,
+  "caller_string_copy_register_supplied": true
+}

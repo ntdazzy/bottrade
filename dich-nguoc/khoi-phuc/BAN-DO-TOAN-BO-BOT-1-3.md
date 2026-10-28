@@ -181,6 +181,10 @@ chiến lược: **856/856 ca**, không đặt lại dữ liệu/thanh ghi giữ
 các phần. Còn tám thân chiến lược trong phép kiểm nối, đánh giá
 trực tiếp, phần sau vòng và toàn EA.
 [Bằng chứng](danh-gia-doc-lap/tick-dispatch-bot1-20261029-r1/README.md).
+Phép kiểm tiếp theo chạy nguyên nạp cấu hình/ngữ cảnh/chuẩn bị và
+thống kê qua nhiều chiến lược: **88/88 ca**, 457 lần chuẩn bị thật.
+Chưa chạy thân đánh giá/lịch sử hoặc ghép với đoạn chọn mã/dọn bảng
+trong cùng lượt. [Bằng chứng](danh-gia-doc-lap/real-setup-loop-bot1-20261029-r1/README.md).
 Bot 3 đã nối đổi giờ/chọn tần suất với ngữ cảnh `0x3840..0x4580`,
 chạy cả thân mùa hè/đổi tiền: **344/344 ca**, 18.982 lời gọi/thông báo.
 Còn chuẩn bị đầu, phần sau và phép kiểm các nhánh lỗi khi đã nối.

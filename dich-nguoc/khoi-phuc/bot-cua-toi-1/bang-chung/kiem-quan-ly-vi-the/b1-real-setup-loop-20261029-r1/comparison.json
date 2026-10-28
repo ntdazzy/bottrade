@@ -1,0 +1,54 @@
+{
+  "cases": 88,
+  "matched": 2,
+  "failed": 86,
+  "first_failures": [
+    {
+      "case": 2,
+      "first_byte": 572
+    },
+    {
+      "case": 3,
+      "first_byte": 572
+    },
+    {
+      "case": 4,
+      "first_byte": 244
+    },
+    {
+      "case": 5,
+      "first_byte": 572
+    },
+    {
+      "case": 6,
+      "first_byte": 244
+    },
+    {
+      "case": 7,
+      "first_byte": 572
+    },
+    {
+      "case": 8,
+      "first_byte": 244
+    },
+    {
+      "case": 9,
+      "first_byte": 572
+    }
+  ],
+  "whole_bot_complete": false,
+  "whole_manager_complete": false,
+  "full_ea": false,
+  "native_enable_gates_contiguous": true,
+  "native_profile_context_preparation_executed": true,
+  "native_statistics_blocks": true,
+  "evaluator_executed": false,
+  "full_history_body": false,
+  "evaluator_and_history_replies_supplied": true,
+  "terminal_replies_supplied": true,
+  "allocation_success_supplied": true,
+  "authorization_executed": false,
+  "authorization_entry_guarded": true,
+  "original_ex5_changed": false,
+  "between_strategy_register_reset": false
+}

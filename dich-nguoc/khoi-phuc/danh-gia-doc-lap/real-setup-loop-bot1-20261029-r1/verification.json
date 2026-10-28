@@ -1,0 +1,26 @@
+{
+  "run": "b1-real-setup-loop-20261029-r2",
+  "cases": 88,
+  "matched": 88,
+  "preparation_calls": 457,
+  "values_per_evaluator_boundary": 127,
+  "continuous_start": "0x12424",
+  "continuous_end": "0x16730",
+  "native_setup_function": "0x7500",
+  "evaluator_recorder": "0x18aa0",
+  "history_recorder": "0x1efa0",
+  "result_sha256": "ce152195edb899f855bba57684733fb6221a69600c39b7b2d2e2c10c4b0e6ace",
+  "original_ex5_sha256": "a3b0de423a06e10ebedc279307b93d7cb9188ba2bb5de77131a913c865b0e922",
+  "build": "b1-real-setup-loop-check-20261029-r3",
+  "full_ea": false,
+  "evaluator_executed": false,
+  "full_history_body": false,
+  "caller_string_copy_register_supplied": true,
+  "between_strategy_register_reset": false,
+  "finite_cases_only": true,
+  "failed_run_preserved": "b1-real-setup-loop-20261029-r1",
+  "failed_run_reason": [
+    "Test forced virtual_stops to zero.",
+    "Test CopyBuffer/snapshot used logical indices with series arrays."
+  ]
+}

@@ -1,9 +1,13 @@
-Đã nối chọn mã giá, thân dọn bảng và 8 cổng chiến lược:
-**856/856 ca khớp**, so 1.500 ô bảng/danh sách vé ở mỗi lần gọi.
-110 tệp `.mqh` biên dịch 0 lỗi, 0 cảnh báo. Tám thân chiến lược
-được thay bằng bộ ghi; còn nối các thân này, đường đánh giá riêng,
-phần sau vòng và toàn EA.
-[Phạm vi mới](../danh-gia-doc-lap/tick-dispatch-bot1-20261029-r1/README.md).
+Đã chạy nạp cấu hình, ngữ cảnh, chuẩn bị và thống kê liên tiếp qua
+8 cổng chiến lược: **88/88 ca khớp**, 457 lần chuẩn bị thật, 127
+giá trị/chuỗi/mảng mỗi lần. Đánh giá giao dịch và lấy lịch sử vẫn
+được thay bằng bộ ghi. Nguồn kiểm biên dịch 0 lỗi, 0 cảnh báo.
+[Phạm vi mới](../danh-gia-doc-lap/real-setup-loop-bot1-20261029-r1/README.md).
+
+Phần chọn mã giá/dọn bảng nối với 8 cổng đã khớp **856/856 ca**,
+nhưng chưa ghép với các thân chạy thật nói trên. Còn đường đánh
+giá riêng, phần sau vòng và toàn EA.
+[Bằng chứng phần trước](../danh-gia-doc-lap/tick-dispatch-bot1-20261029-r1/README.md).
 
 Đã phục hồi phần chọn đường theo mã giá trước vòng chiến lược:
 **121/121 ca khớp**, gồm các biến thể vàng, bạc và `GC`; giữ đúng

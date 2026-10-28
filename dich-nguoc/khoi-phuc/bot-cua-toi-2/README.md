@@ -6,6 +6,10 @@ chiếu với cấu hình chạy. Kiểu khai báo, mặc định và vị trí 
 chưa rõ; chưa viết khối nhập liệu theo suy đoán.
 [Danh sách và bằng chứng](../danh-gia-doc-lap/inputs-bot2-20261029-r1/README.md).
 
+Đã đọc trực tiếp ba vị trí lưu dùng cho bảng và mã nhận diện;
+tên cài đặt tương ứng còn là ứng viên, chưa xác nhận bằng đổi
+từng đầu vào. [Bằng chứng lệnh máy](../danh-gia-doc-lap/input-uses-bot2-20261029-r1/README.md).
+
 Đã phục hồi hai chiều đổi tiền: **1.650/1.650 ca khớp từng byte**,
 gồm toàn bộ thứ tự đọc tiền tệ/tỷ giá; thêm 4 ca chia 0 khớp loại
 lỗi và lời gọi trước lỗi. Giữ nguyên nhánh CHF bị lặp của bản gốc.

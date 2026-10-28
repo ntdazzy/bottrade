@@ -1,0 +1,134 @@
+{
+  "bot": 2,
+  "code_base": "0x253f2620000",
+  "function_begin": "0xe250",
+  "function_end_exclusive": "0x100a2",
+  "function_sha256": "3f8d827aa47cba3eef205a8961027ce4b3103f718191a34e6701a4df5065e175",
+  "original_ex5_sha256": "390d8ab14fc213ff4b8cbe5084bec545526e62c6028516fe21219a59398ce795",
+  "execution_performed": false,
+  "fields": [
+    {
+      "candidate_input_name": "ShowInfoPanel",
+      "input_name_binding_verified": false,
+      "absolute_address": "0x253f2688528",
+      "rva": "0x68528",
+      "read_width_bytes": 1,
+      "observed_role": "Byte bằng 0 bỏ qua cập nhật bảng.",
+      "instructions": [
+        {
+          "rva": "0xe263",
+          "bytes": "48b8288568f253020000",
+          "assembly": "movabs rax, 0x253f2688528"
+        },
+        {
+          "rva": "0xe2ff",
+          "bytes": "803800",
+          "assembly": "cmp byte ptr [rax], 0"
+        }
+      ]
+    },
+    {
+      "candidate_input_name": "UpdateInfoTesting",
+      "input_name_binding_verified": false,
+      "absolute_address": "0x253f2688530",
+      "rva": "0x68530",
+      "read_width_bytes": 1,
+      "observed_role": "Byte bằng 0 chặn bảng khi MQLInfoInteger(6) trả 1.",
+      "instructions": [
+        {
+          "rva": "0xe323",
+          "bytes": "48b9308568f253020000",
+          "assembly": "movabs rcx, 0x253f2688530"
+        },
+        {
+          "rva": "0xe32d",
+          "bytes": "83f801",
+          "assembly": "cmp eax, 1"
+        },
+        {
+          "rva": "0xe330",
+          "bytes": "0fb619",
+          "assembly": "movzx ebx, byte ptr [rcx]"
+        },
+        {
+          "rva": "0xe335",
+          "bytes": "84db",
+          "assembly": "test bl, bl"
+        },
+        {
+          "rva": "0xe337",
+          "bytes": "0f84041b0000",
+          "assembly": "je 0x253f262fe41"
+        }
+      ]
+    },
+    {
+      "candidate_input_name": "ST1_MagicNumber",
+      "input_name_binding_verified": false,
+      "absolute_address": "0x253f2688600",
+      "rva": "0x68600",
+      "read_width_bytes": 4,
+      "observed_role": "Đọc số 32 bit, cộng 1 đến 8 trước khi so mã lệnh.",
+      "instructions": [
+        {
+          "rva": "0xe394",
+          "bytes": "48b8008668f253020000",
+          "assembly": "movabs rax, 0x253f2688600"
+        },
+        {
+          "rva": "0xe3da",
+          "bytes": "8b00",
+          "assembly": "mov eax, dword ptr [rax]"
+        },
+        {
+          "rva": "0xe3dc",
+          "bytes": "8d4801",
+          "assembly": "lea ecx, [rax + 1]"
+        },
+        {
+          "rva": "0xe3df",
+          "bytes": "448d4002",
+          "assembly": "lea r8d, [rax + 2]"
+        },
+        {
+          "rva": "0xe3e3",
+          "bytes": "8d5003",
+          "assembly": "lea edx, [rax + 3]"
+        },
+        {
+          "rva": "0xe3f4",
+          "bytes": "448d4004",
+          "assembly": "lea r8d, [rax + 4]"
+        },
+        {
+          "rva": "0xe403",
+          "bytes": "8d5005",
+          "assembly": "lea edx, [rax + 5]"
+        },
+        {
+          "rva": "0xe411",
+          "bytes": "448d4006",
+          "assembly": "lea r8d, [rax + 6]"
+        },
+        {
+          "rva": "0xe420",
+          "bytes": "8d5007",
+          "assembly": "lea edx, [rax + 7]"
+        },
+        {
+          "rva": "0xe423",
+          "bytes": "83c008",
+          "assembly": "add eax, 8"
+        }
+      ]
+    }
+  ],
+  "unresolved": [
+    "InfoPanelSizeAdjust",
+    "SetFontSize"
+  ],
+  "limits": [
+    "Đây là bằng chứng vị trí và cách đọc; tên input chỉ là ứng viên theo chức năng.",
+    "Chưa thay từng input trên bản gốc để xác nhận ánh xạ tên; chưa biết kiểu khai báo/default/menu."
+  ]
+}
