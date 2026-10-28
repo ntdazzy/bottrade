@@ -1,0 +1,13 @@
+{
+  "failure": "ACCOUNT_STATE (0, 47, 2011)",
+  "differences": [
+    {
+      "field": "HighestBalance",
+      "rva": "0x6a328",
+      "mql5": 4666723172467343360,
+      "original": 13875264996486676480
+    }
+  ],
+  "scope": "first differing recorded service before diagnostic print; no completed native result",
+  "full_ea": false
+}

@@ -104,6 +104,11 @@ dừng đúng và không sang phần cuối. Còn phần trước khởi tạo v
 chiến lược/bình luận qua cả ba phần; điều kiện từ phần tài khoản
 được cấp. Còn phần trước ngữ cảnh và toàn EA.
 [Bằng chứng nối ngữ cảnh](danh-gia-doc-lap/startup-context-flow-20261028-r1/README.md).
+Đã nối từ phần vốn `0x126c` qua lịch dự phòng đến trả về `0x5658`:
+**93/93 ca**, 247 giá trị và 2.700 ô bảng/lịch. Sửa thứ tự ghi vốn
+cao nhất theo lỗi so trạng thái trước thông báo; kiểm lại **616/616
+ca vốn** vẫn khớp. Còn đoạn trước vốn, các sự kiện và toàn EA.
+[Bằng chứng nối vốn](danh-gia-doc-lap/startup-account-flow-20261028-r1/README.md).
 
 Vị trí trong bảng là số tính từ đầu vùng mã của mỗi bot. Chi tiết dòng
 và lời gọi tra ở hai danh sách trên. “Đã so phần” có nghĩa đã có một

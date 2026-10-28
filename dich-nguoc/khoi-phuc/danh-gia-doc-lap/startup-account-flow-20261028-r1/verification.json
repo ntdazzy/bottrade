@@ -1,0 +1,38 @@
+{
+  "run": "b1-startup-account-flow-20261028-r2",
+  "cases": 93,
+  "matched": 93,
+  "fields": 247,
+  "table_cells": 1800,
+  "calendar_cells": 900,
+  "sdk_calls": 5994,
+  "cpu_arithmetic_calls": 5142,
+  "builds": [
+    "b1-startup-account-flow-check-20261028-r2",
+    "b1-account-regression-20261028-r1",
+    "b1-all-headers-api-20261028-r29"
+  ],
+  "legacy_account_regression_cases": 616,
+  "legacy_account_regression_sha256": "b0dec255ba1397504b19100032e3a2ca45c03244e6880b4279309ce19c777a12",
+  "native_account_conditions_established": true,
+  "source_issue_fixed": {
+    "field": "highest_balance",
+    "native_rva": "0x6a328",
+    "print_pc": "0x16b3",
+    "write_pc": "0x16e5",
+    "old_run": "b1-startup-account-flow-20261028-r1"
+  },
+  "all_headers_existing_line_endings_only": [
+    "dich-nguoc/khoi-phuc/bot-cua-toi-1/source/MQL5/Include/bot-cua-toi-1/Bot1AccountStateVolume.mqh",
+    "dich-nguoc/khoi-phuc/bot-cua-toi-1/source/MQL5/Include/bot-cua-toi-1/Bot1Withdrawal.mqh",
+    "dich-nguoc/khoi-phuc/bot-cua-toi-1/source/MQL5/Include/bot-cua-toi-1/Bot1AccountVolume.mqh"
+  ],
+  "whole_bot_complete": false,
+  "full_ea": false,
+  "legacy_regression_script_line_endings_only": {
+    "path": "dich-nguoc/khoi-phuc/bot-cua-toi-1/source/MQL5/Scripts/bot-cua-toi-1/Bot1AccountInitializationCheck.mq5",
+    "workspace_sha256": "cb9d99641230b0f8c6c3d47299fea8c7a2f6295a2ed61b469c08d1d63b3ae65d",
+    "git_sha256": "574ff41aafebb9c435e7a1bf826817be38c916000b0750f4d76f58dc0cbd1637",
+    "text_identical": true
+  }
+}

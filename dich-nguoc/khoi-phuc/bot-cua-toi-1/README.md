@@ -1,3 +1,10 @@
+Đã nối vốn/tài khoản → lịch tin dự phòng → ngữ cảnh → chuẩn bị →
+cuối khởi động: **93/93 ca khớp**, 247 giá trị và 2.700 ô bảng/lịch.
+Đã sửa thứ tự ghi vốn cao nhất; kiểm lại **616/616 ca vốn** vẫn khớp.
+106 tệp ghép biên dịch 0 lỗi/cảnh báo. Còn kiểm quyền, khởi tạo lịch
+trực tuyến phía trước và toàn EA.
+[Phạm vi hiện hành](../danh-gia-doc-lap/startup-account-flow-20261028-r1/README.md).
+
 Đã nối ngữ cảnh → chuẩn bị đầu → cuối khởi động: **459/459 ca khớp**,
 238 giá trị, 1.800 ô bảng và 25.100 lời gọi. Giữ chung mã giá, mã
 chiến lược và bình luận giao dịch. Bộ ghép 105 tệp biên dịch 0 lỗi/

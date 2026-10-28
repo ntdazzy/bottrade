@@ -14,12 +14,13 @@ void Bot1InitializeAccountState(const bool use_equity,const bool reset_highest,c
       Sleep(5000);
    }
    double stored=GlobalVariableGet(peak_key);
-   highest_balance=effective_balance;
+   double selected_balance=effective_balance;
    if(effective_balance<stored)
    {
       Print("HighestBalance value found: "+(string)stored);
-      highest_balance=stored;
+      selected_balance=stored;
    }
+   highest_balance=selected_balance;
    GlobalVariableSet(peak_key,highest_balance);
    time_key="LastBalanceOp"+IntegerToString(AccountInfoInteger(ACCOUNT_LOGIN));
    bool exists=GlobalVariableCheck(time_key);

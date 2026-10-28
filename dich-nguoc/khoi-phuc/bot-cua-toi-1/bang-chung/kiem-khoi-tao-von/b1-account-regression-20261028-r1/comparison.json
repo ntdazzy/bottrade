@@ -1,0 +1,13 @@
+{
+  "bot": 1,
+  "cases": 616,
+  "matched": 616,
+  "failed": 0,
+  "passed": true,
+  "first_failures": [],
+  "tool_sha256": "bf32d683e69dff8280941ae888f7cb7bc0aca364aec269d2073fb5a8304352a5",
+  "native_reference_sha256": "65cafecd8e5c450806c7bd19a12f0cde4c6f162c888b3d1d02b9cdf2a52b0f21",
+  "inputs_sha256": "2482f7b7ff2e64521a38c0f1843645ae27cee92d88f2c5589f7a50ac5386559b",
+  "mql5_result_sha256": "78b1da1594fe28aed84988dda4b4e9b8e9cd0a33d8eb06f757cb815199a52cb0",
+  "scope": "Source initialization versus original bounded segment: both numeric states, exact key strings, timestamp and ordered account/storage/clock/sleep calls. Diagnostics, last-error codes, allocation failures and whole OnInit/EA excluded. MQL5 uses real number/string conversions; storage/account APIs are supplied."
+}
