@@ -1,3 +1,10 @@
+Đã nối khởi tạo vốn và lịch dự phòng tới trả về: **108/108 ca khớp**,
+283 trường, 2.800 ô bảng và 900 ô lịch. Cách gọi vốn cũ vẫn khớp
+**616/616 ca**; 115 tệp `.mqh` biên dịch 0 lỗi, 0 cảnh báo. Còn phần
+lấy lịch tin phía trước, các thân tìm mức/bảng trong phép kiểm nối,
+quyền dùng hợp lệ và toàn EA.
+[Bằng chứng](../danh-gia-doc-lap/startup-account-flow-bot3-20261029-r1/README.md).
+
 Đã nối đổi giờ/chọn tần suất, ngữ cảnh, chuẩn bị và đuôi:
 **224/224 ca khớp**, 274 trường, dãy chỉ báo và 2.800 ô. Thân đổi
 giờ/đổi tiền chạy thật; 114 tệp `.mqh` biên dịch 0 lỗi, 0 cảnh báo.

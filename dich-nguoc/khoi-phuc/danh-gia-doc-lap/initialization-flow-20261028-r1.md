@@ -17,7 +17,7 @@
 | Thêm thân tìm mức và kiểm lệnh gần | `0xd60..0x5658`, 85/85 ca; nguyên các thân lịch/tìm mức/kiểm lệnh gần | chưa dựng đoạn nối tương ứng |
 | Thêm cả ba thân hàm bảng | `0xd60..0x5658`, 42/42 ca, 57.592 lời gọi; chưa so ảnh vẽ thật hoặc kiểm quyền | chưa dựng đoạn nối tương ứng |
 | Đoạn vốn/tài khoản trong OnInit | `0x126c..0x1941` | `0x1279..0x193f` |
-| Nối vốn, lịch dự phòng tới trả về | `0x126c..0x5658`, 93/93 ca, cùng trạng thái và 900 ô lịch | chưa dựng đoạn nối tương ứng |
+| Nối vốn, lịch dự phòng tới trả về | `0x126c..0x5658`, 93/93 ca, cùng trạng thái và 900 ô lịch | `0x1279..0x5f34`, 108/108 ca, 283 trường/900 ô lịch/2.800 ô bảng; thân đổi giờ/đổi tiền/chuẩn bị chạy thật |
 | Nạp dữ liệu lịch dự phòng và hai cờ | `0x1941..0x3827` | `0x193f..0x3840` |
 | Ngữ cảnh/bộ đếm/đuôi mã trước chuẩn bị | `0x3827..0x3c9d` | `0x3ce6..0x4580`, 298/298 ca |
 | Nối đổi giờ/chọn tần suất với ngữ cảnh | không có đoạn chọn tương ứng | `0x3840..0x4580`, 233/233 ca; kết quả hai hàm mùa hè/đổi tiền được cấp |

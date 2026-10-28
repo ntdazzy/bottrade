@@ -113,4 +113,5 @@
 #include "../../Include/bot-cua-toi-3/Bot3StartupPreparationFlow.mqh"
 #include "../../Include/bot-cua-toi-3/Bot3StartupContextFlow.mqh"
 #include "../../Include/bot-cua-toi-3/Bot3StartupSelectionFlow.mqh"
+#include "../../Include/bot-cua-toi-3/Bot3StartupAccountFlow.mqh"
 void OnStart() { Print("Bot3AllHeadersAPICompile"); }
