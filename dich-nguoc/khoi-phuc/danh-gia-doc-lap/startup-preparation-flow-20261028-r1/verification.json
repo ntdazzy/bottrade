@@ -1,0 +1,23 @@
+{
+  "normal_run": "b1-startup-prep-flow-20261028-r2",
+  "cases": 161,
+  "fields": 224,
+  "table_cells": 1800,
+  "sdk_calls": 8988,
+  "preparation_services": 2479,
+  "cpu_arithmetic_calls": 8287,
+  "error_run": "b1-startup-prep-errors-20261028-r1",
+  "fatal_cases": 3,
+  "error_receipt_sha256": "2b380bcc9245058f7ba47b482a34f365a3ffe5ecb5bd50fbf4974673d75bf1e0",
+  "builds": [
+    "b1-startup-prep-flow-check-20261028-r2",
+    "b1-all-headers-api-20261028-r27"
+  ],
+  "same_state_across_preparation": true,
+  "entry_level_children_supplied": true,
+  "panel_children_recorded": true,
+  "allocation_success_supplied": true,
+  "exact_fault_state_compared": false,
+  "full_ea": false,
+  "whole_bot_complete": false
+}

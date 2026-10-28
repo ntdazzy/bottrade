@@ -16,6 +16,7 @@
 | Nạp dữ liệu lịch dự phòng và hai cờ | `0x1941..0x3827` | `0x193f..0x3840` |
 | Ngữ cảnh/bộ đếm/đuôi mã trước chuẩn bị | `0x3827..0x3c9d` | chưa dựng phần tương ứng |
 | Chuẩn bị chiến lược đầu | `0x7500` | `0xe0c0` |
+| Nối chuẩn bị đầu đến trả về | gọi `0x7500` tại `0x3ca9`, chạy tới `0x5658`; 161/161 ca và 3/3 ca lỗi | chưa dựng đoạn nối tương ứng |
 | Trạng thái giao dịch sau chuẩn bị | `0x3cab..0x4e77`, gồm nhánh ngoài đến `0x4f4b`; 315/315 ca | chưa dựng đoạn tương ứng |
 | Nối trạng thái giao dịch đến trả về | `0x3cab..0x5658`, 639/639 ca chạy liên tục, chung trạng thái | chưa dựng đoạn tương ứng |
 | Tạo bảng | `0x8320`, `0xe1b0`, `0xffb0` | `0xef40`, `0x14fa0`, `0x16e80` |

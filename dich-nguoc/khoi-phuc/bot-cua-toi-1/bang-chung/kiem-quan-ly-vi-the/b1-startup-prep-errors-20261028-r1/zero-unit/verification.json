@@ -1,0 +1,12 @@
+{
+  "tag": "zero-unit",
+  "native_code": "0x230862000001f7",
+  "fatal_class": "zero divide",
+  "exit_code": 4294967295,
+  "recorded_services_compared": 14,
+  "tail_not_entered": true,
+  "no_normal_result": true,
+  "exact_final_fault_state_compared": false,
+  "tape_sha256": "629e914bd83566087e3e9fbcc4cf2197b378643f2646f08321f13e56c3c7df16",
+  "runtime_lines_sha256": "e49f97feb993665e12e0fb6383b3da6fbfe2d1a48e5bffc7bdf99a26252e72ec"
+}

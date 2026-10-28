@@ -88,6 +88,7 @@
 #include "../../Include/bot-cua-toi-1/Bot1StartupTradingState.mqh"
 #include "../../Include/bot-cua-toi-1/Bot1StartupTail.mqh"
 #include "../../Include/bot-cua-toi-1/Bot1StartupPostPreparation.mqh"
+#include "../../Include/bot-cua-toi-1/Bot1StartupPreparationFlow.mqh"
 #include "../../Include/bot-cua-toi-1/Bot1TradeErrors.mqh"
 #include "../../Include/bot-cua-toi-1/Bot1TradeMessages.mqh"
 #include "../../Include/bot-cua-toi-1/Bot1TradeSend.mqh"

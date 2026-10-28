@@ -95,6 +95,10 @@ dịch `0x62470` khác bình luận chuẩn bị `0x62480`. Lượt mới **655/
 125 giá trị; bản cố ý đọc nhầm bị phát hiện 651 ca. Kết quả này thay
 phạm vi nối r1, chưa là toàn OnInit/EA.
 [Bằng chứng sửa](danh-gia-doc-lap/startup-comment-binding-20261028-r1/README.md).
+Đã đưa thân chuẩn bị `0x7500` vào luồng từ `0x3c9d` tới trả về:
+**161/161 ca**, 224 giá trị và 1.800 ô bảng; ba ca lỗi mảng/chia 0
+dừng đúng và không sang phần cuối. Còn phần trước khởi tạo và toàn EA.
+[Bằng chứng nối chuẩn bị](danh-gia-doc-lap/startup-preparation-flow-20261028-r1/README.md).
 
 Vị trí trong bảng là số tính từ đầu vùng mã của mỗi bot. Chi tiết dòng
 và lời gọi tra ở hai danh sách trên. “Đã so phần” có nghĩa đã có một

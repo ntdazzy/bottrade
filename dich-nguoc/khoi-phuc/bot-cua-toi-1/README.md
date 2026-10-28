@@ -1,3 +1,9 @@
+Đã nối bước chuẩn bị đầu đến cuối khởi động: **161/161 ca khớp**,
+224 giá trị, 1.800 ô bảng và 8.988 lời gọi. Ba ca lỗi mảng/chia 0
+dừng đúng, không đi sang phần cuối. Bộ ghép 104 tệp biên dịch 0 lỗi/
+cảnh báo. Còn phần trước khởi tạo và toàn EA.
+[Phạm vi mới](../danh-gia-doc-lap/startup-preparation-flow-20261028-r1/README.md).
+
 Đã sửa chỗ nối nhầm hai bình luận: **655/655 ca khớp**, 125 giá trị,
 1.800 ô bảng và 24.419 lời gọi. Bản cố ý dùng nhầm bình luận bị phát
 hiện trong 651 ca; bốn lỗi nối cũ vẫn bị phát hiện. Nguồn kiểm và
