@@ -1,0 +1,29 @@
+[
+  {
+    "id": "b1-init-defaults-20261028-r1",
+    "expert": "Market\\Gold Trade Pro MT5.ex5",
+    "symbol": "XAUUSD_NOCOST_V2",
+    "period": "D1",
+    "model": 0,
+    "from": "2026.09.29",
+    "to": "2026.10.20",
+    "timeout": 300,
+    "inputs": {
+      "AutoGMT": "false",
+      "Broker_GMT_OFFSET_Winter": "0",
+      "Broker_GMT_OFFSET_Summer": "0",
+      "RunStrategyA": "false",
+      "RunStrategyB": "false",
+      "RunStrategyC": "false",
+      "RunStrategyD": "false",
+      "RunStrategyE": "false",
+      "RunStrategyF": "false",
+      "RunStrategyG": "false",
+      "RunStrategyH": "false",
+      "AllowBuyTrades": "false",
+      "AllowSellTrades": "false",
+      "ShowInfoPanel": "true",
+      "UpdateInfoTesting": "true"
+    }
+  }
+]

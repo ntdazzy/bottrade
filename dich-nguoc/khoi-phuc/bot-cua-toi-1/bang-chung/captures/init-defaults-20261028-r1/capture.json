@@ -1,0 +1,80 @@
+{
+  "pid": 4088,
+  "process": "C:\\Users\\NTD\\Desktop\\Bot Market Demo\\dich-nguoc\\.local\\claude-recovery-20261023\\mt5\\metatester64.exe",
+  "regions": [
+    {
+      "base": 1984946110464,
+      "allocation_base": 1984946110464,
+      "bytes": 323584,
+      "protect": 32,
+      "file": "000001ce28020000.bin",
+      "kind": "executable",
+      "sha256": "475f83f252af907ab6c925d65d1ae04d298bbda68c5fb825b70bd1acec51c3b4"
+    },
+    {
+      "base": 140719376629760,
+      "allocation_base": 140719376629760,
+      "bytes": 4096,
+      "protect": 32,
+      "file": "00007ffbc8750000.bin",
+      "kind": "executable",
+      "sha256": "3f070f3dfc346d16f48f039892263aab7440540e86efd2569e2c4daf68c5d3cc"
+    },
+    {
+      "base": 140719376633856,
+      "allocation_base": 140719376629760,
+      "bytes": 4096,
+      "protect": 64,
+      "file": "00007ffbc8751000.bin",
+      "kind": "executable",
+      "sha256": "ad7facb2586fc6e966c004d7d1d16b024f5805ff7cb47c7a85dabd8b48892ca7"
+    },
+    {
+      "base": 1984946434048,
+      "allocation_base": 1984946110464,
+      "bytes": 135168,
+      "protect": 4,
+      "kind": "mutable_program_data",
+      "file": "000001ce2806f000-program-data.bin",
+      "sha256": "f12d88cb5de73b1c49c1229856985b0db4eba9bf6b5d1f687dfd006c8c8762e0"
+    }
+  ],
+  "errors": [],
+  "bytes": 466944,
+  "query_end": {
+    "address": 140737488289792,
+    "windows_error": 87
+  },
+  "allocation_layout": [
+    {
+      "base": 1984946110464,
+      "allocation_base": 1984946110464,
+      "bytes": 323584,
+      "protect": 32
+    },
+    {
+      "base": 1984946434048,
+      "allocation_base": 1984946110464,
+      "bytes": 135168,
+      "protect": 4
+    },
+    {
+      "base": 140719376629760,
+      "allocation_base": 140719376629760,
+      "bytes": 4096,
+      "protect": 32
+    },
+    {
+      "base": 140719376633856,
+      "allocation_base": 140719376629760,
+      "bytes": 4096,
+      "protect": 64
+    }
+  ],
+  "ready_byte": {
+    "rva": "0x67930",
+    "value": 1,
+    "wait_seconds": 0.105
+  },
+  "input_string_checks": []
+}

@@ -59,6 +59,12 @@ kiện nối từ phần trước được cấp. Vẫn cần khởi tạo tĩnh
 chuẩn bị, không dùng bộ cấu hình chiến lược 0 thay cho giá trị đầu.
 [Phạm vi ngữ cảnh](startup-context-20261028-r1/README.md).
 
+Đã quan sát bản gốc chạy thật với tám chiến lược tắt và phục hồi 41
+đầu vào chuẩn bị nội bộ của bot 1, giữ riêng 13 trường người dùng.
+Hàm `Bot1InitializeStartupInputs` chỉ dùng khi nạp trạng thái chương
+trình; chưa là toàn bộ khởi tạo tĩnh hoặc các đầu ra của nó.
+[Bằng chứng và giới hạn](startup-inputs-20261028-r1/README.md).
+
 Phần còn thiếu trước khi viết OnInit bàn giao:
 
 - phép so trực tiếp của hàm kiểm quyền và trạng thái từ chối;

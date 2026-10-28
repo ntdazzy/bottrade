@@ -1,3 +1,9 @@
+Đã quan sát bản gốc chạy thật với tám chiến lược tắt và phục hồi 41
+đầu vào nội bộ ban đầu. Kiểm đủ 54 trường qua bốn bộ dữ liệu khớp,
+giữ 13 trường người dùng cùng mã giá. Toàn bộ 100 `.mqh` biên dịch
+0 lỗi/cảnh báo. Đây chưa phải toàn bộ khởi tạo tĩnh hay EA.
+[Phạm vi](../danh-gia-doc-lap/startup-inputs-20261028-r1/README.md).
+
 Đã dựng đoạn ngữ cảnh khởi động trước lần chuẩn bị đầu: **298/298 ca**
 khớp mã gốc, gồm mã nhận diện gốc, đếm lịch sử, giới hạn lỗ ngày,
 kích thước ô và đuôi mã giá. Chưa nối mặc định khi nạp chương trình

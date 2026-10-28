@@ -1,0 +1,465 @@
+{
+  "original_ex5_sha256": "a3b0de423a06e10ebedc279307b93d7cb9188ba2bb5de77131a913c865b0e922",
+  "capture_sha256": "cc619d7fe2e00b1fc4b0c4b7c4bb7d709b738fa3bf63a32bff2a0e448f316e82",
+  "run_record_sha256": "b40514919e8495f3f50784a9c89871b34bcb2869dc622a156bd44aa85e6a3e58",
+  "tester_sha256": "5033d9d45d669cebd735e8a6be20b54d74b75274f885c9a0e48e52d872104efb",
+  "code_base": "0x1ce28020000",
+  "profile_flags_zero": 8,
+  "preparation_index": 0,
+  "fields": [
+    {
+      "field": "indicator_period",
+      "kind": "i",
+      "rva": "0x621c4",
+      "value": 30,
+      "raw_hex": "1e000000",
+      "user_input": false
+    },
+    {
+      "field": "indicator_day",
+      "kind": "B",
+      "rva": "0x621c8",
+      "value": 1,
+      "raw_hex": "01",
+      "user_input": false
+    },
+    {
+      "field": "reference",
+      "kind": "d",
+      "rva": "0x62180",
+      "value": 0.0,
+      "raw_hex": "0000000000000000",
+      "user_input": false
+    },
+    {
+      "field": "use_variable",
+      "kind": "B",
+      "rva": "0x6a5c8",
+      "value": 1,
+      "raw_hex": "01",
+      "user_input": true
+    },
+    {
+      "field": "adjust_lots",
+      "kind": "B",
+      "rva": "0x6a798",
+      "value": 1,
+      "raw_hex": "01",
+      "user_input": true
+    },
+    {
+      "field": "max_spread",
+      "kind": "d",
+      "rva": "0x6a5c0",
+      "value": 500.0,
+      "raw_hex": "0000000000407f40",
+      "user_input": true
+    },
+    {
+      "field": "feature_flag",
+      "kind": "B",
+      "rva": "0x62214",
+      "value": 1,
+      "raw_hex": "01",
+      "user_input": false
+    },
+    {
+      "field": "freeze_buffer_flag",
+      "kind": "B",
+      "rva": "0x62215",
+      "value": 1,
+      "raw_hex": "01",
+      "user_input": false
+    },
+    {
+      "field": "entry.confirmation_frame",
+      "kind": "i",
+      "rva": "0x6227c",
+      "value": 0,
+      "raw_hex": "00000000",
+      "user_input": false
+    },
+    {
+      "field": "entry.hour1_flag",
+      "kind": "B",
+      "rva": "0x62280",
+      "value": 1,
+      "raw_hex": "01",
+      "user_input": false
+    },
+    {
+      "field": "entry.older_width",
+      "kind": "i",
+      "rva": "0x62284",
+      "value": 10,
+      "raw_hex": "0a000000",
+      "user_input": false
+    },
+    {
+      "field": "entry.recent_width",
+      "kind": "i",
+      "rva": "0x62288",
+      "value": 3,
+      "raw_hex": "03000000",
+      "user_input": false
+    },
+    {
+      "field": "entry.last_shift",
+      "kind": "i",
+      "rva": "0x6228c",
+      "value": 120,
+      "raw_hex": "78000000",
+      "user_input": false
+    },
+    {
+      "field": "entry.gap_points",
+      "kind": "d",
+      "rva": "0x62290",
+      "value": 30.0,
+      "raw_hex": "0000000000003e40",
+      "user_input": false
+    },
+    {
+      "field": "buy_offset",
+      "kind": "d",
+      "rva": "0x62298",
+      "value": 0.5,
+      "raw_hex": "000000000000e03f",
+      "user_input": false
+    },
+    {
+      "field": "sell_offset",
+      "kind": "d",
+      "rva": "0x622a0",
+      "value": 0.0,
+      "raw_hex": "0000000000000000",
+      "user_input": false
+    },
+    {
+      "field": "nearby_radius",
+      "kind": "d",
+      "rva": "0x622b0",
+      "value": 1.0,
+      "raw_hex": "000000000000f03f",
+      "user_input": false
+    },
+    {
+      "field": "expiration_hours",
+      "kind": "i",
+      "rva": "0x622b8",
+      "value": 24,
+      "raw_hex": "18000000",
+      "user_input": false
+    },
+    {
+      "field": "virtual_expiration",
+      "kind": "B",
+      "rva": "0x6a5e8",
+      "value": 1,
+      "raw_hex": "01",
+      "user_input": true
+    },
+    {
+      "field": "stop_distance",
+      "kind": "d",
+      "rva": "0x622f8",
+      "value": 50.0,
+      "raw_hex": "0000000000004940",
+      "user_input": false
+    },
+    {
+      "field": "target_distance",
+      "kind": "d",
+      "rva": "0x62300",
+      "value": 100.0,
+      "raw_hex": "0000000000005940",
+      "user_input": false
+    },
+    {
+      "field": "trail_distance",
+      "kind": "d",
+      "rva": "0x62318",
+      "value": 10.0,
+      "raw_hex": "0000000000002440",
+      "user_input": false
+    },
+    {
+      "field": "trail_start",
+      "kind": "d",
+      "rva": "0x62320",
+      "value": 10.0,
+      "raw_hex": "0000000000002440",
+      "user_input": false
+    },
+    {
+      "field": "trail_limit",
+      "kind": "d",
+      "rva": "0x62328",
+      "value": 100.0,
+      "raw_hex": "0000000000005940",
+      "user_input": false
+    },
+    {
+      "field": "trail_step",
+      "kind": "d",
+      "rva": "0x62330",
+      "value": 0.4,
+      "raw_hex": "9a9999999999d93f",
+      "user_input": false
+    },
+    {
+      "field": "aux_hour1",
+      "kind": "B",
+      "rva": "0x62354",
+      "value": 0,
+      "raw_hex": "00",
+      "user_input": false
+    },
+    {
+      "field": "aux_scan50",
+      "kind": "B",
+      "rva": "0x62355",
+      "value": 0,
+      "raw_hex": "00",
+      "user_input": false
+    },
+    {
+      "field": "aux_older",
+      "kind": "i",
+      "rva": "0x62358",
+      "value": 0,
+      "raw_hex": "00000000",
+      "user_input": false
+    },
+    {
+      "field": "aux_recent",
+      "kind": "i",
+      "rva": "0x6235c",
+      "value": 0,
+      "raw_hex": "00000000",
+      "user_input": false
+    },
+    {
+      "field": "aux_offset",
+      "kind": "d",
+      "rva": "0x62368",
+      "value": 0.0,
+      "raw_hex": "0000000000000000",
+      "user_input": false
+    },
+    {
+      "field": "min_change",
+      "kind": "d",
+      "rva": "0x623a0",
+      "value": 1.0,
+      "raw_hex": "000000000000f03f",
+      "user_input": false
+    },
+    {
+      "field": "native_62218",
+      "kind": "d",
+      "rva": "0x62218",
+      "value": 5000.0,
+      "raw_hex": "000000000088b340",
+      "user_input": false
+    },
+    {
+      "field": "native_62220",
+      "kind": "B",
+      "rva": "0x62220",
+      "value": 1,
+      "raw_hex": "01",
+      "user_input": false
+    },
+    {
+      "field": "native_62228",
+      "kind": "d",
+      "rva": "0x62228",
+      "value": 40.0,
+      "raw_hex": "0000000000004440",
+      "user_input": false
+    },
+    {
+      "field": "native_62230",
+      "kind": "d",
+      "rva": "0x62230",
+      "value": 10.0,
+      "raw_hex": "0000000000002440",
+      "user_input": false
+    },
+    {
+      "field": "native_62238",
+      "kind": "d",
+      "rva": "0x62238",
+      "value": 30.0,
+      "raw_hex": "0000000000003e40",
+      "user_input": false
+    },
+    {
+      "field": "native_62240",
+      "kind": "B",
+      "rva": "0x62240",
+      "value": 1,
+      "raw_hex": "01",
+      "user_input": false
+    },
+    {
+      "field": "native_6a5d8",
+      "kind": "i",
+      "rva": "0x6a5d8",
+      "value": 25,
+      "raw_hex": "19000000",
+      "user_input": true
+    },
+    {
+      "field": "omit_real_sl_tp",
+      "kind": "B",
+      "rva": "0x6a5e0",
+      "value": 0,
+      "raw_hex": "00",
+      "user_input": true
+    },
+    {
+      "field": "virtual_stops",
+      "kind": "B",
+      "rva": "0x6a600",
+      "value": 0,
+      "raw_hex": "00",
+      "user_input": true
+    },
+    {
+      "field": "native_6a608",
+      "kind": "i",
+      "rva": "0x6a608",
+      "value": 99,
+      "raw_hex": "63000000",
+      "user_input": true
+    },
+    {
+      "field": "check_free_margin",
+      "kind": "B",
+      "rva": "0x6a788",
+      "value": 1,
+      "raw_hex": "01",
+      "user_input": true
+    },
+    {
+      "field": "native_62268",
+      "kind": "B",
+      "rva": "0x62268",
+      "value": 1,
+      "raw_hex": "01",
+      "user_input": false
+    },
+    {
+      "field": "native_622a8",
+      "kind": "B",
+      "rva": "0x622a8",
+      "value": 1,
+      "raw_hex": "01",
+      "user_input": false
+    },
+    {
+      "field": "native_622ec",
+      "kind": "i",
+      "rva": "0x622ec",
+      "value": 1,
+      "raw_hex": "01000000",
+      "user_input": false
+    },
+    {
+      "field": "native_622f0",
+      "kind": "B",
+      "rva": "0x622f0",
+      "value": 1,
+      "raw_hex": "01",
+      "user_input": false
+    },
+    {
+      "field": "native_62390",
+      "kind": "d",
+      "rva": "0x62390",
+      "value": 1.0,
+      "raw_hex": "000000000000f03f",
+      "user_input": false
+    },
+    {
+      "field": "native_62398",
+      "kind": "B",
+      "rva": "0x62398",
+      "value": 1,
+      "raw_hex": "01",
+      "user_input": false
+    },
+    {
+      "field": "native_623a8",
+      "kind": "d",
+      "rva": "0x623a8",
+      "value": 5.0,
+      "raw_hex": "0000000000001440",
+      "user_input": false
+    },
+    {
+      "field": "native_6a740",
+      "kind": "d",
+      "rva": "0x6a740",
+      "value": 0.01,
+      "raw_hex": "7b14ae47e17a843f",
+      "user_input": true
+    },
+    {
+      "field": "native_623b0",
+      "kind": "d",
+      "rva": "0x623b0",
+      "value": 99.0,
+      "raw_hex": "0000000000c05840",
+      "user_input": false
+    },
+    {
+      "field": "native_6a748",
+      "kind": "i",
+      "rva": "0x6a748",
+      "value": 0,
+      "raw_hex": "00000000",
+      "user_input": true
+    },
+    {
+      "field": "native_6a750",
+      "kind": "d",
+      "rva": "0x6a750",
+      "value": 1.2,
+      "raw_hex": "333333333333f33f",
+      "user_input": true
+    },
+    {
+      "field": "native_6a768",
+      "kind": "i",
+      "rva": "0x6a768",
+      "value": 600,
+      "raw_hex": "58020000",
+      "user_input": true
+    }
+  ],
+  "strings": [
+    {
+      "field": "preparation_comment",
+      "rva": "0x622d0",
+      "observed": true,
+      "value": ""
+    },
+    {
+      "field": "symbol_suffix",
+      "rva": "0x62208",
+      "observed": false,
+      "reason": "The string heap bytes were not captured."
+    },
+    {
+      "field": "working_symbol",
+      "rva": "0x67918",
+      "observed": false,
+      "reason": "The string heap bytes were not captured."
+    }
+  ],
+  "full_ea": false,
+  "scope": "Live preparation inputs after initialization with all eight profiles disabled; not raw constructor output defaults."
+}

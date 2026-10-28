@@ -71,6 +71,11 @@ mã nhận diện gốc, các bộ đếm, kích thước ô, đuôi mã và mã
 trị nối từ phần vốn được cấp; chưa phải toàn OnInit.
 [Phạm vi](danh-gia-doc-lap/startup-context-20261028-r1/README.md).
 
+Bot 1 đã phục hồi 41 đầu vào chuẩn bị nội bộ từ lần chạy gốc thật với
+tám chiến lược tắt; đọc đủ 54 trường. Nguồn kiểm bốn bộ dữ liệu khớp
+và giữ 13 trường người dùng. Chưa phải mọi đầu ra khởi tạo tĩnh hoặc
+toàn EA. [Phạm vi](danh-gia-doc-lap/startup-inputs-20261028-r1/README.md).
+
 Vị trí trong bảng là số tính từ đầu vùng mã của mỗi bot. Chi tiết dòng
 và lời gọi tra ở hai danh sách trên. “Đã so phần” có nghĩa đã có một
 phép đối chiếu trong phạm vi cụ thể; không đánh dấu hoàn tất cả hàng.

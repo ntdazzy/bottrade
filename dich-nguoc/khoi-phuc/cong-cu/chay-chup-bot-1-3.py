@@ -17,9 +17,12 @@ import time
 ap = argparse.ArgumentParser(description=__doc__)
 ap.add_argument('bot', type=int, choices=(1, 2, 3))
 ap.add_argument('run')
+ap.add_argument('--disable-strategies', action='store_true', help='Bot 1 only: observe startup inputs without running strategy profiles.')
 a = ap.parse_args()
 if not re.fullmatch('[a-z0-9-]+', a.run):
     raise ValueError('INVALID_RUN')
+if a.disable_strategies and a.bot != 1:
+    raise ValueError('DISABLED_STRATEGY_CAPTURE_REQUIRES_BOT1')
 root = Path(__file__).resolve().parents[1]
 mt = root.parent / '.local/claude-recovery-20261023/mt5'
 catalog = json.loads((root / 'tai-lieu-cu/catalog.json').read_text(encoding='utf-8'))
@@ -46,13 +49,18 @@ if not destination.exists():
 job = {'id': f'b{a.bot}-{a.run}', 'expert': 'Market\\' + original.name,
        'symbol': 'XAUUSD_NOCOST_V2', 'period': entry['test']['period'],
        'model': 0, 'from': entry['test']['from'], 'to': entry['test']['to'], 'timeout': 300,
-       'inputs': entry['test'].get('inputs', {})}
+       'inputs': dict(entry['test'].get('inputs', {}))}
+if a.disable_strategies:
+    job['inputs'].update({f'RunStrategy{letter}': 'false' for letter in 'ABCDEFGH'})
+    job['inputs'].update({'AllowBuyTrades': 'false', 'AllowSellTrades': 'false',
+                          'ShowInfoPanel': 'true', 'UpdateInfoTesting': 'true'})
 jobs = out / 'jobs.json'
 jobs.write_text(json.dumps([job], indent=2), encoding='utf-8')
 runner = [sys.executable, '-I', '-B', '-X', 'utf8', str(root / 'cong-cu/chay-may-thu.py'),
           str(mt), str(jobs), str(out), '--login', '279786616', '--server', 'Exness-MT5Trial8']
 record = {'bot': a.bot, 'source': str(original), 'source_sha256': sha(original),
-          'tester_sha256': sha(mt / 'metatester64.exe'), 'job': job}
+          'tester_sha256': sha(mt / 'metatester64.exe'), 'job': job,
+          'strategy_profiles_disabled': a.disable_strategies}
 with (out / 'runner.stdout.txt').open('x', encoding='utf-8') as stdout, (out / 'runner.stderr.txt').open('x', encoding='utf-8') as stderr:
     proc = subprocess.Popen(runner, stdout=stdout, stderr=stderr, creationflags=subprocess.CREATE_NO_WINDOW)
     print(f'START bot {a.bot}, runner PID {proc.pid}', flush=True)
@@ -76,6 +84,8 @@ with (out / 'runner.stdout.txt').open('x', encoding='utf-8') as stdout, (out / '
         capture_cmd = [sys.executable, '-I', '-B', '-X', 'utf8', str(root / 'cong-cu/chup-bot-1-3.py'),
                        '--bot', str(a.bot), '--pid', str(owned['id']), '--out', str(capture),
                        '--min-code-bytes', '8192', '--wait-seconds', '15', '--include-readonly', '--include-program-data']
+        if a.disable_strategies:
+            capture_cmd += ['--ready-byte-rva', '0x67930']
         capture_result = subprocess.run(capture_cmd, capture_output=True, text=True, encoding='utf-8')
         record['capture_exit'] = capture_result.returncode
         (out / 'capture.stdout.txt').write_text(capture_result.stdout, encoding='utf-8')

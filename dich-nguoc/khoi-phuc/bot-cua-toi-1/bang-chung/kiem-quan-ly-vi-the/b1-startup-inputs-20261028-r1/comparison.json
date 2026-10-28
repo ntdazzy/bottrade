@@ -1,0 +1,24 @@
+{
+  "cases": 4,
+  "matched": 4,
+  "failed": 0,
+  "sources_sha256": {
+    "Scripts/bot-cua-toi-1/Bot1StartupInputsCheck.mq5": "12ef88be031b9b6744b1e091505026a3f55a64901a4b52ff066d0fecc8d0a533",
+    "Include/bot-cua-toi-1/Bot1StartupInputs.mqh": "96e4eed78e68c848631f6ea99c87b7a8a600eb760827407d976686a0369d393d",
+    "Include/bot-cua-toi-1/Bot1EntryProfiles.mqh": "263568e3883564270a6911dafebed8a2350bc37c8ea1530e4e6c670a14a33d60",
+    "Include/bot-cua-toi-1/Bot1Preparation.mqh": "611f243cae510d7d176b2b7653e55fab7336b1a937b0e5a6e1133342c0eedfd0"
+  },
+  "tool_sha256": "6ea02298ee80010df0fd4b70231a0727b0db5bde94d4c07303c9dd15fef87b8d",
+  "capture": "init-defaults-20261028-r1",
+  "capture_observation_sha256": "6ec59a7d7d6aa098c2afad06032b063beef69615041efb8884ced00387d8f2d5",
+  "build": "b1-startup-inputs-check-20261028-r1",
+  "build_receipt_sha256": "6f8495a3df63222086938989c5a883524351a53769a26ea617a49e0d6fb369a5",
+  "result_sha256": "0ffa8bef49d4360e38074692b379b500b9c044a69741a76de32e6df9de71630f",
+  "expected_sha256": "0ffa8bef49d4360e38074692b379b500b9c044a69741a76de32e6df9de71630f",
+  "internal_fields": 41,
+  "user_fields_preserved": 13,
+  "symbol_preserved": true,
+  "full_ea": false,
+  "original_ex5_changed": false,
+  "scope": "Input defaults observed from the real original after initialization with profiles disabled; raw constructor output state and full EA remain unverified."
+}
