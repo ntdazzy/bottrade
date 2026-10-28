@@ -1,3 +1,9 @@
+Đã nối đổi giờ và chọn tần suất với ngữ cảnh khởi động:
+**233/233 ca khớp**, 47 trường, 5 chuỗi và 700 lần gọi phần chọn.
+Toàn bộ 108 tệp `.mqh` biên dịch 0 lỗi, 0 cảnh báo. Phép kiểm cấp
+kết quả hai hàm đổi giờ mùa hè/đổi tiền; chưa là toàn OnInit/EA.
+[Phạm vi mới](../danh-gia-doc-lap/startup-selection-context-bot3-20261029-r1/README.md).
+
 Đã phục hồi ngữ cảnh khởi động sau chọn tần suất, trước chuẩn bị đầu:
 **298/298 ca khớp**, 17 trường, 5 chuỗi và 1.192 phép nhân CPU.
 Giữ đúng bình luận, mã nhận diện, đuôi mã và trạng thái/kích thước

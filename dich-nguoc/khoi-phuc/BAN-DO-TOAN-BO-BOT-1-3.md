@@ -179,9 +179,10 @@ Chỉ tới trước cờ hoạt động/kiểm quyền dùng, chưa là toàn b
 Ngày 29/10: bot 1 đã dựng chọn đường theo mã giá trước vòng chiến
 lược, **121/121 ca**; còn nối đánh giá trực tiếp/dọn bảng/vòng gọi.
 [Bằng chứng](danh-gia-doc-lap/tick-symbol-routing-20261029-r1/README.md).
-Bot 3 đã dựng ngữ cảnh khởi động `0x3ce6..0x4580`, **298/298 ca**;
-còn đổi giờ/chọn tần suất phía trước, chuẩn bị và phần sau.
-[Bằng chứng](danh-gia-doc-lap/startup-context-bot3-20261029-r1/README.md).
+Bot 3 đã nối đổi giờ/chọn tần suất với ngữ cảnh `0x3840..0x4580`,
+**233/233 ca**; kết quả hai hàm mùa hè/đổi tiền được cấp. Còn ghép
+thân hai hàm này, chuẩn bị và phần sau.
+[Bằng chứng](danh-gia-doc-lap/startup-selection-context-bot3-20261029-r1/README.md).
 
 P30 tiếp tục bằng phân tích tĩnh toàn luồng. Không dùng cờ/tài khoản/
 trạng thái cấp quyền giả lập để chạy phần bảo vệ. Chưa xác nhận đầy

@@ -1,0 +1,294 @@
+{
+  "bot": 3,
+  "run": "b3-startup-selection-context-20261029-r2",
+  "cases": 233,
+  "matched": 233,
+  "build": "b3-startup-selection-context-check-20261029-r1",
+  "all_headers_build": "b3-all-headers-api-20261029-r2",
+  "all_headers_count": 108,
+  "result_sha256": "eb3a18bc930cf43970e2d03438aa79823956fa715beb44ff6165d23f0f31d234",
+  "original_ex5_sha256": "ee063d3d87490afe24e2f4ce85f6b05659320e297b102efd70207f71ca2feb83",
+  "native_init_sha256": "66812ca6397edc00b872cfc3b38ca7606cc3dc7d5cf084433c579ea13e90771c",
+  "host_mulsd": 1049,
+  "host_divsd": 117,
+  "selection_calls": 700,
+  "prints": 2,
+  "fields": [
+    {
+      "source": "BootContext.magic",
+      "format": "i",
+      "rva": "0x6d564"
+    },
+    {
+      "source": "BootContext.converted_value",
+      "format": "d",
+      "rva": "0x76fa0"
+    },
+    {
+      "source": "BootInputs.base_magic",
+      "format": "i",
+      "rva": "0x1d6ff0"
+    },
+    {
+      "source": "BootInputs.keep_comment",
+      "format": "B",
+      "rva": "0x1d7008"
+    },
+    {
+      "source": "BootDaily.peak",
+      "format": "d",
+      "rva": "0x75348"
+    },
+    {
+      "source": "BootDaily.blocked",
+      "format": "B",
+      "rva": "0x75320"
+    },
+    {
+      "source": "BootDaily.bars",
+      "format": "i",
+      "rva": "0x75324"
+    },
+    {
+      "source": "BootState.panel_bar",
+      "format": "q",
+      "rva": "0x75338"
+    },
+    {
+      "source": "BootHistory.total",
+      "format": "i",
+      "rva": "0x77358"
+    },
+    {
+      "source": "BootHistory.count",
+      "format": "i",
+      "rva": "0x77354"
+    },
+    {
+      "source": "BootState.extended_cleanup",
+      "format": "B",
+      "rva": "0x752d4"
+    },
+    {
+      "source": "BootPanel.cell_font_flag",
+      "format": "B",
+      "rva": "0x752e8"
+    },
+    {
+      "source": "BootState.cell_base_x",
+      "format": "d",
+      "rva": "0x75328"
+    },
+    {
+      "source": "BootState.cell_base_y",
+      "format": "d",
+      "rva": "0x75330"
+    },
+    {
+      "source": "BootPanel.scale",
+      "format": "d",
+      "rva": "0x1d6f48"
+    },
+    {
+      "source": "BootPanel.cell_x",
+      "format": "d",
+      "rva": "0x752d8"
+    },
+    {
+      "source": "BootPanel.cell_y",
+      "format": "d",
+      "rva": "0x752e0"
+    },
+    {
+      "source": "WinterHours",
+      "format": "i",
+      "rva": "0x1d7038"
+    },
+    {
+      "source": "SummerHours",
+      "format": "i",
+      "rva": "0x1d7040"
+    },
+    {
+      "source": "AdjustedTime",
+      "format": "q",
+      "rva": "0x75358"
+    },
+    {
+      "source": "Frequency",
+      "format": "i",
+      "rva": "0x1d6f90"
+    },
+    {
+      "source": "Risk",
+      "format": "i",
+      "rva": "0x1d7130"
+    },
+    {
+      "source": "BootPanel.allowed_dd",
+      "format": "d",
+      "rva": "0x1d7140"
+    },
+    {
+      "source": "VariableValues",
+      "format": "B",
+      "rva": "0x1d6f28"
+    },
+    {
+      "source": "BootPanel.frequency",
+      "format": "i",
+      "rva": "0x6d21c"
+    },
+    {
+      "source": "FrequencyDivisor",
+      "format": "d",
+      "rva": "0x76fa8"
+    },
+    {
+      "source": "Thresholds[0]",
+      "format": "B",
+      "rva": "0x75351"
+    },
+    {
+      "source": "Thresholds[1]",
+      "format": "B",
+      "rva": "0x75352"
+    },
+    {
+      "source": "Thresholds[2]",
+      "format": "B",
+      "rva": "0x75353"
+    },
+    {
+      "source": "Manual[0]",
+      "format": "B",
+      "rva": "0x1d71a8"
+    },
+    {
+      "source": "Manual[1]",
+      "format": "B",
+      "rva": "0x1d71b0"
+    },
+    {
+      "source": "Manual[2]",
+      "format": "B",
+      "rva": "0x1d71b8"
+    },
+    {
+      "source": "Manual[3]",
+      "format": "B",
+      "rva": "0x1d71c0"
+    },
+    {
+      "source": "Manual[4]",
+      "format": "B",
+      "rva": "0x1d71c8"
+    },
+    {
+      "source": "Manual[5]",
+      "format": "B",
+      "rva": "0x1d71d0"
+    },
+    {
+      "source": "Manual[6]",
+      "format": "B",
+      "rva": "0x1d71d8"
+    },
+    {
+      "source": "Manual[7]",
+      "format": "B",
+      "rva": "0x1d71e0"
+    },
+    {
+      "source": "Manual[8]",
+      "format": "B",
+      "rva": "0x1d71e8"
+    },
+    {
+      "source": "Enabled[0]",
+      "format": "B",
+      "rva": "0x6d220"
+    },
+    {
+      "source": "Enabled[1]",
+      "format": "B",
+      "rva": "0x6d221"
+    },
+    {
+      "source": "Enabled[2]",
+      "format": "B",
+      "rva": "0x6d222"
+    },
+    {
+      "source": "Enabled[3]",
+      "format": "B",
+      "rva": "0x6d223"
+    },
+    {
+      "source": "Enabled[4]",
+      "format": "B",
+      "rva": "0x6d224"
+    },
+    {
+      "source": "Enabled[5]",
+      "format": "B",
+      "rva": "0x6d225"
+    },
+    {
+      "source": "Enabled[6]",
+      "format": "B",
+      "rva": "0x6d226"
+    },
+    {
+      "source": "Enabled[7]",
+      "format": "B",
+      "rva": "0x6d227"
+    },
+    {
+      "source": "Enabled[8]",
+      "format": "B",
+      "rva": "0x6d228"
+    }
+  ],
+  "texts": [
+    {
+      "source": "BootInputs.comment_prefix",
+      "rva": "0x1d6ff8"
+    },
+    {
+      "source": "BootInputs.symbol_suffix",
+      "rva": "0x6d230"
+    },
+    {
+      "source": "BootContext.order_comment",
+      "rva": "0x6d568"
+    },
+    {
+      "source": "BootPreparation.symbol",
+      "rva": "0x74958"
+    },
+    {
+      "source": "BootChartSymbol",
+      "rva": "0x1d6e28"
+    }
+  ],
+  "generated_script_reproduced": true,
+  "full_ea": false,
+  "native_startup_context_executed": true,
+  "native_string_helpers_executed": true,
+  "mulsd_executed_on_host_cpu": true,
+  "caller_xmm6_zero_supplied": false,
+  "caller_string_return_buffer_primed": true,
+  "string_allocation_success_supplied": true,
+  "allocation_failures_tested": false,
+  "original_ex5_changed": false,
+  "whole_bot_complete": false,
+  "whole_manager_complete": false,
+  "authorization_executed": false,
+  "authorization_entry_guarded": true,
+  "frequency_selection_executed": true,
+  "first_preparation_executed": false,
+  "adjusted_time_computation_executed": true,
+  "dst_child_reply_supplied": true,
+  "currency_child_reply_supplied": true
+}

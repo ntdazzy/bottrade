@@ -12,6 +12,7 @@
 - `kiem-du-lieu-lich-tin-bot-1-3.py generate BOT | prepare|mql5|original|compare BOT RUN`: lấy các mốc nguyên bản từ lệnh ghi hằng rồi kiểm 900 ô lịch và hai cờ. `mql5` cần `--build BUILD`.
 - `kiem-ngu-canh-khoi-dong-bot-1.py generate | prepare|mql5|original|compare RUN`: ngữ cảnh/bộ đếm/bảng/đuôi mã trước chuẩn bị đầu; bốn phép nhân dùng CPU, chuỗi và mã lỗi so đầy đủ. Các giá trị nối từ phần vốn được cấp; `mql5` cần `--build BUILD`.
 - `kiem-ngu-canh-khoi-dong-bot-3.py generate | prepare|mql5|original|compare RUN`: ngữ cảnh bot 3 sau chọn tần suất, `0x3ce6..0x4580`; kiểm đúng địa chỉ nền, 17 trường, 5 chuỗi và bốn phép nhân CPU. `mql5` cần `--build BUILD`; chưa chạy phần trước/chuẩn bị/toàn EA.
+- `kiem-noi-chon-khoi-dong-bot-3.py generate | prepare|mql5|original|compare RUN`: nối đổi giờ/chọn tần suất với ngữ cảnh `0x3840..0x4580`, so 47 trường, 5 chuỗi và trạng thái mỗi lần gọi. `mql5` cần `--build BUILD`; kết quả hai hàm mùa hè/đổi tiền được cấp, chưa kiểm quyền/chuẩn bị/toàn EA.
 - `kiem-ma-gia-dieu-phoi-bot-1.py generate | prepare|mql5|original|compare RUN`: chọn đường theo 11 mẫu mã giá và chép mã đang xử lý; dừng trước đánh giá trực tiếp hoặc dọn bảng/vòng chiến lược. `mql5` cần `--build BUILD`; không chạy phần quyền dùng.
 - `chay-chup-bot-1-3.py 1 RUN --disable-strategies`: chạy EX5 gốc trong máy thử riêng, tắt tám chiến lược và chờ bảng đã khởi tạo trước khi chụp; không sửa EX5.
 - `doc-dau-vao-khoi-dong-bot-1.py CAPTURE_RUN`: đọc 54 trường chuẩn bị từ bản chụp thật, kiểm mã băm/vị trí/cờ tắt; giữ rõ chuỗi chưa có trong bản chụp.
