@@ -1,3 +1,9 @@
+Đã thêm đuôi điều phối: cập nhật 8 hàng bảng, đọc lại nến M5 và
+làm mới số dư mỗi hai lượt. Lượt `b1-dispatch-tail-20261029-r3`
+khớp **106/106 ca**, 77 trường, 8.280 lời gọi; 111 tệp `.mqh`
+biên dịch 0 lỗi, 0 cảnh báo. Hai hàm bảng mở/đóng được ghi nhận
+trong phép kiểm này; còn nối toàn bộ điều phối và EA hoàn chỉnh.
+
 Đã kiểm lại thân đánh giá với hai byte trạng thái gốc giữ nguyên:
 **57/57 ca khớp**, 13.606 lời gọi. Bộ kiểm chặn ghi đè cờ và mọi
 đường vào hàm quyền dùng; biên dịch 0 lỗi, 0 cảnh báo. Chưa ghép
