@@ -188,6 +188,10 @@ chuẩn bị và 18.942 lời gọi lịch sử. Còn thân đánh giá và ghé
 đoạn chọn mã/dọn bảng trong cùng lượt.
 [Bằng chứng chuẩn bị](danh-gia-doc-lap/real-setup-loop-bot1-20261029-r1/README.md),
 [lịch sử thật](danh-gia-doc-lap/real-history-loop-bot1-20261029-r1/README.md).
+Thân đánh giá được kiểm lại bằng trạng thái gốc giữ nguyên:
+**57/57 ca**, 13.606 lời gọi; không ghi cờ quyền hoặc vào helper
+quyền. Chưa nối với vòng chuẩn bị/lịch sử trong cùng lượt.
+[Nguồn trạng thái và hàng rào kiểm](danh-gia-doc-lap/observed-evaluation-bot1-20261029-r1/README.md).
 Bot 3 đã nối đổi giờ/chọn tần suất với ngữ cảnh `0x3840..0x4580`,
 chạy cả thân mùa hè/đổi tiền: **344/344 ca**, 18.982 lời gọi/thông báo.
 Còn chuẩn bị đầu, phần sau và phép kiểm các nhánh lỗi khi đã nối.

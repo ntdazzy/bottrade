@@ -1,0 +1,27 @@
+{
+  "cases": 57,
+  "sdk_calls": 13606,
+  "verified_snapshot_restores": 57,
+  "native_child_calls": {
+    "evaluation": 57,
+    "buy_manager": 56,
+    "sell_manager": 56,
+    "send": 107,
+    "modify": 40,
+    "table_cleanup": 9,
+    "close": 9
+  },
+  "closed_display_calls": 38,
+  "hourly_results_cleanup_calls": 38,
+  "result_sha256": "11bb0d152fa793fc7e49ac7fc950dce6622d515b21720d6c3ff3ac903d402588",
+  "sdk_tape_sha256": "609d2b25154e6777ed821145891d9934334fc693c00e658a0505fe4cacd50e1d",
+  "casts_sha256": "b9bb10a969c68bf6580951fcc27fb1208bb9acdc97419088db95f604ee6a2d29",
+  "original_ex5_sha256": "a3b0de423a06e10ebedc279307b93d7cb9188ba2bb5de77131a913c865b0e922",
+  "run": "b1-observed-evaluation-20261029-r2",
+  "matched": 57,
+  "build": "b1-observed-evaluation-check-20261029-r1",
+  "authorization_executed": false,
+  "observed_permission_state_unchanged": true,
+  "negative_writes_rejected": 4,
+  "full_ea": false
+}

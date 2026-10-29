@@ -1,0 +1,25 @@
+{
+  "snapshot": "luot-20261023-r1",
+  "code_base": "0x23e5aa10000",
+  "states": {
+    "0x6216c": 1,
+    "0x67470": 1
+  },
+  "state_zero_rva": "0xca8",
+  "authorization_call_rva": "0xcb8",
+  "authorization_test_rva": "0xcba",
+  "rejection_jump_rva": "0xcc6",
+  "accepted_state_write_rva": "0xce1",
+  "evidence_sha256": {
+    "bot-cua-toi-1/bang-chung/captures/luot-20261023-r1/capture.json": "81a7c83f595c9869d6ea278f155f10a17b97f5178d9c9c541a2ed41bcdcb956d",
+    "bot-cua-toi-1/bang-chung/luot-20261023-r1/capture-run.json": "2ebaea8452b94b5ce923289d4c2c2fc28b899fa036b9371b3a0b2a3d658e8088",
+    "bot-cua-toi-1/bang-chung/luot-20261023-r1/engine-observed.json": "219c2a51597356c03c9470979a1f6e2058c8243e75669b4c9d36916856a62696",
+    "bot-cua-toi-1/bang-chung/luot-20261023-r1/jobs.json": "ec9e86be330c88b3d1521b178afccf9164512ea7164de5231048cd2962635901",
+    "bot-cua-toi-1/bang-chung/luot-20261023-r1/test-interrupted.json": "7c1efce3803337842ca280fdaad763aee4339291036c081ce13576653a800afc",
+    "bot-cua-toi-1/bang-chung/captures/luot-20261023-r1/0000023e5aa5f000-program-data.bin": "2ad9ad0ea90a8f8df88170348a71a070d475174122c9eae7df8deb1fb32c61f4",
+    "bot-cua-toi-1/bang-chung/captures/luot-20261023-r1/0000023e5aa10000.bin": "e099f124084093c3fdc8651d5f5326709b165248982e5d4eb7394afcbb8177a4"
+  },
+  "original_test_interrupted": true,
+  "authorization_execution_proven": false,
+  "account_identity_included": false
+}

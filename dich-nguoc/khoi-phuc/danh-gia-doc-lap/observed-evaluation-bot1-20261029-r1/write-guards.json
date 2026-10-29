@@ -1,0 +1,26 @@
+{
+  "checks": [
+    {
+      "rva": "0x6216c",
+      "attempt": 0,
+      "blocked": true
+    },
+    {
+      "rva": "0x6216c",
+      "attempt": 1,
+      "blocked": true
+    },
+    {
+      "rva": "0x67470",
+      "attempt": 0,
+      "blocked": true
+    },
+    {
+      "rva": "0x67470",
+      "attempt": 1,
+      "blocked": true
+    }
+  ],
+  "original_code_executed": false,
+  "authorization_executed": false
+}

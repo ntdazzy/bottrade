@@ -22,3 +22,16 @@ Không đi tiếp chỉ vì mã cuối cùng dự định dùng API MQL5 chính 
 
 Các phép kiểm thuật toán/hiển thị tiếp tục từ sau cổng, có chặn nếu
 đi vào các hàm quyền. Phần chưa rõ vẫn nằm ở P30 trong bảng chung.
+
+## Trạng thái quan sát cho thân nghiệp vụ
+
+Lượt `b1-observed-evaluation-20261029-r2` dùng nguyên hai byte
+`0x6216c/0x67470` từ khối dữ liệu gốc đã băm; bỏ thao tác đặt cờ
+riêng của bộ kiểm cũ. Chỉ khôi phục nguyên khối đã chụp, chặn ghi
+riêng/ghi từ mã máy vào các byte này và chặn cả bốn điểm vào quyền.
+57/57 ca thân đánh giá khớp, bốn thử ghi riêng đều bị chặn.
+
+Đây không thay thế việc chốt nguồn cờ lưu hoặc toàn luồng xác thực.
+Chỉ kiểm thuật toán sau cổng với trạng thái đã quan sát; không gọi
+helper quyền hay cấp phản hồi quyền giả.
+[Bằng chứng và giới hạn](observed-evaluation-bot1-20261029-r1/README.md).

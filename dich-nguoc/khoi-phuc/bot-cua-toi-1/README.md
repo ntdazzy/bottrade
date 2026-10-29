@@ -1,3 +1,9 @@
+Đã kiểm lại thân đánh giá với hai byte trạng thái gốc giữ nguyên:
+**57/57 ca khớp**, 13.606 lời gọi. Bộ kiểm chặn ghi đè cờ và mọi
+đường vào hàm quyền dùng; biên dịch 0 lỗi, 0 cảnh báo. Chưa ghép
+với vòng chuẩn bị/lịch sử hoặc khôi phục cơ chế xác thực.
+[Bằng chứng](../danh-gia-doc-lap/observed-evaluation-bot1-20261029-r1/README.md).
+
 Đã chạy thêm thân lịch sử và sắp xếp thật trong vòng chiến lược:
 **27/27 ca khớp**, 208 lần chuẩn bị, 18.942 lời gọi lịch sử; giữ
 bộ nhớ qua các chiến lược. Đánh giá giao dịch vẫn là bộ ghi.
