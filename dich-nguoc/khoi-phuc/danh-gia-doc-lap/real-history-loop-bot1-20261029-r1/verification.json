@@ -1,0 +1,21 @@
+{
+  "cases": 27,
+  "preparation_calls": 208,
+  "history_sdk_calls": 18942,
+  "native_sort_entries": 54,
+  "host_cpu_additions": 1140,
+  "result_sha256": "f5b02242694c82b2e4d12738ea089bd827f6b197a7f7a08bfabc374e87a601d3",
+  "history_tape_sha256": "f71238299afcf04fd714ddc93e8ea8b7387f50d02ebc986a7a94a3dae6d4881f",
+  "original_ex5_sha256": "a3b0de423a06e10ebedc279307b93d7cb9188ba2bb5de77131a913c865b0e922",
+  "run": "b1-real-history-loop-20261029-r2",
+  "matched": 27,
+  "history_calls": 200,
+  "build": "b1-real-history-loop-check-20261029-r1",
+  "history_begin": "0x1efa0",
+  "history_end": "0x1f5df",
+  "history_body_sha256": "0633072a80dec3ef6ecaa0abc0d2e6856d40ed66426c3418c165d13839cad07a",
+  "sort": "0x47950",
+  "full_ea": false,
+  "evaluator_executed": false,
+  "history_cache_preserved_between_strategies": true
+}

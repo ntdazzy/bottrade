@@ -1,8 +1,9 @@
-Đã chạy nạp cấu hình, ngữ cảnh, chuẩn bị và thống kê liên tiếp qua
-8 cổng chiến lược: **88/88 ca khớp**, 457 lần chuẩn bị thật, 127
-giá trị/chuỗi/mảng mỗi lần. Đánh giá giao dịch và lấy lịch sử vẫn
-được thay bằng bộ ghi. Nguồn kiểm biên dịch 0 lỗi, 0 cảnh báo.
-[Phạm vi mới](../danh-gia-doc-lap/real-setup-loop-bot1-20261029-r1/README.md).
+Đã chạy thêm thân lịch sử và sắp xếp thật trong vòng chiến lược:
+**27/27 ca khớp**, 208 lần chuẩn bị, 18.942 lời gọi lịch sử; giữ
+bộ nhớ qua các chiến lược. Đánh giá giao dịch vẫn là bộ ghi.
+Nguồn kiểm biên dịch 0 lỗi, 0 cảnh báo.
+[Phạm vi mới](../danh-gia-doc-lap/real-history-loop-bot1-20261029-r1/README.md),
+[bộ chuẩn bị 88 ca](../danh-gia-doc-lap/real-setup-loop-bot1-20261029-r1/README.md).
 
 Phần chọn mã giá/dọn bảng nối với 8 cổng đã khớp **856/856 ca**,
 nhưng chưa ghép với các thân chạy thật nói trên. Còn đường đánh

@@ -183,8 +183,11 @@ trực tiếp, phần sau vòng và toàn EA.
 [Bằng chứng](danh-gia-doc-lap/tick-dispatch-bot1-20261029-r1/README.md).
 Phép kiểm tiếp theo chạy nguyên nạp cấu hình/ngữ cảnh/chuẩn bị và
 thống kê qua nhiều chiến lược: **88/88 ca**, 457 lần chuẩn bị thật.
-Chưa chạy thân đánh giá/lịch sử hoặc ghép với đoạn chọn mã/dọn bảng
-trong cùng lượt. [Bằng chứng](danh-gia-doc-lap/real-setup-loop-bot1-20261029-r1/README.md).
+Đã nối thêm nguyên thân lịch sử/sắp xếp: **27/27 ca**, 208 lần
+chuẩn bị và 18.942 lời gọi lịch sử. Còn thân đánh giá và ghép với
+đoạn chọn mã/dọn bảng trong cùng lượt.
+[Bằng chứng chuẩn bị](danh-gia-doc-lap/real-setup-loop-bot1-20261029-r1/README.md),
+[lịch sử thật](danh-gia-doc-lap/real-history-loop-bot1-20261029-r1/README.md).
 Bot 3 đã nối đổi giờ/chọn tần suất với ngữ cảnh `0x3840..0x4580`,
 chạy cả thân mùa hè/đổi tiền: **344/344 ca**, 18.982 lời gọi/thông báo.
 Còn chuẩn bị đầu, phần sau và phép kiểm các nhánh lỗi khi đã nối.
