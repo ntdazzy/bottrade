@@ -1,0 +1,34 @@
+{
+  "run": "b2-volume-arithmetic-20261029-r12",
+  "cases": 768,
+  "normal_cases": 731,
+  "native_division_faults": 37,
+  "component_false_results": 37,
+  "mql_runtime_fatal_executed": false,
+  "exact_fault_state": false,
+  "matched": 768,
+  "index_cases": {
+    "0": 256,
+    "3": 256,
+    "7": 256
+  },
+  "currency_calls": 74,
+  "currency_body_executed": false,
+  "withdrawal_setting_disabled": true,
+  "diagnostic_text_compared": false,
+  "other_volume_slots_checked": true,
+  "result_sha256": "3b79c34ac160a7d8eac38d6ace58d293c1a98a74d62dd804d1919fc97f003c58",
+  "native_body_sha256": "9638c651c1c79db6dd85d00e356f004473ff844081991567ba380e5c7167ed78",
+  "original_ex5_sha256": "390d8ab14fc213ff4b8cbe5084bec545526e62c6028516fe21219a59398ce795",
+  "build": "b2-volume-arithmetic-20261029-build-r10",
+  "all_headers_build": "b2-all-headers-api-20261029-r3",
+  "all_headers_count": 4,
+  "full_ea": false,
+  "raw_points": {
+    "configured_max": "0x367a4",
+    "symbol_max_reload": "0x36dc2",
+    "nan_tick_fallback": "0x35d51",
+    "mode999_divisor": "0x35dbf..0x35def",
+    "mode9999_multiplication": "0x362d7..0x362e3"
+  }
+}

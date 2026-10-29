@@ -1,0 +1,24 @@
+{
+  "run": "b2-all-headers-api-20261029-r3",
+  "target": "Scripts/bot-cua-toi-2/Bot2AllHeadersAPICompile.mq5",
+  "metaeditor_sha256": "cf2750bde55d98a1f3b4e56bcdd4f59300d0cff5caa6760985f7ef2c2cc12229",
+  "exit_code": 1,
+  "errors": 0,
+  "warnings": 0,
+  "result_line": "Result: 0 errors, 0 warnings, 524 ms elapsed, cpu='X64 Regular'",
+  "sources_sha256": {
+    "Include/bot-cua-toi-2/Bot2AmericanDST.mqh": "4d9aedb34fc398c78a3ab0da04b705a3cd2123777b235e0685701fa5de586f4f",
+    "Include/bot-cua-toi-2/Bot2CurrencyConversion.mqh": "46dbf7cbaaebd473bf3de1d008d62de1af370e3d186b6a6b037890d1d06765bb",
+    "Include/bot-cua-toi-2/Bot2VolumeArithmetic.mqh": "bab6233159159a8d52670fc5ad163d6e52bb930a102424cafaf5cab9c677ca96",
+    "Include/bot-cua-toi-2/Bot2VolumeValidation.mqh": "d20e5a14338046bf48b6b71ea3c393eaff2e19b2ac04e37dbccb48fbe836ff3b",
+    "Scripts/bot-cua-toi-2/Bot2AllHeadersAPICompile.mq5": "a267cff1b13adee37049ce099118ff946f3c03884210c5bba74c2e292af5f8d3",
+    "Scripts/bot-cua-toi-2/Bot2AmericanDSTCheck.mq5": "6258c4008c63b415fb920cf04f51806df6408a05f7c339d4dd559b7808a26eea",
+    "Scripts/bot-cua-toi-2/Bot2CurrencyConversionCheck.mq5": "b37a4f82bdebb74190a6f667054c8ee5ffb9d911c7bf648e007081ed38743e26",
+    "Scripts/bot-cua-toi-2/Bot2VolumeValidationCheck.mq5": "9bcf73f7aa1a28e482a3932b3eae8f8594ae7bf346e024fd9f13bd8e2e59ad4a",
+    "Scripts/bot-cua-toi-2/ScriptBot2VolumeArithmeticCheck.mq5": "874fafb0ca60fba61f8a20f1b1a856430e4a6be8b98b3ef0b00556c2143fb696"
+  },
+  "trade_mqh_sha256": "96e6781624534377fe7971cba52cca3d62d1b030bc10d5e4ebf3ed8c541399ed",
+  "binary_sha256": "883f947f32e93013d24a6eceda0e502a0473016ff7fcf6b77d651d2152f93168",
+  "floating_point_dividers_check_requested": true,
+  "compile_project_sha256": "f263900458ee1394a436fb6de4ec428303b0694792bd91dc0b1d1c058e6c29d6"
+}

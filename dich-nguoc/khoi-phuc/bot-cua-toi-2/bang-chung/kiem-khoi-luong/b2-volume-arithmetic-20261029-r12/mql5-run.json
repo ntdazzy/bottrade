@@ -1,0 +1,27 @@
+{
+  "original_ex5_sha256": "390d8ab14fc213ff4b8cbe5084bec545526e62c6028516fe21219a59398ce795",
+  "native_body_sha256": "9638c651c1c79db6dd85d00e356f004473ff844081991567ba380e5c7167ed78",
+  "sources_sha256": {
+    "Include/bot-cua-toi-2/Bot2VolumeArithmetic.mqh": "bab6233159159a8d52670fc5ad163d6e52bb930a102424cafaf5cab9c677ca96",
+    "Scripts/bot-cua-toi-2/ScriptBot2VolumeArithmeticCheck.mq5": "874fafb0ca60fba61f8a20f1b1a856430e4a6be8b98b3ef0b00556c2143fb696"
+  },
+  "helpers_sha256": {
+    "cong-cu/kiem-tinh-khoi-luong-bot-2.py": "14113653b1afe4ef41e27f9eabc4338c392edbe146ed3dc49125e73ed7570893",
+    "cong-cu/kiem-gio-mua-he-bot-2.py": "1287b68a8012bf411d40868c1053af404b59a7d703ecfc019e31d8013b90e181"
+  },
+  "cases": 768,
+  "exit_code": 0,
+  "build": "b2-volume-arithmetic-20261029-build-r10",
+  "build_receipt_sha256": "0d9ffa7db8e66534e3669c21dba683da6648313b3e6745bea6bb9f185a793d03",
+  "result_sha256": "3b79c34ac160a7d8eac38d6ace58d293c1a98a74d62dd804d1919fc97f003c58",
+  "full_ea": false,
+  "arithmetic_only": true,
+  "currency_body_executed": false,
+  "currency_result_supplied": true,
+  "withdrawal_setting_disabled": true,
+  "diagnostic_text_compared": false,
+  "diagnostic_counters_compared": true,
+  "exact_fault_state": false,
+  "mql_runtime_fatal_executed": false,
+  "other_volume_slots_checked": true
+}

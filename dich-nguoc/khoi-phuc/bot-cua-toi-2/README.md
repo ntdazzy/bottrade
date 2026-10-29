@@ -1,5 +1,12 @@
 # bot-cua-toi-2
 
+Phần số học khối lượng đã khớp **768/768 ca**: 731 ca thường và
+37 ca trả `false` tương ứng lỗi chia của mã gốc. Chưa phải toàn
+hàm chạy thực tế: đổi tiền được cấp kết quả, tắt điều chỉnh sau
+rút tiền và chưa so nội dung thông báo. Bốn tệp `.mqh` biên dịch
+0 lỗi, 0 cảnh báo; chưa có EA đầy đủ.
+[Bằng chứng](../danh-gia-doc-lap/volume-arithmetic-bot2-20261029-r1/README.md).
+
 Đã phục hồi hàm kiểm khối lượng: **1.807 ca thường + 27 ca chia
 cho 0 khớp**; so cả thông báo, thứ tự hỏi mức và mã lỗi. Ba tệp
 `.mqh` hiện hành biên dịch 0 lỗi, 0 cảnh báo. Chưa có EA đầy đủ.

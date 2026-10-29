@@ -1,0 +1,26 @@
+{
+  "cases": 768,
+  "normal_cases": 731,
+  "native_division_faults": 37,
+  "component_false_results": 37,
+  "matched": 768,
+  "failed": 0,
+  "first_failures": [],
+  "hashes": {
+    "cases.bin": "7a9fbf65a2067deee1619908d474f3489e7749d9c08153529e80fa0f652bf8a4",
+    "original-results.bin": "3b79c34ac160a7d8eac38d6ace58d293c1a98a74d62dd804d1919fc97f003c58",
+    "mql5-results.bin": "3b79c34ac160a7d8eac38d6ace58d293c1a98a74d62dd804d1919fc97f003c58",
+    "native-errors.json": "015e876e563768f0030cedc3fd51bc59f56f8edb48ec4ed92b34d67985ad5e55",
+    "currency-trace.json": "f276793cfa98eaa91b183223d03456f3a62623ecfba3be0e50372edc8abfc683"
+  },
+  "full_ea": false,
+  "arithmetic_only": true,
+  "currency_body_executed": false,
+  "currency_result_supplied": true,
+  "withdrawal_setting_disabled": true,
+  "diagnostic_text_compared": false,
+  "diagnostic_counters_compared": true,
+  "exact_fault_state": false,
+  "mql_runtime_fatal_executed": false,
+  "other_volume_slots_checked": true
+}
