@@ -1,0 +1,36 @@
+{
+  "bot": 2,
+  "run": "b2-volume-validation-20261029-r9",
+  "cases": 1834,
+  "normal_cases": 1807,
+  "fatal_cases": 27,
+  "matched": 1834,
+  "native_base": "0x253f2620000",
+  "native_begin": "0x3cfb0",
+  "native_end": "0x3d63a",
+  "native_body_sha256": "0f1ee410718814fe9908848d05ae3303b2350483c0dda0292e3d9d75eed489b3",
+  "original_ex5_sha256": "390d8ab14fc213ff4b8cbe5084bec545526e62c6028516fe21219a59398ce795",
+  "identity": {
+    "source_mqh": "d20e5a14338046bf48b6b71ea3c393eaff2e19b2ac04e37dbccb48fbe836ff3b",
+    "source_mq5": "9bcf73f7aa1a28e482a3932b3eae8f8594ae7bf346e024fd9f13bd8e2e59ad4a",
+    "helper": "2ac96428a99dd7455f9a9d209c3b5a0a04757fc8f91e3264deaca038e5ceff59",
+    "native_loader": "1287b68a8012bf411d40868c1053af404b59a7d703ecfc019e31d8013b90e181",
+    "capture": "ae4e9020f7f5f08d49774728bed14c17eb2bd26b6271c20da51bd3aaa446014f",
+    "metadata": "6686747871bdc1f73a5066061ff4e05675f87cf27ec1a5b5024ac2a1b0851240"
+  },
+  "normal_result_sha256": "9e4e6cc5b5cc5441f6be38a394500a08b930706c00464810c4dbc089d934a78c",
+  "native_result_sha256": "27c6de91d4af3574dc452250ca5c516608a63404497950c688ff17ac06e33fa6",
+  "formatted_sha256": "0fa837ded00bc961df3756e93f84519e5f6da9a243aad3d41022cfad8953187a",
+  "build": "b2-volume-validation-20261029-build-r4",
+  "all_headers_build": "b2-all-headers-api-20261029-r2",
+  "headers": 3,
+  "first_rejection_sdk_calls": 2,
+  "normal_last_error_values": [
+    0
+  ],
+  "full_print_text_checked": true,
+  "fatal_sdk_prefix_compared": true,
+  "exact_fault_state": false,
+  "full_ea": false,
+  "rejected_run": "b2-volume-validation-20261029-r8"
+}

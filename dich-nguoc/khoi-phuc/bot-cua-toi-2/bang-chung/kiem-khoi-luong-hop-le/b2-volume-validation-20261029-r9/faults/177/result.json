@@ -1,0 +1,23 @@
+{
+  "id": 177,
+  "original": [
+    177,
+    -1,
+    3,
+    8014542624500913617,
+    0
+  ],
+  "partial_sha256": "f39d3a36d8b4b15e7004de51a695e2c94a1226f78cf44c76466a95edc72dc123",
+  "trace_sha256": "7ed21bb6f2e53cd46f247c52db0cd62029d4b142205b48e506720865674aaf33",
+  "journal_sha256": "0ce30e84b77e5bd0664da20e08a515739d242f8c22df6a01c3a6f73d0467e570",
+  "error_lines": [
+    "JO\t2\t07:23:58.595\tBot2VolumeValidationCheck (XAUUSD_NOCOST_V2,M15)\tzero divide, check divider to avoid this error in 'Bot2VolumeValidation.mqh' (23,23)"
+  ],
+  "exit_code": 4294967295,
+  "header_ok": true,
+  "trace_ok": true,
+  "journal_ok": true,
+  "passed": true,
+  "script_sha256": "b14756311b4844bc4f8e7c0075b820e31c2348df790b6311ea12528aec5f6f35",
+  "exact_fault_state": false
+}

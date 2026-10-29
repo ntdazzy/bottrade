@@ -1,0 +1,16 @@
+{
+  "exit_code": 0,
+  "cases": 1807,
+  "script_sha256": "b14756311b4844bc4f8e7c0075b820e31c2348df790b6311ea12528aec5f6f35",
+  "build_receipt_sha256": "23713c86744950d6481d095512fe60a04be5631ba92f861cea8a9203f4a6e310",
+  "result_sha256": "9e4e6cc5b5cc5441f6be38a394500a08b930706c00464810c4dbc089d934a78c",
+  "formatted_sha256": "0fa837ded00bc961df3756e93f84519e5f6da9a243aad3d41022cfad8953187a",
+  "identity": {
+    "source_mqh": "d20e5a14338046bf48b6b71ea3c393eaff2e19b2ac04e37dbccb48fbe836ff3b",
+    "source_mq5": "9bcf73f7aa1a28e482a3932b3eae8f8594ae7bf346e024fd9f13bd8e2e59ad4a",
+    "helper": "2ac96428a99dd7455f9a9d209c3b5a0a04757fc8f91e3264deaca038e5ceff59",
+    "native_loader": "1287b68a8012bf411d40868c1053af404b59a7d703ecfc019e31d8013b90e181",
+    "capture": "ae4e9020f7f5f08d49774728bed14c17eb2bd26b6271c20da51bd3aaa446014f",
+    "metadata": "6686747871bdc1f73a5066061ff4e05675f87cf27ec1a5b5024ac2a1b0851240"
+  }
+}

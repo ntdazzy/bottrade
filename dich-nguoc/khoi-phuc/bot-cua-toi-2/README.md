@@ -1,5 +1,10 @@
 # bot-cua-toi-2
 
+Đã phục hồi hàm kiểm khối lượng: **1.807 ca thường + 27 ca chia
+cho 0 khớp**; so cả thông báo, thứ tự hỏi mức và mã lỗi. Ba tệp
+`.mqh` hiện hành biên dịch 0 lỗi, 0 cảnh báo. Chưa có EA đầy đủ.
+[Bằng chứng](../danh-gia-doc-lap/volume-validation-bot2-20261029-r1/README.md).
+
 Đã chốt từ báo cáo đúng EX5: **62 cài đặt và 8 tiêu đề** theo thứ
 tự, cùng giá trị của lượt chạy. Ba mục GMT được truyền đè đã đối
 chiếu với cấu hình chạy. Kiểu khai báo, mặc định và vị trí lưu còn

@@ -1,0 +1,22 @@
+{
+  "run": "b2-all-headers-api-20261029-r2",
+  "target": "Scripts/bot-cua-toi-2/Bot2AllHeadersAPICompile.mq5",
+  "metaeditor_sha256": "cf2750bde55d98a1f3b4e56bcdd4f59300d0cff5caa6760985f7ef2c2cc12229",
+  "exit_code": 1,
+  "errors": 0,
+  "warnings": 0,
+  "result_line": "Result: 0 errors, 0 warnings, 354 ms elapsed, cpu='X64 Regular'",
+  "sources_sha256": {
+    "Include/bot-cua-toi-2/Bot2AmericanDST.mqh": "4d9aedb34fc398c78a3ab0da04b705a3cd2123777b235e0685701fa5de586f4f",
+    "Include/bot-cua-toi-2/Bot2CurrencyConversion.mqh": "46dbf7cbaaebd473bf3de1d008d62de1af370e3d186b6a6b037890d1d06765bb",
+    "Include/bot-cua-toi-2/Bot2VolumeValidation.mqh": "d20e5a14338046bf48b6b71ea3c393eaff2e19b2ac04e37dbccb48fbe836ff3b",
+    "Scripts/bot-cua-toi-2/Bot2AllHeadersAPICompile.mq5": "ea18db941c51a023010f71d7c6f0da44b3289ef11a32b0161a57517404e95dba",
+    "Scripts/bot-cua-toi-2/Bot2AmericanDSTCheck.mq5": "6258c4008c63b415fb920cf04f51806df6408a05f7c339d4dd559b7808a26eea",
+    "Scripts/bot-cua-toi-2/Bot2CurrencyConversionCheck.mq5": "b37a4f82bdebb74190a6f667054c8ee5ffb9d911c7bf648e007081ed38743e26",
+    "Scripts/bot-cua-toi-2/Bot2VolumeValidationCheck.mq5": "9bcf73f7aa1a28e482a3932b3eae8f8594ae7bf346e024fd9f13bd8e2e59ad4a"
+  },
+  "trade_mqh_sha256": "96e6781624534377fe7971cba52cca3d62d1b030bc10d5e4ebf3ed8c541399ed",
+  "binary_sha256": "cb3965c327515b0d7fc0e98296b5da0856ea2b2ed818ff25ce5d70c1ccb0f4b0",
+  "floating_point_dividers_check_requested": true,
+  "compile_project_sha256": "bcffefbbb04573f5c84ba9d1c10481206bc5eb69353ff0afa8f2ff147d0ad633"
+}
