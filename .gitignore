@@ -12,4 +12,18 @@ __pycache__/
 .DS_Store
 Thumbs.db
 
-# Deliberately keep original EA files, compiled evidence and recorded test logs.
+# Keep original EA files and current source. Generated test archives stay local;
+# files already tracked by Git remain tracked despite these patterns.
+/dich-nguoc/khoi-phuc/bot-cua-toi-*/bang-chung/
+/dich-nguoc/khoi-phuc/**/tested-sources/
+/dich-nguoc/khoi-phuc/danh-gia-claude/
+/dich-nguoc/khoi-phuc/doi-chung-mt5/**/*.bin
+/dich-nguoc/khoi-phuc/doi-chung-mt5/**/*.ex5
+/dich-nguoc/khoi-phuc/doi-chung-mt5/**/*.log
+/dich-nguoc/khoi-phuc/doi-chung-mt5/**/*.mqproj
+
+# Generated profile experiments; keep the canonical analyzer/full-inputs source.
+/dich-nguoc/khoi-phuc/bot-cua-toi-1/phan-tich/chuong-trinh-chinh/profile-parameters-20261026-r1/b1-native-profile-????/
+/dich-nguoc/khoi-phuc/bot-cua-toi-1/phan-tich/chuong-trinh-chinh/profile-parameters-20261026-r1/b1-runtime-profile-*/
+/dich-nguoc/khoi-phuc/bot-cua-toi-1/phan-tich/chuong-trinh-chinh/profile-parameters-20261026-r1/b1-check-preload-20261026-r?/
+/dich-nguoc/khoi-phuc/bot-cua-toi-1/phan-tich/chuong-trinh-chinh/profile-parameters-20261026-r1/b1-probe-20261027-*/
